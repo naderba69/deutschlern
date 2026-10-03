@@ -1,0 +1,6 @@
+.DS_Store
+.vercel
+source-books/
+*.pdf
+*.epub
+*.mobi

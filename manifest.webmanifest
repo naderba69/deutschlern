@@ -1,0 +1,15 @@
+{
+  "name": "دويتش — مساري الألماني",
+  "short_name": "دويتش",
+  "description": "مسار شخصي تفاعلي لتعلّم الألمانية من A0 إلى B2.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5ef",
+  "theme_color": "#f6f5ef",
+  "icons": [
+    {"src": "./assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
