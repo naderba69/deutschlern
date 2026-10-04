@@ -832,6 +832,100 @@
       ],
       "transcriptPolicy": "offer",
       "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-10-AUD-DLG-01",
+      "lessonId": "a1-10-hobbies-health",
+      "title": "حوار: المريضة والطبيبة",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Ärztin",
+          "text": "Guten Tag. Was fehlt Ihnen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Patient",
+          "text": "Ich habe Halsschmerzen und Husten.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Ärztin",
+          "text": "Haben Sie auch Fieber?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Patient",
+          "text": "Nein, ich bin nur müde.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Ärztin",
+          "text": "Sie sollen heute zu Hause bleiben und viel Wasser trinken.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Patient",
+          "text": "Danke, Frau Doktor.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-11-AUD-LST-01",
+      "lessonId": "a1-11-home-directions",
+      "title": "استماع: السؤال عن مكتب البريد",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-LST-01.mp3",
+          "speaker": "Auskunftsperson",
+          "text": "Entschuldigung, wo ist die Post? Gehen Sie hier geradeaus bis zur Ampel. Dann gehen Sie nach links. Die Post ist neben dem Café, gegenüber dem Bahnhof.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-12-AUD-PHR-01",
+      "lessonId": "a1-12-trip-invitations",
+      "title": "عبارات الدعوة والرد عليها",
+      "kind": "phrase_bank",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-12-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Hast du am Samstag Zeit? Möchtest du zu meiner Geburtstagsfeier kommen? Möchtest du mitkommen? Ja, gern! Natürlich, ich komme gern. Leider kann ich nicht. Danke für die Einladung! Um wie viel Uhr beginnt die Feier? Soll ich etwas mitbringen?",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-12-AUD-READ-01",
+      "lessonId": "a1-12-trip-invitations",
+      "title": "رسالة دعوة إلى احتفال",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-12-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Hallo Salma. Am Sonntag mache ich eine kleine Geburtstagsfeier bei mir zu Hause. Die Feier beginnt um sechzehn Uhr. Hast du Zeit? Möchtest du kommen? Kannst du bitte dein Lieblingsspiel mitbringen? Viele Grüße, Amel.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
     }
   ],
   "selectedVoiceIds": [

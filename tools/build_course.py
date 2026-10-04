@@ -30,6 +30,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A1-09": "a1-09-work-appointments",
     "DL-A1-10": "a1-10-hobbies-health",
     "DL-A1-11": "a1-11-home-directions",
+    "DL-A1-12": "a1-12-trip-invitations",
 }
 
 
