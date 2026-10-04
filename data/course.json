@@ -16583,6 +16583,106 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-12-AUD-PHR-01",
+      "lessonId": "a2-12-holidays-festivals-culture",
+      "title": "مفردات وأمثلة ترتيب أحداث المهرجان",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-12-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Kulturfest. Die Tradition. Der Brauch. Die Ausstellung. Die Parade. Die Eintrittskarte. Das Konzert. Die Bühne. Der Eintritt. Die Veranstaltung. Das Feuerwerk. Stattfinden. Findet statt. Teilnehmen an. Nimmt teil. Gemeinsam. Kostenlos. Feiern. Bevor das Konzert beginnt, treffen wir uns am Eingang. Wir treffen uns am Eingang, bevor das Konzert beginnt. Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen. Bevor das Fest beginnt, kaufen wir Eintrittskarten.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-12-AUD-DLG-01",
+      "lessonId": "a2-12-holidays-festivals-culture",
+      "title": "حوار: Laila وOmar في المهرجان",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-01.mp3",
+          "speaker": "Laila",
+          "text": "Gehst du am Samstag zum Kulturfest?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-02.mp3",
+          "speaker": "Omar",
+          "text": "Ja, gern. Wann beginnt das Konzert?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-03.mp3",
+          "speaker": "Laila",
+          "text": "Um sieben Uhr. Bevor das Konzert beginnt, möchte ich die Ausstellung besuchen.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-04.mp3",
+          "speaker": "Omar",
+          "text": "Gute Idee. Treffen wir uns um fünf Uhr am Eingang?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-05.mp3",
+          "speaker": "Laila",
+          "text": "Ja. Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-06.mp3",
+          "speaker": "Omar",
+          "text": "Schön! Ist der Eintritt kostenlos?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-12-AUD-DLG-01-07.mp3",
+          "speaker": "Laila",
+          "text": "Ja, alle Veranstaltungen sind kostenlos.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-12-AUD-READ-01",
+      "lessonId": "a2-12-holidays-festivals-culture",
+      "title": "قراءة: برنامج مهرجان المدينة",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-12-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Am Sonntag findet in der Stadt ein Kulturfest statt. Um 14 Uhr wird eine Ausstellung eröffnet. Bevor die Musik auf der Bühne beginnt, können die Besucher den Markt besuchen. Um 17 Uhr gibt eine Musikgruppe ein Konzert. Nachdem die Besucher das Konzert gehört haben, gibt es ein Feuerwerk. Viele Familien nehmen an der Veranstaltung teil. Der Eintritt ist kostenlos.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-12-AUD-LST-01",
+      "lessonId": "a2-12-holidays-festivals-culture",
+      "title": "استماع: رحلة إلى المهرجان",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-12-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Am Samstag machen wir einen Ausflug zum Kulturfest in Linden. Bevor wir zum Fest gehen, essen wir zu Hause. Um vier Uhr besuchen wir eine Ausstellung. Danach hören wir ein Konzert. Nachdem wir das Konzert gehört haben, treffen wir unsere Freunde auf dem Markt. Wir fahren erst am Abend nach Hause.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
