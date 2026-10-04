@@ -48,6 +48,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-03": "b1-03-work-communication-konjunktiv",
     "DL-B1-04": "b1-04-continuing-education-damit",
     "DL-B1-05": "b1-05-cities-relative-clauses",
+    "DL-B1-06": "b1-06-health-fitness-advice",
 }
 
 

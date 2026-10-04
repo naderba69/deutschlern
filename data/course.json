@@ -18915,6 +18915,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-06-AUD-PHR-01",
+      "lessonId": "b1-06-health-fitness-advice",
+      "title": "مفردات الحركة واللياقة",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-06-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Ausdauer, die Bewegung, die Erholung, die Pause, das Gelenk, die Belastung, das Aufwärmen, der Spaziergang, die Beschwerde. Sich von etwas erholen. Etwas allmählich steigern. Ausreichend. Anstrengend.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-06-AUD-MODEL-01",
+      "lessonId": "b1-06-health-fitness-advice",
+      "title": "أمثلة تقديم النصيحة بـsollte وkönnte",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-06-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Du solltest Pausen in deinen Tag einplanen. Du könntest in der Mittagspause einen kurzen Spaziergang machen. Man sollte ein neues Trainingspensum allmählich steigern. Bei anhaltenden Beschwerden sollte man eine Fachperson um Rat fragen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-06-AUD-DLG-01",
+      "lessonId": "b1-06-health-fitness-advice",
+      "title": "حوار: Hiba وFares عن الحركة اليومية",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-06-AUD-DLG-01-01.mp3",
+          "speaker": "Hiba",
+          "text": "Ich sitze bei der Arbeit viele Stunden am Schreibtisch und möchte mehr Bewegung in meinen Alltag bringen.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-06-AUD-DLG-01-02.mp3",
+          "speaker": "Fares",
+          "text": "Du könntest mit kurzen Spaziergängen anfangen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-06-AUD-DLG-01-03.mp3",
+          "speaker": "Hiba",
+          "text": "Wie kann ich das in meinen Tagesplan einbauen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-06-AUD-DLG-01-04.mp3",
+          "speaker": "Fares",
+          "text": "Du solltest regelmäßige Pausen einplanen. In der Mittagspause könntest du mit einer Kollegin nach draußen gehen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-06-AUD-DLG-01-05.mp3",
+          "speaker": "Hiba",
+          "text": "Das klingt machbar. Ich sollte auch daran denken, mich vor dem Sport aufzuwärmen.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-06-AUD-DLG-01-06.mp3",
+          "speaker": "Fares",
+          "text": "Genau. Wichtig ist, dass du ein Tempo wählst, das zu dir passt.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-06-AUD-READ-01",
+      "lessonId": "b1-06-health-fitness-advice",
+      "title": "قراءة: مجموعة Bewegte Pause",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-06-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Im Stadtteilzentrum Am Park gibt es seit drei Monaten die offene Gruppe „Bewegte Pause“. Sie trifft sich zweimal pro Woche. Einige Teilnehmende gehen gemeinsam spazieren, andere machen leichte Dehnübungen. Dalia arbeitet tagsüber oft am Computer und kam zuerst nur zu einem kurzen Spaziergang mit. Inzwischen plant sie solche Pausen auch an anderen Tagen ein. Die Gruppe vergleicht keine Leistungen; jede Person wählt ein passendes Tempo und muss nicht an jedem Treffen teilnehmen. Wer gesundheitliche Beschwerden hat oder unsicher ist, sollte sich an eine qualifizierte Fachperson wenden. Die Gruppe ersetzt keine medizinische Beratung.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-06-AUD-LST-01",
+      "lessonId": "b1-06-health-fitness-advice",
+      "title": "استماع: تجربة في مجموعة الجري",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-06-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Seit vier Wochen gehe ich nach der Arbeit zu einer Laufgruppe. Am Anfang lief ich nur kurze Strecken. Der Trainer sagte, ich sollte mich vor dem Laufen aufwärmen. Wenn ich müde bin, kann ich eine Pause machen; ich muss nicht mit allen Schritt halten. Nach dem Training trinken wir Wasser. Ich fühle mich wohl, weil das Tempo zu mir passt.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
