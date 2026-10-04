@@ -41,6 +41,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A2-07": "a2-07-language-learning-travel-purpose",
     "DL-A2-08": "a2-08-media-news-passive",
     "DL-A2-09": "a2-09-products-technology-complaints",
+    "DL-A2-10": "a2-10-sports-health-feelings-weil",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 

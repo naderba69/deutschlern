@@ -1980,6 +1980,116 @@
           "text": "Guten Tag, hier spricht Karim. Mein neues Ladegerät funktioniert nicht. Ich habe es am Montag gekauft. Könnten Sie mir bitte sagen, ob ich es umtauschen kann? Ich habe den Kassenbon und komme morgen in Ihr Geschäft. Vielen Dank."
         }
       ]
+    },
+    {
+      "assetId": "DL-A2-10-AUD-PHR-01",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "title": "مفردات الرياضة والصحة والمشاعر",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-10-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Bewegung. Die Gesundheit. Das Training. Der Muskel. Der Wettbewerb. Die Pause. Sich fühlen. Sich entspannen. Fit. Erschöpft. Zufrieden. Nervös. Regelmäßig. Die Mannschaft.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-10-AUD-MODEL-01",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "title": "أمثلة على السبب بـweil وdenn",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-10-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich gehe spazieren, weil ich Bewegung brauche. Mina ist erschöpft, weil sie lange trainiert hat. Weil ich müde bin, mache ich eine Pause. Ich mache eine Pause, denn ich bin müde. Ich bin müde. Deshalb mache ich eine Pause.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-10-AUD-DLG-01",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "title": "حوار: Lina وOmar بعد التدريب",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-10-AUD-DLG-01-01.mp3",
+          "speaker": "Lina",
+          "text": "Wie fühlst du dich nach dem Lauf, Omar?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A2-10-AUD-DLG-01-02.mp3",
+          "speaker": "Omar",
+          "text": "Ich bin zufrieden, weil ich heute fünf Kilometer gelaufen bin.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-10-AUD-DLG-01-03.mp3",
+          "speaker": "Lina",
+          "text": "Super! Ich bin etwas erschöpft, weil ich gestern lange trainiert habe.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A2-10-AUD-DLG-01-04.mp3",
+          "speaker": "Omar",
+          "text": "Dann machen wir eine Pause.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-10-AUD-DLG-01-05.mp3",
+          "speaker": "Lina",
+          "text": "Gute Idee. Ich möchte regelmäßig trainieren, denn Sport ist gut für mich.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A2-10-AUD-DLG-01-06.mp3",
+          "speaker": "Omar",
+          "text": "Ich auch. Wenn wir zusammen laufen, macht es mehr Spaß.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-10-AUD-READ-01",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "title": "قراءة: تجربة Rania الرياضية",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-10-AUD-READ-01.mp3",
+          "speaker": "Rania",
+          "text": "Rania arbeitet tagsüber am Computer. Am Abend geht sie oft schwimmen, weil sie sich nach der Arbeit bewegen möchte. An manchen Tagen ist sie müde. Dann macht sie zuerst eine Pause und trinkt Wasser. Am Samstag trainiert sie mit ihrer Mannschaft. Rania fühlt sich nach dem Training zufrieden, weil sie regelmäßig Sport macht. Vor einem Wettbewerb ist sie manchmal nervös, aber ihre Freunde unterstützen sie.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-10-AUD-LST-01",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "title": "استماع: التدريب على كرة السلة",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-10-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich spiele zweimal pro Woche Basketball. Heute bin ich erschöpft, weil ich lange trainiert habe. Trotzdem bin ich zufrieden, denn meine Mannschaft hat gut gespielt. Morgen mache ich eine Pause, weil meine Muskeln müde sind.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [

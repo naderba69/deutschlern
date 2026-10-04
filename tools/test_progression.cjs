@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 84, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 190, "the audio manifest must contain all one hundred ninety generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 89, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 200, "the audio manifest must contain all two hundred generated clips");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -105,6 +105,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A2-07": "a2-07-language-learning-travel-purpose",
     "DL-A2-08": "a2-08-media-news-passive",
     "DL-A2-09": "a2-09-products-technology-complaints",
+    "DL-A2-10": "a2-10-sports-health-feelings-weil",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -208,6 +209,49 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const a2ComplaintListening = a2ComplaintAssets.find((asset) => asset.assetId === "DL-A2-09-AUD-LST-01");
   assert.equal(a2ComplaintListening.segments[0].speaker, "Karim", "the A2.9 listening script must retain Karim as its speaker");
   assert.equal(a2ComplaintListening.segments[0].voiceId, a1KarimVoice, "Karim must retain his selected voice across A1 and A2");
+  const a2SportAssets = courseData.audioAssets.filter((asset) => asset.assetId.startsWith("DL-A2-10-"));
+  assert.equal(a2SportAssets.length, 5, "A2.10's audio batch must expose five linked lesson assets");
+  assert.equal(a2SportAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "A2.10 must expose all ten generated clips");
+  const a2SportDialogue = a2SportAssets.find((asset) => asset.assetId === "DL-A2-10-AUD-DLG-01");
+  assert.equal(a2SportDialogue.segments.length, 6, "the post-training dialogue must keep all six source turns");
+  assert.deepEqual(a2SportDialogue.segments.map((segment) => segment.speaker), ["Lina", "Omar", "Lina", "Omar", "Lina", "Omar"], "A2.10 dialogue speaker order must follow the source");
+  const a2SportSource = fs.readFileSync(path.join(rootDir, "content/A2/lesson-10-sports-health-feelings-weil.md"), "utf8");
+  const sourceDialogueTexts = a2SportSource.split("## 3) حوار أصلي بعد التدريب")[1].split("## 4)")[0]
+    .split(/\r?\n/).filter((line) => line.startsWith("**Lina:**") || line.startsWith("**Omar:**"))
+    .map((line) => line.slice(line.indexOf(":**") + 3).trim());
+  assert.deepEqual(a2SportDialogue.segments.map((segment) => segment.text), sourceDialogueTexts, "A2.10 dialogue transcripts must match all six source turns");
+  const a0LinaVoice = courseData.audioAssets.find((asset) => asset.assetId === "DL-A0-02-AUD-DLG-01").segments.find((segment) => segment.speaker === "Lina").voiceId;
+  const a1LinaVoice = courseData.audioAssets.find((asset) => asset.assetId === "DL-A1-11-AUD-DLG-01").segments.find((segment) => segment.speaker === "Lina").voiceId;
+  assert.ok(a2SportDialogue.segments.filter((segment) => segment.speaker === "Lina").every((segment) => segment.voiceId === a0LinaVoice && segment.voiceId === a1LinaVoice), "Lina must retain one selected voice across A0.2, A1.11, and A2.10");
+  assert.equal(a2SportDialogue.segments.find((segment) => segment.speaker === "Lina").voiceId, "voice-00", "Lina's selected cross-course voice must remain pinned");
+  assert.ok(a2SportDialogue.segments.filter((segment) => segment.speaker === "Omar").every((segment) => segment.voiceId === "voice-03"), "Omar must keep the selected A2.10 voice assignment for reuse in A2.12");
+  const a1RaniaReading = courseData.audioAssets.find((asset) => asset.assetId === "DL-A1-02-AUD-READ-01");
+  const a2SportReading = a2SportAssets.find((asset) => asset.assetId === "DL-A2-10-AUD-READ-01");
+  assert.equal(a2SportReading.segments[0].speaker, "Rania", "the A2.10 source reading must retain Rania as its protagonist");
+  const sourceReadingBlock = a2SportSource.split("## 4) نص قراءة أصلي")[1].split("### أسئلة الفهم")[0];
+  const sourceReadingText = sourceReadingBlock.split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
+  assert.equal(a2SportReading.segments[0].text, sourceReadingText, "the A2.10 reading transcript must match its source passage");
+  assert.equal(a2SportReading.segments[0].voiceId, a1RaniaReading.segments.find((segment) => segment.speaker === "Rania").voiceId, "Rania must retain her selected voice across A1.2 and A2.10");
+  const a2SportNarrated = [
+    a2SportAssets.find((asset) => asset.assetId === "DL-A2-10-AUD-PHR-01"),
+    a2SportAssets.find((asset) => asset.assetId === "DL-A2-10-AUD-MODEL-01"),
+  ];
+  assert.ok(a2SportNarrated.every((asset) => asset.segments.every((segment) => segment.voiceId === "voice-02")), "A2.10 phrase and model tracks must use the established course narrator");
+  const a2SportModel = a2SportAssets.find((asset) => asset.assetId === "DL-A2-10-AUD-MODEL-01");
+  assert.equal(a2SportModel.segments[0].text, [
+    "Ich gehe spazieren, weil ich Bewegung brauche.",
+    "Mina ist erschöpft, weil sie lange trainiert hat.",
+    "Weil ich müde bin, mache ich eine Pause.",
+    "Ich mache eine Pause, denn ich bin müde.",
+    "Ich bin müde. Deshalb mache ich eine Pause.",
+  ].join(" "), "the A2.10 grammar audio must cover the sourced weil, denn, and deshalb examples");
+  const a2SportListening = a2SportAssets.find((asset) => asset.assetId === "DL-A2-10-AUD-LST-01");
+  assert.equal(a2SportListening.segments[0].speaker, "Erzählperson", "A2.10 listening must keep its anonymous narrator role");
+  const sourceListeningBlock = a2SportSource.split("## 5) نص استماع معدّ للنطق")[1].split("## 6) التمارين")[0];
+  const sourceListeningText = sourceListeningBlock.split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
+  assert.equal(a2SportListening.segments[0].text, sourceListeningText, "the A2.10 listening transcript must match its source passage");
+  const a2PassiveListeningVoice = courseData.audioAssets.find((asset) => asset.assetId === "DL-A2-08-AUD-LST-01").segments[0].voiceId;
+  assert.equal(a2SportListening.segments[0].voiceId, a2PassiveListeningVoice, "A2.10 listening must retain the established listening narrator voice");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
