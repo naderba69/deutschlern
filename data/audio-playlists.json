@@ -6,13 +6,13 @@
       "lessonId": "a0-01-alphabet",
       "title": "أسماء الحروف الألمانية",
       "kind": "pronunciation_alphabet",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-01-AUD-ABC-01.mp3",
           "speaker": "المعلّقة",
-          "text": "Das deutsche Alphabet. A, Be, Ce, De, E, Eff, Ge, Ha, I, Jot, Ka, El, Em, En, O, Pe, Ku, Er, Es, Te, U, Fau, We, Iks, Ypsilon, Zett. Die Umlaute heißen Ä, Ö und Ü. Das Eszett schreiben wir ß.",
-          "voiceId": "voice-00"
+          "text": "Das deutsche Alphabet. A, Be, Ce, De, E, Eff, Ge, Ha, I, Jot, Ka, El, Em, En, O, Pe, Ku, Er, Es, Te, U, Vau, We, Iks, Ypsilon, Zett. Die Umlaute heißen Ä, Ö und Ü. Das Eszett schreiben wir ß.",
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -22,13 +22,13 @@
       "lessonId": "a0-01-alphabet",
       "title": "أنماط النطق الأولى",
       "kind": "pronunciation_patterns",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-01-AUD-PHON-01.mp3",
           "speaker": "المعلّقة",
-          "text": "Mein. Nein. Drei. Das Muster ei klingt ungefähr wie ai. Vier. Sieben. Das Muster ie klingt wie ein langes i. Schule: sch klingt wie sch in schön. Zwei beginnt mit ts. Wasser beginnt mit einem v Laut. Vier beginnt mit f. Sport und Student: sp und st am Wortanfang klingen ungefähr wie schp und scht. Ich und Buch zeigen zwei unterschiedliche ch Laute.",
-          "voiceId": "voice-00"
+          "text": "Mein. Nein. Drei. Das Muster ei klingt ungefähr wie ai. Vier. Sieben. Das Muster ie klingt wie ein langes i. Schule: sch klingt wie sch in schön. Zwei beginnt mit einem ts-Laut. Wasser beginnt mit W. Das deutsche W klingt wie das englische V. Vier beginnt mit einem f-Laut. Sport und Student: sp und st am Wortanfang klingen ungefähr wie schp und scht. Ich und Buch zeigen zwei unterschiedliche ch-Laute.",
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -38,13 +38,13 @@
       "lessonId": "a0-01-alphabet",
       "title": "كلمات الإملاء",
       "kind": "exercise_dictation",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-01-AUD-WORDS-01.mp3",
           "speaker": "المعلّقة",
-          "text": "Mina. Berlin. Sieben. Schule.",
-          "voiceId": "voice-00"
+          "text": "Mina. Berlin. sieben. Schule.",
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -54,13 +54,13 @@
       "lessonId": "a0-02-greetings",
       "title": "عبارات التحية والتعارف",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-02-AUD-PHR-01.mp3",
           "speaker": "المعلّقة",
           "text": "Hallo! Guten Morgen! Guten Tag! Guten Abend! Gute Nacht! Tschüss! Auf Wiedersehen! Danke! Bitte! Freut mich! Ich heiße Lina. Wie heißt du? Wie heißen Sie? Wie geht es dir? Wie geht es Ihnen? Gut, danke. Und dir? Sehr gut, danke. Es geht.",
-          "voiceId": "voice-00"
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -70,7 +70,7 @@
       "lessonId": "a0-02-greetings",
       "title": "حوار رسمي: لينا والسيد Weber",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-02-AUD-DLG-01-01.mp3",
@@ -104,31 +104,31 @@
       "lessonId": "a0-02-greetings",
       "title": "حوار غير رسمي: Sami وNora",
       "kind": "dialogue",
-      "status": "partial",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-02-AUD-DLG-02-01.mp3",
           "speaker": "Sami",
           "text": "Hallo! Ich heiße Sami. Wie heißt du?",
-          "voiceId": "voice-00"
+          "voiceId": "voice-03"
         },
         {
           "src": "assets/audio/DL-A0-02-AUD-DLG-02-02.mp3",
           "speaker": "Nora",
           "text": "Ich heiße Nora. Freut mich!",
-          "voiceId": "voice-01"
+          "voiceId": "voice-02"
         },
         {
           "src": "assets/audio/DL-A0-02-AUD-DLG-02-03.mp3",
           "speaker": "Sami",
           "text": "Freut mich auch. Tschüss!",
-          "voiceId": "voice-00"
+          "voiceId": "voice-03"
         },
         {
           "src": "assets/audio/DL-A0-02-AUD-DLG-02-04.mp3",
           "speaker": "Nora",
           "text": "Tschüss!",
-          "voiceId": "voice-01"
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -138,13 +138,13 @@
       "lessonId": "a0-03-numbers-personal-info",
       "title": "الأعداد والبيانات الشخصية",
       "kind": "numbers",
-      "status": "not_generated",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-03-AUD-NUM-01.mp3",
           "speaker": "المعلّقة",
           "text": "Null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig. Dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. Einundzwanzig. Vierunddreißig. Meine Nummer ist zwei sechs, vier eins, null acht.",
-          "voiceId": "voice-00"
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -154,43 +154,43 @@
       "lessonId": "a0-03-numbers-personal-info",
       "title": "حوار عن البيانات الشخصية",
       "kind": "dialogue",
-      "status": "not_generated",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-03-AUD-DLG-01-01.mp3",
           "speaker": "Mariem",
           "text": "Hallo! Wie heißt du?",
-          "voiceId": "voice-00"
+          "voiceId": "voice-02"
         },
         {
           "src": "assets/audio/DL-A0-03-AUD-DLG-01-02.mp3",
           "speaker": "Yassine",
           "text": "Ich heiße Yassine. Und du?",
-          "voiceId": "voice-01"
+          "voiceId": "voice-03"
         },
         {
           "src": "assets/audio/DL-A0-03-AUD-DLG-01-03.mp3",
           "speaker": "Mariem",
           "text": "Ich heiße Mariem. Woher kommst du?",
-          "voiceId": "voice-00"
+          "voiceId": "voice-02"
         },
         {
           "src": "assets/audio/DL-A0-03-AUD-DLG-01-04.mp3",
           "speaker": "Yassine",
           "text": "Ich komme aus Tunesien. Ich wohne in Nabeul.",
-          "voiceId": "voice-01"
+          "voiceId": "voice-03"
         },
         {
           "src": "assets/audio/DL-A0-03-AUD-DLG-01-05.mp3",
           "speaker": "Mariem",
           "text": "Wie alt bist du?",
-          "voiceId": "voice-00"
+          "voiceId": "voice-02"
         },
         {
           "src": "assets/audio/DL-A0-03-AUD-DLG-01-06.mp3",
           "speaker": "Yassine",
-          "text": "Ich bin einundzwanzig Jahre alt.",
-          "voiceId": "voice-01"
+          "text": "Ich bin achtzehn Jahre alt.",
+          "voiceId": "voice-03"
         }
       ],
       "transcriptPolicy": "offer"
@@ -200,13 +200,13 @@
       "lessonId": "a0-04-first-sentences",
       "title": "أمثلة الجمل الأولى",
       "kind": "model_sentences",
-      "status": "not_generated",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-04-AUD-MODEL-01.mp3",
           "speaker": "المعلّقة",
-          "text": "Ich bin zweiundzwanzig Jahre alt. Du bist in Nabeul. Wir sind Freunde. Ich habe eine Frage. Mila hat ein Handy. Haben Sie Zeit? Bist du hier? Wir haben Zeit. Ich bin müde. Nora ist hier.",
-          "voiceId": "voice-00"
+          "text": "Ich bin achtzehn Jahre alt. Du bist in Nabeul. Wir sind Freunde. Ich habe eine Frage. Mila hat ein Handy. Haben Sie Zeit? Bist du hier? Wir haben Zeit. Ich bin müde. Nora ist hier.",
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -216,13 +216,13 @@
       "lessonId": "a0-05-classroom-phrases",
       "title": "عبارات الصف وطلب المساعدة",
       "kind": "phrase_bank",
-      "status": "not_generated",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-05-AUD-PHR-01.mp3",
           "speaker": "المعلّقة",
           "text": "Ich verstehe. Ich verstehe nicht. Bitte wiederholen Sie das. Kannst du das bitte wiederholen? Langsamer, bitte. Was bedeutet das? Wie schreibt man das? Können Sie mir helfen? Ich habe eine Frage. Danke für Ihre Hilfe.",
-          "voiceId": "voice-00"
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "offer"
@@ -232,37 +232,37 @@
       "lessonId": "a0-05-classroom-phrases",
       "title": "حوار طلب التوضيح",
       "kind": "dialogue",
-      "status": "not_generated",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-05-AUD-DLG-01-01.mp3",
           "speaker": "Lernender",
           "text": "Entschuldigung, ich verstehe das Wort nicht. Was bedeutet pünktlich?",
-          "voiceId": "voice-00"
+          "voiceId": "voice-03"
         },
         {
           "src": "assets/audio/DL-A0-05-AUD-DLG-01-02.mp3",
           "speaker": "Lehrerin",
           "text": "Pünktlich bedeutet: zur richtigen Zeit.",
-          "voiceId": "voice-01"
+          "voiceId": "voice-02"
         },
         {
           "src": "assets/audio/DL-A0-05-AUD-DLG-01-03.mp3",
           "speaker": "Lernender",
           "text": "Danke. Können Sie das bitte wiederholen?",
-          "voiceId": "voice-00"
+          "voiceId": "voice-03"
         },
         {
           "src": "assets/audio/DL-A0-05-AUD-DLG-01-04.mp3",
           "speaker": "Lehrerin",
           "text": "Ja, natürlich.",
-          "voiceId": "voice-01"
+          "voiceId": "voice-02"
         },
         {
           "src": "assets/audio/DL-A0-05-AUD-DLG-01-05.mp3",
           "speaker": "Lernender",
           "text": "Danke für Ihre Hilfe.",
-          "voiceId": "voice-00"
+          "voiceId": "voice-03"
         }
       ],
       "transcriptPolicy": "offer"
@@ -272,16 +272,252 @@
       "lessonId": "a0-a1-gate",
       "title": "استماع بوابة A0 الختامية",
       "kind": "gate_listening",
-      "status": "not_generated",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-A0-GATE-AUD-LST-01.mp3",
           "speaker": "المعلّقة",
-          "text": "Guten Tag! Ich heiße Nora und wohne in Nabeul. Ich bin einundzwanzig Jahre alt. Meine Kursnummer ist zwei sechs, vier eins, null acht. Entschuldigung, ich verstehe die letzte Zahl nicht. Können Sie sie bitte wiederholen?",
-          "voiceId": "voice-00"
+          "text": "Guten Tag! Ich heiße Nora und wohne in Nabeul. Ich bin achtzehn Jahre alt. Meine Kursnummer ist zwei sechs, vier eins, null acht. Entschuldigung, ich verstehe die letzte Zahl nicht. Können Sie sie bitte wiederholen?",
+          "voiceId": "voice-02"
         }
       ],
       "transcriptPolicy": "hide_until_first_attempt"
+    },
+    {
+      "assetId": "DL-A1-01-AUD-READ-01",
+      "lessonId": "a1-01-introductions-languages-hobbies",
+      "title": "قراءة: Mila stellt sich vor",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-01-AUD-READ-01.mp3",
+          "speaker": "Mila",
+          "text": "Hallo! Ich heiße Mila und komme aus Tunesien. Ich wohne in Sousse. Meine Muttersprache ist Arabisch. Ich spreche auch Französisch und lerne Deutsch. In meiner Freizeit lese ich gern und höre Musik. Am Samstag spiele ich manchmal Volleyball mit Freunden.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A1-01-AUD-LST-01",
+      "lessonId": "a1-01-introductions-languages-hobbies",
+      "title": "استماع: Karim يتحدث عن نفسه",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-01-AUD-LST-01.mp3",
+          "speaker": "Karim",
+          "text": "Guten Tag! Ich heiße Karim. Ich wohne in Tunis und komme aus Tunesien. Ich spreche Arabisch und Französisch. Zurzeit lerne ich Deutsch. Ich koche gern und spiele am Sonntag Schach.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A1-02-AUD-READ-01",
+      "lessonId": "a1-02-work-family",
+      "title": "قراءة: Rania وأسرتها",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-02-AUD-READ-01.mp3",
+          "speaker": "Rania",
+          "text": "Ich heiße Rania und wohne in Nabeul. Meine Familie ist nicht sehr groß. Mein Vater ist Koch und arbeitet in einem Hotel. Meine Mutter ist Lehrerin. Ich habe einen Bruder und eine Schwester. Mein Bruder Sami studiert in Tunis. Meine Schwester Amel ist noch Schülerin. Am Sonntag besuchen wir oft unsere Großmutter.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A1-03-AUD-DLG-01",
+      "lessonId": "a1-03-city-cafe-hotel",
+      "title": "حوار المقهى: طلب مشروب وطعام",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Servicekraft",
+          "text": "Guten Tag! Was möchten Sie?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Gast",
+          "text": "Ich möchte einen Tee und ein Stück Kuchen, bitte.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Servicekraft",
+          "text": "Gern. Möchten Sie auch Wasser?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Gast",
+          "text": "Ja, ein Wasser, bitte. Was kostet das alles?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Servicekraft",
+          "text": "Sechs Euro fünfzig.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Gast",
+          "text": "Hier, bitte. Danke!",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-07.mp3",
+          "speaker": "Servicekraft",
+          "text": "Danke. Auf Wiedersehen!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A1-02-AUD-LST-01",
+      "lessonId": "a1-02-work-family",
+      "title": "استماع: Youssef وأسرته",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-02-AUD-LST-01.mp3",
+          "speaker": "Youssef",
+          "text": "Guten Tag! Ich bin Youssef. Mein Vater arbeitet in einer Werkstatt. Er ist Mechaniker. Meine Mutter ist Ärztin und arbeitet in einer Klinik. Meine Schwester heißt Leila. Sie studiert an der Universität.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-03-AUD-READ-01",
+      "lessonId": "a1-03-city-cafe-hotel",
+      "title": "قراءة: الطريق في المدينة",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-03-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Café Am Platz ist neben dem kleinen Markt. Vom Bahnhof gehen Sie geradeaus bis zur Ampel. Dann gehen Sie rechts. Das Café ist an der Ecke. Das Stadtmuseum ist gegenüber dem Café. Die Apotheke ist neben dem Hotel.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-03-AUD-LST-01",
+      "lessonId": "a1-03-city-cafe-hotel",
+      "title": "استماع: السؤال عن طريق المتحف",
+      "kind": "listening_dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-01.mp3",
+          "speaker": "Reisende Person",
+          "text": "Entschuldigung, wie komme ich zum Museum?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-02.mp3",
+          "speaker": "Auskunftsperson",
+          "text": "Gehen Sie geradeaus bis zum Platz. Dann gehen Sie links. Das Museum ist neben dem Café.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-03.mp3",
+          "speaker": "Reisende Person",
+          "text": "Vielen Dank!",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-04.mp3",
+          "speaker": "Auskunftsperson",
+          "text": "Bitte schön.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-04-AUD-READ-01",
+      "lessonId": "a1-04-daily-routine-time",
+      "title": "قراءة: يومي المعتاد",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-04-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich stehe jeden Tag um sieben Uhr auf. Um halb acht frühstücke ich mit meiner Familie. Von neun bis drei arbeite ich. Am Nachmittag kaufe ich manchmal ein. Um sechs Uhr lerne ich Deutsch. Am Abend rufe ich meine Schwester an. Um elf Uhr schlafe ich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-04-AUD-LST-01",
+      "lessonId": "a1-04-daily-routine-time",
+      "title": "استماع: جدول يوم الثلاثاء",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-04-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Am Dienstag stehe ich um halb sieben auf. Um sieben Uhr fahre ich zur Arbeit. Von acht bis zwölf arbeite ich. Um zwölf Uhr mache ich eine Pause. Am Nachmittag kaufe ich im Supermarkt ein. Um neun Uhr gehe ich schlafen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-05-AUD-READ-01",
+      "lessonId": "a1-05-food-drink",
+      "title": "قراءة: وجبات Sami وأخته",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-05-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Am Samstag frühstückt Sami mit seiner Schwester. Sami isst Brot mit Käse und eine Tomate. Seine Schwester isst ein Ei und einen Apfel. Beide trinken Tee. Am Nachmittag kochen sie eine Gemüsesuppe. Sami mag die Suppe, aber seine Schwester mag lieber Reis.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-05-AUD-LST-01",
+      "lessonId": "a1-05-food-drink",
+      "title": "استماع: ماذا آكل خلال اليوم؟",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-05-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Zum Frühstück esse ich Joghurt und Obst. Ich trinke Wasser. Am Mittag esse ich Reis und Gemüse. Am Abend trinke ich manchmal Tee.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
     }
+  ],
+  "selectedVoiceIds": [
+    "voice-00",
+    "voice-01",
+    "voice-02",
+    "voice-03"
   ]
 }

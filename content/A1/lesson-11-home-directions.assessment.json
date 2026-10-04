@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-11-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-11-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-11-Q01",
+      "sourceTaskIds": [
+        "DL-A1-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "مفردات المنزل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى die Küche؟",
+      "options": [
+        "غرفة النوم",
+        "المطبخ",
+        "الشرفة"
+      ],
+      "answerIndex": 1,
+      "explanation": "die Küche تعني «المطبخ»."
+    },
+    {
+      "id": "DL-A1-11-Q02",
+      "sourceTaskIds": [
+        "DL-A1-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "مفردات المنزل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى das Schlafzimmer؟",
+      "options": [
+        "غرفة النوم",
+        "غرفة الجلوس",
+        "الحمّام"
+      ],
+      "answerIndex": 0,
+      "explanation": "das Schlafzimmer تعني «غرفة النوم»."
+    },
+    {
+      "id": "DL-A1-11-Q03",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "es gibt وأداة التعريف",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Es gibt ___ Tisch.",
+      "options": [
+        "eine",
+        "einen",
+        "ein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tisch مذكر؛ بعد es gibt نستخدم هنا Akkusativ einen."
+    },
+    {
+      "id": "DL-A1-11-Q04",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "es gibt وأداة التعريف",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Es gibt ___ Küche.",
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "answerIndex": 2,
+      "explanation": "Küche مؤنث، لذلك نستخدم eine."
+    },
+    {
+      "id": "DL-A1-11-Q05",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "es gibt وأداة التعريف",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Es gibt einen Balkon.",
+        "Es gibt ein Balkon.",
+        "Es gibt eine Balkon."
+      ],
+      "answerIndex": 0,
+      "explanation": "Balkon مذكر؛ الصيغة هنا einen Balkon."
+    },
+    {
+      "id": "DL-A1-11-Q06",
+      "sourceTaskIds": [
+        "DL-A1-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "الاتجاهات",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعطي اتجاهًا مهذبًا إلى الأمام؟",
+      "options": [
+        "Gehen Sie bitte geradeaus.",
+        "Ich möchte ein Zimmer.",
+        "Es gibt einen Tisch."
+      ],
+      "answerIndex": 0,
+      "explanation": "Gehen Sie bitte geradeaus تعطي تعليمات طريق مهذبة."
+    },
+    {
+      "id": "DL-A1-11-Q07",
+      "sourceTaskIds": [
+        "DL-A1-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "الاتجاهات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى links؟",
+      "options": [
+        "يمين",
+        "إلى الأمام",
+        "يسار"
+      ],
+      "answerIndex": 2,
+      "explanation": "links تعني «يسار»."
+    },
+    {
+      "id": "DL-A1-11-Q08",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "وصف المكان",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف نقول إن المنزل بجانب المخبز؟",
+      "options": [
+        "Das Haus ist neben der Bäckerei.",
+        "Das Haus ist um der Bäckerei.",
+        "Das Haus neben ist Bäckerei."
+      ],
+      "answerIndex": 0,
+      "explanation": "neben der Bäckerei تعني «بجانب المخبز»."
+    },
+    {
+      "id": "DL-A1-11-Q09",
+      "sourceTaskIds": [
+        "DL-A1-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، أين يقع المنزل بالنسبة إلى الحديقة؟",
+      "options": [
+        "مقابل الحديقة",
+        "داخل الحديقة",
+        "بعيدًا عن الحديقة"
+      ],
+      "answerIndex": 0,
+      "explanation": "مفتاح القراءة يذكر Gegenüber dem Park: مقابل الحديقة."
+    },
+    {
+      "id": "DL-A1-11-Q10",
+      "sourceTaskIds": [
+        "DL-A1-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "وصف المسكن",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تعني «يوجد مطبخ»؟",
+      "options": [
+        "Es gibt eine Küche.",
+        "Es gibt einen Küche.",
+        "Es gibt die Küche gibt."
+      ],
+      "answerIndex": 0,
+      "explanation": "Küche مؤنث، فنقول: Es gibt eine Küche."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-11-P01",
+      "sourceTaskIds": [
+        "DL-A1-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب وصفًا لمسكن بسيط من أربع جمل: اذكر غرفة وأثاثًا وميزة واحدة للمكان. اقرأ الوصف بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يذكر أربع معلومات عن المسكن أو محتوياته.",
+        "meaningClarity": "يستطيع القارئ تخيل المسكن والغرف الأساسية.",
+        "targetSkill": "يستخدم es gibt مع أداة مناسبة مثل einen أو eine أو ein."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-11-P02",
+      "sourceTaskIds": [
+        "DL-A1-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "تخيل طريقًا من محطة إلى منزل: اكتب ثلاث تعليمات متتابعة، ثم اشرح الطريق بصوت مرتفع كما لو أنك تساعد زائرًا.",
+      "criteria": {
+        "taskCompletion": "يقدم ثلاث تعليمات طريق متتابعة.",
+        "meaningClarity": "يمكن للزائر تتبع الطريق دون تخمين الاتجاه.",
+        "targetSkill": "يستخدم مفردتين من الاتجاهات مثل geradeaus وlinks وrechts، ويصوغ طلبًا واضحًا."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -57,7 +57,7 @@
 
 ## 5) أمثلة أصلية
 
-- Ich bin 22 Jahre alt.
+- Ich bin 18 Jahre alt.
 - Du bist in Nabeul.
 - Wir sind Freunde.
 - Ich habe eine Frage.

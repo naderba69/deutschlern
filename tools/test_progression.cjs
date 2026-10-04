@@ -75,8 +75,41 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 12, "the complete A0 audio plan must be carried into the course bundle");
-  assert.equal(vm.runInContext("course.audioAssets.some((asset) => asset.status === 'ready')", context), false, "unreviewed recordings must not be exposed as ready audio");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 23, "the generated A0 and current-batch A1 audio assets must be carried into the course bundle");
+  const expectedAudioLessonByPrefix = {
+    "DL-A0-01": "a0-01-alphabet",
+    "DL-A0-02": "a0-02-greetings",
+    "DL-A0-03": "a0-03-numbers-personal-info",
+    "DL-A0-04": "a0-04-first-sentences",
+    "DL-A0-05": "a0-05-classroom-phrases",
+    "DL-A0-GATE": "a0-a1-gate",
+    "DL-A1-01": "a1-01-introductions-languages-hobbies",
+    "DL-A1-02": "a1-02-work-family",
+    "DL-A1-03": "a1-03-city-cafe-hotel",
+    "DL-A1-04": "a1-04-daily-routine-time",
+    "DL-A1-05": "a1-05-food-drink",
+  };
+  for (const asset of courseData.audioAssets) {
+    const prefix = asset.assetId.split("-").slice(0, 3).join("-");
+    assert.equal(asset.lessonId, expectedAudioLessonByPrefix[prefix], `${asset.assetId} must be assigned to its exact lesson`);
+    for (const segment of asset.segments) {
+      const fileStem = segment.src.split("/").pop().replace(/\.mp3$/i, "");
+      assert.ok(fileStem === asset.assetId || fileStem.startsWith(`${asset.assetId}-`), `${segment.src} must belong to ${asset.assetId}`);
+    }
+  }
+  const audioMarkupByLesson = Object.fromEntries(Object.values(expectedAudioLessonByPrefix).map((lessonId) => [
+    lessonId,
+    vm.runInContext(`renderAudioAssets(${JSON.stringify(lessonId)})`, context),
+  ]));
+  for (const asset of courseData.audioAssets) {
+    assert.ok(audioMarkupByLesson[asset.lessonId]?.includes(asset.title), `${asset.assetId} must be visible in its assigned lesson in final form`);
+    assert.ok(audioMarkupByLesson[asset.lessonId].includes('نهائي'), `${asset.assetId} must carry the final label`);
+    assert.ok(!audioMarkupByLesson[asset.lessonId].includes('للمراجعة'), `${asset.assetId} must not show a review label in its assigned lesson`);
+    for (const [lessonId, markup] of Object.entries(audioMarkupByLesson)) {
+      if (lessonId !== asset.lessonId) assert.ok(!markup.includes(asset.title), `${asset.assetId} must not appear in ${lessonId}`);
+    }
+  }
+  assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[1])", context), false, "later A0 lessons must remain sequentially locked");
@@ -86,33 +119,51 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.doesNotMatch(elements["app-root"].innerHTML, /اختبار تحديد المستوى|data-action=\"complete-lesson\"/);
   vm.runInContext("openLesson(course.lessons[1].id)", context);
   assert.equal(vm.runInContext("lessonSession", context), null, "opening a later lesson must be rejected by the app logic");
-  vm.runInContext(`
-    course.audioAssets[0].status = 'ready';
-    openLesson(course.lessons[0].id);
-  `, context);
+  vm.runInContext("openLesson(course.lessons[0].id)", context);
+  const alphabetLessonAudio = vm.runInContext("renderAudioAssets('a0-01-alphabet')", context);
+  const greetingLessonAudio = vm.runInContext("renderAudioAssets('a0-02-greetings')", context);
+  assert.match(alphabetLessonAudio, /أسماء الحروف الألمانية/);
+  assert.doesNotMatch(alphabetLessonAudio, /عبارات التحية والتعارف/, "a lesson must not receive another lesson's recording");
+  assert.match(greetingLessonAudio, /عبارات التحية والتعارف/);
+  assert.doesNotMatch(greetingLessonAudio, /أسماء الحروف الألمانية/, "recordings must appear only in their assigned lesson");
+  assert.match(alphabetLessonAudio, /النسخة النهائية/);
+  assert.match(alphabetLessonAudio, /نهائي/);
+  assert.doesNotMatch(alphabetLessonAudio, /للمراجعة/);
   assert.match(elements["app-root"].innerHTML, /استمع بالسرعة الطبيعية/);
   assert.match(elements["app-root"].innerHTML, /استمع ببطء/);
+  const finalClipStart = FakeAudio.instances.length;
+  vm.runInContext("playAudioAsset('DL-A0-01-AUD-ABC-01', 1)", context);
+  assert.ok(FakeAudio.instances[finalClipStart]?.started, "final recordings must be playable");
+  FakeAudio.instances[finalClipStart].emit("ended");
+  const pendingClipStart = FakeAudio.instances.length;
   vm.runInContext(`
     course.audioAssets[0].status = 'generated_pending_acoustic_review';
+    playAudioAsset('DL-A0-01-AUD-ABC-01', 1);
+  `, context);
+  assert.ok(FakeAudio.instances[pendingClipStart]?.started, "pending recordings must remain playable when that state is used");
+  FakeAudio.instances[pendingClipStart].emit("ended");
+  vm.runInContext("course.audioAssets[0].status = 'ready'", context);
+  vm.runInContext(`
     lessonSession = null;
     currentView = 'dashboard';
     render();
   `, context);
-  assert.doesNotMatch(elements["app-root"].innerHTML, /استمع بالسرعة الطبيعية/, "unreviewed recordings must stay hidden from learners");
+  assert.doesNotMatch(elements["app-root"].innerHTML, /استمع بالسرعة الطبيعية/, "lesson recordings must not appear outside their assigned lesson");
+  const dialogueAudioStart = FakeAudio.instances.length;
   vm.runInContext(`
-    course.audioAssets.find((asset) => asset.assetId === 'DL-A0-02-AUD-DLG-01').status = 'ready';
+    course.audioAssets.find((asset) => asset.assetId === 'DL-A0-02-AUD-DLG-01').status = 'generated_pending_acoustic_review';
     playAudioAsset('DL-A0-02-AUD-DLG-01', 0.8);
   `, context);
-  for (let index = 0; index < 4; index += 1) {
+  for (let index = dialogueAudioStart; index < dialogueAudioStart + 4; index += 1) {
     const clip = FakeAudio.instances[index];
-    assert.ok(clip?.started, `audio dialogue segment ${index + 1} should start`);
+    assert.ok(clip?.started, `audio dialogue segment ${index - dialogueAudioStart + 1} should start`);
     assert.equal(clip.playbackRate, 0.8, "slow listening must use the requested rate");
     assert.equal(clip.preservesPitch, true, "slow playback should preserve pitch when supported");
     clip.emit("ended");
   }
-  assert.equal(FakeAudio.instances.length, 4, "dialogue segments must play in order, not overlap");
+  assert.equal(FakeAudio.instances.length - dialogueAudioStart, 4, "dialogue segments must play in order, not overlap");
   const gateAudioStart = FakeAudio.instances.length;
-  vm.runInContext(`course.audioAssets.find((asset) => asset.assetId === 'DL-A0-GATE-AUD-LST-01').status = 'ready'`, context);
+  vm.runInContext(`course.audioAssets.find((asset) => asset.assetId === 'DL-A0-GATE-AUD-LST-01').status = 'generated_pending_acoustic_review'`, context);
   const gateAudioBeforeListen = vm.runInContext("renderAudioAssets('a0-a1-gate')", context);
   assert.match(gateAudioBeforeListen, /سيظهر النص بعد الاستماع/);
   assert.doesNotMatch(gateAudioBeforeListen, /Guten Tag! Ich heiße Nora/);
@@ -243,8 +294,19 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   vm.runInContext("state.levelChecks['A0-A1'].performanceEvidenceCompleted = true", context);
   assert.equal(vm.runInContext("isA0TransitionMastered()", context), true, "the gate must be recognized after its evidence is recorded");
   assert.equal(vm.runInContext("isLevelUnlocked('A1')", context), true, "A1 may unlock only after the quiz and practical gate evidence are recorded");
+  const a1Lessons = vm.runInContext("getLessonsInLevel('A1')", context);
+  assert.equal(a1Lessons.length, 12, "the assessment batch must cover all twelve A1 lessons");
+  for (const lesson of a1Lessons) {
+    assert.equal(lesson.assessment?.status, "ready", `${lesson.id} must have a ready assessment`);
+    assert.equal(lesson.quiz?.length, 10, `${lesson.id} must have ten scored questions`);
+    assert.equal(lesson.performanceTasks?.length, 2, `${lesson.id} must have two practical self-check tasks`);
+    assert.equal(lesson.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.audioRequired === false), true, `${lesson.id} tasks must work locally without audio`);
+  }
+  assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1'))", context), true, "the first A1 lesson must open after the A0 gate");
+  assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1' && lesson.unit === 2))", context), false, "later A1 lessons must remain sequentially locked");
+  assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), a1Lessons[0].id, "the first A1 lesson must be the next required step after the gate");
 
-  console.log("PASS: A0-only start, sequential locks, 80% scoring, practical-evidence locks, legacy migration, gated audio playback/transcripts, and the A0→A1 gate.");
+  console.log("PASS: A0-only start, sequential A0/A1 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1 audio display/playback, pending-playback fallback, transcript unlock, the A0→A1 gate, and all twelve local A1 assessments.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

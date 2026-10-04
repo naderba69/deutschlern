@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-06-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-06-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-06-Q01",
+      "sourceTaskIds": [
+        "DL-A1-06-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Perfekt: المساعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Gestern ___ ich Deutsch gelernt.",
+      "options": [
+        "bin",
+        "habe",
+        "hat"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع lernen نستخدم haben: Ich habe gelernt."
+    },
+    {
+      "id": "DL-A1-06-Q02",
+      "sourceTaskIds": [
+        "DL-A1-06-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Perfekt: المساعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ nach Tunis gefahren.",
+      "options": [
+        "haben",
+        "sind",
+        "seid"
+      ],
+      "answerIndex": 1,
+      "explanation": "fahren بمعنى الانتقال إلى مكان يأخذ sein هنا: Wir sind gefahren."
+    },
+    {
+      "id": "DL-A1-06-Q03",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما Partizip II للفعل lernen؟",
+      "options": [
+        "gelernet",
+        "gelernt",
+        "gelernte"
+      ],
+      "answerIndex": 1,
+      "explanation": "Partizip II هو gelernt."
+    },
+    {
+      "id": "DL-A1-06-Q04",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما Partizip II للفعل gehen؟",
+      "options": [
+        "gegeht",
+        "gegangen",
+        "gegehtet"
+      ],
+      "answerIndex": 1,
+      "explanation": "الفعل غير المنتظم gehen يصبح gegangen."
+    },
+    {
+      "id": "DL-A1-06-Q05",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "ترتيب Perfekt",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة ترتيبها صحيح؟",
+      "options": [
+        "Gestern habe ich Deutsch gelernt.",
+        "Gestern ich habe gelernt Deutsch.",
+        "Gestern gelernt ich habe Deutsch."
+      ],
+      "answerIndex": 0,
+      "explanation": "يأتي المساعد المصرف ثانيًا، وPartizip II في نهاية الجملة."
+    },
+    {
+      "id": "DL-A1-06-Q06",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "إكمال الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir haben Musik ___.",
+      "options": [
+        "gehört",
+        "hören",
+        "gehören"
+      ],
+      "answerIndex": 0,
+      "explanation": "Partizip II للفعل hören هو gehört."
+    },
+    {
+      "id": "DL-A1-06-Q07",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "اختيار المساعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Rania ___ zu ihrer Freundin gefahren.",
+      "options": [
+        "hat",
+        "ist",
+        "haben"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع fahren للانتقال نستخدم ist هنا."
+    },
+    {
+      "id": "DL-A1-06-Q08",
+      "sourceTaskIds": [
+        "DL-A1-06-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "الجمل الصحيحة",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر Partizip II الصحيح: Ich habe einen Film ___.",
+      "options": [
+        "gesehen",
+        "gesieht",
+        "sehen"
+      ],
+      "answerIndex": 0,
+      "explanation": "Partizip II للفعل sehen هو gesehen."
+    },
+    {
+      "id": "DL-A1-06-Q09",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما Partizip II للفعل fahren؟",
+      "options": [
+        "gefahrt",
+        "gefahren",
+        "gefahrtet"
+      ],
+      "answerIndex": 1,
+      "explanation": "الفعل fahren يصبح gefahren."
+    },
+    {
+      "id": "DL-A1-06-Q10",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "ترتيب Perfekt",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تقول «ذهبت أمس إلى تونس»؟",
+      "options": [
+        "Gestern bin ich nach Tunis gefahren.",
+        "Gestern habe ich nach Tunis fahren.",
+        "Gestern ich bin gefahren nach Tunis."
+      ],
+      "answerIndex": 0,
+      "explanation": "التركيب الصحيح: bin المصرف في المرتبة الثانية، وgefahren في النهاية."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-06-P01",
+      "sourceTaskIds": [
+        "DL-A1-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل عن أمس أو عطلة الأسبوع، مستخدمًا Perfekt لأربعة أفعال درستها. اقرأ السرد بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يذكر أربعة أحداث ماضية بجمل كاملة.",
+        "meaningClarity": "يمكن فهم ترتيب الأحداث وما فعله المتعلم.",
+        "targetSkill": "يختار haben أو sein في الأمثلة المدروسة ويضع Partizip II في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-06-P02",
+      "sourceTaskIds": [
+        "DL-A1-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "احكِ تجربة قصيرة من أمس بثلاث جمل على الأقل. اكتب الجمل أولًا ثم اقرأها بصوت مرتفع، وراجع المساعد ونهاية كل جملة.",
+      "criteria": {
+        "taskCompletion": "يقدم ثلاث جمل ماضية على الأقل.",
+        "meaningClarity": "تتضح الأنشطة ومتى حدثت.",
+        "targetSkill": "يستخدم Perfekt مع مساعد مناسب وPartizip II صحيح في الأفعال التي درسها."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

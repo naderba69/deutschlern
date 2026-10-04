@@ -825,15 +825,23 @@ function renderLesson() {
 }
 
 function renderAudioAssets(lessonId) {
-  const assets = (course?.audioAssets || []).filter((asset) => asset.lessonId === lessonId && asset.status === 'ready');
+  const playableStatuses = ['ready', 'generated_pending_acoustic_review'];
+  const assets = (course?.audioAssets || []).filter((asset) => asset.lessonId === lessonId && playableStatuses.includes(asset.status));
   if (!assets.length) return '';
-  return `<section class="lesson-audio-panel" aria-label="التسجيلات الصوتية"><div class="audio-panel-heading"><div><small>HÖREN · الاستماع</small><h2>استمع إلى الألمانية</h2></div><span class="count">صوت معياري</span></div><div class="audio-assets-list">${assets.map((asset) => {
+  const hasPendingReview = assets.some((asset) => asset.status === 'generated_pending_acoustic_review');
+  const reviewNote = hasPendingReview
+    ? '<p class="audio-review-note">التسجيلات متاحة لك للاستماع والمراجعة داخل هذا الدرس.</p>'
+    : '';
+  return `<section class="lesson-audio-panel" aria-label="التسجيلات الصوتية"><div class="audio-panel-heading"><div><small>HÖREN · الاستماع</small><h2>استمع إلى الألمانية</h2></div><span class="count">${hasPendingReview ? 'متاحة للمراجعة' : 'النسخة النهائية'}</span></div>${reviewNote}<div class="audio-assets-list">${assets.map((asset) => {
     const transcript = asset.segments.map((segment) => `<div class="audio-transcript-line"><strong>${escapeHTML(segment.speaker)}</strong><span dir="ltr">${escapeHTML(segment.text)}</span></div>`).join('');
     const transcriptLocked = asset.transcriptPolicy === 'hide_until_first_attempt' && state.audioTranscriptUnlocks?.[asset.assetId] !== true;
     const transcriptView = transcriptLocked
       ? '<p class="audio-transcript-locked">سيظهر النص بعد الاستماع إلى التسجيل مرة كاملة.</p>'
       : `<details class="audio-transcript"><summary>اعرض النص الألماني</summary><div>${transcript}</div></details>`;
-    return `<article class="audio-asset-card"><div class="audio-asset-title"><strong>${escapeHTML(asset.title)}</strong><span>${asset.segments.length > 1 ? 'حوار بأصوات ثابتة' : 'تسجيل الدرس'}</span></div><div class="audio-asset-actions"><button type="button" class="button-outline button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div>${transcriptView}</article>`;
+    const reviewStatus = asset.status === 'ready'
+      ? '<span class="audio-asset-status is-final">نهائي</span>'
+      : '<span class="audio-asset-status is-review">للمراجعة</span>';
+    return `<article class="audio-asset-card"><div class="audio-asset-title"><strong>${escapeHTML(asset.title)}</strong><div class="audio-asset-meta"><span>${asset.segments.length > 1 ? 'حوار بأصوات ثابتة' : 'تسجيل الدرس'}</span>${reviewStatus}</div></div><div class="audio-asset-actions"><button type="button" class="button-outline button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div>${transcriptView}</article>`;
   }).join('')}</div></section>`;
 }
 
@@ -1079,7 +1087,7 @@ function stopAudioPlayback() {
 }
 
 function playAudioAsset(assetId, rate) {
-  const asset = (course?.audioAssets || []).find((item) => item.assetId === assetId && item.status === 'ready');
+  const asset = (course?.audioAssets || []).find((item) => item.assetId === assetId && ['ready', 'generated_pending_acoustic_review'].includes(item.status));
   if (!asset || !Array.isArray(asset.segments) || !asset.segments.length) {
     showToast('هذا التسجيل لم يكتمل تجهيزه بعد.');
     return;

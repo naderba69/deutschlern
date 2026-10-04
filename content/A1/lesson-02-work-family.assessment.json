@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-02-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-02-Q01",
+      "sourceTaskIds": [
+        "DL-A1-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "مفردات الأسرة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Bruder؟",
+      "options": [
+        "الأخ",
+        "الأب",
+        "الجد"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Bruder تعني «الأخ»."
+    },
+    {
+      "id": "DL-A1-02-Q02",
+      "sourceTaskIds": [
+        "DL-A1-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "ضمائر الملكية",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: ___ Mutter arbeitet als Ärztin.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Dein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mutter مؤنث، لذلك نستخدم meine."
+    },
+    {
+      "id": "DL-A1-02-Q03",
+      "sourceTaskIds": [
+        "DL-A1-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "ضمائر الملكية",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: ___ Eltern wohnen in Nabeul.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Dein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Eltern جمع، لذلك نستخدم meine."
+    },
+    {
+      "id": "DL-A1-02-Q04",
+      "sourceTaskIds": [
+        "DL-A1-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "تصريف arbeiten",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ in einem Café.",
+      "options": [
+        "arbeitet",
+        "arbeitest",
+        "arbeite"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نقول arbeitest."
+    },
+    {
+      "id": "DL-A1-02-Q05",
+      "sourceTaskIds": [
+        "DL-A1-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "المهن والجنس",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف نقول «أختي طبيبة»؟",
+      "options": [
+        "Mein Schwester ist Arzt.",
+        "Meine Schwester ist Ärztin.",
+        "Meine Schwester sind Ärztin."
+      ],
+      "answerIndex": 1,
+      "explanation": "Schwester مؤنث، واسم المهنة هنا Ärztin."
+    },
+    {
+      "id": "DL-A1-02-Q06",
+      "sourceTaskIds": [
+        "DL-A1-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "السؤال عن المهنة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن المهنة؟",
+      "options": [
+        "Wo wohnst du?",
+        "Wie heißt dein Vater?",
+        "Was bist du von Beruf?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Was bist du von Beruf? تعني «ما مهنتك؟»."
+    },
+    {
+      "id": "DL-A1-02-Q07",
+      "sourceTaskIds": [
+        "DL-A1-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، أين تسكن Rania؟",
+      "options": [
+        "في تونس العاصمة",
+        "في نابل",
+        "في سوسة"
+      ],
+      "answerIndex": 1,
+      "explanation": "مفتاح النص يذكر أن Rania تسكن في Nabeul."
+    },
+    {
+      "id": "DL-A1-02-Q08",
+      "sourceTaskIds": [
+        "DL-A1-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، أين يدرس Sami؟",
+      "options": [
+        "في نابل",
+        "في تونس",
+        "في صفاقس"
+      ],
+      "answerIndex": 1,
+      "explanation": "مفتاح النص يذكر أن Sami يدرس في Tunis."
+    },
+    {
+      "id": "DL-A1-02-Q09",
+      "sourceTaskIds": [
+        "DL-A1-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "بناء الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Meine Tante ___ Ärztin.",
+      "options": [
+        "ist",
+        "sind",
+        "bist"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع Tante المفردة نستخدم ist."
+    },
+    {
+      "id": "DL-A1-02-Q10",
+      "sourceTaskIds": [
+        "DL-A1-02-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "عبارات التواصل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يعني «هل لديك إخوة أو أخوات؟»؟",
+      "options": [
+        "Hast du Geschwister?",
+        "Wo arbeitet dein Vater?",
+        "Was bist du von Beruf?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Hast du Geschwister? تسأل عن الإخوة والأخوات."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-02-P01",
+      "sourceTaskIds": [
+        "DL-A1-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ملفًا عائليًا قصيرًا بالألمانية: اذكر ثلاثة أفراد من الأسرة، واسم شخص واحد ومهنته. اقرأ الملف بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يذكر ثلاثة أفراد واسم شخص ومهنته.",
+        "meaningClarity": "تتضح صلة كل فرد بالشخص المذكور ومهنته.",
+        "targetSkill": "يستخدم mein/meine بحسب الاسم، ويختار صيغة مهنة مناسبة مثل Arzt/Ärztin."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 35,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-02-P02",
+      "sourceTaskIds": [
+        "DL-A1-02-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "مثّل مقابلة قصيرة عن الأسرة والعمل: اسأل عن الإخوة ومهنة شخص ومكان عمله، ثم أجب بإجابات كاملة. دوّن الحوار واقرأه بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يتضمن الحوار سؤالين وأجوبة مرتبطة بهما.",
+        "meaningClarity": "يفهم القارئ من يعمل وأين أو ما مهنته.",
+        "targetSkill": "يستخدم سؤالًا عن المهنة، وتصريفًا صحيحًا لفعل واحد على الأقل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -12,6 +12,19 @@ COURSE_PATH = ROOT / "data" / "course.json"
 AUDIO_PLAYLIST_PATH = ROOT / "data" / "audio-playlists.json"
 LEVELS = ["A0", "A1", "A2", "B1", "B2"]
 A0_SUPPORT_FILES = {"lesson-01-overview.md", "lesson-06-placement-check.md"}
+AUDIO_LESSON_BY_PREFIX = {
+    "DL-A0-01": "a0-01-alphabet",
+    "DL-A0-02": "a0-02-greetings",
+    "DL-A0-03": "a0-03-numbers-personal-info",
+    "DL-A0-04": "a0-04-first-sentences",
+    "DL-A0-05": "a0-05-classroom-phrases",
+    "DL-A0-GATE": "a0-a1-gate",
+    "DL-A1-01": "a1-01-introductions-languages-hobbies",
+    "DL-A1-02": "a1-02-work-family",
+    "DL-A1-03": "a1-03-city-cafe-hotel",
+    "DL-A1-04": "a1-04-daily-routine-time",
+    "DL-A1-05": "a1-05-food-drink",
+}
 
 
 def cells(line: str) -> list[str]:
@@ -373,31 +386,51 @@ def audio_source() -> list[dict]:
     if not isinstance(source, dict) or source.get("schemaVersion") != 1 or not isinstance(source.get("audioAssets"), list):
         raise SystemExit("Audio playlist must use schemaVersion 1 and include an audioAssets list")
     assets = source["audioAssets"]
+    selected_voice_ids = source.get("selectedVoiceIds")
+    if (
+        not isinstance(selected_voice_ids, list)
+        or not selected_voice_ids
+        or any(not isinstance(voice_id, str) or not re.fullmatch(r"voice-\d+", voice_id) for voice_id in selected_voice_ids)
+        or len(set(selected_voice_ids)) != len(selected_voice_ids)
+    ):
+        raise SystemExit("Audio playlist must list unique, auditioned selectedVoiceIds")
+    selected_voice_ids = set(selected_voice_ids)
     allowed_statuses = {"not_generated", "partial", "generated_pending_acoustic_review", "ready"}
     seen_ids: set[str] = set()
-    speaker_voices: dict[str, str] = {}
+    ready_speaker_voices: dict[str, str] = {}
     for asset in assets:
         if not isinstance(asset, dict) or not isinstance(asset.get("assetId"), str) or not asset["assetId"]:
             raise SystemExit("Every audio asset needs a stable assetId")
         if asset["assetId"] in seen_ids:
             raise SystemExit(f"Duplicate audio asset ID: {asset['assetId']}")
         seen_ids.add(asset["assetId"])
+        asset_prefix = "-".join(asset["assetId"].split("-")[:3])
+        expected_lesson_id = AUDIO_LESSON_BY_PREFIX.get(asset_prefix)
+        if expected_lesson_id is None or asset.get("lessonId") != expected_lesson_id:
+            raise SystemExit(f"Audio asset is assigned to the wrong lesson: {asset['assetId']} -> {asset.get('lessonId')}")
         if asset.get("status") not in allowed_statuses or not isinstance(asset.get("segments"), list) or not asset["segments"]:
             raise SystemExit(f"Invalid audio asset status or segments: {asset['assetId']}")
         if asset.get("transcriptPolicy", "offer") not in {"offer", "hide_until_first_attempt"}:
             raise SystemExit(f"Invalid transcript policy: {asset['assetId']}")
         present = 0
+        asset_speaker_voices: dict[str, str] = {}
         for segment in asset["segments"]:
             if not isinstance(segment, dict) or not all(isinstance(segment.get(key), str) and segment[key].strip() for key in ("src", "speaker", "text", "voiceId")):
                 raise SystemExit(f"Every audio segment needs a path, speaker, voice ID, and transcript: {asset['assetId']}")
-            if segment["voiceId"] not in {"voice-00", "voice-01"}:
+            if segment["voiceId"] not in selected_voice_ids:
                 raise SystemExit(f"Audio segment uses an unselected voice ID: {asset['assetId']}")
-            previous_voice = speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
-            if previous_voice != segment["voiceId"]:
-                raise SystemExit(f"A speaker changes voice across segments: {segment['speaker']}")
+            previous_asset_voice = asset_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+            if previous_asset_voice != segment["voiceId"]:
+                raise SystemExit(f"A speaker changes voice within an asset: {segment['speaker']}")
+            if asset["status"] == "ready":
+                previous_ready_voice = ready_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+                if previous_ready_voice != segment["voiceId"]:
+                    raise SystemExit(f"An approved speaker changes voice across assets: {segment['speaker']}")
             path = Path(segment["src"])
             if path.is_absolute() or ".." in path.parts or path.suffix.lower() != ".mp3":
                 raise SystemExit(f"Audio paths must be safe relative MP3 paths: {segment['src']}")
+            if path.stem != asset["assetId"] and not path.stem.startswith(asset["assetId"] + "-"):
+                raise SystemExit(f"Audio file does not belong to its asset ID: {segment['src']}")
             present += (ROOT / path).is_file()
         segment_count = len(asset["segments"])
         if asset["status"] in {"ready", "generated_pending_acoustic_review"} and present != segment_count:

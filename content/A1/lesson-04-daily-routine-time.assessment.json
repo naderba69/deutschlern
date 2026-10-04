@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-04-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-04-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-04-Q01",
+      "sourceTaskIds": [
+        "DL-A1-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "حروف الجر للوقت",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: ___ Montag arbeite ich.",
+      "options": [
+        "um",
+        "am",
+        "von"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع أيام الأسبوع نستخدم am: am Montag."
+    },
+    {
+      "id": "DL-A1-04-Q02",
+      "sourceTaskIds": [
+        "DL-A1-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "حروف الجر للوقت",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Der Kurs beginnt ___ sieben Uhr.",
+      "options": [
+        "am",
+        "um",
+        "bis"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع ساعة محددة نستخدم um."
+    },
+    {
+      "id": "DL-A1-04-Q03",
+      "sourceTaskIds": [
+        "DL-A1-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "حروف الجر للوقت",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich arbeite von acht ___ drei Uhr.",
+      "options": [
+        "am",
+        "bis",
+        "um"
+      ],
+      "answerIndex": 1,
+      "explanation": "التركيب هو von … bis: من … إلى."
+    },
+    {
+      "id": "DL-A1-04-Q04",
+      "sourceTaskIds": [
+        "DL-A1-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "قراءة الوقت",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف نقول 8:30 بالطريقة الواردة في الدرس؟",
+      "options": [
+        "halb acht",
+        "halb neun",
+        "Viertel vor acht"
+      ],
+      "answerIndex": 1,
+      "explanation": "8:30 هي halb neun في التعبير الألماني."
+    },
+    {
+      "id": "DL-A1-04-Q05",
+      "sourceTaskIds": [
+        "DL-A1-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "الأفعال المنفصلة",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الجملة الصحيحة مع aufstehen.",
+      "options": [
+        "Ich stehe früh auf.",
+        "Ich aufstehe früh.",
+        "Ich stehe auf früh."
+      ],
+      "answerIndex": 0,
+      "explanation": "الفعل المصرف stehe في المرتبة الثانية، والبادئة auf في النهاية."
+    },
+    {
+      "id": "DL-A1-04-Q06",
+      "sourceTaskIds": [
+        "DL-A1-04-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي ترتيب صحيح؟",
+      "options": [
+        "Am Nachmittag kauft er ein.",
+        "Am Nachmittag er kauft ein.",
+        "Am Nachmittag einkauft er."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد عبارة الزمن يأتي الفعل المصرف ثانيًا، وتنفصل ein إلى النهاية."
+    },
+    {
+      "id": "DL-A1-04-Q07",
+      "sourceTaskIds": [
+        "DL-A1-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "الأفعال المنفصلة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ heute meine Schwester ___.",
+      "options": [
+        "anrufe … an",
+        "rufe … an",
+        "ruf … an"
+      ],
+      "answerIndex": 1,
+      "explanation": "anrufen يصبح rufe … an مع ich."
+    },
+    {
+      "id": "DL-A1-04-Q08",
+      "sourceTaskIds": [
+        "DL-A1-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "مفردات الوقت",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى am Abend؟",
+      "options": [
+        "في الصباح",
+        "في المساء",
+        "عند الظهر فقط"
+      ],
+      "answerIndex": 1,
+      "explanation": "am Abend تعني «في المساء»."
+    },
+    {
+      "id": "DL-A1-04-Q09",
+      "sourceTaskIds": [
+        "DL-A1-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "مفردات اليوم",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى frühstücken؟",
+      "options": [
+        "يتناول الفطور",
+        "يتسوق",
+        "يتصل هاتفيًا"
+      ],
+      "answerIndex": 0,
+      "explanation": "frühstücken تعني «يتناول الفطور»."
+    },
+    {
+      "id": "DL-A1-04-Q10",
+      "sourceTaskIds": [
+        "DL-A1-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "skillTags": [
+        "الأفعال المنفصلة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ am Samstag ___.",
+      "options": [
+        "kaufen … ein",
+        "ein … kaufen",
+        "kauft … ein"
+      ],
+      "answerIndex": 0,
+      "explanation": "einkaufen فعل منفصل: Wir kaufen … ein."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-04-P01",
+      "sourceTaskIds": [
+        "DL-A1-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل تصف يومًا عاديًا: وقت الاستيقاظ، وموعد نشاط، وفترة عمل أو دراسة، ونشاطًا مسائيًا. اقرأها بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يذكر أربع أنشطة أو أوقات من اليوم.",
+        "meaningClarity": "يستطيع القارئ ترتيب أحداث اليوم وفهم أوقاتها.",
+        "targetSkill": "يستخدم am أو um على نحو مناسب ويفصل بادئة فعل منفصل في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-04-P02",
+      "sourceTaskIds": [
+        "DL-A1-04-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-04-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "احكِ بصوت مرتفع عن يومك المعتاد باستخدام ثلاث جمل على الأقل. اكتب الجمل أولًا إذا كنت تتدرّب وحدك.",
+      "criteria": {
+        "taskCompletion": "يقدّم ثلاث جمل على الأقل عن روتين يومي.",
+        "meaningClarity": "الجمل مفهومة وترتيب أحداثها واضح.",
+        "targetSkill": "يضع الفعل المصرف في موضعه ويفصل بادئة فعل واحد مثل aufstehen أو einkaufen."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 35,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

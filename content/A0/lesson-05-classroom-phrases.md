@@ -1,6 +1,6 @@
 # A0.5 — عبارات الصف وطلب المساعدة
 
-**المدة:** 20 دقيقة · **المهارات:** قراءة، تفاعل ومحادثة مباشرة · **الهدف:** أستطيع طلب التكرار أو التوضيح، وأقول إنني لا أفهم كلمة. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.
+**المدة:** 20 دقيقة · **المهارات:** قراءة، تفاعل ومحادثة مباشرة · **الهدف:** أستطيع طلب التكرار أو التوضيح، وأقول إنني لا أفهم كلمة. تسجيلات هذا الدرس النهائية جاهزة الآن للاستماع.
 
 ## 1) عبارات مفيدة
 
@@ -25,11 +25,15 @@
 
 ## 3) حوار أصلي
 
-**Lernende:** Entschuldigung, ich verstehe das Wort nicht. Was bedeutet „pünktlich“?  
-**Lehrerin:** „Pünktlich“ bedeutet: zur richtigen Zeit.  
-**Lernende:** Danke. Können Sie das bitte wiederholen?  
-**Lehrerin:** Ja, natürlich.  
-**Lernende:** Danke für Ihre Hilfe.
+**Lernender:** Entschuldigung, ich verstehe das Wort nicht. Was bedeutet „pünktlich“?
+
+**Lehrerin:** „Pünktlich“ bedeutet: zur richtigen Zeit.
+
+**Lernender:** Danke. Können Sie das bitte wiederholen?
+
+**Lehrerin:** Ja, natürlich.
+
+**Lernender:** Danke für Ihre Hilfe.
 
 ## 4) تمارين
 

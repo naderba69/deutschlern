@@ -13,6 +13,19 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 COURSE = json.loads((ROOT / "data" / "course.json").read_text(encoding="utf-8"))
 EXPECTED = {"A0": 5, "A1": 12, "A2": 12, "B1": 12, "B2": 12}
+AUDIO_LESSON_BY_PREFIX = {
+    "DL-A0-01": "a0-01-alphabet",
+    "DL-A0-02": "a0-02-greetings",
+    "DL-A0-03": "a0-03-numbers-personal-info",
+    "DL-A0-04": "a0-04-first-sentences",
+    "DL-A0-05": "a0-05-classroom-phrases",
+    "DL-A0-GATE": "a0-a1-gate",
+    "DL-A1-01": "a1-01-introductions-languages-hobbies",
+    "DL-A1-02": "a1-02-work-family",
+    "DL-A1-03": "a1-03-city-cafe-hotel",
+    "DL-A1-04": "a1-04-daily-routine-time",
+    "DL-A1-05": "a1-05-food-drink",
+}
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
 
@@ -177,34 +190,71 @@ def main() -> None:
 
     audio_assets = COURSE.get("audioAssets")
     assert isinstance(audio_assets, list), "Audio asset manifest must be included in the course bundle"
+    audio_playlist = json.loads((ROOT / "data" / "audio-playlists.json").read_text(encoding="utf-8"))
+    assert audio_assets == audio_playlist.get("audioAssets"), "Course bundle audio manifest is stale; rebuild it"
+    selected_audio_voice_ids = audio_playlist.get("selectedVoiceIds")
+    assert (
+        isinstance(selected_audio_voice_ids, list)
+        and selected_audio_voice_ids
+        and all(isinstance(voice_id, str) and re.fullmatch(r"voice-\d+", voice_id) for voice_id in selected_audio_voice_ids)
+        and len(set(selected_audio_voice_ids)) == len(selected_audio_voice_ids)
+    ), "Audio playlist must list unique, auditioned selectedVoiceIds"
+    selected_audio_voice_ids = set(selected_audio_voice_ids)
+    audio_register_path = ROOT / "data" / "audio-asset-register.csv"
+    with audio_register_path.open(encoding="utf-8-sig", newline="") as register_file:
+        audio_register_rows = list(csv.DictReader(register_file))
+    audio_register = {row["asset_id"]: row for row in audio_register_rows}
+    playlist_asset_ids = {asset.get("assetId") for asset in audio_assets if isinstance(asset, dict)}
+    assert len(audio_register) == len(audio_register_rows) and set(audio_register) == playlist_asset_ids, "Audio register must list every playlist asset exactly once"
     audio_ids: set[str] = set()
     referenced_audio_paths: set[str] = set()
     audio_status_counts = Counter()
-    audio_speaker_voices: dict[str, str] = {}
+    ready_audio_speaker_voices: dict[str, str] = {}
     valid_audio_lessons = {lesson["id"] for lesson in lessons} | {COURSE.get("a0TransitionCheck", {}).get("id")}
     for asset in audio_assets:
         assert isinstance(asset, dict) and asset.get("assetId") and asset.get("assetId") not in audio_ids, "Missing/duplicate audio asset ID"
         audio_ids.add(asset["assetId"])
+        asset_prefix = "-".join(asset["assetId"].split("-")[:3])
+        expected_lesson_id = AUDIO_LESSON_BY_PREFIX.get(asset_prefix)
+        assert expected_lesson_id is not None and asset.get("lessonId") == expected_lesson_id, f"Audio is assigned to the wrong lesson: {asset['assetId']}"
         assert asset.get("lessonId") in valid_audio_lessons, f"Audio references an unknown lesson: {asset['assetId']}"
         status = asset.get("status")
         assert status in {"not_generated", "partial", "generated_pending_acoustic_review", "ready"}, f"Unknown audio status: {asset['assetId']}"
-        assert asset.get("transcriptPolicy", "offer") in {"offer", "hide_until_first_attempt"}, f"Unknown transcript policy: {asset['assetId']}"
+        register_row = audio_register[asset["assetId"]]
+        assert register_row["lesson_id"] == asset["lessonId"], f"Audio register assigns the asset to the wrong lesson: {asset['assetId']}"
+        assert register_row["production_status"] == status, f"Audio register status is stale: {asset['assetId']}"
+        assert register_row["transcript_policy"] == asset.get("transcriptPolicy", "offer"), f"Audio register transcript policy is stale: {asset['assetId']}"
+        registered_voice_mapping = {}
+        for entry in register_row["voice_id_mapping"].split(";"):
+            speaker, separator, voice_id = entry.strip().partition("=")
+            if separator:
+                registered_voice_mapping[speaker.strip()] = voice_id.strip()
         audio_status_counts[status] += 1
         segments = asset.get("segments")
         assert isinstance(segments, list) and segments, f"Audio asset needs at least one segment: {asset['assetId']}"
         present = 0
+        present_asset_paths: set[str] = set()
+        asset_audio_speaker_voices: dict[str, str] = {}
         for segment in segments:
             assert isinstance(segment, dict) and all(isinstance(segment.get(key), str) and segment[key].strip() for key in ("src", "speaker", "text", "voiceId")), f"Invalid audio segment: {asset['assetId']}"
-            assert segment["voiceId"] in {"voice-00", "voice-01"}, f"Audio uses an unselected voice: {asset['assetId']}"
-            previous_voice = audio_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
-            assert previous_voice == segment["voiceId"], f"Speaker voice changes across clips: {segment['speaker']}"
+            assert segment["voiceId"] in selected_audio_voice_ids, f"Audio uses an unselected voice: {asset['assetId']}"
+            assert registered_voice_mapping.get(segment["speaker"]) == segment["voiceId"], f"Audio register voice mapping is stale: {asset['assetId']} / {segment['speaker']}"
+            previous_asset_voice = asset_audio_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+            assert previous_asset_voice == segment["voiceId"], f"Speaker voice changes within an asset: {segment['speaker']}"
+            if status == "ready":
+                previous_ready_voice = ready_audio_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+                assert previous_ready_voice == segment["voiceId"], f"An approved speaker changes voice across assets: {segment['speaker']}"
             relative = Path(segment["src"])
             assert not relative.is_absolute() and ".." not in relative.parts and relative.suffix.lower() == ".mp3", f"Unsafe audio path: {segment['src']}"
+            assert relative.stem == asset["assetId"] or relative.stem.startswith(asset["assetId"] + "-"), f"Audio file belongs to another asset: {segment['src']}"
             path = ROOT / relative
             if path.is_file():
                 present += 1
+                present_asset_paths.add(relative.as_posix())
                 referenced_audio_paths.add(relative.as_posix())
                 assert mp3_duration_seconds(path) >= 0.25, f"Audio segment is too short: {path}"
+        registered_audio_paths = {path for path in register_row["generated_segment_paths"].split(";") if path}
+        assert registered_audio_paths == present_asset_paths, f"Audio register file paths are stale: {asset['assetId']}"
         if status in {"ready", "generated_pending_acoustic_review"}:
             assert present == len(segments), f"Audio asset is missing segments: {asset['assetId']}"
         elif status == "partial":

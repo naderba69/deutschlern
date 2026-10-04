@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-09-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-09-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-09-Q01",
+      "sourceTaskIds": [
+        "DL-A1-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "مفردات العمل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Drucker؟",
+      "options": [
+        "الحاسوب",
+        "الطابعة",
+        "المشروع"
+      ],
+      "answerIndex": 1,
+      "explanation": "der Drucker تعني «الطابعة»."
+    },
+    {
+      "id": "DL-A1-09-Q02",
+      "sourceTaskIds": [
+        "DL-A1-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تحديد الموعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Der Termin ist ___ Montag.",
+      "options": [
+        "um",
+        "am",
+        "bis"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع يوم الأسبوع نستخدم am."
+    },
+    {
+      "id": "DL-A1-09-Q03",
+      "sourceTaskIds": [
+        "DL-A1-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تحديد الموعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich kann ___ fünf Uhr.",
+      "options": [
+        "am",
+        "um",
+        "von"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع الساعة المحددة نستخدم um."
+    },
+    {
+      "id": "DL-A1-09-Q04",
+      "sourceTaskIds": [
+        "DL-A1-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تصريف können",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ dir helfen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answerIndex": 0,
+      "explanation": "تصريف können مع ich هو kann."
+    },
+    {
+      "id": "DL-A1-09-Q05",
+      "sourceTaskIds": [
+        "DL-A1-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir können eine E-Mail ___.",
+      "options": [
+        "schreiben",
+        "schreibt",
+        "schrieben"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد können يأتي المصدر schreiben في نهاية الجملة."
+    },
+    {
+      "id": "DL-A1-09-Q06",
+      "sourceTaskIds": [
+        "DL-A1-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "الجملة الصحيحة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تصف الطابعة المعطلة؟",
+      "options": [
+        "Der Drucker ist kaputt.",
+        "Der Drucker sind kaputt.",
+        "Der Drucker kaputt ist."
+      ],
+      "answerIndex": 0,
+      "explanation": "Drucker مفرد، لذا نستخدم ist، ويأتي الفعل المصرف ثانيًا."
+    },
+    {
+      "id": "DL-A1-09-Q07",
+      "sourceTaskIds": [
+        "DL-A1-09-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Termin؟",
+      "options": [
+        "الموعد",
+        "الطابعة",
+        "الزميلة"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Termin تعني «الموعد»."
+    },
+    {
+      "id": "DL-A1-09-Q08",
+      "sourceTaskIds": [
+        "DL-A1-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "القدرة وترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تقول «نستطيع إرسال بريد إلكتروني»؟",
+      "options": [
+        "Wir können eine E-Mail schicken.",
+        "Wir kann eine E-Mail schicken.",
+        "Wir können schicken eine E-Mail."
+      ],
+      "answerIndex": 0,
+      "explanation": "مع wir نقول können، ويأتي المصدر schicken في النهاية."
+    },
+    {
+      "id": "DL-A1-09-Q09",
+      "sourceTaskIds": [
+        "DL-A1-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تصريف können",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل السؤال: ___ du mir helfen?",
+      "options": [
+        "Kann",
+        "Kannst",
+        "Können"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نستخدم kannst: Kannst du mir helfen?"
+    },
+    {
+      "id": "DL-A1-09-Q10",
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "ترتيب موعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أي صيغة تحدد موعدًا عند الساعة الخامسة؟",
+      "options": [
+        "Ich kann um fünf Uhr.",
+        "Ich kann am fünf Uhr.",
+        "Ich bin fünf Uhr."
+      ],
+      "answerIndex": 0,
+      "explanation": "نستخدم um قبل وقت الساعة: um fünf Uhr."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-09-P01",
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "مثّل مكالمة قصيرة لترتيب موعد: اقترح يومًا وساعة، واذكر مشكلة بسيطة في العمل وما تستطيع فعله لحلها. اكتب المكالمة واقرأها بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "تتضمن المكالمة يومًا ووقتًا ومشكلة واقتراحًا.",
+        "meaningClarity": "يمكن فهم الموعد والمشكلة والخطوة التالية.",
+        "targetSkill": "يستخدم am لليوم وum للساعة، ويصرّف können ويضع المصدر في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-09-P02",
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب رسالة قصيرة لزميل: صف مشكلة في المكتب، واذكر ما لا يعمل، واقترح إجراءً تستطيع القيام به.",
+      "criteria": {
+        "taskCompletion": "تصف الرسالة مشكلة وتقترح إجراءً واحدًا على الأقل.",
+        "meaningClarity": "يفهم الزميل المشكلة وما يمكن فعله بعدها.",
+        "targetSkill": "يستخدم مفردة عمل مناسبة وجملة واحدة على الأقل مع können."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

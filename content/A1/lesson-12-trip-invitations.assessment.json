@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-12-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-12-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-12-Q01",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "مفردات المناسبات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى die Einladung؟",
+      "options": [
+        "الدعوة",
+        "الهدية",
+        "الرحلة"
+      ],
+      "answerIndex": 0,
+      "explanation": "die Einladung تعني «الدعوة»."
+    },
+    {
+      "id": "DL-A1-12-Q02",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "الرد على الدعوة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تقبل دعوة بوضوح؟",
+      "options": [
+        "Leider kann ich nicht.",
+        "Ja, gern!",
+        "Danke, ich bin müde."
+      ],
+      "answerIndex": 1,
+      "explanation": "Ja, gern! تعني قبول الدعوة بسرور."
+    },
+    {
+      "id": "DL-A1-12-Q03",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "الرد على الدعوة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعتذر عن قبول الدعوة؟",
+      "options": [
+        "Ja, gern!",
+        "Danke für die Einladung!",
+        "Leider kann ich nicht."
+      ],
+      "answerIndex": 2,
+      "explanation": "Leider kann ich nicht تعني «للأسف لا أستطيع»."
+    },
+    {
+      "id": "DL-A1-12-Q04",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "ترتيب المناسبة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن وقت بدء الاحتفال؟",
+      "options": [
+        "Wo wohnst du?",
+        "Um wie viel Uhr beginnt die Feier?",
+        "Was isst du gern?"
+      ],
+      "answerIndex": 1,
+      "explanation": "السؤال يطلب معرفة الساعة التي يبدأ فيها الاحتفال."
+    },
+    {
+      "id": "DL-A1-12-Q05",
+      "sourceTaskIds": [
+        "DL-A1-12-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "تصريف können",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ am Sonntag mitkommen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع ich نستخدم kann."
+    },
+    {
+      "id": "DL-A1-12-Q06",
+      "sourceTaskIds": [
+        "DL-A1-12-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Kannst du am Sonntag ___?",
+      "options": [
+        "mitkommst",
+        "mitkommen",
+        "kommst mit"
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد kannst يأتي المصدر mitkommen في نهاية السؤال."
+    },
+    {
+      "id": "DL-A1-12-Q07",
+      "sourceTaskIds": [
+        "DL-A1-12-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "عبارات التواصل",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تشكر شخصًا على الدعوة؟",
+      "options": [
+        "Danke für die Einladung!",
+        "Ich komme aus Nabeul.",
+        "Um fünf Uhr fährt der Bus."
+      ],
+      "answerIndex": 0,
+      "explanation": "Danke für die Einladung! تعني «شكرًا على الدعوة»."
+    },
+    {
+      "id": "DL-A1-12-Q08",
+      "sourceTaskIds": [
+        "DL-A1-12-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "فهم الرسالة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب رسالة الدعوة، في أي يوم المناسبة؟",
+      "options": [
+        "يوم الاثنين",
+        "يوم السبت",
+        "يوم الأحد"
+      ],
+      "answerIndex": 2,
+      "explanation": "مفتاح فهم الرسالة يذكر Am Sonntag."
+    },
+    {
+      "id": "DL-A1-12-Q09",
+      "sourceTaskIds": [
+        "DL-A1-12-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "اختيار محدد"
+      ],
+      "prompt": "ما السؤال الذي يعني «هل أحضر معي شيئًا؟»؟",
+      "options": [
+        "Soll ich etwas mitbringen?",
+        "Kann ich dich sehen?",
+        "Wie heißt das Geschenk?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Soll ich etwas mitbringen? تسأل عما يمكن إحضاره معك."
+    },
+    {
+      "id": "DL-A1-12-Q10",
+      "sourceTaskIds": [
+        "DL-A1-12-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "skillTags": [
+        "الرد على الدعوة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الرد المناسب إذا لم تستطع الحضور؟",
+      "options": [
+        "Ja, gern!",
+        "Leider kann ich nicht.",
+        "Danke, ich komme sicher."
+      ],
+      "answerIndex": 1,
+      "explanation": "الاعتذار المناسب: Leider kann ich nicht."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-12-P01",
+      "sourceTaskIds": [
+        "DL-A1-12-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ردًا على دعوة: اقبلها أو اعتذر عنها، واذكر سببًا بسيطًا أو اسأل عن الوقت، ثم اقرأ الرد بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يتضمن الرد قبولًا أو اعتذارًا وسؤالًا أو معلومة مناسبة.",
+        "meaningClarity": "يعرف صاحب الدعوة موقف المتعلم وما يحتاج إلى توضيح.",
+        "targetSkill": "يستخدم عبارة مناسبة مثل Ja, gern أو Leider kann ich nicht، ويرتب الفعل مع können."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 35,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-12-P02",
+      "sourceTaskIds": [
+        "DL-A1-12-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-12-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "أنشئ دعوة قصيرة إلى رحلة أو احتفال: اذكر اليوم والوقت والمكان، ثم اكتب ردًا مناسبًا وسؤالًا عمّا يمكن إحضاره. اقرأ الحوار بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "تتضمن الدعوة اليوم والوقت والمكان وردًا وسؤالًا عن شيء يُحضر.",
+        "meaningClarity": "يفهم المدعو تفاصيل المناسبة والرد عليها.",
+        "targetSkill": "يستخدم عبارة دعوة وقبول/اعتذار، ويضع مصدر الفعل في نهاية جملة können."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-08-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-08-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-08-Q01",
+      "sourceTaskIds": [
+        "DL-A1-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "مفردات الملابس",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Mantel؟",
+      "options": [
+        "المعطف",
+        "الحذاء",
+        "القميص"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Mantel تعني «المعطف»."
+    },
+    {
+      "id": "DL-A1-08-Q02",
+      "sourceTaskIds": [
+        "DL-A1-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "تصريف müssen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ heute einkaufen.",
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع ich نستخدم muss."
+    },
+    {
+      "id": "DL-A1-08-Q03",
+      "sourceTaskIds": [
+        "DL-A1-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "تصريف müssen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ die Hose anprobieren.",
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نستخدم musst."
+    },
+    {
+      "id": "DL-A1-08-Q04",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تضع المصدر بعد müssen في النهاية؟",
+      "options": [
+        "Ich muss die Hose anprobieren.",
+        "Ich anprobieren muss die Hose.",
+        "Ich muss anprobiert die Hose."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد müssen يأتي الفعل الأساسي بصيغة المصدر في نهاية الجملة."
+    },
+    {
+      "id": "DL-A1-08-Q05",
+      "sourceTaskIds": [
+        "DL-A1-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "أسئلة المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن السعر؟",
+      "options": [
+        "Welche Größe haben Sie?",
+        "Wie viel kostet das?",
+        "Welche Farbe ist dein Bruder?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wie viel kostet das? تعني «كم سعر هذا؟»."
+    },
+    {
+      "id": "DL-A1-08-Q06",
+      "sourceTaskIds": [
+        "DL-A1-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "أسئلة المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن المقاس؟",
+      "options": [
+        "Welche Größe haben Sie?",
+        "Wie viel kostet das?",
+        "Wo fährt der Bus?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Welche Größe haben Sie? تسأل عن المقاس."
+    },
+    {
+      "id": "DL-A1-08-Q07",
+      "sourceTaskIds": [
+        "DL-A1-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى zu lang في وصف البنطال؟",
+      "options": [
+        "قصير جدًا",
+        "طويل أكثر من اللازم",
+        "مقاسه مناسب"
+      ],
+      "answerIndex": 1,
+      "explanation": "zu lang تعني «طويل أكثر من اللازم»."
+    },
+    {
+      "id": "DL-A1-08-Q08",
+      "sourceTaskIds": [
+        "DL-A1-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "الرد في المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تقول «أحتاج إلى سترة»؟",
+      "options": [
+        "Ich brauche eine Jacke.",
+        "Ich brauche einen Jacke.",
+        "Ich braucht ein Jacke."
+      ],
+      "answerIndex": 0,
+      "explanation": "Jacke مؤنث، لذا نقول eine Jacke."
+    },
+    {
+      "id": "DL-A1-08-Q09",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir müssen am Samstag ___.",
+      "options": [
+        "einkaufen",
+        "kaufen ein",
+        "eingekauft"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد müssen يأتي المصدر einkaufen في نهاية الجملة."
+    },
+    {
+      "id": "DL-A1-08-Q10",
+      "sourceTaskIds": [
+        "DL-A1-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "التواصل في المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تطلب تجربة قطعة ملابس؟",
+      "options": [
+        "Kann ich die Hose anprobieren?",
+        "Wie heißt die Hose?",
+        "Ich wohne im Geschäft."
+      ],
+      "answerIndex": 0,
+      "explanation": "anprobieren تعني تجربة الملابس؛ السؤال يطلب ذلك."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-08-P01",
+      "sourceTaskIds": [
+        "DL-A1-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "مثّل حوارًا في متجر ملابس: اذكر القطعة واللون والمقاس، واسأل عن السعر، واطلب تجربة القطعة. اكتب الحوار واقرأه بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يتضمن الحوار قطعة ولونًا ومقاسًا وسعرًا وطلب تجربة.",
+        "meaningClarity": "يعرف البائع ما يحتاجه المتعلم وما الذي يسأل عنه.",
+        "targetSkill": "يستخدم سؤالًا عن السعر أو المقاس، وفعلًا مناسبًا مثل anprobieren أو müssen."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-08-P02",
+      "sourceTaskIds": [
+        "DL-A1-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب قائمة شراء قصيرة من ثلاثة أغراض، ثم أضف جملتين تشرحان ما تحتاج إليه وما يجب عليك فعله باستخدام müssen.",
+      "criteria": {
+        "taskCompletion": "تتضمن القائمة ثلاثة أغراض وجملتين على الأقل.",
+        "meaningClarity": "توضح الجمل ما سيشتريه المتعلم وما يلزمه فعله.",
+        "targetSkill": "يصرّف müssen بحسب الفاعل ويضع الفعل الأساسي في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

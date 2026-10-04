@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-07-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-07-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-07-Q01",
+      "sourceTaskIds": [
+        "DL-A1-07-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "مفردات السفر",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى mit dem Zug؟",
+      "options": [
+        "بالقطار",
+        "بالحافلة",
+        "بالسيارة"
+      ],
+      "answerIndex": 0,
+      "explanation": "mit dem Zug تعني «بالقطار»."
+    },
+    {
+      "id": "DL-A1-07-Q02",
+      "sourceTaskIds": [
+        "DL-A1-07-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "وسائل النقل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich fahre mit ___ Bahn.",
+      "options": [
+        "dem",
+        "der",
+        "das"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bahn مؤنث؛ بعد mit نستخدم der هنا."
+    },
+    {
+      "id": "DL-A1-07-Q03",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "وجهة الرحلة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل وجهة الرحلة: Wir fahren ___ Sousse.",
+      "options": [
+        "am",
+        "nach",
+        "um"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع اسم مدينة نستخدم nach: nach Sousse."
+    },
+    {
+      "id": "DL-A1-07-Q04",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "الوقت",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل وقت المغادرة: Der Bus fährt ___ neun Uhr.",
+      "options": [
+        "um",
+        "am",
+        "nach"
+      ],
+      "answerIndex": 0,
+      "explanation": "الساعة المحددة تأتي مع um."
+    },
+    {
+      "id": "DL-A1-07-Q05",
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "الطقس",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الرد المناسب على Wie ist das Wetter؟",
+      "options": [
+        "Es ist heute sonnig.",
+        "Ich fahre nach Tunis.",
+        "Eine Fahrkarte, bitte."
+      ],
+      "answerIndex": 0,
+      "explanation": "Es ist heute sonnig يصف حالة الطقس."
+    },
+    {
+      "id": "DL-A1-07-Q06",
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "عبارات السفر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تطلب تذكرة إلى سوسة؟",
+      "options": [
+        "Eine Fahrkarte nach Sousse, bitte.",
+        "Ein Wetter nach Sousse, bitte.",
+        "Ich bin die Fahrkarte."
+      ],
+      "answerIndex": 0,
+      "explanation": "Fahrkarte تعني تذكرة؛ العبارة تطلبها بأدب."
+    },
+    {
+      "id": "DL-A1-07-Q07",
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "مفردات السفر",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني hin und zurück في التذكرة؟",
+      "options": [
+        "ذهاب فقط",
+        "ذهاب وإياب",
+        "تغيير القطار"
+      ],
+      "answerIndex": 1,
+      "explanation": "hin und zurück تعني «ذهابًا وإيابًا»."
+    },
+    {
+      "id": "DL-A1-07-Q08",
+      "sourceTaskIds": [
+        "DL-A1-07-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "وسائل النقل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir fahren mit ___ Auto.",
+      "options": [
+        "der",
+        "dem",
+        "die"
+      ],
+      "answerIndex": 1,
+      "explanation": "Auto محايد؛ بعد mit نستخدم dem."
+    },
+    {
+      "id": "DL-A1-07-Q09",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "مفردات الطقس",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى windig؟",
+      "options": [
+        "مشمس",
+        "عاصف",
+        "حار"
+      ],
+      "answerIndex": 1,
+      "explanation": "windig تعني «عاصف» أو «كثير الرياح»."
+    },
+    {
+      "id": "DL-A1-07-Q10",
+      "sourceTaskIds": [
+        "DL-A1-07-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "اختيار محدد"
+      ],
+      "prompt": "إذا كان الجو باردًا، أي جملة مناسبة؟",
+      "options": [
+        "Es ist kalt.",
+        "Es ist sonnig.",
+        "Es ist windig."
+      ],
+      "answerIndex": 0,
+      "explanation": "Es ist kalt تعني «الجو بارد»."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-07-P01",
+      "sourceTaskIds": [
+        "DL-A1-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "خطط رحلة قصيرة في بطاقة: اذكر الوجهة ووسيلة النقل ووقت الانطلاق وحالة الطقس، ثم اكتب جملتين تشرحان الخطة.",
+      "criteria": {
+        "taskCompletion": "تتضمن البطاقة الوجهة والنقل والوقت والطقس.",
+        "meaningClarity": "يمكن فهم تفاصيل الرحلة دون معلومات ناقصة أساسية.",
+        "targetSkill": "يستخدم nach مع المدينة، وmit dem/der مع وسيلة النقل، وum مع الساعة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-07-P02",
+      "sourceTaskIds": [
+        "DL-A1-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-07-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "مثّل حوارًا قصيرًا في محطة: اطلب تذكرة إلى مدينة، وحدد ذهابًا فقط أو ذهابًا وإيابًا، واسأل عن وقت الرحلة والطقس.",
+      "criteria": {
+        "taskCompletion": "يتضمن الحوار طلب تذكرة وسؤالًا عن معلومتين.",
+        "meaningClarity": "يفهم الطرف الآخر الوجهة ونوع التذكرة والوقت المطلوب.",
+        "targetSkill": "يستعمل عبارة Fahrkarte مناسبة وmit dem/der أو hin und zurück في السياق الصحيح."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

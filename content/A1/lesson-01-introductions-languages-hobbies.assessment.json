@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-01-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-01-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-01-Q01",
+      "sourceTaskIds": [
+        "DL-A1-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "مفردات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى die Sprache؟",
+      "options": [
+        "اللغة",
+        "البلد",
+        "المدينة"
+      ],
+      "answerIndex": 0,
+      "explanation": "die Sprache تعني «اللغة»."
+    },
+    {
+      "id": "DL-A1-01-Q02",
+      "sourceTaskIds": [
+        "DL-A1-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "تصريف المضارع",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ in Tunis.",
+      "options": [
+        "wohne",
+        "wohnst",
+        "wohnen"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نصرّف wohnen إلى wohnst."
+    },
+    {
+      "id": "DL-A1-01-Q03",
+      "sourceTaskIds": [
+        "DL-A1-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "تصريف المضارع",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر التصريف الصحيح: Ich ___ Arabisch.",
+      "options": [
+        "spricht",
+        "sprechen",
+        "spreche"
+      ],
+      "answerIndex": 2,
+      "explanation": "مع ich نقول: Ich spreche Arabisch."
+    },
+    {
+      "id": "DL-A1-01-Q04",
+      "sourceTaskIds": [
+        "DL-A1-01-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة ترتيبها صحيح؟",
+      "options": [
+        "Wir hören gern Musik.",
+        "Wir gern hören Musik.",
+        "Gern wir Musik hören."
+      ],
+      "answerIndex": 0,
+      "explanation": "الفعل المصرف hören يأتي في المرتبة الثانية، وgern بعده هنا."
+    },
+    {
+      "id": "DL-A1-01-Q05",
+      "sourceTaskIds": [
+        "DL-A1-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "استعمال gern",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تعني «أحب القراءة»؟",
+      "options": [
+        "Ich gern lese.",
+        "Gern ich lese.",
+        "Ich lese gern."
+      ],
+      "answerIndex": 2,
+      "explanation": "المثال الصحيح: Ich lese gern."
+    },
+    {
+      "id": "DL-A1-01-Q06",
+      "sourceTaskIds": [
+        "DL-A1-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "تصريف المضارع",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Rania ___ Deutsch.",
+      "options": [
+        "lernen",
+        "lernt",
+        "lerne"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع الاسم المفرد Rania نستخدم lernt."
+    },
+    {
+      "id": "DL-A1-01-Q07",
+      "sourceTaskIds": [
+        "DL-A1-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "عبارات التواصل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يعني «أين تسكن؟»؟",
+      "options": [
+        "Woher kommst du?",
+        "Wo wohnst du?",
+        "Welche Sprachen sprichst du?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wo wohnst du? تسأل عن مكان السكن."
+    },
+    {
+      "id": "DL-A1-01-Q08",
+      "sourceTaskIds": [
+        "DL-A1-01-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "الكتابة الصحيحة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي اسم لغة يجب كتابته بحرف كبير؟",
+      "options": [
+        "deutsch (صفة)",
+        "Deutsch (اسم اللغة)",
+        "deutsche Sprache"
+      ],
+      "answerIndex": 1,
+      "explanation": "اسم اللغة Deutsch اسمٌ ويبدأ بحرف كبير."
+    },
+    {
+      "id": "DL-A1-01-Q09",
+      "sourceTaskIds": [
+        "DL-A1-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "عبارات التواصل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن اللغات التي يتحدثها الشخص؟",
+      "options": [
+        "Was machst du gern?",
+        "Wo wohnst du?",
+        "Welche Sprachen sprichst du?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Welche Sprachen sprichst du? تسأل عن اللغات."
+    },
+    {
+      "id": "DL-A1-01-Q10",
+      "sourceTaskIds": [
+        "DL-A1-01-T10"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "skillTags": [
+        "التفاعل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الرد المناسب على Was machst du gern؟",
+      "options": [
+        "Ich komme aus Tunesien.",
+        "Ich lese gern.",
+        "Ich wohne in Nabeul."
+      ],
+      "answerIndex": 1,
+      "explanation": "Ich lese gern تذكر هواية باستخدام gern."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-01-P01",
+      "sourceTaskIds": [
+        "DL-A1-01-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب بطاقة قصيرة عن نفسك بالألمانية: اذكر اسمك وبلدك والمدينة التي تسكن فيها ولغتين وهواية تحبها. اقرأها بصوت مرتفع إن أمكن.",
+      "criteria": {
+        "taskCompletion": "تتضمن البطاقة الاسم والبلد والمدينة واللغات وهواية واحدة.",
+        "meaningClarity": "تُفهم المعلومات الشخصية والهواية بوضوح.",
+        "targetSkill": "يستخدم المضارع، ويكتب أسماء اللغات بحرف كبير، ويضع gern في موضع مناسب."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 35,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-01-P02",
+      "sourceTaskIds": [
+        "DL-A1-01-T10"
+      ],
+      "objectiveIds": [
+        "DL-A1-01-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "تدرّب على محادثة قصيرة: اسأل عن الاسم ومكان السكن واللغات والهواية، ثم أجب عن الأسئلة بإجابات كاملة. اكتب الحوار واقرأ الدورين بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يحتوي الحوار على سؤالين على الأقل وإجابات مناسبة.",
+        "meaningClarity": "تطابق الإجابة السؤال ويمكن فهمها دون تخمين.",
+        "targetSkill": "يستخدم أسئلة مثل Wo wohnst du? وWelche Sprachen sprichst du? وجملة مع gern."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
