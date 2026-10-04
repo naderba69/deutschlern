@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-03-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة ومفاتيحها وربطها بهدف B1.3 وكتل المصدر T01–T07.",
+      "تغطي الأسئلة مفردات العمل، وصيغ würde/hätte، وموضع المصدر، والطلب المهذب، وفهم إعلان الوظيفة والاستماع.",
+      "مهمتا الأداء تطبّقان طلب وظيفة ومحاكاة اجتماع بصيغة كتابة أو تحدث؛ تتحققان محليًا ذاتيًا ولا تتطلبان تسجيلًا أو صوتًا مولدًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-03-Q01",
+      "sourceTaskIds": [
+        "DL-B1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات العمل",
+        "فهم كلمة"
+      ],
+      "prompt": "ما معنى **die Rückmeldung** في سياق العمل؟",
+      "options": [
+        "الموعد النهائي.",
+        "الردّ أو الملاحظات على عمل.",
+        "طلب التوظيف."
+      ],
+      "answerIndex": 1,
+      "explanation": "die Rückmeldung تعني الردّ أو الملاحظات التي تصل بعد طلب أو عمل."
+    },
+    {
+      "id": "DL-B1-03-Q02",
+      "sourceTaskIds": [
+        "DL-B1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات العمل",
+        "تركيب فعلي"
+      ],
+      "prompt": "أي تركيب يعني «يتقدّم إلى وظيفة»؟",
+      "options": [
+        "eine Aufgabe übernehmen",
+        "sich um eine Stelle bewerben",
+        "eine Frist verlängern"
+      ],
+      "answerIndex": 1,
+      "explanation": "sich um eine Stelle bewerben تعني التقدّم إلى وظيفة؛ أما übernehmen فتعني يتولّى."
+    },
+    {
+      "id": "DL-B1-03-Q03",
+      "sourceTaskIds": [
+        "DL-B1-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "Konjunktiv II",
+        "تصريف würde"
+      ],
+      "prompt": "أكمل بصيغة الجمع: **Wir ___ die Frist verlängern.**",
+      "options": [
+        "würden",
+        "würdest",
+        "würde"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع wir نستخدم würden: Wir würden die Frist verlängern."
+    },
+    {
+      "id": "DL-B1-03-Q04",
+      "sourceTaskIds": [
+        "DL-B1-03-T03",
+        "DL-B1-03-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "würde + المصدر",
+        "موضع الفعل"
+      ],
+      "prompt": "أكمل مع وضع المصدر في النهاية: **Ich würde gern im Team ___.** (arbeiten)",
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeiten"
+      ],
+      "answerIndex": 2,
+      "explanation": "بعد würde يأتي المصدر في نهاية الجملة: Ich würde gern im Team arbeiten."
+    },
+    {
+      "id": "DL-B1-03-Q05",
+      "sourceTaskIds": [
+        "DL-B1-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "hätte gern",
+        "صيغة مهذبة"
+      ],
+      "prompt": "اختر الصيغة الصحيحة للتعبير عن الرغبة: **Ich ___ gern flexiblere Arbeitszeiten.**",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answerIndex": 1,
+      "explanation": "نستخدم hätte gern مع الاسم Arbeitszeiten: Ich hätte gern flexiblere Arbeitszeiten."
+    },
+    {
+      "id": "DL-B1-03-Q06",
+      "sourceTaskIds": [
+        "DL-B1-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "طلب مهذب",
+        "اجتماع عمل"
+      ],
+      "prompt": "أي سؤال يطلب إعادة توزيع المهام بطريقة مهذبة؟",
+      "options": [
+        "Verteilen die Aufgaben neu!",
+        "Wir Aufgaben neu verteilen würden.",
+        "Könnten wir die Aufgaben neu verteilen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Könnten wir …? صيغة مهذبة لاقتراح أو طلب في الاجتماع."
+    },
+    {
+      "id": "DL-B1-03-Q07",
+      "sourceTaskIds": [
+        "DL-B1-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "معلومة محددة"
+      ],
+      "prompt": "Welche Stelle wird im Kulturzentrum angeboten?",
+      "options": [
+        "Eine Vollzeitstelle als Lehrkraft.",
+        "Eine Teilzeitstelle als Assistenz.",
+        "Ein Praktikum in einem Hotel."
+      ],
+      "answerIndex": 1,
+      "explanation": "يعلن النص عن وظيفة مساعدة بدوام جزئي في المركز الثقافي."
+    },
+    {
+      "id": "DL-B1-03-Q08",
+      "sourceTaskIds": [
+        "DL-B1-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "موعد نهائي"
+      ],
+      "prompt": "Bis wann soll die Bewerbung geschickt werden?",
+      "options": [
+        "Bis heute Nachmittag.",
+        "Innerhalb der nächsten zwei Wochen.",
+        "Bis Donnerstag."
+      ],
+      "answerIndex": 1,
+      "explanation": "يطلب الإعلان إرسال الطلب خلال الأسبوعين المقبلين."
+    },
+    {
+      "id": "DL-B1-03-Q09",
+      "sourceTaskIds": [
+        "DL-B1-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "هوية المتحدث"
+      ],
+      "prompt": "Wer ruft an?",
+      "options": [
+        "Nora aus dem Projektteam.",
+        "Farid aus dem Projektteam.",
+        "Omar aus dem Kulturzentrum."
+      ],
+      "answerIndex": 1,
+      "explanation": "يبدأ نص الاستماع بتعريف المتصل بنفسه: Farid من فريق المشروع."
+    },
+    {
+      "id": "DL-B1-03-Q10",
+      "sourceTaskIds": [
+        "DL-B1-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "سبب محدد"
+      ],
+      "prompt": "Warum kann Farid am Mittwoch nicht an der Besprechung teilnehmen?",
+      "options": [
+        "Er hat einen Termin mit einem Kunden.",
+        "Er muss den Bericht prüfen.",
+        "Er arbeitet am Mittwoch nicht."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر Farid أن لديه موعدًا مع عميل يوم الأربعاء."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-03-P01",
+      "sourceTaskIds": [
+        "DL-B1-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب رسالة من خمس جمل على الأقل إلى وظيفة خيالية. اذكر مهارة وخبرة، واطلب موعد مقابلة بأدب، واستخدم **würde + المصدر** مرةً على الأقل مع وضع المصدر في نهاية الجملة. اقرأ الرسالة بصوت واضح إن أمكن؛ لا تستخدم بيانات شخصية حقيقية ولا يلزم تسجيلها.",
+      "criteria": {
+        "taskCompletion": "تتضمن الإجابة خمس جمل على الأقل، وتذكر مهارة وخبرة وطلبًا لموعد مقابلة.",
+        "meaningClarity": "تُفهم الرسالة بوصفها طلبًا مهنيًا مناسبًا لوظيفة خيالية.",
+        "targetSkill": "تستخدم طلبًا مهذبًا، وتضع المصدر في نهاية تركيب würde + Infinitiv."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 80,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-03-P02",
+      "sourceTaskIds": [
+        "DL-B1-03-T04",
+        "DL-B1-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "أنشئ محاكاة اجتماع قصيرة من أربعة أدوار على الأقل لتوزيع المهام قبل موعد نهائي. استخدم اقتراحًا واحدًا بصيغة **würde + المصدر** وطلبًا مهذبًا مثل **Könnten wir …?**. إذا كنت تتعلم وحدك، اكتب دوري المشاركين ثم اقرأهما بصوت مرتفع؛ لا يلزم تسجيل الصوت.",
+      "criteria": {
+        "taskCompletion": "تتضمن الإجابة أربعة أدوار حوارية على الأقل وتوزيعًا واضحًا لمهمة أو مهام.",
+        "meaningClarity": "يستطيع القارئ فهم الاقتراح والطلب والقرار أو الخطوة التالية.",
+        "targetSkill": "تستخدم صيغة اقتراح أو طلب مهذبة، مع وضع مصدر würde في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
