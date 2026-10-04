@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-12-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-12-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-12-Q01",
+      "sourceTaskIds": [
+        "DL-A2-12-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "مفردات الثقافة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **die Ausstellung**؟",
+      "options": [
+        "معرض.",
+        "تذكرة دخول.",
+        "ألعاب نارية."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ausstellung تعني معرضًا."
+    },
+    {
+      "id": "DL-A2-12-Q02",
+      "sourceTaskIds": [
+        "DL-A2-12-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "bevor",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **Bevor das Konzert beginnt, treffen wir uns am Eingang**؟",
+      "options": [
+        "نلتقي بعد أن ينتهي الحفل.",
+        "نلتقي عند المدخل قبل أن يبدأ الحفل.",
+        "نشتري الطعام أثناء الحفل."
+      ],
+      "answerIndex": 1,
+      "explanation": "bevor تعني قبل أن."
+    },
+    {
+      "id": "DL-A2-12-Q03",
+      "sourceTaskIds": [
+        "DL-A2-12-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "nachdem",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Nachdem wir das Konzert gehört ___, können wir etwas essen.",
+      "options": [
+        "wir",
+        "gehört",
+        "haben"
+      ],
+      "answerIndex": 2,
+      "explanation": "في جملة nachdem مع Perfekt يأتي الفعل المساعد haben في النهاية."
+    },
+    {
+      "id": "DL-A2-12-Q04",
+      "sourceTaskIds": [
+        "DL-A2-12-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Nachdem wir haben gegessen, gehen wir zum Konzert.",
+        "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+        "Nachdem gegessen wir haben, gehen wir zum Konzert."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد nachdem يأتي الفعل في نهاية الجملة التابعة؛ وبعد الفاصلة يبدأ الفعل الرئيسي."
+    },
+    {
+      "id": "DL-A2-12-Q05",
+      "sourceTaskIds": [
+        "DL-A2-12-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "في أي يوم يقام مهرجان المدينة؟",
+      "options": [
+        "يوم الأحد.",
+        "يوم السبت.",
+        "يوم الأربعاء."
+      ],
+      "answerIndex": 0,
+      "explanation": "النص يقول Am Sonntag."
+    },
+    {
+      "id": "DL-A2-12-Q06",
+      "sourceTaskIds": [
+        "DL-A2-12-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "متى يُفتتح المعرض؟",
+      "options": [
+        "الساعة 17.",
+        "الساعة 19.",
+        "الساعة 14."
+      ],
+      "answerIndex": 2,
+      "explanation": "تبدأ المعرض عند 14 Uhr."
+    },
+    {
+      "id": "DL-A2-12-Q07",
+      "sourceTaskIds": [
+        "DL-A2-12-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا يحدث بعد أن يسمع الزوار الحفل؟",
+      "options": [
+        "يغلق السوق فورًا.",
+        "تقام ألعاب نارية.",
+        "تبدأ مباراة كرة قدم."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد الحفل gibt es ein Feuerwerk."
+    },
+    {
+      "id": "DL-A2-12-Q08",
+      "sourceTaskIds": [
+        "DL-A2-12-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "فهم برنامج",
+        "اختيار محدد"
+      ],
+      "prompt": "في الجملة **Um vier Uhr besuchen sie eine Ausstellung**، متى يزورون المعرض؟",
+      "options": [
+        "في الرابعة.",
+        "في الثانية.",
+        "في السابعة."
+      ],
+      "answerIndex": 0,
+      "explanation": "الجملة تحدد الساعة الرابعة."
+    },
+    {
+      "id": "DL-A2-12-Q09",
+      "sourceTaskIds": [
+        "DL-A2-12-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "ترتيب الأحداث",
+        "اختيار محدد"
+      ],
+      "prompt": "إذا أكلنا ثم ذهبنا إلى الحفل، أي جملة صحيحة؟",
+      "options": [
+        "Bevor wir gegessen haben, gehen wir zum Konzert.",
+        "Nachdem wir essen, gingen wir das Konzert.",
+        "Nachdem wir gegessen haben, gehen wir zum Konzert."
+      ],
+      "answerIndex": 2,
+      "explanation": "الحدث المكتمل أولًا يأتي مع nachdem وPerfekt."
+    },
+    {
+      "id": "DL-A2-12-Q10",
+      "sourceTaskIds": [
+        "DL-A2-12-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "skillTags": [
+        "ترتيب الأحداث",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **bevor** عند ترتيب نشاطين؟",
+      "options": [
+        "أن النشاطين يحدثان في اللحظة نفسها دائمًا.",
+        "أن النشاط في الجملة التابعة يقع قبل النشاط الرئيسي.",
+        "أن الجملة تتحدث عن مكان فقط."
+      ],
+      "answerIndex": 1,
+      "explanation": "bevor تربط نشاطًا يحدث قبل النشاط الرئيسي."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-12-P01",
+      "sourceTaskIds": [
+        "DL-A2-12-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "خطط يومًا ثقافيًا من خمس جمل: اذكر وقتًا أو مكانًا ونشاطين على الأقل، واستخدم bevor مرة وnachdem مرة. اقرأ الخطة بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "تتضمن الخطة نشاطين ووقتًا أو مكانًا وربطًا بالترتيب.",
+        "meaningClarity": "يتضح ما سيحدث أولًا وما سيحدث بعده.",
+        "targetSkill": "يستخدم bevor/nachdem مع الفاصلة ويضع الفعل في نهاية الجملة التابعة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 55,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-12-P02",
+      "sourceTaskIds": [
+        "DL-A2-12-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-12-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب تسلسلًا قصيرًا لثلاثة أنشطة في مهرجان. استخدم جملة nachdem عن نشاط اكتمل بصيغة Perfekt، وجملة bevor عن حدث قادم، ثم اقرأ النص بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يعرض النص ثلاثة أنشطة مرتبة.",
+        "meaningClarity": "يمكن تتبع ترتيب الأنشطة دون التباس.",
+        "targetSkill": "يضع الفعل المساعد في نهاية جملة nachdem ويحافظ على ترتيب جملة bevor."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 55,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

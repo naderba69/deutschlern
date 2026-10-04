@@ -926,6 +926,440 @@
       ],
       "transcriptPolicy": "offer",
       "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-11-AUD-DLG-01",
+      "lessonId": "a1-11-home-directions",
+      "title": "حوار: وصف الشقة والطريق إليها",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Nora",
+          "text": "Wie ist deine neue Wohnung?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Lina",
+          "text": "Sie ist klein, aber sehr hell. Es gibt ein Wohnzimmer, eine Küche, ein Bad und einen Balkon.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Nora",
+          "text": "Schön! Wie komme ich zu dir?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Lina",
+          "text": "Vom Bahnhof gehst du geradeaus. An der Ampel gehst du nach links. Meine Wohnung ist neben der Bäckerei.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Nora",
+          "text": "Danke. Ich komme am Samstag!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-12-AUD-LST-01",
+      "lessonId": "a1-12-trip-invitations",
+      "title": "استماع: الرد على دعوة Amel",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-12-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Hallo Amel! Danke für deine Einladung. Am Sonntag kann ich kommen. Ich bringe einen Kuchen mit. Um wie viel Uhr beginnt die Feier? Ich freue mich schon. Bis Sonntag!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-12-AUD-DLG-01",
+      "lessonId": "a1-12-trip-invitations",
+      "title": "حوار: دعوة إلى رحلة واحتفال",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Nadia",
+          "text": "Hast du am Samstag Zeit, Youssef?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Youssef",
+          "text": "Ja, warum?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Nadia",
+          "text": "Ich habe Geburtstag. Wir machen einen Ausflug nach Hammamet und feiern dort. Möchtest du mitkommen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Youssef",
+          "text": "Ja, gern! Wann fährt der Zug?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Nadia",
+          "text": "Um neun Uhr zwanzig. Wir sind um neun Uhr vor dem Bahnhof.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Youssef",
+          "text": "Soll ich etwas mitbringen?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-07.mp3",
+          "speaker": "Nadia",
+          "text": "Ja. Kannst du bitte Wasser mitbringen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-08.mp3",
+          "speaker": "Youssef",
+          "text": "Ja, natürlich. Danke für die Einladung!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A2-01-AUD-PHR-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "عبارات seit وvor والقدرة",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Seit wann lernst du Deutsch? Ich lerne seit einem Jahr Deutsch. Vor drei Monaten habe ich einen Kurs begonnen. Ich kann kurze Texte lesen. Am Wochenende bin ich nach Sousse gefahren.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-DLG-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "حوار: Karim وNour عن تعلم اللغة",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-01.mp3",
+          "speaker": "Karim",
+          "text": "Seit wann lernst du Deutsch, Nour?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-02.mp3",
+          "speaker": "Nour",
+          "text": "Seit einem Jahr. Ich nehme zweimal pro Woche an einem Sprachkurs teil.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-03.mp3",
+          "speaker": "Karim",
+          "text": "Was kannst du schon gut?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-04.mp3",
+          "speaker": "Nour",
+          "text": "Ich kann kurze Texte lesen und einfache Gespräche führen. Vor drei Monaten habe ich meinen ersten Brief auf Deutsch geschrieben.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-05.mp3",
+          "speaker": "Karim",
+          "text": "Toll! Und was machst du in deiner Freizeit?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-06.mp3",
+          "speaker": "Nour",
+          "text": "Ich fotografiere gern. Letztes Wochenende habe ich den alten Markt fotografiert.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-READ-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "قراءة: خبرة Nour في تعلم الألمانية",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-READ-01.mp3",
+          "speaker": "Nour",
+          "text": "Nour wohnt seit einem Jahr in Tunis. Sie arbeitet in einer Bäckerei und beginnt jeden Morgen um sieben Uhr. Vor drei Monaten hat sie einen Deutschkurs angefangen. Seitdem lernt sie regelmäßig. Nour kann gut Kuchen backen und spricht Arabisch und Französisch. Am Wochenende ist sie nach Mahdia gefahren. Dort hat sie eine Freundin besucht und viele Fotos gemacht.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-LST-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "استماع: تجربة تعلم وسفر",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich lerne seit acht Monaten Deutsch. Vor acht Monaten habe ich mit einem Kurs angefangen. Jetzt kann ich einfache Gespräche führen. Letztes Wochenende bin ich nach Mahdia gefahren. Ich habe einen Freund besucht und viele Fotos gemacht.",
+          "voiceId": "voice-03"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-MODEL-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "أمثلة: seit وvor وkönnen وPerfekt",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich lerne seit sechs Monaten Deutsch. Nour wohnt seit einem Jahr in Tunis. Vor drei Monaten habe ich einen Kurs begonnen. Ich kann gut kochen. Wir können einfache Gespräche auf Deutsch führen. Am Wochenende bin ich nach Mahdia gefahren.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-PHR-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "عبارات المقارنة والتفضيل",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Zug ist schneller als der Bus. Das Hotel ist günstiger als die Pension. Der Bus ist so bequem wie der Zug. Gut, besser, am besten. Ich nehme den Zug, denn er ist schneller. Deshalb fährt Elif nach Bremen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-DLG-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "حوار: Lea وBen يختاران وسيلة النقل",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-01.mp3",
+          "speaker": "Lea",
+          "text": "Wie fahren wir am Wochenende nach Bremen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-02.mp3",
+          "speaker": "Ben",
+          "text": "Der Zug ist schneller als der Bus.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-03.mp3",
+          "speaker": "Lea",
+          "text": "Ja, aber der Bus ist günstiger.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-04.mp3",
+          "speaker": "Ben",
+          "text": "Stimmt. Die Zugfahrt dauert eine Stunde und zehn Minuten. Mit dem Bus fahren wir fast zwei Stunden.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-05.mp3",
+          "speaker": "Lea",
+          "text": "Ich möchte nicht lange unterwegs sein. Der Zug ist für mich am besten.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-06.mp3",
+          "speaker": "Ben",
+          "text": "Gut. Dann nehmen wir den Zug.",
+          "voiceId": "voice-03"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-READ-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "قراءة: رحلة Elif إلى Bremen",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-READ-01.mp3",
+          "speaker": "Elif",
+          "text": "Elif plant einen Wochenendausflug. Sie kann zwischen Bremen und Leipzig wählen. Bremen liegt näher an Hamburg als Leipzig. Mit dem Zug dauert die Fahrt nach Bremen eine Stunde und zehn Minuten. Der Bus ist günstiger, aber langsamer. Die Zugfahrt nach Leipzig dauert drei Stunden. Dort gibt es viele Museen und eine große Altstadt. Elif möchte nicht lange fahren. Für sie ist eine kurze Reise am besten, deshalb fährt sie nach Bremen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-LST-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "استماع: رحلة من Berlin إلى Dresden",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Wir möchten von Berlin nach Dresden fahren. Mit dem Auto dauert die Fahrt ungefähr zwei Stunden. Der Zug ist schneller: eine Stunde und fünfzig Minuten. Der Bus ist am günstigsten, aber die Fahrt dauert drei Stunden. Wir nehmen den Zug, denn wir möchten am Nachmittag noch die Altstadt besuchen.",
+          "voiceId": "voice-03"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-MODEL-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "أمثلة: المقارنة والتفضيل وشرح السبب",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Zug ist schneller als der Bus. Das Hotel ist so ruhig wie die Pension. Die Altstadt ist interessanter als das Einkaufszentrum. Der Zug ist am schnellsten. Die direkte Verbindung ist am besten. Ich nehme den Zug, denn er ist schneller. Elif möchte nicht lange fahren. Deshalb fährt sie nach Bremen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-PHR-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "عبارات الطعام والشراء وأمثلة man",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Speisekarte. Die Rechnung. Die Zutat. Die Linse. Die Gurke. Die Kartoffel. Der Nachtisch. Das Olivenöl. Der Reis. Frisch. Salzig. Süß. Regional. Vegetarisch. Ein Kilo Äpfel. Eine Flasche Wasser. Eine Packung Reis. 250 Gramm Käse. Wie viel Reis brauchen wir? Wie viele Tomaten kaufen wir? Ich hätte gern ein Kilo Tomaten. Was kostet ein Kilo? Das ist alles, danke. Man isst hier oft Gemüse. Im Restaurant bestellt man zuerst ein Getränk. Man kann frische Produkte auf dem Markt kaufen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-DLG-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "حوار: طلب وجبة في المطعم",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-01.mp3",
+          "speaker": "Kellnerin",
+          "text": "Guten Abend. Hier ist die Speisekarte.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-02.mp3",
+          "speaker": "Gast",
+          "text": "Danke. Welche Suppe ist heute frisch?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-03.mp3",
+          "speaker": "Kellnerin",
+          "text": "Die Gemüsesuppe. Sie ist vegetarisch.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-04.mp3",
+          "speaker": "Gast",
+          "text": "Dann hätte ich gern eine Suppe und ein Glas Wasser.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-05.mp3",
+          "speaker": "Kellnerin",
+          "text": "Möchten Sie auch Brot dazu?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-06.mp3",
+          "speaker": "Gast",
+          "text": "Ja, bitte. Und später die Rechnung.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-07.mp3",
+          "speaker": "Kellnerin",
+          "text": "Natürlich.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-READ-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "قراءة: عادات Salma الغذائية",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-READ-01.mp3",
+          "speaker": "Salma",
+          "text": "In Salmas Familie kocht man oft zu Hause. Am Samstag kauft Salma auf dem Markt frisches Gemüse. Sie nimmt ein Kilo Tomaten, zwei Gurken und eine Packung Linsen. Zu Hause kocht sie eine Suppe mit Gemüse und Reis. Ihr Bruder isst gern etwas Süßes zum Nachtisch, aber Salma mag lieber Obst. In der Familie trinkt man zum Essen meistens Wasser.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-LST-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "استماع: قائمة مشتريات العشاء",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Für das Abendessen brauche ich ein Kilo Kartoffeln, drei Tomaten, eine Flasche Olivenöl und 200 Gramm Käse. Ich kaufe auch zwei Gurken. Im Geschäft kostet der Käse heute weniger als gestern.",
+          "voiceId": "voice-03"
+        }
+      ]
     }
   ],
   "selectedVoiceIds": [

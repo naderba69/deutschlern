@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-03-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-03-Q01",
+      "sourceTaskIds": [
+        "DL-A2-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "مفردات الطعام",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **die Rechnung** في المطعم؟",
+      "options": [
+        "الفاتورة",
+        "قائمة الطعام",
+        "المكوّن"
+      ],
+      "answerIndex": 0,
+      "explanation": "die Rechnung تعني الفاتورة."
+    },
+    {
+      "id": "DL-A2-03-Q02",
+      "sourceTaskIds": [
+        "DL-A2-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "Wie viel / Wie viele",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر السؤال المناسب مع Tomaten: ___ Tomaten brauchst du?",
+      "options": [
+        "Wie viel",
+        "Wie viele",
+        "Wie lange"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tomaten اسم معدود جمعًا، لذلك نستخدم Wie viele."
+    },
+    {
+      "id": "DL-A2-03-Q03",
+      "sourceTaskIds": [
+        "DL-A2-03-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "man",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Im Restaurant ___ man zuerst ein Getränk.",
+      "options": [
+        "bestellen",
+        "bestellst",
+        "bestellt"
+      ],
+      "answerIndex": 2,
+      "explanation": "man يعامل مع الفعل بصيغة المفرد الغائب: bestellt."
+    },
+    {
+      "id": "DL-A2-03-Q04",
+      "sourceTaskIds": [
+        "DL-A2-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "وحدات الكمية",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعني «زجاجة ماء»؟",
+      "options": [
+        "ein Kilo Wasser",
+        "eine Flasche Wasser",
+        "eine Packung Wasser"
+      ],
+      "answerIndex": 1,
+      "explanation": "Flasche تعني زجاجة."
+    },
+    {
+      "id": "DL-A2-03-Q05",
+      "sourceTaskIds": [
+        "DL-A2-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "طلب مهذب",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة مناسبة لطلب الطعام بأدب؟",
+      "options": [
+        "Ich hätte gern eine Gemüsesuppe.",
+        "Ich bin eine Gemüsesuppe.",
+        "Ich habe gern eine Gemüsesuppe."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ich hätte gern صيغة مهذبة جاهزة للطلب."
+    },
+    {
+      "id": "DL-A2-03-Q06",
+      "sourceTaskIds": [
+        "DL-A2-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "فهم الحوار",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الذي طلبه الضيف مع الحساء؟",
+      "options": [
+        "إيصال الشراء.",
+        "زجاجة زيت.",
+        "كوب ماء."
+      ],
+      "answerIndex": 2,
+      "explanation": "الضيف طلب eine Suppe und ein Glas Wasser."
+    },
+    {
+      "id": "DL-A2-03-Q07",
+      "sourceTaskIds": [
+        "DL-A2-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "كم خيارًا اشترت Salma؟",
+      "options": [
+        "خيارًا واحدًا.",
+        "خيارين.",
+        "أربعة خيارات."
+      ],
+      "answerIndex": 1,
+      "explanation": "اشترت zwei Gurken."
+    },
+    {
+      "id": "DL-A2-03-Q08",
+      "sourceTaskIds": [
+        "DL-A2-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تشرب العائلة غالبًا مع الطعام؟",
+      "options": [
+        "الماء.",
+        "العصير.",
+        "الحليب."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص أن العائلة تشرب الماء غالبًا."
+    },
+    {
+      "id": "DL-A2-03-Q09",
+      "sourceTaskIds": [
+        "DL-A2-03-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "الكمية",
+        "اختيار محدد"
+      ],
+      "prompt": "في التعبير **200 Gramm Käse**، ما وحدة كمية الجبن؟",
+      "options": [
+        "Flasche",
+        "Kilo",
+        "Gramm"
+      ],
+      "answerIndex": 2,
+      "explanation": "Gramm تعني غرامًا."
+    },
+    {
+      "id": "DL-A2-03-Q10",
+      "sourceTaskIds": [
+        "DL-A2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "man للتعميم",
+        "اختيار محدد"
+      ],
+      "prompt": "في جملة **Man isst hier oft Gemüse**، ماذا تعني man؟",
+      "options": [
+        "شخصًا محددًا اسمه Mann.",
+        "المرء أو الناس عمومًا.",
+        "ضمير المخاطب."
+      ],
+      "answerIndex": 1,
+      "explanation": "man فاعل عام، ولا يعني der Mann «الرجل»."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-03-P01",
+      "sourceTaskIds": [
+        "DL-A2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب قائمة مشتريات لوجبة من أربعة عناصر، وحدد كمية كل عنصر. أضف سؤالًا باستخدام Wie viel أو Wie viele، ثم اقرأ القائمة بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "تضم القائمة أربعة عناصر وكميات وسؤالًا مناسبًا.",
+        "meaningClarity": "يمكن فهم ما سيُشترى وكميته.",
+        "targetSkill": "يفرق بين Wie viel للاسم غير المعدود وWie viele للمعدود ويختار وحدات مناسبة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-03-P02",
+      "sourceTaskIds": [
+        "DL-A2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب حوارًا قصيرًا في مطعم: اطلب طبقًا ومشروبًا بأدب، واسأل عن الفاتورة أو مكوّن، وأضف جملة عامة باستخدام man. اقرأ الحوار بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يتضمن الحوار طلبًا وسؤالًا وردًا وجملة man.",
+        "meaningClarity": "تسلسل الطلب والرد مفهوم ومهذب.",
+        "targetSkill": "يستخدم Ich hätte gern، ويصرف الفعل مع man بصيغة المفرد."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

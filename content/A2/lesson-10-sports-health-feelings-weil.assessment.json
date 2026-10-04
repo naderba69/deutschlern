@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-10-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-10-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-10-Q01",
+      "sourceTaskIds": [
+        "DL-A2-10-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "مفردات الصحة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **erschöpft**؟",
+      "options": [
+        "مرهق.",
+        "هادئ.",
+        "فخور."
+      ],
+      "answerIndex": 0,
+      "explanation": "erschöpft تعني مرهقًا أو منهكًا."
+    },
+    {
+      "id": "DL-A2-10-Q02",
+      "sourceTaskIds": [
+        "DL-A2-10-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "weil",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الترتيب الصحيح:",
+      "options": [
+        "Mina ist erschöpft, weil sie hat trainiert.",
+        "Mina ist erschöpft, weil sie trainiert hat.",
+        "Mina ist erschöpft, weil trainiert sie hat."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد weil يأتي الفعل في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-A2-10-Q03",
+      "sourceTaskIds": [
+        "DL-A2-10-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "weil أو denn",
+        "اختيار محدد"
+      ],
+      "prompt": "أي أداة تبدأ جملة تابعة تجعل الفعل في النهاية؟",
+      "options": [
+        "denn",
+        "aber",
+        "weil"
+      ],
+      "answerIndex": 2,
+      "explanation": "weil تدخل جملة تابعة، فيأتي الفعل المصرف في النهاية."
+    },
+    {
+      "id": "DL-A2-10-Q04",
+      "sourceTaskIds": [
+        "DL-A2-10-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Weil es regnet, wir bleiben in der Halle.",
+        "Weil es regnet, bleiben wir in der Halle.",
+        "Weil regnet es, bleiben wir in der Halle."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد الجملة التابعة يأتي فعل الجملة الرئيسية مباشرة: bleiben wir."
+    },
+    {
+      "id": "DL-A2-10-Q05",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما النشاط الذي تمارسه Rania كثيرًا بعد العمل؟",
+      "options": [
+        "السباحة.",
+        "كرة القدم.",
+        "التنس."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص أنها تذهب كثيرًا للسباحة."
+    },
+    {
+      "id": "DL-A2-10-Q06",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "لماذا تذهب Rania للسباحة؟",
+      "options": [
+        "لأن فريقها يلعب في الصباح.",
+        "لأنها تسافر إلى Wien.",
+        "لأنها تريد الحركة بعد العمل."
+      ],
+      "answerIndex": 2,
+      "explanation": "تريد أن تتحرك بعد العمل: weil sie sich … bewegen möchte."
+    },
+    {
+      "id": "DL-A2-10-Q07",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تفعل Rania عندما تكون متعبة؟",
+      "options": [
+        "تذهب إلى مباراة.",
+        "تأخذ استراحة وتشرب الماء.",
+        "تتدرب لساعات."
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول إنها تأخذ استراحة أولًا وتشرب الماء."
+    },
+    {
+      "id": "DL-A2-10-Q08",
+      "sourceTaskIds": [
+        "DL-A2-10-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "فهم جملة قصيرة",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Ich spiele zweimal pro Woche Basketball**، كم مرة تلعب المتحدثة؟",
+      "options": [
+        "مرتين في الأسبوع.",
+        "مرة في الشهر.",
+        "كل يوم."
+      ],
+      "answerIndex": 0,
+      "explanation": "zweimal pro Woche تعني مرتين في الأسبوع."
+    },
+    {
+      "id": "DL-A2-10-Q09",
+      "sourceTaskIds": [
+        "DL-A2-10-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "weil وdenn",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الفرق الصحيح؟",
+      "options": [
+        "بعد denn يأتي الفعل دائمًا في النهاية.",
+        "لا يختلف ترتيب الجملة بعدهما.",
+        "بعد weil يأتي الفعل في النهاية؛ وبعد denn يبقى ترتيب الجملة الرئيسية."
+      ],
+      "answerIndex": 2,
+      "explanation": "weil جملة تابعة، أما denn فيربط جملتين رئيسيتين."
+    },
+    {
+      "id": "DL-A2-10-Q10",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "skillTags": [
+        "المشاعر",
+        "اختيار محدد"
+      ],
+      "prompt": "متى تكون Rania أحيانًا **nervös** بحسب النص؟",
+      "options": [
+        "بعد تناول العشاء.",
+        "قبل المنافسة.",
+        "في المكتبة."
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول Vor einem Wettbewerb ist sie manchmal nervös."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-10-P01",
+      "sourceTaskIds": [
+        "DL-A2-10-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل عن رياضة أو نشاط تحبه: صف شعورك واذكر سببًا باستخدام weil، وسببًا آخر باستخدام denn. اقرأها بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "تتضمن الاستجابة نشاطًا وشعورًا وسببين.",
+        "meaningClarity": "يمكن فهم ما تفعله وكيف تشعر ولماذا.",
+        "targetSkill": "يضع الفعل في نهاية جملة weil ويحافظ على ترتيب الجملة بعد denn."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-10-P02",
+      "sourceTaskIds": [
+        "DL-A2-10-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-10-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب وصفًا ليوم تدريب: اذكر مدة النشاط، وشعورك بعده، ومتى تأخذ استراحة. استخدم جملتين مع weil أو denn، ثم اقرأ الوصف بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يذكر النص نشاطًا وشعورًا واستراحة أو سببها.",
+        "meaningClarity": "تتضح العلاقة بين التدريب والشعور والراحة.",
+        "targetSkill": "يستخدم weil أو denn مع ترتيب الفعل المناسب ويختار مفردة شعور ملائمة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

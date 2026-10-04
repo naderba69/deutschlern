@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-08-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-08-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-08-Q01",
+      "sourceTaskIds": [
+        "DL-A2-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "مفردات الإعلام",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Die Nachrichten ___ um acht Uhr gesendet.",
+      "options": [
+        "werden",
+        "wird",
+        "werdet"
+      ],
+      "answerIndex": 0,
+      "explanation": "الأخبار جمع، لذلك نستخدم werden؛ ويأتي Partizip II gesendet في نهاية الجملة."
+    },
+    {
+      "id": "DL-A2-08-Q02",
+      "sourceTaskIds": [
+        "DL-A2-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "werden",
+        "اختيار محدد"
+      ],
+      "prompt": "ما صيغة Partizip II للفعل **veröffentlichen**؟",
+      "options": [
+        "veröffentlichte",
+        "veröffentlicht",
+        "veröffentlichen"
+      ],
+      "answerIndex": 1,
+      "explanation": "صيغة Partizip II هي veröffentlicht، وتأتي في نهاية جملة المبني للمجهول."
+    },
+    {
+      "id": "DL-A2-08-Q03",
+      "sourceTaskIds": [
+        "DL-A2-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "المبني للمجهول",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة في المبني للمجهول صحيحة؟",
+      "options": [
+        "Der Bericht wird veröffentlichen.",
+        "Der Bericht veröffentlicht werden.",
+        "Der Bericht wird veröffentlicht."
+      ],
+      "answerIndex": 2,
+      "explanation": "المبني للمجهول في المضارع: werden مصرّفًا + Partizip II."
+    },
+    {
+      "id": "DL-A2-08-Q04",
+      "sourceTaskIds": [
+        "DL-A2-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "وظيفة المبني للمجهول",
+        "اختيار محدد"
+      ],
+      "prompt": "لماذا يستخدم الخبر المبني للمجهول أحيانًا؟",
+      "options": [
+        "لأن الجملة تتحدث عن المستقبل فقط.",
+        "لأن المهم هو الحدث أو متلقي الفعل، لا الفاعل.",
+        "لأن الفاعل يجب أن يكون ich."
+      ],
+      "answerIndex": 1,
+      "explanation": "يبرز المبني للمجهول الحدث عندما يكون الفاعل غير معروف أو غير مهم."
+    },
+    {
+      "id": "DL-A2-08-Q05",
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "متى تُنظّم جلسة مجلس المدينة؟",
+      "options": [
+        "يوم الأربعاء.",
+        "يوم السبت.",
+        "في الخريف."
+      ],
+      "answerIndex": 0,
+      "explanation": "النص يقول am Mittwoch."
+    },
+    {
+      "id": "DL-A2-08-Q06",
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا يُخطط له في وسط المدينة؟",
+      "options": [
+        "محطة قطار.",
+        "مهرجان رياضي.",
+        "ساحة جديدة."
+      ],
+      "answerIndex": 2,
+      "explanation": "يذكر الخبر أن einen neuen Platz im Zentrum wird geplant."
+    },
+    {
+      "id": "DL-A2-08-Q07",
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين تُنقل جلسة المجلس؟",
+      "options": [
+        "في الإذاعة فقط.",
+        "في الإنترنت.",
+        "في المسرح."
+      ],
+      "answerIndex": 1,
+      "explanation": "Die Sitzung wird im Internet übertragen."
+    },
+    {
+      "id": "DL-A2-08-Q08",
+      "sourceTaskIds": [
+        "DL-A2-08-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم خبر قصير",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Zwei Haltestellen werden gebaut**، كم محطة ستُبنى؟",
+      "options": [
+        "محطتان.",
+        "محطة واحدة.",
+        "أربع محطات."
+      ],
+      "answerIndex": 0,
+      "explanation": "الجملة تذكر zwei Haltestellen."
+    },
+    {
+      "id": "DL-A2-08-Q09",
+      "sourceTaskIds": [
+        "DL-A2-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Die Informationen werden morgen veröffentlicht**، ما الفعل الذي جاء في نهاية الجملة؟",
+      "options": [
+        "werden",
+        "morgen",
+        "veröffentlicht"
+      ],
+      "answerIndex": 2,
+      "explanation": "Partizip II veröffentlicht يأتي في النهاية."
+    },
+    {
+      "id": "DL-A2-08-Q10",
+      "sourceTaskIds": [
+        "DL-A2-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "تصريف المبني للمجهول",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Am Freitag ___ eine Veranstaltung ___. (organisieren)",
+      "options": [
+        "werden … organisieren",
+        "wird … organisiert",
+        "ist … organisiert"
+      ],
+      "answerIndex": 1,
+      "explanation": "الفاعل المفرد eine Veranstaltung يأخذ wird، وPartizip II هو organisiert."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-08-P01",
+      "sourceTaskIds": [
+        "DL-A2-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ثلاثة أخبار قصيرة ومحايدة عن حدث محلي، مثل جلسة أو افتتاح أو إعلان. استخدم المبني للمجهول في المضارع في كل جملة، ثم اقرأ الأخبار بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "تتضمن الاستجابة ثلاثة أخبار مفهومة عن أحداث.",
+        "meaningClarity": "يمكن فهم ما وقع أو سيقع دون حاجة لمعرفة الفاعل.",
+        "targetSkill": "يستخدم werden بحسب الفاعل ويضع Partizip II في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 50,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-08-P02",
+      "sourceTaskIds": [
+        "DL-A2-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "حوّل ثلاث معلومات معلومة الفاعل إلى أخبار تركز على الحدث، مثل: Die Stadt organisiert eine Sitzung. اكتب الصيغ بالمبني للمجهول واقرأها بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يقدم المتعلم ثلاث جمل محوّلة.",
+        "meaningClarity": "يبقى الحدث والمفعول به واضحين بعد التحويل.",
+        "targetSkill": "يختار wird أو werden وفق الاسم ويضع Partizip II في آخر الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 50,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

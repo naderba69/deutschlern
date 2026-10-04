@@ -32,6 +32,9 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A1-10": "a1-10-hobbies-health",
     "DL-A1-11": "a1-11-home-directions",
     "DL-A1-12": "a1-12-trip-invitations",
+    "DL-A2-01": "a2-01-routines-abilities-experiences",
+    "DL-A2-02": "a2-02-travel-comparisons",
+    "DL-A2-03": "a2-03-food-nutrition-shopping",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 

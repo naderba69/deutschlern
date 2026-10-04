@@ -6535,18 +6535,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-01-Q01",
+          "sourceTaskIds": [
+            "DL-A2-01-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "مفردات",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى التركيب **vor drei Monaten** في سياق حدث انتهى؟",
+          "options": [
+            "قبل ثلاثة أشهر، أي مدة انتهت.",
+            "منذ ثلاثة أشهر وما زال مستمرًا.",
+            "بعد ثلاثة أشهر."
+          ],
+          "answerIndex": 0,
+          "explanation": "نستخدم vor مع مدة مضت وانتهى الحدث؛ أما seit فتدل هنا على مدة ما زالت مستمرة."
+        },
+        {
+          "id": "DL-A2-01-Q02",
+          "sourceTaskIds": [
+            "DL-A2-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "seit وvor",
+            "اختيار محدد"
+          ],
+          "prompt": "تسكن نور في تونس وما زالت تعيش هناك: Nour wohnt ___ einem Jahr in Tunis.",
+          "options": [
+            "vor",
+            "seit",
+            "nach"
+          ],
+          "answerIndex": 1,
+          "explanation": "نستخدم seit لشيء بدأ وما زال مستمرًا."
+        },
+        {
+          "id": "DL-A2-01-Q03",
+          "sourceTaskIds": [
+            "DL-A2-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "حالة seit",
+            "اختيار محدد"
+          ],
+          "prompt": "أي تركيب صحيح؟",
+          "options": [
+            "seit ein Jahr",
+            "seit eines Jahr",
+            "seit einem Jahr"
+          ],
+          "answerIndex": 2,
+          "explanation": "بعد seit هنا تأتي صيغة Dativ: seit einem Jahr."
+        },
+        {
+          "id": "DL-A2-01-Q04",
+          "sourceTaskIds": [
+            "DL-A2-01-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "Perfekt",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Wir ___ nach Sousse gefahren.",
+          "options": [
+            "haben",
+            "sind",
+            "ist"
+          ],
+          "answerIndex": 1,
+          "explanation": "الفعل fahren مع الانتقال إلى مكان يأخذ sein في Perfekt."
+        },
+        {
+          "id": "DL-A2-01-Q05",
+          "sourceTaskIds": [
+            "DL-A2-01-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "können",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Nour ___ gut Kuchen backen.",
+          "options": [
+            "kann",
+            "kannst",
+            "können"
+          ],
+          "answerIndex": 0,
+          "explanation": "مع الاسم المفرد Nour نستخدم kann."
+        },
+        {
+          "id": "DL-A2-01-Q06",
+          "sourceTaskIds": [
+            "DL-A2-01-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "ترتيب الجملة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة صحيحة؟",
+          "options": [
+            "Ich kann kurze Texte liest.",
+            "Ich kann lesen kurze Texte.",
+            "Ich kann kurze Texte lesen."
+          ],
+          "answerIndex": 2,
+          "explanation": "بعد können يأتي الفعل الآخر مصدرًا في نهاية الجملة."
+        },
+        {
+          "id": "DL-A2-01-Q07",
+          "sourceTaskIds": [
+            "DL-A2-01-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين تعمل Nour بحسب النص؟",
+          "options": [
+            "In einem Hotel.",
+            "In einer Bäckerei.",
+            "In einer Schule."
+          ],
+          "answerIndex": 1,
+          "explanation": "يذكر النص أنها تعمل في مخبز: in einer Bäckerei."
+        },
+        {
+          "id": "DL-A2-01-Q08",
+          "sourceTaskIds": [
+            "DL-A2-01-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "متى بدأت Nour دورة الألمانية؟",
+          "options": [
+            "Vor drei Monaten.",
+            "Seit drei Monaten.",
+            "Vor einem Jahr."
+          ],
+          "answerIndex": 0,
+          "explanation": "بدأت الدورة قبل ثلاثة أشهر: vor drei Monaten."
+        },
+        {
+          "id": "DL-A2-01-Q09",
+          "sourceTaskIds": [
+            "DL-A2-01-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "عبارات النشاط",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تعني جملة **Ich nehme zweimal pro Woche an einem Sprachkurs teil**؟",
+          "options": [
+            "أبدأ دورة لغة مرة في الشهر.",
+            "أنهي دورة اللغة كل يوم.",
+            "أشارك في دورة لغة مرتين أسبوعيًا."
+          ],
+          "answerIndex": 2,
+          "explanation": "التركيب teilnehmen an يعني المشاركة في، وzweimal pro Woche تعني مرتين أسبوعيًا."
+        },
+        {
+          "id": "DL-A2-01-Q10",
+          "sourceTaskIds": [
+            "DL-A2-01-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "skillTags": [
+            "معنى seitdem",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **Seitdem lernt sie regelmäßig**؟",
+          "options": [
+            "كانت تتعلم قبل ذلك.",
+            "منذ ذلك الحين تتعلم بانتظام.",
+            "ستبدأ التعلم لاحقًا."
+          ],
+          "answerIndex": 1,
+          "explanation": "seitdem تعني منذ ذلك الحين."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-01-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-01-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-01-P01",
+          "sourceTaskIds": [
+            "DL-A2-01-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب أربع جمل عن روتين أو خبرة متخيّلة: استخدم seit لشيء مستمر، وvor مع حدث انتهى، وجملة مع können، وجملة في Perfekt. اقرأها بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تتضمن الاستجابة أربع جمل وتغطي المطلوب كله.",
+            "meaningClarity": "يمكن فهم ما يزال مستمرًا وما حدث وانتهى.",
+            "targetSkill": "يميز بين seit وvor، ويصرّف können، ويضع Partizip II في نهاية Perfekt."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-01-P02",
+          "sourceTaskIds": [
+            "DL-A2-01-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-01-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب فقرة قصيرة عن خبرة تعلم لغة: منذ متى تتعلمها، وما الذي تستطيع فعله، وماذا أنجزت مؤخرًا؟ استخدم فعلًا منفصلًا واحدًا مثل anfangen أو teilnehmen، ثم اقرأها بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تذكر الاستجابة مدة التعلم وقدرة وإنجازًا حديثًا.",
+            "meaningClarity": "تتضح المدة والقدرة والخبرة دون تعارض زمني.",
+            "targetSkill": "يستخدم seit مع المضارع للمدة المستمرة وPerfekt لخبرة منتهية، ويكتب الفعل المنفصل بصورة صحيحة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-02-travel-comparisons",
@@ -6668,18 +6949,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-02-Q01",
+          "sourceTaskIds": [
+            "DL-A2-02-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "مفردات السفر",
+            "اختيار محدد"
+          ],
+          "prompt": "ما صيغة المقارنة غير المنتظمة للصفة **gut**؟",
+          "options": [
+            "besser",
+            "guter",
+            "am gutesten"
+          ],
+          "answerIndex": 0,
+          "explanation": "الصيغ هي gut – besser – am besten."
+        },
+        {
+          "id": "DL-A2-02-Q02",
+          "sourceTaskIds": [
+            "DL-A2-02-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "المقارنة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل جملة التساوي: Der Bus ist ___ bequem ___ der Zug.",
+          "options": [
+            "mehr … als",
+            "so … wie",
+            "am … wie"
+          ],
+          "answerIndex": 1,
+          "explanation": "للتساوي نستخدم so … wie."
+        },
+        {
+          "id": "DL-A2-02-Q03",
+          "sourceTaskIds": [
+            "DL-A2-02-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "التفضيل",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تعني «الأفضل»؟",
+          "options": [
+            "besser",
+            "am gut",
+            "am besten"
+          ],
+          "answerIndex": 2,
+          "explanation": "صيغة التفضيل من gut هي am besten."
+        },
+        {
+          "id": "DL-A2-02-Q04",
+          "sourceTaskIds": [
+            "DL-A2-02-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "صيغة المقارنة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة صحيحة؟",
+          "options": [
+            "Der Zug ist schnell als der Bus.",
+            "Der Zug ist schneller als der Bus.",
+            "Der Zug ist am schneller als der Bus."
+          ],
+          "answerIndex": 1,
+          "explanation": "مع المقارنة بين شيئين نستخدم الصفة المقارنة مع als."
+        },
+        {
+          "id": "DL-A2-02-Q05",
+          "sourceTaskIds": [
+            "DL-A2-02-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "أدوات الربط",
+            "اختيار محدد"
+          ],
+          "prompt": "أي ترتيب صحيح بعد **denn**؟",
+          "options": [
+            "Ich nehme den Zug, denn er ist schneller.",
+            "Ich nehme den Zug, denn ist er schneller.",
+            "Ich nehme den Zug, denn schneller er ist."
+          ],
+          "answerIndex": 0,
+          "explanation": "بعد denn تبقى الجملة الرئيسية بترتيب الفعل في الموقع الثاني."
+        },
+        {
+          "id": "DL-A2-02-Q06",
+          "sourceTaskIds": [
+            "DL-A2-02-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "كم تستغرق رحلة القطار إلى Bremen بحسب النص؟",
+          "options": [
+            "ثلاث ساعات.",
+            "ساعتان.",
+            "ساعة وعشر دقائق."
+          ],
+          "answerIndex": 2,
+          "explanation": "النص يذكر eine Stunde und zehn Minuten."
+        },
+        {
+          "id": "DL-A2-02-Q07",
+          "sourceTaskIds": [
+            "DL-A2-02-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي وسيلة أرخص في النص؟",
+          "options": [
+            "Der Zug.",
+            "Der Bus.",
+            "Das Fahrrad."
+          ],
+          "answerIndex": 1,
+          "explanation": "النص يقول إن الحافلة أرخص لكنها أبطأ."
+        },
+        {
+          "id": "DL-A2-02-Q08",
+          "sourceTaskIds": [
+            "DL-A2-02-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا يوجد في Leipzig بحسب النص؟",
+          "options": [
+            "متاحف كثيرة وبلدة قديمة كبيرة.",
+            "شاطئ كبير.",
+            "متحف واحد فقط."
+          ],
+          "answerIndex": 0,
+          "explanation": "يذكر النص viele Museen und eine große Altstadt."
+        },
+        {
+          "id": "DL-A2-02-Q09",
+          "sourceTaskIds": [
+            "DL-A2-02-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "deshalb",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الجملة الصحيحة: Elif möchte nicht lange fahren. ___ fährt sie nach Bremen.",
+          "options": [
+            "Denn",
+            "Weil",
+            "Deshalb"
+          ],
+          "answerIndex": 2,
+          "explanation": "deshalb تبدأ جملة رئيسية، لذلك يأتي الفعل بعدها مباشرة: Deshalb fährt sie."
+        },
+        {
+          "id": "DL-A2-02-Q10",
+          "sourceTaskIds": [
+            "DL-A2-02-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "skillTags": [
+            "تخطيط رحلة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة تستخدم صيغة التفضيل بشكل صحيح؟",
+          "options": [
+            "Die Verbindung ist am besser.",
+            "Die Verbindung ist am besten.",
+            "Die Verbindung ist am gut."
+          ],
+          "answerIndex": 1,
+          "explanation": "الصيغة الصحيحة للتفضيل هي am besten."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-02-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-02-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-02-P01",
+          "sourceTaskIds": [
+            "DL-A2-02-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "قارن بين وسيلتي نقل تختارهما في أربع جمل: استخدم صفة مقارنة مع als، وتعبير so … wie أو صيغة تفضيل واحدة على الأقل. اقرأ المقارنة بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تذكر الاستجابة وسيلتين وثلاث مقارنات على الأقل.",
+            "meaningClarity": "يتضح الخيار أو الفرق بين الوسيلتين.",
+            "targetSkill": "يستخدم als للمقارنة وso … wie للتساوي وصيغة تفضيل سليمة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-02-P02",
+          "sourceTaskIds": [
+            "DL-A2-02-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-02-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اختر وجهة سفر من خيارين واكتب أربع جمل تبرر اختيارك؛ استخدم مقارنة واحدة، وdenn لسبب، وdeshalb لنتيجة. اقرأها بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تحدد الاستجابة وجهة وتقدم سببًا مفهومًا.",
+            "meaningClarity": "يرتبط السبب بالاختيار والنتيجة بوضوح.",
+            "targetSkill": "يحافظ على ترتيب الفعل بعد denn وdeshalb، وعلى صيغة المقارنة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-03-food-nutrition-shopping",
@@ -6813,18 +7375,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-03-Q01",
+          "sourceTaskIds": [
+            "DL-A2-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "مفردات الطعام",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **die Rechnung** في المطعم؟",
+          "options": [
+            "الفاتورة",
+            "قائمة الطعام",
+            "المكوّن"
+          ],
+          "answerIndex": 0,
+          "explanation": "die Rechnung تعني الفاتورة."
+        },
+        {
+          "id": "DL-A2-03-Q02",
+          "sourceTaskIds": [
+            "DL-A2-03-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "Wie viel / Wie viele",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر السؤال المناسب مع Tomaten: ___ Tomaten brauchst du?",
+          "options": [
+            "Wie viel",
+            "Wie viele",
+            "Wie lange"
+          ],
+          "answerIndex": 1,
+          "explanation": "Tomaten اسم معدود جمعًا، لذلك نستخدم Wie viele."
+        },
+        {
+          "id": "DL-A2-03-Q03",
+          "sourceTaskIds": [
+            "DL-A2-03-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "man",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Im Restaurant ___ man zuerst ein Getränk.",
+          "options": [
+            "bestellen",
+            "bestellst",
+            "bestellt"
+          ],
+          "answerIndex": 2,
+          "explanation": "man يعامل مع الفعل بصيغة المفرد الغائب: bestellt."
+        },
+        {
+          "id": "DL-A2-03-Q04",
+          "sourceTaskIds": [
+            "DL-A2-03-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "وحدات الكمية",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تعني «زجاجة ماء»؟",
+          "options": [
+            "ein Kilo Wasser",
+            "eine Flasche Wasser",
+            "eine Packung Wasser"
+          ],
+          "answerIndex": 1,
+          "explanation": "Flasche تعني زجاجة."
+        },
+        {
+          "id": "DL-A2-03-Q05",
+          "sourceTaskIds": [
+            "DL-A2-03-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "طلب مهذب",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة مناسبة لطلب الطعام بأدب؟",
+          "options": [
+            "Ich hätte gern eine Gemüsesuppe.",
+            "Ich bin eine Gemüsesuppe.",
+            "Ich habe gern eine Gemüsesuppe."
+          ],
+          "answerIndex": 0,
+          "explanation": "Ich hätte gern صيغة مهذبة جاهزة للطلب."
+        },
+        {
+          "id": "DL-A2-03-Q06",
+          "sourceTaskIds": [
+            "DL-A2-03-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "فهم الحوار",
+            "اختيار محدد"
+          ],
+          "prompt": "ما الذي طلبه الضيف مع الحساء؟",
+          "options": [
+            "إيصال الشراء.",
+            "زجاجة زيت.",
+            "كوب ماء."
+          ],
+          "answerIndex": 2,
+          "explanation": "الضيف طلب eine Suppe und ein Glas Wasser."
+        },
+        {
+          "id": "DL-A2-03-Q07",
+          "sourceTaskIds": [
+            "DL-A2-03-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "كم خيارًا اشترت Salma؟",
+          "options": [
+            "خيارًا واحدًا.",
+            "خيارين.",
+            "أربعة خيارات."
+          ],
+          "answerIndex": 1,
+          "explanation": "اشترت zwei Gurken."
+        },
+        {
+          "id": "DL-A2-03-Q08",
+          "sourceTaskIds": [
+            "DL-A2-03-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تشرب العائلة غالبًا مع الطعام؟",
+          "options": [
+            "الماء.",
+            "العصير.",
+            "الحليب."
+          ],
+          "answerIndex": 0,
+          "explanation": "يذكر النص أن العائلة تشرب الماء غالبًا."
+        },
+        {
+          "id": "DL-A2-03-Q09",
+          "sourceTaskIds": [
+            "DL-A2-03-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "الكمية",
+            "اختيار محدد"
+          ],
+          "prompt": "في التعبير **200 Gramm Käse**، ما وحدة كمية الجبن؟",
+          "options": [
+            "Flasche",
+            "Kilo",
+            "Gramm"
+          ],
+          "answerIndex": 2,
+          "explanation": "Gramm تعني غرامًا."
+        },
+        {
+          "id": "DL-A2-03-Q10",
+          "sourceTaskIds": [
+            "DL-A2-03-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "skillTags": [
+            "man للتعميم",
+            "اختيار محدد"
+          ],
+          "prompt": "في جملة **Man isst hier oft Gemüse**، ماذا تعني man؟",
+          "options": [
+            "شخصًا محددًا اسمه Mann.",
+            "المرء أو الناس عمومًا.",
+            "ضمير المخاطب."
+          ],
+          "answerIndex": 1,
+          "explanation": "man فاعل عام، ولا يعني der Mann «الرجل»."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-03-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-03-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-03-P01",
+          "sourceTaskIds": [
+            "DL-A2-03-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب قائمة مشتريات لوجبة من أربعة عناصر، وحدد كمية كل عنصر. أضف سؤالًا باستخدام Wie viel أو Wie viele، ثم اقرأ القائمة بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تضم القائمة أربعة عناصر وكميات وسؤالًا مناسبًا.",
+            "meaningClarity": "يمكن فهم ما سيُشترى وكميته.",
+            "targetSkill": "يفرق بين Wie viel للاسم غير المعدود وWie viele للمعدود ويختار وحدات مناسبة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-03-P02",
+          "sourceTaskIds": [
+            "DL-A2-03-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-03-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب حوارًا قصيرًا في مطعم: اطلب طبقًا ومشروبًا بأدب، واسأل عن الفاتورة أو مكوّن، وأضف جملة عامة باستخدام man. اقرأ الحوار بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يتضمن الحوار طلبًا وسؤالًا وردًا وجملة man.",
+            "meaningClarity": "تسلسل الطلب والرد مفهوم ومهذب.",
+            "targetSkill": "يستخدم Ich hätte gern، ويصرف الفعل مع man بصيغة المفرد."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-04-office-phone-appointments",
@@ -6922,18 +7765,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-04-Q01",
+          "sourceTaskIds": [
+            "DL-A2-04-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "مفردات الهاتف",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **einen Termin verschieben**؟",
+          "options": [
+            "تأجيل الموعد أو نقله.",
+            "تأكيد موعد.",
+            "إلغاء الهاتف."
+          ],
+          "answerIndex": 0,
+          "explanation": "verschieben تعني نقل الموعد إلى وقت آخر."
+        },
+        {
+          "id": "DL-A2-04-Q02",
+          "sourceTaskIds": [
+            "DL-A2-04-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "ob / أداة سؤال",
+            "اختيار محدد"
+          ],
+          "prompt": "أي كلمة تبدأ سؤالًا غير مباشر جوابه نعم أو لا؟",
+          "options": [
+            "wann",
+            "ob",
+            "wohin"
+          ],
+          "answerIndex": 1,
+          "explanation": "نستخدم ob في الأسئلة غير المباشرة التي يكون جوابها نعم أو لا."
+        },
+        {
+          "id": "DL-A2-04-Q03",
+          "sourceTaskIds": [
+            "DL-A2-04-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "السؤال غير المباشر",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الصيغة الصحيحة: Ich möchte wissen, ___.",
+          "options": [
+            "wann endet die Besprechung",
+            "wann die Besprechung enden",
+            "wann die Besprechung endet"
+          ],
+          "answerIndex": 2,
+          "explanation": "في السؤال غير المباشر يأتي الفعل المصرف في نهاية الجملة التابعة."
+        },
+        {
+          "id": "DL-A2-04-Q04",
+          "sourceTaskIds": [
+            "DL-A2-04-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "ترتيب الفعل",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Bitte teilen Sie mir mit, ob Mittwoch um 11 Uhr möglich ___.",
+          "options": [
+            "möglich ist am",
+            "ist",
+            "ist möglich"
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد ob يأتي الفعل المصرف في نهاية الجزء التابع: möglich ist."
+        },
+        {
+          "id": "DL-A2-04-Q05",
+          "sourceTaskIds": [
+            "DL-A2-04-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "فهم البريد",
+            "اختيار محدد"
+          ],
+          "prompt": "لماذا كتبت Amal الرسالة؟",
+          "options": [
+            "لا تستطيع الحضور يوم الثلاثاء وتطلب نقل الموعد.",
+            "تريد إلغاء الوظيفة.",
+            "تريد حجز رحلة إلى Bremen."
+          ],
+          "answerIndex": 0,
+          "explanation": "توضح الرسالة أنها لا تستطيع الحضور وتطلب نقل الموعد إلى الأربعاء."
+        },
+        {
+          "id": "DL-A2-04-Q06",
+          "sourceTaskIds": [
+            "DL-A2-04-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "فهم البريد",
+            "اختيار محدد"
+          ],
+          "prompt": "إلى أي يوم تقترح Amal نقل الموعد؟",
+          "options": [
+            "إلى الاثنين.",
+            "إلى الجمعة.",
+            "إلى الأربعاء."
+          ],
+          "answerIndex": 2,
+          "explanation": "تقترح الرسالة Mittwoch."
+        },
+        {
+          "id": "DL-A2-04-Q07",
+          "sourceTaskIds": [
+            "DL-A2-04-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "عبارات الهاتف",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تعني **Einen Moment, bitte** في مكالمة؟",
+          "options": [
+            "أعد الاتصال غدًا.",
+            "لحظة من فضلك.",
+            "الموعد غير متاح."
+          ],
+          "answerIndex": 1,
+          "explanation": "هذه عبارة مهذبة لطلب الانتظار لحظة."
+        },
+        {
+          "id": "DL-A2-04-Q08",
+          "sourceTaskIds": [
+            "DL-A2-04-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "صياغة سؤال غير مباشر",
+            "اختيار محدد"
+          ],
+          "prompt": "أي سؤال ترتيبه صحيح؟",
+          "options": [
+            "Können Sie mir sagen, ob das Büro offen ist?",
+            "Können Sie mir sagen, ob ist das Büro offen?",
+            "Können Sie sagen mir, ob das Büro ist offen?"
+          ],
+          "answerIndex": 0,
+          "explanation": "بعد ob يأتي الفعل ist في نهاية الجملة التابعة."
+        },
+        {
+          "id": "DL-A2-04-Q09",
+          "sourceTaskIds": [
+            "DL-A2-04-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "بدء مكالمة مهنية",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تقدم المتحدثة على الهاتف؟",
+          "options": [
+            "Ich bin ein Termin.",
+            "Der Termin telefoniert.",
+            "Hier spricht Amal Ben Ali."
+          ],
+          "answerIndex": 2,
+          "explanation": "Hier spricht … صيغة مناسبة للتعريف بالنفس عبر الهاتف."
+        },
+        {
+          "id": "DL-A2-04-Q10",
+          "sourceTaskIds": [
+            "DL-A2-04-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "skillTags": [
+            "طلب معاودة الاتصال",
+            "اختيار محدد"
+          ],
+          "prompt": "كيف تطلب بأدب أن يعاود شخص الاتصال بك؟",
+          "options": [
+            "Rufen Sie ich zurück?",
+            "Können Sie mich zurückrufen?",
+            "Sie zurückrufen mich?"
+          ],
+          "answerIndex": 1,
+          "explanation": "Können Sie mich zurückrufen? سؤال مهذب وترتيبه صحيح."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-04-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-04-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-04-P01",
+          "sourceTaskIds": [
+            "DL-A2-04-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب حوارًا هاتفيًا من أربع جمل على الأقل لحجز موعد: عرّف بنفسك، اطلب الموعد، واستخدم سؤالًا غير مباشر بـob أو wann. اقرأ الحوار بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "يتضمن الحوار تعريفًا وطلب موعد وسؤالًا غير مباشر وردًا.",
+            "meaningClarity": "يستطيع القارئ فهم المطلوب والموعد المقترح.",
+            "targetSkill": "يضع الفعل في نهاية السؤال غير المباشر ويستخدم عبارة هاتفية مهذبة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-04-P02",
+          "sourceTaskIds": [
+            "DL-A2-04-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-04-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب رسالة قصيرة تنقل فيها موعدًا إلى يوم آخر؛ اذكر سببًا بسيطًا واقترح وقتًا جديدًا واسأل بـob أو wann. اقرأ الرسالة بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تذكر الرسالة الموعد الحالي والبديل والطلب.",
+            "meaningClarity": "تتضح الأيام والأوقات المطلوبة دون التباس.",
+            "targetSkill": "يكتب السؤال غير المباشر مع الفاصلة والفعل في النهاية."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-05-training-routine-wenn",
@@ -7019,18 +8143,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-05-Q01",
+          "sourceTaskIds": [
+            "DL-A2-05-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "مفردات التدريب",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **die Berufsschule**؟",
+          "options": [
+            "مدرسة مهنية.",
+            "محطة قطار.",
+            "قائمة الطعام."
+          ],
+          "answerIndex": 0,
+          "explanation": "Berufsschule هي المدرسة التي يتلقى فيها المتدرب دروسًا مهنية."
+        },
+        {
+          "id": "DL-A2-05-Q02",
+          "sourceTaskIds": [
+            "DL-A2-05-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "wenn",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الجملة الصحيحة:",
+          "options": [
+            "Wenn ich bin müde, mache ich eine Pause.",
+            "Wenn ich müde bin, mache ich eine Pause.",
+            "Wenn ich müde bin, ich mache eine Pause."
+          ],
+          "answerIndex": 1,
+          "explanation": "الفعل في جملة wenn التابعة في النهاية، وبعد الفاصلة يأتي فعل الجملة الرئيسية مباشرة."
+        },
+        {
+          "id": "DL-A2-05-Q03",
+          "sourceTaskIds": [
+            "DL-A2-05-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "الفعل في نهاية wenn",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Wenn der Unterricht um drei Uhr ___, fährt sie nach Hause.",
+          "options": [
+            "fährt",
+            "Unterricht",
+            "endet"
+          ],
+          "answerIndex": 2,
+          "explanation": "الفعل المصرف endet يأتي في نهاية جملة wenn."
+        },
+        {
+          "id": "DL-A2-05-Q04",
+          "sourceTaskIds": [
+            "DL-A2-05-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "ترتيب الجمل",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة صحيحة؟",
+          "options": [
+            "Wenn ich Zeit habe, ich lerne eine Stunde.",
+            "Wenn ich Zeit habe, lerne ich eine Stunde.",
+            "Wenn ich habe Zeit, lerne ich eine Stunde."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد جملة wenn تأتي الجملة الرئيسية مع الفعل أولًا: lerne ich."
+        },
+        {
+          "id": "DL-A2-05-Q05",
+          "sourceTaskIds": [
+            "DL-A2-05-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما التدريب المهني الذي يقوم به Rami؟",
+          "options": [
+            "فنّي كهرباء وإلكترونيات.",
+            "طاهٍ.",
+            "موظف في فندق."
+          ],
+          "answerIndex": 0,
+          "explanation": "يذكر النص eine Ausbildung zum Elektroniker."
+        },
+        {
+          "id": "DL-A2-05-Q06",
+          "sourceTaskIds": [
+            "DL-A2-05-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "كم يومًا يعمل Rami في المؤسسة أسبوعيًا؟",
+          "options": [
+            "يومًا واحدًا.",
+            "خمسة أيام.",
+            "ثلاثة أيام."
+          ],
+          "answerIndex": 2,
+          "explanation": "يعمل في المؤسسة ثلاثة أيام في الأسبوع."
+        },
+        {
+          "id": "DL-A2-05-Q07",
+          "sourceTaskIds": [
+            "DL-A2-05-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين يفضّل Rami الدراسة؟",
+          "options": [
+            "في المطعم.",
+            "في المكتبة.",
+            "في محطة القطار."
+          ],
+          "answerIndex": 1,
+          "explanation": "النص يقول إنه يدرس غالبًا في المكتبة."
+        },
+        {
+          "id": "DL-A2-05-Q08",
+          "sourceTaskIds": [
+            "DL-A2-05-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "ترتيب الفعل",
+            "اختيار محدد"
+          ],
+          "prompt": "في الجملة **Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen**، ما الفعل في نهاية جملة wenn؟",
+          "options": [
+            "habe",
+            "Energie",
+            "wiederhole"
+          ],
+          "answerIndex": 0,
+          "explanation": "الفعل المصرف في الجملة التابعة هو habe ويأتي في نهايتها."
+        },
+        {
+          "id": "DL-A2-05-Q09",
+          "sourceTaskIds": [
+            "DL-A2-05-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "معنى wenn",
+            "اختيار محدد"
+          ],
+          "prompt": "في سياق الروتين، قد تعني **wenn**:",
+          "options": [
+            "لأن دائمًا.",
+            "قبل أن.",
+            "إذا أو عندما/كلما بحسب السياق."
+          ],
+          "answerIndex": 2,
+          "explanation": "تستخدم wenn للشرط أو لحدث يتكرر بحسب السياق."
+        },
+        {
+          "id": "DL-A2-05-Q10",
+          "sourceTaskIds": [
+            "DL-A2-05-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "skillTags": [
+            "الجدول الأسبوعي",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الترتيب الصحيح:",
+          "options": [
+            "Wenn der Unterricht endet, Rami fährt nach Hause.",
+            "Wenn der Unterricht endet, fährt Rami nach Hause.",
+            "Wenn endet der Unterricht, Rami nach Hause fährt."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد جملة wenn يأتي الفعل في الجملة الرئيسية مباشرة بعد الفاصلة."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-05-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-05-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-05-P01",
+          "sourceTaskIds": [
+            "DL-A2-05-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب أربع جمل عن جدول دراسة أو تدريب متخيّل، مستخدمًا wenn مرتين على الأقل. اقرأ النص بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "يذكر النص أنشطة ووقتًا أو شرطًا، ويتضمن جملتي wenn.",
+            "meaningClarity": "يتضح متى تحدث الأنشطة وما النتيجة.",
+            "targetSkill": "يضع الفعل في نهاية جملة wenn، ويكتب فاصلة ثم يبدأ الجملة الرئيسية بالفعل."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-05-P02",
+          "sourceTaskIds": [
+            "DL-A2-05-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-05-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "صف يومًا دراسيًا أو مهنيًا في ثلاث أو أربع جمل: اذكر مكان التدريب، ومتى تراجع ملاحظاتك، وماذا تفعل إذا توفر لديك وقت. اقرأ الإجابة بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تتضمن الإجابة مكانًا وروتينًا وشرطًا واحدًا على الأقل.",
+            "meaningClarity": "ترتيب الأنشطة واضح ويمكن تتبعه.",
+            "targetSkill": "يستخدم wenn استخدامًا مناسبًا مع ترتيب الفعل في الجمل التابعة والرئيسية."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-06-family-happiness-gifts",
@@ -7128,18 +8533,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-06-Q01",
+          "sourceTaskIds": [
+            "DL-A2-06-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "مفردات الأسرة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **die Verwandten**؟",
+          "options": [
+            "الأقارب.",
+            "الجيران.",
+            "الزملاء."
+          ],
+          "answerIndex": 0,
+          "explanation": "Verwandte تعني الأقارب."
+        },
+        {
+          "id": "DL-A2-06-Q02",
+          "sourceTaskIds": [
+            "DL-A2-06-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "جملة dass",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الجملة الصحيحة:",
+          "options": [
+            "Ich hoffe, dass alle Gäste haben Zeit.",
+            "Ich hoffe, dass alle Gäste Zeit haben.",
+            "Ich hoffe dass, alle Gäste Zeit haben."
+          ],
+          "answerIndex": 1,
+          "explanation": "نضع فاصلة قبل dass ويأتي الفعل في نهاية الجملة التابعة."
+        },
+        {
+          "id": "DL-A2-06-Q03",
+          "sourceTaskIds": [
+            "DL-A2-06-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "ترتيب الفعل",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Ich freue mich, dass meine Schwester heute ___.",
+          "options": [
+            "heute kommt sie",
+            "kommen",
+            "kommt"
+          ],
+          "answerIndex": 2,
+          "explanation": "مع الفاعل المفرد تأتي kommt في نهاية جملة dass."
+        },
+        {
+          "id": "DL-A2-06-Q04",
+          "sourceTaskIds": [
+            "DL-A2-06-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "الفاصلة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة كتبت بفاصلة صحيحة؟",
+          "options": [
+            "Wir glauben dass der Abend, schön wird.",
+            "Wir glauben, dass der Abend schön wird.",
+            "Wir glauben dass, der Abend schön wird."
+          ],
+          "answerIndex": 1,
+          "explanation": "توضع الفاصلة قبل جملة dass."
+        },
+        {
+          "id": "DL-A2-06-Q05",
+          "sourceTaskIds": [
+            "DL-A2-06-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين تعيش Lina؟",
+          "options": [
+            "في Nabeul.",
+            "في Wien.",
+            "في Linden."
+          ],
+          "answerIndex": 0,
+          "explanation": "ينص النص على Lina lebt … in Nabeul."
+        },
+        {
+          "id": "DL-A2-06-Q06",
+          "sourceTaskIds": [
+            "DL-A2-06-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "من سيزور Lina يوم الأحد؟",
+          "options": [
+            "زملاؤها في العمل.",
+            "جيرانها فقط.",
+            "عمتها وابنا/ابنتا عمها."
+          ],
+          "answerIndex": 2,
+          "explanation": "سيأتي die Tante und zwei Cousins."
+        },
+        {
+          "id": "DL-A2-06-Q07",
+          "sourceTaskIds": [
+            "DL-A2-06-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا يريد الوالدان أن يشاهدا معًا؟",
+          "options": [
+            "فيلمًا عن السفر.",
+            "صورة عائلية قديمة.",
+            "برنامجًا رياضيًا."
+          ],
+          "answerIndex": 1,
+          "explanation": "يريد الوالدان مشاهدة ein altes Familienfoto."
+        },
+        {
+          "id": "DL-A2-06-Q08",
+          "sourceTaskIds": [
+            "DL-A2-06-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "فهم جملة dass",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Mein Bruder sagt, dass er einen Kuchen mitbringt**، ماذا سيحضر الأخ؟",
+          "options": [
+            "كعكة.",
+            "صورة.",
+            "هدية أخرى."
+          ],
+          "answerIndex": 0,
+          "explanation": "الجملة تقول إنه سيحضر einen Kuchen."
+        },
+        {
+          "id": "DL-A2-06-Q09",
+          "sourceTaskIds": [
+            "DL-A2-06-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "sich freuen auf",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تتحدث عن حدث قادم؟",
+          "options": [
+            "Ich freue mich, dass du da bist.",
+            "Ich bin die Feier.",
+            "Ich freue mich auf die Feier."
+          ],
+          "answerIndex": 2,
+          "explanation": "sich freuen auf تستخدم للتطلع إلى حدث قادم."
+        },
+        {
+          "id": "DL-A2-06-Q10",
+          "sourceTaskIds": [
+            "DL-A2-06-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "skillTags": [
+            "جملة dass",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل بصورة صحيحة: Meine Eltern sagen, dass sie das Foto ___.",
+          "options": [
+            "möchten anschauen sie",
+            "anschauen möchten",
+            "sie möchten anschauen"
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد dass يبقى الفعل المصرف في النهاية؛ هنا möchten في آخر الجملة."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-06-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-06-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-06-P01",
+          "sourceTaskIds": [
+            "DL-A2-06-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب أربع جمل عن مناسبة عائلية متخيّلة؛ عبّر عن خبرين أو أمنيتين باستخدام dass، ثم اقرأها بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تذكر الاستجابة المناسبة وأفراد الأسرة أو الضيوف وتضم جملتي dass.",
+            "meaningClarity": "يمكن فهم المناسبة والمشاعر أو الآمال المرتبطة بها.",
+            "targetSkill": "يضع الفعل المصرف في نهاية جملة dass ويضع الفاصلة قبلها."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-06-P02",
+          "sourceTaskIds": [
+            "DL-A2-06-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-06-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب رسالة قصيرة لقريب تدعوه إلى احتفال: اذكر المناسبة، وعبّر عن شعورك، وأضف جملة تبدأ بـIch hoffe, dass أو Ich freue mich, dass. اقرأ الرسالة بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تتضمن الرسالة دعوة ومعلومة وجملة dass واحدة على الأقل.",
+            "meaningClarity": "توضح الرسالة من المدعو وماذا سيحدث.",
+            "targetSkill": "يفرق بين dass لجملة تابعة وauf عند التطلع إلى حدث قادم."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-07-language-learning-travel-purpose",
@@ -7255,18 +8941,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-07-Q01",
+          "sourceTaskIds": [
+            "DL-A2-07-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "مفردات السفر",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر المطابقة الصحيحة بين الفعل والغاية كما في التمرين.",
+          "options": [
+            "ein Wörterbuch benutzen — um neue Wörter zu verstehen",
+            "eine Sprachschule besuchen — um im Ausland zu reisen",
+            "den Reisepass mitnehmen — um Unterricht zu haben"
+          ],
+          "answerIndex": 0,
+          "explanation": "استخدام القاموس يساعد على فهم كلمات جديدة؛ وهذا هو الربط الصحيح بين الفعل والغاية."
+        },
+        {
+          "id": "DL-A2-07-Q02",
+          "sourceTaskIds": [
+            "DL-A2-07-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "um … zu",
+            "اختيار محدد"
+          ],
+          "prompt": "متى نستخدم **um … zu** وفق الدرس؟",
+          "options": [
+            "عندما يتغير الفاعل دائمًا.",
+            "عندما يكون فاعل الجزأين هو نفسه لذكر الهدف.",
+            "للسؤال عن الماضي."
+          ],
+          "answerIndex": 1,
+          "explanation": "يُستخدم التركيب للغرض عندما يكون الفاعل نفسه."
+        },
+        {
+          "id": "DL-A2-07-Q03",
+          "sourceTaskIds": [
+            "DL-A2-07-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "تركيب الغاية",
+            "اختيار محدد"
+          ],
+          "prompt": "أي تركيب صحيح لمعنى «لكي أتعلم كلمات جديدة»؟",
+          "options": [
+            "um zu neue Wörter lernen",
+            "um neue Wörter lernen zu",
+            "um neue Wörter zu lernen"
+          ],
+          "answerIndex": 2,
+          "explanation": "يأتي zu مع المصدر قرب نهاية تركيب الغاية."
+        },
+        {
+          "id": "DL-A2-07-Q04",
+          "sourceTaskIds": [
+            "DL-A2-07-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "الفعل المنفصل",
+            "اختيار محدد"
+          ],
+          "prompt": "ما صيغة **nachschlagen** مع zu؟",
+          "options": [
+            "zu nachschlagen",
+            "nachzuschlagen",
+            "nachschlagen zu"
+          ],
+          "answerIndex": 1,
+          "explanation": "مع الفعل المنفصل تدخل zu بين البادئة والفعل: nachzuschlagen."
+        },
+        {
+          "id": "DL-A2-07-Q05",
+          "sourceTaskIds": [
+            "DL-A2-07-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "إلى أين تريد Maha السفر؟",
+          "options": [
+            "إلى Wien.",
+            "إلى München.",
+            "إلى Bremen."
+          ],
+          "answerIndex": 0,
+          "explanation": "النص يذكر أنها تريد السفر إلى Wien."
+        },
+        {
+          "id": "DL-A2-07-Q06",
+          "sourceTaskIds": [
+            "DL-A2-07-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "لماذا تستخدم Maha القاموس؟",
+          "options": [
+            "لكي تحجز فندقًا.",
+            "لكي تشتري تذكرة.",
+            "لكي تتعلم كلمات جديدة."
+          ],
+          "answerIndex": 2,
+          "explanation": "تستخدم القاموس um neue Wörter zu lernen."
+        },
+        {
+          "id": "DL-A2-07-Q07",
+          "sourceTaskIds": [
+            "DL-A2-07-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين تدرس Maha الألمانية يوميًا في Wien؟",
+          "options": [
+            "في محطة القطار.",
+            "في مدرسة لغات.",
+            "في الفندق."
+          ],
+          "answerIndex": 1,
+          "explanation": "تدرس في einer Sprachschule."
+        },
+        {
+          "id": "DL-A2-07-Q08",
+          "sourceTaskIds": [
+            "DL-A2-07-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "تحديد الغاية",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Maha fährt nach Wien, um einen Sprachkurs zu besuchen**، من سيحضر الدورة؟",
+          "options": [
+            "Maha نفسها.",
+            "صديقتها فقط.",
+            "الأسرة المضيفة."
+          ],
+          "answerIndex": 0,
+          "explanation": "الفاعل واحد في الفعلين: Maha تسافر وهي تحضر الدورة."
+        },
+        {
+          "id": "DL-A2-07-Q09",
+          "sourceTaskIds": [
+            "DL-A2-07-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "علامة الترقيم",
+            "اختيار محدد"
+          ],
+          "prompt": "أين توضع الفاصلة عادةً مع um … zu؟",
+          "options": [
+            "بعد zu مباشرةً.",
+            "لا تستخدم فاصلة.",
+            "قبل تركيب um … zu."
+          ],
+          "answerIndex": 2,
+          "explanation": "يوضع فاصل قبل تركيب الغاية."
+        },
+        {
+          "id": "DL-A2-07-Q10",
+          "sourceTaskIds": [
+            "DL-A2-07-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "skillTags": [
+            "تركيب الغاية",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر جملة صحيحة:",
+          "options": [
+            "Wir benutzen ein Wörterbuch, um zu neue Wörter verstehen.",
+            "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+            "Wir benutzen ein Wörterbuch um neue Wörter verstehen zu."
+          ],
+          "answerIndex": 1,
+          "explanation": "التركيب الصحيح: um + مفعول + zu + مصدر، مع فاصلة قبله."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-07-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-07-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-07-P01",
+          "sourceTaskIds": [
+            "DL-A2-07-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب أربع جمل عن رحلة لغوية متخيّلة، واستخدم تركيبين على الأقل بـum … zu لشرح أهدافك. اقرأها بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تذكر الاستجابة رحلة وهدفين واضحين على الأقل.",
+            "meaningClarity": "تتصل كل غاية بالفعل السابق لها منطقيًا.",
+            "targetSkill": "يستخدم um … zu عندما يكون الفاعل واحدًا، ويضع zu قبل المصدر الصحيح."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-07-P02",
+          "sourceTaskIds": [
+            "DL-A2-07-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-07-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "صف كيف تستعد لرحلة لتعلم لغة: اذكر القاموس ومدرسة اللغة أو الأسرة المضيفة، واستخدم فعلًا منفصلًا مع zu مثل vorzubereiten أو nachzuschlagen. اقرأ النص بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تذكر الاستجابة خطوتين للاستعداد وغاية لغوية واحدة على الأقل.",
+            "meaningClarity": "تتضح علاقة الخطوات بهدف الرحلة.",
+            "targetSkill": "يضع الفاصلة ويكوّن zu مع الفعل المنفصل في موضعه."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-08-media-news-passive",
@@ -7418,18 +9385,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-08-Q01",
+          "sourceTaskIds": [
+            "DL-A2-08-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "مفردات الإعلام",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Die Nachrichten ___ um acht Uhr gesendet.",
+          "options": [
+            "werden",
+            "wird",
+            "werdet"
+          ],
+          "answerIndex": 0,
+          "explanation": "الأخبار جمع، لذلك نستخدم werden؛ ويأتي Partizip II gesendet في نهاية الجملة."
+        },
+        {
+          "id": "DL-A2-08-Q02",
+          "sourceTaskIds": [
+            "DL-A2-08-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "werden",
+            "اختيار محدد"
+          ],
+          "prompt": "ما صيغة Partizip II للفعل **veröffentlichen**؟",
+          "options": [
+            "veröffentlichte",
+            "veröffentlicht",
+            "veröffentlichen"
+          ],
+          "answerIndex": 1,
+          "explanation": "صيغة Partizip II هي veröffentlicht، وتأتي في نهاية جملة المبني للمجهول."
+        },
+        {
+          "id": "DL-A2-08-Q03",
+          "sourceTaskIds": [
+            "DL-A2-08-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "المبني للمجهول",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة في المبني للمجهول صحيحة؟",
+          "options": [
+            "Der Bericht wird veröffentlichen.",
+            "Der Bericht veröffentlicht werden.",
+            "Der Bericht wird veröffentlicht."
+          ],
+          "answerIndex": 2,
+          "explanation": "المبني للمجهول في المضارع: werden مصرّفًا + Partizip II."
+        },
+        {
+          "id": "DL-A2-08-Q04",
+          "sourceTaskIds": [
+            "DL-A2-08-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "وظيفة المبني للمجهول",
+            "اختيار محدد"
+          ],
+          "prompt": "لماذا يستخدم الخبر المبني للمجهول أحيانًا؟",
+          "options": [
+            "لأن الجملة تتحدث عن المستقبل فقط.",
+            "لأن المهم هو الحدث أو متلقي الفعل، لا الفاعل.",
+            "لأن الفاعل يجب أن يكون ich."
+          ],
+          "answerIndex": 1,
+          "explanation": "يبرز المبني للمجهول الحدث عندما يكون الفاعل غير معروف أو غير مهم."
+        },
+        {
+          "id": "DL-A2-08-Q05",
+          "sourceTaskIds": [
+            "DL-A2-08-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "متى تُنظّم جلسة مجلس المدينة؟",
+          "options": [
+            "يوم الأربعاء.",
+            "يوم السبت.",
+            "في الخريف."
+          ],
+          "answerIndex": 0,
+          "explanation": "النص يقول am Mittwoch."
+        },
+        {
+          "id": "DL-A2-08-Q06",
+          "sourceTaskIds": [
+            "DL-A2-08-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا يُخطط له في وسط المدينة؟",
+          "options": [
+            "محطة قطار.",
+            "مهرجان رياضي.",
+            "ساحة جديدة."
+          ],
+          "answerIndex": 2,
+          "explanation": "يذكر الخبر أن einen neuen Platz im Zentrum wird geplant."
+        },
+        {
+          "id": "DL-A2-08-Q07",
+          "sourceTaskIds": [
+            "DL-A2-08-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين تُنقل جلسة المجلس؟",
+          "options": [
+            "في الإذاعة فقط.",
+            "في الإنترنت.",
+            "في المسرح."
+          ],
+          "answerIndex": 1,
+          "explanation": "Die Sitzung wird im Internet übertragen."
+        },
+        {
+          "id": "DL-A2-08-Q08",
+          "sourceTaskIds": [
+            "DL-A2-08-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "فهم خبر قصير",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Zwei Haltestellen werden gebaut**، كم محطة ستُبنى؟",
+          "options": [
+            "محطتان.",
+            "محطة واحدة.",
+            "أربع محطات."
+          ],
+          "answerIndex": 0,
+          "explanation": "الجملة تذكر zwei Haltestellen."
+        },
+        {
+          "id": "DL-A2-08-Q09",
+          "sourceTaskIds": [
+            "DL-A2-08-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "Partizip II",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Die Informationen werden morgen veröffentlicht**، ما الفعل الذي جاء في نهاية الجملة؟",
+          "options": [
+            "werden",
+            "morgen",
+            "veröffentlicht"
+          ],
+          "answerIndex": 2,
+          "explanation": "Partizip II veröffentlicht يأتي في النهاية."
+        },
+        {
+          "id": "DL-A2-08-Q10",
+          "sourceTaskIds": [
+            "DL-A2-08-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "skillTags": [
+            "تصريف المبني للمجهول",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Am Freitag ___ eine Veranstaltung ___. (organisieren)",
+          "options": [
+            "werden … organisieren",
+            "wird … organisiert",
+            "ist … organisiert"
+          ],
+          "answerIndex": 1,
+          "explanation": "الفاعل المفرد eine Veranstaltung يأخذ wird، وPartizip II هو organisiert."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-08-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-08-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-08-P01",
+          "sourceTaskIds": [
+            "DL-A2-08-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب ثلاثة أخبار قصيرة ومحايدة عن حدث محلي، مثل جلسة أو افتتاح أو إعلان. استخدم المبني للمجهول في المضارع في كل جملة، ثم اقرأ الأخبار بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تتضمن الاستجابة ثلاثة أخبار مفهومة عن أحداث.",
+            "meaningClarity": "يمكن فهم ما وقع أو سيقع دون حاجة لمعرفة الفاعل.",
+            "targetSkill": "يستخدم werden بحسب الفاعل ويضع Partizip II في نهاية الجملة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-08-P02",
+          "sourceTaskIds": [
+            "DL-A2-08-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-08-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "حوّل ثلاث معلومات معلومة الفاعل إلى أخبار تركز على الحدث، مثل: Die Stadt organisiert eine Sitzung. اكتب الصيغ بالمبني للمجهول واقرأها بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يقدم المتعلم ثلاث جمل محوّلة.",
+            "meaningClarity": "يبقى الحدث والمفعول به واضحين بعد التحويل.",
+            "targetSkill": "يختار wird أو werden وفق الاسم ويضع Partizip II في آخر الجملة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-09-products-technology-complaints",
@@ -7533,18 +9781,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-09-Q01",
+          "sourceTaskIds": [
+            "DL-A2-09-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "مفردات المنتجات",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **der Kassenbon**؟",
+          "options": [
+            "إيصال الشراء.",
+            "الشاحن.",
+            "دليل الاستخدام."
+          ],
+          "answerIndex": 0,
+          "explanation": "Kassenbon هو إيصال الشراء."
+        },
+        {
+          "id": "DL-A2-09-Q02",
+          "sourceTaskIds": [
+            "DL-A2-09-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "könnte / könnten",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل الطلب بأدب: ___ Sie das Gerät bitte prüfen?",
+          "options": [
+            "Könntest",
+            "Könnten",
+            "Könnte"
+          ],
+          "answerIndex": 1,
+          "explanation": "مع Sie نستخدم صيغة الطلب المهذب Könnten."
+        },
+        {
+          "id": "DL-A2-09-Q03",
+          "sourceTaskIds": [
+            "DL-A2-09-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "ترتيب المصدر",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Könnten Sie das Gerät bitte prüfen?**، أين يأتي المصدر prüfen؟",
+          "options": [
+            "بعد Könnten مباشرةً.",
+            "في بداية السؤال.",
+            "في نهاية السؤال."
+          ],
+          "answerIndex": 2,
+          "explanation": "بعد الفعل المساعد يأتي المصدر في نهاية الجملة."
+        },
+        {
+          "id": "DL-A2-09-Q04",
+          "sourceTaskIds": [
+            "DL-A2-09-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "خدمة العملاء",
+            "اختيار محدد"
+          ],
+          "prompt": "أي رد مناسب من خدمة العملاء؟",
+          "options": [
+            "Ich bin der Kassenbon.",
+            "Wir können es reparieren oder umtauschen.",
+            "Das Gerät fährt morgen."
+          ],
+          "answerIndex": 1,
+          "explanation": "الرد يعرض فحص الجهاز أو إصلاحه أو استبداله."
+        },
+        {
+          "id": "DL-A2-09-Q05",
+          "sourceTaskIds": [
+            "DL-A2-09-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "فهم الرسالة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا اشترت Salma؟",
+          "options": [
+            "سماعة رأس.",
+            "حاسوبًا.",
+            "هاتفًا جديدًا."
+          ],
+          "answerIndex": 0,
+          "explanation": "الرسالة تقول einen Kopfhörer."
+        },
+        {
+          "id": "DL-A2-09-Q06",
+          "sourceTaskIds": [
+            "DL-A2-09-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "فهم الرسالة",
+            "اختيار محدد"
+          ],
+          "prompt": "منذ متى لا يعمل مكبر السماعة الأيمن؟",
+          "options": [
+            "منذ عشرة أيام.",
+            "منذ شهر.",
+            "منذ أمس."
+          ],
+          "answerIndex": 2,
+          "explanation": "يقول النص Seit gestern."
+        },
+        {
+          "id": "DL-A2-09-Q07",
+          "sourceTaskIds": [
+            "DL-A2-09-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "فهم الرسالة",
+            "اختيار محدد"
+          ],
+          "prompt": "هل تضررت السماعة؟",
+          "options": [
+            "نعم، الشاشة مكسورة.",
+            "لا، ليست متضررة.",
+            "لا يذكر النص ذلك."
+          ],
+          "answerIndex": 1,
+          "explanation": "الرسالة تقول Der Kopfhörer ist nicht beschädigt."
+        },
+        {
+          "id": "DL-A2-09-Q08",
+          "sourceTaskIds": [
+            "DL-A2-09-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "فهم شكوى قصيرة",
+            "اختيار محدد"
+          ],
+          "prompt": "في المثال **Ich habe den Kassenbon und komme morgen**، ماذا يملك Karim؟",
+          "options": [
+            "إيصال الشراء.",
+            "بطاقة صعود الطائرة.",
+            "قائمة الطعام."
+          ],
+          "answerIndex": 0,
+          "explanation": "Kassenbon تعني إيصال الشراء."
+        },
+        {
+          "id": "DL-A2-09-Q09",
+          "sourceTaskIds": [
+            "DL-A2-09-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "طلب مهذب",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر العبارة الصحيحة لطلب المساعدة:",
+          "options": [
+            "Könnten Sie helfen mir bitte?",
+            "Sie könnten bitte mir helfen?",
+            "Könnten Sie mir bitte helfen?"
+          ],
+          "answerIndex": 2,
+          "explanation": "الترتيب المهذب الصحيح هو Könnten Sie mir bitte helfen?"
+        },
+        {
+          "id": "DL-A2-09-Q10",
+          "sourceTaskIds": [
+            "DL-A2-09-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "skillTags": [
+            "السؤال غير المباشر",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة صحيحة للسؤال إن كان الاستبدال ممكنًا؟",
+          "options": [
+            "Ich möchte wissen, ob ist ein Umtausch möglich.",
+            "Ich möchte wissen, ob ein Umtausch möglich ist.",
+            "Ich möchte ob wissen, ein Umtausch ist möglich."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد ob يأتي الفعل المصرف في نهاية الجملة التابعة."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-09-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-09-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-09-P01",
+          "sourceTaskIds": [
+            "DL-A2-09-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب رسالة شكوى قصيرة عن منتج لا يعمل: اذكر نوعه، ومتى اشتريته، وما المشكلة، واطلب فحصه أو استبداله بأدب. اقرأ الرسالة بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تتضمن الرسالة المنتج والوقت والمشكلة وطلبًا واضحًا.",
+            "meaningClarity": "يمكن فهم العطل والحل المطلوب.",
+            "targetSkill": "يستخدم صيغة könnte/könnten أو طلبًا مهذبًا، ويضع المصدر في نهاية السؤال."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-09-P02",
+          "sourceTaskIds": [
+            "DL-A2-09-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-09-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب حوارًا قصيرًا بين زبون وموظف خدمة: اذكر الإيصال والضمان، ثم اقترح إصلاحًا أو استبدالًا. اقرأ الدورين بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يتضمن الحوار شكوى وردًا واقتراح حل مناسب.",
+            "meaningClarity": "تتضح المشكلة وما ستفعله خدمة العملاء.",
+            "targetSkill": "يستخدم طلبًا مهذبًا بـkönnten، وترتيب السؤال والمصدر صحيح."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-10-sports-health-feelings-weil",
@@ -7642,18 +10171,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-10-Q01",
+          "sourceTaskIds": [
+            "DL-A2-10-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "مفردات الصحة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **erschöpft**؟",
+          "options": [
+            "مرهق.",
+            "هادئ.",
+            "فخور."
+          ],
+          "answerIndex": 0,
+          "explanation": "erschöpft تعني مرهقًا أو منهكًا."
+        },
+        {
+          "id": "DL-A2-10-Q02",
+          "sourceTaskIds": [
+            "DL-A2-10-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "weil",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الترتيب الصحيح:",
+          "options": [
+            "Mina ist erschöpft, weil sie hat trainiert.",
+            "Mina ist erschöpft, weil sie trainiert hat.",
+            "Mina ist erschöpft, weil trainiert sie hat."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد weil يأتي الفعل في نهاية الجملة التابعة."
+        },
+        {
+          "id": "DL-A2-10-Q03",
+          "sourceTaskIds": [
+            "DL-A2-10-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "weil أو denn",
+            "اختيار محدد"
+          ],
+          "prompt": "أي أداة تبدأ جملة تابعة تجعل الفعل في النهاية؟",
+          "options": [
+            "denn",
+            "aber",
+            "weil"
+          ],
+          "answerIndex": 2,
+          "explanation": "weil تدخل جملة تابعة، فيأتي الفعل المصرف في النهاية."
+        },
+        {
+          "id": "DL-A2-10-Q04",
+          "sourceTaskIds": [
+            "DL-A2-10-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "ترتيب الجملة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة صحيحة؟",
+          "options": [
+            "Weil es regnet, wir bleiben in der Halle.",
+            "Weil es regnet, bleiben wir in der Halle.",
+            "Weil regnet es, bleiben wir in der Halle."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد الجملة التابعة يأتي فعل الجملة الرئيسية مباشرة: bleiben wir."
+        },
+        {
+          "id": "DL-A2-10-Q05",
+          "sourceTaskIds": [
+            "DL-A2-10-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما النشاط الذي تمارسه Rania كثيرًا بعد العمل؟",
+          "options": [
+            "السباحة.",
+            "كرة القدم.",
+            "التنس."
+          ],
+          "answerIndex": 0,
+          "explanation": "يذكر النص أنها تذهب كثيرًا للسباحة."
+        },
+        {
+          "id": "DL-A2-10-Q06",
+          "sourceTaskIds": [
+            "DL-A2-10-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "لماذا تذهب Rania للسباحة؟",
+          "options": [
+            "لأن فريقها يلعب في الصباح.",
+            "لأنها تسافر إلى Wien.",
+            "لأنها تريد الحركة بعد العمل."
+          ],
+          "answerIndex": 2,
+          "explanation": "تريد أن تتحرك بعد العمل: weil sie sich … bewegen möchte."
+        },
+        {
+          "id": "DL-A2-10-Q07",
+          "sourceTaskIds": [
+            "DL-A2-10-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تفعل Rania عندما تكون متعبة؟",
+          "options": [
+            "تذهب إلى مباراة.",
+            "تأخذ استراحة وتشرب الماء.",
+            "تتدرب لساعات."
+          ],
+          "answerIndex": 1,
+          "explanation": "النص يقول إنها تأخذ استراحة أولًا وتشرب الماء."
+        },
+        {
+          "id": "DL-A2-10-Q08",
+          "sourceTaskIds": [
+            "DL-A2-10-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "فهم جملة قصيرة",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Ich spiele zweimal pro Woche Basketball**، كم مرة تلعب المتحدثة؟",
+          "options": [
+            "مرتين في الأسبوع.",
+            "مرة في الشهر.",
+            "كل يوم."
+          ],
+          "answerIndex": 0,
+          "explanation": "zweimal pro Woche تعني مرتين في الأسبوع."
+        },
+        {
+          "id": "DL-A2-10-Q09",
+          "sourceTaskIds": [
+            "DL-A2-10-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "weil وdenn",
+            "اختيار محدد"
+          ],
+          "prompt": "ما الفرق الصحيح؟",
+          "options": [
+            "بعد denn يأتي الفعل دائمًا في النهاية.",
+            "لا يختلف ترتيب الجملة بعدهما.",
+            "بعد weil يأتي الفعل في النهاية؛ وبعد denn يبقى ترتيب الجملة الرئيسية."
+          ],
+          "answerIndex": 2,
+          "explanation": "weil جملة تابعة، أما denn فيربط جملتين رئيسيتين."
+        },
+        {
+          "id": "DL-A2-10-Q10",
+          "sourceTaskIds": [
+            "DL-A2-10-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "skillTags": [
+            "المشاعر",
+            "اختيار محدد"
+          ],
+          "prompt": "متى تكون Rania أحيانًا **nervös** بحسب النص؟",
+          "options": [
+            "بعد تناول العشاء.",
+            "قبل المنافسة.",
+            "في المكتبة."
+          ],
+          "answerIndex": 1,
+          "explanation": "النص يقول Vor einem Wettbewerb ist sie manchmal nervös."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-10-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-10-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-10-P01",
+          "sourceTaskIds": [
+            "DL-A2-10-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب أربع جمل عن رياضة أو نشاط تحبه: صف شعورك واذكر سببًا باستخدام weil، وسببًا آخر باستخدام denn. اقرأها بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تتضمن الاستجابة نشاطًا وشعورًا وسببين.",
+            "meaningClarity": "يمكن فهم ما تفعله وكيف تشعر ولماذا.",
+            "targetSkill": "يضع الفعل في نهاية جملة weil ويحافظ على ترتيب الجملة بعد denn."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-10-P02",
+          "sourceTaskIds": [
+            "DL-A2-10-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-10-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب وصفًا ليوم تدريب: اذكر مدة النشاط، وشعورك بعده، ومتى تأخذ استراحة. استخدم جملتين مع weil أو denn، ثم اقرأ الوصف بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يذكر النص نشاطًا وشعورًا واستراحة أو سببها.",
+            "meaningClarity": "تتضح العلاقة بين التدريب والشعور والراحة.",
+            "targetSkill": "يستخدم weil أو denn مع ترتيب الفعل المناسب ويختار مفردة شعور ملائمة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-11-housing-neighborhood-wohin",
@@ -7787,18 +10597,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-11-Q01",
+          "sourceTaskIds": [
+            "DL-A2-11-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "Wo / Wohin",
+            "اختيار محدد"
+          ],
+          "prompt": "أي سؤال تستخدمه لوصف مكان ثابت للكتاب؟",
+          "options": [
+            "Wo?",
+            "Wohin?",
+            "Wann?"
+          ],
+          "answerIndex": 0,
+          "explanation": "Wo يسأل عن مكان ثابت."
+        },
+        {
+          "id": "DL-A2-11-Q02",
+          "sourceTaskIds": [
+            "DL-A2-11-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "Dativ مع Wo",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Das Buch liegt auf ___ Tisch.",
+          "options": [
+            "den",
+            "dem",
+            "das"
+          ],
+          "answerIndex": 1,
+          "explanation": "المكان الثابت مع Wo يأخذ Dativ: auf dem Tisch."
+        },
+        {
+          "id": "DL-A2-11-Q03",
+          "sourceTaskIds": [
+            "DL-A2-11-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "Akkusativ مع Wohin",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Ich lege das Buch auf ___ Tisch.",
+          "options": [
+            "dem",
+            "der",
+            "den"
+          ],
+          "answerIndex": 2,
+          "explanation": "الانتقال إلى مكان مع Wohin يأخذ Akkusativ: auf den Tisch."
+        },
+        {
+          "id": "DL-A2-11-Q04",
+          "sourceTaskIds": [
+            "DL-A2-11-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "أفعال المكان",
+            "اختيار محدد"
+          ],
+          "prompt": "اختر الفعل الصحيح: Die Lampe ___ neben dem Bett.",
+          "options": [
+            "stellt",
+            "steht",
+            "legen"
+          ],
+          "answerIndex": 1,
+          "explanation": "steht يصف مكانًا ثابتًا لشيء قائم."
+        },
+        {
+          "id": "DL-A2-11-Q05",
+          "sourceTaskIds": [
+            "DL-A2-11-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "تركيب الجملة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة تصف نقل الخزانة إلى الحائط؟",
+          "options": [
+            "Ich stelle den Schrank an die Wand.",
+            "Der Schrank steht an der Wand.",
+            "Ich stehe an den Schrank."
+          ],
+          "answerIndex": 0,
+          "explanation": "stellen يصف وضع الشيء في مكان؛ an die Wand هنا حركة وAkkusativ."
+        },
+        {
+          "id": "DL-A2-11-Q06",
+          "sourceTaskIds": [
+            "DL-A2-11-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين يقع القاموس في غرفة Salma؟",
+          "options": [
+            "تحت السرير.",
+            "بجانب المدخل.",
+            "على الطاولة."
+          ],
+          "answerIndex": 2,
+          "explanation": "يذكر النص das Wörterbuch liegt auf dem Tisch."
+        },
+        {
+          "id": "DL-A2-11-Q07",
+          "sourceTaskIds": [
+            "DL-A2-11-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "أين تقع أقرب محطة ترام؟",
+          "options": [
+            "خلف المنزل.",
+            "عند الزاوية.",
+            "داخل المطبخ."
+          ],
+          "answerIndex": 1,
+          "explanation": "النص يقول an der Ecke."
+        },
+        {
+          "id": "DL-A2-11-Q08",
+          "sourceTaskIds": [
+            "DL-A2-11-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "Wo / Wohin",
+            "اختيار محدد"
+          ],
+          "prompt": "في **Ich lege mein Buch auf den Nachttisch**، هل تصف الجملة مكانًا ثابتًا أم انتقالًا؟",
+          "options": [
+            "انتقال الكتاب إلى مكان.",
+            "مكان الكتاب الثابت.",
+            "وقت وضع الكتاب فقط."
+          ],
+          "answerIndex": 0,
+          "explanation": "legen مع auf den يشير إلى نقل الكتاب، أي Wohin وAkkusativ."
+        },
+        {
+          "id": "DL-A2-11-Q09",
+          "sourceTaskIds": [
+            "DL-A2-11-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "طلب مهذب",
+            "اختيار محدد"
+          ],
+          "prompt": "كيف تطلب من جار خفض الصوت بأدب؟",
+          "options": [
+            "Du bist mein Nachbar.",
+            "Ich bin sehr laut.",
+            "Könnten Sie bitte etwas leiser sein?"
+          ],
+          "answerIndex": 2,
+          "explanation": "هذه صيغة طلب مهذبة وواضحة."
+        },
+        {
+          "id": "DL-A2-11-Q10",
+          "sourceTaskIds": [
+            "DL-A2-11-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "skillTags": [
+            "Dativ وAkkusativ",
+            "اختيار محدد"
+          ],
+          "prompt": "أي مثال يستخدم Dativ لمكان ثابت؟",
+          "options": [
+            "Ich stelle die Lampe neben das Bett.",
+            "Die Lampe steht neben dem Bett.",
+            "Ich lege das Buch auf den Tisch."
+          ],
+          "answerIndex": 1,
+          "explanation": "في الجملة الأولى الشيء ثابت، وبعد neben يأتي Dativ: dem Bett."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-11-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-11-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-11-P01",
+          "sourceTaskIds": [
+            "DL-A2-11-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "صف غرفة بأربع جمل: جملتان عن أماكن ثابتة باستخدام Wo وDativ، وجملتان عن وضع أشياء باستخدام Wohin وAkkusativ. اقرأ الوصف بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تتضمن الاستجابة أربعة أوصاف مكانية، نصفها ثابت ونصفها حركة.",
+            "meaningClarity": "يمكن تحديد مكان كل غرض وما إذا كان ثابتًا أو منقولًا.",
+            "targetSkill": "يفرق بين Dativ مع Wo وAkkusativ مع Wohin، ويختار فعلًا مناسبًا مثل stehen/stellen."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 50,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-11-P02",
+          "sourceTaskIds": [
+            "DL-A2-11-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-11-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب ثلاث جمل عن حيّك أو غرفة متخيّلة، ثم أضف طلبًا مهذبًا إلى جار أو زميل. اقرأ الجمل والطلب بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "تذكر الاستجابة مكانًا أو حيًا وتتضمن طلبًا مهذبًا.",
+            "meaningClarity": "تتضح المواقع والطلب المقصود.",
+            "targetSkill": "يستخدم تركيبًا مكانيًا صحيحًا ويصوغ الطلب بـKönnten Sie bitte …?"
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 45,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a2-12-holidays-festivals-culture",
@@ -7908,18 +10999,299 @@
           "example": ""
         }
       ],
-      "quiz": [],
+      "quiz": [
+        {
+          "id": "DL-A2-12-Q01",
+          "sourceTaskIds": [
+            "DL-A2-12-T01"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "مفردات الثقافة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **die Ausstellung**؟",
+          "options": [
+            "معرض.",
+            "تذكرة دخول.",
+            "ألعاب نارية."
+          ],
+          "answerIndex": 0,
+          "explanation": "Ausstellung تعني معرضًا."
+        },
+        {
+          "id": "DL-A2-12-Q02",
+          "sourceTaskIds": [
+            "DL-A2-12-T02"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "bevor",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **Bevor das Konzert beginnt, treffen wir uns am Eingang**؟",
+          "options": [
+            "نلتقي بعد أن ينتهي الحفل.",
+            "نلتقي عند المدخل قبل أن يبدأ الحفل.",
+            "نشتري الطعام أثناء الحفل."
+          ],
+          "answerIndex": 1,
+          "explanation": "bevor تعني قبل أن."
+        },
+        {
+          "id": "DL-A2-12-Q03",
+          "sourceTaskIds": [
+            "DL-A2-12-T03"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "nachdem",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Nachdem wir das Konzert gehört ___, können wir etwas essen.",
+          "options": [
+            "wir",
+            "gehört",
+            "haben"
+          ],
+          "answerIndex": 2,
+          "explanation": "في جملة nachdem مع Perfekt يأتي الفعل المساعد haben في النهاية."
+        },
+        {
+          "id": "DL-A2-12-Q04",
+          "sourceTaskIds": [
+            "DL-A2-12-T04"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "ترتيب الجملة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جملة صحيحة؟",
+          "options": [
+            "Nachdem wir haben gegessen, gehen wir zum Konzert.",
+            "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+            "Nachdem gegessen wir haben, gehen wir zum Konzert."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد nachdem يأتي الفعل في نهاية الجملة التابعة؛ وبعد الفاصلة يبدأ الفعل الرئيسي."
+        },
+        {
+          "id": "DL-A2-12-Q05",
+          "sourceTaskIds": [
+            "DL-A2-12-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "في أي يوم يقام مهرجان المدينة؟",
+          "options": [
+            "يوم الأحد.",
+            "يوم السبت.",
+            "يوم الأربعاء."
+          ],
+          "answerIndex": 0,
+          "explanation": "النص يقول Am Sonntag."
+        },
+        {
+          "id": "DL-A2-12-Q06",
+          "sourceTaskIds": [
+            "DL-A2-12-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "متى يُفتتح المعرض؟",
+          "options": [
+            "الساعة 17.",
+            "الساعة 19.",
+            "الساعة 14."
+          ],
+          "answerIndex": 2,
+          "explanation": "تبدأ المعرض عند 14 Uhr."
+        },
+        {
+          "id": "DL-A2-12-Q07",
+          "sourceTaskIds": [
+            "DL-A2-12-T05"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "فهم القراءة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا يحدث بعد أن يسمع الزوار الحفل؟",
+          "options": [
+            "يغلق السوق فورًا.",
+            "تقام ألعاب نارية.",
+            "تبدأ مباراة كرة قدم."
+          ],
+          "answerIndex": 1,
+          "explanation": "بعد الحفل gibt es ein Feuerwerk."
+        },
+        {
+          "id": "DL-A2-12-Q08",
+          "sourceTaskIds": [
+            "DL-A2-12-T06"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "فهم برنامج",
+            "اختيار محدد"
+          ],
+          "prompt": "في الجملة **Um vier Uhr besuchen sie eine Ausstellung**، متى يزورون المعرض؟",
+          "options": [
+            "في الرابعة.",
+            "في الثانية.",
+            "في السابعة."
+          ],
+          "answerIndex": 0,
+          "explanation": "الجملة تحدد الساعة الرابعة."
+        },
+        {
+          "id": "DL-A2-12-Q09",
+          "sourceTaskIds": [
+            "DL-A2-12-T07"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "ترتيب الأحداث",
+            "اختيار محدد"
+          ],
+          "prompt": "إذا أكلنا ثم ذهبنا إلى الحفل، أي جملة صحيحة؟",
+          "options": [
+            "Bevor wir gegessen haben, gehen wir zum Konzert.",
+            "Nachdem wir essen, gingen wir das Konzert.",
+            "Nachdem wir gegessen haben, gehen wir zum Konzert."
+          ],
+          "answerIndex": 2,
+          "explanation": "الحدث المكتمل أولًا يأتي مع nachdem وPerfekt."
+        },
+        {
+          "id": "DL-A2-12-Q10",
+          "sourceTaskIds": [
+            "DL-A2-12-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "skillTags": [
+            "ترتيب الأحداث",
+            "اختيار محدد"
+          ],
+          "prompt": "ما معنى **bevor** عند ترتيب نشاطين؟",
+          "options": [
+            "أن النشاطين يحدثان في اللحظة نفسها دائمًا.",
+            "أن النشاط في الجملة التابعة يقع قبل النشاط الرئيسي.",
+            "أن الجملة تتحدث عن مكان فقط."
+          ],
+          "answerIndex": 1,
+          "explanation": "bevor تربط نشاطًا يحدث قبل النشاط الرئيسي."
+        }
+      ],
       "assessment": {
-        "status": "not_ready",
-        "version": null,
+        "status": "ready",
+        "version": "a2-12-v1",
         "minimumScore": 80,
-        "minimumItems": null,
-        "objectiveIds": [],
-        "goalCriteriaVerified": false,
-        "performanceEvidenceRequired": false,
-        "performanceEvidenceImplemented": false
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A2-12-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+          "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+          "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+        ]
       },
-      "performanceTasks": []
+      "performanceTasks": [
+        {
+          "id": "DL-A2-12-P01",
+          "sourceTaskIds": [
+            "DL-A2-12-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "خطط يومًا ثقافيًا من خمس جمل: اذكر وقتًا أو مكانًا ونشاطين على الأقل، واستخدم bevor مرة وnachdem مرة. اقرأ الخطة بصوت واضح.",
+          "criteria": {
+            "taskCompletion": "تتضمن الخطة نشاطين ووقتًا أو مكانًا وربطًا بالترتيب.",
+            "meaningClarity": "يتضح ما سيحدث أولًا وما سيحدث بعده.",
+            "targetSkill": "يستخدم bevor/nachdem مع الفاصلة ويضع الفعل في نهاية الجملة التابعة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 55,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A2-12-P02",
+          "sourceTaskIds": [
+            "DL-A2-12-T08"
+          ],
+          "objectiveIds": [
+            "DL-A2-12-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب تسلسلًا قصيرًا لثلاثة أنشطة في مهرجان. استخدم جملة nachdem عن نشاط اكتمل بصيغة Perfekt، وجملة bevor عن حدث قادم، ثم اقرأ النص بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يعرض النص ثلاثة أنشطة مرتبة.",
+            "meaningClarity": "يمكن تتبع ترتيب الأنشطة دون التباس.",
+            "targetSkill": "يضع الفعل المساعد في نهاية جملة nachdem ويحافظ على ترتيب جملة bevor."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 55,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "b1-01-daily-life-hobbies-experiences",
@@ -11937,6 +15309,440 @@
       ],
       "transcriptPolicy": "offer",
       "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-11-AUD-DLG-01",
+      "lessonId": "a1-11-home-directions",
+      "title": "حوار: وصف الشقة والطريق إليها",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Nora",
+          "text": "Wie ist deine neue Wohnung?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Lina",
+          "text": "Sie ist klein, aber sehr hell. Es gibt ein Wohnzimmer, eine Küche, ein Bad und einen Balkon.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Nora",
+          "text": "Schön! Wie komme ich zu dir?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Lina",
+          "text": "Vom Bahnhof gehst du geradeaus. An der Ampel gehst du nach links. Meine Wohnung ist neben der Bäckerei.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Nora",
+          "text": "Danke. Ich komme am Samstag!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-12-AUD-LST-01",
+      "lessonId": "a1-12-trip-invitations",
+      "title": "استماع: الرد على دعوة Amel",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-12-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Hallo Amel! Danke für deine Einladung. Am Sonntag kann ich kommen. Ich bringe einen Kuchen mit. Um wie viel Uhr beginnt die Feier? Ich freue mich schon. Bis Sonntag!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-12-AUD-DLG-01",
+      "lessonId": "a1-12-trip-invitations",
+      "title": "حوار: دعوة إلى رحلة واحتفال",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Nadia",
+          "text": "Hast du am Samstag Zeit, Youssef?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Youssef",
+          "text": "Ja, warum?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Nadia",
+          "text": "Ich habe Geburtstag. Wir machen einen Ausflug nach Hammamet und feiern dort. Möchtest du mitkommen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Youssef",
+          "text": "Ja, gern! Wann fährt der Zug?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Nadia",
+          "text": "Um neun Uhr zwanzig. Wir sind um neun Uhr vor dem Bahnhof.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Youssef",
+          "text": "Soll ich etwas mitbringen?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-07.mp3",
+          "speaker": "Nadia",
+          "text": "Ja. Kannst du bitte Wasser mitbringen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-12-AUD-DLG-01-SEG-08.mp3",
+          "speaker": "Youssef",
+          "text": "Ja, natürlich. Danke für die Einladung!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A2-01-AUD-PHR-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "عبارات seit وvor والقدرة",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Seit wann lernst du Deutsch? Ich lerne seit einem Jahr Deutsch. Vor drei Monaten habe ich einen Kurs begonnen. Ich kann kurze Texte lesen. Am Wochenende bin ich nach Sousse gefahren.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-DLG-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "حوار: Karim وNour عن تعلم اللغة",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-01.mp3",
+          "speaker": "Karim",
+          "text": "Seit wann lernst du Deutsch, Nour?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-02.mp3",
+          "speaker": "Nour",
+          "text": "Seit einem Jahr. Ich nehme zweimal pro Woche an einem Sprachkurs teil.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-03.mp3",
+          "speaker": "Karim",
+          "text": "Was kannst du schon gut?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-04.mp3",
+          "speaker": "Nour",
+          "text": "Ich kann kurze Texte lesen und einfache Gespräche führen. Vor drei Monaten habe ich meinen ersten Brief auf Deutsch geschrieben.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-05.mp3",
+          "speaker": "Karim",
+          "text": "Toll! Und was machst du in deiner Freizeit?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-01-AUD-DLG-01-06.mp3",
+          "speaker": "Nour",
+          "text": "Ich fotografiere gern. Letztes Wochenende habe ich den alten Markt fotografiert.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-READ-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "قراءة: خبرة Nour في تعلم الألمانية",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-READ-01.mp3",
+          "speaker": "Nour",
+          "text": "Nour wohnt seit einem Jahr in Tunis. Sie arbeitet in einer Bäckerei und beginnt jeden Morgen um sieben Uhr. Vor drei Monaten hat sie einen Deutschkurs angefangen. Seitdem lernt sie regelmäßig. Nour kann gut Kuchen backen und spricht Arabisch und Französisch. Am Wochenende ist sie nach Mahdia gefahren. Dort hat sie eine Freundin besucht und viele Fotos gemacht.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-LST-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "استماع: تجربة تعلم وسفر",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich lerne seit acht Monaten Deutsch. Vor acht Monaten habe ich mit einem Kurs angefangen. Jetzt kann ich einfache Gespräche führen. Letztes Wochenende bin ich nach Mahdia gefahren. Ich habe einen Freund besucht und viele Fotos gemacht.",
+          "voiceId": "voice-03"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-01-AUD-MODEL-01",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "title": "أمثلة: seit وvor وkönnen وPerfekt",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-01-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich lerne seit sechs Monaten Deutsch. Nour wohnt seit einem Jahr in Tunis. Vor drei Monaten habe ich einen Kurs begonnen. Ich kann gut kochen. Wir können einfache Gespräche auf Deutsch führen. Am Wochenende bin ich nach Mahdia gefahren.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-PHR-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "عبارات المقارنة والتفضيل",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Zug ist schneller als der Bus. Das Hotel ist günstiger als die Pension. Der Bus ist so bequem wie der Zug. Gut, besser, am besten. Ich nehme den Zug, denn er ist schneller. Deshalb fährt Elif nach Bremen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-DLG-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "حوار: Lea وBen يختاران وسيلة النقل",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-01.mp3",
+          "speaker": "Lea",
+          "text": "Wie fahren wir am Wochenende nach Bremen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-02.mp3",
+          "speaker": "Ben",
+          "text": "Der Zug ist schneller als der Bus.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-03.mp3",
+          "speaker": "Lea",
+          "text": "Ja, aber der Bus ist günstiger.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-04.mp3",
+          "speaker": "Ben",
+          "text": "Stimmt. Die Zugfahrt dauert eine Stunde und zehn Minuten. Mit dem Bus fahren wir fast zwei Stunden.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-05.mp3",
+          "speaker": "Lea",
+          "text": "Ich möchte nicht lange unterwegs sein. Der Zug ist für mich am besten.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-02-AUD-DLG-01-06.mp3",
+          "speaker": "Ben",
+          "text": "Gut. Dann nehmen wir den Zug.",
+          "voiceId": "voice-03"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-READ-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "قراءة: رحلة Elif إلى Bremen",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-READ-01.mp3",
+          "speaker": "Elif",
+          "text": "Elif plant einen Wochenendausflug. Sie kann zwischen Bremen und Leipzig wählen. Bremen liegt näher an Hamburg als Leipzig. Mit dem Zug dauert die Fahrt nach Bremen eine Stunde und zehn Minuten. Der Bus ist günstiger, aber langsamer. Die Zugfahrt nach Leipzig dauert drei Stunden. Dort gibt es viele Museen und eine große Altstadt. Elif möchte nicht lange fahren. Für sie ist eine kurze Reise am besten, deshalb fährt sie nach Bremen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-LST-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "استماع: رحلة من Berlin إلى Dresden",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Wir möchten von Berlin nach Dresden fahren. Mit dem Auto dauert die Fahrt ungefähr zwei Stunden. Der Zug ist schneller: eine Stunde und fünfzig Minuten. Der Bus ist am günstigsten, aber die Fahrt dauert drei Stunden. Wir nehmen den Zug, denn wir möchten am Nachmittag noch die Altstadt besuchen.",
+          "voiceId": "voice-03"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-02-AUD-MODEL-01",
+      "lessonId": "a2-02-travel-comparisons",
+      "title": "أمثلة: المقارنة والتفضيل وشرح السبب",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-02-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Zug ist schneller als der Bus. Das Hotel ist so ruhig wie die Pension. Die Altstadt ist interessanter als das Einkaufszentrum. Der Zug ist am schnellsten. Die direkte Verbindung ist am besten. Ich nehme den Zug, denn er ist schneller. Elif möchte nicht lange fahren. Deshalb fährt sie nach Bremen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-PHR-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "عبارات الطعام والشراء وأمثلة man",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Speisekarte. Die Rechnung. Die Zutat. Die Linse. Die Gurke. Die Kartoffel. Der Nachtisch. Das Olivenöl. Der Reis. Frisch. Salzig. Süß. Regional. Vegetarisch. Ein Kilo Äpfel. Eine Flasche Wasser. Eine Packung Reis. 250 Gramm Käse. Wie viel Reis brauchen wir? Wie viele Tomaten kaufen wir? Ich hätte gern ein Kilo Tomaten. Was kostet ein Kilo? Das ist alles, danke. Man isst hier oft Gemüse. Im Restaurant bestellt man zuerst ein Getränk. Man kann frische Produkte auf dem Markt kaufen.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-DLG-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "حوار: طلب وجبة في المطعم",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-01.mp3",
+          "speaker": "Kellnerin",
+          "text": "Guten Abend. Hier ist die Speisekarte.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-02.mp3",
+          "speaker": "Gast",
+          "text": "Danke. Welche Suppe ist heute frisch?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-03.mp3",
+          "speaker": "Kellnerin",
+          "text": "Die Gemüsesuppe. Sie ist vegetarisch.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-04.mp3",
+          "speaker": "Gast",
+          "text": "Dann hätte ich gern eine Suppe und ein Glas Wasser.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-05.mp3",
+          "speaker": "Kellnerin",
+          "text": "Möchten Sie auch Brot dazu?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-06.mp3",
+          "speaker": "Gast",
+          "text": "Ja, bitte. Und später die Rechnung.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-03-AUD-DLG-01-07.mp3",
+          "speaker": "Kellnerin",
+          "text": "Natürlich.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-READ-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "قراءة: عادات Salma الغذائية",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-READ-01.mp3",
+          "speaker": "Salma",
+          "text": "In Salmas Familie kocht man oft zu Hause. Am Samstag kauft Salma auf dem Markt frisches Gemüse. Sie nimmt ein Kilo Tomaten, zwei Gurken und eine Packung Linsen. Zu Hause kocht sie eine Suppe mit Gemüse und Reis. Ihr Bruder isst gern etwas Süßes zum Nachtisch, aber Salma mag lieber Obst. In der Familie trinkt man zum Essen meistens Wasser.",
+          "voiceId": "voice-02"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-03-AUD-LST-01",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "title": "استماع: قائمة مشتريات العشاء",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-03-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Für das Abendessen brauche ich ein Kilo Kartoffeln, drei Tomaten, eine Flasche Olivenöl und 200 Gramm Käse. Ich kaufe auch zwei Gurken. Im Geschäft kostet der Käse heute weniger als gestern.",
+          "voiceId": "voice-03"
+        }
+      ]
     }
   ]
 }

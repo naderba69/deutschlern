@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-05-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-05-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-05-Q01",
+      "sourceTaskIds": [
+        "DL-A2-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "مفردات التدريب",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **die Berufsschule**؟",
+      "options": [
+        "مدرسة مهنية.",
+        "محطة قطار.",
+        "قائمة الطعام."
+      ],
+      "answerIndex": 0,
+      "explanation": "Berufsschule هي المدرسة التي يتلقى فيها المتدرب دروسًا مهنية."
+    },
+    {
+      "id": "DL-A2-05-Q02",
+      "sourceTaskIds": [
+        "DL-A2-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "wenn",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الجملة الصحيحة:",
+      "options": [
+        "Wenn ich bin müde, mache ich eine Pause.",
+        "Wenn ich müde bin, mache ich eine Pause.",
+        "Wenn ich müde bin, ich mache eine Pause."
+      ],
+      "answerIndex": 1,
+      "explanation": "الفعل في جملة wenn التابعة في النهاية، وبعد الفاصلة يأتي فعل الجملة الرئيسية مباشرة."
+    },
+    {
+      "id": "DL-A2-05-Q03",
+      "sourceTaskIds": [
+        "DL-A2-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "الفعل في نهاية wenn",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wenn der Unterricht um drei Uhr ___, fährt sie nach Hause.",
+      "options": [
+        "fährt",
+        "Unterricht",
+        "endet"
+      ],
+      "answerIndex": 2,
+      "explanation": "الفعل المصرف endet يأتي في نهاية جملة wenn."
+    },
+    {
+      "id": "DL-A2-05-Q04",
+      "sourceTaskIds": [
+        "DL-A2-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجمل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Wenn ich Zeit habe, ich lerne eine Stunde.",
+        "Wenn ich Zeit habe, lerne ich eine Stunde.",
+        "Wenn ich habe Zeit, lerne ich eine Stunde."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد جملة wenn تأتي الجملة الرئيسية مع الفعل أولًا: lerne ich."
+    },
+    {
+      "id": "DL-A2-05-Q05",
+      "sourceTaskIds": [
+        "DL-A2-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما التدريب المهني الذي يقوم به Rami؟",
+      "options": [
+        "فنّي كهرباء وإلكترونيات.",
+        "طاهٍ.",
+        "موظف في فندق."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص eine Ausbildung zum Elektroniker."
+    },
+    {
+      "id": "DL-A2-05-Q06",
+      "sourceTaskIds": [
+        "DL-A2-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "كم يومًا يعمل Rami في المؤسسة أسبوعيًا؟",
+      "options": [
+        "يومًا واحدًا.",
+        "خمسة أيام.",
+        "ثلاثة أيام."
+      ],
+      "answerIndex": 2,
+      "explanation": "يعمل في المؤسسة ثلاثة أيام في الأسبوع."
+    },
+    {
+      "id": "DL-A2-05-Q07",
+      "sourceTaskIds": [
+        "DL-A2-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين يفضّل Rami الدراسة؟",
+      "options": [
+        "في المطعم.",
+        "في المكتبة.",
+        "في محطة القطار."
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول إنه يدرس غالبًا في المكتبة."
+    },
+    {
+      "id": "DL-A2-05-Q08",
+      "sourceTaskIds": [
+        "DL-A2-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "في الجملة **Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen**، ما الفعل في نهاية جملة wenn؟",
+      "options": [
+        "habe",
+        "Energie",
+        "wiederhole"
+      ],
+      "answerIndex": 0,
+      "explanation": "الفعل المصرف في الجملة التابعة هو habe ويأتي في نهايتها."
+    },
+    {
+      "id": "DL-A2-05-Q09",
+      "sourceTaskIds": [
+        "DL-A2-05-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "معنى wenn",
+        "اختيار محدد"
+      ],
+      "prompt": "في سياق الروتين، قد تعني **wenn**:",
+      "options": [
+        "لأن دائمًا.",
+        "قبل أن.",
+        "إذا أو عندما/كلما بحسب السياق."
+      ],
+      "answerIndex": 2,
+      "explanation": "تستخدم wenn للشرط أو لحدث يتكرر بحسب السياق."
+    },
+    {
+      "id": "DL-A2-05-Q10",
+      "sourceTaskIds": [
+        "DL-A2-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "skillTags": [
+        "الجدول الأسبوعي",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الترتيب الصحيح:",
+      "options": [
+        "Wenn der Unterricht endet, Rami fährt nach Hause.",
+        "Wenn der Unterricht endet, fährt Rami nach Hause.",
+        "Wenn endet der Unterricht, Rami nach Hause fährt."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد جملة wenn يأتي الفعل في الجملة الرئيسية مباشرة بعد الفاصلة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-05-P01",
+      "sourceTaskIds": [
+        "DL-A2-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل عن جدول دراسة أو تدريب متخيّل، مستخدمًا wenn مرتين على الأقل. اقرأ النص بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "يذكر النص أنشطة ووقتًا أو شرطًا، ويتضمن جملتي wenn.",
+        "meaningClarity": "يتضح متى تحدث الأنشطة وما النتيجة.",
+        "targetSkill": "يضع الفعل في نهاية جملة wenn، ويكتب فاصلة ثم يبدأ الجملة الرئيسية بالفعل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-05-P02",
+      "sourceTaskIds": [
+        "DL-A2-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-05-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "صف يومًا دراسيًا أو مهنيًا في ثلاث أو أربع جمل: اذكر مكان التدريب، ومتى تراجع ملاحظاتك، وماذا تفعل إذا توفر لديك وقت. اقرأ الإجابة بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "تتضمن الإجابة مكانًا وروتينًا وشرطًا واحدًا على الأقل.",
+        "meaningClarity": "ترتيب الأنشطة واضح ويمكن تتبعه.",
+        "targetSkill": "يستخدم wenn استخدامًا مناسبًا مع ترتيب الفعل في الجمل التابعة والرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

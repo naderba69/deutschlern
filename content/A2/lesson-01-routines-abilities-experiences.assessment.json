@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-01-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-01-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-01-Q01",
+      "sourceTaskIds": [
+        "DL-A2-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "مفردات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى التركيب **vor drei Monaten** في سياق حدث انتهى؟",
+      "options": [
+        "قبل ثلاثة أشهر، أي مدة انتهت.",
+        "منذ ثلاثة أشهر وما زال مستمرًا.",
+        "بعد ثلاثة أشهر."
+      ],
+      "answerIndex": 0,
+      "explanation": "نستخدم vor مع مدة مضت وانتهى الحدث؛ أما seit فتدل هنا على مدة ما زالت مستمرة."
+    },
+    {
+      "id": "DL-A2-01-Q02",
+      "sourceTaskIds": [
+        "DL-A2-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "seit وvor",
+        "اختيار محدد"
+      ],
+      "prompt": "تسكن نور في تونس وما زالت تعيش هناك: Nour wohnt ___ einem Jahr in Tunis.",
+      "options": [
+        "vor",
+        "seit",
+        "nach"
+      ],
+      "answerIndex": 1,
+      "explanation": "نستخدم seit لشيء بدأ وما زال مستمرًا."
+    },
+    {
+      "id": "DL-A2-01-Q03",
+      "sourceTaskIds": [
+        "DL-A2-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "حالة seit",
+        "اختيار محدد"
+      ],
+      "prompt": "أي تركيب صحيح؟",
+      "options": [
+        "seit ein Jahr",
+        "seit eines Jahr",
+        "seit einem Jahr"
+      ],
+      "answerIndex": 2,
+      "explanation": "بعد seit هنا تأتي صيغة Dativ: seit einem Jahr."
+    },
+    {
+      "id": "DL-A2-01-Q04",
+      "sourceTaskIds": [
+        "DL-A2-01-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "Perfekt",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ nach Sousse gefahren.",
+      "options": [
+        "haben",
+        "sind",
+        "ist"
+      ],
+      "answerIndex": 1,
+      "explanation": "الفعل fahren مع الانتقال إلى مكان يأخذ sein في Perfekt."
+    },
+    {
+      "id": "DL-A2-01-Q05",
+      "sourceTaskIds": [
+        "DL-A2-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "können",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Nour ___ gut Kuchen backen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع الاسم المفرد Nour نستخدم kann."
+    },
+    {
+      "id": "DL-A2-01-Q06",
+      "sourceTaskIds": [
+        "DL-A2-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Ich kann kurze Texte liest.",
+        "Ich kann lesen kurze Texte.",
+        "Ich kann kurze Texte lesen."
+      ],
+      "answerIndex": 2,
+      "explanation": "بعد können يأتي الفعل الآخر مصدرًا في نهاية الجملة."
+    },
+    {
+      "id": "DL-A2-01-Q07",
+      "sourceTaskIds": [
+        "DL-A2-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين تعمل Nour بحسب النص؟",
+      "options": [
+        "In einem Hotel.",
+        "In einer Bäckerei.",
+        "In einer Schule."
+      ],
+      "answerIndex": 1,
+      "explanation": "يذكر النص أنها تعمل في مخبز: in einer Bäckerei."
+    },
+    {
+      "id": "DL-A2-01-Q08",
+      "sourceTaskIds": [
+        "DL-A2-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "متى بدأت Nour دورة الألمانية؟",
+      "options": [
+        "Vor drei Monaten.",
+        "Seit drei Monaten.",
+        "Vor einem Jahr."
+      ],
+      "answerIndex": 0,
+      "explanation": "بدأت الدورة قبل ثلاثة أشهر: vor drei Monaten."
+    },
+    {
+      "id": "DL-A2-01-Q09",
+      "sourceTaskIds": [
+        "DL-A2-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "عبارات النشاط",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني جملة **Ich nehme zweimal pro Woche an einem Sprachkurs teil**؟",
+      "options": [
+        "أبدأ دورة لغة مرة في الشهر.",
+        "أنهي دورة اللغة كل يوم.",
+        "أشارك في دورة لغة مرتين أسبوعيًا."
+      ],
+      "answerIndex": 2,
+      "explanation": "التركيب teilnehmen an يعني المشاركة في، وzweimal pro Woche تعني مرتين أسبوعيًا."
+    },
+    {
+      "id": "DL-A2-01-Q10",
+      "sourceTaskIds": [
+        "DL-A2-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "skillTags": [
+        "معنى seitdem",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **Seitdem lernt sie regelmäßig**؟",
+      "options": [
+        "كانت تتعلم قبل ذلك.",
+        "منذ ذلك الحين تتعلم بانتظام.",
+        "ستبدأ التعلم لاحقًا."
+      ],
+      "answerIndex": 1,
+      "explanation": "seitdem تعني منذ ذلك الحين."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-01-P01",
+      "sourceTaskIds": [
+        "DL-A2-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل عن روتين أو خبرة متخيّلة: استخدم seit لشيء مستمر، وvor مع حدث انتهى، وجملة مع können، وجملة في Perfekt. اقرأها بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "تتضمن الاستجابة أربع جمل وتغطي المطلوب كله.",
+        "meaningClarity": "يمكن فهم ما يزال مستمرًا وما حدث وانتهى.",
+        "targetSkill": "يميز بين seit وvor، ويصرّف können، ويضع Partizip II في نهاية Perfekt."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-01-P02",
+      "sourceTaskIds": [
+        "DL-A2-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب فقرة قصيرة عن خبرة تعلم لغة: منذ متى تتعلمها، وما الذي تستطيع فعله، وماذا أنجزت مؤخرًا؟ استخدم فعلًا منفصلًا واحدًا مثل anfangen أو teilnehmen، ثم اقرأها بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "تذكر الاستجابة مدة التعلم وقدرة وإنجازًا حديثًا.",
+        "meaningClarity": "تتضح المدة والقدرة والخبرة دون تعارض زمني.",
+        "targetSkill": "يستخدم seit مع المضارع للمدة المستمرة وPerfekt لخبرة منتهية، ويكتب الفعل المنفصل بصورة صحيحة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 50,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-06-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-06-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
+      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
+      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-06-Q01",
+      "sourceTaskIds": [
+        "DL-A2-06-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "مفردات الأسرة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **die Verwandten**؟",
+      "options": [
+        "الأقارب.",
+        "الجيران.",
+        "الزملاء."
+      ],
+      "answerIndex": 0,
+      "explanation": "Verwandte تعني الأقارب."
+    },
+    {
+      "id": "DL-A2-06-Q02",
+      "sourceTaskIds": [
+        "DL-A2-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "جملة dass",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الجملة الصحيحة:",
+      "options": [
+        "Ich hoffe, dass alle Gäste haben Zeit.",
+        "Ich hoffe, dass alle Gäste Zeit haben.",
+        "Ich hoffe dass, alle Gäste Zeit haben."
+      ],
+      "answerIndex": 1,
+      "explanation": "نضع فاصلة قبل dass ويأتي الفعل في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-A2-06-Q03",
+      "sourceTaskIds": [
+        "DL-A2-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich freue mich, dass meine Schwester heute ___.",
+      "options": [
+        "heute kommt sie",
+        "kommen",
+        "kommt"
+      ],
+      "answerIndex": 2,
+      "explanation": "مع الفاعل المفرد تأتي kommt في نهاية جملة dass."
+    },
+    {
+      "id": "DL-A2-06-Q04",
+      "sourceTaskIds": [
+        "DL-A2-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "الفاصلة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة كتبت بفاصلة صحيحة؟",
+      "options": [
+        "Wir glauben dass der Abend, schön wird.",
+        "Wir glauben, dass der Abend schön wird.",
+        "Wir glauben dass, der Abend schön wird."
+      ],
+      "answerIndex": 1,
+      "explanation": "توضع الفاصلة قبل جملة dass."
+    },
+    {
+      "id": "DL-A2-06-Q05",
+      "sourceTaskIds": [
+        "DL-A2-06-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين تعيش Lina؟",
+      "options": [
+        "في Nabeul.",
+        "في Wien.",
+        "في Linden."
+      ],
+      "answerIndex": 0,
+      "explanation": "ينص النص على Lina lebt … in Nabeul."
+    },
+    {
+      "id": "DL-A2-06-Q06",
+      "sourceTaskIds": [
+        "DL-A2-06-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "من سيزور Lina يوم الأحد؟",
+      "options": [
+        "زملاؤها في العمل.",
+        "جيرانها فقط.",
+        "عمتها وابنا/ابنتا عمها."
+      ],
+      "answerIndex": 2,
+      "explanation": "سيأتي die Tante und zwei Cousins."
+    },
+    {
+      "id": "DL-A2-06-Q07",
+      "sourceTaskIds": [
+        "DL-A2-06-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا يريد الوالدان أن يشاهدا معًا؟",
+      "options": [
+        "فيلمًا عن السفر.",
+        "صورة عائلية قديمة.",
+        "برنامجًا رياضيًا."
+      ],
+      "answerIndex": 1,
+      "explanation": "يريد الوالدان مشاهدة ein altes Familienfoto."
+    },
+    {
+      "id": "DL-A2-06-Q08",
+      "sourceTaskIds": [
+        "DL-A2-06-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "فهم جملة dass",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Mein Bruder sagt, dass er einen Kuchen mitbringt**، ماذا سيحضر الأخ؟",
+      "options": [
+        "كعكة.",
+        "صورة.",
+        "هدية أخرى."
+      ],
+      "answerIndex": 0,
+      "explanation": "الجملة تقول إنه سيحضر einen Kuchen."
+    },
+    {
+      "id": "DL-A2-06-Q09",
+      "sourceTaskIds": [
+        "DL-A2-06-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "sich freuen auf",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تتحدث عن حدث قادم؟",
+      "options": [
+        "Ich freue mich, dass du da bist.",
+        "Ich bin die Feier.",
+        "Ich freue mich auf die Feier."
+      ],
+      "answerIndex": 2,
+      "explanation": "sich freuen auf تستخدم للتطلع إلى حدث قادم."
+    },
+    {
+      "id": "DL-A2-06-Q10",
+      "sourceTaskIds": [
+        "DL-A2-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "skillTags": [
+        "جملة dass",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل بصورة صحيحة: Meine Eltern sagen, dass sie das Foto ___.",
+      "options": [
+        "möchten anschauen sie",
+        "anschauen möchten",
+        "sie möchten anschauen"
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد dass يبقى الفعل المصرف في النهاية؛ هنا möchten في آخر الجملة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-06-P01",
+      "sourceTaskIds": [
+        "DL-A2-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل عن مناسبة عائلية متخيّلة؛ عبّر عن خبرين أو أمنيتين باستخدام dass، ثم اقرأها بصوت واضح.",
+      "criteria": {
+        "taskCompletion": "تذكر الاستجابة المناسبة وأفراد الأسرة أو الضيوف وتضم جملتي dass.",
+        "meaningClarity": "يمكن فهم المناسبة والمشاعر أو الآمال المرتبطة بها.",
+        "targetSkill": "يضع الفعل المصرف في نهاية جملة dass ويضع الفاصلة قبلها."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-06-P02",
+      "sourceTaskIds": [
+        "DL-A2-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب رسالة قصيرة لقريب تدعوه إلى احتفال: اذكر المناسبة، وعبّر عن شعورك، وأضف جملة تبدأ بـIch hoffe, dass أو Ich freue mich, dass. اقرأ الرسالة بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "تتضمن الرسالة دعوة ومعلومة وجملة dass واحدة على الأقل.",
+        "meaningClarity": "توضح الرسالة من المدعو وماذا سيحدث.",
+        "targetSkill": "يفرق بين dass لجملة تابعة وauf عند التطلع إلى حدث قادم."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 45,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
