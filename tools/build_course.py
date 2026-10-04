@@ -41,6 +41,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A2-08": "a2-08-media-news-passive",
     "DL-A2-09": "a2-09-products-technology-complaints",
     "DL-A2-10": "a2-10-sports-health-feelings-weil",
+    "DL-A2-11": "a2-11-housing-neighborhood-wohin",
 }
 
 

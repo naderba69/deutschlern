@@ -16473,6 +16473,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-11-AUD-PHR-01",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "title": "مفردات السكن والحيّ والأثاث",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-11-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Nachbar. Die Nachbarin. Die Nachbarschaft. Die Innenstadt. Die Straßenbahnhaltestelle. Die Miete. Der Umzug. Der Schrank. Das Regal. Das Sofa. Der Teppich. Die Wand. Der Boden. Der Innenhof. Die Grünfläche. Der Sessel. Der Schreibtisch. Der Nachttisch. Einrichten. Richtet ein. Hängen. Hängt. Laut. Leise.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-11-AUD-MODEL-01",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "title": "أمثلة Wo/Wohin وعبارات الحيّ",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-11-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Wo liegt das Buch? Auf dem Tisch. Wohin lege ich das Buch? Auf den Tisch. Der Schrank steht an der Wand. Ich stelle den Schrank an die Wand. Ich wohne in einer ruhigen Nachbarschaft. Die Miete ist hoch. Der Innenhof ist neben dem Haus. Meine Nachbarin ist sehr freundlich. Könnten Sie bitte etwas leiser sein?",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-11-AUD-DLG-01",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "title": "حوار: Nora وFadi بعد الانتقال",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-11-AUD-DLG-01-01.mp3",
+          "speaker": "Nora",
+          "text": "Wie gefällt dir die neue Wohnung?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-11-AUD-DLG-01-02.mp3",
+          "speaker": "Fadi",
+          "text": "Sehr gut. Das Sofa steht neben dem Fenster, und der Teppich liegt auf dem Boden.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-11-AUD-DLG-01-03.mp3",
+          "speaker": "Nora",
+          "text": "Wo steht der Schrank?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-11-AUD-DLG-01-04.mp3",
+          "speaker": "Fadi",
+          "text": "Er steht an der Wand. Ich möchte das Regal neben das Sofa stellen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A2-11-AUD-DLG-01-05.mp3",
+          "speaker": "Nora",
+          "text": "Und wie sind die Nachbarn?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-11-AUD-DLG-01-06.mp3",
+          "speaker": "Fadi",
+          "text": "Sehr freundlich. Die Nachbarschaft ist ruhig, und es gibt einen kleinen Innenhof.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-11-AUD-READ-01",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "title": "قراءة: منزل Salma والحيّ",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-11-AUD-READ-01.mp3",
+          "speaker": "Salma",
+          "text": "Salma wohnt in der Innenstadt. Die nächste Straßenbahnhaltestelle ist an der Ecke. Nach dem Umzug richtet sie ihr Wohnzimmer ein. Das Sofa steht an der Wand. Ein kleiner Tisch steht vor dem Sofa, und das Wörterbuch liegt auf dem Tisch. Salma hängt ein Bild über das Sofa. Ihre Nachbarin hilft ihr. Sie sagt: „Die Grünfläche ist hinter dem Haus, und der Innenhof ist neben dem Eingang.“ Salma ist froh, denn die Nachbarschaft ist ruhig.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A2-11-AUD-LST-01",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "title": "استماع: ترتيب غرفة النوم",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-11-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Im Schlafzimmer steht das Bett an der Wand. Eine Lampe steht neben dem Bett. Ich lege mein Buch auf den Nachttisch. Dann stelle ich den Stuhl vor den Schreibtisch. Im Innenhof spielen zwei Kinder. Die Nachbarn sind freundlich.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
