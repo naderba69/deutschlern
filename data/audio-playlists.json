@@ -2620,6 +2620,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-04-AUD-PHR-01",
+      "lessonId": "b1-04-continuing-education-damit",
+      "title": "مفردات التعلّم المستمر",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-04-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Weiterbildung, die Weiterbildungen. Die Fähigkeit, die Fähigkeiten. Die Kenntnis, die Kenntnisse. Die Plattform, die Plattformen. Die Tabellenkalkulation. Die Kursunterlage, die Kursunterlagen. Der Lernstoff. Das Lernziel, die Lernziele. Das Zertifikat, die Zertifikate. Die Teilnahme. Die Voraussetzung, die Voraussetzungen. Sich anmelden für. Wiederholen. Selbstständig. Die Lerngruppe, die Lerngruppen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-04-AUD-MODEL-01",
+      "lessonId": "b1-04-continuing-education-damit",
+      "title": "أمثلة الغاية بـum … zu وdamit",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-04-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich mache einen Onlinekurs, um meine Kenntnisse zu erweitern. Sie wiederholt den Lernstoff, um sich auf die Prüfung vorzubereiten. Der Kurs bietet Übungen an, damit die Teilnehmenden selbstständig lernen können. Die Lehrerin erklärt die Aufgabe, damit alle sie verstehen. Wir bilden eine Lerngruppe, um schwierige Themen gemeinsam zu besprechen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-04-AUD-DLG-01",
+      "lessonId": "b1-04-continuing-education-damit",
+      "title": "حوار: Nadia وFarid عن دورة مهنية",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-04-AUD-DLG-01-01.mp3",
+          "speaker": "Nadia",
+          "text": "Warum hast du dich für den Onlinekurs angemeldet?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-04-AUD-DLG-01-02.mp3",
+          "speaker": "Farid",
+          "text": "Ich möchte meine Computerkenntnisse erweitern, um bei der Arbeit selbstständiger zu werden.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-04-AUD-DLG-01-03.mp3",
+          "speaker": "Nadia",
+          "text": "Gibt es Übungen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-04-AUD-DLG-01-04.mp3",
+          "speaker": "Farid",
+          "text": "Ja. Die Lehrerin stellt kurze Aufgaben bereit, damit wir den Lernstoff regelmäßig wiederholen können.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-04-AUD-DLG-01-05.mp3",
+          "speaker": "Nadia",
+          "text": "Lernst du allein?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-04-AUD-DLG-01-06.mp3",
+          "speaker": "Farid",
+          "text": "Meistens. Manchmal treffe ich mich mit einer Lerngruppe, damit wir schwierige Themen gemeinsam besprechen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-04-AUD-READ-01",
+      "lessonId": "b1-04-continuing-education-damit",
+      "title": "قراءة: تدريب Farid على الجداول الحسابية",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-04-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Farid arbeitet in einem kleinen Betrieb. Er hat sich für eine Weiterbildung im Bereich Tabellenkalkulation angemeldet. Er besucht den Kurs am Abend, um seine Kenntnisse zu verbessern. Die Lehrkraft gibt Beispiele, damit die Teilnehmenden die neuen Funktionen praktisch üben können. Farid wiederholt den Lernstoff am Wochenende, um sich auf die Abschlussaufgabe vorzubereiten. Am Ende erhalten die Teilnehmenden ein Zertifikat, wenn sie regelmäßig am Kurs teilnehmen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-04-AUD-LST-01",
+      "lessonId": "b1-04-continuing-education-damit",
+      "title": "استماع: خطة تعلّم في مجال التواصل",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-04-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich mache eine Weiterbildung im Bereich Kommunikation. Ich lese die Kursunterlagen am Morgen, um mich auf den Unterricht vorzubereiten. Unsere Trainerin erklärt neue Begriffe langsam, damit alle Teilnehmenden sie verstehen. Nach dem Kurs wiederhole ich die Notizen, um die wichtigsten Punkte zu behalten. Einmal pro Woche lerne ich mit zwei Kolleginnen in einer Lerngruppe.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [

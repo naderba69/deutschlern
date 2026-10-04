@@ -46,6 +46,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-01": "b1-01-daily-life-hobbies-experiences",
     "DL-B1-02": "b1-02-food-habits-obwohl",
     "DL-B1-03": "b1-03-work-communication-konjunktiv",
+    "DL-B1-04": "b1-04-continuing-education-damit",
 }
 
 
