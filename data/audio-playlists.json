@@ -2730,6 +2730,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-05-AUD-PHR-01",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "title": "مفردات المدينة والأماكن",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-05-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Altstadt, die Altstädte. Das Viertel, die Viertel. Der Marktplatz, die Marktplätze. Die Fußgängerzone, die Fußgängerzonen. Die Sehenswürdigkeit, die Sehenswürdigkeiten. Das Ufer, die Ufer. Die Grünanlage, die Grünanlagen. Der Aussichtspunkt, die Aussichtspunkte. Die Verbindung, die Verbindungen. Der Stadtplan, die Stadtpläne. Zentral, am Stadtrand. Lebendig, ruhig. Sich befinden, befindet sich. Zu Fuß erreichbar.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-05-AUD-MODEL-01",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "title": "أمثلة وصف الأماكن بالجمل الموصولة",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-05-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Marktplatz, der im Zentrum liegt, ist sehr lebendig. Der Aussichtspunkt, den viele Gäste besuchen, liegt am Fluss. Die Straße, die ich besonders mag, ist verkehrsberuhigt. Die Viertel, die am Stadtrand liegen, sind gut angebunden.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-05-AUD-DLG-01",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "title": "حوار: Mara وYusuf في جولة بالمدينة",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-05-AUD-DLG-01-01.mp3",
+          "speaker": "Mara",
+          "text": "Welches Viertel möchtest du heute sehen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-05-AUD-DLG-01-02.mp3",
+          "speaker": "Yusuf",
+          "text": "Die Altstadt, die direkt am Fluss liegt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-05-AUD-DLG-01-03.mp3",
+          "speaker": "Mara",
+          "text": "Kennst du den Aussichtspunkt, den man vom Park aus erreicht?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-05-AUD-DLG-01-04.mp3",
+          "speaker": "Yusuf",
+          "text": "Ja. Der Weg ist ruhig. Es gibt auch einen Markt, der jeden Samstag stattfindet.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-05-AUD-DLG-01-05.mp3",
+          "speaker": "Mara",
+          "text": "Und wo beginnt die Fußgängerzone?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-05-AUD-DLG-01-06.mp3",
+          "speaker": "Yusuf",
+          "text": "Sie beginnt an der Brücke und führt bis zum Marktplatz.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-05-AUD-READ-01",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "title": "قراءة: جولة Noura في Brückenfeld",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-05-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Noura besucht die fiktive Stadt Brückenfeld. Sie beginnt ihren Rundgang auf dem Marktplatz, der von alten Häusern umgeben ist. Danach geht sie durch eine Gasse, die zur Fußgängerzone führt. Das Stadtmuseum, das eine kleine Ausstellung zur Stadtgeschichte zeigt, liegt gleich daneben. Nach dem Mittagessen besucht sie den Aussichtspunkt, den viele Einheimische gern nutzen. Von dort sieht sie den Fluss und eine Grünanlage, die sich am Ufer befindet. Besonders mag Noura die Altstadt, die lebendig ist und zugleich ruhige Straßen hat.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-05-AUD-LST-01",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "title": "استماع: وصف حيّ سكني",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-05-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Unser Stadtteil liegt südlich der Innenstadt. Besonders gefällt mir die Bibliothek, die bis spät geöffnet ist. Neben ihr gibt es einen Platz, den viele Menschen am Wochenende besuchen. Eine Straße, die direkt zur Haltestelle führt, ist tagsüber ruhig. Auch der Park, der am Wasser liegt, ist zu Fuß erreichbar.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [

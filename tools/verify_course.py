@@ -48,6 +48,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-02": "b1-02-food-habits-obwohl",
     "DL-B1-03": "b1-03-work-communication-konjunktiv",
     "DL-B1-04": "b1-04-continuing-education-damit",
+    "DL-B1-05": "b1-05-cities-relative-clauses",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
