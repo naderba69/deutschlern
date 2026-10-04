@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 98, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 220, "the audio manifest must contain all two hundred twenty generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 103, "the generated A0, A1, A2, and B1.1 audio assets must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 230, "the audio manifest must contain all two hundred thirty generated clips");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -108,6 +108,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A2-10": "a2-10-sports-health-feelings-weil",
     "DL-A2-11": "a2-11-housing-neighborhood-wohin",
     "DL-A2-12": "a2-12-holidays-festivals-culture",
+    "DL-B1-01": "b1-01-daily-life-hobbies-experiences",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -314,6 +315,38 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     .split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
   assert.equal(a2FestivalListening.segments[0].text, sourceFestivalListening, "the A2.12 listening transcript must match its source passage");
   assert.equal(a2FestivalListening.segments[0].voiceId, "voice-03", "A2.12 listening must keep the established listening narrator voice");
+  const b1HobbyAssets = courseData.audioAssets.filter((asset) => asset.assetId.startsWith("DL-B1-01-"));
+  assert.equal(b1HobbyAssets.length, 5, "B1.1's audio batch must expose five lesson assets");
+  assert.equal(b1HobbyAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "B1.1 must expose all ten generated clips");
+  const b1HobbySource = fs.readFileSync(path.join(rootDir, "content/B1/lesson-01-daily-life-hobbies-experiences.md"), "utf8");
+  const b1HobbyVocabulary = b1HobbyAssets.find((asset) => asset.assetId === "DL-B1-01-AUD-PHR-01");
+  assert.equal(b1HobbyVocabulary.kind, "phrase_bank", "B1.1 vocabulary must be available as a source-backed phrase track");
+  assert.equal(b1HobbyVocabulary.segments[0].voiceId, "voice-02", "B1.1 vocabulary must use the established narrator voice");
+  assert.equal(b1HobbyVocabulary.segments[0].text, "Das Erlebnis, die Erlebnisse. Der Verein, die Vereine. Das Schachturnier, die Schachturniere. Die Erinnerung, die Erinnerungen. Die Freizeit. Das Hobby, die Hobbys. Damals. Inzwischen. Zum ersten Mal. Sich erinnern an. Teilnehmen an. Regelmäßig. Allein und gemeinsam.", "the B1.1 vocabulary track must preserve its generated transcript");
+  const b1HobbyModels = b1HobbyAssets.find((asset) => asset.assetId === "DL-B1-01-AUD-MODEL-01");
+  assert.equal(b1HobbyModels.kind, "model_sentences", "B1.1 grammar examples must remain a separate model-sentence track");
+  assert.equal(b1HobbyModels.segments[0].voiceId, "voice-02", "B1.1 grammar models must use the established narrator voice");
+  assert.equal(b1HobbyModels.segments[0].text, "Als ich sechzehn Jahre alt war, bekam ich meine erste Kamera. Als wir zum ersten Mal allein reisten, waren wir nervös. Wenn Lina am Wochenende Zeit hatte, fotografierte sie im Park. Wenn ich heute frei habe, treffe ich meine Freunde.", "the B1.1 model track must preserve the generated als/wenn examples");
+  const b1HobbyDialogue = b1HobbyAssets.find((asset) => asset.assetId === "DL-B1-01-AUD-DLG-01");
+  assert.equal(b1HobbyDialogue.segments.length, 6, "the B1.1 dialogue must keep all six source turns");
+  assert.deepEqual(b1HobbyDialogue.segments.map((segment) => segment.speaker), ["Lina", "Karim", "Lina", "Karim", "Lina", "Karim"], "B1.1 dialogue speaker order must follow the source");
+  const sourceB1Dialogue = b1HobbySource.split("## 3) حوار أصلي عن هواية قديمة")[1].split("## 4)")[0]
+    .split(/\r?\n/).filter((line) => line.startsWith("**Lina:**") || line.startsWith("**Karim:**"))
+    .map((line) => line.slice(line.indexOf(":**") + 3).trim().replace(/\b17\b/g, "siebzehn"));
+  assert.deepEqual(b1HobbyDialogue.segments.map((segment) => segment.text), sourceB1Dialogue, "B1.1 dialogue transcripts must match all six source turns");
+  assert.ok(b1HobbyDialogue.segments.filter((segment) => segment.speaker === "Lina").every((segment) => segment.voiceId === "voice-00"), "Lina must retain voice-00 throughout B1.1");
+  assert.equal(b1HobbyDialogue.segments.find((segment) => segment.speaker === "Lina").voiceId, a2SportDialogue.segments.find((segment) => segment.speaker === "Lina").voiceId, "Lina must retain her selected voice from A2.10 into B1.1");
+  assert.ok(b1HobbyDialogue.segments.filter((segment) => segment.speaker === "Karim").every((segment) => segment.voiceId === a1KarimVoice && segment.voiceId === "voice-03"), "Karim must retain his selected voice from A1/A2 through B1.1");
+  const b1HobbyReading = b1HobbyAssets.find((asset) => asset.assetId === "DL-B1-01-AUD-READ-01");
+  const sourceB1Reading = b1HobbySource.split("## 4) نص قراءة أصلي")[1].split("### أسئلة الفهم")[0]
+    .split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim().replace(/\b14\b/g, "vierzehn");
+  assert.equal(b1HobbyReading.segments[0].text, sourceB1Reading, "B1.1 reading transcript must match the source passage");
+  assert.equal(b1HobbyReading.segments[0].voiceId, "voice-02", "B1.1 reading must retain the established course narrator voice");
+  const b1HobbyListening = b1HobbyAssets.find((asset) => asset.assetId === "DL-B1-01-AUD-LST-01");
+  const sourceB1Listening = b1HobbySource.split("## 5) نص استماع معدّ للنطق")[1].split("## 6)")[0]
+    .split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
+  assert.equal(b1HobbyListening.segments[0].text, sourceB1Listening, "B1.1 listening transcript must match the source passage");
+  assert.equal(b1HobbyListening.segments[0].voiceId, "voice-03", "B1.1 listening must keep the established listening narrator voice");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -564,7 +597,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[1])", context), false, "B1.2 must remain locked until B1.1 is mastered and B1.2 is assessed");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[0].id, "B1.1 must be the next required step after all A2 lessons");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and the first local B1 assessment.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and the first local B1 assessment.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

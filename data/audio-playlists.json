@@ -2300,6 +2300,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-01-AUD-PHR-01",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "title": "مفردات التجارب والهوايات",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-01-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Erlebnis, die Erlebnisse. Der Verein, die Vereine. Das Schachturnier, die Schachturniere. Die Erinnerung, die Erinnerungen. Die Freizeit. Das Hobby, die Hobbys. Damals. Inzwischen. Zum ersten Mal. Sich erinnern an. Teilnehmen an. Regelmäßig. Allein und gemeinsam.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-01-AUD-MODEL-01",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "title": "أمثلة: als للحدث الواحد وwenn للعادة",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-01-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Als ich sechzehn Jahre alt war, bekam ich meine erste Kamera. Als wir zum ersten Mal allein reisten, waren wir nervös. Wenn Lina am Wochenende Zeit hatte, fotografierte sie im Park. Wenn ich heute frei habe, treffe ich meine Freunde.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-01-AUD-DLG-01",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "title": "حوار: Lina وKarim عن دورة التصوير",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-01-AUD-DLG-01-01.mp3",
+          "speaker": "Lina",
+          "text": "Erinnerst du dich an deinen ersten Fotokurs?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-01-AUD-DLG-01-02.mp3",
+          "speaker": "Karim",
+          "text": "Ja. Als ich siebzehn war, habe ich zum ersten Mal an einem Kurs teilgenommen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-01-AUD-DLG-01-03.mp3",
+          "speaker": "Lina",
+          "text": "Was hast du dort gemacht?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-01-AUD-DLG-01-04.mp3",
+          "speaker": "Karim",
+          "text": "Wir haben Porträts fotografiert. Wenn wir am Wochenende Zeit hatten, sind wir zusammen in den Park gegangen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-01-AUD-DLG-01-05.mp3",
+          "speaker": "Lina",
+          "text": "Machst du das noch?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-01-AUD-DLG-01-06.mp3",
+          "speaker": "Karim",
+          "text": "Ja, inzwischen fotografiere ich auch auf Reisen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-01-AUD-READ-01",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "title": "قراءة: تجربة Lina مع التصوير",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-01-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Als Lina vierzehn Jahre alt war, bekam sie eine Kamera von ihrer Tante. Sie war sofort neugierig. Wenn sie ihre Großeltern besuchte, fotografierte sie oft den Garten und die Tiere. Einmal zeigte sie ihre Bilder bei einem Schulfest. Ihre Lehrerin lobte sie. Seitdem nimmt Lina regelmäßig an Fotokursen teil. Inzwischen macht sie auch Bilder für die Webseite ihres Vereins.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-01-AUD-LST-01",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "title": "استماع: ذكريات الشطرنج مع الجد",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-01-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Als ich ein Kind war, spielte ich gern Schach mit meinem Großvater. Wenn wir uns am Sonntag trafen, spielten wir oft mehrere Partien. Später habe ich an einem Schachturnier teilgenommen. Heute spiele ich nicht mehr so oft, aber ich erinnere mich gern an diese Zeit.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [
