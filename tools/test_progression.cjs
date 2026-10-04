@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 103, "the generated A0, A1, A2, and B1.1 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 230, "the audio manifest must contain all two hundred thirty generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 108, "the generated A0, A1, A2, B1.1, and B1.2 audio assets must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 240, "the audio manifest must contain all two hundred forty generated clips");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -109,6 +109,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A2-11": "a2-11-housing-neighborhood-wohin",
     "DL-A2-12": "a2-12-holidays-festivals-culture",
     "DL-B1-01": "b1-01-daily-life-hobbies-experiences",
+    "DL-B1-02": "b1-02-food-habits-obwohl",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -347,6 +348,41 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     .split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
   assert.equal(b1HobbyListening.segments[0].text, sourceB1Listening, "B1.1 listening transcript must match the source passage");
   assert.equal(b1HobbyListening.segments[0].voiceId, "voice-03", "B1.1 listening must keep the established listening narrator voice");
+  const b1FoodAssets = courseData.audioAssets.filter((asset) => asset.assetId.startsWith("DL-B1-02-"));
+  assert.equal(b1FoodAssets.length, 5, "B1.2 must expose five lesson-mapped audio assets");
+  assert.equal(b1FoodAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "B1.2 must expose all ten generated clips");
+  assert.ok(b1FoodAssets.every((asset) => asset.status === "ready" && asset.transcriptPolicy === "offer"), "B1.2 recordings must be final and transcripts must not be hidden");
+  const b1FoodSourceForAudio = fs.readFileSync(path.join(rootDir, "content/B1/lesson-02-food-habits-obwohl.md"), "utf8");
+  const b1FoodVocabulary = b1FoodAssets.find((asset) => asset.assetId === "DL-B1-02-AUD-PHR-01");
+  assert.equal(b1FoodVocabulary.segments[0].voiceId, "voice-02", "B1.2 vocabulary must use the established course narrator");
+  assert.equal(b1FoodVocabulary.segments[0].text, "Die Ernährung. Die Gewohnheit, die Gewohnheiten. Die Mahlzeit, die Mahlzeiten. Die Zutat, die Zutaten. Die Auswahl. Ausgewogen. Sättigend. Enthalten, enthält. Verzichten auf, verzichtet auf. Sich ernähren, ernährt sich. Auswärts essen. Der Geschmack, die Geschmäcker. Inzwischen.", "B1.2 vocabulary transcript must match its source list");
+  const b1FoodModels = b1FoodAssets.find((asset) => asset.assetId === "DL-B1-02-AUD-MODEL-01");
+  assert.equal(b1FoodModels.kind, "model_sentences", "B1.2 connector examples must remain a source-backed model track");
+  assert.equal(b1FoodModels.segments[0].text, "Obwohl ich wenig Zeit habe, koche ich oft selbst. Ich koche oft selbst, obwohl ich wenig Zeit habe. Ich habe wenig Zeit. Trotzdem koche ich oft selbst.", "B1.2 model track must preserve both source connectors and word order");
+  const b1FoodDialogue = b1FoodAssets.find((asset) => asset.assetId === "DL-B1-02-AUD-DLG-01");
+  const sourceB1FoodDialogue = b1FoodSourceForAudio.split("## 3) حوار أصلي عن وجبة العمل")[1].split("## 4)")[0]
+    .split(/\r?\n/).filter((line) => line.startsWith("**Mira:**") || line.startsWith("**Tarek:**"))
+    .map((line) => line.slice(line.indexOf(":**") + 3).trim());
+  assert.deepEqual(b1FoodDialogue.segments.map((segment) => segment.text), sourceB1FoodDialogue, "B1.2 dialogue transcript must match the six source turns");
+  assert.deepEqual(b1FoodDialogue.segments.map((segment) => segment.speaker), ["Mira", "Tarek", "Mira", "Tarek", "Mira", "Tarek"], "B1.2 dialogue speakers must follow the source");
+  assert.ok(b1FoodDialogue.segments.filter((segment) => segment.speaker === "Mira").every((segment) => segment.voiceId === "voice-02"), "Mira must keep her A2.5 voice in B1.2");
+  const a2MiraDialogue = courseData.audioAssets.find((asset) => asset.assetId === "DL-A2-05-AUD-DLG-01");
+  assert.equal(b1FoodDialogue.segments.find((segment) => segment.speaker === "Mira").voiceId, a2MiraDialogue.segments.find((segment) => segment.speaker === "Mira").voiceId, "Mira's B1.2 voice must stay consistent with A2.5");
+  assert.ok(b1FoodDialogue.segments.filter((segment) => segment.speaker === "Tarek").every((segment) => segment.voiceId === "voice-03"), "Tarek must keep one voice across all dialogue turns");
+  const b1FoodReading = b1FoodAssets.find((asset) => asset.assetId === "DL-B1-02-AUD-READ-01");
+  const sourceB1FoodReading = b1FoodSourceForAudio.split("## 4) نص قراءة أصلي")[1].split("### أسئلة الفهم")[0]
+    .split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
+  assert.equal(b1FoodReading.segments[0].text, sourceB1FoodReading, "B1.2 reading transcript must match the source passage");
+  assert.equal(b1FoodReading.segments[0].voiceId, "voice-02", "B1.2 reading must use the established narrator");
+  const b1FoodListening = b1FoodAssets.find((asset) => asset.assetId === "DL-B1-02-AUD-LST-01");
+  const sourceB1FoodListening = b1FoodSourceForAudio.split("## 5) نص استماع معدّ للنطق")[1].split("## 6)")[0]
+    .split(/\r?\n/).find((line) => line.trim().startsWith(">")).trim().slice(1).trim();
+  assert.equal(b1FoodListening.segments[0].text, sourceB1FoodListening, "B1.2 listening transcript must match the source passage");
+  assert.equal(b1FoodListening.segments[0].voiceId, "voice-03", "B1.2 listening must use the established listening narrator");
+  const b1FoodAudioMarkup = vm.runInContext("renderAudioAssets('b1-02-food-habits-obwohl')", context);
+  assert.match(b1FoodAudioMarkup, /حوار: Mira وTarek عن وجبة العمل/);
+  assert.match(b1FoodAudioMarkup, /نهائي/);
+  assert.doesNotMatch(b1FoodAudioMarkup, /للمراجعة/);
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -566,7 +602,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(b1Lessons[0].performanceTasks?.length, 2, "B1.1 must include two practical self-check tasks");
   assert.equal(b1Lessons[0].performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-01-T08")), true, "B1.1 performance tasks must link to the source experience-writing task");
   assert.equal(b1Lessons[0].performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), true, "B1.1 performance tasks must work locally before B1 audio production");
-  assert.equal(b1Lessons[1].assessment?.status, "ready", "B1.2 must have a ready assessment before its audio production");
+  assert.equal(b1Lessons[1].assessment?.status, "ready", "B1.2 must keep its ready assessment alongside the completed audio");
   assert.equal(b1Lessons[1].assessment?.minimumScore, 80, "B1.2 must retain the 80 percent mastery threshold");
   assert.equal(b1Lessons[1].quiz?.length, 10, "B1.2 must include ten scored questions");
   assert.equal(b1Lessons[1].performanceTasks?.length, 2, "B1.2 must include two practical self-check tasks");
@@ -618,7 +654,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[1])", context), true, "B1.2 may open once B1.1 is mastered and its ready assessment is available");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[1].id, "B1.2 must be the next required step after mastering B1.1");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and local B1.1/B1.2 assessments.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1/B1.2 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and local B1.1/B1.2 assessments.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

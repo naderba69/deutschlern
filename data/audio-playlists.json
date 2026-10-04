@@ -2410,6 +2410,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-02-AUD-PHR-01",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "title": "مفردات التغذية والعادات الغذائية",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-02-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Ernährung. Die Gewohnheit, die Gewohnheiten. Die Mahlzeit, die Mahlzeiten. Die Zutat, die Zutaten. Die Auswahl. Ausgewogen. Sättigend. Enthalten, enthält. Verzichten auf, verzichtet auf. Sich ernähren, ernährt sich. Auswärts essen. Der Geschmack, die Geschmäcker. Inzwischen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-02-AUD-MODEL-01",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "title": "أمثلة: التباين بـobwohl وtrotzdem",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-02-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Obwohl ich wenig Zeit habe, koche ich oft selbst. Ich koche oft selbst, obwohl ich wenig Zeit habe. Ich habe wenig Zeit. Trotzdem koche ich oft selbst.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-02-AUD-DLG-01",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "title": "حوار: Mira وTarek عن وجبة العمل",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-02-AUD-DLG-01-01.mp3",
+          "speaker": "Mira",
+          "text": "Isst du mittags immer in der Kantine?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-02-AUD-DLG-01-02.mp3",
+          "speaker": "Tarek",
+          "text": "Nicht immer. Obwohl die Kantine praktisch ist, bringe ich oft Essen von zu Hause mit.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-02-AUD-DLG-01-03.mp3",
+          "speaker": "Mira",
+          "text": "Warum?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-02-AUD-DLG-01-04.mp3",
+          "speaker": "Tarek",
+          "text": "Das Essen in der Kantine ist manchmal teuer. Trotzdem gehe ich dorthin, wenn ich mit meinen Kollegen essen möchte.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-02-AUD-DLG-01-05.mp3",
+          "speaker": "Mira",
+          "text": "Was bringst du normalerweise mit?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-02-AUD-DLG-01-06.mp3",
+          "speaker": "Tarek",
+          "text": "Meistens Reis und Gemüse. Die Mahlzeit ist einfach, aber sie macht mich satt.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-02-AUD-READ-01",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "title": "قراءة: عادات David الغذائية",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-02-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Früher aß David oft unterwegs. Seit er einen neuen Arbeitsplan hat, bereitet er sein Mittagessen am Abend vor. Obwohl er wenig Zeit hat, kocht er drei- oder viermal pro Woche. Er wählt häufig Gemüse und Hülsenfrüchte, weil sie lange satt machen. Am Freitag isst er mit Kollegen in einem Restaurant. Das kostet mehr als sein Essen zu Hause. Trotzdem freut er sich auf dieses gemeinsame Essen. David achtet auf Abwechslung, aber er verzichtet auf keine Lebensmittelgruppe.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-02-AUD-LST-01",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "title": "استماع: إعداد الوجبات في المنزل",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-02-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Bei uns zu Hause kocht meistens mein Vater. Obwohl er wenig Zeit hat, bereitet er am Sonntag mehrere Gerichte vor. Wir essen gern gemeinsam. Manchmal probieren wir neue Zutaten aus. Wenn ein Gericht sehr scharf ist, trinke ich viel Wasser. Am Freitag bestellen wir etwas, trotzdem kochen wir an den anderen Tagen selbst.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [
