@@ -1,6 +1,6 @@
 # B1.8 — المنتجات والاستهلاك والإعلان: je … desto/umso …
 
-**المدة:** 40–45 دقيقة · **المهارات:** قراءة إعلان، استماع، مقارنة، قواعد، كتابة  
+**المدة:** 40–45 دقيقة · **المهارات:** قراءة إعلان، استماع، مقارنة، قواعد، كتابة وتحدث شفهي
 **الهدف:** أستطيع أن أقارن بين المنتجات، وأستخدم **je … desto/umso …** للحديث عن علاقة متدرجة بين أمرين.
 
 ## 1) مفردات المنتجات والإعلان
@@ -38,11 +38,11 @@
 
 ## 3) حوار أصلي عن مقارنة منتجين
 
-**Mira:** Diese Kopfhörer sind heute im Angebot.  
-**Bilal:** Je niedriger der Preis klingt, desto genauer sollte man die Bedingungen lesen.  
-**Mira:** Die Werbung verspricht eine besonders lange Akkulaufzeit.  
-**Bilal:** Dann prüfen wir, ob die Anzeige konkrete Angaben enthält. Je genauer ein Anbieter die Eigenschaften erklärt, desto leichter können wir vergleichen.  
-**Mira:** Ich vergleiche auch den Endpreis und die Rückgabebedingungen.  
+**Mira:** Diese Kopfhörer sind heute im Angebot.
+**Bilal:** Je niedriger der Preis klingt, desto genauer sollte man die Bedingungen lesen.
+**Mira:** Die Werbung verspricht eine besonders lange Akkulaufzeit.
+**Bilal:** Dann prüfen wir, ob die Anzeige konkrete Angaben enthält. Je genauer ein Anbieter die Eigenschaften erklärt, desto leichter können wir vergleichen.
+**Mira:** Ich vergleiche auch den Endpreis und die Rückgabebedingungen.
 **Bilal:** Gute Idee. Wir kaufen nur, wenn das Produkt wirklich zu unserem Bedarf passt.
 
 ## 4) نص قراءة أصلي: إعلان ومعلومات المنتج
@@ -123,7 +123,7 @@
 
 ### تمرين 8 — قارن بين منتجين
 
-اكتب خمس جمل عن منتجين خياليين. استخدم **je … desto** مرة على الأقل، واذكر معلومة محددة واحدة وعبارة ترويجية واحدة، ثم وضّح كيف ستقارن بينهما. لا حاجة إلى ذكر علامة تجارية حقيقية.
+اكتب خمس جمل تقارن بين منتجين خياليين باستخدام ثلاثة معايير محددة، مثل السعر النهائي والوزن والمتانة. استخدم **je … desto/umso …** مرة على الأقل، واذكر معلومة قابلة للتحقق وعبارة ترويجية، ثم وضّح ما الذي ستفحصه قبل الشراء. يمكنك كتابة المقارنة أو تقديمها شفهيًا؛ وإن كنت تتعلم وحدك فاكتبها ثم اقرأها بصوت واضح. لا تذكر علامة تجارية حقيقية، ولا يلزم تسجيل الصوت.
 
 ## 7) مفتاح الإجابات
 
