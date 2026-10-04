@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-02-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة ومفاتيحها وربطها بهدف B1.2 وكتل المصدر T01 وT02 وT03 وT05 وT06 وT07.",
+      "تغطي الأسئلة مفردات التغذية، ومعنى obwohl/trotzdem وترتيب الفعل، وفهم نصّي القراءة والاستماع.",
+      "مهمتا الأداء تصفان عادة غذائية وحوارًا عن وجبة العمل؛ تتحققان ذاتيًا محليًا ويمكن قراءتهما بصوت دون تسجيل أو خدمة خارجية."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-02-Q01",
+      "sourceTaskIds": [
+        "DL-B1-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "مفردات التغذية",
+        "فهم كلمة"
+      ],
+      "prompt": "أي مفردة تعني «التغذية أو النظام الغذائي»؟",
+      "options": [
+        "die Gewohnheit",
+        "die Ernährung",
+        "die Auswahl"
+      ],
+      "answerIndex": 1,
+      "explanation": "die Ernährung تعني التغذية أو النظام الغذائي؛ أما العادة فهي die Gewohnheit."
+    },
+    {
+      "id": "DL-B1-02-Q02",
+      "sourceTaskIds": [
+        "DL-B1-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "مفردات التغذية",
+        "تركيب فعلي"
+      ],
+      "prompt": "ما معنى **auf bestimmte Lebensmittel verzichten**؟",
+      "options": [
+        "إضافة مكونات جديدة إلى الطعام.",
+        "الامتناع عن أطعمة معيّنة أو الاستغناء عنها.",
+        "تناول الطعام خارج المنزل."
+      ],
+      "answerIndex": 1,
+      "explanation": "verzichten auf تعني الاستغناء عن شيء أو الامتناع عنه."
+    },
+    {
+      "id": "DL-B1-02-Q03",
+      "sourceTaskIds": [
+        "DL-B1-02-T03",
+        "DL-B1-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "obwohl",
+        "الفعل في نهاية الجملة التابعة"
+      ],
+      "prompt": "اختر الصياغة الصحيحة: **Obwohl sie wenig Zeit ___, kocht sie selbst.** (haben)",
+      "options": [
+        "haben",
+        "hat",
+        "ist"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع الفاعل sie نستخدم hat، ويأتي الفعل المصرف في نهاية جملة obwohl التابعة."
+    },
+    {
+      "id": "DL-B1-02-Q04",
+      "sourceTaskIds": [
+        "DL-B1-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "trotzdem",
+        "ترتيب الفعل في الجملة الرئيسية"
+      ],
+      "prompt": "أكمل مع مراعاة ترتيب الجملة: **Das Restaurant ist teuer. Trotzdem ___ wir heute dort.** (essen)",
+      "options": [
+        "isst",
+        "esse",
+        "essen"
+      ],
+      "answerIndex": 2,
+      "explanation": "بعد trotzdem تأتي الجملة الرئيسية؛ يأتي الفعل المصرف في المرتبة الثانية: Trotzdem essen wir …"
+    },
+    {
+      "id": "DL-B1-02-Q05",
+      "sourceTaskIds": [
+        "DL-B1-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "اختيار الرابط",
+        "التباين"
+      ],
+      "prompt": "اختر الرابط المناسب: **Ich habe wenig Zeit. ___ koche ich oft selbst.**",
+      "options": [
+        "Obwohl",
+        "Weil",
+        "Trotzdem"
+      ],
+      "answerIndex": 2,
+      "explanation": "trotzdem تبدأ جملة رئيسية تعبّر عن نتيجة مخالفة لما قد نتوقعه؛ ويأتي بعدها الفعل: Trotzdem koche ich …"
+    },
+    {
+      "id": "DL-B1-02-Q06",
+      "sourceTaskIds": [
+        "DL-B1-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "معلومة محددة"
+      ],
+      "prompt": "Was machte David früher oft?",
+      "options": [
+        "Er kochte jeden Abend zu Hause.",
+        "Er aß oft unterwegs.",
+        "Er verzichtete auf alle Lebensmittelgruppen."
+      ],
+      "answerIndex": 1,
+      "explanation": "تذكر بداية القراءة أن David كان يأكل خارج المنزل أو أثناء تنقله كثيرًا."
+    },
+    {
+      "id": "DL-B1-02-Q07",
+      "sourceTaskIds": [
+        "DL-B1-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "التكرار"
+      ],
+      "prompt": "Wie oft kocht David ungefähr pro Woche?",
+      "options": [
+        "Ein- oder zweimal.",
+        "Jeden Tag.",
+        "Drei- oder viermal."
+      ],
+      "answerIndex": 2,
+      "explanation": "يقول النص إنه يطبخ ثلاثًا أو أربع مرات في الأسبوع."
+    },
+    {
+      "id": "DL-B1-02-Q08",
+      "sourceTaskIds": [
+        "DL-B1-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "معلومة محددة"
+      ],
+      "prompt": "Wer kocht zu Hause meistens?",
+      "options": [
+        "Die Mutter.",
+        "Der Vater.",
+        "Die Person selbst."
+      ],
+      "answerIndex": 1,
+      "explanation": "يبدأ نص الاستماع بقول المتحدث إن والده هو من يطبخ غالبًا في المنزل."
+    },
+    {
+      "id": "DL-B1-02-Q09",
+      "sourceTaskIds": [
+        "DL-B1-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "الزمن"
+      ],
+      "prompt": "Wann bereitet der Vater mehrere Gerichte vor?",
+      "options": [
+        "Am Sonntag.",
+        "Am Freitag.",
+        "Am Montag."
+      ],
+      "answerIndex": 0,
+      "explanation": "يحضّر الأب عدة أطباق يوم الأحد."
+    },
+    {
+      "id": "DL-B1-02-Q10",
+      "sourceTaskIds": [
+        "DL-B1-02-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "skillTags": [
+        "تحويل إلى obwohl",
+        "ترتيب الجملة التابعة"
+      ],
+      "prompt": "أي صياغة تدمج الجملتين **Das Rezept ist schwierig. Lina probiert es aus.** باستخدام obwohl؟",
+      "options": [
+        "Obwohl das Rezept ist schwierig, probiert Lina es aus.",
+        "Obwohl das Rezept schwierig ist, probiert Lina es aus.",
+        "Obwohl ist das Rezept schwierig, Lina probiert es aus."
+      ],
+      "answerIndex": 1,
+      "explanation": "يأتي الفعل المصرف ist في نهاية جملة obwohl التابعة، ثم تفصلها فاصلة عن الجملة الرئيسية."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-02-P01",
+      "sourceTaskIds": [
+        "DL-B1-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب فقرة من خمس جمل عن عادات غذائية حقيقية أو متخيّلة. اذكر وجبة تفضّلها وسببًا، واستخدم obwohl مرةً مع الفعل في نهاية الجملة التابعة، وtrotzdem مرةً مع ترتيب الجملة الرئيسية. اقرأ الفقرة بصوت واضح إن أمكن؛ لا يلزم تسجيلها، ولا تقدم نصيحة صحية شخصية.",
+      "criteria": {
+        "taskCompletion": "تتضمن الإجابة خمس جمل على الأقل، وتصف عادة أو وجبة وسبب تفضيلها.",
+        "meaningClarity": "يمكن فهم العادة والسبب والتباين بين الفكرتين.",
+        "targetSkill": "تستخدم obwohl وtrotzdem استعمالًا مفهومًا، مع وضع الفعل في نهاية جملة obwohl وترتيب الفعل الصحيح بعد trotzdem."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 70,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-02-P02",
+      "sourceTaskIds": [
+        "DL-B1-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-02-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب حوارًا قصيرًا من أربعة أسطر عن وجبة العمل مع زميل. اذكر أن المقصف عملي لكن الطعام قد يكون مكلفًا، واستخدم obwohl وtrotzdem مرةً لكل منهما. إذا كنت تتعلم وحدك، اكتب دوري المتحدثين ثم اقرأهما بصوت مرتفع دون تسجيل.",
+      "criteria": {
+        "taskCompletion": "يحتوي النص على أربعة أسطر حوار على الأقل ويصف موقفًا حول وجبة العمل.",
+        "meaningClarity": "تظهر فكرتان متعارضتان وقرار المتحدث بوضوح.",
+        "targetSkill": "تستخدم obwohl مع الفعل في نهاية الجملة التابعة، وtrotzdem مع تركيب جملة رئيسية صحيح."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 70,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
