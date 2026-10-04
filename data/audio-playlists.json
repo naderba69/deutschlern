@@ -512,6 +512,116 @@
       ],
       "transcriptPolicy": "offer",
       "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-06-AUD-READ-01",
+      "lessonId": "a1-06-yesterday-perfekt",
+      "title": "قراءة: ماذا فعلت Amel أمس؟",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-06-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Gestern hat Amel nicht gearbeitet. Am Morgen hat sie gefrühstückt und Musik gehört. Danach hat sie Deutsch gelernt. Am Nachmittag ist sie mit dem Bus zu ihrer Freundin gefahren. Sie haben zusammen gekocht und einen Film gesehen. Am Abend ist Amel nach Hause zurückgekommen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-06-AUD-LST-01",
+      "lessonId": "a1-06-yesterday-perfekt",
+      "title": "استماع: عطلة نهاية الأسبوع في Sousse",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-06-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Am Wochenende bin ich mit meiner Familie nach Sousse gefahren. Am Samstag haben wir den Markt besucht. Ich habe Obst gekauft und meine Schwester hat Fotos gemacht. Am Sonntag haben wir zu Hause gekocht.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-07-AUD-DLG-01",
+      "lessonId": "a1-07-travel-weather",
+      "title": "حوار: شراء تذكرة إلى Sousse",
+      "kind": "listening_dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Reisende Person",
+          "text": "Guten Tag. Eine Fahrkarte nach Sousse, bitte.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Einfach oder hin und zurück?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Reisende Person",
+          "text": "Hin und zurück, bitte. Wann fährt der Zug?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Um neun Uhr zehn.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Reisende Person",
+          "text": "Danke.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Gute Reise!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-07-AUD-READ-01",
+      "lessonId": "a1-07-travel-weather",
+      "title": "قراءة: رحلة Nour إلى Sousse",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-07-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Am Samstag fährt Nour mit dem Zug nach Sousse. Sie kauft eine Fahrkarte am Bahnhof. Das Wetter ist warm und sonnig. Nour besucht ihre Freundin. Am Abend fährt sie mit dem Bus nach Hause.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-07-AUD-LST-01",
+      "lessonId": "a1-07-travel-weather",
+      "title": "استماع: رحلة إلى Hammamet والطقس",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-07-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Hallo! Morgen fahren wir nach Hammamet. Wir fahren mit dem Auto. Am Morgen ist das Wetter sonnig. Am Nachmittag ist es windig. Wir nehmen Wasser und eine Jacke mit.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
     }
   ],
   "selectedVoiceIds": [

@@ -75,7 +75,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 23, "the generated A0 and current-batch A1 audio assets must be carried into the course bundle");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 28, "the generated A0 and current A1 audio assets must be carried into the course bundle");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -88,6 +88,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A1-03": "a1-03-city-cafe-hotel",
     "DL-A1-04": "a1-04-daily-routine-time",
     "DL-A1-05": "a1-05-food-drink",
+    "DL-A1-06": "a1-06-yesterday-perfekt",
+    "DL-A1-07": "a1-07-travel-weather",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
