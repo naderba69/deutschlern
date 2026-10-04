@@ -19398,6 +19398,38 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-07-AUD-READ-01",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "title": "قراءة: مجموعة Miteinander",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-07-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "In der Lerngruppe „Miteinander“ treffen sich Menschen mit unterschiedlichen Arbeits- und Familienzeiten. Einmal im Monat organisieren sie einen offenen Abend. Das Programm umfasst sowohl kurze Musikbeiträge als auch Gesprächsrunden. Die Teilnehmenden bringen nicht nur Rezepte mit, sondern auch Geschichten aus ihrem Alltag. Noura arbeitet manchmal spät und meldet sich deshalb entweder für den frühen Termin oder für das Treffen am Wochenende an. Sie hat sich an die wechselnden Uhrzeiten gewöhnt. In der Gruppe muss niemand für ein ganzes Land oder eine ganze Gemeinschaft sprechen: Alle teilen persönliche Erfahrungen, wenn sie möchten. So lernen die Mitglieder voneinander, ohne einzelne Erlebnisse zu allgemeinen Regeln zu machen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-07-AUD-LST-01",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "title": "استماع: تنظيم المهام في السكن المشترك",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-07-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "In unserer Wohngemeinschaft planen wir die Aufgaben zusammen. Wir kochen sowohl am Dienstag als auch am Donnerstag. Ich lese nicht nur Romane, sondern auch Sachbücher. Am Wochenende gehen wir entweder in den Park oder ins Museum. Nach acht Uhr abends trinke ich weder Kaffee noch Energydrinks. Jeder kann etwas vorschlagen, und wir wechseln die Aufgaben regelmäßig.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
