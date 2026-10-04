@@ -518,6 +518,22 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     assert.equal(lesson.performanceTasks?.length, 2, `${lesson.id} must have two practical A2 self-check tasks`);
     assert.equal(lesson.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), true, `${lesson.id} A2 tasks must work locally without audio`);
   }
+  const b1Lessons = vm.runInContext("getLessonsInLevel('B1')", context);
+  assert.equal(b1Lessons.length, 12, "the B1 level must retain all twelve lessons");
+  assert.equal(b1Lessons[0].assessment?.status, "ready", "B1.1 must be the first ready B1 lesson assessment");
+  assert.equal(b1Lessons[0].assessment?.minimumScore, 80, "B1.1 must retain the 80 percent mastery threshold");
+  assert.equal(b1Lessons[0].quiz?.length, 10, "B1.1 must include ten scored questions");
+  const b1Source = fs.readFileSync(path.join(rootDir, "content/B1/lesson-01-daily-life-hobbies-experiences.md"), "utf8");
+  assert.match(b1Source, /Als Lina 14 Jahre alt war, bekam sie eine Kamera/, "B1.1's reading evidence must remain in the lesson source");
+  const b1ReadingQuestion = b1Lessons[0].quiz.find((question) => question.id === "DL-B1-01-Q06");
+  assert.ok(b1ReadingQuestion.sourceTaskIds.includes("DL-B1-01-T05"), "the B1.1 age question must link to its source reading task");
+  assert.equal(b1ReadingQuestion.options[b1ReadingQuestion.answerIndex], "Sie war 14 Jahre alt.", "the B1.1 reading answer must agree with the source");
+  const b1ConnectorQuestion = b1Lessons[0].quiz.find((question) => question.id === "DL-B1-01-Q10");
+  assert.equal(b1ConnectorQuestion.options[b1ConnectorQuestion.answerIndex], "Als ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.", "the B1.1 correction question must use als for a unique past event");
+  assert.equal(b1Lessons[0].performanceTasks?.length, 2, "B1.1 must include two practical self-check tasks");
+  assert.equal(b1Lessons[0].performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-01-T08")), true, "B1.1 performance tasks must link to the source experience-writing task");
+  assert.equal(b1Lessons[0].performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), true, "B1.1 performance tasks must work locally before B1 audio production");
+  assert.equal(b1Lessons.slice(1).every((lesson) => lesson.assessment?.status === "not_ready"), true, "B1.2 and later B1 lessons must remain unassessed until their production batches");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1'))", context), true, "the first A1 lesson must open after the A0 gate");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1' && lesson.unit === 2))", context), false, "later A1 lessons must remain sequentially locked");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), a1Lessons[0].id, "the first A1 lesson must be the next required step after the gate");
@@ -534,8 +550,21 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('A2')[0])", context), true, "the first A2 lesson must open after all prerequisites are mastered");
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('A2')[1])", context), false, "later A2 lessons must remain sequentially locked");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), a2Lessons[0].id, "A2.1 must be the next required step after all A1 lessons");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[0])", context), false, "B1.1 must stay locked until the full A2 level is mastered");
+  vm.runInContext(`
+    for (const lesson of getLessonsInLevel('A2')) {
+      state.completedLessons[lesson.id] = {
+        score: 80, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
+        assessmentVersion: lesson.assessment.version,
+      };
+    }
+  `, context);
+  assert.equal(vm.runInContext("isLevelUnlocked('B1')", context), true, "B1 may unlock only after all A2 lessons are mastered");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[0])", context), true, "B1.1 must open as the first B1 step after A2 mastery");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[1])", context), false, "B1.2 must remain locked until B1.1 is mastered and B1.2 is assessed");
+  assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[0].id, "B1.1 must be the next required step after all A2 lessons");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, and all twelve local A1 and A2 assessments.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and the first local B1 assessment.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

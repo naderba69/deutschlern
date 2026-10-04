@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-01-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-01-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة ومفاتيحها وربطها بهدف B1.1 وكتل المصدر T01 وT02 وT03 وT04 وT05 وT07.",
+      "تغطي المهمتان السرد عن تجربة واحدة وعادة متكررة، وتتحققان ذاتيًا محليًا بمعايير ظاهرة دون تصحيح آلي أو خدمة خارجية.",
+      "لا يتطلب هذا التقييم ملف MP3 أو تسجيل المتعلم؛ أُنجز التقييم قبل دفعة الصوت وفق ترتيب الإنتاج."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-01-Q01",
+      "sourceTaskIds": [
+        "DL-B1-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "مفردات",
+        "فهم كلمة"
+      ],
+      "prompt": "ما معنى الاسم **das Erlebnis**؟",
+      "options": [
+        "النادي أو الجمعية.",
+        "تجربة أو حدث مميّز.",
+        "الذكرى."
+      ],
+      "answerIndex": 1,
+      "explanation": "das Erlebnis تعني تجربة أو حدثًا مميّزًا، أما الذكرى فهي die Erinnerung."
+    },
+    {
+      "id": "DL-B1-01-Q02",
+      "sourceTaskIds": [
+        "DL-B1-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "مفردات",
+        "تركيب فعلي"
+      ],
+      "prompt": "أي تركيب يعني «يشارك في دورة»؟",
+      "options": [
+        "sich für einen Kurs interessieren",
+        "sich an einen Kurs erinnern",
+        "an einem Kurs teilnehmen"
+      ],
+      "answerIndex": 2,
+      "explanation": "التركيب teilnehmen an يعني يشارك في؛ ومع einem Kurs يأتي حرف الجر an مع Dativ."
+    },
+    {
+      "id": "DL-B1-01-Q03",
+      "sourceTaskIds": [
+        "DL-B1-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "als وwenn",
+        "تصريف الفعل",
+        "الفعل في نهاية الجملة التابعة"
+      ],
+      "prompt": "أكمل بصيغة الماضي المناسبة، مع وضع الفعل في نهاية الجملة التابعة: **Als der Kurs ___, machten alle ein Foto.** (enden)",
+      "options": [
+        "endete",
+        "endet",
+        "enden"
+      ],
+      "answerIndex": 0,
+      "explanation": "الفاعل مفرد والموقف ماضٍ: endete. ويأتي الفعل المصرف في نهاية جملة als التابعة."
+    },
+    {
+      "id": "DL-B1-01-Q04",
+      "sourceTaskIds": [
+        "DL-B1-01-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "الفعل في نهاية الجملة التابعة"
+      ],
+      "prompt": "أي جملة ترتب الكلمات **als / ich / jung / war / spielte / ich / Fußball** ترتيبًا صحيحًا؟",
+      "options": [
+        "Als ich war jung, spielte ich Fußball.",
+        "Als war ich jung, spielte Fußball ich.",
+        "Als ich jung war, spielte ich Fußball."
+      ],
+      "answerIndex": 2,
+      "explanation": "في جملة als التابعة يأتي الفعل المصرف في النهاية: Als ich jung war."
+    },
+    {
+      "id": "DL-B1-01-Q05",
+      "sourceTaskIds": [
+        "DL-B1-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "معنى als",
+        "حدث محدد"
+      ],
+      "prompt": "ما المعنى الأنسب للجملة **Als ich 18 war, zog ich um**؟",
+      "options": [
+        "كنت أنتقل كلما بلغت 18 عامًا.",
+        "انتقلت مرةً في فترة ماضية محددة.",
+        "سأنتقل إذا بلغت 18 عامًا."
+      ],
+      "answerIndex": 1,
+      "explanation": "تصف als هنا فترة ماضية محددة وقع فيها الانتقال، لا عادة متكررة أو شرطًا حاضرًا."
+    },
+    {
+      "id": "DL-B1-01-Q06",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "معلومة محددة"
+      ],
+      "prompt": "Wie alt war Lina, als sie ihre erste Kamera bekam?",
+      "options": [
+        "Sie war 16 Jahre alt.",
+        "Sie war 17 Jahre alt.",
+        "Sie war 14 Jahre alt."
+      ],
+      "answerIndex": 2,
+      "explanation": "يذكر نص القراءة أنها حصلت على الكاميرا عندما كان عمرها 14 عامًا."
+    },
+    {
+      "id": "DL-B1-01-Q07",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "عادة مع wenn"
+      ],
+      "prompt": "Was fotografierte Lina oft, wenn sie ihre Großeltern besuchte?",
+      "options": [
+        "Den Garten und die Tiere.",
+        "Den Park und ihre Freunde.",
+        "Die Webseite ihres Vereins."
+      ],
+      "answerIndex": 0,
+      "explanation": "كان نص القراءة يقول إنها كانت تصوّر الحديقة والحيوانات عند زيارة جدّيها."
+    },
+    {
+      "id": "DL-B1-01-Q08",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "حدث ماضٍ محدد"
+      ],
+      "prompt": "Wo zeigte Lina einmal ihre Bilder?",
+      "options": [
+        "In einem Fotokurs.",
+        "Auf der Webseite ihres Vereins.",
+        "Bei einem Schulfest."
+      ],
+      "answerIndex": 2,
+      "explanation": "عرضت صورها مرةً في احتفال مدرسي، كما يذكر النص."
+    },
+    {
+      "id": "DL-B1-01-Q09",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "معلومة محددة"
+      ],
+      "prompt": "Wofür macht Lina inzwischen auch Bilder?",
+      "options": [
+        "Für ein Reisebüro.",
+        "Für die Webseite ihres Vereins.",
+        "Für die Zeitung ihrer Stadt."
+      ],
+      "answerIndex": 1,
+      "explanation": "تلتقط الآن صورًا أيضًا لموقع ناديها الإلكتروني."
+    },
+    {
+      "id": "DL-B1-01-Q10",
+      "sourceTaskIds": [
+        "DL-B1-01-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "skillTags": [
+        "تصحيح الرابط",
+        "حدث ماضٍ واحد"
+      ],
+      "prompt": "في الجملة التالية استُعمل الرابط خطأً لأن الحديث عن أول زيارة محددة. ما التصحيح المناسب؟ **Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.**",
+      "options": [
+        "Als ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+        "Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+        "Wenn ich zum ersten Mal nach Wien komme, war ich sehr aufgeregt."
+      ],
+      "answerIndex": 0,
+      "explanation": "الزيارة الأولى حدث ماضٍ واحد؛ لذا نستخدم als بدل wenn."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-01-P01",
+      "sourceTaskIds": [
+        "DL-B1-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب فقرة من خمس جمل عن تجربة ماضية محددة وعادة تكررت لديك أو لدى شخصية متخيّلة. استخدم als مرةً للحدث المحدد وwenn مرةً للعادة، واجعل الفعل المصرف في نهاية كل جملة تابعة. اقرأ الفقرة بصوت واضح؛ لا يلزم تسجيلها.",
+      "criteria": {
+        "taskCompletion": "تتضمن الإجابة خمس جمل على الأقل، وتذكر حدثًا ماضيًا واحدًا وعادة متكررة.",
+        "meaningClarity": "يمكن للقارئ تمييز الحدث الواحد من النشاط المتكرر وفهم تسلسلهما.",
+        "targetSkill": "تستخدم als للحدث المحدد وwenn للعادة، ويأتي الفعل المصرف في نهاية كل جملة تابعة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 60,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-01-P02",
+      "sourceTaskIds": [
+        "DL-B1-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب حوارًا قصيرًا من أربعة أسطر عن هواية قديمة. اجعل أحد السؤالين عن تجربة أولى أجب عنها بـals، والآخر عن نشاط تكرر أجب عنه بـwenn، وأضف العبارة **Ich erinnere mich an ...** مرةً. إذا كنت تدرس وحدك، اكتب السؤالين والإجابتين بنفسك، ثم اقرأ دوري الحوار بصوت مرتفع دون تسجيل.",
+      "criteria": {
+        "taskCompletion": "يحتوي الحوار سؤالين وإجابتين على الأقل، ويذكر هواية وذكرى.",
+        "meaningClarity": "تتضح التجربة الأولى والعادة المتكررة، ويُفهم ما الذي تتذكره الشخصية.",
+        "targetSkill": "تستخدم als لحدث واحد وwenn للتكرار مع ترتيب الفعل الصحيح، وتستعمل Ich erinnere mich an مع تركيب مفهوم."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 65,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
