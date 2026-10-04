@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-06-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-06-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة ومفاتيحها وربطها بهدف B1.6 وبتمارين المصدر T01–T07.",
+      "تغطي الأسئلة مفردات الحركة، وتصريف sollte وkönnte، وترتيب الأفعال، والتمييز بين التوصية والاقتراح، وفهم القراءة والاستماع.",
+      "مهمتا الأداء مرتبطتان بتمرين النصيحة T08، وتتحققان ذاتيًا محليًا. يمكن كتابة الناتج أو قوله دون تسجيل؛ النصائح عامة وليست طبية شخصية، ولا يعتمد التقييم على الصوت المولّد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-06-Q01",
+      "sourceTaskIds": ["DL-B1-06-T01"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["مفردات الحركة", "فهم كلمة"],
+      "prompt": "ما معنى **die Ausdauer**؟",
+      "options": ["القدرة على التحمّل.", "الاستراحة القصيرة.", "الإحماء قبل الرياضة."],
+      "answerIndex": 0,
+      "explanation": "die Ausdauer تعني القدرة على التحمّل ومواصلة نشاط مدة مناسبة."
+    },
+    {
+      "id": "DL-B1-06-Q02",
+      "sourceTaskIds": ["DL-B1-06-T02"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["تصريف Modalverb", "sollte"],
+      "prompt": "أكمل بصيغة التوصية المناسبة: **Du ___ regelmäßige Pausen einplanen.**",
+      "options": ["solltest", "solltet", "sollten"],
+      "answerIndex": 0,
+      "explanation": "مع du نستخدم solltest؛ ويأتي المصدر einplanen في نهاية الجملة."
+    },
+    {
+      "id": "DL-B1-06-Q03",
+      "sourceTaskIds": ["DL-B1-06-T02"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["تصريف Modalverb", "könnte"],
+      "prompt": "اختر صيغة الاقتراح المناسبة للمتكلم المفرد: **Ich ___ einen kurzen Spaziergang machen.**",
+      "options": ["könntest", "könnte", "könnten"],
+      "answerIndex": 1,
+      "explanation": "صيغة können في Konjunktiv II مع ich هي könnte، ويأتي المصدر machen في آخر الجملة."
+    },
+    {
+      "id": "DL-B1-06-Q04",
+      "sourceTaskIds": ["DL-B1-06-T03"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["ترتيب الجملة", "مصدر الفعل"],
+      "prompt": "أي جملة مرتبة على نحو صحيح؟",
+      "options": [
+        "Du solltest dich vor dem Training aufwärmen.",
+        "Du solltest dich vor dem Training wärmst auf.",
+        "Du solltest dich vor dem Training aufwärmst."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد Modalverb يأتي الفعل الأساسي بصيغة المصدر في نهاية الجملة: aufwärmen."
+    },
+    {
+      "id": "DL-B1-06-Q05",
+      "sourceTaskIds": ["DL-B1-06-T04"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["قوة النصيحة", "sollte و könnte"],
+      "prompt": "اختر الجملة الأنسب لنصيحة مباشرة نسبيًا: **Du ___ regelmäßige Pausen einplanen.**",
+      "options": ["könntest", "solltest", "könntet"],
+      "answerIndex": 1,
+      "explanation": "solltest تناسب التوصية المباشرة نسبيًا، بينما könntest تعرض خيارًا ألطف وأقل إلزامًا."
+    },
+    {
+      "id": "DL-B1-06-Q06",
+      "sourceTaskIds": ["DL-B1-06-T05"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["فهم القراءة", "تفصيل زمني"],
+      "prompt": "Wie oft trifft sich die Gruppe „Bewegte Pause“?",
+      "options": ["Einmal pro Woche.", "Zweimal pro Woche.", "Jeden Tag."],
+      "answerIndex": 1,
+      "explanation": "تذكر القراءة أن المجموعة تجتمع مرتين في الأسبوع: zweimal pro Woche."
+    },
+    {
+      "id": "DL-B1-06-Q07",
+      "sourceTaskIds": ["DL-B1-06-T05"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["فهم القراءة", "حدود المجموعة"],
+      "prompt": "Was ersetzt die Gruppe laut dem Lesetext?",
+      "options": ["Sie ersetzt keine medizinische Beratung.", "Sie ersetzt die Teilnahme an allen Treffen.", "Sie ersetzt eine qualifizierte Fachperson."],
+      "answerIndex": 0,
+      "explanation": "يوضح النص أن المجموعة لا تحل محل المشورة الطبية، وأن من لديه أعراضًا أو شكًا يراجع مختصًا مؤهلًا."
+    },
+    {
+      "id": "DL-B1-06-Q08",
+      "sourceTaskIds": ["DL-B1-06-T06"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["فهم الاستماع", "المدة"],
+      "prompt": "Seit wann geht die Person zur Laufgruppe?",
+      "options": ["Seit drei Wochen.", "Seit vier Wochen.", "Seit sechs Monaten."],
+      "answerIndex": 1,
+      "explanation": "يبدأ نص الاستماع بعبارة Seit vier Wochen؛ أي منذ أربعة أسابيع."
+    },
+    {
+      "id": "DL-B1-06-Q09",
+      "sourceTaskIds": ["DL-B1-06-T06"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["فهم الاستماع", "تفصيل عملي"],
+      "prompt": "Was kann die Person machen, wenn sie müde ist?",
+      "options": ["Eine Pause machen.", "Mit allen Schritt halten.", "Das Training sofort steigern."],
+      "answerIndex": 0,
+      "explanation": "يقول المتحدث إنه يستطيع أخذ استراحة إذا شعر بالتعب، وليس مضطرًا إلى مجاراة الجميع."
+    },
+    {
+      "id": "DL-B1-06-Q10",
+      "sourceTaskIds": ["DL-B1-06-T07"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "skillTags": ["إعادة الصياغة", "اقتراح بـkönnte"],
+      "prompt": "حوّل الأمر **Mach in der Pause einen Spaziergang.** إلى اقتراح ألطف.",
+      "options": [
+        "Du könntest in der Pause einen Spaziergang machen.",
+        "Du könntest in der Pause einen Spaziergang machst.",
+        "Du könntest in der Pause macht einen Spaziergang."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد könntest نضع المصدر machen في نهاية الجملة؛ وهذا يحوّل الأمر إلى اقتراح ألطف."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-06-P01",
+      "sourceTaskIds": ["DL-B1-06-T08"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "قدّم أربع نصائح عامة لشخصية خيالية تريد إضافة حركة بسيطة إلى يومها. استخدم **sollte** مرة واحدة على الأقل للتوصية و**könnte** مرة واحدة على الأقل لاقتراح اختياري. يمكنك كتابة النص أو قوله شفهيًا؛ وإذا كنت تتعلم وحدك فاكتبه ثم اقرأه بصوت واضح. لا تستخدم معلومات شخصية أو تقدّم تشخيصًا أو نصيحة طبية، ولا يلزم تسجيل الصوت.",
+      "criteria": {
+        "taskCompletion": "يتضمن الناتج أربع نصائح على الأقل لشخصية خيالية عن الحركة اليومية.",
+        "meaningClarity": "النصائح مفهومة وعامة وغير تشخيصية، وتناسب موقف الشخصية الخيالية.",
+        "targetSkill": "تستخدم sollte للتوصية وkönnte لاقتراح اختياري مرة على الأقل لكل منهما، مع تصريف الفعل المساعد وورود المصدر في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-06-P02",
+      "sourceTaskIds": ["DL-B1-06-T08"],
+      "objectiveIds": ["DL-B1-06-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "اكتب رسالة قصيرة أو حوارًا من أربعة أدوار بين زميلين يتفقان على استراحة حركة؛ أو قدّم الفكرة شفهيًا. ضمّن توصية عامة بـ**sollte** واقتراحًا اختياريًا بـ**könnte**. إن كنت تتعلم وحدك، فاكتب الرسالة أو الحوار ثم اقرأه بصوت واضح. اجعل النص خياليًا وغير طبي، ولا يلزم التسجيل.",
+      "criteria": {
+        "taskCompletion": "يتضمن الناتج رسالة قصيرة أو أربعة أدوار حوارية عن استراحة حركة يومية.",
+        "meaningClarity": "يفهم القارئ أو المستمع موعد الاستراحة وفكرتها وكيفية المشاركة دون إلزام.",
+        "targetSkill": "تستخدم sollte للتوصية وkönnte لاقتراح ممكن، مع تصريف سليم ومصدر في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

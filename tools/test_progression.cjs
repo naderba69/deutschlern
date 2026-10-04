@@ -77,9 +77,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
   assert.equal(vm.runInContext("course.audioAssets.length", context), 122, "the generated A0, A1, A2, and B1.1 through B1.5 audio assets must be carried into the course bundle");
   assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 270, "the audio manifest must contain all two hundred seventy generated clips");
-  assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 34, "the course bundle must carry the thirty-four ready lesson assessments");
-  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 340, "the course bundle must carry all three hundred forty scored lesson questions");
-  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 68, "the course bundle must carry all sixty-eight lesson performance tasks");
+  assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 35, "the course bundle must carry the thirty-five ready lesson assessments");
+  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 350, "the course bundle must carry all three hundred fifty scored lesson questions");
+  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 70, "the course bundle must carry all seventy lesson performance tasks");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -754,7 +754,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(b1EducationListeningQuestion.options[b1EducationListeningQuestion.answerIndex], "Im Bereich Kommunikation.", "the B1.4 listening answer must agree with the source script");
   const b1CitiesSource = fs.readFileSync(path.join(rootDir, "content/B1/lesson-05-cities-relative-clauses.md"), "utf8");
   const b1CitiesAssessment = b1Lessons[4];
-  assert.equal(b1CitiesAssessment.assessment?.status, "ready", "B1.5 must have a ready local assessment before its audio batch");
+  assert.equal(b1CitiesAssessment.assessment?.status, "ready", "B1.5 must retain its ready local assessment after the audio batch");
   assert.equal(b1CitiesAssessment.assessment?.minimumScore, 80, "B1.5 must retain the 80 percent mastery threshold");
   assert.equal(b1CitiesAssessment.quiz?.length, 10, "B1.5 must include ten scored questions");
   assert.equal(b1CitiesAssessment.performanceTasks?.length, 2, "B1.5 must include two practical self-check tasks");
@@ -771,8 +771,27 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b1CitiesListeningQuestion = b1CitiesAssessment.quiz.find((question) => question.id === "DL-B1-05-Q09");
   assert.ok(b1CitiesListeningQuestion.sourceTaskIds.includes("DL-B1-05-T06"), "B1.5 listening question must link to the source listening activity");
   assert.equal(b1CitiesListeningQuestion.options[b1CitiesListeningQuestion.answerIndex], "Südlich der Innenstadt.", "the B1.5 listening answer must agree with its source script");
-  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b1CitiesAssessment.id), true, "B1.5 audio must be bundled only after its content and assessment batch passes");
-  assert.equal(b1Lessons.slice(5).every((lesson) => lesson.assessment?.status === "not_ready"), true, "B1.6 and later B1 lessons must remain unassessed until their production batches");
+  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b1CitiesAssessment.id), true, "B1.5 audio must remain bundled with its assessed lesson");
+  const b1HealthSource = fs.readFileSync(path.join(rootDir, "content/B1/lesson-06-health-fitness-advice.md"), "utf8");
+  const b1HealthAssessment = b1Lessons[5];
+  assert.equal(b1HealthAssessment.assessment?.status, "ready", "B1.6 must have a ready local assessment before its audio batch");
+  assert.equal(b1HealthAssessment.assessment?.minimumScore, 80, "B1.6 must enforce the 80 percent mastery threshold");
+  assert.equal(b1HealthAssessment.quiz?.length, 10, "B1.6 must include ten scored questions");
+  assert.equal(b1HealthAssessment.performanceTasks?.length, 2, "B1.6 must include two practical self-check tasks");
+  assert.equal(b1HealthAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-06-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking")), true, "B1.6 performance tasks must map to the general-advice source task, offer oral and written modes, and work without audio");
+  assert.match(b1HealthSource, /أو قدّم النصائح شفهيًا/);
+  const b1HealthQuestionSources = new Set(b1HealthAssessment.quiz.flatMap((question) => question.sourceTaskIds));
+  for (let task = 1; task <= 7; task += 1) assert.ok(b1HealthQuestionSources.has(`DL-B1-06-T0${task}`), `B1.6 quiz must cover source task T0${task}`);
+  const b1HealthReadingQuestion = b1HealthAssessment.quiz.find((question) => question.id === "DL-B1-06-Q06");
+  assert.ok(b1HealthReadingQuestion.sourceTaskIds.includes("DL-B1-06-T05"), "B1.6 reading question must map to the source reading activity");
+  assert.equal(b1HealthReadingQuestion.options[b1HealthReadingQuestion.answerIndex], "Zweimal pro Woche.", "the B1.6 reading answer must agree with the lesson source");
+  const b1HealthListeningQuestion = b1HealthAssessment.quiz.find((question) => question.id === "DL-B1-06-Q08");
+  assert.ok(b1HealthListeningQuestion.sourceTaskIds.includes("DL-B1-06-T06"), "B1.6 listening question must map to the source listening activity");
+  assert.equal(b1HealthListeningQuestion.options[b1HealthListeningQuestion.answerIndex], "Seit vier Wochen.", "the B1.6 listening answer must agree with the source script");
+  const b1HealthRewriteQuestion = b1HealthAssessment.quiz.find((question) => question.id === "DL-B1-06-Q10");
+  assert.ok(b1HealthRewriteQuestion.sourceTaskIds.includes("DL-B1-06-T07"), "B1.6 paraphrase question must map to the source transformation activity");
+  assert.equal(b1HealthRewriteQuestion.options[b1HealthRewriteQuestion.answerIndex], "Du könntest in der Pause einen Spaziergang machen.", "the B1.6 answer must correctly place the modal infinitive at the sentence end");
+  assert.equal(b1Lessons.slice(6).every((lesson) => lesson.assessment?.status === "not_ready"), true, "B1.7 and later B1 lessons must remain unassessed until their production batches");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1'))", context), true, "the first A1 lesson must open after the A0 gate");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1' && lesson.unit === 2))", context), false, "later A1 lessons must remain sequentially locked");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), a1Lessons[0].id, "the first A1 lesson must be the next required step after the gate");
@@ -836,8 +855,17 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   `, context);
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[4])", context), true, "B1.5 may open only after B1.4 is mastered and its ready assessment is available");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[4].id, "B1.5 must be the next required step after mastering B1.4");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[5])", context), false, "B1.6 must remain locked until B1.5 is mastered");
+  vm.runInContext(`
+    state.completedLessons[${JSON.stringify("b1-05-cities-relative-clauses")}] = {
+      score: 80, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
+      assessmentVersion: getLessonsInLevel('B1')[4].assessment.version,
+    };
+  `, context);
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[5])", context), true, "B1.6 may open only after B1.5 mastery and its ready assessment is available");
+  assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[5].id, "B1.6 must be the next required step after mastering B1.5");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through B1.5, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1/B1.2/B1.3/B1.4/B1.5 audio display, audio playback and character-voice consistency through B1.5, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and local B1.1/B1.2/B1.3/B1.4/B1.5 assessments.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through B1.6, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1/B1.2/B1.3/B1.4/B1.5 audio display, audio playback and character-voice consistency through B1.5, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and local B1.1/B1.2/B1.3/B1.4/B1.5/B1.6 assessments.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;
