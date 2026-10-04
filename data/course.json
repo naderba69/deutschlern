@@ -1,6 +1,6 @@
 {
   "title": "مساري الألماني",
-  "version": 2,
+  "version": 3,
   "levels": [
     {
       "id": "A0",
@@ -53,9 +53,304 @@
       "durationLabel": "20 دقيقة",
       "objective": "أستطيع التعرّف على أسماء الحروف وتهجئة اسمي وقراءة بعض الأنماط الصوتية الشائعة.",
       "sourceFile": "content/A0/lesson-01-alphabet.md",
-      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 20 دقيقة · <strong>المهارات:</strong> قراءة أولية، تهجئة، نطق · <strong>الهدف:</strong> أستطيع التعرّف على أسماء الحروف وتهجئة اسمي وقراءة بعض الأنماط الصوتية الشائعة.</p>\n<blockquote dir=\"auto\">النطق المكتوب بالعربية تقريبي للمساعدة فقط؛ استمع إلى الصوت الألماني إن توفر، ولا تحاول مطابقة كل صوت عربيًا تمامًا.</blockquote>\n<h2 dir=\"auto\">1) الأبجدية</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">الحرف</th><th dir=\"auto\">اسم الحرف بالألمانية</th><th dir=\"auto\">تقريب للمساعدة</th></tr></thead><tbody><tr><td dir=\"auto\">A a</td><td dir=\"auto\">ah</td><td dir=\"auto\">آ</td></tr><tr><td dir=\"auto\">B b</td><td dir=\"auto\">be</td><td dir=\"auto\">بيه</td></tr><tr><td dir=\"auto\">C c</td><td dir=\"auto\">tse</td><td dir=\"auto\">تسيه</td></tr><tr><td dir=\"auto\">D d</td><td dir=\"auto\">de</td><td dir=\"auto\">ديه</td></tr><tr><td dir=\"auto\">E e</td><td dir=\"auto\">eh</td><td dir=\"auto\">إيه</td></tr><tr><td dir=\"auto\">F f</td><td dir=\"auto\">ef</td><td dir=\"auto\">إف</td></tr><tr><td dir=\"auto\">G g</td><td dir=\"auto\">ge</td><td dir=\"auto\">گيه؛ g صلبة، لا غ رخوة</td></tr><tr><td dir=\"auto\">H h</td><td dir=\"auto\">ha</td><td dir=\"auto\">ها</td></tr><tr><td dir=\"auto\">I i</td><td dir=\"auto\">i</td><td dir=\"auto\">إي</td></tr><tr><td dir=\"auto\">J j</td><td dir=\"auto\">jot</td><td dir=\"auto\">يوت</td></tr><tr><td dir=\"auto\">K k</td><td dir=\"auto\">ka</td><td dir=\"auto\">كا</td></tr><tr><td dir=\"auto\">L l</td><td dir=\"auto\">el</td><td dir=\"auto\">إل</td></tr><tr><td dir=\"auto\">M m</td><td dir=\"auto\">em</td><td dir=\"auto\">إم</td></tr><tr><td dir=\"auto\">N n</td><td dir=\"auto\">en</td><td dir=\"auto\">إن</td></tr><tr><td dir=\"auto\">O o</td><td dir=\"auto\">o</td><td dir=\"auto\">أو</td></tr><tr><td dir=\"auto\">P p</td><td dir=\"auto\">pe</td><td dir=\"auto\">پيه</td></tr><tr><td dir=\"auto\">Q q</td><td dir=\"auto\">ku</td><td dir=\"auto\">كو</td></tr><tr><td dir=\"auto\">R r</td><td dir=\"auto\">er</td><td dir=\"auto\">إر؛ الراء تختلف حسب المنطقة</td></tr><tr><td dir=\"auto\">S s</td><td dir=\"auto\">es</td><td dir=\"auto\">إس</td></tr><tr><td dir=\"auto\">T t</td><td dir=\"auto\">te</td><td dir=\"auto\">تيه</td></tr><tr><td dir=\"auto\">U u</td><td dir=\"auto\">u</td><td dir=\"auto\">أو طويلة</td></tr><tr><td dir=\"auto\">V v</td><td dir=\"auto\">fau</td><td dir=\"auto\">فاو</td></tr><tr><td dir=\"auto\">W w</td><td dir=\"auto\">we</td><td dir=\"auto\">ڤيه تقريبًا</td></tr><tr><td dir=\"auto\">X x</td><td dir=\"auto\">iks</td><td dir=\"auto\">إكس</td></tr><tr><td dir=\"auto\">Y y</td><td dir=\"auto\">Ypsilon</td><td dir=\"auto\">أوبسيلون تقريبًا</td></tr><tr><td dir=\"auto\">Z z</td><td dir=\"auto\">tset</td><td dir=\"auto\">تسيت</td></tr></tbody></table></div>\n<p dir=\"auto\">تظهر أيضًا حروف <strong>Ä ä، Ö ö، Ü ü</strong> (أوملاوت)، والحرف <strong>ß</strong> واسمه <em>Eszett</em>. هذه ليست بدائل عشوائية: غيّر النقطتان فوق الحرف صوته، وß يُنطق مثل ss.</p>\n<h2 dir=\"auto\">2) أنماط مفيدة في القراءة</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">النمط</th><th dir=\"auto\">مثال</th><th dir=\"auto\">تذكّر</th></tr></thead><tbody><tr><td dir=\"auto\"><strong>ei</strong></td><td dir=\"auto\">mein, nein</td><td dir=\"auto\">صوت قريب من «آي»؛ ليس مثل ie</td></tr><tr><td dir=\"auto\"><strong>ie</strong></td><td dir=\"auto\">vier, sieben</td><td dir=\"auto\">صوت i طويل</td></tr><tr><td dir=\"auto\"><strong>sch</strong></td><td dir=\"auto\">Schule</td><td dir=\"auto\">قريب من «ش»</td></tr><tr><td dir=\"auto\"><strong>z</strong></td><td dir=\"auto\">zwei</td><td dir=\"auto\">يبدأ بصوت «تس»</td></tr><tr><td dir=\"auto\"><strong>w</strong></td><td dir=\"auto\">Wasser</td><td dir=\"auto\">قريب من v في الإنجليزية</td></tr><tr><td dir=\"auto\"><strong>v</strong></td><td dir=\"auto\">vier</td><td dir=\"auto\">غالبًا f في الكلمات الألمانية الأساسية</td></tr><tr><td dir=\"auto\"><strong>sp / st</strong> في بداية مقطع</td><td dir=\"auto\">Sport, Student</td><td dir=\"auto\">غالبًا «شپ / شت» في بداية الكلمة</td></tr><tr><td dir=\"auto\"><strong>ch</strong></td><td dir=\"auto\">ich, Buch</td><td dir=\"auto\">له صوتان شائعان؛ سنتمرّن عليهما تدريجيًا</td></tr></tbody></table></div>\n<h2 dir=\"auto\">3) أمثلة للنطق والتهجئة</h2>\n<ul><li dir=\"auto\"><strong>mein</strong> — كلمة «لي/خاصتي»: لاحظ ei.</li><li dir=\"auto\"><strong>vier</strong> — أربعة: لاحظ ie.</li><li dir=\"auto\"><strong>Schule</strong> — مدرسة: لاحظ sch.</li><li dir=\"auto\"><strong>zwei</strong> — اثنان: يبدأ z بصوت تس.</li><li dir=\"auto\"><strong>Wasser</strong> — ماء: يبدأ w بصوت قريب من v.</li></ul>\n<h2 dir=\"auto\">4) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — اختر النمط الصحيح</h3>\n<p dir=\"auto\">أكمل بالكلمتين <strong>ei</strong> أو <strong>ie</strong>:</p>\n<ol><li dir=\"auto\">m__n (خاصتي)</li><li dir=\"auto\">v__r (أربعة)</li><li dir=\"auto\">dr__ (ثلاثة)</li><li dir=\"auto\">n__n (لا)</li></ol>\n<h3 dir=\"auto\">تمرين 2 — ما الصوت الأقرب؟</h3>\n<p dir=\"auto\">اختر الوصف التقريبي:</p>\n<ol><li dir=\"auto\"><strong>sch</strong> في <em>Schule</em>: أ) ش، ب) تس، ج) ف</li><li dir=\"auto\"><strong>z</strong> في <em>zwei</em>: أ) ز، ب) تس، ج) س</li><li dir=\"auto\"><strong>w</strong> في <em>Wasser</em>: أ) v تقريبًا، ب) ش، ج) خ</li></ol>\n<h3 dir=\"auto\">تمرين 3 — صِل الكلمة بالنمط</h3>\n<ol><li dir=\"auto\"><em>vier</em> · 2. <em>Schule</em> · 3. <em>zwei</em> · 4. <em>Wasser</em></li></ol>\n<p dir=\"auto\">أ. يبدأ بـ <strong>w</strong> · ب. يحتوي <strong>ie</strong> · ج. يحتوي <strong>sch</strong> · د. يبدأ بـ <strong>z</strong></p>\n<h3 dir=\"auto\">تمرين 4 — تهجئة اسم</h3>\n<p dir=\"auto\">هجّئ الأسماء التالية بصوت أسماء الحروف: <strong>Lina، Sami، Nora</strong>. اكتب سلسلة الحروف أيضًا.</p>\n<h3 dir=\"auto\">تمرين 5 — قراءة قصيرة</h3>\n<p dir=\"auto\">اقرأ الكلمات وحدد الحرف/النمط المطلوب:</p>\n<ul><li dir=\"auto\"><strong>Berlin</strong>: أين حرف B؟</li><li dir=\"auto\"><strong>Deutsch</strong>: ما الحرف الأخير؟</li><li dir=\"auto\"><strong>Schule</strong>: ما أول ثلاثة أحرف؟</li><li dir=\"auto\"><strong>sieben</strong>: هل تسمع نمط ie؟</li></ul>\n<h3 dir=\"auto\">تمرين 6 — إملاء ذاتي</h3>\n<p dir=\"auto\">اطلب من شخص أن يملي عليك أو استخدم قارئًا صوتيًا ألمانيًا لهذه الكلمات: <strong>Mina، Berlin، sieben، Schule</strong>. بعد ذلك قارن تهجئتك بالنموذج.</p>\n<h3 dir=\"auto\">تمرين 7 — تحدّي سريع</h3>\n<p dir=\"auto\">أي كلمة تبدأ بصوت «تس»؟ <strong>Wasser / zwei / Schule</strong>. وأي كلمتين فيهما نمط <strong>ie</strong>؟ <strong>vier / mein / sieben</strong>.</p>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1. mein، 2. vier، 3. drei، 4. nein.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. أ، 2. ب، 3. أ.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1-ب، 2-ج، 3-د، 4-أ.</li><li dir=\"auto\"><strong>تمرين 4:</strong> L-I-N-A؛ S-A-M-I؛ N-O-R-A. المهم نطق أسماء الحروف الألمانية، لا أصوات الحروف العربية.</li><li dir=\"auto\"><strong>تمرين 5:</strong> Berlin يبدأ بـB؛ Deutsch ينتهي بـh؛ Schule يبدأ بـsch؛ نعم، sieben فيها ie.</li><li dir=\"auto\"><strong>تمرين 6:</strong> تهجئة الكلمات النموذجية: Mina، Berlin، sieben، Schule؛ قارنها بما دوّنته من الإملاء.</li><li dir=\"auto\"><strong>تمرين 7:</strong> zwei؛ والكلمتان vier وsieben.</li></ul>\n</div></details>\n<h2 dir=\"auto\">6) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>ei</strong> → قريب من «آي»: <em>mein</em>.</li><li dir=\"auto\"><strong>ie</strong> → i طويل: <em>vier</em>.</li><li dir=\"auto\"><strong>sch</strong> → قريب من «ش»: <em>Schule</em>.</li><li dir=\"auto\"><strong>z</strong> → يبدأ غالبًا بصوت «تس»: <em>zwei</em>.</li></ul>",
+      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 20 دقيقة · <strong>المهارات:</strong> قراءة أولية، تهجئة، نطق · <strong>الهدف:</strong> أستطيع التعرّف على أسماء الحروف وتهجئة اسمي وقراءة بعض الأنماط الصوتية الشائعة.</p>\n<blockquote dir=\"auto\">النطق المكتوب بالعربية تقريبي للمساعدة فقط ولا يثبت صحة النطق. تسجيلات هذا الدرس لم تُضف بعد؛ ستأتي بعد اكتمال دفعة المحتوى دون صوت.</blockquote>\n<h2 dir=\"auto\">1) الأبجدية</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">الحرف</th><th dir=\"auto\">اسم الحرف بالألمانية</th><th dir=\"auto\">تقريب للمساعدة</th></tr></thead><tbody><tr><td dir=\"auto\">A a</td><td dir=\"auto\">ah</td><td dir=\"auto\">آ</td></tr><tr><td dir=\"auto\">B b</td><td dir=\"auto\">be</td><td dir=\"auto\">بيه</td></tr><tr><td dir=\"auto\">C c</td><td dir=\"auto\">tse</td><td dir=\"auto\">تسيه</td></tr><tr><td dir=\"auto\">D d</td><td dir=\"auto\">de</td><td dir=\"auto\">ديه</td></tr><tr><td dir=\"auto\">E e</td><td dir=\"auto\">eh</td><td dir=\"auto\">إيه</td></tr><tr><td dir=\"auto\">F f</td><td dir=\"auto\">ef</td><td dir=\"auto\">إف</td></tr><tr><td dir=\"auto\">G g</td><td dir=\"auto\">ge</td><td dir=\"auto\">گيه؛ g صلبة، لا غ رخوة</td></tr><tr><td dir=\"auto\">H h</td><td dir=\"auto\">ha</td><td dir=\"auto\">ها</td></tr><tr><td dir=\"auto\">I i</td><td dir=\"auto\">i</td><td dir=\"auto\">إي</td></tr><tr><td dir=\"auto\">J j</td><td dir=\"auto\">jot</td><td dir=\"auto\">يوت</td></tr><tr><td dir=\"auto\">K k</td><td dir=\"auto\">ka</td><td dir=\"auto\">كا</td></tr><tr><td dir=\"auto\">L l</td><td dir=\"auto\">el</td><td dir=\"auto\">إل</td></tr><tr><td dir=\"auto\">M m</td><td dir=\"auto\">em</td><td dir=\"auto\">إم</td></tr><tr><td dir=\"auto\">N n</td><td dir=\"auto\">en</td><td dir=\"auto\">إن</td></tr><tr><td dir=\"auto\">O o</td><td dir=\"auto\">o</td><td dir=\"auto\">أو</td></tr><tr><td dir=\"auto\">P p</td><td dir=\"auto\">pe</td><td dir=\"auto\">پيه</td></tr><tr><td dir=\"auto\">Q q</td><td dir=\"auto\">ku</td><td dir=\"auto\">كو</td></tr><tr><td dir=\"auto\">R r</td><td dir=\"auto\">er</td><td dir=\"auto\">إر؛ الراء تختلف حسب المنطقة</td></tr><tr><td dir=\"auto\">S s</td><td dir=\"auto\">es</td><td dir=\"auto\">إس</td></tr><tr><td dir=\"auto\">T t</td><td dir=\"auto\">te</td><td dir=\"auto\">تيه</td></tr><tr><td dir=\"auto\">U u</td><td dir=\"auto\">u</td><td dir=\"auto\">أو طويلة</td></tr><tr><td dir=\"auto\">V v</td><td dir=\"auto\">fau</td><td dir=\"auto\">فاو</td></tr><tr><td dir=\"auto\">W w</td><td dir=\"auto\">we</td><td dir=\"auto\">ڤيه تقريبًا</td></tr><tr><td dir=\"auto\">X x</td><td dir=\"auto\">iks</td><td dir=\"auto\">إكس</td></tr><tr><td dir=\"auto\">Y y</td><td dir=\"auto\">Ypsilon</td><td dir=\"auto\">أوبسيلون تقريبًا</td></tr><tr><td dir=\"auto\">Z z</td><td dir=\"auto\">tset</td><td dir=\"auto\">تسيت</td></tr></tbody></table></div>\n<p dir=\"auto\">تظهر أيضًا حروف <strong>Ä ä، Ö ö، Ü ü</strong> (أوملاوت)، والحرف <strong>ß</strong> واسمه <em>Eszett</em>. يغيّر الأوملاوت صوت الحركة، ويُنطق ß مثل ss لكنه ليس بديلًا إملائيًا عشوائيًا: يُكتب عادة بعد حركة طويلة أو ثنائي صوت، وss بعد حركة قصيرة؛ ستأتي أمثلة إضافية لاحقًا.</p>\n<h2 dir=\"auto\">2) أنماط مفيدة في القراءة</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">النمط</th><th dir=\"auto\">مثال</th><th dir=\"auto\">تذكّر</th></tr></thead><tbody><tr><td dir=\"auto\"><strong>ei</strong></td><td dir=\"auto\">mein, nein</td><td dir=\"auto\">صوت قريب من «آي»؛ ليس مثل ie</td></tr><tr><td dir=\"auto\"><strong>ie</strong></td><td dir=\"auto\">vier, sieben</td><td dir=\"auto\">صوت i طويل</td></tr><tr><td dir=\"auto\"><strong>sch</strong></td><td dir=\"auto\">Schule</td><td dir=\"auto\">قريب من «ش»</td></tr><tr><td dir=\"auto\"><strong>z</strong></td><td dir=\"auto\">zwei</td><td dir=\"auto\">يبدأ بصوت «تس»</td></tr><tr><td dir=\"auto\"><strong>w</strong></td><td dir=\"auto\">Wasser</td><td dir=\"auto\">قريب من v في الإنجليزية</td></tr><tr><td dir=\"auto\"><strong>v</strong></td><td dir=\"auto\">vier</td><td dir=\"auto\">غالبًا f في الكلمات الألمانية الأساسية</td></tr><tr><td dir=\"auto\"><strong>sp / st</strong> في بداية مقطع</td><td dir=\"auto\">Sport, Student</td><td dir=\"auto\">غالبًا «شپ / شت» في بداية الكلمة</td></tr><tr><td dir=\"auto\"><strong>ch</strong></td><td dir=\"auto\">ich, Buch</td><td dir=\"auto\">له صوتان شائعان؛ سنتمرّن عليهما تدريجيًا</td></tr></tbody></table></div>\n<h2 dir=\"auto\">3) أمثلة للنطق والتهجئة</h2>\n<ul><li dir=\"auto\"><strong>mein</strong> — كلمة «لي/خاصتي»: لاحظ ei.</li><li dir=\"auto\"><strong>vier</strong> — أربعة: لاحظ ie.</li><li dir=\"auto\"><strong>Schule</strong> — مدرسة: لاحظ sch.</li><li dir=\"auto\"><strong>zwei</strong> — اثنان: يبدأ z بصوت تس.</li><li dir=\"auto\"><strong>Wasser</strong> — ماء: يبدأ w بصوت قريب من v.</li></ul>\n<h2 dir=\"auto\">4) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — اختر النمط الصحيح</h3>\n<p dir=\"auto\">أكمل بالكلمتين <strong>ei</strong> أو <strong>ie</strong>:</p>\n<ol><li dir=\"auto\">m__n (خاصتي)</li><li dir=\"auto\">v__r (أربعة)</li><li dir=\"auto\">dr__ (ثلاثة)</li><li dir=\"auto\">n__n (لا)</li></ol>\n<h3 dir=\"auto\">تمرين 2 — ما الصوت الأقرب؟</h3>\n<p dir=\"auto\">اختر الوصف التقريبي:</p>\n<ol><li dir=\"auto\"><strong>sch</strong> في <em>Schule</em>: أ) ش، ب) تس، ج) ف</li><li dir=\"auto\"><strong>z</strong> في <em>zwei</em>: أ) ز، ب) تس، ج) س</li><li dir=\"auto\"><strong>w</strong> في <em>Wasser</em>: أ) v تقريبًا، ب) ش، ج) خ</li></ol>\n<h3 dir=\"auto\">تمرين 3 — صِل الكلمة بالنمط</h3>\n<ol><li dir=\"auto\"><em>vier</em> · 2. <em>Schule</em> · 3. <em>zwei</em> · 4. <em>Wasser</em></li></ol>\n<p dir=\"auto\">أ. يبدأ بـ <strong>w</strong> · ب. يحتوي <strong>ie</strong> · ج. يحتوي <strong>sch</strong> · د. يبدأ بـ <strong>z</strong></p>\n<h3 dir=\"auto\">تمرين 4 — تهجئة اسم</h3>\n<p dir=\"auto\">هجّئ الأسماء التالية بصوت أسماء الحروف: <strong>Lina، Sami، Nora</strong>. اكتب سلسلة الحروف أيضًا.</p>\n<h3 dir=\"auto\">تمرين 5 — قراءة كلمات</h3>\n<p dir=\"auto\">اقرأ الكلمات وحدد الحرف/النمط المطلوب:</p>\n<ul><li dir=\"auto\"><strong>Berlin</strong>: أين حرف B؟</li><li dir=\"auto\"><strong>Deutsch</strong>: ما الحرف الأخير؟</li><li dir=\"auto\"><strong>Schule</strong>: ما أول ثلاثة أحرف؟</li><li dir=\"auto\"><strong>sieben</strong>: هل ترى النمط ie؟</li></ul>\n<h3 dir=\"auto\">تمرين 6 — كتابة من الذاكرة (دون تسجيل صوتي)</h3>\n<p dir=\"auto\">غطِّ قائمة الكلمات <strong>Mina، Berlin، sieben، Schule</strong>، واكتبها من الذاكرة، ثم اكشفها وقارن الحروف والأنماط. هذا تدريب على القراءة والكتابة، <strong>وليس اختبار استماع أو نطق</strong>. ستُضاف تسجيلات الاستماع لاحقًا بعد اكتمال دفعة المحتوى دون صوت.</p>\n<h3 dir=\"auto\">تمرين 7 — تحدّي سريع</h3>\n<p dir=\"auto\">أي كلمة تبدأ بصوت «تس»؟ <strong>Wasser / zwei / Schule</strong>. وأي كلمتين فيهما نمط <strong>ie</strong>؟ <strong>vier / mein / sieben</strong>.</p>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1. mein، 2. vier، 3. drei، 4. nein.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. أ، 2. ب، 3. أ.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1-ب، 2-ج، 3-د، 4-أ.</li><li dir=\"auto\"><strong>تمرين 4:</strong> L-I-N-A (<strong>el – i – en – ah</strong>)؛ S-A-M-I (<strong>es – ah – em – i</strong>)؛ N-O-R-A (<strong>en – o – er – ah</strong>). المهم استعمال أسماء الحروف الألمانية، لا أصوات الحروف العربية.</li><li dir=\"auto\"><strong>تمرين 5:</strong> Berlin يبدأ بـB؛ Deutsch ينتهي بـh؛ Schule يبدأ بـsch؛ نعم، sieben فيها ie.</li><li dir=\"auto\"><strong>تمرين 6:</strong> اكتب Mina، Berlin، sieben، Schule من الذاكرة ثم قارنها بالنموذج؛ لا تُستخدم هذه المهمة دليلًا على الاستماع أو صحة النطق.</li><li dir=\"auto\"><strong>تمرين 7:</strong> zwei؛ والكلمتان vier وsieben.</li></ul>\n</div></details>\n<h2 dir=\"auto\">6) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>ei</strong> → قريب من «آي»: <em>mein</em>.</li><li dir=\"auto\"><strong>ie</strong> → i طويل: <em>vier</em>.</li><li dir=\"auto\"><strong>sch</strong> → قريب من «ش»: <em>Schule</em>.</li><li dir=\"auto\"><strong>z</strong> → يبدأ غالبًا بصوت «تس»: <em>zwei</em>.</li></ul>",
       "vocabulary": [],
-      "quiz": []
+      "quiz": [
+        {
+          "id": "DL-A0-01-Q01",
+          "sourceTaskIds": [
+            "DL-A0-01-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "تمييز الأنماط"
+          ],
+          "prompt": "أي نمط كتابي يرد في كلمة mein؟",
+          "options": [
+            "ie",
+            "z",
+            "ei",
+            "sch"
+          ],
+          "answerIndex": 2,
+          "explanation": "تُكتب mein بالنمط ei؛ ويقارب صوته «آي»."
+        },
+        {
+          "id": "DL-A0-01-Q02",
+          "sourceTaskIds": [
+            "DL-A0-01-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "تمييز الأنماط"
+          ],
+          "prompt": "أي نمط تراه في كلمة vier؟",
+          "options": [
+            "ie",
+            "ei",
+            "sch",
+            "sp"
+          ],
+          "answerIndex": 0,
+          "explanation": "تحتوي vier على ie، وهو هنا صوت i طويل؛ لا تخلطه بـei."
+        },
+        {
+          "id": "DL-A0-01-Q03",
+          "sourceTaskIds": [
+            "DL-A0-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "وعي صوتي"
+          ],
+          "prompt": "ما الصوت التقريبي للنمط sch في كلمة Schule؟",
+          "options": [
+            "ش",
+            "تس",
+            "ف"
+          ],
+          "answerIndex": 0,
+          "explanation": "يُقرأ sch في Schule قريبًا من «ش»."
+        },
+        {
+          "id": "DL-A0-01-Q04",
+          "sourceTaskIds": [
+            "DL-A0-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "وعي صوتي"
+          ],
+          "prompt": "كيف يبدأ نطق z في كلمة zwei؟",
+          "options": [
+            "ز",
+            "ش",
+            "تس"
+          ],
+          "answerIndex": 2,
+          "explanation": "يبدأ z في zwei بصوت قريب من «تس»، وليس ز أو ش."
+        },
+        {
+          "id": "DL-A0-01-Q05",
+          "sourceTaskIds": [
+            "DL-A0-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "وعي صوتي"
+          ],
+          "prompt": "ما الصوت التقريبي للحرف w في Wasser؟",
+          "options": [
+            "قريب من f",
+            "قريب من v الإنجليزية",
+            "قريب من خ"
+          ],
+          "answerIndex": 1,
+          "explanation": "يُقرأ w الألماني قريبًا من v الإنجليزية في كلمة Wasser."
+        },
+        {
+          "id": "DL-A0-01-Q06",
+          "sourceTaskIds": [
+            "DL-A0-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "وعي صوتي"
+          ],
+          "prompt": "كيف يُنطق v غالبًا في كلمة vier من المفردات الألمانية الأساسية؟",
+          "options": [
+            "قريب من z",
+            "قريب من w الألمانية",
+            "قريب من f"
+          ],
+          "answerIndex": 2,
+          "explanation": "في كلمات ألمانية أساسية مثل vier يُنطق v غالبًا قريبًا من f؛ توجد استثناءات وكلمات دخيلة."
+        },
+        {
+          "id": "DL-A0-01-Q07",
+          "sourceTaskIds": [
+            "DL-A0-01-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "وعي صوتي"
+          ],
+          "prompt": "أي وصف يقارب نطق sp في بداية كلمة Sport؟",
+          "options": [
+            "sh + p تقريبًا",
+            "s + p تقريبًا",
+            "f"
+          ],
+          "answerIndex": 0,
+          "explanation": "في بداية كلمة مثل Sport يُنطق sp قريبًا من /ʃp/ (تقريبًا sh + p)؛ والتقريب الكتابي ليس بديلًا عن سماع الصوت الألماني."
+        },
+        {
+          "id": "DL-A0-01-Q08",
+          "sourceTaskIds": [
+            "DL-A0-01-T05"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "تمييز الحروف"
+          ],
+          "prompt": "ما آخر حرف مكتوب في كلمة Deutsch؟",
+          "options": [
+            "s",
+            "h",
+            "t"
+          ],
+          "answerIndex": 1,
+          "explanation": "تُكتب Deutsch بالحروف D-e-u-t-s-c-h؛ وآخر حرف فيها h."
+        },
+        {
+          "id": "DL-A0-01-Q09",
+          "sourceTaskIds": [
+            "DL-A0-01-T05"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "قراءة",
+            "تمييز الحروف"
+          ],
+          "prompt": "ما أول ثلاثة أحرف مكتوبة في كلمة Schule؟",
+          "options": [
+            "sch",
+            "s-c-h-e",
+            "schu"
+          ],
+          "answerIndex": 0,
+          "explanation": "تبدأ Schule بالتتابع sch، ثم يأتي بعدها الحرف u."
+        },
+        {
+          "id": "DL-A0-01-Q10",
+          "sourceTaskIds": [
+            "DL-A0-01-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "skillTags": [
+            "أسماء الحروف",
+            "تهجئة"
+          ],
+          "prompt": "أي تسلسل من أسماء الحروف الألمانية يتهجّى Lina؟",
+          "options": [
+            "i – el – ah – en",
+            "el – i – en – ah",
+            "ell – ai – em – ah"
+          ],
+          "answerIndex": 1,
+          "explanation": "Lina تُهجّى L-I-N-A؛ وأسماء الحروف هنا el – i – en – ah."
+        }
+      ],
+      "assessment": {
+        "status": "ready",
+        "version": "a0-01-v1",
+        "minimumScore": 80,
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A0-01-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+          "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+          "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
+          "صُحح مفتاح سؤال vier إلى ie بعد مراجعة كل المفاتيح."
+        ]
+      },
+      "performanceTasks": [
+        {
+          "id": "DL-A0-01-P01",
+          "sourceTaskIds": [
+            "DL-A0-01-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "modality": [
+            "speaking",
+            "writing"
+          ],
+          "prompt": "اختر اسمًا قصيرًا، واكتب حروفه بالترتيب، ثم هجّئه بصوت أسماء الحروف الألمانية.",
+          "criteria": {
+            "taskCompletion": "يُهجّى الاسم كاملًا وبالترتيب المطلوب.",
+            "meaningClarity": "يمكن للمستمع تحديد الاسم المقصود من تسلسل الحروف.",
+            "targetSkill": "تُستخدم أسماء الحروف الألمانية المناسبة لكل حرف؛ لا تُشترط لهجة محلية بعينها."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A0-01-P02",
+          "sourceTaskIds": [
+            "DL-A0-01-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-01-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب الكلمات الأربع المستهدفة من الذاكرة، ثم هجّئ واحدة بأسماء الحروف الألمانية واقرأ الكلمات بصوت مرتفع. قارنها بالنموذج بعد المحاولة.",
+          "criteria": {
+            "taskCompletion": "يكتب الكلمات الأربع المستهدفة ويهجّئ كلمة واحدة أو يقرأها بوضوح.",
+            "meaningClarity": "يمكن تمييز الكلمات المكتوبة والمقصودة من التهجئة.",
+            "targetSkill": "يراجع الأنماط المستهدفة ei/ie/sch والحروف المناسبة؛ لا تُشترط لهجة محلية."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a0-02-greetings",
@@ -64,9 +359,9 @@
       "title": "التحية والتعارف",
       "minutes": 20,
       "durationLabel": "20 دقيقة",
-      "objective": "أستطيع أن أحيّي شخصًا، أودّعه، وأقول اسمي وأسأل عن اسمه بطريقة مناسبة.",
+      "objective": "أستطيع أن أحيّي شخصًا، أودّعه، وأقول اسمي وأسأل عن اسمه بطريقة مناسبة. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.",
       "sourceFile": "content/A0/lesson-02-greetings.md",
-      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 20 دقيقة · <strong>المهارات:</strong> محادثة، استماع، قراءة قصيرة · <strong>الهدف:</strong> أستطيع أن أحيّي شخصًا، أودّعه، وأقول اسمي وأسأل عن اسمه بطريقة مناسبة.</p>\n<h2 dir=\"auto\">1) عبارات أساسية</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">بالألمانية</th><th dir=\"auto\">المعنى والاستعمال</th></tr></thead><tbody><tr><td dir=\"auto\">Hallo!</td><td dir=\"auto\">مرحبًا! غير رسمي وشائع</td></tr><tr><td dir=\"auto\">Guten Morgen!</td><td dir=\"auto\">صباح الخير؛ غالبًا في الصباح</td></tr><tr><td dir=\"auto\">Guten Tag!</td><td dir=\"auto\">نهارك سعيد/مرحبًا؛ مهذبة وعامة</td></tr><tr><td dir=\"auto\">Guten Abend!</td><td dir=\"auto\">مساء الخير عند اللقاء مساءً</td></tr><tr><td dir=\"auto\">Gute Nacht!</td><td dir=\"auto\">تصبح على خير عند الوداع قبل النوم</td></tr><tr><td dir=\"auto\">Tschüss!</td><td dir=\"auto\">مع السلامة؛ غير رسمي</td></tr><tr><td dir=\"auto\">Auf Wiedersehen!</td><td dir=\"auto\">إلى اللقاء؛ رسمي/مهذب</td></tr><tr><td dir=\"auto\">Danke!</td><td dir=\"auto\">شكرًا</td></tr><tr><td dir=\"auto\">Bitte!</td><td dir=\"auto\">من فضلك / تفضل / العفو بحسب السياق</td></tr><tr><td dir=\"auto\">Freut mich.</td><td dir=\"auto\">تشرفت بلقائك.</td></tr></tbody></table></div>\n<h2 dir=\"auto\">2) اسمي واسمك</h2>\n<ul><li dir=\"auto\"><strong>Ich heiße Lina.</strong> — اسمي لينا.</li><li dir=\"auto\"><strong>Wie heißt du?</strong> — ما اسمك؟ مع شخص واحد وبأسلوب غير رسمي.</li><li dir=\"auto\"><strong>Wie heißen Sie?</strong> — ما اسم حضرتك؟ أسلوب رسمي ومهذب.</li></ul>\n<p dir=\"auto\">تصريف الفعل <strong>heißen</strong> في الحاضر:</p>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">الضمير</th><th dir=\"auto\">التصريف</th></tr></thead><tbody><tr><td dir=\"auto\">ich</td><td dir=\"auto\">heiße</td></tr><tr><td dir=\"auto\">du</td><td dir=\"auto\">heißt</td></tr><tr><td dir=\"auto\">er / sie</td><td dir=\"auto\">heißt</td></tr><tr><td dir=\"auto\">wir</td><td dir=\"auto\">heißen</td></tr><tr><td dir=\"auto\">ihr</td><td dir=\"auto\">heißt</td></tr><tr><td dir=\"auto\">sie / Sie</td><td dir=\"auto\">heißen</td></tr></tbody></table></div>\n<p dir=\"auto\">في الألمانية تُكتب <strong>Sie</strong> الرسمية بحرف كبير دائمًا.</p>\n<h2 dir=\"auto\">3) حوار أصلي</h2>\n<p dir=\"auto\"><strong>A:</strong> Guten Tag! Ich heiße Lina. Wie heißen Sie?<br><strong>B:</strong> Guten Tag! Ich bin Herr Weber. Freut mich.<br><strong>A:</strong> Freut mich auch. Auf Wiedersehen!<br><strong>B:</strong> Auf Wiedersehen!</p>\n<p dir=\"auto\">حوار غير رسمي:</p>\n<p dir=\"auto\"><strong>A:</strong> Hallo! Ich heiße Sami. Wie heißt du?<br><strong>B:</strong> Ich heiße Nora. Freut mich!<br><strong>A:</strong> Freut mich auch. Tschüss!<br><strong>B:</strong> Tschüss!</p>\n<h2 dir=\"auto\">4) كيف تسأل عن الحال؟</h2>\n<ul><li dir=\"auto\"><strong>Wie geht es dir?</strong> — كيف حالك؟ غير رسمي.</li><li dir=\"auto\"><strong>Wie geht es Ihnen?</strong> — كيف حال حضرتك؟ رسمي.</li><li dir=\"auto\"><strong>Gut, danke. Und dir?</strong> — بخير، شكرًا. وأنت؟</li><li dir=\"auto\"><strong>Sehr gut, danke.</strong> — جيد جدًا، شكرًا.</li><li dir=\"auto\"><strong>Es geht.</strong> — لا بأس.</li></ul>\n<h2 dir=\"auto\">5) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — اختر التحية المناسبة</h3>\n<ol><li dir=\"auto\">الساعة 8 صباحًا: <strong>Guten Morgen / Gute Nacht</strong></li><li dir=\"auto\">لقاء رسمي بعد الظهر: <strong>Guten Tag / Tschüss</strong></li><li dir=\"auto\">تودّع صديقًا: <strong>Tschüss / Guten Morgen</strong></li><li dir=\"auto\">تودّع شخصًا بأسلوب رسمي: <strong>Auf Wiedersehen / Hallo</strong></li></ol>\n<h3 dir=\"auto\">تمرين 2 — أكمل الفعل</h3>\n<ol><li dir=\"auto\">Ich ______ Lina. (heißen)</li><li dir=\"auto\">Wie ______ du? (heißen)</li><li dir=\"auto\">Wie ______ Sie? (heißen)</li><li dir=\"auto\">Wir ______ Sami und Nora. (heißen)</li></ol>\n<h3 dir=\"auto\">تمرين 3 — رسمي أم غير رسمي؟</h3>\n<p dir=\"auto\">اكتب <strong>رسمي</strong> أو <strong>غير رسمي</strong>:</p>\n<ol><li dir=\"auto\">Wie heißt du?</li><li dir=\"auto\">Wie heißen Sie?</li><li dir=\"auto\">Tschüss!</li><li dir=\"auto\">Auf Wiedersehen!</li></ol>\n<h3 dir=\"auto\">تمرين 4 — رتّب الكلمات</h3>\n<ol><li dir=\"auto\">heiße / Ich / Omar.</li><li dir=\"auto\">du / Wie / heißt?</li><li dir=\"auto\">Morgen / Guten!</li><li dir=\"auto\">Sie / heißen / Wie?</li></ol>\n<h3 dir=\"auto\">تمرين 5 — اختر الرد الطبيعي</h3>\n<ol><li dir=\"auto\"><strong>Wie geht es dir?</strong> أ. Gut, danke. ب. Ich bin Guten Tag.</li><li dir=\"auto\"><strong>Freut mich.</strong> أ. Freut mich auch. ب. Guten Nacht.</li><li dir=\"auto\"><strong>Auf Wiedersehen!</strong> أ. Auf Wiedersehen! ب. Ich heiße bitte.</li></ol>\n<h3 dir=\"auto\">تمرين 6 — أكمل الحوار</h3>\n<p dir=\"auto\"><strong>A:</strong> Hallo! Ich ____<strong> Amel. Wie </strong>____ du?<br><strong>B:</strong> Ich ______ Youssef. Freut mich!<br><strong>A:</strong> Freut mich ______. Tschüss!<br><strong>B:</strong> ______!</p>\n<h3 dir=\"auto\">تمرين 7 — تحدّث</h3>\n<p dir=\"auto\">مثّل حوارًا من 4 أسطر: حيِّ شخصًا، قل اسمك، اسأله عن اسمه، ثم ودّعه. نفّذ الحوار مرة بصيغة du ومرة بصيغة Sie.</p>\n<h3 dir=\"auto\">تمرين 8 — كتابة قصيرة</h3>\n<p dir=\"auto\">اكتب ثلاث جمل للتعريف بنفسك تبدأ بـ <strong>Hallo</strong>, <strong>Ich heiße…</strong>، وتنتهي بوداع مناسب.</p>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1. Guten Morgen، 2. Guten Tag، 3. Tschüss، 4. Auf Wiedersehen.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. heiße، 2. heißt، 3. heißen، 4. heißen.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1. غير رسمي، 2. رسمي، 3. غير رسمي، 4. رسمي/مهذب.</li><li dir=\"auto\"><strong>تمرين 4:</strong> 1. Ich heiße Omar. 2. Wie heißt du? 3. Guten Morgen! 4. Wie heißen Sie?</li><li dir=\"auto\"><strong>تمرين 5:</strong> 1. أ، 2. أ، 3. أ.</li><li dir=\"auto\"><strong>تمرين 6:</strong> heiße؛ heißt؛ heiße؛ auch؛ Tschüss.</li><li dir=\"auto\"><strong>تمرين 7 و8:</strong> إجابات مفتوحة. تحقّق من استعمال heiße مع Ich، ومن اختيار صيغة السؤال المناسبة.</li></ul>\n</div></details>\n<h2 dir=\"auto\">7) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>Wie heißt du?</strong> → ما اسمك؟ (غير رسمي)</li><li dir=\"auto\"><strong>Wie heißen Sie?</strong> → ما اسم حضرتك؟ (رسمي)</li><li dir=\"auto\"><strong>Ich heiße …</strong> → اسمي …</li><li dir=\"auto\"><strong>Gute Nacht!</strong> → تصبح على خير عند الوداع ليلًا.</li></ul>",
+      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 20 دقيقة · <strong>المهارات:</strong> قراءة الحوار، تفاعل ومحادثة مباشرة · <strong>الهدف:</strong> أستطيع أن أحيّي شخصًا، أودّعه، وأقول اسمي وأسأل عن اسمه بطريقة مناسبة. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.</p>\n<h2 dir=\"auto\">1) عبارات أساسية</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">بالألمانية</th><th dir=\"auto\">المعنى والاستعمال</th></tr></thead><tbody><tr><td dir=\"auto\">Hallo!</td><td dir=\"auto\">مرحبًا! غير رسمي وشائع</td></tr><tr><td dir=\"auto\">Guten Morgen!</td><td dir=\"auto\">صباح الخير؛ غالبًا في الصباح</td></tr><tr><td dir=\"auto\">Guten Tag!</td><td dir=\"auto\">نهارك سعيد/مرحبًا؛ مهذبة وعامة</td></tr><tr><td dir=\"auto\">Guten Abend!</td><td dir=\"auto\">مساء الخير عند اللقاء مساءً</td></tr><tr><td dir=\"auto\">Gute Nacht!</td><td dir=\"auto\">تصبح على خير عند الوداع قبل النوم</td></tr><tr><td dir=\"auto\">Tschüss!</td><td dir=\"auto\">مع السلامة؛ غير رسمي</td></tr><tr><td dir=\"auto\">Auf Wiedersehen!</td><td dir=\"auto\">إلى اللقاء؛ رسمي/مهذب</td></tr><tr><td dir=\"auto\">Danke!</td><td dir=\"auto\">شكرًا</td></tr><tr><td dir=\"auto\">Bitte!</td><td dir=\"auto\">من فضلك / تفضل / العفو بحسب السياق</td></tr><tr><td dir=\"auto\">Freut mich.</td><td dir=\"auto\">تشرفت بلقائك.</td></tr></tbody></table></div>\n<h2 dir=\"auto\">2) اسمي واسمك</h2>\n<ul><li dir=\"auto\"><strong>Ich heiße Lina.</strong> — اسمي لينا.</li><li dir=\"auto\"><strong>Wie heißt du?</strong> — ما اسمك؟ مع شخص واحد وبأسلوب غير رسمي.</li><li dir=\"auto\"><strong>Wie heißen Sie?</strong> — ما اسم حضرتك؟ أسلوب رسمي ومهذب.</li></ul>\n<p dir=\"auto\">تصريف الفعل <strong>heißen</strong> في الحاضر:</p>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">الضمير</th><th dir=\"auto\">التصريف</th></tr></thead><tbody><tr><td dir=\"auto\">ich</td><td dir=\"auto\">heiße</td></tr><tr><td dir=\"auto\">du</td><td dir=\"auto\">heißt</td></tr><tr><td dir=\"auto\">er / sie</td><td dir=\"auto\">heißt</td></tr><tr><td dir=\"auto\">wir</td><td dir=\"auto\">heißen</td></tr><tr><td dir=\"auto\">ihr</td><td dir=\"auto\">heißt</td></tr><tr><td dir=\"auto\">sie / Sie</td><td dir=\"auto\">heißen</td></tr></tbody></table></div>\n<p dir=\"auto\">في الألمانية تُكتب <strong>Sie</strong> الرسمية بحرف كبير دائمًا.</p>\n<h2 dir=\"auto\">3) حوار أصلي</h2>\n<p dir=\"auto\"><strong>A:</strong> Guten Tag! Ich heiße Lina. Wie heißen Sie?<br><strong>B:</strong> Guten Tag! Ich bin Herr Weber. Freut mich.<br><strong>A:</strong> Freut mich auch. Auf Wiedersehen!<br><strong>B:</strong> Auf Wiedersehen!</p>\n<p dir=\"auto\">حوار غير رسمي:</p>\n<p dir=\"auto\"><strong>A:</strong> Hallo! Ich heiße Sami. Wie heißt du?<br><strong>B:</strong> Ich heiße Nora. Freut mich!<br><strong>A:</strong> Freut mich auch. Tschüss!<br><strong>B:</strong> Tschüss!</p>\n<h2 dir=\"auto\">4) كيف تسأل عن الحال؟</h2>\n<ul><li dir=\"auto\"><strong>Wie geht es dir?</strong> — كيف حالك؟ غير رسمي.</li><li dir=\"auto\"><strong>Wie geht es Ihnen?</strong> — كيف حال حضرتك؟ رسمي.</li><li dir=\"auto\"><strong>Gut, danke. Und dir?</strong> — بخير، شكرًا. وأنت؟</li><li dir=\"auto\"><strong>Sehr gut, danke.</strong> — جيد جدًا، شكرًا.</li><li dir=\"auto\"><strong>Es geht.</strong> — لا بأس.</li></ul>\n<h2 dir=\"auto\">5) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — اختر التحية المناسبة</h3>\n<ol><li dir=\"auto\">الساعة 8 صباحًا: <strong>Guten Morgen / Gute Nacht</strong></li><li dir=\"auto\">لقاء رسمي بعد الظهر: <strong>Guten Tag / Tschüss</strong></li><li dir=\"auto\">تودّع صديقًا: <strong>Tschüss / Guten Morgen</strong></li><li dir=\"auto\">تودّع شخصًا بأسلوب رسمي: <strong>Auf Wiedersehen / Hallo</strong></li></ol>\n<h3 dir=\"auto\">تمرين 2 — أكمل الفعل</h3>\n<ol><li dir=\"auto\">Ich ______ Lina. (heißen)</li><li dir=\"auto\">Wie ______ du? (heißen)</li><li dir=\"auto\">Wie ______ Sie? (heißen)</li><li dir=\"auto\">Wir ______ Sami und Nora. (heißen)</li></ol>\n<h3 dir=\"auto\">تمرين 3 — رسمي أم غير رسمي؟</h3>\n<p dir=\"auto\">اكتب <strong>رسمي</strong> أو <strong>غير رسمي</strong>:</p>\n<ol><li dir=\"auto\">Wie heißt du?</li><li dir=\"auto\">Wie heißen Sie?</li><li dir=\"auto\">Tschüss!</li><li dir=\"auto\">Auf Wiedersehen!</li></ol>\n<h3 dir=\"auto\">تمرين 4 — رتّب الكلمات</h3>\n<ol><li dir=\"auto\">heiße / Ich / Omar.</li><li dir=\"auto\">du / Wie / heißt?</li><li dir=\"auto\">Morgen / Guten!</li><li dir=\"auto\">Sie / heißen / Wie?</li></ol>\n<h3 dir=\"auto\">تمرين 5 — اختر الرد الطبيعي</h3>\n<ol><li dir=\"auto\"><strong>Wie geht es dir?</strong> أ. Gut, danke. ب. Ich bin Guten Tag.</li><li dir=\"auto\"><strong>Freut mich.</strong> أ. Freut mich auch. ب. Guten Nacht.</li><li dir=\"auto\"><strong>Auf Wiedersehen!</strong> أ. Auf Wiedersehen! ب. Ich heiße bitte.</li></ol>\n<h3 dir=\"auto\">تمرين 6 — أكمل الحوار</h3>\n<p dir=\"auto\"><strong>A:</strong> Hallo! Ich ____<strong> Amel. Wie </strong>____ du?<br><strong>B:</strong> Ich ______ Youssef. Freut mich!<br><strong>A:</strong> Freut mich ______. Tschüss!<br><strong>B:</strong> ______!</p>\n<h3 dir=\"auto\">تمرين 7 — تحدّث</h3>\n<p dir=\"auto\">مثّل حوارًا من 4 أسطر: حيِّ شخصًا، قل اسمك، اسأله عن اسمه، ثم ودّعه. نفّذ الحوار مرة بصيغة du ومرة بصيغة Sie.</p>\n<h3 dir=\"auto\">تمرين 8 — كتابة قصيرة</h3>\n<p dir=\"auto\">اكتب ثلاث جمل للتعريف بنفسك تبدأ بـ <strong>Hallo</strong>, <strong>Ich heiße…</strong>، وتنتهي بوداع مناسب.</p>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1. Guten Morgen، 2. Guten Tag، 3. Tschüss، 4. Auf Wiedersehen.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. heiße، 2. heißt، 3. heißen، 4. heißen.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1. غير رسمي، 2. رسمي، 3. غير رسمي، 4. رسمي/مهذب.</li><li dir=\"auto\"><strong>تمرين 4:</strong> 1. Ich heiße Omar. 2. Wie heißt du? 3. Guten Morgen! 4. Wie heißen Sie?</li><li dir=\"auto\"><strong>تمرين 5:</strong> 1. أ، 2. أ، 3. أ.</li><li dir=\"auto\"><strong>تمرين 6:</strong> heiße؛ heißt؛ heiße؛ auch؛ Tschüss.</li><li dir=\"auto\"><strong>تمرين 7 و8:</strong> إجابات مفتوحة. تحقّق من استعمال heiße مع Ich، ومن اختيار صيغة السؤال المناسبة.</li></ul>\n</div></details>\n<h2 dir=\"auto\">7) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>Wie heißt du?</strong> → ما اسمك؟ (غير رسمي)</li><li dir=\"auto\"><strong>Wie heißen Sie?</strong> → ما اسم حضرتك؟ (رسمي)</li><li dir=\"auto\"><strong>Ich heiße …</strong> → اسمي …</li><li dir=\"auto\"><strong>Gute Nacht!</strong> → تصبح على خير عند الوداع ليلًا.</li></ul>",
       "vocabulary": [
         {
           "id": "a0-02-greetings-word-1",
@@ -129,7 +424,298 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [
+        {
+          "id": "DL-A0-02-Q01",
+          "sourceTaskIds": [
+            "DL-A0-02-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "الساعة الثامنة صباحًا؛ أي تحية مناسبة؟",
+          "options": [
+            "Gute Nacht!",
+            "Guten Morgen!",
+            "Guten Abend!"
+          ],
+          "answerIndex": 1,
+          "explanation": "Guten Morgen تُستعمل صباحًا."
+        },
+        {
+          "id": "DL-A0-02-Q02",
+          "sourceTaskIds": [
+            "DL-A0-02-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تلائم الوداع قبل النوم؟",
+          "options": [
+            "Hallo!",
+            "Guten Tag!",
+            "Gute Nacht!"
+          ],
+          "answerIndex": 2,
+          "explanation": "Gute Nacht تقال عند الوداع ليلًا قبل النوم."
+        },
+        {
+          "id": "DL-A0-02-Q03",
+          "sourceTaskIds": [
+            "DL-A0-02-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "تودّع شخصًا بأسلوب رسمي؛ ماذا تقول؟",
+          "options": [
+            "Auf Wiedersehen!",
+            "Tschüss!",
+            "Guten Morgen!"
+          ],
+          "answerIndex": 0,
+          "explanation": "Auf Wiedersehen وداع رسمي أو مهذب."
+        },
+        {
+          "id": "DL-A0-02-Q04",
+          "sourceTaskIds": [
+            "DL-A0-02-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Ich ___ Lina.",
+          "options": [
+            "heißen",
+            "heiße",
+            "heißt"
+          ],
+          "answerIndex": 1,
+          "explanation": "مع ich نقول heiße."
+        },
+        {
+          "id": "DL-A0-02-Q05",
+          "sourceTaskIds": [
+            "DL-A0-02-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تعني Wie heißen Sie؟",
+          "options": [
+            "ما اسمك؟ بصيغة du",
+            "أين تسكن؟",
+            "ما اسم حضرتك؟ بصيغة رسمية"
+          ],
+          "answerIndex": 2,
+          "explanation": "Sie الرسمية تعني حضرتك، وWie heißen Sie تسأل عن الاسم."
+        },
+        {
+          "id": "DL-A0-02-Q06",
+          "sourceTaskIds": [
+            "DL-A0-02-T03"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "تخاطب مدرّسًا لا تعرفه؛ أي ضمير تختار؟",
+          "options": [
+            "Sie",
+            "du",
+            "ihr"
+          ],
+          "answerIndex": 0,
+          "explanation": "في الموقف الرسمي نستخدم Sie بحرف كبير."
+        },
+        {
+          "id": "DL-A0-02-Q07",
+          "sourceTaskIds": [
+            "DL-A0-02-T05"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "شخص قال Freut mich. ما الرد الطبيعي؟",
+          "options": [
+            "Gute Nacht.",
+            "Freut mich auch.",
+            "Ich heiße bitte."
+          ],
+          "answerIndex": 1,
+          "explanation": "Freut mich auch تعني تشرفت بك أيضًا."
+        },
+        {
+          "id": "DL-A0-02-Q08",
+          "sourceTaskIds": [
+            "DL-A0-02-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي جواب يناسب Wie geht es Ihnen؟",
+          "options": [
+            "Ich heiße Lina.",
+            "Auf Wiedersehen.",
+            "Gut, danke. Und Ihnen?"
+          ],
+          "answerIndex": 2,
+          "explanation": "السؤال رسمي عن الحال؛ يمكن الرد Gut, danke. Und Ihnen?"
+        },
+        {
+          "id": "DL-A0-02-Q09",
+          "sourceTaskIds": [
+            "DL-A0-02-T03"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "Tschüss! تُستعمل غالبًا:",
+          "options": [
+            "مع صديق في وداع غير رسمي",
+            "في تحية رسمية صباحًا",
+            "قبل النوم فقط"
+          ],
+          "answerIndex": 0,
+          "explanation": "Tschüss وداع غير رسمي."
+        },
+        {
+          "id": "DL-A0-02-Q10",
+          "sourceTaskIds": [
+            "DL-A0-02-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل الرد: Freut mich! — Freut mich ___.",
+          "options": [
+            "Sie",
+            "auch",
+            "heiße"
+          ],
+          "answerIndex": 1,
+          "explanation": "الرد الطبيعي هو Freut mich auch."
+        }
+      ],
+      "assessment": {
+        "status": "ready",
+        "version": "a0-02-v1",
+        "minimumScore": 80,
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A0-02-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+          "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+          "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+        ]
+      },
+      "performanceTasks": [
+        {
+          "id": "DL-A0-02-P01",
+          "sourceTaskIds": [
+            "DL-A0-02-T07"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "modality": [
+            "speaking"
+          ],
+          "prompt": "مثّل تعارفًا قصيرًا: مرة مع صديق بصيغة du، ومرة مع معلّم بصيغة Sie. قل التحية واسمك واسأل عن الاسم ثم ودّع. ",
+          "criteria": {
+            "taskCompletion": "ينجز عناصر التعارف والتحية والوداع في الصيغتين.",
+            "meaningClarity": "يفهم الشريك الاسم والسؤال والوداع من دون التباس مؤثر.",
+            "targetSkill": "يختار صيغة du/Sie وتصريف heißen المناسبين، من دون اشتراط لهجة محلية."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A0-02-P02",
+          "sourceTaskIds": [
+            "DL-A0-02-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-02-G01"
+          ],
+          "modality": [
+            "reading",
+            "speaking"
+          ],
+          "prompt": "اقرأ الحوار الرسمي الوارد في الدرس، وحدّد الاسم وصيغة المخاطبة، ثم مثّل ردًا مناسبًا بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يحدد الاسم ويقدم ردًا مناسبًا بعد قراءة الحوار.",
+            "meaningClarity": "ينقل المعلومات المقصودة بوضوح.",
+            "targetSkill": "يميز Sie الرسمية من du غير الرسمية ويختار رد تحية مناسبًا."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a0-03-numbers-personal-info",
@@ -138,11 +724,306 @@
       "title": "الأرقام والبيانات الشخصية",
       "minutes": 25,
       "durationLabel": "25 دقيقة",
-      "objective": "أستطيع قول عمري وبعض بياناتي وطلب رقم هاتف أو تهجئة اسم.",
+      "objective": "أستطيع قول عمري وبعض بياناتي وطلب رقم هاتف أو تهجئة اسم. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.",
       "sourceFile": "content/A0/lesson-03-numbers-personal-info.md",
-      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 25 دقيقة · <strong>المهارات:</strong> استماع، قراءة، محادثة · <strong>الهدف:</strong> أستطيع قول عمري وبعض بياناتي وطلب رقم هاتف أو تهجئة اسم.</p>\n<h2 dir=\"auto\">1) الأعداد من 0 إلى 20</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">العدد</th><th dir=\"auto\">الألمانية</th><th dir=\"auto\">العدد</th><th dir=\"auto\">الألمانية</th></tr></thead><tbody><tr><td dir=\"auto\">0</td><td dir=\"auto\">null</td><td dir=\"auto\">11</td><td dir=\"auto\">elf</td></tr><tr><td dir=\"auto\">1</td><td dir=\"auto\">eins</td><td dir=\"auto\">12</td><td dir=\"auto\">zwölf</td></tr><tr><td dir=\"auto\">2</td><td dir=\"auto\">zwei</td><td dir=\"auto\">13</td><td dir=\"auto\">dreizehn</td></tr><tr><td dir=\"auto\">3</td><td dir=\"auto\">drei</td><td dir=\"auto\">14</td><td dir=\"auto\">vierzehn</td></tr><tr><td dir=\"auto\">4</td><td dir=\"auto\">vier</td><td dir=\"auto\">15</td><td dir=\"auto\">fünfzehn</td></tr><tr><td dir=\"auto\">5</td><td dir=\"auto\">fünf</td><td dir=\"auto\">16</td><td dir=\"auto\">sechzehn</td></tr><tr><td dir=\"auto\">6</td><td dir=\"auto\">sechs</td><td dir=\"auto\">17</td><td dir=\"auto\">siebzehn</td></tr><tr><td dir=\"auto\">7</td><td dir=\"auto\">sieben</td><td dir=\"auto\">18</td><td dir=\"auto\">achtzehn</td></tr><tr><td dir=\"auto\">8</td><td dir=\"auto\">acht</td><td dir=\"auto\">19</td><td dir=\"auto\">neunzehn</td></tr><tr><td dir=\"auto\">9</td><td dir=\"auto\">neun</td><td dir=\"auto\">20</td><td dir=\"auto\">zwanzig</td></tr><tr><td dir=\"auto\">10</td><td dir=\"auto\">zehn</td><td dir=\"auto\"></td><td dir=\"auto\"></td></tr></tbody></table></div>\n<p dir=\"auto\">عشرات مهمة: <strong>30 dreißig، 40 vierzig، 50 fünfzig، 60 sechzig، 70 siebzig، 80 achtzig، 90 neunzig، 100 hundert</strong>.</p>\n<p dir=\"auto\">من 21 فصاعدًا يأتي رقم الآحاد قبل العشرات مع <strong>und</strong>، وتُكتب الكلمة متصلة: 21 = <strong>einundzwanzig</strong>، 34 = <strong>vierunddreißig</strong>. انتبه: نقول <strong>einundzwanzig</strong> وليس <em>einsundzwanzig</em>.</p>\n<h2 dir=\"auto\">2) بيانات شخصية</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">السؤال</th><th dir=\"auto\">معنى السؤال</th><th dir=\"auto\">نموذج جواب</th></tr></thead><tbody><tr><td dir=\"auto\">Wie heißt du?</td><td dir=\"auto\">ما اسمك؟</td><td dir=\"auto\">Ich heiße Salma.</td></tr><tr><td dir=\"auto\">Wie alt bist du?</td><td dir=\"auto\">كم عمرك؟</td><td dir=\"auto\">Ich bin 22 Jahre alt.</td></tr><tr><td dir=\"auto\">Woher kommst du?</td><td dir=\"auto\">من أين أنت؟</td><td dir=\"auto\">Ich komme aus Tunesien.</td></tr><tr><td dir=\"auto\">Wo wohnst du?</td><td dir=\"auto\">أين تسكن؟</td><td dir=\"auto\">Ich wohne in Nabeul.</td></tr><tr><td dir=\"auto\">Wie ist deine Telefonnummer?</td><td dir=\"auto\">ما رقم هاتفك؟</td><td dir=\"auto\">Meine Nummer ist …</td></tr></tbody></table></div>\n<p dir=\"auto\">للسؤال الرسمي استبدل <strong>du / dein</strong> بـ <strong>Sie / Ihr</strong>: <em>Wie heißen Sie? Wie ist Ihre Telefonnummer?</em></p>\n<h2 dir=\"auto\">3) حوار أصلي</h2>\n<p dir=\"auto\"><strong>A:</strong> Hallo! Wie heißt du?<br><strong>B:</strong> Ich heiße Yassine. Und du?<br><strong>A:</strong> Ich heiße Mariem. Woher kommst du?<br><strong>B:</strong> Ich komme aus Tunesien. Ich wohne in Nabeul.<br><strong>A:</strong> Wie alt bist du?<br><strong>B:</strong> Ich bin 21 Jahre alt.</p>\n<h2 dir=\"auto\">4) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — اكتب الرقم بالألمانية</h3>\n<ol><li dir=\"auto\">3 · 2. 7 · 3. 12 · 4. 16 · 5. 20</li></ol>\n<h3 dir=\"auto\">تمرين 2 — اكتب الرقم بالأرقام</h3>\n<ol><li dir=\"auto\">neun · 2. vierzehn · 3. achtzehn · 4. dreißig · 5. einundzwanzig</li></ol>\n<h3 dir=\"auto\">تمرين 3 — أكمل العدد المركب</h3>\n<ol><li dir=\"auto\">21 = ein______zwanzig.</li><li dir=\"auto\">34 = vier______dreißig.</li><li dir=\"auto\">45 = fünf______vierzig.</li><li dir=\"auto\">62 = zwei______sechzig.</li></ol>\n<h3 dir=\"auto\">تمرين 4 — اختر السؤال المناسب</h3>\n<ol><li dir=\"auto\">تريد أن تسأل عن العمر: <strong>Wie alt bist du? / Wo wohnst du?</strong></li><li dir=\"auto\">تريد أن تسأل عن بلد الشخص: <strong>Woher kommst du? / Wie heißt du?</strong></li><li dir=\"auto\">تريد أن تسأل عن السكن: <strong>Wo wohnst du? / Wie alt bist du?</strong></li></ol>\n<h3 dir=\"auto\">تمرين 5 — أكمل الحوار</h3>\n<p dir=\"auto\"><strong>A:</strong> Wie ______ du?<br><strong>B:</strong> Ich ______ Noura.<br><strong>A:</strong> Woher ______ du?<br><strong>B:</strong> Ich ______ aus Tunesien.<br><strong>A:</strong> Wie alt ______ du?<br><strong>B:</strong> Ich ______ 20 Jahre alt.</p>\n<h3 dir=\"auto\">تمرين 6 — رقم الهاتف</h3>\n<p dir=\"auto\">تخيّل أن رقمك هو <strong>26 41 08</strong>. اكتبه بالأرقام، ثم اقرأ كل رقم منفردًا بالألمانية. بعد ذلك سجّل نفسك أو اطلب من زميل قراءة الرقم، واكتب ما سمعته.</p>\n<h3 dir=\"auto\">تمرين 7 — مقابلة قصيرة</h3>\n<p dir=\"auto\">اسأل زميلًا أو أجب شفهيًا عن: الاسم، العمر، بلد الأصل، ومكان السكن. استخدم الأسئلة في الجدول. لا تشارك رقم هاتفك الحقيقي إن لم ترغب؛ استخدم رقمًا تدريبيًا.</p>\n<h3 dir=\"auto\">تمرين 8 — بطاقة تعارف</h3>\n<p dir=\"auto\">اكتب بطاقة من أربع أسطر:</p>\n<ul><li dir=\"auto\">Ich heiße …</li><li dir=\"auto\">Ich komme aus …</li><li dir=\"auto\">Ich wohne in …</li><li dir=\"auto\">Ich bin … Jahre alt.</li></ul>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1. drei، 2. sieben، 3. zwölf، 4. sechzehn، 5. zwanzig.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. 9، 2. 14، 3. 18، 4. 30، 5. 21.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1. und، 2. und، 3. und، 4. und.</li><li dir=\"auto\"><strong>تمرين 4:</strong> 1. Wie alt bist du?، 2. Woher kommst du?، 3. Wo wohnst du?</li><li dir=\"auto\"><strong>تمرين 5:</strong> heißt؛ heiße؛ kommst؛ komme؛ bist؛ bin.</li><li dir=\"auto\"><strong>تمرين 6:</strong> 26 41 08 = <em>zwei sechs – vier eins – null acht</em> عند قراءة الأرقام منفردة.</li><li dir=\"auto\"><strong>تمرين 7 و8:</strong> إجابات شخصية مفتوحة؛ راجع ترتيب الكلمات وتطابق السؤال مع الجواب.</li></ul>\n</div></details>\n<h2 dir=\"auto\">6) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>Wie alt bist du?</strong> → كم عمرك؟</li><li dir=\"auto\"><strong>Woher kommst du?</strong> → من أين أنت؟</li><li dir=\"auto\"><strong>Wo wohnst du?</strong> → أين تسكن؟</li><li dir=\"auto\"><strong>Ich bin 21 Jahre alt.</strong> → عمري 21 سنة.</li></ul>",
+      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 25 دقيقة · <strong>المهارات:</strong> قراءة، كتابة، محادثة مباشرة · <strong>الهدف:</strong> أستطيع قول عمري وبعض بياناتي وطلب رقم هاتف أو تهجئة اسم. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.</p>\n<h2 dir=\"auto\">1) الأعداد الأساسية من 0 إلى 20</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">العدد</th><th dir=\"auto\">الألمانية</th><th dir=\"auto\">العدد</th><th dir=\"auto\">الألمانية</th></tr></thead><tbody><tr><td dir=\"auto\">0</td><td dir=\"auto\">null</td><td dir=\"auto\">11</td><td dir=\"auto\">elf</td></tr><tr><td dir=\"auto\">1</td><td dir=\"auto\">eins</td><td dir=\"auto\">12</td><td dir=\"auto\">zwölf</td></tr><tr><td dir=\"auto\">2</td><td dir=\"auto\">zwei</td><td dir=\"auto\">13</td><td dir=\"auto\">dreizehn</td></tr><tr><td dir=\"auto\">3</td><td dir=\"auto\">drei</td><td dir=\"auto\">14</td><td dir=\"auto\">vierzehn</td></tr><tr><td dir=\"auto\">4</td><td dir=\"auto\">vier</td><td dir=\"auto\">15</td><td dir=\"auto\">fünfzehn</td></tr><tr><td dir=\"auto\">5</td><td dir=\"auto\">fünf</td><td dir=\"auto\">16</td><td dir=\"auto\">sechzehn</td></tr><tr><td dir=\"auto\">6</td><td dir=\"auto\">sechs</td><td dir=\"auto\">17</td><td dir=\"auto\">siebzehn</td></tr><tr><td dir=\"auto\">7</td><td dir=\"auto\">sieben</td><td dir=\"auto\">18</td><td dir=\"auto\">achtzehn</td></tr><tr><td dir=\"auto\">8</td><td dir=\"auto\">acht</td><td dir=\"auto\">19</td><td dir=\"auto\">neunzehn</td></tr><tr><td dir=\"auto\">9</td><td dir=\"auto\">neun</td><td dir=\"auto\">20</td><td dir=\"auto\">zwanzig</td></tr><tr><td dir=\"auto\">10</td><td dir=\"auto\">zehn</td><td dir=\"auto\"></td><td dir=\"auto\"></td></tr></tbody></table></div>\n<p dir=\"auto\"><strong>هدف هذا الدرس هو استخدام الأعداد من 0 إلى 20.</strong> عند قراءة رقم هاتف، ننطق كل خانة وحدها؛ لذلك نحتاج أسماء الأرقام من 0 إلى 9، لا حفظ الأعداد حتى 100.</p>\n<h3 dir=\"auto\">توسعة اختيارية: العشرات والأعداد المركبة</h3>\n<p dir=\"auto\">للتعرّف فقط، لا للحفظ أو الاختبار في هذا الدرس: <strong>30 dreißig، 40 vierzig، 50 fünfzig، 60 sechzig، 70 siebzig، 80 achtzig، 90 neunzig، 100 hundert</strong>. في الأعداد من 21 فصاعدًا يأتي رقم الآحاد قبل العشرات مع <strong>und</strong>، مثل <strong>einundzwanzig</strong> (21) و<strong>vierunddreißig</strong> (34). نستخدم <strong>ein</strong> قبل <em>und</em> في العدد 21.</p>\n<h2 dir=\"auto\">2) بيانات شخصية</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">السؤال</th><th dir=\"auto\">معنى السؤال</th><th dir=\"auto\">نموذج جواب</th></tr></thead><tbody><tr><td dir=\"auto\">Wie heißt du?</td><td dir=\"auto\">ما اسمك؟</td><td dir=\"auto\">Ich heiße Salma.</td></tr><tr><td dir=\"auto\">Wie alt bist du?</td><td dir=\"auto\">كم عمرك؟</td><td dir=\"auto\">Ich bin 18 Jahre alt.</td></tr><tr><td dir=\"auto\">Woher kommst du?</td><td dir=\"auto\">من أين أنت؟</td><td dir=\"auto\">Ich komme aus Tunesien.</td></tr><tr><td dir=\"auto\">Wo wohnst du?</td><td dir=\"auto\">أين تسكن؟</td><td dir=\"auto\">Ich wohne in Nabeul.</td></tr><tr><td dir=\"auto\">Wie ist deine Telefonnummer?</td><td dir=\"auto\">ما رقم هاتفك؟</td><td dir=\"auto\">Meine Nummer ist …</td></tr></tbody></table></div>\n<p dir=\"auto\">للسؤال الرسمي استبدل <strong>du / dein</strong> بـ <strong>Sie / Ihr</strong>: <em>Wie heißen Sie? Wie ist Ihre Telefonnummer?</em></p>\n<h2 dir=\"auto\">3) حوار أصلي</h2>\n<p dir=\"auto\"><strong>A:</strong> Hallo! Wie heißt du?<br><strong>B:</strong> Ich heiße Yassine. Und du?<br><strong>A:</strong> Ich heiße Mariem. Woher kommst du?<br><strong>B:</strong> Ich komme aus Tunesien. Ich wohne in Nabeul.<br><strong>A:</strong> Wie alt bist du?<br><strong>B:</strong> Ich bin 18 Jahre alt.</p>\n<h2 dir=\"auto\">4) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — اكتب الرقم بالألمانية</h3>\n<ol><li dir=\"auto\">3 · 2. 7 · 3. 12 · 4. 16 · 5. 20</li></ol>\n<h3 dir=\"auto\">تمرين 2 — اكتب الرقم بالأرقام</h3>\n<ol><li dir=\"auto\">neun · 2. vierzehn · 3. achtzehn · 4. siebzehn · 5. zwanzig</li></ol>\n<h3 dir=\"auto\">تمرين 3 — توسعة اختيارية: أكمل العدد المركب</h3>\n<ol><li dir=\"auto\">21 = ein______zwanzig.</li><li dir=\"auto\">34 = vier______dreißig.</li><li dir=\"auto\">45 = fünf______vierzig.</li><li dir=\"auto\">62 = zwei______sechzig.</li></ol>\n<h3 dir=\"auto\">تمرين 4 — اختر السؤال المناسب</h3>\n<ol><li dir=\"auto\">تريد أن تسأل عن العمر: <strong>Wie alt bist du? / Wo wohnst du?</strong></li><li dir=\"auto\">تريد أن تسأل عن بلد الشخص: <strong>Woher kommst du? / Wie heißt du?</strong></li><li dir=\"auto\">تريد أن تسأل عن السكن: <strong>Wo wohnst du? / Wie alt bist du?</strong></li></ol>\n<h3 dir=\"auto\">تمرين 5 — أكمل الحوار</h3>\n<p dir=\"auto\"><strong>A:</strong> Wie ______ du?<br><strong>B:</strong> Ich ______ Noura.<br><strong>A:</strong> Woher ______ du?<br><strong>B:</strong> Ich ______ aus Tunesien.<br><strong>A:</strong> Wie alt ______ du?<br><strong>B:</strong> Ich ______ 20 Jahre alt.</p>\n<h3 dir=\"auto\">تمرين 6 — رقم الهاتف</h3>\n<p dir=\"auto\">استخدم الرقم التدريبي <strong>26 41 08</strong>. اقرأ كل خانة منفردة بالألمانية: <strong>zwei – sechs – vier – eins – null – acht</strong>؛ لا تحوّله إلى أعداد مركبة. في هذه النسخة، اكتفِ بكتابته بالأرقام وقراءته بصوت مرتفع، ثم اكتب أسماء الخانات بالألمانية. لا يلزم تسجيل صوتك أو مشاركته.</p>\n<h3 dir=\"auto\">تمرين 7 — مقابلة قصيرة</h3>\n<p dir=\"auto\">اسأل زميلًا أو أجب شفهيًا عن: الاسم، العمر، بلد الأصل، ومكان السكن. استخدم الأسئلة في الجدول. لا تشارك رقم هاتفك الحقيقي إن لم ترغب؛ استخدم رقمًا تدريبيًا.</p>\n<h3 dir=\"auto\">تمرين 8 — بطاقة تعارف</h3>\n<p dir=\"auto\">اكتب بطاقة من أربع أسطر:</p>\n<ul><li dir=\"auto\">Ich heiße …</li><li dir=\"auto\">Ich komme aus …</li><li dir=\"auto\">Ich wohne in …</li><li dir=\"auto\">Ich bin … Jahre alt.</li></ul>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1. drei، 2. sieben، 3. zwölf، 4. sechzehn، 5. zwanzig.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. 9، 2. 14، 3. 18، 4. 17، 5. 20.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1. und، 2. und، 3. und، 4. und.</li><li dir=\"auto\"><strong>تمرين 4:</strong> 1. Wie alt bist du?، 2. Woher kommst du?، 3. Wo wohnst du?</li><li dir=\"auto\"><strong>تمرين 5:</strong> heißt؛ heiße؛ kommst؛ komme؛ bist؛ bin.</li><li dir=\"auto\"><strong>تمرين 6:</strong> 26 41 08 = <em>zwei – sechs – vier – eins – null – acht</em> عند قراءة كل خانة منفردة.</li><li dir=\"auto\"><strong>تمرين 7 و8:</strong> إجابات شخصية مفتوحة؛ راجع ترتيب الكلمات وتطابق السؤال مع الجواب.</li></ul>\n</div></details>\n<h2 dir=\"auto\">6) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>Wie alt bist du?</strong> → كم عمرك؟</li><li dir=\"auto\"><strong>Woher kommst du?</strong> → من أين أنت؟</li><li dir=\"auto\"><strong>Wo wohnst du?</strong> → أين تسكن؟</li><li dir=\"auto\"><strong>Ich bin 18 Jahre alt.</strong> → عمري 18 سنة.</li></ul>",
       "vocabulary": [],
-      "quiz": []
+      "quiz": [
+        {
+          "id": "DL-A0-03-Q01",
+          "sourceTaskIds": [
+            "DL-A0-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما كتابة العدد 3 بالألمانية؟",
+          "options": [
+            "drei",
+            "dreißig",
+            "dreizehn"
+          ],
+          "answerIndex": 0,
+          "explanation": "3 هو drei؛ dreißig تعني 30 وdreizehn تعني 13."
+        },
+        {
+          "id": "DL-A0-03-Q02",
+          "sourceTaskIds": [
+            "DL-A0-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عدد تعني كلمة sieben؟",
+          "options": [
+            "6",
+            "7",
+            "17"
+          ],
+          "answerIndex": 1,
+          "explanation": "sieben تعني 7."
+        },
+        {
+          "id": "DL-A0-03-Q03",
+          "sourceTaskIds": [
+            "DL-A0-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما كتابة العدد 12 بالألمانية؟",
+          "options": [
+            "zwölf",
+            "zwanzig",
+            "zwei"
+          ],
+          "answerIndex": 0,
+          "explanation": "12 هو zwölf؛ zwanzig تعني 20."
+        },
+        {
+          "id": "DL-A0-03-Q04",
+          "sourceTaskIds": [
+            "DL-A0-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما كتابة العدد 16؟",
+          "options": [
+            "sechzig",
+            "sechs",
+            "sechzehn"
+          ],
+          "answerIndex": 2,
+          "explanation": "16 هو sechzehn؛ انتبه إلى اختلافه عن sechzig، أي 60."
+        },
+        {
+          "id": "DL-A0-03-Q05",
+          "sourceTaskIds": [
+            "DL-A0-03-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما الصيغة الصحيحة للعدد 17؟",
+          "options": [
+            "siebzehn",
+            "siebenzehn",
+            "siebzig"
+          ],
+          "answerIndex": 0,
+          "explanation": "17 تُكتب siebzehn؛ أما siebzig فتعني 70."
+        },
+        {
+          "id": "DL-A0-03-Q06",
+          "sourceTaskIds": [
+            "DL-A0-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تعني كلمة neunzehn؟",
+          "options": [
+            "9",
+            "19",
+            "90"
+          ],
+          "answerIndex": 1,
+          "explanation": "neunzehn تعني 19؛ neun هي 9 وneunzig هي 90."
+        },
+        {
+          "id": "DL-A0-03-Q07",
+          "sourceTaskIds": [
+            "DL-A0-03-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي سؤال تسأل به عن عمر شخص؟",
+          "options": [
+            "Wo wohnst du?",
+            "Wie alt bist du?",
+            "Woher kommst du?"
+          ],
+          "answerIndex": 1,
+          "explanation": "Wie alt bist du؟ تعني كم عمرك؟"
+        },
+        {
+          "id": "DL-A0-03-Q08",
+          "sourceTaskIds": [
+            "DL-A0-03-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي سؤال تسأل به عن بلد أصل الشخص؟",
+          "options": [
+            "Wie heißt du?",
+            "Wie alt bist du?",
+            "Woher kommst du?"
+          ],
+          "answerIndex": 2,
+          "explanation": "Woher kommst du؟ تسأل عن بلد الأصل أو المكان الذي يأتي منه الشخص."
+        },
+        {
+          "id": "DL-A0-03-Q09",
+          "sourceTaskIds": [
+            "DL-A0-03-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "في تدريب الهاتف نقرأ 26 41 08 رقمًا رقمًا. ما بدايته؟",
+          "options": [
+            "zwei sechs",
+            "sechsundzwanzig",
+            "zweiundsechs"
+          ],
+          "answerIndex": 0,
+          "explanation": "عند قراءة الخانات منفردة نقول zwei sechs، لا العدد المركب sechsundzwanzig."
+        },
+        {
+          "id": "DL-A0-03-Q10",
+          "sourceTaskIds": [
+            "DL-A0-03-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما كتابة العدد 20 بالألمانية؟",
+          "options": [
+            "zwanzig",
+            "zwei",
+            "zwölf"
+          ],
+          "answerIndex": 0,
+          "explanation": "20 تُكتب zwanzig؛ zwei تعني 2 وzwölf تعني 12."
+        }
+      ],
+      "assessment": {
+        "status": "ready",
+        "version": "a0-03-v2",
+        "minimumScore": 80,
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A0-03-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+          "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+          "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
+          "فُصل الهدف الأساسي 0–20 عن توسعة الأعداد المركبة؛ جميع أسئلة التقييم تقيس الأعداد الأساسية فقط."
+        ]
+      },
+      "performanceTasks": [
+        {
+          "id": "DL-A0-03-P01",
+          "sourceTaskIds": [
+            "DL-A0-03-T07",
+            "DL-A0-03-T08"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "modality": [
+            "speaking",
+            "writing"
+          ],
+          "prompt": "باستخدام بيانات خيالية أو بيانات تختار مشاركتها، اسأل وأجب عن الاسم والعمر وبلد الأصل والسكن، ثم اكتب بطاقة التعارف.",
+          "criteria": {
+            "taskCompletion": "يسأل ويجيب عن الحقول الأربعة ويكمل البطاقة.",
+            "meaningClarity": "تطابق الإجابات الأسئلة ويمكن فهم البيانات المقصودة.",
+            "targetSkill": "يستعمل Wie heißt/Wie alt/Woher/Wo wohnst والجمل Ich heiße/Ich bin/Ich komme/Ich wohne. لا تشارك رقمًا حقيقيًا إن لم ترغب."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A0-03-P02",
+          "sourceTaskIds": [
+            "DL-A0-03-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-03-G01"
+          ],
+          "modality": [
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اقرأ الرقم التدريبي 26 41 08 من بطاقة الدرس. اكتب كل خانة بالكلمة الألمانية المناسبة، ثم اقرأ الخانات منفردة بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يكتب الخانات بالترتيب ويعيد قراءتها منفردة.",
+            "meaningClarity": "يمكن مطابقة الرقم المكتوب بما تعرضه بطاقة التدريب.",
+            "targetSkill": "يميّز أسماء الأعداد ولا يحول الرقم إلى صيغة مركبة غير مطلوبة."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a0-04-first-sentences",
@@ -210,7 +1091,301 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [
+        {
+          "id": "DL-A0-04-Q01",
+          "sourceTaskIds": [
+            "DL-A0-04-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي ضمير يناسب Mariem؟",
+          "options": [
+            "sie",
+            "er",
+            "es"
+          ],
+          "answerIndex": 0,
+          "explanation": "Mariem اسم مؤنث هنا، لذا يناسبه sie."
+        },
+        {
+          "id": "DL-A0-04-Q02",
+          "sourceTaskIds": [
+            "DL-A0-04-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Ich ___ hier.",
+          "options": [
+            "bist",
+            "bin",
+            "sind"
+          ],
+          "answerIndex": 1,
+          "explanation": "تصريف sein مع ich هو bin."
+        },
+        {
+          "id": "DL-A0-04-Q03",
+          "sourceTaskIds": [
+            "DL-A0-04-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Du ___ freundlich.",
+          "options": [
+            "sind",
+            "ist",
+            "bist"
+          ],
+          "answerIndex": 2,
+          "explanation": "تصريف sein مع du هو bist."
+        },
+        {
+          "id": "DL-A0-04-Q04",
+          "sourceTaskIds": [
+            "DL-A0-04-T03"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Wir ___ Zeit.",
+          "options": [
+            "haben",
+            "hat",
+            "hast"
+          ],
+          "answerIndex": 0,
+          "explanation": "تصريف haben مع wir هو haben."
+        },
+        {
+          "id": "DL-A0-04-Q05",
+          "sourceTaskIds": [
+            "DL-A0-04-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما التصحيح: Wir hat Zeit.؟",
+          "options": [
+            "Wir sind Zeit.",
+            "Wir haben Zeit.",
+            "Wir hast Zeit."
+          ],
+          "answerIndex": 1,
+          "explanation": "مع wir نقول haben: Wir haben Zeit."
+        },
+        {
+          "id": "DL-A0-04-Q06",
+          "sourceTaskIds": [
+            "DL-A0-04-T05"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي ترتيب صحيح للجملة «لدي سؤال»؟",
+          "options": [
+            "Eine Frage ich habe.",
+            "Habe eine ich Frage.",
+            "Ich habe eine Frage."
+          ],
+          "answerIndex": 2,
+          "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+        },
+        {
+          "id": "DL-A0-04-Q07",
+          "sourceTaskIds": [
+            "DL-A0-04-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "حوّل Du bist hier إلى سؤال نعم/لا.",
+          "options": [
+            "Bist du hier?",
+            "Du hier bist?",
+            "Sind Sie hier?"
+          ],
+          "answerIndex": 0,
+          "explanation": "يبدأ سؤال نعم/لا بالفعل: Bist du hier?"
+        },
+        {
+          "id": "DL-A0-04-Q08",
+          "sourceTaskIds": [
+            "DL-A0-04-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي سؤال رسمي صحيح: «هل حضرتك السيد Weber؟»؟",
+          "options": [
+            "Bist du Herr Weber?",
+            "Ist Sie Herr Weber?",
+            "Sind Sie Herr Weber?"
+          ],
+          "answerIndex": 2,
+          "explanation": "مع Sie الرسمية نستخدم sind، ويأتي الفعل أولًا في السؤال."
+        },
+        {
+          "id": "DL-A0-04-Q09",
+          "sourceTaskIds": [
+            "DL-A0-04-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Mila ___ Studentin.",
+          "options": [
+            "ist",
+            "sind",
+            "bin"
+          ],
+          "answerIndex": 0,
+          "explanation": "مع er/sie/es نستخدم ist."
+        },
+        {
+          "id": "DL-A0-04-Q10",
+          "sourceTaskIds": [
+            "DL-A0-04-T03"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل السؤال: ___ ihr ein Handy?",
+          "options": [
+            "Habt",
+            "Haben",
+            "Hat"
+          ],
+          "answerIndex": 0,
+          "explanation": "تصريف haben مع ihr هو habt."
+        }
+      ],
+      "assessment": {
+        "status": "ready",
+        "version": "a0-04-v1",
+        "minimumScore": 80,
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A0-04-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+          "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+          "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
+          "استُبدلت مشتتات سؤالَي ترتيب الكلمات بصيغ غير معيارية واضحة لتقليل الالتباس."
+        ]
+      },
+      "performanceTasks": [
+        {
+          "id": "DL-A0-04-P01",
+          "sourceTaskIds": [
+            "DL-A0-04-T07"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "modality": [
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اكتب وقل أربع جمل عن شخصية حقيقية أو خيالية: جملتان بـIch bin وIch habe، وجملتان عن شخص آخر باستخدام ist/hat.",
+          "criteria": {
+            "taskCompletion": "ينتج أربع جمل كما طُلب.",
+            "meaningClarity": "يمكن فهم من يتحدث وما الصفة أو الشيء الذي لديه.",
+            "targetSkill": "يطابق ich مع bin/habe وضمير الغائب مع ist/hat، مع قبول معلومات خيالية."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A0-04-P02",
+          "sourceTaskIds": [
+            "DL-A0-04-T08"
+          ],
+          "objectiveIds": [
+            "DL-A0-04-G01"
+          ],
+          "modality": [
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "prompt": "من مثال مكتوب في الدرس، كوّن جوابًا قصيرًا بفعل sein أو haben ثم اصنع سؤال نعم/لا مناسبًا. اكتب الجملتين واقرأهما بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يكتب جوابًا وسؤال نعم/لا مناسبًا.",
+            "meaningClarity": "يمكن فهم المقصود من الجملتين.",
+            "targetSkill": "يستخدم تصريف sein أو haben المناسب وترتيب الفعل في سؤال نعم/لا."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a0-05-classroom-phrases",
@@ -219,9 +1394,9 @@
       "title": "عبارات الصف وطلب المساعدة",
       "minutes": 20,
       "durationLabel": "20 دقيقة",
-      "objective": "أستطيع طلب التكرار أو التوضيح، وأقول إنني لا أفهم كلمة.",
+      "objective": "أستطيع طلب التكرار أو التوضيح، وأقول إنني لا أفهم كلمة. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.",
       "sourceFile": "content/A0/lesson-05-classroom-phrases.md",
-      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 20 دقيقة · <strong>المهارات:</strong> استماع، تفاعل، قراءة · <strong>الهدف:</strong> أستطيع طلب التكرار أو التوضيح، وأقول إنني لا أفهم كلمة.</p>\n<h2 dir=\"auto\">1) عبارات مفيدة</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">الألمانية</th><th dir=\"auto\">المعنى</th></tr></thead><tbody><tr><td dir=\"auto\">Ich verstehe.</td><td dir=\"auto\">أفهم.</td></tr><tr><td dir=\"auto\">Ich verstehe nicht.</td><td dir=\"auto\">لا أفهم.</td></tr><tr><td dir=\"auto\">Bitte wiederholen Sie das.</td><td dir=\"auto\">من فضلك أعد ذلك. (رسمي)</td></tr><tr><td dir=\"auto\">Kannst du das bitte wiederholen?</td><td dir=\"auto\">هل يمكنك إعادة ذلك من فضلك؟ (غير رسمي)</td></tr><tr><td dir=\"auto\">Langsamer, bitte.</td><td dir=\"auto\">أبطأ، من فضلك.</td></tr><tr><td dir=\"auto\">Was bedeutet …?</td><td dir=\"auto\">ماذا تعني …؟</td></tr><tr><td dir=\"auto\">Wie schreibt man …?</td><td dir=\"auto\">كيف تُكتب …؟</td></tr><tr><td dir=\"auto\">Können Sie mir helfen?</td><td dir=\"auto\">هل يمكن أن تساعدني؟ (رسمي)</td></tr><tr><td dir=\"auto\">Ich habe eine Frage.</td><td dir=\"auto\">لدي سؤال.</td></tr><tr><td dir=\"auto\">Danke für Ihre Hilfe.</td><td dir=\"auto\">شكرًا على مساعدتكم.</td></tr></tbody></table></div>\n<h2 dir=\"auto\">2) ملاحظة مهذبة</h2>\n<ul><li dir=\"auto\"><strong>du</strong>: مع الأصدقاء أو شخص قريب.</li><li dir=\"auto\"><strong>Sie</strong>: مع المدرّس أو شخص لا تعرفه أو في موقف رسمي.</li><li dir=\"auto\"><strong>bitte</strong> يجعل الطلب ألطف، و<strong>Danke</strong> مناسبة بعد المساعدة.</li></ul>\n<h2 dir=\"auto\">3) حوار أصلي</h2>\n<p dir=\"auto\"><strong>Lernende:</strong> Entschuldigung, ich verstehe das Wort nicht. Was bedeutet „pünktlich“?<br><strong>Lehrerin:</strong> „Pünktlich“ bedeutet: zur richtigen Zeit.<br><strong>Lernende:</strong> Danke. Können Sie das bitte wiederholen?<br><strong>Lehrerin:</strong> Ja, natürlich.<br><strong>Lernende:</strong> Danke für Ihre Hilfe.</p>\n<h2 dir=\"auto\">4) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — صِل العبارة بمعناها</h3>\n<ol><li dir=\"auto\">Ich verstehe nicht.</li><li dir=\"auto\">Langsamer, bitte.</li><li dir=\"auto\">Was bedeutet das?</li><li dir=\"auto\">Ich habe eine Frage.</li></ol>\n<p dir=\"auto\">أ. لدي سؤال. · ب. لا أفهم. · ج. أبطأ من فضلك. · د. ماذا يعني ذلك؟</p>\n<h3 dir=\"auto\">تمرين 2 — أكمل بالكلمة المناسبة</h3>\n<p dir=\"auto\">اختر من: <strong>nicht — bitte — bedeutet — Frage</strong></p>\n<ol><li dir=\"auto\">Ich verstehe ______.</li><li dir=\"auto\">Langsamer, ______.</li><li dir=\"auto\">Was ______ „Buch“?</li><li dir=\"auto\">Ich habe eine ______.</li></ol>\n<h3 dir=\"auto\">تمرين 3 — رسمي أم غير رسمي؟</h3>\n<ol><li dir=\"auto\">Kannst du das wiederholen?</li><li dir=\"auto\">Können Sie mir helfen?</li><li dir=\"auto\">Bitte wiederholen Sie das.</li><li dir=\"auto\">Wie schreibt man das?</li></ol>\n<p dir=\"auto\">حدد أي العبارات تخاطب شخصًا بصيغة du وأيها تستخدم Sie. (الجملة الرابعة لا تحدد المخاطب وحدها.)</p>\n<h3 dir=\"auto\">تمرين 4 — رتّب الكلمات</h3>\n<ol><li dir=\"auto\">bitte / Sie / Wiederholen / das.</li><li dir=\"auto\">bedeutet / Was / das?</li><li dir=\"auto\">Frage / eine / habe / Ich.</li><li dir=\"auto\">helfen / Sie / mir / Können?</li></ol>\n<h3 dir=\"auto\">تمرين 5 — اختر الطلب اللطيف</h3>\n<p dir=\"auto\">تريد طلب إعادة الجملة من المدرّس: أ. Wiederholen!  ب. Können Sie das bitte wiederholen?  ج. Ich bin eine Wiederholung.</p>\n<h3 dir=\"auto\">تمرين 6 — أكمل الحوار</h3>\n<p dir=\"auto\"><strong>A:</strong> Entschuldigung, ich verstehe ______.<br><strong>B:</strong> Kein Problem. Was bedeutet das Wort?<br><strong>A:</strong> Ja, was ______ „Termin“?<br><strong>B:</strong> Ein Termin ist eine vereinbarte Zeit.<br><strong>A:</strong> Danke ______ Ihre Hilfe.</p>\n<h3 dir=\"auto\">تمرين 7 — مهمة تواصل</h3>\n<p dir=\"auto\">اقرأ الجملة التالية وكأنك في الصف: <strong>Der Unterricht beginnt um neun Uhr.</strong> اسأل المدرّس أن يعيدها ببطء، ثم اسأله كيف تُكتب كلمة <strong>Unterricht</strong>.</p>\n<h3 dir=\"auto\">تمرين 8 — بطاقة مساعدة شخصية</h3>\n<p dir=\"auto\">اكتب ثلاث عبارات تريد استعمالها في الصف. اختر من الدرس، ثم غطِّ الترجمة وحاول تذكرها بالألمانية.</p>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1-ب، 2-ج، 3-د، 4-أ.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. nicht، 2. bitte، 3. bedeutet، 4. Frage.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1. du، 2. Sie، 3. Sie، 4. لا تحدد المخاطب وحدها.</li><li dir=\"auto\"><strong>تمرين 4:</strong> 1. Wiederholen Sie das bitte. 2. Was bedeutet das? 3. Ich habe eine Frage. 4. Können Sie mir helfen?</li><li dir=\"auto\"><strong>تمرين 5:</strong> ب.</li><li dir=\"auto\"><strong>تمرين 6:</strong> nicht؛ bedeutet؛ für.</li><li dir=\"auto\"><strong>تمرين 7:</strong> نموذج: „Können Sie den Satz bitte wiederholen? Langsamer, bitte. Wie schreibt man ‚Unterricht‘?“</li><li dir=\"auto\"><strong>تمرين 8:</strong> إجابة شخصية؛ راعِ كتابة bitte وSie وFrage بحروفها الصحيحة.</li></ul>\n</div></details>\n<h2 dir=\"auto\">6) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>Ich verstehe nicht.</strong> → لا أفهم.</li><li dir=\"auto\"><strong>Bitte wiederholen Sie das.</strong> → أعد ذلك من فضلك.</li><li dir=\"auto\"><strong>Was bedeutet …?</strong> → ماذا تعني …؟</li><li dir=\"auto\"><strong>Wie schreibt man …?</strong> → كيف تُكتب …؟</li><li dir=\"auto\"><strong>Können Sie mir helfen?</strong> → هل يمكن أن تساعدني؟</li></ul>",
+      "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 20 دقيقة · <strong>المهارات:</strong> قراءة، تفاعل ومحادثة مباشرة · <strong>الهدف:</strong> أستطيع طلب التكرار أو التوضيح، وأقول إنني لا أفهم كلمة. التسجيل الصوتي مؤجل إلى ما بعد دفعة المحتوى دون صوت.</p>\n<h2 dir=\"auto\">1) عبارات مفيدة</h2>\n<div class=\"lesson-table-wrap\"><table class=\"lesson-table\"><thead><tr><th dir=\"auto\">الألمانية</th><th dir=\"auto\">المعنى</th></tr></thead><tbody><tr><td dir=\"auto\">Ich verstehe.</td><td dir=\"auto\">أفهم.</td></tr><tr><td dir=\"auto\">Ich verstehe nicht.</td><td dir=\"auto\">لا أفهم.</td></tr><tr><td dir=\"auto\">Bitte wiederholen Sie das.</td><td dir=\"auto\">من فضلك أعد ذلك. (رسمي)</td></tr><tr><td dir=\"auto\">Kannst du das bitte wiederholen?</td><td dir=\"auto\">هل يمكنك إعادة ذلك من فضلك؟ (غير رسمي)</td></tr><tr><td dir=\"auto\">Langsamer, bitte.</td><td dir=\"auto\">أبطأ، من فضلك.</td></tr><tr><td dir=\"auto\">Was bedeutet …?</td><td dir=\"auto\">ماذا تعني …؟</td></tr><tr><td dir=\"auto\">Wie schreibt man …?</td><td dir=\"auto\">كيف تُكتب …؟</td></tr><tr><td dir=\"auto\">Können Sie mir helfen?</td><td dir=\"auto\">هل يمكن أن تساعدني؟ (رسمي)</td></tr><tr><td dir=\"auto\">Ich habe eine Frage.</td><td dir=\"auto\">لدي سؤال.</td></tr><tr><td dir=\"auto\">Danke für Ihre Hilfe.</td><td dir=\"auto\">شكرًا على مساعدتكم.</td></tr></tbody></table></div>\n<h2 dir=\"auto\">2) ملاحظة مهذبة</h2>\n<ul><li dir=\"auto\"><strong>du</strong>: مع الأصدقاء أو شخص قريب.</li><li dir=\"auto\"><strong>Sie</strong>: مع المدرّس أو شخص لا تعرفه أو في موقف رسمي.</li><li dir=\"auto\"><strong>bitte</strong> يجعل الطلب ألطف، و<strong>Danke</strong> مناسبة بعد المساعدة.</li></ul>\n<h2 dir=\"auto\">3) حوار أصلي</h2>\n<p dir=\"auto\"><strong>Lernende:</strong> Entschuldigung, ich verstehe das Wort nicht. Was bedeutet „pünktlich“?<br><strong>Lehrerin:</strong> „Pünktlich“ bedeutet: zur richtigen Zeit.<br><strong>Lernende:</strong> Danke. Können Sie das bitte wiederholen?<br><strong>Lehrerin:</strong> Ja, natürlich.<br><strong>Lernende:</strong> Danke für Ihre Hilfe.</p>\n<h2 dir=\"auto\">4) تمارين</h2>\n<h3 dir=\"auto\">تمرين 1 — صِل العبارة بمعناها</h3>\n<ol><li dir=\"auto\">Ich verstehe nicht.</li><li dir=\"auto\">Langsamer, bitte.</li><li dir=\"auto\">Was bedeutet das?</li><li dir=\"auto\">Ich habe eine Frage.</li></ol>\n<p dir=\"auto\">أ. لدي سؤال. · ب. لا أفهم. · ج. أبطأ من فضلك. · د. ماذا يعني ذلك؟</p>\n<h3 dir=\"auto\">تمرين 2 — أكمل بالكلمة المناسبة</h3>\n<p dir=\"auto\">اختر من: <strong>nicht — bitte — bedeutet — Frage</strong></p>\n<ol><li dir=\"auto\">Ich verstehe ______.</li><li dir=\"auto\">Langsamer, ______.</li><li dir=\"auto\">Was ______ „Buch“?</li><li dir=\"auto\">Ich habe eine ______.</li></ol>\n<h3 dir=\"auto\">تمرين 3 — رسمي أم غير رسمي؟</h3>\n<ol><li dir=\"auto\">Kannst du das wiederholen?</li><li dir=\"auto\">Können Sie mir helfen?</li><li dir=\"auto\">Bitte wiederholen Sie das.</li><li dir=\"auto\">Wie schreibt man das?</li></ol>\n<p dir=\"auto\">حدد أي العبارات تخاطب شخصًا بصيغة du وأيها تستخدم Sie. (الجملة الرابعة لا تحدد المخاطب وحدها.)</p>\n<h3 dir=\"auto\">تمرين 4 — رتّب الكلمات</h3>\n<ol><li dir=\"auto\">bitte / Sie / Wiederholen / das.</li><li dir=\"auto\">bedeutet / Was / das?</li><li dir=\"auto\">Frage / eine / habe / Ich.</li><li dir=\"auto\">helfen / Sie / mir / Können?</li></ol>\n<h3 dir=\"auto\">تمرين 5 — اختر الطلب اللطيف</h3>\n<p dir=\"auto\">تريد طلب إعادة الجملة من المدرّس: أ. Wiederholen!  ب. Können Sie das bitte wiederholen?  ج. Ich bin eine Wiederholung.</p>\n<h3 dir=\"auto\">تمرين 6 — أكمل الحوار</h3>\n<p dir=\"auto\"><strong>A:</strong> Entschuldigung, ich verstehe ______.<br><strong>B:</strong> Kein Problem. Was bedeutet das Wort?<br><strong>A:</strong> Ja, was ______ „Termin“?<br><strong>B:</strong> Ein Termin ist eine vereinbarte Zeit.<br><strong>A:</strong> Danke ______ Ihre Hilfe.</p>\n<h3 dir=\"auto\">تمرين 7 — مهمة تواصل</h3>\n<p dir=\"auto\">اقرأ الجملة التالية وكأنك في الصف: <strong>Der Unterricht beginnt um neun Uhr.</strong> اسأل المدرّس أن يعيدها ببطء، ثم اسأله كيف تُكتب كلمة <strong>Unterricht</strong>.</p>\n<h3 dir=\"auto\">تمرين 8 — بطاقة مساعدة شخصية</h3>\n<p dir=\"auto\">اكتب ثلاث عبارات تريد استعمالها في الصف. اختر من الدرس، ثم غطِّ الترجمة وحاول تذكرها بالألمانية.</p>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ul><li dir=\"auto\"><strong>تمرين 1:</strong> 1-ب، 2-ج، 3-د، 4-أ.</li><li dir=\"auto\"><strong>تمرين 2:</strong> 1. nicht، 2. bitte، 3. bedeutet، 4. Frage.</li><li dir=\"auto\"><strong>تمرين 3:</strong> 1. du، 2. Sie، 3. Sie، 4. لا تحدد المخاطب وحدها.</li><li dir=\"auto\"><strong>تمرين 4:</strong> 1. Wiederholen Sie das bitte. 2. Was bedeutet das? 3. Ich habe eine Frage. 4. Können Sie mir helfen?</li><li dir=\"auto\"><strong>تمرين 5:</strong> ب.</li><li dir=\"auto\"><strong>تمرين 6:</strong> nicht؛ bedeutet؛ für.</li><li dir=\"auto\"><strong>تمرين 7:</strong> نموذج: „Können Sie den Satz bitte wiederholen? Langsamer, bitte. Wie schreibt man ‚Unterricht‘?“</li><li dir=\"auto\"><strong>تمرين 8:</strong> إجابة شخصية؛ راعِ كتابة bitte وSie وFrage بحروفها الصحيحة.</li></ul>\n</div></details>\n<h2 dir=\"auto\">6) بطاقات مراجعة</h2>\n<ul><li dir=\"auto\"><strong>Ich verstehe nicht.</strong> → لا أفهم.</li><li dir=\"auto\"><strong>Bitte wiederholen Sie das.</strong> → أعد ذلك من فضلك.</li><li dir=\"auto\"><strong>Was bedeutet …?</strong> → ماذا تعني …؟</li><li dir=\"auto\"><strong>Wie schreibt man …?</strong> → كيف تُكتب …؟</li><li dir=\"auto\"><strong>Können Sie mir helfen?</strong> → هل يمكن أن تساعدني؟</li></ul>",
       "vocabulary": [
         {
           "id": "a0-05-classroom-phrases-word-1",
@@ -284,7 +1459,300 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [
+        {
+          "id": "DL-A0-05-Q01",
+          "sourceTaskIds": [
+            "DL-A0-05-T01"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ماذا تعني Ich verstehe nicht؟",
+          "options": [
+            "أفهم",
+            "لا أفهم",
+            "أعيد من فضلك"
+          ],
+          "answerIndex": 1,
+          "explanation": "Ich verstehe nicht تعني لا أفهم."
+        },
+        {
+          "id": "DL-A0-05-Q02",
+          "sourceTaskIds": [
+            "DL-A0-05-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Langsamer, ___.",
+          "options": [
+            "bitte",
+            "Sie",
+            "Frage"
+          ],
+          "answerIndex": 0,
+          "explanation": "bitte تجعل الطلب ألطف: Langsamer, bitte."
+        },
+        {
+          "id": "DL-A0-05-Q03",
+          "sourceTaskIds": [
+            "DL-A0-05-T02"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "ما الفعل في سؤال Was ___ „Buch“؟",
+          "options": [
+            "schreibt",
+            "wiederholt",
+            "bedeutet"
+          ],
+          "answerIndex": 2,
+          "explanation": "السؤال الصحيح: Was bedeutet „Buch“؟"
+        },
+        {
+          "id": "DL-A0-05-Q04",
+          "sourceTaskIds": [
+            "DL-A0-05-T03"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تستخدم مخاطبة رسمية؟",
+          "options": [
+            "Können Sie mir helfen?",
+            "Kannst du das wiederholen?",
+            "Tschüss!"
+          ],
+          "answerIndex": 0,
+          "explanation": "Können Sie تستخدم Sie الرسمية."
+        },
+        {
+          "id": "DL-A0-05-Q05",
+          "sourceTaskIds": [
+            "DL-A0-05-T04"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي ترتيب صحيح لطلب «أعد ذلك من فضلك» بصيغة رسمية؟",
+          "options": [
+            "Sie wiederholen bitte das.",
+            "Wiederholen Sie das bitte.",
+            "Bitte das Sie wiederholen."
+          ],
+          "answerIndex": 1,
+          "explanation": "صيغة الطلب المهذبة: Wiederholen Sie das bitte."
+        },
+        {
+          "id": "DL-A0-05-Q06",
+          "sourceTaskIds": [
+            "DL-A0-05-T05"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "تريد طلب إعادة جملة من المدرّس بلطف؛ ماذا تقول؟",
+          "options": [
+            "Wiederholen!",
+            "Ich bin eine Wiederholung.",
+            "Können Sie das bitte wiederholen?"
+          ],
+          "answerIndex": 2,
+          "explanation": "الخيار الثالث طلب كامل ومهذب بصيغة Sie."
+        },
+        {
+          "id": "DL-A0-05-Q07",
+          "sourceTaskIds": [
+            "DL-A0-05-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Ich verstehe ___.",
+          "options": [
+            "nicht",
+            "bitte",
+            "wiederholen"
+          ],
+          "answerIndex": 0,
+          "explanation": "العبارة المطلوبة: Ich verstehe nicht."
+        },
+        {
+          "id": "DL-A0-05-Q08",
+          "sourceTaskIds": [
+            "DL-A0-05-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أكمل: Danke ___ Ihre Hilfe.",
+          "options": [
+            "und",
+            "für",
+            "mit"
+          ],
+          "answerIndex": 1,
+          "explanation": "نقول Danke für Ihre Hilfe."
+        },
+        {
+          "id": "DL-A0-05-Q09",
+          "sourceTaskIds": [
+            "DL-A0-05-T03"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "هل تحدد Wie schreibt man das؟ وحدها إن كان المخاطب du أم Sie؟",
+          "options": [
+            "نعم، هي دائمًا du.",
+            "نعم، هي دائمًا Sie.",
+            "لا، لا يظهر ذلك من صيغة الجملة وحدها."
+          ],
+          "answerIndex": 2,
+          "explanation": "الجملة لا تكشف وحدها نوع المخاطب؛ لا يوجد فيها du أو Sie."
+        },
+        {
+          "id": "DL-A0-05-Q10",
+          "sourceTaskIds": [
+            "DL-A0-05-T08"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "skillTags": [
+            "فهم اللغة",
+            "اختيار محدد"
+          ],
+          "prompt": "أي عبارة تسأل بها «كيف تُكتب هذه الكلمة؟»؟",
+          "options": [
+            "Wie schreibt man das?",
+            "Was bedeutet das?",
+            "Ich verstehe nicht."
+          ],
+          "answerIndex": 0,
+          "explanation": "Wie schreibt man das? تسأل عن طريقة الكتابة."
+        }
+      ],
+      "assessment": {
+        "status": "ready",
+        "version": "a0-05-v1",
+        "minimumScore": 80,
+        "minimumItems": 10,
+        "objectiveIds": [
+          "DL-A0-05-G01"
+        ],
+        "goalCriteriaVerified": true,
+        "performanceEvidenceRequired": true,
+        "performanceEvidenceImplemented": true,
+        "reviewNotes": [
+          "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+          "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+          "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+        ]
+      },
+      "performanceTasks": [
+        {
+          "id": "DL-A0-05-P01",
+          "sourceTaskIds": [
+            "DL-A0-05-T07"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "modality": [
+            "reading",
+            "speaking"
+          ],
+          "prompt": "اقرأ بطاقة موقف صفّي: لم تفهم كلمة في شرح المدرّس. اطلب تكرار العبارة ببطء، ثم اسأل عن معنى كلمة وتهجئتها بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يطلب الإعادة ببطء ثم يسأل عن المعنى والكتابة.",
+            "meaningClarity": "يفهم الشريك ما لم يفهمه المتعلم وما يحتاج إلى توضيح.",
+            "targetSkill": "يميز Was bedeutet عن Wie schreibt man ويستخدم طلبًا مهذبًا."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        },
+        {
+          "id": "DL-A0-05-P02",
+          "sourceTaskIds": [
+            "DL-A0-05-T06"
+          ],
+          "objectiveIds": [
+            "DL-A0-05-G01"
+          ],
+          "modality": [
+            "reading",
+            "writing",
+            "speaking"
+          ],
+          "prompt": "اختر عبارة صفّية من الدرس، واكتب كلمة مستهدفة منها، ثم اطلب إعادة العبارة أو تهجئة الكلمة بصيغة مهذبة واقرأ طلبك بصوت مرتفع.",
+          "criteria": {
+            "taskCompletion": "يسجل الكلمة ثم يقدم طلبًا مناسبًا للتكرار أو التهجئة.",
+            "meaningClarity": "تطابق الكلمة العبارة المختارة أو يوضح المتعلم موضع عدم الفهم.",
+            "targetSkill": "يستخدم bitte وصيغة Sie الرسمية عند مخاطبة المعلم."
+          },
+          "evaluationStatus": "ready",
+          "selfCheck": {
+            "method": "local_self_check",
+            "requiredChecks": [
+              "taskCompletion",
+              "meaningClarity",
+              "targetSkill"
+            ],
+            "minimumResponseCharacters": 12,
+            "speakAloud": true,
+            "audioRequired": false
+          }
+        }
+      ]
     },
     {
       "id": "a1-01-introductions-languages-hobbies",
@@ -370,7 +1838,18 @@
           "example": "Er tanzt gern."
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-02-work-family",
@@ -450,7 +1929,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-03-city-cafe-hotel",
@@ -542,7 +2032,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-04-daily-routine-time",
@@ -628,7 +2129,18 @@
           "example": "eine Pause machen"
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-05-food-drink",
@@ -732,7 +2244,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-06-yesterday-perfekt",
@@ -794,7 +2317,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-07-travel-weather",
@@ -904,7 +2438,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-08-shopping-clothes",
@@ -1014,7 +2559,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-09-work-appointments",
@@ -1124,7 +2680,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-10-hobbies-health",
@@ -1258,7 +2825,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-11-home-directions",
@@ -1350,7 +2928,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a1-12-trip-invitations",
@@ -1454,7 +3043,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-01-routines-abilities-experiences",
@@ -1558,7 +3158,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-02-travel-comparisons",
@@ -1680,7 +3291,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-03-food-nutrition-shopping",
@@ -1814,7 +3436,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-04-office-phone-appointments",
@@ -1912,7 +3545,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-05-training-routine-wenn",
@@ -1998,7 +3642,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-06-family-happiness-gifts",
@@ -2096,7 +3751,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-07-language-learning-travel-purpose",
@@ -2212,7 +3878,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-08-media-news-passive",
@@ -2364,7 +4041,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-09-products-technology-complaints",
@@ -2468,7 +4156,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-10-sports-health-feelings-weil",
@@ -2566,7 +4265,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-11-housing-neighborhood-wohin",
@@ -2700,7 +4410,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "a2-12-holidays-festivals-culture",
@@ -2810,7 +4531,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-01-daily-life-hobbies-experiences",
@@ -2902,7 +4634,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-02-food-habits-obwohl",
@@ -2994,7 +4737,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-03-work-communication-konjunktiv",
@@ -3092,7 +4846,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-04-continuing-education-damit",
@@ -3196,7 +4961,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-05-cities-relative-clauses",
@@ -3294,7 +5070,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-06-health-fitness-advice",
@@ -3392,7 +5179,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-07-lifestyles-customs-cultures",
@@ -3490,7 +5288,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-08-consumption-advertising-je-desto",
@@ -3606,7 +5415,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-09-travel-transport-environment",
@@ -3716,7 +5536,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-10-media-news-formal-communication",
@@ -3826,7 +5657,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-11-history-politics-passive-past",
@@ -3936,7 +5778,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b1-12-innovation-research-future",
@@ -4046,7 +5899,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-01-time-management-habits-reading",
@@ -4144,7 +6008,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-02-career-formal-communication-konjunktiv1",
@@ -4248,7 +6123,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-03-consumption-environment-passive-modal",
@@ -4352,7 +6238,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-04-cities-housing-participles",
@@ -4456,7 +6353,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-05-health-fitness-medical-information",
@@ -4560,7 +6468,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-06-study-applications-verb-noun-phrases",
@@ -4658,7 +6577,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-07-travel-experiences-prepositional-relatives",
@@ -4762,7 +6692,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-08-food-nutrition-data-passives",
@@ -4872,7 +6813,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-09-business-marketing-employment-prepositions",
@@ -4976,7 +6928,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
@@ -5080,7 +7043,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-11-humans-nature-environment-nominalization",
@@ -5190,7 +7164,18 @@
           "example": ""
         }
       ],
-      "quiz": []
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     },
     {
       "id": "b2-12-leisure-media-reported-speech",
@@ -5300,66 +7285,637 @@
           "example": ""
         }
       ],
-      "quiz": []
-    }
-  ],
-  "diagnostic": [
-    {
-      "prompt": "أكمل: Guten ___! (صباح الخير)",
-      "options": [
-        "Morgen",
-        "Nacht",
-        "Tisch"
-      ],
-      "answerIndex": 0,
-      "explanation": "Guten Morgen تعني صباح الخير."
-    },
-    {
-      "prompt": "اختر الجملة الصحيحة: كل يوم أتعلم الألمانية.",
-      "options": [
-        "Ich lerne jeden Tag Deutsch.",
-        "Ich lernen jeden Tag Deutsch.",
-        "Ich jeden Tag lerne Deutsch."
-      ],
-      "answerIndex": 0,
-      "explanation": "مع Ich نقول lerne، ويأتي الفعل المصرف عادة في الموقع الثاني."
-    },
-    {
-      "prompt": "أكمل: Am Wochenende ___ wir nach Berlin gefahren.",
-      "options": [
-        "sind",
-        "haben",
-        "werden"
-      ],
-      "answerIndex": 0,
-      "explanation": "مع انتقال المكان في Perfekt نستخدم sein: sind gefahren."
-    },
-    {
-      "prompt": "أكمل: Sie übt, weil sie die Prüfung bestehen ___ .",
-      "options": [
-        "möchte",
-        "sie möchte",
-        "möchten sie"
-      ],
-      "answerIndex": 0,
-      "explanation": "بعد weil يأتي الفعل المصرف في نهاية الجملة التابعة."
-    },
-    {
-      "prompt": "اختر الصياغة الأكثر ملاءمة لاقتراح مهذب.",
-      "options": [
-        "Es wäre sinnvoll, die Ergebnisse zu prüfen.",
-        "Es ist müssen die Ergebnisse prüfen.",
-        "Es wäre die Ergebnisse prüft sinnvoll."
-      ],
-      "answerIndex": 0,
-      "explanation": "Es wäre sinnvoll, … صياغة مهذبة شائعة للاقتراح."
+      "quiz": [],
+      "assessment": {
+        "status": "not_ready",
+        "version": null,
+        "minimumScore": 80,
+        "minimumItems": null,
+        "objectiveIds": [],
+        "goalCriteriaVerified": false,
+        "performanceEvidenceRequired": false,
+        "performanceEvidenceImplemented": false
+      },
+      "performanceTasks": []
     }
   ],
   "contentSource": "content/ Markdown lessons",
   "a0TransitionCheck": {
+    "id": "a0-a1-gate",
     "title": "A0 — اختبار انتقال قصير إلى A1",
     "durationLabel": "30 دقيقة",
     "sourceFile": "content/A0/lesson-06-placement-check.md",
-    "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 8–10 دقائق · <strong>التعليمات:</strong> اختر إجابة واحدة لكل سؤال. الدرجة المقترحة للانتقال: 7/10.</p>\n<h2 dir=\"auto\">الأسئلة</h2>\n<ol><li dir=\"auto\">أي زوج يطابق النطق الصحيح؟</li></ol>\n<p dir=\"auto\">   أ. ei في <em>mein</em> قريب من «آي»  ب. ie في <em>vier</em> مثل ei  ج. sch في <em>Schule</em> مثل z</p>\n<ol><li dir=\"auto\">أكمل: Ich ______ Lina.</li></ol>\n<p dir=\"auto\">   أ. heiße  ب. heißt  ج. heißen</p>\n<ol><li dir=\"auto\">ما التحية المناسبة صباحًا؟</li></ol>\n<p dir=\"auto\">   أ. Gute Nacht  ب. Guten Morgen  ج. Tschüss</p>\n<ol><li dir=\"auto\">ماذا تعني <em>Wie heißt du?</em></li></ol>\n<p dir=\"auto\">   أ. أين تسكن؟  ب. ما اسمك؟  ج. كم عمرك؟</p>\n<ol><li dir=\"auto\">14 بالألمانية:</li></ol>\n<p dir=\"auto\">   أ. vierzehn  ب. vierzig  ج. vier</p>\n<ol><li dir=\"auto\">أكمل: Du ______ hier.</li></ol>\n<p dir=\"auto\">   أ. bin  ب. bist  ج. sind</p>\n<ol><li dir=\"auto\">أكمل: Wir ______ Zeit.</li></ol>\n<p dir=\"auto\">   أ. haben  ب. hat  ج. hast</p>\n<ol><li dir=\"auto\">أي سؤال رسمي؟</li></ol>\n<p dir=\"auto\">   أ. Wie heißt du?  ب. Wie heißen Sie?  ج. Tschüss?</p>\n<ol><li dir=\"auto\">اختر العبارة المناسبة إذا لم تفهم:</li></ol>\n<p dir=\"auto\">   أ. Ich verstehe nicht.  ب. Guten Abend.  ج. Ich heiße bitte.</p>\n<ol><li dir=\"auto\">رتّب: <strong>eine Frage / Ich / habe</strong></li></ol>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ol><li dir=\"auto\">أ — ei في mein قريب من «آي». 2. أ — مع Ich نقول heiße. 3. ب. 4. ب. 5. أ. 6. ب — Du bist. 7. أ — Wir haben. 8. ب. 9. أ. 10. Ich habe eine Frage.</li></ol>\n</div></details>\n<h2 dir=\"auto\">التقييم</h2>\n<ul><li dir=\"auto\"><strong>9–10:</strong> جاهز للبدء بـA1؛ استمر بالمراجعة.</li><li dir=\"auto\"><strong>7–8:</strong> ابدأ A1 وراجع البطاقات التي أخطأت فيها.</li><li dir=\"auto\"><strong>0–6:</strong> أعد وحدات A0 ثم جرّب الاختبار مرة أخرى.</li></ul>"
-  }
+    "contentHtml": "<p dir=\"auto\"><strong>تنبيه:</strong> هذه ورقة مصدرية قديمة للمراجعة، وليست بوابة التطبيق الحالية. البوابة الجديدة تتطلب 80% على الأقل وإكمال ثلاث مهام أداء بتحقق ذاتي محلي؛ لا يسجل التطبيق الصوت ولا يقيّم النطق آليًا.</p>\n<p dir=\"auto\"><strong>المدة:</strong> 8–10 دقائق (تقدير قديم) · <strong>التعليمات:</strong> اختر إجابة واحدة لكل سؤال. عتبة 7/10 الواردة أدناه قديمة ولا تُستخدم للانتقال.</p>\n<h2 dir=\"auto\">الأسئلة</h2>\n<ol><li dir=\"auto\">أي زوج يطابق النطق الصحيح؟</li></ol>\n<p dir=\"auto\">   أ. ei في <em>mein</em> قريب من «آي»  ب. ie في <em>vier</em> مثل ei  ج. sch في <em>Schule</em> مثل z</p>\n<ol><li dir=\"auto\">أكمل: Ich ______ Lina.</li></ol>\n<p dir=\"auto\">   أ. heiße  ب. heißt  ج. heißen</p>\n<ol><li dir=\"auto\">ما التحية المناسبة صباحًا؟</li></ol>\n<p dir=\"auto\">   أ. Gute Nacht  ب. Guten Morgen  ج. Tschüss</p>\n<ol><li dir=\"auto\">ماذا تعني <em>Wie heißt du?</em></li></ol>\n<p dir=\"auto\">   أ. أين تسكن؟  ب. ما اسمك؟  ج. كم عمرك؟</p>\n<ol><li dir=\"auto\">14 بالألمانية:</li></ol>\n<p dir=\"auto\">   أ. vierzehn  ب. vierzig  ج. vier</p>\n<ol><li dir=\"auto\">أكمل: Du ______ hier.</li></ol>\n<p dir=\"auto\">   أ. bin  ب. bist  ج. sind</p>\n<ol><li dir=\"auto\">أكمل: Wir ______ Zeit.</li></ol>\n<p dir=\"auto\">   أ. haben  ب. hat  ج. hast</p>\n<ol><li dir=\"auto\">أي سؤال رسمي؟</li></ol>\n<p dir=\"auto\">   أ. Wie heißt du?  ب. Wie heißen Sie?  ج. Tschüss?</p>\n<ol><li dir=\"auto\">اختر العبارة المناسبة إذا لم تفهم:</li></ol>\n<p dir=\"auto\">   أ. Ich verstehe nicht.  ب. Guten Abend.  ج. Ich heiße bitte.</p>\n<ol><li dir=\"auto\">رتّب: <strong>eine Frage / Ich / habe</strong></li></ol>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ol><li dir=\"auto\">أ — ei في mein قريب من «آي». 2. أ — مع Ich نقول heiße. 3. ب. 4. ب. 5. أ. 6. ب — Du bist. 7. أ — Wir haben. 8. ب. 9. أ. 10. Ich habe eine Frage.</li></ol>\n</div></details>\n<h2 dir=\"auto\">توصيات النسخة القديمة (للتوثيق فقط)</h2>\n<p dir=\"auto\">التصنيفات التالية لا تفتح A1 ولا تعكس معيار التطبيق الحالي:</p>\n<ul><li dir=\"auto\"><strong>9–10:</strong> كانت النسخة القديمة تقترح البدء بـA1.</li><li dir=\"auto\"><strong>7–8:</strong> كانت تقترح بدء A1 مع المراجعة.</li><li dir=\"auto\"><strong>0–6:</strong> كانت تقترح إعادة وحدات A0.</li></ul>\n<p dir=\"auto\">المعيار الحالي هو 80% على الأقل في التقييم الجديد، بعد إتقان دروس A0 الخمسة وإكمال مهام الأداء الثلاث.</p>",
+    "quiz": [
+      {
+        "id": "DL-A0-GATE-Q01",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q01"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "قراءة",
+          "أصوات"
+        ],
+        "prompt": "أي عبارة تصف النطق الصحيح؟",
+        "options": [
+          "ei في mein قريب من «آي»",
+          "ie في vier مثل ei",
+          "sch في Schule مثل z"
+        ],
+        "answerIndex": 0,
+        "explanation": "ei في mein قريب من «آي»؛ ie صوت i طويل، وsch قريب من «ش»."
+      },
+      {
+        "id": "DL-A0-GATE-Q02",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q02"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "أكمل: Ich ___ Lina.",
+        "options": [
+          "heißt",
+          "heiße",
+          "heißen"
+        ],
+        "answerIndex": 1,
+        "explanation": "مع Ich نستخدم heiße."
+      },
+      {
+        "id": "DL-A0-GATE-Q03",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q03"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "ما التحية المناسبة صباحًا؟",
+        "options": [
+          "Gute Nacht",
+          "Guten Morgen",
+          "Tschüss"
+        ],
+        "answerIndex": 1,
+        "explanation": "Guten Morgen تحية الصباح."
+      },
+      {
+        "id": "DL-A0-GATE-Q04",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q04"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "ماذا تعني Wie heißt du؟",
+        "options": [
+          "أين تسكن؟",
+          "كم عمرك؟",
+          "ما اسمك؟"
+        ],
+        "answerIndex": 2,
+        "explanation": "السؤال غير الرسمي يسأل عن الاسم."
+      },
+      {
+        "id": "DL-A0-GATE-Q05",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q05"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "14 بالألمانية هي:",
+        "options": [
+          "vierzehn",
+          "vierzig",
+          "vier"
+        ],
+        "answerIndex": 0,
+        "explanation": "vierzehn تعني 14؛ vierzig تعني 40."
+      },
+      {
+        "id": "DL-A0-GATE-Q06",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q06"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "أكمل: Du ___ hier.",
+        "options": [
+          "bin",
+          "bist",
+          "sind"
+        ],
+        "answerIndex": 1,
+        "explanation": "تصريف sein مع du هو bist."
+      },
+      {
+        "id": "DL-A0-GATE-Q07",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q07"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "أكمل: Wir ___ Zeit.",
+        "options": [
+          "hat",
+          "hast",
+          "haben"
+        ],
+        "answerIndex": 2,
+        "explanation": "تصريف haben مع wir هو haben."
+      },
+      {
+        "id": "DL-A0-GATE-Q08",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q08"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "أي سؤال رسمي؟",
+        "options": [
+          "Wie heißt du?",
+          "Wie heißen Sie?",
+          "Tschüss?"
+        ],
+        "answerIndex": 1,
+        "explanation": "Wie heißen Sie؟ تستخدم المخاطبة الرسمية."
+      },
+      {
+        "id": "DL-A0-GATE-Q09",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q09"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "لم تفهم كلمة؛ أي عبارة تقول؟",
+        "options": [
+          "Ich verstehe nicht.",
+          "Guten Abend.",
+          "Ich heiße bitte."
+        ],
+        "answerIndex": 0,
+        "explanation": "Ich verstehe nicht تعني لا أفهم."
+      },
+      {
+        "id": "DL-A0-GATE-Q10",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q10"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "skillTags": [
+          "فهم اللغة",
+          "اختيار محدد"
+        ],
+        "prompt": "أي جملة ترتب الكلمات Ich / habe / eine Frage ترتيبًا صحيحًا؟",
+        "options": [
+          "Eine Frage Ich habe.",
+          "Ich eine Frage habe.",
+          "Ich habe eine Frage."
+        ],
+        "answerIndex": 2,
+        "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+      }
+    ],
+    "assessment": {
+      "status": "ready",
+      "version": "a0-gate-v1",
+      "minimumScore": 80,
+      "minimumItems": 10,
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "goalCriteriaVerified": true,
+      "performanceEvidenceRequired": true,
+      "performanceEvidenceImplemented": true,
+      "reviewNotes": [
+        "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+        "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+        "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+      ]
+    },
+    "performanceTasks": [
+      {
+        "id": "DL-A0-GATE-P01",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q04"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "modality": [
+          "speaking"
+        ],
+        "prompt": "قدّم معلومات أساسية عن شخصية خيالية: الاسم والعمر وبلد الأصل والسكن، ثم أجب عن سؤالين مناسبين.",
+        "criteria": {
+          "taskCompletion": "يقدم المعلومات المطلوبة ويجيب عن السؤالين.",
+          "meaningClarity": "يفهم المستمع من المتحدث وما البيانات المقصودة.",
+          "targetSkill": "يستخدم التراكيب الأساسية ويجيب بوضوح؛ لا تُشترط لهجة الناطق الأصلي."
+        },
+        "evaluationStatus": "ready",
+        "selfCheck": {
+          "method": "local_self_check",
+          "requiredChecks": [
+            "taskCompletion",
+            "meaningClarity",
+            "targetSkill"
+          ],
+          "minimumResponseCharacters": 12,
+          "speakAloud": true,
+          "audioRequired": false
+        }
+      },
+      {
+        "id": "DL-A0-GATE-P02",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q09"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "modality": [
+          "reading",
+          "speaking"
+        ],
+        "prompt": "اقرأ التعليمات التدريبية: „Öffnen Sie bitte das Buch.“ اذكر معناها بالعربية، أو اطلب بالألمانية إعادة التعليمات ببطء: „Können Sie das bitte wiederholen?“ ثم اقرأ عبارتك بصوت مرتفع. لا يلزم تسجيل صوتك.",
+        "criteria": {
+          "taskCompletion": "ينقل المعلومة الأساسية أو يطلب توضيحًا مناسبًا.",
+          "meaningClarity": "يظهر من جوابه ما فهمه وما يحتاج إلى توضيح.",
+          "targetSkill": "يستعمل عبارات الفهم والتوضيح المناسبة؛ لا يُشترط تسجيل الصوت."
+        },
+        "evaluationStatus": "ready",
+        "selfCheck": {
+          "method": "local_self_check",
+          "requiredChecks": [
+            "taskCompletion",
+            "meaningClarity",
+            "targetSkill"
+          ],
+          "minimumResponseCharacters": 12,
+          "speakAloud": true,
+          "audioRequired": false
+        }
+      },
+      {
+        "id": "DL-A0-GATE-P03",
+        "sourceTaskIds": [
+          "DL-A0-GATE-Q05"
+        ],
+        "objectiveIds": [
+          "DL-A0-GATE-G01"
+        ],
+        "modality": [
+          "reading",
+          "writing"
+        ],
+        "prompt": "اقرأ البطاقة التدريبية: „Name: Lina · Alter: 18 Jahre · Herkunft: Tunesien“. استخرج الاسم والعمر والبلد، ثم اكتبها في بطاقة جديدة بثلاث جمل مفهومة.",
+        "criteria": {
+          "taskCompletion": "يستخرج الحقول الثلاثة ويكتب بطاقة مقابلة.",
+          "meaningClarity": "تطابق المعلومات المكتوبة المصدر ولا يختلط الاسم بالعمر أو البلد.",
+          "targetSkill": "يقرأ بيانات بسيطة ويكتب جملًا/أرقامًا أساسية بترتيب مفهوم."
+        },
+        "evaluationStatus": "ready",
+        "selfCheck": {
+          "method": "local_self_check",
+          "requiredChecks": [
+            "taskCompletion",
+            "meaningClarity",
+            "targetSkill"
+          ],
+          "minimumResponseCharacters": 12,
+          "speakAloud": false,
+          "audioRequired": false
+        }
+      }
+    ]
+  },
+  "progression": {
+    "startingLevel": "A0",
+    "masteryThreshold": 80
+  },
+  "audioAssets": [
+    {
+      "assetId": "DL-A0-01-AUD-ABC-01",
+      "lessonId": "a0-01-alphabet",
+      "title": "أسماء الحروف الألمانية",
+      "kind": "pronunciation_alphabet",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-01-AUD-ABC-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Das deutsche Alphabet. A, Be, Ce, De, E, Eff, Ge, Ha, I, Jot, Ka, El, Em, En, O, Pe, Ku, Er, Es, Te, U, Fau, We, Iks, Ypsilon, Zett. Die Umlaute heißen Ä, Ö und Ü. Das Eszett schreiben wir ß.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-01-AUD-PHON-01",
+      "lessonId": "a0-01-alphabet",
+      "title": "أنماط النطق الأولى",
+      "kind": "pronunciation_patterns",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-01-AUD-PHON-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Mein. Nein. Drei. Das Muster ei klingt ungefähr wie ai. Vier. Sieben. Das Muster ie klingt wie ein langes i. Schule: sch klingt wie sch in schön. Zwei beginnt mit ts. Wasser beginnt mit einem v Laut. Vier beginnt mit f. Sport und Student: sp und st am Wortanfang klingen ungefähr wie schp und scht. Ich und Buch zeigen zwei unterschiedliche ch Laute.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-01-AUD-WORDS-01",
+      "lessonId": "a0-01-alphabet",
+      "title": "كلمات الإملاء",
+      "kind": "exercise_dictation",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-01-AUD-WORDS-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Mina. Berlin. Sieben. Schule.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-02-AUD-PHR-01",
+      "lessonId": "a0-02-greetings",
+      "title": "عبارات التحية والتعارف",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-02-AUD-PHR-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Hallo! Guten Morgen! Guten Tag! Guten Abend! Gute Nacht! Tschüss! Auf Wiedersehen! Danke! Bitte! Freut mich! Ich heiße Lina. Wie heißt du? Wie heißen Sie? Wie geht es dir? Wie geht es Ihnen? Gut, danke. Und dir? Sehr gut, danke. Es geht.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-02-AUD-DLG-01",
+      "lessonId": "a0-02-greetings",
+      "title": "حوار رسمي: لينا والسيد Weber",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-01.mp3",
+          "speaker": "Lina",
+          "text": "Guten Tag! Ich heiße Lina. Wie heißen Sie?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-02.mp3",
+          "speaker": "Herr Weber",
+          "text": "Guten Tag! Ich bin Herr Weber. Freut mich.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-03.mp3",
+          "speaker": "Lina",
+          "text": "Freut mich auch. Auf Wiedersehen!",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-04.mp3",
+          "speaker": "Herr Weber",
+          "text": "Auf Wiedersehen!",
+          "voiceId": "voice-01"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-02-AUD-DLG-02",
+      "lessonId": "a0-02-greetings",
+      "title": "حوار غير رسمي: Sami وNora",
+      "kind": "dialogue",
+      "status": "partial",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-01.mp3",
+          "speaker": "Sami",
+          "text": "Hallo! Ich heiße Sami. Wie heißt du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-02.mp3",
+          "speaker": "Nora",
+          "text": "Ich heiße Nora. Freut mich!",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-03.mp3",
+          "speaker": "Sami",
+          "text": "Freut mich auch. Tschüss!",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-04.mp3",
+          "speaker": "Nora",
+          "text": "Tschüss!",
+          "voiceId": "voice-01"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-03-AUD-NUM-01",
+      "lessonId": "a0-03-numbers-personal-info",
+      "title": "الأعداد والبيانات الشخصية",
+      "kind": "numbers",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-03-AUD-NUM-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig. Dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. Einundzwanzig. Vierunddreißig. Meine Nummer ist zwei sechs, vier eins, null acht.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-03-AUD-DLG-01",
+      "lessonId": "a0-03-numbers-personal-info",
+      "title": "حوار عن البيانات الشخصية",
+      "kind": "dialogue",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-01.mp3",
+          "speaker": "Mariem",
+          "text": "Hallo! Wie heißt du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-02.mp3",
+          "speaker": "Yassine",
+          "text": "Ich heiße Yassine. Und du?",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-03.mp3",
+          "speaker": "Mariem",
+          "text": "Ich heiße Mariem. Woher kommst du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-04.mp3",
+          "speaker": "Yassine",
+          "text": "Ich komme aus Tunesien. Ich wohne in Nabeul.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-05.mp3",
+          "speaker": "Mariem",
+          "text": "Wie alt bist du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-06.mp3",
+          "speaker": "Yassine",
+          "text": "Ich bin einundzwanzig Jahre alt.",
+          "voiceId": "voice-01"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-04-AUD-MODEL-01",
+      "lessonId": "a0-04-first-sentences",
+      "title": "أمثلة الجمل الأولى",
+      "kind": "model_sentences",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-04-AUD-MODEL-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Ich bin zweiundzwanzig Jahre alt. Du bist in Nabeul. Wir sind Freunde. Ich habe eine Frage. Mila hat ein Handy. Haben Sie Zeit? Bist du hier? Wir haben Zeit. Ich bin müde. Nora ist hier.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-05-AUD-PHR-01",
+      "lessonId": "a0-05-classroom-phrases",
+      "title": "عبارات الصف وطلب المساعدة",
+      "kind": "phrase_bank",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-05-AUD-PHR-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Ich verstehe. Ich verstehe nicht. Bitte wiederholen Sie das. Kannst du das bitte wiederholen? Langsamer, bitte. Was bedeutet das? Wie schreibt man das? Können Sie mir helfen? Ich habe eine Frage. Danke für Ihre Hilfe.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-05-AUD-DLG-01",
+      "lessonId": "a0-05-classroom-phrases",
+      "title": "حوار طلب التوضيح",
+      "kind": "dialogue",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-01.mp3",
+          "speaker": "Lernender",
+          "text": "Entschuldigung, ich verstehe das Wort nicht. Was bedeutet pünktlich?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-02.mp3",
+          "speaker": "Lehrerin",
+          "text": "Pünktlich bedeutet: zur richtigen Zeit.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-03.mp3",
+          "speaker": "Lernender",
+          "text": "Danke. Können Sie das bitte wiederholen?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-04.mp3",
+          "speaker": "Lehrerin",
+          "text": "Ja, natürlich.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-05.mp3",
+          "speaker": "Lernender",
+          "text": "Danke für Ihre Hilfe.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-GATE-AUD-LST-01",
+      "lessonId": "a0-a1-gate",
+      "title": "استماع بوابة A0 الختامية",
+      "kind": "gate_listening",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-GATE-AUD-LST-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Guten Tag! Ich heiße Nora und wohne in Nabeul. Ich bin einundzwanzig Jahre alt. Meine Kursnummer ist zwei sechs, vier eins, null acht. Entschuldigung, ich verstehe die letzte Zahl nicht. Können Sie sie bitte wiederholen?",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "hide_until_first_attempt"
+    }
+  ]
 }

@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-02-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-02-Q01",
+      "sourceTaskIds": [
+        "DL-A0-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "الساعة الثامنة صباحًا؛ أي تحية مناسبة؟",
+      "options": [
+        "Gute Nacht!",
+        "Guten Morgen!",
+        "Guten Abend!"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guten Morgen تُستعمل صباحًا."
+    },
+    {
+      "id": "DL-A0-02-Q02",
+      "sourceTaskIds": [
+        "DL-A0-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تلائم الوداع قبل النوم؟",
+      "options": [
+        "Hallo!",
+        "Guten Tag!",
+        "Gute Nacht!"
+      ],
+      "answerIndex": 2,
+      "explanation": "Gute Nacht تقال عند الوداع ليلًا قبل النوم."
+    },
+    {
+      "id": "DL-A0-02-Q03",
+      "sourceTaskIds": [
+        "DL-A0-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "تودّع شخصًا بأسلوب رسمي؛ ماذا تقول؟",
+      "options": [
+        "Auf Wiedersehen!",
+        "Tschüss!",
+        "Guten Morgen!"
+      ],
+      "answerIndex": 0,
+      "explanation": "Auf Wiedersehen وداع رسمي أو مهذب."
+    },
+    {
+      "id": "DL-A0-02-Q04",
+      "sourceTaskIds": [
+        "DL-A0-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ Lina.",
+      "options": [
+        "heißen",
+        "heiße",
+        "heißt"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع ich نقول heiße."
+    },
+    {
+      "id": "DL-A0-02-Q05",
+      "sourceTaskIds": [
+        "DL-A0-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني Wie heißen Sie؟",
+      "options": [
+        "ما اسمك؟ بصيغة du",
+        "أين تسكن؟",
+        "ما اسم حضرتك؟ بصيغة رسمية"
+      ],
+      "answerIndex": 2,
+      "explanation": "Sie الرسمية تعني حضرتك، وWie heißen Sie تسأل عن الاسم."
+    },
+    {
+      "id": "DL-A0-02-Q06",
+      "sourceTaskIds": [
+        "DL-A0-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "تخاطب مدرّسًا لا تعرفه؛ أي ضمير تختار؟",
+      "options": [
+        "Sie",
+        "du",
+        "ihr"
+      ],
+      "answerIndex": 0,
+      "explanation": "في الموقف الرسمي نستخدم Sie بحرف كبير."
+    },
+    {
+      "id": "DL-A0-02-Q07",
+      "sourceTaskIds": [
+        "DL-A0-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "شخص قال Freut mich. ما الرد الطبيعي؟",
+      "options": [
+        "Gute Nacht.",
+        "Freut mich auch.",
+        "Ich heiße bitte."
+      ],
+      "answerIndex": 1,
+      "explanation": "Freut mich auch تعني تشرفت بك أيضًا."
+    },
+    {
+      "id": "DL-A0-02-Q08",
+      "sourceTaskIds": [
+        "DL-A0-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جواب يناسب Wie geht es Ihnen؟",
+      "options": [
+        "Ich heiße Lina.",
+        "Auf Wiedersehen.",
+        "Gut, danke. Und Ihnen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "السؤال رسمي عن الحال؛ يمكن الرد Gut, danke. Und Ihnen?"
+    },
+    {
+      "id": "DL-A0-02-Q09",
+      "sourceTaskIds": [
+        "DL-A0-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "Tschüss! تُستعمل غالبًا:",
+      "options": [
+        "مع صديق في وداع غير رسمي",
+        "في تحية رسمية صباحًا",
+        "قبل النوم فقط"
+      ],
+      "answerIndex": 0,
+      "explanation": "Tschüss وداع غير رسمي."
+    },
+    {
+      "id": "DL-A0-02-Q10",
+      "sourceTaskIds": [
+        "DL-A0-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل الرد: Freut mich! — Freut mich ___.",
+      "options": [
+        "Sie",
+        "auch",
+        "heiße"
+      ],
+      "answerIndex": 1,
+      "explanation": "الرد الطبيعي هو Freut mich auch."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-02-P01",
+      "sourceTaskIds": [
+        "DL-A0-02-T07"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "modality": [
+        "speaking"
+      ],
+      "prompt": "مثّل تعارفًا قصيرًا: مرة مع صديق بصيغة du، ومرة مع معلّم بصيغة Sie. قل التحية واسمك واسأل عن الاسم ثم ودّع. ",
+      "criteria": {
+        "taskCompletion": "ينجز عناصر التعارف والتحية والوداع في الصيغتين.",
+        "meaningClarity": "يفهم الشريك الاسم والسؤال والوداع من دون التباس مؤثر.",
+        "targetSkill": "يختار صيغة du/Sie وتصريف heißen المناسبين، من دون اشتراط لهجة محلية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-02-P02",
+      "sourceTaskIds": [
+        "DL-A0-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "modality": [
+        "reading",
+        "speaking"
+      ],
+      "prompt": "اقرأ الحوار الرسمي الوارد في الدرس، وحدّد الاسم وصيغة المخاطبة، ثم مثّل ردًا مناسبًا بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يحدد الاسم ويقدم ردًا مناسبًا بعد قراءة الحوار.",
+        "meaningClarity": "ينقل المعلومات المقصودة بوضوح.",
+        "targetSkill": "يميز Sie الرسمية من du غير الرسمية ويختار رد تحية مناسبًا."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

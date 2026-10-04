@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "audioAssets": [
+    {
+      "assetId": "DL-A0-01-AUD-ABC-01",
+      "lessonId": "a0-01-alphabet",
+      "title": "أسماء الحروف الألمانية",
+      "kind": "pronunciation_alphabet",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-01-AUD-ABC-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Das deutsche Alphabet. A, Be, Ce, De, E, Eff, Ge, Ha, I, Jot, Ka, El, Em, En, O, Pe, Ku, Er, Es, Te, U, Fau, We, Iks, Ypsilon, Zett. Die Umlaute heißen Ä, Ö und Ü. Das Eszett schreiben wir ß.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-01-AUD-PHON-01",
+      "lessonId": "a0-01-alphabet",
+      "title": "أنماط النطق الأولى",
+      "kind": "pronunciation_patterns",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-01-AUD-PHON-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Mein. Nein. Drei. Das Muster ei klingt ungefähr wie ai. Vier. Sieben. Das Muster ie klingt wie ein langes i. Schule: sch klingt wie sch in schön. Zwei beginnt mit ts. Wasser beginnt mit einem v Laut. Vier beginnt mit f. Sport und Student: sp und st am Wortanfang klingen ungefähr wie schp und scht. Ich und Buch zeigen zwei unterschiedliche ch Laute.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-01-AUD-WORDS-01",
+      "lessonId": "a0-01-alphabet",
+      "title": "كلمات الإملاء",
+      "kind": "exercise_dictation",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-01-AUD-WORDS-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Mina. Berlin. Sieben. Schule.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-02-AUD-PHR-01",
+      "lessonId": "a0-02-greetings",
+      "title": "عبارات التحية والتعارف",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-02-AUD-PHR-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Hallo! Guten Morgen! Guten Tag! Guten Abend! Gute Nacht! Tschüss! Auf Wiedersehen! Danke! Bitte! Freut mich! Ich heiße Lina. Wie heißt du? Wie heißen Sie? Wie geht es dir? Wie geht es Ihnen? Gut, danke. Und dir? Sehr gut, danke. Es geht.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-02-AUD-DLG-01",
+      "lessonId": "a0-02-greetings",
+      "title": "حوار رسمي: لينا والسيد Weber",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-01.mp3",
+          "speaker": "Lina",
+          "text": "Guten Tag! Ich heiße Lina. Wie heißen Sie?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-02.mp3",
+          "speaker": "Herr Weber",
+          "text": "Guten Tag! Ich bin Herr Weber. Freut mich.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-03.mp3",
+          "speaker": "Lina",
+          "text": "Freut mich auch. Auf Wiedersehen!",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-01-04.mp3",
+          "speaker": "Herr Weber",
+          "text": "Auf Wiedersehen!",
+          "voiceId": "voice-01"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-02-AUD-DLG-02",
+      "lessonId": "a0-02-greetings",
+      "title": "حوار غير رسمي: Sami وNora",
+      "kind": "dialogue",
+      "status": "partial",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-01.mp3",
+          "speaker": "Sami",
+          "text": "Hallo! Ich heiße Sami. Wie heißt du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-02.mp3",
+          "speaker": "Nora",
+          "text": "Ich heiße Nora. Freut mich!",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-03.mp3",
+          "speaker": "Sami",
+          "text": "Freut mich auch. Tschüss!",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-02-AUD-DLG-02-04.mp3",
+          "speaker": "Nora",
+          "text": "Tschüss!",
+          "voiceId": "voice-01"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-03-AUD-NUM-01",
+      "lessonId": "a0-03-numbers-personal-info",
+      "title": "الأعداد والبيانات الشخصية",
+      "kind": "numbers",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-03-AUD-NUM-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig. Dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert. Einundzwanzig. Vierunddreißig. Meine Nummer ist zwei sechs, vier eins, null acht.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-03-AUD-DLG-01",
+      "lessonId": "a0-03-numbers-personal-info",
+      "title": "حوار عن البيانات الشخصية",
+      "kind": "dialogue",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-01.mp3",
+          "speaker": "Mariem",
+          "text": "Hallo! Wie heißt du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-02.mp3",
+          "speaker": "Yassine",
+          "text": "Ich heiße Yassine. Und du?",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-03.mp3",
+          "speaker": "Mariem",
+          "text": "Ich heiße Mariem. Woher kommst du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-04.mp3",
+          "speaker": "Yassine",
+          "text": "Ich komme aus Tunesien. Ich wohne in Nabeul.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-05.mp3",
+          "speaker": "Mariem",
+          "text": "Wie alt bist du?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-03-AUD-DLG-01-06.mp3",
+          "speaker": "Yassine",
+          "text": "Ich bin einundzwanzig Jahre alt.",
+          "voiceId": "voice-01"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-04-AUD-MODEL-01",
+      "lessonId": "a0-04-first-sentences",
+      "title": "أمثلة الجمل الأولى",
+      "kind": "model_sentences",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-04-AUD-MODEL-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Ich bin zweiundzwanzig Jahre alt. Du bist in Nabeul. Wir sind Freunde. Ich habe eine Frage. Mila hat ein Handy. Haben Sie Zeit? Bist du hier? Wir haben Zeit. Ich bin müde. Nora ist hier.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-05-AUD-PHR-01",
+      "lessonId": "a0-05-classroom-phrases",
+      "title": "عبارات الصف وطلب المساعدة",
+      "kind": "phrase_bank",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-05-AUD-PHR-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Ich verstehe. Ich verstehe nicht. Bitte wiederholen Sie das. Kannst du das bitte wiederholen? Langsamer, bitte. Was bedeutet das? Wie schreibt man das? Können Sie mir helfen? Ich habe eine Frage. Danke für Ihre Hilfe.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-05-AUD-DLG-01",
+      "lessonId": "a0-05-classroom-phrases",
+      "title": "حوار طلب التوضيح",
+      "kind": "dialogue",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-01.mp3",
+          "speaker": "Lernender",
+          "text": "Entschuldigung, ich verstehe das Wort nicht. Was bedeutet pünktlich?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-02.mp3",
+          "speaker": "Lehrerin",
+          "text": "Pünktlich bedeutet: zur richtigen Zeit.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-03.mp3",
+          "speaker": "Lernender",
+          "text": "Danke. Können Sie das bitte wiederholen?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-04.mp3",
+          "speaker": "Lehrerin",
+          "text": "Ja, natürlich.",
+          "voiceId": "voice-01"
+        },
+        {
+          "src": "assets/audio/DL-A0-05-AUD-DLG-01-05.mp3",
+          "speaker": "Lernender",
+          "text": "Danke für Ihre Hilfe.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-A0-GATE-AUD-LST-01",
+      "lessonId": "a0-a1-gate",
+      "title": "استماع بوابة A0 الختامية",
+      "kind": "gate_listening",
+      "status": "not_generated",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A0-GATE-AUD-LST-01.mp3",
+          "speaker": "المعلّقة",
+          "text": "Guten Tag! Ich heiße Nora und wohne in Nabeul. Ich bin einundzwanzig Jahre alt. Meine Kursnummer ist zwei sechs, vier eins, null acht. Entschuldigung, ich verstehe die letzte Zahl nicht. Können Sie sie bitte wiederholen?",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "hide_until_first_attempt"
+    }
+  ]
+}

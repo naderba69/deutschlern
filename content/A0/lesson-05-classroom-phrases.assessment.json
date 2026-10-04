@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-05-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-05-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-05-Q01",
+      "sourceTaskIds": [
+        "DL-A0-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني Ich verstehe nicht؟",
+      "options": [
+        "أفهم",
+        "لا أفهم",
+        "أعيد من فضلك"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ich verstehe nicht تعني لا أفهم."
+    },
+    {
+      "id": "DL-A0-05-Q02",
+      "sourceTaskIds": [
+        "DL-A0-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Langsamer, ___.",
+      "options": [
+        "bitte",
+        "Sie",
+        "Frage"
+      ],
+      "answerIndex": 0,
+      "explanation": "bitte تجعل الطلب ألطف: Langsamer, bitte."
+    },
+    {
+      "id": "DL-A0-05-Q03",
+      "sourceTaskIds": [
+        "DL-A0-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الفعل في سؤال Was ___ „Buch“؟",
+      "options": [
+        "schreibt",
+        "wiederholt",
+        "bedeutet"
+      ],
+      "answerIndex": 2,
+      "explanation": "السؤال الصحيح: Was bedeutet „Buch“؟"
+    },
+    {
+      "id": "DL-A0-05-Q04",
+      "sourceTaskIds": [
+        "DL-A0-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تستخدم مخاطبة رسمية؟",
+      "options": [
+        "Können Sie mir helfen?",
+        "Kannst du das wiederholen?",
+        "Tschüss!"
+      ],
+      "answerIndex": 0,
+      "explanation": "Können Sie تستخدم Sie الرسمية."
+    },
+    {
+      "id": "DL-A0-05-Q05",
+      "sourceTaskIds": [
+        "DL-A0-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي ترتيب صحيح لطلب «أعد ذلك من فضلك» بصيغة رسمية؟",
+      "options": [
+        "Sie wiederholen bitte das.",
+        "Wiederholen Sie das bitte.",
+        "Bitte das Sie wiederholen."
+      ],
+      "answerIndex": 1,
+      "explanation": "صيغة الطلب المهذبة: Wiederholen Sie das bitte."
+    },
+    {
+      "id": "DL-A0-05-Q06",
+      "sourceTaskIds": [
+        "DL-A0-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "تريد طلب إعادة جملة من المدرّس بلطف؛ ماذا تقول؟",
+      "options": [
+        "Wiederholen!",
+        "Ich bin eine Wiederholung.",
+        "Können Sie das bitte wiederholen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "الخيار الثالث طلب كامل ومهذب بصيغة Sie."
+    },
+    {
+      "id": "DL-A0-05-Q07",
+      "sourceTaskIds": [
+        "DL-A0-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich verstehe ___.",
+      "options": [
+        "nicht",
+        "bitte",
+        "wiederholen"
+      ],
+      "answerIndex": 0,
+      "explanation": "العبارة المطلوبة: Ich verstehe nicht."
+    },
+    {
+      "id": "DL-A0-05-Q08",
+      "sourceTaskIds": [
+        "DL-A0-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Danke ___ Ihre Hilfe.",
+      "options": [
+        "und",
+        "für",
+        "mit"
+      ],
+      "answerIndex": 1,
+      "explanation": "نقول Danke für Ihre Hilfe."
+    },
+    {
+      "id": "DL-A0-05-Q09",
+      "sourceTaskIds": [
+        "DL-A0-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "هل تحدد Wie schreibt man das؟ وحدها إن كان المخاطب du أم Sie؟",
+      "options": [
+        "نعم، هي دائمًا du.",
+        "نعم، هي دائمًا Sie.",
+        "لا، لا يظهر ذلك من صيغة الجملة وحدها."
+      ],
+      "answerIndex": 2,
+      "explanation": "الجملة لا تكشف وحدها نوع المخاطب؛ لا يوجد فيها du أو Sie."
+    },
+    {
+      "id": "DL-A0-05-Q10",
+      "sourceTaskIds": [
+        "DL-A0-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تسأل بها «كيف تُكتب هذه الكلمة؟»؟",
+      "options": [
+        "Wie schreibt man das?",
+        "Was bedeutet das?",
+        "Ich verstehe nicht."
+      ],
+      "answerIndex": 0,
+      "explanation": "Wie schreibt man das? تسأل عن طريقة الكتابة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-05-P01",
+      "sourceTaskIds": [
+        "DL-A0-05-T07"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "modality": [
+        "reading",
+        "speaking"
+      ],
+      "prompt": "اقرأ بطاقة موقف صفّي: لم تفهم كلمة في شرح المدرّس. اطلب تكرار العبارة ببطء، ثم اسأل عن معنى كلمة وتهجئتها بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يطلب الإعادة ببطء ثم يسأل عن المعنى والكتابة.",
+        "meaningClarity": "يفهم الشريك ما لم يفهمه المتعلم وما يحتاج إلى توضيح.",
+        "targetSkill": "يميز Was bedeutet عن Wie schreibt man ويستخدم طلبًا مهذبًا."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-05-P02",
+      "sourceTaskIds": [
+        "DL-A0-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اختر عبارة صفّية من الدرس، واكتب كلمة مستهدفة منها، ثم اطلب إعادة العبارة أو تهجئة الكلمة بصيغة مهذبة واقرأ طلبك بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يسجل الكلمة ثم يقدم طلبًا مناسبًا للتكرار أو التهجئة.",
+        "meaningClarity": "تطابق الكلمة العبارة المختارة أو يوضح المتعلم موضع عدم الفهم.",
+        "targetSkill": "يستخدم bitte وصيغة Sie الرسمية عند مخاطبة المعلم."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

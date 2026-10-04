@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-04-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-04-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
+      "استُبدلت مشتتات سؤالَي ترتيب الكلمات بصيغ غير معيارية واضحة لتقليل الالتباس."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-04-Q01",
+      "sourceTaskIds": [
+        "DL-A0-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي ضمير يناسب Mariem؟",
+      "options": [
+        "sie",
+        "er",
+        "es"
+      ],
+      "answerIndex": 0,
+      "explanation": "Mariem اسم مؤنث هنا، لذا يناسبه sie."
+    },
+    {
+      "id": "DL-A0-04-Q02",
+      "sourceTaskIds": [
+        "DL-A0-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ hier.",
+      "options": [
+        "bist",
+        "bin",
+        "sind"
+      ],
+      "answerIndex": 1,
+      "explanation": "تصريف sein مع ich هو bin."
+    },
+    {
+      "id": "DL-A0-04-Q03",
+      "sourceTaskIds": [
+        "DL-A0-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ freundlich.",
+      "options": [
+        "sind",
+        "ist",
+        "bist"
+      ],
+      "answerIndex": 2,
+      "explanation": "تصريف sein مع du هو bist."
+    },
+    {
+      "id": "DL-A0-04-Q04",
+      "sourceTaskIds": [
+        "DL-A0-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ Zeit.",
+      "options": [
+        "haben",
+        "hat",
+        "hast"
+      ],
+      "answerIndex": 0,
+      "explanation": "تصريف haben مع wir هو haben."
+    },
+    {
+      "id": "DL-A0-04-Q05",
+      "sourceTaskIds": [
+        "DL-A0-04-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما التصحيح: Wir hat Zeit.؟",
+      "options": [
+        "Wir sind Zeit.",
+        "Wir haben Zeit.",
+        "Wir hast Zeit."
+      ],
+      "answerIndex": 1,
+      "explanation": "مع wir نقول haben: Wir haben Zeit."
+    },
+    {
+      "id": "DL-A0-04-Q06",
+      "sourceTaskIds": [
+        "DL-A0-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي ترتيب صحيح للجملة «لدي سؤال»؟",
+      "options": [
+        "Eine Frage ich habe.",
+        "Habe eine ich Frage.",
+        "Ich habe eine Frage."
+      ],
+      "answerIndex": 2,
+      "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+    },
+    {
+      "id": "DL-A0-04-Q07",
+      "sourceTaskIds": [
+        "DL-A0-04-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "حوّل Du bist hier إلى سؤال نعم/لا.",
+      "options": [
+        "Bist du hier?",
+        "Du hier bist?",
+        "Sind Sie hier?"
+      ],
+      "answerIndex": 0,
+      "explanation": "يبدأ سؤال نعم/لا بالفعل: Bist du hier?"
+    },
+    {
+      "id": "DL-A0-04-Q08",
+      "sourceTaskIds": [
+        "DL-A0-04-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال رسمي صحيح: «هل حضرتك السيد Weber؟»؟",
+      "options": [
+        "Bist du Herr Weber?",
+        "Ist Sie Herr Weber?",
+        "Sind Sie Herr Weber?"
+      ],
+      "answerIndex": 2,
+      "explanation": "مع Sie الرسمية نستخدم sind، ويأتي الفعل أولًا في السؤال."
+    },
+    {
+      "id": "DL-A0-04-Q09",
+      "sourceTaskIds": [
+        "DL-A0-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Mila ___ Studentin.",
+      "options": [
+        "ist",
+        "sind",
+        "bin"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع er/sie/es نستخدم ist."
+    },
+    {
+      "id": "DL-A0-04-Q10",
+      "sourceTaskIds": [
+        "DL-A0-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل السؤال: ___ ihr ein Handy?",
+      "options": [
+        "Habt",
+        "Haben",
+        "Hat"
+      ],
+      "answerIndex": 0,
+      "explanation": "تصريف haben مع ihr هو habt."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-04-P01",
+      "sourceTaskIds": [
+        "DL-A0-04-T07"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب وقل أربع جمل عن شخصية حقيقية أو خيالية: جملتان بـIch bin وIch habe، وجملتان عن شخص آخر باستخدام ist/hat.",
+      "criteria": {
+        "taskCompletion": "ينتج أربع جمل كما طُلب.",
+        "meaningClarity": "يمكن فهم من يتحدث وما الصفة أو الشيء الذي لديه.",
+        "targetSkill": "يطابق ich مع bin/habe وضمير الغائب مع ist/hat، مع قبول معلومات خيالية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-04-P02",
+      "sourceTaskIds": [
+        "DL-A0-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-A0-04-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "من مثال مكتوب في الدرس، كوّن جوابًا قصيرًا بفعل sein أو haben ثم اصنع سؤال نعم/لا مناسبًا. اكتب الجملتين واقرأهما بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "يكتب جوابًا وسؤال نعم/لا مناسبًا.",
+        "meaningClarity": "يمكن فهم المقصود من الجملتين.",
+        "targetSkill": "يستخدم تصريف sein أو haben المناسب وترتيب الفعل في سؤال نعم/لا."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-01-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-01-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
+      "صُحح مفتاح سؤال vier إلى ie بعد مراجعة كل المفاتيح."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-01-Q01",
+      "sourceTaskIds": [
+        "DL-A0-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الأنماط"
+      ],
+      "prompt": "أي نمط كتابي يرد في كلمة mein؟",
+      "options": [
+        "ie",
+        "z",
+        "ei",
+        "sch"
+      ],
+      "answerIndex": 2,
+      "explanation": "تُكتب mein بالنمط ei؛ ويقارب صوته «آي»."
+    },
+    {
+      "id": "DL-A0-01-Q02",
+      "sourceTaskIds": [
+        "DL-A0-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الأنماط"
+      ],
+      "prompt": "أي نمط تراه في كلمة vier؟",
+      "options": [
+        "ie",
+        "ei",
+        "sch",
+        "sp"
+      ],
+      "answerIndex": 0,
+      "explanation": "تحتوي vier على ie، وهو هنا صوت i طويل؛ لا تخلطه بـei."
+    },
+    {
+      "id": "DL-A0-01-Q03",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "ما الصوت التقريبي للنمط sch في كلمة Schule؟",
+      "options": [
+        "ش",
+        "تس",
+        "ف"
+      ],
+      "answerIndex": 0,
+      "explanation": "يُقرأ sch في Schule قريبًا من «ش»."
+    },
+    {
+      "id": "DL-A0-01-Q04",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "كيف يبدأ نطق z في كلمة zwei؟",
+      "options": [
+        "ز",
+        "ش",
+        "تس"
+      ],
+      "answerIndex": 2,
+      "explanation": "يبدأ z في zwei بصوت قريب من «تس»، وليس ز أو ش."
+    },
+    {
+      "id": "DL-A0-01-Q05",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "ما الصوت التقريبي للحرف w في Wasser؟",
+      "options": [
+        "قريب من f",
+        "قريب من v الإنجليزية",
+        "قريب من خ"
+      ],
+      "answerIndex": 1,
+      "explanation": "يُقرأ w الألماني قريبًا من v الإنجليزية في كلمة Wasser."
+    },
+    {
+      "id": "DL-A0-01-Q06",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "كيف يُنطق v غالبًا في كلمة vier من المفردات الألمانية الأساسية؟",
+      "options": [
+        "قريب من z",
+        "قريب من w الألمانية",
+        "قريب من f"
+      ],
+      "answerIndex": 2,
+      "explanation": "في كلمات ألمانية أساسية مثل vier يُنطق v غالبًا قريبًا من f؛ توجد استثناءات وكلمات دخيلة."
+    },
+    {
+      "id": "DL-A0-01-Q07",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "أي وصف يقارب نطق sp في بداية كلمة Sport؟",
+      "options": [
+        "sh + p تقريبًا",
+        "s + p تقريبًا",
+        "f"
+      ],
+      "answerIndex": 0,
+      "explanation": "في بداية كلمة مثل Sport يُنطق sp قريبًا من /ʃp/ (تقريبًا sh + p)؛ والتقريب الكتابي ليس بديلًا عن سماع الصوت الألماني."
+    },
+    {
+      "id": "DL-A0-01-Q08",
+      "sourceTaskIds": [
+        "DL-A0-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الحروف"
+      ],
+      "prompt": "ما آخر حرف مكتوب في كلمة Deutsch؟",
+      "options": [
+        "s",
+        "h",
+        "t"
+      ],
+      "answerIndex": 1,
+      "explanation": "تُكتب Deutsch بالحروف D-e-u-t-s-c-h؛ وآخر حرف فيها h."
+    },
+    {
+      "id": "DL-A0-01-Q09",
+      "sourceTaskIds": [
+        "DL-A0-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الحروف"
+      ],
+      "prompt": "ما أول ثلاثة أحرف مكتوبة في كلمة Schule؟",
+      "options": [
+        "sch",
+        "s-c-h-e",
+        "schu"
+      ],
+      "answerIndex": 0,
+      "explanation": "تبدأ Schule بالتتابع sch، ثم يأتي بعدها الحرف u."
+    },
+    {
+      "id": "DL-A0-01-Q10",
+      "sourceTaskIds": [
+        "DL-A0-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "أسماء الحروف",
+        "تهجئة"
+      ],
+      "prompt": "أي تسلسل من أسماء الحروف الألمانية يتهجّى Lina؟",
+      "options": [
+        "i – el – ah – en",
+        "el – i – en – ah",
+        "ell – ai – em – ah"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lina تُهجّى L-I-N-A؛ وأسماء الحروف هنا el – i – en – ah."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-01-P01",
+      "sourceTaskIds": [
+        "DL-A0-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "modality": [
+        "speaking",
+        "writing"
+      ],
+      "prompt": "اختر اسمًا قصيرًا، واكتب حروفه بالترتيب، ثم هجّئه بصوت أسماء الحروف الألمانية.",
+      "criteria": {
+        "taskCompletion": "يُهجّى الاسم كاملًا وبالترتيب المطلوب.",
+        "meaningClarity": "يمكن للمستمع تحديد الاسم المقصود من تسلسل الحروف.",
+        "targetSkill": "تُستخدم أسماء الحروف الألمانية المناسبة لكل حرف؛ لا تُشترط لهجة محلية بعينها."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-01-P02",
+      "sourceTaskIds": [
+        "DL-A0-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب الكلمات الأربع المستهدفة من الذاكرة، ثم هجّئ واحدة بأسماء الحروف الألمانية واقرأ الكلمات بصوت مرتفع. قارنها بالنموذج بعد المحاولة.",
+      "criteria": {
+        "taskCompletion": "يكتب الكلمات الأربع المستهدفة ويهجّئ كلمة واحدة أو يقرأها بوضوح.",
+        "meaningClarity": "يمكن تمييز الكلمات المكتوبة والمقصودة من التهجئة.",
+        "targetSkill": "يراجع الأنماط المستهدفة ei/ie/sch والحروف المناسبة؛ لا تُشترط لهجة محلية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

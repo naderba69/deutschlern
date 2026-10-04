@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-gate-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-GATE-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
+      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
+      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-GATE-Q01",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q01"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "أصوات"
+      ],
+      "prompt": "أي عبارة تصف النطق الصحيح؟",
+      "options": [
+        "ei في mein قريب من «آي»",
+        "ie في vier مثل ei",
+        "sch في Schule مثل z"
+      ],
+      "answerIndex": 0,
+      "explanation": "ei في mein قريب من «آي»؛ ie صوت i طويل، وsch قريب من «ش»."
+    },
+    {
+      "id": "DL-A0-GATE-Q02",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q02"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ Lina.",
+      "options": [
+        "heißt",
+        "heiße",
+        "heißen"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع Ich نستخدم heiße."
+    },
+    {
+      "id": "DL-A0-GATE-Q03",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q03"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما التحية المناسبة صباحًا؟",
+      "options": [
+        "Gute Nacht",
+        "Guten Morgen",
+        "Tschüss"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guten Morgen تحية الصباح."
+    },
+    {
+      "id": "DL-A0-GATE-Q04",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q04"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني Wie heißt du؟",
+      "options": [
+        "أين تسكن؟",
+        "كم عمرك؟",
+        "ما اسمك؟"
+      ],
+      "answerIndex": 2,
+      "explanation": "السؤال غير الرسمي يسأل عن الاسم."
+    },
+    {
+      "id": "DL-A0-GATE-Q05",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q05"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "14 بالألمانية هي:",
+      "options": [
+        "vierzehn",
+        "vierzig",
+        "vier"
+      ],
+      "answerIndex": 0,
+      "explanation": "vierzehn تعني 14؛ vierzig تعني 40."
+    },
+    {
+      "id": "DL-A0-GATE-Q06",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q06"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ hier.",
+      "options": [
+        "bin",
+        "bist",
+        "sind"
+      ],
+      "answerIndex": 1,
+      "explanation": "تصريف sein مع du هو bist."
+    },
+    {
+      "id": "DL-A0-GATE-Q07",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q07"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ Zeit.",
+      "options": [
+        "hat",
+        "hast",
+        "haben"
+      ],
+      "answerIndex": 2,
+      "explanation": "تصريف haben مع wir هو haben."
+    },
+    {
+      "id": "DL-A0-GATE-Q08",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q08"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال رسمي؟",
+      "options": [
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Tschüss?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wie heißen Sie؟ تستخدم المخاطبة الرسمية."
+    },
+    {
+      "id": "DL-A0-GATE-Q09",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q09"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "لم تفهم كلمة؛ أي عبارة تقول؟",
+      "options": [
+        "Ich verstehe nicht.",
+        "Guten Abend.",
+        "Ich heiße bitte."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ich verstehe nicht تعني لا أفهم."
+    },
+    {
+      "id": "DL-A0-GATE-Q10",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q10"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة ترتب الكلمات Ich / habe / eine Frage ترتيبًا صحيحًا؟",
+      "options": [
+        "Eine Frage Ich habe.",
+        "Ich eine Frage habe.",
+        "Ich habe eine Frage."
+      ],
+      "answerIndex": 2,
+      "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-GATE-P01",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q04"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "modality": [
+        "speaking"
+      ],
+      "prompt": "قدّم معلومات أساسية عن شخصية خيالية: الاسم والعمر وبلد الأصل والسكن، ثم أجب عن سؤالين مناسبين.",
+      "criteria": {
+        "taskCompletion": "يقدم المعلومات المطلوبة ويجيب عن السؤالين.",
+        "meaningClarity": "يفهم المستمع من المتحدث وما البيانات المقصودة.",
+        "targetSkill": "يستخدم التراكيب الأساسية ويجيب بوضوح؛ لا تُشترط لهجة الناطق الأصلي."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-GATE-P02",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q09"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "modality": [
+        "reading",
+        "speaking"
+      ],
+      "prompt": "اقرأ التعليمات التدريبية: „Öffnen Sie bitte das Buch.“ اذكر معناها بالعربية، أو اطلب بالألمانية إعادة التعليمات ببطء: „Können Sie das bitte wiederholen?“ ثم اقرأ عبارتك بصوت مرتفع. لا يلزم تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "ينقل المعلومة الأساسية أو يطلب توضيحًا مناسبًا.",
+        "meaningClarity": "يظهر من جوابه ما فهمه وما يحتاج إلى توضيح.",
+        "targetSkill": "يستعمل عبارات الفهم والتوضيح المناسبة؛ لا يُشترط تسجيل الصوت."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-GATE-P03",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q05"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing"
+      ],
+      "prompt": "اقرأ البطاقة التدريبية: „Name: Lina · Alter: 18 Jahre · Herkunft: Tunesien“. استخرج الاسم والعمر والبلد، ثم اكتبها في بطاقة جديدة بثلاث جمل مفهومة.",
+      "criteria": {
+        "taskCompletion": "يستخرج الحقول الثلاثة ويكتب بطاقة مقابلة.",
+        "meaningClarity": "تطابق المعلومات المكتوبة المصدر ولا يختلط الاسم بالعمر أو البلد.",
+        "targetSkill": "يقرأ بيانات بسيطة ويكتب جملًا/أرقامًا أساسية بترتيب مفهوم."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

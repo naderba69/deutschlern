@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSE_PATH = ROOT / "data" / "course.json"
+AUDIO_PLAYLIST_PATH = ROOT / "data" / "audio-playlists.json"
 LEVELS = ["A0", "A1", "A2", "B1", "B2"]
 A0_SUPPORT_FILES = {"lesson-01-overview.md", "lesson-06-placement-check.md"}
 
@@ -331,8 +332,86 @@ def vocab_table(markdown: str, lesson_id: str) -> list[dict[str, str]]:
     return []
 
 
+def assessment_source(path: Path) -> tuple[dict, list[dict], list[dict]]:
+    default_assessment = {
+        "status": "not_ready",
+        "version": None,
+        "minimumScore": 80,
+        "minimumItems": None,
+        "objectiveIds": [],
+        "goalCriteriaVerified": False,
+        "performanceEvidenceRequired": False,
+        "performanceEvidenceImplemented": False,
+    }
+    assessment_path = path.with_suffix(".assessment.json")
+    if not assessment_path.exists():
+        return default_assessment, [], []
+    try:
+        source = json.loads(assessment_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise SystemExit(f"Invalid assessment JSON in {assessment_path.relative_to(ROOT)}: {error}") from error
+    if not isinstance(source, dict) or source.get("schemaVersion") != 1:
+        raise SystemExit(f"Assessment sidecar must use schemaVersion 1: {assessment_path.relative_to(ROOT)}")
+    assessment = source.get("assessment")
+    quiz = source.get("quiz", [])
+    performance_tasks = source.get("performanceTasks", [])
+    if not isinstance(assessment, dict) or not isinstance(quiz, list) or not isinstance(performance_tasks, list):
+        raise SystemExit(f"Invalid assessment shape in {assessment_path.relative_to(ROOT)}")
+    assessment = {**default_assessment, **assessment}
+    if assessment.get("status") not in {"draft", "not_ready", "ready"}:
+        raise SystemExit(f"Unknown assessment status in {assessment_path.relative_to(ROOT)}")
+    if assessment.get("minimumScore") != 80:
+        raise SystemExit(f"Assessment threshold must remain 80 in {assessment_path.relative_to(ROOT)}")
+    return assessment, quiz, performance_tasks
+
+
+def audio_source() -> list[dict]:
+    try:
+        source = json.loads(AUDIO_PLAYLIST_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise SystemExit(f"Invalid audio playlist JSON: {error}") from error
+    if not isinstance(source, dict) or source.get("schemaVersion") != 1 or not isinstance(source.get("audioAssets"), list):
+        raise SystemExit("Audio playlist must use schemaVersion 1 and include an audioAssets list")
+    assets = source["audioAssets"]
+    allowed_statuses = {"not_generated", "partial", "generated_pending_acoustic_review", "ready"}
+    seen_ids: set[str] = set()
+    speaker_voices: dict[str, str] = {}
+    for asset in assets:
+        if not isinstance(asset, dict) or not isinstance(asset.get("assetId"), str) or not asset["assetId"]:
+            raise SystemExit("Every audio asset needs a stable assetId")
+        if asset["assetId"] in seen_ids:
+            raise SystemExit(f"Duplicate audio asset ID: {asset['assetId']}")
+        seen_ids.add(asset["assetId"])
+        if asset.get("status") not in allowed_statuses or not isinstance(asset.get("segments"), list) or not asset["segments"]:
+            raise SystemExit(f"Invalid audio asset status or segments: {asset['assetId']}")
+        if asset.get("transcriptPolicy", "offer") not in {"offer", "hide_until_first_attempt"}:
+            raise SystemExit(f"Invalid transcript policy: {asset['assetId']}")
+        present = 0
+        for segment in asset["segments"]:
+            if not isinstance(segment, dict) or not all(isinstance(segment.get(key), str) and segment[key].strip() for key in ("src", "speaker", "text", "voiceId")):
+                raise SystemExit(f"Every audio segment needs a path, speaker, voice ID, and transcript: {asset['assetId']}")
+            if segment["voiceId"] not in {"voice-00", "voice-01"}:
+                raise SystemExit(f"Audio segment uses an unselected voice ID: {asset['assetId']}")
+            previous_voice = speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+            if previous_voice != segment["voiceId"]:
+                raise SystemExit(f"A speaker changes voice across segments: {segment['speaker']}")
+            path = Path(segment["src"])
+            if path.is_absolute() or ".." in path.parts or path.suffix.lower() != ".mp3":
+                raise SystemExit(f"Audio paths must be safe relative MP3 paths: {segment['src']}")
+            present += (ROOT / path).is_file()
+        segment_count = len(asset["segments"])
+        if asset["status"] in {"ready", "generated_pending_acoustic_review"} and present != segment_count:
+            raise SystemExit(f"Audio asset is missing generated segments: {asset['assetId']}")
+        if asset["status"] == "partial" and not 0 < present < segment_count:
+            raise SystemExit(f"Partial audio asset must have both generated and missing segments: {asset['assetId']}")
+        if asset["status"] == "not_generated" and present:
+            raise SystemExit(f"Audio marked not_generated already contains files: {asset['assetId']}")
+    return assets
+
+
 def build_lesson(level: str, path: Path) -> dict:
     markdown = path.read_text(encoding="utf-8")
+    assessment, quiz, performance_tasks = assessment_source(path)
     raw_title = next((line[2:].strip() for line in markdown.splitlines() if line.startswith("# ")), path.stem)
     unit_match = re.match(rf"{re.escape(level)}\.(\d+)\s*[—-]\s*(.*)", raw_title)
     title = unit_match.group(2).strip() if unit_match else raw_title
@@ -350,13 +429,15 @@ def build_lesson(level: str, path: Path) -> dict:
         "sourceFile": path.relative_to(ROOT).as_posix(),
         "contentHtml": markdown_to_html(markdown),
         "vocabulary": vocab_table(markdown, lesson_id),
-        "quiz": [],
+        "quiz": quiz,
+        "assessment": assessment,
+        "performanceTasks": performance_tasks,
     }
 
 
 def main() -> None:
     if not COURSE_PATH.exists():
-        raise SystemExit("Missing data/course.json; restore its levels/diagnostic seed first.")
+        raise SystemExit("Missing data/course.json; restore its course-level seed first.")
     current = json.loads(COURSE_PATH.read_text(encoding="utf-8"))
     lessons: list[dict] = []
     for level in LEVELS:
@@ -371,18 +452,37 @@ def main() -> None:
     seen = {lesson["id"] for lesson in lessons}
     if len(seen) != len(lessons):
         raise SystemExit("Duplicate generated lesson IDs detected")
+    audio_assets = audio_source()
+    valid_audio_lessons = seen | {"a0-a1-gate"}
+    for asset in audio_assets:
+        if asset.get("lessonId") not in valid_audio_lessons:
+            raise SystemExit(f"Audio asset references an unknown lesson: {asset['assetId']}")
     transition_path = ROOT / "content" / "A0" / "lesson-06-placement-check.md"
     transition_markdown = transition_path.read_text(encoding="utf-8")
     transition_title = next((line[2:].strip() for line in transition_markdown.splitlines() if line.startswith("# ")), "اختبار انتقال إلى A1")
     _, transition_duration = lesson_minutes(transition_markdown)
+    transition_assessment, transition_quiz, transition_tasks = assessment_source(transition_path)
+    transition_assessment["performanceEvidenceRequired"] = True
+    if not transition_path.with_suffix(".assessment.json").exists():
+        transition_assessment["minimumItems"] = 10
 
-    current["version"] = 2
+    current["version"] = 3
+    current.pop("diagnostic", None)
+    current["progression"] = {
+        "startingLevel": "A0",
+        "masteryThreshold": 80,
+    }
     current["lessons"] = lessons
+    current["audioAssets"] = audio_assets
     current["a0TransitionCheck"] = {
+        "id": "a0-a1-gate",
         "title": transition_title,
         "durationLabel": transition_duration,
         "sourceFile": transition_path.relative_to(ROOT).as_posix(),
         "contentHtml": markdown_to_html(transition_markdown),
+        "quiz": transition_quiz,
+        "assessment": transition_assessment,
+        "performanceTasks": transition_tasks,
     }
     current["contentSource"] = "content/ Markdown lessons"
     COURSE_PATH.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
