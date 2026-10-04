@@ -46,6 +46,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A2-12": "a2-12-holidays-festivals-culture",
     "DL-B1-01": "b1-01-daily-life-hobbies-experiences",
     "DL-B1-02": "b1-02-food-habits-obwohl",
+    "DL-B1-03": "b1-03-work-communication-konjunktiv",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 

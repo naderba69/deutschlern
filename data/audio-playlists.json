@@ -2520,6 +2520,106 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-03-AUD-PHR-01",
+      "lessonId": "b1-03-work-communication-konjunktiv",
+      "title": "مفردات ونماذج الاقتراح المهذب في العمل",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-03-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Stelle, die Stellen. Die Bewerbung, die Bewerbungen. Die Erfahrung, die Erfahrungen. Die Fähigkeit, die Fähigkeiten. Die Verantwortung. Die Aufgabe, die Aufgaben. Die Rückmeldung, die Rückmeldungen. Die Frist, die Fristen. Das Vorstellungsgespräch, die Vorstellungsgespräche. Sich bewerben um. Eine Aufgabe übernehmen. Zuverlässig. Selbstständig. Die Zusammenarbeit. Ich würde gern mehr Verantwortung übernehmen. Wir würden die Frist verlängern. Ich würde vorschlagen, dass wir zuerst die Aufgaben verteilen. Ich hätte gern flexiblere Arbeitszeiten. Ich wäre gern Teil eines internationalen Teams. Was würden Sie vorschlagen? Könnten wir die Aufgaben neu verteilen? Ich würde zuerst den Bericht prüfen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-03-AUD-DLG-01",
+      "lessonId": "b1-03-work-communication-konjunktiv",
+      "title": "حوار: Nora وOmar ومديرة الفريق",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-01.mp3",
+          "speaker": "Leiterin",
+          "text": "Wir haben nur zwei Tage bis zur Frist. Was würden Sie vorschlagen?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-02.mp3",
+          "speaker": "Nora",
+          "text": "Ich würde die Aufgaben klar verteilen. Ich kann den Bericht prüfen.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-03.mp3",
+          "speaker": "Omar",
+          "text": "Ich würde gern die Präsentation vorbereiten.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-04.mp3",
+          "speaker": "Leiterin",
+          "text": "Gut. Könnten Sie mir bis morgen eine erste Version schicken?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-05.mp3",
+          "speaker": "Omar",
+          "text": "Ja, das würde ich gern übernehmen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-06.mp3",
+          "speaker": "Nora",
+          "text": "Ich hätte noch eine Frage: Sollen wir die Rückmeldung der Kundinnen abwarten?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-03-AUD-DLG-01-07.mp3",
+          "speaker": "Leiterin",
+          "text": "Ja. Danach entscheiden wir gemeinsam.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-03-AUD-READ-01",
+      "lessonId": "b1-03-work-communication-konjunktiv",
+      "title": "قراءة: إعلان وظيفة في المركز الثقافي",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-03-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Wir suchen eine zuverlässige Person für unser Team. Zu den Aufgaben gehören die Terminplanung, die Beantwortung von E-Mails und die Vorbereitung kleiner Veranstaltungen. Erfahrung in der Zusammenarbeit mit Menschen ist hilfreich. Bewerberinnen und Bewerber sollten selbstständig arbeiten und freundlich kommunizieren können. Bitte schicken Sie Ihre Bewerbung innerhalb der nächsten zwei Wochen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-03-AUD-LST-01",
+      "lessonId": "b1-03-work-communication-konjunktiv",
+      "title": "استماع: تغيير موعد اجتماع المشروع",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-03-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Guten Morgen, hier ist Farid aus dem Projektteam. Ich würde vorschlagen, dass wir die Besprechung auf Donnerstag verschieben. Am Mittwoch habe ich einen Termin mit einem Kunden. Könnten Sie mir bitte bis heute Nachmittag eine Rückmeldung geben? Dann kann ich den Kalender aktualisieren. Vielen Dank.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [

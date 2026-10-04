@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 108, "the generated A0, A1, A2, B1.1, and B1.2 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 240, "the audio manifest must contain all two hundred forty generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 112, "the generated A0, A1, A2, B1.1, B1.2, and B1.3 audio assets must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 250, "the audio manifest must contain all two hundred fifty generated clips");
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 32, "the course bundle must carry the thirty-two ready lesson assessments");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 320, "the course bundle must carry all three hundred twenty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 64, "the course bundle must carry all sixty-four lesson performance tasks");
@@ -113,6 +113,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A2-12": "a2-12-holidays-festivals-culture",
     "DL-B1-01": "b1-01-daily-life-hobbies-experiences",
     "DL-B1-02": "b1-02-food-habits-obwohl",
+    "DL-B1-03": "b1-03-work-communication-konjunktiv",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -386,6 +387,42 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b1FoodAudioMarkup, /حوار: Mira وTarek عن وجبة العمل/);
   assert.match(b1FoodAudioMarkup, /نهائي/);
   assert.doesNotMatch(b1FoodAudioMarkup, /للمراجعة/);
+  const b1WorkAssets = courseData.audioAssets.filter((asset) => asset.assetId.startsWith("DL-B1-03-"));
+  assert.equal(b1WorkAssets.length, 4, "B1.3 must keep four lesson-mapped audio assets with grammar examples included in its vocabulary track");
+  assert.equal(b1WorkAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "B1.3 must expose all ten generated clips");
+  assert.ok(b1WorkAssets.every((asset) => asset.status === "ready" && asset.transcriptPolicy === "offer"), "B1.3 recordings must be final and transcripts must remain available");
+  const b1WorkSourceForAudio = fs.readFileSync(path.join(rootDir, "content/B1/lesson-03-work-communication-konjunktiv.md"), "utf8");
+  const b1WorkPhrase = b1WorkAssets.find((asset) => asset.assetId === "DL-B1-03-AUD-PHR-01");
+  assert.equal(b1WorkPhrase.segments[0].voiceId, "voice-02", "B1.3 vocabulary and grammar track must use the established narrator");
+  assert.match(b1WorkPhrase.segments[0].text, /Ich würde vorschlagen, dass wir zuerst die Aufgaben verteilen/);
+  const b1WorkDialogue = b1WorkAssets.find((asset) => asset.assetId === "DL-B1-03-AUD-DLG-01");
+  const sourceB1WorkDialogue = b1WorkSourceForAudio.split("## 3) حوار أصلي في اجتماع عمل")[1].split("## 4)")[0]
+    .split(/\r?\n/).filter((line) => /^\*\*(Leiterin|Nora|Omar):\*\*/.test(line))
+    .map((line) => line.slice(line.indexOf(":**") + 3).trim());
+  assert.deepEqual(b1WorkDialogue.segments.map((segment) => segment.text), sourceB1WorkDialogue, "B1.3 dialogue transcript must match all seven source turns");
+  assert.deepEqual(b1WorkDialogue.segments.map((segment) => segment.speaker), ["Leiterin", "Nora", "Omar", "Leiterin", "Omar", "Nora", "Leiterin"], "B1.3 dialogue speakers must follow the source");
+  assert.ok(b1WorkDialogue.segments.filter((segment) => segment.speaker === "Nora").every((segment) => segment.voiceId === "voice-02"), "Nora must keep her A2.11 voice in B1.3");
+  assert.ok(b1WorkDialogue.segments.filter((segment) => segment.speaker === "Omar").every((segment) => segment.voiceId === "voice-03"), "Omar must keep his A2.12 voice in B1.3");
+  assert.ok(b1WorkDialogue.segments.filter((segment) => segment.speaker === "Leiterin").every((segment) => segment.voiceId === "voice-00"), "Leiterin must keep one voice across all turns");
+  const a2NoraDialogue = courseData.audioAssets.find((asset) => asset.assetId === "DL-A2-11-AUD-DLG-01");
+  const a2OmarDialogue = courseData.audioAssets.find((asset) => asset.assetId === "DL-A2-12-AUD-DLG-01");
+  assert.equal(b1WorkDialogue.segments.find((segment) => segment.speaker === "Nora").voiceId, a2NoraDialogue.segments.find((segment) => segment.speaker === "Nora").voiceId, "Nora's B1.3 voice must stay consistent with A2.11");
+  assert.equal(b1WorkDialogue.segments.find((segment) => segment.speaker === "Omar").voiceId, a2OmarDialogue.segments.find((segment) => segment.speaker === "Omar").voiceId, "Omar's B1.3 voice must stay consistent with A2.12");
+  const b1WorkReading = b1WorkAssets.find((asset) => asset.assetId === "DL-B1-03-AUD-READ-01");
+  const sourceB1WorkReading = b1WorkSourceForAudio.split("## 4) إعلان وظيفة أصلي")[1].split("### أسئلة الفهم")[0]
+    .split(/\r?\n/).map((line) => line.trim()).find((line) => line.startsWith("> Wir suchen"))
+    .slice(2).trim();
+  assert.equal(b1WorkReading.segments[0].text, sourceB1WorkReading, "B1.3 reading transcript must match the source advertisement");
+  assert.equal(b1WorkReading.segments[0].voiceId, "voice-02", "B1.3 reading must use the established narrator");
+  const b1WorkListening = b1WorkAssets.find((asset) => asset.assetId === "DL-B1-03-AUD-LST-01");
+  const sourceB1WorkListening = b1WorkSourceForAudio.split("## 5) نص استماع معدّ للنطق")[1].split("أجب:")[0]
+    .split(/\r?\n/).map((line) => line.trim()).find((line) => line.startsWith("> ")).slice(2).trim();
+  assert.equal(b1WorkListening.segments[0].text, sourceB1WorkListening, "B1.3 listening transcript must match the source script");
+  assert.equal(b1WorkListening.segments[0].voiceId, "voice-03", "B1.3 listening must use the established listening narrator");
+  const b1WorkAudioMarkup = vm.runInContext("renderAudioAssets('b1-03-work-communication-konjunktiv')", context);
+  assert.match(b1WorkAudioMarkup, /حوار: Nora وOmar ومديرة الفريق/);
+  assert.match(b1WorkAudioMarkup, /نهائي/);
+  assert.doesNotMatch(b1WorkAudioMarkup, /للمراجعة/);
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -679,7 +716,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[2])", context), true, "B1.3 may open only after B1.2 is mastered and its ready assessment is available");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[2].id, "B1.3 must be the next required step after mastering B1.2");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through B1.3, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1/B1.2 audio display, audio playback and character-voice consistency, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and local B1.1/B1.2/B1.3 assessments.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through B1.3, 80% scoring, practical-evidence locks, legacy migration, final lesson-mapped A0/A1/A2/B1.1/B1.2/B1.3 audio display, audio playback and character-voice consistency through B1.3, pending-playback fallback, transcript unlock, the A0→A1 gate, all local A1/A2 assessments, and local B1.1/B1.2/B1.3 assessments.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;
