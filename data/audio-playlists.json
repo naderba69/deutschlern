@@ -2950,6 +2950,96 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-07-AUD-PHR-01",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "title": "مفردات الحياة اليومية والتنوّع",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-07-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Lebensstil, die Lebensstile. Die Alltagsroutine, die Alltagsroutinen. Die Begegnung, die Begegnungen. Der Austausch. Die Gemeinschaft, die Gemeinschaften. Die Vielfalt. Die Tradition, die Traditionen. Die Verabredung, die Verabredungen. Die Rücksicht. Sich an etwas gewöhnen. Rücksicht aufeinander nehmen. Individuell. Gemeinsam. Unterschiedlich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-07-AUD-MODEL-01",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "title": "أمثلة الروابط الثنائية",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-07-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Mina besucht sowohl einen Sprachkurs als auch einen Kochkurs. Samir liest nicht nur Nachrichten, sondern auch Romane. Am Freitag treffen wir uns entweder im Park oder im Café. Ich trinke am Abend weder Kaffee noch schwarzen Tee. Sowohl die Nachbarn als auch die Gäste helfen beim Fest.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-07-AUD-DLG-01",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "title": "حوار: Laila وOmar عن الروتين في السكن المشترك",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-01.mp3",
+          "speaker": "Laila",
+          "text": "Wie plant ihr die Aufgaben in eurer Wohngemeinschaft?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-02.mp3",
+          "speaker": "Omar",
+          "text": "Wir sprechen jede Woche darüber. Ich koche sowohl am Dienstag als auch am Donnerstag.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-03.mp3",
+          "speaker": "Laila",
+          "text": "Und was macht ihr am Wochenende?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-04.mp3",
+          "speaker": "Omar",
+          "text": "Wir gehen entweder in den Park oder wir treffen uns mit Freunden im Café.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-05.mp3",
+          "speaker": "Laila",
+          "text": "Lest ihr auch gemeinsam?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-06.mp3",
+          "speaker": "Omar",
+          "text": "Ja. Ich lese nicht nur Romane, sondern auch Sachbücher. Meine Mitbewohnerin trinkt am Abend weder Kaffee noch schwarzen Tee.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-07.mp3",
+          "speaker": "Laila",
+          "text": "Ihr habt also verschiedene Gewohnheiten.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-07-AUD-DLG-01-08.mp3",
+          "speaker": "Omar",
+          "text": "Genau. Wir nehmen Rücksicht aufeinander und wechseln die Aufgaben regelmäßig.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ],
   "selectedVoiceIds": [

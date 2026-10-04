@@ -49,6 +49,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-04": "b1-04-continuing-education-damit",
     "DL-B1-05": "b1-05-cities-relative-clauses",
     "DL-B1-06": "b1-06-health-fitness-advice",
+    "DL-B1-07": "b1-07-lifestyles-customs-cultures",
 }
 
 
