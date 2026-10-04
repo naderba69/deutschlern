@@ -11733,6 +11733,116 @@
       ],
       "transcriptPolicy": "offer",
       "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-09-AUD-DLG-01",
+      "lessonId": "a1-09-work-appointments",
+      "title": "حوار: الطابعة والموعد في المكتب",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Samir",
+          "text": "Der Drucker ist kaputt. Kannst du mir helfen, Nora?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Nora",
+          "text": "Ja, gern. Funktioniert der Computer?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Samir",
+          "text": "Ja, aber der Drucker funktioniert nicht.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Nora",
+          "text": "Wir können die E-Mail vom Computer schicken. Hast du heute einen Termin?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Samir",
+          "text": "Ja, um elf Uhr. Können wir vorher kurz sprechen?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Nora",
+          "text": "Ja. Ich kann um halb elf.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-09-AUD-LST-01",
+      "lessonId": "a1-09-work-appointments",
+      "title": "استماع: تحديد موعد بعد العمل",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-09-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Hallo Karim, kannst du heute nach der Arbeit telefonieren? Ich kann um fünf Uhr. Am Vormittag habe ich einen Termin mit meinem Chef. Mein Computer funktioniert, aber der Drucker ist kaputt. Bis später!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-10-AUD-READ-01",
+      "lessonId": "a1-10-hobbies-health",
+      "title": "قراءة: نصيحة Mona",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-10-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Mona liest gern und fährt am Wochenende Rad. Heute ist sie müde und hat Kopfschmerzen. Sie geht in die Praxis. Die Ärztin fragt: „Haben Sie Fieber?“ Mona sagt: „Nein.“ Die Ärztin sagt: „Sie sollen heute zu Hause bleiben und viel Wasser trinken.“ Mona bleibt heute zu Hause. Am Samstag können Mona und ihre Freundin zusammen spazieren gehen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-10-AUD-LST-01",
+      "lessonId": "a1-10-hobbies-health",
+      "title": "استماع: الهوايات ونصيحة الأم",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-10-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich spiele gern Fußball und schwimme manchmal. Heute habe ich Bauchschmerzen. Ich gehe nicht zum Training. Meine Mutter sagt: „Du sollst heute zu Hause bleiben und Wasser trinken.“ Morgen möchte ich wieder schwimmen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-11-AUD-READ-01",
+      "lessonId": "a1-11-home-directions",
+      "title": "قراءة: شقة Omar وطريقها",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Omar wohnt in einer kleinen Wohnung in Nabeul. Es gibt ein Wohnzimmer, ein Schlafzimmer, eine Küche und ein Bad. Im Wohnzimmer gibt es einen Tisch und vier Stühle. Am Samstag besucht ihn sein Freund Karim. Omar erklärt den Weg: „Geh am Bahnhof geradeaus. An der großen Kreuzung gehst du nach rechts. Das Haus ist gegenüber dem Park.“",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
     }
   ]
 }

@@ -29,6 +29,8 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A1-07": "a1-07-travel-weather",
     "DL-A1-08": "a1-08-shopping-clothes",
     "DL-A1-09": "a1-09-work-appointments",
+    "DL-A1-10": "a1-10-hobbies-health",
+    "DL-A1-11": "a1-11-home-directions",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
