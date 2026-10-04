@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-05-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-05-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة ومفاتيحها وربطها بهدف B1.5 وبتمارين المصدر T01–T07.",
+      "تغطي الأسئلة مفردات المدينة، واختيار ضمير الوصل بحسب الجنس والعدد والحالة، وموضع الفعل، وفهم نصّي القراءة والاستماع.",
+      "مهمتا الأداء مرتبطتان بالوصف الختامي T08 وتتحققان ذاتيًا محليًا؛ يمكن كتابة الناتج أو قوله دون تسجيل، ولا يعتمد التقييم على الصوت المولّد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-05-Q01",
+      "sourceTaskIds": [
+        "DL-B1-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "مفردات المدينة",
+        "فهم كلمة"
+      ],
+      "prompt": "ما معنى **die Fußgängerzone**؟",
+      "options": [
+        "نقطة إطلالة.",
+        "منطقة مخصّصة للمشاة.",
+        "وسيلة مواصلات إلى أطراف المدينة."
+      ],
+      "answerIndex": 1,
+      "explanation": "die Fußgängerzone هي منطقة مخصّصة للمشاة، لا نقطة إطلالة ولا خط مواصلات."
+    },
+    {
+      "id": "DL-B1-05-Q02",
+      "sourceTaskIds": [
+        "DL-B1-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "ضمير الوصل",
+        "Akkusativ المذكر"
+      ],
+      "prompt": "أكمل بضمير الوصل الصحيح: **Der Aussichtspunkt, ___ viele Gäste besuchen, liegt am Fluss.**",
+      "options": [
+        "der",
+        "den",
+        "dem"
+      ],
+      "answerIndex": 1,
+      "explanation": "Aussichtspunkt مذكر مفرد، وهو مفعول به للفعل besuchen داخل جملة الوصل؛ لذلك نستخدم den."
+    },
+    {
+      "id": "DL-B1-05-Q03",
+      "sourceTaskIds": [
+        "DL-B1-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "ضمير الوصل",
+        "Akkusativ المؤنث"
+      ],
+      "prompt": "أكمل بضمير الوصل الصحيح: **Die Altstadt, ___ viele Besucher mögen, ist am Wochenende lebendig.**",
+      "options": [
+        "die",
+        "der",
+        "den"
+      ],
+      "answerIndex": 0,
+      "explanation": "Altstadt مؤنث، وهي مفعول به للفعل mögen داخل جملة الوصل؛ وصيغة المؤنث في Akkusativ هي die."
+    },
+    {
+      "id": "DL-B1-05-Q04",
+      "sourceTaskIds": [
+        "DL-B1-05-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "تمييز الحالة",
+        "Nominativ"
+      ],
+      "prompt": "في الجملة **Der Platz, der eine kleine Bühne hat, ist beliebt.**، ما وظيفة **der** داخل جملة الوصل؟",
+      "options": [
+        "مفعول به في Akkusativ.",
+        "فاعل في Nominativ.",
+        "اسم مجرور بحرف جر."
+      ],
+      "answerIndex": 1,
+      "explanation": "der هو فاعل الفعل hat داخل جملة الوصل، ولذلك جاء في Nominativ."
+    },
+    {
+      "id": "DL-B1-05-Q05",
+      "sourceTaskIds": [
+        "DL-B1-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "الفعل في نهاية جملة الوصل"
+      ],
+      "prompt": "أي جملة مرتبة وعلامات ترقيمها صحيحة؟",
+      "options": [
+        "Der Marktplatz, der zentral liegt, ist lebendig.",
+        "Der Marktplatz, der liegt zentral, ist lebendig.",
+        "Der Marktplatz, der zentral liegt ist lebendig."
+      ],
+      "answerIndex": 0,
+      "explanation": "يأتي الفعل المصرف في نهاية جملة الوصل، وتحيط بها فاصلتان: der zentral liegt."
+    },
+    {
+      "id": "DL-B1-05-Q06",
+      "sourceTaskIds": [
+        "DL-B1-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "دمج الجمل",
+        "ضمير الوصل المحايد"
+      ],
+      "prompt": "اختر الربط الصحيح: **Das ist ein Museum. Viele Familien besuchen das Museum.**",
+      "options": [
+        "Das ist ein Museum, das viele Familien besuchen.",
+        "Das ist ein Museum, der viele Familien besuchen.",
+        "Das ist ein Museum, das viele Familien besucht."
+      ],
+      "answerIndex": 0,
+      "explanation": "Museum محايد ويؤدي دور المفعول به داخل جملة الوصل، فيأخذ das؛ والفعل يعود إلى الفاعل الجمع Familien."
+    },
+    {
+      "id": "DL-B1-05-Q07",
+      "sourceTaskIds": [
+        "DL-B1-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل مكاني"
+      ],
+      "prompt": "Wo beginnt Noura ihren Rundgang?",
+      "options": [
+        "In der Fußgängerzone.",
+        "Am Ufer.",
+        "Auf dem Marktplatz."
+      ],
+      "answerIndex": 2,
+      "explanation": "تبدأ نورة جولتها على ساحة السوق: Sie beginnt ihren Rundgang auf dem Marktplatz."
+    },
+    {
+      "id": "DL-B1-05-Q08",
+      "sourceTaskIds": [
+        "DL-B1-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل عن المكان"
+      ],
+      "prompt": "Was zeigt das Stadtmuseum?",
+      "options": [
+        "Eine kleine Ausstellung zur Stadtgeschichte.",
+        "Einen Stadtplan mit Buslinien.",
+        "Eine Ausstellung über die Grünanlage."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر نص القراءة أن متحف المدينة يعرض معرضًا صغيرًا عن تاريخ المدينة."
+    },
+    {
+      "id": "DL-B1-05-Q09",
+      "sourceTaskIds": [
+        "DL-B1-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "الموقع"
+      ],
+      "prompt": "Wo liegt der Stadtteil?",
+      "options": [
+        "Nördlich der Innenstadt.",
+        "Südlich der Innenstadt.",
+        "Direkt am Stadtrand."
+      ],
+      "answerIndex": 1,
+      "explanation": "يقول نص الاستماع إن الحي يقع جنوب وسط المدينة: südlich der Innenstadt."
+    },
+    {
+      "id": "DL-B1-05-Q10",
+      "sourceTaskIds": [
+        "DL-B1-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "الوصول إلى المكان"
+      ],
+      "prompt": "Wie erreicht man den Park?",
+      "options": [
+        "Nur mit dem Bus.",
+        "Zu Fuß.",
+        "Nur mit dem Auto."
+      ],
+      "answerIndex": 1,
+      "explanation": "يمكن الوصول إلى الحديقة مشيًا: Der Park ist zu Fuß erreichbar."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-05-P01",
+      "sourceTaskIds": [
+        "DL-B1-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب وصفًا من خمس جمل على الأقل عن مدينة أو حيّ خيالي، أو قدّمه شفهيًا. استخدم جملتين موصولتين على الأقل: واحدة يكون فيها ضمير الوصل فاعلًا (**Nominativ**)، وأخرى يكون فيها مفعولًا به (**Akkusativ**). إذا كنت تتعلم وحدك، فاكتب الوصف ثم اقرأه بصوت واضح؛ لا يلزم تسجيله ولا تستخدم معلومات شخصية حقيقية.",
+      "criteria": {
+        "taskCompletion": "يتضمن الناتج خمس جمل على الأقل عن مدينة أو حي، وفيه جملتان موصولتان على الأقل.",
+        "meaningClarity": "يمكن للقارئ أو المستمع تكوين صورة مفهومة عن الحي أو المدينة وموقع معلمين فيها.",
+        "targetSkill": "تستخدم جملة وصل يكون ضميرها فاعلًا في Nominativ وأخرى يكون مفعولًا به في Akkusativ، مع تطابق الجنس والعدد والفاصلة ووضع الفعل المصرف في نهاية جملة الوصل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-05-P02",
+      "sourceTaskIds": [
+        "DL-B1-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-05-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "أنشئ جولة تعريفية قصيرة من خمسة أسطر، أو حوارًا من أربعة أدوار بين زائر ومرشد عن مدينة خيالية. صف مكانين على الأقل واستخدم جملة موصولة يكون ضميرها فاعلًا، وأخرى يكون مفعولًا به. إن كنت تتعلم وحدك فاكتب نص الجولة أو دوري الحوار ثم اقرأه بصوت واضح؛ لا يلزم تسجيل الصوت.",
+      "criteria": {
+        "taskCompletion": "يتضمن الناتج خمسة أسطر وصفية أو أربعة أدوار حوارية، ويذكر مكانين على الأقل.",
+        "meaningClarity": "يفهم المتلقي ما يميّز المكانين وكيف يرتبطان بمسار الجولة.",
+        "targetSkill": "تتضمن جملتا الوصل ضميرًا في Nominativ وآخر في Akkusativ، مع مراعاة جنس الاسم والفاصلة ونهاية الفعل المصرف."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
