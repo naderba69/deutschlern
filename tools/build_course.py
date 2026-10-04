@@ -26,6 +26,8 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A1-05": "a1-05-food-drink",
     "DL-A1-06": "a1-06-yesterday-perfekt",
     "DL-A1-07": "a1-07-travel-weather",
+    "DL-A1-08": "a1-08-shopping-clothes",
+    "DL-A1-09": "a1-09-work-appointments",
 }
 
 

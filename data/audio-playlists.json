@@ -622,6 +622,106 @@
       ],
       "transcriptPolicy": "offer",
       "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-08-AUD-DLG-01",
+      "lessonId": "a1-08-shopping-clothes",
+      "title": "حوار: اختيار سترة في المتجر",
+      "kind": "dialogue",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Kundin",
+          "text": "Guten Tag. Ich brauche eine Jacke.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Verkäufer",
+          "text": "Welche Farbe möchten Sie?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Kundin",
+          "text": "Blau, bitte. Haben Sie Größe M?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Verkäufer",
+          "text": "Ja, hier ist eine blaue Jacke. Möchten Sie sie anprobieren?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Kundin",
+          "text": "Ja, gern. Die Jacke ist schön, aber die Ärmel sind zu lang. Was kostet sie?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Verkäufer",
+          "text": "Sie kostet 45 Euro.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-07.mp3",
+          "speaker": "Kundin",
+          "text": "Gut, ich nehme sie. Danke!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-08-AUD-READ-01",
+      "lessonId": "a1-08-shopping-clothes",
+      "title": "قراءة: Omar يبحث عن حذاء",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-08-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Omar braucht neue Schuhe. Seine alten Schuhe sind zu klein. Im Geschäft probiert er schwarze Schuhe in Größe 42 an. Die Schuhe sind bequem, aber sehr teuer. Er fragt nach einem anderen Modell. Das zweite Paar ist billiger. Omar kauft es.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-08-AUD-LST-01",
+      "lessonId": "a1-08-shopping-clothes",
+      "title": "استماع: اختيار بنطال مناسب",
+      "kind": "listening",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-08-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich möchte heute eine Hose kaufen. Ich brauche Größe 40. Die schwarze Hose kostet 35 Euro. Sie ist zu lang. Die blaue Hose kostet 30 Euro und passt gut. Ich nehme die blaue Hose.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
+    },
+    {
+      "assetId": "DL-A1-09-AUD-READ-01",
+      "lessonId": "a1-09-work-appointments",
+      "title": "قراءة: يوم عمل Samir",
+      "kind": "reading",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-09-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Samir arbeitet in einem Büro in Tunis. Am Dienstag hat er einen Termin mit seiner Kollegin Nora. Sie sprechen um elf Uhr über ein neues Projekt. Der Drucker ist kaputt. Samir kann heute nicht drucken. Nora sagt: „Ich kann dir helfen. Wir können eine E-Mail schreiben.“ Am Nachmittag hat Samir eine Besprechung mit seiner Chefin.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "status": "ready"
     }
   ],
   "selectedVoiceIds": [
