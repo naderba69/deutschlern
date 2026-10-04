@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 76, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 170, "the audio manifest must contain all one hundred seventy generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 80, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 180, "the audio manifest must contain all one hundred eighty generated clips");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -103,6 +103,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A2-05": "a2-05-training-routine-wenn",
     "DL-A2-06": "a2-06-family-happiness-gifts",
     "DL-A2-07": "a2-07-language-learning-travel-purpose",
+    "DL-A2-08": "a2-08-media-news-passive",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -178,6 +179,19 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const a2PurposeLesson = courseData.lessons.find((lesson) => lesson.id === "a2-07-language-learning-travel-purpose");
   const a2PurposeQ08 = a2PurposeLesson.quiz.find((question) => question.id === "DL-A2-07-Q08");
   assert.deepEqual(a2PurposeQ08.sourceTaskIds, ["DL-A2-07-T05"], "the Maha sentence question must stay linked to reading T05, not listening T06");
+  const a2PassiveAssets = courseData.audioAssets.filter((asset) => asset.assetId.startsWith("DL-A2-08-"));
+  assert.equal(a2PassiveAssets.length, 4, "A2.8's audio batch must expose four linked lesson assets");
+  assert.equal(a2PassiveAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "A2.8 must expose all ten generated clips");
+  const a2PassivePhrases = a2PassiveAssets.find((asset) => asset.assetId === "DL-A2-08-AUD-PHR-01");
+  const a2PassiveModels = a2PassiveAssets.find((asset) => asset.assetId === "DL-A2-08-AUD-MODEL-01");
+  const a2PassiveReading = a2PassiveAssets.find((asset) => asset.assetId === "DL-A2-08-AUD-READ-01");
+  const a2PassiveListening = a2PassiveAssets.find((asset) => asset.assetId === "DL-A2-08-AUD-LST-01");
+  assert.equal(a2PassivePhrases.segments.length, 2, "A2.8's vocabulary track must preserve both noun and verb groups");
+  assert.equal(a2PassiveModels.segments.length, 4, "A2.8's grammar track must preserve all four model/practice clips");
+  assert.equal(a2PassiveReading.segments.length, 2, "A2.8 reading must retain both consecutive source sections");
+  assert.equal(a2PassiveListening.segments.length, 2, "A2.8 listening must retain both consecutive source sections");
+  assert.ok([...a2PassivePhrases.segments, ...a2PassiveModels.segments, ...a2PassiveReading.segments].every((segment) => segment.voiceId === "voice-02"), "A2.8 phrase, model, and reading clips must keep the selected narrator voice");
+  assert.ok(a2PassiveListening.segments.every((segment) => segment.voiceId === "voice-03"), "A2.8 listening clips must keep the established listening narrator voice");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");

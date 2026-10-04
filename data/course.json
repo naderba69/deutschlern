@@ -16163,6 +16163,106 @@
           "text": "Ich reise nach München, um meine Freundin zu besuchen. Ich nehme ein kleines Wörterbuch mit, um neue Wörter nachzuschlagen. Am Vormittag besuche ich einen Sprachkurs, um mein Deutsch zu verbessern. Am Abend gehen meine Freundin und ich in ein Café, um zusammen zu sprechen."
         }
       ]
+    },
+    {
+      "assetId": "DL-A2-08-AUD-PHR-01",
+      "lessonId": "a2-08-media-news-passive",
+      "title": "مفردات الإعلام والشأن العام",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-08-AUD-PHR-01-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Die Nachricht. Die Schlagzeile. Der Bericht. Die Redaktion. Die Zeitung. Der Radiosender. Das Interview. Die Wahl. Der Stadtrat. Die Sitzung. Die Bevölkerung. Die Webseite. Der Vorschlag. Der Einwohner. Die Einwohnerin."
+        },
+        {
+          "src": "assets/audio/DL-A2-08-AUD-PHR-01-02.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Veröffentlichen. Berichten über. Beantworten. Einladen. Organisieren. Bauen. Eröffnen. Senden. Übertragen."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-08-AUD-MODEL-01",
+      "lessonId": "a2-08-media-news-passive",
+      "title": "أمثلة: werden والمبني للمجهول",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-08-AUD-MODEL-01-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Ich werde. Du wirst. Er, sie und es wird. Wir werden. Ihr werdet. Sie werden."
+        },
+        {
+          "src": "assets/audio/DL-A2-08-AUD-MODEL-01-02.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Der Bericht wird veröffentlicht. Die Nachrichten werden um acht Uhr gesendet. Ein Interview wird im Radio gesendet."
+        },
+        {
+          "src": "assets/audio/DL-A2-08-AUD-MODEL-01-03.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Die Zeitung berichtet über die Wahl. Die Zeitung veröffentlicht einen Bericht. Ein Bericht wird veröffentlicht. Heute wird eine Sitzung übertragen."
+        },
+        {
+          "src": "assets/audio/DL-A2-08-AUD-MODEL-01-04.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Der Bericht wird veröffentlicht. Die Nachrichten werden gesendet. Die Einwohner werden eingeladen. Die Fragen werden beantwortet."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-08-AUD-READ-01",
+      "lessonId": "a2-08-media-news-passive",
+      "title": "قراءة: خبر محلي محايد",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-08-AUD-READ-01-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "In der Stadt Linden wird am Mittwoch eine Sitzung des Stadtrats organisiert. Ein neuer Platz im Zentrum wird geplant. Die Sitzung wird im Internet übertragen."
+        },
+        {
+          "src": "assets/audio/DL-A2-08-AUD-READ-01-02.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Fragen aus der Bevölkerung werden beantwortet. Am Ende werden mehrere Vorschläge gesammelt. Die Informationen werden am nächsten Tag auf der Webseite der Stadt veröffentlicht."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-08-AUD-LST-01",
+      "lessonId": "a2-08-media-news-passive",
+      "title": "استماع: خط حافلات جديد",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-08-AUD-LST-01-01.mp3",
+          "speaker": "Erzählperson",
+          "voiceId": "voice-03",
+          "text": "In den Nachrichten geht es heute um eine neue Buslinie. Die Buslinie wird im Herbst eröffnet. Zwei Haltestellen werden gebaut."
+        },
+        {
+          "src": "assets/audio/DL-A2-08-AUD-LST-01-02.mp3",
+          "speaker": "Erzählperson",
+          "voiceId": "voice-03",
+          "text": "Eine Informationsveranstaltung wird am Freitag organisiert. Die Einladung wird auf der Internetseite der Stadt veröffentlicht."
+        }
+      ]
     }
   ]
 }
