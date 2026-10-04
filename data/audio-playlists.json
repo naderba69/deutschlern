@@ -1360,6 +1360,106 @@
           "voiceId": "voice-03"
         }
       ]
+    },
+    {
+      "assetId": "DL-A2-04-AUD-PHR-01",
+      "lessonId": "a2-04-office-phone-appointments",
+      "title": "عبارات الهاتف والسؤال غير المباشر",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-04-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Das Gespräch. Die Nachricht. Der Anruf. Die Durchwahl. Die Besprechung. Der Kalender. Der Termin. Frei oder besetzt. Verschieben. Absagen. Bestätigen. Zurückrufen. Vereinbaren. Mitteilen. Guten Tag, hier spricht Amal Ben Ali. Kann ich bitte mit Frau Weber sprechen? Einen Moment, bitte. Sie ist gerade in einer Besprechung. Kann sie mich bitte zurückrufen? Ich möchte einen Termin vereinbaren. Der Termin passt mir gut. Können Sie mir sagen, ob Frau Weber heute im Büro ist? Ich möchte wissen, wann die Besprechung beginnt. Wissen Sie, ob der Termin noch frei ist?"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-04-AUD-DLG-01",
+      "lessonId": "a2-04-office-phone-appointments",
+      "title": "حوار: حجز موعد هاتفيًا",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-01.mp3",
+          "speaker": "Amal",
+          "text": "Guten Tag, hier spricht Amal Ben Ali. Ich möchte einen Termin mit Herrn König vereinbaren.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-02.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Guten Tag. Einen Moment, bitte. Herr König ist gerade in einer Besprechung.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-03.mp3",
+          "speaker": "Amal",
+          "text": "Können Sie mir sagen, wann er Zeit hat?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-04.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Am Donnerstag um 14 Uhr.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-05.mp3",
+          "speaker": "Amal",
+          "text": "Wissen Sie, ob der Termin online ist?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-06.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Ja, die Besprechung ist online.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A2-04-AUD-DLG-01-07.mp3",
+          "speaker": "Amal",
+          "text": "Das passt mir gut. Vielen Dank.",
+          "voiceId": "voice-00"
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-04-AUD-READ-01",
+      "lessonId": "a2-04-office-phone-appointments",
+      "title": "قراءة: رسالة عمل من Amal",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-04-AUD-READ-01.mp3",
+          "speaker": "Amal",
+          "voiceId": "voice-00",
+          "text": "Guten Tag, Frau Weber. Leider kann ich am Dienstag um neun Uhr nicht zu unserem Termin kommen. Können wir den Termin auf Mittwoch verschieben? Bitte teilen Sie mir mit, ob Mittwoch um elf Uhr möglich ist. Ich möchte auch wissen, wann die Besprechung endet. Vielen Dank und freundliche Grüße. Amal Ben Ali."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-04-AUD-LST-01",
+      "lessonId": "a2-04-office-phone-appointments",
+      "title": "استماع: طلب موعد ومكالمة لاحقة",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-04-AUD-LST-01.mp3",
+          "speaker": "Amal",
+          "voiceId": "voice-00",
+          "text": "Guten Morgen, Herr König. Hier ist Amal Ben Ali. Ich kann heute um zehn Uhr nicht anrufen. Ich habe eine Besprechung. Können Sie mir bitte sagen, ob der Termin am Donnerstag noch frei ist? Rufen Sie mich bitte am Nachmittag zurück. Vielen Dank."
+        }
+      ]
     }
   ],
   "selectedVoiceIds": [

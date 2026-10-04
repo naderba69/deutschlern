@@ -34,6 +34,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A2-01": "a2-01-routines-abilities-experiences",
     "DL-A2-02": "a2-02-travel-comparisons",
     "DL-A2-03": "a2-03-food-nutrition-shopping",
+    "DL-A2-04": "a2-04-office-phone-appointments",
 }
 
 
