@@ -1880,6 +1880,106 @@
           "text": "Eine Informationsveranstaltung wird am Freitag organisiert. Die Einladung wird auf der Internetseite der Stadt veröffentlicht."
         }
       ]
+    },
+    {
+      "assetId": "DL-A2-09-AUD-PHR-01",
+      "lessonId": "a2-09-products-technology-complaints",
+      "title": "مفردات الأجهزة وطلبات مهذّبة",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-09-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Das Gerät. Das Smartphone. Der Kopfhörer. Der Bildschirm. Der Akku. Das Ladegerät. Der Lautsprecher. Die Garantie. Der Kassenbon. Die Bedienungsanleitung. Defekt. Beschädigt. Reparieren. Umtauschen. Zurückgeben. Prüfen. Ich könnte. Du könntest. Er und sie könnte. Wir könnten. Ihr könntet. Sie könnten. Könnten Sie das Gerät bitte prüfen? Könnten Sie mir bitte helfen? Ich hätte gern einen Umtausch."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-09-AUD-DLG-01",
+      "lessonId": "a2-09-products-technology-complaints",
+      "title": "حوار: طلب استبدال جهاز",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-01.mp3",
+          "speaker": "Kundin",
+          "voiceId": "voice-03",
+          "text": "Guten Tag. Dieses Tablet ist defekt. Der Bildschirm bleibt schwarz."
+        },
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-02.mp3",
+          "speaker": "Mitarbeiter",
+          "voiceId": "voice-02",
+          "text": "Wann haben Sie das Gerät gekauft?"
+        },
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-03.mp3",
+          "speaker": "Kundin",
+          "voiceId": "voice-03",
+          "text": "Vor zwei Wochen. Hier ist der Kassenbon."
+        },
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-04.mp3",
+          "speaker": "Mitarbeiter",
+          "voiceId": "voice-02",
+          "text": "Danke. Könnten Sie mir das Ladegerät auch geben?"
+        },
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-05.mp3",
+          "speaker": "Kundin",
+          "voiceId": "voice-03",
+          "text": "Ja, natürlich. Könnten Sie das Tablet bitte prüfen?"
+        },
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-06.mp3",
+          "speaker": "Mitarbeiter",
+          "voiceId": "voice-02",
+          "text": "Ja. Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen."
+        },
+        {
+          "src": "assets/audio/DL-A2-09-AUD-DLG-01-07.mp3",
+          "speaker": "Kundin",
+          "voiceId": "voice-03",
+          "text": "Ich hätte gern einen Umtausch, bitte."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-09-AUD-READ-01",
+      "lessonId": "a2-09-products-technology-complaints",
+      "title": "قراءة: رسالة شكوى Salma",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-09-AUD-READ-01.mp3",
+          "speaker": "Salma",
+          "voiceId": "voice-02",
+          "text": "Guten Tag. Vor zehn Tagen habe ich bei Ihnen einen Kopfhörer gekauft. Seit gestern funktioniert der rechte Lautsprecher nicht. Der Kopfhörer ist nicht beschädigt, und ich habe den Kassenbon noch. Könnten Sie das Gerät bitte prüfen? Ich möchte wissen, ob ein Umtausch möglich ist. Vielen Dank. Salma Ben Youssef."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-09-AUD-LST-01",
+      "lessonId": "a2-09-products-technology-complaints",
+      "title": "استماع: شاحن Karim الجديد",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-09-AUD-LST-01.mp3",
+          "speaker": "Karim",
+          "voiceId": "voice-03",
+          "text": "Guten Tag, hier spricht Karim. Mein neues Ladegerät funktioniert nicht. Ich habe es am Montag gekauft. Könnten Sie mir bitte sagen, ob ich es umtauschen kann? Ich habe den Kassenbon und komme morgen in Ihr Geschäft. Vielen Dank."
+        }
+      ]
     }
   ],
   "selectedVoiceIds": [

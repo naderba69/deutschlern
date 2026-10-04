@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 80, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 180, "the audio manifest must contain all one hundred eighty generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 84, "the generated A0, A1, and current A2 audio assets must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 190, "the audio manifest must contain all one hundred ninety generated clips");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -104,6 +104,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-A2-06": "a2-06-family-happiness-gifts",
     "DL-A2-07": "a2-07-language-learning-travel-purpose",
     "DL-A2-08": "a2-08-media-news-passive",
+    "DL-A2-09": "a2-09-products-technology-complaints",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -192,6 +193,21 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(a2PassiveListening.segments.length, 2, "A2.8 listening must retain both consecutive source sections");
   assert.ok([...a2PassivePhrases.segments, ...a2PassiveModels.segments, ...a2PassiveReading.segments].every((segment) => segment.voiceId === "voice-02"), "A2.8 phrase, model, and reading clips must keep the selected narrator voice");
   assert.ok(a2PassiveListening.segments.every((segment) => segment.voiceId === "voice-03"), "A2.8 listening clips must keep the established listening narrator voice");
+  const a2ComplaintAssets = courseData.audioAssets.filter((asset) => asset.assetId.startsWith("DL-A2-09-"));
+  assert.equal(a2ComplaintAssets.length, 4, "A2.9's audio batch must expose four linked lesson assets");
+  assert.equal(a2ComplaintAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "A2.9 must expose all ten generated clips");
+  const a2ComplaintDialogue = a2ComplaintAssets.find((asset) => asset.assetId === "DL-A2-09-AUD-DLG-01");
+  assert.equal(a2ComplaintDialogue.segments.length, 7, "the customer-service dialogue must keep all seven source turns");
+  assert.ok(a2ComplaintDialogue.segments.filter((segment) => segment.speaker === "Kundin").every((segment) => segment.voiceId === "voice-03"), "Kundin must keep the established customer voice in every turn");
+  assert.ok(a2ComplaintDialogue.segments.filter((segment) => segment.speaker === "Mitarbeiter").every((segment) => segment.voiceId === "voice-02"), "Mitarbeiter must keep the established course staff voice in every turn");
+  const a1ShoppingDialogue = courseData.audioAssets.find((asset) => asset.assetId === "DL-A1-08-AUD-DLG-01");
+  assert.equal(a2ComplaintDialogue.segments.find((segment) => segment.speaker === "Kundin").voiceId, a1ShoppingDialogue.segments.find((segment) => segment.speaker === "Kundin").voiceId, "the selected Kundin voice must remain consistent with A1 shopping");
+  const a2ComplaintReading = a2ComplaintAssets.find((asset) => asset.assetId === "DL-A2-09-AUD-READ-01");
+  assert.equal(a2ComplaintReading.segments[0].speaker, "Salma", "the complaint letter must retain its named writer");
+  assert.equal(a2ComplaintReading.segments[0].voiceId, "voice-02", "Salma must reuse her selected A2.3 reading voice");
+  const a2ComplaintListening = a2ComplaintAssets.find((asset) => asset.assetId === "DL-A2-09-AUD-LST-01");
+  assert.equal(a2ComplaintListening.segments[0].speaker, "Karim", "the A2.9 listening script must retain Karim as its speaker");
+  assert.equal(a2ComplaintListening.segments[0].voiceId, a1KarimVoice, "Karim must retain his selected voice across A1 and A2");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");

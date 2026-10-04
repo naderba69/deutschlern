@@ -39,6 +39,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-A2-06": "a2-06-family-happiness-gifts",
     "DL-A2-07": "a2-07-language-learning-travel-purpose",
     "DL-A2-08": "a2-08-media-news-passive",
+    "DL-A2-09": "a2-09-products-technology-complaints",
 }
 
 
