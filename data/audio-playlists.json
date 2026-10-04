@@ -1460,6 +1460,116 @@
           "text": "Guten Morgen, Herr König. Hier ist Amal Ben Ali. Ich kann heute um zehn Uhr nicht anrufen. Ich habe eine Besprechung. Können Sie mir bitte sagen, ob der Termin am Donnerstag noch frei ist? Rufen Sie mich bitte am Nachmittag zurück. Vielen Dank."
         }
       ]
+    },
+    {
+      "assetId": "DL-A2-05-AUD-PHR-01",
+      "lessonId": "a2-05-training-routine-wenn",
+      "title": "مفردات التدريب وعبارات wenn",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-05-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Die Ausbildung. Der Betrieb. Die Berufsschule. Der Stundenplan. Die Prüfung. Das Fach. Der Feierabend. Pünktlich. Praktisch und theoretisch. Üben. Sich auf eine Prüfung vorbereiten. Der Elektroniker. Die Elektronikerin. Ich lerne, wenn ich Zeit habe. Wenn ich Zeit habe, lerne ich eine Stunde. Wenn der Unterricht endet, fährt Rami nach Hause."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-05-AUD-DLG-01",
+      "lessonId": "a2-05-training-routine-wenn",
+      "title": "حوار: أسبوع Rami التدريبي",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-05-AUD-DLG-01-01.mp3",
+          "speaker": "Mira",
+          "voiceId": "voice-02",
+          "text": "Wie sieht deine Woche aus, Rami?"
+        },
+        {
+          "src": "assets/audio/DL-A2-05-AUD-DLG-01-02.mp3",
+          "speaker": "Rami",
+          "voiceId": "voice-03",
+          "text": "Ich mache eine Ausbildung zum Elektroniker. Montag bis Mittwoch bin ich im Betrieb. Am Donnerstag und Freitag habe ich Unterricht in der Berufsschule."
+        },
+        {
+          "src": "assets/audio/DL-A2-05-AUD-DLG-01-03.mp3",
+          "speaker": "Mira",
+          "voiceId": "voice-02",
+          "text": "Wann lernst du für Prüfungen?"
+        },
+        {
+          "src": "assets/audio/DL-A2-05-AUD-DLG-01-04.mp3",
+          "speaker": "Rami",
+          "voiceId": "voice-03",
+          "text": "Wenn ich am Abend Zeit habe, lerne ich eine Stunde. Am Samstag übe ich mit einem Freund."
+        },
+        {
+          "src": "assets/audio/DL-A2-05-AUD-DLG-01-05.mp3",
+          "speaker": "Mira",
+          "voiceId": "voice-02",
+          "text": "Und was machst du nach dem Unterricht?"
+        },
+        {
+          "src": "assets/audio/DL-A2-05-AUD-DLG-01-06.mp3",
+          "speaker": "Rami",
+          "voiceId": "voice-03",
+          "text": "Wenn der Unterricht früh endet, gehe ich in die Bibliothek."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-05-AUD-READ-01",
+      "lessonId": "a2-05-training-routine-wenn",
+      "title": "قراءة: تدريب Rami المهني",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-05-AUD-READ-01.mp3",
+          "speaker": "Rami",
+          "voiceId": "voice-03",
+          "text": "Rami macht eine Ausbildung zum Elektroniker. Er arbeitet drei Tage pro Woche in einem Betrieb und hat an zwei Tagen Unterricht in der Berufsschule. Wenn er am Morgen Unterricht hat, fährt er mit dem Bus. Nach dem Unterricht macht er seine Aufgaben. Er lernt am liebsten in der Bibliothek. Dort ist es ruhig. Wenn er am Samstag Zeit hat, spielt er Fußball."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-05-AUD-LST-01",
+      "lessonId": "a2-05-training-routine-wenn",
+      "title": "استماع: جدول أسبوعي مزدحم",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-05-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "voiceId": "voice-03",
+          "text": "Mein Stundenplan ist diese Woche voll. Am Montag und Dienstag habe ich Unterricht. Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause und mache eine Pause. Am Mittwoch arbeite ich im Betrieb. Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-05-AUD-MODEL-01",
+      "lessonId": "a2-05-training-routine-wenn",
+      "title": "أمثلة: ترتيب الفعل مع wenn",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-05-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Ich lerne, wenn ich Zeit habe. Wenn ich Zeit habe, lerne ich eine Stunde. Wenn der Unterricht endet, fährt Rami nach Hause. Wenn Rami am Samstag Zeit hat, spielt er Fußball. Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause."
+        }
+      ]
     }
   ],
   "selectedVoiceIds": [
