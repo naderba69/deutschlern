@@ -43,7 +43,7 @@
 **Mariam:** Wir planen eine kleine Feier bei unseren Eltern.  
 **Sami:** Ich freue mich, dass wir alle zusammen sein können. Was soll ich mitbringen?  
 **Mariam:** Vielleicht einen Kuchen. Ich hoffe, dass alle Cousins kommen.  
-**Sami:** Ich glaube, dass der Abend schön ist.
+**Sami:** Ich glaube, dass der Abend schön wird.
 
 ## 4) نص قراءة أصلي
 

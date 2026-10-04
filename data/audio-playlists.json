@@ -1570,6 +1570,116 @@
           "text": "Ich lerne, wenn ich Zeit habe. Wenn ich Zeit habe, lerne ich eine Stunde. Wenn der Unterricht endet, fährt Rami nach Hause. Wenn Rami am Samstag Zeit hat, spielt er Fußball. Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause."
         }
       ]
+    },
+    {
+      "assetId": "DL-A2-06-AUD-PHR-01",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "title": "مفردات الأسرة وعبارات dass",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-06-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Der Verwandte. Die Verwandte. Der Cousin. Die Cousine. Die Einladung. Die Feier. Das Geschenk. Die Überraschung. Einladen. Besuchen. Gemeinsam. Glücklich. Zufrieden. Enttäuscht. Sich auf etwas freuen. Die Erinnerung. Ich glaube, dass meine Schwester heute kommt. Wir hoffen, dass alle Gäste Zeit haben. Ich freue mich, dass du da bist. Ich freue mich auf die Feier."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-06-AUD-DLG-01",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "title": "حوار: احتفال عائلي مفاجئ",
+      "kind": "dialogue",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-06-AUD-DLG-01-01.mp3",
+          "speaker": "Mariam",
+          "voiceId": "voice-02",
+          "text": "Hast du gehört, dass unsere Großmutter am Samstag Geburtstag hat?"
+        },
+        {
+          "src": "assets/audio/DL-A2-06-AUD-DLG-01-02.mp3",
+          "speaker": "Sami",
+          "voiceId": "voice-03",
+          "text": "Nein! Das ist eine schöne Überraschung."
+        },
+        {
+          "src": "assets/audio/DL-A2-06-AUD-DLG-01-03.mp3",
+          "speaker": "Mariam",
+          "voiceId": "voice-02",
+          "text": "Wir planen eine kleine Feier bei unseren Eltern."
+        },
+        {
+          "src": "assets/audio/DL-A2-06-AUD-DLG-01-04.mp3",
+          "speaker": "Sami",
+          "voiceId": "voice-03",
+          "text": "Ich freue mich, dass wir alle zusammen sein können. Was soll ich mitbringen?"
+        },
+        {
+          "src": "assets/audio/DL-A2-06-AUD-DLG-01-05.mp3",
+          "speaker": "Mariam",
+          "voiceId": "voice-02",
+          "text": "Vielleicht einen Kuchen. Ich hoffe, dass alle Cousins kommen."
+        },
+        {
+          "src": "assets/audio/DL-A2-06-AUD-DLG-01-06.mp3",
+          "speaker": "Sami",
+          "voiceId": "voice-03",
+          "text": "Ich glaube, dass der Abend schön wird."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-06-AUD-READ-01",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "title": "قراءة: لقاء عائلي في نابل",
+      "kind": "reading",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-06-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Lina lebt mit ihrer Familie in Nabeul. Am Sonntag kommen ihre Tante und zwei Cousins zu Besuch. Die Familie plant ein gemeinsames Mittagessen. Lina freut sich, dass alle Verwandten Zeit haben. Ihr Bruder ist glücklich, dass er seine Cousins wiedersehen kann. Die Eltern sagen, dass sie zusammen ein altes Familienfoto anschauen möchten. Lina bringt ein kleines Geschenk für ihre Tante mit."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-06-AUD-LST-01",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "title": "استماع: عيد ميلاد الأم",
+      "kind": "listening",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-06-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "voiceId": "voice-03",
+          "text": "Am Samstag ist der Geburtstag meiner Mutter. Wir feiern zu Hause. Ich bin froh, dass meine Schwester aus Sfax kommt. Mein Bruder sagt, dass er einen Kuchen mitbringt. Ich hoffe, dass das Wetter schön ist, denn wir möchten auch im Garten sitzen."
+        }
+      ]
+    },
+    {
+      "assetId": "DL-A2-06-AUD-MODEL-01",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "title": "أمثلة: ترتيب الفعل في جملة dass",
+      "kind": "model_sentences",
+      "status": "ready",
+      "transcriptPolicy": "offer",
+      "segments": [
+        {
+          "src": "assets/audio/DL-A2-06-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "voiceId": "voice-02",
+          "text": "Ich glaube, dass meine Schwester heute kommt. Wir hoffen, dass alle Gäste Zeit haben. Ich freue mich, dass du da bist. Ich freue mich auf die Feier. Meine Schwester kommt heute. Ich glaube, dass der Abend schön wird."
+        }
+      ]
     }
   ],
   "selectedVoiceIds": [
