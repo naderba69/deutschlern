@@ -363,6 +363,11 @@ svg { display: block; flex: 0 0 auto; }
 .performance-task-status { color: #8a7560; font-size: 9px; }
 .performance-task-status.is-done { color: #4b7550; }
 .performance-task-card > p { margin: 8px 0; color: #5f6f64; font-size: 11px; line-height: 1.8; }
+.performance-task-rubric { margin: 10px 0; padding: 10px 12px; border-inline-start: 3px solid #9ab695; border-radius: 8px; color: #526459; background: #f7faf4; font-size: 10px; line-height: 1.75; }
+.performance-task-rubric h4 { margin: 0; color: #365940; font-size: 10px; }
+.performance-task-rubric ul { margin: 6px 0 0; padding-inline-start: 18px; }
+.performance-task-rubric li + li { margin-top: 4px; }
+.performance-task-rubric li strong { color: #405c47; }
 .performance-response-label { display: block; margin: 8px 0 5px; color: #65756a; font-size: 10px; font-weight: 700; }
 .performance-task-card textarea { width: 100%; min-height: 78px; padding: 9px 10px; resize: vertical; border: 1px solid #e5eae2; border-radius: 9px; outline: none; color: #33453a; background: #fcfdf9; font: inherit; font-size: 11px; line-height: 1.7; }
 .performance-task-card textarea:focus { border-color: #96b48f; box-shadow: 0 0 0 3px #edf4e8; }

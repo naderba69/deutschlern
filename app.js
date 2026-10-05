@@ -270,8 +270,17 @@ function renderPerformanceTasks(tasks, scopeKey, version) {
     const speakCheck = selfCheck.speakAloud === true
       ? `<label class="performance-check-option performance-spoken-check"><input type="checkbox" data-performance-spoken data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" ${evidence.spokenAloud === true ? 'checked' : ''}><span>أديت المهمة بصوت مرتفع</span></label>`
       : '';
+    const rubricItems = ['taskCompletion', 'meaningClarity', 'targetSkill'].map((key) => {
+      const detail = task.criteria?.[key];
+      return typeof detail === 'string' && detail.trim()
+        ? `<li><strong>${escapeHTML(checkLabels[key])}:</strong> ${escapeHTML(detail)}</li>`
+        : '';
+    }).filter(Boolean).join('');
+    const rubric = rubricItems
+      ? `<section class="performance-task-rubric"><h4>معايير التحقق المحلي</h4><ul>${rubricItems}</ul></section>`
+      : '';
     const status = evidence.completed === true ? '<span class="performance-task-status is-done">اكتمل التحقق الذاتي</span>' : '<span class="performance-task-status">بانتظار إجابتك ومعايير التحقق</span>';
-    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p>${escapeHTML(task.prompt)}</p><label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
+    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p>${escapeHTML(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
   }).join('')}</div><p class="performance-self-check-note">التطبيق يتحقق من إكمال خطوات المراجعة فقط، ولا يحكم آليًا على جودة النطق أو صدق الإجابة. لا تُمنح علامة إتقان حتى تؤكد المعايير بنفسك.</p></section>`;
 }
 
@@ -367,7 +376,10 @@ function nextLearningStep() {
       return { type: 'blocked', level };
     }
     const lesson = getLessonsInLevel(level.id).find((item) => !isLessonMastered(item));
-    if (lesson) return { type: 'lesson', lesson };
+    if (lesson) {
+      if (!lessonAssessmentReady(lesson)) return { type: 'blocked', level, lesson };
+      return { type: 'lesson', lesson };
+    }
   }
   return { type: 'complete' };
 }
@@ -625,10 +637,11 @@ function renderTrackLevel(level) {
 
 function renderLessonRow(lesson, index) {
   const mastered = isLessonMastered(lesson);
+  const ready = lessonAssessmentReady(lesson);
   const accessible = isLessonAccessible(lesson);
   const duration = lesson.durationLabel || `${lesson.minutes} دقيقة`;
   const actionLabel = mastered ? 'راجع الدرس' : accessible ? 'افتح الدرس' : 'مقفل';
-  const statusLabel = mastered ? 'متقن' : accessible ? 'التقييم قيد الإعداد' : 'يتطلب إتقان المتطلبات السابقة';
+  const statusLabel = mastered ? 'متقن' : !ready ? 'التقييم غير جاهز بعد؛ الدرس مقفل' : accessible ? 'متاح للتعلّم' : 'يتطلب إتقان المتطلبات السابقة';
   return `<div class="lesson-row ${mastered ? 'is-complete' : ''} ${accessible ? '' : 'is-locked'}"><div class="lesson-row-number">${mastered ? icon('check', 16) : String(index + 1).padStart(2, '0')}</div><div><h3>${escapeHTML(lesson.title)}</h3><p>${escapeHTML(lesson.objective)} · ${escapeHTML(duration)} · ${statusLabel}</p></div><button type="button" class="button-outline" data-action="open-lesson" data-id="${escapeHTML(lesson.id)}" ${accessible ? '' : 'disabled'}>${actionLabel} ${accessible ? icon('arrowLeft', 14) : ''}</button></div>`;
 }
 
