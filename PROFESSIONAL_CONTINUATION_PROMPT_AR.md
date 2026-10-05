@@ -11,8 +11,8 @@
 - المسار: `/home/user/deutschlern`
 - الفرع الوحيد المسموح به في هذه الجلسة: `arena/01a1036f-deutschlern`
 - PR المتابعة: [PR #1](https://github.com/naderba69/deutschlern/pull/1)
-- Commit إنتاج B2.3 المعروف: `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b`؛ تلاه Commitا التسليم والتحقق السابقان. Commit إنتاج B2.4 هو `917fea5fdf76213e601a31ff1995b4ed1571cc92` (`feat: produce B2.4 assessment`)، وقد دُفع إلى الفرع الثابت.
-- بعد دفع B2.4 أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن PR #1 مفتوحة وغير مدمجة على الفرع الثابت، ورأسها `917fea5fdf76213e601a31ff1995b4ed1571cc92`. أظهر `gh pr checks 1`: `Vercel Preview Comments` ناجح و`Vercel` ما زال `pending`. فشل Vercel سابقًا على الرأس الأقدم برابط `upgradeToPro=build-rate-limit`. أعد فحص `gh pr view` و`gh pr checks` بعد كل دفع؛ لا تدمج PR.
+- Commit إنتاج B2.3 المعروف: `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b`؛ تلاه Commitا التسليم والتحقق السابقان. Commit إنتاج B2.4 هو `917fea5fdf76213e601a31ff1995b4ed1571cc92` (`feat: produce B2.4 assessment`)، وتلاه Commit التسليم `2c43f6aedc16b090b607d8479bc2c9927f9d94c2` (`docs: hand off B2.4 production`)؛ دُفعا إلى الفرع الثابت.
+- بعد دفع Commit التسليم B2.4 أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن PR #1 مفتوحة وغير مدمجة على الفرع الثابت، ورأسها `2c43f6aedc16b090b607d8479bc2c9927f9d94c2`. أظهر `gh pr checks 1` فشل Vercel مع رابط `upgradeToPro=build-rate-limit`؛ أما الفحوص المحلية فاجتازت. أعد فحص `gh pr view` و`gh pr checks` بعد كل دفع؛ لا تدمج PR.
 
 لا تبدّل الفرع، ولا تنشئ فرعًا جديدًا، ولا تدمج PR. استخدم `git` للحالة والالتزامات والرفع، و`gh` لمعلومات PR. لا تطلب من المستخدم كلمات مرور أو رموز مصادقة.
 
