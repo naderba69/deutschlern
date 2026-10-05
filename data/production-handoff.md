@@ -4,9 +4,9 @@
 **المستودع:** `naderba69/deutschlern`
 **الفرع الثابت:** `arena/01a1036f-deutschlern` — يجب أن يبقى هذا الفرع.
 **الرأس الأساسي قبل دفعة B2.7:** `a7039dc48d509c7336778ed70f9e01a605a0b5dd`؛ كان `HEAD` والمرجع البعيد متطابقين عند بدء العمل.
-**Commit إنتاج B2.7:** سيُسجّل بعد إعداد هذا التسليم الأولي، ثم تُحدّث هذه الوثيقة بالـcommit الفعلي ونتيجة الرفع وفحص PR.
-**حالة العمل الآن:** تغييرات B2.7 أُنجزت محليًا واجتازت الفحوص الموضحة أدناه؛ لم يُنشأ لها commit أو push حتى لحظة كتابة هذه النسخة.
-**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة في آخر سجل متاح. آخر فحص موثق كان على `b8124dc` وأظهر فشل Vercel بسبب `upgradeToPro=build-rate-limit`، بعد نجاح Vercel وVercel Preview Comments على `5721e36`. لم يُعد فحص PR بعد الرأس `a7039dc`؛ افحصها بعد رفع B2.7 وسجّل النتيجة الفعلية. لا تدمج PR #1.
+**Commit إنتاج B2.7:** `df2155e66dba3a3c28a715187d9303a1ee92a759` — `feat: produce B2.7 assessment`.
+**حالة الرفع:** نجح `git push origin arena/01a1036f-deutschlern` لإنتاج B2.7؛ تطابق `HEAD` والمرجع البعيد عند `df2155e66dba3a3c28a715187d9303a1ee92a759` بعد ذلك الرفع. هذه الوثيقة وموجّه الاستمرار حُدّثا في متابعة توثيقية منفصلة بعد commit الإنتاج على الفرع نفسه.
+**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — عند فحص commit الإنتاج كانت مفتوحة وغير مدمجة ورأسها `df2155e66dba3a3c28a715187d9303a1ee92a759`. اكتمل `gh pr checks 1 --watch --interval 10` على ذلك الرأس بنجاح: Vercel وVercel Preview Comments كلاهما `pass` (اكتمل Vercel بعد نحو 96 ثانية). فشل حد البناء `upgradeToPro=build-rate-limit` تاريخي عند `b8124dc`؛ لم يظهر على رأس B2.7. تحديث التسليم المنفصل سيغيّر الرأس؛ أعد فحص PR بعد رفعه. لا تدمج PR #1.
 
 ## ما أُنجز في دفعة B2.7
 
