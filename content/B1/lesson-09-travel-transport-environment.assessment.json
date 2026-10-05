@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-09-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": ["DL-B1-09-G01"],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "رُوجعت الأسئلة العشرة ومفاتيحها وربطها بهدف B1.9 وتمارين المصدر T01–T07.",
+      "تغطي الأسئلة مفردات التنقل، واختيار bevor/nachdem/während، وموضع الفعل وزمن الجملة التابعة، وفهم نصّي القراءة والاستماع المكتوبين.",
+      "مهمتا الأداء مرتبطتان بـT08 وتسمحان بالكتابة أو التقديم الشفهي؛ والبديل الفردي كتابة الخطة وقراءتها بصوت واضح. التحقق ذاتي محلي، ولا يتطلب تسجيلًا أو MP3 ولا يدّعي تصحيح النطق أو الكتابة المفتوحة آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-09-Q01",
+      "sourceTaskIds": ["DL-B1-09-T01"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["مفردات النقل", "الربط بين الرحلات"],
+      "prompt": "ما المعنى الأنسب لـder Anschluss في سياق السفر؟",
+      "options": [
+        "الرحلة أو وسيلة النقل المتصلة بالرحلة السابقة.",
+        "وقت المغادرة المكتوب في الجدول.",
+        "تأخر وسيلة النقل عن موعدها."
+      ],
+      "answerIndex": 0,
+      "explanation": "der Anschluss هو اتصال أو رحلة مواصلة تساعد على الانتقال إلى الجزء التالي من الرحلة."
+    },
+    {
+      "id": "DL-B1-09-Q02",
+      "sourceTaskIds": ["DL-B1-09-T01"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["مفردات السفر", "فهم كلمة"],
+      "prompt": "أي كلمة تعني أن وسيلة النقل لم تصل في موعدها؟",
+      "options": ["die Ankunft", "der Umstieg", "die Verspätung"],
+      "answerIndex": 2,
+      "explanation": "die Verspätung تعني التأخر عن الموعد المتوقع."
+    },
+    {
+      "id": "DL-B1-09-Q03",
+      "sourceTaskIds": ["DL-B1-09-T02"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["bevor", "ترتيب الأحداث"],
+      "prompt": "أكمل بالرابط الذي يدل على أن فحص الاتصال يحدث قبل الانطلاق: ___ wir losfahren, prüfen wir die Verbindung.",
+      "options": ["Nachdem", "Während", "Bevor"],
+      "answerIndex": 2,
+      "explanation": "Bevor تعني «قبل أن»، لذلك يسبق فحص الاتصال الانطلاق."
+    },
+    {
+      "id": "DL-B1-09-Q04",
+      "sourceTaskIds": ["DL-B1-09-T03"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["während", "موضع الفعل"],
+      "prompt": "اختر الفعل المصرف الصحيح في نهاية الجملة التابعة: Während Lena auf den Bus ___, liest sie einen Artikel.",
+      "options": ["wartet", "warte", "warten"],
+      "answerIndex": 0,
+      "explanation": "الفاعل Lena مفرد، فيكون الفعل wartet، ويأتي في نهاية جملة während التابعة."
+    },
+    {
+      "id": "DL-B1-09-Q05",
+      "sourceTaskIds": ["DL-B1-09-T03", "DL-B1-09-T07"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["nachdem", "Perfekt في الجملة التابعة"],
+      "prompt": "أكمل المساعد في نهاية الجملة التابعة: Nachdem sie am Ziel angekommen ___, nimmt sie den Nahverkehr.",
+      "options": ["haben", "ist", "sind"],
+      "answerIndex": 1,
+      "explanation": "يُستعمل sein مع angekommen هنا، ويأتي الفعل المصرف ist في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-B1-09-Q06",
+      "sourceTaskIds": ["DL-B1-09-T04"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["دمج الجمل", "nachdem"],
+      "prompt": "اختر الدمج السليم: Wir kaufen die Fahrkarten. Danach fahren wir zum Bahnhof.",
+      "options": [
+        "Nachdem wir kaufen die Fahrkarten, fahren wir zum Bahnhof.",
+        "Nachdem wir die Fahrkarten kaufen, fahren wir zum Bahnhof.",
+        "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof."
+      ],
+      "answerIndex": 2,
+      "explanation": "تُظهر nachdem أن شراء التذاكر اكتمل قبل الذهاب؛ يأتي الفعل المصرف haben في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-B1-09-Q07",
+      "sourceTaskIds": ["DL-B1-09-T05"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["فهم القراءة", "استخراج معلومة"],
+      "prompt": "اقرأ نص الرحلة: ماذا تتحقق المجموعة منه بعد حجز التذاكر؟",
+      "options": [
+        "من وجود اتصال أو وسيلة نقل تالية عند الوجهة.",
+        "من عدد السيارات في المدينة.",
+        "من موعد إغلاق السوق."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد حجز التذاكر، تتحقق المجموعة من وجود Anschluss عند الوجهة. أُخذت الإجابة من نص القراءة المكتوب."
+    },
+    {
+      "id": "DL-B1-09-Q08",
+      "sourceTaskIds": ["DL-B1-09-T05"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["فهم القراءة", "خيارات النقل"],
+      "prompt": "لماذا تقطع المجموعة المسافة الأطول بالقطار وتمشي في الطرق القصيرة؟",
+      "options": [
+        "لأنها تريد أن تكون رحلتها صديقة للبيئة قدر الإمكان.",
+        "لأن القطار لا يصل إلى Uferstadt.",
+        "لأنها لا تستطيع استخدام النقل المحلي."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص أن المجموعة ترغب في السفر بطريقة صديقة للبيئة قدر الإمكان؛ ولا يقدم أرقامًا أو مقارنة علمية."
+    },
+    {
+      "id": "DL-B1-09-Q09",
+      "sourceTaskIds": ["DL-B1-09-T06"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["فهم نص الاستماع المكتوب", "ausfallen"],
+      "prompt": "اقرأ نص الاستماع: ماذا حدث للحافلة الأولى؟",
+      "options": ["وصلت قبل موعدها.", "أُلغيت أو لم تعمل.", "توقفت في وجهتها النهائية."],
+      "answerIndex": 1,
+      "explanation": "يقول النص إن الحافلة الأولى fällt aus، أي إنها أُلغيت أو لم تعمل. لا يلزم تشغيل ملف صوتي للإجابة."
+    },
+    {
+      "id": "DL-B1-09-Q10",
+      "sourceTaskIds": ["DL-B1-09-T06"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "skillTags": ["فهم نص الاستماع المكتوب", "nachdem"],
+      "prompt": "ماذا تفعل المتحدثة بعدما تصعد إلى القطار؟",
+      "options": ["تقرأ الأخبار.", "تنظر إلى جدول مواعيد جديد.", "تمشي إلى مكان الإقامة."],
+      "answerIndex": 0,
+      "explanation": "بعد أن تصعد إلى القطار، تقرأ الأخبار. السؤال يعتمد على نص الاستماع المكتوب لا على MP3."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-09-P01",
+      "sourceTaskIds": ["DL-B1-09-T08"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "خطّط رحلة قصيرة خيالية في خمس جمل ألمانية على الأقل. استخدم bevor وnachdem وwährend، واذكر وسيلتي نقل واتصالًا أو تبديلًا واحدًا على الأقل. يمكنك كتابة الخطة أو تقديمها شفهيًا؛ وإن كنت تتعلم وحدك فاكتبها ثم اقرأها بصوت واضح. لا يلزم تسجيل الصوت، ولا تقدم أرقامًا أو ادعاءات بيئية غير موثقة.",
+      "criteria": {
+        "taskCompletion": "يصف الناتج خمس خطوات أو جمل على الأقل، ويذكر وسيلتي نقل واتصالًا أو تبديلًا واحدًا خلال رحلة خيالية.",
+        "meaningClarity": "يتضح ترتيب المغادرة والانتظار والوصول، ويمكن فهم وجهة الرحلة وخيارات النقل.",
+        "targetSkill": "يستخدم bevor وnachdem وwährend استخدامًا مفهومًا، ويضع الفعل المصرف في نهاية الجملة التابعة مع الفصل المناسب."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-09-P02",
+      "sourceTaskIds": ["DL-B1-09-T06", "DL-B1-09-T08"],
+      "objectiveIds": ["DL-B1-09-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "خطّط بديلًا لرحلة خيالية أُلغيت حافلتها الأولى. اكتب ست جمل ألمانية قصيرة أو اعرض خطتك شفهيًا؛ اشرح ما تفعله قبل المغادرة، وأثناء انتظار وسيلة أخرى، وبعد صعودك أو وصولك. استخدم الروابط الثلاثة bevor وwährend وnachdem، واذكر خيارين للنقل. إذا كنت تتعلم وحدك، فاكتب الخطة ثم اقرأها بصوت واضح. لا يلزم التسجيل.",
+      "criteria": {
+        "taskCompletion": "يتضمن الناتج خطة بديلة من ست جمل أو خطوات، ويذكر الحافلة الملغاة وخيارين للتنقل.",
+        "meaningClarity": "يفهم القارئ أو المستمع ما يحدث قبل المغادرة وأثناء الانتظار وبعد ركوب وسيلة النقل أو الوصول.",
+        "targetSkill": "يستخدم الروابط الثلاثة في تسلسل مفهوم، مع فعل مصرف في نهاية الجملة التابعة وترتيب سليم في الجملة الرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 145,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

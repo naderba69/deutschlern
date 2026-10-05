@@ -77,9 +77,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
   assert.equal(vm.runInContext("course.audioAssets.length", context), 137, "all generated A0, A1, A2, and B1.1 through B1.8 audio assets must be carried into the course bundle");
   assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 302, "the audio manifest must contain all three hundred two generated clips");
-  assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 37, "the course bundle must carry the thirty-seven ready lesson assessments through B1.8");
-  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 370, "the course bundle must carry all three hundred seventy scored lesson questions");
-  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 74, "the course bundle must carry all seventy-four lesson performance tasks");
+  assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 38, "the course bundle must carry the thirty-eight ready lesson assessments through B1.9");
+  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 380, "the course bundle must carry all three hundred eighty scored lesson questions");
+  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 76, "the course bundle must carry all seventy-six lesson performance tasks");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -946,7 +946,28 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     .split(/\r?\n/).find((line) => line.trim().startsWith("> ")).trim().slice(1).trim();
   assert.equal(b1ConsumptionListening.segments[0].text, sourceB1ConsumptionListening, "B1.8 listening transcript must match the source script");
   assert.equal(b1ConsumptionListening.segments[0].voiceId, "voice-03", "B1.8 listening must keep the established listening narrator voice");
-  assert.equal(b1Lessons.slice(8).every((lesson) => lesson.assessment?.status === "not_ready"), true, "B1.9–B1.12 must remain without ready assessments");
+  const b1TravelSource = fs.readFileSync(path.join(rootDir, "content/B1/lesson-09-travel-transport-environment.md"), "utf8");
+  const b1TravelAssessment = b1Lessons[8];
+  assert.equal(b1TravelAssessment.id, "b1-09-travel-transport-environment", "B1.9 must stay in its source order");
+  assert.equal(b1TravelAssessment.assessment?.status, "ready", "B1.9 must have a ready local assessment");
+  assert.equal(b1TravelAssessment.assessment?.minimumScore, 80, "B1.9 must retain the 80 percent mastery threshold");
+  assert.equal(b1TravelAssessment.assessment?.minimumItems, 10, "B1.9 must require ten scored questions");
+  assert.equal(b1TravelAssessment.assessment?.performanceEvidenceRequired, true, "B1.9 mastery must require practical tasks");
+  assert.equal(b1TravelAssessment.assessment?.performanceEvidenceImplemented, true, "B1.9 practical checks must be implemented locally");
+  assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B1')[8])", context), true, "B1.9 must pass the app's full local assessment-readiness check");
+  assert.equal(b1TravelAssessment.quiz?.length, 10, "B1.9 must include exactly ten scored questions");
+  assert.equal(b1TravelAssessment.performanceTasks?.length, 2, "B1.9 must include two practical self-check tasks");
+  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b1TravelAssessment.id), false, "B1.9 audio must remain a separate later phase after content and assessment");
+  const b1TravelQuestionSources = new Set(b1TravelAssessment.quiz.flatMap((question) => question.sourceTaskIds));
+  for (let task = 1; task <= 7; task += 1) assert.ok(b1TravelQuestionSources.has(`DL-B1-09-T0${task}`), `B1.9 quiz must cover source task T0${task}`);
+  assert.ok(b1TravelAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B1-09-G01")), "all B1.9 questions must map to the lesson objective");
+  assert.ok(b1TravelAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-09-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B1.9 performance tasks must map to T08 and offer local written/oral work without requiring a recording");
+  assert.deepEqual(b1TravelAssessment.performanceTasks.find((task) => task.id === "DL-B1-09-P02").sourceTaskIds, ["DL-B1-09-T06", "DL-B1-09-T08"], "B1.9 P02 must link its cancelled-bus scenario to the written listening source and trip-plan task");
+  assert.match(b1TravelSource, /يمكنك كتابة الخطة أو تقديمها شفهيًا/);
+  assert.match(b1TravelSource, /اكتبها ثم اقرأها بصوت واضح/);
+  assert.match(b1TravelSource, /لا يلزم تسجيل الصوت/);
+  assert.equal(b1TravelAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), true, "B1.9 assessment must not depend on its optional lesson recordings");
+  assert.equal(b1Lessons.slice(9).every((lesson) => lesson.assessment?.status === "not_ready"), true, "B1.10–B1.12 must remain without ready assessments");
   const b2Lessons = vm.runInContext("getLessonsInLevel('B2')", context);
   assert.equal(b2Lessons.length, 12, "B2 must retain all twelve lessons");
   assert.equal(b2Lessons.every((lesson) => lesson.assessment?.status === "not_ready"), true, "B2.1–B2.12 must remain without ready assessments");
@@ -1041,9 +1062,19 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[7])", context), true, "B1.8 may open after B1.7 mastery because its local assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[7].id, "B1.8 must be the next required step after mastering B1.7");
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[8])", context), false, "B1.9 must not be reachable before B1.8 mastery");
-  assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B1')[8])", context), false, "B1.9 must remain without a ready assessment");
+  assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B1')[8])", context), true, "B1.9 assessment readiness is independent of its prerequisite lock");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[9])", context), false, "B1.10 must stay locked because it has no ready assessment");
+  vm.runInContext(`
+    state.completedLessons[${JSON.stringify("b1-08-consumption-advertising-je-desto")}] = {
+      score: 80, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
+      assessmentVersion: getLessonsInLevel('B1')[7].assessment.version,
+    };
+  `, context);
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[8])", context), true, "B1.9 may open after B1.8 mastery because its local assessment is ready");
+  assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[8].id, "B1.9 must be the next required step after mastering B1.8");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[9])", context), false, "B1.10 must remain inaccessible while its assessment is not ready");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through ready B1.8, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped final audio through B1.8 (137 assets/302 clips), stable dialogue voices, exact B1.7/B1.8 reading and listening transcripts/narrators, pending-playback fallback, transcript availability, local B1.8 written/oral assessment independent of audio, and not-ready assessments from B1.9 through B2.12.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through ready B1.9, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped final audio through B1.8 (137 assets/302 clips), stable dialogue voices, exact B1.7/B1.8 reading and listening transcripts/narrators, pending-playback fallback, transcript availability, local B1.8/B1.9 written/oral assessments independent of audio, and not-ready assessments from B1.10 through B2.12.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;
