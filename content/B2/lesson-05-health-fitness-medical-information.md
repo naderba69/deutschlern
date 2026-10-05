@@ -1,6 +1,6 @@
 # B2.5 — الصحة واللياقة والمعلومات الطبية: السبب والنتيجة
 
-**المدة:** 45–50 دقيقة · **المهارات:** قراءة تقرير، استماع، قواعد، تقييم معلومة، كتابة  
+**المدة:** 45–50 دقيقة · **المهارات:** قراءة تقرير، استماع، قواعد، تقييم معلومة، كتابة وعرض شفهي
 **الهدف:** أستطيع أن أشرح علاقة السبب بالنتيجة باستخدام **sodass / weshalb / deshalb**، وأن أذكر سببًا بصيغة **aufgrund + Genitiv**.
 
 > **تنبيه:** هذه وحدة لغوية عن قراءة المعلومات الصحية، وليست تشخيصًا أو نصيحة طبية. الأمثلة البحثية خيالية ومخصّصة للتدرّب على اللغة فقط.
@@ -15,6 +15,7 @@
 | der Messwert | die Messwerte | قيمة القياس |
 | die Kontrollgruppe | die Kontrollgruppen | المجموعة الضابطة |
 | die Auswertung | die Auswertungen | تحليل النتائج |
+| das Ergebnis | die Ergebnisse | النتيجة |
 | die Fachquelle | die Fachquellen | مصدر متخصص |
 | die Aussage | die Aussagen | ادّعاء / عبارة |
 | die Teilnahme | die Teilnahmen | المشاركة |
@@ -39,6 +40,7 @@
 - بعد **sodass / weshalb** يأتي الفعل المصرف في نهاية الجملة التابعة.
 - بعد **deshalb / daher** يأتي الفعل المصرف مباشرةً في الموقع الثاني.
 - بعد **aufgrund** نستخدم غالبًا **Genitiv** في الكتابة الرسمية: **aufgrund der Studie / aufgrund der begrenzten Angaben**.
+- أمثلة تُظهر الجنس النحوي: للمذكر **aufgrund des unklaren Messwerts**، وللمحايد **aufgrund des vorläufigen Ergebnisses**، وللجمع **aufgrund der begrenzten Angaben**.
 
 ## 3) حوار أصلي عن قراءة عنوان صحي
 
@@ -47,7 +49,7 @@
 **Rima:** Es nahmen nur wenige Freiwillige aus einem Verein teil.  
 **Nabil:** Dann war die Stichprobe wahrscheinlich klein, sodass die Ergebnisse nicht für alle gelten.  
 **Rima:** Im Text gibt es auch keine Kontrollgruppe.  
-**Nabil:** Weshalb man die Ursache nicht sicher bestimmen kann. Am besten liest man die Fachquelle und fragt bei persönlichen Gesundheitsfragen eine qualifizierte Fachperson.
+**Nabil:** Deshalb lässt sich die Ursache nicht sicher bestimmen. Am besten liest man die Fachquelle und fragt bei persönlichen Gesundheitsfragen eine qualifizierte Fachperson.
 
 ## 4) نص قراءة أصلي: كيف نفهم استطلاعًا خياليًا؟
 
@@ -94,6 +96,8 @@
 1. ______ kleinen Stichprobe sind die Ergebnisse nur begrenzt übertragbar.
 2. ______ fehlenden Kontrollgruppe lässt sich keine Ursache ableiten.
 3. ______ begrenzten Angaben sollte der Bericht vorsichtig bewertet werden.
+4. ______ unklaren Messwerts blieb die Auswertung vorläufig.
+5. ______ vorläufigen Ergebnisses sollte man keine allgemeingültige Schlussfolgerung ziehen.
 
 ### تمرين 4 — اختر ترتيب الفعل الصحيح
 
@@ -125,7 +129,7 @@
 
 ### تمرين 8 — قيّم ادّعاءً خياليًا
 
-اكتب خمس جمل عن تقرير أو استطلاع صحي خيالي. استخدم **sodass** أو **weshalb** مرةً، و**aufgrund + Genitiv** مرةً. وضّح حدود البيانات، ولا تقدّم تشخيصًا أو توصية طبية شخصية.
+اكتب خمس جمل ألمانية على الأقل عن تقرير أو استطلاع صحي خيالي، أو قدّم عرضًا شفهيًا من خمس جمل مكافئة. استخدم **sodass** أو **weshalb** مرةً، و**aufgrund + Genitiv** مرةً، ووضّح حدّين على الأقل من حدود البيانات. يمكن إنجازها فرديًا؛ إذا اخترت الكتابة فاقرأ إجابتك بصوت مسموع لنفسك، ولا يلزم تسجيلها أو إرسال صوت. لا تقدّم تشخيصًا أو توصية طبية شخصية.
 
 ## 7) مفتاح الإجابات
 
@@ -135,12 +139,12 @@
 
 - **تمرين 1:** 1. die Stichprobe، 2. die Kontrollgruppe، 3. der Messwert، 4. verallgemeinern.
 - **تمرين 2:** 1. Die Gruppe war klein, sodass die Ergebnisse nicht repräsentativ waren. 2. Es gab keine Kontrollgruppe, weshalb die Ursache nicht bestimmt werden konnte. 3. Die Daten sind vorläufig. Deshalb sollte man die Aussage vorsichtig lesen.
-- **تمرين 3:** 1. Aufgrund der kleinen Stichprobe، 2. Aufgrund der fehlenden Kontrollgruppe، 3. Aufgrund der begrenzten Angaben.
+- **تمرين 3:** 1. Aufgrund der kleinen Stichprobe، 2. Aufgrund der fehlenden Kontrollgruppe، 3. Aufgrund der begrenzten Angaben، 4. Aufgrund des unklaren Messwerts، 5. Aufgrund des vorläufigen Ergebnisses.
 - **تمرين 4:** 1. أ، 2. ب، 3. أ.
 - **تمرين 5:** 1. صحيح. 2. خطأ — شارك 24 شخصًا. 3. خطأ — سُئلوا عن مصادر المعلومات، لا عن نتائج طبية. 4. صحيح. 5. خطأ — لا يثبت ذلك.
 - **تمرين 6:** Gruppe؛ übertragen؛ Kontrollgruppe؛ nachgewiesen؛ Fachperson.
 - **تمرين 7:** 1. Aufgrund der begrenzten Angaben konnte die Aussage nicht verallgemeinert werden. 2. Die Befragung dauerte nur kurz, sodass die Ergebnisse vorläufig waren.
-- **تمرين 8:** إجابة مفتوحة؛ راجع حالة Genitiv بعد **aufgrund**، وترتيب الفعل مع **sodass/weshalb**، وحدود الادّعاء.
+- **تمرين 8:** إجابة مفتوحة؛ تحقّق من وجود خمس جمل، واستخدام **sodass/weshalb** و**aufgrund + Genitiv**، وذكر حدّين للبيانات، وعدم تحويل استطلاع خيالي إلى تشخيص أو توصية طبية شخصية.
 
 ## 8) بطاقات مراجعة
 
