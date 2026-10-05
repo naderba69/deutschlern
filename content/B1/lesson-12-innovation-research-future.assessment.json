@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-12-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": ["DL-B1-12-G01"],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بهدف B1.12 وتمارين المصدر T01–T07، وتغطي المفردات وتصريف werden وموضع المصدر وكلمات درجة اليقين وفهم نصّي القراءة والاستماع والتمييز بين Futur I والمبني للمجهول في المضارع، مع بيان أن Präsens قد يدل على موعد مستقبلي محدد.",
+      "ترتبط مهمتا الأداء بـT08؛ تنظم P01 خطة ابتكار خيالية وتوقعين بدرجتي يقين، وتحوّل P02 معلومات مشروع ساحة المدرسة في T06 إلى إحاطة قصيرة. يمكن تقديمهما كتابةً أو شفهيًا، والبديل الفردي كتابة النص وقراءته دون تسجيل.",
+      "يعمل التقييم بتحقق ذاتي محلي ولا يعتمد على MP3 أو صوت مولد. تراجع المعايير صحة Futur I ووضوح درجة اليقين، ولا تدّعي تصحيح النطق أو الكتابة المفتوحة آليًا أو عرض التوقعات كحقائق."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-12-Q01",
+      "sourceTaskIds": ["DL-B1-12-T01"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["مفردات الابتكار", "Prototyp"],
+      "prompt": "أي كلمة ألمانية تعني «نموذجًا أوليًا»؟",
+      "options": ["der Prototyp", "das Ergebnis", "das Labor"],
+      "answerIndex": 0,
+      "explanation": "der Prototyp هو نموذج أولي لاختبار فكرة أو جهاز؛ أما Ergebnis فتعني النتيجة وLabor المختبر."
+    },
+    {
+      "id": "DL-B1-12-Q02",
+      "sourceTaskIds": ["DL-B1-12-T02"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["تصريف werden", "المخاطب du"],
+      "prompt": "أكمل بصيغة Futur I الصحيحة: Du ___ den Prototyp nächste Woche testen.",
+      "options": ["wird", "wirst", "werden"],
+      "answerIndex": 1,
+      "explanation": "مع du نصرف werden إلى wirst: Du wirst den Prototyp testen."
+    },
+    {
+      "id": "DL-B1-12-Q03",
+      "sourceTaskIds": ["DL-B1-12-T03"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["ترتيب الفعل", "المصدر في نهاية الجملة"],
+      "prompt": "اختر المصدر المناسب لإكمال الجملة: Die Gruppe wird den Sensor morgen ___.",
+      "options": ["testet", "testen", "getestet"],
+      "answerIndex": 1,
+      "explanation": "في Futur I يأتي werden مصرفًا في الموقع الثاني، ثم المصدر testen في نهاية الجملة."
+    },
+    {
+      "id": "DL-B1-12-Q04",
+      "sourceTaskIds": ["DL-B1-12-T04"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["درجة اليقين", "wahrscheinlich"],
+      "prompt": "في جملة **Wahrscheinlich werden die Forschenden eine Lösung finden**، ماذا تعني كلمة **wahrscheinlich**؟",
+      "options": ["على الأرجح، لكن ليس على سبيل اليقين", "من المؤكد دون احتمال آخر", "حدث ذلك في الماضي"],
+      "answerIndex": 0,
+      "explanation": "wahrscheinlich تعني «على الأرجح»؛ فهي تشير إلى توقع مرجح لا إلى حقيقة مضمونة."
+    },
+    {
+      "id": "DL-B1-12-Q05",
+      "sourceTaskIds": ["DL-B1-12-T05"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["فهم القراءة", "تفصيل محدد"],
+      "prompt": "ماذا يقيس النموذج الأولي في مشروع المختبر الخيالي؟",
+      "options": ["رطوبة التربة", "درجة حرارة الصف", "سرعة نهر البلدة"],
+      "answerIndex": 0,
+      "explanation": "يذكر نص القراءة أن المستشعر الأولي يقيس رطوبة التربة في الحديقة المشتركة."
+    },
+    {
+      "id": "DL-B1-12-Q06",
+      "sourceTaskIds": ["DL-B1-12-T05"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["فهم القراءة", "تمييز التوقع عن الحقيقة"],
+      "prompt": "ما الشيء الذي لن يحل المستشعر محله بحسب النص؟",
+      "options": ["خبرة البستانيات والبستانيين", "النموذج الأولي", "النتائج التي سيقارنها الطلاب"],
+      "answerIndex": 0,
+      "explanation": "يتوقع الفريق أن يساعد المستشعر في التخطيط، لكنه لن يحل محل خبرة البستانيات والبستانيين."
+    },
+    {
+      "id": "DL-B1-12-Q07",
+      "sourceTaskIds": ["DL-B1-12-T06"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["فهم نص الاستماع المكتوب", "موعد مستقبلي"],
+      "prompt": "ماذا ستعرض المجموعة في غضون أسبوعين بحسب نص الاستماع؟",
+      "options": ["نماذج مصنوعة من الكرتون", "نتائج اختبار المستشعر", "تصميمًا نهائيًا جاهزًا للبيع"],
+      "answerIndex": 0,
+      "explanation": "تقول المجموعة إنها ستعرض نماذج من الكرتون بعد أسبوعين؛ ويمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B1-12-Q08",
+      "sourceTaskIds": ["DL-B1-12-T06"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["فهم نص الاستماع المكتوب", "المفردات"],
+      "prompt": "ما الذي ستجمعه المجموعة بعد عرض النماذج؟",
+      "options": ["ملاحظات وآراء المشاركين", "قطعًا من جهاز قديم", "صورًا تاريخية عن الجسر"],
+      "answerIndex": 0,
+      "explanation": "بعد العرض ستجمع المجموعة Rückmeldungen، أي الملاحظات والآراء الراجعة."
+    },
+    {
+      "id": "DL-B1-12-Q09",
+      "sourceTaskIds": ["DL-B1-12-T07"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["Futur I", "تمييز المبني للمجهول"],
+      "prompt": "أي جملة تستخدم Futur I بمعنى أن الفريق سيختبر المستشعر؟",
+      "options": ["Das Team wird den Sensor testen.", "Der Sensor wird getestet.", "Die Ergebnisse werden veröffentlicht."],
+      "answerIndex": 0,
+      "explanation": "في الجملة الأولى يأتي المصدر testen في النهاية بعد werden المصرف، فهي Futur I. أما الجملتان الأخريان ففيهما Partizip II (getestet / veröffentlicht) وتصفان المبني للمجهول في المضارع."
+    },
+    {
+      "id": "DL-B1-12-Q10",
+      "sourceTaskIds": ["DL-B1-12-T07"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "skillTags": ["Präsens للدلالة على المستقبل", "موعد متفق عليه"],
+      "prompt": "أي جملة تعبّر عن خطة مستقبلية ذات موعد محدد بصيغة Präsens، لا بصيغة Futur I أو المبني للمجهول؟",
+      "options": ["Das Team testet den Prototyp nächste Woche.", "Das Team wird den Prototyp nächste Woche testen.", "Der Prototyp wird nächste Woche getestet."],
+      "answerIndex": 0,
+      "explanation": "تدل عبارة nächste Woche على الموعد، لذلك يمكن أن يستعمل الألماني Präsens للخطة المستقبلية المتفق عليها. الثانية Futur I، والثالثة مبني للمجهول في المضارع."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-12-P01",
+      "sourceTaskIds": ["DL-B1-12-T08"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "جهّز عرضًا قصيرًا من خمس جمل ألمانية على الأقل عن مشروع ابتكار خيالي. اذكر خطة واحدة وتوقعين بدرجتي يقين مختلفتين، واستخدم كلمات مثل wahrscheinlich وvielleicht. استخدم Futur I مرتين على الأقل؛ ويمكنك وصف موعد متفق عليه بـPräsens مع تعبير زمني. اكتب العرض أو قدّمه شفهيًا. إن كنت تتعلم وحدك فاكتب النص ثم اقرأه بصوت واضح؛ لا يلزم تسجيل، ولا تعرض التوقعات كحقائق مؤكدة.",
+      "criteria": {
+        "taskCompletion": "يضم الناتج خمس جمل ألمانية على الأقل، وخطةً واضحة وتوقعين على الأقل بدرجتي يقين مختلفتين.",
+        "meaningClarity": "يُفهم ما الذي سيطوره الفريق وما الذي يتوقعه، ويظهر أن المشروع خيالي وأن النتيجة غير مضمونة.",
+        "targetSkill": "يستخدم Futur I مرتين على الأقل بصيغة werden المناسبة والمصدر في نهاية الجملة، ويوظف كلمات درجة اليقين طبيعيًا؛ ويستطيع استعمال Präsens لموعد متفق عليه دون اعتباره خطأً أو الادعاء أن كل مستقبل يحتاج Futur I."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-12-P02",
+      "sourceTaskIds": ["DL-B1-12-T06", "DL-B1-12-T08"],
+      "objectiveIds": ["DL-B1-12-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "استنادًا إلى نص الاستماع المكتوب عن مشروع الظل في ساحة المدرسة، قدّم إحاطة قصيرة لفريقك: اذكر ما ستعرضه المجموعة بعد أسبوعين، وما ستجمعه بعدها، ثم أضف توقعًا محتملًا وخطوة تالية. اكتب خمس جمل ألمانية على الأقل أو قدّمها شفهيًا. استخدم Futur I في جملتين على الأقل، واستعمل كلمة احتمال مثل vielleicht أو wahrscheinlich في توقعك. إذا كنت تتعلم وحدك فاكتب النص ثم اقرأه بصوت واضح؛ لا يلزم تسجيل، ولا تحتاج إلى تشغيل MP3.",
+      "criteria": {
+        "taskCompletion": "يذكر الناتج مشروع زيادة الظل في ساحة المدرسة، والنماذج المصنوعة من الكرتون بعد أسبوعين، وجمع الملاحظات، ثم توقعًا وخطوةً تالية.",
+        "meaningClarity": "يفصل بين المعلومات المذكورة في النص والتوقع الشخصي، ولا يعرض النجاح المتوقع كحقيقة مؤكدة.",
+        "targetSkill": "يستخدم Futur I مرتين على الأقل مع مصدر في النهاية، ويقرن التوقع بكلمة مناسبة مثل vielleicht أو wahrscheinlich."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 145,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
