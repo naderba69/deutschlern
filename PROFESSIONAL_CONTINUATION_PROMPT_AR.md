@@ -11,7 +11,7 @@
 - الفرع الوحيد المسموح: `arena/01a1036f-deutschlern`. لا تبدّل الفرع ولا تنشئ فرعًا جديدًا.
 - PR المتابعة: [PR #1](https://github.com/naderba69/deutschlern/pull/1). لا تدمجها.
 - آخر Commit إنتاج معروف: B2.5 عند `c47018f9f3fbb25404b874c804af231aec1ed9d6` (`feat: produce B2.5 assessment`) وقد دُفع إلى الفرع الثابت. أُضيف تحديث التسليم وبرومبت الاستمرار في Commit وثائقي تالٍ؛ لذلك تحقّق من `git rev-parse HEAD` ومن الرأس البعيد بدل افتراض أن `c47018f…` هو أحدث رأس.
-- بعد دفع Commit إنتاج B2.5، أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن PR مفتوحة وغير مدمجة عند الرأس `c47018f9f3fbb25404b874c804af231aec1ed9d6`. فشل `gh pr checks 1` فحص Vercel بسبب `upgradeToPro=build-rate-limit`؛ الفحوص المحلية ناجحة. أعد الفحص بعد أي دفع وسجّل الرأس والنتيجة الفعلية. لا تدمج PR.
+- Commit إنتاج B2.5 هو `c47018f9f3fbb25404b874c804af231aec1ed9d6`، وتلاه Commit التسليم الأول `139dbb2b3a630aa51bca5772d05b41552110e306`، وكلاهما دُفع للفرع. بعد دفع Commit التسليم الأول، أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن PR مفتوحة وغير مدمجة عند الرأس `139dbb2b3a630aa51bca5772d05b41552110e306`. فشل `gh pr checks 1` فحص Vercel بسبب `upgradeToPro=build-rate-limit`؛ الفحوص المحلية ناجحة. هذا التسليم يضيف تحديثًا وثائقيًا آخر؛ أعد فحص الرأس والحالة والنتائج بعد دفعه وقبل بدء B2.6. لا تدمج PR.
 - استخدم `git` للحالة والفروع والالتزامات والرفع، و`gh` للـPR والفحوص. لا تطلب كلمات مرور أو رموز مصادقة.
 
 ## الحالة الراهنة — لا تُعد إنتاج B2.5
