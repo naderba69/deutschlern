@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-10-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": ["DL-B1-10-G01"],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "الأسئلة العشرة مرتبطة بهدف B1.10 وتمارين المصدر T01–T07، وتغطي التمييز بين السؤال المباشر وغير المباشر، واختيار ob وأدوات الاستفهام، وترتيب الفعل، والتحويل، والترقيم، وفهم نصّي القراءة والاستماع المكتوبين.",
+      "مهمتا الأداء مرتبطتان بـT08 وتتيحان كتابة استفسار رسمي أو تقديمه شفهيًا بصيغة اتصال تمثيلي. البديل الفردي كتابة النص وقراءته بصوت واضح؛ لا يلزم تسجيل أو MP3.",
+      "يُراجع المتعلم ذاتيًا استخدام صيغة Sie وob وسؤال بأداة استفهام وموضع الفعل؛ لا يدّعي التطبيق تصحيح النطق أو الكتابة المفتوحة آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-10-Q01",
+      "sourceTaskIds": ["DL-B1-10-T01"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["تمييز السؤال المباشر وغير المباشر", "التواصل المهذب"],
+      "prompt": "أي جملة تتضمن سؤالًا غير مباشر؟",
+      "options": [
+        "Welche Quellen nennt der Bericht?",
+        "Könnten Sie mir sagen, ob der Beitrag online ist?",
+        "Wann erscheint die nächste Ausgabe?"
+      ],
+      "answerIndex": 1,
+      "explanation": "الجملة الثانية تضم سؤالًا تابعًا يبدأ بـob ويأتي فعله المصرف ist في النهاية؛ أما الجملتان الأخريان فسؤالان مباشران."
+    },
+    {
+      "id": "DL-B1-10-Q02",
+      "sourceTaskIds": ["DL-B1-10-T02"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["ob", "سؤال إجابته نعم أو لا"],
+      "prompt": "أكمل سؤال نعم/لا غير المباشر: Können Sie bestätigen, ___ die Meldung heute veröffentlicht wird?",
+      "options": ["ob", "wann", "welche"],
+      "answerIndex": 0,
+      "explanation": "نستخدم ob لنقل سؤال يمكن أن تكون إجابته نعم أو لا: هل سيُنشر الخبر اليوم؟"
+    },
+    {
+      "id": "DL-B1-10-Q03",
+      "sourceTaskIds": ["DL-B1-10-T02"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["أداة استفهام", "wann"],
+      "prompt": "أكمل بأداة السؤال التي تطلب الوقت: Ich möchte wissen, ___ die nächste Ausgabe erscheint.",
+      "options": ["ob", "wann", "welche"],
+      "answerIndex": 1,
+      "explanation": "تطلب wann معرفة الوقت، ويأتي الفعل erscheint في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-B1-10-Q04",
+      "sourceTaskIds": ["DL-B1-10-T03"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["موضع الفعل", "الجملة التابعة"],
+      "prompt": "أكمل الجزء التابع في السؤال غير المباشر: Ich möchte wissen, welche Quellen ___.",
+      "options": [
+        "der Bericht nennt",
+        "nennt der Bericht",
+        "der Bericht die Quellen nennt"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد أداة الاستفهام في السؤال غير المباشر يأتي الفاعل، ثم تتمة الجملة، ويأتي الفعل المصرف nennt في النهاية."
+    },
+    {
+      "id": "DL-B1-10-Q05",
+      "sourceTaskIds": ["DL-B1-10-T04"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["تحويل السؤال", "welche"],
+      "prompt": "اختر التحويل المهذب السليم: Welche Ausgabe soll ich lesen?",
+      "options": [
+        "Ich möchte wissen, welche Ausgabe soll ich lesen.",
+        "Ich möchte wissen, welche Ausgabe ich lesen soll.",
+        "Ich möchte wissen, ob Ausgabe ich lesen soll welche."
+      ],
+      "answerIndex": 1,
+      "explanation": "تبقى أداة السؤال welche، ويأتي الفعل المصرف soll في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-B1-10-Q06",
+      "sourceTaskIds": ["DL-B1-10-T07"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["الترقيم", "سؤال مهذب"],
+      "prompt": "ما علامة الترقيم المناسبة؟ Könnten Sie mir sagen, ob die Sendung online ist__",
+      "options": ["نقطة (.)", "فاصلة (,)", "استفهام (?)"],
+      "answerIndex": 2,
+      "explanation": "الجملة الرئيسية سؤال مهذب يبدأ بـKönnten Sie، لذلك تنتهي بعلامة استفهام حتى لو كان السؤال داخل ob غير مباشر."
+    },
+    {
+      "id": "DL-B1-10-Q07",
+      "sourceTaskIds": ["DL-B1-10-T05"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["فهم القراءة", "استخراج الموضوع"],
+      "prompt": "اقرأ الرسالة الرسمية: عن أي موضوع استمعت نور إلى تقرير إذاعي؟",
+      "options": [
+        "عن معرض جديد.",
+        "عن أرشيف مجلة المدينة.",
+        "عن موعد نشر قائمة مطعم."
+      ],
+      "answerIndex": 0,
+      "explanation": "تذكر نور أنها استمعت إلى تقرير عن معرض جديد."
+    },
+    {
+      "id": "DL-B1-10-Q08",
+      "sourceTaskIds": ["DL-B1-10-T05"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["فهم القراءة", "قائمة المصادر"],
+      "prompt": "ما الذي تريد نور التأكد منه بشأن موقع المؤسسة؟",
+      "options": [
+        "أن عليه قائمة كاملة بمصادر التقرير.",
+        "أن الحلقة بدأت بالفعل على الهواء.",
+        "أن المعرض مفتوح مجانًا كل يوم."
+      ],
+      "answerIndex": 0,
+      "explanation": "تسأل نور إن كانت قائمة المصادر الكاملة موجودة على الموقع؛ ولا يذكر النص معلومات عن المجانية أو مواعيد يومية للمعرض."
+    },
+    {
+      "id": "DL-B1-10-Q09",
+      "sourceTaskIds": ["DL-B1-10-T06"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["فهم نص الاستماع المكتوب", "wann"],
+      "prompt": "اقرأ نص المكالمة: ماذا يريد سامي أن يعرف عن العدد القادم من مجلة المدينة؟",
+      "options": [
+        "متى يصدر.",
+        "من كتب كل مقال فيه.",
+        "كم ثمن الأرشيف."
+      ],
+      "answerIndex": 0,
+      "explanation": "يسأل سامي متى يصدر العدد القادم؛ ويمكن تحديد ذلك من نص الاستماع المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B1-10-Q10",
+      "sourceTaskIds": ["DL-B1-10-T06"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "skillTags": ["فهم نص الاستماع المكتوب", "تفصيل محدد"],
+      "prompt": "كيف سترسل الموظفة المعلومات إلى سامي؟",
+      "options": [
+        "في رسالة بريد إلكتروني.",
+        "في مكالمة أخرى.",
+        "في نسخة مطبوعة بالبريد."
+      ],
+      "answerIndex": 0,
+      "explanation": "تقول الموظفة إنها سترسل المعلومات بالبريد الإلكتروني. السؤال يعتمد على نص الاستماع المكتوب."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-10-P01",
+      "sourceTaskIds": ["DL-B1-10-T08"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "اكتب رسالة رسمية من أربع أو خمس جمل إلى مؤسسة إعلامية خيالية، أو قدّم الاستفسار شفهيًا في محاكاة اتصال هاتفي. اسأل مرةً باستخدام ob ومرةً أخرى باستخدام أداة استفهام مثل wann أو wo أو welche، واستعمل صيغة Sie، واختم بتحية رسمية أو عبارة ختام مهذبة. إذا كنت تتعلم وحدك فاكتب نص الاتصال ثم اقرأه بصوت واضح؛ لا يلزم تسجيل، ولا تستخدم بيانات اتصال حقيقية.",
+      "criteria": {
+        "taskCompletion": "يتضمن الناتج رسالة أو محاكاة اتصال من أربع جمل على الأقل، وسؤالًا واحدًا بـob وسؤالًا بأداة استفهام، وختامًا رسميًا أو مهذبًا.",
+        "meaningClarity": "يُفهم موضوع الاستفسار والمعلومتان المطلوبتان، ويظهر بوضوح أن المخاطَب جهة إعلامية خيالية.",
+        "targetSkill": "يستخدم صيغة Sie المهذبة وob وأداة استفهام مناسبة، ويضع الفعل المصرف في نهاية كل جملة تابعة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-10-P02",
+      "sourceTaskIds": ["DL-B1-10-T06", "DL-B1-10-T08"],
+      "objectiveIds": ["DL-B1-10-G01"],
+      "modality": ["writing", "speaking"],
+      "prompt": "تخيّل أنك تتصل بجهة إعلامية خيالية. اسأل عن موعد صدور العدد القادم، وإتاحة التفريغ الكامل، ومكان الأرشيف، مستخدمًا wann وob وwo في ثلاثة أسئلة غير مباشرة. يمكنك تمثيل المكالمة شفهيًا؛ وإن كنت تتعلم وحدك فاكتب الأسئلة والردّ الختامي ثم اقرأهما بصوت واضح. لا يلزم التسجيل.",
+      "criteria": {
+        "taskCompletion": "يسأل عن المعلومات الثلاث المطلوبة ويذكر العدد والتفريغ والأرشيف بوضوح.",
+        "meaningClarity": "يسهل على الموظف فهم الطلبات الثلاث وترتيبها خلال اتصال مهذب.",
+        "targetSkill": "يستخدم wann وob وwo على نحو مناسب، ويحافظ على صيغة Sie والفعل المصرف في نهاية كل سؤال غير مباشر."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": ["taskCompletion", "meaningClarity", "targetSkill"],
+        "minimumResponseCharacters": 125,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
