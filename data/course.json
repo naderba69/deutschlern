@@ -19712,6 +19712,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-08-AUD-PHR-01",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "title": "مفردات المنتجات والإعلان",
+      "kind": "phrase_bank",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-08-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Produkt, die Produkte. Die Werbung. Die Anzeige, die Anzeigen. Die Zielgruppe, die Zielgruppen. Die Marke, die Marken. Der Rabatt, die Rabatte. Der Preis, die Preise. Die Qualität. Die Verpackung, die Verpackungen. Die Haltbarkeit. Die Kundenbewertung, die Kundenbewertungen. Die Eigenschaft, die Eigenschaften. Der Endpreis, die Endpreise. Langlebig. Nachhaltig. Vergleichen, vergleicht. Versprechen, verspricht. Werben für, wirbt für.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-08-AUD-MODEL-01",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "title": "أمثلة المقارنة المتدرجة",
+      "kind": "model_sentences",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-08-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Je länger ein Gerät hält, desto seltener muss man es ersetzen. Je genauer man die Angaben prüft, desto leichter kann man Produkte vergleichen. Je klarer die Beschreibung ist, umso besser können Kundinnen das Produkt beurteilen. Je niedriger der Preis ist, desto attraktiver wirkt das Angebot. Je genauer wir vergleichen, desto leichter fällt die Entscheidung.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-08-AUD-DLG-01",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "title": "حوار: Mira وBilal عن مقارنة منتجين",
+      "kind": "dialogue",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-08-AUD-DLG-01-01.mp3",
+          "speaker": "Mira",
+          "text": "Diese Kopfhörer sind heute im Angebot.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-08-AUD-DLG-01-02.mp3",
+          "speaker": "Bilal",
+          "text": "Je niedriger der Preis klingt, desto genauer sollte man die Bedingungen lesen.",
+          "voiceId": "voice-05"
+        },
+        {
+          "src": "assets/audio/DL-B1-08-AUD-DLG-01-03.mp3",
+          "speaker": "Mira",
+          "text": "Die Werbung verspricht eine besonders lange Akkulaufzeit.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-08-AUD-DLG-01-04.mp3",
+          "speaker": "Bilal",
+          "text": "Dann prüfen wir, ob die Anzeige konkrete Angaben enthält. Je genauer ein Anbieter die Eigenschaften erklärt, desto leichter können wir vergleichen.",
+          "voiceId": "voice-05"
+        },
+        {
+          "src": "assets/audio/DL-B1-08-AUD-DLG-01-05.mp3",
+          "speaker": "Mira",
+          "text": "Ich vergleiche auch den Endpreis und die Rückgabebedingungen.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-08-AUD-DLG-01-06.mp3",
+          "speaker": "Bilal",
+          "text": "Gute Idee. Wir kaufen nur, wenn das Produkt wirklich zu unserem Bedarf passt.",
+          "voiceId": "voice-05"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-08-AUD-READ-01",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "title": "قراءة: Salma ومواصفات منتج",
+      "kind": "reading",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-08-AUD-READ-01.mp3",
+          "speaker": "Erzählerin B1.8",
+          "text": "Im fiktiven Onlineshop „AlltagPlus“ wird eine Trinkflasche beworben. Die Anzeige nennt sie „die beste Flasche für jeden Tag“ und verspricht einen Rabatt von 20 Prozent. In der Produktbeschreibung stehen konkrete Angaben: Die Flasche fasst 600 Milliliter, besteht aus Edelstahl und wiegt 320 Gramm. Auch der Endpreis und die Rückgabebedingungen sind angegeben. Salma hat bereits eine Flasche, die sie gern benutzt. Sie vergleicht trotzdem drei Modelle und liest Kundenbewertungen. Die Aussage „die beste Flasche“ ist eine Werbeformulierung, keine messbare Eigenschaft. Je klarer Eigenschaften und Zusatzkosten angegeben sind, desto einfacher kann man Produkte vergleichen. Salma entscheidet sich, vorerst nichts zu kaufen.",
+          "voiceId": "voice-04"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-08-AUD-LST-01",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "title": "استماع: مقارنة حقائب الظهر",
+      "kind": "listening",
+      "status": "ready",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-08-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich wollte einen neuen Rucksack kaufen. In einer Anzeige gab es einen Rabatt. Bevor ich mich entschieden habe, habe ich Größe, Material, Gewicht und Endpreis von drei Modellen verglichen. Je mehr Produkte ich verglichen habe, desto leichter konnte ich entscheiden, welches Modell zu meinem Alltag passt. Ich habe auch zwei Kundenbewertungen gelesen und am Ende gewartet. Mein alter Rucksack ist noch in Ordnung, und ein Rabatt allein ist kein Grund zum Kaufen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
