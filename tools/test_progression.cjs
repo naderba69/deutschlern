@@ -75,8 +75,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 137, "all generated A0, A1, A2, and B1.1 through B1.8 audio assets must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 302, "the audio manifest must contain all three hundred two generated clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 142, "all generated audio assets through B1.9 must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 312, "the audio manifest must contain all three hundred twelve generated clips");
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 38, "the course bundle must carry the thirty-eight ready lesson assessments through B1.9");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 380, "the course bundle must carry all three hundred eighty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 76, "the course bundle must carry all seventy-six lesson performance tasks");
@@ -119,6 +119,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-B1-06": "b1-06-health-fitness-advice",
     "DL-B1-07": "b1-07-lifestyles-customs-cultures",
     "DL-B1-08": "b1-08-consumption-advertising-je-desto",
+    "DL-B1-09": "b1-09-travel-transport-environment",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -133,11 +134,18 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     vm.runInContext(`renderAudioAssets(${JSON.stringify(lessonId)})`, context),
   ]));
   for (const asset of courseData.audioAssets) {
-    assert.ok(audioMarkupByLesson[asset.lessonId]?.includes(asset.title), `${asset.assetId} must be visible in its assigned lesson in final form`);
-    assert.ok(audioMarkupByLesson[asset.lessonId].includes('نهائي'), `${asset.assetId} must carry the final label`);
-    assert.ok(!audioMarkupByLesson[asset.lessonId].includes('للمراجعة'), `${asset.assetId} must not show a review label in its assigned lesson`);
-    for (const [lessonId, markup] of Object.entries(audioMarkupByLesson)) {
-      if (lessonId !== asset.lessonId) assert.ok(!markup.includes(asset.title), `${asset.assetId} must not appear in ${lessonId}`);
+    const markup = audioMarkupByLesson[asset.lessonId];
+    const pendingVoiceApproval = asset.status === 'generated_pending_acoustic_review';
+    assert.ok(markup?.includes(asset.title), `${asset.assetId} must remain visible in its assigned lesson`);
+    assert.ok(markup.includes(pendingVoiceApproval ? 'للمراجعة' : 'نهائي'), `${asset.assetId} must show the label matching its approval status`);
+    if (pendingVoiceApproval) {
+      assert.ok(markup.includes('متاحة للمراجعة'), `${asset.assetId} must remain playable for user preview until voice approval`);
+      assert.ok(!markup.includes('نهائي'), `${asset.assetId} must not be labeled final before voice approval`);
+    } else {
+      assert.ok(!markup.includes('للمراجعة'), `${asset.assetId} must not show a review label after approval`);
+    }
+    for (const [lessonId, otherMarkup] of Object.entries(audioMarkupByLesson)) {
+      if (lessonId !== asset.lessonId) assert.ok(!otherMarkup.includes(asset.title), `${asset.assetId} must not appear in ${lessonId}`);
     }
   }
   const a1KarimVoice = courseData.audioAssets.find((asset) => asset.assetId === "DL-A1-01-AUD-LST-01").segments.find((segment) => segment.speaker === "Karim").voiceId;
@@ -535,7 +543,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b1HealthAudioMarkup, /حوار: Hiba وFares عن الحركة اليومية/);
   assert.match(b1HealthAudioMarkup, /نهائي/);
   assert.doesNotMatch(b1HealthAudioMarkup, /للمراجعة/);
-  assert.equal(vm.runInContext("course.audioAssets.every((asset) => asset.status === 'ready')", context), true, "all generated audio assets must carry their final ready status");
+  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'ready').length", context), 137, "previously approved audio assets must retain their ready status");
+  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 5, "B1.9 assets must await user voice approval while remaining playable");
+  assert.equal(vm.runInContext("course.audioAssets.every((asset) => ['ready', 'generated_pending_acoustic_review'].includes(asset.status))", context), true, "audio assets must have a valid approved or preview-pending status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[1])", context), false, "later A0 lessons must remain sequentially locked");
@@ -957,7 +967,43 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B1')[8])", context), true, "B1.9 must pass the app's full local assessment-readiness check");
   assert.equal(b1TravelAssessment.quiz?.length, 10, "B1.9 must include exactly ten scored questions");
   assert.equal(b1TravelAssessment.performanceTasks?.length, 2, "B1.9 must include two practical self-check tasks");
-  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b1TravelAssessment.id), false, "B1.9 audio must remain a separate later phase after content and assessment");
+  const b1TravelAudioAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b1TravelAssessment.id);
+  assert.equal(b1TravelAudioAssets.length, 5, "B1.9 must expose five lesson-mapped audio assets");
+  assert.equal(b1TravelAudioAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "B1.9 must expose all ten generated clips");
+  assert.ok(b1TravelAudioAssets.every((asset) => asset.status === "generated_pending_acoustic_review" && asset.transcriptPolicy === "offer"), "B1.9 audio must remain playable for preview with transcripts available until voice approval");
+  assert.deepEqual(b1TravelAudioAssets.map((asset) => asset.assetId), ["DL-B1-09-AUD-PHR-01", "DL-B1-09-AUD-MODEL-01", "DL-B1-09-AUD-DLG-01", "DL-B1-09-AUD-READ-01", "DL-B1-09-AUD-LST-01"], "B1.9 must expose all five audio categories in lesson order");
+  const b1TravelPhrase = b1TravelAudioAssets.find((asset) => asset.assetId === "DL-B1-09-AUD-PHR-01");
+  const b1TravelModel = b1TravelAudioAssets.find((asset) => asset.assetId === "DL-B1-09-AUD-MODEL-01");
+  assert.equal(b1TravelPhrase.segments[0].voiceId, "voice-02", "B1.9 vocabulary must retain the established course narrator");
+  assert.equal(b1TravelModel.segments[0].voiceId, "voice-02", "B1.9 model sentences must retain the established course narrator");
+  for (const term of ["Der Fahrplan", "Die Abfahrt", "Der Anschluss", "Der Umstieg", "Die Verspätung", "Das Verkehrsmittel", "Der Nahverkehr", "Die Fahrkarte", "Die Umwelt", "Die Emission", "Umsteigen", "Ausfallen", "Sich verspäten", "Klimafreundlich", "Pünktlich"]) {
+    assert.ok(b1TravelPhrase.segments[0].text.includes(term), `B1.9 vocabulary audio must include ${term}`);
+  }
+  assert.match(b1TravelModel.segments[0].text, /Nachdem der Zug angekommen war, suchten wir den Anschluss/);
+  const b1TravelDialogue = b1TravelAudioAssets.find((asset) => asset.assetId === "DL-B1-09-AUD-DLG-01");
+  const sourceB1TravelDialogue = b1TravelSource.split("## 3) حوار أصلي لتخطيط رحلة")[1].split("## 4) نص قراءة أصلي")[0]
+    .split(/\r?\n/).filter((line) => /^\*\*(Mina|Karim):\*\*/.test(line))
+    .map((line) => line.slice(line.indexOf(":**") + 3).trim());
+  assert.deepEqual(b1TravelDialogue.segments.map((segment) => segment.text), sourceB1TravelDialogue, "B1.9 dialogue transcript must match all six source turns");
+  assert.deepEqual(b1TravelDialogue.segments.map((segment) => segment.speaker), ["Mina", "Karim", "Mina", "Karim", "Mina", "Karim"], "B1.9 dialogue speaker order must match the lesson");
+  assert.ok(b1TravelDialogue.segments.filter((segment) => segment.speaker === "Mina").every((segment) => segment.voiceId === "voice-02"), "Mina must use the established feminine dialogue voice");
+  assert.ok(b1TravelDialogue.segments.filter((segment) => segment.speaker === "Karim").every((segment) => segment.voiceId === "voice-03"), "Karim must use the established masculine dialogue voice");
+  const b1TravelReading = b1TravelAudioAssets.find((asset) => asset.assetId === "DL-B1-09-AUD-READ-01");
+  const sourceB1TravelReading = b1TravelSource.split("## 4) نص قراءة أصلي")[1].split("### أسئلة الفهم")[0]
+    .split(/\r?\n/).find((line) => line.trim().startsWith("> ")).trim().slice(1).trim();
+  assert.equal(b1TravelReading.segments[0].text, sourceB1TravelReading, "B1.9 reading transcript must match the source passage");
+  assert.equal(b1TravelReading.segments[0].voiceId, "voice-02", "B1.9 reading must keep the established reading narrator");
+  const b1TravelListening = b1TravelAudioAssets.find((asset) => asset.assetId === "DL-B1-09-AUD-LST-01");
+  const sourceB1TravelListening = b1TravelSource.split("## 5) نص استماع معدّ للنطق")[1].split("أجب:")[0]
+    .split(/\r?\n/).find((line) => line.trim().startsWith("> ")).trim().slice(1).trim();
+  assert.equal(b1TravelListening.segments[0].text, sourceB1TravelListening, "B1.9 listening transcript must match the source script");
+  assert.equal(b1TravelListening.segments[0].voiceId, "voice-03", "B1.9 listening must keep the established listening narrator");
+  const b1TravelAudioMarkup = vm.runInContext("renderAudioAssets('b1-09-travel-transport-environment')", context);
+  assert.match(b1TravelAudioMarkup, /حوار: Mina وKarim يخططان رحلة/);
+  assert.match(b1TravelAudioMarkup, /متاحة للمراجعة/);
+  assert.match(b1TravelAudioMarkup, /للمراجعة/);
+  assert.doesNotMatch(b1TravelAudioMarkup, /نهائي/);
+  assert.match(b1TravelAudioMarkup, /اعرض النص الألماني/);
   const b1TravelQuestionSources = new Set(b1TravelAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b1TravelQuestionSources.has(`DL-B1-09-T0${task}`), `B1.9 quiz must cover source task T0${task}`);
   assert.ok(b1TravelAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B1-09-G01")), "all B1.9 questions must map to the lesson objective");
@@ -1074,7 +1120,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b1Lessons[8].id, "B1.9 must be the next required step after mastering B1.8");
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B1')[9])", context), false, "B1.10 must remain inaccessible while its assessment is not ready");
 
-  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through ready B1.9, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped final audio through B1.8 (137 assets/302 clips), stable dialogue voices, exact B1.7/B1.8 reading and listening transcripts/narrators, pending-playback fallback, transcript availability, local B1.8/B1.9 written/oral assessments independent of audio, and not-ready assessments from B1.10 through B2.12.");
+  console.log("PASS: A0-only start, sequential A0/A1/A2/B1 locks through ready B1.9, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B1.9 (142 assets/312 clips; five awaiting voice approval), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators, pending-playback fallback, transcript availability, local B1.8/B1.9 written/oral assessments independent of audio, and not-ready assessments from B1.10 through B2.12.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

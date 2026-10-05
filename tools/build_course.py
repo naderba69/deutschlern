@@ -51,6 +51,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-06": "b1-06-health-fitness-advice",
     "DL-B1-07": "b1-07-lifestyles-customs-cultures",
     "DL-B1-08": "b1-08-consumption-advertising-je-desto",
+    "DL-B1-09": "b1-09-travel-transport-environment",
 }
 
 

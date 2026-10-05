@@ -20105,6 +20105,116 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-09-AUD-PHR-01",
+      "lessonId": "b1-09-travel-transport-environment",
+      "title": "مفردات السفر والنقل",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-09-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Fahrplan, die Fahrpläne. Die Abfahrt, die Abfahrten. Die Ankunft, die Ankünfte. Der Anschluss, die Anschlüsse. Der Umstieg, die Umstiege. Die Verspätung, die Verspätungen. Die Strecke, die Strecken. Das Verkehrsmittel, die Verkehrsmittel. Der Nahverkehr. Die Fahrkarte, die Fahrkarten. Die Umwelt. Die Emission, die Emissionen. Umsteigen, steigt um. Ausfallen, fällt aus. Sich verspäten, verspätet sich. Klimafreundlich. Pünktlich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-09-AUD-MODEL-01",
+      "lessonId": "b1-09-travel-transport-environment",
+      "title": "أمثلة الروابط الزمنية",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-09-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Bevor wir losfahren, prüfen wir den Fahrplan. Während ich auf den Anschluss warte, lese ich die Nachrichten. Nachdem wir angekommen sind, nehmen wir den Bus zur Unterkunft. Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof. Während der Zugfahrt lese ich einen Reiseführer. Nachdem der Zug angekommen war, suchten wir den Anschluss.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-09-AUD-DLG-01",
+      "lessonId": "b1-09-travel-transport-environment",
+      "title": "حوار: Mina وKarim يخططان رحلة",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-09-AUD-DLG-01-01.mp3",
+          "speaker": "Mina",
+          "text": "Wie kommen wir am Samstag nach Uferstadt?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-09-AUD-DLG-01-02.mp3",
+          "speaker": "Karim",
+          "text": "Lass uns den Zug nehmen. Bevor wir buchen, sollten wir den Fahrplan vergleichen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-09-AUD-DLG-01-03.mp3",
+          "speaker": "Mina",
+          "text": "Gute Idee. Und was machen wir, während wir auf den Anschluss warten?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-09-AUD-DLG-01-04.mp3",
+          "speaker": "Karim",
+          "text": "Wir können einen Stadtplan ansehen oder etwas lesen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-09-AUD-DLG-01-05.mp3",
+          "speaker": "Mina",
+          "text": "Nachdem wir angekommen sind, fahren wir mit dem Nahverkehr zum Museum.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-09-AUD-DLG-01-06.mp3",
+          "speaker": "Karim",
+          "text": "Genau. Dann müssen wir nicht für jeden Weg ein Auto nehmen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-09-AUD-READ-01",
+      "lessonId": "b1-09-travel-transport-environment",
+      "title": "قراءة: رحلة Zeynep إلى Uferstadt",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-09-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Zeynep und ihre Freunde planen einen Ausflug in die fiktive Stadt Uferstadt. Bevor sie losfahren, vergleichen sie die Fahrpläne von Zug und Bus. Sie entscheiden sich für den Zug und kaufen die Fahrkarten online. Nachdem sie die Tickets gebucht haben, prüfen sie, ob es am Ziel einen Anschluss gibt. Während der Zugfahrt liest Zeynep einen Reiseführer, und ihre Freunde hören einen Podcast. In Uferstadt gehen sie vom Bahnhof zu Fuß zum Markt und nehmen später den Nahverkehr zum Museum. Die Gruppe möchte möglichst klimafreundlich unterwegs sein. Deshalb legt sie die längere Strecke mit dem Zug zurück und geht kurze Wege zu Fuß.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-09-AUD-LST-01",
+      "lessonId": "b1-09-travel-transport-environment",
+      "title": "استماع: الحافلة والرحلة بالقطار",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-09-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Bevor ich aus dem Haus gehe, sehe ich mir den Fahrplan an. Heute fällt mein erster Bus aus. Während ich auf die nächste Verbindung warte, prüfe ich, ob ich in der Stadt umsteigen muss. Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten. Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
