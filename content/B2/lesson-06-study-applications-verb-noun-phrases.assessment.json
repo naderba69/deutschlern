@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-06-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-06-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-06-G01 وبتمارين المصدر T01–T07: معنى تراكيب الاسم والفعل، واختيار الفعل الملائم وتصريفه مع الأفعال المنفصلة، وإعادة الصياغة، وفهم الإرشادات الخيالية ونص الاستماع المكتوب، وتصحيح التراكيب غير المناسبة.",
+      "ترتبط P01 مباشرة بـT08. وترتبط P02 بتمارين التراكيب T03/T06 وبقراءة الإرشادات الخيالية T05 وT08؛ وتتحقق من نقل الوثائق الثلاث وشرط استكمال الناقص وخطوة ما بعد القبول دون اختراع شروط أو مواعيد.",
+      "تتيح المهمتان الكتابة أو العرض الشفهي المكافئ، وللمتعلم الفردي كتابة الإجابة وقراءتها بصوت مسموع دون تسجيل أو إرسال صوت. التحقق ذاتي محلي بمعايير ظاهرة، ولا يعتمد على MP3 أو خدمة خارجية ولا يدّعي تصحيح النطق أو الكتابة آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-06-Q01",
+      "sourceTaskIds": [
+        "DL-B2-06-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "Nomen-Verb-Verbindungen",
+        "معنى التركيب"
+      ],
+      "prompt": "ما المعنى المناسب للتركيب **eine Voraussetzung erfüllen**؟",
+      "options": [
+        "يتخذ قرارًا.",
+        "يستوفي شرطًا.",
+        "يقدّم طلبًا رسميًا."
+      ],
+      "answerIndex": 1,
+      "explanation": "تعني **eine Voraussetzung erfüllen** استيفاء شرط؛ أما **eine Entscheidung treffen** فتعني اتخاذ قرار، و**einen Antrag stellen** فتَعني تقديم طلب رسمي."
+    },
+    {
+      "id": "DL-B2-06-Q02",
+      "sourceTaskIds": [
+        "DL-B2-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "Nomen-Verb-Verbindungen",
+        "einen Antrag stellen"
+      ],
+      "prompt": "أكمل بالتركيب الاسمي الفعلي المناسب: **Für die Zulassung muss sie einen Antrag ___.**",
+      "options": [
+        "gestellt",
+        "stellen",
+        "stellt"
+      ],
+      "answerIndex": 1,
+      "explanation": "التركيب الوارد في الدرس هو **einen Antrag stellen**. وبعد الفعل الناقص **muss** يأتي الفعل الأساسي بالمصدر في نهاية الجملة."
+    },
+    {
+      "id": "DL-B2-06-Q03",
+      "sourceTaskIds": [
+        "DL-B2-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "فعل منفصل",
+        "nachreichen"
+      ],
+      "prompt": "اختر الإكمال الصحيح مع الفعل الناقص: **Den Leistungsnachweis kann er später ___.**",
+      "options": [
+        "nachreichen",
+        "reicht nach",
+        "nachreichte"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد **kann** نستخدم المصدر الكامل **nachreichen** في نهاية الجملة، ولا نفصل الفعل المصرف لأن الفعل هنا مصدر تابع للفعل الناقص."
+    },
+    {
+      "id": "DL-B2-06-Q04",
+      "sourceTaskIds": [
+        "DL-B2-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "إعادة الصياغة",
+        "eine Entscheidung treffen"
+      ],
+      "prompt": "أكمل إعادة الصياغة: **Er entscheidet sich nach der Beratung. → Er trifft nach der Beratung eine ___.**",
+      "options": [
+        "Voraussetzung",
+        "Entscheidung",
+        "Bewerbung"
+      ],
+      "answerIndex": 1,
+      "explanation": "المقابل الاسمي للفعل **entscheidet sich** في التركيب المستهدف هو **eine Entscheidung treffen**."
+    },
+    {
+      "id": "DL-B2-06-Q05",
+      "sourceTaskIds": [
+        "DL-B2-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "إعادة الصياغة",
+        "etwas in Betracht ziehen"
+      ],
+      "prompt": "اختر التركيب الصحيح: **Sie überlegt, ob ein Teilzeitstudium möglich ist. → Sie zieht ein Teilzeitstudium ___.**",
+      "options": [
+        "zur Verfügung",
+        "auf Zulassung",
+        "in Betracht"
+      ],
+      "answerIndex": 2,
+      "explanation": "التركيب الثابت هو **etwas in Betracht ziehen**؛ لذلك نقول **Sie zieht ein Teilzeitstudium in Betracht**."
+    },
+    {
+      "id": "DL-B2-06-Q06",
+      "sourceTaskIds": [
+        "DL-B2-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "اختيار الفعل الملائم",
+        "eine Prüfung ablegen"
+      ],
+      "prompt": "اختر الفعل المناسب للتركيب: **Am Ende des Kurses legt sie eine Prüfung ___.**",
+      "options": [
+        "ab",
+        "erfüllt",
+        "trifft"
+      ],
+      "answerIndex": 0,
+      "explanation": "يُستخدم التركيب **eine Prüfung ablegen**، وهو في المثال **legt … ab** لأن الفعل **ablegen** منفصل."
+    },
+    {
+      "id": "DL-B2-06-Q07",
+      "sourceTaskIds": [
+        "DL-B2-06-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "شرط استكمال الوثائق"
+      ],
+      "prompt": "بحسب إرشادات الأكاديمية الخيالية في T05، متى يمكن استكمال الوثائق الناقصة لاحقًا؟",
+      "options": [
+        "في كل الحالات، دون الرجوع إلى جهة أخرى.",
+        "فقط إذا أكدت Studienberatung ذلك كتابةً.",
+        "بعد التسجيل الجامعي تلقائيًا، حتى دون تأكيد."
+      ],
+      "answerIndex": 1,
+      "explanation": "ينص T05 على أن الوثائق الناقصة لا تُستكمل إلا إذا أكدت Studienberatung ذلك كتابةً؛ فلا يقول إنها تُقبل دائمًا أو تلقائيًا."
+    },
+    {
+      "id": "DL-B2-06-Q08",
+      "sourceTaskIds": [
+        "DL-B2-06-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "استخراج وثائق من النص"
+      ],
+      "prompt": "ما الوثائق الثلاث التي يطلبها البرنامج الخيالي ضمن التقديم، بحسب T05؟",
+      "options": [
+        "جواز سفر، وشهادة لغة، وإثبات سكن.",
+        "سيرة ذاتية، وكشف حساب، ورسالتا توصية.",
+        "نموذج، ورسالة دافع، وإثبات للشهادة السابقة."
+      ],
+      "answerIndex": 2,
+      "explanation": "يذكر النص نموذجًا ورسالة دافع وإثباتًا للشهادة السابقة. لا يطلب جواز سفر أو كشف حساب أو الوثائق الأخرى في المشتتات."
+    },
+    {
+      "id": "DL-B2-06-Q09",
+      "sourceTaskIds": [
+        "DL-B2-06-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "اتخاذ قرار مستنير"
+      ],
+      "prompt": "بحسب نص T06 المكتوب، ما فائدة Gespräch bei der Studienberatung للشخص الذي لم يحسم اختياره؟",
+      "options": [
+        "تُوضّح الأسئلة، فيستطيع المهتم اتخاذ قرار مستنير.",
+        "يضمن له القبول في البرنامج الدراسي الأول.",
+        "يغيّر مهلة التقديم حسب طلبه."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر T06 أن أسئلة المهتمين تُوضّح في جلسة الإرشاد حتى يتمكنوا من اتخاذ قرار مستنير؛ ولا يَعِد النص بالقبول أو بتغيير المهل. يمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-06-Q10",
+      "sourceTaskIds": [
+        "DL-B2-06-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "skillTags": [
+        "تصحيح تركيب غير مناسب",
+        "eine Voraussetzung erfüllen"
+      ],
+      "prompt": "أصلح التركيب غير المناسب **eine Voraussetzung stellen** باختيار الفعل الصحيح.",
+      "options": [
+        "eine Voraussetzung treffen",
+        "eine Voraussetzung ablegen",
+        "eine Voraussetzung erfüllen"
+      ],
+      "answerIndex": 2,
+      "explanation": "التركيب الصحيح هو **eine Voraussetzung erfüllen**. أما **stellen** فيرتبط في أمثلة الدرس بـ**einen Antrag stellen**."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-06-P01",
+      "sourceTaskIds": [
+        "DL-B2-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب متن استفسار رسمي من خمس جمل ألمانية إلى مكتب إرشاد دراسي خيالي، أو حضّره وقدّمه شفهيًا. استخدم ثلاثة تراكيب اسمية فعلية على الأقل من الدرس، وحافظ على أداة الاسم وحرف الجر إذا كان التركيب يتطلبهما، مثل **einen Antrag auf Zulassung stellen** أو **etwas in Betracht ziehen**. اسأل عن شرط أو وثيقة أو إجراء دراسي دون اختراع قاعدة قبول أو مهلة حقيقية ودون إدخال بيانات شخصية. يمكن للمتعلم الفردي كتابة الرسالة وقراءتها بصوت مسموع لنفسه؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "استفسار رسمي من خمس جمل ألمانية إلى جهة دراسية خيالية، يتضمن سؤالًا مناسبًا وثلاثة تراكيب اسمية فعلية صحيحة على الأقل، دون بيانات شخصية أو مواعيد حقيقية.",
+        "meaningClarity": "تُفهم غاية الاستفسار، ويلائم أسلوبه جهة إرشاد رسمية، ولا ينسب إلى مؤسسة حقيقية شرط قبول أو مهلة غير موثقة.",
+        "targetSkill": "يستخدم ثلاثة تراكيب اسمية فعلية ملائمة من الدرس، مع مطابقة الاسم والفعل وحرف الجر المطلوب وترتيب الفعل المنفصل عند الحاجة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-06-P02",
+      "sourceTaskIds": [
+        "DL-B2-06-T03",
+        "DL-B2-06-T05",
+        "DL-B2-06-T06",
+        "DL-B2-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى إرشادات الأكاديمية الخيالية في قراءة T05، اكتب إحاطة من خمس إلى ست جمل ألمانية لمتقدم خيالي أو اعرضها شفهيًا. اذكر الوثائق الثلاث المطلوبة، وشرط استكمال الوثائق الناقصة، وما الذي يجب فعله بعد القبول. استخدم ثلاثة تراكيب اسمية فعلية ملائمة على الأقل من الدرس، مثل **eine Bewerbung einreichen**, **einen Antrag auf Zulassung stellen** أو **zur Verfügung stehen**. لا تضف شروطًا أو مواعيد غير موجودة في المصدر، ولا تقدّم الأكاديمية الخيالية على أنها مؤسسة حقيقية. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة من خمس إلى ست جمل ألمانية تذكر الوثائق الثلاث في T05، وشرط التأكيد الكتابي قبل استكمال الناقص، والخطوة التالية بعد القبول، وتستخدم ثلاثة تراكيب اسمية فعلية مناسبة.",
+        "meaningClarity": "تطابق المعلومات نص T05: نموذج ورسالة دافع وإثبات للشهادة السابقة؛ استكمال الناقص فقط بعد تأكيد كتابي من Studienberatung؛ وإتمام التسجيل بعد القبول. لا تُضاف متطلبات أو مواعيد غير واردة.",
+        "targetSkill": "يستخدم ثلاثة تراكيب اسمية فعلية صحيحة من الدرس، ويحافظ على العلاقة بين الاسم والفعل وحرف الجر اللازم، ويضع الفعل المنفصل في موضعه الصحيح."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
