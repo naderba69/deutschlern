@@ -4,8 +4,8 @@
 **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا ترفع فرعًا آخر.
 **الرأس قبل دفعة B2.8:** `07b599519ee66936f37b0ded4abfa8655b9d452a`؛ كان `HEAD` مطابقًا لـ`origin/arena/01a1036f-deutschlern` والشجرة نظيفة عند البدء.
-**Commit إنتاج B2.8:** `93d1ee8e86b5db981bfa5b552cd1368a7dafeca5` — `feat: produce B2.8 assessment`؛ رُفع بنجاح إلى الفرع الثابت، و`HEAD` يطابق المرجع البعيد وقت التحقق.
-**PR #1:** https://github.com/naderba69/deutschlern/pull/1 مفتوحة وغير مدمجة بعد رفع `93d1ee8e86b5db981bfa5b552cd1368a7dafeca5`. أكدت `gh pr view 1` أن رأسها يطابق commit هذا الإنتاج؛ وأظهر `gh pr checks 1` فشل فحص Vercel بسبب `upgradeToPro=build-rate-limit` (مشكلة خارجية)، لا فشلًا محليًا. أعد الفحص بعد تحديث وثائق التسليم التالي، ولا تدمج PR #1.
+**Commit إنتاج B2.8:** `93d1ee8e86b5db981bfa5b552cd1368a7dafeca5` — `feat: produce B2.8 assessment`؛ رُفع بنجاح. **Commit تحديث التسليم:** `80ffac440e01ddd55d55b9dd59aab1961c60266f` — `docs: finalize B2.8 handoff`؛ رُفع إلى الفرع نفسه، وتطابق `HEAD` والمرجع البعيد معه.
+**PR #1:** https://github.com/naderba69/deutschlern/pull/1 مفتوحة وغير مدمجة. بعد رفع `80ffac440e01ddd55d55b9dd59aab1961c60266f` أكد `gh pr view 1` أن رأسها يطابق commit تحديث التسليم، وأن `mergedAt` فارغ. أظهر `gh pr checks 1` فشل Vercel بسبب `upgradeToPro=build-rate-limit` (مشكلة خارجية)، لا فشلًا محليًا. أُعيد الفحص بعد تحديث التسليم؛ أعده بعد أي رفع لاحق، ولا تدمج PR #1.
 
 ## ما أُنجز في دفعة B2.8
 
@@ -47,8 +47,8 @@
 ## ما لم يُنجز / ما بقي
 
 1. لا تُنتج إلا الدرس التالي المطلوب B2.9 بعد قراءة مصدره ومراجعة روابطه؛ أبقِ B2.10–B2.12 غير جاهزة ومقفلة.
-2. تم رفع commit الإنتاج `93d1ee8e86b5db981bfa5b552cd1368a7dafeca5` إلى `arena/01a1036f-deutschlern` وتأكد تطابق `HEAD` والمرجع البعيد؛ تُرفع وثيقتا التسليم في commit متابعة على الفرع نفسه.
-3. بعد رفع تحديث التسليم أعد فحص `gh pr view 1` و`gh pr checks 1`. سجّل الحالة الفعلية والفشل الخارجي إن استمر؛ لا تدمج PR #1.
+2. رُفعا commit الإنتاج `93d1ee8e86b5db981bfa5b552cd1368a7dafeca5` وcommit تحديث التسليم `80ffac440e01ddd55d55b9dd59aab1961c60266f` إلى `arena/01a1036f-deutschlern`؛ تطابق `HEAD` والمرجع البعيد مع الثاني.
+3. أُعيد فحص `gh pr view 1` و`gh pr checks 1` بعد رفع تحديث التسليم؛ PR #1 مفتوحة وغير مدمجة، وفشل Vercel الخارجي `upgradeToPro=build-rate-limit` ما زال ظاهرًا. لا تدمجها، وأعد الفحص بعد أي رفع لاحق.
 4. لا تنشئ صوتًا في الدفعة التالية، ولا تعِد توليد ملفات موجودة بما فيها أصول B1.9. تظل أصول B1.9 للمعاينة بانتظار اعتماد المستخدم؛ لا تدّعِ مراجعتها سمعيًا.
 5. تبقى المراجعة اللغوية/التربوية العامة وبقية عناصر خطة التحسين الأوسع خارج نطاق B2.8.
 
