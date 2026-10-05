@@ -4,9 +4,11 @@
 **المستودع:** `naderba69/deutschlern`
 **الفرع الثابت:** `arena/01a1036f-deutschlern`
 **Commit إنتاج B2.6:** `3babc823753318be28741fc612e9271fde21cecd` — `feat: produce B2.6 assessment`
+**Commit التسليم الأول:** `bad27a0de1e89df57b65b8eda7b82b6bf7af9236` — `docs: hand off B2.6 and prepare B2.7`
+**الرأس المحلي والبعيد بعد الرفع:** `bad27a0de1e89df57b65b8eda7b82b6bf7af9236`؛ متطابقان عند التحقق.
 **الفرع الأساسي قبل دفعة B2.6:** `88ce731aec25f067a2a23c98df68aabab5edb809`
-**حالة الرفع:** أُنشئ commit الإنتاج محليًا؛ يلزم رفعه مع ملف التسليم هذا إلى الفرع الثابت، ثم التحقق من رأس PR والفحوص.
-**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة عند آخر فحص. قبل رفع هذه الدفعة كانت تشير إلى `88ce731aec25f067a2a23c98df68aabab5edb809`. فشل فحص Vercel حينها بسبب `upgradeToPro=build-rate-limit`؛ أعد فحصه بعد الرفع. لا تدمج PR #1.
+**حالة الرفع:** رُفع commit الإنتاج وcommit التسليم الأول إلى الفرع الثابت؛ هذا التحديث اللاحق لحالة PR يوثَّق في commit قصير مستقل على الفرع نفسه ويُرفع مباشرة.
+**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة، وتشير إلى الفرع الثابت عند `bad27a0de1e89df57b65b8eda7b82b6bf7af9236`. بعد الرفع، أظهر `gh pr checks 1` فشل فحص Vercel بسبب `upgradeToPro=build-rate-limit`. الفحوص المحلية المذكورة أدناه ناجحة؛ فشل Vercel خارجي ولا يعني فشل البناء المحلي. لا تدمج PR #1.
 
 ## ما أُنجز في B2.6
 
