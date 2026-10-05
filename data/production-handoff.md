@@ -5,8 +5,8 @@
 **الفرع الثابت:** `arena/01a1036f-deutschlern` — يجب أن يبقى هذا الفرع.
 **الرأس الأساسي قبل دفعة B2.7:** `a7039dc48d509c7336778ed70f9e01a605a0b5dd`؛ كان `HEAD` والمرجع البعيد متطابقين عند بدء العمل.
 **Commit إنتاج B2.7:** `df2155e66dba3a3c28a715187d9303a1ee92a759` — `feat: produce B2.7 assessment`.
-**حالة الرفع:** رُفع commit الإنتاج `df2155e66dba3a3c28a715187d9303a1ee92a759`، ثم commits التسليم `d8cd681595e374c8d72e4640ddd481ff83cdd91a` و`1bc4c7c7c17484b134281e9c109eb665e6bcd8b0`. آخر رأس رُفع وفُحص قبل هذا التحديث هو `dca0483a8589e4c0204125521196752c848f49d4`؛ تطابق معه `HEAD` والمرجع البعيد.
-**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — بعد رفع `dca0483a8589e4c0204125521196752c848f49d4` كانت مفتوحة وغير مدمجة ورأسها مطابق. أظهر `gh pr checks 1` و`statusCheckRollup` في `gh pr view 1` فشل Vercel مع `upgradeToPro=build-rate-limit`؛ لم يظهر فشل اختبار محلي. نجح Vercel وVercel Preview Comments على commit الإنتاج `df2155e`، لكن لم ينجح فحص Vercel على الرأس الأحدث بسبب الحد الخارجي. ظهر السبب نفسه في فحوص الوثائق السابقة وعند `b8124dc`. أي رفع توثيقي لاحق يتطلب إعادة فحص PR؛ لا تدمج PR #1.
+**حالة الرفع:** رُفع commit الإنتاج `df2155e66dba3a3c28a715187d9303a1ee92a759`، ثم تحديثات التسليم `d8cd681595e374c8d72e4640ddd481ff83cdd91a` و`1bc4c7c7c17484b134281e9c109eb665e6bcd8b0` و`dca0483a8589e4c0204125521196752c848f49d4`. آخر رأس رُفع وفُحص قبل هذا التحديث هو `d2dcd3726e344ca20444ec7a2e77501b5d511f10`؛ تطابق معه `HEAD` والمرجع البعيد.
+**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — بعد رفع `d2dcd3726e344ca20444ec7a2e77501b5d511f10` كانت مفتوحة وغير مدمجة ورأسها مطابق. أظهر `gh pr checks 1` و`statusCheckRollup` في `gh pr view 1` فشل Vercel مع `upgradeToPro=build-rate-limit`؛ لم يظهر فشل اختبار محلي. نجح Vercel وVercel Preview Comments على commit الإنتاج `df2155e`، لكن لم ينجح فحص Vercel على الرؤوس التوثيقية الأحدث بسبب الحد الخارجي، وتكرر السبب عند `b8124dc`. أي رفع توثيقي لاحق يتطلب إعادة فحص PR؛ لا تدمج PR #1.
 
 ## ما أُنجز في دفعة B2.7
 
