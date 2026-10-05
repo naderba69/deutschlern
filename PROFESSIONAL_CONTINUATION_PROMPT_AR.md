@@ -11,8 +11,8 @@
 - المسار: `/home/user/deutschlern`
 - الفرع الوحيد المسموح به في هذه الجلسة: `arena/01a1036f-deutschlern`
 - PR المتابعة: [PR #1](https://github.com/naderba69/deutschlern/pull/1)
-- Commit إنتاج B2.3: `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b` (`feat: produce B2.3 assessment`) على الفرع الثابت. يتضمن المصدر والتقييم والحزمة والاختبارات والكتالوج والتدقيق والتقدم؛ أُعد سجل التسليم وبرومبت الاستمرار في متابعة توثيقية على الفرع نفسه.
-- بعد دفع Commit الإنتاج، أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن PR #1 مفتوحة وغير مدمجة وعلى الفرع الثابت، ورأسها حينها `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b`. أظهر `gh pr checks 1` فشل Vercel مع رابط يتضمن `upgradeToPro=build-rate-limit`؛ الفحوص المحلية ناجحة، والسبب الظاهر حد بناء خارجي. بعد دفع تحديث التسليم والبرومبت، أعد التحقق من الرأس والحالة والفحوص بـ`gh pr view 1 --json number,state,headRefName,headRefOid,url` و`gh pr checks 1` قبل أي خطوة. لا تدمج PR.
+- Commit إنتاج B2.3: `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b` (`feat: produce B2.3 assessment`) على الفرع الثابت؛ تلاه Commit التسليم والبرومبت `6cd6a597fc219502770dcf254551fde9e1d665ff` (`docs: hand off B2.3 production`). كلاهما دُفع إلى `origin/arena/01a1036f-deutschlern`.
+- بعد دفع Commit التسليم، أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن PR #1 مفتوحة وغير مدمجة وعلى الفرع الثابت، ورأسها حينها `6cd6a597fc219502770dcf254551fde9e1d665ff`. أظهر `gh pr checks 1` فشل Vercel مع رابط يتضمن `upgradeToPro=build-rate-limit`؛ الفحوص المحلية ناجحة، والسبب الظاهر حد بناء خارجي. سيقدم تحديث الحالة في هذا البرومبت رأس الفرع؛ أعد التحقق من الرأس والحالة والفحوص بـ`gh pr view 1 --json number,state,headRefName,headRefOid,url` و`gh pr checks 1` بعد دفعه وقبل أي خطوة. لا تدمج PR.
 
 لا تبدّل الفرع، ولا تنشئ فرعًا جديدًا، ولا تدمج PR. استخدم `git` للحالة والالتزامات والرفع، و`gh` لمعلومات PR. لا تطلب من المستخدم كلمات مرور أو رموز مصادقة.
 

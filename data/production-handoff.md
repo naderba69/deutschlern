@@ -3,7 +3,8 @@
 **آخر تحديث:** 2026-10-05
 **الفرع الثابت:** `arena/01a1036f-deutschlern`
 **Commit إنتاج B2.3:** `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b` (`feat: produce B2.3 assessment`) — دُفع إلى `origin` على الفرع الثابت.
-**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة. بعد دفع Commit الإنتاج، أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن رأس PR هو `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b` والفرع `arena/01a1036f-deutschlern`. أظهر `gh pr checks 1` فشل Vercel مع رابط يتضمن `upgradeToPro=build-rate-limit`؛ الفحوص المحلية أدناه ناجحة، ويبدو هذا حدّ بناء خارجيًا. سيُدفع تحديث التسليم والبرومبت في متابعة توثيقية على الفرع نفسه؛ أعد فحص الرأس والحالة والفحوص بـ`gh pr view 1 --json number,state,headRefName,headRefOid,url` و`gh pr checks 1` قبل الخطوة التالية. لا تدمج PR، ولا تصف الدفعة بالمكتملة ما دامت مفتوحة.
+**Commit التسليم والبرومبت:** `6cd6a597fc219502770dcf254551fde9e1d665ff` (`docs: hand off B2.3 production`) — دُفع إلى الفرع نفسه.
+**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة. بعد دفع Commit التسليم، أكد `gh pr view 1 --json number,state,headRefName,headRefOid,url` أن رأس PR هو `6cd6a597fc219502770dcf254551fde9e1d665ff` والفرع `arena/01a1036f-deutschlern`. أعاد `gh pr checks 1` فشل Vercel مع رابط يتضمن `upgradeToPro=build-rate-limit`؛ الفحوص المحلية أدناه ناجحة، ويبدو هذا حدّ بناء خارجيًا. سيُضاف هذا التحديث التوثيقي في Commit لاحق على الفرع نفسه، ما سيقدم الرأس؛ أعد فحص الرأس والحالة والفحوص بـ`gh pr view 1 --json number,state,headRefName,headRefOid,url` و`gh pr checks 1` بعد دفعه وقبل الخطوة التالية. لا تدمج PR، ولا تصف الدفعة بالمكتملة ما دامت مفتوحة.
 
 ## الحالة الحالية
 
@@ -34,7 +35,7 @@
 | `node tools/test_progression.cjs` | نجح: يفتح B2.3 بعد إتقان B2.2؛ وتظل B2.4–B2.12 غير جاهزة ومقفلة؛ المعايير المحلية ظاهرة والمهام مستقلة عن الصوت. |
 | فحص Python مخصص للكتالوج والحزمة | نجح: 969 معرّفًا فريدًا؛ B2.3 فيه 10 أسئلة ومهمتا أداء وعتبة 80% وروابط T01–T08 صحيحة، ومواضع T01–T08 في الكتالوج مطابقة لأسطر المصدر؛ لا يوجد صوت لـB2.3. |
 | `git diff --check` | نجح بلا أخطاء تنسيق. |
-| `gh pr checks 1` بعد دفع Commit الإنتاج `5ddc9483c1233b44f3e589e03889bf4a2e3f2a7b` | فشل Vercel مع رابط `upgradeToPro=build-rate-limit`؛ منفصل عن الفحوص المحلية الناجحة. أعد الفحص بعد تحديث وثائق التسليم. |
+| `gh pr checks 1` بعد دفع Commit التسليم `6cd6a597fc219502770dcf254551fde9e1d665ff` | فشل Vercel مع رابط `upgradeToPro=build-rate-limit`؛ منفصل عن الفحوص المحلية الناجحة. سيحرك التحديث التوثيقي التالي رأس PR؛ أعد الفحص بعد دفعه. |
 
 الصوت لم يتغير: 142 أصلًا و312 مقطعًا؛ 137 أصلًا `ready`، والخمسة الخاصة بـB1.9 (10 مقاطع) للمعاينة بانتظار اعتماد الصوت. فُحصت الإطارات بنيويًا فقط؛ لم أستمع إلى التسجيلات.
 
