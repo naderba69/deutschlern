@@ -6,10 +6,11 @@
 **Commit إنتاج B2.6:** `3babc823753318be28741fc612e9271fde21cecd` — `feat: produce B2.6 assessment`
 **Commit التسليم الأول:** `bad27a0de1e89df57b65b8eda7b82b6bf7af9236` — `docs: hand off B2.6 and prepare B2.7`
 **Commit متابعة حالة PR:** `42a3af4b3fdd01eb2f905b8e6e62f99333f591e8` — `docs: record B2.6 push and PR checks`
-**الرأس المحلي والبعيد عند آخر تحقق:** `42a3af4b3fdd01eb2f905b8e6e62f99333f591e8`؛ كانا متطابقين.
+**آخر commit تسليم مرفوع:** `5721e3604ad9eb9ac85a5be43bcb55ff2f45d31b` — `docs: update handoff with latest PR status`
+**الرأس المحلي والبعيد عند آخر تحقق:** `5721e3604ad9eb9ac85a5be43bcb55ff2f45d31b`؛ كانا متطابقين.
 **الفرع الأساسي قبل دفعة B2.6:** `88ce731aec25f067a2a23c98df68aabab5edb809`
-**حالة الرفع:** رُفعت commits الإنتاج والتسليم إلى الفرع الثابت. هذا التحديث الأحدث لحالة PR يوثَّق في commit قصير مستقل على الفرع نفسه ويُرفع مباشرة.
-**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة، وكانت عند الرأس `42a3af4b3fdd01eb2f905b8e6e62f99333f591e8` في آخر تحقق. عند الرأس السابق `bad27a0de1e89df57b65b8eda7b82b6bf7af9236` فشل Vercel بسبب `upgradeToPro=build-rate-limit`؛ أما `gh pr checks 1` بعد دفع `42a3af4` فأبلغ «no checks reported». هذا لا يغيّر نجاح الفحوص المحلية المذكورة أدناه. لا تدمج PR #1.
+**حالة الرفع:** رُفعت commits الإنتاج والتسليم إلى الفرع الثابت؛ يُرفع هذا التحديث اللاحق على الفرع نفسه.
+**PR #1:** https://github.com/naderba69/deutschlern/pull/1 — مفتوحة وغير مدمجة، وعند الرأس `5721e3604ad9eb9ac85a5be43bcb55ff2f45d31b` في آخر تحقق. أظهر `gh pr checks 1 --watch --interval 10` نجاح فحصي Vercel وVercel Preview Comments. كان Vercel قد فشل على رأس أقدم `bad27a0` بسبب `upgradeToPro=build-rate-limit`، ثم لم تظهر فحوص على الرأس `42a3af4`؛ الفحص الأحدث ناجح، فلا تخلط الفشل السابق بالحالة الحالية. لا تدمج PR #1.
 
 ## ما أُنجز في B2.6
 
