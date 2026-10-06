@@ -39,6 +39,26 @@ function icon(name, size = 20) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ICONS.spark}</svg>`;
 }
 
+function freshLearningSessions() {
+  return { currentView: 'dashboard', selectedLevel: 'A0', active: null, lessons: {}, gate: null };
+}
+
+function normalizeLearningSessions(value) {
+  const defaults = freshLearningSessions();
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return defaults;
+  const active = value.active && typeof value.active === 'object' && !Array.isArray(value.active)
+    && (value.active.type === 'lesson' || value.active.type === 'gate')
+    ? { type: value.active.type, id: typeof value.active.id === 'string' ? value.active.id : '' }
+    : null;
+  return {
+    currentView: typeof value.currentView === 'string' ? value.currentView : defaults.currentView,
+    selectedLevel: typeof value.selectedLevel === 'string' ? value.selectedLevel : defaults.selectedLevel,
+    active,
+    lessons: value.lessons && typeof value.lessons === 'object' && !Array.isArray(value.lessons) ? value.lessons : {},
+    gate: value.gate && typeof value.gate === 'object' && !Array.isArray(value.gate) ? value.gate : null,
+  };
+}
+
 function freshState() {
   return {
     profile: { name: 'متعلّم', dailyGoal: 15, focus: 'المحادثة', startLevel: 'A0' },
@@ -47,6 +67,7 @@ function freshState() {
     wordReviews: {},
     audioTranscriptUnlocks: {},
     performanceEvidence: {},
+    learningSessions: freshLearningSessions(),
     xp: 0,
     studyDays: []
   };
@@ -73,6 +94,7 @@ function loadState() {
       wordReviews: saved.wordReviews && typeof saved.wordReviews === 'object' ? saved.wordReviews : {},
       audioTranscriptUnlocks: saved.audioTranscriptUnlocks && typeof saved.audioTranscriptUnlocks === 'object' ? saved.audioTranscriptUnlocks : {},
       performanceEvidence: saved.performanceEvidence && typeof saved.performanceEvidence === 'object' ? saved.performanceEvidence : {},
+      learningSessions: normalizeLearningSessions(saved.learningSessions),
       studyDays: Array.isArray(saved.studyDays) ? saved.studyDays : []
     };
   } catch {
@@ -93,7 +115,27 @@ let activeAudio = null;
 let audioPlaybackToken = 0;
 let deferredInstallPrompt = null;
 
+function copySessionForStorage(session) {
+  if (!session || typeof session !== 'object') return null;
+  return {
+    ...session,
+    answers: Array.isArray(session.answers) ? session.answers.map((answer) => ({ ...answer })) : [],
+  };
+}
+
+function captureLearningSessions() {
+  const sessions = normalizeLearningSessions(state.learningSessions);
+  if (lessonSession?.id) sessions.lessons[lessonSession.id] = copySessionForStorage(lessonSession);
+  if (gateSession) sessions.gate = copySessionForStorage(gateSession);
+  sessions.currentView = currentView;
+  sessions.selectedLevel = selectedLevel;
+  if (currentView === 'lesson' && lessonSession?.id) sessions.active = { type: 'lesson', id: lessonSession.id };
+  else if (currentView === 'a0-gate' && gateSession) sessions.active = { type: 'gate', id: 'A0-A1' };
+  state.learningSessions = sessions;
+}
+
 function saveState() {
+  captureLearningSessions();
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
   } catch {
@@ -438,6 +480,122 @@ function findLesson(id) {
   return course?.lessons.find((lesson) => lesson.id === id) || null;
 }
 
+function restoreAssessmentSession(candidate, assessment, quiz, id, kind) {
+  if (!candidate || typeof candidate !== 'object' || !assessment?.version || !Array.isArray(quiz) || !quiz.length) return null;
+  if (candidate.id !== id || candidate.assessmentVersion !== assessment.version) return null;
+  const allowedModes = kind === 'lesson' ? ['overview', 'quiz', 'performance', 'result'] : ['quiz', 'performance', 'result'];
+  if (!allowedModes.includes(candidate.mode)) return null;
+  const questionIndex = candidate.questionIndex;
+  if (!Number.isInteger(questionIndex) || questionIndex < 0 || questionIndex >= quiz.length) return null;
+  const checked = candidate.checked === true;
+  if (candidate.checked !== true && candidate.checked !== false) return null;
+  const selected = candidate.selected === null ? null : candidate.selected;
+  if (selected !== null && (!Number.isInteger(selected) || selected < 0 || selected >= (quiz[questionIndex]?.options?.length || 0))) return null;
+  if (checked && selected === null) return null;
+  const pausedMode = kind === 'lesson' && candidate.mode === 'overview' && ['quiz', 'performance'].includes(candidate.pausedMode)
+    ? candidate.pausedMode
+    : null;
+  const answersRaw = Array.isArray(candidate.answers) ? candidate.answers : null;
+  if (!answersRaw || answersRaw.length > quiz.length) return null;
+  const answers = [];
+  for (let index = 0; index < answersRaw.length; index += 1) {
+    const answer = answersRaw[index];
+    const answerIndex = answer?.selected;
+    const options = quiz[index]?.options || [];
+    if (!Number.isInteger(answerIndex) || answerIndex < 0 || answerIndex >= options.length) return null;
+    answers.push({ selected: answerIndex, correct: answerIndex === quiz[index].answerIndex });
+  }
+  const quizIsPaused = candidate.mode === 'quiz' || pausedMode === 'quiz';
+  const isOverview = candidate.mode === 'overview' && !pausedMode;
+  const requiresFullQuiz = candidate.mode === 'performance' || candidate.mode === 'result' || pausedMode === 'performance';
+  const expectedAnswers = quizIsPaused
+    ? questionIndex + (checked ? 1 : 0)
+    : isOverview ? 0 : quiz.length;
+  if (answers.length !== expectedAnswers) return null;
+  if (checked && answers[answers.length - 1]?.selected !== selected) return null;
+  if (isOverview && (questionIndex !== 0 || checked || selected !== null)) return null;
+  if (requiresFullQuiz && (questionIndex !== quiz.length - 1 || !checked)) return null;
+  const correct = answers.filter((answer) => answer.correct).length;
+  if ((candidate.mode === 'performance' || pausedMode === 'performance')
+    && (assessment.performanceEvidenceRequired !== true || !meetsMasteryThreshold(correct, quiz.length))) return null;
+  if (candidate.mode === 'result' && candidate.completed !== true) return null;
+  if (candidate.mode !== 'result' && candidate.completed === true) return null;
+  const performanceEvidenceCompleted = candidate.performanceEvidenceCompleted === true;
+  const passed = candidate.mode === 'result' && candidate.passed === true
+    && meetsMasteryThreshold(correct, quiz.length)
+    && (!assessment.performanceEvidenceRequired || performanceEvidenceCompleted);
+  const startedAt = Number(candidate.startedAt);
+  return {
+    id,
+    assessmentVersion: assessment.version,
+    mode: candidate.mode,
+    pausedMode,
+    questionIndex,
+    selected,
+    checked,
+    correct,
+    answers,
+    startedAt: Number.isFinite(startedAt) && startedAt > 0 ? startedAt : Date.now(),
+    completed: candidate.mode === 'result',
+    score: candidate.mode === 'result' ? scorePercent(correct, quiz.length) : undefined,
+    passed,
+    previouslyMastered: candidate.previouslyMastered === true,
+    performanceEvidenceCompleted,
+  };
+}
+
+function restoreLessonDraft(lesson) {
+  if (!lesson || !lessonAssessmentReady(lesson)) return null;
+  const snapshot = state.learningSessions?.lessons?.[lesson.id];
+  return restoreAssessmentSession(snapshot, lesson.assessment, lesson.quiz, lesson.id, 'lesson');
+}
+
+function restoreGateDraft() {
+  const gate = course?.a0TransitionCheck;
+  if (!gate || !assessmentReady(gate.assessment, gate.quiz, gate.performanceTasks)) return null;
+  return restoreAssessmentSession(state.learningSessions?.gate, gate.assessment, gate.quiz, 'A0-A1', 'gate');
+}
+
+function restoreLearningPosition() {
+  const sessions = normalizeLearningSessions(state.learningSessions);
+  state.learningSessions = sessions;
+  selectedLevel = course?.levels.some((level) => level.id === sessions.selectedLevel && isLevelUnlocked(level.id))
+    ? sessions.selectedLevel
+    : 'A0';
+  const active = sessions.active;
+  let activeRestored = false;
+  if (active?.type === 'lesson') {
+    const lesson = findLesson(active.id);
+    const session = restoreLessonDraft(lesson);
+    if (lesson && session && isLessonAccessible(lesson)) {
+      lessonSession = session;
+      activeRestored = true;
+      if (sessions.currentView === 'lesson') {
+        currentView = 'lesson';
+        selectedLevel = lesson.level;
+      }
+    }
+  } else if (active?.type === 'gate') {
+    const session = restoreGateDraft();
+    if (session && isLevelMastered('A0')) {
+      gateSession = session;
+      activeRestored = true;
+      if (sessions.currentView === 'a0-gate') {
+        currentView = 'a0-gate';
+        selectedLevel = 'A0';
+      }
+    }
+  }
+  if (sessions.currentView === 'tracks' || sessions.currentView === 'dashboard' || sessions.currentView === 'settings') {
+    currentView = sessions.currentView;
+  } else if (sessions.currentView === 'level' && isLevelUnlocked(selectedLevel)) {
+    currentView = 'level';
+  } else if (!activeRestored || !['lesson', 'a0-gate'].includes(sessions.currentView)) {
+    currentView = 'dashboard';
+  }
+  if (['lesson', 'a0-gate'].includes(sessions.currentView) && !activeRestored) currentView = 'dashboard';
+}
+
 function navButton(view, label, iconName, active, count = null) {
   return `<button type="button" class="nav-button ${active ? 'active' : ''}" data-action="navigate" data-view="${view}">
     ${icon(iconName, 19)}<span>${label}</span>${count !== null ? `<span class="nav-count">${count}</span>` : ''}
@@ -665,20 +823,22 @@ function renderA0TransitionCheck() {
   const ready = assessmentReady(check.assessment, check.quiz, check.performanceTasks);
   const mastered = isA0TransitionMastered();
   const done = isLevelMastered('A0');
+  const gateDraft = gateSession?.assessmentVersion === check.assessment?.version ? gateSession : restoreGateDraft();
+  const gateInProgress = Boolean(gateDraft && !gateDraft.completed);
   const status = mastered
     ? 'اجتزت بوابة الانتقال إلى A1.'
     : !done
       ? 'تظهر بوابة الإتقان بعد إتمام الدروس الخمسة.'
       : ready
-        ? 'اكتمل إعداد التقييم؛ أجب عن أسئلته لتحقيق معيار الانتقال.'
+        ? gateInProgress ? 'لديك تقييم محفوظ؛ يمكنك متابعة الإجابة من موضعك.' : 'اكتمل إعداد التقييم؛ أجب عن أسئلته لتحقيق معيار الانتقال.'
         : 'اختبار الإتقان الشامل قيد الإنتاج. ورقة الأسئلة القديمة لا تُحتسب ولا تفتح A1.';
   const gateAction = done && ready && !mastered
-    ? `<button type="button" class="button-primary" data-action="begin-a0-gate">ابدأ تقييم الانتقال ${icon('arrowLeft', 15)}</button>`
+    ? `<button type="button" class="button-primary" data-action="begin-a0-gate">${gateInProgress ? 'تابع تقييم الانتقال' : 'ابدأ تقييم الانتقال'} ${icon('arrowLeft', 15)}</button>`
     : '';
   return `<section class="transition-check-panel"><div class="transition-check-heading"><div><small>A0 · بوابة الإتقان إلى A1</small><h2>التقييم الختامي بعد A0</h2><p>شرط الانتقال: إتقان الدروس الخمسة ثم تحقيق 80% على الأقل في تقييم يغطي الأهداف والمهارات المطلوبة. النجاح هنا لا يعني شهادة أو اعتمادًا رسميًا.</p></div><span>${ready ? escapeHTML(check.durationLabel) : 'قيد الإنتاج'}</span></div><p class="progression-note">${status} ورقة الأسئلة القديمة تبقى في ملفات المحتوى للمراجعة التحريرية ولا تُحتسب بوابةً للانتقال.</p>${gateAction}</section>${done ? renderAudioAssets('a0-a1-gate') : ''}`;
 }
 
-function startA0GateQuiz() {
+function startA0GateQuiz(retry = false) {
   stopAudioPlayback();
   const gate = course?.a0TransitionCheck;
   if (!isLevelMastered('A0')) {
@@ -689,8 +849,15 @@ function startA0GateQuiz() {
     showToast('بوابة الإتقان لم تكتمل مراجعتها بعد؛ لن يُسجّل اجتياز يدوي.');
     return;
   }
-  gateSession = { mode: 'quiz', questionIndex: 0, selected: null, checked: false, correct: 0, answers: [], completed: false, startedAt: Date.now() };
+  const inMemorySession = !retry && gateSession && !gateSession.completed
+    ? restoreAssessmentSession(gateSession, gate.assessment, gate.quiz, 'A0-A1', 'gate')
+    : null;
+  const savedSession = !retry ? (inMemorySession || restoreGateDraft()) : null;
+  gateSession = savedSession && !savedSession.completed
+    ? savedSession
+    : { id: 'A0-A1', assessmentVersion: gate.assessment.version, mode: 'quiz', questionIndex: 0, selected: null, checked: false, correct: 0, answers: [], completed: false, startedAt: Date.now() };
   currentView = 'a0-gate';
+  saveState();
   render();
 }
 
@@ -738,6 +905,7 @@ function checkA0GateAnswer() {
   gateSession.checked = true;
   gateSession.answers.push({ selected: gateSession.selected, correct });
   if (correct) gateSession.correct += 1;
+  saveState();
   render();
 }
 
@@ -751,6 +919,7 @@ function nextA0GateQuestion() {
   gateSession.questionIndex += 1;
   gateSession.selected = null;
   gateSession.checked = false;
+  saveState();
   render();
 }
 
@@ -761,6 +930,7 @@ function finishA0Gate(gate) {
     const evidenceComplete = allPerformanceTasksComplete(gate.performanceTasks, 'gate:A0-A1', gate.assessment.version);
     if (!evidenceComplete) {
       gateSession.mode = 'performance';
+      saveState();
       render();
       return;
     }
@@ -820,9 +990,13 @@ function openLesson(id) {
     showToast('لا يمكن تجاوز الدرس الحالي؛ أتمم المتطلبات السابقة وأثبت إتقانها أولًا.');
     return;
   }
-  lessonSession = { id, mode: 'overview', questionIndex: 0, selected: null, checked: false, correct: 0, answers: [], startedAt: Date.now(), completed: false };
+  const savedSession = restoreLessonDraft(lesson);
+  lessonSession = savedSession && !savedSession.completed
+    ? savedSession
+    : { id, assessmentVersion: lesson.assessment?.version || '', mode: 'overview', pausedMode: null, questionIndex: 0, selected: null, checked: false, correct: 0, answers: [], startedAt: Date.now(), completed: false };
   currentView = 'lesson';
   mobileMenuOpen = false;
+  saveState();
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -864,6 +1038,11 @@ function renderLessonOverview(lesson) {
   const mastered = isLessonMastered(lesson);
   const assessmentIsReady = lessonAssessmentReady(lesson);
   const duration = lesson.durationLabel || `${lesson.minutes} دقيقة`;
+  const quizActionLabel = lessonSession.pausedMode === 'performance'
+    ? 'تابع مهام الأداء'
+    : lessonSession.pausedMode === 'quiz'
+      ? 'استأنف التقييم'
+      : mastered ? 'أعد تقييم الإتقان' : 'ابدأ تقييم الإتقان';
   const vocabularyDrawer = words.length ? `<section class="lesson-section lesson-vocab-section"><details class="vocab-review-drawer"><summary><span><small>WORTSCHATZ · بطاقات المراجعة</small><strong>تدرّب على مفردات الدرس</strong></span><span class="count">${words.length} كلمة/عبارة</span></summary><div class="vocab-grid">${words.map((word) => `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr">${escapeHTML(word.word)}</div><div class="word-controls"><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="ltr">${escapeHTML(word.example)}</div>` : ''}</article>`).join('')}</div></details></section>` : '';
   return `<button class="lesson-back" type="button" data-action="back-to-level">${icon('arrow', 15)} عودة إلى ${lesson.level}</button>
     <section class="lesson-hero"><div><div class="lesson-level-tag"><span class="level-token theme-${level.theme}">${level.id}</span><span>محتوى الدرس الكامل · ${escapeHTML(duration)}</span></div><h1>${escapeHTML(lesson.title)}</h1><p>${escapeHTML(lesson.objective)}</p></div><div class="lesson-time">${icon('clock', 16)} ${escapeHTML(duration)}</div></section>
@@ -872,7 +1051,7 @@ function renderLessonOverview(lesson) {
         ${renderAudioAssets(lesson.id)}
         <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small>LEKTION · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">مفتاح الإجابات قابل للفتح</span></div><article class="lesson-document" dir="rtl">${lesson.contentHtml || '<p>محتوى الدرس غير متاح. أعد بناء بيانات المنهج.</p>'}</article></section>
         ${vocabularyDrawer}
-        <section class="lesson-finish-panel"><div><strong>${mastered ? 'هذا الدرس متقن' : assessmentIsReady ? 'حان وقت التحقق من الإتقان' : 'تقييم هذا الدرس قيد الإعداد'}</strong><span>${mastered ? `أفضل نتيجة معتمدة: ${state.completedLessons[lesson.id].score}%` : assessmentIsReady ? 'يلزم 80% على الأقل وإثبات أهداف الدرس لفتح الخطوة التالية.' : 'يمكنك دراسة المحتوى كاملًا الآن؛ لكن القراءة وحدها لا تسجّل الإتقان ولا تفتح الدرس التالي.'}</span></div>${assessmentIsReady ? `<button type="button" class="button-primary" data-action="begin-quiz">${mastered ? 'أعد تقييم الإتقان' : 'ابدأ تقييم الإتقان'} ${icon('check', 16)}</button>` : '<span class="plan-chip">غير متاح بعد</span>'}</section>
+        <section class="lesson-finish-panel"><div><strong>${mastered ? 'هذا الدرس متقن' : assessmentIsReady ? 'حان وقت التحقق من الإتقان' : 'تقييم هذا الدرس قيد الإعداد'}</strong><span>${mastered ? `أفضل نتيجة معتمدة: ${state.completedLessons[lesson.id].score}%` : assessmentIsReady ? 'يلزم 80% على الأقل وإثبات أهداف الدرس لفتح الخطوة التالية.' : 'يمكنك دراسة المحتوى كاملًا الآن؛ لكن القراءة وحدها لا تسجّل الإتقان ولا تفتح الدرس التالي.'}</span></div>${assessmentIsReady ? `<button type="button" class="button-primary" data-action="begin-quiz">${quizActionLabel} ${icon('check', 16)}</button>` : '<span class="plan-chip">غير متاح بعد</span>'}</section>
       </div>
       <aside class="lesson-aside">
         <div class="study-aside-card"><div class="study-objective">${icon('target', 18)}</div><h3>هدف هذا الدرس</h3><p>${escapeHTML(lesson.objective)}</p></div>
@@ -945,12 +1124,24 @@ function beginQuiz() {
     showToast('تقييم هذا الدرس لم يكتمل أو لم يُراجع بعد؛ لم تُسجّل الإتقان يدويًا.');
     return;
   }
-  lessonSession.mode = 'quiz';
-  lessonSession.questionIndex = 0;
-  lessonSession.selected = null;
-  lessonSession.checked = false;
-  lessonSession.correct = 0;
-  lessonSession.answers = [];
+  if (lessonSession.pausedMode === 'quiz' || lessonSession.pausedMode === 'performance') {
+    lessonSession.mode = lessonSession.pausedMode;
+    lessonSession.pausedMode = null;
+  } else {
+    lessonSession.assessmentVersion = lesson.assessment.version;
+    lessonSession.mode = 'quiz';
+    lessonSession.pausedMode = null;
+    lessonSession.questionIndex = 0;
+    lessonSession.selected = null;
+    lessonSession.checked = false;
+    lessonSession.correct = 0;
+    lessonSession.answers = [];
+    lessonSession.completed = false;
+    lessonSession.passed = false;
+    lessonSession.score = undefined;
+    lessonSession.performanceEvidenceCompleted = false;
+  }
+  saveState();
   render();
 }
 
@@ -963,6 +1154,7 @@ function checkLessonAnswer() {
   const right = lessonSession.selected === q.answerIndex;
   lessonSession.answers.push({ selected: lessonSession.selected, correct: right });
   if (right) lessonSession.correct += 1;
+  saveState();
   render();
 }
 
@@ -977,6 +1169,7 @@ function nextLessonQuestion() {
   lessonSession.questionIndex += 1;
   lessonSession.selected = null;
   lessonSession.checked = false;
+  saveState();
   render();
 }
 
@@ -988,6 +1181,7 @@ function finishLesson(lesson) {
     const evidenceComplete = allPerformanceTasksComplete(lesson.performanceTasks, scopeKey, lesson.assessment.version);
     if (!evidenceComplete) {
       lessonSession.mode = 'performance';
+      saveState();
       render();
       return;
     }
@@ -1014,10 +1208,10 @@ function finishLesson(lesson) {
   lessonSession.performanceEvidenceCompleted = performanceEvidenceCompleted;
   lessonSession.passed = passed;
   lessonSession.previouslyMastered = previouslyMastered;
-  state.xp = (Number(state.xp) || 0) + (passed ? Math.max(8, Math.round(8 + score / 10)) : 2);
-  recordStudy(lesson.minutes || 1);
   lessonSession.completed = true;
   lessonSession.mode = 'result';
+  state.xp = (Number(state.xp) || 0) + (passed ? Math.max(8, Math.round(8 + score / 10)) : 2);
+  recordStudy(lesson.minutes || 1);
   saveState();
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1154,6 +1348,7 @@ function handleClick(event) {
       currentView = button.dataset.view || 'dashboard';
       if (currentView === 'review') startReviewSession();
       mobileMenuOpen = false;
+      saveState();
       render();
       window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
@@ -1175,14 +1370,15 @@ function handleClick(event) {
       }
       currentView = 'level';
       mobileMenuOpen = false;
+      saveState();
       render();
       window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'begin-quiz': beginQuiz(); break;
     case 'begin-a0-gate': startA0GateQuiz(); break;
-    case 'retry-a0-gate': startA0GateQuiz(); break;
+    case 'retry-a0-gate': startA0GateQuiz(true); break;
     case 'select-gate-answer':
-      if (gateSession && gateSession.mode === 'quiz' && !gateSession.checked) { gateSession.selected = Number(button.dataset.index); render(); }
+      if (gateSession && gateSession.mode === 'quiz' && !gateSession.checked) { gateSession.selected = Number(button.dataset.index); saveState(); render(); }
       break;
     case 'check-gate-answer': checkA0GateAnswer(); break;
     case 'next-gate-question': nextA0GateQuestion(); break;
@@ -1193,15 +1389,20 @@ function handleClick(event) {
       stopAudioPlayback();
       selectedLevel = 'A0';
       currentView = 'level';
+      saveState();
       render();
       break;
     case 'select-lesson-answer':
-      if (lessonSession && !lessonSession.checked) { lessonSession.selected = Number(button.dataset.index); render(); }
+      if (lessonSession && !lessonSession.checked) { lessonSession.selected = Number(button.dataset.index); saveState(); render(); }
       break;
     case 'check-lesson-answer': checkLessonAnswer(); break;
     case 'next-lesson-question': nextLessonQuestion(); break;
     case 'quiz-exit':
-      if (lessonSession) lessonSession.mode = 'overview';
+      if (lessonSession && ['quiz', 'performance'].includes(lessonSession.mode)) {
+        lessonSession.pausedMode = lessonSession.mode;
+        lessonSession.mode = 'overview';
+      }
+      saveState();
       render();
       break;
     case 'retake-lesson':
@@ -1211,6 +1412,7 @@ function handleClick(event) {
       stopAudioPlayback();
       if (lessonSession) selectedLevel = findLesson(lessonSession.id)?.level || 'A0';
       currentView = 'level';
+      saveState();
       render();
       break;
     case 'flip-card':
@@ -1259,8 +1461,8 @@ function handleSubmit(event) {
   state.profile.dailyGoal = Number(form.get('dailyGoal')) || 15;
   state.profile.focus = String(form.get('focus') || 'المحادثة');
   state.profile.startLevel = 'A0';
-  saveState();
   currentView = 'dashboard';
+  saveState();
   render();
   showToast('حُفظت إعداداتك على هذا الجهاز.');
 }
@@ -1301,10 +1503,15 @@ function handleChange(event) {
         wordReviews: parsed.wordReviews || {},
         audioTranscriptUnlocks: parsed.audioTranscriptUnlocks && typeof parsed.audioTranscriptUnlocks === 'object' ? parsed.audioTranscriptUnlocks : {},
         performanceEvidence: parsed.performanceEvidence && typeof parsed.performanceEvidence === 'object' ? parsed.performanceEvidence : {},
+        learningSessions: normalizeLearningSessions(parsed.learningSessions),
         studyDays: Array.isArray(parsed.studyDays) ? parsed.studyDays : []
       };
-      saveState();
+      lessonSession = null;
+      gateSession = null;
       currentView = 'dashboard';
+      selectedLevel = 'A0';
+      restoreLearningPosition();
+      saveState();
       render();
       showToast('تم استيراد النسخة الاحتياطية.');
     } catch {
@@ -1315,6 +1522,7 @@ function handleChange(event) {
 }
 
 function exportProgress() {
+  saveState();
   const data = { ...state, exportedAt: new Date().toISOString(), app: 'deutsch-pfad' };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -1332,11 +1540,12 @@ function resetProgress() {
   const confirmed = window.confirm('هل تريد مسح كل التقدم والإعدادات المحفوظة على هذا الجهاز؟');
   if (!confirmed) return;
   state = freshState();
-  saveState();
   currentView = 'dashboard';
+  selectedLevel = 'A0';
   lessonSession = null;
   gateSession = null;
   reviewSession = null;
+  saveState();
   render();
   showToast('تم مسح التقدم المحلي.');
 }
@@ -1373,6 +1582,7 @@ async function startApp() {
     const response = await fetch('./data/course.json');
     if (!response.ok) throw new Error('course data unavailable');
     course = await response.json();
+    restoreLearningPosition();
     render();
     if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1')) {
       navigator.serviceWorker.register('./service-worker.js').catch(() => {});
