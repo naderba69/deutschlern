@@ -33,8 +33,9 @@
 - **Commit التسليم الأول:** `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` — `docs: hand off actual study time`؛ دُفع مع commit التطبيق.
 - **Commit نتائج سابق:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`.
 - **Commit متابعة اختبار التركيز:** `2321554b10ce969e642ddf76f4ee8e72a7e65663` — `test: cover focus recovery in study timer`؛ دُفع إلى الفرع الثابت. نجحت اختبارات المشروع المحلية، كما نجح Vercel وVercel Preview Comments على هذا الرأس.
-- **Commit تسليم توثيقي لاحق:** `e9ff9809dfc42fe7e4a81240953bdeeb97e9e15c` — `docs: record focus timer validation checks`؛ لم يغيّر التطبيق أو الاختبارات. PR #1 ما زالت `OPEN` وغير مدمجة.
-- **نتيجة Vercel على HEAD `e9ff9809dfc42fe7e4a81240953bdeeb97e9e15c`:** فشل النشر بسبب حد النشر المجاني `Deployment rate limited — retry in 24 hours`؛ لا يوجد نشر جديد لهذا الرأس. هذا قيد خدمة خارجي وليس فشل اختبار تطبيق. أعد الفحص بعد تجدد الحصة.
+- **Commit تسليم توثيقي لاحق:** `e9ff9809dfc42fe7e4a81240953bdeeb97e9e15c` — `docs: record focus timer validation checks`؛ لم يغيّر التطبيق أو الاختبارات.
+- **Commit تسجيل حد النشر:** `1c8e76f816b18ee365fdee42a0c734d78b253deb` — `docs: note Vercel deployment quota limit`؛ توثيق فقط. كان HEAD والبعيد متطابقين عليه بعد الدفع، وPR #1 ما زالت `OPEN` وغير مدمجة.
+- **نتيجة Vercel على HEAD `1c8e76f816b18ee365fdee42a0c734d78b253deb`:** فشل النشر بسبب حد النشر المجاني `Deployment rate limited — retry in 24 hours` (2026-10-06 21:20 UTC)؛ لا يوجد نشر جديد لهذا الرأس. هذا قيد خدمة خارجي وليس فشل اختبار تطبيق. أعد الفحص بعد تجدد الحصة.
 - **آخر معاينة Vercel جاهزة:** commit الاختبار `2321554` عند `https://deutschlern-git-arena-01a1036f-6a6994-balinader-2671s-projects.vercel.app`؛ فتح الرابط مباشرة أعاد بوابة تسجيل الدخول، لذا لم أجرِ عليه فحصًا بصريًا.
 
 **المتبقي والخطوة التالية:** لا تتوفر أداة متصفح آلي في الحاوية؛ المعاينة المحلية على المنفذ 8000 جاهزة لفحص المستخدم. اختبر المؤقت على سطح المكتب والهاتف، خصوصًا الإخفاء/العودة وفقد التركيز والخمول والاستئناف وإعادة التحميل. أعد فحص Vercel بعد انقضاء مهلة 24 ساعة/تجدد الحصة؛ لا تدمج PR #1. بعد ذلك تابع مراجعة المحتوى والتطبيق والعمل دون اتصال. لا تنتج أو تعدّل صوتًا؛ مرحلة الصوت بعد المحتوى والتقييم والتطبيق، وتظل أصول B1.9 للمعاينة فقط.
