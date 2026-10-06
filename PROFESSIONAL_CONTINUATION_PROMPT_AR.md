@@ -7,7 +7,8 @@
 - **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، ودُفع إلى `origin/arena/01a1036f-deutschlern`.
 - **حالة PR #1 بعد دفع الإنتاج:** `OPEN` وغير مدمجة على الرأس `9223083a0b0ed96622d5da6769b88b7f8ade7df3`. نجح فحصا Vercel وVercel Preview Comments في `gh pr checks 1 --watch --interval 5`. لا تدمجها؛ أعد الفحص بعد دفع تحديث ملفي التسليم.
 - **Commit تحديث التسليم:** `dc6c9ad39765035b95c7fa9bd7f587f7626919cb` — `docs: finalize B2.12 delivery handoff`، دُفع على الفرع الثابت بعد commit الإنتاج.
-- **حالة PR #1 بعد تحديث التسليم:** `OPEN` وغير مدمجة عند الرأس `dc6c9ad39765035b95c7fa9bd7f587f7626919cb`. نجح Vercel وVercel Preview Comments في `gh pr checks 1 --watch --interval 5`. أعد التحقق بعد أي دفع أحدث.
+- **Commit تسجيل نتائج PR:** `d836f0ffe935a6f2e423130a16285483ac08b514` — `docs: record final B2.12 PR checks`، دُفع بعد تحديث التسليم.
+- **حالة PR #1 بعد آخر دفع:** `OPEN` وغير مدمجة عند الرأس `d836f0ffe935a6f2e423130a16285483ac08b514`. نجح Vercel وVercel Preview Comments في `gh pr checks 1 --watch --interval 5`. أعد التحقق بعد أي دفع أحدث.
 
 ## تعليمات الاستئناف
 
@@ -47,8 +48,8 @@
 | `node tools/test_progression.cjs` | نجح؛ أكد البدء من A0 والتتابع وعتبة 80%، وقفل B2.12 قبل إتقان B2.11 وفتحه بعده. |
 | التدقيق المستقل للكتالوج والتقييم | نجح؛ 1077 معرفًا فريدًا (428 T + 540 Q + 109 P)، وروابط Q/P لـB2.12 مطابقة، بلا اعتماد على صوت. |
 | `git diff --check` و`git diff --cached --check` | نجحا قبل commit؛ كما نجح `git diff HEAD^ HEAD --check` بعد الإنشاء. |
-| Git بعد دفع تحديث التسليم | الفرع `arena/01a1036f-deutschlern`؛ HEAD والرأس البعيد طابقا `dc6c9ad39765035b95c7fa9bd7f587f7626919cb`، وكانت الشجرة نظيفة. |
-| PR #1 على رأس تحديث التسليم | `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments ناجحان وفق `gh pr checks 1 --watch --interval 5`. أعد الفحص بعد أي دفع أحدث. |
+| Git بعد آخر تحديث تسليم | الفرع `arena/01a1036f-deutschlern`؛ HEAD والرأس البعيد طابقا `d836f0ffe935a6f2e423130a16285483ac08b514`، وكانت الشجرة نظيفة. |
+| PR #1 على الرأس `d836f0f` | `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments ناجحان وفق `gh pr checks 1 --watch --interval 5`. أعد الفحص بعد أي دفع أحدث. |
 
 حالة التسليم: دُفع commit الإنتاج `9223083a0b0ed96622d5da6769b88b7f8ade7df3` وcommit التوثيق `dc6c9ad39765035b95c7fa9bd7f587f7626919cb` إلى `arena/01a1036f-deutschlern`. عند الاستئناف تحقّق من `git status` وHEAD والرأس البعيد؛ PR #1 بقيت مفتوحة وغير مدمجة ونجح فحصاها عند `dc6c9ad`. أعد الفحوص لأي تعديل جديد، ولا تدمج PR #1. لا تصف المسار كله بأنه مكتمل؛ فالمراجعة التعليمية واللغوية والتطبيق الأوسع ما زالت قائمة.
 
