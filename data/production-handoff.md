@@ -4,7 +4,7 @@
 **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ فرعًا آخر.
 **Commit إنتاج B2.9:** `d2847eb5bac58b60ca66e2d5e492e022c10c6174` — `feat: produce B2.9 assessment`.
-**الرأس البعيد قبل هذه الدفعة:** `6687baa26b8062f2bd4d32d16c82564984f27dd5`. دُفع Commit الإنتاج وملفا التسليم المحدّثان إلى الفرع الثابت. عند آخر فحص Git بعد الدفع كان `HEAD` و`origin/arena/01a1036f-deutschlern` متطابقين عند `88e1438a2c0c64a0db5c79cd6351964de9434727`، وكانت شجرة العمل نظيفة. Commit التوثيق الأول لهذه الدفعة هو `88e1438a2c0c64a0db5c79cd6351964de9434727` (`docs: update B2.9 production handoff`).
+**الرأس البعيد قبل هذه الدفعة:** `6687baa26b8062f2bd4d32d16c82564984f27dd5`. دُفع Commit الإنتاج وملفا التسليم المحدّثان إلى الفرع الثابت. بعد دفع Commit التوثيق الأول `88e1438a2c0c64a0db5c79cd6351964de9434727` ثم متابعة الحالة `20dbdfe07b6c3d23cb5481ee0afe5ddf8e073afe`، طابق `HEAD` و`origin/arena/01a1036f-deutschlern` الرأس `20dbdfe07b6c3d23cb5481ee0afe5ddf8e073afe` وكانت الشجرة نظيفة. Commit الإنتاج هو `d2847eb5bac58b60ca66e2d5e492e022c10c6174`.
 
 ## تسوية اختلاف Git قبل الإنتاج
 
@@ -62,7 +62,8 @@
 
 - قبل دفعة B2.9 كانت PR #1 مفتوحة وغير مدمجة عند الرأس `6687baa26b8062f2bd4d32d16c82564984f27dd5`، وفشل Vercel الخارجي وقتها بسبب `upgradeToPro=build-rate-limit`؛ لا يُنسب ذلك إلى فشل البناء المحلي.
 - بعد دفع Commit التوثيق `88e1438a2c0c64a0db5c79cd6351964de9434727`، أظهر `gh pr view 1` أن PR #1 ما زالت `OPEN` وغير مدمجة (`mergedAt: null`)، ورأسها يطابق `88e1438a2c0c64a0db5c79cd6351964de9434727`. أظهر `gh pr checks 1`: فحص **Vercel pending**، و**Vercel Preview Comments pass**؛ لذا خرج الأمر 1 بسبب الفحص المعلّق لا بسبب فشل. أعد الفحص إذا اكتمل أو تغيّر رأس PR.
-- Commitا الإنتاج والتوثيق `d2847eb5bac58b60ca66e2d5e492e022c10c6174` و`88e1438a2c0c64a0db5c79cd6351964de9434727` دُفعا إلى `arena/01a1036f-deutschlern` فقط. لا تدمج PR #1.
+- Commitا الإنتاج والتوثيق `d2847eb5bac58b60ca66e2d5e492e022c10c6174` و`88e1438a2c0c64a0db5c79cd6351964de9434727` دُفعا إلى `arena/01a1036f-deutschlern` فقط.
+- أحدث فحص بعد دفع `20dbdfe07b6c3d23cb5481ee0afe5ddf8e073afe`: PR #1 مفتوحة وغير مدمجة، ورأسها يطابق هذا الـcommit؛ Vercel pending وVercel Preview Comments pass. ستغيّر متابعة التسليم الرأس مرة أخرى؛ أعد فحص `gh pr view 1` و`gh pr checks 1` بعد دفع تحديث التسليم، ولا تدمج PR #1.
 
 ## ما بقي والخطوة التالية
 
