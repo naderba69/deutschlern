@@ -77,9 +77,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
   assert.equal(vm.runInContext("course.audioAssets.length", context), 142, "all generated audio assets through B1.9 must be carried into the course bundle");
   assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 312, "the audio manifest must contain all three hundred twelve generated clips");
-  assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 52, "the course bundle must carry fifty-two ready lesson assessments through B2.11");
-  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 520, "the course bundle must carry all five hundred twenty scored lesson questions");
-  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 104, "the course bundle must carry all one hundred four lesson performance tasks");
+  assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 53, "the course bundle must carry all fifty-three ready lesson assessments through B2.12");
+  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 530, "the course bundle must carry all five hundred thirty scored lesson questions");
+  assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 106, "the course bundle must carry all one hundred six lesson performance tasks");
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -1383,8 +1383,42 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2EnvironmentRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[10].performanceTasks, 'lesson:b2-11-humans-nature-environment-nominalization', 'b2-11-v1')", context);
   assert.match(b2EnvironmentRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2EnvironmentRubricHtml, /صيغتين اسميتين/);
-  assert.equal(b2Lessons[11].assessment?.status, "not_ready", "B2.12 must remain without a ready assessment");
-  assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[11])", context), false, "B2.12 must remain not ready");
+
+  const b2MediaSource = fs.readFileSync(path.join(rootDir, "content/B2/lesson-12-leisure-media-reported-speech.md"), "utf8");
+  const b2MediaAssessment = b2Lessons[11];
+  assert.equal(b2MediaAssessment.id, "b2-12-leisure-media-reported-speech", "B2.12 must stay in its source order");
+  assert.equal(b2MediaAssessment.assessment?.status, "ready", "B2.12 must have a ready local assessment");
+  assert.equal(b2MediaAssessment.assessment?.version, "b2-12-v1", "B2.12 must use its stable assessment version");
+  assert.equal(b2MediaAssessment.assessment?.minimumScore, 80, "B2.12 must retain the 80 percent mastery threshold");
+  assert.equal(b2MediaAssessment.assessment?.minimumItems, 10, "B2.12 must require ten scored questions");
+  assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[11])", context), true, "B2.12 must pass the app's full local assessment-readiness check");
+  assert.equal(b2MediaAssessment.quiz?.length, 10, "B2.12 must include exactly ten scored questions");
+  assert.deepEqual(b2MediaAssessment.quiz.map((question) => question.id), Array.from({ length: 10 }, (_, i) => `DL-B2-12-Q${String(i + 1).padStart(2, "0")}`), "B2.12 questions must retain their stable Q01–Q10 IDs");
+  const b2MediaQuestionSources = new Set(b2MediaAssessment.quiz.flatMap((question) => question.sourceTaskIds));
+  for (let task = 1; task <= 7; task += 1) assert.ok(b2MediaQuestionSources.has(`DL-B2-12-T0${task}`), `B2.12 quiz must cover source task T0${task}`);
+  assert.ok(b2MediaAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-12-G01")), "all B2.12 questions must map to the lesson objective");
+  assert.deepEqual([0, 1, 2].map((position) => b2MediaAssessment.quiz.filter((question) => question.answerIndex === position).length), [3, 4, 3], "B2.12 correct answers must be distributed 3/4/3 across the three options");
+  assert.equal(b2MediaAssessment.performanceTasks?.length, 2, "B2.12 must include two practical self-check tasks");
+  assert.ok(b2MediaAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.12 tasks must offer visible written/oral local self-checks without recording");
+  assert.ok(b2MediaAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /ثلاثة أقوال/.test(task.prompt) && /شفهيًا/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 220), "B2.12 tasks must state the output, three attributed views, oral choice, and solo read-aloud option");
+  assert.deepEqual(b2MediaAssessment.performanceTasks.find((task) => task.id === "DL-B2-12-P01").sourceTaskIds, ["DL-B2-12-T08"], "B2.12 P01 must link directly to T08");
+  assert.deepEqual(b2MediaAssessment.performanceTasks.find((task) => task.id === "DL-B2-12-P02").sourceTaskIds, ["DL-B2-12-T05", "DL-B2-12-T06", "DL-B2-12-T08"], "B2.12 P02 must link the source reading, written listening transcript, and T08");
+  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b2MediaAssessment.id), false, "B2.12 assessment must remain independent of generated audio");
+  assert.match(b2MediaSource, /Wie finden Sie die neue Dokumentation/);
+  assert.match(b2MediaSource, /Ich finde die Bilder eindrucksvoll, aber die Erklärung ist manchmal zu kurz/);
+  assert.doesNotMatch(b2MediaSource, /Die Bilder seien eindrucksvoll/);
+  assert.match(b2MediaSource, /Die Gäste sagen, sie würden den Podcast regelmäßig hören/);
+  assert.match(b2MediaSource, /Andere sagen, ihnen seien die Folgen zu lang/);
+  assert.match(b2MediaSource, /Konjunktiv II.*Präteritum/);
+  assert.match(b2MediaSource, /اكتب ملخصًا من خمس إلى ست جمل ألمانية/);
+  assert.match(b2MediaSource, /أو حضّره وقدّمه شفهيًا/);
+  assert.match(b2MediaSource, /Meiner Meinung nach/);
+  assert.match(b2MediaSource, /اقرأه بصوت مسموع لنفسك/);
+  assert.match(b2MediaSource, /لا يلزم تسجيله أو إرسال صوت/);
+  const b2MediaRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[11].performanceTasks, 'lesson:b2-12-leisure-media-reported-speech', 'b2-12-v1')", context);
+  assert.match(b2MediaRubricHtml, /معايير التحقق المحلي/);
+  assert.match(b2MediaRubricHtml, /ثلاثة أقوال/);
+
 
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1'))", context), true, "the first A1 lesson must open after the A0 gate");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons.find((lesson) => lesson.level === 'A1' && lesson.unit === 2))", context), false, "later A1 lessons must remain sequentially locked");
@@ -1635,22 +1669,18 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonMastered(getLessonsInLevel('B2')[9])", context), true, "synthetic valid B2.10 mastery should reach the readiness boundary");
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[10])", context), true, "B2.11 must open after B2.10 mastery because its assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[10].id, "B2.11 must be the next required step after mastering B2.10");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), false, "B2.12 must remain locked until B2.11 mastery");
   vm.runInContext(`
     state.completedLessons[${JSON.stringify("b2-11-humans-nature-environment-nominalization")}] = {
       score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
       assessmentVersion: getLessonsInLevel('B2')[10].assessment.version,
     };
-    for (const lesson of getLessonsInLevel('B2').slice(11)) {
-      state.completedLessons[lesson.id] = {
-        score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
-        assessmentVersion: lesson.assessment?.version || 'synthetic',
-      };
-    }
   `, context);
   assert.equal(vm.runInContext("isLessonMastered(getLessonsInLevel('B2')[10])", context), true, "synthetic valid B2.11 mastery should reach the readiness boundary");
-  assert.equal(vm.runInContext("getLessonsInLevel('B2').slice(11).every((lesson) => lesson.assessment?.status === 'not_ready' && !lessonAssessmentReady(lesson) && !isLessonAccessible(lesson))", context), true, "B2.12 must remain not ready and locked even with synthetic completion records");
+  assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), true, "B2.12 must open after B2.11 mastery because its assessment is ready");
+  assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[11].id, "B2.12 must be the next required step after mastering B2.11");
 
-  console.log("PASS: A0-only start, sequential locks through ready B2.11, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B1.9 (142 assets/312 clips; five awaiting voice approval), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators, pending-playback fallback, transcript availability, local B1.8–B2.11 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria, B2.2 Konjunktiv I/source-attribution criteria, B2.3 passive-with-modals criteria, B2.4 Partizip I/II adjective criteria, B2.5 cause/effect and Genitiv criteria, B2.6 academic Nomen-Verb-Verbindungen criteria, B2.7 prepositional-relative-clause criteria, B2.8 Vorgangspassiv/Zustandspassiv criteria, B2.9 wo(r)/da(r)-preposition criteria, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and not-ready/locked assessment for B2.12.");
+  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B1.9 (142 assets/312 clips; five awaiting voice approval), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria, B2.2 Konjunktiv I/source-attribution criteria, B2.3 passive-with-modals criteria, B2.4 Partizip I/II adjective criteria, B2.5 cause/effect and Genitiv criteria, B2.6 academic Nomen-Verb-Verbindungen criteria, B2.7 prepositional-relative-clause criteria, B2.8 Vorgangspassiv/Zustandspassiv criteria, B2.9 wo(r)/da(r)-preposition criteria, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

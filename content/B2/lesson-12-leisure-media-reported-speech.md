@@ -1,6 +1,6 @@
 # B2.12 — أوقات الفراغ والإعلام ونقل الكلام: Konjunktiv I وKonjunktiv II
 
-**المدة:** 45–50 دقيقة · **المهارات:** قراءة مراجعة إعلامية، استماع، قواعد، تمييز الرأي، كتابة  
+**المدة:** 45–50 دقيقة · **المهارات:** قراءة مراجعة إعلامية، استماع، قواعد، تمييز الرأي، كتابة وعرض شفهي<br>
 **الهدف:** أستطيع أن أنقل أقوالًا في الإعلام مع نسبتها إلى مصدرها، وأن أختار **Konjunktiv I** أو الصيغة البديلة عند الحاجة.
 
 ## 1) مفردات الإعلام وأوقات الفراغ
@@ -26,28 +26,28 @@
 
 ## 2) نقل الأقوال ونسبة الرأي إلى صاحبه
 
-عند نقل قول في خبر أو مراجعة، نذكر مصدره ونستخدم **Konjunktiv I** غالبًا. إذا تطابقت صيغة الجمع في Konjunktiv I مع المضارع، يمكن استعمال **Konjunktiv II** للتمييز.
+عند نقل قول في خبر أو مراجعة، نذكر مصدره ونستخدم **Konjunktiv I** غالبًا. إذا تطابقت صيغته مع المضارع، يمكن استعمال صيغة مميّزة من **Konjunktiv II**، مثل **sie verstünden**. لكن صيغة Konjunktiv II لبعض الأفعال الضعيفة، مثل **hörten**، تطابق الماضي البسيط **Präteritum** وقد تلتبس به؛ لتوضيح نقل الكلام يمكن استخدام **würden + Infinitiv**، مثل **sie würden den Podcast hören**. يبقى إسناد القول إلى مصدره ضروريًا، ولا تعني صيغة **würden** هنا افتراضًا شرطيًا.
 
 - اقتباس مباشر: **Die Moderatorin sagt: „Die Sendung beginnt heute später.“**  
   منقول: **Die Moderatorin sagt, die Sendung beginne heute später.** — تقول المقدّمة إن البرنامج سيبدأ اليوم في وقت متأخر.
 - اقتباس مباشر: **Die Gäste sagen: „Wir hören den Podcast regelmäßig.“**  
-  منقول بصيغة بديلة: **Die Gäste sagen, sie hörten den Podcast regelmäßig.** — يقول الضيوف إنهم يستمعون إلى البودكاست بانتظام. (صيغة الجمع **sie hören** تطابق المضارع، لذا استُخدم Konjunktiv II **hörten** للتمييز.)
+  منقول بصيغة بديلة واضحة: **Die Gäste sagen, sie würden den Podcast regelmäßig hören.** — يقول الضيوف إنهم يستمعون إلى البودكاست بانتظام. (صيغة **hörten** قد تلتبس بالماضي، لذا استُخدمت **würden + Infinitiv**.)
 - يمكن استعمال **dass**، وعندها يأتي الفعل في النهاية: **Der Kritiker meint, dass die Rezension zu kurz sei.**
 
 كلمات مثل **sagen, berichten, erklären, behaupten, einräumen** توضّح أن الكلام منسوب إلى شخص آخر؛ ولا يعني نقله أن الكاتب يوافق عليه. عند الإشارة إلى شخص نستخدم حرف الجر وضمير الشخص: **Mit wem sprach die Moderatorin? — Mit dem Regisseur.**
 
 ## 3) حوار أصلي في برنامج عن السينما
 
-**Moderatorin:** Wie fanden Sie die neue Dokumentation?  
-**Gast:** Die Bilder seien eindrucksvoll, aber die Erklärung sei manchmal zu kurz.  
+**Moderatorin:** Wie finden Sie die neue Dokumentation?<br>
+**Gast:** Ich finde die Bilder eindrucksvoll, aber die Erklärung ist manchmal zu kurz.<br>
 **Moderatorin:** Der Regisseur sagt, der Film wolle Fragen stellen und keine fertigen Antworten geben. Stimmen Sie dem zu?  
 **Gast:** Teilweise. Einige Zuschauer sagen, sie verstünden die Schlusssequenz nicht.  
 **Moderatorin:** Andere meinen, gerade das offene Ende mache den Film interessant.  
-**Gast:** Das könne sein. Über Kunst könne man unterschiedlich urteilen.
+**Gast:** Das kann sein. Über Kunst kann man unterschiedlich urteilen.
 
 ## 4) نص قراءة أصلي: مراجعة برنامج خيالي
 
-> Das fiktive Kulturmagazin „Freizeitblick“ berichtet über einen neuen Podcast zur Stadtgeschichte. Die Moderatorin erklärt, die Folgen seien für Menschen gedacht, die gern kurze Geschichten hörten. Ein Gast räumt ein, manche Themen seien umstritten; die Redaktion wolle unterschiedliche Perspektiven vorstellen. In den Kommentaren schreiben mehrere Hörerinnen, sie fänden die Interviews besonders anschaulich. Andere sagen, die Folgen dauerten ihnen zu lang. Laut der Rezension werde der Podcast regelmäßig ergänzt. Die Aussagen stammen aus einer erfundenen Sendung und aus fiktiven Kommentaren. Die Rezension stellt unterschiedliche Meinungen dar, ohne sie als einheitliche Bewertung des Publikums auszugeben.
+> Das fiktive Kulturmagazin „Freizeitblick“ berichtet über einen neuen Podcast zur Stadtgeschichte. Die Moderatorin erklärt, die Folgen seien für Menschen gedacht, die gern kurze Geschichten hören würden. Ein Gast räumt ein, manche Themen seien umstritten; die Redaktion wolle unterschiedliche Perspektiven vorstellen. In den Kommentaren schreiben mehrere Hörerinnen, sie fänden die Interviews besonders anschaulich. Andere sagen, ihnen seien die Folgen zu lang. Laut der Rezension werde der Podcast regelmäßig ergänzt. Die Aussagen stammen aus einer erfundenen Sendung und aus fiktiven Kommentaren. Die Rezension stellt unterschiedliche Meinungen dar, ohne sie als einheitliche Bewertung des Publikums auszugeben.
 
 ### أسئلة الفهم
 
@@ -83,7 +83,7 @@
 
 1. **Die Moderatorin sagt: „Die Folge ist kurz.“** → Die Moderatorin sagt, die Folge ______ kurz.
 2. **Der Gast sagt: „Ich habe das Buch gelesen.“** → Der Gast sagt, er ______ das Buch gelesen.
-3. **Die Hörer sagen: „Wir hören den Podcast.“** → Die Hörer sagen, sie ______ den Podcast. (استخدم Konjunktiv II للتمييز)
+3. **Die Hörer sagen: „Wir hören den Podcast.“** → Die Hörer sagen, sie ______ den Podcast regelmäßig hören. (تجنّب الالتباس مع الماضي)
 
 ### تمرين 3 — اختر صيغة النقل المناسبة
 
@@ -125,26 +125,26 @@
 
 ### تمرين 8 — لخّص مقابلة خيالية
 
-اكتب أربع أو خمس جمل عن مقابلة خيالية مع فنان أو كاتب. استخدم فعلين لنقل الكلام مثل **berichten / erklären / einräumen**، واستخدم Konjunktiv I مرةً وKonjunktiv II البديلة مرةً واحدةً على الأقل عند الحاجة. انسب كل رأي إلى صاحبه.
+اكتب ملخصًا من خمس إلى ست جمل ألمانية عن مقابلة خيالية مع فنان أو كاتب، أو حضّره وقدّمه شفهيًا. انسب ثلاثة أقوال أو آراء على الأقل إلى أصحابها، واستخدم فعلين مناسبين لنقل الكلام مثل **berichten / erklären / einräumen** وشكلين من **Konjunktiv I** على الأقل. إذا تطابقت صيغة **Konjunktiv I** مع المضارع، فاستخدم بديلًا يوضح النقل؛ فصيغة **hörten** قد تلتبس بالماضي، لذا يمكن استعمال **würden hören**. افصل رأيك الشخصي بوضوح بعبارة مثل **Meiner Meinung nach ...** بصيغة الخبر، ولا تنسبه إلى الآخرين. اجعل المقابلة والآراء خيالية ولا تعرضها كحقائق عن جمهور حقيقي. للمتعلم الفردي: اكتب الملخص واقرأه بصوت مسموع لنفسك؛ لا يلزم تسجيله أو إرسال صوت.
 
 ## 7) مفتاح الإجابات
 
-**أسئلة القراءة:** 1. Über einen neuen Podcast zur Stadtgeschichte. 2. Für Menschen, die gern kurze Geschichten hörten. 3. Dass manche Themen umstritten seien. 4. Die Interviews. 5. Dass die Folgen zu lang seien. 6. Nein, sie stellt verschiedene Meinungen dar.
+**أسئلة القراءة:** 1. Über einen neuen Podcast zur Stadtgeschichte. 2. Für Menschen, die gern kurze Geschichten hören würden. 3. Dass manche Themen umstritten seien. 4. Die Interviews. 5. Dass ihnen die Folgen zu lang seien. 6. Nein, sie stellt verschiedene Meinungen dar.
 
 **أسئلة الاستماع:** 1. Am frühen Morgen. 2. Von Spaziergängen am Meer. 3. Sie hätten das Ende überraschend gefunden. 4. Dass der Schluss Fragen offenlassen könne. 5. Verschiedene Deutungen.
 
 - **تمرين 1:** 1. sei، 2. arbeite، 3. habe، 4. beginne.
-- **تمرين 2:** 1. sei، 2. habe، 3. hörten.
+- **تمرين 2:** 1. sei، 2. habe، 3. würden.
 - **تمرين 3:** 1. sei، 2. verstünden، 3. beginne.
 - **تمرين 4:** 1. قول منسوب، 2. رأي الكاتب، 3. قول منسوب، 4. رأي الكاتب.
 - **تمرين 5:** 1. خطأ — المجلة والمادة خياليتان. 2. صحيح. 3. صحيح. 4. خطأ — بعضهم يقول إن الحلقات طويلة. 5. صحيح.
 - **تمرين 6:** Morgen؛ Meer؛ überraschend؛ Fragen؛ Deutungen.
 - **تمرين 7:** 1. erklärt، 2. behauptet، 3. räumt ein، 4. berichtet.
-- **تمرين 8:** إجابة مفتوحة؛ تحقّق من صيغة الفعل المنقول، ومن وضوح نسبة الرأي إلى صاحبه.
+- **تمرين 8:** إجابة مفتوحة؛ تحقّق من خمس إلى ست جمل، ونسبة ثلاثة أقوال أو آراء إلى أصحابها، واستخدام فعلين مناسبين للنقل وصيغتين من Konjunktiv I. عند تطابق Konjunktiv II مع Präteritum تجنّب الصيغة الملتبسة مثل **hörten** واستخدم بديلًا واضحًا مثل **würden hören**. افصل الرأي الشخصي بوضوح عن الكلام المنقول، وقدّم المقابلة على أنها خيالية. يمكن تقديم الملخص شفهيًا؛ وللمتعلم الفردي يكتبه ويقرأه بصوت مسموع دون تسجيل أو إرسال صوت.
 
 ## 8) بطاقات مراجعة
 
 - **Die Autorin sagt, der Roman sei von Spaziergängen am Meer inspiriert.** → تقول الكاتبة إن الرواية مستوحاة من نزهات على شاطئ البحر.
-- **Die Gäste sagen, sie hörten den Podcast.** → يقول الضيوف إنهم يستمعون إلى البودكاست.
+- **Die Gäste sagen, sie würden den Podcast hören.** → يقول الضيوف إنهم يستمعون إلى البودكاست؛ صيغة **würden + Infinitiv** تميّز الكلام المنقول من صيغة الماضي **hörten**.
 - **Die Rezension berichtet, …** → تذكر المراجعة أن …
 - **laut der Rezension** → بحسب المراجعة.

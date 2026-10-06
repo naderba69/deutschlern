@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-12-v1",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-12-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-12-G01 وتمارين المصدر T01–T07: مفردات الإعلام، وصيغ Konjunktiv I، والبديل الواضح عند التطابق، والفصل بين القول المنقول والرأي الشخصي، وفهم المراجعة ونص المقابلة المكتوب، واختيار أفعال نقل الكلام.",
+      "ترتبط P01 مباشرةً بـT08 وتطلب ملخصًا خياليًا من خمس إلى ست جمل، وثلاثة أقوال منسوبة، وصيغتي Konjunktiv I على الأقل، ورأيًا شخصيًا مستقلًا. وترتبط P02 بـT05/T06/T08 لدمج المراجعة والمقابلة دون تعميم آراء المصادر.",
+      "تتيح المهمتان الكتابة أو الأداء الشفهي، وللمتعلم الفردي بديل الكتابة والقراءة بصوت مسموع دون تسجيل أو إرسال صوت. لا تتطلب الإجابة MP3 أو خدمة خارجية، ولا يصحح التطبيق الكتابة المفتوحة أو النطق آليًا.",
+      "عولج في المصدر مثال الرأي الشخصي المباشر بصيغة الخبر، والتباس صيغة hörten مع Präteritum ببديل واضح مثل würden hören. يبقى المحتوى الإعلامي والآراء خيالية."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-12-Q01",
+      "sourceTaskIds": [
+        "DL-B2-12-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "مفردات الإعلام",
+        "die Aussage"
+      ],
+      "prompt": "أي كلمة ألمانية تعني «قولًا أو تصريحًا» في سياق الإعلام؟",
+      "options": [
+        "die Aussage",
+        "die Sendung",
+        "das Publikum"
+      ],
+      "answerIndex": 0,
+      "explanation": "**die Aussage** تعني قولًا أو تصريحًا. أما **die Sendung** فهي برنامج، و**das Publikum** هو الجمهور."
+    },
+    {
+      "id": "DL-B2-12-Q02",
+      "sourceTaskIds": [
+        "DL-B2-12-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "تحويل القول المباشر",
+        "Konjunktiv I"
+      ],
+      "prompt": "حوّل القول إلى كلام منقول: **Die Moderatorin sagt: „Die Sendung beginnt heute später.“**",
+      "options": [
+        "Die Moderatorin sagt, die Sendung beginnt heute später.",
+        "Die Moderatorin sagt, die Sendung beginne heute später.",
+        "Die Moderatorin sagt, die Sendung habe heute später begonnen."
+      ],
+      "answerIndex": 1,
+      "explanation": "تُنسب المعلومة إلى المقدّمة، وتأتي **beginne** بصيغة Konjunktiv I. لا يغيّر النقل زمن الحدث إلى ماضٍ."
+    },
+    {
+      "id": "DL-B2-12-Q03",
+      "sourceTaskIds": [
+        "DL-B2-12-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "البديل عند تطابق الصيغة",
+        "würden + Infinitiv"
+      ],
+      "prompt": "عند نقل **Die Gäste sagen: „Wir hören den Podcast regelmäßig.“** أي صيغة واضحة تتجنب التباس **hörten** مع الماضي البسيط؟",
+      "options": [
+        "Die Gäste sagen, sie hörten den Podcast regelmäßig.",
+        "Die Gäste sagen, sie hören den Podcast regelmäßig.",
+        "Die Gäste sagen, sie würden den Podcast regelmäßig hören."
+      ],
+      "answerIndex": 2,
+      "explanation": "في الجمع تطابق **hören** صيغة المضارع، بينما **hörten** قد تُفهم Präteritum؛ لذلك توضح صيغة **würden + Infinitiv** نقل الكلام من دون هذا الالتباس."
+    },
+    {
+      "id": "DL-B2-12-Q04",
+      "sourceTaskIds": [
+        "DL-B2-12-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "الرأي الشخصي المباشر",
+        "Indikativ"
+      ],
+      "prompt": "يسأل المذيع الضيف عن رأيه مباشرةً في الصور والشرح. أي جواب يعبّر عن رأي الضيف نفسه بصيغة الخبر؟",
+      "options": [
+        "Ich finde die Bilder eindrucksvoll, aber die Erklärung ist manchmal zu kurz.",
+        "Der Gast sagt, die Bilder seien eindrucksvoll, aber die Erklärung sei zu kurz.",
+        "Laut der Rezension seien die Bilder eindrucksvoll."
+      ],
+      "answerIndex": 0,
+      "explanation": "الضيف يعبّر مباشرةً عن رأيه، لذلك يقول **Ich finde ... ist ...** بصيغة الخبر. الصيغتان الأخريان تنقلان قولًا منسوبًا إلى مصدر."
+    },
+    {
+      "id": "DL-B2-12-Q05",
+      "sourceTaskIds": [
+        "DL-B2-12-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "نسبة القول إلى مصدره",
+        "Konjunktiv I"
+      ],
+      "prompt": "كيف ننقل قول المخرج مع إظهار مصدره وصيغة الكلام المنقول؟",
+      "options": [
+        "Der Film wolle Fragen stellen.",
+        "Der Regisseur sagt, der Film wolle Fragen stellen.",
+        "Der Regisseur sagt, der Film will Fragen stellen."
+      ],
+      "answerIndex": 1,
+      "explanation": "تذكر الجملة المصدر **Der Regisseur sagt** وتستخدم **wolle** لنقل قوله بصيغة Konjunktiv I. الخيار الأول بلا مصدر، والثالث لا يميّز الصيغة المطلوبة."
+    },
+    {
+      "id": "DL-B2-12-Q06",
+      "sourceTaskIds": [
+        "DL-B2-12-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "الفئة المقصودة"
+      ],
+      "prompt": "لمن خُصصت حلقات البودكاست بحسب المقدّمة في قراءة T05؟",
+      "options": [
+        "لمن يبحثون عن تقارير رياضية طويلة",
+        "للباحثين عن تعليمات تقنية مفصلة فقط",
+        "للأشخاص الذين يحبون القصص القصيرة"
+      ],
+      "answerIndex": 2,
+      "explanation": "تقول المقدّمة إن الحلقات موجهة إلى أشخاص يحبون القصص القصيرة. لا يذكر النص جمهورًا رياضيًا أو تعليمات تقنية."
+    },
+    {
+      "id": "DL-B2-12-Q07",
+      "sourceTaskIds": [
+        "DL-B2-12-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "عدم تعميم آراء الجمهور"
+      ],
+      "prompt": "ما النقد الذي تنسبه قراءة T05 إلى بعض المستمعين؟",
+      "options": [
+        "أن جميع المستمعين يرفضون البودكاست",
+        "أن الحلقات طويلة أكثر مما يفضّلون",
+        "أن المقابلات غير مفهومة للجميع"
+      ],
+      "answerIndex": 1,
+      "explanation": "يقول بعض المستمعين إن الحلقات طويلة بالنسبة إليهم؛ ولا تعمم المراجعة هذا الرأي على الجمهور كله."
+    },
+    {
+      "id": "DL-B2-12-Q08",
+      "sourceTaskIds": [
+        "DL-B2-12-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "المصدر المنسوب إليه القول"
+      ],
+      "prompt": "بماذا استُلهمت رواية الكاتبة بحسب نص المقابلة المكتوب في T06؟",
+      "options": [
+        "بنزهات على شاطئ البحر",
+        "بتعليقات عن بودكاست المدينة",
+        "بمقابلات مع مذيعين رياضيين"
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص المنسوب إلى الكاتبة أن الرواية مستوحاة من نزهات على شاطئ البحر. يمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-12-Q09",
+      "sourceTaskIds": [
+        "DL-B2-12-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "أفعال نقل الكلام",
+        "einräumen"
+      ],
+      "prompt": "أي فعل يوضح أن الكاتبة تقرّ بقصور أو أمر قد يثير تساؤلًا؟ **Die Autorin ___, der Schluss könne Fragen offenlassen.**",
+      "options": [
+        "berichtet",
+        "räumt ein",
+        "behauptet"
+      ],
+      "answerIndex": 1,
+      "explanation": "**einräumen** يعني يقرّ أو يعترف؛ لذلك نقول **Die Autorin räumt ein, ...**. أما **berichten** فتعني يروي/يقدّم تقريرًا، و**behaupten** تعني يدّعي."
+    },
+    {
+      "id": "DL-B2-12-Q10",
+      "sourceTaskIds": [
+        "DL-B2-12-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "skillTags": [
+        "تمييز الكلام المنقول والرأي الشخصي",
+        "Meiner Meinung nach"
+      ],
+      "prompt": "أي جملة تعلن بوضوح رأي الكاتب نفسه بدل نسبته إلى مراجعة أو شخص آخر؟",
+      "options": [
+        "Laut der Rezension sei das Ende offen.",
+        "Die Autorin räumt ein, der Schluss könne Fragen offenlassen.",
+        "Meiner Meinung nach ist die Musik besonders gelungen."
+      ],
+      "answerIndex": 2,
+      "explanation": "تعلن **Meiner Meinung nach** رأي الكاتب وتأتي بصيغة الخبر. أما الخياران الآخران فينسبان كلامًا إلى مراجعة أو كاتبة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-12-P01",
+      "sourceTaskIds": [
+        "DL-B2-12-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ملخصًا ألمانيًا من خمس إلى ست جمل عن مقابلة خيالية مع كاتب أو فنان، أو حضّره وقدّمه شفهيًا. انسب ثلاثة أقوال أو آراء على الأقل إلى أصحابها، واستخدم فعلين لنقل الكلام وصيغتين مناسبتين من Konjunktiv I على الأقل. إذا تطابقت صيغة الجمع مع المضارع، فاستخدم بديلًا واضحًا مثل **sie würden den Podcast hören**؛ لا تستخدم **hörten** وحدها إذا كان المقصود نقل الكلام. أضف رأيك الشخصي بعبارة مثل **Meiner Meinung nach ...** بصيغة الخبر، ولا تنسبه إلى الآخرين. اجعل الشخصيات والمقابلة خيالية، ولا تعمم رأيًا على الجمهور كله. للمتعلم الفردي: اكتب الملخص واقرأه بصوت مسموع لنفسك؛ لا يلزم تسجيله أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "ملخص من خمس إلى ست جمل ألمانية يتضمن ثلاثة أقوال أو آراء منسوبة بوضوح، ورأيًا شخصيًا معلنًا بصورة مستقلة.",
+        "meaningClarity": "يحدد الملخص صاحب كل قول، ويميّز الآراء عن رأي الكاتب، ولا يعمم رأيًا واحدًا على الجمهور أو يعرض المادة الخيالية كحقيقة.",
+        "targetSkill": "يستخدم فعلين مناسبين لنقل الكلام وصيغتين ملائمتين على الأقل من Konjunktiv I. عند تطابق صيغة الجمع مع المضارع، يستخدم بديلًا واضحًا من Konjunktiv II أو würde + Infinitiv، ويصوغ رأيه الشخصي بصيغة الخبر."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-12-P02",
+      "sourceTaskIds": [
+        "DL-B2-12-T05",
+        "DL-B2-12-T06",
+        "DL-B2-12-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-12-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى قراءة T05 ونص المقابلة المكتوب T06، اكتب إحاطة تحريرية ألمانية من خمس إلى ست جمل لمجلة ثقافية خيالية، أو حضّرها وقدّمها شفهيًا. انسب ثلاثة أقوال على الأقل إلى مصادرها، مثل المقدّمة والمستمعين والكاتبة؛ واستخدم صيغتين من Konjunktiv I، وبديلًا واضحًا عند الحاجة في قول جمعي. أضف رأيك بعبارة **Meiner Meinung nach ...** بصيغة الخبر، وافصل بينه وبين ما تقوله النصوص. لا تعرض آراء بعض القراء بوصفها رأي الجمهور كله، ولا تقدّم المادة الخيالية كخبر حقيقي. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تشغيل MP3 أو تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة تحريرية من خمس إلى ست جمل تتضمن ثلاثة أقوال على الأقل منسوبة إلى مصدرها ورأيًا شخصيًا منفصلًا.",
+        "meaningClarity": "تنقل الإحاطة معلومات T05 وT06 دون خلط المتحدثين، ولا تعمم آراء بعض المستمعين، وتوضح أن المجلة والمادة خياليتان.",
+        "targetSkill": "تستخدم صيغتين مناسبتين على الأقل من Konjunktiv I وأفعال نقل ملائمة؛ وتستخدم بديلًا واضحًا إذا تطابقت صيغة الجمع، وتفصل الرأي الشخصي بصيغة الخبر عن الكلام المنقول."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 250,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}
