@@ -4,7 +4,7 @@
 - **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 - **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ فرعًا آخر.
 - **دفعة البند 6:** `4a9eaab` — `feat: add flexible daily learning plan`، على الأب `1ad0b192012e6316a1fd64f040564d9d5d27ded9`. دُفعت مع تحديثي التسليم أدناه؛ تحقّق من `git status`, `HEAD` والمرجع البعيد بعد الاستئناف.
-- **PR #1:** مفتوحة وغير مدمجة؛ أعِد فحص `gh pr view 1` و`gh pr checks 1` على الرأس الحالي بعد الدفع. لا تدمج PR #1.
+- **PR #1 بعد دفع التطبيق والتسليم الأول:** `OPEN` و`mergedAt: null` عند الرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments (`pass`). هذا الفحص سبق تحديث التسليم التوثيقي اللاحق؛ أعد التحقق من الرأس النهائي بعد دفعه. لا تدمج PR #1.
 - **المتبقي التالي:** البند 7، قياس الوقت الفعلي؛ هذا ليس ضمن دفعة الخطة.
 - **رأس بداية دفعة B2.12 التاريخية:** `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، وكان مطابقًا لمرجع `origin/arena/01a1036f-deutschlern` وقتها.
 - **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`؛ دُفع إلى `origin/arena/01a1036f-deutschlern`.
@@ -43,7 +43,8 @@
 | `python3 tools/verify_course.py` | نجح؛ 53 درسًا، و428 عنوان تمرين، و754 مفردة، و53 تقييمًا جاهزًا، و109 مهمات، و142 أصلًا/312 مقطعًا، وHTML متوازن. |
 | `git diff --check` | نجح. لم تتغير ملفات المحتوى المولدة، لذلك لم يُعد بناء `data/course.json`. |
 | تشغيل المعاينة عبر `python3 -m http.server 8000 --bind 0.0.0.0` | بدأ الخادم على المنفذ 8000؛ أعادت `/` و`/app.js` و`/styles.css` و`/service-worker.js` حالة HTTP 200. هذا فحص طلبات محلية، لا اختبارًا بصريًا عبر متصفح. |
-| GitHub بعد الدفع | أعد `gh pr view 1` و`gh pr checks 1` بعد أحدث دفعة، وسجّل الرأس الفعلي والنتيجة هنا. لا تدمج PR #1. |
+| Git والفرع بعد دفع التطبيق والتسليم الأول | الفرع `arena/01a1036f-deutschlern`; كان `git status` نظيفًا، و`HEAD` و`origin/arena/01a1036f-deutschlern` متطابقين على `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. |
+| GitHub بعد دفع التطبيق والتسليم الأول | `gh pr view 1` أعاد `OPEN`, `mergedAt: null`, الفرع `arena/01a1036f-deutschlern`, والرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. `gh pr checks 1`: Vercel وVercel Preview Comments `pass`. بعد هذا الفحص أُجري تحديث توثيقي فقط؛ أعد الفحص على الرأس النهائي المسجل في Git عند الاستئناف. |
 
 لم يتغير صوت أو محتوى B1.9؛ لم تُولد ملفات صوت ولم تُجرَ مراجعة سمعية. تظل خمسة أصول B1.9 للمعاينة بانتظار اعتماد المستخدم.
 

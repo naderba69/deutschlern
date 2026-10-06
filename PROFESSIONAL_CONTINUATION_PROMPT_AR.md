@@ -3,7 +3,7 @@
 - **تاريخ الحالة:** 2026-10-06
 - **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 - **الفرع الإلزامي:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ أو تدفع فرعًا آخر.
-- **رأس بداية دفعة خطة اليوم:** `1ad0b192012e6316a1fd64f040564d9d5d27ded9`، وكانت الشجرة نظيفة ومتطابقة مع البعيد. **Commit تنفيذ البند 6:** `4a9eaabf449124563e69121234353964a11e2c67` — `feat: add flexible daily learning plan`. أُضيفت تحديثات التسليم بعده؛ تحقّق من HEAD والبعيد بعد الدفع قبل متابعة أي عمل.
+- **رأس بداية دفعة خطة اليوم:** `1ad0b192012e6316a1fd64f040564d9d5d27ded9`، وكانت الشجرة نظيفة ومتطابقة مع البعيد. **Commit تنفيذ البند 6:** `4a9eaabf449124563e69121234353964a11e2c67` — `feat: add flexible daily learning plan`. **تسليم أول بعد الميزة:** `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`، ودُفع على الفرع الثابت. بعد تحديث التسليم النهائي الوارد هنا، أعد فحص HEAD والرأس البعيد وحالة PR قبل العمل.
 - **رأس بداية دفعة B2.12 التاريخية:** `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، وكان مطابقًا للمرجع البعيد وقتها. **رأس بداية تنفيذ حفظ الجلسة التاريخي:** `bdfdca154fc12dbaef785b82a955504f03362b78`. افحص `git status` و`git log` والرأس البعيد عند الاستئناف.
 - **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، ودُفع إلى `origin/arena/01a1036f-deutschlern`.
 - **حالة PR #1 التاريخية بعد دفع إنتاج B2.12:** `OPEN` وغير مدمجة على الرأس `9223083a0b0ed96622d5da6769b88b7f8ade7df3`. نجح فحصا Vercel وVercel Preview Comments. لا تمثل هذه نتيجة الرأس الحالي؛ أعد الفحص بعد أي دفع أحدث ولا تدمجها.
@@ -12,7 +12,8 @@
 - **Commit تحديث سجل التسليم B2.12:** `5a43824202a3e58243a4778779ec6530788d1d3f` — `docs: update B2.12 handoff with latest checks`؛ هذا مرجع تاريخي.
 - **Commit حفظ الجلسة:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، على الفرع الثابت. دُفع إلى `origin/arena/01a1036f-deutschlern` مع ملفات التسليم.
 - **Commit التسليم الأول بعد حفظ الجلسة:** `dd0e5a09bb38396e8af5877ac972d6942196d45a` — `docs: hand off local session persistence`؛ دُفع إلى الفرع الثابت.
-- **حالة PR #1 بعد دفع التطبيق والتسليم الأول:** `OPEN`، `mergedAt: null`، head `dd0e5a09bb38396e8af5877ac972d6942196d45a`. نجح Vercel وVercel Preview Comments (`gh pr checks 1 --watch --interval 5`، ثم `gh pr checks 1`). بعد أي تحديث توثيقي لاحق، أعد فحص PR على الرأس الأحدث ولا تدمجها.
+- **حالة PR #1 التاريخية بعد دفعة حفظ الجلسة:** `OPEN`، `mergedAt: null`، head `dd0e5a09bb38396e8af5877ac972d6942196d45a`؛ نجح Vercel وVercel Preview Comments حينها.
+- **PR #1 بعد دفع ميزة خطة اليوم والتسليم الأول:** `OPEN`، `mergedAt: null`، head `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments `pass`. طابق `HEAD` والبعيد هذا الرأس وكانت الشجرة نظيفة حين الفحص. هذا الفحص سبق تحديث التسليم التوثيقي النهائي؛ أعد التحقق من الرأس النهائي قبل بدء عمل جديد، ولا تدمج PR #1.
 
 ## تعليمات الاستئناف
 
