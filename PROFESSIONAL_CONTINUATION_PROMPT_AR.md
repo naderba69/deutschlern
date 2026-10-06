@@ -5,12 +5,13 @@
 - **الفرع الإلزامي:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ أو تدفع فرعًا آخر.
 - **رأس بداية دفعة B2.12 التاريخية:** `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، وكان مطابقًا للمرجع البعيد وقتها. **رأس بداية تنفيذ حفظ الجلسة:** `bdfdca154fc12dbaef785b82a955504f03362b78`، وكانت الشجرة نظيفة ومتطابقة مع البعيد. افحص `git status` و`git log` والرأس البعيد عند الاستئناف.
 - **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، ودُفع إلى `origin/arena/01a1036f-deutschlern`.
-- **حالة PR #1 بعد دفع الإنتاج:** `OPEN` وغير مدمجة على الرأس `9223083a0b0ed96622d5da6769b88b7f8ade7df3`. نجح فحصا Vercel وVercel Preview Comments في `gh pr checks 1 --watch --interval 5`. لا تدمجها؛ أعد الفحص بعد دفع تحديث ملفي التسليم.
+- **حالة PR #1 التاريخية بعد دفع إنتاج B2.12:** `OPEN` وغير مدمجة على الرأس `9223083a0b0ed96622d5da6769b88b7f8ade7df3`. نجح فحصا Vercel وVercel Preview Comments. لا تمثل هذه نتيجة الرأس الحالي؛ أعد الفحص بعد أي دفع أحدث ولا تدمجها.
 - **Commit تحديث التسليم:** `dc6c9ad39765035b95c7fa9bd7f587f7626919cb` — `docs: finalize B2.12 delivery handoff`، دُفع على الفرع الثابت بعد commit الإنتاج.
 - **Commit تسجيل نتائج PR:** `d836f0ffe935a6f2e423130a16285483ac08b514` — `docs: record final B2.12 PR checks`، دُفع بعد تحديث التسليم.
 - **Commit تحديث سجل التسليم B2.12:** `5a43824202a3e58243a4778779ec6530788d1d3f` — `docs: update B2.12 handoff with latest checks`؛ هذا مرجع تاريخي.
-- **Commit حفظ الجلسة:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، على الفرع الثابت.
-- **حالة PR #1 عند الرأس السابق:** `OPEN` وغير مدمجة، ونجح Vercel وVercel Preview Comments على الرأس القديم `5a43824202a3e58243a4778779ec6530788d1d3f`. هذه ليست نتيجة رأس حفظ الجلسة؛ افحص PR بعد الدفع ولا تدمجها.
+- **Commit حفظ الجلسة:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، على الفرع الثابت. دُفع إلى `origin/arena/01a1036f-deutschlern` مع ملفات التسليم.
+- **Commit التسليم الأول بعد حفظ الجلسة:** `dd0e5a09bb38396e8af5877ac972d6942196d45a` — `docs: hand off local session persistence`؛ دُفع إلى الفرع الثابت.
+- **حالة PR #1 بعد دفع التطبيق والتسليم الأول:** `OPEN`، `mergedAt: null`، head `dd0e5a09bb38396e8af5877ac972d6942196d45a`. نجح Vercel وVercel Preview Comments (`gh pr checks 1 --watch --interval 5`، ثم `gh pr checks 1`). بعد أي تحديث توثيقي لاحق، أعد فحص PR على الرأس الأحدث ولا تدمجها.
 
 ## تعليمات الاستئناف
 
@@ -20,7 +21,7 @@
 
 - أُضيف حفظ جلسات المتعلم محليًا في `state.learningSessions` لكل درس وبوابة A0، مع نسخة التقييم، الشاشة والخطوة، السؤال الحالي، الإجابة المحددة، حالة التحقق وسجل الإجابات والدرجة. عند إعادة التحميل من شاشة الدرس/البوابة يعود المستخدم إلى الموضع نفسه؛ ويمكن إيقاف التقييم والعودة إلى نظرة الدرس ثم استئنافه دون تصفير الإجابات.
 - أدلة مهمات الأداء، والنصوص وعلامات التحقق محفوظة في `performanceEvidence` كما كانت. بعد الاستعادة يعاد حساب عدد المهمات المنجزة والمتبقية من الدليل المحلي. تصدير واستيراد JSON يشملان الآن مسودات الجلسة؛ وترفض الاستعادة تلقائيًا جلسة غير سليمة أو بإصدار تقييم مختلف.
-- **Commit التطبيق:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، على الفرع الثابت `arena/01a1036f-deutschlern`. حالة الدفع وفحوص PR #1 تُثبت بعد تحديث الملفين ودفعهما.
+- **Commit التطبيق:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، على الفرع الثابت `arena/01a1036f-deutschlern`. دُفع مع ملفي التسليم؛ عند فحص GitHub كان رأس الفرع `dd0e5a09bb38396e8af5877ac972d6942196d45a` وكانت Vercel وVercel Preview Comments ناجحتين. تحقق من أحدث رأس بعد أي تحديث لاحق.
 - ملفات التطبيق: `app.js`، `service-worker.js` (رفع Cache إلى v16)، `tools/test_session_persistence.cjs` (جديد)، `README.md`، `data/course-improvement-plan.md` (الإصدار 2.4)، إضافة إلى `data/production-handoff.md` وهذا الملف.
 - الفحوص المحلية: `node --check app.js`؛ `node --check tools/test_progression.cjs`؛ `node --check tools/test_session_persistence.cjs`؛ `node tools/test_progression.cjs`؛ `node tools/test_session_persistence.cjs`؛ `python3 tools/verify_course.py`؛ `git diff --check` و`git diff --cached --check` — كلها نجحت. لا حاجة لإعادة بناء `data/course.json` لأن ملفات المحتوى والتقييمات لم تتغير.
 - اختبار الجلسة غطى شاشة المحتوى والتقييم، استعادة السؤال والاختيار والتاريخ السابق، إيقاف التقييم واستئنافه، تخزين مهمة أداء منجزة وحساب المتبقية، بوابة A0، تصدير واستيراد نسخة JSON، ورفض إصدار تقييم قديم.
