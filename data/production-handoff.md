@@ -5,12 +5,13 @@
 - **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ فرعًا آخر.
 - **Commit التنفيذ:** `02cfc352229e733e5ef6250988ef3b437ffe29c6` — `feat: track actual study time`، على الأب `0149d0761f4ca0079bb05beaae05d80f91f9f643`.
 - **Commit أول تسليم للبند 7:** `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` — `docs: hand off actual study time`؛ دُفع مع commit التنفيذ إلى الفرع الثابت.
-- **Commit تسجيل نتيجة PR:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`، على الفرع الثابت.
-- **GitHub عند HEAD `ef86ecbd1d933df3285093a6d5040c996865a739`:** PR #1 `OPEN`, `mergedAt: null`, والرأس `arena/01a1036f-deutschlern`. `gh pr checks 1 --watch --interval 5`: Vercel وVercel Preview Comments كلاهما `pass`.
-- **حالة Git وقت الفحص:** `HEAD` والمرجع البعيد تطابقا على `ef86ecbd1d933df3285093a6d5040c996865a739`؛ الشجرة نظيفة.
+- **Commit تسليم التحقق السابق:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`.
+- **آخر commit تسليم قبل هذا التحديث:** `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb` — `docs: update handoff with final checks`.
+- **GitHub عند HEAD `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`:** PR #1 `OPEN`, `mergedAt: null`, والرأس `arena/01a1036f-deutschlern`. `gh pr checks 1 --watch --interval 5`: Vercel وVercel Preview Comments كلاهما `pass`.
+- **حالة Git وقت الفحص:** `HEAD` والمرجع البعيد تطابقا على `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`؛ الشجرة نظيفة.
 - **دفعة البند 6 التاريخية:** `4a9eaab` — `feat: add flexible daily learning plan`، على الأب `1ad0b192012e6316a1fd64f040564d9d5d27ded9`. دُفعت مع تحديثي التسليم أدناه؛ تحقّق من `git status`, `HEAD` والمرجع البعيد بعد الاستئناف.
 - **PR #1 بعد دفعة البند 6 (حالة تاريخية):** `OPEN` و`mergedAt: null` عند الرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments (`pass`). هذا الفحص سبق تحديث التسليم التوثيقي اللاحق؛ أعد التحقق من الرأس النهائي بعد دفعه. لا تدمج PR #1.
-- **المتبقي التالي:** فحص تجربة المؤقت يدويًا في المتصفح/الهاتف، ثم التأكد من حالة PR #1 وفحوصها على أحدث رأس؛ لا تدمج PR #1.
+- **المتبقي التالي:** تجربة المؤقت يدويًا في المتصفح/الهاتف، ثم إعادة فحص PR #1 على أي رأس أحدث بعد تحديث هذا التسليم؛ لا تدمج PR #1.
 - **رأس بداية دفعة B2.12 التاريخية:** `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، وكان مطابقًا لمرجع `origin/arena/01a1036f-deutschlern` وقتها.
 - **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`؛ دُفع إلى `origin/arena/01a1036f-deutschlern`.
 - **Commit تحديث التسليم:** `dc6c9ad39765035b95c7fa9bd7f587f7626919cb` — `docs: finalize B2.12 delivery handoff`، على الفرع نفسه بعد commit الإنتاج، ودُفع إلى `origin/arena/01a1036f-deutschlern`.
@@ -41,7 +42,7 @@
 | `git diff --check` | نجح. |
 | معاينة HTTP عبر `python3 -m http.server 8000 --bind 0.0.0.0` | عادت `/`, `/app.js`, `/styles.css`, `/service-worker.js`, و`/data/course.json` بحالة 200. الخادم يعمل بالعملية `deutschlern-app-preview-b3a9ebb6` على المنفذ 8000. هذا فحص HTTP وليس تحققًا بصريًا في المتصفح. |
 
-**سجل الدفع الحالي عند آخر فحص مكتمل:** commit التطبيق والاختبارات `02cfc352229e733e5ef6250988ef3b437ffe29c6`، وcommit التوثيق `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` ثم تحديث نتائج PR `ef86ecbd1d933df3285093a6d5040c996865a739`; دُفعت على `arena/01a1036f-deutschlern`. طابق `HEAD` والبعيد عند `ef86ecb` وكانت الشجرة نظيفة. PR #1 `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments `pass` عند هذا الرأس. هذا التعديل توثيقي فقط؛ بعد دفعه تحقق من فحوص الرأس الجديد ولا تدمج PR #1.
+**سجل الدفع الحالي عند آخر فحص مكتمل:** commit التطبيق والاختبارات `02cfc352229e733e5ef6250988ef3b437ffe29c6`، ثم commits التسليم `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa`, `ef86ecbd1d933df3285093a6d5040c996865a739`, و`5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`; دُفعت على `arena/01a1036f-deutschlern`. طابق `HEAD` والبعيد عند `5ba5b21` وكانت الشجرة نظيفة. PR #1 `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments `pass` عند هذا الرأس. هذا التحديث توثيقي فقط؛ بعد دفعه تحقق من فحوص الرأس الجديد ولا تدمج PR #1.
 
 **المتبقي:** تجربة المؤقت يدويًا عبر المعاينة على متصفح/هاتف، خصوصًا العودة من الخلفية وسلوك الخمول؛ وفحص PR #1 بعد الدفع. يظل محتوى المنهج والمراجعة اللغوية/التعليمية والعمل دون اتصال ضمن الأعمال الأوسع. لا صوت في هذه الدفعة؛ أصول B1.9 تبقى معاينة بانتظار اعتماد المستخدم، ولا تُعد توليدها أو الادعاء بمراجعتها سمعيًا.
 

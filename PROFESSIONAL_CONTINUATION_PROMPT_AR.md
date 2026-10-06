@@ -30,8 +30,9 @@
 - **معاينة HTTP:** بدأ `python3 -m http.server 8000 --bind 0.0.0.0` بالعملية `deutschlern-app-preview-b3a9ebb6`; الطلبات إلى `/`, `/app.js`, `/styles.css`, `/service-worker.js`, `/data/course.json` أعادت 200. لم تُفحص الواجهة بصريًا في متصفح بعد؛ أوقف الخادم بالعملية عند انتهاء الحاجة.
 - **Commit التطبيق والاختبارات:** `02cfc352229e733e5ef6250988ef3b437ffe29c6` — `feat: track actual study time`، على الأب `0149d0761f4ca0079bb05beaae05d80f91f9f643`.
 - **Commit التسليم الأول:** `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` — `docs: hand off actual study time`؛ دُفع مع commit التطبيق.
-- **آخر commit نتائج مسجل:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`. عند فحصه طابق `HEAD` والبعيد، وكانت الشجرة نظيفة.
-- **PR #1 عند الرأس `ef86ecbd1d933df3285093a6d5040c996865a739`:** `OPEN`, `mergedAt: null`, على الفرع الثابت؛ Vercel وVercel Preview Comments كلاهما `pass` عبر `gh pr checks 1 --watch --interval 5`. التعديل الجاري للتسليم توثيقي فقط؛ بعد دفعه أعد فحص الرأس الأحدث، ولا تدمج PR #1.
+- **Commit نتائج سابق:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`.
+- **آخر HEAD مفحوص:** `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb` — `docs: update handoff with final checks`. طابق الرأس والبعيد عند الفحص وكانت الشجرة نظيفة.
+- **PR #1 عند HEAD `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`:** `OPEN`, `mergedAt: null`, على الفرع الثابت؛ Vercel وVercel Preview Comments كلاهما `pass` عبر `gh pr checks 1 --watch --interval 5`. التحديث الجاري توثيقي فقط؛ بعد دفعه أعد فحص الرأس الأحدث، ولا تدمج PR #1.
 
 **المتبقي والخطوة التالية:** جرّب المؤقت في المعاينة على متصفح وحجم هاتف، مع العودة من التبويب الخلفي وفقدان التركيز والخمول والتحميل من جديد؛ لا تدّعِ اختبارًا بصريًا أو يدويًا قبل تنفيذه. أعد فحص PR #1 على الرأس الذي دُفع. بعد ذلك تابع مراجعة المحتوى والتطبيق والعمل دون اتصال. لا تنتج أو تعدّل صوتًا؛ مرحلة الصوت بعد المحتوى والتقييم والتطبيق، وتظل أصول B1.9 للمعاينة فقط.
 
