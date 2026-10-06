@@ -51,7 +51,7 @@
 
 ## 4) نص قراءة أصلي: مراجعة إصدار تجريبي
 
-> Ein fiktives Entwicklungsteam testet eine neue Planungs-App. Beim ersten Versuch traten Störungen auf, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war. In der Rückschau schreibt das Team: „Wenn wir die Einstellungen früher auf mehreren Geräten überprüft hätten, hätten wir die Störung wahrscheinlich vor der Vorführung bemerkt.“ Das Update wurde noch nicht veröffentlicht. Eine Entwicklerin wünscht sich, die Testphase wäre länger gewesen. Das Team vermutet, ein klarer Hinweis auf die betroffene Funktion könnte die Fehlersuche erleichtern. Sicher ist das jedoch nicht; weitere Tests werden nötig sein. Die Beispiele in diesem Text sind erfunden.
+> Ein fiktives Entwicklungsteam testet eine neue Planungs-App. Beim ersten Versuch traten Störungen auf, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war. In der Rückschau schreibt das Team: „Wenn wir die Einstellungen früher auf mehreren Geräten überprüft hätten, hätten wir die Störung wahrscheinlich vor der Vorführung bemerkt.“ Das Update wurde noch nicht veröffentlicht. Eine Entwicklerin wünscht sich, dass die Testphase länger gewesen wäre. Das Team vermutet, ein klarer Hinweis auf die betroffene Funktion könnte die Fehlersuche erleichtern. Sicher ist das jedoch nicht; weitere Tests werden nötig sein. Die Beispiele in diesem Text sind erfunden.
 
 ### أسئلة الفهم
 
@@ -119,13 +119,13 @@
 1. **Wir prüften die Schnittstelle nicht. Deshalb trat der Fehler auf.** → Wenn wir die Schnittstelle ______ ______, wäre der Fehler nicht aufgetreten.
 2. **Ich speicherte keine Kopie. Deshalb verlor ich die Datei.** → Wenn ich eine Kopie ______ ______, hätte ich die Datei nicht verloren.
 
-### تمرين 8 — اكتب فرضية تقنية
+### تمرين 8 — اكتب أو اعرض فرضية تقنية
 
-اكتب خمس جمل عن مشكلة أو أمنية تقنية خيالية. استخدم شرطًا ماضيًا واحدًا على الأقل بصيغة **hätte/wäre + Partizip II**، وأضف عبارة احتمال مثل **vielleicht / möglicherweise / es könnte sein, dass …**. لا تذكر بيانات دخول أو معلومات حقيقية.
+اكتب خمس جمل ألمانية على الأقل عن مشكلة تقنية خيالية، أو حضّرها وقدّمها شفهيًا. ضمّن فرضية غير واقعية عن الحاضر بصيغة **Wenn ... wäre/hätte, ... könnte/würde**، وشرطًا ماضيًا لم يتحقق باستخدام **hätte/wäre + Partizip II**، وأمنيةً واضحة، واحتمالًا غير مؤكد مثل **Es könnte sein, dass ...** أو **möglicherweise**. وضّح ما هو واقع في السيناريو وما هو افتراض، ولا تستخدم بيانات دخول أو معلومات شخصية أو تقنية حقيقية. للمتعلم الفردي: اكتب الجمل واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.
 
 ## 7) مفتاح الإجابات
 
-**أسئلة القراءة:** 1. Es traten Störungen auf. 2. Eine Schnittstelle war mit einem älteren Gerät nicht kompatibel. 3. Die Störung. 4. Nein. 5. Sie wünscht sich, die Testphase wäre länger gewesen. 6. Nein, weitere Tests sind nötig.
+**أسئلة القراءة:** 1. Es traten Störungen auf. 2. Eine Schnittstelle war mit einem älteren Gerät nicht kompatibel. 3. Die Störung. 4. Nein. 5. Sie wünscht sich, dass die Testphase länger gewesen wäre. 6. Nein, weitere Tests sind nötig.
 
 **أسئلة الاستماع:** 1. Eine Sicherungskopie erstellen. 2. Die Datei wiederherzustellen. 3. Dass alle Geräte dieselbe Schnittstelle hätten. 4. Sie könnten möglicherweise nicht unterstützt werden. 5. Die Angaben überprüfen.
 
@@ -136,7 +136,7 @@
 - **تمرين 5:** 1. صحيح. 2. خطأ — لم يُنشر التحديث بعد. 3. صحيح. 4. خطأ — هذا احتمال يحتاج إلى اختبار. 5. صحيح.
 - **تمرين 6:** Sicherungskopie؛ wiederherstellen؛ Schnittstelle؛ unterstützt؛ überprüfen.
 - **تمرين 7:** 1. geprüft hätten، 2. gespeichert hätte.
-- **تمرين 8:** إجابة مفتوحة؛ راجع ترتيب الفعل في جملة **wenn**، وتطابق **hätte/wäre** مع Partizip II، وعدم عرض الاحتمال كحقيقة.
+- **تمرين 8:** إجابة مفتوحة؛ راجع وجود خمس جمل، وفرضية عن الحاضر وشرط ماضٍ غير متحقق وأمنية واحتمال، وترتيب الفعل في جملة **wenn**، وتطابق **hätte/wäre** مع Partizip II، وعدم عرض الافتراض أو الاحتمال كحقيقة. يقبل التمرين الكتابة أو العرض الشفهي؛ وللمتعلم الفردي الكتابة والقراءة بصوت مسموع دون تسجيل أو إرسال صوت.
 
 ## 8) بطاقات مراجعة
 
