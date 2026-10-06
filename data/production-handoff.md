@@ -6,12 +6,13 @@
 - **Commit التنفيذ:** `02cfc352229e733e5ef6250988ef3b437ffe29c6` — `feat: track actual study time`، على الأب `0149d0761f4ca0079bb05beaae05d80f91f9f643`.
 - **Commit أول تسليم للبند 7:** `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` — `docs: hand off actual study time`؛ دُفع مع commit التنفيذ إلى الفرع الثابت.
 - **Commit تسليم التحقق السابق:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`.
-- **آخر commit تسليم قبل هذا التحديث:** `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb` — `docs: update handoff with final checks`.
-- **GitHub عند HEAD `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`:** PR #1 `OPEN`, `mergedAt: null`, والرأس `arena/01a1036f-deutschlern`. `gh pr checks 1 --watch --interval 5`: Vercel وVercel Preview Comments كلاهما `pass`.
-- **حالة Git وقت الفحص:** `HEAD` والمرجع البعيد تطابقا على `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`؛ الشجرة نظيفة.
+- **Commit التسليم التالي:** `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb` — `docs: update handoff with final checks`.
+- **آخر HEAD مفحوص عند الاستئناف:** `8f647b5a6d4acccd1e5616a29f9dc088064fffd4` — `docs: record latest study time checks`.
+- **GitHub عند HEAD `8f647b5a6d4acccd1e5616a29f9dc088064fffd4`:** PR #1 `OPEN`, `mergedAt: null`, والرأس `arena/01a1036f-deutschlern`. Vercel وVercel Preview Comments كلاهما `pass` في `gh pr checks 1`.
+- **حالة Git عند الاستئناف:** `HEAD` والمرجع البعيد تطابقا على `8f647b5a6d4acccd1e5616a29f9dc088064fffd4`؛ الشجرة نظيفة. بدأ checkout محليًا عند `88f3c06` مع نسخ الملفات الأحدث كاختلافات محلية؛ فُحصت ملفات tracked ومقارنة كل الملفات غير المتتبعة بمحتوى origin، وثبت التطابق، ثم استُخدم `git reset --mixed origin/arena/01a1036f-deutschlern` للمحاذاة بلا تغيير محتوى.
 - **دفعة البند 6 التاريخية:** `4a9eaab` — `feat: add flexible daily learning plan`، على الأب `1ad0b192012e6316a1fd64f040564d9d5d27ded9`. دُفعت مع تحديثي التسليم أدناه؛ تحقّق من `git status`, `HEAD` والمرجع البعيد بعد الاستئناف.
 - **PR #1 بعد دفعة البند 6 (حالة تاريخية):** `OPEN` و`mergedAt: null` عند الرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments (`pass`). هذا الفحص سبق تحديث التسليم التوثيقي اللاحق؛ أعد التحقق من الرأس النهائي بعد دفعه. لا تدمج PR #1.
-- **المتبقي التالي:** تجربة المؤقت يدويًا في المتصفح/الهاتف، ثم إعادة فحص PR #1 على أي رأس أحدث بعد تحديث هذا التسليم؛ لا تدمج PR #1.
+- **المتبقي التالي:** تجربة المؤقت يدويًا في المعاينة الحية على متصفح/هاتف؛ لم تتوفر في بيئة التطوير أداة متصفح آلي، وفحص HTTP وحده لا يثبت العرض أو التفاعل. الخادم يعمل على المنفذ 8000. أعد فحص PR #1 بعد أي دفع توثيقي لاحق؛ لا تدمج PR #1.
 - **رأس بداية دفعة B2.12 التاريخية:** `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، وكان مطابقًا لمرجع `origin/arena/01a1036f-deutschlern` وقتها.
 - **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`؛ دُفع إلى `origin/arena/01a1036f-deutschlern`.
 - **Commit تحديث التسليم:** `dc6c9ad39765035b95c7fa9bd7f587f7626919cb` — `docs: finalize B2.12 delivery handoff`، على الفرع نفسه بعد commit الإنتاج، ودُفع إلى `origin/arena/01a1036f-deutschlern`.
@@ -40,9 +41,11 @@
 | `node tools/test_daily_plan.cjs` | نجح؛ مراجعة المفردات والخطة اليومية والترحيل والاستئناف والنسخة الاحتياطية. |
 | `python3 tools/verify_course.py` | نجح؛ 53 درسًا، 428 عنوان تمرين، 55 قسم حوار، 754 مفردة، 53 تقييمًا جاهزًا، 530 سؤالًا و10 للبوابة، 109 مهمات أداء، و142 أصلًا/312 مقطعًا؛ HTML متوازن. |
 | `git diff --check` | نجح. |
-| معاينة HTTP عبر `python3 -m http.server 8000 --bind 0.0.0.0` | عادت `/`, `/app.js`, `/styles.css`, `/service-worker.js`, و`/data/course.json` بحالة 200. الخادم يعمل بالعملية `deutschlern-app-preview-b3a9ebb6` على المنفذ 8000. هذا فحص HTTP وليس تحققًا بصريًا في المتصفح. |
+| معاينة HTTP عبر `python3 -m http.server 8000 --bind 0.0.0.0` | عادت `/`, `/app.js`, `/styles.css`, `/service-worker.js`, و`/data/course.json` بحالة 200. الخادم الحالي يعمل بالعملية `deutschlern-live-preview-3f8b9943` على المنفذ 8000. لم تتوفر أداة متصفح آلي؛ لا يُعد فحص HTTP تحققًا بصريًا أو تفاعليًا. |
 
-**سجل الدفع الحالي عند آخر فحص مكتمل:** commit التطبيق والاختبارات `02cfc352229e733e5ef6250988ef3b437ffe29c6`، ثم commits التسليم `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa`, `ef86ecbd1d933df3285093a6d5040c996865a739`, و`5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`; دُفعت على `arena/01a1036f-deutschlern`. طابق `HEAD` والبعيد عند `5ba5b21` وكانت الشجرة نظيفة. PR #1 `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments `pass` عند هذا الرأس. هذا التحديث توثيقي فقط؛ بعد دفعه تحقق من فحوص الرأس الجديد ولا تدمج PR #1.
+**فحوص الاستئناف بعد محاذاة Git:** أُعيد تشغيل `node --check`، واختبارات `test_study_time`, `test_progression`, `test_session_persistence`, `test_daily_plan`, و`python3 tools/verify_course.py`، و`git diff --check`؛ نجحت جميعها، ولم تظهر تغييرات محتوى جديدة.
+
+**سجل الدفع الحالي عند آخر فحص مكتمل:** commit التطبيق والاختبارات `02cfc352229e733e5ef6250988ef3b437ffe29c6`، ثم commits التسليم `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa`, `ef86ecbd1d933df3285093a6d5040c996865a739`, `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`, و`8f647b5a6d4acccd1e5616a29f9dc088064fffd4`; دُفعت على `arena/01a1036f-deutschlern`. طابق `HEAD` والبعيد عند `8f647b5` وكانت الشجرة نظيفة. PR #1 `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments `pass` عند هذا الرأس. هذا التحديث يوثق فحص الاستئناف؛ أعد فحص الفحوص على أي رأس لاحق ولا تدمج PR #1.
 
 **المتبقي:** تجربة المؤقت يدويًا عبر المعاينة على متصفح/هاتف، خصوصًا العودة من الخلفية وسلوك الخمول؛ وفحص PR #1 بعد الدفع. يظل محتوى المنهج والمراجعة اللغوية/التعليمية والعمل دون اتصال ضمن الأعمال الأوسع. لا صوت في هذه الدفعة؛ أصول B1.9 تبقى معاينة بانتظار اعتماد المستخدم، ولا تُعد توليدها أو الادعاء بمراجعتها سمعيًا.
 
