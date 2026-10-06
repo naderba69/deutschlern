@@ -43,6 +43,11 @@ const DAILY_TIME_REFERENCE_DEFAULT = 120;
 const DAILY_TIME_REFERENCE_MIN = 5;
 const DAILY_TIME_REFERENCE_MAX = 1440;
 const DAILY_PLAN_STATUSES = ['pending', 'done', 'deferred'];
+const STUDY_IDLE_TIMEOUT_MS = 5 * 60 * 1000;
+const STUDY_TIMER_TICK_MS = 1000;
+const STUDY_PERSIST_INTERVAL_MS = 15 * 1000;
+const STUDY_SESSION_KINDS = ['lesson', 'gate', 'review'];
+const STUDY_SESSION_STATUSES = ['active', 'paused', 'completed'];
 
 function normalizeDailyMinutes(value) {
   const minutes = Number(value);
@@ -88,6 +93,55 @@ function normalizeDailyPlan(value) {
   };
 }
 
+function normalizeStudyDays(value) {
+  if (!Array.isArray(value)) return [];
+  const days = new Map();
+  for (const item of value) {
+    if (!item || typeof item !== 'object' || !validDateKey(item.date)) continue;
+    const actualMilliseconds = Number(item.actualMilliseconds ?? (Number(item.actualSeconds) * 1000));
+    const legacyEstimatedMinutes = Number(item.legacyEstimatedMinutes ?? item.minutes);
+    const previous = days.get(item.date) || { date: item.date, actualMilliseconds: 0, legacyEstimatedMinutes: 0 };
+    days.set(item.date, {
+      date: item.date,
+      actualMilliseconds: previous.actualMilliseconds + (Number.isFinite(actualMilliseconds) && actualMilliseconds > 0 ? actualMilliseconds : 0),
+      legacyEstimatedMinutes: previous.legacyEstimatedMinutes + (Number.isFinite(legacyEstimatedMinutes) && legacyEstimatedMinutes > 0 ? legacyEstimatedMinutes : 0),
+    });
+  }
+  return [...days.values()].sort((left, right) => left.date.localeCompare(right.date));
+}
+
+function normalizeStudySessions(value) {
+  if (!Array.isArray(value)) return [];
+  const sessions = [];
+  const seen = new Set();
+  for (const item of value) {
+    if (!item || typeof item !== 'object' || typeof item.id !== 'string' || !item.id || seen.has(item.id)
+      || !STUDY_SESSION_KINDS.includes(item.kind) || typeof item.targetId !== 'string'
+      || !STUDY_SESSION_STATUSES.includes(item.status) || !Number.isFinite(new Date(item.startedAt).getTime())) continue;
+    seen.add(item.id);
+    const activeMilliseconds = Number(item.activeMilliseconds);
+    const status = item.status === 'active' ? 'paused' : item.status;
+    sessions.push({
+      id: item.id,
+      kind: item.kind,
+      targetId: item.targetId,
+      startedAt: item.startedAt,
+      updatedAt: typeof item.updatedAt === 'string' ? item.updatedAt : item.startedAt,
+      endedAt: typeof item.endedAt === 'string' ? item.endedAt : null,
+      pausedAt: typeof item.pausedAt === 'string' ? item.pausedAt : null,
+      activeMilliseconds: Number.isFinite(activeMilliseconds) && activeMilliseconds > 0 ? Math.min(activeMilliseconds, 1e12) : 0,
+      status,
+      pauseReason: item.status === 'active' ? 'reload' : (typeof item.pauseReason === 'string' ? item.pauseReason : null),
+    });
+  }
+  return sessions;
+}
+
+function normalizeActiveStudySessionId(value, sessions) {
+  if (typeof value !== 'string') return null;
+  return sessions.some((session) => session.id === value && session.status !== 'completed') ? value : null;
+}
+
 function freshLearningSessions() {
   return { currentView: 'dashboard', selectedLevel: 'A0', active: null, lessons: {}, gate: null };
 }
@@ -119,7 +173,9 @@ function freshState() {
     learningSessions: freshLearningSessions(),
     dailyPlan: null,
     xp: 0,
-    studyDays: []
+    studyDays: [],
+    studySessions: [],
+    activeStudySessionId: null
   };
 }
 
@@ -136,6 +192,7 @@ function loadState() {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
     if (!saved || typeof saved !== 'object') return freshState();
     const base = freshState();
+    const studySessions = normalizeStudySessions(saved.studySessions);
     return {
       ...base,
       ...saved,
@@ -147,7 +204,9 @@ function loadState() {
       performanceEvidence: saved.performanceEvidence && typeof saved.performanceEvidence === 'object' ? saved.performanceEvidence : {},
       learningSessions: normalizeLearningSessions(saved.learningSessions),
       dailyPlan: normalizeDailyPlan(saved.dailyPlan),
-      studyDays: Array.isArray(saved.studyDays) ? saved.studyDays : []
+      studyDays: normalizeStudyDays(saved.studyDays),
+      studySessions,
+      activeStudySessionId: normalizeActiveStudySessionId(saved.activeStudySessionId, studySessions)
     };
   } catch {
     return freshState();
@@ -166,6 +225,11 @@ let toastTimer = null;
 let activeAudio = null;
 let audioPlaybackToken = 0;
 let deferredInstallPrompt = null;
+let studyTimerInterval = null;
+let studyTimerLastTick = null;
+let studyTimerLastTickWall = null;
+let studyTimerLastActivity = null;
+let studyTimerLastSavedAt = null;
 
 function copySessionForStorage(session) {
   if (!session || typeof session !== 'object') return null;
@@ -216,17 +280,288 @@ function studyDayRecord(key) {
   return state.studyDays.find((entry) => entry.date === key);
 }
 
-function recordStudy(minutes) {
-  const key = dateKey();
-  const existing = studyDayRecord(key);
-  if (existing) existing.minutes += Math.max(1, minutes);
-  else state.studyDays.push({ date: key, minutes: Math.max(1, minutes) });
-  state.studyDays = state.studyDays.filter((entry) => entry.date >= addDaysToKey(key, -60));
+function studyClockNow() {
+  return typeof performance !== 'undefined' && typeof performance.now === 'function' ? performance.now() : Date.now();
+}
+
+function studyPageIsVisible() {
+  const visible = typeof document.visibilityState !== 'string' || document.visibilityState === 'visible';
+  const focused = typeof document.hasFocus !== 'function' || document.hasFocus();
+  return visible && focused;
+}
+
+function currentStudyContext() {
+  if (currentView === 'lesson' && lessonSession?.id) return { kind: 'lesson', targetId: lessonSession.id };
+  if (currentView === 'a0-gate' && gateSession) return { kind: 'gate', targetId: 'A0-A1' };
+  if (currentView === 'review') return { kind: 'review', targetId: 'vocabulary' };
+  return null;
+}
+
+function studySessionById(id) {
+  return typeof id === 'string' ? state.studySessions.find((session) => session.id === id) || null : null;
+}
+
+function currentStudySession() {
+  const session = studySessionById(state.activeStudySessionId);
+  return session && session.status !== 'completed' ? session : null;
+}
+
+function ensureStudyDay(date) {
+  let item = studyDayRecord(date);
+  if (!item) {
+    item = { date, actualMilliseconds: 0, legacyEstimatedMinutes: 0 };
+    state.studyDays.push(item);
+    state.studyDays.sort((left, right) => left.date.localeCompare(right.date));
+  }
+  return item;
+}
+
+function addActualTimeToStudyDays(startWallMilliseconds, durationMilliseconds) {
+  let cursor = Number(startWallMilliseconds);
+  let remaining = Math.max(0, Number(durationMilliseconds) || 0);
+  if (!Number.isFinite(cursor) || !Number.isFinite(remaining) || remaining <= 0) return;
+  while (remaining > 0) {
+    const currentDate = new Date(cursor);
+    const key = dateKey(currentDate);
+    const nextDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 1).getTime();
+    const chunk = Math.min(remaining, Math.max(1, nextDay - cursor));
+    ensureStudyDay(key).actualMilliseconds += chunk;
+    cursor += chunk;
+    remaining -= chunk;
+  }
+}
+
+function accrueStudyTime(untilMonotonic) {
+  const session = currentStudySession();
+  if (!session || session.status !== 'active' || studyTimerLastTick === null) return 0;
+  const idleDeadline = (studyTimerLastActivity ?? studyTimerLastTick) + STUDY_IDLE_TIMEOUT_MS;
+  const end = Math.min(untilMonotonic, idleDeadline);
+  const duration = Math.max(0, end - studyTimerLastTick);
+  if (!duration) return 0;
+  const startWall = studyTimerLastTickWall ?? Date.now();
+  session.activeMilliseconds += duration;
+  session.updatedAt = new Date(startWall + duration).toISOString();
+  addActualTimeToStudyDays(startWall, duration);
+  studyTimerLastTick = end;
+  studyTimerLastTickWall = startWall + duration;
+  return duration;
+}
+
+function stopStudyTimerRuntime() {
+  if (studyTimerInterval !== null) clearInterval(studyTimerInterval);
+  studyTimerInterval = null;
+  studyTimerLastTick = null;
+  studyTimerLastTickWall = null;
+  studyTimerLastActivity = null;
+  studyTimerLastSavedAt = null;
+}
+
+function startStudyTimerRuntime(session, resetActivity = false) {
+  if (!session || session.status !== 'active') return;
+  if (!studyPageIsVisible()) {
+    pauseStudyTimer('hidden');
+    return;
+  }
+  if (studyTimerInterval !== null) return;
+  const now = studyClockNow();
+  studyTimerLastTick = now;
+  studyTimerLastTickWall = Date.now();
+  if (resetActivity || studyTimerLastActivity === null) studyTimerLastActivity = now;
+  studyTimerLastSavedAt = now;
+  studyTimerInterval = setInterval(tickStudyTimer, STUDY_TIMER_TICK_MS);
+}
+
+function pauseStudyTimer(reason, { alreadyAccrued = false, persist = true } = {}) {
+  const session = currentStudySession();
+  if (!session || session.status !== 'active') return;
+  const now = studyClockNow();
+  const idleDeadline = (studyTimerLastActivity ?? now) + STUDY_IDLE_TIMEOUT_MS;
+  if (!alreadyAccrued) accrueStudyTime(Math.min(now, idleDeadline));
+  session.status = 'paused';
+  session.pauseReason = now >= idleDeadline ? 'idle' : reason;
+  session.pausedAt = new Date().toISOString();
+  session.updatedAt = session.pausedAt;
+  stopStudyTimerRuntime();
+  if (persist) saveState();
+  updateStudyTimerControl();
+}
+
+function finishCurrentStudySession(reason = 'navigation') {
+  const session = currentStudySession();
+  if (!session) {
+    state.activeStudySessionId = null;
+    stopStudyTimerRuntime();
+    return;
+  }
+  if (session.status === 'active') pauseStudyTimer(reason, { persist: false });
+  session.status = 'completed';
+  session.pauseReason = reason;
+  session.endedAt = new Date().toISOString();
+  session.updatedAt = session.endedAt;
+  state.activeStudySessionId = null;
+  stopStudyTimerRuntime();
   saveState();
 }
 
+function resumeStudyTimer({ quiet = false } = {}) {
+  const session = currentStudySession();
+  if (!session || session.status !== 'paused') return false;
+  if (!studyPageIsVisible()) {
+    if (!quiet) showToast('افتح صفحة التعلّم لتستأنف احتساب الوقت.');
+    return false;
+  }
+  session.status = 'active';
+  session.pauseReason = null;
+  session.pausedAt = null;
+  session.updatedAt = new Date().toISOString();
+  startStudyTimerRuntime(session, true);
+  saveState();
+  updateStudyTimerControl();
+  return true;
+}
+
+function syncStudyTimerForCurrentView() {
+  if (!course) return;
+  const context = currentStudyContext();
+  const session = currentStudySession();
+  if (!context) {
+    if (session) finishCurrentStudySession('navigation');
+    return;
+  }
+  if (session && session.kind === context.kind && session.targetId === context.targetId) {
+    if (session.status === 'active') startStudyTimerRuntime(session);
+    return;
+  }
+  if (session) finishCurrentStudySession('navigation');
+  const now = new Date().toISOString();
+  const nextSession = {
+    id: `study-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`,
+    kind: context.kind,
+    targetId: context.targetId,
+    startedAt: now,
+    updatedAt: now,
+    endedAt: null,
+    pausedAt: null,
+    activeMilliseconds: 0,
+    status: 'active',
+    pauseReason: null,
+  };
+  state.studySessions.push(nextSession);
+  state.activeStudySessionId = nextSession.id;
+  startStudyTimerRuntime(nextSession, true);
+  saveState();
+}
+
+function tickStudyTimer() {
+  const session = currentStudySession();
+  if (!session || session.status !== 'active' || studyTimerInterval === null) return;
+  if (!studyPageIsVisible()) {
+    pauseStudyTimer('hidden');
+    return;
+  }
+  const now = studyClockNow();
+  const idleDeadline = (studyTimerLastActivity ?? now) + STUDY_IDLE_TIMEOUT_MS;
+  accrueStudyTime(Math.min(now, idleDeadline));
+  if (now >= idleDeadline) {
+    pauseStudyTimer('idle', { alreadyAccrued: true });
+    return;
+  }
+  if (studyTimerLastSavedAt === null || now - studyTimerLastSavedAt >= STUDY_PERSIST_INTERVAL_MS) {
+    saveState();
+    studyTimerLastSavedAt = now;
+  }
+  updateStudyTimerControl();
+}
+
+function noteStudyActivity(event) {
+  if (event?.target?.closest?.('[data-action="toggle-study-timer"]')) return;
+  if (!currentStudyContext() || !studyPageIsVisible()) return;
+  const session = currentStudySession();
+  if (!session) {
+    syncStudyTimerForCurrentView();
+    return;
+  }
+  if (session.status === 'paused') {
+    if (session.pauseReason !== 'manual') resumeStudyTimer({ quiet: true });
+    return;
+  }
+  if (session.status !== 'active') return;
+  tickStudyTimer();
+  if (session.status === 'active') {
+    studyTimerLastActivity = studyClockNow();
+    updateStudyTimerControl();
+  } else if (session.pauseReason !== 'manual') {
+    resumeStudyTimer({ quiet: true });
+  }
+}
+
+function toggleStudyTimer() {
+  const session = currentStudySession();
+  if (!session) return;
+  if (session.status === 'active') pauseStudyTimer('manual');
+  else resumeStudyTimer();
+  updateStudyTimerControl();
+}
+
+function formatStudyDuration(milliseconds) {
+  const seconds = Math.max(0, Math.floor((Number(milliseconds) || 0) / 1000));
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const remainder = seconds % 60;
+  return [hours, minutes, remainder].map((value) => String(value).padStart(2, '0')).join(':');
+}
+
+function studySessionElapsedMilliseconds(session) {
+  if (!session) return 0;
+  let elapsed = session.activeMilliseconds || 0;
+  if (session.status === 'active' && studyTimerInterval !== null && studyTimerLastTick !== null) {
+    const now = studyClockNow();
+    const deadline = (studyTimerLastActivity ?? now) + STUDY_IDLE_TIMEOUT_MS;
+    elapsed += Math.max(0, Math.min(now, deadline) - studyTimerLastTick);
+  }
+  return elapsed;
+}
+
+function studyPauseMessage(session) {
+  if (!session || session.status === 'active') return 'يتوقف عند إخفاء الصفحة أو فقدان التركيز أو بعد 5 دقائق بلا تفاعل.';
+  if (session.pauseReason === 'manual') return 'أوقفتَ المؤقت يدويًا؛ استأنفه عندما تتابع الدراسة.';
+  if (session.pauseReason === 'idle') return 'توقف المؤقت بعد 5 دقائق بلا تفاعل؛ يستأنف مع عودتك للنشاط.';
+  if (session.pauseReason === 'hidden') return 'توقف المؤقت عند مغادرة الصفحة؛ يستأنف عند عودتك إلى التطبيق.';
+  if (session.pauseReason === 'pagehide' || session.pauseReason === 'reload') return 'حُفظت الجلسة متوقفة؛ استأنفها عند متابعة التعلّم.';
+  return 'المؤقت متوقف مؤقتًا؛ استأنفه عند متابعة الدراسة.';
+}
+
+function renderStudyTimerControl() {
+  if (!currentStudyContext()) return '';
+  const session = currentStudySession();
+  if (!session) return '';
+  const running = session.status === 'active' && studyTimerInterval !== null;
+  return `<section class="study-timer-control ${running ? 'is-running' : 'is-paused'}" aria-label="وقت الدراسة الفعلي"><div class="study-timer-copy"><small>وقت الدراسة الفعلي في هذه الجلسة</small><strong id="study-timer-count">${formatStudyDuration(studySessionElapsedMilliseconds(session))}</strong><span id="study-timer-status">${escapeHTML(studyPauseMessage(session))}</span></div><button type="button" class="${running ? 'button-quiet' : 'button-outline'} button-small" data-action="toggle-study-timer">${running ? 'أوقف مؤقتًا' : 'استأنف احتساب الوقت'}</button></section>`;
+}
+
+function updateStudyTimerControl() {
+  const session = currentStudySession();
+  const counter = document.getElementById('study-timer-count');
+  if (!session || !counter) return;
+  counter.textContent = formatStudyDuration(studySessionElapsedMilliseconds(session));
+  const status = document.getElementById('study-timer-status');
+  if (status) status.textContent = studyPauseMessage(session);
+  const button = root.querySelector?.('[data-action="toggle-study-timer"]');
+  if (button) {
+    const running = session.status === 'active' && studyTimerInterval !== null;
+    button.textContent = running ? 'أوقف مؤقتًا' : 'استأنف احتساب الوقت';
+    button.className = `${running ? 'button-quiet' : 'button-outline'} button-small`;
+    const control = button.closest('.study-timer-control');
+    if (control) control.className = `study-timer-control ${running ? 'is-running' : 'is-paused'}`;
+  }
+}
+
+function studyDayActualMilliseconds(item) {
+  return Math.max(0, Number(item?.actualMilliseconds) || 0);
+}
+
 function currentStreak() {
-  const activeDays = new Set(state.studyDays.filter((item) => item.minutes > 0).map((item) => item.date));
+  const activeDays = new Set(state.studyDays.filter((item) => studyDayActualMilliseconds(item) > 0 || (Number(item.legacyEstimatedMinutes) || 0) > 0).map((item) => item.date));
   let cursor = dateKey();
   if (!activeDays.has(cursor)) cursor = addDaysToKey(cursor, -1);
   let count = 0;
@@ -246,7 +581,15 @@ function weekStats() {
     day.setDate(today.getDate() - offset);
     const key = dateKey(day);
     const item = studyDayRecord(key);
-    items.push({ key, label: weekdayNames[day.getDay()], minutes: item ? item.minutes : 0, isToday: offset === 0 });
+    const actualMilliseconds = studyDayActualMilliseconds(item);
+    items.push({
+      key,
+      label: weekdayNames[day.getDay()],
+      actualMilliseconds,
+      minutes: Math.floor(actualMilliseconds / 60000),
+      legacyEstimatedMinutes: Math.max(0, Number(item?.legacyEstimatedMinutes) || 0),
+      isToday: offset === 0,
+    });
   }
   return items;
 }
@@ -907,12 +1250,13 @@ function renderShell() {
             <div class="avatar" title="${profileName}">${escapeHTML(initials)}</div>
           </div>
         </header>
-        <div class="page-container">${viewContent}</div>
+        <div class="page-container">${renderStudyTimerControl()}${viewContent}</div>
       </main>
     </div>`;
 }
 
 function render() {
+  syncStudyTimerForCurrentView();
   renderShell();
 }
 
@@ -936,7 +1280,9 @@ function renderDashboard() {
   const completed = totalCompleted();
   const total = course.lessons.length;
   const percent = total ? Math.round((completed / total) * 100) : 0;
-  const thisWeek = weekStats().reduce((sum, day) => sum + day.minutes, 0);
+  const thisWeekMilliseconds = weekStats().reduce((sum, day) => sum + day.actualMilliseconds, 0);
+  const thisWeek = Math.floor(thisWeekMilliseconds / 60000);
+  const legacyEstimatedTotal = state.studyDays.reduce((sum, day) => sum + Math.max(0, Number(day.legacyEstimatedMinutes) || 0), 0);
   const goal = normalizeDailyMinutes(state.profile.dailyGoal);
   const weekGoal = goal * 5;
   const name = escapeHTML(state.profile.name || 'متعلّم');
@@ -1000,9 +1346,9 @@ function renderDashboard() {
 
     <section class="dashboard-bottom">
       <div class="panel">
-        <div class="week-panel-head"><div><h3 class="panel-title">إيقاعك هذا الأسبوع</h3><p class="panel-subtitle">تقدير من مدد الدروس المكتملة، لا قياس للوقت الفعلي.</p></div><div class="week-total"><strong>${thisWeek}</strong><span>دقيقة تقديريًا</span></div></div>
+        <div class="week-panel-head"><div><h3 class="panel-title">وقت الدراسة هذا الأسبوع</h3><p class="panel-subtitle">قياس فعلي أثناء الدرس والمراجعة والبوابة؛ يتوقف عند إخفاء الصفحة أو فقدان التركيز أو 5 دقائق خمول.</p></div><div class="week-total"><strong>${thisWeek}</strong><span>دقيقة فعلية</span></div></div>
         <div class="week-chart">${renderWeekChart()}</div>
-        <div class="week-footnote">${icon('calendar', 15)} مرجع الأسبوع ${weekGoal} دقيقة · تقدّم استرشادي فقط؛ لا يمنعك من مواصلة أي مهمة.</div>
+        <div class="week-footnote">${icon('calendar', 15)} مرجعك الأسبوعي ${weekGoal} دقيقة اختياري.${legacyEstimatedTotal ? ` تقديرات محفوظة من السجل السابق: ${Math.round(legacyEstimatedTotal)} دقيقة، ولا تدخل في الوقت الفعلي.` : ''}</div>
       </div>
       <div class="panel nudge-panel">
         <div class="nudge-badge">${icon('spark', 19)}</div>
@@ -1017,7 +1363,7 @@ function renderDashboard() {
 
 function renderWeekChart() {
   const days = weekStats();
-  const maxMinutes = Math.max(30, Number(state.profile.dailyGoal) || 15);
+  const maxMinutes = Math.max(30, normalizeDailyMinutes(state.profile.dailyGoal));
   return days.map((day) => {
     const height = day.minutes ? Math.max(6, Math.min(100, (day.minutes / maxMinutes) * 100)) : 3;
     return `<div class="chart-day ${day.isToday ? 'today' : ''}"><div class="chart-bar-wrap"><span class="chart-bar" style="height:${height}%"></span></div><span>${day.label}</span></div>`;
@@ -1229,7 +1575,6 @@ function finishA0Gate(gate) {
   gateSession.completed = true;
   gateSession.mode = 'result';
   state.xp = (Number(state.xp) || 0) + (passed ? Math.max(8, Math.round(8 + score / 10)) : 2);
-  recordStudy(gate.durationMinutes || 10);
   saveState();
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1481,7 +1826,6 @@ function finishLesson(lesson) {
   lessonSession.completed = true;
   lessonSession.mode = 'result';
   state.xp = (Number(state.xp) || 0) + (passed ? Math.max(8, Math.round(8 + score / 10)) : 2);
-  recordStudy(lesson.minutes || 1);
   saveState();
   render();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1550,7 +1894,7 @@ function renderSettings() {
         </form>
       </section>
       <aside class="panel"><h2 class="panel-title">الخصوصية والنسخ الاحتياطي</h2><p class="panel-subtitle">مصممة لتبقى بسيطة ومجانية.</p>
-        <div class="privacy-list"><div class="privacy-row">${icon('shield', 17)}<span>لا يوجد حساب أو قاعدة بيانات أو API مدفوع في التطبيق.</span></div><div class="privacy-row">${icon('bookmark', 17)}<span>التقدم والمفردات محفوظة على هذا الجهاز داخل المتصفح.</span></div><div class="privacy-row">${icon('download', 17)}<span>صدّر نسخة JSON إذا أردت نقل تقدمك إلى جهاز آخر يدويًا.</span></div></div>
+        <div class="privacy-list"><div class="privacy-row">${icon('shield', 17)}<span>لا يوجد حساب أو قاعدة بيانات أو API مدفوع في التطبيق.</span></div><div class="privacy-row">${icon('bookmark', 17)}<span>التقدم والمفردات وسجل وقت الدراسة محفوظة على هذا الجهاز داخل المتصفح.</span></div><div class="privacy-row">${icon('clock', 17)}<span>لا تُحذف سجلات الوقت تلقائيًا بعد 60 يومًا؛ تُزال عند مسح بيانات المتصفح أو إعادة ضبط التقدم.</span></div><div class="privacy-row">${icon('download', 17)}<span>صدّر نسخة JSON إذا أردت نقل تقدمك إلى جهاز آخر يدويًا أو الاحتفاظ بنسخة احتياطية.</span></div></div>
         <div class="data-tools"><button type="button" class="button-outline" data-action="export-progress">${icon('download', 16)} تنزيل نسخة احتياطية</button><label class="button-outline file-label">${icon('upload', 16)} استيراد نسخة JSON<input id="restore-file" type="file" accept="application/json,.json"></label><button type="button" class="button-danger" data-action="reset-progress">${icon('trash', 16)} مسح التقدم من هذا الجهاز</button></div>
         <div class="warning-box">عند نشر المشروع على GitHub/Vercel، تأكد أن إذن الكتب يسمح بتضمين محتواها في الموقع المنشور. اجعل المستودع خاصًا أو استخدم محتوى مرخّصًا إذا لزم ذلك.</div>
       </aside>
@@ -1635,6 +1979,7 @@ function handleClick(event) {
     case 'open-lesson': openLesson(button.dataset.id); break;
     case 'open-daily-task': openDailyPlanTask(button.dataset.taskKey); break;
     case 'defer-daily-plan': deferDailyPlan(); break;
+    case 'toggle-study-timer': toggleStudyTimer(); break;
     case 'open-level':
       stopAudioPlayback();
       selectedLevel = button.dataset.level || 'A0';
@@ -1768,6 +2113,7 @@ function handleChange(event) {
       const parsed = JSON.parse(String(reader.result));
       if (!parsed || typeof parsed !== 'object' || !parsed.profile || typeof parsed.completedLessons !== 'object') throw new Error('invalid');
       const base = freshState();
+      const importedStudySessions = normalizeStudySessions(parsed.studySessions);
       state = {
         ...base,
         ...parsed,
@@ -1779,7 +2125,9 @@ function handleChange(event) {
         performanceEvidence: parsed.performanceEvidence && typeof parsed.performanceEvidence === 'object' ? parsed.performanceEvidence : {},
         learningSessions: normalizeLearningSessions(parsed.learningSessions),
         dailyPlan: normalizeDailyPlan(parsed.dailyPlan),
-        studyDays: Array.isArray(parsed.studyDays) ? parsed.studyDays : []
+        studyDays: normalizeStudyDays(parsed.studyDays),
+        studySessions: importedStudySessions,
+        activeStudySessionId: normalizeActiveStudySessionId(parsed.activeStudySessionId, importedStudySessions)
       };
       lessonSession = null;
       gateSession = null;
@@ -1797,6 +2145,7 @@ function handleChange(event) {
 }
 
 function exportProgress() {
+  if (currentStudySession()?.status === 'active') tickStudyTimer();
   saveState();
   const data = { ...state, exportedAt: new Date().toISOString(), app: 'deutsch-pfad' };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -1814,6 +2163,7 @@ function exportProgress() {
 function resetProgress() {
   const confirmed = window.confirm('هل تريد مسح كل التقدم والإعدادات المحفوظة على هذا الجهاز؟');
   if (!confirmed) return;
+  stopStudyTimerRuntime();
   state = freshState();
   currentView = 'dashboard';
   selectedLevel = 'A0';
@@ -1833,10 +2183,33 @@ async function installApp() {
   render();
 }
 
+root.addEventListener('pointerdown', noteStudyActivity, { passive: true });
+root.addEventListener('touchstart', noteStudyActivity, { passive: true });
+root.addEventListener('wheel', noteStudyActivity, { passive: true });
+root.addEventListener('keydown', noteStudyActivity);
+root.addEventListener('input', noteStudyActivity);
+root.addEventListener('change', noteStudyActivity);
+root.addEventListener('click', noteStudyActivity);
 root.addEventListener('click', handleClick);
 root.addEventListener('submit', handleSubmit);
 root.addEventListener('input', handleInput);
 root.addEventListener('change', handleChange);
+
+if (typeof document.addEventListener === 'function') {
+  document.addEventListener('visibilitychange', () => {
+    if (!studyPageIsVisible()) pauseStudyTimer('hidden');
+    else if (currentStudyContext()) noteStudyActivity();
+    else updateStudyTimerControl();
+  });
+}
+
+window.addEventListener('pagehide', () => pauseStudyTimer('pagehide'));
+window.addEventListener('blur', () => pauseStudyTimer('hidden'));
+window.addEventListener('scroll', noteStudyActivity, { passive: true });
+window.addEventListener('focus', () => {
+  if (currentStudyContext()) noteStudyActivity();
+  else updateStudyTimerControl();
+});
 
 window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();

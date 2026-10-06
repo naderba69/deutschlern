@@ -45,6 +45,8 @@ function makeHarness(savedState) {
     },
     setTimeout,
     clearTimeout,
+    setInterval: () => 1,
+    clearInterval() {},
     FileReader: FakeFileReader,
     document: {
       getElementById: (id) => elements[id] || { addEventListener() {} },

@@ -50,6 +50,8 @@ const context = {
   URL,
   setTimeout,
   clearTimeout,
+  setInterval: () => 1,
+  clearInterval() {},
   document: { getElementById: (id) => elements[id] || { addEventListener() {} } },
   localStorage: {
     getItem: () => JSON.stringify(savedState),
