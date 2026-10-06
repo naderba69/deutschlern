@@ -3,8 +3,8 @@
 **تاريخ الحالة:** 2026-10-06
 **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 **الفرع الإلزامي:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ أو تدفع فرعًا آخر.
-**Commit إنتاج B2.9 المحلي:** `d2847eb5bac58b60ca66e2d5e492e022c10c6174` (`feat: produce B2.9 assessment`). الرأس البعيد قبل دفعة B2.9 كان `6687baa26b8062f2bd4d32d16c82564984f27dd5`. حدّث ملفي التسليم على الفرع نفسه ثم ادفعهما مع دفعة الإنتاج.
-**PR #1:** آخر حالة مؤكدة قبل دفعة B2.9: مفتوحة وغير مدمجة، والرأس `6687baa26b8062f2bd4d32d16c82564984f27dd5`؛ فحص Vercel أظهر `upgradeToPro=build-rate-limit` (قيد خارجي، لا فشل بناء محلي). لم تُفحص حالة PR بعد Commit B2.9 هذا؛ بعد الرفع شغّل `gh pr view 1` و`gh pr checks 1`. لا تدمجها.
+**Commit إنتاج B2.9:** `d2847eb5bac58b60ca66e2d5e492e022c10c6174` (`feat: produce B2.9 assessment`). الرأس البعيد قبل الدفعة كان `6687baa26b8062f2bd4d32d16c82564984f27dd5`. دُفع Commit الإنتاج وملفا التسليم المحدّثان؛ Commit توثيق التسليم الأول `88e1438a2c0c64a0db5c79cd6351964de9434727`. عند آخر فحص Git كان الفرع والرأس البعيد متطابقين عند هذا الـcommit، والشجرة نظيفة.
+**PR #1:** بعد دفع `88e1438a2c0c64a0db5c79cd6351964de9434727` ظلت مفتوحة وغير مدمجة (`mergedAt: null`) ورأسها مطابقًا له. فحص `gh pr checks 1`: Vercel pending وVercel Preview Comments pass؛ أعِد الفحص بعد اكتمال Vercel أو عند أي دفع جديد. تاريخيًا، قبل دفعة B2.9 كان Vercel قد أظهر `upgradeToPro=build-rate-limit`، وهو قيد خارجي لا فشل بناء محلي. لا تدمج PR #1.
 
 ## تعليمات الاستئناف
 

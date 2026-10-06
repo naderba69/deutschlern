@@ -4,7 +4,7 @@
 **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ فرعًا آخر.
 **Commit إنتاج B2.9:** `d2847eb5bac58b60ca66e2d5e492e022c10c6174` — `feat: produce B2.9 assessment`.
-**الرأس البعيد قبل هذه الدفعة:** `6687baa26b8062f2bd4d32d16c82564984f27dd5`؛ نُفّذ Commit الإنتاج على الفرع الثابت، ولم يُدفع بعد وقت إعداد هذا الملف. أُعدّ هذا التسليم وموجّه الاستمرار في التحديث التالي على الفرع نفسه.
+**الرأس البعيد قبل هذه الدفعة:** `6687baa26b8062f2bd4d32d16c82564984f27dd5`. دُفع Commit الإنتاج وملفا التسليم المحدّثان إلى الفرع الثابت. عند آخر فحص Git بعد الدفع كان `HEAD` و`origin/arena/01a1036f-deutschlern` متطابقين عند `88e1438a2c0c64a0db5c79cd6351964de9434727`، وكانت شجرة العمل نظيفة. Commit التوثيق الأول لهذه الدفعة هو `88e1438a2c0c64a0db5c79cd6351964de9434727` (`docs: update B2.9 production handoff`).
 
 ## تسوية اختلاف Git قبل الإنتاج
 
@@ -41,7 +41,7 @@
 11. `data/course-improvement-plan.md`
 12. `data/curriculum-audit.md`
 
-ويُحدّث ملف التسليم هذا و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md` في Commit التوثيق التالي على الفرع نفسه.
+حُدّث ملف التسليم هذا و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md` في Commit التوثيق `88e1438a2c0c64a0db5c79cd6351964de9434727` ودُفعا إلى الفرع الثابت.
 
 ## الفحوص والنتائج الفعلية
 
@@ -60,8 +60,9 @@
 
 ## PR #1 والرفع
 
-- آخر حالة مؤكدة قبل دفعة B2.9: PR #1 مفتوحة وغير مدمجة، وكان رأسها `6687baa26b8062f2bd4d32d16c82564984f27dd5`. ظهر فشل Vercel الخارجي بسبب `upgradeToPro=build-rate-limit`؛ لا يُنسب ذلك إلى فشل البناء المحلي.
-- Commit إنتاج B2.9 `d2847eb5bac58b60ca66e2d5e492e022c10c6174` موجود محليًا على الفرع الصحيح. بعد Commit التسليم، ادفع التحديثات **إلى `arena/01a1036f-deutschlern` فقط**، ثم أعد تشغيل `gh pr view 1` و`gh pr checks 1`. لا تدمج PR #1.
+- قبل دفعة B2.9 كانت PR #1 مفتوحة وغير مدمجة عند الرأس `6687baa26b8062f2bd4d32d16c82564984f27dd5`، وفشل Vercel الخارجي وقتها بسبب `upgradeToPro=build-rate-limit`؛ لا يُنسب ذلك إلى فشل البناء المحلي.
+- بعد دفع Commit التوثيق `88e1438a2c0c64a0db5c79cd6351964de9434727`، أظهر `gh pr view 1` أن PR #1 ما زالت `OPEN` وغير مدمجة (`mergedAt: null`)، ورأسها يطابق `88e1438a2c0c64a0db5c79cd6351964de9434727`. أظهر `gh pr checks 1`: فحص **Vercel pending**، و**Vercel Preview Comments pass**؛ لذا خرج الأمر 1 بسبب الفحص المعلّق لا بسبب فشل. أعد الفحص إذا اكتمل أو تغيّر رأس PR.
+- Commitا الإنتاج والتوثيق `d2847eb5bac58b60ca66e2d5e492e022c10c6174` و`88e1438a2c0c64a0db5c79cd6351964de9434727` دُفعا إلى `arena/01a1036f-deutschlern` فقط. لا تدمج PR #1.
 
 ## ما بقي والخطوة التالية
 
