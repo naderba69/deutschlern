@@ -3,8 +3,9 @@
 **تاريخ الحالة:** 2026-10-06
 **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
 **الفرع الإلزامي:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ أو تدفع فرعًا آخر.
-**Commit إنتاج B2.10 المحلي:** `cbb7466d220ae1c17f1dbd6cda3789cc1c206760` (`feat: produce B2.10 assessment`)، مبني على رأس تسليم B2.9 `a53ba086abe2f78f6cc1f2a779f3317ed96c3b5f`. Commit التسليم الحالي سيُنشأ بعد تحديث الملفين، ثم تُدفع الدفعة إلى الفرع الثابت فقط. افحص `git log` لمعرفة Commit التوثيق والرأس النهائي.
-**PR #1:** قبل دفعة B2.10 كانت مفتوحة وغير مدمجة (`mergedAt: null`) عند الرأس `a53ba086abe2f78f6cc1f2a779f3317ed96c3b5f`، وفحصا Vercel وVercel Preview Comments ناجحين. لم يُفحص الرأس الجديد بعد دفع B2.10؛ أعد `gh pr view 1` و`gh pr checks 1` بعد الرفع. لا تدمج PR #1.
+**Commit إنتاج B2.10:** `cbb7466d220ae1c17f1dbd6cda3789cc1c206760` (`feat: produce B2.10 assessment`)، مبني على رأس B2.9 `a53ba086abe2f78f6cc1f2a779f3317ed96c3b5f`.
+**Commit التسليم الأول:** `1b9d991bf7f3cf28eebf25fb583a5664af25e6f3` (`docs: update B2.10 production handoff`)؛ دُفع مع Commit الإنتاج إلى الفرع الثابت. بعد الدفع طابق `HEAD` المحلي والبعيد هذا الـcommit وكانت الشجرة نظيفة؛ افحص الحالة مجددًا بعد أي تحديث لاحق.
+**PR #1:** بعد دفع Commit التسليم الأول كانت مفتوحة وغير مدمجة (`mergedAt: null`) ورأسها `1b9d991bf7f3cf28eebf25fb583a5664af25e6f3`. أظهر `gh pr checks 1` فحص Vercel `pending` (خرج الأمر 1 بسبب الفحص المعلّق، لا بسبب فشل بناء محلي). أعد `gh pr view 1` و`gh pr checks 1` بعد أي دفع جديد أو تغيّر للرأس. لا تدمج PR #1.
 
 ## تعليمات الاستئناف
 
