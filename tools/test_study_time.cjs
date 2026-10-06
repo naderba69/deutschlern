@@ -187,6 +187,22 @@ function click(context, action, data = {}) {
   vm.runInContext("tickStudyTimer()", legacy.context);
   assert.equal(appValue(legacy.context, "currentStudySession().activeMilliseconds"), afterHiddenPause + 10_000, "returning activity should resume a hidden session without counting the gap");
 
+  const beforeBlur = appValue(legacy.context, "currentStudySession().activeMilliseconds");
+  advance(8_000);
+  legacy.setFocused(false);
+  legacy.windowListeners.get("blur")();
+  const afterBlurPause = appValue(legacy.context, "currentStudySession().activeMilliseconds");
+  assert.equal(afterBlurPause, beforeBlur + 8_000, "losing focus should flush the active interval before pausing");
+  assert.equal(appValue(legacy.context, "currentStudySession().pauseReason"), "hidden", "window blur should pause the timer");
+  advance(60_000);
+  legacy.setFocused(true);
+  legacy.windowListeners.get("focus")();
+  assert.equal(appValue(legacy.context, "currentStudySession().status"), "active", "regaining focus should resume a non-manually paused session");
+  assert.equal(appValue(legacy.context, "currentStudySession().activeMilliseconds"), afterBlurPause, "unfocused time must not accrue");
+  advance(2_000);
+  vm.runInContext("tickStudyTimer()", legacy.context);
+  assert.equal(appValue(legacy.context, "currentStudySession().activeMilliseconds"), afterBlurPause + 2_000, "time should accrue again only after focus returns");
+
   legacy.windowListeners.get("pagehide")();
   const beforeReload = legacy.readState();
   const savedSessionId = beforeReload.activeStudySessionId;
@@ -229,7 +245,7 @@ function click(context, action, data = {}) {
   assert.equal(appValue(midnight.context, "studyDayRecord('2026-10-07').actualMilliseconds"), 30_000, "active time before local midnight should stay on the first day");
   assert.equal(appValue(midnight.context, "studyDayRecord('2026-10-08').actualMilliseconds"), 60_000, "active time after local midnight should roll into the next day");
 
-  console.log("PASS: measured active time, five-minute idle pause, manual pause/resume, hidden-page pause, reload recovery, midnight splitting, actual-only weekly totals, separated legacy estimates, long-term retention, and backup export/import.");
+  console.log("PASS: measured active time, five-minute idle pause, manual pause/resume, hidden-page and focus-loss pause/recovery, reload recovery, midnight splitting, actual-only weekly totals, separated legacy estimates, long-term retention, and backup export/import.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

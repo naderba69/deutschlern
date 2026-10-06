@@ -7,9 +7,12 @@
 - **Commit أول تسليم للبند 7:** `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` — `docs: hand off actual study time`؛ دُفع مع commit التنفيذ إلى الفرع الثابت.
 - **Commit تسليم التحقق السابق:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`.
 - **Commit التسليم التالي:** `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb` — `docs: update handoff with final checks`.
-- **آخر HEAD مفحوص عند الاستئناف:** `8f647b5a6d4acccd1e5616a29f9dc088064fffd4` — `docs: record latest study time checks`.
-- **GitHub عند HEAD `8f647b5a6d4acccd1e5616a29f9dc088064fffd4`:** PR #1 `OPEN`, `mergedAt: null`, والرأس `arena/01a1036f-deutschlern`. Vercel وVercel Preview Comments كلاهما `pass` في `gh pr checks 1`.
-- **حالة Git عند الاستئناف:** `HEAD` والمرجع البعيد تطابقا على `8f647b5a6d4acccd1e5616a29f9dc088064fffd4`؛ الشجرة نظيفة. بدأ checkout محليًا عند `88f3c06` مع نسخ الملفات الأحدث كاختلافات محلية؛ فُحصت ملفات tracked ومقارنة كل الملفات غير المتتبعة بمحتوى origin، وثبت التطابق، ثم استُخدم `git reset --mixed origin/arena/01a1036f-deutschlern` للمحاذاة بلا تغيير محتوى.
+- **Commit نتائج التسليم:** `8f647b5a6d4acccd1e5616a29f9dc088064fffd4` — `docs: record latest study time checks`.
+- **Commit توثيق الاستئناف:** `6b5626baf9af89828c26949a7c1d70eab8118a2a` — `docs: record resumed validation state`.
+- **محاذاة الاستئناف السابقة:** بدأ checkout محليًا عند `88f3c06` مع نسخ الملفات الأحدث كاختلافات محلية؛ فُحصت جميع الملفات tracked و379 ملفًا غير متتبع، وكانت مطابقة للبعيد بايتًا، ثم استُخدم `git reset --mixed origin/arena/01a1036f-deutschlern` للمحاذاة بلا تغيير محتوى.
+- **آخر HEAD مفحوص قبل متابعة اختبار التركيز:** `6b5626baf9af89828c26949a7c1d70eab8118a2a`؛ طابق الفرع البعيد وكانت الشجرة نظيفة قبل تعديل الاختبار الحالي.
+- **GitHub عند HEAD `6b5626baf9af89828c26949a7c1d70eab8118a2a`:** PR #1 `OPEN`, `mergedAt: null`, على الفرع الثابت؛ Vercel وVercel Preview Comments كلاهما `pass` في `gh pr checks 1`.
+- **معاينة الاستئناف:** الخادم الحالي بالعملية `deutschlern-timer-preview-229e1ea7` على المنفذ 8000؛ أعادت الصفحة وملفات التطبيق والمنهج HTTP 200. لا يتوفر متصفح آلي في بيئة التطوير.
 - **دفعة البند 6 التاريخية:** `4a9eaab` — `feat: add flexible daily learning plan`، على الأب `1ad0b192012e6316a1fd64f040564d9d5d27ded9`. دُفعت مع تحديثي التسليم أدناه؛ تحقّق من `git status`, `HEAD` والمرجع البعيد بعد الاستئناف.
 - **PR #1 بعد دفعة البند 6 (حالة تاريخية):** `OPEN` و`mergedAt: null` عند الرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments (`pass`). هذا الفحص سبق تحديث التسليم التوثيقي اللاحق؛ أعد التحقق من الرأس النهائي بعد دفعه. لا تدمج PR #1.
 - **المتبقي التالي:** تجربة المؤقت يدويًا في المعاينة الحية على متصفح/هاتف؛ لم تتوفر في بيئة التطوير أداة متصفح آلي، وفحص HTTP وحده لا يثبت العرض أو التفاعل. الخادم يعمل على المنفذ 8000. أعد فحص PR #1 بعد أي دفع توثيقي لاحق؛ لا تدمج PR #1.
@@ -35,15 +38,17 @@
 | الأمر / الفحص | النتيجة |
 |---|---|
 | `node --check` على `app.js`, `service-worker.js`, `tools/test_progression.cjs`, `tools/test_session_persistence.cjs`, `tools/test_daily_plan.cjs`, `tools/test_study_time.cjs` | نجح في الملفات الستة. |
-| `node tools/test_study_time.cjs` | نجح: النشاط المقاس، حد الخمول 5 دقائق، الإيقاف والاستئناف اليدوي، إخفاء الصفحة والعودة، استعادة جلسة غير مكتملة بعد إعادة التحميل، قسمة منتصف الليل، إجمالي أسبوعي فعلي فقط، فصل التقديرات القديمة، الاحتفاظ لما بعد 60 يومًا، وتصدير/استيراد JSON. |
+| `node tools/test_study_time.cjs` | نجح: النشاط المقاس، حد الخمول 5 دقائق، الإيقاف والاستئناف اليدوي، إخفاء الصفحة وفقدان التركيز والعودة، استعادة جلسة غير مكتملة بعد إعادة التحميل، قسمة منتصف الليل، إجمالي أسبوعي فعلي فقط، فصل التقديرات القديمة، الاحتفاظ لما بعد 60 يومًا، وتصدير/استيراد JSON. |
 | `node tools/test_progression.cjs` | نجح؛ لم تتأثر أقفال المسار أو تقييمات المحتوى أو الأصول. |
 | `node tools/test_session_persistence.cjs` | نجح؛ حفظ الجلسة/بوابة A0 والنسخة الاحتياطية كما سبق. |
 | `node tools/test_daily_plan.cjs` | نجح؛ مراجعة المفردات والخطة اليومية والترحيل والاستئناف والنسخة الاحتياطية. |
 | `python3 tools/verify_course.py` | نجح؛ 53 درسًا، 428 عنوان تمرين، 55 قسم حوار، 754 مفردة، 53 تقييمًا جاهزًا، 530 سؤالًا و10 للبوابة، 109 مهمات أداء، و142 أصلًا/312 مقطعًا؛ HTML متوازن. |
 | `git diff --check` | نجح. |
-| معاينة HTTP عبر `python3 -m http.server 8000 --bind 0.0.0.0` | عادت `/`, `/app.js`, `/styles.css`, `/service-worker.js`, و`/data/course.json` بحالة 200. الخادم الحالي يعمل بالعملية `deutschlern-live-preview-3f8b9943` على المنفذ 8000. لم تتوفر أداة متصفح آلي؛ لا يُعد فحص HTTP تحققًا بصريًا أو تفاعليًا. |
+| معاينة HTTP عبر `python3 -m http.server 8000 --bind 0.0.0.0` | عادت `/`, `/app.js`, `/styles.css`, `/service-worker.js`, و`/data/course.json` بحالة 200. الخادم الحالي يعمل بالعملية `deutschlern-timer-preview-229e1ea7` على المنفذ 8000. لم تتوفر أداة متصفح آلي؛ لا يُعد فحص HTTP تحققًا بصريًا أو تفاعليًا. |
 
-**فحوص الاستئناف بعد محاذاة Git:** أُعيد تشغيل `node --check`، واختبارات `test_study_time`, `test_progression`, `test_session_persistence`, `test_daily_plan`, و`python3 tools/verify_course.py`، و`git diff --check`؛ نجحت جميعها، ولم تظهر تغييرات محتوى جديدة.
+**متابعة هذه الجولة (2026-10-06، متابعة تحقق فقط):** أُضيف إلى `tools/test_study_time.cjs` اختبار صريح لحدثي فقد التركيز `blur` والعودة `focus`: يثبت حفظ الزمن النشط قبل التوقف، وعدم احتساب فترة غياب التركيز، ثم استئناف العد بعد العودة. لا تغيير في منطق التطبيق أو المنهج أو الصوت. أُعيد تشغيل جميع اختبارات الوقت والتدرج وحفظ الجلسة والخطة اليومية والتحقق من المنهج وفحص الصياغة؛ كلها ناجحة. شُغلت معاينة HTTP على المنفذ 8000 وتحققت استجابة 200 للصفحة وملفات JavaScript وCSS والعامل بالخلفية وبيانات المنهج. لم يتوفر متصفح آلي، لذلك لا أدّعي تحققًا بصريًا؛ يبقى الاختبار اليدوي من واجهة المعاينة على حاسوب/هاتف مطلوبًا.
+
+**فحوص الاستئناف بعد محاذاة Git:** أُعيد تشغيل `node --check`، واختبارات `test_study_time`, `test_progression`, `test_session_persistence`, `test_daily_plan`, و`python3 tools/verify_course.py`، و`git diff --check`؛ نجحت جميعها. بعد ذلك أضيف اختبار `blur`/`focus` وأُعيدت جميع الفحوص ذات الصلة ونجحت.
 
 **سجل الدفع الحالي عند آخر فحص مكتمل:** commit التطبيق والاختبارات `02cfc352229e733e5ef6250988ef3b437ffe29c6`، ثم commits التسليم `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa`, `ef86ecbd1d933df3285093a6d5040c996865a739`, `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`, و`8f647b5a6d4acccd1e5616a29f9dc088064fffd4`; دُفعت على `arena/01a1036f-deutschlern`. طابق `HEAD` والبعيد عند `8f647b5` وكانت الشجرة نظيفة. PR #1 `OPEN` وغير مدمجة؛ Vercel وVercel Preview Comments `pass` عند هذا الرأس. هذا التحديث يوثق فحص الاستئناف؛ أعد فحص الفحوص على أي رأس لاحق ولا تدمج PR #1.
 
