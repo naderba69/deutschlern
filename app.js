@@ -39,6 +39,55 @@ function icon(name, size = 20) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name] || ICONS.spark}</svg>`;
 }
 
+const DAILY_TIME_REFERENCE_DEFAULT = 120;
+const DAILY_TIME_REFERENCE_MIN = 5;
+const DAILY_TIME_REFERENCE_MAX = 1440;
+const DAILY_PLAN_STATUSES = ['pending', 'done', 'deferred'];
+
+function normalizeDailyMinutes(value) {
+  const minutes = Number(value);
+  if (!Number.isFinite(minutes) || minutes < DAILY_TIME_REFERENCE_MIN) return DAILY_TIME_REFERENCE_DEFAULT;
+  return Math.round(Math.min(minutes, DAILY_TIME_REFERENCE_MAX));
+}
+
+function validDateKey(value) {
+  return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value);
+}
+
+function normalizeDailyPlanTask(task, planDate) {
+  if (!task || typeof task !== 'object' || !DAILY_PLAN_STATUSES.includes(task.status)) return null;
+  const originDate = validDateKey(task.originDate) ? task.originDate : planDate;
+  const carriedDays = Number.isInteger(task.carriedDays) && task.carriedDays >= 0 ? Math.min(task.carriedDays, 3650) : 0;
+  if (task.kind === 'review' && task.key === 'review') {
+    return { key: 'review', kind: 'review', status: task.status, originDate, carriedDays, noWork: task.noWork === true };
+  }
+  if (task.kind === 'lesson' && typeof task.targetId === 'string' && task.targetId.trim()) {
+    return { key: `lesson:${task.targetId}`, kind: 'lesson', targetId: task.targetId, status: task.status, originDate, carriedDays };
+  }
+  if (task.kind === 'gate' && task.targetId === 'A0-A1') {
+    return { key: 'gate:A0-A1', kind: 'gate', targetId: 'A0-A1', status: task.status, originDate, carriedDays };
+  }
+  return null;
+}
+
+function normalizeDailyPlan(value) {
+  if (!value || typeof value !== 'object' || !validDateKey(value.date) || !Array.isArray(value.coreTasks)) return null;
+  const tasks = [];
+  const seen = new Set();
+  for (const rawTask of value.coreTasks.slice(0, 8)) {
+    const task = normalizeDailyPlanTask(rawTask, value.date);
+    if (!task || seen.has(task.key)) continue;
+    seen.add(task.key);
+    tasks.push(task);
+  }
+  return {
+    version: 1,
+    date: value.date,
+    coreTasks: tasks,
+    deferredAt: typeof value.deferredAt === 'string' ? value.deferredAt : null,
+  };
+}
+
 function freshLearningSessions() {
   return { currentView: 'dashboard', selectedLevel: 'A0', active: null, lessons: {}, gate: null };
 }
@@ -61,13 +110,14 @@ function normalizeLearningSessions(value) {
 
 function freshState() {
   return {
-    profile: { name: 'متعلّم', dailyGoal: 15, focus: 'المحادثة', startLevel: 'A0' },
+    profile: { name: 'متعلّم', dailyGoal: DAILY_TIME_REFERENCE_DEFAULT, focus: 'المحادثة', startLevel: 'A0' },
     completedLessons: {},
     levelChecks: {},
     wordReviews: {},
     audioTranscriptUnlocks: {},
     performanceEvidence: {},
     learningSessions: freshLearningSessions(),
+    dailyPlan: null,
     xp: 0,
     studyDays: []
   };
@@ -75,6 +125,7 @@ function freshState() {
 
 function normalizeProfile(profile = {}) {
   const normalized = { ...freshState().profile, ...profile, startLevel: 'A0' };
+  normalized.dailyGoal = normalizeDailyMinutes(normalized.dailyGoal);
   delete normalized.placementScore;
   delete normalized.placementDate;
   return normalized;
@@ -95,6 +146,7 @@ function loadState() {
       audioTranscriptUnlocks: saved.audioTranscriptUnlocks && typeof saved.audioTranscriptUnlocks === 'object' ? saved.audioTranscriptUnlocks : {},
       performanceEvidence: saved.performanceEvidence && typeof saved.performanceEvidence === 'object' ? saved.performanceEvidence : {},
       learningSessions: normalizeLearningSessions(saved.learningSessions),
+      dailyPlan: normalizeDailyPlan(saved.dailyPlan),
       studyDays: Array.isArray(saved.studyDays) ? saved.studyDays : []
     };
   } catch {
@@ -432,6 +484,218 @@ function isLessonAccessible(lesson) {
   return step?.type === 'lesson' && step.lesson.id === lesson.id;
 }
 
+function dailyLearningTaskForStep(step = nextLearningStep()) {
+  if (step?.type === 'lesson') return { key: `lesson:${step.lesson.id}`, kind: 'lesson', targetId: step.lesson.id };
+  if (step?.type === 'a0-gate') return { key: 'gate:A0-A1', kind: 'gate', targetId: 'A0-A1' };
+  return null;
+}
+
+function dailyTaskIsComplete(task) {
+  if (!task) return false;
+  if (task.kind === 'review') return task.status === 'done';
+  if (task.kind === 'lesson') return isLessonMastered(findLesson(task.targetId));
+  if (task.kind === 'gate') return isA0TransitionMastered();
+  return false;
+}
+
+function createDailyPlanTask(spec, date, previous = null, previousDate = null) {
+  const isReviewWithoutWork = spec.kind === 'review' && spec.noWork === true;
+  if (isReviewWithoutWork) return { ...spec, status: 'done', originDate: date, carriedDays: 0 };
+  if (previous && !dailyTaskIsComplete(previous) && previous.status !== 'done') {
+    return {
+      ...spec,
+      status: 'pending',
+      originDate: previous.originDate || previousDate || date,
+      carriedDays: Math.min(3650, (previous.carriedDays || 0) + (previousDate && previousDate < date ? 1 : 0)),
+    };
+  }
+  return { ...spec, status: dailyTaskIsComplete(spec) ? 'done' : 'pending', originDate: date, carriedDays: 0 };
+}
+
+function createDailyPlan(date = dateKey(), previous = null) {
+  const previousPlan = normalizeDailyPlan(previous);
+  const previousTasks = previousPlan?.coreTasks || [];
+  const coreTasks = [];
+  const previousReview = previousTasks.find((task) => task.kind === 'review');
+  const reviewSpec = { key: 'review', kind: 'review', noWork: dueWordsCount() === 0 };
+  coreTasks.push(createDailyPlanTask(reviewSpec, date, reviewSpec.noWork ? null : previousReview, previousPlan?.date));
+
+  for (const oldTask of previousTasks.filter((task) => ['lesson', 'gate'].includes(task.kind))) {
+    if (dailyTaskIsComplete(oldTask)) continue;
+    const accessible = oldTask.kind === 'lesson'
+      ? isLessonAccessible(findLesson(oldTask.targetId))
+      : isLevelMastered('A0') && !isA0TransitionMastered();
+    if (!accessible) continue;
+    coreTasks.push(createDailyPlanTask({ key: oldTask.key, kind: oldTask.kind, targetId: oldTask.targetId }, date, oldTask, previousPlan.date));
+  }
+  const currentTask = dailyLearningTaskForStep();
+  if (currentTask && !coreTasks.some((task) => task.key === currentTask.key)) {
+    const oldTask = previousTasks.find((task) => task.key === currentTask.key);
+    coreTasks.push(createDailyPlanTask(currentTask, date, oldTask, previousPlan?.date));
+  }
+  return { version: 1, date, coreTasks, deferredAt: null };
+}
+
+function syncDailyPlan(plan) {
+  let changed = false;
+  for (const task of plan.coreTasks) {
+    if (task.kind === 'review') {
+      if (task.status !== 'done' && dueWordsCount() === 0) {
+        task.status = 'done';
+        task.noWork = true;
+        changed = true;
+      }
+      continue;
+    }
+    if (dailyTaskIsComplete(task) && task.status !== 'done') {
+      task.status = 'done';
+      changed = true;
+    } else if (!dailyTaskIsComplete(task) && task.status === 'done') {
+      task.status = 'pending';
+      changed = true;
+    }
+  }
+  return changed;
+}
+
+function ensureDailyPlan() {
+  if (!course) return null;
+  const today = dateKey();
+  let plan = normalizeDailyPlan(state.dailyPlan);
+  let changed = false;
+  if (!plan) {
+    plan = createDailyPlan(today);
+    changed = true;
+  } else if (plan.date !== today) {
+    plan = createDailyPlan(today, plan);
+    changed = true;
+  }
+  if (syncDailyPlan(plan)) changed = true;
+  state.dailyPlan = plan;
+  if (changed) saveState();
+  return plan;
+}
+
+function dailyPlanCoreComplete(plan = ensureDailyPlan()) {
+  return Boolean(plan && plan.coreTasks.every(dailyTaskIsComplete));
+}
+
+function nextOptionalPlanStep(plan = ensureDailyPlan()) {
+  if (!dailyPlanCoreComplete(plan)) return null;
+  const step = nextLearningStep();
+  if (step?.type === 'lesson') return { type: 'lesson', lesson: step.lesson };
+  if (step?.type === 'a0-gate') return { type: 'gate', gate: step.gate };
+  if (step?.type === 'complete') return { type: 'review' };
+  return null;
+}
+
+function completeDailyReviewTask() {
+  const plan = ensureDailyPlan();
+  const task = plan?.coreTasks.find((item) => item.kind === 'review');
+  if (!task || task.noWork || task.status === 'done') return;
+  task.status = 'done';
+  plan.deferredAt = null;
+  saveState();
+}
+
+function deferDailyPlan() {
+  const plan = ensureDailyPlan();
+  if (!plan) return;
+  let deferred = 0;
+  for (const task of plan.coreTasks) {
+    if (dailyTaskIsComplete(task) || task.status === 'done') continue;
+    task.status = 'deferred';
+    deferred += 1;
+  }
+  if (!deferred) {
+    showToast('أنجزت مهام اليوم الأساسية بالفعل؛ يمكنك متابعة التوسع الاختياري.');
+    return;
+  }
+  plan.deferredAt = new Date().toISOString();
+  saveState();
+  render();
+  showToast('أُجّلت المهام الأساسية؛ ستُرحّل تلقائيًا إلى خطة الغد بلا عقوبة. ويمكنك استئنافها اليوم إن رغبت.');
+}
+
+function openDailyPlanTask(taskKey) {
+  const plan = ensureDailyPlan();
+  const task = plan?.coreTasks.find((item) => item.key === taskKey);
+  if (!task || dailyTaskIsComplete(task)) return;
+  if (task.status === 'deferred') task.status = 'pending';
+  plan.deferredAt = null;
+  saveState();
+  if (task.kind === 'review') {
+    if (dueWordsCount() === 0) {
+      completeDailyReviewTask();
+      render();
+      return;
+    }
+    startReviewSession();
+    currentView = 'review';
+    saveState();
+    render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else if (task.kind === 'lesson') {
+    openLesson(task.targetId);
+  } else if (task.kind === 'gate') {
+    startA0GateQuiz();
+  }
+}
+
+function formatStudyEstimate(minutes) {
+  const value = normalizeDailyMinutes(minutes);
+  if (value === 120) return '120 دقيقة (ساعتان)';
+  if (value > 60 && value % 60 === 0) return `${value / 60} ساعات`;
+  return `${value} دقيقة`;
+}
+
+function getDailyPlanTaskDescription(task) {
+  if (task.kind === 'review') {
+    return task.noWork ? 'لا توجد بطاقات مستحقة؛ يمكنك متابعة هدف التعلّم مباشرة.' : `مراجعة قصيرة لما استحق من المفردات، حتى ${Math.min(12, dueWordsCount())} بطاقة.`;
+  }
+  if (task.kind === 'lesson') {
+    const lesson = findLesson(task.targetId);
+    return lesson ? `${lesson.level} · الهدف: ${lesson.objective} ادرس الشرح وتدرّب، ثم أثبت الإتقان بالمهام والتقييم. المدة ${lesson.durationLabel || `${lesson.minutes} دقيقة`} تقديرية ويمكن تقسيمها على جلسات.` : 'تابع الدرس المتاح من موضع توقفك.';
+  }
+  if (task.kind === 'gate') return `تقييم انتقال A0 إلى A1 مع مهام أداء تثبت الإتقان · ${course?.a0TransitionCheck?.durationLabel || 'مدة تقديرية'}؛ ليس حدًا زمنيًا.`;
+  return '';
+}
+
+function renderDailyPlanTask(task, index) {
+  const done = dailyTaskIsComplete(task);
+  const status = done ? 'أُنجز' : task.status === 'deferred' ? 'مؤجّل' : task.carriedDays > 0 ? 'مُرحّل' : 'أساسي';
+  const classes = `daily-plan-task ${done ? 'is-done' : task.status === 'deferred' ? 'is-deferred' : ''}`;
+  const carryNote = !done && task.carriedDays > 0 ? `<small class="daily-plan-carry">مُرحّل من ${escapeHTML(task.originDate)} بلا عقوبة</small>` : '';
+  const title = task.kind === 'review'
+    ? 'مراجعة الكلمات المستحقة'
+    : task.kind === 'lesson'
+      ? findLesson(task.targetId)?.title || 'الدرس المتاح'
+      : 'بوابة الإتقان A0 → A1';
+  const action = done
+    ? '<span class="daily-plan-done">تمت المهمة</span>'
+    : `<button type="button" class="button-outline button-small" data-action="open-daily-task" data-task-key="${escapeHTML(task.key)}">${task.status === 'deferred' ? 'تابع الآن' : task.kind === 'review' ? 'ابدأ مراجعة قصيرة' : task.kind === 'gate' ? 'ابدأ التقييم' : 'تابع الدرس'}</button>`;
+  return `<li class="${classes}"><span class="daily-plan-index">${done ? icon('check', 15) : String(index + 1).padStart(2, '0')}</span><div class="daily-plan-task-copy"><div class="daily-plan-task-heading"><strong>${escapeHTML(title)}</strong><span class="daily-plan-status ${done ? 'is-done' : task.status === 'deferred' ? 'is-deferred' : ''}">${status}</span></div><p>${escapeHTML(getDailyPlanTaskDescription(task))}</p>${carryNote}</div>${action}</li>`;
+}
+
+function renderDailyPlan() {
+  const plan = ensureDailyPlan();
+  if (!plan) return '';
+  const coreTasks = plan.coreTasks;
+  const doneCount = coreTasks.filter(dailyTaskIsComplete).length;
+  const coreComplete = dailyPlanCoreComplete(plan);
+  const optional = nextOptionalPlanStep(plan);
+  const optionalMarkup = coreComplete
+    ? optional?.type === 'lesson'
+      ? `<div class="daily-plan-optional"><div><small>توسّع اختياري · لا يغيّر عتبة الإتقان</small><strong>${escapeHTML(optional.lesson.title)}</strong><p>أكملت الأساسيات؛ يمكنك متابعة الخطوة التالية اليوم أو تركها لخطة لاحقة.</p></div><button type="button" class="button-primary button-small" data-action="open-lesson" data-id="${escapeHTML(optional.lesson.id)}">تابع اختياريًا ${icon('arrowLeft', 15)}</button></div>`
+      : optional?.type === 'gate'
+        ? `<div class="daily-plan-optional"><div><small>توسّع اختياري اليوم · يبقى شرط التقدم قائمًا</small><strong>بوابة الإتقان A0 → A1</strong><p>لا يُفتح A1 إلا بعد اجتياز البوابة؛ ويمكنك البدء بها الآن أو في وقت آخر.</p></div><button type="button" class="button-primary button-small" data-action="begin-a0-gate">ابدأ البوابة ${icon('arrowLeft', 15)}</button></div>`
+        : optional?.type === 'review'
+          ? `<div class="daily-plan-optional"><div><small>اختياري</small><strong>راجع درسًا متقنًا</strong><p>الخطوات الأساسية لليوم منجزة. اختر مراجعة إضافية إذا رغبت.</p></div><button type="button" class="button-outline button-small" data-action="navigate" data-view="tracks">اختر درسًا للمراجعة ${icon('arrowLeft', 15)}</button></div>`
+          : '<p class="daily-plan-optional-note">ستظهر المتابعة الاختيارية بعد إتاحة الخطوة التالية.</p>'
+    : `<div class="daily-plan-defer"><p>يمكنك التوقف الآن؛ لا نفقد الإجابات ولا نعتبر التأجيل فشلًا. تبقى المهام الأساسية معلقة حتى تستأنفها.</p><button type="button" class="button-quiet button-small" data-action="defer-daily-plan">تعبت؟ رحّل الباقي إلى الغد</button></div>`;
+  return `<section class="daily-plan-panel" aria-labelledby="daily-plan-title"><div class="daily-plan-header"><div><small>PLAN DU JOUR · خطة مرنة</small><h2 id="daily-plan-title">خطة اليوم على قدر طاقتك</h2><p>المراجعة أولًا، ثم هدف تعلّم أساسي. يمكنك تقسيمهما على أكثر من جلسة.</p></div><div class="daily-plan-progress"><strong>${doneCount}<span> / ${coreTasks.length}</span></strong><small>مهام أساسية</small></div></div><ul class="daily-plan-list">${coreTasks.map((task, index) => renderDailyPlanTask(task, index)).join('')}</ul>${optionalMarkup}<p class="daily-plan-note">وقتك الاسترشادي ${formatStudyEstimate(state.profile.dailyGoal)} قابل للتعديل، وليس سقفًا أو شرطًا للإنجاز. أوقات الدروس تقديرية؛ تسجيل الوقت الفعلي سيأتي في تحسين لاحق.</p></section>`;
+}
+
 function getLevelProgress(levelId) {
   const lessons = getLessonsInLevel(levelId);
   const done = lessons.filter(isLessonMastered).length;
@@ -443,7 +707,11 @@ function totalCompleted() {
 }
 
 function allWords() {
-  return (course?.lessons || []).flatMap((lesson) => (lesson.vocabulary || []).map((word) => ({ ...word, level: lesson.level, lessonTitle: lesson.title })));
+  return (course?.lessons || []).flatMap((lesson) => (lesson.vocabulary || []).map((word) => ({ ...word, lessonId: lesson.id, level: lesson.level, lessonTitle: lesson.title })));
+}
+
+function reviewableWords() {
+  return allWords().filter((word) => Boolean(state.completedLessons[word.lessonId] || state.wordReviews[word.id]));
 }
 
 function masteredWordsCount() {
@@ -452,7 +720,7 @@ function masteredWordsCount() {
 
 function dueWordsCount() {
   const today = dateKey();
-  return allWords().filter((word) => !state.wordReviews[word.id] || state.wordReviews[word.id].dueDate <= today).length;
+  return reviewableWords().filter((word) => !state.wordReviews[word.id] || state.wordReviews[word.id].dueDate <= today).length;
 }
 
 function showToast(message) {
@@ -606,7 +874,7 @@ function renderShell() {
   const [section, title] = headerTitle();
   const profileName = escapeHTML(state.profile.name || 'متعلّم');
   const initials = [...(state.profile.name || 'م')].slice(0, 1).join('') || 'م';
-  const currentGoal = Number(state.profile.dailyGoal) || 15;
+  const currentGoal = normalizeDailyMinutes(state.profile.dailyGoal);
   const viewContent = renderView();
   root.innerHTML = `
     ${mobileMenuOpen ? '<button class="mobile-scrim show" type="button" data-action="close-menu" aria-label="إغلاق القائمة"></button>' : '<button class="mobile-scrim" type="button" data-action="close-menu" aria-label="إغلاق القائمة"></button>'}
@@ -635,7 +903,7 @@ function renderShell() {
           </div>
           <div class="topbar-actions">
             ${deferredInstallPrompt ? `<button type="button" class="button-outline button-small" data-action="install">تثبيت الأداة</button>` : ''}
-            <span class="plan-chip">${icon('target', 14)}<span>هدفك اليومي ${currentGoal} دقيقة</span></span>
+            <span class="plan-chip">${icon('target', 14)}<span>تقديرك اليومي ${formatStudyEstimate(currentGoal)}</span></span>
             <div class="avatar" title="${profileName}">${escapeHTML(initials)}</div>
           </div>
         </header>
@@ -669,7 +937,7 @@ function renderDashboard() {
   const total = course.lessons.length;
   const percent = total ? Math.round((completed / total) * 100) : 0;
   const thisWeek = weekStats().reduce((sum, day) => sum + day.minutes, 0);
-  const goal = Number(state.profile.dailyGoal) || 15;
+  const goal = normalizeDailyMinutes(state.profile.dailyGoal);
   const weekGoal = goal * 5;
   const name = escapeHTML(state.profile.name || 'متعلّم');
   const lessonTitle = lesson ? escapeHTML(lesson.title) : '';
@@ -723,6 +991,8 @@ function renderDashboard() {
       <div class="stat-card"><div class="stat-icon blue">${icon('star', 20)}</div><div><span class="stat-value">${Number(state.xp) || 0}</span><span class="stat-label">نقاط التعلّم المكتسبة</span></div></div>
     </section>
 
+    ${renderDailyPlan()}
+
     <section class="section-block">
       <div class="section-heading"><div><h2>رحلتك من A0 إلى B2</h2><p>يبدأ المسار من A0، ولا تُفتح خطوة جديدة قبل إتقان المتطلبات السابقة.</p></div><button class="button-quiet" type="button" data-action="navigate" data-view="tracks">عرض المسارات ${icon('arrowLeft', 15)}</button></div>
       <div class="level-grid">${course.levels.map((item) => renderLevelCard(item)).join('')}</div>
@@ -730,9 +1000,9 @@ function renderDashboard() {
 
     <section class="dashboard-bottom">
       <div class="panel">
-        <div class="week-panel-head"><div><h3 class="panel-title">إيقاعك هذا الأسبوع</h3><p class="panel-subtitle">كل دقيقة صغيرة تصنع فرقًا.</p></div><div class="week-total"><strong>${thisWeek}</strong><span>دقيقة</span></div></div>
+        <div class="week-panel-head"><div><h3 class="panel-title">إيقاعك هذا الأسبوع</h3><p class="panel-subtitle">تقدير من مدد الدروس المكتملة، لا قياس للوقت الفعلي.</p></div><div class="week-total"><strong>${thisWeek}</strong><span>دقيقة تقديريًا</span></div></div>
         <div class="week-chart">${renderWeekChart()}</div>
-        <div class="week-footnote">${icon('calendar', 15)} هدفك الأسبوعي المقترح ${weekGoal} دقيقة · ${thisWeek >= weekGoal ? 'أحسنت، حققت هدفك!' : `أنجزت ${Math.min(100, Math.round((thisWeek / Math.max(weekGoal, 1)) * 100))}% منه`}</div>
+        <div class="week-footnote">${icon('calendar', 15)} مرجع الأسبوع ${weekGoal} دقيقة · تقدّم استرشادي فقط؛ لا يمنعك من مواصلة أي مهمة.</div>
       </div>
       <div class="panel nudge-panel">
         <div class="nudge-badge">${icon('spark', 19)}</div>
@@ -1218,7 +1488,7 @@ function finishLesson(lesson) {
 }
 
 function startReviewSession() {
-  const all = allWords();
+  const all = reviewableWords();
   const today = dateKey();
   const due = all.filter((word) => !state.wordReviews[word.id] || state.wordReviews[word.id].dueDate <= today);
   const cards = (due.length ? due : all).slice(0, 12);
@@ -1259,20 +1529,22 @@ function rateCurrentWord(rating) {
   saveState();
   reviewSession.index += 1;
   reviewSession.revealed = false;
-  if (reviewSession.index >= reviewSession.cards.length) reviewSession.done = true;
+  if (reviewSession.index >= reviewSession.cards.length) {
+    reviewSession.done = true;
+    if (!reviewSession.optional) completeDailyReviewTask();
+  }
   render();
 }
 
 function renderSettings() {
   const profile = state.profile;
-  const goals = [10, 15, 20, 30];
   const focusOptions = ['المحادثة', 'السفر', 'العمل', 'الدراسة', 'الحياة اليومية'];
-  return `<div class="page-header"><div><h1>إعداداتك، على مقاسك</h1><p>عدّل الاسم والهدف اليومي واهتمامك. يبدأ المسار دائمًا من A0 ثم يتقدم بعد الإتقان. تحفظ هذه النسخة بياناتك في متصفح هذا الجهاز فقط.</p></div></div>
+  return `<div class="page-header"><div><h1>إعداداتك، على مقاسك</h1><p>عدّل الاسم والوقت الاسترشادي واهتمامك. يبدأ المسار دائمًا من A0 ثم يتقدم بعد الإتقان. تحفظ هذه النسخة بياناتك في متصفح هذا الجهاز فقط.</p></div></div>
     <div class="settings-layout">
-      <section class="panel"><h2 class="panel-title">خطة التعلّم</h2><p class="panel-subtitle">يُحفظ الاسم والهدف والاهتمام محليًا؛ اختيار الاهتمام تفضيل محفوظ ولا يغيّر ترتيب المنهج حاليًا.</p>
+      <section class="panel"><h2 class="panel-title">خطة التعلّم</h2><p class="panel-subtitle">يُحفظ الاسم والوقت الاسترشادي والاهتمام محليًا؛ اختيار الاهتمام تفضيل محفوظ ولا يغيّر ترتيب المنهج حاليًا.</p>
         <form id="settings-form" class="settings-form" style="margin-top:19px">
           <div class="field"><label for="profile-name">كيف نناديك؟</label><input id="profile-name" name="name" maxlength="32" value="${escapeHTML(profile.name || '')}" placeholder="اسمك أو لقبك"><small>يظهر الاسم في لوحة المتابعة فقط.</small></div>
-          <div class="field"><label for="daily-goal">الوقت الذي يناسبك يوميًا</label><select id="daily-goal" name="dailyGoal">${goals.map((goal) => `<option value="${goal}" ${Number(profile.dailyGoal) === goal ? 'selected' : ''}>${goal} دقيقة</option>`).join('')}</select></div>
+          <div class="field"><label for="daily-goal">وقت دراسة استرشادي في اليوم (بالدقائق)</label><input id="daily-goal" name="dailyGoal" type="number" inputmode="numeric" min="5" step="5" value="${normalizeDailyMinutes(profile.dailyGoal)}"><small>ساعتان (120 دقيقة) نقطة بداية قابلة للتعديل، لا سقفًا. يمكنك متابعة المهام بعدها أو تقسيمها على جلسات.</small></div>
           <div class="field"><label for="learning-focus">ما هدفك الأقرب؟</label><select id="learning-focus" name="focus">${focusOptions.map((focus) => `<option value="${focus}" ${profile.focus === focus ? 'selected' : ''}>${focus}</option>`).join('')}</select></div>
           <div class="form-actions"><button type="submit" class="button-primary">حفظ الإعدادات ${icon('check', 16)}</button><button type="button" class="button-quiet" data-action="navigate" data-view="dashboard">إلغاء</button></div>
         </form>
@@ -1361,6 +1633,8 @@ function handleClick(event) {
       render();
       break;
     case 'open-lesson': openLesson(button.dataset.id); break;
+    case 'open-daily-task': openDailyPlanTask(button.dataset.taskKey); break;
+    case 'defer-daily-plan': deferDailyPlan(); break;
     case 'open-level':
       stopAudioPlayback();
       selectedLevel = button.dataset.level || 'A0';
@@ -1458,7 +1732,7 @@ function handleSubmit(event) {
   event.preventDefault();
   const form = new FormData(event.target);
   state.profile.name = String(form.get('name') || '').trim().slice(0, 32) || 'متعلّم';
-  state.profile.dailyGoal = Number(form.get('dailyGoal')) || 15;
+  state.profile.dailyGoal = normalizeDailyMinutes(form.get('dailyGoal'));
   state.profile.focus = String(form.get('focus') || 'المحادثة');
   state.profile.startLevel = 'A0';
   currentView = 'dashboard';
@@ -1504,6 +1778,7 @@ function handleChange(event) {
         audioTranscriptUnlocks: parsed.audioTranscriptUnlocks && typeof parsed.audioTranscriptUnlocks === 'object' ? parsed.audioTranscriptUnlocks : {},
         performanceEvidence: parsed.performanceEvidence && typeof parsed.performanceEvidence === 'object' ? parsed.performanceEvidence : {},
         learningSessions: normalizeLearningSessions(parsed.learningSessions),
+        dailyPlan: normalizeDailyPlan(parsed.dailyPlan),
         studyDays: Array.isArray(parsed.studyDays) ? parsed.studyDays : []
       };
       lessonSession = null;

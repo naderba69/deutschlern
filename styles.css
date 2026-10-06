@@ -158,6 +158,41 @@ svg { display: block; flex: 0 0 auto; }
 .stat-label { display: block; margin-top: 5px; color: #87918a; font-size: 10px; }
 .stat-foot { color: #8d9990; font-size: 9px; }
 
+.daily-plan-panel { margin: 19px 0 29px; padding: 23px; border: 1px solid #e4e9df; border-radius: 21px; background: linear-gradient(135deg, #fffefa 8%, #f1f5ec 100%); box-shadow: 0 8px 22px rgba(37,52,43,.035); }
+.daily-plan-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.daily-plan-header > div:first-child > small { color: #7b927d; font-size: 9px; font-weight: 800; letter-spacing: .8px; }
+.daily-plan-header h2 { margin: 5px 0 3px; color: var(--ink); font-size: 18px; }
+.daily-plan-header p { margin: 0; color: #869188; font-size: 10px; line-height: 1.7; }
+.daily-plan-progress { min-width: 92px; padding: 10px 12px; display: grid; justify-items: center; border: 1px solid #e7ece3; border-radius: 14px; background: rgba(255,255,255,.7); }
+.daily-plan-progress strong { color: #3f704e; font-size: 20px; line-height: 1.2; }
+.daily-plan-progress strong span { color: #a1aaa2; font-size: 13px; font-weight: 500; }
+.daily-plan-progress small { margin-top: 3px; color: #8b968d; font-size: 9px; }
+.daily-plan-list { margin: 17px 0 0; padding: 0; display: grid; gap: 8px; list-style: none; }
+.daily-plan-task { min-width: 0; padding: 12px; display: grid; grid-template-columns: 34px minmax(0,1fr) auto; align-items: center; gap: 11px; border: 1px solid #e9ece5; border-radius: 14px; background: rgba(255,255,255,.78); }
+.daily-plan-task.is-done { background: rgba(243,247,240,.8); }
+.daily-plan-task.is-deferred { border-color: #eedfc9; background: #fffaf2; }
+.daily-plan-index { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 10px; color: #68866c; background: #eef3eb; font-size: 10px; font-weight: 800; }
+.daily-plan-task.is-done .daily-plan-index { color: #fff; background: #709478; }
+.daily-plan-task-copy { min-width: 0; }
+.daily-plan-task-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.daily-plan-task-heading strong { color: #30473a; font-size: 11px; }
+.daily-plan-task-copy p { margin: 3px 0 0; color: #859087; font-size: 9px; line-height: 1.65; }
+.daily-plan-status { padding: 2px 7px; border-radius: 99px; color: #788779; background: #f0f2eb; font-size: 8px; font-weight: 700; }
+.daily-plan-status.is-done { color: #4e7958; background: #e4f0e4; }
+.daily-plan-status.is-deferred { color: #a57d43; background: #fbf0db; }
+.daily-plan-carry { display: inline-block; margin-top: 3px; color: #a17843; font-size: 8px; }
+.daily-plan-task > button { min-height: 32px; white-space: nowrap; }
+.daily-plan-done { color: #5d8265; font-size: 9px; font-weight: 800; white-space: nowrap; }
+.daily-plan-defer, .daily-plan-optional { margin-top: 12px; padding: 13px 14px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border: 1px solid #e6e9dd; border-radius: 14px; background: rgba(255,255,255,.65); }
+.daily-plan-defer p, .daily-plan-optional p { margin: 0; color: #829087; font-size: 9px; line-height: 1.7; }
+.daily-plan-defer button, .daily-plan-optional button { flex: 0 0 auto; }
+.daily-plan-optional { border-color: #d9e8d8; background: #f0f6ed; }
+.daily-plan-optional > div { min-width: 0; }
+.daily-plan-optional small { display: block; margin-bottom: 3px; color: #65876b; font-size: 8px; font-weight: 800; }
+.daily-plan-optional strong { display: block; margin-bottom: 3px; color: #355641; font-size: 11px; }
+.daily-plan-optional-note { margin: 12px 0 0; color: #879189; font-size: 9px; }
+.daily-plan-note { margin: 12px 0 0; padding-top: 10px; border-top: 1px solid #e6e9e1; color: #8a948b; font-size: 9px; line-height: 1.75; }
+
 .section-block { margin-top: 36px; }
 .section-heading { margin-bottom: 15px; display: flex; align-items: end; justify-content: space-between; gap: 15px; }
 .section-heading h2 { margin: 0; color: var(--ink); font-size: 18px; font-weight: 800; letter-spacing: -.25px; }
@@ -506,6 +541,17 @@ svg { display: block; flex: 0 0 auto; }
   .stat-icon svg { width: 17px; height: 17px; }
   .stat-value { font-size: 17px; }
   .stat-label { margin-top: 3px; font-size: 9px; }
+  .daily-plan-panel { margin: 14px 0 24px; padding: 16px; border-radius: 17px; }
+  .daily-plan-header { gap: 8px; }
+  .daily-plan-header h2 { font-size: 15px; }
+  .daily-plan-header p { max-width: 240px; font-size: 9px; }
+  .daily-plan-progress { min-width: 69px; padding: 8px; }
+  .daily-plan-progress strong { font-size: 17px; }
+  .daily-plan-task { grid-template-columns: 29px minmax(0,1fr); gap: 8px; padding: 10px; }
+  .daily-plan-index { width: 27px; height: 27px; }
+  .daily-plan-task > button, .daily-plan-done { grid-column: 2; justify-self: start; }
+  .daily-plan-defer, .daily-plan-optional { align-items: stretch; flex-direction: column; gap: 9px; }
+  .daily-plan-defer button, .daily-plan-optional button { width: 100%; justify-content: center; }
   .section-block { margin-top: 27px; }
   .section-heading { align-items: start; }
   .section-heading h2 { font-size: 16px; }
