@@ -13,7 +13,7 @@
 - **Commit حفظ الجلسة:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، على الفرع الثابت. دُفع إلى `origin/arena/01a1036f-deutschlern` مع ملفات التسليم.
 - **Commit التسليم الأول بعد حفظ الجلسة:** `dd0e5a09bb38396e8af5877ac972d6942196d45a` — `docs: hand off local session persistence`؛ دُفع إلى الفرع الثابت.
 - **حالة PR #1 التاريخية بعد دفعة حفظ الجلسة:** `OPEN`، `mergedAt: null`، head `dd0e5a09bb38396e8af5877ac972d6942196d45a`؛ نجح Vercel وVercel Preview Comments حينها.
-- **PR #1 بعد دفع ميزة خطة اليوم والتسليم الأول:** `OPEN`، `mergedAt: null`، head `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments `pass`. طابق `HEAD` والبعيد هذا الرأس وكانت الشجرة نظيفة حين الفحص. هذا الفحص سبق تحديث التسليم التوثيقي النهائي؛ أعد التحقق من الرأس النهائي قبل بدء عمل جديد، ولا تدمج PR #1.
+- **PR #1 بعد دفعة البند 6 (حالة تاريخية):** `OPEN`، `mergedAt: null`، head `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments `pass`. طابق `HEAD` والبعيد هذا الرأس وكانت الشجرة نظيفة حين الفحص. هذا الفحص سبق تحديث التسليم التوثيقي النهائي؛ أعد التحقق من الرأس النهائي قبل بدء عمل جديد، ولا تدمج PR #1.
 
 ## تعليمات الاستئناف
 
@@ -28,7 +28,8 @@
 - **الملفات:** `app.js`, `styles.css`, `service-worker.js` (Cache v18), `tools/test_study_time.cjs` (جديد), اختبارات `tools/test_daily_plan.cjs`, `tools/test_progression.cjs`, `tools/test_session_persistence.cjs` (مُحدثة بمؤقت وهمي)، `README.md`, `data/course-improvement-plan.md`, وملفا التسليم `data/production-handoff.md` وهذا الملف. لم تتغير `data/course.json` أو مصادر الدروس والأصوات؛ لا حاجة لإعادة البناء ولم يتغير أي أصل صوتي.
 - **الاختبارات الأخيرة:** `node --check` للملفات الستة؛ `node tools/test_study_time.cjs`؛ `node tools/test_progression.cjs`؛ `node tools/test_session_persistence.cjs`؛ `node tools/test_daily_plan.cjs`؛ `python3 tools/verify_course.py`؛ `git diff --check` — نجحت كلها. اختبار الوقت يغطي الخمول 5 دقائق، والوقف/الاستئناف اليدوي، إخفاء/عودة الصفحة، جلسة غير مكتملة بعد إعادة التحميل، تقسيم منتصف الليل، الفصل بين التقدير والفعلي، الاحتفاظ >60 يومًا، وتصدير/استيراد النسخة.
 - **معاينة HTTP:** بدأ `python3 -m http.server 8000 --bind 0.0.0.0` بالعملية `deutschlern-app-preview-b3a9ebb6`; الطلبات إلى `/`, `/app.js`, `/styles.css`, `/service-worker.js`, `/data/course.json` أعادت 200. لم تُفحص الواجهة بصريًا في متصفح بعد؛ أوقف الخادم بالعملية عند انتهاء الحاجة.
-- **Commit/الدفع وPR:** دوّن هنا فور الانتهاء `HEAD`، commit التطبيق والتوثيق، حالة تطابق origin، نتيجة الدفع، و`gh pr view 1`/`gh pr checks 1`. لا تدمج PR #1. الفرع الإلزامي ما زال `arena/01a1036f-deutschlern`.
+- **Commit التنفيذ:** `02cfc352229e733e5ef6250988ef3b437ffe29c6` — `feat: track actual study time`، على الأب `0149d0761f4ca0079bb05beaae05d80f91f9f643`، في الفرع `arena/01a1036f-deutschlern`. أُنشئ بعد نجاح الفحوص؛ commit تسليم هذه الحالة سيحدث بعده.
+- **الدفع وPR:** بعد دفع التوثيق، سجّل هنا `HEAD` والمرجع البعيد ونتيجة الدفع و`gh pr view 1`/`gh pr checks 1`. لا تدمج PR #1.
 
 **المتبقي والخطوة التالية:** جرّب المؤقت في المعاينة على متصفح وحجم هاتف، مع العودة من التبويب الخلفي وفقدان التركيز والخمول والتحميل من جديد؛ لا تدّعِ اختبارًا بصريًا أو يدويًا قبل تنفيذه. أعد فحص PR #1 على الرأس الذي دُفع. بعد ذلك تابع مراجعة المحتوى والتطبيق والعمل دون اتصال. لا تنتج أو تعدّل صوتًا؛ مرحلة الصوت بعد المحتوى والتقييم والتطبيق، وتظل أصول B1.9 للمعاينة فقط.
 
