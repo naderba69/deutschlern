@@ -3754,6 +3754,40 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "3) حوار أصلي عن تنظيم أسبوع مزدحم"
+    },
+    {
+      "assetId": "DL-B2-01-AUD-READ-01",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "title": "قراءة: خطة Hana واستراتيجيات القراءة",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-01-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Hana arbeitet und besucht abends einen Kurs. Früher begann sie jeden Tag mit einer langen Aufgabenliste. Jetzt wählt sie zuerst drei Prioritäten aus. Sie bündelt kurze Erledigungen, indem sie mehrere Telefonate hintereinander führt. Während ihrer Lesezeit schaltet sie Benachrichtigungen aus. Bei einem Sachtext notiert sie nach jedem Abschnitt eine Kernidee; bei einem Roman liest sie dagegen in längeren Abschnitten. Dadurch, dass sie die Lesestrategie an die Textsorte anpasst, versteht sie den Text besser, ohne jedes Wort nachzuschlagen. Hana plant außerdem freie Zeit ein. Sie betrachtet ihren Plan als Orientierung, nicht als starre Vorschrift.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي"
+    },
+    {
+      "assetId": "DL-B2-01-AUD-LST-01",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "title": "استماع: تنظيم المهام والتركيز والراحة",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-01-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich habe früher oft zwischen mehreren Aufgaben gewechselt. Jetzt plane ich zwei Zeitblöcke für konzentrierte Arbeit. Indem ich ähnliche Aufgaben nacheinander erledige, werde ich seltener unterbrochen. Für längere Texte notiere ich am Rand Fragen. Dadurch, dass ich Pausen einplane, kann ich mich besser auf den nächsten Abschnitt konzentrieren. Meine Methode passt nicht für jede Person, aber für meinen Alltag ist sie hilfreich.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ],
   "selectedVoiceIds": [
