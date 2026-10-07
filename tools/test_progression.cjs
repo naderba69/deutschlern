@@ -106,6 +106,35 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     }
   })()`, context), true, 'A0.1 v1 mastery must remain stored but not unlock the corrected course');
 
+  // CR2: the revised A0.2 tasks must match the source and versioned gates.
+  const reviewedGreetings = courseData.lessons.find(lesson => lesson.id === 'a0-02-greetings');
+  assert.equal(reviewedGreetings.assessment.version, 'a0-02-v2');
+  assert.deepEqual(reviewedGreetings.quiz[7].sourceTaskIds, ['DL-A0-02-T05']);
+  assert.deepEqual(reviewedGreetings.performanceTasks[1].sourceTaskIds, ['DL-A0-02-T08']);
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(course.lessons[1].performanceTasks[1], {
+    response:'Hallo!\\nIch heiße Lina.\\nTschüss!', checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:false
+  })`, context), true, 'A0.2 written P02 must not require speech');
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(course.lessons[1].performanceTasks[1], {
+    response:'Hallo!\\nIch heiße Lina.\\nTschüss!', checks:{taskCompletion:true, meaningClarity:false, targetSkill:true}, spokenAloud:false
+  })`, context), false, 'P02 still requires all its declared checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([course.lessons[1].performanceTasks[1]], 'lesson:a0-02-greetings', 'a0-02-v2')`, context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(course.lessons[1].performanceTasks[0], {
+    response:'A'.repeat(120), checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:false
+  })`, context), false, 'the P01 spoken practice still requires explicit self-confirmation');
+  assert.equal(vm.runInContext(`(() => {
+    const prior = state.completedLessons;
+    try {
+      const oldRecord = {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:'a0-02-v1'};
+      state.completedLessons = {
+        [course.lessons[0].id]: {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:course.lessons[0].assessment.version},
+        [course.lessons[1].id]: oldRecord
+      };
+      const rejected = !isLessonMastered(course.lessons[1]) && !isLessonAccessible(course.lessons[2]) && state.completedLessons[course.lessons[1].id] === oldRecord;
+      state.completedLessons[course.lessons[1].id] = {...oldRecord, assessmentVersion:'a0-02-v2'};
+      return rejected && isLessonAccessible(course.lessons[2]);
+    } finally {state.completedLessons = prior;}
+  })()`, context), true, 'reject v1, keep its record, and accept current-version mastery for progression');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
