@@ -207,3 +207,7 @@
 **PASS** build/verify/review01–04/progression/session-persistence/daily-plan/study-time/service-worker/node--check/diff--check، وجميع مجموعات forms/axe/narrow/update/browser بالتتابع. axe:31حالة،0مخالفات مختارة،13ظهور قواعدincomplete تشمل45ظهور عقدة غير محسومة؛ narrow:126حالة. الحزمة1,709,449بايت/cache49. التفاصيل وحدودfixture42→49 والمتصفح المكتوم في[تقرير المتصفح](../browser-qa-report.md).
 
 مقارنة5d5a898: بقية52درسًا والبوابة لم تتغير؛ playlist/register و474MP3 مطابقة بايتًا، والفهرس خارج20سجلA0.4 مطابق. source/audio hashes فيJSON ليست حكمًا لغويًا مستقلًا. تقرير الرفع يُضاف بعد نجاح الدفع؛ لا دمجPR#1 ضمن هذه المهمة.
+
+## إثبات الرفع
+
+دُفع التنفيذ `e63fad2cbcec444a48241816926f2b4ea52e8450` على `arena/01a1036f-deutschlern` وتأكد تطابق HEAD مع مرجع الفرع البعيد. PR#1 مفتوحة وغير مدمجة؛ حالة commit المنشورة pending دون statuses وقت الفحص، فلا نشر ناجح مثبت. يُرفع هذا الإثبات وملفا التسليم في commit توثيق لاحق على الفرع نفسه.
