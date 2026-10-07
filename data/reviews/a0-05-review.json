@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a0-05-classroom-phrases",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a0-05-v2",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "R-GOETHE",
+      "citation": "[Goethe — Deutsch Online A1](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "قرئ الجزء الأول، خصوصًا Kapitel2/Höflich nachfragen: طلب التكرار والتهجئة والبطء، وKapitel1:du/Sie. لا تعميم بأن سؤال طريقة الكتابة يفرض تهجئة شفهية. العبارة المستخرجة Ich heißen Matteo Kraft لم تُعتمد؛ لا نجزم هل العيب في الأصل أو الاستخراج."
+    },
+    {
+      "id": "R-SIE",
+      "citation": "[grammis — §65/66](https://grammis.ids-mannheim.de/rechtschreibung/6197)",
+      "scope": "قرئت القاعدة الرسمية لكتابة Sie/Ihr وصيغها المصرفة بحرف كبير، وdu بصغير في الاستعمال العادي."
+    },
+    {
+      "id": "R-REQUEST",
+      "citation": "[1](https://grammis.ids-mannheim.de/systematische-grammatik/1874)",
+      "scope": "قرئ الجزء الأول من الصفحة: الطلب له صيغ متعددة؛ الفعل أولًا، وBitte في البداية، والأسئلة، والجمل الخبرية التي قد تؤدي طلبًا. لذلك لم نسمِ Sie wiederholen bitte das. خطأ نحويًا مطلقًا؛ قيدنا Q05 بالنمط المطلوب."
+    },
+    {
+      "id": "R-PUNCTUAL",
+      "citation": "[Duden — pünktlich](https://www.duden.de/rechtschreibung/puenktlich)",
+      "scope": "قرئت دلالة الالتزام بالوقت المحدد/المتفق عليه. تعريف التسجيل zur richtigen Zeit أوسع من الدقة المطلوبة؛ أضيف توضيح سياقي نصي دون تغيير الصوت. لم يُسمع نطق الصفحة."
+    },
+    {
+      "id": "R-APPOINTMENT",
+      "citation": "[Duden — Termin](https://www.duden.de/rechtschreibung/Termin)",
+      "scope": "قرئت معاني الوقت المحدد واللقاء/الموعد؛ شرح eine vereinbarte Zeit مناسب للمثال لا تعريف شامل لكل استعمال. لم نعتمد نتائج Ortstermin/Ort غير المطابقة للبحث الأول، ولا نتعامل مع ملصق مفرداتB1 كمنع لتوظيف مثال مفهوم فيA0."
+    }
+  ],
+  "sourceHashes": {
+    "content/A0/lesson-05-classroom-phrases.md": "5ee6cd50ffa5e579b7ee467310f400a80cb6f00f0a958ad5321e47651a3b8a68",
+    "content/A0/lesson-05-classroom-phrases.assessment.json": "b30a54eee5ef044b611863de60b6bb91109462cf54450317d3bbf462bdefb6d9"
+  },
+  "audioSnapshotHashes": {
+    "DL-A0-05-AUD-PHR-01": "62320314ec5bd80f3038bc6de892cf327a7bd21b64f049ecdfc3fc9f5495bbf2",
+    "DL-A0-05-AUD-DLG-01": "25f64d9b96a9ed9411cf6813923b9242ff99dcb0fdf172a0285f28080b2e2bd8"
+  },
+  "units": [
+    {
+      "id": "goal-and-scope",
+      "decision": "corrected",
+      "finding": "الهدف محفوظ: التصريح بعدم الفهم وطلب التكرار/التوضيح. أضيفت الكتابة إلى المهارات الفعلية؛ T07/P01 و T08/P02 صارا متطابقين مع التدريب. لا شرط شريك أو تسجيل أو بيانات شخصية، ولا إثبات إتقان مستقل من الاختيار الذاتي.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-01",
+      "decision": "retained",
+      "finding": "Ich verstehe. — أفهم؛ صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "decision": "retained",
+      "finding": "Ich verstehe nicht. — لا أفهم؛ النفي صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "decision": "retained",
+      "finding": "Bitte wiederholen Sie das. — طلب رسمي صحيح يبدأ بـ Bitte؛ ليس النمط الوحيد للطلب.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "decision": "retained",
+      "finding": "Kannst du das bitte wiederholen? — طلب غير رسمي مهذب؛ kannst مع du والمصدر wiederholen في النهاية.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-05",
+      "decision": "retained",
+      "finding": "Langsamer, bitte. — طلب مختصر مفهوم في السياق: أبطأ، من فضلك.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-06",
+      "decision": "retained",
+      "finding": "Was bedeutet …? — سؤال المعنى؛ الحذف مكان الكلمة، والتسجيل يملؤه بـ das.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-07",
+      "decision": "retained",
+      "finding": "Wie schreibt man …? — سؤال طريقة الكتابة؛ لا يحدد du/Sie بنفسه، والتسجيل يملؤه بـ das.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-08",
+      "decision": "retained",
+      "finding": "Können Sie mir helfen? — طلب مساعدة رسمي؛ mir صحيح و helfen في النهاية.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-09",
+      "decision": "retained",
+      "finding": "Ich habe eine Frage. — إعلان وجود سؤال؛ habe و eine Frage صحيحان.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "phrase-10",
+      "decision": "clarified",
+      "finding": "Danke für Ihre Hilfe. — شكر رسمي؛ für Ihre Hilfe صحيحة، والترجمة وُضحت للمفرد والجماعة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "register-01",
+      "decision": "clarified",
+      "finding": "du للمخاطبة غير الرسمية، وقد يكون الطلب معها مهذبًا؛ لا مساواة بين الرسمية والأدب.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "register-02",
+      "decision": "clarified",
+      "finding": "Sie اختيار التدريب مع المدرسة، لا قاعدة إلزامية لكل صف أو كل علاقة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "register-03",
+      "decision": "clarified",
+      "finding": "bitte أداة تلطيف لا ضمان للنبرة. Sie/Ihre و Frage كبيرة، و Bitte كبيرة في أول الجملة فقط ضمن هذه الأمثلة؛ Danke للشكر.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "request-pattern",
+      "decision": "corrected",
+      "finding": "النمطان Bitte wiederholen Sie das. و Wiederholen Sie das bitte. صحيحان. Q05 يطلب الآن نمط الفعل أولًا تحديدًا؛ يمنع لبس الجملة الخبرية المستعملة طلبًا مع الشكل المقاس، ولا يعلنها غير نحوية.",
+      "sourceIds": [
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "meaning-writing",
+      "decision": "clarified",
+      "finding": "Was bedeutet …? للمعنى و Wie schreibt man …? لطريقة الكتابة. صارت تعليمات الأداء تقول الكتابة بدل فرض تهجئة شفوية غير مدربة بهذه الصيغة وحدها.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "decision": "clarified",
+      "finding": "das Wort = الكلمة؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-02",
+      "decision": "clarified",
+      "finding": "der Satz = الجملة؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "decision": "clarified",
+      "finding": "der Unterricht = الدرس/الحصة؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-04",
+      "decision": "clarified",
+      "finding": "pünktlich = في الموعد المحدد؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": [
+        "R-PUNCTUAL"
+      ]
+    },
+    {
+      "id": "gloss-05",
+      "decision": "clarified",
+      "finding": "der Termin = الموعد المتفق عليه في مثالنا؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": [
+        "R-APPOINTMENT"
+      ]
+    },
+    {
+      "id": "gloss-06",
+      "decision": "clarified",
+      "finding": "Entschuldigung = عذرًا؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "gloss-07",
+      "decision": "clarified",
+      "finding": "Welches Wort? = أي كلمة؟؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-08",
+      "decision": "clarified",
+      "finding": "Kein Problem. = لا مشكلة؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-09",
+      "decision": "clarified",
+      "finding": "Ja, natürlich. = نعم، بالطبع؛ شرح عربي مساعد للسياق، لا مطلب لدراسة جميع معاني الكلمة أو قواعد تركيبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "decision": "retained",
+      "finding": "Entschuldigung, ich verstehe das Wort nicht. Was bedeutet „pünktlich“? — اعتذار وعدم فهم كلمة ثم سؤال معناها؛ صحيح في هذا السياق.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "decision": "retained",
+      "finding": "„Pünktlich“ bedeutet: zur richtigen Zeit. — صيغة bedeutet صحيحة؛ zur richtigen Zeit تفسير مبسط أوسع من الالتزام بالموعد، فوضّحناه خارج النص المسجل.",
+      "sourceIds": [
+        "R-PUNCTUAL"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "decision": "retained",
+      "finding": "Danke. Können Sie das bitte wiederholen? — طلب إعادة رسمي مهذب؛ können/Sie والمصدر في النهاية صحيحان.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "decision": "retained",
+      "finding": "Ja, natürlich. — جواب موافقة صحيح لغويًا، لكنه لا يعرض تنفيذ الإعادة؛ أضيف تمرين نصي لتكرار جواب المدرسة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "decision": "retained",
+      "finding": "Danke für Ihre Hilfe. — شكر رسمي صحيح؛ Ihre تطابق المخاطبة الرسمية للمعلمة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "dialogue-boundary",
+      "decision": "clarified",
+      "finding": "حُفظت الأدوار المسجلة الخمسة كما هي. أضيف نص يوضح pünktlich وأن Ja, natürlich. لا تتبعها إعادة الشرح في التسجيل؛ يقرأ المتعلم جملة المعلمة مرة أخرى كتدريب نصي. هذا حد تواصلي موثق لا ادعاء أن الصوت أُصلح أو سُمع.",
+      "sourceIds": [
+        "R-PUNCTUAL",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "DL-A0-05-T01",
+      "decision": "retained",
+      "finding": "أربع مطابقات ومفاتيح صحيحة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "Ich verstehe nicht.→ب: لا أفهم.",
+        "Langsamer, bitte.→ج: أبطأ، من فضلك.",
+        "Was bedeutet das?→د: ماذا يعني ذلك؟",
+        "Ich habe eine Frage.→أ: لدي سؤال."
+      ]
+    },
+    {
+      "id": "DL-A0-05-T02",
+      "decision": "retained",
+      "finding": "أربعة فراغات ومفاتيح صحيحة، وكل كلمة من القائمة تستخدم مرة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "Ich verstehe nicht.؛ nicht",
+        "Langsamer, bitte.؛ bitte",
+        "Was bedeutet „Buch“?؛ bedeutet",
+        "Ich habe eine Frage.؛ Frage"
+      ]
+    },
+    {
+      "id": "DL-A0-05-T03",
+      "decision": "retained",
+      "finding": "ثلاث مخاطبات محددة وعبارة man محايدة من حيث du/Sie؛ صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "Kannst du das wiederholen?→du",
+        "Können Sie mir helfen?→Sie",
+        "Bitte wiederholen Sie das.→Sie",
+        "Wie schreibt man das?→لا تحدد المخاطب وحدها."
+      ]
+    },
+    {
+      "id": "DL-A0-05-T04",
+      "decision": "corrected",
+      "finding": "فُصل الترقيم عن الكلمات المبعثرة، وحددت البداية والمفتاح كنماذج ممكنة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "Wiederholen Sie das bitte. نموذج صحيح يبدأ بالفعل؛ مكان bitte ليس وحيدًا.",
+        "Was bedeutet das? سؤال صحيح؛ ? في النهاية.",
+        "Ich habe eine Frage. جملة صحيحة؛ النقطة في النهاية لا بعد Ich.",
+        "Können Sie mir helfen? طلب رسمي صحيح؛ ? لا تلصق بـ Können قبل الترتيب."
+      ]
+    },
+    {
+      "id": "DL-A0-05-T05",
+      "decision": "clarified",
+      "finding": "قُيد الموقف بصيغة Sie وطلب كامل؛ لا وصف كل توجيه مختصر بأنه غير مهذب دائمًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "ب: Können Sie das bitte wiederholen? طلب كامل مهذب بصيغة Sie. أ: Wiederholen! توجيه مختصر ممكن بسياقات أخرى؛ ج: Ich bin eine Wiederholung. ليس طلب إعادة، لا خطأ صرفيًا بالضرورة."
+      ]
+    },
+    {
+      "id": "DL-A0-05-T06",
+      "decision": "clarified",
+      "finding": "حُسّن تسلسل الأدوار بسؤال Welches Wort? بدل أن يسأل طالب المساعدة ومساعده المعنى نفسه؛ حذفت Ja غير اللازمة. الفراغات ومفاتيحها ثابتة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "nicht: Entschuldigung, ich verstehe nicht.",
+        "bedeutet: Was bedeutet „Termin“?",
+        "für: Danke für Ihre Hilfe."
+      ]
+    },
+    {
+      "id": "DL-A0-05-T07",
+      "decision": "corrected",
+      "finding": "أضيف طلب المعنى والتصريح بعدم الفهم إلى التدريب نفسه، مع مسودة وخمسة أجزاء وقراءة فردية. الجملة Der Unterricht beginnt um neun Uhr. سياق جاهز مترجم، لا اختبار قواعد وقت.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "Ich verstehe das Wort nicht. تصريح عدم الفهم.",
+        "Können Sie den Satz bitte wiederholen? طلب التكرار.",
+        "Langsamer, bitte. طلب البطء.",
+        "Was bedeutet „Unterricht“? طلب المعنى.",
+        "Wie schreibt man „Unterricht“? طلب طريقة الكتابة."
+      ]
+    },
+    {
+      "id": "DL-A0-05-T08",
+      "decision": "corrected",
+      "finding": "صُححت طريقة الاسترجاع: تغطية الألمانية لا العربية كي يكتب من المعنى. ثلاث عبارات مختلفة ومعانيها، ثم مقارنة وتصحيح؛ لا أداء شفهي مطلوب.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ],
+      "items": [
+        "مثال 1: Ich verstehe nicht. — لا أفهم.",
+        "مثال 2: Langsamer, bitte. — أبطأ، من فضلك.",
+        "مثال 3: Ich habe eine Frage. — لدي سؤال."
+      ]
+    },
+    {
+      "id": "practice-dialogue-01",
+      "decision": "retained",
+      "finding": "Entschuldigung, ich verstehe nicht. — A يعلن عدم الفهم؛ nicht في الفراغ صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "practice-dialogue-02",
+      "decision": "clarified",
+      "finding": "Kein Problem. Welches Wort? — B يطلب تحديد الكلمة قبل شرحها؛ لا يسأل A عن معناها وهو لا يفهمها.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "practice-dialogue-03",
+      "decision": "clarified",
+      "finding": "Was bedeutet „Termin“? — A يحدد Termin ويطلب المعنى؛ bedeutet صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "practice-dialogue-04",
+      "decision": "retained",
+      "finding": "Ein Termin ist eine vereinbarte Zeit. — B يشرح معنى الموعد في هذا السياق؛ لا تعريف شامل لكل استعمالات Termin.",
+      "sourceIds": [
+        "R-APPOINTMENT"
+      ]
+    },
+    {
+      "id": "practice-dialogue-05",
+      "decision": "retained",
+      "finding": "Danke für Ihre Hilfe. — A يشكر رسميًا بـ für Ihre Hilfe؛ صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q01",
+      "decision": "clarified",
+      "finding": "المفتاح لا أفهم صحيح. صُححت صيغة المشتت العربي أعد بدل أعيد، ووُضحت حدود الاقتباس والترقيم. الخيارات: أفهم / لا أفهم / أعد ذلك من فضلك؛ المصدر: DL-A0-05-T01",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q02",
+      "decision": "retained",
+      "finding": "bitte صحيح؛ Sie/Frage لا يكملان هذا الطلب بالصيغة المطلوبة. الخيارات: bitte / Sie / Frage؛ المصدر: DL-A0-05-T02",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q03",
+      "decision": "clarified",
+      "finding": "bedeutet صحيح للسؤال عن المعنى؛ schreibt/wiederholt لا يؤديان هذا المعنى. صُححت علامة الاستفهام داخل الألمانية. الخيارات: schreibt / wiederholt / bedeutet؛ المصدر: DL-A0-05-T02",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q04",
+      "decision": "clarified",
+      "finding": "Können Sie mir helfen? تظهر الرسمية صراحة؛ Tschüss! وحدها ليست دليل du ولا Sie. الخيارات: Können Sie mir helfen? / Kannst du das wiederholen? / Tschüss!؛ المصدر: DL-A0-05-T03",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q05",
+      "decision": "corrected",
+      "finding": "Wiederholen Sie das bitte. المفتاح نفسه، لكن السؤال صار خاصًا بالنمط الذي يبدأ بالفعل. Sie wiederholen bitte das. قد تؤدي طلبًا في سياق، فلا نصفها غير نحوية مطلقًا. الخيارات: Sie wiederholen bitte das. / Wiederholen Sie das bitte. / Bitte das Sie wiederholen.؛ المصدر: DL-A0-05-T04",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q06",
+      "decision": "clarified",
+      "finding": "Können Sie das bitte wiederholen? يفي بالطلب الكامل الرسمي؛ المشتتان لا يفيان به، لا يعني أن كل كلام مختصر خطأ. الخيارات: Wiederholen! / Ich bin eine Wiederholung. / Können Sie das bitte wiederholen?؛ المصدر: DL-A0-05-T05",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q07",
+      "decision": "retained",
+      "finding": "nicht صحيح في Ich verstehe nicht.؛ bitte/wiederholen لا يكملان النموذج المطلوب. الخيارات: nicht / bitte / wiederholen؛ المصدر: DL-A0-05-T06",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q08",
+      "decision": "retained",
+      "finding": "für صحيح في Danke für Ihre Hilfe.؛ und/mit لا يصلحان هنا. الخيارات: und / für / mit؛ المصدر: DL-A0-05-T06",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q09",
+      "decision": "clarified",
+      "finding": "لا تحدد صيغة man المخاطبة الرسمية أو غير الرسمية وحدها؛ المفتاح صحيح، والترقيم وُضح. الخيارات: نعم، هي دائمًا du. / نعم، هي دائمًا Sie. / لا، لا يظهر ذلك من صيغة الجملة وحدها.؛ المصدر: DL-A0-05-T03",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-Q10",
+      "decision": "clarified",
+      "finding": "Wie schreibt man das? سؤال الكتابة، لا المعنى. نُقل الربط T08→T03 لوجود العبارة نفسها في بند محدد، بدل بطاقة اختيار حر؛ تحسين دقة الربط لا تغيير المفتاح. الخيارات: Wie schreibt man das? / Was bedeutet das? / Ich verstehe nicht.؛ المصدر: DL-A0-05-T03",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-P01",
+      "decision": "corrected",
+      "finding": "قرئت المهمة ومعاييرها الثلاثة: مسودة خمسة أجزاء ثم قولها، مرتبطة بـ T07 بعد إضافة المعنى. لا شريك أو إجابات مدرّسة أو تسجيل مطلوب. modality تتضمن الكتابة الآن؛ حد 120 حرفًا يمنع القصر الشديد فقط، والتأكيد الشفهي لازم دون حكم آلي على النطق.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-REQUEST"
+      ]
+    },
+    {
+      "id": "DL-A0-05-P02",
+      "decision": "corrected",
+      "finding": "قرئت المهمة ومعاييرها الثلاثة: ثلاث عبارات ومعانيها واسترجاع كتابي ثم مقارنة وتصحيح؛ T08 بدل T06 غير المطابق. reading/writing، speakAloud=false، حد 50 حرفًا؛ لا مربع كلام أو تسجيل. هذا تقييم ذاتي للبطاقة لا تصحيح لغوي مستقل.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "card-01",
+      "decision": "retained",
+      "finding": "Ich verstehe nicht. → لا أفهم؛ متسقة مع جدول العبارات، والرسمية موضحة في الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "card-02",
+      "decision": "retained",
+      "finding": "Bitte wiederholen Sie das. → أعد ذلك من فضلك؛ متسقة مع جدول العبارات، والرسمية موضحة في الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "card-03",
+      "decision": "retained",
+      "finding": "Was bedeutet …? → ماذا تعني …؟؛ متسقة مع جدول العبارات، والرسمية موضحة في الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "card-04",
+      "decision": "retained",
+      "finding": "Wie schreibt man …? → كيف تُكتب …؟؛ متسقة مع جدول العبارات، والرسمية موضحة في الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "card-05",
+      "decision": "retained",
+      "finding": "Können Sie mir helfen? → هل يمكن أن تساعدني؟؛ متسقة مع جدول العبارات، والرسمية موضحة في الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-AUD-PHR-01",
+      "decision": "text-only-reviewed",
+      "finding": "أصل العبارات: عشر عبارات في مقطع واحد بصوت 02؛ القالبان ذوا… يملآن بـ das في التفريغ، وليس اختلاف مضمون. لا استماع أو إعادة توليد أو ترقية اعتماد؛ ready تاريخية.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-05-AUD-DLG-01",
+      "decision": "text-only-reviewed",
+      "finding": "خمسة أدوار في خمسة مقاطع؛ المطابقة بعد حذف علامتي الاقتباس الألماني فقط. Lernender03/Lehrerin02 ثابتان. حدود موافقة الإعادة موثقة نصيًا. لا استماع أو إعادة توليد أو ترقية اعتماد؛ ready تاريخية.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a0-05-v1",
+    "version": "a0-05-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,12 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
-      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
-      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+      "CR5: مراجعة نصية بالمراجع موثقة في data/reviews/a0-05-review.json؛ لا اعتماد سمعي أو شهادة إتقان مستقلة.",
+      "T07/P01 يتضمنان الآن عدم الفهم وطلب التكرار والبطء والسؤال عن المعنى والكتابة، مع مسودة وأداء فردي ممكن.",
+      "P02 صار مرتبطًا ببطاقة الكتابة T08، ولا يحتاج إلى تأكيد كلام؛ Q10 صار مرتبطًا بالعبارة المحددة في T03.",
+      "قُيد Q05 بنمط الطلب الذي يبدأ بالفعل؛ الصيغة الخبرية في أحد المشتتات ليست خطأ نحويًا في كل سياق. المفاتيح العشرة محفوظة.",
+      "أصلا الصوت وستة مقاطع محفوظة دون تغيير؛ ملاحظة حدود الحوار المسجّل نصية فقط. لا تسجيل مستقل لحوار T06.",
+      "التقييم الذاتي والطول الأدنى لا يصححان اللغة أو النطق آليًا."
     ]
   },
   "quiz": [
@@ -30,11 +33,11 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "ماذا تعني Ich verstehe nicht؟",
+      "prompt": "ماذا تعني العبارة «Ich verstehe nicht.»؟",
       "options": [
         "أفهم",
         "لا أفهم",
-        "أعيد من فضلك"
+        "أعد ذلك من فضلك"
       ],
       "answerIndex": 1,
       "explanation": "Ich verstehe nicht تعني لا أفهم."
@@ -72,14 +75,14 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "ما الفعل في سؤال Was ___ „Buch“؟",
+      "prompt": "أكمل السؤال عن المعنى: Was ___ „Buch“?",
       "options": [
         "schreibt",
         "wiederholt",
         "bedeutet"
       ],
       "answerIndex": 2,
-      "explanation": "السؤال الصحيح: Was bedeutet „Buch“؟"
+      "explanation": "السؤال عن المعنى هو: Was bedeutet „Buch“?"
     },
     {
       "id": "DL-A0-05-Q04",
@@ -100,7 +103,7 @@
         "Tschüss!"
       ],
       "answerIndex": 0,
-      "explanation": "Können Sie تستخدم Sie الرسمية."
+      "explanation": "Können Sie mir helfen? تخاطب الشخص بصيغة Sie الرسمية. Tschüss! وداع ولا تحدد وحدها صيغة المخاطب."
     },
     {
       "id": "DL-A0-05-Q05",
@@ -114,14 +117,14 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "أي ترتيب صحيح لطلب «أعد ذلك من فضلك» بصيغة رسمية؟",
+      "prompt": "في نمط الطلب الرسمي الذي يبدأ بالفعل، أي ترتيب يعبّر عن «أعد ذلك من فضلك»؟",
       "options": [
         "Sie wiederholen bitte das.",
         "Wiederholen Sie das bitte.",
         "Bitte das Sie wiederholen."
       ],
       "answerIndex": 1,
-      "explanation": "صيغة الطلب المهذبة: Wiederholen Sie das bitte."
+      "explanation": "Wiederholen Sie das bitte. هي الصيغة المطلوبة التي تبدأ بالفعل. Sie wiederholen bitte das. صيغة خبرية قد تؤدي طلبًا في سياق، لكنها ليست النمط المحدد هنا."
     },
     {
       "id": "DL-A0-05-Q06",
@@ -135,7 +138,7 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "تريد طلب إعادة جملة من المدرّس بلطف؛ ماذا تقول؟",
+      "prompt": "تريد طلب إعادة جملة من المدرّس بصيغة Sie وبطلب كامل مهذب؛ ماذا تقول؟",
       "options": [
         "Wiederholen!",
         "Ich bin eine Wiederholung.",
@@ -198,7 +201,7 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "هل تحدد Wie schreibt man das؟ وحدها إن كان المخاطب du أم Sie؟",
+      "prompt": "هل تحدد العبارة «Wie schreibt man das?» وحدها إن كان المخاطب du أم Sie؟",
       "options": [
         "نعم، هي دائمًا du.",
         "نعم، هي دائمًا Sie.",
@@ -210,7 +213,7 @@
     {
       "id": "DL-A0-05-Q10",
       "sourceTaskIds": [
-        "DL-A0-05-T08"
+        "DL-A0-05-T03"
       ],
       "objectiveIds": [
         "DL-A0-05-G01"
@@ -240,13 +243,14 @@
       ],
       "modality": [
         "reading",
+        "writing",
         "speaking"
       ],
-      "prompt": "اقرأ بطاقة موقف صفّي: لم تفهم كلمة في شرح المدرّس. اطلب تكرار العبارة ببطء، ثم اسأل عن معنى كلمة وتهجئتها بصوت مرتفع.",
+      "prompt": "في الموقف المتخيّل Der Unterricht beginnt um neun Uhr. اكتب مسودة بالألمانية للأجزاء الخمسة من تمرين 7: قل إنك لا تفهم الكلمة، واطلب من المدرّسة إعادة الجملة بصيغة Sie وبأدب، واطلب البطء، ثم اسأل عن معنى Unterricht وكيف تُكتب. اقرأ طلباتك بصوت مرتفع وحدك أو مع شريك. لا تحتاج إلى تسجيل أو تأليف أجوبة المدرّسة.",
       "criteria": {
-        "taskCompletion": "يطلب الإعادة ببطء ثم يسأل عن المعنى والكتابة.",
-        "meaningClarity": "يفهم الشريك ما لم يفهمه المتعلم وما يحتاج إلى توضيح.",
-        "targetSkill": "يميز Was bedeutet عن Wie schreibt man ويستخدم طلبًا مهذبًا."
+        "taskCompletion": "كتبت الأجزاء الخمسة: عدم الفهم، التكرار، البطء، المعنى، وطريقة الكتابة، ثم قرأتها بصوت مرتفع.",
+        "meaningClarity": "يتضح أنني أطلب إعادة الجملة، وأن Unterricht هي الكلمة المقصودة بالمعنى والكتابة، دون اشتراط وجود شريك.",
+        "targetSkill": "أستعمل Ich verstehe … nicht وطلبًا مهذبًا بصيغة Sie، وأميز Was bedeutet …? عن Wie schreibt man …? وأطلب البطء."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,7 +260,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 120,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -264,21 +268,20 @@
     {
       "id": "DL-A0-05-P02",
       "sourceTaskIds": [
-        "DL-A0-05-T06"
+        "DL-A0-05-T08"
       ],
       "objectiveIds": [
         "DL-A0-05-G01"
       ],
       "modality": [
         "reading",
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اختر عبارة صفّية من الدرس، واكتب كلمة مستهدفة منها، ثم اطلب إعادة العبارة أو تهجئة الكلمة بصيغة مهذبة واقرأ طلبك بصوت مرتفع.",
+      "prompt": "أنشئ بطاقة المساعدة من تمرين 8: اكتب ثلاث عبارات ألمانية مختلفة من الدرس ومعنى كل منها بالعربية. غطِّ الصياغة الألمانية وحاول إعادة كتابتها انطلاقًا من العربية، ثم قارن بالنموذج وصحح. احفظ النسخة المصححة في خانة الإجابة. هذه مهمة كتابة ولا تتطلب كلامًا بصوت مرتفع.",
       "criteria": {
-        "taskCompletion": "يسجل الكلمة ثم يقدم طلبًا مناسبًا للتكرار أو التهجئة.",
-        "meaningClarity": "تطابق الكلمة العبارة المختارة أو يوضح المتعلم موضع عدم الفهم.",
-        "targetSkill": "يستخدم bitte وصيغة Sie الرسمية عند مخاطبة المعلم."
+        "taskCompletion": "كتبت ثلاث عبارات مختلفة ومعانيها، وجربت استرجاعها كتابةً ثم قارنت وصححت النسخة المحفوظة.",
+        "meaningClarity": "المعنى العربي يطابق كل عبارة ألمانية ولا يخلط طلب المعنى بطلب طريقة الكتابة.",
+        "targetSkill": "أحافظ على كتابة العبارات المختارة كما في النموذج، بما فيها Sie/Ihre والأسماء الكبيرة حيث تظهر، وbitte/Bitte بحسب موضعها."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -288,8 +291,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
-        "speakAloud": true,
+        "minimumResponseCharacters": 50,
+        "speakAloud": false,
         "audioRequired": false
       }
     }

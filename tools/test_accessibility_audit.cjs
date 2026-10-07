@@ -54,6 +54,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A0.4-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A0.4-practical-form-fixture', width);
+  // CR5: classroom requests and the oral/written-only task distinction.
+  await page.evaluate(() => openLesson('a0-05-classroom-phrases'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A0.5-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A0.5-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

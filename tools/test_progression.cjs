@@ -198,6 +198,44 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally { state.completedLessons = prior; }
   })()`, context), true, 'keep A0.4 v1 record but require v2 plus previous lessons before A0.5');
 
+  // CR5: five requested acts in P01; P02 is a written retrieval card, not speech.
+  const reviewedClassroom = courseData.lessons.find(l => l.id === 'a0-05-classroom-phrases');
+  assert.equal(reviewedClassroom.assessment.version, 'a0-05-v2');
+  assert.deepEqual(reviewedClassroom.quiz[9].sourceTaskIds, ['DL-A0-05-T03']);
+  assert.deepEqual(reviewedClassroom.performanceTasks[1].sourceTaskIds, ['DL-A0-05-T08']);
+  assert.equal(vm.runInContext(`(() => {
+    const tasks = course.lessons[4].performanceTasks;
+    const responses = [
+      'Ich verstehe das Wort nicht. Können Sie den Satz bitte wiederholen? Langsamer, bitte. Was bedeutet Unterricht? Wie schreibt man Unterricht?',
+      'Ich verstehe nicht. — لا أفهم. Langsamer, bitte. — أبطأ، من فضلك. Ich habe eine Frage. — لدي سؤال.'
+    ];
+    return tasks.every((task, i) => {
+      const evidence = {response:responses[i], checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:i === 0};
+      return performanceTaskEvidenceReady(task, evidence)
+        && !performanceTaskEvidenceReady(task, {...evidence, response:'bitte'})
+        && task.selfCheck.requiredChecks.every(key => !performanceTaskEvidenceReady(task, {...evidence, checks:{...evidence.checks, [key]:false}}))
+        && (i !== 0 || !performanceTaskEvidenceReady(task, {...evidence, spokenAloud:false}));
+    });
+  })()`, context), true, 'P01 requires speech confirmation; P02 accepts written evidence without it; both still need all checks and length');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([course.lessons[4].performanceTasks[1]], 'lesson:a0-05-classroom-phrases', 'a0-05-v2')`, context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior = state.completedLessons;
+    const priorChecks = state.levelChecks;
+    try {
+      const oldRecord = {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:'a0-05-v1'};
+      state.levelChecks = {};
+      state.completedLessons = Object.fromEntries(course.lessons.slice(0,4).map(l => [l.id, {...oldRecord, assessmentVersion:l.assessment.version}]));
+      state.completedLessons[course.lessons[4].id] = oldRecord;
+      const rejected = !isLessonMastered(course.lessons[4]) && !isLevelMastered('A0') && !isLevelUnlocked('A1')
+        && nextLearningStep().lesson.id === course.lessons[4].id
+        && state.completedLessons[course.lessons[4].id] === oldRecord;
+      state.completedLessons[course.lessons[4].id] = {...oldRecord, assessmentVersion:'a0-05-v2'};
+      const gateRequired = isLevelMastered('A0') && nextLearningStep().type === 'a0-gate' && !isLevelUnlocked('A1');
+      state.levelChecks['A0-A1'] = {...oldRecord, assessmentVersion:course.a0TransitionCheck.assessment.version};
+      return rejected && gateRequired && isLevelUnlocked('A1');
+    } finally { state.completedLessons = prior; state.levelChecks = priorChecks; }
+  })()`, context), true, 'retain A0.5 v1 but require v2, then the separate gate; this is not a content review of the gate');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
