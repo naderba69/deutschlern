@@ -77,8 +77,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 145, "all audio assets through the partial B1.10 batch must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 322, "the audio manifest must contain all three hundred twenty-two clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 147, "all audio assets through B1.10 must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 324, "the audio manifest must contain all three hundred twenty-four clips");
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 53, "the course bundle must carry all fifty-three ready lesson assessments through B2.12");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 530, "the course bundle must carry all five hundred thirty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 106, "the course bundle must carry all one hundred six lesson performance tasks");
@@ -547,7 +547,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b1HealthAudioMarkup, /نهائي/);
   assert.doesNotMatch(b1HealthAudioMarkup, /للمراجعة/);
   assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'ready').length", context), 137, "previously approved audio assets must retain their ready status");
-  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 8, "B1.9 and the partial B1.10 assets must await user review while remaining playable");
+  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 10, "B1.9 and B1.10 assets must await user review while remaining playable");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => ['ready', 'generated_pending_acoustic_review'].includes(asset.status))", context), true, "audio assets must have a valid approved or preview-pending status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -1031,8 +1031,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.ok(b1MediaAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-10-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B1.10 performance tasks must map to T08 and offer local written/oral work without requiring a recording");
   assert.deepEqual(b1MediaAssessment.performanceTasks.find((task) => task.id === "DL-B1-10-P02").sourceTaskIds, ["DL-B1-10-T06", "DL-B1-10-T08"], "B1.10 P02 must link its phone inquiry scenario to T06 and T08");
   const b1MediaAudioAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b1MediaAssessment.id);
-  assert.equal(b1MediaAudioAssets.length, 3, "the first B1.10 audio installment must expose vocabulary, model sentences, and dialogue");
-  assert.equal(b1MediaAudioAssets.reduce((count, asset) => count + asset.segments.length, 0), 10, "the first B1.10 audio installment must expose ten generated clips");
+  assert.equal(b1MediaAudioAssets.length, 5, "B1.10 must expose vocabulary, models, dialogue, reading, and listening");
+  assert.equal(b1MediaAudioAssets.reduce((count, asset) => count + asset.segments.length, 0), 12, "B1.10 must expose twelve generated clips");
   assert.ok(b1MediaAudioAssets.every((asset) => asset.status === "generated_pending_acoustic_review"), "B1.10 recordings must remain previews until the user approves the generated tracks");
   const b1MediaPhrase = b1MediaAudioAssets.find((asset) => asset.assetId === "DL-B1-10-AUD-PHR-01");
   assert.equal(b1MediaPhrase.segments[0].speaker, "Narrator");
@@ -1053,6 +1053,46 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.deepEqual(b1MediaDialogue.segments.map((segment) => segment.speaker), ["Leila", "Redakteur", "Leila", "Redakteur", "Leila", "Redakteur", "Leila", "Redakteur"], "B1.10 dialogue speaker order must match the lesson");
   assert.ok(b1MediaDialogue.segments.filter((segment) => segment.speaker === "Leila").every((segment) => segment.voiceId === "voice-02"), "Leila must keep voice-02 throughout the dialogue");
   assert.ok(b1MediaDialogue.segments.filter((segment) => segment.speaker === "Redakteur").every((segment) => segment.voiceId === "voice-03"), "the editor must keep voice-03 throughout the dialogue");
+  const mediaReading = b1MediaAudioAssets.find((asset) => asset.kind === "reading");
+  const mediaListening = b1MediaAudioAssets.find((asset) => asset.kind === "listening");
+  const sourceMediaReading = b1MediaSource.split("## 4) رسالة استفسار رسمية أصلية")[1].split("### أسئلة الفهم")[0]
+    .split(/\r?\n/).filter((line) => line.startsWith("> ")).map((line) => line.slice(2).replaceAll("**", "").trim()).filter(Boolean).join(" ");
+  const normalizedWords = (text) => text.replace(/[.,:?!]/g, "").replace(/\s+/g, " ").trim();
+  assert.equal(normalizedWords(mediaReading.segments[0].text), normalizedWords(sourceMediaReading), "B1.10 reading must preserve every source word, including subject, greeting and signature; only spoken punctuation differs");
+  assert.equal(mediaReading.segments[0].voiceId, "voice-02");
+  assert.equal(mediaReading.segments[0].speaker, "Narrator");
+  const sourceMediaListening = b1MediaSource.split("## 5) نص استماع معدّ للنطق")[1].split("أجب:")[0]
+    .split(/\r?\n/).find((line) => line.startsWith("> ")).slice(2).trim();
+  assert.equal(mediaListening.segments[0].text, sourceMediaListening, "B1.10 listening must exactly match its source");
+  assert.equal(mediaListening.segments[0].voiceId, "voice-03");
+  assert.equal(mediaListening.segments[0].speaker, "Erzählperson");
+  const mediaLayout = vm.runInContext("renderLessonAudioContent(course.lessons.find((lesson) => lesson.id === 'b1-10-media-news-formal-communication'))", context);
+  assert.equal(mediaLayout.audioPanel, "", "all five B1.10 assets should be placed inline, not duplicated above the lesson");
+  const sourceMediaHeadings = b1MediaSource.split(/\r?\n/).filter((line) => line.startsWith("## ")).slice(0, 5).map((line) => line.slice(3));
+  assert.deepEqual(b1MediaAudioAssets.map((asset) => asset.sectionHeading), sourceMediaHeadings);
+  for (const asset of b1MediaAudioAssets) {
+    const start = mediaLayout.contentHtml.indexOf(`<h2 dir="auto">${asset.sectionHeading}</h2>`);
+    const next = mediaLayout.contentHtml.indexOf('<h2 dir="auto">', start + 1);
+    const section = mediaLayout.contentHtml.slice(start, next < 0 ? undefined : next);
+    assert.ok(section.includes(`data-audio-id="${asset.assetId}"`), `${asset.assetId} must be in its own source section`);
+    assert.equal(mediaLayout.contentHtml.split(`data-audio-id="${asset.assetId}"`).length - 1, 2, "exactly two rate buttons, with no duplicate card");
+    assert.match(section, /للمراجعة/);
+    assert.doesNotMatch(section, /is-final/);
+  }
+  const fallbackLayout = vm.runInContext("renderLessonAudioContent({id: 'b1-10-media-news-formal-communication', contentHtml: '<p>Changed source</p>'})", context);
+  assert.equal(fallbackLayout.contentHtml, '<p>Changed source</p>');
+  for (const asset of b1MediaAudioAssets) assert.ok(fallbackLayout.audioPanel.includes(asset.assetId), "stale headings must never hide audio");
+  const legacyAudioLayout = vm.runInContext("renderLessonAudioContent(course.lessons[0])", context);
+  assert.equal(legacyAudioLayout.contentHtml, courseData.lessons[0].contentHtml, "other lessons must retain their content and panel placement");
+  assert.match(legacyAudioLayout.audioPanel, /DL-A0-01-AUD-ABC-01/);
+  for (const asset of [mediaReading, mediaListening]) {
+    const index = FakeAudio.instances.length;
+    vm.runInContext(`playAudioAsset('${asset.assetId}', 0.8)`, context);
+    assert.equal(FakeAudio.instances[index].src, asset.segments[0].src);
+    assert.equal(FakeAudio.instances[index].playbackRate, 0.8);
+    assert.equal(FakeAudio.instances[index].started, true);
+    vm.runInContext('stopAudioPlayback()', context);
+  }
   assert.equal(b1MediaAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), true, "B1.10 self-check tasks must remain independent of optional lesson audio");
   assert.match(b1MediaSource, /تقديم الاستفسار شفهيًا في محاكاة اتصال هاتفي/);
   assert.match(b1MediaSource, /اكتب نص الاتصال ثم اقرأه بصوت واضح/);
@@ -1706,7 +1746,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), true, "B2.12 must open after B2.11 mastery because its assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[11].id, "B2.12 must be the next required step after mastering B2.11");
 
-  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through the partial B1.10 batch (145 assets/322 clips; 137 ready and eight awaiting review, including three B1.10 assets/ten clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus the B1.10 eight-turn dialogue, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria, B2.2 Konjunktiv I/source-attribution criteria, B2.3 passive-with-modals criteria, B2.4 Partizip I/II adjective criteria, B2.5 cause/effect and Genitiv criteria, B2.6 academic Nomen-Verb-Verbindungen criteria, B2.7 prepositional-relative-clause criteria, B2.8 Vorgangspassiv/Zustandspassiv criteria, B2.9 wo(r)/da(r)-preposition criteria, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
+  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B1.10 (147 assets/324 clips; 137 ready and ten awaiting review, including five B1.10 assets/twelve clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10 dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria, B2.2 Konjunktiv I/source-attribution criteria, B2.3 passive-with-modals criteria, B2.4 Partizip I/II adjective criteria, B2.5 cause/effect and Genitiv criteria, B2.6 academic Nomen-Verb-Verbindungen criteria, B2.7 prepositional-relative-clause criteria, B2.8 Vorgangspassiv/Zustandspassiv criteria, B2.9 wo(r)/da(r)-preposition criteria, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

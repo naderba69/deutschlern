@@ -24482,7 +24482,8 @@
           "voiceId": "voice-02"
         }
       ],
-      "transcriptPolicy": "offer"
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الإعلام والتواصل الرسمي"
     },
     {
       "assetId": "DL-B1-10-AUD-MODEL-01",
@@ -24498,7 +24499,8 @@
           "voiceId": "voice-02"
         }
       ],
-      "transcriptPolicy": "offer"
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) السؤال غير المباشر باستخدام ob أو أداة استفهام"
     },
     {
       "assetId": "DL-B1-10-AUD-DLG-01",
@@ -24556,7 +24558,42 @@
           "voiceId": "voice-03"
         }
       ],
-      "transcriptPolicy": "offer"
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في مكتب تحرير"
+    },
+    {
+      "assetId": "DL-B1-10-AUD-READ-01",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "title": "قراءة: رسالة Noor إلى هيئة التحرير",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-10-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Betreff: Frage zum Radiobeitrag über eine Ausstellung. Sehr geehrte Damen und Herren, ich habe gestern Ihren Beitrag über eine neue Ausstellung gehört. Könnten Sie mir bitte mitteilen, wann die Sendung als Podcast verfügbar sein wird? Außerdem möchte ich wissen, welche Quellen Sie im Beitrag nennen. Können Sie bestätigen, ob auf Ihrer Webseite eine vollständige Liste der Quellen steht? Vielen Dank im Voraus. Mit freundlichen Grüßen, Noor.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) رسالة استفسار رسمية أصلية"
+    },
+    {
+      "assetId": "DL-B1-10-AUD-LST-01",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "title": "استماع: استفسار Sami عن مجلة المدينة",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-10-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Guten Tag, hier ist Sami. Ich rufe an, weil ich wissen möchte, wann die nächste Ausgabe des Stadtmagazins erscheint. Können Sie mir sagen, ob das vollständige Transkript online verfügbar ist? Ich möchte auch wissen, wo ich das Archiv finde. Die Mitarbeiterin am Telefon sagt, sie schickt mir die Informationen per E-Mail.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }

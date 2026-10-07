@@ -253,6 +253,12 @@ def main() -> None:
         assert register_row["lesson_id"] == asset["lessonId"], f"Audio register assigns the asset to the wrong lesson: {asset['assetId']}"
         assert register_row["production_status"] == status, f"Audio register status is stale: {asset['assetId']}"
         assert register_row["transcript_policy"] == asset.get("transcriptPolicy", "offer"), f"Audio register transcript policy is stale: {asset['assetId']}"
+        if "sectionHeading" in asset:
+            heading = asset["sectionHeading"]
+            assert isinstance(heading, str) and heading.strip(), f"Invalid inline heading: {asset['assetId']}"
+            assert register_row["source_heading"] == "## " + heading, f"Inline audio heading differs from register: {asset['assetId']}"
+            lesson = next(item for item in COURSE["lessons"] if item["id"] == asset["lessonId"])
+            assert lesson["contentHtml"].count(f'<h2 dir="auto">{html.escape(heading)}</h2>') == 1, f"Inline audio heading missing or duplicated: {asset['assetId']}"
         registered_voice_mapping = {}
         for entry in register_row["voice_id_mapping"].split(";"):
             speaker, separator, voice_id = entry.strip().partition("=")

@@ -519,6 +519,14 @@ def main() -> None:
     for asset in audio_assets:
         if asset.get("lessonId") not in valid_audio_lessons:
             raise SystemExit(f"Audio asset references an unknown lesson: {asset['assetId']}")
+        if "sectionHeading" in asset:
+            heading = asset["sectionHeading"]
+            lesson = next((item for item in lessons if item["id"] == asset["lessonId"]), None)
+            if not isinstance(heading, str) or not heading.strip() or lesson is None:
+                raise SystemExit(f"Invalid inline audio heading: {asset['assetId']}")
+            marker = f'<h2 dir="auto">{html.escape(heading)}</h2>'
+            if lesson["contentHtml"].count(marker) != 1:
+                raise SystemExit(f"Inline audio heading must match one lesson section: {asset['assetId']}")
     transition_path = ROOT / "content" / "A0" / "lesson-06-placement-check.md"
     transition_markdown = transition_path.read_text(encoding="utf-8")
     transition_title = next((line[2:].strip() for line in transition_markdown.splitlines() if line.startswith("# ")), "اختبار انتقال إلى A1")

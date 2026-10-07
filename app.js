@@ -1626,9 +1626,9 @@ function renderLesson() {
   return renderLessonOverview(lesson);
 }
 
-function renderAudioAssets(lessonId) {
+function renderAudioAssets(lessonId, assetIds = null) {
   const playableStatuses = ['ready', 'generated_pending_acoustic_review'];
-  const assets = (course?.audioAssets || []).filter((asset) => asset.lessonId === lessonId && playableStatuses.includes(asset.status));
+  const assets = (course?.audioAssets || []).filter((asset) => asset.lessonId === lessonId && playableStatuses.includes(asset.status) && (assetIds === null || assetIds.includes(asset.assetId)));
   if (!assets.length) return '';
   const hasPendingReview = assets.some((asset) => asset.status === 'generated_pending_acoustic_review');
   const reviewNote = hasPendingReview
@@ -1647,7 +1647,27 @@ function renderAudioAssets(lessonId) {
   }).join('')}</div></section>`;
 }
 
+// Place explicitly mapped recordings below their source headings. Unmapped or
+// stale headings fall back to the lesson panel so no recording disappears.
+function renderLessonAudioContent(lesson) {
+  let contentHtml = lesson.contentHtml || '<p>محتوى الدرس غير متاح. أعد بناء بيانات المنهج.</p>';
+  const assets = (course?.audioAssets || []).filter((asset) => asset.lessonId === lesson.id);
+  const placed = new Set();
+  const headings = [...new Set(assets.map((asset) => asset.sectionHeading).filter((heading) => typeof heading === 'string' && heading))];
+  for (const heading of headings) {
+    const marker = `<h2 dir="auto">${escapeHTML(heading)}</h2>`;
+    if (!contentHtml.includes(marker)) continue;
+    const ids = assets.filter((asset) => asset.sectionHeading === heading).map((asset) => asset.assetId);
+    const panel = renderAudioAssets(lesson.id, ids);
+    if (!panel) continue;
+    contentHtml = contentHtml.replace(marker, () => marker + panel);
+    ids.forEach((id) => placed.add(id));
+  }
+  return { contentHtml, audioPanel: renderAudioAssets(lesson.id, assets.filter((asset) => !placed.has(asset.assetId)).map((asset) => asset.assetId)) };
+}
+
 function renderLessonOverview(lesson) {
+  const lessonAudio = renderLessonAudioContent(lesson);
   const level = getLevel(lesson.level) || { id: lesson.level, theme: 'sage' };
   const words = lesson.vocabulary || [];
   const mastered = isLessonMastered(lesson);
@@ -1663,8 +1683,8 @@ function renderLessonOverview(lesson) {
     <section class="lesson-hero"><div><div class="lesson-level-tag"><span class="level-token theme-${level.theme}">${level.id}</span><span>محتوى الدرس الكامل · ${escapeHTML(duration)}</span></div><h1>${escapeHTML(lesson.title)}</h1><p>${escapeHTML(lesson.objective)}</p></div><div class="lesson-time">${icon('clock', 16)} ${escapeHTML(duration)}</div></section>
     <div class="lesson-layout">
       <div class="lesson-main-column">
-        ${renderAudioAssets(lesson.id)}
-        <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small>LEKTION · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">مفتاح الإجابات قابل للفتح</span></div><article class="lesson-document" dir="rtl">${lesson.contentHtml || '<p>محتوى الدرس غير متاح. أعد بناء بيانات المنهج.</p>'}</article></section>
+        ${lessonAudio.audioPanel}
+        <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small>LEKTION · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">مفتاح الإجابات قابل للفتح</span></div><article class="lesson-document" dir="rtl">${lessonAudio.contentHtml}</article></section>
         ${vocabularyDrawer}
         <section class="lesson-finish-panel"><div><strong>${mastered ? 'هذا الدرس متقن' : assessmentIsReady ? 'حان وقت التحقق من الإتقان' : 'تقييم هذا الدرس قيد الإعداد'}</strong><span>${mastered ? `أفضل نتيجة معتمدة: ${state.completedLessons[lesson.id].score}%` : assessmentIsReady ? 'يلزم 80% على الأقل وإثبات أهداف الدرس لفتح الخطوة التالية.' : 'يمكنك دراسة المحتوى كاملًا الآن؛ لكن القراءة وحدها لا تسجّل الإتقان ولا تفتح الدرس التالي.'}</span></div>${assessmentIsReady ? `<button type="button" class="button-primary" data-action="begin-quiz">${quizActionLabel} ${icon('check', 16)}</button>` : '<span class="plan-chip">غير متاح بعد</span>'}</section>
       </div>
