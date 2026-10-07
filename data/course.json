@@ -26134,6 +26134,23 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "4) نص قراءة أصلي: اقتراح بيئي خيالي"
+    },
+    {
+      "assetId": "DL-B2-11-AUD-LST-01",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "title": "استماع: حماية منطقة رطبة ومشاركة السكان",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-11-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Beim Schutz eines Feuchtgebiets müssen die Interessen verschiedener Gruppen abgewogen werden. Durch die Verringerung von Abfällen kann die Belastung der Umgebung sinken. Bei der Wiederherstellung von Wegen soll auch der Zugang für Anwohnerinnen berücksichtigt werden. Die Beteiligung der Bevölkerung hilft dabei, unterschiedliche Bedürfnisse zu erkennen. Ein Vorschlag wird erst nach der Prüfung möglicher Auswirkungen bewertet.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }
