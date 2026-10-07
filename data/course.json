@@ -25199,6 +25199,110 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-04-AUD-PHR-01",
+      "lessonId": "b2-04-cities-housing-participles",
+      "title": "مفردات السكن والمباني",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-04-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Wohnfläche, die Wohnflächen. Die Fassade, die Fassaden. Die Dämmung, die Dämmungen. Das Mehrfamilienhaus, die Mehrfamilienhäuser. Der Altbau, die Altbauten. Die Sanierung, die Sanierungen. Die Nebenkosten, nur Plural. Die Barrierefreiheit. Die Baustelle, die Baustellen. Das Wohnviertel, die Wohnviertel. Sanieren, saniert. Dämmen, dämmt. Entstehen, entsteht. Zunehmend. Derzeit. Bezahlbar. Barrierefrei.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات السكن والمباني"
+    },
+    {
+      "assetId": "DL-B2-04-AUD-MODEL-01",
+      "lessonId": "b2-04-cities-housing-participles",
+      "title": "نماذج Partizip I وPartizip II كصفات",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-04-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Mieten steigen. Die steigenden Mieten. Wohnungen entstehen. Die derzeit entstehenden Wohnungen. Das Haus wurde saniert. Das sanierte Haus. Die Fassade wurde renoviert. Die renovierte Fassade. Ein saniertes Wohnhaus. Mit den sanierten Wohnungen. Eine steigende Miete.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) Partizip I وPartizip II في وظيفة الصفة"
+    },
+    {
+      "assetId": "DL-B2-04-AUD-DLG-01",
+      "lessonId": "b2-04-cities-housing-participles",
+      "title": "حوار: المهندسة المعمارية وSamir في جولة سكنية",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-01.mp3",
+          "speaker": "Architektin",
+          "text": "Hier sehen Sie ein kürzlich saniertes Mehrfamilienhaus.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-02.mp3",
+          "speaker": "Samir",
+          "text": "Und was entsteht neben der Baustelle?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-03.mp3",
+          "speaker": "Architektin",
+          "text": "Dort werden derzeit zwei barrierefrei geplante Wohnhäuser gebaut.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-04.mp3",
+          "speaker": "Samir",
+          "text": "Sind die Wohnungen bezahlbar?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-05.mp3",
+          "speaker": "Architektin",
+          "text": "Die Kosten hängen von Größe und Ausstattung ab. Die steigenden Nebenkosten müssen im Mietangebot klar genannt werden.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-06.mp3",
+          "speaker": "Samir",
+          "text": "Und was wurde an der Fassade verändert?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-04-AUD-DLG-01-07.mp3",
+          "speaker": "Architektin",
+          "text": "Die neu gedämmte Fassade senkt den Wärmeverlust des Gebäudes. Die Wohnungen werden schrittweise angeboten.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في جولة سكنية"
+    },
+    {
+      "assetId": "DL-B2-04-AUD-READ-01",
+      "lessonId": "b2-04-cities-housing-participles",
+      "title": "قراءة: حي Parkbogen الخيالي",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-04-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Im fiktiven Wohnviertel Parkbogen wird ein alter Häuserblock erneuert. Das bereits sanierte Eckhaus hat eine helle Fassade und einen barrierefrei gestalteten Eingang. Neben dem Gebäude entstehen derzeit drei Wohnhäuser. Die dort entstehenden Wohnungen sind unterschiedlich groß; einige haben einen gemeinschaftlich genutzten Innenhof. Im Informationsblatt stehen auch die voraussichtlichen Nebenkosten. Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben. Das Planungsteam erklärt, die Angaben würden vor dem Einzug aktualisiert. Bei der Besichtigung können Interessierte zwischen einem möblierten Musterraum und einer noch nicht fertiggestellten Wohnung wählen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي"
     }
   ]
 }
