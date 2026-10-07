@@ -55,6 +55,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-09": "b1-09-travel-transport-environment",
     "DL-B1-10": "b1-10-media-news-formal-communication",
     "DL-B1-11": "b1-11-history-politics-passive-past",
+    "DL-B1-12": "b1-12-innovation-research-future",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 

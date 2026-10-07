@@ -3534,6 +3534,99 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B1-12-AUD-PHR-01",
+      "lessonId": "b1-12-innovation-research-future",
+      "title": "مفردات البحث والابتكار",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-12-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Forschung. Die Entwicklung, die Entwicklungen. Die Erfindung, die Erfindungen. Das Experiment, die Experimente. Der Versuch, die Versuche. Das Ergebnis, die Ergebnisse. Die Anwendung, die Anwendungen. Die Lösung, die Lösungen. Der Prototyp, die Prototypen. Das Labor, die Labore. Entwickeln, entwickelt. Erforschen, erforscht. Testen, testet. Verbessern, verbessert. Wahrscheinlich. Vermutlich. Vielleicht. Künftig.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات البحث والابتكار"
+    },
+    {
+      "assetId": "DL-B1-12-AUD-MODEL-01",
+      "lessonId": "b1-12-innovation-research-future",
+      "title": "نماذج Futur I والمقارنة بالحاضر والمبني للمجهول",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-12-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Team testet den Prototyp nächste Woche. Das Team wird den Prototyp nächste Woche testen. In Zukunft werden Forschende neue Lösungen entwickeln. Vielleicht wird das Experiment länger dauern. Das Team wird den Sensor testen. Der Sensor wird getestet.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) التوقّع أو الخطة المستقبلية بـFutur I"
+    },
+    {
+      "assetId": "DL-B1-12-AUD-DLG-01",
+      "lessonId": "b1-12-innovation-research-future",
+      "title": "حوار: Rana وTimo في ورشة ابتكار",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-01.mp3",
+          "speaker": "Rana",
+          "text": "Woran arbeitet euer Team gerade?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-02.mp3",
+          "speaker": "Timo",
+          "text": "Wir entwickeln einen kleinen Sensor für den Gemeinschaftsgarten.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-03.mp3",
+          "speaker": "Rana",
+          "text": "Was werdet ihr als Nächstes machen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-04.mp3",
+          "speaker": "Timo",
+          "text": "Nächste Woche werden wir den Prototyp in zwei Beeten testen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-05.mp3",
+          "speaker": "Rana",
+          "text": "Wird der Sensor die Arbeit im Garten ersetzen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-06.mp3",
+          "speaker": "Timo",
+          "text": "Nein. Er wird nur Messwerte liefern. Wir werden prüfen, ob die Werte hilfreich sind.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-07.mp3",
+          "speaker": "Rana",
+          "text": "Und was passiert, wenn der erste Versuch nicht klappt?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-12-AUD-DLG-01-08.mp3",
+          "speaker": "Timo",
+          "text": "Dann werden wir das Modell verbessern. Ein Versuch, der nicht funktioniert, wird uns trotzdem etwas zeigen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في ورشة ابتكار"
     }
   ],
   "selectedVoiceIds": [
