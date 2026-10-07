@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-01-v1",
+    "version": "a1-01-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,10 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR7: مراجعة نصية بالمراجع لكل الوحدات موثقة في data/reviews/a1-01-review.json؛ لا اعتماد نطق أو شهادة CEFR.",
+      "صحح T03.4 إلى sprichst؛ وطوبقت روابط Q06/Q07/Q08 مع T03/T08/T09. مفاتيح الأسئلة العشرة محفوظة.",
+      "P01 بطاقة كتابية من ستة أسطر؛ P02 أربعة أسئلة وأجوبتها وتقديم بجملتين مع قراءة فردية. التحقق الذاتي لا يصحح اللغة آليًا.",
+      "أصلا القراءة والاستماع ومقطعاهما موجودان ومحفوظان دون استماع أو تعديل أو اعتماد جديد؛ التقييم لا يتطلب الصوت."
     ]
   },
   "quiz": [
@@ -126,7 +127,7 @@
     {
       "id": "DL-A1-01-Q06",
       "sourceTaskIds": [
-        "DL-A1-01-T05"
+        "DL-A1-01-T03"
       ],
       "objectiveIds": [
         "DL-A1-01-G01"
@@ -147,7 +148,7 @@
     {
       "id": "DL-A1-01-Q07",
       "sourceTaskIds": [
-        "DL-A1-01-T06"
+        "DL-A1-01-T08"
       ],
       "objectiveIds": [
         "DL-A1-01-G01"
@@ -168,7 +169,7 @@
     {
       "id": "DL-A1-01-Q08",
       "sourceTaskIds": [
-        "DL-A1-01-T07"
+        "DL-A1-01-T09"
       ],
       "objectiveIds": [
         "DL-A1-01-G01"
@@ -177,14 +178,14 @@
         "الكتابة الصحيحة",
         "اختيار محدد"
       ],
-      "prompt": "أي اسم لغة يجب كتابته بحرف كبير؟",
+      "prompt": "أي خيار يمثل اسم اللغة الألمانية مكتوبًا بحرف كبير؟",
       "options": [
         "deutsch (صفة)",
         "Deutsch (اسم اللغة)",
         "deutsche Sprache"
       ],
       "answerIndex": 1,
-      "explanation": "اسم اللغة Deutsch اسمٌ ويبدأ بحرف كبير."
+      "explanation": "Deutsch هنا اسم اللغة ويكتب بحرف كبير. الصفة deutsch/deutsche بحرف صغير داخل الجملة؛ deutsche Sprache تعني اللغة الألمانية لكنها ليست الاسم المفرد Deutsch."
     },
     {
       "id": "DL-A1-01-Q09",
@@ -219,7 +220,7 @@
         "التفاعل",
         "اختيار محدد"
       ],
-      "prompt": "ما الرد المناسب على Was machst du gern؟",
+      "prompt": "ما الرد المناسب على السؤال «Was machst du gern?»؟",
       "options": [
         "Ich komme aus Tunesien.",
         "Ich lese gern.",
@@ -239,14 +240,13 @@
         "DL-A1-01-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب بطاقة قصيرة عن نفسك بالألمانية: اذكر اسمك وبلدك والمدينة التي تسكن فيها ولغتين وهواية تحبها. اقرأها بصوت مرتفع إن أمكن.",
+      "prompt": "اكتب بطاقة لشخصية خيالية في ستة أسطر ألمانية: الاسم، بلد الأصل Tunesien، السكن Nabeul، اللغتان Arabisch وFranzösisch، اللغة التي تتعلمها Deutsch، وهواية واحدة مع gern. اختر اسمًا وهواية من نماذج الدرس، واكتب جملة كاملة في كل سطر. لا يلزم كشف بياناتك أو القراءة بصوت مرتفع.",
       "criteria": {
-        "taskCompletion": "تتضمن البطاقة الاسم والبلد والمدينة واللغات وهواية واحدة.",
-        "meaningClarity": "تُفهم المعلومات الشخصية والهواية بوضوح.",
-        "targetSkill": "يستخدم المضارع، ويكتب أسماء اللغات بحرف كبير، ويضع gern في موضع مناسب."
+        "taskCompletion": "كتبت الأسطر الستة: الاسم والأصل والسكن ولغتا الحديث واللغة التي تتعلمها الشخصية والهواية.",
+        "meaningClarity": "كل معلومة واضحة وموافقة لبيانات الشخصية الخيالية؛ أميز بين أتحدث وأتعلم.",
+        "targetSkill": "أصرف الأفعال مع Ich، وأكتب أسماء اللغات بحرف كبير، وأستعمل gern مع فعل الهواية."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,8 +256,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 35,
-        "speakAloud": true,
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
         "audioRequired": false
       }
     },
@@ -274,11 +274,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "تدرّب على محادثة قصيرة: اسأل عن الاسم ومكان السكن واللغات والهواية، ثم أجب عن الأسئلة بإجابات كاملة. اكتب الحوار واقرأ الدورين بصوت مرتفع.",
+      "prompt": "اكتب حوارًا بينك وبين شخصية خيالية: اطرح الأسئلة الأربعة في تمرين 8 عن بلد الأصل والسكن واللغات والهواية، واكتب جوابًا كاملًا مناسبًا لكل سؤال. ثم قدّم الشخصية بجملتين عن سكنها وهوايتها مستخدمًا اسمها ثم er أو sie. اقرأ الأسئلة والأجوبة وجملتي التقديم بصوت مرتفع؛ يمكنك أداء الدورين وحدك ولا يلزم شريك أو تسجيل صوتي.",
       "criteria": {
-        "taskCompletion": "يحتوي الحوار على سؤالين على الأقل وإجابات مناسبة.",
-        "meaningClarity": "تطابق الإجابة السؤال ويمكن فهمها دون تخمين.",
-        "targetSkill": "يستخدم أسئلة مثل Wo wohnst du? وWelche Sprachen sprichst du? وجملة مع gern."
+        "taskCompletion": "كتبت الأسئلة الأربعة وأجوبتها ثم جملتين للتقديم، وقرأت كل ذلك بصوت مرتفع.",
+        "meaningClarity": "كل جواب يطابق سؤاله، وجملتا التقديم تحافظان على بيانات الشخصية نفسها.",
+        "targetSkill": "أستخدم Woher kommst du? وWo wohnst du? وWelche Sprachen sprichst du? وWas machst du gern?، ثم الفعل المناسب مع الاسم وer/sie وgern للهواية."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -288,7 +288,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
+        "minimumResponseCharacters": 180,
         "speakAloud": true,
         "audioRequired": false
       }

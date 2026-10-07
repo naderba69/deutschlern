@@ -278,6 +278,42 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally { state.completedLessons=priorLessons; state.levelChecks=priorChecks; state.performanceEvidence=priorEvidence; }
   })()`, context), true, 'gate v1 result/draft cannot grant v2 mastery; validation preserves old result; current drafts work');
 
+  // CR7: written card vs mandatory spoken dialogue, and A1.1 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'a1-01-introductions-languages-hobbies').assessment.version, 'a1-01-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('a1-01-introductions-languages-hobbies');
+    const responses = [
+      'Ich heiße Lina. Ich komme aus Tunesien. Ich wohne in Nabeul. Ich spreche Arabisch und Französisch. Ich lerne Deutsch. Ich lese gern.',
+      'Woher kommst du? Ich komme aus Tunesien. Wo wohnst du? Ich wohne in Sousse. Welche Sprachen sprichst du? Ich spreche Arabisch und Französisch. Was machst du gern? Ich lese gern. Mila wohnt in Sousse. Sie liest gern.'
+    ];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'A1.1 models fit thresholds; P01 is writing only, P02 needs speech and all checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('a1-01-introductions-languages-hobbies').performanceTasks[0]], 'lesson:a1-01-introductions-languages-hobbies', 'a1-01-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('a1-01-introductions-languages-hobbies');
+      const next=findLesson('a1-02-work-family');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'a1-01-v1'};
+      state.completedLessons=Object.fromEntries(getLessonsInLevel('A0').map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'a1-01-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='a1-01-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'a1-01-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain A1.1 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

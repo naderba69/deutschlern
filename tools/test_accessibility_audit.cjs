@@ -62,6 +62,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A0.5-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A0.5-practical-form-fixture', width);
+  // CR7: reviewed A1.1 source, irregular forms, and written/oral task distinction.
+  await page.evaluate(() => openLesson('a1-01-introductions-languages-hobbies'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.1-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.1-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
