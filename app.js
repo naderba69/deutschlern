@@ -1465,6 +1465,10 @@ function renderLevelPage() {
     <section class="track-level theme-${level.theme}">${getLessonsInLevel(level.id).map((lesson, i) => renderLessonRow(lesson, i)).join('')}</section>${transitionCheck}`;
 }
 
+function renderA0GateScopeNote() {
+  return '<p class="progression-note">التقييم اختيارات ومهمات كتابة وكلام بتحقق ذاتي، وليس تصحيحًا آليًا للغة أو النطق. التسجيل تدريب إضافي؛ الاستماع غير مقاس بأسئلة محسوبة هنا.</p>';
+}
+
 function renderA0TransitionCheck() {
   const check = course?.a0TransitionCheck;
   if (!check) return '';
@@ -1483,7 +1487,7 @@ function renderA0TransitionCheck() {
   const gateAction = done && ready && !mastered
     ? `<button type="button" class="button-primary" data-action="begin-a0-gate">${gateInProgress ? 'تابع تقييم الانتقال' : 'ابدأ تقييم الانتقال'} ${icon('arrowLeft', 15)}</button>`
     : '';
-  return `<section class="transition-check-panel"><div class="transition-check-heading"><div><small>A0 · بوابة الإتقان إلى A1</small><h2>التقييم الختامي بعد A0</h2><p>شرط الانتقال: إتقان الدروس الخمسة ثم تحقيق 80% على الأقل في تقييم يغطي الأهداف والمهارات المطلوبة. النجاح هنا لا يعني شهادة أو اعتمادًا رسميًا.</p></div><span>${ready ? escapeHTML(check.durationLabel) : 'قيد الإنتاج'}</span></div><p class="progression-note">${status} ورقة الأسئلة القديمة تبقى في ملفات المحتوى للمراجعة التحريرية ولا تُحتسب بوابةً للانتقال.</p>${gateAction}</section>${done ? renderAudioAssets('a0-a1-gate') : ''}`;
+  return `<section class="transition-check-panel"><div class="transition-check-heading"><div><small>A0 · بوابة الإتقان إلى A1</small><h2>التقييم الختامي بعد A0</h2><p>شرط الانتقال: إتقان الدروس الخمسة ثم تحقيق 80% على الأقل في تقييم يغطي الأهداف والمهارات المطلوبة. النجاح هنا لا يعني شهادة أو اعتمادًا رسميًا.</p></div><span>${ready ? escapeHTML(check.durationLabel) : 'قيد الإنتاج'}</span></div><p class="progression-note">${status} ورقة الأسئلة القديمة محفوظة للأرشفة فقط ولا تُحتسب بوابةً للانتقال.</p>${gateAction}${renderA0GateScopeNote()}</section>${done ? renderAudioAssets('a0-a1-gate') : ''}`;
 }
 
 function startA0GateQuiz(retry = false) {
@@ -1530,7 +1534,7 @@ function renderA0GateAssessment() {
     return `<button type="button" class="${classes}" data-action="select-gate-answer" data-index="${index}" ${gateSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto">${escapeHTML(option)}</span>${gateSession.checked && index === question.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
   const feedback = gateSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}">${isCorrect ? '<strong>إجابة صحيحة.</strong> ' : '<strong>راجع هذه النقطة.</strong> '}${escapeHTML(question.explanation)}</div>` : '';
-  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto">${escapeHTML(question.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
+  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}${renderA0GateScopeNote()}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto">${escapeHTML(question.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
 }
 
 function renderA0GatePerformance(gate) {
@@ -1542,7 +1546,7 @@ function renderA0GatePerformance(gate) {
   }).length;
   const allComplete = completedCount === tasks.length && tasks.length > 0;
   const score = scorePercent(gateSession.correct, gate.quiz.length);
-  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى A0</button><div class="performance-quiz-score"><strong>نتيجة الأسئلة: ${score}%</strong><span>يلزم 80% على الأقل مع إكمال المهام العملية.</span></div>${renderPerformanceTasks(tasks, scopeKey, gate.assessment.version)}<div class="performance-finish-actions"><span>${completedCount} من ${tasks.length} مهام مكتملة</span><button type="button" class="button-primary" data-action="finish-gate-performance" ${allComplete ? '' : 'disabled'}>اعتمد نتيجة التقييم ${icon('check', 16)}</button></div></div>`;
+  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى A0</button><div class="performance-quiz-score"><strong>نتيجة الأسئلة: ${score}%</strong><span>يلزم 80% على الأقل مع إكمال المهام العملية.</span></div>${renderA0GateScopeNote()}${renderPerformanceTasks(tasks, scopeKey, gate.assessment.version)}<div class="performance-finish-actions"><span>${completedCount} من ${tasks.length} مهام مكتملة</span><button type="button" class="button-primary" data-action="finish-gate-performance" ${allComplete ? '' : 'disabled'}>اعتمد نتيجة التقييم ${icon('check', 16)}</button></div></div>`;
 }
 
 function checkA0GateAnswer() {

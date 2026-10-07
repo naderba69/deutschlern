@@ -42,6 +42,8 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'vocabulary-revealed', width);
   await page.evaluate(() => startA0GateQuiz());
   await scan(page, 'A0-gate', width);
+  await page.evaluate(() => { gateSession.mode = 'performance'; gateSession.correct = 10; render(); });
+  await scan(page, 'A0-gate-reviewed-performance', width);
   // CR3: audit the revised lesson tables and both actual performance-task forms.
   await page.evaluate(() => openLesson('a0-03-numbers-personal-info'));
   await page.locator('.audio-transcript summary').first().click();

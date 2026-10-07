@@ -1,0 +1,456 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a0-a1-gate",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a0-gate-v2",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "unitCount": 39,
+  "practicalSubItemCount": 12,
+  "sources": [
+    {
+      "id": "R-GOETHE",
+      "citation": "[Goethe — Deutsch Online A1](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "الجزء0 فقط: Kapitel1 للتعارف والتحيات والتصريف، Kapitel2 لطلب إعادة الكلام والبطء، Kapitel3 لـwir/haben. لم نعتمد العبارة المستخرجة Ich heißen Matteo Kraft. ولا نعرف إن كان العيب في الأصل أم الاستخراج."
+    },
+    {
+      "id": "R-SIE",
+      "citation": "[grammis — §65/66](https://grammis.ids-mannheim.de/rechtschreibung/6197)",
+      "scope": "قرئت الصفحة: Sie الرسمية بحرف كبير، وdu العادية بحرف صغير؛ يختلف ذلك عن ضمير الغائبة sie."
+    },
+    {
+      "id": "R-NUMBERS",
+      "citation": "[Deutsche Grammatik 2.0 — Kardinalzahlen](https://deutschegrammatik20.de/adjektiv/zahlen-kardinalzahlen-ordinalzahlen/kardinalzahlen/)",
+      "scope": "قرئت أعداد0–20 ومنهاvierzehn/fünfzehn/achtzehn، وvierzig=40. شرح صياغة العدد لا يثبت أداءه الصوتي."
+    },
+    {
+      "id": "R-IE",
+      "citation": "[1](https://grammis.ids-mannheim.de/rechtschreibung/6174)",
+      "scope": "قرئت القاعدة الرسمية كاملة: ie لتمثيلiالطويل في الكلمات الأصلية، مع استثناءات§10. لم نعتمد تعميم نتيجة البحث التعليمية بأن كلiطويل يكتبie."
+    },
+    {
+      "id": "R-DW",
+      "citation": "[DW/Cornelsen 2006 — Alphabet](https://www.dw.com/downloads/26294183/lektion1-lerner-aussprache.pdf)",
+      "scope": "قرئت صفحةei وsch/Schule للمقارنة فقط. رفضنا رموزIPA المشوهة والقاعدة القديمة بأنßليس له إلا الشكل الصغير؛ لم نستخدمهما أو ندع سماع الملف."
+    },
+    {
+      "id": "R-DUDEN",
+      "citation": "[Duden — vier](https://www.duden.de/rechtschreibung/vier)",
+      "scope": "قرئت دلالةvier=4 ومثال العمر؛ لم يظهرIPAفي النص المستخرج ولم يُسمع زر النطق، فلا يُستشهد به لإثبات النطق. إدراج مفردة ضمنGoetheB1لا يمنع تعليمها فيA0."
+    },
+    {
+      "id": "R-CEFR",
+      "citation": "[Council of Europe — Companion volume 2020](https://rm.coe.int/common-european-framework-of-reference-for-languages-learning-teaching/16809ea0d4)",
+      "scope": "الجزء0/المقدمة والفهرس فقط، لا كامل الكتاب أو صفحات المقاييس. يميز الفهرس الاستقبال والإنتاج والتفاعل؛ حدود القياس المعلنة هنا استنتاج من تصميم التطبيق وليست شهادة مطابقة من المجلس."
+    }
+  ],
+  "sourceHashes": {
+    "content/A0/lesson-06-placement-check.md": "05ae4e0c132d99bfe62a9adb8386624ade97e52b3496e1ef96d5656d9fbb86ea",
+    "content/A0/lesson-06-placement-check.assessment.json": "c2bd5a2b506edd6b3a21a3df56230afcef253c7698c3d6ef96dceaabb1616b9e",
+    "data/reviews/archive/a0-gate-legacy.md": "4d6df81e7009a31134b3141f305533488e7df4debad45d47167f478f6691f579"
+  },
+  "audioSnapshotHash": "e25875aa967d07e60a49884fdfcc9e6fc1bacf9691e938ef1151cc816065d3c6",
+  "units": [
+    {
+      "id": "scope",
+      "decision": "clarified",
+      "finding": "العتبة 80% والدروس الخمسة شرط كما كان. التقييم الحالي v2 اختيارات ومهمات ذاتية؛ ليس اختبار دخول أو شهادة A1.",
+      "sourceIds": [
+        "R-CEFR"
+      ]
+    },
+    {
+      "id": "archive-boundary",
+      "decision": "corrected",
+      "finding": "فُصلت الورقة القديمة بدليل حالي مطابق لل JSON. كل عبارات الأرشيف وترتيبها محفوظة بعد تنظيف مسافات نهاية السطر فقط؛ تعليم اختر إجابة يناقض سؤال الترتيب القديم Q10 ، والأرشيف ليس واجهة التقييم.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "coverage",
+      "decision": "limited",
+      "finding": "لا حوار تبادلي مستقل في البوابة؛ P01 تمثيل فردي للسؤال والجواب، والتسجيل مونولوج يتخيل طلب توضيح. حدود الطول/المربعات لا تكشف حذف جزء أو خطأ لغويًا تلقائيًا.",
+      "sourceIds": [
+        "R-CEFR"
+      ]
+    },
+    {
+      "id": "audio-boundary",
+      "decision": "clarified",
+      "finding": "واجهة الملخص والأسئلة والأداء تصرح بأن الاستماع غير مقاس؛ أبقينا التسجيل متاحًا وسياسة تفريغه، دون طلب سماعه أو اعتباره شرط نجاح أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "catalog",
+      "decision": "corrected",
+      "finding": "روابط P01→Q04/P02→Q09/P03→Q05 كانت جزئية لا تمثل التعريف المركب/طلب البطء/بطاقة 18. أضيفت ثلاثة أنشطة T01–03 بهدف G01 نفسه، وربطت بها P ؛ صُححت هوية البوابة والأسطر وحالة الصوت القديمة في 13 سجلًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "duration",
+      "decision": "corrected",
+      "finding": "8–10 دقائق القديمة لم تطابق محلل دقيقة فأنتجت 30 افتراضيًا. الدليل الحالي 25–35 دقيقة: تقدير مرن غير مجرّب بتوقيت متعلمين؛ لم نغير محلل كل الدروس أو ندع تحقق المدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "legacy-Q01",
+      "decision": "archived-reviewed",
+      "finding": "ei صحيح؛ ie ليس ei ، و sch ليس z. وصف كتابي لا قياس سماعي.",
+      "sourceIds": [
+        "R-DW",
+        "R-IE"
+      ]
+    },
+    {
+      "id": "legacy-Q02",
+      "decision": "archived-reviewed",
+      "finding": "Ich heiße Lina. صحيح؛ الخيارات القديمةأ=heiße ، وهيبفي التقييم الفعلي. فصلنا المفتاحين بدل نقل الحرف خطأ.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "legacy-Q03",
+      "decision": "archived-reviewed",
+      "finding": "Guten Morgen تحية الصباح. Gute Nacht وداع عند النوم؛ Tschüss وداع.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "legacy-Q04",
+      "decision": "archived-reviewed",
+      "finding": "Wie heißt du? يسأل عن الاسم؛ بفي الأرشيف مقابلجفي الحالي، فلا يجوز نسخ فهرس الخيار.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "legacy-Q05",
+      "decision": "archived-reviewed",
+      "finding": "vierzehn=14 ؛ vierzig=40 صحيح لغويًا لكنه خارج الأساس 0–20 ، واستبدل في الحاليبـ fünfzehn كتحسين اتساق.",
+      "sourceIds": [
+        "R-NUMBERS"
+      ]
+    },
+    {
+      "id": "legacy-Q06",
+      "decision": "archived-reviewed",
+      "finding": "Du bist hier. صحيح؛ bin للأنا و sind للجمع/المخاطبةالرسمية حسب الفاعل.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "legacy-Q07",
+      "decision": "archived-reviewed",
+      "finding": "Wir haben Zeit. صحيح؛ أقديمًا مقابلجحاليًا. hat/hast لايطابقان wir.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "legacy-Q08",
+      "decision": "archived-reviewed",
+      "finding": "Wie heißen Sie? الصحيح المقصود؛ Tschüss? ليس سؤال اسم رسمي. الحالي يسمي الوظيفة ويستعمل مشتت سؤال سكن.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "legacy-Q09",
+      "decision": "archived-reviewed",
+      "finding": "Ich verstehe nicht. يناسب عدم الفهم؛ التحية و Ich heiße bitte لايؤديانها.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "legacy-Q10",
+      "decision": "archived-reviewed",
+      "finding": "Ich habe eine Frage. حل صحيح؛ القديمة تطلب الترتيب لا الاختيار. Eine Frage habe ich. ممكن أيضًا دون شرط البدء بـ Ich ؛ الحالي قُيد بـ Ich.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-Q01",
+      "decision": "retained-key/clarified",
+      "finding": "السؤال صار وصفًا كتابيًا تقريبيًا؛ ei في mein الإجابةأ. راجعنا ie في vier و sch في Schule. لا ادعاء قياس الصوت.",
+      "sourceIds": [
+        "R-DW",
+        "R-IE"
+      ],
+      "options": [
+        "ei في mein قريب من «آي»",
+        "ie في vier مثل ei",
+        "sch في Schule مثل z"
+      ],
+      "answer": "ei في mein قريب من «آي»"
+    },
+    {
+      "id": "DL-A0-GATE-Q02",
+      "decision": "retained-key/clarified",
+      "finding": "Ich heiße Lina. الإجابةب؛ heißen و heißt لا يطابقان Ich. نموذج المصدر صحيح بخلاف استخراج Goethe المرفوض.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "heißt",
+        "heiße",
+        "heißen"
+      ],
+      "answer": "heiße"
+    },
+    {
+      "id": "DL-A0-GATE-Q03",
+      "decision": "retained-key/clarified",
+      "finding": "Guten Morgen الإجابة ب؛ Gute Nacht وداع عند النوم، و Tschüss وداع. لا إشكال مؤكد بالمفتاح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "Gute Nacht",
+        "Guten Morgen",
+        "Tschüss"
+      ],
+      "answer": "Guten Morgen"
+    },
+    {
+      "id": "DL-A0-GATE-Q04",
+      "decision": "retained-key/clarified",
+      "finding": "Wie heißt du? = مااسمك؟ الإجابةج؛ أضيفت علامة الاستفهام الألمانية ? داخل الاقتباس لا تغيير المعنى.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "أين تسكن؟",
+        "كم عمرك؟",
+        "ما اسمك؟"
+      ],
+      "answer": "ما اسمك؟"
+    },
+    {
+      "id": "DL-A0-GATE-Q05",
+      "decision": "retained-key/clarified",
+      "finding": "vierzehn الإجابةأ. المشتت 15 بدل 40 تحسين نطاق؛ vier=4. المفتاح محفوظ.",
+      "sourceIds": [
+        "R-NUMBERS",
+        "R-DUDEN"
+      ],
+      "options": [
+        "vierzehn",
+        "fünfzehn",
+        "vier"
+      ],
+      "answer": "vierzehn"
+    },
+    {
+      "id": "DL-A0-GATE-Q06",
+      "decision": "retained-key/clarified",
+      "finding": "Du bist hier. الإجابةب؛ bin/sind لا يطابقان Du في المثال.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "bin",
+        "bist",
+        "sind"
+      ],
+      "answer": "bist"
+    },
+    {
+      "id": "DL-A0-GATE-Q07",
+      "decision": "retained-key/clarified",
+      "finding": "Wir haben Zeit. الإجابةج؛ hat/hast لا يطابقان Wir.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "hat",
+        "hast",
+        "haben"
+      ],
+      "answer": "haben"
+    },
+    {
+      "id": "DL-A0-GATE-Q08",
+      "decision": "retained-key/clarified",
+      "finding": "Wie heißen Sie? الإجابةب؛ السؤال صار عن الاسم الرسمي، مقابل Wie heißt du? و Wo wohnst du?، وكلاهما du. تصحيح علامة الاستفهام في الشرح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ],
+      "options": [
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Wo wohnst du?"
+      ],
+      "answer": "Wie heißen Sie?"
+    },
+    {
+      "id": "DL-A0-GATE-Q09",
+      "decision": "retained-key/clarified",
+      "finding": "Ich verstehe nicht. الإجابةأ؛ الخياران الآخران لا يعبران عن عدم الفهم.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "Ich verstehe nicht.",
+        "Guten Abend.",
+        "Ich heiße bitte."
+      ],
+      "answer": "Ich verstehe nicht."
+    },
+    {
+      "id": "DL-A0-GATE-Q10",
+      "decision": "retained-key/clarified",
+      "finding": "Ich habe eine Frage. الإجابةج؛ habe فيالموقعالثاني، والطلب الآن يبدأبـ Ich. الشرح لا يدعي أن هذا كل ترتيب خبري صحيح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ],
+      "options": [
+        "Eine Frage Ich habe.",
+        "Ich eine Frage habe.",
+        "Ich habe eine Frage."
+      ],
+      "answer": "Ich habe eine Frage."
+    },
+    {
+      "id": "DL-A0-GATE-T01",
+      "decision": "aligned",
+      "finding": "T01/P01 تعارف خيالي بأربع جمل وسؤالين محددين وجوابيهما؛ ثمانية أقوال ضمن ستة مطالب. كل متطلبات الاسم والعمر والأصل والسكن مكتوبة، ويمكن أداء الدورين فرديًا. حد 120 حرفًا و spokenAloud=true ، لا حاجة بيانات شخصية أو شريك.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-NUMBERS"
+      ],
+      "items": [
+        "جملة الاسم",
+        "جملة العمر18أو20",
+        "جملة الأصلTunesien",
+        "جملة السكنNabeul",
+        "Wie heißt du? وجوابه الموافق",
+        "Wie alt bist du? وجوابه الموافق"
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-P01",
+      "decision": "aligned",
+      "finding": "T01/P01 تعارف خيالي بأربع جمل وسؤالين محددين وجوابيهما؛ ثمانية أقوال ضمن ستة مطالب. كل متطلبات الاسم والعمر والأصل والسكن مكتوبة، ويمكن أداء الدورين فرديًا. حد 120 حرفًا و spokenAloud=true ، لا حاجة بيانات شخصية أو شريك.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-NUMBERS"
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-T02",
+      "decision": "aligned",
+      "finding": "T02/P02 يفصل عدم الفهم والتكرار والبطء، بدل طلب بطيء بنموذج لا يذكر البطء وخيار عربيأوألماني. السياق من A0.5 والترجمة غير مطلوبة؛ حد 50 حرفًا و spokenAloud=true. حذفÖffnen ليس حكمًا بعدم صحتها، بل إزالة مفردة غير مدربة من مهمة ترجمة. حد الطول يقبل أيضًا الصيغة الأقصر Bitte wiederholen Sie das. ولا يُلزم بالمثال ذي Können حرفيًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-NUMBERS"
+      ],
+      "items": [
+        "عدم الفهم",
+        "إعادة الجملة بأدب بصيغةSie",
+        "طلب البطء صراحة"
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-P02",
+      "decision": "aligned",
+      "finding": "T02/P02 يفصل عدم الفهم والتكرار والبطء، بدل طلب بطيء بنموذج لا يذكر البطء وخيار عربيأوألماني. السياق من A0.5 والترجمة غير مطلوبة؛ حد 50 حرفًا و spokenAloud=true. حذفÖffnen ليس حكمًا بعدم صحتها، بل إزالة مفردة غير مدربة من مهمة ترجمة. حد الطول يقبل أيضًا الصيغة الأقصر Bitte wiederholen Sie das. ولا يُلزم بالمثال ذي Können حرفيًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-NUMBERS"
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-T03",
+      "decision": "aligned",
+      "finding": "T03/P03 بطاقة Lina/18/Tunesien بصوت Ich ، ثلاث جمل لا أرقام وحدها. عناوين الحقول مترجمة مساعدة؛ حد 60 حرفًا والنموذج 61 حرفًا، دون spokenAloud. السرد من منظورالمتكلمة محدد ولا يحتاجتصريفالغائبة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-NUMBERS"
+      ],
+      "items": [
+        "Ich heiße Lina.",
+        "Ich bin 18 Jahre alt.",
+        "Ich komme aus Tunesien."
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-P03",
+      "decision": "aligned",
+      "finding": "T03/P03 بطاقة Lina/18/Tunesien بصوت Ich ، ثلاث جمل لا أرقام وحدها. عناوين الحقول مترجمة مساعدة؛ حد 60 حرفًا والنموذج 61 حرفًا، دون spokenAloud. السرد من منظورالمتكلمة محدد ولا يحتاجتصريفالغائبة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-NUMBERS"
+      ]
+    },
+    {
+      "id": "audio-sentence-01",
+      "decision": "transcript-only",
+      "finding": "Guten Tag! — تحية نهارية صحيحة؛ لا ننسب ساعة محددة أو أداءً مسموعًا.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "audio-sentence-02",
+      "decision": "transcript-only",
+      "finding": "Ich heiße Nora und wohne in Nabeul. — فاعل Ich مشترك للفعلين، والمدينة Nabeul محفوظة.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "audio-sentence-03",
+      "decision": "transcript-only",
+      "finding": "Ich bin achtzehn Jahre alt. — صيغة عمر 18 ، توافقالبيانات؛ لاادعاءسماع achtzehn.",
+      "sourceIds": [
+        "R-NUMBERS"
+      ]
+    },
+    {
+      "id": "audio-sentence-04",
+      "decision": "transcript-only",
+      "finding": "Meine Kursnummer ist zwei sechs, vier eins, null acht. — سلسلةخانات 264108 لا العدد 264108 منطوقًا، ولا 2+6...؛ Kursnummer/رقم الدورة مساعدةسياقية، وليستمطلوبةفيالتقييم.",
+      "sourceIds": [
+        "R-NUMBERS"
+      ]
+    },
+    {
+      "id": "audio-sentence-05",
+      "decision": "transcript-only",
+      "finding": "Entschuldigung, ich verstehe die letzte Zahl nicht. — تعذر فهمالخانةالأخيرةفيالسياق؛ معأنالسلسلةصفرثمثمانية؛ المعنىالمقصودطلبإعادةالأخيرة، لاقدرةالمستمععلىاستخراجها.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "audio-sentence-06",
+      "decision": "transcript-only",
+      "finding": "Können Sie sie bitte wiederholen? — Sie مخاطبةرسمية، sie مفعوليرجعإلى Zahl المؤنثة؛ إحالةغيرمقاسةولاادعاءتدريبكامللهافي A0.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-GATE-AUD-LST-01",
+      "decision": "preserved",
+      "finding": "أصل واحد/مقطع واحد voice-02 ، جاهزتاريخيًاوسياسة hide_until_first_attempt محفوظة. لااستماعأواعتمادأوإعادةتوليد؛ 6 وحداتالجملأعلاهقراءةتفريغفقط.",
+      "sourceIds": []
+    }
+  ]
+}

@@ -20852,10 +20852,10 @@
   "contentSource": "content/ Markdown lessons",
   "a0TransitionCheck": {
     "id": "a0-a1-gate",
-    "title": "A0 — اختبار انتقال قصير إلى A1",
-    "durationLabel": "30 دقيقة",
+    "title": "A0 — بوابة الانتقال إلى A1",
+    "durationLabel": "25–35 دقيقة",
     "sourceFile": "content/A0/lesson-06-placement-check.md",
-    "contentHtml": "<p dir=\"auto\"><strong>تنبيه:</strong> هذه ورقة مصدرية قديمة للمراجعة، وليست بوابة التطبيق الحالية. البوابة الجديدة تتطلب 80% على الأقل وإكمال ثلاث مهام أداء بتحقق ذاتي محلي؛ لا يسجل التطبيق الصوت ولا يقيّم النطق آليًا.</p>\n<p dir=\"auto\"><strong>المدة:</strong> 8–10 دقائق (تقدير قديم) · <strong>التعليمات:</strong> اختر إجابة واحدة لكل سؤال. عتبة 7/10 الواردة أدناه قديمة ولا تُستخدم للانتقال.</p>\n<h2 dir=\"auto\">الأسئلة</h2>\n<ol><li dir=\"auto\">أي زوج يطابق النطق الصحيح؟</li></ol>\n<p dir=\"auto\">   أ. ei في <em>mein</em> قريب من «آي»  ب. ie في <em>vier</em> مثل ei  ج. sch في <em>Schule</em> مثل z</p>\n<ol><li dir=\"auto\">أكمل: Ich ______ Lina.</li></ol>\n<p dir=\"auto\">   أ. heiße  ب. heißt  ج. heißen</p>\n<ol><li dir=\"auto\">ما التحية المناسبة صباحًا؟</li></ol>\n<p dir=\"auto\">   أ. Gute Nacht  ب. Guten Morgen  ج. Tschüss</p>\n<ol><li dir=\"auto\">ماذا تعني <em>Wie heißt du?</em></li></ol>\n<p dir=\"auto\">   أ. أين تسكن؟  ب. ما اسمك؟  ج. كم عمرك؟</p>\n<ol><li dir=\"auto\">14 بالألمانية:</li></ol>\n<p dir=\"auto\">   أ. vierzehn  ب. vierzig  ج. vier</p>\n<ol><li dir=\"auto\">أكمل: Du ______ hier.</li></ol>\n<p dir=\"auto\">   أ. bin  ب. bist  ج. sind</p>\n<ol><li dir=\"auto\">أكمل: Wir ______ Zeit.</li></ol>\n<p dir=\"auto\">   أ. haben  ب. hat  ج. hast</p>\n<ol><li dir=\"auto\">أي سؤال رسمي؟</li></ol>\n<p dir=\"auto\">   أ. Wie heißt du?  ب. Wie heißen Sie?  ج. Tschüss?</p>\n<ol><li dir=\"auto\">اختر العبارة المناسبة إذا لم تفهم:</li></ol>\n<p dir=\"auto\">   أ. Ich verstehe nicht.  ب. Guten Abend.  ج. Ich heiße bitte.</p>\n<ol><li dir=\"auto\">رتّب: <strong>eine Frage / Ich / habe</strong></li></ol>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<ol><li dir=\"auto\">أ — ei في mein قريب من «آي». 2. أ — مع Ich نقول heiße. 3. ب. 4. ب. 5. أ. 6. ب — Du bist. 7. أ — Wir haben. 8. ب. 9. أ. 10. Ich habe eine Frage.</li></ol>\n</div></details>\n<h2 dir=\"auto\">توصيات النسخة القديمة (للتوثيق فقط)</h2>\n<p dir=\"auto\">التصنيفات التالية لا تفتح A1 ولا تعكس معيار التطبيق الحالي:</p>\n<ul><li dir=\"auto\"><strong>9–10:</strong> كانت النسخة القديمة تقترح البدء بـA1.</li><li dir=\"auto\"><strong>7–8:</strong> كانت تقترح بدء A1 مع المراجعة.</li><li dir=\"auto\"><strong>0–6:</strong> كانت تقترح إعادة وحدات A0.</li></ul>\n<p dir=\"auto\">المعيار الحالي هو 80% على الأقل في التقييم الجديد، بعد إتقان دروس A0 الخمسة وإكمال مهام الأداء الثلاث.</p>",
+    "contentHtml": "<p dir=\"auto\"><strong>المدة:</strong> 25–35 دقيقة (تقدير مرن، لا حد زمني) · <strong>المعيار:</strong> إتقان دروس A0 الخمسة، ثم 80% على الأقل في الأسئلة العشرة وإكمال المهمات الثلاث بتحقق ذاتي محلي.</p>\n<h2 dir=\"auto\">حدود هذا التقييم</h2>\n<p dir=\"auto\">هذا دليل التقييم الحالي a0-gate-v2. ملف lesson-06-placement-check.assessment.json هو مصدر خيارات التطبيق ومفاتيحه ومعاييره. الورقة القديمة محفوظة بعباراتها وترتيبها (مع تنظيف مسافات نهاية السطور فقط) في data/reviews/archive/a0-gate-legacy.md للأرشفة فقط، ولا تُحتسب نتيجتها للانتقال.</p>\n<p dir=\"auto\">الاختيارات تقيس التعرف على أمثلة محددة، والمهمات تتضمن كتابة وكلامًا بتأكيد ذاتي. طول المسودة والمربعات لا يثبتان صحة اللغة أو النطق آليًا، والنجاح ليس شهادة CEFR أو حكمًا مستقلًا على إتقان جميع مهارات A0. الصوت الموجود تدريب إضافي: الاستماع غير مقاس بأسئلة محسوبة في هذه النسخة. لا تسجيل صوتي أو بيانات شخصية حقيقية مطلوبة.</p>\n<h2 dir=\"auto\">الأسئلة الحالية</h2>\n<h3 dir=\"auto\">سؤال 1 — DL-A0-GATE-Q01</h3>\n<p dir=\"auto\">أي وصف كتابي يقارب نطق النمط في الكلمة؟</p>\n<ul><li dir=\"auto\">أ. ei في mein قريب من «آي»</li><li dir=\"auto\">ب. ie في vier مثل ei</li><li dir=\"auto\">ج. sch في Schule مثل z</li></ul>\n<h3 dir=\"auto\">سؤال 2 — DL-A0-GATE-Q02</h3>\n<p dir=\"auto\">أكمل: Ich ___ Lina.</p>\n<ul><li dir=\"auto\">أ. heißt</li><li dir=\"auto\">ب. heiße</li><li dir=\"auto\">ج. heißen</li></ul>\n<h3 dir=\"auto\">سؤال 3 — DL-A0-GATE-Q03</h3>\n<p dir=\"auto\">ما التحية المناسبة صباحًا؟</p>\n<ul><li dir=\"auto\">أ. Gute Nacht</li><li dir=\"auto\">ب. Guten Morgen</li><li dir=\"auto\">ج. Tschüss</li></ul>\n<h3 dir=\"auto\">سؤال 4 — DL-A0-GATE-Q04</h3>\n<p dir=\"auto\">ماذا يعني السؤال «Wie heißt du?»؟</p>\n<ul><li dir=\"auto\">أ. أين تسكن؟</li><li dir=\"auto\">ب. كم عمرك؟</li><li dir=\"auto\">ج. ما اسمك؟</li></ul>\n<h3 dir=\"auto\">سؤال 5 — DL-A0-GATE-Q05</h3>\n<p dir=\"auto\">14 بالألمانية هي:</p>\n<ul><li dir=\"auto\">أ. vierzehn</li><li dir=\"auto\">ب. fünfzehn</li><li dir=\"auto\">ج. vier</li></ul>\n<h3 dir=\"auto\">سؤال 6 — DL-A0-GATE-Q06</h3>\n<p dir=\"auto\">أكمل: Du ___ hier.</p>\n<ul><li dir=\"auto\">أ. bin</li><li dir=\"auto\">ب. bist</li><li dir=\"auto\">ج. sind</li></ul>\n<h3 dir=\"auto\">سؤال 7 — DL-A0-GATE-Q07</h3>\n<p dir=\"auto\">أكمل: Wir ___ Zeit.</p>\n<ul><li dir=\"auto\">أ. hat</li><li dir=\"auto\">ب. hast</li><li dir=\"auto\">ج. haben</li></ul>\n<h3 dir=\"auto\">سؤال 8 — DL-A0-GATE-Q08</h3>\n<p dir=\"auto\">أي سؤال عن الاسم يستخدم المخاطبة الرسمية؟</p>\n<ul><li dir=\"auto\">أ. Wie heißt du?</li><li dir=\"auto\">ب. Wie heißen Sie?</li><li dir=\"auto\">ج. Wo wohnst du?</li></ul>\n<h3 dir=\"auto\">سؤال 9 — DL-A0-GATE-Q09</h3>\n<p dir=\"auto\">لم تفهم كلمة؛ أي عبارة تقول؟</p>\n<ul><li dir=\"auto\">أ. Ich verstehe nicht.</li><li dir=\"auto\">ب. Guten Abend.</li><li dir=\"auto\">ج. Ich heiße bitte.</li></ul>\n<h3 dir=\"auto\">سؤال 10 — DL-A0-GATE-Q10</h3>\n<p dir=\"auto\">ابدأ بـIch: أي ترتيب صحيح للجملة الخبرية «لدي سؤال»؟</p>\n<ul><li dir=\"auto\">أ. Eine Frage Ich habe.</li><li dir=\"auto\">ب. Ich eine Frage habe.</li><li dir=\"auto\">ج. Ich habe eine Frage.</li></ul>\n<h2 dir=\"auto\">مهمات الأداء ومراجع التدريب</h2>\n<h3 dir=\"auto\">مهمة 1 — DL-A0-GATE-T01</h3>\n<p dir=\"auto\">المهمة المقاسة: DL-A0-GATE-P01. مرجع التدريب: A0.3: T07/T08؛ التعارف وبيانات شخصية خيالية، مع الاستفادة من A0.2.</p>\n<p dir=\"auto\">استخدم شخصية خيالية باسم تختاره وعمر 18 أو 20، وبلد الأصل Tunesien والسكن Nabeul. اكتب مسودة من أربع جمل تقدم هذه البيانات، ثم اكتب السؤالين Wie heißt du? وWie alt bist du? وجواب كل منهما بالبيانات نفسها. اقرأ التعريف والسؤالين وجوابيهما بصوت مرتفع؛ يمكنك أداء الدورين وحدك، ولا يلزم كشف بيانات حقيقية أو تسجيل صوتك.</p>\n<ul><li dir=\"auto\">كتبت أربع جمل للتعريف ثم سؤالين وجوابيهما، وقرأت الجميع بصوت مرتفع.</li><li dir=\"auto\">الاسم والعمر والأصل والسكن واضحة ومتسقة بين التعريف والإجابات، دون اشتراط مستمع آخر.</li><li dir=\"auto\">أستخدم Ich heiße وIch bin … Jahre alt وIch komme aus Tunesien وIch wohne in Nabeul، وأجيب عن السؤالين بما يناسبهما.</li></ul>\n<h3 dir=\"auto\">مهمة 2 — DL-A0-GATE-T02</h3>\n<p dir=\"auto\">المهمة المقاسة: DL-A0-GATE-P02. مرجع التدريب: A0.5: T07؛ عدم الفهم وطلب التكرار والبطء. الجملة سياق مكتوب لا اختبار سماعي.</p>\n<p dir=\"auto\">في موقف صفّي متخيّل قرأت الجملة Der Unterricht beginnt um neun Uhr. ولم تفهمها. اكتب بالألمانية ثلاث عبارات: التصريح بعدم الفهم، وطلب إعادة الجملة بأدب بصيغة Sie، وطلب البطء مثل Langsamer, bitte. ثم اقرأ العبارات بصوت مرتفع بنفسك. لا يُطلب ترجمة الجملة أو سماع تسجيل أو إرفاق تسجيل صوتي.</p>\n<ul><li dir=\"auto\">كتبت العبارات الثلاث وقرأتها: عدم الفهم، إعادة الجملة، والبطء؛ لا أكتفي بطلب الإعادة وحده.</li><li dir=\"auto\">يفهم من النص أنني لم أفهم الجملة وأحتاج إلى إعادتها ببطء.</li><li dir=\"auto\">أستعمل Ich verstehe nicht. وطلب إعادة رسميًا مهذبًا مثل Können Sie das bitte wiederholen? مع طلب مستقل للبطء.</li></ul>\n<h3 dir=\"auto\">مهمة 3 — DL-A0-GATE-T03</h3>\n<p dir=\"auto\">المهمة المقاسة: DL-A0-GATE-P03. مرجع التدريب: A0.3: T08؛ بطاقة التعارف. ترجمة عناوين الحقول مساعدة وليست اختبار مفردات جديدة.</p>\n<p dir=\"auto\">اقرأ بطاقة خيالية: Name (الاسم): Lina · Alter (العمر): 18 Jahre · Herkunft (بلد الأصل): Tunesien. اكتب بصوت Lina ثلاث جمل ألمانية كاملة تبدأ بـIch، واحدة للاسم وأخرى للعمر وأخرى لبلد الأصل. احفظ البيانات نفسها دون استبدالها ببياناتك. هذه مهمة كتابة ولا تتطلب قراءة بصوت مرتفع.</p>\n<ul><li dir=\"auto\">استخرجت الحقول الثلاثة وكتبت ثلاث جمل كاملة باسم الشخصية، لا قائمة حقول أو أرقام وحدها.</li><li dir=\"auto\">احتفظت بـLina و18 وTunesien دون خلط أو تغيير.</li><li dir=\"auto\">أكتب جملًا بـIch heiße وIch bin … Jahre alt وIch komme aus …، مع ترتيب الكلمات المناسب.</li></ul>\n<details class=\"answer-key\"><summary>مفتاح الإجابات</summary><div class=\"answer-key-body\">\n<p dir=\"auto\">لا يعرض التطبيق هذا المفتاح أثناء الاختيار؛ هو دليل مصدر للمراجعة والمقارنة، لا تقييم مستقل للكتابة.</p>\n<ul><li dir=\"auto\">Q01: ei في mein قريب من «آي» — ei في mein قريب من «آي»؛ ie في vier صوت i طويل، وsch في Schule قريب من «ش» لا z. هذه تقريبات كتابية للتعرّف، وليست اختبار نطق أو استماع.</li><li dir=\"auto\">Q02: heiße — مع Ich نستخدم heiße.</li><li dir=\"auto\">Q03: Guten Morgen — Guten Morgen تحية الصباح.</li><li dir=\"auto\">Q04: ما اسمك؟ — السؤال غير الرسمي يسأل عن الاسم.</li><li dir=\"auto\">Q05: vierzehn — vierzehn تعني 14؛ fünfzehn تعني 15 وvier تعني 4. كلها ضمن الأساس 0–20.</li><li dir=\"auto\">Q06: bist — تصريف sein مع du هو bist.</li><li dir=\"auto\">Q07: haben — تصريف haben مع wir هو haben.</li><li dir=\"auto\">Q08: Wie heißen Sie? — Wie heißen Sie? سؤال الاسم الرسمي. Wie heißt du? غير رسمي، وWo wohnst du? يسأل عن السكن بصيغة du.</li><li dir=\"auto\">Q09: Ich verstehe nicht. — Ich verstehe nicht تعني لا أفهم.</li><li dir=\"auto\">Q10: Ich habe eine Frage. — Ich habe eine Frage. يأتي الفعل المصرف في الموقع الثاني في هذا النمط. توجد جمل أخرى صحيحة مثل Eine Frage habe ich. لكنها ليست من الخيارات ولا تبدأ بـIch.</li><li dir=\"auto\">T01/P01 — نموذج: Ich heiße Lina. Ich bin 18 Jahre alt. Ich komme aus Tunesien. Ich wohne in Nabeul. ثم Wie heißt du? — Ich heiße Lina. / Wie alt bist du? — Ich bin 18 Jahre alt. الأسماء قابلة للتغيير والعمر18أو20؛ المطلوب اتساق المعلومات.</li><li dir=\"auto\">T02/P02 — نموذج: Ich verstehe nicht. Können Sie das bitte wiederholen? Langsamer, bitte. توجد صيغ أخرى مناسبة من الدرس؛ يلزم أن تظهر الوظائف الثلاث، لا تكرار الكلمات حرفيًا.</li><li dir=\"auto\">T03/P03 — نموذج: Ich heiße Lina. Ich bin 18 Jahre alt. Ich komme aus Tunesien. منظور المتكلمة محدد، ولا يجوز تغيير بيانات البطاقة.</li></ul>\n</div></details>\n<h2 dir=\"auto\">التسجيل الموجود — تدريب إضافي لا سؤال محسوب</h2>\n<p dir=\"auto\">أصل DL-A0-GATE-AUD-LST-01 متاح في البوابة، وتظهر عباراته بعد إتمام محاولة تشغيل كاملة وفق السياسة القائمة. لم يغيّر هذا الدليل الصوت أو سياسة التفريغ أو اعتماده التاريخي. قراءة التفريغ لا تعني استماعًا إلى التسجيل.</p>\n<p dir=\"auto\">النص يقدّم Nora في Nabeul وعمرها18، وسلسلة Kursnummer من الخانات 2،6،4،1،0،8، ثم طلب إعادة العدد الأخير. Kursnummer تعني رقم الدورة، وdie letzte Zahl العدد/الخانة الأخيرة في السياق؛ sie في Können Sie sie bitte wiederholen? تعود على Zahl، بينما Sie الأولى مخاطبة رسمية. هو تسلسل تدريبي لا رقم اتصال، ويشمل بعض صيغ الإحالة التي لا يقيسها التقييم الأساسي.</p>\n<p dir=\"auto\">لا يُطلب في الأسئلة استخراج بيانات Nora أو رقمها من الصوت. الدرس التالي يُفتح بالاختيارات والمهمات الذاتية المطلوبة، لا بادعاء اجتياز اختبار فهم مسموع غير موجود.</p>",
     "quiz": [
       {
         "id": "DL-A0-GATE-Q01",
@@ -20869,14 +20869,14 @@
           "قراءة",
           "أصوات"
         ],
-        "prompt": "أي عبارة تصف النطق الصحيح؟",
+        "prompt": "أي وصف كتابي يقارب نطق النمط في الكلمة؟",
         "options": [
           "ei في mein قريب من «آي»",
           "ie في vier مثل ei",
           "sch في Schule مثل z"
         ],
         "answerIndex": 0,
-        "explanation": "ei في mein قريب من «آي»؛ ie صوت i طويل، وsch قريب من «ش»."
+        "explanation": "ei في mein قريب من «آي»؛ ie في vier صوت i طويل، وsch في Schule قريب من «ش» لا z. هذه تقريبات كتابية للتعرّف، وليست اختبار نطق أو استماع."
       },
       {
         "id": "DL-A0-GATE-Q02",
@@ -20932,7 +20932,7 @@
           "فهم اللغة",
           "اختيار محدد"
         ],
-        "prompt": "ماذا تعني Wie heißt du؟",
+        "prompt": "ماذا يعني السؤال «Wie heißt du?»؟",
         "options": [
           "أين تسكن؟",
           "كم عمرك؟",
@@ -20956,11 +20956,11 @@
         "prompt": "14 بالألمانية هي:",
         "options": [
           "vierzehn",
-          "vierzig",
+          "fünfzehn",
           "vier"
         ],
         "answerIndex": 0,
-        "explanation": "vierzehn تعني 14؛ vierzig تعني 40."
+        "explanation": "vierzehn تعني 14؛ fünfzehn تعني 15 وvier تعني 4. كلها ضمن الأساس 0–20."
       },
       {
         "id": "DL-A0-GATE-Q06",
@@ -21016,14 +21016,14 @@
           "فهم اللغة",
           "اختيار محدد"
         ],
-        "prompt": "أي سؤال رسمي؟",
+        "prompt": "أي سؤال عن الاسم يستخدم المخاطبة الرسمية؟",
         "options": [
           "Wie heißt du?",
           "Wie heißen Sie?",
-          "Tschüss?"
+          "Wo wohnst du?"
         ],
         "answerIndex": 1,
-        "explanation": "Wie heißen Sie؟ تستخدم المخاطبة الرسمية."
+        "explanation": "Wie heißen Sie? سؤال الاسم الرسمي. Wie heißt du? غير رسمي، وWo wohnst du? يسأل عن السكن بصيغة du."
       },
       {
         "id": "DL-A0-GATE-Q09",
@@ -21058,19 +21058,19 @@
           "فهم اللغة",
           "اختيار محدد"
         ],
-        "prompt": "أي جملة ترتب الكلمات Ich / habe / eine Frage ترتيبًا صحيحًا؟",
+        "prompt": "ابدأ بـIch: أي ترتيب صحيح للجملة الخبرية «لدي سؤال»؟",
         "options": [
           "Eine Frage Ich habe.",
           "Ich eine Frage habe.",
           "Ich habe eine Frage."
         ],
         "answerIndex": 2,
-        "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+        "explanation": "Ich habe eine Frage. يأتي الفعل المصرف في الموقع الثاني في هذا النمط. توجد جمل أخرى صحيحة مثل Eine Frage habe ich. لكنها ليست من الخيارات ولا تبدأ بـIch."
       }
     ],
     "assessment": {
       "status": "ready",
-      "version": "a0-gate-v1",
+      "version": "a0-gate-v2",
       "minimumScore": 80,
       "minimumItems": 10,
       "objectiveIds": [
@@ -21080,28 +21080,31 @@
       "performanceEvidenceRequired": true,
       "performanceEvidenceImplemented": true,
       "reviewNotes": [
-        "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
-        "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
-        "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+        "CR6: مراجعة نصية بالمراجع موثقة في data/reviews/a0-gate-review.json؛ لا شهادة CEFR أو اعتماد نطق.",
+        "الاختيارات تقيس التعرف على أنماط محددة، والمهمات مسودات وتأكيدات ذاتية؛ التسجيل تدريب إضافي ولا توجد أسئلة فهم مسموع محسوبة.",
+        "الورقة القديمة محفوظة بعباراتها وترتيبها؛ نُظفت مسافات نهاية السطور فقط في data/reviews/archive/a0-gate-legacy.md، والمصدر الحالي دليل مطابق للتقييم الفعلي.",
+        "أضيفت ثلاثة أنشطة مصدرية مستقلة T01–T03 بدل ربط مهمات مركبة بأسئلة اختيار لا تمثلها.",
+        "أصل الصوت ومقطعه وvoice-02 وسياسة التفريغ محفوظة؛ لم يُسمع أو يُعَد توليده أو يُعتمد سمعيًا من جديد."
       ]
     },
     "performanceTasks": [
       {
         "id": "DL-A0-GATE-P01",
         "sourceTaskIds": [
-          "DL-A0-GATE-Q04"
+          "DL-A0-GATE-T01"
         ],
         "objectiveIds": [
           "DL-A0-GATE-G01"
         ],
         "modality": [
+          "writing",
           "speaking"
         ],
-        "prompt": "قدّم معلومات أساسية عن شخصية خيالية: الاسم والعمر وبلد الأصل والسكن، ثم أجب عن سؤالين مناسبين.",
+        "prompt": "استخدم شخصية خيالية باسم تختاره وعمر 18 أو 20، وبلد الأصل Tunesien والسكن Nabeul. اكتب مسودة من أربع جمل تقدم هذه البيانات، ثم اكتب السؤالين Wie heißt du? وWie alt bist du? وجواب كل منهما بالبيانات نفسها. اقرأ التعريف والسؤالين وجوابيهما بصوت مرتفع؛ يمكنك أداء الدورين وحدك، ولا يلزم كشف بيانات حقيقية أو تسجيل صوتك.",
         "criteria": {
-          "taskCompletion": "يقدم المعلومات المطلوبة ويجيب عن السؤالين.",
-          "meaningClarity": "يفهم المستمع من المتحدث وما البيانات المقصودة.",
-          "targetSkill": "يستخدم التراكيب الأساسية ويجيب بوضوح؛ لا تُشترط لهجة الناطق الأصلي."
+          "taskCompletion": "كتبت أربع جمل للتعريف ثم سؤالين وجوابيهما، وقرأت الجميع بصوت مرتفع.",
+          "meaningClarity": "الاسم والعمر والأصل والسكن واضحة ومتسقة بين التعريف والإجابات، دون اشتراط مستمع آخر.",
+          "targetSkill": "أستخدم Ich heiße وIch bin … Jahre alt وIch komme aus Tunesien وIch wohne in Nabeul، وأجيب عن السؤالين بما يناسبهما."
         },
         "evaluationStatus": "ready",
         "selfCheck": {
@@ -21111,7 +21114,7 @@
             "meaningClarity",
             "targetSkill"
           ],
-          "minimumResponseCharacters": 12,
+          "minimumResponseCharacters": 120,
           "speakAloud": true,
           "audioRequired": false
         }
@@ -21119,20 +21122,21 @@
       {
         "id": "DL-A0-GATE-P02",
         "sourceTaskIds": [
-          "DL-A0-GATE-Q09"
+          "DL-A0-GATE-T02"
         ],
         "objectiveIds": [
           "DL-A0-GATE-G01"
         ],
         "modality": [
           "reading",
+          "writing",
           "speaking"
         ],
-        "prompt": "اقرأ التعليمات التدريبية: „Öffnen Sie bitte das Buch.“ اذكر معناها بالعربية، أو اطلب بالألمانية إعادة التعليمات ببطء: „Können Sie das bitte wiederholen?“ ثم اقرأ عبارتك بصوت مرتفع. لا يلزم تسجيل صوتك.",
+        "prompt": "في موقف صفّي متخيّل قرأت الجملة Der Unterricht beginnt um neun Uhr. ولم تفهمها. اكتب بالألمانية ثلاث عبارات: التصريح بعدم الفهم، وطلب إعادة الجملة بأدب بصيغة Sie، وطلب البطء مثل Langsamer, bitte. ثم اقرأ العبارات بصوت مرتفع بنفسك. لا يُطلب ترجمة الجملة أو سماع تسجيل أو إرفاق تسجيل صوتي.",
         "criteria": {
-          "taskCompletion": "ينقل المعلومة الأساسية أو يطلب توضيحًا مناسبًا.",
-          "meaningClarity": "يظهر من جوابه ما فهمه وما يحتاج إلى توضيح.",
-          "targetSkill": "يستعمل عبارات الفهم والتوضيح المناسبة؛ لا يُشترط تسجيل الصوت."
+          "taskCompletion": "كتبت العبارات الثلاث وقرأتها: عدم الفهم، إعادة الجملة، والبطء؛ لا أكتفي بطلب الإعادة وحده.",
+          "meaningClarity": "يفهم من النص أنني لم أفهم الجملة وأحتاج إلى إعادتها ببطء.",
+          "targetSkill": "أستعمل Ich verstehe nicht. وطلب إعادة رسميًا مهذبًا مثل Können Sie das bitte wiederholen? مع طلب مستقل للبطء."
         },
         "evaluationStatus": "ready",
         "selfCheck": {
@@ -21142,7 +21146,7 @@
             "meaningClarity",
             "targetSkill"
           ],
-          "minimumResponseCharacters": 12,
+          "minimumResponseCharacters": 50,
           "speakAloud": true,
           "audioRequired": false
         }
@@ -21150,7 +21154,7 @@
       {
         "id": "DL-A0-GATE-P03",
         "sourceTaskIds": [
-          "DL-A0-GATE-Q05"
+          "DL-A0-GATE-T03"
         ],
         "objectiveIds": [
           "DL-A0-GATE-G01"
@@ -21159,11 +21163,11 @@
           "reading",
           "writing"
         ],
-        "prompt": "اقرأ البطاقة التدريبية: „Name: Lina · Alter: 18 Jahre · Herkunft: Tunesien“. استخرج الاسم والعمر والبلد، ثم اكتبها في بطاقة جديدة بثلاث جمل مفهومة.",
+        "prompt": "اقرأ بطاقة خيالية: Name (الاسم): Lina · Alter (العمر): 18 Jahre · Herkunft (بلد الأصل): Tunesien. اكتب بصوت Lina ثلاث جمل ألمانية كاملة تبدأ بـIch، واحدة للاسم وأخرى للعمر وأخرى لبلد الأصل. احفظ البيانات نفسها دون استبدالها ببياناتك. هذه مهمة كتابة ولا تتطلب قراءة بصوت مرتفع.",
         "criteria": {
-          "taskCompletion": "يستخرج الحقول الثلاثة ويكتب بطاقة مقابلة.",
-          "meaningClarity": "تطابق المعلومات المكتوبة المصدر ولا يختلط الاسم بالعمر أو البلد.",
-          "targetSkill": "يقرأ بيانات بسيطة ويكتب جملًا/أرقامًا أساسية بترتيب مفهوم."
+          "taskCompletion": "استخرجت الحقول الثلاثة وكتبت ثلاث جمل كاملة باسم الشخصية، لا قائمة حقول أو أرقام وحدها.",
+          "meaningClarity": "احتفظت بـLina و18 وTunesien دون خلط أو تغيير.",
+          "targetSkill": "أكتب جملًا بـIch heiße وIch bin … Jahre alt وIch komme aus …، مع ترتيب الكلمات المناسب."
         },
         "evaluationStatus": "ready",
         "selfCheck": {
@@ -21173,7 +21177,7 @@
             "meaningClarity",
             "targetSkill"
           ],
-          "minimumResponseCharacters": 12,
+          "minimumResponseCharacters": 60,
           "speakAloud": false,
           "audioRequired": false
         }

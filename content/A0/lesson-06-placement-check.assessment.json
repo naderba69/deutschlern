@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a0-gate-v1",
+    "version": "a0-gate-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,11 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
-      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
-      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات."
+      "CR6: مراجعة نصية بالمراجع موثقة في data/reviews/a0-gate-review.json؛ لا شهادة CEFR أو اعتماد نطق.",
+      "الاختيارات تقيس التعرف على أنماط محددة، والمهمات مسودات وتأكيدات ذاتية؛ التسجيل تدريب إضافي ولا توجد أسئلة فهم مسموع محسوبة.",
+      "الورقة القديمة محفوظة بعباراتها وترتيبها؛ نُظفت مسافات نهاية السطور فقط في data/reviews/archive/a0-gate-legacy.md، والمصدر الحالي دليل مطابق للتقييم الفعلي.",
+      "أضيفت ثلاثة أنشطة مصدرية مستقلة T01–T03 بدل ربط مهمات مركبة بأسئلة اختيار لا تمثلها.",
+      "أصل الصوت ومقطعه وvoice-02 وسياسة التفريغ محفوظة؛ لم يُسمع أو يُعَد توليده أو يُعتمد سمعيًا من جديد."
     ]
   },
   "quiz": [
@@ -30,14 +32,14 @@
         "قراءة",
         "أصوات"
       ],
-      "prompt": "أي عبارة تصف النطق الصحيح؟",
+      "prompt": "أي وصف كتابي يقارب نطق النمط في الكلمة؟",
       "options": [
         "ei في mein قريب من «آي»",
         "ie في vier مثل ei",
         "sch في Schule مثل z"
       ],
       "answerIndex": 0,
-      "explanation": "ei في mein قريب من «آي»؛ ie صوت i طويل، وsch قريب من «ش»."
+      "explanation": "ei في mein قريب من «آي»؛ ie في vier صوت i طويل، وsch في Schule قريب من «ش» لا z. هذه تقريبات كتابية للتعرّف، وليست اختبار نطق أو استماع."
     },
     {
       "id": "DL-A0-GATE-Q02",
@@ -93,7 +95,7 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "ماذا تعني Wie heißt du؟",
+      "prompt": "ماذا يعني السؤال «Wie heißt du?»؟",
       "options": [
         "أين تسكن؟",
         "كم عمرك؟",
@@ -117,11 +119,11 @@
       "prompt": "14 بالألمانية هي:",
       "options": [
         "vierzehn",
-        "vierzig",
+        "fünfzehn",
         "vier"
       ],
       "answerIndex": 0,
-      "explanation": "vierzehn تعني 14؛ vierzig تعني 40."
+      "explanation": "vierzehn تعني 14؛ fünfzehn تعني 15 وvier تعني 4. كلها ضمن الأساس 0–20."
     },
     {
       "id": "DL-A0-GATE-Q06",
@@ -177,14 +179,14 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "أي سؤال رسمي؟",
+      "prompt": "أي سؤال عن الاسم يستخدم المخاطبة الرسمية؟",
       "options": [
         "Wie heißt du?",
         "Wie heißen Sie?",
-        "Tschüss?"
+        "Wo wohnst du?"
       ],
       "answerIndex": 1,
-      "explanation": "Wie heißen Sie؟ تستخدم المخاطبة الرسمية."
+      "explanation": "Wie heißen Sie? سؤال الاسم الرسمي. Wie heißt du? غير رسمي، وWo wohnst du? يسأل عن السكن بصيغة du."
     },
     {
       "id": "DL-A0-GATE-Q09",
@@ -219,33 +221,34 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "أي جملة ترتب الكلمات Ich / habe / eine Frage ترتيبًا صحيحًا؟",
+      "prompt": "ابدأ بـIch: أي ترتيب صحيح للجملة الخبرية «لدي سؤال»؟",
       "options": [
         "Eine Frage Ich habe.",
         "Ich eine Frage habe.",
         "Ich habe eine Frage."
       ],
       "answerIndex": 2,
-      "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+      "explanation": "Ich habe eine Frage. يأتي الفعل المصرف في الموقع الثاني في هذا النمط. توجد جمل أخرى صحيحة مثل Eine Frage habe ich. لكنها ليست من الخيارات ولا تبدأ بـIch."
     }
   ],
   "performanceTasks": [
     {
       "id": "DL-A0-GATE-P01",
       "sourceTaskIds": [
-        "DL-A0-GATE-Q04"
+        "DL-A0-GATE-T01"
       ],
       "objectiveIds": [
         "DL-A0-GATE-G01"
       ],
       "modality": [
+        "writing",
         "speaking"
       ],
-      "prompt": "قدّم معلومات أساسية عن شخصية خيالية: الاسم والعمر وبلد الأصل والسكن، ثم أجب عن سؤالين مناسبين.",
+      "prompt": "استخدم شخصية خيالية باسم تختاره وعمر 18 أو 20، وبلد الأصل Tunesien والسكن Nabeul. اكتب مسودة من أربع جمل تقدم هذه البيانات، ثم اكتب السؤالين Wie heißt du? وWie alt bist du? وجواب كل منهما بالبيانات نفسها. اقرأ التعريف والسؤالين وجوابيهما بصوت مرتفع؛ يمكنك أداء الدورين وحدك، ولا يلزم كشف بيانات حقيقية أو تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "يقدم المعلومات المطلوبة ويجيب عن السؤالين.",
-        "meaningClarity": "يفهم المستمع من المتحدث وما البيانات المقصودة.",
-        "targetSkill": "يستخدم التراكيب الأساسية ويجيب بوضوح؛ لا تُشترط لهجة الناطق الأصلي."
+        "taskCompletion": "كتبت أربع جمل للتعريف ثم سؤالين وجوابيهما، وقرأت الجميع بصوت مرتفع.",
+        "meaningClarity": "الاسم والعمر والأصل والسكن واضحة ومتسقة بين التعريف والإجابات، دون اشتراط مستمع آخر.",
+        "targetSkill": "أستخدم Ich heiße وIch bin … Jahre alt وIch komme aus Tunesien وIch wohne in Nabeul، وأجيب عن السؤالين بما يناسبهما."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -255,7 +258,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 120,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -263,20 +266,21 @@
     {
       "id": "DL-A0-GATE-P02",
       "sourceTaskIds": [
-        "DL-A0-GATE-Q09"
+        "DL-A0-GATE-T02"
       ],
       "objectiveIds": [
         "DL-A0-GATE-G01"
       ],
       "modality": [
         "reading",
+        "writing",
         "speaking"
       ],
-      "prompt": "اقرأ التعليمات التدريبية: „Öffnen Sie bitte das Buch.“ اذكر معناها بالعربية، أو اطلب بالألمانية إعادة التعليمات ببطء: „Können Sie das bitte wiederholen?“ ثم اقرأ عبارتك بصوت مرتفع. لا يلزم تسجيل صوتك.",
+      "prompt": "في موقف صفّي متخيّل قرأت الجملة Der Unterricht beginnt um neun Uhr. ولم تفهمها. اكتب بالألمانية ثلاث عبارات: التصريح بعدم الفهم، وطلب إعادة الجملة بأدب بصيغة Sie، وطلب البطء مثل Langsamer, bitte. ثم اقرأ العبارات بصوت مرتفع بنفسك. لا يُطلب ترجمة الجملة أو سماع تسجيل أو إرفاق تسجيل صوتي.",
       "criteria": {
-        "taskCompletion": "ينقل المعلومة الأساسية أو يطلب توضيحًا مناسبًا.",
-        "meaningClarity": "يظهر من جوابه ما فهمه وما يحتاج إلى توضيح.",
-        "targetSkill": "يستعمل عبارات الفهم والتوضيح المناسبة؛ لا يُشترط تسجيل الصوت."
+        "taskCompletion": "كتبت العبارات الثلاث وقرأتها: عدم الفهم، إعادة الجملة، والبطء؛ لا أكتفي بطلب الإعادة وحده.",
+        "meaningClarity": "يفهم من النص أنني لم أفهم الجملة وأحتاج إلى إعادتها ببطء.",
+        "targetSkill": "أستعمل Ich verstehe nicht. وطلب إعادة رسميًا مهذبًا مثل Können Sie das bitte wiederholen? مع طلب مستقل للبطء."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -286,7 +290,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 50,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -294,7 +298,7 @@
     {
       "id": "DL-A0-GATE-P03",
       "sourceTaskIds": [
-        "DL-A0-GATE-Q05"
+        "DL-A0-GATE-T03"
       ],
       "objectiveIds": [
         "DL-A0-GATE-G01"
@@ -303,11 +307,11 @@
         "reading",
         "writing"
       ],
-      "prompt": "اقرأ البطاقة التدريبية: „Name: Lina · Alter: 18 Jahre · Herkunft: Tunesien“. استخرج الاسم والعمر والبلد، ثم اكتبها في بطاقة جديدة بثلاث جمل مفهومة.",
+      "prompt": "اقرأ بطاقة خيالية: Name (الاسم): Lina · Alter (العمر): 18 Jahre · Herkunft (بلد الأصل): Tunesien. اكتب بصوت Lina ثلاث جمل ألمانية كاملة تبدأ بـIch، واحدة للاسم وأخرى للعمر وأخرى لبلد الأصل. احفظ البيانات نفسها دون استبدالها ببياناتك. هذه مهمة كتابة ولا تتطلب قراءة بصوت مرتفع.",
       "criteria": {
-        "taskCompletion": "يستخرج الحقول الثلاثة ويكتب بطاقة مقابلة.",
-        "meaningClarity": "تطابق المعلومات المكتوبة المصدر ولا يختلط الاسم بالعمر أو البلد.",
-        "targetSkill": "يقرأ بيانات بسيطة ويكتب جملًا/أرقامًا أساسية بترتيب مفهوم."
+        "taskCompletion": "استخرجت الحقول الثلاثة وكتبت ثلاث جمل كاملة باسم الشخصية، لا قائمة حقول أو أرقام وحدها.",
+        "meaningClarity": "احتفظت بـLina و18 وTunesien دون خلط أو تغيير.",
+        "targetSkill": "أكتب جملًا بـIch heiße وIch bin … Jahre alt وIch komme aus …، مع ترتيب الكلمات المناسب."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -317,7 +321,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 60,
         "speakAloud": false,
         "audioRequired": false
       }

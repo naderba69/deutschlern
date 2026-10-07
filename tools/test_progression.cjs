@@ -236,6 +236,48 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally { state.completedLessons = prior; state.levelChecks = priorChecks; }
   })()`, context), true, 'retain A0.5 v1 but require v2, then the separate gate; this is not a content review of the gate');
 
+  // CR6: gate-specific evidence, current-version mastery, and stale draft isolation.
+  assert.equal(courseData.a0TransitionCheck.assessment.version, 'a0-gate-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const tasks = course.a0TransitionCheck.performanceTasks;
+    const responses = [
+      'Ich heiße Lina. Ich bin 18 Jahre alt. Ich komme aus Tunesien. Ich wohne in Nabeul. Wie heißt du? Ich heiße Lina. Wie alt bist du? Ich bin 18 Jahre alt.',
+      'Ich verstehe nicht. Können Sie das bitte wiederholen? Langsamer, bitte.',
+      'Ich heiße Lina. Ich bin 18 Jahre alt. Ich komme aus Tunesien.'
+    ];
+    return tasks.every((task, i) => {
+      const ev = {response:responses[i], checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:i < 2};
+      return performanceTaskEvidenceReady(task, ev)
+        && !performanceTaskEvidenceReady(task, {...ev, response:'Lina 18 Tunesien'})
+        && task.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(task, {...ev, checks:{...ev.checks, [k]:false}}))
+        && (i === 2 || !performanceTaskEvidenceReady(task, {...ev, spokenAloud:false}));
+    });
+  })()`, context), true, 'gate examples must fit thresholds; only P01/P02 require speech');
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(course.a0TransitionCheck.performanceTasks[1], {response:'Ich verstehe nicht. Bitte wiederholen Sie das. Langsamer, bitte.', checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:true})`, context), true, 'shorter valid formal repeat request must not fail the length floor');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([course.a0TransitionCheck.performanceTasks[2]], 'gate:A0-A1', 'a0-gate-v2')`, context), /data-performance-spoken/);
+  assert.match(vm.runInContext('renderA0GateScopeNote()', context), /الاستماع غير مقاس/);
+  assert.equal(vm.runInContext(`(() => {
+    const priorLessons = state.completedLessons, priorChecks = state.levelChecks, priorEvidence = state.performanceEvidence;
+    try {
+      const old = {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:'a0-gate-v1'};
+      state.completedLessons = Object.fromEntries(getLessonsInLevel('A0').map(l => [l.id, {...old, assessmentVersion:l.assessment.version}]));
+      state.levelChecks = {'A0-A1':old};
+      const rejected = !isA0TransitionMastered() && !isLevelUnlocked('A1') && state.levelChecks['A0-A1'] === old;
+      state.levelChecks['A0-A1'] = {...old, assessmentVersion:'a0-gate-v2'};
+      const accepted = isA0TransitionMastered() && isLevelUnlocked('A1');
+      state.levelChecks['A0-A1'].performanceEvidenceCompleted = false;
+      const requiresEvidence = !isLevelUnlocked('A1');
+      state.performanceEvidence = {'gate:A0-A1': {assessmentVersion:'a0-gate-v1', tasks:{}}};
+      const isolated = !allPerformanceTasksComplete(course.a0TransitionCheck.performanceTasks,'gate:A0-A1','a0-gate-v2')
+        && state.performanceEvidence['gate:A0-A1'].assessmentVersion === 'a0-gate-v1';
+      const draft = {id:'A0-A1', assessmentVersion:'a0-gate-v1', mode:'quiz', questionIndex:0, selected:null, checked:false, answers:[], completed:false};
+      const stale = restoreAssessmentSession(draft,course.a0TransitionCheck.assessment,course.a0TransitionCheck.quiz,'A0-A1','gate') === null;
+      draft.assessmentVersion = 'a0-gate-v2';
+      return rejected && accepted && requiresEvidence && isolated && stale
+        && !!restoreAssessmentSession(draft,course.a0TransitionCheck.assessment,course.a0TransitionCheck.quiz,'A0-A1','gate');
+    } finally { state.completedLessons=priorLessons; state.levelChecks=priorChecks; state.performanceEvidence=priorEvidence; }
+  })()`, context), true, 'gate v1 result/draft cannot grant v2 mastery; validation preserves old result; current drafts work');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
