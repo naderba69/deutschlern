@@ -24963,6 +24963,110 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-02-AUD-PHR-01",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "title": "مفردات المسار المهني",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-02-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Berufsweg, die Berufswege. Der Werdegang, die Werdegänge. Die Qualifikation, die Qualifikationen. Die Berufserfahrung. Das Anforderungsprofil, die Anforderungsprofile. Die Stellenausschreibung, die Stellenausschreibungen. Die Führungskraft, die Führungskräfte. Die Weiterentwicklung, die Weiterentwicklungen. Die Zuständigkeit, die Zuständigkeiten. Die Empfehlung, die Empfehlungen. Anstreben, strebt an. Sich beruflich orientieren, orientiert sich. Vereinbaren, vereinbart. Übernehmen, übernimmt. Strukturiert. Ausführlich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات المسار المهني"
+    },
+    {
+      "assetId": "DL-B2-02-AUD-MODEL-01",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "title": "نماذج الكلام المباشر والمنقول بـKonjunktiv I",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-02-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Coach sagt: „Der Lebenslauf ist klar strukturiert.“ Der Coach sagt, der Lebenslauf sei klar strukturiert. Die Beraterin sagt: „Die Bewerberin kann das Projekt leiten.“ Die Beraterin sagt, die Bewerberin könne das Projekt leiten. Der Mentor sagt: „Die Berufserfahrung hilft.“ Der Mentor sagt, die Berufserfahrung helfe. Der Coach sagt, der Lebenslauf sei klar. Der Coach sagt, dass der Lebenslauf klar sei. Sie sagen: „Wir haben klare Ziele.“ Sie sagen, sie hätten klare Ziele.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) نقل الكلام بصيغة Konjunktiv I"
+    },
+    {
+      "assetId": "DL-B2-02-AUD-DLG-01",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "title": "حوار: Nora وFadi بعد استشارة مهنية",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-01.mp3",
+          "speaker": "Nora",
+          "text": "Was sagte die Beraterin über Amiras Lebenslauf?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-02.mp3",
+          "speaker": "Fadi",
+          "text": "Sie sagte, Amiras Werdegang sei klar dargestellt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-03.mp3",
+          "speaker": "Nora",
+          "text": "Und was soll Amira noch ergänzen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-04.mp3",
+          "speaker": "Fadi",
+          "text": "Sie meinte, Amira habe viel Erfahrung in der Kundenbetreuung und solle zwei konkrete Beispiele hinzufügen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-05.mp3",
+          "speaker": "Nora",
+          "text": "Hat sie auch etwas über die Stelle gesagt?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-06.mp3",
+          "speaker": "Fadi",
+          "text": "Ja. Das Anforderungsprofil sei anspruchsvoll, aber Amiras Profil passe dazu.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-02-AUD-DLG-01-07.mp3",
+          "speaker": "Nora",
+          "text": "Dann werde ich Amira beim Überarbeiten helfen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي بعد استشارة مهنية"
+    },
+    {
+      "assetId": "DL-B2-02-AUD-READ-01",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "title": "قراءة: ملخّص استشارة مهنية",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-02-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Gesprächsnotiz — Berufsberatung. Die Beraterin erklärt, die Bewerberin habe mehrere Jahre Erfahrung im Kundenservice. Ihr Lebenslauf sei übersichtlich, enthalte aber noch zu wenige konkrete Beispiele. Die Bewerberin könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben. Die Beraterin ergänzt, ein kurzes Anschreiben helfe dabei, den Wechselwunsch zu erklären. Die Bewerberin sagt, sie wolle künftig mehr Verantwortung übernehmen und strebe eine Stelle im Projektmanagement an.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) ملخّص اجتماع مهني أصلي"
     }
   ]
 }
