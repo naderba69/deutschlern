@@ -129,7 +129,7 @@ def render_table(table_lines: list[str]) -> str:
         row = (row + [""] * column_count)[:column_count]
         return "<tr>" + "".join(f'<{tag} dir="auto">{safe_inline(cell)}</{tag}>' for cell in row) + "</tr>"
 
-    parts = ['<div class="lesson-table-wrap"><table class="lesson-table">']
+    parts = ['<div class="lesson-table-wrap" tabindex="0" role="region" aria-label="جدول الدرس — استخدم أسهم الاتجاه للتمرير"><table class="lesson-table">']
     if header:
         parts.append("<thead>" + render_row(header, "th") + "</thead>")
     parts.append("<tbody>")

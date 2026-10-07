@@ -1435,7 +1435,7 @@ function renderTrackLevel(level) {
       ? '<p class="progression-note">مقفل حتى إتقان جميع الدروس والبوابات السابقة.</p>'
       : '';
   return `<section class="track-level ${`theme-${level.theme}`} ${unlocked ? '' : 'is-locked'}">
-    <div class="track-level-head"><div class="track-level-label"><span class="level-token">${level.id}</span><div><h2>${escapeHTML(level.name)} <span style="color:#99a39b;font-weight:400">· ${escapeHTML(level.subtitle)}</span></h2><p>${escapeHTML(level.goal)}</p></div></div><span>${progress.done}/${progress.total} متقن</span></div>
+    <div class="track-level-head"><div class="track-level-label"><span class="level-token">${level.id}</span><div><h2>${escapeHTML(level.name)} <span class="track-level-subtitle">· ${escapeHTML(level.subtitle)}</span></h2><p>${escapeHTML(level.goal)}</p></div></div><span>${progress.done}/${progress.total} متقن</span></div>
     ${note}
     ${lessons.length ? lessons.map((lesson, i) => renderLessonRow(lesson, i)).join('') : '<div class="empty-state">لا توجد دروس مسجلة لهذا المستوى.</div>'}
   </section>`;
@@ -1939,8 +1939,8 @@ function renderSettings() {
     <div class="settings-layout">
       <section class="panel"><h2 class="panel-title">خطة التعلّم</h2><p class="panel-subtitle">يُحفظ الاسم والوقت الاسترشادي والاهتمام محليًا؛ اختيار الاهتمام تفضيل محفوظ ولا يغيّر ترتيب المنهج حاليًا.</p>
         <form id="settings-form" class="settings-form" style="margin-top:19px">
-          <div class="field"><label for="profile-name">كيف نناديك؟</label><input id="profile-name" name="name" maxlength="32" value="${escapeHTML(profile.name || '')}" placeholder="اسمك أو لقبك"><small>يظهر الاسم في لوحة المتابعة فقط.</small></div>
-          <div class="field"><label for="daily-goal">وقت دراسة استرشادي في اليوم (بالدقائق)</label><input id="daily-goal" name="dailyGoal" type="number" inputmode="numeric" min="5" step="5" value="${normalizeDailyMinutes(profile.dailyGoal)}"><small>ساعتان (120 دقيقة) نقطة بداية قابلة للتعديل، لا سقفًا. يمكنك متابعة المهام بعدها أو تقسيمها على جلسات.</small></div>
+          <div class="field"><label for="profile-name">كيف نناديك؟</label><input id="profile-name" name="name" aria-describedby="profile-name-help" maxlength="32" value="${escapeHTML(profile.name || '')}" placeholder="اسمك أو لقبك"><small id="profile-name-help">يظهر الاسم في لوحة المتابعة فقط.</small></div>
+          <div class="field"><label for="daily-goal">وقت دراسة استرشادي في اليوم (بالدقائق)</label><input id="daily-goal" name="dailyGoal" aria-describedby="daily-goal-help" type="number" inputmode="numeric" min="5" step="5" value="${normalizeDailyMinutes(profile.dailyGoal)}"><small id="daily-goal-help">ساعتان (120 دقيقة) نقطة بداية قابلة للتعديل، لا سقفًا. يمكنك متابعة المهام بعدها أو تقسيمها على جلسات.</small></div>
           <div class="field"><label for="learning-focus">ما هدفك الأقرب؟</label><select id="learning-focus" name="focus">${focusOptions.map((focus) => `<option value="${focus}" ${profile.focus === focus ? 'selected' : ''}>${focus}</option>`).join('')}</select></div>
           <div class="form-actions"><button type="submit" class="button-primary">حفظ الإعدادات ${icon('check', 16)}</button><button type="button" class="button-quiet" data-action="navigate" data-view="dashboard">إلغاء</button></div>
         </form>

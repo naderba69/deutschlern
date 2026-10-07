@@ -79,6 +79,10 @@ class BalanceChecker(HTMLParser):
         self.errors: list[str] = []
 
     def handle_starttag(self, tag: str, attrs) -> None:
+        attributes = dict(attrs)
+        if tag == "div" and "lesson-table-wrap" in attributes.get("class", "").split():
+            if attributes.get("tabindex") != "0" or attributes.get("role") != "region" or not attributes.get("aria-label"):
+                self.errors.append("lesson table scroll region needs tabindex=0, role=region and an accessible name")
         if tag not in VOID_TAGS:
             self.stack.append(tag)
 
