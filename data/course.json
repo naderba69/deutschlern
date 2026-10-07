@@ -24802,6 +24802,40 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "3) حوار أصلي في ورشة ابتكار"
+    },
+    {
+      "assetId": "DL-B1-12-AUD-READ-01",
+      "lessonId": "b1-12-innovation-research-future",
+      "title": "قراءة: مشروع Zukunftslabor البحثي الخيالي",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-12-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Eine Schülergruppe im fiktiven „Zukunftslabor“ entwickelt einen Sensor für einen Gemeinschaftsgarten. Zuerst baut sie einen Prototyp, der die Feuchtigkeit in der Erde misst. Im nächsten Monat wird das Team den Sensor in zwei Beeten testen und die Messwerte notieren. Die Gruppe erwartet, dass der Prototyp beim Planen der Gartenarbeit helfen wird; er wird die Erfahrung der Gärtnerinnen und Gärtner aber nicht ersetzen. Nach dem ersten Versuch werden die Schülerinnen und Schüler die Ergebnisse vergleichen. Wenn ein Teil nicht zuverlässig funktioniert, werden sie das Modell verändern. Vielleicht entsteht daraus eine neue Idee. Das Ziel des Projekts ist nicht, sofort ein perfektes Gerät zu bauen, sondern eine Frage Schritt für Schritt zu untersuchen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: مشروع بحثي خيالي"
+    },
+    {
+      "assetId": "DL-B1-12-AUD-LST-01",
+      "lessonId": "b1-12-innovation-research-future",
+      "title": "استماع: نماذج لتوفير الظل في ساحة المدرسة",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-12-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "In unserem Innovationskurs untersuchen wir, wie auf dem Schulhof mehr Schatten entstehen kann. In zwei Wochen werden wir Modelle aus Karton vorstellen. Danach werden wir Rückmeldungen sammeln. Wahrscheinlich werden wir zwei Entwürfe verbessern. Vielleicht wird die Gruppe am Ende nicht das schönste, sondern das praktischste Modell auswählen. Wir wissen noch nicht, welche Idee am besten funktioniert.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }
