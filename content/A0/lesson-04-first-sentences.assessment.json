@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a0-04-v1",
+    "version": "a0-04-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,10 +12,11 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
-      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
-      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
-      "استُبدلت مشتتات سؤالَي ترتيب الكلمات بصيغ غير معيارية واضحة لتقليل الالتباس."
+      "CR4: مراجعة نصية بالمراجع موثقة في data/reviews/a0-04-review.json؛ ليست مراجعة سمعية أو شهادة إتقان مستقلة.",
+      "صُححت مواءمة T07 مع P01 عن المتكلم وشخص آخر، وصارت P02 تطلب حوار T08 نفسه كاملًا.",
+      "Q08 مرتبط بـT02 الذي يتضمن السؤال نفسه عن Herr Weber؛ الربط السابق بـT06 كان نقلًا لنمط مشابه، لا مفتاحًا خاطئًا.",
+      "المفاتيح العشرة محفوظة؛ مشتتات الترتيب الخاطئة مقصودة. التحقق الذاتي لا يصحح اللغة أو النطق تلقائيًا.",
+      "أصل الأمثلة الصوتي الموجود ومقطعه محفوظان؛ لا تسجيل مستقل لحوار T08، ولا إعادة توليد أو اعتماد سمعي جديد."
     ]
   },
   "quiz": [
@@ -31,7 +32,7 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "أي ضمير يناسب Mariem؟",
+      "prompt": "أي ضمير يناسب Mariem، الشخصية المؤنثة في المثال؟",
       "options": [
         "sie",
         "er",
@@ -115,7 +116,7 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "ما التصحيح: Wir hat Zeit.؟",
+      "prompt": "صحّح الجملة لتقول «لدينا وقت»: Wir hat Zeit.",
       "options": [
         "Wir sind Zeit.",
         "Wir haben Zeit.",
@@ -143,7 +144,7 @@
         "Ich habe eine Frage."
       ],
       "answerIndex": 2,
-      "explanation": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
+      "explanation": "في هذا النمط الخبري المستقل يأتي الفعل المصرف في الموقع الثاني: Ich habe eine Frage."
     },
     {
       "id": "DL-A0-04-Q07",
@@ -157,19 +158,19 @@
         "فهم اللغة",
         "اختيار محدد"
       ],
-      "prompt": "حوّل Du bist hier إلى سؤال نعم/لا.",
+      "prompt": "حوّل Du bist hier. إلى سؤال نعم/لا يبدأ بالفعل، مع الإبقاء على du.",
       "options": [
         "Bist du hier?",
         "Du hier bist?",
         "Sind Sie hier?"
       ],
       "answerIndex": 0,
-      "explanation": "يبدأ سؤال نعم/لا بالفعل: Bist du hier?"
+      "explanation": "نقول Bist du hier? مع du. أما Sind Sie hier? فسؤال صحيح رسمي، لكنه يغيّر صيغة المخاطبة المطلوبة."
     },
     {
       "id": "DL-A0-04-Q08",
       "sourceTaskIds": [
-        "DL-A0-04-T06"
+        "DL-A0-04-T02"
       ],
       "objectiveIds": [
         "DL-A0-04-G01"
@@ -243,11 +244,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "اكتب وقل أربع جمل عن شخصية حقيقية أو خيالية: جملتان بـIch bin وIch habe، وجملتان عن شخص آخر باستخدام ist/hat.",
+      "prompt": "استعمل بيانات خيالية كما في تمرين 7. اكتب أربع جمل كاملة: Ich bin … / Ich habe … / Mila ist … / Sie hat … ثم اقرأها بصوت مرتفع. أول جملتين بصوت الشخصية المتكلمة، والأخيرتان عن Mila؛ Sie هنا تعني «هي».",
       "criteria": {
-        "taskCompletion": "ينتج أربع جمل كما طُلب.",
-        "meaningClarity": "يمكن فهم من يتحدث وما الصفة أو الشيء الذي لديه.",
-        "targetSkill": "يطابق ich مع bin/habe وضمير الغائب مع ist/hat، مع قبول معلومات خيالية."
+        "taskCompletion": "كتبت أربع جمل: واحدة بكل من Ich bin وIch habe وMila ist وSie hat، ثم قرأتها بصوت مرتفع.",
+        "meaningClarity": "يتضح من يتحدث ومن هي Mila، وما الحالة أو الشيء المقصود في كل جملة.",
+        "targetSkill": "أستعمل bin/habe مع ich وist/hat مع Mila/Sie بمعنى هي، وأحافظ على نماذج الأدوات من الدرس."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -257,7 +258,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 60,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -275,11 +276,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "من مثال مكتوب في الدرس، كوّن جوابًا قصيرًا بفعل sein أو haben ثم اصنع سؤال نعم/لا مناسبًا. اكتب الجملتين واقرأهما بصوت مرتفع.",
+      "prompt": "أكمل حوار تمرين 8 واكتبه بأدواره الأربعة A/B/A/B، ثم أدِّ الدورين بصوت مرتفع بنفسك أو مع شريك: A: Bist du neu hier? / B: Ja, ich ___ neu. Ich ___ eine Frage. / A: Natürlich. ___ du Zeit? / B: Ja, ich ___ Zeit. Danke! اكتب الحوار كاملًا، لا الكلمات الناقصة وحدها. لا يلزم تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "يكتب جوابًا وسؤال نعم/لا مناسبًا.",
-        "meaningClarity": "يمكن فهم المقصود من الجملتين.",
-        "targetSkill": "يستخدم تصريف sein أو haben المناسب وترتيب الفعل في سؤال نعم/لا."
+        "taskCompletion": "كتبت الأدوار الأربعة كاملة بعد ملء الفراغات، ثم قرأت السؤال والجواب في كل تبادل.",
+        "meaningClarity": "يتضح أن B جديد ولديه سؤال ووقت؛ بقي السؤال والجواب متوافقين.",
+        "targetSkill": "أستعمل ich bin وich habe وHast du Zeit? مع سؤال Bist du neu hier?؛ يبدأ سؤال نعم/لا بالفعل المصرف."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -289,7 +290,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 100,
         "speakAloud": true,
         "audioRequired": false
       }

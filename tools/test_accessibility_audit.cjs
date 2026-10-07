@@ -48,6 +48,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A0.3-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A0.3-practical-form-fixture', width);
+  // CR4: the corrected pronoun tables and the two aligned performance tasks.
+  await page.evaluate(() => openLesson('a0-04-first-sentences'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A0.4-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A0.4-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

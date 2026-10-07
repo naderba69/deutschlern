@@ -169,6 +169,35 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally { state.completedLessons = prior; }
   })()`, context), true, 'keep old A0.3 records but require v3 before A0.4');
 
+  // CR4: writing about another person and completing the actual T08 dialogue.
+  const reviewedFirstSentences = courseData.lessons.find(l => l.id === 'a0-04-first-sentences');
+  assert.equal(reviewedFirstSentences.assessment.version, 'a0-04-v2');
+  assert.deepEqual(reviewedFirstSentences.quiz[7].sourceTaskIds, ['DL-A0-04-T02']);
+  assert.equal(vm.runInContext(`(() => {
+    const responses = [
+      'Ich bin hier. Ich habe eine Frage. Mila ist Studentin. Sie hat ein Handy.',
+      'A: Bist du neu hier? B: Ja, ich bin neu. Ich habe eine Frage. A: Natürlich. Hast du Zeit? B: Ja, ich habe Zeit. Danke!'
+    ];
+    return course.lessons[3].performanceTasks.every((task, i) => {
+      const evidence = {response:responses[i], checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:true};
+      return performanceTaskEvidenceReady(task, evidence)
+        && !performanceTaskEvidenceReady(task, {...evidence, spokenAloud:false})
+        && !performanceTaskEvidenceReady(task, {...evidence, response:'bin habe Hast habe'})
+        && task.selfCheck.requiredChecks.every(key => !performanceTaskEvidenceReady(task, {...evidence, checks:{...evidence.checks, [key]:false}}));
+    });
+  })()`, context), true, 'A0.4 requires full-enough drafts and all oral/self-check confirmations, not just gap words');
+  assert.equal(vm.runInContext(`(() => {
+    const prior = state.completedLessons;
+    try {
+      const oldRecord = {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:'a0-04-v1'};
+      state.completedLessons = Object.fromEntries(course.lessons.slice(0,3).map(l => [l.id, {...oldRecord, assessmentVersion:l.assessment.version}]));
+      state.completedLessons[course.lessons[3].id] = oldRecord;
+      const rejected = !isLessonMastered(course.lessons[3]) && !isLessonAccessible(course.lessons[4]) && state.completedLessons[course.lessons[3].id] === oldRecord;
+      state.completedLessons[course.lessons[3].id] = {...oldRecord, assessmentVersion:'a0-04-v2'};
+      return rejected && isLessonAccessible(course.lessons[4]);
+    } finally { state.completedLessons = prior; }
+  })()`, context), true, 'keep A0.4 v1 record but require v2 plus previous lessons before A0.5');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

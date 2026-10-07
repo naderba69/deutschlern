@@ -1,0 +1,799 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a0-04-first-sentences",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a0-04-v2",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "R-GOETHE",
+      "citation": "[Goethe A1](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "قُرئت الفصول1–3 في الجزء المستخرج الأول: sein وhaben وترتيب السؤال والخبر، وأمثلة الضمائر. جدول haben كامل في الفصل3. لم نعتمد العبارة المستخرجة Ich heißen Matteo Kraft؛ لا نجزم هل الخطأ من الأصل أو الاستخراج."
+    },
+    {
+      "id": "R-SEIN",
+      "citation": "[Netzverb — Präsens sein](https://www.verbformen.com/conjugation/indikativ/praesens/sein.htm)",
+      "scope": "قُرئ جدول الحاضر الكامل، خصوصًا ihr seid. استُعمل الجدول فقط؛ لا اعتماد للترجمات الآلية أو كل الأمثلة ولا استماع للصوت."
+    },
+    {
+      "id": "R-SIE",
+      "citation": "[grammis §65/66](https://grammis.ids-mannheim.de/rechtschreibung/6197)",
+      "scope": "قُرئت قاعدة تكبير Sie/Ihr الرسمية وتصغير du/ihr في الاستعمال العادي."
+    },
+    {
+      "id": "R-CAP",
+      "citation": "[1](https://grammis.ids-mannheim.de/rechtschreibung/6162)",
+      "scope": "مقتطف البحث عن §54: أول كلمة في الجملة المستقلة تُكتب كبيرة. مع التصريف والسياق، يفسر لماذا Sie في البداية ليست دائمًا رسمية. لم تُجلب الصفحة كاملة."
+    },
+    {
+      "id": "R-ORDER",
+      "citation": "[2](https://grammis.ids-mannheim.de/systematische-grammatik/1241)",
+      "scope": "قُرئ الجزء الأول من الصفحة: وحدات الموقع كلمات أو مجموعات، وV2 وV1 وVorfeld. لا تُنقل التفاصيل المتقدمة إلى A0؛ يشرح مثال Frau Ali أن الموقع ليس عدّ الكلمات."
+    },
+    {
+      "id": "R-ES",
+      "citation": "[4](https://deutsch.lingolia.com/de/grammatik/pronomen/es)",
+      "scope": "قُرئ الجزء الأول، ولا سيما Personalpronomen es الذي يعود إلى اسم محايد. للضمير استعمالات أخرى؛ لم نختزله في الأشياء أو نزعم أن الشرح يغطيها جميعًا."
+    },
+    {
+      "id": "R-PRON",
+      "citation": "[1](https://deutsch.lingolia.com/en/grammar/pronouns/personal-pronouns)",
+      "scope": "مقتطف البحث: جدول ضمائر الرفع والفرق بين sie المفرد والجمع وSie الرسمية. قورن بالمراجع السابقة؛ ليست مراجعة لبقية الحالات النحوية."
+    }
+  ],
+  "sourceHashes": {
+    "content/A0/lesson-04-first-sentences.md": "6377e13d42b75d7ffb6b13d8a031444f17cd51c46293b261d732c8fcb8906850",
+    "content/A0/lesson-04-first-sentences.assessment.json": "e91752c37f4798df678474e42063be33e15f2f37bd2aa47e71d85b053560cd90"
+  },
+  "audioSnapshotHashes": {
+    "DL-A0-04-AUD-MODEL-01": "3ad69ff305c547961aa2cc6b6e9dd27aee2312fef4ddd58f09086cce4e9d7a15"
+  },
+  "units": [
+    {
+      "id": "goal-and-scope",
+      "decision": "corrected",
+      "finding": "الهدف عن المتكلم وشخص آخر محفوظ. أضيفت الكتابة إلى قائمة المهارات، ووُحّد T07/P01 مع هذا الهدف. بيانات خيالية، لا شرط شريك أو تسجيل. المهام لا تثبت إتقان جميع التصريفات أو الكلام المستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "pronoun-01",
+      "decision": "retained",
+      "finding": "ich → أنا. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-02",
+      "decision": "retained",
+      "finding": "du → أنتَ/أنتِ غير رسمي. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-03",
+      "decision": "retained",
+      "finding": "er → هو. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-04",
+      "decision": "retained",
+      "finding": "sie → هي. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-05",
+      "decision": "corrected",
+      "finding": "es → للإشارة إلى اسم محايد نحويًا في هذا الدرس، لا كل شيء. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-ES"
+      ]
+    },
+    {
+      "id": "pronoun-06",
+      "decision": "retained",
+      "finding": "wir → نحن. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-07",
+      "decision": "retained",
+      "finding": "ihr → أنتم لجماعة غير رسمية. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-08",
+      "decision": "retained",
+      "finding": "sie → هم/هن. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "pronoun-09",
+      "decision": "retained",
+      "finding": "Sie → حضرتك/حضراتكم، رسمي. محفوظ في جدول الرفع، لا تعميم على كل استعمالات الضمير.",
+      "sourceIds": [
+        "R-PRON",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "sie-context",
+      "decision": "corrected",
+      "finding": "التعميم بأن الحرف الكبير يعني الرسمية كان ناقصًا: Sie ist hier. = هي هنا؛ Sie sind hier. = هم/هن أو المخاطبة الرسمية بحسب السياق. الرسمية تجمع الفعل حتى مع مخاطَب واحد.",
+      "sourceIds": [
+        "R-CAP",
+        "R-SIE",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "es-context",
+      "decision": "clarified",
+      "finding": "das Buch→es و der Stift→er: الإشارة إلى الأشياء تتبع جنس الاسم في هذه الأمثلة. النص يصرح بوجود استعمالات أخرى لـ es، لا يدرسها كلها.",
+      "sourceIds": [
+        "R-ES",
+        "R-PRON"
+      ]
+    },
+    {
+      "id": "sein-01",
+      "decision": "retained",
+      "finding": "ich → bin: Ich bin Mariem. التصريف والنموذج صحيحان. ",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "sein-02",
+      "decision": "retained",
+      "finding": "du → bist: Du bist freundlich. التصريف والنموذج صحيحان. ",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "sein-03",
+      "decision": "retained",
+      "finding": "er / sie / es → ist: Mila ist Studentin. التصريف والنموذج صحيحان. ",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "sein-04",
+      "decision": "retained",
+      "finding": "wir → sind: Wir sind hier. التصريف والنموذج صحيحان. ",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "sein-05",
+      "decision": "retained",
+      "finding": "ihr → seid: Ihr seid pünktlich. التصريف والنموذج صحيحان. ",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "sein-06",
+      "decision": "retained",
+      "finding": "sie / Sie → sind: Sie sind aus Tunis. التصريف والنموذج صحيحان. المثال الأخير يحتمل الجمع أو المخاطبة الرسمية، وليس خطأ نحويًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "haben-01",
+      "decision": "retained",
+      "finding": "ich → habe: Ich habe ein Buch. التصريف والنموذج صحيحان. النموذج لا يفرض تعميم أداة الاسم على أسماء أخرى.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "haben-02",
+      "decision": "retained",
+      "finding": "du → hast: Du hast einen Stift. التصريف والنموذج صحيحان. النموذج لا يفرض تعميم أداة الاسم على أسماء أخرى.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "haben-03",
+      "decision": "retained",
+      "finding": "er / sie / es → hat: Er hat eine Schwester. التصريف والنموذج صحيحان. النموذج لا يفرض تعميم أداة الاسم على أسماء أخرى.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "haben-04",
+      "decision": "retained",
+      "finding": "wir → haben: Wir haben Zeit. التصريف والنموذج صحيحان. النموذج لا يفرض تعميم أداة الاسم على أسماء أخرى.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "haben-05",
+      "decision": "retained",
+      "finding": "ihr → habt: Ihr habt eine Frage. التصريف والنموذج صحيحان. النموذج لا يفرض تعميم أداة الاسم على أسماء أخرى.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "haben-06",
+      "decision": "retained",
+      "finding": "sie / Sie → haben: Sie haben ein Handy. التصريف والنموذج صحيحان. المثال الأخير يحتمل الجمع أو المخاطبة الرسمية، وليس خطأ نحويًا.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "model-method",
+      "decision": "clarified",
+      "finding": "تعلم النماذج كاملة قبل تفاصيل الحالات؛ einen Stift و einen Termin صحيحان بعد haben. توضيح السياق المحتمل لـ Sie في مثالي الجدولين. لا درس صرف أدوات شامل ولا شرط حفظ تفاصيل جديدة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-CAP"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "decision": "clarified",
+      "finding": "freundlich = لطيف/ودود. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-02",
+      "decision": "clarified",
+      "finding": "Studentin = طالبة جامعية. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "decision": "clarified",
+      "finding": "hier = هنا. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-04",
+      "decision": "clarified",
+      "finding": "pünktlich = ملتزم بالموعد. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-05",
+      "decision": "clarified",
+      "finding": "Buch = كتاب. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-06",
+      "decision": "clarified",
+      "finding": "Stift = قلم. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-07",
+      "decision": "clarified",
+      "finding": "Schwester = أخت. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-08",
+      "decision": "clarified",
+      "finding": "Zeit = وقت. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-09",
+      "decision": "clarified",
+      "finding": "Frage = سؤال. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-10",
+      "decision": "clarified",
+      "finding": "Handy = هاتف محمول. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-11",
+      "decision": "clarified",
+      "finding": "müde = متعب. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "decision": "clarified",
+      "finding": "Freunde = أصدقاء. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-13",
+      "decision": "clarified",
+      "finding": "Lehrerin = معلمة. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-14",
+      "decision": "clarified",
+      "finding": "Termin = موعد. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-15",
+      "decision": "clarified",
+      "finding": "heute = اليوم. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-16",
+      "decision": "clarified",
+      "finding": "neu = جديد. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-17",
+      "decision": "clarified",
+      "finding": "Natürlich. = بالطبع. ترجمة عربية مساعدة من المساعد لسياق نماذج الدرس؛ ليست اقتباسًا من قاموس عربي ولا بطاقة مفردات جديدة في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "word-order-rule",
+      "decision": "clarified",
+      "finding": "قُيّد الشرح بالنمط المستقل البسيط؛ Frau Ali | ist | hier. يوضح أن المكوّن الأول قد يكون كلمتين. سؤال نعم/لا بالفعل أولًا، لا كل سؤال قصير؛ Wie heißt du? مثال يذكّر بالفرق.",
+      "sourceIds": [
+        "R-ORDER",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "syntax-01",
+      "decision": "retained",
+      "finding": "Ich bin müde. — أنا متعب/ة؛ bin في الموقع الثاني",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "syntax-02",
+      "decision": "retained",
+      "finding": "Nora ist hier. — نورا هنا؛ ist صحيح مع اسم مفرد",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "syntax-03",
+      "decision": "retained",
+      "finding": "Wir haben Zeit. — لدينا وقت؛ haben مع wir",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "syntax-04",
+      "decision": "retained",
+      "finding": "Bist du hier? — هل أنت هنا؟؛ bist+du",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "syntax-05",
+      "decision": "retained",
+      "finding": "Hast du Zeit? — هل لديك وقت؟؛ hast+du",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "example-01",
+      "decision": "retained",
+      "finding": "Ich bin 18 Jahre alt. — نموذج العمر صحيح، و 18 في النص يقابله achtzehn في التفريغ.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "example-02",
+      "decision": "retained",
+      "finding": "Du bist in Nabeul. — bist مع du والمكان مع in صحيحان.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "example-03",
+      "decision": "retained",
+      "finding": "Wir sind Freunde. — sind و Freunde جمع؛ صحيح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "example-04",
+      "decision": "retained",
+      "finding": "Ich habe eine Frage. — habe مع ich و eine Frage؛ صحيح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "example-05",
+      "decision": "retained",
+      "finding": "Mila hat ein Handy. — hat مع Mila و ein Handy؛ صحيح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "example-06",
+      "decision": "clarified",
+      "finding": "Haben Sie Zeit? — السؤال رسمي؛ وضحت الترجمة أنه يصلح لمفرد أو جماعة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-04-T01",
+      "decision": "clarified",
+      "finding": "أربع مفاضلات صحيحة؛ وُضح جنس الشخصية في هذا المثال دون تعميم على كل حامل للاسم.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Mariem المؤنثة في المثال→sie، لا er",
+        "Youssef und ich→wir، لا ihr",
+        "المخاطبة الرسمية→Sie، لا du",
+        "Sami und Omar→sie للجمع، لا es"
+      ]
+    },
+    {
+      "id": "DL-A0-04-T02",
+      "decision": "retained",
+      "finding": "خمسة فراغات ومفاتيح صحيحة، تشمل الرسمي Sind Sie.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Ich bin hier.",
+        "Du bist freundlich.",
+        "Wir sind in Nabeul.",
+        "Frau Ali ist Lehrerin.",
+        "Sind Sie Herr Weber?"
+      ]
+    },
+    {
+      "id": "DL-A0-04-T03",
+      "decision": "retained",
+      "finding": "خمسة فراغات صحيحة، و Habt بحرف كبير لابتداء السؤال.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Ich habe eine Frage.",
+        "Du hast Zeit.",
+        "Er hat ein Buch.",
+        "Wir haben einen Termin.",
+        "Habt ihr ein Handy?"
+      ]
+    },
+    {
+      "id": "DL-A0-04-T04",
+      "decision": "retained",
+      "finding": "الأخطاء في البندين 1 و 3 مقصودة للتصحيح، لا شرح خاطئ.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Ich bist müde. خطأ مقصود؛ الصحيح Ich bin müde.",
+        "Du bist hier. صحيحة.",
+        "Wir hat Zeit. خطأ مقصود؛ الصحيح Wir haben Zeit.",
+        "Sie sind freundlich. صحيحة رسميًا، كما يحدد السؤال."
+      ]
+    },
+    {
+      "id": "DL-A0-04-T05",
+      "decision": "corrected",
+      "finding": "أُزيل التصاق الترقيم بالكلمات المبعثرة، وحُددت البداية والسجل؛ المفتاح نماذج ممكنة لا إنكار لبدائل سليمة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Ich bin 20 Jahre alt. بداية Ich والنقطة في النهاية.",
+        "Ich habe eine Frage. بداية Ich، لا Ich. وسط الجملة.",
+        "Sie sind heute hier. نموذج صحيح بصيغة رسمية؛ لا ادعاء أنه كل الترتيبات الممكنة.",
+        "Hast du Zeit? علامة الاستفهام في النهاية، لا ملاصقة Hast قبل الترتيب."
+      ]
+    },
+    {
+      "id": "DL-A0-04-T06",
+      "decision": "retained",
+      "finding": "ثلاثة تحويلات سليمة تحافظ على الضمير وتصريفه. سؤال الهوية الرسمي ليس خطأ نحويًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Du bist in Tunis.→Bist du in Tunis?",
+        "Ihr habt eine Frage.→Habt ihr eine Frage?",
+        "Sie sind Frau Ben Ali.→Sind Sie Frau Ben Ali? المخاطبة رسمية."
+      ]
+    },
+    {
+      "id": "DL-A0-04-T07",
+      "decision": "corrected",
+      "finding": "صُحح عدم التطابق مع P01 والهدف: أربع جمل موزعة على المتكلم وشخص آخر، ثم قراءتها. النموذج خيالي وغير حصري للتفاصيل.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "Ich bin hier. نموذج لجملة المتكلم بـ bin.",
+        "Ich habe eine Frage. نموذج لجملة المتكلم بـ habe.",
+        "Mila ist Studentin. نموذج لشخص آخر بـ ist.",
+        "Sie hat ein Handy. تعود Sie على Mila؛ hat مفرد لا رسمية."
+      ]
+    },
+    {
+      "id": "DL-A0-04-T08",
+      "decision": "clarified",
+      "finding": "أربعة فراغات صحيحة؛ تطلب المهمة الآن كتابة كامل الحوار وأداء الدورين، ويمكن التنفيذ فرديًا. لا أصل صوتي خاص بهذا الحوار.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ],
+      "items": [
+        "الفراغ 1: bin؛ Ja, ich bin neu.",
+        "الفراغ 2: habe؛ Ich habe eine Frage.",
+        "الفراغ 3: Hast؛ Hast du Zeit? بحرف كبير في البداية.",
+        "الفراغ 4: habe؛ Ja, ich habe Zeit."
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "decision": "retained",
+      "finding": "Bist du neu hier? — A يسأل الشخص الجديد؛ bist مع du صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "decision": "retained",
+      "finding": "Ja, ich bin neu. Ich habe eine Frage. — B يجيب ثم يعلن أن لديه سؤالًا؛ bin/habe صحيحان.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "decision": "retained",
+      "finding": "Natürlich. Hast du Zeit? — A يستعد للمساعدة ويسأل عن الوقت؛ النمط صحيح، ولا يلزم اختراع خطأ في السياق.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "decision": "retained",
+      "finding": "Ja, ich habe Zeit. Danke! — B يوافق؛ جواب متسق مع السؤال، و habe صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q01",
+      "decision": "clarified",
+      "finding": "sie للشخصية المؤنثة؛ er/es لا يطابقان المرجع المعطى. الخيارات: sie / er / es؛ المصدر: DL-A0-04-T01",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q02",
+      "decision": "retained",
+      "finding": "bin مع ich؛ bist/sind لا يطابقان الفاعل. الخيارات: bist / bin / sind؛ المصدر: DL-A0-04-T02",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q03",
+      "decision": "retained",
+      "finding": "bist مع du؛ sind/ist غير مطابقين. الخيارات: sind / ist / bist؛ المصدر: DL-A0-04-T02",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q04",
+      "decision": "retained",
+      "finding": "haben مع wir؛ المصدر T03 يدرّب التصريف مع Termin، و Zeit مدرّبة في الجدول؛ نقل إلى مثال معروف لا تطابق حرفي. الخيارات: haben / hat / hast؛ المصدر: DL-A0-04-T03",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q05",
+      "decision": "clarified",
+      "finding": "Wir haben Zeit. هو المعنى المطلوب. Wir sind Zeit. ليس خطأ صرفيًا بالضرورة لكنه ليس «لدينا وقت»؛ Wir hast غير مطابق. الخيارات: Wir sind Zeit. / Wir haben Zeit. / Wir hast Zeit.؛ المصدر: DL-A0-04-T04",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q06",
+      "decision": "clarified",
+      "finding": "Ich habe eine Frage. صحيح؛ المشتتان غير معياريين في النمط المطلوب. لم نستبدلهما ببديل صحيح مثل Eine Frage habe ich. الخيارات: Eine Frage ich habe. / Habe eine ich Frage. / Ich habe eine Frage.؛ المصدر: DL-A0-04-T05",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q07",
+      "decision": "clarified",
+      "finding": "Bist du hier? يحافظ على du. Sind Sie hier? صحيح رسميًا لكنه يغير المخاطبة؛ وضح السؤال والشرح هذا الفرق. الخيارات: Bist du hier? / Du hier bist? / Sind Sie hier?؛ المصدر: DL-A0-04-T06",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q08",
+      "decision": "clarified",
+      "finding": "Sind Sie Herr Weber? صحيح رسميًا؛ Bist du صحيح غير رسمي لكنه لا يفي بالمطلوب، و Ist Sie لا يوافق الرسمية. الربط الجديد T02 يطابق السؤال نفسه؛ T06 السابق كان نقلًا لنمط مشابه لا مفتاحًا خاطئًا. الخيارات: Bist du Herr Weber? / Ist Sie Herr Weber? / Sind Sie Herr Weber?؛ المصدر: DL-A0-04-T02",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q09",
+      "decision": "retained",
+      "finding": "ist مع Mila؛ مثال Studentin مشروح بالجدول، و T02 يدرّب نفس النمط مع Frau Ali/Lehrerin. لا اشتراط تطابق لفظي تام بين التدريب والقياس. الخيارات: ist / sind / bin؛ المصدر: DL-A0-04-T02",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-Q10",
+      "decision": "retained",
+      "finding": "Habt مع ihr؛ Haben/Hat لا يوافقان الفاعل. الخيارات: Habt / Haben / Hat؛ المصدر: DL-A0-04-T03",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "DL-A0-04-P01",
+      "decision": "corrected",
+      "finding": "قرئت التعليمات والمعايير الثلاثة: أربع جمل محددة بـ Ich bin/Ich habe/Mila ist/Sie hat، وقراءة بصوت مرتفع؛ T07 الآن يطلب ذلك. حد 60 حرفًا ومربعات المراجعة والتأكيد الشفهي، لا تصحيح لغوي آلي أو معلومات حقيقية مطلوبة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "DL-A0-04-P02",
+      "decision": "corrected",
+      "finding": "قرئت التعليمات والمعايير الثلاثة: الحوار المربوط T08 نفسه، بأدواره الأربعة مكتوبة ومقروءة، لا طلب مبهم لتكوين سؤال/جواب من أي مثال. حد 100 حرفًا لا يثبت الصحة؛ لا تحميل تسجيل، ويمكن أداء الدورين وحدك.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-ORDER"
+      ]
+    },
+    {
+      "id": "card-01",
+      "decision": "clarified",
+      "finding": "ich bin/du bist/sie ist صحيحة؛ تحسنت الترجمة بمثال Ich bin müde.→أنا متعب/ة، بدل الإيحاء بترجمة أكون الحرفية دائمًا.",
+      "sourceIds": [
+        "R-SEIN"
+      ]
+    },
+    {
+      "id": "card-02",
+      "decision": "retained",
+      "finding": "ich habe/du hast/er hat→لديّ/لديك/لديه؛ صحيح في السياق.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "card-03",
+      "decision": "corrected",
+      "finding": "حُدد سؤال نعم/لا بدل «السؤال القصير» العام؛ Bist du…?/Hast du…? يبدأان بالفعل، بخلاف سؤال W القصير.",
+      "sourceIds": [
+        "R-ORDER",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "DL-A0-04-AUD-MODEL-01",
+      "decision": "text-only-reviewed",
+      "finding": "قُرئت الجمل العشر واحدةً واحدة: الأمثلة الستة ثم أربعة نماذج من قسم الترتيب. التطابق نصي مع استثناء 18/achtzehn المعلوم، وليس سجل حوار. voice-02 و ready تاريخيان محفوظان، لا استماع أو إعادة توليد أو اعتماد جديد.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SEIN",
+        "R-ORDER"
+      ],
+      "items": [
+        "Ich bin achtzehn Jahre alt.",
+        "Du bist in Nabeul.",
+        "Wir sind Freunde.",
+        "Ich habe eine Frage.",
+        "Mila hat ein Handy.",
+        "Haben Sie Zeit?",
+        "Bist du hier?",
+        "Wir haben Zeit.",
+        "Ich bin müde.",
+        "Nora ist hier."
+      ]
+    }
+  ]
+}
