@@ -4,3 +4,5 @@ source-books/
 *.pdf
 *.epub
 *.mobi
+
+node_modules/
