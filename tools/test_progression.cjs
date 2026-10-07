@@ -82,6 +82,30 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 53, "the course bundle must carry all fifty-three ready lesson assessments through B2.12");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 530, "the course bundle must carry all five hundred thirty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 106, "the course bundle must carry all one hundred six lesson performance tasks");
+  // CR1: A0.1 source-backed corrections, independent of prerecorded audio.
+  const reviewedA0 = courseData.lessons.find(lesson => lesson.id === 'a0-01-alphabet');
+  assert.equal(reviewedA0.assessment.version, 'a0-01-v2');
+  assert.equal(reviewedA0.quiz[9].options[reviewedA0.quiz[9].answerIndex], 'El – I – En – A');
+  assert.deepEqual(reviewedA0.performanceTasks[1].modality, ['writing']);
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(course.lessons[0].performanceTasks[1], {
+    response: 'Mina, Berlin, sieben, Schule', checks: {taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:false
+  })`, context), true, 'A0.1 P02 must accept a complete written self-check without speech');
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(course.lessons[0].performanceTasks[1], {
+    response: 'Mina, Berlin, sieben, Schule', checks: {taskCompletion:true, meaningClarity:true, targetSkill:false}, spokenAloud:false
+  })`, context), false, 'written task still requires its declared checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([course.lessons[0].performanceTasks[1]], 'lesson:a0-01-alphabet', 'a0-01-v2')`, context), /data-performance-spoken/, 'written recall must not render a speech checkbox');
+  assert.equal(vm.runInContext(`(() => {
+    const lesson = course.lessons[0], prior = state.completedLessons[lesson.id];
+    try {
+      const oldRecord = {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:'a0-01-v1'};
+      state.completedLessons[lesson.id] = oldRecord;
+      return !isLessonMastered(lesson) && !isLessonAccessible(course.lessons[1]) && state.completedLessons[lesson.id] === oldRecord;
+    } finally {
+      if (prior === undefined) delete state.completedLessons[lesson.id];
+      else state.completedLessons[lesson.id] = prior;
+    }
+  })()`, context), true, 'A0.1 v1 mastery must remain stored but not unlock the corrected course');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

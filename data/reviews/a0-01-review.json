@@ -1,0 +1,574 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a0-01-alphabet",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a0-01-v2",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "R-ABC",
+      "citation": "[2](https://www.fluentin3months.com/german-alphabet/)",
+      "scope": "جدول أسماء الحروف وIPA؛ مرجع تعليمي مساعد، مع تحقق قاموسي منفصل للنقاط الملتبسة."
+    },
+    {
+      "id": "R-J",
+      "citation": "[3](https://www.duden.de/rechtschreibung/j_Buchstabe)",
+      "scope": "J [jɔt]، وذكر البديل النمساوي [jeː]."
+    },
+    {
+      "id": "R-Y",
+      "citation": "[2](https://www.dwds.de/wb/Ypsilon)",
+      "scope": "Ypsilon [ˈʏpsilɔn]."
+    },
+    {
+      "id": "R-VIER",
+      "citation": "[1](https://www.dwds.de/wb/vier)",
+      "scope": "vier [fiːɐ̯]، أربعة؛ يدعمv/ie في هذه الكلمة."
+    },
+    {
+      "id": "R-SPORT",
+      "citation": "[1](https://www.dwds.de/wb/Sport)",
+      "scope": "Sport [ʃpɔʁt]؛ بدايةsp."
+    },
+    {
+      "id": "R-SS",
+      "citation": "[3](https://grammis.ids-mannheim.de/rechtschreibung/6180)",
+      "scope": "§25 وE2/E3: ضوابطß، وss فيسويسراوليختنشتاين، والكبيرẞ أوSS."
+    },
+    {
+      "id": "R-DW",
+      "citation": "[2](https://www.dw.com/downloads/26294183/lektion1-lerner-aussprache.pdf)",
+      "scope": "إرشادÜ/Ö وsch/sp/st/ch/z/v/w؛ ملفCornelsen2006 عبرDW. لم أعتمد ادعاءه القديم أنß صغيرفقط؛صححتهبالقاعدةالرسميةالحالية، ولم أنسخ رموزIPA المشوهة من استخراجPDF."
+    }
+  ],
+  "sourceHashes": {
+    "content/A0/lesson-01-alphabet.md": "92f15f5a6c4075af2121b6afb9e81431706fbf16fb8b5ae6060624ccb6609a80",
+    "content/A0/lesson-01-alphabet.assessment.json": "fecafa6a700ac5d265ba4b6223de598c46c0a322fb319245724430e5784bdff6"
+  },
+  "units": [
+    {
+      "id": "goal-and-scope",
+      "decision": "clarified",
+      "finding": "الهدف تمهيدي: معرفة أسماء الحروف والأنماط والتدرب على التهجئة. أضيف فصل معرفة الأنماط عن قياس النطق. 20 دقيقة تقدير جلسة أولى لا وعد بالإتقان. A0 جسر داخلي لا شهادة CEFR. لا حوار أو نص قراءة مستقل في هذا الدرس حتى يُنسب إليه فحص غير موجود.",
+      "sourceIds": []
+    },
+    {
+      "id": "letter-A",
+      "decision": "retained",
+      "finding": "اسم A وتمثيله الطويل «آ» ملائمان كتقريب.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-B",
+      "decision": "retained",
+      "finding": "Be؛ تقريب «بيه» مساعد غير مطابق تمامًا للحركة الألمانية /eː/.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-C",
+      "decision": "retained",
+      "finding": "Ce؛ البداية /ts/ وليست k عند تسمية الحرف؛ «تسيه» تقريب فقط.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-D",
+      "decision": "retained",
+      "finding": "De؛ احتفظنا بالاسم، والتقريب العربي ليس وصفًا صوتيًا دقيقًا.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-E",
+      "decision": "retained",
+      "finding": "E يختلف عن I؛ «إيه» مساعد تقريبي مقابل «إي».",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-F",
+      "decision": "retained",
+      "finding": "Eff؛ «إف» مساعد؛ ليس اسم الحرف الإنجليزي داخل كلمة ألمانية.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-G",
+      "decision": "retained",
+      "finding": "Ge؛ التنبيه إلى g الصلبة يمنع قراءته غينًا.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-H",
+      "decision": "retained",
+      "finding": "Ha؛ تسمية الحرف لا تعني نطق h في كل موضع داخل الكلمات.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-I",
+      "decision": "retained",
+      "finding": "I؛ حركة i طويلة، لا اسم الحرف الإنجليزي ai.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-J",
+      "decision": "corrected",
+      "finding": "حُذف «يوت» الملتبس وأضيف [jɔt] مع o قصيرة؛ توجد تسمية نمساوية jeː موثقة وليست خطأ إذا استُعملت.",
+      "sourceIds": [
+        "R-ABC",
+        "R-J"
+      ]
+    },
+    {
+      "id": "letter-K",
+      "decision": "retained",
+      "finding": "Ka؛ الاسم والتقريب مقبولان.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-L",
+      "decision": "retained",
+      "finding": "El؛ يتطابق مع أول حرف في Lina ومفتاح T04/Q10.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-M",
+      "decision": "retained",
+      "finding": "Em؛ يتطابق مع Mina وSami، وليس En.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-N",
+      "decision": "retained",
+      "finding": "En؛ يتطابق مع Lina وNora، وليس Em.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-O",
+      "decision": "corrected",
+      "finding": "حُذف التقريب «أو» الملتبس بثنائي صوت؛ الاسم [oː] حركة واحدة طويلة.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-P",
+      "decision": "retained",
+      "finding": "Pe؛ استخدام پ يميزها من ب؛ التقريب ليس قياس نطق.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-Q",
+      "decision": "retained",
+      "finding": "Ku؛ اسم الحرف لا يساوي نطق qu داخل الكلمات؛ لا قاعدة خاطئة أضيفت.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-R",
+      "decision": "retained",
+      "finding": "Er؛ التنبيه إلى التنوع الإقليمي سليم؛ لا اشتراط لرّاء محلية.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-S",
+      "decision": "retained",
+      "finding": "Es؛ الاسم يتطابق مع Sami؛ صوت الحرف في الكلمات سياقي ولم يُعمم.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-T",
+      "decision": "retained",
+      "finding": "Te؛ الاسم سليم، والحركة العربية تقريبية.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-U",
+      "decision": "corrected",
+      "finding": "حُذف «أو طويلة» لأنه يخلطه بـO؛ أضيف [uː] وتقريب ضمة طويلة.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-V",
+      "decision": "retained",
+      "finding": "Vau؛ البداية /f/ في اسم الحرف، والتمييز عن W محفوظ.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-W",
+      "decision": "retained",
+      "finding": "We؛ البداية /v/، وقاعدة Wasser متسقة معها.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-X",
+      "decision": "retained",
+      "finding": "Iks؛ الاسم سليم والتقريب العربي مساعد.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "letter-Y",
+      "decision": "corrected",
+      "finding": "حُذف «أوبسيلون» وأضيف [ˈʏpsilɔn] وتنبيه إلى ü القصيرة لا u.",
+      "sourceIds": [
+        "R-ABC",
+        "R-Y"
+      ]
+    },
+    {
+      "id": "letter-Z",
+      "decision": "corrected",
+      "finding": "استُبدل «تسيت» الذي قد يوحي بإي طويلة بـ[tsɛt] وتوضيح الحركة القصيرة.",
+      "sourceIds": [
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "umlauts-eszett",
+      "decision": "clarified",
+      "finding": "أضيف تمييز ü/ö عن u/o وتوجيه لتدوير الشفتين، وضُبط نطاق ß/ss مع ẞ/SS وسويسرا وليختنشتاين. لا تعميم لكل s بعد حركة، ولا إلزام المبتدئ بحفظ التفاصيل. رُفض ادعاء المصدر القديم أن ß لا يملك حرفًا كبيرًا.",
+      "sourceIds": [
+        "R-DW",
+        "R-SS"
+      ]
+    },
+    {
+      "id": "pattern-ei",
+      "decision": "retained",
+      "finding": "mein/nein يعرضان ثنائي الصوت، والتقريب «آي» معلّم بوضوح.",
+      "sourceIds": [
+        "R-DW"
+      ]
+    },
+    {
+      "id": "pattern-ie",
+      "decision": "retained",
+      "finding": "vier/sieben يعرضان i طويلة؛ لا خلط مع ei.",
+      "sourceIds": [
+        "R-VIER",
+        "R-ABC"
+      ]
+    },
+    {
+      "id": "pattern-sch",
+      "decision": "retained",
+      "finding": "Schule يعرض /ʃ/، والتقريب ش مناسب هنا.",
+      "sourceIds": [
+        "R-DW"
+      ]
+    },
+    {
+      "id": "pattern-z",
+      "decision": "retained",
+      "finding": "zwei يبدأ بـ/ts/؛ لا تفسيره ز.",
+      "sourceIds": [
+        "R-DW"
+      ]
+    },
+    {
+      "id": "pattern-w",
+      "decision": "retained",
+      "finding": "Wasser يبدأ بـ/v/؛ ذكر v الإنجليزية صحيح لكنه قرينة مساعدة لا شرط معرفة الإنجليزية.",
+      "sourceIds": [
+        "R-DW"
+      ]
+    },
+    {
+      "id": "pattern-v",
+      "decision": "clarified",
+      "finding": "جُعل الوصف خاصًا بـvier /f/ بدل توسيع قاعدة غالبًا على كلمة مفردة.",
+      "sourceIds": [
+        "R-VIER"
+      ]
+    },
+    {
+      "id": "pattern-sp-st",
+      "decision": "clarified",
+      "finding": "حُدد النطاق بالكلمتين Sport/Student بدل خلط بداية المقطع وبداية الكلمة؛ النطق المستهدف /ʃp/ و/ʃt/.",
+      "sourceIds": [
+        "R-SPORT",
+        "R-DW"
+      ]
+    },
+    {
+      "id": "pattern-ch",
+      "decision": "clarified",
+      "finding": "ich [ç] وBuch [x] مثالان لصوتين مختلفين، لا sch ولا حصر جميع قراءاتch بهما.",
+      "sourceIds": [
+        "R-DW"
+      ]
+    },
+    {
+      "id": "example-mein",
+      "decision": "clarified",
+      "finding": "تفسير الملكية صار في سياق mein Name = اسمي؛ تجنّب اعتبار mein ترجمة مستقلة لكل «لي».",
+      "sourceIds": []
+    },
+    {
+      "id": "example-vier",
+      "decision": "retained",
+      "finding": "أربعة؛ يحتوي ie، ويبدأ بـv المنطوقة /f/.",
+      "sourceIds": []
+    },
+    {
+      "id": "example-Schule",
+      "decision": "retained",
+      "finding": "مدرسة؛ تبدأ بـSch، والنمط الصوتي sch.",
+      "sourceIds": []
+    },
+    {
+      "id": "example-zwei",
+      "decision": "retained",
+      "finding": "اثنان؛ يختبر بدء z بـ/ts/.",
+      "sourceIds": []
+    },
+    {
+      "id": "example-Wasser",
+      "decision": "retained",
+      "finding": "ماء؛ w منطوقة /v/.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-T01",
+      "decision": "corrected",
+      "finding": "النمطان ei/ie ليسا كلمتين؛ صُححت التعليمات، وكل المفاتيح الأربعة سليمة.",
+      "sourceIds": [],
+      "items": [
+        "m__n → mein /ei/؛ إشارة الملكية أصبحت سياقية.",
+        "v__r → vier /ie/.",
+        "dr__ → drei /ei/.",
+        "n__n → nein /ei/."
+      ]
+    },
+    {
+      "id": "DL-A0-01-T02",
+      "decision": "corrected",
+      "finding": "كانت ثلاثة بنود فقط؛ أضيف بندان لتغطية Q06/Q07 وإكمال مفتاح الإجابات.",
+      "sourceIds": [],
+      "items": [
+        "sch في Schule: أ/ش.",
+        "z في zwei: ب/تس.",
+        "w في Wasser: أ/v.",
+        "أضيف v في vier: ب/f، ليغطي مصدر Q06.",
+        "أضيف sp في Sport: ج/ش ثم پ، ليغطي مصدر Q07."
+      ]
+    },
+    {
+      "id": "DL-A0-01-T03",
+      "decision": "retained",
+      "finding": "المطابقة ذات إجابة واحدة لكل كلمة، والمفتاح1-ب/2-ج/3-د/4-أ صحيح؛ تدريب غير مستقل في التقييم.",
+      "sourceIds": [],
+      "items": [
+        "vier → ب/ie.",
+        "Schule → ج/sch.",
+        "zwei → د/z.",
+        "Wasser → أ/w."
+      ]
+    },
+    {
+      "id": "DL-A0-01-T04",
+      "decision": "corrected",
+      "finding": "أضيف قالب الاسم/الحروف/أسمائها ومثالMina قبل المهمة؛ التهجئة فردية ولا تحتاج شريكًا. أمثلةLina/Sami/Nora ومفاتيحها متسقة.",
+      "sourceIds": [],
+      "items": [
+        "Lina → L-I-N-A / El – I – En – A.",
+        "Sami → S-A-M-I / Es – A – Em – I.",
+        "Nora → N-O-R-A / En – O – Er – A."
+      ]
+    },
+    {
+      "id": "DL-A0-01-T05",
+      "decision": "corrected",
+      "finding": "الأسئلة كتابية، وكل جواب سليم؛ ضُبطت كتابةS-c-h في المفتاح.",
+      "sourceIds": [],
+      "items": [
+        "Berlin: B أول حرف.",
+        "Deutsch: h آخر حرف مكتوب؛ لا سؤال عن آخر صوت.",
+        "Schule: S-c-h أول ثلاثة أحرف؛ ضُبطت حالةالحرف في المفتاح.",
+        "sieben: يحتوي ie."
+      ]
+    },
+    {
+      "id": "DL-A0-01-T06",
+      "decision": "retained",
+      "finding": "المهمة أصلًا ذاكرة كتابية وموسومة بأنها ليست استماعًا أو نطقًا؛ صححنا P02 لتطابقها لا العكس.",
+      "sourceIds": [],
+      "items": [
+        "Mina: اسم يبدأ بحرف كبير، ترتيب M-i-n-a.",
+        "Berlin: اسم مكان بحرف كبير، ترتيب B-e-r-l-i-n.",
+        "sieben: يبدأ بحرف صغير في نموذج القائمة؛ يحتوي ie لا ei.",
+        "Schule: اسم بحرف كبير؛ يحتوي sch. لا كلمة من الأربع تحتوي ei."
+      ]
+    },
+    {
+      "id": "DL-A0-01-T07",
+      "decision": "retained",
+      "finding": "البندان صحيحان، ومرجعهما جدول الأنماط؛ بقي تدريبًا غير مستقل في التقييم.",
+      "sourceIds": [],
+      "items": [
+        "zwei تبدأ بـ/ts/ لا Wasser أو Schule.",
+        "vier وsieben تحتويان ie، أماmein ففيهاei."
+      ]
+    },
+    {
+      "id": "DL-A0-01-Q01",
+      "decision": "retained",
+      "finding": "إجابة وحيدةei؛ البدائلie/z/sch لا تطابقmein. المصدرT01 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q02",
+      "decision": "retained",
+      "finding": "إجابة وحيدةie؛ البدائلei/sch/sp لا تطابقvier. المصدرT01 مطابق؛ لا تغير في المفتاح الصحيح السابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q03",
+      "decision": "retained",
+      "finding": "الإجابةش؛ تس/ف لا يمثلانsch هنا. المصدرT02/1 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q04",
+      "decision": "retained",
+      "finding": "الإجابةتس؛ ز/ش ليسا صوتz هنا. المصدرT02/2 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q05",
+      "decision": "retained",
+      "finding": "الإجابةv الإنجليزية؛ f/خ لا يمثلانw فيWasser. المصدرT02/3 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q06",
+      "decision": "corrected",
+      "finding": "حُذف «غالبًا في كلمة»؛ السؤال صار عنvier تحديدًا. أضيفت ممارسته إلىT02/4. الجوابf لم يتغير.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q07",
+      "decision": "corrected",
+      "finding": "الخيارات صارت عربية واضحة بدلsh+p، وأضيفت ممارسته إلىT02/5. الهدفمعرفةالنمط لا قياسالنطق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q08",
+      "decision": "retained",
+      "finding": "آخر حرفh؛ البديلانs/t ليسا الأخير. المصدرT05/2 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q09",
+      "decision": "corrected",
+      "finding": "وُحّدت الخيارات على تتابعات حروفS-c-h،S-c-h-e،S-c-h-u؛ الصحيح الأول يطابقT05/3.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-Q10",
+      "decision": "corrected",
+      "finding": "وُحّدت أسماء الحروف مع الجدول والمفتاحEl – I – En – A بدلah. البديل الأول ترتيبمقلوب، والثالثيستبدلNبـM. المصدرT04 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-P01",
+      "decision": "clarified",
+      "finding": "قالب إجابة واضح، ونموذج متوافق مع T04، ومقارنة بالجدول بدل اشتراط مستمع آخر. يبقى تدريب تهجئة ذاتيًا، وشرط spokenAloud لا يثبت جودة النطق. حد12حرفًا حارس اكتمال شكلي لا تصحيح لغوي.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-P02",
+      "decision": "corrected",
+      "finding": "حُذف التعارض بين اقرأوهجّئ/أو؛ صارت writing فقط بلاspokenAloud. سُميت الكلمات الأربع بدل«المستهدفة»، وضُبط المعيار علىie/sch وحالةالحروف؛ حُذفei لعدموجوده. المصدرT06 كتابة لا استماع. احتفظنا بحد12حرفًا كحارسشكلي لا حكم صحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-ei",
+      "decision": "retained",
+      "finding": "mein يعرضei/آي؛ صحيح كتقريب.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-ie",
+      "decision": "retained",
+      "finding": "vier يعرضie/iطويلة؛ صحيح هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-sch",
+      "decision": "retained",
+      "finding": "Schule يعرضsch/ش؛ صحيح هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-z",
+      "decision": "retained",
+      "finding": "zwei مثالصحيح لـts؛ عبارةغالبًا لا تفرض قاعدة على كل الأسماء والدخيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-AUD-ABC-01",
+      "decision": "text-only-reviewed",
+      "finding": "سلسلة أسماء26حرفًا صحيحة نصيًا، ثمÄ/Ö/Ü واسمEszett؛ لا يصحح النص وحده أصواتMP3. لم يتغير نص التسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-AUD-PHON-01",
+      "decision": "text-only-reviewed",
+      "finding": "راجعت نصالأمثلةmein/nein/drei وvier/sieben وSchule/zwei/Wasser/vier/Sport/Student/ich/Buch؛ يطابق نطاقالنماذج المراجعة. لم يتغير.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-01-AUD-WORDS-01",
+      "decision": "text-only-reviewed",
+      "finding": "النص Mina. Berlin. sieben. Schule. يطابق كلماتT06. عنوانكلماتالإملاء يصلح لاستعمال آخر لكنT06/P02 ذاكرةكتابية لا اختباراستماع. لا إعادةتوليد أو تغييررابط.",
+      "sourceIds": []
+    }
+  ],
+  "audioSnapshotHashes": {
+    "DL-A0-01-AUD-ABC-01": "decdc68881913b4866d215e7c17e030d8eb02a129debc5faae6be8600f6abb40",
+    "DL-A0-01-AUD-PHON-01": "e1d77d40b10042872c5a5fdec61e54b2ef0e070ea69cdcff7cb092cbc545b473",
+    "DL-A0-01-AUD-WORDS-01": "4f3e62388e441fba8e00e8e7e624c7a4f824148c7a136959bc3a181f8b2e74b5"
+  }
+}
