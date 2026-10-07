@@ -24467,6 +24467,96 @@
         }
       ],
       "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-10-AUD-PHR-01",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "title": "مفردات الإعلام والتواصل الرسمي",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-10-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Redaktion, die Redaktionen. Die Meldung, die Meldungen. Der Beitrag, die Beiträge. Die Quelle, die Quellen. Die Anfrage, die Anfragen. Die Auskunft, die Auskünfte. Die Ausgabe, die Ausgaben. Das Archiv, die Archive. Die Rückfrage, die Rückfragen. Die Berichtigung, die Berichtigungen. Mitteilen, teilt mit. Bestätigen, bestätigt. Sich beziehen auf, bezieht sich. Veröffentlichen, veröffentlicht. Aktuell. Zuverlässig. Im Voraus.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-10-AUD-MODEL-01",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "title": "أمثلة الأسئلة غير المباشرة",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-10-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ist der Beitrag online? Könnten Sie mir sagen, ob der Beitrag online ist? Wann erscheint die nächste Ausgabe? Ich möchte wissen, wann die nächste Ausgabe erscheint. Welche Quellen nennt der Bericht? Könnten Sie mir mitteilen, welche Quellen der Bericht nennt?",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer"
+    },
+    {
+      "assetId": "DL-B1-10-AUD-DLG-01",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "title": "حوار: Leila مع المحرر",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-01.mp3",
+          "speaker": "Leila",
+          "text": "Ich bereite einen kurzen Beitrag über eine Ausstellung vor.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-02.mp3",
+          "speaker": "Redakteur",
+          "text": "Welche Informationen fehlen Ihnen noch?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-03.mp3",
+          "speaker": "Leila",
+          "text": "Können Sie mir sagen, wann die Ausstellung eröffnet wird?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-04.mp3",
+          "speaker": "Redakteur",
+          "text": "Sie wird am Samstag eröffnet.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-05.mp3",
+          "speaker": "Leila",
+          "text": "Danke. Ich möchte auch wissen, ob die Eintrittskarten online erhältlich sind.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-06.mp3",
+          "speaker": "Redakteur",
+          "text": "Ja, das steht auf der Webseite des Kulturzentrums.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-07.mp3",
+          "speaker": "Leila",
+          "text": "Könnten Sie mir außerdem mitteilen, welche Quellen im Bericht genannt werden?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-10-AUD-DLG-01-08.mp3",
+          "speaker": "Redakteur",
+          "text": "Natürlich. Ich schicke Ihnen die Angaben heute Nachmittag.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer"
     }
   ]
 }
