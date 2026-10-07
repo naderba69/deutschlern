@@ -4364,6 +4364,23 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "4) نص قراءة أصلي: إرشادات برنامج خيالي"
+    },
+    {
+      "assetId": "DL-B2-06-AUD-LST-01",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "title": "استماع: خطوات التقديم واتخاذ قرار دراسي",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-06-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Die Studienberaterin erklärt, dass die Bewerberinnen zuerst die Voraussetzungen prüfen sollen. Danach müssen sie eine Bewerbung einreichen und einen Antrag auf Zulassung stellen. Wer noch unsicher ist, kann verschiedene Studiengänge in Betracht ziehen. Im Beratungsgespräch werden Fragen geklärt, damit die Interessierten eine gut informierte Entscheidung treffen können. Die genauen Bedingungen stehen in der fiktiven Ausschreibung.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ],
   "selectedVoiceIds": [
