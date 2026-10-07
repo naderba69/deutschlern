@@ -65,6 +65,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B2-07": "b2-07-travel-experiences-prepositional-relatives",
     "DL-B2-08": "b2-08-food-nutrition-data-passives",
     "DL-B2-09": "b2-09-business-marketing-employment-prepositions",
+    "DL-B2-10": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 

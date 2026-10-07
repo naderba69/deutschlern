@@ -4738,6 +4738,121 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-10-AUD-PHR-01",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "title": "مفردات التقنية والاحتمالات",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-10-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Update, die Updates. Die Schnittstelle, die Schnittstellen. Die Einstellung, die Einstellungen. Der Zugriff, die Zugriffe. Die Störung, die Störungen. Die Ausfallzeit, die Ausfallzeiten. Die Funktion, die Funktionen. Die Voraussetzung, die Voraussetzungen. Kompatibel. Wahrscheinlich. Vermutlich. Möglicherweise. Unwahrscheinlich. Auftreten, tritt auf. Überprüfen, überprüft. Zurücksetzen, setzt zurück. Sich wünschen, wünscht sich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات التقنية والاحتمالات"
+    },
+    {
+      "assetId": "DL-B2-10-AUD-MODEL-01",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "title": "نماذج الفرضيات والأمنيات في الحاضر والماضي",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-10-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Wenn die App offline wäre, könnte sie trotzdem Daten speichern. Ich wünschte, das Gerät wäre mit allen Systemen kompatibel. Wenn das Team den Fehler früher entdeckt hätte, hätte es das Update verschoben. Wenn die Verbindung stabiler gewesen wäre, wäre die Datei schneller übertragen worden. Hätte das Team den Fehler früher entdeckt, hätte es das Update verschoben.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) الفرضيات غير الحقيقية والأمنيات بـKonjunktiv II"
+    },
+    {
+      "assetId": "DL-B2-10-AUD-DLG-01",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "title": "حوار: Lea وMurat بعد اختبار تطبيق خيالي",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-10-AUD-DLG-01-01.mp3",
+          "speaker": "Lea",
+          "text": "Was ist beim letzten Test passiert?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-10-AUD-DLG-01-02.mp3",
+          "speaker": "Murat",
+          "text": "Die Schnittstelle war nicht kompatibel. Wenn wir das früher überprüft hätten, hätten wir den Fehler vielleicht vor dem Test entdeckt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-10-AUD-DLG-01-03.mp3",
+          "speaker": "Lea",
+          "text": "Und was wäre dann anders gewesen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-10-AUD-DLG-01-04.mp3",
+          "speaker": "Murat",
+          "text": "Wir hätten das Update später freigegeben.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-10-AUD-DLG-01-05.mp3",
+          "speaker": "Lea",
+          "text": "Wünschst du dir, dass das Programm einfacher zu bedienen wäre?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-10-AUD-DLG-01-06.mp3",
+          "speaker": "Murat",
+          "text": "Ja. Es könnte sein, dass eine klarere Einstellung die Nutzung erleichtert. Aber das müssten wir erst prüfen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي بعد اختبار تطبيق خيالي"
+    },
+    {
+      "assetId": "DL-B2-10-AUD-READ-01",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "title": "قراءة: مراجعة إصدار تجريبي خيالي",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-10-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ein fiktives Entwicklungsteam testet eine neue Planungs-App. Beim ersten Versuch traten Störungen auf, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war. In der Rückschau schreibt das Team: „Wenn wir die Einstellungen früher auf mehreren Geräten überprüft hätten, hätten wir die Störung wahrscheinlich vor der Vorführung bemerkt.“ Das Update wurde noch nicht veröffentlicht. Eine Entwicklerin wünscht sich, dass die Testphase länger gewesen wäre. Das Team vermutet, ein klarer Hinweis auf die betroffene Funktion könnte die Fehlersuche erleichtern. Sicher ist das jedoch nicht; weitere Tests werden nötig sein. Die Beispiele in diesem Text sind erfunden.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: مراجعة إصدار تجريبي"
+    },
+    {
+      "assetId": "DL-B2-10-AUD-LST-01",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "title": "استماع: نسخة احتياطية وأمنية توافق الأجهزة",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-10-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Wenn ich früher eine Sicherungskopie erstellt hätte, hätte ich die Datei nach dem Gerätefehler leichter wiederherstellen können. Jetzt wünsche ich mir, dass alle Geräte dieselbe Schnittstelle hätten. Vielleicht wird die nächste Version kompatibler sein. Es könnte aber auch sein, dass ältere Geräte trotzdem nicht unterstützt werden. Darum sollte man die Angaben vor einer Änderung überprüfen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ],
   "selectedVoiceIds": [
