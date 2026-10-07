@@ -77,8 +77,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 207, "all audio assets through B2.10 must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 453, "the audio manifest must contain all four hundred fifty-three clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 211, "all audio assets through B2.11 must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 463, "the audio manifest must contain all four hundred sixty-three clips");
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 53, "the course bundle must carry all fifty-three ready lesson assessments through B2.12");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 530, "the course bundle must carry all five hundred thirty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 106, "the course bundle must carry all one hundred six lesson performance tasks");
@@ -135,6 +135,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-B2-08": "b2-08-food-nutrition-data-passives",
     "DL-B2-09": "b2-09-business-marketing-employment-prepositions",
     "DL-B2-10": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+    "DL-B2-11": "b2-11-humans-nature-environment-nominalization",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -559,7 +560,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b1HealthAudioMarkup, /نهائي/);
   assert.doesNotMatch(b1HealthAudioMarkup, /للمراجعة/);
   assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'ready').length", context), 137, "previously approved audio assets must retain their ready status");
-  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 70, "B1.9 through B2.10 assets must await user review while remaining playable");
+  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 74, "B1.9 through B2.11 assets must await user review while remaining playable");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => ['ready', 'generated_pending_acoustic_review'].includes(asset.status))", context), true, "audio assets must have a valid approved or preview-pending status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -2148,7 +2149,68 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.ok(b2EnvironmentAssessment.performanceTasks.every((task) => /خمس جمل|خمس إلى ست جمل/.test(task.prompt) && /صيغتين اسميتين/.test(task.prompt) && /شفهيًا/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 180), "B2.11 tasks must state the output, two nominal forms, oral choice, and solo read-aloud option");
   assert.deepEqual(b2EnvironmentAssessment.performanceTasks.find((task) => task.id === "DL-B2-11-P01").sourceTaskIds, ["DL-B2-11-T08"], "B2.11 P01 must link directly to T08");
   assert.deepEqual(b2EnvironmentAssessment.performanceTasks.find((task) => task.id === "DL-B2-11-P02").sourceTaskIds, ["DL-B2-11-T05", "DL-B2-11-T06", "DL-B2-11-T08"], "B2.11 P02 must link the source reading, written listening transcript, and T08");
-  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b2EnvironmentAssessment.id), false, "B2.11 assessment must remain independent of generated audio");
+  const environmentAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2EnvironmentAssessment.id);
+  assert.equal(environmentAssets.length, 4);
+  assert.equal(environmentAssets.reduce((n, asset) => n + asset.segments.length, 0), 10);
+  assert.deepEqual(environmentAssets.map((asset) => asset.kind), ["phrase_bank", "model_sentences", "dialogue", "reading"]);
+  assert.ok(environmentAssets.every((asset) => asset.status === "generated_pending_acoustic_review" && asset.transcriptPolicy === "offer"));
+  const environmentHeadings = b2EnvironmentSource.split(/\r?\n/).filter((line) => line.startsWith("## ")).slice(0, 4).map((line) => line.slice(3));
+  assert.deepEqual(environmentAssets.map((asset) => asset.sectionHeading), environmentHeadings);
+  const environmentSections = environmentHeadings.map((heading) => b2EnvironmentSource.split("## " + heading)[1].split("\n## ")[0]);
+  const environmentTerms = environmentSections[0].split(/\r?\n/).filter((line) => line.startsWith("| ")).slice(1).map((line) => line.split("|").slice(1, 3).map((cell) => cell.trim()));
+  const environmentPhrase = environmentTerms.map(([term, form]) => {
+    const parts = term.split(" / ").map((part) => part[0].toUpperCase() + part.slice(1));
+    return parts.join(". ") + (form === "—" ? "" : ", " + form) + ".";
+  }).join(" ");
+  assert.equal(environmentAssets[0].segments[0].text, environmentPhrase, "all source vocabulary forms must be preserved");
+  const environmentNominals = environmentSections[1].split(/\r?\n/).filter((line) => line.startsWith("| **")).map((line) => line.split("|")[2].trim().replaceAll("**", "").replace(" …", "."));
+  const environmentDerivations = [...environmentSections[1].matchAll(/\*\*([^*]+ → [^*]+)\*\*/g)].map((match) => {
+    const text = match[1].replace(" → ", ", ");
+    return text[0].toUpperCase() + text.slice(1) + ".";
+  });
+  assert.equal(environmentNominals.length, 4);
+  assert.equal(environmentDerivations.length, 3);
+  assert.equal(environmentAssets[1].segments[0].text, [...environmentNominals, ...environmentDerivations].join(" "));
+  const environmentDialogue = [...b2EnvironmentSource.matchAll(/^\*\*(Amir|Lea):\*\* (.+?)\s*$/gm)].map((match) => ({speaker: match[1], text: match[2]}));
+  assert.equal(environmentDialogue.length, 7);
+  assert.deepEqual(environmentAssets[2].segments.map(({speaker, text}) => ({speaker, text})), environmentDialogue);
+  const earlierEnvironmentLea = courseData.audioAssets.find((asset) => asset.assetId === "DL-A2-02-AUD-DLG-01").segments.find((segment) => segment.speaker === "Lea");
+  for (const segment of environmentAssets[2].segments) assert.equal(segment.voiceId, segment.speaker === "Lea" ? earlierEnvironmentLea.voiceId : "voice-03");
+  for (const index of [0, 1, 3]) assert.equal(environmentAssets[index].segments[0].voiceId, "voice-02");
+  for (const index of [3]) {
+    assert.equal(environmentAssets[index].segments.length, 1);
+    assert.equal(environmentAssets[index].segments[0].text, environmentSections[index].split(/\r?\n/).find((line) => line.startsWith("> ")).slice(2).trim(), "full B2.11 reading script must match source verbatim");
+  }
+  const environmentLayout = vm.runInContext("renderLessonAudioContent(getLessonsInLevel('B2')[10])", context);
+  assert.equal(environmentLayout.audioPanel, "");
+  for (const asset of environmentAssets) {
+    const start = environmentLayout.contentHtml.indexOf(`<h2 dir="auto">${asset.sectionHeading}</h2>`);
+    assert.ok(start >= 0);
+    const next = environmentLayout.contentHtml.indexOf('<h2 dir="auto">', start + 1);
+    const section = environmentLayout.contentHtml.slice(start, next < 0 ? undefined : next);
+    assert.ok(section.includes(`data-audio-id="${asset.assetId}"`));
+    assert.equal(environmentLayout.contentHtml.split(`data-audio-id="${asset.assetId}"`).length - 1, 2);
+    assert.match(section, /للمراجعة/);
+    assert.doesNotMatch(section, /is-final/);
+    for (const rate of [1, 0.8]) {
+      vm.runInContext(`playAudioAsset('${asset.assetId}', ${rate})`, context);
+      for (const segment of asset.segments) {
+        const audio = FakeAudio.instances.at(-1);
+        assert.equal(audio.src, segment.src);
+        assert.equal(audio.started, true);
+        assert.equal(audio.playbackRate, rate);
+        audio.emit('ended');
+      }
+      vm.runInContext('stopAudioPlayback()', context);
+    }
+  }
+  assert.doesNotMatch(environmentLayout.contentHtml, /data-audio-id="DL-B2-0[1-9]-/);
+  assert.ok(b2EnvironmentAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), "B2.11 assessment remains independent of optional audio");
+  assert.match(environmentAssets[3].segments[0].text, /könnten neue Rückzugsorte/);
+  assert.match(environmentAssets[3].segments[0].text, /noch keine endgültige Entscheidung/);
+  assert.match(environmentAssets[3].segments[0].text, /fiktiv und stellen keinen Plan für einen realen Ort dar/);
+  assert.equal(environmentAssets.some((asset) => asset.kind === "listening"), false, "B2.11 listening must wait for the next turn's generation budget");
+  assert.doesNotMatch(environmentLayout.contentHtml, /data-audio-id="DL-B2-10-/);
   assert.match(b2EnvironmentSource, /اكتب أو قدّم فقرة عن إجراء بيئي/);
   assert.match(b2EnvironmentSource, /خمس جمل ألمانية على الأقل/);
   assert.match(b2EnvironmentSource, /أو حضّرها وقدّمها شفهيًا/);
@@ -2455,7 +2517,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), true, "B2.12 must open after B2.11 mastery because its assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[11].id, "B2.12 must be the next required step after mastering B2.11");
 
-  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B2.10 (207 assets/453 clips; 137 ready and seventy awaiting review; B2.10 has five assets/ten clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.2 Konjunktiv I/source-attribution criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.3 passive-with-modals criteria and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.4 Partizip I/II adjective criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.5 cause/effect and Genitiv criteria, corrected Q03 in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.6 academic Nomen-Verb-Verbindungen criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.7 prepositional-relative-clause criteria, corrected P02 departure in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.8 Vorgangspassiv/Zustandspassiv criteria and section-mapped vocabulary/models/six-turn dialogue/reading with spoken fictional table and disclaimer/listening, B2.9 wo(r)/da(r)-preposition criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.10 present/past hypotheses, wishes and possibility with section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.11 nominal style, and B2.12 media attribution and reported speech.");
+  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through partial B2.11 (211 assets/463 clips; 137 ready and 74 awaiting review; B2.11 has four assets/ten clips; listening remains), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.2 Konjunktiv I/source-attribution criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.3 passive-with-modals criteria and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.4 Partizip I/II adjective criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.5 cause/effect and Genitiv criteria, corrected Q03 in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.6 academic Nomen-Verb-Verbindungen criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.7 prepositional-relative-clause criteria, corrected P02 departure in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.8 Vorgangspassiv/Zustandspassiv criteria and section-mapped vocabulary/models/six-turn dialogue/reading with spoken fictional table and disclaimer/listening, B2.9 wo(r)/da(r)-preposition criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.10 present/past hypotheses, wishes and possibility with section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.11 nominal style, and B2.12 media attribution and reported speech.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

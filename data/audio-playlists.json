@@ -4853,6 +4853,110 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-11-AUD-PHR-01",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "title": "مفردات الإنسان والطبيعة",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-11-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Schutz. Die Artenvielfalt. Die Renaturierung, die Renaturierungen. Die Verringerung, die Verringerungen. Die Wiederherstellung, die Wiederherstellungen. Die Flächennutzung, die Flächennutzungen. Die Auswirkung, die Auswirkungen. Die Maßnahme, die Maßnahmen. Die Beteiligung, die Beteiligungen. Der Lebensraum, die Lebensräume. Der Verbrauch. Schützen, schützt. Wiederherstellen, stellt wieder her. Beeinträchtigen, beeinträchtigt. Abwägen, wägt ab. Nachhaltig. Gemeinsam.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الإنسان والطبيعة"
+    },
+    {
+      "assetId": "DL-B2-11-AUD-MODEL-01",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "title": "نماذج الصياغة الاسمية والاشتقاق",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-11-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Beim Schutz von Lebensräumen. Durch die Verringerung des Verbrauchs. Aufgrund der Wiederherstellung der Ufer. Bei der Beteiligung der Bevölkerung. Planen, das Planen. Schützen, das Schützen. Verringern, die Verringerung.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) تحويل الفعل أو الجملة إلى اسم"
+    },
+    {
+      "assetId": "DL-B2-11-AUD-DLG-01",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "title": "حوار: Amir وLea في اجتماع حيّ",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-01.mp3",
+          "speaker": "Amir",
+          "text": "Was wurde beim Treffen zur Renaturierung des Flusses besprochen?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-02.mp3",
+          "speaker": "Lea",
+          "text": "Es ging um den Schutz der Ufer und um die Nutzung des öffentlichen Weges.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-03.mp3",
+          "speaker": "Amir",
+          "text": "Welche Vorteile hat die Wiederherstellung der natürlichen Ufer?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-04.mp3",
+          "speaker": "Lea",
+          "text": "Sie kann zum Erhalt von Lebensräumen beitragen. Gleichzeitig müssen die Bedürfnisse der Menschen berücksichtigt werden.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-05.mp3",
+          "speaker": "Amir",
+          "text": "Wie können Anwohnerinnen beteiligt werden?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-06.mp3",
+          "speaker": "Lea",
+          "text": "Durch regelmäßige Gespräche und durch die gemeinsame Prüfung verschiedener Vorschläge.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-11-AUD-DLG-01-07.mp3",
+          "speaker": "Amir",
+          "text": "Dann sollten die Auswirkungen jeder Maßnahme verständlich erklärt werden.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في اجتماع حيّ"
+    },
+    {
+      "assetId": "DL-B2-11-AUD-READ-01",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "title": "قراءة: اقتراح بيئي خيالي في Flussbogen",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-11-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Im fiktiven Viertel Flussbogen wird über die Renaturierung eines Uferabschnitts gesprochen. Ziel des Vorschlags ist der Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss. Durch die Wiederherstellung eines Teils des Ufers könnten neue Rückzugsorte für Pflanzen und Tiere entstehen. Gleichzeitig muss die Nutzung des Weges durch Anwohnerinnen und Besucher berücksichtigt werden. Bei der Planung wurden mehrere Gespräche mit der Bevölkerung geführt. Aufgrund der unterschiedlichen Bedürfnisse wird noch keine endgültige Entscheidung getroffen. Vor dem Beginn der Arbeiten sollen die Auswirkungen auf Menschen und Natur geprüft und öffentlich erklärt werden. Die Beispiele in diesem Text sind fiktiv und stellen keinen Plan für einen realen Ort dar.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: اقتراح بيئي خيالي"
     }
   ],
   "selectedVoiceIds": [
