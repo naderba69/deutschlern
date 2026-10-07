@@ -135,6 +135,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons = prior;}
   })()`, context), true, 'reject v1, keep its record, and accept current-version mastery for progression');
 
+  // CR3: core-number scope, explicit written/oral evidence, and v1/v2 invalidation.
+  const reviewedNumbers = courseData.lessons.find(lesson => lesson.id === 'a0-03-numbers-personal-info');
+  assert.equal(reviewedNumbers.assessment.version, 'a0-03-v3');
+  assert.deepEqual(reviewedNumbers.quiz[5].sourceTaskIds, ['DL-A0-03-T02']);
+  assert.equal(reviewedNumbers.performanceTasks[0].selfCheck.minimumResponseCharacters, 120);
+  assert.equal(reviewedNumbers.performanceTasks[1].selfCheck.minimumResponseCharacters, 50);
+  assert.equal(vm.runInContext(`(() => {
+    const tasks = course.lessons[2].performanceTasks;
+    const responses = [
+      'Wie heißt du? Ich heiße Salma. Wie alt bist du? Ich bin 18 Jahre alt. Woher kommst du? Ich komme aus Tunesien. Wo wohnst du? Ich wohne in Nabeul.\\nIch heiße Salma.\\nIch komme aus Tunesien.\\nIch wohne in Nabeul.\\nIch bin 18 Jahre alt.',
+      'Wie ist deine Telefonnummer? Meine Nummer ist 26 41 08. zwei sechs vier eins null acht'
+    ];
+    return tasks.every((task, i) => {
+      const evidence = {response:responses[i], checks:{taskCompletion:true, meaningClarity:true, targetSkill:true}, spokenAloud:true};
+      return performanceTaskEvidenceReady(task, evidence)
+        && !performanceTaskEvidenceReady(task, {...evidence, spokenAloud:false})
+        && !performanceTaskEvidenceReady(task, {...evidence, response:'26 41 08'})
+        && task.selfCheck.requiredChecks.every(key => !performanceTaskEvidenceReady(task, {...evidence, checks:{...evidence.checks, [key]:false}}));
+    });
+  })()`, context), true, 'both A0.3 tasks need adequate drafts, all self-checks and speech confirmation, not audio uploads');
+  assert.equal(vm.runInContext(`(() => {
+    const prior = state.completedLessons;
+    try {
+      return ['a0-03-v1', 'a0-03-v2'].every(version => {
+        const oldRecord = {score:100, mastered:true, goalMet:true, performanceEvidenceCompleted:true, assessmentVersion:version};
+        state.completedLessons = Object.fromEntries(course.lessons.slice(0,2).map(l => [l.id, {...oldRecord, assessmentVersion:l.assessment.version}]));
+        state.completedLessons[course.lessons[2].id] = oldRecord;
+        const rejected = !isLessonMastered(course.lessons[2]) && !isLessonAccessible(course.lessons[3]) && state.completedLessons[course.lessons[2].id] === oldRecord;
+        state.completedLessons[course.lessons[2].id] = {...oldRecord, assessmentVersion:'a0-03-v3'};
+        return rejected && isLessonAccessible(course.lessons[3]);
+      });
+    } finally { state.completedLessons = prior; }
+  })()`, context), true, 'keep old A0.3 records but require v3 before A0.4');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

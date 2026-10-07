@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a0-03-v2",
+    "version": "a0-03-v3",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,10 +12,11 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة والصيغ الألمانية وربط الأهداف ومهام المصدر ضمن هذه الدفعة.",
-      "يُنفذ الأداء كتقييم ذاتي محلي بلا خدمة مدفوعة أو تسجيل صوتي؛ لا يدّعي التطبيق الحكم الآلي على النطق.",
-      "أُجّلت ملفات MP3 إلى ما بعد إنتاج المحتوى؛ صيغت مهام هذه النسخة لتنجز دون تسجيلات.",
-      "فُصل الهدف الأساسي 0–20 عن توسعة الأعداد المركبة؛ جميع أسئلة التقييم تقيس الأعداد الأساسية فقط."
+      "CR3: مراجعة نصية بالمراجع لكل وحدة في data/reviews/a0-03-review.json؛ لا اعتماد سمعي جديد ولا شهادة إتقان مستقلة.",
+      "الأساس 0–20 وقراءة الخانات منفردة؛ التوسعة اختيارية ولا تدخل في مفاتيح الاختيارات أو مشتتاتها.",
+      "Q06 مرتبط الآن بتمرين T02 بعد إضافة neunzehn؛ صُححت بيانات ربط الفهرس أيضًا.",
+      "الأداء مسودة مكتوبة وقراءة بصوت مرتفع بتأكيد ذاتي محلي، دون تسجيل أو تصحيح آلي للنطق أو اللغة. الحد الأدنى للطول يمنع الرد الفارغ أو شديد القصر فقط.",
+      "الصوت الموجود أصلان وسبعة مقاطع، محفوظان دون تعديل أو إعادة توليد؛ التسجيل العددي يشمل التوسعة الاختيارية أيضًا."
     ]
   },
   "quiz": [
@@ -34,11 +35,11 @@
       "prompt": "ما كتابة العدد 3 بالألمانية؟",
       "options": [
         "drei",
-        "dreißig",
+        "vier",
         "dreizehn"
       ],
       "answerIndex": 0,
-      "explanation": "3 هو drei؛ dreißig تعني 30 وdreizehn تعني 13."
+      "explanation": "3 هو drei؛ vier تعني 4 وdreizehn تعني 13."
     },
     {
       "id": "DL-A0-03-Q02",
@@ -96,12 +97,12 @@
       ],
       "prompt": "ما كتابة العدد 16؟",
       "options": [
-        "sechzig",
+        "siebzehn",
         "sechs",
         "sechzehn"
       ],
       "answerIndex": 2,
-      "explanation": "16 هو sechzehn؛ انتبه إلى اختلافه عن sechzig، أي 60."
+      "explanation": "16 هو sechzehn؛ sechs تعني 6 وsiebzehn تعني 17."
     },
     {
       "id": "DL-A0-03-Q05",
@@ -119,15 +120,15 @@
       "options": [
         "siebzehn",
         "siebenzehn",
-        "siebzig"
+        "achtzehn"
       ],
       "answerIndex": 0,
-      "explanation": "17 تُكتب siebzehn؛ أما siebzig فتعني 70."
+      "explanation": "17 تُكتب siebzehn، لا siebenzehn؛ أما achtzehn فتعني 18."
     },
     {
       "id": "DL-A0-03-Q06",
       "sourceTaskIds": [
-        "DL-A0-03-T01"
+        "DL-A0-03-T02"
       ],
       "objectiveIds": [
         "DL-A0-03-G01"
@@ -140,10 +141,10 @@
       "options": [
         "9",
         "19",
-        "90"
+        "18"
       ],
       "answerIndex": 1,
-      "explanation": "neunzehn تعني 19؛ neun هي 9 وneunzig هي 90."
+      "explanation": "neunzehn تعني 19؛ neun هي 9 وachtzehn هي 18."
     },
     {
       "id": "DL-A0-03-Q07",
@@ -164,7 +165,7 @@
         "Woher kommst du?"
       ],
       "answerIndex": 1,
-      "explanation": "Wie alt bist du؟ تعني كم عمرك؟"
+      "explanation": "Wie alt bist du? تعني: كم عمرك؟"
     },
     {
       "id": "DL-A0-03-Q08",
@@ -185,7 +186,7 @@
         "Woher kommst du?"
       ],
       "answerIndex": 2,
-      "explanation": "Woher kommst du؟ تسأل عن بلد الأصل أو المكان الذي يأتي منه الشخص."
+      "explanation": "Woher kommst du? تسأل عن بلد الأصل أو المكان الذي يأتي منه الشخص، لا مكان السكن الحالي بالضرورة."
     },
     {
       "id": "DL-A0-03-Q09",
@@ -202,11 +203,11 @@
       "prompt": "في تدريب الهاتف نقرأ 26 41 08 رقمًا رقمًا. ما بدايته؟",
       "options": [
         "zwei sechs",
-        "sechsundzwanzig",
-        "zweiundsechs"
+        "sechs zwei",
+        "zwei acht"
       ],
       "answerIndex": 0,
-      "explanation": "عند قراءة الخانات منفردة نقول zwei sechs، لا العدد المركب sechsundzwanzig."
+      "explanation": "نقرأ أول خانتين بالترتيب: zwei ثم sechs. لا نقرأ المجموعة 26 كعدد واحد في هذا التدريب."
     },
     {
       "id": "DL-A0-03-Q10",
@@ -244,11 +245,11 @@
         "speaking",
         "writing"
       ],
-      "prompt": "باستخدام بيانات خيالية أو بيانات تختار مشاركتها، اسأل وأجب عن الاسم والعمر وبلد الأصل والسكن، ثم اكتب بطاقة التعارف.",
+      "prompt": "استخدم شخصية خيالية باسم تختاره وعمر 18 أو 20، وبلد الأصل Tunesien والسكن Nabeul. اكتب في خانة الإجابة أربعة أسئلة بأجوبتها عن الاسم والعمر والأصل والسكن، ثم بطاقة من أربعة أسطر للشخصية نفسها. أدِّ الدورين بصوت مرتفع بنفسك أو مع شريك؛ لا تحتاج إلى كشف بياناتك الحقيقية.",
       "criteria": {
-        "taskCompletion": "يسأل ويجيب عن الحقول الأربعة ويكمل البطاقة.",
-        "meaningClarity": "تطابق الإجابات الأسئلة ويمكن فهم البيانات المقصودة.",
-        "targetSkill": "يستعمل Wie heißt/Wie alt/Woher/Wo wohnst والجمل Ich heiße/Ich bin/Ich komme/Ich wohne. لا تشارك رقمًا حقيقيًا إن لم ترغب."
+        "taskCompletion": "تتضمن المسودة أربعة أسئلة وأجوبتها ثم بطاقة من أربعة أسطر؛ وقد قرأت السؤال والجواب لكل حقل بصوت مرتفع.",
+        "meaningClarity": "الإجابة توافق سؤالها، والاسم والعمر والأصل والسكن متسقة بين المقابلة والبطاقة.",
+        "targetSkill": "أستخدم Wie heißt du? / Wie alt bist du? / Woher kommst du? / Wo wohnst du? وأجيب بـ Ich heiße / Ich bin … Jahre alt / Ich komme aus Tunesien / Ich wohne in Nabeul."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -258,7 +259,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 120,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -276,11 +277,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "اقرأ الرقم التدريبي 26 41 08 من بطاقة الدرس. اكتب كل خانة بالكلمة الألمانية المناسبة، ثم اقرأ الخانات منفردة بصوت مرتفع.",
+      "prompt": "اكتب السؤال Wie ist deine Telefonnummer? والجواب Meine Nummer ist 26 41 08. ثم اكتب أسماء الخانات الست بالألمانية بالترتيب. اقرأ السؤال والجواب بصوت مرتفع، خانة خانة. هذا تسلسل تدريبي فقط؛ لا تدخل بيانات حقيقية ولا يلزم تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "يكتب الخانات بالترتيب ويعيد قراءتها منفردة.",
-        "meaningClarity": "يمكن مطابقة الرقم المكتوب بما تعرضه بطاقة التدريب.",
-        "targetSkill": "يميّز أسماء الأعداد ولا يحول الرقم إلى صيغة مركبة غير مطلوبة."
+        "taskCompletion": "كتبت السؤال والجواب بالأرقام وأسماء الخانات الست، ثم قرأت السؤال والجواب بصوت مرتفع.",
+        "meaningClarity": "حافظت على ترتيب 2، 6، 4، 1، 0، 8، بما فيه الصفر قبل الخانة الأخيرة.",
+        "targetSkill": "أستخدم Wie ist deine Telefonnummer? / Meine Nummer ist … وأقرأ zwei – sechs – vier – eins – null – acht منفردة؛ هذا تأكيد ذاتي لا حكم آلي على النطق."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -290,7 +291,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 12,
+        "minimumResponseCharacters": 50,
         "speakAloud": true,
         "audioRequired": false
       }

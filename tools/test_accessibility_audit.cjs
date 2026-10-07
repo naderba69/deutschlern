@@ -42,6 +42,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'vocabulary-revealed', width);
   await page.evaluate(() => startA0GateQuiz());
   await scan(page, 'A0-gate', width);
+  // CR3: audit the revised lesson tables and both actual performance-task forms.
+  await page.evaluate(() => openLesson('a0-03-numbers-personal-info'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A0.3-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A0.3-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
@@ -64,7 +70,7 @@ async function auditScreens(browser, base, width) {
     for (const report of reports) console.log(`${report.width} ${report.name}: ${report.violations.length} violated rules; manual-review flags: ${JSON.stringify(report.incomplete)}`);
     const failures = reports.flatMap(r => r.violations.map(v => `${r.width}/${r.name}: ${v.id} (${v.nodes.length} nodes)`));
     assert.deepEqual(failures, [], 'automated accessibility violations; set A11Y_REPORT for node details');
-    console.log(`PASS: ${reports.length} representative screen states, no violations of selected automated rules. Incomplete checks still require human review.`);
+    console.log(`PASS: ${reports.length} representative screen states, no violations of selected automated rules. Incomplete checks remain unresolved by this automated audit.`);
   } finally {
     if (browser) await browser.close();
     await new Promise(resolve => server.close(resolve));
