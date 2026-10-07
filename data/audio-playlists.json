@@ -4611,6 +4611,99 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-09-AUD-PHR-01",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "title": "مفردات الشركات والتسويق والعمل",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-09-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Unternehmen, die Unternehmen. Der Umsatz, die Umsätze. Die Nachfrage. Die Zielgruppe, die Zielgruppen. Die Werbekampagne, die Werbekampagnen. Die Lieferkette, die Lieferketten. Der Wettbewerb. Die Fachkraft, die Fachkräfte. Die Stellenanzeige, die Stellenanzeigen. Die Arbeitsbedingung, die Arbeitsbedingungen. Sich spezialisieren auf, Akkusativ, spezialisiert sich. Wert legen auf, Akkusativ, legt Wert. Werben mit, Dativ, wirbt. Abhängen von, Dativ, hängt ab. Sich richten an, Akkusativ, richtet sich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الشركات والتسويق والعمل"
+    },
+    {
+      "assetId": "DL-B2-09-AUD-MODEL-01",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "title": "نماذج السؤال والجواب مع wo(r)- وda(r)-",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-09-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Worauf legt das Unternehmen Wert? Darauf, dass die Arbeitsbedingungen transparent sind. Womit wirbt die Kampagne? Damit, dass der Service leicht zugänglich ist. Wovon hängt der Erfolg ab? Davon, ob die Zielgruppe das Angebot versteht. Worüber informiert die Stellenanzeige? Darüber, welche Aufgaben übernommen werden. Mit wem spricht die Personalchefin? Mit einer Bewerberin. Das Unternehmen achtet darauf, dass die Anzeige verständlich ist. Sich spezialisieren auf. Abhängen von. Wert legen auf.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) السؤال والجواب بـwo(r)- وda(r)- المركّبين"
+    },
+    {
+      "assetId": "DL-B2-09-AUD-DLG-01",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "title": "حوار: Mara وJonas عن حملة توظيف",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-01.mp3",
+          "speaker": "Mara",
+          "text": "Worauf konzentriert sich die neue Kampagne?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-02.mp3",
+          "speaker": "Jonas",
+          "text": "Sie richtet sich an Fachkräfte, die flexible Arbeitsbedingungen suchen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-03.mp3",
+          "speaker": "Mara",
+          "text": "Womit wirbt das Unternehmen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-04.mp3",
+          "speaker": "Jonas",
+          "text": "Damit, dass es klare Aufgaben und ein transparentes Auswahlverfahren anbietet.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-05.mp3",
+          "speaker": "Mara",
+          "text": "Und worauf legt die Personalabteilung Wert?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-06.mp3",
+          "speaker": "Jonas",
+          "text": "Darauf, dass Bewerberinnen ihre Erfahrungen nachvollziehbar darstellen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-07.mp3",
+          "speaker": "Mara",
+          "text": "Wovon hängt der Erfolg der Kampagne ab?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-09-AUD-DLG-01-08.mp3",
+          "speaker": "Jonas",
+          "text": "Davon, ob die Anzeige die richtige Zielgruppe erreicht.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي عن حملة توظيف"
     }
   ],
   "selectedVoiceIds": [
