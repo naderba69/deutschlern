@@ -25303,6 +25303,23 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "4) نص قراءة أصلي"
+    },
+    {
+      "assetId": "DL-B2-04-AUD-LST-01",
+      "lessonId": "b2-04-cities-housing-participles",
+      "title": "استماع: جولة في مساكن مُرمّمة وقيد الإنشاء",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-04-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Bei der Führung wurde zuerst das sanierte Altbauhaus gezeigt. Danach gingen wir zu den derzeit entstehenden Wohnungen. Eine gut gedämmte Wohnung war schon fertig, eine barrierefrei geplante Wohnung wurde noch eingerichtet. Die Architektin erklärte, dass die steigenden Nebenkosten im Informationsblatt stehen. Besonders gefiel mir der gemeinschaftlich genutzte Innenhof.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }
