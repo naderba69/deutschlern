@@ -77,8 +77,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 200, "all audio assets through partial B2.9 must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 441, "the audio manifest must contain all four hundred forty-one clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 202, "all audio assets through B2.9 must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 443, "the audio manifest must contain all four hundred forty-three clips");
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 53, "the course bundle must carry all fifty-three ready lesson assessments through B2.12");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 530, "the course bundle must carry all five hundred thirty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 106, "the course bundle must carry all one hundred six lesson performance tasks");
@@ -558,7 +558,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b1HealthAudioMarkup, /نهائي/);
   assert.doesNotMatch(b1HealthAudioMarkup, /للمراجعة/);
   assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'ready').length", context), 137, "previously approved audio assets must retain their ready status");
-  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 63, "B1.9 through partial B2.9 assets must await user review while remaining playable");
+  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 65, "B1.9 through B2.9 assets must await user review while remaining playable");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => ['ready', 'generated_pending_acoustic_review'].includes(asset.status))", context), true, "audio assets must have a valid approved or preview-pending status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -1968,11 +1968,11 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.deepEqual(b2MarketingAssessment.performanceTasks.find((task) => task.id === "DL-B2-09-P01").sourceTaskIds, ["DL-B2-09-T08"], "B2.9 P01 must link directly to T08");
   assert.deepEqual(b2MarketingAssessment.performanceTasks.find((task) => task.id === "DL-B2-09-P02").sourceTaskIds, ["DL-B2-09-T05", "DL-B2-09-T06", "DL-B2-09-T07", "DL-B2-09-T08"], "B2.9 P02 must link the source reading, written listening transcript, transformation, and T08");
   const marketingAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2MarketingAssessment.id);
-  assert.equal(marketingAssets.length, 3);
-  assert.equal(marketingAssets.reduce((n, asset) => n + asset.segments.length, 0), 10);
-  assert.deepEqual(marketingAssets.map((asset) => asset.kind), ["phrase_bank", "model_sentences", "dialogue"]);
+  assert.equal(marketingAssets.length, 5);
+  assert.equal(marketingAssets.reduce((n, asset) => n + asset.segments.length, 0), 12);
+  assert.deepEqual(marketingAssets.map((asset) => asset.kind), ["phrase_bank", "model_sentences", "dialogue", "reading", "listening"]);
   assert.ok(marketingAssets.every((asset) => asset.status === "generated_pending_acoustic_review" && asset.transcriptPolicy === "offer"));
-  const marketingHeadings = b2MarketingSource.split(/\r?\n/).filter((line) => line.startsWith("## ")).slice(0, 3).map((line) => line.slice(3));
+  const marketingHeadings = b2MarketingSource.split(/\r?\n/).filter((line) => line.startsWith("## ")).slice(0, 5).map((line) => line.slice(3));
   assert.deepEqual(marketingAssets.map((asset) => asset.sectionHeading), marketingHeadings);
   const marketingSections = marketingHeadings.map((heading) => b2MarketingSource.split("## " + heading)[1].split("\n## ")[0]);
   const marketingTerms = marketingSections[0].split(/\r?\n/).filter((line) => line.startsWith("| ")).slice(1).map((line) => line.split("|").slice(1, 3).map((cell) => cell.trim()));
@@ -1999,6 +1999,17 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     for (const segment of marketingAssets[2].segments.filter((item) => item.speaker === speaker)) assert.equal(segment.voiceId, prior.voiceId);
   }
   for (const index of [0, 1]) assert.equal(marketingAssets[index].segments[0].voiceId, "voice-02");
+  for (const [index, suffix, voice, speaker] of [[3, "READ", "voice-02", "Narrator"], [4, "LST", "voice-03", "Erzählperson"]]) {
+    const asset = marketingAssets[index];
+    assert.equal(asset.assetId, `DL-B2-09-AUD-${suffix}-01`);
+    assert.equal(asset.segments.length, 1);
+    assert.equal(asset.segments[0].text, marketingSections[index].split(/\r?\n/).find((line) => line.startsWith("> ")).slice(2).trim(), "B2.9 reading and listening scripts must match source verbatim");
+    assert.equal(asset.segments[0].speaker, speaker);
+    assert.equal(asset.segments[0].voiceId, voice);
+    assert.equal(asset.segments[0].src, `assets/audio/DL-B2-09-AUD-${suffix}-01.mp3`);
+  }
+  assert.match(marketingAssets[3].segments[0].text, /Alle Beispiele zu „Nordwerk“ sind erfunden/);
+  assert.match(marketingAssets[4].segments[0].text, /nicht nur von einem Zeugnis abhängt/);
   const marketingLayout = vm.runInContext("renderLessonAudioContent(getLessonsInLevel('B2')[8])", context);
   assert.equal(marketingLayout.audioPanel, "");
   for (const asset of marketingAssets) {
@@ -2387,7 +2398,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), true, "B2.12 must open after B2.11 mastery because its assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[11].id, "B2.12 must be the next required step after mastering B2.11");
 
-  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through partial B2.9 (200 assets/441 clips; 137 ready and sixty-three awaiting review; B2.9 has three assets/ten clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.2 Konjunktiv I/source-attribution criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.3 passive-with-modals criteria and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.4 Partizip I/II adjective criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.5 cause/effect and Genitiv criteria, corrected Q03 in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.6 academic Nomen-Verb-Verbindungen criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.7 prepositional-relative-clause criteria, corrected P02 departure in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.8 Vorgangspassiv/Zustandspassiv criteria and section-mapped vocabulary/models/six-turn dialogue/reading with spoken fictional table and disclaimer/listening, B2.9 wo(r)/da(r)-preposition criteria and section-mapped vocabulary/models/eight-turn dialogue, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
+  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B2.9 (202 assets/443 clips; 137 ready and sixty-five awaiting review; B2.9 has five assets/twelve clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.2 Konjunktiv I/source-attribution criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.3 passive-with-modals criteria and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.4 Partizip I/II adjective criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.5 cause/effect and Genitiv criteria, corrected Q03 in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.6 academic Nomen-Verb-Verbindungen criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.7 prepositional-relative-clause criteria, corrected P02 departure in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.8 Vorgangspassiv/Zustandspassiv criteria and section-mapped vocabulary/models/six-turn dialogue/reading with spoken fictional table and disclaimer/listening, B2.9 wo(r)/da(r)-preposition criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;

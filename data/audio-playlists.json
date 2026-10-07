@@ -4704,6 +4704,40 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "3) حوار أصلي عن حملة توظيف"
+    },
+    {
+      "assetId": "DL-B2-09-AUD-READ-01",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "title": "قراءة: إعلان شركة Nordwerk الخيالية",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-09-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das fiktive Unternehmen „Nordwerk“ bietet Reparaturdienste und Ausbildungsplätze an. Die neue Werbekampagne richtet sich an Menschen, die Geräte länger nutzen möchten, und an Fachkräfte, die sich für technische Berufe interessieren. Im Text wird erklärt, worauf das Unternehmen Wert legt: klare Informationen über Aufgaben, Arbeitszeiten und Auswahlverfahren. Die Kampagne wirbt damit, dass neue Mitarbeitende eine strukturierte Einarbeitung erhalten. Die Personalabteilung informiert außerdem darüber, welche Qualifikationen für die offenen Stellen erforderlich sind. Ob die Kampagne erfolgreich ist, hängt davon ab, ob die angesprochenen Personen die Informationen verständlich finden. Alle Beispiele zu „Nordwerk“ sind erfunden.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: إعلان شركة خيالية"
+    },
+    {
+      "assetId": "DL-B2-09-AUD-LST-01",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "title": "استماع: معايير الاختيار في إعلان وظيفة",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-09-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Die Personalchefin spricht über eine neue Stellenanzeige. Sie erklärt, worauf das Team bei Bewerbungen achtet: auf praktische Erfahrung und klare Beispiele. Die Anzeige informiert darüber, welche Aufgaben zur Stelle gehören. Die Personalchefin betont außerdem, dass die Auswahl nicht nur von einem Zeugnis abhängt. Sie sagt, entscheidend sei auch, ob die Bewerberin ihre Kenntnisse mit konkreten Beispielen aus der Praxis belegen könne.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ],
   "selectedVoiceIds": [
