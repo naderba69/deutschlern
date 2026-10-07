@@ -11,6 +11,7 @@ const root = path.resolve(__dirname, '..');
 const course = JSON.parse(fs.readFileSync(path.join(root, 'data/course.json')));
 const requests = [];
 let originOffline = false;
+let servePreviousWorker = false;
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.mp3': 'audio/mpeg', '.webmanifest': 'application/manifest+json' };
 // Range-capable origin: Python's simple HTTP server returning 200 for Range
 // requests would miss a real CDN/browser interaction.
@@ -21,7 +22,9 @@ const server = http.createServer((req, res) => {
   if (!filename.startsWith(root + path.sep) || !fs.existsSync(filename) || !fs.statSync(filename).isFile()) {
     res.writeHead(404).end('Not found'); return;
   }
-  const body = fs.readFileSync(filename);
+  let body = fs.readFileSync(filename);
+  if (pathname === '/service-worker.js' && servePreviousWorker) body = fs.readFileSync(path.join(__dirname, 'fixtures/service-worker-v42.js'));
+  if (pathname === '/app.js') body = Buffer.concat([Buffer.from(`window.__qaShellVersion = '${servePreviousWorker ? 'v42' : 'current'}';\n`), body]);
   const headers = { 'Content-Type': mime[path.extname(filename)] || 'application/octet-stream', 'Cache-Control': 'no-store' };
   const range = req.headers.range?.match(/^bytes=(\d+)-(\d*)$/);
   requests.push({ pathname, range: req.headers.range || null });
@@ -149,7 +152,7 @@ async function layoutAndPlayback(browser, base, viewport) {
     assert.equal(await page.locator('.sidebar').isVisible(), false);
     await page.locator('[data-action="toggle-menu"]').click();
     assert.equal(await page.locator('.sidebar.open').isVisible(), true);
-    await page.locator('[data-action="close-menu"]').click({ position: { x: 10, y: 100 } });
+    await page.locator('.mobile-scrim[data-action="close-menu"]').click({ position: { x: 10, y: 100 } });
     assert.equal(await page.locator('.sidebar').isVisible(), false);
   }
   const dialogue = course.audioAssets.find(a => a.assetId === 'DL-B2-12-AUD-DLG-01');
@@ -181,7 +184,7 @@ async function layoutAndPlayback(browser, base, viewport) {
   await context.close();
   console.log(`PASS: ${viewport.width}x${viewport.height}, 53 lessons + gate/217 assets, RTL width, locked fresh start, transcripts, real six-turn playback at 1/0.8, stop on navigation, no page errors.`);
 }
-(async () => {
+async function main() {
   let browser;
   try {
     await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -196,4 +199,6 @@ async function layoutAndPlayback(browser, base, viewport) {
     if (browser) await browser.close();
     await new Promise(resolve => server.close(resolve));
   }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+}
+if (require.main === module) main().catch(error => { console.error(error); process.exitCode = 1; });
+module.exports = { server, load, seedReviewFixture, fetchInfo, setOriginOffline(value) { originOffline = value; }, setPreviousWorker(value) { servePreviousWorker = value; } };

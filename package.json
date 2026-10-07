@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "test:browser": "node tools/test_browser.cjs",
-    "test:service-worker": "node tools/test_service_worker.cjs"
+    "test:service-worker": "node tools/test_service_worker.cjs",
+    "test:accessibility-update": "node tools/test_accessibility_update.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

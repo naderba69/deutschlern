@@ -1220,9 +1220,11 @@ function renderShell() {
   const currentGoal = normalizeDailyMinutes(state.profile.dailyGoal);
   const viewContent = renderView();
   root.innerHTML = `
-    ${mobileMenuOpen ? '<button class="mobile-scrim show" type="button" data-action="close-menu" aria-label="إغلاق القائمة"></button>' : '<button class="mobile-scrim" type="button" data-action="close-menu" aria-label="إغلاق القائمة"></button>'}
+    <a class="skip-link" href="#main-content" ${mobileMenuOpen ? 'inert' : ''}>انتقل إلى المحتوى</a>
+    ${mobileMenuOpen ? '<button class="mobile-scrim show" tabindex="-1" type="button" data-action="close-menu" aria-label="إغلاق القائمة"></button>' : '<button class="mobile-scrim" tabindex="-1" type="button" data-action="close-menu" aria-label="إغلاق القائمة"></button>'}
     <div class="layout-shell">
-      <aside class="sidebar ${mobileMenuOpen ? 'open' : ''}" aria-label="التنقل الرئيسي">
+      <aside id="navigation-panel" class="sidebar ${mobileMenuOpen ? 'open' : ''}" aria-label="التنقل الرئيسي" ${mobileMenuOpen ? 'role="dialog" aria-modal="true"' : ''}>
+        <button type="button" class="mobile-menu-close button-quiet" data-action="close-menu" aria-label="إغلاق القائمة">إغلاق القائمة ${icon('close', 18)}</button>
         <div class="brand-lockup">
           <div class="brand-mark">${icon('logo', 25)}</div>
           <div><span class="brand-title">دويتش</span><span class="brand-subtitle">مساري الشخصي للألمانية</span></div>
@@ -1238,10 +1240,10 @@ function renderShell() {
         <div class="local-status"><div class="local-status-line"><span class="status-dot"></span> يعمل محليًا</div><p>تقدمك محفوظ على هذا الجهاز. لا نحتاج إلى حساب أو واجهة مدفوعة.</p></div>
         <div class="side-version"><span>منهج A0–B2</span><span>53 درسًا</span></div>
       </aside>
-      <main class="main-panel">
+      <main class="main-panel" ${mobileMenuOpen ? 'inert' : ''}>
         <header class="topbar">
           <div class="topbar-title">
-            <button type="button" class="mobile-menu" data-action="toggle-menu" aria-label="فتح القائمة">${icon('menu', 19)}</button>
+            <button type="button" class="mobile-menu" data-action="toggle-menu" aria-label="فتح القائمة" aria-controls="navigation-panel" aria-expanded="${mobileMenuOpen}">${icon('menu', 19)}</button>
             <div><small>${section}</small><strong>${title}</strong></div>
           </div>
           <div class="topbar-actions">
@@ -1250,14 +1252,44 @@ function renderShell() {
             <div class="avatar" title="${profileName}">${escapeHTML(initials)}</div>
           </div>
         </header>
-        <div class="page-container">${renderStudyTimerControl()}${viewContent}</div>
+        <div id="main-content" class="page-container" tabindex="-1">${renderStudyTimerControl()}${viewContent}</div>
       </main>
     </div>`;
 }
 
+function focusMainContent() {
+  const target = root.querySelector?.('#main-content h1, #main-content h2') || root.querySelector?.('#main-content');
+  if (target) {
+    target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  }
+}
+
+function setMobileMenu(open) {
+  mobileMenuOpen = open;
+  render();
+  const target = root.querySelector?.(open ? '.sidebar [data-action="close-menu"]' : '[data-action="toggle-menu"]');
+  if (target?.getClientRects().length) target.focus({ preventScroll: true });
+  else focusMainContent();
+}
+
 function render() {
+  // Rendering replaces the DOM. Preserve the active control where it still
+  // exists, rather than dropping keyboard users back to the document body.
+  const active = document.activeElement;
+  const restoreFocus = active && root.contains?.(active);
+  const activeId = restoreFocus ? active.id : '';
+  const activeAction = restoreFocus ? active.dataset?.action : '';
+  const activeData = activeAction ? JSON.stringify({ ...active.dataset }) : '';
   syncStudyTimerForCurrentView();
   renderShell();
+  if (restoreFocus) {
+    const target = activeId ? document.getElementById(activeId)
+      : activeAction ? [...root.querySelectorAll('[data-action]')].find((element) => JSON.stringify({ ...element.dataset }) === activeData) : null;
+    if (target && !target.disabled && !target.closest('[inert]') && target.getClientRects().length && window.getComputedStyle(target).visibility !== 'hidden') {
+      target.focus({ preventScroll: true });
+    } else focusMainContent();
+  }
 }
 
 function renderView() {
@@ -1986,15 +2018,14 @@ function handleClick(event) {
       mobileMenuOpen = false;
       saveState();
       render();
+      focusMainContent();
       window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'toggle-menu':
-      mobileMenuOpen = !mobileMenuOpen;
-      render();
+      setMobileMenu(!mobileMenuOpen);
       break;
     case 'close-menu':
-      mobileMenuOpen = false;
-      render();
+      setMobileMenu(false);
       break;
     case 'open-lesson': openLesson(button.dataset.id); break;
     case 'open-daily-task': openDailyPlanTask(button.dataset.taskKey); break;
@@ -2011,6 +2042,7 @@ function handleClick(event) {
       mobileMenuOpen = false;
       saveState();
       render();
+      focusMainContent();
       window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'begin-quiz': beginQuiz(); break;
@@ -2238,10 +2270,25 @@ window.addEventListener('beforeinstallprompt', (event) => {
 });
 
 window.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && mobileMenuOpen) {
-    mobileMenuOpen = false;
-    render();
+  if (!mobileMenuOpen) return;
+  if (event.key === 'Escape') {
+    event.preventDefault();
+    setMobileMenu(false);
+  } else if (event.key === 'Tab') {
+    const controls = [...(root.querySelectorAll?.('.sidebar button:not([disabled]), .sidebar a[href]') || [])]
+      .filter((element) => element.getClientRects().length && window.getComputedStyle(element).visibility !== 'hidden');
+    if (!controls.length) return;
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (!controls.includes(document.activeElement) || (event.shiftKey && document.activeElement === first) || (!event.shiftKey && document.activeElement === last)) {
+      event.preventDefault();
+      (event.shiftKey ? last : first).focus();
+    }
   }
+});
+
+window.addEventListener('resize', () => {
+  if (mobileMenuOpen && window.matchMedia?.('(min-width: 901px)').matches) setMobileMenu(false);
 });
 
 async function startApp() {

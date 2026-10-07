@@ -35,9 +35,13 @@ body {
 }
 button, input, select { font: inherit; }
 button { color: inherit; }
-button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(233, 184, 79, .75); outline-offset: 3px; }
+a:focus-visible, summary:focus-visible, textarea:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(233, 184, 79, .75); outline-offset: 3px; }
 button:disabled { cursor: not-allowed; opacity: .48; }
 svg { display: block; flex: 0 0 auto; }
+
+.skip-link { position: fixed; top: 8px; right: 12px; z-index: 101; padding: 10px 16px; color: #fff; background: #1f4433; border-radius: 8px; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.mobile-menu-close { display: none; }
 
 .layout-shell { min-height: 100vh; display: grid; grid-template-columns: 252px minmax(0, 1fr); }
 .sidebar {
@@ -525,6 +529,7 @@ svg { display: block; flex: 0 0 auto; }
   .mobile-scrim { position: fixed; z-index: 19; inset: 0; display: block; border: 0; background: rgba(25,39,30,.32); opacity: 0; pointer-events: none; transition: opacity .2s ease; }
   .mobile-scrim.show { opacity: 1; pointer-events: auto; }
   .mobile-menu { display: inline-flex; }
+  .mobile-menu-close { display: inline-flex; align-self: flex-end; margin-bottom: 12px; }
   .topbar { min-height: 74px; }
   .lesson-layout { grid-template-columns: minmax(0,1fr); }
   .lesson-aside { position: static; grid-template-columns: repeat(2,minmax(0,1fr)); }
