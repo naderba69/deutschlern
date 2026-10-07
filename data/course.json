@@ -17796,7 +17796,7 @@
             "deshalb",
             "ترتيب الفعل في الجملة الرئيسية"
           ],
-          "prompt": "اختر ترتيب الفعل الصحيح: **Die Daten sind vorläufig. Deshalb ___ man die Aussage vorsichtig lesen.**",
+          "prompt": "اختر ترتيب الفعل الصحيح: **Die Daten sind vorläufig. Deshalb ___ die Aussage vorsichtig lesen.**",
           "options": [
             "sollte man",
             "man sollte",
@@ -17955,7 +17955,7 @@
       ],
       "assessment": {
         "status": "ready",
-        "version": "b2-05-v1",
+        "version": "b2-05-v2",
         "minimumScore": 80,
         "minimumItems": 10,
         "objectiveIds": [
@@ -17967,7 +17967,8 @@
         "reviewNotes": [
           "ترتبط الأسئلة العشرة بالهدف DL-B2-05-G01 وتمارين المصدر T01–T07: مفردات الدراسة والعينة، واستخدام sodass/weshalb/deshalb، وaufgrund + Genitiv، وترتيب الفعل، وفهم تقرير الاستطلاع الخيالي ونص الاستماع المكتوب، وإعادة الصياغة.",
           "ترتبط P01 مباشرة بـT08، وترتبط P02 بنص القراءة T05 ومهمة تقييم الادعاء T08. تفحص المهمتان نقل المعلومات وحدود العينة والقياس وغياب المجموعة الضابطة، ولا تسمحان بتحويل الارتباط إلى سبب مثبت.",
-          "يتيح T08 والمهمتان الكتابة أو العرض الشفهي، مع بديل فردي بكتابة الإجابة وقراءتها دون تسجيل أو إرسال صوت. معايير التحقق ذاتيّة ومحلية وظاهرة؛ لا يعتمد التقييم على MP3 أو صوت مولّد، ولا يقدّم تشخيصًا أو توصية طبية شخصية."
+          "يتيح T08 والمهمتان الكتابة أو العرض الشفهي، مع بديل فردي بكتابة الإجابة وقراءتها دون تسجيل أو إرسال صوت. معايير التحقق ذاتيّة ومحلية وظاهرة؛ لا يعتمد التقييم على MP3 أو صوت مولّد، ولا يقدّم تشخيصًا أو توصية طبية شخصية.",
+          "تصحيح Q03 في v2: حذف man بعد الفراغ لأن الخيار الصحيح sollte man يتضمنها؛ لا تغيير للمفتاح أو الهدف أو عتبة الإتقان. يلزم تحقق جديد للتقييم القديم وفق سياسة إصدار التطبيق."
         ]
       },
       "performanceTasks": [
@@ -25315,6 +25316,121 @@
           "src": "assets/audio/DL-B2-04-AUD-LST-01.mp3",
           "speaker": "Erzählperson",
           "text": "Bei der Führung wurde zuerst das sanierte Altbauhaus gezeigt. Danach gingen wir zu den derzeit entstehenden Wohnungen. Eine gut gedämmte Wohnung war schon fertig, eine barrierefrei geplante Wohnung wurde noch eingerichtet. Die Architektin erklärte, dass die steigenden Nebenkosten im Informationsblatt stehen. Besonders gefiel mir der gemeinschaftlich genutzte Innenhof.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-05-AUD-PHR-01",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "title": "مفردات قراءة المعلومات الصحية",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-05-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Studie, die Studien. Die Befragung, die Befragungen. Die Stichprobe, die Stichproben. Der Messwert, die Messwerte. Die Kontrollgruppe, die Kontrollgruppen. Die Auswertung, die Auswertungen. Das Ergebnis, die Ergebnisse. Die Fachquelle, die Fachquellen. Die Aussage, die Aussagen. Die Teilnahme, die Teilnahmen. Die Belastung, die Belastungen. Repräsentativ. Vorläufig. Übertragbar. Nachvollziehbar. Belegen, belegt. Hinweisen auf, Akkusativ, weist hin. Verallgemeinern, verallgemeinert.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات قراءة المعلومات الصحية"
+    },
+    {
+      "assetId": "DL-B2-05-AUD-MODEL-01",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "title": "نماذج السبب والنتيجة وaufgrund مع Genitiv",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-05-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Stichprobe war klein, sodass die Ergebnisse nicht repräsentativ waren. Es gab keine Kontrollgruppe, weshalb die Ursache nicht bestimmt werden konnte. Die Angaben sind vorläufig. Deshalb sollte man vorsichtig urteilen. Aufgrund der kleinen Stichprobe ist die Aussage nur begrenzt übertragbar. Aufgrund der Studie. Aufgrund der begrenzten Angaben. Aufgrund des unklaren Messwerts. Aufgrund des vorläufigen Ergebnisses. Aufgrund der begrenzten Angaben.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) التعبير عن السبب والنتيجة"
+    },
+    {
+      "assetId": "DL-B2-05-AUD-DLG-01",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "title": "حوار: Rima وNabil عن قراءة عنوان صحي",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-05-AUD-DLG-01-01.mp3",
+          "speaker": "Rima",
+          "text": "Ich habe eine Überschrift über Bewegung und Gesundheit gelesen. Kann ich daraus eine Empfehlung ableiten?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-05-AUD-DLG-01-02.mp3",
+          "speaker": "Nabil",
+          "text": "Zuerst sollten wir prüfen, auf welche Studie sich der Bericht bezieht.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-05-AUD-DLG-01-03.mp3",
+          "speaker": "Rima",
+          "text": "Es nahmen nur wenige Freiwillige aus einem Verein teil.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-05-AUD-DLG-01-04.mp3",
+          "speaker": "Nabil",
+          "text": "Dann war die Stichprobe wahrscheinlich klein, sodass die Ergebnisse nicht für alle gelten.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-05-AUD-DLG-01-05.mp3",
+          "speaker": "Rima",
+          "text": "Im Text gibt es auch keine Kontrollgruppe.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-05-AUD-DLG-01-06.mp3",
+          "speaker": "Nabil",
+          "text": "Deshalb lässt sich die Ursache nicht sicher bestimmen. Am besten liest man die Fachquelle und fragt bei persönlichen Gesundheitsfragen eine qualifizierte Fachperson.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي عن قراءة عنوان صحي"
+    },
+    {
+      "assetId": "DL-B2-05-AUD-READ-01",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "title": "قراءة: فهم استطلاع خيالي وحدود نتائجه",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-05-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ein fiktiver Kurzbericht beschreibt eine Befragung in einer örtlichen Gehgruppe. 24 freiwillige Mitglieder beantworteten Fragen dazu, wo sie Informationen über Bewegung finden. Erfasst wurden nur ihre Antworten; Fitnesswerte und medizinische Ergebnisse wurden nicht gemessen. Da alle Teilnehmenden aus derselben Gruppe kamen, war die Stichprobe klein und nicht repräsentativ für die gesamte Bevölkerung. Es gab auch keine Kontrollgruppe, sodass sich aus der Befragung keine Ursache für gesundheitliche Veränderungen ableiten lässt. Aufgrund dieser Grenzen kann der Bericht nur beschreiben, was die befragten Personen angegeben haben. Er belegt nicht, welche Aktivität für alle Menschen am besten wäre. Die Zahlen und die Befragung in diesem Text sind frei erfunden und dienen nur dem Sprachtraining.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: كيف نفهم استطلاعًا خياليًا؟"
+    },
+    {
+      "assetId": "DL-B2-05-AUD-LST-01",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "title": "استماع: التمييز بين عنوان صحي وتوصية طبية",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-05-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "In einem fiktiven Artikel wird eine kleine Befragung erwähnt. Die Teilnehmenden kamen aus nur einer Gruppe, sodass die Ergebnisse nicht auf alle Erwachsenen übertragen werden können. Der Bericht nennt außerdem keine Kontrollgruppe, weshalb ein Ursache-Wirkungs-Zusammenhang nicht nachgewiesen wird. Deshalb sollte man die Überschrift nicht als medizinische Empfehlung verstehen. Bei persönlichen Fragen ist eine qualifizierte Fachperson die richtige Ansprechperson.",
           "voiceId": "voice-03"
         }
       ],
