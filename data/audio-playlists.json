@@ -3892,6 +3892,23 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "4) ملخّص اجتماع مهني أصلي"
+    },
+    {
+      "assetId": "DL-B2-02-AUD-LST-01",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "title": "استماع: إرشادات مهنية من ندوة التقديم للوظائف",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-02-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Im Seminar über Bewerbungen sagte der Coach, ein berufliches Ziel müsse konkret formuliert werden. Der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen. Eine Teilnehmerin erklärte, sie habe im letzten Jahr ein kleines Team koordiniert. Der Coach meinte, dieses Beispiel zeige ihre Organisationsfähigkeit. Er fügte hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ],
   "selectedVoiceIds": [
