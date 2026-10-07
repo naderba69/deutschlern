@@ -48,6 +48,9 @@ svg { display: block; flex: 0 0 auto; }
   position: sticky;
   top: 0;
   height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 26px 17px 18px;
   display: flex;
   flex-direction: column;
@@ -55,6 +58,8 @@ svg { display: block; flex: 0 0 auto; }
   border-left: 1px solid #ebeae2;
   z-index: 20;
 }
+/* Keep controls full-size; scroll the sidebar itself on short viewports. */
+.sidebar > :not(.sidebar-spacer) { flex-shrink: 0; }
 .brand-lockup { display: flex; align-items: center; gap: 12px; padding: 1px 9px 29px; }
 .brand-mark { width: 43px; height: 43px; border-radius: 15px; display: grid; place-items: center; color: #f8f5eb; background: var(--green); box-shadow: 0 8px 16px rgba(33,79,60,.16); }
 .brand-mark svg { width: 25px; height: 25px; }

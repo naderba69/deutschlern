@@ -6,7 +6,8 @@
     "test:service-worker": "node tools/test_service_worker.cjs",
     "test:accessibility-update": "node tools/test_accessibility_update.cjs",
     "test:accessibility-audit": "node tools/test_accessibility_audit.cjs",
-    "test:forms-keyboard": "node tools/test_forms_keyboard.cjs"
+    "test:forms-keyboard": "node tools/test_forms_keyboard.cjs",
+    "test:narrow-layout": "node tools/test_narrow_layout.cjs"
   },
   "devDependencies": {
     "axe-core": "4.11.0",
