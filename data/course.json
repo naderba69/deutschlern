@@ -18746,7 +18746,7 @@
       ],
       "assessment": {
         "status": "ready",
-        "version": "b2-07-v1",
+        "version": "b2-07-v2",
         "minimumScore": 80,
         "minimumItems": 10,
         "objectiveIds": [
@@ -18758,7 +18758,8 @@
         "reviewNotes": [
           "ترتبط الأسئلة العشرة بالهدف DL-B2-07-G01 وكتل المصدر T01–T07: اختيار ضمير الوصل، ومطابقة حرف الجر والحالة، وربط الجمل وترتيبها، وفهم قراءة الرحلة ونص الاستماع المكتوب.",
           "ترتبط P01 مباشرةً بـT08؛ وتدمج P02 بين بناء الجملة في T03 والقراءة الخيالية T05 والإنتاج في T08. تتطلب المهمتان ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة، مع مطابقة الحالة والجنس/العدد ووضع الفعل المصرف في نهاية الجملة الموصولة.",
-          "تتيح المهمتان الكتابة أو العرض الشفهي المكافئ، وللمتعلم الفردي كتابة الوصف وقراءته بصوت مسموع دون تسجيل أو إرسال صوت. التحقق ذاتي محلي بمعايير ظاهرة؛ ولا يعتمد التقييم على MP3 أو خدمة خارجية ولا يدّعي تصحيح النطق أو الكتابة آليًا."
+          "تتيح المهمتان الكتابة أو العرض الشفهي المكافئ، وللمتعلم الفردي كتابة الوصف وقراءته بصوت مسموع دون تسجيل أو إرسال صوت. التحقق ذاتي محلي بمعايير ظاهرة؛ ولا يعتمد التقييم على MP3 أو خدمة خارجية ولا يدّعي تصحيح النطق أو الكتابة آليًا.",
+          "تصحيح P02 في v2: العبّارة تنطلق من Hafen West وفق legt … ab في T05، وليس الوصول إليه. لم تتغير المعايير أو المفتاح أو عتبة الإتقان. سجلات إتقان v1 لا تُقبل للإصدار الجديد."
         ]
       },
       "performanceTasks": [
@@ -18807,7 +18808,7 @@
             "writing",
             "speaking"
           ],
-          "prompt": "استنادًا إلى قراءة T05 عن جزيرة Morgenküste الخيالية، اكتب إحاطة من خمس إلى ست جمل ألمانية لمتعلم آخر أو اعرضها شفهيًا. انقل ثلاثة تفاصيل صحيحة على الأقل عن الرحلة، مثل الوصول بالعبّارة إلى Hafen West أو المبيت في نزل داخل القرية أو انتهاء الطريق عند نقطة الإطلالة. استخدم ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة، ولا تضف حقائق أو مواعيد غير موجودة في القراءة. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+          "prompt": "استنادًا إلى قراءة T05 عن جزيرة Morgenküste الخيالية، اكتب إحاطة من خمس إلى ست جمل ألمانية لمتعلم آخر أو اعرضها شفهيًا. انقل ثلاثة تفاصيل صحيحة على الأقل عن الرحلة، مثل الانطلاق بالعبّارة من Hafen West أو المبيت في نزل داخل القرية أو انتهاء الطريق عند نقطة الإطلالة. استخدم ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة، ولا تضف حقائق أو مواعيد غير موجودة في القراءة. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
           "criteria": {
             "taskCompletion": "إحاطة من خمس إلى ست جمل تنقل ثلاثة تفاصيل على الأقل من قراءة T05، وتتضمن ثلاث جمل موصولة تسبقها حروف جر مختلفة.",
             "meaningClarity": "المعلومات مطابقة لرحلة الجزيرة الخيالية كما وردت في T05، ومنظمة بحيث يفهم المتعلم الآخر المسار؛ لا تُضاف مواعيد أو تفاصيل غير مذكورة.",
@@ -25552,6 +25553,121 @@
           "src": "assets/audio/DL-B2-06-AUD-LST-01.mp3",
           "speaker": "Erzählperson",
           "text": "Die Studienberaterin erklärt, dass die Bewerberinnen zuerst die Voraussetzungen prüfen sollen. Danach müssen sie eine Bewerbung einreichen und einen Antrag auf Zulassung stellen. Wer noch unsicher ist, kann verschiedene Studiengänge in Betracht ziehen. Im Beratungsgespräch werden Fragen geklärt, damit die Interessierten eine gut informierte Entscheidung treffen können. Die genauen Bedingungen stehen in der fiktiven Ausschreibung.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-07-AUD-PHR-01",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "title": "مفردات الرحلات والوجهات",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-07-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Reiseetappe, die Reiseetappen. Die Route, die Routen. Die Unterkunft, die Unterkünfte. Der Aussichtspunkt, die Aussichtspunkte. Die Landschaft, die Landschaften. Die Begegnung, die Begegnungen. Die Wegbeschreibung, die Wegbeschreibungen. Der Reiseführer, die Reiseführer. Der Hafen, die Häfen. Die Bucht, die Buchten. Übernachten in, übernachtet. Vorbeifahren an, Dativ, fährt vorbei. Sich beziehen auf, Akkusativ, bezieht sich. Abgelegen. Gut erreichbar. Beeindruckend.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الرحلات والوجهات"
+    },
+    {
+      "assetId": "DL-B2-07-AUD-MODEL-01",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "title": "نماذج الجمل الموصولة مع حروف الجر",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-07-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Fähre, mit der wir zur Insel fahren, legt früh ab. Das Dorf, durch das wir fahren, liegt im Tal. Die Pension, in der wir übernachten, ist ruhig. Die Route, über die wir gesprochen haben, führt zur Bucht. Die Wege, auf denen wir gewandert sind, waren schmal.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) الجمل الموصولة مع حرف جر"
+    },
+    {
+      "assetId": "DL-B2-07-AUD-DLG-01",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "title": "حوار: Salma وJonas عن اختيار وجهة",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-07-AUD-DLG-01-01.mp3",
+          "speaker": "Salma",
+          "text": "Welche Route möchtest du für unsere Reise nehmen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-07-AUD-DLG-01-02.mp3",
+          "speaker": "Jonas",
+          "text": "Die Strecke, über die wir gestern gesprochen haben. Sie führt durch ein Dorf, in dem es eine kleine Pension gibt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-07-AUD-DLG-01-03.mp3",
+          "speaker": "Salma",
+          "text": "Und wie kommen wir dorthin?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-07-AUD-DLG-01-04.mp3",
+          "speaker": "Jonas",
+          "text": "Mit der Fähre, mit der wir am Hafen abfahren. Danach nehmen wir einen Bus, der an der Bucht vorbeifährt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-07-AUD-DLG-01-05.mp3",
+          "speaker": "Salma",
+          "text": "Gibt es dort einen Aussichtspunkt?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-07-AUD-DLG-01-06.mp3",
+          "speaker": "Jonas",
+          "text": "Ja, einen Weg, auf dem wir zu Fuß hinaufgehen können. Von dort sieht man die Landschaft, für die die Insel bekannt ist.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي عن اختيار وجهة"
+    },
+    {
+      "assetId": "DL-B2-07-AUD-READ-01",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "title": "قراءة: مسار خيالي على جزيرة Morgenküste",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-07-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die folgende Reise führt über die fiktive Insel Morgenküste. Die Fähre, mit der Lina und ihre Freunde anreisen, legt im Hafen West ab. Von dort fahren sie durch ein Dorf, in dem sie in einer kleinen Pension übernachten. Am nächsten Morgen gehen sie einen Weg entlang, auf dem alte Steinmauern stehen. Später erreichen sie eine Bucht, an der mehrere Fischerboote liegen. Die Route, über die Lina in ihrem Reiseführer gelesen hat, endet an einem Aussichtspunkt, von dem aus man die Küste sehen kann. Die Gruppe nimmt sich Zeit für Begegnungen mit den Bewohnerinnen, die ihr von der Geschichte der Insel erzählen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: مسار خيالي على جزيرة"
+    },
+    {
+      "assetId": "DL-B2-07-AUD-LST-01",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "title": "استماع: رحلة إلى ميناء وخليج ومكان إقامة",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-07-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Auf unserer Reise besuchten wir einen kleinen Hafen, an dem früher viele Boote ankamen. Danach fuhren wir mit einem Bus, der an mehreren Aussichtspunkten vorbeifuhr. Besonders gefiel mir die Bucht, über die ich schon in einem Reiseführer gelesen hatte. Am Ende gingen wir zu einer Unterkunft, in der wir zwei Nächte blieben.",
           "voiceId": "voice-03"
         }
       ],
