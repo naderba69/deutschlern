@@ -26151,6 +26151,121 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-12-AUD-PHR-01",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "title": "مفردات الإعلام وأوقات الفراغ",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-12-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Rezension, die Rezensionen. Die Aussage, die Aussagen. Das Interview, die Interviews. Die Sendung, die Sendungen. Der Podcast, die Podcasts. Das Publikum. Die Moderatorin, die Moderatorinnen. Der Moderator, die Moderatoren. Der Kommentar, die Kommentare. Die Behauptung, die Behauptungen. Die Redewiedergabe, die Redewiedergaben. Berichten, berichtet. Behaupten, behauptet. Einräumen, räumt ein. Zustimmen, stimmt zu. Umstritten. Laut, Dativ oder Genitiv. Dativ, zufolge.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الإعلام وأوقات الفراغ"
+    },
+    {
+      "assetId": "DL-B2-12-AUD-MODEL-01",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "title": "نماذج نقل الأقوال ونسبتها إلى مصدرها",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-12-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Moderatorin sagt: „Die Sendung beginnt heute später.“ Die Moderatorin sagt, die Sendung beginne heute später. Die Gäste sagen: „Wir hören den Podcast regelmäßig.“ Die Gäste sagen, sie würden den Podcast regelmäßig hören. Der Kritiker meint, dass die Rezension zu kurz sei. Mit wem sprach die Moderatorin? Mit dem Regisseur.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) نقل الأقوال ونسبة الرأي إلى صاحبه"
+    },
+    {
+      "assetId": "DL-B2-12-AUD-DLG-01",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "title": "حوار: المقدّمة والضيف عن فيلم وثائقي",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-12-AUD-DLG-01-01.mp3",
+          "speaker": "Moderatorin",
+          "text": "Wie finden Sie die neue Dokumentation?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-12-AUD-DLG-01-02.mp3",
+          "speaker": "Gast",
+          "text": "Ich finde die Bilder eindrucksvoll, aber die Erklärung ist manchmal zu kurz.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-12-AUD-DLG-01-03.mp3",
+          "speaker": "Moderatorin",
+          "text": "Der Regisseur sagt, der Film wolle Fragen stellen und keine fertigen Antworten geben. Stimmen Sie dem zu?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-12-AUD-DLG-01-04.mp3",
+          "speaker": "Gast",
+          "text": "Teilweise. Einige Zuschauer sagen, sie verstünden die Schlusssequenz nicht.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-12-AUD-DLG-01-05.mp3",
+          "speaker": "Moderatorin",
+          "text": "Andere meinen, gerade das offene Ende mache den Film interessant.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-12-AUD-DLG-01-06.mp3",
+          "speaker": "Gast",
+          "text": "Das kann sein. Über Kunst kann man unterschiedlich urteilen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في برنامج عن السينما"
+    },
+    {
+      "assetId": "DL-B2-12-AUD-READ-01",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "title": "قراءة: مراجعة برنامج Freizeitblick الخيالي",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-12-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das fiktive Kulturmagazin „Freizeitblick“ berichtet über einen neuen Podcast zur Stadtgeschichte. Die Moderatorin erklärt, die Folgen seien für Menschen gedacht, die gern kurze Geschichten hören würden. Ein Gast räumt ein, manche Themen seien umstritten; die Redaktion wolle unterschiedliche Perspektiven vorstellen. In den Kommentaren schreiben mehrere Hörerinnen, sie fänden die Interviews besonders anschaulich. Andere sagen, ihnen seien die Folgen zu lang. Laut der Rezension werde der Podcast regelmäßig ergänzt. Die Aussagen stammen aus einer erfundenen Sendung und aus fiktiven Kommentaren. Die Rezension stellt unterschiedliche Meinungen dar, ohne sie als einheitliche Bewertung des Publikums auszugeben.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: مراجعة برنامج خيالي"
+    },
+    {
+      "assetId": "DL-B2-12-AUD-LST-01",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "title": "استماع: أقوال كاتبة عن روايتها",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-12-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Im Podcast-Interview sagt die Autorin, sie schreibe am liebsten am frühen Morgen. Ihr neuer Roman sei von Spaziergängen am Meer inspiriert. Einige Leserinnen berichten, sie hätten das offene Ende überraschend gefunden. Die Autorin räumt ein, der Schluss könne Fragen offenlassen. Sie meint jedoch, verschiedene Deutungen gehörten zum Lesen dazu.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }

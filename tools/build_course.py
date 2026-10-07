@@ -66,6 +66,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B2-09": "b2-09-business-marketing-employment-prepositions",
     "DL-B2-10": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
     "DL-B2-11": "b2-11-humans-nature-environment-nominalization",
+    "DL-B2-12": "b2-12-leisure-media-reported-speech",
 }
 
 
