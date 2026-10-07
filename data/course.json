@@ -25436,6 +25436,110 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-06-AUD-PHR-01",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "title": "مفردات التقديم والدراسة",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-06-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Studiengang, die Studiengänge. Die Zulassung, die Zulassungen. Die Voraussetzung, die Voraussetzungen. Der Leistungsnachweis, die Leistungsnachweise. Die Bewerbung, die Bewerbungen. Das Motivationsschreiben, die Motivationsschreiben. Die Immatrikulation, die Immatrikulationen. Die Bewerbungsfrist, die Bewerbungsfristen. Die Studienberatung, die Studienberatungen. Der Nachweis, die Nachweise. Fristgerecht. Erforderlich. Nachreichen, reicht nach. Erwerben, erwirbt. Einreichen, reicht ein.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات التقديم والدراسة"
+    },
+    {
+      "assetId": "DL-B2-06-AUD-MODEL-01",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "title": "نماذج تراكيب الاسم والفعل في السياق الأكاديمي",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-06-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Einen Antrag stellen. Sie stellt einen Antrag auf Zulassung. Eine Bewerbung einreichen. Er reicht die Bewerbung fristgerecht ein. Eine Voraussetzung erfüllen. Die Bewerberin erfüllt alle Voraussetzungen. Eine Prüfung ablegen. Am Ende des Kurses legt sie eine Prüfung ab. Kenntnisse erwerben. Die Studierenden erwerben fachliche Kenntnisse. Eine Entscheidung treffen. Er trifft nach der Beratung eine Entscheidung. Etwas in Betracht ziehen. Sie zieht einen Teilzeitstudiengang in Betracht. Zur Verfügung stehen. Die Unterlagen stehen online zur Verfügung. Einen Antrag auf, Akkusativ, stellen. Etwas in Betracht ziehen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) تراكيب اسمية فعلية في السياق الأكاديمي"
+    },
+    {
+      "assetId": "DL-B2-06-AUD-DLG-01",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "title": "حوار: Meryem والمرشد الدراسي",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-01.mp3",
+          "speaker": "Meryem",
+          "text": "Ich möchte mich für einen Masterstudiengang bewerben. Was sollte ich zuerst tun?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-02.mp3",
+          "speaker": "Berater",
+          "text": "Prüfen Sie, ob Sie alle Voraussetzungen erfüllen. Danach können Sie einen Antrag auf Zulassung stellen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-03.mp3",
+          "speaker": "Meryem",
+          "text": "Welche Unterlagen muss ich einreichen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-04.mp3",
+          "speaker": "Berater",
+          "text": "Das steht in der Ausschreibung. Ein Motivationsschreiben ist erforderlich; einen fehlenden Leistungsnachweis können Sie möglicherweise nachreichen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-05.mp3",
+          "speaker": "Meryem",
+          "text": "Und wenn ich noch zwischen zwei Studiengängen schwanke?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-06.mp3",
+          "speaker": "Berater",
+          "text": "Ziehen Sie beide Möglichkeiten in Betracht und vereinbaren Sie einen Termin bei der Studienberatung.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-06-AUD-DLG-01-07.mp3",
+          "speaker": "Meryem",
+          "text": "Vielen Dank. Dann treffe ich meine Entscheidung nach dem Gespräch.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في الإرشاد الدراسي"
+    },
+    {
+      "assetId": "DL-B2-06-AUD-READ-01",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "title": "قراءة: إرشادات أكاديمية خيالية",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-06-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Hinweise der fiktiven Campus-Akademie. Wer sich für den Studiengang „Kommunikation und Gesellschaft“ interessiert, sollte zuerst die Zulassungsvoraussetzungen prüfen. Für die Bewerbung müssen ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss eingereicht werden. Die Bewerbungsfrist steht in der jeweiligen Ausschreibung. Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung dies schriftlich bestätigt. Nach der Zulassung müssen die Studierenden die Immatrikulation abschließen. Im Studium erwerben sie fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab. Die Unterlagen zum Verfahren stehen auf der Webseite der fiktiven Akademie zur Verfügung.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: إرشادات برنامج خيالي"
     }
   ]
 }

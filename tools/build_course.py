@@ -60,6 +60,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B2-03": "b2-03-consumption-environment-passive-modal",
     "DL-B2-04": "b2-04-cities-housing-participles",
     "DL-B2-05": "b2-05-health-fitness-medical-information",
+    "DL-B2-06": "b2-06-study-applications-verb-noun-phrases",
 }
 
 
