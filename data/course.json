@@ -24594,6 +24594,121 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B1-11-AUD-PHR-01",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "title": "مفردات التاريخ والشأن المدني",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-11-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Epoche, die Epochen. Das Ereignis, die Ereignisse. Die Gemeinde, die Gemeinden. Die Verfassung, die Verfassungen. Der Stadtrat, die Stadträte. Der Beschluss, die Beschlüsse. Die Abstimmung, die Abstimmungen. Die Mehrheit, die Mehrheiten. Die Bürgerin, die Bürgerinnen. Der Bürger, die Bürger. Das Denkmal, die Denkmäler. Die Zeitleiste, die Zeitleisten. Wählen, wählt. Beschließen, beschließt. Gründen, gründet. Einführen, führt ein. Historisch. Demokratisch.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات التاريخ والشأن المدني"
+    },
+    {
+      "assetId": "DL-B1-11-AUD-MODEL-01",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "title": "أمثلة المبني للمجهول في الماضي ومقارنته بـ«أصبح»",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-11-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Museum wurde 1985 eröffnet. Die Brücken wurden renoviert. Der Beschluss wurde vom Stadtrat gefasst. Das Dorf wurde größer.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) المبني للمجهول في الماضي: wurde/wurden + Partizip II"
+    },
+    {
+      "assetId": "DL-B1-11-AUD-DLG-01",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "title": "حوار: Mira مع أمينة الأرشيف",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-11-AUD-DLG-01-01.mp3",
+          "speaker": "Mira",
+          "text": "Wann wurde das alte Kulturhaus eröffnet?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-11-AUD-DLG-01-02.mp3",
+          "speaker": "Archivarin",
+          "text": "Es wurde 1985 eröffnet. Damals wurde dort eine kleine Ausstellung gezeigt.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-11-AUD-DLG-01-03.mp3",
+          "speaker": "Mira",
+          "text": "Wurden die Fotos auch im Stadtarchiv gesammelt?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-11-AUD-DLG-01-04.mp3",
+          "speaker": "Archivarin",
+          "text": "Ja. Viele Bilder wurden von Einwohnerinnen und Einwohnern gespendet.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B1-11-AUD-DLG-01-05.mp3",
+          "speaker": "Mira",
+          "text": "Und wann wurde der Jugendrat gegründet?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B1-11-AUD-DLG-01-06.mp3",
+          "speaker": "Archivarin",
+          "text": "2004. Die wichtigsten Daten wurden auf einer Zeitleiste zusammengestellt.",
+          "voiceId": "voice-00"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في أرشيف المدينة"
+    },
+    {
+      "assetId": "DL-B1-11-AUD-READ-01",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "title": "قراءة: خط زمني لبلدة Sonnenfeld الخيالية",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-11-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die folgende Zeitleiste gehört zur fiktiven Gemeinde Sonnenfeld. Im Jahr 1974 wurde die alte Brücke über den Fluss gebaut. 1985 wurde ein kleines Gemeindearchiv eröffnet. 1996 wurde der Stadtrat neu gewählt. Eine Jugendvertretung wurde 2004 gegründet. Im Jahr 2018 wurde ein Vorschlag zur Neugestaltung des Marktplatzes öffentlich diskutiert. Danach wurde in einer Sitzung über den Vorschlag abgestimmt. Eine Mehrheit stimmte dafür. Zwei Jahre später wurde der neue Platz eröffnet.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: خطّ زمني لبلدة خيالية"
+    },
+    {
+      "assetId": "DL-B1-11-AUD-LST-01",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "title": "استماع: معرض الجسر في Sonnenfeld",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B1-11-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet. Für die Ausstellung wurden Fotos von Einwohnern gesammelt. Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut. In einem Gästebuch wurden Erinnerungen an die Brücke notiert. Viele Schulklassen wurden durch die Ausstellung geführt.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }
