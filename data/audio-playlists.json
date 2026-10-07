@@ -4496,6 +4496,121 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-08-AUD-PHR-01",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "title": "مفردات الغذاء والبيانات",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-08-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Erhebung, die Erhebungen. Der Durchschnitt, die Durchschnitte. Der Anteil, die Anteile. Die Portion, die Portionen. Der Nährwert, die Nährwerte. Die Zutatenliste, die Zutatenlisten. Die Kennzeichnung, die Kennzeichnungen. Die Tabelle, die Tabellen. Die Probe, die Proben. Der Ballaststoff, die Ballaststoffe. Der Zuckergehalt. Abwiegen, wiegt ab. Erfassen, erfasst. Auswerten, wertet aus. Kennzeichnen, kennzeichnet. Ausweisen, weist aus.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الغذاء والبيانات"
+    },
+    {
+      "assetId": "DL-B2-08-AUD-MODEL-01",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "title": "نماذج العملية والحالة الناتجة في المبني للمجهول",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-08-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Zutaten werden abgewogen. Die Zutaten sind abgewogen. Die Tabelle wird überprüft. Die Tabelle ist überprüft. Die Probe wird geprüft. Die Proben werden geprüft. Die Proben sind geprüft.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) المبني للمجهول: عملية أم حالة ناتجة؟"
+    },
+    {
+      "assetId": "DL-B2-08-AUD-DLG-01",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "title": "حوار: Lina والطاهي في مطبخ تدريبي",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-08-AUD-DLG-01-01.mp3",
+          "speaker": "Lina",
+          "text": "Was passiert mit den Zutaten für die Übung?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B2-08-AUD-DLG-01-02.mp3",
+          "speaker": "Koch",
+          "text": "Zuerst werden sie abgewogen und in kleine Proben geteilt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-08-AUD-DLG-01-03.mp3",
+          "speaker": "Lina",
+          "text": "Und wie werden die Daten festgehalten?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B2-08-AUD-DLG-01-04.mp3",
+          "speaker": "Koch",
+          "text": "Die Messwerte werden in eine Tabelle eingetragen. Danach wird die Tabelle überprüft.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-08-AUD-DLG-01-05.mp3",
+          "speaker": "Lina",
+          "text": "Ist die Tabelle schon fertig?",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-B2-08-AUD-DLG-01-06.mp3",
+          "speaker": "Koch",
+          "text": "Ja, sie ist geprüft und für die Präsentation freigegeben. Die Werte sind aber nur ein Beispiel für diese Übung.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في مطبخ تدريبي"
+    },
+    {
+      "assetId": "DL-B2-08-AUD-READ-01",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "title": "قراءة: جدول خيالي وقيم المزيجين A وB",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-08-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "In einer fiktiven Lehrküche werden zwei Müslimischungen untersucht. Zuerst werden die Zutaten abgewogen und die Proben gekennzeichnet. Danach werden der Zuckergehalt und die Ballaststoffmenge je 100 Gramm erfasst. Die Messwerte werden in eine Tabelle eingetragen und anschließend überprüft. Nach der Kontrolle ist die Tabelle für die Sprachübung freigegeben. Fiktive Werte je 100 Gramm, nur für das Sprachtraining. Mischung A: Zuckergehalt 8 Gramm, Ballaststoffe 6 Gramm. Mischung B: Zuckergehalt 11 Gramm, Ballaststoffe 4 Gramm. Diese Zahlen allein reichen nicht aus, um die Ernährung einer Person zu beurteilen oder gesundheitliche Ratschläge zu geben. Es sind hypothetische Werte, die veranschaulichen, wie Daten erfasst und gelesen werden.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: جدول خيالي للتدريب"
+    },
+    {
+      "assetId": "DL-B2-08-AUD-LST-01",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "title": "استماع: إعداد عينات وفحص جدول البيانات",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-08-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Heute werden in der Lehrküche drei Proben vorbereitet. Die Zutaten werden abgewogen und jede Probe wird gekennzeichnet. Danach werden die Messwerte in eine Tabelle eingetragen. Am Ende ist die Tabelle geprüft, aber die Ergebnisse sind noch nicht ausgewertet. Morgen werden die Daten gemeinsam besprochen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ],
   "selectedVoiceIds": [

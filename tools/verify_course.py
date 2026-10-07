@@ -63,6 +63,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B2-05": "b2-05-health-fitness-medical-information",
     "DL-B2-06": "b2-06-study-applications-verb-noun-phrases",
     "DL-B2-07": "b2-07-travel-experiences-prepositional-relatives",
+    "DL-B2-08": "b2-08-food-nutrition-data-passives",
 }
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
