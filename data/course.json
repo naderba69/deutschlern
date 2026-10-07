@@ -25084,6 +25084,121 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-03-AUD-PHR-01",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "title": "مفردات الاستهلاك والبدائل",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-03-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der Verbrauch. Die Ressource, die Ressourcen. Die Verpackung, die Verpackungen. Das Einwegprodukt, die Einwegprodukte. Das Mehrwegsystem, die Mehrwegsysteme. Die Rückgabe, die Rückgaben. Die Wiederverwendung. Die Reparatur, die Reparaturen. Der Abfall, die Abfälle. Die Kreislaufwirtschaft. Vermeiden, vermeidet. Wiederverwenden, verwendet wieder. Trennen, trennt. Entsorgen, entsorgt. Langlebig. Wiederverwendbar.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الاستهلاك والبدائل"
+    },
+    {
+      "assetId": "DL-B2-03-AUD-MODEL-01",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "title": "نماذج المبني للمجهول مع الأفعال الناقصة",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-03-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Einwegverpackungen müssen reduziert werden. Mehrwegbehälter können mehrfach verwendet werden. Beschädigte Geräte sollten repariert werden. Man kann Glasflaschen wiederverwenden. Glasflaschen können wiederverwendet werden.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) Passiv mit Modalverben"
+    },
+    {
+      "assetId": "DL-B2-03-AUD-DLG-01",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "title": "حوار: Nadia والبائع في متجر محلي",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-03-AUD-DLG-01-01.mp3",
+          "speaker": "Nadia",
+          "text": "Was passiert mit den Mehrwegbechern nach dem Verkauf?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-03-AUD-DLG-01-02.mp3",
+          "speaker": "Verkäufer",
+          "text": "Sie können an der Kasse zurückgegeben werden. Danach werden sie gereinigt.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-03-AUD-DLG-01-03.mp3",
+          "speaker": "Nadia",
+          "text": "Und was ist mit den Verpackungen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-03-AUD-DLG-01-04.mp3",
+          "speaker": "Verkäufer",
+          "text": "Ein Teil kann vermieden werden, wenn Kundinnen eigene Behälter mitbringen. Verpackungen, die noch gebraucht werden, müssen richtig getrennt werden.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-03-AUD-DLG-01-05.mp3",
+          "speaker": "Nadia",
+          "text": "Werden beschädigte Produkte gleich weggeworfen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-03-AUD-DLG-01-06.mp3",
+          "speaker": "Verkäufer",
+          "text": "Nicht immer. Manche Gegenstände können repariert werden. Wir prüfen zuerst, ob sich die Reparatur lohnt.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي في متجر محلي"
+    },
+    {
+      "assetId": "DL-B2-03-AUD-READ-01",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "title": "قراءة: تجربة متجر Kreislauf الخيالي",
+      "kind": "reading",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-03-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Der fiktive Laden „Kreislauf“ erprobt mehrere Möglichkeiten, Materialien länger zu nutzen. Getränke können in Mehrwegbechern verkauft werden; die Becher werden nach der Rückgabe gereinigt und erneut verwendet. Einige Verpackungen können vermieden werden, wenn Kundinnen und Kunden eigene Behälter mitbringen. Beschädigte Gegenstände sollen zuerst geprüft werden, bevor sie entsorgt werden. Wenn eine Reparatur sinnvoll ist, kann sie in einer örtlichen Werkstatt organisiert werden. Das Team sammelt Rückmeldungen, um herauszufinden, welche Schritte im Alltag gut funktionieren. Es veröffentlicht noch keine Ergebnisse; die Möglichkeiten werden zunächst getestet.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "4) نص قراءة أصلي: تجربة متجر خيالي"
+    },
+    {
+      "assetId": "DL-B2-03-AUD-LST-01",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "title": "استماع: إجراءات مقهى لإعادة الاستخدام والإصلاح",
+      "kind": "listening",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-03-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten. Die Becher können gegen Pfand ausgeliehen und später zurückgegeben werden. Essensreste werden getrennt gesammelt. Beschädigte Tabletts müssen nicht sofort ersetzt werden; zuerst wird geprüft, ob sie repariert werden können. Das Team sammelt Rückmeldungen, um Vorschläge der Gäste kennenzulernen und weniger Material zu verschwenden.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "5) نص استماع معدّ للنطق"
     }
   ]
 }

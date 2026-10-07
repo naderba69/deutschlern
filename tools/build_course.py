@@ -57,6 +57,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-12": "b1-12-innovation-research-future",
     "DL-B2-01": "b2-01-time-management-habits-reading",
     "DL-B2-02": "b2-02-career-formal-communication-konjunktiv1",
+    "DL-B2-03": "b2-03-consumption-environment-passive-modal",
 }
 
 
