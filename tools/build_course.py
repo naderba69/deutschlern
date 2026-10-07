@@ -55,6 +55,7 @@ AUDIO_LESSON_BY_PREFIX = {
     "DL-B1-10": "b1-10-media-news-formal-communication",
     "DL-B1-11": "b1-11-history-politics-passive-past",
     "DL-B1-12": "b1-12-innovation-research-future",
+    "DL-B2-01": "b2-01-time-management-habits-reading",
 }
 
 

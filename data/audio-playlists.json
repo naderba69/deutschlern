@@ -3661,6 +3661,99 @@
       ],
       "transcriptPolicy": "offer",
       "sectionHeading": "5) نص استماع معدّ للنطق"
+    },
+    {
+      "assetId": "DL-B2-01-AUD-PHR-01",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "title": "مفردات الوقت والقراءة المركّزة",
+      "kind": "phrase_bank",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-01-AUD-PHR-01.mp3",
+          "speaker": "Narrator",
+          "text": "Die Zeiteinteilung. Die Priorität, die Prioritäten. Der Zeitblock, die Zeitblöcke. Die Ablenkung, die Ablenkungen. Die Unterbrechung, die Unterbrechungen. Die Lesestrategie, die Lesestrategien. Der Überblick. Die Notiz, die Notizen. Priorisieren, priorisiert. Bündeln, bündelt. Sich konzentrieren auf, konzentriert sich. Abschalten, schaltet ab. Bewältigen, bewältigt. Realistisch. Schrittweise.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "1) مفردات الوقت والقراءة المركّزة"
+    },
+    {
+      "assetId": "DL-B2-01-AUD-MODEL-01",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "title": "نماذج شرح الطريقة والتمييز بينها وبين الغاية",
+      "kind": "model_sentences",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-01-AUD-MODEL-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne. Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren. Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele. Ich schreibe eine Liste, um nichts zu vergessen. Ich vergesse weniger, indem ich eine Liste führe.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "2) شرح الطريقة بـindem وdadurch, dass"
+    },
+    {
+      "assetId": "DL-B2-01-AUD-DLG-01",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "title": "حوار: Hana وKarim ينظّمان الأسبوع",
+      "kind": "dialogue",
+      "status": "generated_pending_acoustic_review",
+      "segments": [
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-01.mp3",
+          "speaker": "Hana",
+          "text": "Wie schaffst du es, Arbeit und Lesen in deiner Woche zu verbinden?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-02.mp3",
+          "speaker": "Karim",
+          "text": "Ich plane feste Zeitblöcke ein. Dadurch, dass ich ähnliche Aufgaben bündele, habe ich abends mehr freie Zeit.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-03.mp3",
+          "speaker": "Hana",
+          "text": "Und wie bleibst du beim Lesen konzentriert?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-04.mp3",
+          "speaker": "Karim",
+          "text": "Ich schalte mein Telefon aus und mache nach jedem Abschnitt kurze Notizen.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-05.mp3",
+          "speaker": "Hana",
+          "text": "Liest du immer gleich schnell?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-06.mp3",
+          "speaker": "Karim",
+          "text": "Nein. Ich passe meine Lesestrategie an den Text an, indem ich bei einem schwierigen Kapitel langsamer lese.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-07.mp3",
+          "speaker": "Hana",
+          "text": "Das klingt realistisch.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-B2-01-AUD-DLG-01-08.mp3",
+          "speaker": "Karim",
+          "text": "Ja, ich plane auch Pausen ein. Nicht jede Stunde muss vollständig verplant sein.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "transcriptPolicy": "offer",
+      "sectionHeading": "3) حوار أصلي عن تنظيم أسبوع مزدحم"
     }
   ],
   "selectedVoiceIds": [

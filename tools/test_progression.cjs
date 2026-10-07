@@ -77,8 +77,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.length", context), 2, "local performance tasks and rubrics must be carried into the bundle");
   assert.equal(vm.runInContext("lessonAssessmentReady(course.lessons[0])", context), true, "the no-audio local assessment path must be available after review");
   assert.equal(vm.runInContext("course.lessons[0].performanceTasks.every((task) => task.selfCheck.audioRequired === false)", context), true, "A0 assessments must not depend on audio during the content-production batch");
-  assert.equal(vm.runInContext("course.audioAssets.length", context), 157, "all audio assets through B1.12 must be carried into the course bundle");
-  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 346, "the audio manifest must contain all three hundred forty-six clips");
+  assert.equal(vm.runInContext("course.audioAssets.length", context), 160, "all audio assets through partial B2.1 must be carried into the course bundle");
+  assert.equal(courseData.audioAssets.reduce((count, asset) => count + asset.segments.length, 0), 356, "the audio manifest must contain all three hundred fifty-six clips");
   assert.equal(courseData.lessons.filter((lesson) => lesson.assessment?.status === "ready").length, 53, "the course bundle must carry all fifty-three ready lesson assessments through B2.12");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.quiz.length, 0), 530, "the course bundle must carry all five hundred thirty scored lesson questions");
   assert.equal(courseData.lessons.reduce((count, lesson) => count + lesson.performanceTasks.length, 0), 106, "the course bundle must carry all one hundred six lesson performance tasks");
@@ -125,6 +125,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     "DL-B1-10": "b1-10-media-news-formal-communication",
     "DL-B1-11": "b1-11-history-politics-passive-past",
     "DL-B1-12": "b1-12-innovation-research-future",
+    "DL-B2-01": "b2-01-time-management-habits-reading",
   };
   for (const asset of courseData.audioAssets) {
     const prefix = asset.assetId.split("-").slice(0, 3).join("-");
@@ -549,7 +550,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b1HealthAudioMarkup, /نهائي/);
   assert.doesNotMatch(b1HealthAudioMarkup, /للمراجعة/);
   assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'ready').length", context), 137, "previously approved audio assets must retain their ready status");
-  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 20, "B1.9 through B1.12 assets must await user review while remaining playable");
+  assert.equal(vm.runInContext("course.audioAssets.filter((asset) => asset.status === 'generated_pending_acoustic_review').length", context), 23, "B1.9 through partial B2.1 assets must await user review while remaining playable");
   assert.equal(vm.runInContext("course.audioAssets.every((asset) => ['ready', 'generated_pending_acoustic_review'].includes(asset.status))", context), true, "audio assets must have a valid approved or preview-pending status");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), "a0-01-alphabet", "the first required step must be A0.1");
   assert.equal(vm.runInContext("isLessonAccessible(course.lessons[0])", context), true, "the first A0 lesson must be accessible");
@@ -1260,7 +1261,53 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.ok(b2MethodAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-01-G01")), "all B2.1 questions must map to the lesson objective");
   assert.ok(b2MethodAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-01-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B2.1 performance tasks must map to T08 and offer written/oral self-checks without recording");
   assert.deepEqual(b2MethodAssessment.performanceTasks.find((task) => task.id === "DL-B2-01-P02").sourceTaskIds, ["DL-B2-01-T06", "DL-B2-01-T08"], "B2.1 P02 must link the written listening text and T08 method description");
-  assert.equal(courseData.audioAssets.some((asset) => asset.lessonId === b2MethodAssessment.id), false, "B2.1 assessment must remain independent of generated audio");
+  const methodAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2MethodAssessment.id);
+  assert.equal(methodAssets.length, 3);
+  assert.equal(methodAssets.reduce((count, asset) => count + asset.segments.length, 0), 10);
+  assert.deepEqual(methodAssets.map((asset) => asset.kind), ["phrase_bank", "model_sentences", "dialogue"], "B2.1 reading and listening remain for the next turn");
+  assert.ok(methodAssets.every((asset) => asset.status === "generated_pending_acoustic_review" && asset.transcriptPolicy === "offer"), "B2.1 previews remain playable with transcripts and no final status");
+  const methodHeadings = b2MethodSource.split(/\r?\n/).filter((line) => line.startsWith("## ")).slice(0, 3).map((line) => line.slice(3));
+  assert.deepEqual(methodAssets.map((asset) => asset.sectionHeading), methodHeadings);
+  for (const term of ["Die Zeiteinteilung", "Die Priorität, die Prioritäten", "Der Zeitblock, die Zeitblöcke", "Die Ablenkung, die Ablenkungen", "Die Unterbrechung, die Unterbrechungen", "Die Lesestrategie, die Lesestrategien", "Der Überblick", "Die Notiz, die Notizen", "Priorisieren, priorisiert", "Bündeln, bündelt", "Sich konzentrieren auf, konzentriert sich", "Abschalten, schaltet ab", "Bewältigen, bewältigt", "Realistisch", "Schrittweise"]) {
+    assert.ok(methodAssets[0].segments[0].text.includes(term), `B2.1 vocabulary must include ${term}`);
+  }
+  assert.equal(methodAssets[0].segments[0].voiceId, "voice-02");
+  const methodExamplesSource = b2MethodSource.split("## " + methodHeadings[1])[1].split("## " + methodHeadings[2])[0];
+  const methodExamples = [...methodExamplesSource.matchAll(/^- \*\*(.+?)\*\*/gm)].map((match) => match[1]);
+  assert.equal(methodExamples.length, 5);
+  assert.equal(methodAssets[1].segments[0].text, methodExamples.join(" "), "B2.1 models must include all five source examples, including method vs purpose");
+  assert.equal(methodAssets[1].segments[0].voiceId, "voice-02");
+  const methodDialogue = [...b2MethodSource.matchAll(/^\*\*(Hana|Karim):\*\* (.+?)\s*$/gm)].map((match) => ({speaker: match[1], text: match[2]}));
+  assert.equal(methodDialogue.length, 8);
+  assert.deepEqual(methodAssets[2].segments.map(({speaker, text}) => ({speaker, text})), methodDialogue);
+  for (const segment of methodAssets[2].segments) assert.equal(segment.voiceId, segment.speaker === "Hana" ? "voice-02" : "voice-03");
+  const previousKarim = courseData.audioAssets.find((asset) => asset.assetId === "DL-B1-01-AUD-DLG-01").segments.find((segment) => segment.speaker === "Karim");
+  assert.equal(methodAssets[2].segments[1].voiceId, previousKarim.voiceId, "Karim must retain his established voice");
+  const methodLayout = vm.runInContext("renderLessonAudioContent(getLessonsInLevel('B2')[0])", context);
+  assert.equal(methodLayout.audioPanel, "");
+  for (const asset of methodAssets) {
+    const start = methodLayout.contentHtml.indexOf(`<h2 dir="auto">${asset.sectionHeading}</h2>`);
+    const next = methodLayout.contentHtml.indexOf('<h2 dir="auto">', start + 1);
+    const section = methodLayout.contentHtml.slice(start, next < 0 ? undefined : next);
+    assert.ok(section.includes(`data-audio-id="${asset.assetId}"`));
+    assert.equal(methodLayout.contentHtml.split(`data-audio-id="${asset.assetId}"`).length - 1, 2, "one card with two rate buttons per source section");
+    assert.match(section, /للمراجعة/);
+    assert.doesNotMatch(section, /is-final/);
+    for (const rate of [1, 0.8]) {
+      vm.runInContext(`playAudioAsset('${asset.assetId}', ${rate})`, context);
+      for (const segment of asset.segments) {
+        const audio = FakeAudio.instances.at(-1);
+        assert.equal(audio.src, segment.src);
+        assert.equal(audio.started, true);
+        assert.equal(audio.playbackRate, rate);
+        audio.emit('ended');
+      }
+      vm.runInContext('stopAudioPlayback()', context);
+    }
+  }
+  assert.doesNotMatch(methodLayout.contentHtml, /data-audio-id="DL-B1-/);
+  assert.ok(b2MethodAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), "B2.1 assessment remains independent of optional recordings");
+
   assert.match(b2MethodSource, /أو قدّم شرحًا شفهيًا مماثلًا/);
   assert.match(b2MethodSource, /اكتب النص ثم اقرأه بصوت واضح/);
   assert.match(b2MethodSource, /لا يلزم تسجيل/);
@@ -1854,7 +1901,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), true, "B2.12 must open after B2.11 mastery because its assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[11].id, "B2.12 must be the next required step after mastering B2.11");
 
-  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B1.12 (157 assets/346 clips; 137 ready and twenty awaiting review; B1.12 has five assets/twelve clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria, B2.2 Konjunktiv I/source-attribution criteria, B2.3 passive-with-modals criteria, B2.4 Partizip I/II adjective criteria, B2.5 cause/effect and Genitiv criteria, B2.6 academic Nomen-Verb-Verbindungen criteria, B2.7 prepositional-relative-clause criteria, B2.8 Vorgangspassiv/Zustandspassiv criteria, B2.9 wo(r)/da(r)-preposition criteria, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
+  console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through partial B2.1 (160 assets/356 clips; 137 ready and twenty-three awaiting review; B2.1 has three assets/ten clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria and section-mapped vocabulary/models/eight-turn dialogue, B2.2 Konjunktiv I/source-attribution criteria, B2.3 passive-with-modals criteria, B2.4 Partizip I/II adjective criteria, B2.5 cause/effect and Genitiv criteria, B2.6 academic Nomen-Verb-Verbindungen criteria, B2.7 prepositional-relative-clause criteria, B2.8 Vorgangspassiv/Zustandspassiv criteria, B2.9 wo(r)/da(r)-preposition criteria, B2.10 present/past hypotheses, wishes and possibility, B2.11 nominal style, and B2.12 media attribution and reported speech.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;
