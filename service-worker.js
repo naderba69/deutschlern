@@ -1,4 +1,4 @@
-const CACHE_NAME = 'deutsch-pfad-v52';
+const CACHE_NAME = 'deutsch-pfad-v53';
 const APP_SHELL = [
   './',
   './index.html',

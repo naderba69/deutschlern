@@ -1,6 +1,6 @@
 # A1.2 — الأسرة والمهن
 
-**المدة:** 30 دقيقة · **المهارات:** مفردات، قراءة، استماع قصير، محادثة وكتابة  
+**المدة:** 30 دقيقة (تقدير مرن؛ يمكن تقسيمه على جلستين) · **المهارات:** مفردات، قراءة، استماع قصير، محادثة وكتابة
 **هدف التواصل:** أستطيع أن أصف أسرتي وأذكر مهنة شخص وأسأل عن عمله.
 
 ## 1) مفردات الأسرة
@@ -36,9 +36,9 @@
 
 ## 3) القواعد: mein وdein
 
-تتغير نهاية **mein** و**dein** بحسب الاسم الذي يأتي بعدهما:
+نستعمل **mein** مع المتحدث (ملكي/قريبي) و**dein** مع المخاطب بصيغة du. النهاية تتبع جنس الاسم وعدده وحالته الإعرابية، لا جنس الشخص المتكلم. الجدول التالي لحالة الرفع **Nominativ**، مثل **Mein Vater ist Koch.** و**Das ist mein Bruder.**؛ ليس قاعدة لكل موضع في الجملة:
 
-| الاسم | «أخي/أختي» |
+| الاسم في الرفع | أمثلة mein/meine |
 |---|---|
 | der Vater / der Bruder | mein Vater / mein Bruder |
 | die Mutter / die Schwester | meine Mutter / meine Schwester |
@@ -52,22 +52,54 @@
 
 للتعريف بشخص: **Das ist mein Bruder. Er heißt Nabil.** / **Das ist meine Schwester. Sie heißt Amel.**
 
+**لماذا einen Bruder؟** في **Ich habe einen Bruder.** يأتي الاسم بعد haben مفعولًا به في **Akkusativ**؛ المذكر يأخذ einen، والمؤنث يبقى eine في **Ich habe eine Schwester.** وبالمثل نقول **Ich sehe meinen Bruder.** (أرى أخي)، لا mein Bruder في هذا الموضع. أما **Ich habe keine Geschwister.** فتنفي وجود إخوة/أخوات. نحفظ هذه الأنماط الآن، دون مطالبة بحفظ جميع جداول الحالات.
+
 ### تذكير بتصريف arbeiten
 
+| الضمير | arbeiten |
+|---|---|
 | ich | arbeite |
 | du | arbeitest |
-| er/sie | arbeitet |
+| er/sie/es | arbeitet |
 | wir | arbeiten |
 | ihr | arbeitet |
 | sie/Sie | arbeiten |
+
+لأن جذر arbeit- ينتهي بـt، نلاحظ e في **du arbeitest، er arbeitet، ihr arbeitet**؛ لا نحذفها. أما **studieren**: ich studiere، du studierst، er/sie studiert، wir studieren؛ نحتاج wir studieren في التمرين.
 
 ## 4) أسئلة عن العمل والأسرة
 
 - **Was bist du von Beruf?** — ما مهنتك؟
 - **Was machen Sie beruflich?** — ماذا تعمل/تعملين؟ (رسمي)
+- **Was ist dein Vater von Beruf?** — ما مهنة والدك؟
 - **Wo arbeitet dein Vater?** — أين يعمل والدك؟
 - **Hast du Geschwister?** — هل لديك إخوة أو أخوات؟
-- **Ja, ich habe einen Bruder. / Nein, ich habe keine Geschwister.**
+- **Ja, ich habe einen Bruder. / Nein, ich habe keine Geschwister.** — نعم، لدي أخ. / لا، ليس لدي إخوة أو أخوات.
+
+**Was machen deine Eltern beruflich?** سؤال صحيح عن عمل الوالدين، لكنه يختلف عن سؤال مهنة الأب المفرد الذي سنستعمله في مهمة المقابلة. ليست المهنة هي مكان العمل؛ **Koch** مهنة و**in einem Hotel** مكان. استخدم أسرة خيالية في التدريب ولا تفترض بيانات حقيقية عن أحد.
+
+### مساعدة لفهم الأمثلة والنصين
+
+- **der Onkel** — العم أو الخال.
+- **die Tante** — العمة أو الخالة.
+- **Geschwister** — إخوة و/أو أخوات في هذا الاستعمال؛ لا تعني الذكور فقط.
+- **die Schülerin** — تلميذة في المدرسة، وليست بالضرورة طالبة جامعية مثل Studentin.
+- **der Mechaniker** — الميكانيكي؛ مهنة وردت في نص Youssef.
+- **die Werkstatt** — الورشة؛ in einer Werkstatt = في ورشة.
+- **die Klinik** — مؤسسة علاجية/مستشفى في هذا السياق؛ in einer Klinik = في مؤسسة علاجية.
+- **die Universität** — الجامعة؛ an der Universität = في الجامعة.
+- **das Hotel** — الفندق؛ in einem Hotel = في فندق.
+- **das Café** — المقهى؛ in einem Café = في مقهى.
+- **die Schule** — المدرسة؛ in einer Schule = في مدرسة.
+- **Medizin studieren** — يدرس الطب في الجامعة؛ Student حالة دراسية وليست وظيفة مأجورة بالضرورة.
+- **nicht sehr groß** — ليست كبيرة جدًا.
+- **noch** — ما زالت/لا تزال في noch Schülerin.
+- **am Sonntag** — يوم الأحد.
+- **oft besuchen** — يزور كثيرًا/غالبًا؛ wir besuchen unsere Großmutter = نزور جدتنا.
+- **Wen …?** — من…؟ للسؤال عن الشخص الواقع عليه الفعل، مثل من تزور الأسرة؟
+- **ihr Vater / seine Mutter** — والدها (Rania) / والدته (Youssef) في أسئلة النصين؛ يحدد السياق الشخص المقصود.
+
+عبارات المكان أعلاه نماذج مع Dativ لتسهيل الفهم، لا درس كامل في حروف الجر. المطلوب هنا وصف الأسرة والعمل، وليس اشتقاق جميع نهايات الحالات وحدك.
 
 ## 5) نص قراءة أصلي
 
@@ -81,11 +113,13 @@
 4. Hat Rania eine Schwester?
 5. Wen besucht die Familie oft am Sonntag?
 
-## 6) نص الاستماع المعدّ للتسجيل أو النطق
+## 6) نص الاستماع — التسجيل موجود
 
 > Guten Tag! Ich bin Youssef. Mein Vater arbeitet in einer Werkstatt. Er ist Mechaniker. Meine Mutter ist Ärztin und arbeitet in einer Klinik. Meine Schwester heißt Leila. Sie studiert an der Universität.
 
-أجب بعد الاستماع أو القراءة:
+يمكنك الاستماع أولًا دون النظر ثم مقارنة إجاباتك بالنص. النص ظاهر وسياسة التفريغ الحالية offer؛ القراءة بديل لفهم النص لكنها ليست دليلًا على فهم مسموع. أسئلة التقييم المحسوبة لا تتطلب تشغيل التسجيل، ولا نغيّر الصوت هنا.
+
+أجب بعد الاستماع أو القراءة البديلة:
 
 1. Was ist Youssefs Vater von Beruf?
 2. Wo arbeitet seine Mutter?
@@ -116,13 +150,15 @@
 
 ### تمرين 4 — كوّن جملة
 
+ابدأ كل جملة بالعبارة الاسمية Meine Schwester / Mein Vater / Mein Bruder، وأضف النقطة. غيّر الحرف الأول إلى كبير في بداية الجملة؛ المطلوب هذا النمط، لا نفي صحة ترتيبات أخرى.
+
 1. meine / ist / Schwester / Ärztin
 2. Vater / als Koch / arbeitet / mein
 3. heißt / Bruder / Mein / Sami
 
-### تمرين 5 — اسأل عن المهنة
+### تمرين 5 — اسأل عن المهنة ومكان العمل والإخوة
 
-اكتب السؤال المناسب لكل جواب:
+اختر من الأسئلة الثلاثة واكتب السؤال المطابق لكل جواب: **Was bist du von Beruf? / Wo arbeitet dein Vater? / Hast du Geschwister?** لا تخلط سؤال المهنة بسؤال مكان العمل:
 
 1. ______? — Ich bin Lehrerin.
 2. ______? — Mein Vater arbeitet in einem Hotel.
@@ -130,16 +166,16 @@
 
 ### تمرين 6 — فهم القراءة
 
-حدّد **صحيح أو خطأ**، ثم صحّح الخطأ:
+حدّد **صحيح أو خطأ بحسب البيانات المذكورة في النص**، ثم صحّح الخطأ. لا تستنتج عملًا غير مذكور من الدراسة أو العكس:
 
 1. Rania wohnt in Tunis.
 2. Ihr Vater ist Koch.
-3. Sami arbeitet in Nabeul.
+3. Sami studiert in Nabeul.
 4. Die Familie besucht oft die Großmutter.
 
 ### تمرين 7 — فهم الاستماع
 
-اختر الجواب الصحيح:
+اختر الجواب الصحيح من التسجيل، أو من النص إن استخدمت القراءة البديلة. في الحالة الثانية هو فهم كتابي لا اختبار استماع:
 
 1. Youssefs Vater ist … أ. Mechaniker ب. Student
 2. Seine Mutter arbeitet … أ. in einer Schule ب. in einer Klinik
@@ -147,11 +183,13 @@
 
 ### تمرين 8 — ملف عائلي قصير
 
-اكتب 5 جمل عن أسرة حقيقية أو متخيلة. استخدم **mein/meine** ومهنة واحدة على الأقل. لا يلزم مشاركة معلومات شخصية حقيقية.
+اكتب خمس جمل ألمانية عن أسرة خيالية من اختيارك. قدّم ثلاثة أفراد مختلفين باستخدام mein/meine، واذكر اسم أحدهم ومهنته. يمكنك توزيعها هكذا: تقديم الفرد الأول، اسمه، مهنته، تقديم الفرد الثاني، تقديم الفرد الثالث. هذه مهمة كتابة فقط؛ لا يلزم كشف بيانات حقيقية أو القراءة بصوت مرتفع.
 
 ### تمرين 9 — محادثة ثنائية
 
-اسأل زميلك: **Hast du Geschwister? Was machen deine Eltern beruflich?** ثم لخّص إجابته بجملتين. للتمرين الفردي اكتب سؤالًا وجوابًا لكل نقطة.
+اكتب مقابلة مع شخص خيالي: اسأل Hast du Geschwister? ثم Was ist dein Vater von Beruf? ثم Wo arbeitet dein Vater? واكتب جوابًا كاملًا مناسبًا لكل سؤال. اختر بيانات خيالية، ثم لخّص مهنة الأب ومكان عمله في جملتين باستخدام Der Vater ثم Er. اقرأ الأسئلة الثلاثة وأجوبتها وجملتي التلخيص بصوت مرتفع؛ يمكنك أداء الدورين وحدك، دون شريك أو تسجيل صوتي.
+
+نموذج التلخيص: **Der Vater ist Koch. Er arbeitet in einem Hotel.** لا يحتاج الدور الخيالي إلى وصف أسرتك الحقيقية.
 
 ## 8) مفتاح الإجابات
 
@@ -162,7 +200,40 @@
 - **تمرين 5:** 1. Was bist du von Beruf? 2. Wo arbeitet dein Vater? 3. Hast du Geschwister?
 - **تمرين 6:** 1. خطأ — Rania wohnt in Nabeul. 2. صحيح. 3. خطأ — Sami studiert in Tunis. 4. صحيح.
 - **تمرين 7:** 1. أ، 2. ب، 3. أ.
-- **تمرين 8 و9:** إجابات مفتوحة؛ راجع mein مع المذكر والمحايد، وmeine مع المؤنث والجمع.
+- **تمرين 8 — نموذج لخمس جمل:** Das ist mein Vater. Er heißt Ali. Er ist Koch. Das ist meine Mutter. Das ist mein Bruder. ثلاثة أفراد، والاسم والمهنة للأب؛ يمكن تبديل الشخصيات مع الحفاظ على المطلوب. هذه مهمة كتابية.
+- **تمرين 9 — نموذج للمقابلة:**
+
+**A:** Hast du Geschwister?
+
+**Rami:** Ja, ich habe einen Bruder.
+
+**A:** Was ist dein Vater von Beruf?
+
+**Rami:** Mein Vater ist Koch.
+
+**A:** Wo arbeitet dein Vater?
+
+**Rami:** Mein Vater arbeitet in einem Hotel.
+
+**التلخيص:** Der Vater ist Koch. Er arbeitet in einem Hotel.
+
+راجع الأسئلة الثلاثة والأجوبة وجملتي التلخيص، واقرأ كل الأجزاء. النموذج كتابي ولم يُنتج له تسجيل مستقل. المربعات وحد الطول لا يثبتان صحة اللغة أو النطق آليًا.
+
+### إجابات أسئلة النصين
+
+**القراءة:**
+
+1. Rania wohnt in Nabeul.
+2. Ihr Vater ist Koch.
+3. Sami studiert in Tunis. مدينة تونس، لا البلد Tunesien.
+4. Ja, Rania hat eine Schwester.
+5. Die Familie besucht am Sonntag oft die Großmutter.
+
+**الاستماع أو القراءة البديلة:**
+
+1. Sein Vater ist Mechaniker.
+2. Seine Mutter arbeitet in einer Klinik.
+3. Leila studiert an der Universität.
 
 ## 9) بطاقات مراجعة
 

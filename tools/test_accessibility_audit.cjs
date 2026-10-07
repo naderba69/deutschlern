@@ -68,6 +68,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.1-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.1-practical-form-fixture', width);
+  // CR8: scoped possessives, headed arbeiten table, and aligned family tasks.
+  await page.evaluate(() => openLesson('a1-02-work-family'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.2-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.2-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

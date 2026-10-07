@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-02-v1",
+    "version": "a1-02-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,10 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR8: مراجعة نصية لكل الوحدات بالمراجع في data/reviews/a1-02-review.json؛ ليست شهادة CEFR أو اعتماد نطق.",
+      "P01 يطابق T08: خمس جمل مكتوبة عن أسرة خيالية وثلاثة أفراد واسم ومهنة لشخص واحد. P02 يطابق T09: ثلاثة أسئلة وأجوبة ثم تلخيص بجملتين وأداء فردي.",
+      "قُيد جدول mein/dein بحالة الرفع، ووُضح الفرق عن einen/meinen Bruder. حُسّن ربط Q09 بـT04 ووضحت Tunis في Q08. مفاتيح الاختيار محفوظة.",
+      "أصلا القراءة والاستماع ومقطعاهما موجودان ومحفوظان دون تغيير أو استماع أو اعتماد جديد؛ لا يتطلب التقييم تشغيل الصوت."
     ]
   },
   "quiz": [
@@ -58,7 +59,7 @@
         "Dein"
       ],
       "answerIndex": 1,
-      "explanation": "Mutter مؤنث، لذلك نستخدم meine."
+      "explanation": "Mutter مؤنث مفرد في حالة الرفع هنا، فنكتب Meine في أول الجملة. تتغير نهاية الملكية أيضًا بحسب الحالة الإعرابية."
     },
     {
       "id": "DL-A1-02-Q03",
@@ -79,7 +80,7 @@
         "Dein"
       ],
       "answerIndex": 1,
-      "explanation": "Eltern جمع، لذلك نستخدم meine."
+      "explanation": "Eltern جمع في حالة الرفع هنا، لذلك نكتب Meine في أول الجملة."
     },
     {
       "id": "DL-A1-02-Q04",
@@ -163,7 +164,7 @@
         "في سوسة"
       ],
       "answerIndex": 1,
-      "explanation": "مفتاح النص يذكر أن Rania تسكن في Nabeul."
+      "explanation": "النص يقول: Ich heiße Rania und wohne in Nabeul. نابل هي مكان السكن."
     },
     {
       "id": "DL-A1-02-Q08",
@@ -180,16 +181,16 @@
       "prompt": "بحسب نص القراءة، أين يدرس Sami؟",
       "options": [
         "في نابل",
-        "في تونس",
+        "في تونس العاصمة",
         "في صفاقس"
       ],
       "answerIndex": 1,
-      "explanation": "مفتاح النص يذكر أن Sami يدرس في Tunis."
+      "explanation": "النص يقول: Mein Bruder Sami studiert in Tunis. المقصود مدينة تونس، لا اسم البلد Tunesien."
     },
     {
       "id": "DL-A1-02-Q09",
       "sourceTaskIds": [
-        "DL-A1-02-T08"
+        "DL-A1-02-T04"
       ],
       "objectiveIds": [
         "DL-A1-02-G01"
@@ -239,14 +240,13 @@
         "DL-A1-02-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب ملفًا عائليًا قصيرًا بالألمانية: اذكر ثلاثة أفراد من الأسرة، واسم شخص واحد ومهنته. اقرأ الملف بصوت مرتفع.",
+      "prompt": "اكتب خمس جمل ألمانية عن أسرة خيالية من اختيارك. قدّم ثلاثة أفراد مختلفين باستخدام mein/meine، واذكر اسم أحدهم ومهنته. يمكنك توزيعها هكذا: تقديم الفرد الأول، اسمه، مهنته، تقديم الفرد الثاني، تقديم الفرد الثالث. هذه مهمة كتابة فقط؛ لا يلزم كشف بيانات حقيقية أو القراءة بصوت مرتفع.",
       "criteria": {
-        "taskCompletion": "يذكر ثلاثة أفراد واسم شخص ومهنته.",
-        "meaningClarity": "تتضح صلة كل فرد بالشخص المذكور ومهنته.",
-        "targetSkill": "يستخدم mein/meine بحسب الاسم، ويختار صيغة مهنة مناسبة مثل Arzt/Ärztin."
+        "taskCompletion": "كتبت خمس جمل تتضمن ثلاثة أفراد مختلفين واسم أحدهم ومهنته.",
+        "meaningClarity": "تتضح صلة الأفراد بالمتحدث الخيالي، ويعود الاسم والمهنة على الشخص نفسه.",
+        "targetSkill": "أستخدم mein/meine في نماذج الرفع، وأصرف sein/heißen مع الشخص المفرد، وأختار اسم المهنة المناسب."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,8 +256,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 35,
-        "speakAloud": true,
+        "minimumResponseCharacters": 80,
+        "speakAloud": false,
         "audioRequired": false
       }
     },
@@ -274,11 +274,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "مثّل مقابلة قصيرة عن الأسرة والعمل: اسأل عن الإخوة ومهنة شخص ومكان عمله، ثم أجب بإجابات كاملة. دوّن الحوار واقرأه بصوت مرتفع.",
+      "prompt": "اكتب مقابلة مع شخص خيالي: اسأل Hast du Geschwister? ثم Was ist dein Vater von Beruf? ثم Wo arbeitet dein Vater? واكتب جوابًا كاملًا مناسبًا لكل سؤال. اختر بيانات خيالية، ثم لخّص مهنة الأب ومكان عمله في جملتين باستخدام Der Vater ثم Er. اقرأ الأسئلة الثلاثة وأجوبتها وجملتي التلخيص بصوت مرتفع؛ يمكنك أداء الدورين وحدك، دون شريك أو تسجيل صوتي.",
       "criteria": {
-        "taskCompletion": "يتضمن الحوار سؤالين وأجوبة مرتبطة بهما.",
-        "meaningClarity": "يفهم القارئ من يعمل وأين أو ما مهنته.",
-        "targetSkill": "يستخدم سؤالًا عن المهنة، وتصريفًا صحيحًا لفعل واحد على الأقل."
+        "taskCompletion": "كتبت الأسئلة الثلاثة وأجوبتها وجملتي التلخيص، وقرأت جميع الأجزاء بصوت مرتفع.",
+        "meaningClarity": "أجيب عن الإخوة والمهنة ومكان العمل، وأحافظ على البيانات نفسها في التلخيص.",
+        "targetSkill": "أميز بين Was … von Beruf? وWo arbeitet …?، وأستخدم habe/ist/arbeitet مع الفاعل المناسب وmein/dein في السياق المدرب."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -288,7 +288,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
+        "minimumResponseCharacters": 140,
         "speakAloud": true,
         "audioRequired": false
       }
