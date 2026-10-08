@@ -1,0 +1,1136 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-11-home-directions",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-11-v2",
+  "unitCount": 115,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "GIVE",
+      "title": "Duden geben",
+      "url": "https://www.duden.de/rechtschreibung/geben",
+      "scope": "كامل،الجزآن 0 و 1: المعنى 15 للوجود مع es gibt ومثال مذكر منصوب وجمع مع gibt؛ لا نقل معنى إعطاء شيء إلى هذا الدرس.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "ARTICLE",
+      "title": "Lingolia Deklination",
+      "url": "https://deutsch.lingolia.com/de/grammatik/nomen/deklination",
+      "scope": "كامل بعد إعادة توجيه الرابط القديم /akkusativ: جدول أدوات التنكير في Akkusativ وغيابها في الجمع. لم نعتمد الوسم f الخاطئ بعد das Kleid في المثال؛ الجدول المحايد صحيح.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "IMPERATIVE",
+      "title": "Lingolia Imperativ",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/imperativ",
+      "scope": "كامل: Gehen Sie و Geh(e)،وأثر bitte والنبرة؛ لا تعميم استثناءات الأفعال كلها من gehen.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "BALCONY",
+      "title": "Duden Balkon",
+      "url": "https://www.duden.de/rechtschreibung/Balkon",
+      "scope": "كامل: مذكر،والجمع Balkons أو Balkone،مع اختلاف استعمال إقليمي؛ لا تخطئة أحدهما.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "LOCAL",
+      "title": "Lingolia lokale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/lokal",
+      "scope": "كامل،الجزآن 0 و 1: عبارات المصدر/الموقع/الوجهة وحروف الحالات المتغيرة. استُعمل النطاق اللازم فقط؛ لا تعميم كل عبارة في الصفحة إلى قاعدة بلا استثناء.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "كامل: الخبرية الأساسية وموقع الفعل مع تقديم المكان؛ لا تحويل الصياغات المطلقة في الشرح إلى منع لكل ترتيب آخر.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "LIVING",
+      "title": "Duden Wohnzimmer",
+      "url": "https://www.duden.de/rechtschreibung/Wohnzimmer",
+      "scope": "كامل: اسم غرفة الجلوس،محايد والجمع مماثل؛ لا نشتق منه حصر استقبال الضيوف في تلك الغرفة.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "OPPOSITE",
+      "title": "Duden gegenüber — Präposition",
+      "url": "https://www.duden.de/rechtschreibung/gegenueber_Praeposition",
+      "scope": "كامل: المقابلة المكانية و Dativ، وإمكان التقديم أو التأخير. لا استنتاج مسافة أو تخطيط هندسي من الكلمة وحدها.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "SUBJECT",
+      "title": "IDS Subjekt",
+      "url": "https://grammis.ids-mannheim.de/terminologie/251",
+      "scope": "كامل،الجزآن 0 و 1: توافق الفعل مع الفاعل والمفرد الشكلي في بعض الأفعال؛ مرجع عام،والدليل الخاص بـ es gibt في Duden geben. رابط السؤال 125 ليس جوابًا نحويًا.",
+      "access": "full_fetched_page"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/gegenueber",
+      "reason": "محتوى404 رغم نجاح استدعاء الجلب؛ استُعمل رابط Präposition الفعلي."
+    },
+    {
+      "url": "https://grammis.ids-mannheim.de/fragen/125",
+      "reason": "الصفحة تقول إن السؤال لم يُجب عنه بعد؛ عنوانه ليس دليلًا نحويًا مستقلًا."
+    }
+  ],
+  "researchNotes": [
+    "نتائج البحث كانت استكشافية؛ لم تعتمد صفحات StackExchange أو التطبيقات الجديدة أو مقتطفاتها مراجع مستقلة، بل جُلبت صفحات المراجع التسعة بالفعل.",
+    "رابط Lingolia /nomen/deklination/akkusativ أعاد إلى /nomen/deklination، لا صفحة منفصلة."
+  ],
+  "limitations": [
+    "115 وحدة و34 بندًا أو مطلبًا متداخلة،لا115 مهارة مستقلة؛ صف المفردات قد يضم كلمتين أو مفردًا وجمعًا،وسجل الصوت يعيد تغطية نص راجعناه.",
+    "9 مراجع كاملة؛ لا مدخل معجمي مستقل لكل لفظ أو ترجمة،والاستدلالات المتعلقة بالنص راجعها المساعد مباشرةً.",
+    "القراءة7 وحدات بما فيها ثلاث جمل داخل القول،والحوار5 أدوار.3 أصول/7 مقاطع محفوظة دون استماع أو اعتماد جديد؛تصحيح أسطر المصدر لا يغير التسجيلات.",
+    "الطول والمربعات والتفريغ لا تصحح اللغة أو النطق ولا تثبت الاستماع المستقل أو القدرة على الملاحة.لا شهادةCEFR/WCAG ولا مراجع بشري شرطًا للاستمرار."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-11-home-directions.md": "7043414fceae67478b12adc9358ba07f8e6c1704549627eb43ce9741703ea552",
+    "content/A1/lesson-11-home-directions.assessment.json": "42e22db35fe346fcfaee55e73f7358c429199074ace68124cdc757d745302753"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-11-AUD-READ-01": "0391fa5837184691f1fede7cf05c7923b3b0faf342a9cff49d985570cff8b125",
+    "DL-A1-11-AUD-LST-01": "4c4e2a6c7af244c389d6957f043997ea1decd2d9fc0040d9a026b6e4d3cc1a56",
+    "DL-A1-11-AUD-DLG-01": "adb25ba9eeaab96e7341482dfd5cb627f63107d29831044e89d4a1ad20eeb685"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "الهدف والوقت",
+      "finding": "وصف مسكن وطلب طريق وفهمه؛ الكتابة والاستماع الاختياري صريحان، و 35 دقيقة تقدير مرن لا حد للنجاح.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "es gibt",
+      "finding": "المعنى الوجود هنا لا إعطاء شيء لشخص؛ الموجود في Akkusativ، و gibt ثابت مع المفرد والجمع في هذا التركيب.",
+      "sourceIds": [
+        "GIVE",
+        "SUBJECT"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "التنكير والجمع",
+      "finding": "einen للمذكر، eine للمؤنث، ein للمحايد في المفرد؛ ليست أدوات تعريف. vier Stühle جمع بلا أداة تنكير مفردة.",
+      "sourceIds": [
+        "ARTICLE"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "الترتيب",
+      "finding": "الموقع الثاني كتلة نحوية في الخبرية؛ In meiner Wohnung gibt es صحيح. حُددت بدايات T04 مع قبول أكثر من موضع لـ bitte.",
+      "sourceIds": [
+        "MAIN"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "الاحترام والأمر",
+      "finding": "Gehen Sie خطاب رسمي، و Geh/Gehe للمفرد du؛ du gehst خبرية قد تشرح الطريق، وليست صيغة الأمر نفسها.",
+      "sourceIds": [
+        "IMPERATIVE"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "حدود الاستدلال المكاني",
+      "finding": "neben و gegenüber مختلفتان، لكن لا خريطة تحسم كل علاقات الجوار. T05.4 الجديد يناقض يوم الزيارة صراحةً بدل نفي علاقة مكانية اعتمادًا على أخرى.",
+      "sourceIds": [
+        "OPPOSITE"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "حدود الوجهات والحالات",
+      "finding": "Dativ في عبارات الموقع المعطاة لا يعني أن neben دائمًا معه؛ كما أن فعل الحركة لا يفرض Akkusativ على كل عبارة مكان. نحفظ العبارات دون درس كامل في الصفات.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "المهمتان والنموذجان",
+      "finding": "P01 أربع جمل كتابة فقط، و P02 خمس جمل مع الجهر: سؤال وأربع جمل جواب لا خمسة أدوار متناوبة. لكل مهمة تدريب مطابق ونموذج مستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "الصوت والنصوص",
+      "finding": "الحوار 5 أدوار، والقراءة والاستماع مقطع لكل منهما؛3 أصول/7 مقاطع محفوظة. الراوي 02 يقرأ سؤال الاستماع وجوابه؛ ليس ذلك دليل وحدة المتكلم في الموقف.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود القياس والخصوصية",
+      "finding": "لا عنوان حقيقي أو تسجيل متعلم أو شريك مطلوب. المسار خيالي وليس ملاحة فعلية؛ الطول والإقرار والتفريغ لا تثبت جودة اللغة أو النطق أو الاستماع المستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Wohnung | die Wohnungen | الشقة |",
+      "finding": "Wohnung مؤنث وجمعها Wohnungen؛ شقة لا مبنى كامل بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Haus | die Häuser | المنزل |",
+      "finding": "Haus محايد وجمعه Häuser مع أوملاوت؛ المنزل أو المبنى بحسب السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das Zimmer | die Zimmer | الغرفة |",
+      "finding": "Zimmer محايد وجمعه لا يتغير لفظه؛ الأداة والعدد يميزان.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| das Wohnzimmer | die Wohnzimmer | غرفة الجلوس |",
+      "finding": "Wohnzimmer محايد وجمعه مماثل؛ اسم غرفة الجلوس لا حصر مكان استقبال الضيوف.",
+      "sourceIds": [
+        "LIVING"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| das Schlafzimmer | die Schlafzimmer | غرفة النوم |",
+      "finding": "Schlafzimmer محايد وجمعه مماثل؛ غرفة النوم في الجدول.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Küche | die Küchen | المطبخ |",
+      "finding": "Küche مؤنث وجمعه Küchen؛ بعد es gibt نقول eine Küche.",
+      "sourceIds": [
+        "ARTICLE"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| das Bad | die Bäder | الحمّام |",
+      "finding": "Bad محايد وجمعه Bäder؛ الحمام في سياق السكن، لا كل معاني الكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| der Balkon | die Balkone / die Balkons | الشرفة |",
+      "finding": "Balkon مذكر؛ Balkone و Balkons جمعان صحيحان، وأضيف البديل دون تخطئة القديم.",
+      "sourceIds": [
+        "BALCONY"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Tisch | die Tische | الطاولة |",
+      "finding": "Tisch مذكر وجمعه Tische؛ يدعم einen Tisch في T02.5.",
+      "sourceIds": [
+        "ARTICLE"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| der Stuhl | die Stühle | الكرسي |",
+      "finding": "Stuhl مذكر وجمعه Stühle مع أوملاوت؛ vier Stühle في القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| das Bett | die Betten | السرير |",
+      "finding": "Bett محايد وجمعه Betten؛ ein Bett عند اختيار الأثاث.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| hell / dunkel | — | مضيء / مظلم |",
+      "finding": "hell/dunkel صفتا الإضاءة هنا، لا لونان محددان في هذا السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| groß / klein | — | كبير / صغير |",
+      "finding": "groß/klein للحجم؛ بعد ist بلا نهاية صفة إضافية في النموذج.",
+      "sourceIds": []
+    },
+    {
+      "id": "existence-01",
+      "text": "**Es gibt einen Balkon.** — توجد شرفة. (*der Balkon → einen Balkon*)",
+      "finding": "einen Balkon: مذكر مفرد في Akkusativ؛ الترجمة توجد شرفة صحيحة.",
+      "sourceIds": [
+        "ARTICLE",
+        "GIVE"
+      ]
+    },
+    {
+      "id": "existence-02",
+      "text": "**Es gibt eine Küche.** — يوجد مطبخ. (*die Küche → eine Küche*)",
+      "finding": "eine Küche: مؤنث مفرد، وتبقى صيغة eine هنا.",
+      "sourceIds": [
+        "ARTICLE",
+        "GIVE"
+      ]
+    },
+    {
+      "id": "existence-03",
+      "text": "**Es gibt ein Schlafzimmer.** — توجد غرفة نوم. (*das Schlafzimmer → ein Schlafzimmer*)",
+      "finding": "ein Schlafzimmer: محايد مفرد؛ لا einen.",
+      "sourceIds": [
+        "ARTICLE",
+        "GIVE"
+      ]
+    },
+    {
+      "id": "existence-04",
+      "text": "**In meiner Wohnung gibt es ein Wohnzimmer und zwei Schlafzimmer.** — في شقتي غرفة جلوس وغرفتا نوم.",
+      "finding": "عبارة المكان أولًا ثم gibt es؛ مفرد Wohnzimmer مع جمع عددي zwei Schlafzimmer، ولا تتغير gibt إلى geben.",
+      "sourceIds": [
+        "ARTICLE",
+        "GIVE"
+      ]
+    },
+    {
+      "id": "route-phrase-01",
+      "text": "**Entschuldigung, wie komme ich zum Bahnhof?** — عذرًا، كيف أصل إلى محطة القطار؟",
+      "finding": "طلب وصول إلى المحطة لا سؤال عن هوية المتكلم؛ zum Bahnhof هدف المسار.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "route-phrase-02",
+      "text": "**Gehen Sie geradeaus.** — اذهب إلى الأمام مباشرةً.",
+      "finding": "أمر رسمي بالتقدم مباشرةً؛ ليس جهة الشمال المطلقة.",
+      "sourceIds": [
+        "IMPERATIVE"
+      ]
+    },
+    {
+      "id": "route-phrase-03",
+      "text": "**Gehen Sie an der Ampel nach links.** — اتجه يسارًا عند إشارة المرور.",
+      "finding": "اليسار عند الإشارة، لا قبلها أو عند التقاطع غير المحدد.",
+      "sourceIds": [
+        "IMPERATIVE",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "route-phrase-04",
+      "text": "**Gehen Sie an der Kreuzung nach rechts.** — اتجه يمينًا عند التقاطع.",
+      "finding": "اليمين عند التقاطع؛ Kreuzung ليست Ampel نفسها بالضرورة.",
+      "sourceIds": [
+        "IMPERATIVE",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "route-phrase-05",
+      "text": "**Das Haus ist neben der Bäckerei.** — المنزل بجانب المخبز.",
+      "finding": "موقع المنزل بجانب المخبز؛ neben der هنا Dativ.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "route-phrase-06",
+      "text": "**Es ist gegenüber dem Park.** — إنه مقابل الحديقة.",
+      "finding": "مقابل الحديقة؛ es يعود إلى Haus المحايد في سياق المثال، و dem Park مع Dativ.",
+      "sourceIds": [
+        "OPPOSITE"
+      ]
+    },
+    {
+      "id": "direction-01",
+      "text": "**geradeaus** — إلى الأمام مباشرةً.",
+      "finding": "geradeaus مباشرةً إلى الأمام بحسب اتجاه السير، لا جهة ثابتة على الخريطة.",
+      "sourceIds": []
+    },
+    {
+      "id": "direction-02",
+      "text": "**links** — يسارًا.",
+      "finding": "links يسارًا، وفي عبارات الحركة nach links.",
+      "sourceIds": []
+    },
+    {
+      "id": "direction-03",
+      "text": "**rechts** — يمينًا.",
+      "finding": "rechts يمينًا، وليس links.",
+      "sourceIds": []
+    },
+    {
+      "id": "direction-04",
+      "text": "**die Ecke** — الزاوية.",
+      "finding": "Ecke زاوية؛ ليست كل زاوية تقاطع شوارع.",
+      "sourceIds": []
+    },
+    {
+      "id": "direction-05",
+      "text": "**die Kreuzung** — التقاطع.",
+      "finding": "Kreuzung تقاطع؛ الاسم المؤنث يفسر an der Kreuzung في المثال.",
+      "sourceIds": []
+    },
+    {
+      "id": "direction-06",
+      "text": "**die Ampel** — إشارة المرور.",
+      "finding": "Ampel إشارة مرور؛ لا استنتاج لون الإشارة أو تعليمات عبور حقيقية.",
+      "sourceIds": []
+    },
+    {
+      "id": "direction-07",
+      "text": "**neben** — بجانب.",
+      "finding": "neben بجانب؛ وصف مجاورة لا مقابلة.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "direction-08",
+      "text": "**gegenüber** — مقابل.",
+      "finding": "gegenüber مقابل؛ يأخذ Dativ في عبارة هذا الدرس.",
+      "sourceIds": [
+        "OPPOSITE"
+      ]
+    },
+    {
+      "id": "addressing-01",
+      "text": "**Gehen Sie** أمر بصيغة الاحترام لشخص واحد أو أكثر، ويمكن تلطيفه بـ **bitte**؛ النبرة والسياق مهمان أيضًا. **Geh** أو **Gehe** صيغة du، وترد في القراءة بين صديقين. أما **du gehst** فجملة خبرية قد تُستعمل لشرح الطريق، وليست تصريف الأمر نفسه. نحفظ هذه الصيغ دون دراسة كل أنواع الأمر.",
+      "finding": "Gehen Sie احترام لشخص أو أكثر، و Geh/Gehe بين المقربين؛ bitte والنبرة يؤثران في الأدب. لا تعميم كل الأمر على نموذج gehen وحده.",
+      "sourceIds": [
+        "IMPERATIVE"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "**Nabeul / am Samstag / am Sonntag** — مدينة نابل / يوم السبت / يوم الأحد؛ المكان مدينة لا دولة، واليومان مختلفان.",
+      "finding": "Nabeul مدينة نابل، والسبت Samstag غير الأحد Sonntag؛ يمهد لبند التناقض الجديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-02",
+      "text": "**Wohnung / Haus** — الشقة ليست المبنى كله بالضرورة. قول Lina إن شقتها بجانب المخبز لا يعطينا طابقًا أو رقم باب؛ لا نستنتج أن كل شقة منزل مستقل.",
+      "finding": "فرق الشقة عن المبنى؛ لا نستنتج الطابق أو المدخل من مجرد علاقة الجوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-03",
+      "text": "**hell / dunkel / klein, aber sehr hell** — مضيء / مظلم / صغير لكنه مضيء جدًا؛ الصفتان بعد sein بلا نهاية صفة إضافية في أمثلتنا.",
+      "finding": "klein و hell وصفان بعد ist؛ aber يقابل صغر المساحة بكثرة الضوء لا بنفي الصغر.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-04",
+      "text": "**Balkone / Balkons** — جمعان صحيحان للشرفة؛ لا نعد أحدهما خطأ لمجرد أن الجدول القديم عرض الآخر. Zimmer و Wohnzimmer و Schlafzimmer لا يتغير لفظها في الجمع.",
+      "finding": "بديل جمع الشرفة صحيح، وأسماء الغرف المركبة المعطاة لا تتغير لفظًا في الجمع.",
+      "sourceIds": [
+        "BALCONY"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "**im / vom / am / zum / zur** — in dem / von dem / an dem / zu dem / zu der؛ Im Wohnzimmer في غرفة الجلوس، vom Bahnhof من المحطة، bis zur Ampel حتى الإشارة.",
+      "finding": "توسعة im/vom/am/zum/zur صحيحة؛ bis zur Ampel نهاية خطوة الطريق لا نهاية المسار كله.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "**in meiner Wohnung / in einer kleinen Wohnung / an der großen Kreuzung** — في شقتي / في شقة صغيرة / عند التقاطع الكبير؛ عبارات Dativ معطاة للفهم، لا اختبار شامل لتصريف الصفات أو الملكية.",
+      "finding": "عبارات المكان بصفات معطاة في Dativ؛ لا اختبار عام لتصريف kleinen/großen أو meiner.",
+      "sourceIds": [
+        "LOCAL",
+        "ARTICLE"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "**Sie ist klein. / deine neue Wohnung / zu dir** — هي صغيرة (Sie تعود إلى الشقة هنا) / شقتك الجديدة / إليك؛ الحديث في الحوار بصيغة du، لا صيغة احترام بسبب الحرف الكبير أول الجملة.",
+      "finding": "Sie ist عن Wohnung، وصيغ deine/dir خطاب du؛ الحرف الكبير في أول الجملة ليس دليل احترام وحده.",
+      "sourceIds": [
+        "SUBJECT"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "**Am Samstag besucht ihn sein Freund Karim.** — يزوره صديقه كريم يوم السبت؛ Karim هو الزائر، و ihn يعود إلى Omar، و sein Freund صديقه. لا نعكس الزائر والمزور.",
+      "finding": "Karim هو الفاعل الزائر و ihn مفعول يعود إلى Omar؛ يطابق جواب سؤال القراءة 4.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "**erklärt den Weg / Wie komme ich…?** — يشرح الطريق / كيف أصل…؟ من الفعلين erklären و kommen. **Geh am Bahnhof geradeaus** عند المحطة، بينما **Vom Bahnhof gehst du geradeaus** يذكر نقطة الانطلاق من المحطة؛ لا نبدل النصين أو نفترض طريقًا واحدًا.",
+      "finding": "شرح الطريق وطلب الوصول؛ am Bahnhof عند المحطة، و vom Bahnhof منها. الطريقان ليسا نصًا واحدًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "**neben der Bäckerei / gegenüber dem Park** — بجانب المخبز / مقابل الحديقة؛ الأول علاقة جوار والثاني مقابلة، لا كلمتان مترادفتان. كلا التعبيرين لوصف موقع هنا مع Dativ؛ لا نعمم أن neben يأخذ Dativ في كل استعمال أو أن كل حركة تتطلب Akkusativ.",
+      "finding": "جوار ومقابلة مع عبارات Dativ محددة؛ لا اختزال الحالات في قاعدة حركة/سكون مطلقة.",
+      "sourceIds": [
+        "LOCAL",
+        "OPPOSITE"
+      ]
+    },
+    {
+      "id": "helper-11",
+      "text": "**die Bäckerei / das Café / die Post / der Bahnhof / der Park** — المخبز / المقهى / مكتب البريد في السياق / محطة القطار / الحديقة؛ هذه المعالم لا تحدد وحدها مسافة أو طريقًا حقيقيًا صالحًا للملاحة.",
+      "finding": "خمسة معالم لازمة لفهم النص؛ Post هنا مكتب بريد، لا افتراض مسافة أو طريق واقعي.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-12",
+      "text": "**fragen nach / nach welchem Ort? / dann / hier** — يسأل عن / عن أي مكان؟ / ثم / هنا؛ nach في السؤال غير nach links للاتجاه. تسجيل الاستماع يقرأ سؤالًا وجوابًا بصوت واحد؛ لا نستنتج أنهما شخص واحد في الموقف أو أن السائل وصل بالفعل.",
+      "finding": "fragen nach سؤال عن مكان، و nach links اتجاه؛ التسجيل بصوت واحد يمثل سؤالًا وجوابًا، لا إثبات وصول.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wie ist deine neue Wohnung?",
+      "finding": "Nora تسأل عن وصف الشقة الجديدة لا عدد غرف محدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Sie ist klein, aber sehr hell. Es gibt ein Wohnzimmer, eine Küche, ein Bad und einen Balkon.",
+      "finding": "Lina تصفها صغيرة ومضيئة وتعدد مرافقها؛ لم تذكر غرفة نوم، لكن ذلك لا يثبت عدم وجودها.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Schön! Wie komme ich zu dir?",
+      "finding": "Nora تسأل كيف تصل إليها، بصيغة du و dir؛ طلب طريق لا عنوان شخصي فعلي.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Vom Bahnhof gehst du geradeaus. An der Ampel gehst du nach links. Meine Wohnung ist neben der Bäckerei.",
+      "finding": "Lina تبدأ من المحطة ثم اليسار عند الإشارة؛ الشقة بجانب المخبز، لا وصف للطابق أو رقم الباب.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Danke. Ich komme am Samstag!",
+      "finding": "Nora تعلن قدومها السبت؛ ليس تقريرًا بأن الزيارة اكتملت.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Omar wohnt in einer kleinen Wohnung in Nabeul.",
+      "finding": "شقة صغيرة في نابل؛ لا طابق أو عنوان دقيق معطى.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Es gibt ein Wohnzimmer, ein Schlafzimmer, eine Küche und ein Bad.",
+      "finding": "غرفة جلوس وغرفة نوم ومطبخ وحمام؛ جواب عدد غرف النوم واحد في تعداد النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Im Wohnzimmer gibt es einen Tisch und vier Stühle.",
+      "finding": "طاولة وأربعة كراسٍ في غرفة الجلوس؛ لا جمع للطاولات أو خمسة كراسٍ.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Am Samstag besucht ihn sein Freund Karim.",
+      "finding": "كريم يزور عمر السبت؛ النفي الجديد nicht am Samstag مناقض للنص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Omar erklärt den Weg: „Geh am Bahnhof geradeaus.",
+      "finding": "عمر يشرح: عند المحطة مباشرةً إلى الأمام؛ Geh أمر للمفرد القريب.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "An der großen Kreuzung gehst du nach rechts.",
+      "finding": "اليمين عند التقاطع الكبير، و gehst du تركيب خبري استُعمل في التعليمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Das Haus ist gegenüber dem Park.“",
+      "finding": "المنزل مقابل الحديقة؛ لا مسافة عددية أو إثبات موقع داخلها.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wo wohnt Omar?",
+      "finding": "In einer kleinen Wohnung in Nabeul يجيب عن المكان ونوع السكن كما في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie viele Schlafzimmer gibt es in seiner Wohnung?",
+      "finding": "Ein Schlafzimmer يطابق التعداد؛ لا غرفتي نوم.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was gibt es im Wohnzimmer?",
+      "finding": "Es gibt einen Tisch und vier Stühle؛ تطابق العنصرين والعدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was macht Karim am Samstag?",
+      "finding": "Er besucht Omar؛ الضمير يعود إلى Karim في السؤال، لا عكس الزيارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Wo ist das Haus?",
+      "finding": "Gegenüber dem Park هو الموقع المصرح به.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Entschuldigung, wo ist die Post?",
+      "finding": "سؤال عن موقع مكتب البريد؛ لا تصريح بالرغبة في السفر إليه أو الوصول الفعلي.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Gehen Sie hier geradeaus bis zur Ampel.",
+      "finding": "التقدم إلى الإشارة حد الخطوة الأولى؛ هنا ليس اسم شارع.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Dann gehen Sie nach links.",
+      "finding": "ثم اليسار عند نهاية الخطوة الأولى؛ Dann يربط التسلسل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Die Post ist neben dem Café, gegenüber dem Bahnhof.",
+      "finding": "البريد بجانب المقهى ومقابل المحطة؛ علاقتان مع معلمين مختلفين وليستا تناقضًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Nach welchem Ort fragt die Person?",
+      "finding": "Nach der Post؛ السؤال الجديد يطلب المكان المذكور صراحةً، بدل استنتاج رغبة ذهاب، والمفتاح يوافق nach.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wohin geht man an der Ampel?",
+      "finding": "Nach links؛ الاتجاه بعد الوصول للإشارة كما في التسلسل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Neben welchem Ort ist die Post?",
+      "finding": "Neben dem Café؛ لا المحطة في علاقة الجوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Gegenüber welchem Ort ist sie?",
+      "finding": "Gegenüber dem Bahnhof؛ الضمير sie يعود إلى Post المؤنثة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-11-T01",
+      "text": "1. أطبخ فيها: **die Küche / das Schlafzimmer**\n2. أنام فيها: **das Wohnzimmer / das Schlafzimmer**\n3. أستحم فيها: **das Bad / der Balkon**\n4. اسم غرفة الجلوس: **das Wohnzimmer / die Küche**",
+      "finding": "أربع مطابقات محفوظة المفاتيح؛ الرابع يسأل عن اسم الغرفة بدل حصر استعمال اجتماعي فيها.",
+      "sourceIds": [],
+      "items": [
+        "die Küche لوظيفة الطبخ المعهودة، لا Schlafzimmer.",
+        "das Schlafzimmer لاسم غرفة النوم، لا Wohnzimmer.",
+        "das Bad للاستحمام في سياق الغرف، لا Balkon.",
+        "das Wohnzimmer هو اسم غرفة الجلوس؛ صُحح البند حتى لا ينفي استقبال الضيوف في المطبخ."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T02",
+      "text": "الأسماء المطلوبة مفردة، واختر أداة التنكير المناسبة في Akkusativ من البنك:\n\n1. Es gibt ______ Balkon.\n2. Es gibt ______ Küche.\n3. Es gibt ______ Bad.\n4. In der Wohnung gibt es ______ Schlafzimmer.\n5. Es gibt ______ Tisch.",
+      "finding": "خمسة بنود للمفرد في Akkusativ؛ أضيف Tisch، ووُضح أن البنك أدوات تنكير لا تعريف.",
+      "sourceIds": [],
+      "items": [
+        "einen Balkon؛ مذكر مفرد.",
+        "eine Küche؛ مؤنث مفرد.",
+        "ein Bad؛ محايد مفرد.",
+        "ein Schlafzimmer؛ المطلوب مفرد وفق التعليمات.",
+        "einen Tisch؛ بند جديد لدعم Q03 مباشرةً."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T03",
+      "text": "1. إلى الأمام مباشرةً: ______\n2. إلى اليسار: nach ______\n3. إلى اليمين: nach ______\n4. عند التقاطع: an der ______",
+      "finding": "أربع مطابقات اتجاه؛ الفرق بين التقاطع والإشارة محفوظ.",
+      "sourceIds": [],
+      "items": [
+        "geradeaus إلى الأمام مباشرةً.",
+        "links في nach links.",
+        "rechts في nach rechts.",
+        "Kreuzung في an der Kreuzung."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T04",
+      "text": "ابدأ البند 1 بـ Es، والبند 2 بـ Das Haus، والبند 3 بـ Gehen Sie واستعمل bitte. ليست هذه البداية الوحيدة لكل جملة ألمانية، ويمكن وضع bitte في أكثر من موضع صحيح:\n\n1. gibt / einen Balkon / Es\n2. neben der Bäckerei / ist / Das Haus\n3. geradeaus / Gehen Sie / bitte",
+      "finding": "البدايات محددة مع أكثر من موضع صحيح لـ bitte؛ ليست قاعدة ترتيب وحيد لكل السياقات.",
+      "sourceIds": [],
+      "items": [
+        "Es gibt einen Balkon مع البداية المحددة؛ لا تخطئة التقديم في كل سياق.",
+        "Das Haus ist neben der Bäckerei مع البداية المحددة.",
+        "Gehen Sie bitte geradeaus أو Gehen Sie geradeaus, bitte؛ كلاهما يحفظ الكتل والبداية."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T05",
+      "text": "1. Omar wohnt in Nabeul.\n2. Seine Wohnung hat zwei Schlafzimmer.\n3. Im Wohnzimmer gibt es vier Stühle.\n4. Karim besucht Omar am Sonntag, nicht am Samstag.",
+      "finding": "مفاتيح T/F/T/F محفوظة؛ الرابع صار تناقضًا صريحًا عن اليوم، لا اختبار نفي علاقات مكانية بلا خريطة.",
+      "sourceIds": [],
+      "items": [
+        "صحيح؛ Omar يسكن في Nabeul.",
+        "خطأ؛ تعداد النص فيه غرفة نوم واحدة.",
+        "صحيح؛ vier Stühle في غرفة الجلوس.",
+        "خطأ؛ النص يذكر السبت، والبند الجديد ينفيه صراحةً ويستبدله بالأحد."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T06",
+      "text": "أكمل من النص:\n\n1. Die Person fragt nach der ______.\n2. An der Ampel geht man nach ______.\n3. Die Post ist neben dem ______.\n4. Sie ist gegenüber dem ______.",
+      "finding": "أربعة فراغات مفصولة مع مفاتيح مرقمة؛ الأول صار سؤالًا عن موضع مذكور لا رغبة غير منطوقة.",
+      "sourceIds": [],
+      "items": [
+        "Post بعد fragt nach der.",
+        "links عند الإشارة.",
+        "Café بعد neben dem.",
+        "Bahnhof بعد gegenüber dem."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T07",
+      "text": "تريد أن تسأل بأدب عن موقع المحطة:\nأ. Entschuldigung, wo ist der Bahnhof?\n\nب. Ich bin der Bahnhof.\n\nج. Der Bahnhof wohnt hier.\n\n**تطبيق مستقل:**\n\nاكتب خمس جمل في موقف خيالي: سؤال الزائر عن الوصول إلى المحطة يبدأ بـ Entschuldigung, wie komme ich zum Bahnhof?، ثم جوابًا بأربع جمل وفق هذا المسار: الزائر أمام المقهى وينظر إلى الشارع المستقيم المؤدي للإشارة؛ يمشي مباشرةً حتى الإشارة، ثم يتجه يسارًا عندها، ثم يمينًا عند التقاطع التالي، والمحطة مقابل الحديقة. صغ التعليمات الثلاث بـ Gehen Sie، ثم جملة تحدد موقع المحطة. اقرأ السؤال والجواب كاملًا بصوت مرتفع؛ يمكنك أداء الطرفين منفردًا، دون شريك أو تسجيل أو عنوان حقيقي. هذه ليست إرشادات ملاحة واقعية.",
+      "finding": "اختيار واحد وخمسة متطلبات جمل؛ تطبيق P02 مطابق للمسار المعطى ولا يشترط ملاحة حقيقية.",
+      "sourceIds": [],
+      "items": [
+        "أ: Entschuldigung, wo ist der Bahnhof?؛ البديلان ليسا سؤال مكان.",
+        "جملة سؤال الوصول إلى المحطة بعبارة معطاة.",
+        "أول تعليمات: مستقيمًا حتى الإشارة.",
+        "ثاني تعليمات: يسارًا عند الإشارة.",
+        "ثالث تعليمات: يمينًا عند التقاطع التالي.",
+        "جملة موقع المحطة مقابل الحديقة؛ يقرأ المتعلم السؤال وكل الجواب جهرًا."
+      ]
+    },
+    {
+      "id": "DL-A1-11-T08",
+      "text": "اكتب أربع جمل عن شقة خيالية: الأولى والثانية تذكران مكانين مختلفين من قائمة غرف الدرس وتبدآن بـ Es gibt؛ الثالثة تذكر قطعة أثاث واحدة في غرفة سبق ذكرها باستعمال Im Wohnzimmer أو Im Schlafzimmer مع gibt es؛ الرابعة تصف الشقة بـ Die Wohnung ist مع hell أو dunkel أو groß أو klein. اختر غرفة جلوس أو غرفة نوم ضمن الجملتين الأوليين لتستعملها في الثالثة. هذه كتابة فقط، دون قراءة جهرية أو تسجيل أو وصف مسكنك الحقيقي، ولا تعليمات طريق في هذه المهمة.",
+      "finding": "أربع جمل كتابية متطابقة مع P01، بدل خلط وصف غرف واتجاهات لا يطابق أي مهمة كاملة.",
+      "sourceIds": [],
+      "items": [
+        "جملة Es gibt تذكر مكانًا من بنك الدرس.",
+        "جملة Es gibt لمكان مختلف؛ تتضمن الجملتان غرفة جلوس أو نوم.",
+        "أثاث مفرد في غرفة سبق ذكرها مع Im…gibt es.",
+        "صفة للشقة مع Die Wohnung ist؛ المهمة كتابة فقط."
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Entschuldigung, wie komme ich zum Bahnhof?",
+      "finding": "جملة الزائر تسأل الوصول إلى المحطة لا وصف المسكن.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Gehen Sie geradeaus bis zur Ampel.",
+      "finding": "تعليمات مستقيمًا حتى الإشارة؛ تنطلق من موضع المقهى المعطى في المهمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Gehen Sie an der Ampel nach links.",
+      "finding": "يسارًا عند الإشارة، لا يمينًا ولا عند معلم مختلف.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Gehen Sie an der nächsten Kreuzung nach rechts.",
+      "finding": "يمينًا عند التقاطع التالي؛ عبارة an der nächsten Kreuzung مشروحة مع النموذج.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-05",
+      "text": "Der Bahnhof ist gegenüber dem Park.",
+      "finding": "المحطة مقابل الحديقة علامة الوصول؛ أربع جمل جواب بعد السؤال، لا خمسة أدوار متناوبة.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Es gibt ein Wohnzimmer.",
+      "finding": "غرفة جلوس محايدة مع ein بعد Es gibt.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Es gibt eine Küche.",
+      "finding": "مطبخ مؤنث مع eine، مختلف عن المكان الأول.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Im Wohnzimmer gibt es einen Tisch.",
+      "finding": "طاولة مفردة مذكّرة مع einen في غرفة الجلوس التي سبق ذكرها؛gibt es بعد عبارة المكان.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Die Wohnung ist hell.",
+      "finding": "صفة hell مع ist؛ لا نهاية صفة بعد الأداة لأنها صفة خبرية.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-11-Q01",
+      "text": "ما معنى die Küche؟",
+      "finding": "المفتاح 1: المطبخ؛ غرفة النوم والشرفة اسمان آخران.",
+      "sourceIds": [],
+      "options": [
+        "غرفة النوم",
+        "المطبخ",
+        "الشرفة"
+      ],
+      "answer": "المطبخ",
+      "explanation": "die Küche تعني «المطبخ».",
+      "sourceTaskIds": [
+        "DL-A1-11-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q02",
+      "text": "ما معنى das Schlafzimmer؟",
+      "finding": "المفتاح 0: غرفة النوم؛ غرفة الجلوس والحمام ليسا Schlafzimmer.",
+      "sourceIds": [],
+      "options": [
+        "غرفة النوم",
+        "غرفة الجلوس",
+        "الحمّام"
+      ],
+      "answer": "غرفة النوم",
+      "explanation": "das Schlafzimmer تعني «غرفة النوم».",
+      "sourceTaskIds": [
+        "DL-A1-11-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q03",
+      "text": "أكمل: Es gibt ___ Tisch.",
+      "finding": "المفتاح 1: einen مع Tisch المذكر في Akkusativ؛ eine/ein لا يطابقانه.",
+      "sourceIds": [],
+      "options": [
+        "eine",
+        "einen",
+        "ein"
+      ],
+      "answer": "einen",
+      "explanation": "Tisch مذكر؛ بعد es gibt نستخدم هنا Akkusativ einen.",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q04",
+      "text": "أكمل: Es gibt ___ Küche.",
+      "finding": "المفتاح 2: eine مع Küche؛ einen/ein لا يطابقان المؤنث.",
+      "sourceIds": [],
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "answer": "eine",
+      "explanation": "Küche مؤنث، لذلك نستخدم eine.",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q05",
+      "text": "أي جملة صحيحة؟",
+      "finding": "المفتاح 0: einen Balkon؛ البديلان لهما أداة لا توافق المذكر في هذا التركيب.",
+      "sourceIds": [],
+      "options": [
+        "Es gibt einen Balkon.",
+        "Es gibt ein Balkon.",
+        "Es gibt eine Balkon."
+      ],
+      "answer": "Es gibt einen Balkon.",
+      "explanation": "Balkon مذكر؛ الصيغة هنا einen Balkon.",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q06",
+      "text": "أي عبارة تعطي اتجاهًا مهذبًا إلى الأمام؟",
+      "finding": "المفتاح 0 يعطي اتجاهًا مهذبًا؛ البديلان طلب غرفة ووصف وجود طاولة. الرابط أصبح T04 حيث الصيغة كاملة.",
+      "sourceIds": [],
+      "options": [
+        "Gehen Sie bitte geradeaus.",
+        "Ich möchte ein Zimmer.",
+        "Es gibt einen Tisch."
+      ],
+      "answer": "Gehen Sie bitte geradeaus.",
+      "explanation": "Gehen Sie bitte geradeaus تعطي تعليمات طريق مهذبة.",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q07",
+      "text": "ما معنى links؟",
+      "finding": "المفتاح 2: يسار؛ ليس يمينًا أو إلى الأمام.",
+      "sourceIds": [],
+      "options": [
+        "يمين",
+        "إلى الأمام",
+        "يسار"
+      ],
+      "answer": "يسار",
+      "explanation": "links تعني «يسار».",
+      "sourceTaskIds": [
+        "DL-A1-11-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q08",
+      "text": "كيف نقول إن المنزل بجانب المخبز؟",
+      "finding": "المفتاح 0: neben der Bäckerei للموقع؛ البديل الثاني لا ينقل المعنى ويستعمل um مع حالة غير مناسبة، والثالث ترتيب وأداة ناقصان.",
+      "sourceIds": [],
+      "options": [
+        "Das Haus ist neben der Bäckerei.",
+        "Das Haus ist um der Bäckerei.",
+        "Das Haus neben ist Bäckerei."
+      ],
+      "answer": "Das Haus ist neben der Bäckerei.",
+      "explanation": "neben der Bäckerei تعني «بجانب المخبز».",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q09",
+      "text": "أي علاقة يذكرها نص القراءة صراحةً بين المنزل والحديقة؟",
+      "finding": "المفتاح 0 يذكر المقابلة المصرح بها؛ السؤال لا يطلب استنتاج مسافة. الشرح يرجع إلى النص لا إلى المفتاح وحده.",
+      "sourceIds": [],
+      "options": [
+        "مقابل الحديقة",
+        "داخل الحديقة",
+        "بعيدًا عن الحديقة"
+      ],
+      "answer": "مقابل الحديقة",
+      "explanation": "النص يقول: Das Haus ist gegenüber dem Park؛ أي مقابل الحديقة. لم يذكر مسافة عددية أو علاقة داخل الحديقة.",
+      "sourceTaskIds": [
+        "DL-A1-11-T05"
+      ]
+    },
+    {
+      "id": "DL-A1-11-Q10",
+      "text": "أي جملة تعني «يوجد مطبخ»؟",
+      "finding": "المفتاح 0: eine Küche؛ الثاني يخطئ الجنس والثالث يكرر gibt بلا بناء صحيح. الرابط إلى T02 مباشرةً.",
+      "sourceIds": [],
+      "options": [
+        "Es gibt eine Küche.",
+        "Es gibt einen Küche.",
+        "Es gibt die Küche gibt."
+      ],
+      "answer": "Es gibt eine Küche.",
+      "explanation": "Küche مؤنث، فنقول: Es gibt eine Küche.",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-11-P01",
+      "text": "اكتب أربع جمل عن شقة خيالية: الأولى والثانية تذكران مكانين مختلفين من قائمة غرف الدرس وتبدآن بـ Es gibt؛ الثالثة تذكر قطعة أثاث واحدة في غرفة سبق ذكرها باستعمال Im Wohnzimmer أو Im Schlafzimmer مع gibt es؛ الرابعة تصف الشقة بـ Die Wohnung ist مع hell أو dunkel أو groß أو klein. اختر غرفة جلوس أو غرفة نوم ضمن الجملتين الأوليين لتستعملها في الثالثة. هذه كتابة فقط، دون قراءة جهرية أو تسجيل أو وصف مسكنك الحقيقي، ولا تعليمات طريق في هذه المهمة.",
+      "finding": "P01/T08: كتابة أربع جمل،min90 و speakAloud=false. النموذج يحقق مكانين وأثاثًا مرتبطًا بغرفة وصفة؛ لا طلب طريق هنا.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل: مكانان مختلفان، قطعة أثاث في غرفة سبق ذكرها، وصفة للشقة؛ كتابة فقط.",
+        "meaningClarity": "الغرف والأثاث والوصف متسقة في مسكن خيالي واحد، ولا يتطلب عنوانًا أو مسارًا.",
+        "targetSkill": "Es gibt ثم einen/eine/ein المناسبة، وIm Wohnzimmer أوIm Schlafzimmer gibt es، وصفة بعدDie Wohnung ist."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-11-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-11-P02",
+      "text": "اكتب خمس جمل في موقف خيالي: سؤال الزائر عن الوصول إلى المحطة يبدأ بـ Entschuldigung, wie komme ich zum Bahnhof?، ثم جوابًا بأربع جمل وفق هذا المسار: الزائر أمام المقهى وينظر إلى الشارع المستقيم المؤدي للإشارة؛ يمشي مباشرةً حتى الإشارة، ثم يتجه يسارًا عندها، ثم يمينًا عند التقاطع التالي، والمحطة مقابل الحديقة. صغ التعليمات الثلاث بـ Gehen Sie، ثم جملة تحدد موقع المحطة. اقرأ السؤال والجواب كاملًا بصوت مرتفع؛ يمكنك أداء الطرفين منفردًا، دون شريك أو تسجيل أو عنوان حقيقي. هذه ليست إرشادات ملاحة واقعية.",
+      "finding": "P02/T07: سؤال ثم 3 تعليمات وموقع،min160 وجهر الجميع. المسار والتعابير معطاة لتطبيق لغوي مضبوط، لا ادعاء استقلال الملاحة أو حوار حر كامل.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "سؤال ثم ثلاث تعليمات حسب المسار وجملة موقع؛ قرأت الجمل الخمس كلها جهرًا.",
+        "meaningClarity": "من المقهى إلى الإشارة، يسارًا عندها ثم يمينًا عند التقاطع التالي؛ المحطة مقابل الحديقة، دون تبديل المعالم.",
+        "targetSkill": "سؤال الوصول وGehen Sie في التعليمات، معgeradeaus وlinks وrechts وgegenüber dem Park؛ لا خلط بين صيغةdu وSie."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-11-T07"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Es gibt eine Küche.** → يوجد مطبخ.",
+      "finding": "eine Küche مؤنث في Akkusativ مع es gibt.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Die Wohnung ist hell.** → الشقة مضيئة.",
+      "finding": "hell صفة للشقة مع ist، لا فعل وجود.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Gehen Sie geradeaus.** → اذهب إلى الأمام مباشرةً.",
+      "finding": "صيغة احترام واتجاه مستقيم؛ لا تحديد شمال أو جنوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Das Haus ist neben der Bäckerei.** → المنزل بجانب المخبز.",
+      "finding": "neben der Bäckerei علاقة جوار محددة؛ لا بديل لـ gegenüber.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-11-AUD-READ-01",
+      "text": "قراءة: شقة Omar وطريقها",
+      "finding": "1 مقطع/مقاطع؛ الكلام والأصوات والمسارات و ready/offer محفوظة. أُصلح موضع عنوان المصدر في السجل فقط دون تشغيل صوت أو إعادة توليد أو اعتماد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Omar wohnt in einer kleinen Wohnung in Nabeul. Es gibt ein Wohnzimmer, ein Schlafzimmer, eine Küche und ein Bad. Im Wohnzimmer gibt es einen Tisch und vier Stühle. Am Samstag besucht ihn sein Freund Karim. Omar erklärt den Weg: „Geh am Bahnhof geradeaus. An der großen Kreuzung gehst du nach rechts. Das Haus ist gegenüber dem Park.“",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-11-AUD-LST-01",
+      "text": "استماع: السؤال عن مكتب البريد",
+      "finding": "1 مقطع/مقاطع؛ الكلام والأصوات والمسارات و ready/offer محفوظة. أُصلح موضع عنوان المصدر في السجل فقط دون تشغيل صوت أو إعادة توليد أو اعتماد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-LST-01.mp3",
+          "speaker": "Auskunftsperson",
+          "text": "Entschuldigung, wo ist die Post? Gehen Sie hier geradeaus bis zur Ampel. Dann gehen Sie nach links. Die Post ist neben dem Café, gegenüber dem Bahnhof.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-11-AUD-DLG-01",
+      "text": "حوار: وصف الشقة والطريق إليها",
+      "finding": "5 مقطع/مقاطع؛ الكلام والأصوات والمسارات و ready/offer محفوظة. أُصلح موضع عنوان المصدر في السجل فقط دون تشغيل صوت أو إعادة توليد أو اعتماد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Nora",
+          "text": "Wie ist deine neue Wohnung?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Lina",
+          "text": "Sie ist klein, aber sehr hell. Es gibt ein Wohnzimmer, eine Küche, ein Bad und einen Balkon.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Nora",
+          "text": "Schön! Wie komme ich zu dir?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Lina",
+          "text": "Vom Bahnhof gehst du geradeaus. An der Ampel gehst du nach links. Meine Wohnung ist neben der Bäckerei.",
+          "voiceId": "voice-00"
+        },
+        {
+          "src": "assets/audio/DL-A1-11-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Nora",
+          "text": "Danke. Ich komme am Samstag!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 1844030,
+    "reviewGuards": 17,
+    "nodeSuites": 5,
+    "browserSuites": 5,
+    "axeStates": 81,
+    "axeSelectedViolations": 0,
+    "axeIncompleteRuleOccurrences": 51,
+    "axeIncompleteNodeOccurrences": 124,
+    "narrowStates": 126,
+    "chromium": "143.0.7499.0",
+    "formsKeyboardFirstAttempt": "PASS",
+    "preservationBaseline": "095d6b10200359d7979714da8badda9f39f18981",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3HashesUnchanged": 474,
+    "playlistByteIdentical": true,
+    "audioRegisterChanges": "source_line/source_heading only in three A1.11 rows; all other fields/rows unchanged."
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "6244632b243939c3c7f2cbdaab94f75cdece0953",
+    "followupCommit": "91dffc04d743da5a32657c5b7b85c4e7e29f9821",
+    "implementationPushVerified": true,
+    "reviewCommit": "See git log for CR17 review commit; post-push receipt follows.",
+    "merged": false,
+    "nextLesson": "A1.12",
+    "reviewedLessons": 16,
+    "remainingLessons": 37,
+    "gateSeparate": true
+  }
+}
