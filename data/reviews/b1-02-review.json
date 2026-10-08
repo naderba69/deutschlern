@@ -1,0 +1,2143 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-02-food-habits-obwohl",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-02-v2",
+  "unitCount": 102,
+  "exerciseSubItemCount": 35,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "ADV",
+      "title": "Lingolia — Adverbialsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/adverbialsaetze",
+      "scope": "يميز التنازل مع obwohl من السبب مع weil والشرط مع wenn؛ مثال البرد والسباحة يدل على نتيجة رغم عائق، لا مجرد اختلاف معلومتين.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "الفاصلة والمصرف في نهاية التابعة؛ بعد تقديمها تبدأ الرئيسية بالمصرف لأن التابعة تشغل الموقع الأول. لا نعتمد فقرات أخرى خارج هذا النطاق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "LINK",
+      "title": "Lingolia — Konjunktionen/Subjunktionen/Konjunktionaladverbien",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/konjunktionen",
+      "scope": "obwohl تابعة؛ trotzdem ظرف رابط: عند تصدير الرئيسية يأتي المصرف ثم الفاعل. aber لا يفرض هذا الترتيب. لا تعميم ترتيب التصدير على كل موضع.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ALTHOUGH",
+      "title": "Duden — obwohl",
+      "url": "https://www.duden.de/rechtschreibung/obwohl",
+      "scope": "يدخل تابعًا تنازليًا؛ الاستعمال العامي للتراجع عن قول ليس النمط الكتابي الذي نقيّمه هنا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NEVERTHELESS",
+      "title": "Duden — trotzdem، الظرف",
+      "url": "https://www.duden.de/rechtschreibung/trotzdem_nichtsdestoweniger_dennoch",
+      "scope": "مثال sie tat es trotzdem يثبت الموضع غير الأول، ومثال es ging ihm schlecht, trotzdem erledigte er seine Arbeit يثبت الربط بفاصلة. لا نحول الفاصلة إلى علامة تابعة أو ندرس مدخل الرابط الآخر.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "GIVEUP",
+      "title": "Duden — verzichten",
+      "url": "https://www.duden.de/rechtschreibung/verzichten",
+      "scope": "auf sein Recht/seinen Anteil؛ الامتناع أو الاستغناء مع auf و Akkusativ، لا حرف مكان. تتغير دلالة النفي حسب المعنى، وليس كل امتناع توصية غذائية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEPARATE",
+      "title": "Lingolia — Trennbare und untrennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "mit-/vor-/aus- في أفعال الدرس منفصلة في الرئيسية البسيطة؛ ent-/ver-/er- ليست منفصلة. جمع هذا مع قاعدة التابعة يدعم vorbereitet آخر التابعة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CONTAIN",
+      "title": "Duden — enthalten",
+      "url": "https://www.duden.de/rechtschreibung/enthalten",
+      "scope": "enthält/enthielt/hat enthalten؛ المعنى هنا يحتوي، لا sich enthalten الانعكاسي بمعنى يمتنع. مفرد Gericht يأخذ enthält.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NOURISH",
+      "title": "Duden — ernähren",
+      "url": "https://www.duden.de/rechtschreibung/ernaehren",
+      "scope": "sich ernähren لوصف التغذي، و ich ernähre mich؛ يختلف عن تغذية شخص آخر. الاستشهاد لغوي لا اعتماد لنظام غذائي معين.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "TASTE",
+      "title": "Duden — Geschmack",
+      "url": "https://www.duden.de/rechtschreibung/Geschmack",
+      "scope": "الطعم/الذوق، مذكر؛ الجمع Geschmäcke ومعه Geschmäcker موسومة umgangssprachlich scherzhaft. أضيفت الصيغة غير الموسومة والتقييد كتابة مع حفظ التسجيل الذي يذكر الثانية وحدها.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/trotzdem",
+      "access": "404_body_despite_tool_success",
+      "reason": "أعيدت صفحةSeite nicht gefunden؛ لا مصدر صالح. استُخدم مدخل الظرف الصحيح بعد البحث، وبقية النتائج وروابط الصفحات لم تُقرأ ولا تحسب مصادر."
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# B1.2 — الطعام والعادات الغذائية: obwohl وtrotzdem",
+      "finding": "عنوان للعادات والتباين اللغوي، لا برنامج تغذية أو وصفة علاجية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة، استماع اختياري، قواعد، كتابة وجهر",
+      "finding": "مدة مرنة قابلة للتقسيم؛ الكتابة والجهر صريحان والاستماع اختياري دون افتراض إنجاز الجميع في 45 دقيقة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أصف عاداتي الغذائية وأعبّر عن التباين أو المفاجأة.",
+      "finding": "الهدف وصف العادات والتباين؛ الفقرة والحوار يجمعان المعنى والنحو لا اختيار الروابط فقط.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستخدم **obwohl** بمعنى «على الرغم من أن» لذكر أمر كان قد يجعلنا نتوقع نتيجة أخرى، لكن النتيجة المذكورة تحدث رغم ذلك. ليست مجرد ربط أي معلومتين مختلفتين، وليست **weil** التي تقدم سببًا. في النمط الكتابي المدروس يأتي الفعل المصرف في نهاية جملة **obwohl**:",
+      "finding": "obwohl علاقة رغم أمر مخالف للتوقع؛ ليست لأن ولا مجرد اختلاف اعتباطي بين حقيقتين.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "أما **trotzdem** فتعني «مع ذلك» وتربط المعنى بجملة رئيسية نتيجتها مخالفة للتوقع. **إذا بدأت بها الرئيسية** يأتي الفعل المصرف بعدها مباشرةً، في الموقع الثاني:",
+      "finding": "الترتيب trotzdem ثم المصرف مقيد بتصدير الرئيسية؛ لا يلزم أن تبدأ بها كل رئيسية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "قارن في الأنماط المعطاة: **obwohl + فاعل + … + فعل**، لكن عند تصدير الرئيسية: **trotzdem + فعل + فاعل**. ويمكن أيضًا **Ich koche trotzdem oft selbst.**؛ ليست trotzdem ملزمة بالموقع الأول، والفعل المصرف في الرئيسية الخبرية يبقى في الموقع الثاني.",
+      "finding": "أضيف مثال وسط الرئيسية؛ لا قلب إضافي للفاعل والفعل لمجرد وجود trotzdem، والفعل الثاني موقع نحوي لا كلمة ثانية حتمًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "النموذجان مكتوبان لشخصيات خيالية، وغير مسجلين. لا يبدلان تسجيلات Mira وTarek أو القراءة والاستماع، ولا يضيفان وقائع لحكاياتها. يمكن تغيير التفاصيل مع حفظ المطالب؛ الحد الحرفي والإقرار ليسا تقييمًا آليًا لجودة اللغة أو النطق.",
+      "finding": "نماذج مستقلة خيالية مكتوبة غير مسجلة، ولا تعني إضافة وقائع لحكايات David أو Tarek أو الأسرة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Ernährung | — | التغذية / النظام الغذائي |",
+      "finding": "Ernährung مؤنث؛ التغذية أو النظام الغذائي، لا العادة المفردة. الشرطة تخص السياق لا حكمًا عامًا على كل جمع ممكن.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Gewohnheit | die Gewohnheiten | العادة |",
+      "finding": "Gewohnheit مؤنث وجمعها Gewohnheiten؛ عادة، لا منصة أو مكوّن.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Mahlzeit | die Mahlzeiten | الوجبة |",
+      "finding": "Mahlzeit مؤنث وجمعها Mahlzeiten؛ وجبة، لا صنف واحد بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Zutat | die Zutaten | المكوّن |",
+      "finding": "Zutat مؤنث وجمعها Zutaten؛ مكوّن، لا النادي Verein.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Auswahl | — | الاختيار / التشكيلة |",
+      "finding": "Auswahl مؤنث؛ اختيار أو تشكيلة في السياق، لا مرادف Ernährung.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| ausgewogen | — | متوازن |",
+      "finding": "ausgewogen متوازن وصف لغوي؛ لا شهادة بأن وجبة شخصية تحقق كل الاحتياجات.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| sättigend | — | مشبع |",
+      "finding": "sättigend يسبب الشبع؛ ليس وعدًا بنفس الإحساس والمدة لكل شخص أو حكمًا صحيًا مطلقًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| enthalten | enthält | يحتوي على |",
+      "finding": "enthalten مصدر و enthält مفرد؛ ent- لا ينفصل، و sein ليس بديل فعل الاحتواء.",
+      "sourceIds": [
+        "CONTAIN",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| verzichten auf | verzichtet auf | يمتنع عن / يستغني عن |",
+      "finding": "أضيف auf بعد verzichtet لمطابقة التركيب الكامل والتسجيل؛ على المتعلم تعلم الفعل وحرفه معًا.",
+      "sourceIds": [
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| sich ernähren | ernährt sich | يتغذى |",
+      "finding": "sich ernähren انعكاسي؛ ernährt sich مفرد، و ich ernähre mich في الأمثلة.",
+      "sourceIds": [
+        "NOURISH"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| auswärts essen | — | يأكل خارج المنزل |",
+      "finding": "auswärts essen أكل خارج المنزل؛ ليس بالضرورة في مطعم بعينه أو أسرة النص نفسها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| der Geschmack | die Geschmäcke؛ die Geschmäcker (دارج/مازح) | الطعم |",
+      "finding": "صُحح عرض الجمع:Geschmäcke غير موسوم و Geschmäcker دارج مازح بحسب Duden. الصوت يحفظ الثانية، بلا ادعاء أنها الصيغة المحايدة الوحيدة.",
+      "sourceIds": [
+        "TASTE"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| inzwischen | — | الآن / في هذه الأثناء |",
+      "finding": "inzwischen ظرف للحال الآن بعد التطور أو في الأثناء بحسب السياق؛ لا إعراب جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Obwohl ich wenig Zeit habe, koche ich oft selbst.",
+      "finding": "الطبخ يحدث رغم قلة الوقت؛ habe أخيرًا ثم koche ich بعد الفاصلة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Ich koche oft selbst, obwohl ich wenig Zeit habe.",
+      "finding": "المعنى نفسه بتأخير التابعة؛ habe يبقى أخيرًا والفاصلة محفوظة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Ich habe wenig Zeit.",
+      "finding": "مقدمة عن قلة الوقت تحتاج الجملة التالية لكي تظهر علاقة التباين؛ ليست obwohl محذوفة تلقائيًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Trotzdem koche ich oft selbst.",
+      "finding": "Trotzdem تستأنف رئيسية مرتبطة بالجملة السابقة؛ koche في الموقع الثاني ثم ich.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **فهم التباين:** قلة الوقت قد توحي بقلة الطبخ، لكن المتحدث يطبخ رغمها. وكون الطعام بسيطًا لا يعني أنه لا يمكن أن يكون لذيذًا؛ التمرين يصوغ توقعًا للمتحدث، لا حكمًا عامًا على الطعام البسيط. ابحث عن الأمر الذي قد يمنع النتيجة ثم عما يحدث رغم ذلك.",
+      "finding": "يفسر خلاف التوقع دون جعل الطعام البسيط رديئًا بالضرورة؛ المعنى مهم مثل موقع الفعل.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **الفاصلة والمصرف:** **Obwohl ich wenig Zeit habe, koche ich selbst.** تنتهي التابعة بـ**habe**، وبعد تقديمها تبدأ الرئيسية بـ**koche** ثم **ich**. وفي **Ich koche selbst, obwohl ich wenig Zeit habe.** تبقى التابعة مفصولة بفاصلة ولو جاءت أخيرًا.",
+      "finding": "يوضح المصرف الأخير والفاصلة وتقديم التابعة أو تأخيرها؛ ترتيب الرئيسية ليس ich koche بعد التابعة المقدمة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **trotzdem ليست obwohl:** نتدرب على استعمالها ظرفًا رابطًا مع رئيسية، لا تحويلها إلى تابعة. يمكن فصل الرئيسيتين بنقطة كما في الأمثلة، أو ربطهما بفاصلة كما في آخر الاستماع؛ الفاصلة وحدها لا تجعل الثانية تابعة. وعند وضع trotzdem وسط الرئيسية لا نقلب ترتيب الفاعل والفعل من جديد.",
+      "finding": "trotzdem هنا ظرف لا أداة تابع؛ النقطة أو الفاصلة بين الرئيسيتين سليمتان في الأمثلة، والموضع الأوسط لا يفرض انقلابًا جديدًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الفعل والفاعل:** **ich habe / sie hat** عندما تعني sie «هي»؛ أما **sie haben** فللجمع. **er isst / wir essen**، و**das Gericht enthält**. في **wenig Zeit** لا توجد عبارة نفي؛ وفي **keine Milch** و**keine Lebensmittelgruppe** توجد أداة نفي.",
+      "finding": "sie المفردة hat والجمع haben؛ isst مع er و essen مع wir. قليل الوقت ليس نفيًا، بخلاف keine.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **الأفعال المنفصلة:** **bringt ... mit، bereitet ... vor، probiert ... aus** في الرئيسية. ومع تابع يمكن مثلًا **obwohl er das Essen vorbereitet**. في القراءة **aß** ماضي **essen**؛ ولا يعني تغيير الزمن أن كل عادة قديمة اختفت تمامًا.",
+      "finding": "يفصل mitbringen/vorbereiten/ausprobieren في الرئيسية ويصل vorbereitet في التابعة؛ aß ماضٍ لا يثبت توقف العادة نهائيًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **تراكيب العادات:** **Ich verzichte auf diesen Nachtisch.** مع **auf + Akkusativ**، لا اختيار حالة حسب Wo/Wohin. **Ich ernähre mich ... / Er ernährt sich ...** ضمير انعكاسي يتغير مع الفاعل. **Er freut sich auf dieses Essen** تعبير عن التطلع للوجبة، لا دليل أنه تناولها بالفعل.",
+      "finding": "auf+Akk مرتبط بالفعل verzichten لا وجهة، والضمير في ernähren يتغير؛ التطلع لوجبة ليس إثبات تناولها.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **معجم القراءة:** **unterwegs** أثناء التنقل/في الطريق، و**Hülsenfrüchte** بقوليات، و**Abwechslung** تنويع، و**Gericht** طبق في هذا السياق، و**satt** شبعان. في **Geschmack** يعطي Duden الجمع **Geschmäcke** ويصف **Geschmäcker** بأنه دارج مازح؛ التسجيل يحفظ الصيغة الثانية فقط، وهذا توضيح مكتوب لا تسجيل مصحح جديد.",
+      "finding": "يوضح معجم القراءة وحدود جمع Geschmack؛ التوضيح الكتابي لا يغير الصوت أو يدعي استماعًا جديدًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **ثلاث حكايات مستقلة:** Tarek يتحدث عن المقصف وما يحضره من البيت؛ David يطبخ ثلاثًا أو أربع مرات ويأكل في مطعم الجمعة؛ وأسرة الاستماع تطلب طعامًا الجمعة ويحضّر الأب أطباقًا الأحد. لا نجمع هؤلاء في أسرة واحدة أو نفترض جنس الراوي من الصوت؛ **sie** في الإجابات قد تعود إلى **die Person** أو **die Familie**.",
+      "finding": "يفصل المقصف والمطعم والأسرة؛ جنس الراوي لا يُستنتج من الصوت أو الضمير النحوي Person/Familie.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود المعلومة الغذائية:** الشبع وسبب اختيار البقوليات ووصف شرب الماء مع الطعام الحار أقوال داخل أمثلة لغوية، لا خطة تغذية شخصية أو علاجًا موصى به. لا نستنتج أن الماء يعالج أثر الطعام الحار أو أن عبارة **keine Milch** تضمن سلامة منتج لحساسية غذائية. ولا يعني عدم استبعاد مجموعة أن David يأكل كل أصنافها يوميًا؛ **manchmal/oft/meistens** لا تعني دائمًا.",
+      "finding": "لا نحول وصف الشبع أو شرب الماء إلى وصفة طبية؛ لا ضمان حساسية من جملة افتراضية عن الحليب، ولا حمية من عدم استبعاد مجموعة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل:** استند إلى النص عند الإجابة، ويمكن قراءة التفريغ بدل الاستماع. المهمتان خياليتان؛ لا حمية أو وزن أو حساسية أو بيانات صحية مطلوبة. اكتب الفقرة والحوار وحدك ثم اقرأ كليهما جهرًا دون تسجيل أو شريك. الحد الحرفي والإقرارات لا يصححان اللغة أو النطق آليًا.",
+      "finding": "يمكن استخدام التفريغ، والكتابة والجهر فرديان بلا معلومات صحية أو تسجيل؛ الإقرار ليس تصحيح لغة أو نطق.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP",
+        "CONTAIN",
+        "NOURISH",
+        "TASTE"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Isst du mittags immer in der Kantine?",
+      "finding": "Mira تسأل عن دائمًا في المقصف عند الغداء؛ سؤال لا خبر يثبت أنه يفعل ذلك دائمًا.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Nicht immer. Obwohl die Kantine praktisch ist, bringe ich oft Essen von zu Hause mit.",
+      "finding": "Tarek ينفي الدوام ثم يصف الإحضار غالبًا رغم عملية المقصف؛ ist آخر التابعة، bringe…mit في الرئيسية.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Warum?",
+      "finding": "سؤال عن السبب، لا أمر بتغيير الطعام أو تقديم علاج.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Das Essen in der Kantine ist manchmal teuer. Trotzdem gehe ich dorthin, wenn ich mit meinen Kollegen essen möchte.",
+      "finding": "الكلفة أحيانًا لا دائمًا؛ trotzdem ثم gehe ich، و wenn مرتبطة بالرغبة في الأكل مع الزملاء، لا موعد مؤكد لكل يوم.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Was bringst du normalerweise mit?",
+      "finding": "سؤال عما يحضره عادة، لا تفاصيل David أو الأسرة.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Meistens Reis und Gemüse. Die Mahlzeit ist einfach, aber sie macht mich satt.",
+      "finding": "غالبًا أرز وخضروات، ووجبة تشبعه هو؛ لا ضمان شبع موحد للجميع أو نظام خالٍ من مجموعة غذائية.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Früher aß David oft unterwegs.",
+      "finding": "كان David يأكل كثيرًا أثناء التنقل؛ aß ماضٍ، ولا يلزم مطعم دائمًا أو انقطاع كامل لاحقًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Seit er einen neuen Arbeitsplan hat, bereitet er sein Mittagessen am Abend vor.",
+      "finding": "منذ خطة العمل الجديدة يعد الغداء مساءً؛ seit زمنية، و bereitet…vor منفصلة. لا موعد بالساعة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Obwohl er wenig Zeit hat, kocht er drei- oder viermal pro Woche.",
+      "finding": "قلة الوقت رغمها يطبخ ثلاثًا أو أربع مرات أسبوعيًا؛ لا كل يوم أو ثلاث وجبات يوميًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Er wählt häufig Gemüse und Hülsenfrüchte, weil sie lange satt machen.",
+      "finding": "يختار خضارًا وبقوليات بسبب الشبع في تفسير عادته؛ weil سبب، لا obwohl. هذا ليس ضمان شبع لكل جسم أو خطة علاجية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Am Freitag isst er mit Kollegen in einem Restaurant.",
+      "finding": "يأكل مع زملاء في مطعم الجمعة؛ ليس المقصف في حوار Tarek أو طلب أسرة الاستماع.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Das kostet mehr als sein Essen zu Hause.",
+      "finding": "الكلفة أعلى من أكله في البيت؛ المقارنة محددة ولا مبلغ أو حكم أن كل مطعم أغلى دائمًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Trotzdem freut er sich auf dieses gemeinsame Essen.",
+      "finding": "يتطلع رغم الكلفة إلى الطعام الجماعي؛ trotzdem رئيسية و sich freuen auf، لا دليل أنه تناول الوجبة بالفعل.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "David achtet auf Abwechslung, aber er verzichtet auf keine Lebensmittelgruppe.",
+      "finding": "يهتم بالتنوع ولا يستبعد أي مجموعة؛ keine تنفي الاستبعاد، لا تؤكد أكل كل نوع يوميًا أو صلاحية نهجه للجميع.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was machte David früher oft?",
+      "finding": "Er aß oft unterwegs؛ عادة ماضية لا عدد أيام معين.",
+      "sourceIds": [
+        "SUB",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wann bereitet er sein Mittagessen vor?",
+      "finding": "Am Abend؛ وقت التحضير لا وقت تناول الغداء.",
+      "sourceIds": [
+        "SUB",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wie oft kocht er ungefähr pro Woche?",
+      "finding": "Drei- oder viermal pro Woche؛ تكرار الطبخ أسبوعيًا لا عدد الأطباق.",
+      "sourceIds": [
+        "SUB",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Mit wem isst er am Freitag im Restaurant?",
+      "finding": "Mit seinen Kollegen؛ في مطعم، لا مع الأسرة في البيت.",
+      "sourceIds": [
+        "SUB",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Verzichtet David auf eine Lebensmittelgruppe?",
+      "finding": "Nein؛ لا يستبعد مجموعة في النص، دون تعميم على كل الأفراد أو كل الأطعمة.",
+      "sourceIds": [
+        "SUB",
+        "GIVEUP"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Bei uns zu Hause kocht meistens mein Vater.",
+      "finding": "الأب يطبخ غالبًا في هذه الأسرة؛ لا دائمًا ولا افتراض جنس الشخص الذي يحكي.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Obwohl er wenig Zeit hat, bereitet er am Sonntag mehrere Gerichte vor.",
+      "finding": "الأحد يحضر عدة أطباق رغم قلة الوقت؛ عدة لا عدد محدد، و bereitet…vor بعد التابعة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Wir essen gern gemeinsam.",
+      "finding": "يحبون الأكل معًا؛ ليس إثبات أنهم يجتمعون في كل وجبة دائمًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Manchmal probieren wir neue Zutaten aus.",
+      "finding": "يجربون مكونات جديدة أحيانًا؛ probieren…aus مع فاعل جمع.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Wenn ein Gericht sehr scharf ist, trinke ich viel Wasser.",
+      "finding": "إذا كان الطبق حارًا جدًا يشرب الشخص ماء كثيرًا وفق الحكاية؛ جواب فهم لا نصيحة علاجية ولا إثبات فعالية الماء.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Am Freitag bestellen wir etwas, trotzdem kochen wir an den anderen Tagen selbst.",
+      "finding": "الجمعة يطلبون شيئًا، ومع ذلك يطبخون بأنفسهم في الأيام الأخرى؛ رئيسيتان تربطهما فاصلة، لا ضرورة لاختلاق خطأ نحوي أو اسم المطعم والطلب.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wer kocht meistens zu Hause?",
+      "finding": "Der Vater؛ لا الأم أو الشخص الراوي من مجرد صوته.",
+      "sourceIds": [
+        "SUB",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wann bereitet der Vater mehrere Gerichte vor?",
+      "finding": "Am Sonntag؛ لا الجمعة التي تخص الطلب.",
+      "sourceIds": [
+        "SUB",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was probiert die Familie manchmal aus?",
+      "finding": "Neue Zutaten؛ مكونات لا عدد وجبات محدد أو تغيير دائم لكل وصفة.",
+      "sourceIds": [
+        "SUB",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was macht die Person, wenn ein Gericht sehr scharf ist?",
+      "finding": "Sie trinkt viel Wasser؛ sie تعود نحويًا إلى die Person، ولا نصيحة للمتعلم بفعل ذلك أو استنتاج هوية الراوي.",
+      "sourceIds": [
+        "SUB",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Was macht die Familie am Freitag?",
+      "finding": "Sie bestellt etwas؛ sie تعود إلى die Familie مفردة، ولا يذكر ما طلبته أو من أين.",
+      "sourceIds": [
+        "SUB",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "paragraph-model-01",
+      "text": "Ich esse mittags oft Reis mit Gemüse.",
+      "finding": "وجبة معتادة عند الغداء: أرز وخضار؛ oft لا دائمًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "paragraph-model-02",
+      "text": "Ich mag dieses Essen, weil es mir gut schmeckt.",
+      "finding": "التفضيل وسببه مع weil es mir gut schmeckt؛ ليس حكمًا بأن الوجبة الأفضل صحيًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "paragraph-model-03",
+      "text": "Obwohl ich wenig Zeit habe, koche ich meistens selbst.",
+      "finding": "قلة الوقت والطبخ رغمها؛ habe أخيرًا ثم koche ich، والتباين واضح.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "paragraph-model-04",
+      "text": "Manchmal ist das Kochen anstrengend.",
+      "finding": "صعوبة أخرى: الطبخ مجهد أحيانًا؛ تمهيد للجملة التالية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "paragraph-model-05",
+      "text": "Trotzdem bereite ich mein Essen gern zu Hause zu.",
+      "finding": "قرار التحضير في البيت رغم المشقة؛ Trotzdem ثم bereite ich و zu آخر الرئيسية، لا اتباع trotzdem بترتيب تابع.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-model-01",
+      "text": "A: Isst du heute in der Kantine?",
+      "finding": "سؤال A عن مقصف اليوم، لا الغد.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-model-02",
+      "text": "B: Obwohl die Kantine praktisch ist, bringe ich heute Essen von zu Hause mit.",
+      "finding": "قرار B إحضار الطعام اليوم رغم عملية المقصف؛ ist أخيرًا ثم bringe ich…mit.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-model-03",
+      "text": "A: Das Essen dort ist manchmal teuer.",
+      "finding": "تعليق A عن الكلفة أحيانًا؛ تمهيد للتباين لا تحريم للأكل بالمقصف.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "dialogue-model-04",
+      "text": "B: Trotzdem gehe ich morgen mit meinen Kollegen dorthin.",
+      "finding": "B يقرر الذهاب غدًا مع الزملاء رغم الكلفة؛ Trotzdem ثم gehe ich، و morgen يفصل القرار عن طعام اليوم.",
+      "sourceIds": [
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Obwohl ich wenig Zeit habe, koche ich.** → رغم أن وقتي قليل، أطبخ.",
+      "finding": "رغم قلة الوقت يطبخ؛ ليس لأن الوقت قليل. المصرفان habe/koche في موضعيهما.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NOURISH"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Ich bin müde. Trotzdem gehe ich spazieren.** → أنا متعب. ومع ذلك أذهب للتمشّي.",
+      "finding": "رئيسية Trotzdem بعد معلومة التعب؛ معنى خلاف المتوقع لا أمر صحي بالمشي مع المرض.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NOURISH"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **sich ausgewogen ernähren** → يتغذى بطريقة متوازنة.",
+      "finding": "تركيب انعكاسي بمعنى التغذي بتوازن؛ ليس شهادة توازن نظام أي شخص.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NOURISH"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **die Zutaten** → المكوّنات.",
+      "finding": "Zutaten جمع Zutat؛ مكونات لا وجبات كاملة بالضرورة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "NOURISH"
+      ]
+    },
+    {
+      "id": "DL-B1-02-T01",
+      "text": "1. غذاء متوازن: **ausgewogen / nervös**\n2. شيء مضاف إلى وصفة: **die Zutat / der Verein**\n3. ما يفعله الشخص باستمرار في يومه: **die Gewohnheit / die Bühne**\n4. طعام يمنح شعورًا بالشبع: **sättigend / beschädigt**\n5. التغذية أو النظام الغذائي: **die Ernährung / die Auswahl**\n6. الامتناع عن أطعمة معينة: **auf bestimmte Lebensmittel verzichten / auswärts essen**",
+      "finding": "ستة أزواج معجمية، ومنها كلمتا التقييم Q01/Q02 بعد الإضافة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "غذاء متوازن: **ausgewogen / nervös**",
+          "answer": "ausgewogen",
+          "finding": "ausgewogen متوازن؛ nervös متوتر لا وصف غذاء متوازن."
+        },
+        {
+          "text": "شيء مضاف إلى وصفة: **die Zutat / der Verein**",
+          "answer": "die Zutat",
+          "finding": "Zutat مكوّن؛ Verein نادي أو جمعية."
+        },
+        {
+          "text": "ما يفعله الشخص باستمرار في يومه: **die Gewohnheit / die Bühne**",
+          "answer": "die Gewohnheit",
+          "finding": "Gewohnheit عادة؛ Bühne منصة لا سلوك متكرر."
+        },
+        {
+          "text": "طعام يمنح شعورًا بالشبع: **sättigend / beschädigt**",
+          "answer": "sättigend",
+          "finding": "sättigend مشبع؛ beschädigt تالف لا شبع."
+        },
+        {
+          "text": "التغذية أو النظام الغذائي: **die Ernährung / die Auswahl**",
+          "answer": "die Ernährung",
+          "finding": "Ernährung تغذية؛ Auswahl اختيار أو تشكيلة. أضيف لدعم Q01 مباشرة."
+        },
+        {
+          "text": "الامتناع عن أطعمة معينة: **auf bestimmte Lebensmittel verzichten / auswärts essen**",
+          "answer": "auf bestimmte Lebensmittel verzichten",
+          "finding": "verzichten auf امتنع عن؛ auswärts essen أكل خارج البيت. أضيف لدعم Q02."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T02",
+      "text": "1. ______ ich müde bin, koche ich noch das Abendessen.\n2. Das Restaurant ist teuer. ______ essen wir dort heute.\n3. Er mag kein Gemüse, ______ probiert er das neue Gemüsegericht.\n4. ______ das Gericht einfach ist, schmeckt es sehr gut.",
+      "finding": "أربع وصلات بنحو محدد وتباين واضح؛ طبق الخضار صار صريحًا في 3.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "______ ich müde bin, koche ich noch das Abendessen.",
+          "answer": "Obwohl",
+          "finding": "Obwohl تدخل التابعة التي تنتهي bin قبل الفاصلة."
+        },
+        {
+          "text": "Das Restaurant ist teuer. ______ essen wir dort heute.",
+          "answer": "Trotzdem",
+          "finding": "Trotzdem تبدأ رئيسية بفعل essen ثم wir."
+        },
+        {
+          "text": "Er mag kein Gemüse, ______ probiert er das neue Gemüsegericht.",
+          "answer": "trotzdem",
+          "finding": "trotzdem تتبعها رئيسية probiert er؛ صار الطبق Gemüsegericht لتظهر علاقة كراهية الخضار بتجربته رغمها."
+        },
+        {
+          "text": "______ das Gericht einfach ist, schmeckt es sehr gut.",
+          "answer": "Obwohl",
+          "finding": "Obwohl مع ist في آخر التابعة؛ بساطة الطبق لا تمنع طعمه الجيد، وهذا توقع المثال لا قاعدة في التغذية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T03",
+      "text": "اكتب صيغة المضارع المناسبة؛ **sie في1 تعني «هي»**، وليست «هم/هن»:\n\n1. Obwohl sie wenig Zeit ______, bereitet sie das Essen vor. (haben)\n2. Er hat heute viel zu tun. Trotzdem ______ er mit uns. (essen)\n3. Obwohl das Gericht keine Milch ______, schmeckt es cremig. (enthalten)",
+      "finding": "ثلاثة أفعال مع تصريح sie المفردة، لا خلط القرب من uns بتصريف الفاعل.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "Obwohl sie wenig Zeit ______, bereitet sie das Essen vor. (haben)",
+          "answer": "hat",
+          "finding": "hat مع sie بمعنىهي، لا تعميم على sie الجمع؛ الفعل آخر التابعة."
+        },
+        {
+          "text": "Er hat heute viel zu tun. Trotzdem ______ er mit uns. (essen)",
+          "answer": "isst",
+          "finding": "isst مع er بعد Trotzdem؛ ليس essen لمجرد أن uns جمع."
+        },
+        {
+          "text": "Obwohl das Gericht keine Milch ______, schmeckt es cremig. (enthalten)",
+          "answer": "enthält",
+          "finding": "enthält مع das Gericht المفرد، لا enthalten؛ creamy لا يقتضي الحليب بالضرورة في المثال، ولا ضمان حساسية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T04",
+      "text": "ابدأ1 بـObwohl ثم أضف الفاصلة، وابدأ2 بـIch ثم جملة جديدة تبدأ بـTrotzdem؛ أضف علامات الترقيم اللازمة:\n\n1. Obwohl / das Essen / einfach / ist / schmeckt / es gut.\n2. wenig Zeit / Ich / habe. Trotzdem / koche / ich / selbst.",
+      "finding": "بدايتان محددتان مع ترقيم؛ تدريب ترتيب في المصدر لا سؤال اختيار إضافي.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "Obwohl / das Essen / einfach / ist / schmeckt / es gut.",
+          "answer": "Obwohl das Essen einfach ist, schmeckt es gut.",
+          "finding": "ابدأ Obwohl؛ ist آخر التابعة وفاصلة ثم schmeckt es؛ احفظ المعنى."
+        },
+        {
+          "text": "wenig Zeit / Ich / habe. Trotzdem / koche / ich / selbst.",
+          "answer": "Ich habe wenig Zeit. Trotzdem koche ich selbst.",
+          "finding": "ابدأ Ich habe wenig Zeit ثم نقطة و Trotzdem koche ich selbst؛ لا ist أو حذف فاعل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. David يحضّر غداءه في الصباح.\n2. يطبخ ثلاثًا أو أربع مرات في الأسبوع تقريبًا.\n3. يخرج إلى مطعم مع زملائه يوم الجمعة.\n4. يتجنب مجموعة غذائية كاملة.\n5. كان يأكل كثيرًا أثناء التنقل في السابق.",
+      "finding": "خمسة أحكام مسندة للقراءة لا لحكاية المقصف أو الأسرة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "David يحضّر غداءه في الصباح.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ التحضير في المساء لا الصباح."
+        },
+        {
+          "text": "يطبخ ثلاثًا أو أربع مرات في الأسبوع تقريبًا.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ ثلاث أو أربع مرات في الأسبوع تقريبًا."
+        },
+        {
+          "text": "يخرج إلى مطعم مع زملائه يوم الجمعة.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ الجمعة مع الزملاء في مطعم."
+        },
+        {
+          "text": "يتجنب مجموعة غذائية كاملة.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ لا يستبعد أي مجموعة. لا نقلب keine إلى كل المجموعات."
+        },
+        {
+          "text": "كان يأكل كثيرًا أثناء التنقل في السابق.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ أكل أثناء التنقل سابقًا صريح في البداية ويدعم Q06."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T06",
+      "text": "استخدم كل كلمة مرة واحدة: **Vater — Sonntag — Wasser — bestellt**.\n\nأكمل: 1. Zu Hause kocht meistens der ______. 2. Er bereitet am ______ mehrere Gerichte vor. 3. Wenn das Gericht sehr scharf ist, trinkt die Person viel ______. 4. Am Freitag ______ die Familie etwas.",
+      "finding": "أربعة فراغات مع بنك كلمات؛ لا استنتاج جنس الراوي أو هوية شخصية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "Zu Hause kocht meistens der ______.",
+          "answer": "Vater",
+          "finding": "Vater الأب هو من يطبخ غالبًا في الأسرة."
+        },
+        {
+          "text": "Er bereitet am ______ mehrere Gerichte vor.",
+          "answer": "Sonntag",
+          "finding": "Sonntag الأحد لتحضير عدة أطباق."
+        },
+        {
+          "text": "Wenn das Gericht sehr scharf ist, trinkt die Person viel ______.",
+          "answer": "Wasser",
+          "finding": "Wasser ما يشربه الشخص في الحكاية، لا علاجًا مطلوبًا."
+        },
+        {
+          "text": "Am Freitag ______ die Familie etwas.",
+          "answer": "bestellt",
+          "finding": "bestellt مفرد مع die Familie؛ لا bestellen لمجرد أن أفرادها متعددون."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T07",
+      "text": "ابدأ كل إجابة بـ**Obwohl**: اجعل صعوبة الوصفة في التابعة في1، والشبع في التابعة في2، ثم اذكر ما يحدث رغم ذلك. احفظ الفاعل والمعنى وأضف الفاصلة:\n\n1. **Das Rezept ist schwierig. Lina probiert es aus.**\n2. **Ich bin satt. Ich esse ein kleines Stück Kuchen.**",
+      "finding": "تحويلان يبدأان Obwohl، مع حفظ الفاعل والأمر الذي يحدث رغم العائق.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "SEPARATE",
+        "CONTAIN",
+        "GIVEUP"
+      ],
+      "items": [
+        {
+          "text": "**Das Rezept ist schwierig. Lina probiert es aus.**",
+          "answer": "Obwohl das Rezept schwierig ist, probiert Lina es aus.",
+          "finding": "الصعوبة في التابعة بـ ist أخيرًا، ثم probiert Lina es aus؛ المعنى تجربة الوصفة رغم صعوبتها."
+        },
+        {
+          "text": "**Ich bin satt. Ich esse ein kleines Stück Kuchen.**",
+          "answer": "Obwohl ich satt bin, esse ich ein kleines Stück Kuchen.",
+          "finding": "الشبع في التابعة بـ bin، ثم esse ich؛ يأكل قطعة صغيرة رغم الشبع، ولا نصيحة غذائية للمتعلم."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-T08",
+      "text": "**أ — P01: خمس جمل**\n\nاكتب خمس جمل مترابطة عن عادات غذائية لشخصية متخيّلة: جملة عن وجبة معتادة؛ جملة عن تفضيلها مع سبب؛ جملة بـobwohl عن قلة الوقت والطبخ رغمها؛ جملة عن صعوبة أخرى في الطبخ؛ وجملة تبدأ بـtrotzdem وتوضح قرارًا رغم تلك الصعوبة. ضع الفعل المصرف آخر التابعة وفي الموقع الثاني من الرئيسية، ثم اقرأ الفقرة جهرًا. لا تسجيل أو نصيحة صحية أو بيانات شخصية مطلوبة.\n\n**ب — P02: أربعة أسطر**\n\nاكتب حوارًا خياليًا من أربعة أسطر بين زميلين: سؤال عن وجبة اليوم في المقصف؛ جواب يبدأ بـobwohl ويذكر أن المقصف عملي لكن المتحدث سيحضر طعامًا من البيت اليوم؛ تعليق بأن الطعام هناك مكلف أحيانًا؛ وجواب يبدأ بـtrotzdem ويعلن الذهاب مع الزملاء غدًا رغم الكلفة. اكتب الدورين بنفسك ثم اقرأهما جهرًا دون شريك أو تسجيل، مع ترتيب الفعل والفاصلة الصحيحين.",
+      "finding": "خمسة مطالب للفقرة وأربعة أدوار للحوار؛ كتابة ثم جهر إلزامي، بلا «إن أمكن» المخالفة لشرط التطبيق. اليوم والغد مختلفان، والمعايير والنموذجان مطابقان للمصدر.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ],
+      "items": [
+        {
+          "text": "P01، الجملة1: Ich esse mittags oft Reis mit Gemüse.",
+          "finding": "وجبة معتادة عند الغداء: أرز وخضار؛ oft لا دائمًا."
+        },
+        {
+          "text": "P01، الجملة2: Ich mag dieses Essen, weil es mir gut schmeckt.",
+          "finding": "التفضيل وسببه مع weil es mir gut schmeckt؛ ليس حكمًا بأن الوجبة الأفضل صحيًا."
+        },
+        {
+          "text": "P01، الجملة3: Obwohl ich wenig Zeit habe, koche ich meistens selbst.",
+          "finding": "قلة الوقت والطبخ رغمها؛ habe أخيرًا ثم koche ich، والتباين واضح."
+        },
+        {
+          "text": "P01، الجملة4: Manchmal ist das Kochen anstrengend.",
+          "finding": "صعوبة أخرى: الطبخ مجهد أحيانًا؛ تمهيد للجملة التالية."
+        },
+        {
+          "text": "P01، الجملة5: Trotzdem bereite ich mein Essen gern zu Hause zu.",
+          "finding": "قرار التحضير في البيت رغم المشقة؛ Trotzdem ثم bereite ich و zu آخر الرئيسية، لا اتباع trotzdem بترتيب تابع."
+        },
+        {
+          "text": "P02، السطر1: A: Isst du heute in der Kantine?",
+          "finding": "سؤال A عن مقصف اليوم، لا الغد."
+        },
+        {
+          "text": "P02، السطر2: B: Obwohl die Kantine praktisch ist, bringe ich heute Essen von zu Hause mit.",
+          "finding": "قرار B إحضار الطعام اليوم رغم عملية المقصف؛ ist أخيرًا ثم bringe ich…mit."
+        },
+        {
+          "text": "P02، السطر3: A: Das Essen dort ist manchmal teuer.",
+          "finding": "تعليق A عن الكلفة أحيانًا؛ تمهيد للتباين لا تحريم للأكل بالمقصف."
+        },
+        {
+          "text": "P02، السطر4: B: Trotzdem gehe ich morgen mit meinen Kollegen dorthin.",
+          "finding": "B يقرر الذهاب غدًا مع الزملاء رغم الكلفة؛ Trotzdem ثم gehe ich، و morgen يفصل القرار عن طعام اليوم."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q01",
+      "text": "أي مفردة تعني «التغذية أو النظام الغذائي»؟",
+      "finding": "die Ernährung تعني التغذية أو النظام الغذائي؛ أما العادة فهي die Gewohnheit.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "die Gewohnheit",
+        "die Ernährung",
+        "die Auswahl"
+      ],
+      "answer": "die Ernährung",
+      "sourceTaskIds": [
+        "DL-B1-02-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "die Gewohnheit",
+          "correct": false,
+          "finding": "Gewohnheit العادة لا التغذية."
+        },
+        {
+          "text": "die Ernährung",
+          "correct": true,
+          "finding": "Ernährung التغذية أو النظام الغذائي."
+        },
+        {
+          "text": "die Auswahl",
+          "correct": false,
+          "finding": "Auswahl الاختيار أو التشكيلة لا التغذية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q02",
+      "text": "ما معنى **auf bestimmte Lebensmittel verzichten**؟",
+      "finding": "verzichten auf تعني الاستغناء عن شيء أو الامتناع عنه.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "إضافة مكونات جديدة إلى الطعام.",
+        "الامتناع عن أطعمة معيّنة أو الاستغناء عنها.",
+        "تناول الطعام خارج المنزل."
+      ],
+      "answer": "الامتناع عن أطعمة معيّنة أو الاستغناء عنها.",
+      "sourceTaskIds": [
+        "DL-B1-02-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "إضافة مكونات جديدة إلى الطعام.",
+          "correct": false,
+          "finding": "الإضافة ليست الامتناع أو الاستغناء."
+        },
+        {
+          "text": "الامتناع عن أطعمة معيّنة أو الاستغناء عنها.",
+          "correct": true,
+          "finding": "الامتناع عن أطعمة محددة معنى verzichten auf."
+        },
+        {
+          "text": "تناول الطعام خارج المنزل.",
+          "correct": false,
+          "finding": "الأكل خارج البيت معنى auswärts essen."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q03",
+      "text": "اختر الصياغة الصحيحة؛ **sie هنا تعني «هي»**: **Obwohl sie wenig Zeit ___, kocht sie selbst.** (haben)",
+      "finding": "sie هنا مفرد مؤنث بمعنى «هي»، فنستخدم hat؛ أما sie للجمع فتأخذ haben. المصرف آخر التابعة، ثم kocht sie بعد الفاصلة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "haben",
+        "hat",
+        "ist"
+      ],
+      "answer": "hat",
+      "sourceTaskIds": [
+        "DL-B1-02-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "haben",
+          "correct": false,
+          "finding": "haben مصدر أو صيغة جمع، لا sie المفردة المعطاة."
+        },
+        {
+          "text": "hat",
+          "correct": true,
+          "finding": "hat مع sie بمعنىهي، وفي آخر التابعة."
+        },
+        {
+          "text": "ist",
+          "correct": false,
+          "finding": "ist ليست صيغة haben ولا تؤدي المعنى المعطى."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q04",
+      "text": "أكمل مع مراعاة ترتيب الجملة: **Das Restaurant ist teuer. Trotzdem ___ wir heute dort.** (essen)",
+      "finding": "مع wir نستخدم essen. عند تصدير الرئيسية بـ Trotzdem تشغل الموقع الأول، ثم essen المصرف في الموقع الثاني، ثم wir؛ لا نطبق هذا الترتيب على موضعها داخل الرئيسية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "isst",
+        "esse",
+        "essen"
+      ],
+      "answer": "essen",
+      "sourceTaskIds": [
+        "DL-B1-02-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "isst",
+          "correct": false,
+          "finding": "isst مع er/sie/es لا wir."
+        },
+        {
+          "text": "esse",
+          "correct": false,
+          "finding": "esse مع ich لا wir."
+        },
+        {
+          "text": "essen",
+          "correct": true,
+          "finding": "essen مع wir وفي الموقع الثاني بعد Trotzdem."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q05",
+      "text": "اختر الرابط المناسب: **Ich habe wenig Zeit. ___ koche ich oft selbst.**",
+      "finding": "Trotzdem تربط نتيجة مخالفة للتوقع برئيسية: Trotzdem koche ich … أما Obwohl/Weil فيحتاجان تابعة بفعل أخير في النمط المدروس، ولا تعني weil «مع ذلك».",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "Obwohl",
+        "Weil",
+        "Trotzdem"
+      ],
+      "answer": "Trotzdem",
+      "sourceTaskIds": [
+        "DL-B1-02-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "Obwohl",
+          "correct": false,
+          "finding": "Obwohl تحتاج تابعًا بفعل أخير في النمط المدروس؛ لا koche ich مباشرة هنا."
+        },
+        {
+          "text": "Weil",
+          "correct": false,
+          "finding": "Weil تحتاج تابعًا وتعطي سببًا لا «مع ذلك»."
+        },
+        {
+          "text": "Trotzdem",
+          "correct": true,
+          "finding": "Trotzdem مع رئيسية koche ich: نتيجة رغم قلة الوقت."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q06",
+      "text": "Was machte David früher oft?",
+      "finding": "تقول البداية إنه كان يأكل كثيرًا أثناء التنقل: unterwegs. لا تحدد أنه كان في مطعم دائمًا أو أنه توقف نهائيًا عن هذه العادة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "Er kochte jeden Abend zu Hause.",
+        "Er aß oft unterwegs.",
+        "Er verzichtete auf alle Lebensmittelgruppen."
+      ],
+      "answer": "Er aß oft unterwegs.",
+      "sourceTaskIds": [
+        "DL-B1-02-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Er kochte jeden Abend zu Hause.",
+          "correct": false,
+          "finding": "الطبخ كل مساء غير مذكور بوصفه عادته القديمة."
+        },
+        {
+          "text": "Er aß oft unterwegs.",
+          "correct": true,
+          "finding": "الأكل أثناء التنقل كثيرًا مذكور بصراحة."
+        },
+        {
+          "text": "Er verzichtete auf alle Lebensmittelgruppen.",
+          "correct": false,
+          "finding": "استبعاد كل المجموعات ليس مذكورًا عن الماضي، ولا يطابق نفي استبعاد مجموعة في الحاضر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q07",
+      "text": "Wie oft kocht David ungefähr pro Woche?",
+      "finding": "يقول النص إنه يطبخ ثلاثًا أو أربع مرات في الأسبوع.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "Ein- oder zweimal.",
+        "Jeden Tag.",
+        "Drei- oder viermal."
+      ],
+      "answer": "Drei- oder viermal.",
+      "sourceTaskIds": [
+        "DL-B1-02-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Ein- oder zweimal.",
+          "correct": false,
+          "finding": "مرة أو مرتان لا توافق ثلاثًا أو أربعًا."
+        },
+        {
+          "text": "Jeden Tag.",
+          "correct": false,
+          "finding": "كل يوم لا يوافق التكرار المعطى."
+        },
+        {
+          "text": "Drei- oder viermal.",
+          "correct": true,
+          "finding": "ثلاث أو أربع مرات أسبوعيًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q08",
+      "text": "Wer kocht zu Hause meistens?",
+      "finding": "في حكاية الاستماع الأب هو من يطبخ غالبًا؛ meistens لا تعني دائمًا. لا نفترض أن الأسرة هي أسرة David أو Tarek.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "Die Mutter.",
+        "Der Vater.",
+        "Die Person selbst."
+      ],
+      "answer": "Der Vater.",
+      "sourceTaskIds": [
+        "DL-B1-02-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Die Mutter.",
+          "correct": false,
+          "finding": "الأم ليست التي ذُكرت بأنها تطبخ غالبًا."
+        },
+        {
+          "text": "Der Vater.",
+          "correct": true,
+          "finding": "الأب صريح في افتتاح الاستماع."
+        },
+        {
+          "text": "Die Person selbst.",
+          "correct": false,
+          "finding": "قال الشخص إن والده يطبخ غالبًا، لا إنه هو نفسه؛ لا نستنتج الهوية من الصوت."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q09",
+      "text": "Wann bereitet der Vater mehrere Gerichte vor?",
+      "finding": "يحضّر الأب عدة أطباق يوم الأحد.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "Am Sonntag.",
+        "Am Freitag.",
+        "Am Montag."
+      ],
+      "answer": "Am Sonntag.",
+      "sourceTaskIds": [
+        "DL-B1-02-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Am Sonntag.",
+          "correct": true,
+          "finding": "الأحد صريح لتحضير الأطباق."
+        },
+        {
+          "text": "Am Freitag.",
+          "correct": false,
+          "finding": "الجمعة للطلب لا لتحضير الأب المذكور."
+        },
+        {
+          "text": "Am Montag.",
+          "correct": false,
+          "finding": "الاثنين غير مذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-Q10",
+      "text": "أي صياغة تدمج الجملتين **Das Rezept ist schwierig. Lina probiert es aus.** باستخدام obwohl؟",
+      "finding": "الصعوبة في التابعة مع ist أخيرًا؛ بعد الفاصلة تأتي الرئيسية probiert Lina es aus. البادئة aus تبقى في آخر الرئيسية، ويحفظ التحويل معنى تجربة الوصفة رغم صعوبتها.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS",
+        "GIVEUP",
+        "CONTAIN"
+      ],
+      "options": [
+        "Obwohl das Rezept ist schwierig, probiert Lina es aus.",
+        "Obwohl das Rezept schwierig ist, probiert Lina es aus.",
+        "Obwohl ist das Rezept schwierig, Lina probiert es aus."
+      ],
+      "answer": "Obwohl das Rezept schwierig ist, probiert Lina es aus.",
+      "sourceTaskIds": [
+        "DL-B1-02-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Obwohl das Rezept ist schwierig, probiert Lina es aus.",
+          "correct": false,
+          "finding": "ist قبل schwierig لا في آخر التابعة."
+        },
+        {
+          "text": "Obwohl das Rezept schwierig ist, probiert Lina es aus.",
+          "correct": true,
+          "finding": "ist أخيرًا ثم probiert Lina es aus؛ التحويل سليم."
+        },
+        {
+          "text": "Obwohl ist das Rezept schwierig, Lina probiert es aus.",
+          "correct": false,
+          "finding": "ist قبل الفاعل، والترتيب Lina probiert بعد التابعة لا يطابق النمط الصحيح."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-P01",
+      "text": "اكتب خمس جمل مترابطة عن عادات غذائية لشخصية متخيّلة: جملة عن وجبة معتادة؛ جملة عن تفضيلها مع سبب؛ جملة بـobwohl عن قلة الوقت والطبخ رغمها؛ جملة عن صعوبة أخرى في الطبخ؛ وجملة تبدأ بـtrotzdem وتوضح قرارًا رغم تلك الصعوبة. ضع الفعل المصرف آخر التابعة وفي الموقع الثاني من الرئيسية، ثم اقرأ الفقرة جهرًا. لا تسجيل أو نصيحة صحية أو بيانات شخصية مطلوبة.",
+      "finding": "المصدر والمعايير والنموذج والدليل متطابقة؛ الحد الحرفي والإقرارات لا تصحح النحو أو المعنى أو النطق آليًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ],
+      "criteria": {
+        "taskCompletion": "خمس جمل عن وجبة معتادة وتفضيل وسبب، ثم قلة الوقت والطبخ رغمها وصعوبة أخرى وقرار رغمها؛ قراءة الفقرة جهرًا.",
+        "meaningClarity": "موضوع غذائي خيالي مترابط؛ السبب واضح والتباينان مفهومـان دون نصيحة صحية شخصية.",
+        "targetSkill": "obwohl مع الفعل المصرف آخر التابعة وفاصلة، وtrotzdem في بداية رئيسية يليها المصرف ثم الفاعل؛ السبب والجمل الأخرى مرتبة بوضوح."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 190,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل عن وجبة معتادة وتفضيل وسبب، ثم قلة الوقت والطبخ رغمها وصعوبة أخرى وقرار رغمها؛ قراءة الفقرة جهرًا.",
+          "finding": "خمس جمل بمكوناتها والجهر صريح؛ نموذج 227 حرفًا فوق 190، لا خمسة أسطر متفرقة بلا مضمون."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "موضوع غذائي خيالي مترابط؛ السبب واضح والتباينان مفهومـان دون نصيحة صحية شخصية.",
+          "finding": "تفضيل للطعم وسببه، وقلة الوقت ثم مشقة الطبخ والقرار رغمها؛ لا توصية صحية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "obwohl مع الفعل المصرف آخر التابعة وفاصلة، وtrotzdem في بداية رئيسية يليها المصرف ثم الفاعل؛ السبب والجمل الأخرى مرتبة بوضوح.",
+          "finding": "obwohl تابعة بمصرف أخير وفاصلة، و Trotzdem رئيسية بمصرف ثانٍ؛ weil في جملة السبب سليمة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-P02",
+      "text": "اكتب حوارًا خياليًا من أربعة أسطر بين زميلين: سؤال عن وجبة اليوم في المقصف؛ جواب يبدأ بـobwohl ويذكر أن المقصف عملي لكن المتحدث سيحضر طعامًا من البيت اليوم؛ تعليق بأن الطعام هناك مكلف أحيانًا؛ وجواب يبدأ بـtrotzdem ويعلن الذهاب مع الزملاء غدًا رغم الكلفة. اكتب الدورين بنفسك ثم اقرأهما جهرًا دون شريك أو تسجيل، مع ترتيب الفعل والفاصلة الصحيحين.",
+      "finding": "المصدر والمعايير والنموذج والدليل متطابقة؛ الحد الحرفي والإقرارات لا تصحح النحو أو المعنى أو النطق آليًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "LINK",
+        "ALTHOUGH",
+        "NEVERTHELESS"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أسطر تشمل سؤال اليوم، وجوابًا عن عملية المقصف وإحضار الطعام اليوم، وكلفة أحيانًا، وقرار الغد مع الزملاء؛ قراءة الدورين جهرًا.",
+        "meaningClarity": "تتضح فكرتا التباين والقرار، ويُفصل إحضار طعام اليوم عن الذهاب غدًا؛ لا تعارض زمني غير مقصود.",
+        "targetSkill": "جواب يبدأ بـobwohl مع المصرف آخر التابعة ثم فاصلة ورئيسية سليمة، وجواب يبدأ بـtrotzdem ثم المصرف والفاعل."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أسطر تشمل سؤال اليوم، وجوابًا عن عملية المقصف وإحضار الطعام اليوم، وكلفة أحيانًا، وقرار الغد مع الزملاء؛ قراءة الدورين جهرًا.",
+          "finding": "أربعة أدوار لوجبة اليوم وعملية المقصف والكلفة وقرار الغد؛ نموذج 205 حرفًا فوق 180، والجهر للدورين."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تتضح فكرتا التباين والقرار، ويُفصل إحضار طعام اليوم عن الذهاب غدًا؛ لا تعارض زمني غير مقصود.",
+          "finding": "القراران لا يتناقضان: طعام البيت اليوم والمقصف غدًا؛ manchmal لا تعني كلفة مرتفعة دائمًا."
+        },
+        {
+          "key": "targetSkill",
+          "text": "جواب يبدأ بـobwohl مع المصرف آخر التابعة ثم فاصلة ورئيسية سليمة، وجواب يبدأ بـtrotzdem ثم المصرف والفاعل.",
+          "finding": "ist آخر تابعة obwohl، ثم bringe ich…mit؛ Trotzdem gehe ich رئيسية، لا تابعة بفعل أخير بعد trotzdem."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-02-AUD-PHR-01",
+      "text": "Die Ernährung. Die Gewohnheit, die Gewohnheiten. Die Mahlzeit, die Mahlzeiten. Die Zutat, die Zutaten. Die Auswahl. Ausgewogen. Sättigend. Enthalten, enthält. Verzichten auf, verzichtet auf. Sich ernähren, ernährt sich. Auswärts essen. Der Geschmack, die Geschmäcker. Inzwischen.",
+      "finding": "مطابقة نصية للكلمات والموضع والأصوات؛ الأصل والمسارات والحالة محفوظة دون استماع أو توليد أو اعتماد جديد. يحتوي Geschmäcker وحدها؛ الجدول والمساعدة أضافا Geschmäcke ووسم الصيغة المسجلة الدارج المازح. توضيح مكتوب لا تصحيح تسجيل أو دعوى أن اللفظ غير موجود.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Die Ernährung.",
+          "finding": "Ernährung مؤنث؛ التغذية أو النظام الغذائي، لا العادة المفردة. الشرطة تخص السياق لا حكمًا عامًا على كل جمع ممكن."
+        },
+        {
+          "text": "Die Gewohnheit, die Gewohnheiten.",
+          "finding": "Gewohnheit مؤنث وجمعها Gewohnheiten؛ عادة، لا منصة أو مكوّن."
+        },
+        {
+          "text": "Die Mahlzeit, die Mahlzeiten.",
+          "finding": "Mahlzeit مؤنث وجمعها Mahlzeiten؛ وجبة، لا صنف واحد بالضرورة."
+        },
+        {
+          "text": "Die Zutat, die Zutaten.",
+          "finding": "Zutat مؤنث وجمعها Zutaten؛ مكوّن، لا النادي Verein."
+        },
+        {
+          "text": "Die Auswahl.",
+          "finding": "Auswahl مؤنث؛ اختيار أو تشكيلة في السياق، لا مرادف Ernährung."
+        },
+        {
+          "text": "Ausgewogen.",
+          "finding": "ausgewogen متوازن وصف لغوي؛ لا شهادة بأن وجبة شخصية تحقق كل الاحتياجات."
+        },
+        {
+          "text": "Sättigend.",
+          "finding": "sättigend يسبب الشبع؛ ليس وعدًا بنفس الإحساس والمدة لكل شخص أو حكمًا صحيًا مطلقًا."
+        },
+        {
+          "text": "Enthalten, enthält.",
+          "finding": "enthalten مصدر و enthält مفرد؛ ent- لا ينفصل، و sein ليس بديل فعل الاحتواء."
+        },
+        {
+          "text": "Verzichten auf, verzichtet auf.",
+          "finding": "أضيف auf بعد verzichtet لمطابقة التركيب الكامل والتسجيل؛ على المتعلم تعلم الفعل وحرفه معًا."
+        },
+        {
+          "text": "Sich ernähren, ernährt sich.",
+          "finding": "sich ernähren انعكاسي؛ ernährt sich مفرد، و ich ernähre mich في الأمثلة."
+        },
+        {
+          "text": "Auswärts essen.",
+          "finding": "auswärts essen أكل خارج المنزل؛ ليس بالضرورة في مطعم بعينه أو أسرة النص نفسها."
+        },
+        {
+          "text": "Der Geschmack, die Geschmäcker.",
+          "finding": "صُحح عرض الجمع:Geschmäcke غير موسوم و Geschmäcker دارج مازح بحسب Duden. الصوت يحفظ الثانية، بلا ادعاء أنها الصيغة المحايدة الوحيدة."
+        },
+        {
+          "text": "Inzwischen.",
+          "finding": "inzwischen ظرف للحال الآن بعد التطور أو في الأثناء بحسب السياق؛ لا إعراب جمع."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-02-AUD-MODEL-01",
+      "text": "Obwohl ich wenig Zeit habe, koche ich oft selbst. Ich koche oft selbst, obwohl ich wenig Zeit habe. Ich habe wenig Zeit. Trotzdem koche ich oft selbst.",
+      "finding": "مطابقة نصية للكلمات والموضع والأصوات؛ الأصل والمسارات والحالة محفوظة دون استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Obwohl ich wenig Zeit habe, koche ich oft selbst.",
+          "finding": "الطبخ يحدث رغم قلة الوقت؛ habe أخيرًا ثم koche ich بعد الفاصلة."
+        },
+        {
+          "text": "Ich koche oft selbst, obwohl ich wenig Zeit habe.",
+          "finding": "المعنى نفسه بتأخير التابعة؛ habe يبقى أخيرًا والفاصلة محفوظة."
+        },
+        {
+          "text": "Ich habe wenig Zeit.",
+          "finding": "مقدمة عن قلة الوقت تحتاج الجملة التالية لكي تظهر علاقة التباين؛ ليست obwohl محذوفة تلقائيًا."
+        },
+        {
+          "text": "Trotzdem koche ich oft selbst.",
+          "finding": "Trotzdem تستأنف رئيسية مرتبطة بالجملة السابقة؛ koche في الموقع الثاني ثم ich."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-02-AUD-DLG-01",
+      "text": "Isst du mittags immer in der Kantine? Nicht immer. Obwohl die Kantine praktisch ist, bringe ich oft Essen von zu Hause mit. Warum? Das Essen in der Kantine ist manchmal teuer. Trotzdem gehe ich dorthin, wenn ich mit meinen Kollegen essen möchte. Was bringst du normalerweise mit? Meistens Reis und Gemüse. Die Mahlzeit ist einfach, aber sie macht mich satt.",
+      "finding": "مطابقة نصية للكلمات والموضع والأصوات؛ الأصل والمسارات والحالة محفوظة دون استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Isst du mittags immer in der Kantine?",
+          "finding": "Mira تسأل عن دائمًا في المقصف عند الغداء؛ سؤال لا خبر يثبت أنه يفعل ذلك دائمًا."
+        },
+        {
+          "text": "Nicht immer. Obwohl die Kantine praktisch ist, bringe ich oft Essen von zu Hause mit.",
+          "finding": "Tarek ينفي الدوام ثم يصف الإحضار غالبًا رغم عملية المقصف؛ ist آخر التابعة، bringe…mit في الرئيسية."
+        },
+        {
+          "text": "Warum?",
+          "finding": "سؤال عن السبب، لا أمر بتغيير الطعام أو تقديم علاج."
+        },
+        {
+          "text": "Das Essen in der Kantine ist manchmal teuer. Trotzdem gehe ich dorthin, wenn ich mit meinen Kollegen essen möchte.",
+          "finding": "الكلفة أحيانًا لا دائمًا؛ trotzdem ثم gehe ich، و wenn مرتبطة بالرغبة في الأكل مع الزملاء، لا موعد مؤكد لكل يوم."
+        },
+        {
+          "text": "Was bringst du normalerweise mit?",
+          "finding": "سؤال عما يحضره عادة، لا تفاصيل David أو الأسرة."
+        },
+        {
+          "text": "Meistens Reis und Gemüse. Die Mahlzeit ist einfach, aber sie macht mich satt.",
+          "finding": "غالبًا أرز وخضروات، ووجبة تشبعه هو؛ لا ضمان شبع موحد للجميع أو نظام خالٍ من مجموعة غذائية."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-02-AUD-READ-01",
+      "text": "Früher aß David oft unterwegs. Seit er einen neuen Arbeitsplan hat, bereitet er sein Mittagessen am Abend vor. Obwohl er wenig Zeit hat, kocht er drei- oder viermal pro Woche. Er wählt häufig Gemüse und Hülsenfrüchte, weil sie lange satt machen. Am Freitag isst er mit Kollegen in einem Restaurant. Das kostet mehr als sein Essen zu Hause. Trotzdem freut er sich auf dieses gemeinsame Essen. David achtet auf Abwechslung, aber er verzichtet auf keine Lebensmittelgruppe.",
+      "finding": "مطابقة نصية للكلمات والموضع والأصوات؛ الأصل والمسارات والحالة محفوظة دون استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Früher aß David oft unterwegs.",
+          "finding": "كان David يأكل كثيرًا أثناء التنقل؛ aß ماضٍ، ولا يلزم مطعم دائمًا أو انقطاع كامل لاحقًا."
+        },
+        {
+          "text": "Seit er einen neuen Arbeitsplan hat, bereitet er sein Mittagessen am Abend vor.",
+          "finding": "منذ خطة العمل الجديدة يعد الغداء مساءً؛ seit زمنية، و bereitet…vor منفصلة. لا موعد بالساعة."
+        },
+        {
+          "text": "Obwohl er wenig Zeit hat, kocht er drei- oder viermal pro Woche.",
+          "finding": "قلة الوقت رغمها يطبخ ثلاثًا أو أربع مرات أسبوعيًا؛ لا كل يوم أو ثلاث وجبات يوميًا."
+        },
+        {
+          "text": "Er wählt häufig Gemüse und Hülsenfrüchte, weil sie lange satt machen.",
+          "finding": "يختار خضارًا وبقوليات بسبب الشبع في تفسير عادته؛ weil سبب، لا obwohl. هذا ليس ضمان شبع لكل جسم أو خطة علاجية."
+        },
+        {
+          "text": "Am Freitag isst er mit Kollegen in einem Restaurant.",
+          "finding": "يأكل مع زملاء في مطعم الجمعة؛ ليس المقصف في حوار Tarek أو طلب أسرة الاستماع."
+        },
+        {
+          "text": "Das kostet mehr als sein Essen zu Hause.",
+          "finding": "الكلفة أعلى من أكله في البيت؛ المقارنة محددة ولا مبلغ أو حكم أن كل مطعم أغلى دائمًا."
+        },
+        {
+          "text": "Trotzdem freut er sich auf dieses gemeinsame Essen.",
+          "finding": "يتطلع رغم الكلفة إلى الطعام الجماعي؛ trotzdem رئيسية و sich freuen auf، لا دليل أنه تناول الوجبة بالفعل."
+        },
+        {
+          "text": "David achtet auf Abwechslung, aber er verzichtet auf keine Lebensmittelgruppe.",
+          "finding": "يهتم بالتنوع ولا يستبعد أي مجموعة؛ keine تنفي الاستبعاد، لا تؤكد أكل كل نوع يوميًا أو صلاحية نهجه للجميع."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-02-AUD-LST-01",
+      "text": "Bei uns zu Hause kocht meistens mein Vater. Obwohl er wenig Zeit hat, bereitet er am Sonntag mehrere Gerichte vor. Wir essen gern gemeinsam. Manchmal probieren wir neue Zutaten aus. Wenn ein Gericht sehr scharf ist, trinke ich viel Wasser. Am Freitag bestellen wir etwas, trotzdem kochen wir an den anderen Tagen selbst.",
+      "finding": "مطابقة نصية للكلمات والموضع والأصوات؛ الأصل والمسارات والحالة محفوظة دون استماع أو توليد أو اعتماد جديد. وصف الماء ليس إرشادًا علاجيًا؛ الفاصلة قبل trotzdem تربط رئيسيتين، وليست خطأ يستوجب تغيير الصوت.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Bei uns zu Hause kocht meistens mein Vater.",
+          "finding": "الأب يطبخ غالبًا في هذه الأسرة؛ لا دائمًا ولا افتراض جنس الشخص الذي يحكي."
+        },
+        {
+          "text": "Obwohl er wenig Zeit hat, bereitet er am Sonntag mehrere Gerichte vor.",
+          "finding": "الأحد يحضر عدة أطباق رغم قلة الوقت؛ عدة لا عدد محدد، و bereitet…vor بعد التابعة."
+        },
+        {
+          "text": "Wir essen gern gemeinsam.",
+          "finding": "يحبون الأكل معًا؛ ليس إثبات أنهم يجتمعون في كل وجبة دائمًا."
+        },
+        {
+          "text": "Manchmal probieren wir neue Zutaten aus.",
+          "finding": "يجربون مكونات جديدة أحيانًا؛ probieren…aus مع فاعل جمع."
+        },
+        {
+          "text": "Wenn ein Gericht sehr scharf ist, trinke ich viel Wasser.",
+          "finding": "إذا كان الطبق حارًا جدًا يشرب الشخص ماء كثيرًا وفق الحكاية؛ جواب فهم لا نصيحة علاجية ولا إثبات فعالية الماء."
+        },
+        {
+          "text": "Am Freitag bestellen wir etwas, trotzdem kochen wir an den anderen Tagen selbst.",
+          "finding": "الجمعة يطلبون شيئًا، ومع ذلك يطبخون بأنفسهم في الأيام الأخرى؛ رئيسيتان تربطهما فاصلة، لا ضرورة لاختلاق خطأ نحوي أو اسم المطعم والطلب."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-02-food-habits-obwohl.md": "b70c23f168f39d45d424fac2bc2ccea1b0d7d1f56174ede2e76f0cf12e985570",
+    "content/B1/lesson-02-food-habits-obwohl.assessment.json": "b202ffa644046003e363443534fd58cfe08033845adb99c8b1dcc8a6f3072d47"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-02-AUD-PHR-01": "08ead06150a618c7e50aad2bb45b22082bdd6ff3bfb79530223ade59f75c3be8",
+    "DL-B1-02-AUD-MODEL-01": "5d0a73b0af8b6653584dd4b32a2383ce52e666af3e0b169a8bf3726960d00c89",
+    "DL-B1-02-AUD-DLG-01": "7fa59ae7f5fff0e8dc67fb616917480fc958b20485b3537de368e1d8234ee5f0",
+    "DL-B1-02-AUD-READ-01": "3c064b4a5b46f27476881e0de4db20f486cfc2b656159a0b0358bdc19e19617e",
+    "DL-B1-02-AUD-LST-01": "b0fd8d88b23538ca00fabc237a905f126438366cfb4816e306d19fb003645a4d"
+  },
+  "preservation": {
+    "baseline": "f741ee9136cf6072785bbb6ac383235d359ad9b8",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-B1-02-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-02-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-02-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "otherAudioRegisterRowsUnchanged": 214,
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 115,
+    "existingAudioConsistencyAssertionsUnchanged": true
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 2019574,
+    "cacheVersion": "v79",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserResult": "PASS all five suites; first serial run, no application-test retry",
+    "axeScreenStates": 141,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 96,
+    "axeIncompleteNodeOccurrences": 217,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; CR29 filechooser intermittency remains unresolved, not claimed fixed."
+    ],
+    "browserEnvironment": "Locked npm dependencies plus Sparticuz143.0.4 and bundled al2023 libraries outside Git; no package/lock changes.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 32
+    },
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS",
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Historical filechooser intermittency unresolved; successful runs are not a fix.",
+      "Evidence checks are not automatic language/pronunciation assessment.",
+      "B1.2 recorded Geschmäcker is retained with written register clarification, not replaced or acoustically reviewed.",
+      "Prior A2.8/A2.9 recorded-text issues remain documented and unchanged.",
+      "No human reviewer prerequisite; no remote UI or Production test claimed."
+    ]
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "e1c81db51946b9ca832d88bf292cf8eb0cb5f5a9",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false
+  },
+  "campaign": {
+    "reviewedLessons": 31,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 22,
+    "next": "CR33/B1.3"
+  }
+}
