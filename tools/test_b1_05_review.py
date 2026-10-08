@@ -13,6 +13,8 @@ assert 'احتفظ بالجملة الأولى رئيسية' in T[3] and 'أضف
 assert 'Eine Straße führt direkt zur ______.' in T[6]
 assert 'der Innenstadt؛ spät؛ einen Platz؛ Haltestelle؛ zu Fuß.' in s
 assert 'Bis wann ist die Bibliothek geöffnet? Nenne nur die Angabe im Text.' in s
+assert '| Nominativ — فاعل | der | die | das | die |' in s
+assert '| Akkusativ — مفعول به | den | die | das | die |' in s
 assert 'Ich besuche den Park, der am Fluss liegt.' in s
 assert 'وصفان منسقان داخل صلة واحدة' in s
 for t,spoken in zip(a['performanceTasks'],[False,True]):
