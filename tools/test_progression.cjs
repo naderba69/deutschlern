@@ -994,6 +994,39 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain A2.8 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR27: written complaint vs spoken service roles, and A2.9 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'a2-09-products-technology-complaints').assessment.version, 'a2-09-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('a2-09-products-technology-complaints');
+    const responses = ["Guten Tag, vor sieben Tagen habe ich bei Ihnen einen Kopfhörer gekauft. Seit gestern funktioniert der rechte Lautsprecher nicht. Ich habe den Kassenbon noch. Könnten Sie das Gerät bitte prüfen? Ich möchte wissen, ob ein Umtausch möglich ist. Vielen Dank Nora", "Kundin: Guten Tag. Mein Tablet ist defekt. Könnten Sie das Gerät bitte prüfen? Mitarbeiter: Haben Sie den Kassenbon? Kundin: Ja, hier ist der Kassenbon. Mitarbeiter: Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'A2.9 models fit thresholds; P01 is writing only, P02 needs speech and all checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('a2-09-products-technology-complaints').performanceTasks[0]], 'lesson:a2-09-products-technology-complaints', 'a2-09-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('a2-09-products-technology-complaints');
+      const next=findLesson('a2-10-sports-health-feelings-weil');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'a2-09-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'a2-09-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='a2-09-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'a2-09-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain A2.9 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

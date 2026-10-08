@@ -106,7 +106,7 @@ async function updateChecks(browser, base) {
   });
   await page.waitForFunction(async () => !(await caches.keys()).includes('deutsch-pfad-v42'));
   const keys = await page.evaluate(() => caches.keys());
-  assert.ok(keys.includes('deutsch-pfad-v73'));
+  assert.ok(keys.includes('deutsch-pfad-v74'));
   assert.ok(!keys.includes('deutsch-pfad-v42')); 
   assert.ok(keys.includes('other-application'));
   assert.equal(await page.evaluate(() => window.__qaShellVersion), 'v42', 'activation must not force-reload away an open answer');
@@ -126,14 +126,14 @@ async function updateChecks(browser, base) {
   setOriginOffline(false);
   await context.setOffline(false);
   assert.equal((await fetchInfo(page, clip, 'bytes=0-31')).status, 206);
-  await page.waitForFunction(async url => !!(await caches.match(url, { cacheName: 'deutsch-pfad-v73' })), clip);
+  await page.waitForFunction(async url => !!(await caches.match(url, { cacheName: 'deutsch-pfad-v74' })), clip);
   setOriginOffline(true);
   await context.setOffline(true);
   assert.equal((await fetchInfo(page, clip, 'bytes=0-31')).status, 206);
   await context.close();
   setOriginOffline(false);
   setPreviousWorker(false);
-  console.log('PASS: real v42-worker fixture to v73 activation, no forced reload, new shell offline, progress/answer persistence, cache isolation, audio loss communicated by 503 and online recache.');
+  console.log('PASS: real v42-worker fixture to v74 activation, no forced reload, new shell offline, progress/answer persistence, cache isolation, audio loss communicated by 503 and online recache.');
 }
 
 (async () => {

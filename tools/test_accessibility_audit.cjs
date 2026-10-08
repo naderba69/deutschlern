@@ -182,6 +182,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A2.8-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A2.8-practical-form-fixture', width);
+  // CR27: written complaint and spoken service roles.
+  await page.evaluate(() => openLesson('a2-09-products-technology-complaints'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.9-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.9-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
