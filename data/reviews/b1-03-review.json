@@ -2225,8 +2225,28 @@
     "implementationCommit": "f097bb771c9d9d090c200714223ad64e0cf7d387",
     "implementationPushed": true,
     "implementationHeadMatchedRemote": true,
-    "reviewPushed": false,
-    "remoteUiTested": false
+    "reviewPushed": true,
+    "remoteUiTested": false,
+    "reviewCommit": "12e5d0364428fca1ae47b0ed587a38fef42e831c",
+    "reviewHeadMatchedRemote": true,
+    "prNumber": 1,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "12e5d0364428fca1ae47b0ed587a38fef42e831c",
+    "implementationVercel": {
+      "state": "success",
+      "deploymentId": 6945646591,
+      "environment": "Preview",
+      "environmentUrl": "https://deutschlern-j9n9s8lhs-balinader-2671s-projects.vercel.app",
+      "remoteUiTested": false
+    },
+    "reviewVercel": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receiptCommit": "This documentation commit; resolve from git log",
+    "receiptDeploymentQueried": false
   },
   "campaign": {
     "reviewedLessons": 32,
