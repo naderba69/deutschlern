@@ -29,7 +29,7 @@
 
 - **eine Jacke / ein Hemd / einen Mantel brauchen oder kaufen** — يحتاج إلى سترة/قميص/معطف أو يشتريه؛ مفعول Akkusativ: eine للمؤنث، ein للمحايد، einen للمذكر في هذه الأمثلة. نقول ich brauche وOmar braucht.
 - **eine blaue Jacke / die schwarze Hose / schwarze Schuhe** — سترة زرقاء / البنطال الأسود / أحذية سوداء؛ الألوان قبل الاسم تأخذ نهايات بحسب السياق. احفظ هذه التراكيب؛ لا نطلب الآن جدول تصريف الصفات كاملًا.
-- **die Ärmel / zu lang / schön** — الأكمام / أطول من اللازم / جميل؛ zu قبل الصفة هنا تعني تجاوز المناسب، لا «إلى» ولا مجرد «جدًا».
+- **die Ärmel / zu lang / schön** — الأكمام / أطول من اللازم / جميل؛ **in der Länge** تعني من حيث الطول؛ zu قبل الصفة هنا تعني تجاوز المناسب، لا «إلى» ولا مجرد «جدًا».
 - **neue Schuhe / seine alten Schuhe** — أحذية جديدة / أحذيته القديمة؛ الضمير يعود إلى Omar. Schuh واحد وSchuhe جمع؛ في الاستعمال هنا نتحدث عن زوج أحذية.
 - **im Geschäft / in Größe 42** — في المتجر / بمقاس42؛ im = in dem. M و38 و40 و42 أمثلة لمقاسات مختلفة، لا جدول تحويل عالمي بينها.
 - **anprobieren / er probiert … an** — يجرّب الملابس / هو يجرّب؛ مع müssen يبقى المصدر كاملًا: Er muss die Schuhe anprobieren. أما بلا فعل ناقص: Er probiert die Schuhe an.
@@ -55,7 +55,7 @@
 
 **Kundin:** Gut, ich nehme sie. Danke!
 
-اشترت الزبونة السترة رغم قولها إن الأكمام أطول من اللازم. النص لا يشرح السبب ولا يثبت أن المقاس مناسب؛ لا نفترض تعديل الأكمام أو تبديل السترة. هذا الحوار والقراءة والاستماع مواقف مستقلة، وكلمات التسجيل محفوظة.
+اختارت الزبونة شراء السترة رغم قولها إن الأكمام أطول من اللازم. النص لا يشرح السبب ولا يثبت أن المقاس مناسب؛ لا نفترض تعديل الأكمام أو تبديل السترة. هذا الحوار والقراءة والاستماع مواقف مستقلة، وكلمات التسجيل محفوظة.
 
 ## 3) القواعد: müssen مع مصدر في الجملة البسيطة
 
@@ -104,7 +104,7 @@
 
 1. Was möchte die Person kaufen?
 2. Welche Größe braucht sie?
-3. Warum nimmt sie nicht die schwarze Hose?
+3. Wie ist die schwarze Hose in der Länge?
 4. Welche Hose kauft sie?
 
 ## 6) التمارين
@@ -113,7 +113,7 @@
 
 1. ألبسها فوق القميص في الشتاء: **der Mantel / die Tasse**
 2. ألبسها في القدم: **der Schuh / das Hemd**
-3. أطلبها لتحديد مقاس الثوب: **die Größe / die Straße**
+3. الكلمة التي تدل على مقاس الثوب: **die Größe / die Straße**
 
 ### تمرين 2 — صرّف müssen بحسب الفاعل
 
@@ -145,7 +145,7 @@
 
 ### تمرين 5 — اقرأ وحدد صحيح/خطأ
 
-1. Omar braucht eine Hose.
+1. Seine alten Schuhe sind zu groß.
 2. Seine alten Schuhe sind zu klein.
 3. Er kauft das zweite Paar.
 4. Das zweite Paar ist teurer.
@@ -178,7 +178,7 @@
 - **تمرين 2:** 1. muss، 2. musst، 3. müssen، 4. Müssen.
 - **تمرين 3:** 1. kaufen، 2. kaufen، 3. anprobieren، 4. einkaufen.
 - **تمرين 4:** 1. Wie viel، 2. Welche، 3. Möchten، 4. haben.
-- **تمرين 5:** 1. خطأ — يحتاج إلى أحذية جديدة. 2. صحيح. 3. صحيح. 4. خطأ — الثاني أرخص.
+- **تمرين 5:** 1. خطأ — أحذيته القديمة أصغر من اللازم، لا أكبر. 2. صحيح. 3. صحيح. 4. خطأ — الثاني أرخص.
 - **تمرين 6:** 1. 40، 2. 35، 3. lang، 4. gut.
 - **تمرين 7:** 1. أ، 2. أ.
 - **تمرين 8:** أقوال تحقق المطالب الخمسة؛ لا يلزم müssen في هذه المهمة لأن تطبيقه الكتابي في T03.

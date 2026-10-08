@@ -5,6 +5,8 @@ from pathlib import Path
 R=Path(__file__).resolve().parents[1];p=R/'content/A1/lesson-08-shopping-clothes.md';s=p.read_text();a=json.loads(p.with_suffix('.assessment.json').read_text())
 assert 'Er muss ein Hemd ______. (brauchen)' not in s, 'T03.2 should train a necessary action, not unmotivated muss brauchen'
 assert 'Er muss einen Mantel ______. (kaufen)' in s
+assert 'Omar braucht eine Hose.' not in s, 'T05.1 must be contradicted by the text, not merely absent'
+assert 'Seine alten Schuhe sind zu groß.' in s
 assert a['assessment']['version']=='a1-08-v2' and a['assessment']['minimumScore']==80
 assert [q['answerIndex'] for q in a['quiz']]==[0,0,1,0,1,0,1,0,0,0]
 for q,n in zip(a['quiz'],[1,2,2,3,4,4,6,8,3,7]):assert q['sourceTaskIds']==[f'DL-A1-08-T{n:02}']
