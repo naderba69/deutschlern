@@ -2330,12 +2330,12 @@
     "implementationCommit": "5fb2d98671b6b9bae5b54a5c5610baa4059d70bc",
     "implementationPushed": true,
     "implementationHeadOriginMatched": true,
-    "reportCommit": "pending checked push; look up message Record CR37 granular B1.7 review and cumulative checks",
+    "reportCommit": "52af008f486c46782b26011efd8c4f61a54d184b",
     "pr": {
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "5fb2d98671b6b9bae5b54a5c5610baa4059d70bc"
+      "queriedAtHead": "52af008f486c46782b26011efd8c4f61a54d184b"
     },
     "implementationDeployment": {
       "state": "failure",
@@ -2343,6 +2343,18 @@
       "deployments": []
     },
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportPushed": true,
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR37 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   }
 }
