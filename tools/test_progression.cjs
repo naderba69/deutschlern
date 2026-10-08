@@ -1362,6 +1362,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.7 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR38: written comparison and spoken recommendation; B1.8 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-08-consumption-advertising-je-desto').assessment.version, 'b1-08-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-08-consumption-advertising-je-desto');
+    const responses = ["Flasche A kostet zwanzig Euro und ist günstiger als Flasche B für vierundzwanzig Euro. Mit dreihundert Gramm ist A leichter als B mit vierhundert Gramm. A fasst sechshundert Milliliter, B dagegen achthundert Milliliter. Die Werbung nennt A die beste Flasche für alle, aber das ist eine allgemeine Werbeaussage. Je genauer ich vor dem Kauf das angegebene Gewicht prüfe, desto besser kann ich diese Angabe beurteilen.", "Nach den fiktiven Angaben empfehle ich Nora Flasche A, weil sie eine günstige und leichte Flasche sucht. Je niedriger der Endpreis ist, desto weniger Geld muss Nora ausgeben. Je leichter die Flasche ist, umso einfacher kann sie sie tragen. Die Angabe von dreihundert Gramm ist überprüfbar, aber die Werbung mit der besten Flasche für alle beweist keine bessere Qualität."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.8 models fit thresholds; comparison is writing only, dialogue requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-08-consumption-advertising-je-desto').performanceTasks[1]], 'lesson:b1-08-consumption-advertising-je-desto', 'b1-08-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-08-consumption-advertising-je-desto').performanceTasks[0]], 'lesson:b1-08-consumption-advertising-je-desto', 'b1-08-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-08-consumption-advertising-je-desto');
+      const next=findLesson('b1-09-travel-transport-environment');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-08-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-08-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-08-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-08-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.8 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2224,13 +2258,16 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B1')[7])", context), true, "B1.8 must pass the app's full local assessment-readiness check");
   assert.equal(b1ConsumptionAssessment.quiz?.length, 10, "B1.8 must include exactly ten scored questions");
   assert.equal(b1ConsumptionAssessment.performanceTasks?.length, 2, "B1.8 must include two practical self-check tasks");
-  assert.equal(b1ConsumptionAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-08-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), true, "B1.8 performance tasks must map to T08 and offer local written/oral work without requiring a recording");
+  assert.equal(b1ConsumptionAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-08-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing")), true, "B1.8 tasks map to T08 and work without recording");
   const b1ConsumptionQuestionSources = new Set(b1ConsumptionAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b1ConsumptionQuestionSources.has(`DL-B1-08-T0${task}`), `B1.8 quiz must cover source task T0${task}`);
   assert.equal(b1ConsumptionAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B1-08-G01")), true, "all B1.8 questions must map to the lesson objective");
   assert.deepEqual(b1ConsumptionAssessment.quiz.find((question) => question.id === "DL-B1-08-Q08").sourceTaskIds, ["DL-B1-08-T05", "DL-B1-08-T07"], "B1.8 Q08 must link to reading T05 and advertising task T07");
   assert.match(b1ConsumptionSource, /اكتب خمس جمل تقارن بين منتجين خياليين/);
-  assert.match(b1ConsumptionSource, /تقديمها شفهيًا/);
+  assert.doesNotMatch(b1ConsumptionSource, /تقديمها شفهيًا/);
+  for (const t of b1ConsumptionAssessment.performanceTasks) assert.ok(b1ConsumptionSource.includes(t.prompt));
+  assert.deepEqual(b1ConsumptionAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.deepEqual(b1ConsumptionAssessment.performanceTasks.map(t => t.selfCheck.speakAloud), [false,true]);
   assert.match(b1ConsumptionSource, /اكتبها ثم اقرأها بصوت واضح/);
   assert.match(b1ConsumptionSource, /لا يلزم تسجيل الصوت/);
   assert.equal(b1ConsumptionAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), true, "B1.8 assessment must not depend on its optional lesson recordings");

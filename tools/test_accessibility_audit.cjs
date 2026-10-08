@@ -248,6 +248,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.7-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.7-practical-form-fixture', width);
+  // CR38: written comparison and spoken recommendation.
+  await page.evaluate(() => openLesson('b1-08-consumption-advertising-je-desto'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.8-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.8-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
