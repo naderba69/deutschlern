@@ -53,7 +53,7 @@ for k,n in [('scope',7),('vocab',14),('connector',4),('grammar',5),('helper',10)
  expected|={f'DL-B1-07-{k}{i:02}' if k in ['T','Q','P'] else f'{k}-{i:02}' for i in range(1,n+1)}
 expected|={x['assetId'] for x in assets}
 assert set(U)==expected and len(U)==D['unitCount']==len(D['units'])==114
-assert len(D['sources'])==10 and all(x['access']=='full_fetched_page' and len(x['chunksRead'])==x['totalChunks'] for x in D['sources'])
+assert len(D['sources'])==20 and all(x['access']=='full_fetched_page' and len(x['chunksRead'])==x['totalChunks'] for x in D['sources'])
 for u in D['units']:
  assert u['finding'] and set(u['sourceIds'])<={x['id'] for x in D['sources']}
  if u['id'].startswith(('scope-','vocab-','grammar-','connector-','helper-','card-','reading-question-','listening-question-')):assert u['text'] in s
