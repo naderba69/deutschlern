@@ -2080,12 +2080,12 @@
     "implementationCommit": "331b7d3fc29fafe05aeab96d7a1f3ec45be0fccb",
     "implementationPushed": true,
     "implementationHeadOriginMatched": true,
-    "reportCommit": "pending checked push; message Record CR38 granular B1.8 review and cumulative checks",
+    "reportCommit": "155907b4d22c5e324396c1d3442ea7d3042f3f0d",
     "pr": {
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "331b7d3fc29fafe05aeab96d7a1f3ec45be0fccb"
+      "queriedAtHead": "155907b4d22c5e324396c1d3442ea7d3042f3f0d"
     },
     "implementationDeployment": {
       "state": "success",
@@ -2094,6 +2094,18 @@
       "url": "https://deutschlern-2cmsg88ie-balinader-2671s-projects.vercel.app"
     },
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportPushed": true,
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR38 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   }
 }
