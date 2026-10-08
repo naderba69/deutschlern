@@ -1159,6 +1159,39 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.1 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR32: food paragraph and canteen dialogue; both require speech; B1.2 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-02-food-habits-obwohl').assessment.version, 'b1-02-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-02-food-habits-obwohl');
+    const responses = ["Ich esse mittags oft Reis mit Gemüse. Ich mag dieses Essen, weil es mir gut schmeckt. Obwohl ich wenig Zeit habe, koche ich meistens selbst. Manchmal ist das Kochen anstrengend. Trotzdem bereite ich mein Essen gern zu Hause zu.", "A: Isst du heute in der Kantine? B: Obwohl die Kantine praktisch ist, bringe ich heute Essen von zu Hause mit. A: Das Essen dort ist manchmal teuer. B: Trotzdem gehe ich morgen mit meinen Kollegen dorthin."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:true};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && !performanceTaskEvidenceReady(t,{...e,spokenAloud:false});
+    });
+  })()`, context), true, 'B1.2 models fit thresholds; both tasks need speech and all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-02-food-habits-obwohl').performanceTasks[1]], 'lesson:b1-02-food-habits-obwohl', 'b1-02-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-02-food-habits-obwohl');
+      const next=findLesson('b1-03-work-communication-konjunktiv');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-02-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-02-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-02-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-02-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.2 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

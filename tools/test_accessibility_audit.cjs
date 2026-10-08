@@ -212,6 +212,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.1-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.1-practical-form-fixture', width);
+  // CR32: food habits and canteen decisions with spoken checks.
+  await page.evaluate(() => openLesson('b1-02-food-habits-obwohl'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.2-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.2-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
