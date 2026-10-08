@@ -1,0 +1,1173 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-10-hobbies-health",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-10-v2",
+  "unitCount": 119,
+  "exerciseSubItemCount": 35,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "clinicalValidation": false,
+  "sources": [
+    {
+      "id": "MODAL",
+      "title": "Lingolia Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "صفحة كاملة: جدول sollen و können/möchten والمصدر؛ الأزمنة المتقدمة خارج هدف الدرس.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "SOLLEN",
+      "title": "Duden sollen",
+      "url": "https://www.duden.de/rechtschreibung/sollen",
+      "scope": "صفحة كاملة: تكليف وتوجيه وتوقع وسؤال، واستعمال sollte كثيرًا للنصيحة؛ المعاني الأخرى لا تجعل sollen دائمًا نصيحة لطيفة.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MISSING",
+      "title": "Duden fehlen",
+      "url": "https://www.duden.de/rechtschreibung/fehlen",
+      "scope": "صفحة كاملة: استعمال fehlt dir etwas? للشعور باعتلال، لا الألم فقط؛ تحديد صيغة الاحترام مراجعة لغوية مباشرة مع المرجع النحوي.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "THROAT",
+      "title": "Duden Halsschmerz",
+      "url": "https://www.duden.de/rechtschreibung/Halsschmerz",
+      "scope": "صفحة كاملة: Halsschmerzen غالبًا جمع ومثال sie hat…؛ لا نعتمد تعريف القاموس لتشخيص سبب ألم المتعلم.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "FEVER",
+      "title": "Duden Fieber",
+      "url": "https://www.duden.de/rechtschreibung/Fieber",
+      "scope": "صفحة كاملة: das Fieber ومعنى الحمى؛ التعريف الرقمي لا يتحول إلى عتبة تشخيص أو فرز طبي في الدرس.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "NECK",
+      "title": "Duden Hals",
+      "url": "https://www.duden.de/rechtschreibung/Hals_Rachen",
+      "scope": "الجزء 0 فقط: الرقبة ثم الحلق بمعنيين؛ لم يُقرأ الجزء 1، وهو تكملة المصاحبات والتذييل.",
+      "access": "chunk_0_only"
+    },
+    {
+      "id": "DRIVE",
+      "title": "Duden fahren",
+      "url": "https://www.duden.de/rechtschreibung/fahren",
+      "scope": "الجزء 0 فقط: du fährst/er fährt و Rad fahren؛ الأزمنة والاستعمالات الأخرى خارج التدريب، ولم يُقرأ الجزء 1.",
+      "access": "chunk_0_only"
+    },
+    {
+      "id": "QUESTION",
+      "title": "Lingolia Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen",
+      "scope": "صفحة كاملة: ترتيب السؤال بنعم/لا وبأداة؛ الأسئلة غير المباشرة خارج الهدف.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "PRESENT",
+      "title": "Lingolia Präsens",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/praesens",
+      "scope": "صفحة كاملة: ich lese/du liest/er liest، و ich wandere ونهايات الحاضر وصيغ sein/haben.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "صفحة كاملة: النمط الخبري الأساسي والمرونة؛ لم نعمم صياغة immer على كل أنواع الإلحاق أو الجمل.",
+      "access": "full_fetched_page"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/lesen",
+      "reason": "محتوى صفحة404 رغم نجاح استدعاء الجلب؛ استُعمل Lingolia Präsens الفعلي لصيغlesen."
+    }
+  ],
+  "limitations": [
+    "119 وحدة و35 بندًا أو مطلبًا متداخلة، لا119 مهارة مستقلة؛ صفوف المفردات قد تشمل أكثر من كلمة، والحوار6 أدوار.",
+    "10 مراجع:8 صفحات كاملة وجزء0 من صفحتين؛ لا بحث معجمي مستقل لكل لفظ أو ترجمة عربية، ولا شهادة لغوية أو طبية.",
+    "كلمات الصوت محفوظة في3 أصول/8 مقاطع؛ عنوان عرض الحوار محايد جديد، وأسطر المصدر ورابط الحوار في السجل مصححة فقط. لا استماع أو توليد أو اعتماد جديد.",
+    "التفريغ والطول والإقرارات لا تثبت الاستماع المستقل أو جودة اللغة أو النطق. لا شرط مراجع بشري للاستمرار، ولا شهادةCEFR/WCAG."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-10-hobbies-health.md": "30ead0a21b2d997b3d3f4c49a13cd63f80db010f4bb6610932a2c4bb8420960c",
+    "content/A1/lesson-10-hobbies-health.assessment.json": "63836f5304dc72c7606c039db9da314f5131b9e29ac4a701c9f49d763422e49b"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-10-AUD-READ-01": "86103cb3b47f896032efd06735ee9ada67be56bef664a4829eccdda6bf0cd60f",
+    "DL-A1-10-AUD-LST-01": "34621ced4bc694c50560d235052bc19a1d1b80852d8d195240450f6e250f5379",
+    "DL-A1-10-AUD-DLG-01": "08b3f7e31a68879869395716f97eb8328f7ba9cf0cbfdd9581ca0f3c9251d6b6"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "الهدف والمدة والوسيط",
+      "finding": "هواية وعرض وفهم توجيه؛ الكتابة والاستماع الاختياري صريحان.35 دقيقة تقدير مرن لا شرط سرعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "دلالة sollen",
+      "finding": "تعليمات أو توجيه من شخص في أمثلتنا، لا مرادف دائم للنصيحة اللطيفة. ذُكرت sollte للتنبيه فقط، لا إلزام بتصريف إضافي.",
+      "sourceIds": [
+        "SOLLEN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "ترتيب الجملة",
+      "finding": "نمط خبرية بسيطة مع فعل مصرف ثانيًا ومصدر بلا zu في النهاية؛ السؤال بأداة مثل Was يختلف عن سؤال نعم/لا الذي يبدأ بالفعل.",
+      "sourceIds": [
+        "MAIN",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "تغيير المتكلم والضمير",
+      "finding": "Sie sollen عند مخاطبة المريض تصبح Ich soll في إعادة التوجيه؛ عن Mona نقول Sie soll. الحرف الكبير أول الجملة وحده لا يحدد ضمير الاحترام.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "السلامة وحدود اللغة",
+      "finding": "الأعراض وأقوال الأم والطبيبة خيالية؛ لا تشخيص أو دواء أو تعميم كثرة الماء أو العودة للرياضة. طلب إرشاد مختص عند الحاجة الحقيقية، لا تقييم طبي آلي.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-06",
+      "text": "سؤال تفضيل القراءة",
+      "finding": "أُبقي السؤال البسيط Was macht Mona gern? ومفتاحه Sie liest gern فقط. T06.1 صار عن ركوب الدراجة في عطلة الأسبوع؛ لا نفرض نطاق gern على الفعل الثاني.",
+      "sourceIds": [
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "تمييز الإمكان والرغبة والوقوع",
+      "finding": "können في ختام القراءة و möchte في الاستماع لا يثبتان المشي أو السباحة بالفعل أو التعافي. أحداث النصين مستقلة عن الحوار.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "حدود الصوت والشخصيات",
+      "finding": "6 أدوار و 8 مقاطع عبر 3 أصول. عنوان الحوار المؤنث كان لا يوافق Patient؛ صار محايدًا دون تغيير كلام أو أصوات أو MP3. لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "فصل المهمتين",
+      "finding": "P01/T05 ستة أدوار مع الجهر؛P02/T08 ثلاث جمل كتابة فقط بدل خيار جهر يناقض speakAloud=true. لا شرط شريك أو تسجيل أو معلومات شخصية.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود القياس",
+      "finding": "الطول والإقرار لا يصححان اللغة أو النطق؛P02 يعيد توجيهًا معطى لا إنتاج نصيحة طبية حرة. التفريغ ظاهر ولا اختبار استماع مستقل أو شهادة مستوى.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| lesen | يقرأ |",
+      "finding": "lesen مصدر يقرأ؛ شرحت ich lese و Mona liest قبل الاستعمال.",
+      "sourceIds": [
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| schwimmen | يسبح |",
+      "finding": "schwimmen السباحة؛ich schwimme في بنك الصيغ.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| Rad fahren | يركب الدراجة |",
+      "finding": "Rad fahren ركوب الدراجة،Rad كبيرة وكلمتان؛ich fahre و Mona fährt.",
+      "sourceIds": [
+        "DRIVE"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| wandern | يتنزّه/يمشي في الطبيعة |",
+      "finding": "wandern المشي للتنزه في الطبيعة؛ich wandere، دون تعميمه على كل ذهاب سيرًا.",
+      "sourceIds": [
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| Fußball spielen | يلعب كرة القدم |",
+      "finding": "Fußball spielen لعب كرة القدم؛اسم اللعبة كبير والفعل صغير.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| spazieren gehen | يتمشّى |",
+      "finding": "spazieren gehen التمشي؛ich gehe spazieren، ومع sollen يبقى gehen مصدرًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Freizeit | وقت الفراغ |",
+      "finding": "Freizeit وقت الفراغ؛اسم مؤنث وليس نشاطًا بعينه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| der Kopf | الرأس |",
+      "finding": "Kopf الرأس،مذكر؛يقابله Kopfschmerzen للألم في السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Hals | الرقبة؛ والحلق في سياق الأعراض هنا |",
+      "finding": "Hals الرقبة والحلق؛أُضيف المعنى الخارجي مع تقييد الحلق بسياق الأعراض.",
+      "sourceIds": [
+        "NECK"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| der Bauch | البطن |",
+      "finding": "Bauch البطن،مذكر؛ليس ترجمة كل أحشاء الجسم.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| der Rücken | الظهر |",
+      "finding": "Rücken الظهر،مذكر؛لا يُستنتج ألم الظهر عند Mona من وجوده بالقائمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| die Kopfschmerzen | الصداع |",
+      "finding": "Kopfschmerzen صيغة جمع في البنك؛Ich habe Kopfschmerzen لا Ich bin Kopfschmerzen.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| die Halsschmerzen | ألم الحلق |",
+      "finding": "Halsschmerzen غالبًا جمع؛die هنا أداة جمع،لا تحديد مفرد مؤنث.",
+      "sourceIds": [
+        "THROAT"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| die Bauchschmerzen | ألم البطن |",
+      "finding": "Bauchschmerzen ألم البطن بصيغة الجمع المستعملة؛لا تشخيص لسببه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| das Fieber | الحمّى |",
+      "finding": "Fieber الحمى،محايد؛T02.4 يطلب معنى الكلمة لا تشخيص أي ارتفاع حرارة.",
+      "sourceIds": [
+        "FEVER"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| der Husten | السعال |",
+      "finding": "Husten السعال،مذكر؛لا تساويه بالحمى أو سبب معين.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-17",
+      "text": "| das Training | التمرين الرياضي |",
+      "finding": "Training تمرين رياضي في السياق؛لم نحدد رياضة التدريب الذي سيتغيّب عنه الراوي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-18",
+      "text": "| die Ärztin / der Arzt | الطبيبة / الطبيب |",
+      "finding": "Ärztin/Arzt الطبيبة/الطبيب؛الأداة توافق الجنس النحوي المعطى.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-19",
+      "text": "| die Praxis | عيادة الطبيب |",
+      "finding": "Praxis عيادة في السياق الطبي،وليست كل معاني الكلمة محصورة في العيادة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-20",
+      "text": "| krank / müde | مريض / متعب |",
+      "finding": "krank/müde صفتان: مريض/متعب؛مع sein هنا،ولا يثبت التعب مرضًا محددًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-01",
+      "text": "**Ich habe Kopfschmerzen.** — عندي صداع.",
+      "finding": "Ich habe Kopfschmerzen وصف عرض مع haben دون أداة في العبارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-02",
+      "text": "**Ich habe Halsschmerzen und Husten.** — عندي ألم في الحلق وسعال.",
+      "finding": "عرضان مع haben: ألم حلق وسعال؛ليس تشخيصًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-03",
+      "text": "**Ich bin müde.** — أنا متعب.",
+      "finding": "Ich bin müde حالة بصفة مع sein،لا habe müde.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-04",
+      "text": "**Was fehlt Ihnen?** — ما الذي تشكو منه؟ (صيغة رسمية عند الطبيب).",
+      "finding": "Was fehlt Ihnen? سؤال رسمي عن المشكلة الصحية لا الألم فقط.",
+      "sourceIds": [
+        "MISSING"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "**lesen / Rad fahren / schwimmen** — صيغ مفيدة: ich lese، Mona liest؛ ich fahre Rad، Mona fährt Rad؛ ich schwimme. لا نكتب Mona lest أو Mona fahrt في هذين المثالين.",
+      "finding": "اختلاف lese/liest و fahre/fährt وصيغة schwimme صريح؛لا تعميم لتغيير الجذر على كل الأشخاص.",
+      "sourceIds": [
+        "PRESENT",
+        "DRIVE"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "**Fußball spielen / wandern / spazieren gehen** — ich spiele Fußball؛ ich wandere؛ ich gehe spazieren. مع sollen: Wir sollen spazieren gehen، ويأتي المصدران spazieren gehen متتابعين.",
+      "finding": "صيغ الهوايات المركبة و wandere معطاة؛spazieren gehen يبقي مصدرين مع sollen.",
+      "sourceIds": [
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "**Ich habe Kopfschmerzen / Halsschmerzen / Bauchschmerzen** — نستعمل أسماء الألم هنا بصيغة الجمع دون أداة؛ die في قائمة المفردات أداة الجمع، لا دليل على أن الاسم مفرد مؤنث. أما Ich bin müde/krank فمع صفة و sein.",
+      "finding": "أسماء الألم في صيغة الجمع مع habe دون أداة؛müde/krank مع bin، لا خلط اسم وصفة.",
+      "sourceIds": [
+        "THROAT"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "**Was fehlt Ihnen?** — ما الذي تشكو منه؟ سؤال عن المشكلة الصحية عمومًا، لا الألم وحده؛ Ihnen صيغة احترام في Dativ، نحفظ العبارة دون تعميم كل معاني fehlen.",
+      "finding": "Ihnen في السؤال صيغة Dativ رسمية؛الترجمة أوسع من موضع الألم.",
+      "sourceIds": [
+        "MISSING"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "**Sie sollen / sie sollen / sie soll** — صيغة الاحترام / هم أوهن / هي. أول الجملة تكتب Sie كبيرة حتى إن عنت «هي»؛ الفعل والسياق يميزان. في قول الطبيبة Sie sollen مخاطبة رسمية، وعن Mona نقول Sie soll.",
+      "finding": "Sie/sie وسياق المخاطبة أو الغائبة؛القارئ لا يعتمد على حرف كبير أول الجملة فقط.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "**zu Hause bleiben / nach Hause gehen** — يبقى في المنزل / يذهب إلى المنزل؛ الأولى حالة بقاء لا حركة إلى مكان. لا نخلطهما.",
+      "finding": "zu Hause للبقاء،nach Hause لحركة الرجوع؛لا استبدال واحدة بالأخرى آليًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-07",
+      "text": "**in die Praxis / zum Arzt / zum Training** — إلى العيادة / إلى الطبيب / إلى التدريب؛ zum = zu dem. نحفظ العبارات المعطاة، لا نشتق منها قاعدة عامة لكل وجهة.",
+      "finding": "الوجهات الثلاث معطاة،zum = zu dem؛لا درس شامل في حروف الجر.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "**gern / manchmal** — يحب فعل النشاط / أحيانًا؛ التفضيل غير التكرار. القراءة تذكر أن Mona تحب القراءة وتركب الدراجة في عطلة الأسبوع، فلا نفرض حكمًا إضافيًا على مدى حبها للدراجة.",
+      "finding": "gern تفضيل و manchmal تكرار؛لم نلزم المتعلم بتأويل gern شاملًا فعلين.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "**fragt / sagt / bleibt** — يسأل / يقول / يبقى؛ liest و fährt و hat ترجع إلى Mona في القراءة، بينما Sie داخل خطاب الطبيبة تعود إلى المخاطَبة.",
+      "finding": "fragt/sagt/bleibt وصيغ Mona؛الضمير داخل الكلام المباشر قد يخاطبها بدل أن يخبر عنها.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "**können / möchte / wieder** — يمكن أو يستطيع / يود / مجددًا؛ إمكان المشي يوم السبت أو الرغبة في السباحة غدًا لا يثبتان حدوث النشاط أو التعافي أو تصريحًا طبيًا بالرياضة.",
+      "finding": "können إمكان و möchte رغبة؛ليس وعدًا بالتعافي أو توصية باستئناف نشاط.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-11",
+      "text": "**Nein, ich bin nur müde. / Frau Doktor** — Nein تنفي الحمى جوابًا عن السؤال؛ لا نمحو ألم الحلق والسعال المذكورين قبله. Frau Doktor نداء مهذب للطبيبة. الشخصيات مواقف خيالية مختلفة، لا نفترض أن Patient في الحوار هو Mona في القراءة.",
+      "finding": "Nein جواب عن الحمى،ولا يمحو العرضين في الدور السابق؛Patient ليس هوية Mona المصرح بها.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-12",
+      "text": "**heute / morgen / am Wochenende / am Samstag** — اليوم / غدًا / في عطلة الأسبوع / يوم السبت. die Person مؤنثة نحويًا ولا تحدد جنس راوي الاستماع؛ لا نضيف تشخيصًا أو سببًا للأعراض من هذه الكلمات.",
+      "finding": "تمييز زمن اليوم والغد والسبت؛die Person لا تثبت جنس الراوي أو تشخيصه.",
+      "sourceIds": []
+    },
+    {
+      "id": "verb-01",
+      "text": "| ich | soll |",
+      "finding": "ich soll بلا نهاية e.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-02",
+      "text": "| du | sollst |",
+      "finding": "du sollst مع st.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-03",
+      "text": "| er/sie/es | soll |",
+      "finding": "er/sie/es soll؛أُضيف es.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-04",
+      "text": "| wir | sollen |",
+      "finding": "wir sollen للجمع المتكلم.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-05",
+      "text": "| ihr | sollt |",
+      "finding": "ihr sollt للجمع المخاطب.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-06",
+      "text": "| sie / Sie | sollen |",
+      "finding": "sie/Sie sollen للجمع الغائب أو الاحترام.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "modal-example-01",
+      "text": "**Du sollst viel Wasser trinken.** — ينبغي أن تشرب ماءً كثيرًا.",
+      "finding": "Du sollst…trinken توجيه في مثال لغوي؛لا وصفة ماء للقارئ.",
+      "sourceIds": [
+        "SOLLEN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "modal-example-02",
+      "text": "**Sie sollen heute zu Hause bleiben.** — ينبغي أن تبقى/تبقوا في المنزل اليوم. (في سياقنا مخاطبة رسمية لشخص واحد أو أكثر؛ ويمكن أن تعني «هم» في سياق آخر)",
+      "finding": "Sie sollen…bleiben خطاب احترام في سياقنا،وقد يعني الجمع الغائب في آخر؛لا sie المفردة.",
+      "sourceIds": [
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "modal-example-03",
+      "text": "**Was soll ich machen?** — ماذا ينبغي أن أفعل؟",
+      "finding": "Was soll ich machen? سؤال بأداة و soll مع ich ومصدر machen.",
+      "sourceIds": [
+        "QUESTION",
+        "SOLLEN"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Guten Tag. Was fehlt Ihnen?",
+      "finding": "تحية وسؤال رسمي عن المشكلة؛لا سؤال عن عنوان السكن.",
+      "sourceIds": [
+        "MISSING"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich habe Halsschmerzen und Husten.",
+      "finding": "المريض يذكر ألم حلق وسعال؛لا صداع مذكور في هذا الدور.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Haben Sie auch Fieber?",
+      "finding": "سؤال نعم/لا عن الحمى الإضافية؛وجود السؤال لا يثبت الحمى.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Nein, ich bin nur müde.",
+      "finding": "ينفي الحمى ويذكر التعب؛nur يُقرأ في سياق السؤال ولا يلغي الأعراض السابقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Sie sollen heute zu Hause bleiben und viel Wasser trinken.",
+      "finding": "توجيه خيالي بالبقاء وشرب الماء؛مصدران منسقان bleiben/trinken،لا مشورة حقيقية للقارئ.",
+      "sourceIds": [
+        "SOLLEN"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Danke, Frau Doktor.",
+      "finding": "شكر للطبيبة بـ Frau Doktor؛لا إثبات شفاء أو فحص سريري.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Mona liest gern und fährt am Wochenende Rad.",
+      "finding": "القراءة محبوبة صراحةً،والدراجة في عطلة الأسبوع؛سؤال القراءة 1 يسأل عن التفضيل الأول فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Heute ist sie müde und hat Kopfschmerzen.",
+      "finding": "تعب وصداع اليوم؛يسند Q06 مباشرةً.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Sie geht in die Praxis.",
+      "finding": "تذهب إلى العيادة؛لا زمن وصول أو تفاصيل فحص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Die Ärztin fragt: „Haben Sie Fieber?“",
+      "finding": "الطبيبة تسأل عن الحمى بصيغة الاحترام؛ليس تقرير وجودها.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Mona sagt: „Nein.“",
+      "finding": "Mona تنفي الحمى جوابًا؛يسند T06.2/Q07.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Die Ärztin sagt: „Sie sollen heute zu Hause bleiben und viel Wasser trinken.“",
+      "finding": "تعليمات البقاء وشرب الماء منسوبة إلى الطبيبة في القصة لا النظام الطبي كله.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Mona bleibt heute zu Hause.",
+      "finding": "النص يصرح بأنها تبقى اليوم؛لا يصرح بأنها شربت كمية محددة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-08",
+      "text": "Am Samstag können Mona und ihre Freundin zusammen spazieren gehen.",
+      "finding": "يمكنهما أن تتمشيا السبت؛لا إثبات حدوثه أو تعافيها،و ihre Freundin مؤنث صريح.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was macht Mona gern?",
+      "finding": "Sie liest gern هو المفتاح المحدد؛لا تفضيل ركوب الدراجة مفروض ولا سؤال عن«نشاطين» مع وجود المشي أيضًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was hat sie heute?",
+      "finding": "Sie ist müde und hat Kopfschmerzen يذكر الحالة والعرض كما في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Hat Mona Fieber?",
+      "finding": "Nein من جواب Mona،لا من تشخيص خارجي.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was soll sie machen?",
+      "finding": "Sie soll zu Hause bleiben und viel Wasser trinken؛تنقل قول الطبيبة بضمير الغائبة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was können die Freundinnen am Samstag machen?",
+      "finding": "Sie können spazieren gehen؛نحافظ على إمكان النشاط لا وقوعه.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich spiele gern Fußball und schwimme manchmal.",
+      "finding": "كرة القدم تفضيل،والسباحة تحدث أحيانًا؛لا تحديد جنس المتكلم.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Heute habe ich Bauchschmerzen.",
+      "finding": "ألم بطن اليوم دون سبب أو تشخيص.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Ich gehe nicht zum Training.",
+      "finding": "لا يذهب للتدريب؛لا يتعيّن من الجملة هل هو كرة قدم أو سباحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Meine Mutter sagt: „Du sollst heute zu Hause bleiben und Wasser trinken.“",
+      "finding": "الأم تخاطبه بـ Du وتقول البقاء وشرب الماء؛منسوب إليها في موقف خيالي.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "text": "Morgen möchte ich wieder schwimmen.",
+      "finding": "رغبة في السباحة مجددًا غدًا؛لا وعد بأنه سيفعل أو تصريح طبي.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Welche zwei Hobbys hat die Person?",
+      "finding": "Fußball spielen und schwimmen نشاطان مذكوران؛لا نقول إنه يحب كليهما بالدرجة نفسها.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was hat sie heute?",
+      "finding": "Bauchschmerzen،لا Kopf أو Hals.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Geht sie heute zum Training?",
+      "finding": "Nein؛النفي في Ich gehe nicht zum Training صريح.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was soll sie machen?",
+      "finding": "Sie soll heute zu Hause bleiben und Wasser trinken؛صيغة sie تعود إلى die Person نحويًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-10-T01",
+      "text": "1. lesen\n2. schwimmen\n3. Rad fahren\n4. wandern\n\nأ. ركوب الدراجة · ب. السباحة · ج. القراءة · د. المشي في الطبيعة",
+      "finding": "أربع مطابقات؛فُصل الترقيم بدل سطر مزدحم،والمفتاح ثابت.",
+      "sourceIds": [],
+      "items": [
+        "lesen→ج: القراءة.",
+        "schwimmen→ب: السباحة.",
+        "Rad fahren→أ: الدراجة.",
+        "wandern→د: الطبيعة."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T02",
+      "text": "1. ألم في الرأس: **Kopfschmerzen / Husten**\n2. سعال: **Fieber / Husten**\n3. ألم في الحلق: **Halsschmerzen / Bauchschmerzen**\n4. الحمّى: **Fieber / Freizeit**",
+      "finding": "أربعة أعراض بمشتتات واضحة؛الحمى معنى معجمي لا اختبار عتبة حرارة.",
+      "sourceIds": [],
+      "items": [
+        "Kopfschmerzen لا Husten للرأس.",
+        "Husten لا Fieber للسعال.",
+        "Halsschmerzen لا Bauchschmerzen للحلق.",
+        "Fieber لا Freizeit للحمى؛لا اختبار تشخيص حرارة."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T03",
+      "text": "1. Du ______ viel Wasser trinken.\n2. Ich ______ heute zu Hause bleiben.\n3. Wir ______ am Abend spazieren gehen.\n4. Was ______ Sie heute machen? (سؤال رسمي)",
+      "finding": "أربع صيغ بحسب الفاعل؛الثالث أصبح مطابقًا لتركيب Q10.",
+      "sourceIds": [],
+      "items": [
+        "sollst مع Du.",
+        "soll مع Ich.",
+        "sollen مع Wir؛spazieren gehen تدريب مباشر لـ Q10.",
+        "sollen مع Sie الرسمية بعد Was."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T04",
+      "text": "1. Sie sollen Wasser ______. (trinken)\n2. Du sollst heute zu Hause ______. (bleiben)\n3. Was soll ich ______? (machen)\n4. Mona soll zu Hause ______. (bleiben)",
+      "finding": "أضيف بند Mona soll…bleiben لتدريب الغائبة قبل Q08؛أربعة مصادر.",
+      "sourceIds": [],
+      "items": [
+        "trinken مصدر لا trinkst.",
+        "bleiben مصدر لا bleibst.",
+        "machen بعد Was soll ich.",
+        "bleiben مع Mona soll؛يدعم Q08 والغائبة صراحةً."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T05",
+      "text": "1. عند السؤال عن المشكلة: **Was fehlt Ihnen? / Wo wohnen Sie?**\n2. عند نقل توجيه بالبقاء في البيت: **Sie sollen zu Hause bleiben. / Sie fahren nach Hause.**\n\n**تطبيق مستقل:**\n\nاكتب ستة أدوار متناوبة في زيارة خيالية للعيادة: الطبيبة تسأل Was fehlt Ihnen?؛ المريض يذكر عرضًا من مفردات الدرس؛ الطبيبة تسأل Haben Sie Fieber?؛ المريض يجيب Ja أو Nein؛ الطبيبة تقول Sie sollen heute zu Hause bleiben.؛ المريض يعيد التوجيه بـ Ich soll مع بقية الجملة. اقرأ الأدوار الستة بصوت مرتفع ويمكنك أداء الدورين منفردًا. لا تضف تشخيصًا أو دواءً، ولا يلزم شريك أو تسجيل صوت أو معلومات صحية حقيقية.",
+      "finding": "اختياران وستة أدوار؛P01 مرتبط هنا بدل T08،والعرض والجواب والتوجيه وإعادته محددة.",
+      "sourceIds": [],
+      "items": [
+        "Was fehlt Ihnen? لا Wo wohnen Sie? للسؤال المباشر عن المشكلة.",
+        "Sie sollen zu Hause bleiben لا Sie fahren nach Hause لنقل التوجيه.",
+        "الطبيبة: سؤال المشكلة Was fehlt Ihnen?.",
+        "المريض: عرض من البنك مع Ich habe.",
+        "الطبيبة: سؤال الحُمى Haben Sie Fieber?.",
+        "المريض: جواب Ja أو Nein.",
+        "الطبيبة: توجيه معطى بالبقاء اليوم مع Sie sollen.",
+        "المريض: إعادة التوجيه بـ Ich soll؛تقرأ الأدوار الستة كلها جهرًا."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T06",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Mona fährt am Wochenende Rad.\n2. Mona hat heute Fieber.\n3. Mona soll heute zu Hause bleiben und Wasser trinken.\n4. Mona und ihre Freundin können am Samstag spazieren gehen.",
+      "finding": "T06.1 صار واقعة ركوب الدراجة في عطلة الأسبوع لا افتراض التفضيل؛بقية المفاتيح ثابتة ومسندة.",
+      "sourceIds": [],
+      "items": [
+        "صحيح: ركوب الدراجة في عطلة الأسبوع مذكور صراحةً.",
+        "خطأ: جواب Mona عن الحمى Nein.",
+        "صحيح: قول الطبيبة للبقاء وشرب الماء.",
+        "صحيح: إمكان المشي السبت،لا وقوعه."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T07",
+      "text": "أكمل من النص:\n\n1. Die Person spielt gern ______.\n2. Heute hat sie ______.\n3. Sie geht heute nicht zum ______.\n4. Sie soll heute zu Hause ______.",
+      "finding": "أربعة فراغات ومفاتيح مرقمة؛الصوت اختياري والتفريغ متاح،لا قياس استماع مستقل.",
+      "sourceIds": [],
+      "items": [
+        "Fußball.",
+        "Bauchschmerzen.",
+        "Training.",
+        "bleiben."
+      ]
+    },
+    {
+      "id": "DL-A1-10-T08",
+      "text": "اكتب ثلاث جمل في موقف خيالي بضمير Ich: الأولى عن هواية تحبها مع gern، والثانية عن عرض باستعمال Ich habe Kopfschmerzen أو Halsschmerzen أو Bauchschmerzen، والثالثة تنقل توجيهًا سمعتَه من الأم باستعمال Meine Mutter sagt: „Du sollst heute zu Hause bleiben.“. هذه كتابة فقط؛ لا قراءة جهرية أو تسجيل مطلوب، ولا تعميم للتوجيه على صحة القارئ أو ذكر بيانات حقيقية.",
+      "finding": "ثلاث جمل كتابة فقط؛التوجيه منقول عن الأم لا توصية من المتعلم إلى زميله.",
+      "sourceIds": [],
+      "items": [
+        "جملة هواية للمتكلم الخيالي مع gern.",
+        "جملة عرض مع Ich habe واسم ألم معطى.",
+        "جملة تنقل توجيه الأم المعطى بـ Du sollst؛كتابة فقط."
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Ärztin: Was fehlt Ihnen?",
+      "finding": "سؤال رسمي جاهز عن المشكلة الصحية.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Patient: Ich habe Halsschmerzen.",
+      "finding": "عرض من البنك: ألم الحلق دون سبب مزعوم.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Ärztin: Haben Sie Fieber?",
+      "finding": "سؤال الحمى بنعم/لا مع Sie.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Patient: Nein.",
+      "finding": "جواب Nein كافٍ عن السؤال في الموقف الخيالي.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-05",
+      "text": "Ärztin: Sie sollen heute zu Hause bleiben.",
+      "finding": "Sie sollen…bleiben كما عُطي في المهمة؛لا دواء أو تشخيص.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-06",
+      "text": "Patient: Ich soll heute zu Hause bleiben.",
+      "finding": "إعادة نفس التوجيه بـ Ich soll؛تبديل الشخص لا المعنى.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Ich lese gern.",
+      "finding": "هواية مع gern وفعل lese مع Ich.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Ich habe Kopfschmerzen.",
+      "finding": "عرض خيالي مع habe وصيغة جمع ألم.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Meine Mutter sagt: „Du sollst heute zu Hause bleiben.“",
+      "finding": "توجيه الأم بين علامتي اقتباس؛Du يعود إلى صاحب Ich،والقول معطى لا ابتكار علاج.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-10-Q01",
+      "text": "ما معنى Rad fahren؟",
+      "finding": "الخيار 0 يركب الدراجة؛ كرة القدم والتمشي نشاطان آخران.",
+      "sourceIds": [],
+      "options": [
+        "يركب الدراجة",
+        "يلعب كرة القدم",
+        "يتمشى"
+      ],
+      "answer": "يركب الدراجة",
+      "explanation": "Rad fahren تعني «يركب الدراجة».",
+      "sourceTaskIds": [
+        "DL-A1-10-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q02",
+      "text": "ما معنى Kopfschmerzen؟",
+      "finding": "الخيار 1 الصداع؛ ألم الحلق والسعال مختلفان.",
+      "sourceIds": [],
+      "options": [
+        "ألم في الحلق",
+        "الصداع",
+        "السعال"
+      ],
+      "answer": "الصداع",
+      "explanation": "Kopfschmerzen تعني «الصداع».",
+      "sourceTaskIds": [
+        "DL-A1-10-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q03",
+      "text": "أكمل: Du ___ heute zu Hause bleiben.",
+      "finding": "الخيار 1 sollst مع du؛ soll و sollen لا يطابقان الشخص.",
+      "sourceIds": [],
+      "options": [
+        "soll",
+        "sollst",
+        "sollen"
+      ],
+      "answer": "sollst",
+      "explanation": "مع du نستخدم sollst.",
+      "sourceTaskIds": [
+        "DL-A1-10-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q04",
+      "text": "أكمل: Du sollst viel Wasser ___.",
+      "finding": "الخيار 1 trinken مصدر؛ trinkst مصرف و getrunken اسم مفعول لا المصدر المطلوب.",
+      "sourceIds": [],
+      "options": [
+        "trinkst",
+        "trinken",
+        "getrunken"
+      ],
+      "answer": "trinken",
+      "explanation": "في النمط البسيط المدروس يأتي المصدر الكامل trinken بعدsollen، لاtrinkst المصرف ولاgetrunken اسم المفعول.",
+      "sourceTaskIds": [
+        "DL-A1-10-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q05",
+      "text": "أي سؤال يسأل مباشرةً عن المشكلة الصحية، لا عنوان السكن أو تفضيل الطعام؟",
+      "finding": "الخيار 0 سؤال مباشر عن المشكلة؛ قد يسأل الطبيب عن السكن والطعام أيضًا، لكن القيد يحدد نوع السؤال المطلوب.",
+      "sourceIds": [],
+      "options": [
+        "Was fehlt Ihnen?",
+        "Wo wohnen Sie?",
+        "Was essen Sie gern?"
+      ],
+      "answer": "Was fehlt Ihnen?",
+      "explanation": "Was fehlt Ihnen? سؤال مهذب عن المشكلة الصحية.",
+      "sourceTaskIds": [
+        "DL-A1-10-T05"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q06",
+      "text": "بحسب نص القراءة، ماذا لدى المريضة؟",
+      "finding": "الخيار 0 تعب وصداع من الجملة الثانية؛ المشتتان مع«فقط» لا يطابقان المحتوى.",
+      "sourceIds": [],
+      "options": [
+        "تعب وصداع",
+        "حمّى فقط",
+        "ألم في الظهر فقط"
+      ],
+      "answer": "تعب وصداع",
+      "explanation": "النص نفسه يقول: Heute ist sie müde und hat Kopfschmerzen؛ لذلك الجواب تعب وصداع.",
+      "sourceTaskIds": [
+        "DL-A1-10-T06"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q07",
+      "text": "بحسب نص القراءة، هل لديها حمّى؟",
+      "finding": "الخيار 1 نفي الحمى من الجواب Nein؛ المشتت«النص لا يذكر صحتها» مناقض للنص.",
+      "sourceIds": [],
+      "options": [
+        "نعم، لديها حمّى.",
+        "لا، ليس لديها حمّى.",
+        "النص لا يذكر صحتها."
+      ],
+      "answer": "لا، ليس لديها حمّى.",
+      "explanation": "تسأل الطبيبة Haben Sie Fieber? وتجيبMona: Nein؛ هذا دليل الجواب في النص الخيالي، لا تشخيص للقارئ.",
+      "sourceTaskIds": [
+        "DL-A1-10-T06"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q08",
+      "text": "نخبر عن Mona (هي)، لا نخاطبها بصيغة الاحترام: أي جملة تنقل التوجيه بالنمط الخبري الأساسي والمصدر في النهاية؟",
+      "finding": "الخيار 0 خبرية عن Mona مع soll ومصدر bleiben؛ الثاني ليس النمط V2 المطلوب، والثالث لا يستعمل المصدر. ليست Sie هنا صيغة احترام.",
+      "sourceIds": [],
+      "options": [
+        "Sie soll zu Hause bleiben.",
+        "Sie zu Hause soll bleiben.",
+        "Sie soll bleibt zu Hause."
+      ],
+      "answer": "Sie soll zu Hause bleiben.",
+      "explanation": "Sie هنا «هي» وتعود إلىMona، لذاsoll؛ الحرف الكبير بسبب بداية الجملة. bleiben مصدر في النهاية. خطاب الاحترام يكونSie sollen.",
+      "sourceTaskIds": [
+        "DL-A1-10-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q09",
+      "text": "ما معنى Husten؟",
+      "finding": "الخيار 0 السعال؛ الحمى وألم البطن ليسا Husten.",
+      "sourceIds": [],
+      "options": [
+        "السعال",
+        "الحمّى",
+        "ألم البطن"
+      ],
+      "answer": "السعال",
+      "explanation": "Husten تعني «السعال».",
+      "sourceTaskIds": [
+        "DL-A1-10-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-10-Q10",
+      "text": "أكمل: Wir ___ am Abend spazieren gehen.",
+      "finding": "الخيار 0 sollen مع wir؛ الرابط T03 والوسم تصريف بدل التواصل العام.",
+      "sourceIds": [],
+      "options": [
+        "sollen",
+        "sollst",
+        "soll"
+      ],
+      "answer": "sollen",
+      "explanation": "مع wir نستخدم sollen، ثم يأتي spazieren gehen في النهاية.",
+      "sourceTaskIds": [
+        "DL-A1-10-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-10-P01",
+      "text": "اكتب ستة أدوار متناوبة في زيارة خيالية للعيادة: الطبيبة تسأل Was fehlt Ihnen?؛ المريض يذكر عرضًا من مفردات الدرس؛ الطبيبة تسأل Haben Sie Fieber?؛ المريض يجيب Ja أو Nein؛ الطبيبة تقول Sie sollen heute zu Hause bleiben.؛ المريض يعيد التوجيه بـ Ich soll مع بقية الجملة. اقرأ الأدوار الستة بصوت مرتفع ويمكنك أداء الدورين منفردًا. لا تضف تشخيصًا أو دواءً، ولا يلزم شريك أو تسجيل صوت أو معلومات صحية حقيقية.",
+      "finding": "P01/T05: ستة أدوار ومنطوق،min110؛يمر النموذج حتى دون أسماء المتحدثين. المعايير تطلب إعادة التوجيه لا ابتكار نصيحة.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "ستة أدوار كاملة: سؤال مشكلة، عرض، سؤال حمى، جواب، توجيه البقاء، وإعادته؛ قرأتها كلها جهرًا.",
+        "meaningClarity": "موقف خيالي مفهوم؛ الجواب يطابق سؤال الحمى، وإعادة التوجيه تحافظ على معناه دون تشخيص.",
+        "targetSkill": "Ich habe لعرض، و Sie sollen في خطاب الطبيبة ثم Ich soll في الرد مع bleiben مصدرًا في النهاية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-10-T05"
+      ]
+    },
+    {
+      "id": "DL-A1-10-P02",
+      "text": "اكتب ثلاث جمل في موقف خيالي بضمير Ich: الأولى عن هواية تحبها مع gern، والثانية عن عرض باستعمال Ich habe Kopfschmerzen أو Halsschmerzen أو Bauchschmerzen، والثالثة تنقل توجيهًا سمعتَه من الأم باستعمال Meine Mutter sagt: „Du sollst heute zu Hause bleiben.“. هذه كتابة فقط؛ لا قراءة جهرية أو تسجيل مطلوب، ولا تعميم للتوجيه على صحة القارئ أو ذكر بيانات حقيقية.",
+      "finding": "P02/T08: ثلاث جمل كتابة فقط،min80؛أزيل إلزام الجهر المتناقض مع التعليمات القديمة. قالب التوجيه معطى؛ليست مهمة نصيحة طبية حرة.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل مكتوبة: هواية مع gern، عرض مع Ich habe، وتوجيه معطى منقول عن الأم؛ لا جهر مطلوب.",
+        "meaningClarity": "الراوي هو صاحب الهواية والعرض، والأم تخاطبه بـ Du؛ لا نصيحة علاجية للقارئ.",
+        "targetSkill": "فعل هواية مصرف مع Ich، واسم ألم مناسب، و Du sollst مع المصدر bleiben في نهاية القول المنقول."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 80,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-10-T08"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Ich habe Kopfschmerzen.** → عندي صداع.",
+      "finding": "صداع مع habe،مطابق للبنك.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Was fehlt Ihnen?** → ما الذي تشكو منه؟ (صيغة رسمية؛ لا تقتصر على الألم).",
+      "finding": "التصحيح إلى«ما الذي تشكو منه؟» يحفظ عموم السؤال وصيغة الاحترام.",
+      "sourceIds": [
+        "MISSING"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "**Du sollst Wasser trinken.** → ينبغي أن تشرب ماءً.",
+      "finding": "مثال sollen في إطار التوجيه اللغوي؛لا جرعة ماء أو نصيحة للقارئ.",
+      "sourceIds": [
+        "SOLLEN"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "**Ich fahre gern Rad.** → أحب ركوب الدراجة.",
+      "finding": "Ich fahre gern Rad تفضيل المتكلم صراحةً؛لا تعميم على Mona.",
+      "sourceIds": [
+        "DRIVE"
+      ]
+    },
+    {
+      "id": "DL-A1-10-AUD-READ-01",
+      "text": "قراءة: نصيحة Mona",
+      "finding": "الكلمات والمسارات والأصوات و ready/offer محفوظة؛1 مقطع/مقاطع. صحح سطر المصدر في السجل فقط،لا تغيير صوتي.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-10-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Mona liest gern und fährt am Wochenende Rad. Heute ist sie müde und hat Kopfschmerzen. Sie geht in die Praxis. Die Ärztin fragt: „Haben Sie Fieber?“ Mona sagt: „Nein.“ Die Ärztin sagt: „Sie sollen heute zu Hause bleiben und viel Wasser trinken.“ Mona bleibt heute zu Hause. Am Samstag können Mona und ihre Freundin zusammen spazieren gehen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-10-AUD-LST-01",
+      "text": "استماع: الهوايات ونصيحة الأم",
+      "finding": "الكلمات والمسارات والأصوات و ready/offer محفوظة؛1 مقطع/مقاطع. صحح سطر المصدر في السجل فقط،لا تغيير صوتي.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-10-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich spiele gern Fußball und schwimme manchmal. Heute habe ich Bauchschmerzen. Ich gehe nicht zum Training. Meine Mutter sagt: „Du sollst heute zu Hause bleiben und Wasser trinken.“ Morgen möchte ich wieder schwimmen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-10-AUD-DLG-01",
+      "text": "حوار: زيارة العيادة",
+      "finding": "الكلمات والمسارات والأصوات و ready/offer محفوظة؛6 مقطع/مقاطع. عنوان العرض وحده صار محايدًا ورابط السجل إلى T05؛لا تغيير صوتي.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Ärztin",
+          "text": "Guten Tag. Was fehlt Ihnen?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Patient",
+          "text": "Ich habe Halsschmerzen und Husten.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Ärztin",
+          "text": "Haben Sie auch Fieber?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Patient",
+          "text": "Nein, ich bin nur müde.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Ärztin",
+          "text": "Sie sollen heute zu Hause bleiben und viel Wasser trinken.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-10-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Patient",
+          "text": "Danke, Frau Doktor.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 1832834,
+    "reviewGuards": 16,
+    "nodeSuites": 5,
+    "browserSuites": 5,
+    "axeStates": 77,
+    "axeSelectedViolations": 0,
+    "axeIncompleteRuleOccurrences": 48,
+    "axeIncompleteNodeOccurrences": 118,
+    "narrowStates": 126,
+    "chromium": "143.0.7499.0",
+    "formsKeyboardFirstAttempt": "PASS",
+    "preservationBaseline": "ef54f1d10b28ab3e7005d54007f3e87a7bdc4fc4",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3HashesUnchanged": 474,
+    "audioMetadataChanges": "One display title; three register source references including dialogue task link. Words, voices, paths and statuses unchanged."
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "23d506fdd1485e49b31c26ba0c94b56901b5dcb0",
+    "followupCommit": "bc4813680f7b691a50aa4d01c217242c3d83bbf3",
+    "implementationPushVerified": true,
+    "reviewCommit": "See git log for CR16 review commit; post-push receipt follows.",
+    "merged": false,
+    "nextLesson": "A1.11",
+    "reviewedLessons": 15,
+    "remainingLessons": 38,
+    "gateSeparate": true
+  }
+}
