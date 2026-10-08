@@ -1,0 +1,1083 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-06-yesterday-perfekt",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-06-v2",
+  "unitCount": 108,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "L",
+      "title": "Lingolia — Perfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+      "scope": "كامل: استعمال Perfekt في الحكي، المساعد في المضارع و Partizip II، gelernt/gegangen/gesehen، -et، غياب ge مع البادئة غير المنفصلة، و ge داخل الفعل المنفصل. الصفحة تذكر استعمالًا مستقبليًا أيضًا؛ لم ننقله إلى درس المقدمة ولم نحصر جميع وظائف Perfekt في الأمس."
+    },
+    {
+      "id": "P",
+      "title": "Duden — Perfekt",
+      "url": "https://www.duden.de/rechtschreibung/Perfekt",
+      "scope": "كامل: الحدث يوصف بالتمام؛ لا تعريف يحصره في حدث قريب زمنيًا. تسمية «الماضي القريب» وحدها غير كافية لتعليم استعماله."
+    },
+    {
+      "id": "F",
+      "title": "Duden — fahren",
+      "url": "https://www.duden.de/rechtschreibung/fahren",
+      "scope": "الجزء 0: gefahren؛ الانتقال بوسيلة نقل مع sein، وقيادة مركبة كمفعول مباشر مع haben. لا تعميم من كلمة حركة فقط، ولم نقرأ الجزء 1 هنا."
+    },
+    {
+      "id": "Z",
+      "title": "Duden — zurückkommen",
+      "url": "https://www.duden.de/rechtschreibung/zurueckkommen",
+      "scope": "كامل: العودة؛ kommt zurück / ist zurückgekommen. النموذج المطلوب للفهم في القراءة ليس صيغة مخترعة ge-zurückkommen."
+    },
+    {
+      "id": "A",
+      "title": "Duden — arbeiten",
+      "url": "https://www.duden.de/rechtschreibung/arbeiten",
+      "scope": "كامل: arbeitet / arbeitete / hat gearbeitet؛ النهاية-et وصحة العبارة المنفية في النص."
+    },
+    {
+      "id": "B",
+      "title": "Duden — besuchen",
+      "url": "https://www.duden.de/rechtschreibung/besuchen",
+      "scope": "كامل: hat besucht، زيارة شخص أو مكان من المعاني؛ لا ge قبل be غير المنفصلة."
+    },
+    {
+      "id": "H",
+      "title": "Duden — hören",
+      "url": "https://www.duden.de/rechtschreibung/hoeren",
+      "scope": "كامل: hat gehört و Musik hören؛ الاستعمالات الأخرى مع Ersatzinfinitiv ليست هدف الدرس، ولا نطالب المتعلم بها."
+    }
+  ],
+  "consultedNotUsed": [
+    {
+      "url": "https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf",
+      "scope": "جُلب الجزء2؛ المستخرج المتاح ينتهي بمادة الفصل7 ولا يعرض Perfekt. ليس دليلًا على قاعدة هذه الدفعة، ولا نزعم قراءة كامل PDF."
+    }
+  ],
+  "limitations": [
+    "108 وحدات و34 بندًا أو مطلبًا متداخلة، لا108 مهارات مستقلة؛ صف المساعدين يراجع شكلين، وT04 يشمل ثلاثة ترتيبات وثلاثة تحويلات.",
+    "المراجع السبعة تدعم نطاقها؛ لم يُجلب مدخل مستقل لكل لفظ أو ترجمة عربية. بقية المعاني والملاءمة مراجعة مباشرة للمساعد.",
+    "القراءة ست جمل والاستماع أربع جمل؛ بعض الجمل تحوي أكثر من فعل. أصلان ومقطعان محفوظان دون استماع أو اعتماد جديد. لا حوار مسجل أو توليد جديد.",
+    "حد الطول والإقرار لا يصححان اللغة أو النطق؛ لا شهادة CEFR أو قياس استماع مع النص الظاهر، ولا اشتراط لمراجع بشري للاستمرار."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-06-yesterday-perfekt.md": "a403ae06aab90d79fa0b67ebd6fa61d12f4482e4e60e96fed49d878291a81ed1",
+    "content/A1/lesson-06-yesterday-perfekt.assessment.json": "11ad46fb10c6c8529b7cb2c28fbed0cc2718df676f4e937a804b6d6ee9db77f7"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-06-AUD-READ-01": "3b6634cf9007ae1ee4300d5c5ff39b834f1bdacf19fbcae4345be500732caa53",
+    "DL-A1-06-AUD-LST-01": "09423c333f2575e3a23e107604c07d893e4f5601b97f3cd2e9cc9bf87492bdf4"
+  },
+  "units": [
+    {
+      "id": "scope",
+      "text": "# A1.6 — أمس واليوم: مقدمة إلى Perfekt\n\n**المدة:** نحو35 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس على جلستين) · **المهارات:** قراءة، كتابة، سرد قصير، قواعد، واستماع اختياري\n**هدف التواصل:** أستطيع أن أقول بجمل بسيطة ماذا فعلت أمس أو في عطلة الأسبوع.",
+      "finding": "مقدمة لسرد الماضي بأمثلة محددة، مع كتابة واستماع اختياري.35 دقيقة تقدير مرن لا قياس وقت ثابت أو شهادة إتقان. لا حوار مسجل أو مكتوب أصلي في هذه الوحدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| heute | اليوم |",
+      "finding": "heute اليوم؛ لا يفرض زمن Präsens في جميع الاستعمالات، بل في نموذج المقارنة المحدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| gestern | أمس |",
+      "finding": "gestern أمس؛ ظرف زمن يدعم الحدث الماضي هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| am Wochenende | في عطلة الأسبوع |",
+      "finding": "am Wochenende نهاية الأسبوع؛ الماضي أو المستقبل يتضح من السياق لا العبارة وحدها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| am Morgen | في الصباح |",
+      "finding": "am Morgen صباحًا، لا ساعة محددة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| am Abend | في المساء |",
+      "finding": "am Abend مساءً، لا تاريخ بعينه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| dann | ثم |",
+      "finding": "dann ثم، رابط تتابع لا فعل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| zuerst | أولًا |",
+      "finding": "zuerst أولًا، لا تعني أمس.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| danach | بعد ذلك |",
+      "finding": "danach بعد ذلك، رابط يعود على خطوة سابقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "perfekt-scope",
+      "text": "Perfekt في سرد الماضي",
+      "finding": "أزيل الحصر في الماضي القريب زمنيًا. نشرح الحدث الماضي في أمثلة المقدمة دون إنكار استعمالات أخرى لـ Perfekt.",
+      "sourceIds": [
+        "L",
+        "P"
+      ]
+    },
+    {
+      "id": "formation",
+      "text": "Präsens haben/sein + Partizip II",
+      "finding": "المساعد يتصرف بحسب الفاعل، و Partizip II لا يتغير مع الشخص في البناء المدروس. لا خلط haben المصدر بـ habe المطلوبة مع ich.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "contrast-01",
+      "text": "Heute lerne ich Deutsch. — اليوم أتعلم الألمانية.",
+      "finding": "Heute lerne ich Deutsch؛ Präsens في المثال مع ظرف أمامي.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "contrast-02",
+      "text": "Gestern habe ich Deutsch gelernt. — أمس تعلمت الألمانية.",
+      "finding": "Gestern habe ich Deutsch gelernt؛ المساعد في المضارع لكن البناء يدل هنا على حدث ماضٍ.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "regular-rule",
+      "text": "lernen → lern → gelernt; arbeiten → gearbeitet",
+      "finding": "ge+جذر+t في أفعال كثيرة، لا في جميع الأفعال. زيد -et بعد arbeit لتفسير المثال الموجود في التسجيل، دون تغيير نطقه أو كلماته.",
+      "sourceIds": [
+        "L",
+        "A"
+      ]
+    },
+    {
+      "id": "regular-example-01",
+      "text": "| machen | gemacht | Ich habe Sport gemacht. |",
+      "finding": "machen → gemacht؛ Ich habe Sport gemacht يجمع الفعل مع haben.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "regular-example-02",
+      "text": "| lernen | gelernt | Wir haben Deutsch gelernt. |",
+      "finding": "lernen → gelernt؛ Wir haben Deutsch gelernt مع wir.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "regular-example-03",
+      "text": "| spielen | gespielt | Sie hat Fußball gespielt. |",
+      "finding": "spielen → gespielt؛ Sie hat Fußball gespielt هي مفردة بسبب hat، لا Sie الرسمية.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "prefix-rule",
+      "text": "besuchen → besucht; zurückkommen → zurückgekommen",
+      "finding": "be غير منفصلة فلا ge إضافية، و zurück منفصلة فتقع ge بعدها. ليست قاعدة لاكتشاف نوع الفعل من أول حرفين فقط.",
+      "sourceIds": [
+        "L",
+        "B",
+        "Z"
+      ]
+    },
+    {
+      "id": "movement-01",
+      "text": "gehen → **gegangen**: Ich **bin** zu Fuß nach Hause **gegangen**.",
+      "finding": "gehen → gegangen مع bin؛ zu Fuß nach Hause انتقال مشيًا، لا gegeht.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "movement-02",
+      "text": "fahren → **gefahren**: Wir **sind** nach Tunis **gefahren**.",
+      "finding": "fahren → gefahren مع sind؛ سافرنا إلى مدينة تونس بوسيلة نقل دون تحديد نوعها.",
+      "sourceIds": [
+        "L",
+        "F"
+      ]
+    },
+    {
+      "id": "auxiliary-scope",
+      "text": "sein للانتقال في الأمثلة؛ Ich habe das Auto gefahren",
+      "finding": "اختيار المساعد يتبع الاستعمال. مثال السيارة يوضح إمكان haben مع fahren المتعدي، وليس مطلوبًا في التقييم الحالي.",
+      "sourceIds": [
+        "F",
+        "L"
+      ]
+    },
+    {
+      "id": "word-order",
+      "text": "الجملة الخبرية البسيطة: كتلة أولى + مساعد + … + Partizip II",
+      "finding": "تحديد نطاق V2 وموقع Partizip II بالأمثلة الخبرية البسيطة؛ Am Samstag عبارة من كلمتين لكنها كتلة واحدة. لا ادعاء أن كل الأسئلة والجمل تتبع الترتيب نفسه.",
+      "sourceIds": []
+    },
+    {
+      "id": "fronted-time-01",
+      "text": "Gestern habe ich meine Großmutter besucht.",
+      "finding": "Gestern ثم habe ich؛ meine Großmutter مفعول وزيارة besucht بلا ge.",
+      "sourceIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "fronted-time-02",
+      "text": "Am Samstag sind wir nach Sousse gefahren.",
+      "finding": "Am Samstag كتلة وقت ثم sind wir، و gefahren في النهاية؛ Sousse سوسة.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "question-order",
+      "text": "Hat Amel gestern gearbeitet? / Was hat sie gemacht?",
+      "finding": "سؤال نعم/لا يبدأ بالمساعد، وسؤال W يبدأ بكلمة السؤال ثم hat. النفي في الجواب له معنى، لا يكفي استخراج hat فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "auxiliary-row-01",
+      "text": "| ich | habe | bin |",
+      "finding": "ich: habe/bin صحيحان.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "auxiliary-row-02",
+      "text": "| du | hast | bist |",
+      "finding": "du: hast/bist، لا hat/ist.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "auxiliary-row-03",
+      "text": "| er/sie/es | hat | ist |",
+      "finding": "er/sie/es: hat/ist؛ أضيف es الناقص من الصف.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "auxiliary-row-04",
+      "text": "| wir | haben | sind |",
+      "finding": "wir: haben/sind.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "auxiliary-row-05",
+      "text": "| ihr | habt | seid |",
+      "finding": "ihr: habt/seid، لا sind.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "auxiliary-row-06",
+      "text": "| sie / Sie | haben | sind |",
+      "finding": "sie/Sie: haben/sind؛ الجمع أو الاحترام، لا sie المفردة.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "extra-forms-scope",
+      "text": "جدول صيغ النصوص للمفرد الغائب",
+      "finding": "أوضح hat/ist في الجدول أنها أمثلة للمفرد الثالث، مع نقلها إلى habe/bin عند ich. ليس حفظ participle وحده كافيًا لاختيار المساعد.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "extra-verb-01",
+      "text": "| arbeiten | hat gearbeitet | عمل |",
+      "finding": "arbeiten → hat gearbeitet؛ النفي في النص يثبت أنها لم تعمل أمس، لا أنها بلا عمل مطلقًا.",
+      "sourceIds": [
+        "A",
+        "L"
+      ]
+    },
+    {
+      "id": "extra-verb-02",
+      "text": "| frühstücken | hat gefrühstückt | تناول الفطور |",
+      "finding": "frühstücken → hat gefrühstückt؛ تناول الفطور.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "extra-verb-03",
+      "text": "| hören | hat gehört | سمع/استمع |",
+      "finding": "hören → hat gehört؛ يدرب T03.2 و Q06.",
+      "sourceIds": [
+        "H"
+      ]
+    },
+    {
+      "id": "extra-verb-04",
+      "text": "| kochen | hat gekocht | طبخ |",
+      "finding": "kochen → hat gekocht؛ الطبخ مع haben في النصين.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "extra-verb-05",
+      "text": "| kaufen | hat gekauft | اشترى |",
+      "finding": "kaufen → hat gekauft؛ شراء الفاكهة في الاستماع.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "extra-verb-06",
+      "text": "| sehen | hat gesehen | رأى/شاهد |",
+      "finding": "sehen → hat gesehen؛ نموذج غير منتظم معروض قبل T03.1 و Q08.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "extra-verb-07",
+      "text": "| zurückkommen | ist zurückgekommen | عاد |",
+      "finding": "zurückkommen → ist zurückgekommen؛ العودة إلى البيت، مع ge بعد البادئة.",
+      "sourceIds": [
+        "Z",
+        "L"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "text": "**Sport machen / Fußball spielen** — يمارس الرياضة / يلعب كرة القدم؛ النموذجان مع haben هنا.",
+      "finding": "Sport machen و Fußball spielen نمطان مع haben هنا، دون قاعدة لكل نشاط.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-02",
+      "text": "**meine Großmutter / meine Freundin** — جدتي / صديقتي؛ في Rania hat meine Freundin besucht تعني صديقة المتكلم، لا صديقةRania تلقائيًا.",
+      "finding": "meine Freundin صديقة المتكلم، فلا نغيرها تلقائيًا إلى ihre في مفتاح Rania.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "text": "**zu Fuß / mit dem Bus** — سيرًا على الأقدام / بالحافلة؛ لا تعني الرحلة بالحافلة أن الشخص يقودها.",
+      "finding": "zu Fuß مقابل mit dem Bus؛ وسيلة النقل لا تحدد السائق.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "gloss-04",
+      "text": "**nach Hause / zu Hause** — إلى البيت / في البيت؛ اتجاه مقابل موقع.",
+      "finding": "nach Hause وجهة و zu Hause موقع؛ مفتاح T06.3 هو Hause لا Haus في العبارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-05",
+      "text": "**Tunis / Sousse / Nabeul** — مدينة تونس / سوسة / نابل؛ Tunis ليست اسم البلد Tunesien.",
+      "finding": "Tunis مدينة تونس، و Sousse/Nabeul مدينتان؛ لا تحويل الاسم إلى اسم البلد Tunesien.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-06",
+      "text": "**zu ihrer Freundin / mit meiner Familie** — إلى صديقتها / مع أسرتي؛ عبارات جاهزة فيها Dativ، لا تطبيق حرفي لجدول الملكية في الرفع.",
+      "finding": "zu ihrer Freundin و mit meiner Familie عبارتا Dativ؛ لا نعيد درس الملكية كله.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-07",
+      "text": "**Musik hören / einen Film sehen** — يستمع إلى الموسيقى / يشاهد فيلمًا؛ في الماضي gehört وgesehen.",
+      "finding": "hören للموسيقى و sehen للفيلم؛ gehört/gesehen يعادان في التقييم.",
+      "sourceIds": [
+        "H",
+        "L"
+      ]
+    },
+    {
+      "id": "gloss-08",
+      "text": "**den Markt besuchen / Obst kaufen** — يزور السوق / يشتري فاكهة؛ den Markt مفعول مذكر في Akkusativ.",
+      "finding": "den Markt مفعول مذكر، و Obst اسم جامع دون أداة في النص.",
+      "sourceIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "gloss-09",
+      "text": "**Fotos machen / zusammen kochen** — يلتقط صورًا / يطبخ مع آخرين؛ zusammen تعني معًا.",
+      "finding": "Fotos machen تصوير و zusammen kochen طبخ مشترك؛ المعنى الاصطلاحي للتصوير أوضح من الترجمة الحرفية لكلمة machen.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-10",
+      "text": "**nicht gearbeitet** — لم يعمل؛ النفي هنا عن العمل أمس، لا عن كل نشاط قامت بهAmel.",
+      "finding": "nicht gearbeitet نفي العمل في اليوم المحدد؛ لا إنكار التعلم والطبخ لاحقًا.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "gloss-11",
+      "text": "**sie hat / sie haben** — هي معhat / هم أوهما معhaben؛ في القراءة تعود Sie haben علىAmel وصديقتها، والحرف الكبير سببه بداية الجملة.",
+      "finding": "sie hat للمفرد و sie haben للجمع؛ Sie haben في القصة يرجع إلى Amel وصديقتها، لا إلى المخاطب الرسمي في هذا السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "text": "**Wohin? / die beiden / Ziel der Fahrt** — إلى أين؟ / الاثنان / وجهة الرحلة؛ بعد die Person قد يعودsie بتأنيث نحوي، لا استنتاج لجنس الراوي.",
+      "finding": "Wohin يسأل عن الوجهة و Ziel der Fahrt عبارة عنوان؛ تأنيث Person نحوي لا يثبت جنس الراوي.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Gestern hat Amel nicht gearbeitet.",
+      "finding": "Amel لم تعمل أمس؛ جواب السؤال الأول منفي.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Am Morgen hat sie gefrühstückt und Musik gehört.",
+      "finding": "صباحًا تناولت الفطور واستمعت للموسيقى؛ hat مشترك للفعلين.",
+      "sourceIds": [
+        "H",
+        "L"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Danach hat sie Deutsch gelernt.",
+      "finding": "بعد ذلك تعلمت الألمانية؛ danach يعتمد على التسلسل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Am Nachmittag ist sie mit dem Bus zu ihrer Freundin gefahren.",
+      "finding": "بعد الظهر إلى صديقتها بالحافلة؛ ist gefahren. لا نحدد الوصول بساعة أو نوع الزيارة خارج النص.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Sie haben zusammen gekocht und einen Film gesehen.",
+      "finding": "الاثنتان طبختا وشاهدتا فيلمًا؛ haben مشترك و Sie مرجع جمع.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Am Abend ist Amel nach Hause zurückgekommen.",
+      "finding": "مساءً عادت Amel إلى البيت؛ ist zurückgekommen، لا مدينة محددة أو ساعة.",
+      "sourceIds": [
+        "Z"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Hat Amel gestern gearbeitet?",
+      "finding": "Nein, sie hat nicht gearbeitet؛ لا تتجاهل nicht.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was hat sie am Morgen gemacht?",
+      "finding": "Sie hat gefrühstückt und Musik gehört؛ الحدثان مطلوبان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wohin ist sie am Nachmittag gefahren?",
+      "finding": "Zu ihrer Freundin؛ المطلوب وجهة لا وسيلة النقل فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was haben die beiden zusammen gemacht?",
+      "finding": "Sie haben zusammen gekocht und einen Film gesehen؛ مرجع die beiden هو الشخصيتان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-limit",
+      "text": "اشتراك المساعد واستقلال الموقف",
+      "finding": "أضيف شرح حذف تكرار المساعد في العطف، وبيان أن قصة Amel ليست رحلة الاستماع. كل الكلمات المسجلة محفوظة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Am Wochenende bin ich mit meiner Familie nach Sousse gefahren.",
+      "finding": "رحلة إلى Sousse مع الأسرة؛ bin مع ich، لا اسم راوٍ مفروض.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Am Samstag haben wir den Markt besucht.",
+      "finding": "السبت زيارة السوق؛ haben مع wir.",
+      "sourceIds": [
+        "B"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Ich habe Obst gekauft und meine Schwester hat Fotos gemacht.",
+      "finding": "المتكلم اشترى الفاكهة، والأخت التقطت الصور؛ تغير الفاعل يستدعي habe ثم hat.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Am Sonntag haben wir zu Hause gekocht.",
+      "finding": "الأحد طبخوا في البيت؛ لا دليل مستقل على وقت عودتهم من سوسة أو عنوان البيت.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wohin ist die Person gefahren?",
+      "finding": "Nach Sousse؛ لا سوق كوجهة الرحلة الرئيسية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was hat sie am Samstag besucht?",
+      "finding": "Den Markt؛ الشخص جزء من wir التي زارت السوق؛ تحول الصيغة لا يغير المعلومة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was hat die Schwester gemacht?",
+      "finding": "Sie hat Fotos gemacht؛ الأخت لا الشخص المتكلم هي التي التقطت الصور في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was haben sie am Sonntag gemacht?",
+      "finding": "Sie haben zu Hause gekocht؛ الحدث والمكان، لا استنتاج سرد عودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-limit",
+      "text": "النص ظاهر والتفريغ متاح",
+      "finding": "طلب المحاولة دون نظر إرشاد لا منع تقني. قراءة التفريغ لا تثبت الاستماع، والتقييم لا يفرض تشغيل الصوت. لا مراجعة سمعية أو تصديق جودة نطق جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-06-T01",
+      "text": "اختر المساعد المناسب ثم صرّفه بحسب الفاعل من الجدول، لا تكتب المصدر haben أوsein في الفراغ:\n\n1. Ich ______ Deutsch gelernt.\n2. Wir ______ nach Tunis gefahren.\n3. Rania ______ ihre Freundin besucht.\n4. Du ______ Fußball gespielt.\n5. Er ______ zu Fuß nach Hause gegangen.",
+      "finding": "أصبح المطلوب تصريف المساعد لا كتابة المصدر haben/sein؛ الأجوبة الخمسة تطابق الفاعل والاستعمال.",
+      "sourceIds": [],
+      "items": [
+        "1. habe مع ich وlernen.",
+        "2. sind مع wir وfahren للانتقال.",
+        "3. hat مع Rania وbesuchen.",
+        "4. hast مع du وspielen.",
+        "5. ist مع er وgehen."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T02",
+      "text": "1. lernen → ______\n2. machen → ______\n3. spielen → ______\n4. besuchen → ______\n5. gehen → ______\n6. fahren → ______",
+      "finding": "مفاتيح الأفعال الستة صحيحة، مع شرح القواعد والصيغ قبل المطالبة بالإنتاج.",
+      "sourceIds": [],
+      "items": [
+        "1. gelernt.",
+        "2. gemacht.",
+        "3. gespielt.",
+        "4. besucht دون ge.",
+        "5. gegangen غير منتظم.",
+        "6. gefahren، لا gefahrt."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T03",
+      "text": "1. Gestern ______ ich einen Film ______. (sehen; في هذا الدرس احفظ: habe … gesehen)\n2. Am Samstag ______ wir Musik ______. (hören)\n3. Am Sonntag ______ Rania nach Sousse ______. (fahren)",
+      "finding": "حُدد اسم Rania بدل sie الملتبسة بين هي وهم. استُبقي المفتاح ist وأصبح مسندًا بفاعل واضح.",
+      "sourceIds": [],
+      "items": [
+        "1. habe … gesehen مع ich؛ النموذج معطى.",
+        "2. haben … gehört مع wir.",
+        "3. ist … gefahren مع Rania المحددة؛ sie السابقة كانت تسمح sind للجمع."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T04",
+      "text": "في الترتيب ابدأ الأولى بـGestern والثانية بـWir والثالثة بـRania. اضبط الحرف الكبير في بداية الجملة وعلامة النقطة؛ توجد ترتيبات أخرى صحيحة خارج هذا القيد:\n\n1. habe / ich / gelernt / Gestern / Deutsch\n2. nach Tunis / sind / gefahren / Wir\n3. meine Freundin / besucht / hat / Rania\n\n**تطبيق تحويل مستقل بعد الترتيب:**\n\nحوّل الجمل الثلاث المعطاة إلى Perfekt عن أمس، محافظًا على الفاعل ich والنشاط والوجهة: Heute lerne ich Deutsch. Heute höre ich Musik. Heute fahre ich nach Tunis. ابدأ كل جواب بـGestern. اكتب جمل الماضي الثلاث ثم اقرأها بصوت مرتفع بنفسك؛ لا يلزم شريك أو تسجيل صوتك.",
+      "finding": "حُددت بدايات الجمل والكتابة الكبيرة والترقيم، وأضيفت ثلاثة تحويلات مستقلة لـ P02 بدل تكرار السرد الحر.",
+      "sourceIds": [],
+      "items": [
+        "1. Gestern habe ich Deutsch gelernt.",
+        "2. Wir sind nach Tunis gefahren.",
+        "3. Rania hat meine Freundin besucht.",
+        "4. نقل Heute lerne ich Deutsch إلى Gestern habe ich Deutsch gelernt.",
+        "5. نقل Heute höre ich Musik إلى Gestern habe ich Musik gehört.",
+        "6. نقل Heute fahre ich nach Tunis إلى Gestern bin ich nach Tunis gefahren؛ تقرأ النتائج الثلاث بصوت مرتفع."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T05",
+      "text": "1. أ. Gestern ich habe Deutsch gelernt. ب. Gestern habe ich Deutsch gelernt.\n2. أ. Wir sind nach Nabeul gefahren. ب. Wir haben nach Nabeul gefahren.\n3. أ. Sie hat ihre Freundin besucht. ب. Sie ist ihre Freundin besucht.",
+      "finding": "المفاتيح ب، أ، أ صحيحة في النمط المدروس؛ لا تعميم أن fahren مع haben ممنوع بكل سياق.",
+      "sourceIds": [],
+      "items": [
+        "1. ب؛ Gestern ثم habe ich.",
+        "2. أ؛ sind للانتقال إلى نابل في الجملة.",
+        "3. أ؛ hat besucht مع المفعول Freundin."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T06",
+      "text": "أكمل من النص:\n\n1. Amel hat am Morgen ______ und ______.\n2. Sie ist am Nachmittag mit dem ______ gefahren.\n3. Am Abend ist sie nach ______ zurückgekommen.",
+      "finding": "رُقمت المفاتيح بحسب ثلاثة بنود لا أربعة فراغات، مع بقاء كل المعلومات.",
+      "sourceIds": [],
+      "items": [
+        "1. gefrühstückt — Musik gehört؛ فعلان مع المساعد الموجود.",
+        "2. Bus بعد mit dem.",
+        "3. Hause بعد nach."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T07",
+      "text": "اكتب كلمة أو عبارة:\n\n1. Ziel der Fahrt: ______.\n2. Am Samstag haben sie den ______ besucht.\n3. Die Schwester hat ______ gemacht.\n4. Am Sonntag haben sie zu Hause ______.",
+      "finding": "أربعة بنود ومفاتيح متطابقة؛ قراءة التفريغ ليست قياسًا سمعيًا.",
+      "sourceIds": [],
+      "items": [
+        "1. Sousse.",
+        "2. Markt بعد den.",
+        "3. Fotos.",
+        "4. gekocht."
+      ]
+    },
+    {
+      "id": "DL-A1-06-T08",
+      "text": "اكتب أربع جمل كاملة في Perfekt عن أمس أو عطلة أسبوع خيالية، بأربعة أفعال مختلفة من الدرس. استعمل gestern أوam Wochenende، وفعلين على الأقل مع haben وفعلًا واحدًا على الأقل مع sein؛ اختر للجملة الرابعة مساعدًا مناسبًا أيضًا. هذه مهمة كتابة فقط، ولا يلزم مشاركة أحداث شخصية حقيقية أو القراءة بصوت مرتفع.",
+      "finding": "طابق P01 المصدر صراحةً في العدد وتوزيع المساعدين، مع اختيار كتابي واضح بدل شرط جهر غير صريح.",
+      "sourceIds": [],
+      "items": [
+        "1. أربع جمل كاملة وأربعة أفعال مختلفة من الدرس.",
+        "2. إطار زمن بـgestern أوam Wochenende، حقيقي أو خيالي.",
+        "3. فعلان على الأقل مع haben وفعل واحد على الأقل مع sein، والرابع بمساعد مناسب.",
+        "4. سرد كتابي مفهوم مع المساعد المصرف وPartizip II؛ لا جهر أو بيانات حقيقية مفروضة."
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Gestern habe ich Deutsch gelernt.",
+      "finding": "جملة 1: gelernt مع habe وإطار Gestern.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Danach habe ich Musik gehört.",
+      "finding": "جملة 2: gehört مع habe و Danach للربط.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Am Nachmittag bin ich nach Tunis gefahren.",
+      "finding": "الجملة الثالثة: gefahren مع bin؛ وجهة مدينة تونس.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Am Abend habe ich meine Großmutter besucht.",
+      "finding": "الجملة الرابعة: besucht مع habe؛ ثلاثة أفعال مع haben وواحد مع sein تفي بالحد الأدنى، وأربعة أفعال مختلفة.",
+      "sourceIds": []
+    },
+    {
+      "id": "transfer-input-01",
+      "text": "Heute lerne ich Deutsch.",
+      "finding": "المعطى الأول: تعلم الألمانية اليوم؛ حافظ على ich والنشاط.",
+      "sourceIds": []
+    },
+    {
+      "id": "transfer-input-02",
+      "text": "Heute höre ich Musik.",
+      "finding": "المعطى الثاني: سماع الموسيقى اليوم؛ gehört معروض قبل التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "transfer-input-03",
+      "text": "Heute fahre ich nach Tunis.",
+      "finding": "المعطى الثالث: الانتقال إلى مدينة تونس اليوم؛ لا تبدل الوجهة.",
+      "sourceIds": []
+    },
+    {
+      "id": "transfer-model-01",
+      "text": "Gestern habe ich Deutsch gelernt.",
+      "finding": "Gestern بدل Heute مع habe/gelernt؛ لا تبقِ lerne في النهاية.",
+      "sourceIds": []
+    },
+    {
+      "id": "transfer-model-02",
+      "text": "Gestern habe ich Musik gehört.",
+      "finding": "Gestern مع habe/gehört؛ حافظ على Musik.",
+      "sourceIds": []
+    },
+    {
+      "id": "transfer-model-03",
+      "text": "Gestern bin ich nach Tunis gefahren.",
+      "finding": "Gestern مع bin/gefahren؛ حافظ على ich و nach Tunis.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-06-Q01",
+      "text": "أكمل: Gestern ___ ich Deutsch gelernt.",
+      "finding": "habe مع ich و lernen؛ bin مساعد غير مناسب هنا و hat لا يطابق الشخص.",
+      "sourceIds": [],
+      "options": [
+        "bin",
+        "habe",
+        "hat"
+      ],
+      "answer": "habe",
+      "explanation": "مع lernen نستخدم haben: Ich habe gelernt.",
+      "sourceTaskIds": [
+        "DL-A1-06-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q02",
+      "text": "أكمل: Wir ___ nach Tunis gefahren.",
+      "finding": "sind مع wir والانتقال؛ seid لـ ihr و haben ليس المساعد لهذا الاستعمال.",
+      "sourceIds": [],
+      "options": [
+        "haben",
+        "sind",
+        "seid"
+      ],
+      "answer": "sind",
+      "explanation": "fahren بمعنى الانتقال إلى مكان يأخذ sein هنا: Wir sind gefahren.",
+      "sourceTaskIds": [
+        "DL-A1-06-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q03",
+      "text": "ما Partizip II للفعل lernen؟",
+      "finding": "gelernt هو Partizip II؛ gelernet ليس الصيغة و gelernte قد تظهر صفة مصرفة، لا Partizip II المطلوب هنا.",
+      "sourceIds": [],
+      "options": [
+        "gelernet",
+        "gelernt",
+        "gelernte"
+      ],
+      "answer": "gelernt",
+      "explanation": "Partizip II هو gelernt.",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q04",
+      "text": "ما Partizip II للفعل gehen؟",
+      "finding": "gegangen؛ لا نبني gehen قياسًا بـ gegeht/gegehtet.",
+      "sourceIds": [],
+      "options": [
+        "gegeht",
+        "gegangen",
+        "gegehtet"
+      ],
+      "answer": "gegangen",
+      "explanation": "الفعل غير المنتظم gehen يصبح gegangen.",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q05",
+      "text": "أي جملة ترتيبها صحيح؟",
+      "finding": "الأول خبرية V2 صحيحة؛ الثاني يؤخر المساعد عن موضعه والثالث يضع Partizip في البداية مع اختلال الترتيب.",
+      "sourceIds": [],
+      "options": [
+        "Gestern habe ich Deutsch gelernt.",
+        "Gestern ich habe gelernt Deutsch.",
+        "Gestern gelernt ich habe Deutsch."
+      ],
+      "answer": "Gestern habe ich Deutsch gelernt.",
+      "explanation": "يأتي المساعد المصرف ثانيًا، وPartizip II في نهاية الجملة.",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q06",
+      "text": "أكمل: Wir haben Musik ___.",
+      "finding": "gehört؛ hören مصدر و gehören فعل آخر، لا Partizip II لهذا المطلوب.",
+      "sourceIds": [],
+      "options": [
+        "gehört",
+        "hören",
+        "gehören"
+      ],
+      "answer": "gehört",
+      "explanation": "Partizip II للفعل hören هو gehört.",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q07",
+      "text": "أكمل: Rania ___ zu ihrer Freundin gefahren.",
+      "finding": "ist مع Rania والانتقال إلى الصديقة؛ haben لا يوافق المفرد و hat ليس المساعد هنا.",
+      "sourceIds": [],
+      "options": [
+        "hat",
+        "ist",
+        "haben"
+      ],
+      "answer": "ist",
+      "explanation": "مع fahren للانتقال نستخدم ist هنا.",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q08",
+      "text": "اختر Partizip II الصحيح: Ich habe einen Film ___.",
+      "finding": "gesehen لرؤية فيلم؛ Q08→T03.1 بدل T05 الذي لا يدرب sehen مباشرةً.",
+      "sourceIds": [],
+      "options": [
+        "gesehen",
+        "gesieht",
+        "sehen"
+      ],
+      "answer": "gesehen",
+      "explanation": "Partizip II للفعل sehen هو gesehen.",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q09",
+      "text": "ما Partizip II للفعل fahren؟",
+      "finding": "gefahren؛ gefahrt و gefahrtet ليستا Partizip II للفعل.",
+      "sourceIds": [],
+      "options": [
+        "gefahrt",
+        "gefahren",
+        "gefahrtet"
+      ],
+      "answer": "gefahren",
+      "explanation": "الفعل fahren يصبح gefahren.",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-06-Q10",
+      "text": "أي جملة تقول «ذهبت أمس بوسيلة نقل إلى مدينة تونس» بالنمط المدروس؟",
+      "finding": "Gestern bin ich nach Tunis gefahren؛ وُضحت مدينة تونس ووسيلة النقل. الثاني يبقي المصدر غير الصحيح والثالث يكسر V2؛ فهارس الخيارات محفوظة.",
+      "sourceIds": [],
+      "options": [
+        "Gestern bin ich nach Tunis gefahren.",
+        "Gestern habe ich nach Tunis fahren.",
+        "Gestern ich bin gefahren nach Tunis."
+      ],
+      "answer": "Gestern bin ich nach Tunis gefahren.",
+      "explanation": "Gestern bin ich nach Tunis gefahren: bin ثانيًا وgefahren في النهاية في الجملة الخبرية هنا؛ Tunis مدينة تونس لا اسم البلد Tunesien.",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-06-P01",
+      "text": "اكتب أربع جمل كاملة في Perfekt عن أمس أو عطلة أسبوع خيالية، بأربعة أفعال مختلفة من الدرس. استعمل gestern أوam Wochenende، وفعلين على الأقل مع haben وفعلًا واحدًا على الأقل مع sein؛ اختر للجملة الرابعة مساعدًا مناسبًا أيضًا. هذه مهمة كتابة فقط، ولا يلزم مشاركة أحداث شخصية حقيقية أو القراءة بصوت مرتفع.",
+      "finding": "أربع جمل كتابية، min90 و speakAloud=false؛ توزيع المساعدين مطابق لـ T08، ولا يعامل طول النص كمصحح لغة.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت أربع جمل بأربعة أفعال مختلفة، مع gestern أوam Wochenende، وفعلين على الأقل مع haben وفعل واحد على الأقل مع sein.",
+        "meaningClarity": "تصف الجمل أحداثًا ماضية مفهومة ضمن اليوم أو عطلة الأسبوع المختارة، دون تناقض في الإشارات الزمنية.",
+        "targetSkill": "أصرف المساعد بحسب الفاعل، وأختاره وفق استعمال الفعل المدروس، وأضع Partizip II في النهاية في الجمل البسيطة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-06-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-06-P02",
+      "text": "حوّل الجمل الثلاث المعطاة إلى Perfekt عن أمس، محافظًا على الفاعل ich والنشاط والوجهة: Heute lerne ich Deutsch. Heute höre ich Musik. Heute fahre ich nach Tunis. ابدأ كل جواب بـGestern. اكتب جمل الماضي الثلاث ثم اقرأها بصوت مرتفع بنفسك؛ لا يلزم شريك أو تسجيل صوتك.",
+      "finding": "ثلاثة تحويلات معطاة، min90 و speakAloud=true؛ نُقلت إلى T04 لتكون تطبيقًا محددًا لا نسخة أقصر من السرد الحر.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "حوّلت الجمل الثلاث كلها من Heute إلى Gestern، وكتبت الأجوبة وقرأتها بصوت مرتفع.",
+        "meaningClarity": "أحافظ على تعلم الألمانية وسماع الموسيقى والذهاب إلى مدينة تونس، وعلى الفاعل ich، دون إضافة أحداث أو تغيير الوجهة.",
+        "targetSkill": "أستخدم habe … gelernt وhabe … gehört وbin … gefahren، مع المساعد ثانيًا وPartizip II في النهاية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ]
+    },
+    {
+      "id": "self-check-limit",
+      "text": "إقرار ذاتي وإصدارv2",
+      "finding": "المعايير والطول لا يثبتان جودة اللغة أو النطق. نتيجة v1 لا تفتح A1.7، لكن التحقق لا يحذفها؛ أول حفظ مسودة جديدة قد يستبدل مجموعة المسودات القديمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-01",
+      "text": "**Gestern habe ich gelernt.** → أمس درست.",
+      "finding": "gelernt مع haben وأمس؛ حذف مفعول Deutsch ممكن، فلا نضيفه ترجمة إلزامية.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Wir haben gespielt.** → لعبنا.",
+      "finding": "haben gespielt مع wir؛ نشاط لعب منتهٍ بلا تحديد نوعه.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich bin nach Tunis gefahren.** → ذهبت بوسيلة نقل إلى مدينة تونس.",
+      "finding": "وضحت العربية أن Tunis مدينة، والانتقال بوسيلة نقل؛ لا اسم بلد أو مشيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "احفظ الفعل ومساعده في استعماله: **haben** مع lernen/spielen/besuchen هنا، و**sein** مع gehen/fahren إلى مكان في أمثلتنا؛ لا تختَر المساعد من وجود حركة فقط.",
+      "finding": "قُيدت قاعدة المساعد بالأمثلة والاستعمال، لا جميع أفعال النشاط أو الحركة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-06-AUD-READ-01",
+      "text": "قراءة: ماذا فعلت Amel أمس؟",
+      "finding": "مقطع واحد بصوت voice-02؛ الكلمات والروابط والصوت والحالة ready/offer محفوظة، لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-06-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Gestern hat Amel nicht gearbeitet. Am Morgen hat sie gefrühstückt und Musik gehört. Danach hat sie Deutsch gelernt. Am Nachmittag ist sie mit dem Bus zu ihrer Freundin gefahren. Sie haben zusammen gekocht und einen Film gesehen. Am Abend ist Amel nach Hause zurückgekommen.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-06-AUD-LST-01",
+      "text": "استماع: عطلة نهاية الأسبوع في Sousse",
+      "finding": "مقطع واحد بصوت voice-03؛ الكلمات والروابط والصوت والحالة ready/offer محفوظة، لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-06-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Am Wochenende bin ich mit meiner Familie nach Sousse gefahren. Am Samstag haben wir den Markt besucht. Ich habe Obst gekauft und meine Schwester hat Fotos gemacht. Am Sonntag haben wir zu Hause gekocht.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "ad252994c8852a531e21c9819a1f0bced8b6a720",
+    "unchangedOtherLessons": 52,
+    "unchangedGate": true,
+    "unchangedGlobalAudioAssets": 217,
+    "unchangedTrackedMp3Blobs": 474,
+    "unchangedFiles": [
+      "app.js",
+      "styles.css",
+      "package.json",
+      "package-lock.json",
+      "data/audio-playlists.json",
+      "data/audio-asset-register.csv",
+      "tools/build_course.py",
+      "tools/verify_course.py"
+    ],
+    "unchangedOutsideLessonCatalogRows": true,
+    "changedLessonCatalogRows": 20
+  },
+  "testResults": {
+    "build": "PASS",
+    "bundleBytes": 1792765,
+    "verify": "PASS",
+    "cumulativeReviewGuards": 12,
+    "nodeSuites": [
+      "progression",
+      "session_persistence",
+      "daily_plan",
+      "study_time",
+      "service_worker"
+    ],
+    "browserSuites": [
+      "forms-keyboard",
+      "accessibility-audit",
+      "narrow-layout",
+      "accessibility-update",
+      "browser"
+    ],
+    "allListedSuites": "PASS",
+    "chromium": "143.0.7499.0",
+    "playwright": "1.58.2",
+    "axe": "4.11.0",
+    "axeStates": 61,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteRuleOccurrences": 36,
+    "axeIncompleteNodeOccurrences": 94,
+    "narrowStates": 126,
+    "serviceWorkerFixture": "v42 to v57 with current assessment data; legacy A1.6 rejection separately in VM",
+    "baselineGuardFailure": "Ambiguous sie: singular ist or plural sind against a single ist key",
+    "syntaxAndDiff": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "baselineCommit": "ad252994c8852a531e21c9819a1f0bced8b6a720",
+    "status": "local_checked_pending_push",
+    "merged": false,
+    "deploymentConfirmed": false
+  }
+}

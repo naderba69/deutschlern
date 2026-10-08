@@ -92,6 +92,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.5-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.5-practical-form-fixture', width);
+  // CR12: Perfekt patterns, written narrative and spoken tense transfer.
+  await page.evaluate(() => openLesson('a1-06-yesterday-perfekt'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.6-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.6-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

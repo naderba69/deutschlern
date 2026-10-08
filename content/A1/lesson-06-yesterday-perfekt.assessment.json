@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-06-v1",
+    "version": "a1-06-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,10 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR12: مراجعة نصية فردية بالمراجع في data/reviews/a1-06-review.json؛ ليست شهادة لغة أو نطق.",
+      "حُدد فاعل T03.3 بدل sie الملتبسة، وصُحح ربط Q08 إلى T03. فهارس الإجابات وعتبة80% محفوظة.",
+      "T08/P01 أربع جمل كتابية مع توزيع haben/sein؛ T04/P02 تحويل ثلاث جمل معطاة من اليوم إلى أمس ثم قراءتها، بأدلة ذاتية لا تصحيح آلي.",
+      "القراءة والاستماع موجودان ومحفوظان: أصلان/مقطعان دون استماع أو اعتماد جديد. التقييم لا يعتمد على الصوت."
     ]
   },
   "quiz": [
@@ -168,7 +169,7 @@
     {
       "id": "DL-A1-06-Q08",
       "sourceTaskIds": [
-        "DL-A1-06-T05"
+        "DL-A1-06-T03"
       ],
       "objectiveIds": [
         "DL-A1-06-G01"
@@ -219,14 +220,14 @@
         "ترتيب Perfekt",
         "اختيار محدد"
       ],
-      "prompt": "أي جملة تقول «ذهبت أمس إلى تونس»؟",
+      "prompt": "أي جملة تقول «ذهبت أمس بوسيلة نقل إلى مدينة تونس» بالنمط المدروس؟",
       "options": [
         "Gestern bin ich nach Tunis gefahren.",
         "Gestern habe ich nach Tunis fahren.",
         "Gestern ich bin gefahren nach Tunis."
       ],
       "answerIndex": 0,
-      "explanation": "التركيب الصحيح: bin المصرف في المرتبة الثانية، وgefahren في النهاية."
+      "explanation": "Gestern bin ich nach Tunis gefahren: bin ثانيًا وgefahren في النهاية في الجملة الخبرية هنا؛ Tunis مدينة تونس لا اسم البلد Tunesien."
     }
   ],
   "performanceTasks": [
@@ -239,14 +240,13 @@
         "DL-A1-06-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب أربع جمل عن أمس أو عطلة الأسبوع، مستخدمًا Perfekt لأربعة أفعال درستها. اقرأ السرد بصوت مرتفع.",
+      "prompt": "اكتب أربع جمل كاملة في Perfekt عن أمس أو عطلة أسبوع خيالية، بأربعة أفعال مختلفة من الدرس. استعمل gestern أوam Wochenende، وفعلين على الأقل مع haben وفعلًا واحدًا على الأقل مع sein؛ اختر للجملة الرابعة مساعدًا مناسبًا أيضًا. هذه مهمة كتابة فقط، ولا يلزم مشاركة أحداث شخصية حقيقية أو القراءة بصوت مرتفع.",
       "criteria": {
-        "taskCompletion": "يذكر أربعة أحداث ماضية بجمل كاملة.",
-        "meaningClarity": "يمكن فهم ترتيب الأحداث وما فعله المتعلم.",
-        "targetSkill": "يختار haben أو sein في الأمثلة المدروسة ويضع Partizip II في نهاية الجملة."
+        "taskCompletion": "كتبت أربع جمل بأربعة أفعال مختلفة، مع gestern أوam Wochenende، وفعلين على الأقل مع haben وفعل واحد على الأقل مع sein.",
+        "meaningClarity": "تصف الجمل أحداثًا ماضية مفهومة ضمن اليوم أو عطلة الأسبوع المختارة، دون تناقض في الإشارات الزمنية.",
+        "targetSkill": "أصرف المساعد بحسب الفاعل، وأختاره وفق استعمال الفعل المدروس، وأضع Partizip II في النهاية في الجمل البسيطة."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,15 +256,15 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
-        "speakAloud": true,
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
         "audioRequired": false
       }
     },
     {
       "id": "DL-A1-06-P02",
       "sourceTaskIds": [
-        "DL-A1-06-T08"
+        "DL-A1-06-T04"
       ],
       "objectiveIds": [
         "DL-A1-06-G01"
@@ -273,11 +273,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "احكِ تجربة قصيرة من أمس بثلاث جمل على الأقل. اكتب الجمل أولًا ثم اقرأها بصوت مرتفع، وراجع المساعد ونهاية كل جملة.",
+      "prompt": "حوّل الجمل الثلاث المعطاة إلى Perfekt عن أمس، محافظًا على الفاعل ich والنشاط والوجهة: Heute lerne ich Deutsch. Heute höre ich Musik. Heute fahre ich nach Tunis. ابدأ كل جواب بـGestern. اكتب جمل الماضي الثلاث ثم اقرأها بصوت مرتفع بنفسك؛ لا يلزم شريك أو تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "يقدم ثلاث جمل ماضية على الأقل.",
-        "meaningClarity": "تتضح الأنشطة ومتى حدثت.",
-        "targetSkill": "يستخدم Perfekt مع مساعد مناسب وPartizip II صحيح في الأفعال التي درسها."
+        "taskCompletion": "حوّلت الجمل الثلاث كلها من Heute إلى Gestern، وكتبت الأجوبة وقرأتها بصوت مرتفع.",
+        "meaningClarity": "أحافظ على تعلم الألمانية وسماع الموسيقى والذهاب إلى مدينة تونس، وعلى الفاعل ich، دون إضافة أحداث أو تغيير الوجهة.",
+        "targetSkill": "أستخدم habe … gelernt وhabe … gehört وbin … gefahren، مع المساعد ثانيًا وPartizip II في النهاية."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,7 +287,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
+        "minimumResponseCharacters": 90,
         "speakAloud": true,
         "audioRequired": false
       }
