@@ -10,6 +10,7 @@ T={int(m[1]):m[2].strip() for m in re.finditer(r'^### تمرين (\d+) — [^\n]
 assert 'der Lernstoff / das Zertifikat' in T[1] and '**um** أو **damit** فقط' in T[1]
 assert 'verstehen können' in T[2] and 'يسبقه المصدر verstehen' in a['quiz'][2]['explanation']
 assert 'Kommunikation؛ Morgen؛ verstehen؛ Kolleginnen' in s and 'verstehen können' not in T[6]
+assert 'كل نهاية مرة وفق المقاصد المحددة' in T[3]
 assert 'Ich übe jeden Tag, damit ich sicherer spreche.' in T[7]
 assert 'wenn sie regelmäßig am Kurs teilnehmen' in s and 'die Tabellenkalkulationen' in s
 for t,minimum,spoken in zip(a['performanceTasks'],[220,210],[False,True]):
