@@ -1492,7 +1492,22 @@
     "implementationCommit": "00580af492ccdab9440fb5b231884efc22ea3035",
     "implementationPushed": true,
     "remoteUiTested": false,
-    "priorVercelLimit": "CR22 rate limited; no deployment retries requested"
+    "priorVercelLimit": "CR22 rate limited; no deployment retries requested",
+    "reviewCommit": "6487ea9cf89b560ecd8a8be97de0f7ce1e8c6c09",
+    "reviewPushed": true,
+    "reviewHeadMatchedRemote": true,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "6487ea9cf89b560ecd8a8be97de0f7ce1e8c6c09",
+    "implementationVercelStatus": "failure",
+    "implementationVercelDescription": "Deployment rate limited — retry in 24 hours.",
+    "reviewVercelStatus": "success",
+    "reviewDeploymentId": 6941688318,
+    "reviewDeploymentEnvironment": "Preview",
+    "reviewDeploymentState": "success",
+    "reviewPreviewUrl": "https://deutschlern-q3vvyx5c4-balinader-2671s-projects.vercel.app",
+    "productionDeploymentClaimed": false,
+    "redeploymentRetriesRequested": false
   },
   "campaign": {
     "reviewedLessons": 22,
