@@ -2015,16 +2015,28 @@
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "c4cd3c7e1ab78b78f654f18646bb1b2d29eb9074"
+      "queriedAtHead": "66f25c7a44857b909476978b953498564073bb00"
     },
     "implementationDeployment": {
       "state": "failure",
       "description": "Deployment rate limited — retry in 24 hours.",
       "deployments": []
     },
-    "reportPushed": false,
+    "reportPushed": true,
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportCommit": "66f25c7a44857b909476978b953498564073bb00",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR41 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   },
   "limits": [
     "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
