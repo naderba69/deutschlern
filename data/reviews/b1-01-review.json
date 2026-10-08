@@ -1,0 +1,2106 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-01-daily-life-hobbies-experiences",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-01-v2",
+  "unitCount": 97,
+  "exerciseSubItemCount": 33,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "ALS",
+      "title": "Duden — als، الرابط الزمني",
+      "url": "https://www.duden.de/rechtschreibung/als_temporal",
+      "scope": "يذكر علاقة زمنية وقد تكون قبلًا أو تزامنًا أو بعدًا، ومثال damals, als sie noch klein war يدعم الفترة؛ لا يختزل كل استعمال في لحظة قصيرة أو تزامن حصري.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WENN",
+      "title": "Duden — wenn",
+      "url": "https://www.duden.de/rechtschreibung/wenn",
+      "scope": "يميز الشرط من الزمن ومن التكرار؛ مثال بدء العطلة لا يشترط عادة. لا ندرس كل معاني التمني والمقارنة والتنازل المذكورة في الصفحة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "REMEMBER",
+      "title": "Duden — erinnern",
+      "url": "https://www.duden.de/rechtschreibung/erinnern",
+      "scope": "sich an etwas erinnern مع Akkusativ، مثل an den Vorfall؛ تمييز التذكّر الانعكاسي عن تذكير شخص، مع وجود استعمالات إقليمية ليست نموذج الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "JOIN",
+      "title": "Duden — teilnehmen",
+      "url": "https://www.duden.de/rechtschreibung/teilnehmen",
+      "scope": "nimmt teil/nahm teil/hat teilgenommen؛ an einem Seminar أوWettbewerb مع Dativ. المشاركة لا تثبت الفوز أو الإتمام أو الكلفة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NOW",
+      "title": "Duden — inzwischen",
+      "url": "https://www.duden.de/rechtschreibung/inzwischen",
+      "scope": "قد يدل على حال وصلت إليها الأمور بعد وقت، أو في الأثناء، أو حتى حين لاحق. في النص حال التصوير الآن بعد التجربة، وليس معنى واحدًا لكل السياقات.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "EVENT",
+      "title": "Duden — Erlebnis",
+      "url": "https://www.duden.de/rechtschreibung/Erlebnis",
+      "scope": "محايد، جمعه Erlebnisse؛ حدث معيش مؤثر، قد يكون سارًا أو فظيعًا، وليس الذكرى Erinnerung ولا المعرفة المتراكمة بالضرورة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "الفعل المصرف آخر التابعة، والفاصلة، وتبدأ الرئيسية بالمصرف بعد التابعة المقدمة. لا نعتمد تعميمات فقرات أخرى خارج هذا النطاق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ADV",
+      "title": "Lingolia — Adverbialsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/adverbialsaetze",
+      "scope": "يفرق نوع التابعة الزمني من الشرطي؛ هذا مرجع للتصنيف لا دليل منفرد على كل تفاصيل als/wenn.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PAST",
+      "title": "Lingolia — Präteritum",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/praeteritum",
+      "scope": "سرد الماضي والحالات؛ war/waren وhatte/hatten شائعان حتى في الكلام، و-e- مع جذع منتهٍ بـd/t يدعم endete. لا يفرض Präteritum على كل كلام عن الماضي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PERF",
+      "title": "Lingolia — Perfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+      "scope": "المساعد المصرف مع Partizip II، والشيوع في الكلام؛ gegangen معsein، وfotografiert بلاge بسبب-ieren، وteilgenommen معhaben.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CONTRAST",
+      "title": "Mein Deutschbuch — Temporalsätze mit wenn und als",
+      "url": "https://mein-deutschbuch.de/wenn-und-als/",
+      "scope": "يدعم مقابل الماضي المحدد/المتكرر وwenn لحدث مستقبلي واحد وترتيب الجمل وأمثلة Perfekt معwar. لا ننقل عبارته الافتتاحية عن Gleichzeitigkeit كقاعدة حصرية؛ Duden يذكر علاقات متعددة، والفترة كالطفولة ليست لحظة واحدة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/als",
+      "access": "full_fetched_page",
+      "reason": "صفحة الظرف اللهجي، لا الرابط الزمني؛ اتبع رابط als_temporal بدلًا منها. لا تُحسب هذه الصفحة ضمن المراجع11، ولا تُعد قراءة نتائج البحث الأخرى أوPDF مرتبطة بالصفحات."
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# B1.1 — الحياة اليومية والهوايات والتجارب: als وwenn",
+      "finding": "عنوان الحياة والهوايات والتجارب؛ لا يفرض شراء كاميرا أو زيارة نادي.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة، استماع اختياري، سرد تجربة، قواعد، كتابة وجهر",
+      "finding": "مدة مقترحة قابلة للتقسيم؛ الجهر صريح والاستماع اختياري، ولا يلزم إنهاء كل مهمة في 45 دقيقة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أحكي عن تجربة سابقة وأميّز بين حدث وقع مرة واحدة وعادة تكررت.",
+      "finding": "هدف التمييز والسرد مدعوم بتدريب موجه وفقرة وحوار، لا بدرجة الاختيار وحدها.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستعمل **als** في هذه الأمثلة الزمنية لحدث أو فترة محددة في الماضي. الفترة قد تكون طويلة مثل الطفولة؛ لا تعني als أن كل نشاط داخلها وقع مرة واحدة فقط. في الجملة التابعة يأتي الفعل المصرف في النهاية.",
+      "finding": "als قد يحدد فترة ماضية كاملة تتكرر خلالها أنشطة؛ أزيل احتمال فهمه على أنه مرة لعب واحدة في العمر.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "نستعمل **wenn** زمنيًا لما تكرر في الماضي، وكذلك لأحداث في الحاضر أو المستقبل، ومنها حدث مستقبلي واحد؛ وقد تعني «إذا» للشرط كما في مثال وقت الفراغ اليوم. لا يكفي وجود فعل ماضٍ لاختيار als: حدّد هل نتحدث عن فترة محددة أم مناسبات متكررة. وتُفصل الجملة التابعة عن الرئيسية بفاصلة.",
+      "finding": "التكرار الماضي ليس كل استعمال wenn؛ أضيف الحدث المستقبلي الواحد مع فصل الزمن عن الشرط البسيط.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "النموذجان مكتوبان لشخصيتين متخيّلتين، وليسا نصين مسجلين أو إعادةً لحكاية لينا أو كريم أو راوي الاستماع. يمكن تغيير التفاصيل مع حفظ المطالب؛ عدد الحروف والإقرار لا يثبتان صحة اللغة تلقائيًا.",
+      "finding": "نماذج خيالية مكتوبة غير مسجلة، لا امتدادًا لسيرة الشخصيات أو تعويضًا لتقييم اللغة آليًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| das Erlebnis | die Erlebnisse | التجربة/الحدث المميّز |",
+      "finding": "Erlebnis محايد وجمعه Erlebnisse؛ تجربة معيشة مؤثرة، لا دائمًا سعيدة ولا مرادفًا تامًا للذكرى.",
+      "sourceIds": [
+        "EVENT"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| der Verein | die Vereine | النادي/الجمعية |",
+      "finding": "Verein مذكر وجمعه Vereine؛ نادي أو جمعية، لا موقع الويب نفسه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das Schachturnier | die Schachturniere | بطولة شطرنج |",
+      "finding": "Schachturnier محايد وجمعه Schachturniere؛ بطولة، والمشاركة لا تعني الفوز.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Erinnerung | die Erinnerungen | الذكرى |",
+      "finding": "Erinnerung مؤنث وجمعها Erinnerungen؛ ذكرى، لا الواقعة المعيشة نفسها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Freizeit | — | وقت الفراغ |",
+      "finding": "Freizeit مؤنث؛ وقت الفراغ هو المعنى السياقي المفرد هنا، والشرطة ليست ادعاء منع أي استعمال آخر.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| das Hobby | die Hobbys | الهواية |",
+      "finding": "Hobby محايد وجمعه Hobbys؛ الهواية لا العمل الإلزامي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| damals | — | آنذاك |",
+      "finding": "damals ظرف بمعنى آنذاك في سياق ماضٍ؛ لا تصريف جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| inzwischen | — | في هذه الأثناء / الآن بعد ذلك |",
+      "finding": "inzwischen قد تعني في الأثناء أو الحال الآن بعد تغير؛ كلا المعنيين المذكورين مقيد بالسياق.",
+      "sourceIds": [
+        "NOW"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| zum ersten Mal | — | للمرة الأولى |",
+      "finding": "zum ersten Mal للمرة الأولى بالنسبة للنشاط المقصود، لا دليل على عمر بعينه دون النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| sich erinnern an | erinnert sich | يتذكر |",
+      "finding": "sich erinnern an مصدر انعكاسي، و erinnert sich صيغة مفرد؛ ich erinnere mich و du erinnerst dich في الأمثلة.",
+      "sourceIds": [
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| teilnehmen an | nimmt teil | يشارك في |",
+      "finding": "teilnehmen an مصدر، و nimmt teil مفرد؛ an مع Dativ لا وجهة مكانية هنا.",
+      "sourceIds": [
+        "JOIN"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| regelmäßig | — | بانتظام |",
+      "finding": "regelmäßig بانتظام؛ لا يعني كل يوم أو عدد مرات محددًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| allein / gemeinsam | — | وحده / معًا |",
+      "finding": "allein وحده و gemeinsam معًا؛ مفهومان مختلفان، و und في التسجيل تجمع قائمتين لا تجعل المعنيين مترادفين.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Als ich sechzehn Jahre alt war, bekam ich meine erste Kamera.",
+      "finding": "سن 16 في مثال متكلم غير مسمى، لا عمر لينا في القراءة أو كريم في الحوار؛ هنا يقول صراحة erste Kamera.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Als wir zum ersten Mal allein reisten, waren wir nervös.",
+      "finding": "رحلة أولى محددة في الماضي؛ reisten و waren مع wir، وليس شرطًا حاضرًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Wenn Lina am Wochenende Zeit hatte, fotografierte sie im Park.",
+      "finding": "فراغ نهاية الأسبوع مناسبات ماضية متكررة مع wenn؛ التصوير في الحديقة، لا يعني كل عطلة بلا استثناء.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Wenn ich heute frei habe, treffe ich meine Freunde.",
+      "finding": "شرط فراغ اليوم مع Präsens؛ يثبت أن عنوان الأصل المختصر «wenn للعادة» ليس تعريفًا حصريًا للقاعدة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **فترة أم تكرار؟** في **Als ich ein Kind war, spielte ich gern Schach.** الطفولة فترة محددة، ويمكن أن يتكرر اللعب داخلها. أما **Wenn wir uns am Sonntag trafen, ...** في نص الاستماع فتصف لقاءات متكررة؛ لا عددًا معلومًا من أيام الأحد.",
+      "finding": "يميز الفترة الفريدة من الأنشطة التي قد تتكرر داخلها، فلا يعامل مثال الطفولة كخطأ.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **wenn ليست للعادة فقط:** **Wenn ich morgen nach Hause komme, rufe ich dich an.** يصلح لعودة واحدة منتظرة غدًا. ندرس هنا الاستعمال الزمني والشرطي البسيط، لا كل استعمالات als وwenn أو أسلوب المقارنة.",
+      "finding": "مثال عودة واحدة غدًا يرد على حصر wenn في العادات؛ لا مقارنة أو تمنٍّ مطلوبان.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **الفاصلة وموقع الفعل:** **Als ich jung war, spielte ich Fußball.** تأتي **war** في نهاية التابعة، وبعد تقديم التابعة تبدأ الرئيسية بـ**spielte** ثم **ich**. ويمكن أيضًا: **Ich spielte Fußball, als ich jung war.** في تمرين الترتيب اتبع البداية المحددة.",
+      "finding": "الفعل آخر التابعة، والمصرف أول الرئيسية بعد الفاصلة؛ ترتيب بديل صحيح مع تحديد بداية تمرين الترتيب.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الماضي لا يفرض زمنًا واحدًا:** **war/waren، hatte/hatten، endete، bekam، ging/gingen، traf/trafen** صيغ Präteritum. **habe teilgenommen، haben fotografiert، sind gegangen** صيغ Perfekt؛ الجمع بين **Als ich 17 war** و**habe ... teilgenommen** في الحوار طبيعي، وليس خطأ يجب تحويله كله إلى زمن واحد.",
+      "finding": "war مع habe … teilgenommen ليس خلطًا خاطئًا؛ صور الماضي تساعد القراءة ولا تفرض زمنًا واحدًا آليًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **تذكّر ومشاركة:** **Ich erinnere mich an diesen Kurs. / Erinnerst du dich an deinen Kurs?** الضمير يتغير مع الفاعل، و**an + Akkusativ** هنا. أما **an einem Kurs teilnehmen** فمع **Dativ**؛ لا نختار الحالة بسؤال Wo أو Wohin لأن حرف الجر مرتبط بالفعل. **nimmt teil / hat teilgenommen** صيغتان للفعل نفسه.",
+      "finding": "ضمير التذكر يتبع الفاعل؛ an+Akk للتذكر مقابل an+Dat للمشاركة، دون خلط بحركة مكانية.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **مفردات داخل النص:** **Porträts** صور شخصية، و**Partien** مباريات في سياق الشطرنج، و**neugierig** فضولي/محب للاستكشاف، و**lobte** أثنت، و**bekam** حصل/حصلت. **Erlebnis** حدث معيش يترك أثرًا؛ ليس دائمًا حدثًا سعيدًا، ولا هو نفسه **Erinnerung**، الذكرى.",
+      "finding": "Porträts و Partien و neugierig و lobte و bekam دعم لما ورد في النص؛ Erlebnis ليس دائمًا حدثًا سارًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **علامات الزمن:** **damals** آنذاك؛ **seitdem** منذ ذلك الحين؛ **inzwischen** هنا الآن بعد التطور المذكور، وقد تعني «في هذه الأثناء» في سياق آخر. **nicht mehr so oft** تعني بتكرار أقل الآن، لا التوقف تمامًا. لا نستنتج الفوز من مجرد المشاركة في بطولة.",
+      "finding": "يفصل seitdem/inzwischen؛ تكرار أقل ليس توقفًا، والبطولة لا تدل على الفوز.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **لا تخلط الأشخاص:** سن16 في مثال القاعدة، و17 لكريم في الحوار، و14 للينا في القراءة. النص يقول إن لينا حصلت على كاميرا من عمتها/خالتها، ولا يحدد هل كانت أول كاميرا أو أي جانب من العائلة؛ **Tante** تحتمل العمة والخالة. راوي الاستماع غير مسمى، و**sie** في أسئلته تعود إلى **die Person** نحويًا ولا تثبت جنس المتحدث.",
+      "finding": "الأعمار 16/17/14 لأمثلة مختلفة؛ Tante لا تحدد عمة أم خالة؛ Person مؤنث نحوي لا إثبات جنس راوي الاستماع.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود الدليل:** عرض الصور الموصوف كان في احتفال مدرسي؛ لا يخبرنا النص أين عرضتها أول مرة في حياتها. **für die Webseite** يبين الغرض من الصور، ولا يثبت أنها نُشرت فعلًا. **oft** لا تعني دائمًا، و**regelmäßig** لا تحدد عدد الدورات.",
+      "finding": "المشهد المدرسي لا يثبت أول عرض في الحياة؛ غرض صور الموقع ليس دليل نشر، و oft/regelmäßig لا يحددان كل مرة أو عددًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل:** اقرأ أو استمع ثم عد إلى الكلمات التي تثبت الجواب. المهمتان خياليتان؛ لا تذكر خبرة حساسة أو أسماء حقيقية ولا تتواصل مع شريك. اكتب الفقرة والحوار بنفسك واقرأ كليهما جهرًا؛ لا تسجيل مطلوب. التفريغ والحد الحرفي والإقرارات وسائل تعلم وليست تصحيحًا آليًا للغة أو النطق.",
+      "finding": "عمل فردي خيالي دون بيانات حساسة أو شريك أو تسجيل؛ إقرار الجهر لا يقيس جودة النطق.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER",
+        "JOIN",
+        "NOW",
+        "EVENT",
+        "CONTRAST"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Erinnerst du dich an deinen ersten Fotokurs?",
+      "finding": "Lina تسأل Karim عن دورة التصوير الأولى، مع dich و an deinen ersten Fotokurs في Akkusativ.",
+      "sourceIds": [
+        "REMEMBER",
+        "JOIN",
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "NOW"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ja. Als ich siebzehn war, habe ich zum ersten Mal an einem Kurs teilgenommen.",
+      "finding": "Karim يذكر عمر 17 وأول مشاركة في دورة؛ المساعد habe بعد التابعة و teilgenommen في نهاية الرئيسية.",
+      "sourceIds": [
+        "REMEMBER",
+        "JOIN",
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "NOW"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Was hast du dort gemacht?",
+      "finding": "سؤال عما فعل هناك؛ Perfekt طبيعي ولا يطلب مكانًا آخر.",
+      "sourceIds": [
+        "REMEMBER",
+        "JOIN",
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "NOW"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Wir haben Porträts fotografiert. Wenn wir am Wochenende Zeit hatten, sind wir zusammen in den Park gegangen.",
+      "finding": "تصوير Porträts ثم عادة الذهاب معًا للحديقة عند توفر الوقت؛ haben fotografiert مقابل sind gegangen. لا عدد دورات أو أسماء أشخاص مفترض.",
+      "sourceIds": [
+        "REMEMBER",
+        "JOIN",
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "NOW"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Machst du das noch?",
+      "finding": "Lina تسأل هل ما زال يمارس ذلك؛ ليس طلب موعد أو مشاركة جديدة.",
+      "sourceIds": [
+        "REMEMBER",
+        "JOIN",
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "NOW"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ja, inzwischen fotografiere ich auch auf Reisen.",
+      "finding": "Karim يؤكد التصوير الآن أيضًا في السفر؛ لا يثبت أنه توقف عن التصوير في الحديقة أو عدد رحلاته.",
+      "sourceIds": [
+        "REMEMBER",
+        "JOIN",
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Als Lina vierzehn Jahre alt war, bekam sie eine Kamera von ihrer Tante.",
+      "finding": "حصلت لينا عند 14 على كاميرا من Tante؛ ليس 16 أو 17، ولا يصرح بأنها أول كاميرا أو شراء أو هدية.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie war sofort neugierig.",
+      "finding": "أصبحت فضولية فورًا؛ وصف استجابة لا إثبات موهبة أو إحراز جائزة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Wenn sie ihre Großeltern besuchte, fotografierte sie oft den Garten und die Tiere.",
+      "finding": "كانت تصور الحديقة والحيوانات كثيرًا حين تزور الجدين؛ عادة مع wenn و oft لا كل زيارة حتمًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Einmal zeigte sie ihre Bilder bei einem Schulfest.",
+      "finding": "مشهد عرض في احتفال مدرسي؛ Einmal لا يخبرنا أول مكان عرض في كامل حياتها.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Ihre Lehrerin lobte sie.",
+      "finding": "المعلمة أثنت عليها؛ لا تقييم معين أو جائزة أو ضمان سبب قرار التسجيل.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Seitdem nimmt Lina regelmäßig an Fotokursen teil.",
+      "finding": "منذ ذلك الحين تشارك بانتظام في دورات؛ nimmt … teil مع an Fotokursen، لا يقول إنها أنهت كل دورة أو عددها.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Inzwischen macht sie auch Bilder für die Webseite ihres Vereins.",
+      "finding": "تصنع صورًا أيضًا لموقع ناديها؛ لا يثبت النص أن صور الاحتفال هي عينها صور الموقع أو أن النشر وقع.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wie alt war Lina, als sie die Kamera bekam?",
+      "finding": "Sie war14 Jahre alt؛ حُذفت كلمة erste غير المسندة دون تغيير الصوت.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Von wem bekam sie die Kamera?",
+      "finding": "Von ihrer Tante؛ السؤال عن المصدر لا فعل الإهداء المفترض، والعمة والخالة احتمالان في العربية.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was fotografierte sie, wenn sie ihre Großeltern besuchte?",
+      "finding": "Den Garten und die Tiere؛ لا الاقتصار على واحدة أو نقل الحديقة من حواركريم.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wo zeigte sie einmal ihre Bilder?",
+      "finding": "Bei einem Schulfest؛ المشهد المذكور لا أول عرض في الحياة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Wofür macht sie inzwischen Bilder?",
+      "finding": "Für die Webseite ihres Vereins؛ غرض الصور لا إثبات النشر.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "NOW"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Als ich ein Kind war, spielte ich gern Schach mit meinem Großvater.",
+      "finding": "الطفولة فترة مع als، والشطرنج مع الجد نشاط قد يتكرر داخلها؛ ليس حكمًا بأن اللعب حدث مرة واحدة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Wenn wir uns am Sonntag trafen, spielten wir oft mehrere Partien.",
+      "finding": "عند لقاءات الأحد لعبا غالبًا عدة مباريات؛ لا عدد محدد أو تأكيد كل أحد دون انقطاع.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Später habe ich an einem Schachturnier teilgenommen.",
+      "finding": "شارك لاحقًا في بطولة شطرنج مع haben+teilgenommen؛ لا فوز أو مدينة أو عمر أو صلة باسم Karim.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Heute spiele ich nicht mehr so oft, aber ich erinnere mich gern an diese Zeit.",
+      "finding": "الآن يلعب أقل ويتذكر تلك الفترة بسرور؛ nicht mehr so oft لا تعني أنه توقف تمامًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was spielte die Person als Kind?",
+      "finding": "Schach؛ الهواية لا البطولة بوصفها لعبة مختلفة.",
+      "sourceIds": [
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wann spielte sie oft mit dem Großvater?",
+      "finding": "Am Sonntag؛ اليوم لا ساعة أو تكرار أسبوعي إلزامي.",
+      "sourceIds": [
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "An welcher Veranstaltung nahm sie später teil?",
+      "finding": "An einem Schachturnier؛ مشاركة لا فوز، وتحويل nahm…teil من habe teilgenommen صحيح.",
+      "sourceIds": [
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Woran erinnert sie sich gern?",
+      "finding": "An diese Zeit؛ الذكرى عن الفترة الموصوفة، ولا يكشف الصوت وحده هوية الشخصية أو جنسها.",
+      "sourceIds": [
+        "PAST",
+        "PERF",
+        "JOIN",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "paragraph-model-01",
+      "text": "Als ich zwölf Jahre alt war, besuchte ich meinen ersten Malkurs.",
+      "finding": "تجربة أولى لدورة رسم عند 12 لشخصية خيالية؛ war أخيرًا ثم besuchte ich.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "paragraph-model-02",
+      "text": "Dort lernte ich neue Freunde kennen.",
+      "finding": "تفصيل التعرف إلى أصدقاء في الدورة؛ Dort ثم lernte ich، ولا يضيف حدثًا لا علاقة له بالهواية.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "paragraph-model-03",
+      "text": "Wenn wir früher am Samstag Zeit hatten, malten wir zusammen im Park.",
+      "finding": "عادة الرسم السبت حين توفر الوقت في الماضي؛ hatten في آخر التابعة ثم malten wir.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "paragraph-model-04",
+      "text": "Heute male ich noch gern.",
+      "finding": "الحال الحالي: ما زال يحب الرسم؛ يتمايز عن السرد الماضي.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "paragraph-model-05",
+      "text": "Ich erinnere mich an diesen Kurs.",
+      "finding": "ذكرى الدورة بصيغة Ich erinnere mich an diesen Kurs؛ Akkusativ معمذكر، وخمس جمل مكتملة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "dialogue-model-01",
+      "text": "A: Wann hast du zum ersten Mal Schach gespielt?",
+      "finding": "سؤال Wann عن أول لعب شطرنج، لا wenn كرابط بدل أداة السؤال.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "dialogue-model-02",
+      "text": "B: Als ich zehn Jahre alt war, spielte ich zum ersten Mal Schach.",
+      "finding": "جواب als عن تجربة أولى عند 10؛ war أخيرًا ثم spielte ich، لا تكرار بلوغ السن.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "dialogue-model-03",
+      "text": "A: Was hast du früher gemacht, wenn du am Sonntag Zeit hattest?",
+      "finding": "سؤال عن عادة ماضية عند توفر الوقت الأحد؛ hattest مع du في التابعة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "dialogue-model-04",
+      "text": "B: Wenn ich am Sonntag Zeit hatte, spielte ich oft mit meiner Schwester. Ich erinnere mich an diese Nachmittage.",
+      "finding": "جواب wenn مع hatte و spielte ثم ذكرى بعد ظهرات Akkusativ جمع؛ الدور الأخير جملتان، فيبقى الحوار 4 أسطر لا 4 جمل.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "PERF",
+        "REMEMBER"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Als ich 14 war, bekam ich eine Kamera.** → عندما كان عمري 14 سنة، حصلت على كاميرا.",
+      "finding": "مثال سن 14 وحصول كاميرا، لا يضيف أنها الأولى أو يخلطه بسن 16 في القاعدة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "REMEMBER",
+        "NOW"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Wenn wir Zeit hatten, gingen wir spazieren.** → كلما كان لدينا وقت، كنا نتمشّى.",
+      "finding": "تكرار عند توفر الوقت في الماضي؛ hatten/gingen مع wir.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "REMEMBER",
+        "NOW"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Ich erinnere mich an diese Zeit.** → أتذكر تلك الفترة.",
+      "finding": "تذكّر فترة محددة مع mich و an diese Zeit؛ ليس تذكير شخص آخر.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "REMEMBER",
+        "NOW"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **inzwischen** → الآن بعد ذلك / في الوقت الحالي.",
+      "finding": "inzwischen في سياق التحول إلى الحال الآن؛ ليس هذا ترجمة وحيدة لكل استعمال، والشرح السابق يبين البدائل.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "REMEMBER",
+        "NOW"
+      ]
+    },
+    {
+      "id": "DL-B1-01-T01",
+      "text": "1. ______ ich zehn Jahre alt war, lernte ich schwimmen. (حدث/فترة واحدة)\n2. ______ wir die Großeltern besuchten, aßen wir zusammen. (عادة متكررة)\n3. ______ ich zum ersten Mal allein reiste, war ich nervös.\n4. ______ ich heute Zeit habe, lese ich ein Buch. (شرط اليوم، لا حدث ماضٍ)",
+      "finding": "أربعة اختيارات بسياق ماضٍ محدد أو تكرار أو شرط.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "______ ich zehn Jahre alt war, lernte ich schwimmen. (حدث/فترة واحدة)",
+          "answer": "Als",
+          "finding": "عمر 10 فترة محددة مع تعلم السباحة؛ Als بحسب القرينة لا لمجرد وجود ماضٍ."
+        },
+        {
+          "text": "______ wir die Großeltern besuchten, aßen wir zusammen. (عادة متكررة)",
+          "answer": "Wenn",
+          "finding": "زيارات متكررة صراحة؛ Wenn يحفظ المعنى."
+        },
+        {
+          "text": "______ ich zum ersten Mal allein reiste, war ich nervös.",
+          "answer": "Als",
+          "finding": "سفرة أولى محددة في الماضي؛ Als."
+        },
+        {
+          "text": "______ ich heute Zeit habe, lese ich ein Buch. (شرط اليوم، لا حدث ماضٍ)",
+          "answer": "Wenn",
+          "finding": "شرط توفر الوقت اليوم؛ Wenn لا Als للماضي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T02",
+      "text": "اكتب صيغة Präteritum المناسبة للفاعل، في نهاية التابعة:\n\n1. Als Rania neu in der Stadt ______, kannte sie niemanden. (sein)\n2. Wenn wir als Kinder Ferien ______, fuhren wir ans Meer. (haben)\n3. Als der Kurs ______, machten alle ein Foto. (enden)",
+      "finding": "ثلاثة تصريفات Präteritum في آخر التابعة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "Als Rania neu in der Stadt ______, kannte sie niemanden. (sein)",
+          "answer": "war",
+          "finding": "war للمفرد Rania من sein؛ زمن Präteritum صار مصرحًا به."
+        },
+        {
+          "text": "Wenn wir als Kinder Ferien ______, fuhren wir ans Meer. (haben)",
+          "answer": "hatten",
+          "finding": "hatten مع wir؛ جمع وماضٍ لا hat أو haben."
+        },
+        {
+          "text": "Als der Kurs ______, machten alle ein Foto. (enden)",
+          "answer": "endete",
+          "finding": "endete مع der Kurs؛ -ete مع جذر ينتهي بـ d، والفعل أخيرًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T03",
+      "text": "ابدأ الجملة1 بـAls والجملة2 بـWenn؛ أضف الفاصلة بين الجملتين والنقطة في النهاية:\n\n1. als / ich / jung / war / spielte / ich / Fußball\n2. Wenn / sie / Zeit / hatte / besuchte / sie / den Verein",
+      "finding": "ترتيبان ببداية محددة وفاصلة؛ يدعم Q04.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "als / ich / jung / war / spielte / ich / Fußball",
+          "answer": "Als ich jung war, spielte ich Fußball.",
+          "finding": "بداية Als محددة؛ war أخيرًا ثم spielte ich؛ فترة الشباب لا مباراة واحدة فقط."
+        },
+        {
+          "text": "Wenn / sie / Zeit / hatte / besuchte / sie / den Verein",
+          "answer": "Wenn sie Zeit hatte, besuchte sie den Verein.",
+          "finding": "بداية Wenn محددة؛ hatte أخيرًا ثم besuchte sie؛ ترتيب الكلمات يحفظ معنى العادة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T04",
+      "text": "**أ — معنى الرابط:**\n\n1. **Als ich 18 war, zog ich um.** تعني:  \nأ. انتقلت مرة في فترة كنت فيها 18 عامًا.  ب. كنت أنتقل كلما بلغت 18 عامًا.\n2. **Wenn wir frei hatten, gingen wir wandern.** تعني:  \nأ. حدث واحد فقط.  ب. عادة متكررة في الماضي.\n\n**ب — مفردات وتجربة:**\n\n3. ما معنى **das Erlebnis**؟ اختر: تجربة/حدث معيش مميز — النادي/الجمعية.\n4. أي تركيب يعني «يشارك في دورة»؟ اختر: **an einem Kurs teilnehmen** — **sich für einen Kurs interessieren**.",
+      "finding": "معنيان للروابط ومفردتان لدعم Q01/Q02 و Q05 بدل ربط المفردات بتدريب الرابط فقط.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "**Als ich 18 war, zog ich um.** تعني:  ",
+          "answer": "أ",
+          "finding": "أ: انتقال موصوف خلال فترة سن 18، لا كلما بلغ 18. لا يثبت أنه انتقل مرة فقط في حياته."
+        },
+        {
+          "text": "**Wenn wir frei hatten, gingen wir wandern.** تعني:  ",
+          "answer": "ب",
+          "finding": "ب: عادة متكررة عندما يتفرغان، لا حدث مفرد."
+        },
+        {
+          "text": "ما معنى **das Erlebnis**؟ اختر: تجربة/حدث معيش مميز — النادي/الجمعية.",
+          "answer": "تجربة/حدث معيش مميز",
+          "finding": "Erlebnis تجربة أو حدث معيش؛ Verein نادي، وقد تكون التجربة سارة أو غير سارة."
+        },
+        {
+          "text": "أي تركيب يعني «يشارك في دورة»؟ اختر: **an einem Kurs teilnehmen** — **sich für einen Kurs interessieren**.",
+          "answer": "an einem Kurs teilnehmen",
+          "finding": "an einem Kurs teilnehmen مشاركة؛ sich interessieren اهتمام لا مشاركة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Lina bekam die Kamera von ihrer Tante.\n2. Sie fotografierte oft den Garten und die Tiere, wenn sie ihre Großeltern besuchte.\n3. In der beschriebenen Szene zeigte sie ihre Bilder in einer Zeitung.\n4. Heute macht sie auch Bilder für die Webseite ihres Vereins.\n5. Lina war 14 Jahre alt, als sie die Kamera bekam.",
+      "finding": "خمسة أحكام مسندة للقراءة بعد تقييد المشهد وإضافة العمر.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "Lina bekam die Kamera von ihrer Tante.",
+          "answer": "صحيح",
+          "finding": "صحيح: الكاميرا من Tante لا المعلمة."
+        },
+        {
+          "text": "Sie fotografierte oft den Garten und die Tiere, wenn sie ihre Großeltern besuchte.",
+          "answer": "صحيح",
+          "finding": "صحيح: الحديقة والحيوانات عند زيارة الجدين؛ oft لا تعني كل زيارة."
+        },
+        {
+          "text": "In der beschriebenen Szene zeigte sie ihre Bilder in einer Zeitung.",
+          "answer": "خطأ",
+          "finding": "خطأ: المشهد الموصوف احتفال مدرسي لا صحيفة؛ أزيلت دعوى أول عرض."
+        },
+        {
+          "text": "Heute macht sie auch Bilder für die Webseite ihres Vereins.",
+          "answer": "صحيح",
+          "finding": "صحيح: صور لموقع ناديها، لا مجرد أي نادي دون تحديد الغرض."
+        },
+        {
+          "text": "Lina war 14 Jahre alt, als sie die Kamera bekam.",
+          "answer": "صحيح",
+          "finding": "صحيح: عمر 14؛ أضيف لدعم Q06 مباشرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T06",
+      "text": "استخدم الكلمات مرة واحدة: **Schach — Sonntag — Schachturnier — Zeit**.\n\nأكمل: 1. Als Kind spielte die Person gern ______. 2. Sie spielte oft mit ihrem Großvater am ______. 3. Später nahm die Person an einem ______ teil. 4. Sie erinnert sich gern an diese ______.",
+      "finding": "أربعة فراغات مع بنك كلمات، دون تخمين جنس الراوي أو هويته.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "Als Kind spielte die Person gern ______.",
+          "answer": "Schach",
+          "finding": "Schach اسم اللعبة؛ لا Schachturnier اسم الحدث."
+        },
+        {
+          "text": "Sie spielte oft mit ihrem Großvater am ______.",
+          "answer": "Sonntag",
+          "finding": "Sonntag اسم اليوم، لا عدد اللقاءات أو الساعة."
+        },
+        {
+          "text": "Später nahm die Person an einem ______ teil.",
+          "answer": "Schachturnier",
+          "finding": "Schachturnier بطولة المشاركة، لا فوز مؤكد."
+        },
+        {
+          "text": "Sie erinnert sich gern an diese ______.",
+          "answer": "Zeit",
+          "finding": "Zeit الفترة التي يتذكرها؛ die Person مؤنث نحوي لا جنس المتحدث."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T07",
+      "text": "صحّح الرابط في **كلتا الجملتين** وفق المعنى المحدد بين القوسين؛ الثانية تصف زيارات خلال عطلات متكررة، لا عطلة واحدة بعينها:\n\n1. **Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.** (حدث واحد)\n2. **Als wir früher Ferien hatten, besuchten wir oft unsere Tante.** (عادة متكررة)",
+      "finding": "صحّح الرابطين لا واحدًا فقط، وفق المعنى المحدد.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "REMEMBER",
+        "JOIN",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "items": [
+        {
+          "text": "**Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.** (حدث واحد)",
+          "answer": "Als ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+          "finding": "Als بدل Wenn لأن الزيارة الأولى حدث ماضٍ محدد في المطلوب."
+        },
+        {
+          "text": "**Als wir früher Ferien hatten, besuchten wir oft unsere Tante.** (عادة متكررة)",
+          "answer": "Wenn wir früher Ferien hatten, besuchten wir oft unsere Tante.",
+          "finding": "Wenn بدل Als لأن المطلوب عطلات وزيارات متكررة؛ Als قد تكون سليمة في سياق عطلة واحدة، لكن ليس ذلك المعطى."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-T08",
+      "text": "**أ — P01: فقرة مع الجهر**\n\nاكتب خمس جمل مترابطة عن هواية لشخصية متخيّلة: جملة بـals لتجربة أولى أو حدث ماضٍ محدد؛ جملة لتفصيل ما حدث؛ جملة بـwenn لعادة متكررة في الماضي؛ جملة عن الهواية الآن؛ وجملة فيها **Ich erinnere mich an ...** لذكرى مرتبطة بها. ضع الفعل المصرف في نهاية التابعة، واقرأ الفقرة جهرًا. لا يلزم تسجيلها أو سرد تجربة شخصية.\n\n**ب — P02: حوار مكتوب مع الجهر**\n\nاكتب حوارًا خياليًا من أربعة أسطر: سؤال عن تجربة أولى لهواية؛ جواب يبدأ بـals يصف تلك التجربة في الماضي؛ سؤال عن نشاط تكرر في الماضي؛ وجواب يبدأ بـwenn يصف العادة ويضيف **Ich erinnere mich an ...** لذكرى مرتبطة بها. يمكن أن يحتوي الجواب الأخير جملتين. اكتب دوري الحوار بنفسك، ثم اقرأهما جهرًا دون شريك أو تسجيل.",
+      "finding": "فقرة خمس جمل وحوار أربعة أسطر، كلاهما مكتوب ثم جهر؛ لكل منهما تجربة وعادة وذكرى، دون شريك أو تسجيل. المطالب النصية تطابق التقييم، لا شرح غامض واحد لمهمتين.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "REMEMBER"
+      ],
+      "items": [
+        {
+          "text": "P01، الجملة1: Als ich zwölf Jahre alt war, besuchte ich meinen ersten Malkurs.",
+          "finding": "تجربة أولى لدورة رسم عند 12 لشخصية خيالية؛ war أخيرًا ثم besuchte ich."
+        },
+        {
+          "text": "P01، الجملة2: Dort lernte ich neue Freunde kennen.",
+          "finding": "تفصيل التعرف إلى أصدقاء في الدورة؛ Dort ثم lernte ich، ولا يضيف حدثًا لا علاقة له بالهواية."
+        },
+        {
+          "text": "P01، الجملة3: Wenn wir früher am Samstag Zeit hatten, malten wir zusammen im Park.",
+          "finding": "عادة الرسم السبت حين توفر الوقت في الماضي؛ hatten في آخر التابعة ثم malten wir."
+        },
+        {
+          "text": "P01، الجملة4: Heute male ich noch gern.",
+          "finding": "الحال الحالي: ما زال يحب الرسم؛ يتمايز عن السرد الماضي."
+        },
+        {
+          "text": "P01، الجملة5: Ich erinnere mich an diesen Kurs.",
+          "finding": "ذكرى الدورة بصيغة Ich erinnere mich an diesen Kurs؛ Akkusativ معمذكر، وخمس جمل مكتملة."
+        },
+        {
+          "text": "P02، السطر1: A: Wann hast du zum ersten Mal Schach gespielt?",
+          "finding": "سؤال Wann عن أول لعب شطرنج، لا wenn كرابط بدل أداة السؤال."
+        },
+        {
+          "text": "P02، السطر2: B: Als ich zehn Jahre alt war, spielte ich zum ersten Mal Schach.",
+          "finding": "جواب als عن تجربة أولى عند 10؛ war أخيرًا ثم spielte ich، لا تكرار بلوغ السن."
+        },
+        {
+          "text": "P02، السطر3: A: Was hast du früher gemacht, wenn du am Sonntag Zeit hattest?",
+          "finding": "سؤال عن عادة ماضية عند توفر الوقت الأحد؛ hattest مع du في التابعة."
+        },
+        {
+          "text": "P02، السطر4: B: Wenn ich am Sonntag Zeit hatte, spielte ich oft mit meiner Schwester. Ich erinnere mich an diese Nachmittage.",
+          "finding": "جواب wenn مع hatte و spielte ثم ذكرى بعد ظهرات Akkusativ جمع؛ الدور الأخير جملتان، فيبقى الحوار 4 أسطر لا 4 جمل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q01",
+      "text": "ما معنى الاسم **das Erlebnis**؟",
+      "finding": "das Erlebnis تعني تجربة أو حدثًا مميّزًا، أما الذكرى فهي die Erinnerung.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "النادي أو الجمعية.",
+        "تجربة أو حدث مميّز.",
+        "الذكرى."
+      ],
+      "answer": "تجربة أو حدث مميّز.",
+      "sourceTaskIds": [
+        "DL-B1-01-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "النادي أو الجمعية.",
+          "correct": false,
+          "finding": "النادي أو الجمعية معنى Verein لا Erlebnis."
+        },
+        {
+          "text": "تجربة أو حدث مميّز.",
+          "correct": true,
+          "finding": "التجربة أو الحدث المميز هو المعنى المناسب."
+        },
+        {
+          "text": "الذكرى.",
+          "correct": false,
+          "finding": "الذكرى Erinnerung، لا الحدث المعيش نفسه."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q02",
+      "text": "أي تركيب يعني «يشارك في دورة»؟",
+      "finding": "التركيب teilnehmen an يعني يشارك في؛ ومع einem Kurs يأتي حرف الجر an مع Dativ.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "sich für einen Kurs interessieren",
+        "sich an einen Kurs erinnern",
+        "an einem Kurs teilnehmen"
+      ],
+      "answer": "an einem Kurs teilnehmen",
+      "sourceTaskIds": [
+        "DL-B1-01-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "sich für einen Kurs interessieren",
+          "correct": false,
+          "finding": "اهتمام بالدورة لا المشاركة."
+        },
+        {
+          "text": "sich an einen Kurs erinnern",
+          "correct": false,
+          "finding": "تذكّر الدورة لا المشاركة."
+        },
+        {
+          "text": "an einem Kurs teilnehmen",
+          "correct": true,
+          "finding": "المشاركة مع an einem Kurs؛ Dativ للمذكر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q03",
+      "text": "أكمل بصيغة الماضي المناسبة، مع وضع الفعل في نهاية الجملة التابعة: **Als der Kurs ___, machten alle ein Foto.** (enden)",
+      "finding": "الفاعل مفرد والموقف ماضٍ: endete. ويأتي الفعل المصرف في نهاية جملة als التابعة.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "endete",
+        "endet",
+        "enden"
+      ],
+      "answer": "endete",
+      "sourceTaskIds": [
+        "DL-B1-01-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "endete",
+          "correct": true,
+          "finding": "endete ماضٍ مفرد مناسب للسياق."
+        },
+        {
+          "text": "endet",
+          "correct": false,
+          "finding": "endet مضارع لا صيغة الماضي المطلوبة."
+        },
+        {
+          "text": "enden",
+          "correct": false,
+          "finding": "enden مصدر أو جمع حاضر، لا مفرد ماضٍ."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q04",
+      "text": "أي جملة ترتب الكلمات **als / ich / jung / war / spielte / ich / Fußball** ترتيبًا صحيحًا؟",
+      "finding": "في التابعة يأتي war أخيرًا، وبعد تقديمها والفاصلة تبدأ الرئيسية بـ spielte ثم ich. تصف als فترة الشباب؛ لا يلزم أن اللعب وقع مرة واحدة فقط.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "Als ich war jung, spielte ich Fußball.",
+        "Als war ich jung, spielte Fußball ich.",
+        "Als ich jung war, spielte ich Fußball."
+      ],
+      "answer": "Als ich jung war, spielte ich Fußball.",
+      "sourceTaskIds": [
+        "DL-B1-01-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "Als ich war jung, spielte ich Fußball.",
+          "correct": false,
+          "finding": "war ليس آخر التابعة."
+        },
+        {
+          "text": "Als war ich jung, spielte Fußball ich.",
+          "correct": false,
+          "finding": "war قبل الفاعل و Fußball ich في الرئيسية لا الترتيب المطلوب."
+        },
+        {
+          "text": "Als ich jung war, spielte ich Fußball.",
+          "correct": true,
+          "finding": "war آخر التابعة؛ spielte ich بعد الفاصلة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q05",
+      "text": "ما المعنى الأنسب للجملة **Als ich 18 war, zog ich um**؟",
+      "finding": "تحدد als هنا فترة ماضية وقع فيها الانتقال الموصوف، لا عادة مع كل بلوغ 18 أو شرطًا مستقبليًا. لا نثبت من الجملة عدد انتقالات الشخص طوال حياته.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "كنت أنتقل كلما بلغت 18 عامًا.",
+        "انتقلت مرةً في فترة ماضية محددة.",
+        "سأنتقل إذا بلغت 18 عامًا."
+      ],
+      "answer": "انتقلت مرةً في فترة ماضية محددة.",
+      "sourceTaskIds": [
+        "DL-B1-01-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "كنت أنتقل كلما بلغت 18 عامًا.",
+          "correct": false,
+          "finding": "لا بلوغ 18 متكررًا كل مرة."
+        },
+        {
+          "text": "انتقلت مرةً في فترة ماضية محددة.",
+          "correct": true,
+          "finding": "انتقال موصوف في فترة ماضية محددة؛ لا تعداد انتقالات الحياة."
+        },
+        {
+          "text": "سأنتقل إذا بلغت 18 عامًا.",
+          "correct": false,
+          "finding": "ليست جملة شرط ومستقبل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q06",
+      "text": "Wie alt war Lina, als sie die Kamera bekam?",
+      "finding": "يذكر نص القراءة أنها حصلت على الكاميرا عندما كان عمرها 14 عامًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "Sie war 16 Jahre alt.",
+        "Sie war 17 Jahre alt.",
+        "Sie war 14 Jahre alt."
+      ],
+      "answer": "Sie war 14 Jahre alt.",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Sie war 16 Jahre alt.",
+          "correct": false,
+          "finding": "16 من مثال القاعدة لا عمر لينا في القراءة."
+        },
+        {
+          "text": "Sie war 17 Jahre alt.",
+          "correct": false,
+          "finding": "17 لكريم في الحوار لا عمر لينا."
+        },
+        {
+          "text": "Sie war 14 Jahre alt.",
+          "correct": true,
+          "finding": "14 في أول جملة من القراءة؛ حُذفت فرضية أول كاميرا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q07",
+      "text": "Was fotografierte Lina oft, wenn sie ihre Großeltern besuchte?",
+      "finding": "يقول النص إنها كانت تصوّر الحديقة والحيوانات كثيرًا عند زيارة جدّيها؛ oft لا تعني في كل زيارة بلا استثناء.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "Den Garten und die Tiere.",
+        "Den Park und ihre Freunde.",
+        "Die Webseite ihres Vereins."
+      ],
+      "answer": "Den Garten und die Tiere.",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Den Garten und die Tiere.",
+          "correct": true,
+          "finding": "الحديقة والحيوانات صريحان."
+        },
+        {
+          "text": "Den Park und ihre Freunde.",
+          "correct": false,
+          "finding": "الحديقة والأصدقاء ليست الإجابة في القراءة."
+        },
+        {
+          "text": "Die Webseite ihres Vereins.",
+          "correct": false,
+          "finding": "تصوير للموقع لاحقًا، لا أنها صورت صفحة الويب عند الجدين."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q08",
+      "text": "Wo zeigte Lina einmal ihre Bilder?",
+      "finding": "المشهد المذكور: عرضت صورها في احتفال مدرسي. لا يحدد النص أول مكان عرض في حياتها، ولا يؤكد نشر صور الموقع فعليًا.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "In einem Fotokurs.",
+        "Auf der Webseite ihres Vereins.",
+        "Bei einem Schulfest."
+      ],
+      "answer": "Bei einem Schulfest.",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "In einem Fotokurs.",
+          "correct": false,
+          "finding": "لا يقول إن عرض المشهد كان في دورة."
+        },
+        {
+          "text": "Auf der Webseite ihres Vereins.",
+          "correct": false,
+          "finding": "الغرض الحالي صنع صور للموقع، لا إثبات عرض ذلك المشهد على الموقع."
+        },
+        {
+          "text": "Bei einem Schulfest.",
+          "correct": true,
+          "finding": "الاحتفال المدرسي هو المشهد المذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q09",
+      "text": "Wofür macht Lina inzwischen auch Bilder?",
+      "finding": "تصنع الآن صورًا أيضًا لموقع ناديها؛ für يحدد الغرض، لا يثبت النشر الفعلي.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "Für ein Reisebüro.",
+        "Für die Webseite ihres Vereins.",
+        "Für die Zeitung ihrer Stadt."
+      ],
+      "answer": "Für die Webseite ihres Vereins.",
+      "sourceTaskIds": [
+        "DL-B1-01-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Für ein Reisebüro.",
+          "correct": false,
+          "finding": "مكتب سفر غير مذكور."
+        },
+        {
+          "text": "Für die Webseite ihres Vereins.",
+          "correct": true,
+          "finding": "لموقع ناديها، دون ضمان النشر."
+        },
+        {
+          "text": "Für die Zeitung ihrer Stadt.",
+          "correct": false,
+          "finding": "صحيفة المدينة غير مذكورة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-Q10",
+      "text": "في الجملة التالية استُعمل الرابط خطأً لأن الحديث عن أول زيارة محددة. ما التصحيح المناسب؟ **Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.**",
+      "finding": "الزيارة الأولى حدث ماضٍ واحد؛ لذا نستخدم als بدل wenn.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "PAST",
+        "JOIN",
+        "REMEMBER",
+        "EVENT",
+        "CONTRAST"
+      ],
+      "options": [
+        "Als ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+        "Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+        "Wenn ich zum ersten Mal nach Wien komme, war ich sehr aufgeregt."
+      ],
+      "answer": "Als ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+      "sourceTaskIds": [
+        "DL-B1-01-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Als ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+          "correct": true,
+          "finding": "Als لتلك الزيارة الأولى المحددة في الماضي."
+        },
+        {
+          "text": "Wenn ich zum ersten Mal nach Wien kam, war ich sehr aufgeregt.",
+          "correct": false,
+          "finding": "يبقي الرابط غير المناسب للسياق المحدد."
+        },
+        {
+          "text": "Wenn ich zum ersten Mal nach Wien komme, war ich sehr aufgeregt.",
+          "correct": false,
+          "finding": "Wenn مع komme والماضي war لا يصلح التصحيح المطلوب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-P01",
+      "text": "اكتب خمس جمل مترابطة عن هواية لشخصية متخيّلة: جملة بـals لتجربة أولى أو حدث ماضٍ محدد؛ جملة لتفصيل ما حدث؛ جملة بـwenn لعادة متكررة في الماضي؛ جملة عن الهواية الآن؛ وجملة فيها **Ich erinnere mich an ...** لذكرى مرتبطة بها. ضع الفعل المصرف في نهاية التابعة، واقرأ الفقرة جهرًا. لا يلزم تسجيلها أو سرد تجربة شخصية.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحد الحرفي والإقرار ليسا تصحيحًا آليًا للغة أو النطق.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "REMEMBER"
+      ],
+      "criteria": {
+        "taskCompletion": "خمس جمل تتضمن تجربة محددة وتفصيلًا وعادة متكررة وحال الهواية الآن وذكرى، مع قراءة الفقرة جهرًا.",
+        "meaningClarity": "تتصل الجمل بهواية الشخصية الخيالية، ويُفهم الفرق بين التجربة والعادة والحال الآن وما تتذكره.",
+        "targetSkill": "als للحدث الماضي المحدد وwenn للعادة الماضية، مع الفعل المصرف آخر التابعة ورئيسية سليمة؛ Ich erinnere mich an مع Akkusativ."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل تتضمن تجربة محددة وتفصيلًا وعادة متكررة وحال الهواية الآن وذكرى، مع قراءة الفقرة جهرًا.",
+          "finding": "خمس جمل بمطالب محددة والجهر؛ النموذج 230 حرفًا فوق 180، لا خمس جمل غير مرتبطة."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تتصل الجمل بهواية الشخصية الخيالية، ويُفهم الفرق بين التجربة والعادة والحال الآن وما تتذكره.",
+          "finding": "تجربة الدورة وتفصيلها وعادة الرسم والحال الآن والذكرى موضوع واحد خيالي."
+        },
+        {
+          "key": "targetSkill",
+          "text": "als للحدث الماضي المحدد وwenn للعادة الماضية، مع الفعل المصرف آخر التابعة ورئيسية سليمة؛ Ich erinnere mich an مع Akkusativ.",
+          "finding": "als للحدث المحدد و wenn للتكرار، و an diesen Kurs في Akkusativ؛ الفعل أخيرًا والرئيسية سليمة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-P02",
+      "text": "اكتب حوارًا خياليًا من أربعة أسطر: سؤال عن تجربة أولى لهواية؛ جواب يبدأ بـals يصف تلك التجربة في الماضي؛ سؤال عن نشاط تكرر في الماضي؛ وجواب يبدأ بـwenn يصف العادة ويضيف **Ich erinnere mich an ...** لذكرى مرتبطة بها. يمكن أن يحتوي الجواب الأخير جملتين. اكتب دوري الحوار بنفسك، ثم اقرأهما جهرًا دون شريك أو تسجيل.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحد الحرفي والإقرار ليسا تصحيحًا آليًا للغة أو النطق.",
+      "sourceIds": [
+        "ALS",
+        "WENN",
+        "SUB",
+        "REMEMBER"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أسطر، سؤالان وجوابان، عن تجربة أولى وعادة وذكرى لهواية خيالية؛ قراءة الدورين جهرًا.",
+        "meaningClarity": "كل جواب يناسب سؤاله؛ تتضح التجربة الأولى والعادة وما تتذكره الشخصية، ويمكن أن يضم الجواب الأخير جملتين.",
+        "targetSkill": "جواب بـals للحدث المحدد وجواب بـwenn للعادة، مع الفعل المصرف آخر التابعة ورئيسية سليمة؛ Ich erinnere mich an مع Akkusativ."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أسطر، سؤالان وجوابان، عن تجربة أولى وعادة وذكرى لهواية خيالية؛ قراءة الدورين جهرًا.",
+          "finding": "أربعة أسطر للسؤالين والجوابين؛ نموذج 290 حرفًا فوق 220، والجواب الأخير قد يضم جملتين، والدوران جهرًا."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "كل جواب يناسب سؤاله؛ تتضح التجربة الأولى والعادة وما تتذكره الشخصية، ويمكن أن يضم الجواب الأخير جملتين.",
+          "finding": "السؤال الأول متى بدأ والثاني عن العادة؛ كل جواب يناسب نوع السؤال وتظهر الذكرى."
+        },
+        {
+          "key": "targetSkill",
+          "text": "جواب بـals للحدث المحدد وجواب بـwenn للعادة، مع الفعل المصرف آخر التابعة ورئيسية سليمة؛ Ich erinnere mich an مع Akkusativ.",
+          "finding": "جواب Als وآخر Wenn بماضٍ وترتيب سليم وتذكّر an diese Nachmittage؛ لا شريك ولا تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-01-AUD-PHR-01",
+      "text": "Das Erlebnis, die Erlebnisse. Der Verein, die Vereine. Das Schachturnier, die Schachturniere. Die Erinnerung, die Erinnerungen. Die Freizeit. Das Hobby, die Hobbys. Damals. Inzwischen. Zum ersten Mal. Sich erinnern an. Teilnehmen an. Regelmäßig. Allein und gemeinsam.",
+      "finding": "فحص نصي للأصل وموضعه وأصواته؛ العبارات والحالة والمسارات محفوظة. الأعداد المكتوبة لفظًا تطابق الأرقام 16/17/14، و allein und gemeinsam تعديد للكلمتين المفصولتين بشرطة مائلة في الجدول. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Das Erlebnis, die Erlebnisse.",
+          "finding": "Erlebnis محايد وجمعه Erlebnisse؛ تجربة معيشة مؤثرة، لا دائمًا سعيدة ولا مرادفًا تامًا للذكرى."
+        },
+        {
+          "text": "Der Verein, die Vereine.",
+          "finding": "Verein مذكر وجمعه Vereine؛ نادي أو جمعية، لا موقع الويب نفسه."
+        },
+        {
+          "text": "Das Schachturnier, die Schachturniere.",
+          "finding": "Schachturnier محايد وجمعه Schachturniere؛ بطولة، والمشاركة لا تعني الفوز."
+        },
+        {
+          "text": "Die Erinnerung, die Erinnerungen.",
+          "finding": "Erinnerung مؤنث وجمعها Erinnerungen؛ ذكرى، لا الواقعة المعيشة نفسها."
+        },
+        {
+          "text": "Die Freizeit.",
+          "finding": "Freizeit مؤنث؛ وقت الفراغ هو المعنى السياقي المفرد هنا، والشرطة ليست ادعاء منع أي استعمال آخر."
+        },
+        {
+          "text": "Das Hobby, die Hobbys.",
+          "finding": "Hobby محايد وجمعه Hobbys؛ الهواية لا العمل الإلزامي."
+        },
+        {
+          "text": "Damals.",
+          "finding": "damals ظرف بمعنى آنذاك في سياق ماضٍ؛ لا تصريف جمع."
+        },
+        {
+          "text": "Inzwischen.",
+          "finding": "inzwischen قد تعني في الأثناء أو الحال الآن بعد تغير؛ كلا المعنيين المذكورين مقيد بالسياق."
+        },
+        {
+          "text": "Zum ersten Mal.",
+          "finding": "zum ersten Mal للمرة الأولى بالنسبة للنشاط المقصود، لا دليل على عمر بعينه دون النص."
+        },
+        {
+          "text": "Sich erinnern an.",
+          "finding": "sich erinnern an مصدر انعكاسي، و erinnert sich صيغة مفرد؛ ich erinnere mich و du erinnerst dich في الأمثلة."
+        },
+        {
+          "text": "Teilnehmen an.",
+          "finding": "teilnehmen an مصدر، و nimmt teil مفرد؛ an مع Dativ لا وجهة مكانية هنا."
+        },
+        {
+          "text": "Regelmäßig.",
+          "finding": "regelmäßig بانتظام؛ لا يعني كل يوم أو عدد مرات محددًا."
+        },
+        {
+          "text": "Allein und gemeinsam.",
+          "finding": "allein وحده و gemeinsam معًا؛ مفهومان مختلفان، و und في التسجيل تجمع قائمتين لا تجعل المعنيين مترادفين."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-01-AUD-MODEL-01",
+      "text": "Als ich sechzehn Jahre alt war, bekam ich meine erste Kamera. Als wir zum ersten Mal allein reisten, waren wir nervös. Wenn Lina am Wochenende Zeit hatte, fotografierte sie im Park. Wenn ich heute frei habe, treffe ich meine Freunde.",
+      "finding": "فحص نصي للأصل وموضعه وأصواته؛ العبارات والحالة والمسارات محفوظة. الأعداد المكتوبة لفظًا تطابق الأرقام 16/17/14، و allein und gemeinsam تعديد للكلمتين المفصولتين بشرطة مائلة في الجدول. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Als ich sechzehn Jahre alt war, bekam ich meine erste Kamera.",
+          "finding": "سن 16 في مثال متكلم غير مسمى، لا عمر لينا في القراءة أو كريم في الحوار؛ هنا يقول صراحة erste Kamera."
+        },
+        {
+          "text": "Als wir zum ersten Mal allein reisten, waren wir nervös.",
+          "finding": "رحلة أولى محددة في الماضي؛ reisten و waren مع wir، وليس شرطًا حاضرًا."
+        },
+        {
+          "text": "Wenn Lina am Wochenende Zeit hatte, fotografierte sie im Park.",
+          "finding": "فراغ نهاية الأسبوع مناسبات ماضية متكررة مع wenn؛ التصوير في الحديقة، لا يعني كل عطلة بلا استثناء."
+        },
+        {
+          "text": "Wenn ich heute frei habe, treffe ich meine Freunde.",
+          "finding": "شرط فراغ اليوم مع Präsens؛ يثبت أن عنوان الأصل المختصر «wenn للعادة» ليس تعريفًا حصريًا للقاعدة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-01-AUD-DLG-01",
+      "text": "Erinnerst du dich an deinen ersten Fotokurs? Ja. Als ich siebzehn war, habe ich zum ersten Mal an einem Kurs teilgenommen. Was hast du dort gemacht? Wir haben Porträts fotografiert. Wenn wir am Wochenende Zeit hatten, sind wir zusammen in den Park gegangen. Machst du das noch? Ja, inzwischen fotografiere ich auch auf Reisen.",
+      "finding": "فحص نصي للأصل وموضعه وأصواته؛ العبارات والحالة والمسارات محفوظة. الأعداد المكتوبة لفظًا تطابق الأرقام 16/17/14، و allein und gemeinsam تعديد للكلمتين المفصولتين بشرطة مائلة في الجدول. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Erinnerst du dich an deinen ersten Fotokurs?",
+          "finding": "Lina تسأل Karim عن دورة التصوير الأولى، مع dich و an deinen ersten Fotokurs في Akkusativ."
+        },
+        {
+          "text": "Ja. Als ich siebzehn war, habe ich zum ersten Mal an einem Kurs teilgenommen.",
+          "finding": "Karim يذكر عمر 17 وأول مشاركة في دورة؛ المساعد habe بعد التابعة و teilgenommen في نهاية الرئيسية."
+        },
+        {
+          "text": "Was hast du dort gemacht?",
+          "finding": "سؤال عما فعل هناك؛ Perfekt طبيعي ولا يطلب مكانًا آخر."
+        },
+        {
+          "text": "Wir haben Porträts fotografiert. Wenn wir am Wochenende Zeit hatten, sind wir zusammen in den Park gegangen.",
+          "finding": "تصوير Porträts ثم عادة الذهاب معًا للحديقة عند توفر الوقت؛ haben fotografiert مقابل sind gegangen. لا عدد دورات أو أسماء أشخاص مفترض."
+        },
+        {
+          "text": "Machst du das noch?",
+          "finding": "Lina تسأل هل ما زال يمارس ذلك؛ ليس طلب موعد أو مشاركة جديدة."
+        },
+        {
+          "text": "Ja, inzwischen fotografiere ich auch auf Reisen.",
+          "finding": "Karim يؤكد التصوير الآن أيضًا في السفر؛ لا يثبت أنه توقف عن التصوير في الحديقة أو عدد رحلاته."
+        }
+      ],
+      "voiceIds": [
+        "voice-00",
+        "voice-03",
+        "voice-00",
+        "voice-03",
+        "voice-00",
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-01-AUD-READ-01",
+      "text": "Als Lina vierzehn Jahre alt war, bekam sie eine Kamera von ihrer Tante. Sie war sofort neugierig. Wenn sie ihre Großeltern besuchte, fotografierte sie oft den Garten und die Tiere. Einmal zeigte sie ihre Bilder bei einem Schulfest. Ihre Lehrerin lobte sie. Seitdem nimmt Lina regelmäßig an Fotokursen teil. Inzwischen macht sie auch Bilder für die Webseite ihres Vereins.",
+      "finding": "فحص نصي للأصل وموضعه وأصواته؛ العبارات والحالة والمسارات محفوظة. الأعداد المكتوبة لفظًا تطابق الأرقام 16/17/14، و allein und gemeinsam تعديد للكلمتين المفصولتين بشرطة مائلة في الجدول. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Als Lina vierzehn Jahre alt war, bekam sie eine Kamera von ihrer Tante.",
+          "finding": "حصلت لينا عند 14 على كاميرا من Tante؛ ليس 16 أو 17، ولا يصرح بأنها أول كاميرا أو شراء أو هدية."
+        },
+        {
+          "text": "Sie war sofort neugierig.",
+          "finding": "أصبحت فضولية فورًا؛ وصف استجابة لا إثبات موهبة أو إحراز جائزة."
+        },
+        {
+          "text": "Wenn sie ihre Großeltern besuchte, fotografierte sie oft den Garten und die Tiere.",
+          "finding": "كانت تصور الحديقة والحيوانات كثيرًا حين تزور الجدين؛ عادة مع wenn و oft لا كل زيارة حتمًا."
+        },
+        {
+          "text": "Einmal zeigte sie ihre Bilder bei einem Schulfest.",
+          "finding": "مشهد عرض في احتفال مدرسي؛ Einmal لا يخبرنا أول مكان عرض في كامل حياتها."
+        },
+        {
+          "text": "Ihre Lehrerin lobte sie.",
+          "finding": "المعلمة أثنت عليها؛ لا تقييم معين أو جائزة أو ضمان سبب قرار التسجيل."
+        },
+        {
+          "text": "Seitdem nimmt Lina regelmäßig an Fotokursen teil.",
+          "finding": "منذ ذلك الحين تشارك بانتظام في دورات؛ nimmt … teil مع an Fotokursen، لا يقول إنها أنهت كل دورة أو عددها."
+        },
+        {
+          "text": "Inzwischen macht sie auch Bilder für die Webseite ihres Vereins.",
+          "finding": "تصنع صورًا أيضًا لموقع ناديها؛ لا يثبت النص أن صور الاحتفال هي عينها صور الموقع أو أن النشر وقع."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-01-AUD-LST-01",
+      "text": "Als ich ein Kind war, spielte ich gern Schach mit meinem Großvater. Wenn wir uns am Sonntag trafen, spielten wir oft mehrere Partien. Später habe ich an einem Schachturnier teilgenommen. Heute spiele ich nicht mehr so oft, aber ich erinnere mich gern an diese Zeit.",
+      "finding": "فحص نصي للأصل وموضعه وأصواته؛ العبارات والحالة والمسارات محفوظة. الأعداد المكتوبة لفظًا تطابق الأرقام 16/17/14، و allein und gemeinsam تعديد للكلمتين المفصولتين بشرطة مائلة في الجدول. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Als ich ein Kind war, spielte ich gern Schach mit meinem Großvater.",
+          "finding": "الطفولة فترة مع als، والشطرنج مع الجد نشاط قد يتكرر داخلها؛ ليس حكمًا بأن اللعب حدث مرة واحدة."
+        },
+        {
+          "text": "Wenn wir uns am Sonntag trafen, spielten wir oft mehrere Partien.",
+          "finding": "عند لقاءات الأحد لعبا غالبًا عدة مباريات؛ لا عدد محدد أو تأكيد كل أحد دون انقطاع."
+        },
+        {
+          "text": "Später habe ich an einem Schachturnier teilgenommen.",
+          "finding": "شارك لاحقًا في بطولة شطرنج مع haben+teilgenommen؛ لا فوز أو مدينة أو عمر أو صلة باسم Karim."
+        },
+        {
+          "text": "Heute spiele ich nicht mehr so oft, aber ich erinnere mich gern an diese Zeit.",
+          "finding": "الآن يلعب أقل ويتذكر تلك الفترة بسرور؛ nicht mehr so oft لا تعني أنه توقف تمامًا."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-01-daily-life-hobbies-experiences.md": "58173634197c203b09c28a2548cbb0bfa487b7e526c69abb2763141ce3222b9f",
+    "content/B1/lesson-01-daily-life-hobbies-experiences.assessment.json": "6221614cf794f7d1370ee44397a7d2b3047fb992dc624cff357d91f1ece386e4"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-01-AUD-PHR-01": "1d18b86e5426aba8920cce4755e4499864177c564ab0be7ddfec08f93e807c31",
+    "DL-B1-01-AUD-MODEL-01": "caac7cee56bf6f42c1df85c354bd7933fe5a1dd08655963b6717bb57a7ee2d64",
+    "DL-B1-01-AUD-DLG-01": "faba76bf96e08fba4371109908ba07e3745e6f0e2024867d6ee7d9946f07b01a",
+    "DL-B1-01-AUD-READ-01": "3077fd94fd2cc3d8f0b62d0eef1be0806da68fb34653f63d746133dacf9a20c3",
+    "DL-B1-01-AUD-LST-01": "4b67bfb53faa5ff2435bfc2c45b9daef2617e13b47af9978de1964349f8718b0"
+  },
+  "preservation": {
+    "baseline": "c5876d7d5e0be70c3baa48bc88926737c368209f",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-B1-01-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-01-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-01-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "otherAudioRegisterRowsUnchanged": 214,
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 115,
+    "existingAudioConsistencyAssertionsUnchanged": true
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 2008263,
+    "cacheVersion": "v78",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserResult": "PASS all five suites; first serial run, no application-test retry",
+    "axeScreenStates": 137,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 93,
+    "axeIncompleteNodeOccurrences": 210,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; CR29 filechooser intermittency remains unresolved, not claimed fixed."
+    ],
+    "browserEnvironment": "Locked npm dependencies plus Sparticuz143.0.4 and bundled al2023 libraries outside Git; no package/lock changes.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 31
+    },
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS after restoring original LF CSV line endings and removing added trailing spaces",
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Historical filechooser intermittency unresolved; successful runs are not a fix.",
+      "Evidence checks are not automatic language/pronunciation assessment.",
+      "Prior A2.8/A2.9 recorded-text issues remain documented and unchanged.",
+      "No human reviewer prerequisite; no remote UI or Production test claimed."
+    ]
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "34e596a17f500cc83364a917268179a5d05065d6",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false
+  },
+  "campaign": {
+    "reviewedLessons": 30,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 23,
+    "next": "CR32/B1.2"
+  }
+}
