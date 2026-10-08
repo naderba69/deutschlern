@@ -1169,8 +1169,23 @@
   "delivery": {
     "branch": "arena/01a1036f-deutschlern",
     "baselineCommit": "5377df3f9c224081c37d29f35d20d961cb49e6bd",
-    "status": "local_checked_pending_push",
-    "merged": false,
-    "deploymentConfirmed": false
+    "implementationCommit": "8020497c6dd9d9ccd27c44f3ee38921c13fc0c25",
+    "remoteImplementationHeadVerified": true,
+    "cleanAfterImplementationPush": true,
+    "prNumber": 1,
+    "prState": "OPEN",
+    "prHeadAtCheck": "8020497c6dd9d9ccd27c44f3ee38921c13fc0c25",
+    "mergedAt": null,
+    "combinedStatusAtCheck": "pending",
+    "contextsAtCheck": [
+      {
+        "context": "Vercel",
+        "state": "pending"
+      }
+    ],
+    "githubDeploymentsForImplementation": [],
+    "actionsRunsAtCheck": [],
+    "deploymentConfirmed": false,
+    "receipt": "Separate documentation commit after verified implementation push; final receipt hash is in git log."
   }
 }
