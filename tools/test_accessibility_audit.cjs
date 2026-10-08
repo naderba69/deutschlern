@@ -176,6 +176,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A2.7-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A2.7-practical-form-fixture', width);
+  // CR26: spoken fictional news and written passive transformation.
+  await page.evaluate(() => openLesson('a2-08-media-news-passive'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.8-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.8-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

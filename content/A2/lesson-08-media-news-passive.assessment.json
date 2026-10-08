@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a2-08-v1",
+    "version": "a2-08-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+      "CR26: Vorgangspassiv im Präsens، مع المطابقة والحالة الرفعية بعد التحويل؛ تمييز وصف الحالة بـsein والمستقبل بـwerden+مصدر.",
+      "Q06: تصحيح الاقتباس إلى Ein neuer Platz؛ Q10 مقيد بصيغة الحدث لا الحالة. Q04→T07 وQ10→T04 وP02→T03؛ الخيارات الثلاثون والمفاتيح و80% محفوظة.",
+      "P01 ثلاث جمل خيالية مع الجهر وP02 تحويل ثلاث جمل كتابة فقط؛ نماذج ومعايير مطابقة. تنبيه مكتوب لتعداد الضمائر الملتبس في MODEL، دون تغيير تسجيل أو تفريغ أو اعتماد جديد."
     ]
   },
   "quiz": [
@@ -27,7 +27,7 @@
         "DL-A2-08-G01"
       ],
       "skillTags": [
-        "مفردات الإعلام",
+        "مطابقة werden",
         "اختيار محدد"
       ],
       "prompt": "أكمل: Die Nachrichten ___ um acht Uhr gesendet.",
@@ -48,7 +48,7 @@
         "DL-A2-08-G01"
       ],
       "skillTags": [
-        "werden",
+        "Partizip II",
         "اختيار محدد"
       ],
       "prompt": "ما صيغة Partizip II للفعل **veröffentlichen**؟",
@@ -84,7 +84,7 @@
     {
       "id": "DL-A2-08-Q04",
       "sourceTaskIds": [
-        "DL-A2-08-T04"
+        "DL-A2-08-T07"
       ],
       "objectiveIds": [
         "DL-A2-08-G01"
@@ -100,7 +100,7 @@
         "لأن الفاعل يجب أن يكون ich."
       ],
       "answerIndex": 1,
-      "explanation": "يبرز المبني للمجهول الحدث عندما يكون الفاعل غير معروف أو غير مهم."
+      "explanation": "يبرز الحدث بدل منفذه، وقد يكون المنفذ معروفًا لكنه غير مذكور أو ليس محور الخبر؛ لا تعني الصيغة أن الخبر صحيح تلقائيًا."
     },
     {
       "id": "DL-A2-08-Q05",
@@ -142,7 +142,7 @@
         "ساحة جديدة."
       ],
       "answerIndex": 2,
-      "explanation": "يذكر الخبر أن einen neuen Platz im Zentrum wird geplant."
+      "explanation": "يقول النص: Ein neuer Platz im Zentrum wird geplant. الاسم Ein neuer Platz في الرفع بعد التحويل؛ التخطيط لا يعني أن الساحة بُنيت."
     },
     {
       "id": "DL-A2-08-Q07",
@@ -177,14 +177,14 @@
         "فهم خبر قصير",
         "اختيار محدد"
       ],
-      "prompt": "في **Zwei Haltestellen werden gebaut**، كم محطة ستُبنى؟",
+      "prompt": "في **Zwei Haltestellen werden gebaut**، ما عدد محطات التوقف المذكورة؟",
       "options": [
         "محطتان.",
         "محطة واحدة.",
         "أربع محطات."
       ],
       "answerIndex": 0,
-      "explanation": "الجملة تذكر zwei Haltestellen."
+      "explanation": "zwei Haltestellen تعني محطتين. الصيغة مضارع مبني للمجهول؛ لا نستنتج المستقبل من werden وحدها."
     },
     {
       "id": "DL-A2-08-Q09",
@@ -210,7 +210,7 @@
     {
       "id": "DL-A2-08-Q10",
       "sourceTaskIds": [
-        "DL-A2-08-T08"
+        "DL-A2-08-T04"
       ],
       "objectiveIds": [
         "DL-A2-08-G01"
@@ -219,14 +219,14 @@
         "تصريف المبني للمجهول",
         "اختيار محدد"
       ],
-      "prompt": "أكمل: Am Freitag ___ eine Veranstaltung ___. (organisieren)",
+      "prompt": "أكمل بصيغة الحدث في المضارع **Vorgangspassiv im Präsens**، لا وصف الحالة: Am Freitag ___ eine Veranstaltung ___. (organisieren)",
       "options": [
         "werden … organisieren",
         "wird … organisiert",
         "ist … organisiert"
       ],
       "answerIndex": 1,
-      "explanation": "الفاعل المفرد eine Veranstaltung يأخذ wird، وPartizip II هو organisiert."
+      "explanation": "eine Veranstaltung مفرد فتأخذ wird، وPartizip II هو organisiert. ist … organisiert قد يصف الحالة، لكنه ليس صيغة الحدث المطلوبة."
     }
   ],
   "performanceTasks": [
@@ -242,11 +242,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "اكتب ثلاثة أخبار قصيرة ومحايدة عن حدث محلي، مثل جلسة أو افتتاح أو إعلان. استخدم المبني للمجهول في المضارع في كل جملة، ثم اقرأ الأخبار بصوت واضح.",
+      "prompt": "اكتب ثلاث جمل لخبر محلي خيالي: الجملة1 تنظيم جلسة يوم الأربعاء؛ الجملة2 الإجابة عن الأسئلة؛ الجملة3 نشر المعلومات في اليوم التالي على صفحة المدينة. استعمل Vorgangspassiv im Präsens مع werden وPartizip II في الجمل الثلاث، وراعِ المفرد والجمع، ثم اقرأ الجميع بصوت مرتفع. لا تتحدث عن حدث حقيقي أو تنشر الخبر، ولا شريك أو تسجيل مطلوب.",
       "criteria": {
-        "taskCompletion": "تتضمن الاستجابة ثلاثة أخبار مفهومة عن أحداث.",
-        "meaningClarity": "يمكن فهم ما وقع أو سيقع دون حاجة لمعرفة الفاعل.",
-        "targetSkill": "يستخدم werden بحسب الفاعل ويضع Partizip II في نهاية الجملة."
+        "taskCompletion": "ثلاث جمل عن تنظيم الجلسة الأربعاء والإجابة عن الأسئلة ونشر المعلومات في اليوم التالي على صفحة المدينة؛ قرأت الجميع جهرًا.",
+        "meaningClarity": "الحدث واليوم ووسيلة النشر واضحة وفق المعطيات الخيالية؛ لا ادعاء نشر خبر حقيقي أو تحديد منفذ غير مذكور.",
+        "targetSkill": "werden بحسب الاسم: wird مع Sitzung وwerden مع Fragen/Informationen، وPartizip II في نهاية كل جملة."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,7 +256,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 50,
+        "minimumResponseCharacters": 130,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -264,20 +264,19 @@
     {
       "id": "DL-A2-08-P02",
       "sourceTaskIds": [
-        "DL-A2-08-T08"
+        "DL-A2-08-T03"
       ],
       "objectiveIds": [
         "DL-A2-08-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "حوّل ثلاث معلومات معلومة الفاعل إلى أخبار تركز على الحدث، مثل: Die Stadt organisiert eine Sitzung. اكتب الصيغ بالمبني للمجهول واقرأها بصوت مرتفع.",
+      "prompt": "أعد كتابة الجمل1–3 من تمرين3 كاملة في Vorgangspassiv im Präsens، كتابة فقط: نشر التقرير، وبث الأخبار، ودعوة السكان. ابدأ بالأسماء المعطاة Der Bericht وDie Nachrichten وDie Einwohner، واحفظ التعريف والعدد والحدث، واحذف منفذ الفعل دون إضافة von. اكتب ثلاث جمل تامة، لا الفراغات وحدها؛ لا جهر أو تسجيل أو شريك مطلوب.",
       "criteria": {
-        "taskCompletion": "يقدم المتعلم ثلاث جمل محوّلة.",
-        "meaningClarity": "يبقى الحدث والمفعول به واضحين بعد التحويل.",
-        "targetSkill": "يختار wird أو werden وفق الاسم ويضع Partizip II في آخر الجملة."
+        "taskCompletion": "ثلاث جمل تامة محولة من البنود1–3، كتابة فقط، عن التقرير والأخبار والسكان، دون ذكر المنفذ.",
+        "meaningClarity": "التعريف والعدد والحدث محفوظة؛ Der Bericht في الرفع بدل den Bericht، ولا تبديل بين الأخبار والتقرير أو السكان.",
+        "targetSkill": "wird veröffentlicht وwerden gesendet وwerden eingeladen، مع Partizip II في نهاية كل جملة لا المصدر."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,8 +286,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 50,
-        "speakAloud": true,
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
         "audioRequired": false
       }
     }
