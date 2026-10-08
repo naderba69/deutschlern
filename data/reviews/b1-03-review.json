@@ -1,0 +1,2238 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-03-work-communication-konjunktiv",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-03-v2",
+  "unitCount": 110,
+  "exerciseSubItemCount": 40,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "K2",
+      "title": "Lingolia — Konjunktiv I und II",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/konjunktiv",
+      "scope": "صيغ würde/hätte/wäre والاستعمال المهذب الحذر؛ لا ننقل المقدمة عن عدم الإمكان إلى كل طلب مهذب. قُرئ الجزآن كاملين، ولا نجعل Konjunktiv I أو الماضي الافتراضي مطلب إنتاج إضافيًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "الفاصلة ونهاية التابعة بالمصرف، ومنها dass؛ مصدر الرئيسية قبل التابعة ليس آخر الجملة المركبة كلها. لا اعتماد لتعميمات فقرات خارج النطاق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "QUESTION",
+      "title": "Lingolia — Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen",
+      "scope": "السؤال المحايد نعم/لا يبدأ بالمصرف، ومع أداة سؤال يليها المصرف. هذا نمط التدريب لا إنكار لأسئلة الخبر بنبرة الاستفهام.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEPARATE",
+      "title": "Lingolia — Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "الفصل في الرئيسية البسيطة لا في المصدر؛ vor-/ab- تدعم vorschlagen/abwarten. بادئة über- ليست كافية وحدها للحكم، لذلك استُخدم مدخل übernehmen المحدد أيضًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "APPLY",
+      "title": "Duden — bewerben",
+      "url": "https://www.duden.de/rechtschreibung/bewerben",
+      "scope": "sich um eine Stelle bewerben و bei einer Firma؛ يذكر أيضًا auf eine Stelle، فلا ندعي حصر الاستعمال في um. الإطار المتعلم انعكاسي لا bewerben التجاري بمعنى يعلن عن.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "TAKE",
+      "title": "Duden — übernehmen",
+      "url": "https://www.duden.de/rechtschreibung/uebernehmen_uebernommen",
+      "scope": "قبول مهمة والاستعداد لأدائها؛ übernimmt/übernahm/hat übernommen، لا البادئة المنفصلة في المدخل الآخر. قبول تولي المهمة لا يثبت إتمامها.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "DEADLINE",
+      "title": "Duden — Frist",
+      "url": "https://www.duden.de/rechtschreibung/Frist",
+      "scope": "مهلة زمنية محددة لغرض، ويمكن تمديدها؛ ترجمة الموعد النهائي وحدها تضيق المعنى. الجمع Fristen، دون أحكام قانونية على طلب التوظيف الخيالي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WITHIN",
+      "title": "Duden — innerhalb",
+      "url": "https://www.duden.de/rechtschreibung/innerhalb_innerhalb_einer_Sache",
+      "scope": "داخل فترة/خلال، مع Genitiv في innerhalb der nächsten zwei Wochen؛ ليست بعد أسبوعين ولا تاريخًا معلومًا بلا مرجع زمني.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "المصرف مع مصدر، والفروق بين إمكان ورغبة وطلب؛ könnte صيغة können و möchte صيغة مهذبة قائمة أصلًا. kann تحديث التقويم لا يثبت حدوث التحديث.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia — Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "المصرف في الموقع الثاني والمصدر ضمن نهاية الجزء الرئيسي في الأمثلة البسيطة؛ نحصر الاستشهاد في إطار الجملة ولا ننسخ تعميمات كل ترتيب للمفاعيل.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/konjunktiv2",
+      "access": "not_found_body_despite_tool_success",
+      "reason": "ليست مادة صالحة؛ قُرئت الصفحة الصحيحة لاحقًا كاملة. لا تُحسب نتائج البحث أوPDF مرتبطة لم تُقرأ."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/uebernehmen",
+      "access": "not_found_body_despite_tool_success",
+      "reason": "ليست مادة صالحة؛ قُرئت الصفحة الصحيحة لاحقًا كاملة. لا تُحسب نتائج البحث أوPDF مرتبطة لم تُقرأ."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/innerhalb",
+      "access": "not_found_body_despite_tool_success",
+      "reason": "ليست مادة صالحة؛ قُرئت الصفحة الصحيحة لاحقًا كاملة. لا تُحسب نتائج البحث أوPDF مرتبطة لم تُقرأ."
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# B1.3 — المهنة والتواصل في مكان العمل: اقتراحات مهذبة",
+      "finding": "عنوان لغة مهنية واقتراح مهذب، لا خدمة ترشح أو ضمان مقابلة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة إعلان، استماع اختياري، اجتماع، كتابة مهنية، قواعد وجهر",
+      "finding": "مدة مرنة قابلة للتقسيم؛ الاستماع اختياري والجهر يخص المحاكاة لا الرسالة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أصف مهاراتي، وأقدّم اقتراحًا مهنيًا أو أعبّر عن رغبة بصيغة مهذبة.",
+      "finding": "وصف المهارة والرغبة والاقتراح مدعوم برسالة واجتماع مختلفي الدليل.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستخدم **würde + المصدر** هنا لرغبة أو اقتراح مهذب أو موقف افتراضي. لا تعني الصيغة وحدها أن الطلب قُبل أو أن العمل أُنجز؛ وقد يكون الطلب المهذب ممكن التنفيذ فعلًا، لا مستحيلًا بالضرورة:",
+      "finding": "الصيغة قد تعبر عن طلب واقعي مهذب أو فرض، فلا تساوي الاستحالة أو الإنجاز أو قبول الطلب.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "في أمثلتنا يأتي المصدر بلا **zu** في نهاية الجزء الرئيسي مع **würde**، لا بالضرورة آخر الجملة المركبة كلها: في **Ich würde vorschlagen, dass wir zuerst die Aufgaben verteilen.** ينتهي الجزء الرئيسي بـ**vorschlagen**، ثم تأتي فاصلة وتابعة **dass** التي ينتهي ترتيبها بالفعل المصرف **verteilen**. ولـ**haben/sein** صيغتان شائعتان: **ich hätte gern…** و**ich wäre gern…**:",
+      "finding": "قُيد المصدر بنهاية الجزء الرئيسي قبل dass؛ verteilen بعد dass مصرف مع wir وليس مصدرًا لمجرد تطابق الشكل.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "> **Assistenz im Kulturzentrum — Teilzeit**  ",
+      "finding": "العنوان المكتوب يثبت Assistenz/Teilzeit؛ التسجيل يقرأ المتن دون هذا العنوان، لذلك لا ندعي أن جواب المنصب والدوام مسموع فيه.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "النموذجان مكتوبان لشخصيات خيالية وغير مسجلين؛ لا يبدلان الحوار الأصلي أو نصFarid، ولا يثبتان ترشحًا أو قبولًا أو إرسالًا حقيقيًا. أرقام الجمل للمقارنة التعليمية، لا تُنسخ كترقيم إلزامي في رسالة فعلية.",
+      "finding": "النماذج مكتوبة خيالية غير مسجلة؛ لا طلب توظيف أو إرسال أو موافقة حقيقية. الترقيم يساعد المقارنة وليس تنسيق رسالة إلزاميًا.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Stelle | die Stellen | الوظيفة/المنصب |",
+      "finding": "Stelle مؤنث وجمعها Stellen؛ وظيفة/منصب في هذا السياق لا كل معاني الكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Bewerbung | die Bewerbungen | طلب التوظيف |",
+      "finding": "Bewerbung مؤنث وجمعها Bewerbungen؛ طلب التوظيف لا المقابلة أو القبول.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Erfahrung | die Erfahrungen | الخبرة |",
+      "finding": "Erfahrung مؤنث وجمعها Erfahrungen؛ الخبرة أو تجارب؛ النص لا يطلب خبرة حقيقية حساسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Fähigkeit | die Fähigkeiten | المهارة/القدرة |",
+      "finding": "Fähigkeit مؤنث وجمعها Fähigkeiten؛ مهارة/قدرة لا وظيفة مضمونة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Verantwortung | — | المسؤولية |",
+      "finding": "Verantwortung مؤنث بمعنى المسؤولية في هذا السياق؛ الشرطة ليست إعلان منع كل استعمال جمع محتمل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Aufgabe | die Aufgaben | المهمة |",
+      "finding": "Aufgabe مؤنث وجمعها Aufgaben؛ مهمة لا الموعد النهائي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Rückmeldung | die Rückmeldungen | الملاحظات / الردّ |",
+      "finding": "Rückmeldung مؤنث وجمعها Rückmeldungen؛ رد أو ملاحظات لا قرار إيجابي بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Frist | die Fristen | المهلة المحددة؛ وفي السياق آخر موعد |",
+      "finding": "Frist مؤنث وجمعها Fristen؛ أضيف معنى المهلة لأن الكلمة ليست نقطة زمنية فقط.",
+      "sourceIds": [
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| das Vorstellungsgespräch | die Vorstellungsgespräche | مقابلة العمل |",
+      "finding": "Vorstellungsgespräch محايد وجمعه Vorstellungsgespräche؛ مقابلة عمل لا فترة فراغ.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| sich bewerben um | bewirbt sich | يتقدّم إلى وظيفة |",
+      "finding": "sich bewerben um انعكاسي؛ bewirbt sich مفرد، ويتغير الضمير مع المتقدم. um مع Akkusativ للمنصب.",
+      "sourceIds": [
+        "APPLY"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| eine Aufgabe übernehmen | übernimmt | يتولى مهمة |",
+      "finding": "eine Aufgabe übernehmen تولي مهمة؛ übernimmt متصلة لا nimmt…über في هذا المعنى.",
+      "sourceIds": [
+        "TAKE"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| zuverlässig | — | جدير بالثقة |",
+      "finding": "zuverlässig جدير بالثقة/يمكن الاعتماد عليه؛ وصف مهني لا ضمان نجاح آلي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| selbstständig | — | مستقلّ في العمل |",
+      "finding": "selbstständig مستقل في إنجاز العمل هنا، لا إعلان أن الوظيفة عمل حر.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| die Zusammenarbeit | — | التعاون |",
+      "finding": "Zusammenarbeit مؤنث؛ تعاون في سياق الخبرة، وليس عدد أعضاء فريق محددًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "conjugation-01",
+      "text": "| ich | würde |",
+      "finding": "ich würde مفرد متكلم.",
+      "sourceIds": [
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-02",
+      "text": "| du | würdest |",
+      "finding": "du würdest مخاطب مفرد غير رسمي.",
+      "sourceIds": [
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-03",
+      "text": "| er / sie / es | würde |",
+      "finding": "er/sie/es würde؛ أضيف es الناقص من الجدول، و sie هنا مفرد.",
+      "sourceIds": [
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-04",
+      "text": "| wir | würden |",
+      "finding": "wir würden متكلم جمع.",
+      "sourceIds": [
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-05",
+      "text": "| ihr | würdet |",
+      "finding": "ihr würdet مخاطب جمع غير رسمي.",
+      "sourceIds": [
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-06",
+      "text": "| sie / Sie | würden |",
+      "finding": "sie/Sie würden: جمع الغائب أو مخاطبة رسمية لشخص أو أكثر، لا اشتراط تعدد المخاطبين.",
+      "sourceIds": [
+        "K2"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "Ich würde gern mehr Verantwortung übernehmen.",
+      "finding": "رغبة في مسؤولية أكبر؛ würde مصرف وübernehmen مصدر متصل، لا إثبات توليها فعلًا.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Wir würden die Frist verlängern.",
+      "finding": "تمديد افتراضي/مقترح؛ العربية لا تصفه موافقة مؤكدة أو مستقبلًا حتميًا.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Ich würde vorschlagen, dass wir zuerst die Aufgaben verteilen.",
+      "finding": "vorschlagen ينهي الرئيسية ثم فاصلة و dass مع verteilen مصرف أخير؛ لا نضع المصدر بعد كل التابعة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Ich hätte gern flexiblere Arbeitszeiten.",
+      "finding": "hätte من haben لرغبة في أوقات أكثر مرونة؛ الاسم وحده ليس معيار الاختيار بين hätte و wäre.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Ich wäre gern Teil eines internationalen Teams.",
+      "finding": "wäre من sein للانتماء لفريق، مع Teil وهو اسم؛ يدحض تعميم hätte لكل اسم.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-06",
+      "text": "Was würden Sie vorschlagen?",
+      "finding": "Was سؤال عن اقتراح ثم würden Sie و vorschlagen مصدر؛ الرسمية لا تحدد عدد الأشخاص وحدها.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-07",
+      "text": "Könnten wir die Aufgaben neu verteilen?",
+      "finding": "Könnten wir طلب/اقتراح مهذب يبدأ بالمصرف ثم wir؛ لا إعادة توزيع منجزة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "grammar-08",
+      "text": "Ich würde zuerst den Bericht prüfen.",
+      "finding": "اقتراح مراجعة التقرير أولًا؛ würde…prüfen لا مراجعة وقعت بالفعل.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "TAKE"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **الصيغة والفاعل:** **ich/er/sie/es würde، du würdest، wir/sie/Sie würden، ihr würdet**. **Sie** الرسمية قد تخاطب شخصًا واحدًا أو أكثر وتأخذ صيغة الجمع؛ لا تعني دائمًا مجموعة. **würde** ليست **wurde**: الأولى Konjunktiv II، والثانية صيغة ماضية من werden.",
+      "finding": "يوضح التصريف و Sie الرسمية والفارق بين würde و wurde دون خلط صيغة الاحتمال بالماضي.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **hätte أم wäre؟** نرغب في امتلاك/الحصول على أوقات أكثر مرونة فنقول **Ich hätte gern flexiblere Arbeitszeiten.** ونرغب أن نكون جزءًا من فريق فنقول **Ich wäre gern Teil eines Teams.** لا يكفي أن يلي الفراغ اسم لاختيار hätte؛ المعنى يحدد haben أوsein. **möchte** في تمرين4 مهذبة أصلًا، والتحويل تدريب على صيغة بديلة لا إصلاح لسوء أدب.",
+      "finding": "hätte/wäre يحددهما المعنى؛ möchte مهذبة أصلًا، فالتحويل تدريب لا حكم على اللباقة السابقة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **نوع السؤال:** **Was würden Sie vorschlagen?** يبدأ بـWas ثم المصرف؛ **Könnten wir die Frist verlängern?** سؤال نعم/لا يبدأ بالمصرف، وليس **Wir könnten ...?** بوصفه نمط السؤال المحايد في هذا التدريب. قد تسمع ترتيب الخبر مع نبرة سؤال، لكن المطلوب هنا السؤال المحايد.",
+      "finding": "يفرق سؤال W والسؤال المحايد نعم/لا من سؤال النبرة؛ يحسم المطلوب في ترتيب T07.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **المصدر والتابعة:** **würde ... prüfen، könnten ... verteilen** بلاzu في هذين النمطين. أما **dass wir die Aufgaben verteilen** فـverteilen هنا فعل مصرف معwir، رغم تطابق شكله مع المصدر. لا تنقل قاعدة نهاية الجزء الرئيسي إلى كل جملة ألمانية أو كل مصدر.",
+      "finding": "المصدر بلا zu في النمطين المحددين؛ verteilen بعد dass مع wir مصرف، ولو طابق المصدر شكلًا.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **التراكيب المهنية:** **Ich bewerbe mich um eine Stelle. / Sie bewirbt sich um eine Stelle.** ضمير انعكاسي و**um + Akkusativ**؛ و**bei einer Firma** يحدد الجهة. **übernehmen** بمعنى تولي مهمة غير منفصل: **übernimmt / hat übernommen**؛ أما **vorschlagen، vorbereiten، abwarten** فمنفصلة في الرئيسية البسيطة، وتبقى متصلة حين تكون مصدرًا.",
+      "finding": "الانعكاسي um/bei بحسب الدور، وعدم فصلübernehmen في معنى التولي؛ المصادر المنفصلة مع würde تبقى متصلة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **فهم الإعلان:** **Teilzeit** دوام جزئي، بلا عدد ساعات محدد؛ **hilfreich** مفيد، لا شرط خبرة إلزامي مصرح به. **selbstständig** هنا العمل باستقلالية، لا ادعاء أن الوظيفة عمل حر. **sollten ... arbeiten und ... kommunizieren können** صفات/قدرات مرغوبة؛ لا تعني أن الوظيفة أو المقابلة مضمونة. العنوان المكتوب يحدد المنصب والدوام؛ تسجيل القراءة يقرأ المتن ولا ينطق هذا العنوان.",
+      "finding": "الدوام الجزئي بلا ساعات محددة؛ الخبرة مفيدة لا إلزام مصرح، والعمل المستقل لا عمل حر. العنوان مصدر معلومة مكتوبة غير منطوقة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **المهل منفصلة:** في الحوار بقي يومان للمهلة العامة وتُطلب نسخة أولى **bis morgen**؛ في الإعلان **innerhalb der nächsten zwei Wochen** خلال الأسبوعين المقبلين؛ وفي الاستماع طلب رد **bis heute Nachmittag** بحلول بعد ظهر اليوم. لا نضيف ساعة أو تاريخًا تقويميًا، ولا نجعلها مواعيد حقيقية محسوبة من يوم دراسة الدرس. **Frist** مهلة زمنية، وقد تشير في السياق إلى نهايتها.",
+      "finding": "ثلاثة سياقات زمنية مختلفة؛ لا ساعة محددة أو حساب موعد من تاريخ الجلسة. Frist مهلة ولها نهاية.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **اقتراح أم إنجاز؟** Nora تعرض فحص التقرير وOmar يبدي استعداده لتجهيز العرض؛ لا يقول النص إنهما أرسلاه. **Kundinnen** في الحوار عميلات، أما **einem Kunden** في الاستماع فعميل؛ لا نجعلهم الشخص نفسه. Farid يقترح الخميس بسبب موعد الأربعاء، ولا يثبت النص قبول الاقتراح أو استحالة كل ساعات الأربعاء. **Dann kann ich ... aktualisieren** إمكان تحديث بعد الرد، لا تحديث منجز أو وعد قطعي.",
+      "finding": "العرض والاستعداد ليسا إرسالًا؛ العميلات في الحوار لا عميل Farid نفسه؛ الاقتراح لا إثبات قبول أو تحديث.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **شكل الكتابة:** فيP01 اكتب تحية وختامًا خارج الجمل الخمس؛ مثل **Sehr geehrte Damen und Herren,** ثم بداية بحرف صغير إذا بدأت بـ**hiermit**، و**Mit freundlichen Grüßen** دون فاصلة بعدها. هذا نموذج لغوي مختصر، لا ملف ترشح كامل أو ضمان توظيف. P02 أربعة أدوار وقد يضم الدور أكثر من جملة، مع مهمة واضحة لكل طرف وخطوة تالية.",
+      "finding": "تحية وختام خارج الجمل الخمس؛ نموذج لغوي مختصر لا ضمان ملف توظيف كامل. الأدوار ليست دائمًا جملًا منفردة.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل والخصوصية:** الإعلان والشخصيات والمواعيد خيالية؛ لا ترسل رسالة أو طلبًا فعليًا ولا تدخل هاتفًا أو عنوانًا أو خبرة شخصية حساسة. P01 كتابة فقط دون شرط جهر؛ P02 اكتب الطرفين واقرأهما جهرًا بلا شريك أو تسجيل. يمكن قراءة تفريغ الاستماع؛ الحدود الحرفية والإقرارات ليست تصحيحًا آليًا للغة أو النطق.",
+      "finding": "رسالة كتابة فقط واجتماع مع الجهر، كلاهما خيالي بلا بيانات أو إرسال أو شريك أو تسجيل؛ الإقرار ليس تصحيحًا آليًا.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MAIN",
+        "MODAL",
+        "APPLY",
+        "TAKE",
+        "SEPARATE",
+        "DEADLINE",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wir haben nur zwei Tage bis zur Frist. Was würden Sie vorschlagen?",
+      "finding": "المديرة تذكر يومين للمهلة وتسأل عن اقتراح؛ لا تاريخ أو ساعة نهائية أو تمديد مؤكد.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich würde die Aufgaben klar verteilen. Ich kann den Bericht prüfen.",
+      "finding": "Nora تقترح توزيعًا واضحًا وتعرض إمكان مراجعة التقرير؛ لا تقول إنها أنهته.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Ich würde gern die Präsentation vorbereiten.",
+      "finding": "Omar يرغب في تجهيز العرض؛ vorbereiten مصدر كامل لا انفصال verbal في هذا الموضع.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Gut. Könnten Sie mir bis morgen eine erste Version schicken?",
+      "finding": "طلب نسخة أولى بحلول الغد، وهي غير نهاية المهلة العامة ذات اليومين؛ Sie طلب رسمي لا إثبات الإرسال.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Ja, das würde ich gern übernehmen.",
+      "finding": "Omar يوافق على تولي ذلك؛ übernehmen يدل على تحمل المهمة لا إتمامها.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ich hätte noch eine Frage: Sollen wir die Rückmeldung der Kundinnen abwarten?",
+      "finding": "Nora تسأل عن انتظار رد العميلات؛ hätte صيغة تلطيف للسؤال لا معنى أنها كانت تملك سؤالًا في الماضي فقط.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Ja. Danach entscheiden wir gemeinsam.",
+      "finding": "الموافقة على الانتظار ثم قرار مشترك؛ Danach ظرف ثم entscheiden wir، لا قرار وقع قبل الرد.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "TAKE",
+        "MAIN",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Wir suchen eine zuverlässige Person für unser Team.",
+      "finding": "تطلب الجهة شخصًا موثوقًا للفريق؛ لا اسم متقدم أو جنسه أو قبوله بالفعل.",
+      "sourceIds": [
+        "MAIN",
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Zu den Aufgaben gehören die Terminplanung, die Beantwortung von E-Mails und die Vorbereitung kleiner Veranstaltungen.",
+      "finding": "ثلاث مهام: المواعيد، رد البريد، تحضير فعاليات صغيرة؛ gehören جمع مع المهام، لا إدارة كل أعمال المركز.",
+      "sourceIds": [
+        "MAIN",
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Erfahrung in der Zusammenarbeit mit Menschen ist hilfreich.",
+      "finding": "الخبرة مع الناس مفيدة، وليس شرط سنوات محددًا أو إلزامًا منصوصًا عليه.",
+      "sourceIds": [
+        "MAIN",
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Bewerberinnen und Bewerber sollten selbstständig arbeiten und freundlich kommunizieren können.",
+      "finding": "الاستقلالية والتواصل الودي قدرتان مرغوبتان؛ sollten … können لا ضمان مقابلة أو أهلية قانونية.",
+      "sourceIds": [
+        "MAIN",
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Bitte schicken Sie Ihre Bewerbung innerhalb der nächsten zwei Wochen.",
+      "finding": "الطلب خلال الأسبوعين المقبلين بالنسبة لسياق الإعلان؛ لا بعد أسبوعين أو موعد Farid اليوم، ولا تاريخ تقويمي معلوم.",
+      "sourceIds": [
+        "MAIN",
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Welche Stelle wird angeboten?",
+      "finding": "وظيفة مساعدة بدوام جزئي في مركز ثقافي بحسب العنوان المكتوب؛ لا تدعي سماع Teilzeit في متن الصوت.",
+      "sourceIds": [
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Nenne zwei Aufgaben.",
+      "finding": "يكفي اثنتان من المهام الثلاث؛ المثال تنظيم المواعيد والرد على البريد ليس القائمة الوحيدة المقبولة.",
+      "sourceIds": [
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Welche Eigenschaften sind erwünscht?",
+      "finding": "موثوقية واستقلالية وتواصل ودي؛ ليست ضمانات على أي متقدم حقيقي.",
+      "sourceIds": [
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Bis wann soll die Bewerbung geschickt werden?",
+      "finding": "Innerhalb der nächsten zwei Wochen؛ إطار نسبي لا تاريخ اليوم زائد 14 كموعد فعلي.",
+      "sourceIds": [
+        "MODAL",
+        "WITHIN"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Guten Morgen, hier ist Farid aus dem Projektteam.",
+      "finding": "Farid يعرف نفسه وفريق المشروع صباحًا؛ الاسم من الكلمات لا تمييز صوتي عن Omar الذي يشاركه voice03.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich würde vorschlagen, dass wir die Besprechung auf Donnerstag verschieben.",
+      "finding": "يقترح الخميس بدل الموعد موضوع الحديث؛ dass تنتهي بالمصرف verschieben، ولا يقول إن الجميع وافق.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Am Mittwoch habe ich einen Termin mit einem Kunden.",
+      "finding": "موعد مع عميل الأربعاء هو السبب المعطى؛ لا إثبات استحالة كل ساعات الأربعاء أو هوية العميلات في الحوار.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Könnten Sie mir bitte bis heute Nachmittag eine Rückmeldung geben?",
+      "finding": "طلب رد بحلول بعد ظهر اليوم؛ سؤال مهذب لا موعد دقيق بالساعة ولا صياغةقبل الظهر.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Dann kann ich den Kalender aktualisieren.",
+      "finding": "Dann kann ich … aktualisieren إمكان تحديث بعد الرد؛ لا تحديث مؤكد الوقوع أو تم فعلًا.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Vielen Dank.",
+      "finding": "شكر ختامي؛ ليس معلومات إضافية عن موافقة الطرف الآخر أو مكان الاجتماع.",
+      "sourceIds": [
+        "K2",
+        "SUB",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wer ruft an?",
+      "finding": "Farid aus dem Projektteam صراحة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Auf welchen Tag möchte Farid die Besprechung verschieben?",
+      "finding": "Auf Donnerstag: اليوم المقترح لا إعلان قبول أو تنفيذ.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Welchen Grund nennt Farid für seinen Vorschlag?",
+      "finding": "موعد مع عميل هو السبب المذكور؛ صُحح السؤال لئلا يضيف عدم تفرغ اليوم كله.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Bis wann bittet er um Rückmeldung?",
+      "finding": "Bis heute Nachmittag؛ بلا ساعة محددة أو خلط بمهلة الإعلان أو نسخة الحوار.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "letter-model-01",
+      "text": "hiermit bewerbe ich mich um die Teilzeitstelle als Assistenz im Kulturzentrum.",
+      "finding": "تحدد الوظيفة والمركز؛ تبدأ hiermit بحرف صغير لأنها تلي فاصلة التحية، ويستعمل bewerbe mich um.",
+      "sourceIds": [
+        "APPLY",
+        "MODAL",
+        "K2",
+        "QUESTION",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "letter-model-02",
+      "text": "Ich kann Termine zuverlässig planen.",
+      "finding": "مهارة تنظيم المواعيد بموثوقية مع kann…planen؛ مطلب مهني مرتبط بالإعلان.",
+      "sourceIds": [
+        "APPLY",
+        "MODAL",
+        "K2",
+        "QUESTION",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "letter-model-03",
+      "text": "Ich habe in einem Projektteam E-Mails beantwortet.",
+      "finding": "خبرة خيالية في رد البريد بصيغة Perfekt؛ لا تقديم سيرة ذاتية حقيقية أو بيانات طرف ثالث.",
+      "sourceIds": [
+        "APPLY",
+        "MODAL",
+        "K2",
+        "QUESTION",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "letter-model-04",
+      "text": "Ich würde gern meine Erfahrung in Ihr Team einbringen.",
+      "finding": "ما يرغب في تقديمه للفريق مع würde…einbringen و Ihr الرسمية؛ لا وعد توظيف.",
+      "sourceIds": [
+        "APPLY",
+        "MODAL",
+        "K2",
+        "QUESTION",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "letter-model-05",
+      "text": "Könnten Sie mir einen Termin für ein Vorstellungsgespräch anbieten?",
+      "finding": "طلب موعد مقابلة مهذب مع Könnten Sie…anbieten؛ لا موعد حقيقي أو مقابلة مؤكدة.",
+      "sourceIds": [
+        "APPLY",
+        "MODAL",
+        "K2",
+        "QUESTION",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "meeting-model-01",
+      "text": "A: Heute ist Montag, und wir müssen den Bericht bis Freitag abgeben. Was würden Sie vorschlagen?",
+      "finding": "A يحدد الاثنين والجمعة ويسأل عن اقتراح؛ يجعل غدًا داخل مهلة خيالية واضحة دون استعمال تاريخ اليوم الحقيقي.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "meeting-model-02",
+      "text": "B: Ich würde den Text prüfen und Sie könnten die Zahlen kontrollieren.",
+      "finding": "B يقترح فحص النص لنفسه والأرقام للمخاطب A؛ würde…prüfen و Sie könnten…kontrollieren معًا.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "meeting-model-03",
+      "text": "A: Könnten wir morgen die Ergebnisse vergleichen?",
+      "finding": "A يطلب مقارنة النتائج غدًا بسؤال Könnten wir…vergleichen؛ طلب لا مقارنة تمت.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "meeting-model-04",
+      "text": "B: Ja, ich schicke Ihnen meinen Teil bis morgen Vormittag.",
+      "finding": "B يوافق ويحدد إرسال جزئه بحلول صباح الغد؛ هذه خطوة معلنة في نموذج خيالي لا إرسال عبر التطبيق.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "letter-format-01",
+      "text": "التحية: **Sehr geehrte Damen und Herren,**",
+      "finding": "تحية رسمية عامة بفاصلة؛ خارج عدّ الجمل الخمس، وتفسر بداية hiermit الصغيرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "letter-format-02",
+      "text": "الختام: **Mit freundlichen Grüßen**",
+      "finding": "صيغة ختام بلا فاصلة بعدها؛ خارج خمس جمل المتن، ولا يطلب اسمًا أو عنوانًا حقيقيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-01",
+      "text": "- **Ich würde gern mehr Verantwortung übernehmen.** → أودّ أن أتولى مسؤولية أكبر.",
+      "finding": "رغبة بمسؤولية أكبر لا تكليف وقع بالفعل؛ übernehmen مصدر غير منفصل.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "TAKE",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Was würden Sie vorschlagen?** → ماذا تقترحون؟",
+      "finding": "سؤال W رسمي عن اقتراح؛ würde مصرفة وفق Sie.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "TAKE",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **die Rückmeldung** → الردّ / الملاحظات.",
+      "finding": "رد أو ملاحظات؛ لا بالضرورة رد إيجابي أو قرار موافقة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "TAKE",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **die Frist** → الموعد النهائي.",
+      "finding": "«الموعد النهائي» اختصار سياقي؛ الجدول والمساعدة يشرحان أيضًا معنى المهلة الزمنية، فلا يعتمد وحده تعريفًا حصريًا.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "TAKE",
+        "DEADLINE"
+      ]
+    },
+    {
+      "id": "DL-B1-03-T01",
+      "text": "1. آخر موعد لتسليم عمل: **die Frist / die Erfahrung**\n2. حديث لاختيار شخص لوظيفة: **das Vorstellungsgespräch / die Freizeit**\n3. ردّ أو ملاحظات بعد إرسال عمل: **die Rückmeldung / die Verantwortung**\n4. أن تعمل من دون إشراف مستمر: **selbstständig / beschädigt**\n5. أن تتقدّم إلى وظيفة: **sich um eine Stelle bewerben / eine Aufgabe übernehmen**",
+      "finding": "خمسة أزواج معجمية بعد إضافة تقديم الوظيفة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "آخر موعد لتسليم عمل: **die Frist / die Erfahrung**",
+          "answer": "die Frist",
+          "finding": "Frist مهلة أو نهايتها في السياق؛ Erfahrung خبرة."
+        },
+        {
+          "text": "حديث لاختيار شخص لوظيفة: **das Vorstellungsgespräch / die Freizeit**",
+          "answer": "das Vorstellungsgespräch",
+          "finding": "Vorstellungsgespräch مقابلة؛ Freizeit وقت فراغ."
+        },
+        {
+          "text": "ردّ أو ملاحظات بعد إرسال عمل: **die Rückmeldung / die Verantwortung**",
+          "answer": "die Rückmeldung",
+          "finding": "Rückmeldung رد؛ Verantwortung مسؤولية."
+        },
+        {
+          "text": "أن تعمل من دون إشراف مستمر: **selbstständig / beschädigt**",
+          "answer": "selbstständig",
+          "finding": "selbstständig عمل باستقلالية؛ beschädigt تالف."
+        },
+        {
+          "text": "أن تتقدّم إلى وظيفة: **sich um eine Stelle bewerben / eine Aufgabe übernehmen**",
+          "answer": "sich um eine Stelle bewerben",
+          "finding": "sich um eine Stelle bewerben تقديم طلب وظيفة؛ übernehmen تولي مهمة. أضيف دعم مباشر لـ Q02."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T02",
+      "text": "1. Ich ______ gern mehr Erfahrung sammeln.\n2. ______ Sie die Aufgabe übernehmen?\n3. Wir ______ zuerst die E-Mails beantworten.\n4. Was ______ du in dieser Situation machen?",
+      "finding": "أربعة تصريفات مع ضمير واضح ونوع سؤال مناسب.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "Ich ______ gern mehr Erfahrung sammeln.",
+          "answer": "würde",
+          "finding": "würde مع ich لا würden."
+        },
+        {
+          "text": "______ Sie die Aufgabe übernehmen?",
+          "answer": "Würden",
+          "finding": "Würden مع Sie الرسمية وفي أول السؤال؛ لا نفترض عدد المخاطبين."
+        },
+        {
+          "text": "Wir ______ zuerst die E-Mails beantworten.",
+          "answer": "würden",
+          "finding": "würden مع wir."
+        },
+        {
+          "text": "Was ______ du in dieser Situation machen?",
+          "answer": "würdest",
+          "finding": "würdest مع du."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T03",
+      "text": "1. Ich würde gern im Team ______. (arbeiten)\n2. Wir würden die Frist ______. (verlängern)\n3. Was würden Sie ______? (vorschlagen)",
+      "finding": "ثلاثة مصادر ضمن الجزء الرئيسي، لا فعل مصرف ثانٍ.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "Ich würde gern im Team ______. (arbeiten)",
+          "answer": "arbeiten",
+          "finding": "arbeiten مصدر لا arbeite بعد würde."
+        },
+        {
+          "text": "Wir würden die Frist ______. (verlängern)",
+          "answer": "verlängern",
+          "finding": "verlängern مصدر؛ الجملة افتراض لا تمديد مؤكد."
+        },
+        {
+          "text": "Was würden Sie ______? (vorschlagen)",
+          "answer": "vorschlagen",
+          "finding": "vorschlagen مصدر متصل بعد Was würden Sie."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T04",
+      "text": "في1–3 حوّل إلى **würde + المصدر**؛ الجملة3 مهذبة أصلًا بصيغةmöchte. ثم أكمل4 واختر5:\n\n1. **Ich schlage vor, dass wir früher beginnen.** → Ich ______ vorschlagen, dass wir früher beginnen.\n2. **Wir verteilen die Aufgaben neu.** → Wir ______ die Aufgaben neu ______.\n3. **Ich möchte gern mehr Verantwortung übernehmen.** → Ich ______ gern mehr Verantwortung übernehmen.\n4. Ich ______ gern flexiblere Arbeitszeiten. (hätte / wäre)\n5. اختر السؤال المهذب المحايد لاقتراح توزيع المهام: **Könnten wir die Aufgaben neu verteilen? / Verteilen die Aufgaben neu!**",
+      "finding": "خمسة بنود: ثلاث تحويلات وصيغة hätte وسؤال Könnten؛ دعم مباشر لـ Q05/Q06.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "**Ich schlage vor, dass wir früher beginnen.** → Ich ______ vorschlagen, dass wir früher beginnen.",
+          "answer": "würde",
+          "finding": "würde…vorschlagen ثم dass مع beginnen المصرف؛ الفاصلة قبل التابعة، لا نقل vorschlagen بعد الجملة كلها."
+        },
+        {
+          "text": "**Wir verteilen die Aufgaben neu.** → Wir ______ die Aufgaben neu ______.",
+          "answer": "würden … verteilen",
+          "finding": "würden مع wir و verteilen مصدر أخير؛ توزيع مقترح لا منجز."
+        },
+        {
+          "text": "**Ich möchte gern mehr Verantwortung übernehmen.** → Ich ______ gern mehr Verantwortung übernehmen.",
+          "answer": "würde",
+          "finding": "würde بديل لتدريب möchte المهذبة أصلًا، لا تحسين جملة وقحة."
+        },
+        {
+          "text": "Ich ______ gern flexiblere Arbeitszeiten. (hätte / wäre)",
+          "answer": "hätte",
+          "finding": "hätte لرغبة في الحصول على أوقات عمل، لا wäre لتعني أن تكون هي الأوقات."
+        },
+        {
+          "text": "اختر السؤال المهذب المحايد لاقتراح توزيع المهام: **Könnten wir die Aufgaben neu verteilen? / Verteilen die Aufgaben neu!**",
+          "answer": "Könnten wir die Aufgaben neu verteilen?",
+          "finding": "Könnten wir…? السؤال المطلوب؛ البديل ليس سؤالًا ولا صيغة أمر رسمي مكتملة، إذ يفتقد Sie."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. الوظيفة بدوام كامل.\n2. من المهام تنظيم المواعيد والرد على الرسائل.\n3. الخبرة في العمل مع الناس مفيدة.\n4. يجب إرسال الطلب خلال الأسبوعين المقبلين.",
+      "finding": "أربعة أحكام عن إعلان خيالي؛ العنوان جزء من الدليل المكتوب.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "الوظيفة بدوام كامل.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ Teilzeit من العنوان لا Vollzeit."
+        },
+        {
+          "text": "من المهام تنظيم المواعيد والرد على الرسائل.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تنظيم المواعيد والرد على البريد من المهام."
+        },
+        {
+          "text": "الخبرة في العمل مع الناس مفيدة.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ الخبرة مفيدة، لا إلزام بمدة خبرة."
+        },
+        {
+          "text": "يجب إرسال الطلب خلال الأسبوعين المقبلين.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ خلال الأسبوعين المقبلين نسبة لسياق الإعلان."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T06",
+      "text": "أكمل من النص؛ الكلمات المقترحة: **Donnerstag — einem Kunden — bis heute Nachmittag — den Kalender — Farid aus dem Projektteam**.\n\n1. يقترح نقل الاجتماع إلى ______.\n2. يوم الأربعاء لديه موعد مع ______.\n3. مهلة الرد المذكورة: ______.\n4. بعد الرد يصبح بإمكانه تحديث ______؛ لا يقول إنه حدّثه بالفعل.\n5. يعرّف المتصل نفسه بأنه ______.",
+      "finding": "خمسة فراغات مقيدة بالنص؛ المهلة والقدرة والهوية صريحة دون استنتاج إنجاز أو ساعة محددة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "يقترح نقل الاجتماع إلى ______.",
+          "answer": "Donnerstag",
+          "finding": "Donnerstag الخميس اقتراح Farid."
+        },
+        {
+          "text": "يوم الأربعاء لديه موعد مع ______.",
+          "answer": "einem Kunden",
+          "finding": "einem Kunden عميل؛ ليس العميلات في الحوار أو Nora."
+        },
+        {
+          "text": "مهلة الرد المذكورة: ______.",
+          "answer": "bis heute Nachmittag",
+          "finding": "bis heute Nachmittag حد الرد النسبي دون ساعة؛ أزيل تعبيرقبل…اليوم الملتبس."
+        },
+        {
+          "text": "بعد الرد يصبح بإمكانه تحديث ______؛ لا يقول إنه حدّثه بالفعل.",
+          "answer": "den Kalender",
+          "finding": "den Kalender؛ يصبح بإمكانه التحديث، ولا يفيد kann أنه تم أو حتمًا سيتم."
+        },
+        {
+          "text": "يعرّف المتصل نفسه بأنه ______.",
+          "answer": "Farid aus dem Projektteam",
+          "finding": "Farid aus dem Projektteam؛ أضيف لدعم سؤال الهوية Q09 مباشرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T07",
+      "text": "ابدأ1 بـIch و2 بـWas و3 بـKönnten. في3 نريد سؤال نعم/لا محايدًا؛ اضبط الحرف الكبير وعلامات الترقيم:\n\n1. würde / Ich / gern / im Team / arbeiten.\n2. Sie / Was / vorschlagen / würden?\n3. könnten / Wir / die Frist / verlängern?",
+      "finding": "ثلاثة ترتيبات ببدايات محددة ونمط سؤال محايد، لا تغيير المعنى.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "DEADLINE",
+        "WITHIN"
+      ],
+      "items": [
+        {
+          "text": "würde / Ich / gern / im Team / arbeiten.",
+          "answer": "Ich würde gern im Team arbeiten.",
+          "finding": "Ich würde gern im Team arbeiten؛ مصدر أخير ورئيسية بمصرف ثانٍ."
+        },
+        {
+          "text": "Sie / Was / vorschlagen / würden?",
+          "answer": "Was würden Sie vorschlagen?",
+          "finding": "Was würden Sie vorschlagen? أداة سؤال ثم مصرف ثم فاعل ومصدر."
+        },
+        {
+          "text": "könnten / Wir / die Frist / verlängern?",
+          "answer": "Könnten wir die Frist verlängern?",
+          "finding": "Könnten wir…? سؤال نعم/لا محايد بمصرف أول؛ نخفض Wir ونرفع Könnten بحسب البداية المطلوبة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-T08",
+      "text": "**أ — P01: رسالة كتابية**\n\nاكتب رسالة تدريبية إلى وظيفة خيالية في مركز ثقافي. أضف تحية وختامًا خارج خمس جمل للمتن: جملة تحدد الوظيفة المطلوبة؛ جملة تذكر مهارة؛ جملة تذكر خبرة خيالية؛ جملة بـwürde + المصدر تبين ما تود تقديمه للفريق؛ وسؤال مهذب يطلب موعد مقابلة. رتّب المصدر والفعل، واستخدم صيغة المخاطبة الرسمية Sie. المهمة كتابة فقط، ولا يُشترط الجهر أو التسجيل أو إرسال الرسالة أو إدخال بيانات حقيقية.\n\n**ب — P02: اجتماع مع الجهر**\n\nاكتب محاكاة اجتماع خيالية من أربعة أدوار بينA وB. يبدأA بذكر أن اليوم الاثنين وموعد تسليم التقرير الجمعة ويسأل عن اقتراح؛ يقترحB بـwürde + المصدر أن يفحص النص وأن يفحصA الأرقام؛ يطلبA بـKönnten wir ...? مقارنة النتائج غدًا؛ ويوافقB ويحدد إرسال جزئه إلىA بحلول صباح الغد. اكتب الدورين ثم اقرأهما جهرًا دون شريك أو تسجيل. يمكن أن يضم الدور أكثر من جملة؛ لا موعد حقيقي أو إرسال فعلي مطلوب.",
+      "finding": "سبعة مطالب للرسالة:تحية وخمس جمل وخاتمة، ثم أربعة أدوار للمحاكاة. P01 كتابة فقط، P02 كتابة وجهر؛ نمطان متميزان بدل تعليمات واحدة لا تغطي الاجتماع.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "APPLY"
+      ],
+      "items": [
+        {
+          "text": "التحية: **Sehr geehrte Damen und Herren,**",
+          "finding": "P01 تحية خارج المتن مع فاصلة."
+        },
+        {
+          "text": "P01، الجملة1: hiermit bewerbe ich mich um die Teilzeitstelle als Assistenz im Kulturzentrum.",
+          "finding": "تحدد الوظيفة والمركز؛ تبدأ hiermit بحرف صغير لأنها تلي فاصلة التحية، ويستعمل bewerbe mich um."
+        },
+        {
+          "text": "P01، الجملة2: Ich kann Termine zuverlässig planen.",
+          "finding": "مهارة تنظيم المواعيد بموثوقية مع kann…planen؛ مطلب مهني مرتبط بالإعلان."
+        },
+        {
+          "text": "P01، الجملة3: Ich habe in einem Projektteam E-Mails beantwortet.",
+          "finding": "خبرة خيالية في رد البريد بصيغة Perfekt؛ لا تقديم سيرة ذاتية حقيقية أو بيانات طرف ثالث."
+        },
+        {
+          "text": "P01، الجملة4: Ich würde gern meine Erfahrung in Ihr Team einbringen.",
+          "finding": "ما يرغب في تقديمه للفريق مع würde…einbringen و Ihr الرسمية؛ لا وعد توظيف."
+        },
+        {
+          "text": "P01، الجملة5: Könnten Sie mir einen Termin für ein Vorstellungsgespräch anbieten?",
+          "finding": "طلب موعد مقابلة مهذب مع Könnten Sie…anbieten؛ لا موعد حقيقي أو مقابلة مؤكدة."
+        },
+        {
+          "text": "الختام: **Mit freundlichen Grüßen**",
+          "finding": "P01 ختام خارج المتن بلا بيانات حقيقية."
+        },
+        {
+          "text": "P02، الدور1: A: Heute ist Montag, und wir müssen den Bericht bis Freitag abgeben. Was würden Sie vorschlagen?",
+          "finding": "A يحدد الاثنين والجمعة ويسأل عن اقتراح؛ يجعل غدًا داخل مهلة خيالية واضحة دون استعمال تاريخ اليوم الحقيقي."
+        },
+        {
+          "text": "P02، الدور2: B: Ich würde den Text prüfen und Sie könnten die Zahlen kontrollieren.",
+          "finding": "B يقترح فحص النص لنفسه والأرقام للمخاطب A؛ würde…prüfen و Sie könnten…kontrollieren معًا."
+        },
+        {
+          "text": "P02، الدور3: A: Könnten wir morgen die Ergebnisse vergleichen?",
+          "finding": "A يطلب مقارنة النتائج غدًا بسؤال Könnten wir…vergleichen؛ طلب لا مقارنة تمت."
+        },
+        {
+          "text": "P02، الدور4: B: Ja, ich schicke Ihnen meinen Teil bis morgen Vormittag.",
+          "finding": "B يوافق ويحدد إرسال جزئه بحلول صباح الغد؛ هذه خطوة معلنة في نموذج خيالي لا إرسال عبر التطبيق."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q01",
+      "text": "ما معنى **die Rückmeldung** في سياق العمل؟",
+      "finding": "die Rückmeldung تعني الردّ أو الملاحظات التي تصل بعد طلب أو عمل.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "الموعد النهائي.",
+        "الردّ أو الملاحظات على عمل.",
+        "طلب التوظيف."
+      ],
+      "answer": "الردّ أو الملاحظات على عمل.",
+      "sourceTaskIds": [
+        "DL-B1-03-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "الموعد النهائي.",
+          "correct": false,
+          "finding": "Frist المهلة لا الرد."
+        },
+        {
+          "text": "الردّ أو الملاحظات على عمل.",
+          "correct": true,
+          "finding": "Rückmeldung الرد أو الملاحظات."
+        },
+        {
+          "text": "طلب التوظيف.",
+          "correct": false,
+          "finding": "Bewerbung طلب التوظيف لا الرد."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q02",
+      "text": "أي تركيب يعني «يتقدّم إلى وظيفة»؟",
+      "finding": "sich um eine Stelle bewerben تعني التقدّم إلى وظيفة؛ أما übernehmen فتعني يتولّى.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "eine Aufgabe übernehmen",
+        "sich um eine Stelle bewerben",
+        "eine Frist verlängern"
+      ],
+      "answer": "sich um eine Stelle bewerben",
+      "sourceTaskIds": [
+        "DL-B1-03-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "eine Aufgabe übernehmen",
+          "correct": false,
+          "finding": "تولي مهمة لا التقديم لوظيفة."
+        },
+        {
+          "text": "sich um eine Stelle bewerben",
+          "correct": true,
+          "finding": "sich um eine Stelle bewerben التقديم إلى وظيفة."
+        },
+        {
+          "text": "eine Frist verlängern",
+          "correct": false,
+          "finding": "تمديد مهلة لا طلب وظيفة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q03",
+      "text": "أكمل بصيغة الجمع: **Wir ___ die Frist verlängern.**",
+      "finding": "مع wir نستخدم würden: Wir würden die Frist verlängern.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "würden",
+        "würdest",
+        "würde"
+      ],
+      "answer": "würden",
+      "sourceTaskIds": [
+        "DL-B1-03-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "würden",
+          "correct": true,
+          "finding": "würden مع wir."
+        },
+        {
+          "text": "würdest",
+          "correct": false,
+          "finding": "würdest مع du لا wir."
+        },
+        {
+          "text": "würde",
+          "correct": false,
+          "finding": "würde للمفرد لا wir."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q04",
+      "text": "أكمل مع وضع المصدر في النهاية: **Ich würde gern im Team ___.** (arbeiten)",
+      "finding": "المصدر arbeiten يأتي في نهاية الجزء الرئيسي مع würde، بلا zu في هذا النمط. وقد تتلو الجزء الرئيسي تابعة؛ ليس المصدر آخر كل جملة مركبة بالضرورة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeiten"
+      ],
+      "answer": "arbeiten",
+      "sourceTaskIds": [
+        "DL-B1-03-T03",
+        "DL-B1-03-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "arbeite",
+          "correct": false,
+          "finding": "arbeite مصرف لا مصدر."
+        },
+        {
+          "text": "arbeitest",
+          "correct": false,
+          "finding": "arbeitest مصرف مع du لا مصدر."
+        },
+        {
+          "text": "arbeiten",
+          "correct": true,
+          "finding": "arbeiten مصدر بعد würde."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q05",
+      "text": "اختر الصيغة الصحيحة للتعبير عن الرغبة: **Ich ___ gern flexiblere Arbeitszeiten.**",
+      "finding": "المعنى هنا الرغبة في الحصول على أوقات دوام أكثر مرونة، فنختار hätte من haben. لا تختَر hätte لمجرد وجود اسم: Ich wäre gern Teil eines Teams سليمة لمعنى أن أكون جزءًا من فريق. würde تحتاج هنا مصدرًا إضافيًا.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answer": "hätte",
+      "sourceTaskIds": [
+        "DL-B1-03-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "wäre",
+          "correct": false,
+          "finding": "wäre = يكون؛ لا يعني الحصول على أوقات مرنة في هذا المثال."
+        },
+        {
+          "text": "hätte",
+          "correct": true,
+          "finding": "hätte للرغبة في الحصول على الأوقات المرنة."
+        },
+        {
+          "text": "würde",
+          "correct": false,
+          "finding": "würde وحدها لا تكمل التركيب؛ تحتاج مصدرًا مناسبًا مثل haben."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q06",
+      "text": "أي سؤال يطلب إعادة توزيع المهام بطريقة مهذبة؟",
+      "finding": "Könnten wir …? سؤال نعم/لا مهذب يبدأ بالمصرف ثم wir، مع verteilen مصدرًا أخيرًا. الطلب لا يثبت موافقة الآخرين أو تنفيذ إعادة التوزيع.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "Verteilen die Aufgaben neu!",
+        "Wir Aufgaben neu verteilen würden.",
+        "Könnten wir die Aufgaben neu verteilen?"
+      ],
+      "answer": "Könnten wir die Aufgaben neu verteilen?",
+      "sourceTaskIds": [
+        "DL-B1-03-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Verteilen die Aufgaben neu!",
+          "correct": false,
+          "finding": "ليس هذا سؤالًا، وصيغة الأمر الرسمية تحتاج Sie؛ لا تكفي Verteilen die… ."
+        },
+        {
+          "text": "Wir Aufgaben neu verteilen würden.",
+          "correct": false,
+          "finding": "وضع würden آخر هذه الرئيسية لا يطابق ترتيبها المطلوب، وليس سؤالًا."
+        },
+        {
+          "text": "Könnten wir die Aufgaben neu verteilen?",
+          "correct": true,
+          "finding": "Könnten wir…? طلب مهذب بترتيب سؤال نعم/لا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q07",
+      "text": "Welche Stelle wird im Kulturzentrum angeboten?",
+      "finding": "يعلن النص عن وظيفة مساعدة بدوام جزئي في المركز الثقافي.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "Eine Vollzeitstelle als Lehrkraft.",
+        "Eine Teilzeitstelle als Assistenz.",
+        "Ein Praktikum in einem Hotel."
+      ],
+      "answer": "Eine Teilzeitstelle als Assistenz.",
+      "sourceTaskIds": [
+        "DL-B1-03-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Eine Vollzeitstelle als Lehrkraft.",
+          "correct": false,
+          "finding": "دوام كامل ومعلم لا يطابقان عنوان الإعلان."
+        },
+        {
+          "text": "Eine Teilzeitstelle als Assistenz.",
+          "correct": true,
+          "finding": "مساعدة بدوام جزئي كما يقول العنوان."
+        },
+        {
+          "text": "Ein Praktikum in einem Hotel.",
+          "correct": false,
+          "finding": "تدريب في فندق غير مذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q08",
+      "text": "Bis wann soll die Bewerbung geschickt werden?",
+      "finding": "يطلب الإعلان إرسال الطلب خلال الأسبوعين المقبلين.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "Bis heute Nachmittag.",
+        "Innerhalb der nächsten zwei Wochen.",
+        "Bis Donnerstag."
+      ],
+      "answer": "Innerhalb der nächsten zwei Wochen.",
+      "sourceTaskIds": [
+        "DL-B1-03-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Bis heute Nachmittag.",
+          "correct": false,
+          "finding": "بعد ظهر اليوم مهلة رد Farid، لا طلب التوظيف."
+        },
+        {
+          "text": "Innerhalb der nächsten zwei Wochen.",
+          "correct": true,
+          "finding": "خلال الأسبوعين المقبلين من الإعلان."
+        },
+        {
+          "text": "Bis Donnerstag.",
+          "correct": false,
+          "finding": "الخميس يخص اقتراح اجتماع Farid، لا الإعلان."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q09",
+      "text": "Wer ruft an?",
+      "finding": "الاسم مذكور نصًا: Farid من فريق المشروع؛ لا نحدده من الصوت المشترك مع Omar ولا من حوار Nora.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "Nora aus dem Projektteam.",
+        "Farid aus dem Projektteam.",
+        "Omar aus dem Kulturzentrum."
+      ],
+      "answer": "Farid aus dem Projektteam.",
+      "sourceTaskIds": [
+        "DL-B1-03-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Nora aus dem Projektteam.",
+          "correct": false,
+          "finding": "Nora من الحوار وليست اسم المتصل."
+        },
+        {
+          "text": "Farid aus dem Projektteam.",
+          "correct": true,
+          "finding": "Farid من فريق المشروع صراحة في الاستماع."
+        },
+        {
+          "text": "Omar aus dem Kulturzentrum.",
+          "correct": false,
+          "finding": "Omar من الحوار؛ لا يثبت أنه من المركز الثقافي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-Q10",
+      "text": "Welchen Grund nennt Farid für seinen Vorschlag, die Besprechung zu verschieben?",
+      "finding": "يذكر موعدًا مع عميل يوم الأربعاء سببًا لاقتراحه. لا يثبت النص أنه غير متاح طوال اليوم أو أن نقل الاجتماع إلى الخميس قُبل ونُفذ.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "SUB",
+        "MODAL",
+        "APPLY",
+        "WITHIN"
+      ],
+      "options": [
+        "Er hat einen Termin mit einem Kunden.",
+        "Er muss den Bericht prüfen.",
+        "Er arbeitet am Mittwoch nicht."
+      ],
+      "answer": "Er hat einen Termin mit einem Kunden.",
+      "sourceTaskIds": [
+        "DL-B1-03-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Er hat einen Termin mit einem Kunden.",
+          "correct": true,
+          "finding": "موعد مع عميل سبب مذكور."
+        },
+        {
+          "text": "Er muss den Bericht prüfen.",
+          "correct": false,
+          "finding": "فحص التقرير عرض Nora لا سبب Farid."
+        },
+        {
+          "text": "Er arbeitet am Mittwoch nicht.",
+          "correct": false,
+          "finding": "لا يقول إنه لا يعمل الأربعاء."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-P01",
+      "text": "اكتب رسالة تدريبية إلى وظيفة خيالية في مركز ثقافي. أضف تحية وختامًا خارج خمس جمل للمتن: جملة تحدد الوظيفة المطلوبة؛ جملة تذكر مهارة؛ جملة تذكر خبرة خيالية؛ جملة بـwürde + المصدر تبين ما تود تقديمه للفريق؛ وسؤال مهذب يطلب موعد مقابلة. رتّب المصدر والفعل، واستخدم صيغة المخاطبة الرسمية Sie. المهمة كتابة فقط، ولا يُشترط الجهر أو التسجيل أو إرسال الرسالة أو إدخال بيانات حقيقية.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحد والإقرار ليسا تصحيح لغة أو نطق أو ضمان وظيفة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "APPLY"
+      ],
+      "criteria": {
+        "taskCompletion": "تحية وختام خارج خمس جمل للمتن: وظيفة ومهارة وخبرة خيالية وما يود تقديمه وطلب موعد مقابلة؛ كتابة فقط.",
+        "meaningClarity": "رسالة تدريبية مترابطة للمركز الثقافي، يظهر فيها ما يقدمه المتقدم وما يطلبه دون بيانات حقيقية أو ادعاء إرسال.",
+        "targetSkill": "würde + مصدر في الجزء الرئيسي، وطلب مقابلة مهذب، ومخاطبةSie/Ihr المناسبة مع ترتيب الجملة الصحيح."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 240,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "تحية وختام خارج خمس جمل للمتن: وظيفة ومهارة وخبرة خيالية وما يود تقديمه وطلب موعد مقابلة؛ كتابة فقط.",
+          "finding": "تحية وختام خارج خمس جمل؛ 289 حرفًا للمتن و 344 للكامل فوق 240، وكتابة فقط دون شرط جهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "رسالة تدريبية مترابطة للمركز الثقافي، يظهر فيها ما يقدمه المتقدم وما يطلبه دون بيانات حقيقية أو ادعاء إرسال.",
+          "finding": "طلب وظيفة خيالي مترابط بمهارة وخبرة ورغبة وطلب موعد، لا إرسال أو ملف سيرة حقيقي."
+        },
+        {
+          "key": "targetSkill",
+          "text": "würde + مصدر في الجزء الرئيسي، وطلب مقابلة مهذب، ومخاطبةSie/Ihr المناسبة مع ترتيب الجملة الصحيح.",
+          "finding": "würde…einbringen و Könnten Sie…anbieten و Ihr الرسمية؛ لا ادعاء أن الاسم يفرض hätte أو أن المصدر آخر كل جملة مركبة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-P02",
+      "text": "اكتب محاكاة اجتماع خيالية من أربعة أدوار بينA وB. يبدأA بذكر أن اليوم الاثنين وموعد تسليم التقرير الجمعة ويسأل عن اقتراح؛ يقترحB بـwürde + المصدر أن يفحص النص وأن يفحصA الأرقام؛ يطلبA بـKönnten wir ...? مقارنة النتائج غدًا؛ ويوافقB ويحدد إرسال جزئه إلىA بحلول صباح الغد. اكتب الدورين ثم اقرأهما جهرًا دون شريك أو تسجيل. يمكن أن يضم الدور أكثر من جملة؛ لا موعد حقيقي أو إرسال فعلي مطلوب.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحد والإقرار ليسا تصحيح لغة أو نطق أو ضمان وظيفة.",
+      "sourceIds": [
+        "K2",
+        "QUESTION",
+        "MAIN",
+        "APPLY"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أدوار تتضمن الاثنين والجمعة، توزيع فحص النص والأرقام بينB وA، طلب مقارنة النتائج غدًا وموافقةB وإرسال جزئه بحلول صباح الغد؛ الجهر بالدورين.",
+        "meaningClarity": "يفهم القارئ من يفحص كل جزء وما الخطوة التالية ومهلتها؛ لا اختلاط بمواعيد الإعلان أو اتصالFarid.",
+        "targetSkill": "اقتراح بـwürde + المصدر وطلب بـKönnten wir ...? معًا، مع المصدر آخر الجزء المعني وترتيب السؤال والمخاطبة الرسمية الصحيح."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أدوار تتضمن الاثنين والجمعة، توزيع فحص النص والأرقام بينB وA، طلب مقارنة النتائج غدًا وموافقةB وإرسال جزئه بحلول صباح الغد؛ الجهر بالدورين.",
+          "finding": "أربعة أدوار وموعد وتوزيع مهام وطلب وموافقة، مع الجهر؛ نموذج 276 حرفًا فوق 220."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يفهم القارئ من يفحص كل جزء وما الخطوة التالية ومهلتها؛ لا اختلاط بمواعيد الإعلان أو اتصالFarid.",
+          "finding": "الاثنين والجمعة وغدًا وصباح الغد تتسق داخل المشهد الخيالي؛ توزيع النص لـ B والأرقام لـ A واضح."
+        },
+        {
+          "key": "targetSkill",
+          "text": "اقتراح بـwürde + المصدر وطلب بـKönnten wir ...? معًا، مع المصدر آخر الجزء المعني وترتيب السؤال والمخاطبة الرسمية الصحيح.",
+          "finding": "معيار الهدف صار würde و Könnten معًا لا مجرد اقتراح أو طلب؛ مواضع المصدر والمصرف صحيحة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-03-AUD-PHR-01",
+      "text": "Die Stelle, die Stellen. Die Bewerbung, die Bewerbungen. Die Erfahrung, die Erfahrungen. Die Fähigkeit, die Fähigkeiten. Die Verantwortung. Die Aufgabe, die Aufgaben. Die Rückmeldung, die Rückmeldungen. Die Frist, die Fristen. Das Vorstellungsgespräch, die Vorstellungsgespräche. Sich bewerben um. Eine Aufgabe übernehmen. Zuverlässig. Selbstständig. Die Zusammenarbeit. Ich würde gern mehr Verantwortung übernehmen. Wir würden die Frist verlängern. Ich würde vorschlagen, dass wir zuerst die Aufgaben verteilen. Ich hätte gern flexiblere Arbeitszeiten. Ich wäre gern Teil eines internationalen Teams. Was würden Sie vorschlagen? Könnten wir die Aufgaben neu verteilen? Ich würde zuerst den Bericht prüfen.",
+      "finding": "مطابقة نصية للكلمات والأصوات والمسارات والحالة، دون استماع أو توليد أو اعتماد صوتي جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Die Stelle, die Stellen.",
+          "finding": "Stelle مؤنث وجمعها Stellen؛ وظيفة/منصب في هذا السياق لا كل معاني الكلمة."
+        },
+        {
+          "text": "Die Bewerbung, die Bewerbungen.",
+          "finding": "Bewerbung مؤنث وجمعها Bewerbungen؛ طلب التوظيف لا المقابلة أو القبول."
+        },
+        {
+          "text": "Die Erfahrung, die Erfahrungen.",
+          "finding": "Erfahrung مؤنث وجمعها Erfahrungen؛ الخبرة أو تجارب؛ النص لا يطلب خبرة حقيقية حساسة."
+        },
+        {
+          "text": "Die Fähigkeit, die Fähigkeiten.",
+          "finding": "Fähigkeit مؤنث وجمعها Fähigkeiten؛ مهارة/قدرة لا وظيفة مضمونة."
+        },
+        {
+          "text": "Die Verantwortung.",
+          "finding": "Verantwortung مؤنث بمعنى المسؤولية في هذا السياق؛ الشرطة ليست إعلان منع كل استعمال جمع محتمل."
+        },
+        {
+          "text": "Die Aufgabe, die Aufgaben.",
+          "finding": "Aufgabe مؤنث وجمعها Aufgaben؛ مهمة لا الموعد النهائي."
+        },
+        {
+          "text": "Die Rückmeldung, die Rückmeldungen.",
+          "finding": "Rückmeldung مؤنث وجمعها Rückmeldungen؛ رد أو ملاحظات لا قرار إيجابي بالضرورة."
+        },
+        {
+          "text": "Die Frist, die Fristen.",
+          "finding": "Frist مؤنث وجمعها Fristen؛ أضيف معنى المهلة لأن الكلمة ليست نقطة زمنية فقط."
+        },
+        {
+          "text": "Das Vorstellungsgespräch, die Vorstellungsgespräche.",
+          "finding": "Vorstellungsgespräch محايد وجمعه Vorstellungsgespräche؛ مقابلة عمل لا فترة فراغ."
+        },
+        {
+          "text": "Sich bewerben um.",
+          "finding": "sich bewerben um انعكاسي؛ bewirbt sich مفرد، ويتغير الضمير مع المتقدم. um مع Akkusativ للمنصب."
+        },
+        {
+          "text": "Eine Aufgabe übernehmen.",
+          "finding": "eine Aufgabe übernehmen تولي مهمة؛ übernimmt متصلة لا nimmt…über في هذا المعنى."
+        },
+        {
+          "text": "Zuverlässig.",
+          "finding": "zuverlässig جدير بالثقة/يمكن الاعتماد عليه؛ وصف مهني لا ضمان نجاح آلي."
+        },
+        {
+          "text": "Selbstständig.",
+          "finding": "selbstständig مستقل في إنجاز العمل هنا، لا إعلان أن الوظيفة عمل حر."
+        },
+        {
+          "text": "Die Zusammenarbeit.",
+          "finding": "Zusammenarbeit مؤنث؛ تعاون في سياق الخبرة، وليس عدد أعضاء فريق محددًا."
+        },
+        {
+          "text": "Ich würde gern mehr Verantwortung übernehmen.",
+          "finding": "رغبة في مسؤولية أكبر؛ würde مصرف وübernehmen مصدر متصل، لا إثبات توليها فعلًا."
+        },
+        {
+          "text": "Wir würden die Frist verlängern.",
+          "finding": "تمديد افتراضي/مقترح؛ العربية لا تصفه موافقة مؤكدة أو مستقبلًا حتميًا."
+        },
+        {
+          "text": "Ich würde vorschlagen, dass wir zuerst die Aufgaben verteilen.",
+          "finding": "vorschlagen ينهي الرئيسية ثم فاصلة و dass مع verteilen مصرف أخير؛ لا نضع المصدر بعد كل التابعة."
+        },
+        {
+          "text": "Ich hätte gern flexiblere Arbeitszeiten.",
+          "finding": "hätte من haben لرغبة في أوقات أكثر مرونة؛ الاسم وحده ليس معيار الاختيار بين hätte و wäre."
+        },
+        {
+          "text": "Ich wäre gern Teil eines internationalen Teams.",
+          "finding": "wäre من sein للانتماء لفريق، مع Teil وهو اسم؛ يدحض تعميم hätte لكل اسم."
+        },
+        {
+          "text": "Was würden Sie vorschlagen?",
+          "finding": "Was سؤال عن اقتراح ثم würden Sie و vorschlagen مصدر؛ الرسمية لا تحدد عدد الأشخاص وحدها."
+        },
+        {
+          "text": "Könnten wir die Aufgaben neu verteilen?",
+          "finding": "Könnten wir طلب/اقتراح مهذب يبدأ بالمصرف ثم wir؛ لا إعادة توزيع منجزة."
+        },
+        {
+          "text": "Ich würde zuerst den Bericht prüfen.",
+          "finding": "اقتراح مراجعة التقرير أولًا؛ würde…prüfen لا مراجعة وقعت بالفعل."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-03-AUD-DLG-01",
+      "text": "Wir haben nur zwei Tage bis zur Frist. Was würden Sie vorschlagen? Ich würde die Aufgaben klar verteilen. Ich kann den Bericht prüfen. Ich würde gern die Präsentation vorbereiten. Gut. Könnten Sie mir bis morgen eine erste Version schicken? Ja, das würde ich gern übernehmen. Ich hätte noch eine Frage: Sollen wir die Rückmeldung der Kundinnen abwarten? Ja. Danach entscheiden wir gemeinsam.",
+      "finding": "مطابقة نصية للكلمات والأصوات والمسارات والحالة، دون استماع أو توليد أو اعتماد صوتي جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Wir haben nur zwei Tage bis zur Frist. Was würden Sie vorschlagen?",
+          "finding": "المديرة تذكر يومين للمهلة وتسأل عن اقتراح؛ لا تاريخ أو ساعة نهائية أو تمديد مؤكد."
+        },
+        {
+          "text": "Ich würde die Aufgaben klar verteilen. Ich kann den Bericht prüfen.",
+          "finding": "Nora تقترح توزيعًا واضحًا وتعرض إمكان مراجعة التقرير؛ لا تقول إنها أنهته."
+        },
+        {
+          "text": "Ich würde gern die Präsentation vorbereiten.",
+          "finding": "Omar يرغب في تجهيز العرض؛ vorbereiten مصدر كامل لا انفصال verbal في هذا الموضع."
+        },
+        {
+          "text": "Gut. Könnten Sie mir bis morgen eine erste Version schicken?",
+          "finding": "طلب نسخة أولى بحلول الغد، وهي غير نهاية المهلة العامة ذات اليومين؛ Sie طلب رسمي لا إثبات الإرسال."
+        },
+        {
+          "text": "Ja, das würde ich gern übernehmen.",
+          "finding": "Omar يوافق على تولي ذلك؛ übernehmen يدل على تحمل المهمة لا إتمامها."
+        },
+        {
+          "text": "Ich hätte noch eine Frage: Sollen wir die Rückmeldung der Kundinnen abwarten?",
+          "finding": "Nora تسأل عن انتظار رد العميلات؛ hätte صيغة تلطيف للسؤال لا معنى أنها كانت تملك سؤالًا في الماضي فقط."
+        },
+        {
+          "text": "Ja. Danach entscheiden wir gemeinsam.",
+          "finding": "الموافقة على الانتظار ثم قرار مشترك؛ Danach ظرف ثم entscheiden wir، لا قرار وقع قبل الرد."
+        }
+      ],
+      "voiceIds": [
+        "voice-00",
+        "voice-02",
+        "voice-03",
+        "voice-00",
+        "voice-03",
+        "voice-02",
+        "voice-00"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-03-AUD-READ-01",
+      "text": "Wir suchen eine zuverlässige Person für unser Team. Zu den Aufgaben gehören die Terminplanung, die Beantwortung von E-Mails und die Vorbereitung kleiner Veranstaltungen. Erfahrung in der Zusammenarbeit mit Menschen ist hilfreich. Bewerberinnen und Bewerber sollten selbstständig arbeiten und freundlich kommunizieren können. Bitte schicken Sie Ihre Bewerbung innerhalb der nächsten zwei Wochen.",
+      "finding": "مطابقة نصية للكلمات والأصوات والمسارات والحالة، دون استماع أو توليد أو اعتماد صوتي جديد. العنوان Teilzeit/Assistenz مكتوب فقط ولا ينطقه التسجيل؛ أوضح المصدر ذلك، فلا ندعي أن صوت المتن يثبت جواب العنوان.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Wir suchen eine zuverlässige Person für unser Team.",
+          "finding": "تطلب الجهة شخصًا موثوقًا للفريق؛ لا اسم متقدم أو جنسه أو قبوله بالفعل."
+        },
+        {
+          "text": "Zu den Aufgaben gehören die Terminplanung, die Beantwortung von E-Mails und die Vorbereitung kleiner Veranstaltungen.",
+          "finding": "ثلاث مهام: المواعيد، رد البريد، تحضير فعاليات صغيرة؛ gehören جمع مع المهام، لا إدارة كل أعمال المركز."
+        },
+        {
+          "text": "Erfahrung in der Zusammenarbeit mit Menschen ist hilfreich.",
+          "finding": "الخبرة مع الناس مفيدة، وليس شرط سنوات محددًا أو إلزامًا منصوصًا عليه."
+        },
+        {
+          "text": "Bewerberinnen und Bewerber sollten selbstständig arbeiten und freundlich kommunizieren können.",
+          "finding": "الاستقلالية والتواصل الودي قدرتان مرغوبتان؛ sollten … können لا ضمان مقابلة أو أهلية قانونية."
+        },
+        {
+          "text": "Bitte schicken Sie Ihre Bewerbung innerhalb der nächsten zwei Wochen.",
+          "finding": "الطلب خلال الأسبوعين المقبلين بالنسبة لسياق الإعلان؛ لا بعد أسبوعين أو موعد Farid اليوم، ولا تاريخ تقويمي معلوم."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-B1-03-AUD-LST-01",
+      "text": "Guten Morgen, hier ist Farid aus dem Projektteam. Ich würde vorschlagen, dass wir die Besprechung auf Donnerstag verschieben. Am Mittwoch habe ich einen Termin mit einem Kunden. Könnten Sie mir bitte bis heute Nachmittag eine Rückmeldung geben? Dann kann ich den Kalender aktualisieren. Vielen Dank.",
+      "finding": "مطابقة نصية للكلمات والأصوات والمسارات والحالة، دون استماع أو توليد أو اعتماد صوتي جديد. الاسم Farid صريح، وإن كان الصوت نفسه voice03 لشخصية Omar؛ لا نخلط الهوية أو المواعيد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Guten Morgen, hier ist Farid aus dem Projektteam.",
+          "finding": "Farid يعرف نفسه وفريق المشروع صباحًا؛ الاسم من الكلمات لا تمييز صوتي عن Omar الذي يشاركه voice03."
+        },
+        {
+          "text": "Ich würde vorschlagen, dass wir die Besprechung auf Donnerstag verschieben.",
+          "finding": "يقترح الخميس بدل الموعد موضوع الحديث؛ dass تنتهي بالمصرف verschieben، ولا يقول إن الجميع وافق."
+        },
+        {
+          "text": "Am Mittwoch habe ich einen Termin mit einem Kunden.",
+          "finding": "موعد مع عميل الأربعاء هو السبب المعطى؛ لا إثبات استحالة كل ساعات الأربعاء أو هوية العميلات في الحوار."
+        },
+        {
+          "text": "Könnten Sie mir bitte bis heute Nachmittag eine Rückmeldung geben?",
+          "finding": "طلب رد بحلول بعد ظهر اليوم؛ سؤال مهذب لا موعد دقيق بالساعة ولا صياغةقبل الظهر."
+        },
+        {
+          "text": "Dann kann ich den Kalender aktualisieren.",
+          "finding": "Dann kann ich … aktualisieren إمكان تحديث بعد الرد؛ لا تحديث مؤكد الوقوع أو تم فعلًا."
+        },
+        {
+          "text": "Vielen Dank.",
+          "finding": "شكر ختامي؛ ليس معلومات إضافية عن موافقة الطرف الآخر أو مكان الاجتماع."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-03-work-communication-konjunktiv.md": "6e5dabf889312417731dd34f160ae1070654bdd86538e91e36069ad557bb85c5",
+    "content/B1/lesson-03-work-communication-konjunktiv.assessment.json": "caea306d1e2d0142da104a3974dad394241bd827f60ac85a27f51e50984cad88"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-03-AUD-PHR-01": "bd535822e3826a6272db845aeb7d46e60044302802efee6f4daaea0c0a120366",
+    "DL-B1-03-AUD-DLG-01": "f5e3f6395574386b0c4e749d7c704b5a4cf7886d3d6fbf6e4e50aa3d2832eff6",
+    "DL-B1-03-AUD-READ-01": "4f3fba1f279f0bda187afc040e2e5388d641767bb79ae06bd9c56ea64ab4dee2",
+    "DL-B1-03-AUD-LST-01": "33aa31c0ec955abc8f52c32ad67df959f6dd6fb9385df9de530ec96f4ccfeac9"
+  },
+  "preservation": {
+    "baseline": "23ea56c8e9ceb5827f0ce6a3fbbb8df727133205",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-B1-03-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-03-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-03-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-B1-03-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "otherAudioRegisterRowsUnchanged": 213,
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 115,
+    "existingAudioConsistencyAssertionsUnchanged": true
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 2032618,
+    "cacheVersion": "v80",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserResult": "All five suites eventually PASS; forms_keyboard failed first at390, then unchanged full rerun passed both widths; cause unresolved.",
+    "axeScreenStates": 145,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 99,
+    "axeIncompleteNodeOccurrences": 223,
+    "narrowStates": 126,
+    "formsAttempts": [
+      {
+        "attempt": 1,
+        "result": "FAIL at390 after1440 PASS",
+        "error": "page.waitForEvent: Timeout 30000ms exceeded while waiting for event filechooser",
+        "location": "tools/test_forms_keyboard.cjs:48:52"
+      },
+      {
+        "attempt": 2,
+        "result": "PASS1440/390",
+        "change": "No app/test changes or weakened assertions; fresh isolated profiles; root cause not established."
+      }
+    ],
+    "browserEnvironment": "Locked npm dependencies plus Sparticuz143.0.4 and bundled al2023 libraries outside Git; no package/lock changes.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 33
+    },
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS",
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "CR29 filechooser intermittency recurred in CR33; unchanged successful rerun is not a fix.",
+      "Evidence checks are not automatic language/pronunciation assessment.",
+      "Reading audio omits the written job title; title-based comprehension is written evidence, not spoken evidence.",
+      "Prior A2.8/A2.9 audio limitations and B1.2 written Geschmäcker clarification remain unchanged.",
+      "No human reviewer prerequisite; no remote UI or Production test claimed."
+    ]
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "f097bb771c9d9d090c200714223ad64e0cf7d387",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false
+  },
+  "campaign": {
+    "reviewedLessons": 32,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 21,
+    "next": "CR34/B1.4"
+  }
+}
