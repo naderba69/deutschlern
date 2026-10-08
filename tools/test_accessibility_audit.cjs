@@ -236,6 +236,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.5-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.5-practical-form-fixture', width);
+  // CR36: written advice and spoken break agreement.
+  await page.evaluate(() => openLesson('b1-06-health-fitness-advice'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.6-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.6-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

@@ -1294,6 +1294,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.5 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR36: written advice and spoken break agreement; B1.6 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-06-health-fitness-advice').assessment.version, 'b1-06-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-06-health-fitness-advice');
+    const responses = ["Du solltest regelmäßige Pausen in deinen Tag einplanen. Du könntest in einer Pause einen kurzen Spaziergang machen. Du könntest ein Tempo wählen, das zu dir passt. Bei gesundheitlichen Fragen solltest du eine qualifizierte Fachperson um Rat bitten.", "Kollegin: Ich möchte morgen eine Pause einplanen. Kollege: Wir sollten einen Zeitpunkt wählen, der für uns beide passt. Kollegin: Wir könnten in der Mittagspause um dreizehn Uhr kurz nach draußen gehen. Kollege: Das passt für mich. Die Teilnahme ist freiwillig."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.6 models fit thresholds; advice is writing only, dialogue requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-06-health-fitness-advice').performanceTasks[1]], 'lesson:b1-06-health-fitness-advice', 'b1-06-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-06-health-fitness-advice').performanceTasks[0]], 'lesson:b1-06-health-fitness-advice', 'b1-06-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-06-health-fitness-advice');
+      const next=findLesson('b1-07-lifestyles-customs-cultures');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-06-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-06-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-06-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-06-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.6 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -1743,7 +1777,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     assert.ok(b1HealthPhrase.segments[0].text.includes(term), `B1.6 vocabulary audio must include ${term}`);
   }
   const b1HealthModel = b1HealthAudioAssets.find((asset) => asset.assetId === "DL-B1-06-AUD-MODEL-01");
-  const sourceB1HealthModels = b1HealthSourceForAudio.split("## 2) تقديم نصيحة بـsollte وkönnte")[1].split("## 3)")[0]
+  const sourceB1HealthModels = b1HealthSourceForAudio.split("## 2) تقديم نصيحة بـsollte وkönnte")[1].split("### مساعدة قبل النصوص والمهمات")[0].split("## 3)")[0]
     .split(/\r?\n/).filter((line) => line.startsWith("- **"))
     .map((line) => line.match(/^- \*\*(.*?)\*\*/)[1]).join(" ");
   assert.equal(b1HealthModel.segments[0].text, sourceB1HealthModels, "B1.6 model sentences must match the selected source examples");
@@ -2063,8 +2097,11 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(b1HealthAssessment.assessment?.minimumScore, 80, "B1.6 must enforce the 80 percent mastery threshold");
   assert.equal(b1HealthAssessment.quiz?.length, 10, "B1.6 must include ten scored questions");
   assert.equal(b1HealthAssessment.performanceTasks?.length, 2, "B1.6 must include two practical self-check tasks");
-  assert.equal(b1HealthAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-06-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking")), true, "B1.6 performance tasks must map to the general-advice source task, offer oral and written modes, and work without audio");
-  assert.match(b1HealthSource, /أو قدّم النصائح شفهيًا/);
+  assert.equal(b1HealthAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-06-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing")), true, "B1.6 tasks must map to the source and work without recorded audio");
+  assert.doesNotMatch(b1HealthSource, /أو قدّم النصائح شفهيًا/);
+  for (const task of b1HealthAssessment.performanceTasks) assert.ok(b1HealthSource.includes(task.prompt));
+  assert.deepEqual(b1HealthAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.deepEqual(b1HealthAssessment.performanceTasks.map(t => t.selfCheck.speakAloud), [false,true]);
   const b1HealthQuestionSources = new Set(b1HealthAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b1HealthQuestionSources.has(`DL-B1-06-T0${task}`), `B1.6 quiz must cover source task T0${task}`);
   const b1HealthReadingQuestion = b1HealthAssessment.quiz.find((question) => question.id === "DL-B1-06-Q06");
