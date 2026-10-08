@@ -1163,11 +1163,28 @@
     "implementationCommit": "23d506fdd1485e49b31c26ba0c94b56901b5dcb0",
     "followupCommit": "bc4813680f7b691a50aa4d01c217242c3d83bbf3",
     "implementationPushVerified": true,
-    "reviewCommit": "See git log for CR16 review commit; post-push receipt follows.",
+    "reviewCommit": "292e7fcef815494c3b0290cb6a155223c065b68d",
     "merged": false,
     "nextLesson": "A1.11",
     "reviewedLessons": 15,
     "remainingLessons": 38,
-    "gateSeparate": true
+    "gateSeparate": true,
+    "reviewPushVerified": true,
+    "pullRequest": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "headRefOid": "292e7fcef815494c3b0290cb6a155223c065b68d"
+    },
+    "vercel": {
+      "implementationStatus": "success",
+      "followupStatus": "success",
+      "reviewStatus": "success",
+      "deploymentId": 6938416651,
+      "environment": "Preview",
+      "url": "https://deutschlern-h8s79otf3-balinader-2671s-projects.vercel.app"
+    },
+    "remoteVerification": "Deployment metadata only; no remote bundle fetch or UI test and no production claim.",
+    "receiptCommit": "Separate documentation commit: Record CR16 push and Preview delivery receipt; see git log."
   }
 }
