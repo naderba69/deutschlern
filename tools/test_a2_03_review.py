@@ -41,7 +41,19 @@ with (R/'data/audio-asset-register.csv').open(encoding='utf-8-sig',newline='') a
 if sys.argv[1:]==['--implementation-only']:
  print('PASS A2.3 implementation: quantities/man/tasks/keys/catalog/turns/audio/bundle. Detailed artifact not checked.');raise SystemExit
 D=json.loads((R/'data/reviews/a2-03-review.json').read_text());ids={u['id'] for u in D['units']}
-assert len(ids)==D['unitCount']==len(D['units'])
+expected=set()
+for k,n in [('scope',10),('vocab',20),('quantity',6),('shop',3),('man',3),('helper',12),('dialogue',7),('reading',6),('reading-question',5),('listening',3),('listening-question',4),('writing-model',5),('speaking-model',5),('card',4),('T',8),('Q',10),('P',2)]:
+ expected|={f'DL-A2-03-{k}{i:02}' if k in ['T','Q','P'] else f'{k}-{i:02}' for i in range(1,n+1)}
+expected|={x['assetId'] for x in assets}
+assert ids==expected and len(ids)==D['unitCount']==len(D['units'])==117
+assert len(D['sources'])==11 and all(x['access']=='full_fetched_page' for x in D['sources'])
+phr=next(x for x in assets if x['kind']=='phrase_bank')
+items=next(u for u in D['units'] if u['id']==phr['assetId'])['items']
+assert len(items)==26 and ' '.join(x['text'] for x in items)==phr['segments'][0]['text']
+for item in items:assert item['text'].rstrip('.?!').lower() in s.lower()
+for k,kind in [('dialogue','dialogue'),('reading','reading'),('listening','listening')]:
+ reviewed=' '.join(u['text'] for u in D['units'] if u['id'].startswith(k+'-') and not u['id'].startswith(k+'-question'))
+ assert reviewed==' '.join(seg['text'] for x in assets if x['kind']==kind for seg in x['segments'])
 for u in D['units']:assert u['finding'] and set(u['sourceIds'])<={x['id'] for x in D['sources']}
 for i,n in enumerate([4,4,5,4,4,4,4,10],1):
  u=next(x for x in D['units'] if x['id']==f'DL-A2-03-T{i:02}');assert len(u['items'])==n and u['text']==T[i]
