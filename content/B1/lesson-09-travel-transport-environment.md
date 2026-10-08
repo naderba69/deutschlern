@@ -200,4 +200,4 @@
 - **Bevor wir losfahren, prüfen wir den Fahrplan.** → قبل أن ننطلق، نتحقق من جدول المواعيد.
 - **Während ich warte, lese ich.** → بينما أنتظر، أقرأ.
 - **Nachdem wir angekommen sind, nehmen wir den Bus.** → بعد أن نصل، نستقل الحافلة.
-- **der Anschluss / der Umstieg** → خط التوصيل / تبديل وسيلة النقل.
+- **der Anschluss / der Umstieg** → رحلة مواصلة / انتقال إلى مركبة أخرى.
