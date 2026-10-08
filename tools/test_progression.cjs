@@ -1260,6 +1260,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.4 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR35: written neighborhood and spoken tour; B1.5 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-05-cities-relative-clauses').assessment.version, 'b1-05-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-05-cities-relative-clauses');
+    const responses = ["Mein fiktives Viertel liegt südlich der Innenstadt. Ich besuche gern den Marktplatz, der im Zentrum liegt. Die Bibliothek befindet sich neben dem Marktplatz. Der Park, den viele Familien besuchen, liegt neben der Bibliothek. Am Wochenende gehe ich gern durch die ruhigen Straßen.", "Besucherin: Wo beginnt unsere Runde? Stadtführer: Wir beginnen auf dem Marktplatz, der direkt am Fluss liegt. Besucherin: Welchen Ort besuchen wir danach? Stadtführer: Danach besuchen wir den Park, den viele Familien mögen. Er liegt neben dem Marktplatz."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.5 models fit thresholds; description is writing only, dialogue requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-05-cities-relative-clauses').performanceTasks[1]], 'lesson:b1-05-cities-relative-clauses', 'b1-05-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-05-cities-relative-clauses').performanceTasks[0]], 'lesson:b1-05-cities-relative-clauses', 'b1-05-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-05-cities-relative-clauses');
+      const next=findLesson('b1-06-health-fitness-advice');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-05-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-05-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-05-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-05-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.5 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2007,7 +2041,10 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(b1CitiesAssessment.quiz?.length, 10, "B1.5 must include ten scored questions");
   assert.equal(b1CitiesAssessment.performanceTasks?.length, 2, "B1.5 must include two practical self-check tasks");
   assert.equal(b1CitiesAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-05-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), true, "B1.5 performance tasks must map to the city-description activity and work without audio");
-  assert.match(b1CitiesSource, /أو قدّمه شفهيًا/);
+  // CR35 replaces the obsolete oral-only alternative with source/evidence parity.
+  assert.doesNotMatch(b1CitiesSource, /أو قدّمه شفهيًا/);
+  for (const task of b1CitiesAssessment.performanceTasks) assert.ok(b1CitiesSource.includes(task.prompt));
+  assert.deepEqual(b1CitiesAssessment.performanceTasks.map(task => task.selfCheck.speakAloud), [false, true]);
   const b1CitiesGrammarQuestion = b1CitiesAssessment.quiz.find((question) => question.id === "DL-B1-05-Q02");
   assert.ok(b1CitiesGrammarQuestion.sourceTaskIds.includes("DL-B1-05-T02"), "B1.5 relative-pronoun question must map to its source fill-in task");
   assert.equal(b1CitiesGrammarQuestion.options[b1CitiesGrammarQuestion.answerIndex], "den", "the B1.5 masculine accusative relative pronoun must be den");
