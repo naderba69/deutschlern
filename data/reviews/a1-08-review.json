@@ -1,0 +1,1207 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-08-shopping-clothes",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-08-v2",
+  "unitCount": 120,
+  "exerciseSubItemCount": 35,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "MODAL",
+      "title": "Lingolia Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "كامل: صيغ müssen، مصدر الفعل الكامل، kann و möchte؛ الاستعمالات الزمنية المتقدمة خارج هدف الدرس."
+    },
+    {
+      "id": "BRAUCHEN",
+      "title": "Duden brauchen",
+      "url": "https://www.duden.de/rechtschreibung/brauchen",
+      "scope": "كامل: احتياج لغرض، braucht/brauchte؛ استعمال nicht/nur brauchen مع مصدر موجود لكنه خارج هذا الدرس."
+    },
+    {
+      "id": "ANPROBIEREN",
+      "title": "Duden anprobieren",
+      "url": "https://www.duden.de/rechtschreibung/anprobieren",
+      "scope": "كامل: تجربة الملابس لملاءمتها، probiert an؛ يدعم شرح الفصل."
+    },
+    {
+      "id": "PASSEN",
+      "title": "Duden passen",
+      "url": "https://www.duden.de/rechtschreibung/passen",
+      "scope": "كامل: ملاءمة الملابس للجسم والمقاس، لا مجرد الإعجاب باللون."
+    },
+    {
+      "id": "TSHIRT",
+      "title": "Duden T-Shirt",
+      "url": "https://www.duden.de/rechtschreibung/T_Shirt",
+      "scope": "كامل: Oberteil kurzärmlig؛ das T-Shirt، die T-Shirts؛ يدعم تصحيح «القميص القصير»."
+    },
+    {
+      "id": "PAAR",
+      "title": "Duden Paar",
+      "url": "https://www.duden.de/rechtschreibung/Paar",
+      "scope": "كامل: شيئان متلازمان، ein Paar Schuhe؛ محايد، مع صيغ جمع تختلف بحسب الاستعمال، لا تعميم Paare لكل كمية."
+    },
+    {
+      "id": "SIZE",
+      "title": "Duden Größe",
+      "url": "https://www.duden.de/rechtschreibung/Groesze",
+      "scope": "كامل: قياس الملابس، Größen جمع، Schuhe in Größe40؛ لا دليل على جدول تحويل المقاسات."
+    },
+    {
+      "id": "DECL",
+      "title": "Lingolia Adjektivdeklination",
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive/deklination",
+      "scope": "الجزء 0: نهاية الصفة بحسب الأداة والجنس والعدد والحالة، يدعم التراكيب المعطاة؛ لم يُقرأ الجزء 1."
+    },
+    {
+      "id": "ADJ",
+      "title": "Lingolia Adjektive",
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive",
+      "scope": "الجزء 0: الفرق بين الصفة قبل الاسم وبعد sein، والمقارنة بـ-er و teuer→teurer؛ لم يُقرأ الجزء 1 ولم نعمم وجوب als إذا لم يُذكر طرف المقارنة صراحةً."
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive/steigerung",
+      "reason": "المسترجع صفحة غير موجودة؛ استُخدمت صفحة adjektive الفعلية."
+    },
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive/komparativ-superlativ",
+      "reason": "المسترجع صفحة غير موجودة؛ استُخدمت صفحة adjektive الفعلية."
+    }
+  ],
+  "limitations": [
+    "120 وحدة مراجعة و35 بندًا أو مطلبًا متداخلة؛ صف المفرد والجمع وحدة واحدة، وخمسة أقوال للزبون ليست خمسة أدوار حوار متناوبة.",
+    "9 مراجع تدعم نطاقها؛ لم يُجلب مدخل مستقل لكل لفظ أو ترجمة عربية. بعض التصريفات والمعاني والاستنتاجات مراجعة مباشرة للمساعد.",
+    "الحوار7 أقوال، القراءة7 جمل، الاستماع6 جمل؛ ثلاثة أصول/9 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد.",
+    "الإقرار والطول والتفريغ لا تثبت جودة اللغة أو النطق أو الاستماع المستقل؛ لا شهادةCEFR أو شرط مراجع بشري للاستمرار."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-08-shopping-clothes.md": "82004cfd5b8ee2dfe40f0f3a37f561119dc3a01f8ae93debcac4606ddcb16710",
+    "content/A1/lesson-08-shopping-clothes.assessment.json": "62197381305ca3d6c36554ac91d527bcc11b94b96a0998ca1933b86657c704f5"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-08-AUD-DLG-01": "3af0899dd8bef54e0c8c38fdc2db3e9e8677e96370f8aaca3b71a1d262067dab",
+    "DL-A1-08-AUD-READ-01": "55952f22cb7914413e479eeb9e296ba32b045d46a8a0e6766fa26120ddde9761",
+    "DL-A1-08-AUD-LST-01": "9ff45f0c94bd21eeff596a893a728485134da9e50766186b60e37820472ead4b"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "الهدف والمدة",
+      "finding": "طلب غرض وسعر ومقاس واحتياج؛ الكتابة والاستماع الاختياري صريحان.35 دقيقة تقدير مرن لا قياس ثابت.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "حدود المفردات والصفات",
+      "finding": "جدول المفردات يعرض المفرد والجمع حيث يلزم، ولا يعامل الأفعال كأسماء. تراكيب الصفات مساعدة معطاة لا اختبار لتصريف كامل.",
+      "sourceIds": [
+        "DECL"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "brauchen مقابل müssen",
+      "finding": "Ich brauche ein Hemd احتياج لغرض؛ Ich muss ein Hemd kaufen ضرورة فعل. استُبدل المثال غير الملائم T03.2؛ لا ادعاء أن muss brauchen مستحيلة في كل سياق استنتاجي.",
+      "sourceIds": [
+        "BRAUCHEN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "ترتيب الجملة والمصدر",
+      "finding": "في الخبرية البسيطة: müssen مصرف في الموقع الثاني والمصدر كامل بلا zu في النهاية. السؤال نعم/لا يبدأ بالفعل المصرف؛ لا تعميم على الجمل التابعة وكل الأزمنة.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "عرض ورغبة وطلب إذن",
+      "finding": "Möchten Sie… عرض على الزبون، Kann ich… طلب تجربة منه؛ ليستا ضرورة müssen. العبارة الجاهزة تسبق Q10 والتطبيق.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "من يسأل عن المقاس؟",
+      "finding": "Welche Größe haben Sie? سؤال البائع عن مقاس الزبون هنا؛ Haben Sie Größe38? سؤال الزبون عن المتاح. صُححت البطاقة والتقييم والسياق دون حصر كل استعمالات haben.",
+      "sourceIds": [
+        "SIZE"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "حدود الحوار",
+      "finding": "الزبونة تختار الشراء رغم الأكمام الطويلة؛ لا نفترض أنها صارت مناسبة أو عُدلت. الأقوال السبعة محفوظة وفي فقرات منفصلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-08",
+      "text": "حدود القراءة",
+      "finding": "المقارنة صريحة بأن الثاني أرخص، لا أنه رخيص أو أن لونه ومقاسه مذكوران. نفي احتياج بنطال غير مسند؛ T05.1 صار نقيض وصف الأحذية القديمة.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "scope-09",
+      "text": "حدود الاستماع",
+      "finding": "التفريغ ظاهر؛ لا قياس مستقل للاستماع. السؤال 3 صار عن طول السوداء بدل افتراض سبب الشراء الوحيد؛ الجواب المباشر zu lang. لا صوت مطلوب للتقييم.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود الأداء",
+      "finding": "خمسة أقوال للزبون مع الجهر، وقائمة ثلاثية مع جملتين كتابة فقط. حد الطول والإقرار لا يصححان اللغة أو النطق؛ لا مراجعة بشرية شرطًا للاستمرار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Jacke | die Jacken | السترة |",
+      "finding": "Jacke مؤنث وجمعها Jacken؛ المفعول eine Jacke.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Hemd | die Hemden | القميص |",
+      "finding": "Hemd محايد وجمعه Hemden؛ ليس Hemde.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das T-Shirt | die T-Shirts | تي شيرت (قميص قصير الأكمام) |",
+      "finding": "T-Shirt محايد وجمعه T-Shirts؛ صُحح المعنى إلى قصير الأكمام لا قصير الجسم.",
+      "sourceIds": [
+        "TSHIRT"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Hose | die Hosen | البنطال |",
+      "finding": "Hose مؤنث مفرد لبنطال واحد؛ Hosen جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Schuh | die Schuhe | الحذاء |",
+      "finding": "Schuh مذكر للحذاء الواحد و Schuhe جمع؛ يوضح فرق النص والمثال.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| der Mantel | die Mäntel | المعطف |",
+      "finding": "Mantel مذكر، Mäntel جمع معä؛ المفعول einen Mantel.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Größe | die Größen | المقاس |",
+      "finding": "Größe مؤنث، Größen جمع؛ المقاس في هذا السياق لا الحجم بكل معانيه.",
+      "sourceIds": [
+        "SIZE"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Farbe | die Farben | اللون |",
+      "finding": "Farbe مؤنث، Farben جمع؛ اسم اللون غير الصفة الملونة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Preis | die Preise | السعر |",
+      "finding": "Preis مذكر، Preise جمع؛ سعر لا مبلغ محدد مسبقًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| das Geschäft | die Geschäfte | المتجر |",
+      "finding": "Geschäft محايد، Geschäfte جمع معä؛ متجر هنا لا جميع معاني الكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| kaufen | — فعل | يشتري |",
+      "finding": "kaufen فعل، لا جمع اسمي؛ يحتاج في الأمثلة إلى غرض.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| anprobieren | — فعل منفصل | يجرّب (الملابس) |",
+      "finding": "anprobieren تجربة الملابس لمعرفة الملاءمة؛ فعل منفصل لا مجرد شراء.",
+      "sourceIds": [
+        "ANPROBIEREN"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| brauchen | — فعل | يحتاج |",
+      "finding": "brauchen احتياج، وليس مرادفًا آليًا لـ müssen في كل تركيب.",
+      "sourceIds": [
+        "BRAUCHEN"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| teuer / billig | — | غالٍ / رخيص |",
+      "finding": "teuer غالٍ و billig رخيص؛ لا ربط ضروري بين السعر والجودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| groß / klein | — | كبير / صغير |",
+      "finding": "groß كبير و klein صغير؛ لا مقارنة أكبر/أصغر من شيء آخر وحدهما.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-16",
+      "text": "| zu groß / zu klein | — | أكبر من اللازم / أصغر من اللازم |",
+      "finding": "zu groß/zu klein تتجاوزان المقاس المناسب؛ لا مجرد sehr أو صيغة Komparativ.",
+      "sourceIds": []
+    },
+    {
+      "id": "color-01",
+      "text": "schwarz — أسود",
+      "finding": "لون الأسود؛ schwarze قبل Hose صيغة معطاة.",
+      "sourceIds": []
+    },
+    {
+      "id": "color-02",
+      "text": "weiß — أبيض",
+      "finding": "الأبيض، معß في الكلمة الألمانية.",
+      "sourceIds": []
+    },
+    {
+      "id": "color-03",
+      "text": "blau — أزرق",
+      "finding": "الأزرق؛ Blau, bitte جواب مختصر يبدأ بحرف كبير لأنه بداية القول.",
+      "sourceIds": []
+    },
+    {
+      "id": "color-04",
+      "text": "rot — أحمر",
+      "finding": "الأحمر؛ لا خلط اللون بدرجة المقاس.",
+      "sourceIds": []
+    },
+    {
+      "id": "color-05",
+      "text": "grün — أخضر",
+      "finding": "الأخضر؛ ü جزء من الكتابة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-01",
+      "text": "**eine Jacke / ein Hemd / einen Mantel brauchen oder kaufen** — يحتاج إلى سترة/قميص/معطف أو يشتريه؛ مفعول Akkusativ: eine للمؤنث، ein للمحايد، einen للمذكر في هذه الأمثلة. نقول ich brauche وOmar braucht.",
+      "finding": "Akkusativ للمفرد: eine Jacke/ein Hemd/einen Mantel، مع brauche و braucht؛ دعم Q08 و T03.2.",
+      "sourceIds": [
+        "BRAUCHEN"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "**eine blaue Jacke / die schwarze Hose / schwarze Schuhe** — سترة زرقاء / البنطال الأسود / أحذية سوداء؛ الألوان قبل الاسم تأخذ نهايات بحسب السياق. احفظ هذه التراكيب؛ لا نطلب الآن جدول تصريف الصفات كاملًا.",
+      "finding": "blaue/schwarze قبل الاسم نهايات بحسب الجنس والعدد والحالة؛ لا ادعاء أن جميع الألوان تضيف e دائمًا.",
+      "sourceIds": [
+        "DECL"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "**die Ärmel / zu lang / schön** — الأكمام / أطول من اللازم / جميل؛ **in der Länge** تعني من حيث الطول؛ zu قبل الصفة هنا تعني تجاوز المناسب، لا «إلى» ولا مجرد «جدًا».",
+      "finding": "Ärmel جمع الأكمام؛ zu lang أطول من المناسب و in der Länge من حيث الطول، يدعمان الحوار وسؤال الاستماع 3.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-04",
+      "text": "**neue Schuhe / seine alten Schuhe** — أحذية جديدة / أحذيته القديمة؛ الضمير يعود إلى Omar. Schuh واحد وSchuhe جمع؛ في الاستعمال هنا نتحدث عن زوج أحذية.",
+      "finding": "الجديد والقديم في القراءة، و seine يرجع إلى Omar؛ Schuh لا يساوي زوجًا وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-05",
+      "text": "**im Geschäft / in Größe 42** — في المتجر / بمقاس42؛ im = in dem. M و38 و40 و42 أمثلة لمقاسات مختلفة، لا جدول تحويل عالمي بينها.",
+      "finding": "im للمكان و in Größe للمقاس؛ الأرقام والحرف أمثلة لا تحويلات عالمية.",
+      "sourceIds": [
+        "SIZE"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "**anprobieren / er probiert … an** — يجرّب الملابس / هو يجرّب؛ مع müssen يبقى المصدر كاملًا: Er muss die Schuhe anprobieren. أما بلا فعل ناقص: Er probiert die Schuhe an.",
+      "finding": "anprobieren مصدر متصل مع müssen، و probiert…an دون الفعل الناقص؛ يفسر ترتيب القراءة.",
+      "sourceIds": [
+        "ANPROBIEREN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "**bequem / sehr teuer / billiger / teurer** — مريح / غالٍ جدًا / أرخص / أغلى؛ billiger مقارنة بالأول في القراءة، ولا يثبت أنه رخيص مطلقًا. هذه مساعدة للفهم لا درس مقارنة كامل.",
+      "finding": "bequem مريح و sehr teuer غالٍ جدًا؛ billiger أرخص و teurer أغلى، والمقارنة لا تحدد سعرًا مطلقًا.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "**nach einem anderen Modell fragen** — يسأل عن نموذج آخر؛ عبارة مع nach + Dativ هنا بمعنى «عن»، لا اتجاه إلى مدينة كما في A1.7.",
+      "finding": "fragen nach عبارة طلب معلومة مع Dativ؛ ليست nach الوجهة المكانية.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "**das erste Paar / das zweite Paar / er kauft es** — الزوج الأول / الزوج الثاني / يشتريه؛ es يعود إلى Paar المحايد المفرد، لا إلى Schuhe الجمع.",
+      "finding": "Paar محايد مفرد كوحدة زوج؛ es يعود إليه، و zweite الثاني لا الأول.",
+      "sourceIds": [
+        "PAAR"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "**passen / sie passt gut / ich nehme sie** — يناسب المقاس / هي مناسبة جيدًا / سآخذها؛ sie تعود إلى Jacke أوHose بحسب النص، ولا تعني دائمًا شخصًا.",
+      "finding": "passen ملاءمة المقاس؛ sie يعود للقطعة المؤنثة و nehme اختيار شراء هنا.",
+      "sourceIds": [
+        "PASSEN"
+      ]
+    },
+    {
+      "id": "helper-11",
+      "text": "**einkaufen / bezahlen / am Samstag** — يتسوّق / يدفع الثمن / يوم السبت؛ مع müssen يأتي المصدر كاملًا في أمثلتنا. أسعار النصوص خيالية باليورو، لا أسعار متجر حقيقي.",
+      "finding": "einkaufen يتسوق و bezahlen يدفع؛ الأفعال معروضة قبل T02 و T03، والأسعار خيالية.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Guten Tag. Ich brauche eine Jacke.",
+      "finding": "تحية واحتياج لسترة، لا طلب ضرورة مجردة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Welche Farbe möchten Sie?",
+      "finding": "البائع يسأل عن اللون باحترام Sie و möchten.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Blau, bitte. Haben Sie Größe M?",
+      "finding": "الزبونة تختار الأزرق وتسأل هل يوجد M؛ لا تسأل البائع عن مقاس جسمه.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ja, hier ist eine blaue Jacke. Möchten Sie sie anprobieren?",
+      "finding": "عرض سترة زرقاء وسؤال رغبتها في التجربة؛ sie الصغيرة تعود للسترة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Ja, gern. Die Jacke ist schön, aber die Ärmel sind zu lang. Was kostet sie?",
+      "finding": "توافق وتصف جمالها لكن الأكمام طويلة ثم تسأل السعر؛ لا تلغِ aber عند الفهم.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Sie kostet 45 Euro.",
+      "finding": "45 يورو للسترة؛ Sie في البداية ضمير السترة لا Sie الرسمية مع kosten.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Gut, ich nehme sie. Danke!",
+      "finding": "اختيار الشراء والشكر رغم الملاحظة؛ لا دليل على اكتمال الدفع أو تعديل القطعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "verb-01",
+      "text": "| ich | muss |",
+      "finding": "ich muss بلاü.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-02",
+      "text": "| du | musst |",
+      "finding": "du musst مع st، لا muss.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-03",
+      "text": "| er/sie/es | muss |",
+      "finding": "er/sie/es muss؛ أضيف es.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-04",
+      "text": "| wir | müssen |",
+      "finding": "wir müssen معü وصيغة الجمع.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-05",
+      "text": "| ihr | müsst |",
+      "finding": "ihr müsst؛ لا musst الخاصة بـ du.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-06",
+      "text": "| sie / Sie | müssen |",
+      "finding": "sie/Sie müssen للجمع أو الاحترام؛ لا sie المفردة.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "modal-example-01",
+      "text": "**Ich muss eine Jacke kaufen.** — يجب أن أشتري سترة.",
+      "finding": "ich muss مع مصدر kaufen ونصب eine Jacke.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "modal-example-02",
+      "text": "**Wir müssen heute einkaufen.** — يجب أن نتسوّق اليوم.",
+      "finding": "wir müssen مع einkaufen كاملًا، لا kaufen ein.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "modal-example-03",
+      "text": "**Musst du die Schuhe anprobieren?** — هل يجب أن تجرّب الأحذية؟",
+      "finding": "Musst du سؤال ضرورة، مع Schuhe جمع ومصدر anprobieren في النهاية؛ ليس عرض رغبة.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "shop-01",
+      "text": "**Wie viel kostet die Hose?** — كم سعر البنطال؟",
+      "finding": "Wie viel kostet die Hose سؤال سعر مفرد، لا kosten.",
+      "sourceIds": []
+    },
+    {
+      "id": "shop-02",
+      "text": "**Die Hose kostet 30 Euro.**",
+      "finding": "30 يورو مثال مستقل؛ لا نخلطه بسترة 45.",
+      "sourceIds": []
+    },
+    {
+      "id": "shop-03",
+      "text": "**Welche Größe haben Sie?** — ما مقاسك؟ (البائع يسأل الزبون في هذا المثال)",
+      "finding": "البائع يسأل الزبون: ما مقاسك؟ ليست ترجمة حرفية لـ«ما الذي تحتاجه».",
+      "sourceIds": [
+        "SIZE"
+      ]
+    },
+    {
+      "id": "shop-04",
+      "text": "**Haben Sie Größe 38?** — هل لديكم مقاس 38؟ (الزبون يسأل البائع)",
+      "finding": "الزبون يسأل البائع عن توفر 38؛ تقديم haben والسياق يميزانه عن سؤال المقاس الشخصي.",
+      "sourceIds": [
+        "SIZE"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Omar braucht neue Schuhe.",
+      "finding": "يحتاج Omar أحذية جديدة؛ لا ينفي احتياجه إلى أغراض أخرى.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Seine alten Schuhe sind zu klein.",
+      "finding": "أحذيته القديمة أصغر من المناسب؛ نقيض كبيرة في T05.1.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Im Geschäft probiert er schwarze Schuhe in Größe 42 an.",
+      "finding": "يجرب سوداء بمقاس 42؛ فعل probiert…an منفصل.",
+      "sourceIds": [
+        "ANPROBIEREN",
+        "SIZE"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Die Schuhe sind bequem, aber sehr teuer.",
+      "finding": "الأحذية الأولى مريحة ولكن غالية؛ التمييز بين الراحة والسعر واضح.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Er fragt nach einem anderen Modell.",
+      "finding": "يسأل عن نموذج آخر؛ لا يحدد لونه أو مقاسه.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Das zweite Paar ist billiger.",
+      "finding": "الزوج الثاني أرخص مقارنة بالأول، لا ثمن عددي.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Omar kauft es.",
+      "finding": "يشتري الزوج الثاني؛ es للمفرد Paar لا للجمع Schuhe.",
+      "sourceIds": [
+        "PAAR"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was braucht Omar?",
+      "finding": "Neue Schuhe؛ لا Hose.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Warum braucht er neue Schuhe?",
+      "finding": "Seine alten Schuhe sind zu klein؛ سبب منصوص عليه.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Welche Farbe haben die ersten Schuhe?",
+      "finding": "Schwarz؛ اللون للأحذية الأولى، لا الثانية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Kauft Omar das erste oder das zweite Paar?",
+      "finding": "Das zweite Paar؛ الشراء يحسم الاختيار.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich möchte heute eine Hose kaufen.",
+      "finding": "رغبة شراء بنطال اليوم بـ möchte.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich brauche Größe 40.",
+      "finding": "مقاس 40؛ نقرأ الرقم لا M من الحوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Die schwarze Hose kostet 35 Euro.",
+      "finding": "السوداء 35 يورو، لا 30.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Sie ist zu lang.",
+      "finding": "السوداء طويلة أكثر من المناسب؛ sie مرجعها المؤنث.",
+      "sourceIds": [
+        "PASSEN"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Die blaue Hose kostet 30 Euro und passt gut.",
+      "finding": "الزرقاء 30 يورو ومناسبة؛ معلومتان صريحتان.",
+      "sourceIds": [
+        "PASSEN"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Ich nehme die blaue Hose.",
+      "finding": "اختيار الزرقاء؛ لا يحدد جنس المتكلم أو اسمه.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was möchte die Person kaufen?",
+      "finding": "Eine Hose؛ الغرض المطلوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Welche Größe braucht sie?",
+      "finding": "Größe40؛ sie مرجع die Person نحوي لا دليل جنس.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wie ist die schwarze Hose in der Länge?",
+      "finding": "Sie ist zu lang؛ صار السؤال عن الطول مباشرةً، لا افتراض سبب قرار وحيد.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Welche Hose kauft sie?",
+      "finding": "Die blaue Hose؛ nehme في السياق قرار الشراء، لا واقعة دفع موثقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-08-T01",
+      "text": "1. ألبسها فوق القميص في الشتاء: **der Mantel / die Tasse**\n2. ألبسها في القدم: **der Schuh / das Hemd**\n3. الكلمة التي تدل على مقاس الثوب: **die Größe / die Straße**",
+      "finding": "ثلاث مطابقات بأجوبة صحيحة؛ وُضحت صياغة بند المقاس.",
+      "sourceIds": [],
+      "items": [
+        "der Mantel، لا die Tasse؛ المعطف قطعة لباس والكوب ليس لباسًا.",
+        "der Schuh، لا das Hemd؛ ما يلبس في القدم.",
+        "die Größe، لا die Straße؛ المقاس لا الشارع."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T02",
+      "text": "1. Ich ______ eine Jacke kaufen.\n2. Du ______ die Schuhe anprobieren.\n3. Wir ______ heute einkaufen.\n4. ______ Sie bezahlen?",
+      "finding": "يطلب التصريف صراحةً؛ أربع صيغ متطابقة مع فاعلها.",
+      "sourceIds": [],
+      "items": [
+        "muss مع ich.",
+        "musst مع du.",
+        "müssen مع wir.",
+        "Müssen مع Sie الرسمية وبداية السؤال."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T03",
+      "text": "1. Ich muss die Hose ______. (kaufen)\n2. Er muss einen Mantel ______. (kaufen)\n3. Wir müssen Schuhe ______. (anprobieren)\n4. Wir müssen am Samstag ______. (einkaufen)\n\n**تطبيق كتابي مستقل:**\n\nاكتب قائمة من ثلاثة أغراض مختلفة من مفردات الملابس، ثم جملتين: الأولى تبدأ بـIch brauche وتذكر غرضًا واحدًا على الأقل من القائمة؛ والثانية تبدأ بـIch muss وتذكر فعلًا لازمًا مثل kaufen أوanprobieren أوeinkaufen، بالمصدر في النهاية. هذه مهمة كتابة فقط؛ يجوز اختيار احتياجات خيالية، ولا يلزم الكلام أو تسجيل صوتك.",
+      "finding": "أصلح استعمال müssen وأضيف einkaufen وتطبيق P02 الكتابي بدل ربطه بحوار T08.",
+      "sourceIds": [],
+      "items": [
+        "kaufen بعد Ich muss.",
+        "kaufen بعد Er muss einen Mantel؛ بدل brauchen غير المناسب للهدف.",
+        "anprobieren بعد Wir müssen.",
+        "einkaufen مع am Samstag؛ أضيف تدريب مباشر لـ Q09.",
+        "قائمة غرض أول من الملابس.",
+        "غرض ثانٍ مختلف.",
+        "غرض ثالث مختلف.",
+        "جملة Ich brauche تذكر غرضًا من القائمة.",
+        "جملة Ich muss مع مصدر مناسب في النهاية؛ لا جهر مطلوب."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T04",
+      "text": "1. ______ kostet die Jacke? — Sie kostet 45 Euro.\n2. ______ Größe brauchen Sie? — Größe M.\n3. ______ Sie die Schuhe anprobieren? — Ja, gern.\n\n4. البائع يسأل عن مقاس الزبون: Welche Größe ______ Sie? — Größe M.\n\nاختر لكل فراغ مرة واحدة: **Wie viel / Welche / Möchten / haben**.",
+      "finding": "بنك كلمات مرة لكل فراغ؛ أضيف haben لتدريب صيغة Q06 مع سياق واضح.",
+      "sourceIds": [],
+      "items": [
+        "Wie viel للسعر.",
+        "Welche قبل Größe مع brauchen.",
+        "Möchten للعرض.",
+        "haben مع Welche Größe…Sie لتحديد مقاس الزبون."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T05",
+      "text": "1. Seine alten Schuhe sind zu groß.\n2. Seine alten Schuhe sind zu klein.\n3. Er kauft das zweite Paar.\n4. Das zweite Paar ist teurer.",
+      "finding": "استبدل البند 1 لأن عدم ذكر احتياج بنطال لا ينفيه. بقية المفاتيح مسندة بالنص.",
+      "sourceIds": [],
+      "items": [
+        "خطأ: القديمة zu klein، لا zu groß؛ تعارض صريح بدل المعلومة غير المذكورة عن البنطال.",
+        "صحيح: القديمة zu klein.",
+        "صحيح: يشتري الثاني.",
+        "خطأ: الثاني billiger، لا teurer."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T06",
+      "text": "أكمل:\n\n1. Die Person braucht Größe ______.\n2. Die schwarze Hose kostet ______ Euro.\n3. Die schwarze Hose ist zu ______.\n4. Die blaue Hose passt ______.",
+      "finding": "أربعة فراغات بمفاتيح مرقمة؛ نص الاستماع متاح، لا استماع إلزامي.",
+      "sourceIds": [],
+      "items": [
+        "40.",
+        "35.",
+        "lang.",
+        "gut."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T07",
+      "text": "1. البائع: **Möchten Sie die Jacke anprobieren?** اختر رد الزبون: أ. Ja, gern. ب. Ich bin die Jacke. ج. Sie ist eine Größe.\n2. اختر طلب الزبون لتجربة البنطال: أ. Kann ich die Hose anprobieren? ب. Ich wohne im Geschäft. ج. Wie heißt die Hose?",
+      "finding": "يفصل قبول عرض البائع عن طلب الزبون، ويدرب Q10 قبل التقييم.",
+      "sourceIds": [],
+      "items": [
+        "أ: Ja, gern رد الموافقة على عرض التجربة.",
+        "أ: Kann ich die Hose anprobieren? طلب الزبون للتجربة."
+      ]
+    },
+    {
+      "id": "DL-A1-08-T08",
+      "text": "اكتب خمسة أقوال لدور الزبون في متجر: قولًا يبدأ بـIch brauche ويذكر قطعة ملابس، وقولًا يحدد لونًا ومقاسًا، وسؤالًا عن سعر القطعة، وطلبًا لتجربتها بـKann ich … anprobieren?، وقولًا يصف ملاءمتها أو أنها أكبر/أصغر/أطول من اللازم. اقرأ الأقوال الخمسة بصوت مرتفع؛ لا يلزم شريك أو كتابة أجوبة البائع أو تسجيل صوتك، ويمكن استعمال مقاس خيالي.",
+      "finding": "خمسة أقوال بمطالب صريحة، دون إجبار على müssen الذي ينتمي إلى تطبيق T03/P02.",
+      "sourceIds": [],
+      "items": [
+        "قول احتياج قطعة يبدأ Ich brauche.",
+        "قول لون ومقاس.",
+        "سؤال سعر القطعة.",
+        "طلب تجربة بـ Kann ich…anprobieren?",
+        "قول ملاءمة أو وصف مشكلة مقاس؛ جهر الأقوال الخمسة، فرديًا."
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "eine Jacke",
+      "finding": "غرض 1: eine Jacke؛ مؤنث.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-02",
+      "text": "ein Hemd",
+      "finding": "غرض 2: ein Hemd؛ محايد ومختلف.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Schuhe",
+      "finding": "غرض 3: Schuhe جمع؛ ليس غرضًا مكررًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Ich brauche eine Jacke.",
+      "finding": "احتياج غرض من القائمة بـ Ich brauche.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-05",
+      "text": "Ich muss die Jacke anprobieren.",
+      "finding": "ضرورة تجربة السترة بـ Ich muss…anprobieren؛ المصدر متصل.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Ich brauche eine Jacke.",
+      "finding": "قول 1 يذكر السترة بـ Ich brauche.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Blau, bitte. Haben Sie Größe M?",
+      "finding": "قول 2 يحدد الأزرق ويطلب M؛ يحوي عبارة وسؤالًا، لا شرط خمس جمل فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Wie viel kostet die Jacke?",
+      "finding": "قول 3 سؤال السعر.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Kann ich die Jacke anprobieren?",
+      "finding": "قول 4 طلب التجربة لا السؤال عن وجوبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-05",
+      "text": "Die Jacke passt gut.",
+      "finding": "قول 5 ملاءمة المقاس؛ مستقل عن سترة الحوار الأصلية، ويمكن وصف مشكلة بدلها.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-08-Q01",
+      "text": "ما معنى der Mantel؟",
+      "finding": "المعطف، مقابل حذاء وقميص؛ T01 يدربه.",
+      "sourceIds": [],
+      "options": [
+        "المعطف",
+        "الحذاء",
+        "القميص"
+      ],
+      "answer": "المعطف",
+      "explanation": "der Mantel تعني «المعطف».",
+      "sourceTaskIds": [
+        "DL-A1-08-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q02",
+      "text": "أكمل: Ich ___ heute einkaufen.",
+      "finding": "muss مع ich؛ musst لـ du و müssen للجمع أو الاحترام.",
+      "sourceIds": [],
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answer": "muss",
+      "explanation": "مع ich نستخدم muss.",
+      "sourceTaskIds": [
+        "DL-A1-08-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q03",
+      "text": "أكمل: Du ___ die Hose anprobieren.",
+      "finding": "musst مع du؛ المصدر anprobieren متصل.",
+      "sourceIds": [],
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answer": "musst",
+      "explanation": "مع du نستخدم musst.",
+      "sourceTaskIds": [
+        "DL-A1-08-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q04",
+      "text": "أي جملة تضع المصدر بعد müssen في النهاية؟",
+      "finding": "الأولى ترتيب صحيح؛ الثانية تضع المصدر بموضع التصريف والثالثة تستعمل Partizip بدل المصدر.",
+      "sourceIds": [],
+      "options": [
+        "Ich muss die Hose anprobieren.",
+        "Ich anprobieren muss die Hose.",
+        "Ich muss anprobiert die Hose."
+      ],
+      "answer": "Ich muss die Hose anprobieren.",
+      "explanation": "في هذه الجملة البسيطة يأتي muss مصرفًا، والمصدر الكامل anprobieren بلاzu في النهاية.",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q05",
+      "text": "أي سؤال يسأل عن السعر؟",
+      "finding": "Wie viel kostet das سعر؛ استُبدل مشتت اللون الغريب بسؤال طبيعي Welche Farbe möchten Sie?؛ الفهرس 1 باقٍ.",
+      "sourceIds": [],
+      "options": [
+        "Welche Größe haben Sie?",
+        "Wie viel kostet das?",
+        "Welche Farbe möchten Sie?"
+      ],
+      "answer": "Wie viel kostet das?",
+      "explanation": "Wie viel kostet das? تعني «كم سعر هذا؟».",
+      "sourceTaskIds": [
+        "DL-A1-08-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q06",
+      "text": "أي سؤال يسأل به البائع الزبون عن مقاسه؟",
+      "finding": "Welche Größe haben Sie مع سياق البائع يسأل عن مقاس الزبون، لا طلب توفر مقاس.",
+      "sourceIds": [],
+      "options": [
+        "Welche Größe haben Sie?",
+        "Wie viel kostet das?",
+        "Wo fährt der Bus?"
+      ],
+      "answer": "Welche Größe haben Sie?",
+      "explanation": "Welche Größe haben Sie? تعني هنا «ما مقاسك؟». أما Haben Sie Größe 38? فطلب توفر مقاس محدد من البائع.",
+      "sourceTaskIds": [
+        "DL-A1-08-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q07",
+      "text": "ما معنى zu lang في وصف البنطال؟",
+      "finding": "طويل أكثر من اللازم؛ وصف لغة لا اختبار قراءة مستقل. نُقل T05→T06 حيث lang موجود.",
+      "sourceIds": [],
+      "options": [
+        "قصير جدًا",
+        "طويل أكثر من اللازم",
+        "مقاسه مناسب"
+      ],
+      "answer": "طويل أكثر من اللازم",
+      "explanation": "zu lang تعني «طويل أكثر من اللازم».",
+      "sourceTaskIds": [
+        "DL-A1-08-T06"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q08",
+      "text": "كيف تقول «أحتاج إلى سترة»؟",
+      "finding": "Ich brauche eine Jacke؛ الأداة والفعل صحيحان. نُقل T07→T08 حيث الطلب تدريب صريح.",
+      "sourceIds": [],
+      "options": [
+        "Ich brauche eine Jacke.",
+        "Ich brauche einen Jacke.",
+        "Ich braucht ein Jacke."
+      ],
+      "answer": "Ich brauche eine Jacke.",
+      "explanation": "ich brauche للمفرد المتكلم، وJacke مؤنث في Akkusativ: eine Jacke، لاeinen أوein.",
+      "sourceTaskIds": [
+        "DL-A1-08-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q09",
+      "text": "أكمل: Wir müssen am Samstag ___.",
+      "finding": "einkaufen مصدر متصل؛ kaufen ein صيغة فصل غير ملائمة هنا و eingekauft ليست المصدر.",
+      "sourceIds": [],
+      "options": [
+        "einkaufen",
+        "kaufen ein",
+        "eingekauft"
+      ],
+      "answer": "einkaufen",
+      "explanation": "بعد müssen يأتي المصدر einkaufen في نهاية الجملة.",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-08-Q10",
+      "text": "أي عبارة تطلب تجربة قطعة ملابس؟",
+      "finding": "Kann ich…anprobieren طلب تجربة؛ T07.2 يدربه نصًا، لا مجرد الرد على عرض البائع.",
+      "sourceIds": [],
+      "options": [
+        "Kann ich die Hose anprobieren?",
+        "Wie heißt die Hose?",
+        "Ich wohne im Geschäft."
+      ],
+      "answer": "Kann ich die Hose anprobieren?",
+      "explanation": "anprobieren تعني تجربة الملابس؛ السؤال يطلب ذلك.",
+      "sourceTaskIds": [
+        "DL-A1-08-T07"
+      ]
+    },
+    {
+      "id": "DL-A1-08-P01",
+      "text": "اكتب خمسة أقوال لدور الزبون في متجر: قولًا يبدأ بـIch brauche ويذكر قطعة ملابس، وقولًا يحدد لونًا ومقاسًا، وسؤالًا عن سعر القطعة، وطلبًا لتجربتها بـKann ich … anprobieren?، وقولًا يصف ملاءمتها أو أنها أكبر/أصغر/أطول من اللازم. اقرأ الأقوال الخمسة بصوت مرتفع؛ لا يلزم شريك أو كتابة أجوبة البائع أو تسجيل صوتك، ويمكن استعمال مقاس خيالي.",
+      "finding": "P01: خمسة أقوال،min120، الجهر مطلوب؛ T08 والمصدر والمعايير متطابقة. لا أجوبة بائع أو شريك مفروض.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "خمسة أقوال تشمل القطعة واللون والمقاس وسؤال السعر وطلب التجربة ووصف الملاءمة، وتُقرأ كلها جهرًا.",
+        "meaningClarity": "يمكن فهم طلب الزبون ووصفه؛ لا تُشترط أجوبة بائع أو شريك أو معلومات حقيقية.",
+        "targetSkill": "Ich brauche مع غرض، وسؤال سعر صحيح، وKann ich … anprobieren?، ووصف مثل passt gut أوzu groß/klein/lang؛ لا يُشترط müssen هنا."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-08-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-08-P02",
+      "text": "اكتب قائمة من ثلاثة أغراض مختلفة من مفردات الملابس، ثم جملتين: الأولى تبدأ بـIch brauche وتذكر غرضًا واحدًا على الأقل من القائمة؛ والثانية تبدأ بـIch muss وتذكر فعلًا لازمًا مثل kaufen أوanprobieren أوeinkaufen، بالمصدر في النهاية. هذه مهمة كتابة فقط؛ يجوز اختيار احتياجات خيالية، ولا يلزم الكلام أو تسجيل صوتك.",
+      "finding": "P02: قائمة ثلاثية وجملتان،min70، كتابة فقط؛ نُقل T08→T03. لا يطلب جملتين كلتاهما مع müssen.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "قائمة بثلاثة أغراض مختلفة وجملتان: احتياج بـIch brauche، وفعل لازم بـIch muss.",
+        "meaningClarity": "جملة الاحتياج تذكر غرضًا من القائمة؛ جملة الضرورة تذكر فعلًا مفهومًا، ويمكن أن تكون الخطة خيالية.",
+        "targetSkill": "brauche وmuss معich، وأداة مناسبة للغرض، ومصدر كامل في نهاية جملةmüssen."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 70,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Ich brauche eine Jacke.** → أحتاج إلى سترة.",
+      "finding": "احتياج سترة بـ brauche لا muss وحدها.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Welche Größe haben Sie?** → ما مقاسك؟ (عندما يسأل البائع الزبون)",
+      "finding": "صُححت الترجمة إلى «ما مقاسك؟» مع بيان سياق السائل؛ ليست brauchen.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Wie viel kostet das?** → كم سعر هذا؟",
+      "finding": "سؤال السعر عام عن غرض مشار إليه؛ das ليس بديلًا عن كل ضمير قطعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Ich muss einkaufen.** → يجب أن أتسوّق.",
+      "finding": "ضرورة التسوق بمصدر einkaufen متصل؛ لا شراء قطعة بعينها ضمن المعنى.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-08-AUD-DLG-01",
+      "text": "حوار: اختيار سترة في المتجر",
+      "finding": "كلمات وأصوات ومسارات وحالة ready/offer محفوظة؛ 7 مقطع/مقاطع، لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Kundin",
+          "text": "Guten Tag. Ich brauche eine Jacke.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Verkäufer",
+          "text": "Welche Farbe möchten Sie?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Kundin",
+          "text": "Blau, bitte. Haben Sie Größe M?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Verkäufer",
+          "text": "Ja, hier ist eine blaue Jacke. Möchten Sie sie anprobieren?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Kundin",
+          "text": "Ja, gern. Die Jacke ist schön, aber die Ärmel sind zu lang. Was kostet sie?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Verkäufer",
+          "text": "Sie kostet 45 Euro.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-08-AUD-DLG-01-SEG-07.mp3",
+          "speaker": "Kundin",
+          "text": "Gut, ich nehme sie. Danke!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-08-AUD-READ-01",
+      "text": "قراءة: Omar يبحث عن حذاء",
+      "finding": "كلمات وأصوات ومسارات وحالة ready/offer محفوظة؛ 1 مقطع/مقاطع، لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-08-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Omar braucht neue Schuhe. Seine alten Schuhe sind zu klein. Im Geschäft probiert er schwarze Schuhe in Größe 42 an. Die Schuhe sind bequem, aber sehr teuer. Er fragt nach einem anderen Modell. Das zweite Paar ist billiger. Omar kauft es.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-08-AUD-LST-01",
+      "text": "استماع: اختيار بنطال مناسب",
+      "finding": "كلمات وأصوات ومسارات وحالة ready/offer محفوظة؛ 1 مقطع/مقاطع، لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-08-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Ich möchte heute eine Hose kaufen. Ich brauche Größe 40. Die schwarze Hose kostet 35 Euro. Sie ist zu lang. Die blaue Hose kostet 30 Euro und passt gut. Ich nehme die blaue Hose.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "172dda637ac945524e775eb4994dcc3213cef2c1",
+    "unchangedOtherLessons": 52,
+    "unchangedGate": true,
+    "unchangedGlobalAudioAssets": 217,
+    "unchangedTrackedMp3Blobs": 474,
+    "unchangedDialogueUtterances": 7,
+    "unchangedFiles": [
+      "app.js",
+      "styles.css",
+      "package.json",
+      "package-lock.json",
+      "data/audio-playlists.json",
+      "data/audio-asset-register.csv",
+      "tools/build_course.py",
+      "tools/verify_course.py",
+      "tools/test_forms_keyboard.cjs"
+    ],
+    "unchangedOutsideLessonCatalogRows": true,
+    "changedLessonCatalogRows": 20
+  },
+  "testResults": {
+    "build": "PASS",
+    "bundleBytes": 1811986,
+    "verify": "PASS",
+    "cumulativeReviewGuards": 14,
+    "nodeSuites": [
+      "progression",
+      "session_persistence",
+      "daily_plan",
+      "study_time",
+      "service_worker"
+    ],
+    "browserSuites": [
+      "forms-keyboard",
+      "accessibility-audit",
+      "narrow-layout",
+      "accessibility-update",
+      "browser"
+    ],
+    "finalListedSuites": "PASS",
+    "browserInitialFailure": "forms-keyboard: second filechooser event timed out at 30s on 1440; diagnostic focus check passed, then unchanged original test passed three runs. Root cause unresolved.",
+    "chromium": "143.0.7499.0",
+    "playwright": "1.58.2",
+    "axe": "4.11.0",
+    "axeStates": 69,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteRuleOccurrences": 42,
+    "axeIncompleteNodeOccurrences": 106,
+    "narrowStates": 126,
+    "serviceWorkerFixture": "v42 to v59 with current data; A1.8 legacy rejection separately in VM",
+    "baselineGuardFailures": [
+      "Unmotivated muss brauchen task",
+      "Unsupported negation of need for trousers"
+    ],
+    "syntaxAndDiff": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "baselineCommit": "172dda637ac945524e775eb4994dcc3213cef2c1",
+    "implementationCommits": [
+      "8b7ed1983b56f04468a4400438ee1b06d3b804fa",
+      "31e63e55fb12a371029fa2fe58e922b137b07371"
+    ],
+    "bothImplementationHeadsVerifiedAtPush": true,
+    "status": "implementation_pushed_review_artifacts_pending_push",
+    "merged": false,
+    "deploymentConfirmed": false
+  }
+}
