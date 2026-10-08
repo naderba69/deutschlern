@@ -1295,17 +1295,22 @@
     "gateSeparate": true,
     "reviewedLessons": 18,
     "remainingLessons": 35,
-    "reviewPushVerified": false,
-    "reviewCommit": "Pending creation: Record CR19 granular A2.1 review and cumulative checks",
+    "reviewPushVerified": true,
+    "reviewCommit": "6059122e6039470939ba51fb0994de66a830266c",
     "pullRequest": {
+      "headRefName": "arena/01a1036f-deutschlern",
+      "headRefOid": "6059122e6039470939ba51fb0994de66a830266c",
+      "mergedAt": null,
       "number": 1,
       "state": "OPEN",
-      "mergedAt": null,
-      "headRefOid": "39f04f87fceedf2a5016607a7b86392a23fd2b71"
+      "url": "https://github.com/naderba69/deutschlern/pull/1"
     },
     "vercel": {
-      "implementationStatus": "success"
+      "implementationStatus": "success",
+      "reviewStatus": "pending",
+      "deploymentRecordAvailableAtCheck": false
     },
-    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test and no production claim."
+    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test and no production claim.",
+    "receiptCommit": "Separate documentation commit: Record CR19 push receipt and deployment status; see git log."
   }
 }
