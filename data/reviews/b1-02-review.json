@@ -2130,8 +2130,26 @@
     "implementationCommit": "e1c81db51946b9ca832d88bf292cf8eb0cb5f5a9",
     "implementationPushed": true,
     "implementationHeadMatchedRemote": true,
-    "reviewPushed": false,
-    "remoteUiTested": false
+    "reviewPushed": true,
+    "remoteUiTested": false,
+    "reviewCommit": "a24c47fa9261e80809e8306454f5421111c22256",
+    "reviewHeadMatchedRemote": true,
+    "prNumber": 1,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "a24c47fa9261e80809e8306454f5421111c22256",
+    "implementationVercel": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "reviewVercel": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receiptCommit": "This documentation commit; resolve from git log",
+    "receiptDeploymentQueried": false
   },
   "campaign": {
     "reviewedLessons": 31,
