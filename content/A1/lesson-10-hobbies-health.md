@@ -93,7 +93,7 @@
 
 ### أسئلة الفهم
 
-1. Welche zwei Freizeitaktivitäten nennt der Text für Mona?
+1. Was macht Mona gern?
 2. Was hat sie heute?
 3. Hat Mona Fieber?
 4. Was soll sie machen?
@@ -175,7 +175,7 @@
 
 ## 7) مفتاح الإجابات
 
-**أسئلة القراءة:** 1. Lesen und Rad fahren. 2. Sie ist müde und hat Kopfschmerzen. 3. Nein. 4. Sie soll zu Hause bleiben und viel Wasser trinken. 5. Sie können spazieren gehen.
+**أسئلة القراءة:** 1. Sie liest gern. 2. Sie ist müde und hat Kopfschmerzen. 3. Nein. 4. Sie soll zu Hause bleiben und viel Wasser trinken. 5. Sie können spazieren gehen.
 
 **أسئلة الاستماع:** 1. Fußball spielen und schwimmen. 2. Bauchschmerzen. 3. Nein. 4. Sie soll heute zu Hause bleiben und Wasser trinken.
 

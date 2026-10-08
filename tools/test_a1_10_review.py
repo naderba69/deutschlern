@@ -7,7 +7,7 @@ assert a['assessment']['version']=='a1-10-v2' and a['assessment']['minimumScore'
 assert [q['answerIndex'] for q in a['quiz']]==[0,1,1,1,0,0,1,0,0,0]
 for q,n in zip(a['quiz'],[1,2,3,4,5,6,6,4,2,3]):assert q['sourceTaskIds']==[f'DL-A1-10-T{n:02}']
 assert '1. Mona fährt am Wochenende Rad.' in s and '1. Mona fährt gern Rad.' not in s
-assert '1. Welche zwei Freizeitaktivitäten nennt der Text für Mona?' in s
+assert '1. Was macht Mona gern?' in s and '**أسئلة القراءة:** 1. Sie liest gern.' in s
 assert 'المشكلة الصحية' in a['quiz'][4]['prompt'] and 'Mona' in a['quiz'][7]['prompt']
 assert '| er/sie/es | soll |' in s and 'ما الذي يؤلمك؟' not in s
 assert 'ليست تشخيصًا' in s and 'النمط' in s
