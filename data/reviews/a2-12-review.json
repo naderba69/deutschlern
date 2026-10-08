@@ -1,0 +1,2093 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-12-holidays-festivals-culture",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-12-v2",
+  "unitCount": 102,
+  "exerciseSubItemCount": 31,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "ADV",
+      "title": "Lingolia — Adverbialsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/adverbialsaetze",
+      "scope": "bevor وnachdem روابط زمنية؛ المثال يضع شراء الهدية قبل الزيارة، ولا تُدرس كل أنواع التوابع هنا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "فاصلة التابعة والفعل المصرف الأخير؛ التابعة المقدمة تشغل الموقع الأول ثم فعل الرئيسية. لا يعتمد وصف um … zu بالنتيجة الوارد خارج نطاق هذا الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PERF",
+      "title": "Lingolia — Perfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+      "scope": "المساعد المصرف مع Partizip II، وPerfekt قد يدل على اكتمال بحلول وقت مستقبلي؛ لا يلزم أنه وقع قبل لحظة الكلام. besuchen مع بادئةbe بلاge.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "BEFORE",
+      "title": "Duden — bevor",
+      "url": "https://www.duden.de/rechtschreibung/bevor",
+      "scope": "التابعة الزمنية المثبتة تصف الحدث اللاحق لحدث الرئيسية؛ المرجع يسمي ذلك Nachzeitigkeit. لا نوسع الدرس إلى النفي المركب أو الاستعمالات الشرطية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "AFTER",
+      "title": "Duden — nachdem",
+      "url": "https://www.duden.de/rechtschreibung/nachdem",
+      "scope": "Vorzeitigkeit للحدث في التابعة؛ مثال gegessen hatte قبل legte في الماضي. لا نساوي بعدما مع منذ، ولا نحول الاستعمال السببي الإقليمي إلى قاعدة هذا الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "JOIN",
+      "title": "Duden — teilnehmen",
+      "url": "https://www.duden.de/rechtschreibung/teilnehmen",
+      "scope": "nimmt teil/hat teilgenommen، ومع أمثلةan einem/an einer بالداتيف؛ فعل مع حرف جر لا اختبار Wo/Wohin مكاني.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEPARATE",
+      "title": "Lingolia — Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "الفصل في الرئيسية البسيطة لا كل بنية؛ an- منفصلة وbe- غير منفصلة. يدعم التفريق بين fängt an وanfängt وبناء besucht.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "möchte/können مع مصدر؛ الإرادة والإمكان لا يثبتان تنفيذ الزيارة أو الأكل. لا تعميم حذفzu لكل مصدر خارج الفعل الناقص.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ENTRY",
+      "title": "Duden — Eintritt",
+      "url": "https://www.duden.de/rechtschreibung/Eintritt",
+      "scope": "الدخول أو رسم الدخول، والجمع Eintritte؛ المجانية تخص ما قيل عنه مجانيًا ولا تثبت مجانية الطعام أو النقل.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "LINK",
+      "title": "Lingolia — Konjunktionen und Konjunktionaladverbien",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/konjunktionen",
+      "scope": "bevor/nachdem تدخلان التابعة، بينما danach عند تصدير الرئيسية يليها المصرف؛ ليس ترتيبًا واحدًا لكل الروابط.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "excludedSources": [],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.12 — العطلات والمهرجانات والثقافة",
+      "finding": "عنوان ثقافة وبرنامج، لا فعالية حقيقية تحتاج حجزًا أو إثبات موقع.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** قراءة، تخطيط، قواعد، كتابة، كلام، واستماع اختياري",
+      "finding": "أضيف الكلام والاستماع الاختياري، والمدة مرنة؛ لا ادعاء أن كل متعلم ينجز كل عنصر في 40 دقيقة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أفهم برنامج مناسبة ثقافية، وأصف ترتيب أنشطتها باستخدام **bevor** و**nachdem**.",
+      "finding": "فهم البرنامج وتسلسل نشاطاته هدف تدعمه مهمتا تخطيط وتحويل مختلفتان.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستخدم **bevor** بمعنى «قبل أن» و**nachdem** بمعنى «بعد أن». في أمثلة الترتيب الزمني المثبتة هنا، يحدث فعل الرئيسية **قبل** فعل التابعة مع bevor، و**بعده** مع nachdem. ترتيب الجمل على الصفحة لا يغير ترتيب الأحداث. يأتي الفعل المصرف آخر التابعة، ونضع فاصلة بينها وبين الرئيسية:",
+      "finding": "صُرح بالاتجاه الصحيح: الرئيسية قبل التابعة مع bevor، وبعدها مع nachdem؛ ترتيب عرض الجمل غير الزمن.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "نتدرب هنا على خطة أو برنامج بصيغة المضارع في الرئيسية، ومع **nachdem** نستعمل **Perfekt** لحدث يكتمل قبل الحدث الرئيسي: **nachdem + الفاعل + بقية الجملة + Partizip II + haben/sein المصرف**. هذا اكتمال نسبي داخل الخطة، لا دليل أن الحدث وقع فعلًا قبل لحظة الكلام. ليست Perfekt قاعدة لكل استعمال nachdem؛ في سرد ماضٍ مثلًا: **Nachdem wir gegessen hatten, gingen wir zum Konzert.** هذه مقارنة فقط وليست مطلوبًا في التقييم. كذلك bevor لا تعني المستقبل دائمًا؛ المضارع يكفي للخطة هنا: **Bevor das Fest beginnt, kaufen wir Eintrittskarten.**",
+      "finding": "قُيد Perfekt بخطة/رئيسية مضارعة، وذُكر الاكتمال النسبي والماضي الأسبق للمقارنة فقط؛ لا قاعدة مطلقة أو حدث محقق قبل الكلام.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "النموذجان مكتوبان وغير مسجلين. الأول خطة خيالية تستعمل مفردات الدرس، والثاني تحويل لخط زمني ثابت لا مهمة تخطيط مكررة. لا يستبدلان التسجيلات ولا يجمعان ساعات النصوص المختلفة، ولا يثبتان تنفيذ رحلة أو تصحيح لغة أو نطق آلي.",
+      "finding": "النموذجان خياليان وغير مسجلين، ولا يبدلان الأصول أو يجمعان ساعات البرامج أو يثبتان تنفيذ رحلة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| das Kulturfest | die Kulturfeste | المهرجان الثقافي |",
+      "finding": "Kulturfest محايد وجمعه Kulturfeste؛ مهرجان ثقافي بلا نسبة لعادات شعب محدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Tradition | die Traditionen | التقليد |",
+      "finding": "Tradition مؤنث وجمعها Traditionen؛ تقليد دون تصويره إلزاميًا لكل فرد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Brauch | die Bräuche | العادة/التقليد الاجتماعي |",
+      "finding": "Brauch مذكر وجمعه Bräuche؛ عادة اجتماعية لا قاعدة قانونية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Ausstellung | die Ausstellungen | المعرض |",
+      "finding": "Ausstellung مؤنث وجمعها Ausstellungen؛ معرض، لا تذكرة أو ألعاب نارية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Parade | die Paraden | الاستعراض/الموكب |",
+      "finding": "Parade مؤنث وجمعها Paraden؛ موكب/استعراض، ليست فعالية مؤكدة في كل نص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Eintrittskarte | die Eintrittskarten | تذكرة دخول |",
+      "finding": "Eintrittskarte مؤنث وجمعها Eintrittskarten؛ تذكرة دخول غير رسم الدخول نفسه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| das Konzert | die Konzerte | الحفل الموسيقي |",
+      "finding": "Konzert محايد وجمعه Konzerte؛ حفل موسيقي، لا مثال للوقت أو العنوان الحقيقي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Bühne | die Bühnen | المنصة/المسرح |",
+      "finding": "Bühne مؤنث وجمعها Bühnen؛ منصة أداء، لا الألعاب النارية في السماء.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Eintritt | die Eintritte (مفرد في هذا السياق) | الدخول / رسم الدخول |",
+      "finding": "أضيف الجمع Eintritte بدل الشرطة التي قد توحي بعدم وجود جمع؛ مفرد الدخول/الرسم هو المستعمل في النص.",
+      "sourceIds": [
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Veranstaltung | die Veranstaltungen | الفعالية |",
+      "finding": "Veranstaltung مؤنث وجمعها Veranstaltungen؛ فعالية منظمة، لا مكان المبيت Unterkunft.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| das Feuerwerk | die Feuerwerke | الألعاب النارية |",
+      "finding": "Feuerwerk محايد وجمعه Feuerwerke؛ عرض ألعاب نارية، والنص لا يطلب إطلاقها أو يحدد ساعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| stattfinden | findet statt | يُقام |",
+      "finding": "stattfinden مصدر منفصل؛ findet statt صيغة مفرد، ولا تُنسخ مع فاعل جمع.",
+      "sourceIds": [
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| teilnehmen an | nimmt teil | يشارك في |",
+      "finding": "teilnehmen an مصدر مرتبط بحرف جر؛ nimmt teil مفرد، و nehmen … teil مع Viele Familien.",
+      "sourceIds": [
+        "JOIN"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| gemeinsam | — | معًا |",
+      "finding": "gemeinsam معًا، لا يلزم منه عدد أشخاص محدد أو وحدة جنسية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| kostenlos | — | مجاني |",
+      "finding": "kostenlos مجاني بالنسبة لما يوصف، لا استنتاج مجانية كل النفقات.",
+      "sourceIds": [
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| feiern | — | يحتفل |",
+      "finding": "feiern مصدر بمعنى يحتفل، لا خبر عن مناسبة تمت خارج المثال.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Bevor das Konzert beginnt, treffen wir uns am Eingang.",
+      "finding": "اللقاء عند المدخل قبل بداية الحفل: حدث الرئيسية أسبق ولو كانت التابعة مكتوبة أولًا؛ treffen بعد الفاصلة.",
+      "sourceIds": [
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Wir treffen uns am Eingang, bevor das Konzert beginnt.",
+      "finding": "الترتيب الزمني نفسه مع تأخير التابعة؛ beginnt ما زالت في آخرها ولا يتغير المعنى بسبب موضعها.",
+      "sourceIds": [
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen.",
+      "finding": "الاستماع يكتمل قبل إمكان الأكل في الخطة؛ gehört haben آخر التابعة ثم können wir، ولا إثبات أكل أو حضور وقع فعلًا.",
+      "sourceIds": [
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Bevor das Fest beginnt, kaufen wir Eintrittskarten.",
+      "finding": "شراء التذاكر يسبق بداية المهرجان؛ مثال مستقل لا يناقض الدخول المجاني في برنامج آخر، والمضارع يعبر عن خطة.",
+      "sourceIds": [
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **من يحدث أولًا؟** **Wir essen, bevor das Konzert beginnt.** نأكل أولًا ثم يبدأ الحفل؛ يبدأ الحفل في التابعة لكنه ليس الحدث الأول. **Nachdem wir gegessen haben, gehen wir zum Konzert.** الأكل في التابعة أولًا ثم الذهاب في الرئيسية. تقديم التابعة أو تأخيرها لا يقلب المعنى، ولا يعني «بعد» أن الحدث التالي يبدأ فورًا.",
+      "finding": "يفصل ترتيب الحدث من موقع الجملة، ويصحح الانقلاب القديم في Q10؛ لا يفترض وقوع التالي فورًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **الفاصلة والمصرف:** **Bevor das Konzert beginnt, treffen wir uns am Eingang.** التابعة تشغل الموقع الأول كاملًا؛ بعدها treffen ثم wir، لا wir treffen في هذا النمط. **Wir treffen uns am Eingang, bevor das Konzert beginnt.** تبقى beginnt في آخر التابعة عند تأخيرها أيضًا.",
+      "finding": "يبين الفاصلة والمصرف في التابعة والموقع الأول للجملة كلها؛ تقديم التابعة لا يبقي wir قبل treffen.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **أشكال تحتاجها:** hören → gehört، besuchen → besucht دون ge لأن be- غير منفصلة، essen → gegessen. مع wir أوdie Gäste نقول **gehört haben / besucht haben / gegessen haben**؛ haben هو الفعل المصرف الأخير. لا نحذف المساعد ولا نكرر Partizip بدلًا منه. المساعد ليس haben مع كل فعل؛ احفظ الصيغة المناسبة للفعل، مثل **angekommen sind** مع wir.",
+      "finding": "يعطي gehört/besucht/gegessen مع haben، ويذكر مثال sein دون تعميم المساعد أو مطالبة بإنتاج أزمنة متقدمة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الأفعال المنفصلة:** **Das Fest findet statt. Viele Familien nehmen teil. Das Konzert fängt an.** في التابعة يبقى الفعل المصرف متصلًا: **bevor das Konzert anfängt**. لا نفصل an عنfängt في هذا الموضع. **teilnehmen an + Dativ:** **an einer Veranstaltung teilnehmen** و**an der Veranstaltung**، لا نطبق اختبار Wo/Wohin على هذا الارتباط بالفعل.",
+      "finding": "الفصل في الرئيسية مقابل anfängt في التابعة؛ an der Veranstaltung ارتباط بالفعل في الداتيف لا وجهة مكانية.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **المصدر والمبني للمجهول:** **möchte ich die Ausstellung besuchen** و**können wir etwas essen** فيهما مصدر أخير دون zu. **Um 14 Uhr wird eine Ausstellung eröffnet.** افتتاح بصيغة المبني للمجهول الحاضر؛ لا تعنيwird وحدها المستقبل. يمكنك قراءة هذه الصيغة لفهم البرنامج دون إنتاج مبني للمجهول في مهمتك.",
+      "finding": "مصدر بلا zu مع الفعل الناقص، و wird eröffnet مبني للمجهول لا مستقبل لمجرد wird؛ قراءة البنية لا إنتاجها إلزاميًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **bevor / nachdem / danach:** الأولان يدخلان جملة تابعة؛ **Danach hören wir ein Konzert.** جملة رئيسية تبدأ بـ«بعد ذلك»، ثم الفعل hören. **nach dem Konzert** عبارة بحرف جر واسم، لا جملة تابعة كاملة ولا كتابة أخرى لكلمةnachdem.",
+      "finding": "Danach يبدأ رئيسية بينما nachdem يدخل تابعة؛ nach dem Konzert جار ومجرور لا كلمة nachdem مقسومة اعتباطيًا.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **ثلاثة برامج مستقلة:** الحوار عن السبت، لقاء الساعة الخامسة وحفل الساعة السابعة؛ القراءة عن الأحد، افتتاح المعرض14 وحفل17؛ الاستماع عن السبت في Linden وزيارة معرض الساعة الرابعة ثم الحفل والأصدقاء. لا ننقل ساعة أو يومًا من برنامج إلى آخر، ولا نضيف صباحًا/مساءً إلى ساعة منطوقة بلا قيد صريح. الأرقام14 و17 صريحة بنظام24 ساعة في القراءة.",
+      "finding": "ثلاثة برامج منفصلة؛ لا تحويل الساعة المنطوقة إلى صباح/مساء دون دليل ولا خلط الأحد بالسبت.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **المجانية والاحتمال:** **Der Eintritt ist kostenlos.** الدخول مجاني في النص، وليس الطعام أو النقل مجانيين تلقائيًا. **alle Veranstaltungen sind kostenlos** قول Laila عن برنامج الحوار، لا حكم على كل مهرجان. **können … besuchen/essen** إمكان أو اقتراح، لا إثبات زيارة أو أكل حدث فعلًا. مثال شراء التذاكر في القاعدة مستقل عن برامج الدخول المجاني.",
+      "finding": "تقييد المجانية والإمكان بما يقول النص؛ لا مجانية طعام أو نقل أو زيارة منفذة مستنتجة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **تفاصيل الفهم:** Linden اسم مكان داخل مثال خيالي، لا عنوان فعالية حقيقية موثق. **zu Hause** في البيت و**nach Hause** إلى البيت؛ **erst am Abend** لا يعودون إلى البيت إلا مساءً، ولا تحدد ساعة العودة. في القراءة ألعاب نارية بعد الحفل بلا ساعة محددة؛ وفي الاستماع يلتقون الأصدقاء في السوق لا عند مدخل الحفل.",
+      "finding": "Linden اسم المثال، و erst قيد العودة مساءً لا ساعة؛ موضع لقاء الأصدقاء السوق في الاستماع لا مدخل الحوار.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل والخصوصية:** P01 خمس جمل لخطة خيالية مع مكان ووقت ونشاطين على الأقل ثم الجهر؛ P02 ثلاث صياغات كتابية لخط زمني معطى دون جهر. لا رحلة فعلية أو حجز أو بيانات سفر أو شريك أو تسجيل. حاول الاستماع قبل التفريغ؛ قراءته لا تثبت فهمًا مسموعًا مستقلًا، والطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "خمسة أقوال جهرية مقابل ثلاث صيغ كتابية؛ الخيال والخصوصية وحدود التفريغ والإقرار معلنة.",
+      "sourceIds": [
+        "ADV",
+        "SUB",
+        "PERF",
+        "BEFORE",
+        "AFTER",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "LINK",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Gehst du am Samstag zum Kulturfest?",
+      "finding": "Laila تسأل عن الذهاب السبت إلى مهرجان؛ لا الأحد الخاص بالقراءة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ja, gern. Wann beginnt das Konzert?",
+      "finding": "Omar يوافق ويسأل متى يبدأ الحفل، لا متى ينتهي.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Um sieben Uhr. Bevor das Konzert beginnt, möchte ich die Ausstellung besuchen.",
+      "finding": "الحفل عند السابعة، و Laila ترغب بزيارة المعرض قبله؛ لا وقت افتتاح معرض محدد في الحوار أو وقوع زيارة فعلًا.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Gute Idee. Treffen wir uns um fünf Uhr am Eingang?",
+      "finding": "Omar يقترح اللقاء الخامسة عند المدخل؛ ليس موعد المعرض أو موعد الحفل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Ja. Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen.",
+      "finding": "توافق Laila على اللقاء، ثم تقترح إمكان الأكل بعد الاستماع؛ nachdem يجعل الاستماع سابقًا للأكل ولا يثبت تنفيذ أي منهما.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Schön! Ist der Eintritt kostenlos?",
+      "finding": "سؤال هل الدخول مجاني؛ ليس سؤالًا عن الطعام أو النقل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Ja, alle Veranstaltungen sind kostenlos.",
+      "finding": "تقول إن كل فعاليات برنامج الحوار مجانية؛ لا حكم على كل مهرجانات العالم أو مشتريات السوق.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Am Sonntag findet in der Stadt ein Kulturfest statt.",
+      "finding": "مهرجان في المدينة الأحد؛ findet … statt منفصلة مع مفرد Kulturfest.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Um 14 Uhr wird eine Ausstellung eröffnet.",
+      "finding": "افتتاح المعرض عند 14 بصيغة wird eröffnet؛ لا 17 التي تخص الحفل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Bevor die Musik auf der Bühne beginnt, können die Besucher den Markt besuchen.",
+      "finding": "إمكان زيارة السوق قبل الموسيقى؛ الرئيسية أسبق زمنيًا، والإمكان ليس إثبات زيارة كل شخص.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Um 17 Uhr gibt eine Musikgruppe ein Konzert.",
+      "finding": "فرقة تقدم حفلًا عند 17؛ لا وقت نهاية أو نوع الموسيقى أو مدة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Nachdem die Besucher das Konzert gehört haben, gibt es ein Feuerwerk.",
+      "finding": "ألعاب نارية بعد الاستماع إلى الحفل؛ لا ساعة محددة أو دلالة فورًا أو إغلاق السوق.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Viele Familien nehmen an der Veranstaltung teil.",
+      "finding": "عائلات كثيرة تشارك؛ nehmen an … teil مع جمع وداتيف der Veranstaltung، وليس كل العائلات.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Der Eintritt ist kostenlos.",
+      "finding": "الدخول مجاني؛ لا يثبت مجانية الوجبات أو النقل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "JOIN",
+        "MODAL",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "An welchem Tag findet das Kulturfest statt?",
+      "finding": "Am Sonntag؛ لا تأخذ السبت من الحوار أو الاستماع.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wann wird die Ausstellung eröffnet?",
+      "finding": "Um14 Uhr؛ الافتتاح لا الحفل 17.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was können die Besucher machen, bevor die Musik beginnt?",
+      "finding": "Sie können den Markt besuchen؛ يحفظ إمكان الزيارة ووقتها قبل الموسيقى.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was gibt es, nachdem die Besucher das Konzert gehört haben?",
+      "finding": "Ein Feuerwerk؛ بعد الحفل ولا ساعة محددة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Ist der Eintritt kostenlos?",
+      "finding": "Ja؛ الدخول مجاني فقط بحسب القراءة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "ENTRY"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Am Samstag machen wir einen Ausflug zum Kulturfest in Linden.",
+      "finding": "رحلة السبت إلى Kulturfest in Linden؛ نص خيالي لا موقع فعالية موثق ولا اسم/جنس لكل أفراد wir.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Bevor wir zum Fest gehen, essen wir zu Hause.",
+      "finding": "الأكل في البيت قبل الذهاب؛ الرئيسية حدثها أولًا رغم أن التابعة تبدأ الجملة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Um vier Uhr besuchen wir eine Ausstellung.",
+      "finding": "زيارة معرض عند الرابعة؛ لا تحويل آلي إلى 16 أو نقل 14 من القراءة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Danach hören wir ein Konzert.",
+      "finding": "بعد ذلك يستمعون إلى حفل؛ Danach ظرف رابط ورئيسية لا تابع بنهاية الفعل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Nachdem wir das Konzert gehört haben, treffen wir unsere Freunde auf dem Markt.",
+      "finding": "بعد الاستماع يلتقون أصدقاءهم في السوق؛ لا يتناولون الطعام هناك كما يقترح الحوار.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Wir fahren erst am Abend nach Hause.",
+      "finding": "العودة ليست قبل المساء؛ erst am Abend لا تحدد ساعة ولا تؤكد أن رحلة حقيقية وقعت.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wohin machen die Personen einen Ausflug?",
+      "finding": "Zum Kulturfest in Linden؛ الوجهة المذكورة لا عنوان حقيقي مفروض على المتعلم.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was machen sie, bevor sie zum Fest gehen?",
+      "finding": "Sie essen zu Hause؛ قبل الذهاب وليس بعده.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wann besuchen sie die Ausstellung?",
+      "finding": "Um vier Uhr؛ زمن زيارة المعرض في الاستماع.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Wo treffen sie ihre Freunde, nachdem sie das Konzert gehört haben?",
+      "finding": "Auf dem Markt؛ بعد سماع الحفل، لا المدخل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "LINK"
+      ]
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Wann fahren sie nach Hause?",
+      "finding": "Erst am Abend؛ حُفظ القيد في المفتاح، لا ساعة محددة أو عودة فورية بعد الحفل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "LINK"
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Am Samstag besuchen wir ein Kulturfest in Linden.",
+      "finding": "الجملة 1 تعطي السبت ومكانًا مسمى Linden في خطة خيالية مستقلة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Um vier Uhr besuchen wir eine Ausstellung.",
+      "finding": "الجملة 2 تعطي نشاط المعرض ووقت الرابعة؛ ليس نقل افتتاح 14 من القراءة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Bevor das Konzert beginnt, treffen wir uns am Eingang.",
+      "finding": "الجملة 3 لقاء عند المدخل قبل بداية الحفل؛ beginnt أخيرًا ثم treffen wir بعد الفاصلة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Nachdem wir das Konzert gehört haben, essen wir auf dem Markt.",
+      "finding": "الجملة 4 أكل في السوق بعد اكتمال الاستماع؛ gehört haben قبل الفاصلة ثم essen wir، دون فرض فورية الأكل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-05",
+      "text": "Am Abend fahren wir nach Hause.",
+      "finding": "الجملة 5 عودة إلى البيت مساءً؛ خمس جمل لا خمسة مقاطع صوتية، ووقت ومكان معًا.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Wir essen zu Hause, bevor wir zum Konzert gehen.",
+      "finding": "الجملة 1 تصف الأكل أولًا قبل الذهاب؛ Hauptsatz أول زمنيًا و bevor في الوسط.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+      "finding": "الجملة 2 تحفظ ترتيب الأكل ثم الذهاب بصيغة nachdem؛ gegessen haben في النهاية ثم gehen wir.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Nachdem wir das Konzert gehört haben, treffen wir unsere Freunde auf dem Markt.",
+      "finding": "الجملة 3 تجعل الاستماع سابقًا للقاء الأصدقاء في السوق؛ gehört haben قبل الفاصلة، لا نقل نشاط السوق إلى قبل الحفل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Bevor das Fest beginnt, …** → قبل أن يبدأ المهرجان…",
+      "finding": "جزء تابع مع حذف باقي الجملة؛ ليس جملة كاملة مستقلة، ويأتي الحدث الرئيسي قبل بداية المهرجان في النمط المثبت.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "ENTRY",
+        "JOIN"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Nachdem wir gegessen haben, …** → بعد أن تناولنا الطعام…",
+      "finding": "جزء تابع يدل على اكتمال الأكل بالنسبة للرئيسية التالية؛ لا يشترط أنه وقع قبل لحظة الكلام.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "ENTRY",
+        "JOIN"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Der Eintritt ist kostenlos.** → الدخول مجاني.",
+      "finding": "مجانية الدخول لا مجانية كل النفقات.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "ENTRY",
+        "JOIN"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **an einer Veranstaltung teilnehmen** → يشارك في فعالية.",
+      "finding": "an einer Veranstaltung teilnehmen؛ حرف مرتبط بالفعل وداتيف مؤنث، لا استنتاج مكان أو وجهة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "ENTRY",
+        "JOIN"
+      ]
+    },
+    {
+      "id": "DL-A2-12-T01",
+      "text": "1. عرض لوحات أو صور في مكان عام: **die Ausstellung / der Eintritt**\n2. فعالية فيها موسيقى مباشرة: **das Konzert / die Tradition**\n3. شيء يُطلق في السماء للاحتفال: **das Feuerwerk / die Bühne**\n4. حدث ثقافي منظم: **die Veranstaltung / die Unterkunft**",
+      "finding": "أربعة أزواج معجمية مرتبطة بالمناسبة، دون ادعاء انحصار كل معنى في المثال.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "ENTRY"
+      ],
+      "items": [
+        {
+          "text": "عرض لوحات أو صور في مكان عام: **die Ausstellung / der Eintritt**",
+          "answer": "die Ausstellung",
+          "finding": "معرض لوحات أو صور يناسب Ausstellung؛ Eintritt دخول أو رسم."
+        },
+        {
+          "text": "فعالية فيها موسيقى مباشرة: **das Konzert / die Tradition**",
+          "answer": "das Konzert",
+          "finding": "Konzert حفل موسيقي؛ Tradition مفهوم تقليد لا اسم الحفل."
+        },
+        {
+          "text": "شيء يُطلق في السماء للاحتفال: **das Feuerwerk / die Bühne**",
+          "answer": "das Feuerwerk",
+          "finding": "Feuerwerk يناسب العرض السماوي في المثال؛ Bühne منصة لا ألعاب نارية."
+        },
+        {
+          "text": "حدث ثقافي منظم: **die Veranstaltung / die Unterkunft**",
+          "answer": "die Veranstaltung",
+          "finding": "Veranstaltung فعالية؛ Unterkunft محل إقامة لا فعالية."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T02",
+      "text": "الترتيب المطلوب في1: شراء المشروبات أولًا ثم بداية الحفل؛ وفي3: زيارة السوق أولًا ثم المعرض: اختر الرابط الذي يحفظ هذا الترتيب. في2 أكمل صيغة Perfekt من الفعلين المعطيين، لا رابطًا جديدًا.\n\n1. ______ das Konzert beginnt, kaufen wir Getränke.\n2. Nachdem die Gäste das Konzert ______ ______, fahren sie nach Hause. (hören; haben)\n3. Wir besuchen den Markt, ______ wir die Ausstellung sehen.",
+      "finding": "عنوان التمرين صار يشمل الرابط وتصريف الفعل؛ ترتيب 1/3 صريح و 2 يطلب Perfekt، فلا يخلط نوع الفراغ.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "ENTRY"
+      ],
+      "items": [
+        {
+          "text": "______ das Konzert beginnt, kaufen wir Getränke.",
+          "answer": "Bevor",
+          "finding": "شراء المشروبات قبل بداية الحفل وفق الترتيب المحدد؛ لا تخمين لخطة أخرى."
+        },
+        {
+          "text": "Nachdem die Gäste das Konzert ______ ______, fahren sie nach Hause. (hören; haben)",
+          "answer": "gehört haben",
+          "finding": "المطلوب صيغة فعل لا رابط: gehört haben مع فاعل جمع، والمساعد أخيرًا."
+        },
+        {
+          "text": "Wir besuchen den Markt, ______ wir die Ausstellung sehen.",
+          "answer": "bevor",
+          "finding": "السوق أولًا ثم المعرض صريح في التعليمات؛ bevor يحفظه، بخلاف الفراغ القديم بلا ترتيب."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T03",
+      "text": "1. Bevor die Musik ______, besuchen wir den Markt. (beginnen)\n2. Nachdem wir die Ausstellung ______ ______, gehen wir zum Markt. (besuchen; haben)\n3. Wir treffen unsere Freunde, bevor das Konzert ______. (anfangen)",
+      "finding": "ثلاثة مصادر تحول إلى صيغ تابعة سليمة؛ خصوصًا besucht و anfängt.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "ENTRY"
+      ],
+      "items": [
+        {
+          "text": "Bevor die Musik ______, besuchen wir den Markt. (beginnen)",
+          "answer": "beginnt",
+          "finding": "beginnt مفرد مع die Musik وفي آخر التابعة."
+        },
+        {
+          "text": "Nachdem wir die Ausstellung ______ ______, gehen wir zum Markt. (besuchen; haben)",
+          "answer": "besucht haben",
+          "finding": "besucht بلا ge مع haben؛ زيارة المعرض تكتمل قبل الذهاب للسوق."
+        },
+        {
+          "text": "Wir treffen unsere Freunde, bevor das Konzert ______. (anfangen)",
+          "answer": "anfängt",
+          "finding": "anfängt متصل آخر التابعة مع das Konzert؛ لا نفصل an عن fängt هنا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T04",
+      "text": "ابدأ1 بـBevor و2 بـNachdem، واستعمل كل كتلة مرة وأضف الفاصلة والنقطة دون تغيير الصيغ.\n\n1. Bevor / beginnt / das Konzert / treffen wir uns am Eingang.\n2. Nachdem / wir / gegessen haben / gehen / wir / zum Konzert.",
+      "finding": "بدايات محددة وفاصلة ثم مصرف الرئيسية؛ يدعم Q02/Q04 مباشرة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "ENTRY"
+      ],
+      "items": [
+        {
+          "text": "Bevor / beginnt / das Konzert / treffen wir uns am Eingang.",
+          "answer": "Bevor das Konzert beginnt, treffen wir uns am Eingang.",
+          "finding": "Bevor تبدأ بحسب المطلوب، ثم das Konzert beginnt وفاصلة؛ treffen wir في الرئيسية مع اللقاء أولًا زمنيًا."
+        },
+        {
+          "text": "Nachdem / wir / gegessen haben / gehen / wir / zum Konzert.",
+          "answer": "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+          "finding": "Nachdem wir gegessen haben ثم فاصلة و gehen wir؛ أكل ثم ذهاب، والمساعد أخيرًا في التابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Das Kulturfest findet am Sonntag statt.\n2. Die Ausstellung wird um 17 Uhr eröffnet.\n3. Vor der Musik können Besucher den Markt besuchen.\n4. Der Eintritt kostet Geld.\n5. Nach dem Konzert gibt es ein Feuerwerk.",
+      "finding": "خمسة أحكام بحسب برنامج الأحد؛ أضيفت الألعاب النارية دون موعد غير مذكور.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "ENTRY"
+      ],
+      "items": [
+        {
+          "text": "Das Kulturfest findet am Sonntag statt.",
+          "answer": "صحيح",
+          "finding": "الأحد في برنامج القراءة، لا السبت المذكور في النصين الآخرين."
+        },
+        {
+          "text": "Die Ausstellung wird um 17 Uhr eröffnet.",
+          "answer": "خطأ",
+          "finding": "الافتتاح 14 لا 17؛ 17 وقت الحفل."
+        },
+        {
+          "text": "Vor der Musik können Besucher den Markt besuchen.",
+          "answer": "صحيح",
+          "finding": "können den Markt besuchen قبل الموسيقى: إمكان صريح لا زيارة مؤكدة لكل زائر."
+        },
+        {
+          "text": "Der Eintritt kostet Geld.",
+          "answer": "خطأ",
+          "finding": "النص يقول kostenlos؛ كلفة الدخول المالية تناقضه."
+        },
+        {
+          "text": "Nach dem Konzert gibt es ein Feuerwerk.",
+          "answer": "صحيح",
+          "finding": "ألعاب نارية بعد الحفل؛ يدعم البند Q07 مباشرة بلا اختلاق ساعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة: **Linden — essen — Ausstellung — Markt**.\n\n1. Die Personen fahren zum Kulturfest in ______.\n2. Bevor sie zum Fest gehen, ______ sie zu Hause.\n3. Um vier Uhr besuchen sie eine ______.\n4. Nachdem sie das Konzert gehört haben, treffen sie ihre Freunde auf dem ______.",
+      "finding": "أربعة فراغات وبنك واضح؛ لا اختبار جنس أو تفسير ساعات من برنامج آخر.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF",
+        "SEPARATE",
+        "ENTRY"
+      ],
+      "items": [
+        {
+          "text": "Die Personen fahren zum Kulturfest in ______.",
+          "answer": "Linden",
+          "finding": "Linden اسم مكان المثال؛ ليس مدينة أخرى مستنتجة."
+        },
+        {
+          "text": "Bevor sie zum Fest gehen, ______ sie zu Hause.",
+          "answer": "essen",
+          "finding": "essen فعل الأكل قبل الذهاب، لا وقت الحفل."
+        },
+        {
+          "text": "Um vier Uhr besuchen sie eine ______.",
+          "answer": "Ausstellung",
+          "finding": "Ausstellung زيارة المعرض عند الرابعة."
+        },
+        {
+          "text": "Nachdem sie das Konzert gehört haben, treffen sie ihre Freunde auf dem ______.",
+          "answer": "Markt",
+          "finding": "Markt مكان لقاء الأصدقاء بعد الحفل، لا المدخل."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T07",
+      "text": "**أ — ربط النشاطين:** أكمل بـ**bevor** أو **nachdem**، وبـgehört haben حيث يلزم. حافظ على الترتيب المعطى:\n\n1. Wir essen zu Hause. Danach gehen wir zum Fest. → Wir essen zu Hause, ______ wir zum Fest gehen.\n2. Wir hören das Konzert. Danach treffen wir Freunde. → ______ wir das Konzert ______ ______, treffen wir Freunde.\n\n**ب — P02: كتابة فقط**\n\nاكتب ثلاث جمل كاملة تحفظ الخط الزمني الخيالي: نأكل في البيت أولًا، ثم نذهب إلى الحفل ونستمع إليه، ثم نلتقي الأصدقاء في السوق. الجملة1 تبدأ بـWir essen zu Hause وتربط الذهاب بـbevor؛ الجملة2 تبدأ بـNachdem wir مع gegessen haben ثم gehen wir zum Konzert؛ الجملة3 تبدأ بـNachdem wir مع das Konzert gehört haben ثم treffen wir unsere Freunde auf dem Markt. استخدم المضارع في الرئيسية وPerfekt في تابعتي بعدما، مع الفواصل والنقاط. كتابة فقط، دون جهر أو رحلة فعلية أو تسجيل.",
+      "finding": "بندان للربط وثلاث صيغ إنتاج كتابي لخط زمني ثابت؛ يدعم Q09/Q10 و P02، دون جهر خفي أو تخطيط مكرر.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "items": [
+        {
+          "text": "Wir essen zu Hause. Danach gehen wir zum Fest. → Wir essen zu Hause, ______ wir zum Fest gehen.",
+          "finding": "الأكل في البيت أولًا؛ bevor يجعل الذهاب في التابعة لاحقًا في النمط المعطى."
+        },
+        {
+          "text": "Wir hören das Konzert. Danach treffen wir Freunde. → ______ wir das Konzert ______ ______, treffen wir Freunde.",
+          "finding": "الاستماع أسبق ولقاء الأصدقاء بعده؛ Nachdem … gehört haben يحفظ الترتيب ويكمل المساعد."
+        },
+        {
+          "text": "P02، الجملة 1: Wir essen zu Hause, bevor wir zum Konzert gehen.",
+          "finding": "الجملة 1 تصف الأكل أولًا قبل الذهاب؛ Hauptsatz أول زمنيًا و bevor في الوسط."
+        },
+        {
+          "text": "P02، الجملة 2: Nachdem wir gegessen haben, gehen wir zum Konzert.",
+          "finding": "الجملة 2 تحفظ ترتيب الأكل ثم الذهاب بصيغة nachdem؛ gegessen haben في النهاية ثم gehen wir."
+        },
+        {
+          "text": "P02، الجملة 3: Nachdem wir das Konzert gehört haben, treffen wir unsere Freunde auf dem Markt.",
+          "finding": "الجملة 3 تجعل الاستماع سابقًا للقاء الأصدقاء في السوق؛ gehört haben قبل الفاصلة، لا نقل نشاط السوق إلى قبل الحفل."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-T08",
+      "text": "اكتب خمس جمل عن يوم ثقافي خيالي بضمير wir ثم اقرأ الخطة جهرًا: الجملة1 تسمي يومًا ومكان المهرجان؛ الجملة2 تذكر نشاطًا ووقتًا؛ الجملة3 تستعمل bevor لبيان لقاء عند المدخل قبل بداية الحفل؛ الجملة4 تبدأ بـNachdem مع gehört haben وتذكر الأكل في السوق بعد الاستماع إلى الحفل؛ الجملة5 تذكر العودة إلى البيت مساءً. احفظ ترتيب الخطة والفواصل ومواضع الأفعال؛ يلزم مكان ووقت معًا ونشاطان على الأقل، لا أحدهما فقط. لا رحلة أو حجز أو بيانات شخصية أو تسجيل مطلوب.",
+      "finding": "خمس جمل ثم الجهر مع مكان ووقت معًا؛ أزيل تعارض «أو» في التقييم مع واو المصدر. النموذج 242 حرفًا فوق 200، ويستعمل bevor و nachdem بمعناهما الصحيح.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "items": [
+        {
+          "text": "الجملة 1: Am Samstag besuchen wir ein Kulturfest in Linden.",
+          "finding": "الجملة 1 تعطي السبت ومكانًا مسمى Linden في خطة خيالية مستقلة."
+        },
+        {
+          "text": "الجملة 2: Um vier Uhr besuchen wir eine Ausstellung.",
+          "finding": "الجملة 2 تعطي نشاط المعرض ووقت الرابعة؛ ليس نقل افتتاح 14 من القراءة."
+        },
+        {
+          "text": "الجملة 3: Bevor das Konzert beginnt, treffen wir uns am Eingang.",
+          "finding": "الجملة 3 لقاء عند المدخل قبل بداية الحفل؛ beginnt أخيرًا ثم treffen wir بعد الفاصلة."
+        },
+        {
+          "text": "الجملة 4: Nachdem wir das Konzert gehört haben, essen wir auf dem Markt.",
+          "finding": "الجملة 4 أكل في السوق بعد اكتمال الاستماع؛ gehört haben قبل الفاصلة ثم essen wir، دون فرض فورية الأكل."
+        },
+        {
+          "text": "الجملة 5: Am Abend fahren wir nach Hause.",
+          "finding": "الجملة 5 عودة إلى البيت مساءً؛ خمس جمل لا خمسة مقاطع صوتية، ووقت ومكان معًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q01",
+      "text": "ما معنى **die Ausstellung**؟",
+      "finding": "Ausstellung تعني معرضًا.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "معرض.",
+        "تذكرة دخول.",
+        "ألعاب نارية."
+      ],
+      "answer": "معرض.",
+      "sourceTaskIds": [
+        "DL-A2-12-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "معرض.",
+          "correct": true,
+          "finding": "Ausstellung معرض."
+        },
+        {
+          "text": "تذكرة دخول.",
+          "correct": false,
+          "finding": "Eintrittskarte تذكرة لا معرض."
+        },
+        {
+          "text": "ألعاب نارية.",
+          "correct": false,
+          "finding": "Feuerwerk ألعاب نارية لا معرض."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q02",
+      "text": "ما معنى **Bevor das Konzert beginnt, treffen wir uns am Eingang**؟",
+      "finding": "bevor تعني قبل أن.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "نلتقي بعد أن ينتهي الحفل.",
+        "نلتقي عند المدخل قبل أن يبدأ الحفل.",
+        "نشتري الطعام أثناء الحفل."
+      ],
+      "answer": "نلتقي عند المدخل قبل أن يبدأ الحفل.",
+      "sourceTaskIds": [
+        "DL-A2-12-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "نلتقي بعد أن ينتهي الحفل.",
+          "correct": false,
+          "finding": "بعد النهاية عكس قبل البداية، ولا انتهاء للحفل مذكور في المثال."
+        },
+        {
+          "text": "نلتقي عند المدخل قبل أن يبدأ الحفل.",
+          "correct": true,
+          "finding": "اللقاء عند المدخل قبل البداية مطابق."
+        },
+        {
+          "text": "نشتري الطعام أثناء الحفل.",
+          "correct": false,
+          "finding": "لا شراء طعام أو «أثناء» في الجملة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q03",
+      "text": "أكمل: Nachdem wir das Konzert gehört ___, können wir etwas essen.",
+      "finding": "في جملة nachdem مع Perfekt يأتي الفعل المساعد haben في النهاية.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "wir",
+        "gehört",
+        "haben"
+      ],
+      "answer": "haben",
+      "sourceTaskIds": [
+        "DL-A2-12-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "wir",
+          "correct": false,
+          "finding": "wir ضمير وليس المساعد الناقص؛ الفاعل موجود بالفعل."
+        },
+        {
+          "text": "gehört",
+          "correct": false,
+          "finding": "gehört موجود؛ تكراره لا يكمل Perfekt."
+        },
+        {
+          "text": "haben",
+          "correct": true,
+          "finding": "haben المساعد المصرف مع wir في نهاية التابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q04",
+      "text": "أي جملة صحيحة؟",
+      "finding": "في النمط المعطى يكون haben هو المصرف الأخير في التابعة بعد gegessen؛ وبعد فاصلتها يأتي gehen ثم wir في الرئيسية.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "Nachdem wir haben gegessen, gehen wir zum Konzert.",
+        "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+        "Nachdem gegessen wir haben, gehen wir zum Konzert."
+      ],
+      "answer": "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+      "sourceTaskIds": [
+        "DL-A2-12-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Nachdem wir haben gegessen, gehen wir zum Konzert.",
+          "correct": false,
+          "finding": "haben قبل gegessen لا يطابق ترتيب المساعد الأخير في هذه التابعة."
+        },
+        {
+          "text": "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+          "correct": true,
+          "finding": "gegessen haben ثم gehen wir؛ الترتيب أكل ثم ذهاب."
+        },
+        {
+          "text": "Nachdem gegessen wir haben, gehen wir zum Konzert.",
+          "correct": false,
+          "finding": "gegessen قبل wir لا يطابق البنية المعطاة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q05",
+      "text": "في أي يوم يقام مهرجان المدينة؟",
+      "finding": "النص يقول Am Sonntag.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "يوم الأحد.",
+        "يوم السبت.",
+        "يوم الأربعاء."
+      ],
+      "answer": "يوم الأحد.",
+      "sourceTaskIds": [
+        "DL-A2-12-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "يوم الأحد.",
+          "correct": true,
+          "finding": "الأحد صريح في القراءة."
+        },
+        {
+          "text": "يوم السبت.",
+          "correct": false,
+          "finding": "السبت من الحوار أو الاستماع لا القراءة."
+        },
+        {
+          "text": "يوم الأربعاء.",
+          "correct": false,
+          "finding": "الأربعاء غير مذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q06",
+      "text": "متى يُفتتح المعرض؟",
+      "finding": "يُفتتح المعرض عند 14 Uhr، أي الثانية بعد الظهر؛ 17 موعد الحفل في برنامج القراءة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "الساعة 17.",
+        "الساعة 19.",
+        "الساعة 14."
+      ],
+      "answer": "الساعة 14.",
+      "sourceTaskIds": [
+        "DL-A2-12-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "الساعة 17.",
+          "correct": false,
+          "finding": "17 للحفل لا افتتاح المعرض."
+        },
+        {
+          "text": "الساعة 19.",
+          "correct": false,
+          "finding": "19 ليست ساعة افتتاح المعرض في القراءة."
+        },
+        {
+          "text": "الساعة 14.",
+          "correct": true,
+          "finding": "14 ساعة الافتتاح؛ صُححت العربية من «تبدأ المعرض» إلى «يُفتتح»."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q07",
+      "text": "ماذا يحدث بعد أن يسمع الزوار الحفل؟",
+      "finding": "بعد الحفل gibt es ein Feuerwerk.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "يغلق السوق فورًا.",
+        "تقام ألعاب نارية.",
+        "تبدأ مباراة كرة قدم."
+      ],
+      "answer": "تقام ألعاب نارية.",
+      "sourceTaskIds": [
+        "DL-A2-12-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "يغلق السوق فورًا.",
+          "correct": false,
+          "finding": "لا إغلاق فوري للسوق مذكور."
+        },
+        {
+          "text": "تقام ألعاب نارية.",
+          "correct": true,
+          "finding": "ألعاب نارية بعد الحفل كما يقول النص."
+        },
+        {
+          "text": "تبدأ مباراة كرة قدم.",
+          "correct": false,
+          "finding": "مباراة كرة قدم غير مذكورة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q08",
+      "text": "في الجملة **Um vier Uhr besuchen sie eine Ausstellung**، متى يزورون المعرض؟",
+      "finding": "الجملة تحدد الساعة الرابعة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "في الرابعة.",
+        "في الثانية.",
+        "في السابعة."
+      ],
+      "answer": "في الرابعة.",
+      "sourceTaskIds": [
+        "DL-A2-12-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "في الرابعة.",
+          "correct": true,
+          "finding": "vier الرابعة؛ المثال محول إلى sie من wir، ولا يصفه السؤال بأنه تفريغ حرفي."
+        },
+        {
+          "text": "في الثانية.",
+          "correct": false,
+          "finding": "zwei الثانية لا vier."
+        },
+        {
+          "text": "في السابعة.",
+          "correct": false,
+          "finding": "sieben السابعة لا vier."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q09",
+      "text": "في خطة للأكل أولًا ثم الذهاب إلى الحفل، أي جملة تحفظ هذا الترتيب بالنمط المدروس؟",
+      "finding": "Nachdem wir gegessen haben, gehen wir zum Konzert. الأكل يكتمل قبل الذهاب في الخطة؛ نستعمل هنا Perfekt في التابعة مع رئيسية مضارعة، لا قاعدة لكل استعمال بعدما.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "Bevor wir gegessen haben, gehen wir zum Konzert.",
+        "Nachdem wir essen, gingen wir das Konzert.",
+        "Nachdem wir gegessen haben, gehen wir zum Konzert."
+      ],
+      "answer": "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+      "sourceTaskIds": [
+        "DL-A2-12-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Bevor wir gegessen haben, gehen wir zum Konzert.",
+          "correct": false,
+          "finding": "قد تكون بنية لغوية ممكنة، لكنها تجعل الذهاب قبل اكتمال الأكل، فتعكس الخطة المطلوبة."
+        },
+        {
+          "text": "Nachdem wir essen, gingen wir das Konzert.",
+          "correct": false,
+          "finding": "خلط أزمنة وحذف حرف الجر قبل das Konzert؛ لا يطابق النمط المعطى أو الخطة."
+        },
+        {
+          "text": "Nachdem wir gegessen haben, gehen wir zum Konzert.",
+          "correct": true,
+          "finding": "الأكل أولًا ثم الذهاب؛ تابع Perfekt مع رئيسية مضارعة في الخطة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-Q10",
+      "text": "في استعمال bevor الزمني لترتيب حدثين في أمثلة الدرس، ما العلاقة الزمنية؟",
+      "finding": "الرئيسية أولًا مع bevor: Wir essen zu Hause, bevor wir zum Fest gehen. نأكل أولًا ثم نذهب؛ لا تجعل بداية التابعة على الصفحة حدثها أسبق. مع nachdem تكون الأسبقية لحدث التابعة.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "options": [
+        "أن النشاطين يحدثان في اللحظة نفسها دائمًا.",
+        "أن النشاط في الجملة الرئيسية يقع قبل النشاط في الجملة التابعة.",
+        "أن الجملة تتحدث عن مكان فقط."
+      ],
+      "answer": "أن النشاط في الجملة الرئيسية يقع قبل النشاط في الجملة التابعة.",
+      "sourceTaskIds": [
+        "DL-A2-12-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "أن النشاطين يحدثان في اللحظة نفسها دائمًا.",
+          "correct": false,
+          "finding": "bevor لا يفرض تزامن النشاطين دائمًا."
+        },
+        {
+          "text": "أن النشاط في الجملة الرئيسية يقع قبل النشاط في الجملة التابعة.",
+          "correct": true,
+          "finding": "صُححت الإجابة: نشاط الرئيسية قبل التابعة، لا العكس كما في v1."
+        },
+        {
+          "text": "أن الجملة تتحدث عن مكان فقط.",
+          "correct": false,
+          "finding": "الرابط زمني ولا يحدد المكان وحده."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-P01",
+      "text": "اكتب خمس جمل عن يوم ثقافي خيالي بضمير wir ثم اقرأ الخطة جهرًا: الجملة1 تسمي يومًا ومكان المهرجان؛ الجملة2 تذكر نشاطًا ووقتًا؛ الجملة3 تستعمل bevor لبيان لقاء عند المدخل قبل بداية الحفل؛ الجملة4 تبدأ بـNachdem مع gehört haben وتذكر الأكل في السوق بعد الاستماع إلى الحفل؛ الجملة5 تذكر العودة إلى البيت مساءً. احفظ ترتيب الخطة والفواصل ومواضع الأفعال؛ يلزم مكان ووقت معًا ونشاطان على الأقل، لا أحدهما فقط. لا رحلة أو حجز أو بيانات شخصية أو تسجيل مطلوب.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحد الحرفي والإقرار ليسا تصحيحًا آليًا للغة أو النطق.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "criteria": {
+        "taskCompletion": "خمس جمل: يوم ومكان؛ نشاط ووقت؛ لقاء قبل بداية الحفل بـbevor؛ أكل بعد الاستماع بـnachdem؛ عودة مساءً. مكان ووقت معًا ونشاطان على الأقل؛ قرأت الخطة جهرًا.",
+        "meaningClarity": "الخطة خيالية ومتسقة؛ اللقاء قبل بداية الحفل، والأكل بعد الاستماع إليه، والعودة مساءً؛ لا جمع لساعات البرامج المختلفة أو ادعاء تنفيذ رحلة.",
+        "targetSkill": "bevor وnachdem مع فاصلة وفعل مصرف أخير في التابعة؛ gehört haben في نهاية تابعة بعدما ثم فعل الرئيسية؛ الضمير wir محفوظ."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 200,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل: يوم ومكان؛ نشاط ووقت؛ لقاء قبل بداية الحفل بـbevor؛ أكل بعد الاستماع بـnachdem؛ عودة مساءً. مكان ووقت معًا ونشاطان على الأقل؛ قرأت الخطة جهرًا.",
+          "finding": "خمس جمل بالمكونات المحددة: مكان ووقت معًا ونشاطان على الأقل؛ الجهر صريح في T08؛ نموذج 242 حرفًا فوق 200."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الخطة خيالية ومتسقة؛ اللقاء قبل بداية الحفل، والأكل بعد الاستماع إليه، والعودة مساءً؛ لا جمع لساعات البرامج المختلفة أو ادعاء تنفيذ رحلة.",
+          "finding": "اللقاء قبل الحفل ثم أكل بعده وعودة مساءً؛ لا اقتباس ساعات متعارضة أو ادعاء تنفيذ رحلة."
+        },
+        {
+          "key": "targetSkill",
+          "text": "bevor وnachdem مع فاصلة وفعل مصرف أخير في التابعة؛ gehört haben في نهاية تابعة بعدما ثم فعل الرئيسية؛ الضمير wir محفوظ.",
+          "finding": "فاصلة ومصرف نهائي و gehört haben؛ الدور الزمني للروابط صحيح، والتطبيق لا يقيّم النحو آليًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-P02",
+      "text": "اكتب ثلاث جمل كاملة تحفظ الخط الزمني الخيالي: نأكل في البيت أولًا، ثم نذهب إلى الحفل ونستمع إليه، ثم نلتقي الأصدقاء في السوق. الجملة1 تبدأ بـWir essen zu Hause وتربط الذهاب بـbevor؛ الجملة2 تبدأ بـNachdem wir مع gegessen haben ثم gehen wir zum Konzert؛ الجملة3 تبدأ بـNachdem wir مع das Konzert gehört haben ثم treffen wir unsere Freunde auf dem Markt. استخدم المضارع في الرئيسية وPerfekt في تابعتي بعدما، مع الفواصل والنقاط. كتابة فقط، دون جهر أو رحلة فعلية أو تسجيل.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحد الحرفي والإقرار ليسا تصحيحًا آليًا للغة أو النطق.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "SUB",
+        "PERF"
+      ],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل مكتوبة بالنمط المطلوب: أكل قبل الذهاب؛ ذهاب بعد الأكل؛ لقاء أصدقاء بعد الاستماع، مع موضعي البيت والسوق. لا جهر مطلوب.",
+        "meaningClarity": "يحفظ الأكل ثم الذهاب والاستماع ثم لقاء الأصدقاء؛ تقديم التابعة لا يقلب الزمن ولا يعني أن الخطة نُفذت.",
+        "targetSkill": "المضارع في الرئيسية وgegessen/gehört haben في تابعتي nachdem، مع الفواصل والمصرف الأخير؛ bevor يضع حدث الرئيسية أولًا."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ثلاث جمل مكتوبة بالنمط المطلوب: أكل قبل الذهاب؛ ذهاب بعد الأكل؛ لقاء أصدقاء بعد الاستماع، مع موضعي البيت والسوق. لا جهر مطلوب.",
+          "finding": "ثلاث صيغ لمعطيات T07 ب، ونموذج 179 حرفًا فوق 150؛ كتابة فقط دون جهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يحفظ الأكل ثم الذهاب والاستماع ثم لقاء الأصدقاء؛ تقديم التابعة لا يقلب الزمن ولا يعني أن الخطة نُفذت.",
+          "finding": "يحفظ الأكل ثم الذهاب والاستماع ثم الأصدقاء، ولا يستنتج أن ذلك حدث قبل الكلام."
+        },
+        {
+          "key": "targetSkill",
+          "text": "المضارع في الرئيسية وgegessen/gehört haben في تابعتي nachdem، مع الفواصل والمصرف الأخير؛ bevor يضع حدث الرئيسية أولًا.",
+          "finding": "bevor: الرئيسية أسبق؛ بعدما: التابعة أسبق بـ Perfekt مع رئيسية مضارعة في الخطة. إقرار ذاتي لا شهادة لغة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-12-AUD-PHR-01",
+      "text": "Das Kulturfest. Die Tradition. Der Brauch. Die Ausstellung. Die Parade. Die Eintrittskarte. Das Konzert. Die Bühne. Der Eintritt. Die Veranstaltung. Das Feuerwerk. Stattfinden. Findet statt. Teilnehmen an. Nimmt teil. Gemeinsam. Kostenlos. Feiern. Bevor das Konzert beginnt, treffen wir uns am Eingang. Wir treffen uns am Eingang, bevor das Konzert beginnt. Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen. Bevor das Fest beginnt, kaufen wir Eintrittskarten.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد. جمل bevor المسجلة صحيحة؛ الخلل الذي صُحح كان في خيار التقييم Q10 لا التسجيل.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Das Kulturfest.",
+          "finding": "Kulturfest محايد وجمعه Kulturfeste؛ مهرجان ثقافي بلا نسبة لعادات شعب محدد."
+        },
+        {
+          "text": "Die Tradition.",
+          "finding": "Tradition مؤنث وجمعها Traditionen؛ تقليد دون تصويره إلزاميًا لكل فرد."
+        },
+        {
+          "text": "Der Brauch.",
+          "finding": "Brauch مذكر وجمعه Bräuche؛ عادة اجتماعية لا قاعدة قانونية."
+        },
+        {
+          "text": "Die Ausstellung.",
+          "finding": "Ausstellung مؤنث وجمعها Ausstellungen؛ معرض، لا تذكرة أو ألعاب نارية."
+        },
+        {
+          "text": "Die Parade.",
+          "finding": "Parade مؤنث وجمعها Paraden؛ موكب/استعراض، ليست فعالية مؤكدة في كل نص."
+        },
+        {
+          "text": "Die Eintrittskarte.",
+          "finding": "Eintrittskarte مؤنث وجمعها Eintrittskarten؛ تذكرة دخول غير رسم الدخول نفسه."
+        },
+        {
+          "text": "Das Konzert.",
+          "finding": "Konzert محايد وجمعه Konzerte؛ حفل موسيقي، لا مثال للوقت أو العنوان الحقيقي."
+        },
+        {
+          "text": "Die Bühne.",
+          "finding": "Bühne مؤنث وجمعها Bühnen؛ منصة أداء، لا الألعاب النارية في السماء."
+        },
+        {
+          "text": "Der Eintritt.",
+          "finding": "أضيف الجمع Eintritte بدل الشرطة التي قد توحي بعدم وجود جمع؛ مفرد الدخول/الرسم هو المستعمل في النص."
+        },
+        {
+          "text": "Die Veranstaltung.",
+          "finding": "Veranstaltung مؤنث وجمعها Veranstaltungen؛ فعالية منظمة، لا مكان المبيت Unterkunft."
+        },
+        {
+          "text": "Das Feuerwerk.",
+          "finding": "Feuerwerk محايد وجمعه Feuerwerke؛ عرض ألعاب نارية، والنص لا يطلب إطلاقها أو يحدد ساعة."
+        },
+        {
+          "text": "Stattfinden.",
+          "finding": "stattfinden مصدر منفصل؛ findet statt صيغة مفرد، ولا تُنسخ مع فاعل جمع."
+        },
+        {
+          "text": "Findet statt.",
+          "finding": "stattfinden مصدر منفصل؛ findet statt صيغة مفرد، ولا تُنسخ مع فاعل جمع."
+        },
+        {
+          "text": "Teilnehmen an.",
+          "finding": "teilnehmen an مصدر مرتبط بحرف جر؛ nimmt teil مفرد، و nehmen … teil مع Viele Familien."
+        },
+        {
+          "text": "Nimmt teil.",
+          "finding": "teilnehmen an مصدر مرتبط بحرف جر؛ nimmt teil مفرد، و nehmen … teil مع Viele Familien."
+        },
+        {
+          "text": "Gemeinsam.",
+          "finding": "gemeinsam معًا، لا يلزم منه عدد أشخاص محدد أو وحدة جنسية."
+        },
+        {
+          "text": "Kostenlos.",
+          "finding": "kostenlos مجاني بالنسبة لما يوصف، لا استنتاج مجانية كل النفقات."
+        },
+        {
+          "text": "Feiern.",
+          "finding": "feiern مصدر بمعنى يحتفل، لا خبر عن مناسبة تمت خارج المثال."
+        },
+        {
+          "text": "Bevor das Konzert beginnt, treffen wir uns am Eingang.",
+          "finding": "اللقاء عند المدخل قبل بداية الحفل: حدث الرئيسية أسبق ولو كانت التابعة مكتوبة أولًا؛ treffen بعد الفاصلة."
+        },
+        {
+          "text": "Wir treffen uns am Eingang, bevor das Konzert beginnt.",
+          "finding": "الترتيب الزمني نفسه مع تأخير التابعة؛ beginnt ما زالت في آخرها ولا يتغير المعنى بسبب موضعها."
+        },
+        {
+          "text": "Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen.",
+          "finding": "الاستماع يكتمل قبل إمكان الأكل في الخطة؛ gehört haben آخر التابعة ثم können wir، ولا إثبات أكل أو حضور وقع فعلًا."
+        },
+        {
+          "text": "Bevor das Fest beginnt, kaufen wir Eintrittskarten.",
+          "finding": "شراء التذاكر يسبق بداية المهرجان؛ مثال مستقل لا يناقض الدخول المجاني في برنامج آخر، والمضارع يعبر عن خطة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-12-AUD-DLG-01",
+      "text": "Gehst du am Samstag zum Kulturfest? Ja, gern. Wann beginnt das Konzert? Um sieben Uhr. Bevor das Konzert beginnt, möchte ich die Ausstellung besuchen. Gute Idee. Treffen wir uns um fünf Uhr am Eingang? Ja. Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen. Schön! Ist der Eintritt kostenlos? Ja, alle Veranstaltungen sind kostenlos.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد. جمل bevor المسجلة صحيحة؛ الخلل الذي صُحح كان في خيار التقييم Q10 لا التسجيل.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Gehst du am Samstag zum Kulturfest?",
+          "finding": "Laila تسأل عن الذهاب السبت إلى مهرجان؛ لا الأحد الخاص بالقراءة."
+        },
+        {
+          "text": "Ja, gern. Wann beginnt das Konzert?",
+          "finding": "Omar يوافق ويسأل متى يبدأ الحفل، لا متى ينتهي."
+        },
+        {
+          "text": "Um sieben Uhr. Bevor das Konzert beginnt, möchte ich die Ausstellung besuchen.",
+          "finding": "الحفل عند السابعة، و Laila ترغب بزيارة المعرض قبله؛ لا وقت افتتاح معرض محدد في الحوار أو وقوع زيارة فعلًا."
+        },
+        {
+          "text": "Gute Idee. Treffen wir uns um fünf Uhr am Eingang?",
+          "finding": "Omar يقترح اللقاء الخامسة عند المدخل؛ ليس موعد المعرض أو موعد الحفل."
+        },
+        {
+          "text": "Ja. Nachdem wir das Konzert gehört haben, können wir auf dem Markt etwas essen.",
+          "finding": "توافق Laila على اللقاء، ثم تقترح إمكان الأكل بعد الاستماع؛ nachdem يجعل الاستماع سابقًا للأكل ولا يثبت تنفيذ أي منهما."
+        },
+        {
+          "text": "Schön! Ist der Eintritt kostenlos?",
+          "finding": "سؤال هل الدخول مجاني؛ ليس سؤالًا عن الطعام أو النقل."
+        },
+        {
+          "text": "Ja, alle Veranstaltungen sind kostenlos.",
+          "finding": "تقول إن كل فعاليات برنامج الحوار مجانية؛ لا حكم على كل مهرجانات العالم أو مشتريات السوق."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-12-AUD-READ-01",
+      "text": "Am Sonntag findet in der Stadt ein Kulturfest statt. Um 14 Uhr wird eine Ausstellung eröffnet. Bevor die Musik auf der Bühne beginnt, können die Besucher den Markt besuchen. Um 17 Uhr gibt eine Musikgruppe ein Konzert. Nachdem die Besucher das Konzert gehört haben, gibt es ein Feuerwerk. Viele Familien nehmen an der Veranstaltung teil. Der Eintritt ist kostenlos.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد. جمل bevor المسجلة صحيحة؛ الخلل الذي صُحح كان في خيار التقييم Q10 لا التسجيل.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Am Sonntag findet in der Stadt ein Kulturfest statt.",
+          "finding": "مهرجان في المدينة الأحد؛ findet … statt منفصلة مع مفرد Kulturfest."
+        },
+        {
+          "text": "Um 14 Uhr wird eine Ausstellung eröffnet.",
+          "finding": "افتتاح المعرض عند 14 بصيغة wird eröffnet؛ لا 17 التي تخص الحفل."
+        },
+        {
+          "text": "Bevor die Musik auf der Bühne beginnt, können die Besucher den Markt besuchen.",
+          "finding": "إمكان زيارة السوق قبل الموسيقى؛ الرئيسية أسبق زمنيًا، والإمكان ليس إثبات زيارة كل شخص."
+        },
+        {
+          "text": "Um 17 Uhr gibt eine Musikgruppe ein Konzert.",
+          "finding": "فرقة تقدم حفلًا عند 17؛ لا وقت نهاية أو نوع الموسيقى أو مدة."
+        },
+        {
+          "text": "Nachdem die Besucher das Konzert gehört haben, gibt es ein Feuerwerk.",
+          "finding": "ألعاب نارية بعد الاستماع إلى الحفل؛ لا ساعة محددة أو دلالة فورًا أو إغلاق السوق."
+        },
+        {
+          "text": "Viele Familien nehmen an der Veranstaltung teil.",
+          "finding": "عائلات كثيرة تشارك؛ nehmen an … teil مع جمع وداتيف der Veranstaltung، وليس كل العائلات."
+        },
+        {
+          "text": "Der Eintritt ist kostenlos.",
+          "finding": "الدخول مجاني؛ لا يثبت مجانية الوجبات أو النقل."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-12-AUD-LST-01",
+      "text": "Am Samstag machen wir einen Ausflug zum Kulturfest in Linden. Bevor wir zum Fest gehen, essen wir zu Hause. Um vier Uhr besuchen wir eine Ausstellung. Danach hören wir ein Konzert. Nachdem wir das Konzert gehört haben, treffen wir unsere Freunde auf dem Markt. Wir fahren erst am Abend nach Hause.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد. جمل bevor المسجلة صحيحة؛ الخلل الذي صُحح كان في خيار التقييم Q10 لا التسجيل.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Am Samstag machen wir einen Ausflug zum Kulturfest in Linden.",
+          "finding": "رحلة السبت إلى Kulturfest in Linden؛ نص خيالي لا موقع فعالية موثق ولا اسم/جنس لكل أفراد wir."
+        },
+        {
+          "text": "Bevor wir zum Fest gehen, essen wir zu Hause.",
+          "finding": "الأكل في البيت قبل الذهاب؛ الرئيسية حدثها أولًا رغم أن التابعة تبدأ الجملة."
+        },
+        {
+          "text": "Um vier Uhr besuchen wir eine Ausstellung.",
+          "finding": "زيارة معرض عند الرابعة؛ لا تحويل آلي إلى 16 أو نقل 14 من القراءة."
+        },
+        {
+          "text": "Danach hören wir ein Konzert.",
+          "finding": "بعد ذلك يستمعون إلى حفل؛ Danach ظرف رابط ورئيسية لا تابع بنهاية الفعل."
+        },
+        {
+          "text": "Nachdem wir das Konzert gehört haben, treffen wir unsere Freunde auf dem Markt.",
+          "finding": "بعد الاستماع يلتقون أصدقاءهم في السوق؛ لا يتناولون الطعام هناك كما يقترح الحوار."
+        },
+        {
+          "text": "Wir fahren erst am Abend nach Hause.",
+          "finding": "العودة ليست قبل المساء؛ erst am Abend لا تحدد ساعة ولا تؤكد أن رحلة حقيقية وقعت."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-12-holidays-festivals-culture.md": "61e98a22a04f86dff56b18695743808c87a60154989b88af1b74b99951d03574",
+    "content/A2/lesson-12-holidays-festivals-culture.assessment.json": "c740048fd114a3c34b6000f17a15ed0938798ed01da7c883b139733a01d25c7a"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-12-AUD-PHR-01": "bb62ddf43d82a02cf10042a2b7e7289b4acdcbbb9ecf1b622618a0e0318c616b",
+    "DL-A2-12-AUD-DLG-01": "a12a5eae03cb1ebaca5e35bfc1bd0c13ca36357b45e50b35d792f51bc00943af",
+    "DL-A2-12-AUD-READ-01": "3b7384a29cbf5389d139697d8dc07aa12b0e29f88ccf71f8ba3efb5829d81611",
+    "DL-A2-12-AUD-LST-01": "1a2d185ed9af250bfe9248c7dec008743930c8bb9c2de6eacbe7ff8a69d86a1a"
+  },
+  "preservation": {
+    "baseline": "10c1f8727d41c309112e159fb4588b421a0d1958",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-12-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-12-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-12-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-12-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 29,
+    "changedOptionTexts": [
+      {
+        "questionId": "DL-A2-12-Q10",
+        "optionIndex": 1,
+        "before": "أن النشاط في الجملة التابعة يقع قبل النشاط الرئيسي.",
+        "after": "أن النشاط في الجملة الرئيسية يقع قبل النشاط في الجملة التابعة."
+      }
+    ],
+    "protectedFilesCompared": 115,
+    "existingAudioConsistencyAssertionsUnchanged": true
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1997818,
+    "cacheVersion": "v77",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserResult": "PASS all five suites; no application-test retry this turn",
+    "axeScreenStates": 133,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 90,
+    "axeIncompleteNodeOccurrences": 204,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; prior CR29 filechooser intermittency remains unresolved, not claimed fixed."
+    ],
+    "browserEnvironment": "Locked npm dependencies plus Sparticuz143.0.4 and bundled al2023 libraries outside Git; no package/lock edits.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 30
+    },
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS",
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Historical filechooser intermittency unresolved; a successful run is not a fix.",
+      "Evidence bookkeeping is not automatic language/pronunciation assessment.",
+      "Prior A2.8/A2.9 recorded-text issues remain documented and unchanged.",
+      "No human reviewer prerequisite; no remote UI or Production test claimed."
+    ]
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "265d0a8054b478ed4f06bdb8da948330f374c378",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false
+  },
+  "campaign": {
+    "reviewedLessons": 29,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 24,
+    "next": "CR31/B1.1"
+  }
+}
