@@ -1126,6 +1126,39 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain A2.12 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR31: five-sentence story and four-turn dialogue; both need speech; B1.1 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-01-daily-life-hobbies-experiences').assessment.version, 'b1-01-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-01-daily-life-hobbies-experiences');
+    const responses = ["Als ich zwölf Jahre alt war, besuchte ich meinen ersten Malkurs. Dort lernte ich neue Freunde kennen. Wenn wir früher am Samstag Zeit hatten, malten wir zusammen im Park. Heute male ich noch gern. Ich erinnere mich an diesen Kurs.", "A: Wann hast du zum ersten Mal Schach gespielt? B: Als ich zehn Jahre alt war, spielte ich zum ersten Mal Schach. A: Was hast du früher gemacht, wenn du am Sonntag Zeit hattest? B: Wenn ich am Sonntag Zeit hatte, spielte ich oft mit meiner Schwester. Ich erinnere mich an diese Nachmittage."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:true};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && !performanceTaskEvidenceReady(t,{...e,spokenAloud:false});
+    });
+  })()`, context), true, 'B1.1 models fit thresholds; both tasks need speech and all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-01-daily-life-hobbies-experiences').performanceTasks[1]], 'lesson:b1-01-daily-life-hobbies-experiences', 'b1-01-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-01-daily-life-hobbies-experiences');
+      const next=findLesson('b1-02-food-habits-obwohl');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-01-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-01-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-01-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-01-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.1 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
