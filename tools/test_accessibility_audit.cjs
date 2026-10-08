@@ -98,6 +98,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.6-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.6-practical-form-fixture', width);
+  // CR13: travel/weather helpers, written plan and spoken traveller role.
+  await page.evaluate(() => openLesson('a1-07-travel-weather'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.7-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.7-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

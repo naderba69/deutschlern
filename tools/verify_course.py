@@ -10,6 +10,14 @@ from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
 
+def dialogue_headings(markdown: str) -> list[str]:
+    """Count actual numbered dialogue sections/tasks, not explanatory mentions."""
+    headings = re.findall(r"(?m)^#{2,3}\s+(.+)$", markdown)
+    return [h.strip() for h in headings if re.match(
+        r"^(?:\d+\)\s*(?:حوار|محادثة)\b|تمرين\s+\d+\s*—.*(?:حوار|محادثة|المحادثة))", h
+    )]
+
+
 ROOT = Path(__file__).resolve().parents[1]
 COURSE = json.loads((ROOT / "data" / "course.json").read_text(encoding="utf-8"))
 EXPECTED = {"A0": 5, "A1": 12, "A2": 12, "B1": 12, "B2": 12}
@@ -375,10 +383,7 @@ def main() -> None:
         )
         total_exercises += len(source_exercises)
 
-        source_dialogues = [
-            match.group(1).strip()
-            for match in re.finditer(r"(?m)^#{2,3}\s+(.+(?:حوار|محادثة|المحادثة).*)$", markdown)
-        ]
+        source_dialogues = dialogue_headings(markdown)
         rendered_text = plain_text(rendered)
         for heading in source_dialogues:
             visible_heading = re.sub(r"[`*_]", "", heading).strip()
