@@ -1,0 +1,1202 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-12-trip-invitations",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-12-v2",
+  "unitCount": 120,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "MODAL",
+      "title": "Lingolia Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "مصدر مع الفعل الناقص وتصريفه؛ möchten صيغةKonjunktivII منmögen تستعمل تعليميًا ضمن الطلب المهذب، وليس دليلًا على كل الأفعال المساعدة.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "SEPARABLE",
+      "title": "Lingolia Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "mit بادئة منفصلة، والفصل في الخبرية البسيطة يختلف عن مصدر مع فعل ناقص أو صيغةPerfekt.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "COME",
+      "title": "Duden mitkommen",
+      "url": "https://www.duden.de/rechtschreibung/mitkommen",
+      "scope": "مرافقة آخرين؛ قد تكون معي أو معنا حسب المقام؛ يأتي/يذهب معهم وليس معنا حصريًا.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "BRING",
+      "title": "Duden mitbringen",
+      "url": "https://www.duden.de/rechtschreibung/mitbringen",
+      "scope": "إحضار شيء مع الشخص إلى مكان؛ bringt mit، وصيغة المصدر متصلة.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "JOY",
+      "title": "Duden freuen",
+      "url": "https://www.duden.de/rechtschreibung/freuen",
+      "scope": "التطلع بسرور معsich freuen auf؛ ich freue mich schon لا يثبت حدوث الاحتفال. نتعامل معه كعبارة لا درس انعكاسي شامل.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "QUESTION",
+      "title": "Lingolia Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen",
+      "scope": "الفعل المصرف أولًا في سؤال نعم/لا،وبعد أداة السؤال فيW-Frage؛ wann وقت وwo مكان. لا نلزم سؤالًا غير مباشر متقدمًا.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "TIME",
+      "title": "Lingolia Uhrzeit",
+      "url": "https://deutsch.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit/uhrzeit",
+      "scope": "صيغة24ساعة،وذكرnachmittags يزيل لبسvier؛16Uhr=الرابعة بعد الظهر،و9:20 ليست9:00.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "LETTER",
+      "title": "IDS / Amtliches Regelwerk §53",
+      "url": "https://grammis.ids-mannheim.de/rechtschreibung/6162",
+      "scope": "المثال في§53(3) يبين فاصلة التحية ثمentsprechend صغيرة وخاتمةMit freundlichen Grüßen دون فاصلة والتوقيع بسطر مستقل؛E2 يميز نمط السويسري بلا علامة. لا تعميم على كل الأعراف الإقليمية.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "موقع الفعل المصرف ثانيًا وغير المصرف نهائيًا في النمط الرئيسي المدروس؛ الأمثلة تتضمنPerfekt فليست كل صيغة نهائية مصدرًا.",
+      "access": "full_fetched_page"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/sprachwissen/sprachratgeber/Anrede-in-Briefen",
+      "reason": "محتوى404 رغم نجاح استدعاء أداة الجلب؛ لا يُستعمل دليلًا لغويًا."
+    }
+  ],
+  "researchNotes": [
+    "جُلبت الصفحات التسع كاملة. نتائج البحث الاستكشافية عن تنسيق الرسالة لا تُحسب صفحات مقروءة مستقلة.",
+    "نجحت إعادة جلبUhrzeit بعد فشل المحاولة الأولى؛ لا فشل مصدر متبقٍ."
+  ],
+  "limitations": [
+    "120 وحدة و34 بندًا أو مطلبًا متداخلة، لا120 مهارة مستقلة. يحسبT07 مسارين بديلين، وT08 ستة مطالب جمل.",
+    "المراجع التسعة للقواعد والمعاني المحددة؛ لا مدخل قاموسي منفصل لكل كلمة أو ترجمة. راجع المساعد كل وحدة ومفتاح وسياق دون شهادة لغوية مستقلة.",
+    "أربعة أصول و11 مقطعًا بكلماتها وأصواتها ومساراتها وحالاتها؛ لم تُولد أو تُراجع سمعيًا أو تعتمد تسجيلات جديدة.",
+    "البنية والطول والإقرار لا تثبت صحة اللغة أو النطق أو الاستماع المستقل. لا شهادةCEFR/WCAG ولا مراجع بشري شرطًا لمتابعة العمل."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-12-trip-invitations.md": "d3b80ba77052b7d7f1994732e80017fd9559f2c36c7a6b17cfca74497e67222f",
+    "content/A1/lesson-12-trip-invitations.assessment.json": "035ad65d41549f1355bc53e7b249a5e6286428a5cd7d4dbc05e9009677e2ed40"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-12-AUD-PHR-01": "f483f59357834a1fc25d267230afa93a335ce894cb69416a95612b8f350556aa",
+    "DL-A1-12-AUD-READ-01": "0f7f8c5ad20a88f3cce0b281d2252f7f7f69bea45b879709f7f111040b3067f1",
+    "DL-A1-12-AUD-LST-01": "5cf75c58a53705b7a758e937826b8043876aa112a26362ed113d9845080954b0",
+    "DL-A1-12-AUD-DLG-01": "0f0fb3f0ee470aa62247861fcdf873cc555687b8b6da08984bee7bacdd0f5bcf"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "الهدف والتقدير",
+      "finding": "الدعوة والرد والاتفاق على الموعد؛35 دقيقة تقدير مرن،والاستماع اختياري لا شرط إتقان مستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "حدود الفعل الناقص",
+      "finding": "حُذف تعميم كل فعل مساعد؛ المصدر بلا zu مع können/möchten/sollen في النمط المدروس. möchten مهذب لا قدرة بدنية.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "الفصل والمصدر",
+      "finding": "Ich komme mit و Ich bringe Wasser mit يقابلان mitkommen/mitbringen مع فعل ناقص؛ لا مصدر مفصول بعد kannst.",
+      "sourceIds": [
+        "SEPARABLE",
+        "COME",
+        "BRING"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "ترتيب الجملة والسؤال",
+      "finding": "الفعل ثانيًا في الخبرية الرئيسية البسيطة وأولًا في سؤال نعم/لا، وبعد كتلة Um wie viel Uhr في السؤال الخاص.",
+      "sourceIds": [
+        "MAIN",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "تنسيق الرسالة",
+      "finding": "wir صغيرة بعد Hallo Karim, وخاتمة Viele Grüße بلا فاصلة مع توقيع مستقل، وفق النمط المختار لا إلزام عرف كل بلد.",
+      "sourceIds": [
+        "LETTER"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "السياق ودليل النص",
+      "finding": "القراءة تذكر 16:00 واللعبة؛الاستماع يسأل عن الساعة ويعد بكعكة ولا يعرّف هويته. وُضع تنبيه استقلال النموذجين بدل تغيير التسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-07",
+      "text": "تطابق التقييم",
+      "finding": "Q07 و Q09 إلى T01؛Q09 معنى لا استماع. أضيفت عناصر T01.5–6 و T03.4 دون تغيير الخيارات أو المفاتيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-08",
+      "text": "مهمتا الأداء",
+      "finding": "P01/T07 كتابة جملتين بقبول وسؤال ناقص أو اعتذار وسبب؛P02/T08 ست جمل مع الجهر واتفاق اليوم والساعة والغرض.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "الصوت والبنية",
+      "finding": "4 أصول/11 مقطعًا،منها 8 أدوارحوار؛لا تسجيل للنماذج الجديدة ولا تغيير للكلمات أو الأصوات أو المسارات أو الحالات.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود القياس والخصوصية",
+      "finding": "الموقف والسبب والمناسبة خيالية؛لا شريك أو تسجيل متعلم. v2 يتطلب إعادة دليل و 80%؛لا شهادة A1 أو نطق أو استماع بمجرد إقرار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Einladung | die Einladungen | الدعوة |",
+      "finding": "Einladung مؤنث والجمع Einladungen؛الدعوة لا الهدية أو الرحلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| der Geburtstag | die Geburtstage | عيد الميلاد |",
+      "finding": "Geburtstag مذكر والجمع Geburtstage؛عيد ميلاد لا احتفال عام.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Feier | die Feiern | الاحتفال |",
+      "finding": "Feier مؤنث والجمع Feiern؛قد تكون مناسبة غير عيد ميلاد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Ausflug | die Ausflüge | رحلة قصيرة |",
+      "finding": "Ausflug مذكر والجمع Ausflüge؛رحلة قصيرة لا السفر كله.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Gast | die Gäste | الضيف |",
+      "finding": "Gast مذكر والجمع Gäste مع Umlaut؛ضيف.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| das Geschenk | die Geschenke | الهدية |",
+      "finding": "Geschenk محايد والجمع Geschenke؛الهدية لا الدعوة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| das Lieblingsspiel | die Lieblingsspiele | اللعبة المفضلة |",
+      "finding": "Lieblingsspiel محايد والجمع Lieblingsspiele؛اللعبة المفضلة،وقد تكون لعبة جماعية لا دمية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| der Kuchen | die Kuchen | الكعكة |",
+      "finding": "Kuchen مذكر والجمع Kuchen دون تغيير؛نصب المفرد einen Kuchen في التسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Bahnhof | die Bahnhöfe | محطة القطار |",
+      "finding": "Bahnhof مذكر والجمع Bahnhöfe؛محطة القطار،لا موقف الحافلات.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| mitkommen | — فعل منفصل | يأتي/يذهب مع شخص |",
+      "finding": "mitkommen مصدر منفصل في التصريف؛ترجمة يأتي/يذهب مع شخص لا تلزم ضميرمعنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| mitbringen | — فعل منفصل | يحضر معه شيئًا |",
+      "finding": "mitbringen مصدر منفصل في التصريف؛يحضر الشيء معه لا مجرد مجيء الشخص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| feiern | — فعل | يحتفل |",
+      "finding": "feiern مصدر معناه يحتفل؛wir feiern جمع في الحوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| beginnen | — فعل | يبدأ |",
+      "finding": "beginnen مصدر معناه يبدأ،غير منفصل؛تظهر beginnt مع die Feier.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| leider | — | للأسف |",
+      "finding": "leider ظرف للأسف،لا جمع أو تصريف شخصي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| natürlich | — | بالطبع |",
+      "finding": "natürlich هنا بالطبع في الموافقة،لا الوصف الطبيعي حرفيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-01",
+      "text": "Hast du am Samstag Zeit?",
+      "finding": "سؤال تفرغ يوم السبت؛hast أولًا و du فاعل،ولا يعد قبولًا تلقائيًا.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "text": "Möchtest du zu meiner Geburtstagsfeier kommen?",
+      "finding": "سؤال دعوة لاحتفال المتكلم؛möchtest مع du ومصدر kommen آخرًا.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "text": "Möchtest du mitkommen?",
+      "finding": "مرافقتي أو مرافقتنا حسب السياق؛mitkommen كامل،حُسنت الترجمة دون تغيير النص الألماني المسجل.",
+      "sourceIds": [
+        "MODAL",
+        "COME"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "text": "Ja, gern!",
+      "finding": "قبول صريح في هذا السياق،غير Danke وحدها.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-05",
+      "text": "Natürlich, ich komme gern.",
+      "finding": "موافقة ثم خبر ich komme gern؛لا يشترط können للتعبير عن القبول.",
+      "sourceIds": [
+        "MAIN"
+      ]
+    },
+    {
+      "id": "phrase-06",
+      "text": "Leider kann ich nicht.",
+      "finding": "اعتذار مفهوم في سياق الدعوة؛مصدر kommen مفهوم محذوف لا قاعدة بحذفه دائمًا.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "phrase-07",
+      "text": "Danke für die Einladung!",
+      "finding": "شكر للدعوة لا قبول أو رفض بمفرده.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-08",
+      "text": "Um wie viel Uhr beginnt die Feier?",
+      "finding": "السؤال عن ساعة البدء؛beginnt مصرف بعد كتلة Um wie viel Uhr،لا سؤال عن مكان.",
+      "sourceIds": [
+        "QUESTION",
+        "TIME"
+      ]
+    },
+    {
+      "id": "phrase-09",
+      "text": "Soll ich etwas mitbringen?",
+      "finding": "عرض إحضار شيء وسؤال إن كان مطلوبًا؛soll أولًا و mitbringen مصدر آخرًا.",
+      "sourceIds": [
+        "MODAL",
+        "BRING"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "Möchtest du mitkommen?",
+      "finding": "möchtest مع du،و mitkommen مصدر كامل في نهاية السؤال.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Ich kann leider nicht kommen.",
+      "finding": "kann مع ich،و kommen مصدر بعد النفي والظرف.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Ich komme mit.",
+      "finding": "komme مصرف و mit منفصل في الخبرية.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Ich bringe Wasser mit.",
+      "finding": "bringe مصرف ومفعوله Wasser ثم mit.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Kannst du Wasser mitbringen?",
+      "finding": "kannst أولًا،ولا نفصل mitbringen أو نصرفه مرة ثانية.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **Hammamet / nach Hammamet / dort** — مدينة الحمامات / إلى الحمامات / هناك؛ هذه أمثلة خيالية، وليست إعلان رحلة حقيقية أو جدول قطارات.",
+      "finding": "فسّر اسم المدينة و nach و dort؛لا جدول رحلات حقيقي في هذا المثال.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-02",
+      "text": "- **am Samstag / am Sonntag / um 16 Uhr** — يوم السبت / يوم الأحد / الساعة 16:00، أي الرابعة بعد الظهر. **neun Uhr zwanzig** =9:20؛ وفي الحوار وقت الاجتماع أمام المحطة 9:00، غير وقت القطار 9:20.",
+      "finding": "am لليوم و um للساعة؛ميّز اجتماع 9:00 عن قطار 9:20 و 16:00 عن الرابعة صباحًا.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **Ich habe Geburtstag. / Geburtstagsfeier** — إنه عيد ميلادي / احتفال عيد ميلاد؛ كلمة Geburtstagsfeier مركبة وتحتوي s بين الجزأين. لا نتحدث هنا عن Weihnachten.",
+      "finding": "Ich habe Geburtstag تعبير المناسبة؛Geburtstagsfeier مركبة بحرف s للوصل وليست Weihnachten.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-04",
+      "text": "- **zu meiner Geburtstagsfeier / bei mir zu Hause** — إلى احتفال عيد ميلادي / في منزلي؛ عبارتان معطاتان للفهم، و mir هنا يعود إلى صاحبة الدعوة Amel.",
+      "finding": "المتكلمة Amel هي مرجع mir في البيت؛تُعطى العبارات دون درس Dativ كامل.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-05",
+      "text": "- **dein Lieblingsspiel / ihr Lieblingsspiel** — لعبتك المفضلة في خطاب Salma / لعبتها المفضلة عند الحديث عنها؛ المطلوب لعبة Salma، لا إثبات أنها أحضرتها فعلًا.",
+      "finding": "dein في خطاب Salma يصبح ihr عند الحديث عنها؛الطلب ليس وعدًا مستجابًا بعد.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-06",
+      "text": "- **Kannst du bitte…? / Soll ich etwas mitbringen?** — طلب مهذب / عرض لإحضار شيء وسؤال إن كان مطلوبًا؛ الثاني سؤال نعم/لا، لا سؤال عن قدرة بدنية أو اسم غرض بعينه.",
+      "finding": "الطلب المهذب ب kannst لا اختبار قدرة بدنية،وعرض soll سؤال نعم/لا، لا يطلب تحديد اسم الغرض مباشرة.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **Ich freue mich schon. / Sie freut sich.** — أتطلع إلى ذلك بسرور / هي مسرورة؛ احفظ mich مع ich و sich مع sie هنا دون تعميم كل صيغ الأفعال الانعكاسية. في النص التطلع للاحتفال لا تقرير حضوره سابقًا.",
+      "finding": "mich مع ich و sich مع sie؛سعادة متوقعة لا إثبات حدث مضى.",
+      "sourceIds": [
+        "JOY"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **ich kann / du kannst / Rania kann / wir können** — صيغ نحتاجها في T02. كذلك **ich möchte / du möchtest / wir möchten**، و**beginnt / fährt** = يبدأ / ينطلق في السياق؛ مصدرهما beginnen و fahren.",
+      "finding": "صيغ T02 الأربع متاحة؛beginnt و fährt مربوطتان بمصدريهما،و möchtest ليست möchte مع du.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **Danke für die Einladung! / Leider kann ich nicht.** — الشكر وحده لا يحدد قبولًا أو رفضًا؛ الاعتذار هنا واضح من السياق. يمكنك استعمال أسباب خيالية في التدريب دون كشف ظروفك الحقيقية.",
+      "finding": "الشكر مستقل عن اختيار القبول أو الاعتذار؛سبب التمرين يمكن أن يكون خياليًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **etwas / Wasser / einen Kuchen** — شيء / ماء / كعكة واحدة في Akkusativ؛ مع mitbringen يختلف الغرض ولا يتغير معنى إحضاره مع الشخص. beginnen ليس فعلًا منفصلًا مثل mitbringen.",
+      "finding": "etwas نكرة عامة والماء اسم مادة،و einen Kuchen منصوب؛beginnen ليس فعل mit منفصلًا.",
+      "sourceIds": [
+        "BRING"
+      ]
+    },
+    {
+      "id": "helper-11",
+      "text": "- **Hallo Karim, / wir fahren… / Viele Grüße** — في نموذج الرسالة المكتوبة هنا فاصلة بعد التحية، ثم wir صغيرة، وخاتمة مستقلة بلا فاصلة يتبعها الاسم في سطر آخر. تسجيل القراءة ينطق 16 بصيغة sechzehn؛ اختلاف الوقفات أو الكتابة الرقمية ليس تغييرًا لمعنى الدعوة.",
+      "finding": "تفسير الفاصلة والحرف الصغير والخاتمة،والمقابلة الكتابية 16/النطق sechzehn دون تغيير التسجيل.",
+      "sourceIds": [
+        "LETTER"
+      ]
+    },
+    {
+      "id": "helper-12",
+      "text": "- **التفرغ والاتفاق:** سؤال Hast du Zeit? تمهيد للدعوة، وليس قبولًا لها. في T08 يوافق الرد على اليوم والساعة المعطيين ويكرر الغرض المطلوب، فلا نعيد سؤالًا عن معلومة واضحة أو نغيّر الطلب دون توضيح.",
+      "finding": "رد T08 يؤكد المعطيات نفسها؛اختلاف النموذج المسجل لا يصبح ممارسة الاتفاق الجديدة المطلوبة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Nadia: Hast du am Samstag Zeit, Youssef?",
+      "finding": "Nadia تسأل Youssef عن تفرغه السبت؛ لا يوم الأحد في هذا الموقف.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Youssef: Ja, warum?",
+      "finding": "Youssef متفرغ ويسأل عن السبب؛ warum يعود إلى سبب السؤال عن تفرغه، لا إلى الساعة.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Nadia: Ich habe Geburtstag. Wir machen einen Ausflug nach Hammamet und feiern dort. Möchtest du mitkommen?",
+      "finding": "ثلاث جمل: عيد ميلاد، ورحلة واحتفال هناك، ثم دعوة. machen einen Ausflug و nach Hammamet مناسبان للسياق.",
+      "sourceIds": [
+        "MODAL",
+        "COME"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Youssef: Ja, gern! Wann fährt der Zug?",
+      "finding": "قبول واضح وسؤال عن موعد القطار؛ fährt مصرف بعد wann.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Nadia: Um neun Uhr zwanzig. Wir sind um neun Uhr vor dem Bahnhof.",
+      "finding": "القطار9:20 والتجمع أمام المحطة9:00؛ لا مساواة بينهما أو ادعاء جدول قطارات حقيقي.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Youssef: Soll ich etwas mitbringen?",
+      "finding": "عرض إحضار شيء؛ ليس تحديدًا لكعكة نموذج الاستماع المستقل.",
+      "sourceIds": [
+        "MODAL",
+        "BRING"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Nadia: Ja. Kannst du bitte Wasser mitbringen?",
+      "finding": "المضيف يطلب الماء بصيغة Kannst du bitte؛ لا لعبة رسالة القراءة.",
+      "sourceIds": [
+        "MODAL",
+        "BRING"
+      ]
+    },
+    {
+      "id": "dialogue-08",
+      "text": "Youssef: Ja, natürlich. Danke für die Einladung!",
+      "finding": "موافقة على طلب الماء وشكر للدعوة؛ لا تصريح بساعة أخرى.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Hallo Salma,",
+      "finding": "تحية للمدعوة Salma بفاصلة؛ يليها am بحرف صغير.",
+      "sourceIds": [
+        "LETTER"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "am Sonntag mache ich eine kleine Geburtstagsfeier bei mir zu Hause.",
+      "finding": "المضيفة Amel تقيم حفلة الأحد في منزلها؛ mache ثانيًا بعد Am Sonntag في النمط الخبري.",
+      "sourceIds": [
+        "MAIN"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Die Feier beginnt um 16 Uhr.",
+      "finding": "البداية16:00 أي الرابعة بعد الظهر، لا18:00.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Hast du Zeit?",
+      "finding": "سؤال التفرغ لا يعني الموافقة وحده.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Möchtest du kommen?",
+      "finding": "دعوة صريحة بـmöchtest المصرف وkommen المصدر.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Kannst du bitte dein Lieblingsspiel mitbringen?",
+      "finding": "طلب اللعبة المفضلة لـSalma، لا تقرير بأنها وعدت بإحضارها أو أحضرتها.",
+      "sourceIds": [
+        "MODAL",
+        "BRING"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Viele Grüße",
+      "finding": "خاتمة دون فاصلة، وليست جملة خبرية تحتاج فعلًا.",
+      "sourceIds": [
+        "LETTER"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "Amel",
+      "finding": "التوقيع Amel يحدد صاحبة الدعوة، لا هوية المتكلم المجهول في التسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "An welchem Tag ist die Feier?",
+      "finding": "Am Sonntag مذكور صراحة في الرسالة؛ لا ننقل يوم السبت من حوار الرحلة إلى هذا الموقف.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wo findet sie statt?",
+      "finding": "Bei Amel zu Hause؛ مرجع mir هو المضيفة، لا Salma.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Um wie viel Uhr beginnt sie?",
+      "finding": "Um 16 Uhr؛ ويمكن um vier Uhr nachmittags للوقت نفسه.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was soll Salma mitbringen?",
+      "finding": "Ihr Lieblingsspiel؛ المطلوب لعبة Salma المفضلة. هذا طلب لا وعد مثبت بالإحضار.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Hallo Amel!",
+      "finding": "المتكلم يخاطب Amel، ولا يسمي نفسه Salma.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Danke für deine Einladung.",
+      "finding": "شكر قبل القبول في الجملة التالية؛ deine تعود إلى المخاطبة Amel.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Am Sonntag kann ich kommen.",
+      "finding": "قبول الأحد؛ kann ثانيًا بعد Am Sonntag وkommen مصدر في النهاية.",
+      "sourceIds": [
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Ich bringe einen Kuchen mit.",
+      "finding": "وعد بكعكة: bringe…mit وeinen منصوب. الكعكة ليست مرادفًا للعبة رسالة القراءة.",
+      "sourceIds": [
+        "BRING",
+        "SEPARABLE"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Um wie viel Uhr beginnt die Feier?",
+      "finding": "يسأل عن الساعة رغم أنها مذكورة في الرسالة السابقة؛ صُرّح باستقلال النموذجين بدل تقديمهما جوابًا مطابقًا.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Ich freue mich schon.",
+      "finding": "تطلع بسرور إلى المناسبة؛ لا يقول إن المتكلم حضرها سابقًا.",
+      "sourceIds": [
+        "JOY"
+      ]
+    },
+    {
+      "id": "listening-07",
+      "text": "Bis Sonntag!",
+      "finding": "وداع حتى الأحد، وهو يوم القبول نفسه؛ لا ساعة محددة في الوداع.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Kann die Person am Sonntag kommen?",
+      "finding": "Ja؛ الدليل الصريح Am Sonntag kann ich kommen.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was bringt sie mit?",
+      "finding": "Einen Kuchen؛ لا ماء الحوار أو لعبة رسالة القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was möchte sie wissen?",
+      "finding": "يريد معرفة ساعة البداية. المفتاح نموذج بسؤال غير مباشر؛ لا يفرض إنتاج هذه البنية المتقدمة على متعلمA1، ويصح جواب Die Uhrzeit أيضًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Freut sie sich auf die Feier?",
+      "finding": "Ja من Ich freue mich schon في السياق؛ sie يعود نحويًا إلى die Person ولا يثبت جنس المتكلم.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Ja, ich komme gern.",
+      "finding": "قبول بدون können؛ المهمة كتابة فقط.",
+      "sourceIds": [
+        "MODAL",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Um wie viel Uhr beginnt die Feier?",
+      "finding": "السؤال ملائم لدعوةT07 الناقصة الساعة؛ لا ينسب إلى رسالة القراءة التي تعطي16:00.",
+      "sourceIds": [
+        "MODAL",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Leider kann ich nicht kommen.",
+      "finding": "مسار بديل بالاعتذار؛ kann…kommen تركيب صحيح.",
+      "sourceIds": [
+        "MODAL",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Ich muss arbeiten.",
+      "finding": "سبب في جملة خبرية مستقلة بـmuss…arbeiten؛ لا يلزم weil أو سبب شخصي حقيقي.",
+      "sourceIds": [
+        "MODAL",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Am Samstag mache ich eine Feier bei mir zu Hause.",
+      "finding": "الجملة الأولى تجمع نوع المناسبة واليوم والمكان عند المضيف؛ mache في الموقع الثاني.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Die Feier beginnt um 16 Uhr.",
+      "finding": "الجملة الثانية تعطي16:00، ولا يتجاهلها الرد.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Möchtest du kommen?",
+      "finding": "دعوة بـMöchtest du…kommen? مناسبة للمطلب الثالث.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Kannst du bitte Wasser mitbringen?",
+      "finding": "طلب الماء مع المصدر mitbringen كاملًا بعد kannst؛ الغرض محدد.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "speaking-model-05",
+      "text": "Ja, ich komme am Samstag um 16 Uhr.",
+      "finding": "قبول يؤكد am Samstag وum16Uhr نفسيهما؛ لا سؤال جديد عن الساعة المعلومة.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "speaking-model-06",
+      "text": "Ich bringe Wasser mit.",
+      "finding": "وعد بإحضار الماء نفسه بـbringe…mit؛ تُقرأ الجمل الست كلها جهرًا ولو أدى شخص واحد الطرفين.",
+      "sourceIds": [
+        "MODAL",
+        "SEPARABLE",
+        "TIME"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Möchtest du mitkommen?** → هل ترغب في مرافقتي/مرافقتنا؟ بحسب السياق",
+      "finding": "المرافقة معي أو معنا بحسب السياق؛ الترجمة مطابقة للشرح.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "- **Danke für die Einladung!** → شكرًا على الدعوة!",
+      "finding": "شكر للدعوة، لا قبول بمفرده.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "- **Leider kann ich nicht.** → للأسف لا أستطيع.",
+      "finding": "اعتذار مع حذف مصدر مفهوم؛ ليس الحذف واجبًا في كل سياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "- **Soll ich etwas mitbringen?** → هل أحضر معي شيئًا؟",
+      "finding": "عرض إحضار شيء؛ soll لا يعني القدرة الجسدية هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-12-T01",
+      "text": "1. قبول الدعوة: **Ja, gern! / Leider kann ich nicht.**\n2. الاعتذار: **Natürlich, ich komme. / Leider kann ich nicht.**\n3. السؤال عن ساعة البداية: **Um wie viel Uhr beginnt die Feier? / Wo wohnst du?**\n4. شكر المضيف: **Danke für die Einladung! / Gute Reise!**\n5. عرض إحضار شيء: **Soll ich etwas mitbringen? / Wo wohnst du?**\n6. كلمة تعني الدعوة: **die Einladung / das Geschenk**",
+      "finding": "ستة اختيارات بمفاتيح تفصيلية؛ أضيف العرض ومعنى الدعوة لمواءمة الأسئلة.",
+      "sourceIds": [],
+      "items": [
+        "Ja, gern! قبول؛ Leider رفض.",
+        "Leider kann ich nicht اعتذار؛ Natürlich, ich komme قبول.",
+        "Um wie viel Uhr… وقت؛ Wo مكان.",
+        "Danke für die Einladung شكر؛ Gute Reise تمنٍّ برحلة طيبة.",
+        "Soll ich etwas mitbringen عرض؛ Wo wohnst du سؤال عن السكن.",
+        "die Einladung الدعوة؛ das Geschenk الهدية."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T02",
+      "text": "1. Ich ______ am Samstag kommen.\n2. ______ du mitkommen?\n3. Wir ______ um neun Uhr fahren.\n4. Leider ______ Rania nicht kommen.",
+      "finding": "أربع صيغ حسب الفاعل؛ لا نستخدم مصدرkönnen لجميع الضمائر.",
+      "sourceIds": [
+        "MODAL"
+      ],
+      "items": [
+        "kann معich.",
+        "Kannst معdu وبحرف كبير في بداية السؤال.",
+        "können معwir.",
+        "kann معRania مفرد غائب بعدLeider."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T03",
+      "text": "1. Möchtest du am Sonntag ______? (kommen)\n2. Ich kann einen Kuchen ______. (mitbringen)\n3. Wir möchten nach Hammamet ______. (fahren)\n4. Kannst du am Sonntag ______? (mitkommen)",
+      "finding": "أربعة مصادر بلا فصل؛ القاعدة محددة بالأفعال الناقصة المدروسة لا كل فعل مساعد.",
+      "sourceIds": [
+        "MODAL"
+      ],
+      "items": [
+        "kommen مصدر معmöchtest.",
+        "mitbringen كامل معkann.",
+        "fahren مصدر معwir möchten.",
+        "mitkommen كامل بلا فصل بعدkannst؛ يدرّبQ06 مباشرة."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T04",
+      "text": "رتّب كتل الرسالة: التحية، ثم خبر الرحلة، ثم سؤال الانضمام، ثم الخاتمة والتوقيع. هذا ترتيب مطلوب للتدريب، لا كل ترتيب ممكن لدعوة:\n\nأ. Möchtest du mitkommen?\nب. Hallo Karim,\nج. wir fahren am Samstag nach Hammamet.\nد. Viele Grüße (وفي السطر التالي: Sami؛ دون فاصلة بعد Grüße)",
+      "finding": "ترتيب محدد بالوظائف حتى لا نخطّئ كل ترتيب آخر مقبول؛ أصلحت الفاصلة والحرف الأول والخاتمة.",
+      "sourceIds": [
+        "LETTER"
+      ],
+      "items": [
+        "ب: التحية Hallo Karim, أولًا.",
+        "ج: خبر الرحلة؛ wir صغيرة بعد فاصلة التحية.",
+        "أ: سؤال Möchtest du… بعد خبر الرحلة حسب ترتيب التدريب المطلوب.",
+        "د: الخاتمة Viele Grüße بلا فاصلة ثم Sami في سطر جديد."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Die Feier beginnt um 18 Uhr, nicht um 16 Uhr.\n2. Die Feier ist bei Amel zu Hause.\n3. Die Feier beginnt um vier Uhr nachmittags.\n4. In der Einladung steht: „Kannst du bitte dein Lieblingsspiel mitbringen?“",
+      "finding": "الأحكام الأربعة تستند إلى الرسالة نفسها؛ أولها تناقض صريح لا تخمين حدوث احتفال آخر.",
+      "sourceIds": [
+        "TIME"
+      ],
+      "items": [
+        "خطأ:18:00 مع نفي16:00 يناقض الرسالة صراحة.",
+        "صحيح: bei mir مع المضيفةAmel.",
+        "صحيح: vier Uhr nachmittags يساوي16:00.",
+        "صحيح: اقتباس الطلب موجود حرفيًا؛ لا يثبت وعدًا أو إحضارًا."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة واحدة: **Sonntag — Kuchen — Uhrzeit — ja**. Uhrzeit تعني الساعة/وقت الحدث، وليس مكانه.\n\n1. Die Person kann am ______ kommen.\n2. Sie bringt einen ______ mit.\n3. Sie fragt nach der ______ der Feier.\n4. Sie freut sich auf die Feier: ______.",
+      "finding": "بنك أربع كلمات يجعل المفتاح محصورًا؛ النموذج المسجل مستقل عن تفاصيل القراءة.",
+      "sourceIds": [],
+      "items": [
+        "Sonntag من جملة القبول.",
+        "Kuchen من الوعد بإحضاره.",
+        "Uhrzeit من البنك؛ البنك يحصر الجواب ولا ينفي وجود مرادفات خارج التمرين.",
+        "ja من التطلع السعيد؛ تستعمل كل كلمة مرة واحدة."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T07",
+      "text": "أمامك دعوة خيالية ناقصة التفاصيل: Hallo! Ich mache am Sonntag eine Feier. Möchtest du kommen? اكتب ردًا من جملتين فقط: إما قبول واضح ثم سؤال عن الساعة أو المكان غير المذكورين، وإما اعتذار واضح ثم سبب خيالي بسيط في جملة مستقلة، مثل Ich muss arbeiten. لا يلزم können في جواب القبول؛ استعمله صحيحًا إذا اخترته. هذه كتابة فقط، دون جهر أو تسجيل أو سبب شخصي حقيقي.",
+      "finding": "مساران بديلان لرد من جملتين؛ سؤال القبول عن معلومة ناقصة، لا ساعة معلومة.",
+      "sourceIds": [],
+      "items": [
+        "المسار الأول: جملة قبول ثم سؤال عن ساعة أو مكان ناقصين؛ كتابة فقط.",
+        "أو المسار الثاني: جملة اعتذار ثم سبب خيالي في جملة مستقلة؛ لا نجمع المسارين."
+      ]
+    },
+    {
+      "id": "DL-A1-12-T08",
+      "text": "اكتب تبادلًا خياليًا من ست جمل: دعوة بأربع جمل ثم جواب قبول بجملتين. اذكر في الأولى نوع المناسبة واليوم والمكان، وفي الثانية ساعة البداية، وفي الثالثة دعوة بـ Möchtest du…، وفي الرابعة طلب غرض بـ Kannst du bitte…mitbringen? اكتب جوابًا يقبل ويؤكد اليوم والساعة نفسيهما، ثم يعد بإحضار الغرض نفسه بـ Ich bringe…mit. اقرأ الجمل الست كلها بصوت مرتفع، ويمكنك أداء الطرفين منفردًا. التحية والتوقيع اختياريان ولا يحسبان من الجمل الست؛ لا شريك أو تسجيل أو عنوان أو موعد حقيقي مطلوب.",
+      "finding": "ستة مطالب جمل واضحة للإنتاج والاتفاق، لا عدد غامض أو رد غير متوافق.",
+      "sourceIds": [],
+      "items": [
+        "جملة1: نوع مناسبة ويوم ومكان خياليون.",
+        "جملة2: ساعة بداية واضحة بـum.",
+        "جملة3: دعوة Möchtest du… مع مصدر.",
+        "جملة4: طلب Kannst du bitte…mitbringen?",
+        "جملة5: قبول وتأكيد اليوم والساعة نفسيهما.",
+        "جملة6: وعد بالغرض نفسه بـIch bringe…mit؛ الجهر مطلوب للجمل الست، لا الشريك أو التسجيل."
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q01",
+      "text": "ما معنى die Einladung؟",
+      "finding": "الدعوة صحيحة؛ الهدية Geschenk والرحلة Ausflug. دعمT01.6 مباشر.",
+      "sourceIds": [],
+      "options": [
+        "الدعوة",
+        "الهدية",
+        "الرحلة"
+      ],
+      "answer": "الدعوة",
+      "explanation": "die Einladung تعني «الدعوة».",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q02",
+      "text": "أي عبارة تقبل دعوة بوضوح؟",
+      "finding": "Ja, gern! قبول صريح؛ التعب لا يحسم قرار الحضور وLeider رفض.",
+      "sourceIds": [],
+      "options": [
+        "Leider kann ich nicht.",
+        "Ja, gern!",
+        "Danke, ich bin müde."
+      ],
+      "answer": "Ja, gern!",
+      "explanation": "Ja, gern! تعني قبول الدعوة بسرور.",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q03",
+      "text": "أي عبارة تعتذر عن قبول الدعوة؟",
+      "finding": "Leider رفض؛ Danke شكر قد يصاحب الموافقة أو الاعتذار.",
+      "sourceIds": [],
+      "options": [
+        "Ja, gern!",
+        "Danke für die Einladung!",
+        "Leider kann ich nicht."
+      ],
+      "answer": "Leider kann ich nicht.",
+      "explanation": "Leider kann ich nicht تعني «للأسف لا أستطيع».",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q04",
+      "text": "أي سؤال يسأل عن وقت بدء الاحتفال؟",
+      "finding": "Um wie viel Uhr يسأل عن ساعة البداية؛ Wo للمكان وWas isst للطعام.",
+      "sourceIds": [],
+      "options": [
+        "Wo wohnst du?",
+        "Um wie viel Uhr beginnt die Feier?",
+        "Was isst du gern?"
+      ],
+      "answer": "Um wie viel Uhr beginnt die Feier?",
+      "explanation": "السؤال يطلب معرفة الساعة التي يبدأ فيها الاحتفال.",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q05",
+      "text": "أكمل: Ich ___ am Sonntag mitkommen.",
+      "finding": "ich kann صحيح؛ kannst معdu وkönnen مع الجمع أو مصدرًا.",
+      "sourceIds": [],
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answer": "kann",
+      "explanation": "مع ich نستخدم kann.",
+      "sourceTaskIds": [
+        "DL-A1-12-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q06",
+      "text": "أكمل: Kannst du am Sonntag ___?",
+      "finding": "mitkommen مصدر؛ mitkommst وkommst mit مصرفان لا يصلحان معkannst.",
+      "sourceIds": [],
+      "options": [
+        "mitkommst",
+        "mitkommen",
+        "kommst mit"
+      ],
+      "answer": "mitkommen",
+      "explanation": "بعدkannst في السؤال البسيط يأتي المصدر الكامل mitkommen بلا فصل، لاmitkommst أوkommst mit المصرفين.",
+      "sourceTaskIds": [
+        "DL-A1-12-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q07",
+      "text": "كيف تشكر شخصًا على الدعوة؟",
+      "finding": "Danke للشكر؛ بلد الأصل أو موعد الحافلة لا يشكران على الدعوة. صُحح الربط إلىT01.4 بدل ترتيب الرسالة.",
+      "sourceIds": [],
+      "options": [
+        "Danke für die Einladung!",
+        "Ich komme aus Nabeul.",
+        "Um fünf Uhr fährt der Bus."
+      ],
+      "answer": "Danke für die Einladung!",
+      "explanation": "Danke für die Einladung! تعني «شكرًا على الدعوة».",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q08",
+      "text": "بحسب رسالة الدعوة، في أي يوم المناسبة؟",
+      "finding": "الأحد مذكور في رسالةAmel وسؤال القراءة1؛ السبت لحوار الرحلة لا الرسالة، والاثنين غير مذكور. T05 مرتبط بفهم الرسالة نفسها.",
+      "sourceIds": [],
+      "options": [
+        "يوم الاثنين",
+        "يوم السبت",
+        "يوم الأحد"
+      ],
+      "answer": "يوم الأحد",
+      "explanation": "رسالةAmel نفسها تقول: am Sonntag mache ich eine kleine Geburtstagsfeier؛ أي يوم الأحد.",
+      "sourceTaskIds": [
+        "DL-A1-12-T05"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q09",
+      "text": "ما السؤال الذي يعني «هل أحضر معي شيئًا؟»؟",
+      "finding": "Soll عرض إحضار؛ Kann ich dich sehen لرؤية شخص، وWie heißt للسؤال عن الاسم. مرتبط بـT01.5 وموسوم بمعنى، لا استماع.",
+      "sourceIds": [],
+      "options": [
+        "Soll ich etwas mitbringen?",
+        "Kann ich dich sehen?",
+        "Wie heißt das Geschenk?"
+      ],
+      "answer": "Soll ich etwas mitbringen?",
+      "explanation": "Soll ich etwas mitbringen? عرض لإحضار شيء وسؤال إن كان ذلك مطلوبًا؛ لا يختبر الاستماع أو مجرد القدرة الجسدية.",
+      "sourceTaskIds": [
+        "DL-A1-12-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-12-Q10",
+      "text": "ما الرد المناسب إذا لم تستطع الحضور؟",
+      "finding": "Leider يدل على عدم الحضور؛ البديلان قبول. مسار الاعتذار فيT07 يدرب الرد نفسه.",
+      "sourceIds": [],
+      "options": [
+        "Ja, gern!",
+        "Leider kann ich nicht.",
+        "Danke, ich komme sicher."
+      ],
+      "answer": "Leider kann ich nicht.",
+      "explanation": "الاعتذار المناسب: Leider kann ich nicht.",
+      "sourceTaskIds": [
+        "DL-A1-12-T07"
+      ]
+    },
+    {
+      "id": "DL-A1-12-P01",
+      "text": "أمامك دعوة خيالية ناقصة التفاصيل: Hallo! Ich mache am Sonntag eine Feier. Möchtest du kommen? اكتب ردًا من جملتين فقط: إما قبول واضح ثم سؤال عن الساعة أو المكان غير المذكورين، وإما اعتذار واضح ثم سبب خيالي بسيط في جملة مستقلة، مثل Ich muss arbeiten. لا يلزم können في جواب القبول؛ استعمله صحيحًا إذا اخترته. هذه كتابة فقط، دون جهر أو تسجيل أو سبب شخصي حقيقي.",
+      "finding": "P01/T07: حد40حرفًا. نموذج القبول ونموذج الاعتذار يحقق كل منهما جملتين ويمر دون الجهر. السبب خيالي، ولا يفرضkönnen على القبول.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "جملتان: قبول وسؤال عن ساعة أو مكان ناقصين، أو اعتذار وسبب خيالي مستقل؛ كتابة فقط.",
+        "meaningClarity": "الموقف من الدعوة واضح، والسؤال أو السبب يناسب المسار المختار دون تناقض.",
+        "targetSkill": "عبارة قبول أو اعتذار وصياغة سؤال أو خبر مناسب؛ إذا استُعمل können أوmüssen فليكن مصرفًا ومع مصدر صحيح، ولا يفرضkönnen على القبول."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 40,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-12-T07"
+      ]
+    },
+    {
+      "id": "DL-A1-12-P02",
+      "text": "اكتب تبادلًا خياليًا من ست جمل: دعوة بأربع جمل ثم جواب قبول بجملتين. اذكر في الأولى نوع المناسبة واليوم والمكان، وفي الثانية ساعة البداية، وفي الثالثة دعوة بـ Möchtest du…، وفي الرابعة طلب غرض بـ Kannst du bitte…mitbringen? اكتب جوابًا يقبل ويؤكد اليوم والساعة نفسيهما، ثم يعد بإحضار الغرض نفسه بـ Ich bringe…mit. اقرأ الجمل الست كلها بصوت مرتفع، ويمكنك أداء الطرفين منفردًا. التحية والتوقيع اختياريان ولا يحسبان من الجمل الست؛ لا شريك أو تسجيل أو عنوان أو موعد حقيقي مطلوب.",
+      "finding": "P02/T08: حد160حرفًا. نموذج الست جمل متسق في السبت16:00 والماء. الجهر مطلوب، لا التسجيل؛ معيار الإقرار لا يصحح جودة الألمانية آليًا.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل دعوة لليوم والمكان والساعة وطلب الحضور والغرض، وجملتا قبول ووعد؛ قرأت الست كلها جهرًا.",
+        "meaningClarity": "اليوم والساعة والغرض في الرد تطابق الدعوة؛ لا سؤال عن ساعة معطاة أو تغيير للطلب دون توضيح.",
+        "targetSkill": "Möchtest du… وKannst du bitte…mitbringen مع مصدر كامل، ثمIch bringe…mit في الرد؛ am لليوم وum للساعة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-12-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-12-AUD-PHR-01",
+      "text": "Hast du am Samstag Zeit? Möchtest du zu meiner Geburtstagsfeier kommen? Möchtest du mitkommen? Ja, gern! Natürlich, ich komme gern. Leider kann ich nicht. Danke für die Einladung! Um wie viel Uhr beginnt die Feier? Soll ich etwas mitbringen?",
+      "finding": "مقطع العبارات التسع بصوت الراوي02؛ تغيّر التفسير العربي فقط، لا الكلمات المسجلة. الحالةready وسياسةoffer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-12-AUD-READ-01",
+      "text": "Hallo Salma. Am Sonntag mache ich eine kleine Geburtstagsfeier bei mir zu Hause. Die Feier beginnt um sechzehn Uhr. Hast du Zeit? Möchtest du kommen? Kannst du bitte dein Lieblingsspiel mitbringen? Viele Grüße, Amel.",
+      "finding": "مقطع الدعوة بصوت الراوي02؛16 مكتوبة تنطقsechzehn، والكلمات متوافقة مع المصدر رغم اختلاف علامات الوقف. الحالةready وسياسةoffer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-12-AUD-LST-01",
+      "text": "Hallo Amel! Danke für deine Einladung. Am Sonntag kann ich kommen. Ich bringe einen Kuchen mit. Um wie viel Uhr beginnt die Feier? Ich freue mich schon. Bis Sonntag!",
+      "finding": "مقطع الرد بصوت03؛ التنبيه يوضح طلب الساعة والكعكة، ولا يفترض أن المتكلمSalma. الحالةready وسياسةoffer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-12-AUD-DLG-01",
+      "text": "Hast du am Samstag Zeit, Youssef? / Ja, warum? / Ich habe Geburtstag. Wir machen einen Ausflug nach Hammamet und feiern dort. Möchtest du mitkommen? / Ja, gern! Wann fährt der Zug? / Um neun Uhr zwanzig. Wir sind um neun Uhr vor dem Bahnhof. / Soll ich etwas mitbringen? / Ja. Kannst du bitte Wasser mitbringen? / Ja, natürlich. Danke für die Einladung!",
+      "finding": "ثمانية أدوار متناوبة: Nadia02 وYoussef03؛ الكلمات محفوظة، وفُصل عرض الأدوار للوضوح. الحالةready وسياسةoffer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    }
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 1855674,
+    "reviewGuards": 18,
+    "nodeSuites": 5,
+    "browserSuites": 5,
+    "axeStates": 85,
+    "axeSelectedViolations": 0,
+    "axeIncompleteRuleOccurrences": 54,
+    "axeIncompleteNodeOccurrences": 130,
+    "narrowStates": 126,
+    "chromium": "143.0.7499.0",
+    "formsKeyboardFirstAttempt": "PASS",
+    "browserSetup": "Initial browser launch failed for missing libnspr4.so; extracted bundled al2023 libraries and all five suites then passed. No application-code fix claimed.",
+    "preservationBaseline": "73bc64ee4ebb8735c6aacca97175a96ced154db3",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "allQuizOptionsAndKeysUnchanged": true,
+    "mp3HashesUnchanged": 474,
+    "playlistByteIdentical": true,
+    "audioRegisterChangedRows": [
+      "DL-A1-12-AUD-READ-01",
+      "DL-A1-12-AUD-LST-01",
+      "DL-A1-12-AUD-DLG-01"
+    ],
+    "audioRegisterChanges": "source_line/source_heading only; other fields and rows unchanged"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "e00059f33895a0d2fb2cfd8c9a06e993cbe395b0",
+    "implementationPushVerified": true,
+    "merged": false,
+    "nextLesson": "A2.1",
+    "gateSeparate": true,
+    "reviewedLessons": 17,
+    "remainingLessons": 36,
+    "reviewPushVerified": false,
+    "reviewCommit": "Pending creation: Record CR18 granular review and cumulative checks",
+    "pullRequest": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "headRefOid": "e00059f33895a0d2fb2cfd8c9a06e993cbe395b0"
+    },
+    "vercel": {
+      "implementationStatus": "success"
+    },
+    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test, no production claim."
+  }
+}
