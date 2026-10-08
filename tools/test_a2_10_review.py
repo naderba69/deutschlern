@@ -45,7 +45,7 @@ D=json.loads((R/'data/reviews/a2-10-review.json').read_text());expected=set()
 for k,n in [('scope',7),('vocab',14),('grammar',6),('helper',10),('dialogue',6),('reading',7),('reading-question',5),('listening',4),('listening-question',4),('writing-model',3),('speaking-model',4),('card',4),('T',8),('Q',10),('P',2)]:
  expected|={f'DL-A2-10-{k}{i:02}' if k in ['T','Q','P'] else f'{k}-{i:02}' for i in range(1,n+1)}
 expected|={x['assetId'] for x in assets}
-assert {u['id'] for u in D['units']}==expected and len(expected)==D['unitCount']==len(D['units'])==109
+assert {u['id'] for u in D['units']}==expected and len(expected)==D['unitCount']==len(D['units'])==99
 assert len(D['sources'])==10 and sum(x['access']=='full_fetched_page' for x in D['sources'])==10
 for x in assets:
  if x['kind'] in ['phrase_bank','model_sentences']:
@@ -88,4 +88,4 @@ assert D['preservation']['baseline']=='caf693a50a76d4ac76d05079341a9535a22aa797'
 assert D['preservation']['changedOptionTexts']==[]
 for f,h in D['sourceHashes'].items():assert hashlib.sha256((R/f).read_bytes()).hexdigest()==h
 for x in assets:assert D['audioSnapshotHashes'][x['assetId']]==hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
-print('PASS A2.10: 109 units/28 subitems; hashes, mappings, tasks, bundle; 5 assets/10 clips unchanged. Not language/acoustic certification.')
+print('PASS A2.10: 99 units/28 subitems; hashes, mappings, tasks, bundle; 5 assets/10 clips unchanged. Not language/acoustic certification.')
