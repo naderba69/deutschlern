@@ -242,6 +242,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.6-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.6-practical-form-fixture', width);
+  // CR37: written comparison and spoken chore agreement.
+  await page.evaluate(() => openLesson('b1-07-lifestyles-customs-cultures'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.7-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.7-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

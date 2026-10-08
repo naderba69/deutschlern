@@ -1328,6 +1328,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.6 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR37: written comparison and spoken chore agreement; B1.7 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-07-lifestyles-customs-cultures').assessment.version, 'b1-07-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-07-lifestyles-customs-cultures');
+    const responses = ["Mina und Samir wohnen in einer fiktiven Wohngemeinschaft. Mina kocht sowohl am Dienstag als auch am Donnerstag. Samir liest nicht nur Romane, sondern auch Sachbücher. Mina trinkt am Abend weder Kaffee noch schwarzen Tee. Samir trinkt dagegen am Abend gern schwarzen Tee.", "Mina: Wann planen wir die Aufgaben für diese Woche? Samir: Wir können entweder am Montag oder am Dienstag darüber sprechen. Mina: Am Montag habe ich Zeit. Samir: Gut, dann treffen wir uns am Montag um achtzehn Uhr. Mina: Am Dienstag übernehme ich sowohl das Kochen als auch den Einkauf. Samir: Einverstanden. Dann räume ich am Dienstag die Küche auf."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.7 models fit thresholds; comparison is writing only, dialogue requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-07-lifestyles-customs-cultures').performanceTasks[1]], 'lesson:b1-07-lifestyles-customs-cultures', 'b1-07-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-07-lifestyles-customs-cultures').performanceTasks[0]], 'lesson:b1-07-lifestyles-customs-cultures', 'b1-07-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-07-lifestyles-customs-cultures');
+      const next=findLesson('b1-08-consumption-advertising-je-desto');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-07-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-07-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-07-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-07-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.7 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2120,8 +2154,11 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(b1LifestylesAssessment.assessment?.minimumScore, 80, "B1.7 must enforce the 80 percent mastery threshold");
   assert.equal(b1LifestylesAssessment.quiz?.length, 10, "B1.7 must include ten scored questions");
   assert.equal(b1LifestylesAssessment.performanceTasks?.length, 2, "B1.7 must include two practical self-check tasks");
-  assert.equal(b1LifestylesAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-07-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), true, "B1.7 performance tasks must map to the routine-description activity, offer oral and written modes, and work locally without audio");
-  assert.match(b1LifestylesSource, /تقديمها شفهيًا/);
+  assert.equal(b1LifestylesAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-07-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing")), true, "B1.7 tasks must map to the source and work without recorded audio");
+  assert.doesNotMatch(b1LifestylesSource, /تقديمها شفهيًا/);
+  for (const t of b1LifestylesAssessment.performanceTasks) assert.ok(b1LifestylesSource.includes(t.prompt));
+  assert.deepEqual(b1LifestylesAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.deepEqual(b1LifestylesAssessment.performanceTasks.map(t => t.selfCheck.speakAloud), [false,true]);
   assert.match(b1LifestylesSource, /لا تعمّم عادةً على ثقافة أو بلد كامل/);
   const b1LifestylesQuestionSources = new Set(b1LifestylesAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (const task of [1, 2, 3, 4, 5, 6, 7]) assert.ok(b1LifestylesQuestionSources.has(`DL-B1-07-T0${task}`), `B1.7 quiz must cover source task T0${task}`);
