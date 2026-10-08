@@ -1,0 +1,2010 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-07-language-learning-travel-purpose",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-07-v2",
+  "unitCount": 94,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "INF",
+      "title": "Lingolia — Infinitivsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/infinitivsaetze",
+      "scope": "الغاية بـum … zu، وإحالة الغاية إلى الفاعل في النمط البسيط، وموضع المصدر وzu داخل المنفصل؛ لا نعمم ذلك على المصدر المرتبط بمفعول بعد empfehlen مثلًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "ZU",
+      "title": "Lingolia — Infinitiv mit/ohne zu",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/infinitiv",
+      "scope": "المصدر بلاzu بعد möchten/wollen، ومعzu في تركيب الغاية، ودمجzu داخل الفعل المنفصل؛ لا نعتمد غياب الفاصلة في بعض أمثلة الصفحة لتعليم الغاية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "SEP",
+      "title": "Lingolia — Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "an-/mit-/nach-/vor- قابلة للفصل في أمثلة الدرس؛be-/ver-/er- غير منفصلة. لا تعميم على كل بادئة ألمانية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "möchten/wollen مع مصدر؛ تحويل النية إلى غاية التدريب دون نسخ الفعل الناقص إلى الفراغ.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "NACH",
+      "title": "Duden — nachschlagen",
+      "url": "https://www.duden.de/rechtschreibung/nachschlagen",
+      "scope": "البحث عن مدخل وقراءته في قاموس أو كتاب؛ لا خلطه بالمعنى الآخر «يشبه أحدًا».",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "VOR",
+      "title": "Duden — vorbereiten",
+      "url": "https://www.duden.de/rechtschreibung/vorbereiten",
+      "scope": "sich auf/für etwas vorbereiten، والفصل bereitet vor؛ على الهدف والمصدر تقديم الضمير الانعكاسي الصحيح.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "INFO",
+      "title": "Duden — informieren",
+      "url": "https://www.duden.de/rechtschreibung/informieren",
+      "scope": "sich über etwas informieren اكتساب معلومات، مقابل jemanden informieren إعلام شخص.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "ANM",
+      "title": "Duden — anmelden",
+      "url": "https://www.duden.de/rechtschreibung/anmelden",
+      "scope": "التسجيل في دورة وسياق المشاركة؛ meldet an / hat angemeldet. الحوار يخبر بتسجيل سابق لا يطلب تنفيذ تسجيل خارجي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "ERF",
+      "title": "Duden — erfahren",
+      "url": "https://www.duden.de/rechtschreibung/erfahren_feststellen",
+      "scope": "الحصول على معرفة أو معلومات؛ erfährt/hat erfahren. ليس مجردfahren ولا صفةخبير في هذا السياق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ]
+    },
+    {
+      "id": "COMMA",
+      "title": "IDS — Amtliches Regelwerk §73",
+      "url": "https://grammis.ids-mannheim.de/rechtschreibung/6203",
+      "scope": "الفاصلة مع المجموعة المصدرية التابعة المبدوءة بـum؛ موضعها قبل الرابط في النمط المتأخر المدروس. قُرئ الجزآن0و1 كاملين، ولا ننقل استثناء المصدر غير الموسع إلىum … zu.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ]
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/infinitivsaetze",
+      "reason": "404 content; excluded"
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/erfahren_kennenlernen_erleben",
+      "reason": "404 content; excluded"
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/erfahren",
+      "reason": "404 content; excluded"
+    }
+  ],
+  "unusedSources": [
+    {
+      "url": "https://grammis.ids-mannheim.de/rechtschreibung/6200",
+      "chunksRead": [
+        0
+      ],
+      "reason": "Section on sentence-ending punctuation; partial fetch not used as a comma reference."
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.7 — تعلّم اللغات والسفر والغاية بـum … zu",
+      "finding": "عنوان مناسب لشرح الغاية في سياق تعلم اللغة والسفر، لا خدمة سفر حقيقية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 35–40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري",
+      "finding": "35–40 دقيقة تقدير مرن؛ يجوز التقسيم، وقناة الاستماع اختيارية ولا تخفي التسجيلات.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أشرح لماذا أتعلم لغة أو أسافر، وأذكر هدفًا باستخدام um … zu.",
+      "finding": "الهدف ممثل في مهمتي خطة واستعداد مع غايات واضحة؛ لا ادعاء بلوغ مستوى لغوي من جمل معدودة.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستعمل **um … zu** لشرح غاية الفعل في الأنماط البسيطة هنا، عندما ينفذ الفاعل نفسه النشاط والغاية. قد يكون فردًا أو مجموعة. لا نكرر الفاعل داخل تركيب الغاية، ويأتي المصدر مع zu في نهايته. الغاية تشرح ما يريد الشخص تحقيقه، ولا تثبت أنه حققه فعلًا:",
+      "finding": "نفس منفذ النشاط والغاية في الأنماط البسيطة؛ قد يكون فردًا أو مجموعة. لا يكرر الفاعل داخل المصدر، ولا تثبت الغاية تحقق النتيجة.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "نضع فاصلة قبل **um** في النمط المتأخر المدروس هنا؛ ليست اختيارية. أنا أتعلم وأنا أدرس؛ ومها تسافر وهي التي تنوي حضور الدورة. مع الفعل المنفصل تدخل **zu** بين البادئة وبقية الفعل في كلمة واحدة: **vorbereiten → vorzubereiten**، **nachschlagen → nachzuschlagen**. أما **verbessern → zu verbessern** و**verstehen → zu verstehen** فغير منفصلين. لا يلزم وجود مفعول دائمًا: **um zu reisen** تركيب صحيح.",
+      "finding": "الفاصلة لازمة في النمط المتأخر؛ zu داخل المنفصل وخارجه مع غير المنفصل. um zu reisen ينفي تعميم ضرورة المفعول.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "النموذجان خياليان وغير مسجلين، ولا يستبدلان المقاطع القائمة. الهدف المطلوب ليس ضمان تحقيقه؛ والتحقق الذاتي ليس تصحيحًا آليًا للغة أو النطق.",
+      "finding": "النموذجان خياليان وغير مسجلين؛ لا استبدال للصوت أو ادعاء أن الإقرار والطول يصححان اللغة أو النطق.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Fremdsprache | die Fremdsprachen | اللغة الأجنبية |",
+      "finding": "اسم مؤنث وجمعه Fremdsprachen؛ لغة أجنبية، لا مستوى محدد.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Sprachschule | die Sprachschulen | مدرسة اللغات |",
+      "finding": "Sprachschule مدرسة لغات، وجمعها Sprachschulen؛ ليست Sprachkurs.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das Wörterbuch | die Wörterbücher | القاموس |",
+      "finding": "اسم محايد وجمعه Wörterbücher؛ القاموس أداة تعلم، لا ضمان فهم كل الكلمات.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| das Reiseziel | die Reiseziele | وجهة السفر |",
+      "finding": "Reiseziel وجهة سفر، وجمعه Reiseziele؛ لا يخلط بغاية الفعل النحوية.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Reisepass | die Reisepässe | جواز السفر |",
+      "finding": "جواز سفر وجمعه Reisepässe؛ المثال لا يقرر وجوبه لكل انتقال.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Unterkunft | die Unterkünfte | مكان الإقامة |",
+      "finding": "مكان إقامة وجمعه Unterkünfte؛ لا يختزل في الفندق.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Gastfamilie | die Gastfamilien | الأسرة المضيفة |",
+      "finding": "أسرة مضيفة وجمعها Gastfamilien؛ ليست بالضرورة أسرة المتعلم الأصلية.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Sprachreise | die Sprachreisen | رحلة لتعلّم اللغة |",
+      "finding": "رحلة لتعلم اللغة وجمعها Sprachreisen؛ ليست مجرد أي رحلة.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| mitnehmen | nimmt mit | يأخذ معه |",
+      "finding": "nimmt mit مع تغير الجذر والفصل؛ يأخذ معه، وليس بالضرورة يحضر إلى المتكلم.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| üben | — | يتدرّب |",
+      "finding": "üben يتدرب؛ لا يعني أن الإتقان حصل بالفعل.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| sich anmelden | meldet sich an | يسجّل نفسه |",
+      "finding": "meldet sich an مع الفصل والانعكاس؛ تسجيل في السياق، لا إجراء خارجي يطلبه التطبيق.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| sich informieren über | informiert sich über | يستعلم عن |",
+      "finding": "حُفظ über في خانة التصريف؛ sich informieren استعلام، لا إعلام شخص آخر.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| die Gelegenheit | die Gelegenheiten | الفرصة |",
+      "finding": "Gelegenheit فرصة، وجمعها Gelegenheiten؛ لا تعني موعدًا مثبتًا.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| nützlich | — | مفيد |",
+      "finding": "nützlich مفيد؛ صفة وليست اسم فائدة.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-15",
+      "text": "| verbessern | — | يحسّن |",
+      "finding": "verbessern يحسن وغير منفصل؛ zu verbessern وليس verzubessern.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| erfahren | erfährt | يعرف/يحصل على معلومات |",
+      "finding": "erfahren هنا يحصل على معلومات، وتصريفه erfährt؛ ليس fahren أو صفة خبرة.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "vocab-17",
+      "text": "| nachschlagen | schlägt nach | يراجع كلمة/معلومة في قاموس أو مرجع |",
+      "finding": "nachschlagen يراجع مدخلًا في مرجع؛ schlägt nach مع الفصل، لا معنى مشابهة أحد الوالدين.",
+      "sourceIds": [
+        "SEP",
+        "INFO",
+        "ANM",
+        "NACH",
+        "ERF"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "- **Ich lerne Deutsch, um in Österreich zu studieren.** — أتعلم الألمانية لكي أدرس في النمسا.",
+      "finding": "أنا أتعلم وأنا أنوي الدراسة؛ in Österreich مكان الدراسة وzu studieren آخر الغاية. لا قبول جامعي مثبت.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "- **Maha fährt nach Wien, um einen Sprachkurs zu besuchen.** — تسافر مها إلى فيينا لكي تحضر دورة لغة.",
+      "finding": "Maha تسافر وهي التي تنوي حضور الدورة؛ القاعدة لا تسند الحضور إلى Hiba ولا تثبت أنه وقع.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "- **Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.** — نستخدم قاموسًا لكي نفهم كلمات جديدة.",
+      "finding": "المجموعة نفسها تستخدم القاموس وتريد فهم الكلمات؛ zu verstehen، لا فعل مصرف جديد.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **نفس الفاعل:** في **Wir lernen Deutsch, um zusammen zu reisen.** المجموعة نفسها تتعلم وتسافر. إذا كانت Maha تأخذ القاموس لكي تستعمله Hiba، فلا ندمج الفعلين بهذا النمط؛ نتركهما جملتين في هذا التدريب. لا نعمم قاعدة فاعل um … zu على كل تراكيب المصدر في الألمانية.",
+      "finding": "wir يجيز المجموعة نفسها؛ اختلاف Maha وHiba يغير المعنى إذا دمج بلا تمييز. لا تعميم على كل مصدر ألماني.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **sich vorbereiten / sich informieren über** — يستعد / يستعلم عن. **Ich lerne Deutsch, um mich auf die Reise vorzubereiten.** مقابل **Sie lernt Deutsch, um sich auf die Reise vorzubereiten.** نطابق mich/sich مع الفاعل. **Ich informiere mich über die Stadt.** لا ننقل über إلى الفعل vorbereiten الذي يستعمل auf هنا.",
+      "finding": "mich مع ich وsich مع sie؛ auf die Reise مع vorbereiten، وüber die Stadt مع informieren.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **sich anmelden / mitnehmen / nachschlagen** — يسجل نفسه / يأخذ معه / يراجع في مرجع. **Ich habe mich angemeldet.** فعل ماضٍ مركب، لا طلب تسجيل حالي. **Ich nehme ein Wörterbuch mit.** رئيسية بفعل منفصل؛ **um neue Wörter nachzuschlagen** غاية بكلمة nachzuschlagen الواحدة.",
+      "finding": "تمييز angemeldet الماضي عن طلب التسجيل، وnehme…mit في الرئيسية عن nachzuschlagen في الغاية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **möchten / wollen / um … zu** — **Ich möchte dort lernen.** بلا zu بعد möchte؛ وعند دمج الهدف في تمرين3 نقول **…, um dort zu lernen.** لا ننسخ möchte أو wollen إلى الفراغ، ولا نضيف فاعلًا ثانيًا.",
+      "finding": "بعد möchte وwollen مصدر بلا zu؛ في التحويل لا ننسخ الفعل الناقص أو الفاعل إلى فراغ الغاية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **erfahren / üben / verbessern / benutzen / wiederholen** — يحصل على معلومات / يتدرب / يحسن / يستعمل / يراجع أو يكرر. **mehr über die Stadt erfahren** معرفة المزيد عن المدينة؛ ليست هنا صفة «خبير». **passende Orte** أماكن مناسبة، و**im Alltag** في الحياة اليومية، و**das Museum / die Museen** متحف/متاحف.",
+      "finding": "erfahren معرفة معلومات، وüben تدريب، وverbessern تحسين؛ دعم المفردات اللازمة دون تغيير الصوت.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **القراءة والاستماع منفصلان:** Maha تريد السفر صيفًا إلى Wien في النمسا؛ متكلم الاستماع يصف رحلة إلى München لزيارة Freundin. كلمة Freundin تحدد صديقة مؤنثة، لكن ich لا يحدد جنس الراوي ولا اسمه. عبارة **meine Freundin und ich** تعني شخصين؛ وصوت التسجيل لا يثبت أن الراوي Maha أو Hiba. القراءة بصوت Maha تظل نصًا عنها بضمير الغائب.",
+      "finding": "فصل رحلة Maha إلى Wien عن الراوي في München؛ Freundin مؤنثة لكن ich لا يحدد الجنس. صوت Maha لا يحول نص الغائب إلى سيرة ذاتية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **الأهداف لا تعني نتائج مضمونة:** الذهاب إلى مدرسة لغات لا يضمن تحسنًا محددًا. روابط تمرين1 مقيدة بالأهداف المعطاة، وليست كل العلاقات الممكنة واقعيًا. حمل الجواز مثال لغوي للسفر، لا شرطًا قانونيًا شاملًا أو دليل تأشيرة أو حجز. **die Unterkunft** مكان إقامة، و**die Gastfamilie** أسرة مضيفة لا أسرة الشخص الأصلية.",
+      "finding": "الغاية لا تثبت النتيجة؛ T01 مقيد بالمعطيات، والجواز والأسرة المضيفة ليسا شرطًا قانونيًا أو دعوى حجز.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **طريقة العمل:** P01 أربع جمل مع الجهر، وP02 ثلاث جمل كتابة فقط؛ البيانات خيالية، ولا شريك أو تسجيل أو حجز أو سفر حقيقي مطلوب. حاول الاستماع قبل فتح التفريغ؛ قراءة النص لا تثبت فهمًا مسموعًا مستقلًا. حد الطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "P01 مع الجهر وP02 كتابة فقط؛ لا بيانات شخصية أو شريك أو تسجيل. التفريغ ليس دليل فهم مسموع مستقل.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL",
+        "VOR",
+        "INFO",
+        "ANM",
+        "ERF"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Warum fährst du im Sommer nach Wien?",
+      "finding": "Hiba تسأل عن غرض رحلة الصيف إلى Wien؛ Warum يستقبل هنا جواب غاية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich mache eine Sprachreise, um mein Deutsch zu verbessern.",
+      "finding": "Maha تعلل الرحلة بتحسين الألمانية؛ zu verbessern غير منفصل، ولا ضمان لتحسن حاصل.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Besuchst du eine Sprachschule?",
+      "finding": "سؤال Hiba عن مدرسة لغات؛ الفعل أولًا في سؤال نعم أو لا.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ja. Ich habe mich angemeldet, um jeden Vormittag Deutsch zu üben.",
+      "finding": "Maha تخبر بتسجيل سابق: habe mich angemeldet؛ الغاية التدريب كل قبل الظهر، لا إثبات تحققه.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Und was machst du am Nachmittag?",
+      "finding": "السؤال عن نشاط بعد الظهر مستقل عن وقت الدراسة.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ich besuche Museen, um mehr über die Stadt zu erfahren.",
+      "finding": "زيارة المتاحف لمعرفة المزيد عن المدينة؛ zu erfahren مصدر غير منفصل.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Das klingt interessant. Gute Reise!",
+      "finding": "تقييم Hiba وتمني رحلة طيبة؛ Gute Reise! ليس حجزًا أو تأكيد سفر.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "ANM",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Maha möchte im Sommer nach Wien reisen.",
+      "finding": "Maha ترغب في السفر صيفًا إلى Wien؛ möchte مع reisen بلا zu، وليس خبرًا عن سفر تم.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie lernt Deutsch, um sich auf die Reise vorzubereiten.",
+      "finding": "تعلم اللغة للاستعداد؛ sich مع sie وvorzubereiten كلمة واحدة.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Sie benutzt ein Wörterbuch, um neue Wörter zu lernen, und informiert sich über die Stadt, um passende Orte zu finden.",
+      "finding": "غايتان: القاموس لتعلم كلمات جديدة، والاستعلام لإيجاد أماكن مناسبة. الفاصلة بعد lernen تغلق الغاية الأولى قبل und.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "text": "Sie benutzt ein Wörterbuch, um neue Wörter zu lernen",
+          "finding": "القاموس مرتبط بتعلم الكلمات الجديدة، لا بحجز فندق أو تذكرة."
+        },
+        {
+          "text": "und informiert sich über die Stadt, um passende Orte zu finden.",
+          "finding": "الاستعلام عن المدينة مرتبط بإيجاد أماكن مناسبة؛ الغاية الثانية لا تستبدل الأولى."
+        }
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "In Wien besucht sie eine Sprachschule, um täglich Deutsch zu üben.",
+      "finding": "تصف الخطة مدرسة لغات في Wien للتدريب يوميًا؛ لا عدد ساعات محدد.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Sie möchte auch mit ihrer Gastfamilie sprechen, um die Sprache im Alltag zu benutzen.",
+      "finding": "رغبة إضافية بالحديث مع الأسرة المضيفة لاستعمال اللغة يوميًا؛ لا حصر للمحادثات أو نتائج طلاقة مثبتة.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "1. Wohin möchte Maha reisen?",
+      "finding": "الوجهة صريحة؛ لا خلط مع München من الاستماع.",
+      "sourceIds": [],
+      "answer": "Nach Wien."
+    },
+    {
+      "id": "reading-question-02",
+      "text": "2. Warum lernt sie Deutsch?",
+      "finding": "الاستعداد للرحلة هو غرض تعلم الألمانية، وsich يعود إلى Maha.",
+      "sourceIds": [],
+      "answer": "Um sich auf die Reise vorzubereiten."
+    },
+    {
+      "id": "reading-question-03",
+      "text": "3. Wozu benutzt sie ein Wörterbuch?",
+      "finding": "غرض القاموس تعلم الكلمات؛ لا يستبدل بغرض المتاحف.",
+      "sourceIds": [],
+      "answer": "Um neue Wörter zu lernen."
+    },
+    {
+      "id": "reading-question-04",
+      "text": "4. Wo übt sie in Wien täglich Deutsch?",
+      "finding": "المدرسة مكان التدريب يوميًا؛ ليست الفندق أو المحطة.",
+      "sourceIds": [],
+      "answer": "In einer Sprachschule."
+    },
+    {
+      "id": "reading-question-05",
+      "text": "5. Mit wem möchte sie sprechen, um Deutsch im Alltag zu benutzen?",
+      "finding": "الأسرة المضيفة هي الطرف المذكور؛ لا اختلاق لطرف آخر.",
+      "sourceIds": [],
+      "answer": "Mit ihrer Gastfamilie."
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich reise nach München, um meine Freundin zu besuchen.",
+      "finding": "الراوي يسافر إلى München لزيارة صديقة؛ لا اسم أو جنس للراوي في ich.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "NACH"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich nehme ein kleines Wörterbuch mit, um neue Wörter nachzuschlagen.",
+      "finding": "قاموس صغير لمراجعة الكلمات؛ nehme…mit في الرئيسية وnachzuschlagen في الغاية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "NACH"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Am Vormittag besuche ich einen Sprachkurs, um mein Deutsch zu verbessern.",
+      "finding": "دورة قبل الظهر لتحسين الألمانية؛ zu verbessern غير منفصل، وليس مدرسة قراءة Maha.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "NACH"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Am Abend gehen meine Freundin und ich in ein Café, um zusammen zu sprechen.",
+      "finding": "الصديقة والراوي يذهبان إلى مقهى مساء للحديث معًا؛ فاعل جمع، والغاية للمجموعة نفسها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "SEP",
+        "NACH"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "1. Wohin reist die Person?",
+      "finding": "السؤال عن وجهة الشخص؛ die Person اسم مؤنث نحويًا، لا دليل جنس بشري.",
+      "sourceIds": [],
+      "answer": "Nach München."
+    },
+    {
+      "id": "listening-question-02",
+      "text": "2. Warum nimmt sie ein Wörterbuch mit?",
+      "finding": "sie تعود إلى Person؛ السؤال عن غرض القاموس، لا شكله أو حجمه.",
+      "sourceIds": [],
+      "answer": "Um neue Wörter nachzuschlagen."
+    },
+    {
+      "id": "listening-question-03",
+      "text": "3. Was besucht sie am Vormittag?",
+      "finding": "Sprachkurs نشاط قبل الظهر؛ لا وقت بدء دقيق مذكور.",
+      "sourceIds": [],
+      "answer": "Einen Sprachkurs."
+    },
+    {
+      "id": "listening-question-04",
+      "text": "4. Warum gehen die beiden Personen in ein Café?",
+      "finding": "صُححت Freundinnen إلى die beiden Personen؛ الحديث معًا دون افتراض جنس المتكلم.",
+      "sourceIds": [],
+      "answer": "Um zusammen zu sprechen."
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "1. Im Sommer mache ich eine Sprachreise nach Wien.",
+      "finding": "الصيف والرحلة اللغوية وWien مذكورة، والكاتب بضمير ich.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "2. Ich besuche eine Sprachschule, um Deutsch zu üben.",
+      "finding": "مدرسة لغات للتدرب على الألمانية؛ فاصلة وum … zu والمنفذ نفسه.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "3. Ich besuche Museen, um mehr über die Stadt zu erfahren.",
+      "finding": "متاحف لمعرفة المزيد عن المدينة؛ erfahren غير منفصل.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "4. Ich spreche mit meiner Gastfamilie, um die Sprache im Alltag zu benutzen.",
+      "finding": "حديث مع الأسرة المضيفة لاستعمال اللغة يوميًا؛ أربع جمل وثلاث غايات، وتقرأ جميعها جهرًا.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "ERF",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "1. Ich lerne Deutsch, um mich auf die Reise vorzubereiten.",
+      "finding": "غاية الاستعداد مع mich العائد إلى ich، وvorzubereiten صحيحة.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "NACH",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "2. Ich nehme ein Wörterbuch mit, um neue Wörter nachzuschlagen.",
+      "finding": "القاموس لمراجعة الكلمات؛ nehme…mit في الرئيسية وnachzuschlagen في الغاية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "NACH",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "3. Ich informiere mich über die Stadt, um passende Orte zu finden.",
+      "finding": "استعلام عن المدينة لإيجاد أماكن مناسبة؛ informiere mich über وzu finden. ثلاث جمل كتابة فقط.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "INFO",
+        "NACH",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Ich lerne Deutsch, um zu reisen.** → أتعلم الألمانية لكي أسافر.",
+      "finding": "غاية سفر صحيحة بلا مفعول؛ لا وجوب لكلمة بين um وzu.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **um neue Wörter zu verstehen** → لكي أفهم كلمات جديدة.",
+      "finding": "neue Wörter قبل zu verstehen؛ المصدر ليس فعلًا مصرفًا.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **das Reiseziel** → وجهة السفر.",
+      "finding": "Reiseziel اسم محايد لوجهة السفر.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **Ich möchte mein Deutsch verbessern.** → أريد تحسين لغتي الألمانية.",
+      "finding": "möchte مع verbessern بلا zu؛ الرغبة بالتحسين ليست تركيب الغاية نفسه.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "DL-A2-07-T01",
+      "text": "اعتمد فقط هذه الأهداف المعطاة، واستعمل كل حرف مرة: القاموس لفهم الكلمات الجديدة؛ مدرسة اللغات لحضور الدروس؛ حمل الجواز للسفر في الخارج في هذا المثال؛ تدريب اللغة للتحدث بالألمانية بصورة أفضل. لا تختر بحسب كل ما قد يكون ممكنًا خارج المعطيات.\n\n1. ein Wörterbuch benutzen · 2. eine Sprachschule besuchen · 3. den Reisepass mitnehmen · 4. eine Sprache üben\n\nأ. um Deutsch besser zu sprechen · ب. um neue Wörter zu verstehen · ج. um im Ausland zu reisen · د. um Unterricht zu haben",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "ein Wörterbuch benutzen",
+          "answer": "ب: um neue Wörter zu verstehen",
+          "finding": "الهدف المعطى للقاموس فهم الكلمات؛ غيره لا يطابق المطلوب ولو أمكن ربطه واقعيًا."
+        },
+        {
+          "text": "eine Sprachschule besuchen",
+          "answer": "د: um Unterricht zu haben",
+          "finding": "المدرسة لحضور الدروس بحسب المعطيات؛ لا اختيار السفر في الخارج لها هنا."
+        },
+        {
+          "text": "den Reisepass mitnehmen",
+          "answer": "ج: um im Ausland zu reisen",
+          "finding": "الجواز مرتبط بالسفر في هذا المثال؛ لا تعميم قانوني لضرورته."
+        },
+        {
+          "text": "eine Sprache üben",
+          "answer": "أ: um Deutsch besser zu sprechen",
+          "finding": "التدريب للتحدث بصورة أفضل؛ لا ضمان طلاقة من التدريب وحده."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T02",
+      "text": "1. Ich lerne Deutsch, ______ in Wien ______ studieren.\n2. Maha fährt nach München, ______ ihre Freundin ______ besuchen.\n3. Wir nehmen ein Wörterbuch mit, ______ neue Wörter ______ verstehen.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "Ich lerne Deutsch, ______ in Wien ______ studieren.",
+          "answer": "um … zu",
+          "finding": "ich يتعلم ويدرس؛ um قبل المكمل وzu قبل studieren."
+        },
+        {
+          "text": "Maha fährt nach München, ______ ihre Freundin ______ besuchen.",
+          "answer": "um … zu",
+          "finding": "جملة مستقلة عن قراءة Maha إلى Wien؛ هدف زيارة الصديقة في München لا يغير القراءة."
+        },
+        {
+          "text": "Wir nehmen ein Wörterbuch mit, ______ neue Wörter ______ verstehen.",
+          "answer": "um … zu",
+          "finding": "wir يأخذ القاموس ويفهم الكلمات؛ zu verstehen غير منفصل."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T03",
+      "text": "1. **Ich gehe in die Bibliothek. Ich möchte dort lernen.** → Ich gehe in die Bibliothek, um ______.\n2. **Wir machen eine Sprachreise. Wir wollen Deutsch üben.** → Wir machen eine Sprachreise, um ______.\n3. **Er benutzt eine App. Er möchte Wörter wiederholen.** → Er benutzt eine App, um ______.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "**Ich gehe in die Bibliothek. Ich möchte dort lernen.** → Ich gehe in die Bibliothek, um ______.",
+          "answer": "dort zu lernen",
+          "finding": "ich نفسه؛ dort zu lernen دون تكرار ich أو möchte."
+        },
+        {
+          "text": "**Wir machen eine Sprachreise. Wir wollen Deutsch üben.** → Wir machen eine Sprachreise, um ______.",
+          "answer": "Deutsch zu üben",
+          "finding": "wir هي المجموعة نفسها؛ Deutsch zu üben دون نسخ wollen."
+        },
+        {
+          "text": "**Er benutzt eine App. Er möchte Wörter wiederholen.** → Er benutzt eine App, um ______.",
+          "answer": "Wörter zu wiederholen",
+          "finding": "er يستعمل التطبيق ويريد مراجعة الكلمات؛ wiederholen غير منفصل بهذا المعنى وzu قبله."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T04",
+      "text": "1. Ich fahre nach Wien, um Deutsch **lernen / zu lernen**.\n2. Sie besucht die Sprachschule, um ihr Deutsch **verbessern / zu verbessern**.\n3. Wir lesen den Plan, um das Museum **finden / zu finden**.\n4. Ich nehme ein Wörterbuch mit, um neue Wörter **zu nachschlagen / nachzuschlagen**.\n5. Ich lerne Deutsch, um mich auf die Reise **vorzubereiten / zu vorbereiten**.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "Ich fahre nach Wien, um Deutsch **lernen / zu lernen**.",
+          "answer": "zu lernen",
+          "finding": "zu lernen لازم بعد um؛ lernen وحده ناقص."
+        },
+        {
+          "text": "Sie besucht die Sprachschule, um ihr Deutsch **verbessern / zu verbessern**.",
+          "answer": "zu verbessern",
+          "finding": "zu verbessern صحيح؛ verbessern وحده يفتقد zu بعد um."
+        },
+        {
+          "text": "Wir lesen den Plan, um das Museum **finden / zu finden**.",
+          "answer": "zu finden",
+          "finding": "zu finden صحيح؛ finden وحده يفتقد zu."
+        },
+        {
+          "text": "Ich nehme ein Wörterbuch mit, um neue Wörter **zu nachschlagen / nachzuschlagen**.",
+          "answer": "nachzuschlagen",
+          "finding": "nachzuschlagen بدمج zu داخل الفعل؛ zu nachschlagen ليس صحيحًا هنا."
+        },
+        {
+          "text": "Ich lerne Deutsch, um mich auf die Reise **vorzubereiten / zu vorbereiten**.",
+          "answer": "vorzubereiten",
+          "finding": "vorzubereiten صحيح؛ zu vorbereiten ليس صحيحًا لهذا الفعل، وmich مع ich موجود."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Maha möchte im Sommer nach Wien reisen.\n2. Sie benutzt ein Wörterbuch, um neue Wörter zu lernen.\n3. In Wien besucht sie eine Sprachschule.\n4. Maha benutzt kein Wörterbuch.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "Maha möchte im Sommer nach Wien reisen.",
+          "answer": "صحيح",
+          "finding": "مطابق لرغبة الصيف والوجهة في أول جملة."
+        },
+        {
+          "text": "Sie benutzt ein Wörterbuch, um neue Wörter zu lernen.",
+          "answer": "صحيح",
+          "finding": "مطابق لغاية القاموس في الجملة الثالثة."
+        },
+        {
+          "text": "In Wien besucht sie eine Sprachschule.",
+          "answer": "صحيح",
+          "finding": "مطابق لمدرسة اللغات في Wien في الجملة الرابعة."
+        },
+        {
+          "text": "Maha benutzt kein Wörterbuch.",
+          "answer": "خطأ: تستعمل قاموسًا.",
+          "finding": "kein يناقض استعمال القاموس صراحة؛ أزيل استنتاج حصر الحديث بالسياح."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T06",
+      "text": "أكمل من البنك، واستعمل كل عبارة مرة: **München — nachzuschlagen — Sprachkurs — Café**. الضمير sie في السؤال يعود نحويًا إلى die Person ولا يحدد جنس المتكلم.\n\n1. Die Person reist nach ______.\n2. Sie nimmt ein Wörterbuch mit, um neue Wörter ______.\n3. Am Vormittag besucht sie einen ______.\n4. Am Abend gehen die beiden Personen in ein ______.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "Die Person reist nach ______.",
+          "answer": "München",
+          "finding": "München من الاستماع، لا Wien من القراءة."
+        },
+        {
+          "text": "Sie nimmt ein Wörterbuch mit, um neue Wörter ______.",
+          "answer": "nachzuschlagen",
+          "finding": "nachzuschlagen من البنك؛ لا تكرار zu خارجها."
+        },
+        {
+          "text": "Am Vormittag besucht sie einen ______.",
+          "answer": "Sprachkurs",
+          "finding": "Sprachkurs بعد einen؛ نوع النشاط قبل الظهر."
+        },
+        {
+          "text": "Am Abend gehen die beiden Personen in ein ______.",
+          "answer": "Café",
+          "finding": "Café بعد ein؛ لا يسمى الشخصان Freundinnen دون دليل جنس الراوي."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T07",
+      "text": "في 1–3 حدد منفذ كل فعل، ثم قل هل يمكن استعمال نمط um … zu المدروس مع بقاء المعنى. في4 أضف الفاصلة فقط:\n\n1. Ich reise nach Wien. Ich möchte Deutsch lernen.\n2. Maha besucht die Sprachschule. Maha möchte dort lernen.\n3. Maha nimmt ein Wörterbuch mit. Hiba möchte neue Wörter nachschlagen.\n4. Wir benutzen ein Wörterbuch um neue Wörter zu verstehen.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الربط بالتقييم يحفظ المهارة المتدرب عليها.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "NACH",
+        "VOR"
+      ],
+      "items": [
+        {
+          "text": "Ich reise nach Wien. Ich möchte Deutsch lernen.",
+          "answer": "نعم: ich ينفذ الفعلين.",
+          "finding": "المنفذ ich في الفعلين؛ يجوز النمط مع المعنى المعطى."
+        },
+        {
+          "text": "Maha besucht die Sprachschule. Maha möchte dort lernen.",
+          "answer": "نعم: Maha تنفذ الفعلين.",
+          "finding": "Maha تنفذ زيارة المدرسة والتعلم."
+        },
+        {
+          "text": "Maha nimmt ein Wörterbuch mit. Hiba möchte neue Wörter nachschlagen.",
+          "answer": "لا بهذا النمط: Maha تأخذ وHiba تراجع.",
+          "finding": "المنفذ مختلف؛ الدمج بهذا النمط ينسب المراجعة إلى Maha فيغير المعنى."
+        },
+        {
+          "text": "Wir benutzen ein Wörterbuch um neue Wörter zu verstehen.",
+          "answer": "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+          "finding": "الفاصلة قبل um دون تغيير الكلمات؛ تدريب مباشر لـQ09 وQ10."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-T08",
+      "text": "**أ — P01: خطة مع الجهر**\n\nاكتب أربع جمل عن رحلة لغوية خيالية بضمير ich: الجملة1 تذكر رحلة لغوية إلى Wien في الصيف؛ الجملة2 زيارة مدرسة لغات بهدف التدرب على الألمانية؛ الجملة3 زيارة متاحف بهدف معرفة المزيد عن المدينة؛ الجملة4 التحدث مع الأسرة المضيفة بهدف استعمال اللغة في الحياة اليومية. استعمل um … zu في الجمل2–4 مع الفاصلة ونفس منفذ النشاط والغاية، ثم اقرأ الجمل الأربع بصوت مرتفع. لا سفر أو شريك أو تسجيل مطلوب.\n\n**ب — P02: استعداد كتابة فقط**\n\nاكتب ثلاث جمل عن استعداد خيالي لرحلة، كتابة فقط وبضمير ich. الجملة1 تعلم الألمانية للاستعداد للرحلة، وفي نهايتها mich auf die Reise vorzubereiten؛ الجملة2 أخذ قاموس لمراجعة كلمات جديدة وفي نهايتها neue Wörter nachzuschlagen؛ الجملة3 الاستعلام عن المدينة لإيجاد أماكن مناسبة وفي نهايتها passende Orte zu finden. استعمل um … zu والفاصلة في كل جملة، وطابق mich مع ich. لا جهر أو تسجيل أو حجز أو معلومات شخصية مطلوبة.",
+      "finding": "أربع جمل خطة مع الجهر وثلاث جمل استعداد كتابة فقط؛ قناتان مختلفتان بنموذجين ومعايير مطابقين.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "VOR",
+        "NACH",
+        "INFO",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "text": "P01 مطلب 1",
+          "answer": "1. Im Sommer mache ich eine Sprachreise nach Wien.",
+          "finding": "الصيف والرحلة اللغوية وWien مذكورة، والكاتب بضمير ich."
+        },
+        {
+          "text": "P01 مطلب 2",
+          "answer": "2. Ich besuche eine Sprachschule, um Deutsch zu üben.",
+          "finding": "مدرسة لغات للتدرب على الألمانية؛ فاصلة وum … zu والمنفذ نفسه."
+        },
+        {
+          "text": "P01 مطلب 3",
+          "answer": "3. Ich besuche Museen, um mehr über die Stadt zu erfahren.",
+          "finding": "متاحف لمعرفة المزيد عن المدينة؛ erfahren غير منفصل."
+        },
+        {
+          "text": "P01 مطلب 4",
+          "answer": "4. Ich spreche mit meiner Gastfamilie, um die Sprache im Alltag zu benutzen.",
+          "finding": "حديث مع الأسرة المضيفة لاستعمال اللغة يوميًا؛ أربع جمل وثلاث غايات، وتقرأ جميعها جهرًا."
+        },
+        {
+          "text": "P02 مطلب 1",
+          "answer": "1. Ich lerne Deutsch, um mich auf die Reise vorzubereiten.",
+          "finding": "غاية الاستعداد مع mich العائد إلى ich، وvorzubereiten صحيحة."
+        },
+        {
+          "text": "P02 مطلب 2",
+          "answer": "2. Ich nehme ein Wörterbuch mit, um neue Wörter nachzuschlagen.",
+          "finding": "القاموس لمراجعة الكلمات؛ nehme…mit في الرئيسية وnachzuschlagen في الغاية."
+        },
+        {
+          "text": "P02 مطلب 3",
+          "answer": "3. Ich informiere mich über die Stadt, um passende Orte zu finden.",
+          "finding": "استعلام عن المدينة لإيجاد أماكن مناسبة؛ informiere mich über وzu finden. ثلاث جمل كتابة فقط."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q01",
+      "text": "اختر المطابقة الصحيحة بين الفعل والغاية كما في التمرين.",
+      "finding": "استخدام القاموس يساعد على فهم كلمات جديدة؛ وهذا هو الربط الصحيح بين الفعل والغاية.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "ein Wörterbuch benutzen — um neue Wörter zu verstehen",
+        "eine Sprachschule besuchen — um im Ausland zu reisen",
+        "den Reisepass mitnehmen — um Unterricht zu haben"
+      ],
+      "answer": "ein Wörterbuch benutzen — um neue Wörter zu verstehen",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-A2-07-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "ein Wörterbuch benutzen — um neue Wörter zu verstehen",
+          "correct": true,
+          "finding": "مطابق لغرض القاموس المعطى فيT01؛ ليس حكمًا باستحالة كل غرض آخر."
+        },
+        {
+          "text": "eine Sprachschule besuchen — um im Ausland zu reisen",
+          "correct": false,
+          "finding": "ليس الربط المعطى للمدرسة؛ المطلوب حضور الدروس ولو أمكن السفر لمدرسة بالخارج."
+        },
+        {
+          "text": "den Reisepass mitnehmen — um Unterricht zu haben",
+          "correct": false,
+          "finding": "ليس الربط المعطى للجواز؛ حضور الدروس ليس هدفه في المعطيات."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q02",
+      "text": "متى نستخدم **um … zu** وفق الدرس؟",
+      "finding": "في الأنماط البسيطة المدروسة نذكر الغاية عندما يكون منفذ النشاط والغاية نفسه؛ لا نكرر الفاعل داخل تركيب المصدر.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "عندما يتغير الفاعل دائمًا.",
+        "عندما يكون فاعل الجزأين هو نفسه لذكر الهدف.",
+        "للسؤال عن الماضي."
+      ],
+      "answer": "عندما يكون فاعل الجزأين هو نفسه لذكر الهدف.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-07-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "عندما يتغير الفاعل دائمًا.",
+          "correct": false,
+          "finding": "تغير الفاعل ليس شرط هذا النمط؛ الدمج هنا يغير الإحالة كما فيT07.3."
+        },
+        {
+          "text": "عندما يكون فاعل الجزأين هو نفسه لذكر الهدف.",
+          "correct": true,
+          "finding": "المنفذ نفسه في الأنماط البسيطة، والوظيفة ذكر الغاية."
+        },
+        {
+          "text": "للسؤال عن الماضي.",
+          "correct": false,
+          "finding": "ليست أداة استفهام أو علامة ماضٍ."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q03",
+      "text": "أي تركيب صحيح لمعنى «لكي أتعلم كلمات جديدة»؟",
+      "finding": "um في البداية، ثم الكلمات المكملة، ثم zu lernen في النهاية في هذا المثال.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "um zu neue Wörter lernen",
+        "um neue Wörter lernen zu",
+        "um neue Wörter zu lernen"
+      ],
+      "answer": "um neue Wörter zu lernen",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-A2-07-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "um zu neue Wörter lernen",
+          "correct": false,
+          "finding": "zu في غير موضعها أمام المكمل؛ نحتاج zu lernen معًا."
+        },
+        {
+          "text": "um neue Wörter lernen zu",
+          "correct": false,
+          "finding": "zu بعد المصدر خطأ في هذا النمط."
+        },
+        {
+          "text": "um neue Wörter zu lernen",
+          "correct": true,
+          "finding": "um ثم المكمل ثم zu lernen؛ صحيح."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q04",
+      "text": "ما صيغة **nachschlagen** مع zu؟",
+      "finding": "مع الفعل المنفصل تدخل zu بين البادئة والفعل: nachzuschlagen.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "zu nachschlagen",
+        "nachzuschlagen",
+        "nachschlagen zu"
+      ],
+      "answer": "nachzuschlagen",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-07-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "zu nachschlagen",
+          "correct": false,
+          "finding": "zu لا تسبق nachschlagen كله؛ الفعل قابل للفصل."
+        },
+        {
+          "text": "nachzuschlagen",
+          "correct": true,
+          "finding": "nach وzu وschlagen في كلمة واحدة."
+        },
+        {
+          "text": "nachschlagen zu",
+          "correct": false,
+          "finding": "zu بعد المصدر غير صحيحة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q05",
+      "text": "إلى أين تريد Maha السفر؟",
+      "finding": "النص يذكر أنها تريد السفر إلى Wien.",
+      "sourceIds": [],
+      "options": [
+        "إلى Wien.",
+        "إلى München.",
+        "إلى Bremen."
+      ],
+      "answer": "إلى Wien.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "إلى Wien.",
+          "correct": true,
+          "finding": "Wien وجهة Maha الصريحة في القراءة."
+        },
+        {
+          "text": "إلى München.",
+          "correct": false,
+          "finding": "München وجهة الاستماع وتدريب مستقل، لا قراءة Maha."
+        },
+        {
+          "text": "إلى Bremen.",
+          "correct": false,
+          "finding": "Bremen غير مذكورة في القراءة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q06",
+      "text": "لماذا تستخدم Maha القاموس؟",
+      "finding": "تستخدم القاموس um neue Wörter zu lernen.",
+      "sourceIds": [],
+      "options": [
+        "لكي تحجز فندقًا.",
+        "لكي تشتري تذكرة.",
+        "لكي تتعلم كلمات جديدة."
+      ],
+      "answer": "لكي تتعلم كلمات جديدة.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "لكي تحجز فندقًا.",
+          "correct": false,
+          "finding": "حجز الفندق غير مذكور غرضًا للقاموس."
+        },
+        {
+          "text": "لكي تشتري تذكرة.",
+          "correct": false,
+          "finding": "شراء التذكرة غير مذكور."
+        },
+        {
+          "text": "لكي تتعلم كلمات جديدة.",
+          "correct": true,
+          "finding": "تعلم كلمات جديدة مطابق لـum neue Wörter zu lernen."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q07",
+      "text": "أين تدرس Maha الألمانية يوميًا في Wien؟",
+      "finding": "تدرس في einer Sprachschule.",
+      "sourceIds": [],
+      "options": [
+        "في محطة القطار.",
+        "في مدرسة لغات.",
+        "في الفندق."
+      ],
+      "answer": "في مدرسة لغات.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "في محطة القطار.",
+          "correct": false,
+          "finding": "المحطة غير مذكورة مكانًا لتدريبها."
+        },
+        {
+          "text": "في مدرسة لغات.",
+          "correct": true,
+          "finding": "مدرسة اللغات هي المكان المذكور."
+        },
+        {
+          "text": "في الفندق.",
+          "correct": false,
+          "finding": "الفندق غير مذكور مكانًا لتدريبها."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q08",
+      "text": "في **Maha fährt nach Wien, um einen Sprachkurs zu besuchen**، من سيحضر الدورة؟",
+      "finding": "Maha هي التي تسافر وتنوي حضور الدورة في هذه الجملة؛ الغاية لا تثبت وحدها أنها حضرت فعلًا.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "Maha نفسها.",
+        "صديقتها فقط.",
+        "الأسرة المضيفة."
+      ],
+      "answer": "Maha نفسها.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Maha نفسها.",
+          "correct": true,
+          "finding": "Maha تنفذ الغاية؛ لا يعني أن الحضور وقع فعلًا."
+        },
+        {
+          "text": "صديقتها فقط.",
+          "correct": false,
+          "finding": "الصديقة ليست منفذة الغاية المعطاة."
+        },
+        {
+          "text": "الأسرة المضيفة.",
+          "correct": false,
+          "finding": "الأسرة المضيفة ليست منفذة الغاية المعطاة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q09",
+      "text": "في النمط المدروس: Wir benutzen ein Wörterbuch … um neue Wörter zu verstehen، أين تلزم الفاصلة؟",
+      "finding": "تلزم الفاصلة قبل um في هذا النمط؛ ليست مجرد اختيار أسلوبي.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "بعد zu مباشرةً.",
+        "لا تستخدم فاصلة.",
+        "قبل تركيب um … zu."
+      ],
+      "answer": "قبل تركيب um … zu.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-A2-07-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "بعد zu مباشرةً.",
+          "correct": false,
+          "finding": "الفاصلة بعد zu تفصلها عن مصدرها."
+        },
+        {
+          "text": "لا تستخدم فاصلة.",
+          "correct": false,
+          "finding": "حذف الفاصلة خطأ في النمط المحدد."
+        },
+        {
+          "text": "قبل تركيب um … zu.",
+          "correct": true,
+          "finding": "قبل um؛ تحد تركيب الغاية."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-Q10",
+      "text": "اختر جملة صحيحة:",
+      "finding": "um ثم المكمل neue Wörter ثم zu verstehen في النهاية، وفاصلة قبل um؛ لا يلزم وجود مفعول في كل غاية، مثل um zu reisen.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA"
+      ],
+      "options": [
+        "Wir benutzen ein Wörterbuch, um zu neue Wörter verstehen.",
+        "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+        "Wir benutzen ein Wörterbuch um neue Wörter verstehen zu."
+      ],
+      "answer": "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-07-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Wir benutzen ein Wörterbuch, um zu neue Wörter verstehen.",
+          "correct": false,
+          "finding": "zu مفصولة عن verstehen بالمكمل؛ ترتيب خاطئ."
+        },
+        {
+          "text": "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+          "correct": true,
+          "finding": "فاصلة قبل um وzu verstehen في النهاية؛ صحيح."
+        },
+        {
+          "text": "Wir benutzen ein Wörterbuch um neue Wörter verstehen zu.",
+          "correct": false,
+          "finding": "الفاصلة مفقودة وzu بعد المصدر؛ كلاهما خطأ."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-P01",
+      "text": "اكتب أربع جمل عن رحلة لغوية خيالية بضمير ich: الجملة1 تذكر رحلة لغوية إلى Wien في الصيف؛ الجملة2 زيارة مدرسة لغات بهدف التدرب على الألمانية؛ الجملة3 زيارة متاحف بهدف معرفة المزيد عن المدينة؛ الجملة4 التحدث مع الأسرة المضيفة بهدف استعمال اللغة في الحياة اليومية. استعمل um … zu في الجمل2–4 مع الفاصلة ونفس منفذ النشاط والغاية، ثم اقرأ الجمل الأربع بصوت مرتفع. لا سفر أو شريك أو تسجيل مطلوب.",
+      "finding": "مطابقة T08أ: أربع جمل وثلاث غايات مع الجهر، حد180. لا شريك أو تسجيل أو سفر فعلي مطلوب.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "VOR",
+        "NACH",
+        "INFO"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل: رحلة إلى Wien صيفًا، ومدرسة لغات، ومتاحف، وحديث مع الأسرة المضيفة، مع الأهداف المطلوبة وقراءة الجميع جهرًا.",
+        "meaningClarity": "هدف كل نشاط واضح ومتسق مع الخطة الخيالية دون ادعاء تحقق التحسن أو السفر فعلًا.",
+        "targetSkill": "ثلاثة تراكيب um … zu بفاصلة ومصدر في النهاية، ومنفذ النشاط والغاية نفسه دون تكرار الفاعل."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-A2-07-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل: رحلة إلى Wien صيفًا، ومدرسة لغات، ومتاحف، وحديث مع الأسرة المضيفة، مع الأهداف المطلوبة وقراءة الجميع جهرًا.",
+          "finding": "عدد الجمل وقناة الأداء متفقان في المصدر والنموذج؛ لا يتحقق التطبيق آليًا من المضمون."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "هدف كل نشاط واضح ومتسق مع الخطة الخيالية دون ادعاء تحقق التحسن أو السفر فعلًا.",
+          "finding": "كل غاية مناسبة لنشاطها؛ لا يتحول الخيال إلى حجز أو بيانات حقيقية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "ثلاثة تراكيب um … zu بفاصلة ومصدر في النهاية، ومنفذ النشاط والغاية نفسه دون تكرار الفاعل.",
+          "finding": "الشكل المطلوب مدرب عليه؛ الإقرار والطول ليسا تصحيحًا لصحة اللغة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-P02",
+      "text": "اكتب ثلاث جمل عن استعداد خيالي لرحلة، كتابة فقط وبضمير ich. الجملة1 تعلم الألمانية للاستعداد للرحلة، وفي نهايتها mich auf die Reise vorzubereiten؛ الجملة2 أخذ قاموس لمراجعة كلمات جديدة وفي نهايتها neue Wörter nachzuschlagen؛ الجملة3 الاستعلام عن المدينة لإيجاد أماكن مناسبة وفي نهايتها passende Orte zu finden. استعمل um … zu والفاصلة في كل جملة، وطابق mich مع ich. لا جهر أو تسجيل أو حجز أو معلومات شخصية مطلوبة.",
+      "finding": "مطابقة T08ب: ثلاث جمل وثلاث غايات كتابة فقط، حد150. لا شريك أو تسجيل أو سفر فعلي مطلوب.",
+      "sourceIds": [
+        "INF",
+        "ZU",
+        "COMMA",
+        "VOR",
+        "NACH",
+        "INFO"
+      ],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل عن تعلم الألمانية وأخذ القاموس والاستعلام عن المدينة، مع غاية لكل نشاط، كتابة فقط.",
+        "meaningClarity": "الاستعداد للرحلة ومراجعة الكلمات وإيجاد الأماكن مناسبة للأفعال المذكورة؛ لا حجز أو بيانات حقيقية.",
+        "targetSkill": "um … zu والفاصلة في كل جملة؛ mich مع ich، وvorzubereiten/nachzuschlagen كلمتان صحيحتان، مع nehme…mit في الرئيسية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-A2-07-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ثلاث جمل عن تعلم الألمانية وأخذ القاموس والاستعلام عن المدينة، مع غاية لكل نشاط، كتابة فقط.",
+          "finding": "عدد الجمل وقناة الأداء متفقان في المصدر والنموذج؛ لا يتحقق التطبيق آليًا من المضمون."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الاستعداد للرحلة ومراجعة الكلمات وإيجاد الأماكن مناسبة للأفعال المذكورة؛ لا حجز أو بيانات حقيقية.",
+          "finding": "كل غاية مناسبة لنشاطها؛ لا يتحول الخيال إلى حجز أو بيانات حقيقية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "um … zu والفاصلة في كل جملة؛ mich مع ich، وvorzubereiten/nachzuschlagen كلمتان صحيحتان، مع nehme…mit في الرئيسية.",
+          "finding": "الشكل المطلوب مدرب عليه؛ الإقرار والطول ليسا تصحيحًا لصحة اللغة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-07-AUD-PHR-01",
+      "text": "Die Fremdsprache. Die Sprachschule. Das Wörterbuch. Das Reiseziel. Der Reisepass. Die Unterkunft. Die Gastfamilie. Die Sprachreise. Mitnehmen. Üben. Sich anmelden. Sich informieren über. Die Gelegenheit. Nützlich. Verbessern. Erfahren. Nachschlagen. Ich lerne Deutsch, um in Österreich zu studieren. Maha fährt nach Wien, um einen Sprachkurs zu besuchen. Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+      "finding": "مراجعة نص التسجيل وربطه بالمصدر؛ الأصوات والمسارات والحالات محفوظة، ولا استماع أو اعتماد صوتي جديد.",
+      "sourceIds": [
+        "INF",
+        "ZU"
+      ],
+      "items": [
+        {
+          "text": "Die Fremdsprache.",
+          "finding": "اسم مؤنث وجمعه Fremdsprachen؛ لغة أجنبية، لا مستوى محدد."
+        },
+        {
+          "text": "Die Sprachschule.",
+          "finding": "Sprachschule مدرسة لغات، وجمعها Sprachschulen؛ ليست Sprachkurs."
+        },
+        {
+          "text": "Das Wörterbuch.",
+          "finding": "اسم محايد وجمعه Wörterbücher؛ القاموس أداة تعلم، لا ضمان فهم كل الكلمات."
+        },
+        {
+          "text": "Das Reiseziel.",
+          "finding": "Reiseziel وجهة سفر، وجمعه Reiseziele؛ لا يخلط بغاية الفعل النحوية."
+        },
+        {
+          "text": "Der Reisepass.",
+          "finding": "جواز سفر وجمعه Reisepässe؛ المثال لا يقرر وجوبه لكل انتقال."
+        },
+        {
+          "text": "Die Unterkunft.",
+          "finding": "مكان إقامة وجمعه Unterkünfte؛ لا يختزل في الفندق."
+        },
+        {
+          "text": "Die Gastfamilie.",
+          "finding": "أسرة مضيفة وجمعها Gastfamilien؛ ليست بالضرورة أسرة المتعلم الأصلية."
+        },
+        {
+          "text": "Die Sprachreise.",
+          "finding": "رحلة لتعلم اللغة وجمعها Sprachreisen؛ ليست مجرد أي رحلة."
+        },
+        {
+          "text": "Mitnehmen.",
+          "finding": "nimmt mit مع تغير الجذر والفصل؛ يأخذ معه، وليس بالضرورة يحضر إلى المتكلم."
+        },
+        {
+          "text": "Üben.",
+          "finding": "üben يتدرب؛ لا يعني أن الإتقان حصل بالفعل."
+        },
+        {
+          "text": "Sich anmelden.",
+          "finding": "meldet sich an مع الفصل والانعكاس؛ تسجيل في السياق، لا إجراء خارجي يطلبه التطبيق."
+        },
+        {
+          "text": "Sich informieren über.",
+          "finding": "حُفظ über في خانة التصريف؛ sich informieren استعلام، لا إعلام شخص آخر."
+        },
+        {
+          "text": "Die Gelegenheit.",
+          "finding": "Gelegenheit فرصة، وجمعها Gelegenheiten؛ لا تعني موعدًا مثبتًا."
+        },
+        {
+          "text": "Nützlich.",
+          "finding": "nützlich مفيد؛ صفة وليست اسم فائدة."
+        },
+        {
+          "text": "Verbessern.",
+          "finding": "verbessern يحسن وغير منفصل؛ zu verbessern وليس verzubessern."
+        },
+        {
+          "text": "Erfahren.",
+          "finding": "erfahren هنا يحصل على معلومات، وتصريفه erfährt؛ ليس fahren أو صفة خبرة."
+        },
+        {
+          "text": "Nachschlagen.",
+          "finding": "nachschlagen يراجع مدخلًا في مرجع؛ schlägt nach مع الفصل، لا معنى مشابهة أحد الوالدين."
+        },
+        {
+          "text": "Ich lerne Deutsch, um in Österreich zu studieren.",
+          "finding": "أنا أتعلم وأنا أنوي الدراسة؛ in Österreich مكان الدراسة وzu studieren آخر الغاية. لا قبول جامعي مثبت."
+        },
+        {
+          "text": "Maha fährt nach Wien, um einen Sprachkurs zu besuchen.",
+          "finding": "Maha تسافر وهي التي تنوي حضور الدورة؛ القاعدة لا تسند الحضور إلى Hiba ولا تثبت أنه وقع."
+        },
+        {
+          "text": "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+          "finding": "المجموعة نفسها تستخدم القاموس وتريد فهم الكلمات؛ zu verstehen، لا فعل مصرف جديد."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-07-AUD-DLG-01",
+      "text": "Warum fährst du im Sommer nach Wien? Ich mache eine Sprachreise, um mein Deutsch zu verbessern. Besuchst du eine Sprachschule? Ja. Ich habe mich angemeldet, um jeden Vormittag Deutsch zu üben. Und was machst du am Nachmittag? Ich besuche Museen, um mehr über die Stadt zu erfahren. Das klingt interessant. Gute Reise!",
+      "finding": "مراجعة نص التسجيل وربطه بالمصدر؛ الأصوات والمسارات والحالات محفوظة، ولا استماع أو اعتماد صوتي جديد.",
+      "sourceIds": [
+        "INF",
+        "ZU"
+      ],
+      "items": [
+        {
+          "text": "Warum fährst du im Sommer nach Wien?",
+          "finding": "Hiba تسأل عن غرض رحلة الصيف إلى Wien؛ Warum يستقبل هنا جواب غاية."
+        },
+        {
+          "text": "Ich mache eine Sprachreise, um mein Deutsch zu verbessern.",
+          "finding": "Maha تعلل الرحلة بتحسين الألمانية؛ zu verbessern غير منفصل، ولا ضمان لتحسن حاصل."
+        },
+        {
+          "text": "Besuchst du eine Sprachschule?",
+          "finding": "سؤال Hiba عن مدرسة لغات؛ الفعل أولًا في سؤال نعم أو لا."
+        },
+        {
+          "text": "Ja. Ich habe mich angemeldet, um jeden Vormittag Deutsch zu üben.",
+          "finding": "Maha تخبر بتسجيل سابق: habe mich angemeldet؛ الغاية التدريب كل قبل الظهر، لا إثبات تحققه."
+        },
+        {
+          "text": "Und was machst du am Nachmittag?",
+          "finding": "السؤال عن نشاط بعد الظهر مستقل عن وقت الدراسة."
+        },
+        {
+          "text": "Ich besuche Museen, um mehr über die Stadt zu erfahren.",
+          "finding": "زيارة المتاحف لمعرفة المزيد عن المدينة؛ zu erfahren مصدر غير منفصل."
+        },
+        {
+          "text": "Das klingt interessant. Gute Reise!",
+          "finding": "تقييم Hiba وتمني رحلة طيبة؛ Gute Reise! ليس حجزًا أو تأكيد سفر."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-00",
+        "voice-02",
+        "voice-00",
+        "voice-02",
+        "voice-00",
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-07-AUD-READ-01",
+      "text": "Maha möchte im Sommer nach Wien reisen. Sie lernt Deutsch, um sich auf die Reise vorzubereiten. Sie benutzt ein Wörterbuch, um neue Wörter zu lernen, und informiert sich über die Stadt, um passende Orte zu finden. In Wien besucht sie eine Sprachschule, um täglich Deutsch zu üben. Sie möchte auch mit ihrer Gastfamilie sprechen, um die Sprache im Alltag zu benutzen.",
+      "finding": "مراجعة نص التسجيل وربطه بالمصدر؛ الأصوات والمسارات والحالات محفوظة، ولا استماع أو اعتماد صوتي جديد.",
+      "sourceIds": [
+        "INF",
+        "ZU"
+      ],
+      "items": [
+        {
+          "text": "Maha möchte im Sommer nach Wien reisen.",
+          "finding": "Maha ترغب في السفر صيفًا إلى Wien؛ möchte مع reisen بلا zu، وليس خبرًا عن سفر تم."
+        },
+        {
+          "text": "Sie lernt Deutsch, um sich auf die Reise vorzubereiten.",
+          "finding": "تعلم اللغة للاستعداد؛ sich مع sie وvorzubereiten كلمة واحدة."
+        },
+        {
+          "text": "Sie benutzt ein Wörterbuch, um neue Wörter zu lernen, und informiert sich über die Stadt, um passende Orte zu finden.",
+          "finding": "غايتان: القاموس لتعلم كلمات جديدة، والاستعلام لإيجاد أماكن مناسبة. الفاصلة بعد lernen تغلق الغاية الأولى قبل und."
+        },
+        {
+          "text": "In Wien besucht sie eine Sprachschule, um täglich Deutsch zu üben.",
+          "finding": "تصف الخطة مدرسة لغات في Wien للتدريب يوميًا؛ لا عدد ساعات محدد."
+        },
+        {
+          "text": "Sie möchte auch mit ihrer Gastfamilie sprechen, um die Sprache im Alltag zu benutzen.",
+          "finding": "رغبة إضافية بالحديث مع الأسرة المضيفة لاستعمال اللغة يوميًا؛ لا حصر للمحادثات أو نتائج طلاقة مثبتة."
+        }
+      ],
+      "voiceIds": [
+        "voice-00"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-07-AUD-LST-01",
+      "text": "Ich reise nach München, um meine Freundin zu besuchen. Ich nehme ein kleines Wörterbuch mit, um neue Wörter nachzuschlagen. Am Vormittag besuche ich einen Sprachkurs, um mein Deutsch zu verbessern. Am Abend gehen meine Freundin und ich in ein Café, um zusammen zu sprechen.",
+      "finding": "مراجعة نص التسجيل وربطه بالمصدر؛ الأصوات والمسارات والحالات محفوظة، ولا استماع أو اعتماد صوتي جديد.",
+      "sourceIds": [
+        "INF",
+        "ZU"
+      ],
+      "items": [
+        {
+          "text": "Ich reise nach München, um meine Freundin zu besuchen.",
+          "finding": "الراوي يسافر إلى München لزيارة صديقة؛ لا اسم أو جنس للراوي في ich."
+        },
+        {
+          "text": "Ich nehme ein kleines Wörterbuch mit, um neue Wörter nachzuschlagen.",
+          "finding": "قاموس صغير لمراجعة الكلمات؛ nehme…mit في الرئيسية وnachzuschlagen في الغاية."
+        },
+        {
+          "text": "Am Vormittag besuche ich einen Sprachkurs, um mein Deutsch zu verbessern.",
+          "finding": "دورة قبل الظهر لتحسين الألمانية؛ zu verbessern غير منفصل، وليس مدرسة قراءة Maha."
+        },
+        {
+          "text": "Am Abend gehen meine Freundin und ich in ein Café, um zusammen zu sprechen.",
+          "finding": "الصديقة والراوي يذهبان إلى مقهى مساء للحديث معًا؛ فاعل جمع، والغاية للمجموعة نفسها."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-07-language-learning-travel-purpose.md": "45fc89dc462f471bc1770c7c53c711b5fc937329e29c459ab4a08b1562019f26",
+    "content/A2/lesson-07-language-learning-travel-purpose.assessment.json": "f46d71a0a08e92359615bf199bee8622b99586a64581087556501d6afc47ae5b"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-07-AUD-PHR-01": "3ea77b82997fa130779529c005c6e70640ca8811e9ce0fa3a3217f705e54b826",
+    "DL-A2-07-AUD-DLG-01": "441de16e33656290ea9b40fbdb21e275ecce98758febb71296c4cc4fcf97847d",
+    "DL-A2-07-AUD-READ-01": "6f1a39bd1189bb279188621cf6b88661148b1e370c20f247fe0abcc9989512d9",
+    "DL-A2-07-AUD-LST-01": "49c0f52bf4495c07cd9f24a6ae9c02fb032d12a05a946a402a8dae586f159560"
+  },
+  "preservation": {
+    "baseline": "cea8a96a293a2c15ff41ecaf68bc7c58080bee85",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-07-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-07-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-07-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-07-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 114
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1936482,
+    "cacheVersion": "v72",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "axeScreenStates": 113,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 75,
+    "axeIncompleteNodeOccurrences": 173,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; no claim to fix historical filechooser intermittency"
+    ],
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 25
+    },
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Self-check validates evidence bookkeeping, not linguistic correctness.",
+      "Dialogue-heading count55 is label-based, not recording count.",
+      "No human reviewer prerequisite."
+    ],
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "361d33ef92af796fc11af44a9d323d3083445307",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false,
+    "metadataRecovery": "695 baseline files: 12 expected changed, one expected new guard; mixed reset preserved all changed/new bytes. Prior unpushed commit objects not restored; work re-committed on same branch."
+  },
+  "campaign": {
+    "reviewedLessons": 24,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 29,
+    "next": "CR26/A2.8"
+  }
+}
