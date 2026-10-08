@@ -1498,6 +1498,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.11 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR42: written innovation pitch and spoken schoolyard briefing; B1.12 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-12-innovation-research-future').assessment.version, 'b1-12-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-12-innovation-research-future');
+    const responses = ["Unsere fiktive Projektgruppe entwickelt im Lernlabor einen kleinen Feuchtigkeitssensor für Schulgärten. Nächste Woche testet das Team den ersten Prototyp im Garten. Wahrscheinlich wird der Sensor nützliche Messwerte liefern. Vielleicht wird das Experiment bei Regen länger dauern. Nach dem Test werden wir das Modell Schritt für Schritt verbessern.", "In unserem fiktiven Kurs untersuchen wir, wie auf dem Schulhof mehr Schatten entstehen kann. In zwei Wochen werden wir Modelle aus Karton vorstellen. Danach werden wir Rückmeldungen von der Gruppe sammeln. Wahrscheinlich werden wir zwei Entwürfe verbessern. Vielleicht wird das Team am Ende das praktischste Modell auswählen."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.12 models fit thresholds; pitch is writing only, briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-12-innovation-research-future').performanceTasks[1]], 'lesson:b1-12-innovation-research-future', 'b1-12-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-12-innovation-research-future').performanceTasks[0]], 'lesson:b1-12-innovation-research-future', 'b1-12-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-12-innovation-research-future');
+      const next=findLesson('b2-01-time-management-habits-reading');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-12-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-12-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-12-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-12-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.12 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2627,7 +2661,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b1FutureQuestionSources = new Set(b1FutureAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b1FutureQuestionSources.has(`DL-B1-12-T0${task}`), `B1.12 quiz must cover source task T0${task}`);
   assert.ok(b1FutureAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B1-12-G01")), "all B1.12 questions must map to the lesson objective");
-  assert.ok(b1FutureAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-12-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B1.12 performance tasks must map to T08 and offer local written/oral work without requiring a recording");
+  assert.ok(b1FutureAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-12-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), "B1.12 performance tasks must map to T08 and remain independent of audio files");
+  assert.deepEqual(b1FutureAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
   assert.deepEqual(b1FutureAssessment.performanceTasks.find((task) => task.id === "DL-B1-12-P02").sourceTaskIds, ["DL-B1-12-T06", "DL-B1-12-T08"], "B1.12 P02 must link the schoolyard listening text and T08 presentation");
   const futureAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b1FutureAssessment.id);
   assert.equal(futureAssets.length, 5, "B1.12 must expose vocabulary, models, dialogue, reading and listening");
@@ -2684,7 +2719,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.doesNotMatch(futureLayout.contentHtml, /data-audio-id="DL-B1-11-/);
   assert.ok(b1FutureAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), "B1.12 assessment stays independent of optional audio");
 
-  assert.match(b1FutureSource, /أو قدّمه شفهيًا/);
+  for (const task of b1FutureAssessment.performanceTasks) assert.ok(b1FutureSource.includes(task.prompt));
   assert.match(b1FutureSource, /اكتب النص ثم اقرأه بصوت واضح/);
   assert.match(b1FutureSource, /لا يلزم تسجيل/);
   assert.match(b1FutureSource, /Präsens.*وقت محدد لخطة متفق عليها/);
