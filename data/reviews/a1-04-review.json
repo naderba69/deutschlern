@@ -1204,5 +1204,18 @@
     "serviceWorkerUpdateFixture": "v42 to v55, current assessment data; v1 rejection covered separately in VM",
     "acousticReview": false,
     "physicalDeviceTest": false
+  },
+  "delivery": {
+    "implementationCommit": "936e293b40d764c2f190d11a423cb9aebfad1845",
+    "branch": "arena/01a1036f-deutschlern",
+    "remoteHeadMatched": true,
+    "workingTreeCleanAfterImplementationPush": true,
+    "pullRequest": 1,
+    "pullRequestState": "OPEN",
+    "pullRequestHeadMatchedOnSecondCheck": true,
+    "mergedAt": null,
+    "commitStatusAtCheck": "pending",
+    "statusesAtCheck": [],
+    "deploymentConfirmed": false
   }
 }
