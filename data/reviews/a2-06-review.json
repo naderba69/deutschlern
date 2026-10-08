@@ -2191,7 +2191,22 @@
     "implementationCommit": "94685bc8aafb6d6794ce223d7dadc5b798cbf9fc",
     "implementationPushed": true,
     "remoteUiTested": false,
-    "reviewPushed": false
+    "reviewPushed": true,
+    "reviewCommit": "d2a51a237b3bc1d5b6c8755b84d2b5f45a96698f",
+    "reviewHeadMatchedRemote": true,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "d2a51a237b3bc1d5b6c8755b84d2b5f45a96698f",
+    "implementationVercelStatus": "success",
+    "implementationDeploymentId": 6942010781,
+    "implementationDeploymentEnvironment": "Preview",
+    "implementationDeploymentState": "success",
+    "implementationPreviewUrl": "https://deutschlern-4n3cvuhpu-balinader-2671s-projects.vercel.app",
+    "reviewVercelStatus": "failure",
+    "reviewVercelDescription": "Deployment rate limited — retry in 24 hours.",
+    "reviewDeploymentRecordAtCheck": null,
+    "productionDeploymentClaimed": false,
+    "redeploymentRetriesRequested": false
   },
   "campaign": {
     "reviewedLessons": 23,
