@@ -1719,7 +1719,7 @@
   "delivery": {
     "implementationCommit": "08d8237b6e74d3fd9970ada18e203c2be6c6f6de",
     "branch": "arena/01a1036f-deutschlern",
-    "lastQueriedPrHead": "08d8237b6e74d3fd9970ada18e203c2be6c6f6de",
+    "lastQueriedPrHead": "fbe217c6b997b9211d1e7f5aad9dbd6580462d38",
     "prState": "OPEN",
     "mergedAt": null,
     "implementationDeployment": "success",
@@ -1727,6 +1727,11 @@
     "implementationPreviewUrl": "https://deutschlern-qq17xcrv2-balinader-2671s-projects.vercel.app",
     "remoteUiTested": false,
     "productionTested": false,
-    "reportCommit": "pending immediate checked push; resolve by title Record CR36 granular B1.6 review and cumulative checks"
+    "reportCommit": "fbe217c6b997b9211d1e7f5aad9dbd6580462d38",
+    "reportPushed": true,
+    "reportHeadMatchedOrigin": true,
+    "reportDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "reportDeployments": [],
+    "receiptCommit": "Resolve by title Record CR36 delivery receipt; receipt deployment not queried."
   }
 }
