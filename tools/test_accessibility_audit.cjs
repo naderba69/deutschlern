@@ -104,6 +104,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.7-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.7-practical-form-fixture', width);
+  // CR14: shopping, spoken customer role and written list/action.
+  await page.evaluate(() => openLesson('a1-08-shopping-clothes'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.8-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.8-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

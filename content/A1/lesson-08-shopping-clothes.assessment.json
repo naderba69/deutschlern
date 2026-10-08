@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-08-v1",
+    "version": "a1-08-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR14: مراجعة فردية بالمراجع؛ تمييز brauchen عن müssen، وطلب التجربة وتحديد أدوار أسئلة المقاس ومطابقة الأداء للمصدر.",
+      "تحقق ذاتي محلي لا تصحيح آلي للغة أو النطق؛ لا تسجيل مطلوب من المتعلم.",
+      "التسجيلات الموجودة محفوظة ومتاحة؛ النص ظاهر والتقييم لا يقيس استماعًا مستقلًا ولا اعتماد صوت جديد."
     ]
   },
   "quiz": [
@@ -100,7 +100,7 @@
         "Ich muss anprobiert die Hose."
       ],
       "answerIndex": 0,
-      "explanation": "بعد müssen يأتي الفعل الأساسي بصيغة المصدر في نهاية الجملة."
+      "explanation": "في هذه الجملة البسيطة يأتي muss مصرفًا، والمصدر الكامل anprobieren بلاzu في النهاية."
     },
     {
       "id": "DL-A1-08-Q05",
@@ -118,7 +118,7 @@
       "options": [
         "Welche Größe haben Sie?",
         "Wie viel kostet das?",
-        "Welche Farbe ist dein Bruder?"
+        "Welche Farbe möchten Sie?"
       ],
       "answerIndex": 1,
       "explanation": "Wie viel kostet das? تعني «كم سعر هذا؟»."
@@ -135,25 +135,25 @@
         "أسئلة المتجر",
         "اختيار محدد"
       ],
-      "prompt": "أي سؤال يسأل عن المقاس؟",
+      "prompt": "أي سؤال يسأل به البائع الزبون عن مقاسه؟",
       "options": [
         "Welche Größe haben Sie?",
         "Wie viel kostet das?",
         "Wo fährt der Bus?"
       ],
       "answerIndex": 0,
-      "explanation": "Welche Größe haben Sie? تسأل عن المقاس."
+      "explanation": "Welche Größe haben Sie? تعني هنا «ما مقاسك؟». أما Haben Sie Größe 38? فطلب توفر مقاس محدد من البائع."
     },
     {
       "id": "DL-A1-08-Q07",
       "sourceTaskIds": [
-        "DL-A1-08-T05"
+        "DL-A1-08-T06"
       ],
       "objectiveIds": [
         "DL-A1-08-G01"
       ],
       "skillTags": [
-        "فهم القراءة",
+        "وصف الملابس",
         "اختيار محدد"
       ],
       "prompt": "ما معنى zu lang في وصف البنطال؟",
@@ -168,7 +168,7 @@
     {
       "id": "DL-A1-08-Q08",
       "sourceTaskIds": [
-        "DL-A1-08-T07"
+        "DL-A1-08-T08"
       ],
       "objectiveIds": [
         "DL-A1-08-G01"
@@ -184,7 +184,7 @@
         "Ich braucht ein Jacke."
       ],
       "answerIndex": 0,
-      "explanation": "Jacke مؤنث، لذا نقول eine Jacke."
+      "explanation": "ich brauche للمفرد المتكلم، وJacke مؤنث في Akkusativ: eine Jacke، لاeinen أوein."
     },
     {
       "id": "DL-A1-08-Q09",
@@ -243,11 +243,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "مثّل حوارًا في متجر ملابس: اذكر القطعة واللون والمقاس، واسأل عن السعر، واطلب تجربة القطعة. اكتب الحوار واقرأه بصوت مرتفع.",
+      "prompt": "اكتب خمسة أقوال لدور الزبون في متجر: قولًا يبدأ بـIch brauche ويذكر قطعة ملابس، وقولًا يحدد لونًا ومقاسًا، وسؤالًا عن سعر القطعة، وطلبًا لتجربتها بـKann ich … anprobieren?، وقولًا يصف ملاءمتها أو أنها أكبر/أصغر/أطول من اللازم. اقرأ الأقوال الخمسة بصوت مرتفع؛ لا يلزم شريك أو كتابة أجوبة البائع أو تسجيل صوتك، ويمكن استعمال مقاس خيالي.",
       "criteria": {
-        "taskCompletion": "يتضمن الحوار قطعة ولونًا ومقاسًا وسعرًا وطلب تجربة.",
-        "meaningClarity": "يعرف البائع ما يحتاجه المتعلم وما الذي يسأل عنه.",
-        "targetSkill": "يستخدم سؤالًا عن السعر أو المقاس، وفعلًا مناسبًا مثل anprobieren أو müssen."
+        "taskCompletion": "خمسة أقوال تشمل القطعة واللون والمقاس وسؤال السعر وطلب التجربة ووصف الملاءمة، وتُقرأ كلها جهرًا.",
+        "meaningClarity": "يمكن فهم طلب الزبون ووصفه؛ لا تُشترط أجوبة بائع أو شريك أو معلومات حقيقية.",
+        "targetSkill": "Ich brauche مع غرض، وسؤال سعر صحيح، وKann ich … anprobieren?، ووصف مثل passt gut أوzu groß/klein/lang؛ لا يُشترط müssen هنا."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -257,7 +257,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
+        "minimumResponseCharacters": 120,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -265,7 +265,7 @@
     {
       "id": "DL-A1-08-P02",
       "sourceTaskIds": [
-        "DL-A1-08-T08"
+        "DL-A1-08-T03"
       ],
       "objectiveIds": [
         "DL-A1-08-G01"
@@ -273,11 +273,11 @@
       "modality": [
         "writing"
       ],
-      "prompt": "اكتب قائمة شراء قصيرة من ثلاثة أغراض، ثم أضف جملتين تشرحان ما تحتاج إليه وما يجب عليك فعله باستخدام müssen.",
+      "prompt": "اكتب قائمة من ثلاثة أغراض مختلفة من مفردات الملابس، ثم جملتين: الأولى تبدأ بـIch brauche وتذكر غرضًا واحدًا على الأقل من القائمة؛ والثانية تبدأ بـIch muss وتذكر فعلًا لازمًا مثل kaufen أوanprobieren أوeinkaufen، بالمصدر في النهاية. هذه مهمة كتابة فقط؛ يجوز اختيار احتياجات خيالية، ولا يلزم الكلام أو تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "تتضمن القائمة ثلاثة أغراض وجملتين على الأقل.",
-        "meaningClarity": "توضح الجمل ما سيشتريه المتعلم وما يلزمه فعله.",
-        "targetSkill": "يصرّف müssen بحسب الفاعل ويضع الفعل الأساسي في نهاية الجملة."
+        "taskCompletion": "قائمة بثلاثة أغراض مختلفة وجملتان: احتياج بـIch brauche، وفعل لازم بـIch muss.",
+        "meaningClarity": "جملة الاحتياج تذكر غرضًا من القائمة؛ جملة الضرورة تذكر فعلًا مفهومًا، ويمكن أن تكون الخطة خيالية.",
+        "targetSkill": "brauche وmuss معich، وأداة مناسبة للغرض، ومصدر كامل في نهاية جملةmüssen."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,7 +287,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
+        "minimumResponseCharacters": 70,
         "speakAloud": false,
         "audioRequired": false
       }
