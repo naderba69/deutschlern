@@ -1,0 +1,1155 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-09-work-appointments",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-09-v2",
+  "unitCount": 117,
+  "exerciseSubItemCount": 35,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "MODAL",
+      "title": "Lingolia Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "كامل: صيغ können وذكر المصدر وإمكان حذفه إذا كان معلومًا؛ الأزمنة المتقدمة خارج الهدف.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "CLOCK",
+      "title": "Lingolia Uhrzeit",
+      "url": "https://deutsch.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit/uhrzeit",
+      "scope": "كامل: halb elf =10:30 وصيغة 12 ساعة وسياق الفترة؛ لم نعممها على 23/11 دون سياق.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "HELP",
+      "title": "Duden helfen",
+      "url": "https://www.duden.de/rechtschreibung/helfen",
+      "scope": "كامل: jemandem helfen و Kann ich dir helfen?؛ يدعم mir/dir والنمط لا جميع تراكيب helfen.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "APPOINTMENT",
+      "title": "Duden Termin",
+      "url": "https://www.duden.de/rechtschreibung/Termin",
+      "scope": "كامل: موعد/وقت محدد، وقد يكون حدًا نهائيًا؛ مذكر وجمع Termine. التمييز بين الإتاحة والاتفاق مراجعة تواصلية مباشرة.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "كامل: النمط الأساسي للفعل الثاني والمصدر النهائي ومرونة الترتيب؛ لم نعمم ألفاظ immer في الصفحة على كل الجمل أو الاستعمالات.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "EMAIL",
+      "title": "Duden E-Mail",
+      "url": "https://www.duden.de/rechtschreibung/E_Mail",
+      "scope": "كامل: الكتابة بالشرطة وحروف كبيرة؛ die/das والجمع E-Mails، معنى رسالة وكتابة/إرسال، والمحايد خصوصًا إقليمي.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "TIME",
+      "title": "Lingolia temporale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal",
+      "scope": "كامل: am للأيام والفترات،um للساعة،nach بعد و bis حد نهائي. لم نتبن صياغة حصر um بالساعة التامة/حتى 12؛ صفحة CLOCK تعرض um مع دقائق.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "NF",
+      "title": "grammis Nachfeld — search excerpt only",
+      "url": "https://grammis.ids-mannheim.de/sgt/2288",
+      "scope": "مقتطف نتيجة البحث 2 فقط: حقل بعد القوس الأيمن تظهر فيه جمل وإلحاقات، ومعه قيود على الضمائر. الجلب المباشر HTTP500؛ لا نزعم قراءة الصفحة كاملة أو اعتماد الجمل البديلة كلها.",
+      "searchResultId": 2,
+      "access": "search_excerpt_only"
+    },
+    {
+      "id": "QUESTION",
+      "title": "Lingolia Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen",
+      "access": "full_fetched_page",
+      "scope": "صفحة كاملة جُلبت في2026-10-08: الفعل المصرف أولًا في سؤال نعم/لا، وMit wem للسؤال عن شخص بعدmit؛ الأسئلة غير المباشرة وتراكيبwo المركبة خارج نطاق الدرس."
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://grammis.ids-mannheim.de/systematische-grammatik/1142",
+      "reason": "Datensatz nicht vorhanden؛ لا وثيقة ولا دليل."
+    },
+    {
+      "url": "https://grammis.ids-mannheim.de/sgt/2288",
+      "reason": "الجلب المباشرHTTP500؛ مقتطف البحث فقط مسجل منفصلًا بنطاقه المحدود."
+    }
+  ],
+  "limitations": [
+    "117 وحدة و35 بندًا أو مطلبًا متداخلة؛ ليست117 مهارة مستقلة. صف المفرد والجمع أو الأدوار ليس مساويًا لعدد الكلمات أو الجمل.",
+    "9 مراجع:8 صفحات كاملة ومقتطف بحث واحد؛ لا مدخل معجمي مستقل لكل لفظ أو ترجمة. بعض الأحكام مراجعة مباشرة للمساعد.",
+    "القراءة8 وحدات بما فيها الجملتان داخل قولNora، لا8 فقرات؛ الاستماع5 وحدات تشمل التحية مع السؤال والختام. الحوار6 أدوار، والأصول3 والمقاطع8 محفوظة دون استماع أو اعتماد جديد.",
+    "الطول والإقرار والتفريغ لا تثبت جودة اللغة أو النطق أو الاستماع المستقل؛ لا شهادةCEFR/WCAG ولا انتظار مراجع بشري شرطًا للاستمرار."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-09-work-appointments.md": "45d2bbf8342ee1d8fa794c76105f465812e81280203882bb90df0453102286e5",
+    "content/A1/lesson-09-work-appointments.assessment.json": "3cd7ad3caf9c000f5affccd1ea4bf52015a9d9357d95036a7570c1e8f713fff0"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-09-AUD-READ-01": "4e82a445ef8eca50a268f994a5ef2829355e5a7b4b6f2560b11aa0fcd99bc377",
+    "DL-A1-09-AUD-DLG-01": "4de16cb9ab4b9c238a073d32e4e6376df05929ad4584c26e5723fc4701d226e7",
+    "DL-A1-09-AUD-LST-01": "5cfc04a9c56351ec6eb8e83cf32284433b992fcfe95c127715b466fb94dd0c0c"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "نطاق الدرس",
+      "finding": "مشكلة عمل وموعد وقدرة على فعل؛ الكتابة والاستماع الاختياري واضحان.35 دقيقة تقدير مرن لا اختبار سرعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "معاني können",
+      "finding": "قدرة أو إمكان، و Kannst du mir helfen? طلب مساعدة في السياق. ليست كل استعمالات können محصورة في القدرة البدنية.",
+      "sourceIds": [
+        "MODAL",
+        "HELP"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "نطاق ترتيب الجملة",
+      "finding": "V2 للخبرية البسيطة والمصدر في نهاية النمط المدروس، بينما يبدأ سؤال نعم/لا بالفعل المصرف. الموقع الثاني كتلة لا كلمة.",
+      "sourceIds": [
+        "MAIN",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "حذف الفعل المفهوم",
+      "finding": "Ich kann um zehn Uhr جواب مختصر بفعل معلوم من الحوار؛ لا تناقض مع تعليم المصدر عند ذكره صراحةً.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "النمط الأساسي والإلحاق",
+      "finding": "T05 و Q08 يطلبان مصدرًا في النهاية ولا كلمة بعده؛ لا حكم على كل ترتيب كلامي. مقتطف grammis يدعم وجود Nachfeld عمومًا، لا اعتماد كل بديل في التمرين.",
+      "sourceIds": [
+        "NF"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "وقت متاح واتفاق موعد",
+      "finding": "الإتاحة ليست موافقة الطرفين وحدها؛ T08 يضيف قبولًا وتكرار اليوم والساعة. Q10 يسأل عن إتاحة وقت لا موعد مؤكد.",
+      "sourceIds": [
+        "APPOINTMENT"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "حدود الحوار",
+      "finding": "حديث مقترح عند 10:30 قبل موعد 11:00؛ لا إثبات إصلاح الطابعة ولا دمج ملزم مع تفاصيل القراءة. الكلمات المسجلة محفوظة.",
+      "sourceIds": [
+        "CLOCK"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "حدود استنتاج القراءة",
+      "finding": "المكتب لا ينفي الفندق؛ T06.1 أصبح نفيًا للطباعة يتعارض صراحةً مع النص. البريد بديل لا برهان إصلاح جهاز.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "حدود الاستماع",
+      "finding": "المتكلم يخاطب Karim؛ جنسه غير محدد و die Person تأنيث نحوي. المفتاح Mit dem Chef محايد. النص ظاهر ولا قياس استماع مستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود الأداء",
+      "finding": "P01 أربعة أدوار مع الجهر، و P02 ثلاث جمل مكتوبة. الطول والإقرار لا يصححان اللغة أو النطق، ولا شرط مراجع بشري للاستمرار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| das Büro | die Büros | المكتب |",
+      "finding": "Büro محايد وجمعه Büros؛ مكتب لا تحديد نوع المبنى.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| der Kollege / die Kollegin | die Kollegen / die Kolleginnen | الزميل / الزميلة |",
+      "finding": "Kollege/Kollegin والجموع Kollegen/Kolleginnen صحيحة؛ أضيفت أداة الجمع للثانية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Chef / die Chefin | die Chefs / die Chefinnen | المدير / المديرة |",
+      "finding": "Chef/Chefin والجموع Chefs/Chefinnen؛ المدير لا الطاهي في السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Termin | die Termine | الموعد |",
+      "finding": "Termin مذكر وجمعه Termine؛ موعد هنا، وقد يدل في سياقات أخرى على موعد نهائي.",
+      "sourceIds": [
+        "APPOINTMENT"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Besprechung | die Besprechungen | الاجتماع |",
+      "finding": "Besprechung مؤنث واجتماع عمل هنا؛ الجمع Besprechungen.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| der Drucker | die Drucker | الطابعة |",
+      "finding": "Drucker مذكر والجمع لا يتغير لفظه؛ الطابعة في الأمثلة مفردة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Computer | die Computer | الحاسوب |",
+      "finding": "Computer مذكر والجمع مماثل؛ arbeitet عن الشخص و funktioniert عن الجهاز هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die E-Mail | die E-Mails | رسالة بريد إلكتروني في أمثلتنا |",
+      "finding": "E-Mail رسالة في الأمثلة؛ التأنيث نموذج الدرس مع الاعتراف بالمحايد الإقليمي.",
+      "sourceIds": [
+        "EMAIL"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| das Problem | die Probleme | المشكلة |",
+      "finding": "Problem محايد وجمعه Probleme؛ مشكلة لا جهاز بذاته.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| das Projekt | die Projekte | المشروع |",
+      "finding": "Projekt محايد وجمعه Projekte؛ يدعم ein neues Projekt.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| kaputt | — | معطّل |",
+      "finding": "kaputt وصف معطّل؛ ليس فعلًا يتصرف في هذا الجدول.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| funktionieren | — | يعمل، يشتغل |",
+      "finding": "funktionieren مصدر، و funktioniert مع الجهاز المفرد في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| drucken | — | يطبع |",
+      "finding": "drucken طباعة؛ لا يساوي schreiben أو schicken.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| helfen | — | يساعد |",
+      "finding": "helfen مساعدة مع متلقٍ في Dativ؛ شرحت mir/dir قبل التقييم.",
+      "sourceIds": [
+        "HELP"
+      ]
+    },
+    {
+      "id": "vocab-15",
+      "text": "| schicken | — | يرسل |",
+      "finding": "schicken إرسال؛ أضيف تدريب فعلي له في T04.4.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-16",
+      "text": "| telefonieren | — | يتحدث هاتفيًا |",
+      "finding": "telefonieren مكالمة هاتفية، ولا يعني بالضرورة إرسال رسالة.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-01",
+      "text": "**Der Drucker ist kaputt.** — الطابعة معطّلة.",
+      "finding": "Der Drucker ist kaputt خبرية مفردة صحيحة؛ مدرّبة أيضًا في T05.4.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-02",
+      "text": "**Der Computer funktioniert nicht.** — الحاسوب لا يعمل.",
+      "finding": "Der Computer funktioniert nicht ينفي عمل الحاسوب في المثال المستقل، لا في نص الاستماع.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-03",
+      "text": "**Kannst du mir helfen?** — هل تستطيع مساعدتي؟ احفظ *mir helfen* كتعبير جاهز.",
+      "finding": "Kannst du mir helfen? سؤال يبدأ بالفعل وطلب مساعدة؛ mir متلقيها.",
+      "sourceIds": [
+        "HELP",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "text": "**Ich habe am Dienstag einen Termin.** — لدي موعد يوم الثلاثاء.",
+      "finding": "Ich habe am Dienstag einen Termin؛ am لليوم و einen Termin مفعول مذكر.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "**Tunis / in einem Büro** — مدينة تونس / في مكتب؛ لا يعني المكتب نوع المبنى كله، فقد يوجد مكتب داخل منشأة أخرى.",
+      "finding": "Tunis مدينة؛ المكتب قد يكون داخل فندق أو مؤسسة أخرى، فلا نبني نفيًا غير مسند.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-02",
+      "text": "**mit seiner Kollegin / mit seiner Chefin** — مع زميلته / مع مديرته؛ Dativ بعد mit، وتعود الملكية إلى Samir في القراءة.",
+      "finding": "mit seiner Kollegin/Chefin عبارتا Dativ، والملكية ترجع إلى Samir.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-03",
+      "text": "**mir helfen / dir helfen** — يساعدني / يساعدك؛ helfen مع Dativ في هذه العبارات: Kannst du mir helfen? ثم Ich kann dir helfen. لا نستبدل mir/dir بـmich/dich هنا.",
+      "finding": "طلب المساعدة mir يقابله جواب dir بحسب المتكلم؛ لا تحويل إلى mich/dich.",
+      "sourceIds": [
+        "HELP"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "**eine E-Mail schreiben / schicken** — يكتب رسالة إلكترونية / يرسلها؛ الكتابة غير الإرسال. نتدرب على die/eine E-Mail؛ تُستعمل das/ein أيضًا خصوصًا في النمسا وسويسرا وجنوب ألمانيا، وليست خطأ مطلقًا.",
+      "finding": "كتابة الرسالة غير إرسالها؛ die/eine هو النموذج، و das/ein بديل إقليمي صحيح.",
+      "sourceIds": [
+        "EMAIL"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "**vom Computer** — من الحاسوب؛ vom = von dem. إرسال رسالة بدل الطباعة لا يعني إصلاح الطابعة.",
+      "finding": "vom = von dem؛ الحاسوب مصدر الإرسال في الحوار، لا الطابعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-06",
+      "text": "**über ein neues Projekt sprechen** — يتحدث عن مشروع جديد؛ über هنا بمعنى «عن»، وneues صيغة معطاة مع Projekt المحايد، لا درس كامل في الصفات.",
+      "finding": "über ein neues Projekt موضوع حديث؛ العبارة معطاة للفهم دون تعميم تصريف الصفات.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-07",
+      "text": "**vorher / kurz** — قبل ذلك / لوقت قصير؛ في الحوار قبل موعد الحادية عشرة، دون مدة بالدقائق مذكورة.",
+      "finding": "vorher يعود إلى ما قبل الحادية عشرة، و kurz لا يحدد عدد دقائق.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "**Zeit haben / einen Termin haben** — لديه وقت / لديه موعد؛ الوقت المتاح لا يساوي اتفاق الطرفين على موعد حتى يُقبل ويُؤكد.",
+      "finding": "وقت متاح مقابل موعد؛ يلزم قبول الاقتراح لتأكيده في المهمة الجديدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "**nach der Arbeit / am Vormittag / am Nachmittag** — بعد العمل / قبل الظهر / بعد الظهر؛ nach هنا زمن، لا وجهة مدينة.",
+      "finding": "nach der Arbeit زمن بعد العمل، و Vormittag قبل الظهر و Nachmittag بعده.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "**funktionieren / funktioniert / nicht drucken** — يعمل / يعمل للمفرد / لا يطبع؛ kaputt معطّل، لكن مجرد عدم عمل جهاز لا يثبت دائمًا أنه مكسور أو غير قابل للإصلاح.",
+      "finding": "عدم عمل الجهاز لا يحدد تشخيصًا تقنيًا أو استحالة الإصلاح.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-11",
+      "text": "**kommen / sprechen / sagt / beginnt** — يأتي / يتحدث / يقول / يبدأ؛ صيغ يحتاجها التدريب، ونستعمل مع können المصدر kommen أوsprechen لا الفعل المصرف.",
+      "finding": "kommen/sprechen مصدران؛ sagt/beginnt صيغتان للفهم في القراءة والتمرين.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-12",
+      "text": "**morgen / heute / Bis später!** — غدًا / اليوم / إلى اللقاء لاحقًا؛ Karim اسم مخاطَب في رسالة الاستماع، لا اسم المتكلم. die Person مؤنثة نحويًا ولا تثبت جنس صاحب الرسالة.",
+      "finding": "Karim مخاطَب لا راوٍ؛ لا نستنتج جنس المتكلم من die Person أو جنس الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "verb-01",
+      "text": "| ich | kann |",
+      "finding": "ich kann بلاü.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-02",
+      "text": "| du | kannst |",
+      "finding": "du kannst مع st.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-03",
+      "text": "| er/sie/es | kann |",
+      "finding": "er/sie/es kann؛ أضيف es.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-04",
+      "text": "| wir | können |",
+      "finding": "wir können معü.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-05",
+      "text": "| ihr | könnt |",
+      "finding": "ihr könnt؛ لا können.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "verb-06",
+      "text": "| sie / Sie | können |",
+      "finding": "sie/Sie können للجمع أو الاحترام، لا sie المفردة.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "modal-example-01",
+      "text": "**Ich kann heute arbeiten.** — أستطيع العمل اليوم.",
+      "finding": "Ich kann heute arbeiten؛ مصدر كامل بعد kann في النمط البسيط.",
+      "sourceIds": [
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "modal-example-02",
+      "text": "**Wir können eine E-Mail schreiben.** — نستطيع كتابة بريد إلكتروني.",
+      "finding": "Wir können eine E-Mail schreiben؛ جمع ومصدر، لا schreibt.",
+      "sourceIds": [
+        "MODAL",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "modal-example-03",
+      "text": "**Kannst du am Nachmittag telefonieren?** — هل تستطيع التحدث هاتفيًا بعد الظهر؟",
+      "finding": "Kannst du…telefonieren? سؤال نعم/لا؛ kann ليس في الموقع الثاني هنا.",
+      "sourceIds": [
+        "MODAL",
+        "MAIN",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "time-01",
+      "text": "**am Montag / am Dienstag / am Wochenende** — يوم الاثنين / الثلاثاء / في عطلة الأسبوع.",
+      "finding": "am Montag/Dienstag/Wochenende عبارات زمن معطاة، لا أسماء مدينة.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "time-02",
+      "text": "**um 9 Uhr / um halb elf** — في الساعة التاسعة / العاشرة والنصف. انتبه: **halb elf** بالألمانية تعني 10:30، أي نصف ساعة قبل الحادية عشرة؛ هذه صيغة12 ساعة، ويحدد السياق صباحًا أو مساءً، وليست halb elf = 11:30.",
+      "finding": "um9Uhr مقابل um halb elf؛ halb elf تعني 10:30 بصيغة 12 ساعة لا 11:30.",
+      "sourceIds": [
+        "CLOCK"
+      ]
+    },
+    {
+      "id": "time-03",
+      "text": "**Hast du am Mittwoch Zeit?** — هل لديك وقت يوم الأربعاء؟",
+      "finding": "Hast du am Mittwoch Zeit? سؤال عن التفرغ ليوم محدد.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "time-04",
+      "text": "**Ja, ich kann um zehn Uhr.** — نعم، أستطيع في الساعة العاشرة.",
+      "finding": "Ja, ich kann um zehn Uhr جواب إتاحة بفعل مفهوم؛ ليس وحده اتفاق الطرفين.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Der Drucker ist kaputt. Kannst du mir helfen, Nora?",
+      "finding": "Samir يذكر تعطل الطابعة ويطلب المساعدة من Nora؛ كلامتان تواصليتان في دور واحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ja, gern. Funktioniert der Computer?",
+      "finding": "Nora توافق وتسأل عن عمل الحاسوب؛ ليس سؤالًا عن الطابعة نفسها.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Ja, aber der Drucker funktioniert nicht.",
+      "finding": "Ja يثبت عمل الحاسوب، و aber يميز الطابعة التي لا تعمل.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Wir können die E-Mail vom Computer schicken. Hast du heute einen Termin?",
+      "finding": "تقترح الإرسال من الحاسوب وتسأل عن موعد اليوم؛ الإرسال ليس إصلاحًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Ja, um elf Uhr. Können wir vorher kurz sprechen?",
+      "finding": "Samir لديه موعد 11 ويسأل عن حديث قصير قبله؛ لا يوم أسبوع مذكور في الحوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ja. Ich kann um halb elf.",
+      "finding": "Nora متاحة عند halb elf، أي 10:30 في السياق؛ حذف فعل الحديث مفهوم.",
+      "sourceIds": [
+        "CLOCK",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Samir arbeitet in einem Büro in Tunis.",
+      "finding": "مكتب في مدينة تونس؛ لا دليل على نوع المبنى ككل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Am Dienstag hat er einen Termin mit seiner Kollegin Nora.",
+      "finding": "موعد الثلاثاء مع زميلته Nora؛ الملكية والاسم واضحان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Sie sprechen um elf Uhr über ein neues Projekt.",
+      "finding": "حديث الساعة 11 عن مشروع جديد؛ Sie جمع Samir و Nora.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Der Drucker ist kaputt.",
+      "finding": "الطابعة معطلة، لا الحاسوب في هذه الجملة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Samir kann heute nicht drucken.",
+      "finding": "لا يستطيع الطباعة اليوم؛ يسند مباشرةً خطأ T06.1 الجديدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Nora sagt: „Ich kann dir helfen.",
+      "finding": "Nora تقول إنها تستطيع مساعدته؛ dir للمخاطب Samir داخل القول.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Wir können eine E-Mail schreiben.“",
+      "finding": "تقترح كتابة رسالة بصيغة wir؛ ليست دعوى أنها أرسلتها بالفعل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-08",
+      "text": "Am Nachmittag hat Samir eine Besprechung mit seiner Chefin.",
+      "finding": "اجتماع بعد الظهر مع المديرة؛ لا ساعة دقيقة معطاة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wo arbeitet Samir?",
+      "finding": "In einem Büro in Tunis؛ المكان والمدينة كلاهما في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Mit wem hat er am Dienstag einen Termin?",
+      "finding": "Mit seiner Kollegin Nora؛ سؤال شخص لا مكان.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was ist kaputt?",
+      "finding": "Der Drucker؛ الجهاز المعطل المصرح به.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was können Samir und Nora machen?",
+      "finding": "Sie können eine E-Mail schreiben؛ قدرة لا واقعة إرسال مكتملة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Mit wem hat Samir am Nachmittag eine Besprechung?",
+      "finding": "Mit seiner Chefin؛ لا Nora المفترضة مديرةً دون سند.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Hallo Karim, kannst du heute nach der Arbeit telefonieren?",
+      "finding": "تحية Karim وطلب مكالمة بعد العمل اليوم؛ اسم الراوي غير معطى.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich kann um fünf Uhr.",
+      "finding": "متاح عند الخامسة؛ لا رقم 17 منطوق ولا تأكيد من Karim.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Am Vormittag habe ich einen Termin mit meinem Chef.",
+      "finding": "موعد قبل الظهر مع Chef المتكلم؛ meinem يوافق Chef ولا يكشف جنس صاحبه.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Mein Computer funktioniert, aber der Drucker ist kaputt.",
+      "finding": "الحاسوب يعمل والطابعة معطلة؛ لا عكس الجهازين.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "text": "Bis später!",
+      "finding": "Bis später ختام إلى اللقاء لاحقًا، لا ساعة جديدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wann kann die Person telefonieren?",
+      "finding": "Um fünf Uhr؛ مطابق اللفظ دون إضافة 17:00 إلزامية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Mit wem hat sie am Vormittag einen Termin?",
+      "finding": "Mit dem Chef؛ محايد بدل seinem التي افترضت جنسًا بلا سند.",
+      "sourceIds": [
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was funktioniert?",
+      "finding": "Der Computer؛ ما يعمل لا ما تعطل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was ist kaputt?",
+      "finding": "Der Drucker؛ ما تعطل لا الحاسوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-09-T01",
+      "text": "1. أطبع به: **der Drucker / die E-Mail**\n2. موعد محدد: **der Termin / das Fenster**\n3. شخص يعمل معك: **die Kollegin / die Fahrkarte**\n4. البريد الإلكتروني: **die E-Mail / die Besprechung**",
+      "finding": "أربع مطابقات بمفاتيح صحيحة؛ Q07 مرتبط الآن بتمرين المفردة بدل اختبار قراءة مزعوم.",
+      "sourceIds": [],
+      "items": [
+        "Drucker للطباعة لا E-Mail.",
+        "Termin للموعد لا Fenster.",
+        "Kollegin زميلة العمل لا Fahrkarte.",
+        "E-Mail بريد/رسالة لا Besprechung."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T02",
+      "text": "1. Ich habe ______ Montag einen Termin.\n2. Die Besprechung beginnt ______ neun Uhr.\n3. Kannst du ______ Nachmittag telefonieren?\n4. Wir sprechen ______ halb elf.",
+      "finding": "أربع عبارات زمنية من البنك am/um؛ لا لبس بين اليوم والساعة.",
+      "sourceIds": [],
+      "items": [
+        "am Montag.",
+        "um neun Uhr.",
+        "am Nachmittag.",
+        "um halb elf."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T03",
+      "text": "1. Ich ______ dir helfen.\n2. Du ______ mir helfen.\n3. Wir ______ eine E-Mail schreiben.\n4. ______ Sie morgen kommen?",
+      "finding": "التصريف بحسب الفاعل؛ عُدل الأول إلى dir helfen لدعم Q04 مباشرةً.",
+      "sourceIds": [],
+      "items": [
+        "kann مع ich، و dir متلقي المساعدة.",
+        "kannst مع du، و mir متلقيها.",
+        "können مع wir.",
+        "Können مع Sie وبداية السؤال."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T04",
+      "text": "1. Ich kann heute eine E-Mail ______. (schreiben)\n2. Könnt ihr am Nachmittag ______? (kommen)\n3. Sie kann am Dienstag nicht ______. (arbeiten)\n4. Wir können eine E-Mail ______. (schicken)",
+      "finding": "أربعة مصادر؛ أضيف schicken ليُدرّب الإرسال قبل Q08.",
+      "sourceIds": [],
+      "items": [
+        "schreiben مصدر.",
+        "kommen بعد Könnt ihr.",
+        "arbeiten مع sie المفردة والنفي.",
+        "schicken بعد Wir können؛ تدريب مباشر جديد لـ Q08."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T05",
+      "text": "في البندين1 و2 اختر النمط الأساسي الذي تدربنا عليه: المصدر في النهاية، ولا كلمة بعده. في البندين3 و4 اختر الجملة الخبرية المستقلة ذات الفعل المصرف في الموقع الثاني. ليست المهمة حكمًا على كل ترتيب ممكن في سياق كلام مختلف:\n\n1. أ. Ich kann morgen kommen. ب. Ich kann kommen morgen.\n2. أ. Kannst du mir helfen? ب. Kannst du helfen mir?\n3. أ. Der Drucker funktioniert nicht. ب. Der Drucker nicht funktioniert.\n4. أ. Der Drucker ist kaputt. ب. Der Drucker sind kaputt.\n\n**تطبيق رسالة مستقل:**\n\nاكتب ثلاث جمل لزميل في موقف خيالي: الأولى تحدد جهازًا لا يعمل، والثانية تقول ما لا تستطيع فعله بـIch kann … nicht مع مصدر مناسب، والثالثة تقترح بديلًا تستطيع فعله بـIch kann أوWir können مع المصدر في النهاية. اختر الأفعال من الدرس؛ لا يلزم ادعاء إصلاح الجهاز أو ذكر موعد. هذه مهمة كتابة فقط، دون إرسال رسالة حقيقية أو قراءة جهرية.",
+      "finding": "قُيد اختيار الترتيب، وأضيف ist kaputt وتطبيق الرسالة الثلاثية P02؛ ليست قاعدة إنكار كل إلحاق.",
+      "sourceIds": [],
+      "items": [
+        "أ؛ المصدر kommen في النهاية حسب القيد.",
+        "أ؛ المصدر helfen في النهاية و mir قبله حسب القيد.",
+        "أ؛ funktioniert في موضعه، ثم nicht.",
+        "أ؛ ist للمفرد لا sind.",
+        "جملة مكتوبة تحدد جهازًا لا يعمل.",
+        "جملة أثر بـ Ich kann…nicht ومصدر مناسب.",
+        "جملة بديل ممكن بـ Ich kann أو Wir können؛ لا جهر ولا إصلاح مزعوم."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T06",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Samir kann heute drucken.\n2. Der Drucker ist kaputt.\n3. Samir und Nora können eine E-Mail schreiben.\n4. Am Nachmittag hat Samir eine Besprechung mit seiner Chefin.",
+      "finding": "استُبدل نفي الفندق غير المسند بتناقض صريح عن الطباعة؛ بقية البنود مسندة.",
+      "sourceIds": [],
+      "items": [
+        "خطأ؛ النص يقول Samir kann heute nicht drucken.",
+        "صحيح؛ الطابعة kaputt.",
+        "صحيح؛ يستطيعان كتابة رسالة.",
+        "صحيح؛ اجتماع مع المديرة بعد الظهر."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T07",
+      "text": "أكمل من النص:\n\n1. Die Person kann um ______ telefonieren.\n2. Der Termin ist mit dem ______.\n3. Der ______ funktioniert.\n4. Der Drucker ist ______.",
+      "finding": "أربعة فراغات ومفاتيح مرقمة، في أسطر مستقلة؛ ليس تشغيل الصوت شرطًا.",
+      "sourceIds": [],
+      "items": [
+        "fünf.",
+        "Chef بعد mit dem.",
+        "Computer.",
+        "kaputt."
+      ]
+    },
+    {
+      "id": "DL-A1-09-T08",
+      "text": "اكتب أربعة أدوار متناوبة بين زميلين لترتيب حديث قصير: الأول يسأل عن التفرغ في يوم محدد مع am؛ الثاني يقترح ساعة مع um؛ الثالث يقبل الموعد ويكرر اليوم والساعة ويذكر مشكلة جهاز؛ الرابع يقترح بديلًا ممكنًا بـWir können مع مصدر في النهاية. اقرأ الأدوار الأربعة بصوت مرتفع، ويمكنك أداء الدورين منفردًا؛ لا يلزم شريك أو تسجيل صوتك أو استعمال مواعيد حقيقية.",
+      "finding": "أربعة أدوار متناوبة تشمل قبول الموعد ومشكلة وبديل؛ المصدر والتقييم متطابقان.",
+      "sourceIds": [],
+      "items": [
+        "دور A: سؤال تفرغ في يوم مع am.",
+        "دور B: اقتراح ساعة مع um.",
+        "دور A: قبول مع تكرار اليوم والساعة وذكر مشكلة جهاز.",
+        "دور B: بديل بـ Wir können ومصدر؛ تقرأ الأدوار الأربعة كلها جهرًا، ولو منفردًا."
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Der Drucker funktioniert nicht.",
+      "finding": "جهاز محدد لا يعمل: الطابعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Ich kann heute nicht drucken.",
+      "finding": "أثر منطقي: لا أستطيع الطباعة اليوم؛ النفي والمصدر واضحان.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Ich kann eine E-Mail schicken.",
+      "finding": "بديل من مفردات الدرس: إرسال رسالة؛ لا ادعاء إصلاح الطابعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "A: Hast du am Dienstag Zeit?",
+      "finding": "A يسأل عن الثلاثاء بـ am و du بين زميلين.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "B: Ja. Ich kann um zehn Uhr.",
+      "finding": "B يقترح العاشرة؛ الجواب المختصر مفهوم من ترتيب الحديث.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "A: Gut, am Dienstag um zehn Uhr. Der Drucker ist kaputt.",
+      "finding": "A يقبل الثلاثاء والعاشرة ويذكر تعطل الطابعة؛ دور واحد قد يحوي جملتين.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "B: Wir können eine E-Mail schicken.",
+      "finding": "B يقترح إرسال رسالة بـ Wir können؛ بديل ممكن لا إصلاح تقني مثبت.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-09-Q01",
+      "text": "ما معنى der Drucker؟",
+      "finding": "Drucker الطابعة؛ الفهرس 1 وليس الحاسوب أو المشروع.",
+      "sourceIds": [],
+      "options": [
+        "الحاسوب",
+        "الطابعة",
+        "المشروع"
+      ],
+      "answer": "الطابعة",
+      "explanation": "der Drucker تعني «الطابعة».",
+      "sourceTaskIds": [
+        "DL-A1-09-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q02",
+      "text": "أكمل بمعنى «الموعد يوم الاثنين» لا مهلة حتى الاثنين: Der Termin ist ___ Montag.",
+      "finding": "am Montag ليوم الموعد؛ قُيد المعنى لا موعد نهائي حتى الاثنين.",
+      "sourceIds": [],
+      "options": [
+        "um",
+        "am",
+        "bis"
+      ],
+      "answer": "am",
+      "explanation": "مع يوم الأسبوع نستخدم am.",
+      "sourceTaskIds": [
+        "DL-A1-09-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q03",
+      "text": "أكمل بمعنى «أستطيع عند الخامسة» في حديث معروف عن مكالمة: Ich kann ___ fünf Uhr.",
+      "finding": "um fünf Uhr عند الخامسة؛ الفعل telefonieren مفهوم من السياق المضاف.",
+      "sourceIds": [],
+      "options": [
+        "am",
+        "um",
+        "von"
+      ],
+      "answer": "um",
+      "explanation": "um fünf Uhr عند الخامسة؛ الفعل المفهوم من السياق هنا telefonieren، فلا يلزم تكراره في الجواب المختصر.",
+      "sourceTaskIds": [
+        "DL-A1-09-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q04",
+      "text": "أكمل: Ich ___ dir helfen.",
+      "finding": "kann مع ich؛ الخيارات الأخرى لا تطابق الشخص.",
+      "sourceIds": [],
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answer": "kann",
+      "explanation": "تصريف können مع ich هو kann.",
+      "sourceTaskIds": [
+        "DL-A1-09-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q05",
+      "text": "أكمل: Wir können eine E-Mail ___.",
+      "finding": "schreiben المصدر؛ schreibt مصرف و schrieben ماضٍ جمع، لا المصدر المطلوب.",
+      "sourceIds": [],
+      "options": [
+        "schreiben",
+        "schreibt",
+        "schrieben"
+      ],
+      "answer": "schreiben",
+      "explanation": "في النمط البسيط المدروس يأتي المصدر الكامل schreiben بعد können في النهاية، لاschreibt أوschrieben.",
+      "sourceTaskIds": [
+        "DL-A1-09-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q06",
+      "text": "أي جملة خبرية مستقلة بالنمط الأساسي تصف الطابعة المعطلة؟",
+      "finding": "Der Drucker ist kaputt خبرية مستقلة بالنمط الأساسي؛sind لا يوافق المفرد والفعل النهائي ليس هذا النمط.",
+      "sourceIds": [],
+      "options": [
+        "Der Drucker ist kaputt.",
+        "Der Drucker sind kaputt.",
+        "Der Drucker kaputt ist."
+      ],
+      "answer": "Der Drucker ist kaputt.",
+      "explanation": "Drucker مفرد، لذا نستخدم ist، ويأتي الفعل المصرف ثانيًا.",
+      "sourceTaskIds": [
+        "DL-A1-09-T05"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q07",
+      "text": "ما معنى der Termin؟",
+      "finding": "Termin الموعد؛ وسم مفردات وربط T01 بدل ادعاء قراءة T06.",
+      "sourceIds": [],
+      "options": [
+        "الموعد",
+        "الطابعة",
+        "الزميلة"
+      ],
+      "answer": "الموعد",
+      "explanation": "der Termin تعني «الموعد».",
+      "sourceTaskIds": [
+        "DL-A1-09-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q08",
+      "text": "كيف تقول «نستطيع إرسال رسالة إلكترونية» وفق النمط الأساسي المدروس، مع المصدر في النهاية ولا كلمة بعده؟",
+      "finding": "الأولى تصريف وترتيب يطابقان القيد؛ الثانية wir kann خطأ مطابقة والثالثة لا تضع المصدر آخرًا كما طُلب.",
+      "sourceIds": [],
+      "options": [
+        "Wir können eine E-Mail schicken.",
+        "Wir kann eine E-Mail schicken.",
+        "Wir können schicken eine E-Mail."
+      ],
+      "answer": "Wir können eine E-Mail schicken.",
+      "explanation": "مع wir نقول können؛ schicken في النهاية يحقق النمط المطلوب. لا نختبر الإلحاق في الكلام هنا.",
+      "sourceTaskIds": [
+        "DL-A1-09-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q09",
+      "text": "أكمل السؤال: ___ du mir helfen?",
+      "finding": "Kannst مع du وبداية السؤال؛Kann للمفرد الأول/الثالث و Können للجمع/الاحترام.",
+      "sourceIds": [
+        "QUESTION"
+      ],
+      "options": [
+        "Kann",
+        "Kannst",
+        "Können"
+      ],
+      "answer": "Kannst",
+      "explanation": "مع du نستخدم kannst: Kannst du mir helfen?",
+      "sourceTaskIds": [
+        "DL-A1-09-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-09-Q10",
+      "text": "في حديث معروف عن ترتيب لقاء، أي جواب يذكر وقتًا متاحًا عند الخامسة؟",
+      "finding": "Ich kann um fünf Uhr إتاحة وقت، لا تأكيد الطرف الآخر. أضيف هذا التمييز للمصدر والتفسير.",
+      "sourceIds": [],
+      "options": [
+        "Ich kann um fünf Uhr.",
+        "Ich kann am fünf Uhr.",
+        "Ich bin fünf Uhr."
+      ],
+      "answer": "Ich kann um fünf Uhr.",
+      "explanation": "Ich kann um fünf Uhr يذكر وقتًا متاحًا بفعل مفهوم من السياق؛ um قبل الساعة. لا يثبت هذا الجواب وحده موافقة الطرف الآخر على الموعد.",
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-09-P01",
+      "text": "اكتب أربعة أدوار متناوبة بين زميلين لترتيب حديث قصير: الأول يسأل عن التفرغ في يوم محدد مع am؛ الثاني يقترح ساعة مع um؛ الثالث يقبل الموعد ويكرر اليوم والساعة ويذكر مشكلة جهاز؛ الرابع يقترح بديلًا ممكنًا بـWir können مع مصدر في النهاية. اقرأ الأدوار الأربعة بصوت مرتفع، ويمكنك أداء الدورين منفردًا؛ لا يلزم شريك أو تسجيل صوتك أو استعمال مواعيد حقيقية.",
+      "finding": "P01: أربعة أدوار مع الجهر،min100؛ يقبل النموذج دون ألقاب A/B. لا شريك أو تسجيل مفروض، والقبول صريح.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربعة أدوار: سؤال يوم، اقتراح ساعة، قبول مع تكرار اليوم والساعة ومشكلة جهاز، ثم بديل ممكن؛ تُقرأ كلها جهرًا.",
+        "meaningClarity": "اتفاق صريح على وقت واحد ومشكلة وبديل مفهوم؛ يمكن أداء الدورين منفردًا دون بيانات حقيقية.",
+        "targetSkill": "am لليوم وum للساعة، وWir können مع مصدر في النهاية؛ يجوز جواب مختصر بفعل مفهوم عند اقتراح الوقت."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-09-P02",
+      "text": "اكتب ثلاث جمل لزميل في موقف خيالي: الأولى تحدد جهازًا لا يعمل، والثانية تقول ما لا تستطيع فعله بـIch kann … nicht مع مصدر مناسب، والثالثة تقترح بديلًا تستطيع فعله بـIch kann أوWir können مع المصدر في النهاية. اختر الأفعال من الدرس؛ لا يلزم ادعاء إصلاح الجهاز أو ذكر موعد. هذه مهمة كتابة فقط، دون إرسال رسالة حقيقية أو قراءة جهرية.",
+      "finding": "P02: ثلاث جمل كتابة فقط،min80؛ رابط T05 بدل T08. المشكلة والأثر المنفي والبديل ظاهرة في المعايير.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل: جهاز لا يعمل، أثر بـIch kann…nicht، وبديل بـIch kann أوWir können.",
+        "meaningClarity": "المشكلة والأثر والبديل مترابطة منطقيًا، ولا يُدعى إصلاح الجهاز دون سند.",
+        "targetSkill": "وصف جهاز مناسب، وتصريفkönnen ونفي القدرة في الجملة الثانية ومصدر كامل في نهاية جملتي القدرة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 80,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-09-T05"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Der Drucker ist kaputt.** → الطابعة معطّلة.",
+      "finding": "وصف الطابعة بالمفرد ist، لا sind.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Kannst du mir helfen?** → هل تستطيع مساعدتي؟",
+      "finding": "طلب مساعدة مع mir؛ تغير المتكلم يغير الضمير في الجواب.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich kann um fünf Uhr.** → أستطيع في الساعة الخامسة (فعل مفهوم من السياق؛ لا تأكيد موعد وحده).",
+      "finding": "وقت متاح مع فعل مفهوم؛ أضيف التنبيه إلى أنه ليس تأكيد موعد وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Wir können eine E-Mail schreiben.** → نستطيع كتابة بريد إلكتروني.",
+      "finding": "كتابة رسالة مع wir können؛ ليست فعل إرسال schicken.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-09-AUD-READ-01",
+      "text": "قراءة: يوم عمل Samir",
+      "finding": "كلمات ومسارات وأصوات وحالة ready/offer محفوظة؛ 1 مقطع/مقاطع. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-09-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Samir arbeitet in einem Büro in Tunis. Am Dienstag hat er einen Termin mit seiner Kollegin Nora. Sie sprechen um elf Uhr über ein neues Projekt. Der Drucker ist kaputt. Samir kann heute nicht drucken. Nora sagt: „Ich kann dir helfen. Wir können eine E-Mail schreiben.“ Am Nachmittag hat Samir eine Besprechung mit seiner Chefin.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-09-AUD-DLG-01",
+      "text": "حوار: الطابعة والموعد في المكتب",
+      "finding": "كلمات ومسارات وأصوات وحالة ready/offer محفوظة؛ 6 مقطع/مقاطع. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Samir",
+          "text": "Der Drucker ist kaputt. Kannst du mir helfen, Nora?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Nora",
+          "text": "Ja, gern. Funktioniert der Computer?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Samir",
+          "text": "Ja, aber der Drucker funktioniert nicht.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Nora",
+          "text": "Wir können die E-Mail vom Computer schicken. Hast du heute einen Termin?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Samir",
+          "text": "Ja, um elf Uhr. Können wir vorher kurz sprechen?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-09-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Nora",
+          "text": "Ja. Ich kann um halb elf.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-09-AUD-LST-01",
+      "text": "استماع: تحديد موعد بعد العمل",
+      "finding": "كلمات ومسارات وأصوات وحالة ready/offer محفوظة؛ 1 مقطع/مقاطع. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-09-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Hallo Karim, kannst du heute nach der Arbeit telefonieren? Ich kann um fünf Uhr. Am Vormittag habe ich einen Termin mit meinem Chef. Mein Computer funktioniert, aber der Drucker ist kaputt. Bis später!",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 1822908,
+    "reviewGuards": 15,
+    "nodeSuites": 5,
+    "browserSuites": 5,
+    "axeStates": 73,
+    "axeSelectedViolations": 0,
+    "axeIncompleteRuleOccurrences": 45,
+    "axeIncompleteNodeOccurrences": 112,
+    "narrowStates": 126,
+    "chromium": "143.0.7499.0",
+    "formsKeyboardFirstAttempt": "PASS",
+    "preservationBaseline": "142ef4eb65629a06cb792ab1db3587160ab57eb6",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "11fb347758b4e9786cfc6b645091c4805e462e23",
+    "implementationPushVerified": true,
+    "reviewCommit": "See git log for CR15 review commit after this file is committed; post-push receipt follows.",
+    "merged": false,
+    "nextLesson": "A1.10",
+    "reviewedLessons": 14,
+    "remainingLessons": 39,
+    "gateSeparate": true
+  }
+}
