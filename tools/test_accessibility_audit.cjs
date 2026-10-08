@@ -158,6 +158,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A2.4-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A2.4-practical-form-fixture', width);
+  // CR23: written schedule and spoken condition/result pairs.
+  await page.evaluate(() => openLesson('a2-05-training-routine-wenn'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.5-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.5-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
