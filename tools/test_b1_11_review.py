@@ -19,14 +19,14 @@ assert [z['voiceId'] for x in assets for z in x['segments']]==['voice-02','voice
 if '--implementation-only' in sys.argv:
  print('PASS B1.11 implementation-only: b1-11-v2, 42 exercise subitems, 9 model parts, 5 pending assets/10 clips.');sys.exit(0)
 r=json.load(open('data/reviews/b1-11-review.json'));md=Path('data/reviews/b1-11-review.md').read_text();U=r['units']
-assert r['lessonId']=='b1-11-history-politics-passive-past' and r['assessmentVersion']=='b1-11-v2' and r['unitCount']==len(U)==103 and r['exerciseSubItemCount']==42 and r['modelPartCount']==9 and not r['acousticReviewed'] and not r['cefrCertification']
+assert r['lessonId']=='b1-11-history-politics-passive-past' and r['assessmentVersion']=='b1-11-v2' and r['unitCount']==len(U)==99 and r['exerciseSubItemCount']==42 and r['modelPartCount']==9 and not r['acousticReviewed'] and not r['cefrCertification']
 assert len(r['sources'])==10 and sum(x['access']=='full_fetched_page' for x in r['sources'])==10 and len(r['excludedSources'])==1
 assert sum(len(u.get('items',[])) for u in U if u['id'].startswith('DL-B1-11-T'))==42
 assert sum(len(u.get('items',[])) for u in U if u['id'].endswith('model-01'))==9
-assert [len(u['items']) for u in U if '-AUD-' in u['id']]==[17,4,6,8,5]
+assert [len(u['items']) for u in U if '-AUD-' in u['id']]==[18,4,6,9,5]
 assert sum(len(u.get('optionReview',[])) for u in U if u['id'].startswith('DL-B1-11-Q'))==30
 assert sum(len(u.get('criterionReview',[])) for u in U if u['id'].startswith('DL-B1-11-P'))==6
 for f,h in r['sourceHashes'].items():assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==h,f
 for x in assets:assert hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True).encode()).hexdigest()==r['audioSnapshotHashes'][x['assetId']]
 for u in U:assert f"### {u['id']}" in md and u['finding'] in md,u['id']
-print('PASS B1.11: 103 units/42 exercise subitems/9 model parts/30 options/6 criteria; five pending assets/10 clips. Not language/acoustic certification.')
+print('PASS B1.11: 99 units/42 exercise subitems/9 model parts/30 options/6 criteria; five pending assets/10 clips. Not language/acoustic certification.')
