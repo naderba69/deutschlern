@@ -188,6 +188,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A2.9-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A2.9-practical-form-fixture', width);
+  // CR28: spoken fictional activity and written causal transformations.
+  await page.evaluate(() => openLesson('a2-10-sports-health-feelings-weil'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.10-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.10-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
