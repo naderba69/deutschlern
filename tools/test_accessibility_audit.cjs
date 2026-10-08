@@ -266,6 +266,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.10-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.10-practical-form-fixture', width);
+  // CR41: written timeline and spoken museum presentation, pending audio.
+  await page.evaluate(() => openLesson('b1-11-history-politics-passive-past'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.11-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.11-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
