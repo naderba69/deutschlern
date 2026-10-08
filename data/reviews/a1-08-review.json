@@ -1199,9 +1199,29 @@
       "8b7ed1983b56f04468a4400438ee1b06d3b804fa",
       "31e63e55fb12a371029fa2fe58e922b137b07371"
     ],
-    "bothImplementationHeadsVerifiedAtPush": true,
-    "status": "implementation_pushed_review_artifacts_pending_push",
-    "merged": false,
-    "deploymentConfirmed": false
+    "reviewCommit": "25e8d48972c3e2cb7c0fe03bb116058cca9b503b",
+    "allThreeRemoteHeadsVerifiedAtPush": true,
+    "cleanBeforeReceipt": true,
+    "prNumber": 1,
+    "prState": "OPEN",
+    "prHeadAtCheck": "25e8d48972c3e2cb7c0fe03bb116058cca9b503b",
+    "mergedAt": null,
+    "vercelContextsAtCheck": {
+      "31e63e55fb12a371029fa2fe58e922b137b07371": "success",
+      "25e8d48972c3e2cb7c0fe03bb116058cca9b503b": "success"
+    },
+    "githubDeployment": {
+      "id": 6937612176,
+      "environment": "Preview",
+      "state": "success",
+      "sha": "25e8d48972c3e2cb7c0fe03bb116058cca9b503b",
+      "url": "https://deutschlern-2trr6x1vz-balinader-2671s-projects.vercel.app"
+    },
+    "previewDeploymentSignalConfirmed": true,
+    "remoteServedBundleVerified": false,
+    "remoteFetchFailure": "TLS/SSL EOF from urllib; not a successful HTTP bundle comparison",
+    "productionDeploymentConfirmed": false,
+    "actionsRunsAtCheck": [],
+    "receipt": "Separate documentation commit; final receipt hash is in git log."
   }
 }
