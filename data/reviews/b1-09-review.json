@@ -1,0 +1,2093 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-09-travel-transport-environment",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-09-v2",
+  "unitCount": 110,
+  "exerciseSubItemCount": 42,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "BEFORE",
+      "title": "Duden — bevor",
+      "url": "https://www.duden.de/rechtschreibung/bevor",
+      "scope": "في الاستعمال الزمني يحدث فعل الرئيسية قبل فعل التابعة؛ أمثلة الفاصلة والمصرف الأخير. لا يشمل هذا الشرح الاستعمالات الشرطية السالبة الأخرى.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "AFTER",
+      "title": "Duden — nachdem",
+      "url": "https://www.duden.de/rechtschreibung/nachdem",
+      "scope": "الحدث السابق المكتمل في التابعة، ومثال Plusquamperfekt قبل حدث ماضٍ. ليست مرادفًا لامتداد منذ زمن؛ الاستخدام السببي الإقليمي خارج الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PERF",
+      "title": "Lingolia — Perfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+      "scope": "الاكتمال والنتيجة، وإمكان اكتمال نسبي مستقبلي مع سياق واضح؛ sein/haben في الحاضر وPartizip II، وأفعال الحركة وتشكيل angekommen. لا يفرض Perfekt في كل جملة nachdem.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PQP",
+      "title": "Lingolia — Plusquamperfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/plusquamperfekt",
+      "scope": "حدث أسبق من مرجع ماضٍ، war/hatte مع Partizip II. مثال angekommen war قبل suchten، لا نفس زمن arrived في كل سياق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEP",
+      "title": "Lingolia — Trennbare und untrennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "بادئات ab/an/aus/ein/los، فصلها في رئيسية محددة وإدخال ge في Partizip؛ لا تعميم على كل um أو على التابعة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CLIMATE",
+      "title": "Duden — klimafreundlich",
+      "url": "https://www.duden.de/rechtschreibung/klimafreundlich",
+      "scope": "تعلق الصفة بأثر قليل أو غير ضار على المناخ وتطوره؛ ليس مرجعًا لمقارنة انبعاثات طرق السفر أو ضمانًا بيئيًا شاملاً.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PREP",
+      "title": "Lingolia — Temporale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal",
+      "scope": "während مع Genitiv اسم الفترة، مقابل الجملة التابعة؛ vor/nach مع Dativ في العبارات الاسمية لا مع جملة كاملة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ADV",
+      "title": "Lingolia — Adverbialsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/adverbialsaetze",
+      "scope": "تصنيف الظروف الزمنية وbevor/nachdem ومثال Bevor wir sie besuchen, müssen wir ...؛ الصفحة وحدها لا تشرح während، لذا استكمل المرجع التالي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CONNECT",
+      "title": "Duden — Anschluss",
+      "url": "https://www.duden.de/rechtschreibung/Anschluss",
+      "scope": "المذكر والجمع Anschlüsse، ومعنى وسيلة/رحلة مواصلة في السفر؛ ليست كل معاني الربط الشبكي أو الاجتماعي مرادفة لهذا السياق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "DELAY",
+      "title": "Duden — Verspätung",
+      "url": "https://www.duden.de/rechtschreibung/Verspaetung",
+      "scope": "المؤنث والجمع Verspätungen، والتأخر عن الوقت المتوقع؛ التأخر ليس إلغاءً في سياق الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CLAUSE",
+      "title": "Lingolia — Konjunktionalsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/konjunktionalsaetze",
+      "scope": "المصرف آخر التابعة، والتابعة المتقدمة وحدة أولى يليها مصرف الرئيسية. أمثلة أثناء الزمنية ومقابلتها بالمعنى التضادي؛ مثال nachdem ... ein Zimmer hat يبين أن رفض المضارع على إطلاقه غير صحيح.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة، استماع اختياري، تخطيط رحلة، قواعد، كتابة وجهر",
+      "finding": "40–45 دقيقة تقدير قابل للتقسيم، لا قياس تعلّم؛ القراءة والجهر متميزان والاستماع المسجل غير لازم لنجاح التقييم.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أصف ترتيب أحداث رحلة باستخدام **bevor** و**nachdem** و**während**، وأتحدث عن خيارات النقل.",
+      "finding": "الهدف وصف تسلسل وبدائل نقل؛ تدربه روابط زمنية ونصوص ومهمتان خياليتان، لا إثبات كفاية B1 مستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-03",
+      "text": "تنبيه مفردات: klimafreundlich يتعلق بالأثر على المناخ، لا شهادة شاملة لكل جوانب البيئة. الشرطة في الجدول تقيد ما ندرسه هنا ولا تنفي كل جمع في كل سياق. وUmstieg انتقال بين مركبتين، وقد يكون من قطار إلى قطار؛ لا يشترط تغيير نوع الوسيلة. هذه توضيحات مكتوبة لا تعديل للتسجيل.",
+      "finding": "ضُيق klimafreundlich إلى المناخ ووُضح Umstieg بين مركبتين ولو من النوع نفسه؛ الشرطة تقيد الجمع الذي ندرسه، لا قاعدة معجمية عامة.",
+      "sourceIds": [
+        "CLIMATE"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "حين تستعمل الروابط الثلاثة هنا لربط جملة زمنية تابعة، يأتي المصرف في نهايتها وتفصلها فاصلة عن الرئيسية. هذا لا يشمل أثناء + اسم: während der Zugfahrt ليست جملة تابعة، كما يوضح المثال أدناه.",
+      "finding": "نهاية المصرف والفاصلة تخصان جملة زمنية تابعة؛ أثناء الرحلة بGenitiv ليست جملة ولا تعطي فاصلة وحدها.",
+      "sourceIds": [
+        "CLAUSE",
+        "PREP"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "بعد **nachdem** نذكر الحدث الذي اكتمل أولًا. في أمثلة الحاضر أو المستقبل يمكن أن نستخدم Perfekt في الجملة التابعة: **Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof.** وفي سرد الماضي قد يظهر Plusquamperfekt للحدث الأسبق: **Nachdem der Zug angekommen war, suchten wir den Anschluss.**",
+      "finding": "النمط المستهدف اكتمال سابق بالنسبة للحاضر/الخطة مع Perfekt، وبالنسبة للماضي مع Plusquamperfekt؛ الصياغة إمكان مقيد لا حظر لكل حاضر.",
+      "sourceIds": [
+        "AFTER",
+        "PERF",
+        "PQP"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "دليل التطبيق: P01 كتابة فقط بحد 130 حرفًا؛ P02 كتابة وجهر بحد 145 حرفًا؛ لكل منهما الإقرارات الثلاثة. لا تصحيح آلي لعدد الجمل أو الروابط.",
+      "finding": "حُسم تعارض الشفهي الاختياري سابقًا مع حقول التطبيق: P01 نص فقط وP02 نص ثم جهر؛ العتبتان والإقرارات لا تفحص عدد الجمل أو جودتها آليًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-07",
+      "text": "النموذجان مكتوبان خياليان وغير مسجلين. Anschlussbus حافلة مواصلة؛ لا يُطلب استخدام اللفظ نفسه إذا بقي الاتصال واضحًا. قراءة الخريطة تقع أثناء انتظار الحافلة بعد الوصول في P01؛ وفي P02 البدائل افتراض تدريب لا ضمان خدمة متاحة.",
+      "finding": "النموذجان مكتوبان لا تسجيلان؛ في P01 الانتظار بعد الوصول، وفي P02 البديلان فرضية معلنة لا جدول سفر استنتجناه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Fahrplan | die Fahrpläne | جدول المواعيد |",
+      "finding": "der Fahrplan مذكر، Fahrpläne جمع بأوملاوت؛ جدول مواعيد لا تذكرة. مراجعة لغوية داخلية، لا مدخل معجمي مستقل مجلوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Abfahrt | die Abfahrten | المغادرة |",
+      "finding": "die Abfahrt مؤنث، Abfahrten؛ حدث المغادرة ويمكن أن يعنون وقتها في جدول، لا نساويه دائمًا بساعة رقمية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Ankunft | die Ankünfte | الوصول |",
+      "finding": "die Ankunft مؤنث، Ankünfte بأوملاوت؛ الوصول لا وقت المغادرة ولا إلغاء الرحلة. صيغ T01 أوضحت الحدث.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Anschluss | die Anschlüsse | رحلة مواصلة / اتصال برحلة تالية |",
+      "finding": "Anschluss مذكر وجمعه Anschlüsse؛ تغيرت الترجمة إلى رحلة مواصلة لتجنب معنى خط التوصيل المادي. ليس نفس عملية Umstieg.",
+      "sourceIds": [
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Umstieg | die Umstiege | انتقال إلى مركبة أخرى |",
+      "finding": "Umstieg مذكر وجمعه Umstiege؛ الانتقال بين مركبتين وقد تكونان قطارين. صححت العربية دون تغيير الملف المنطوق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Verspätung | die Verspätungen | التأخير |",
+      "finding": "Verspätung مؤنث، Verspätungen؛ التأخير لا مجرد الوصول ولا الإلغاء. أضيف T01.5 لدعم Q02 مباشرة.",
+      "sourceIds": [
+        "DELAY"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Strecke | die Strecken | المسار / المسافة |",
+      "finding": "Strecke مؤنث، Strecken؛ مسار/مسافة بحسب السياق، ولا تعني القصيرة وحدها أن كل الرحلة قصيرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| das Verkehrsmittel | die Verkehrsmittel | وسيلة النقل |",
+      "finding": "Verkehrsmittel محايد وجمعه دون تغيير الاسم؛ الأداة die تميز جمع الجدول عن das للمفرد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Nahverkehr | — | النقل المحلي |",
+      "finding": "Nahverkehr مذكر ونقل محلي في هذا السياق؛ لا يحدد وحده حافلة أو ترامًا ولا كل جزئية طريق المتحف.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Fahrkarte | die Fahrkarten | بطاقة السفر |",
+      "finding": "Fahrkarte مؤنث وجمعه Fahrkarten؛ بطاقة/تذكرة سفر. لا يتضمن اللفظ ضمان إدراك الاتصال.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| die Umwelt | — | البيئة |",
+      "finding": "Umwelt مؤنث ومعناه البيئة؛ الشرطة نطاق الجدول وليست نفيًا لكل استعمال جمع، ولا نسوي البيئة بالمناخ دائمًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| die Emission | die Emissionen | انبعاث |",
+      "finding": "Emission مؤنث، Emissionen؛ انبعاث، لكن النص لا يعطي مقادير ولا حكمًا حسابيًا على وسائل النقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| umsteigen | steigt um | يبدّل المركبة أو وسيلة النقل |",
+      "finding": "umsteigen في المثال steigt um؛ فعل منفصل هنا، وفي التابعة مع modal يظهر umsteigen قبل muss. لا تعميم على كل أفعال um.",
+      "sourceIds": [
+        "SEP",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| ausfallen | fällt aus | يُلغى / يتوقف عن العمل |",
+      "finding": "ausfallen في المثال fällt aus، لا fällt ein؛ الإلغاء/عدم التشغيل في السفر يختلف عن Verspätung. الدلالة الأخرى خارج التركيز.",
+      "sourceIds": [
+        "SEP"
+      ]
+    },
+    {
+      "id": "vocab-15",
+      "text": "| sich verspäten | verspätet sich | يتأخر |",
+      "finding": "sich verspäten انعكاسي؛ verspätet sich مع شخص ثالث. التأخر لا يتحول تلقائيًا إلى إلغاء.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-16",
+      "text": "| klimafreundlich / pünktlich | — | مراعٍ للمناخ / ملتزم بالوقت |",
+      "finding": "الصف يجمع صفتين لا مترادفتين: klimafreundlich مراعٍ للمناخ، pünktlich ملتزم بالموعد. التسجيل ينطقهما وحدتين مستقلتين.",
+      "sourceIds": [
+        "CLIMATE"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "Bevor wir losfahren, prüfen wir den Fahrplan.",
+      "finding": "فحص الجدول قبل الانطلاق؛ losfahren آخر التابعة وprüfen بعد الفاصلة ثم wir، مع حاضر جمع.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Während ich auf den Anschluss warte, lese ich die Nachrichten.",
+      "finding": "القراءة متزامنة مع الانتظار؛ auf den Anschluss مفعول ينتظر اتصال السفر، warte آخر التابعة وlese أول الرئيسية بعدها.",
+      "sourceIds": [
+        "CLAUSE",
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Nachdem wir angekommen sind, nehmen wir den Bus zur Unterkunft.",
+      "finding": "الوصول مكتمل نسبيًا قبل ركوب الحافلة؛ angekommen sind مع wir ثم nehmen، لا ادعاء سفر حدث فعلاً.",
+      "sourceIds": [
+        "AFTER",
+        "PERF",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof.",
+      "finding": "شراء التذاكر بـhaben قبل الذهاب إلى المحطة في الخطة؛ الإكمال النسبي سبب اختيار Perfekt في تمريننا، لا قانون لكل nachdem.",
+      "sourceIds": [
+        "AFTER",
+        "PERF",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Während der Zugfahrt lese ich einen Reiseführer.",
+      "finding": "أثناء الرحلة عبارة اسمية بGenitiv مؤنث der Zugfahrt؛ lese ثانية وحدة ولا فاصلة. أضيف هذا النص المسجل إلى المصدر لتوضيح الفرق.",
+      "sourceIds": [
+        "PREP",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "grammar-06",
+      "text": "Nachdem der Zug angekommen war, suchten wir den Anschluss.",
+      "finding": "angekommen war Plusquamperfekt يسبق suchten الماضي؛ war مع حركة الوصول وفاعل Zug مفرد. أصبح له تدريب T07.4 مكتوب.",
+      "sourceIds": [
+        "PQP",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **معنى الترتيب:** مع bevor يحدث فعل الرئيسية قبل فعل التابعة: فحص الجدول ثم الانطلاق، لا العكس. مع nachdem يحدث فعل التابعة أولًا: الوصول ثم ركوب الحافلة. während الزمنية تصف تزامنًا أو تداخلًا، ولا تشترط بدء الفعلين ونهايتهما في اللحظة نفسها. قد تحمل während معنى المقابلة في سياق آخر، لكنه ليس المطلوب هنا.",
+      "finding": "bevor يفحص ثم ينطلق، nachdem يصل ثم يركب، أثناء يصف تداخلًا؛ لا نساوي تزامن فترتين بتطابق بدايتهما ونهايتهما.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **نموذج الزمن المطلوب:** في خطط هذا الدرس نستخدم Präsens في الرئيسية وPerfekt مع nachdem لإبراز الاكتمال النسبي، لا لأن كل ظهور لـnachdem يفرض Perfekt. وفي المثال الماضي: angekommen war يسبق suchten. Q06 وT04.1 وT07.2 تطلب النمط المحدد صراحة؛ لا تُعد كل صيغة حاضر بعد nachdem مستحيلة في جميع السياقات.",
+      "finding": "صُرح بنمط التمرين وتعدد الاستعمال؛ Q06 لا ينفي صحة كل تركيب nachdem مع Präsens خارج شرط السؤال.",
+      "sourceIds": [
+        "PERF",
+        "PQP",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **während مع اسم:** **Während der Zugfahrt lese ich einen Reiseführer.** هذا مثال موجود في التسجيل؛ أثناء الرحلة عبارة بحرف جر مع Genitiv، وليست تابعة بمصرف في آخرها. العبارة كلها أول وحدة، ثم lese ثم ich، ولا فاصلة لمجرد تقديمها. قارنها بـ**Während ich auf den Anschluss warte, lese ich die Nachrichten.**",
+      "finding": "بينت عبارة Zugfahrt الاسمية مقابل ich ... warte التابعة، وسلامة V2 دون فاصلة زائدة للاسمية.",
+      "sourceIds": [
+        "PREP",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **المصرف والمساعد:** angekommen وeingestiegen مع sein في هذه الأمثلة، وgekauft وgebucht مع haben. نكتب angekommen ist / eingestiegen bin / gekauft haben آخر التابعة؛ وإذا تقدمت التابعة فهي وحدة أولى ثم مصرف الرئيسية ثم فاعلها. sie في T03.3 وQ05 تعود إلى Lena المفردة؛ فيقرأ الطالب السياق لا الضمير منفردًا.",
+      "finding": "صيغ haben/sein مقيدة بأمثلتها، وsie=Lena تمنع تخمين الجمع؛ ترتيب Hauptsatz يراعي تقديم التابعة كوحدة.",
+      "sourceIds": [
+        "PERF",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **البادئات والضمائر:** fährt ab في الرئيسية تصبح abfährt في التابعة، وsteigen ein تصبح einsteigen مع wir. **sehe ich mir den Fahrplan an** فيها mir مع المفعول den Fahrplan؛ عند تلخيص die Person تصبح **Sie sieht sich den Fahrplan an.** وفي **ob ich ... umsteigen muss** المصرف الأخير muss، لا المصدر umsteigen. لا تعمم فصل كل بادئة في كل نوع جملة.",
+      "finding": "abfährt لا fährt ... ab داخل التابعة، mir في صيغة ich وsich في die Person؛ المصدر umsteigen ليس المصرف الذي ينهي ob.",
+      "sourceIds": [
+        "SEP",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **الرحلة ليست التأخير:** Anschluss رحلة مواصلة، وUmstieg عملية الانتقال؛ Verspätung تأخر، وausfallen إلغاء/عدم تشغيل الرحلة، لا مجرد تأخرها. Ankunft الوصول، لا بالضرورة ساعة وصول رقمية. لا يعني فحص وجود اتصال أن الشخص أدركه أو أن الحجز ضامن لكل اتصال.",
+      "finding": "فُصل الاتصال وعملية الانتقال والتأخر والإلغاء، والوصول لا رقم توقيت. فحص الاتصال لا يثبت وجوده أو إدراكه.",
+      "sourceIds": [
+        "CONNECT",
+        "DELAY"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **افصل النصوص:** Mina وKarim يخططان السبت ويقترحان نشاطًا أثناء الانتظار؛ النص لا يؤكد تنفيذ الاقتراح. Zeynep تقرأ دليل سفر أثناء القطار، وأصدقاؤها يستمعون إلى بودكاست. راوي الاستماع يفحص الحاجة إلى تبديل ويقرأ الأخبار بعد الصعود؛ لا نعرف اسمه أو جنسه أو كيف وصل إلى المحطة، ولا نستنتجها من الصوت.",
+      "finding": "الحوار خطة لا تنفيذ، والقراءة تفصل Zeynep وأصدقاءها؛ راوي الاستماع بلا جنس أو اسم أو طريق إلىالمحطة مذكور.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "- **النفي والشرط:** müssen nicht في الحوار نفي لزوم السيارة لكل طريق، لا حظرها. فحص ob يحتاج جوابًا غير معطى هنا؛ ليس خبرًا بأن التبديل لازم. Wenn die Strecke kurz ist يقيد المشي بقصر المسافة، ولا يقول إن كل الرحلة قصيرة.",
+      "finding": "nicht müssen نفي إلزام لا حظر؛ ob سؤال غير مجاب وWenn شرط للمشي، فهذه حدود صريحة للاستنتاج.",
+      "sourceIds": [
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **مقصد المناخ لا نتيجة مقاسة:** القراءة تصف رغبة المجموعة وخياراتها، ولا تقدم حساب انبعاثات أو دليلًا أن كل قطار أقل أثرًا في كل الظروف. klimafreundlich أضيق من ادعاء بيئي شامل؛ لا نضيف أرقامًا أو حكمًا علميًا أو وسيلة مناسبة لكل شخص إلى النص.",
+      "finding": "الصفة تخص المناخ والرغبة، لا بيانات مقارنة علمية أو شمول كل الأثر البيئي؛ لا حسابات مختلقة.",
+      "sourceIds": [
+        "CLIMATE"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **دليل مستقل عن الصوت:** P01 خمس جمل كتابة فقط؛ P02 ست جمل كتابة ثم جهر بنفسك، بلا شريك أو تسجيل. المثال الثاني يستلهم الحافلة الملغاة لكن بدائله معطيات خيالية جديدة، لا استنتاج جداول حقيقية. حد الحروف والإقرارات لا يصححان اللغة أو النطق أو التسلسل آليًا؛ التسجيلات الحالية تبقى للمراجعة دون اعتماد جديد.",
+      "finding": "P01 كتابة فقط وP02 كتابة وجهر؛ البدائل معطيات مهمة جديدة، لا استنتاج من الصوت. لم تتحول التسجيلات المعلقة إلى ready.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wie kommen wir am Samstag nach Uferstadt?",
+      "finding": "سؤال Mina عن كيفية الوصول السبت إلى Uferstadt؛ لا ساعة أو تذكرة مؤكدة، coming صيغة جمع تخطيطية.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Lass uns den Zug nehmen. Bevor wir buchen, sollten wir den Fahrplan vergleichen.",
+      "finding": "اقتراح Karim القطار وفحص الجدول قبل الحجز؛ Lass uns + مصدر ثم sollten اقتراح، لا حجز مكتمل.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Gute Idee. Und was machen wir, während wir auf den Anschluss warten?",
+      "finding": "سؤال Mina عن نشاط أثناء انتظار المواصلة؛ machen في سؤال رئيسي ثم warten آخر während. ما زال اقتراحًا.",
+      "sourceIds": [
+        "CLAUSE",
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Wir können einen Stadtplan ansehen oder etwas lesen.",
+      "finding": "يمكن النظر في خريطة أو القراءة؛ oder بديلان لا فعلين حدثا بالضرورة. können آخر المعنى الإمكاني لا إثبات التنفيذ.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Nachdem wir angekommen sind, fahren wir mit dem Nahverkehr zum Museum.",
+      "finding": "Perfekt مع nachdem لإنجاز الوصول السابق في الخطة ثم Nahverkehr إلى المتحف؛ لا نوع وسيلة محلية معين.",
+      "sourceIds": [
+        "AFTER",
+        "PERF"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Genau. Dann müssen wir nicht für jeden Weg ein Auto nehmen.",
+      "finding": "nicht für jeden Weg ein Auto nehmen ينفي الحاجة للسيارة لكل طريق، لا منع السيارة أو إثبات حساب مناخي.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Zeynep und ihre Freunde planen einen Ausflug in die fiktive Stadt Uferstadt.",
+      "finding": "مجموعة Zeynep وأصدقائها وخطة رحلة إلى مدينة خيالية صراحة؛ لا تحقق من وجهة جغرافية أو سفر منجز.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Bevor sie losfahren, vergleichen sie die Fahrpläne von Zug und Bus.",
+      "finding": "قبل الانطلاق يقارنون جداول القطار والحافلة، لا الأسعار أو عدد السيارات؛ فعل التابعة losfahren آخرها.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Sie entscheiden sich für den Zug und kaufen die Fahrkarten online.",
+      "finding": "يختارون القطار ويشترون التذاكر إلكترونيًا في سرد الخطة؛ sich entscheiden für + Akkusativ وkaufen لا يضمنان الاتصال.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Nachdem sie die Tickets gebucht haben, prüfen sie, ob es am Ziel einen Anschluss gibt.",
+      "finding": "بعد حجز التذاكر يفحصون هل توجد مواصلة؛ gebucht haben وob ... gibt صحيحان. الفحص ليس جوابًا بالإيجاب.",
+      "sourceIds": [
+        "AFTER",
+        "PERF",
+        "CLAUSE",
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Während der Zugfahrt liest Zeynep einen Reiseführer, und ihre Freunde hören einen Podcast.",
+      "finding": "Zeynep تقرأ Reiseführer والأصدقاء يسمعون Podcast؛ أثناء + Genitiv هنا وليس الرابط مع فعل أخير، وتبادل النشاطين خطأ فهم.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "In Uferstadt gehen sie vom Bahnhof zu Fuß zum Markt und nehmen später den Nahverkehr zum Museum.",
+      "finding": "من المحطة إلى السوق مشيًا، ثم نقل محلي إلى المتحف؛ لا مساواة بين السوق والمتحف أو كل الطريق مشيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Die Gruppe möchte möglichst klimafreundlich unterwegs sein.",
+      "finding": "المجموعة ترغب möglichst klimafreundlich؛ هذه رغبة مقيدة لا شهادة بيئية أو قياس الانبعاثات.",
+      "sourceIds": [
+        "CLIMATE"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "Deshalb legt sie die längere Strecke mit dem Zug zurück und geht kurze Wege zu Fuß.",
+      "finding": "Deshalb يقدم سبب الاختيار المذكور: المسافة الأطول بالقطار والقصيرة مشيًا. legt ... zurück منفصل، ولا يثبت تفوقًا عامًا لكل قطار.",
+      "sourceIds": [
+        "CLIMATE",
+        "SEP"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wohin möchten Zeynep und ihre Freunde fahren?",
+      "finding": "الإجابة: In die fiktive Stadt Uferstadt. — الوجهة خيالية صراحة؛ لا نفترض إقامة أو تاريخًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was vergleichen sie, bevor sie losfahren?",
+      "finding": "الإجابة: Die Fahrpläne von Zug und Bus. — التوقيت قبل الانطلاق، دون قصر المقارنة على السعر.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wie kaufen sie die Fahrkarten?",
+      "finding": "الإجابة: Online. — طريقة الشراء منصوص عليها، لا متجر أو مبلغ مخترع.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was prüft die Gruppe, nachdem sie die Tickets gebucht hat?",
+      "finding": "الإجابة: Ob es am Ziel einen Anschluss gibt. — جواب سؤال الفحص لا إثبات وجود اتصال؛ Gruppe مفردة يفسر gebucht hat في السؤال.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was macht Zeynep während der Zugfahrt?",
+      "finding": "الإجابة: Sie liest einen Reiseführer. — هي لا تسمع البودكاست؛ ذلك نشاط الأصدقاء.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-06",
+      "text": "Wie kommt die Gruppe vom Bahnhof zum Markt?",
+      "finding": "الإجابة: Zu Fuß. — السؤال يقيد الطريق من المحطة للسوق، لا كل الرحلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-07",
+      "text": "Wie möchte die Gruppe möglichst klimafreundlich reisen?",
+      "finding": "الإجابة: Sie möchte die längere Strecke mit dem Zug fahren und kurze Wege zu Fuß gehen. — الجواب يشرح نية النص واختياراته، لا توصية مناخية عامة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Bevor ich aus dem Haus gehe, sehe ich mir den Fahrplan an.",
+      "finding": "فحص الجدول قبل مغادرة البيت: ich sehe mir ... an؛ الجملة لا تعطي اسم المتكلم أو جنسه.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE",
+        "SEP"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Heute fällt mein erster Bus aus.",
+      "finding": "الحافلة الأولى اليوم fällt aus، أي ملغاة/لا تعمل؛ ليست تأخرًا أو وصولًا مبكرًا.",
+      "sourceIds": [
+        "SEP"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Während ich auf die nächste Verbindung warte, prüfe ich, ob ich in der Stadt umsteigen muss.",
+      "finding": "أثناء انتظار الوصلة التالية يفحص هل يلزم التبديل في المدينة؛ muss نهاية التابعة المتداخلة. جواب الحاجة غير معطى.",
+      "sourceIds": [
+        "CLAUSE",
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten.",
+      "finding": "بعد الصعود للقطار يقرأ الأخبار؛ eingestiegen bin يعبر اكتمال الصعود، لا أنه بدأ المشي إلى الإقامة.",
+      "sourceIds": [
+        "AFTER",
+        "PERF",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+      "finding": "المشي مشروط بالمسافة القصيرة؛ Wenn لا يعني كل الطريق قصير أو أن المتكلم مشى من البيت إلى المحطة.",
+      "sourceIds": [
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was macht die Person, bevor sie das Haus verlässt?",
+      "finding": "الإجابة: Sie sieht sich den Fahrplan an. — Sie تحيل إلى die Person؛ يتغير mir إلى sich مع الفاعل ولا نستنتج جنس الراوي.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was ist mit dem ersten Bus passiert?",
+      "finding": "الإجابة: Er fällt aus. — Er يعود إلى der Bus؛ ليس أنه تأخر فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was prüft sie, während sie wartet?",
+      "finding": "الإجابة: Ob sie in der Stadt umsteigen muss. — فحص الحاجة إلى تبديل، لا معرفة أن التبديل واجب.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was macht sie, nachdem sie in den Zug eingestiegen ist?",
+      "finding": "الإجابة: Sie liest die Nachrichten. — الإخبار بعد الصعود لا قبل ركوب القطار.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Wie legt sie eine kurze Strecke zurück?",
+      "finding": "الإجابة: Sie geht zu Fuß. — النطاق مسافة قصيرة كما في الشرط؛ ليس كامل الرحلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B1-09-T01",
+      "text": "1. الانتقال من قطار أو حافلة إلى وسيلة أخرى: **der Umstieg / die Ankunft**\n2. الوصول، لا المغادرة: **die Ankunft / die Emission**\n3. وسيلة النقل التي تربطك برحلة تالية: **der Anschluss / die Verspätung**\n4. إلغاء رحلة أو توقفها: **ausfallen / umsteigen**\n5. تأخر عن الموعد المتوقع: **die Verspätung / die Ankunft**",
+      "finding": "حُدد معنى وصول الحدث وأضيف التأخير دعمًا مباشرًا لـQ02؛ الربط والإلغاء والتبديل معانٍ منفصلة.",
+      "sourceIds": [
+        "CONNECT",
+        "DELAY"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "الانتقال من قطار أو حافلة إلى وسيلة أخرى: **der Umstieg / die Ankunft**",
+          "answer": "der Umstieg",
+          "finding": "Umstieg عملية انتقال لا وصول، ويجوز بين مركبتين من النوع نفسه."
+        },
+        {
+          "index": 2,
+          "text": "الوصول، لا المغادرة: **die Ankunft / die Emission**",
+          "answer": "die Ankunft",
+          "finding": "Ankunft وصول؛ Emission انبعاث ولا علاقة له بالوصول."
+        },
+        {
+          "index": 3,
+          "text": "وسيلة النقل التي تربطك برحلة تالية: **der Anschluss / die Verspätung**",
+          "answer": "der Anschluss",
+          "finding": "Anschluss رحلة مواصلة؛ Verspätung تأخر لا وصلة."
+        },
+        {
+          "index": 4,
+          "text": "إلغاء رحلة أو توقفها: **ausfallen / umsteigen**",
+          "answer": "ausfallen",
+          "finding": "ausfallen إلغاء/عدم تشغيل؛ umsteigen انتقال."
+        },
+        {
+          "index": 5,
+          "text": "تأخر عن الموعد المتوقع: **die Verspätung / die Ankunft**",
+          "answer": "die Verspätung",
+          "finding": "Verspätung تأخر؛ Ankunft اسم الوصول دون حكم على الموعد."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T02",
+      "text": "1. ______ wir losfahren, prüfen wir die Verbindung. (الفحص أولًا ثم الانطلاق)\n2. ______ Lena auf den Bus wartet, liest sie einen Artikel. (القراءة أثناء الانتظار)\n3. ______ sie am Ziel angekommen ist, sucht sie die Haltestelle. (الوصول أولًا ثم البحث؛ sie تعود إلى Lena)\n4. Wir kaufen die Fahrkarten, ______ wir zum Bahnhof fahren. (شراء التذاكر أولًا ثم الذهاب)",
+      "finding": "أضيف لكل فراغ ترتيب أو تزامن؛ لم يعد اختيار الرابط مجرد تخمين من جملة يمكن تأويلها بأكثر من زمن.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "CLAUSE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "______ wir losfahren, prüfen wir die Verbindung. (الفحص أولًا ثم الانطلاق)",
+          "answer": "Bevor",
+          "finding": "الفحص سابق للانطلاق بنص القيد، لذا Bevor لا Nachdem."
+        },
+        {
+          "index": 2,
+          "text": "______ Lena auf den Bus wartet, liest sie einen Artikel. (القراءة أثناء الانتظار)",
+          "answer": "Während",
+          "finding": "القراءة أثناء الانتظار، لذا Während لا قبل أو بعده."
+        },
+        {
+          "index": 3,
+          "text": "______ sie am Ziel angekommen ist, sucht sie die Haltestelle. (الوصول أولًا ثم البحث؛ sie تعود إلى Lena)",
+          "answer": "Nachdem",
+          "finding": "الوصول مكتمل قبل البحث وفاعل sie هو Lena؛ Nachdem تطابق القصد."
+        },
+        {
+          "index": 4,
+          "text": "Wir kaufen die Fahrkarten, ______ wir zum Bahnhof fahren. (شراء التذاكر أولًا ثم الذهاب)",
+          "answer": "bevor",
+          "finding": "الشراء أولًا ثم الذهاب كما في القيد؛ bevor تسبق الجملة الثانوية المتأخرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T03",
+      "text": "الموضع محدد أصلًا. اكتب مصرف الحاضر الموافق للفاعل؛ في 3 هو مساعد Perfekt، وsie تعود إلى Lena وحدها.\n\n1. Bevor wir in den Zug ______, prüfen wir die Fahrkarten. (einsteigen)\n2. Während Lena auf den Bus ______, liest sie. (warten)\n3. Nachdem sie am Ziel angekommen ______, nimmt sie den Nahverkehr. (sein)\n4. Bevor der Zug ______, suchen wir unser Gleis. (abfahren)",
+      "finding": "التكليف تصريف لا العثور على موضع معطى؛ الحاضر معلوم وLena مفردة، مع فعل منفصل موصول في التابعة.",
+      "sourceIds": [
+        "PERF",
+        "SEP",
+        "CLAUSE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Bevor wir in den Zug ______, prüfen wir die Fahrkarten. (einsteigen)",
+          "answer": "einsteigen",
+          "finding": "wir جمع يقتضي einsteigen، موصولًا آخر التابعة لا steigen ... ein."
+        },
+        {
+          "index": 2,
+          "text": "Während Lena auf den Bus ______, liest sie. (warten)",
+          "answer": "wartet",
+          "finding": "Lena ثالث مفرد فتكون wartet، لا warte ولا warten."
+        },
+        {
+          "index": 3,
+          "text": "Nachdem sie am Ziel angekommen ______, nimmt sie den Nahverkehr. (sein)",
+          "answer": "ist",
+          "finding": "Lena مفردة؛ angekommen مع sein في هذا الاستعمال، لذلك ist."
+        },
+        {
+          "index": 4,
+          "text": "Bevor der Zug ______, suchen wir unser Gleis. (abfahren)",
+          "answer": "abfährt",
+          "finding": "Zug مفرد؛ fährt مع أوملاوت وبادئة متصلة في abfährt."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T04",
+      "text": "ابدأ بالتابعة وافصلها بفاصلة. في 1 صغ الشراء في Perfekt والرئيسية في Präsens لإبراز اكتمال الشراء؛ في 2 و3 استعمل الحاضر مع حفظ التزامن أو الترتيب المعطى:\n\n1. **Wir kaufen die Fahrkarten. Danach fahren wir zum Bahnhof.** → **nachdem**\n2. **Ich warte auf den Bus. Dabei prüfe ich den Fahrplan.** → **während**\n3. **Wir fahren los. Zuvor packen wir die Taschen.** → **bevor**",
+      "finding": "الروابط معلومة؛ حُدد Perfekt في1 والرئيسية بالحاضر بدل اعتبار الحاضر بعد nachdem خطأ مطلقًا.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "CLAUSE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Wir kaufen die Fahrkarten. Danach fahren wir zum Bahnhof.** → **nachdem**",
+          "answer": "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof.",
+          "finding": "gekauft haben نهاية التابعة يحقق شرط Perfekt والشراء الأسبق، ثم fahren wir بعد الفاصلة."
+        },
+        {
+          "index": 2,
+          "text": "**Ich warte auf den Bus. Dabei prüfe ich den Fahrplan.** → **während**",
+          "answer": "Während ich auf den Bus warte, prüfe ich den Fahrplan.",
+          "finding": "warte في نهاية أثناء، ثم prüfe ich؛ dabei في الأصل يحدد التزامن."
+        },
+        {
+          "index": 3,
+          "text": "**Wir fahren los. Zuvor packen wir die Taschen.** → **bevor**",
+          "answer": "Bevor wir losfahren, packen wir die Taschen.",
+          "finding": "packen يسبق losfahren لأن Zuvor، لا نعكس الحدثين لمجرد ترتيب جمل المصدر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. تذكر القراءة أن Uferstadt مدينة خيالية.\n2. تختار المجموعة السيارة قبل أن تقارن الجداول.\n3. تشتري زينب وأصدقاؤها التذاكر عبر الإنترنت.\n4. تتحقق المجموعة من وجود وسيلة نقل تالية بعد حجز التذاكر.\n5. تذهب المجموعة سيرًا من المحطة إلى السوق.\n6. رغبة المجموعة في مراعاة المناخ هي الدافع المذكور لركوب القطار للمسافة الأطول والمشي للمسافات القصيرة، لا نتيجة قياس علمي.",
+      "finding": "كل حكم مرتبط بجملة من القراءة؛ بند6 يدعم سببQ08 ويقيد المناخ بالنية، لا البرهان العلمي.",
+      "sourceIds": [
+        "CLIMATE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "تذكر القراءة أن Uferstadt مدينة خيالية.",
+          "answer": "صحيح",
+          "finding": "fiktive في الجملة الأولى دليل مباشر."
+        },
+        {
+          "index": 2,
+          "text": "تختار المجموعة السيارة قبل أن تقارن الجداول.",
+          "answer": "خطأ",
+          "finding": "المقارنة أولًا والاختيار قطار لا سيارة."
+        },
+        {
+          "index": 3,
+          "text": "تشتري زينب وأصدقاؤها التذاكر عبر الإنترنت.",
+          "answer": "صحيح",
+          "finding": "online في الجملة الثالثة يحسم الطريقة."
+        },
+        {
+          "index": 4,
+          "text": "تتحقق المجموعة من وجود وسيلة نقل تالية بعد حجز التذاكر.",
+          "answer": "صحيح",
+          "finding": "الفحص بعد الحجز منصوص عليه؛ لا يلزم أن يكون الاتصال موجودًا."
+        },
+        {
+          "index": 5,
+          "text": "تذهب المجموعة سيرًا من المحطة إلى السوق.",
+          "answer": "صحيح",
+          "finding": "vom Bahnhof zu Fuß zum Markt صريح؛ لا نعمم المشي إلى المتحف."
+        },
+        {
+          "index": 6,
+          "text": "رغبة المجموعة في مراعاة المناخ هي الدافع المذكور لركوب القطار للمسافة الأطول والمشي للمسافات القصيرة، لا نتيجة قياس علمي.",
+          "answer": "صحيح",
+          "finding": "السبب رغبة klimafreundlich كما قبل Deshalb؛ لا يثبت نسب انبعاثات."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T06",
+      "text": "أكمل بالألمانية من النص، دون افتراض جنس الراوي. بنك الكلمات: **den Fahrplan — fällt … aus — umsteigen — die Nachrichten — kurz**.\n\n1. Bevor ich aus dem Haus gehe, sehe ich mir ______ an.\n2. Heute ______ mein erster Bus ______.\n3. Während ich auf die nächste Verbindung warte, prüfe ich, ob ich in der Stadt ______ muss.\n4. Nachdem ich in den Zug eingestiegen bin, lese ich ______.\n5. Wenn die Strecke ______ ist, gehe ich zu Fuß.",
+      "finding": "تحولت فراغات عربية ومفتاح ألماني غير مطابق إلى بنك ألماني بخمسة بنود؛ الفعل fällt ... aus منفصل، وkurz وحدها دون تكرار ist.",
+      "sourceIds": [
+        "CLAUSE",
+        "PERF",
+        "SEP"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Bevor ich aus dem Haus gehe, sehe ich mir ______ an.",
+          "answer": "den Fahrplan",
+          "finding": "den Fahrplan مفعول النظر؛ mir والبادئة an معطيان فلا تكرارهما."
+        },
+        {
+          "index": 2,
+          "text": "Heute ______ mein erster Bus ______.",
+          "answer": "fällt / aus",
+          "finding": "fällt في الفراغ الأول وaus فيالثاني حول الفاعل؛ يطابق Heute fällt mein erster Bus aus."
+        },
+        {
+          "index": 3,
+          "text": "Während ich auf die nächste Verbindung warte, prüfe ich, ob ich in der Stadt ______ muss.",
+          "answer": "umsteigen",
+          "finding": "umsteigen مصدر قبل muss، لا مصرف umsteigt."
+        },
+        {
+          "index": 4,
+          "text": "Nachdem ich in den Zug eingestiegen bin, lese ich ______.",
+          "answer": "die Nachrichten",
+          "finding": "die Nachrichten منصوبة جمعًا مع lesen؛ليست خريطة أصدقاء القراءة."
+        },
+        {
+          "index": 5,
+          "text": "Wenn die Strecke ______ ist, gehe ich zu Fuß.",
+          "answer": "kurz",
+          "finding": "kurz وحدها؛ist موجودة بعد الفراغ. الشرط لا يقول كل الرحلة قصيرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T07",
+      "text": "ابدأ بالتابعة وأضف الفاصلة. في 1 الفحص قبل الصعود؛ في 2 الوصول قبل البحث، واستخدم Perfekt في التابعة وPräsens في الرئيسية؛ في 3 القراءة أثناء الانتظار بالحاضر. في 4 أعد صياغة2 عن الماضي بـPlusquamperfekt للحدث الأسبق وPräteritum للبحث:\n\n1. **Bevor …:** Wir prüfen die Fahrkarten. Wir steigen ein.  \n2. **Nachdem …:** Der Zug kommt an. Wir suchen den Anschluss.  \n3. **Während …:** Ich warte auf die Straßenbahn. Ich lese einen Stadtplan.\n4. **Nachdem …:** أعد صياغة البند 2 في الماضي بالنمط المطلوب.",
+      "finding": "العنوان ربط وصوغ لا اختيار بلا خيارات؛ الأول فحص قبل صعود والثاني اكتمال وصول والثالث تزامن، والرابع ماضٍ سابق.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "PQP",
+        "CLAUSE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Bevor …:** Wir prüfen die Fahrkarten. Wir steigen ein.  ",
+          "answer": "Bevor wir einsteigen, prüfen wir die Fahrkarten.",
+          "finding": "الفحص قبل الصعود كما حدد التكليف؛ wir einsteigen نهاية التابعة ثم prüfen."
+        },
+        {
+          "index": 2,
+          "text": "**Nachdem …:** Der Zug kommt an. Wir suchen den Anschluss.  ",
+          "answer": "Nachdem der Zug angekommen ist, suchen wir den Anschluss.",
+          "finding": "الوصول أسبق؛ angekommen ist ثم suchen في الحاضر المطلوب."
+        },
+        {
+          "index": 3,
+          "text": "**Während …:** Ich warte auf die Straßenbahn. Ich lese einen Stadtplan.",
+          "answer": "Während ich auf die Straßenbahn warte, lese ich einen Stadtplan.",
+          "finding": "warte وlese بالحاضر وتزامنهما صريح؛ Stadtplan مفعول بـeinen."
+        },
+        {
+          "index": 4,
+          "text": "**Nachdem …:** أعد صياغة البند 2 في الماضي بالنمط المطلوب.",
+          "answer": "Nachdem der Zug angekommen war, suchten wir den Anschluss.",
+          "finding": "war مساعد Plusquamperfekt للمفرد، ثم suchten الماضي مع wir؛ لا تبقى suchen في حاضر المثال السابق."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-T08",
+      "text": "دليل التطبيق: P01 كتابة فقط بحد 130 حرفًا؛ P02 كتابة وجهر بحد 145 حرفًا؛ لكل منهما الإقرارات الثلاثة. لا تصحيح آلي لعدد الجمل أو الروابط.\n\n**أ — P01: خمس جمل كتابة فقط**\n\nاكتب خمس جمل ألمانية لخطة خيالية: في الأولى حدد السبت والوجهة Uferstadt الخيالية؛ في الثانية اذكر فحص الجدول قبل الانطلاق بـ bevor؛ في الثالثة السفر بالقطار إلى المدينة؛ في الرابعة البحث عن حافلة مواصلة إلى المتحف بعد الوصول بـ nachdem مع Perfekt في التابعة و Präsens في الرئيسية؛ وفي الخامسة قراءة خريطة أثناء انتظار الحافلة بـ während. اذكر القطار والحافلة والاتصال بوضوح. هذه كتابة فقط دون جهر أو بيانات سفر حقيقية أو تسجيل، ولا ادعاءات بيئية غير موثقة.\n\n**ب — P02: ست جمل مع الجهر**\n\nاكتب خطة بديلة خيالية من ست جمل: الحافلة الأولى ملغاة؛ تفحص الجدول قبل مغادرة المنزل بـ bevor؛ تتوفر في موقف التدريب بديلان هما القطار أو حافلة لاحقة؛ تفحص الاتصال أثناء انتظار القطار بـ während؛ تقرأ الأخبار بعد الصعود إلى القطار بـ nachdem مع Perfekt في التابعة و Präsens في الرئيسية؛ وتمشي إذا كانت المسافة قصيرة. البديلان معطيات خيالية جديدة، لا استنتاج من جدول حقيقي. اكتبها ثم اقرأها بصوت واضح بنفسك؛ لا يلزم تسجيل الصوت أو شريك أو سفر فعلي.",
+      "finding": "P01 خمس جمل كتابة فقط وP02 ست جمل مع الجهر؛ رُبطت المطالب ومعاييرها بالمصدر، والبديلان خياليان لا استنتاج من التسجيل.",
+      "sourceIds": [
+        "BEFORE",
+        "AFTER",
+        "PERF",
+        "CLAUSE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Am Samstag planen wir eine Fahrt in die fiktive Stadt Uferstadt.",
+          "answer": "Am Samstag planen wir eine Fahrt in die fiktive Stadt Uferstadt.",
+          "finding": "السبت والوجهة الخيالية مصرح بهما، لا حجز واقعي."
+        },
+        {
+          "index": 2,
+          "text": "Bevor wir losfahren, prüfen wir den Fahrplan.",
+          "answer": "Bevor wir losfahren, prüfen wir den Fahrplan.",
+          "finding": "فحص الجدول يسبق الانطلاق بـbevor."
+        },
+        {
+          "index": 3,
+          "text": "Wir fahren zuerst mit dem Zug nach Uferstadt.",
+          "answer": "Wir fahren zuerst mit dem Zug nach Uferstadt.",
+          "finding": "القطار أول وسيلة إلى المدينة."
+        },
+        {
+          "index": 4,
+          "text": "Nachdem wir angekommen sind, suchen wir den Anschlussbus zum Museum.",
+          "answer": "Nachdem wir angekommen sind, suchen wir den Anschlussbus zum Museum.",
+          "finding": "الوصول مكتمل قبل البحث عن حافلة مواصلة للمتحف؛ مساعد sein."
+        },
+        {
+          "index": 5,
+          "text": "Während wir auf den Bus warten, lesen wir einen Stadtplan.",
+          "answer": "Während wir auf den Bus warten, lesen wir einen Stadtplan.",
+          "finding": "قراءة خريطة أثناء انتظار الحافلة بعد الوصول، لا قبل الوصول المذكور في الجملة السابقة."
+        },
+        {
+          "index": 6,
+          "text": "Heute fällt mein erster Bus aus.",
+          "answer": "Heute fällt mein erster Bus aus.",
+          "finding": "إلغاء الحافلة الأولى سبب افتراضي للخطة البديلة."
+        },
+        {
+          "index": 7,
+          "text": "Bevor ich das Haus verlasse, sehe ich mir den Fahrplan an.",
+          "answer": "Bevor ich das Haus verlasse, sehe ich mir den Fahrplan an.",
+          "finding": "فحص قبل الخروج من المنزل، وmir معich؛ لا طريق إلى المحطة مخترع بوصفه حقيقة من النص."
+        },
+        {
+          "index": 8,
+          "text": "In dieser erfundenen Situation kann ich den Zug oder einen späteren Bus nehmen.",
+          "answer": "In dieser erfundenen Situation kann ich den Zug oder einen späteren Bus nehmen.",
+          "finding": "بديلان مفترضان صراحة: قطار أو حافلة لاحقة، لا وسيلتان يجب ركوبهما معًا."
+        },
+        {
+          "index": 9,
+          "text": "Während ich auf den Zug warte, prüfe ich den Anschluss.",
+          "answer": "Während ich auf den Zug warte, prüfe ich den Anschluss.",
+          "finding": "انتظار القطار المختار وفحص الاتصال أثناءه، لا تأكيد إدراك الاتصال."
+        },
+        {
+          "index": 10,
+          "text": "Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten.",
+          "answer": "Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten.",
+          "finding": "الصعود يسبق القراءة: Perfekt eingestiegen bin ثمlese ich."
+        },
+        {
+          "index": 11,
+          "text": "Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+          "answer": "Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+          "finding": "Wenn يقيد المشي بقصر المسافة، ولا يدعي وجود طريق آمن أو شمول المشي لكل الرحلة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q01",
+      "text": "ما المعنى الأنسب لـ der Anschluss في سياق السفر؟",
+      "finding": "der Anschluss هو اتصال أو رحلة مواصلة تساعد على الانتقال إلى الجزء التالي من الرحلة.",
+      "sourceIds": [
+        "CONNECT"
+      ],
+      "answer": "الرحلة أو وسيلة النقل المتصلة بالرحلة السابقة.",
+      "answerIndex": 0,
+      "options": [
+        "الرحلة أو وسيلة النقل المتصلة بالرحلة السابقة.",
+        "وقت المغادرة المكتوب في الجدول.",
+        "تأخر وسيلة النقل عن موعدها."
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "الرحلة أو وسيلة النقل المتصلة بالرحلة السابقة.",
+          "correct": true,
+          "finding": "الوصلة التالية معنى Anschluss في السفر؛ الصحيح لا اتصال كهربائي."
+        },
+        {
+          "index": 1,
+          "text": "وقت المغادرة المكتوب في الجدول.",
+          "correct": false,
+          "finding": "وقت المغادرة ليس Anschluss بل توقيت Abfahrt."
+        },
+        {
+          "index": 2,
+          "text": "تأخر وسيلة النقل عن موعدها.",
+          "correct": false,
+          "finding": "التأخر Verspätung لا رحلة مواصلة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q02",
+      "text": "أي كلمة تعني أن وسيلة النقل لم تصل في موعدها؟",
+      "finding": "die Verspätung تعني التأخر عن الموعد المتوقع.",
+      "sourceIds": [
+        "DELAY"
+      ],
+      "answer": "die Verspätung",
+      "answerIndex": 2,
+      "options": [
+        "die Ankunft",
+        "der Umstieg",
+        "die Verspätung"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die Ankunft",
+          "correct": false,
+          "finding": "Ankunft الوصول دون حكم على الموعد."
+        },
+        {
+          "index": 1,
+          "text": "der Umstieg",
+          "correct": false,
+          "finding": "Umstieg انتقال لا تأخر."
+        },
+        {
+          "index": 2,
+          "text": "die Verspätung",
+          "correct": true,
+          "finding": "Verspätung عدم الالتزام بالموعد المتوقع، ويدعمه T01.5."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q03",
+      "text": "أكمل بالرابط الذي يدل على أن فحص الاتصال يحدث قبل الانطلاق: ___ wir losfahren, prüfen wir die Verbindung.",
+      "finding": "Bevor تعني «قبل أن»، لذلك يسبق فحص الاتصال الانطلاق.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ],
+      "answer": "Bevor",
+      "answerIndex": 2,
+      "options": [
+        "Nachdem",
+        "Während",
+        "Bevor"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Nachdem",
+          "correct": false,
+          "finding": "بعد الانطلاق عكس القصد المطلوب للفحص."
+        },
+        {
+          "index": 1,
+          "text": "Während",
+          "correct": false,
+          "finding": "أثناء الانطلاق تزامن لا السبق المحدد."
+        },
+        {
+          "index": 2,
+          "text": "Bevor",
+          "correct": true,
+          "finding": "Bevor يجعل فحص الرئيسية قبل انطلاق التابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q04",
+      "text": "اختر الفعل المصرف في الحاضر في نهاية الجملة التابعة: Während Lena auf den Bus ___, liest sie einen Artikel.",
+      "finding": "الفاعل Lena مفرد، فيكون الفعل wartet، ويأتي في نهاية جملة während التابعة.",
+      "sourceIds": [
+        "CLAUSE"
+      ],
+      "answer": "wartet",
+      "answerIndex": 0,
+      "options": [
+        "wartet",
+        "warte",
+        "warten"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "wartet",
+          "correct": true,
+          "finding": "wartet حاضر ثالث مفرد يوافق Lena."
+        },
+        {
+          "index": 1,
+          "text": "warte",
+          "correct": false,
+          "finding": "warte لا توافق ثالث مفرد في الحاضر المطلوب، دون إنكار استعمالاتها الأخرى."
+        },
+        {
+          "index": 2,
+          "text": "warten",
+          "correct": false,
+          "finding": "warten مصدر/صيغة جمع، لا حاضر Lena المفردة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q05",
+      "text": "أكمل المساعد؛ sie تعود إلى Lena وحدها: Nachdem sie am Ziel angekommen ___, nimmt sie den Nahverkehr.",
+      "finding": "Lena مفردة؛ angekommen مع sein في هذا المثال، لذا ist لا sind. يأتي المساعد المصرف في نهاية التابعة؛ لا نختار haben لهذا الاستعمال.",
+      "sourceIds": [
+        "PERF",
+        "CLAUSE"
+      ],
+      "answer": "ist",
+      "answerIndex": 1,
+      "options": [
+        "haben",
+        "ist",
+        "sind"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T03",
+        "DL-B1-09-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "haben",
+          "correct": false,
+          "finding": "haben لا يحقق المساعد أو مطابقة Lena angekommen هنا."
+        },
+        {
+          "index": 1,
+          "text": "ist",
+          "correct": true,
+          "finding": "ist مساعد sein للحاضر المركب مع فاعل مفرد في مثال الوصول."
+        },
+        {
+          "index": 2,
+          "text": "sind",
+          "correct": false,
+          "finding": "sind للجمع/صيغة الاحترام، والسؤال حدد Lena وحدها."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q06",
+      "text": "اختر الدمج وفق النمط المطلوب: بعد اكتمال الشراء نذهب إلى المحطة. استعمل Perfekt مع nachdem و Präsens في الرئيسية: Wir kaufen die Fahrkarten. Danach fahren wir zum Bahnhof.",
+      "finding": "المطلوب إبراز اكتمال الشراء بـ gekauft haben ثم fahren في الرئيسية. الخيار الثاني لا يحقق شرط Perfekt، وإن كان موضع مصرفه آخر التابعة؛ لا نحكم على كل استعمال للمضارع مع nachdem بأنه مستحيل.",
+      "sourceIds": [
+        "PERF",
+        "CLAUSE"
+      ],
+      "answer": "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof.",
+      "answerIndex": 2,
+      "options": [
+        "Nachdem wir kaufen die Fahrkarten, fahren wir zum Bahnhof.",
+        "Nachdem wir die Fahrkarten kaufen, fahren wir zum Bahnhof.",
+        "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof."
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Nachdem wir kaufen die Fahrkarten, fahren wir zum Bahnhof.",
+          "correct": false,
+          "finding": "kaufen ليس آخر التابعة، وليس Perfekt المطلوب."
+        },
+        {
+          "index": 1,
+          "text": "Nachdem wir die Fahrkarten kaufen, fahren wir zum Bahnhof.",
+          "correct": false,
+          "finding": "kaufen آخر التابعة سليم موضعيًا لكنه Präsens لا Perfekt المشروط؛ ليس حكمًا ببطلانه في كل سياق."
+        },
+        {
+          "index": 2,
+          "text": "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof.",
+          "correct": true,
+          "finding": "gekauft haben يحقق اكتمال الشراء في Perfekt، ثم fahren في الرئيسية بالحاضر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q07",
+      "text": "اقرأ نص الرحلة: ماذا تتحقق المجموعة منه بعد حجز التذاكر؟",
+      "finding": "بعد حجز التذاكر، تتحقق المجموعة من وجود Anschluss عند الوجهة. أُخذت الإجابة من نص القراءة المكتوب.",
+      "sourceIds": [
+        "CONNECT"
+      ],
+      "answer": "من وجود اتصال أو وسيلة نقل تالية عند الوجهة.",
+      "answerIndex": 0,
+      "options": [
+        "من وجود اتصال أو وسيلة نقل تالية عند الوجهة.",
+        "من عدد السيارات في المدينة.",
+        "من موعد إغلاق السوق."
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "من وجود اتصال أو وسيلة نقل تالية عند الوجهة.",
+          "correct": true,
+          "finding": "الفحص لوجود مواصلة بالوجهة صريح؛ لا يعني تأكيد توفرها."
+        },
+        {
+          "index": 1,
+          "text": "من عدد السيارات في المدينة.",
+          "correct": false,
+          "finding": "عدد السيارات ليس موضوع الفحص في النص."
+        },
+        {
+          "index": 2,
+          "text": "من موعد إغلاق السوق.",
+          "correct": false,
+          "finding": "إغلاق السوق غير مذكور؛ ذكر السوق لاحقًا لا يبرر الاستنتاج."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q08",
+      "text": "لماذا تقطع المجموعة المسافة الأطول بالقطار وتمشي في الطرق القصيرة؟",
+      "finding": "المقصود بعبارة «صديقة للبيئة» في الخيار هنا رغبة المجموعة في مراعاة المناخ (klimafreundlich)، لا شهادة لجميع الآثار البيئية. النص يذكر رغبة وخيارات، ولا يقدم أرقامًا أو مقارنة علمية بين كل وسائل النقل.",
+      "sourceIds": [
+        "CLIMATE"
+      ],
+      "answer": "لأنها تريد أن تكون رحلتها صديقة للبيئة قدر الإمكان.",
+      "answerIndex": 0,
+      "options": [
+        "لأنها تريد أن تكون رحلتها صديقة للبيئة قدر الإمكان.",
+        "لأن القطار لا يصل إلى Uferstadt.",
+        "لأنها لا تستطيع استخدام النقل المحلي."
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "لأنها تريد أن تكون رحلتها صديقة للبيئة قدر الإمكان.",
+          "correct": true,
+          "finding": "هذا دافع المجموعة؛ شرح السؤال يقيد العبارة البيئية الأوسع بمراعاة المناخ هنا، لا شهادة لكل أثر بيئي."
+        },
+        {
+          "index": 1,
+          "text": "لأن القطار لا يصل إلى Uferstadt.",
+          "correct": false,
+          "finding": "النص يتحدث عن السفر إلى المدينة بالقطار لا انقطاع وصوله إليها."
+        },
+        {
+          "index": 2,
+          "text": "لأنها لا تستطيع استخدام النقل المحلي.",
+          "correct": false,
+          "finding": "تستخدم المجموعة النقل المحلي للمتحف؛ العجز عنه ليس السبب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q09",
+      "text": "اقرأ نص الاستماع: ماذا حدث للحافلة الأولى؟",
+      "finding": "يقول النص إن الحافلة الأولى fällt aus، أي إنها أُلغيت أو لم تعمل. لا يلزم تشغيل ملف صوتي للإجابة.",
+      "sourceIds": [
+        "SEP"
+      ],
+      "answer": "أُلغيت أو لم تعمل.",
+      "answerIndex": 1,
+      "options": [
+        "وصلت قبل موعدها.",
+        "أُلغيت أو لم تعمل.",
+        "توقفت في وجهتها النهائية."
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "وصلت قبل موعدها.",
+          "correct": false,
+          "finding": "لا وصول مبكر مذكور؛ الحافلة لا تعمل اليوم."
+        },
+        {
+          "index": 1,
+          "text": "أُلغيت أو لم تعمل.",
+          "correct": true,
+          "finding": "فعل fällt aus إلغاء/عدم تشغيل لا تأخر فقط."
+        },
+        {
+          "index": 2,
+          "text": "توقفت في وجهتها النهائية.",
+          "correct": false,
+          "finding": "ليس خبر توقف في الوجهة، ولا معنى الإلغاء."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-Q10",
+      "text": "ماذا تفعل الشخصية الراوية بعد الصعود إلى القطار؟",
+      "finding": "قراءة الأخبار تأتي بعد الصعود. الشخصية لفظ مؤنث نحويًا، لكن جنس الراوي غير مذكور في النص. لا يلزم MP3 للإجابة.",
+      "sourceIds": [
+        "AFTER",
+        "PERF"
+      ],
+      "answer": "تقرأ الأخبار.",
+      "answerIndex": 0,
+      "options": [
+        "تقرأ الأخبار.",
+        "تنظر إلى جدول مواعيد جديد.",
+        "تمشي إلى مكان الإقامة."
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "تقرأ الأخبار.",
+          "correct": true,
+          "finding": "الأخبار بعد الصعود صريحة؛ الشخصية مؤنثة نحويًا لا افتراض جنس الراوي."
+        },
+        {
+          "index": 1,
+          "text": "تنظر إلى جدول مواعيد جديد.",
+          "correct": false,
+          "finding": "الجدول قبل الخروج، والأخبار بعد الصعود؛ لا جدول جديد هنا."
+        },
+        {
+          "index": 2,
+          "text": "تمشي إلى مكان الإقامة.",
+          "correct": false,
+          "finding": "المشي مشروط بالقصر، ولا مكان إقامة مذكور في نص الاستماع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-P01",
+      "text": "اكتب خمس جمل ألمانية لخطة خيالية: في الأولى حدد السبت والوجهة Uferstadt الخيالية؛ في الثانية اذكر فحص الجدول قبل الانطلاق بـ bevor؛ في الثالثة السفر بالقطار إلى المدينة؛ في الرابعة البحث عن حافلة مواصلة إلى المتحف بعد الوصول بـ nachdem مع Perfekt في التابعة و Präsens في الرئيسية؛ وفي الخامسة قراءة خريطة أثناء انتظار الحافلة بـ während. اذكر القطار والحافلة والاتصال بوضوح. هذه كتابة فقط دون جهر أو بيانات سفر حقيقية أو تسجيل، ولا ادعاءات بيئية غير موثقة.",
+      "finding": "طابقت المهمة T08 ونموذجها؛ P01 كتابة فقط دون مربع جهر.",
+      "sourceIds": [
+        "CLAUSE",
+        "PERF"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "خمس جمل مكتوبة تحدد السبت والوجهة الخيالية وفحص الجدول والسفر بالقطار والبحث عن حافلة مواصلة وقراءة الخريطة أثناء انتظارها؛ دون جهر.",
+        "meaningClarity": "الفحص قبل الانطلاق، والوصول قبل البحث عن الحافلة، والقراءة أثناء انتظارها؛ القطار والحافلة والاتصال واضحة بلا ادعاء رحلة حقيقية.",
+        "targetSkill": "bevor و nachdem و während الزمنية مع الفواصل والمصرف آخر التابعة؛nachdem مع Perfekt والرئيسية Präsens، وترتيب الرئيسية سليم."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل مكتوبة تحدد السبت والوجهة الخيالية وفحص الجدول والسفر بالقطار والبحث عن حافلة مواصلة وقراءة الخريطة أثناء انتظارها؛ دون جهر.",
+          "finding": "يراجع المتعلم خمس جمل بمطالبها الصريحة؛ نموذج284 حرفًا، وحد130 ليس عداد خمس جمل أو تصحيحًا لها."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الفحص قبل الانطلاق، والوصول قبل البحث عن الحافلة، والقراءة أثناء انتظارها؛ القطار والحافلة والاتصال واضحة بلا ادعاء رحلة حقيقية.",
+          "finding": "تسلسل الفحص ثم القطار ثم البحث عن حافلة ثم الانتظار واضح؛ الاتصال ليس وعد خدمة حقيقية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "bevor و nachdem و während الزمنية مع الفواصل والمصرف آخر التابعة؛nachdem مع Perfekt والرئيسية Präsens، وترتيب الرئيسية سليم.",
+          "finding": "الروابط الثلاثة والمساعد والموقع معطيات مستهدفة؛ الإقرار الذاتي لا يصححها آليًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-09-P02",
+      "text": "اكتب خطة بديلة خيالية من ست جمل: الحافلة الأولى ملغاة؛ تفحص الجدول قبل مغادرة المنزل بـ bevor؛ تتوفر في موقف التدريب بديلان هما القطار أو حافلة لاحقة؛ تفحص الاتصال أثناء انتظار القطار بـ während؛ تقرأ الأخبار بعد الصعود إلى القطار بـ nachdem مع Perfekt في التابعة و Präsens في الرئيسية؛ وتمشي إذا كانت المسافة قصيرة. البديلان معطيات خيالية جديدة، لا استنتاج من جدول حقيقي. اكتبها ثم اقرأها بصوت واضح بنفسك؛ لا يلزم تسجيل الصوت أو شريك أو سفر فعلي.",
+      "finding": "طابقت المهمة T08 ونموذجها؛ P02 كتابة ثم جهر، وارتباطها T06/T08 محفوظ.",
+      "sourceIds": [
+        "CLAUSE",
+        "PERF"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-09-T06",
+        "DL-B1-09-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "ست جمل تتضمن الحافلة الملغاة وفحص الجدول وبديلَي القطار والحافلة اللاحقة والانتظار والقراءة بعد الصعود والمشي المشروط؛ اكتب ثم اجهر.",
+        "meaningClarity": "البديلان افتراض خيالي؛ يظهر اختيار القطار والفرق بين الفحص والتنفيذ، وقصرالمسافة شرط للمشي لا وصف للرحلة كلها.",
+        "targetSkill": "الروابط الثلاثة مع الترتيب والفواصل؛Perfekt بعد nachdem و Präsens في الرئيسية، والمصرف آخر التابعة بما فيها bin بعد eingestiegen."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 145,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ست جمل تتضمن الحافلة الملغاة وفحص الجدول وبديلَي القطار والحافلة اللاحقة والانتظار والقراءة بعد الصعود والمشي المشروط؛ اكتب ثم اجهر.",
+          "finding": "ست جمل وموقف الحافلة وبديلان وجهر بالنفس؛ نموذج338 حرفًا، وحد145 دون تسجيل."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "البديلان افتراض خيالي؛ يظهر اختيار القطار والفرق بين الفحص والتنفيذ، وقصرالمسافة شرط للمشي لا وصف للرحلة كلها.",
+          "finding": "الخيال مصرح به والقطار مختار، والمشي شرط لمسافة قصيرة؛ لا إجبار على سفر أو اختيار بيئي شخصي."
+        },
+        {
+          "key": "targetSkill",
+          "text": "الروابط الثلاثة مع الترتيب والفواصل؛Perfekt بعد nachdem و Präsens في الرئيسية، والمصرف آخر التابعة بما فيها bin بعد eingestiegen.",
+          "finding": "الروابط الثلاثة معنوية وزمنية، eingestiegen bin سابق نسبيًا؛ الجهر لا يقيس النطق أو عدد الجمل تلقائيًا."
+        }
+      ]
+    },
+    {
+      "id": "plan-model-01",
+      "text": "Am Samstag planen wir eine Fahrt in die fiktive Stadt Uferstadt.",
+      "finding": "السبت والوجهة الخيالية مصرح بهما، لا حجز واقعي.",
+      "sourceIds": []
+    },
+    {
+      "id": "plan-model-02",
+      "text": "Bevor wir losfahren, prüfen wir den Fahrplan.",
+      "finding": "فحص الجدول يسبق الانطلاق بـbevor.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "plan-model-03",
+      "text": "Wir fahren zuerst mit dem Zug nach Uferstadt.",
+      "finding": "القطار أول وسيلة إلى المدينة.",
+      "sourceIds": []
+    },
+    {
+      "id": "plan-model-04",
+      "text": "Nachdem wir angekommen sind, suchen wir den Anschlussbus zum Museum.",
+      "finding": "الوصول مكتمل قبل البحث عن حافلة مواصلة للمتحف؛ مساعد sein.",
+      "sourceIds": [
+        "AFTER",
+        "PERF",
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "plan-model-05",
+      "text": "Während wir auf den Bus warten, lesen wir einen Stadtplan.",
+      "finding": "قراءة خريطة أثناء انتظار الحافلة بعد الوصول، لا قبل الوصول المذكور في الجملة السابقة.",
+      "sourceIds": [
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "fallback-model-01",
+      "text": "Heute fällt mein erster Bus aus.",
+      "finding": "إلغاء الحافلة الأولى سبب افتراضي للخطة البديلة.",
+      "sourceIds": [
+        "SEP"
+      ]
+    },
+    {
+      "id": "fallback-model-02",
+      "text": "Bevor ich das Haus verlasse, sehe ich mir den Fahrplan an.",
+      "finding": "فحص قبل الخروج من المنزل، وmir معich؛ لا طريق إلى المحطة مخترع بوصفه حقيقة من النص.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "fallback-model-03",
+      "text": "In dieser erfundenen Situation kann ich den Zug oder einen späteren Bus nehmen.",
+      "finding": "بديلان مفترضان صراحة: قطار أو حافلة لاحقة، لا وسيلتان يجب ركوبهما معًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "fallback-model-04",
+      "text": "Während ich auf den Zug warte, prüfe ich den Anschluss.",
+      "finding": "انتظار القطار المختار وفحص الاتصال أثناءه، لا تأكيد إدراك الاتصال.",
+      "sourceIds": [
+        "CLAUSE",
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "fallback-model-05",
+      "text": "Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten.",
+      "finding": "الصعود يسبق القراءة: Perfekt eingestiegen bin ثمlese ich.",
+      "sourceIds": [
+        "AFTER",
+        "PERF"
+      ]
+    },
+    {
+      "id": "fallback-model-06",
+      "text": "Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+      "finding": "Wenn يقيد المشي بقصر المسافة، ولا يدعي وجود طريق آمن أو شمول المشي لكل الرحلة.",
+      "sourceIds": [
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Bevor wir losfahren, prüfen wir den Fahrplan.** → قبل أن ننطلق، نتحقق من جدول المواعيد.",
+      "finding": "الفحص قبل الانطلاق؛ losfahren ثم prüfen wir يثبت ترتيب الجملتين.",
+      "sourceIds": [
+        "BEFORE",
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Während ich warte, lese ich.** → بينما أنتظر، أقرأ.",
+      "finding": "تزامن الانتظار والقراءة؛ warte آخر التابعة ثم lese ich.",
+      "sourceIds": [
+        "CLAUSE"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Nachdem wir angekommen sind, nehmen wir den Bus.** → بعد أن نصل، نستقل الحافلة.",
+      "finding": "وصول سابق نسبيًا بـangekommen sind ثم الحافلة؛ لا تعميم إلزام Perfekt لكل nachdem.",
+      "sourceIds": [
+        "AFTER",
+        "PERF"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **der Anschluss / der Umstieg** → رحلة مواصلة / انتقال إلى مركبة أخرى.",
+      "finding": "صُححت العربية إلى رحلة مواصلة مقابل عملية انتقال؛ لا اتصال كهربائي ولا وجوب تغيير نوع النقل.",
+      "sourceIds": [
+        "CONNECT"
+      ]
+    },
+    {
+      "id": "DL-B1-09-AUD-PHR-01",
+      "text": "Der Fahrplan, die Fahrpläne. Die Abfahrt, die Abfahrten. Die Ankunft, die Ankünfte. Der Anschluss, die Anschlüsse. Der Umstieg, die Umstiege. Die Verspätung, die Verspätungen. Die Strecke, die Strecken. Das Verkehrsmittel, die Verkehrsmittel. Der Nahverkehr. Die Fahrkarte, die Fahrkarten. Die Umwelt. Die Emission, die Emissionen. Umsteigen, steigt um. Ausfallen, fällt aus. Sich verspäten, verspätet sich. Klimafreundlich. Pünktlich.",
+      "finding": "مطابقة نصية فقط لـphrase_bank: 17 وحدة نصية داخل 1 مقطع؛ محفوظة دون استماع أو توليد أو اعتماد. الحالة generated_pending_acoustic_review والتفريغ offer كما هما.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Der Fahrplan, die Fahrpläne.",
+          "finding": "der Fahrplan مذكر، Fahrpläne جمع بأوملاوت؛ جدول مواعيد لا تذكرة. مراجعة لغوية داخلية، لا مدخل معجمي مستقل مجلوب."
+        },
+        {
+          "index": 2,
+          "text": "Die Abfahrt, die Abfahrten.",
+          "finding": "die Abfahrt مؤنث، Abfahrten؛ حدث المغادرة ويمكن أن يعنون وقتها في جدول، لا نساويه دائمًا بساعة رقمية."
+        },
+        {
+          "index": 3,
+          "text": "Die Ankunft, die Ankünfte.",
+          "finding": "die Ankunft مؤنث، Ankünfte بأوملاوت؛ الوصول لا وقت المغادرة ولا إلغاء الرحلة. صيغ T01 أوضحت الحدث."
+        },
+        {
+          "index": 4,
+          "text": "Der Anschluss, die Anschlüsse.",
+          "finding": "Anschluss مذكر وجمعه Anschlüsse؛ تغيرت الترجمة إلى رحلة مواصلة لتجنب معنى خط التوصيل المادي. ليس نفس عملية Umstieg."
+        },
+        {
+          "index": 5,
+          "text": "Der Umstieg, die Umstiege.",
+          "finding": "Umstieg مذكر وجمعه Umstiege؛ الانتقال بين مركبتين وقد تكونان قطارين. صححت العربية دون تغيير الملف المنطوق."
+        },
+        {
+          "index": 6,
+          "text": "Die Verspätung, die Verspätungen.",
+          "finding": "Verspätung مؤنث، Verspätungen؛ التأخير لا مجرد الوصول ولا الإلغاء. أضيف T01.5 لدعم Q02 مباشرة."
+        },
+        {
+          "index": 7,
+          "text": "Die Strecke, die Strecken.",
+          "finding": "Strecke مؤنث، Strecken؛ مسار/مسافة بحسب السياق، ولا تعني القصيرة وحدها أن كل الرحلة قصيرة."
+        },
+        {
+          "index": 8,
+          "text": "Das Verkehrsmittel, die Verkehrsmittel.",
+          "finding": "Verkehrsmittel محايد وجمعه دون تغيير الاسم؛ الأداة die تميز جمع الجدول عن das للمفرد."
+        },
+        {
+          "index": 9,
+          "text": "Der Nahverkehr.",
+          "finding": "Nahverkehr مذكر ونقل محلي في هذا السياق؛ لا يحدد وحده حافلة أو ترامًا ولا كل جزئية طريق المتحف."
+        },
+        {
+          "index": 10,
+          "text": "Die Fahrkarte, die Fahrkarten.",
+          "finding": "Fahrkarte مؤنث وجمعه Fahrkarten؛ بطاقة/تذكرة سفر. لا يتضمن اللفظ ضمان إدراك الاتصال."
+        },
+        {
+          "index": 11,
+          "text": "Die Umwelt.",
+          "finding": "Umwelt مؤنث ومعناه البيئة؛ الشرطة نطاق الجدول وليست نفيًا لكل استعمال جمع، ولا نسوي البيئة بالمناخ دائمًا."
+        },
+        {
+          "index": 12,
+          "text": "Die Emission, die Emissionen.",
+          "finding": "Emission مؤنث، Emissionen؛ انبعاث، لكن النص لا يعطي مقادير ولا حكمًا حسابيًا على وسائل النقل."
+        },
+        {
+          "index": 13,
+          "text": "Umsteigen, steigt um.",
+          "finding": "umsteigen في المثال steigt um؛ فعل منفصل هنا، وفي التابعة مع modal يظهر umsteigen قبل muss. لا تعميم على كل أفعال um."
+        },
+        {
+          "index": 14,
+          "text": "Ausfallen, fällt aus.",
+          "finding": "ausfallen في المثال fällt aus، لا fällt ein؛ الإلغاء/عدم التشغيل في السفر يختلف عن Verspätung. الدلالة الأخرى خارج التركيز."
+        },
+        {
+          "index": 15,
+          "text": "Sich verspäten, verspätet sich.",
+          "finding": "sich verspäten انعكاسي؛ verspätet sich مع شخص ثالث. التأخر لا يتحول تلقائيًا إلى إلغاء."
+        },
+        {
+          "index": 16,
+          "text": "Klimafreundlich.",
+          "finding": "klimafreundlich صفة للمناخ؛ الترجمة والتقييد مكتوبان دون تعديل النطق."
+        },
+        {
+          "index": 17,
+          "text": "Pünktlich.",
+          "finding": "pünktlich ملتزم بالموعد، ليست مرادفًا لـklimafreundlich."
+        }
+      ],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-09-AUD-MODEL-01",
+      "text": "Bevor wir losfahren, prüfen wir den Fahrplan. Während ich auf den Anschluss warte, lese ich die Nachrichten. Nachdem wir angekommen sind, nehmen wir den Bus zur Unterkunft. Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof. Während der Zugfahrt lese ich einen Reiseführer. Nachdem der Zug angekommen war, suchten wir den Anschluss.",
+      "finding": "مطابقة نصية فقط لـmodel_sentences: 6 وحدة نصية داخل 1 مقطع؛ محفوظة دون استماع أو توليد أو اعتماد. الحالة generated_pending_acoustic_review والتفريغ offer كما هما.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Bevor wir losfahren, prüfen wir den Fahrplan.",
+          "finding": "فحص الجدول قبل الانطلاق؛ losfahren آخر التابعة وprüfen بعد الفاصلة ثم wir، مع حاضر جمع."
+        },
+        {
+          "index": 2,
+          "text": "Während ich auf den Anschluss warte, lese ich die Nachrichten.",
+          "finding": "القراءة متزامنة مع الانتظار؛ auf den Anschluss مفعول ينتظر اتصال السفر، warte آخر التابعة وlese أول الرئيسية بعدها."
+        },
+        {
+          "index": 3,
+          "text": "Nachdem wir angekommen sind, nehmen wir den Bus zur Unterkunft.",
+          "finding": "الوصول مكتمل نسبيًا قبل ركوب الحافلة؛ angekommen sind مع wir ثم nehmen، لا ادعاء سفر حدث فعلاً."
+        },
+        {
+          "index": 4,
+          "text": "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof.",
+          "finding": "شراء التذاكر بـhaben قبل الذهاب إلى المحطة في الخطة؛ الإكمال النسبي سبب اختيار Perfekt في تمريننا، لا قانون لكل nachdem."
+        },
+        {
+          "index": 5,
+          "text": "Während der Zugfahrt lese ich einen Reiseführer.",
+          "finding": "أثناء الرحلة عبارة اسمية بGenitiv مؤنث der Zugfahrt؛ lese ثانية وحدة ولا فاصلة. أضيف هذا النص المسجل إلى المصدر لتوضيح الفرق."
+        },
+        {
+          "index": 6,
+          "text": "Nachdem der Zug angekommen war, suchten wir den Anschluss.",
+          "finding": "angekommen war Plusquamperfekt يسبق suchten الماضي؛ war مع حركة الوصول وفاعل Zug مفرد. أصبح له تدريب T07.4 مكتوب."
+        }
+      ],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-09-AUD-DLG-01",
+      "text": "Wie kommen wir am Samstag nach Uferstadt? Lass uns den Zug nehmen. Bevor wir buchen, sollten wir den Fahrplan vergleichen. Gute Idee. Und was machen wir, während wir auf den Anschluss warten? Wir können einen Stadtplan ansehen oder etwas lesen. Nachdem wir angekommen sind, fahren wir mit dem Nahverkehr zum Museum. Genau. Dann müssen wir nicht für jeden Weg ein Auto nehmen.",
+      "finding": "مطابقة نصية فقط لـdialogue: 6 وحدة نصية داخل 6 مقطع؛ محفوظة دون استماع أو توليد أو اعتماد. الحالة generated_pending_acoustic_review والتفريغ offer كما هما.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Wie kommen wir am Samstag nach Uferstadt?",
+          "finding": "سؤال Mina عن كيفية الوصول السبت إلى Uferstadt؛ لا ساعة أو تذكرة مؤكدة، coming صيغة جمع تخطيطية."
+        },
+        {
+          "index": 2,
+          "text": "Lass uns den Zug nehmen. Bevor wir buchen, sollten wir den Fahrplan vergleichen.",
+          "finding": "اقتراح Karim القطار وفحص الجدول قبل الحجز؛ Lass uns + مصدر ثم sollten اقتراح، لا حجز مكتمل."
+        },
+        {
+          "index": 3,
+          "text": "Gute Idee. Und was machen wir, während wir auf den Anschluss warten?",
+          "finding": "سؤال Mina عن نشاط أثناء انتظار المواصلة؛ machen في سؤال رئيسي ثم warten آخر während. ما زال اقتراحًا."
+        },
+        {
+          "index": 4,
+          "text": "Wir können einen Stadtplan ansehen oder etwas lesen.",
+          "finding": "يمكن النظر في خريطة أو القراءة؛ oder بديلان لا فعلين حدثا بالضرورة. können آخر المعنى الإمكاني لا إثبات التنفيذ."
+        },
+        {
+          "index": 5,
+          "text": "Nachdem wir angekommen sind, fahren wir mit dem Nahverkehr zum Museum.",
+          "finding": "Perfekt مع nachdem لإنجاز الوصول السابق في الخطة ثم Nahverkehr إلى المتحف؛ لا نوع وسيلة محلية معين."
+        },
+        {
+          "index": 6,
+          "text": "Genau. Dann müssen wir nicht für jeden Weg ein Auto nehmen.",
+          "finding": "nicht für jeden Weg ein Auto nehmen ينفي الحاجة للسيارة لكل طريق، لا منع السيارة أو إثبات حساب مناخي."
+        }
+      ],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ]
+    },
+    {
+      "id": "DL-B1-09-AUD-READ-01",
+      "text": "Zeynep und ihre Freunde planen einen Ausflug in die fiktive Stadt Uferstadt. Bevor sie losfahren, vergleichen sie die Fahrpläne von Zug und Bus. Sie entscheiden sich für den Zug und kaufen die Fahrkarten online. Nachdem sie die Tickets gebucht haben, prüfen sie, ob es am Ziel einen Anschluss gibt. Während der Zugfahrt liest Zeynep einen Reiseführer, und ihre Freunde hören einen Podcast. In Uferstadt gehen sie vom Bahnhof zu Fuß zum Markt und nehmen später den Nahverkehr zum Museum. Die Gruppe möchte möglichst klimafreundlich unterwegs sein. Deshalb legt sie die längere Strecke mit dem Zug zurück und geht kurze Wege zu Fuß.",
+      "finding": "مطابقة نصية فقط لـreading: 8 وحدة نصية داخل 1 مقطع؛ محفوظة دون استماع أو توليد أو اعتماد. الحالة generated_pending_acoustic_review والتفريغ offer كما هما.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Zeynep und ihre Freunde planen einen Ausflug in die fiktive Stadt Uferstadt.",
+          "finding": "مجموعة Zeynep وأصدقائها وخطة رحلة إلى مدينة خيالية صراحة؛ لا تحقق من وجهة جغرافية أو سفر منجز."
+        },
+        {
+          "index": 2,
+          "text": "Bevor sie losfahren, vergleichen sie die Fahrpläne von Zug und Bus.",
+          "finding": "قبل الانطلاق يقارنون جداول القطار والحافلة، لا الأسعار أو عدد السيارات؛ فعل التابعة losfahren آخرها."
+        },
+        {
+          "index": 3,
+          "text": "Sie entscheiden sich für den Zug und kaufen die Fahrkarten online.",
+          "finding": "اختاروا القطار واشتروا التذاكر إلكترونيًا في سرد الخطة؛ sich entscheiden für + Akkusativ وkaufen لا يضمنان الاتصال."
+        },
+        {
+          "index": 4,
+          "text": "Nachdem sie die Tickets gebucht haben, prüfen sie, ob es am Ziel einen Anschluss gibt.",
+          "finding": "بعد حجز التذاكر يفحصون هل توجد مواصلة؛ gebucht haben وob ... gibt صحيحان. الفحص ليس جوابًا بالإيجاب."
+        },
+        {
+          "index": 5,
+          "text": "Während der Zugfahrt liest Zeynep einen Reiseführer, und ihre Freunde hören einen Podcast.",
+          "finding": "Zeynep تقرأ Reiseführer والأصدقاء يسمعون Podcast؛ أثناء + Genitiv هنا وليس الرابط مع فعل أخير، وتبادل النشاطين خطأ فهم."
+        },
+        {
+          "index": 6,
+          "text": "In Uferstadt gehen sie vom Bahnhof zu Fuß zum Markt und nehmen später den Nahverkehr zum Museum.",
+          "finding": "من المحطة إلى السوق مشيًا، ثم نقل محلي إلى المتحف؛ لا مساواة بين السوق والمتحف أو كل الطريق مشيًا."
+        },
+        {
+          "index": 7,
+          "text": "Die Gruppe möchte möglichst klimafreundlich unterwegs sein.",
+          "finding": "المجموعة ترغب möglichst klimafreundlich؛ هذه رغبة مقيدة لا شهادة بيئية أو قياس الانبعاثات."
+        },
+        {
+          "index": 8,
+          "text": "Deshalb legt sie die längere Strecke mit dem Zug zurück und geht kurze Wege zu Fuß.",
+          "finding": "Deshalb يقدم سبب الاختيار المذكور: المسافة الأطول بالقطار والقصيرة مشيًا. legt ... zurück منفصل، ولا يثبت تفوقًا عامًا لكل قطار."
+        }
+      ],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-09-AUD-LST-01",
+      "text": "Bevor ich aus dem Haus gehe, sehe ich mir den Fahrplan an. Heute fällt mein erster Bus aus. Während ich auf die nächste Verbindung warte, prüfe ich, ob ich in der Stadt umsteigen muss. Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten. Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+      "finding": "مطابقة نصية فقط لـlistening: 5 وحدة نصية داخل 1 مقطع؛ محفوظة دون استماع أو توليد أو اعتماد. الحالة generated_pending_acoustic_review والتفريغ offer كما هما.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Bevor ich aus dem Haus gehe, sehe ich mir den Fahrplan an.",
+          "finding": "فحص الجدول قبل مغادرة البيت: ich sehe mir ... an؛ الجملة لا تعطي اسم المتكلم أو جنسه."
+        },
+        {
+          "index": 2,
+          "text": "Heute fällt mein erster Bus aus.",
+          "finding": "الحافلة الأولى اليوم fällt aus، أي ملغاة/لا تعمل؛ ليست تأخرًا أو وصولًا مبكرًا."
+        },
+        {
+          "index": 3,
+          "text": "Während ich auf die nächste Verbindung warte, prüfe ich, ob ich in der Stadt umsteigen muss.",
+          "finding": "أثناء انتظار الوصلة التالية يفحص هل يلزم التبديل في المدينة؛ muss نهاية التابعة المتداخلة. جواب الحاجة غير معطى."
+        },
+        {
+          "index": 4,
+          "text": "Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten.",
+          "finding": "بعد الصعود للقطار يقرأ الأخبار؛ eingestiegen bin يعبر اكتمال الصعود، لا أنه بدأ المشي إلى الإقامة."
+        },
+        {
+          "index": 5,
+          "text": "Wenn die Strecke kurz ist, gehe ich zu Fuß.",
+          "finding": "المشي مشروط بالمسافة القصيرة؛ Wenn لا يعني كل الطريق قصير أو أن المتكلم مشى من البيت إلى المحطة."
+        }
+      ],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-03"
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/waehrend_Konjunktion",
+      "reason": "الصفحة غير موجودة رغم نجاح الجلب تقنيًا؛ مستبعدة وغير محسوبة"
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-09-travel-transport-environment.md": "05b2b70015972068294793f34159168246427d6218916061574b2e52991a1b49",
+    "content/B1/lesson-09-travel-transport-environment.assessment.json": "e3c2aa14d249bbfd93c7536d1245e3826ce1b8bf9abaca6242389a02c2746174"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-09-AUD-PHR-01": "47a8f29366e1fcc4b8046df3b4b764d9a01e8f3e479f8a7284af7fb0873fb18c",
+    "DL-B1-09-AUD-MODEL-01": "cb41a917aba75fe84c4249003add5b20d5e5f07aeb15ebe657bcdb560eae5db1",
+    "DL-B1-09-AUD-DLG-01": "b7dc10730e7d3cd1180d10733c52bd150989844ef9513b766850936588938e8c",
+    "DL-B1-09-AUD-READ-01": "074dfb177c1207194787c9e916368103b3756e30dac00fe135f43d520f32bb24",
+    "DL-B1-09-AUD-LST-01": "34c4bcc79fdc6f8c191fc38f3f2f9d523bf02a7c3483c75440099aa36ef72c60"
+  },
+  "preservation": {
+    "baseline": "e0727a6e5e81bf5dfc91e19eba6b066f42bc503b",
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      0,
+      2,
+      2,
+      0,
+      1,
+      2,
+      0,
+      0,
+      1,
+      0
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "changedAudioRegisterRows": {
+      "DL-B1-09-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B1-09-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B1-09-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B1-09-AUD-LST-01": [
+        "source_line"
+      ]
+    },
+    "protectedFilesIncludingAudio": 590,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true
+  },
+  "implementationCommit": "ed115027a205d2eb57e801841d85d163b5d3e16f",
+  "initialImplementationCommit": "fa03a2a87698306e14538461f67250d346327c74",
+  "qualityChecks": {
+    "build": {
+      "command": "python3 tools/build_course.py",
+      "status": "PASS",
+      "lessons": 53,
+      "bundleBytes": 2106695
+    },
+    "verify": {
+      "command": "python3 tools/verify_course.py",
+      "status": "PASS",
+      "exerciseHeadings": 428,
+      "dialogueSections": 61,
+      "vocabularyItems": 754,
+      "lessonQuizItems": 530,
+      "gateQuizItems": 10,
+      "performanceTasks": 109,
+      "catalogRows": 1080,
+      "audioAssets": 217,
+      "mp3Clips": 474,
+      "readyAssets": 137,
+      "pendingAssets": 80
+    },
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 39,
+      "newGuard": "tools/test_b1_09_review.py",
+      "scope": "coverage/text/mappings/evidence/hashes; not language certification"
+    },
+    "nodeGroups": {
+      "status": "PASS",
+      "tests": [
+        "progression",
+        "service_worker",
+        "daily_plan",
+        "session_persistence",
+        "study_time"
+      ]
+    },
+    "syntaxAndDiff": {
+      "status": "PASS",
+      "commands": [
+        "node --check app.js",
+        "node --check service-worker.js",
+        "git diff --check"
+      ]
+    },
+    "browser": {
+      "status": "PASS",
+      "chromium": "143.0.7499.0",
+      "playwright": "1.58.2",
+      "axe": "4.11.0",
+      "cache": "v88",
+      "tests": [
+        "browser",
+        "accessibility_update",
+        "accessibility_audit",
+        "forms_keyboard",
+        "narrow_layout"
+      ],
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "axeStates": 169,
+      "axeSelectedRuleViolations": 0,
+      "axeIncompleteOccurrences": 119,
+      "axeIncompleteNodeOccurrences": 275,
+      "narrowStates": 126,
+      "narrowViewports": [
+        "320x900",
+        "568x320"
+      ],
+      "formsKeyboard": "Passed first execution at both widths; historical native chooser intermittency remains unresolved."
+    },
+    "evidenceIsolation": {
+      "status": "PASS",
+      "oldVersion": "b1-09-v1",
+      "newVersion": "b1-09-v2",
+      "nextLesson": "b1-10-media-news-formal-communication",
+      "modelCharacters": [
+        284,
+        338
+      ],
+      "minimumCharacters": [
+        130,
+        145
+      ],
+      "retainsOldRecordWithoutGrantingCurrentMastery": true,
+      "rejectsOldVersionDraft": true,
+      "currentScoreAndEvidenceUnlockNext": true,
+      "evidenceDeletionRelocksNext": true,
+      "p01SpeakCheckboxAbsent": true,
+      "p02SpeakCheckboxRequired": true
+    },
+    "initialFailures": [
+      "Chromium --version initially could not load libnspr4.so; extracted bundled al2023 libraries and used LD_LIBRARY_PATH=/tmp/al2023/lib. All five browser suites then passed on their first full execution. No app or forms-test change for this runtime issue."
+    ]
+  },
+  "limits": [
+    "مراجعة نصية مصدرية بالذكاء الاصطناعي، لا شهادة CEFR أو WCAG أو قياس تعلّم فعلي؛ لا مراجع بشري شرطًا للاستمرار.",
+    "11 صفحة كاملة بالنطاق المعاد من أداة الجلب، لا ملفات PDF أو صوت أو روابط تابعة. الدليل المعجمي المباشر للفظ محصور في مراجع وحدته؛ سائر الألفاظ مراجعة لغوية داخلية.",
+    "لا استماع أو توليد أو اعتماد صوتي جديد؛ تشغيل المتصفح الآلي الصامت لا مراجعة سمعية، وكل أصول B1.9 ما زالت معلقة ومتاحة.",
+    "169 حالةaxe وصفر مخالفات للقواعد المختارة، لكن119 ظهورًا غير حاسم تشمل275 ظهورًا لعقد؛ ليست مخالفات مثبتة ولا نجاحWCAG كاملًا.",
+    "اختبارات CSS ليست هواتف فعلية أو تكبيرًا أصليًا؛ fixture v42 إلىv88 ليس جميع الترقيات التاريخية أو Production.",
+    "الطول والإقرارات والجهر لا تقيس صحة اللغة أو النطق أو عدد الجمل أو ملاءمة سفر حقيقي؛ أمثلة خطط خيالية دون تحليل انبعاثات.",
+    "فشل نشر التنفيذed11502 لحدVercel اليومي؛ لا إعادة نشر متكررة أو ترقية مدفوعة، ولا ادعاء اختبار الواجهة البعيدة أو الدمج."
+  ],
+  "campaign": {
+    "review": "CR39",
+    "reviewedLessons": 38,
+    "totalLessons": 53,
+    "gateSeparate": true,
+    "remainingLessons": 15,
+    "planVersion": "2.45",
+    "next": "CR40/B1.10 — الإعلام والأخبار والتواصل الرسمي"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "ed115027a205d2eb57e801841d85d163b5d3e16f",
+    "implementationPushed": true,
+    "implementationHeadOriginMatched": true,
+    "pr": {
+      "number": 1,
+      "headRefOid": "ed115027a205d2eb57e801841d85d163b5d3e16f",
+      "mergedAt": null,
+      "state": "OPEN"
+    },
+    "implementationDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "reportPushed": false,
+    "remoteUIReviewed": false,
+    "productionReviewed": false
+  }
+}

@@ -9,6 +9,7 @@ for q,ns in zip(a['quiz'],[[1],[1],[2],[3],[3,7],[4],[5],[5],[6],[6]]):assert q[
 T={int(m[1]):m[2].strip() for m in re.finditer(r'^### تمرين (\d+) — [^\n]+\n([\s\S]*?)(?=^### |^## |\Z)',s,re.M)}
 assert '**die Verspätung / die Ankunft**' in T[1]
 for cue in ['الفحص أولًا','القراءة أثناء الانتظار','الوصول أولًا','شراء التذاكر أولًا']:assert cue in T[2]
+assert 'الحاضر' in a['quiz'][3]['prompt'] and 'رحلة مواصلة / انتقال إلى مركبة أخرى.' in s
 assert 'Lena' in T[3] and 'Lena' in a['quiz'][4]['prompt']
 assert 'Perfekt' in T[4] and 'Präsens' in a['quiz'][5]['prompt']
 assert 'مراعاة المناخ' in T[5] and 'لا نتيجة قياس علمي' in T[5]
