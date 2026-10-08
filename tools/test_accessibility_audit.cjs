@@ -86,6 +86,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.4-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.4-practical-form-fixture', width);
+  // CR11: food/countability and aligned written-day/formal-cafe tasks.
+  await page.evaluate(() => openLesson('a1-05-food-drink'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.5-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.5-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
