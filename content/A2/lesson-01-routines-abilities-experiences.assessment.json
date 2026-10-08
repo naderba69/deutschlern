@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a2-01-v1",
+    "version": "a2-01-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+      "CR19: vor يحدد وقتًا سابقًا ولا يعني انتهاء النشاط؛ مصدر الدرس والشرح والاختيارQ01 متطابقة.",
+      "P01/T08أ أربع جمل مع الجهر وP02/T08ب أربع جمل كتابة فقط؛ لكل منهما تدريب ونموذج ومعايير مطابقة.",
+      "التسجيلات الموجودة محفوظة؛ التفريغ متاح ولا يثبت الاستماع المستقل، والقياس المحلي لا يصحح اللغة أو النطق."
     ]
   },
   "quiz": [
@@ -30,19 +30,19 @@
         "مفردات",
         "اختيار محدد"
       ],
-      "prompt": "ما معنى التركيب **vor drei Monaten** في سياق حدث انتهى؟",
+      "prompt": "ما معنى vor drei Monaten عند تحديد وقت بدء الدورة؟",
       "options": [
-        "قبل ثلاثة أشهر، أي مدة انتهت.",
+        "قبل ثلاثة أشهر؛ يحدد وقت البداية ولا يثبت انتهاء الدورة.",
         "منذ ثلاثة أشهر وما زال مستمرًا.",
         "بعد ثلاثة أشهر."
       ],
       "answerIndex": 0,
-      "explanation": "نستخدم vor مع مدة مضت وانتهى الحدث؛ أما seit فتدل هنا على مدة ما زالت مستمرة."
+      "explanation": "vor هنا يحدد كم مضى على البداية، لا نهاية الدورة. قد أبدأ قبل ثلاثة أشهر وأظل أتعلم الآن."
     },
     {
       "id": "DL-A2-01-Q02",
       "sourceTaskIds": [
-        "DL-A2-01-T02"
+        "DL-A2-01-T01"
       ],
       "objectiveIds": [
         "DL-A2-01-G01"
@@ -100,7 +100,7 @@
         "ist"
       ],
       "answerIndex": 1,
-      "explanation": "الفعل fahren مع الانتقال إلى مكان يأخذ sein في Perfekt."
+      "explanation": "هنا انتقال إلى سوسة دون مفعول مباشر مع fahren؛ نستعمل sein ومع wir الصيغة sind. لا نعمم sein على كل حركة."
     },
     {
       "id": "DL-A2-01-Q05",
@@ -135,14 +135,14 @@
         "ترتيب الجملة",
         "اختيار محدد"
       ],
-      "prompt": "أي جملة صحيحة؟",
+      "prompt": "أي جملة خبرية رئيسية تتبع النمط المدروس: فاعل ثم können مصرف، ومصدر في النهاية؟",
       "options": [
         "Ich kann kurze Texte liest.",
         "Ich kann lesen kurze Texte.",
         "Ich kann kurze Texte lesen."
       ],
       "answerIndex": 2,
-      "explanation": "بعد können يأتي الفعل الآخر مصدرًا في نهاية الجملة."
+      "explanation": "في هذا النمط تأتي kann مع ich ثم المفعول، وlesen مصدر بلا zu في النهاية؛ لا نختار liest المصرفة أو المصدر قبل المفعول."
     },
     {
       "id": "DL-A2-01-Q07",
@@ -242,11 +242,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "اكتب أربع جمل عن روتين أو خبرة متخيّلة: استخدم seit لشيء مستمر، وvor مع حدث انتهى، وجملة مع können، وجملة في Perfekt. اقرأها بصوت واضح.",
+      "prompt": "اكتب أربع جمل مترابطة عن حياة خيالية ثم اقرأ الأربع بصوت مرتفع، ويمكنك أداؤها منفردًا: الأولى بـ seit والمضارع عن تعلم مستمر؛ الثانية بـ vor و Perfekt عن وقت بدء دورة لا عن انتهائها؛ الثالثة بـ können عن قدرة؛ الرابعة بـ Letztes Wochenende و Perfekt عن نشاط واحد. اجعل مدة التعلم ووقت بدء الدورة متوافقين؛ قد تبدأ الدورة بعد بدء التعلم أو معه. لا شريك أو تسجيل أو معلومات شخصية حقيقية مطلوبة.",
       "criteria": {
-        "taskCompletion": "تتضمن الاستجابة أربع جمل وتغطي المطلوب كله.",
-        "meaningClarity": "يمكن فهم ما يزال مستمرًا وما حدث وانتهى.",
-        "targetSkill": "يميز بين seit وvor، ويصرّف können، ويضع Partizip II في نهاية Perfekt."
+        "taskCompletion": "أربع جمل: تعلم مستمر، وقت بدء دورة، قدرة، ونشاط في نهاية الأسبوع؛ قرأت الأربع جهرًا.",
+        "meaningClarity": "مدة التعلم ووقت بدء الدورة متوافقان، ولا أفترض أن ذكر البداية يعني انتهاء الدراسة.",
+        "targetSkill": "seit مع المضارع وDativ،وvor الزمانية معDativ وPerfekt؛können مصرف ومصدر،وفعل مساعد مصرف وPartizip II في نمط الماضي."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,7 +256,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
+        "minimumResponseCharacters": 120,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -270,14 +270,13 @@
         "DL-A2-01-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب فقرة قصيرة عن خبرة تعلم لغة: منذ متى تتعلمها، وما الذي تستطيع فعله، وماذا أنجزت مؤخرًا؟ استخدم فعلًا منفصلًا واحدًا مثل anfangen أو teilnehmen، ثم اقرأها بصوت مرتفع.",
+      "prompt": "اكتب أربع جمل عن متعلم لغة خيالي بضمير ich: الأولى بـ seit والمضارع عن مدة التعلم المستمرة؛ الثانية تذكر المشاركة مرتين أسبوعيًا باستعمال Ich nehme zweimal pro Woche an einem Sprachkurs teil؛ الثالثة بـ können عن قدرة لغوية؛ الرابعة بـ Letzte Woche و Perfekt عن إنجاز محدد ككتابة رسالة أو قراءة نص. هذه كتابة فقط، دون جهر أو تسجيل؛ لا تخلط مدة التعلم بتكرار الحضور الأسبوعي.",
       "criteria": {
-        "taskCompletion": "تذكر الاستجابة مدة التعلم وقدرة وإنجازًا حديثًا.",
-        "meaningClarity": "تتضح المدة والقدرة والخبرة دون تعارض زمني.",
-        "targetSkill": "يستخدم seit مع المضارع للمدة المستمرة وPerfekt لخبرة منتهية، ويكتب الفعل المنفصل بصورة صحيحة."
+        "taskCompletion": "أربع جمل: مدة تعلم، مشاركة مرتين أسبوعيًا، قدرة لغوية، وإنجاز الأسبوع الماضي؛ كتابة فقط.",
+        "meaningClarity": "لا أخلط مدة التعلم بتكرار المشاركة، والإنجاز حدث محدد لا وصف قدرة فقط.",
+        "targetSkill": "seit مع المضارع، وnehme…an einem Sprachkurs teil، وkönnen مع مصدر، وPerfekt في جملة الإنجاز."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,8 +286,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 50,
-        "speakAloud": true,
+        "minimumResponseCharacters": 130,
+        "speakAloud": false,
         "audioRequired": false
       }
     }

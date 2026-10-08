@@ -134,6 +134,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.12-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.12-practical-form-fixture', width);
+  // CR19: spoken routine and experiences; written learning record.
+  await page.evaluate(() => openLesson('a2-01-routines-abilities-experiences'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.1-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.1-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
