@@ -674,6 +674,44 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain A1.11 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR18: written reply vs spoken invitation/confirmation, and A1.12 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'a1-12-trip-invitations').assessment.version, 'a1-12-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('a1-12-trip-invitations');
+    const responses = [
+      'Ja, ich komme gern. Um wie viel Uhr beginnt die Feier?',
+      'Am Samstag mache ich eine Feier bei mir zu Hause. Die Feier beginnt um 16 Uhr. Möchtest du kommen? Kannst du bitte Wasser mitbringen? Ja, ich komme am Samstag um 16 Uhr. Ich bringe Wasser mit.'
+    ];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'A1.12 models fit thresholds; P01 is writing only, P02 needs speech and all checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('a1-12-trip-invitations').performanceTasks[0]], 'lesson:a1-12-trip-invitations', 'a1-12-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('a1-12-trip-invitations');
+      const next=findLesson('a2-01-routines-abilities-experiences');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'a1-12-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'a1-12-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='a1-12-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'a1-12-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain A1.12 old record but require current score/evidence/version; reject stale drafts');
+
+  assert.equal(vm.runInContext(`performanceTaskEvidenceReady(findLesson('a1-12-trip-invitations').performanceTasks[0], {response:'Leider kann ich nicht kommen. Ich muss arbeiten.',checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:false})`,context),true,'A1.12 written refusal model also fits threshold without speech');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",

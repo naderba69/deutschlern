@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-12-v1",
+    "version": "a1-12-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR18: ضبط نطاق الأفعال الناقصة والفصل، وتنسيق الرسالة، وفصل نموذج الاستماع عن تفاصيل رسالة القراءة دون تغيير كلامه.",
+      "رد قصير كتابي فيP01 وتبادل ست جمل مع الجهر فيP02؛ المصدر والمعايير والنماذج متطابقة، ولا تصحيح آلي للغة أو النطق.",
+      "التسجيلات موجودة ومحفوظة، والتفريغ متاح؛Q09 سؤال معنى لا فهم استماع مستقل، ولا تسجيل متعلم مطلوب."
     ]
   },
   "quiz": [
@@ -142,12 +142,12 @@
         "kommst mit"
       ],
       "answerIndex": 1,
-      "explanation": "بعد kannst يأتي المصدر mitkommen في نهاية السؤال."
+      "explanation": "بعدkannst في السؤال البسيط يأتي المصدر الكامل mitkommen بلا فصل، لاmitkommst أوkommst mit المصرفين."
     },
     {
       "id": "DL-A1-12-Q07",
       "sourceTaskIds": [
-        "DL-A1-12-T04"
+        "DL-A1-12-T01"
       ],
       "objectiveIds": [
         "DL-A1-12-G01"
@@ -184,18 +184,18 @@
         "يوم الأحد"
       ],
       "answerIndex": 2,
-      "explanation": "مفتاح فهم الرسالة يذكر Am Sonntag."
+      "explanation": "رسالةAmel نفسها تقول: am Sonntag mache ich eine kleine Geburtstagsfeier؛ أي يوم الأحد."
     },
     {
       "id": "DL-A1-12-Q09",
       "sourceTaskIds": [
-        "DL-A1-12-T06"
+        "DL-A1-12-T01"
       ],
       "objectiveIds": [
         "DL-A1-12-G01"
       ],
       "skillTags": [
-        "فهم الاستماع",
+        "سؤال عمّا يُحضر",
         "اختيار محدد"
       ],
       "prompt": "ما السؤال الذي يعني «هل أحضر معي شيئًا؟»؟",
@@ -205,7 +205,7 @@
         "Wie heißt das Geschenk?"
       ],
       "answerIndex": 0,
-      "explanation": "Soll ich etwas mitbringen? تسأل عما يمكن إحضاره معك."
+      "explanation": "Soll ich etwas mitbringen? عرض لإحضار شيء وسؤال إن كان ذلك مطلوبًا؛ لا يختبر الاستماع أو مجرد القدرة الجسدية."
     },
     {
       "id": "DL-A1-12-Q10",
@@ -239,14 +239,13 @@
         "DL-A1-12-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب ردًا على دعوة: اقبلها أو اعتذر عنها، واذكر سببًا بسيطًا أو اسأل عن الوقت، ثم اقرأ الرد بصوت مرتفع.",
+      "prompt": "أمامك دعوة خيالية ناقصة التفاصيل: Hallo! Ich mache am Sonntag eine Feier. Möchtest du kommen? اكتب ردًا من جملتين فقط: إما قبول واضح ثم سؤال عن الساعة أو المكان غير المذكورين، وإما اعتذار واضح ثم سبب خيالي بسيط في جملة مستقلة، مثل Ich muss arbeiten. لا يلزم können في جواب القبول؛ استعمله صحيحًا إذا اخترته. هذه كتابة فقط، دون جهر أو تسجيل أو سبب شخصي حقيقي.",
       "criteria": {
-        "taskCompletion": "يتضمن الرد قبولًا أو اعتذارًا وسؤالًا أو معلومة مناسبة.",
-        "meaningClarity": "يعرف صاحب الدعوة موقف المتعلم وما يحتاج إلى توضيح.",
-        "targetSkill": "يستخدم عبارة مناسبة مثل Ja, gern أو Leider kann ich nicht، ويرتب الفعل مع können."
+        "taskCompletion": "جملتان: قبول وسؤال عن ساعة أو مكان ناقصين، أو اعتذار وسبب خيالي مستقل؛ كتابة فقط.",
+        "meaningClarity": "الموقف من الدعوة واضح، والسؤال أو السبب يناسب المسار المختار دون تناقض.",
+        "targetSkill": "عبارة قبول أو اعتذار وصياغة سؤال أو خبر مناسب؛ إذا استُعمل können أوmüssen فليكن مصرفًا ومع مصدر صحيح، ولا يفرضkönnen على القبول."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,8 +255,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 35,
-        "speakAloud": true,
+        "minimumResponseCharacters": 40,
+        "speakAloud": false,
         "audioRequired": false
       }
     },
@@ -274,11 +273,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "أنشئ دعوة قصيرة إلى رحلة أو احتفال: اذكر اليوم والوقت والمكان، ثم اكتب ردًا مناسبًا وسؤالًا عمّا يمكن إحضاره. اقرأ الحوار بصوت مرتفع.",
+      "prompt": "اكتب تبادلًا خياليًا من ست جمل: دعوة بأربع جمل ثم جواب قبول بجملتين. اذكر في الأولى نوع المناسبة واليوم والمكان، وفي الثانية ساعة البداية، وفي الثالثة دعوة بـ Möchtest du…، وفي الرابعة طلب غرض بـ Kannst du bitte…mitbringen? اكتب جوابًا يقبل ويؤكد اليوم والساعة نفسيهما، ثم يعد بإحضار الغرض نفسه بـ Ich bringe…mit. اقرأ الجمل الست كلها بصوت مرتفع، ويمكنك أداء الطرفين منفردًا. التحية والتوقيع اختياريان ولا يحسبان من الجمل الست؛ لا شريك أو تسجيل أو عنوان أو موعد حقيقي مطلوب.",
       "criteria": {
-        "taskCompletion": "تتضمن الدعوة اليوم والوقت والمكان وردًا وسؤالًا عن شيء يُحضر.",
-        "meaningClarity": "يفهم المدعو تفاصيل المناسبة والرد عليها.",
-        "targetSkill": "يستخدم عبارة دعوة وقبول/اعتذار، ويضع مصدر الفعل في نهاية جملة können."
+        "taskCompletion": "أربع جمل دعوة لليوم والمكان والساعة وطلب الحضور والغرض، وجملتا قبول ووعد؛ قرأت الست كلها جهرًا.",
+        "meaningClarity": "اليوم والساعة والغرض في الرد تطابق الدعوة؛ لا سؤال عن ساعة معطاة أو تغيير للطلب دون توضيح.",
+        "targetSkill": "Möchtest du… وKannst du bitte…mitbringen مع مصدر كامل، ثمIch bringe…mit في الرد؛ am لليوم وum للساعة."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -288,7 +287,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
+        "minimumResponseCharacters": 160,
         "speakAloud": true,
         "audioRequired": false
       }
