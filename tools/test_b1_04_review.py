@@ -47,14 +47,24 @@ for heading,minimum in [('### نموذج P01 — أربع جمل كتابة فق
 if sys.argv[1:]==['--implementation-only']:
  print('PASS B1.4 implementation: source/tasks/versions/mappings/bundle/audio; detailed review not checked.');raise SystemExit
 D=json.loads((R/'data/reviews/b1-04-review.json').read_text());U={u['id']:u for u in D['units']}
-assert len(U)==D['unitCount']==len(D['units'])
+expected=set()
+for k,n in [('scope',9),('vocab',15),('grammar',5),('helper',10),('dialogue',6),('reading',6),('reading-question',5),('listening',5),('listening-question',5),('plan-model',4),('coaching-model',4),('card',4),('T',8),('Q',10),('P',2)]:
+ expected|={f'DL-B1-04-{k}{i:02}' if k in ['T','Q','P'] else f'{k}-{i:02}' for i in range(1,n+1)}
+expected|={x['assetId'] for x in assets}
+assert set(U)==expected and len(U)==D['unitCount']==len(D['units'])==103
 assert len(D['sources'])==10 and all(x['access']=='full_fetched_page' for x in D['sources'])
 for u in D['units']:
  assert u['finding'] and set(u['sourceIds'])<={x['id'] for x in D['sources']}
+ if u['id'].startswith(('scope-','vocab-','grammar-','helper-','card-','reading-question-','listening-question-')):assert u['text'] in s
  for x in u.get('items',[]):assert x['text'] and x['finding']
 for k in ['dialogue','reading','listening']:
  texts=[u['text'] for u in D['units'] if re.match(k+r'-\d+$',u['id'])]
  assert ' '.join(texts)==' '.join(seg['text'] for x in assets if x['kind']==k for seg in x['segments'])
+for x in assets:
+ items=U[x['assetId']]['items']
+ assert len(items)=={'phrase_bank':15,'model_sentences':5,'dialogue':6,'reading':6,'listening':5}[x['kind']]
+ assert ' '.join(i['text'] for i in items)==' '.join(seg['text'] for seg in x['segments'])
+ if x['kind']=='model_sentences':assert [i['text'] for i in items]==[U[f'grammar-{n:02}']['text'] for n in range(1,6)]
 for kind,lines in zip(['plan-model','coaching-model'],models):assert lines==[u['text'] for u in D['units'] if u['id'].startswith(kind+'-')]
 for i,n in enumerate([5,3,3,3,4,4,4,8],1):assert U[f'DL-B1-04-T{i:02}']['text']==T[i] and len(U[f'DL-B1-04-T{i:02}']['items'])==n
 assert D['exerciseSubItemCount']==34
