@@ -1299,19 +1299,24 @@
     "gateSeparate": true,
     "reviewedLessons": 19,
     "remainingLessons": 34,
-    "reviewPushVerified": false,
-    "reviewCommit": "Pending creation: Record CR20 granular A2.2 review and cumulative checks",
+    "reviewPushVerified": true,
+    "reviewCommit": "f1743cc82d6c208d4624f1ad9c7adc113d5a9941",
     "pullRequest": {
       "headRefName": "arena/01a1036f-deutschlern",
-      "headRefOid": "80114c432efee43ff1b642ab0b2867bf7eef13ab",
+      "headRefOid": "f1743cc82d6c208d4624f1ad9c7adc113d5a9941",
       "mergedAt": null,
       "number": 1,
       "state": "OPEN",
       "url": "https://github.com/naderba69/deutschlern/pull/1"
     },
     "vercel": {
-      "implementationStatus": "success"
+      "implementationStatus": "success",
+      "reviewStatus": "success",
+      "deploymentId": 6940561237,
+      "environment": "Preview",
+      "url": "https://deutschlern-owrbg0fgz-balinader-2671s-projects.vercel.app"
     },
-    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test and no production claim."
+    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test and no production claim.",
+    "receiptCommit": "Separate documentation commit: Record CR20 push and Preview delivery receipt; see git log."
   }
 }
