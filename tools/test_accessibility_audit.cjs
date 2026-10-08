@@ -110,6 +110,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.8-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.8-practical-form-fixture', width);
+  // CR15: workplace appointment and written problem/effect/alternative.
+  await page.evaluate(() => openLesson('a1-09-work-appointments'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.9-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.9-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
