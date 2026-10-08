@@ -1,0 +1,2005 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-10-media-news-formal-communication",
+  "reviewDate": "2026-10-09",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-10-v2",
+  "unitCount": 100,
+  "exerciseSubItemCount": 36,
+  "modelPartCount": 13,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "IND",
+      "title": "Lingolia — Indirect Questions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/indirect-questions",
+      "scope": "ob لنعم/لا وأداة السؤال للطلب المحدد؛ المصرف آخر التابعة والترقيم بحسب الجملة الحاوية. تبسيط ترتيب أداة/فاعل/مفعول لا يعمم على أداة هي الفاعل؛ مثال wer إضافة تعليمية بمراجعة لغوية داخلية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1,
+      "searchResultId": 1
+    },
+    {
+      "id": "QMARK",
+      "title": "Duden — Fragezeichen",
+      "url": "https://www.duden.de/sprachwissen/rechtschreibregeln/fragezeichen",
+      "scope": "علامة السؤال تدل على استفهام الجملة، بما فيها سؤال بترتيب خبري؛ لذلك لا نربط وجودها بمجرد شكل أول كلمة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "INFO",
+      "title": "Duden — Auskunft",
+      "url": "https://www.duden.de/rechtschreibung/Auskunft",
+      "scope": "المؤنث وجمع Auskünfte للإفادة جوابًا عن سؤال؛ معنى مكتب الاستعلامات بلا جمع في هذا الاستعمال، لا تعميم واحد لكل معنى.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SOURCE",
+      "title": "Duden — Quelle",
+      "url": "https://www.duden.de/rechtschreibung/Quelle",
+      "scope": "المؤنث وجمع Quellen؛ مصدر نصي أو جهة معلومات، مع معانٍ أخرى كنبع الماء. ذكر المصدر وحده لا يثبت وثوقه.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PASSIVE",
+      "title": "Lingolia — Passiv",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/passiv",
+      "scope": "werden مع Partizip II للمبني للمجهول ومطابقة الفاعل. قرئ الجزآن، ولا نعمم تبسيط sein+zu بمعنى الإلزام على عبارة zu finden ist السياقية التي تفيد إمكان العثور.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "FUTURE",
+      "title": "Lingolia — Futur I",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/futur-1",
+      "scope": "werden مع المصدر، مقابل Partizip II في المبني للمجهول؛ verfügbar sein wird في القراءة لا eröffnet wird في الحوار. لا يثبت صياغة المستقبل أن الحدث تحقق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CURRENT",
+      "title": "Duden — aktuell",
+      "url": "https://www.duden.de/rechtschreibung/aktuell",
+      "scope": "حالي/آني ومتعلق بالحاضر؛ لا تعني الكلمة وحدها موثوقًا أو صحيحًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "RELIABLE",
+      "title": "Duden — zuverlässig",
+      "url": "https://www.duden.de/rechtschreibung/zuverlaessig",
+      "scope": "قابل للاعتماد عليه، أو عالي الثقة من حيث صحة المعلومة؛ ليس مرادفًا لـaktuell.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CLOSE",
+      "title": "Duden — Die Grußformel in Brief und E-Mail",
+      "url": "https://www.duden.de/sprachwissen/sprachratgeber/Die-Gru%C3%9Fformel-in-Brief-und-E-Mail",
+      "scope": "صيغة Mit freundlichen Grüßen مناسبة رسمية ودون علامة نهاية؛ لا نتخذ فاصلة تفريغ النطق معيارًا لرسالة مكتوبة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1,
+      "searchResultId": 1
+    },
+    {
+      "id": "COMMA",
+      "title": "Duden — Komma",
+      "url": "https://www.duden.de/sprachwissen/rechtschreibregeln/komma",
+      "scope": "قرئ الجزء0 لفصل التابعة والرئيسية، والجزء4 للنداء والتحية: فاصلة ثم بداية صغيرة ما لم تقتض الكلمة غير ذلك، وختام عادة دون علامة. لم تقرأ الأجزاء1–3؛ توجد استثناءات سويسرا/ليختنشتاين.",
+      "access": "scoped_fetched_chunks",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        4
+      ],
+      "totalChunks": 5,
+      "searchResultId": 2
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة رسالة، استماع اختياري، قواعد، تواصل رسمي، كتابة وجهر",
+      "finding": "المدة تقديرية قابلة للتقسيم؛ الاستماع المسجل اختياري، والجهر مطلوب فقط فيP02.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أطرح سؤالًا غير مباشر بأدب باستخدام **ob** أو أداة استفهام مثل **wann / wo / welche**.",
+      "finding": "الهدف سؤال مهذب مضمن؛ لا شهادة B1 أو مهارة تحرير أخبار مثبتة بالاختبار وحده.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "تنبيه مفردات: aktuell حاليّ أو حديث، وzuverlässig موثوق؛ ليستا مترادفتين ولا تضمن حداثة الخبر صحته. Quelle هنا مصدر معلومة لا نبع ماء؛ وAuskunft إفادة جوابًا عن سؤال، وقد تعني مكتب استعلامات في سياق آخر. الشرطة في الجدول تعليمية ولا تنفي كل جمع في كل معنى.",
+      "finding": "فُصل aktuell عن zuverlässig ومعنى Quelle الإعلامي ومعنيا Auskunft؛ الدلالة لا تمنح ضمانًا لمصداقية خبر.",
+      "sourceIds": [
+        "CURRENT",
+        "RELIABLE",
+        "SOURCE",
+        "INFO"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستخدم **ob** عندما يكون السؤال المباشر إجابته عادةً نعم أو لا. ونُبقي أداة السؤال مثل **wann, wo, welche** عندما نطلب معلومة محددة. في النماذج المدروسة يأتي الفعل المصرف في نهاية الجملة التابعة، وتفصلها فاصلة عن الرئيسية.",
+      "finding": "ob لنعم/لا وأداة السؤال للمعلومة؛ أضيفت الفاصلة وقيد النماذج لقاعدة موضع المصرف.",
+      "sourceIds": [
+        "IND",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "- في السؤال غير المباشر يأتي الفعل المصرف في نهاية الجزء التابع: **ob der Beitrag online ist**.",
+      "finding": "القاعدة لنهاية الجزء التابع ob ... ist، لا لنهاية الرئيسية كلها أو كل فعل غير مصرف.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "- إذا بدأت الجملة الرئيسية بسؤال مهذب، نضع علامة استفهام في نهايتها: **Könnten Sie mir sagen, wann …?**",
+      "finding": "الرئيسية سؤال Könnten Sie، فتستعمل ?؛ غير المباشر داخلها لا يفرض النقطة.",
+      "sourceIds": [
+        "IND",
+        "QMARK"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "- إذا كانت الجملة الرئيسية خبرية، نضع نقطة: **Ich möchte wissen, wann die Sendung beginnt.**",
+      "finding": "الرئيسية Ich möchte wissen خبرية، فتستعمل . رغم طلب المعلومة داخلها.",
+      "sourceIds": [
+        "IND",
+        "QMARK"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Redaktion | die Redaktionen | هيئة التحرير |",
+      "finding": "Redaktion مؤنث وجمع Redaktionen، هيئة تحرير لا اسم الصحيفة بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Meldung | die Meldungen | خبر موجز |",
+      "finding": "Meldung مؤنث، Meldungen؛ خبر موجز/إبلاغ بحسب السياق، لا كل تفصيل تقرير مطول.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Beitrag | die Beiträge | مادة / تقرير إعلامي |",
+      "finding": "Beitrag مذكر، Beiträge بأوملاوت؛ مساهمة أو مادة إعلامية هنا، لا رسم مالي في هذا السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Quelle | die Quellen | مصدر |",
+      "finding": "Quelle مؤنث وجمع Quellen؛ مصدر معلومة لا نبع؛ قائمة المصادر ليست بذاتها شهادة صحة.",
+      "sourceIds": [
+        "SOURCE"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Anfrage | die Anfragen | استفسار رسمي |",
+      "finding": "Anfrage مؤنث وجمع Anfragen؛ طلب استفسار، ولا يلزم أن يكون كل استعمال رسميًا خارج سياق الدرس.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Auskunft | die Auskünfte | معلومة / إفادة |",
+      "finding": "Auskunft مؤنث وجمع Auskünfte للإفادة؛ مكتب الاستعلامات معنى آخر لا يجمع بهذا المعنى في المرجع.",
+      "sourceIds": [
+        "INFO"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Ausgabe | die Ausgaben | عدد / إصدار |",
+      "finding": "Ausgabe مؤنث وجمع Ausgaben؛ عدد/إصدار هنا لا مصروف أو تسليم بضائع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| das Archiv | die Archive | الأرشيف |",
+      "finding": "Archiv محايد وجمع Archive؛ الأرشيف لا مكانه المحدد أو إتاحته تلقائيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| die Rückfrage | die Rückfragen | سؤال متابعة |",
+      "finding": "Rückfrage مؤنث، Rückfragen؛ سؤال متابعة أو استيضاح، لا جواب مؤكد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Berichtigung | die Berichtigungen | تصحيح معلومة |",
+      "finding": "Berichtigung مؤنث، Berichtigungen؛ تصحيح، ولا يثبت أن النص موضوع المهمة خاطئ.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| mitteilen | teilt mit | يبلّغ / يفيد |",
+      "finding": "mitteilen منفصل في teilt mit؛ أفعال höflich mir mitteilen وIhnen ... مناسبة للمتلقي.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| bestätigen | bestätigt | يؤكد |",
+      "finding": "bestätigen في الحاضر bestätigt؛ المعنى يؤكد، لكن السؤال هل يمكن تأكيد شيء لا يثبت صحته.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| sich beziehen auf + Akkusativ | bezieht sich | يشير إلى / يتعلق بـ |",
+      "finding": "sich beziehen auf + Akkusativ يقتضي ضميرًا مناسبًا للفاعل؛ معich تصبحmich، ومثالIhren Beitrag فيالمساعدة يبين الحالة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| veröffentlichen | veröffentlicht | ينشر |",
+      "finding": "veröffentlichen الحاضر veröffentlicht؛ نشر لا تأكيد صحة المنشور.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| aktuell / zuverlässig | — | حاليّ / موثوق |",
+      "finding": "aktuell حالي/حديث وzuverlässig موثوق، صفتان لا مترادفتان ولا جمع اسمي هنا.",
+      "sourceIds": [
+        "CURRENT",
+        "RELIABLE"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| im Voraus | — | مسبقًا |",
+      "finding": "im Voraus تعبير مسبقًا؛ Voraus بحرف كبير في الصيغة المحفوظة.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Ist der Beitrag online?",
+      "finding": "Ist سؤال مباشر نعم/لا؛ المصرف أول السؤال، وليس تقريرًا أن المادة متاحة.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Könnten Sie mir sagen, ob der Beitrag online ist?",
+      "finding": "ob تابعة تنتهي ist؛ الرئيسية Könnten سؤال فتأخذ ?.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Wann erscheint die nächste Ausgabe?",
+      "finding": "Wann سؤال مباشر عن الموعد؛ erscheint بعد الأداة وقبل الفاعل.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Ich möchte wissen, wann die nächste Ausgabe erscheint.",
+      "finding": "wann محفوظة لكن erscheint آخر التابعة؛ الرئيسية خبرية بنقطة.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Welche Quellen nennt der Bericht?",
+      "finding": "Welche Quellen مفعول، وder Bericht فاعل، وnennt في موقع السؤال المستقل.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "grammar-06",
+      "text": "Könnten Sie mir mitteilen, welche Quellen der Bericht nennt?",
+      "finding": "der Bericht فاعل وnennt آخر التابعة؛ Könnten رئيسية سؤال مهذب.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **نوعان داخل جملة واحدة:** Könnten Sie mir sagen, ob der Beitrag online ist? سؤال رئيسي مباشر مهذب يتضمن سؤالًا تابعًا غير مباشر. وصفه في T01 وQ01 بأنه غير مباشر يخص الجزء المضمن، لا ينفي أن الرئيسية استفهامية. Ich möchte wissen تمهيد خبري، وليس مجرد وجود علامة الاستفهام هو معيار التصنيف.",
+      "finding": "تمييز الجملة المحتوية عن التابعة يمنع مساواة علامة? بالسؤال المباشر وحده.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **اختيار الأداة:** ob للسؤال هل، وwann للوقت، وwo للمكان، وwelche مع الاسم لاختيار أيّ مصادر أو عدد. لا تستبدل ob بـwenn الشرطية هنا. السؤال عن وجود قائمة ليس خبرًا بأنها موجودة، والسؤال عن الموعد لا يعطينا موعدًا.",
+      "finding": "لا نخلط ob هل مع wenn الشرطية؛ طلب المعلومة ليس إعطاء جوابها.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **الفاعل والمفعول:** في welche Quellen der Bericht nennt، المصادر مفعول جمع منصوب والتقرير فاعل مفرد، لذا nennt؛ لا نضيف die Quellen مرة ثانية. ليست كل أداة سؤال متبوعة بفاعل منفصل: **Wer ruft heute an?** تصبح **Können Sie mir sagen, wer heute anruft?**؛ wer نفسها الفاعل. welche تتغير بحسب الحالة والاسم، وليست صيغة ثابتة لكل سؤال.",
+      "finding": "المصادر مفعول والتقرير فاعل؛ wer في المثال الجديد نفسها الفاعل، فلا نضيف فاعلًا شكليًا.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **آخر المصرف لا آخر كل فعل:** في welche Ausgabe ich lesen soll، المصدر lesen قبل المصرف soll. وفي wann die Sendung als Podcast verfügbar sein wird يأتي sein قبل wird في Futur I؛ أما eröffnet wird وgenannt werden فمبني للمجهول مع Partizip II. لا نجعل كل werden مستقبلًا؛ am Samstag يعطي الموعد المستقبلي في الحوار مع صيغة المضارع المبني للمجهول.",
+      "finding": "lesen قبل soll وsein قبل wird في المستقبل؛ eröffnet/genannt قبل werden في المجهول. الموعد المستقبلي لا يفرض صيغة Futur.",
+      "sourceIds": [
+        "PASSIVE",
+        "FUTURE"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **البادئة والصيغ المساعدة:** Ich rufe an تصبح wann ich anrufe؛ لا نفصل an في نهاية التابعة وحدها. وفي das Archiv zu finden ist، التعبير يعني في هذا السياق أين يمكن العثور عليه، لا أنه التزام بالعثور عليه. sich beziehen auf يقتضي Akkusativ مثل **Ich beziehe mich auf Ihren Beitrag.**، والضمير يتغير مع الفاعل.",
+      "finding": "anrufe موصول في التابعة؛ zu finden ist هنا إمكان العثور، وmich/Ihren تتبعان الفاعل والحالة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-06",
+      "text": "- **الفاصلة وعلامة النهاية:** نفصل الرئيسية والتابعة بفاصلة، ثم نختار ? أو . بحسب نوع الجملة الكاملة في أمثلتنا. بعد Könnten Sie …? استفهام، وبعد Ich möchte wissen, … نقطة. ليست كل جملة تبدأ بفعل سؤالًا في جميع استعمالات الألمانية؛ قاعدة التمرين لهذه الطلبات الاستفهامية الواضحة.",
+      "finding": "الفاصلة حد التابعة؛ علامة النهاية تتعلق بالرئيسية في النمط المحدد، لا بكل جملة تبدأ بفعل.",
+      "sourceIds": [
+        "IND",
+        "COMMA",
+        "QMARK"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **شكل الرسالة المكتوبة:** Betreff عنوان لا جملة من متن المهمة. نتبع هنا النمط الألماني الشائع: فاصلة بعد Sehr geehrte Damen und Herren, ثم ich بحرف صغير؛ لا تصغير اسم أو Sie لو بدأ به السطر. نكتب Mit freundlichen Grüßen بلا فاصلة أو نقطة، ثم اسمًا خياليًا. الترقيم المضاف في تفريغ القراءة الصوتية للعنوان والختام خدمة للنطق، لا نموذج لترقيم رسالة مكتوبة؛ التسجيل محفوظ كما هو.",
+      "finding": "التحية بفاصلة وich صغيرة والختام دون فاصلة؛ ترقيم التفريغ الصوتي ليس معيار رسالة مكتوبة.",
+      "sourceIds": [
+        "COMMA",
+        "CLOSE"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **الاحترام والضمائر:** Sie/Ihnen/Ihr بصيغها المناسبة للمخاطب الرسمي؛ Ihnen ليس اسمًا أو جنسًا، وmir تعود إلى المتكلم. في Sie wird am Samstag eröffnet تعود Sie إلى die Ausstellung، وليست صيغة مخاطبة الاحترام؛ Quellen جمع يفسر werden في المبني للمجهول، وBericht مفرد يفسر nennt في المعلوم.",
+      "finding": "Sie الاحترام تختلف عن ضمير Ausstellung؛ werden للجمع في المجهول وnennt للمفرد في المعلوم.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "- **افصل الوقائع والطلبات:** حوار Leila يذكر السبت وطلب معلومات اليوم بعد الظهر. رسالة Noor سمعت تقريرًا أمس وتسأل عن الموعد والمصادر، ولا يرد فيها جواب. نص Sami يسأل عن العدد والتفريغ والأرشيف؛ الموظفة تقول إنها سترسل المعلومات، ولا يثبت النص استلامها أو مكان الأرشيف. لا ننقل جوابًا من قصة إلى أخرى أو نستنتج جنس Noor من الاسم وحده.",
+      "finding": "أوقات القصص مستقلة؛ قول الإرسال لا يثبت التسليم أو مكان الأرشيف.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **دليل فردي دون تسجيل:** P01 رسالة كتابة فقط: عنوان وتحية وخمس جمل متن وختام واسم خيالي. P02 نص جهة المتصل من أربعة أسطر تكتبه ثم تقرؤه بنفسك، دون شريك أو ردود موظف مخترعة. ثلاثة إقرارات وحدا120/125 حرفًا لا يصححان عدد الجمل أو اللغة أو النطق آليًا. التسجيلات اختيارية ومعلقة؛ لا استماع أو اعتماد جديد.",
+      "finding": "المهمتان محددتان دون بديل شفهي يصطدم بحقل النص؛ الطول والإقرارات ليست تصحيحًا آليًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Ich bereite einen kurzen Beitrag über eine Ausstellung vor.",
+      "finding": "Leila تحضر مساهمة قصيرة عن معرض؛ bereite ... vor منفصل، ولا تقول إن التقرير نُشر.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Welche Informationen fehlen Ihnen noch?",
+      "finding": "المحرر يسأل عما ينقص من معلومات؛ Ihnen احترام لا ضمير غائب.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Können Sie mir sagen, wann die Ausstellung eröffnet wird?",
+      "finding": "سؤال غير مباشر عن موعد الافتتاح؛ eröffnet wird مبني للمجهول والمصرف أخير.",
+      "sourceIds": [
+        "IND",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Sie wird am Samstag eröffnet.",
+      "finding": "السبت فقط بلا ساعة؛ Sie تعود إلى المعرض، والمضارع المجهول يستعمل لموعد مستقبلي.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Danke. Ich möchte auch wissen, ob die Eintrittskarten online erhältlich sind.",
+      "finding": "شكر ثم طلب معرفة هل تذاكر الدخول متاحة إلكترونيًا؛ erhältlich sind جمع.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ja, das steht auf der Webseite des Kulturzentrums.",
+      "finding": "Ja جواب بالتوفر في الحوار مع إحالة للموقع؛ لا يعطي ثمنًا أو مجانية.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Könnten Sie mir außerdem mitteilen, welche Quellen im Bericht genannt werden?",
+      "finding": "أي المصادر مذكورة في التقرير؛ Quellen فاعل جمع في المجهول فالمساعد werden.",
+      "sourceIds": [
+        "IND",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-08",
+      "text": "Natürlich. Ich schicke Ihnen die Angaben heute Nachmittag.",
+      "finding": "وعد بالإرسال اليوم بعد الظهر، لا إثبات وصول المعلومات؛ لا ننقل الوقت إلى رسالة Noor.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Betreff: Frage zum Radiobeitrag über eine Ausstellung.",
+      "finding": "عنوان الموضوع عن تقرير إذاعي ومعرض؛ نقطة التفريغ ليست إلزامًا للعنوان المكتوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Sehr geehrte Damen und Herren, ich habe gestern Ihren Beitrag über eine neue Ausstellung gehört.",
+      "finding": "تحية رسمية وhabe gehört يحكي الاستماع أمس؛ Ihren مخاطبة رسمية، ولا موعد السبت من الحوار هنا.",
+      "sourceIds": [
+        "COMMA"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Könnten Sie mir bitte mitteilen, wann die Sendung als Podcast verfügbar sein wird?",
+      "finding": "طلب موعد إتاحة البودكاست؛ sein wird مستقبل لا مبني للمجهول، والنص لا يعطي موعدًا.",
+      "sourceIds": [
+        "IND",
+        "FUTURE"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Außerdem möchte ich wissen, welche Quellen Sie im Beitrag nennen.",
+      "finding": "طلب المصادر التي تذكرها الجهة؛ Sie فاعل وwelche Quellen مفعول، ولا أسماء مصادر معطاة.",
+      "sourceIds": [
+        "IND",
+        "SOURCE"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Können Sie bestätigen, ob auf Ihrer Webseite eine vollständige Liste der Quellen steht?",
+      "finding": "سؤال هل توجد قائمة كاملة على الموقع؛ Liste مفرد فالفعل steht، ولا يثبت السؤال وجودها.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Vielen Dank im Voraus.",
+      "finding": "شكر مقدمًا لا إثبات وصول الجواب؛ Voraus كبيرة في التعبير المحفوظ.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Mit freundlichen Grüßen, Noor.",
+      "finding": "ختام واسم Noor؛ فاصلة تفريغ الصوت محفوظة للنطق، أما الختام المكتوب في المصدر فدون فاصلة.",
+      "sourceIds": [
+        "CLOSE"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Worüber hat Noor einen Radiobeitrag gehört?",
+      "finding": "Über eine neue Ausstellung. — المعرض موضوع التقرير لا موضوع رسالة أخرى.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Welche Information möchte Noor zur Verfügbarkeit des Podcasts erhalten?",
+      "finding": "Sie möchte wissen, wann die Sendung als Podcast verfügbar sein wird. — صُحح السؤال إلى نوع المعلومة المطلوبة؛ لا يطلب تاريخًا لم يرد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Welche Information zu den Quellen möchte sie erhalten?",
+      "finding": "Sie möchte wissen, welche Quellen im Beitrag genannt werden. — تحديد المصادر طلب لا إجابة بأسماء؛ صيغةالمجهول فيالمفتاح تعيد المعنى.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was möchte sie über die Webseite bestätigt bekommen?",
+      "finding": "Ob eine vollständige Quellenliste auf der Webseite steht. — هذا الاستفسار لا إثبات نشر قائمة كاملة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Welche Grußformel steht am Ende der Nachricht?",
+      "finding": "Mit „Mit freundlichen Grüßen“. — صيغةالختام لا التحيةالافتتاحية؛ علاماتالاقتباس فيالمفتاح ليستجزءًا منالختام.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Guten Tag, hier ist Sami.",
+      "finding": "Sami يقدم نفسه؛ تحية واتصال دون مؤسسة حقيقية أو عنوان شخصي.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich rufe an, weil ich wissen möchte, wann die nächste Ausgabe des Stadtmagazins erscheint.",
+      "finding": "يريد موعد العدد القادم؛ weil يتضمن wann، وmöchte وerscheint ينهيان تابعتين مختلفتين.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Können Sie mir sagen, ob das vollständige Transkript online verfügbar ist?",
+      "finding": "يسأل هل التفريغ الكامل متاح؛ ist بعد verfügbar، ولا جواب بالتوفر.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Ich möchte auch wissen, wo ich das Archiv finde.",
+      "finding": "يريد معرفة أين يجد الأرشيف؛ finde آخر wo، ولا مكان فعلي معطى.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Die Mitarbeiterin am Telefon sagt, sie schickt mir die Informationen per E-Mail.",
+      "finding": "الموظفة تقول إنها سترسل بالبريد الإلكتروني؛ sie schickt نقل قول بالمؤشر وترتيبV2، لا تابعob أو إثبات استلام.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wer ruft an?",
+      "finding": "Sami هو الاسم المصرح به.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was möchte Sami über die nächste Ausgabe wissen?",
+      "finding": "Wann sie erscheint: موعد الصدور مطلوب لا معلوم؛ sie تعود إلىAusgabe.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was fragt er über das Transkript?",
+      "finding": "Ob das vollständige Transkript online verfügbar ist: طلب تحقق من الإتاحة لا تأكيدها.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was möchte er über das Archiv wissen?",
+      "finding": "Er möchte wissen, wo das Archiv zu finden ist: السؤال المصحح يطلب موضوع الاستفسار، لا مكانًا لم يرد.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Wie schickt die Mitarbeiterin die Informationen?",
+      "finding": "Per E-Mail: الوسيلة المذكورة في قول الموظفة، لا إيصال استلام.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B1-10-T01",
+      "text": "اكتب **مباشر** للسؤال المستقل، أو **غير مباشر** للجملة التي تحتوي سؤالًا تابعًا، ولو كانت الرئيسية نفسها سؤالًا مهذبًا:\n\n1. **Wann erscheint die nächste Ausgabe?**\n2. **Ich möchte wissen, wann die nächste Ausgabe erscheint.**\n3. **Könnten Sie mir sagen, ob der Beitrag online ist?**\n4. **Welche Quellen nennt der Bericht?**",
+      "finding": "التصنيف صار لاحتواء سؤال تابع لا إنكار سؤال الرئيسية.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Wann erscheint die nächste Ausgabe?**",
+          "answer": "مباشر",
+          "finding": "Wann سؤال مستقل؛ الفعل قبل الفاعل، لا تابع داخل رئيسية."
+        },
+        {
+          "index": 2,
+          "text": "**Ich möchte wissen, wann die nächste Ausgabe erscheint.**",
+          "answer": "غير مباشر",
+          "finding": "تحتوي wann تابعة ورئيسية خبرية بنقطة."
+        },
+        {
+          "index": 3,
+          "text": "**Könnten Sie mir sagen, ob der Beitrag online ist?**",
+          "answer": "غير مباشر",
+          "finding": "تحتوي ob تابعة رغم أن الرئيسية سؤال مهذب."
+        },
+        {
+          "index": 4,
+          "text": "**Welche Quellen nennt der Bericht?**",
+          "answer": "مباشر",
+          "finding": "Welche Quellen سؤال مباشر عن المفعول، لا تابع داخل جملة أخرى."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T02",
+      "text": "1. Können Sie bestätigen, ______ die Meldung heute veröffentlicht wird? (نعم/لا)\n2. Ich möchte wissen, ______ die nächste Ausgabe erscheint. (متى)\n3. Können Sie mir mitteilen, ______ das Archiv zu finden ist? (أين)\n4. Wissen Sie, ______ Quellen der Beitrag verwendet? (أيّ)",
+      "finding": "المقاصد الأربعة معطاة فلا فراغ متعدد التأويل.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Können Sie bestätigen, ______ die Meldung heute veröffentlicht wird? (نعم/لا)",
+          "answer": "ob",
+          "finding": "قيد نعم/لا يقتضي ob، وveröffentlicht wird في نهاية التابعة."
+        },
+        {
+          "index": 2,
+          "text": "Ich möchte wissen, ______ die nächste Ausgabe erscheint. (متى)",
+          "answer": "wann",
+          "finding": "قيد متى يقتضي wann، لا ob للسؤال عن مجرد الصدور."
+        },
+        {
+          "index": 3,
+          "text": "Können Sie mir mitteilen, ______ das Archiv zu finden ist? (أين)",
+          "answer": "wo",
+          "finding": "قيد أين يقتضي wo؛ لا يوجد جواب مكاني مطلوب."
+        },
+        {
+          "index": 4,
+          "text": "Wissen Sie, ______ Quellen der Beitrag verwendet? (أيّ)",
+          "answer": "welche",
+          "finding": "أيّ يقتضي welche مع Quellen جمعًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T03",
+      "text": "اكتب صيغة الحاضر الموافقة للفاعل؛ موضع الفعل معطى أصلًا، فلا تغير ترتيب الكلمات الأخرى.\n\n1. Können Sie mir sagen, ob der Artikel online ______? (sein)\n2. Ich möchte wissen, wann die Sendung ______. (beginnen)\n3. Könnten Sie mitteilen, welche Quellen der Bericht ______? (nennen)",
+      "finding": "التكليف تصريف بالحاضر في موضع محدد لا وضع الفعل من الصفر.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Können Sie mir sagen, ob der Artikel online ______? (sein)",
+          "answer": "ist",
+          "finding": "Artikel مفرد، وsein في الحاضر تصبح ist."
+        },
+        {
+          "index": 2,
+          "text": "Ich möchte wissen, wann die Sendung ______. (beginnen)",
+          "answer": "beginnt",
+          "finding": "Sendung مفرد، فتكون beginnt؛ الموضع معطى أصلًا."
+        },
+        {
+          "index": 3,
+          "text": "Könnten Sie mitteilen, welche Quellen der Bericht ______? (nennen)",
+          "answer": "nennt",
+          "finding": "Bericht فاعل مفرد فالتصريف nennt رغم أن المفعول Quellen جمع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T04",
+      "text": "1. **Wann ist der Beitrag online?** → Können Sie mir mitteilen, wann der Beitrag ______ ______?\n2. **Gibt es eine Liste der Quellen?** → Können Sie mir sagen, ob es eine Liste der Quellen ______?\n3. **Welche Ausgabe soll ich lesen?** → Ich möchte wissen, welche Ausgabe ich lesen ______.\n4. **Wer ruft heute an?** → Können Sie mir sagen, wer heute ______? (حاضر؛ أداة السؤال نفسها فاعل)",
+      "finding": "التحويل مع الإطار معطى؛ أضيف سؤال wer الفاعل.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Wann ist der Beitrag online?** → Können Sie mir mitteilen, wann der Beitrag ______ ______?",
+          "answer": "online ist",
+          "finding": "فراغان: online ثم ist؛ يختلف ترتيب التابعة عن السؤال المستقل."
+        },
+        {
+          "index": 2,
+          "text": "**Gibt es eine Liste der Quellen?** → Können Sie mir sagen, ob es eine Liste der Quellen ______?",
+          "answer": "gibt",
+          "finding": "نضيف gibt آخر التابعة، ووجود القائمة ما زال سؤالًا لا تأكيدًا."
+        },
+        {
+          "index": 3,
+          "text": "**Welche Ausgabe soll ich lesen?** → Ich möchte wissen, welche Ausgabe ich lesen ______.",
+          "answer": "soll",
+          "finding": "lesen موجودة قبل الفراغ؛ نضيف المصرف soll فقط."
+        },
+        {
+          "index": 4,
+          "text": "**Wer ruft heute an?** → Können Sie mir sagen, wer heute ______? (حاضر؛ أداة السؤال نفسها فاعل)",
+          "answer": "anruft",
+          "finding": "wer نفسها الفاعل، وanruft حاضر موصول؛ لا ruft ... an في التابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. استمعت نور إلى تقرير إذاعي عن معرض جديد.\n2. تسأل نور عن موعد إتاحة الحلقة بصيغة البودكاست.\n3. لا تهتم نور بالمصادر المذكورة في التقرير.\n4. تريد أن تعرف إن كانت قائمة المصادر منشورة على الموقع.\n5. تنهي الرسالة بتحية رسمية.",
+      "finding": "الأحكام الخمسة من الرسالة لا من حوار السبت.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "استمعت نور إلى تقرير إذاعي عن معرض جديد.",
+          "answer": "صحيح",
+          "finding": "موضوع التقرير الإذاعي معرض جديد صراحة."
+        },
+        {
+          "index": 2,
+          "text": "تسأل نور عن موعد إتاحة الحلقة بصيغة البودكاست.",
+          "answer": "صحيح",
+          "finding": "تطلب موعد إتاحة البودكاست؛ التاريخ نفسه غير معطى."
+        },
+        {
+          "index": 3,
+          "text": "لا تهتم نور بالمصادر المذكورة في التقرير.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ يوجد سؤال صريح عن المصادر."
+        },
+        {
+          "index": 4,
+          "text": "تريد أن تعرف إن كانت قائمة المصادر منشورة على الموقع.",
+          "answer": "صحيح",
+          "finding": "تطلب معرفة وجود القائمة على الموقع، لا تثبت أنها منشورة."
+        },
+        {
+          "index": 5,
+          "text": "تنهي الرسالة بتحية رسمية.",
+          "answer": "صحيح",
+          "finding": "Mit freundlichen Grüßen ختام رسمي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T06",
+      "text": "أكمل بالألمانية وفق النص؛ بند4 ينقل قول الموظفة لا يثبت إرسالًا منجزًا:\n\n1. Sami möchte wissen, wann die nächste Ausgabe des ______ erscheint.\n2. Er fragt, ob das vollständige ______ online verfügbar ist.\n3. Er möchte wissen, wo das ______ zu finden ist.\n4. Die Mitarbeiterin schickt die Angaben per ______.",
+      "finding": "الفراغات الألمانية ومفاتيحها متطابقة، مع تمييز قول الإرسال من إنجازه.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Sami möchte wissen, wann die nächste Ausgabe des ______ erscheint.",
+          "answer": "Stadtmagazins",
+          "finding": "Stadtmagazins في Genitiv بعد des؛ لا نحذف s."
+        },
+        {
+          "index": 2,
+          "text": "Er fragt, ob das vollständige ______ online verfügbar ist.",
+          "answer": "Transkript",
+          "finding": "Transkript محايد؛ أداة التعريف والصفة معطاتان ولا تكرران."
+        },
+        {
+          "index": 3,
+          "text": "Er möchte wissen, wo das ______ zu finden ist.",
+          "answer": "Archiv",
+          "finding": "Archiv اسم المطلوب، لا مكان الأرشيف الذي لم يذكر."
+        },
+        {
+          "index": 4,
+          "text": "Die Mitarbeiterin schickt die Angaben per ______.",
+          "answer": "E-Mail",
+          "finding": "E-Mail وسيلة الإرسال المعلنة، لا موعد تسليم فعلي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T07",
+      "text": "1. **Ich möchte wissen, wann die Sendung beginnt__**\n2. **Könnten Sie mir sagen, ob die Sendung online ist__**\n3. **Wann beginnt die Sendung__**",
+      "finding": "الترقيم يتبع نوع الجملة الحاوية لا مجرد أداة السؤال التابعة.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Ich möchte wissen, wann die Sendung beginnt__**",
+          "answer": "نقطة",
+          "finding": "Ich möchte wissen رئيسية خبرية فتأخذ النقطة."
+        },
+        {
+          "index": 2,
+          "text": "**Könnten Sie mir sagen, ob die Sendung online ist__**",
+          "answer": "استفهام",
+          "finding": "Könnten Sie رئيسية سؤال فتأخذ ? رغم تضمين ob."
+        },
+        {
+          "index": 3,
+          "text": "**Wann beginnt die Sendung__**",
+          "answer": "استفهام",
+          "finding": "Wann سؤال مباشر مستقل، فتأخذ ?."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-T08",
+      "text": "**أ — P01: كتابة فقط**\n\nاكتب رسالة إلى هيئة تحرير خيالية: عنوان موضوع وتحية رسمية، ثم خمس جمل في المتن. عرّف في الأولى موضوع مساهمة عن معرض؛ اسأل في الثانية عن موعد إتاحة البودكاست بـwann؛ وفي الثالثة عن وجود قائمة مصادر كاملة على الموقع بـob؛ عبّر في الرابعة عن ترقب الرد؛ واشكر في الخامسة. استخدم صيغة Sie ثم اختم بـMit freundlichen Grüßen واسم خيالي. العنوان والتحية والختام والاسم لا تدخل في الجمل الخمس. هذه كتابة فقط بلا جهر أو إرسال فعلي أو بيانات اتصال حقيقية.\n\n**ب — P02: كتابة وجهر**\n\nاكتب جهة المتصل فقط في محاكاة اتصال بجهة إعلامية خيالية من أربعة أسطر: الأول تحية وسؤال غير مباشر بـwann عن موعد صدور العدد القادم من مجلة المدينة؛ الثاني سؤال غير مباشر بـob عن إتاحة التفريغ الكامل على الإنترنت؛ الثالث سؤال غير مباشر بـwo عن مكان الأرشيف؛ الرابع شكر ووداع. استخدم صيغة Sie في الطلبات المهذبة، ثم اقرأ الأسطر بصوت واضح بنفسك. لا يلزم شريك أو رد موظف أو تسجيل أو اتصال حقيقي.",
+      "finding": "المصدر والمعايير والإطار ومطالب الجمل/الأسطر متطابقة، دون شريك أو تسجيل.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "ich schreibe an Ihre fiktive Redaktion wegen eines Beitrags über eine Ausstellung.",
+          "answer": "ich schreibe an Ihre fiktive Redaktion wegen eines Beitrags über eine Ausstellung.",
+          "finding": "موضوع معرض وجهة خيالية واضحان في المتن."
+        },
+        {
+          "index": 2,
+          "text": "Könnten Sie mir mitteilen, wann der Beitrag als Podcast verfügbar ist?",
+          "answer": "Könnten Sie mir mitteilen, wann der Beitrag als Podcast verfügbar ist?",
+          "finding": "wann لطلب موعد البودكاست، دون اختراع موعد."
+        },
+        {
+          "index": 3,
+          "text": "Können Sie mir sagen, ob eine vollständige Quellenliste auf Ihrer Webseite steht?",
+          "answer": "Können Sie mir sagen, ob eine vollständige Quellenliste auf Ihrer Webseite steht?",
+          "finding": "ob لوجود قائمة كاملة على الموقع، لا تقرير وجودها."
+        },
+        {
+          "index": 4,
+          "text": "Ich freue mich auf Ihre Antwort.",
+          "answer": "Ich freue mich auf Ihre Antwort.",
+          "finding": "ترقب الجواب دون ادعاء تلقيه."
+        },
+        {
+          "index": 5,
+          "text": "Ich danke Ihnen im Voraus.",
+          "answer": "Ich danke Ihnen im Voraus.",
+          "finding": "شكر في الجملة الخامسة؛ إطار الرسالة خارج عد الجمل."
+        },
+        {
+          "index": 6,
+          "text": "Guten Tag, können Sie mir sagen, wann die nächste Ausgabe Ihres Stadtmagazins erscheint?",
+          "answer": "Guten Tag, können Sie mir sagen, wann die nächste Ausgabe Ihres Stadtmagazins erscheint?",
+          "finding": "تحية مع سؤال wann عن العدد القادم في السطر الأول."
+        },
+        {
+          "index": 7,
+          "text": "Könnten Sie mir mitteilen, ob das vollständige Transkript online verfügbar ist?",
+          "answer": "Könnten Sie mir mitteilen, ob das vollständige Transkript online verfügbar ist?",
+          "finding": "ob للتفريغ الكامل على الإنترنت في السطر الثاني."
+        },
+        {
+          "index": 8,
+          "text": "Ich möchte außerdem wissen, wo ich das Archiv finde.",
+          "answer": "Ich möchte außerdem wissen, wo ich das Archiv finde.",
+          "finding": "wo للأرشيف مع رئيسية خبرية في السطر الثالث."
+        },
+        {
+          "index": 9,
+          "text": "Vielen Dank für Ihre Auskunft und auf Wiederhören.",
+          "answer": "Vielen Dank für Ihre Auskunft und auf Wiederhören.",
+          "finding": "شكر ووداع في السطر الرابع لا دور موظف أو جواب مخترع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q01",
+      "text": "أي جملة تتضمن سؤالًا غير مباشر؟",
+      "finding": "الجملة الثانية تضم سؤالًا تابعًا يبدأ بـob ويأتي فعله المصرف ist في النهاية؛ أما الجملتان الأخريان فسؤالان مباشران.",
+      "sourceIds": [
+        "IND"
+      ],
+      "options": [
+        "Welche Quellen nennt der Bericht?",
+        "Könnten Sie mir sagen, ob der Beitrag online ist?",
+        "Wann erscheint die nächste Ausgabe?"
+      ],
+      "answer": "Könnten Sie mir sagen, ob der Beitrag online ist?",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-10-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Welche Quellen nennt der Bericht?",
+          "correct": false,
+          "finding": "سؤال Welche مستقل بلا إطار رئيسي حاوٍ."
+        },
+        {
+          "index": 1,
+          "text": "Könnten Sie mir sagen, ob der Beitrag online ist?",
+          "correct": true,
+          "finding": "ob تابعة داخل سؤال رئيسي مهذب؛ هذا معيار المطلوب."
+        },
+        {
+          "index": 2,
+          "text": "Wann erscheint die nächste Ausgabe?",
+          "correct": false,
+          "finding": "Wann مستقل وليس مضمنًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q02",
+      "text": "أكمل سؤال نعم/لا غير المباشر: Können Sie bestätigen, ___ die Meldung heute veröffentlicht wird?",
+      "finding": "نستخدم ob لنقل سؤال يمكن أن تكون إجابته نعم أو لا: هل سيُنشر الخبر اليوم؟",
+      "sourceIds": [
+        "IND"
+      ],
+      "options": [
+        "ob",
+        "wann",
+        "welche"
+      ],
+      "answer": "ob",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-10-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "ob",
+          "correct": true,
+          "finding": "ob تناسب نعم/لا المطلوب."
+        },
+        {
+          "index": 1,
+          "text": "wann",
+          "correct": false,
+          "finding": "wann تطلب الموعد لا التحقق من النشر اليوم."
+        },
+        {
+          "index": 2,
+          "text": "welche",
+          "correct": false,
+          "finding": "welche لا تصلح هنا دون اسم مناسب وهي لا تعبر عن نعم/لا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q03",
+      "text": "أكمل بأداة السؤال التي تطلب الوقت: Ich möchte wissen, ___ die nächste Ausgabe erscheint.",
+      "finding": "تطلب wann معرفة الوقت، ويأتي الفعل erscheint في نهاية الجملة التابعة.",
+      "sourceIds": [
+        "IND"
+      ],
+      "options": [
+        "ob",
+        "wann",
+        "welche"
+      ],
+      "answer": "wann",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-10-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "ob",
+          "correct": false,
+          "finding": "ob تسأل هل يصدر لا وقت صدوره."
+        },
+        {
+          "index": 1,
+          "text": "wann",
+          "correct": true,
+          "finding": "wann تسأل عن الوقت كما قيد السؤال."
+        },
+        {
+          "index": 2,
+          "text": "welche",
+          "correct": false,
+          "finding": "welche لا تطلب الوقت بهذا التركيب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q04",
+      "text": "أكمل الجزء التابع في السؤال غير المباشر: Ich möchte wissen, welche Quellen ___.",
+      "finding": "في هذا المثال welche Quellen مفعول، وder Bericht الفاعل المفرد، ثم nennt آخر التابعة؛ لا نكرر die Quellen. إذا كانت أداة السؤال نفسها الفاعل، مثل wer، فلا نضيف فاعلًا آخر لمجرد تطبيق ترتيب محفوظ.",
+      "sourceIds": [
+        "IND"
+      ],
+      "options": [
+        "der Bericht nennt",
+        "nennt der Bericht",
+        "der Bericht die Quellen nennt"
+      ],
+      "answer": "der Bericht nennt",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-10-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "der Bericht nennt",
+          "correct": true,
+          "finding": "der Bericht فاعل ثم nennt نهاية التابعة؛ Quellen مفعول متقدم."
+        },
+        {
+          "index": 1,
+          "text": "nennt der Bericht",
+          "correct": false,
+          "finding": "nennt der Bericht ترتيب السؤال المباشر لا التابعة المطلوبة."
+        },
+        {
+          "index": 2,
+          "text": "der Bericht die Quellen nennt",
+          "correct": false,
+          "finding": "die Quellen تكرر مفعول welche Quellen بلا وظيفة سليمة هنا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q05",
+      "text": "اختر التحويل المهذب السليم: Welche Ausgabe soll ich lesen?",
+      "finding": "تبقى أداة السؤال welche، ويأتي الفعل المصرف soll في نهاية الجملة التابعة.",
+      "sourceIds": [
+        "IND"
+      ],
+      "options": [
+        "Ich möchte wissen, welche Ausgabe soll ich lesen.",
+        "Ich möchte wissen, welche Ausgabe ich lesen soll.",
+        "Ich möchte wissen, ob Ausgabe ich lesen soll welche."
+      ],
+      "answer": "Ich möchte wissen, welche Ausgabe ich lesen soll.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-10-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Ich möchte wissen, welche Ausgabe soll ich lesen.",
+          "correct": false,
+          "finding": "soll في موقع السؤال المستقل، لا آخر التابعة."
+        },
+        {
+          "index": 1,
+          "text": "Ich möchte wissen, welche Ausgabe ich lesen soll.",
+          "correct": true,
+          "finding": "ich lesen soll نهاية صحيحة: مصدر ثم مصرف، مع بقاء welche Ausgabe."
+        },
+        {
+          "index": 2,
+          "text": "Ich möchte wissen, ob Ausgabe ich lesen soll welche.",
+          "correct": false,
+          "finding": "ob لا يحل محل اختيار أي عدد مع هذا الترتيب المبعثر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q06",
+      "text": "ما علامة الترقيم المناسبة؟ Könnten Sie mir sagen, ob die Sendung online ist__",
+      "finding": "الجملة الرئيسية سؤال مهذب يبدأ بـKönnten Sie، لذلك تنتهي بعلامة استفهام حتى لو كان السؤال داخل ob غير مباشر.",
+      "sourceIds": [
+        "IND"
+      ],
+      "options": [
+        "نقطة (.)",
+        "فاصلة (,)",
+        "استفهام (?)"
+      ],
+      "answer": "استفهام (?)",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-10-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "نقطة (.)",
+          "correct": false,
+          "finding": "النقطة لا تناسب السؤال الرئيسي الواضح Könnten Sie هنا."
+        },
+        {
+          "index": 1,
+          "text": "فاصلة (,)",
+          "correct": false,
+          "finding": "الفاصلة ليست علامة نهاية هذا السؤال."
+        },
+        {
+          "index": 2,
+          "text": "استفهام (?)",
+          "correct": true,
+          "finding": "? صحيحة لأن الرئيسية استفهامية ولو احتوت ob تابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q07",
+      "text": "اقرأ الرسالة الرسمية: عن أي موضوع استمعت نور إلى تقرير إذاعي؟",
+      "finding": "تذكر نور أنها استمعت إلى تقرير عن معرض جديد.",
+      "sourceIds": [],
+      "options": [
+        "عن معرض جديد.",
+        "عن أرشيف مجلة المدينة.",
+        "عن موعد نشر قائمة مطعم."
+      ],
+      "answer": "عن معرض جديد.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-10-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "عن معرض جديد.",
+          "correct": true,
+          "finding": "المعرض الجديد موضوع التقرير صراحة."
+        },
+        {
+          "index": 1,
+          "text": "عن أرشيف مجلة المدينة.",
+          "correct": false,
+          "finding": "الأرشيف في نص Sami وليس موضوع التقرير الذي سمعته Noor."
+        },
+        {
+          "index": 2,
+          "text": "عن موعد نشر قائمة مطعم.",
+          "correct": false,
+          "finding": "قائمة مطعم غير مذكورة؛ لا نخلطها بقائمة المصادر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q08",
+      "text": "عن أي معلومة في موقع المؤسسة يستفسر Noor في الرسالة؟",
+      "finding": "تسأل نور إن كانت قائمة المصادر الكاملة موجودة على الموقع؛ ولا يذكر النص معلومات عن المجانية أو مواعيد يومية للمعرض.",
+      "sourceIds": [],
+      "options": [
+        "أن عليه قائمة كاملة بمصادر التقرير.",
+        "أن الحلقة بدأت بالفعل على الهواء.",
+        "أن المعرض مفتوح مجانًا كل يوم."
+      ],
+      "answer": "أن عليه قائمة كاملة بمصادر التقرير.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-10-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "أن عليه قائمة كاملة بمصادر التقرير.",
+          "correct": true,
+          "finding": "هذا المطلوب التحقق منه؛ لا يعني أن القائمة موجودة بالفعل."
+        },
+        {
+          "index": 1,
+          "text": "أن الحلقة بدأت بالفعل على الهواء.",
+          "correct": false,
+          "finding": "بدء الحلقة على الهواء ليس السؤال المتعلق بالموقع."
+        },
+        {
+          "index": 2,
+          "text": "أن المعرض مفتوح مجانًا كل يوم.",
+          "correct": false,
+          "finding": "المجانية اليومية ليست معلومة واردة في الرسالة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q09",
+      "text": "اقرأ نص المكالمة: ماذا يريد سامي أن يعرف عن العدد القادم من مجلة المدينة؟",
+      "finding": "يسأل سامي متى يصدر العدد القادم؛ ويمكن تحديد ذلك من نص الاستماع المكتوب دون تشغيل MP3.",
+      "sourceIds": [],
+      "options": [
+        "متى يصدر.",
+        "من كتب كل مقال فيه.",
+        "كم ثمن الأرشيف."
+      ],
+      "answer": "متى يصدر.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-10-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "متى يصدر.",
+          "correct": true,
+          "finding": "Wann die nächste Ausgabe ... erscheint هو المطلوب."
+        },
+        {
+          "index": 1,
+          "text": "من كتب كل مقال فيه.",
+          "correct": false,
+          "finding": "هوية كاتب كل مقال غير مطلوبة في النص."
+        },
+        {
+          "index": 2,
+          "text": "كم ثمن الأرشيف.",
+          "correct": false,
+          "finding": "ثمن الأرشيف غير مذكور ولا مستنتج من طلب مكانه."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-Q10",
+      "text": "ما وسيلة الإرسال التي ذكرتها الموظفة لسامي؟",
+      "finding": "الموظفة تقول إنها سترسل المعلومات per E-Mail؛ هذا قول عن الإرسال، لا إثبات أنه تم أو أن سامي استلمها. النص المكتوب كافٍ ولا يلزم MP3.",
+      "sourceIds": [],
+      "options": [
+        "في رسالة بريد إلكتروني.",
+        "في مكالمة أخرى.",
+        "في نسخة مطبوعة بالبريد."
+      ],
+      "answer": "في رسالة بريد إلكتروني.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-10-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "في رسالة بريد إلكتروني.",
+          "correct": true,
+          "finding": "per E-Mail صريحة في قول الموظفة، لا إثبات استلام."
+        },
+        {
+          "index": 1,
+          "text": "في مكالمة أخرى.",
+          "correct": false,
+          "finding": "لا وعد بمكالمة أخرى."
+        },
+        {
+          "index": 2,
+          "text": "في نسخة مطبوعة بالبريد.",
+          "correct": false,
+          "finding": "لا نسخة مطبوعة أو بريد ورقي مذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-P01",
+      "text": "اكتب رسالة إلى هيئة تحرير خيالية: عنوان موضوع وتحية رسمية، ثم خمس جمل في المتن. عرّف في الأولى موضوع مساهمة عن معرض؛ اسأل في الثانية عن موعد إتاحة البودكاست بـwann؛ وفي الثالثة عن وجود قائمة مصادر كاملة على الموقع بـob؛ عبّر في الرابعة عن ترقب الرد؛ واشكر في الخامسة. استخدم صيغة Sie ثم اختم بـMit freundlichen Grüßen واسم خيالي. العنوان والتحية والختام والاسم لا تدخل في الجمل الخمس. هذه كتابة فقط بلا جهر أو إرسال فعلي أو بيانات اتصال حقيقية.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة فقط.",
+      "sourceIds": [
+        "IND",
+        "COMMA",
+        "CLOSE"
+      ],
+      "criteria": {
+        "taskCompletion": "عنوان وتحية وخمس جمل متن وفق المطالب، ثم ختام واسم خيالي؛ كتابة فقط دون جهر أو إرسال.",
+        "meaningClarity": "موضوع المعرض وطلب موعد البودكاست ووجود قائمة مصادر كاملة واضحان، والجهة خيالية ولا يوجد موعد جواب مخترع.",
+        "targetSkill": "صيغة Sie/Ihnen/Ihr المناسبة، وwann وob، والمصرف آخر التابعة والفاصلة، وترقيم الرسالة والخاتمة دون فاصلة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-10-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "عنوان وتحية وخمس جمل متن وفق المطالب، ثم ختام واسم خيالي؛ كتابة فقط دون جهر أو إرسال.",
+          "finding": "خمس جمل متن وإطار من أربعة أجزاء؛ النموذج401 حرفًا، والحد120 لا يعد الجمل آليًا."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "موضوع المعرض وطلب موعد البودكاست ووجود قائمة مصادر كاملة واضحان، والجهة خيالية ولا يوجد موعد جواب مخترع.",
+          "finding": "سؤالان محددان وجهة خيالية دون تاريخ جواب مخترع."
+        },
+        {
+          "key": "targetSkill",
+          "text": "صيغة Sie/Ihnen/Ihr المناسبة، وwann وob، والمصرف آخر التابعة والفاصلة، وترقيم الرسالة والخاتمة دون فاصلة.",
+          "finding": "الاحترام والترقيم والفعل معايير ذاتية لا محلل لغة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-P02",
+      "text": "اكتب جهة المتصل فقط في محاكاة اتصال بجهة إعلامية خيالية من أربعة أسطر: الأول تحية وسؤال غير مباشر بـwann عن موعد صدور العدد القادم من مجلة المدينة؛ الثاني سؤال غير مباشر بـob عن إتاحة التفريغ الكامل على الإنترنت؛ الثالث سؤال غير مباشر بـwo عن مكان الأرشيف؛ الرابع شكر ووداع. استخدم صيغة Sie في الطلبات المهذبة، ثم اقرأ الأسطر بصوت واضح بنفسك. لا يلزم شريك أو رد موظف أو تسجيل أو اتصال حقيقي.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة وجهر، وروابطT06/T08 محفوظة.",
+      "sourceIds": [
+        "IND"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أسطر بجهة المتصل وحدها: تحية مع طلب الموعد، وطلب إتاحة التفريغ، ومكان الأرشيف، ثم شكر ووداع؛ كتابة وجهر.",
+        "meaningClarity": "المطالب الثلاثة متميزة ومرتبة؛ لا تفترض توفر التفريغ أو تجيب عن مكان الأرشيف أو موعد العدد.",
+        "targetSkill": "wann وob وwo وصيغة Sie في الطلبات؛ المصرف آخر التابعة والفاصلة وعلامة نهاية تلائم الرئيسية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 125,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-10-T06",
+        "DL-B1-10-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أسطر بجهة المتصل وحدها: تحية مع طلب الموعد، وطلب إتاحة التفريغ، ومكان الأرشيف، ثم شكر ووداع؛ كتابة وجهر.",
+          "finding": "أربعة أسطر تشمل ثلاث مطالب وشكرًا؛ النموذج272 حرفًا والحد125 مع الجهر دون تسجيل."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "المطالب الثلاثة متميزة ومرتبة؛ لا تفترض توفر التفريغ أو تجيب عن مكان الأرشيف أو موعد العدد.",
+          "finding": "السؤال لا يثبت إتاحة التفريغ أو موقع الأرشيف."
+        },
+        {
+          "key": "targetSkill",
+          "text": "wann وob وwo وصيغة Sie في الطلبات؛ المصرف آخر التابعة والفاصلة وعلامة نهاية تلائم الرئيسية.",
+          "finding": "الرابط والمصرف والترقيم مناسبون؛ الجهر إقرار لا تقييم للنطق."
+        }
+      ]
+    },
+    {
+      "id": "email-model-01",
+      "text": "Betreff: Anfrage zu einem Ausstellungsbeitrag\nSehr geehrte Damen und Herren,\nich schreibe an Ihre fiktive Redaktion wegen eines Beitrags über eine Ausstellung.\nKönnten Sie mir mitteilen, wann der Beitrag als Podcast verfügbar ist?\nKönnen Sie mir sagen, ob eine vollständige Quellenliste auf Ihrer Webseite steht?\nIch freue mich auf Ihre Antwort.\nIch danke Ihnen im Voraus.\nMit freundlichen Grüßen\nRana",
+      "finding": "نموذج مكتوب غير مسجل: 401 حرفًا؛ كل جزء روجع أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "IND",
+        "COMMA",
+        "CLOSE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Betreff: Anfrage zu einem Ausstellungsbeitrag",
+          "finding": "عنوان موضوع لا جملة متن؛ Betreff إطار واضح."
+        },
+        {
+          "index": 2,
+          "text": "Sehr geehrte Damen und Herren,",
+          "finding": "تحية رسمية بفاصلة؛ النمط المختار تقليدي لا إلزام بكل سياق."
+        },
+        {
+          "index": 3,
+          "text": "ich schreibe an Ihre fiktive Redaktion wegen eines Beitrags über eine Ausstellung.",
+          "finding": "موضوع معرض وجهة خيالية واضحان في المتن."
+        },
+        {
+          "index": 4,
+          "text": "Könnten Sie mir mitteilen, wann der Beitrag als Podcast verfügbar ist?",
+          "finding": "wann لطلب موعد البودكاست، دون اختراع موعد."
+        },
+        {
+          "index": 5,
+          "text": "Können Sie mir sagen, ob eine vollständige Quellenliste auf Ihrer Webseite steht?",
+          "finding": "ob لوجود قائمة كاملة على الموقع، لا تقرير وجودها."
+        },
+        {
+          "index": 6,
+          "text": "Ich freue mich auf Ihre Antwort.",
+          "finding": "ترقب الجواب دون ادعاء تلقيه."
+        },
+        {
+          "index": 7,
+          "text": "Ich danke Ihnen im Voraus.",
+          "finding": "شكر في الجملة الخامسة؛ إطار الرسالة خارج عد الجمل."
+        },
+        {
+          "index": 8,
+          "text": "Mit freundlichen Grüßen",
+          "finding": "ختام دون فاصلة أو نقطة؛ يخالف عمدًا ترقيم النطق لا الكلمات المنطوقة."
+        },
+        {
+          "index": 9,
+          "text": "Rana",
+          "finding": "اسم خيالي لا بيانات اتصال حقيقية."
+        }
+      ]
+    },
+    {
+      "id": "phone-model-01",
+      "text": "Guten Tag, können Sie mir sagen, wann die nächste Ausgabe Ihres Stadtmagazins erscheint?\nKönnten Sie mir mitteilen, ob das vollständige Transkript online verfügbar ist?\nIch möchte außerdem wissen, wo ich das Archiv finde.\nVielen Dank für Ihre Auskunft und auf Wiederhören.",
+      "finding": "نموذج مكتوب غير مسجل: 272 حرفًا؛ كل جزء روجع أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "IND"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Guten Tag, können Sie mir sagen, wann die nächste Ausgabe Ihres Stadtmagazins erscheint?",
+          "finding": "تحية مع سؤال wann عن العدد القادم في السطر الأول."
+        },
+        {
+          "index": 2,
+          "text": "Könnten Sie mir mitteilen, ob das vollständige Transkript online verfügbar ist?",
+          "finding": "ob للتفريغ الكامل على الإنترنت في السطر الثاني."
+        },
+        {
+          "index": 3,
+          "text": "Ich möchte außerdem wissen, wo ich das Archiv finde.",
+          "finding": "wo للأرشيف مع رئيسية خبرية في السطر الثالث."
+        },
+        {
+          "index": 4,
+          "text": "Vielen Dank für Ihre Auskunft und auf Wiederhören.",
+          "finding": "شكر ووداع في السطر الرابع لا دور موظف أو جواب مخترع."
+        }
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Könnten Sie mir sagen, ob …?** → هل يمكنكم إخباري إن كان …؟",
+      "finding": "قالب سؤال رئيسي مهذب يحتويob؛ نقاط الحذف تعني متابعة غير مكتملة، لا جوابًا.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Ich möchte wissen, wann …** → أودّ أن أعرف متى …",
+      "finding": "رئيسية خبرية يتلوها سؤال عن الموعد؛ لا تكتمل العبارة قبل إكمال التابعة.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **welche Quellen der Bericht nennt** → ما المصادر التي يذكرها التقرير.",
+      "finding": "عبارة تابعة لا جملة مستقلة؛ المصادر مفعول والتقرير فاعل.",
+      "sourceIds": [
+        "IND"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **Vielen Dank im Voraus.** → شكرًا جزيلًا مقدمًا.",
+      "finding": "شكر مسبق وVoraus كبيرة؛ لا تعني أن المطلوب تحقق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B1-10-AUD-PHR-01",
+      "text": "Die Redaktion, die Redaktionen. Die Meldung, die Meldungen. Der Beitrag, die Beiträge. Die Quelle, die Quellen. Die Anfrage, die Anfragen. Die Auskunft, die Auskünfte. Die Ausgabe, die Ausgaben. Das Archiv, die Archive. Die Rückfrage, die Rückfragen. Die Berichtigung, die Berichtigungen. Mitteilen, teilt mit. Bestätigen, bestätigt. Sich beziehen auf, bezieht sich. Veröffentlichen, veröffentlicht. Aktuell. Zuverlässig. Im Voraus.",
+      "finding": "مطابقة نصية فقط؛ 17 وحدة داخل 1 مقطع. pending وoffer والأصوات محفوظة؛ لا استماع أو اعتماد أو توليد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Redaktion, die Redaktionen.",
+          "finding": "Redaktion مؤنث وجمع Redaktionen، هيئة تحرير لا اسم الصحيفة بالضرورة."
+        },
+        {
+          "index": 2,
+          "text": "Die Meldung, die Meldungen.",
+          "finding": "Meldung مؤنث، Meldungen؛ خبر موجز/إبلاغ بحسب السياق، لا كل تفصيل تقرير مطول."
+        },
+        {
+          "index": 3,
+          "text": "Der Beitrag, die Beiträge.",
+          "finding": "Beitrag مذكر، Beiträge بأوملاوت؛ مساهمة أو مادة إعلامية هنا، لا رسم مالي في هذا السياق."
+        },
+        {
+          "index": 4,
+          "text": "Die Quelle, die Quellen.",
+          "finding": "Quelle مؤنث وجمع Quellen؛ مصدر معلومة لا نبع؛ قائمة المصادر ليست بذاتها شهادة صحة."
+        },
+        {
+          "index": 5,
+          "text": "Die Anfrage, die Anfragen.",
+          "finding": "Anfrage مؤنث وجمع Anfragen؛ طلب استفسار، ولا يلزم أن يكون كل استعمال رسميًا خارج سياق الدرس."
+        },
+        {
+          "index": 6,
+          "text": "Die Auskunft, die Auskünfte.",
+          "finding": "Auskunft مؤنث وجمع Auskünfte للإفادة؛ مكتب الاستعلامات معنى آخر لا يجمع بهذا المعنى في المرجع."
+        },
+        {
+          "index": 7,
+          "text": "Die Ausgabe, die Ausgaben.",
+          "finding": "Ausgabe مؤنث وجمع Ausgaben؛ عدد/إصدار هنا لا مصروف أو تسليم بضائع."
+        },
+        {
+          "index": 8,
+          "text": "Das Archiv, die Archive.",
+          "finding": "Archiv محايد وجمع Archive؛ الأرشيف لا مكانه المحدد أو إتاحته تلقائيًا."
+        },
+        {
+          "index": 9,
+          "text": "Die Rückfrage, die Rückfragen.",
+          "finding": "Rückfrage مؤنث، Rückfragen؛ سؤال متابعة أو استيضاح، لا جواب مؤكد."
+        },
+        {
+          "index": 10,
+          "text": "Die Berichtigung, die Berichtigungen.",
+          "finding": "Berichtigung مؤنث، Berichtigungen؛ تصحيح، ولا يثبت أن النص موضوع المهمة خاطئ."
+        },
+        {
+          "index": 11,
+          "text": "Mitteilen, teilt mit.",
+          "finding": "mitteilen منفصل في teilt mit؛ أفعال höflich mir mitteilen وIhnen ... مناسبة للمتلقي."
+        },
+        {
+          "index": 12,
+          "text": "Bestätigen, bestätigt.",
+          "finding": "bestätigen في الحاضر bestätigt؛ المعنى يؤكد، لكن السؤال هل يمكن تأكيد شيء لا يثبت صحته."
+        },
+        {
+          "index": 13,
+          "text": "Sich beziehen auf, bezieht sich.",
+          "finding": "sich beziehen auf + Akkusativ مع ضمير مناسب للفاعل، لا تثبيت sich معich؛ مثالIhren Beitrag فيالمساعدة."
+        },
+        {
+          "index": 14,
+          "text": "Veröffentlichen, veröffentlicht.",
+          "finding": "veröffentlichen الحاضر veröffentlicht؛ نشر لا تأكيد صحة المنشور."
+        },
+        {
+          "index": 15,
+          "text": "Aktuell.",
+          "finding": "aktuell صفة للحاضر لا ضمان للصحة."
+        },
+        {
+          "index": 16,
+          "text": "Zuverlässig.",
+          "finding": "zuverlässig صفة الوثوق لا الحداثة."
+        },
+        {
+          "index": 17,
+          "text": "Im Voraus.",
+          "finding": "im Voraus تعبير مسبقًا محفوظ كما هو."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-AUD-MODEL-01",
+      "text": "Ist der Beitrag online? Könnten Sie mir sagen, ob der Beitrag online ist? Wann erscheint die nächste Ausgabe? Ich möchte wissen, wann die nächste Ausgabe erscheint. Welche Quellen nennt der Bericht? Könnten Sie mir mitteilen, welche Quellen der Bericht nennt?",
+      "finding": "مطابقة نصية فقط؛ 6 وحدة داخل 1 مقطع. pending وoffer والأصوات محفوظة؛ لا استماع أو اعتماد أو توليد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ist der Beitrag online?",
+          "finding": "Ist سؤال مباشر نعم/لا؛ المصرف أول السؤال، وليس تقريرًا أن المادة متاحة."
+        },
+        {
+          "index": 2,
+          "text": "Könnten Sie mir sagen, ob der Beitrag online ist?",
+          "finding": "ob تابعة تنتهي ist؛ الرئيسية Könnten سؤال فتأخذ ?."
+        },
+        {
+          "index": 3,
+          "text": "Wann erscheint die nächste Ausgabe?",
+          "finding": "Wann سؤال مباشر عن الموعد؛ erscheint بعد الأداة وقبل الفاعل."
+        },
+        {
+          "index": 4,
+          "text": "Ich möchte wissen, wann die nächste Ausgabe erscheint.",
+          "finding": "wann محفوظة لكن erscheint آخر التابعة؛ الرئيسية خبرية بنقطة."
+        },
+        {
+          "index": 5,
+          "text": "Welche Quellen nennt der Bericht?",
+          "finding": "Welche Quellen مفعول، وder Bericht فاعل، وnennt في موقع السؤال المستقل."
+        },
+        {
+          "index": 6,
+          "text": "Könnten Sie mir mitteilen, welche Quellen der Bericht nennt?",
+          "finding": "der Bericht فاعل وnennt آخر التابعة؛ Könnten رئيسية سؤال مهذب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-AUD-DLG-01",
+      "text": "Ich bereite einen kurzen Beitrag über eine Ausstellung vor. Welche Informationen fehlen Ihnen noch? Können Sie mir sagen, wann die Ausstellung eröffnet wird? Sie wird am Samstag eröffnet. Danke. Ich möchte auch wissen, ob die Eintrittskarten online erhältlich sind. Ja, das steht auf der Webseite des Kulturzentrums. Könnten Sie mir außerdem mitteilen, welche Quellen im Bericht genannt werden? Natürlich. Ich schicke Ihnen die Angaben heute Nachmittag.",
+      "finding": "مطابقة نصية فقط؛ 8 وحدة داخل 8 مقطع. pending وoffer والأصوات محفوظة؛ لا استماع أو اعتماد أو توليد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ich bereite einen kurzen Beitrag über eine Ausstellung vor.",
+          "finding": "Leila تحضر مساهمة قصيرة عن معرض؛ bereite ... vor منفصل، ولا تقول إن التقرير نُشر."
+        },
+        {
+          "index": 2,
+          "text": "Welche Informationen fehlen Ihnen noch?",
+          "finding": "المحرر يسأل عما ينقص من معلومات؛ Ihnen احترام لا ضمير غائب."
+        },
+        {
+          "index": 3,
+          "text": "Können Sie mir sagen, wann die Ausstellung eröffnet wird?",
+          "finding": "سؤال غير مباشر عن موعد الافتتاح؛ eröffnet wird مبني للمجهول والمصرف أخير."
+        },
+        {
+          "index": 4,
+          "text": "Sie wird am Samstag eröffnet.",
+          "finding": "السبت فقط بلا ساعة؛ Sie تعود إلى المعرض، والمضارع المجهول يستعمل لموعد مستقبلي."
+        },
+        {
+          "index": 5,
+          "text": "Danke. Ich möchte auch wissen, ob die Eintrittskarten online erhältlich sind.",
+          "finding": "شكر ثم طلب معرفة هل تذاكر الدخول متاحة إلكترونيًا؛ erhältlich sind جمع."
+        },
+        {
+          "index": 6,
+          "text": "Ja, das steht auf der Webseite des Kulturzentrums.",
+          "finding": "Ja جواب بالتوفر في الحوار مع إحالة للموقع؛ لا يعطي ثمنًا أو مجانية."
+        },
+        {
+          "index": 7,
+          "text": "Könnten Sie mir außerdem mitteilen, welche Quellen im Bericht genannt werden?",
+          "finding": "أي المصادر مذكورة في التقرير؛ Quellen فاعل جمع في المجهول فالمساعد werden."
+        },
+        {
+          "index": 8,
+          "text": "Natürlich. Ich schicke Ihnen die Angaben heute Nachmittag.",
+          "finding": "وعد بالإرسال اليوم بعد الظهر، لا إثبات وصول المعلومات؛ لا ننقل الوقت إلى رسالة Noor."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-AUD-READ-01",
+      "text": "Betreff: Frage zum Radiobeitrag über eine Ausstellung. Sehr geehrte Damen und Herren, ich habe gestern Ihren Beitrag über eine neue Ausstellung gehört. Könnten Sie mir bitte mitteilen, wann die Sendung als Podcast verfügbar sein wird? Außerdem möchte ich wissen, welche Quellen Sie im Beitrag nennen. Können Sie bestätigen, ob auf Ihrer Webseite eine vollständige Liste der Quellen steht? Vielen Dank im Voraus. Mit freundlichen Grüßen, Noor.",
+      "finding": "مطابقة نصية فقط؛ 7 وحدة داخل 1 مقطع. pending وoffer والأصوات محفوظة؛ لا استماع أو اعتماد أو توليد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Betreff: Frage zum Radiobeitrag über eine Ausstellung.",
+          "finding": "عنوان الموضوع عن تقرير إذاعي ومعرض؛ نقطة التفريغ ليست إلزامًا للعنوان المكتوب."
+        },
+        {
+          "index": 2,
+          "text": "Sehr geehrte Damen und Herren, ich habe gestern Ihren Beitrag über eine neue Ausstellung gehört.",
+          "finding": "تحية رسمية وhabe gehört يحكي الاستماع أمس؛ Ihren مخاطبة رسمية، ولا موعد السبت من الحوار هنا."
+        },
+        {
+          "index": 3,
+          "text": "Könnten Sie mir bitte mitteilen, wann die Sendung als Podcast verfügbar sein wird?",
+          "finding": "طلب موعد إتاحة البودكاست؛ sein wird مستقبل لا مبني للمجهول، والنص لا يعطي موعدًا."
+        },
+        {
+          "index": 4,
+          "text": "Außerdem möchte ich wissen, welche Quellen Sie im Beitrag nennen.",
+          "finding": "طلب المصادر التي تذكرها الجهة؛ Sie فاعل وwelche Quellen مفعول، ولا أسماء مصادر معطاة."
+        },
+        {
+          "index": 5,
+          "text": "Können Sie bestätigen, ob auf Ihrer Webseite eine vollständige Liste der Quellen steht?",
+          "finding": "سؤال هل توجد قائمة كاملة على الموقع؛ Liste مفرد فالفعل steht، ولا يثبت السؤال وجودها."
+        },
+        {
+          "index": 6,
+          "text": "Vielen Dank im Voraus.",
+          "finding": "شكر مقدمًا لا إثبات وصول الجواب؛ Voraus كبيرة في التعبير المحفوظ."
+        },
+        {
+          "index": 7,
+          "text": "Mit freundlichen Grüßen, Noor.",
+          "finding": "ختام واسم Noor؛ فاصلة تفريغ الصوت محفوظة للنطق، أما الختام المكتوب في المصدر فدون فاصلة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-10-AUD-LST-01",
+      "text": "Guten Tag, hier ist Sami. Ich rufe an, weil ich wissen möchte, wann die nächste Ausgabe des Stadtmagazins erscheint. Können Sie mir sagen, ob das vollständige Transkript online verfügbar ist? Ich möchte auch wissen, wo ich das Archiv finde. Die Mitarbeiterin am Telefon sagt, sie schickt mir die Informationen per E-Mail.",
+      "finding": "مطابقة نصية فقط؛ 5 وحدة داخل 1 مقطع. pending وoffer والأصوات محفوظة؛ لا استماع أو اعتماد أو توليد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Guten Tag, hier ist Sami.",
+          "finding": "Sami يقدم نفسه؛ تحية واتصال دون مؤسسة حقيقية أو عنوان شخصي."
+        },
+        {
+          "index": 2,
+          "text": "Ich rufe an, weil ich wissen möchte, wann die nächste Ausgabe des Stadtmagazins erscheint.",
+          "finding": "يريد موعد العدد القادم؛ weil يتضمن wann، وmöchte وerscheint ينهيان تابعتين مختلفتين."
+        },
+        {
+          "index": 3,
+          "text": "Können Sie mir sagen, ob das vollständige Transkript online verfügbar ist?",
+          "finding": "يسأل هل التفريغ الكامل متاح؛ ist بعد verfügbar، ولا جواب بالتوفر."
+        },
+        {
+          "index": 4,
+          "text": "Ich möchte auch wissen, wo ich das Archiv finde.",
+          "finding": "يريد معرفة أين يجد الأرشيف؛ finde آخر wo، ولا مكان فعلي معطى."
+        },
+        {
+          "index": 5,
+          "text": "Die Mitarbeiterin am Telefon sagt, sie schickt mir die Informationen per E-Mail.",
+          "finding": "الموظفة تقول إنها سترسل بالبريد الإلكتروني؛ sie schickt نقل قول بالمؤشر وترتيبV2، لا تابعob أو إثبات استلام."
+        }
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/indirekte-fragesaetze",
+      "reason": "محتوى صفحة غير موجودة؛ غير محسوب مرجعًا"
+    },
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/indirekte-fragen",
+      "reason": "محتوى صفحة غير موجودة؛ غير محسوب مرجعًا"
+    },
+    {
+      "url": "https://www.duden.de/sprachwissen/sprachratgeber/Die-Anrede-in-Briefen-und-E-Mails",
+      "reason": "محتوى صفحة غير موجودة؛ غير محسوب مرجعًا"
+    },
+    {
+      "url": "https://www.duden.de/sprachwissen/sprachratgeber/Gru%C3%9Fformeln-f%C3%BCr-Briefe-und-Mails",
+      "reason": "محتوى صفحة غير موجودة؛ غير محسوب مرجعًا"
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-10-media-news-formal-communication.md": "6e6a5eb3a342b190e29e2c2793017497157fd55ad686950e19c2916afd062814",
+    "content/B1/lesson-10-media-news-formal-communication.assessment.json": "291b8be967834001ed3e4bac748951545937843fbf282c5bcb71ec4185e6e28f"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-10-AUD-PHR-01": "e3c9714f38530042f0ca12b0201f33649a4dcc4a975699b89008b0ca09686505",
+    "DL-B1-10-AUD-MODEL-01": "bc4cade77e394285c8fa65c5809d0ef6c59516f0ad22d93945e80c5a9fb1a5d7",
+    "DL-B1-10-AUD-DLG-01": "61a9a408e55e9e1db2e2d558b51fd08974b554f16084642902eee2a71af495c9",
+    "DL-B1-10-AUD-READ-01": "9e0ef01a1ba5dce4e98a4b4cfbf872e237db12880973ae76903864a60c7cc0a6",
+    "DL-B1-10-AUD-LST-01": "a740d8fb682dc4c1643eddbb7af0de5294d36cc7ac21f2f63b203b7366ed574b"
+  },
+  "preservation": {
+    "baseline": "96d70c9a65892351f08a56d9b8e07473c5d1a804",
+    "protectedFilesIncludingAudio": 590,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      1,
+      0,
+      1,
+      0,
+      1,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "changedAudioRegisterRows": {
+      "DL-B1-10-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B1-10-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B1-10-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B1-10-AUD-LST-01": [
+        "source_line"
+      ]
+    }
+  },
+  "implementationCommit": "3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829",
+  "qualityChecks": {
+    "build": {
+      "command": "python3 tools/build_course.py",
+      "status": "PASS",
+      "lessons": 53,
+      "bundleBytes": 2116453
+    },
+    "verify": {
+      "command": "python3 tools/verify_course.py",
+      "status": "PASS",
+      "exerciseHeadings": 428,
+      "dialogueSections": 61,
+      "vocabularyItems": 754,
+      "lessonQuizItems": 530,
+      "gateQuizItems": 10,
+      "performanceTasks": 109,
+      "catalogRows": 1080,
+      "audioAssets": 217,
+      "mp3Clips": 474,
+      "readyAssets": 137,
+      "pendingAssets": 80
+    },
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 40,
+      "newGuard": "tools/test_b1_10_review.py",
+      "scope": "coverage/text/mappings/evidence/hashes; not language certification"
+    },
+    "nodeGroups": {
+      "status": "PASS",
+      "tests": [
+        "progression",
+        "service_worker",
+        "daily_plan",
+        "session_persistence",
+        "study_time"
+      ]
+    },
+    "syntaxAndDiff": {
+      "status": "PASS",
+      "commands": [
+        "node --check app.js",
+        "node --check service-worker.js",
+        "git diff --check"
+      ]
+    },
+    "browser": {
+      "status": "PASS",
+      "chromium": "143.0.7499.0",
+      "playwright": "1.58.2",
+      "axe": "4.11.0",
+      "cache": "v89",
+      "tests": [
+        "browser",
+        "accessibility_update",
+        "accessibility_audit",
+        "forms_keyboard",
+        "narrow_layout"
+      ],
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "axeStates": 173,
+      "axeSelectedRuleViolations": 0,
+      "axeIncompleteOccurrences": 122,
+      "axeIncompleteNodeOccurrences": 285,
+      "narrowStates": 126,
+      "narrowViewports": [
+        "320x900",
+        "568x320"
+      ],
+      "formsKeyboard": "Passed first execution at both widths; historical native chooser intermittency remains unresolved."
+    },
+    "evidenceIsolation": {
+      "status": "PASS",
+      "oldVersion": "b1-10-v1",
+      "newVersion": "b1-10-v2",
+      "nextLesson": "b1-11-history-politics-passive-past",
+      "modelCharacters": [
+        401,
+        272
+      ],
+      "minimumCharacters": [
+        120,
+        125
+      ],
+      "retainsOldRecordWithoutGrantingCurrentMastery": true,
+      "rejectsOldVersionDraft": true,
+      "currentScoreAndEvidenceUnlockNext": true,
+      "evidenceDeletionRelocksNext": true,
+      "p01SpeakCheckboxAbsent": true,
+      "p02SpeakCheckboxRequired": true
+    },
+    "initialFailures": [
+      "New progression VM fixture failed because newline escaping produced a newline inside a JS string; changed fixture responses to space-separated equivalents (same character counts), while source retains correct multiline letter and numbered caller script. Passed all five Node groups afterward. Browser suites passed on first full execution after runtime installation."
+    ]
+  },
+  "campaign": {
+    "review": "CR40",
+    "reviewedLessons": 39,
+    "totalLessons": 53,
+    "gateSeparate": true,
+    "remainingLessons": 14,
+    "planVersion": "2.46",
+    "next": "CR41/B1.11 — التاريخ والسياسة والمبني للمجهول في الماضي"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829",
+    "implementationPushed": true,
+    "implementationHeadOriginMatched": true,
+    "pr": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "queriedAtHead": "3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829"
+    },
+    "implementationDeployment": {
+      "state": "success",
+      "id": 6948925300,
+      "environment": "Preview",
+      "url": "https://deutschlern-jd04d8jvu-balinader-2671s-projects.vercel.app",
+      "createdAt": "2026-10-08T23:14:21Z"
+    },
+    "reportPushed": false,
+    "remoteUIReviewed": false,
+    "productionReviewed": false
+  },
+  "limits": [
+    "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادةCEFR أوWCAG أو اختبارًا لمتعلم حقيقي، ولا مراجع بشري شرطًا للاستمرار.",
+    "تسعة مراجع كاملة ومرجع بجزأين0و4 من5؛ لم تقرأ الملفات والدراسات أو الروابط التابعة. المراجع المعجمية المباشرة تخص الألفاظ المسماة لا كل الصفوف.",
+    "صيغ wer الفاعل وzu finden ist في السياق مراجعة لغوية إضافية؛ لا ننسب تبسيطات المصادر إلى كل تركيب ألماني.",
+    "خمسة أصول/12 مقطعًا معلقة ومحفوظة؛ تشغيلMP3 الصامت وبنيته ومطابقة النص ليست استماعًا أو اعتمادًا.",
+    "الطول والإقرارات والجهر ليست تصحيحًا تلقائيًا للجمل أو النطق؛ الأمثلة خيالية ولا بريد أو اتصال حقيقي.",
+    "173 حالةaxe وصفر مخالفات للقواعد المختارة، مع122 ظهورًا غير حاسم/285 ظهورًا لعقد؛ ليست مخالفات مؤكدة أو شهادة وصول كاملة.",
+    "CSS viewports ليست هواتف فعلية أو تكبيرًا أصليًا؛fixture v42 إلىv89 ليس كل ترحيل تاريخي. نجاحforms_keyboard لا يصلح تذبذب اختيار الملف التاريخي.",
+    "نجحPreview للتنفيذ3e75b52 حسبAPI؛ لا اختبار للواجهة البعيدة أوProduction ولا دمجPR#1، ولا تعميم النجاح علىcommit لاحق."
+  ]
+}
