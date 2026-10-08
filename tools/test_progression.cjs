@@ -784,6 +784,42 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain A2.2 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR21: written shopping list vs spoken restaurant exchange, and A2.3 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'a2-03-food-nutrition-shopping').assessment.version, 'a2-03-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('a2-03-food-nutrition-shopping');
+    const responses = [
+      'ein Kilo Kartoffeln; eine Flasche Wasser; eine Packung Reis; 200 Gramm Käse. Wie viel Käse brauchen wir?',
+      'Guten Abend. Ich hätte gern eine Gemüsesuppe und ein Glas Wasser. Gern. Ist die Suppe vegetarisch? Ja, sie ist vegetarisch. Man kann hier vegetarisch essen.'
+    ];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'A2.3 models fit thresholds; P01 is writing only, P02 needs speech and all checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('a2-03-food-nutrition-shopping').performanceTasks[0]], 'lesson:a2-03-food-nutrition-shopping', 'a2-03-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('a2-03-food-nutrition-shopping');
+      const next=findLesson('a2-04-office-phone-appointments');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'a2-03-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'a2-03-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='a2-03-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'a2-03-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain A2.3 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
