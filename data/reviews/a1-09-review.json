@@ -1145,11 +1145,28 @@
     "branch": "arena/01a1036f-deutschlern",
     "implementationCommit": "11fb347758b4e9786cfc6b645091c4805e462e23",
     "implementationPushVerified": true,
-    "reviewCommit": "See git log for CR15 review commit after this file is committed; post-push receipt follows.",
+    "reviewCommit": "80f36b876e00f9a658cab143a697ed3f4f5b4098",
     "merged": false,
     "nextLesson": "A1.10",
     "reviewedLessons": 14,
     "remainingLessons": 39,
-    "gateSeparate": true
+    "gateSeparate": true,
+    "reviewPushVerified": true,
+    "pullRequest": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "headRefOid": "80f36b876e00f9a658cab143a697ed3f4f5b4098"
+    },
+    "vercel": {
+      "implementationStatus": "success",
+      "reviewStatus": "success",
+      "reviewInitiallyPending": true,
+      "deploymentId": 6938039179,
+      "environment": "Preview",
+      "url": "https://deutschlern-5rtbibxqs-balinader-2671s-projects.vercel.app"
+    },
+    "remoteBundleFetch": "TLS/SSL EOF before HTTP response; no remote bundle comparison/UI test/production claim.",
+    "receiptCommit": "Separate documentation commit: Record CR15 push and Preview delivery receipt; see git log."
   }
 }
