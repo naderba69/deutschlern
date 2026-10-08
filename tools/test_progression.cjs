@@ -1396,6 +1396,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.8 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR39: written plan and spoken fallback; B1.9 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-09-travel-transport-environment').assessment.version, 'b1-09-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-09-travel-transport-environment');
+    const responses = ["Am Samstag planen wir eine Fahrt in die fiktive Stadt Uferstadt. Bevor wir losfahren, prüfen wir den Fahrplan. Wir fahren zuerst mit dem Zug nach Uferstadt. Nachdem wir angekommen sind, suchen wir den Anschlussbus zum Museum. Während wir auf den Bus warten, lesen wir einen Stadtplan.", "Heute fällt mein erster Bus aus. Bevor ich das Haus verlasse, sehe ich mir den Fahrplan an. In dieser erfundenen Situation kann ich den Zug oder einen späteren Bus nehmen. Während ich auf den Zug warte, prüfe ich den Anschluss. Nachdem ich in den Zug eingestiegen bin, lese ich die Nachrichten. Wenn die Strecke kurz ist, gehe ich zu Fuß."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.9 models fit thresholds; comparison is writing only, dialogue requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-09-travel-transport-environment').performanceTasks[1]], 'lesson:b1-09-travel-transport-environment', 'b1-09-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-09-travel-transport-environment').performanceTasks[0]], 'lesson:b1-09-travel-transport-environment', 'b1-09-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-09-travel-transport-environment');
+      const next=findLesson('b1-10-media-news-formal-communication');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-09-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-09-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-09-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-09-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.9 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2350,9 +2384,12 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b1TravelQuestionSources = new Set(b1TravelAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b1TravelQuestionSources.has(`DL-B1-09-T0${task}`), `B1.9 quiz must cover source task T0${task}`);
   assert.ok(b1TravelAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B1-09-G01")), "all B1.9 questions must map to the lesson objective");
-  assert.ok(b1TravelAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-09-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B1.9 performance tasks must map to T08 and offer local written/oral work without requiring a recording");
+  assert.ok(b1TravelAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-09-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing")), "B1.9 tasks map to source and work without recorded audio");
   assert.deepEqual(b1TravelAssessment.performanceTasks.find((task) => task.id === "DL-B1-09-P02").sourceTaskIds, ["DL-B1-09-T06", "DL-B1-09-T08"], "B1.9 P02 must link its cancelled-bus scenario to the written listening source and trip-plan task");
-  assert.match(b1TravelSource, /يمكنك كتابة الخطة أو تقديمها شفهيًا/);
+  assert.doesNotMatch(b1TravelSource, /يمكنك كتابة الخطة أو تقديمها شفهيًا/);
+  for (const t of b1TravelAssessment.performanceTasks) assert.ok(b1TravelSource.includes(t.prompt));
+  assert.deepEqual(b1TravelAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.deepEqual(b1TravelAssessment.performanceTasks.map(t => t.selfCheck.speakAloud), [false,true]);
   assert.match(b1TravelSource, /اكتبها ثم اقرأها بصوت واضح/);
   assert.match(b1TravelSource, /لا يلزم تسجيل الصوت/);
   assert.equal(b1TravelAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), true, "B1.9 assessment must not depend on its optional lesson recordings");

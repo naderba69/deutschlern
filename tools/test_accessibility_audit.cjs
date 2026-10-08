@@ -254,6 +254,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.8-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.8-practical-form-fixture', width);
+  // CR39: written plan and spoken fallback, pending audio.
+  await page.evaluate(() => openLesson('b1-09-travel-transport-environment'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.9-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.9-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
