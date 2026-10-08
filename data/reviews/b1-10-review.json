@@ -1979,7 +1979,7 @@
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829"
+      "queriedAtHead": "2b8f477e5ceec193907ac9d3a8b3594418d3b76a"
     },
     "implementationDeployment": {
       "state": "success",
@@ -1988,9 +1988,21 @@
       "url": "https://deutschlern-jd04d8jvu-balinader-2671s-projects.vercel.app",
       "createdAt": "2026-10-08T23:14:21Z"
     },
-    "reportPushed": false,
+    "reportPushed": true,
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportCommit": "2b8f477e5ceec193907ac9d3a8b3594418d3b76a",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR40 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   },
   "limits": [
     "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادةCEFR أوWCAG أو اختبارًا لمتعلم حقيقي، ولا مراجع بشري شرطًا للاستمرار.",
