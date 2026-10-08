@@ -1226,6 +1226,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.3 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR34: written learning plan and spoken coaching dialogue; B1.4 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-04-continuing-education-damit').assessment.version, 'b1-04-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-04-continuing-education-damit');
+    const responses = ["Ich möchte meine Computerkenntnisse verbessern. Ich besuche einen Onlinekurs, um neue Funktionen zu lernen. Ich wiederhole die Aufgaben, um mich auf den nächsten Unterricht vorzubereiten. Die Lehrkraft gibt mir Beispiele, damit ich die Funktionen selbstständig anwenden kann.", "Lernender: Ich mache einen Onlinekurs, um meine Computerkenntnisse zu verbessern. Trainerin: Ich gebe dir praktische Aufgaben, damit du neue Funktionen üben kannst. Lernender: Wann besprechen wir meine Fragen? Trainerin: Wir besprechen sie morgen nach dem Kurs."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.4 models fit thresholds; plan is writing only, dialogue requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-04-continuing-education-damit').performanceTasks[1]], 'lesson:b1-04-continuing-education-damit', 'b1-04-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-04-continuing-education-damit').performanceTasks[0]], 'lesson:b1-04-continuing-education-damit', 'b1-04-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-04-continuing-education-damit');
+      const next=findLesson('b1-05-cities-relative-clauses');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-04-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-04-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-04-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-04-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.4 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
