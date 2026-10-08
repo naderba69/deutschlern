@@ -1,0 +1,2176 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-09-products-technology-complaints",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-09-v2",
+  "unitCount": 109,
+  "exerciseSubItemCount": 36,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "KII",
+      "title": "Lingolia — Konjunktiv",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/konjunktiv",
+      "scope": "Konjunktiv II للطلب المهذب، والتصريف والفرق بين könnte وkonnte؛ hätte من haben. لا تعميم أن كل سؤال غير مباشر يحتاج Konjunktiv.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "الفعل الناقص المصرف مع مصدر؛ können وصيغ الحاضر والماضي وKonjunktiv II. möchte مع مصدر، لا تصريف من können.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "OB",
+      "title": "Lingolia — Indirekte Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/indirekte-fragen",
+      "scope": "ob للسؤال بلا أداة استفهام؛ الفعل المصرف آخر التابعة، والفاصلة وعلامة النهاية بحسب الجملة الرئيسية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "EXCHANGE",
+      "title": "Duden — umtauschen",
+      "url": "https://www.duden.de/rechtschreibung/umtauschen",
+      "scope": "استبدال المشتري أو قبول المتجر للاستبدال؛ tauscht um / hat umgetauscht. لا يثبت تعريف الفعل حقًا قانونيًا أو موافقة المتجر.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "RETURN",
+      "title": "Duden — zurückgeben",
+      "url": "https://www.duden.de/rechtschreibung/zurueckgeben",
+      "scope": "إعادة الشيء أو السلعة؛ gibt zurück / hat zurückgegeben. ليست مرادفًا لازمًا للاستبدال ولا إثبات استرداد مال في السيناريو.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "DEFECT",
+      "title": "Duden — defekt",
+      "url": "https://www.duden.de/rechtschreibung/defekt",
+      "scope": "schadhaft / nicht in Ordnung؛ قد يتداخل معنى العطل مع الضرر، وليس تشخيصًا فنيًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "DAMAGE",
+      "title": "Duden — beschädigen",
+      "url": "https://www.duden.de/rechtschreibung/beschaedigen",
+      "scope": "إحداث ضرر/جعل الشيء تالفًا؛ beschädigt. لا اشتراط أن الضرر مرئي، ولا فصل مطلق عن defekt.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "GUARANTEE",
+      "title": "Duden — Garantie",
+      "url": "https://www.duden.de/rechtschreibung/Garantie",
+      "scope": "مؤنث وجمع Garantien، ومعنى الوعد/الضمان التجاري. قاموس لا مرجع قانوني لدولة معينة؛ لا مدة أو استبدال أو رد مال مضمون يُستنتج منه.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "TIME",
+      "title": "Lingolia — Temporale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal",
+      "scope": "vor لوقت سابق وseit لبداية ممتدة حتى الآن، مع الداتيف في العبارات الاسمية؛ am مع اليوم. لا تواريخ فعلية مستنتجة من Montag أوmorgen.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "INF",
+      "title": "Lingolia — Infinitiv",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/infinitiv",
+      "scope": "مصدر دون zu مع الفعل الناقص؛ لا نعمم حذف zu على كل مصدر أو كل فعل.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.9 — المنتجات والتقنية وتقديم شكوى",
+      "finding": "العنوان يطابق المنتجات والشكاوى لا مجالًا تقنيًا متخصصًا أو إرشادًا قانونيًا.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 35–40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري",
+      "finding": "أضيفت الكتابة وكلام مستقل، والزمن تقدير قابل للتقسيم والاستماع اختياري، لا ضمان إنجاز خلال مدة ثابتة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أصف مشكلة في جهاز أو منتج، وأطلب المساعدة بأدب.",
+      "finding": "الهدف وصف عطل وطلب المساعدة، ويُمارس برسالة وحوار؛ النتيجة لا تعني تنفيذ خدمة خارج التطبيق.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستعمل هنا **Konjunktiv II** من **können** لصياغة طلب مهذب. **könnte** ليست **konnte**: الأولى صيغة الطلب المدروسة، والثانية ماضي können. اختيار الصيغة يتبع الضمير، ولا يعني الطلب أن الطرف الآخر وافق أو أن الخدمة أُنجزت:",
+      "finding": "فرق könnte عن konnte مع الحفاظ على معنى الطلب لا القدرة الماضية؛ المطابقة بحسب الضمير والطلب ليس موافقة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "في سؤال الطلب المباشر المدروس يبدأ السؤال بالفعل الناقص المصرف، ثم الضمير، ويأتي المصدر بلا zu في النهاية: **Könnten Sie das Gerät prüfen?** هذه ليست قاعدة لكل سؤال ألماني؛ مع كلمة استفهام مثل Wann يأتي الفعل بعدها. أما **Ich hätte gern einen Umtausch.** فعبارة رغبة بـhätte من haben، لا تصريف من können.",
+      "finding": "حُصرت قاعدة الفعل أولًا في سؤال الطلب المباشر؛ مع Wann تختلف البداية. hätte من haben وليس من können، والمصدر دون zu مع الفعل الناقص هنا.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "النموذجان خياليان وغير مسجلين،ولا يستبدلان المقاطع القائمة. الأول رسالة مستقلة لا نسخة من رسالة Salma،والثاني تدريب على الأدوار لا إثبات حق قانوني أو تنفيذ حل. الإقرار والطول ليسا تصحيحًا آليًا للغة أو النطق.",
+      "finding": "حدود النموذجين واضحة: صياغات مكتوبة خيالية غير مسجلة، دون استبدال الأصول أو منح تصحيح لغوي آلي.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| das Gerät | die Geräte | الجهاز |",
+      "finding": "das Gerät مفرد محايد، Geräte جمع مع أوملاوت؛ لفظ عام للجهاز لا تشخيص بعينه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Smartphone | die Smartphones | الهاتف الذكي |",
+      "finding": "Smartphone محايد وجمعه Smartphones؛ الهاتف الذكي لا يلزم أن يكون منتج Salma أو Karim.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Kopfhörer | die Kopfhörer | سمّاعة الرأس |",
+      "finding": "Kopfhörer مذكر وجمعه لا يتغير في الشكل؛ سماعة الرأس لا تعني مكبر الصوت وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Bildschirm | die Bildschirme | الشاشة |",
+      "finding": "Bildschirm مذكر وجمعه Bildschirme؛ الشاشة ليست إيصالًا أو بطارية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Akku | die Akkus | البطارية |",
+      "finding": "Akku مذكر وجمعه Akkus؛ البطارية غير الشاحن، ولا دليل أنها سبب الشاشة السوداء.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| das Ladegerät | die Ladegeräte | الشاحن |",
+      "finding": "Ladegerät محايد وجمعه Ladegeräte؛ الشاحن، وهو منتج Karim تحديدًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Lautsprecher | die Lautsprecher | مكبّر الصوت |",
+      "finding": "Lautsprecher مذكر وجمعه مطابق في الشكل؛ نميز المكبر الأيمن عن السماعة كلها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Garantie | die Garantien | الضمان |",
+      "finding": "Garantie مؤنث وجمعها Garantien؛ المعنى القاموسي لا يثبت شروط ضمان قانونية.",
+      "sourceIds": [
+        "GUARANTEE"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Kassenbon | die Kassenbons | إيصال الشراء |",
+      "finding": "Kassenbon مذكر وجمعه Kassenbons؛ إيصال شراء، وليس بطاقة صعود أو دليل استخدام.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Bedienungsanleitung | die Bedienungsanleitungen | دليل الاستخدام |",
+      "finding": "Bedienungsanleitung مؤنث وجمعها Bedienungsanleitungen؛ دليل استخدام لا جزء مادي من الجهاز.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| defekt / beschädigt | — | معطّل / متضرّر |",
+      "finding": "defekt / beschädigt صفات متداخلة المعنى؛ ليستا فصلًا علميًا بين عطل وظيفي وضرر مرئي فقط.",
+      "sourceIds": [
+        "DEFECT",
+        "DAMAGE"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| reparieren | — | يصلح |",
+      "finding": "reparieren مصدر بمعنى يصلح؛ لا يعني أن الإصلاح انتهى بمجرد اقتراحه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| umtauschen | — | يستبدل |",
+      "finding": "umtauschen مصدر منفصل في الجملة المصرفة؛ معنى الاستبدال لا رد نقود مضمون.",
+      "sourceIds": [
+        "EXCHANGE"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| zurückgeben | — | يعيد (المنتج) |",
+      "finding": "zurückgeben إعادة المنتج؛ لا تساوي استبداله بالضرورة.",
+      "sourceIds": [
+        "RETURN"
+      ]
+    },
+    {
+      "id": "vocab-15",
+      "text": "| prüfen | — | يفحص |",
+      "finding": "prüfen يفحص؛ يسبق تشخيصًا أو قرارًا محتملًا ولا يساوي إصلاحًا مكتملًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "conjugation-01",
+      "text": "| ich | könnte |",
+      "finding": "ich يقابله könnte؛ الأوملاوت يميز الصيغة عن الماضي konnte.",
+      "sourceIds": [
+        "KII",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "conjugation-02",
+      "text": "| du | könntest |",
+      "finding": "du يقابله könntest؛ ليس Könnten حين يكون الفاعل du.",
+      "sourceIds": [
+        "KII",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "conjugation-03",
+      "text": "| er / sie / es | könnte |",
+      "finding": "أضيف es إلى بدائل المفرد؛ er أو sie أو es، لا فاعل مركب بصيغة مفرد.",
+      "sourceIds": [
+        "KII",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "conjugation-04",
+      "text": "| wir | könnten |",
+      "finding": "wir يقابله könnten؛ يمكن أن يكون طلبًا باسم مجموعة.",
+      "sourceIds": [
+        "KII",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "conjugation-05",
+      "text": "| ihr | könntet |",
+      "finding": "ihr يقابله könntet؛ مخاطبة مجموعة أصدقاء وليست Sie للاحترام.",
+      "sourceIds": [
+        "KII",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "conjugation-06",
+      "text": "| Sie / sie | könnten |",
+      "finding": "sie للجمع و Sie للاحترام يقابلهما könnten؛ الاحترام ممكن لشخص واحد.",
+      "sourceIds": [
+        "KII",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "- **Könnten Sie das Gerät bitte prüfen?** — هل يمكنكم فحص الجهاز من فضلكم؟",
+      "finding": "طلب فحص جهاز: Könnten مع Sie ومصدر prüfen بلا zu في النهاية؛ لا يفترض موافقة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "- **Könnten Sie mir bitte helfen?** — هل يمكنكم مساعدتي من فضلكم؟",
+      "finding": "طلب مساعدة مع mir بالداتيف و helfen في النهاية؛ bitte تلطف الطلب.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "- **Ich hätte gern einen Umtausch.** — أودّ استبدال المنتج.",
+      "finding": "hätte من haben و einen Umtausch منصوب مذكر؛ رغبة في استبدال وليست فعل استبدال تم.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **Sie / Ihnen / ihr / mir:** Sie للاحترام، حتى مع شخص واحد؛ يقابله könnten. ihr لمجموعة مخاطبين غير رسمية ويقابله könntet. **bei Ihnen** عندكم، و**Ihr Geschäft** متجركم بصيغة الاحترام. **Könnten Sie mir bitte helfen?** فيها mir بالداتيف مع helfen؛ لا نقول mich helfen.",
+      "finding": "يمنع خلط Sie باحترامه مع ihr، ويفسر Ihnen / Ihr في النصين و mir مع helfen.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **hätte / könnte / möchte:** **Ich hätte gern einen Umtausch.** رغبة في استبدال؛ einen مع الاسم المذكر Umtausch في النصب. **Ich möchte wissen …** أريد أن أعرف؛ wissen مصدر دون zu بعد möchte. هذه الطلبات لا تثبت أن الاستبدال متاح أو تم فعليًا.",
+      "finding": "يفصل hätte و möchte عن könnte؛ einen Umtausch و wissen دون zu مدعومان، والطلب غير النتيجة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **ob وترتيب التابعة:** **Ich möchte wissen, ob ein Umtausch möglich ist.** فاصلة قبل ob وist في نهاية التابعة، ونقطة لأن الجملة الرئيسية خبرية. **Könnten Sie mir bitte sagen, ob ich es umtauschen kann?** سؤال مباشر يحتوي سؤالًا غير مباشر؛ نهايته علامة استفهام، وداخل التابعة umtauschen ثم kann. لا نعكسهما ولا نضيف zu.",
+      "finding": "يدرب ob بعد عبارة خبرية وسؤال مباشر؛ يميز النهاية بالنقطة أوالاستفهام، و umtauschen kann آخر التابعة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **vor / seit / am / morgen:** شراء Salma قبل عشرة أيام: **vor zehn Tagen**؛ بداية العطل منذ أمس: **seit gestern**. لا نجعل وقت الشراء بداية العطل. Kundin اشترت قبل أسبوعين، وKarim اشترى يوم الاثنين ويقول إنه سيأتي غدًا؛ ذلك وصف خطة، لا دليل أنه وصل أو يحمل الإيصال الآن.",
+      "finding": "يحفظ ثلاثة أزمنة شراء مختلفة وبداية عطل محددة في رسالة Salma فقط؛ زيارة Karim غدًا خطة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **العطل والضرر:** defekt معطّل، وbeschädigt متضرر؛ قد تتداخل الكلمتان ولا تمثلان تشخيصين منفصلين دائمًا. Salma تقول إن السماعة غير متضررة وتصف تعطل المكبر الأيمن؛ ننقل كلامها دون فحص تقني. لا نستنتج أن الأيسر يعمل أو أن العطل سببه بطارية أو شاشة مكسورة. **Der Bildschirm bleibt schwarz.** تظل الشاشة سوداء، ولا تحدد الجملة سببًا تقنيًا.",
+      "finding": "ينقل نفي Salma للضرر دون تحويله إلى تشخيص؛ العطل الأيمن لا يثبت حالة الأيسر ولا سبب العطل.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **prüfen / reparieren / umtauschen / zurückgeben:** يفحص / يصلح / يستبدل / يعيد المنتج. الفحص ليس إصلاحًا منجزًا؛ والاستبدال ليس تلقائيًا استرداد نقود. **Ich tausche das Gerät um.** و**Ich gebe es zurück.** رئيسيتان بفعل منفصل؛ مع الفعل الناقص يبقى المصدر كاملًا: **Könnten wir das Produkt umtauschen?**",
+      "finding": "يفصل الفحص والإصلاح والاستبدال والإعادة؛ مثالان للمصدر المنفصل مع التصريف، لا ادعاء مالي.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **حدود الضمان:** الموظف يقول إن جهاز الحوار ما زال تحت الضمان ويعرض إصلاحًا أو استبدالًا في هذا الموقف الخيالي. هذا ليس حكمًا عامًا بأن كل ضمان يمنح استبدالًا أو رد مال، ولا موعدًا أو تكلفة مؤكدة. لا ننقل الضمان إلى سماعة Salma أو شاحن Karim، ولا نستنتج أن إيصال الشراء وحده يثبت كل شروط الاستبدال.",
+      "finding": "عرض الضمان محصور في حوار Tablet؛ لا مدة أو تكلفة أو حقوق دولة مفترضة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **ثلاثة سياقات مستقلة:** Tablet للزبونة في الحوار؛ Kopfhörer لـSalma في الرسالة؛ Ladegerät لـKarim في الاستماع. **das Tablet** جهاز لوحي، و**rechts / links** يمين/يسار، و**ein Umtausch ist möglich** الاستبدال ممكن. النصوص خيالية للتعلم، لا طلب خدمة أو معلومات شراء حقيقية.",
+      "finding": "تفصل المنتجات والأشخاص؛ Tablet جهاز لوحي وممكن لا تعني تم الاستبدال.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **تنبيه تسجيل التصريف:** ترد في نص بنك العبارات القديم **Er und sie könnte.** وهي صياغة تعداد ملتبسة، لا نموذج صحيح لجملة ذات فاعل مركب. نتعلم البدائل المنفصلة **Er könnte. Sie könnte. Es könnte.** أما sie للجمع وSie للاحترام فمع könnten. أضيف هذا التوضيح والجدول؛ التسجيل والتفريغ محفوظان دون تغيير أو استماع أو اعتماد جديد.",
+      "finding": "يثبت قيد النص الصوتي القديم دون إصلاح التسجيل؛ بدائل مفرد منفصلة مع جمع/احترام könnten.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل:** P01 رسالة كتابة فقط: تحية وخمس جمل وختام واسم خيالي. P02 أربعة أدوار مع قراءة الدورين جهرًا. لا شريك أو تسجيل أو إرسال شكوى حقيقية. حاول الاستماع قبل التفريغ؛ قراءة النص لا تثبت فهمًا مسموعًا مستقلًا، والطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "يوضح كتابة P01 وجهر P02 والاستماع الاختياري وحدود الإقرار، بلا شريك أو تسجيل إلزامي.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "RETURN",
+        "DEFECT",
+        "DAMAGE",
+        "GUARANTEE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Guten Tag. Dieses Tablet ist defekt. Der Bildschirm bleibt schwarz.",
+      "finding": "الزبونة تصف Tablet معطلًا وشاشة تظل سوداء؛ لا سبب تقني أو كسر مثبت.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Wann haben Sie das Gerät gekauft?",
+      "finding": "سؤال الموظف عن وقت الشراء بـ Wann، لا عن مدة العطل؛ الفعل بعد أداة السؤال.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Vor zwei Wochen. Hier ist der Kassenbon.",
+      "finding": "تجيب قبل أسبوعين وتقدم الإيصال هنا؛ هذا الدليل يخص الزبونة لا Karim.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Danke. Könnten Sie mir das Ladegerät auch geben?",
+      "finding": "طلب الشاحن أيضًا بـ Könnten و mir؛ لا وصف للشاحن نفسه بأنه معطل.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Ja, natürlich. Könnten Sie das Tablet bitte prüfen?",
+      "finding": "توافق على تقديمه ثم تطلب فحص Tablet؛ طلب الفحص يخص الزبونة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ja. Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen.",
+      "finding": "يؤكد الموظف الضمان ويعرض إصلاحًا أو استبدالًا في السيناريو، دون القول إن الفحص/الحل أُنجز أو أنه مجاني عالميًا.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Ich hätte gern einen Umtausch, bitte.",
+      "finding": "الزبونة تفضل الاستبدال بـ hätte gern؛ الرغبة لا إثبات حصول الاستبدال.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "TIME",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Guten Tag.",
+      "finding": "تحية في الرسالة، وتختلف فاصلتها الكتابية عن نقطة التفريغ فقط؛ ليست ادعاء واقعيًا.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Vor zehn Tagen habe ich bei Ihnen einen Kopfhörer gekauft.",
+      "finding": "Salma اشترت Kopfhörer قبل عشرة أيام؛ لا سبعة مثل النموذج ولا أسبوعين مثل الحوار.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Seit gestern funktioniert der rechte Lautsprecher nicht.",
+      "finding": "عدم عمل المكبر الأيمن منذ أمس؛ لا نعرف حالة الأيسر من ذلك.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Der Kopfhörer ist nicht beschädigt, und ich habe den Kassenbon noch.",
+      "finding": "تنفي الضرر وتذكر أنها ما زالت تحتفظ بالإيصال؛ ننسبهما لكلامها لا لفحص خارجي.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Könnten Sie das Gerät bitte prüfen?",
+      "finding": "طلب فحص مهذب، مع المصدر الأخير؛ لا دليل أنه أُنجز.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Ich möchte wissen, ob ein Umtausch möglich ist.",
+      "finding": "تريد معرفة إمكان الاستبدال؛ ob مع ist أخيرًا، ونقطة للجملة الرئيسية الخبرية.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Vielen Dank.",
+      "finding": "ختام شكر، لا موافقة على حل معين.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "Salma Ben Youssef.",
+      "finding": "اسم كاتبة المثال الخيالي لا بيانات مطلوبة من المتعلم.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "DAMAGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was hat Salma gekauft?",
+      "finding": "einen Kopfhörer؛ المنتج في الجملة الأولى لا Tablet الحوار.",
+      "sourceIds": [
+        "OB",
+        "TIME",
+        "DAMAGE"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Seit wann funktioniert der rechte Lautsprecher nicht?",
+      "finding": "Seit gestern؛ وقت ظهور العطل وليس وقت الشراء vor zehn Tagen.",
+      "sourceIds": [
+        "OB",
+        "TIME",
+        "DAMAGE"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Ist der Kopfhörer beschädigt?",
+      "finding": "بحسب رسالتها: Nein, er ist nicht beschädigt. لا تشخيص مستقل.",
+      "sourceIds": [
+        "OB",
+        "TIME",
+        "DAMAGE"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was möchte Salma wissen?",
+      "finding": "Ob ein Umtausch möglich ist؛ سؤال الإمكان لا حق مكتسب أو استبدال أُنجز.",
+      "sourceIds": [
+        "OB",
+        "TIME",
+        "DAMAGE"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Guten Tag, hier spricht Karim.",
+      "finding": "تحية وتعريف باسم Karim؛ لا هوية متعلم أو طرف حقيقي.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Mein neues Ladegerät funktioniert nicht.",
+      "finding": "الشاحن الجديد لا يعمل؛ لا يحدد سبب العطل أو تاريخ بدايته.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Ich habe es am Montag gekauft.",
+      "finding": "اشتراه يوم الاثنين؛ لا اليوم الذي يصادفه الاثنين ولا أنه من عشرة أيام.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Könnten Sie mir bitte sagen, ob ich es umtauschen kann?",
+      "finding": "طلب جواب عن إمكان الاستبدال؛ ob ich es umtauschen kann، والفعل الناقص آخر التابعة.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Ich habe den Kassenbon und komme morgen in Ihr Geschäft.",
+      "finding": "يمتلك الإيصال وينوي زيارة المتجر غدًا؛ لا إثبات وجوده الآن أو حمل الإيصال معه أو تنفيذ الزيارة.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Vielen Dank.",
+      "finding": "شكر ختامي، وليس جواب موظف أو قبول للاستبدال.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was funktioniert nicht?",
+      "finding": "Sein neues Ladegerät؛ لا سماعة Salma أو شاشة الحوار.",
+      "sourceIds": [
+        "OB",
+        "TIME"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wann hat Karim das Gerät gekauft?",
+      "finding": "Am Montag؛ لا تاريخ تقويمي مستنتج.",
+      "sourceIds": [
+        "OB",
+        "TIME"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Welche Frage stellt er?",
+      "finding": "يسأل ob ich es umtauschen kann؛ سؤال لا موافقة.",
+      "sourceIds": [
+        "OB",
+        "TIME"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was hat Karim noch?",
+      "finding": "Den Kassenbon؛ استبدل dabei بسؤال الملكية، فلا نستنتج وجوده في المتجر الآن.",
+      "sourceIds": [
+        "OB",
+        "TIME"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Guten Tag,",
+      "finding": "تحية، تتبعها فاصلة وبداية vor بحرف صغير كما في رسالة واحدة.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "vor sieben Tagen habe ich bei Ihnen einen Kopfhörer gekauft.",
+      "finding": "جملة المتن 1: شراء سماعة الرأس قبل سبعة أيام كما يطلب P01، وليست نسبة إلى Salma.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Seit gestern funktioniert der rechte Lautsprecher nicht.",
+      "finding": "جملة 2: تعطل المكبر الأيمن منذ أمس؛ لا نخلط ذلك بوقت الشراء.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Ich habe den Kassenbon noch.",
+      "finding": "جملة 3: احتفاظ بالإيصال دون إضافة ضمان.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-05",
+      "text": "Könnten Sie das Gerät bitte prüfen?",
+      "finding": "جملة 4: Könnten Sie … bitte prüfen? تطابق المصدر ومطلب الفحص، لا الحل المنجز.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-06",
+      "text": "Ich möchte wissen, ob ein Umtausch möglich ist.",
+      "finding": "جملة 5: سؤال غير مباشر بعد Ich möchte wissen بفاصلة و ob و ist أخيرًا ونقطة.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-07",
+      "text": "Vielen Dank",
+      "finding": "ختام شكر خارج جمل المتن الخمس.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "writing-model-08",
+      "text": "Nora",
+      "finding": "اسم Nora الخيالي المطلوب؛ كتابة فقط ولا بيانات شخصية للمتعلم.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "TIME",
+        "INF"
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Kundin: Guten Tag. Mein Tablet ist defekt. Könnten Sie das Gerät bitte prüfen?",
+      "finding": "دور 1 للزبونة: يصف Tablet ويطلب الفحص؛ عدة جمل في دور واحد، لا نخلط عدد الأدوار بعدد الجمل.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Mitarbeiter: Haben Sie den Kassenbon?",
+      "finding": "دور 2 للموظف: سؤال عن الإيصال كما يطلب P02.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Kundin: Ja, hier ist der Kassenbon.",
+      "finding": "دور 3 للزبونة: تقديم الإيصال؛ هنا تصريح حيازة حاضر يختلف عن استماع Karim.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Mitarbeiter: Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen.",
+      "finding": "دور 4 للموظف: الضمان فرضية هذا التمرين، ويقترح إصلاحًا أو استبدالًا دون موعد أو تكلفة أو إنجاز.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "GUARANTEE",
+        "EXCHANGE",
+        "INF"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Das Gerät ist defekt.** → الجهاز معطّل.",
+      "finding": "وصف عطل، ليس تشخيصًا تقنيًا محددًا.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "DEFECT",
+        "INF"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Könnten Sie mir bitte helfen?** → هل يمكنكم مساعدتي من فضلكم؟",
+      "finding": "طلب مهذب مع mir و helfen النهائي بلا zu.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "DEFECT",
+        "INF"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Ich hätte gern einen Umtausch.** → أود استبدال المنتج.",
+      "finding": "رغبة بـ hätte gern لا من können ولا استبدال منجز.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "DEFECT",
+        "INF"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **Haben Sie den Kassenbon?** → هل لديكم إيصال الشراء؟",
+      "finding": "سؤال حيازة الإيصال، وليس شرطًا قانونيًا كافيًا وحده.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "DEFECT",
+        "INF"
+      ]
+    },
+    {
+      "id": "DL-A2-09-T01",
+      "text": "1. أحتفظ به لإثبات الشراء: **der Kassenbon / der Bildschirm**\n2. أشحن به الهاتف: **das Ladegerät / die Garantie**\n3. أقرأه لمعرفة طريقة استخدام الجهاز: **die Bedienungsanleitung / der Akku**\n4. فعل يعني استبدال المنتج بآخر: **umtauschen / fotografieren**",
+      "finding": "اختيار معجمي بأزواج محددة، مع معنى الاستبدال لا إجراء شراء حقيقي.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "أحتفظ به لإثبات الشراء: **der Kassenbon / der Bildschirm**",
+          "answer": "der Kassenbon",
+          "finding": "الإيصال لإثبات الشراء؛ الشاشة لا تقوم بوظيفته."
+        },
+        {
+          "text": "أشحن به الهاتف: **das Ladegerät / die Garantie**",
+          "answer": "das Ladegerät",
+          "finding": "الشاحن لشحن الهاتف؛ الضمان وعد/ترتيب لا جهاز شحن."
+        },
+        {
+          "text": "أقرأه لمعرفة طريقة استخدام الجهاز: **die Bedienungsanleitung / der Akku**",
+          "answer": "die Bedienungsanleitung",
+          "finding": "دليل الاستخدام يشرح التشغيل؛ البطارية ليست كتاب إرشادات."
+        },
+        {
+          "text": "فعل يعني استبدال المنتج بآخر: **umtauschen / fotografieren**",
+          "answer": "umtauschen",
+          "finding": "umtauschen للاستبدال؛ fotografieren تصوير لا استبدال."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T02",
+      "text": "1. ______ Sie das Gerät prüfen? (طلب رسمي)\n2. ______ ich bitte ein neues Ladegerät bekommen? (طلب مهذّب)\n3. ______ ihr mir bitte helfen? (طلب من مجموعة أصدقاء)\n4. ______ du den Kassenbon zeigen? (طلب من صديق)",
+      "finding": "أربع صيغ مرتبطة بضمير الطلب بدل حفظ könnte وحدها.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "______ Sie das Gerät prüfen? (طلب رسمي)",
+          "answer": "Könnten",
+          "finding": "صيغة Sie هي Könnten للاحترام ولو لشخص واحد."
+        },
+        {
+          "text": "______ ich bitte ein neues Ladegerät bekommen? (طلب مهذّب)",
+          "answer": "Könnte",
+          "finding": "مع ich الصيغة Könnte، و bekommen مصدر نهائي."
+        },
+        {
+          "text": "______ ihr mir bitte helfen? (طلب من مجموعة أصدقاء)",
+          "answer": "Könntet",
+          "finding": "ihr لجماعة أصدقاء يقابله Könntet لا Könnten."
+        },
+        {
+          "text": "______ du den Kassenbon zeigen? (طلب من صديق)",
+          "answer": "Könntest",
+          "finding": "du يقابله Könntest مع مصدر zeigen."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T03",
+      "text": "1. Könnten Sie das Gerät bitte ______? (prüfen)\n2. Könntest du den Kopfhörer ______? (reparieren)\n3. Könnten wir das Produkt ______? (umtauschen)",
+      "finding": "ثلاثة مصادر في موضعها دون zu؛ كل جملة طلب لا تنفيذ.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "Könnten Sie das Gerät bitte ______? (prüfen)",
+          "answer": "prüfen",
+          "finding": "المصدر prüfen دون zu في آخر الطلب، ولا نعيد تصريفه."
+        },
+        {
+          "text": "Könntest du den Kopfhörer ______? (reparieren)",
+          "answer": "reparieren",
+          "finding": "reparieren مصدر مع Könntest و du؛ Kopfhörer مفعول في النصب."
+        },
+        {
+          "text": "Könnten wir das Produkt ______? (umtauschen)",
+          "answer": "umtauschen",
+          "finding": "umtauschen مصدر كامل بعد Könnten wir؛ لا نفصله هنا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T04",
+      "text": "اختر العبارة المناسبة للدور المحدد، لا مجرد أي جملة صحيحة:\n\n1. الزبونة تصف شاشة سوداء وتطلب الفحص: أ. Könnten Sie das Gerät bitte prüfen? ب. Guten Appetit! ج. Ich wohne am Bildschirm.\n2. الموظف يعرض إصلاحًا أو استبدالًا كما في الحوار: أ. Ich bin der Kassenbon. ب. Wir können es reparieren oder umtauschen. ج. Das Gerät fährt morgen.",
+      "finding": "فصل الطلب من جهة الزبونة عن عرض الحل من جهة الموظف؛ أضيف بند ثان يدعم Q04.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "الزبونة تصف شاشة سوداء وتطلب الفحص: أ. Könnten Sie das Gerät bitte prüfen? ب. Guten Appetit! ج. Ich wohne am Bildschirm.",
+          "answer": "أ: Könnten Sie das Gerät bitte prüfen?",
+          "finding": "طلب الزبونة هو الفحص؛ Guten Appetit خاص بالأكل و Ich wohne am Bildschirm ليس طلب فحص."
+        },
+        {
+          "text": "الموظف يعرض إصلاحًا أو استبدالًا كما في الحوار: أ. Ich bin der Kassenbon. ب. Wir können es reparieren oder umtauschen. ج. Das Gerät fährt morgen.",
+          "answer": "ب: Wir können es reparieren oder umtauschen.",
+          "finding": "عرض الموظف إصلاح/استبدال؛ ليس هو الإيصال ولا سفر الجهاز غدًا، ولا يضيف الرد فحصًا منجزًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Salma hat einen Kopfhörer gekauft.\n2. Der rechte Lautsprecher funktioniert.\n3. Der Kopfhörer ist beschädigt.\n4. Salma möchte wissen, ob ein Umtausch möglich ist.",
+      "finding": "أربعة أحكام بحسب الرسالة فقط؛ أزيل الاستدلال غير اللازم عن المكبر الأيسر.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "Salma hat einen Kopfhörer gekauft.",
+          "answer": "صحيح",
+          "finding": "النص يذكر einen Kopfhörer صراحة."
+        },
+        {
+          "text": "Der rechte Lautsprecher funktioniert.",
+          "answer": "خطأ",
+          "finding": "تنفي الرسالة عمل الأيمن؛ صيغ هذا البند ليناقض الدليل مباشرة بدل استنتاج حالة الأيسر."
+        },
+        {
+          "text": "Der Kopfhörer ist beschädigt.",
+          "answer": "خطأ",
+          "finding": "تنفي Salma الضرر؛ نحكم بحسب كلامها لا فحص مستقل."
+        },
+        {
+          "text": "Salma möchte wissen, ob ein Umtausch möglich ist.",
+          "answer": "صحيح",
+          "finding": "تسأل عن الإمكان بـ ob؛ لا تطلب تثبيت موافقة موجودة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة: **Ladegerät — Montag — umtauschen — Kassenbon**.\n\n1. Das neue ______ funktioniert nicht.\n2. Er hat es am ______ gekauft.\n3. Er fragt, ob er es ______ kann.\n4. Er hat den ______.",
+      "finding": "أضيف بنك كلمات وحُذف افتراض حمل الإيصال الآن؛ تبقى حدود الاستماع/التفريغ واضحة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "Das neue ______ funktioniert nicht.",
+          "answer": "Ladegerät",
+          "finding": "الشاحن الجديد لا يعمل؛ اختيار من بنك لا يخمن منتجًا آخر."
+        },
+        {
+          "text": "Er hat es am ______ gekauft.",
+          "answer": "Montag",
+          "finding": "ورد am Montag لا morgen الذي يخص الزيارة."
+        },
+        {
+          "text": "Er fragt, ob er es ______ kann.",
+          "answer": "umtauschen",
+          "finding": "مصدر umtauschen قبل kann في التابعة؛ لا zu."
+        },
+        {
+          "text": "Er hat den ______.",
+          "answer": "Kassenbon",
+          "finding": "يمتلك Kassenbon؛ أزيل dabei لأنه غير مثبت في النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T07",
+      "text": "ابدأ في1 بـKönnten Sie،وفي2 بـIch،وفي3 بـIch möchte wissen. استعمل كل كتلة مرة وأضف الفاصلة وعلامة النهاية المناسبة دون تغيير الصيغ:\n\n1. Sie / Könnten / bitte / helfen / mir\n2. gern / Ich / einen Umtausch / hätte\n3. möglich / Ich möchte wissen / ist / ob / ein Umtausch",
+      "finding": "قُيدت البدايات وأضيفت مهمة ob؛ المصدر يدعم Q09 و Q10 مباشرة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "Sie / Könnten / bitte / helfen / mir",
+          "answer": "Könnten Sie mir bitte helfen?",
+          "finding": "بداية Könnten Sie المحددة تقيد جواب السؤال المباشر؛ bitte يمكن أن تتحرك في صيغ أخرى لكن ليس المصدر في وسط هذا النمط."
+        },
+        {
+          "text": "gern / Ich / einen Umtausch / hätte",
+          "answer": "Ich hätte gern einen Umtausch.",
+          "finding": "البداية Ich والصيغة hätte مع einen Umtausch؛ لا مصدر فعل مطلوب في نهاية هذه العبارة الاسمية."
+        },
+        {
+          "text": "möglich / Ich möchte wissen / ist / ob / ein Umtausch",
+          "answer": "Ich möchte wissen, ob ein Umtausch möglich ist.",
+          "finding": "الجملة الرئيسية ثابتة ثم فاصلة و ob والصفة möglich قبل ist؛ تدريب مباشر يدعم Q10 و P01."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-T08",
+      "text": "**أ — P01: رسالة كتابة فقط**\n\nاكتب باسم Nora رسالة شكوى خيالية، كتابة فقط: تحية، ثم خمس جمل في المتن، ثم ختام واسم. الجملة1 شراء سماعة رأس قبل سبعة أيام؛ الجملة2 تعطل المكبر الأيمن منذ أمس؛ الجملة3 الاحتفاظ بإيصال الشراء؛ الجملة4 طلب الفحص بـKönnten Sie … bitte prüfen?؛ الجملة5 السؤال عن إمكان الاستبدال بـIch möchte wissen, ob مع ist في نهاية التابعة. لا تدّع موافقة المتجر أو ضمانًا غير مذكور. لا جهر أو إرسال أو بيانات شخصية مطلوبة.\n\n**ب — P02: أربعة أدوار مع الجهر**\n\nاكتب أربعة أدوار خيالية بين Kundin وMitarbeiter، ثم اقرأ الدورين بصوت مرتفع: الدور1 للزبونة يصف Tablet معطلًا ويطلب فحصه بـKönnten Sie … bitte prüfen?؛ الدور2 للموظف يسأل عن إيصال الشراء؛ الدور3 للزبونة تقدم فيه الإيصال؛ الدور4 للموظف يذكر أن الجهاز تحت الضمان في هذا السيناريو فقط ويعرض إصلاحًا أو استبدالًا بـWir können es reparieren oder umtauschen. لا تقل إن الحل نُفذ أو حُددت تكلفته. لا شريك أو تسجيل أو بيانات شراء حقيقية مطلوبة.",
+      "finding": "مهمتان معلنتان لا إضافة خفية في التقييم: رسالة من 8 مكونات كتابة فقط وحوار من 4 أدوار مع الجهر؛ 12 مطلبًا موزعة لا 12 جملة. النموذجان يفيان بحدي 220/180 حرفًا.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "GUARANTEE",
+        "INF"
+      ],
+      "items": [
+        {
+          "text": "P01، المكوّن 1: Guten Tag,",
+          "finding": "تحية، تتبعها فاصلة وبداية vor بحرف صغير كما في رسالة واحدة."
+        },
+        {
+          "text": "P01، المكوّن 2: vor sieben Tagen habe ich bei Ihnen einen Kopfhörer gekauft.",
+          "finding": "جملة المتن 1: شراء سماعة الرأس قبل سبعة أيام كما يطلب P01، وليست نسبة إلى Salma."
+        },
+        {
+          "text": "P01، المكوّن 3: Seit gestern funktioniert der rechte Lautsprecher nicht.",
+          "finding": "جملة 2: تعطل المكبر الأيمن منذ أمس؛ لا نخلط ذلك بوقت الشراء."
+        },
+        {
+          "text": "P01، المكوّن 4: Ich habe den Kassenbon noch.",
+          "finding": "جملة 3: احتفاظ بالإيصال دون إضافة ضمان."
+        },
+        {
+          "text": "P01، المكوّن 5: Könnten Sie das Gerät bitte prüfen?",
+          "finding": "جملة 4: Könnten Sie … bitte prüfen? تطابق المصدر ومطلب الفحص، لا الحل المنجز."
+        },
+        {
+          "text": "P01، المكوّن 6: Ich möchte wissen, ob ein Umtausch möglich ist.",
+          "finding": "جملة 5: سؤال غير مباشر بعد Ich möchte wissen بفاصلة و ob و ist أخيرًا ونقطة."
+        },
+        {
+          "text": "P01، المكوّن 7: Vielen Dank",
+          "finding": "ختام شكر خارج جمل المتن الخمس."
+        },
+        {
+          "text": "P01، المكوّن 8: Nora",
+          "finding": "اسم Nora الخيالي المطلوب؛ كتابة فقط ولا بيانات شخصية للمتعلم."
+        },
+        {
+          "text": "P02، الدور 1: Kundin: Guten Tag. Mein Tablet ist defekt. Könnten Sie das Gerät bitte prüfen?",
+          "finding": "دور 1 للزبونة: يصف Tablet ويطلب الفحص؛ عدة جمل في دور واحد، لا نخلط عدد الأدوار بعدد الجمل."
+        },
+        {
+          "text": "P02، الدور 2: Mitarbeiter: Haben Sie den Kassenbon?",
+          "finding": "دور 2 للموظف: سؤال عن الإيصال كما يطلب P02."
+        },
+        {
+          "text": "P02، الدور 3: Kundin: Ja, hier ist der Kassenbon.",
+          "finding": "دور 3 للزبونة: تقديم الإيصال؛ هنا تصريح حيازة حاضر يختلف عن استماع Karim."
+        },
+        {
+          "text": "P02، الدور 4: Mitarbeiter: Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen.",
+          "finding": "دور 4 للموظف: الضمان فرضية هذا التمرين، ويقترح إصلاحًا أو استبدالًا دون موعد أو تكلفة أو إنجاز."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q01",
+      "text": "ما معنى **der Kassenbon**؟",
+      "finding": "Kassenbon هو إيصال الشراء.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "إيصال الشراء.",
+        "الشاحن.",
+        "دليل الاستخدام."
+      ],
+      "answer": "إيصال الشراء.",
+      "sourceTaskIds": [
+        "DL-A2-09-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "إيصال الشراء.",
+          "correct": true,
+          "finding": "المعنى المطلوب مباشرة من المفردات."
+        },
+        {
+          "text": "الشاحن.",
+          "correct": false,
+          "finding": "الشاحن Ladegerät لا Kassenbon."
+        },
+        {
+          "text": "دليل الاستخدام.",
+          "correct": false,
+          "finding": "دليل الاستخدام Bedienungsanleitung لا الإيصال."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q02",
+      "text": "أكمل الطلب بأدب: ___ Sie das Gerät bitte prüfen?",
+      "finding": "مع Sie نستخدم صيغة الطلب المهذب Könnten.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "Könntest",
+        "Könnten",
+        "Könnte"
+      ],
+      "answer": "Könnten",
+      "sourceTaskIds": [
+        "DL-A2-09-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "Könntest",
+          "correct": false,
+          "finding": "Könntest مع du لا Sie هنا."
+        },
+        {
+          "text": "Könnten",
+          "correct": true,
+          "finding": "مطابقة Sie للاحترام مع Könnten."
+        },
+        {
+          "text": "Könnte",
+          "correct": false,
+          "finding": "Könnte مع ich/er/sie/es المفرد لا Sie للاحترام."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q03",
+      "text": "في **Könnten Sie das Gerät bitte prüfen?**، أين يأتي المصدر prüfen؟",
+      "finding": "في سؤال الطلب المباشر المدروس يأتي الفعل الناقص المصرف أولًا، والمصدر prüfen في النهاية دون zu.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "بعد Könnten مباشرةً.",
+        "في بداية السؤال.",
+        "في نهاية السؤال."
+      ],
+      "answer": "في نهاية السؤال.",
+      "sourceTaskIds": [
+        "DL-A2-09-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "بعد Könnten مباشرةً.",
+          "correct": false,
+          "finding": "بعد Könnten مباشرة Sie في المثال، لا المصدر."
+        },
+        {
+          "text": "في بداية السؤال.",
+          "correct": false,
+          "finding": "البداية بالفعل المصرف Könnten وليس prüfen."
+        },
+        {
+          "text": "في نهاية السؤال.",
+          "correct": true,
+          "finding": "prüfen آخر السؤال المعروض ودون zu."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q04",
+      "text": "أي رد مناسب من خدمة العملاء؟",
+      "finding": "يعرض الموظف إصلاحًا أو استبدالًا؛ لا تذكر هذه الجملة الفحص ولا تثبت تنفيذ أي حل.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "Ich bin der Kassenbon.",
+        "Wir können es reparieren oder umtauschen.",
+        "Das Gerät fährt morgen."
+      ],
+      "answer": "Wir können es reparieren oder umtauschen.",
+      "sourceTaskIds": [
+        "DL-A2-09-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Ich bin der Kassenbon.",
+          "correct": false,
+          "finding": "أنا الإيصال ليست استجابة خدمة مناسبة لهذا الموقف."
+        },
+        {
+          "text": "Wir können es reparieren oder umtauschen.",
+          "correct": true,
+          "finding": "عرض إصلاح أو استبدال كما في الحوار و T04.2."
+        },
+        {
+          "text": "Das Gerät fährt morgen.",
+          "correct": false,
+          "finding": "ذهاب/سير الجهاز غدًا لا يعرض حل العطل المقصود."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q05",
+      "text": "ماذا اشترت Salma؟",
+      "finding": "الرسالة تقول einen Kopfhörer.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "سماعة رأس.",
+        "حاسوبًا.",
+        "هاتفًا جديدًا."
+      ],
+      "answer": "سماعة رأس.",
+      "sourceTaskIds": [
+        "DL-A2-09-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "سماعة رأس.",
+          "correct": true,
+          "finding": "einen Kopfhörer صريح في الرسالة."
+        },
+        {
+          "text": "حاسوبًا.",
+          "correct": false,
+          "finding": "لا تذكر شراء حاسوب."
+        },
+        {
+          "text": "هاتفًا جديدًا.",
+          "correct": false,
+          "finding": "لا تذكر شراء هاتف."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q06",
+      "text": "منذ متى لا يعمل مكبر السماعة الأيمن؟",
+      "finding": "يقول النص Seit gestern.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "منذ عشرة أيام.",
+        "منذ شهر.",
+        "منذ أمس."
+      ],
+      "answer": "منذ أمس.",
+      "sourceTaskIds": [
+        "DL-A2-09-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "منذ عشرة أيام.",
+          "correct": false,
+          "finding": "عشرة أيام وقت الشراء لا بداية العطل."
+        },
+        {
+          "text": "منذ شهر.",
+          "correct": false,
+          "finding": "شهر غير مذكور."
+        },
+        {
+          "text": "منذ أمس.",
+          "correct": true,
+          "finding": "Seit gestern يطابق منذ أمس."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q07",
+      "text": "وفق رسالة Salma،هل تقول إن السماعة متضررة؟",
+      "finding": "تقول Salma: Der Kopfhörer ist nicht beschädigt. هذا نقل لكلامها، لا فحص تقني يثبت أن كل أجزائها تعمل.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "نعم، الشاشة مكسورة.",
+        "لا، ليست متضررة.",
+        "لا يذكر النص ذلك."
+      ],
+      "answer": "لا، ليست متضررة.",
+      "sourceTaskIds": [
+        "DL-A2-09-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "نعم، الشاشة مكسورة.",
+          "correct": false,
+          "finding": "لا شاشة مكسورة في رسالة Salma، كما أنها تنفي الضرر."
+        },
+        {
+          "text": "لا، ليست متضررة.",
+          "correct": true,
+          "finding": "تقول غير متضررة؛ هذا نقل نص لا فحص."
+        },
+        {
+          "text": "لا يذكر النص ذلك.",
+          "correct": false,
+          "finding": "تذكر ذلك صراحة فلا يصح نفي الذكر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q08",
+      "text": "في المثال **Ich habe den Kassenbon und komme morgen**، ماذا يملك Karim؟",
+      "finding": "Kassenbon تعني إيصال الشراء.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "إيصال الشراء.",
+        "بطاقة صعود الطائرة.",
+        "قائمة الطعام."
+      ],
+      "answer": "إيصال الشراء.",
+      "sourceTaskIds": [
+        "DL-A2-09-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "إيصال الشراء.",
+          "correct": true,
+          "finding": "Ich habe den Kassenbon دليل حيازة إيصال فقط."
+        },
+        {
+          "text": "بطاقة صعود الطائرة.",
+          "correct": false,
+          "finding": "لا ذكر لبطاقة صعود."
+        },
+        {
+          "text": "قائمة الطعام.",
+          "correct": false,
+          "finding": "لا ذكر لقائمة طعام."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q09",
+      "text": "اختر سؤال طلب المساعدة بالنمط المباشر المدروس: الفعل المصرف أولًا ثم Sie،والمصدر في النهاية.",
+      "finding": "Könnten Sie mir bitte helfen? يطابق نمط السؤال المباشر المطلوب؛ لا نعمم الحكم على كل سؤال تأكيدي أو استعمال محكي.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "Könnten Sie helfen mir bitte?",
+        "Sie könnten bitte mir helfen?",
+        "Könnten Sie mir bitte helfen?"
+      ],
+      "answer": "Könnten Sie mir bitte helfen?",
+      "sourceTaskIds": [
+        "DL-A2-09-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Könnten Sie helfen mir bitte?",
+          "correct": false,
+          "finding": "helfen ليس في الموضع الأخير في هذا النمط المطلوب."
+        },
+        {
+          "text": "Sie könnten bitte mir helfen?",
+          "correct": false,
+          "finding": "لا تبدأ بالفعل؛ يمكن تصوّر سؤال تأكيدي بترتيب خبري، لكن ذلك خارج النمط المحدد وليس حكمًا مطلقًا على الألمانية."
+        },
+        {
+          "text": "Könnten Sie mir bitte helfen?",
+          "correct": true,
+          "finding": "الفعل المصرف أولًا ثم Sie و mir مع helfen، والمصدر أخيرًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-Q10",
+      "text": "أي جملة صحيحة للسؤال إن كان الاستبدال ممكنًا؟",
+      "finding": "بعد ob يأتي الفعل المصرف في نهاية الجملة التابعة.",
+      "sourceIds": [
+        "KII",
+        "MODAL",
+        "OB",
+        "TIME",
+        "INF"
+      ],
+      "options": [
+        "Ich möchte wissen, ob ist ein Umtausch möglich.",
+        "Ich möchte wissen, ob ein Umtausch möglich ist.",
+        "Ich möchte ob wissen, ein Umtausch ist möglich."
+      ],
+      "answer": "Ich möchte wissen, ob ein Umtausch möglich ist.",
+      "sourceTaskIds": [
+        "DL-A2-09-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Ich möchte wissen, ob ist ein Umtausch möglich.",
+          "correct": false,
+          "finding": "ist مباشرةبعد ob لا يطابق التابعة المطلوبة."
+        },
+        {
+          "text": "Ich möchte wissen, ob ein Umtausch möglich ist.",
+          "correct": true,
+          "finding": "ob ein Umtausch möglich ist يضع الفعل أخيرًا بعد الجملة الرئيسية."
+        },
+        {
+          "text": "Ich möchte ob wissen, ein Umtausch ist möglich.",
+          "correct": false,
+          "finding": "يدمج ob في الرئيسية ويترك التابعة بترتيب خبري، فلا يطابق البنية المطلوبة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-P01",
+      "text": "اكتب باسم Nora رسالة شكوى خيالية، كتابة فقط: تحية، ثم خمس جمل في المتن، ثم ختام واسم. الجملة1 شراء سماعة رأس قبل سبعة أيام؛ الجملة2 تعطل المكبر الأيمن منذ أمس؛ الجملة3 الاحتفاظ بإيصال الشراء؛ الجملة4 طلب الفحص بـKönnten Sie … bitte prüfen?؛ الجملة5 السؤال عن إمكان الاستبدال بـIch möchte wissen, ob مع ist في نهاية التابعة. لا تدّع موافقة المتجر أو ضمانًا غير مذكور. لا جهر أو إرسال أو بيانات شخصية مطلوبة.",
+      "finding": "مطابقة المصدر والمعايير والنموذج ونمط الدليل؛ الإقرار والحد الحرفي لا يثبتان صحة اللغة أو النطق.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "INF",
+        "GUARANTEE"
+      ],
+      "criteria": {
+        "taskCompletion": "تحية وخمس جمل وختام واسم Nora؛ سماعة الرأس قبل سبعة أيام،عطل الأيمن منذ أمس،الإيصال،طلب الفحص وسؤال الاستبدال؛ كتابة فقط.",
+        "meaningClarity": "وقت الشراء منفصل عن بداية العطل،والطلبات لا تثبت موافقة المتجر أو ضمانًا لم يذكر؛ البيانات خيالية.",
+        "targetSkill": "Könnten Sie في بداية سؤال الفحص وprüfen بلاzu في نهايته؛ فاصلة قبلob وist آخر التابعة،مع نقطة بعدجملةIch möchte wissen."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "تحية وخمس جمل وختام واسم Nora؛ سماعة الرأس قبل سبعة أيام،عطل الأيمن منذ أمس،الإيصال،طلب الفحص وسؤال الاستبدال؛ كتابة فقط.",
+          "finding": "المكونات الثمانية واضحة ويقابلها نموذج 258 حرفًا، فوق 220؛ لا جهر في المصدر أو التقييم."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "وقت الشراء منفصل عن بداية العطل،والطلبات لا تثبت موافقة المتجر أو ضمانًا لم يذكر؛ البيانات خيالية.",
+          "finding": "يميز قبل سبعة أيام عن منذ أمس، ويمنع افتراض ضمان أوإذن؛ نموذج خيالي باسم Nora."
+        },
+        {
+          "key": "targetSkill",
+          "text": "Könnten Sie في بداية سؤال الفحص وprüfen بلاzu في نهايته؛ فاصلة قبلob وist آخر التابعة،مع نقطة بعدجملةIch möchte wissen.",
+          "finding": "يفحص نص معيار الطلبو ob فقط؛ التطبيق لا يحلل النحو آليًا ولا يشترط استنساخ النموذج."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-P02",
+      "text": "اكتب أربعة أدوار خيالية بين Kundin وMitarbeiter، ثم اقرأ الدورين بصوت مرتفع: الدور1 للزبونة يصف Tablet معطلًا ويطلب فحصه بـKönnten Sie … bitte prüfen?؛ الدور2 للموظف يسأل عن إيصال الشراء؛ الدور3 للزبونة تقدم فيه الإيصال؛ الدور4 للموظف يذكر أن الجهاز تحت الضمان في هذا السيناريو فقط ويعرض إصلاحًا أو استبدالًا بـWir können es reparieren oder umtauschen. لا تقل إن الحل نُفذ أو حُددت تكلفته. لا شريك أو تسجيل أو بيانات شراء حقيقية مطلوبة.",
+      "finding": "مطابقة المصدر والمعايير والنموذج ونمط الدليل؛ الإقرار والحد الحرفي لا يثبتان صحة اللغة أو النطق.",
+      "sourceIds": [
+        "KII",
+        "OB",
+        "INF",
+        "GUARANTEE"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أدوار متناوبة:شكوى وطلب،سؤال الإيصال،تقديم الإيصال،ثم الضمان وعرض إصلاح أو استبدال؛ قرأت الدورين جهرًا.",
+        "meaningClarity": "أدوار الزبونة والموظف واضحة،والضمان فرضية هذا السيناريو فقط؛ لا تكلفة أو موعد أو حل منفذ مختلق.",
+        "targetSkill": "طلب بـKönnten Sie مع مصدرprüfen في النهاية،وردبـkönnen معreparieren/umtauschen دونzu؛ ذكرالإيصال مطابق للدور."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أدوار متناوبة:شكوى وطلب،سؤال الإيصال،تقديم الإيصال،ثم الضمان وعرض إصلاح أو استبدال؛ قرأت الدورين جهرًا.",
+          "finding": "الأدوار الأربعة مدعومة في T08 ب ونموذج 242 حرفًا فوق 180؛ إقرار الجهر للدورين مطلوب وليس شريكًا."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "أدوار الزبونة والموظف واضحة،والضمان فرضية هذا السيناريو فقط؛ لا تكلفة أو موعد أو حل منفذ مختلق.",
+          "finding": "الضمان صريح في السيناريو فقط؛ لا إنجاز حل أو تكلفة مختلقة."
+        },
+        {
+          "key": "targetSkill",
+          "text": "طلب بـKönnten Sie مع مصدرprüfen في النهاية،وردبـkönnen معreparieren/umtauschen دونzu؛ ذكرالإيصال مطابق للدور.",
+          "finding": "طلب prüfen وعرض reparieren/umtauschen بمصدر دون zu، ومعنى الإيصال في مكانه؛ لا أداة تصحيح نطق."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-09-AUD-PHR-01",
+      "text": "Das Gerät. Das Smartphone. Der Kopfhörer. Der Bildschirm. Der Akku. Das Ladegerät. Der Lautsprecher. Die Garantie. Der Kassenbon. Die Bedienungsanleitung. Defekt. Beschädigt. Reparieren. Umtauschen. Zurückgeben. Prüfen. Ich könnte. Du könntest. Er und sie könnte. Wir könnten. Ihr könntet. Sie könnten. Könnten Sie das Gerät bitte prüfen? Könnten Sie mir bitte helfen? Ich hätte gern einen Umtausch.",
+      "finding": "مطابقة نصية مع المصدر والأدوار؛ الروابط والأصوات والحالة محفوظة. لا استماع أو توليد أو اعتماد جديد. قيد تعداد PHR باقٍ مع تصحيح مكتوب فقط.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Das Gerät.",
+          "finding": "das Gerät مفرد محايد، Geräte جمع مع أوملاوت؛ لفظ عام للجهاز لا تشخيص بعينه."
+        },
+        {
+          "text": "Das Smartphone.",
+          "finding": "Smartphone محايد وجمعه Smartphones؛ الهاتف الذكي لا يلزم أن يكون منتج Salma أو Karim."
+        },
+        {
+          "text": "Der Kopfhörer.",
+          "finding": "Kopfhörer مذكر وجمعه لا يتغير في الشكل؛ سماعة الرأس لا تعني مكبر الصوت وحده."
+        },
+        {
+          "text": "Der Bildschirm.",
+          "finding": "Bildschirm مذكر وجمعه Bildschirme؛ الشاشة ليست إيصالًا أو بطارية."
+        },
+        {
+          "text": "Der Akku.",
+          "finding": "Akku مذكر وجمعه Akkus؛ البطارية غير الشاحن، ولا دليل أنها سبب الشاشة السوداء."
+        },
+        {
+          "text": "Das Ladegerät.",
+          "finding": "Ladegerät محايد وجمعه Ladegeräte؛ الشاحن، وهو منتج Karim تحديدًا."
+        },
+        {
+          "text": "Der Lautsprecher.",
+          "finding": "Lautsprecher مذكر وجمعه مطابق في الشكل؛ نميز المكبر الأيمن عن السماعة كلها."
+        },
+        {
+          "text": "Die Garantie.",
+          "finding": "Garantie مؤنث وجمعها Garantien؛ المعنى القاموسي لا يثبت شروط ضمان قانونية."
+        },
+        {
+          "text": "Der Kassenbon.",
+          "finding": "Kassenbon مذكر وجمعه Kassenbons؛ إيصال شراء، وليس بطاقة صعود أو دليل استخدام."
+        },
+        {
+          "text": "Die Bedienungsanleitung.",
+          "finding": "Bedienungsanleitung مؤنث وجمعها Bedienungsanleitungen؛ دليل استخدام لا جزء مادي من الجهاز."
+        },
+        {
+          "text": "Defekt.",
+          "finding": "defekt / beschädigt صفات متداخلة المعنى؛ ليستا فصلًا علميًا بين عطل وظيفي وضرر مرئي فقط. هذا جزء defekt."
+        },
+        {
+          "text": "Beschädigt.",
+          "finding": "defekt / beschädigt صفات متداخلة المعنى؛ ليستا فصلًا علميًا بين عطل وظيفي وضرر مرئي فقط. هذا جزء beschädigt."
+        },
+        {
+          "text": "Reparieren.",
+          "finding": "reparieren مصدر بمعنى يصلح؛ لا يعني أن الإصلاح انتهى بمجرد اقتراحه."
+        },
+        {
+          "text": "Umtauschen.",
+          "finding": "umtauschen مصدر منفصل في الجملة المصرفة؛ معنى الاستبدال لا رد نقود مضمون."
+        },
+        {
+          "text": "Zurückgeben.",
+          "finding": "zurückgeben إعادة المنتج؛ لا تساوي استبداله بالضرورة."
+        },
+        {
+          "text": "Prüfen.",
+          "finding": "prüfen يفحص؛ يسبق تشخيصًا أو قرارًا محتملًا ولا يساوي إصلاحًا مكتملًا."
+        },
+        {
+          "text": "Ich könnte.",
+          "finding": "ich يقابله könnte؛ الأوملاوت يميز الصيغة عن الماضي konnte."
+        },
+        {
+          "text": "Du könntest.",
+          "finding": "du يقابله könntest؛ ليس Könnten حين يكون الفاعل du."
+        },
+        {
+          "text": "Er und sie könnte.",
+          "finding": "التفريغ يقول Er und sie könnte.؛ تعداد ملتبس وغير صحيح كجملة بفاعل منسق. التنبيه المكتوب والجدول يوضحان بدائل المفرد؛ التسجيل نفسه محفوظ ولم يُصلح.",
+          "issue": "ambiguous_pronoun_list_preserved_with_written_correction"
+        },
+        {
+          "text": "Wir könnten.",
+          "finding": "wir يقابله könnten؛ يمكن أن يكون طلبًا باسم مجموعة."
+        },
+        {
+          "text": "Ihr könntet.",
+          "finding": "ihr يقابله könntet؛ مخاطبة مجموعة أصدقاء وليست Sie للاحترام."
+        },
+        {
+          "text": "Sie könnten.",
+          "finding": "sie للجمع و Sie للاحترام يقابلهما könnten؛ الاحترام ممكن لشخص واحد."
+        },
+        {
+          "text": "Könnten Sie das Gerät bitte prüfen?",
+          "finding": "طلب فحص جهاز: Könnten مع Sie ومصدر prüfen بلا zu في النهاية؛ لا يفترض موافقة."
+        },
+        {
+          "text": "Könnten Sie mir bitte helfen?",
+          "finding": "طلب مساعدة مع mir بالداتيف و helfen في النهاية؛ bitte تلطف الطلب."
+        },
+        {
+          "text": "Ich hätte gern einen Umtausch.",
+          "finding": "hätte من haben و einen Umtausch منصوب مذكر؛ رغبة في استبدال وليست فعل استبدال تم."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-09-AUD-DLG-01",
+      "text": "Guten Tag. Dieses Tablet ist defekt. Der Bildschirm bleibt schwarz. Wann haben Sie das Gerät gekauft? Vor zwei Wochen. Hier ist der Kassenbon. Danke. Könnten Sie mir das Ladegerät auch geben? Ja, natürlich. Könnten Sie das Tablet bitte prüfen? Ja. Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen. Ich hätte gern einen Umtausch, bitte.",
+      "finding": "مطابقة نصية مع المصدر والأدوار؛ الروابط والأصوات والحالة محفوظة. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Guten Tag. Dieses Tablet ist defekt. Der Bildschirm bleibt schwarz.",
+          "finding": "الزبونة تصف Tablet معطلًا وشاشة تظل سوداء؛ لا سبب تقني أو كسر مثبت."
+        },
+        {
+          "text": "Wann haben Sie das Gerät gekauft?",
+          "finding": "سؤال الموظف عن وقت الشراء بـ Wann، لا عن مدة العطل؛ الفعل بعد أداة السؤال."
+        },
+        {
+          "text": "Vor zwei Wochen. Hier ist der Kassenbon.",
+          "finding": "تجيب قبل أسبوعين وتقدم الإيصال هنا؛ هذا الدليل يخص الزبونة لا Karim."
+        },
+        {
+          "text": "Danke. Könnten Sie mir das Ladegerät auch geben?",
+          "finding": "طلب الشاحن أيضًا بـ Könnten و mir؛ لا وصف للشاحن نفسه بأنه معطل."
+        },
+        {
+          "text": "Ja, natürlich. Könnten Sie das Tablet bitte prüfen?",
+          "finding": "توافق على تقديمه ثم تطلب فحص Tablet؛ طلب الفحص يخص الزبونة."
+        },
+        {
+          "text": "Ja. Das Gerät ist noch unter Garantie. Wir können es reparieren oder umtauschen.",
+          "finding": "يؤكد الموظف الضمان ويعرض إصلاحًا أو استبدالًا في السيناريو، دون القول إن الفحص/الحل أُنجز أو أنه مجاني عالميًا."
+        },
+        {
+          "text": "Ich hätte gern einen Umtausch, bitte.",
+          "finding": "الزبونة تفضل الاستبدال بـ hätte gern؛ الرغبة لا إثبات حصول الاستبدال."
+        }
+      ],
+      "voiceIds": [
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-09-AUD-READ-01",
+      "text": "Guten Tag. Vor zehn Tagen habe ich bei Ihnen einen Kopfhörer gekauft. Seit gestern funktioniert der rechte Lautsprecher nicht. Der Kopfhörer ist nicht beschädigt, und ich habe den Kassenbon noch. Könnten Sie das Gerät bitte prüfen? Ich möchte wissen, ob ein Umtausch möglich ist. Vielen Dank. Salma Ben Youssef.",
+      "finding": "مطابقة نصية مع المصدر والأدوار؛ الروابط والأصوات والحالة محفوظة. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Guten Tag.",
+          "finding": "تحية في الرسالة، وتختلف فاصلتها الكتابية عن نقطة التفريغ فقط؛ ليست ادعاء واقعيًا."
+        },
+        {
+          "text": "Vor zehn Tagen habe ich bei Ihnen einen Kopfhörer gekauft.",
+          "finding": "Salma اشترت Kopfhörer قبل عشرة أيام؛ لا سبعة مثل النموذج ولا أسبوعين مثل الحوار."
+        },
+        {
+          "text": "Seit gestern funktioniert der rechte Lautsprecher nicht.",
+          "finding": "عدم عمل المكبر الأيمن منذ أمس؛ لا نعرف حالة الأيسر من ذلك."
+        },
+        {
+          "text": "Der Kopfhörer ist nicht beschädigt, und ich habe den Kassenbon noch.",
+          "finding": "تنفي الضرر وتذكر أنها ما زالت تحتفظ بالإيصال؛ ننسبهما لكلامها لا لفحص خارجي."
+        },
+        {
+          "text": "Könnten Sie das Gerät bitte prüfen?",
+          "finding": "طلب فحص مهذب، مع المصدر الأخير؛ لا دليل أنه أُنجز."
+        },
+        {
+          "text": "Ich möchte wissen, ob ein Umtausch möglich ist.",
+          "finding": "تريد معرفة إمكان الاستبدال؛ ob مع ist أخيرًا، ونقطة للجملة الرئيسية الخبرية."
+        },
+        {
+          "text": "Vielen Dank.",
+          "finding": "ختام شكر، لا موافقة على حل معين."
+        },
+        {
+          "text": "Salma Ben Youssef.",
+          "finding": "اسم كاتبة المثال الخيالي لا بيانات مطلوبة من المتعلم."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-09-AUD-LST-01",
+      "text": "Guten Tag, hier spricht Karim. Mein neues Ladegerät funktioniert nicht. Ich habe es am Montag gekauft. Könnten Sie mir bitte sagen, ob ich es umtauschen kann? Ich habe den Kassenbon und komme morgen in Ihr Geschäft. Vielen Dank.",
+      "finding": "مطابقة نصية مع المصدر والأدوار؛ الروابط والأصوات والحالة محفوظة. لا استماع أو توليد أو اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Guten Tag, hier spricht Karim.",
+          "finding": "تحية وتعريف باسم Karim؛ لا هوية متعلم أو طرف حقيقي."
+        },
+        {
+          "text": "Mein neues Ladegerät funktioniert nicht.",
+          "finding": "الشاحن الجديد لا يعمل؛ لا يحدد سبب العطل أو تاريخ بدايته."
+        },
+        {
+          "text": "Ich habe es am Montag gekauft.",
+          "finding": "اشتراه يوم الاثنين؛ لا اليوم الذي يصادفه الاثنين ولا أنه من عشرة أيام."
+        },
+        {
+          "text": "Könnten Sie mir bitte sagen, ob ich es umtauschen kann?",
+          "finding": "طلب جواب عن إمكان الاستبدال؛ ob ich es umtauschen kann، والفعل الناقص آخر التابعة."
+        },
+        {
+          "text": "Ich habe den Kassenbon und komme morgen in Ihr Geschäft.",
+          "finding": "يمتلك الإيصال وينوي زيارة المتجر غدًا؛ لا إثبات وجوده الآن أو حمل الإيصال معه أو تنفيذ الزيارة."
+        },
+        {
+          "text": "Vielen Dank.",
+          "finding": "شكر ختامي، وليس جواب موظف أو قبول للاستبدال."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-09-products-technology-complaints.md": "268513c72637d6b686453340bdb5de96f3f63146005dfffe77818500c2a5f701",
+    "content/A2/lesson-09-products-technology-complaints.assessment.json": "89296005467026a74727ae8fc6c950b9b1d74d78a00129a0ab420922a7fe428d"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-09-AUD-PHR-01": "5e47f8623eb69b0e3b61a0480b3378e6471dec2b5855b833a2746fa55a7d1671",
+    "DL-A2-09-AUD-DLG-01": "dc4d4ef07758b2668ffdd698f0300948230125cba83b4bf84c12fb294cee1924",
+    "DL-A2-09-AUD-READ-01": "046b13be83ca2e2b4f94bb4833b06ee6dcf17c5bb50c4a16873da15fee793182",
+    "DL-A2-09-AUD-LST-01": "e27c92c929e33e48d0be55696504754056491d9fb840fea746d16f1ac0ae0738"
+  },
+  "audioTextIssues": [
+    {
+      "assetId": "DL-A2-09-AUD-PHR-01",
+      "segment": "DL-A2-09-AUD-PHR-01.mp3",
+      "text": "Er und sie könnte.",
+      "issue": "ambiguous pronoun-list wording; not a valid coordinated-subject sentence",
+      "writtenMitigation": "helper-09 and conjugation table: Er könnte. Sie könnte. Es könnte.",
+      "audioChanged": false,
+      "transcriptChanged": false,
+      "acousticReviewed": false,
+      "newApproval": false,
+      "status": "recorded text issue remains; written correction supplied"
+    }
+  ],
+  "preservation": {
+    "baseline": "368125120421de02fd0a044ac40bcbf81f4cb593",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-09-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-09-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-09-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-09-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 115
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1960928,
+    "cacheVersion": "v74",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "axeScreenStates": 121,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 81,
+    "axeIncompleteNodeOccurrences": 185,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first application-test serial run at1440 and390; no claim to resolve historical filechooser intermittency"
+    ],
+    "browserEnvironment": "Initial launch failed: missing libnspr4.so. Extracted existing Sparticuz al2023 archive outside Git and reran all five suites successfully; no app change.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 27
+    },
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "PHR text issue remains in preserved recording/transcript; written correction supplied.",
+      "Self-check validates evidence bookkeeping, not language/pronunciation.",
+      "The 55 dialogue-heading count is label-based, not audio count.",
+      "No human reviewer prerequisite; no remote UI or production-deployment claim."
+    ],
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "d962694d98cecb1b11bbe376fbafbb55beef93f2",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "d962694d98cecb1b11bbe376fbafbb55beef93f2"
+  },
+  "campaign": {
+    "reviewedLessons": 26,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 27,
+    "next": "CR28/A2.10"
+  }
+}
