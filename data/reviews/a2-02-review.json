@@ -1,0 +1,1317 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-02-travel-comparisons",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-02-v2",
+  "unitCount": 141,
+  "exerciseSubItemCount": 30,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "ADJ",
+      "title": "Lingolia Adjektive",
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive",
+      "scope": "الجزآن 0 و 1 كاملان: المقارنة مع als والتساوي والنفي مع wie،والتفضيل و Umlaut والصيغ غير المنتظمة؛تمييز am عن النعت قبل الاسم. لا تعميم كل تبسيط على كل تركيب.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "CONJ",
+      "title": "Lingolia Konjunktionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/konjunktionen",
+      "scope": "denn تربط جملتين رئيسيتين،و deshalb في صدر الجملة يليها الفعل والفاعل. التفريق عن weil دون فرض إنتاج جملة تابعة هنا.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "موقع الفعل المصرف ثانيًا في الخبرية الرئيسية؛الموقع كتلة نحوية لا الكلمة الثانية دائمًا،ويمكن تغيير ترتيب المكونات ضمن ضوابط.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "PRICE",
+      "title": "Duden günstig",
+      "url": "https://www.duden.de/rechtschreibung/guenstig",
+      "scope": "المعنى المناسب/المفيد ومعنى billig أو preiswert؛في نص السفر المقصود أقل كلفة لا أفضل من كل وجه.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "CONNECTION",
+      "title": "Duden Verbindung",
+      "url": "https://www.duden.de/rechtschreibung/Verbindung",
+      "scope": "الجزآن 0 و 1 كاملان: مؤنث والجمع Verbindungen؛Verkehrsverbindung إمكانية الانتقال بين مكانين،لا نوع مركبة مستقل.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "PENSION",
+      "title": "Duden Pension",
+      "url": "https://www.duden.de/rechtschreibung/Pension",
+      "scope": "مؤنث وجمع Pensionen؛فندق صغير بطابع خاص في سياق الإقامة،لا معنى المعاش هنا.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "ALMOST",
+      "title": "Duden fast",
+      "url": "https://www.duden.de/rechtschreibung/fast",
+      "scope": "قريب من مقدار أو حالة،beinahe/nahezu؛في مدة الحوار ليست ساعتين بالضبط ولا لفظالسرعة الإنجليزي fast.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "APPROX",
+      "title": "Duden ungefähr (Adverb)",
+      "url": "https://www.duden.de/rechtschreibung/ungefaehr_schaetzungsweise_rund",
+      "scope": "تقدير غير دقيق،أكثر أو أقل قليلًا؛لا حساب فرق 10 دقائق بالضبط بين سيارة تستغرقحوالي ساعتين وقطار 110 دقائق.",
+      "access": "full_fetched_page"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive/steigerung",
+      "reason": "صفحة غير موجودة؛استُعملت صفحةAdjektive الكاملة."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/ungefaehr",
+      "reason": "محتوى404؛استُعمل رابط مدخل الظرف الفعلي."
+    }
+  ],
+  "researchNotes": [
+    "قُرئت 8 صفحات كاملة؛Adjektive و Verbindung بجزأيهما. نتائج البحث لاستكشاف الروابط ليست مراجع مستقلة.",
+    "لا بحث في جداول شركات النقل ولا تحقق من مواعيد أو أسعار حالية؛النصوص بيانات تدريبية وليست إرشادات حجز."
+  ],
+  "limitations": [
+    "141 وحدة و 30 بندًا أو مطلبًا متداخلة،لا 141 مهارة مستقلة؛الأمثلة الصوتية تعيد بعض الجمل،وجدول الرحلة 3 صفوف مدخلات لا 3 تمارين إضافية.",
+    "المراجع الثمانية للقواعد والمعاني المحددة؛لا مدخل قاموسي منفصل لكل كلمة أو ترجمة،والاستدلال النصي راجعه المساعد.",
+    "خمسة أصول/10 مقاطع دون تغيير كلمات أو أصوات أو مسارات أو حالات،ودون استماع أو توليد أو اعتماد جديد.",
+    "الطول والإقرار والبنية لا يثبتون جودة اللغة أو النطق أو الاستماع المستقل؛لا شهادة CEFR/WCAG ولا شرط مراجع بشري للمتابعة."
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-02-travel-comparisons.md": "325c0d0d93c84ace7b9f9c107d81357fe07b6c2b64d4548d68079f43445daa77",
+    "content/A2/lesson-02-travel-comparisons.assessment.json": "33fb0a997406e2bcab20bb18a70077338a8e2d52e2c3df59c3622cc354d03cfd"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-02-AUD-PHR-01": "1582dca93868e712e6806981b15a93c3ea8a38801ac426af04b5e5b93c5db9fb",
+    "DL-A2-02-AUD-DLG-01": "1f9090cd09692d6207b5b0ca8d9057378e78e9db8e5b70409ac0b9c3a951763f",
+    "DL-A2-02-AUD-READ-01": "6b69a26bdb9ade5c6287ec054045ef39f49effcf01b3fa60a1ef9e7dea43beb6",
+    "DL-A2-02-AUD-LST-01": "d29478212912f8fac6dd95d92134b2e569501e51a7ba283289356e400cdb9a89",
+    "DL-A2-02-AUD-MODEL-01": "4fa6a2823481c7e7e0ec64acba04f57a07b852e7908855f0d4fbc8c8493c4156"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "الهدف والوقت",
+      "finding": "المقارنة والاختيار مع السبب؛35–40 دقيقة تقدير مرن لا شرط نجاح،وأضيف التصريح بالكتابة والكلام والاستماع الاختياري.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "المقارنة والتساوي",
+      "finding": "-er/als مقارنة؛so مع الصفة الأساسية و wie تساوٍ،أما nicht so lang في المثال فيعني أقصر لا تساوي الطولين.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "التفضيل",
+      "finding": "am مع صيغة التفضيل لا مع besser؛يوجد-sten و-esten واستثناءات،والنعت قبل الاسم تركيب آخر.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "السبب والنتيجة",
+      "finding": "denn خارج الموقع الأول داخل الخبرية التالية،و deshalb تشغله إذا صُدرت؛لا وجوب تصديرها في كل سياق.",
+      "sourceIds": [
+        "CONJ",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "المدة والتقريب",
+      "finding": "70 دقيقة ليست الساعة 1:10؛fast و ungefähr لا يساويان رقمًا دقيقًا. الأوقات نسب تدريبية لا مواعيد شركة نقل.",
+      "sourceIds": [
+        "ALMOST",
+        "APPROX"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "نطاق التفضيل",
+      "finding": "الأفضل مرتبط بمعيار المتكلم؛الأسرع بين مجموعة محددة،والأرخص ليس الأنسب للجميع.",
+      "sourceIds": [
+        "ADJ",
+        "PRICE"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "مواءمة التقييم",
+      "finding": "Q05 انتقل إلى T07 الذي يدرب denn؛Q09/Q10 فيالكتالوج إلى T05/T03. كل الخيارات والمفاتيح و 80% محفوظة.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-08",
+      "text": "المهمتان",
+      "finding": "P01/T08 أربع جمل مع الجهر من جدول،و P02/T07 أربع كتابة فقط من الحوار؛لا تعارض أو/و بين التساوي والتفضيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "الصوت والعرض",
+      "finding": "خمسة أصول/10 مقاطع محفوظة؛أضيفت كلمات PHR/MODEL نفسها للمصدر،وفُصلت أدوار الحوار وبنود الاستماع مرئيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود القياس",
+      "finding": "الطول والإقرار لا يصححان اللغة أو النطق أو يثبتان الاستماع المستقل؛لا شريك أو حجز حقيقي. v1 تاريخ محفوظ لا إتقان v2.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Unterkunft | die Unterkünfte | مكان الإقامة |",
+      "finding": "Unterkunft مؤنث وجمع Unterkünfte؛مكان إقامة،لا يلزم فندقًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Sehenswürdigkeit | die Sehenswürdigkeiten | معلم سياحي |",
+      "finding": "Sehenswürdigkeit مؤنث والجمع Sehenswürdigkeiten؛معلم يستحق الزيارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Altstadt | die Altstädte | البلدة القديمة |",
+      "finding": "Altstadt مؤنث والجمع Altstädte؛الجزء القديم من مدينة،لا وصف كل المدينة بالقدم.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Verbindung | die Verbindungen | خط/وصلة مواصلات |",
+      "finding": "Verbindung مؤنث والجمع Verbindungen؛وصلة مواصلات في هذا السياق.",
+      "sourceIds": [
+        "CONNECTION"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Fahrtdauer | die Fahrtdauern | مدة الرحلة |",
+      "finding": "Fahrtdauer مؤنث والجمع Fahrtdauern؛مدة لا موعد انطلاق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Zugfahrt | die Zugfahrten | رحلة القطار |",
+      "finding": "Zugfahrt مؤنث والجمع Zugfahrten؛رحلة بالقطار لا القطار نفسه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Pension | die Pensionen | النُزل/دار الضيافة |",
+      "finding": "Pension مؤنث والجمع Pensionen؛نُزل لا معاش تقاعد في الدرس.",
+      "sourceIds": [
+        "PENSION"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| das Einkaufszentrum | die Einkaufszentren | مركز التسوق |",
+      "finding": "Einkaufszentrum محايد وجمع Einkaufszentren؛مركز تسوق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Fahrplan | die Fahrpläne | جدول المواعيد |",
+      "finding": "Fahrplan مذكر وجمع Fahrpläne؛جدول مواعيد،لكن أرقام الدرس ليست جدولًا حاليًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| vergleichen | vergleicht | يقارن |",
+      "finding": "vergleichen مصدر و vergleicht تصريف الغائب المفرد؛يقارن.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| dauern | — | يستغرق |",
+      "finding": "dauern مصدر؛استغراق مدة كما في die Fahrt dauert.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| wählen | — | يختار |",
+      "finding": "wählen مصدر؛يختار،وفي السياق بين بدائل رحلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| der Strand | die Strände | الشاطئ |",
+      "finding": "Strand مذكر والجمع Strände؛شاطئ،ولا يثبت وروده في المفردات وجود شاطئ في نص Leipzig.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| bequem | — | مريح |",
+      "finding": "bequem صفة الراحة؛لا تساوي الأرخص أو الأسرع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| günstig | — | مناسب السعر |",
+      "finding": "günstig مناسب السعر في السياق،وقد يكون ملائمًا في سياق آخر.",
+      "sourceIds": [
+        "PRICE"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| ruhig / lebendig | — | هادئ / حيوي |",
+      "finding": "ruhig/lebendig هادئ/حيوي؛الحيوية لا تقتضي الإزعاج.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-17",
+      "text": "| direkt | — | مباشر |",
+      "finding": "direkt مباشر في السياق؛لا نستنتج تفاصيل توقف أو تبديل لم يذكرها النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-18",
+      "text": "| die Reise planen | — | يخطط للرحلة |",
+      "finding": "die Reise planen تركيب فعلي؛التخطيط لا الحجز الفعلي.",
+      "sourceIds": []
+    },
+    {
+      "id": "comparison-01",
+      "text": "Der Zug ist schneller als der Bus.",
+      "finding": "schneller als يفضل سرعة القطار في المثال،لا في كل رحلة.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "comparison-02",
+      "text": "Das Hotel ist günstiger als die Pension.",
+      "finding": "günstiger als يقارن السعر،لا الجودة العامة للإقامة.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "comparison-03",
+      "text": "Die Altstadt ist interessanter als das Einkaufszentrum.",
+      "finding": "interessanter als يقارن مقدار الاهتمام؛حكم مثالي لا حقيقة للجميع.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "comparison-04",
+      "text": "Der Bus ist so bequem wie der Zug.",
+      "finding": "so bequem wie مساواة في الراحة،لا في مدة الرحلة أو السعر.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "comparison-05",
+      "text": "Der Weg ist nicht so lang wie die andere Route.",
+      "finding": "nicht so lang wie نفي بلوغ الطول نفسه؛الطريق أقصر في المثال.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-01",
+      "text": "| schnell | schneller | am schnellsten | أسرع |",
+      "finding": "schnell/schneller/am schnellsten: نهاية-er ثم-sten.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-02",
+      "text": "| günstig | günstiger | am günstigsten | أرخص/أفضل سعرًا |",
+      "finding": "günstig/günstiger/am günstigsten: نحافظ على الصيغة دون am günstiger.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-03",
+      "text": "| alt | älter | am ältesten | أكبر سنًا / أقدم |",
+      "finding": "alt/älter/am ältesten: Umlaut ونهاية-esten.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-04",
+      "text": "| groß | größer | am größten | أكبر |",
+      "finding": "groß/größer/am größten: Umlaut وß؛لا großesten في هذا النموذج.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-05",
+      "text": "| gut | besser | am besten | أفضل |",
+      "finding": "gut/besser/am besten: صيغ غير منتظمة،لا guter أو am besser.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-06",
+      "text": "| viel | mehr | am meisten | أكثر |",
+      "finding": "viel/mehr/am meisten: مقدار أكبر وأكبر مقدار؛لا vieler للمقارنة المطلوبة.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-07",
+      "text": "| wenig | weniger | am wenigsten | أقل |",
+      "finding": "wenig/weniger/am wenigsten: مقدار أقل وأقل مقدار في الاستعمال المدروس.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "form-08",
+      "text": "| nah | näher | am nächsten | أقرب |",
+      "finding": "nah/näher/am nächsten: لا am näher؛nächsten هنا الأقرب لا تفسير زمني وحيد.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "superlative-01",
+      "text": "Der Zug ist am schnellsten.",
+      "finding": "الأسرع ضمن الخيارات المعتبرة،لا أسرع وسيلة في العالم.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "superlative-02",
+      "text": "Dieses Hotel ist am günstigsten.",
+      "finding": "أقل كلفة بين الفنادق المعنية؛لا سعر مالي محدد في المثال.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "superlative-03",
+      "text": "Die Verbindung am Morgen ist am besten.",
+      "finding": "أفضل وصلة صباحية بحسب السياق؛ليس التصريح بأن كل رحلة صباحية أفضل.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "connector-01",
+      "text": "Ich nehme den Zug, denn er ist schneller.",
+      "finding": "الاختيار ثم السبب؛فاصلة قبل denn و er ist بعدها في النموذج.",
+      "sourceIds": [
+        "CONJ",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "connector-02",
+      "text": "Elif möchte nicht lange fahren. Deshalb fährt sie nach Bremen.",
+      "finding": "الرغبة في رحلة قصيرة ثم النتيجة؛Deshalb ثم fährt ثم sie.",
+      "sourceIds": [
+        "CONJ",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "audio-phrase-01",
+      "text": "Der Zug ist schneller als der Bus.",
+      "finding": "مقارنة سرعة من المقطع الموجود؛الكلمات محفوظة.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-phrase-02",
+      "text": "Das Hotel ist günstiger als die Pension.",
+      "finding": "مقارنة سعر إقامة،لا قاعدة أن الفندق أرخص دائمًا.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-phrase-03",
+      "text": "Der Bus ist so bequem wie der Zug.",
+      "finding": "تساوٍ في الراحة،لا تعارض مع اختلاف السرعة أو السعر.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-phrase-04",
+      "text": "Gut, besser, am besten.",
+      "finding": "ثلاث صيغ gut مسموعة؛ليست جملة تفضيل جديدة بـ am gut.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-phrase-05",
+      "text": "Ich nehme den Zug, denn er ist schneller.",
+      "finding": "اختيار وسبب مع denn؛يرتبط بتدريب T07.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-phrase-06",
+      "text": "Deshalb fährt Elif nach Bremen.",
+      "finding": "الفاعل Elif بعد fährt؛نص التسجيل يختلف عن نسخة sie في الشرح لكنه صحيح ومحفوظ.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-01",
+      "text": "Der Zug ist schneller als der Bus.",
+      "finding": "سرعة القطار أعلى في المثال.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-02",
+      "text": "Das Hotel ist so ruhig wie die Pension.",
+      "finding": "so ruhig wie للمساواة في الهدوء،لا Bequemlichkeit حرفيًا.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-03",
+      "text": "Die Altstadt ist interessanter als das Einkaufszentrum.",
+      "finding": "interessanter مقارنة الاهتمام بين معلمين.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-04",
+      "text": "Der Zug ist am schnellsten.",
+      "finding": "am schnellsten تفضيل سرعة دون اسم بعد الصفة.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-05",
+      "text": "Die direkte Verbindung ist am besten.",
+      "finding": "أفضل وصلة مباشرة في سياق النموذج؛لا حكم شامل.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-06",
+      "text": "Ich nehme den Zug, denn er ist schneller.",
+      "finding": "denn مع السبب و er ist في الخبرية.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-07",
+      "text": "Elif möchte nicht lange fahren.",
+      "finding": "تفضيل Elif لقصر المدة،لا تعليل بأقل سعر.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "audio-model-08",
+      "text": "Deshalb fährt sie nach Bremen.",
+      "finding": "Deshalb fährt sie نتيجة التفضيل السابق.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **schnell / langsam / kurz / lang** — سريع / بطيء / قصير / طويل. **kürzer / länger** للمقارنة؛ مدة الرحلة الأقصر تعني وقتًا أقل في سياقنا،لا حكمًا ثابتًا على كل قطار وحافلة.",
+      "finding": "تمييز السرعة من الطول والمدة،وتقديم kürzer/länger لفهم المفتاح.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-02",
+      "text": "- **so bequem wie / nicht so lang wie** — مساوٍ في الراحة / ليس بالطول نفسه بل أقصر في المثال. نستعمل الصفة الأساسية،لا bequemer بين so و wie.",
+      "finding": "التساوي بصيغة أساسية،والنفي ليس مساواة موجبة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-03",
+      "text": "- **am besten / am schnellsten** — الأفضل وفق معيار المتكلم / الأسرع داخل الخيارات المذكورة. ليس كل أسرع أفضل للجميع؛ قد يفضل شخص آخر السعر أو الراحة.",
+      "finding": "الأفضلية بحسب الأولوية،ولا مساواة بين fastest و best لكل شخص.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-04",
+      "text": "- **denn / deshalb** — السبب مقابل النتيجة؛ **er ist** بعد denn في نموذجنا،و**deshalb fährt sie** عند تصدير deshalb. لا نحول weil إلى بديل بنفس ترتيب الكلمات؛تراكيبها ليست مهمة هذا الدرس.",
+      "finding": "فرق السبب والنتيجة وترتيب كل منهما؛لا نقل weil إلى نفس موضع denn وترتيبه.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-05",
+      "text": "- **eine Stunde und zehn Minuten / eine Stunde und fünfzig Minuten / drei Stunden** —70 دقيقة /110 دقيقة /180 دقيقة؛هذه مدد،لا ساعات انطلاق مثل 1:10. وقت Bremen يختلف عن وقت Dresden في النص الآخر.",
+      "finding": "مدد 70/110/180 دقيقة؛لا ساعات انطلاق أو دمج وجهات النصوص.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-06",
+      "text": "- **fast zwei Stunden / ungefähr zwei Stunden** — ما يقارب ساعتين دون بلوغهما في سياق الحوار / حوالي ساعتين وقد تزيد أو تنقص قليلًا. لا نحول التقريب إلى 120 دقيقة بالضبط أو نستنتج فرقًا دقيقًا قدره 10 دقائق للسيارة والقطار.",
+      "finding": "تقريب لا حساب دقيق؛لا فرق 10 دقائق مؤكد عندما كانت مدة السيارة تقريبية.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-07",
+      "text": "- **günstig / günstiger** — مناسب السعر / أقل كلفة هنا؛ قد تعني الكلمة مناسبًا أو ملائمًا في سياق آخر. لا أسعار عددية في النصوص،ولا قاعدة أن الحافلة أرخص دائمًا.",
+      "finding": "المعنى السعري لـ günstig في السياق،وغياب سعر عددي أو قاعدة لكل حافلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "- **die Pension** — دار ضيافة أو نُزل في هذا الدرس،لا معاش تقاعد. **ruhig / lebendig** هادئ / حيوي؛حيوي ليس مزعجًا بالضرورة،ولا نفترض أن كل بلدة قديمة هادئة.",
+      "finding": "المعنى السكني لـ Pension،والحيوية ليست ضوضاء لازمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "- **die Verbindung / direkt** — وصلة أو خيار مواصلات / مباشر؛ليست Verbindung وسيلة نقل جديدة. لا نستنتج تفاصيل توقف أو تبديل غير مذكورة،و«الأفضل» يتوقف على الموقف.",
+      "finding": "Verbindung خيار مواصلات،و direkt لا يقدم كل تفاصيل الرحلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **von Berlin nach Dresden / zwischen Bremen und Leipzig** — من برلين إلى دريسدن / بين بريمن ولايبزيغ. Hamburg مرجع المقارنة في القراءة؛لا يستنتج منه عنوان Elif أو مكان سكنها،ولا نحول المدة إلى جدول رحلة فعلية.",
+      "finding": "اتجاه von…nach ومقارنة zwischen؛Hamburg مرجع في النص لا إثبات محل سكن Elif.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-11",
+      "text": "- **Dort / unterwegs / am Nachmittag noch** — هناك / أثناء الطريق / أيضًا بعد الظهر في سياق الزيارة. Dort في القراءة يعود إلى Leipzig،واسم Elif في بيانات الراوي لا يجعل السرد بضمير الغائب حديثًا ذاتيًا. لا نسمي أصحاب الاستماع Lea و Ben لأن التسجيل لا يسميهم.",
+      "finding": "Dort إلى Leipzig؛سرد Elif بصوت 02 عن الغائب،والاستماع لا يسمي أصحابه Lea/Ben.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-12",
+      "text": "- **حدود الدليل:** المقارنة في P01 من جدول T08 فقط،والاختيار الكتابي P02 من حوار T07 المرجعي. الجهر مطلوب للأولى لا الثانية؛لا شريك أو تسجيل أو حجز حقيقي. التفريغ متاح؛قراءته لا تثبت فهمًا مسموعًا مستقلًا،والطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "جدول P01 وحوار P02 سياقان واضحان،مع جهر الأولى وكتابة الثانية وحدود القياس والخصوصية.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Lea: Wie fahren wir am Wochenende nach Bremen?",
+      "finding": "Lea تسأل عن وسيلة الرحلة إلى Bremen،لا موعد وصول محدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ben: Der Zug ist schneller als der Bus.",
+      "finding": "Ben يقارن السرعة؛المقارنة كاملة بـ als.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Lea: Ja, aber der Bus ist günstiger.",
+      "finding": "الحافلة أقل كلفة في هذا الموقف؛حذف طرف المقارنة مفهوم من الحوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ben: Stimmt. Die Zugfahrt dauert eine Stunde und zehn Minuten. Mit dem Bus fahren wir fast zwei Stunden.",
+      "finding": "القطار 70 دقيقة والحافلة تقارب ساعتين؛لا تحديد دقيق لدقائق الحافلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Lea: Ich möchte nicht lange unterwegs sein. Der Zug ist für mich am besten.",
+      "finding": "Lea تفضل قصر المدة،فتقول الأفضل بالنسبة لها لا الأفضل للجميع.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ben: Gut. Dann nehmen wir den Zug.",
+      "finding": "اتفاق على القطار؛Dann يتصدر فتليه nehmen ثم wir.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Elif plant einen Wochenendausflug.",
+      "finding": "Elif تخطط رحلة نهاية أسبوع؛لا حجز وقع فعلًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie kann zwischen Bremen und Leipzig wählen.",
+      "finding": "الخياران Bremen و Leipzig،لا كل المدن المذكورة في الدرس.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Bremen liegt näher an Hamburg als Leipzig.",
+      "finding": "Bremen أقرب إلى Hamburg في مقارنة النص؛لا يستنتج عنوان Elif أو المسافة بالكيلومترات.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Mit dem Zug dauert die Fahrt nach Bremen eine Stunde und zehn Minuten.",
+      "finding": "مدة Bremen70 دقيقة وفق المثال،لا جدول حديث مثبت.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Der Bus ist günstiger, aber langsamer.",
+      "finding": "الحافلة أقل سعرًا لكنها أبطأ من القطار في هذا السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Die Zugfahrt nach Leipzig dauert drei Stunden.",
+      "finding": "القطار إلى Leipzig180 دقيقة؛لا تنقلها إلى Bremen.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Dort gibt es viele Museen und eine große Altstadt.",
+      "finding": "Dort يعود إلى Leipzig؛متاحف كثيرة وبلدة قديمة كبيرة،لا شاطئ مذكور.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-08",
+      "text": "Elif möchte nicht lange fahren.",
+      "finding": "لا تريد مدة سفر طويلة؛ليست أولوية أقل سعر.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-09",
+      "text": "Für sie ist eine kurze Reise am besten, deshalb fährt sie nach Bremen.",
+      "finding": "اختارت Bremen لرحلة أقصر؛deshalb في جملة رئيسية بعد الفاصلة لا أداة تعيد الفعل للنهاية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Welche zwei Städte vergleicht Elif?",
+      "finding": "Bremen und Leipzig هما الخياران؛Hamburg مرجع لا وجهة ثالثة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie lange dauert die Zugfahrt nach Bremen?",
+      "finding": "Eine Stunde und zehn Minuten؛مدة 70 دقيقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Welches Verkehrsmittel ist günstiger?",
+      "finding": "Der Bus؛أقل كلفة في الموقف المذكور.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was gibt es in Leipzig?",
+      "finding": "Viele Museen und eine große Altstadt؛لا نختلق معالم غير مذكورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Warum fährt Elif nach Bremen?",
+      "finding": "تريد رحلة قصيرة ومدة Bremen أقصر؛الجواب يربط معيار الاختيار بالدليل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Wir möchten von Berlin nach Dresden fahren.",
+      "finding": "من Berlin إلى Dresden؛صيغة wir دون أسماء أو عدد أفراد محدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Mit dem Auto dauert die Fahrt ungefähr zwei Stunden.",
+      "finding": "السيارة حوالي ساعتين؛المقدار تقديري لا 120 دقيقة بالضبط.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Der Zug ist schneller: eine Stunde und fünfzig Minuten.",
+      "finding": "القطار 110 دقائق وأسرع وفق تصريح النص؛لا حساب فرق 10 دقائق بالضبط من تقدير السيارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Der Bus ist am günstigsten, aber die Fahrt dauert drei Stunden.",
+      "finding": "الحافلة أقل كلفة بين الخيارات وتستغرق 180 دقيقة؛لا أسعار عددية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "text": "Wir nehmen den Zug, denn wir möchten am Nachmittag noch die Altstadt besuchen.",
+      "finding": "يختارون القطار لأنهم يريدون زيارة البلدة القديمة بعد الظهر أيضًا؛لا تقرير بأن الزيارة حصلت بالفعل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Von welcher Stadt nach welcher Stadt reisen die Personen?",
+      "finding": "Von Berlin nach Dresden؛المصدر والوجهة بترتيبهما.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wie lange dauert die Fahrt mit dem Zug?",
+      "finding": "Eine Stunde und fünfzig Minuten؛لا zehn في رحلة Bremen.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Welches Verkehrsmittel ist am günstigsten?",
+      "finding": "Der Bus؛أقل كلفة لا أسرع.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Warum nehmen sie den Zug?",
+      "finding": "يريدون زيارة البلدة القديمة بعد الظهر أيضًا؛أُكمل المفتاح بوقت الزيارة المصرح به.",
+      "sourceIds": []
+    },
+    {
+      "id": "table-row-01",
+      "text": "| der Zug | 70 | 3 |",
+      "finding": "القطار 70 دقيقة وراحة 3/5؛أقل مدة بين الثلاثة.",
+      "sourceIds": []
+    },
+    {
+      "id": "table-row-02",
+      "text": "| der Bus | 110 | 3 |",
+      "finding": "الحافلة 110 دقيقة وراحة 3/5؛مساوية القطار في الراحة رغم بطئها.",
+      "sourceIds": []
+    },
+    {
+      "id": "table-row-03",
+      "text": "| das Auto | 90 | 4 |",
+      "finding": "السيارة 90 دقيقة وراحة 4/5؛أعلى راحة لكنها ليست الأسرع،والأولوية للمدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Der Zug ist schneller als der Bus.",
+      "finding": "70 أقل من 110؛مقارنة السرعة توافق الجدول.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Der Bus ist so bequem wie der Zug.",
+      "finding": "راحة 3/5 لكل منهما،فتصح so bequem wie.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Der Zug ist am schnellsten.",
+      "finding": "70 أقل من 90 و 110؛أسرع الثلاثة هو القطار.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Ich nehme den Zug, denn er ist am schnellsten.",
+      "finding": "اختيار معلل بأولوية أقصر مدة؛denn er ist ثم التفضيل. الجهر بالأربع مطلوب.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Der Zug ist schneller als der Bus.",
+      "finding": "سرعة القطار أعلى من الحافلة بحسب الحوار.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Ich möchte nicht lange fahren.",
+      "finding": "قصر المدة أولوية المتعلم الخيالي،لا السعر.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Ich nehme den Zug, denn er ist schneller.",
+      "finding": "اختيار القطار وسبب السرعة بـ denn؛يوافق الأولوية.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Deshalb fahre ich mit dem Zug nach Bremen.",
+      "finding": "إعادة عرض الاختيار نتيجةً بـ Deshalb fahre ich؛ليس اختيارًا مختلفًا أو وعدًا بساعة وصول.",
+      "sourceIds": [
+        "ADJ",
+        "CONJ"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **schnell – schneller – am schnellsten** → سريع – أسرع – الأسرع.",
+      "finding": "schnell/schneller/am schnellsten متسقة مع الشرح.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **gut – besser – am besten** → جيد – أفضل – الأفضل.",
+      "finding": "gut/besser/am besten غير منتظمة؛لا am besser.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Der Bus ist günstiger als der Zug.** → الحافلة أرخص من القطار.",
+      "finding": "حافلة أقل كلفة ضمن السياق،لا قاعدة مطلقة.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **so bequem wie** → مريح مثل.",
+      "finding": "so bequem wie مساواة راحة بصيغة أساسية.",
+      "sourceIds": [
+        "ADJ"
+      ]
+    },
+    {
+      "id": "DL-A2-02-T01",
+      "text": "1. schnell → ______\n2. günstig → ______\n3. groß → ______\n4. gut → ______\n5. viel → ______",
+      "finding": "خمس صيغ مقارنة بمفاتيح واضحة،منها غير المنتظم.",
+      "sourceIds": [],
+      "items": [
+        "schneller: النهاية-er.",
+        "günstiger؛نحافظ علىü.",
+        "größer؛Umlaut.",
+        "besser؛صيغة غير منتظمة.",
+        "mehr؛صيغة كمية."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T02",
+      "text": "1. Der Zug ist schneller ______ der Bus.\n2. Das Hotel ist so ruhig ______ die Pension.\n3. Die Reise ist günstiger ______ letztes Jahr.",
+      "finding": "ثلاث مطابقات als/wie،لا وضع صيغة مقارنة بعد so.",
+      "sourceIds": [],
+      "items": [
+        "als بعد schneller.",
+        "wie بعد so ruhig.",
+        "als بعد günstiger؛المقارنة مع رحلة العام الماضي المفهومة."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T03",
+      "text": "1. الأسرع: **am schnellsten / am schneller**\n2. الأفضل: **am besten / am gutsten**\n3. الأرخص: **am günstigsten / am günstiger**",
+      "finding": "ثلاث صيغ تفضيل لا خلط am بالمقارنة.",
+      "sourceIds": [],
+      "items": [
+        "am schnellsten لا am schneller.",
+        "am besten لا am gutsten.",
+        "am günstigsten لا am günstiger."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T04",
+      "text": "رتّب كتل كل جملة،وابدأ بالكتلة المحددة بين القوسين. لا تحسب النقطة كلمة مستقلة،وأضفها في النهاية:\n\n1. Der Zug / schneller / als / ist / der Bus (ابدأ بـ Der Zug)\n2. so / Das Hotel / die Pension / ruhig / ist / wie (ابدأ بـ Das Hotel)\n3. am besten / Die direkte Verbindung / ist (ابدأ بـ Die direkte Verbindung)",
+      "finding": "ثلاث جمل ذات بداية محددة وكتل دون نقطة ملتصقة بكلمة خاطئة.",
+      "sourceIds": [],
+      "items": [
+        "Der Zug ist schneller als der Bus؛البدء المحدد Der Zug.",
+        "Das Hotel ist so ruhig wie die Pension؛البدء المحدد Das Hotel.",
+        "Die direkte Verbindung ist am besten؛عبارة الفعل تأتي بعد الفاعل الكامل."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Die Zugfahrt nach Bremen dauert drei Stunden.\n2. Der Bus nach Bremen ist günstiger als der Zug.\n3. In Leipzig gibt es Museen und eine Altstadt.\n4. Elif möchte nicht lange fahren. Deshalb fährt sie nach Bremen.",
+      "finding": "أربعة أحكام من القراءة لا من رحلة الاستماع.",
+      "sourceIds": [],
+      "items": [
+        "خطأ:70 دقيقة إلى Bremen،لا 180.",
+        "صحيح:الحافلة أقل كلفة في السياق.",
+        "صحيح:متاحف وبلدة قديمة في Leipzig.",
+        "صحيح:الاختيار مرتبط بقصر المدة و deshalb نتيجة."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T06",
+      "text": "أكمل من البنك،واستعمل كل كلمة مرة: **zwei — fünfzig — günstigsten — Altstadt**.\n\n1. Mit dem Auto dauert die Fahrt ungefähr ______ Stunden.\n2. Der Zug braucht eine Stunde und ______ Minuten.\n3. Der Bus ist am ______.\n4. Sie möchten in Dresden die ______ besuchen.",
+      "finding": "بنك محدد وأربعة بنود مرئية؛التقريب باقٍ في الأول.",
+      "sourceIds": [],
+      "items": [
+        "zwei مع ungefähr؛يبقى التقريب.",
+        "fünfzig للقطار إلى Dresden.",
+        "günstigsten بعد am؛لا günstiger.",
+        "Altstadt موضع الزيارة المطلوبة."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T07",
+      "text": "اكتب أربع جمل بضمير ich لاختيار وسيلة من حوار Lea و Ben إلى Bremen؛أولويتك قصر المدة لا أقل سعر. الأولى تقارن سرعة القطار والحافلة بـ schneller als؛الثانية تقول إنك لا تريد السفر طويلًا؛الثالثة تختار القطار وتعطي السبب بـ Ich nehme…, denn er ist…؛الرابعة تعيد صياغة الاختيار نتيجةً تبدأ بـ Deshalb ثم الفعل ثم ich،وتذكر Bremen. هذه كتابة فقط،دون جهر أو تسجيل. لا تخترع سعرًا عدديًا أو ساعة وصول غير مذكورين؛الثالثة والرابعة تدريب طريقتين مترابطتين لشرح الاختيار نفسه.",
+      "finding": "أربع جمل مكتوبة بدعم الحوار؛تدريب denn مباشر لمواءمة Q05 و P02.",
+      "sourceIds": [],
+      "items": [
+        "جملة 1:مقارنة القطار والحافلة بـ schneller als.",
+        "جملة 2:تفضيل ألا تكون الرحلة طويلة.",
+        "جملة 3:اختيار القطار وسبب بـ denn er ist.",
+        "جملة 4:الاختيار نفسه إلى Bremen بـ Deshalb ثم الفعل والفاعل؛الأربع كتابة فقط."
+      ]
+    },
+    {
+      "id": "DL-A2-02-T08",
+      "text": "الجدول موقف تدريبي مستقل،لا أوقات إضافية نستنتجها من التسجيل. درجة الراحة افتراضية من 5؛الأكبر أريح. الأولوية هنا أقصر مدة للرحلة نفسها.\n\n| الوسيلة | مدة الرحلة بالدقائق | درجة الراحة من 5 |\n|---|---|---|\n| der Zug | 70 | 3 |\n| der Bus | 110 | 3 |\n| das Auto | 90 | 4 |\n\nاستعمل جدول T08 الخيالي وأولوية قصر المدة لتكتب أربع جمل ثم اقرأ الأربع بصوت مرتفع،ويمكنك الأداء منفردًا: الأولى تقارن سرعة القطار بالحافلة بـ schneller als؛الثانية تساوي راحة الحافلة والقطار بـ so bequem wie؛الثالثة تحدد أسرع الوسائل الثلاث بـ am schnellsten؛الرابعة تختار القطار وتشرح السبب بـ denn. الصيغ الثلاث كلها مطلوبة،لا الاختيار بين التساوي والتفضيل. لا شريك أو تسجيل أو بيانات سفر شخصية مطلوبة.",
+      "finding": "جدول وثلاث صيغ مقارنة واختيار معلل في أربع جمل مع الجهر؛التعليمات والمعايير لا تتعارض.",
+      "sourceIds": [],
+      "items": [
+        "جملة 1:سرعة القطار مقارنة بالحافلة من الجدول.",
+        "جملة 2:مساواة الراحة بـ so bequem wie.",
+        "جملة 3:الأسرع بين الثلاثة بـ am schnellsten.",
+        "جملة 4:اختيار القطار وسبب بـ denn؛الجهر بالأربع والصيغ كلها مطلوبة."
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q01",
+      "text": "ما صيغة المقارنة غير المنتظمة للصفة **gut**؟",
+      "finding": "besser مقارنة gut؛guter ليس الصيغة المطلوبة و am gutesten ليس التفضيل الصحيح.",
+      "sourceIds": [],
+      "options": [
+        "besser",
+        "guter",
+        "am gutesten"
+      ],
+      "answer": "besser",
+      "explanation": "الصيغ هي gut – besser – am besten.",
+      "sourceTaskIds": [
+        "DL-A2-02-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q02",
+      "text": "أكمل جملة التساوي: Der Bus ist ___ bequem ___ der Zug.",
+      "finding": "so…wie للمساواة؛البديلان لا يكونان النمط المطلوب.",
+      "sourceIds": [],
+      "options": [
+        "mehr … als",
+        "so … wie",
+        "am … wie"
+      ],
+      "answer": "so … wie",
+      "explanation": "للتساوي نستخدم so … wie.",
+      "sourceTaskIds": [
+        "DL-A2-02-T02"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q03",
+      "text": "أي عبارة تعني «الأفضل»؟",
+      "finding": "am besten الأفضل؛besser أفضل من لا صيغة التفضيل،و am gut ناقصة.",
+      "sourceIds": [],
+      "options": [
+        "besser",
+        "am gut",
+        "am besten"
+      ],
+      "answer": "am besten",
+      "explanation": "صيغة التفضيل من gut هي am besten.",
+      "sourceTaskIds": [
+        "DL-A2-02-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q04",
+      "text": "أي جملة صحيحة؟",
+      "finding": "schneller als صحيح؛schnell لا مقارنة و am schneller خلط صيغ.",
+      "sourceIds": [],
+      "options": [
+        "Der Zug ist schnell als der Bus.",
+        "Der Zug ist schneller als der Bus.",
+        "Der Zug ist am schneller als der Bus."
+      ],
+      "answer": "Der Zug ist schneller als der Bus.",
+      "explanation": "مع المقارنة بين شيئين نستخدم الصفة المقارنة مع als.",
+      "sourceTaskIds": [
+        "DL-A2-02-T04"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q05",
+      "text": "أي ترتيب صحيح بعد **denn**؟",
+      "finding": "denn er ist؛انتقل الربط من T04 إلى T07 الذي ينتج هذا النمط. المشتتان لا يتبعان الخبرية المطلوبة.",
+      "sourceIds": [],
+      "options": [
+        "Ich nehme den Zug, denn er ist schneller.",
+        "Ich nehme den Zug, denn ist er schneller.",
+        "Ich nehme den Zug, denn schneller er ist."
+      ],
+      "answer": "Ich nehme den Zug, denn er ist schneller.",
+      "explanation": "في النمط المدروس بعد denn: er ثم ist؛denn لا تشغل الموقع الأول داخل الجملة الرئيسية الثانية.",
+      "sourceTaskIds": [
+        "DL-A2-02-T07"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q06",
+      "text": "كم تستغرق رحلة القطار إلى Bremen بحسب النص؟",
+      "finding": "70 دقيقة وفق القراءة؛180 تخص Leipzig و 120 ليست مدتها.",
+      "sourceIds": [],
+      "options": [
+        "ثلاث ساعات.",
+        "ساعتان.",
+        "ساعة وعشر دقائق."
+      ],
+      "answer": "ساعة وعشر دقائق.",
+      "explanation": "النص يذكر eine Stunde und zehn Minuten.",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q07",
+      "text": "أي وسيلة أقل كلفة بحسب نص قراءةElif؟",
+      "finding": "Der Bus أقل كلفة في نص Elif؛وضّحنا مرجع السؤال،لا حكمًا على كل النصوص.",
+      "sourceIds": [],
+      "options": [
+        "Der Zug.",
+        "Der Bus.",
+        "Das Fahrrad."
+      ],
+      "answer": "Der Bus.",
+      "explanation": "النص يقول إن الحافلة أرخص لكنها أبطأ.",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q08",
+      "text": "ماذا يوجد في Leipzig بحسب النص؟",
+      "finding": "متاحف كثيرة وبلدة قديمة كبيرة؛لا شاطئ أو متحف واحد فقط في النص.",
+      "sourceIds": [],
+      "options": [
+        "متاحف كثيرة وبلدة قديمة كبيرة.",
+        "شاطئ كبير.",
+        "متحف واحد فقط."
+      ],
+      "answer": "متاحف كثيرة وبلدة قديمة كبيرة.",
+      "explanation": "يذكر النص viele Museen und eine große Altstadt.",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q09",
+      "text": "اختر الجملة الصحيحة: Elif möchte nicht lange fahren. ___ fährt sie nach Bremen.",
+      "finding": "Deshalb مع fährt sie يقدم النتيجة؛Denn و Weil لا يلائمان تركيب الخبرية المعطاة. صُحح كتالوج Q09 إلى T05.",
+      "sourceIds": [],
+      "options": [
+        "Denn",
+        "Weil",
+        "Deshalb"
+      ],
+      "answer": "Deshalb",
+      "explanation": "عند وضع deshalb أول الجملة الرئيسية تأتي بعدها fährt ثم sie؛الأداة تعرض نتيجة تفضيل رحلة قصيرة.",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-02-Q10",
+      "text": "أي جملة تستخدم صيغة التفضيل بشكل صحيح؟",
+      "finding": "am besten صيغة التفضيل؛am besser و am gut غير مناسبتين. صُحح كتالوج Q10 إلى T03 ووسمه إلىالتفضيل.",
+      "sourceIds": [],
+      "options": [
+        "Die Verbindung ist am besser.",
+        "Die Verbindung ist am besten.",
+        "Die Verbindung ist am gut."
+      ],
+      "answer": "Die Verbindung ist am besten.",
+      "explanation": "الصيغة الصحيحة للتفضيل هي am besten.",
+      "sourceTaskIds": [
+        "DL-A2-02-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-02-P01",
+      "text": "استعمل جدول T08 الخيالي وأولوية قصر المدة لتكتب أربع جمل ثم اقرأ الأربع بصوت مرتفع،ويمكنك الأداء منفردًا: الأولى تقارن سرعة القطار بالحافلة بـ schneller als؛الثانية تساوي راحة الحافلة والقطار بـ so bequem wie؛الثالثة تحدد أسرع الوسائل الثلاث بـ am schnellsten؛الرابعة تختار القطار وتشرح السبب بـ denn. الصيغ الثلاث كلها مطلوبة،لا الاختيار بين التساوي والتفضيل. لا شريك أو تسجيل أو بيانات سفر شخصية مطلوبة.",
+      "finding": "P01/T08: حد 130 حرفًا وأربع جمل مع الجهر. الجدول يسند مقارنة وتساويًا وتفضيلًا مع اختيار حسب المدة؛النموذج يحققها كلها.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل تحقق المقارنة والتساوي والتفضيل والاختيار المعلل كلها؛قرأت الأربع جهرًا.",
+        "meaningClarity": "الجمل تطابق جدولT08: القطار أسرع الثلاثة وراحة القطار والحافلة متساوية؛الاختيار حسب قصر المدة.",
+        "targetSkill": "schneller als،وso bequem wie،وam schnellsten،وdenn مع ترتيب الفاعل ثم الفعل في النموذج؛لاam schneller."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-02-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-02-P02",
+      "text": "اكتب أربع جمل بضمير ich لاختيار وسيلة من حوار Lea و Ben إلى Bremen؛أولويتك قصر المدة لا أقل سعر. الأولى تقارن سرعة القطار والحافلة بـ schneller als؛الثانية تقول إنك لا تريد السفر طويلًا؛الثالثة تختار القطار وتعطي السبب بـ Ich nehme…, denn er ist…؛الرابعة تعيد صياغة الاختيار نتيجةً تبدأ بـ Deshalb ثم الفعل ثم ich،وتذكر Bremen. هذه كتابة فقط،دون جهر أو تسجيل. لا تخترع سعرًا عدديًا أو ساعة وصول غير مذكورين؛الثالثة والرابعة تدريب طريقتين مترابطتين لشرح الاختيار نفسه.",
+      "finding": "P02/T07: حد 130 حرفًا وأربع جمل كتابة فقط من الحوار،مع denn و Deshalb. لا تفصيل وصول أو سعر غير مسند.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل: مقارنة السرعة،أولوية قصر المدة،اختيار وسبب بـdenn،ونتيجة بـDeshalb؛كتابة فقط.",
+        "meaningClarity": "الاختيار نفسه في الجملتين الأخيرتين ويطابق الحوار؛لا سعر أو ساعة وصول مختلقة.",
+        "targetSkill": "schneller als،وdenn er ist في السبب،وDeshalb fahre ich في النتيجة،معBremen وجهة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-02-T07"
+      ]
+    },
+    {
+      "id": "DL-A2-02-AUD-PHR-01",
+      "text": "Der Zug ist schneller als der Bus. Das Hotel ist günstiger als die Pension. Der Bus ist so bequem wie der Zug. Gut, besser, am besten. Ich nehme den Zug, denn er ist schneller. Deshalb fährt Elif nach Bremen.",
+      "finding": "ست وحدات بصوت 02؛كلمات المقطع أصبحت متاحة في المصدر بمرجع دقيق،لا مجرد صيغ قريبة. الحالة ready والسياسة offer محفوظتان؛لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-02-AUD-DLG-01",
+      "text": "Wie fahren wir am Wochenende nach Bremen? / Der Zug ist schneller als der Bus. / Ja, aber der Bus ist günstiger. / Stimmt. Die Zugfahrt dauert eine Stunde und zehn Minuten. Mit dem Bus fahren wir fast zwei Stunden. / Ich möchte nicht lange unterwegs sein. Der Zug ist für mich am besten. / Gut. Dann nehmen wir den Zug.",
+      "finding": "ستة أدوار Lea02/Ben03 متناوبة؛فُصل عرض الأدوار دون تغيير كلماتها. الحالة ready والسياسة offer محفوظتان؛لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-02-AUD-READ-01",
+      "text": "Elif plant einen Wochenendausflug. Sie kann zwischen Bremen und Leipzig wählen. Bremen liegt näher an Hamburg als Leipzig. Mit dem Zug dauert die Fahrt nach Bremen eine Stunde und zehn Minuten. Der Bus ist günstiger, aber langsamer. Die Zugfahrt nach Leipzig dauert drei Stunden. Dort gibt es viele Museen und eine große Altstadt. Elif möchte nicht lange fahren. Für sie ist eine kurze Reise am besten, deshalb fährt sie nach Bremen.",
+      "finding": "قراءة بصوت 02 مسمى Elif في البيانات،لكن النص عنها بالغائب؛الأوقات تدريبية لا جدول حالي. الحالة ready والسياسة offer محفوظتان؛لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-02-AUD-LST-01",
+      "text": "Wir möchten von Berlin nach Dresden fahren. Mit dem Auto dauert die Fahrt ungefähr zwei Stunden. Der Zug ist schneller: eine Stunde und fünfzig Minuten. Der Bus ist am günstigsten, aber die Fahrt dauert drei Stunden. Wir nehmen den Zug, denn wir möchten am Nachmittag noch die Altstadt besuchen.",
+      "finding": "صوت 03،رحلة Berlin→Dresden؛110 دقائق للقطار وحوالي ساعتين للسيارة،ولا أسماء للمتكلمين. الحالة ready والسياسة offer محفوظتان؛لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-02-AUD-MODEL-01",
+      "text": "Der Zug ist schneller als der Bus. Das Hotel ist so ruhig wie die Pension. Die Altstadt ist interessanter als das Einkaufszentrum. Der Zug ist am schnellsten. Die direkte Verbindung ist am besten. Ich nehme den Zug, denn er ist schneller. Elif möchte nicht lange fahren. Deshalb fährt sie nach Bremen.",
+      "finding": "ثماني جمل بصوت 02؛أمثلة مستقلة لا نموذج الأداء الجديد. كلماتها الأصلية محفوظة. الحالة ready والسياسة offer محفوظتان؛لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    }
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 1880848,
+    "cacheVersion": "v67",
+    "reviewGuards": 20,
+    "nodeSuites": 5,
+    "browserSuites": 5,
+    "axeStates": 93,
+    "axeSelectedViolations": 0,
+    "axeIncompleteRuleOccurrences": 60,
+    "axeIncompleteNodeOccurrences": 142,
+    "narrowStates": 126,
+    "chromium": "143.0.7499.0",
+    "formsKeyboardFirstAttempt": "PASS",
+    "preservationBaseline": "f158d32dd783d3aae19593d6928673e8552d84c7",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "allAnswerIndicesUnchanged": true,
+    "unchangedOptions": 30,
+    "mp3HashesUnchanged": 474,
+    "playlistByteIdentical": true,
+    "audioRegisterChangedRows": [
+      "DL-A2-02-AUD-PHR-01",
+      "DL-A2-02-AUD-DLG-01",
+      "DL-A2-02-AUD-READ-01",
+      "DL-A2-02-AUD-LST-01",
+      "DL-A2-02-AUD-MODEL-01"
+    ],
+    "audioRegisterChanges": "source_line/source_heading only in five A2.2 rows; all other fields/212 rows unchanged"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "80114c432efee43ff1b642ab0b2867bf7eef13ab",
+    "implementationPushVerified": true,
+    "merged": false,
+    "nextLesson": "A2.3",
+    "gateSeparate": true,
+    "reviewedLessons": 19,
+    "remainingLessons": 34,
+    "reviewPushVerified": false,
+    "reviewCommit": "Pending creation: Record CR20 granular A2.2 review and cumulative checks",
+    "pullRequest": {
+      "headRefName": "arena/01a1036f-deutschlern",
+      "headRefOid": "80114c432efee43ff1b642ab0b2867bf7eef13ab",
+      "mergedAt": null,
+      "number": 1,
+      "state": "OPEN",
+      "url": "https://github.com/naderba69/deutschlern/pull/1"
+    },
+    "vercel": {
+      "implementationStatus": "success"
+    },
+    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test and no production claim."
+  }
+}
