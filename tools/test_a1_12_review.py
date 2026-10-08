@@ -35,6 +35,7 @@ for part,text in [('PHR',phr),('READ',reading),('LST',listening)]:
 assert [seg['voiceId'] for x in assets for seg in x['segments']]==['voice-02','voice-02','voice-03']+['voice-02','voice-03']*4
 l=next(x for x in json.loads((R/'data/course.json').read_text())['lessons'] if x['id']=='a1-12-trip-invitations')
 for key in ['assessment','quiz','performanceTasks']:assert l[key]==a[key]
+for prefix in ['أ. Möchtest','ب. Hallo','ج. wir','د. Viele']:assert f'<p dir="auto">{prefix}' in l['contentHtml']
 for seg in next(x for x in assets if x['kind']=='dialogue')['segments']:assert f"</strong> {seg['text']}</p>" in l['contentHtml']
 with (R/'data/production-task-catalog.csv').open(encoding='utf-8-sig',newline='') as f:c={row['task_id']:row for row in csv.DictReader(f)}
 for i in range(1,9):

@@ -90,7 +90,7 @@
     "البنية والطول والإقرار لا تثبت صحة اللغة أو النطق أو الاستماع المستقل. لا شهادةCEFR/WCAG ولا مراجع بشري شرطًا لمتابعة العمل."
   ],
   "sourceHashes": {
-    "content/A1/lesson-12-trip-invitations.md": "d3b80ba77052b7d7f1994732e80017fd9559f2c36c7a6b17cfca74497e67222f",
+    "content/A1/lesson-12-trip-invitations.md": "cfcdb407e975a8f653e5d8de7bcf806af1b551d09e35af353a4a4eafa72b1f19",
     "content/A1/lesson-12-trip-invitations.assessment.json": "035ad65d41549f1355bc53e7b249a5e6286428a5cd7d4dbc05e9009677e2ed40"
   },
   "audioSnapshotHashes": {
@@ -853,8 +853,8 @@
     },
     {
       "id": "DL-A1-12-T04",
-      "text": "رتّب كتل الرسالة: التحية، ثم خبر الرحلة، ثم سؤال الانضمام، ثم الخاتمة والتوقيع. هذا ترتيب مطلوب للتدريب، لا كل ترتيب ممكن لدعوة:\n\nأ. Möchtest du mitkommen?\nب. Hallo Karim,\nج. wir fahren am Samstag nach Hammamet.\nد. Viele Grüße (وفي السطر التالي: Sami؛ دون فاصلة بعد Grüße)",
-      "finding": "ترتيب محدد بالوظائف حتى لا نخطّئ كل ترتيب آخر مقبول؛ أصلحت الفاصلة والحرف الأول والخاتمة.",
+      "text": "رتّب كتل الرسالة: التحية، ثم خبر الرحلة، ثم سؤال الانضمام، ثم الخاتمة والتوقيع. هذا ترتيب مطلوب للتدريب، لا كل ترتيب ممكن لدعوة:\n\nأ. Möchtest du mitkommen?\n\nب. Hallo Karim,\n\nج. wir fahren am Samstag nach Hammamet.\n\nد. Viele Grüße (وفي السطر التالي: Sami؛ دون فاصلة بعد Grüße)",
+      "finding": "ترتيب محدد بالوظائف حتى لا نخطّئ كل ترتيب آخر مقبول؛ أصلحت الفاصلة والحرف الأول والخاتمة. فُصلت الكتل الأربع إلى فقرات مرئية مستقلة بعدما كشف فحصHTML اندماجها في فقرة واحدة.",
       "sourceIds": [
         "LETTER"
       ],
@@ -1152,7 +1152,7 @@
   ],
   "qualityChecks": {
     "status": "passed_with_documented_limits",
-    "bundleBytes": 1855674,
+    "bundleBytes": 1855737,
     "reviewGuards": 18,
     "nodeSuites": 5,
     "browserSuites": 5,
@@ -1175,7 +1175,8 @@
       "DL-A1-12-AUD-LST-01",
       "DL-A1-12-AUD-DLG-01"
     ],
-    "audioRegisterChanges": "source_line/source_heading only; other fields and rows unchanged"
+    "audioRegisterChanges": "source_line/source_heading only; other fields and rows unchanged",
+    "cacheVersion": "v65"
   },
   "delivery": {
     "branch": "arena/01a1036f-deutschlern",
@@ -1186,8 +1187,8 @@
     "gateSeparate": true,
     "reviewedLessons": 17,
     "remainingLessons": 36,
-    "reviewPushVerified": false,
-    "reviewCommit": "Pending creation: Record CR18 granular review and cumulative checks",
+    "reviewPushVerified": true,
+    "reviewCommit": "d9a438f47adc8f67081114a8c3628839e1dc9a37",
     "pullRequest": {
       "number": 1,
       "state": "OPEN",
@@ -1197,6 +1198,7 @@
     "vercel": {
       "implementationStatus": "success"
     },
-    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test, no production claim."
+    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test, no production claim.",
+    "followupCommit": "Pending: Separate A1.12 invitation fragments in rendered exercise"
   }
 }
