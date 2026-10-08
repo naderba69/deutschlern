@@ -1430,6 +1430,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.9 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR40: written email and spoken caller script; B1.10 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b1-10-media-news-formal-communication').assessment.version, 'b1-10-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b1-10-media-news-formal-communication');
+    const responses = ["Betreff: Anfrage zu einem Ausstellungsbeitrag Sehr geehrte Damen und Herren, ich schreibe an Ihre fiktive Redaktion wegen eines Beitrags über eine Ausstellung. Könnten Sie mir mitteilen, wann der Beitrag als Podcast verfügbar ist? Können Sie mir sagen, ob eine vollständige Quellenliste auf Ihrer Webseite steht? Ich freue mich auf Ihre Antwort. Ich danke Ihnen im Voraus. Mit freundlichen Grüßen Rana", "Guten Tag, können Sie mir sagen, wann die nächste Ausgabe Ihres Stadtmagazins erscheint? Könnten Sie mir mitteilen, ob das vollständige Transkript online verfügbar ist? Ich möchte außerdem wissen, wo ich das Archiv finde. Vielen Dank für Ihre Auskunft und auf Wiederhören."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B1.10 models fit thresholds; email is writing only, caller script requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b1-10-media-news-formal-communication').performanceTasks[1]], 'lesson:b1-10-media-news-formal-communication', 'b1-10-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b1-10-media-news-formal-communication').performanceTasks[0]], 'lesson:b1-10-media-news-formal-communication', 'b1-10-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b1-10-media-news-formal-communication');
+      const next=findLesson('b1-11-history-politics-passive-past');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b1-10-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b1-10-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b1-10-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b1-10-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B1.10 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2405,7 +2439,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b1MediaQuestionSources = new Set(b1MediaAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b1MediaQuestionSources.has(`DL-B1-10-T0${task}`), `B1.10 quiz must cover source task T0${task}`);
   assert.ok(b1MediaAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B1-10-G01")), "all B1.10 questions must map to the lesson objective");
-  assert.ok(b1MediaAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-10-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B1.10 performance tasks must map to T08 and offer local written/oral work without requiring a recording");
+  assert.ok(b1MediaAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B1-10-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing")), "B1.10 tasks map to T08 and require no recorded audio");
   assert.deepEqual(b1MediaAssessment.performanceTasks.find((task) => task.id === "DL-B1-10-P02").sourceTaskIds, ["DL-B1-10-T06", "DL-B1-10-T08"], "B1.10 P02 must link its phone inquiry scenario to T06 and T08");
   const b1MediaAudioAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b1MediaAssessment.id);
   assert.equal(b1MediaAudioAssets.length, 5, "B1.10 must expose vocabulary, models, dialogue, reading, and listening");
@@ -2471,9 +2505,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     vm.runInContext('stopAudioPlayback()', context);
   }
   assert.equal(b1MediaAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), true, "B1.10 self-check tasks must remain independent of optional lesson audio");
-  assert.match(b1MediaSource, /تقديم الاستفسار شفهيًا في محاكاة اتصال هاتفي/);
-  assert.match(b1MediaSource, /اكتب نص الاتصال ثم اقرأه بصوت واضح/);
-  assert.match(b1MediaSource, /لا يلزم تسجيل/);
+  assert.deepEqual(b1MediaAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  for (const task of b1MediaAssessment.performanceTasks) assert.ok(b1MediaSource.includes(task.prompt));
+  assert.match(b1MediaSource, /دون تسجيل/);
   assert.equal(b1MediaAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), true, "B1.10 assessment must not depend on optional lesson recordings");
   const b1CivicSource = fs.readFileSync(path.join(rootDir, "content/B1/lesson-11-history-politics-passive-past.md"), "utf8");
   const b1CivicAssessment = b1Lessons[10];
