@@ -218,6 +218,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B1.2-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B1.2-practical-form-fixture', width);
+  // CR33: written application and spoken meeting checks.
+  await page.evaluate(() => openLesson('b1-03-work-communication-konjunktiv'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B1.3-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B1.3-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
