@@ -1,0 +1,2293 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-08-media-news-passive",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-08-v2",
+  "unitCount": 119,
+  "exerciseSubItemCount": 32,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "PASSIVE",
+      "title": "Lingolia — Passiv",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/passiv",
+      "scope": "المفعول Akkusativ يصير المسند إليه في الرفع، ومطابقة werden وحذف المنفذ، وفرق Vorgangspassiv وZustandspassiv. لا نعمم التبسيط عن الأفعال اللازمة؛ الصفحة نفسها تشرح المبني للمجهول غير الشخصي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "PART",
+      "title": "Lingolia — Partizip I und II",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/partizipien",
+      "scope": "Partizip II في المبني للمجهول لا يعني وحده الزمن الماضي؛ صيغ غير المنفصل و-ieren بلاge، وge داخل المنفصل. لا تدريس Partizip I أو التوسع في الوصف بالصفة هنا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "FUTUR",
+      "title": "Lingolia — Futur I",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/futur-1",
+      "scope": "werden مع المصدر يختلف عن werden مع Partizip II؛ جدول التصريف يميز ضمائر المفرد والجمع والاحترام.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PRESENT",
+      "title": "Lingolia — Präsens",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/praesens",
+      "scope": "المضارع قد يصف سياقًا مستقبليًا؛ لا تستنتج زمنًا مستقبليًا من werden وحدها في المبني للمجهول.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WEB",
+      "title": "Duden — Webseite",
+      "url": "https://www.duden.de/rechtschreibung/Webseite",
+      "scope": "صفحة ويب web page، مؤنث وجمعWebseiten؛ تحسين الترجمة بدل مساواتها دائمًا بموقع كامل.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "COUNCIL",
+      "title": "Duden — Stadtrat",
+      "url": "https://www.duden.de/rechtschreibung/Stadtrat",
+      "scope": "المجلس أو عضو فيه بحسب السياق؛ الجمعStadträte والإضافةdes Stadtrats/Stadtrates. لا تعميم بنية مجلس محلي على كل البلدان.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEND",
+      "title": "Duden — senden",
+      "url": "https://www.duden.de/rechtschreibung/senden",
+      "scope": "gesendet هو النمط المستعمل للبث في الدرس؛ تعرض الصفحةgesandt لمعانٍ أخرى واستعمالًا سويسريًا فلا نصمه بالخطأ في كل السياقات.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ELECTION",
+      "title": "Duden — Wahl",
+      "url": "https://www.duden.de/rechtschreibung/Wahl",
+      "scope": "عملية انتخاب في هذا السياق، مع معنى اختيار في غيره؛ مفردWahl وجمعWahlen.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "TRANSFER",
+      "title": "Netzverb/Verbformen — übertragen",
+      "url": "https://www.verbformen.com/conjugation/u3bertragen.htm",
+      "scope": "قُرئ الجزء0 من5: غير منفصل في معنى نقل/بث، überträgt/übertrug/hat übertragen، ومثال بث الحفل؛ لم تُقرأ الأجزاء1–4 ولم تعتمد.",
+      "access": "partial_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 5
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/uebertragen",
+      "reason": "404 content; excluded"
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.8 — الإعلام والأخبار والسياسة: المبني للمجهول",
+      "finding": "عنوان تدريب إعلامي محلي، لا خبر حالي أو موقف حزبي مطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 35–40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري",
+      "finding": "المدة تقدير مرن؛ الكلام والكتابة ظاهران والاستماع اختياري مع بقاء التسجيلات متاحة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أفهم خبرًا قصيرًا، وأصف ما يحدث باستخدام المبني للمجهول في المضارع.",
+      "finding": "الهدف فهم خبر قصير وصياغة الحدث، ممثل في خبر خيالي وتحويل محدد.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نركّز هنا على **Vorgangspassiv im Präsens**: المبني للمجهول الذي يصف الحدث في المضارع. يقدّم الحدث أو ما يقع عليه الفعل، وقد يُحذف منفذ الفعل لأنه غير مهم في السياق أو غير مذكور؛ ليس شرطًا أن يكون مجهولًا فعلًا. في الجمل الرئيسية البسيطة هنا نستعمل:",
+      "finding": "قُيد الشرح بصيغة الحدث في المضارع؛ حذف المنفذ لا يعني أنه مجهول فعلًا.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "**werden مصرّفًا بحسب المسند إليه نحويًا + Partizip II في نهاية الجملة الرئيسية المدروسة**",
+      "finding": "الصيغة للمضارع وفي الرئيسية البسيطة المدروسة؛ المطابقة مع المسند إليه لا منفذ الحدث.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "في هذا الدرس نركّز على **werden + Partizip II**: **wird veröffentlicht / werden gesendet**. لا تعني تسمية Partizip II أن الجملة في الماضي؛ زمن هذه الصيغة مضارع، وقد تتعلق بخطة لاحقة إذا دلّ السياق عليها. ولا تكفي كلمة werden وحدها لتحديد المبني للمجهول.",
+      "finding": "Partizip II ليس دليل الماضي وحده، وwerden ليست علامة مستقبل أو مجهول وحدها.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "قد يُختار المبني للمجهول في خبر أو إعلان للتركيز على الحدث بدل منفذه، حتى إذا كان المنفذ معروفًا. لا نختلق فاعلًا لم يذكره النص، ولا نحكم على موثوقية الخبر من بنيته النحوية وحدها.",
+      "finding": "اختيار المبني للمجهول قد يوجه التركيز لكنه لا يثبت صحة الخبر أو حياده؛ لا اختلاق منفذ محذوف.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "النموذج الأول تدريب خيالي لا خبر منشور. النموذج الثاني تحويل مضبوط مع حذف المنفذ، لا تخمين لمن قام بالفعل. لا استبدال للتسجيلات القائمة أو تصحيح آلي للغة أو النطق.",
+      "finding": "النموذج الأول خيالي والثاني تحويل؛ لا نشر أو استبدال تسجيل أو تصحيح آلي للغة والنطق.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Nachricht | die Nachrichten | الخبر / الأخبار |",
+      "finding": "خبر مفرد Nachricht وأخبار Nachrichten؛ الأخير جمع نحوي.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Schlagzeile | die Schlagzeilen | العنوان الرئيسي |",
+      "finding": "Schlagzeile العنوان الرئيسي؛ مؤنث وجمعه Schlagzeilen.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Bericht | die Berichte | التقرير |",
+      "finding": "Bericht تقرير؛ مذكر وجمعه Berichte، فلا يخلط بالخبر المفرد.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Redaktion | die Redaktionen | هيئة التحرير |",
+      "finding": "Redaktion هيئة تحرير؛ مؤنث وجمعه Redaktionen، لا شخص معين.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Zeitung | die Zeitungen | الصحيفة |",
+      "finding": "Zeitung صحيفة؛ مؤنث وجمعه Zeitungen، وليست محطة إذاعة.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| der Radiosender | die Radiosender | محطة الإذاعة |",
+      "finding": "Radiosender محطة إذاعة؛ الجمع بالصيغة نفسها، وليس شخصًا بالضرورة.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| das Interview | die Interviews | المقابلة |",
+      "finding": "Interview مقابلة؛ محايد وجمعه Interviews.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Wahl | die Wahlen | عملية انتخاب/انتخابات (هنا) |",
+      "finding": "Wahl عملية انتخاب هنا، وقد تعني اختيارًا؛ الجمع Wahlen.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Stadtrat | die Stadträte | مجلس المدينة (هنا) |",
+      "finding": "Stadtrat مجلس المدينة هنا، وله أيضًا معنى عضو مجلس بحسب السياق.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Sitzung | die Sitzungen | الجلسة |",
+      "finding": "Sitzung جلسة؛ الجمع Sitzungen، وorganisiert لا تثبت أنها انعقدت فعلًا.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| die Bevölkerung | — | السكان |",
+      "finding": "Bevölkerung السكان؛ اسم جمعي مفرد نحويًا، لا رأس عبارة Fragen aus der Bevölkerung.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| die Webseite | die Webseiten | صفحة ويب |",
+      "finding": "Webseite صفحة ويب، وجمعها Webseiten؛ صُححت مساواتها دائمًا بموقع كامل.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| der Vorschlag | die Vorschläge | الاقتراح |",
+      "finding": "Vorschlag اقتراح وجمعه Vorschläge؛ جمع الاقتراح لا يعني قبوله.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| der Einwohner / die Einwohnerin | die Einwohner / Einwohnerinnen | الساكن/الساكنة |",
+      "finding": "Einwohner وEinwohnerin للساكن والساكنة؛ لا جنسية أو حق تصويت مستنتج.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-15",
+      "text": "| veröffentlichen | veröffentlicht | ينشر |",
+      "finding": "veröffentlichen ينشر؛ veröffentlicht حاضر أو Partizip II بحسب البناء.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| berichten über | berichtet über | يقدّم تقريرًا عن |",
+      "finding": "حُفظ über في التصريف؛ berichten über يقدم تقريرًا عن موضوع.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-17",
+      "text": "| beantworten | beantwortet | يجيب عن |",
+      "finding": "beantworten يجيب عن؛ beantwortet بلا ge في Partizip II.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-18",
+      "text": "| einladen | lädt ein | يدعو |",
+      "finding": "einladen يدعو؛ lädt ein منفصل، وPartizip II هو eingeladen.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-19",
+      "text": "| organisieren | organisiert | ينظّم |",
+      "finding": "organisieren ينظم؛ organisiert دون ge مع -ieren.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-20",
+      "text": "| bauen | baut | يبني |",
+      "finding": "bauen يبني؛ gebaut صيغة الحدث، لا مجرد تخطيطه.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-21",
+      "text": "| eröffnen | eröffnet | يفتتح |",
+      "finding": "eröffnen يفتتح؛ eröffnet بلا ge، وهو الحدث المرتبط بالخط.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-22",
+      "text": "| senden | sendet | يبث/يرسل |",
+      "finding": "senden يبث أو يرسل؛ gesendet للبث هنا دون تعميم على كل المعاني واللهجات.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "vocab-23",
+      "text": "| übertragen | überträgt | ينقل/يبث |",
+      "finding": "übertragen ينقل أو يبث هنا؛ überträgt حاضر وübertragen صيغة Partizip II غير منفصلة.",
+      "sourceIds": [
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "conjugation-01",
+      "text": "| ich | werde |",
+      "finding": "ich مع werde لا wird رغم كونه مفردًا.",
+      "sourceIds": [
+        "FUTUR",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "conjugation-02",
+      "text": "| du | wirst |",
+      "finding": "du مع wirst؛ لا تعميم wird على كل مفرد.",
+      "sourceIds": [
+        "FUTUR",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "conjugation-03",
+      "text": "| er / sie / es | wird |",
+      "finding": "er أو sie المفردة أو es كل منها مستقل مع wird؛ الشرطات بدائل وليست فاعلًا مركبًا.",
+      "sourceIds": [
+        "FUTUR",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "conjugation-04",
+      "text": "| wir | werden |",
+      "finding": "wir مع werden للمتكلمين الجمع.",
+      "sourceIds": [
+        "FUTUR",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "conjugation-05",
+      "text": "| ihr | werdet |",
+      "finding": "ihr مع werdet؛ لا تعميم werden على كل جمع.",
+      "sourceIds": [
+        "FUTUR",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "conjugation-06",
+      "text": "| sie / Sie | werden |",
+      "finding": "sie الجمع وSie للاحترام مع werden؛ قد تخاطب صيغة الاحترام شخصًا واحدًا.",
+      "sourceIds": [
+        "FUTUR",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "participle-01",
+      "text": "| veröffentlichen | veröffentlicht |",
+      "finding": "veröffentlicht بلا ge بسبب البادئة غير المنفصلة.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-02",
+      "text": "| beantworten | beantwortet |",
+      "finding": "beantwortet بلا ge؛ ليس gebeantwortet.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-03",
+      "text": "| organisieren | organisiert |",
+      "finding": "organisiert دون ge مع -ieren.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-04",
+      "text": "| einladen | eingeladen |",
+      "finding": "eingeladen: ge داخل ein- والنهاية -en.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-05",
+      "text": "| senden | gesendet |",
+      "finding": "gesendet للبث هنا؛ لا رفض مطلق لصيغة gesandt في كل المعاني.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-06",
+      "text": "| übertragen | übertragen |",
+      "finding": "übertragen غير منفصل في معنى البث، وتساوي صيغته المصدر؛ لا تضاف ge.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-07",
+      "text": "| bauen | gebaut |",
+      "finding": "gebaut صيغة ضعيفة مع ge و-t.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-08",
+      "text": "| eröffnen | eröffnet |",
+      "finding": "eröffnet بلا ge ومع نهاية -et.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-09",
+      "text": "| planen | geplant |",
+      "finding": "geplant لا يعني أن المشروع نُفذ.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-10",
+      "text": "| sammeln | gesammelt |",
+      "finding": "gesammelt جمع الاقتراحات، لا اعتمادها.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "participle-11",
+      "text": "| informieren | informiert |",
+      "finding": "informiert بلا ge مع -ieren؛ تظهر مع ihr في T01.4.",
+      "sourceIds": [
+        "PART",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "- **Der Bericht wird veröffentlicht.** — يُنشر التقرير.",
+      "finding": "Bericht مفرد مع wird وveröffentlicht؛ لا يذكر المنفذ.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "- **Die Nachrichten werden um acht Uhr gesendet.** — تُبثّ الأخبار في الساعة الثامنة.",
+      "finding": "Nachrichten جمع مع werden وgesendet؛ الثامنة موعد البث.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "- **Ein Interview wird im Radio gesendet.** — تُبثّ مقابلة في الإذاعة.",
+      "finding": "Interview مفرد محايد مع wird؛ im Radio وسيلة البث.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ]
+    },
+    {
+      "id": "news-phrase-01",
+      "text": "- **Die Zeitung berichtet über die Wahl.** — تقدّم الصحيفة تقريرًا عن الانتخابات.",
+      "finding": "معلوم عن الانتخاب؛ über متعلق بالفعل berichtet، ولا werden هنا.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "ELECTION",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "news-phrase-02",
+      "text": "- **Die Zeitung veröffentlicht einen Bericht.** — تنشر الصحيفة تقريرًا. (مبني للمعلوم)",
+      "finding": "معلوم: الصحيفة تنشر einen Bericht في النصب.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "ELECTION",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "news-phrase-03",
+      "text": "- **Ein Bericht wird veröffentlicht.** — يُنشر تقرير. (مبني للمجهول)",
+      "finding": "مجهول: Ein Bericht في الرفع مع wird؛ لا تغيير التنكير إلى التعريف.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "ELECTION",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "news-phrase-04",
+      "text": "- **Heute wird eine Sitzung übertragen.** — تُنقل جلسة اليوم.",
+      "finding": "Heute في البداية وwird بعده؛ eine Sitzung مفرد وübertragen صيغة البث.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "ELECTION",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **التحويل والحالة:** في **Die Zeitung veröffentlicht den Bericht.** المفعول den Bericht يصبح **Der Bericht wird veröffentlicht.** في الرفع. لا يبقى den بعد التحويل. مع الجمع: **Die Einwohner werden eingeladen. Die Fragen werden beantwortet.** يُحذف المنفذ في مهمتنا؛ لا نقلب أسماء الأشخاص أو نغير الحدث والعدد.",
+      "finding": "den Bericht يصبح Der Bericht؛ يحفظ التعريف والعدد والحدث، ويحذف المنفذ في المهمة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **المطابقة والترتيب:** **Heute wird eine Sitzung übertragen.** يبدأ بظرف، ثم الفعل المصرف، ثم الاسم المفرد. وفي **Es werden zwei Haltestellen gebaut.** المطابقة مع zwei Haltestellen؛ es تمهيد في البداية لا اسم محطة مفردة. السكان في **Fragen aus der Bevölkerung** مصدر الأسئلة؛ المطابقة مع Fragen الجمع لا Bevölkerung.",
+      "finding": "المطابقة مع Sitzung المفرد وHaltestellen أوFragen الجمع؛ لا مع es التمهيدية أو Bevölkerung المجرورة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **بناء Partizip II:** veröffentlicht وbeantwortet وeröffnet بلا ge-؛ وكذلك organisiert وinformiert المنتهيان بـ-ieren. eingeladen فيه ge داخل الفعل القابل للفصل. übertragen غير منفصل في معنى البث، وصيغته هنا مساوية للمصدر؛ لا نكتب übergetragen. نستعمل gesendet للبث في هذا الدرس؛ لا نعممها وحدها على كل معاني senden ولهجاته.",
+      "finding": "تكوين الصيغ دون تعميم ge؛ eingeladen منفصل وübertragen غير منفصل، وgesendet للبث مع حدود المعاني واللهجات.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الحدث والحالة والمستقبل:** **Eine Veranstaltung wird organisiert.** يصف عملية التنظيم؛ **Eine Veranstaltung ist organisiert.** قد يصف الحالة الناتجة وهو صحيح في سياقه، لكنه ليس النمط المطلوب هنا. **Die Stadt wird eine Sitzung organisieren.** فيه werden مع المصدر للمستقبل، لا صيغة الحدث المبني للمجهول المدروسة. im Herbst وmorgen يعطيان سياقًا زمنيًا، وليس كل werden علامة مستقبل.",
+      "finding": "تمييز الحدث والحالة والمستقبل؛ ist … organisiert ليس خطأ مطلقًا، وwerden مع مصدر ليس النمط المطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **كلمات النص:** **planen / sammeln / informieren** يخطط / يجمع / يُعلم. **die Buslinie / die Haltestelle / die Informationsveranstaltung** خط الحافلات / موقف أو محطة توقف / فعالية إعلامية لتقديم معلومات. **Es geht um …** الموضوع هو…؛ ليست هذه العبارة مبنيًا للمجهول. جمع اقتراحات لا يعني قبولها، وتخطيط ساحة لا يعني بناءها.",
+      "finding": "المفردات مدعومة؛ es geht um موضوع وليس صيغة مجهول. التخطيط والجمع لا يثبتان البناء أو القبول.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **معاني السياق:** Stadtrat مجلس المدينة هنا، وقد تعني الكلمة عضوًا في مجلس بحسب السياق. Wahl عملية انتخاب هنا، وقد تعني اختيارًا في سياق آخر. Webseite صفحة ويب، وInternetseite في النص صفحة على الإنترنت؛ لا نحتاج عنوان موقع حقيقي. Einwohner ساكن، لا دليل على جنسيته أو حقه الانتخابي.",
+      "finding": "المعاني بحسب السياق؛ لا اختلاق جنسية أو حق تصويت، وWebseite صفحة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **تنبيه إلى نص تسجيل التصريف:** ترد فيه **Er, sie und es wird.** هذه صياغة تعداد ملتبسة؛ ليست نموذجًا صحيحًا لجملة ذات فاعل مركب. الصيغ التي نتعلمها هي **Er wird. Sie wird. Es wird.** كل ضمير بديل مفرد مستقل. ومع sie للجمع أو Sie للاحترام نقول werden؛ الجدول يوضح ذلك. التسجيل والتفريغ محفوظان دون تعديل أو استماع جديد، فلا ننسب إلى الصوت تصحيحًا لم يحدث.",
+      "finding": "نص التسجيل القديم ملتبس؛ الصيغ الصحيحة مفصولة في الشرح والجدول صحيح. لم يتغير الصوت أو التفريغ ولم يُستمع إليهما مجددًا.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **حدود الخبرين:** Linden في القراءة مثال خيالي، وخبر خط الحافلات في الاستماع مستقل عنه. لا نستنتج أن الخط في Linden أو أنه موضوع جلسة المجلس. النصوص ليست أخبارًا حالية أو إثباتًا لوقوع الأحداث، والمبني للمجهول لا يجعل الخبر صحيحًا أو محايدًا تلقائيًا. am nächsten Tag تعني اليوم التالي في تسلسل الخبر، لا تاريخًا تقويميًا ثابتًا.",
+      "finding": "الخبران خياليان؛ لا دليل على اتحاد مكانهما أو موضوعهما. اليوم التالي ليس تاريخ اليوم الحالي.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **طريقة العمل:** P01 ثلاث جمل خيالية مع الجهر، وP02 تحويل أول ثلاث جمل من تمرين3 كتابة فقط. لا نشر خبر أو شريك أو تسجيل أو معلومات شخصية مطلوبة. حاول الاستماع قبل فتح التفريغ؛ قراءة النص لا تثبت فهمًا مسموعًا مستقلًا. الطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "P01 ثلاث جمل مع الجهر وP02 تحويل ثلاث جمل كتابة فقط؛ لا نشر أو تسجيل أو شريك، ولا تقييم للنطق بالطول والإقرار.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR",
+        "PRESENT",
+        "WEB",
+        "COUNCIL",
+        "ELECTION",
+        "SEND",
+        "TRANSFER"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "In der Stadt Linden wird am Mittwoch eine Sitzung des Stadtrats organisiert.",
+      "finding": "تنظيم جلسة المجلس الأربعاء في Linden؛ خبر خيالي لا يسمي المنظم.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "WEB",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Ein neuer Platz im Zentrum wird geplant.",
+      "finding": "تخطيط ساحة جديدة في الوسط؛ Ein neuer Platz مرفوع، لا einen، ولا إثبات للبناء.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "WEB",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Die Sitzung wird im Internet übertragen.",
+      "finding": "النقل عبر الإنترنت صريح؛ لا يستنتج انحصار البث فيه دون نص.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "WEB",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Fragen aus der Bevölkerung werden beantwortet.",
+      "finding": "الأسئلة من السكان هي المسند إليه الجمع مع werden؛ لا نفترض أن السكان يجيبون.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "WEB",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Am Ende werden mehrere Vorschläge gesammelt.",
+      "finding": "تُجمع عدة اقتراحات في النهاية؛ mehrere ليس عددًا دقيقًا، ولا يفيد ذلك الموافقة عليها.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "WEB",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Die Informationen werden am nächsten Tag auf der Webseite der Stadt veröffentlicht.",
+      "finding": "تنشر المعلومات في اليوم التالي على صفحة المدينة؛ جمع Informationen مع werden.",
+      "sourceIds": [
+        "PASSIVE",
+        "COUNCIL",
+        "WEB",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "1. Wann wird die Sitzung organisiert?",
+      "finding": "موعد التنظيم مذكور؛ لا يستبدل بيوم الجمعة من الاستماع.",
+      "sourceIds": [],
+      "answer": "Am Mittwoch."
+    },
+    {
+      "id": "reading-question-02",
+      "text": "2. Was wird im Zentrum geplant?",
+      "finding": "ساحة جديدة، لا خط الحافلات؛ الجواب في الرفع.",
+      "sourceIds": [],
+      "answer": "Ein neuer Platz."
+    },
+    {
+      "id": "reading-question-03",
+      "text": "3. Wo wird die Sitzung übertragen?",
+      "finding": "وسيلة نقل الجلسة الإنترنت، لا مكان انعقادها أو موقع نشر المعلومات بالتحديد.",
+      "sourceIds": [],
+      "answer": "Im Internet."
+    },
+    {
+      "id": "reading-question-04",
+      "text": "4. Was wird am Ende gesammelt?",
+      "finding": "الاقتراحات هي التي تجمع؛ لا أصوات انتخاب أو قرارات معتمدة.",
+      "sourceIds": [],
+      "answer": "Mehrere Vorschläge."
+    },
+    {
+      "id": "reading-question-05",
+      "text": "5. Wann werden die Informationen veröffentlicht?",
+      "finding": "اليوم التالي هو العلاقة المذكورة؛ لا تاريخ تقويمي محدد.",
+      "sourceIds": [],
+      "answer": "Am nächsten Tag."
+    },
+    {
+      "id": "listening-01",
+      "text": "In den Nachrichten geht es heute um eine neue Buslinie.",
+      "finding": "موضوع الأخبار خط جديد؛ In den Nachrichten geht es … ليست صيغة مجهول.",
+      "sourceIds": [
+        "PASSIVE",
+        "PRESENT",
+        "WEB"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Die Buslinie wird im Herbst eröffnet.",
+      "finding": "افتتاح الخط في الخريف؛ صيغة مضارع مع سياق زمني، لا قاعدة أن werden تعني المستقبل.",
+      "sourceIds": [
+        "PASSIVE",
+        "PRESENT",
+        "WEB"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Zwei Haltestellen werden gebaut.",
+      "finding": "محطتا توقف مذكورتان؛ عدد اثنين وجمع werden، لا محطتا قطار مفترضتان.",
+      "sourceIds": [
+        "PASSIVE",
+        "PRESENT",
+        "WEB"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Eine Informationsveranstaltung wird am Freitag organisiert.",
+      "finding": "فعالية إعلامية تنظم الجمعة؛ مفرد مع wird، لا جلسة الأربعاء في القراءة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PRESENT",
+        "WEB"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Die Einladung wird auf der Internetseite der Stadt veröffentlicht.",
+      "finding": "الدعوة على صفحة المدينة؛ لا وقت نشر أو إثبات أنها صفحة Linden.",
+      "sourceIds": [
+        "PASSIVE",
+        "PRESENT",
+        "WEB"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "1. Worum geht es in den Nachrichten?",
+      "finding": "السؤال عن موضوع الخبر، لا اسم المدينة أو موقعها.",
+      "sourceIds": [],
+      "answer": "Um eine neue Buslinie."
+    },
+    {
+      "id": "listening-question-02",
+      "text": "2. Wann wird die Buslinie eröffnet?",
+      "finding": "موعد افتتاح الخط الخريف، لا يوم الفعالية.",
+      "sourceIds": [],
+      "answer": "Im Herbst."
+    },
+    {
+      "id": "listening-question-03",
+      "text": "3. Wie viele Haltestellen werden gebaut?",
+      "finding": "محطتان بلفظ Zwei؛ ليس عدد الخطوط.",
+      "sourceIds": [],
+      "answer": "Zwei."
+    },
+    {
+      "id": "listening-question-04",
+      "text": "4. Wann wird die Informationsveranstaltung organisiert?",
+      "finding": "تنظم الفعالية الجمعة؛ لا ساعة بدء معطاة.",
+      "sourceIds": [],
+      "answer": "Am Freitag."
+    },
+    {
+      "id": "listening-question-05",
+      "text": "5. Wo wird die Einladung veröffentlicht?",
+      "finding": "مكان نشر الدعوة صفحة المدينة؛ لا موعد نشر أو عنوان URL مطلوب.",
+      "sourceIds": [],
+      "answer": "Auf der Internetseite der Stadt."
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "1. Am Mittwoch wird eine Sitzung organisiert.",
+      "finding": "المنفذ محذوف؛ Sitzung مفرد مع wird، والأربعاء مطابق للمعطى.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "WEB"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "2. Die Fragen werden beantwortet.",
+      "finding": "Fragen جمع مع werden وbeantwortet دون ge؛ الحدث الثاني المطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "WEB"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "3. Am nächsten Tag werden die Informationen auf der Webseite der Stadt veröffentlicht.",
+      "finding": "المعلومات جمع، ونشرها في اليوم التالي على الصفحة؛ Partizip II أخير. تقرأ الجمل الثلاث جهرًا.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "WEB"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "1. Der Bericht wird veröffentlicht.",
+      "finding": "den Bericht صار Der Bericht مع حفظ التعريف وحذف الصحيفة؛ wird veröffentlicht.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "2. Die Nachrichten werden gesendet.",
+      "finding": "جمع الأخبار محفوظ وحُذف Radiosender؛ werden gesendet للبث.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "3. Die Einwohner werden eingeladen.",
+      "finding": "جمع السكان محفوظ وحُذفت Die Stadt؛ eingeladen لا einladen، والأداء كتابة فقط.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Der Bericht wird veröffentlicht.** → يُنشر التقرير.",
+      "finding": "التقرير مفرد مع wird وPartizip II أخير.",
+      "sourceIds": [
+        "PASSIVE",
+        "FUTUR",
+        "ELECTION",
+        "COUNCIL"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Die Nachrichten werden gesendet.** → تُبثّ الأخبار.",
+      "finding": "الأخبار جمع مع werden وgesendet للبث.",
+      "sourceIds": [
+        "PASSIVE",
+        "FUTUR",
+        "ELECTION",
+        "COUNCIL"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **er/sie/es wird؛ wir/sie/Sie werden؛ ich werde؛ du wirst؛ ihr werdet** — طابق الشخص والعدد؛ لا يكفي وصف «مفرد/جمع» وحده.",
+      "finding": "صُحح اختزال المطابقة إلى مفرد وجمع بإظهار الشخص، بما فيه werde وwirst وwerdet وSie الاحترام.",
+      "sourceIds": [
+        "PASSIVE",
+        "FUTUR",
+        "ELECTION",
+        "COUNCIL"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **die Wahl / der Stadtrat / die Sitzung** → عملية انتخاب / مجلس المدينة / الجلسة (معاني هذا السياق).",
+      "finding": "معاني Wahl وStadtrat وSitzung لهذا السياق، لا حصر لجميع معاني الكلمات.",
+      "sourceIds": [
+        "PASSIVE",
+        "FUTUR",
+        "ELECTION",
+        "COUNCIL"
+      ]
+    },
+    {
+      "id": "DL-A2-08-T01",
+      "text": "1. Der Bericht ______ heute veröffentlicht.\n2. Die Nachrichten ______ um acht Uhr gesendet.\n3. Ich ______ zu einem Interview eingeladen.\n4. Ihr ______ über das Thema informiert.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "Der Bericht ______ heute veröffentlicht.",
+          "answer": "wird",
+          "finding": "Der Bericht مفرد فيحتاج wird."
+        },
+        {
+          "text": "Die Nachrichten ______ um acht Uhr gesendet.",
+          "answer": "werden",
+          "finding": "Nachrichten جمع فيحتاج werden؛ ليست werdet الخاصة بـihr."
+        },
+        {
+          "text": "Ich ______ zu einem Interview eingeladen.",
+          "answer": "werde",
+          "finding": "ich أول شخص مفرد فيحتاج werde، لا مجرد wird."
+        },
+        {
+          "text": "Ihr ______ über das Thema informiert.",
+          "answer": "werdet",
+          "finding": "ihr ثاني شخص جمع فيحتاج werdet."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T02",
+      "text": "1. veröffentlichen → ______\n2. beantworten → ______\n3. organisieren → ______\n4. einladen → ______",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "veröffentlichen → ______",
+          "answer": "veröffentlicht",
+          "finding": "veröffentlicht هي الصيغة المطلوبة دون ge."
+        },
+        {
+          "text": "beantworten → ______",
+          "answer": "beantwortet",
+          "finding": "beantwortet بالبادئة be- بلا ge."
+        },
+        {
+          "text": "organisieren → ______",
+          "answer": "organisiert",
+          "finding": "organisiert مع -ieren دون ge."
+        },
+        {
+          "text": "einladen → ______",
+          "answer": "eingeladen",
+          "finding": "eingeladen فيها ge بعد ein- ونهاية -en."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T03",
+      "text": "حوّل إلى Vorgangspassiv im Präsens، واحذف المنفذ؛ ابدأ بالأسماء المعطاة دون تغيير التعريف أو العدد.\n\n1. **Die Zeitung veröffentlicht den Bericht.** → Der Bericht ______ ______.\n2. **Der Radiosender sendet die Nachrichten.** → Die Nachrichten ______ ______.\n3. **Die Stadt lädt die Einwohner ein.** → Die Einwohner ______ ______.\n4. **Die Redaktion beantwortet die Fragen.** → Die Fragen ______ ______.\n\n**تطبيق P02 — كتابة فقط:**\n\nأعد كتابة الجمل1–3 من تمرين3 كاملة في Vorgangspassiv im Präsens، كتابة فقط: نشر التقرير، وبث الأخبار، ودعوة السكان. ابدأ بالأسماء المعطاة Der Bericht وDie Nachrichten وDie Einwohner، واحفظ التعريف والعدد والحدث، واحذف منفذ الفعل دون إضافة von. اكتب ثلاث جمل تامة، لا الفراغات وحدها؛ لا جهر أو تسجيل أو شريك مطلوب.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "**Die Zeitung veröffentlicht den Bericht.** → Der Bericht ______ ______.",
+          "answer": "wird veröffentlicht",
+          "finding": "المفعول den Bericht يصبح Der Bericht مرفوعًا؛ يحذف الناشر."
+        },
+        {
+          "text": "**Der Radiosender sendet die Nachrichten.** → Die Nachrichten ______ ______.",
+          "answer": "werden gesendet",
+          "finding": "تبقى الأخبار جمعًا مع werden وgesendet؛ حذف Radiosender لا يغير البث."
+        },
+        {
+          "text": "**Die Stadt lädt die Einwohner ein.** → Die Einwohner ______ ______.",
+          "answer": "werden eingeladen",
+          "finding": "المدينة تدعو السكان؛ يصبح السكان المسند إليه الجمع، لا المنفذ."
+        },
+        {
+          "text": "**Die Redaktion beantwortet die Fragen.** → Die Fragen ______ ______.",
+          "answer": "werden beantwortet",
+          "finding": "الأسئلة جمع مع werden وbeantwortet؛ حذفت Redaktion حسب التعليمات."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T04",
+      "text": "اختر Vorgangspassiv im Präsens، لا وصف الحالة باستخدام sein:\n\n1. أ. Die Sitzung wird übertragen. ب. Die Sitzung werden übertragen.\n2. أ. Die Fragen werden beantwortet. ب. Die Fragen wird beantwortet.\n3. أ. Der Bericht wird veröffentlicht. ب. Der Bericht wird veröffentlichen.\n4. أ. Am Freitag wird eine Veranstaltung organisiert. ب. Am Freitag ist eine Veranstaltung organisiert.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "أ. Die Sitzung wird übertragen. ب. Die Sitzung werden übertragen.",
+          "answer": "أ",
+          "finding": "أ يطابق Sitzung المفرد؛ werden في ب لا يطابقه."
+        },
+        {
+          "text": "أ. Die Fragen werden beantwortet. ب. Die Fragen wird beantwortet.",
+          "answer": "أ",
+          "finding": "أ يطابق Fragen الجمع؛ wird في ب لا يطابقه."
+        },
+        {
+          "text": "أ. Der Bericht wird veröffentlicht. ب. Der Bericht wird veröffentlichen.",
+          "answer": "أ",
+          "finding": "أ فيه Partizip II؛ ب فيه مصدر وليس صيغة الحدث المطلوبة."
+        },
+        {
+          "text": "أ. Am Freitag wird eine Veranstaltung organisiert. ب. Am Freitag ist eine Veranstaltung organisiert.",
+          "answer": "أ",
+          "finding": "أ صيغة الحدث؛ ب قد يصح لوصف الحالة لكنه لا يحقق الطلب المحدد."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Die Sitzung wird am Mittwoch organisiert.\n2. Ein neuer Platz im Zentrum wird geplant.\n3. Die Sitzung wird nicht im Internet übertragen.\n4. Die Informationen werden am nächsten Tag veröffentlicht.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "Die Sitzung wird am Mittwoch organisiert.",
+          "answer": "صحيح",
+          "finding": "مطابق لأول جملة وموعد الأربعاء."
+        },
+        {
+          "text": "Ein neuer Platz im Zentrum wird geplant.",
+          "answer": "صحيح",
+          "finding": "التخطيط صريح؛ لا ادعاء أن الساحة بنيت."
+        },
+        {
+          "text": "Die Sitzung wird nicht im Internet übertragen.",
+          "answer": "خطأ: Die Sitzung wird im Internet übertragen.",
+          "finding": "nicht يناقض النقل المصرح به؛ أزيل الادعاء القديم عن الإذاعة حتى لا يحتاج استنتاج حصر البث."
+        },
+        {
+          "text": "Die Informationen werden am nächsten Tag veröffentlicht.",
+          "answer": "صحيح",
+          "finding": "مطابق لليوم التالي؛ لا يطلب تاريخًا تقويميًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة: **Herbst — zwei — Freitag — Internetseite**.\n\n1. Die neue Buslinie wird im ______ eröffnet.\n2. Es werden ______ Haltestellen gebaut.\n3. Die Informationsveranstaltung wird am ______ organisiert.\n4. Die Einladung wird auf der ______ der Stadt veröffentlicht.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "Die neue Buslinie wird im ______ eröffnet.",
+          "answer": "Herbst",
+          "finding": "Herbst فصل الافتتاح، لا يوم الفعالية."
+        },
+        {
+          "text": "Es werden ______ Haltestellen gebaut.",
+          "answer": "zwei",
+          "finding": "zwei يحفظ العدد؛ المطابقة مع Haltestellen رغم es في البداية."
+        },
+        {
+          "text": "Die Informationsveranstaltung wird am ______ organisiert.",
+          "answer": "Freitag",
+          "finding": "Freitag يوم الفعالية فقط."
+        },
+        {
+          "text": "Die Einladung wird auf der ______ der Stadt veröffentlicht.",
+          "answer": "Internetseite",
+          "finding": "Internetseite من البنك؛ تستعمل كل كلمة مرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T07",
+      "text": "في1–4 اكتب **معلوم** أو **مجهول**، وعيّن werden المصرف وPartizip II في جملتي المجهول. في5 اختر ما يركز عليه النمط:\n\n1. Die Zeitung veröffentlicht einen Bericht.\n2. Ein Bericht wird veröffentlicht.\n3. Die Stadt lädt die Einwohner ein.\n4. Die Einwohner werden eingeladen.\n5. في Ein Bericht wird veröffentlicht، التركيز على **نشر التقرير / هوية الناشر**.",
+      "finding": "فُحص كل بند ومفتاحه وبدائله؛ الشكل والتعريف والعدد والحدث مرتبطون بالمطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "SEND"
+      ],
+      "items": [
+        {
+          "text": "Die Zeitung veröffentlicht einen Bericht.",
+          "answer": "معلوم",
+          "finding": "الصحيفة منفذ والبناء معلوم رغم نهاية الفعل -t."
+        },
+        {
+          "text": "Ein Bericht wird veröffentlicht.",
+          "answer": "مجهول: wird / veröffentlicht",
+          "finding": "wird مصرف وveröffentlicht هو Partizip II؛ صيغتان محددتان في المطلوب."
+        },
+        {
+          "text": "Die Stadt lädt die Einwohner ein.",
+          "answer": "معلوم",
+          "finding": "lädt…ein معلوم؛ الفصل لا يجعل الفعل مبنيًا للمجهول."
+        },
+        {
+          "text": "Die Einwohner werden eingeladen.",
+          "answer": "مجهول: werden / eingeladen",
+          "finding": "werden مصرف وeingeladen هو Partizip II؛ السكان يتلقون الدعوة."
+        },
+        {
+          "text": "في Ein Bericht wird veröffentlicht، التركيز على **نشر التقرير / هوية الناشر**.",
+          "answer": "نشر التقرير",
+          "finding": "الناشر محذوف؛ التركيز على نشر التقرير لا إثبات هوية الناشر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-T08",
+      "text": "**P01 — خبر مع الجهر:**\n\nاكتب ثلاث جمل لخبر محلي خيالي: الجملة1 تنظيم جلسة يوم الأربعاء؛ الجملة2 الإجابة عن الأسئلة؛ الجملة3 نشر المعلومات في اليوم التالي على صفحة المدينة. استعمل Vorgangspassiv im Präsens مع werden وPartizip II في الجمل الثلاث، وراعِ المفرد والجمع، ثم اقرأ الجميع بصوت مرتفع. لا تتحدث عن حدث حقيقي أو تنشر الخبر، ولا شريك أو تسجيل مطلوب.",
+      "finding": "ثلاث جمل بمعطيات محددة مع الجهر؛ ليست كتابة ثلاثة أخبار مفتوحة أو طلب نشرها.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "WEB"
+      ],
+      "items": [
+        {
+          "text": "P01 مطلب 1",
+          "answer": "1. Am Mittwoch wird eine Sitzung organisiert.",
+          "finding": "المنفذ محذوف؛ Sitzung مفرد مع wird، والأربعاء مطابق للمعطى."
+        },
+        {
+          "text": "P01 مطلب 2",
+          "answer": "2. Die Fragen werden beantwortet.",
+          "finding": "Fragen جمع مع werden وbeantwortet دون ge؛ الحدث الثاني المطلوب."
+        },
+        {
+          "text": "P01 مطلب 3",
+          "answer": "3. Am nächsten Tag werden die Informationen auf der Webseite der Stadt veröffentlicht.",
+          "finding": "المعلومات جمع، ونشرها في اليوم التالي على الصفحة؛ Partizip II أخير. تقرأ الجمل الثلاث جهرًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q01",
+      "text": "أكمل: Die Nachrichten ___ um acht Uhr gesendet.",
+      "finding": "الأخبار جمع، لذلك نستخدم werden؛ ويأتي Partizip II gesendet في نهاية الجملة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "options": [
+        "werden",
+        "wird",
+        "werdet"
+      ],
+      "answer": "werden",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-A2-08-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "werden",
+          "correct": true,
+          "finding": "werden يطابق Nachrichten الجمع."
+        },
+        {
+          "text": "wird",
+          "correct": false,
+          "finding": "wird للغائب المفرد فلا يطابق Nachrichten."
+        },
+        {
+          "text": "werdet",
+          "correct": false,
+          "finding": "werdet لـihr وليس للأخبار."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q02",
+      "text": "ما صيغة Partizip II للفعل **veröffentlichen**؟",
+      "finding": "صيغة Partizip II هي veröffentlicht، وتأتي في نهاية جملة المبني للمجهول.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "options": [
+        "veröffentlichte",
+        "veröffentlicht",
+        "veröffentlichen"
+      ],
+      "answer": "veröffentlicht",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-08-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "veröffentlichte",
+          "correct": false,
+          "finding": "veröffentlichte قد يكون ماضيًا أو وصفًا مصرفًا، لا Partizip II المجرد المطلوب."
+        },
+        {
+          "text": "veröffentlicht",
+          "correct": true,
+          "finding": "veröffentlicht هو المطلوب."
+        },
+        {
+          "text": "veröffentlichen",
+          "correct": false,
+          "finding": "veröffentlichen مصدر وليس Partizip II."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q03",
+      "text": "أي جملة في المبني للمجهول صحيحة؟",
+      "finding": "المبني للمجهول في المضارع: werden مصرّفًا + Partizip II.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "options": [
+        "Der Bericht wird veröffentlichen.",
+        "Der Bericht veröffentlicht werden.",
+        "Der Bericht wird veröffentlicht."
+      ],
+      "answer": "Der Bericht wird veröffentlicht.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-A2-08-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "Der Bericht wird veröffentlichen.",
+          "correct": false,
+          "finding": "werden مع مصدر ليس صيغة الحدث المطلوبة."
+        },
+        {
+          "text": "Der Bericht veröffentlicht werden.",
+          "correct": false,
+          "finding": "لا يوجد فعل شخصي مصرف مناسب مع Der Bericht."
+        },
+        {
+          "text": "Der Bericht wird veröffentlicht.",
+          "correct": true,
+          "finding": "wird مع المفرد وveröffentlicht في النهاية؛ صحيح."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q04",
+      "text": "لماذا يستخدم الخبر المبني للمجهول أحيانًا؟",
+      "finding": "يبرز الحدث بدل منفذه، وقد يكون المنفذ معروفًا لكنه غير مذكور أو ليس محور الخبر؛ لا تعني الصيغة أن الخبر صحيح تلقائيًا.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "options": [
+        "لأن الجملة تتحدث عن المستقبل فقط.",
+        "لأن المهم هو الحدث أو متلقي الفعل، لا الفاعل.",
+        "لأن الفاعل يجب أن يكون ich."
+      ],
+      "answer": "لأن المهم هو الحدث أو متلقي الفعل، لا الفاعل.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-08-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "لأن الجملة تتحدث عن المستقبل فقط.",
+          "correct": false,
+          "finding": "المجهول ليس مقصورًا على المستقبل."
+        },
+        {
+          "text": "لأن المهم هو الحدث أو متلقي الفعل، لا الفاعل.",
+          "correct": true,
+          "finding": "تقديم الحدث بدل منفذه هو الوظيفة المستهدفة."
+        },
+        {
+          "text": "لأن الفاعل يجب أن يكون ich.",
+          "correct": false,
+          "finding": "ليس شرطًا أن يكون المسند إليه ich؛ تتعدد الأسماء والضمائر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q05",
+      "text": "متى تُنظّم جلسة مجلس المدينة؟",
+      "finding": "النص يقول am Mittwoch.",
+      "sourceIds": [],
+      "options": [
+        "يوم الأربعاء.",
+        "يوم السبت.",
+        "في الخريف."
+      ],
+      "answer": "يوم الأربعاء.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "يوم الأربعاء.",
+          "correct": true,
+          "finding": "الأربعاء صريح في القراءة."
+        },
+        {
+          "text": "يوم السبت.",
+          "correct": false,
+          "finding": "السبت غير مذكور."
+        },
+        {
+          "text": "في الخريف.",
+          "correct": false,
+          "finding": "الخريف في الاستماع لا القراءة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q06",
+      "text": "ماذا يُخطط له في وسط المدينة؟",
+      "finding": "يقول النص: Ein neuer Platz im Zentrum wird geplant. الاسم Ein neuer Platz في الرفع بعد التحويل؛ التخطيط لا يعني أن الساحة بُنيت.",
+      "sourceIds": [],
+      "options": [
+        "محطة قطار.",
+        "مهرجان رياضي.",
+        "ساحة جديدة."
+      ],
+      "answer": "ساحة جديدة.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "محطة قطار.",
+          "correct": false,
+          "finding": "لا مشروع محطة قطار مذكور."
+        },
+        {
+          "text": "مهرجان رياضي.",
+          "correct": false,
+          "finding": "لا مهرجان رياضي مذكور."
+        },
+        {
+          "text": "ساحة جديدة.",
+          "correct": true,
+          "finding": "ساحة جديدة في الوسط؛ صُحح شرح الرفع إلى Ein neuer Platz."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q07",
+      "text": "أين تُنقل جلسة المجلس؟",
+      "finding": "Die Sitzung wird im Internet übertragen.",
+      "sourceIds": [],
+      "options": [
+        "في الإذاعة فقط.",
+        "في الإنترنت.",
+        "في المسرح."
+      ],
+      "answer": "في الإنترنت.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "في الإذاعة فقط.",
+          "correct": false,
+          "finding": "فقط تناقض وجود النقل عبر الإنترنت؛ لا حاجة لافتراض غياب أي بث إضافي."
+        },
+        {
+          "text": "في الإنترنت.",
+          "correct": true,
+          "finding": "im Internet هو الدليل."
+        },
+        {
+          "text": "في المسرح.",
+          "correct": false,
+          "finding": "المسرح غير مذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q08",
+      "text": "في **Zwei Haltestellen werden gebaut**، ما عدد محطات التوقف المذكورة؟",
+      "finding": "zwei Haltestellen تعني محطتين. الصيغة مضارع مبني للمجهول؛ لا نستنتج المستقبل من werden وحدها.",
+      "sourceIds": [],
+      "options": [
+        "محطتان.",
+        "محطة واحدة.",
+        "أربع محطات."
+      ],
+      "answer": "محطتان.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-A2-08-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "محطتان.",
+          "correct": true,
+          "finding": "zwei تعني محطتين."
+        },
+        {
+          "text": "محطة واحدة.",
+          "correct": false,
+          "finding": "واحدة ليست العدد المذكور."
+        },
+        {
+          "text": "أربع محطات.",
+          "correct": false,
+          "finding": "أربع ليست العدد المذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q09",
+      "text": "في **Die Informationen werden morgen veröffentlicht**، ما الفعل الذي جاء في نهاية الجملة؟",
+      "finding": "Partizip II veröffentlicht يأتي في النهاية.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "options": [
+        "werden",
+        "morgen",
+        "veröffentlicht"
+      ],
+      "answer": "veröffentlicht",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-A2-08-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "werden",
+          "correct": false,
+          "finding": "werden هو المصرف في أول الإطار الفعلي، لا نهايته."
+        },
+        {
+          "text": "morgen",
+          "correct": false,
+          "finding": "morgen ظرف وقت وليس فعلًا."
+        },
+        {
+          "text": "veröffentlicht",
+          "correct": true,
+          "finding": "veröffentlicht هو Partizip II المتأخر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-Q10",
+      "text": "أكمل بصيغة الحدث في المضارع **Vorgangspassiv im Präsens**، لا وصف الحالة: Am Freitag ___ eine Veranstaltung ___. (organisieren)",
+      "finding": "eine Veranstaltung مفرد فتأخذ wird، وPartizip II هو organisiert. ist … organisiert قد يصف الحالة، لكنه ليس صيغة الحدث المطلوبة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "options": [
+        "werden … organisieren",
+        "wird … organisiert",
+        "ist … organisiert"
+      ],
+      "answer": "wird … organisiert",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-A2-08-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "werden … organisieren",
+          "correct": false,
+          "finding": "werden لا يطابق المفرد وorganisieren مصدر؛ لا يحقق النمط."
+        },
+        {
+          "text": "wird … organisiert",
+          "correct": true,
+          "finding": "wird للمفرد وorganisiert هو Partizip II؛ صيغة الحدث المطلوبة."
+        },
+        {
+          "text": "ist … organisiert",
+          "correct": false,
+          "finding": "قد يصح لوصف الحالة؛ مستبعد لأن المطلوب Vorgangspassiv لا لأنه خطأ مطلق."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-P01",
+      "text": "اكتب ثلاث جمل لخبر محلي خيالي: الجملة1 تنظيم جلسة يوم الأربعاء؛ الجملة2 الإجابة عن الأسئلة؛ الجملة3 نشر المعلومات في اليوم التالي على صفحة المدينة. استعمل Vorgangspassiv im Präsens مع werden وPartizip II في الجمل الثلاث، وراعِ المفرد والجمع، ثم اقرأ الجميع بصوت مرتفع. لا تتحدث عن حدث حقيقي أو تنشر الخبر، ولا شريك أو تسجيل مطلوب.",
+      "finding": "مطابقة المصدر والنموذج: ثلاث جمل مع الجهر، حد130 وT08. لا تسجيل أو شريك أو نشر خبر مطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل عن تنظيم الجلسة الأربعاء والإجابة عن الأسئلة ونشر المعلومات في اليوم التالي على صفحة المدينة؛ قرأت الجميع جهرًا.",
+        "meaningClarity": "الحدث واليوم ووسيلة النشر واضحة وفق المعطيات الخيالية؛ لا ادعاء نشر خبر حقيقي أو تحديد منفذ غير مذكور.",
+        "targetSkill": "werden بحسب الاسم: wird مع Sitzung وwerden مع Fragen/Informationen، وPartizip II في نهاية كل جملة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-A2-08-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ثلاث جمل عن تنظيم الجلسة الأربعاء والإجابة عن الأسئلة ونشر المعلومات في اليوم التالي على صفحة المدينة؛ قرأت الجميع جهرًا.",
+          "finding": "عدد الجمل وقناة الأداء محددان؛ النموذج يفي بهما لكن التطبيق لا يحكم آليًا على المعنى."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الحدث واليوم ووسيلة النشر واضحة وفق المعطيات الخيالية؛ لا ادعاء نشر خبر حقيقي أو تحديد منفذ غير مذكور.",
+          "finding": "المعطيات الخيالية أو التعريف والعدد والحدث محفوظة؛ لا اختلاق منفذ عند حذفه."
+        },
+        {
+          "key": "targetSkill",
+          "text": "werden بحسب الاسم: wird مع Sitzung وwerden مع Fragen/Informationen، وPartizip II في نهاية كل جملة.",
+          "finding": "werden يطابق الاسم وPartizip II في النهاية؛ هذا معيار إقرار، لا مصحح لغة أو نطق."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-P02",
+      "text": "أعد كتابة الجمل1–3 من تمرين3 كاملة في Vorgangspassiv im Präsens، كتابة فقط: نشر التقرير، وبث الأخبار، ودعوة السكان. ابدأ بالأسماء المعطاة Der Bericht وDie Nachrichten وDie Einwohner، واحفظ التعريف والعدد والحدث، واحذف منفذ الفعل دون إضافة von. اكتب ثلاث جمل تامة، لا الفراغات وحدها؛ لا جهر أو تسجيل أو شريك مطلوب.",
+      "finding": "مطابقة المصدر والنموذج: أول ثلاث جمل منT03 كاملة كتابة فقط، حد90. لا تسجيل أو شريك أو نشر خبر مطلوب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل تامة محولة من البنود1–3، كتابة فقط، عن التقرير والأخبار والسكان، دون ذكر المنفذ.",
+        "meaningClarity": "التعريف والعدد والحدث محفوظة؛ Der Bericht في الرفع بدل den Bericht، ولا تبديل بين الأخبار والتقرير أو السكان.",
+        "targetSkill": "wird veröffentlicht وwerden gesendet وwerden eingeladen، مع Partizip II في نهاية كل جملة لا المصدر."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-A2-08-T03"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ثلاث جمل تامة محولة من البنود1–3، كتابة فقط، عن التقرير والأخبار والسكان، دون ذكر المنفذ.",
+          "finding": "عدد الجمل وقناة الأداء محددان؛ النموذج يفي بهما لكن التطبيق لا يحكم آليًا على المعنى."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "التعريف والعدد والحدث محفوظة؛ Der Bericht في الرفع بدل den Bericht، ولا تبديل بين الأخبار والتقرير أو السكان.",
+          "finding": "المعطيات الخيالية أو التعريف والعدد والحدث محفوظة؛ لا اختلاق منفذ عند حذفه."
+        },
+        {
+          "key": "targetSkill",
+          "text": "wird veröffentlicht وwerden gesendet وwerden eingeladen، مع Partizip II في نهاية كل جملة لا المصدر.",
+          "finding": "werden يطابق الاسم وPartizip II في النهاية؛ هذا معيار إقرار، لا مصحح لغة أو نطق."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-08-AUD-PHR-01",
+      "text": "Die Nachricht. Die Schlagzeile. Der Bericht. Die Redaktion. Die Zeitung. Der Radiosender. Das Interview. Die Wahl. Der Stadtrat. Die Sitzung. Die Bevölkerung. Die Webseite. Der Vorschlag. Der Einwohner. Die Einwohnerin. Veröffentlichen. Berichten über. Beantworten. Einladen. Organisieren. Bauen. Eröffnen. Senden. Übertragen.",
+      "finding": "كلمات الأصل ومقاطعه وأصواته ومساراته وحالته محفوظة؛ المراجعة نصية فقط، مع قيد صريح على تعدادMODEL، لا اعتماد صوتي جديد.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR"
+      ],
+      "items": [
+        {
+          "text": "Die Nachricht.",
+          "finding": "خبر مفرد Nachricht وأخبار Nachrichten؛ الأخير جمع نحوي."
+        },
+        {
+          "text": "Die Schlagzeile.",
+          "finding": "Schlagzeile العنوان الرئيسي؛ مؤنث وجمعه Schlagzeilen."
+        },
+        {
+          "text": "Der Bericht.",
+          "finding": "Bericht تقرير؛ مذكر وجمعه Berichte، فلا يخلط بالخبر المفرد."
+        },
+        {
+          "text": "Die Redaktion.",
+          "finding": "Redaktion هيئة تحرير؛ مؤنث وجمعه Redaktionen، لا شخص معين."
+        },
+        {
+          "text": "Die Zeitung.",
+          "finding": "Zeitung صحيفة؛ مؤنث وجمعه Zeitungen، وليست محطة إذاعة."
+        },
+        {
+          "text": "Der Radiosender.",
+          "finding": "Radiosender محطة إذاعة؛ الجمع بالصيغة نفسها، وليس شخصًا بالضرورة."
+        },
+        {
+          "text": "Das Interview.",
+          "finding": "Interview مقابلة؛ محايد وجمعه Interviews."
+        },
+        {
+          "text": "Die Wahl.",
+          "finding": "Wahl عملية انتخاب هنا، وقد تعني اختيارًا؛ الجمع Wahlen."
+        },
+        {
+          "text": "Der Stadtrat.",
+          "finding": "Stadtrat مجلس المدينة هنا، وله أيضًا معنى عضو مجلس بحسب السياق."
+        },
+        {
+          "text": "Die Sitzung.",
+          "finding": "Sitzung جلسة؛ الجمع Sitzungen، وorganisiert لا تثبت أنها انعقدت فعلًا."
+        },
+        {
+          "text": "Die Bevölkerung.",
+          "finding": "Bevölkerung السكان؛ اسم جمعي مفرد نحويًا، لا رأس عبارة Fragen aus der Bevölkerung."
+        },
+        {
+          "text": "Die Webseite.",
+          "finding": "Webseite صفحة ويب، وجمعها Webseiten؛ صُححت مساواتها دائمًا بموقع كامل."
+        },
+        {
+          "text": "Der Vorschlag.",
+          "finding": "Vorschlag اقتراح وجمعه Vorschläge؛ جمع الاقتراح لا يعني قبوله."
+        },
+        {
+          "text": "Der Einwohner.",
+          "finding": "Einwohner اسم مذكر للساكن؛ لا جنسية أو حق اقتراع مستنتج."
+        },
+        {
+          "text": "Die Einwohnerin.",
+          "finding": "Einwohnerin اسم مؤنث للساكنة؛ الجمع في الجدول."
+        },
+        {
+          "text": "Veröffentlichen.",
+          "finding": "veröffentlichen ينشر؛ veröffentlicht حاضر أو Partizip II بحسب البناء."
+        },
+        {
+          "text": "Berichten über.",
+          "finding": "حُفظ über في التصريف؛ berichten über يقدم تقريرًا عن موضوع."
+        },
+        {
+          "text": "Beantworten.",
+          "finding": "beantworten يجيب عن؛ beantwortet بلا ge في Partizip II."
+        },
+        {
+          "text": "Einladen.",
+          "finding": "einladen يدعو؛ lädt ein منفصل، وPartizip II هو eingeladen."
+        },
+        {
+          "text": "Organisieren.",
+          "finding": "organisieren ينظم؛ organisiert دون ge مع -ieren."
+        },
+        {
+          "text": "Bauen.",
+          "finding": "bauen يبني؛ gebaut صيغة الحدث، لا مجرد تخطيطه."
+        },
+        {
+          "text": "Eröffnen.",
+          "finding": "eröffnen يفتتح؛ eröffnet بلا ge، وهو الحدث المرتبط بالخط."
+        },
+        {
+          "text": "Senden.",
+          "finding": "senden يبث أو يرسل؛ gesendet للبث هنا دون تعميم على كل المعاني واللهجات."
+        },
+        {
+          "text": "Übertragen.",
+          "finding": "übertragen ينقل أو يبث هنا؛ überträgt حاضر وübertragen صيغة Partizip II غير منفصلة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-08-AUD-MODEL-01",
+      "text": "Ich werde. Du wirst. Er, sie und es wird. Wir werden. Ihr werdet. Sie werden. Der Bericht wird veröffentlicht. Die Nachrichten werden um acht Uhr gesendet. Ein Interview wird im Radio gesendet. Die Zeitung berichtet über die Wahl. Die Zeitung veröffentlicht einen Bericht. Ein Bericht wird veröffentlicht. Heute wird eine Sitzung übertragen. Der Bericht wird veröffentlicht. Die Nachrichten werden gesendet. Die Einwohner werden eingeladen. Die Fragen werden beantwortet.",
+      "finding": "كلمات الأصل ومقاطعه وأصواته ومساراته وحالته محفوظة؛ المراجعة نصية فقط، مع قيد صريح على تعدادMODEL، لا اعتماد صوتي جديد.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR"
+      ],
+      "items": [
+        {
+          "text": "Ich werde.",
+          "finding": "Ich werde سرد تصريف، وليس جملة مجهول كاملة."
+        },
+        {
+          "text": "Du wirst.",
+          "finding": "Du wirst سرد تصريف يختلف عن wird."
+        },
+        {
+          "text": "Er, sie und es wird.",
+          "finding": "Er, sie und es wird تعداد ملتبس؛ ليس جملة صحيحة بفاعل مركب. التصحيح المكتوب: Er wird. Sie wird. Es wird. لم يتغير الصوت أو التفريغ ولم يُستمع إليهما.",
+          "issue": "ambiguous_pronoun_list_preserved_with_written_correction"
+        },
+        {
+          "text": "Wir werden.",
+          "finding": "Wir werden سرد صيغة الجمع."
+        },
+        {
+          "text": "Ihr werdet.",
+          "finding": "Ihr werdet سرد صيغة المخاطبين."
+        },
+        {
+          "text": "Sie werden.",
+          "finding": "Sie werden للجمع أو الاحترام، لا الأنثى المفردة."
+        },
+        {
+          "text": "Der Bericht wird veröffentlicht.",
+          "finding": "Bericht مفرد مع wird وveröffentlicht؛ لا يذكر المنفذ."
+        },
+        {
+          "text": "Die Nachrichten werden um acht Uhr gesendet.",
+          "finding": "Nachrichten جمع مع werden وgesendet؛ الثامنة موعد البث."
+        },
+        {
+          "text": "Ein Interview wird im Radio gesendet.",
+          "finding": "Interview مفرد محايد مع wird؛ im Radio وسيلة البث."
+        },
+        {
+          "text": "Die Zeitung berichtet über die Wahl.",
+          "finding": "معلوم عن الانتخاب؛ über متعلق بالفعل berichtet، ولا werden هنا."
+        },
+        {
+          "text": "Die Zeitung veröffentlicht einen Bericht.",
+          "finding": "معلوم: الصحيفة تنشر einen Bericht في النصب."
+        },
+        {
+          "text": "Ein Bericht wird veröffentlicht.",
+          "finding": "مجهول: Ein Bericht في الرفع مع wird؛ لا تغيير التنكير إلى التعريف."
+        },
+        {
+          "text": "Heute wird eine Sitzung übertragen.",
+          "finding": "Heute في البداية وwird بعده؛ eine Sitzung مفرد وübertragen صيغة البث."
+        },
+        {
+          "text": "Der Bericht wird veröffentlicht.",
+          "finding": "den Bericht صار Der Bericht مع حفظ التعريف وحذف الصحيفة؛ wird veröffentlicht."
+        },
+        {
+          "text": "Die Nachrichten werden gesendet.",
+          "finding": "جمع الأخبار محفوظ وحُذف Radiosender؛ werden gesendet للبث."
+        },
+        {
+          "text": "Die Einwohner werden eingeladen.",
+          "finding": "جمع السكان محفوظ وحُذفت Die Stadt؛ eingeladen لا einladen، والأداء كتابة فقط."
+        },
+        {
+          "text": "Die Fragen werden beantwortet.",
+          "finding": "الأسئلة جمع مع werden وbeantwortet؛ يطابق المساعدة وبند التحويل الرابع."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-02",
+        "voice-02",
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-08-AUD-READ-01",
+      "text": "In der Stadt Linden wird am Mittwoch eine Sitzung des Stadtrats organisiert. Ein neuer Platz im Zentrum wird geplant. Die Sitzung wird im Internet übertragen. Fragen aus der Bevölkerung werden beantwortet. Am Ende werden mehrere Vorschläge gesammelt. Die Informationen werden am nächsten Tag auf der Webseite der Stadt veröffentlicht.",
+      "finding": "كلمات الأصل ومقاطعه وأصواته ومساراته وحالته محفوظة؛ المراجعة نصية فقط، مع قيد صريح على تعدادMODEL، لا اعتماد صوتي جديد.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR"
+      ],
+      "items": [
+        {
+          "text": "In der Stadt Linden wird am Mittwoch eine Sitzung des Stadtrats organisiert.",
+          "finding": "تنظيم جلسة المجلس الأربعاء في Linden؛ خبر خيالي لا يسمي المنظم."
+        },
+        {
+          "text": "Ein neuer Platz im Zentrum wird geplant.",
+          "finding": "تخطيط ساحة جديدة في الوسط؛ Ein neuer Platz مرفوع، لا einen، ولا إثبات للبناء."
+        },
+        {
+          "text": "Die Sitzung wird im Internet übertragen.",
+          "finding": "النقل عبر الإنترنت صريح؛ لا يستنتج انحصار البث فيه دون نص."
+        },
+        {
+          "text": "Fragen aus der Bevölkerung werden beantwortet.",
+          "finding": "الأسئلة من السكان هي المسند إليه الجمع مع werden؛ لا نفترض أن السكان يجيبون."
+        },
+        {
+          "text": "Am Ende werden mehrere Vorschläge gesammelt.",
+          "finding": "تُجمع عدة اقتراحات في النهاية؛ mehrere ليس عددًا دقيقًا، ولا يفيد ذلك الموافقة عليها."
+        },
+        {
+          "text": "Die Informationen werden am nächsten Tag auf der Webseite der Stadt veröffentlicht.",
+          "finding": "تنشر المعلومات في اليوم التالي على صفحة المدينة؛ جمع Informationen مع werden."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-08-AUD-LST-01",
+      "text": "In den Nachrichten geht es heute um eine neue Buslinie. Die Buslinie wird im Herbst eröffnet. Zwei Haltestellen werden gebaut. Eine Informationsveranstaltung wird am Freitag organisiert. Die Einladung wird auf der Internetseite der Stadt veröffentlicht.",
+      "finding": "كلمات الأصل ومقاطعه وأصواته ومساراته وحالته محفوظة؛ المراجعة نصية فقط، مع قيد صريح على تعدادMODEL، لا اعتماد صوتي جديد.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "FUTUR"
+      ],
+      "items": [
+        {
+          "text": "In den Nachrichten geht es heute um eine neue Buslinie.",
+          "finding": "موضوع الأخبار خط جديد؛ In den Nachrichten geht es … ليست صيغة مجهول."
+        },
+        {
+          "text": "Die Buslinie wird im Herbst eröffnet.",
+          "finding": "افتتاح الخط في الخريف؛ صيغة مضارع مع سياق زمني، لا قاعدة أن werden تعني المستقبل."
+        },
+        {
+          "text": "Zwei Haltestellen werden gebaut.",
+          "finding": "محطتا توقف مذكورتان؛ عدد اثنين وجمع werden، لا محطتا قطار مفترضتان."
+        },
+        {
+          "text": "Eine Informationsveranstaltung wird am Freitag organisiert.",
+          "finding": "فعالية إعلامية تنظم الجمعة؛ مفرد مع wird، لا جلسة الأربعاء في القراءة."
+        },
+        {
+          "text": "Die Einladung wird auf der Internetseite der Stadt veröffentlicht.",
+          "finding": "الدعوة على صفحة المدينة؛ لا وقت نشر أو إثبات أنها صفحة Linden."
+        }
+      ],
+      "voiceIds": [
+        "voice-03",
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-08-media-news-passive.md": "30044c6016252e0f8fe7875f2503447924a01195e9292bda56124ad7bcea5e80",
+    "content/A2/lesson-08-media-news-passive.assessment.json": "781462a4d1e1f099652b7ee01f353aa18d54fb0149d7684295c096a2320839ab"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-08-AUD-PHR-01": "7d33ebbb197fb04bf036bd269bf5fb48e9332bc230921469280d1e71ec314cf9",
+    "DL-A2-08-AUD-MODEL-01": "35f21deb21ebbe6124b3aad5b6a91ea1e050e3b7da813d94f81a32eacbf6be34",
+    "DL-A2-08-AUD-READ-01": "dc352d9bf9db99116b9c85838bec57987d66ed2ac50607bda88ecd54dea32a05",
+    "DL-A2-08-AUD-LST-01": "ccbe1efa91684734753bf9e54ffbf744ca6968b4d92495f8ff7a036f567c9f79"
+  },
+  "audioTextIssues": [
+    {
+      "assetId": "DL-A2-08-AUD-MODEL-01",
+      "segment": "DL-A2-08-AUD-MODEL-01-01.mp3",
+      "text": "Er, sie und es wird.",
+      "issue": "ambiguous pronoun-list wording; not a valid coordinated-subject sentence",
+      "writtenMitigation": "helper-07 and the six-row inflection table; Er wird. Sie wird. Es wird.",
+      "audioChanged": false,
+      "transcriptChanged": false,
+      "acousticReviewed": false,
+      "newApproval": false,
+      "status": "recorded audio/text issue remains; explicit written correction supplied"
+    }
+  ],
+  "preservation": {
+    "baseline": "bc29869235813d775be19465a22fd19d1ba8a1db",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-08-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-08-AUD-MODEL-01",
+        "fields": [
+          "source_line",
+          "source_heading"
+        ]
+      },
+      {
+        "assetId": "DL-A2-08-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-08-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 114
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1948674,
+    "cacheVersion": "v73",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "axeScreenStates": 117,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 78,
+    "axeIncompleteNodeOccurrences": 179,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; no claim to fix historical filechooser intermittency"
+    ],
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 26
+    },
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Known MODEL text issue preserved, not repaired in recording; written correction supplied.",
+      "Self-check validates evidence bookkeeping, not language/pronunciation.",
+      "Dialogue-heading count55 is label-based, not recording count.",
+      "No human reviewer prerequisite."
+    ],
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "6bda98cdc013dc1b800cf291410d2380e2b3e3e4",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": false,
+    "remoteUiTested": false
+  },
+  "campaign": {
+    "reviewedLessons": 25,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 28,
+    "next": "CR27/A2.9"
+  }
+}
