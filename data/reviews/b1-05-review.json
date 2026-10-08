@@ -1843,7 +1843,7 @@
   "delivery": {
     "implementationCommit": "063068653f5ed1abc5498c325a9770bd15b13a3f",
     "branch": "arena/01a1036f-deutschlern",
-    "lastQueriedPrHead": "063068653f5ed1abc5498c325a9770bd15b13a3f",
+    "lastQueriedPrHead": "4d4a10edac6df2c5cab9f988f670d702aa8ed22e",
     "prState": "OPEN",
     "mergedAt": null,
     "implementationDeployment": "success",
@@ -1851,6 +1851,11 @@
     "implementationPreviewUrl": "https://deutschlern-fg3clft8i-balinader-2671s-projects.vercel.app",
     "remoteUiTested": false,
     "productionTested": false,
-    "reportCommit": "pending immediate checked push; resolve by title Record CR35 granular B1.5 review and cumulative checks"
+    "reportCommit": "4d4a10edac6df2c5cab9f988f670d702aa8ed22e",
+    "reportPushed": true,
+    "reportHeadMatchedOrigin": true,
+    "reportDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "reportDeployments": [],
+    "receiptCommit": "Resolve by title Record CR35 delivery receipt; receipt deployment not queried."
   }
 }
