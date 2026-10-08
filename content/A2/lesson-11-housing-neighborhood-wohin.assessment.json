@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a2-11-v1",
+    "version": "a2-11-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+      "CR29: تقييد Wo/Wohin بحروف الجر المتغيرة في الاستعمال المكاني؛ النشاط داخل المكان لا يفرض Akkusativ، وzu مع وجهة تبقى Dativ. دعم الأفعال والمفعول والمصدر وhängen.",
+      "Q10→T02؛ أزيلت الإشارة الخاطئة إلى الجملة الأولى في شرحه. أضيف بند محطة الترام T05.5 ليطابق Q07؛ قيدت بدايات T04 وأضيف بنك T06. الخيارات الثلاثون والمفاتيح و80% محفوظة.",
+      "P01/T08 أربع جمل مع الجهر عن موضعين وعمليتي وضع؛ P02/T07ب أربع جمل عن جوار خيالي وطلب، كتابة فقط. المصدر والمعايير والنموذجان متطابقة، ولا عنوان حقيقي أو نقل أثاث أو إرسال شكوى. الأصول والأصوات محفوظة دون استماع أو توليد أو اعتماد جديد."
     ]
   },
   "quiz": [
@@ -37,7 +37,7 @@
         "Wann?"
       ],
       "answerIndex": 0,
-      "explanation": "Wo يسأل عن مكان ثابت."
+      "explanation": "Wo يسأل عن موضع الكتاب في هذا المثال؛ لا نحكم بأن كل نشاط داخل مكان يجب أن يكون ساكنًا."
     },
     {
       "id": "DL-A2-11-Q02",
@@ -58,7 +58,7 @@
         "das"
       ],
       "answerIndex": 1,
-      "explanation": "المكان الثابت مع Wo يأخذ Dativ: auf dem Tisch."
+      "explanation": "auf هنا تصف موضع الكتاب، وهي من حروف الجر المتغيرة؛ لذلك نستخدم Dativ للمذكر: auf dem Tisch. لا نعمم ذلك على كل حرف جر."
     },
     {
       "id": "DL-A2-11-Q03",
@@ -79,7 +79,7 @@
         "den"
       ],
       "answerIndex": 2,
-      "explanation": "الانتقال إلى مكان مع Wohin يأخذ Akkusativ: auf den Tisch."
+      "explanation": "auf هنا تحدد وجهة وضع الكتاب، فتأتي مع Akkusativ للمذكر: auf den Tisch. ليست الحركة وحدها قاعدة لكل حرف جر."
     },
     {
       "id": "DL-A2-11-Q04",
@@ -121,7 +121,7 @@
         "Ich stehe an den Schrank."
       ],
       "answerIndex": 0,
-      "explanation": "stellen يصف وضع الشيء في مكان؛ an die Wand هنا حركة وAkkusativ."
+      "explanation": "stellen يصف وضع الخزانة؛ den Schrank مفعول به، وan die Wand عبارة وجهة في Akkusativ مع حرف جر متغير."
     },
     {
       "id": "DL-A2-11-Q06",
@@ -210,7 +210,7 @@
     {
       "id": "DL-A2-11-Q10",
       "sourceTaskIds": [
-        "DL-A2-11-T08"
+        "DL-A2-11-T02"
       ],
       "objectiveIds": [
         "DL-A2-11-G01"
@@ -226,7 +226,7 @@
         "Ich lege das Buch auf den Tisch."
       ],
       "answerIndex": 1,
-      "explanation": "في الجملة الأولى الشيء ثابت، وبعد neben يأتي Dativ: dem Bett."
+      "explanation": "المثال الصحيح هو Die Lampe steht neben dem Bett. يصف موضع المصباح؛ neben هنا مع Dativ للمحايد: dem Bett. المثالان الآخران يصفان وجهة وضع شيء."
     }
   ],
   "performanceTasks": [
@@ -242,11 +242,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "صف غرفة بأربع جمل: جملتان عن أماكن ثابتة باستخدام Wo وDativ، وجملتان عن وضع أشياء باستخدام Wohin وAkkusativ. اقرأ الوصف بصوت واضح.",
+      "prompt": "اكتب أربع جمل خبرية عن غرفة متخيلة ثم اقرأها جهرًا: الجملة1 تصف موضع أثاث بـstehen وعبارة مكان في Dativ؛ الجملة2 تصف موضع كتاب بـliegen وعبارة مكان في Dativ؛ الجملة3 تبدأ بـIch stelle وتذكر غرضًا ووجهة وضعه في Akkusativ؛ الجملة4 تبدأ بـIch lege وتذكر غرضًا آخر ووجهة وضعه في Akkusativ. اختر حروف الجر من قائمة الدرس. Wo وWohin سؤالان يساعدانك على اختيار المعنى، ولا يلزم إضافتهما كجملتين إلى جوابك. لا نقل أثاث فعلي أو عنوان شخصي أو تسجيل مطلوب.",
       "criteria": {
-        "taskCompletion": "تتضمن الاستجابة أربعة أوصاف مكانية، نصفها ثابت ونصفها حركة.",
-        "meaningClarity": "يمكن تحديد مكان كل غرض وما إذا كان ثابتًا أو منقولًا.",
-        "targetSkill": "يفرق بين Dativ مع Wo وAkkusativ مع Wohin، ويختار فعلًا مناسبًا مثل stehen/stellen."
+        "taskCompletion": "أربع جمل خبرية بالترتيب: أثاث مع stehen، وكتاب مع liegen، ثم غرض مع Ich stelle وآخر مع Ich lege؛ قرأت الوصف جهرًا.",
+        "meaningClarity": "يمكن فهم موضع الغرض في الجملتين الأوليين ووجهة وضعه في الأخيرتين؛ الغرفة خيالية ولا يتطلب الجواب عنوانًا أو نقلًا فعليًا.",
+        "targetSkill": "مع حروف الدرس المتغيرة: عبارتا مكان في Dativ وعبارتا وجهة في Akkusativ؛ الفاعل والمفعول وفعل الموضع أو الوضع مناسبة."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,7 +256,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 50,
+        "minimumResponseCharacters": 120,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -264,20 +264,19 @@
     {
       "id": "DL-A2-11-P02",
       "sourceTaskIds": [
-        "DL-A2-11-T08"
+        "DL-A2-11-T07"
       ],
       "objectiveIds": [
         "DL-A2-11-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب ثلاث جمل عن حيّك أو غرفة متخيّلة، ثم أضف طلبًا مهذبًا إلى جار أو زميل. اقرأ الجمل والطلب بصوت مرتفع.",
+      "prompt": "اكتب أربع جمل لموقف جوار خيالي، كتابة فقط: الجملة1 تقول إنك تسكن وسط المدينة؛ الجملة2 تحدد الساحة بجانب المدخل؛ الجملة3 تذكر أن الساحة صاخبة اليوم؛ الجملة4 تطلب من جار خفض الصوت قليلًا بـKönnten Sie bitte etwas leiser sein? استخدم Dativ للمواقع مع in وneben. لا تضف أن الجار وافق أو أن مشكلة الضجيج انتهت. لا جهر أو شريك أو إرسال شكوى أو معلومات سكن حقيقية مطلوبة.",
       "criteria": {
-        "taskCompletion": "تذكر الاستجابة مكانًا أو حيًا وتتضمن طلبًا مهذبًا.",
-        "meaningClarity": "تتضح المواقع والطلب المقصود.",
-        "targetSkill": "يستخدم تركيبًا مكانيًا صحيحًا ويصوغ الطلب بـKönnten Sie bitte …?"
+        "taskCompletion": "أربع جمل: سكن في وسط المدينة، وساحة بجانب المدخل، وضجيج فيها اليوم، ثم طلب خفض الصوت؛ كتابة فقط.",
+        "meaningClarity": "المكان والمشكلة والطلب واضحة في موقف خيالي؛ لا ادعاء موافقة الجار أو انتهاء الضجيج ولا بيانات سكن حقيقية.",
+        "targetSkill": "عبارات المواقع مع in/neben في Dativ، وطلب يبدأ بـKönnten Sie مع bitte etwas leiser وsein في النهاية."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,8 +286,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
-        "speakAloud": true,
+        "minimumResponseCharacters": 110,
+        "speakAloud": false,
         "audioRequired": false
       }
     }

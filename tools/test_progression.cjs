@@ -1060,6 +1060,39 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain A2.10 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR29: spoken room description vs written neighbor request, and A2.11 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'a2-11-housing-neighborhood-wohin').assessment.version, 'a2-11-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('a2-11-housing-neighborhood-wohin');
+    const responses = ["Das Sofa steht an der Wand. Das Buch liegt auf dem Tisch. Ich stelle den Sessel neben das Sofa. Ich lege die Zeitung auf den Nachttisch.", "Ich wohne in der Innenstadt. Der Innenhof ist neben dem Eingang. Heute ist es im Innenhof laut. Könnten Sie bitte etwas leiser sein?"];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===0};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===1 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'A2.11 models fit thresholds; P02 is writing only, P01 needs speech and all checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('a2-11-housing-neighborhood-wohin').performanceTasks[1]], 'lesson:a2-11-housing-neighborhood-wohin', 'a2-11-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('a2-11-housing-neighborhood-wohin');
+      const next=findLesson('a2-12-holidays-festivals-culture');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'a2-11-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'a2-11-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='a2-11-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'a2-11-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain A2.11 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
