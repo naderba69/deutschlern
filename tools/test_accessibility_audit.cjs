@@ -80,6 +80,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.3-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.3-practical-form-fixture', width);
+  // CR10: time/separation examples and written-day versus spoken-interview tasks.
+  await page.evaluate(() => openLesson('a1-04-daily-routine-time'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.4-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.4-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-04-v1",
+    "version": "a1-04-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,10 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR10: مراجعة فردية نصية بالمراجع في data/reviews/a1-04-review.json؛ ليست شهادة لغة أو نطق.",
+      "T08/P01 كتابة5–7جمل وثلاث عبارات وقت وفعلين منفصلين مختلفين؛ T09/P02 ثلاثة أسئلة وأجوبتها وتلخيص جوابين بجملتين مع أداء فردي.",
+      "صُحح مفتاح T06 وأضيف تدريب Frühstück؛ ربط Q07/Q08/Q09/Q10 بـT04/T09/T06/T03؛ المفاتيح وعتبة80% ثابتة.",
+      "القراءة والاستماع موجودان: أصلان/مقطعان محفوظان دون تعديل أو استماع أو اعتماد جديد. التقييم لا يتطلب الصوت."
     ]
   },
   "quiz": [
@@ -114,14 +115,14 @@
         "الأفعال المنفصلة",
         "اختيار محدد"
       ],
-      "prompt": "اختر الجملة الصحيحة مع aufstehen.",
+      "prompt": "اختر الجملة الخبرية التي تتبع نمط الدرس: الفعل المصرف ثانيًا والبادئة في نهاية الجملة.",
       "options": [
         "Ich stehe früh auf.",
         "Ich aufstehe früh.",
         "Ich stehe auf früh."
       ],
       "answerIndex": 0,
-      "explanation": "الفعل المصرف stehe في المرتبة الثانية، والبادئة auf في النهاية."
+      "explanation": "في نمط الجملة البسيطة هنا: Ich stehe früh auf. لا نُبقي البادئة متصلة كما في Ich aufstehe، ولا نضع früh بعد البادئة في هذا النمط التدريبي."
     },
     {
       "id": "DL-A1-04-Q06",
@@ -147,7 +148,7 @@
     {
       "id": "DL-A1-04-Q07",
       "sourceTaskIds": [
-        "DL-A1-04-T03"
+        "DL-A1-04-T04"
       ],
       "objectiveIds": [
         "DL-A1-04-G01"
@@ -156,19 +157,19 @@
         "الأفعال المنفصلة",
         "اختيار محدد"
       ],
-      "prompt": "أكمل: Ich ___ heute meine Schwester ___.",
+      "prompt": "أكمل بصيغة ich المكتوبة الكاملة ذات النهاية -e كما في النموذج: Ich ___ heute meine Schwester ___.",
       "options": [
         "anrufe … an",
         "rufe … an",
         "ruf … an"
       ],
       "answerIndex": 1,
-      "explanation": "anrufen يصبح rufe … an مع ich."
+      "explanation": "الصيغة الكاملة المدربة هي rufe … an. قد تسمع Ich ruf … an بحذف e في الكلام؛ المطلوب هنا الصيغة الكاملة، فلا نعمم أن ruf مستحيلة في كل سياق."
     },
     {
       "id": "DL-A1-04-Q08",
       "sourceTaskIds": [
-        "DL-A1-04-T05"
+        "DL-A1-04-T09"
       ],
       "objectiveIds": [
         "DL-A1-04-G01"
@@ -189,7 +190,7 @@
     {
       "id": "DL-A1-04-Q09",
       "sourceTaskIds": [
-        "DL-A1-04-T05"
+        "DL-A1-04-T06"
       ],
       "objectiveIds": [
         "DL-A1-04-G01"
@@ -210,7 +211,7 @@
     {
       "id": "DL-A1-04-Q10",
       "sourceTaskIds": [
-        "DL-A1-04-T08"
+        "DL-A1-04-T03"
       ],
       "objectiveIds": [
         "DL-A1-04-G01"
@@ -239,14 +240,13 @@
         "DL-A1-04-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب أربع جمل تصف يومًا عاديًا: وقت الاستيقاظ، وموعد نشاط، وفترة عمل أو دراسة، ونشاطًا مسائيًا. اقرأها بصوت مرتفع.",
+      "prompt": "اكتب 5–7 جمل بالألمانية عن يوم عادي حقيقي أو خيالي، مع ثلاث عبارات وقت على الأقل وفعلين منفصلين مختلفين من aufstehen/einkaufen/anrufen. حافظ على موقع الفعل المصرف وانفصال البادئة في الجمل البسيطة. هذه مهمة كتابة؛ لا يلزم قراءتها بصوت مرتفع أو إدخال معلومات شخصية حقيقية.",
       "criteria": {
-        "taskCompletion": "يذكر أربع أنشطة أو أوقات من اليوم.",
-        "meaningClarity": "يستطيع القارئ ترتيب أحداث اليوم وفهم أوقاتها.",
-        "targetSkill": "يستخدم am أو um على نحو مناسب ويفصل بادئة فعل منفصل في نهاية الجملة."
+        "taskCompletion": "كتبت 5–7 جمل عن يوم واحد، مع ثلاث عبارات وقت على الأقل وفعلين منفصلين مختلفين.",
+        "meaningClarity": "أحداث اليوم وأوقاتها مفهومة ومتسقة، وأوضح فترة اليوم إذا التبس الوقت.",
+        "targetSkill": "أستعمل عبارات الوقت مثل am/um/von … bis …، وأضع الفعل المصرف ثانيًا والبادئة المنفصلة في النهاية في الجمل البسيطة."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,8 +256,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
-        "speakAloud": true,
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
         "audioRequired": false
       }
     },
@@ -273,11 +273,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "احكِ بصوت مرتفع عن يومك المعتاد باستخدام ثلاث جمل على الأقل. اكتب الجمل أولًا إذا كنت تتدرّب وحدك.",
+      "prompt": "اكتب الأسئلة الثلاثة: Wann stehst du auf? Wann lernst du Deutsch? Was machst du am Abend? وأجب عن كل سؤال بجملة بدور شخصية خيالية اسمها Sami. ثم لخّص جوابي السؤالين الأول والثاني بجملتين تبدأان بـSami ثم Er. اقرأ الأسئلة والأجوبة والتلخيص بصوت مرتفع، وأدّ الدورين وحدك إن لم يوجد شريك؛ لا يلزم تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "يقدّم ثلاث جمل على الأقل عن روتين يومي.",
-        "meaningClarity": "الجمل مفهومة وترتيب أحداثها واضح.",
-        "targetSkill": "يضع الفعل المصرف في موضعه ويفصل بادئة فعل واحد مثل aufstehen أو einkaufen."
+        "taskCompletion": "كتبت ثلاثة أسئلة وثلاثة أجوبة وتلخيصًا بجملتين لجوابي السؤالين الأول والثاني، وقرأت جميع الأجزاء بصوت مرتفع.",
+        "meaningClarity": "الأجوبة تناسب الأسئلة، والتلخيص يحافظ على وقت النهوض ووقت تعلم الألمانية من دون اختراع معلومات مخالفة.",
+        "targetSkill": "أستعمل Wann/Was وصيغ ich في الأجوبة وSami/Er في التلخيص، مثل stehe … auf ثم steht … auf وlerne ثم lernt."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,7 +287,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 35,
+        "minimumResponseCharacters": 170,
         "speakAloud": true,
         "audioRequired": false
       }

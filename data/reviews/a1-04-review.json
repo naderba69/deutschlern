@@ -1,0 +1,1208 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-04-daily-routine-time",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-04-v2",
+  "unitCount": 123,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "G",
+      "title": "Goethe — Deutsch Online A1",
+      "url": "https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf",
+      "scope": "قرئ الجزء1 فقط في CR10: Kapitel4 am/um/von…bis وأوقات اليوم والأسبوع، وKapitel5/6 ترتيب الجملة. أخطاء الاستخراج du fahrst/Wann fährt du لم تعتمد؛ لا مراجعة PDF كله ولا نسبة oft=70% حقيقة معجمية."
+    },
+    {
+      "id": "T",
+      "title": "Lingolia — Uhrzeit",
+      "url": "https://deutsch.lingolia.com/de/wortschatz/zahlen-datum-uhrzeit/uhrzeit",
+      "scope": "كامل: الساعة ثم Uhr ثم الدقائق، وصيغة12ساعة اليومية/24ساعة الرسمية عادة، halb للساعة التالية، وصيغ إقليمية أخرى للربع. استعملنا البنية لا نقل جدولها إلى الدرس."
+    },
+    {
+      "id": "V",
+      "title": "Lingolia — trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "كامل: an-/auf-/ein- منفصلة في التصريف، البادئة عادة في نهاية الجمل البسيطة. الأمثلة والقيود لا تعني كل جملة رئيسية V2؛ ولا يلزم تعليم Perfekt أو كل البوادئ الآن."
+    },
+    {
+      "id": "U",
+      "title": "Duden — aufstehen",
+      "url": "https://www.duden.de/rechtschreibung/aufstehen",
+      "scope": "كامل: في سياق الروتين ترك السرير بعد النوم، لا مجرد الاستيقاظ؛ للكلمة أيضًا القيام من المقعد وغيرها."
+    },
+    {
+      "id": "F",
+      "title": "Duden — frühstücken",
+      "url": "https://www.duden.de/rechtschreibung/fruehstuecken",
+      "scope": "كامل: تناول الفطور، frühstückt/frühstückte/gefrühstückt. ليس كل ظهور früh بادئة منفصلة."
+    },
+    {
+      "id": "A",
+      "title": "Duden — anrufen",
+      "url": "https://www.duden.de/rechtschreibung/anrufen",
+      "scope": "كامل: الاتصال الهاتفي/المرئي وأمثلة المفعول المباشر؛ يوجد استعمال Dativ إقليمي عامي فلا نطلق نفيه. الدرس يركز meine Schwester/Mutter."
+    },
+    {
+      "id": "S",
+      "title": "Duden — schlafen",
+      "url": "https://www.duden.de/rechtschreibung/schlafen",
+      "scope": "كامل: حالة النوم، du schläfst/das Kind schläft، وschlafen gehen. لا استنتاج أن Um elf Uhr schlafe ich تعني أن النوم يبدأ حينها."
+    },
+    {
+      "id": "R",
+      "title": "Netzverb — anrufen/Präsens",
+      "url": "https://www.verbformen.com/conjugation/indikativ/praesens/anrufen.htm",
+      "scope": "الجزء0: rufe/rufst/ruft/rufen/ruft/rufen مع an منفصلة. يدعم الصيغ الكاملة، لا اقتباس منه لإسقاط e في الكلام؛ ذلك تنبيه لغوي من المساعد."
+    },
+    {
+      "id": "FA",
+      "title": "Duden — fahren",
+      "url": "https://www.duden.de/rechtschreibung/fahren",
+      "scope": "الجزء0: du fährst/er fährt، انتقال بوسيلة نقل ومنها zur Arbeit. لا ادعاء قراءة بقية المدخل أو استخدامه لتدريس الماضي."
+    }
+  ],
+  "limitations": [
+    "123 وحدة مراجعة و34 بندًا أو مطلبًا متداخلًا، لا123مهارة مستقلة. صف التصريف يتضمن ثلاثة أفعال، وبند المقابلة قد يتضمن سؤالًا وجوابًا؛ العدد ليس عدد الجمل.",
+    "المراجع تدعم أحكامًا محددة، مع مراجعة المساعد لبقية اللغة. لم يُجلب مدخل مستقل لكل كلمة أو ترجمة عربية. مصدر anrufen يدعم rufe الكاملة؛ التنبيه إلى حذف e في الكلام حكم لغوي للمساعد لا اقتباس من ذلك المصدر.",
+    "التسجيلان محفوظان نصيًا وبالبصمات، دون استماع أو اعتماد جديد. ظهور النص يمنع الادعاء بقياس استماع مستقل؛ لا شهادة CEFR.",
+    "المربعات وحد الطول لا يصححان اللغة أو النطق، ولا يقيسان محادثة حقيقية أو يستلزمان مراجعًا بشريًا لمواصلة العمل."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-04-daily-routine-time.md": "8d6418581609ece7a05376a2a2ba516d7363b3b43e99a392fc9108d919d42986",
+    "content/A1/lesson-04-daily-routine-time.assessment.json": "7187d283a80a0ab68b720424ec7e90c8a3de2aa065c06e559088f5b18dcc9d78"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-04-AUD-READ-01": "e7fe5ebbd12de03119b0b4066f24e421fa88f1c93cb865c11c025ca1955722d7",
+    "DL-A1-04-AUD-LST-01": "eca890ec393592563fe136d079bb9c4a2c4f8e8cb973f74d1dd56ca79db1734d"
+  },
+  "units": [
+    {
+      "id": "scope",
+      "text": "# A1.4 — الروتين اليومي والوقت\n\n**المدة:** نحو30 دقيقة (تقدير مرن؛ يمكن تقسيم التدريب على جلستين) · **المهارات:** مفردات، قراءة، كتابة، محادثة وقواعد، واستماع اختياري\n**هدف التواصل:** أستطيع أن أصف يومي وأذكر متى أفعل الأشياء.\n\n",
+      "finding": "وقت مرن نحو 30 دقيقة ويمكن جلستان؛ الهدف وصف اليوم ووقته. لا وعد إتقان أو قياس استماع مع إظهار النص، ولا حوار مسجل في هذا الدرس.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| aufstehen | ينهض من السرير في سياق الروتين | Ich stehe früh auf. |",
+      "finding": "صُححت العربية إلى النهوض من الفراش، لا مساواة دقيقة مع الاستيقاظ؛ Ich stehe früh auf فعل منفصل.",
+      "sourceIds": [
+        "U",
+        "V"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| frühstücken | يتناول الفطور | Wir frühstücken zu Hause. |",
+      "finding": "تناول الفطور؛ Wir frühstücken zu Hause تركيب صحيح، والفعل غير منفصل.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| arbeiten | يعمل | Sie arbeitet am Vormittag. |",
+      "finding": "Sie arbeitet يحدد sie المفردة لا Sie الاحترام بسبب -t؛ يعمل قبل الظهر ولا يحدد وظيفة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| fahren | يذهب بوسيلة نقل | Ich fahre mit dem Bus zur Arbeit. |",
+      "finding": "Ich fahre mit dem Bus zur Arbeit انتقال بالحافلة؛ لا يفيد أن المتكلم يقود الحافلة.",
+      "sourceIds": [
+        "FA"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| lernen | يتعلّم/يدرس | Ich lerne am Abend Deutsch. |",
+      "finding": "Ich lerne am Abend Deutsch؛ يتعلم/يدرس الألمانية مساء، لا وظيفة مدرس.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| einkaufen | يتسوّق | Er kauft am Samstag ein. |",
+      "finding": "Er kauft am Samstag ein؛ صيغة مفرد و ein نهائية، مثال واحد لا تعريف أسبوع كامل.",
+      "sourceIds": [
+        "V"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| anrufen | يتصل هاتفيًا | Ich rufe meine Schwester an. |",
+      "finding": "Ich rufe meine Schwester an؛ أختي مفعول مباشر، الاتصال هو المعنى في سياق الروتين.",
+      "sourceIds": [
+        "A",
+        "R"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| schlafen | ينام | Das Kind schläft um zehn Uhr. |",
+      "finding": "Das Kind schläft um zehn Uhr؛ الطفل نائم عند العاشرة، لا تحديد بداية نومه ولا صباح/مساء دون سياق.",
+      "sourceIds": [
+        "S"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Vormittag | فترة الصباح قبل الظهر | am Vormittag |",
+      "finding": "der Vormittag قبل الظهر؛ am Vormittag صحيح، لا وقت بدء عددي ثابت.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| der Nachmittag | فترة بعد الظهر | am Nachmittag |",
+      "finding": "der Nachmittag بعد الظهر؛ am Nachmittag كتلة زمن لا فاعل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| der Abend | المساء | am Abend |",
+      "finding": "der Abend المساء؛ am Abend معنى Q08.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| die Pause | الاستراحة | eine Pause machen |",
+      "finding": "die Pause مؤنث؛ eine Pause machen تركيب أخذ استراحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "weekday-01",
+      "text": "**Montag** — الاثنين.",
+      "finding": "Montag الاثنين؛ الحرف الكبير صحيح.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "weekday-02",
+      "text": "**Dienstag** — الثلاثاء.",
+      "finding": "Dienstag الثلاثاء؛ يوم نص الاستماع.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "weekday-03",
+      "text": "**Mittwoch** — الأربعاء.",
+      "finding": "Mittwoch الأربعاء؛ ليس Donnerstag.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "weekday-04",
+      "text": "**Donnerstag** — الخميس.",
+      "finding": "Donnerstag الخميس.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "weekday-05",
+      "text": "**Freitag** — الجمعة.",
+      "finding": "Freitag الجمعة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "weekday-06",
+      "text": "**Samstag** — السبت.",
+      "finding": "Samstag السبت؛ الاسم المعروض في التدريب، ولا نفي للبديل Sonnabend.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "weekday-07",
+      "text": "**Sonntag** — الأحد.",
+      "finding": "Sonntag الأحد؛ ترتيب العرض ليس حكمًا ثقافيًا على عطلة البلدان.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "time-rule",
+      "text": "am Montag / um sieben Uhr / von acht bis vier",
+      "finding": "am ليوم المثال، um للساعة، von…bis لطرفي الفترة. acht→vier يفهم 8→16 عند تحديد دوام نهاري لا من الأرقام وحدها. ليست قاعدة استبعاد لكل حروف الجر الأخرى.",
+      "sourceIds": [
+        "G",
+        "T"
+      ]
+    },
+    {
+      "id": "clock-01",
+      "text": "| 7:00 | sieben Uhr |",
+      "finding": "7:00 sieben Uhr؛ اسم الساعة لا جملة تامة.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "clock-02",
+      "text": "| 8:15 | Viertel nach acht |",
+      "finding": "8:15 Viertel nach acht؛ ربع بعد الثامنة.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "clock-03",
+      "text": "| 8:30 | halb neun (الثامنة والنصف) |",
+      "finding": "8:30 halb neun؛ النصف قبل الساعة التالية لا التاسعة والنصف.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "clock-04",
+      "text": "| 8:45 | Viertel vor neun |",
+      "finding": "8:45 Viertel vor neun؛ ربع قبل التاسعة.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "clock-scope",
+      "text": "halb acht=7:30; halb sieben=6:30; acht Uhr dreißig; acht Uhr fünfzehn",
+      "finding": "أضيفت صيغ النصين، و 30/15 للبديل الرقمي. وقت 12 ساعة لا يحدد فترة اليوم؛ لا نصف للعدد 19 كما في الصيغة 24 ساعة. صيغ الربع الإقليمية لا تُخطّأ لمجرد عدم تدريسها.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "separable-rule",
+      "text": "Präsens: فعل مصرف + … + بادئة",
+      "finding": "قُيد التعميم بالجمل الخبرية البسيطة المدربة؛ السؤال بنعم/لا ليس V2، والجمل التابعة ليست موضوع اليوم. نهاية الجملة هنا نمط تدريبي لا إنكار ذيل الجملة في كل استعمال.",
+      "sourceIds": [
+        "V",
+        "G"
+      ]
+    },
+    {
+      "id": "separable-example-01",
+      "text": "**aufstehen** → Ich **stehe** um sechs Uhr **auf**.",
+      "finding": "stehe … auf مع ich، um sechs Uhr في الوسط.",
+      "sourceIds": [
+        "V"
+      ]
+    },
+    {
+      "id": "separable-example-02",
+      "text": "**einkaufen** → Wir **kaufen** am Samstag **ein**.",
+      "finding": "kaufen … ein مع wir، am Samstag كتلة وقت.",
+      "sourceIds": [
+        "V"
+      ]
+    },
+    {
+      "id": "separable-example-03",
+      "text": "**anrufen** → Ich **rufe** meine Mutter am Abend **an**.",
+      "finding": "rufe … an مع ich، meine Mutter مفعول مؤنث، am Abend وقت.",
+      "sourceIds": [
+        "V",
+        "R",
+        "A"
+      ]
+    },
+    {
+      "id": "conjugation-01",
+      "text": "| ich | stehe … auf | kaufe … ein | rufe … an |",
+      "finding": "ich: stehe/kaufe/rufe؛ النهايات-e والبوادئ auf/ein/an صحيحة.",
+      "sourceIds": [
+        "V",
+        "R"
+      ]
+    },
+    {
+      "id": "conjugation-02",
+      "text": "| du | stehst … auf | kaufst … ein | rufst … an |",
+      "finding": "du: stehst/kaufst/rufst؛ النهايات-st والبوادئ الثلاثة؛ rufst لا rufest في هذا المثال.",
+      "sourceIds": [
+        "V",
+        "R"
+      ]
+    },
+    {
+      "id": "conjugation-03",
+      "text": "| er/sie/es | steht … auf | kauft … ein | ruft … an |",
+      "finding": "er/sie/es: steht/kauft/ruft؛ النهايات-t، ولا ä في هذه الأفعال الثلاثة.",
+      "sourceIds": [
+        "V",
+        "R"
+      ]
+    },
+    {
+      "id": "conjugation-04",
+      "text": "| wir | stehen … auf | kaufen … ein | rufen … an |",
+      "finding": "wir: stehen/kaufen/rufen؛ -en مع بوادئ مستقلة.",
+      "sourceIds": [
+        "V",
+        "R"
+      ]
+    },
+    {
+      "id": "conjugation-05",
+      "text": "| ihr | steht … auf | kauft … ein | ruft … an |",
+      "finding": "ihr: steht/kauft/ruft؛ -t مع البوادئ، يطابق المفرد الثالث شكليًا لا عددًا.",
+      "sourceIds": [
+        "V",
+        "R"
+      ]
+    },
+    {
+      "id": "conjugation-06",
+      "text": "| sie/Sie | stehen … auf | kaufen … ein | rufen … an |",
+      "finding": "sie/Sie: stehen/kaufen/rufen؛ -en للجمع/الاحترام، لا sie المفرد.",
+      "sourceIds": [
+        "V",
+        "R"
+      ]
+    },
+    {
+      "id": "word-order",
+      "text": "Am Morgen: كتلة واحدة من كلمتين",
+      "finding": "أصلح توهم الكلمة الثانية؛ الفعل في الموضع الثاني والفاعل بعده عند تقديم الوقت.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "fronted-time-01",
+      "text": "Am Morgen stehe ich um sechs Uhr auf.",
+      "finding": "Am Morgen كتلة 1 و stehe موضع 2 ثم ich؛ auf نهاية.",
+      "sourceIds": [
+        "G",
+        "V"
+      ]
+    },
+    {
+      "id": "fronted-time-02",
+      "text": "Um acht Uhr beginnt der Unterricht.",
+      "finding": "Um acht Uhr كتلة 1 و beginnt موضع 2 ثم der Unterricht؛ beginnen غير منفصل رغم بدايته be-.",
+      "sourceIds": [
+        "G",
+        "V"
+      ]
+    },
+    {
+      "id": "w-question",
+      "text": "Wann stehst du auf?",
+      "finding": "Wann للاستفهام عن الوقت، stehst تصريف du، auf نهاية في السؤال المعروض. لا إسقاط du في التلخيص عن Sami.",
+      "sourceIds": [
+        "G",
+        "V"
+      ]
+    },
+    {
+      "id": "modal-limit",
+      "text": "Ich möchte meine Schwester anrufen.",
+      "finding": "قيد بمرجع الدرس السابق: مع möchte يبقى anrufen مصدرًا متصلًا. النموذج كتابة جديدة، لا تغيير لفظ في التسجيل.",
+      "sourceIds": [
+        "G",
+        "V"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "text": "**früh** — مبكرًا؛ aufstehen يعني النهوض من الفراش هنا، لا لحظة الاستيقاظ نفسها بالضرورة.",
+      "finding": "früh مبكرًا؛ لا مقارنة زمن النهوض مع شخص آخر مفروضة.",
+      "sourceIds": [
+        "U"
+      ]
+    },
+    {
+      "id": "gloss-02",
+      "text": "**zu Hause** — في البيت؛ **mit dem Bus zur Arbeit** — بالحافلة إلى العمل؛ zur = zu der.",
+      "finding": "zu Hause موقع، mit dem Bus وسيلة، zur Arbeit وجهة؛ لا يجعل المتكلم سائقًا.",
+      "sourceIds": [
+        "FA"
+      ]
+    },
+    {
+      "id": "gloss-03",
+      "text": "**am Morgen / am Vormittag / am Nachmittag / am Abend** — في الصباح / قبل الظهر / بعد الظهر / في المساء؛ ليست حدودًا زمنية ثابتة بالدقيقة.",
+      "finding": "فترات اليوم دون حدود دقيقة؛ am Abend معنى كلمة في Q08.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-04",
+      "text": "**jeden Tag / manchmal / heute** — كل يوم / أحيانًا / اليوم.",
+      "finding": "jeden Tag كل يوم، manchmal أحيانًا، heute اليوم؛ ليست manchmal كل يوم حتمًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-05",
+      "text": "**mit meiner Familie** — مع أسرتي؛ عبارة جاهزة فيها Dativ بعد mit، لا اشتقاق جدول ملكية جديد.",
+      "finding": "mit meiner Familie Dativ محفوظ كعبارة، فلا نطبق جدول الرفع mein/meine بعد mit.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-06",
+      "text": "**meine Mutter / meine Schwester** — أمي / أختي؛ مع anrufen مفعول مباشر في هذه الأمثلة.",
+      "finding": "anrufen مع مفعول الأم/الأخت هنا؛ لا حرف جر إضافي في النمط القياسي المعروض.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "gloss-07",
+      "text": "**schlafen / schlafen gehen** — يكون نائمًا / يذهب للنوم؛ Um elf Uhr schlafe ich لا تحدد وحدها لحظة بدء النوم.",
+      "finding": "schlafen حالة، schlafen gehen ذهاب للنوم؛ تفريق مهم لآخر جملة من النصين.",
+      "sourceIds": [
+        "S"
+      ]
+    },
+    {
+      "id": "gloss-08",
+      "text": "**ich schlafe / du schläfst / das Kind schläft** — صيغ النوم المستعملة؛ لاحظ ä في du وضمير الغائب المفرد، لا في ich.",
+      "finding": "schlafe/schläfst/schläft؛ راجعت الأشكال الثلاثة والحالة الصوتية المكتوبةä.",
+      "sourceIds": [
+        "S"
+      ]
+    },
+    {
+      "id": "gloss-09",
+      "text": "**ich fahre / du fährst / er fährt** — صيغ fahren، انتقال بوسيلة نقل في المثال؛ لا نفصل fahren.",
+      "finding": "fahre/fährst/fährt؛ لا نتبنى خطأ du fahrst المستخرج من Goethe.",
+      "sourceIds": [
+        "FA"
+      ]
+    },
+    {
+      "id": "gloss-10",
+      "text": "**ich frühstücke / du frühstückst / er frühstückt** — صيغ تناول الفطور؛ الفعل غير منفصل.",
+      "finding": "frühstücke/frühstückst/frühstückt؛ يمهد الجواب المضاف T06.5.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "gloss-11",
+      "text": "**ich lerne / er lernt** — أتعلم / يتعلم؛ تفيدان في تحويل الجواب إلى تلخيص.",
+      "finding": "lerne/lernt لتحويل جواب ich إلى Er في التلخيص.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "text": "**eine Pause machen** — يأخذ استراحة؛ **im Supermarkt** — في السوبرماركت.",
+      "finding": "eine Pause machen و im Supermarkt؛ نفس مفردات الاستماع والتدريب.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-13",
+      "text": "**beginnen / der Unterricht / der Kurs / der Film** — يبدأ / الدرس أو التدريس / الدورة / الفيلم؛ beginnt يعني يبدأ مع المفرد.",
+      "finding": "beginnt مع Unterricht/Kurs/Film المفرد؛ شروح الكلمات حتى لا يفترض السؤال لفظًا غير مفسر.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-14",
+      "text": "**Wann? / Mit wem? / Von wann bis wann?** — متى؟ / مع من؟ / من أي وقت إلى أي وقت؟",
+      "finding": "Wann وقت، Mit wem مرافق، Von wann bis wann طرفا فترة؛ السؤال لا يحتاج تاريخ ميلاد حقيقي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-15",
+      "text": "**die Person → sie / ihre Schwester** — الشخص → الضمير المؤنث نحويًا / أخته أو أختها؛ لا نستنتج الجنس الحقيقي من تأنيث Person.",
+      "finding": "sie/ihre بسبب مرجع die Person؛ لا نحكم على جنس الراوي من النص أو الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-scope",
+      "text": "وصف يوم عادي، منفصل عن جدول الثلاثاء",
+      "finding": "الاختلاف في أوقات النهوض والعمل لا تناقض؛ سياق الترتيب يرجح الفترة لكن الجواب ينقل ألفاظ النص لا يفترض 24 ساعة مفروضة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Ich stehe jeden Tag um sieben Uhr auf.",
+      "finding": "كل يوم um sieben Uhr للنهوض؛ لا ادعاء لحظة الاستيقاظ.",
+      "sourceIds": [
+        "U"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": " Um halb acht frühstücke ich mit meiner Familie.",
+      "finding": "halb acht=7:30، مع الأسرة؛ لا وحده.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": " Von neun bis drei arbeite ich.",
+      "finding": "من neun إلى drei، في سياق الدوام المعتاد 9–15 لا 3–9.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": " Am Nachmittag kaufe ich manchmal ein.",
+      "finding": "manchmal تسوق أحيانًا بعد الظهر؛ لا ضمان تسوق يومي.",
+      "sourceIds": [
+        "V"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": " Um sechs Uhr lerne ich Deutsch.",
+      "finding": "تعلم الألمانية um sechs Uhr؛ الجواب الذي سقط من مفتاح T06 هو sechs.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": " Am Abend rufe ich meine Schwester an.",
+      "finding": "الاتصال بالأخت مساء؛ لا انتقال لضمير du عند إعادة السرد.",
+      "sourceIds": [
+        "A",
+        "R"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": " Um elf Uhr schlafe ich.",
+      "finding": "schlafe um elf Uhr حالة النوم؛ ليست عبارة gehe schlafen، فلا نغير التسجيل لتوحيدهما.",
+      "sourceIds": [
+        "S"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wann steht die Person auf?",
+      "finding": "Um sieben Uhr؛ لا halfseven من النص الآخر.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Mit wem frühstückt sie?",
+      "finding": "Mit ihrer Familie؛ ضمير الملكية راجع إلى Person، و Dativ بعد mit، نموذج وليس استنتاج جنس.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Von wann bis wann arbeitet sie?",
+      "finding": "Von neun bis drei؛ الطرفان لا عنصر واحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was macht sie um sechs Uhr?",
+      "finding": "Sie lernt Deutsch؛ النشاط المطلوب لا اسم الوقت وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Wann ruft sie ihre Schwester an?",
+      "finding": "Am Abend؛ الاتصال بالأخت موضح بالفعل rufe…an.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-scope",
+      "text": "نص الثلاثاء متاح بالصوت والتفريغ",
+      "finding": "أُزيل وصفه كصوت مؤجل. طلب الاستماع قبل النظر اختياري تجريبي لا منع تقني لظهور النص ولا شهادة سمعية. لا يحتسب التقييم اختبار استماع.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Am Dienstag stehe ich um halb sieben auf.",
+      "finding": "الثلاثاء halb sieben=6:30، لا 7:30؛ نفس صيغة aufstehen.",
+      "sourceIds": [
+        "T",
+        "U"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": " Um sieben Uhr fahre ich zur Arbeit.",
+      "finding": "um sieben Uhr ذهاب إلى العمل؛ لا يقولوقت الوصول أو أنه بالحافلة في هذا النص.",
+      "sourceIds": [
+        "FA"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": " Von acht bis zwölf arbeite ich.",
+      "finding": "von acht bis zwölf عمل؛ لا زمن القيادة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": " Um zwölf Uhr mache ich eine Pause.",
+      "finding": "um zwölf Uhr استراحة؛ لا ذكر لطولها أو وجبة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "text": " Am Nachmittag kaufe ich im Supermarkt ein.",
+      "finding": "تسوق بعد الظهر في Supermarkt؛ لا متجر محدد أو مشتريات مسماة.",
+      "sourceIds": [
+        "V"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": " Um neun Uhr gehe ich schlafen.",
+      "finding": "um neun Uhr gehe ich schlafen ذهاب للنوم؛ لا يساوي إثبات حالة النوم عند الدقيقة نفسها.",
+      "sourceIds": [
+        "S"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Am Dienstag steht die Person um ______ auf.",
+      "finding": "halb sieben بعد um الموجودة؛ لا تكرر حرف الجر.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Sie arbeitet von ______ bis ______.",
+      "finding": "acht — zwölf؛ احفظ طرفي الفترة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Um zwölf Uhr macht sie eine ______.",
+      "finding": "Pause اسم بحرف كبير بعد eine.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Am Nachmittag ______ sie im Supermarkt ______.",
+      "finding": "kauft … ein مع sie الراجعة إلى Person؛ ليست kaufe مع ich.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-04-T01",
+      "text": "1. ______ Montag lerne ich Deutsch. (am / um)\n2. Der Film beginnt ______ acht Uhr. (am / um)\n3. Ich arbeite ______ neun ______ fünf. (von / bis)",
+      "finding": "المفاتيح am/um/von … bis صحيحة في الأطر المعطاة. البند الثالث له فراغان، لكنه سؤال واحد عن بداية الفترة ونهايتها.",
+      "sourceIds": [],
+      "items": [
+        "1. am Montag؛ um لا يناسب يوم الأسبوع في النمط.",
+        "2. um acht Uhr؛ am لا يذكر ساعة في المثال.",
+        "3. von neun bis fünf؛ بداية الفترة ثم نهايتها."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T02",
+      "text": "استعمل الصيغة من الجدول أو القراءة الرقمية المذكورة؛ لا توجد إجابة صحيحة وحيدة في الصياغة الحرة.\n\n1. 7:00 = ______\n2. 8:30 = ______\n3. 8:15 = ______",
+      "finding": "عُرضت بدائل صحيحة؛ القراءة الرقمية مقبولة لأنها مدربة أيضًا، ولا يُفرض نموذج واحد للجواب الحر.",
+      "sourceIds": [],
+      "items": [
+        "1. sieben Uhr.",
+        "2. halb neun أو acht Uhr dreißig.",
+        "3. Viertel nach acht أو acht Uhr fünfzehn."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T03",
+      "text": "1. Ich ______ um sechs Uhr ______. (aufstehen)\n2. Wir ______ am Samstag ______. (einkaufen)\n3. Du ______ deine Mutter am Abend ______. (anrufen)",
+      "finding": "جدول التصريف الجديد يدعم صيغ ich/wir/du للأفعال الثلاثة قبل طلب إنتاجها.",
+      "sourceIds": [],
+      "items": [
+        "1. stehe … auf مع ich.",
+        "2. kaufen … ein مع wir.",
+        "3. rufst … an مع du."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T04",
+      "text": "ابدأ الأولى بـIch، والثانية بـAm Nachmittag، والثالثة بـIch. استخدم جميع القطع؛ موضع heute بالنسبة للمفعول في الثالثة يمكن أن يتغير.\n\n1. um sieben Uhr / ich / stehe / auf\n2. am Nachmittag / kauft / er / ein\n3. meine Schwester / ich / rufe / heute / an",
+      "finding": "حُددت بداية كل جملة، مع توضيح مرونة موضع heute. ترتيب النموذج ليس الترتيب الصحيح الوحيد في كل سياق.",
+      "sourceIds": [],
+      "items": [
+        "1. Ich stehe um sieben Uhr auf.",
+        "2. Am Nachmittag kauft er ein.",
+        "3. Ich rufe heute meine Schwester an. ويصح وضع heute بعد meine Schwester أيضًا."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T05",
+      "text": "1. أ. Ich stehe um sieben Uhr auf. ب. Ich aufstehe um sieben Uhr.\n2. أ. Am Montag ich lerne Deutsch. ب. Am Montag lerne ich Deutsch.\n3. أ. Sie kauft im Supermarkt ein. ب. Sie einkauft im Supermarkt.",
+      "finding": "استُبدل im Markt بـ im Supermarkt في الخيارين لتوافق مفردات الدرس. هذا تحسين سياقي لا حكم بأن im Markt مستحيلة في كل سياق.",
+      "sourceIds": [],
+      "items": [
+        "1. أ: Ich stehe … auf، لا Ich aufstehe.",
+        "2. ب: بعد Am Montag يأتي lerne ثم ich.",
+        "3. أ: Sie kauft im Supermarkt ein، لا einkauft."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T06",
+      "text": "أكمل بكلمات النص، مع تصريف الفعل في البند5:\n\n1. Die Person steht um ______ auf.\n2. Sie arbeitet von ______ bis ______.\n3. Sie lernt Deutsch um ______ Uhr.\n4. Sie schläft um ______ Uhr.\n5. Um halb acht ______ die Person mit ihrer Familie.",
+      "finding": "صُحح المفتاح الناقص وترقيمه، وأضيف بند الفطور لدعم Q09. يتطلب البند الخامس تحويل frühstücke إلى frühstückt مع die Person.",
+      "sourceIds": [],
+      "items": [
+        "1. sieben.",
+        "2. neun — drei؛ زوج الإجابة يخص سؤالًا واحدًا.",
+        "3. sechs؛ أعيد الجواب الذي سقط من المفتاح.",
+        "4. elf؛ حالة النوم، لا بداية النوم بالضرورة.",
+        "5. frühstückt؛ صيغة الفعل مع die Person، وتدعم Q09."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T07",
+      "text": "أعد الأسئلة بعد محاولة سماع النص دون النظر، ثم قارن. إن استخدمت التفريغ فهذا تدريب قراءة، لا اجتياز سمعي:\n\n1. Am Dienstag steht die Person um ______ auf.\n2. Sie arbeitet von ______ bis ______.\n3. Um zwölf Uhr macht sie eine ______.\n4. Am Nachmittag ______ sie im Supermarkt ______.",
+      "finding": "البنود الأربعة تعيد أسئلة النص للتدريب بعد الاستماع. استعمال التفريغ بديل قراءة، لا إثبات لاستماع مستقل.",
+      "sourceIds": [],
+      "items": [
+        "1. halb sieben.",
+        "2. acht — zwölf.",
+        "3. Pause.",
+        "4. kauft … ein."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T08",
+      "text": "اكتب 5–7 جمل بالألمانية عن يوم عادي حقيقي أو خيالي، مع ثلاث عبارات وقت على الأقل وفعلين منفصلين مختلفين من aufstehen/einkaufen/anrufen. حافظ على موقع الفعل المصرف وانفصال البادئة في الجمل البسيطة. هذه مهمة كتابة؛ لا يلزم قراءتها بصوت مرتفع أو إدخال معلومات شخصية حقيقية.\n\nمثال بداية: **Am Morgen stehe ich um … auf.**",
+      "finding": "وُحد T08/P01 على 5–7 جمل وثلاث عبارات وقت وفعلين منفصلين مختلفين. أُلغي شرط الكلام من المهمة الكتابية.",
+      "sourceIds": [],
+      "items": [
+        "1. كتابة 5–7 جمل عن يوم عادي حقيقي أو خيالي.",
+        "2. ثلاث عبارات وقت على الأقل.",
+        "3. فعلان منفصلان مختلفان من الأفعال الثلاثة.",
+        "4. نمط V2 والبادئة في النهاية، مع أحداث مفهومة.",
+        "5. كتابة فقط، بلا صوت أو بيانات شخصية حقيقية مفروضة."
+      ]
+    },
+    {
+      "id": "DL-A1-04-T09",
+      "text": "اكتب الأسئلة الثلاثة: Wann stehst du auf? Wann lernst du Deutsch? Was machst du am Abend? وأجب عن كل سؤال بجملة بدور شخصية خيالية اسمها Sami. ثم لخّص جوابي السؤالين الأول والثاني بجملتين تبدأان بـSami ثم Er. اقرأ الأسئلة والأجوبة والتلخيص بصوت مرتفع، وأدّ الدورين وحدك إن لم يوجد شريك؛ لا يلزم تسجيل صوتك.\n\nفي هذا التدريب نستخدم Er للشخصية المعطاة. راجع التحويل ich stehe → Sami steht وich lerne → Er lernt؛ لا تنقل du من السؤال إلى التلخيص.",
+      "finding": "وُحد T09/P02 على ثلاثة أسئلة وأجوبتها وتلخيص جوابين، بدل خطاب عن الذات من ثلاث جمل. الكتابة لازمة للحفظ، والأداء الفردي متاح.",
+      "sourceIds": [],
+      "items": [
+        "1. سؤال النهوض وجوابه بدور Sami.",
+        "2. سؤال وقت تعلم الألمانية وجوابه.",
+        "3. سؤال نشاط المساء وجوابه.",
+        "4. تلخيص جواب السؤال الأول بجملة تبدأ بـ Sami.",
+        "5. تلخيص جواب السؤال الثاني بجملة تبدأ بـ Er؛ تُقرأ الأسئلة والأجوبة والتلخيص كلها بصوت مرتفع، مع إمكان الأداء الفردي."
+      ]
+    },
+    {
+      "id": "day-model-01",
+      "text": "Ich stehe um sieben Uhr auf.",
+      "finding": "جملة 1: stehe … auf مع وقت النهوض.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-02",
+      "text": "Um halb acht frühstücke ich.",
+      "finding": "جملة 2: Um halb acht كتلة أولى، ثم frühstücke ich.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-03",
+      "text": "Von neun bis drei arbeite ich.",
+      "finding": "جملة 3: Von neun bis drei ثم arbeite ich؛ دوام نهاري خيالي.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-04",
+      "text": "Am Nachmittag kaufe ich ein.",
+      "finding": "جملة 4: einkaufen فعل منفصل ثانٍ مختلف، و Am Nachmittag وقت.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-05",
+      "text": "Am Abend lerne ich Deutsch.",
+      "finding": "جملة 5: تعلم الألمانية مساء؛ ليس كل فعل في النموذج منفصلًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-06",
+      "text": "Um elf Uhr gehe ich schlafen.",
+      "finding": "جملة 6: gehe schlafen ذهاب للنوم، لا اقتباس حرفي من جملة schlafe في النص. ست جمل تفي بمدى 5–7.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-01",
+      "text": "السائل: Wann stehst du auf?",
+      "finding": "سؤال Wann عن النهوض، مع du و stehst.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-02",
+      "text": "Sami: Ich stehe um sieben Uhr auf.",
+      "finding": "جواب Sami بصيغة ich؛ وقت النهوض السابعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-03",
+      "text": "السائل: Wann lernst du Deutsch?",
+      "finding": "سؤال وقت تعلم Deutsch؛ lernst مع du.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-04",
+      "text": "Sami: Ich lerne am Abend Deutsch.",
+      "finding": "الجواب يحدد المساء، ولا يفرض ساعة معينة.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-05",
+      "text": "السائل: Was machst du am Abend?",
+      "finding": "Was machst du am Abend? سؤال نشاط، لا سؤال وقت.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-06",
+      "text": "Sami: Ich rufe meine Schwester an.",
+      "finding": "جواب الاتصال بالأخت؛ meine من منظور Sami، دون إلزام المتعلم بكشف بيانات قرابته.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-07",
+      "text": "تلخيص 1: Sami steht um sieben Uhr auf.",
+      "finding": "تلخيص جواب 1: Sami steht … auf، مع الحفاظ على وقت النهوض.",
+      "sourceIds": []
+    },
+    {
+      "id": "interview-model-08",
+      "text": "تلخيص 2: Er lernt am Abend Deutsch.",
+      "finding": "تلخيص جواب 2: Er lernt am Abend؛ لا تنقل ich أو du، ولا يلزم تلخيص جواب 3.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-04-Q01",
+      "text": "أكمل: ___ Montag arbeite ich.",
+      "finding": "am Montag هو الخيار المطابق للنمط. um للساعة، و von وحدها لا تناسب المطلوب هنا.",
+      "sourceIds": [],
+      "options": [
+        "um",
+        "am",
+        "von"
+      ],
+      "answer": "am",
+      "explanation": "مع أيام الأسبوع نستخدم am: am Montag.",
+      "sourceTaskIds": [
+        "DL-A1-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q02",
+      "text": "أكمل: Der Kurs beginnt ___ sieben Uhr.",
+      "finding": "um sieben Uhr وقت البدء في المثال؛ am ليست صيغة ذكر ساعة، و bis لا تؤدي معنى بدء الدورة في هذا الإطار.",
+      "sourceIds": [],
+      "options": [
+        "am",
+        "um",
+        "bis"
+      ],
+      "answer": "um",
+      "explanation": "مع ساعة محددة نستخدم um.",
+      "sourceTaskIds": [
+        "DL-A1-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q03",
+      "text": "أكمل: Ich arbeite von acht ___ drei Uhr.",
+      "finding": "التركيب von … bis؛ am و um لا تغلقان الفترة المعطاة.",
+      "sourceIds": [],
+      "options": [
+        "am",
+        "bis",
+        "um"
+      ],
+      "answer": "bis",
+      "explanation": "التركيب هو von … bis: من … إلى.",
+      "sourceTaskIds": [
+        "DL-A1-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q04",
+      "text": "كيف نقول 8:30 بالطريقة الواردة في الدرس؟",
+      "finding": "halb neun تعني 8:30؛ halb acht تعني 7:30 و Viertel vor acht تعني 7:45. يوجد مفتاح واحد بين الخيارات، مع قبول الصيغة الرقمية في التدريب الحر.",
+      "sourceIds": [],
+      "options": [
+        "halb acht",
+        "halb neun",
+        "Viertel vor acht"
+      ],
+      "answer": "halb neun",
+      "explanation": "8:30 هي halb neun في التعبير الألماني.",
+      "sourceTaskIds": [
+        "DL-A1-04-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q05",
+      "text": "اختر الجملة الخبرية التي تتبع نمط الدرس: الفعل المصرف ثانيًا والبادئة في نهاية الجملة.",
+      "finding": "قُيد السؤال بالنمط الذي يضع البادئة في النهاية. الثالث يضع früh بعد auf؛ لا نزعم أن كل ذيل كلامي غير نحوي.",
+      "sourceIds": [],
+      "options": [
+        "Ich stehe früh auf.",
+        "Ich aufstehe früh.",
+        "Ich stehe auf früh."
+      ],
+      "answer": "Ich stehe früh auf.",
+      "explanation": "في نمط الجملة البسيطة هنا: Ich stehe früh auf. لا نُبقي البادئة متصلة كما في Ich aufstehe، ولا نضع früh بعد البادئة في هذا النمط التدريبي.",
+      "sourceTaskIds": [
+        "DL-A1-04-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q06",
+      "text": "أي ترتيب صحيح؟",
+      "finding": "Am Nachmittag كتلة زمن واحدة ثم kauft er … ein. الثاني يضع er قبل الفعل بعد هذه الكتلة، والثالث يترك البادئة متصلة.",
+      "sourceIds": [],
+      "options": [
+        "Am Nachmittag kauft er ein.",
+        "Am Nachmittag er kauft ein.",
+        "Am Nachmittag einkauft er."
+      ],
+      "answer": "Am Nachmittag kauft er ein.",
+      "explanation": "بعد عبارة الزمن يأتي الفعل المصرف ثانيًا، وتنفصل ein إلى النهاية.",
+      "sourceTaskIds": [
+        "DL-A1-04-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q07",
+      "text": "أكمل بصيغة ich المكتوبة الكاملة ذات النهاية -e كما في النموذج: Ich ___ heute meine Schwester ___.",
+      "finding": "الصيغة الكاملة rufe … an. الخيار الأول يضاعف البادئة، و ruf قد يُسمع بحذف e في الكلام، لذلك قُيد المطلوب بالصيغة الكاملة. Q07 مرتبط الآن بـ T04 الذي يدرب جملة ich نفسها.",
+      "sourceIds": [],
+      "options": [
+        "anrufe … an",
+        "rufe … an",
+        "ruf … an"
+      ],
+      "answer": "rufe … an",
+      "explanation": "الصيغة الكاملة المدربة هي rufe … an. قد تسمع Ich ruf … an بحذف e في الكلام؛ المطلوب هنا الصيغة الكاملة، فلا نعمم أن ruf مستحيلة في كل سياق.",
+      "sourceTaskIds": [
+        "DL-A1-04-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q08",
+      "text": "ما معنى am Abend؟",
+      "finding": "am Abend في المساء، لا الصباح أو الظهر فقط. Q08 مرتبط بـ T09 حيث ترد العبارة في السؤال والجواب.",
+      "sourceIds": [],
+      "options": [
+        "في الصباح",
+        "في المساء",
+        "عند الظهر فقط"
+      ],
+      "answer": "في المساء",
+      "explanation": "am Abend تعني «في المساء».",
+      "sourceTaskIds": [
+        "DL-A1-04-T09"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q09",
+      "text": "ما معنى frühstücken؟",
+      "finding": "frühstücken تناول الفطور، لا التسوق أو الاتصال الهاتفي. Q09 مرتبط بـ T06.5 الذي يستدعي الفعل من النص ثم يصرفه.",
+      "sourceIds": [],
+      "options": [
+        "يتناول الفطور",
+        "يتسوق",
+        "يتصل هاتفيًا"
+      ],
+      "answer": "يتناول الفطور",
+      "explanation": "frühstücken تعني «يتناول الفطور».",
+      "sourceTaskIds": [
+        "DL-A1-04-T06"
+      ]
+    },
+    {
+      "id": "DL-A1-04-Q10",
+      "text": "أكمل: Wir ___ am Samstag ___.",
+      "finding": "Wir kaufen … ein؛ لا قلب البادئة والجذر ولا تصريف kauft مع wir. Q10 مرتبط بـ T03.2 الذي يعرض الجملة نفسها بدل المهمة الحرة T08.",
+      "sourceIds": [],
+      "options": [
+        "kaufen … ein",
+        "ein … kaufen",
+        "kauft … ein"
+      ],
+      "answer": "kaufen … ein",
+      "explanation": "einkaufen فعل منفصل: Wir kaufen … ein.",
+      "sourceTaskIds": [
+        "DL-A1-04-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-04-P01",
+      "text": "اكتب 5–7 جمل بالألمانية عن يوم عادي حقيقي أو خيالي، مع ثلاث عبارات وقت على الأقل وفعلين منفصلين مختلفين من aufstehen/einkaufen/anrufen. حافظ على موقع الفعل المصرف وانفصال البادئة في الجمل البسيطة. هذه مهمة كتابة؛ لا يلزم قراءتها بصوت مرتفع أو إدخال معلومات شخصية حقيقية.",
+      "finding": "كتابة 5–7 جمل، بحد 90 حرفًا و speakAloud=false. الحد لا يعد الجمل ولا يصحح اللغة؛ يقبل الاختبار النموذج الكامل مع إقرارات المعايير.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت 5–7 جمل عن يوم واحد، مع ثلاث عبارات وقت على الأقل وفعلين منفصلين مختلفين.",
+        "meaningClarity": "أحداث اليوم وأوقاتها مفهومة ومتسقة، وأوضح فترة اليوم إذا التبس الوقت.",
+        "targetSkill": "أستعمل عبارات الوقت مثل am/um/von … bis …، وأضع الفعل المصرف ثانيًا والبادئة المنفصلة في النهاية في الجمل البسيطة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-04-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-04-P02",
+      "text": "اكتب الأسئلة الثلاثة: Wann stehst du auf? Wann lernst du Deutsch? Was machst du am Abend? وأجب عن كل سؤال بجملة بدور شخصية خيالية اسمها Sami. ثم لخّص جوابي السؤالين الأول والثاني بجملتين تبدأان بـSami ثم Er. اقرأ الأسئلة والأجوبة والتلخيص بصوت مرتفع، وأدّ الدورين وحدك إن لم يوجد شريك؛ لا يلزم تسجيل صوتك.",
+      "finding": "ثلاثة أزواج سؤال/جواب ثم جملتا تلخيص؛ حد 170 حرفًا و speakAloud=true. لا تسجيل مطلوب، والإقرار ليس مراجعة نطق.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت ثلاثة أسئلة وثلاثة أجوبة وتلخيصًا بجملتين لجوابي السؤالين الأول والثاني، وقرأت جميع الأجزاء بصوت مرتفع.",
+        "meaningClarity": "الأجوبة تناسب الأسئلة، والتلخيص يحافظ على وقت النهوض ووقت تعلم الألمانية من دون اختراع معلومات مخالفة.",
+        "targetSkill": "أستعمل Wann/Was وصيغ ich في الأجوبة وSami/Er في التلخيص، مثل stehe … auf ثم steht … auf وlerne ثم lernt."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 170,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-04-T09"
+      ]
+    },
+    {
+      "id": "self-check-limit",
+      "text": "local_self_check",
+      "finding": "التحقق الذاتي ليس حكمًا لغويًا مستقلًا ولا قياس استماع. الإصدار v2 يتطلب إعادة الإتقان؛ مجرد التحقق لا يحذف نتيجة v1، لكن حفظ مسودة جديدة قد يستبدل مجموعة المسودات القديمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-01",
+      "text": "**um sieben Uhr** → في الساعة السابعة.",
+      "finding": "um للساعة في المثال، لكن السابعة وحدها لا تحدد فترة اليوم.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**am Montag** → يوم الاثنين.",
+      "finding": "am Montag يوم الاثنين، والحرف الكبير صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich stehe … auf.** → أنهض …",
+      "finding": "Ich stehe … auf إطار جملة عن النهوض، لا مصدر الفعل المتصل.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Ich kaufe … ein.** → أتسوّق …",
+      "finding": "Ich kaufe … ein إطار التسوق، ولا يعني أن كل استعمال kaufen يستلزم ein.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-05",
+      "text": "**von acht bis drei** → من الثامنة إلى الثالثة.",
+      "finding": "von acht bis drei طرفا فترة؛ السياق يحدد الصباح والمساء.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-04-AUD-READ-01",
+      "text": "قراءة: يومي المعتاد",
+      "finding": "تفريغ واحد موجود بصوت voice-02؛ الكلمات والرابط وحالة ready/offer محفوظة، ولم يُجرَ استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-04-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Ich stehe jeden Tag um sieben Uhr auf. Um halb acht frühstücke ich mit meiner Familie. Von neun bis drei arbeite ich. Am Nachmittag kaufe ich manchmal ein. Um sechs Uhr lerne ich Deutsch. Am Abend rufe ich meine Schwester an. Um elf Uhr schlafe ich.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-04-AUD-LST-01",
+      "text": "استماع: جدول يوم الثلاثاء",
+      "finding": "تفريغ واحد موجود بصوت voice-03؛ الكلمات والرابط وحالة ready/offer محفوظة، ولم يُجرَ استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-04-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Am Dienstag stehe ich um halb sieben auf. Um sieben Uhr fahre ich zur Arbeit. Von acht bis zwölf arbeite ich. Um zwölf Uhr mache ich eine Pause. Am Nachmittag kaufe ich im Supermarkt ein. Um neun Uhr gehe ich schlafen.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "57aabfb19fa16a6de6efc254721f6d2f6b991571",
+    "unchangedOtherLessons": 52,
+    "unchangedGate": true,
+    "unchangedGlobalAudioAssets": 217,
+    "unchangedTrackedMp3Blobs": 474,
+    "unchangedFiles": [
+      "app.js",
+      "styles.css",
+      "package.json",
+      "package-lock.json",
+      "data/audio-playlists.json",
+      "data/audio-asset-register.csv"
+    ],
+    "unchangedOutsideLessonCatalogRows": true
+  },
+  "testResults": {
+    "baselineGuard": "FAIL before fix: T06 missing sechs",
+    "buildAndVerify": "PASS after correcting verifier false-positive for explanatory headings",
+    "cumulativeReviewGuards": 10,
+    "nodeSuites": [
+      "progression",
+      "session_persistence",
+      "daily_plan",
+      "study_time",
+      "service_worker"
+    ],
+    "browserSuites": [
+      "forms-keyboard",
+      "accessibility-audit",
+      "narrow-layout",
+      "accessibility-update",
+      "browser"
+    ],
+    "browserAllPass": true,
+    "chromium": "143.0.7499.0",
+    "playwright": "1.58.2",
+    "axeCore": "4.11.0",
+    "axeStates": 53,
+    "selectedRuleViolations": 0,
+    "incompleteRuleOccurrences": 30,
+    "incompleteNodeOccurrences": 81,
+    "narrowViewportStates": 126,
+    "serviceWorkerUpdateFixture": "v42 to v55, current assessment data; v1 rejection covered separately in VM",
+    "acousticReview": false,
+    "physicalDeviceTest": false
+  }
+}

@@ -368,7 +368,7 @@ def main() -> None:
 
         source_exercises = re.findall(r"(?m)^###\s*(?:\d+\)?[).]?\s*)?تمرين\b.*$", markdown)
         rendered_h3 = re.findall(r"<h3\b[^>]*>(.*?)</h3>", rendered, flags=re.S)
-        rendered_exercises = [heading for heading in rendered_h3 if "تمرين" in plain_text(heading)]
+        rendered_exercises = [heading for heading in rendered_h3 if re.match(r"^\s*(?:\d+\)?[).]?\s*)?تمرين\b", plain_text(heading))]
         assert len(rendered_exercises) == len(source_exercises), (
             f"Exercise headings not fully carried into HTML for {source_name}: "
             f"{len(source_exercises)} source vs {len(rendered_exercises)} rendered"
