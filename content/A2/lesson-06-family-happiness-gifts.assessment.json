@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a2-06-v1",
+    "version": "a2-06-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A2.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على توليد صوت أو خدمة خارجية؛ يمكن إنجازه وحفظ دليله محليًا."
+      "CR24: معنى القرابة دون تخصيص جهة غير مذكورة؛dass لمحتوى القول/الشعور لا لإثبات الخبر،و auf مع اسم للتطلع.",
+      "T03 يتدرب على anschauen möchten،و T07 على auf؛P01/T08 أ أربع جمل مع الجهر،و P02/T08 ب دعوة كتابة فقط بنموذجين ومعايير مطابقة.",
+      "Q02→T07،وصحح خيار Q06 الصحيح وحده؛فهارس المفاتيح و 80% محفوظة. لا تغيير التسجيلات أو استماع أو توليد جديد."
     ]
   },
   "quiz": [
@@ -42,7 +42,7 @@
     {
       "id": "DL-A2-06-Q02",
       "sourceTaskIds": [
-        "DL-A2-06-T02"
+        "DL-A2-06-T07"
       ],
       "objectiveIds": [
         "DL-A2-06-G01"
@@ -139,10 +139,10 @@
       "options": [
         "زملاؤها في العمل.",
         "جيرانها فقط.",
-        "عمتها وابنا/ابنتا عمها."
+        "قريبتها (Tante) واثنان من أبناء العمومة أو الخؤولة."
       ],
       "answerIndex": 2,
-      "explanation": "سيأتي die Tante und zwei Cousins."
+      "explanation": "die Tante und zwei Cousins؛لا يحدد النص جهة القرابة،ولا يقول إن Cousins هما ابنا Tante المذكورة."
     },
     {
       "id": "DL-A2-06-Q07",
@@ -177,14 +177,14 @@
         "فهم جملة dass",
         "اختيار محدد"
       ],
-      "prompt": "في **Mein Bruder sagt, dass er einen Kuchen mitbringt**، ماذا سيحضر الأخ؟",
+      "prompt": "في **Mein Bruder sagt, dass er einen Kuchen mitbringt**، ماذا يقول الأخ إنه سيحضر؟",
       "options": [
         "كعكة.",
         "صورة.",
         "هدية أخرى."
       ],
       "answerIndex": 0,
-      "explanation": "الجملة تقول إنه سيحضر einen Kuchen."
+      "explanation": "يقول إنه سيحضر كعكة (einen Kuchen)؛لا تثبت الجملة وحدها أنه أحضرها فعلًا."
     },
     {
       "id": "DL-A2-06-Q09",
@@ -198,7 +198,7 @@
         "sich freuen auf",
         "اختيار محدد"
       ],
-      "prompt": "أي عبارة تتحدث عن حدث قادم؟",
+      "prompt": "أي عبارة تعبّر عن التطلع إلى الاحتفال القادم؟",
       "options": [
         "Ich freue mich, dass du da bist.",
         "Ich bin die Feier.",
@@ -242,11 +242,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "اكتب أربع جمل عن مناسبة عائلية متخيّلة؛ عبّر عن خبرين أو أمنيتين باستخدام dass، ثم اقرأها بصوت واضح.",
+      "prompt": "اكتب أربع جمل عن مناسبة عائلية خيالية: الجملة 1 تذكر الاحتفال بعيد ميلاد الجدة يوم السبت في بيت الوالدين؛الجملة 2 تذكر أنك ستحضر كعكة؛الجملة 3 تبدأ بـ Ich hoffe, dass وتتمنى مجيء أبناء العمومة أو الخؤولة؛الجملة 4 تبدأ بـ Ich freue mich, dass وتعبّر عن الفرح بإمكان اجتماعكم، مستعملًا sein können في نهاية التابعة. اكتب بضمير ich، ثم اقرأ الجمل الأربع بصوت مرتفع. البيانات خيالية؛لا معلومات شخصية أو تسجيل أو شريك مطلوب.",
       "criteria": {
-        "taskCompletion": "تذكر الاستجابة المناسبة وأفراد الأسرة أو الضيوف وتضم جملتي dass.",
-        "meaningClarity": "يمكن فهم المناسبة والمشاعر أو الآمال المرتبطة بها.",
-        "targetSkill": "يضع الفعل المصرف في نهاية جملة dass ويضع الفاصلة قبلها."
+        "taskCompletion": "أربع جمل عن المناسبة ومكانها ويومها والكعكة وأمل مجيء الأقارب والفرح باجتماعكم؛قرأت الجميع جهرًا.",
+        "meaningClarity": "عيد ميلاد الجدة يوم السبت في بيت الوالدين؛المشاعر والآمال منسجمة دون ادعاء تأكيد الحضور.",
+        "targetSkill": "جملتا dass بعد hoffen و sich freuen،بفاصلة وفعل مصرف آخر التابعة؛sein können بالترتيب الصحيح،و bringe…mit في الرئيسية."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,7 +256,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
+        "minimumResponseCharacters": 150,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -270,14 +270,13 @@
         "DL-A2-06-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب رسالة قصيرة لقريب تدعوه إلى احتفال: اذكر المناسبة، وعبّر عن شعورك، وأضف جملة تبدأ بـIch hoffe, dass أو Ich freue mich, dass. اقرأ الرسالة بصوت مرتفع.",
+      "prompt": "اكتب باسم Mariam دعوة خيالية إلى قريب اسمه Sami، كتابة فقط: تحية، ثم أربع جمل في المتن، ثم ختام واسم. الجملة 1 تدعوه صراحة بـ Ich lade dich إلى احتفال السبت الساعة 18 في بيت والديك؛الجملة 2 تذكر أنه عيد ميلاد جدتك؛الجملة 3 تعبّر عن التطلع بـ Ich freue mich auf مع اسم الاحتفال؛الجملة 4 تتمنى أن يستطيع الحضور بـ Ich hoffe, dass مع kommen kannst في النهاية. فرّق بين اسم بعد auf وجملة بعد dass، ولا تدّع أن المدعو وافق. لا جهر أو إرسال أو بيانات عائلية حقيقية مطلوبة.",
       "criteria": {
-        "taskCompletion": "تتضمن الرسالة دعوة ومعلومة وجملة dass واحدة على الأقل.",
-        "meaningClarity": "توضح الرسالة من المدعو وماذا سيحدث.",
-        "targetSkill": "يفرق بين dass لجملة تابعة وauf عند التطلع إلى حدث قادم."
+        "taskCompletion": "تحية وأربع جمل وختام واسم خيالي؛دعوة صريحة مع اليوم والساعة 18 والمكان والمناسبة،كتابة فقط.",
+        "meaningClarity": "Sami هو المدعو،والسبت 18 في بيت والدي Mariam؛لا ادعاء قبول الدعوة أو إرسالها فعلًا.",
+        "targetSkill": "auf مع اسم الاحتفال،و dass مع جملة لها فعل مصرف في النهاية:kommen kannst؛فصل lade…ein في الرئيسية."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,8 +286,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 45,
-        "speakAloud": true,
+        "minimumResponseCharacters": 180,
+        "speakAloud": false,
         "audioRequired": false
       }
     }

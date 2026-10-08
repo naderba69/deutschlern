@@ -164,6 +164,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A2.5-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A2.5-practical-form-fixture', width);
+  // CR24: spoken celebration and written invitation.
+  await page.evaluate(() => openLesson('a2-06-family-happiness-gifts'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.6-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.6-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

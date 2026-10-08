@@ -892,6 +892,42 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain A2.5 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR24: spoken celebration description vs written invitation, and A2.6 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'a2-06-family-happiness-gifts').assessment.version, 'a2-06-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('a2-06-family-happiness-gifts');
+    const responses = [
+      'Am Samstag feiern wir den Geburtstag meiner Großmutter bei meinen Eltern. Ich bringe einen Kuchen mit. Ich hoffe, dass meine Cousins kommen. Ich freue mich, dass wir zusammen sein können.',
+      'Lieber Sami, ich lade dich zur Feier am Samstag um 18 Uhr bei meinen Eltern ein. Wir feiern den Geburtstag meiner Großmutter. Ich freue mich auf die Feier. Ich hoffe, dass du kommen kannst. Liebe Grüße Mariam'
+    ];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===0};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===1 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'A2.6 models fit thresholds; P02 is writing only, P01 needs speech and all checks');
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('a2-06-family-happiness-gifts').performanceTasks[1]], 'lesson:a2-06-family-happiness-gifts', 'a2-06-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('a2-06-family-happiness-gifts');
+      const next=findLesson('a2-07-language-learning-travel-purpose');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'a2-06-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'a2-06-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='a2-06-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'a2-06-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain A2.6 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
