@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-11-v1",
+    "version": "a1-11-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,9 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR17: مراجعة النصوص والتمارين؛ تحديد التنكير بعدes gibt، وربط مهمتي المسكن والطريق بتدريبين مطابقين مع نماذج.",
+      "المسكن كتابة فقط والطريق مع جهر؛ لا شرط شريك أو تسجيل أو عنوان حقيقي. الطول والإقرار لا يصححان اللغة أو النطق.",
+      "التسجيلات موجودة وتظل متاحة؛ لا إعادة توليد أو استماع أو اعتماد جديد، ولا قياس استماع مستقل بالتفريغ."
     ]
   },
   "quiz": [
@@ -69,7 +69,7 @@
         "DL-A1-11-G01"
       ],
       "skillTags": [
-        "es gibt وأداة التعريف",
+        "es gibt وأداة التنكير",
         "اختيار محدد"
       ],
       "prompt": "أكمل: Es gibt ___ Tisch.",
@@ -90,7 +90,7 @@
         "DL-A1-11-G01"
       ],
       "skillTags": [
-        "es gibt وأداة التعريف",
+        "es gibt وأداة التنكير",
         "اختيار محدد"
       ],
       "prompt": "أكمل: Es gibt ___ Küche.",
@@ -111,7 +111,7 @@
         "DL-A1-11-G01"
       ],
       "skillTags": [
-        "es gibt وأداة التعريف",
+        "es gibt وأداة التنكير",
         "اختيار محدد"
       ],
       "prompt": "أي جملة صحيحة؟",
@@ -126,7 +126,7 @@
     {
       "id": "DL-A1-11-Q06",
       "sourceTaskIds": [
-        "DL-A1-11-T03"
+        "DL-A1-11-T04"
       ],
       "objectiveIds": [
         "DL-A1-11-G01"
@@ -198,19 +198,19 @@
         "فهم القراءة",
         "اختيار محدد"
       ],
-      "prompt": "بحسب نص القراءة، أين يقع المنزل بالنسبة إلى الحديقة؟",
+      "prompt": "أي علاقة يذكرها نص القراءة صراحةً بين المنزل والحديقة؟",
       "options": [
         "مقابل الحديقة",
         "داخل الحديقة",
         "بعيدًا عن الحديقة"
       ],
       "answerIndex": 0,
-      "explanation": "مفتاح القراءة يذكر Gegenüber dem Park: مقابل الحديقة."
+      "explanation": "النص يقول: Das Haus ist gegenüber dem Park؛ أي مقابل الحديقة. لم يذكر مسافة عددية أو علاقة داخل الحديقة."
     },
     {
       "id": "DL-A1-11-Q10",
       "sourceTaskIds": [
-        "DL-A1-11-T08"
+        "DL-A1-11-T02"
       ],
       "objectiveIds": [
         "DL-A1-11-G01"
@@ -239,14 +239,13 @@
         "DL-A1-11-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "writing"
       ],
-      "prompt": "اكتب وصفًا لمسكن بسيط من أربع جمل: اذكر غرفة وأثاثًا وميزة واحدة للمكان. اقرأ الوصف بصوت مرتفع.",
+      "prompt": "اكتب أربع جمل عن شقة خيالية: الأولى والثانية تذكران مكانين مختلفين من قائمة غرف الدرس وتبدآن بـ Es gibt؛ الثالثة تذكر قطعة أثاث واحدة في غرفة سبق ذكرها باستعمال Im Wohnzimmer أو Im Schlafzimmer مع gibt es؛ الرابعة تصف الشقة بـ Die Wohnung ist مع hell أو dunkel أو groß أو klein. اختر غرفة جلوس أو غرفة نوم ضمن الجملتين الأوليين لتستعملها في الثالثة. هذه كتابة فقط، دون قراءة جهرية أو تسجيل أو وصف مسكنك الحقيقي، ولا تعليمات طريق في هذه المهمة.",
       "criteria": {
-        "taskCompletion": "يذكر أربع معلومات عن المسكن أو محتوياته.",
-        "meaningClarity": "يستطيع القارئ تخيل المسكن والغرف الأساسية.",
-        "targetSkill": "يستخدم es gibt مع أداة مناسبة مثل einen أو eine أو ein."
+        "taskCompletion": "أربع جمل: مكانان مختلفان، قطعة أثاث في غرفة سبق ذكرها، وصفة للشقة؛ كتابة فقط.",
+        "meaningClarity": "الغرف والأثاث والوصف متسقة في مسكن خيالي واحد، ولا يتطلب عنوانًا أو مسارًا.",
+        "targetSkill": "Es gibt ثم einen/eine/ein المناسبة، وIm Wohnzimmer أوIm Schlafzimmer gibt es، وصفة بعدDie Wohnung ist."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -256,28 +255,29 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
-        "speakAloud": true,
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
         "audioRequired": false
       }
     },
     {
       "id": "DL-A1-11-P02",
       "sourceTaskIds": [
-        "DL-A1-11-T08"
+        "DL-A1-11-T07"
       ],
       "objectiveIds": [
         "DL-A1-11-G01"
       ],
       "modality": [
+        "reading",
         "writing",
         "speaking"
       ],
-      "prompt": "تخيل طريقًا من محطة إلى منزل: اكتب ثلاث تعليمات متتابعة، ثم اشرح الطريق بصوت مرتفع كما لو أنك تساعد زائرًا.",
+      "prompt": "اكتب خمس جمل في موقف خيالي: سؤال الزائر عن الوصول إلى المحطة يبدأ بـ Entschuldigung, wie komme ich zum Bahnhof?، ثم جوابًا بأربع جمل وفق هذا المسار: الزائر أمام المقهى وينظر إلى الشارع المستقيم المؤدي للإشارة؛ يمشي مباشرةً حتى الإشارة، ثم يتجه يسارًا عندها، ثم يمينًا عند التقاطع التالي، والمحطة مقابل الحديقة. صغ التعليمات الثلاث بـ Gehen Sie، ثم جملة تحدد موقع المحطة. اقرأ السؤال والجواب كاملًا بصوت مرتفع؛ يمكنك أداء الطرفين منفردًا، دون شريك أو تسجيل أو عنوان حقيقي. هذه ليست إرشادات ملاحة واقعية.",
       "criteria": {
-        "taskCompletion": "يقدم ثلاث تعليمات طريق متتابعة.",
-        "meaningClarity": "يمكن للزائر تتبع الطريق دون تخمين الاتجاه.",
-        "targetSkill": "يستخدم مفردتين من الاتجاهات مثل geradeaus وlinks وrechts، ويصوغ طلبًا واضحًا."
+        "taskCompletion": "سؤال ثم ثلاث تعليمات حسب المسار وجملة موقع؛ قرأت الجمل الخمس كلها جهرًا.",
+        "meaningClarity": "من المقهى إلى الإشارة، يسارًا عندها ثم يمينًا عند التقاطع التالي؛ المحطة مقابل الحديقة، دون تبديل المعالم.",
+        "targetSkill": "سؤال الوصول وGehen Sie في التعليمات، معgeradeaus وlinks وrechts وgegenüber dem Park؛ لا خلط بين صيغةdu وSie."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -287,7 +287,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 40,
+        "minimumResponseCharacters": 160,
         "speakAloud": true,
         "audioRequired": false
       }
