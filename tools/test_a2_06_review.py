@@ -64,6 +64,20 @@ for q in a['quiz']:
  u=next(x for x in D['units'] if x['id']==q['id']);assert u['options']==q['options'] and u['answer']==q['options'][q['answerIndex']]
 for t in a['performanceTasks']:
  u=next(x for x in D['units'] if x['id']==t['id']);assert u['text']==t['prompt'] and u['criteria']==t['criteria'] and u['selfCheck']==t['selfCheck']
+# Audit metadata must expose every alternative and criterion, not only an answer key.
+for q in a['quiz']:
+ u=next(x for x in D['units'] if x['id']==q['id'])
+ assert len(u['optionReview'])==3
+ for i,item in enumerate(u['optionReview']):
+  assert item['text']==q['options'][i] and item['correct']==(i==q['answerIndex']) and item['finding']
+for t in a['performanceTasks']:
+ u=next(x for x in D['units'] if x['id']==t['id'])
+ assert {item['key']:item['text'] for item in u['criterionReview']}==t['criteria']
+ assert all(item['finding'] for item in u['criterionReview'])
+for u in D['units']:
+ for item in u.get('items',[]):assert item['text'] and item['finding']
+assert D['preservation']['baseline']=='0ac548565836255e6f2aa7b3190df01927c52111'
+assert D['preservation']['changedOptionTexts']==[['DL-A2-06-Q06',2]]
 for f,h in D['sourceHashes'].items():assert hashlib.sha256((R/f).read_bytes()).hexdigest()==h
 for x in assets:assert D['audioSnapshotHashes'][x['assetId']]==hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
 print('PASS A2.6: 104 units/36 subitems; hashes, mappings, tasks, bundle; 5 assets/10 clips unchanged. Not language/acoustic certification.')
