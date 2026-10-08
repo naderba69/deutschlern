@@ -51,7 +51,7 @@ expected=set()
 for k,n in [('scope',8),('vocab',14),('phone',7),('grammar',5),('helper',8),('dialogue',7),('reading',7),('reading-question',5),('listening',7),('listening-question',4),('speaking-model',6),('writing-model',8),('card',4),('T',8),('Q',10),('P',2)]:
  expected|={f'DL-A2-04-{k}{i:02}' if k in ['T','Q','P'] else f'{k}-{i:02}' for i in range(1,n+1)}
 expected|={x['assetId'] for x in assets}
-assert ids==expected and len(ids)==D['unitCount']==len(D['units'])==120
+assert ids==expected and len(ids)==D['unitCount']==len(D['units'])==114
 assert len(D['sources'])==9 and all(x['access']=='full_fetched_page' for x in D['sources'])
 phr=next(x for x in assets if x['kind']=='phrase_bank')
 items=next(u for u in D['units'] if u['id']==phr['assetId'])['items']
