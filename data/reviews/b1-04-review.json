@@ -1815,13 +1815,18 @@
       "fb7f91302e95075d213d9a41455f873a37671507"
     ],
     "branch": "arena/01a1036f-deutschlern",
-    "lastQueriedPrHead": "fb7f91302e95075d213d9a41455f873a37671507",
+    "lastQueriedPrHead": "308d1f16f3ce8b870aadd6c4732ce0c531203154",
     "prState": "OPEN",
     "mergedAt": null,
     "implementationDeployment": "failure: Deployment rate limited — retry in 24 hours.",
     "implementationDeployments": [],
     "remoteUiTested": false,
     "productionTested": false,
-    "reportCommit": "pending immediate checked push; resolve by commit title Record CR34 granular B1.4 review and cumulative checks"
+    "reportCommit": "308d1f16f3ce8b870aadd6c4732ce0c531203154",
+    "reportPushed": true,
+    "reportHeadMatchedOrigin": true,
+    "reportDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "reportDeployments": [],
+    "receiptCommit": "Resolve by title Record CR34 delivery receipt; deployment not queried."
   }
 }
