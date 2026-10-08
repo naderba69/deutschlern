@@ -200,6 +200,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A2.11-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A2.11-practical-form-fixture', width);
+  // CR30: spoken cultural plan and written temporal transformations.
+  await page.evaluate(() => openLesson('a2-12-holidays-festivals-culture'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A2.12-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A2.12-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

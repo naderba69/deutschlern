@@ -24,7 +24,7 @@ const context = vm.createContext({
   Request, Response, Headers, URL, Promise,
   self: { location: { origin: 'https://test.local' }, clients: { async claim() { claimed = true; } },
     skipWaiting() { skipWaiting = true; }, addEventListener(type, fn) { handlers[type] = fn; } },
-  caches: { async open() { return cache; }, async keys() { return ['deutsch-pfad-v56', 'deutsch-pfad-v76', 'other-application']; },
+  caches: { async open() { return cache; }, async keys() { return ['deutsch-pfad-v56', 'deutsch-pfad-v77', 'other-application']; },
     async delete(key) { deleted.push(key); } },
   fetch: (...args) => network(...args)
 });
