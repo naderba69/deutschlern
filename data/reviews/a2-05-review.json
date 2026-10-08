@@ -1,0 +1,1504 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-05-training-routine-wenn",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-05-v2",
+  "unitCount": 94,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "WENN",
+      "title": "Duden — wenn",
+      "url": "https://www.duden.de/rechtschreibung/wenn",
+      "scope": "شرط ووقت وتكرار بحسب السياق، ووجود dann الاختيارية؛لا ننقل بقية الاستعمالات المتقدمة إلى التدريب.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "END",
+      "title": "Duden — Feierabend",
+      "url": "https://www.duden.de/rechtschreibung/Feierabend",
+      "scope": "نهاية العمل ووقت الفراغ بعدها؛جمع Feierabende، لا ساعة مساء ثابتة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "PREP",
+      "title": "Duden — vorbereiten",
+      "url": "https://www.duden.de/rechtschreibung/vorbereiten",
+      "scope": "الاستعداد لـauf/für وصيغ bereitet vor؛في الدرس استعمال انعكاسي مع auf.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "PREFER",
+      "title": "Duden — gern",
+      "url": "https://www.duden.de/rechtschreibung/gern",
+      "scope": "درجات gern/lieber/am liebsten؛التفضيل ليس مرادفًا للتكرار.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "JOB",
+      "title": "Duden — Elektroniker",
+      "url": "https://www.duden.de/rechtschreibung/Elektroniker",
+      "scope": "فني في مجال الإلكترونيات وجمع Elektroniker؛لا نحوله إلى اسم عام لكل كهربائي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia — Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "الفعل المصرف ثاني مكون؛يمكن تقديم ظرف أو مكون آخر؛لا نعتمد كل تبسيط متقدم عن ترتيب المفاعيل على أنه مطلق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "فاصلة وفعل تابع في النهاية في النمط البسيط؛التابعة المتقدمة تشغل موقعًا كاملًا، لا كلمة واحدة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "COND",
+      "title": "Lingolia — Konditionalsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/konditionalsaetze",
+      "scope": "الجزآن كاملان؛الشرط الممكن بالحاضر والتقديم والتأخير، والفرق بين wenn وnur wenn. مقدمة الصفحة تبسط الشرط بلفظ nur؛لا ننقلها كدليل على العكس المنطقي، وقسم القيود يميز nur wenn صراحة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "DUAL",
+      "title": "Die Duale — Eine duale Berufsausbildung",
+      "url": "https://www.die-duale.de/DE/duale-ausbildung/eine-duale-berufsausbildung/eine-duale-berufsausbildung_node.html",
+      "scope": "قُرئ الجزء0 من16 فقط: المقدمة تصف تعدد أشكال التدريب ومؤسستي التعلم في النمط المزدوج. لا ادعاء قراءة الصفحة الكاملة أو مراجعة قانونية أو نقل النسب/الإحصاءات إلى درس اللغة.",
+      "access": "partial_fetched_page_chunk_0_of_16",
+      "accessDate": "2026-10-08"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/konditionalsaetze",
+      "reason": "404 page content; excluded"
+    },
+    {
+      "url": "https://www.make-it-in-germany.com/de/studium-ausbildung/ausbildung-in-deutschland/was-ist-ausbildung",
+      "reason": "404 page content; excluded"
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.5 — الروتين والتدريب المهني وجمل wenn",
+      "finding": "موضوع تدريب وروتين وربط شرط/وقت؛ليس دليل قبول مهني.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 35–40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** قراءة، كتابة، قواعد، وصف جدول، كلام، واستماع اختياري",
+      "finding": "المدة تقديرية والمهارات تشمل الكتابة والكلام؛الاستماع فرصة اختيارية وليس شرط تقييم.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أصف يومي الدراسي أو المهني، وأربط نشاطًا بشرط أو وقت متكرر.",
+      "finding": "الهدف وصف الروتين وربط نشاط بشرط أو وقت؛يُدرّب بالنمطين الكتابي والمنطوق.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "تُستخدم **wenn** للشرط بمعنى «إذا»، أو للوقت بمعنى «عندما/كلما» بحسب السياق. نركز هنا على الروتين والشرط الممكن بصيغة الحاضر؛ليست كل جملة wenn تكرارًا، فقد تتعلق بوقت آتٍ. ليست wenn سؤال «متى؟» الذي نصوغه بـ wann، ولا نترجمها دائمًا «لأن». في الجمل البسيطة المدروسة يأتي الفعل المصرف في نهاية الجزء التابع:",
+      "finding": "wenn شرط أو وقت، وليس كل استعمال تكرارًا ولا هو سؤال wann؛الحاضر هنا لا يثبت وقوع النشاط.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "نضع فاصلة بين التابعة والرئيسية. في النمط المدروس **دون dann**: إذا بدأت الجملة بـ wenn تشغل التابعة الموقع الأول، فيأتي الفعل المصرف بعدها ثم الفاعل: **Wenn ich Zeit habe, lerne ich.** الموقع هنا مكوّن نحوي لا الكلمة الثانية. ويصح أيضًا **Wenn ich Zeit habe, dann lerne ich.**؛لا نعد dann خطأ، لكننا لا نضيفها في تمارين الترتيب المحددة.",
+      "finding": "الموقع الثاني مكون؛قُيد قلب الرئيسية بالنمط دون dann مع الاعتراف بصحة dann lerne ich.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "إذا جاءت wenn بعد الرئيسية، لا نقلب ترتيب الرئيسية: **Ich lerne, wenn ich Zeit habe.** الفعل habe في نهاية التابعة في الحالتين. الشرط لا يعني «فقط إذا»: قول Rami إنه يلعب عند توفر الوقت لا يثبت وحده أنه لا يلعب في أي ظرف آخر، ولا أنه لعب فعلًا في سبت معين.",
+      "finding": "عند تأخر التابعة تبقى الرئيسية بترتيبها؛الشرط وحده ليس «فقط إذا» ولا يثبت وقوع حدث معين.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "النموذجان نصيان ولا يستبدلان مقطع الأمثلة الموجود. قارن الوظائف والفاصلة وتصريف الفعل وموقعه، ثم سجّل تحققك الذاتي؛لا يعد ذلك تصحيحًا آليًا للغة أو النطق.",
+      "finding": "النموذجان النصيان لا يستبدلان الصوت، والتحقق الذاتي لا يصحح اللغة أو النطق آليًا.",
+      "sourceIds": [
+        "WENN",
+        "MAIN",
+        "SUB",
+        "COND"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Ausbildung | die Ausbildungen | التكوين/التدريب المهني |",
+      "finding": "Ausbildung مؤنث وجمع Ausbildungen؛التكوين المهني هو المقصود لا شكل تدريب وحيد عالميًا.",
+      "sourceIds": [
+        "DUAL"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| der Betrieb | die Betriebe | مكان العمل/المؤسسة |",
+      "finding": "Betrieb مذكر وجمع Betriebe؛مؤسسة التدريب في السياق، لا مكان عمل فعلي للمتعلم.",
+      "sourceIds": [
+        "DUAL"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Berufsschule | die Berufsschulen | المدرسة المهنية |",
+      "finding": "Berufsschule مدرسة مهنية؛واحدة من مؤسستي التعلم في المثال، لا جامعة.",
+      "sourceIds": [
+        "DUAL"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Stundenplan | die Stundenpläne | جدول الدروس |",
+      "finding": "Stundenplan مذكر وجمع Stundenpläne؛جدول حصص لا تذكرة نقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Prüfung | die Prüfungen | الامتحان |",
+      "finding": "Prüfung امتحان/اختبار، جمع Prüfungen؛لا نفترض أنه دائمًا في نهاية الفصل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| das Fach | die Fächer | المادة الدراسية |",
+      "finding": "Fach محايد وجمع Fächer؛المادة الدراسية هنا لا كل معاني الكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Feierabend | die Feierabende | نهاية الدوام / وقت الفراغ بعده |",
+      "finding": "أضيف Feierabende والمعنيان: نهاية الدوام ووقت الفراغ بعدها؛ليس يوم عطلة أسبوعية.",
+      "sourceIds": [
+        "END"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| pünktlich | — | في الموعد |",
+      "finding": "pünktlich في الموعد، لا بالضرورة früh مبكرًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| praktisch / theoretisch | — | عملي / نظري |",
+      "finding": "praktisch/theoretisch عملي/نظري؛قد يجتمعان ولا نربط أحدهما حصرًا بكل مؤسسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| üben | übt | يتدرّب |",
+      "finding": "üben يتدرب/يتمرن، وصيغته übt؛لا إثبات إتقان من مجرد وقت التدريب.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| sich vorbereiten auf + Akkusativ | bereitet sich vor | يستعدّ لـ |",
+      "finding": "sich vorbereiten auf مع Akkusativ؛الضمير يتغير بحسب الفاعل وvor تنفصل في الرئيسية.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| der Elektroniker / die Elektronikerin | die Elektroniker / die Elektronikerinnen | فنّي/فنّية إلكترونيات |",
+      "finding": "صُحح المعنى إلى فني/فنية إلكترونيات وأضيف الجمعان؛لا ادعاء أن Rami حصل على المؤهل بعد.",
+      "sourceIds": [
+        "JOB"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "**Ich lerne, wenn ich Zeit habe.** — أدرس عندما يكون لدي وقت.",
+      "finding": "الرئيسية تسبق wenn؛habe في نهاية التابعة ولا قلب لـIch lerne.",
+      "sourceIds": [
+        "WENN",
+        "SUB",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "**Wenn ich Zeit habe, lerne ich eine Stunde.** — إذا كان لدي وقت، أدرس ساعة.",
+      "finding": "التابعة أولًا، يليها lerne ثم ich؛eine Stunde مدة الدراسة لا ساعة بدايتها.",
+      "sourceIds": [
+        "WENN",
+        "SUB",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "**Wenn der Unterricht endet, fährt Rami nach Hause.** — عندما ينتهي الدرس، يذهب رامي إلى البيت.",
+      "finding": "endet مفرد مع Unterricht، وfährt مفرد مع Rami؛نقل النشاط مرتبط بانتهاء الدرس.",
+      "sourceIds": [
+        "WENN",
+        "SUB",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "audio-model-01",
+      "text": "**Wenn Rami am Samstag Zeit hat, spielt er Fußball.** — إذا توفر وقت لرامي يوم السبت يلعب كرة القدم؛hat مفرد مع Rami.",
+      "finding": "نص المثال المسجل الكامل أضيف كما هو؛hat يناسب Rami واللعب مشروط بوقت السبت.",
+      "sourceIds": [
+        "WENN",
+        "COND"
+      ]
+    },
+    {
+      "id": "audio-model-02",
+      "text": "**Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause.** — عندما/إذا ينتهي الدرس عند الثالثة أعود إلى البيت؛نحافظ على قيد wenn ولا نستنتج وقت نهاية كل الدروس.",
+      "finding": "المثال المسجل محفوظ؛نهاية الدرس عند الثالثة قيد في wenn لا تقرير لوقت كل درس.",
+      "sourceIds": [
+        "WENN",
+        "COND"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "**Ausbildung / Betrieb / Berufsschule** — تدريب مهني / مؤسسة تدريب أو عمل / مدرسة مهنية. المثال قريب من التدريب المزدوج في ألمانيا الذي يجمع المؤسسة والمدرسة، لكنه ليس الشكل الوحيد للتدريب. توزيع ثلاثة أيام ويومين يخص Rami في النص، لا قاعدة لكل متدرب أو بلد.",
+      "finding": "التوزيع ثلاثة أيام/يومان يخص Rami؛المصدر الرسمي يثبت وجود مؤسستي تعلم لا هذا الجدول لكل متدرب.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "**Feierabend / frei haben / Freizeit** — نهاية العمل أو وقت الفراغ بعدها / لا دوام لديه / وقت فراغ. Feierabend لا يلزم أن يبدأ مساءً بساعة ثابتة، ولا هو نهاية عطلة نهاية الأسبوع.",
+      "finding": "تمييز Feierabend ووقت الفراغ وfrei haben؛لا ساعة نهاية عمل ثابتة.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "**gern / lieber / am liebsten** — يحب / يفضّل / يفضّل أكثر. **Er lernt am liebsten in der Bibliothek.** يحدد المكان المفضّل، لا عدد مرات الدراسة فيه. **Dort ist es ruhig.** هادئ هناك، لا صاخب.",
+      "finding": "am liebsten يحدد المفضل لا الأكثر تكرارًا؛Dort يعود إلى المكتبة وruhig هادئ.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "**Sich auf eine Prüfung vorbereiten.** — الاستعداد لامتحان. نقول **Ich bereite mich auf eine Prüfung vor.**؛mich مع ich و sich مع er/sie، وينفصل vor في هذه الرئيسية. بعد auf هنا Akkusativ. وفي الجدول **Praktisch und theoretisch** تعني عملي ونظري، لا أنهما لا يجتمعان في التعلم.",
+      "finding": "عبارة PHR الانعكاسية صارت كاملة في المصدر؛mich مع ich وauf eine Prüfung في النمط المدروس.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "**Wie sieht deine Woche aus? / Wann lernst du? / früh / pünktlich** — كيف يبدو أسبوعك؟ / متى تدرس؟ / مبكرًا / في الموعد. سؤال wann يطلب وقتًا؛الجواب بـ wenn قد يربط النشاط بتوفر الوقت بدل إعطاء ساعة ثابتة.",
+      "finding": "Wann سؤال وقت وwenn يربط شرطًا أو حدثًا؛früh ليس pünktlich.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "**die Aufgaben / die Notizen / wiederholen / noch Energie haben** — الواجبات أو المهام / الملاحظات / يراجع أو يكرر / تبقى لديه طاقة. **Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen.** فيها habe في التابعة و wiederhole في الرئيسية؛Energie اسم لا فعل.",
+      "finding": "Notizen ملاحظات وAufgaben واجبات/مهام؛habe تابع وwiederhole رئيسي وEnergie اسم.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "**حدود النصوص:** الحوار والقراءة عن Rami؛التدرب مع صديق واللعب يوم السبت لا يتناقضان لعدم تحديد ساعة واحدة. الاستماع لا يسمي صاحبه، وجدوله مختلف؛sie في السؤال تتبع die Person نحويًا، لا دليل جنس. و Rami في بيانات صوت القراءة اسم الراوي، مع بقاء النص بضمير الغائب.",
+      "finding": "لا تعارض لازم بين التدريب والكرة في السبت؛جدول الاستماع مستقل وهويته غير مسماة.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "**طريقة العمل:** P01 أربع جمل كتابة فقط من بيانات خيالية؛P02 ثلاث جمل تربط المواقف المعطاة وتُقرأ جهرًا. لا شريك أو تسجيل أو تدريب مهني فعلي مطلوب. جرّب الاستماع قبل فتح التفريغ؛قراءته لا تثبت فهمًا مسموعًا مستقلًا، والطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "P01 كتابة وP02 مع الجهر؛كشف التفريغ لا يثبت الاستماع المستقل، ولا تسجيل مطلوب.",
+      "sourceIds": [
+        "DUAL",
+        "END",
+        "PREFER",
+        "PREP",
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wie sieht deine Woche aus, Rami?",
+      "finding": "سؤال عن شكل أسبوع Rami؛sieht…aus منفصل، وليس سؤال الساعة فقط.",
+      "sourceIds": [
+        "JOB",
+        "WENN",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich mache eine Ausbildung zum Elektroniker. Montag bis Mittwoch bin ich im Betrieb. Am Donnerstag und Freitag habe ich Unterricht in der Berufsschule.",
+      "finding": "تدريب إلكترونيات؛الاثنين إلى الأربعاء بالمؤسسة والخميس والجمعة بالمدرسة، لا نظام إلزامي عام.",
+      "sourceIds": [
+        "JOB",
+        "WENN",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Wann lernst du für Prüfungen?",
+      "finding": "Wann سؤال عن وقت التحضير للامتحانات؛ليس سؤالًا عن تاريخ امتحان محدد.",
+      "sourceIds": [
+        "JOB",
+        "WENN",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Wenn ich am Abend Zeit habe, lerne ich eine Stunde. Am Samstag übe ich mit einem Freund.",
+      "finding": "الدراسة ساعة إذا توفر وقت مساءً؛التدرب مع صديق السبت غير مؤقت بالساعة ولا يحدد نوع التدريب.",
+      "sourceIds": [
+        "JOB",
+        "WENN",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Und was machst du nach dem Unterricht?",
+      "finding": "سؤال النشاط بعد الدروس؛لا سؤال مكان التدريب المهني.",
+      "sourceIds": [
+        "JOB",
+        "WENN",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Wenn der Unterricht früh endet, gehe ich in die Bibliothek.",
+      "finding": "إذا انتهى الدرس مبكرًا يذهب للمكتبة؛لا يلزم الذهاب كل يوم أو نهاية مبكرة دائمة.",
+      "sourceIds": [
+        "JOB",
+        "WENN",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Rami macht eine Ausbildung zum Elektroniker.",
+      "finding": "يتدرب ليصبح Elektroniker؛لا يقول النص إنه فني مؤهل بالفعل.",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Er arbeitet drei Tage pro Woche in einem Betrieb und hat an zwei Tagen Unterricht in der Berufsschule.",
+      "finding": "ثلاثة أيام عمل ويومان مدرسة؛يدعم Q06 مباشرة، ولا أسماء أيام هنا.",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Wenn er am Morgen Unterricht hat, fährt er mit dem Bus.",
+      "finding": "الحافلة عند دروس الصباح؛لا حصر كل تنقله في الحافلة.",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Nach dem Unterricht macht er seine Aufgaben.",
+      "finding": "واجبات/مهام بعد الدروس؛لا تصريح بمكان أدائها في هذه الجملة.",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Er lernt am liebsten in der Bibliothek.",
+      "finding": "المكتبة المكان المفضل am liebsten؛أُصلح شرح Q07 الذي قال «غالبًا».",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Dort ist es ruhig.",
+      "finding": "Dort المكتبة وruhig هادئ؛دليل صريح لبند T05.4 الجديد.",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Wenn er am Samstag Zeit hat, spielt er Fußball.",
+      "finding": "الكرة إذا توفر وقت السبت؛لا نستنتج نفيها عند كل ظرف آخر أو وقوعها سبتًا بعينه.",
+      "sourceIds": [
+        "WENN",
+        "PREFER",
+        "JOB",
+        "DUAL"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Welche Ausbildung macht Rami?",
+      "finding": "Eine Ausbildung zum Elektroniker؛اسم التدريب وارد صراحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie viele Tage pro Woche arbeitet er im Betrieb?",
+      "finding": "Drei Tage؛لا تخلط أيام المؤسسة بيومي المدرسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was macht er, wenn er am Morgen Unterricht hat?",
+      "finding": "Er fährt mit dem Bus؛مع الحفاظ على قيد دروس الصباح في السؤال.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wo lernt er am liebsten?",
+      "finding": "In der Bibliothek؛يسأل عن المكان المفضل لا عدد المرات.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was macht er, wenn er am Samstag Zeit hat?",
+      "finding": "Er spielt Fußball؛الجواب تابع للشرط الموجود في السؤال لا قاعدة غير مشروطة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Mein Stundenplan ist diese Woche voll.",
+      "finding": "جدول مزدحم هذا الأسبوع، لا كل الأسابيع ولا يوم بلا راحة.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Am Montag und Dienstag habe ich Unterricht.",
+      "finding": "دروس الاثنين والثلاثاء؛جدول شخص غير مسمى لا جدول Rami السابق.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause und mache eine Pause.",
+      "finding": "إذا/عندما انتهى الدرس الثالثة يرجع ويستريح؛فعلان رئيسيان بعد قيد واحد، لا وقت نهاية مؤكد لكل الدروس.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Am Mittwoch arbeite ich im Betrieb.",
+      "finding": "الأربعاء عمل بالمؤسسة؛لا يذكر جدول بقية الأيام.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen.",
+      "finding": "يراجع الملاحظات مساءً عند بقاء طاقة؛ليس تأكيدًا للمراجعة في كل مساء.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "An welchen Tagen hat die Person Unterricht?",
+      "finding": "Am Montag und Dienstag؛المقصود صاحبة/صاحب الجدول غير المسمى، لا افتراض الهوية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wann fährt sie nach Hause?",
+      "finding": "Wenn der Unterricht um drei Uhr endet؛لا نحذف القيد لنعطي موعدًا عامًا قطعيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was macht sie, wenn sie noch Energie hat?",
+      "finding": "Sie wiederholt ihre Notizen؛sie تتبع Person، والمراجعة تحت شرط الطاقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Am Montag arbeite ich im Betrieb.",
+      "finding": "العمل بالمؤسسة يوم الاثنين؛arbeite بعد ظرف الوقت ثم ich.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Am Dienstag habe ich Unterricht in der Berufsschule.",
+      "finding": "دراسة الثلاثاء بالمدرسة المهنية؛habe Unterricht لا arbeitet Unterricht.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Wenn ich am Abend Zeit habe, lerne ich Deutsch.",
+      "finding": "Wenn أولًا وhabe آخر التابعة، ثم lerne ich؛قيد الوقت مساءً حاضر.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Ich mache eine Pause, wenn ich müde bin.",
+      "finding": "الرئيسية أولًا: Ich mache، ثم wenn…bin؛لا نقلب الرئيسية السابقة للتابعة.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Wenn ich frei habe, besuche ich meine Familie.",
+      "finding": "يربط الفراغ بزيارة الأسرة بحسب الخطة؛habe ثم besuche ich.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Wenn der Bus zu spät kommt, nehme ich einen späteren Zug.",
+      "finding": "يربط تأخر الحافلة بقطار لاحق؛تعليمات السيناريو تحصر هذه العلاقة دون ادعاء عمومها.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Ich mache eine Pause, wenn ich lange lerne.",
+      "finding": "الرئيسية تسبق wenn؛lerne آخر التابعة، ولا ich mache بعد الفاصلة.",
+      "sourceIds": [
+        "MAIN",
+        "SUB",
+        "WENN"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Wenn ich Zeit habe, lerne ich.** → إذا كان لدي وقت، أدرس.",
+      "finding": "Wenn الشرطية مع الفعل الأخير ثم lerne ich؛لا يلزم وقوع الدراسة فعلًا.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "**Ich übe, wenn der Unterricht endet.** → أتدرّب عندما ينتهي الدرس.",
+      "finding": "Ich übe رئيسية تسبق التابعة؛نهاية الدرس تحدد وقت التدريب في المثال.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "**die Berufsschule** → المدرسة المهنية.",
+      "finding": "Berufsschule اسم مؤنث للمدرسة المهنية؛لا تنقل شروط قبول غير مذكورة.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "**die Prüfung** → الامتحان.",
+      "finding": "Prüfung الامتحان؛لا معنى الإقامة أو مكان العمل.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ]
+    },
+    {
+      "id": "DL-A2-05-T01",
+      "text": "1. مكان التدريب العملي: **der Betrieb / das Geschenk**\n2. جدول الحصص: **der Stundenplan / die Fahrkarte**\n3. مكان الدروس النظرية والمهنية: **die Berufsschule / die Bäckerei**\n4. اختبار لتقييم المعرفة أو المهارة: **die Prüfung / die Unterkunft**",
+      "finding": "كل بند ومفتاحه ودليله أو ترتيب كلماته مراجع في items.",
+      "sourceIds": [],
+      "items": [
+        {
+          "number": 1,
+          "text": "مكان التدريب العملي: **der Betrieb / das Geschenk**",
+          "answer": "der Betrieb",
+          "finding": "المؤسسة موضع التدريب؛Geschenk هدية."
+        },
+        {
+          "number": 2,
+          "text": "جدول الحصص: **der Stundenplan / die Fahrkarte**",
+          "answer": "der Stundenplan",
+          "finding": "جدول حصص لا تذكرة نقل."
+        },
+        {
+          "number": 3,
+          "text": "مكان الدروس النظرية والمهنية: **die Berufsschule / die Bäckerei**",
+          "answer": "die Berufsschule",
+          "finding": "مدرسة مهنية لا مخبز؛لا ندعي انعدام التدريب العملي في المدرسة."
+        },
+        {
+          "number": 4,
+          "text": "اختبار لتقييم المعرفة أو المهارة: **die Prüfung / die Unterkunft**",
+          "answer": "die Prüfung",
+          "finding": "استبدلت عبارة نهاية الفصل بتعريف الاختبار، لتجنب تعميم موعد الامتحان."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T02",
+      "text": "1. ______ ich müde bin, mache ich eine Pause.\n2. Ich übe Deutsch, ______ ich Freizeit habe.\n3. ______ der Unterricht beginnt, sind alle pünktlich.",
+      "finding": "كل بند ومفتاحه ودليله أو ترتيب كلماته مراجع في items.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "______ ich müde bin, mache ich eine Pause.",
+          "answer": "Wenn",
+          "finding": "بداية الجملة Wenn كبيرة، وbin آخر التابعة."
+        },
+        {
+          "number": 2,
+          "text": "Ich übe Deutsch, ______ ich Freizeit habe.",
+          "answer": "wenn",
+          "finding": "wenn وسط الجملة صغيرة، مع بقاء Ich übe."
+        },
+        {
+          "number": 3,
+          "text": "______ der Unterricht beginnt, sind alle pünktlich.",
+          "answer": "Wenn",
+          "finding": "Wenn قبل التابعة؛مثال افتراضي عن الانضباط لا حقيقة عن كل المتعلمين."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T03",
+      "text": "1. Wenn Rami am Samstag Zeit ______, spielt er Fußball. (haben)\n2. Mira lernt, wenn sie zu Hause ______. (sein)\n3. Wenn der Unterricht ______, fahren die Lernenden nach Hause. (enden)\n4. في Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen، ما الفعل المصرف في نهاية جزء wenn؟",
+      "finding": "كل بند ومفتاحه ودليله أو ترتيب كلماته مراجع في items.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "Wenn Rami am Samstag Zeit ______, spielt er Fußball. (haben)",
+          "answer": "hat",
+          "finding": "haben مع Rami يصبح hat."
+        },
+        {
+          "number": 2,
+          "text": "Mira lernt, wenn sie zu Hause ______. (sein)",
+          "answer": "ist",
+          "finding": "sein مع sie يصبح ist."
+        },
+        {
+          "number": 3,
+          "text": "Wenn der Unterricht ______, fahren die Lernenden nach Hause. (enden)",
+          "answer": "endet",
+          "finding": "enden مع Unterricht يصبح endet؛الجمع في الرئيسية لا يغيره."
+        },
+        {
+          "number": 4,
+          "text": "في Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen، ما الفعل المصرف في نهاية جزء wenn؟",
+          "answer": "habe",
+          "finding": "habe فعل التابعة، لا wiederhole الرئيسية أو Energie الاسم؛يدعم Q08."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T04",
+      "text": "استعمل كل كتلة مرة، وأضف الفاصلة والنقطة وحرف البداية الكبير. ابدأ بـ Wenn في 1–2، وبـ Ich في 3؛لا تضف dann في هذا التمرين:\n\n1. wenn / ich / Zeit / habe / lerne / ich / Deutsch\n2. der Unterricht / wenn / endet / fährt / Rami / nach Hause\n3. wenn / Zeit / ich / lerne / ich / habe / Deutsch",
+      "finding": "كل بند ومفتاحه ودليله أو ترتيب كلماته مراجع في items.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "wenn / ich / Zeit / habe / lerne / ich / Deutsch",
+          "answer": "Wenn ich Zeit habe, lerne ich Deutsch.",
+          "finding": "حُدد البدء بـWenn فلا نتجاهل إمكان ترتيب آخر في مهمة مختلفة."
+        },
+        {
+          "number": 2,
+          "text": "der Unterricht / wenn / endet / fährt / Rami / nach Hause",
+          "answer": "Wenn der Unterricht endet, fährt Rami nach Hause.",
+          "finding": "Wenn أولًا؛فعل التابعة endet والرئيسية fährt Rami."
+        },
+        {
+          "number": 3,
+          "text": "wenn / Zeit / ich / lerne / ich / habe / Deutsch",
+          "answer": "Ich lerne Deutsch, wenn ich Zeit habe.",
+          "finding": "Ich أولًا؛تدريب حقيقي على تأخير wenn يوافق P01."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Rami macht eine Ausbildung zum Elektroniker.\n2. Er hat fünf Tage pro Woche Unterricht in der Berufsschule.\n3. Wenn er morgens Unterricht hat, fährt er mit dem Bus.\n4. In der Bibliothek ist es laut.\n5. Rami arbeitet drei Tage pro Woche im Betrieb.\n6. Er lernt am liebsten in der Bibliothek.",
+      "finding": "كل بند ومفتاحه ودليله أو ترتيب كلماته مراجع في items.",
+      "sourceIds": [],
+      "items": [
+        {
+          "number": 1,
+          "text": "Rami macht eine Ausbildung zum Elektroniker.",
+          "answer": "صحيح",
+          "finding": "المهنة منصوصة."
+        },
+        {
+          "number": 2,
+          "text": "Er hat fünf Tage pro Woche Unterricht in der Berufsschule.",
+          "answer": "خطأ: يومان لا خمسة",
+          "finding": "عدد أيام المدرسة اثنان؛الخمسة مجموع المؤسسة والمدرسة لا المدرسة وحدها."
+        },
+        {
+          "number": 3,
+          "text": "Wenn er morgens Unterricht hat, fährt er mit dem Bus.",
+          "answer": "صحيح",
+          "finding": "الحافلة تحت قيد دروس الصباح كما في النص."
+        },
+        {
+          "number": 4,
+          "text": "In der Bibliothek ist es laut.",
+          "answer": "خطأ: ruhig لا laut",
+          "finding": "المكتبة هادئة صراحة؛أزيل الاستنتاج القديم من شرط اللعب."
+        },
+        {
+          "number": 5,
+          "text": "Rami arbeitet drei Tage pro Woche im Betrieb.",
+          "answer": "صحيح: ثلاثة أيام",
+          "finding": "أضيف دليل مباشر لثلاثة أيام المؤسسة وQ06."
+        },
+        {
+          "number": 6,
+          "text": "Er lernt am liebsten in der Bibliothek.",
+          "answer": "صحيح: المكتبة",
+          "finding": "أضيف تدريب المكان المفضل لـQ07، لا التكرار."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T06",
+      "text": "أكمل من البنك، واستعمل كل عنصر مرة: **Dienstag — drei — Notizen**.\n\n1. Die Person hat am Montag und ______ Unterricht.\n2. Wenn der Unterricht um ______ Uhr endet, fährt die Person nach Hause und macht eine Pause.\n3. Wenn sie am Abend noch Energie hat, wiederholt sie ihre ______.",
+      "finding": "كل بند ومفتاحه ودليله أو ترتيب كلماته مراجع في items.",
+      "sourceIds": [],
+      "items": [
+        {
+          "number": 1,
+          "text": "Die Person hat am Montag und ______ Unterricht.",
+          "answer": "Dienstag",
+          "finding": "الثلاثاء من الجملة الثانية."
+        },
+        {
+          "number": 2,
+          "text": "Wenn der Unterricht um ______ Uhr endet, fährt die Person nach Hause und macht eine Pause.",
+          "answer": "drei",
+          "finding": "الثالثة داخل wenn؛بقي القيد ولم يُحوّل إلى خبر قطعي عام."
+        },
+        {
+          "number": 3,
+          "text": "Wenn sie am Abend noch Energie hat, wiederholt sie ihre ______.",
+          "answer": "Notizen",
+          "finding": "الملاحظات تحت شرط بقاء الطاقة مساءً."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T07",
+      "text": "**أ — توصيل وفهم:** في هذه الخطة الخيالية فقط: وقت الفراغ من الدوام لزيارة الأسرة؛تأخر الحافلة يعني أخذ قطار لاحق؛الدراسة الطويلة تتبعها استراحة. صل بحسب هذه البيانات، لا بحسب كل ما يمكن حدوثه في الواقع، واستعمل كل نهاية مرة:\n\n1. Wenn ich frei habe, …\n2. Wenn der Bus zu spät kommt, …\n3. Ich mache eine Pause, wenn …\n\nأ. … ich lange lerne.\nب. … nehme ich einen späteren Zug.\nج. … besuche ich meine Familie.\n\n4. في سياق هذه المواقف، قد تعني wenn: **إذا أو عندما/كلما بحسب السياق / لأن دائمًا**.\n\n**ب — P02: ثلاث جمل مع الجهر**\n\nاكتب ثلاث جمل كاملة من مواقف التوصيل الثلاثة نفسها، دون تغيير العلاقة المعطاة: فراغ من الدوام وزيارة الأسرة؛تأخر الحافلة وأخذ قطار لاحق؛دراسة طويلة وأخذ استراحة. ابدأ الجملتين 1–2 بـ Wenn دون dann، واجعل الجملة 3 تبدأ بـ Ich mache eine Pause ثم wenn بعد الفاصلة. استعمل كل موقف مرة، ثم اقرأ الجمل الثلاث بصوت مرتفع. لا حاجة إلى شريك أو تسجيل أو رحلة حقيقية.",
+      "finding": "أربعة بنود توصيل/معنى ثم ثلاثة مطالب إنتاج؛العلاقات صريحة في المعطيات، فلا يُرفض بديل منطقي في سياق آخر باعتباره خطأ لغويًا.",
+      "sourceIds": [
+        "WENN",
+        "SUB"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "Wenn ich frei habe, …",
+          "answer": "ج",
+          "finding": "طبق العلاقة المعطاة واستعمل كل نهاية مرة؛لا استدلال على سلوك كل الناس."
+        },
+        {
+          "number": 2,
+          "text": "Wenn der Bus zu spät kommt, …",
+          "answer": "ب",
+          "finding": "طبق العلاقة المعطاة واستعمل كل نهاية مرة؛لا استدلال على سلوك كل الناس."
+        },
+        {
+          "number": 3,
+          "text": "Ich mache eine Pause, wenn …",
+          "answer": "أ",
+          "finding": "طبق العلاقة المعطاة واستعمل كل نهاية مرة؛لا استدلال على سلوك كل الناس."
+        },
+        {
+          "number": 4,
+          "text": "في سياق هذه المواقف، قد تعني wenn: **إذا أو عندما/كلما بحسب السياق / لأن دائمًا**.",
+          "answer": "إذا أو عندما/كلما بحسب السياق",
+          "finding": "طبق العلاقة المعطاة واستعمل كل نهاية مرة؛لا استدلال على سلوك كل الناس."
+        },
+        {
+          "number": 5,
+          "text": "صياغة موقف الفراغ وزيارة الأسرة",
+          "answer": "Wenn ich frei habe, besuche ich meine Familie.",
+          "finding": "P02 ثلاث جمل بالترتيب المحدد مع قراءة الجميع جهرًا؛لا تسجيل مطلوب."
+        },
+        {
+          "number": 6,
+          "text": "صياغة موقف تأخر الحافلة والقطار اللاحق",
+          "answer": "Wenn der Bus zu spät kommt, nehme ich einen späteren Zug.",
+          "finding": "P02 ثلاث جمل بالترتيب المحدد مع قراءة الجميع جهرًا؛لا تسجيل مطلوب."
+        },
+        {
+          "number": 7,
+          "text": "صياغة موقف الدراسة الطويلة والاستراحة، وقراءة الجميع جهرًا",
+          "answer": "Ich mache eine Pause, wenn ich lange lerne.",
+          "finding": "P02 ثلاث جمل بالترتيب المحدد مع قراءة الجميع جهرًا؛لا تسجيل مطلوب."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-T08",
+      "text": "اكتب أربع جمل عن أسبوع خيالي بضمير ich، كتابة فقط: الجملة 1 عن العمل في مؤسسة يوم الاثنين؛الجملة 2 عن الدراسة في المدرسة المهنية يوم الثلاثاء؛الجملة 3 تبدأ بـ Wenn وتربط تعلم الألمانية بتوفر الوقت مساءً؛الجملة 4 تبدأ بالرئيسية وتربط أخذ استراحة بالشعور بالتعب، مع wenn بعد الفاصلة. حافظ على الفعل المصرف في نهاية التابعة في الجملتين 3–4؛لا تضف dann في هذا التدريب. لا جهر أو تسجيل أو بيانات شخصية مطلوبة.",
+      "finding": "أربع جمل كتابة فقط من بيانات خيالية؛يتدرب التقديم والتأخير دون تعميم شرط قلب الرئيسية على النمطين.",
+      "sourceIds": [
+        "WENN",
+        "SUB",
+        "MAIN"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "عمل الاثنين في المؤسسة",
+          "answer": "Am Montag arbeite ich im Betrieb.",
+          "finding": "مطابقة P01 كتابة فقط؛الفاصلة وتصريف الفعل بحسب موضع التابعة."
+        },
+        {
+          "number": 2,
+          "text": "دراسة الثلاثاء بالمدرسة المهنية",
+          "answer": "Am Dienstag habe ich Unterricht in der Berufsschule.",
+          "finding": "مطابقة P01 كتابة فقط؛الفاصلة وتصريف الفعل بحسب موضع التابعة."
+        },
+        {
+          "number": 3,
+          "text": "تعلم الألمانية إذا توفر وقت مساءً؛Wenn أولًا",
+          "answer": "Wenn ich am Abend Zeit habe, lerne ich Deutsch.",
+          "finding": "مطابقة P01 كتابة فقط؛الفاصلة وتصريف الفعل بحسب موضع التابعة."
+        },
+        {
+          "number": 4,
+          "text": "استراحة عند التعب؛الرئيسية أولًا",
+          "answer": "Ich mache eine Pause, wenn ich müde bin.",
+          "finding": "مطابقة P01 كتابة فقط؛الفاصلة وتصريف الفعل بحسب موضع التابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q01",
+      "text": "ما معنى **die Berufsschule**؟",
+      "finding": "المدرسة المهنية هي الجواب؛المحطة والقائمة مختلفتان في المعنى.",
+      "sourceIds": [],
+      "options": [
+        "مدرسة مهنية.",
+        "محطة قطار.",
+        "قائمة الطعام."
+      ],
+      "answer": "مدرسة مهنية.",
+      "explanation": "Berufsschule هي المدرسة التي يتلقى فيها المتدرب دروسًا مهنية.",
+      "sourceTaskIds": [
+        "DL-A2-05-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q02",
+      "text": "اختر الجملة الصحيحة:",
+      "finding": "bin آخر التابعة ثم mache ich؛الرابط T04 ترتيب فعل لا مجرد ملء wenn في T02.",
+      "sourceIds": [],
+      "options": [
+        "Wenn ich bin müde, mache ich eine Pause.",
+        "Wenn ich müde bin, mache ich eine Pause.",
+        "Wenn ich müde bin, ich mache eine Pause."
+      ],
+      "answer": "Wenn ich müde bin, mache ich eine Pause.",
+      "explanation": "في النمط المعروض دون dann، تأتي التابعة أولًا وفعلها المصرف في نهايتها، ثم فعل الرئيسية وبعده الفاعل. إذا تأخرت wenn لا نقلب الرئيسية السابقة لها.",
+      "sourceTaskIds": [
+        "DL-A2-05-T04"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q03",
+      "text": "أكمل: Wenn der Unterricht um drei Uhr ___, fährt sie nach Hause.",
+      "finding": "endet يناسب Unterricht؛فعل fährt لا يؤدي معنى انتهاء الدرس وUnterricht اسم.",
+      "sourceIds": [],
+      "options": [
+        "fährt",
+        "Unterricht",
+        "endet"
+      ],
+      "answer": "endet",
+      "explanation": "الفعل المصرف endet يأتي في نهاية جملة wenn.",
+      "sourceTaskIds": [
+        "DL-A2-05-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q04",
+      "text": "أي جملة صحيحة؟",
+      "finding": "habe آخر التابعة ثم lerne ich؛المشتتان يخلطان موضعي الفعل والفاعل.",
+      "sourceIds": [],
+      "options": [
+        "Wenn ich Zeit habe, ich lerne eine Stunde.",
+        "Wenn ich Zeit habe, lerne ich eine Stunde.",
+        "Wenn ich habe Zeit, lerne ich eine Stunde."
+      ],
+      "answer": "Wenn ich Zeit habe, lerne ich eine Stunde.",
+      "explanation": "في النمط المعروض دون dann، تأتي التابعة أولًا وفعلها المصرف في نهايتها، ثم فعل الرئيسية وبعده الفاعل. إذا تأخرت wenn لا نقلب الرئيسية السابقة لها.",
+      "sourceTaskIds": [
+        "DL-A2-05-T04"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q05",
+      "text": "ما التدريب المهني الذي يقوم به Rami؟",
+      "finding": "صُحح نص الجواب إلى فني إلكترونيات؛الفهرس0 ثابت والنص لا يذكر طاهيًا أو موظف فندق.",
+      "sourceIds": [],
+      "options": [
+        "فنّي إلكترونيات.",
+        "طاهٍ.",
+        "موظف في فندق."
+      ],
+      "answer": "فنّي إلكترونيات.",
+      "explanation": "يذكر النص eine Ausbildung zum Elektroniker.",
+      "sourceTaskIds": [
+        "DL-A2-05-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q06",
+      "text": "كم يومًا يعمل Rami في المؤسسة أسبوعيًا؟",
+      "finding": "ثلاثة أيام بالمؤسسة، وT05.5 يدرب المعلومة صراحة.",
+      "sourceIds": [],
+      "options": [
+        "يومًا واحدًا.",
+        "خمسة أيام.",
+        "ثلاثة أيام."
+      ],
+      "answer": "ثلاثة أيام.",
+      "explanation": "يعمل في المؤسسة ثلاثة أيام في الأسبوع.",
+      "sourceTaskIds": [
+        "DL-A2-05-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q07",
+      "text": "أين يفضّل Rami الدراسة؟",
+      "finding": "المكان المفضل المكتبة؛شرح am liebsten صُحح من «غالبًا» إلى التفضيل.",
+      "sourceIds": [],
+      "options": [
+        "في المطعم.",
+        "في المكتبة.",
+        "في محطة القطار."
+      ],
+      "answer": "في المكتبة.",
+      "explanation": "am liebsten تعني أنه يفضّل الدراسة في المكتبة أكثر؛ليست وصفًا لعدد المرات أو «غالبًا».",
+      "sourceTaskIds": [
+        "DL-A2-05-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q08",
+      "text": "في الجملة **Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen**، ما الفعل في نهاية جملة wenn؟",
+      "finding": "habe فعل التابعة؛Energie اسم وwiederhole فعل الرئيسية؛Q08→T03.4 لا ادعاء قياس الاستماع.",
+      "sourceIds": [],
+      "options": [
+        "habe",
+        "Energie",
+        "wiederhole"
+      ],
+      "answer": "habe",
+      "explanation": "الفعل المصرف في الجملة التابعة هو habe ويأتي في نهايتها.",
+      "sourceTaskIds": [
+        "DL-A2-05-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q09",
+      "text": "في سياق الروتين، قد تعني **wenn**:",
+      "finding": "إذا أو عندما/كلما بحسب السياق؛ليست دائمًا لأن ولا قبل أن. T07.4 يدرب المعنى.",
+      "sourceIds": [],
+      "options": [
+        "لأن دائمًا.",
+        "قبل أن.",
+        "إذا أو عندما/كلما بحسب السياق."
+      ],
+      "answer": "إذا أو عندما/كلما بحسب السياق.",
+      "explanation": "تستخدم wenn للشرط أو لحدث يتكرر بحسب السياق.",
+      "sourceTaskIds": [
+        "DL-A2-05-T07"
+      ]
+    },
+    {
+      "id": "DL-A2-05-Q10",
+      "text": "اختر الترتيب الصحيح:",
+      "finding": "نفس تركيب T04.2؛Q10→T04 بدل الكتابة الحرة، مع قيد النمط دون dann.",
+      "sourceIds": [],
+      "options": [
+        "Wenn der Unterricht endet, Rami fährt nach Hause.",
+        "Wenn der Unterricht endet, fährt Rami nach Hause.",
+        "Wenn endet der Unterricht, Rami nach Hause fährt."
+      ],
+      "answer": "Wenn der Unterricht endet, fährt Rami nach Hause.",
+      "explanation": "في النمط المعروض دون dann، تأتي التابعة أولًا وفعلها المصرف في نهايتها، ثم فعل الرئيسية وبعده الفاعل. إذا تأخرت wenn لا نقلب الرئيسية السابقة لها.",
+      "sourceTaskIds": [
+        "DL-A2-05-T04"
+      ]
+    },
+    {
+      "id": "DL-A2-05-P01",
+      "text": "اكتب أربع جمل عن أسبوع خيالي بضمير ich، كتابة فقط: الجملة 1 عن العمل في مؤسسة يوم الاثنين؛الجملة 2 عن الدراسة في المدرسة المهنية يوم الثلاثاء؛الجملة 3 تبدأ بـ Wenn وتربط تعلم الألمانية بتوفر الوقت مساءً؛الجملة 4 تبدأ بالرئيسية وتربط أخذ استراحة بالشعور بالتعب، مع wenn بعد الفاصلة. حافظ على الفعل المصرف في نهاية التابعة في الجملتين 3–4؛لا تضف dann في هذا التدريب. لا جهر أو تسجيل أو بيانات شخصية مطلوبة.",
+      "finding": "التعليمات مطابقة حرفيًا لمصدرها والمودالية والنموذج والمعايير متسقة؛فحص الطول والإقرار لا يصحح اللغة أو النطق.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل: عمل الاثنين، مدرسة الثلاثاء، دراسة الألمانية عند توفر الوقت مساءً، واستراحة عند التعب؛كتابة فقط.",
+        "meaningClarity": "الأنشطة والأيام والشرطان متسقة مع البيانات الخيالية؛لا يعمم الجدول على كل متدرب.",
+        "targetSkill": "wenn في أول الجملة3 وبعد الرئيسية في4؛فاصلة وفعل مصرف في نهاية التابعة، وقلب الرئيسية فقط حين تتقدم التابعة في النمط بلا dann."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 140,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-05-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-05-P02",
+      "text": "اكتب ثلاث جمل كاملة من مواقف التوصيل الثلاثة نفسها، دون تغيير العلاقة المعطاة: فراغ من الدوام وزيارة الأسرة؛تأخر الحافلة وأخذ قطار لاحق؛دراسة طويلة وأخذ استراحة. ابدأ الجملتين 1–2 بـ Wenn دون dann، واجعل الجملة 3 تبدأ بـ Ich mache eine Pause ثم wenn بعد الفاصلة. استعمل كل موقف مرة، ثم اقرأ الجمل الثلاث بصوت مرتفع. لا حاجة إلى شريك أو تسجيل أو رحلة حقيقية.",
+      "finding": "التعليمات مطابقة حرفيًا لمصدرها والمودالية والنموذج والمعايير متسقة؛فحص الطول والإقرار لا يصحح اللغة أو النطق.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل تربط المواقف الثلاثة المعطاة مرة لكل منها، وقد قرأتها كلها جهرًا.",
+        "meaningClarity": "الفراغ يرتبط بزيارة الأسرة، وتأخر الحافلة بقطار لاحق، والدراسة الطويلة باستراحة بحسب الخطة، لا بدائل مختلطة.",
+        "targetSkill": "الجملتان1–2 تبدآن بـWenn، والثالثة بالرئيسية؛الفعل المصرف آخر التابعة، والفاصلة والترتيب صحيحان دون dann في هذا التدريب."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-05-T07"
+      ]
+    },
+    {
+      "id": "DL-A2-05-AUD-PHR-01",
+      "text": "Die Ausbildung. Der Betrieb. Die Berufsschule. Der Stundenplan. Die Prüfung. Das Fach. Der Feierabend. Pünktlich. Praktisch und theoretisch. Üben. Sich auf eine Prüfung vorbereiten. Der Elektroniker. Die Elektronikerin. Ich lerne, wenn ich Zeit habe. Wenn ich Zeit habe, lerne ich eine Stunde. Wenn der Unterricht endet, fährt Rami nach Hause.",
+      "finding": "الكلمات والأصوات والمسارات والحالات محفوظة؛تغير source_line/source_heading فقط. اسم Rami في بيانات القراءة لا يحول السرد بضمير الغائب إلى رواية شخصية مسماة في الاستماع.",
+      "sourceIds": [],
+      "kind": "phrase_bank",
+      "segmentCount": 1,
+      "items": [
+        {
+          "number": 1,
+          "text": "Die Ausbildung.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 2,
+          "text": "Der Betrieb.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 3,
+          "text": "Die Berufsschule.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 4,
+          "text": "Der Stundenplan.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 5,
+          "text": "Die Prüfung.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 6,
+          "text": "Das Fach.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 7,
+          "text": "Der Feierabend.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 8,
+          "text": "Pünktlich.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 9,
+          "text": "Praktisch und theoretisch.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 10,
+          "text": "Üben.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 11,
+          "text": "Sich auf eine Prüfung vorbereiten.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 12,
+          "text": "Der Elektroniker.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 13,
+          "text": "Die Elektronikerin.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 14,
+          "text": "Ich lerne, wenn ich Zeit habe.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 15,
+          "text": "Wenn ich Zeit habe, lerne ich eine Stunde.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 16,
+          "text": "Wenn der Unterricht endet, fährt Rami nach Hause.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-05-AUD-DLG-01",
+      "text": "Wie sieht deine Woche aus, Rami?\nIch mache eine Ausbildung zum Elektroniker. Montag bis Mittwoch bin ich im Betrieb. Am Donnerstag und Freitag habe ich Unterricht in der Berufsschule.\nWann lernst du für Prüfungen?\nWenn ich am Abend Zeit habe, lerne ich eine Stunde. Am Samstag übe ich mit einem Freund.\nUnd was machst du nach dem Unterricht?\nWenn der Unterricht früh endet, gehe ich in die Bibliothek.",
+      "finding": "الكلمات والأصوات والمسارات والحالات محفوظة؛تغير source_line/source_heading فقط. اسم Rami في بيانات القراءة لا يحول السرد بضمير الغائب إلى رواية شخصية مسماة في الاستماع.",
+      "sourceIds": [],
+      "kind": "dialogue",
+      "segmentCount": 6
+    },
+    {
+      "id": "DL-A2-05-AUD-READ-01",
+      "text": "Rami macht eine Ausbildung zum Elektroniker. Er arbeitet drei Tage pro Woche in einem Betrieb und hat an zwei Tagen Unterricht in der Berufsschule. Wenn er am Morgen Unterricht hat, fährt er mit dem Bus. Nach dem Unterricht macht er seine Aufgaben. Er lernt am liebsten in der Bibliothek. Dort ist es ruhig. Wenn er am Samstag Zeit hat, spielt er Fußball.",
+      "finding": "الكلمات والأصوات والمسارات والحالات محفوظة؛تغير source_line/source_heading فقط. اسم Rami في بيانات القراءة لا يحول السرد بضمير الغائب إلى رواية شخصية مسماة في الاستماع.",
+      "sourceIds": [],
+      "kind": "reading",
+      "segmentCount": 1
+    },
+    {
+      "id": "DL-A2-05-AUD-LST-01",
+      "text": "Mein Stundenplan ist diese Woche voll. Am Montag und Dienstag habe ich Unterricht. Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause und mache eine Pause. Am Mittwoch arbeite ich im Betrieb. Wenn ich am Abend noch Energie habe, wiederhole ich meine Notizen.",
+      "finding": "الكلمات والأصوات والمسارات والحالات محفوظة؛تغير source_line/source_heading فقط. اسم Rami في بيانات القراءة لا يحول السرد بضمير الغائب إلى رواية شخصية مسماة في الاستماع.",
+      "sourceIds": [],
+      "kind": "listening",
+      "segmentCount": 1
+    },
+    {
+      "id": "DL-A2-05-AUD-MODEL-01",
+      "text": "Ich lerne, wenn ich Zeit habe. Wenn ich Zeit habe, lerne ich eine Stunde. Wenn der Unterricht endet, fährt Rami nach Hause. Wenn Rami am Samstag Zeit hat, spielt er Fußball. Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause.",
+      "finding": "الكلمات والأصوات والمسارات والحالات محفوظة؛تغير source_line/source_heading فقط. اسم Rami في بيانات القراءة لا يحول السرد بضمير الغائب إلى رواية شخصية مسماة في الاستماع.",
+      "sourceIds": [],
+      "kind": "model_sentences",
+      "segmentCount": 1,
+      "items": [
+        {
+          "number": 1,
+          "text": "Ich lerne, wenn ich Zeit habe.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 2,
+          "text": "Wenn ich Zeit habe, lerne ich eine Stunde.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 3,
+          "text": "Wenn der Unterricht endet, fährt Rami nach Hause.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 4,
+          "text": "Wenn Rami am Samstag Zeit hat, spielt er Fußball.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        },
+        {
+          "number": 5,
+          "text": "Wenn der Unterricht um drei Uhr endet, fahre ich nach Hause.",
+          "finding": "طابق المصدر نصيًا؛المفردات/الأمثلة موجودة دون توليد أو استماع أو تغيير التفريغ."
+        }
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-05-training-routine-wenn.md": "a27db38acbd6322499468c2b4dc790481cbd1af83b587994d9a7a9a2e584317c",
+    "content/A2/lesson-05-training-routine-wenn.assessment.json": "5f8bcb716294df398e7d040ded4c9e17029d2526e5817548cefa9bfb4bb3d8cd"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-05-AUD-PHR-01": "a5696b4a5dc912261bebf14c9f67c8acd759239b45dcc0798b885602bdfdd4cc",
+    "DL-A2-05-AUD-DLG-01": "d85158066999322b14d7fa238f85fae2bd465d3894dc4ddc30f03a149e2ac86f",
+    "DL-A2-05-AUD-READ-01": "c621c540bf89caadb2760df64cb5c27d5c4fecfb49175e107a2b9d6cc5bc6dfb",
+    "DL-A2-05-AUD-LST-01": "85832b950a97305082bbb7eef646d470c32cf7d77a8e19adb31f8c1b26be5fe4",
+    "DL-A2-05-AUD-MODEL-01": "8525eae991ecbe416dfb3a931404a7a005aa80037957f225e52772b6e61a00e5"
+  },
+  "preservation": {
+    "baseline": "59a29c0346d54b7a57548f9924a1ee92342a67b0",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-05-AUD-PHR-01",
+        "fields": [
+          "source_line",
+          "source_heading"
+        ]
+      },
+      {
+        "assetId": "DL-A2-05-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-05-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-05-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-05-AUD-MODEL-01",
+        "fields": [
+          "source_line",
+          "source_heading"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 29,
+    "changedOptionTexts": [
+      [
+        "DL-A2-05-Q05",
+        0
+      ]
+    ]
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1914708,
+    "cacheVersion": "v70",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "axeScreenStates": 105,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 69,
+    "axeIncompleteNodeOccurrences": 160,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; historical intermittency not proven fixed"
+    ],
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 23
+    },
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Self-check tests validate local evidence, not linguistic correctness.",
+      "Dialogue-heading count55 is a label-based count, not a count of recordings.",
+      "No human reviewer is a prerequisite for continuation."
+    ],
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "00580af492ccdab9440fb5b231884efc22ea3035",
+    "implementationPushed": true,
+    "remoteUiTested": false,
+    "priorVercelLimit": "CR22 rate limited; no deployment retries requested"
+  },
+  "campaign": {
+    "reviewedLessons": 22,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 31,
+    "next": "CR24/A2.6"
+  }
+}
