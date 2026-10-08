@@ -2077,17 +2077,29 @@
     "implementationHeadOriginMatched": true,
     "pr": {
       "number": 1,
-      "headRefOid": "ed115027a205d2eb57e801841d85d163b5d3e16f",
+      "state": "OPEN",
       "mergedAt": null,
-      "state": "OPEN"
+      "queriedAtHead": "5809deb63b766983a9ca5045a4c8ee68c3245353"
     },
     "implementationDeployment": {
       "state": "failure",
       "description": "Deployment rate limited — retry in 24 hours.",
       "deployments": []
     },
-    "reportPushed": false,
+    "reportPushed": true,
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportCommit": "5809deb63b766983a9ca5045a4c8ee68c3245353",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR39 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   }
 }
