@@ -74,6 +74,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A1.2-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'A1.2-practical-form-fixture', width);
+  // CR9: cafe dialogue and the oral-cafe/written-route forms.
+  await page.evaluate(() => openLesson('a1-03-city-cafe-hotel'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A1.3-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A1.3-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

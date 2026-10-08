@@ -24,7 +24,7 @@ const context = vm.createContext({
   Request, Response, Headers, URL, Promise,
   self: { location: { origin: 'https://test.local' }, clients: { async claim() { claimed = true; } },
     skipWaiting() { skipWaiting = true; }, addEventListener(type, fn) { handlers[type] = fn; } },
-  caches: { async open() { return cache; }, async keys() { return ['deutsch-pfad-v52', 'deutsch-pfad-v53', 'other-application']; },
+  caches: { async open() { return cache; }, async keys() { return ['deutsch-pfad-v53', 'deutsch-pfad-v54', 'other-application']; },
     async delete(key) { deleted.push(key); } },
   fetch: (...args) => network(...args)
 });
@@ -44,7 +44,7 @@ async function dispatch(request) {
   const install = event(); handlers.install(install); await Promise.all(install.tasks);
   assert.equal(skipWaiting, true);
   const activate = event(); handlers.activate(activate); await Promise.all(activate.tasks);
-  assert.deepEqual(deleted, ['deutsch-pfad-v52'], 'activation must preserve this version and unrelated application caches');
+  assert.deepEqual(deleted, ['deutsch-pfad-v53'], 'activation must preserve this version and unrelated application caches');
   assert.equal(claimed, true);
   assert.equal(await dispatch(new Request('https://outside.local/file.mp3')), undefined);
   assert.equal(await dispatch(new Request('https://test.local/save', { method: 'POST' })), undefined);

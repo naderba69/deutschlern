@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "assessment": {
     "status": "ready",
-    "version": "a1-03-v1",
+    "version": "a1-03-v2",
     "minimumScore": 80,
     "minimumItems": 10,
     "objectiveIds": [
@@ -12,9 +12,10 @@
     "performanceEvidenceRequired": true,
     "performanceEvidenceImplemented": true,
     "reviewNotes": [
-      "رُوجعت مفاتيح الأسئلة العشرة وربطها بهدف الدرس وكتل التمرين المصدرية ضمن دفعة A1.",
-      "مهمتا الأداء تتحققان ذاتيًا محليًا وفق معايير ظاهرة؛ لا يوجد تصحيح آلي للكتابة أو النطق ولا تسجيل مطلوب.",
-      "لا يعتمد التقييم على الصوت؛ أُجّل إنتاج تسجيلات A1 إلى ما بعد تجهيز المحتوى والتقييمات."
+      "CR9: مراجعة نصية بالمراجع موثقة في data/reviews/a1-03-review.json؛ ليست شهادة CEFR أو اعتماد نطق.",
+      "P01 وT08 يطلبان التحية والمشروب والطعام وسؤال السعر والشكر؛ أربع وحدات كلامية بأداء فردي. P02 وT09 مهمة كتابية لمسار معطى وثلاث تعليمات وجملة مكان.",
+      "صُححت روابط Q06/Q07/Q08/Q09 إلى T07/T09/T01/T01، مع حفظ مفاتيح الاختيار وعتبة80%.",
+      "ثلاثة أصول صوتية/12مقطعًا موجودة ومحفوظة دون تغيير أو استماع أو اعتماد جديد. القراءة والاستماع موقفان مستقلان، والتقييم لا يتطلب الصوت."
     ]
   },
   "quiz": [
@@ -100,7 +101,7 @@
         "möchten"
       ],
       "answerIndex": 1,
-      "explanation": "مع du نستخدم möchtest."
+      "explanation": "مع du نستخدم möchtest. das Zimmer تعني الغرفة؛ دُرب الطلب في التمرين3."
     },
     {
       "id": "DL-A1-03-Q05",
@@ -121,12 +122,12 @@
         "ein"
       ],
       "answerIndex": 0,
-      "explanation": "Kaffee مذكر؛ في هذا الطلب نستخدم einen."
+      "explanation": "der Kaffee مذكر؛ في هذا الطلب يأتي المفعول به في Akkusativ: einen Kaffee. لا يعني ذلك أن كل اسم بعد أي طلب يأخذ einen."
     },
     {
       "id": "DL-A1-03-Q06",
       "sourceTaskIds": [
-        "DL-A1-03-T05"
+        "DL-A1-03-T07"
       ],
       "objectiveIds": [
         "DL-A1-03-G01"
@@ -147,7 +148,7 @@
     {
       "id": "DL-A1-03-Q07",
       "sourceTaskIds": [
-        "DL-A1-03-T06"
+        "DL-A1-03-T09"
       ],
       "objectiveIds": [
         "DL-A1-03-G01"
@@ -168,7 +169,7 @@
     {
       "id": "DL-A1-03-Q08",
       "sourceTaskIds": [
-        "DL-A1-03-T06"
+        "DL-A1-03-T01"
       ],
       "objectiveIds": [
         "DL-A1-03-G01"
@@ -189,13 +190,13 @@
     {
       "id": "DL-A1-03-Q09",
       "sourceTaskIds": [
-        "DL-A1-03-T07"
+        "DL-A1-03-T01"
       ],
       "objectiveIds": [
         "DL-A1-03-G01"
       ],
       "skillTags": [
-        "فهم الاتجاهات",
+        "مفردات المدينة",
         "اختيار محدد"
       ],
       "prompt": "ما معنى die Apotheke؟",
@@ -243,11 +244,11 @@
         "writing",
         "speaking"
       ],
-      "prompt": "اكتب حوارًا قصيرًا في مقهى: حيِّ العامل، واطلب مشروبًا ووجبة بصيغة مهذبة، ثم اشكره. اقرأ الحوار بصوت مرتفع.",
+      "prompt": "اكتب أقوال الزبون في أربع وحدات قصيرة: التحية، وطلب مشروب وطعام بصيغة Ich möchte … bitte، والسؤال عن السعر بـWas kostet …?، والشكر. اختر Tee مع Suppe أو ein Stück Kuchen من أمثلة الدرس. اقرأ الأقوال الأربعة بصوت مرتفع بنفسك؛ لا يلزم شريك أو كتابة رد العامل أو اختراع سعر أو تسجيل صوتك.",
       "criteria": {
-        "taskCompletion": "يتضمن الطلب مشروبًا ووجبة وشكرًا.",
-        "meaningClarity": "يعرف الطرف الآخر ما الذي يطلبه المتعلم.",
-        "targetSkill": "يستخدم möchte وصيغة أداة مناسبة مثل einen Tee أو eine Suppe."
+        "taskCompletion": "كتبت التحية وطلب مشروب وطعام وسؤال السعر والشكر، وقرأت الأقوال الأربعة بصوت مرتفع.",
+        "meaningClarity": "المشروب والطعام المطلوبان واضحان، وسؤال السعر يعود على الطلب.",
+        "targetSkill": "أستعمل möchte مع ich وbitte، وأختار الأداة المناسبة مثل einen Tee/eine Suppe/ein Stück Kuchen وأصوغ سؤال السعر."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -257,7 +258,7 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 35,
+        "minimumResponseCharacters": 70,
         "speakAloud": true,
         "audioRequired": false
       }
@@ -271,14 +272,14 @@
         "DL-A1-03-G01"
       ],
       "modality": [
-        "writing",
-        "speaking"
+        "reading",
+        "writing"
       ],
-      "prompt": "ارسم أو تخيل خريطة صغيرة من المحطة إلى المقهى، ثم اكتب ثلاث تعليمات طريق واضحة واقرأها بصوت مرتفع.",
+      "prompt": "استخدم المسار الخيالي المكتوب في تمرين9: تبدأ من Bahnhof باتجاه Apotheke أمامك عند التقاطع؛ انعطف هناك يمينًا، ثم تابع مباشرة حتى Café، وMuseum بجانب Café. اكتب بالألمانية ثلاث تعليمات بصيغة Sie تحافظ على الترتيب ونقطة الانعطاف والوجهة، ثم أضف جملة مكان تستعمل neben. هذه مهمة كتابة من مسار معطى؛ الرسم اختياري ولا يلزم الكلام أو رفع صورة.",
       "criteria": {
-        "taskCompletion": "يقدم ثلاث تعليمات متتابعة إلى المكان المطلوب.",
-        "meaningClarity": "يمكن تتبع المسار من التعليمات دون التباس.",
-        "targetSkill": "يستعمل اتجاهين على الأقل مثل links أو rechts أو geradeaus."
+        "taskCompletion": "كتبت ثلاث تعليمات من Bahnhof إلى Café عبر Apotheke ثم جملة مكان تربط Café وMuseum باستخدام neben.",
+        "meaningClarity": "أحافظ على السير مباشرة نحو الصيدلية ثم الانعطاف يمينًا عندها ثم المتابعة إلى المقهى، ولا أخلط المسار بنصّي الدرس الآخرين.",
+        "targetSkill": "أستخدم Gehen Sie مع geradeaus/rechts وصيغًا مثل bis zur Apotheke وbis zum Café، وأصف المكان بـneben dem Museum."
       },
       "evaluationStatus": "ready",
       "selfCheck": {
@@ -288,8 +289,8 @@
           "meaningClarity",
           "targetSkill"
         ],
-        "minimumResponseCharacters": 35,
-        "speakAloud": true,
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
         "audioRequired": false
       }
     }
