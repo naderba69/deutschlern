@@ -1790,7 +1790,14 @@
     "prState": "OPEN",
     "mergedAt": null,
     "implementationVercelStatus": "success",
-    "remoteUiTested": false
+    "remoteUiTested": false,
+    "reviewCommit": "62cccefa65e9e160bb9ca2d90d1c670ac779d15c",
+    "reviewPushed": true,
+    "reviewHeadMatchedRemote": true,
+    "reviewVercelStatus": "pending",
+    "reviewDeploymentRecordsAtCheck": 0,
+    "prHeadAtCheck": "62cccefa65e9e160bb9ca2d90d1c670ac779d15c",
+    "productionDeploymentClaimed": false
   },
   "campaign": {
     "reviewedLessons": 20,
