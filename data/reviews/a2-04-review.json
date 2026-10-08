@@ -1691,8 +1691,16 @@
     "remoteUiTested": false,
     "prState": "OPEN",
     "mergedAt": null,
-    "prHeadAtCheck": "944a0574092f6332bf403a1febb4ca25b500fc34",
-    "implementationVercelStatus": "success"
+    "prHeadAtCheck": "9765f44dc662d41d483125b02b7658b8b07cb7ab",
+    "implementationVercelStatus": "success",
+    "reviewCommit": "9765f44dc662d41d483125b02b7658b8b07cb7ab",
+    "reviewPushed": true,
+    "reviewHeadMatchedRemote": true,
+    "reviewVercelStatus": "failure",
+    "reviewVercelDescription": "Deployment rate limited — retry in 24 hours.",
+    "reviewDeploymentRecordsAtCheck": 0,
+    "productionDeploymentClaimed": false,
+    "continuation": "Continue content review and checked GitHub pushes; no repeated redeployment or paid upgrade."
   },
   "campaign": {
     "reviewedLessons": 21,
