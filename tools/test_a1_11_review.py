@@ -32,6 +32,9 @@ for i in range(1,9):
  tid=f'DL-A1-11-T{i:02}';row=c[tid];assert s.splitlines()[int(row['source_line'])-1]==row['source_heading']
  assert set(re.findall(r'DL-A1-11-[QP]\d+',row['current_representation']))=={q['id'] for q in a['quiz']+a['performanceTasks'] if tid in q['sourceTaskIds']}
 for q in a['quiz']+a['performanceTasks']:assert c[q['id']]['source_exercise_number']==';'.join(str(int(x[-2:])) for x in q['sourceTaskIds'])
+with (R/'data/audio-asset-register.csv').open(encoding='utf-8-sig',newline='') as f:
+ for row in csv.DictReader(f):
+  if row['lesson_id']=='a1-11-home-directions':assert s.splitlines()[int(row['source_line'])-1]==row['source_heading']
 assert len(l['vocabulary'])==13
 if sys.argv[1:]==['--implementation-only']:
  print('PASS A1.11 implementation source/keys/catalog/audio/bundle checks; detailed artifact not checked.');raise SystemExit
