@@ -4096,7 +4096,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2MediaAssessment = b2Lessons[11];
   assert.equal(b2MediaAssessment.id, "b2-12-leisure-media-reported-speech", "B2.12 must stay in its source order");
   assert.equal(b2MediaAssessment.assessment?.status, "ready", "B2.12 must have a ready local assessment");
-  assert.equal(b2MediaAssessment.assessment?.version, "b2-12-v1", "B2.12 must use its stable assessment version");
+  assert.equal(b2MediaAssessment.assessment?.version, "b2-12-v2", "B2.12 must use its stable assessment version");
   assert.equal(b2MediaAssessment.assessment?.minimumScore, 80, "B2.12 must retain the 80 percent mastery threshold");
   assert.equal(b2MediaAssessment.assessment?.minimumItems, 10, "B2.12 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[11])", context), true, "B2.12 must pass the app's full local assessment-readiness check");
@@ -4107,10 +4107,16 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.ok(b2MediaAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-12-G01")), "all B2.12 questions must map to the lesson objective");
   assert.deepEqual([0, 1, 2].map((position) => b2MediaAssessment.quiz.filter((question) => question.answerIndex === position).length), [3, 4, 3], "B2.12 correct answers must be distributed 3/4/3 across the three options");
   assert.equal(b2MediaAssessment.performanceTasks?.length, 2, "B2.12 must include two practical self-check tasks");
-  assert.ok(b2MediaAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.12 tasks must offer visible written/oral local self-checks without recording");
-  assert.ok(b2MediaAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /ثلاثة أقوال/.test(task.prompt) && /شفهيًا/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 220), "B2.12 tasks must state the output, three attributed views, oral choice, and solo read-aloud option");
+  assert.ok(b2MediaAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.selfCheck?.requiredChecks?.length === 3), "B2.12 tasks must offer visible local self-checks without recording");
+  assert.deepEqual(b2MediaAssessment.performanceTasks[0].modality, ["writing"], "B2.12 P01 must be writing-only");
+  assert.equal(b2MediaAssessment.performanceTasks[0].selfCheck?.speakAloud, false, "B2.12 P01 must not require speaking aloud");
+  assert.equal(b2MediaAssessment.performanceTasks[0].selfCheck?.minimumResponseCharacters, 220, "B2.12 P01 must require at least 220 characters");
+  assert.deepEqual(b2MediaAssessment.performanceTasks[1].modality, ["writing", "speaking"], "B2.12 P02 must combine writing and speaking aloud");
+  assert.equal(b2MediaAssessment.performanceTasks[1].selfCheck?.speakAloud, true, "B2.12 P02 must require speaking aloud");
+  assert.equal(b2MediaAssessment.performanceTasks[1].selfCheck?.minimumResponseCharacters, 250, "B2.12 P02 must require at least 250 characters");
+  assert.ok(b2MediaAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /ثلاثة أقوال/.test(task.prompt) && /Meiner Meinung nach/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 220), "B2.12 tasks must state the output, three attributed views, and personal opinion");
   assert.deepEqual(b2MediaAssessment.performanceTasks.find((task) => task.id === "DL-B2-12-P01").sourceTaskIds, ["DL-B2-12-T08"], "B2.12 P01 must link directly to T08");
-  assert.deepEqual(b2MediaAssessment.performanceTasks.find((task) => task.id === "DL-B2-12-P02").sourceTaskIds, ["DL-B2-12-T05", "DL-B2-12-T06", "DL-B2-12-T08"], "B2.12 P02 must link the source reading, written listening transcript, and T08");
+  assert.deepEqual(b2MediaAssessment.performanceTasks.find((task) => task.id === "DL-B2-12-P02").sourceTaskIds, ["DL-B2-12-T05", "DL-B2-12-T06", "DL-B2-12-T07", "DL-B2-12-T08"], "B2.12 P02 must link the source reading, written listening transcript, T07 reporting verbs, and T08");
   const finalMediaAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2MediaAssessment.id);
   assert.equal(finalMediaAssets.length, 5);
   assert.equal(finalMediaAssets.reduce((n, asset) => n + asset.segments.length, 0), 10);
@@ -4187,7 +4193,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2MediaSource, /Meiner Meinung nach/);
   assert.match(b2MediaSource, /اقرأه بصوت مسموع لنفسك/);
   assert.match(b2MediaSource, /لا يلزم تسجيله أو إرسال صوت/);
-  const b2MediaRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[11].performanceTasks, 'lesson:b2-12-leisure-media-reported-speech', 'b2-12-v1')", context);
+  const b2MediaRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[11].performanceTasks, 'lesson:b2-12-leisure-media-reported-speech', 'b2-12-v2')", context);
   assert.match(b2MediaRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2MediaRubricHtml, /ثلاثة أقوال/);
 
@@ -4451,6 +4457,20 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.equal(vm.runInContext("isLessonMastered(getLessonsInLevel('B2')[10])", context), true, "synthetic valid B2.11 mastery should reach the readiness boundary");
   assert.equal(vm.runInContext("isLessonAccessible(getLessonsInLevel('B2')[11])", context), true, "B2.12 must open after B2.11 mastery because its assessment is ready");
   assert.equal(vm.runInContext("nextLearningStep().lesson.id", context), b2Lessons[11].id, "B2.12 must be the next required step after mastering B2.11");
+  vm.runInContext(`
+    state.completedLessons[${JSON.stringify("b2-12-leisure-media-reported-speech")}] = {
+      score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
+      assessmentVersion: 'b2-12-v1',
+    };
+  `, context);
+  assert.equal(vm.runInContext("isLessonMastered(getLessonsInLevel('B2')[11])", context), false, "stale b2-12-v1 completion must not count as B2.12 mastery");
+  vm.runInContext(`
+    state.completedLessons[${JSON.stringify("b2-12-leisure-media-reported-speech")}] = {
+      score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true,
+      assessmentVersion: getLessonsInLevel('B2')[11].assessment.version,
+    };
+  `, context);
+  assert.equal(vm.runInContext("isLessonMastered(getLessonsInLevel('B2')[11])", context), true, "valid b2-12-v2 completion must mark the final B2.12 lesson mastered");
 
   console.log("PASS: A0-only start, sequential locks through ready B2.12, 80% scoring, practical-evidence locks, legacy migration, lesson-mapped preview audio through B2.12 (217 assets/474 clips; 137 ready and 80 awaiting review; B2.12 has five assets/ten clips), stable dialogue voices, exact B1.7/B1.8/B1.9 reading and listening transcripts/narrators plus B1.10/B1.11 dialogue/reading/listening, B1.12 vocabulary/models/eight-turn dialogue/reading/listening and inline section placement, pending-playback fallback, transcript availability, local B1.8–B2.12 written/oral assessments independent of audio, visible task-specific performance rubrics, B2.1 method/purpose connector criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.2 Konjunktiv I/source-attribution criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.3 passive-with-modals criteria and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.4 Partizip I/II adjective criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.5 cause/effect and Genitiv criteria, corrected Q03 in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.6 academic Nomen-Verb-Verbindungen criteria and section-mapped vocabulary/models/seven-turn dialogue/reading/listening, B2.7 prepositional-relative-clause criteria, corrected P02 departure in v2, and section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.8 Vorgangspassiv/Zustandspassiv criteria and section-mapped vocabulary/models/six-turn dialogue/reading with spoken fictional table and disclaimer/listening, B2.9 wo(r)/da(r)-preposition criteria and section-mapped vocabulary/models/eight-turn dialogue/reading/listening, B2.10 present/past hypotheses, wishes and possibility with section-mapped vocabulary/models/six-turn dialogue/reading/listening, B2.11 nominal style, and B2.12 media attribution and reported speech.");
 })().catch((error) => {

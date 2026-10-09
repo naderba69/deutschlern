@@ -344,9 +344,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.11-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.11-practical-form-fixture', width);
+  // CR54: written fictional interview summary and spoken T05/T06/T07 cultural magazine briefing, pending audio.
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
-  await scan(page, 'B2.12-pending-audio', width);
+  await scan(page, 'B2.12-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.12-practical-form-fixture', width);
   if (width < 600) {
     await page.locator('[data-action="toggle-menu"]').click();
     await scan(page, 'mobile-dialog', width);
