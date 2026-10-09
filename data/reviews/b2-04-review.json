@@ -1,0 +1,1351 @@
+{
+  "reviewVersion": "cr46-b2-04-v1",
+  "lessonId": "b2-04-cities-housing-participles",
+  "lessonTitle": "B2.4 — المدن والمباني والسكن: Partizip I وPartizip II كصفات",
+  "assessmentVersion": "b2-04-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 98,
+  "exerciseSubItemCount": 41,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-04-cities-housing-participles.md": "f02bb7df9071a2eebc5a360f0c0e27222dba28b838e004111c981cebebdb317f",
+    "content/B2/lesson-04-cities-housing-participles.assessment.json": "fd936a3b65d26e3ecb6801e6709d3a1c7fb9e47bc4f8bda2959a3a2ee2b1d4ea",
+    "data/audio-playlists.json": "cdddb6bc0b946f71be7970ec5294f37978ac2414db2a087d88c8c7fb70cce1b9",
+    "data/production-task-catalog.csv": "faec1fec495445c7a7853b417f149ebc53bde3f62d4cfb5859a9bacaf2362ef3",
+    "data/audio-asset-register.csv": "d3f98be3fed906264874d13e808a28c2667c131a4b3a58484cda667e1fca222f"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-04-AUD-PHR-01": "4d86d12b353ccf2a0c5921b7633fcb99e467c0dc9b42fc0d884bb9a51769e074",
+    "DL-B2-04-AUD-MODEL-01": "7bddabe4823b8b5c2c3983b2957f527b981fa249bf27c5caaa293e8514c7ac12",
+    "DL-B2-04-AUD-DLG-01": "c6a25c838353dfeef1f5e739fd6fe1f2e7417a1b07eb04666bcf0fe9adcc183c",
+    "DL-B2-04-AUD-READ-01": "872960b9db7f03d3a3dfeacc01764fb720377c3ad3b996a869a264612d6c4bf1",
+    "DL-B2-04-AUD-LST-01": "922c10d00c3db62f43eff2d3fb2136e152a931676f178b25f960aeba75aaf1ff"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-participle-adj",
+      "title": "Lingolia English — Using German participles as adjectives",
+      "url": "https://deutsch.lingolia.com/en/grammar/adjectives/participleadjectives",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Partizip I (Infinitiv + -d) and Partizip II used before nouns as attributive adjectives with regular adjective endings, replacing active/passive relative clauses, and active completed meaning of Partizip II with sein-verbs"
+    },
+    {
+      "id": "lingolia-de-partizipialattribute",
+      "title": "Lingolia Deutsch — Partizipialattribute",
+      "url": "https://deutsch.lingolia.com/de/grammatik/adjektive/partizipialattribute",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "German reference for Partizipialattribute and erweiterte Partizipialattribute, adjective declension endings by gender/case/number/article, and conversion of active/passive relative clauses"
+    },
+    {
+      "id": "duden-wohnflaeche",
+      "title": "Duden — Wohnfläche",
+      "url": "https://www.duden.de/rechtschreibung/Wohnflaeche",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Wohnfläche, Plural die Wohnflächen; floor area used for living"
+    },
+    {
+      "id": "duden-fassade",
+      "title": "Duden — Fassade",
+      "url": "https://www.duden.de/rechtschreibung/Fassade",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Fassade, Plural die Fassaden; exterior front side of a building (renovieren, denkmalgeschützt)"
+    },
+    {
+      "id": "duden-daemmung",
+      "title": "Duden — Dämmung",
+      "url": "https://www.duden.de/rechtschreibung/Daemmung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Dämmung, Plural die Dämmungen; insulation against sound or heat"
+    },
+    {
+      "id": "duden-mehrfamilienhaus",
+      "title": "Duden — Mehrfamilienhaus",
+      "url": "https://www.duden.de/rechtschreibung/Mehrfamilienhaus",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "das Mehrfamilienhaus, Genitiv des Mehrfamilienhauses, Plural die Mehrfamilienhäuser; house for several families"
+    },
+    {
+      "id": "duden-altbau",
+      "title": "Duden — Altbau",
+      "url": "https://www.duden.de/rechtschreibung/Altbau",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Altbau, Plural die Altbauten; older building completed before a certain date"
+    },
+    {
+      "id": "duden-sanierung",
+      "title": "Duden — Sanierung",
+      "url": "https://www.duden.de/rechtschreibung/Sanierung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Sanierung, Plural die Sanierungen; refurbishment and modernizing redevelopment of buildings"
+    },
+    {
+      "id": "duden-nebenkosten",
+      "title": "Duden — Nebenkosten",
+      "url": "https://www.duden.de/rechtschreibung/Nebenkosten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Nebenkosten (Pluralwort, nur im Plural); additional costs incurred alongside base rent"
+    },
+    {
+      "id": "duden-barrierefreiheit",
+      "title": "Duden — Barrierefreiheit",
+      "url": "https://www.duden.de/rechtschreibung/Barrierefreiheit",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Barrierefreiheit (ohne Plural); state of being barrier-free / accessible"
+    },
+    {
+      "id": "duden-sanieren",
+      "title": "Duden — sanieren",
+      "url": "https://www.duden.de/rechtschreibung/sanieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak -ieren verb sanieren (saniert, sanierte, hat saniert) without ge- in Partizip II"
+    },
+    {
+      "id": "duden-daemmen",
+      "title": "Duden — dämmen",
+      "url": "https://www.duden.de/rechtschreibung/daemmen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak verb dämmen (dämmt, dämmte, hat gedämmt); insulate against heat or sound"
+    },
+    {
+      "id": "duden-entstehen",
+      "title": "Duden — entstehen",
+      "url": "https://www.duden.de/rechtschreibung/entstehen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong inseparable verb entstehen (entsteht, entstand, ist entstanden); come into being / be built"
+    },
+    {
+      "id": "duden-bezahlbar",
+      "title": "Duden — bezahlbar",
+      "url": "https://www.duden.de/rechtschreibung/bezahlbar",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "adjective bezahlbar (erschwinglich, preisgünstig); affordable"
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "lingolia-search-participles",
+      "title": "Search index — Lingolia Partizip I Partizip II Adjektiv participles",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/participle-clauses",
+      "access": "search_snippet_only",
+      "chunks": [],
+      "totalChunks": 0,
+      "usedFor": "Search verification of Lingolia participle adjective and participle clause pages"
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Mehrfamilienhaeuser",
+      "reason": "HTTP 404 plural URL; replaced by singular lemma https://www.duden.de/rechtschreibung/Mehrfamilienhaus"
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-04-scope-01",
+      "section": "Scope",
+      "sourceText": "B2.4 title, duration, skills, and self-study disclaimer",
+      "status": "refined",
+      "finding": "Explicitly states P01 is writing-only while P02 requires writing + self-guided reading aloud without recording or partner, and includes the non-certification self-study disclaimer.",
+      "action": "Updated header and goal line."
+    },
+    {
+      "id": "b2-04-scope-02",
+      "section": "Scope",
+      "sourceText": "Partizip I and Partizip II as attributive adjectives (Partizipialattribute) with contextual semantics",
+      "status": "refined",
+      "finding": "Clarifies that Partizip I usually expresses an ongoing active relation and Partizip II usually expresses a passive or completed state, while noting active completed Partizip II with sein-verbs per Lingolia so active/passive is not taught as a context-free absolute rule.",
+      "action": "Refined Section 2 and assessment reviewNotes."
+    },
+    {
+      "id": "b2-04-scope-03",
+      "section": "Scope",
+      "sourceText": "Vocabulary note on Nebenkosten, Barrierefreiheit, Altbau, Wohnviertel, sanieren, dämmen, entstehen",
+      "status": "added",
+      "finding": "Documents Duden morphology: die Nebenkosten (nur Plural), die Barrierefreiheit (no plural), der Altbau -> die Altbauten, das Wohnviertel -> die Wohnviertel, sanieren -> saniert (no ge-), dämmen -> gedämmt, entstehen -> ist entstanden.",
+      "action": "Added vocabulary usage note below the table."
+    },
+    {
+      "id": "b2-04-scope-04",
+      "section": "Scope",
+      "sourceText": "Pre-text and pre-task helper guidance (مساعدة قبل النصوص والمهمات)",
+      "status": "added",
+      "finding": "Provides 10 structured helper bullets on Partizip I/II formation, contextual semantics, relative-clause compression, extended participial attributes, adjective endings, Nebenkosten plural agreement, adverb vs. adjective barrierefrei, fictional housing ethics, and P01/P02 modalities.",
+      "action": "Added helper subsection in Section 2 without altering model sentence audio extraction."
+    },
+    {
+      "id": "b2-04-scope-05",
+      "section": "Scope",
+      "sourceText": "Assessment version b2-04-v2 and Service Worker cache v95",
+      "status": "refined",
+      "finding": "Bumps B2.4 assessment version to b2-04-v2 and Service Worker cache to v95 so stale v1 progress or drafts require re-verification of practical tasks.",
+      "action": "Updated .assessment.json, service-worker.js, and progression/SW tests."
+    },
+    {
+      "id": "b2-04-vocab-01",
+      "section": "Vocabulary",
+      "sourceText": "| die Wohnfläche | die Wohnflächen | المساحة السكنية |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-02",
+      "section": "Vocabulary",
+      "sourceText": "| die Fassade | die Fassaden | الواجهة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-03",
+      "section": "Vocabulary",
+      "sourceText": "| die Dämmung | die Dämmungen | العزل |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-04",
+      "section": "Vocabulary",
+      "sourceText": "| das Mehrfamilienhaus | die Mehrfamilienhäuser | مبنى سكني لعدة أسر |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-05",
+      "section": "Vocabulary",
+      "sourceText": "| der Altbau | die Altbauten | مبنى قديم |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-06",
+      "section": "Vocabulary",
+      "sourceText": "| die Sanierung | die Sanierungen | الترميم / إعادة التأهيل |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-07",
+      "section": "Vocabulary",
+      "sourceText": "| die Nebenkosten | nur Plural | التكاليف الإضافية للسكن |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-08",
+      "section": "Vocabulary",
+      "sourceText": "| die Barrierefreiheit | — | سهولة الوصول لذوي الإعاقة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-09",
+      "section": "Vocabulary",
+      "sourceText": "| die Baustelle | die Baustellen | ورشة بناء |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-10",
+      "section": "Vocabulary",
+      "sourceText": "| das Wohnviertel | die Wohnviertel | حيّ سكني |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-11",
+      "section": "Vocabulary",
+      "sourceText": "| sanieren | saniert | يرمّم / يعيد تأهيل |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-12",
+      "section": "Vocabulary",
+      "sourceText": "| dämmen | dämmt | يعزل حراريًا أو صوتيًا |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-13",
+      "section": "Vocabulary",
+      "sourceText": "| entstehen | entsteht | ينشأ / يُبنى |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-14",
+      "section": "Vocabulary",
+      "sourceText": "| zunehmend / derzeit | — | متزايدًا / حاليًا |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-vocab-15",
+      "section": "Vocabulary",
+      "sourceText": "| bezahlbar / barrierefrei | — | ميسور التكلفة / سهل الوصول |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-04-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-01",
+      "section": "Grammar",
+      "sourceText": "- **die Mieten steigen → die steigenden Mieten** — الإيجارات التي ترتفع.",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-02",
+      "section": "Grammar",
+      "sourceText": "- **Wohnungen entstehen → die derzeit entstehenden Wohnungen** — الشقق التي تُنشأ حاليًا.",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-03",
+      "section": "Grammar",
+      "sourceText": "- **Das Haus wurde saniert → das sanierte Haus** — المبنى الذي رُمّم.",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-04",
+      "section": "Grammar",
+      "sourceText": "- **Die Fassade wurde renoviert → die renovierte Fassade** — الواجهة التي رُمّمت.",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-05",
+      "section": "Grammar",
+      "sourceText": "- **ein saniertes Wohnhaus** — مبنى سكنيّ مُرمّم.",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-06",
+      "section": "Grammar",
+      "sourceText": "- **mit den sanierten Wohnungen** — مع الشقق المُرمّمة. (Dativ جمع)",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-grammar-07",
+      "section": "Grammar",
+      "sourceText": "- **eine steigende Miete** — إيجار آخذ في الارتفاع.",
+      "status": "verified",
+      "finding": "Verified Partizip I/II formation, adjective ending agreement, Arabic gloss, and exact match with DL-B2-04-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-helper-01",
+      "section": "Helper",
+      "sourceText": "- **صياغة `Partizip I` القياسية:** تُبنى بإضافة **-d** إلى المصدر (**steigen → steigend**، **entstehen → entstehend**، **wohnen → wohnend**، **liegen → liegend**) ثم تُضاف نهاية الصفة بحسب الاسم.",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-02",
+      "section": "Helper",
+      "sourceText": "- **صياغة `Partizip II` لأفعال الدرس:** أفعال **-ieren** بلا **ge-** (**saniert, renoviert, möbliert**)، والأفعال القياسية بـ**ge…t** (**gedämmt, geplant, gestaltet**)، والأفعال المنفصلة تدخل فيها **ge** بين البادئة والجذر (**fertiggestellt**)، والأفعال القوية بـ**-en** (**entstanden**).",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-03",
+      "section": "Helper",
+      "sourceText": "- **الدلالة السياقية لا القاعدة المطلقة:** يدل **Partizip I** عادةً على علاقة فاعلة متزامنة (**die steigenden Mieten**)، ويدل **Partizip II** في أكثر أمثلة الدرس على معنى مبني للمجهول (**das sanierte Haus = das Haus, das saniert wurde**)، لكنه قد يدل أيضًا على حدث مكتمل بالمعنى الفاعل مع أفعال **sein** اللازمة؛ لذلك نتحقق من معنى كل عبارة في سياقها.",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-04",
+      "section": "Helper",
+      "sourceText": "- **تحويل الجملة الموصولة إلى صفة مشتقة:** نحذف ضمير الوصل والفعل المساعد إن وُجد، ونضع متعلقات الجملة الموصولة مع اسم الفاعل أو المفعول المصرف بين الأداة والاسم (**Wohnungen, die derzeit entstehen → die derzeit entstehenden Wohnungen**).",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-05",
+      "section": "Helper",
+      "sourceText": "- **العبارات الوصفية الموسّعة (`erweitertes Partizipialattribut`):** تقف الظروف والجار والمجرور قبل اسم الفاعل أو المفعول بين الأداة والاسم (**ein barrierefrei gestalteter Eingang**، **der gemeinschaftlich genutzte Innenhof**، **die im Viertel wohnenden Menschen**).",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-06",
+      "section": "Helper",
+      "sourceText": "- **مطابقة نهايات الصفات مع الأداة والحالة:** بعد أداة التعريف في المفرد المرفوع تأخذ الصفة **-e** (**das sanierte Haus / die renovierte Fassade**)، وفي الجمع المرفوع أو المجرور بعد الأداة تأخذ **-en** (**die steigenden Mieten / mit den sanierten Wohnungen**)، وبعد **ein/eine** في المفرد المحايد تأخذ **-es** (**ein saniertes Wohnhaus**) وفي المؤنث **-e** (**eine steigende Miete**).",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-07",
+      "section": "Helper",
+      "sourceText": "- **إعراب `die Nebenkosten`:** لأنها جمع فقط، تأخذ الصفة قبلها بعد **die** النهاية **-en** (**die steigenden Nebenkosten**).",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-08",
+      "section": "Helper",
+      "sourceText": "- **التمييز بين `barrierefrei` ظرفًا وصفةً:** في **ein barrierefrei gestalteter Eingang** تصف **barrierefrei** بلا نهاية الفعلَ **gestaltet**، بينما تأخذ **gestalteter** نهاية الصفة مع **Eingang**.",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-09",
+      "section": "Helper",
+      "sourceText": "- **الأمانة المنهجية في وصف السكن:** حيّ **Parkbogen** خيالي؛ نفصل بين حقائق النص وبين تساؤل المقيمة عن الإيجارات، ولا نستخدم بيانات سكن حقيقية أو نطلق تعميمات مطلقة عن الأسعار أو السكان.",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-helper-10",
+      "section": "Helper",
+      "sourceText": "- **أداء المهمتين T08 (`P01` و`P02`):** المهمة الأولى **P01** كتابة فقط دون جهر، والمهمة الثانية **P02** كتابة مع قراءة جهرية ذاتية دون شريك أو تسجيل؛ والتقييم يعتمد على النصوص المكتوبة والتحقق الذاتي المحلي ولا يتوقف على تشغيل ملفات الصوت.",
+      "status": "added",
+      "finding": "Added targeted B2.4 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-04-dialogue-01",
+      "section": "Dialogue",
+      "sourceText": "**Architektin:** Hier sehen Sie ein kürzlich saniertes Mehrfamilienhaus.",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 1.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-dialogue-02",
+      "section": "Dialogue",
+      "sourceText": "**Samir:** Und was entsteht neben der Baustelle?",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 2.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-dialogue-03",
+      "section": "Dialogue",
+      "sourceText": "**Architektin:** Dort werden derzeit zwei barrierefrei geplante Wohnhäuser gebaut.",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-dialogue-04",
+      "section": "Dialogue",
+      "sourceText": "**Samir:** Sind die Wohnungen bezahlbar?",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 4.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-dialogue-05",
+      "section": "Dialogue",
+      "sourceText": "**Architektin:** Die Kosten hängen von Größe und Ausstattung ab. Die steigenden Nebenkosten müssen im Mietangebot klar genannt werden.",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 5.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-dialogue-06",
+      "section": "Dialogue",
+      "sourceText": "**Samir:** Und was wurde an der Fassade verändert?",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 6.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-dialogue-07",
+      "section": "Dialogue",
+      "sourceText": "**Architektin:** Die neu gedämmte Fassade senkt den Wärmeverlust des Gebäudes. Die Wohnungen werden schrittweise angeboten.",
+      "status": "verified",
+      "finding": "Verified speaker label, participial attribute usage, and exact match with DL-B2-04-AUD-DLG-01 segment 7.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-01",
+      "section": "Reading",
+      "sourceText": "Im fiktiven Wohnviertel Parkbogen wird ein alter Häuserblock erneuert.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-02",
+      "section": "Reading",
+      "sourceText": "Das bereits sanierte Eckhaus hat eine helle Fassade und einen barrierefrei gestalteten Eingang.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-03",
+      "section": "Reading",
+      "sourceText": "Neben dem Gebäude entstehen derzeit drei Wohnhäuser.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-04",
+      "section": "Reading",
+      "sourceText": "Die dort entstehenden Wohnungen sind unterschiedlich groß; einige haben einen gemeinschaftlich genutzten Innenhof.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-05",
+      "section": "Reading",
+      "sourceText": "Im Informationsblatt stehen auch die voraussichtlichen Nebenkosten.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-06",
+      "section": "Reading",
+      "sourceText": "Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-07",
+      "section": "Reading",
+      "sourceText": "Das Planungsteam erklärt, die Angaben würden vor dem Einzug aktualisiert.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-08",
+      "section": "Reading",
+      "sourceText": "Bei der Besichtigung können Interessierte zwischen einem möblierten Musterraum und einer noch nicht fertiggestellten Wohnung wählen.",
+      "status": "verified",
+      "finding": "Verified fictional Parkbogen quarter context, participial attributes, and exact match with DL-B2-04-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-q-01",
+      "section": "Reading Questions",
+      "sourceText": "1. Was wird im fiktiven Wohnviertel Parkbogen erneuert?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-q-02",
+      "section": "Reading Questions",
+      "sourceText": "2. Wie ist der Eingang des sanierten Eckhauses gestaltet?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-q-03",
+      "section": "Reading Questions",
+      "sourceText": "3. Was entsteht derzeit neben dem Eckhaus?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-q-04",
+      "section": "Reading Questions",
+      "sourceText": "4. Was fragt eine Bewohnerin zu den Mieten?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-reading-q-05",
+      "section": "Reading Questions",
+      "sourceText": "5. Welche zwei Räume können Interessierte besichtigen?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-01",
+      "section": "Listening",
+      "sourceText": "Bei der Führung wurde zuerst das sanierte Altbauhaus gezeigt.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly tour narrative, participial attributes, and exact match with DL-B2-04-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-02",
+      "section": "Listening",
+      "sourceText": "Danach gingen wir zu den derzeit entstehenden Wohnungen.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly tour narrative, participial attributes, and exact match with DL-B2-04-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-03",
+      "section": "Listening",
+      "sourceText": "Eine gut gedämmte Wohnung war schon fertig, eine barrierefrei geplante Wohnung wurde noch eingerichtet.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly tour narrative, participial attributes, and exact match with DL-B2-04-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-04",
+      "section": "Listening",
+      "sourceText": "Die Architektin erklärte, dass die steigenden Nebenkosten im Informationsblatt stehen.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly tour narrative, participial attributes, and exact match with DL-B2-04-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-05",
+      "section": "Listening",
+      "sourceText": "Besonders gefiel mir der gemeinschaftlich genutzte Innenhof.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly tour narrative, participial attributes, and exact match with DL-B2-04-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-q-01",
+      "section": "Listening Questions",
+      "sourceText": "1. Was wurde zuerst gezeigt?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-q-02",
+      "section": "Listening Questions",
+      "sourceText": "2. Wohin ging die Gruppe danach?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-q-03",
+      "section": "Listening Questions",
+      "sourceText": "3. Welche Wohnung war schon fertig?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-q-04",
+      "section": "Listening Questions",
+      "sourceText": "4. Was wurde noch eingerichtet?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-listening-q-05",
+      "section": "Listening Questions",
+      "sourceText": "5. Was gefiel der Person besonders?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-04-T01",
+      "section": "Exercises",
+      "sourceText": "اختر المفردة المناسبة",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. الجزء الخارجي الذي يغطّي واجهة المبنى: **die Fassade / die Wohnfläche**",
+        "2. مساحة الغرف داخل المسكن: **die Wohnfläche / die Baustelle**",
+        "3. إجراءات تجعل الدخول والاستعمال ممكنين للجميع: **die Barrierefreiheit / die Sanierung**",
+        "4. مصروفات تضاف إلى الإيجار الأساسي: **die Nebenkosten / die Dämmung**"
+      ]
+    },
+    {
+      "id": "DL-B2-04-T02",
+      "section": "Exercises",
+      "sourceText": "حوّل العبارة إلى Partizip مناسب",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. **Wohnungen, die derzeit entstehen** → die derzeit ______ Wohnungen. (Partizip I)",
+        "2. **Ein Haus, das saniert wurde** → ein ______ Haus. (Partizip II)",
+        "3. **Mieten, die steigen** → die ______ Mieten. (Partizip I)",
+        "4. **Eine Fassade, die renoviert wurde** → eine ______ Fassade. (Partizip II)"
+      ]
+    },
+    {
+      "id": "DL-B2-04-T03",
+      "section": "Exercises",
+      "sourceText": "أكمل نهاية الصفة",
+      "status": "refined",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Added item 5 in T04, item 4 in T07, and clarified T03 ending key.",
+      "items": [
+        "1. die derzeit entstehend______ Wohnungen",
+        "2. ein saniert______ Wohnhaus",
+        "3. mit den renoviert______ Fassaden",
+        "4. eine steigend______ Miete"
+      ]
+    },
+    {
+      "id": "DL-B2-04-T04",
+      "section": "Exercises",
+      "sourceText": "حدّد Partizip I أم Partizip II",
+      "status": "refined",
+      "finding": "Verified 5 exercise subitems and answer-key alignment.",
+      "action": "Added item 5 in T04, item 4 in T07, and clarified T03 ending key.",
+      "items": [
+        "1. **die steigenden Nebenkosten**",
+        "2. **das sanierte Eckhaus**",
+        "3. **die derzeit entstehenden Wohnungen**",
+        "4. **die renovierte Fassade**",
+        "5. **der gemeinschaftlich genutzte Innenhof**"
+      ]
+    },
+    {
+      "id": "DL-B2-04-T05",
+      "section": "Exercises",
+      "sourceText": "فهم القراءة",
+      "status": "verified",
+      "finding": "Verified 5 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. Parkbogen حيّ حقيقي تصفه القراءة اعتمادًا على بيانات رسمية.",
+        "2. للمدخل في المبنى القديم المُرمّم تصميم يراعي سهولة الوصول.",
+        "3. توجد شقق بأحجام مختلفة في المباني التي يجري إنشاؤها.",
+        "4. لا تتناول ورقة المعلومات أي تكاليف إضافية.",
+        "5. يمكن للمهتمين رؤية غرفة نموذجية مفروشة وشقة لم يكتمل تجهيزها بعد."
+      ]
+    },
+    {
+      "id": "DL-B2-04-T06",
+      "section": "Exercises",
+      "sourceText": "فهم الاستماع",
+      "status": "verified",
+      "finding": "Verified 5 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. Zuerst wurde das sanierte ______ gezeigt.",
+        "2. Danach ging die Gruppe zu den derzeit ______ Wohnungen.",
+        "3. Eine gut ______ Wohnung war schon fertig.",
+        "4. Eine barrierefrei ______ Wohnung wurde noch eingerichtet.",
+        "5. Besonders gefiel der ______ Innenhof."
+      ]
+    },
+    {
+      "id": "DL-B2-04-T07",
+      "section": "Exercises",
+      "sourceText": "اختصر الجملة باستخدام صفة مشتقة من Partizip",
+      "status": "refined",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Added item 5 in T04, item 4 in T07, and clarified T03 ending key.",
+      "items": [
+        "1. **die Wohnungen, die derzeit entstehen** → die ______ Wohnungen",
+        "2. **das Haus, das neu saniert wurde** → das ______ Haus",
+        "3. **die Menschen, die im Viertel wohnen** → die im Viertel ______ Menschen",
+        "4. **der Innenhof, der gemeinschaftlich genutzt wird** → der ______ Innenhof"
+      ]
+    },
+    {
+      "id": "DL-B2-04-T08",
+      "section": "Exercises",
+      "sourceText": "اكتب أو اعرض شفهيًا وصفًا لمبنى أو حيّ",
+      "status": "refined",
+      "finding": "Split T08 into P01 (writing-only fictional building/quarter description, 5 sentences) and P02 (writing+speaking visitor briefing based on T05, 5 sentences) with full German model answers in Section 7.",
+      "action": "Updated T08 instructions and Section 7 model answers.",
+      "items": [
+        "P01 sentence 1: In unserem fiktiven Wohnviertel am Kanal steht ein kürzlich saniertes Mehrfamilienhaus mit einer neu gedämmten Fassade.",
+        "P01 sentence 2: Neben dem Altbau liegen zwei derzeit entstehende Wohnhäuser mit einem barrierefrei gestalteten Eingang.",
+        "P01 sentence 3: Die im Erdgeschoss liegenden Räume teilen sich einen gemeinschaftlich genutzten Innenhof.",
+        "P01 sentence 4: Im Informationsblatt werden auch die voraussichtlich steigenden Nebenkosten für das Gebäude transparent genannt.",
+        "P01 sentence 5: Ob die angebotenen Wohnungen langfristig für alle interessierten Familien bezahlbar bleiben, hängt von der jeweiligen Wohnfläche und Ausstattung ab.",
+        "P02 sentence 1: Im fiktiven Wohnviertel Parkbogen wird derzeit ein alter Häuserblock schrittweise erneuert.",
+        "P02 sentence 2: Das bereits sanierte Eckhaus besitzt eine helle Fassade und einen barrierefrei gestalteten Eingang.",
+        "P02 sentence 3: Daneben liegen drei derzeit entstehende Wohnhäuser mit unterschiedlich großen Wohnungen und einem gemeinschaftlich genutzten Innenhof.",
+        "P02 sentence 4: Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben.",
+        "P02 sentence 5: Bei unserem Rundgang können Sie sowohl einen möblierten Musterraum als auch eine noch nicht fertiggestellte Wohnung besichtigen und eigene Fragen notieren."
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q01",
+      "section": "Quiz",
+      "sourceText": "أي كلمة ألمانية تعني التكاليف الإضافية التي تُضاف إلى الإيجار الأساسي؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (die Nebenkosten), explanation, and sourceTaskIds=['DL-B2-04-T01'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die Wohnfläche",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "die Nebenkosten",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "die Dämmung",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q02",
+      "section": "Quiz",
+      "sourceText": "اختر الصيغة المناسبة: **die derzeit ___ Wohnungen** (entstehen).",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (entstehenden), explanation, and sourceTaskIds=['DL-B2-04-T02'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "entstehenden",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "entstehende",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "entstanden",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q03",
+      "section": "Quiz",
+      "sourceText": "أكمل التحويل: **Ein Haus, das saniert wurde → ein ___ Haus.**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (saniertes), explanation, and sourceTaskIds=['DL-B2-04-T02'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "sanierte",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "saniertes",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "sanierendes",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q04",
+      "section": "Quiz",
+      "sourceText": "اختر النهاية الصحيحة: **mit den renoviert___ Fassaden**.",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (renovierten), explanation, and sourceTaskIds=['DL-B2-04-T03'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "renovierten",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "renovierte",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "renovierter",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q05",
+      "section": "Quiz",
+      "sourceText": "أكمل نهاية الصفة: **eine steigend___ Miete**.",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (steigende), explanation, and sourceTaskIds=['DL-B2-04-T03'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "steigender",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "steigende",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "steigenden",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q06",
+      "section": "Quiz",
+      "sourceText": "أي عبارة تحتوي هنا على Partizip II مستخدمًا صفةً؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (das sanierte Eckhaus), explanation, and sourceTaskIds=['DL-B2-04-T04'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die steigenden Nebenkosten",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "das sanierte Eckhaus",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "die derzeit entstehenden Wohnungen",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q07",
+      "section": "Quiz",
+      "sourceText": "بحسب نص القراءة، ما الذي يجري تجديده في حيّ Parkbogen الخيالي؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (كتلة من المنازل القديمة.), explanation, and sourceTaskIds=['DL-B2-04-T05'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "كتلة من المنازل القديمة.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "مركز تجاري حقيقي.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "مبنى مدرسي جديد.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q08",
+      "section": "Quiz",
+      "sourceText": "ما السؤال الذي تطرحه إحدى المقيمات بشأن الإيجارات؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=2 (هل ستظل الإيجارات المتزايدة ميسورة لجميع الأسر؟), explanation, and sourceTaskIds=['DL-B2-04-T05'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "هل ستُزال الواجهة المضيئة؟",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "هل ستنخفض المساحة السكنية؟",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "هل ستظل الإيجارات المتزايدة ميسورة لجميع الأسر؟",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q09",
+      "section": "Quiz",
+      "sourceText": "بحسب نص T06 المكتوب، أي شقة كانت جاهزة بالفعل؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (Eine gut gedämmte Wohnung.), explanation, and sourceTaskIds=['DL-B2-04-T06'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Eine gut gedämmte Wohnung.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "Eine barrierefrei geplante Wohnung.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "Eine noch nicht fertiggestellte Wohnung.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-Q10",
+      "section": "Quiz",
+      "sourceText": "اختر الاختصار الصحيح: **die Menschen, die im Viertel wohnen → die im Viertel ___ Menschen**.",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (wohnenden), explanation, and sourceTaskIds=['DL-B2-04-T07'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "wohnende",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "wohnenden",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "gewohnten",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-P01",
+      "section": "Performance Tasks",
+      "sourceText": "اكتب وصفًا من خمس إلى ست جمل ألمانية لمبنى أو حيّ خيالي. استخدم صفتين مشتقتين على الأقل: واحدة من Partizip I وأخرى من Partizip II، وطابق نهايتيهما مع الاسم والأداة والحالة. لا تستخدم بيانات سكن حقيقية ولا تقدّم حكمًا عامًا عن الإيجارات بوصفه حقيقة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "status": "refined",
+      "finding": "Synchronized modality=['writing'], speakAloud=False, minChars=160, and sourceTaskIds=['DL-B2-04-T08'].",
+      "action": "Updated task in .assessment.json and synced with T08.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "وصف مكتوب من خمس إلى ست جمل ألمانية لمبنى أو حيّ خيالي، يتضمن صفة واحدة على الأقل من Partizip I وأخرى من Partizip II.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "الوصف مفهوم وتناسب الصفات معاني الأسماء في السياق؛ لا يتضمن بيانات سكن حقيقية أو تعميمًا غير موثق عن الإيجارات أو السكان.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يستخدم صفتين مشتقتين على الأقل، إحداهما من Partizip I والأخرى من Partizip II، مع نهاية مناسبة للجنس والحالة والأداة. يختار الصيغة بحسب معناها في العبارة ولا يطبق قاعدة دلالية مطلقة.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-04-P02",
+      "section": "Performance Tasks",
+      "sourceText": "استنادًا إلى نص القراءة T05، اكتب إحاطة من خمس إلى ست جمل ألمانية لزائر مهتم بالحيّ الخيالي ثم اقرأها بصوت واضح. انقل ثلاثة تفاصيل دقيقة على الأقل، مثل المدخل المصمم لسهولة الوصول، أو المساكن التي يجري إنشاؤها حاليًا، أو الفناء المشترك، أو سؤال المقيمة عن الإيجارات. استخدم صفة من Partizip I وأخرى من Partizip II مع نهايتين مناسبتين، وافصل تفاصيل النص عما تضيفه أنت. لا تستخدم بيانات سكن حقيقية. لا يلزم تشغيل MP3. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت واضح؛ لا يلزم تسجيل.",
+      "status": "refined",
+      "finding": "Synchronized modality=['writing', 'speaking'], speakAloud=True, minChars=180, and sourceTaskIds=['DL-B2-04-T05', 'DL-B2-04-T08'].",
+      "action": "Updated task in .assessment.json and synced with T08.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاثة تفاصيل دقيقة على الأقل من T05، وتستخدم صفة من Partizip I وأخرى من Partizip II.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "تُنقل حقائق النص وأسئلة المقيمة بدقة، وتُفصل عن أي وصف إضافي؛ لا تُضاف بيانات سكن حقيقية أو تعميمات عن الأسعار والسكان.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يستخدم Partizip I وPartizip II بوصفهما صفتين داخل مجموعتين اسميتين مفهومتين، مع نهايات ملائمة للاسم والأداة والحالة، ويقرأ المتعلم النص بصوت واضح دون تسجيل.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        }
+      ]
+    },
+    {
+      "id": "b2-04-p01-model-01",
+      "section": "Written Models",
+      "sourceText": "In unserem fiktiven Wohnviertel am Kanal steht ein kürzlich saniertes Mehrfamilienhaus mit einer neu gedämmten Fassade. Neben dem Altbau liegen zwei derzeit entstehende Wohnhäuser mit einem barrierefrei gestalteten Eingang. Die im Erdgeschoss liegenden Räume teilen sich einen gemeinschaftlich genutzten Innenhof. Im Informationsblatt werden auch die voraussichtlich steigenden Nebenkosten für das Gebäude transparent genannt. Ob die angebotenen Wohnungen langfristig für alle interessierten Familien bezahlbar bleiben, hängt von der jeweiligen Wohnfläche und Ausstattung ab.",
+      "status": "added",
+      "finding": "5-sentence model response (575 chars) satisfying Partizip I + Partizip II with inflected endings and fictional housing ethics.",
+      "action": "Added in Section 7 answer key and verified in test_progression.cjs.",
+      "items": [
+        "In unserem fiktiven Wohnviertel am Kanal steht ein kürzlich saniertes Mehrfamilienhaus mit einer neu gedämmten Fassade.",
+        "Neben dem Altbau liegen zwei derzeit entstehende Wohnhäuser mit einem barrierefrei gestalteten Eingang.",
+        "Die im Erdgeschoss liegenden Räume teilen sich einen gemeinschaftlich genutzten Innenhof.",
+        "Im Informationsblatt werden auch die voraussichtlich steigenden Nebenkosten für das Gebäude transparent genannt.",
+        "Ob die angebotenen Wohnungen langfristig für alle interessierten Familien bezahlbar bleiben, hängt von der jeweiligen Wohnfläche und Ausstattung ab."
+      ]
+    },
+    {
+      "id": "b2-04-p02-model-01",
+      "section": "Written Models",
+      "sourceText": "Im fiktiven Wohnviertel Parkbogen wird derzeit ein alter Häuserblock schrittweise erneuert. Das bereits sanierte Eckhaus besitzt eine helle Fassade und einen barrierefrei gestalteten Eingang. Daneben liegen drei derzeit entstehende Wohnhäuser mit unterschiedlich großen Wohnungen und einem gemeinschaftlich genutzten Innenhof. Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben. Bei unserem Rundgang können Sie sowohl einen möblierten Musterraum als auch eine noch nicht fertiggestellte Wohnung besichtigen und eigene Fragen notieren.",
+      "status": "added",
+      "finding": "5-sentence model response (605 chars) satisfying Partizip I + Partizip II with inflected endings and fictional housing ethics.",
+      "action": "Added in Section 7 answer key and verified in test_progression.cjs.",
+      "items": [
+        "Im fiktiven Wohnviertel Parkbogen wird derzeit ein alter Häuserblock schrittweise erneuert.",
+        "Das bereits sanierte Eckhaus besitzt eine helle Fassade und einen barrierefrei gestalteten Eingang.",
+        "Daneben liegen drei derzeit entstehende Wohnhäuser mit unterschiedlich großen Wohnungen und einem gemeinschaftlich genutzten Innenhof.",
+        "Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben.",
+        "Bei unserem Rundgang können Sie sowohl einen möblierten Musterraum als auch eine noch nicht fertiggestellte Wohnung besichtigen und eigene Fragen notieren."
+      ]
+    },
+    {
+      "id": "b2-04-card-01",
+      "section": "Review Cards",
+      "sourceText": "- **die steigenden Mieten** → الإيجارات التي ترتفع.",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-card-02",
+      "section": "Review Cards",
+      "sourceText": "- **das sanierte Haus** → المبنى الذي رُمّم.",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-card-03",
+      "section": "Review Cards",
+      "sourceText": "- **die derzeit entstehenden Wohnungen** → الشقق التي تُنشأ حاليًا.",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-04-card-04",
+      "section": "Review Cards",
+      "sourceText": "- **die Nebenkosten / die Barrierefreiheit** → التكاليف الإضافية / سهولة الوصول.",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-04-AUD-PHR-01",
+      "section": "Audio",
+      "sourceText": "1) مفردات السكن والمباني",
+      "status": "verified",
+      "finding": "Verified 17 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Wohnfläche, die Wohnflächen",
+        "Die Fassade, die Fassaden",
+        "Die Dämmung, die Dämmungen",
+        "Das Mehrfamilienhaus, die Mehrfamilienhäuser",
+        "Der Altbau, die Altbauten",
+        "Die Sanierung, die Sanierungen",
+        "Die Nebenkosten, nur Plural",
+        "Die Barrierefreiheit",
+        "Die Baustelle, die Baustellen",
+        "Das Wohnviertel, die Wohnviertel",
+        "Sanieren, saniert",
+        "Dämmen, dämmt",
+        "Entstehen, entsteht",
+        "Zunehmend",
+        "Derzeit",
+        "Bezahlbar",
+        "Barrierefrei"
+      ]
+    },
+    {
+      "id": "DL-B2-04-AUD-MODEL-01",
+      "section": "Audio",
+      "sourceText": "2) Partizip I وPartizip II في وظيفة الصفة",
+      "status": "verified",
+      "finding": "Verified 11 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Mieten steigen",
+        "Die steigenden Mieten",
+        "Wohnungen entstehen",
+        "Die derzeit entstehenden Wohnungen",
+        "Das Haus wurde saniert",
+        "Das sanierte Haus",
+        "Die Fassade wurde renoviert",
+        "Die renovierte Fassade",
+        "Ein saniertes Wohnhaus",
+        "Mit den sanierten Wohnungen",
+        "Eine steigende Miete"
+      ]
+    },
+    {
+      "id": "DL-B2-04-AUD-DLG-01",
+      "section": "Audio",
+      "sourceText": "3) حوار أصلي في جولة سكنية",
+      "status": "verified",
+      "finding": "Verified 7 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Architektin: Hier sehen Sie ein kürzlich saniertes Mehrfamilienhaus.",
+        "Samir: Und was entsteht neben der Baustelle?",
+        "Architektin: Dort werden derzeit zwei barrierefrei geplante Wohnhäuser gebaut.",
+        "Samir: Sind die Wohnungen bezahlbar?",
+        "Architektin: Die Kosten hängen von Größe und Ausstattung ab. Die steigenden Nebenkosten müssen im Mietangebot klar genannt werden.",
+        "Samir: Und was wurde an der Fassade verändert?",
+        "Architektin: Die neu gedämmte Fassade senkt den Wärmeverlust des Gebäudes. Die Wohnungen werden schrittweise angeboten."
+      ]
+    },
+    {
+      "id": "DL-B2-04-AUD-READ-01",
+      "section": "Audio",
+      "sourceText": "4) نص قراءة أصلي",
+      "status": "verified",
+      "finding": "Verified 8 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Im fiktiven Wohnviertel Parkbogen wird ein alter Häuserblock erneuert.",
+        "Das bereits sanierte Eckhaus hat eine helle Fassade und einen barrierefrei gestalteten Eingang.",
+        "Neben dem Gebäude entstehen derzeit drei Wohnhäuser.",
+        "Die dort entstehenden Wohnungen sind unterschiedlich groß; einige haben einen gemeinschaftlich genutzten Innenhof.",
+        "Im Informationsblatt stehen auch die voraussichtlichen Nebenkosten.",
+        "Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben.",
+        "Das Planungsteam erklärt, die Angaben würden vor dem Einzug aktualisiert.",
+        "Bei der Besichtigung können Interessierte zwischen einem möblierten Musterraum und einer noch nicht fertiggestellten Wohnung wählen."
+      ]
+    },
+    {
+      "id": "DL-B2-04-AUD-LST-01",
+      "section": "Audio",
+      "sourceText": "5) نص استماع معدّ للنطق",
+      "status": "verified",
+      "finding": "Verified 5 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Bei der Führung wurde zuerst das sanierte Altbauhaus gezeigt.",
+        "Danach gingen wir zu den derzeit entstehenden Wohnungen.",
+        "Eine gut gedämmte Wohnung war schon fertig, eine barrierefrei geplante Wohnung wurde noch eingerichtet.",
+        "Die Architektin erklärte, dass die steigenden Nebenkosten im Informationsblatt stehen.",
+        "Besonders gefiel mir der gemeinschaftlich genutzte Innenhof."
+      ]
+    }
+  ]
+}
