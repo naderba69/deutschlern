@@ -1,0 +1,1667 @@
+{
+  "reviewVersion": "cr49-b2-07-v1",
+  "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+  "lessonTitle": "B2.7 — السفر والتجارب والوجهات: الجمل الموصولة مع حروف الجر",
+  "assessmentVersion": "b2-07-v3",
+  "generatedAt": "2026-10-09",
+  "unitCount": 98,
+  "exerciseSubItemCount": 42,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-07-travel-experiences-prepositional-relatives.md": "29e54c87ea3d6a46191c3917f7fbc6b81190e64b37a1c732591e84cb501b3f4e",
+    "content/B2/lesson-07-travel-experiences-prepositional-relatives.assessment.json": "f7ee403aa15432d2adfac58b83a6621f3b0cd935f1a4d15f4e6b864263eb0ee5"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-07-AUD-PHR-01": "c922c59771532c901a812b4915d3d4942dc3958013d2bc4a4e04dc8c72d61278",
+    "DL-B2-07-AUD-MODEL-01": "52633ce300c78b7fc93464bdd259471b0ad34e30efbd60f160d361e3113506c5",
+    "DL-B2-07-AUD-DLG-01": "7b8a335dd113247e30e6b2e1d52a5b6dde3425ab385d23d4124027ff2b60fb54",
+    "DL-B2-07-AUD-READ-01": "be67756142a536940d9e55f2fd59a08c4cd7d4abfd0c018ce9d27f9a668dfde0",
+    "DL-B2-07-AUD-LST-01": "67fba4557a47b95f0ebf34a243592db8ac229f4651b834bdabe3f784b48b7a3d"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-relative-clauses",
+      "title": "Lingolia English — Relative Clauses in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/relative-clauses",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Relative clause structure, comma placement around relative clauses, verb-final word order, and preposition before relative pronoun (mit denen ich viel Zeit verbringe)"
+    },
+    {
+      "id": "lingolia-en-relative-pronouns",
+      "title": "Lingolia English — Relative Pronouns in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/pronouns/relative-pronouns",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Declension table of German relative pronouns in Nominative, Accusative (den/die/das/die), Dative (dem/der/dem/denen), and Genitive"
+    },
+    {
+      "id": "lingolia-en-prepositions",
+      "title": "Lingolia English — Prepositions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Accusative prepositions (durch, für, gegen, ohne, um), Dative prepositions (aus, bei, mit, nach, seit, von, zu), two-way prepositions, and route origin von ... aus"
+    },
+    {
+      "id": "lingolia-en-prepositions-place",
+      "title": "Lingolia English — Prepositions of place in German grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/place",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Two-way prepositions (an, auf, in, über) with Dativ for fixed position (wo?) vs. Akkusativ for direction/movement (wohin?), and island/harbor/tunnel prepositions"
+    },
+    {
+      "id": "duden-etappe",
+      "title": "Duden — Etappe",
+      "url": "https://www.duden.de/rechtschreibung/Etappe",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Etappe, Genitiv der Etappe, Plural die Etappen (base noun of die Reiseetappe, die Reiseetappen)"
+    },
+    {
+      "id": "duden-route",
+      "title": "Duden — Route",
+      "url": "https://www.duden.de/rechtschreibung/Route",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Route, Genitiv der Route, Plural die Routen; eine Route wählen/nehmen, die Route führt ..."
+    },
+    {
+      "id": "duden-unterkunft",
+      "title": "Duden — Unterkunft",
+      "url": "https://www.duden.de/rechtschreibung/Unterkunft",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Unterkunft, Genitiv der Unterkunft, Plural die Unterkünfte; temporary lodging on a trip"
+    },
+    {
+      "id": "duden-aussichtspunkt",
+      "title": "Duden — Aussichtspunkt",
+      "url": "https://www.duden.de/rechtschreibung/Aussichtspunkt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Aussichtspunkt, Genitiv des Aussichtspunkts/Aussichtspunktes, Plural die Aussichtspunkte; Stelle, von der aus man eine schöne Aussicht hat"
+    },
+    {
+      "id": "duden-landschaft",
+      "title": "Duden — Landschaft",
+      "url": "https://www.duden.de/rechtschreibung/Landschaft",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Landschaft, Genitiv der Landschaft, Plural die Landschaften"
+    },
+    {
+      "id": "duden-begegnung",
+      "title": "Duden — Begegnung",
+      "url": "https://www.duden.de/rechtschreibung/Begegnung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Begegnung, Genitiv der Begegnung, Plural die Begegnungen"
+    },
+    {
+      "id": "duden-wegbeschreibung",
+      "title": "Duden — Wegbeschreibung",
+      "url": "https://www.duden.de/rechtschreibung/Wegbeschreibung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Wegbeschreibung (feminine compound noun, Plural die Wegbeschreibungen)"
+    },
+    {
+      "id": "duden-reisefuehrer",
+      "title": "Duden — Reiseführer",
+      "url": "https://www.duden.de/rechtschreibung/Reisefuehrer",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Reiseführer, Genitiv des Reiseführers, Plural die Reiseführer; both tour guide and travel guidebook"
+    },
+    {
+      "id": "duden-hafen",
+      "title": "Duden — Hafen (Anlegestelle)",
+      "url": "https://www.duden.de/rechtschreibung/Hafen_Anlegestelle",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Hafen, Genitiv des Hafens, Plural die Häfen; im Hafen liegen/ablegen"
+    },
+    {
+      "id": "duden-bucht",
+      "title": "Duden — Bucht",
+      "url": "https://www.duden.de/rechtschreibung/Bucht",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Bucht, Genitiv der Bucht, Plural die Buchten; an einer Bucht"
+    },
+    {
+      "id": "duden-uebernachten",
+      "title": "Duden — übernachten",
+      "url": "https://www.duden.de/rechtschreibung/uebernachten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak inseparable verb übernachten (übernachtet, übernachtete, hat übernachtet — no ge-); im Hotel / in einer Pension übernachten"
+    },
+    {
+      "id": "duden-vorbeifahren",
+      "title": "Duden — vorbeifahren",
+      "url": "https://www.duden.de/rechtschreibung/vorbeifahren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong separable verb vorbeifahren (fährt vorbei, fuhr vorbei, ist vorbeigefahren); an + Dativ vorbeifahren"
+    },
+    {
+      "id": "duden-beziehen",
+      "title": "Duden — beziehen",
+      "url": "https://www.duden.de/rechtschreibung/beziehen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "irregular inseparable verb beziehen (bezieht, bezog, hat bezogen); reflexive sich beziehen auf + Akkusativ"
+    },
+    {
+      "id": "duden-faehre",
+      "title": "Duden — Fähre",
+      "url": "https://www.duden.de/rechtschreibung/Faehre",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Fähre, Genitiv der Fähre, Plural die Fähren; die Fähre legt an / legt ab"
+    },
+    {
+      "id": "duden-pension",
+      "title": "Duden — Pension",
+      "url": "https://www.duden.de/rechtschreibung/Pension",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Pension, Genitiv der Pension, Plural die Pensionen; kleines Hotel mit privaterem Charakter"
+    },
+    {
+      "id": "duden-hotel",
+      "title": "Duden — Hotel",
+      "url": "https://www.duden.de/rechtschreibung/Hotel",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "das Hotel (Neutrum), Genitiv des Hotels, Plural die Hotels; verifies neuter dative relative pronoun in dem (fixing T02 answer key item 1)"
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "lingolia-search-relativsaetze",
+      "query": "site:deutsch.lingolia.com relative clauses Relativsätze prepositions",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/relative-clauses",
+      "usedFor": "Located Lingolia reference pages for German relative clauses and relative pronouns with prepositions"
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Reiseetappe",
+      "reason": "HTTP 404 compound URL; covered by full-fetched base lemma https://www.duden.de/rechtschreibung/Etappe and documented in lesson vocabulary note."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Hafen",
+      "reason": "HTTP 404 disambiguation slug; covered by full-fetched homograph entry https://www.duden.de/rechtschreibung/Hafen_Anlegestelle."
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-07-scope-01",
+      "section": "Scope",
+      "sourceText": "B2.7 title, duration, skills, corrected Arabic masculine agreement (ضمير موصول يسبقه حرف جر), self-study disclaimer, and P01/P02 modality split",
+      "status": "refined",
+      "finding": "Corrected Arabic agreement (يسبقه حرف جر instead of تسبقه حرف جر), explicitly stated P01 is writing-only while P02 requires writing + self-guided reading aloud without recording or partner, and added the non-certification self-study notice.",
+      "action": "Updated lesson goal line."
+    },
+    {
+      "id": "b2-07-scope-02",
+      "section": "Scope",
+      "sourceText": "Relative clauses with prepositions (Präposition + Relativpronomen): Dativ (dem/der/dem/denen) vs. Akkusativ (den/die/das/die) and verb-final word order",
+      "status": "verified",
+      "finding": "Verified relative pronoun declension, preposition case governance, comma rules, and verb-final clause structure against Lingolia relative-clauses, relative-pronouns, and prepositions pages.",
+      "action": "Preserved Section 2 table and 5 model sentences verbatim so DL-B2-07-AUD-MODEL-01 remains 100% aligned."
+    },
+    {
+      "id": "b2-07-scope-03",
+      "section": "Scope",
+      "sourceText": "Vocabulary note on die Reiseetappe, der Reiseführer, der Hafen -> die Häfen, die Unterkunft -> die Unterkünfte, die Fähre, die Pension, der Tunnel, die Brücke, das Dorf, übernachten, vorbeifahren, and sich beziehen auf",
+      "status": "added",
+      "finding": "Documents Duden morphology and verb valency: compound die Reiseetappe, zero-plural der Reiseführer (person or guidebook), Umlaut plurals die Häfen / die Unterkünfte / die Dörfer, weak inseparable übernachten (hat übernachtet without ge-), strong separable vorbeifahren (ist vorbeigefahren + an + Dativ), and reflexive sich beziehen auf + Akkusativ.",
+      "action": "Added vocabulary usage note below the Section 1 table."
+    },
+    {
+      "id": "b2-07-scope-04",
+      "section": "Scope",
+      "sourceText": "Pre-text and pre-task helper guidance (مساعدة قبل النصوص والمهمات)",
+      "status": "added",
+      "finding": "Provides 10 structured helper bullets on separating antecedent gender/number from preposition case, fixed Dativ prepositions, fixed Akkusativ prepositions, Wechselpräpositionen (Wo? vs. Wohin?/object), plural Dativ denen vs. article den, compound von dem aus, non-contraction of preposition + relative pronoun, comma/verb-final order, T05/T06 itinerary details, and P01/P02 modalities.",
+      "action": "Added helper subsection in Section 2 using backticks so model sentence audio extraction remains exact."
+    },
+    {
+      "id": "b2-07-scope-05",
+      "section": "Scope",
+      "sourceText": "Assessment version b2-07-v3 and Service Worker cache v98",
+      "status": "refined",
+      "finding": "Bumps B2.7 assessment version from b2-07-v2 to b2-07-v3 and Service Worker cache to v98 so stale v1/v2 records or drafts require re-verification of practical tasks.",
+      "action": "Updated .assessment.json, service-worker.js, and progression/SW tests."
+    },
+    {
+      "id": "b2-07-vocab-01",
+      "section": "Vocabulary",
+      "sourceText": "| die Reiseetappe | die Reiseetappen | مرحلة من الرحلة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-02",
+      "section": "Vocabulary",
+      "sourceText": "| die Route | die Routen | المسار |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-03",
+      "section": "Vocabulary",
+      "sourceText": "| die Unterkunft | die Unterkünfte | مكان الإقامة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-04",
+      "section": "Vocabulary",
+      "sourceText": "| der Aussichtspunkt | die Aussichtspunkte | نقطة إطلالة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-05",
+      "section": "Vocabulary",
+      "sourceText": "| die Landschaft | die Landschaften | المشهد الطبيعي |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-06",
+      "section": "Vocabulary",
+      "sourceText": "| die Begegnung | die Begegnungen | لقاء |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-07",
+      "section": "Vocabulary",
+      "sourceText": "| die Wegbeschreibung | die Wegbeschreibungen | وصف الطريق |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-08",
+      "section": "Vocabulary",
+      "sourceText": "| der Reiseführer | die Reiseführer | دليل السفر |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-09",
+      "section": "Vocabulary",
+      "sourceText": "| der Hafen | die Häfen | الميناء |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-10",
+      "section": "Vocabulary",
+      "sourceText": "| die Bucht | die Buchten | الخليج / الخلجان |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-11",
+      "section": "Vocabulary",
+      "sourceText": "| übernachten in | übernachtet | يبيت في |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-12",
+      "section": "Vocabulary",
+      "sourceText": "| vorbeifahren an + Dativ | fährt vorbei | يمرّ بمحاذاة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-13",
+      "section": "Vocabulary",
+      "sourceText": "| sich beziehen auf + Akkusativ | bezieht sich | يشير إلى / يتعلق بـ |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-14",
+      "section": "Vocabulary",
+      "sourceText": "| abgelegen / gut erreichbar | — | ناءٍ / سهل الوصول |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-vocab-15",
+      "section": "Vocabulary",
+      "sourceText": "| beeindruckend | — | مثير للإعجاب |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-07-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-01",
+      "section": "Grammar",
+      "sourceText": "عندما يتطلب الفعل أو المعنى حرف جر، يأتي حرف الجر قبل ضمير الوصل. يحدد حرف الجر الحالة الإعرابية، ويحدد الاسم السابق الجنس والعدد. يأتي الفعل المصرف في نهاية الجملة الموصولة.",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-02",
+      "section": "Grammar",
+      "sourceText": "| Dativ بعد **mit / bei / zu**، و**in / auf** للمكان | dem | der | dem | denen |",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-03",
+      "section": "Grammar",
+      "sourceText": "| Akkusativ بعد **durch / für / über** في معنى الحركة أو الموضوع | den | die | das | die |",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-04",
+      "section": "Grammar",
+      "sourceText": "- **Die Fähre, mit der wir zur Insel fahren, legt früh ab.** — العبّارة التي نسافر بها إلى الجزيرة تغادر مبكرًا. (**mit + Dativ**)",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-05",
+      "section": "Grammar",
+      "sourceText": "- **Das Dorf, durch das wir fahren, liegt im Tal.** — القرية التي نعبرها تقع في الوادي. (**durch + Akkusativ**)",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-06",
+      "section": "Grammar",
+      "sourceText": "- **Die Pension, in der wir übernachten, ist ruhig.** — النُّزل الذي نبيت فيه هادئ. (**in + Dativ** للمكان)",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-07",
+      "section": "Grammar",
+      "sourceText": "- **Die Route, über die wir gesprochen haben, führt zur Bucht.** — المسار الذي تحدثنا عنه يقود إلى الخليج. (**über + Akkusativ**)",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-08",
+      "section": "Grammar",
+      "sourceText": "- **Die Wege, auf denen wir gewandert sind, waren schmal.** — المسارات التي مشينا عليها كانت ضيقة. (**auf + Dativ** للمكان)",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-grammar-09",
+      "section": "Grammar",
+      "sourceText": "نضع فاصلة قبل الجملة الموصولة، ويأتي فعلها المصرف في النهاية: **…, mit der wir zur Insel fahren**.",
+      "status": "verified",
+      "finding": "Verified relative pronoun gender/number/case agreement, preposition government, and verb-final word order against Lingolia and Duden; preserved verbatim for DL-B2-07-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-helper-01",
+      "section": "Helper Notes",
+      "sourceText": "- **فصل مصدر الجنس/العدد عن مصدر الحالة الإعرابية:** يأخذ ضمير الوصل جنسه وعدده من الاسم المرجعي (`Bezugswort`) في الجملة السابقة، لكنه يأخذ حالته الإعرابية (`Dativ` أو `Akkusativ`) من حرف الجر الذي يسبقه مباشرة داخل الجملة الموصولة.",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-02",
+      "section": "Helper Notes",
+      "sourceText": "- **حروف الجر الملازمة لحالة `Dativ` دائمًا:** بعد `mit` و`bei` و`zu` و`von` و`aus` يأتي ضمير الوصل في حالة الجر دائمًا (`die Fähre, mit der wir fahren`، `der Aussichtspunkt, zu dem wir gewandert sind`، `die Landschaft, von der Lina spricht`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-03",
+      "section": "Helper Notes",
+      "sourceText": "- **حروف الجر الملازمة لحالة `Akkusativ` دائمًا:** بعد `durch` و`für` و`ohne` و`um` يأتي ضمير الوصل في حالة النصب دائمًا (`der Tunnel, durch den der Bus fährt`، `das Dorf, durch das wir fahren`، `die Landschaft, für die die Insel bekannt ist`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-04",
+      "section": "Helper Notes",
+      "sourceText": "- **حروف الجر المشتركة (`Wechselpräpositionen`: `in / an / auf / über`):** تأخذ `Dativ` مع المكان الثابت (`Wo?`: `die Pension, in der wir übernachten`، `das Dorf, in dem wir übernachten`، `der Hafen, an dem die Fähre ankommt`، `eine Bucht, an der Fischerboote liegen`، `die Wege, auf denen wir wandern`)، وتأخذ `Akkusativ` مع الحركة العابرة أو الاتجاه (`Wohin?`: `die Brücke, über die der Bus fährt`) ومع مفعول الفعل (`über die Route sprechen → die Route, über die wir gesprochen haben`، `sich auf etwas beziehen`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-05",
+      "section": "Helper Notes",
+      "sourceText": "- **صيغة جمع المجرور `denen` مقابل أداة التعريف `den`:** في الجملة العادية نقول `auf den Wegen`، أما في الجملة الموصولة للجمع في حالة `Dativ` فنستخدم وجوبًا `denen` (`Die Wege, auf denen wir gegangen sind, waren schmal`، وليس `auf den`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-06",
+      "section": "Helper Notes",
+      "sourceText": "- **التركيب المكاني المركّب `von dem aus / von der aus`:** عند تحديد النقطة التي تنطلق منها الرؤية أو المسار يسبق `von + Dativ` ضميرَ الوصل وتأتي `aus` بعده (`einem Aussichtspunkt, von dem aus man die Küste sehen kann`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-07",
+      "section": "Helper Notes",
+      "sourceText": "- **عدم دمج حرف الجر بضمير الوصل:** في الجمل العادية ندمج `in dem → im` و`an dem → am` و`zu dem → zum`، لكن مع ضمير الوصل نكتب الكلمتين منفصلتين (`ein Dorf, in dem ...`، `der Hafen, an dem ...`، `der Aussichtspunkt, zu dem ...`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-08",
+      "section": "Helper Notes",
+      "sourceText": "- **ترتيب الكلمات وعلامات الترقيم:** تُحاط الجملة الموصولة الواقعة وسط الجملة الرئيسية بفاصلتين، ويوضع الفعل المصرف في آخر الجملة الموصولة (`Die Wege, auf denen wir gegangen sind, waren schmal`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-09",
+      "section": "Helper Notes",
+      "sourceText": "- **تتبّع تفاصيل جزيرة `Morgenküste` الخيالية (`T05`) ونص الاستماع (`T06`):** في `T05` تنطلق العبّارة من `Hafen West` (`legt im Hafen West ab` — انطلاق لا وصول)، وتبيت المجموعة في نُزل صغير داخل قرية (`in einer kleinen Pension` داخل `ein Dorf`)، وتنتهي الطريق عند نقطة إطلالة (`an einem Aussichtspunkt`)، وتستمع المجموعة إلى الساكنات (`Bewohnerinnen`)؛ وفي `T06` تزور المجموعة أولًا ميناءً صغيرًا (`einen kleinen Hafen`)، ويمرّ الباص بعدة نقاط إطلالة (`an mehreren Aussichtspunkten vorbei`)، ويعجب المتحدث بالخليج الذي قرأ عنه في دليل سفر (`die Bucht, über die ich schon in einem Reiseführer gelesen hatte`)، ثم يقيمون ليلتين في مكان إقامة (`zu einer Unterkunft, in der wir zwei Nächte blieben`).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-helper-10",
+      "section": "Helper Notes",
+      "sourceText": "- **توزيع نمط الإنجاز في `T08` (`P01` و`P02`):** تُنجز `P01` كتابةً فقط (وصف رحلة خيالية من خمس إلى ست جمل يضم ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة دون شريك أو تسجيل)، وتُنجز `P02` كتابةً مع قراءة جهرية ذاتية (إحاطة من خمس إلى ست جمل لمتعلم آخر تنقل تفاصيل صحيحة من قراءة `T05` ونص الاستماع `T06` باستخدام ثلاث جمل موصولة على الأقل بحروف جر مختلفة دون اختراع مواعيد أو أماكن حقيقية).",
+      "status": "added",
+      "finding": "Provides targeted scaffolding for prepositional relative clauses, case selection, plural Dativ denen, non-contraction, T05/T06 reading/listening details, and P01/P02 task modalities.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-07-dialogue-01",
+      "section": "Dialogue",
+      "sourceText": "**Salma:** Welche Route möchtest du für unsere Reise nehmen?",
+      "status": "verified",
+      "finding": "Verified natural travel planning dialogue, relative clauses (über die, in dem, mit der, der, auf dem, für die), and exact match with DL-B2-07-AUD-DLG-01 segments (Salma=voice-02, Jonas=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-dialogue-02",
+      "section": "Dialogue",
+      "sourceText": "**Jonas:** Die Strecke, über die wir gestern gesprochen haben. Sie führt durch ein Dorf, in dem es eine kleine Pension gibt.",
+      "status": "verified",
+      "finding": "Verified natural travel planning dialogue, relative clauses (über die, in dem, mit der, der, auf dem, für die), and exact match with DL-B2-07-AUD-DLG-01 segments (Salma=voice-02, Jonas=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-dialogue-03",
+      "section": "Dialogue",
+      "sourceText": "**Salma:** Und wie kommen wir dorthin?",
+      "status": "verified",
+      "finding": "Verified natural travel planning dialogue, relative clauses (über die, in dem, mit der, der, auf dem, für die), and exact match with DL-B2-07-AUD-DLG-01 segments (Salma=voice-02, Jonas=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-dialogue-04",
+      "section": "Dialogue",
+      "sourceText": "**Jonas:** Mit der Fähre, mit der wir am Hafen abfahren. Danach nehmen wir einen Bus, der an der Bucht vorbeifährt.",
+      "status": "verified",
+      "finding": "Verified natural travel planning dialogue, relative clauses (über die, in dem, mit der, der, auf dem, für die), and exact match with DL-B2-07-AUD-DLG-01 segments (Salma=voice-02, Jonas=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-dialogue-05",
+      "section": "Dialogue",
+      "sourceText": "**Salma:** Gibt es dort einen Aussichtspunkt?",
+      "status": "verified",
+      "finding": "Verified natural travel planning dialogue, relative clauses (über die, in dem, mit der, der, auf dem, für die), and exact match with DL-B2-07-AUD-DLG-01 segments (Salma=voice-02, Jonas=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-dialogue-06",
+      "section": "Dialogue",
+      "sourceText": "**Jonas:** Ja, einen Weg, auf dem wir zu Fuß hinaufgehen können. Von dort sieht man die Landschaft, für die die Insel bekannt ist.",
+      "status": "verified",
+      "finding": "Verified natural travel planning dialogue, relative clauses (über die, in dem, mit der, der, auf dem, für die), and exact match with DL-B2-07-AUD-DLG-01 segments (Salma=voice-02, Jonas=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-01",
+      "section": "Reading",
+      "sourceText": "Die folgende Reise führt über die fiktive Insel Morgenküste.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-02",
+      "section": "Reading",
+      "sourceText": "Die Fähre, mit der Lina und ihre Freunde anreisen, legt im Hafen West ab.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-03",
+      "section": "Reading",
+      "sourceText": "Von dort fahren sie durch ein Dorf, in dem sie in einer kleinen Pension übernachten.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-04",
+      "section": "Reading",
+      "sourceText": "Am nächsten Morgen gehen sie einen Weg entlang, auf dem alte Steinmauern stehen.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-05",
+      "section": "Reading",
+      "sourceText": "Später erreichen sie eine Bucht, an der mehrere Fischerboote liegen.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-06",
+      "section": "Reading",
+      "sourceText": "Die Route, über die Lina in ihrem Reiseführer gelesen hat, endet an einem Aussichtspunkt, von dem aus man die Küste sehen kann.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-07",
+      "section": "Reading",
+      "sourceText": "Die Gruppe nimmt sich Zeit für Begegnungen mit den Bewohnerinnen, die ihr von der Geschichte der Insel erzählen.",
+      "status": "verified",
+      "finding": "Verified fictional island narrative, relative clauses with prepositions (mit der, in dem, auf dem, an der, über die, von dem aus), and exact match with DL-B2-07-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-q-01",
+      "section": "Reading Questions",
+      "sourceText": "1. Wohin führt die Reise? → Über die fiktive Insel Morgenküste.",
+      "status": "verified",
+      "finding": "Verified comprehension question and answer key against the Section 4 reading text.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-q-02",
+      "section": "Reading Questions",
+      "sourceText": "2. Mit welchem Verkehrsmittel reisen Lina und ihre Freunde an? → Mit der Fähre.",
+      "status": "verified",
+      "finding": "Verified comprehension question and answer key against the Section 4 reading text.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-q-03",
+      "section": "Reading Questions",
+      "sourceText": "3. Wo übernachten sie? → In einer kleinen Pension in einem Dorf.",
+      "status": "verified",
+      "finding": "Verified comprehension question and answer key against the Section 4 reading text.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-q-04",
+      "section": "Reading Questions",
+      "sourceText": "4. Was steht entlang des Weges? → Alte Steinmauern.",
+      "status": "verified",
+      "finding": "Verified comprehension question and answer key against the Section 4 reading text.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-q-05",
+      "section": "Reading Questions",
+      "sourceText": "5. Wo endet die Route? → An einem Aussichtspunkt.",
+      "status": "verified",
+      "finding": "Verified comprehension question and answer key against the Section 4 reading text.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-reading-q-06",
+      "section": "Reading Questions",
+      "sourceText": "6. Von wem hört die Gruppe etwas über die Inselgeschichte? → Von den Bewohnerinnen.",
+      "status": "verified",
+      "finding": "Verified comprehension question and answer key against the Section 4 reading text.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-01",
+      "section": "Listening",
+      "sourceText": "Auf unserer Reise besuchten wir einen kleinen Hafen, an dem früher viele Boote ankamen.",
+      "status": "verified",
+      "finding": "Verified spoken-style travel narrative, prepositional relative clauses (an dem, über die, in der), and exact match with DL-B2-07-AUD-LST-01 (Erzählperson=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-02",
+      "section": "Listening",
+      "sourceText": "Danach fuhren wir mit einem Bus, der an mehreren Aussichtspunkten vorbeifuhr.",
+      "status": "verified",
+      "finding": "Verified spoken-style travel narrative, prepositional relative clauses (an dem, über die, in der), and exact match with DL-B2-07-AUD-LST-01 (Erzählperson=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-03",
+      "section": "Listening",
+      "sourceText": "Besonders gefiel mir die Bucht, über die ich schon in einem Reiseführer gelesen hatte.",
+      "status": "verified",
+      "finding": "Verified spoken-style travel narrative, prepositional relative clauses (an dem, über die, in der), and exact match with DL-B2-07-AUD-LST-01 (Erzählperson=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-04",
+      "section": "Listening",
+      "sourceText": "Am Ende gingen wir zu einer Unterkunft, in der wir zwei Nächte blieben.",
+      "status": "verified",
+      "finding": "Verified spoken-style travel narrative, prepositional relative clauses (an dem, über die, in der), and exact match with DL-B2-07-AUD-LST-01 (Erzählperson=voice-03).",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-q-01",
+      "section": "Listening Questions",
+      "sourceText": "1. Welchen Ort besuchte die Gruppe zuerst? → Einen kleinen Hafen.",
+      "status": "verified",
+      "finding": "Verified listening comprehension question and answer key against the Section 5 listening transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-q-02",
+      "section": "Listening Questions",
+      "sourceText": "2. Woran fuhr der Bus vorbei? → An mehreren Aussichtspunkten.",
+      "status": "verified",
+      "finding": "Verified listening comprehension question and answer key against the Section 5 listening transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-q-03",
+      "section": "Listening Questions",
+      "sourceText": "3. Welche Bucht gefiel der Person besonders? → Die Bucht, über die die Person schon gelesen hatte.",
+      "status": "verified",
+      "finding": "Verified listening comprehension question and answer key against the Section 5 listening transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-q-04",
+      "section": "Listening Questions",
+      "sourceText": "4. Wohin ging die Gruppe am Ende? → Zu einer Unterkunft.",
+      "status": "verified",
+      "finding": "Verified listening comprehension question and answer key against the Section 5 listening transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-listening-q-05",
+      "section": "Listening Questions",
+      "sourceText": "5. Wie lange blieb sie dort? → Zwei Nächte.",
+      "status": "verified",
+      "finding": "Verified listening comprehension question and answer key against the Section 5 listening transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-07-T01",
+      "section": "Exercises",
+      "sourceText": "تمرين 1 — اختر ضمير الوصل بعد حرف الجر",
+      "status": "verified",
+      "finding": "Verified all 5 relative pronoun choices (der, den, dem, denen, die) against antecedent gender/number and preposition case; feeds Q01.",
+      "action": "Preserved 5 items and answer key.",
+      "items": [
+        {
+          "id": "T01-1",
+          "prompt": "1. Die Fähre, mit ______ wir fahren, ist pünktlich. (der / die)",
+          "answer": "der",
+          "note": "die Fähre (fem. sg.) + mit (+ Dativ) -> der"
+        },
+        {
+          "id": "T01-2",
+          "prompt": "2. Der Tunnel, durch ______ der Bus fährt, ist lang. (den / dem)",
+          "answer": "den",
+          "note": "der Tunnel (masc. sg.) + durch (+ Akkusativ) -> den"
+        },
+        {
+          "id": "T01-3",
+          "prompt": "3. Das Dorf, in ______ wir übernachten, liegt am Meer. (dem / das)",
+          "answer": "dem",
+          "note": "das Dorf (neut. sg.) + in (+ Dativ static location) -> dem"
+        },
+        {
+          "id": "T01-4",
+          "prompt": "4. Die Wege, auf ______ wir wandern, sind schmal. (denen / die)",
+          "answer": "denen",
+          "note": "die Wege (pl.) + auf (+ Dativ static location) -> denen"
+        },
+        {
+          "id": "T01-5",
+          "prompt": "5. Die Route, über ______ wir gesprochen haben, ist gut markiert. (die / der)",
+          "answer": "die",
+          "note": "die Route (fem. sg.) + über (+ Akkusativ topic) -> die"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T02",
+      "section": "Exercises",
+      "sourceText": "تمرين 2 — أكمل بحرف الجر وضمير الوصل",
+      "status": "refined",
+      "finding": "Corrected answer key for item 1 from 'in der' to 'in dem' because 'das Hotel' is neuter singular (as verified by Duden Hotel and already tested in Q02); verified items 2–4 (zu dem, über die, von der).",
+      "action": "Fixed T02 item 1 answer key in Section 7 to 'in dem' to match 'das Hotel' and Q02.",
+      "items": [
+        {
+          "id": "T02-1",
+          "prompt": "1. Das Hotel, ______ ______ wir übernachtet haben, liegt am Hafen. (in + Dativ)",
+          "answer": "in dem",
+          "note": "Corrected answer key from 'in der' to 'in dem' (das Hotel = neuter singular)"
+        },
+        {
+          "id": "T02-2",
+          "prompt": "2. Der Aussichtspunkt, ______ ______ wir gewandert sind, bietet einen Blick auf die Bucht. (zu + Dativ)",
+          "answer": "zu dem",
+          "note": "der Aussichtspunkt (masc. sg.) + zu (+ Dativ) -> zu dem"
+        },
+        {
+          "id": "T02-3",
+          "prompt": "3. Die Brücke, ______ ______ der Bus fährt, ist alt. (über + Akkusativ)",
+          "answer": "über die",
+          "note": "die Brücke (fem. sg.) + über (+ Akkusativ movement) -> über die"
+        },
+        {
+          "id": "T02-4",
+          "prompt": "4. Die Landschaft, ______ ______ Lina besonders gern spricht, ist beeindruckend. (von + Dativ)",
+          "answer": "von der",
+          "note": "die Landschaft (fem. sg.) + von (+ Dativ) -> von der"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T03",
+      "section": "Exercises",
+      "sourceText": "تمرين 3 — اربط الجملتين بجملة موصولة مع حرف الجر",
+      "status": "refined",
+      "finding": "Expanded from 3 to 4 sentence-combining items by adding item 4 ('Wir erreichen eine Bucht. An der Bucht liegen mehrere Fischerboote.') to practice feminine dative 'an der' from the reading text; feeds Q04, Q05, and P02.",
+      "action": "Added item 4 and updated Section 7 answer key.",
+      "items": [
+        {
+          "id": "T03-1",
+          "prompt": "1. Das ist die Fähre. Wir fahren mit der Fähre zur Insel.",
+          "answer": "Das ist die Fähre, mit der wir zur Insel fahren.",
+          "note": "mit + Dativ fem. sg. -> mit der"
+        },
+        {
+          "id": "T03-2",
+          "prompt": "2. Wir besuchen ein Dorf. In dem Dorf übernachten unsere Freunde.",
+          "answer": "Wir besuchen ein Dorf, in dem unsere Freunde übernachten.",
+          "note": "in + Dativ neut. sg. -> in dem"
+        },
+        {
+          "id": "T03-3",
+          "prompt": "3. Das ist die Route. Wir haben über die Route gesprochen.",
+          "answer": "Das ist die Route, über die wir gesprochen haben.",
+          "note": "über + Akkusativ fem. sg. -> über die"
+        },
+        {
+          "id": "T03-4",
+          "prompt": "4. Wir erreichen eine Bucht. An der Bucht liegen mehrere Fischerboote.",
+          "answer": "Wir erreichen eine Bucht, an der mehrere Fischerboote liegen.",
+          "note": "Added item 4: an + Dativ fem. sg. -> an der"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T04",
+      "section": "Exercises",
+      "sourceText": "تمرين 4 — رتّب الكلمات",
+      "status": "refined",
+      "finding": "Expanded from 3 to 4 word-ordering items by adding item 4 ('Der Aussichtspunkt / von dem aus / wir / die Küste / sehen / ist / bekannt.') to practice compound 'von dem aus'; feeds Q06.",
+      "action": "Added item 4 and updated Section 7 answer key.",
+      "items": [
+        {
+          "id": "T04-1",
+          "prompt": "1. Die Pension / in der / wir / übernachten / ist / ruhig.",
+          "answer": "Die Pension, in der wir übernachten, ist ruhig.",
+          "note": "Embedded relative clause with in der"
+        },
+        {
+          "id": "T04-2",
+          "prompt": "2. Der Hafen / an dem / die Fähre / ankommt / liegt / im Westen.",
+          "answer": "Der Hafen, an dem die Fähre ankommt, liegt im Westen.",
+          "note": "Embedded relative clause with an dem"
+        },
+        {
+          "id": "T04-3",
+          "prompt": "3. Die Wege / auf denen / wir / gegangen sind / waren / schmal.",
+          "answer": "Die Wege, auf denen wir gegangen sind, waren schmal.",
+          "note": "Embedded relative clause with plural dative auf denen"
+        },
+        {
+          "id": "T04-4",
+          "prompt": "4. Der Aussichtspunkt / von dem aus / wir / die Küste / sehen / ist / bekannt.",
+          "answer": "Der Aussichtspunkt, von dem aus wir die Küste sehen, ist bekannt.",
+          "note": "Added item 4: compound prepositional relative von dem aus"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T05",
+      "section": "Exercises",
+      "sourceText": "تمرين 5 — فهم القراءة",
+      "status": "verified",
+      "finding": "Verified all 5 true/false reading comprehension items against the fictional Morgenküste island reading text; feeds Q07, Q08, and P02.",
+      "action": "Preserved 5 items and answer key.",
+      "items": [
+        {
+          "id": "T05-1",
+          "prompt": "1. Morgenküste جزيرة حقيقية تُذكر بوصفها وجهة سياحية معروفة.",
+          "answer": "خطأ — الجزيرة خيالية.",
+          "note": "Text explicitly states 'die fiktive Insel Morgenküste'"
+        },
+        {
+          "id": "T05-2",
+          "prompt": "2. تصل المجموعة إلى الجزيرة بالعبّارة.",
+          "answer": "صحيح.",
+          "note": "Die Fähre, mit der Lina und ihre Freunde anreisen"
+        },
+        {
+          "id": "T05-3",
+          "prompt": "3. تبيت المجموعة في نُزل داخل قرية.",
+          "answer": "صحيح.",
+          "note": "durch ein Dorf, in dem sie in einer kleinen Pension übernachten"
+        },
+        {
+          "id": "T05-4",
+          "prompt": "4. تنتهي الرحلة عند نقطة إطلالة.",
+          "answer": "صحيح.",
+          "note": "endet an einem Aussichtspunkt"
+        },
+        {
+          "id": "T05-5",
+          "prompt": "5. يروي سكان الجزيرة للمجموعة شيئًا عن تاريخها.",
+          "answer": "صحيح.",
+          "note": "Begegnungen mit den Bewohnerinnen, die ihr von der Geschichte der Insel erzählen"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T06",
+      "section": "Exercises",
+      "sourceText": "تمرين 6 — فهم الاستماع",
+      "status": "refined",
+      "finding": "Reformatted inline cloze items 1–5 into a clean vertical numbered list and numbered the Section 7 answer key; feeds Q09 and P02.",
+      "action": "Formatted T06 as 5 numbered lines and numbered its answer key.",
+      "items": [
+        {
+          "id": "T06-1",
+          "prompt": "1. Zuerst besuchte die Gruppe einen kleinen ______.",
+          "answer": "1. Hafen",
+          "note": "einen kleinen Hafen"
+        },
+        {
+          "id": "T06-2",
+          "prompt": "2. Der Bus fuhr an mehreren ______ vorbei.",
+          "answer": "2. Aussichtspunkten",
+          "note": "an mehreren Aussichtspunkten vorbeifuhr"
+        },
+        {
+          "id": "T06-3",
+          "prompt": "3. Die Person mochte besonders die ______.",
+          "answer": "3. Bucht",
+          "note": "Besonders gefiel mir die Bucht"
+        },
+        {
+          "id": "T06-4",
+          "prompt": "4. Am Ende ging die Gruppe zu einer ______.",
+          "answer": "4. Unterkunft",
+          "note": "zu einer Unterkunft"
+        },
+        {
+          "id": "T06-5",
+          "prompt": "5. Dort blieb sie ______ Nächte.",
+          "answer": "5. zwei",
+          "note": "in der wir zwei Nächte blieben"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T07",
+      "section": "Exercises",
+      "sourceText": "تمرين 7 — اختر الحالة المناسبة",
+      "status": "verified",
+      "finding": "Verified all 5 case-identification items (Dativ vs. Akkusativ) against preposition rules; feeds Q10.",
+      "action": "Preserved 5 items and answer key.",
+      "items": [
+        {
+          "id": "T07-1",
+          "prompt": "1. mit dem Bus",
+          "answer": "Dativ",
+          "note": "mit always takes Dativ"
+        },
+        {
+          "id": "T07-2",
+          "prompt": "2. durch den Tunnel",
+          "answer": "Akkusativ",
+          "note": "durch always takes Akkusativ"
+        },
+        {
+          "id": "T07-3",
+          "prompt": "3. in der Pension (مكان ثابت)",
+          "answer": "Dativ",
+          "note": "in + static location (Wo?) takes Dativ"
+        },
+        {
+          "id": "T07-4",
+          "prompt": "4. über die Route sprechen",
+          "answer": "Akkusativ",
+          "note": "sprechen über + topic takes Akkusativ"
+        },
+        {
+          "id": "T07-5",
+          "prompt": "5. auf den Wegen wandern (مكان ثابت)",
+          "answer": "Dativ",
+          "note": "auf + static location (Wo?) takes Dativ"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-T08",
+      "section": "Exercises",
+      "sourceText": "تمرين 8 — اكتب وصفًا لرحلة",
+      "status": "refined",
+      "finding": "Synchronized T08 with P01 (5–6 sentence written fictional trip description, writing-only, min 150 chars) and P02 (5–6 sentence written + spoken briefing from T05 and T06, min 180 chars) and added two 5-sentence model answers (10 model parts total).",
+      "action": "Updated T08 prompt and Section 7 model answers.",
+      "items": [
+        {
+          "id": "T08-P01-1",
+          "prompt": "P01 sentence 1",
+          "answer": "Unsere fiktive Wochenendreise beginnt an einem kleinen Hafen, von dem aus wir am Morgen zur Nachbarinsel aufbrechen.",
+          "note": "von dem aus (Dativ masc. sg.)"
+        },
+        {
+          "id": "T08-P01-2",
+          "prompt": "P01 sentence 2",
+          "answer": "Die Fähre, mit der wir über das ruhige Meer fahren, erreicht nach einer Stunde eine stille Bucht.",
+          "note": "mit der (Dativ fem. sg.)"
+        },
+        {
+          "id": "T08-P01-3",
+          "prompt": "P01 sentence 3",
+          "answer": "Danach führt unsere Route durch ein abgelegenes Dorf, in dem wir in einer gemütlichen Pension übernachten.",
+          "note": "in dem (Dativ neut. sg.)"
+        },
+        {
+          "id": "T08-P01-4",
+          "prompt": "P01 sentence 4",
+          "answer": "Am zweiten Tag folgen wir den schmalen Wegen, auf denen man zwischen alten Steinmauern bis zur Küste wandern kann.",
+          "note": "auf denen (Dativ pl.)"
+        },
+        {
+          "id": "T08-P01-5",
+          "prompt": "P01 sentence 5",
+          "answer": "Am Nachmittag erreichen wir den höchsten Aussichtspunkt, über den wir schon in unserem Reiseführer viel gelesen haben.",
+          "note": "über den (Akkusativ masc. sg.)"
+        },
+        {
+          "id": "T08-P02-1",
+          "prompt": "P02 sentence 1",
+          "answer": "Die Reise über die fiktive Insel Morgenküste beginnt mit einer Fähre, mit der Lina und ihre Freunde im Hafen West ablegen.",
+          "note": "mit der (Dativ fem. sg.); T05 departure from Hafen West"
+        },
+        {
+          "id": "T08-P02-2",
+          "prompt": "P02 sentence 2",
+          "answer": "Anschließend fahren sie durch ein Dorf, in dem sie in einer kleinen Pension ruhig übernachten.",
+          "note": "in dem (Dativ neut. sg.); T05 village guesthouse"
+        },
+        {
+          "id": "T08-P02-3",
+          "prompt": "P02 sentence 3",
+          "answer": "Am nächsten Tag wandern sie auf einem Weg mit alten Steinmauern bis zu einer Bucht, an der mehrere Fischerboote liegen.",
+          "note": "an der (Dativ fem. sg.); T05 stone walls and bay"
+        },
+        {
+          "id": "T08-P02-4",
+          "prompt": "P02 sentence 4",
+          "answer": "Die Route, über die Lina zuvor in ihrem Reiseführer gelesen hat, endet an einem Aussichtspunkt, von dem aus man die Küste sehen kann, bevor die Gruppe den Bewohnerinnen zuhört.",
+          "note": "über die (Akkusativ fem. sg.) + von dem aus (Dativ masc. sg.); T05 viewpoint and residents"
+        },
+        {
+          "id": "T08-P02-5",
+          "prompt": "P02 sentence 5",
+          "answer": "Auch im Hörtext besucht die Gruppe zuerst einen kleinen Hafen, fährt mit dem Bus an mehreren Aussichtspunkten vorbei, bewundert die im Reiseführer beschriebene Bucht und bleibt schließlich in einer Unterkunft, in der sie zwei Nächte verbringt.",
+          "note": "in der (Dativ fem. sg.); T06 listening summary"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q01",
+      "section": "Assessment Quiz",
+      "sourceText": "اختر ضمير الوصل المناسب: **Die Fähre, mit ___ wir zur Insel fahren, legt früh ab.**",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T01'], answerIndex 1, and Arabic explanation (الاسم **die Fähre** مؤنث مفرد، وحرف الجر **mit** يتطلب Dativ؛ لذلك نستخدم **der**.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "der",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 2,
+          "text": "dem",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q02",
+      "section": "Assessment Quiz",
+      "sourceText": "أكمل حرف الجر وضمير الوصل: **Das Hotel, ___ ___ wir übernachtet haben, liegt am Hafen.** (in + Dativ)",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T02'], answerIndex 2, and Arabic explanation (المبيت هنا في مكان ثابت، فيأتي **in + Dativ**. والاسم **das Hotel** محايد، لذلك الصيغة هي **in dem**.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "in das",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "mit dem",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 2,
+          "text": "in dem",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q03",
+      "section": "Assessment Quiz",
+      "sourceText": "أكمل حرف الجر وضمير الوصل: **Der Aussichtspunkt, ___ ___ wir gewandert sind, bietet einen Blick auf die Bucht.** (zu + Dativ)",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T02'], answerIndex 0, and Arabic explanation (يتطلب **zu** حالة Dativ، والاسم **der Aussichtspunkt** مذكر مفرد؛ لذا نقول **zu dem**.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "zu dem",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 1,
+          "text": "zu den",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 2,
+          "text": "durch den",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q04",
+      "section": "Assessment Quiz",
+      "sourceText": "اختر الجملة الموصولة الصحيحة من: **Das ist die Route. Wir haben über die Route gesprochen.**",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T03'], answerIndex 1, and Arabic explanation (في **über die Route sprechen** يأتي **über** مع Akkusativ. والاسم **die Route** مؤنث، فيصبح ضمير الوصل **die**: **über die**.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Das ist die Route, über der wir gesprochen haben.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "Das ist die Route, über die wir gesprochen haben.",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 2,
+          "text": "Das ist die Route, mit die wir gesprochen haben.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q05",
+      "section": "Assessment Quiz",
+      "sourceText": "ادمج الجملتين بصيغة صحيحة: **Wir besuchen ein Dorf. In dem Dorf übernachten unsere Freunde.**",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T03'], answerIndex 2, and Arabic explanation (الأصدقاء يبيتون داخل القرية؛ فـ**in** للمكان الثابت يتطلب Dativ، و**das Dorf** محايد مفرد. الصواب **in dem**.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Wir besuchen ein Dorf, in den unsere Freunde übernachten.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "Wir besuchen ein Dorf, in das unsere Freunde übernachten.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 2,
+          "text": "Wir besuchen ein Dorf, in dem unsere Freunde übernachten.",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q06",
+      "section": "Assessment Quiz",
+      "sourceText": "اختر ترتيب الكلمات الصحيح: **Die Wege / auf denen / wir / gegangen sind / waren / schmal.**",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T04'], answerIndex 0, and Arabic explanation (ضمير الوصل يعود إلى **die Wege** (جمع)، و**auf** للمكان هنا يتطلب Dativ، لذلك نستخدم **denen**. والفعل المصرف **sind** يأتي في نهاية الجملة الموصولة، مع فاصلتين حولها.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Die Wege, auf denen wir gegangen sind, waren schmal.",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 1,
+          "text": "Die Wege, auf den wir gegangen sind, waren schmal.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 2,
+          "text": "Die Wege, auf denen sind wir gegangen, waren schmal.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q07",
+      "section": "Assessment Quiz",
+      "sourceText": "بحسب قراءة T05، أين تبيت مجموعة Lina وأصدقائها؟",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T05'], answerIndex 1, and Arabic explanation (يذكر النص أنهم يمرون بقرية ويبيتون في نزل صغير فيها؛ لا يقول إن النزل عند نقطة الإطلالة أو في الميناء.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "في نزل عند نقطة الإطلالة.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "في نزل صغير داخل قرية.",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 2,
+          "text": "في ميناء West.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q08",
+      "section": "Assessment Quiz",
+      "sourceText": "بحسب قراءة T05، أين تنتهي الطريق التي قرأت عنها Lina في دليلها؟",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T05'], answerIndex 2, and Arabic explanation (يقول النص إن الطريق تنتهي عند **einem Aussichtspunkt**, ومنه يمكن رؤية الساحل.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "عند خليج ترسو فيه قوارب الصيد.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "في قرية الإقامة.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 2,
+          "text": "عند نقطة إطلالة يمكن منها رؤية الساحل.",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q09",
+      "section": "Assessment Quiz",
+      "sourceText": "بحسب النص المكتوب لتدريب الاستماع T06، أي خليج أعجب المتحدث أكثر؟",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T06'], answerIndex 0, and Arabic explanation (يقول المتحدث إن الخليج الذي قرأ عنه في دليل السفر أعجبه خصوصًا. يتيح النص المكتوب الإجابة من دون تشغيل MP3.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "الخليج الذي قرأ عنه من قبل في دليل سفر.",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 1,
+          "text": "الخليج الذي بات فيه ليلتين.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 2,
+          "text": "الخليج الذي زاره أولًا قبل الميناء.",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-Q10",
+      "section": "Assessment Quiz",
+      "sourceText": "أي عبارة تستخدم Akkusativ بعد حرف الجر؟",
+      "status": "verified",
+      "finding": "Verified prompt, sourceTaskIds ['DL-B2-07-T07'], answerIndex 1, and Arabic explanation (يتطلب **durch** Akkusativ؛ لذلك نقول **durch den Tunnel**. أما **mit dem Bus** و**in der Pension** للمكان الثابت فتأتيان مع Dativ.).",
+      "action": "Preserved in b2-07-v3.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "mit dem Bus",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        },
+        {
+          "index": 1,
+          "text": "durch den Tunnel",
+          "isCorrect": true,
+          "review": "Correct option verified against source task and grammar/reading/listening rule."
+        },
+        {
+          "index": 2,
+          "text": "in der Pension (مكان ثابت)",
+          "isCorrect": false,
+          "review": "Distractor verified as unambiguously incorrect."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-P01",
+      "section": "Performance Tasks",
+      "sourceText": "اكتب وصفًا من خمس إلى ست جمل ألمانية عن رحلة خيالية. استخدم ثلاث جمل موصولة على الأقل، تسبق كلًّا منها حروف جر مختلفة، مثل mit der أو in dem أو durch das أو über die. طابق ضمير الوصل مع الاسم وحالة حرف الجر، وضع الفعل المصرف في نهاية الجملة الموصولة. لا حاجة إلى وصف مكان حقيقي أو إدخال بيانات شخصية. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-07-P01 modality ['writing'], speakAloud=False, minimumResponseCharacters=150, and sourceTaskIds=['DL-B2-07-T08'] with T08.",
+      "action": "Updated in b2-07-v3.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "وصف مكتوب لرحلة خيالية من خمس إلى ست جمل، يتضمن ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة.",
+          "review": "Verified visible local self-check rubric criterion against task prompt and lesson objective DL-B2-07-G01."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "يمكن تتبع مسار الرحلة وفهم تفاصيل المكان أو التجربة؛ لا يلزم وصف وجهة حقيقية أو إدخال بيانات شخصية.",
+          "review": "Verified visible local self-check rubric criterion against task prompt and lesson objective DL-B2-07-G01."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يطابق ضمير الوصل مع جنس الاسم وعدده والحالة التي يطلبها حرف الجر، ويضع الفعل المصرف في نهاية الجملة الموصولة مع الفواصل المناسبة.",
+          "review": "Verified visible local self-check rubric criterion against task prompt and lesson objective DL-B2-07-G01."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-P02",
+      "section": "Performance Tasks",
+      "sourceText": "استنادًا إلى قراءة T05 عن جزيرة Morgenküste الخيالية ونص الاستماع المكتوب في T06، اكتب إحاطة من خمس إلى ست جمل ألمانية لمتعلم آخر ثم اقرأها بصوت مسموع لنفسك. انقل ثلاثة تفاصيل صحيحة على الأقل عن الرحلة، مثل الانطلاق بالعبّارة من Hafen West أو المبيت في نزل داخل القرية أو انتهاء الطريق عند نقطة الإطلالة، مع الإشارة إلى محطة من نص الاستماع المكتوب مثل الخليج الذي قرئ عنه في دليل السفر أو الإقامة ليلتين. استخدم ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة، ولا تضف حقائق أو مواعيد غير موجودة في المصدر. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-07-P02 modality ['writing', 'speaking'], speakAloud=True, minimumResponseCharacters=180, and sourceTaskIds=['DL-B2-07-T03', 'DL-B2-07-T05', 'DL-B2-07-T06', 'DL-B2-07-T08'] with T08.",
+      "action": "Updated in b2-07-v3.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "إحاطة مكتوبة ومقروءة جهرًا من خمس إلى ست جمل تنقل ثلاثة تفاصيل على الأقل من قراءة T05 ونص الاستماع المكتوب في T06، وتتضمن ثلاث جمل موصولة تسبقها حروف جر مختلفة.",
+          "review": "Verified visible local self-check rubric criterion against task prompt and lesson objective DL-B2-07-G01."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "المعلومات مطابقة لرحلة الجزيرة الخيالية ونص الاستماع كما وردت في المصدر، ومنظمة بحيث يفهم المتعلم الآخر المسار؛ لا تُضاف مواعيد أو تفاصيل غير مذكورة.",
+          "review": "Verified visible local self-check rubric criterion against task prompt and lesson objective DL-B2-07-G01."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يطابق كل ضمير موصول مع مرجعه والحالة التي يتطلبها حرف الجر، ويضع الفعل المصرف في نهاية الجملة الموصولة مع الفواصل المناسبة.",
+          "review": "Verified visible local self-check rubric criterion against task prompt and lesson objective DL-B2-07-G01."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-P01-model-01",
+      "section": "Written Models",
+      "sourceText": "نموذج P01 (وصف رحلة خيالية — كتابة فقط، 5 جمل)",
+      "status": "added",
+      "finding": "5-sentence fictional trip description (582 chars in bundle, >150 min) containing 5 prepositional relative clauses with varied prepositions (von dem aus, mit der, in dem, auf denen, über den).",
+      "action": "Added to Section 7 answer key and tested in test_progression.cjs.",
+      "items": [
+        {
+          "id": "T08-P01-1",
+          "prompt": "P01 sentence 1",
+          "answer": "Unsere fiktive Wochenendreise beginnt an einem kleinen Hafen, von dem aus wir am Morgen zur Nachbarinsel aufbrechen.",
+          "note": "von dem aus (Dativ masc. sg.)"
+        },
+        {
+          "id": "T08-P01-2",
+          "prompt": "P01 sentence 2",
+          "answer": "Die Fähre, mit der wir über das ruhige Meer fahren, erreicht nach einer Stunde eine stille Bucht.",
+          "note": "mit der (Dativ fem. sg.)"
+        },
+        {
+          "id": "T08-P01-3",
+          "prompt": "P01 sentence 3",
+          "answer": "Danach führt unsere Route durch ein abgelegenes Dorf, in dem wir in einer gemütlichen Pension übernachten.",
+          "note": "in dem (Dativ neut. sg.)"
+        },
+        {
+          "id": "T08-P01-4",
+          "prompt": "P01 sentence 4",
+          "answer": "Am zweiten Tag folgen wir den schmalen Wegen, auf denen man zwischen alten Steinmauern bis zur Küste wandern kann.",
+          "note": "auf denen (Dativ pl.)"
+        },
+        {
+          "id": "T08-P01-5",
+          "prompt": "P01 sentence 5",
+          "answer": "Am Nachmittag erreichen wir den höchsten Aussichtspunkt, über den wir schon in unserem Reiseführer viel gelesen haben.",
+          "note": "über den (Akkusativ masc. sg.)"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-07-P02-model-01",
+      "section": "Written Models",
+      "sourceText": "نموذج P02 (إحاطة لمتعلم آخر استنادًا إلى T05 وT06 — كتابة + جهر، 5 جمل)",
+      "status": "added",
+      "finding": "5-sentence learner briefing (766 chars in bundle, >180 min) accurately summarizing T05 (departure from Hafen West, village guesthouse, viewpoint, residents) and T06 (small harbor, viewpoints by bus, bay in guidebook, two nights in lodging) using 6 prepositional relative clauses (mit der, in dem, an der, über die, von dem aus, in der).",
+      "action": "Added to Section 7 answer key and tested in test_progression.cjs.",
+      "items": [
+        {
+          "id": "T08-P02-1",
+          "prompt": "P02 sentence 1",
+          "answer": "Die Reise über die fiktive Insel Morgenküste beginnt mit einer Fähre, mit der Lina und ihre Freunde im Hafen West ablegen.",
+          "note": "mit der (Dativ fem. sg.); T05 departure from Hafen West"
+        },
+        {
+          "id": "T08-P02-2",
+          "prompt": "P02 sentence 2",
+          "answer": "Anschließend fahren sie durch ein Dorf, in dem sie in einer kleinen Pension ruhig übernachten.",
+          "note": "in dem (Dativ neut. sg.); T05 village guesthouse"
+        },
+        {
+          "id": "T08-P02-3",
+          "prompt": "P02 sentence 3",
+          "answer": "Am nächsten Tag wandern sie auf einem Weg mit alten Steinmauern bis zu einer Bucht, an der mehrere Fischerboote liegen.",
+          "note": "an der (Dativ fem. sg.); T05 stone walls and bay"
+        },
+        {
+          "id": "T08-P02-4",
+          "prompt": "P02 sentence 4",
+          "answer": "Die Route, über die Lina zuvor in ihrem Reiseführer gelesen hat, endet an einem Aussichtspunkt, von dem aus man die Küste sehen kann, bevor die Gruppe den Bewohnerinnen zuhört.",
+          "note": "über die (Akkusativ fem. sg.) + von dem aus (Dativ masc. sg.); T05 viewpoint and residents"
+        },
+        {
+          "id": "T08-P02-5",
+          "prompt": "P02 sentence 5",
+          "answer": "Auch im Hörtext besucht die Gruppe zuerst einen kleinen Hafen, fährt mit dem Bus an mehreren Aussichtspunkten vorbei, bewundert die im Reiseführer beschriebene Bucht und bleibt schließlich in einer Unterkunft, in der sie zwei Nächte verbringt.",
+          "note": "in der (Dativ fem. sg.); T06 listening summary"
+        }
+      ]
+    },
+    {
+      "id": "b2-07-card-01",
+      "section": "Review Cards",
+      "sourceText": "- **die Fähre, mit der wir fahren** → العبّارة التي نسافر بها.",
+      "status": "verified",
+      "finding": "Verified German prepositional relative clause example and Arabic translation.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-card-02",
+      "section": "Review Cards",
+      "sourceText": "- **das Dorf, in dem wir übernachten** → القرية التي نبيت فيها.",
+      "status": "verified",
+      "finding": "Verified German prepositional relative clause example and Arabic translation.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-card-03",
+      "section": "Review Cards",
+      "sourceText": "- **die Route, über die wir gesprochen haben** → المسار الذي تحدثنا عنه.",
+      "status": "verified",
+      "finding": "Verified German prepositional relative clause example and Arabic translation.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-07-card-04",
+      "section": "Review Cards",
+      "sourceText": "- **der Aussichtspunkt, von dem aus man die Küste sieht** → نقطة الإطلالة التي يمكن منها رؤية الساحل.",
+      "status": "verified",
+      "finding": "Verified German prepositional relative clause example and Arabic translation.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-07-AUD-PHR-01",
+      "section": "Audio Assets",
+      "sourceText": "مفردات الرحلات والوجهات",
+      "status": "verified",
+      "finding": "Verified 1 segment(s), voice mapping ['voice-02'], status=generated_pending_acoustic_review, transcriptPolicy=offer, and 100% verbatim alignment with Section 1. Not acoustically reviewed.",
+      "action": "Preserved existing MP3 files, playlist metadata, and source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Reiseetappe, die Reiseetappen",
+        "Die Route, die Routen",
+        "Die Unterkunft, die Unterkünfte",
+        "Der Aussichtspunkt, die Aussichtspunkte",
+        "Die Landschaft, die Landschaften",
+        "Die Begegnung, die Begegnungen",
+        "Die Wegbeschreibung, die Wegbeschreibungen",
+        "Der Reiseführer, die Reiseführer",
+        "Der Hafen, die Häfen",
+        "Die Bucht, die Buchten",
+        "Übernachten in, übernachtet",
+        "Vorbeifahren an, Dativ, fährt vorbei",
+        "Sich beziehen auf, Akkusativ, bezieht sich",
+        "Abgelegen",
+        "Gut erreichbar",
+        "Beeindruckend."
+      ]
+    },
+    {
+      "id": "DL-B2-07-AUD-MODEL-01",
+      "section": "Audio Assets",
+      "sourceText": "نماذج الجمل الموصولة مع حروف الجر",
+      "status": "verified",
+      "finding": "Verified 1 segment(s), voice mapping ['voice-02'], status=generated_pending_acoustic_review, transcriptPolicy=offer, and 100% verbatim alignment with Section 2. Not acoustically reviewed.",
+      "action": "Preserved existing MP3 files, playlist metadata, and source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Fähre, mit der wir zur Insel fahren, legt früh ab",
+        "Das Dorf, durch das wir fahren, liegt im Tal",
+        "Die Pension, in der wir übernachten, ist ruhig",
+        "Die Route, über die wir gesprochen haben, führt zur Bucht",
+        "Die Wege, auf denen wir gewandert sind, waren schmal."
+      ]
+    },
+    {
+      "id": "DL-B2-07-AUD-DLG-01",
+      "section": "Audio Assets",
+      "sourceText": "حوار: Salma وJonas عن اختيار وجهة",
+      "status": "verified",
+      "finding": "Verified 6 segment(s), voice mapping ['voice-02', 'voice-03', 'voice-02', 'voice-03', 'voice-02', 'voice-03'], status=generated_pending_acoustic_review, transcriptPolicy=offer, and 100% verbatim alignment with Section 3. Not acoustically reviewed.",
+      "action": "Preserved existing MP3 files, playlist metadata, and source_line in audio-asset-register.csv.",
+      "items": [
+        "Salma: Welche Route möchtest du für unsere Reise nehmen?",
+        "Jonas: Die Strecke, über die wir gestern gesprochen haben. Sie führt durch ein Dorf, in dem es eine kleine Pension gibt.",
+        "Salma: Und wie kommen wir dorthin?",
+        "Jonas: Mit der Fähre, mit der wir am Hafen abfahren. Danach nehmen wir einen Bus, der an der Bucht vorbeifährt.",
+        "Salma: Gibt es dort einen Aussichtspunkt?",
+        "Jonas: Ja, einen Weg, auf dem wir zu Fuß hinaufgehen können. Von dort sieht man die Landschaft, für die die Insel bekannt ist."
+      ]
+    },
+    {
+      "id": "DL-B2-07-AUD-READ-01",
+      "section": "Audio Assets",
+      "sourceText": "قراءة: مسار خيالي على جزيرة Morgenküste",
+      "status": "verified",
+      "finding": "Verified 1 segment(s), voice mapping ['voice-02'], status=generated_pending_acoustic_review, transcriptPolicy=offer, and 100% verbatim alignment with Section 4. Not acoustically reviewed.",
+      "action": "Preserved existing MP3 files, playlist metadata, and source_line in audio-asset-register.csv.",
+      "items": [
+        "Die folgende Reise führt über die fiktive Insel Morgenküste.",
+        "Die Fähre, mit der Lina und ihre Freunde anreisen, legt im Hafen West ab.",
+        "Von dort fahren sie durch ein Dorf, in dem sie in einer kleinen Pension übernachten.",
+        "Am nächsten Morgen gehen sie einen Weg entlang, auf dem alte Steinmauern stehen.",
+        "Später erreichen sie eine Bucht, an der mehrere Fischerboote liegen.",
+        "Die Route, über die Lina in ihrem Reiseführer gelesen hat, endet an einem Aussichtspunkt, von dem aus man die Küste sehen kann.",
+        "Die Gruppe nimmt sich Zeit für Begegnungen mit den Bewohnerinnen, die ihr von der Geschichte der Insel erzählen."
+      ]
+    },
+    {
+      "id": "DL-B2-07-AUD-LST-01",
+      "section": "Audio Assets",
+      "sourceText": "استماع: رحلة إلى ميناء وخليج ومكان إقامة",
+      "status": "verified",
+      "finding": "Verified 1 segment(s), voice mapping ['voice-03'], status=generated_pending_acoustic_review, transcriptPolicy=offer, and 100% verbatim alignment with Section 5. Not acoustically reviewed.",
+      "action": "Preserved existing MP3 files, playlist metadata, and source_line in audio-asset-register.csv.",
+      "items": [
+        "Auf unserer Reise besuchten wir einen kleinen Hafen, an dem früher viele Boote ankamen.",
+        "Danach fuhren wir mit einem Bus, der an mehreren Aussichtspunkten vorbeifuhr.",
+        "Besonders gefiel mir die Bucht, über die ich schon in einem Reiseführer gelesen hatte.",
+        "Am Ende gingen wir zu einer Unterkunft, in der wir zwei Nächte blieben."
+      ]
+    }
+  ]
+}
