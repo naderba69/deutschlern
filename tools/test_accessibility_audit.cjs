@@ -332,6 +332,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.9-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.9-practical-form-fixture', width);
+  // CR52: written fictional technology test scenario and spoken T05/T06 briefing, pending audio.
+  await page.evaluate(() => openLesson('b2-10-wishes-probabilities-technology-konjunktiv2-past'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B2.10-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.10-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
