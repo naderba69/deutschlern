@@ -118,6 +118,27 @@ def safe_inline(text: str) -> str:
     return text
 
 
+def is_german_html_fragment(fragment: str) -> bool:
+    plain = html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+    return bool(plain) and not re.search(r"[\u0600-\u06FF]", plain) and bool(re.search(r"[A-Za-zÄÖÜäöüß]", plain))
+
+
+def tag_inline_german_in_mixed_block(fragment: str) -> str:
+    def replace_tag(match: re.Match[str]) -> str:
+        tag_name, inner = match.group(1), match.group(2)
+        if is_german_html_fragment(inner):
+            return f'<{tag_name} lang="de">{inner}</{tag_name}>'
+        return match.group(0)
+
+    return re.sub(r"<(strong|em)>(.*?)</\1>", replace_tag, fragment)
+
+
+def render_block_tag(tag: str, inner_html: str, extra_attrs: str = "") -> str:
+    if is_german_html_fragment(inner_html):
+        return f'<{tag}{extra_attrs} dir="auto" lang="de">{inner_html}</{tag}>'
+    return f'<{tag}{extra_attrs} dir="auto">{tag_inline_german_in_mixed_block(inner_html)}</{tag}>'
+
+
 def render_table(table_lines: list[str]) -> str:
     parsed = [cells(line) for line in table_lines]
     if len(parsed) < 2:
@@ -135,7 +156,8 @@ def render_table(table_lines: list[str]) -> str:
 
     def render_row(row: list[str], tag: str) -> str:
         row = (row + [""] * column_count)[:column_count]
-        return "<tr>" + "".join(f'<{tag} dir="auto">{safe_inline(cell)}</{tag}>' for cell in row) + "</tr>"
+        extra = ' scope="col"' if tag == "th" else ""
+        return "<tr>" + "".join(render_block_tag(tag, safe_inline(cell), extra) for cell in row) + "</tr>"
 
     parts = ['<div class="lesson-table-wrap" tabindex="0" role="region" aria-label="جدول الدرس — استخدم أسهم الاتجاه للتمرير"><table class="lesson-table">']
     if header:
@@ -170,7 +192,7 @@ def markdown_to_html(markdown: str) -> str:
             fragments.append(safe_inline(raw.rstrip()))
             if index < len(paragraph) - 1:
                 fragments.append("<br>" if hard_break else " ")
-        out.append(f'<p dir="auto">{"".join(fragments)}</p>')
+        out.append(render_block_tag("p", "".join(fragments)))
         paragraph = []
 
     def flush_list() -> None:
@@ -178,7 +200,7 @@ def markdown_to_html(markdown: str) -> str:
         if not list_items or not list_kind:
             return
         tag = "ol" if list_kind == "ol" else "ul"
-        rendered = "".join(f'<li dir="auto">{safe_inline(item)}</li>' for item in list_items)
+        rendered = "".join(render_block_tag("li", safe_inline(item)) for item in list_items)
         out.append(f'<{tag}>{rendered}</{tag}>')
         list_items = []
         list_kind = None
@@ -187,7 +209,7 @@ def markdown_to_html(markdown: str) -> str:
         nonlocal quote_lines
         if quote_lines:
             text = "<br>".join(safe_inline(line.strip()) for line in quote_lines)
-            out.append(f'<blockquote dir="auto">{text}</blockquote>')
+            out.append(render_block_tag("blockquote", text))
             quote_lines = []
 
     def flush_table() -> None:

@@ -92,6 +92,9 @@ class BalanceChecker(HTMLParser):
         if tag == "div" and "lesson-table-wrap" in attributes.get("class", "").split():
             if attributes.get("tabindex") != "0" or attributes.get("role") != "region" or not attributes.get("aria-label"):
                 self.errors.append("lesson table scroll region needs tabindex=0, role=region and an accessible name")
+        if tag == "th":
+            if attributes.get("scope") != "col" or attributes.get("dir") != "auto":
+                self.errors.append("table header cell <th> needs scope='col' and dir='auto'")
         if tag not in VOID_TAGS:
             self.stack.append(tag)
 
@@ -521,9 +524,9 @@ def main() -> None:
     for snippet in (
         'class="german-word" dir="ltr" lang="de"',
         'class="flash-word" dir="ltr" lang="de"',
-        '<span dir="ltr" lang="de">${escapeHTML(segment.text)}</span>',
-        'class="word-example" dir="auto"',
-        'class="flash-example" dir="auto"',
+        '<strong dir="auto"${isGermanTextSnippet(segment.speaker) ? \' lang="de"\' : \'\'}>${escapeHTML(segment.speaker)}</strong><span dir="ltr" lang="de">${escapeHTML(segment.text)}</span>',
+        'class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? \' lang="de"\' : \'\'}',
+        'class="flash-example" dir="auto"${isGermanTextSnippet(word.example) ? \' lang="de"\' : \'\'}',
         'isGermanTextSnippet(option) ? \' lang="de"\' : \'\'',
         'class="quiz-feedback ${isCorrect ? \'good\' : \'try-again\'}" dir="auto"',
         '<p dir="auto">${escapeHTML(task.prompt)}</p>',
@@ -537,6 +540,24 @@ def main() -> None:
     assert (de_code_count, ar_code_count, num_code_count) == (910, 2, 14), (
         f"Expected (910, 2, 14) rendered <code> spans (lang=de, dir=auto, numeric); found {(de_code_count, ar_code_count, num_code_count)}"
     )
+    all_html_units = lessons + [check]
+    th_de = sum(len(re.findall(r'<th scope="col" dir="auto" lang="de">.*?</th>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    th_ar = sum(len(re.findall(r'<th scope="col" dir="auto">.*?</th>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    td_de = sum(len(re.findall(r'<td dir="auto" lang="de">.*?</td>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    td_ar = sum(len(re.findall(r'<td dir="auto">.*?</td>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    bq_de = sum(len(re.findall(r'<blockquote dir="auto" lang="de">.*?</blockquote>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    bq_ar = sum(len(re.findall(r'<blockquote dir="auto">.*?</blockquote>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    p_de = sum(len(re.findall(r'<p dir="auto" lang="de">.*?</p>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    p_ar = sum(len(re.findall(r'<p dir="auto">.*?</p>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    li_de = sum(len(re.findall(r'<li dir="auto" lang="de">.*?</li>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    li_ar = sum(len(re.findall(r'<li dir="auto">.*?</li>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    st_de = sum(len(re.findall(r'<strong lang="de">.*?</strong>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    st_ar = sum(len(re.findall(r'<strong>.*?</strong>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    em_de = sum(len(re.findall(r'<em lang="de">.*?</em>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    em_ar = sum(len(re.findall(r'<em>.*?</em>', u.get("contentHtml", ""), re.S)) for u in all_html_units)
+    assert (th_de, th_ar, td_de, td_ar, bq_de, bq_ar, p_de, p_ar, li_de, li_ar, st_de, st_ar, em_de, em_ar) == (
+        21, 252, 1848, 1090, 109, 9, 210, 927, 1750, 2071, 2430, 1948, 32, 19
+    ), f"Unexpected CR59 table/block/inline lang='de' distribution: {(th_de, th_ar, td_de, td_ar, bq_de, bq_ar, p_de, p_ar, li_de, li_ar, st_de, st_ar, em_de, em_ar)}"
     for l in lessons:
         assert not re.search(r"</strong>\s*→\s*<strong>", l.get("contentHtml", "")), (
             f"Unmerged arrow between adjacent <strong> spans in {l['id']}"
@@ -548,7 +569,7 @@ def main() -> None:
     assert "overflow-x: hidden; overflow-y: auto;" in css_text, "Missing deterministic overflow rules on performance textarea in styles.css"
 
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 58, f"Expected 58 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 59, f"Expected 59 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():

@@ -52,5 +52,5 @@ for q in a['quiz']+a['performanceTasks']:assert catalog[q['id']]['source_exercis
 l=next(x for x in json.loads((R/'data/course.json').read_text())['lessons'] if x['id']==review['lessonId'])
 for key in ['assessment','quiz','performanceTasks']:assert l[key]==a[key]
 assert len(l['vocabulary'])==11
-assert '<th dir="auto">arbeiten</th>' in l['contentHtml']
+assert '<th scope="col" dir="auto" lang="de">arbeiten</th>' in l['contentHtml']
 print(f'PASS: A1.2 {len(ids)} review units/35 exercise sub-items, scoped possessives, three-question rubric, written/oral modes, keys/catalog, source/audio hashes and bundle; not linguistic/acoustic certification.')
