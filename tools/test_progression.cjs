@@ -1600,6 +1600,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.2 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR45: written store sustainability plan and spoken cafe team briefing; B2.3 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-03-consumption-environment-passive-modal').assessment.version, 'b2-03-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-03-consumption-environment-passive-modal');
+    const responses = ["In unserem fiktiven Nachbarschaftsladen sollen Einwegverpackungen schrittweise reduziert werden. Heißgetränke und Suppen können in langlebigen Mehrwegbehältern gegen Pfand angeboten werden. Kundinnen und Kunden können außerdem eigene Dosen für trockene Lebensmittel mitbringen. Beschädigte Küchengeräte müssen nicht sofort entsorgt werden, sondern sollten zuerst in einer kleinen Partnerwerkstatt geprüft und repariert werden. Das Team sammelt Rückmeldungen im Alltag, ohne vorab feste Einsparquoten zu versprechen.", "In unserem Café werden Getränke in Mehrwegbechern angeboten, die gegen Pfand ausgeliehen und später zurückgegeben werden können. Essensreste werden in der Küche getrennt gesammelt. Beschädigte Tabletts müssen nicht sofort ersetzt werden, weil zuerst geprüft wird, ob sie repariert werden können. Das Team sammelt Rückmeldungen der Gäste, um praktische Vorschläge kennenzulernen und weniger Material zu verschwenden. Als nächster Schritt sollten an der Theke kurze Hinweise zur Rückgabe angebracht werden, damit die Mehrwegbecher noch einfacher genutzt werden können."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Wir sparen.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.3 models fit thresholds; store plan is writing only, cafe briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-03-consumption-environment-passive-modal').performanceTasks[1]], 'lesson:b2-03-consumption-environment-passive-modal', 'b2-03-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-03-consumption-environment-passive-modal').performanceTasks[0]], 'lesson:b2-03-consumption-environment-passive-modal', 'b2-03-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-03-consumption-environment-passive-modal');
+      const next=findLesson('b2-04-cities-housing-participles');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-03-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-03-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-03-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-03-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.3 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2966,7 +3000,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2ConsumptionAssessment = b2Lessons[2];
   assert.equal(b2ConsumptionAssessment.id, "b2-03-consumption-environment-passive-modal", "B2.3 must stay in its source order");
   assert.equal(b2ConsumptionAssessment.assessment?.status, "ready", "B2.3 must have a ready local assessment");
-  assert.equal(b2ConsumptionAssessment.assessment?.version, "b2-03-v1", "B2.3 must use its stable assessment version");
+  assert.equal(b2ConsumptionAssessment.assessment?.version, "b2-03-v2", "B2.3 must use its stable assessment version");
   assert.equal(b2ConsumptionAssessment.assessment?.minimumScore, 80, "B2.3 must retain the 80 percent mastery threshold");
   assert.equal(b2ConsumptionAssessment.assessment?.minimumItems, 10, "B2.3 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[2])", context), true, "B2.3 must pass the app's full local assessment-readiness check");
@@ -2975,7 +3009,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2ConsumptionQuestionSources = new Set(b2ConsumptionAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b2ConsumptionQuestionSources.has(`DL-B2-03-T0${task}`), `B2.3 quiz must cover source task T0${task}`);
   assert.ok(b2ConsumptionAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-03-G01")), "all B2.3 questions must map to the lesson objective");
-  assert.ok(b2ConsumptionAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-03-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.3 performance tasks must map to T08 and offer visible written/oral local self-checks without recording");
+  assert.ok(b2ConsumptionAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-03-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.3 performance tasks must map to T08 and remain independent of audio files");
+  assert.deepEqual(b2ConsumptionAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
   assert.ok(b2ConsumptionAssessment.performanceTasks.every((task) => /خمس(?: جمل| إلى ست جمل)/.test(task.prompt) && /المبني للمجهول مع فعل ناقص مرتين على الأقل/.test(task.prompt) && /المبني للمجهول/.test(task.criteria?.targetSkill) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.3 tasks must state minimum output, target-form criteria, and local self-check thresholds");
   assert.deepEqual(b2ConsumptionAssessment.performanceTasks.find((task) => task.id === "DL-B2-03-P02").sourceTaskIds, ["DL-B2-03-T06", "DL-B2-03-T08"], "B2.3 P02 must link the written listening script and T08 practice");
   assert.deepEqual(b2ConsumptionAssessment.performanceTasks.find((task) => task.id === "DL-B2-03-P01").sourceTaskIds, ["DL-B2-03-T08"], "B2.3 P01 must link directly to T08");
@@ -2993,7 +3028,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     return parts.join(". ") + (form === "—" ? "" : ", " + form) + ".";
   }).join(" ");
   assert.equal(consumptionAssets[0].segments[0].text, consumptionPhrase, "all source vocabulary forms must be preserved");
-  const consumptionModels = [...consumptionSections[1].matchAll(/\*\*([^*]+)\*\*/g)].map((match) => match[1]).filter((text) => text.endsWith("."));
+  const consumptionModels = [...consumptionSections[1].split("### مساعدة قبل النصوص والمهمات")[0].matchAll(/\*\*([^*]+)\*\*/g)].map((match) => match[1]).filter((text) => text.endsWith("."));
   assert.equal(consumptionModels.length, 5);
   assert.equal(consumptionAssets[1].segments[0].text, consumptionModels.join(" "));
   const consumptionDialogue = [...b2ConsumptionSource.matchAll(/^\*\*(Nadia|Verkäufer):\*\* (.+?)\s*$/gm)].map((match) => ({speaker: match[1], text: match[2]}));
@@ -3035,7 +3070,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2ConsumptionSource, /اكتب خمس جمل ألمانية على الأقل.*أو اعرض خمس جمل مكافئة شفهيًا/);
   assert.match(b2ConsumptionSource, /اكتب الإجابة ثم اقرأها بصوت واضح/);
   assert.match(b2ConsumptionSource, /لا يلزم تسجيل/);
-  const b2ConsumptionRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[2].performanceTasks, 'lesson:b2-03-consumption-environment-passive-modal', 'b2-03-v1')", context);
+  const b2ConsumptionRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[2].performanceTasks, 'lesson:b2-03-consumption-environment-passive-modal', 'b2-03-v2')", context);
   assert.match(b2ConsumptionRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2ConsumptionRubricHtml, /أنجزت كل أجزاء المهمة المطلوبة/);
   assert.match(b2ConsumptionRubricHtml, /إجابتي أو كلامي واضح ويمكن فهمه/);
