@@ -1736,6 +1736,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.6 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR49: written fictional trip description and spoken T05/T06 island briefing; B2.7 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-07-travel-experiences-prepositional-relatives').assessment.version, 'b2-07-v3');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-07-travel-experiences-prepositional-relatives');
+    const responses = ["Unsere fiktive Wochenendreise beginnt an einem kleinen Hafen, von dem aus wir am Morgen zur Nachbarinsel aufbrechen. Die Fähre, mit der wir über das ruhige Meer fahren, erreicht nach einer Stunde eine stille Bucht. Danach führt unsere Route durch ein abgelegenes Dorf, in dem wir in einer gemütlichen Pension übernachten. Am zweiten Tag folgen wir den schmalen Wegen, auf denen man zwischen alten Steinmauern bis zur Küste wandern kann. Am Nachmittag erreichen wir den höchsten Aussichtspunkt, über den wir schon in unserem Reiseführer viel gelesen haben.", "Die Reise über die fiktive Insel Morgenküste beginnt mit einer Fähre, mit der Lina und ihre Freunde im Hafen West ablegen. Anschließend fahren sie durch ein Dorf, in dem sie in einer kleinen Pension ruhig übernachten. Am nächsten Tag wandern sie auf einem Weg mit alten Steinmauern bis zu einer Bucht, an der mehrere Fischerboote liegen. Die Route, über die Lina zuvor in ihrem Reiseführer gelesen hat, endet an einem Aussichtspunkt, von dem aus man die Küste sehen kann, bevor die Gruppe den Bewohnerinnen zuhört. Auch im Hörtext besucht die Gruppe zuerst einen kleinen Hafen, fährt mit dem Bus an mehreren Aussichtspunkten vorbei, bewundert die im Reiseführer beschriebene Bucht und bleibt schließlich in einer Unterkunft, in der sie zwei Nächte verbringt."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Eine Reise.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.7 models fit thresholds; trip description is writing only, island briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-07-travel-experiences-prepositional-relatives').performanceTasks[1]], 'lesson:b2-07-travel-experiences-prepositional-relatives', 'b2-07-v3')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-07-travel-experiences-prepositional-relatives').performanceTasks[0]], 'lesson:b2-07-travel-experiences-prepositional-relatives', 'b2-07-v3')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-07-travel-experiences-prepositional-relatives');
+      const next=findLesson('b2-08-food-nutrition-data-passives');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-07-v2'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-07-v2',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-07-v3';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-07-v3'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.7 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -3467,7 +3501,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2TravelAssessment = b2Lessons[6];
   assert.equal(b2TravelAssessment.id, "b2-07-travel-experiences-prepositional-relatives", "B2.7 must stay in its source order");
   assert.equal(b2TravelAssessment.assessment?.status, "ready", "B2.7 must have a ready local assessment");
-  assert.equal(b2TravelAssessment.assessment?.version, "b2-07-v2", "B2.7 must use its stable assessment version");
+  assert.equal(b2TravelAssessment.assessment?.version, "b2-07-v3", "B2.7 must use its stable assessment version");
   assert.equal(b2TravelAssessment.assessment?.minimumScore, 80, "B2.7 must retain the 80 percent mastery threshold");
   assert.equal(b2TravelAssessment.assessment?.minimumItems, 10, "B2.7 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[6])", context), true, "B2.7 must pass the app's full local assessment-readiness check");
@@ -3477,10 +3511,11 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   for (let task = 1; task <= 7; task += 1) assert.ok(b2TravelQuestionSources.has(`DL-B2-07-T0${task}`), `B2.7 quiz must cover source task T0${task}`);
   assert.ok(b2TravelAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-07-G01")), "all B2.7 questions must map to the lesson objective");
   assert.deepEqual([0, 1, 2].map((position) => b2TravelAssessment.quiz.filter((question) => question.answerIndex === position).length), [3, 4, 3], "B2.7 correct answers must be distributed 3/4/3 across the three options");
-  assert.ok(b2TravelAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.7 tasks must offer visible written/oral local self-checks without recording");
-  assert.ok(b2TravelAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /ثلاث جمل موصولة على الأقل/.test(task.prompt) && /حروف جر مختلفة/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.7 tasks must state practical output, varied prepositions, and the solo read-aloud option");
+  assert.ok(b2TravelAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-07-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.7 tasks must map to T08 and offer visible local self-checks without recording");
+  assert.deepEqual(b2TravelAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.ok(b2TravelAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /ثلاث جمل موصولة على الأقل/.test(task.prompt) && /حروف جر مختلفة/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.7 tasks must state practical output and varied prepositions");
   assert.deepEqual(b2TravelAssessment.performanceTasks.find((task) => task.id === "DL-B2-07-P01").sourceTaskIds, ["DL-B2-07-T08"], "B2.7 P01 must link directly to T08");
-  assert.deepEqual(b2TravelAssessment.performanceTasks.find((task) => task.id === "DL-B2-07-P02").sourceTaskIds, ["DL-B2-07-T03", "DL-B2-07-T05", "DL-B2-07-T08"], "B2.7 P02 must link the sentence-joining task, reading, and T08");
+  assert.deepEqual(b2TravelAssessment.performanceTasks.find((task) => task.id === "DL-B2-07-P02").sourceTaskIds, ["DL-B2-07-T03", "DL-B2-07-T05", "DL-B2-07-T06", "DL-B2-07-T08"], "B2.7 P02 must link the sentence-joining task, reading, written listening script, and T08");
   const travelAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2TravelAssessment.id);
   assert.equal(travelAssets.length, 5);
   assert.equal(travelAssets.reduce((n, asset) => n + asset.segments.length, 0), 10);
@@ -3553,7 +3588,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2TravelSource, /ثلاث جمل موصولة على الأقل.*حروف جر مختلفة/);
   assert.match(b2TravelSource, /اقرأه بصوت مسموع لنفسك/);
   assert.match(b2TravelSource, /لا يلزم تسجيله أو إرساله/);
-  const b2TravelRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[6].performanceTasks, 'lesson:b2-07-travel-experiences-prepositional-relatives', 'b2-07-v2')", context);
+  const b2TravelRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[6].performanceTasks, 'lesson:b2-07-travel-experiences-prepositional-relatives', 'b2-07-v3')", context);
   assert.match(b2TravelRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2TravelRubricHtml, /حروف جر مختلفة/);
   const b2FoodSource = fs.readFileSync(path.join(rootDir, "content/B2/lesson-08-food-nutrition-data-passives.md"), "utf8");
