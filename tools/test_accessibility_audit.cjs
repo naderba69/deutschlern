@@ -302,6 +302,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.4-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.4-practical-form-fixture', width);
+  // CR47: written health survey evaluation and spoken T05 report briefing, pending audio.
+  await page.evaluate(() => openLesson('b2-05-health-fitness-medical-information'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B2.5-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.5-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

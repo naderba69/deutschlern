@@ -1668,6 +1668,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.4 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR47: written fictional health-survey evaluation and spoken T05 briefing; B2.5 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-05-health-fitness-medical-information').assessment.version, 'b2-05-v3');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-05-health-fitness-medical-information');
+    const responses = ["In einem fiktiven Kurzbericht wurde eine kleine Befragung über Schlaf- und Bewegungsgewohnheiten vorgestellt. Dabei nahmen nur 18 Freiwillige aus demselben Sportverein teil, und objektive Messwerte wurden überhaupt nicht erhoben. Die Stichprobe war sehr klein, sodass die vorläufigen Ergebnisse nicht für die gesamte Bevölkerung repräsentativ sind. Aufgrund der fehlenden Kontrollgruppe lässt sich aus den Antworten kein Ursache-Wirkungs-Zusammenhang ableiten. Deshalb beschreibt der Bericht nur persönliche Angaben und darf nicht als medizinische Empfehlung oder Diagnose verstanden werden.", "Im fiktiven Kurzbericht wurden 24 freiwillige Mitglieder einer örtlichen Gehgruppe dazu befragt, wo sie Informationen über Bewegung finden. Erfasst wurden ausschließlich ihre Antworten, während Fitnesswerte und medizinische Ergebnisse nicht gemessen wurden. Alle Teilnehmenden kamen aus derselben Gruppe, weshalb die kleine Stichprobe nicht repräsentativ für die gesamte Bevölkerung war. Aufgrund der fehlenden Kontrollgruppe und des vorläufigen Ergebnisses lässt sich keine Ursache für gesundheitliche Veränderungen nachweisen. Deshalb zeigt der Bericht nur die genannten Informationsquellen und ersetzt bei persönlichen Fragen keine Rücksprache mit einer qualifizierten Fachperson."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Eine Studie.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.5 models fit thresholds; survey evaluation is writing only, T05 briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-05-health-fitness-medical-information').performanceTasks[1]], 'lesson:b2-05-health-fitness-medical-information', 'b2-05-v3')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-05-health-fitness-medical-information').performanceTasks[0]], 'lesson:b2-05-health-fitness-medical-information', 'b2-05-v3')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-05-health-fitness-medical-information');
+      const next=findLesson('b2-06-study-applications-verb-noun-phrases');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-05-v2'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-05-v2',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-05-v3';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-05-v3'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.5 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -3199,7 +3233,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2HealthAssessment = b2Lessons[4];
   assert.equal(b2HealthAssessment.id, "b2-05-health-fitness-medical-information", "B2.5 must stay in its source order");
   assert.equal(b2HealthAssessment.assessment?.status, "ready", "B2.5 must have a ready local assessment");
-  assert.equal(b2HealthAssessment.assessment?.version, "b2-05-v2", "B2.5 must use its stable assessment version");
+  assert.equal(b2HealthAssessment.assessment?.version, "b2-05-v3", "B2.5 must use its stable assessment version");
   assert.equal(b2HealthAssessment.assessment?.minimumScore, 80, "B2.5 must retain the 80 percent mastery threshold");
   assert.equal(b2HealthAssessment.assessment?.minimumItems, 10, "B2.5 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[4])", context), true, "B2.5 must pass the app's full local assessment-readiness check");
@@ -3208,8 +3242,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2HealthQuestionSources = new Set(b2HealthAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b2HealthQuestionSources.has(`DL-B2-05-T0${task}`), `B2.5 quiz must cover source task T0${task}`);
   assert.ok(b2HealthAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-05-G01")), "all B2.5 questions must map to the lesson objective");
-  assert.ok(b2HealthAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-05-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.5 performance tasks must map to T08 and offer visible written/oral local self-checks without recording");
-  assert.ok(b2HealthAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /sodass أو weshalb/.test(task.prompt) && /aufgrund \+ Genitiv/.test(task.prompt) && /حدّين/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 160), "B2.5 tasks must specify sentence output, causal connectors, evidence limits, and local self-check thresholds");
+  assert.ok(b2HealthAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-05-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.5 performance tasks must map to T08 and remain independent of audio files");
+  assert.deepEqual(b2HealthAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.ok(b2HealthAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /sodass أو weshalb/.test(task.prompt) && /aufgrund \+ Genitiv/.test(task.prompt) && /حدّين/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 160), "B2.5 tasks must specify sentence output, causal connectors, evidence limits, and local self-check thresholds");
   assert.deepEqual(b2HealthAssessment.performanceTasks.find((task) => task.id === "DL-B2-05-P01").sourceTaskIds, ["DL-B2-05-T08"], "B2.5 P01 must link directly to T08");
   assert.deepEqual(b2HealthAssessment.performanceTasks.find((task) => task.id === "DL-B2-05-P02").sourceTaskIds, ["DL-B2-05-T05", "DL-B2-05-T08"], "B2.5 P02 must link the reading text and T08 practice");
   const healthAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2HealthAssessment.id);
@@ -3226,7 +3261,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     return parts.join(". ") + (form === "—" ? "" : ", " + form) + ".";
   }).join(" ");
   assert.equal(healthAssets[0].segments[0].text, healthPhrase, "all source vocabulary forms must be preserved");
-  const healthModels = [...healthSections[1].matchAll(/\*\*([^*]+)\*\*/g)].map((match) => match[1]).filter((text) => text.endsWith(".") || /^aufgrund (der|des) /.test(text)).flatMap((text) => text.split(" / ")).map((text) => text.endsWith(".") ? text : text[0].toUpperCase() + text.slice(1) + ".");
+  const healthModels = [...healthSections[1].split("### مساعدة قبل النصوص والمهمات")[0].matchAll(/\*\*([^*]+)\*\*/g)].map((match) => match[1]).filter((text) => text.endsWith(".") || /^aufgrund (der|des) /.test(text)).flatMap((text) => text.split(" / ")).map((text) => text.endsWith(".") ? text : text[0].toUpperCase() + text.slice(1) + ".");
   assert.equal(healthModels.length, 9, "four table examples plus five Genitiv phrases, retaining the source repetition");
   assert.equal(healthAssets[1].segments[0].text, healthModels.join(" "));
   const healthDialogue = [...b2HealthSource.matchAll(/^\*\*(Rima|Nabil):\*\* (.+?)\s*$/gm)].map((match) => ({speaker: match[1], text: match[2]}));
@@ -3286,7 +3321,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2HealthSource, /aufgrund des unklaren Messwerts/);
   assert.match(b2HealthSource, /aufgrund des vorläufigen Ergebnisses/);
   assert.doesNotMatch(b2HealthSource, /Weshalb man die Ursache nicht sicher bestimmen kann\./);
-  const b2HealthRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[4].performanceTasks, 'lesson:b2-05-health-fitness-medical-information', 'b2-05-v2')", context);
+  const b2HealthRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[4].performanceTasks, 'lesson:b2-05-health-fitness-medical-information', 'b2-05-v3')", context);
   assert.match(b2HealthRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2HealthRubricHtml, /أنجزت كل أجزاء المهمة المطلوبة/);
   assert.match(b2HealthRubricHtml, /إجابتي أو كلامي واضح ويمكن فهمه/);
