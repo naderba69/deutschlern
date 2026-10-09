@@ -1702,6 +1702,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.5 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR48: written academic inquiry and spoken T05/T06 applicant briefing; B2.6 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-06-study-applications-verb-noun-phrases').assessment.version, 'b2-06-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-06-study-applications-verb-noun-phrases');
+    const responses = ["Sehr geehrtes Team der Studienberatung an der fiktiven Campus-Akademie, ich ziehe den Studiengang „Kommunikation und Gesellschaft“ im kommenden Jahr ernsthaft in Betracht. Vorab möchte ich prüfen, ob ich mit meinem bisherigen Abschluss bereits alle Voraussetzungen für das Programm erfülle. Könnten Sie mir bitte mitteilen, welche Unterlagen ich zusammen mit dem Motivationsschreiben einreichen muss, bevor ich einen Antrag auf Zulassung stelle? Außerdem würde ich gern wissen, unter welchen Bedingungen ich einen noch fehlenden Leistungsnachweis später nachreichen kann. Vielen Dank für Ihre Auskunft, damit ich nach Ihrer Rückmeldung eine gut informierte Entscheidung treffen kann.", "Wenn du den fiktiven Studiengang „Kommunikation und Gesellschaft“ in Betracht ziehst, solltest du zuerst prüfen, ob du alle Zulassungsvoraussetzungen erfüllst. Danach musst du eine Bewerbung einreichen und einen Antrag auf Zulassung stellen, wofür ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss erforderlich sind. Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung der fiktiven Campus-Akademie dies schriftlich bestätigt. Alle Informationen zum Verfahren stehen auf der Webseite und in der fiktiven Ausschreibung zur Verfügung, und im Beratungsgespräch lassen sich offene Fragen klären, um eine gut informierte Entscheidung zu treffen. Nach der Zulassung schließen die Studierenden die Immatrikulation ab, erwerben im Studium fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Eine Bewerbung.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.6 models fit thresholds; inquiry is writing only, applicant briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-06-study-applications-verb-noun-phrases').performanceTasks[1]], 'lesson:b2-06-study-applications-verb-noun-phrases', 'b2-06-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-06-study-applications-verb-noun-phrases').performanceTasks[0]], 'lesson:b2-06-study-applications-verb-noun-phrases', 'b2-06-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-06-study-applications-verb-noun-phrases');
+      const next=findLesson('b2-07-travel-experiences-prepositional-relatives');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-06-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-06-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-06-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-06-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.6 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -3333,7 +3367,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2StudyAssessment = b2Lessons[5];
   assert.equal(b2StudyAssessment.id, "b2-06-study-applications-verb-noun-phrases", "B2.6 must stay in its source order");
   assert.equal(b2StudyAssessment.assessment?.status, "ready", "B2.6 must have a ready local assessment");
-  assert.equal(b2StudyAssessment.assessment?.version, "b2-06-v1", "B2.6 must use its stable assessment version");
+  assert.equal(b2StudyAssessment.assessment?.version, "b2-06-v2", "B2.6 must use its stable assessment version");
   assert.equal(b2StudyAssessment.assessment?.minimumScore, 80, "B2.6 must retain the 80 percent mastery threshold");
   assert.equal(b2StudyAssessment.assessment?.minimumItems, 10, "B2.6 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[5])", context), true, "B2.6 must pass the app's full local assessment-readiness check");
@@ -3345,8 +3379,9 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2StudyAnswerPositions = new Set(b2StudyAssessment.quiz.map((question) => question.answerIndex));
   assert.ok(b2StudyAnswerPositions.size >= 2, "B2.6 correct-answer positions must be varied");
   assert.deepEqual([0, 1, 2].map((position) => b2StudyAssessment.quiz.filter((question) => question.answerIndex === position).length), [3, 4, 3], "B2.6 correct answers must be distributed 3/4/3 across the three options");
-  assert.ok(b2StudyAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.6 tasks must offer visible written/oral local self-checks without recording");
-  assert.ok(b2StudyAssessment.performanceTasks.every((task) => /خمس جمل|خمس إلى ست جمل/.test(task.prompt) && /ثلاثة تراكيب/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.6 tasks must state practical output and target-collocation criteria");
+  assert.ok(b2StudyAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-06-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.6 tasks must map to T08 and offer visible local self-checks without recording");
+  assert.deepEqual(b2StudyAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
+  assert.ok(b2StudyAssessment.performanceTasks.every((task) => /خمس جمل|خمس إلى ست جمل/.test(task.prompt) && /ثلاثة تراكيب/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 160), "B2.6 tasks must state practical output and target-collocation criteria");
   assert.deepEqual(b2StudyAssessment.performanceTasks.find((task) => task.id === "DL-B2-06-P01").sourceTaskIds, ["DL-B2-06-T08"], "B2.6 P01 must link directly to T08");
   assert.deepEqual(b2StudyAssessment.performanceTasks.find((task) => task.id === "DL-B2-06-P02").sourceTaskIds, ["DL-B2-06-T03", "DL-B2-06-T05", "DL-B2-06-T06", "DL-B2-06-T08"], "B2.6 P02 must link the source rewrite, reading, written listening script, and T08");
   const studyAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2StudyAssessment.id);
@@ -3363,7 +3398,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     return parts.join(". ") + (form === "—" ? "" : ", " + form) + ".";
   }).join(" ");
   assert.equal(studyAssets[0].segments[0].text, studyPhrase, "all source vocabulary forms must be preserved");
-  const studyModels = [...studySections[1].matchAll(/\*\*([^*]+)\*\*/g)].slice(1).map((match) => match[1].replace(" + Akkusativ ", ", Akkusativ, ")).map((text) => text[0].toUpperCase() + text.slice(1) + (text.endsWith(".") ? "" : "."));
+  const studyModels = [...studySections[1].split("### مساعدة قبل النصوص والمهمات")[0].matchAll(/\*\*([^*]+)\*\*/g)].slice(1).map((match) => match[1].replace(" + Akkusativ ", ", Akkusativ, ")).map((text) => text[0].toUpperCase() + text.slice(1) + (text.endsWith(".") ? "" : "."));
   assert.equal(studyModels.length, 18, "eight collocations and their examples plus two final preposition reminders");
   assert.equal(studyAssets[1].segments[0].text, studyModels.join(" "));
   const studyDialogue = [...b2StudySource.matchAll(/^\*\*(Meryem|Berater):\*\* (.+?)\s*$/gm)].map((match) => ({speaker: match[1], text: match[2]}));
@@ -3407,12 +3442,26 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   }
   assert.doesNotMatch(studyLayout.contentHtml, /data-audio-id="DL-B2-0[12345]-/);
   assert.ok(b2StudyAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), "B2.6 assessment remains independent of optional audio");
+  assert.equal(vm.runInContext(`(() => {
+    const lesson = getLessonsInLevel('B2')[5];
+    const prior = state.completedLessons[lesson.id];
+    try {
+      state.completedLessons[lesson.id] = { score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true, assessmentVersion: 'b2-06-v1' };
+      return isLessonMastered(lesson);
+    } finally {
+      if (prior === undefined) delete state.completedLessons[lesson.id];
+      else state.completedLessons[lesson.id] = prior;
+    }
+  })()`, context), false, "the updated B2.6 assessment must reject stale v1 mastery");
   assert.match(b2StudySource, /ثلاثة تراكيب على الأقل من الدرس/);
   assert.match(b2StudySource, /يمكن إنجاز المهمة كتابةً أو بعرض شفهي مكافئ/);
   assert.match(b2StudySource, /اقرأها بصوت مسموع لنفسك/);
   assert.match(b2StudySource, /لا يلزم تسجيلها أو إرسال صوت/);
-  const b2StudyRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[5].performanceTasks, 'lesson:b2-06-study-applications-verb-noun-phrases', 'b2-06-v1')", context);
+  const b2StudyRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[5].performanceTasks, 'lesson:b2-06-study-applications-verb-noun-phrases', 'b2-06-v2')", context);
   assert.match(b2StudyRubricHtml, /معايير التحقق المحلي/);
+  assert.match(b2StudyRubricHtml, /أنجزت كل أجزاء المهمة المطلوبة/);
+  assert.match(b2StudyRubricHtml, /إجابتي أو كلامي واضح ويمكن فهمه/);
+  assert.match(b2StudyRubricHtml, /استخدمت المهارة أو الصيغة المستهدفة/);
   assert.match(b2StudyRubricHtml, /ثلاثة تراكيب اسمية فعلية/);
   const b2TravelSource = fs.readFileSync(path.join(rootDir, "content/B2/lesson-07-travel-experiences-prepositional-relatives.md"), "utf8");
   const b2TravelAssessment = b2Lessons[6];
