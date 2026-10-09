@@ -1,0 +1,2026 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-01-time-management-habits-reading",
+  "reviewDate": "2026-10-09",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b2-01-v2",
+  "unitCount": 99,
+  "exerciseSubItemCount": 39,
+  "modelPartCount": 10,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "CONJ",
+      "title": "Lingolia — Conjunctions – Word Order in German",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/conjunctions",
+      "scope": "يصنف indem وdass وdamit ضمن الروابط التابعة (Subjunctions) التي يتأخر فيها الفعل المصرف إلى نهاية الجملة التابعة، ويصنف dadurch ضمن الظروف الرابطة (Conjunctive Adverbs) التي يتقدم بعدها الفعل المصرف في الجملة الرئيسية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1,
+      "searchResultId": 1
+    },
+    {
+      "id": "COMMA",
+      "title": "Lingolia — When to Use Commas in German",
+      "url": "https://deutsch.lingolia.com/en/writing/commas",
+      "scope": "قُرئ الجزآن 0 و1 من 4: وجوب الفاصلة بين الجملة الرئيسية والجملة التابعة المبدوءة بـdass، ووجوب الفاصلة قبل um وohne عندما تقدمان مصدرًا مع zu وبعد ظروف الإشارة الحرفية مثل daran/darum/darauf (وبالقياس البنيوي dadurch, dass). لم يُقرأ الجزآن 2 و3.",
+      "access": "scoped_fetched_chunks",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 4,
+      "searchResultId": 3
+    },
+    {
+      "id": "INF",
+      "title": "Lingolia — Der Infinitiv mit/ohne zu in der deutschen Sprache",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/infinitiv",
+      "scope": "يشرح المصدر مع zu، ودخول zu بين جزأي الفعل المنفصل (مثل auszuschalten وnachzuschlagen)، والإحالة إلى جمل المصدر مع um … zu.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PRIORITAET",
+      "title": "Duden — Priorität",
+      "url": "https://www.duden.de/rechtschreibung/Prioritaet",
+      "scope": "اسم مؤنث جمعُه die Prioritäten؛ يدل على الأولوية أو الأسبقية، وشاع في الجمع بتعبير Prioritäten setzen/festlegen.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ABLENKUNG",
+      "title": "Duden — Ablenkung",
+      "url": "https://www.duden.de/rechtschreibung/Ablenkung",
+      "scope": "اسم مؤنث جمعُه die Ablenkungen؛ يدل على صرف الانتباه أو التشتيت.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "UNTERBRECHUNG",
+      "title": "Duden — Unterbrechung",
+      "url": "https://www.duden.de/rechtschreibung/Unterbrechung",
+      "scope": "اسم مؤنث جمعُه die Unterbrechungen؛ يدل على انقطاع سير العمل أو المقاطعة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "UEBERBLICK",
+      "title": "Duden — Überblick",
+      "url": "https://www.duden.de/rechtschreibung/Ueberblick",
+      "scope": "اسم مذكر جمعُه النادر die Überblicke؛ يدل على الإحاطة الشاملة أو الصورة العامة، ويرتبط كثيرًا بـden Überblick behalten.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NOTIZ",
+      "title": "Duden — Notiz",
+      "url": "https://www.duden.de/rechtschreibung/Notiz",
+      "scope": "اسم مؤنث جمعُه die Notizen؛ ملاحظة مكتوبة موجزة لحفظ الفكرة، ويرتبط بتعبير Notizen machen.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "BUENDELN",
+      "title": "Duden — bündeln",
+      "url": "https://www.duden.de/rechtschreibung/buendeln",
+      "scope": "فعل ضعيف تصريفه bündelt، bündelte، hat gebündelt، ويجوز مع ich صيغتا ich bündele وich bündle؛ يدل على جمع عناصر أو مهام متشابهة في حزمة واحدة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "BEWAELTIGEN",
+      "title": "Duden — bewältigen",
+      "url": "https://www.duden.de/rechtschreibung/bewaeltigen",
+      "scope": "فعل ضعيف غير منفصل تصريفه bewältigt، bewältigte، hat bewältigt؛ يدل على إنجاز عمل صعب أو التغلب عليه بنجاح.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 45–50 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة مركّزة، استماع اختياري، قواعد، تنظيم المهام، كتابة وجهر<br>",
+      "finding": "المدة مقترحة قابلة للتقسيم؛ الاستماع المسجل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أشرح طريقةً لتحسين عادة باستخدام **indem** أو **dadurch, dass**، وأذكر الغاية باستخدام **um … zu**، وأميّز بين الطريقة والغاية كتابةً أو شفهيًا.",
+      "finding": "الهدف شرح الطريقة بـindem أو dadurch, dass وذكر الغاية بـum … zu والتمييز بينهما؛ لا يمنح الاختبار شهادة B2.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "تنبيه مفردات: Überblick مذكر وجمعه النادر Überblicke، ويستعمل في الدرس بالمفرد في تعبير den Überblick behalten. الفعلان abschalten وausschalten منفصلان (schaltet ab / schaltet aus؛ وفي الجملة التابعة ausschaltet موصولًا)، ولـabschalten معنى مجازي في المحادثة هو الاسترخاء وفصل الذهن عن العمل، أما في الدرس فالمقصود إيقاف الهاتف أو الإشعارات. الكلمة bündeln يجوز فيها مع ich صيغتا ich bündele وich bündle. هذه توضيحات مكتوبة لا تغييرات في التسجيل.",
+      "finding": "وُضح إفراد Überblick في الاستعمال المعتاد وجمعه النادر Überblicke، والفرق بين المعنى الحرفي والمجازي لـabschalten، وصيغتا bündele/bündle.",
+      "sourceIds": [
+        "UEBERBLICK",
+        "BUENDELN"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستعمل **indem** و**dadurch, dass** لشرح الوسيلة أو الطريقة التي نحقق بها نتيجةً؛ وغالبًا يجيبان عن سؤال **Wie? — كيف؟** يأتي الفعل المصرف في نهاية جملة **indem** أو جملة **dass**؛ وإذا تقدمت الجملة التابعة في بداية الجملة المركبة جاء الفعل المصرف في الجملة الرئيسية مباشرة بعد الفاصلة.",
+      "finding": "قُيّدت القاعدة بتأخر الفعل المصرف في جملة indem أو dass وبتقدم الفعل المصرف في الجملة الرئيسية مباشرة بعد الفاصلة إذا تقدمت التابعة.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "قارن بين الطريقة والغاية:",
+      "finding": "تمييز وظيفي مباشر بين الغاية (um … zu) والطريقة أو الوسيلة (indem / dadurch, dass).",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Zeiteinteilung | — | تنظيم الوقت |",
+      "finding": "Zeiteinteilung مؤنث؛ تنظيم الوقت وتوزيعه على المهام.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Priorität | die Prioritäten | الأولوية |",
+      "finding": "Priorität مؤنث وجمعها Prioritäten؛ الأولوية التي تقدم على غيرها.",
+      "sourceIds": [
+        "PRIORITAET"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Zeitblock | die Zeitblöcke | فترة زمنية مخصّصة لمهمة |",
+      "finding": "Zeitblock مذكر وجمعه Zeitblöcke بأوملاوت؛ فترة زمنية مخصصة لمهمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Ablenkung | die Ablenkungen | مصدر تشتيت |",
+      "finding": "Ablenkung مؤنث وجمعها Ablenkungen؛ مصدر تشتيت يصرف الانتباه.",
+      "sourceIds": [
+        "ABLENKUNG"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Unterbrechung | die Unterbrechungen | مقاطعة |",
+      "finding": "Unterbrechung مؤنث وجمعها Unterbrechungen؛ مقاطعة أو توقف مؤقت في العمل.",
+      "sourceIds": [
+        "UNTERBRECHUNG"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Lesestrategie | die Lesestrategien | استراتيجية القراءة |",
+      "finding": "Lesestrategie مؤنث وجمعها Lesestrategien؛ استراتيجية القراءة الملائمة لنوع النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Überblick | — | الصورة العامة / الإحاطة |",
+      "finding": "Überblick مذكر (وجمعه النادر Überblicke)؛ الصورة العامة أو الإحاطة في تعبير den Überblick behalten.",
+      "sourceIds": [
+        "UEBERBLICK"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Notiz | die Notizen | ملاحظة مكتوبة |",
+      "finding": "Notiz مؤنث وجمعها Notizen؛ ملاحظة مكتوبة قصيرة.",
+      "sourceIds": [
+        "NOTIZ"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| priorisieren | priorisiert | يحدّد الأولويات |",
+      "finding": "priorisieren فعل ضعيف ينتهي بـ-ieren حاضرُه priorisiert؛ يحدد الأولويات ويرتبها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| bündeln | bündelt | يجمع مهامًا متشابهة |",
+      "finding": "bündeln فعل ضعيف حاضرُه bündelt ومع المتكلم المفرد bündele/bündle؛ يجمع مهامًا متشابهة معًا.",
+      "sourceIds": [
+        "BUENDELN"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| sich konzentrieren auf + Akkusativ | konzentriert sich | يركّز على |",
+      "finding": "sich konzentrieren auf + Akkusativ فعل انعكاسي حاضرُه konzentriert sich؛ يركز على شيء.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| abschalten | schaltet ab | يطفئ / يعطّل |",
+      "finding": "abschalten فعل ضعيف منفصل حاضرُه schaltet ab؛ يطفئ أو يعطل جهازًا أو إشعارات في سياق الدرس.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| bewältigen | bewältigt | ينجز / يتعامل مع |",
+      "finding": "bewältigen فعل ضعيف غير منفصل حاضرُه bewältigt؛ ينجز مهمة صعبة أو يتعامل معها بنجاح.",
+      "sourceIds": [
+        "BEWAELTIGEN"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| realistisch / schrittweise | — | واقعيّ / تدريجيًا |",
+      "finding": "realistisch واقعي وschrittweise تدريجيًا؛ مفردتان لوصف التخطيط المرن القابل للتنفيذ.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne.",
+      "finding": "Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne: جملة طريقة بـindem بعد الرئيسية، والفعل المصرف ordne في النهاية.",
+      "sourceIds": [
+        "CONJ",
+        "UEBERBLICK",
+        "PRIORITAET"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren.",
+      "finding": "Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren: تقدمت جملة dadurch, dass بفاصلة ونهاية الفعل المتصل ausschaltet، ثم تلاها الفعل المصرف kann في الجملة الرئيسية مباشرة.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele.",
+      "finding": "Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele: جاءت dadurch في نهاية الرئيسية قبل الفاصلة، ثم dass والفعل المصرف bündele في آخر التابعة.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "BUENDELN"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Ich schreibe eine Liste, um nichts zu vergessen.",
+      "finding": "Ich schreibe eine Liste, um nichts zu vergessen: جملة مصدرية بـum … zu تذكر الغاية لا الطريقة.",
+      "sourceIds": [
+        "COMMA",
+        "INF"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Ich vergesse weniger, indem ich eine Liste führe.",
+      "finding": "Ich vergesse weniger, indem ich eine Liste führe: جملة طريقة بـindem تقابل جملة الغاية السابقة.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **الطريقة مقابل الغاية:** indem وdadurch, dass يجيبان عن سؤال Wie? / Wodurch? (كيف/بأي وسيلة؟)، بينما um … zu وdamit يجيبان عن سؤال Wozu? / Warum? (لماذا/لأي غاية؟). مثال: Ich führe eine Liste, um nichts zu vergessen (غاية) مقابل Ich vergesse weniger, indem ich eine Liste führe (طريقة).",
+      "finding": "التفريق الدلالي بين سؤال الطريقة (Wie?/Wodurch?) وسؤال الغاية (Wozu?/Warum?).",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **بنية dadurch, dass والفاصلة:** تتكون الصيغة من ظرف الإشارة الموصول بحرف الجر dadurch في الجملة الرئيسية أو في مطلع الجملة، متبوعًا بفاصلة ثم أداة الربط التابعة dass والفعل المصرف في نهاية التابعة: Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser konzentrieren. أو: Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele.",
+      "finding": "شرح التركيب المزدوج في dadurch, dass وموضع الفاصلة بين جزأيه.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **موضع الجملة التابعة وترتيب الرئيسية:** إذا جاءت جملة indem أو dadurch, dass بعد الجملة الرئيسية سبقتها فاصلة: Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne. وإذا تقدمت في البداية تلاها بعد الفاصلة الفعل المصرف في الجملة الرئيسية مباشرة: Indem ich ähnliche Aufgaben nacheinander erledige, werde ich seltener unterbrochen.",
+      "finding": "بيان أثر تقدم الجملة التابعة في تقديم الفعل المصرف للجملة الرئيسية مباشرة بعد الفاصلة.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الأفعال المنفصلة والانعكاسية:** في الجملة الرئيسية ينفصل الجزء الأمامي: Sie schaltet Benachrichtigungen aus / Ich plane Pausen ein. وفي الجملة التابعة يتصل بالفعل المصرف في النهاية: dass sie Benachrichtigungen ausschaltet / dass ich Pausen einplane. ومع المصدر المسبوق بـzu تدخل zu بين الجزأين: um Benachrichtigungen auszuschalten / ohne jedes Wort nachzuschlagen. والفعل sich konzentrieren يأخذ حرف الجر auf مع Akkusativ: auf das Lesen / auf den nächsten Abschnitt.",
+      "finding": "جمع قواعد الأفعال المنفصلة في الرئيسية والتابعة ومع zu (ausschaltet / einplane / auszuschalten / nachzuschlagen) وتعدية sich konzentrieren auf + Akkusativ.",
+      "sourceIds": [
+        "CONJ",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **المصدر مع um … zu وohne … zu:** يستعمل um … zu وohne … zu عندما يكون فاعل المصدر مطابقًا لفاعل الجملة الرئيسية أو مفهومًا منه بوضوح، وتوضع فاصلة قبل um أو ohne: versteht sie den Text besser, ohne jedes Wort nachzuschlagen. وعند اختلاف الفاعل أو الرغبة في جملة تابعة كاملة نستعمل damit أو ohne dass كما في مفتاح الفهم: Damit sie den Text besser versteht.",
+      "finding": "توضيح شرط اتحاد الفاعل المفهوم في um … zu وohne … zu والفاصلة الإلزامية قبل um وohne.",
+      "sourceIds": [
+        "COMMA",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **الظرف dadurch وحده مقابل الرابط التابع:** في جملة Sie bündelt ähnliche Termine. Dadurch spart sie Zeit. تقع Dadurch وحدها ظرفًا رابطًا في بداية جملة رئيسية مستقلة فيليها الفعل المصرف spart مباشرة؛ أما في Dadurch, dass sie ähnliche Termine bündelt, … فالرابط تابع يوجب تأخير الفعل bündelt إلى آخر جملة dass.",
+      "finding": "التمييز الحاسم بين الظرف الرابط Dadurch في بداية جملة رئيسية مستقلة وبين الرابط التابع Dadurch, dass.",
+      "sourceIds": [
+        "CONJ"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **تمييز أزمنة النصوص وصيغها:** يضم نص القراءة ماضيًا بسيطًا (Früher begann sie …) ومضارعًا للعادة الحالية (Jetzt wählt sie …)، ويضم نص الاستماع ماضيًا تامًا (Ich habe früher oft … gewechselt) ومبنيًا للمجهول في المضارع (werde ich seltener unterbrochen). لا نخلط بين العادة السابقة والطريقة الحالية.",
+      "finding": "فصل أزمنة العادة السابقة (begann / habe gewechselt) عن العادة الحالية والمبني للمجهول (werde unterbrochen).",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "- **فروق المفردات الدقيقة:** die Ablenkung ما يصرف الانتباه أو يشتته، وdie Unterbrechung انقطاع سير العمل أو المقاطعة؛ der Zeitblock فترة زمنية مخصصة لمهمة، وdie Priorität الأولوية؛ der Sachtext نص معلوماتي/غير سردي يقابله في القراءة der Roman (الرواية).",
+      "finding": "تحديد الفروق المعجمية بين Ablenkung وUnterbrechung وبين Sachtext وRoman.",
+      "sourceIds": [
+        "ABLENKUNG",
+        "UNTERBRECHUNG"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود القصص وعدم التعميم:** حوار Hana وKarim ونص قراءة Hana ونص الاستماع تعرض تجارب تنظيمية فردية خيالية، ويصرح نص الاستماع بأن الطريقة لا تناسب كل شخص (Meine Methode passt nicht für jede Person). لذلك لا نقدم أي جدول زمني كقاعدة ملزمة للجميع.",
+      "finding": "منع تعميم خطة واحدة على جميع المتعلمين انسجامًا مع عبارة Meine Methode passt nicht für jede Person.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **دليل فردي مستقل عن الصوت:** P01 فقرة من خمس جمل عن تحسين عادة في تنظيم الوقت أو القراءة (كتابة فقط دون جهر)، وP02 إحاطة من خمس جمل لزميل استنادًا إلى نص الاستماع مع اقتراح لتقليل تشتيت الإشعارات (كتابة ثم قراءة بصوت واضح بالنفس دون شريك أو تسجيل). الحد الأدنى 160/190 حرفًا والإقرارات الثلاثة لا تصحح عدد الجمل أو القواعد أو النطق آليًا؛ والتسجيلات تبقى معلقة ومتاحة دون توليد أو استماع أو اعتماد.",
+      "finding": "تحديد P01 كتابة فقط وP02 كتابة وجهر بالنفس، وبيان حدود التحقق الذاتي واستقلال التقييم عن ملفات الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wie schaffst du es, Arbeit und Lesen in deiner Woche zu verbinden?",
+      "finding": "Hana تسأل كيف ينجح Karim في الجمع بين العمل والقراءة خلال الأسبوع؛ مصدر مع zu بعد schaffst.",
+      "sourceIds": [
+        "INF"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich plane feste Zeitblöcke ein. Dadurch, dass ich ähnliche Aufgaben bündele, habe ich abends mehr freie Zeit.",
+      "finding": "Karim يذكر تخطيط فترات زمنية ثابتة، ثم يشرح الوسيلة بـDadurch, dass ich ähnliche Aufgaben bündele وتقدم الفعل habe في الرئيسية.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "BUENDELN"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Und wie bleibst du beim Lesen konzentriert?",
+      "finding": "سؤال عن كيفية الحفاظ على التركيز أثناء القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ich schalte mein Telefon aus und mache nach jedem Abschnitt kurze Notizen.",
+      "finding": "إجراءان عمليان في المضارع: إيقاف الهاتف وتدوين ملاحظات قصيرة بعد كل مقطع.",
+      "sourceIds": [
+        "NOTIZ"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Liest du immer gleich schnell?",
+      "finding": "سؤال نعم/لا عن ثبات سرعة القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Nein. Ich passe meine Lesestrategie an den Text an, indem ich bei einem schwierigen Kapitel langsamer lese.",
+      "finding": "نفي ثم شرح الطريقة بـindem: يكيّف استراتيجية القراءة مع النص بأن يقرأ الفصول الصعبة ببطء أكبر.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Das klingt realistisch.",
+      "finding": "تعليق يؤكد واقعية الخطة (realistisch).",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-08",
+      "text": "Ja, ich plane auch Pausen ein. Nicht jede Stunde muss vollständig verplant sein.",
+      "finding": "إضافة تخطيط الاستراحات وتجنب ملء كل ساعة بالكامل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Hana arbeitet und besucht abends einen Kurs.",
+      "finding": "تعمل Hana وتحضر دورة مسائية؛ سياق واقعي لتنظيم الوقت.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Früher begann sie jeden Tag mit einer langen Aufgabenliste.",
+      "finding": "في السابق كانت تبدأ كل يوم بقائمة مهام طويلة؛ ماضٍ بسيط begann.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Jetzt wählt sie zuerst drei Prioritäten aus.",
+      "finding": "الآن تختار أولًا ثلاث أولويات؛ فعل منفصل wählt … aus.",
+      "sourceIds": [
+        "PRIORITAET"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Sie bündelt kurze Erledigungen, indem sie mehrere Telefonate hintereinander führt.",
+      "finding": "تجمع الأعمال القصيرة بأن تجري عدة مكالمات هاتفية متتالية؛ indem … führt.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "BUENDELN"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Während ihrer Lesezeit schaltet sie Benachrichtigungen aus.",
+      "finding": "أثناء وقت القراءة تعطل الإشعارات؛ schaltet … aus.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Bei einem Sachtext notiert sie nach jedem Abschnitt eine Kernidee; bei einem Roman liest sie dagegen in längeren Abschnitten.",
+      "finding": "في النص المعلوماتي تدون فكرة رئيسة بعد كل مقطع، أما في الرواية فتقرأ في مقاطع أطول.",
+      "sourceIds": [
+        "NOTIZ"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Dadurch, dass sie die Lesestrategie an die Textsorte anpasst, versteht sie den Text besser, ohne jedes Wort nachzuschlagen.",
+      "finding": "من خلال تكييف استراتيجية القراءة مع نوع النص تفهم النص أفضل دون البحث عن كل كلمة في القاموس؛ Dadurch, dass … وohne … nachzuschlagen.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "Hana plant außerdem freie Zeit ein.",
+      "finding": "تخطط Hana أيضًا لوقت حر.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-09",
+      "text": "Sie betrachtet ihren Plan als Orientierung, nicht als starre Vorschrift.",
+      "finding": "تعد خطتها توجيهًا مرنًا لا قاعدة جامدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was wählt Hana am Anfang des Tages aus?",
+      "finding": "Drei Prioritäten. — تختار Hana في بداية اليوم ثلاث أولويات.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie bündelt sie kurze Erledigungen?",
+      "finding": "Indem sie mehrere Telefonate hintereinander führt. — تجمع الأعمال القصيرة بإجراء عدة مكالمات هاتفية متتالية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was macht sie während ihrer Lesezeit?",
+      "finding": "Sie schaltet Benachrichtigungen aus. — أثناء وقت القراءة تعطل الإشعارات.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wie liest sie einen Sachtext anders als einen Roman?",
+      "finding": "Bei einem Sachtext notiert sie nach jedem Abschnitt eine Kernidee; einen Roman liest sie in längeren Abschnitten. — تفرق بين النص المعلوماتي (فكرة رئيسة بعد كل مقطع) والرواية (مقاطع أطول).",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Warum passt sie ihre Lesestrategie an?",
+      "finding": "Damit sie den Text besser versteht, ohne jedes Wort nachzuschlagen. — الغاية من تكييف الاستراتيجية هي فهم النص بصورة أفضل دون البحث عن كل كلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-06",
+      "text": "Wie versteht Hana ihren Plan?",
+      "finding": "Als Orientierung, nicht als starre Vorschrift. — ترى خطتها توجيهًا مرنًا لا قاعدة جامدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich habe früher oft zwischen mehreren Aufgaben gewechselt.",
+      "finding": "في السابق كان المتحدث يتنقل كثيرًا بين عدة مهام؛ Perfekt مع habe … gewechselt.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Jetzt plane ich zwei Zeitblöcke für konzentrierte Arbeit.",
+      "finding": "الآن يخطط لفترتين زمنيتين للعمل المركز.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Indem ich ähnliche Aufgaben nacheinander erledige, werde ich seltener unterbrochen.",
+      "finding": "بإنجاز المهام المتشابهة تباعًا تقل مقاطعته؛ تقدمت جملة Indem فتلاها الفعل المصرف werde.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "UNTERBRECHUNG"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Für längere Texte notiere ich am Rand Fragen.",
+      "finding": "للنصوص الطويلة يدون أسئلة على الهامش.",
+      "sourceIds": [
+        "NOTIZ"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Dadurch, dass ich Pausen einplane, kann ich mich besser auf den nächsten Abschnitt konzentrieren.",
+      "finding": "من خلال تخطيط الاستراحات يستطيع التركيز بصورة أفضل على المقطع التالي؛ Dadurch, dass … kann ich mich … konzentrieren.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Meine Methode passt nicht für jede Person, aber für meinen Alltag ist sie hilfreich.",
+      "finding": "طريقته لا تناسب كل شخص، لكنها مفيدة لحياته اليومية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was machte die Person früher häufig?",
+      "finding": "Zwischen mehreren Aufgaben. — كان المتحدث يتنقل سابقًا بين عدة مهام.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wie viele Zeitblöcke plant sie jetzt?",
+      "finding": "Zwei Zeitblöcke. — يخطط الآن لفترتين زمنيتين للعمل المركز.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wie wird sie seltener unterbrochen?",
+      "finding": "Indem sie ähnliche Aufgaben nacheinander erledigt. — تقل مقاطعته بإنجاز المهام المتشابهة تباعًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was notiert sie bei längeren Texten?",
+      "finding": "Fragen am Rand. — يدون عند النصوص الطويلة أسئلة على الهامش.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Warum plant sie Pausen ein?",
+      "finding": "Damit sie sich besser auf den nächsten Abschnitt konzentrieren kann. — يخطط للاستراحات لكي يتمكن من التركيز بصورة أفضل على المقطع التالي.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B2-01-T01",
+      "text": "1. مهمة مهمة ينبغي إنجازها قبل غيرها: **die Priorität / die Unterbrechung**\n2. فعل جمع أعمال متشابهة معًا: **bündeln / abschalten**\n3. وقت مخصّص لمهمة واحدة: **der Zeitblock / die Notiz**\n4. ما يساعد على متابعة الأفكار العامة في نص: **die Lesestrategie / die Ablenkung**",
+      "finding": "أربع مفردات أساسية تميز Priorität وbündeln وZeitblock وLesestrategie.",
+      "sourceIds": [
+        "PRIORITAET",
+        "BUENDELN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "مهمة مهمة ينبغي إنجازها قبل غيرها: **die Priorität / die Unterbrechung**",
+          "answer": "die Priorität",
+          "finding": "المهمة التي ينبغي إنجازها قبل غيرها هي die Priorität لا die Unterbrechung."
+        },
+        {
+          "index": 2,
+          "text": "فعل جمع أعمال متشابهة معًا: **bündeln / abschalten**",
+          "answer": "bündeln",
+          "finding": "جمع أعمال متشابهة معًا هو الفعل bündeln لا abschalten."
+        },
+        {
+          "index": 3,
+          "text": "وقت مخصّص لمهمة واحدة: **der Zeitblock / die Notiz**",
+          "answer": "der Zeitblock",
+          "finding": "الفترة المخصصة لمهمة واحدة هي der Zeitblock لا die Notiz."
+        },
+        {
+          "index": 4,
+          "text": "ما يساعد على متابعة الأفكار العامة في نص: **die Lesestrategie / die Ablenkung**",
+          "answer": "die Lesestrategie",
+          "finding": "ما يساعد على متابعة الأفكار في النص هو die Lesestrategie لا die Ablenkung."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T02",
+      "text": "1. Ich verbessere meinen Überblick, ______ ich die Aufgaben nach Wichtigkeit ordne. *(رابط من كلمة واحدة)*\n2. ______ sie ihr Telefon in der Lesezeit ausschaltet, wird sie seltener abgelenkt.\n3. Er spart Zeit ______, ______ er ähnliche Termine zusammenlegt.",
+      "finding": "ثلاث جمل تدرب indem وDadurch, dass وdadurch, dass مع إزالة التباس البند الأول.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ich verbessere meinen Überblick, ______ ich die Aufgaben nach Wichtigkeit ordne. *(رابط من كلمة واحدة)*",
+          "answer": "indem",
+          "finding": "القيد العربي (رابط من كلمة واحدة) بعد الفاصلة يعين indem."
+        },
+        {
+          "index": 2,
+          "text": "______ sie ihr Telefon in der Lesezeit ausschaltet, wird sie seltener abgelenkt.",
+          "answer": "Dadurch, dass",
+          "finding": "في بداية الجملة قبل الفاعل sie وتأخر الفعل ausschaltet نكتب Dadurch, dass."
+        },
+        {
+          "index": 3,
+          "text": "Er spart Zeit ______, ______ er ähnliche Termine zusammenlegt.",
+          "answer": "dadurch, dass",
+          "finding": "وجود فراغين مفصولين بفاصلة بعد Er spart Zeit يعين dadurch, dass."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T03",
+      "text": "1. Ich konzentriere mich besser, indem ich mein Telefon ______. (ausschalten)\n2. Dadurch, dass wir Aufgaben ______, vermeiden wir unnötige Wechsel. (bündeln)\n3. Sie merkt sich mehr, indem sie kurze Notizen ______. (machen)",
+      "finding": "ثلاث جمل تثبت تأخير الفعل المصرف واتصال الفعل المنفصل في جملتي indem وdass.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ich konzentriere mich besser, indem ich mein Telefon ______. (ausschalten)",
+          "answer": "ausschalte",
+          "finding": "في جملة indem يتصل الفعل المنفصل ويصرف مع ich في النهاية: ausschalte."
+        },
+        {
+          "index": 2,
+          "text": "Dadurch, dass wir Aufgaben ______, vermeiden wir unnötige Wechsel. (bündeln)",
+          "answer": "bündeln",
+          "finding": "بعد dass ومع الضمير wir يأتي الفعل المصرف في النهاية: bündeln."
+        },
+        {
+          "index": 3,
+          "text": "Sie merkt sich mehr, indem sie kurze Notizen ______. (machen)",
+          "answer": "macht",
+          "finding": "في جملة indem ومع الضمير المفرد sie يأتي الفعل المصرف في النهاية: macht."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T04",
+      "text": "اكتب **طريقة** أو **غاية**:\n\n1. **Ich lese den Text zweimal, um die Hauptaussage zu verstehen.**\n2. **Ich verstehe den Text besser, indem ich unbekannte Begriffe im Kontext prüfe.**\n3. **Er erstellt einen Wochenplan, um seine Zeit sinnvoll zu nutzen.**\n4. **Dadurch, dass sie Benachrichtigungen ausschaltet, liest sie konzentrierter.**\n5. **Sie versteht den Sachtext besser, indem sie nach jedem Abschnitt eine Kernidee notiert.**",
+      "finding": "خمس جمل تميز بين الطريقة (indem / dadurch, dass) والغاية (um … zu).",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Ich lese den Text zweimal, um die Hauptaussage zu verstehen.**",
+          "answer": "غاية",
+          "finding": "um die Hauptaussage zu verstehen تذكر الغاية من قراءة النص مرتين."
+        },
+        {
+          "index": 2,
+          "text": "**Ich verstehe den Text besser, indem ich unbekannte Begriffe im Kontext prüfe.**",
+          "answer": "طريقة",
+          "finding": "indem ich unbekannte Begriffe im Kontext prüfe تشرح طريقة فهم النص بصورة أفضل."
+        },
+        {
+          "index": 3,
+          "text": "**Er erstellt einen Wochenplan, um seine Zeit sinnvoll zu nutzen.**",
+          "answer": "غاية",
+          "finding": "um seine Zeit sinnvoll zu nutzen تذكر الغاية من إعداد خطة الأسبوع."
+        },
+        {
+          "index": 4,
+          "text": "**Dadurch, dass sie Benachrichtigungen ausschaltet, liest sie konzentrierter.**",
+          "answer": "طريقة",
+          "finding": "Dadurch, dass sie Benachrichtigungen ausschaltet تشرح الوسيلة التي تقرأ بها بتركيز أكبر."
+        },
+        {
+          "index": 5,
+          "text": "**Sie versteht den Sachtext besser, indem sie nach jedem Abschnitt eine Kernidee notiert.**",
+          "answer": "طريقة",
+          "finding": "indem sie nach jedem Abschnitt eine Kernidee notiert تشرح طريقة فهم النص المعلوماتي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. تضع هناء قائمة طويلةً من المهام من دون ترتيب الأولويات.\n2. تجمع هناء المكالمات الهاتفية المتشابهة.\n3. تعطّل الإشعارات أثناء وقت القراءة.\n4. تستخدم استراتيجية القراءة نفسها لكل النصوص.\n5. ترى أن خطتها توجيه وليست قاعدة جامدة.",
+      "finding": "خمس عبارات فهم قراءة تتحقق من خطة Hana واستراتيجيتها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "تضع هناء قائمة طويلةً من المهام من دون ترتيب الأولويات.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ تختار Hana الآن ثلاث أولويات أولًا بدل القائمة الطويلة غير المرتبة."
+        },
+        {
+          "index": 2,
+          "text": "تجمع هناء المكالمات الهاتفية المتشابهة.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تجمع المكالمات الهاتفية المتشابهة وتجريها تباعًا."
+        },
+        {
+          "index": 3,
+          "text": "تعطّل الإشعارات أثناء وقت القراءة.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تعطل الإشعارات أثناء وقت القراءة."
+        },
+        {
+          "index": 4,
+          "text": "تستخدم استراتيجية القراءة نفسها لكل النصوص.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ تغير استراتيجية القراءة بحسب نوع النص بين النص المعلوماتي والرواية."
+        },
+        {
+          "index": 5,
+          "text": "ترى أن خطتها توجيه وليست قاعدة جامدة.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ ترى خطتها توجيهًا مرنًا لا قاعدة جامدة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T06",
+      "text": "أكمل بالألمانية الكلمات الناقصة فقط؛ لا تكرر كلمات موجودة خارج الفراغ:\n\n1. Früher hat die Person oft zwischen mehreren ______ gewechselt.\n2. Jetzt plant sie zwei Zeitblöcke für ______.\n3. Indem sie ähnliche Aufgaben ______ erledigt, wird sie seltener unterbrochen.\n4. Für längere Texte notiert sie am Rand ______.\n5. Durch Pausen kann sie sich besser auf den ______ konzentrieren.",
+      "finding": "خمس جمل استماع بالألمانية متطابقة مع المفاتيح الألمانية الخمسة دون تكرار الكلمات المعطاة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Früher hat die Person oft zwischen mehreren ______ gewechselt.",
+          "answer": "Aufgaben",
+          "finding": "الكلمة الناقصة بعد mehreren هي Aufgaben."
+        },
+        {
+          "index": 2,
+          "text": "Jetzt plant sie zwei Zeitblöcke für ______.",
+          "answer": "konzentrierte Arbeit",
+          "finding": "العبارة الناقصة بعد für هي konzentrierte Arbeit."
+        },
+        {
+          "index": 3,
+          "text": "Indem sie ähnliche Aufgaben ______ erledigt, wird sie seltener unterbrochen.",
+          "answer": "nacheinander",
+          "finding": "الظرف الناقص قبل erledigt هو nacheinander."
+        },
+        {
+          "index": 4,
+          "text": "Für längere Texte notiert sie am Rand ______.",
+          "answer": "Fragen",
+          "finding": "عبارة am Rand موجودة قبل الفراغ، فنكتب Fragen وحدها دون تكرار."
+        },
+        {
+          "index": 5,
+          "text": "Durch Pausen kann sie sich besser auf den ______ konzentrieren.",
+          "answer": "nächsten Abschnitt",
+          "finding": "الأداة den موجودة قبل الفراغ، فنكتب nächsten Abschnitt دون تكرار الأداة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T07",
+      "text": "1. **Ich prüfe die wichtigsten Aufgaben. So behalte ich den Überblick.** → **indem**\n2. **Sie fasst nach jedem Abschnitt die Kernaussage zusammen. So erinnert sie sich besser an den Text.** → **dadurch, dass** *(في بداية الجملة)*\n3. **Ich bündele ähnliche Aufgaben. So spare ich Zeit.** → **dadurch, dass** *(بعد الجملة الرئيسية)*\n4. **Ich schreibe eine kurze Aufgabenliste. Ich möchte nichts Wichtiges vergessen.** → **um … zu**",
+      "finding": "أربع جمل دمج تغطي indem وdadurch, dass في موقعين وum … zu للغاية.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Ich prüfe die wichtigsten Aufgaben. So behalte ich den Überblick.** → **indem**",
+          "answer": "Ich behalte den Überblick, indem ich die wichtigsten Aufgaben prüfe.",
+          "finding": "دمج الجملتين بـindem بعد الرئيسية مع تأخير الفعل prüfe إلى النهاية."
+        },
+        {
+          "index": 2,
+          "text": "**Sie fasst nach jedem Abschnitt die Kernaussage zusammen. So erinnert sie sich besser an den Text.** → **dadurch, dass** *(في بداية الجملة)*",
+          "answer": "Dadurch, dass sie nach jedem Abschnitt die Kernaussage zusammenfasst, erinnert sie sich besser an den Text.",
+          "finding": "دمج الجملتين بـDadurch, dass في البداية مع اتصال zusammenfasst وتقدم الفعل erinnert في الرئيسية."
+        },
+        {
+          "index": 3,
+          "text": "**Ich bündele ähnliche Aufgaben. So spare ich Zeit.** → **dadurch, dass** *(بعد الجملة الرئيسية)*",
+          "answer": "Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele.",
+          "finding": "دمج الجملتين بـdadurch, dass بعد الجملة الرئيسية مع تأخير الفعل bündele إلى النهاية."
+        },
+        {
+          "index": 4,
+          "text": "**Ich schreibe eine kurze Aufgabenliste. Ich möchte nichts Wichtiges vergessen.** → **um … zu**",
+          "answer": "Ich schreibe eine kurze Aufgabenliste, um nichts Wichtiges zu vergessen.",
+          "finding": "دمج الجملتين بـum … zu لبيان الغاية مع وضع zu قبل المصدر vergessen."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-T08",
+      "text": "اكتب فقرة من خمس إلى سبع جمل ألمانية في كل مهمة، واستخدم **indem** أو **dadurch, dass** لشرح الطريقة و**um … zu** لذكر الغاية:\n\n**أ — P01: خمس جمل كتابة فقط**\n\nاكتب فقرة من خمس إلى سبع جمل ألمانية عن عادة في تنظيم الوقت أو القراءة تريد تحسينها: اذكر في الجملة الأولى العادة الحالية أو التحدي، وفي الثانية خطوتك اليومية الأولى، وفي الثالثة الطريقة باستخدام indem أو dadurch, dass مع الفعل المصرف في نهاية التابعة، وفي الرابعة الغاية باستخدام um … zu مع المصدر، وفي الخامسة كيف تراجع الخطة بمرونة. هذه المهمة كتابة فقط دون جهر أو تسجيل، ووضّح الفرق بين كيفية تنفيذ الطريقة والنتيجة التي تريدها.\n\n**ب — P02: خمس جمل كتابة وجهر**\n\nاستنادًا إلى نص الاستماع المكتوب T06 عن التركيز، اكتب إحاطة من خمس إلى سبع جمل ألمانية لزميل أو قدّم شرحًا شفهيًا مماثلًا ثم اقرأ النص بصوت واضح بنفسك: اذكر في الجملة الأولى الانتقال السابق بين المهام وتخطيط فترتين للعمل المركّز، وفي الثانية إنجاز المهام المتشابهة تباعًا وتدوين الأسئلة على الهامش، وفي الثالثة فائدة الاستراحات، وفي الرابعة طريقة إضافية واقعية لتقليل تشتيت الإشعارات باستخدام indem أو dadurch, dass، وفي الخامسة الغاية من هذه الطريقة باستخدام um … zu مع الإشارة إلى أن الطريقة قابلة للتكييف. لا يلزم تسجيل أو تشغيل MP3.",
+      "finding": "مهمتا التمرين 8 مفصلتان إلى P01 كتابة فقط (5 جمل، 430 حرفًا) وP02 كتابة وجهر (5 جمل، 594 حرفًا).",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Früher habe ich beim Lesen oft zwischen Nachrichten und langen Texten gewechselt.",
+          "answer": "Früher habe ich beim Lesen oft zwischen Nachrichten und langen Texten gewechselt.",
+          "finding": "الجملة الأولى في P01 تصف التحدي السابق في التنقل بين الرسائل والنصوص الطويلة."
+        },
+        {
+          "index": 2,
+          "text": "Jetzt wähle ich am Abend zuerst zwei feste Zeitblöcke für meinen Kurs aus.",
+          "answer": "Jetzt wähle ich am Abend zuerst zwei feste Zeitblöcke für meinen Kurs aus.",
+          "finding": "الجملة الثانية تذكر اختيار فترتين زمنيتين ثابتتين للدورة المسائية."
+        },
+        {
+          "index": 3,
+          "text": "Ich bleibe konzentriert, indem ich mein Telefon ausschalte und nach jedem Abschnitt eine kurze Notiz mache.",
+          "answer": "Ich bleibe konzentriert, indem ich mein Telefon ausschalte und nach jedem Abschnitt eine kurze Notiz mache.",
+          "finding": "الجملة الثالثة تشرح الطريقة بـindem: إيقاف الهاتف وتدوين ملاحظة قصيرة بعد كل مقطع."
+        },
+        {
+          "index": 4,
+          "text": "Außerdem führe ich eine kurze Prioritätenliste, um keine wichtige Aufgabe zu vergessen.",
+          "answer": "Außerdem führe ich eine kurze Prioritätenliste, um keine wichtige Aufgabe zu vergessen.",
+          "finding": "الجملة الرابعة تذكر الغاية بـum … zu: إعداد قائمة أولويات لعدم نسيان مهمة مهمة."
+        },
+        {
+          "index": 5,
+          "text": "Meinen Plan passe ich schrittweise an, damit er im Alltag realistisch bleibt.",
+          "answer": "Meinen Plan passe ich schrittweise an, damit er im Alltag realistisch bleibt.",
+          "finding": "الجملة الخامسة تؤكد تكييف الخطة تدريجيًا بمرونة."
+        },
+        {
+          "index": 6,
+          "text": "In der Aufnahme berichtet die Person, dass sie früher oft zwischen mehreren Aufgaben gewechselt hat und jetzt zwei Zeitblöcke für konzentrierte Arbeit plant.",
+          "answer": "In der Aufnahme berichtet die Person, dass sie früher oft zwischen mehreren Aufgaben gewechselt hat und jetzt zwei Zeitblöcke für konzentrierte Arbeit plant.",
+          "finding": "الجملة الأولى في P02 تلخص انتقال المتحدث سابقًا بين المهام وتخطيطه الآن لفترتين للعمل المركز."
+        },
+        {
+          "index": 7,
+          "text": "Sie erledigt ähnliche Aufgaben nacheinander und notiert bei längeren Texten Fragen am Rand.",
+          "answer": "Sie erledigt ähnliche Aufgaben nacheinander und notiert bei längeren Texten Fragen am Rand.",
+          "finding": "الجملة الثانية تذكر إنجاز المهام المتشابهة تباعًا وتدوين الأسئلة على الهامش."
+        },
+        {
+          "index": 8,
+          "text": "Dadurch, dass sie kurze Pausen einplant, kann sie sich besser auf den nächsten Abschnitt konzentrieren.",
+          "answer": "Dadurch, dass sie kurze Pausen einplant, kann sie sich besser auf den nächsten Abschnitt konzentrieren.",
+          "finding": "الجملة الثالثة تشرح بـDadurch, dass فائدة الاستراحات للتركيز في المقطع التالي."
+        },
+        {
+          "index": 9,
+          "text": "Zusätzlich können wir Ablenkungen verringern, indem wir während eines Zeitblocks alle Benachrichtigungen am Telefon ausschalten.",
+          "answer": "Zusätzlich können wir Ablenkungen verringern, indem wir während eines Zeitblocks alle Benachrichtigungen am Telefon ausschalten.",
+          "finding": "الجملة الرابعة تقترح بـindem إيقاف إشعارات الهاتف أثناء فترة العمل لتقليل التشتيت."
+        },
+        {
+          "index": 10,
+          "text": "Wir legen feste Ruhezeiten für Nachrichten fest, um schwierige Texte ohne ständige Unterbrechung zu bewältigen.",
+          "answer": "Wir legen feste Ruhezeiten für Nachrichten fest, um schwierige Texte ohne ständige Unterbrechung zu bewältigen.",
+          "finding": "الجملة الخامسة تذكر الغاية بـum … zu: تحديد أوقات هدوء لإنجاز النصوص الصعبة دون مقاطعة مستمرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q01",
+      "text": "ما معنى **der Zeitblock** في درس تنظيم الوقت؟",
+      "finding": "der Zeitblock هو فترة زمنية تخصص للعمل على مهمة أو مجموعة مهام.",
+      "sourceIds": [],
+      "options": [
+        "مقاطعة غير متوقعة",
+        "فترة زمنية مخصصة لمهمة",
+        "قائمة بأهم الأولويات"
+      ],
+      "answer": "فترة زمنية مخصصة لمهمة",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-01-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "مقاطعة غير متوقعة",
+          "correct": false,
+          "finding": "المقاطعة غير المتوقعة هي die Unterbrechung لا der Zeitblock."
+        },
+        {
+          "index": 1,
+          "text": "فترة زمنية مخصصة لمهمة",
+          "correct": true,
+          "finding": "der Zeitblock يعني فترة زمنية مخصصة لمهمة أو عمل مركز."
+        },
+        {
+          "index": 2,
+          "text": "قائمة بأهم الأولويات",
+          "correct": false,
+          "finding": "قائمة الأولويات ترتبط بـPrioritätenliste لا Zeitblock."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q02",
+      "text": "أكمل بتركيب يوضح طريقة ترتيب المهام: Ich behalte den Überblick, ___ ich Aufgaben nach Priorität ordne.",
+      "finding": "تشرح indem الوسيلة أو الطريقة التي نحافظ بها على الصورة العامة؛ ويأتي الفعل المصرف ordne في نهاية الجملة التابعة.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ],
+      "options": [
+        "um",
+        "obwohl",
+        "indem"
+      ],
+      "answer": "indem",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B2-01-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "um",
+          "correct": false,
+          "finding": "um تحتاج إلى zu ومصدر ولا تأتي هنا مع الفاعل ich والفعل المصرف ordne."
+        },
+        {
+          "index": 1,
+          "text": "obwohl",
+          "correct": false,
+          "finding": "obwohl تفيد التضاد لا شرح الطريقة."
+        },
+        {
+          "index": 2,
+          "text": "indem",
+          "correct": true,
+          "finding": "indem تشرح الطريقة أو الوسيلة ويتأخر معها الفعل المصرف ordne إلى نهاية الجملة التابعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q03",
+      "text": "اختر ترتيب الكلمات الصحيح: Dadurch, dass ___, kann ich mich besser konzentrieren.",
+      "finding": "بعد dass يأتي الفعل المصرف في نهاية الجملة التابعة: Dadurch, dass ich Pausen einplane, …",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ],
+      "options": [
+        "ich Pausen einplane",
+        "ich plane Pausen ein",
+        "ich Pausen einplanen"
+      ],
+      "answer": "ich Pausen einplane",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-01-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "ich Pausen einplane",
+          "correct": true,
+          "finding": "بعد dass يتأخر الفعل المنفصل ويتصل في نهاية التابعة: ich Pausen einplane."
+        },
+        {
+          "index": 1,
+          "text": "ich plane Pausen ein",
+          "correct": false,
+          "finding": "plane … ein ترتيب جملة رئيسية لا جملة تابعة بعد dass."
+        },
+        {
+          "index": 2,
+          "text": "ich Pausen einplanen",
+          "correct": false,
+          "finding": "einplanen مصدر غير مصرف مع الفاعل المفرد ich."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q04",
+      "text": "أي جملة تذكر الغاية التي من أجلها نُفذت المهمة، لا طريقة تنفيذها؟",
+      "finding": "um … zu تذكر الغاية: أكتب قائمة لكيلا أنسى شيئًا. أما indem وdadurch, dass فيشرحان الطريقة أو الوسيلة.",
+      "sourceIds": [
+        "COMMA",
+        "INF"
+      ],
+      "options": [
+        "Ich spare Zeit, indem ich ähnliche Aufgaben bündele.",
+        "Ich mache eine Liste, um nichts zu vergessen.",
+        "Ich merke mir mehr dadurch, dass ich kurze Notizen mache."
+      ],
+      "answer": "Ich mache eine Liste, um nichts zu vergessen.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-01-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Ich spare Zeit, indem ich ähnliche Aufgaben bündele.",
+          "correct": false,
+          "finding": "indem تشرح الطريقة التي يوفر بها الوقت لا الغاية."
+        },
+        {
+          "index": 1,
+          "text": "Ich mache eine Liste, um nichts zu vergessen.",
+          "correct": true,
+          "finding": "um nichts zu vergessen تذكر الغاية التي من أجلها تُكتب القائمة."
+        },
+        {
+          "index": 2,
+          "text": "Ich merke mir mehr dadurch, dass ich kurze Notizen mache.",
+          "correct": false,
+          "finding": "dadurch, dass تشرح الوسيلة التي يتذكر بها أكثر لا الغاية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q05",
+      "text": "كيف تجمع هناء بعض الأعمال القصيرة بحسب نص القراءة؟",
+      "finding": "يجمع النص المكالمات الهاتفية في سلسلة، فتجري هناء عدة مكالمات متتابعة بدل التنقل بين أنواع مختلفة من المهام.",
+      "sourceIds": [
+        "BUENDELN"
+      ],
+      "options": [
+        "تكتب كل مكالمة في يوم مختلف",
+        "تترك جميع الأعمال حتى نهاية الأسبوع",
+        "تجري عدة مكالمات هاتفية تباعًا"
+      ],
+      "answer": "تجري عدة مكالمات هاتفية تباعًا",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B2-01-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "تكتب كل مكالمة في يوم مختلف",
+          "correct": false,
+          "finding": "توزيع كل مكالمة على يوم مختلف يخالف معنى التجميع bündeln."
+        },
+        {
+          "index": 1,
+          "text": "تترك جميع الأعمال حتى نهاية الأسبوع",
+          "correct": false,
+          "finding": "النص لا يذكر تأجيل جميع الأعمال إلى نهاية الأسبوع."
+        },
+        {
+          "index": 2,
+          "text": "تجري عدة مكالمات هاتفية تباعًا",
+          "correct": true,
+          "finding": "ينص القراءة على أنها تجمع الأعمال القصيرة بإجراء عدة مكالمات هاتفية متتالية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q06",
+      "text": "كيف تقرأ هناء الرواية مقارنةً بالنص المعلوماتي؟",
+      "finding": "تدوّن هناء فكرة رئيسة بعد كل مقطع في النص المعلوماتي، بينما تقرأ الرواية في مقاطع أطول.",
+      "sourceIds": [],
+      "options": [
+        "تقرأها في مقاطع أطول",
+        "تدوّن فكرة رئيسة بعد كل فقرة كما تفعل في النص المعلوماتي",
+        "تبحث عن معنى كل كلمة قبل متابعة القراءة"
+      ],
+      "answer": "تقرأها في مقاطع أطول",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-01-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "تقرأها في مقاطع أطول",
+          "correct": true,
+          "finding": "تقرأ Hana الرواية في مقاطع أطول مقارنة بالنص المعلوماتي."
+        },
+        {
+          "index": 1,
+          "text": "تدوّن فكرة رئيسة بعد كل فقرة كما تفعل في النص المعلوماتي",
+          "correct": false,
+          "finding": "تدوين فكرة رئيسة بعد كل مقطع يخص النص المعلوماتي Sachtext لا الرواية."
+        },
+        {
+          "index": 2,
+          "text": "تبحث عن معنى كل كلمة قبل متابعة القراءة",
+          "correct": false,
+          "finding": "يذكر النص أنها تفهم النص دون البحث عن معنى كل كلمة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q07",
+      "text": "كم فترة زمنية للعمل المركّز يخطط لها المتحدث في نص الاستماع؟",
+      "finding": "يذكر المتحدث أنه يخطط لفترتين للعمل المركّز؛ ويمكن الإجابة من النص المكتوب دون تشغيل MP3.",
+      "sourceIds": [],
+      "options": [
+        "واحدة",
+        "فترتان",
+        "أربع فترات"
+      ],
+      "answer": "فترتان",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-01-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "واحدة",
+          "correct": false,
+          "finding": "النص يذكر فترتين اثنتين لا فترة واحدة."
+        },
+        {
+          "index": 1,
+          "text": "فترتان",
+          "correct": true,
+          "finding": "ينص الاستماع على تخطيط فترتين للعمل المركز: zwei Zeitblöcke."
+        },
+        {
+          "index": 2,
+          "text": "أربع فترات",
+          "correct": false,
+          "finding": "أربع فترات غير مذكورة في النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q08",
+      "text": "ماذا يدوّن المتحدث على هامش النصوص الطويلة؟",
+      "finding": "يكتب أسئلة على الهامش عند قراءة النصوص الطويلة، ثم يستخدم الاستراحات للتركيز في المقطع التالي.",
+      "sourceIds": [
+        "NOTIZ"
+      ],
+      "options": [
+        "مواعيد الاجتماعات التالية",
+        "قائمة المشتريات",
+        "أسئلة يطرحها أثناء القراءة"
+      ],
+      "answer": "أسئلة يطرحها أثناء القراءة",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B2-01-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "مواعيد الاجتماعات التالية",
+          "correct": false,
+          "finding": "مواعيد الاجتماعات غير مذكورة في نص الاستماع."
+        },
+        {
+          "index": 1,
+          "text": "قائمة المشتريات",
+          "correct": false,
+          "finding": "قائمة المشتريات غير مذكورة في نص الاستماع."
+        },
+        {
+          "index": 2,
+          "text": "أسئلة يطرحها أثناء القراءة",
+          "correct": true,
+          "finding": "ينص الاستماع على تدوين أسئلة على الهامش عند قراءة النصوص الطويلة: Fragen am Rand."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q09",
+      "text": "ادمج الجملتين بطريقة صحيحة باستخدام **indem**: Sie bündelt ähnliche Termine. Dadurch spart sie Zeit.",
+      "finding": "الجملة المطلوبة تشرح كيف توفّر الوقت: تجمع المواعيد المتشابهة. لذلك يناسبها indem مع الفعل bündelt في النهاية.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "BUENDELN"
+      ],
+      "options": [
+        "Sie spart Zeit, indem sie ähnliche Termine bündelt.",
+        "Sie spart Zeit, um ähnliche Termine zu bündeln.",
+        "Sie bündelt ähnliche Termine, indem sie Zeit spart."
+      ],
+      "answer": "Sie spart Zeit, indem sie ähnliche Termine bündelt.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-01-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Sie spart Zeit, indem sie ähnliche Termine bündelt.",
+          "correct": true,
+          "finding": "Sie spart Zeit, indem sie ähnliche Termine bündelt تشرح الطريقة بـindem مع تأخير الفعل bündelt."
+        },
+        {
+          "index": 1,
+          "text": "Sie spart Zeit, um ähnliche Termine zu bündeln.",
+          "correct": false,
+          "finding": "um … zu bündeln تحول الوسيلة إلى غاية فتغير العلاقة المنطقية."
+        },
+        {
+          "index": 2,
+          "text": "Sie bündelt ähnliche Termine, indem sie Zeit spart.",
+          "correct": false,
+          "finding": "عكست الجملة بين النتيجة والوسيلة فجعلت توفير الوقت وسيلة لتجميع المواعيد."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-Q10",
+      "text": "ادمج الجملتين باستخدام **dadurch, dass**: Sie schaltet Benachrichtigungen aus. Dadurch arbeitet sie konzentrierter.",
+      "finding": "بعد الجملة التابعة التي تبدأ بـDadurch, dass يأتي الفعل المصرف في الجملة الرئيسة مباشرة: arbeitet sie konzentrierter.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ],
+      "options": [
+        "Dadurch, dass sie Benachrichtigungen ausschaltet, sie arbeitet konzentrierter.",
+        "Dadurch, dass sie Benachrichtigungen ausschaltet, arbeitet sie konzentrierter.",
+        "Um Benachrichtigungen auszuschalten, arbeitet sie konzentrierter."
+      ],
+      "answer": "Dadurch, dass sie Benachrichtigungen ausschaltet, arbeitet sie konzentrierter.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-01-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Dadurch, dass sie Benachrichtigungen ausschaltet, sie arbeitet konzentrierter.",
+          "correct": false,
+          "finding": "بعد الجملة التابعة المتقدمة يجب أن يلي الفاصلة الفعل المصرف arbeitet قبل الفاعل sie."
+        },
+        {
+          "index": 1,
+          "text": "Dadurch, dass sie Benachrichtigungen ausschaltet, arbeitet sie konzentrierter.",
+          "correct": true,
+          "finding": "Dadurch, dass sie Benachrichtigungen ausschaltet, arbeitet sie konzentrierter تطبق تأخير الفعل في التابعة وتقديم الفعل في الرئيسية."
+        },
+        {
+          "index": 2,
+          "text": "Um Benachrichtigungen auszuschalten, arbeitet sie konzentrierter.",
+          "correct": false,
+          "finding": "Um … auszuschalten تحول الوسيلة إلى غاية غير مطابقة لمعنى الجملتين."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-P01",
+      "text": "اكتب فقرة من خمس إلى سبع جمل ألمانية عن عادة في تنظيم الوقت أو القراءة تريد تحسينها: اذكر في الجملة الأولى العادة الحالية أو التحدي، وفي الثانية خطوتك اليومية الأولى، وفي الثالثة الطريقة باستخدام indem أو dadurch, dass مع الفعل المصرف في نهاية التابعة، وفي الرابعة الغاية باستخدام um … zu مع المصدر، وفي الخامسة كيف تراجع الخطة بمرونة. هذه المهمة كتابة فقط دون جهر أو تسجيل، ووضّح الفرق بين كيفية تنفيذ الطريقة والنتيجة التي تريدها.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة فقط دون جهر.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "criteria": {
+        "taskCompletion": "فقرة ألمانية من خمس إلى سبع جمل عن عادة محددة في تنظيم الوقت أو القراءة يرغب المتعلم في تحسينها، تشمل التحدي والخطوة اليومية والطريقة والغاية والمرونة؛ كتابة فقط.",
+        "meaningClarity": "تُفهم الطريقة التي سيطبّقها المتعلم، والغاية أو النتيجة التي يرجوها، ويظهر الفرق بين كيفية التنفيذ ولماذا يفعله.",
+        "targetSkill": "يستخدم رابطًا للطريقة مرةً على الأقل: indem أو dadurch, dass، مع فاصلة ونهاية الفعل المصرف في الجملة التابعة؛ ويستخدم um … zu مرةً على الأقل لذكر الغاية مع مصدر مناسب، ويميّز استخدامها من رابط الطريقة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-B2-01-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "فقرة ألمانية من خمس إلى سبع جمل عن عادة محددة في تنظيم الوقت أو القراءة يرغب المتعلم في تحسينها، تشمل التحدي والخطوة اليومية والطريقة والغاية والمرونة؛ كتابة فقط.",
+          "finding": "يتحقق من فقرة من خمس إلى سبع جمل عن تحسين عادة في الوقت أو القراءة؛ الحد 160 حرفًا والنموذج 430 حرفًا (كتابة فقط)."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تُفهم الطريقة التي سيطبّقها المتعلم، والغاية أو النتيجة التي يرجوها، ويظهر الفرق بين كيفية التنفيذ ولماذا يفعله.",
+          "finding": "يضمن وضوح الفرق بين كيفية تنفيذ الطريقة والغاية المرجوة منها."
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم رابطًا للطريقة مرةً على الأقل: indem أو dadurch, dass، مع فاصلة ونهاية الفعل المصرف في الجملة التابعة؛ ويستخدم um … zu مرةً على الأقل لذكر الغاية مع مصدر مناسب، ويميّز استخدامها من رابط الطريقة.",
+          "finding": "يركز على استخدام indem أو dadurch, dass مع الفاصلة ونهاية الفعل المصرف، واستخدام um … zu مع المصدر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-P02",
+      "text": "استنادًا إلى نص الاستماع المكتوب T06 عن التركيز، اكتب إحاطة من خمس إلى سبع جمل ألمانية لزميل أو قدّم شرحًا شفهيًا مماثلًا ثم اقرأ النص بصوت واضح بنفسك: اذكر في الجملة الأولى الانتقال السابق بين المهام وتخطيط فترتين للعمل المركّز، وفي الثانية إنجاز المهام المتشابهة تباعًا وتدوين الأسئلة على الهامش، وفي الثالثة فائدة الاستراحات، وفي الرابعة طريقة إضافية واقعية لتقليل تشتيت الإشعارات باستخدام indem أو dadurch, dass، وفي الخامسة الغاية من هذه الطريقة باستخدام um … zu مع الإشارة إلى أن الطريقة قابلة للتكييف. لا يلزم تسجيل أو تشغيل MP3.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة وجهر مع الاستناد إلى T06 وروابط T06/T08.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "criteria": {
+        "taskCompletion": "إحاطة ألمانية من خمس إلى سبع جمل تستند إلى تفاصيل T06 (الانتقال السابق، فترتا العمل، تجميع المهام والأسئلة على الهامش، الاستراحات) وتقترح طريقة إضافية واقعية لتقليل تشتيت الإشعارات؛ كتابة ثم جهر.",
+        "meaningClarity": "يفصل الناتج بوضوح بين ما فعله المتحدث في T06 والاقتراح الجديد، ويشرح الطريقة والغاية منها من دون تعميم أن طريقة واحدة تناسب الجميع.",
+        "targetSkill": "يستخدم رابطًا للطريقة مرةً على الأقل: indem أو dadurch, dass، مع الفاصلة ونهاية الفعل المصرف في الجملة التابعة؛ ويستخدم um … zu مرةً على الأقل لذكر الغاية مع مصدر مناسب، ويميّز رابط الغاية من رابط الطريقة مع القراءة الجهرية الذاتية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 190,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-B2-01-T06",
+        "DL-B2-01-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "إحاطة ألمانية من خمس إلى سبع جمل تستند إلى تفاصيل T06 (الانتقال السابق، فترتا العمل، تجميع المهام والأسئلة على الهامش، الاستراحات) وتقترح طريقة إضافية واقعية لتقليل تشتيت الإشعارات؛ كتابة ثم جهر.",
+          "finding": "يتحقق من إحاطة من خمس إلى سبع جمل تستند إلى T06 وتقترح طريقة لتقليل الإشعارات؛ الحد 190 حرفًا والنموذج 594 حرفًا مع الجهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يفصل الناتج بوضوح بين ما فعله المتحدث في T06 والاقتراح الجديد، ويشرح الطريقة والغاية منها من دون تعميم أن طريقة واحدة تناسب الجميع.",
+          "finding": "يضمن الفصل بين ما ورد في T06 والاقتراح الإضافي دون تعميم الطريقة على الجميع."
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم رابطًا للطريقة مرةً على الأقل: indem أو dadurch, dass، مع الفاصلة ونهاية الفعل المصرف في الجملة التابعة؛ ويستخدم um … zu مرةً على الأقل لذكر الغاية مع مصدر مناسب، ويميّز رابط الغاية من رابط الطريقة مع القراءة الجهرية الذاتية.",
+          "finding": "يركز على استخدام indem أو dadurch, dass للطريقة وum … zu للغاية مع القراءة الجهرية الذاتية دون تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "habit-model-01",
+      "text": "Früher habe ich beim Lesen oft zwischen Nachrichten und langen Texten gewechselt.\nJetzt wähle ich am Abend zuerst zwei feste Zeitblöcke für meinen Kurs aus.\nIch bleibe konzentriert, indem ich mein Telefon ausschalte und nach jedem Abschnitt eine kurze Notiz mache.\nAußerdem führe ich eine kurze Prioritätenliste, um keine wichtige Aufgabe zu vergessen.\nMeinen Plan passe ich schrittweise an, damit er im Alltag realistisch bleibt.",
+      "finding": "نموذج مكتوب: 430 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Früher habe ich beim Lesen oft zwischen Nachrichten und langen Texten gewechselt.",
+          "finding": "الجملة الأولى في P01 تصف التحدي السابق في التنقل بين الرسائل والنصوص الطويلة."
+        },
+        {
+          "index": 2,
+          "text": "Jetzt wähle ich am Abend zuerst zwei feste Zeitblöcke für meinen Kurs aus.",
+          "finding": "الجملة الثانية تذكر اختيار فترتين زمنيتين ثابتتين للدورة المسائية."
+        },
+        {
+          "index": 3,
+          "text": "Ich bleibe konzentriert, indem ich mein Telefon ausschalte und nach jedem Abschnitt eine kurze Notiz mache.",
+          "finding": "الجملة الثالثة تشرح الطريقة بـindem: إيقاف الهاتف وتدوين ملاحظة قصيرة بعد كل مقطع."
+        },
+        {
+          "index": 4,
+          "text": "Außerdem führe ich eine kurze Prioritätenliste, um keine wichtige Aufgabe zu vergessen.",
+          "finding": "الجملة الرابعة تذكر الغاية بـum … zu: إعداد قائمة أولويات لعدم نسيان مهمة مهمة."
+        },
+        {
+          "index": 5,
+          "text": "Meinen Plan passe ich schrittweise an, damit er im Alltag realistisch bleibt.",
+          "finding": "الجملة الخامسة تؤكد تكييف الخطة تدريجيًا بمرونة."
+        }
+      ]
+    },
+    {
+      "id": "briefing-model-01",
+      "text": "In der Aufnahme berichtet die Person, dass sie früher oft zwischen mehreren Aufgaben gewechselt hat und jetzt zwei Zeitblöcke für konzentrierte Arbeit plant.\nSie erledigt ähnliche Aufgaben nacheinander und notiert bei längeren Texten Fragen am Rand.\nDadurch, dass sie kurze Pausen einplant, kann sie sich besser auf den nächsten Abschnitt konzentrieren.\nZusätzlich können wir Ablenkungen verringern, indem wir während eines Zeitblocks alle Benachrichtigungen am Telefon ausschalten.\nWir legen feste Ruhezeiten für Nachrichten fest, um schwierige Texte ohne ständige Unterbrechung zu bewältigen.",
+      "finding": "نموذج مكتوب: 594 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "INF"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "In der Aufnahme berichtet die Person, dass sie früher oft zwischen mehreren Aufgaben gewechselt hat und jetzt zwei Zeitblöcke für konzentrierte Arbeit plant.",
+          "finding": "الجملة الأولى في P02 تلخص انتقال المتحدث سابقًا بين المهام وتخطيطه الآن لفترتين للعمل المركز."
+        },
+        {
+          "index": 2,
+          "text": "Sie erledigt ähnliche Aufgaben nacheinander und notiert bei längeren Texten Fragen am Rand.",
+          "finding": "الجملة الثانية تذكر إنجاز المهام المتشابهة تباعًا وتدوين الأسئلة على الهامش."
+        },
+        {
+          "index": 3,
+          "text": "Dadurch, dass sie kurze Pausen einplant, kann sie sich besser auf den nächsten Abschnitt konzentrieren.",
+          "finding": "الجملة الثالثة تشرح بـDadurch, dass فائدة الاستراحات للتركيز في المقطع التالي."
+        },
+        {
+          "index": 4,
+          "text": "Zusätzlich können wir Ablenkungen verringern, indem wir während eines Zeitblocks alle Benachrichtigungen am Telefon ausschalten.",
+          "finding": "الجملة الرابعة تقترح بـindem إيقاف إشعارات الهاتف أثناء فترة العمل لتقليل التشتيت."
+        },
+        {
+          "index": 5,
+          "text": "Wir legen feste Ruhezeiten für Nachrichten fest, um schwierige Texte ohne ständige Unterbrechung zu bewältigen.",
+          "finding": "الجملة الخامسة تذكر الغاية بـum … zu: تحديد أوقات هدوء لإنجاز النصوص الصعبة دون مقاطعة مستمرة."
+        }
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Ich spare Zeit, indem ich ähnliche Aufgaben bündele.** → أوفّر الوقت بجمع المهام المتشابهة.",
+      "finding": "نموذج شرح الطريقة بـindem بعد الجملة الرئيسية مع تأخير الفعل bündele.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA",
+        "BUENDELN"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Dadurch, dass ich Pausen einplane, bleibe ich konzentriert.** → من خلال تخطيط الاستراحات، أحافظ على تركيزي.",
+      "finding": "نموذج شرح الطريقة بـDadurch, dass في بداية الجملة مع تقديم الفعل bleibe في الرئيسية.",
+      "sourceIds": [
+        "CONJ",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **die Priorität** → الأولوية.",
+      "finding": "مراجعة المفردة المحورية die Priorität (الأولوية).",
+      "sourceIds": [
+        "PRIORITAET"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **die Lesestrategie** → استراتيجية القراءة.",
+      "finding": "مراجعة المفردة المحورية die Lesestrategie (استراتيجية القراءة).",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B2-01-AUD-PHR-01",
+      "text": "Die Zeiteinteilung. Die Priorität, die Prioritäten. Der Zeitblock, die Zeitblöcke. Die Ablenkung, die Ablenkungen. Die Unterbrechung, die Unterbrechungen. Die Lesestrategie, die Lesestrategien. Der Überblick. Die Notiz, die Notizen. Priorisieren, priorisiert. Bündeln, bündelt. Sich konzentrieren auf, konzentriert sich. Abschalten, schaltet ab. Bewältigen, bewältigt. Realistisch. Schrittweise.",
+      "finding": "مطابقة نصية فقط؛ 15 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Zeiteinteilung.",
+          "finding": "Zeiteinteilung مؤنث؛ تنظيم الوقت وتوزيعه على المهام."
+        },
+        {
+          "index": 2,
+          "text": "Die Priorität, die Prioritäten.",
+          "finding": "Priorität مؤنث وجمعها Prioritäten؛ الأولوية التي تقدم على غيرها."
+        },
+        {
+          "index": 3,
+          "text": "Der Zeitblock, die Zeitblöcke.",
+          "finding": "Zeitblock مذكر وجمعه Zeitblöcke بأوملاوت؛ فترة زمنية مخصصة لمهمة."
+        },
+        {
+          "index": 4,
+          "text": "Die Ablenkung, die Ablenkungen.",
+          "finding": "Ablenkung مؤنث وجمعها Ablenkungen؛ مصدر تشتيت يصرف الانتباه."
+        },
+        {
+          "index": 5,
+          "text": "Die Unterbrechung, die Unterbrechungen.",
+          "finding": "Unterbrechung مؤنث وجمعها Unterbrechungen؛ مقاطعة أو توقف مؤقت في العمل."
+        },
+        {
+          "index": 6,
+          "text": "Die Lesestrategie, die Lesestrategien.",
+          "finding": "Lesestrategie مؤنث وجمعها Lesestrategien؛ استراتيجية القراءة الملائمة لنوع النص."
+        },
+        {
+          "index": 7,
+          "text": "Der Überblick.",
+          "finding": "Überblick مذكر (وجمعه النادر Überblicke)؛ الصورة العامة أو الإحاطة في تعبير den Überblick behalten."
+        },
+        {
+          "index": 8,
+          "text": "Die Notiz, die Notizen.",
+          "finding": "Notiz مؤنث وجمعها Notizen؛ ملاحظة مكتوبة قصيرة."
+        },
+        {
+          "index": 9,
+          "text": "Priorisieren, priorisiert.",
+          "finding": "priorisieren فعل ضعيف ينتهي بـ-ieren حاضرُه priorisiert؛ يحدد الأولويات ويرتبها."
+        },
+        {
+          "index": 10,
+          "text": "Bündeln, bündelt.",
+          "finding": "bündeln فعل ضعيف حاضرُه bündelt ومع المتكلم المفرد bündele/bündle؛ يجمع مهامًا متشابهة معًا."
+        },
+        {
+          "index": 11,
+          "text": "Sich konzentrieren auf, konzentriert sich.",
+          "finding": "sich konzentrieren auf + Akkusativ فعل انعكاسي حاضرُه konzentriert sich؛ يركز على شيء."
+        },
+        {
+          "index": 12,
+          "text": "Abschalten, schaltet ab.",
+          "finding": "abschalten فعل ضعيف منفصل حاضرُه schaltet ab؛ يطفئ أو يعطل جهازًا أو إشعارات في سياق الدرس."
+        },
+        {
+          "index": 13,
+          "text": "Bewältigen, bewältigt.",
+          "finding": "bewältigen فعل ضعيف غير منفصل حاضرُه bewältigt؛ ينجز مهمة صعبة أو يتعامل معها بنجاح."
+        },
+        {
+          "index": 14,
+          "text": "Realistisch.",
+          "finding": "realistisch صفة بمعنى واقعي وقابل للتطبيق."
+        },
+        {
+          "index": 15,
+          "text": "Schrittweise.",
+          "finding": "schrittweise ظرف بمعنى تدريجيًا خطوة بخطوة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-AUD-MODEL-01",
+      "text": "Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne. Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren. Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele. Ich schreibe eine Liste, um nichts zu vergessen. Ich vergesse weniger, indem ich eine Liste führe.",
+      "finding": "مطابقة نصية فقط؛ 5 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne.",
+          "finding": "Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne: جملة طريقة بـindem بعد الرئيسية، والفعل المصرف ordne في النهاية."
+        },
+        {
+          "index": 2,
+          "text": "Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren.",
+          "finding": "Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren: تقدمت جملة dadurch, dass بفاصلة ونهاية الفعل المتصل ausschaltet، ثم تلاها الفعل المصرف kann في الجملة الرئيسية مباشرة."
+        },
+        {
+          "index": 3,
+          "text": "Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele.",
+          "finding": "Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele: جاءت dadurch في نهاية الرئيسية قبل الفاصلة، ثم dass والفعل المصرف bündele في آخر التابعة."
+        },
+        {
+          "index": 4,
+          "text": "Ich schreibe eine Liste, um nichts zu vergessen.",
+          "finding": "Ich schreibe eine Liste, um nichts zu vergessen: جملة مصدرية بـum … zu تذكر الغاية لا الطريقة."
+        },
+        {
+          "index": 5,
+          "text": "Ich vergesse weniger, indem ich eine Liste führe.",
+          "finding": "Ich vergesse weniger, indem ich eine Liste führe: جملة طريقة بـindem تقابل جملة الغاية السابقة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-AUD-DLG-01",
+      "text": "Wie schaffst du es, Arbeit und Lesen in deiner Woche zu verbinden? Ich plane feste Zeitblöcke ein. Dadurch, dass ich ähnliche Aufgaben bündele, habe ich abends mehr freie Zeit. Und wie bleibst du beim Lesen konzentriert? Ich schalte mein Telefon aus und mache nach jedem Abschnitt kurze Notizen. Liest du immer gleich schnell? Nein. Ich passe meine Lesestrategie an den Text an, indem ich bei einem schwierigen Kapitel langsamer lese. Das klingt realistisch. Ja, ich plane auch Pausen ein. Nicht jede Stunde muss vollständig verplant sein.",
+      "finding": "مطابقة نصية فقط؛ 8 وحدة داخل 8 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Wie schaffst du es, Arbeit und Lesen in deiner Woche zu verbinden?",
+          "finding": "Hana تسأل كيف ينجح Karim في الجمع بين العمل والقراءة خلال الأسبوع؛ مصدر مع zu بعد schaffst."
+        },
+        {
+          "index": 2,
+          "text": "Ich plane feste Zeitblöcke ein. Dadurch, dass ich ähnliche Aufgaben bündele, habe ich abends mehr freie Zeit.",
+          "finding": "Karim يذكر تخطيط فترات زمنية ثابتة، ثم يشرح الوسيلة بـDadurch, dass ich ähnliche Aufgaben bündele وتقدم الفعل habe في الرئيسية."
+        },
+        {
+          "index": 3,
+          "text": "Und wie bleibst du beim Lesen konzentriert?",
+          "finding": "سؤال عن كيفية الحفاظ على التركيز أثناء القراءة."
+        },
+        {
+          "index": 4,
+          "text": "Ich schalte mein Telefon aus und mache nach jedem Abschnitt kurze Notizen.",
+          "finding": "إجراءان عمليان في المضارع: إيقاف الهاتف وتدوين ملاحظات قصيرة بعد كل مقطع."
+        },
+        {
+          "index": 5,
+          "text": "Liest du immer gleich schnell?",
+          "finding": "سؤال نعم/لا عن ثبات سرعة القراءة."
+        },
+        {
+          "index": 6,
+          "text": "Nein. Ich passe meine Lesestrategie an den Text an, indem ich bei einem schwierigen Kapitel langsamer lese.",
+          "finding": "نفي ثم شرح الطريقة بـindem: يكيّف استراتيجية القراءة مع النص بأن يقرأ الفصول الصعبة ببطء أكبر."
+        },
+        {
+          "index": 7,
+          "text": "Das klingt realistisch.",
+          "finding": "تعليق يؤكد واقعية الخطة (realistisch)."
+        },
+        {
+          "index": 8,
+          "text": "Ja, ich plane auch Pausen ein. Nicht jede Stunde muss vollständig verplant sein.",
+          "finding": "إضافة تخطيط الاستراحات وتجنب ملء كل ساعة بالكامل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-AUD-READ-01",
+      "text": "Hana arbeitet und besucht abends einen Kurs. Früher begann sie jeden Tag mit einer langen Aufgabenliste. Jetzt wählt sie zuerst drei Prioritäten aus. Sie bündelt kurze Erledigungen, indem sie mehrere Telefonate hintereinander führt. Während ihrer Lesezeit schaltet sie Benachrichtigungen aus. Bei einem Sachtext notiert sie nach jedem Abschnitt eine Kernidee; bei einem Roman liest sie dagegen in längeren Abschnitten. Dadurch, dass sie die Lesestrategie an die Textsorte anpasst, versteht sie den Text besser, ohne jedes Wort nachzuschlagen. Hana plant außerdem freie Zeit ein. Sie betrachtet ihren Plan als Orientierung, nicht als starre Vorschrift.",
+      "finding": "مطابقة نصية فقط؛ 9 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Hana arbeitet und besucht abends einen Kurs.",
+          "finding": "تعمل Hana وتحضر دورة مسائية؛ سياق واقعي لتنظيم الوقت."
+        },
+        {
+          "index": 2,
+          "text": "Früher begann sie jeden Tag mit einer langen Aufgabenliste.",
+          "finding": "في السابق كانت تبدأ كل يوم بقائمة مهام طويلة؛ ماضٍ بسيط begann."
+        },
+        {
+          "index": 3,
+          "text": "Jetzt wählt sie zuerst drei Prioritäten aus.",
+          "finding": "الآن تختار أولًا ثلاث أولويات؛ فعل منفصل wählt … aus."
+        },
+        {
+          "index": 4,
+          "text": "Sie bündelt kurze Erledigungen, indem sie mehrere Telefonate hintereinander führt.",
+          "finding": "تجمع الأعمال القصيرة بأن تجري عدة مكالمات هاتفية متتالية؛ indem … führt."
+        },
+        {
+          "index": 5,
+          "text": "Während ihrer Lesezeit schaltet sie Benachrichtigungen aus.",
+          "finding": "أثناء وقت القراءة تعطل الإشعارات؛ schaltet … aus."
+        },
+        {
+          "index": 6,
+          "text": "Bei einem Sachtext notiert sie nach jedem Abschnitt eine Kernidee; bei einem Roman liest sie dagegen in längeren Abschnitten.",
+          "finding": "في النص المعلوماتي تدون فكرة رئيسة بعد كل مقطع، أما في الرواية فتقرأ في مقاطع أطول."
+        },
+        {
+          "index": 7,
+          "text": "Dadurch, dass sie die Lesestrategie an die Textsorte anpasst, versteht sie den Text besser, ohne jedes Wort nachzuschlagen.",
+          "finding": "من خلال تكييف استراتيجية القراءة مع نوع النص تفهم النص أفضل دون البحث عن كل كلمة في القاموس؛ Dadurch, dass … وohne … nachzuschlagen."
+        },
+        {
+          "index": 8,
+          "text": "Hana plant außerdem freie Zeit ein.",
+          "finding": "تخطط Hana أيضًا لوقت حر."
+        },
+        {
+          "index": 9,
+          "text": "Sie betrachtet ihren Plan als Orientierung, nicht als starre Vorschrift.",
+          "finding": "تعد خطتها توجيهًا مرنًا لا قاعدة جامدة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-01-AUD-LST-01",
+      "text": "Ich habe früher oft zwischen mehreren Aufgaben gewechselt. Jetzt plane ich zwei Zeitblöcke für konzentrierte Arbeit. Indem ich ähnliche Aufgaben nacheinander erledige, werde ich seltener unterbrochen. Für längere Texte notiere ich am Rand Fragen. Dadurch, dass ich Pausen einplane, kann ich mich besser auf den nächsten Abschnitt konzentrieren. Meine Methode passt nicht für jede Person, aber für meinen Alltag ist sie hilfreich.",
+      "finding": "مطابقة نصية فقط؛ 6 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ich habe früher oft zwischen mehreren Aufgaben gewechselt.",
+          "finding": "في السابق كان المتحدث يتنقل كثيرًا بين عدة مهام؛ Perfekt مع habe … gewechselt."
+        },
+        {
+          "index": 2,
+          "text": "Jetzt plane ich zwei Zeitblöcke für konzentrierte Arbeit.",
+          "finding": "الآن يخطط لفترتين زمنيتين للعمل المركز."
+        },
+        {
+          "index": 3,
+          "text": "Indem ich ähnliche Aufgaben nacheinander erledige, werde ich seltener unterbrochen.",
+          "finding": "بإنجاز المهام المتشابهة تباعًا تقل مقاطعته؛ تقدمت جملة Indem فتلاها الفعل المصرف werde."
+        },
+        {
+          "index": 4,
+          "text": "Für längere Texte notiere ich am Rand Fragen.",
+          "finding": "للنصوص الطويلة يدون أسئلة على الهامش."
+        },
+        {
+          "index": 5,
+          "text": "Dadurch, dass ich Pausen einplane, kann ich mich besser auf den nächsten Abschnitt konzentrieren.",
+          "finding": "من خلال تخطيط الاستراحات يستطيع التركيز بصورة أفضل على المقطع التالي؛ Dadurch, dass … kann ich mich … konzentrieren."
+        },
+        {
+          "index": 6,
+          "text": "Meine Methode passt nicht für jede Person, aber für meinen Alltag ist sie hilfreich.",
+          "finding": "طريقته لا تناسب كل شخص، لكنها مفيدة لحياته اليومية."
+        }
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/indem",
+      "reason": "صفحة خطأ 404؛ استُبعدت ولم تُحتسب مرجعًا"
+    }
+  ],
+  "sourceHashes": {
+    "content/B2/lesson-01-time-management-habits-reading.md": "8e22dddbb2811399a97a2ba3d214fa2e5bb2630a2ba4022c70aee5d4dbc655da",
+    "content/B2/lesson-01-time-management-habits-reading.assessment.json": "be6d9cd2c9b56ae107d24a203d7e8e4f41f54aaf191c7c23a4e1b757dcdac285"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-01-AUD-PHR-01": "3174f33e4e59a416f10e84f7c87d4d3ff0b2c5f9706d63f8597a83a6e838f5f6",
+    "DL-B2-01-AUD-MODEL-01": "21a64811727e687f6533f378d3367d1c9bac5ee0b66caf8cdef94ad55bd46ee0",
+    "DL-B2-01-AUD-DLG-01": "3572d238ce0507b36efb9148c9a5dbd5c2c023bc3bfcd335cb207035995158b2",
+    "DL-B2-01-AUD-READ-01": "23d3068d755ee397e5e2639c8b5b10aa8c690a0746c7671d4db3e0d61441e09a",
+    "DL-B2-01-AUD-LST-01": "e25db45940d13baf4e35069dea8e92a34fdafc0d9895be247cbcaf6dd989deec"
+  },
+  "preservation": {
+    "baseline": "c1fc4482eb42247b0175339d42f93427e95ee2f7",
+    "protectedFilesIncludingAudio": 590,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1,
+      2,
+      0,
+      1
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "changedAudioRegisterRows": {
+      "DL-B2-01-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B2-01-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B2-01-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B2-01-AUD-LST-01": [
+        "source_line"
+      ]
+    }
+  },
+  "implementationCommit": "db74c45b218cd8c795bdd1edda3201d9b10ccfa8",
+  "qualityChecks": {
+    "build": {
+      "command": "python3 tools/build_course.py",
+      "status": "PASS",
+      "lessons": 53,
+      "bundleBytes": 2147924
+    },
+    "verify": {
+      "command": "python3 tools/verify_course.py",
+      "status": "PASS",
+      "exerciseHeadings": 428,
+      "dialogueSections": 61,
+      "vocabularyItems": 754,
+      "lessonQuizItems": 530,
+      "gateQuizItems": 10,
+      "performanceTasks": 109,
+      "catalogRows": 1080,
+      "audioAssets": 217,
+      "mp3Clips": 474,
+      "readyAssets": 137,
+      "pendingAssets": 80
+    },
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 43,
+      "newGuard": "tools/test_b2_01_review.py",
+      "scope": "coverage/text/mappings/evidence/hashes; not language certification"
+    },
+    "nodeGroups": {
+      "status": "PASS",
+      "tests": [
+        "progression",
+        "service_worker",
+        "daily_plan",
+        "session_persistence",
+        "study_time"
+      ]
+    },
+    "syntaxAndDiff": {
+      "status": "PASS",
+      "commands": [
+        "node --check app.js",
+        "node --check service-worker.js",
+        "git diff --check"
+      ]
+    },
+    "browser": {
+      "status": "PASS",
+      "chromium": "143.0.7499.0",
+      "playwright": "1.58.2",
+      "axe": "4.11.0",
+      "cache": "v92",
+      "tests": [
+        "browser",
+        "accessibility_update",
+        "accessibility_audit",
+        "forms_keyboard",
+        "narrow_layout"
+      ],
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "axeStates": 185,
+      "axeSelectedRuleViolations": 0,
+      "axeIncompleteOccurrences": 132,
+      "axeIncompleteNodeOccurrences": 324,
+      "narrowStates": 126,
+      "narrowViewports": [
+        "320x900",
+        "568x320"
+      ],
+      "formsKeyboard": "Passed first execution at both widths; historical native chooser intermittency remains unresolved."
+    },
+    "evidenceIsolation": {
+      "status": "PASS",
+      "oldVersion": "b2-01-v1",
+      "newVersion": "b2-01-v2",
+      "nextLesson": "b2-02-career-formal-communication-konjunktiv1",
+      "modelCharacters": [
+        430,
+        594
+      ],
+      "minimumCharacters": [
+        160,
+        190
+      ],
+      "retainsOldRecordWithoutGrantingCurrentMastery": true,
+      "rejectsOldVersionDraft": true,
+      "currentScoreAndEvidenceUnlockNext": true,
+      "evidenceDeletionRelocksNext": true,
+      "p01SpeakCheckboxAbsent": true,
+      "p02SpeakCheckboxRequired": true
+    },
+    "initialFailures": [
+      "First progression run after adding B2.1 helper bullets matched 15 bullet lines instead of 5 model sentences because the legacy slice split from heading 2 to heading 3; scoped the slice to stop before ### مساعدة قبل النصوص والمهمات and updated DL-B2-01-AUD-MODEL-01 source_line accordingly. All five Node suites then passed.",
+      "Initial browser command failed with MODULE_NOT_FOUND for playwright after container reset; restored npm ci --ignore-scripts and @sparticuz/chromium@143.0.4. On the first browser loop, forms_keyboard passed 1440px and hit the known intermittent 30000ms filechooser timeout at 390px; re-running forms_keyboard and narrow_layout immediately passed without modifying tools/test_forms_keyboard.cjs."
+    ]
+  },
+  "campaign": {
+    "review": "CR43",
+    "reviewedLessons": 42,
+    "totalLessons": 53,
+    "gateSeparate": true,
+    "remainingLessons": 11,
+    "planVersion": "2.49",
+    "next": "CR44/B2.2 — المسار المهني والتواصل الرسمي وKonjunktiv I"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "db74c45b218cd8c795bdd1edda3201d9b10ccfa8",
+    "implementationPushed": true,
+    "implementationHeadOriginMatched": true,
+    "pr": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "queriedAtHead": "db74c45b218cd8c795bdd1edda3201d9b10ccfa8"
+    },
+    "implementationDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "reportPushed": false,
+    "remoteUIReviewed": false,
+    "productionReviewed": false
+  },
+  "limits": [
+    "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
+    "9 مراجع مقروءة بالكامل ومرجع واحد (Lingolia Commas) قُرئ منه الجزآن 0 و1 من 4 فقط؛ واستُبعد رابط Duden واحد أعاد 404. المراجع المعجمية المباشرة تخص الألفاظ المسماة (Priorität وAblenkung وUnterbrechung وÜberblick وNotiz وbündeln وbewältigen وpriorisieren وabschalten) لا كل كلمة في الجدول.",
+    "خمسة أصول/12 مقطعًا معلقة ومحفوظة بأصوات Hana (voice-02) وKarim (voice-03) والسرد (voice-02) والاستماع (voice-03)؛ فحص MP3 والتشغيل الآلي الصامت ومطابقة التفريغ ليست استماعًا أو اعتمادًا صوتيًا.",
+    "الحد الأدنى للحروف (160/190) والإقرارات الذاتية والجهر في P02 لا تصحح عدد الجمل أو القواعد أو النطق آليًا.",
+    "185 حالة axe وصفر مخالفات للقواعد المختارة، مع 132 ظهورًا غير حاسم تشمل 324 ظهورًا لعقد؛ ليست مخالفات مؤكدة ولا شهادة وصول شاملة.",
+    "فحوص 320×900 و568×320 و1440×900 و390×844 تتم عبر CSS viewports في Chromium وليست هواتف فعلية أو تكبير متصفح أصليًا؛ تحديث v42 إلى v92 fixture محدد وليس كل مسار تاريخي. حدث التذبذب التاريخي المعروف لمحدد الملفات الأصلي في 390px مرة واحدة ثم نجح عند الإعادة دون تعديل ملف الاختبار.",
+    "نشر التنفيذ db74c45 فشل في Vercel بسبب حد النشر اليومي (Deployment rate limited — retry in 24 hours.) وdeployments=[]؛ لا إعادة نشر آلية ولا شراء ترقية، ولم تختبر الواجهة البعيدة أو Production، وPR#1 غير مدمجة."
+  ]
+}
