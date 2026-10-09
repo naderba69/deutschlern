@@ -284,6 +284,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.1-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.1-practical-form-fixture', width);
+  // CR44: written career counseling summary and spoken colleague briefing, pending audio.
+  await page.evaluate(() => openLesson('b2-02-career-formal-communication-konjunktiv1'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B2.2-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.2-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

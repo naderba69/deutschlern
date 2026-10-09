@@ -1566,6 +1566,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.1 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR44: written career counseling summary and spoken colleague briefing; B2.2 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-02-career-formal-communication-konjunktiv1').assessment.version, 'b2-02-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-02-career-formal-communication-konjunktiv1');
+    const responses = ["Die Beraterin erklärt, meine Bewerbung sei klar strukturiert und passe gut zum Anforderungsprofil der Stelle. Sie fügt hinzu, ich habe viel Berufserfahrung in der Kundenbetreuung, solle aber im Lebenslauf zwei konkrete Projektergebnisse ergänzen. Der Coach meint, ein kurzes Anschreiben könne meinen Wechselwunsch verständlich erläutern. Die Kolleginnen sagen außerdem, sie hätten mit einer klaren Übersicht über ihre Zuständigkeiten gute Erfahrungen gemacht. Aus meiner Sicht ist dieser Hinweis sehr hilfreich, deshalb überarbeite ich heute meinen Lebenslauf Schritt für Schritt.", "Laut dem Coach im Seminar müsse ein berufliches Ziel konkret formuliert werden. Er erklärt außerdem, der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen. Eine Teilnehmerin berichtet, sie habe im letzten Jahr ein kleines Team koordiniert, und laut dem Coach zeige dieses Beispiel ihre Organisationsfähigkeit. Schließlich fügt der Coach hinzu, ein Anschreiben könne die Motivation kurz erläutern. Ich empfehle der Bewerberin als nächsten Schritt, zwei konkrete Projektergebnisse im Lebenslauf zu ergänzen und das Anschreiben kurz zu überarbeiten."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich arbeite.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.2 models fit thresholds; counseling summary is writing only, colleague briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-02-career-formal-communication-konjunktiv1').performanceTasks[1]], 'lesson:b2-02-career-formal-communication-konjunktiv1', 'b2-02-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-02-career-formal-communication-konjunktiv1').performanceTasks[0]], 'lesson:b2-02-career-formal-communication-konjunktiv1', 'b2-02-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-02-career-formal-communication-konjunktiv1');
+      const next=findLesson('b2-03-consumption-environment-passive-modal');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-02-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-02-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-02-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-02-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.2 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2856,7 +2890,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2CareerQuestionSources = new Set(b2CareerAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b2CareerQuestionSources.has(`DL-B2-02-T0${task}`), `B2.2 quiz must cover source task T0${task}`);
   assert.ok(b2CareerAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-02-G01")), "all B2.2 questions must map to the lesson objective");
-  assert.ok(b2CareerAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-02-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B2.2 performance tasks must map to T08 and offer written/oral self-checks without recording");
+  assert.ok(b2CareerAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-02-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), "B2.2 performance tasks must map to T08 and remain independent of audio files");
+  assert.deepEqual(b2CareerAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
   assert.ok(b2CareerAssessment.performanceTasks.every((task) => /أربع إلى ست جمل/.test(task.prompt) && /Konjunktiv I/.test(task.criteria?.targetSkill) && task.selfCheck?.requiredChecks?.length === 3 && task.selfCheck?.minimumResponseCharacters >= 160), "B2.2 tasks must have explicit sentence/form criteria and local self-check thresholds");
   assert.deepEqual(b2CareerAssessment.performanceTasks.find((task) => task.id === "DL-B2-02-P02").sourceTaskIds, ["DL-B2-02-T06", "DL-B2-02-T08"], "B2.2 P02 must link the written listening script and T08 summary");
   assert.deepEqual(b2CareerAssessment.performanceTasks.find((task) => task.id === "DL-B2-02-P01").sourceTaskIds, ["DL-B2-02-T08"], "B2.2 P01 must link directly to T08");
@@ -2869,7 +2904,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.deepEqual(careerAssets.map((asset) => asset.sectionHeading), careerHeadings);
   for (const term of ["Der Berufsweg, die Berufswege", "Der Werdegang, die Werdegänge", "Die Qualifikation, die Qualifikationen", "Die Berufserfahrung", "Das Anforderungsprofil, die Anforderungsprofile", "Die Stellenausschreibung, die Stellenausschreibungen", "Die Führungskraft, die Führungskräfte", "Die Weiterentwicklung, die Weiterentwicklungen", "Die Zuständigkeit, die Zuständigkeiten", "Die Empfehlung, die Empfehlungen", "Anstreben, strebt an", "Sich beruflich orientieren, orientiert sich", "Vereinbaren, vereinbart", "Übernehmen, übernimmt", "Strukturiert", "Ausführlich"]) assert.ok(careerAssets[0].segments[0].text.includes(term), `B2.2 vocabulary must include ${term}`);
   for (const index of [0, 1, 3]) assert.equal(careerAssets[index].segments[0].voiceId, "voice-02");
-  const careerModelsSection = b2CareerSource.split("## " + careerHeadings[1])[1].split("## " + careerHeadings[2])[0];
+  const careerModelsSection = b2CareerSource.split("## " + careerHeadings[1])[1].split("### مساعدة قبل النصوص والمهمات")[0];
   const careerModels = [...careerModelsSection.matchAll(/\*\*([^*]+)\*\*/g)].map((match) => match[1]).filter((text) => /^(Der Coach|Die Beraterin|Der Mentor|Sie sagen)/.test(text)).map((text) => text.replace(" → ", " "));
   assert.equal(careerModels.length, 9, "source models include six direct/reported examples, two dass contrasts and the plural contrast");
   assert.equal(careerAssets[1].segments[0].text, careerModels.join(" "), "B2.2 model words must match the source, omitting only the comparison arrow");
@@ -2923,7 +2958,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2CareerSource, /اكتب النص ثم اقرأه بصوت واضح/);
   assert.match(b2CareerSource, /لا يلزم تسجيل/);
   assert.match(b2CareerSource, /Konjunktiv II.*عند الحاجة/);
-  const b2CareerRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[1].performanceTasks, 'lesson:b2-02-career-formal-communication-konjunktiv1', 'b2-02-v1')", context);
+  const b2CareerRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[1].performanceTasks, 'lesson:b2-02-career-formal-communication-konjunktiv1', 'b2-02-v2')", context);
   assert.match(b2CareerRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2CareerRubricHtml, /Konjunktiv I/);
   assert.match(b2CareerRubricHtml, /مصدر/);
