@@ -18,14 +18,14 @@ assert [z['voiceId'] for x in assets for z in x['segments']]==['voice-02','voice
 if '--implementation-only' in sys.argv:
  print('PASS B2.5 implementation-only: b2-05-v3, 41 exercise subitems, 10 model parts, 5 pending assets/10 clips.');sys.exit(0)
 r=json.load(open('data/reviews/b2-05-review.json'));md=Path('data/reviews/b2-05-review.md').read_text();U=r['units']
-assert r['lessonId']=='b2-05-health-fitness-medical-information' and r['assessmentVersion']=='b2-05-v3' and r['unitCount']==len(U)==101 and r['exerciseSubItemCount']==41 and r['modelPartCount']==10 and not r['acousticReviewed'] and not r['cefrCertification']
-assert len(r['sources'])==14 and sum(x['access']=='full_fetched_page' for x in r['sources'])==14 and len(r['excludedSources'])==2
+assert r['lessonId']=='b2-05-health-fitness-medical-information' and r['assessmentVersion']=='b2-05-v3' and r['unitCount']==len(U)==100 and r['exerciseSubItemCount']==41 and r['modelPartCount']==10 and not r['acousticReviewed'] and not r['cefrCertification']
+assert len(r['sources'])==16 and sum(x['access']=='full_fetched_page' for x in r['sources'])==16 and len(r['excludedSources'])==2
 assert sum(len(u.get('items',[])) for u in U if u['id'].startswith('DL-B2-05-T'))==41
 assert sum(len(u.get('items',[])) for u in U if u['id'].endswith('model-01'))==10
-assert [len(u['items']) for u in U if '-AUD-' in u['id']]==[19,9,6,8,5]
+assert [len(u['items']) for u in U if '-AUD-' in u['id']]==[18,10,6,8,5]
 assert sum(len(u.get('optionReview',[])) for u in U if u['id'].startswith('DL-B2-05-Q'))==30
 assert sum(len(u.get('criterionReview',[])) for u in U if u['id'].startswith('DL-B2-05-P'))==6
 for f,h in r['sourceHashes'].items():assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==h,f
 for x in assets:assert hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True).encode()).hexdigest()==r['audioSnapshotHashes'][x['assetId']]
 for u in U:assert f"### {u['id']}" in md and u['finding'] in md,u['id']
-print('PASS B2.5: 101 units/41 exercise subitems/10 model parts/30 options/6 criteria; five pending assets/10 clips. Not language/acoustic certification.')
+print('PASS B2.5: 100 units/41 exercise subitems/10 model parts/30 options/6 criteria; five pending assets/10 clips. Not language/acoustic certification.')

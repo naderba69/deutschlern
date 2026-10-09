@@ -13,10 +13,7 @@
   "cefrCertification": false,
   "sourceHashes": {
     "content/B2/lesson-04-cities-housing-participles.md": "f02bb7df9071a2eebc5a360f0c0e27222dba28b838e004111c981cebebdb317f",
-    "content/B2/lesson-04-cities-housing-participles.assessment.json": "fd936a3b65d26e3ecb6801e6709d3a1c7fb9e47bc4f8bda2959a3a2ee2b1d4ea",
-    "data/audio-playlists.json": "cdddb6bc0b946f71be7970ec5294f37978ac2414db2a087d88c8c7fb70cce1b9",
-    "data/production-task-catalog.csv": "faec1fec495445c7a7853b417f149ebc53bde3f62d4cfb5859a9bacaf2362ef3",
-    "data/audio-asset-register.csv": "d3f98be3fed906264874d13e808a28c2667c131a4b3a58484cda667e1fca222f"
+    "content/B2/lesson-04-cities-housing-participles.assessment.json": "fd936a3b65d26e3ecb6801e6709d3a1c7fb9e47bc4f8bda2959a3a2ee2b1d4ea"
   },
   "audioSnapshotHashes": {
     "DL-B2-04-AUD-PHR-01": "4d86d12b353ccf2a0c5921b7633fcb99e467c0dc9b42fc0d884bb9a51769e074",
