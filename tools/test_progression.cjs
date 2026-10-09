@@ -1770,6 +1770,55 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.7 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR50: written fictional food-data experiment and spoken T05/T06 table briefing; B2.8 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-08-food-nutrition-data-passives').assessment.version, 'b2-08-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-08-food-nutrition-data-passives');
+    const responses = ["In unserer Lehrküche werden heute drei fiktive Proben für eine Sprachübung vorbereitet. Zuerst werden alle Zutaten genau abgewogen und jede Probe wird deutlich gekennzeichnet. Danach werden der Zuckergehalt und der Anteil an Ballaststoffen pro Portion in eine Tabelle eingetragen. Jetzt sind die Zutaten abgewogen und die Tabelle ist vollständig geprüft. Diese fiktiven Nährwerte dienen nur dem Sprachtraining und sind keine persönliche Ernährungsempfehlung.", "In der fiktiven Tabelle aus der Leseübung hat Mischung B je 100 Gramm einen Zuckergehalt von 11 Gramm und 4 Gramm Ballaststoffe, während Mischung A 8 Gramm Zucker und 6 Gramm Ballaststoffe enthält. Vor der Eingabe werden die Zutaten in der Lehrküche abgewogen und die Proben werden einzeln gekennzeichnet. Anschließend werden die Messwerte je 100 Gramm erfasst und in die Tabelle eingetragen. Nach der Kontrolle ist die Tabelle geprüft und für unsere Sprachübung freigegeben, aber die weiteren Ergebnisse sind noch nicht ausgewertet. Alle Zahlen in dieser Übersicht sind rein fiktiv für das Sprachtraining und liefern keine persönliche Gesundheits- oder Ernährungsempfehlung."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ein Test.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.8 models fit thresholds; experiment description is writing only, table briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-08-food-nutrition-data-passives').performanceTasks[1]], 'lesson:b2-08-food-nutrition-data-passives', 'b2-08-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-08-food-nutrition-data-passives').performanceTasks[0]], 'lesson:b2-08-food-nutrition-data-passives', 'b2-08-v2')`,context), /data-performance-spoken/);
+
+  // CR51: written fictional company/campaign profile and spoken T05/T06 Nordwerk briefing; B2.9 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-09-business-marketing-employment-prepositions').assessment.version, 'b2-09-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-09-business-marketing-employment-prepositions');
+    const responses = ["Das fiktive Unternehmen „Südtechnik“ spezialisiert sich auf wartungsfreundliche Haushaltsgeräte und richtet sich mit einer neuen Kampagne an technische Fachkräfte. Worauf legt die Personalabteilung in der neuen Stellenanzeige besonderen Wert? Sie legt großen Wert darauf, dass die Arbeitsbedingungen und die Aufgaben im Team transparent beschrieben werden. Die Kampagne wirbt außerdem damit, dass neue Mitarbeitende in den ersten Wochen systematisch eingearbeitet werden. Ob sich viele passende Fachkräfte bewerben, hängt davon ab, ob die Zielgruppe das fiktive Angebot klar und glaubwürdig findet, denn ein Erfolg ist nicht garantiert.", "In der fiktiven Leseübung bietet das erfundene Unternehmen „Nordwerk“ Reparaturdienste und Ausbildungsplätze an und richtet sich an Menschen, die Geräte länger nutzen möchten, sowie an technische Fachkräfte. Worauf legt „Nordwerk“ in der Kampagne Wert, und womit wirbt das Unternehmen? Es legt Wert darauf, dass Aufgaben, Arbeitszeiten und Auswahlverfahren klar erklärt werden, und wirbt damit, dass neue Mitarbeitende eine strukturierte Einarbeitung erhalten. Im Hörtext erklärt die Personalchefin außerdem, dass die Auswahl bei Bewerbungen nicht nur von einem Zeugnis abhängt, sondern auch davon, ob eine Bewerberin praktische Erfahrung mit konkreten Beispielen aus der Praxis belegen kann. Ob die fiktive Kampagne erfolgreich ist, hängt davon ab, ob die Zielgruppe alle Informationen verständlich findet; ein garantierter Erfolg wird im Text ausdrücklich nicht versprochen."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Eine Firma.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.9 models fit thresholds; company profile is writing only, Nordwerk briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-09-business-marketing-employment-prepositions').performanceTasks[1]], 'lesson:b2-09-business-marketing-employment-prepositions', 'b2-09-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-09-business-marketing-employment-prepositions').performanceTasks[0]], 'lesson:b2-09-business-marketing-employment-prepositions', 'b2-09-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-09-business-marketing-employment-prepositions');
+      const next=findLesson('b2-10-wishes-probabilities-technology-konjunktiv2-past');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-09-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-09-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-09-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-09-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.9 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -3704,7 +3753,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2MarketingAssessment = b2Lessons[8];
   assert.equal(b2MarketingAssessment.id, "b2-09-business-marketing-employment-prepositions", "B2.9 must stay in its source order");
   assert.equal(b2MarketingAssessment.assessment?.status, "ready", "B2.9 must have a ready local assessment");
-  assert.equal(b2MarketingAssessment.assessment?.version, "b2-09-v1", "B2.9 must use its stable assessment version");
+  assert.equal(b2MarketingAssessment.assessment?.version, "b2-09-v2", "B2.9 must use its stable assessment version");
   assert.equal(b2MarketingAssessment.assessment?.minimumScore, 80, "B2.9 must retain the 80 percent mastery threshold");
   assert.equal(b2MarketingAssessment.assessment?.minimumItems, 10, "B2.9 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[8])", context), true, "B2.9 must pass the app's full local assessment-readiness check");
@@ -3715,10 +3764,19 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.ok(b2MarketingAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-09-G01")), "all B2.9 questions must map to the lesson objective");
   assert.deepEqual([0, 1, 2].map((position) => b2MarketingAssessment.quiz.filter((question) => question.answerIndex === position).length), [3, 4, 3], "B2.9 correct answers must be distributed 3/4/3 across the three options");
   assert.equal(b2MarketingAssessment.performanceTasks?.length, 2, "B2.9 must include two practical self-check tasks");
-  assert.ok(b2MarketingAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.9 tasks must offer visible written/oral local self-checks without recording");
-  assert.ok(b2MarketingAssessment.performanceTasks.every((task) => /fünf|خمس جمل/.test(task.prompt) && /wo\(r\)/.test(task.prompt) && /da\(r\)/.test(task.prompt) && /شفهيًا/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.9 tasks must state five-sentence output, the target pronouns, and the solo read-aloud option");
-  assert.deepEqual(b2MarketingAssessment.performanceTasks.find((task) => task.id === "DL-B2-09-P01").sourceTaskIds, ["DL-B2-09-T08"], "B2.9 P01 must link directly to T08");
-  assert.deepEqual(b2MarketingAssessment.performanceTasks.find((task) => task.id === "DL-B2-09-P02").sourceTaskIds, ["DL-B2-09-T05", "DL-B2-09-T06", "DL-B2-09-T07", "DL-B2-09-T08"], "B2.9 P02 must link the source reading, written listening transcript, transformation, and T08");
+  assert.ok(b2MarketingAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.9 tasks must offer visible local self-checks without recording");
+  const marketingP01 = b2MarketingAssessment.performanceTasks.find((task) => task.id === "DL-B2-09-P01");
+  const marketingP02 = b2MarketingAssessment.performanceTasks.find((task) => task.id === "DL-B2-09-P02");
+  assert.deepEqual(marketingP01.modality, ["writing"], "B2.9 P01 must be a writing-only task");
+  assert.equal(marketingP01.selfCheck?.speakAloud, false, "B2.9 P01 must not require speaking aloud");
+  assert.equal(marketingP01.selfCheck?.minimumResponseCharacters, 150, "B2.9 P01 must retain its 150-character floor");
+  assert.deepEqual(marketingP02.modality, ["writing", "speaking"], "B2.9 P02 must combine writing and speaking");
+  assert.equal(marketingP02.selfCheck?.speakAloud, true, "B2.9 P02 must require speaking aloud");
+  assert.equal(marketingP02.selfCheck?.minimumResponseCharacters, 180, "B2.9 P02 must retain its 180-character floor");
+  assert.ok(b2MarketingAssessment.performanceTasks.every((task) => /5 إلى 6 جمل/.test(task.prompt) && /wo\(r\)/.test(task.prompt) && /da\(r\)/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.9 tasks must state 5-6 sentence output and the target pronouns");
+  assert.match(marketingP02.prompt, /بصوت مسموع/, "B2.9 P02 must include the solo read-aloud instruction");
+  assert.deepEqual(marketingP01.sourceTaskIds, ["DL-B2-09-T08"], "B2.9 P01 must link directly to T08");
+  assert.deepEqual(marketingP02.sourceTaskIds, ["DL-B2-09-T05", "DL-B2-09-T06", "DL-B2-09-T07", "DL-B2-09-T08"], "B2.9 P02 must link the source reading, written listening transcript, transformation, and T08");
   const marketingAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2MarketingAssessment.id);
   assert.equal(marketingAssets.length, 5);
   assert.equal(marketingAssets.reduce((n, asset) => n + asset.segments.length, 0), 12);
@@ -3787,11 +3845,25 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   }
   assert.doesNotMatch(marketingLayout.contentHtml, /data-audio-id="DL-B2-0[12345678]-/);
   assert.ok(b2MarketingAssessment.performanceTasks.every((task) => task.selfCheck?.audioRequired === false), "B2.9 assessment remains independent of optional audio");
-  assert.match(b2MarketingSource, /أو حضّر نبذة من خمس جمل وقدّمها شفهيًا/);
+  assert.equal(vm.runInContext(`(() => {
+    const lesson = getLessonsInLevel('B2')[8];
+    const prior = state.completedLessons[lesson.id];
+    try {
+      state.completedLessons[lesson.id] = { score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true, assessmentVersion: 'b2-09-v1' };
+      return isLessonMastered(lesson);
+    } finally {
+      if (prior === undefined) delete state.completedLessons[lesson.id];
+      else state.completedLessons[lesson.id] = prior;
+    }
+  })()`, context), false, "updated B2.9 assessment must reject stale v1 mastery");
+  assert.match(b2MarketingSource, /الجزء \(أ\) — المهمة الكتابية الأساسية \(`DL-B2-09-P01`/);
+  assert.match(b2MarketingSource, /الجزء \(ب\) — المهمة التراكمية المتكاملة \(`DL-B2-09-P02`/);
+  assert.match(b2MarketingSource, /## 8\) نماذج مكتوبة للمهمات العملية/);
+  assert.match(b2MarketingSource, /## 9\) بطاقات مراجعة/);
   assert.match(b2MarketingSource, /wo\(r\) \+ Präposition.*da\(r\) \+ Präposition/);
   assert.match(b2MarketingSource, /اقرأها بصوت مسموع لنفسك/);
   assert.match(b2MarketingSource, /لا يلزم تسجيلها أو إرسال صوت/);
-  const b2MarketingRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[8].performanceTasks, 'lesson:b2-09-business-marketing-employment-prepositions', 'b2-09-v1')", context);
+  const b2MarketingRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[8].performanceTasks, 'lesson:b2-09-business-marketing-employment-prepositions', 'b2-09-v2')", context);
   assert.match(b2MarketingRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2MarketingRubricHtml, /wo\(r\)-/);
   assert.match(b2MarketingRubricHtml, /da\(r\)-/);

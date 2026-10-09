@@ -326,6 +326,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.8-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.8-practical-form-fixture', width);
+  // CR51: written fictional company/campaign profile and spoken T05/T06 Nordwerk briefing, pending audio.
+  await page.evaluate(() => openLesson('b2-09-business-marketing-employment-prepositions'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B2.9-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.9-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
