@@ -1,0 +1,663 @@
+{
+  "batchId": "CR56",
+  "lessonId": "catalog-accessibility-audit",
+  "assessmentVersion": "catalog-a11y-v1",
+  "reviewedAt": "2026-10-09",
+  "reviewScope": "Complete CR56 cumulative task-catalog, audio-register, RTL/LTR form directionality, scroll-to-top transition, and 53/53 lesson + A0 gate accessibility audit synchronization",
+  "unitCount": 42,
+  "catalogRowCount": 1080,
+  "audioRegisterRowCount": 217,
+  "a11yScreenStateCount": 231,
+  "a11yViolationCount": 0,
+  "a11yIncompleteRuleCount": 169,
+  "a11yIncompleteNodeCount": 460,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "W3C Internationalization — Structural markup and right-to-left text in HTML (dir='rtl' and dir='auto' on form controls and textareas)",
+      "url": "https://www.w3.org/International/questions/qa-html-dir",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "totalChunks": 4,
+      "takeaway": "Confirms that in an RTL HTML document (<html lang='ar' dir='rtl'>), setting dir='auto' on form inputs and multi-paragraph <textarea> elements assigns paragraph base direction per first strong character so German LTR sentences and Arabic RTL text align and punctuate accurately."
+    },
+    {
+      "id": "S2",
+      "title": "W3C WAI — Understanding WCAG 2.1 Success Criterion 1.4.10: Reflow (Level AA, 320 CSS px)",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/reflow.html",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "totalChunks": 6,
+      "takeaway": "Verifies WCAG 2.1 SC 1.4.10 Reflow at 320 CSS pixels width and 256 CSS pixels height, including scrollable data-table region exceptions (.lesson-table-wrap) and single-column responsive reflow without horizontal document overflow."
+    },
+    {
+      "id": "S3",
+      "title": "W3C WAI — Understanding WCAG 2.1 Success Criterion 1.4.3: Contrast (Minimum) (Level AA)",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "totalChunks": 5,
+      "takeaway": "Verifies WCAG 2.1 SC 1.4.3 minimum luminance contrast ratios (4.5:1 normal text, 3:1 large text) and explains why automated tools report incomplete checks when background gradients or scrollable bordered form controls require manual verification."
+    },
+    {
+      "id": "S4",
+      "title": "W3C WAI — Understanding WCAG 2.1 Success Criterion 2.1.1: Keyboard (Level A)",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "takeaway": "Verifies WCAG 2.1 SC 2.1.1 keyboard operability across native HTML form controls, buttons, dialogs, and scrollable regions."
+    },
+    {
+      "id": "S5",
+      "title": "W3C WAI — Understanding WCAG 2.1 Success Criterion 2.4.3: Focus Order (Level A)",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "takeaway": "Verifies WCAG 2.1 SC 2.4.3 sequential focus navigation, modal sidebar focus trapping/inert background, and scroll/focus continuity across view transitions."
+    },
+    {
+      "id": "S6",
+      "title": "Lingolia — Passive Voice in German Grammar (Vorgangspassiv, Zustandspassiv, and Passive with Modal Verbs)",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "takeaway": "Confirms German passive with modal verbs (Modalverb + Partizip II + werden) for B2.3 exercise 2 heading synchronization (DL-B2-03-T02)."
+    },
+    {
+      "id": "S7",
+      "title": "Lingolia — Modal Verbs in German Grammar (müssen, können, möchten)",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/modal-verbs",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms modal verb conjugation and sentence-final infinitive placement across A1.5, A1.8, and A1.9 audio-register section headings."
+    },
+    {
+      "id": "S8",
+      "title": "Lingolia — Separable and Inseparable Verbs in German Grammar (Trennbare Verben)",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/separable-verbs",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms separable verb syntax and Partizip II formation across A1.4 and A1.6 audio-register section headings."
+    },
+    {
+      "id": "S9",
+      "title": "Lingolia — Perfekt (Perfect Tense in German Grammar)",
+      "url": "https://deutsch.lingolia.com/en/grammar/tenses/present-perfect",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms Perfekt auxiliary selection (haben/sein) and Partizip II formation for A1.6 audio-register synchronization."
+    },
+    {
+      "id": "S10",
+      "title": "Duden — Partizip (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Partizip",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms terminology for Partizip II (Mittelwort der Vergangenheit) in DL-B2-03-T02."
+    },
+    {
+      "id": "S11",
+      "title": "Duden — Modalverb (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Modalverb",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms terminology and grammar of German Modalverben in DL-B2-03-T02."
+    },
+    {
+      "id": "S12",
+      "title": "Duden — Passiv (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Passiv",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms terminology for das Passiv (Leideform) in DL-B2-03-T02."
+    },
+    {
+      "id": "S13",
+      "title": "Duden — Dialog (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Dialog",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms Dialog terminology for dialogue section headings in A0.2, A0.3, A0.5, A1.3, A1.7, A1.8, and A1.9."
+    },
+    {
+      "id": "S14",
+      "title": "Duden — Übung (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Uebung",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms Übung (practice exercise) vs. scored assessment item distinction for DL-A0-03-T05."
+    },
+    {
+      "id": "S15",
+      "title": "Duden — Aufgabe (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Aufgabe",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms Aufgabe terminology for performance tasks and DL-B2-11-P02 source exercise links."
+    },
+    {
+      "id": "S16",
+      "title": "Duden — Substantivierung (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/Substantivierung",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms Substantivierung / nominalization scope for B2.11 exercises 5–8 linked to DL-B2-11-P02."
+    },
+    {
+      "id": "S17",
+      "title": "Duden — trennbar (Rechtschreibung, Bedeutung, Grammatik)",
+      "url": "https://www.duden.de/rechtschreibung/trennbar",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Confirms trennbar terminology for A1.4 separable verbs."
+    },
+    {
+      "id": "S18",
+      "title": "Web search — W3C WCAG 2.1 Contrast Minimum, Reflow, and Keyboard specifications",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/",
+      "access": "search_snippet_only",
+      "query": "site:w3.org/TR/WCAG21 Contrast Minimum Reflow Keyboard",
+      "takeaway": "Used only to locate official W3C WAI Understanding WCAG 2.1 pages before full page fetches."
+    },
+    {
+      "id": "S19",
+      "title": "Web search — W3C Internationalization HTML dir='rtl' and dir='auto' guidance",
+      "url": "https://www.w3.org/International/questions/qa-html-dir",
+      "access": "search_snippet_only",
+      "query": "site:w3.org/International/questions/qa-html-dir rtl dir auto",
+      "takeaway": "Used only to locate W3C Internationalization article qa-html-dir before full 4-chunk fetch."
+    },
+    {
+      "id": "S20",
+      "title": "Web search — Duden entries for Passiv, Modalverb, Partizip, Dialog, and Übung",
+      "url": "https://www.duden.de/rechtschreibung/Partizip",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Passiv Modalverb Partizip Dialog Uebung",
+      "takeaway": "Used only to locate exact Duden headword URLs before full page fetches."
+    }
+  ],
+  "excludedSources": [],
+  "sourceHashes": {
+    "data/production-task-catalog.csv": "dc799875960b6e3d89471ea3ab89734462a438d710b33ddab8cdb034a40f7528",
+    "data/audio-asset-register.csv": "a4ce9391bcb4bc0cdf43735e40e250e70ed4dfbbb5493ad2982dcfa908314f42",
+    "tools/verify_course.py": "1139bcd70f4d0c1504fd55303a50bfafa20e0e3e6d78bd7c092fdc2839082564",
+    "app.js": "40cb1a9db0a515423e46261a7e7d3595aaa54ae9b34abe4dbbc6928c364bff55",
+    "service-worker.js": "6373830599f437d23f6f4f8dabfcf6ea64e988278a1348f2f85e0694c357d3e9",
+    "tools/test_accessibility_audit.cjs": "b86b93b8168d9c9e9fb9272f9845127d3450e044b531169592aaa0800a7f6493",
+    "tools/test_forms_keyboard.cjs": "1964d30a5cba4d4abbabe840157e42a810fd4cc71cb02e8c397cef50b6e53140"
+  },
+  "units": [
+    {
+      "id": "DL-A0-03-T05",
+      "kind": "catalog-task-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14",
+        "S15"
+      ],
+      "finding": "Updated DL-A0-03-T05 status in data/production-task-catalog.csv from 'catalogued; not yet structured for app scoring' to 'catalogued; source practice, not independently scored' so all 4 unscored A0 formative dialogue/reading exercises share consistent status metadata."
+    },
+    {
+      "id": "DL-B2-03-T02",
+      "kind": "catalog-task-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S6",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "Synchronized DL-B2-03-T02 source_heading in data/production-task-catalog.csv to '### تمرين 2 — أكمل الفعل الناقص أو اسم المفعول بصيغة المبني للمجهول' to match line 106 of content/B2/lesson-03-consumption-environment-passive-modal.md."
+    },
+    {
+      "id": "DL-B2-11-P02",
+      "kind": "catalog-task-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S15",
+        "S16"
+      ],
+      "finding": "Synchronized DL-B2-11-P02 source_exercise_number in data/production-task-catalog.csv from '5;6;8' to '5;6;7;8' to match sourceTaskIds ['DL-B2-11-T05', 'DL-B2-11-T06', 'DL-B2-11-T07', 'DL-B2-11-T08'] in content/B2/lesson-11-humans-nature-environment-nominalization.assessment.json."
+    },
+    {
+      "id": "DL-A0-01-AUD-PHON-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A0-01-AUD-PHON-01 in data/audio-asset-register.csv to source_line='44;57' and source_heading='## 2) أنماط مفيدة في القراءة; ## 3) أمثلة للنطق والتهجئة' in content/A0/lesson-01-alphabet.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-01-AUD-WORDS-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14",
+        "S15"
+      ],
+      "finding": "Synchronized DL-A0-01-AUD-WORDS-01 in data/audio-asset-register.csv to source_line='94;103' and source_heading='### تمرين 5 — قراءة كلمات; ### تمرين 6 — كتابة من الذاكرة (دون تسجيل صوتي)' in content/A0/lesson-01-alphabet.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-02-AUD-PHR-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13",
+        "S14"
+      ],
+      "finding": "Synchronized DL-A0-02-AUD-PHR-01 in data/audio-asset-register.csv to source_line='7;22;57' and source_heading='## 1) عبارات أساسية; ## 2) اسمي واسمك; ## 4) كيف تسأل عن الحال؟' in content/A0/lesson-02-greetings.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-02-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13"
+      ],
+      "finding": "Synchronized DL-A0-02-AUD-DLG-01 in data/audio-asset-register.csv to source_line='41' and source_heading='## 3) حوار أصلي' in content/A0/lesson-02-greetings.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-02-AUD-DLG-02",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13"
+      ],
+      "finding": "Synchronized DL-A0-02-AUD-DLG-02 in data/audio-asset-register.csv to source_line='41' and source_heading='## 3) حوار أصلي' in content/A0/lesson-02-greetings.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-03-AUD-NUM-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A0-03-AUD-NUM-01 in data/audio-asset-register.csv to source_line='7;25;31' and source_heading='## 1) الأعداد الأساسية من 0 إلى 20; ### توسعة اختيارية: العشرات والأعداد المركبة; ## 2) بيانات شخصية' in content/A0/lesson-03-numbers-personal-info.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-03-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13"
+      ],
+      "finding": "Synchronized DL-A0-03-AUD-DLG-01 in data/audio-asset-register.csv to source_line='53' and source_heading='## 3) حوار أصلي' in content/A0/lesson-03-numbers-personal-info.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-04-AUD-MODEL-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A0-04-AUD-MODEL-01 in data/audio-asset-register.csv to source_line='68' and source_heading='## 5) أمثلة أصلية' in content/A0/lesson-04-first-sentences.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A0-05-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13"
+      ],
+      "finding": "Synchronized DL-A0-05-AUD-DLG-01 in data/audio-asset-register.csv to source_line='36' and source_heading='## 3) حوار أصلي' in content/A0/lesson-05-classroom-phrases.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-01-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-01-AUD-READ-01 in data/audio-asset-register.csv to source_line='111' and source_heading='## 4) نص قراءة أصلي' in content/A1/lesson-01-introductions-languages-hobbies.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-01-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-01-AUD-LST-01 in data/audio-asset-register.csv to source_line='125' and source_heading='## 5) نص الاستماع — التسجيل موجود' in content/A1/lesson-01-introductions-languages-hobbies.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-02-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-02-AUD-READ-01 in data/audio-asset-register.csv to source_line='104' and source_heading='## 5) نص قراءة أصلي' in content/A1/lesson-02-work-family.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-02-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-02-AUD-LST-01 in data/audio-asset-register.csv to source_line='116' and source_heading='## 6) نص الاستماع — التسجيل موجود' in content/A1/lesson-02-work-family.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-03-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13"
+      ],
+      "finding": "Synchronized DL-A1-03-AUD-DLG-01 in data/audio-asset-register.csv to source_line='84' and source_heading='## 4) حوار أصلي في مقهى' in content/A1/lesson-03-city-cafe-hotel.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-03-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-03-AUD-READ-01 in data/audio-asset-register.csv to source_line='100' and source_heading='## 5) نص قراءة أصلي' in content/A1/lesson-03-city-cafe-hotel.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-03-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-03-AUD-LST-01 in data/audio-asset-register.csv to source_line='113' and source_heading='## 6) نص الاستماع — التسجيل موجود' in content/A1/lesson-03-city-cafe-hotel.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-04-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S8",
+        "S17"
+      ],
+      "finding": "Synchronized DL-A1-04-AUD-READ-01 in data/audio-asset-register.csv to source_line='95' and source_heading='## 4) نص قراءة أصلي' in content/A1/lesson-04-daily-routine-time.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-04-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S8",
+        "S17"
+      ],
+      "finding": "Synchronized DL-A1-04-AUD-LST-01 in data/audio-asset-register.csv to source_line='109' and source_heading='## 5) نص استماع — التسجيل موجود' in content/A1/lesson-04-daily-routine-time.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-05-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7"
+      ],
+      "finding": "Synchronized DL-A1-05-AUD-READ-01 in data/audio-asset-register.csv to source_line='94' and source_heading='## 4) نص قراءة أصلي' in content/A1/lesson-05-food-drink.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-05-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7"
+      ],
+      "finding": "Synchronized DL-A1-05-AUD-LST-01 in data/audio-asset-register.csv to source_line='108' and source_heading='## 5) نص الاستماع — التسجيل موجود' in content/A1/lesson-05-food-drink.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-06-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S9",
+        "S10"
+      ],
+      "finding": "Synchronized DL-A1-06-AUD-READ-01 in data/audio-asset-register.csv to source_line='96' and source_heading='## 4) نص قراءة أصلي' in content/A1/lesson-06-yesterday-perfekt.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-06-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S9",
+        "S10"
+      ],
+      "finding": "Synchronized DL-A1-06-AUD-LST-01 in data/audio-asset-register.csv to source_line='109' and source_heading='## 5) نص استماع — التسجيل موجود' in content/A1/lesson-06-yesterday-perfekt.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-07-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S13"
+      ],
+      "finding": "Synchronized DL-A1-07-AUD-DLG-01 in data/audio-asset-register.csv to source_line='85' and source_heading='## 4) حوار أصلي في محطة القطار' in content/A1/lesson-07-travel-weather.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-07-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-07-AUD-READ-01 in data/audio-asset-register.csv to source_line='101' and source_heading='## 5) نص قراءة أصلي' in content/A1/lesson-07-travel-weather.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-07-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S14"
+      ],
+      "finding": "Synchronized DL-A1-07-AUD-LST-01 in data/audio-asset-register.csv to source_line='114' and source_heading='## 6) نص استماع — التسجيل موجود' in content/A1/lesson-07-travel-weather.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-08-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7",
+        "S13"
+      ],
+      "finding": "Synchronized DL-A1-08-AUD-DLG-01 in data/audio-asset-register.csv to source_line='42' and source_heading='## 2) حوار أصلي في متجر' in content/A1/lesson-08-shopping-clothes.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-08-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7"
+      ],
+      "finding": "Synchronized DL-A1-08-AUD-READ-01 in data/audio-asset-register.csv to source_line='88' and source_heading='## 4) قراءة قصيرة أصلية' in content/A1/lesson-08-shopping-clothes.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-08-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7"
+      ],
+      "finding": "Synchronized DL-A1-08-AUD-LST-01 in data/audio-asset-register.csv to source_line='99' and source_heading='## 5) نص استماع — التسجيل موجود' in content/A1/lesson-08-shopping-clothes.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-09-AUD-DLG-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7",
+        "S13"
+      ],
+      "finding": "Synchronized DL-A1-09-AUD-DLG-01 in data/audio-asset-register.csv to source_line='79' and source_heading='## 3) حوار أصلي في المكتب' in content/A1/lesson-09-work-appointments.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-09-AUD-READ-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7"
+      ],
+      "finding": "Synchronized DL-A1-09-AUD-READ-01 in data/audio-asset-register.csv to source_line='95' and source_heading='## 4) نص قراءة أصلي' in content/A1/lesson-09-work-appointments.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "DL-A1-09-AUD-LST-01",
+      "kind": "audio-register-row",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7"
+      ],
+      "finding": "Synchronized DL-A1-09-AUD-LST-01 in data/audio-asset-register.csv to source_line='107' and source_heading='## 5) نص استماع — التسجيل موجود' in content/A1/lesson-09-work-appointments.md, preserving existing ready MP3 files and voice mappings."
+    },
+    {
+      "id": "ui-rtl-ltr-form-dir-auto",
+      "kind": "ui-bidi-markup",
+      "decision": "corrected",
+      "sourceIds": [
+        "S1"
+      ],
+      "finding": "Added dir='auto' to all performance-task <textarea data-performance-response> elements (renderPerformanceTasks in app.js) and <input id='profile-name'> (renderSettings in app.js) per W3C Internationalization qa-html-dir so German LTR sentences and Arabic RTL text align per paragraph."
+    },
+    {
+      "id": "ui-scroll-to-top-transitions",
+      "kind": "ui-focus-scroll",
+      "decision": "corrected",
+      "sourceIds": [
+        "S2",
+        "S5"
+      ],
+      "finding": "Added window.scrollTo({ top: 0, behavior: 'smooth' }) to startA0GateQuiz, finishA0Gate (performance transition), beginQuiz, finishLesson (performance transition), gate-exit, quiz-exit, and back-to-level in app.js so transitioning from bottom-of-page buttons never strands the viewport."
+    },
+    {
+      "id": "a11y-audit-a0-02-coverage",
+      "kind": "accessibility-audit",
+      "decision": "corrected",
+      "sourceIds": [
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "finding": "Added A0.2-reviewed-source and A0.2-practical-form-fixture (a0-02-greetings) to tools/test_accessibility_audit.cjs across 1440px and 390px viewports, achieving 53/53 lesson + A0 gate coverage (231 screen states, 0 violations, 169 incomplete rule occurrences across 460 node occurrences)."
+    },
+    {
+      "id": "a11y-keyboard-forms-dir-auto",
+      "kind": "keyboard-form-test",
+      "decision": "corrected",
+      "sourceIds": [
+        "S1",
+        "S4"
+      ],
+      "finding": "Extended tools/test_forms_keyboard.cjs at 1440px and 390px to verify dir='auto' on #profile-name and [data-performance-response] alongside keyboard Tab/Space/Enter operability."
+    },
+    {
+      "id": "catalog-1080-row-invariant",
+      "kind": "verifier-invariant",
+      "decision": "corrected",
+      "sourceIds": [
+        "S6",
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "finding": "Added permanent verification in tools/verify_course.py across all 1080 rows of data/production-task-catalog.csv (431 T, 540 Q, 109 P) checking source_line, source_heading, goal_id, source_exercise_number, and linked Q/P IDs."
+    },
+    {
+      "id": "audio-register-217-row-invariant",
+      "kind": "verifier-invariant",
+      "decision": "corrected",
+      "sourceIds": [
+        "S7",
+        "S8",
+        "S9",
+        "S13"
+      ],
+      "finding": "Added permanent verification in tools/verify_course.py across all 217 rows of data/audio-asset-register.csv checking exact source_line/source_heading alignment for all 99 A0–A2 Markdown-backed assets and heading/spoken-line presence for all 117 B1–B2 assets."
+    },
+    {
+      "id": "sw-cache-v105-sync",
+      "kind": "service-worker-cache",
+      "decision": "corrected",
+      "sourceIds": [
+        "S2",
+        "S4"
+      ],
+      "finding": "Bumped Service Worker cache version to deutsch-pfad-v105 across service-worker.js, tools/test_service_worker.cjs, and tools/test_accessibility_update.cjs after updating precached app.js, data/production-task-catalog.csv, and data/audio-asset-register.csv."
+    },
+    {
+      "id": "cumulative-56-reviews-and-guards",
+      "kind": "cumulative-audit",
+      "decision": "verified",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "finding": "Locked 56 granular review reports in data/reviews/ and 56 automated regression guards in tools/test_*_review.py without claiming external human, acoustic, or official CEFR certification."
+    }
+  ]
+}

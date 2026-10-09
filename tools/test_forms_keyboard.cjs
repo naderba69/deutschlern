@@ -13,6 +13,7 @@ async function checks(browser, base, width) {
   await load(page, base);
   await page.evaluate(() => { currentView = 'settings'; render(); });
   const initial = await page.evaluate(() => state.profile);
+  assert.equal(await page.locator('#profile-name').getAttribute('dir'), 'auto');
   await page.locator('#profile-name').focus();
   await page.keyboard.press('ControlOrMeta+A');
   await page.keyboard.type('Keyboard QA');
@@ -61,6 +62,7 @@ async function checks(browser, base, width) {
   // practical-form session fixture, without granting mastery or submitting it.
   await page.evaluate(() => { openLesson('a0-01-alphabet'); lessonSession.mode = 'performance'; render(); });
   const textarea = page.locator('[data-performance-response]').first();
+  assert.equal(await textarea.getAttribute('dir'), 'auto');
   await textarea.focus(); await page.keyboard.type('Meine Antwort bleibt lokal gespeichert.');
   await page.keyboard.press('Tab');
   assert.equal(await page.evaluate(() => document.activeElement.matches('[data-performance-check]')), true);

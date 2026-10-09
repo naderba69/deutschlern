@@ -717,7 +717,7 @@ function renderPerformanceTasks(tasks, scopeKey, version) {
       ? `<section class="performance-task-rubric"><h4>معايير التحقق المحلي</h4><ul>${rubricItems}</ul></section>`
       : '';
     const status = evidence.completed === true ? '<span class="performance-task-status is-done">اكتمل التحقق الذاتي</span>' : '<span class="performance-task-status">بانتظار إجابتك ومعايير التحقق</span>';
-    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p>${escapeHTML(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
+    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p>${escapeHTML(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" dir="auto" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
   }).join('')}</div><p class="performance-self-check-note">التطبيق يتحقق من إكمال خطوات المراجعة فقط، ولا يحكم آليًا على جودة النطق أو صدق الإجابة. لا تُمنح علامة إتقان حتى تؤكد المعايير بنفسك.</p></section>`;
 }
 
@@ -1511,6 +1511,7 @@ function startA0GateQuiz(retry = false) {
   currentView = 'a0-gate';
   saveState();
   render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderA0GateAssessment() {
@@ -1584,6 +1585,7 @@ function finishA0Gate(gate) {
       gateSession.mode = 'performance';
       saveState();
       render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
     gateSession.performanceEvidenceCompleted = true;
@@ -1814,6 +1816,7 @@ function beginQuiz() {
   }
   saveState();
   render();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function checkLessonAnswer() {
@@ -1854,6 +1857,7 @@ function finishLesson(lesson) {
       lessonSession.mode = 'performance';
       saveState();
       render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
     }
     lessonSession.performanceEvidenceCompleted = true;
@@ -1943,7 +1947,7 @@ function renderSettings() {
     <div class="settings-layout">
       <section class="panel"><h2 class="panel-title">خطة التعلّم</h2><p class="panel-subtitle">يُحفظ الاسم والوقت الاسترشادي والاهتمام محليًا؛ اختيار الاهتمام تفضيل محفوظ ولا يغيّر ترتيب المنهج حاليًا.</p>
         <form id="settings-form" class="settings-form" style="margin-top:19px">
-          <div class="field"><label for="profile-name">كيف نناديك؟</label><input id="profile-name" name="name" aria-describedby="profile-name-help" maxlength="32" value="${escapeHTML(profile.name || '')}" placeholder="اسمك أو لقبك"><small id="profile-name-help">يظهر الاسم في لوحة المتابعة فقط.</small></div>
+          <div class="field"><label for="profile-name">كيف نناديك؟</label><input id="profile-name" name="name" dir="auto" aria-describedby="profile-name-help" maxlength="32" value="${escapeHTML(profile.name || '')}" placeholder="اسمك أو لقبك"><small id="profile-name-help">يظهر الاسم في لوحة المتابعة فقط.</small></div>
           <div class="field"><label for="daily-goal">وقت دراسة استرشادي في اليوم (بالدقائق)</label><input id="daily-goal" name="dailyGoal" aria-describedby="daily-goal-help" type="number" inputmode="numeric" min="5" step="5" value="${normalizeDailyMinutes(profile.dailyGoal)}"><small id="daily-goal-help">ساعتان (120 دقيقة) نقطة بداية قابلة للتعديل، لا سقفًا. يمكنك متابعة المهام بعدها أو تقسيمها على جلسات.</small></div>
           <div class="field"><label for="learning-focus">ما هدفك الأقرب؟</label><select id="learning-focus" name="focus">${focusOptions.map((focus) => `<option value="${focus}" ${profile.focus === focus ? 'selected' : ''}>${focus}</option>`).join('')}</select></div>
           <div class="form-actions"><button type="submit" class="button-primary">حفظ الإعدادات ${icon('check', 16)}</button><button type="button" class="button-quiet" data-action="navigate" data-view="dashboard">إلغاء</button></div>
@@ -2066,6 +2070,7 @@ function handleClick(event) {
       currentView = 'level';
       saveState();
       render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'select-lesson-answer':
       if (lessonSession && !lessonSession.checked) { lessonSession.selected = Number(button.dataset.index); saveState(); render(); }
@@ -2079,6 +2084,7 @@ function handleClick(event) {
       }
       saveState();
       render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'retake-lesson':
       if (lessonSession) openLesson(lessonSession.id);
@@ -2089,6 +2095,7 @@ function handleClick(event) {
       currentView = 'level';
       saveState();
       render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'flip-card':
       if (reviewSession) { reviewSession.revealed = true; render(); }

@@ -44,6 +44,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'A0-gate', width);
   await page.evaluate(() => { gateSession.mode = 'performance'; gateSession.correct = 10; render(); });
   await scan(page, 'A0-gate-reviewed-performance', width);
+  // CR2: reviewed greetings/Sie-Ihnen forms and both performance-task forms.
+  await page.evaluate(() => openLesson('a0-02-greetings'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'A0.2-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'A0.2-practical-form-fixture', width);
   // CR3: audit the revised lesson tables and both actual performance-task forms.
   await page.evaluate(() => openLesson('a0-03-numbers-personal-info'));
   await page.locator('.audio-transcript summary').first().click();

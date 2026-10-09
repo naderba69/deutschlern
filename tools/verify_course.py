@@ -456,8 +456,59 @@ def main() -> None:
         assert row["audio_review_status"] == expected_status, f"Stale audio status in curriculum-file-audit.csv: {lid}"
         assert row["assessment_status"] == lesson_obj["assessment"]["status"], f"Stale assessment status in curriculum-file-audit.csv: {lid}"
 
+    assert len(task_rows) == 1080, f"Expected 1080 task catalog rows; found {len(task_rows)}"
+    for row in task_rows:
+        tid = row["task_id"]
+        lid = row["lesson_id"]
+        unit_obj = check if lid == "a0-a1-gate" else lessons_by_id.get(lid)
+        assert unit_obj is not None, f"Unknown lesson_id in production-task-catalog.csv: {tid}"
+        if "-T" in tid or (lid == "a0-a1-gate" and "-Q" in tid):
+            source_lines = (ROOT / row["source_file"]).read_text(encoding="utf-8").splitlines()
+            line_no = int(row["source_line"])
+            assert 1 <= line_no <= len(source_lines) and source_lines[line_no - 1] == row["source_heading"], (
+                f"Stale source_line/source_heading in production-task-catalog.csv: {tid}"
+            )
+        if "-T" in tid:
+            items = unit_obj.get("quiz", []) + unit_obj.get("performanceTasks", [])
+            actual_linked = {x["id"].split("-")[-1] for x in items if tid in x.get("sourceTaskIds", [])}
+            rep = row["current_representation"]
+            mentioned = set(re.findall(r"\b([QP]\d{2})\b", rep)) | {
+                m.split("-")[-1] for m in re.findall(r"DL-[A-Z0-9-]+-[QP]\d{2}", rep)
+            }
+            assert mentioned == actual_linked, f"Stale linked items in production-task-catalog.csv: {tid}"
+            assert "not yet structured" not in row["status"], f"Stale status in production-task-catalog.csv: {tid}"
+        if "-Q" in tid or "-P" in tid:
+            items = unit_obj.get("quiz", []) + unit_obj.get("performanceTasks", [])
+            item = next((x for x in items if x["id"] == tid), None)
+            assert item is not None, f"Missing assessment item for catalog row: {tid}"
+            assert row["goal_id"] == ";".join(item.get("objectiveIds", [])), f"Stale goal_id in production-task-catalog.csv: {tid}"
+            if lid != "a0-a1-gate":
+                expected_ex = ";".join(str(int(x.split("-T")[1])) for x in item.get("sourceTaskIds", []))
+                assert row["source_exercise_number"] == expected_ex, (
+                    f"Stale source_exercise_number in production-task-catalog.csv: {tid}"
+                )
+
+    for row in audio_register_rows:
+        aid = row["asset_id"]
+        if aid == "DL-A0-GATE-AUD-LST-01":
+            assert row["source_file"] == "data/audio-playlists.json", f"Unexpected source_file for {aid}"
+            continue
+        source_path = ROOT / row["source_file"].split(";")[0]
+        source_text = source_path.read_text(encoding="utf-8")
+        source_lines = source_text.splitlines()
+        for heading_part in row["source_heading"].split(";"):
+            assert heading_part.strip() in source_text, f"Missing source_heading in {aid}: {heading_part}"
+        line_nums = [int(n) for n in row["source_line"].split(";")]
+        assert all(1 <= n <= len(source_lines) and source_lines[n - 1].strip() for n in line_nums), (
+            f"Invalid source_line in audio-asset-register.csv: {aid}"
+        )
+        if row["level"] in {"A0", "A1", "A2"}:
+            assert "; ".join(source_lines[n - 1] for n in line_nums) == row["source_heading"], (
+                f"Stale source_line/source_heading in audio-asset-register.csv: {aid}"
+            )
+
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 55, f"Expected 55 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 56, f"Expected 56 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():
