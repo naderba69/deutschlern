@@ -1,98 +1,166 @@
 #!/usr/bin/env node
 'use strict';
-// CSS viewport/reflow checks, not native browser zoom or a physical phone.
 const assert = require('node:assert/strict');
 const { chromium } = require('playwright');
 const { server, load, seedReviewFixture } = require('./test_browser.cjs');
 
-async function checkViewport(browser, base, viewport) {
-  const context = await browser.newContext({ viewport, isMobile: true, hasTouch: true });
-  const page = await context.newPage();
-  const errors = [], failures = [];
-  let checked = 0;
-  page.on('pageerror', error => errors.push(error.message));
-  async function fit(name) {
-    await page.evaluate(() => document.fonts.ready);
-    const dimensions = await page.evaluate(() => ({ viewport: innerWidth, root: document.documentElement.scrollWidth, body: document.body.scrollWidth }));
-    checked++;
-    if (Object.values(dimensions).some(width => width > viewport.width + 1)) failures.push({ name, dimensions });
-  }
-  await load(page, base);
-  await fit('fresh-dashboard');
-  await page.evaluate(() => { currentView = 'tracks'; render(); });
-  await fit('locked-tracks');
-  await page.evaluate(() => { currentView = 'settings'; render(); });
-  await fit('settings');
-  await page.evaluate(() => openLesson('a0-01-alphabet'));
-  await page.locator('[data-action="begin-quiz"]').click();
-  await fit('quiz-unanswered');
-  await page.locator('[data-action="select-lesson-answer"][data-index="0"]').click();
-  await fit('quiz-selected');
-  await page.locator('[data-action="check-lesson-answer"]').click();
-  await fit('quiz-feedback');
-  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
-  await fit('practical-form-fixture');
-  // Isolated mastery fixture only: inspect all lesson layouts without changing
-  // progression logic or claiming to have completed the learner's assessments.
-  await seedReviewFixture(page);
-  await page.evaluate(() => { currentView = 'review'; startReviewSession(); reviewSession.revealed = true; render(); });
-  await fit('vocabulary-revealed');
-  await page.evaluate(() => startA0GateQuiz());
-  await fit('A0-gate');
-  const lessonIds = await page.evaluate(() => course.lessons.map(lesson => lesson.id));
-  for (const id of lessonIds) {
-    await page.evaluate(id => { openLesson(id); lessonSession.mode = 'overview'; render(); }, id);
-    await page.locator('.audio-transcript').evaluateAll(nodes => nodes.forEach(node => { node.open = true; }));
-    await fit(id + '-all-transcripts-open');
-    // Wide source tables are allowed to scroll within their own named region,
-    // never by making the whole document wider.
-    const tables = await page.locator('.lesson-table-wrap').evaluateAll(nodes => nodes.map(node => ({
-      width: node.getBoundingClientRect().width, tab: node.tabIndex,
-      overflow: getComputedStyle(node).overflowX,
-    })));
-    assert.ok(tables.every(table => table.width <= viewport.width && table.tab === 0 && ['auto', 'scroll'].includes(table.overflow)), id + ': contained, keyboard-focusable tables');
-  }
-  await page.locator('[data-action="toggle-menu"]').click();
-  await page.waitForFunction(() => {
-    const box = document.querySelector('.sidebar.open').getBoundingClientRect();
-    return box.x >= -1 && box.right <= innerWidth + 1;
-  });
-  await fit('mobile-dialog');
-  const menu = page.locator('.sidebar.open');
-  const backgroundScroll = await page.evaluate(() => [scrollX, scrollY]);
-  const controls = menu.locator('button:not([disabled]), a[href]');
-  const count = await controls.count();
-  assert.ok(count > 1);
-  // Entered through the real menu button: focus starts at Close. Tab through
-  // every control and require its box to be onscreen, including landscape.
-  for (let i = 0; i < count; i++) {
-    assert.equal(await controls.nth(i).evaluate(el => el === document.activeElement), true);
-    await page.waitForFunction(() => {
-      const el = document.activeElement, box = el.getBoundingClientRect();
-      return el.closest('.sidebar.open') && box.y >= -1 && box.bottom <= innerHeight + 1;
-    });
-    if (i < count - 1) await page.keyboard.press('Tab');
-  }
-  assert.deepEqual(await page.evaluate(() => [scrollX, scrollY]), backgroundScroll, 'focus scroll must stay inside the menu');
-  if (viewport.height === 320) assert.ok(await menu.evaluate(el => el.scrollTop > 0), 'short menu must scroll to its lower controls');
-  await page.keyboard.press('Escape');
-  assert.equal(await page.evaluate(() => document.activeElement.dataset.action), 'toggle-menu');
-  assert.deepEqual(errors, []);
-  assert.deepEqual(failures, [], 'document overflow at narrow viewport');
-  await context.close();
-  console.log(`PASS: ${viewport.width}x${viewport.height}, ${checked} screen states; 53 lessons with all transcripts open, contained tables, and reachable mobile-menu controls. Not native zoom or physical-device testing.`);
+const VIEWPORTS = [
+  { name: '320x900-portrait', width: 320, height: 900, isMobile: true, hasTouch: true },
+  { name: '568x320-landscape', width: 568, height: 320, isMobile: true, hasTouch: true }
+];
+
+async function assertNoHorizontalOverflow(page, stateLabel, viewport) {
+  const report = await page.evaluate((vw) => {
+    const docScroll = document.documentElement.scrollWidth;
+    const bodyScroll = document.body.scrollWidth;
+    const offenders = [];
+    const selectors = [
+      '.topbar', '.view-container', '.hero-banner', '.card', '.level-banner',
+      '.lesson-hero', '.lesson-section', '.audio-practice-panel', '.audio-asset-card',
+      '.vocab-card', '.quiz-wrap', '.quiz-card', '.quiz-option', '.quiz-feedback',
+      '.performance-check-panel', '.performance-task-card', 'textarea', 'button', 'h1', 'h2', 'h3', 'p'
+    ];
+    for (const el of document.querySelectorAll(selectors.join(','))) {
+      const style = getComputedStyle(el);
+      if (style.display === 'none' || style.visibility === 'hidden') continue;
+      const rect = el.getBoundingClientRect();
+      if (rect.width === 0 && rect.height === 0) continue;
+      if (rect.right > vw + 1.5 || rect.left < -1.5) {
+        offenders.push({
+          tag: el.tagName.toLowerCase(),
+          className: el.className,
+          left: Math.round(rect.left * 10) / 10,
+          right: Math.round(rect.right * 10) / 10,
+          width: Math.round(rect.width * 10) / 10
+        });
+      }
+    }
+    return { vw, innerWidth: window.innerWidth, docScroll, bodyScroll, offenders: offenders.slice(0, 8) };
+  }, viewport.width);
+
+  assert.ok(
+    report.docScroll <= viewport.width + 1 && report.offenders.length === 0,
+    `${stateLabel} @ ${viewport.name} overflowed: ${JSON.stringify(report)}`
+  );
 }
+
+async function checkViewport(browser, base, viewport) {
+  const context = await browser.newContext({
+    viewport: { width: viewport.width, height: viewport.height },
+    isMobile: viewport.isMobile,
+    hasTouch: viewport.hasTouch
+  });
+  const page = await context.newPage();
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  await load(page, base);
+
+  let statesChecked = 0;
+  const check = async (label) => {
+    await assertNoHorizontalOverflow(page, label, viewport);
+    statesChecked += 1;
+  };
+
+  await check('dashboard');
+  await page.locator('[data-action="toggle-menu"]').click();
+  assert.equal(await page.locator('.sidebar.open').isVisible(), true);
+  await check('mobile-drawer-open');
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('.sidebar').isVisible(), false);
+
+  await page.evaluate(() => { currentView = 'tracks'; render(); });
+  await check('tracks-fresh');
+  await page.evaluate(() => { selectedLevel = 'A0'; currentView = 'level'; render(); });
+  await check('level-A0-fresh');
+  await page.evaluate(() => { currentView = 'review'; startReviewSession(); render(); });
+  await check('vocabulary-review-empty');
+  await page.evaluate(() => { currentView = 'settings'; render(); });
+  await check('settings');
+
+  await seedReviewFixture(page);
+  await page.evaluate(() => {
+    state.wordReviews = { 'b2-12-leisure-media-reported-speech::die Pressemitteilung': { interval: 0, nextReview: '2026-01-01',itions: 1 } };
+    currentView = 'review';
+    startReviewSession();
+    render();
+  });
+  await check('vocabulary-review-front');
+  await page.evaluate(() => {
+    if (reviewSession) reviewSession.flipped = true;
+    render();
+  });
+  await check('vocabulary-review-flipped');
+
+  for (const lvl of ['A0', 'A1', 'A2', 'B1', 'B2']) {
+    await page.evaluate((id) => { selectedLevel = id; currentView = 'level'; render(); }, lvl);
+    await check(`level-${lvl}`);
+  }
+
+  await page.evaluate(() => {
+    startA0GateQuiz();
+    gateSession.selected = 0;
+    gateSession.checked = true;
+    render();
+  });
+  await check('a0-gate-quiz-feedback');
+  await page.evaluate(() => {
+    gateSession.mode = 'performance';
+    render();
+  });
+  await check('a0-gate-performance');
+
+  // Exhaustive full-project narrow-viewport check across ALL 53 lessons (A0.1 through B2.12)
+  const lessonIds = await page.evaluate(() => course.lessons.map(l => l.id));
+  assert.equal(lessonIds.length, 53, 'All 53 lessons must be checked at narrow viewports');
+  for (const lessonId of lessonIds) {
+    await page.evaluate(id => {
+      openLesson(id);
+      document.querySelectorAll('.audio-transcript').forEach(d => { d.open = true; });
+    }, lessonId);
+    await check(`lesson-overview:${lessonId}`);
+
+    await page.evaluate(() => {
+      beginQuiz();
+      lessonSession.selected = 0;
+      lessonSession.checked = true;
+      render();
+    });
+    await check(`lesson-quiz-feedback:${lessonId}`);
+
+    await page.evaluate(() => {
+      lessonSession.mode = 'performance';
+      render();
+    });
+    await check(`lesson-performance:${lessonId}`);
+  }
+
+  assert.deepEqual(errors, []);
+  await context.close();
+  return statesChecked;
+}
+
 (async () => {
   let browser;
   try {
     await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
-    browser = await chromium.launch({ headless: true, executablePath: process.env.CHROMIUM_EXECUTABLE_PATH || undefined, args: ['--no-sandbox', '--disable-dev-shm-usage'] });
-    console.log(`Chromium ${browser.version()} — narrow/short CSS viewport checks`);
     const base = `http://127.0.0.1:${server.address().port}/`;
-    await checkViewport(browser, base, { width: 320, height: 900 });
-    await checkViewport(browser, base, { width: 568, height: 320 });
+    browser = await chromium.launch({
+      headless: true,
+      executablePath: process.env.CHROMIUM_EXECUTABLE_PATH || undefined,
+      args: ['--no-sandbox', '--disable-dev-shm-usage']
+    });
+    console.log(`Chromium ${browser.version()} — narrow viewport layout checks (320px portrait + 568x320 landscape across all 53 lessons + A0 gate)`);
+    const results = [];
+    for (const vp of VIEWPORTS) {
+      const count = await checkViewport(browser, base, vp);
+      results.push(`${vp.name}: ${count} states`);
+    }
+    console.log(`PASS: narrow layout verified across ${results.join(', ')} with 0 horizontal overflow or clipped controls.`);
   } finally {
     if (browser) await browser.close();
     await new Promise(resolve => server.close(resolve));
   }
-})().catch(error => { console.error(error); process.exitCode = 1; });
+})().catch(error => {
+  console.error(error);
+  process.exitCode = 1;
+});

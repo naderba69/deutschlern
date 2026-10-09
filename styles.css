@@ -300,9 +300,9 @@ svg { display: block; flex: 0 0 auto; }
 .lesson-section-heading h2 { margin: 2px 0 0; font-size: 14px; }
 .lesson-section-heading .count { padding: 4px 8px; border-radius: 999px; color: var(--muted); background: #f2f4ee; font-size: 9px; }
 .vocab-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-.vocab-card { min-height: 118px; padding: 13px; border: 1px solid #edf0e9; border-radius: 14px; background: #fdfdf9; }
+.vocab-card { min-width: 0; min-height: 118px; padding: 13px; border: 1px solid #edf0e9; border-radius: 14px; background: #fdfdf9; overflow-wrap: anywhere; }
 .vocab-card-top { display: flex; justify-content: space-between; align-items: start; gap: 8px; }
-.german-word { color: #214f3c; font-family: Georgia, "Times New Roman", serif; font-size: 17px; font-weight: 700; direction: ltr; text-align: left; line-height: 1.35; }
+.german-word { min-width: 0; color: #214f3c; font-family: Georgia, "Times New Roman", serif; font-size: 17px; font-weight: 700; direction: ltr; text-align: left; line-height: 1.35; overflow-wrap: anywhere; }
 .word-controls { display: flex; gap: 4px; }
 .icon-button { width: 28px; height: 28px; border: 1px solid #edf0e9; border-radius: 8px; display: grid; place-items: center; color: var(--muted); background: #fff; cursor: pointer; }
 .icon-button:hover { color: var(--green); border-color: #d5e3d6; }
@@ -402,7 +402,7 @@ svg { display: block; flex: 0 0 auto; }
 .performance-check-panel { margin: 14px 0; padding: 19px; border: 1px solid #e3e9dc; border-radius: 18px; background: var(--paper); }
 .performance-check-heading { margin-bottom: 14px; padding-bottom: 13px; border-bottom: 1px solid #edf0e9; display: flex; justify-content: space-between; gap: 12px; }
 .performance-check-heading small { color: var(--muted); font-size: 9px; font-weight: 800; }
-.performance-check-heading h2 { margin: 4px 0; color: #294c37; font-size: 15px; }
+.performance-check-heading h1, .performance-check-heading h2 { margin: 4px 0; color: #294c37; font-size: 15px; }
 .performance-check-heading p { max-width: 680px; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.8; }
 .performance-check-heading > span { flex: 0 0 auto; color: var(--muted); font-size: 10px; }
 .performance-task-list { display: grid; gap: 11px; }
@@ -413,7 +413,7 @@ svg { display: block; flex: 0 0 auto; }
 .performance-task-status.is-done { color: #4b7550; }
 .performance-task-card > p { margin: 8px 0; color: #5f6f64; font-size: 11px; line-height: 1.8; }
 .performance-task-rubric { margin: 10px 0; padding: 10px 12px; border-inline-start: 3px solid #9ab695; border-radius: 8px; color: #526459; background: #f7faf4; font-size: 10px; line-height: 1.75; }
-.performance-task-rubric h4 { margin: 0; color: #365940; font-size: 10px; }
+.performance-task-rubric h2, .performance-task-rubric h4 { margin: 0; color: #365940; font-size: 10px; }
 .performance-task-rubric ul { margin: 6px 0 0; padding-inline-start: 18px; }
 .performance-task-rubric li + li { margin-top: 4px; }
 .performance-task-rubric li strong { color: #405c47; }
@@ -615,7 +615,7 @@ svg { display: block; flex: 0 0 auto; }
   .lesson-finish-panel .button-primary { width: 100%; }
   .vocab-review-drawer > summary { padding: 14px; }
   .vocab-review-drawer .vocab-grid { padding: 0 13px 13px; }
-  .vocab-grid { grid-template-columns: 1fr; gap: 8px; }
+  .vocab-grid { grid-template-columns: minmax(0, 1fr); gap: 8px; }
   .vocab-card { min-height: 104px; }
   .lesson-aside { grid-template-columns: 1fr; }
   .quiz-card { padding: 21px 16px; }

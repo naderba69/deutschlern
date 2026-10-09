@@ -42,7 +42,7 @@ def main() -> None:
     assert data["a11yViolatedRuleCount"] == 0
     assert data["a11yIncompleteRuleOccurrences"] == 0
     assert data["a11yIncompleteNodeOccurrences"] == 0
-    assert data["serviceWorkerCacheName"] == "deutsch-pfad-v109"
+    assert data["serviceWorkerCacheName"] == "deutsch-pfad-v110"
     assert data["acousticReviewed"] is False
     assert data["cefrCertification"] is False
     assert data["excludedSources"] == []
@@ -100,8 +100,8 @@ def main() -> None:
         '<small><span lang="de">HÖREN</span> · الاستماع</small>',
         '<small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small>',
         '<small><span lang="de">LEKTION</span> · الدرس الكامل</small>',
-        '<h1 dir="auto"${isGermanTextSnippet(q.prompt) ? \' lang="de"\' : \'\'}>${escapeHTML(q.prompt)}</h1>',
-        '<span dir="auto"${isGermanTextSnippet(q.explanation) ? \' lang="de"\' : \'\'}>${escapeHTML(q.explanation)}</span>',
+        '<h1 dir="auto"${isGermanTextSnippet(q.prompt) ? \' lang="de"\' : \'\'}>${formatInlineMarkdown(q.prompt)}</h1>',
+        '<span dir="auto"${isGermanTextSnippet(q.explanation) ? \' lang="de"\' : \'\'}>${formatInlineMarkdown(q.explanation)}</span>',
         '<div class="audio-asset-title"><strong dir="auto">${escapeHTML(asset.title)}</strong>',
         '<h1 dir="auto">${escapeHTML(lesson.title)}</h1><p dir="auto">${escapeHTML(lesson.objective)}</p>',
         '<div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>',
@@ -110,7 +110,7 @@ def main() -> None:
         assert snippet in app_js, f"Missing snippet in app.js: {snippet}"
 
     sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "const CACHE_NAME = 'deutsch-pfad-v109';" in sw_js
+    assert "const CACHE_NAME = 'deutsch-pfad-v110';" in sw_js
 
     print("PASS: CR60 objective, quiz prompt/explanation lang=de, UI German kickers, and bidi review guard verified.")
 

@@ -39,7 +39,7 @@ for snippet in (
     "function isGermanTextSnippet(text)",
     'isGermanTextSnippet(option) ? \' lang="de"\' : \'\'',
     'class="quiz-feedback ${isCorrect ? \'good\' : \'try-again\'}" dir="auto"',
-    '<p dir="auto">${escapeHTML(task.prompt)}</p>',
+    '<p dir="auto">${formatInlineMarkdown(task.prompt)}</p>',
     '<li dir="auto"><strong>${escapeHTML(checkLabels[key])}:</strong>',
     '<span class="hero-spark one"></span><span class="hero-spark two"></span>',
     '<div class="art-levels" dir="ltr"><span>A0 → B2</span></div>',
@@ -51,7 +51,7 @@ assert "overflow-x: hidden; overflow-y: auto;" in styles_css
 assert ".quiz-feedback {" in styles_css and "unicode-bidi: plaintext;" in styles_css
 
 sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-assert "const CACHE_NAME = 'deutsch-pfad-v109';" in sw_js
+assert "const CACHE_NAME = 'deutsch-pfad-v110';" in sw_js
 
 a11y_js = (ROOT / "tools/test_accessibility_audit.cjs").read_text(encoding="utf-8")
 assert "assert.deepEqual(incompletes, [], 'automated accessibility incomplete checks; set A11Y_REPORT for node details');" in a11y_js

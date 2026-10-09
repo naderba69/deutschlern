@@ -138,16 +138,47 @@ async function layoutAndPlayback(browser, base, viewport) {
   const gateAssets = course.audioAssets.filter(a => a.lessonId === 'a0-a1-gate');
   assert.equal(await page.locator('[data-action="play-audio-asset"]').count(), gateAssets.length * 2);
   for (const asset of gateAssets) assert.equal(await page.locator(`[data-audio-id="${asset.assetId}"]`).count(), 2);
+  assert.equal(await page.locator('.audio-transcript-locked').count(), 1, 'gate listening transcript must start locked before first attempt');
+  await page.evaluate(() => {
+    state.audioTranscriptUnlocks = { ...(state.audioTranscriptUnlocks || {}), 'DL-A0-GATE-AUD-LST-01': true };
+    render();
+  });
   assert.ok(await page.evaluate(width => document.documentElement.scrollWidth <= width + 1, viewport.width), 'gate viewport must fit');
+  let totalVocabCards = 0;
+  let totalTranscriptLines = await page.locator('.audio-transcript-line span[lang="de"]').count();
+  let totalTables = 0;
+  let totalTh = 0;
+  let totalTd = 0;
   for (const lesson of course.lessons) {
     await page.evaluate(id => openLesson(id), lesson.id);
     const expected = course.audioAssets.filter(a => a.lessonId === lesson.id);
     assert.equal(await page.locator('[data-action="play-audio-asset"]').count(), expected.length * 2, lesson.id);
     assert.equal(await page.locator('.audio-asset-status.is-review').count(), expected.filter(a => a.status === 'generated_pending_acoustic_review').length, lesson.id);
     for (const asset of expected) assert.equal(await page.locator(`[data-audio-id="${asset.assetId}"]`).count(), 2);
-    const dimensions = await page.evaluate(() => ({ width: innerWidth, scroll: document.documentElement.scrollWidth }));
-    assert.ok(dimensions.scroll <= viewport.width + 1 && dimensions.width <= viewport.width + 1, `${lesson.id} overflows ${viewport.width}px: ${JSON.stringify(dimensions)}`);
+    const domStats = await page.evaluate(() => ({
+      width: innerWidth,
+      scroll: document.documentElement.scrollWidth,
+      vocab: document.querySelectorAll('.vocab-card .german-word[dir="ltr"][lang="de"]').length,
+      vocabTrans: document.querySelectorAll('.vocab-card .word-translation[dir="auto"]').length,
+      transcriptDe: document.querySelectorAll('.audio-transcript-line span[lang="de"]').length,
+      tables: document.querySelectorAll('.lesson-document table').length,
+      th: document.querySelectorAll('.lesson-document th[scope="col"][dir="auto"]').length,
+      td: document.querySelectorAll('.lesson-document td[dir="auto"]').length
+    }));
+    assert.equal(domStats.vocab, lesson.vocabulary.length, `${lesson.id} vocab count`);
+    assert.equal(domStats.vocabTrans, lesson.vocabulary.length, `${lesson.id} vocab translation count`);
+    totalVocabCards += domStats.vocab;
+    totalTranscriptLines += domStats.transcriptDe;
+    totalTables += domStats.tables;
+    totalTh += domStats.th;
+    totalTd += domStats.td;
+    assert.ok(domStats.scroll <= viewport.width + 1 && domStats.width <= viewport.width + 1, `${lesson.id} overflows ${viewport.width}px: ${JSON.stringify(domStats)}`);
   }
+  assert.equal(totalVocabCards, 754, 'All 754 vocabulary cards must render across 53 lessons');
+  assert.equal(totalTranscriptLines, 474, 'All 474 audio transcript lines must render with lang="de" across 53 lessons + A0 gate');
+  assert.equal(totalTables, 96, 'All 96 lesson tables must render in lesson-document');
+  assert.equal(totalTh, 273, 'All 273 lesson table headers must have scope="col" and dir="auto"');
+  assert.equal(totalTd, 2938, 'All 2938 lesson table cells must have dir="auto"');
   if (viewport.width < 600) {
     assert.equal(await page.locator('.sidebar').isVisible(), false);
     await page.locator('[data-action="toggle-menu"]').click();

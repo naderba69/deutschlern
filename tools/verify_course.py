@@ -448,14 +448,14 @@ def main() -> None:
     )
 
     audit_csv_path = ROOT / "data" / "curriculum-file-audit.csv"
-    with audit_csv_path.open(encoding="utf-8", newline="") as audit_file:
+    with audit_csv_path.open(encoding="utf-8-sig", newline="") as audit_file:
         audit_rows = list(csv.DictReader(audit_file))
     assert len(audit_rows) == len(lessons) == 53, f"Expected 53 file-audit rows; found {len(audit_rows)}"
     lessons_by_id = {item["id"]: item for item in lessons}
     assets_by_lesson: dict[str, list[dict]] = {}
     for asset in audio_assets:
         assets_by_lesson.setdefault(asset["lessonId"], []).append(asset)
-    for row in audit_rows:
+    for idx, row in enumerate(audit_rows):
         lid = row["lesson_id"]
         assert lid in lessons_by_id, f"Unknown lesson in curriculum-file-audit.csv: {lid}"
         lesson_obj = lessons_by_id[lid]
@@ -463,13 +463,31 @@ def main() -> None:
         lesson_clips = sum(len(a["segments"]) for a in lesson_assets)
         lesson_statuses = sorted(set(a["status"] for a in lesson_assets))
         expected_status = lesson_statuses[0] if len(lesson_statuses) == 1 else "|".join(lesson_statuses)
+        md_path = ROOT / row["source_file"]
+        md_text = md_path.read_text(encoding="utf-8")
+        m_sk = re.search(r"\*\*المهارات:\*\*\s*(.+)", md_text)
+        raw_skills = m_sk.group(1).strip() if m_sk else ""
+        clean_skills = re.sub(r"<br\s*/?>$", "", re.split(r"\s*·\s*\*\*الهدف:\*\*", raw_skills)[0].strip()).strip()
+        assert row["goal_id"] == ";".join(lesson_obj["assessment"]["objectiveIds"]), f"Stale goal_id in curriculum-file-audit.csv: {lid}"
+        assert row["level"] == lesson_obj["level"], f"Stale level in curriculum-file-audit.csv: {lid}"
+        assert row["unit"] == str(lesson_obj["unit"]), f"Stale unit in curriculum-file-audit.csv: {lid}"
+        assert row["source_file"] == lesson_obj["sourceFile"], f"Stale source_file in curriculum-file-audit.csv: {lid}"
         assert row["title"] == lesson_obj["title"], f"Stale title in curriculum-file-audit.csv: {lid}"
+        assert row["source_id_title_match"] == "true", f"Stale source_id_title_match in curriculum-file-audit.csv: {lid}"
+        assert row["source_objective_match"] == "true", f"Stale source_objective_match in curriculum-file-audit.csv: {lid}"
+        assert row["declared_skills_present"] == "true", f"Stale declared_skills_present in curriculum-file-audit.csv: {lid}"
         assert "**" not in lesson_obj["objective"] and "`" not in lesson_obj["objective"] and ".؛" not in lesson_obj["objective"], (
             f"Unstripped Markdown or punctuation artifact in lesson objective: {lid}"
         )
+        assert row["declared_skills"] == clean_skills, f"Stale declared_skills in curriculum-file-audit.csv: {lid}"
         assert row["source_objective"] == lesson_obj["objective"], f"Stale source_objective in curriculum-file-audit.csv: {lid}"
         assert row["minutes"] == str(lesson_obj["minutes"]), f"Stale minutes in curriculum-file-audit.csv: {lid}"
-        assert int(row["generated_audio_clips"]) == lesson_clips, f"Stale clip count in curriculum-file-audit.csv: {lid}"
+        assert int(row["exercise_count"]) == len(re.findall(r"(?m)^###\s*(?:\d+\)?[).]?\s*)?تمرين\b.*$", md_text)), f"Stale exercise_count in curriculum-file-audit.csv: {lid}"
+        assert int(row["dialogue_section_count"]) == len(dialogue_headings(md_text)), f"Stale dialogue_section_count in curriculum-file-audit.csv: {lid}"
+        assert row["answer_key_present"] == str('class="answer-key"' in lesson_obj["contentHtml"]).lower(), f"Stale answer_key_present in curriculum-file-audit.csv: {lid}"
+        assert int(row["quiz_item_count"]) == len(lesson_obj["quiz"]), f"Stale quiz_item_count in curriculum-file-audit.csv: {lid}"
+        assert int(row["performance_task_count"]) == len(lesson_obj["performanceTasks"]), f"Stale performance_task_count in curriculum-file-audit.csv: {lid}"
+        assert int(row["generated_audio_clips"]) == lesson_clips, f"Stale generated_audio_clips in curriculum-file-audit.csv: {lid}"
         assert row["audio_review_status"] == expected_status, f"Stale audio status in curriculum-file-audit.csv: {lid}"
         assert row["assessment_status"] == lesson_obj["assessment"]["status"], f"Stale assessment status in curriculum-file-audit.csv: {lid}"
 
@@ -479,6 +497,9 @@ def main() -> None:
         lid = row["lesson_id"]
         unit_obj = check if lid == "a0-a1-gate" else lessons_by_id.get(lid)
         assert unit_obj is not None, f"Unknown lesson_id in production-task-catalog.csv: {tid}"
+        if lid != "a0-a1-gate":
+            assert row["level"] == unit_obj["level"], f"Stale level in production-task-catalog.csv: {tid}"
+            assert row["unit"] == str(unit_obj["unit"]), f"Stale unit in production-task-catalog.csv: {tid}"
         if "-T" in tid or (lid == "a0-a1-gate" and "-Q" in tid):
             source_lines = (ROOT / row["source_file"]).read_text(encoding="utf-8").splitlines()
             line_no = int(row["source_line"])
@@ -504,9 +525,32 @@ def main() -> None:
                 assert row["source_exercise_number"] == expected_ex, (
                     f"Stale source_exercise_number in production-task-catalog.csv: {tid}"
                 )
+                if "-Q" in tid:
+                    q_idx = unit_obj["quiz"].index(item)
+                    assert row["source_heading"] == f"quiz[{q_idx}] — {tid}", (
+                        f"Stale source_heading in production-task-catalog.csv: {tid}"
+                    )
+                else:
+                    p_idx = unit_obj["performanceTasks"].index(item)
+                    assert row["source_heading"] == f"performanceTasks[{p_idx}] — {tid}", (
+                        f"Stale source_heading in production-task-catalog.csv: {tid}"
+                    )
+            elif "-P" in tid:
+                p_idx = unit_obj["performanceTasks"].index(item)
+                assert row["source_heading"] == f"performanceTasks[{p_idx}] — {tid}", (
+                    f"Stale gate source_heading in production-task-catalog.csv: {tid}"
+                )
 
+    assets_by_id = {a["assetId"]: a for a in audio_assets}
     for row in audio_register_rows:
         aid = row["asset_id"]
+        asset_obj = assets_by_id.get(aid)
+        assert asset_obj is not None, f"Unknown asset_id in audio-asset-register.csv: {aid}"
+        assert row["lesson_id"] == asset_obj["lessonId"], f"Stale lesson_id in audio-asset-register.csv: {aid}"
+        assert row["production_status"] == asset_obj["status"], f"Stale production_status in audio-asset-register.csv: {aid}"
+        assert row["transcript_policy"] == asset_obj["transcriptPolicy"], f"Stale transcript_policy in audio-asset-register.csv: {aid}"
+        expected_seg_paths = ";".join(s["src"] for s in asset_obj["segments"])
+        assert row["generated_segment_paths"] == expected_seg_paths, f"Stale generated_segment_paths in audio-asset-register.csv: {aid}"
         if aid == "DL-A0-GATE-AUD-LST-01":
             assert row["source_file"] == "data/audio-playlists.json", f"Unexpected source_file for {aid}"
             continue
@@ -533,8 +577,9 @@ def main() -> None:
         'class="flash-example" dir="auto"${isGermanTextSnippet(word.example) ? \' lang="de"\' : \'\'}',
         'isGermanTextSnippet(option) ? \' lang="de"\' : \'\'',
         'class="quiz-feedback ${isCorrect ? \'good\' : \'try-again\'}" dir="auto"',
-        '<p dir="auto">${escapeHTML(task.prompt)}</p>',
-        '<li dir="auto"><strong>${escapeHTML(checkLabels[key])}:</strong>',
+        'function formatInlineMarkdown(value)',
+        '<p dir="auto">${formatInlineMarkdown(task.prompt)}</p>',
+        '<li dir="auto"><strong>${escapeHTML(checkLabels[key])}:</strong> ${formatInlineMarkdown(detail)}</li>',
         '<small><span lang="de">AUFGABE</span> · الأداء العملي</small>',
         '<small><span lang="de">TAGESPLAN</span> · خطة مرنة</small>',
         '<span><span lang="de">Deutsch</span> على مقاسك.</span>',
@@ -542,8 +587,8 @@ def main() -> None:
         '<small><span lang="de">HÖREN</span> · الاستماع</small>',
         '<small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small>',
         '<small><span lang="de">LEKTION</span> · الدرس الكامل</small>',
-        '<h1 dir="auto"${isGermanTextSnippet(q.prompt) ? \' lang="de"\' : \'\'}>${escapeHTML(q.prompt)}</h1>',
-        '<span dir="auto"${isGermanTextSnippet(q.explanation) ? \' lang="de"\' : \'\'}>${escapeHTML(q.explanation)}</span>',
+        '<h1 dir="auto"${isGermanTextSnippet(q.prompt) ? \' lang="de"\' : \'\'}>${formatInlineMarkdown(q.prompt)}</h1>',
+        '<span dir="auto"${isGermanTextSnippet(q.explanation) ? \' lang="de"\' : \'\'}>${formatInlineMarkdown(q.explanation)}</span>',
         '<div class="audio-asset-title"><strong dir="auto">${escapeHTML(asset.title)}</strong>',
         '<h1 dir="auto">${escapeHTML(lesson.title)}</h1><p dir="auto">${escapeHTML(lesson.objective)}</p>',
         '<div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>',
@@ -551,6 +596,48 @@ def main() -> None:
         'بينما يُحتسب وقت الدراسة الفعلي تلقائيًا أثناء الجلسة النشطة.',
     ):
         assert snippet in app_text, f"Missing WCAG 3.1.2 / bidi attribute snippet in app.js: {snippet}"
+
+    def _py_format_inline_md(val: str) -> str:
+        def _code_repl(m: re.Match[str]) -> str:
+            inner = m.group(1)
+            if re.search(r"[\u0600-\u06FF]", inner):
+                return f'<code dir="auto">{inner}</code>'
+            if inner.strip() and not re.search(r"[\u0600-\u06FF]", inner) and re.search(r"[A-Za-zÄÖÜäöüß]", inner):
+                return f'<code dir="ltr" lang="de">{inner}</code>'
+            return f'<code dir="ltr">{inner}</code>'
+
+        def _bold_repl(m: re.Match[str]) -> str:
+            inner = m.group(1)
+            if inner.strip() and not re.search(r"[\u0600-\u06FF]", inner) and re.search(r"[A-Za-zÄÖÜäöüß]", inner):
+                return f'<strong lang="de">{inner}</strong>'
+            return f"<strong>{inner}</strong>"
+
+        return re.sub(r"\*\*([^*]+)\*\*", _bold_repl, re.sub(r"`([^`]+)`", _code_repl, val))
+
+    q_prompt_md = 0
+    q_expl_md = 0
+    p_prompt_md = 0
+    for unit_obj in lessons + [check]:
+        for q in unit_obj.get("quiz", []):
+            if "**" in q["prompt"] or "`" in q["prompt"]:
+                q_prompt_md += 1
+            if "**" in q["explanation"] or "`" in q["explanation"]:
+                q_expl_md += 1
+            for field in (q["prompt"], q["explanation"], *q["options"]):
+                rendered_field = _py_format_inline_md(field)
+                assert "**" not in rendered_field and "`" not in rendered_field, (
+                    f"Unrendered Markdown marker in {q['id']}: {field}"
+                )
+        for p in unit_obj.get("performanceTasks", []):
+            if "**" in p["prompt"] or "`" in p["prompt"]:
+                p_prompt_md += 1
+            rendered_p = _py_format_inline_md(p["prompt"])
+            assert "**" not in rendered_p and "`" not in rendered_p, (
+                f"Unrendered Markdown marker in {p['id']}: {p['prompt']}"
+            )
+    assert (q_prompt_md, q_expl_md, p_prompt_md) == (137, 65, 12), (
+        f"Expected (137, 65, 12) assessment items with inline Markdown; found {(q_prompt_md, q_expl_md, p_prompt_md)}"
+    )
 
     de_code_count = sum(len(re.findall(r'<code dir="ltr" lang="de">.*?</code>', l.get("contentHtml", ""))) for l in lessons)
     ar_code_count = sum(len(re.findall(r'<code dir="auto">.*?</code>', l.get("contentHtml", ""))) for l in lessons)
@@ -587,7 +674,7 @@ def main() -> None:
     assert "overflow-x: hidden; overflow-y: auto;" in css_text, "Missing deterministic overflow rules on performance textarea in styles.css"
 
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 60, f"Expected 60 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 61, f"Expected 61 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():
