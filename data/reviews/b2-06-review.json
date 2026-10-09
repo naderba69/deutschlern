@@ -1,0 +1,1434 @@
+{
+  "reviewVersion": "cr48-b2-06-v1",
+  "lessonId": "b2-06-study-applications-verb-noun-phrases",
+  "lessonTitle": "B2.6 — التعلّم والدراسة والتقديم الأكاديمي: Nomen-Verb-Verbindungen",
+  "assessmentVersion": "b2-06-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 101,
+  "exerciseSubItemCount": 40,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-06-study-applications-verb-noun-phrases.md": "38c4c4560bcd7c11dd489886d7a85d12a936c918e1171ebf4f3fbfa883a29036",
+    "content/B2/lesson-06-study-applications-verb-noun-phrases.assessment.json": "34f9e90a67db7fc5c2bbeac1b5e501c36a45af59d2d8b108f7284e8cc7fdcf65"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-06-AUD-PHR-01": "1a21b5e8701d3cb3ec58feed864e3df1bbb1c3608af3d1d685ac759d0d129799",
+    "DL-B2-06-AUD-MODEL-01": "3d0aaa7e86ddca8fffea84f0a93478ef4891d032cd06a64d9b58a19b923db0d2",
+    "DL-B2-06-AUD-DLG-01": "9b478aba3d2f05a3b0c90c59b402d33f7e4965b7260bd7731a951ed10ea7e236",
+    "DL-B2-06-AUD-READ-01": "3745ecd5f130054bcbd2d6ddbd683b6d4a8c2137d55ffc7dc58eeecda39c7e3a",
+    "DL-B2-06-AUD-LST-01": "d9d2e5ee28930eaba67819c81b13e527031804a1e87caaad1d4065d7e2e3c0b3"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-infinitive-clauses",
+      "title": "Lingolia English — Infinitive Clauses – Word Order in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/infinitive-clauses",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Noun phrases taking infinitive clauses and functioning as verb-noun collocations (in Betracht ziehen, die Entscheidung treffen, die Absicht haben, Vorbereitungen treffen) and separable verbs with zu (einzureichen, nachzureichen, abzulegen)"
+    },
+    {
+      "id": "lingolia-en-declension",
+      "title": "Lingolia English — Declension in German Grammar – the Four Cases",
+      "url": "https://deutsch.lingolia.com/en/grammar/declension",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1,
+        2
+      ],
+      "totalChunks": 3,
+      "usedFor": "Nominative subject vs. accusative direct object in transitive verb-noun phrases (einen Antrag stellen) and two-way prepositions / standing vs. putting verbs (stehen vs. stellen)"
+    },
+    {
+      "id": "duden-studiengang",
+      "title": "Duden — Studiengang",
+      "url": "https://www.duden.de/rechtschreibung/Studiengang",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Studiengang, Genitiv des Studienganges/Studiengangs, Plural die Studiengänge; degree program"
+    },
+    {
+      "id": "duden-zulassung",
+      "title": "Duden — Zulassung",
+      "url": "https://www.duden.de/rechtschreibung/Zulassung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Zulassung, Plural die Zulassungen; admission / official permission"
+    },
+    {
+      "id": "duden-voraussetzung",
+      "title": "Duden — Voraussetzung",
+      "url": "https://www.duden.de/rechtschreibung/Voraussetzung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Voraussetzung, Plural die Voraussetzungen; collocation die Voraussetzungen für etwas erfüllen"
+    },
+    {
+      "id": "duden-leistungsnachweis",
+      "title": "Duden — Leistungsnachweis",
+      "url": "https://www.duden.de/rechtschreibung/Leistungsnachweis",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Leistungsnachweis, Plural die Leistungsnachweise; academic performance record / transcript"
+    },
+    {
+      "id": "duden-bewerbung",
+      "title": "Duden — Bewerbung",
+      "url": "https://www.duden.de/rechtschreibung/Bewerbung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Bewerbung, Plural die Bewerbungen; collocation eine Bewerbung schriftlich einreichen"
+    },
+    {
+      "id": "duden-motivationsschreiben",
+      "title": "Duden — Motivationsschreiben",
+      "url": "https://www.duden.de/rechtschreibung/Motivationsschreiben",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "das Motivationsschreiben; letter of motivation in application documents"
+    },
+    {
+      "id": "duden-immatrikulation",
+      "title": "Duden — Immatrikulation",
+      "url": "https://www.duden.de/rechtschreibung/Immatrikulation",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Immatrikulation, Plural die Immatrikulationen; university enrollment (Einschreibung an einer Hochschule)"
+    },
+    {
+      "id": "duden-antrag",
+      "title": "Duden — Antrag",
+      "url": "https://www.duden.de/rechtschreibung/Antrag",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Antrag, Plural die Anträge; collocation einen Antrag auf etwas stellen / schriftlich einreichen"
+    },
+    {
+      "id": "duden-entscheidung",
+      "title": "Duden — Entscheidung",
+      "url": "https://www.duden.de/rechtschreibung/Entscheidung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Entscheidung, Plural die Entscheidungen; collocation eine Entscheidung treffen (= etwas entscheiden)"
+    },
+    {
+      "id": "duden-betracht",
+      "title": "Duden — Betracht",
+      "url": "https://www.duden.de/rechtschreibung/Betracht",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "idiom jemanden/etwas in Betracht ziehen (= berücksichtigen, in Erwägung ziehen)"
+    },
+    {
+      "id": "duden-verfuegung",
+      "title": "Duden — Verfügung",
+      "url": "https://www.duden.de/rechtschreibung/Verfuegung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Verfügung; collocations etwas steht jemandem zur Verfügung and jemandem etwas zur Verfügung stellen"
+    },
+    {
+      "id": "duden-ablegen",
+      "title": "Duden — ablegen",
+      "url": "https://www.duden.de/rechtschreibung/ablegen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "separable weak verb ablegen (legt ab, legte ab, hat abgelegt); collocation eine Prüfung ablegen (= machen)"
+    },
+    {
+      "id": "duden-erwerben",
+      "title": "Duden — erwerben",
+      "url": "https://www.duden.de/rechtschreibung/erwerben",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "inseparable strong verb erwerben (erwirbt, erwarb, hat erworben); Fertigkeiten/Wissen/Kenntnisse erwerben"
+    },
+    {
+      "id": "duden-einreichen",
+      "title": "Duden — einreichen",
+      "url": "https://www.duden.de/rechtschreibung/einreichen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "separable weak verb einreichen (reicht ein, reichte ein, hat eingereicht); Unterlagen/Antrag fristgerecht einreichen"
+    },
+    {
+      "id": "duden-nachreichen",
+      "title": "Duden — nachreichen",
+      "url": "https://www.duden.de/rechtschreibung/nachreichen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "separable weak verb nachreichen (reicht nach, reichte nach, hat nachgereicht); Unterlagen nach dem vereinbarten Zeitpunkt nachreichen"
+    },
+    {
+      "id": "duden-erfuellen",
+      "title": "Duden — erfüllen",
+      "url": "https://www.duden.de/rechtschreibung/erfuellen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "inseparable weak verb erfüllen (erfüllt, erfüllte, hat erfüllt); die Bedingungen/Voraussetzungen erfüllen"
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "lingolia-search-nomen-verb",
+      "title": "Search index — Lingolia Nomen-Verb-Verbindungen Funktionsverbgefüge Antrag stellen Entscheidung treffen",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/infinitive-clauses",
+      "access": "search_snippet_only",
+      "chunks": [],
+      "totalChunks": 0,
+      "usedFor": "Search verification of German verb-noun phrases (in Betracht ziehen, die Entscheidung treffen) and case declension"
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Studiengaenge",
+      "reason": "HTTP 404 plural URL; covered by singular lemma https://www.duden.de/rechtschreibung/Studiengang"
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Unterlagen",
+      "reason": "HTTP 404 plural URL; covered by singular lemma https://www.duden.de/rechtschreibung/Unterlage and documented in lesson vocabulary note"
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Kenntnisse",
+      "reason": "HTTP 404 plural URL; covered by singular lemma https://www.duden.de/rechtschreibung/Kenntnis and documented in lesson vocabulary note"
+    },
+    {
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/verbs-with-prepositions",
+      "reason": "HTTP 404 page-not-found on Lingolia; replaced by full-fetched infinitive-clauses and declension pages"
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-06-scope-01",
+      "section": "Scope",
+      "sourceText": "B2.6 title, duration, skills, self-study disclaimer, and P01/P02 modality split",
+      "status": "refined",
+      "finding": "Explicitly states P01 is writing-only while P02 requires writing + self-guided reading aloud without recording or partner, and includes the non-certification self-study notice.",
+      "action": "Updated lesson goal line."
+    },
+    {
+      "id": "b2-06-scope-02",
+      "section": "Scope",
+      "sourceText": "Academic verb-noun collocations (Nomen-Verb-Verbindungen): Antrag stellen, Bewerbung einreichen, Voraussetzung erfüllen, Prüfung ablegen, Kenntnisse erwerben, Entscheidung treffen, in Betracht ziehen, zur Verfügung stehen",
+      "status": "verified",
+      "finding": "Verified all 8 academic collocations, their functional verbs, accusative/nominative structure, and preposition reminders (einen Antrag auf + Akkusativ stellen, etwas in Betracht ziehen) against Lingolia and Duden.",
+      "action": "Preserved Section 2 table and examples verbatim so DL-B2-06-AUD-MODEL-01 remains 100% aligned."
+    },
+    {
+      "id": "b2-06-scope-03",
+      "section": "Scope",
+      "sourceText": "Vocabulary note on die Unterlagen (die Unterlage), die Kenntnisse (die Kenntnis), der Fragebogen, einreichen/nachreichen, and erwerben",
+      "status": "added",
+      "finding": "Documents Duden morphology: plural usage of die Unterlagen (singular die Unterlage) and die Kenntnisse (singular die Kenntnis), plural variants of der Fragebogen (die Fragebogen / die Fragebögen), separable weak verbs einreichen/nachreichen, and strong inseparable erwerben (erwirbt · erwarb · hat erworben).",
+      "action": "Added vocabulary usage note below the Section 1 table."
+    },
+    {
+      "id": "b2-06-scope-04",
+      "section": "Scope",
+      "sourceText": "Pre-text and pre-task helper guidance (مساعدة قبل النصوص والمهمات)",
+      "status": "added",
+      "finding": "Provides 10 structured helper bullets on noun vs. functional verb roles, accusative case inside collocations, transitive etwas in Betracht ziehen vs. intransitive zur Verfügung stehen, separable verb placement, simple-verb-to-collocation rewrites, academic prepositions, einreichen vs. nachreichen, T05 reading stages, fictional institution ethics, and P01/P02 modalities.",
+      "action": "Added helper subsection in Section 2 without altering model sentence audio extraction."
+    },
+    {
+      "id": "b2-06-scope-05",
+      "section": "Scope",
+      "sourceText": "Assessment version b2-06-v2 and Service Worker cache v97",
+      "status": "refined",
+      "finding": "Bumps B2.6 assessment version from b2-06-v1 to b2-06-v2 and Service Worker cache to v97 so stale v1 records or drafts require re-verification of practical tasks.",
+      "action": "Updated .assessment.json, service-worker.js, and progression/SW tests."
+    },
+    {
+      "id": "b2-06-vocab-01",
+      "section": "Vocabulary",
+      "sourceText": "| der Studiengang | die Studiengänge | البرنامج الدراسي |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-02",
+      "section": "Vocabulary",
+      "sourceText": "| die Zulassung | die Zulassungen | القبول |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-03",
+      "section": "Vocabulary",
+      "sourceText": "| die Voraussetzung | die Voraussetzungen | الشرط المسبق |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-04",
+      "section": "Vocabulary",
+      "sourceText": "| der Leistungsnachweis | die Leistungsnachweise | إثبات إنجاز دراسي |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-05",
+      "section": "Vocabulary",
+      "sourceText": "| die Bewerbung | die Bewerbungen | طلب التقديم |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-06",
+      "section": "Vocabulary",
+      "sourceText": "| das Motivationsschreiben | die Motivationsschreiben | رسالة الدافع |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-07",
+      "section": "Vocabulary",
+      "sourceText": "| die Immatrikulation | die Immatrikulationen | التسجيل الجامعي |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-08",
+      "section": "Vocabulary",
+      "sourceText": "| die Bewerbungsfrist | die Bewerbungsfristen | مهلة التقديم |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-09",
+      "section": "Vocabulary",
+      "sourceText": "| die Studienberatung | die Studienberatungen | الإرشاد الدراسي |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-10",
+      "section": "Vocabulary",
+      "sourceText": "| der Nachweis | die Nachweise | إثبات / وثيقة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-11",
+      "section": "Vocabulary",
+      "sourceText": "| fristgerecht / erforderlich | — | في الموعد المحدد / مطلوب |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-12",
+      "section": "Vocabulary",
+      "sourceText": "| nachreichen | reicht nach | يقدّم لاحقًا / يستكمل |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-13",
+      "section": "Vocabulary",
+      "sourceText": "| erwerben | erwirbt | يكتسب |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-vocab-14",
+      "section": "Vocabulary",
+      "sourceText": "| einreichen | reicht ein | يقدّم وثيقة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-06-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-01",
+      "section": "Grammar & Models",
+      "sourceText": "| **einen Antrag stellen** | يقدّم طلبًا رسميًا | **Sie stellt einen Antrag auf Zulassung.** — تقدّم طلبًا للقبول. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-02",
+      "section": "Grammar & Models",
+      "sourceText": "| **eine Bewerbung einreichen** | يقدّم طلب الترشح | **Er reicht die Bewerbung fristgerecht ein.** — يقدّم طلبه في الموعد المحدد. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-03",
+      "section": "Grammar & Models",
+      "sourceText": "| **eine Voraussetzung erfüllen** | يستوفي شرطًا | **Die Bewerberin erfüllt alle Voraussetzungen.** — تستوفي المتقدمة جميع الشروط. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-04",
+      "section": "Grammar & Models",
+      "sourceText": "| **eine Prüfung ablegen** | يؤدّي امتحانًا / يتقدّم لامتحان | **Am Ende des Kurses legt sie eine Prüfung ab.** — تتقدّم لامتحان في نهاية الدورة. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-05",
+      "section": "Grammar & Models",
+      "sourceText": "| **Kenntnisse erwerben** | يكتسب معارف | **Die Studierenden erwerben fachliche Kenntnisse.** — يكتسب الطلبة معارف تخصصية. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-06",
+      "section": "Grammar & Models",
+      "sourceText": "| **eine Entscheidung treffen** | يتخذ قرارًا | **Er trifft nach der Beratung eine Entscheidung.** — يتخذ قرارًا بعد الإرشاد. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-07",
+      "section": "Grammar & Models",
+      "sourceText": "| **etwas in Betracht ziehen** | يضع شيئًا في الحسبان | **Sie zieht einen Teilzeitstudiengang in Betracht.** — تضع برنامج الدوام الجزئي في الحسبان. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-08",
+      "section": "Grammar & Models",
+      "sourceText": "| **zur Verfügung stehen** | يكون متاحًا | **Die Unterlagen stehen online zur Verfügung.** — الوثائق متاحة على الإنترنت. |",
+      "status": "verified",
+      "finding": "Verified functional verb collocation, Arabic meaning, German example sentence, and exact alignment with DL-B2-06-AUD-MODEL-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-grammar-09",
+      "section": "Grammar & Models",
+      "sourceText": "احفظ الفعل والاسم وحرف الجر إن وُجدوا معًا: **einen Antrag auf + Akkusativ stellen**، **etwas in Betracht ziehen**. لا يلزم استبدال كل فعل بسيط بتركيب اسمي؛ اختر التركيب حين يناسب السياق الرسمي.",
+      "status": "verified",
+      "finding": "Verified preposition + case reminder and stylistic register guidance; matches the final two spoken items in DL-B2-06-AUD-MODEL-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-helper-01",
+      "section": "Helper Notes",
+      "sourceText": "- **توزيع الدور بين الاسم والفعل الوظيفي (`Funktionsverb`):** يحمل الاسمُ المعنى المعجمي الأساسي (**Antrag / Bewerbung / Voraussetzung / Entscheidung**)، بينما يضبط الفعلُ الوظيفي (**stellen / einreichen / erfüllen / treffen**) الزمنَ والفاعلَ وموقعَ الفعل في الجملة.",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-02",
+      "section": "Helper Notes",
+      "sourceText": "- **حالة الاسم داخل التركيب:** المفعول في **einen Antrag stellen** (**der Antrag → einen Antrag**) و**eine Bewerbung einreichen** و**eine Voraussetzung erfüllen** و**eine Prüfung ablegen** و**eine Entscheidung treffen** و**Kenntnisse erwerben** يأتي في حالة النصب (**Akkusativ**).",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-03",
+      "section": "Helper Notes",
+      "sourceText": "- **التمييز بين `etwas in Betracht ziehen` و`zur Verfügung stehen`:** التركيب **etwas in Betracht ziehen** متعدٍّ يحتاج مفعولًا منصوبًا (**Sie zieht einen Teilzeitstudiengang in Betracht**)، ويمكن أن تتبعه جملة مصدرية مع **zu + Infinitiv**، بينما **zur Verfügung stehen** لازمٌ يكون فيه الشيءُ المتاحُ هو الفاعل في حالة الرفع (**Die Unterlagen stehen online zur Verfügung**).",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-04",
+      "section": "Helper Notes",
+      "sourceText": "- **الأفعال القابلة للفصل في التراكيب الرسمية:** في **eine Bewerbung einreichen** و**eine Prüfung ablegen** و**etwas in Betracht ziehen** و**Unterlagen nachreichen** ينفصل الجزء الأول في المضارع والماضي البسيط داخل الجملة الرئيسية (**Er reicht die Bewerbung fristgerecht ein** / **Sie legt eine Prüfung ab**)، ويبقى متصلًا بعد الأفعال الناقصة (**muss ... einreichen / kann ... nachreichen**).",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-05",
+      "section": "Helper Notes",
+      "sourceText": "- **إعادة الصياغة من فعل بسيط إلى تركيب اسمي فعلي:** عند تحويل **Sie beantragt die Zulassung → Sie stellt einen Antrag auf Zulassung** أو **Er entscheidet sich → Er trifft eine Entscheidung** أو **Sie überlegt → Sie zieht ... in Betracht** يتغيّر البناء النحوي مع بقاء المعنى الرسمي متقاربًا.",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-06",
+      "section": "Helper Notes",
+      "sourceText": "- **حروف الجر الملازمة للأسماء الأكاديمية:** انتبه إلى **einen Antrag auf Zulassung stellen**، و**für einen Masterstudiengang / für den Studiengang**، و**bei der Studienberatung**، و**auf der Webseite zur Verfügung stehen**.",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-07",
+      "section": "Helper Notes",
+      "sourceText": "- **الفرق الإجرائي بين `einreichen` و`nachreichen`:** يعني **einreichen** تقديم الوثائق المطلوبة ضمن التقديم، بينما يعني **nachreichen** استكمال وثيقة ناقصة لاحقًا إذا أكدت **Studienberatung** ذلك كتابةً.",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-08",
+      "section": "Helper Notes",
+      "sourceText": "- **تتبّع المراحل في نص القراءة (`T05`):** ميّز بين فحص شروط القبول أولًا (**die Zulassungsvoraussetzungen prüfen**)، والوثائق الثلاث المطلوبة (**ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss**)، وشرط استكمال الوثائق الناقصة (**nur dann ..., wenn die Studienberatung dies schriftlich bestätigt**)، وإتمام التسجيل بعد القبول (**Nach der Zulassung müssen die Studierenden die Immatrikulation abschließen**).",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-09",
+      "section": "Helper Notes",
+      "sourceText": "- **أخلاقيات التمرين الرسمي:** استخدم مؤسسة خيالية (مثل **fiktive Campus-Akademie**) ولا تُدرج بيانات شخصية حقيقية أو مواعيد حقيقية أو شروطًا غير مذكورة في النص.",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-helper-10",
+      "section": "Helper Notes",
+      "sourceText": "- **توزيع نمط الإنجاز في `T08` (`P01` و`P02`):** تُنجز `P01` كتابةً فقط (استفسار رسمي من خمس إلى ست جمل يضم ثلاثة تراكيب اسمية فعلية على الأقل)، وتُنجز `P02` كتابةً مع قراءة جهرية ذاتية (إحاطة من خمس إلى ست جمل لمتقدم خيالي تلخّص إرشادات `T05` باستخدام ثلاثة تراكيب اسمية فعلية على الأقل).",
+      "status": "added",
+      "finding": "Added learner-facing pedagogical note clarifying B2.6 collocation grammar, reading/listening details, or P01/P02 task execution.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-06-dialogue-01",
+      "section": "Dialogue",
+      "sourceText": "**Meryem:** Ich möchte mich für einen Masterstudiengang bewerben. Was sollte ich zuerst tun?",
+      "status": "verified",
+      "finding": "Verified turn 1 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-01.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-dialogue-02",
+      "section": "Dialogue",
+      "sourceText": "**Berater:** Prüfen Sie, ob Sie alle Voraussetzungen erfüllen. Danach können Sie einen Antrag auf Zulassung stellen.",
+      "status": "verified",
+      "finding": "Verified turn 2 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-02.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-dialogue-03",
+      "section": "Dialogue",
+      "sourceText": "**Meryem:** Welche Unterlagen muss ich einreichen?",
+      "status": "verified",
+      "finding": "Verified turn 3 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-03.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-dialogue-04",
+      "section": "Dialogue",
+      "sourceText": "**Berater:** Das steht in der Ausschreibung. Ein Motivationsschreiben ist erforderlich; einen fehlenden Leistungsnachweis können Sie möglicherweise nachreichen.",
+      "status": "verified",
+      "finding": "Verified turn 4 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-04.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-dialogue-05",
+      "section": "Dialogue",
+      "sourceText": "**Meryem:** Und wenn ich noch zwischen zwei Studiengängen schwanke?",
+      "status": "verified",
+      "finding": "Verified turn 5 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-05.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-dialogue-06",
+      "section": "Dialogue",
+      "sourceText": "**Berater:** Ziehen Sie beide Möglichkeiten in Betracht und vereinbaren Sie einen Termin bei der Studienberatung.",
+      "status": "verified",
+      "finding": "Verified turn 6 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-06.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-dialogue-07",
+      "section": "Dialogue",
+      "sourceText": "**Meryem:** Vielen Dank. Dann treffe ich meine Entscheidung nach dem Gespräch.",
+      "status": "verified",
+      "finding": "Verified turn 7 speaker, academic advising register, collocation usage, and exact match with DL-B2-06-AUD-DLG-01-07.mp3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-01",
+      "section": "Reading",
+      "sourceText": "Hinweise der fiktiven Campus-Akademie",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-02",
+      "section": "Reading",
+      "sourceText": "Wer sich für den Studiengang „Kommunikation und Gesellschaft“ interessiert, sollte zuerst die Zulassungsvoraussetzungen prüfen.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-03",
+      "section": "Reading",
+      "sourceText": "Für die Bewerbung müssen ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss eingereicht werden.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-04",
+      "section": "Reading",
+      "sourceText": "Die Bewerbungsfrist steht in der jeweiligen Ausschreibung.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-05",
+      "section": "Reading",
+      "sourceText": "Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung dies schriftlich bestätigt.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-06",
+      "section": "Reading",
+      "sourceText": "Nach der Zulassung müssen die Studierenden die Immatrikulation abschließen.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-07",
+      "section": "Reading",
+      "sourceText": "Im Studium erwerben sie fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-08",
+      "section": "Reading",
+      "sourceText": "Die Unterlagen zum Verfahren stehen auf der Webseite der fiktiven Akademie zur Verfügung.",
+      "status": "verified",
+      "finding": "Verified sentence grammar, fictional Campus-Akademie framing, and exact match with DL-B2-06-AUD-READ-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-q-01",
+      "section": "Reading Comprehension",
+      "sourceText": "1. Was sollten Interessierte zuerst prüfen?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-q-02",
+      "section": "Reading Comprehension",
+      "sourceText": "2. Welche drei Dokumente müssen eingereicht werden?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-q-03",
+      "section": "Reading Comprehension",
+      "sourceText": "3. Wann können fehlende Unterlagen nachgereicht werden?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-q-04",
+      "section": "Reading Comprehension",
+      "sourceText": "4. Was müssen Studierende nach der Zulassung abschließen?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-q-05",
+      "section": "Reading Comprehension",
+      "sourceText": "5. Was erwerben die Studierenden während des Studiums?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-reading-q-06",
+      "section": "Reading Comprehension",
+      "sourceText": "6. Wo stehen die Unterlagen zur Verfügung?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-01",
+      "section": "Listening",
+      "sourceText": "Die Studienberaterin erklärt, dass die Bewerberinnen zuerst die Voraussetzungen prüfen sollen.",
+      "status": "verified",
+      "finding": "Verified listening sentence grammar, academic collocation usage, and exact match with DL-B2-06-AUD-LST-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-02",
+      "section": "Listening",
+      "sourceText": "Danach müssen sie eine Bewerbung einreichen und einen Antrag auf Zulassung stellen.",
+      "status": "verified",
+      "finding": "Verified listening sentence grammar, academic collocation usage, and exact match with DL-B2-06-AUD-LST-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-03",
+      "section": "Listening",
+      "sourceText": "Wer noch unsicher ist, kann verschiedene Studiengänge in Betracht ziehen.",
+      "status": "verified",
+      "finding": "Verified listening sentence grammar, academic collocation usage, and exact match with DL-B2-06-AUD-LST-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-04",
+      "section": "Listening",
+      "sourceText": "Im Beratungsgespräch werden Fragen geklärt, damit die Interessierten eine gut informierte Entscheidung treffen können.",
+      "status": "verified",
+      "finding": "Verified listening sentence grammar, academic collocation usage, and exact match with DL-B2-06-AUD-LST-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-05",
+      "section": "Listening",
+      "sourceText": "Die genauen Bedingungen stehen in der fiktiven Ausschreibung.",
+      "status": "verified",
+      "finding": "Verified listening sentence grammar, academic collocation usage, and exact match with DL-B2-06-AUD-LST-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-q-01",
+      "section": "Listening Comprehension",
+      "sourceText": "1. Was sollen Interessierte zuerst prüfen?",
+      "status": "verified",
+      "finding": "Verified listening comprehension question against written script and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-q-02",
+      "section": "Listening Comprehension",
+      "sourceText": "2. Was müssen sie danach einreichen?",
+      "status": "verified",
+      "finding": "Verified listening comprehension question against written script and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-q-03",
+      "section": "Listening Comprehension",
+      "sourceText": "3. Was kann eine unsichere Person in Betracht ziehen?",
+      "status": "verified",
+      "finding": "Verified listening comprehension question against written script and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-q-04",
+      "section": "Listening Comprehension",
+      "sourceText": "4. Was geschieht im Beratungsgespräch?",
+      "status": "verified",
+      "finding": "Verified listening comprehension question against written script and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-listening-q-05",
+      "section": "Listening Comprehension",
+      "sourceText": "5. Wo stehen die genauen Bedingungen?",
+      "status": "verified",
+      "finding": "Verified listening comprehension question against written script and Section 7 answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-06-T01",
+      "section": "Exercises",
+      "sourceText": "### تمرين 1 — صِل التركيب بمعناه",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems, target collocations, and Section 7 answer key alignment.",
+      "action": "Preserved exercise items and answer key.",
+      "items": [
+        "1. **einen Antrag stellen**",
+        "2. **eine Voraussetzung erfüllen**",
+        "3. **eine Prüfung ablegen**",
+        "4. **eine Entscheidung treffen**"
+      ]
+    },
+    {
+      "id": "DL-B2-06-T02",
+      "section": "Exercises",
+      "sourceText": "### تمرين 2 — أكمل التركيب الاسمي الفعلي",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems, target collocations, and Section 7 answer key alignment.",
+      "action": "Preserved exercise items and answer key.",
+      "items": [
+        "1. Für die Zulassung muss sie einen Antrag ______. (stellen)",
+        "2. Er möchte neue fachliche Kenntnisse ______. (erwerben)",
+        "3. Die Bewerberin muss alle Voraussetzungen ______. (erfüllen)",
+        "4. Die Unterlagen stehen online zur Verfügung; den Leistungsnachweis kann er später ______. (nachreichen)"
+      ]
+    },
+    {
+      "id": "DL-B2-06-T03",
+      "section": "Exercises",
+      "sourceText": "### تمرين 3 — أعد الصياغة بالتركيب المحدد",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems, target collocations, and Section 7 answer key alignment.",
+      "action": "Preserved exercise items and answer key.",
+      "items": [
+        "1. **Sie beantragt die Zulassung.** → Sie stellt einen Antrag auf ______.",
+        "2. **Er entscheidet sich nach der Beratung.** → Er trifft nach der Beratung eine ______.",
+        "3. **Sie überlegt, ob ein Teilzeitstudium möglich ist.** → Sie zieht ein Teilzeitstudium in ______.",
+        "4. **Die Dokumente sind online verfügbar.** → Die Dokumente ______ online zur Verfügung."
+      ]
+    },
+    {
+      "id": "DL-B2-06-T04",
+      "section": "Exercises",
+      "sourceText": "### تمرين 4 — اختر الفعل المناسب",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems, target collocations, and Section 7 answer key alignment.",
+      "action": "Preserved exercise items and answer key.",
+      "items": [
+        "1. eine Bewerbung ______",
+        "2. eine Voraussetzung ______",
+        "3. einen Antrag ______",
+        "4. eine Prüfung ______"
+      ]
+    },
+    {
+      "id": "DL-B2-06-T05",
+      "section": "Exercises",
+      "sourceText": "### تمرين 5 — فهم القراءة",
+      "status": "verified",
+      "finding": "Verified 5 exercise subitems, target collocations, and Section 7 answer key alignment.",
+      "action": "Preserved exercise items and answer key.",
+      "items": [
+        "1. «Kommunikation und Gesellschaft» برنامج حقيقي محدد في جامعة حقيقية.",
+        "2. يطلب البرنامج الخيالي نموذجًا ورسالة دافع وإثباتًا بالشهادة السابقة.",
+        "3. يمكن استكمال الوثائق الناقصة دائمًا دون تأكيد.",
+        "4. بعد القبول، يجب على الطلبة إتمام التسجيل.",
+        "5. تتاح الوثائق على موقع الأكاديمية الخيالية."
+      ]
+    },
+    {
+      "id": "DL-B2-06-T06",
+      "section": "Exercises",
+      "sourceText": "### تمرين 6 — فهم الاستماع",
+      "status": "refined",
+      "finding": "Split run-on numbered items onto 5 clean lines and numbered answer key entries 1–5.",
+      "action": "Formatted T06 items and answer key.",
+      "items": [
+        "1. Zuerst sollen Interessierte die ______ prüfen.",
+        "2. Danach müssen sie eine ______ einreichen.",
+        "3. Eine unsichere Person kann verschiedene Studiengänge in ______ ziehen.",
+        "4. Im Beratungsgespräch werden ______ geklärt.",
+        "5. Die genauen Bedingungen stehen in der fiktiven ______."
+      ]
+    },
+    {
+      "id": "DL-B2-06-T07",
+      "section": "Exercises",
+      "sourceText": "### تمرين 7 — أصلح التركيب غير المناسب",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems, target collocations, and Section 7 answer key alignment.",
+      "action": "Preserved exercise items and answer key.",
+      "items": [
+        "1. **einen Antrag erfüllen**",
+        "2. **eine Voraussetzung stellen**",
+        "3. **eine Prüfung treffen**",
+        "4. **eine Entscheidung ablegen**"
+      ]
+    },
+    {
+      "id": "DL-B2-06-T08",
+      "section": "Exercises",
+      "sourceText": "### تمرين 8 — اكتب استفسارًا أكاديميًا",
+      "status": "refined",
+      "finding": "Synchronized T08 with P01 (5–6 sentence formal inquiry, writing-only) and P02 (5–6 sentence applicant briefing based on T03/T05/T06, writing + self-guided speaking) and added 10 model sentences across P01 and P02.",
+      "action": "Updated T08 prompt and Section 7 answer key.",
+      "items": [
+        "Sehr geehrtes Team der Studienberatung an der fiktiven Campus-Akademie, ich ziehe den Studiengang „Kommunikation und Gesellschaft“ im kommenden Jahr ernsthaft in Betracht.",
+        "Vorab möchte ich prüfen, ob ich mit meinem bisherigen Abschluss bereits alle Voraussetzungen für das Programm erfülle.",
+        "Könnten Sie mir bitte mitteilen, welche Unterlagen ich zusammen mit dem Motivationsschreiben einreichen muss, bevor ich einen Antrag auf Zulassung stelle?",
+        "Außerdem würde ich gern wissen, unter welchen Bedingungen ich einen noch fehlenden Leistungsnachweis später nachreichen kann.",
+        "Vielen Dank für Ihre Auskunft, damit ich nach Ihrer Rückmeldung eine gut informierte Entscheidung treffen kann.",
+        "Wenn du den fiktiven Studiengang „Kommunikation und Gesellschaft“ in Betracht ziehst, solltest du zuerst prüfen, ob du alle Zulassungsvoraussetzungen erfüllst.",
+        "Danach musst du eine Bewerbung einreichen und einen Antrag auf Zulassung stellen, wofür ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss erforderlich sind.",
+        "Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung der fiktiven Campus-Akademie dies schriftlich bestätigt.",
+        "Alle Informationen zum Verfahren stehen auf der Webseite und in der fiktiven Ausschreibung zur Verfügung, und im Beratungsgespräch lassen sich offene Fragen klären, um eine gut informierte Entscheidung zu treffen.",
+        "Nach der Zulassung schließen die Studierenden die Immatrikulation ab, erwerben im Studium fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab."
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q01",
+      "section": "Quiz",
+      "sourceText": "ما المعنى المناسب للتركيب **eine Voraussetzung erfüllen**؟",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=1, 3 options, sourceTaskIds=['DL-B2-06-T01'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "يتخذ قرارًا.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "يستوفي شرطًا.",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 2,
+          "text": "يقدّم طلبًا رسميًا.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q02",
+      "section": "Quiz",
+      "sourceText": "أكمل بالتركيب الاسمي الفعلي المناسب: **Für die Zulassung muss sie einen Antrag ___.**",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=1, 3 options, sourceTaskIds=['DL-B2-06-T02'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "gestellt",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "stellen",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 2,
+          "text": "stellt",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q03",
+      "section": "Quiz",
+      "sourceText": "اختر الإكمال الصحيح مع الفعل الناقص: **Den Leistungsnachweis kann er später ___.**",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=0, 3 options, sourceTaskIds=['DL-B2-06-T02'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "nachreichen",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 1,
+          "text": "reicht nach",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 2,
+          "text": "nachreichte",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q04",
+      "section": "Quiz",
+      "sourceText": "أكمل إعادة الصياغة: **Er entscheidet sich nach der Beratung. → Er trifft nach der Beratung eine ___.**",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=1, 3 options, sourceTaskIds=['DL-B2-06-T03'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Voraussetzung",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "Entscheidung",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 2,
+          "text": "Bewerbung",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q05",
+      "section": "Quiz",
+      "sourceText": "اختر التركيب الصحيح: **Sie überlegt, ob ein Teilzeitstudium möglich ist. → Sie zieht ein Teilzeitstudium ___.**",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=2, 3 options, sourceTaskIds=['DL-B2-06-T03'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "zur Verfügung",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "auf Zulassung",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 2,
+          "text": "in Betracht",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q06",
+      "section": "Quiz",
+      "sourceText": "اختر الفعل المناسب للتركيب: **Am Ende des Kurses legt sie eine Prüfung ___.**",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=0, 3 options, sourceTaskIds=['DL-B2-06-T04'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "ab",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 1,
+          "text": "erfüllt",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 2,
+          "text": "trifft",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q07",
+      "section": "Quiz",
+      "sourceText": "بحسب إرشادات الأكاديمية الخيالية في T05، متى يمكن استكمال الوثائق الناقصة لاحقًا؟",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=1, 3 options, sourceTaskIds=['DL-B2-06-T05'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "في كل الحالات، دون الرجوع إلى جهة أخرى.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "فقط إذا أكدت Studienberatung ذلك كتابةً.",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 2,
+          "text": "بعد التسجيل الجامعي تلقائيًا، حتى دون تأكيد.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q08",
+      "section": "Quiz",
+      "sourceText": "ما الوثائق الثلاث التي يطلبها البرنامج الخيالي ضمن التقديم، بحسب T05؟",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=2, 3 options, sourceTaskIds=['DL-B2-06-T05'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "جواز سفر، وشهادة لغة، وإثبات سكن.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "سيرة ذاتية، وكشف حساب، ورسالتا توصية.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 2,
+          "text": "نموذج، ورسالة دافع، وإثبات للشهادة السابقة.",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q09",
+      "section": "Quiz",
+      "sourceText": "بحسب نص T06 المكتوب، ما فائدة Gespräch bei der Studienberatung للشخص الذي لم يحسم اختياره؟",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=0, 3 options, sourceTaskIds=['DL-B2-06-T06'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "تُوضّح الأسئلة، فيستطيع المهتم اتخاذ قرار مستنير.",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        },
+        {
+          "index": 1,
+          "text": "يضمن له القبول في البرنامج الدراسي الأول.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 2,
+          "text": "يغيّر مهلة التقديم حسب طلبه.",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-Q10",
+      "section": "Quiz",
+      "sourceText": "أصلح التركيب غير المناسب **eine Voraussetzung stellen** باختيار الفعل الصحيح.",
+      "status": "verified",
+      "finding": "Verified prompt, answerIndex=2, 3 options, sourceTaskIds=['DL-B2-06-T07'], and Arabic explanation.",
+      "action": "Preserved in .assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "eine Voraussetzung treffen",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 1,
+          "text": "eine Voraussetzung ablegen",
+          "role": "distractor",
+          "note": "Plausible contrast distractor verified false in context."
+        },
+        {
+          "index": 2,
+          "text": "eine Voraussetzung erfüllen",
+          "role": "correct",
+          "note": "Matches source lesson and explanation."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-P01",
+      "section": "Performance Tasks",
+      "sourceText": "اكتب متن استفسار رسمي من خمس إلى ست جمل ألمانية إلى مكتب إرشاد دراسي خيالي. استخدم ثلاثة تراكيب اسمية فعلية على الأقل من الدرس، وحافظ على أداة الاسم وحرف الجر إذا كان التركيب يتطلبهما، مثل einen Antrag auf Zulassung stellen أو etwas in Betracht ziehen. اسأل عن شرط أو وثيقة أو إجراء دراسي دون اختراع قاعدة قبول أو مهلة حقيقية ودون إدخال بيانات شخصية. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "status": "refined",
+      "finding": "Synchronized modality=['writing'], speakAloud=False, minChars=160, and sourceTaskIds=['DL-B2-06-T08'].",
+      "action": "Updated task in .assessment.json and synced with T08.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "استفسار رسمي مكتوب من خمس إلى ست جمل ألمانية إلى جهة دراسية خيالية، يتضمن سؤالًا مناسبًا وثلاثة تراكيب اسمية فعلية صحيحة على الأقل، دون بيانات شخصية أو مواعيد حقيقية.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "تُفهم غاية الاستفسار، ويلائم أسلوبه جهة إرشاد رسمية، ولا ينسب إلى مؤسسة حقيقية شرط قبول أو مهلة غير موثقة.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يستخدم ثلاثة تراكيب اسمية فعلية ملائمة من الدرس، مع مطابقة الاسم والفعل وحرف الجر المطلوب وترتيب الفعل المنفصل عند الحاجة.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-06-P02",
+      "section": "Performance Tasks",
+      "sourceText": "استنادًا إلى إرشادات الأكاديمية الخيالية في قراءة T05 ونص الاستماع المكتوب في T06، اكتب إحاطة من خمس إلى ست جمل ألمانية لمتقدم خيالي ثم اقرأها بصوت مسموع لنفسك. اذكر الوثائق الثلاث المطلوبة، وشرط استكمال الوثائق الناقصة، وما الذي يجب فعله بعد القبول. استخدم ثلاثة تراكيب اسمية فعلية ملائمة على الأقل من الدرس، مثل eine Bewerbung einreichen, einen Antrag auf Zulassung stellen أو zur Verfügung stehen. لا تضف شروطًا أو مواعيد غير موجودة في المصدر، ولا تقدّم الأكاديمية الخيالية على أنها مؤسسة حقيقية. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized modality=['writing', 'speaking'], speakAloud=True, minChars=180, and sourceTaskIds=['DL-B2-06-T03', 'DL-B2-06-T05', 'DL-B2-06-T06', 'DL-B2-06-T08'].",
+      "action": "Updated task in .assessment.json and synced with T08.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "إحاطة من خمس إلى ست جمل ألمانية تذكر الوثائق الثلاث في T05، وشرط التأكيد الكتابي قبل استكمال الناقص، والخطوة التالية بعد القبول، وتستخدم ثلاثة تراكيب اسمية فعلية مناسبة.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "تطابق المعلومات نص T05: نموذج ورسالة دافع وإثبات للشهادة السابقة؛ استكمال الناقص فقط بعد تأكيد كتابي من Studienberatung؛ وإتمام التسجيل بعد القبول. لا تُضاف متطلبات أو مواعيد غير واردة.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يستخدم ثلاثة تراكيب اسمية فعلية صحيحة من الدرس، ويحافظ على العلاقة بين الاسم والفعل وحرف الجر اللازم، ويضع الفعل المنفصل في موضعه الصحيح، ويقرأ النص بصوت مسموع لنفسه دون تسجيل.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        }
+      ]
+    },
+    {
+      "id": "b2-06-p01-model-01",
+      "section": "Written Models",
+      "sourceText": "Sehr geehrtes Team der Studienberatung an der fiktiven Campus-Akademie, ich ziehe den Studiengang „Kommunikation und Gesellschaft“ im kommenden Jahr ernsthaft in Betracht. Vorab möchte ich prüfen, ob ich mit meinem bisherigen Abschluss bereits alle Voraussetzungen für das Programm erfülle. Könnten Sie mir bitte mitteilen, welche Unterlagen ich zusammen mit dem Motivationsschreiben einreichen muss, bevor ich einen Antrag auf Zulassung stelle? Außerdem würde ich gern wissen, unter welchen Bedingungen ich einen noch fehlenden Leistungsnachweis später nachreichen kann. Vielen Dank für Ihre Auskunft, damit ich nach Ihrer Rückmeldung eine gut informierte Entscheidung treffen kann.",
+      "status": "added",
+      "finding": "5-sentence model response (683 chars) satisfying formal Sie register, fictional Campus-Akademie context, and six lesson collocations/verbs (in Betracht ziehen, Voraussetzungen erfüllen, Unterlagen einreichen, einen Antrag auf Zulassung stellen, nachreichen, eine Entscheidung treffen).",
+      "action": "Added in Section 7 answer key and verified in test_progression.cjs.",
+      "items": [
+        "Sehr geehrtes Team der Studienberatung an der fiktiven Campus-Akademie, ich ziehe den Studiengang „Kommunikation und Gesellschaft“ im kommenden Jahr ernsthaft in Betracht.",
+        "Vorab möchte ich prüfen, ob ich mit meinem bisherigen Abschluss bereits alle Voraussetzungen für das Programm erfülle.",
+        "Könnten Sie mir bitte mitteilen, welche Unterlagen ich zusammen mit dem Motivationsschreiben einreichen muss, bevor ich einen Antrag auf Zulassung stelle?",
+        "Außerdem würde ich gern wissen, unter welchen Bedingungen ich einen noch fehlenden Leistungsnachweis später nachreichen kann.",
+        "Vielen Dank für Ihre Auskunft, damit ich nach Ihrer Rückmeldung eine gut informierte Entscheidung treffen kann."
+      ]
+    },
+    {
+      "id": "b2-06-p02-model-01",
+      "section": "Written Models",
+      "sourceText": "Wenn du den fiktiven Studiengang „Kommunikation und Gesellschaft“ in Betracht ziehst, solltest du zuerst prüfen, ob du alle Zulassungsvoraussetzungen erfüllst. Danach musst du eine Bewerbung einreichen und einen Antrag auf Zulassung stellen, wofür ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss erforderlich sind. Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung der fiktiven Campus-Akademie dies schriftlich bestätigt. Alle Informationen zum Verfahren stehen auf der Webseite und in der fiktiven Ausschreibung zur Verfügung, und im Beratungsgespräch lassen sich offene Fragen klären, um eine gut informierte Entscheidung zu treffen. Nach der Zulassung schließen die Studierenden die Immatrikulation ab, erwerben im Studium fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab.",
+      "status": "added",
+      "finding": "5-sentence model response (865 chars) summarizing the 3 required documents, written confirmation rule for missing documents, post-admission enrollment/coursework, and 8 target collocations/verbs.",
+      "action": "Added in Section 7 answer key and verified in test_progression.cjs.",
+      "items": [
+        "Wenn du den fiktiven Studiengang „Kommunikation und Gesellschaft“ in Betracht ziehst, solltest du zuerst prüfen, ob du alle Zulassungsvoraussetzungen erfüllst.",
+        "Danach musst du eine Bewerbung einreichen und einen Antrag auf Zulassung stellen, wofür ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss erforderlich sind.",
+        "Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung der fiktiven Campus-Akademie dies schriftlich bestätigt.",
+        "Alle Informationen zum Verfahren stehen auf der Webseite und in der fiktiven Ausschreibung zur Verfügung, und im Beratungsgespräch lassen sich offene Fragen klären, um eine gut informierte Entscheidung zu treffen.",
+        "Nach der Zulassung schließen die Studierenden die Immatrikulation ab, erwerben im Studium fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab."
+      ]
+    },
+    {
+      "id": "b2-06-card-01",
+      "section": "Review Cards",
+      "sourceText": "- **einen Antrag auf Zulassung stellen** → يقدّم طلبًا للقبول.",
+      "status": "verified",
+      "finding": "Verified review card collocation and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-card-02",
+      "section": "Review Cards",
+      "sourceText": "- **eine Voraussetzung erfüllen** → يستوفي شرطًا.",
+      "status": "verified",
+      "finding": "Verified review card collocation and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-card-03",
+      "section": "Review Cards",
+      "sourceText": "- **eine Prüfung ablegen** → يتقدّم لامتحان.",
+      "status": "verified",
+      "finding": "Verified review card collocation and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-card-04",
+      "section": "Review Cards",
+      "sourceText": "- **eine Entscheidung treffen** → يتخذ قرارًا.",
+      "status": "verified",
+      "finding": "Verified review card collocation and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-06-card-05",
+      "section": "Review Cards",
+      "sourceText": "- **zur Verfügung stehen** → يكون متاحًا.",
+      "status": "verified",
+      "finding": "Verified review card collocation and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-06-AUD-PHR-01",
+      "section": "Audio",
+      "sourceText": "1) مفردات التقديم والدراسة",
+      "status": "verified",
+      "finding": "Verified 15 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Der Studiengang, die Studiengänge",
+        "Die Zulassung, die Zulassungen",
+        "Die Voraussetzung, die Voraussetzungen",
+        "Der Leistungsnachweis, die Leistungsnachweise",
+        "Die Bewerbung, die Bewerbungen",
+        "Das Motivationsschreiben, die Motivationsschreiben",
+        "Die Immatrikulation, die Immatrikulationen",
+        "Die Bewerbungsfrist, die Bewerbungsfristen",
+        "Die Studienberatung, die Studienberatungen",
+        "Der Nachweis, die Nachweise",
+        "Fristgerecht",
+        "Erforderlich",
+        "Nachreichen, reicht nach",
+        "Erwerben, erwirbt",
+        "Einreichen, reicht ein"
+      ]
+    },
+    {
+      "id": "DL-B2-06-AUD-MODEL-01",
+      "section": "Audio",
+      "sourceText": "2) تراكيب اسمية فعلية في السياق الأكاديمي",
+      "status": "verified",
+      "finding": "Verified 18 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Einen Antrag stellen",
+        "Sie stellt einen Antrag auf Zulassung",
+        "Eine Bewerbung einreichen",
+        "Er reicht die Bewerbung fristgerecht ein",
+        "Eine Voraussetzung erfüllen",
+        "Die Bewerberin erfüllt alle Voraussetzungen",
+        "Eine Prüfung ablegen",
+        "Am Ende des Kurses legt sie eine Prüfung ab",
+        "Kenntnisse erwerben",
+        "Die Studierenden erwerben fachliche Kenntnisse",
+        "Eine Entscheidung treffen",
+        "Er trifft nach der Beratung eine Entscheidung",
+        "Etwas in Betracht ziehen",
+        "Sie zieht einen Teilzeitstudiengang in Betracht",
+        "Zur Verfügung stehen",
+        "Die Unterlagen stehen online zur Verfügung",
+        "Einen Antrag auf, Akkusativ, stellen",
+        "Etwas in Betracht ziehen"
+      ]
+    },
+    {
+      "id": "DL-B2-06-AUD-DLG-01",
+      "section": "Audio",
+      "sourceText": "3) حوار أصلي في الإرشاد الدراسي",
+      "status": "verified",
+      "finding": "Verified 7 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Meryem: Ich möchte mich für einen Masterstudiengang bewerben. Was sollte ich zuerst tun?",
+        "Berater: Prüfen Sie, ob Sie alle Voraussetzungen erfüllen. Danach können Sie einen Antrag auf Zulassung stellen.",
+        "Meryem: Welche Unterlagen muss ich einreichen?",
+        "Berater: Das steht in der Ausschreibung. Ein Motivationsschreiben ist erforderlich; einen fehlenden Leistungsnachweis können Sie möglicherweise nachreichen.",
+        "Meryem: Und wenn ich noch zwischen zwei Studiengängen schwanke?",
+        "Berater: Ziehen Sie beide Möglichkeiten in Betracht und vereinbaren Sie einen Termin bei der Studienberatung.",
+        "Meryem: Vielen Dank. Dann treffe ich meine Entscheidung nach dem Gespräch."
+      ]
+    },
+    {
+      "id": "DL-B2-06-AUD-READ-01",
+      "section": "Audio",
+      "sourceText": "4) نص قراءة أصلي: إرشادات برنامج خيالي",
+      "status": "verified",
+      "finding": "Verified 8 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Hinweise der fiktiven Campus-Akademie",
+        "Wer sich für den Studiengang „Kommunikation und Gesellschaft“ interessiert, sollte zuerst die Zulassungsvoraussetzungen prüfen",
+        "Für die Bewerbung müssen ein Formular, ein Motivationsschreiben und ein Nachweis über den vorherigen Abschluss eingereicht werden",
+        "Die Bewerbungsfrist steht in der jeweiligen Ausschreibung",
+        "Fehlende Unterlagen können nur dann nachgereicht werden, wenn die Studienberatung dies schriftlich bestätigt",
+        "Nach der Zulassung müssen die Studierenden die Immatrikulation abschließen",
+        "Im Studium erwerben sie fachliche Kenntnisse und legen am Ende mehrere Leistungsnachweise ab",
+        "Die Unterlagen zum Verfahren stehen auf der Webseite der fiktiven Akademie zur Verfügung"
+      ]
+    },
+    {
+      "id": "DL-B2-06-AUD-LST-01",
+      "section": "Audio",
+      "sourceText": "5) نص استماع معدّ للنطق",
+      "status": "verified",
+      "finding": "Verified 5 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Studienberaterin erklärt, dass die Bewerberinnen zuerst die Voraussetzungen prüfen sollen",
+        "Danach müssen sie eine Bewerbung einreichen und einen Antrag auf Zulassung stellen",
+        "Wer noch unsicher ist, kann verschiedene Studiengänge in Betracht ziehen",
+        "Im Beratungsgespräch werden Fragen geklärt, damit die Interessierten eine gut informierte Entscheidung treffen können",
+        "Die genauen Bedingungen stehen in der fiktiven Ausschreibung"
+      ]
+    }
+  ]
+}
