@@ -2044,16 +2044,28 @@
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "4d84421c0ab548dd2654e266afa5aa1f5e79df91"
+      "queriedAtHead": "07f5abe81649e3484f4ff4efa1b7153371fae6ae"
     },
     "implementationDeployment": {
       "state": "pending",
       "description": "Deployment rate limited or pending in Vercel",
       "deployments": []
     },
-    "reportPushed": false,
+    "reportPushed": true,
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportCommit": "07f5abe81649e3484f4ff4efa1b7153371fae6ae",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR44 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   },
   "limits": [
     "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
