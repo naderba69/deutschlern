@@ -394,7 +394,13 @@ def main() -> None:
         answer_keys = rendered.count('class="answer-key"')
         assert answer_keys == 1, f"Expected one hidden/revealable answer key in {source_name}; got {answer_keys}"
         total_answer_keys += answer_keys
-        total_vocabulary += len(lesson.get("vocabulary", []))
+        vocab_items = lesson.get("vocabulary", [])
+        for idx, v_item in enumerate(vocab_items, 1):
+            assert v_item.get("id") == f"{lesson['id']}-word-{idx}", f"Unexpected vocabulary ID in {source_name}: {v_item}"
+            assert v_item.get("word", "").strip() and v_item.get("translation", "").strip(), f"Empty vocabulary word/translation in {source_name}: {v_item}"
+            assert not re.search(r"[\u0600-\u06FF]", v_item["word"]), f"Arabic script in German vocabulary term in {source_name}: {v_item}"
+            assert not re.search(r"\*\*|`", v_item["word"] + v_item["translation"] + v_item.get("example", "")), f"Unstripped Markdown in vocabulary item in {source_name}: {v_item}"
+        total_vocabulary += len(vocab_items)
 
         parser = BalanceChecker()
         parser.feed(rendered)
@@ -402,6 +408,10 @@ def main() -> None:
         assert not parser.errors and not parser.stack, (
             f"Unbalanced generated HTML in {source_name}: {parser.errors}; open={parser.stack}"
         )
+
+    assert total_vocabulary == 754, f"Expected 754 vocabulary items; found {total_vocabulary}"
+    vocab_with_detail = sum(1 for l in lessons for v in l.get("vocabulary", []) if v.get("example", "").strip())
+    assert vocab_with_detail == 541, f"Expected 541 vocabulary items with plural/conjugation/example detail; found {vocab_with_detail}"
 
     check = COURSE.get("a0TransitionCheck", {})
     assert check.get("sourceFile") == "content/A0/lesson-06-placement-check.md", "A0 transition test is missing"
@@ -507,8 +517,22 @@ def main() -> None:
                 f"Stale source_line/source_heading in audio-asset-register.csv: {aid}"
             )
 
+    app_text = (ROOT / "app.js").read_text(encoding="utf-8")
+    for snippet in (
+        'class="german-word" dir="ltr" lang="de"',
+        'class="flash-word" dir="ltr" lang="de"',
+        '<span dir="ltr" lang="de">${escapeHTML(segment.text)}</span>',
+        'class="word-example" dir="auto"',
+        'class="flash-example" dir="auto"',
+    ):
+        assert snippet in app_text, f"Missing WCAG 3.1.2 / bidi attribute snippet in app.js: {snippet}"
+
+    css_text = (ROOT / "styles.css").read_text(encoding="utf-8")
+    assert "linear-gradient" not in css_text, "Non-deterministic linear-gradient backgrounds must not remain in styles.css"
+    assert ".hero-banner::before" not in css_text and ".art-circle::before" not in css_text, "Overlapping decorative pseudo-elements must not remain in styles.css"
+
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 56, f"Expected 56 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 57, f"Expected 57 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():

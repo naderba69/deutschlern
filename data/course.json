@@ -2155,67 +2155,67 @@
           "id": "a1-02-work-family-word-1",
           "word": "die Familie",
           "translation": "الأسرة",
-          "example": ""
+          "example": "die Familien"
         },
         {
           "id": "a1-02-work-family-word-2",
           "word": "der Vater",
           "translation": "الأب",
-          "example": ""
+          "example": "die Väter"
         },
         {
           "id": "a1-02-work-family-word-3",
           "word": "die Mutter",
           "translation": "الأم",
-          "example": ""
+          "example": "die Mütter"
         },
         {
           "id": "a1-02-work-family-word-4",
           "word": "der Bruder",
           "translation": "الأخ",
-          "example": ""
+          "example": "die Brüder"
         },
         {
           "id": "a1-02-work-family-word-5",
           "word": "die Schwester",
           "translation": "الأخت",
-          "example": ""
+          "example": "die Schwestern"
         },
         {
           "id": "a1-02-work-family-word-6",
           "word": "der Sohn",
           "translation": "الابن",
-          "example": ""
+          "example": "die Söhne"
         },
         {
           "id": "a1-02-work-family-word-7",
           "word": "die Tochter",
           "translation": "الابنة",
-          "example": ""
+          "example": "die Töchter"
         },
         {
           "id": "a1-02-work-family-word-8",
           "word": "das Kind",
           "translation": "الطفل/الابن أو الابنة",
-          "example": ""
+          "example": "die Kinder"
         },
         {
           "id": "a1-02-work-family-word-9",
           "word": "die Eltern",
           "translation": "الوالدان",
-          "example": ""
+          "example": "— (جمع)"
         },
         {
           "id": "a1-02-work-family-word-10",
           "word": "der Großvater",
           "translation": "الجد",
-          "example": ""
+          "example": "die Großväter"
         },
         {
           "id": "a1-02-work-family-word-11",
           "word": "die Großmutter",
           "translation": "الجدة",
-          "example": ""
+          "example": "die Großmütter"
         }
       ],
       "quiz": [
@@ -2528,61 +2528,61 @@
           "id": "a1-03-city-cafe-hotel-word-1",
           "word": "der Bahnhof",
           "translation": "محطة القطار",
-          "example": ""
+          "example": "die Bahnhöfe"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-2",
           "word": "das Café",
           "translation": "مقهى",
-          "example": ""
+          "example": "die Cafés"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-3",
           "word": "das Hotel",
           "translation": "فندق",
-          "example": ""
+          "example": "die Hotels"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-4",
           "word": "der Markt",
           "translation": "السوق",
-          "example": ""
+          "example": "die Märkte"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-5",
           "word": "das Museum",
           "translation": "المتحف",
-          "example": ""
+          "example": "die Museen"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-6",
           "word": "die Straße",
           "translation": "الشارع",
-          "example": ""
+          "example": "die Straßen"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-7",
           "word": "die Apotheke",
           "translation": "الصيدلية",
-          "example": ""
+          "example": "die Apotheken"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-8",
           "word": "der Supermarkt",
           "translation": "السوبرماركت/متجر المواد الغذائية بالخدمة الذاتية",
-          "example": ""
+          "example": "die Supermärkte"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-9",
           "word": "der Platz",
           "translation": "الساحة",
-          "example": ""
+          "example": "die Plätze"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-10",
           "word": "die Haltestelle",
           "translation": "موقف نقل عام مثل الحافلة أو الترام",
-          "example": ""
+          "example": "die Haltestellen"
         },
         {
           "id": "a1-03-city-cafe-hotel-word-11",
@@ -2600,7 +2600,7 @@
           "id": "a1-03-city-cafe-hotel-word-13",
           "word": "die Ecke",
           "translation": "الزاوية",
-          "example": ""
+          "example": "die Ecken"
         }
       ],
       "quiz": [
@@ -3292,91 +3292,91 @@
           "id": "a1-05-food-drink-word-1",
           "word": "das Brot",
           "translation": "الخبز",
-          "example": ""
+          "example": "die Brote"
         },
         {
           "id": "a1-05-food-drink-word-2",
           "word": "das Ei",
           "translation": "البيضة",
-          "example": ""
+          "example": "die Eier"
         },
         {
           "id": "a1-05-food-drink-word-3",
           "word": "der Käse",
           "translation": "الجبن",
-          "example": ""
+          "example": "die Käse؛ للمادة غالبًا مفرد"
         },
         {
           "id": "a1-05-food-drink-word-4",
           "word": "die Milch",
           "translation": "الحليب",
-          "example": ""
+          "example": "في الاستعمال اليومي غالبًا مفرد"
         },
         {
           "id": "a1-05-food-drink-word-5",
           "word": "der Apfel",
           "translation": "التفاحة",
-          "example": ""
+          "example": "die Äpfel"
         },
         {
           "id": "a1-05-food-drink-word-6",
           "word": "die Tomate",
           "translation": "الطماطم",
-          "example": ""
+          "example": "die Tomaten"
         },
         {
           "id": "a1-05-food-drink-word-7",
           "word": "das Obst",
           "translation": "الفاكهة",
-          "example": ""
+          "example": "دون جمع؛ اسم جامع للفاكهة"
         },
         {
           "id": "a1-05-food-drink-word-8",
           "word": "das Gemüse",
           "translation": "الخضار",
-          "example": ""
+          "example": "die Gemüse؛ نستعمله هنا اسمًا جامعًا"
         },
         {
           "id": "a1-05-food-drink-word-9",
           "word": "das Wasser",
           "translation": "الماء",
-          "example": ""
+          "example": "للمشروب غالبًا مفرد؛ له جموع في استعمالات أخرى"
         },
         {
           "id": "a1-05-food-drink-word-10",
           "word": "der Tee",
           "translation": "الشاي",
-          "example": ""
+          "example": "die Tees للأنواع"
         },
         {
           "id": "a1-05-food-drink-word-11",
           "word": "der Kaffee",
           "translation": "القهوة",
-          "example": ""
+          "example": "die Kaffees"
         },
         {
           "id": "a1-05-food-drink-word-12",
           "word": "die Suppe",
           "translation": "الحساء",
-          "example": ""
+          "example": "die Suppen"
         },
         {
           "id": "a1-05-food-drink-word-13",
           "word": "das Frühstück",
           "translation": "الفطور",
-          "example": ""
+          "example": "die Frühstücke"
         },
         {
           "id": "a1-05-food-drink-word-14",
           "word": "essen",
           "translation": "يأكل",
-          "example": ""
+          "example": "— فعل"
         },
         {
           "id": "a1-05-food-drink-word-15",
           "word": "trinken",
           "translation": "يشرب",
-          "example": ""
+          "example": "— فعل"
         }
       ],
       "quiz": [
@@ -4445,79 +4445,79 @@
           "id": "a1-08-shopping-clothes-word-1",
           "word": "die Jacke",
           "translation": "السترة",
-          "example": ""
+          "example": "die Jacken"
         },
         {
           "id": "a1-08-shopping-clothes-word-2",
           "word": "das Hemd",
           "translation": "القميص",
-          "example": ""
+          "example": "die Hemden"
         },
         {
           "id": "a1-08-shopping-clothes-word-3",
           "word": "das T-Shirt",
           "translation": "تي شيرت (قميص قصير الأكمام)",
-          "example": ""
+          "example": "die T-Shirts"
         },
         {
           "id": "a1-08-shopping-clothes-word-4",
           "word": "die Hose",
           "translation": "البنطال",
-          "example": ""
+          "example": "die Hosen"
         },
         {
           "id": "a1-08-shopping-clothes-word-5",
           "word": "der Schuh",
           "translation": "الحذاء",
-          "example": ""
+          "example": "die Schuhe"
         },
         {
           "id": "a1-08-shopping-clothes-word-6",
           "word": "der Mantel",
           "translation": "المعطف",
-          "example": ""
+          "example": "die Mäntel"
         },
         {
           "id": "a1-08-shopping-clothes-word-7",
           "word": "die Größe",
           "translation": "المقاس",
-          "example": ""
+          "example": "die Größen"
         },
         {
           "id": "a1-08-shopping-clothes-word-8",
           "word": "die Farbe",
           "translation": "اللون",
-          "example": ""
+          "example": "die Farben"
         },
         {
           "id": "a1-08-shopping-clothes-word-9",
           "word": "der Preis",
           "translation": "السعر",
-          "example": ""
+          "example": "die Preise"
         },
         {
           "id": "a1-08-shopping-clothes-word-10",
           "word": "das Geschäft",
           "translation": "المتجر",
-          "example": ""
+          "example": "die Geschäfte"
         },
         {
           "id": "a1-08-shopping-clothes-word-11",
           "word": "kaufen",
           "translation": "يشتري",
-          "example": ""
+          "example": "— فعل"
         },
         {
           "id": "a1-08-shopping-clothes-word-12",
           "word": "anprobieren",
           "translation": "يجرّب (الملابس)",
-          "example": ""
+          "example": "— فعل منفصل"
         },
         {
           "id": "a1-08-shopping-clothes-word-13",
           "word": "brauchen",
           "translation": "يحتاج",
-          "example": ""
+          "example": "— فعل"
         },
         {
           "id": "a1-08-shopping-clothes-word-14",
@@ -4847,61 +4847,61 @@
           "id": "a1-09-work-appointments-word-1",
           "word": "das Büro",
           "translation": "المكتب",
-          "example": ""
+          "example": "die Büros"
         },
         {
           "id": "a1-09-work-appointments-word-2",
           "word": "der Kollege / die Kollegin",
           "translation": "الزميل / الزميلة",
-          "example": ""
+          "example": "die Kollegen / die Kolleginnen"
         },
         {
           "id": "a1-09-work-appointments-word-3",
           "word": "der Chef / die Chefin",
           "translation": "المدير / المديرة",
-          "example": ""
+          "example": "die Chefs / die Chefinnen"
         },
         {
           "id": "a1-09-work-appointments-word-4",
           "word": "der Termin",
           "translation": "الموعد",
-          "example": ""
+          "example": "die Termine"
         },
         {
           "id": "a1-09-work-appointments-word-5",
           "word": "die Besprechung",
           "translation": "الاجتماع",
-          "example": ""
+          "example": "die Besprechungen"
         },
         {
           "id": "a1-09-work-appointments-word-6",
           "word": "der Drucker",
           "translation": "الطابعة",
-          "example": ""
+          "example": "die Drucker"
         },
         {
           "id": "a1-09-work-appointments-word-7",
           "word": "der Computer",
           "translation": "الحاسوب",
-          "example": ""
+          "example": "die Computer"
         },
         {
           "id": "a1-09-work-appointments-word-8",
           "word": "die E-Mail",
           "translation": "رسالة بريد إلكتروني في أمثلتنا",
-          "example": ""
+          "example": "die E-Mails"
         },
         {
           "id": "a1-09-work-appointments-word-9",
           "word": "das Problem",
           "translation": "المشكلة",
-          "example": ""
+          "example": "die Probleme"
         },
         {
           "id": "a1-09-work-appointments-word-10",
           "word": "das Projekt",
           "translation": "المشروع",
-          "example": ""
+          "example": "die Projekte"
         },
         {
           "id": "a1-09-work-appointments-word-11",
@@ -5675,67 +5675,67 @@
           "id": "a1-11-home-directions-word-1",
           "word": "die Wohnung",
           "translation": "الشقة",
-          "example": ""
+          "example": "die Wohnungen"
         },
         {
           "id": "a1-11-home-directions-word-2",
           "word": "das Haus",
           "translation": "المنزل",
-          "example": ""
+          "example": "die Häuser"
         },
         {
           "id": "a1-11-home-directions-word-3",
           "word": "das Zimmer",
           "translation": "الغرفة",
-          "example": ""
+          "example": "die Zimmer"
         },
         {
           "id": "a1-11-home-directions-word-4",
           "word": "das Wohnzimmer",
           "translation": "غرفة الجلوس",
-          "example": ""
+          "example": "die Wohnzimmer"
         },
         {
           "id": "a1-11-home-directions-word-5",
           "word": "das Schlafzimmer",
           "translation": "غرفة النوم",
-          "example": ""
+          "example": "die Schlafzimmer"
         },
         {
           "id": "a1-11-home-directions-word-6",
           "word": "die Küche",
           "translation": "المطبخ",
-          "example": ""
+          "example": "die Küchen"
         },
         {
           "id": "a1-11-home-directions-word-7",
           "word": "das Bad",
           "translation": "الحمّام",
-          "example": ""
+          "example": "die Bäder"
         },
         {
           "id": "a1-11-home-directions-word-8",
           "word": "der Balkon",
           "translation": "الشرفة",
-          "example": ""
+          "example": "die Balkone / die Balkons"
         },
         {
           "id": "a1-11-home-directions-word-9",
           "word": "der Tisch",
           "translation": "الطاولة",
-          "example": ""
+          "example": "die Tische"
         },
         {
           "id": "a1-11-home-directions-word-10",
           "word": "der Stuhl",
           "translation": "الكرسي",
-          "example": ""
+          "example": "die Stühle"
         },
         {
           "id": "a1-11-home-directions-word-11",
           "word": "das Bett",
           "translation": "السرير",
-          "example": ""
+          "example": "die Betten"
         },
         {
           "id": "a1-11-home-directions-word-12",
@@ -6059,79 +6059,79 @@
           "id": "a1-12-trip-invitations-word-1",
           "word": "die Einladung",
           "translation": "الدعوة",
-          "example": ""
+          "example": "die Einladungen"
         },
         {
           "id": "a1-12-trip-invitations-word-2",
           "word": "der Geburtstag",
           "translation": "عيد الميلاد",
-          "example": ""
+          "example": "die Geburtstage"
         },
         {
           "id": "a1-12-trip-invitations-word-3",
           "word": "die Feier",
           "translation": "الاحتفال",
-          "example": ""
+          "example": "die Feiern"
         },
         {
           "id": "a1-12-trip-invitations-word-4",
           "word": "der Ausflug",
           "translation": "رحلة قصيرة",
-          "example": ""
+          "example": "die Ausflüge"
         },
         {
           "id": "a1-12-trip-invitations-word-5",
           "word": "der Gast",
           "translation": "الضيف",
-          "example": ""
+          "example": "die Gäste"
         },
         {
           "id": "a1-12-trip-invitations-word-6",
           "word": "das Geschenk",
           "translation": "الهدية",
-          "example": ""
+          "example": "die Geschenke"
         },
         {
           "id": "a1-12-trip-invitations-word-7",
           "word": "das Lieblingsspiel",
           "translation": "اللعبة المفضلة",
-          "example": ""
+          "example": "die Lieblingsspiele"
         },
         {
           "id": "a1-12-trip-invitations-word-8",
           "word": "der Kuchen",
           "translation": "الكعكة",
-          "example": ""
+          "example": "die Kuchen"
         },
         {
           "id": "a1-12-trip-invitations-word-9",
           "word": "der Bahnhof",
           "translation": "محطة القطار",
-          "example": ""
+          "example": "die Bahnhöfe"
         },
         {
           "id": "a1-12-trip-invitations-word-10",
           "word": "mitkommen",
           "translation": "يأتي/يذهب مع شخص",
-          "example": ""
+          "example": "— فعل منفصل"
         },
         {
           "id": "a1-12-trip-invitations-word-11",
           "word": "mitbringen",
           "translation": "يحضر معه شيئًا",
-          "example": ""
+          "example": "— فعل منفصل"
         },
         {
           "id": "a1-12-trip-invitations-word-12",
           "word": "feiern",
           "translation": "يحتفل",
-          "example": ""
+          "example": "— فعل"
         },
         {
           "id": "a1-12-trip-invitations-word-13",
           "word": "beginnen",
           "translation": "يبدأ",
-          "example": ""
+          "example": "— فعل"
         },
         {
           "id": "a1-12-trip-invitations-word-14",
@@ -6461,43 +6461,43 @@
           "id": "a2-01-routines-abilities-experiences-word-2",
           "word": "die Erfahrung",
           "translation": "التجربة",
-          "example": ""
+          "example": "die Erfahrungen"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-3",
           "word": "die Fähigkeit",
           "translation": "القدرة",
-          "example": ""
+          "example": "die Fähigkeiten"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-4",
           "word": "der Sprachkurs",
           "translation": "دورة اللغة",
-          "example": ""
+          "example": "die Sprachkurse"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-5",
           "word": "die Bäckerei",
           "translation": "المخبز",
-          "example": ""
+          "example": "die Bäckereien"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-6",
           "word": "beginnen",
           "translation": "يبدأ",
-          "example": ""
+          "example": "beginnt"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-7",
           "word": "anfangen",
           "translation": "يبدأ",
-          "example": ""
+          "example": "fängt an"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-8",
           "word": "teilnehmen an",
           "translation": "يشارك في",
-          "example": ""
+          "example": "nimmt teil"
         },
         {
           "id": "a2-01-routines-abilities-experiences-word-9",
@@ -6850,61 +6850,61 @@
           "id": "a2-02-travel-comparisons-word-1",
           "word": "die Unterkunft",
           "translation": "مكان الإقامة",
-          "example": ""
+          "example": "die Unterkünfte"
         },
         {
           "id": "a2-02-travel-comparisons-word-2",
           "word": "die Sehenswürdigkeit",
           "translation": "معلم سياحي",
-          "example": ""
+          "example": "die Sehenswürdigkeiten"
         },
         {
           "id": "a2-02-travel-comparisons-word-3",
           "word": "die Altstadt",
           "translation": "البلدة القديمة",
-          "example": ""
+          "example": "die Altstädte"
         },
         {
           "id": "a2-02-travel-comparisons-word-4",
           "word": "die Verbindung",
           "translation": "خط/وصلة مواصلات",
-          "example": ""
+          "example": "die Verbindungen"
         },
         {
           "id": "a2-02-travel-comparisons-word-5",
           "word": "die Fahrtdauer",
           "translation": "مدة الرحلة",
-          "example": ""
+          "example": "die Fahrtdauern"
         },
         {
           "id": "a2-02-travel-comparisons-word-6",
           "word": "die Zugfahrt",
           "translation": "رحلة القطار",
-          "example": ""
+          "example": "die Zugfahrten"
         },
         {
           "id": "a2-02-travel-comparisons-word-7",
           "word": "die Pension",
           "translation": "النُزل/دار الضيافة",
-          "example": ""
+          "example": "die Pensionen"
         },
         {
           "id": "a2-02-travel-comparisons-word-8",
           "word": "das Einkaufszentrum",
           "translation": "مركز التسوق",
-          "example": ""
+          "example": "die Einkaufszentren"
         },
         {
           "id": "a2-02-travel-comparisons-word-9",
           "word": "der Fahrplan",
           "translation": "جدول المواعيد",
-          "example": ""
+          "example": "die Fahrpläne"
         },
         {
           "id": "a2-02-travel-comparisons-word-10",
           "word": "vergleichen",
           "translation": "يقارن",
-          "example": ""
+          "example": "vergleicht"
         },
         {
           "id": "a2-02-travel-comparisons-word-11",
@@ -6922,7 +6922,7 @@
           "id": "a2-02-travel-comparisons-word-13",
           "word": "der Strand",
           "translation": "الشاطئ",
-          "example": ""
+          "example": "die Strände"
         },
         {
           "id": "a2-02-travel-comparisons-word-14",
@@ -7263,43 +7263,43 @@
           "id": "a2-03-food-nutrition-shopping-word-1",
           "word": "die Speisekarte",
           "translation": "قائمة الطعام",
-          "example": ""
+          "example": "die Speisekarten"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-2",
           "word": "die Rechnung",
           "translation": "الفاتورة",
-          "example": ""
+          "example": "die Rechnungen"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-3",
           "word": "die Zutat",
           "translation": "المكوّن",
-          "example": ""
+          "example": "die Zutaten"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-4",
           "word": "die Linse",
           "translation": "حبة عدس؛ الجمع: العدس",
-          "example": ""
+          "example": "die Linsen"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-5",
           "word": "die Gurke",
           "translation": "حبة خيار",
-          "example": ""
+          "example": "die Gurken"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-6",
           "word": "die Kartoffel",
           "translation": "البطاطا",
-          "example": ""
+          "example": "die Kartoffeln"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-7",
           "word": "der Nachtisch",
           "translation": "التحلية بعد الوجبة",
-          "example": ""
+          "example": "die Nachtische"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-8",
@@ -7311,7 +7311,7 @@
           "id": "a2-03-food-nutrition-shopping-word-9",
           "word": "das Öl",
           "translation": "الزيت",
-          "example": ""
+          "example": "die Öle"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-10",
@@ -7323,7 +7323,7 @@
           "id": "a2-03-food-nutrition-shopping-word-11",
           "word": "die Hülsenfrucht",
           "translation": "البقولية",
-          "example": ""
+          "example": "die Hülsenfrüchte"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-12",
@@ -7353,31 +7353,31 @@
           "id": "a2-03-food-nutrition-shopping-word-16",
           "word": "die Flasche",
           "translation": "الزجاجة",
-          "example": ""
+          "example": "die Flaschen"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-17",
           "word": "die Packung",
           "translation": "العبوة",
-          "example": ""
+          "example": "die Packungen"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-18",
           "word": "das Kilo",
           "translation": "الكيلوغرام",
-          "example": ""
+          "example": "die Kilo / die Kilos"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-19",
           "word": "das Gramm",
           "translation": "الغرام",
-          "example": ""
+          "example": "die Gramme؛ كوحدة بعد العدد: Gramm"
         },
         {
           "id": "a2-03-food-nutrition-shopping-word-20",
           "word": "die Menge",
           "translation": "الكمية",
-          "example": ""
+          "example": "die Mengen"
         }
       ],
       "quiz": [
@@ -7688,43 +7688,43 @@
           "id": "a2-04-office-phone-appointments-word-1",
           "word": "das Gespräch",
           "translation": "المحادثة",
-          "example": ""
+          "example": "die Gespräche"
         },
         {
           "id": "a2-04-office-phone-appointments-word-2",
           "word": "die Nachricht",
           "translation": "الرسالة",
-          "example": ""
+          "example": "die Nachrichten"
         },
         {
           "id": "a2-04-office-phone-appointments-word-3",
           "word": "der Anruf",
           "translation": "المكالمة",
-          "example": ""
+          "example": "die Anrufe"
         },
         {
           "id": "a2-04-office-phone-appointments-word-4",
           "word": "die Durchwahl",
           "translation": "رقم الاتصال المباشر / التحويلة",
-          "example": ""
+          "example": "die Durchwahlen"
         },
         {
           "id": "a2-04-office-phone-appointments-word-5",
           "word": "die Besprechung",
           "translation": "الاجتماع",
-          "example": ""
+          "example": "die Besprechungen"
         },
         {
           "id": "a2-04-office-phone-appointments-word-6",
           "word": "der Kalender",
           "translation": "التقويم",
-          "example": ""
+          "example": "die Kalender"
         },
         {
           "id": "a2-04-office-phone-appointments-word-7",
           "word": "der Termin",
           "translation": "الموعد",
-          "example": ""
+          "example": "die Termine"
         },
         {
           "id": "a2-04-office-phone-appointments-word-8",
@@ -7736,37 +7736,37 @@
           "id": "a2-04-office-phone-appointments-word-9",
           "word": "verschieben",
           "translation": "ينقل الموعد إلى وقت آخر؛ يؤجله هنا",
-          "example": ""
+          "example": "verschiebt"
         },
         {
           "id": "a2-04-office-phone-appointments-word-10",
           "word": "absagen",
           "translation": "يلغي",
-          "example": ""
+          "example": "sagt ab"
         },
         {
           "id": "a2-04-office-phone-appointments-word-11",
           "word": "bestätigen",
           "translation": "يؤكد",
-          "example": ""
+          "example": "bestätigt"
         },
         {
           "id": "a2-04-office-phone-appointments-word-12",
           "word": "zurückrufen",
           "translation": "يعاود الاتصال",
-          "example": ""
+          "example": "ruft zurück"
         },
         {
           "id": "a2-04-office-phone-appointments-word-13",
           "word": "vereinbaren",
           "translation": "يتفق على/يحجز (موعدًا)",
-          "example": ""
+          "example": "vereinbart"
         },
         {
           "id": "a2-04-office-phone-appointments-word-14",
           "word": "mitteilen",
           "translation": "يبلغ/يخبر",
-          "example": ""
+          "example": "teilt mit"
         }
       ],
       "quiz": [
@@ -8077,43 +8077,43 @@
           "id": "a2-05-training-routine-wenn-word-1",
           "word": "die Ausbildung",
           "translation": "التكوين/التدريب المهني",
-          "example": ""
+          "example": "die Ausbildungen"
         },
         {
           "id": "a2-05-training-routine-wenn-word-2",
           "word": "der Betrieb",
           "translation": "مكان العمل/المؤسسة",
-          "example": ""
+          "example": "die Betriebe"
         },
         {
           "id": "a2-05-training-routine-wenn-word-3",
           "word": "die Berufsschule",
           "translation": "المدرسة المهنية",
-          "example": ""
+          "example": "die Berufsschulen"
         },
         {
           "id": "a2-05-training-routine-wenn-word-4",
           "word": "der Stundenplan",
           "translation": "جدول الدروس",
-          "example": ""
+          "example": "die Stundenpläne"
         },
         {
           "id": "a2-05-training-routine-wenn-word-5",
           "word": "die Prüfung",
           "translation": "الامتحان",
-          "example": ""
+          "example": "die Prüfungen"
         },
         {
           "id": "a2-05-training-routine-wenn-word-6",
           "word": "das Fach",
           "translation": "المادة الدراسية",
-          "example": ""
+          "example": "die Fächer"
         },
         {
           "id": "a2-05-training-routine-wenn-word-7",
           "word": "der Feierabend",
           "translation": "نهاية الدوام / وقت الفراغ بعده",
-          "example": ""
+          "example": "die Feierabende"
         },
         {
           "id": "a2-05-training-routine-wenn-word-8",
@@ -8131,19 +8131,19 @@
           "id": "a2-05-training-routine-wenn-word-10",
           "word": "üben",
           "translation": "يتدرّب",
-          "example": ""
+          "example": "übt"
         },
         {
           "id": "a2-05-training-routine-wenn-word-11",
           "word": "sich vorbereiten auf + Akkusativ",
           "translation": "يستعدّ لـ",
-          "example": ""
+          "example": "bereitet sich vor"
         },
         {
           "id": "a2-05-training-routine-wenn-word-12",
           "word": "der Elektroniker / die Elektronikerin",
           "translation": "فنّي/فنّية إلكترونيات",
-          "example": ""
+          "example": "die Elektroniker / die Elektronikerinnen"
         }
       ],
       "quiz": [
@@ -8454,49 +8454,49 @@
           "id": "a2-06-family-happiness-gifts-word-1",
           "word": "der Verwandte / die Verwandte",
           "translation": "القريب/القريبة",
-          "example": ""
+          "example": "die Verwandten"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-2",
           "word": "der Cousin / die Cousine",
           "translation": "ابن/ابنة العم أو العمة أو الخال أو الخالة",
-          "example": ""
+          "example": "die Cousins / die Cousinen"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-3",
           "word": "die Einladung",
           "translation": "الدعوة",
-          "example": ""
+          "example": "die Einladungen"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-4",
           "word": "die Feier",
           "translation": "الاحتفال",
-          "example": ""
+          "example": "die Feiern"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-5",
           "word": "das Geschenk",
           "translation": "الهدية",
-          "example": ""
+          "example": "die Geschenke"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-6",
           "word": "die Überraschung",
           "translation": "المفاجأة",
-          "example": ""
+          "example": "die Überraschungen"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-7",
           "word": "einladen",
           "translation": "يدعو",
-          "example": ""
+          "example": "lädt ein"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-8",
           "word": "besuchen",
           "translation": "يزور",
-          "example": ""
+          "example": "besucht"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-9",
@@ -8526,13 +8526,13 @@
           "id": "a2-06-family-happiness-gifts-word-13",
           "word": "sich freuen auf",
           "translation": "يتطلع إلى/يفرح بحدث قادم",
-          "example": ""
+          "example": "freut sich auf"
         },
         {
           "id": "a2-06-family-happiness-gifts-word-14",
           "word": "die Erinnerung",
           "translation": "الذكرى",
-          "example": ""
+          "example": "die Erinnerungen"
         }
       ],
       "quiz": [
@@ -8843,55 +8843,55 @@
           "id": "a2-07-language-learning-travel-purpose-word-1",
           "word": "die Fremdsprache",
           "translation": "اللغة الأجنبية",
-          "example": ""
+          "example": "die Fremdsprachen"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-2",
           "word": "die Sprachschule",
           "translation": "مدرسة اللغات",
-          "example": ""
+          "example": "die Sprachschulen"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-3",
           "word": "das Wörterbuch",
           "translation": "القاموس",
-          "example": ""
+          "example": "die Wörterbücher"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-4",
           "word": "das Reiseziel",
           "translation": "وجهة السفر",
-          "example": ""
+          "example": "die Reiseziele"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-5",
           "word": "der Reisepass",
           "translation": "جواز السفر",
-          "example": ""
+          "example": "die Reisepässe"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-6",
           "word": "die Unterkunft",
           "translation": "مكان الإقامة",
-          "example": ""
+          "example": "die Unterkünfte"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-7",
           "word": "die Gastfamilie",
           "translation": "الأسرة المضيفة",
-          "example": ""
+          "example": "die Gastfamilien"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-8",
           "word": "die Sprachreise",
           "translation": "رحلة لتعلّم اللغة",
-          "example": ""
+          "example": "die Sprachreisen"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-9",
           "word": "mitnehmen",
           "translation": "يأخذ معه",
-          "example": ""
+          "example": "nimmt mit"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-10",
@@ -8903,19 +8903,19 @@
           "id": "a2-07-language-learning-travel-purpose-word-11",
           "word": "sich anmelden",
           "translation": "يسجّل نفسه",
-          "example": ""
+          "example": "meldet sich an"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-12",
           "word": "sich informieren über",
           "translation": "يستعلم عن",
-          "example": ""
+          "example": "informiert sich über"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-13",
           "word": "die Gelegenheit",
           "translation": "الفرصة",
-          "example": ""
+          "example": "die Gelegenheiten"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-14",
@@ -8933,13 +8933,13 @@
           "id": "a2-07-language-learning-travel-purpose-word-16",
           "word": "erfahren",
           "translation": "يعرف/يحصل على معلومات",
-          "example": ""
+          "example": "erfährt"
         },
         {
           "id": "a2-07-language-learning-travel-purpose-word-17",
           "word": "nachschlagen",
           "translation": "يراجع كلمة/معلومة في قاموس أو مرجع",
-          "example": ""
+          "example": "schlägt nach"
         }
       ],
       "quiz": [
@@ -9250,61 +9250,61 @@
           "id": "a2-08-media-news-passive-word-1",
           "word": "die Nachricht",
           "translation": "الخبر / الأخبار",
-          "example": ""
+          "example": "die Nachrichten"
         },
         {
           "id": "a2-08-media-news-passive-word-2",
           "word": "die Schlagzeile",
           "translation": "العنوان الرئيسي",
-          "example": ""
+          "example": "die Schlagzeilen"
         },
         {
           "id": "a2-08-media-news-passive-word-3",
           "word": "der Bericht",
           "translation": "التقرير",
-          "example": ""
+          "example": "die Berichte"
         },
         {
           "id": "a2-08-media-news-passive-word-4",
           "word": "die Redaktion",
           "translation": "هيئة التحرير",
-          "example": ""
+          "example": "die Redaktionen"
         },
         {
           "id": "a2-08-media-news-passive-word-5",
           "word": "die Zeitung",
           "translation": "الصحيفة",
-          "example": ""
+          "example": "die Zeitungen"
         },
         {
           "id": "a2-08-media-news-passive-word-6",
           "word": "der Radiosender",
           "translation": "محطة الإذاعة",
-          "example": ""
+          "example": "die Radiosender"
         },
         {
           "id": "a2-08-media-news-passive-word-7",
           "word": "das Interview",
           "translation": "المقابلة",
-          "example": ""
+          "example": "die Interviews"
         },
         {
           "id": "a2-08-media-news-passive-word-8",
           "word": "die Wahl",
           "translation": "عملية انتخاب/انتخابات (هنا)",
-          "example": ""
+          "example": "die Wahlen"
         },
         {
           "id": "a2-08-media-news-passive-word-9",
           "word": "der Stadtrat",
           "translation": "مجلس المدينة (هنا)",
-          "example": ""
+          "example": "die Stadträte"
         },
         {
           "id": "a2-08-media-news-passive-word-10",
           "word": "die Sitzung",
           "translation": "الجلسة",
-          "example": ""
+          "example": "die Sitzungen"
         },
         {
           "id": "a2-08-media-news-passive-word-11",
@@ -9316,73 +9316,73 @@
           "id": "a2-08-media-news-passive-word-12",
           "word": "die Webseite",
           "translation": "صفحة ويب",
-          "example": ""
+          "example": "die Webseiten"
         },
         {
           "id": "a2-08-media-news-passive-word-13",
           "word": "der Vorschlag",
           "translation": "الاقتراح",
-          "example": ""
+          "example": "die Vorschläge"
         },
         {
           "id": "a2-08-media-news-passive-word-14",
           "word": "der Einwohner / die Einwohnerin",
           "translation": "الساكن/الساكنة",
-          "example": ""
+          "example": "die Einwohner / Einwohnerinnen"
         },
         {
           "id": "a2-08-media-news-passive-word-15",
           "word": "veröffentlichen",
           "translation": "ينشر",
-          "example": ""
+          "example": "veröffentlicht"
         },
         {
           "id": "a2-08-media-news-passive-word-16",
           "word": "berichten über",
           "translation": "يقدّم تقريرًا عن",
-          "example": ""
+          "example": "berichtet über"
         },
         {
           "id": "a2-08-media-news-passive-word-17",
           "word": "beantworten",
           "translation": "يجيب عن",
-          "example": ""
+          "example": "beantwortet"
         },
         {
           "id": "a2-08-media-news-passive-word-18",
           "word": "einladen",
           "translation": "يدعو",
-          "example": ""
+          "example": "lädt ein"
         },
         {
           "id": "a2-08-media-news-passive-word-19",
           "word": "organisieren",
           "translation": "ينظّم",
-          "example": ""
+          "example": "organisiert"
         },
         {
           "id": "a2-08-media-news-passive-word-20",
           "word": "bauen",
           "translation": "يبني",
-          "example": ""
+          "example": "baut"
         },
         {
           "id": "a2-08-media-news-passive-word-21",
           "word": "eröffnen",
           "translation": "يفتتح",
-          "example": ""
+          "example": "eröffnet"
         },
         {
           "id": "a2-08-media-news-passive-word-22",
           "word": "senden",
           "translation": "يبث/يرسل",
-          "example": ""
+          "example": "sendet"
         },
         {
           "id": "a2-08-media-news-passive-word-23",
           "word": "übertragen",
           "translation": "ينقل/يبث",
-          "example": ""
+          "example": "überträgt"
         }
       ],
       "quiz": [
@@ -9693,61 +9693,61 @@
           "id": "a2-09-products-technology-complaints-word-1",
           "word": "das Gerät",
           "translation": "الجهاز",
-          "example": ""
+          "example": "die Geräte"
         },
         {
           "id": "a2-09-products-technology-complaints-word-2",
           "word": "das Smartphone",
           "translation": "الهاتف الذكي",
-          "example": ""
+          "example": "die Smartphones"
         },
         {
           "id": "a2-09-products-technology-complaints-word-3",
           "word": "der Kopfhörer",
           "translation": "سمّاعة الرأس",
-          "example": ""
+          "example": "die Kopfhörer"
         },
         {
           "id": "a2-09-products-technology-complaints-word-4",
           "word": "der Bildschirm",
           "translation": "الشاشة",
-          "example": ""
+          "example": "die Bildschirme"
         },
         {
           "id": "a2-09-products-technology-complaints-word-5",
           "word": "der Akku",
           "translation": "البطارية",
-          "example": ""
+          "example": "die Akkus"
         },
         {
           "id": "a2-09-products-technology-complaints-word-6",
           "word": "das Ladegerät",
           "translation": "الشاحن",
-          "example": ""
+          "example": "die Ladegeräte"
         },
         {
           "id": "a2-09-products-technology-complaints-word-7",
           "word": "der Lautsprecher",
           "translation": "مكبّر الصوت",
-          "example": ""
+          "example": "die Lautsprecher"
         },
         {
           "id": "a2-09-products-technology-complaints-word-8",
           "word": "die Garantie",
           "translation": "الضمان",
-          "example": ""
+          "example": "die Garantien"
         },
         {
           "id": "a2-09-products-technology-complaints-word-9",
           "word": "der Kassenbon",
           "translation": "إيصال الشراء",
-          "example": ""
+          "example": "die Kassenbons"
         },
         {
           "id": "a2-09-products-technology-complaints-word-10",
           "word": "die Bedienungsanleitung",
           "translation": "دليل الاستخدام",
-          "example": ""
+          "example": "die Bedienungsanleitungen"
         },
         {
           "id": "a2-09-products-technology-complaints-word-11",
@@ -10088,7 +10088,7 @@
           "id": "a2-10-sports-health-feelings-weil-word-1",
           "word": "die Bewegung",
           "translation": "الحركة",
-          "example": ""
+          "example": "die Bewegungen"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-2",
@@ -10100,37 +10100,37 @@
           "id": "a2-10-sports-health-feelings-weil-word-3",
           "word": "das Training",
           "translation": "التدريب الرياضي",
-          "example": ""
+          "example": "die Trainings"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-4",
           "word": "der Muskel",
           "translation": "العضلة",
-          "example": ""
+          "example": "die Muskeln"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-5",
           "word": "der Wettbewerb",
           "translation": "المنافسة",
-          "example": ""
+          "example": "die Wettbewerbe"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-6",
           "word": "die Pause",
           "translation": "الاستراحة",
-          "example": ""
+          "example": "die Pausen"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-7",
           "word": "sich fühlen",
           "translation": "يشعر",
-          "example": ""
+          "example": "fühlt sich"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-8",
           "word": "sich entspannen",
           "translation": "يسترخي",
-          "example": ""
+          "example": "entspannt sich"
         },
         {
           "id": "a2-10-sports-health-feelings-weil-word-9",
@@ -10166,7 +10166,7 @@
           "id": "a2-10-sports-health-feelings-weil-word-14",
           "word": "die Mannschaft",
           "translation": "الفريق",
-          "example": ""
+          "example": "die Mannschaften"
         }
       ],
       "quiz": [
@@ -10477,115 +10477,115 @@
           "id": "a2-11-housing-neighborhood-wohin-word-1",
           "word": "der Nachbar / die Nachbarin",
           "translation": "الجار / الجارة",
-          "example": ""
+          "example": "die Nachbarn / Nachbarinnen"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-2",
           "word": "die Nachbarschaft",
           "translation": "الجوار / الجيرة والعلاقة بين الجيران",
-          "example": ""
+          "example": "die Nachbarschaften (جمع قليل الاستعمال)"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-3",
           "word": "die Innenstadt",
           "translation": "وسط المدينة",
-          "example": ""
+          "example": "die Innenstädte"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-4",
           "word": "die Straßenbahnhaltestelle",
           "translation": "محطة الترام",
-          "example": ""
+          "example": "die Straßenbahnhaltestellen"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-5",
           "word": "die Miete",
           "translation": "الإيجار",
-          "example": ""
+          "example": "die Mieten"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-6",
           "word": "der Umzug",
           "translation": "الانتقال إلى مسكن جديد",
-          "example": ""
+          "example": "die Umzüge"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-7",
           "word": "der Schrank",
           "translation": "الخزانة",
-          "example": ""
+          "example": "die Schränke"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-8",
           "word": "das Regal",
           "translation": "وحدة رفوف / رفّ",
-          "example": ""
+          "example": "die Regale"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-9",
           "word": "das Sofa",
           "translation": "الأريكة",
-          "example": ""
+          "example": "die Sofas"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-10",
           "word": "der Teppich",
           "translation": "السجادة",
-          "example": ""
+          "example": "die Teppiche"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-11",
           "word": "die Wand",
           "translation": "الجدار",
-          "example": ""
+          "example": "die Wände"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-12",
           "word": "der Boden",
           "translation": "الأرضية",
-          "example": ""
+          "example": "die Böden"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-13",
           "word": "der Innenhof",
           "translation": "ساحة داخلية",
-          "example": ""
+          "example": "die Innenhöfe"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-14",
           "word": "die Grünfläche",
           "translation": "مساحة خضراء",
-          "example": ""
+          "example": "die Grünflächen"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-15",
           "word": "der Sessel",
           "translation": "كرسي بذراعين",
-          "example": ""
+          "example": "die Sessel"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-16",
           "word": "der Schreibtisch",
           "translation": "مكتب",
-          "example": ""
+          "example": "die Schreibtische"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-17",
           "word": "der Nachttisch",
           "translation": "منضدة بجانب السرير",
-          "example": ""
+          "example": "die Nachttische"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-18",
           "word": "einrichten",
           "translation": "يرتّب/يؤثث",
-          "example": ""
+          "example": "richtet ein"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-19",
           "word": "hängen",
           "translation": "يعلّق / يكون معلّقًا",
-          "example": ""
+          "example": "hängt"
         },
         {
           "id": "a2-11-housing-neighborhood-wohin-word-20",
@@ -10902,79 +10902,79 @@
           "id": "a2-12-holidays-festivals-culture-word-1",
           "word": "das Kulturfest",
           "translation": "المهرجان الثقافي",
-          "example": ""
+          "example": "die Kulturfeste"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-2",
           "word": "die Tradition",
           "translation": "التقليد",
-          "example": ""
+          "example": "die Traditionen"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-3",
           "word": "der Brauch",
           "translation": "العادة/التقليد الاجتماعي",
-          "example": ""
+          "example": "die Bräuche"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-4",
           "word": "die Ausstellung",
           "translation": "المعرض",
-          "example": ""
+          "example": "die Ausstellungen"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-5",
           "word": "die Parade",
           "translation": "الاستعراض/الموكب",
-          "example": ""
+          "example": "die Paraden"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-6",
           "word": "die Eintrittskarte",
           "translation": "تذكرة دخول",
-          "example": ""
+          "example": "die Eintrittskarten"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-7",
           "word": "das Konzert",
           "translation": "الحفل الموسيقي",
-          "example": ""
+          "example": "die Konzerte"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-8",
           "word": "die Bühne",
           "translation": "المنصة/المسرح",
-          "example": ""
+          "example": "die Bühnen"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-9",
           "word": "der Eintritt",
           "translation": "الدخول / رسم الدخول",
-          "example": ""
+          "example": "die Eintritte (مفرد في هذا السياق)"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-10",
           "word": "die Veranstaltung",
           "translation": "الفعالية",
-          "example": ""
+          "example": "die Veranstaltungen"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-11",
           "word": "das Feuerwerk",
           "translation": "الألعاب النارية",
-          "example": ""
+          "example": "die Feuerwerke"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-12",
           "word": "stattfinden",
           "translation": "يُقام",
-          "example": ""
+          "example": "findet statt"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-13",
           "word": "teilnehmen an",
           "translation": "يشارك في",
-          "example": ""
+          "example": "nimmt teil"
         },
         {
           "id": "a2-12-holidays-festivals-culture-word-14",
@@ -11303,25 +11303,25 @@
           "id": "b1-01-daily-life-hobbies-experiences-word-1",
           "word": "das Erlebnis",
           "translation": "التجربة/الحدث المميّز",
-          "example": ""
+          "example": "die Erlebnisse"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-2",
           "word": "der Verein",
           "translation": "النادي/الجمعية",
-          "example": ""
+          "example": "die Vereine"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-3",
           "word": "das Schachturnier",
           "translation": "بطولة شطرنج",
-          "example": ""
+          "example": "die Schachturniere"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-4",
           "word": "die Erinnerung",
           "translation": "الذكرى",
-          "example": ""
+          "example": "die Erinnerungen"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-5",
@@ -11333,7 +11333,7 @@
           "id": "b1-01-daily-life-hobbies-experiences-word-6",
           "word": "das Hobby",
           "translation": "الهواية",
-          "example": ""
+          "example": "die Hobbys"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-7",
@@ -11357,13 +11357,13 @@
           "id": "b1-01-daily-life-hobbies-experiences-word-10",
           "word": "sich erinnern an",
           "translation": "يتذكر",
-          "example": ""
+          "example": "erinnert sich"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-11",
           "word": "teilnehmen an",
           "translation": "يشارك في",
-          "example": ""
+          "example": "nimmt teil"
         },
         {
           "id": "b1-01-daily-life-hobbies-experiences-word-12",
@@ -11695,19 +11695,19 @@
           "id": "b1-02-food-habits-obwohl-word-2",
           "word": "die Gewohnheit",
           "translation": "العادة",
-          "example": ""
+          "example": "die Gewohnheiten"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-3",
           "word": "die Mahlzeit",
           "translation": "الوجبة",
-          "example": ""
+          "example": "die Mahlzeiten"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-4",
           "word": "die Zutat",
           "translation": "المكوّن",
-          "example": ""
+          "example": "die Zutaten"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-5",
@@ -11731,19 +11731,19 @@
           "id": "b1-02-food-habits-obwohl-word-8",
           "word": "enthalten",
           "translation": "يحتوي على",
-          "example": ""
+          "example": "enthält"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-9",
           "word": "verzichten auf",
           "translation": "يمتنع عن / يستغني عن",
-          "example": ""
+          "example": "verzichtet auf"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-10",
           "word": "sich ernähren",
           "translation": "يتغذى",
-          "example": ""
+          "example": "ernährt sich"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-11",
@@ -11755,7 +11755,7 @@
           "id": "b1-02-food-habits-obwohl-word-12",
           "word": "der Geschmack",
           "translation": "الطعم",
-          "example": ""
+          "example": "die Geschmäcke؛ die Geschmäcker (دارج/مازح)"
         },
         {
           "id": "b1-02-food-habits-obwohl-word-13",
@@ -12074,25 +12074,25 @@
           "id": "b1-03-work-communication-konjunktiv-word-1",
           "word": "die Stelle",
           "translation": "الوظيفة/المنصب",
-          "example": ""
+          "example": "die Stellen"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-2",
           "word": "die Bewerbung",
           "translation": "طلب التوظيف",
-          "example": ""
+          "example": "die Bewerbungen"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-3",
           "word": "die Erfahrung",
           "translation": "الخبرة",
-          "example": ""
+          "example": "die Erfahrungen"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-4",
           "word": "die Fähigkeit",
           "translation": "المهارة/القدرة",
-          "example": ""
+          "example": "die Fähigkeiten"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-5",
@@ -12104,37 +12104,37 @@
           "id": "b1-03-work-communication-konjunktiv-word-6",
           "word": "die Aufgabe",
           "translation": "المهمة",
-          "example": ""
+          "example": "die Aufgaben"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-7",
           "word": "die Rückmeldung",
           "translation": "الملاحظات / الردّ",
-          "example": ""
+          "example": "die Rückmeldungen"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-8",
           "word": "die Frist",
           "translation": "المهلة المحددة؛ وفي السياق آخر موعد",
-          "example": ""
+          "example": "die Fristen"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-9",
           "word": "das Vorstellungsgespräch",
           "translation": "مقابلة العمل",
-          "example": ""
+          "example": "die Vorstellungsgespräche"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-10",
           "word": "sich bewerben um",
           "translation": "يتقدّم إلى وظيفة",
-          "example": ""
+          "example": "bewirbt sich"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-11",
           "word": "eine Aufgabe übernehmen",
           "translation": "يتولى مهمة",
-          "example": ""
+          "example": "übernimmt"
         },
         {
           "id": "b1-03-work-communication-konjunktiv-word-12",
@@ -12466,37 +12466,37 @@
           "id": "b1-04-continuing-education-damit-word-1",
           "word": "die Weiterbildung",
           "translation": "التعليم/التدريب المستمر",
-          "example": ""
+          "example": "die Weiterbildungen"
         },
         {
           "id": "b1-04-continuing-education-damit-word-2",
           "word": "die Fähigkeit",
           "translation": "المهارة",
-          "example": ""
+          "example": "die Fähigkeiten"
         },
         {
           "id": "b1-04-continuing-education-damit-word-3",
           "word": "die Kenntnis",
           "translation": "المعرفة",
-          "example": ""
+          "example": "die Kenntnisse"
         },
         {
           "id": "b1-04-continuing-education-damit-word-4",
           "word": "die Plattform",
           "translation": "المنصّة",
-          "example": ""
+          "example": "die Plattformen"
         },
         {
           "id": "b1-04-continuing-education-damit-word-5",
           "word": "die Tabellenkalkulation",
           "translation": "الحساب/معالجة البيانات بالجداول الإلكترونية",
-          "example": ""
+          "example": "die Tabellenkalkulationen"
         },
         {
           "id": "b1-04-continuing-education-damit-word-6",
           "word": "die Kursunterlage",
           "translation": "مادة من مواد الدورة",
-          "example": ""
+          "example": "die Kursunterlagen"
         },
         {
           "id": "b1-04-continuing-education-damit-word-7",
@@ -12508,13 +12508,13 @@
           "id": "b1-04-continuing-education-damit-word-8",
           "word": "das Lernziel",
           "translation": "هدف التعلّم",
-          "example": ""
+          "example": "die Lernziele"
         },
         {
           "id": "b1-04-continuing-education-damit-word-9",
           "word": "das Zertifikat",
           "translation": "الشهادة",
-          "example": ""
+          "example": "die Zertifikate"
         },
         {
           "id": "b1-04-continuing-education-damit-word-10",
@@ -12526,13 +12526,13 @@
           "id": "b1-04-continuing-education-damit-word-11",
           "word": "die Voraussetzung",
           "translation": "الشرط المسبق",
-          "example": ""
+          "example": "die Voraussetzungen"
         },
         {
           "id": "b1-04-continuing-education-damit-word-12",
           "word": "sich anmelden für",
           "translation": "يسجّل في",
-          "example": ""
+          "example": "meldet sich an"
         },
         {
           "id": "b1-04-continuing-education-damit-word-13",
@@ -12550,7 +12550,7 @@
           "id": "b1-04-continuing-education-damit-word-15",
           "word": "die Lerngruppe",
           "translation": "مجموعة تعلّم",
-          "example": ""
+          "example": "die Lerngruppen"
         }
       ],
       "quiz": [
@@ -12864,61 +12864,61 @@
           "id": "b1-05-cities-relative-clauses-word-1",
           "word": "die Altstadt",
           "translation": "البلدة القديمة",
-          "example": ""
+          "example": "die Altstädte"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-2",
           "word": "das Viertel",
           "translation": "الحيّ",
-          "example": ""
+          "example": "die Viertel"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-3",
           "word": "der Marktplatz",
           "translation": "ساحة السوق",
-          "example": ""
+          "example": "die Marktplätze"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-4",
           "word": "die Fußgängerzone",
           "translation": "منطقة مشاة",
-          "example": ""
+          "example": "die Fußgängerzonen"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-5",
           "word": "die Sehenswürdigkeit",
           "translation": "معلم سياحي",
-          "example": ""
+          "example": "die Sehenswürdigkeiten"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-6",
           "word": "das Ufer",
           "translation": "ضفة/شاطئ ماء، مثل النهر أو البحيرة",
-          "example": ""
+          "example": "die Ufer"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-7",
           "word": "die Grünanlage",
           "translation": "مساحة خضراء",
-          "example": ""
+          "example": "die Grünanlagen"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-8",
           "word": "der Aussichtspunkt",
           "translation": "نقطة إطلالة",
-          "example": ""
+          "example": "die Aussichtspunkte"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-9",
           "word": "die Verbindung",
           "translation": "وصلة/رابط مواصلات بين الأماكن (هنا)",
-          "example": ""
+          "example": "die Verbindungen"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-10",
           "word": "der Stadtplan",
           "translation": "خريطة المدينة",
-          "example": ""
+          "example": "die Stadtpläne"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-11",
@@ -12936,7 +12936,7 @@
           "id": "b1-05-cities-relative-clauses-word-13",
           "word": "sich befinden",
           "translation": "يقع",
-          "example": ""
+          "example": "befindet sich"
         },
         {
           "id": "b1-05-cities-relative-clauses-word-14",
@@ -13261,7 +13261,7 @@
           "id": "b1-06-health-fitness-advice-word-2",
           "word": "die Bewegung",
           "translation": "الحركة",
-          "example": ""
+          "example": "die Bewegungen"
         },
         {
           "id": "b1-06-health-fitness-advice-word-3",
@@ -13273,19 +13273,19 @@
           "id": "b1-06-health-fitness-advice-word-4",
           "word": "die Pause",
           "translation": "الاستراحة",
-          "example": ""
+          "example": "die Pausen"
         },
         {
           "id": "b1-06-health-fitness-advice-word-5",
           "word": "das Gelenk",
           "translation": "المفصل",
-          "example": ""
+          "example": "die Gelenke"
         },
         {
           "id": "b1-06-health-fitness-advice-word-6",
           "word": "die Belastung",
           "translation": "الجهد / الحمل البدني",
-          "example": ""
+          "example": "die Belastungen"
         },
         {
           "id": "b1-06-health-fitness-advice-word-7",
@@ -13297,25 +13297,25 @@
           "id": "b1-06-health-fitness-advice-word-8",
           "word": "der Spaziergang",
           "translation": "نزهة مشيًا",
-          "example": ""
+          "example": "die Spaziergänge"
         },
         {
           "id": "b1-06-health-fitness-advice-word-9",
           "word": "die Beschwerde",
           "translation": "شكوى؛ وفي المعنى الصحي: Beschwerden = أعراض/متاعب",
-          "example": ""
+          "example": "die Beschwerden"
         },
         {
           "id": "b1-06-health-fitness-advice-word-10",
           "word": "sich erholen von",
           "translation": "يتعافى من",
-          "example": ""
+          "example": "erholt sich"
         },
         {
           "id": "b1-06-health-fitness-advice-word-11",
           "word": "etwas steigern",
           "translation": "يزيد/يرفع شيئًا",
-          "example": ""
+          "example": "steigert"
         },
         {
           "id": "b1-06-health-fitness-advice-word-12",
@@ -13646,19 +13646,19 @@
           "id": "b1-07-lifestyles-customs-cultures-word-1",
           "word": "der Lebensstil",
           "translation": "أسلوب الحياة",
-          "example": ""
+          "example": "die Lebensstile"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-2",
           "word": "die Alltagsroutine",
           "translation": "الروتين اليومي",
-          "example": ""
+          "example": "die Alltagsroutinen"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-3",
           "word": "die Begegnung",
           "translation": "لقاء",
-          "example": ""
+          "example": "die Begegnungen"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-4",
@@ -13670,7 +13670,7 @@
           "id": "b1-07-lifestyles-customs-cultures-word-5",
           "word": "die Gemeinschaft",
           "translation": "جماعة / مجتمع",
-          "example": ""
+          "example": "die Gemeinschaften"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-6",
@@ -13682,13 +13682,13 @@
           "id": "b1-07-lifestyles-customs-cultures-word-7",
           "word": "die Tradition",
           "translation": "تقليد",
-          "example": ""
+          "example": "die Traditionen"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-8",
           "word": "die Verabredung",
           "translation": "موعد / اتفاق على لقاء",
-          "example": ""
+          "example": "die Verabredungen"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-9",
@@ -13700,13 +13700,13 @@
           "id": "b1-07-lifestyles-customs-cultures-word-10",
           "word": "sich gewöhnen an + Akkusativ",
           "translation": "يعتاد على",
-          "example": ""
+          "example": "gewöhnt sich"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-11",
           "word": "Rücksicht nehmen auf + Akkusativ",
           "translation": "يراعي",
-          "example": ""
+          "example": "nimmt Rücksicht"
         },
         {
           "id": "b1-07-lifestyles-customs-cultures-word-12",
@@ -14039,7 +14039,7 @@
           "id": "b1-08-consumption-advertising-je-desto-word-1",
           "word": "das Produkt",
           "translation": "المنتج",
-          "example": ""
+          "example": "die Produkte"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-2",
@@ -14051,31 +14051,31 @@
           "id": "b1-08-consumption-advertising-je-desto-word-3",
           "word": "die Anzeige",
           "translation": "الإعلان المنشور",
-          "example": ""
+          "example": "die Anzeigen"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-4",
           "word": "die Zielgruppe",
           "translation": "الفئة المستهدفة",
-          "example": ""
+          "example": "die Zielgruppen"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-5",
           "word": "die Marke",
           "translation": "العلامة التجارية",
-          "example": ""
+          "example": "die Marken"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-6",
           "word": "der Rabatt",
           "translation": "التخفيض",
-          "example": ""
+          "example": "die Rabatte"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-7",
           "word": "der Preis",
           "translation": "السعر",
-          "example": ""
+          "example": "die Preise"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-8",
@@ -14087,7 +14087,7 @@
           "id": "b1-08-consumption-advertising-je-desto-word-9",
           "word": "die Verpackung",
           "translation": "التغليف / العبوة",
-          "example": ""
+          "example": "die Verpackungen"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-10",
@@ -14099,19 +14099,19 @@
           "id": "b1-08-consumption-advertising-je-desto-word-11",
           "word": "die Kundenbewertung",
           "translation": "تقييم العملاء",
-          "example": ""
+          "example": "die Kundenbewertungen"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-12",
           "word": "die Eigenschaft",
           "translation": "خاصية",
-          "example": ""
+          "example": "die Eigenschaften"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-13",
           "word": "der Endpreis",
           "translation": "السعر النهائي",
-          "example": ""
+          "example": "die Endpreise"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-14",
@@ -14123,19 +14123,19 @@
           "id": "b1-08-consumption-advertising-je-desto-word-15",
           "word": "vergleichen",
           "translation": "يقارن",
-          "example": ""
+          "example": "vergleicht"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-16",
           "word": "versprechen",
           "translation": "يَعِد / يَعِدُ بـ",
-          "example": ""
+          "example": "verspricht"
         },
         {
           "id": "b1-08-consumption-advertising-je-desto-word-17",
           "word": "werben für",
           "translation": "يروّج لـ",
-          "example": ""
+          "example": "wirbt"
         }
       ],
       "quiz": [
@@ -14449,49 +14449,49 @@
           "id": "b1-09-travel-transport-environment-word-1",
           "word": "der Fahrplan",
           "translation": "جدول المواعيد",
-          "example": ""
+          "example": "die Fahrpläne"
         },
         {
           "id": "b1-09-travel-transport-environment-word-2",
           "word": "die Abfahrt",
           "translation": "المغادرة",
-          "example": ""
+          "example": "die Abfahrten"
         },
         {
           "id": "b1-09-travel-transport-environment-word-3",
           "word": "die Ankunft",
           "translation": "الوصول",
-          "example": ""
+          "example": "die Ankünfte"
         },
         {
           "id": "b1-09-travel-transport-environment-word-4",
           "word": "der Anschluss",
           "translation": "رحلة مواصلة / اتصال برحلة تالية",
-          "example": ""
+          "example": "die Anschlüsse"
         },
         {
           "id": "b1-09-travel-transport-environment-word-5",
           "word": "der Umstieg",
           "translation": "انتقال إلى مركبة أخرى",
-          "example": ""
+          "example": "die Umstiege"
         },
         {
           "id": "b1-09-travel-transport-environment-word-6",
           "word": "die Verspätung",
           "translation": "التأخير",
-          "example": ""
+          "example": "die Verspätungen"
         },
         {
           "id": "b1-09-travel-transport-environment-word-7",
           "word": "die Strecke",
           "translation": "المسار / المسافة",
-          "example": ""
+          "example": "die Strecken"
         },
         {
           "id": "b1-09-travel-transport-environment-word-8",
           "word": "das Verkehrsmittel",
           "translation": "وسيلة النقل",
-          "example": ""
+          "example": "die Verkehrsmittel"
         },
         {
           "id": "b1-09-travel-transport-environment-word-9",
@@ -14503,7 +14503,7 @@
           "id": "b1-09-travel-transport-environment-word-10",
           "word": "die Fahrkarte",
           "translation": "بطاقة السفر",
-          "example": ""
+          "example": "die Fahrkarten"
         },
         {
           "id": "b1-09-travel-transport-environment-word-11",
@@ -14515,25 +14515,25 @@
           "id": "b1-09-travel-transport-environment-word-12",
           "word": "die Emission",
           "translation": "انبعاث",
-          "example": ""
+          "example": "die Emissionen"
         },
         {
           "id": "b1-09-travel-transport-environment-word-13",
           "word": "umsteigen",
           "translation": "يبدّل المركبة أو وسيلة النقل",
-          "example": ""
+          "example": "steigt um"
         },
         {
           "id": "b1-09-travel-transport-environment-word-14",
           "word": "ausfallen",
           "translation": "يُلغى / يتوقف عن العمل",
-          "example": ""
+          "example": "fällt aus"
         },
         {
           "id": "b1-09-travel-transport-environment-word-15",
           "word": "sich verspäten",
           "translation": "يتأخر",
-          "example": ""
+          "example": "verspätet sich"
         },
         {
           "id": "b1-09-travel-transport-environment-word-16",
@@ -14854,85 +14854,85 @@
           "id": "b1-10-media-news-formal-communication-word-1",
           "word": "die Redaktion",
           "translation": "هيئة التحرير",
-          "example": ""
+          "example": "die Redaktionen"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-2",
           "word": "die Meldung",
           "translation": "خبر موجز",
-          "example": ""
+          "example": "die Meldungen"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-3",
           "word": "der Beitrag",
           "translation": "مادة / تقرير إعلامي",
-          "example": ""
+          "example": "die Beiträge"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-4",
           "word": "die Quelle",
           "translation": "مصدر",
-          "example": ""
+          "example": "die Quellen"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-5",
           "word": "die Anfrage",
           "translation": "استفسار رسمي",
-          "example": ""
+          "example": "die Anfragen"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-6",
           "word": "die Auskunft",
           "translation": "معلومة / إفادة",
-          "example": ""
+          "example": "die Auskünfte"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-7",
           "word": "die Ausgabe",
           "translation": "عدد / إصدار",
-          "example": ""
+          "example": "die Ausgaben"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-8",
           "word": "das Archiv",
           "translation": "الأرشيف",
-          "example": ""
+          "example": "die Archive"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-9",
           "word": "die Rückfrage",
           "translation": "سؤال متابعة",
-          "example": ""
+          "example": "die Rückfragen"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-10",
           "word": "die Berichtigung",
           "translation": "تصحيح معلومة",
-          "example": ""
+          "example": "die Berichtigungen"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-11",
           "word": "mitteilen",
           "translation": "يبلّغ / يفيد",
-          "example": ""
+          "example": "teilt mit"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-12",
           "word": "bestätigen",
           "translation": "يؤكد",
-          "example": ""
+          "example": "bestätigt"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-13",
           "word": "sich beziehen auf + Akkusativ",
           "translation": "يشير إلى / يتعلق بـ",
-          "example": ""
+          "example": "bezieht sich"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-14",
           "word": "veröffentlichen",
           "translation": "ينشر",
-          "example": ""
+          "example": "veröffentlicht"
         },
         {
           "id": "b1-10-media-news-formal-communication-word-15",
@@ -15257,91 +15257,91 @@
           "id": "b1-11-history-politics-passive-past-word-1",
           "word": "die Epoche",
           "translation": "حقبة",
-          "example": ""
+          "example": "die Epochen"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-2",
           "word": "das Ereignis",
           "translation": "حدث",
-          "example": ""
+          "example": "die Ereignisse"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-3",
           "word": "die Gemeinde",
           "translation": "بلدة / بلدية",
-          "example": ""
+          "example": "die Gemeinden"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-4",
           "word": "die Verfassung",
           "translation": "دستور",
-          "example": ""
+          "example": "die Verfassungen"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-5",
           "word": "der Stadtrat",
           "translation": "مجلس المدينة",
-          "example": ""
+          "example": "die Stadträte"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-6",
           "word": "der Beschluss",
           "translation": "قرار",
-          "example": ""
+          "example": "die Beschlüsse"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-7",
           "word": "die Abstimmung",
           "translation": "تصويت",
-          "example": ""
+          "example": "die Abstimmungen"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-8",
           "word": "die Mehrheit",
           "translation": "أغلبية",
-          "example": ""
+          "example": "die Mehrheiten"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-9",
           "word": "die Bürgerin / der Bürger",
           "translation": "مواطنة / مواطن",
-          "example": ""
+          "example": "die Bürgerinnen / die Bürger"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-10",
           "word": "das Denkmal",
           "translation": "نصب تذكاري",
-          "example": ""
+          "example": "die Denkmäler"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-11",
           "word": "die Zeitleiste",
           "translation": "خطّ زمني",
-          "example": ""
+          "example": "die Zeitleisten"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-12",
           "word": "wählen",
           "translation": "ينتخب",
-          "example": ""
+          "example": "wählt"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-13",
           "word": "beschließen",
           "translation": "يقرّر / يعتمد",
-          "example": ""
+          "example": "beschließt"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-14",
           "word": "gründen",
           "translation": "يؤسّس",
-          "example": ""
+          "example": "gründet"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-15",
           "word": "einführen",
           "translation": "يطبّق / يستحدث",
-          "example": ""
+          "example": "führt ein"
         },
         {
           "id": "b1-11-history-politics-passive-past-word-16",
@@ -15666,79 +15666,79 @@
           "id": "b1-12-innovation-research-future-word-2",
           "word": "die Entwicklung",
           "translation": "التطوير / التطوّر",
-          "example": ""
+          "example": "die Entwicklungen"
         },
         {
           "id": "b1-12-innovation-research-future-word-3",
           "word": "die Erfindung",
           "translation": "الاختراع",
-          "example": ""
+          "example": "die Erfindungen"
         },
         {
           "id": "b1-12-innovation-research-future-word-4",
           "word": "das Experiment",
           "translation": "التجربة",
-          "example": ""
+          "example": "die Experimente"
         },
         {
           "id": "b1-12-innovation-research-future-word-5",
           "word": "der Versuch",
           "translation": "المحاولة / الاختبار",
-          "example": ""
+          "example": "die Versuche"
         },
         {
           "id": "b1-12-innovation-research-future-word-6",
           "word": "das Ergebnis",
           "translation": "النتيجة",
-          "example": ""
+          "example": "die Ergebnisse"
         },
         {
           "id": "b1-12-innovation-research-future-word-7",
           "word": "die Anwendung",
           "translation": "التطبيق",
-          "example": ""
+          "example": "die Anwendungen"
         },
         {
           "id": "b1-12-innovation-research-future-word-8",
           "word": "die Lösung",
           "translation": "الحل",
-          "example": ""
+          "example": "die Lösungen"
         },
         {
           "id": "b1-12-innovation-research-future-word-9",
           "word": "der Prototyp",
           "translation": "النموذج الأولي",
-          "example": ""
+          "example": "die Prototypen"
         },
         {
           "id": "b1-12-innovation-research-future-word-10",
           "word": "das Labor",
           "translation": "المختبر",
-          "example": ""
+          "example": "die Labore"
         },
         {
           "id": "b1-12-innovation-research-future-word-11",
           "word": "entwickeln",
           "translation": "يطوّر",
-          "example": ""
+          "example": "entwickelt"
         },
         {
           "id": "b1-12-innovation-research-future-word-12",
           "word": "erforschen",
           "translation": "يبحث في / يستكشف علميًا",
-          "example": ""
+          "example": "erforscht"
         },
         {
           "id": "b1-12-innovation-research-future-word-13",
           "word": "testen",
           "translation": "يختبر",
-          "example": ""
+          "example": "testet"
         },
         {
           "id": "b1-12-innovation-research-future-word-14",
           "word": "verbessern",
           "translation": "يحسّن",
-          "example": ""
+          "example": "verbessert"
         },
         {
           "id": "b1-12-innovation-research-future-word-15",
@@ -16068,31 +16068,31 @@
           "id": "b2-01-time-management-habits-reading-word-2",
           "word": "die Priorität",
           "translation": "الأولوية",
-          "example": ""
+          "example": "die Prioritäten"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-3",
           "word": "der Zeitblock",
           "translation": "فترة زمنية مخصّصة لمهمة",
-          "example": ""
+          "example": "die Zeitblöcke"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-4",
           "word": "die Ablenkung",
           "translation": "مصدر تشتيت",
-          "example": ""
+          "example": "die Ablenkungen"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-5",
           "word": "die Unterbrechung",
           "translation": "مقاطعة",
-          "example": ""
+          "example": "die Unterbrechungen"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-6",
           "word": "die Lesestrategie",
           "translation": "استراتيجية القراءة",
-          "example": ""
+          "example": "die Lesestrategien"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-7",
@@ -16104,37 +16104,37 @@
           "id": "b2-01-time-management-habits-reading-word-8",
           "word": "die Notiz",
           "translation": "ملاحظة مكتوبة",
-          "example": ""
+          "example": "die Notizen"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-9",
           "word": "priorisieren",
           "translation": "يحدّد الأولويات",
-          "example": ""
+          "example": "priorisiert"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-10",
           "word": "bündeln",
           "translation": "يجمع مهامًا متشابهة",
-          "example": ""
+          "example": "bündelt"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-11",
           "word": "sich konzentrieren auf + Akkusativ",
           "translation": "يركّز على",
-          "example": ""
+          "example": "konzentriert sich"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-12",
           "word": "abschalten",
           "translation": "يطفئ / يعطّل",
-          "example": ""
+          "example": "schaltet ab"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-13",
           "word": "bewältigen",
           "translation": "ينجز / يتعامل مع",
-          "example": ""
+          "example": "bewältigt"
         },
         {
           "id": "b2-01-time-management-habits-reading-word-14",
@@ -16452,19 +16452,19 @@
           "id": "b2-02-career-formal-communication-konjunktiv1-word-1",
           "word": "der Berufsweg",
           "translation": "المسار المهني",
-          "example": ""
+          "example": "die Berufswege"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-2",
           "word": "der Werdegang",
           "translation": "السيرة / المسيرة المهنية",
-          "example": ""
+          "example": "die Werdegänge"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-3",
           "word": "die Qualifikation",
           "translation": "المؤهل / الكفاءة",
-          "example": ""
+          "example": "die Qualifikationen"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-4",
@@ -16476,61 +16476,61 @@
           "id": "b2-02-career-formal-communication-konjunktiv1-word-5",
           "word": "das Anforderungsprofil",
           "translation": "ملف متطلبات الوظيفة",
-          "example": ""
+          "example": "die Anforderungsprofile"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-6",
           "word": "die Stellenausschreibung",
           "translation": "إعلان الوظيفة",
-          "example": ""
+          "example": "die Stellenausschreibungen"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-7",
           "word": "die Führungskraft",
           "translation": "مسؤول إداري / قائد فريق",
-          "example": ""
+          "example": "die Führungskräfte"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-8",
           "word": "die Weiterentwicklung",
           "translation": "التطوّر المهني",
-          "example": ""
+          "example": "die Weiterentwicklungen"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-9",
           "word": "die Zuständigkeit",
           "translation": "مجال المسؤولية",
-          "example": ""
+          "example": "die Zuständigkeiten"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-10",
           "word": "die Empfehlung",
           "translation": "التوصية",
-          "example": ""
+          "example": "die Empfehlungen"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-11",
           "word": "anstreben",
           "translation": "يسعى إلى",
-          "example": ""
+          "example": "strebt an"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-12",
           "word": "sich beruflich orientieren",
           "translation": "يحدّد توجهه المهني",
-          "example": ""
+          "example": "orientiert sich"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-13",
           "word": "vereinbaren",
           "translation": "يتفق على / ينسّق",
-          "example": ""
+          "example": "vereinbart"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-14",
           "word": "übernehmen",
           "translation": "يتولى",
-          "example": ""
+          "example": "übernimmt"
         },
         {
           "id": "b2-02-career-formal-communication-konjunktiv1-word-15",
@@ -16856,31 +16856,31 @@
           "id": "b2-03-consumption-environment-passive-modal-word-2",
           "word": "die Ressource",
           "translation": "مورد",
-          "example": ""
+          "example": "die Ressourcen"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-3",
           "word": "die Verpackung",
           "translation": "عبوة / تغليف",
-          "example": ""
+          "example": "die Verpackungen"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-4",
           "word": "das Einwegprodukt",
           "translation": "منتج للاستعمال مرة واحدة",
-          "example": ""
+          "example": "die Einwegprodukte"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-5",
           "word": "das Mehrwegsystem",
           "translation": "نظام إعادة الاستخدام",
-          "example": ""
+          "example": "die Mehrwegsysteme"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-6",
           "word": "die Rückgabe",
           "translation": "إعادة / إرجاع",
-          "example": ""
+          "example": "die Rückgaben"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-7",
@@ -16892,13 +16892,13 @@
           "id": "b2-03-consumption-environment-passive-modal-word-8",
           "word": "die Reparatur",
           "translation": "إصلاح",
-          "example": ""
+          "example": "die Reparaturen"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-9",
           "word": "der Abfall",
           "translation": "نفاية",
-          "example": ""
+          "example": "die Abfälle"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-10",
@@ -16910,25 +16910,25 @@
           "id": "b2-03-consumption-environment-passive-modal-word-11",
           "word": "vermeiden",
           "translation": "يتجنّب",
-          "example": ""
+          "example": "vermeidet"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-12",
           "word": "wiederverwenden",
           "translation": "يعيد الاستخدام",
-          "example": ""
+          "example": "verwendet wieder"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-13",
           "word": "trennen",
           "translation": "يفرز",
-          "example": ""
+          "example": "trennt"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-14",
           "word": "entsorgen",
           "translation": "يتخلّص من",
-          "example": ""
+          "example": "entsorgt"
         },
         {
           "id": "b2-03-consumption-environment-passive-modal-word-15",
@@ -17247,43 +17247,43 @@
           "id": "b2-04-cities-housing-participles-word-1",
           "word": "die Wohnfläche",
           "translation": "المساحة السكنية",
-          "example": ""
+          "example": "die Wohnflächen"
         },
         {
           "id": "b2-04-cities-housing-participles-word-2",
           "word": "die Fassade",
           "translation": "الواجهة",
-          "example": ""
+          "example": "die Fassaden"
         },
         {
           "id": "b2-04-cities-housing-participles-word-3",
           "word": "die Dämmung",
           "translation": "العزل",
-          "example": ""
+          "example": "die Dämmungen"
         },
         {
           "id": "b2-04-cities-housing-participles-word-4",
           "word": "das Mehrfamilienhaus",
           "translation": "مبنى سكني لعدة أسر",
-          "example": ""
+          "example": "die Mehrfamilienhäuser"
         },
         {
           "id": "b2-04-cities-housing-participles-word-5",
           "word": "der Altbau",
           "translation": "مبنى قديم",
-          "example": ""
+          "example": "die Altbauten"
         },
         {
           "id": "b2-04-cities-housing-participles-word-6",
           "word": "die Sanierung",
           "translation": "الترميم / إعادة التأهيل",
-          "example": ""
+          "example": "die Sanierungen"
         },
         {
           "id": "b2-04-cities-housing-participles-word-7",
           "word": "die Nebenkosten",
           "translation": "التكاليف الإضافية للسكن",
-          "example": ""
+          "example": "nur Plural"
         },
         {
           "id": "b2-04-cities-housing-participles-word-8",
@@ -17295,31 +17295,31 @@
           "id": "b2-04-cities-housing-participles-word-9",
           "word": "die Baustelle",
           "translation": "ورشة بناء",
-          "example": ""
+          "example": "die Baustellen"
         },
         {
           "id": "b2-04-cities-housing-participles-word-10",
           "word": "das Wohnviertel",
           "translation": "حيّ سكني",
-          "example": ""
+          "example": "die Wohnviertel"
         },
         {
           "id": "b2-04-cities-housing-participles-word-11",
           "word": "sanieren",
           "translation": "يرمّم / يعيد تأهيل",
-          "example": ""
+          "example": "saniert"
         },
         {
           "id": "b2-04-cities-housing-participles-word-12",
           "word": "dämmen",
           "translation": "يعزل حراريًا أو صوتيًا",
-          "example": ""
+          "example": "dämmt"
         },
         {
           "id": "b2-04-cities-housing-participles-word-13",
           "word": "entstehen",
           "translation": "ينشأ / يُبنى",
-          "example": ""
+          "example": "entsteht"
         },
         {
           "id": "b2-04-cities-housing-participles-word-14",
@@ -17644,67 +17644,67 @@
           "id": "b2-05-health-fitness-medical-information-word-1",
           "word": "die Studie",
           "translation": "دراسة",
-          "example": ""
+          "example": "die Studien"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-2",
           "word": "die Befragung",
           "translation": "استبيان / استطلاع",
-          "example": ""
+          "example": "die Befragungen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-3",
           "word": "die Stichprobe",
           "translation": "عيّنة الدراسة",
-          "example": ""
+          "example": "die Stichproben"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-4",
           "word": "der Messwert",
           "translation": "قيمة القياس",
-          "example": ""
+          "example": "die Messwerte"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-5",
           "word": "die Kontrollgruppe",
           "translation": "المجموعة الضابطة",
-          "example": ""
+          "example": "die Kontrollgruppen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-6",
           "word": "die Auswertung",
           "translation": "تحليل النتائج",
-          "example": ""
+          "example": "die Auswertungen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-7",
           "word": "das Ergebnis",
           "translation": "النتيجة",
-          "example": ""
+          "example": "die Ergebnisse"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-8",
           "word": "die Fachquelle",
           "translation": "مصدر متخصص",
-          "example": ""
+          "example": "die Fachquellen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-9",
           "word": "die Aussage",
           "translation": "ادّعاء / عبارة",
-          "example": ""
+          "example": "die Aussagen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-10",
           "word": "die Teilnahme",
           "translation": "المشاركة",
-          "example": ""
+          "example": "die Teilnahmen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-11",
           "word": "die Belastung",
           "translation": "الجهد / الحمل",
-          "example": ""
+          "example": "die Belastungen"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-12",
@@ -17722,19 +17722,19 @@
           "id": "b2-05-health-fitness-medical-information-word-14",
           "word": "belegen",
           "translation": "يثبت / يدعم بالأدلة",
-          "example": ""
+          "example": "belegt"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-15",
           "word": "hinweisen auf + Akkusativ",
           "translation": "يشير إلى",
-          "example": ""
+          "example": "weist hin"
         },
         {
           "id": "b2-05-health-fitness-medical-information-word-16",
           "word": "verallgemeinern",
           "translation": "يعمّم",
-          "example": ""
+          "example": "verallgemeinert"
         }
       ],
       "quiz": [
@@ -18047,61 +18047,61 @@
           "id": "b2-06-study-applications-verb-noun-phrases-word-1",
           "word": "der Studiengang",
           "translation": "البرنامج الدراسي",
-          "example": ""
+          "example": "die Studiengänge"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-2",
           "word": "die Zulassung",
           "translation": "القبول",
-          "example": ""
+          "example": "die Zulassungen"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-3",
           "word": "die Voraussetzung",
           "translation": "الشرط المسبق",
-          "example": ""
+          "example": "die Voraussetzungen"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-4",
           "word": "der Leistungsnachweis",
           "translation": "إثبات إنجاز دراسي",
-          "example": ""
+          "example": "die Leistungsnachweise"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-5",
           "word": "die Bewerbung",
           "translation": "طلب التقديم",
-          "example": ""
+          "example": "die Bewerbungen"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-6",
           "word": "das Motivationsschreiben",
           "translation": "رسالة الدافع",
-          "example": ""
+          "example": "die Motivationsschreiben"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-7",
           "word": "die Immatrikulation",
           "translation": "التسجيل الجامعي",
-          "example": ""
+          "example": "die Immatrikulationen"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-8",
           "word": "die Bewerbungsfrist",
           "translation": "مهلة التقديم",
-          "example": ""
+          "example": "die Bewerbungsfristen"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-9",
           "word": "die Studienberatung",
           "translation": "الإرشاد الدراسي",
-          "example": ""
+          "example": "die Studienberatungen"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-10",
           "word": "der Nachweis",
           "translation": "إثبات / وثيقة",
-          "example": ""
+          "example": "die Nachweise"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-11",
@@ -18113,19 +18113,19 @@
           "id": "b2-06-study-applications-verb-noun-phrases-word-12",
           "word": "nachreichen",
           "translation": "يقدّم لاحقًا / يستكمل",
-          "example": ""
+          "example": "reicht nach"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-13",
           "word": "erwerben",
           "translation": "يكتسب",
-          "example": ""
+          "example": "erwirbt"
         },
         {
           "id": "b2-06-study-applications-verb-noun-phrases-word-14",
           "word": "einreichen",
           "translation": "يقدّم وثيقة",
-          "example": ""
+          "example": "reicht ein"
         }
       ],
       "quiz": [
@@ -18439,79 +18439,79 @@
           "id": "b2-07-travel-experiences-prepositional-relatives-word-1",
           "word": "die Reiseetappe",
           "translation": "مرحلة من الرحلة",
-          "example": ""
+          "example": "die Reiseetappen"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-2",
           "word": "die Route",
           "translation": "المسار",
-          "example": ""
+          "example": "die Routen"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-3",
           "word": "die Unterkunft",
           "translation": "مكان الإقامة",
-          "example": ""
+          "example": "die Unterkünfte"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-4",
           "word": "der Aussichtspunkt",
           "translation": "نقطة إطلالة",
-          "example": ""
+          "example": "die Aussichtspunkte"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-5",
           "word": "die Landschaft",
           "translation": "المشهد الطبيعي",
-          "example": ""
+          "example": "die Landschaften"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-6",
           "word": "die Begegnung",
           "translation": "لقاء",
-          "example": ""
+          "example": "die Begegnungen"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-7",
           "word": "die Wegbeschreibung",
           "translation": "وصف الطريق",
-          "example": ""
+          "example": "die Wegbeschreibungen"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-8",
           "word": "der Reiseführer",
           "translation": "دليل السفر",
-          "example": ""
+          "example": "die Reiseführer"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-9",
           "word": "der Hafen",
           "translation": "الميناء",
-          "example": ""
+          "example": "die Häfen"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-10",
           "word": "die Bucht",
           "translation": "الخليج / الخلجان",
-          "example": ""
+          "example": "die Buchten"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-11",
           "word": "übernachten in",
           "translation": "يبيت في",
-          "example": ""
+          "example": "übernachtet"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-12",
           "word": "vorbeifahren an + Dativ",
           "translation": "يمرّ بمحاذاة",
-          "example": ""
+          "example": "fährt vorbei"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-13",
           "word": "sich beziehen auf + Akkusativ",
           "translation": "يشير إلى / يتعلق بـ",
-          "example": ""
+          "example": "bezieht sich"
         },
         {
           "id": "b2-07-travel-experiences-prepositional-relatives-word-14",
@@ -18838,61 +18838,61 @@
           "id": "b2-08-food-nutrition-data-passives-word-1",
           "word": "die Erhebung",
           "translation": "جمع البيانات / دراسة مسحية",
-          "example": ""
+          "example": "die Erhebungen"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-2",
           "word": "der Durchschnitt",
           "translation": "المتوسّط",
-          "example": ""
+          "example": "die Durchschnitte"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-3",
           "word": "der Anteil",
           "translation": "النسبة / الحصة",
-          "example": ""
+          "example": "die Anteile"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-4",
           "word": "die Portion",
           "translation": "الحصة الغذائية",
-          "example": ""
+          "example": "die Portionen"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-5",
           "word": "der Nährwert",
           "translation": "القيمة الغذائية",
-          "example": ""
+          "example": "die Nährwerte"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-6",
           "word": "die Zutatenliste",
           "translation": "قائمة المكوّنات",
-          "example": ""
+          "example": "die Zutatenlisten"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-7",
           "word": "die Kennzeichnung",
           "translation": "البيان / الملصق التعريفي",
-          "example": ""
+          "example": "die Kennzeichnungen"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-8",
           "word": "die Tabelle",
           "translation": "الجدول",
-          "example": ""
+          "example": "die Tabellen"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-9",
           "word": "die Probe",
           "translation": "العيّنة",
-          "example": ""
+          "example": "die Proben"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-10",
           "word": "der Ballaststoff",
           "translation": "الألياف الغذائية",
-          "example": ""
+          "example": "die Ballaststoffe"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-11",
@@ -18904,31 +18904,31 @@
           "id": "b2-08-food-nutrition-data-passives-word-12",
           "word": "abwiegen",
           "translation": "يَزِن",
-          "example": ""
+          "example": "wiegt ab"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-13",
           "word": "erfassen",
           "translation": "يسجّل / يرصد",
-          "example": ""
+          "example": "erfasst"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-14",
           "word": "auswerten",
           "translation": "يحلّل النتائج",
-          "example": ""
+          "example": "wertet aus"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-15",
           "word": "kennzeichnen",
           "translation": "يضع بيانًا / يعلّم",
-          "example": ""
+          "example": "kennzeichnet"
         },
         {
           "id": "b2-08-food-nutrition-data-passives-word-16",
           "word": "ausweisen",
           "translation": "يبيّن / يصرّح بـ",
-          "example": ""
+          "example": "weist aus"
         }
       ],
       "quiz": [
@@ -19243,13 +19243,13 @@
           "id": "b2-09-business-marketing-employment-prepositions-word-1",
           "word": "das Unternehmen",
           "translation": "الشركة / المؤسسة",
-          "example": ""
+          "example": "die Unternehmen"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-2",
           "word": "der Umsatz",
           "translation": "الإيرادات / حجم المبيعات",
-          "example": ""
+          "example": "die Umsätze"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-3",
@@ -19261,19 +19261,19 @@
           "id": "b2-09-business-marketing-employment-prepositions-word-4",
           "word": "die Zielgruppe",
           "translation": "الفئة المستهدفة",
-          "example": ""
+          "example": "die Zielgruppen"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-5",
           "word": "die Werbekampagne",
           "translation": "الحملة الإعلانية",
-          "example": ""
+          "example": "die Werbekampagnen"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-6",
           "word": "die Lieferkette",
           "translation": "سلسلة التوريد",
-          "example": ""
+          "example": "die Lieferketten"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-7",
@@ -19285,49 +19285,49 @@
           "id": "b2-09-business-marketing-employment-prepositions-word-8",
           "word": "die Fachkraft",
           "translation": "موظف متخصص / كفاءة مهنية",
-          "example": ""
+          "example": "die Fachkräfte"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-9",
           "word": "die Stellenanzeige",
           "translation": "إعلان الوظيفة",
-          "example": ""
+          "example": "die Stellenanzeigen"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-10",
           "word": "die Arbeitsbedingung",
           "translation": "شرط / ظروف العمل",
-          "example": ""
+          "example": "die Arbeitsbedingungen"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-11",
           "word": "sich spezialisieren auf + Akkusativ",
           "translation": "يتخصص في",
-          "example": ""
+          "example": "spezialisiert sich"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-12",
           "word": "Wert legen auf + Akkusativ",
           "translation": "يولي أهمية لـ",
-          "example": ""
+          "example": "legt Wert"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-13",
           "word": "werben mit + Dativ",
           "translation": "يروّج باستخدام / يعلن عن طريق",
-          "example": ""
+          "example": "wirbt"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-14",
           "word": "abhängen von + Dativ",
           "translation": "يعتمد على",
-          "example": ""
+          "example": "hängt ab"
         },
         {
           "id": "b2-09-business-marketing-employment-prepositions-word-15",
           "word": "sich richten an + Akkusativ",
           "translation": "يتوجّه إلى",
-          "example": ""
+          "example": "richtet sich"
         }
       ],
       "quiz": [
@@ -19641,49 +19641,49 @@
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-1",
           "word": "das Update",
           "translation": "تحديث البرنامج",
-          "example": ""
+          "example": "die Updates"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-2",
           "word": "die Schnittstelle",
           "translation": "واجهة الربط",
-          "example": ""
+          "example": "die Schnittstellen"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-3",
           "word": "die Einstellung",
           "translation": "الإعداد",
-          "example": ""
+          "example": "die Einstellungen"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-4",
           "word": "der Zugriff",
           "translation": "الوصول / النفاذ",
-          "example": ""
+          "example": "die Zugriffe"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-5",
           "word": "die Störung",
           "translation": "خلل / اضطراب",
-          "example": ""
+          "example": "die Störungen"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-6",
           "word": "die Ausfallzeit",
           "translation": "مدة التوقف",
-          "example": ""
+          "example": "die Ausfallzeiten"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-7",
           "word": "die Funktion",
           "translation": "الوظيفة / الميزة",
-          "example": ""
+          "example": "die Funktionen"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-8",
           "word": "die Voraussetzung",
           "translation": "الشرط المسبق",
-          "example": ""
+          "example": "die Voraussetzungen"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-9",
@@ -19707,25 +19707,25 @@
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-12",
           "word": "auftreten",
           "translation": "يحدث / يظهر",
-          "example": ""
+          "example": "tritt auf"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-13",
           "word": "überprüfen",
           "translation": "يتحقّق من",
-          "example": ""
+          "example": "überprüft"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-14",
           "word": "zurücksetzen",
           "translation": "يعيد إلى الإعدادات الأصلية",
-          "example": ""
+          "example": "setzt zurück"
         },
         {
           "id": "b2-10-wishes-probabilities-technology-konjunktiv2-past-word-15",
           "word": "sich wünschen",
           "translation": "يتمنى",
-          "example": ""
+          "example": "wünscht sich"
         }
       ],
       "quiz": [
@@ -20051,49 +20051,49 @@
           "id": "b2-11-humans-nature-environment-nominalization-word-3",
           "word": "die Renaturierung",
           "translation": "إعادة الطبيعة إلى حالتها الطبيعية",
-          "example": ""
+          "example": "die Renaturierungen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-4",
           "word": "die Verringerung",
           "translation": "التقليل",
-          "example": ""
+          "example": "die Verringerungen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-5",
           "word": "die Wiederherstellung",
           "translation": "الاستعادة",
-          "example": ""
+          "example": "die Wiederherstellungen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-6",
           "word": "die Flächennutzung",
           "translation": "استخدام الأراضي",
-          "example": ""
+          "example": "die Flächennutzungen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-7",
           "word": "die Auswirkung",
           "translation": "الأثر",
-          "example": ""
+          "example": "die Auswirkungen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-8",
           "word": "die Maßnahme",
           "translation": "إجراء / تدبير",
-          "example": ""
+          "example": "die Maßnahmen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-9",
           "word": "die Beteiligung",
           "translation": "المشاركة",
-          "example": ""
+          "example": "die Beteiligungen"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-10",
           "word": "der Lebensraum",
           "translation": "موئل / بيئة معيشة",
-          "example": ""
+          "example": "die Lebensräume"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-11",
@@ -20105,25 +20105,25 @@
           "id": "b2-11-humans-nature-environment-nominalization-word-12",
           "word": "schützen",
           "translation": "يحمي",
-          "example": ""
+          "example": "schützt"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-13",
           "word": "wiederherstellen",
           "translation": "يستعيد",
-          "example": ""
+          "example": "stellt wieder her"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-14",
           "word": "beeinträchtigen",
           "translation": "يضرّ / يؤثر سلبًا في",
-          "example": ""
+          "example": "beeinträchtigt"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-15",
           "word": "abwägen",
           "translation": "يوازن بين الخيارات",
-          "example": ""
+          "example": "wägt ab"
         },
         {
           "id": "b2-11-humans-nature-environment-nominalization-word-16",
@@ -20443,31 +20443,31 @@
           "id": "b2-12-leisure-media-reported-speech-word-1",
           "word": "die Rezension",
           "translation": "مراجعة / نقد",
-          "example": ""
+          "example": "die Rezensionen"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-2",
           "word": "die Aussage",
           "translation": "قول / تصريح",
-          "example": ""
+          "example": "die Aussagen"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-3",
           "word": "das Interview",
           "translation": "مقابلة",
-          "example": ""
+          "example": "die Interviews"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-4",
           "word": "die Sendung",
           "translation": "برنامج إذاعي أو تلفزيوني",
-          "example": ""
+          "example": "die Sendungen"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-5",
           "word": "der Podcast",
           "translation": "بودكاست",
-          "example": ""
+          "example": "die Podcasts"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-6",
@@ -20479,49 +20479,49 @@
           "id": "b2-12-leisure-media-reported-speech-word-7",
           "word": "die Moderatorin / der Moderator",
           "translation": "مقدّمة / مقدّم البرنامج",
-          "example": ""
+          "example": "die Moderatorinnen / Moderatoren"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-8",
           "word": "der Kommentar",
           "translation": "تعليق",
-          "example": ""
+          "example": "die Kommentare"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-9",
           "word": "die Behauptung",
           "translation": "ادّعاء",
-          "example": ""
+          "example": "die Behauptungen"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-10",
           "word": "die Redewiedergabe",
           "translation": "نقل الكلام",
-          "example": ""
+          "example": "die Redewiedergaben"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-11",
           "word": "berichten",
           "translation": "يروي / يقدّم تقريرًا",
-          "example": ""
+          "example": "berichtet"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-12",
           "word": "behaupten",
           "translation": "يدّعي",
-          "example": ""
+          "example": "behauptet"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-13",
           "word": "einräumen",
           "translation": "يقرّ / يعترف",
-          "example": ""
+          "example": "räumt ein"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-14",
           "word": "zustimmen",
           "translation": "يوافق",
-          "example": ""
+          "example": "stimmt zu"
         },
         {
           "id": "b2-12-leisure-media-reported-speech-word-15",

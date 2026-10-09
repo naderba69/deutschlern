@@ -362,6 +362,8 @@ def vocab_table(markdown: str, lesson_id: str) -> list[dict[str, str]]:
         if meaning_index is None:
             continue
         example_index = next((i for i, h in enumerate(headers_normalized) if "مثال" in h or "example" in h), None)
+        if example_index is None:
+            example_index = next((i for i, h in enumerate(headers_normalized) if any(k in h for k in ("الجمع", "التصريف", "ملاحظة"))), None)
         output: list[dict[str, str]] = []
         for row in table_lines[separator_index + 1 :]:
             if is_table_separator(row):
@@ -377,6 +379,8 @@ def vocab_table(markdown: str, lesson_id: str) -> list[dict[str, str]]:
             translation = re.sub(r"\*\*|`", "", translation).strip()
             example = values[example_index].strip() if example_index is not None and example_index < len(values) else ""
             example = re.sub(r"\*\*|`", "", example).strip()
+            if example in {"—", "-"}:
+                example = ""
             output.append({
                 "id": f"{lesson_id}-word-{len(output) + 1}",
                 "word": term,
