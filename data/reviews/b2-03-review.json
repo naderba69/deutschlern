@@ -1,0 +1,2001 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-03-consumption-environment-passive-modal",
+  "reviewDate": "2026-10-09",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b2-03-v2",
+  "unitCount": 95,
+  "exerciseSubItemCount": 40,
+  "modelPartCount": 10,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "PASSIV",
+      "title": "Lingolia — Passive Voice in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive",
+      "scope": "قُرئ الجزآن 0 و1 من 2 بالكامل: يشرح المبني للمجهول الإجرائي (Vorgangspassiv) مع werden، وتحويل المفعول المنصوب إلى فاعل مرفوع، وصيغة المبني للمجهول مع الأفعال الناقصة (Modalverb مصرف + Partizip II + werden)، وبدائل المبني للمجهول مثل جملة man والصفات المنتهية بـ-bar.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "searchResultId": 1
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modal Verbs in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/modal-verbs",
+      "scope": "قُرئ الجزء 0 من 1 بالكامل: يشرح دلالات الأفعال الناقصة (können للإمكانية، müssen للضرورة، sollen/sollten للتوصية أو الواجب المقترح) وجداول تصريفها في المضارع والماضي وKonjunktiv II.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "VERBRAUCH",
+      "title": "Duden — Verbrauch",
+      "url": "https://www.duden.de/rechtschreibung/Verbrauch",
+      "scope": "اسم مذكر يُستعمل بلا جمع في المعنى العام للاستهلاك (وجمعه الاصطلاحي النادر die Verbräuche).",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "RESSOURCE",
+      "title": "Duden — Ressource",
+      "url": "https://www.duden.de/rechtschreibung/Ressource",
+      "scope": "اسم مؤنث جمعُه الشائع die Ressourcen؛ يدل على الموارد الطبيعية أو المادية اللازمة للإنتاج والحياة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MEHRWEGSYSTEM",
+      "title": "Duden — Mehrwegsystem",
+      "url": "https://www.duden.de/rechtschreibung/Mehrwegsystem",
+      "scope": "اسم محايد جمعُه die Mehrwegsysteme؛ منظومة إرجاع العبوات وجمعها لإعادة استخدامها.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WIEDERVERWENDUNG",
+      "title": "Duden — Wiederverwendung",
+      "url": "https://www.duden.de/rechtschreibung/Wiederverwendung",
+      "scope": "اسم مؤنث جمعُه النادر die Wiederverwendungen؛ يدل على إعادة استخدام الشيء بعد استعماله الأول.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ABFALL",
+      "title": "Duden — Abfall",
+      "url": "https://www.duden.de/rechtschreibung/Abfall",
+      "scope": "اسم مذكر جمعُه die Abfälle؛ البقايا أو النفايات الناتجة عن الاستهلاك أو التصنيع.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "KREISLAUFWIRTSCHAFT",
+      "title": "Duden — Kreislaufwirtschaft",
+      "url": "https://www.duden.de/rechtschreibung/Kreislaufwirtschaft",
+      "scope": "اسم مؤنث بلا جمع؛ نظام اقتصادي يعتمد إعادة الاستخدام والإصلاح والتدوير لتقليل استهلاك الموارد والنفايات.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "VERMEIDEN",
+      "title": "Duden — vermeiden",
+      "url": "https://www.duden.de/rechtschreibung/vermeiden",
+      "scope": "فعل قوي غير منفصل تصريفه vermeidet، vermied، hat vermieden؛ يدل على تجنب حدوث شيء مثل النفايات أو الأخطاء.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WIEDERVERWENDEN",
+      "title": "Duden — wiederverwenden",
+      "url": "https://www.duden.de/rechtschreibung/wiederverwenden",
+      "scope": "فعل منفصل تصريفه verwendet wieder، verwendete wieder، واسم المفعول منه hat wiederverwendet بلا ge-؛ يدل على استخدام الشيء مرة أخرى بعد استعماله.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 45–50 دقيقة (مرنة؛ يمكن تقسيمها إلى جلستين) · **المهارات:** قراءة، استماع، قواعد المبني للمجهول مع الأفعال الناقصة، تحليل خيارات استهلاك، كتابة وعرض شفهي (الصوت المسجّل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط دون شريك أو تسجيل)",
+      "finding": "المدة مقترحة قابلة للتقسيم؛ الصوت المسجل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أصف ما ينبغي أو يمكن أو يُوصى بفعله بالمنتجات والمواد باستخدام **Passiv mit Modalverben** في الجملة الرئيسية والجملة التابعة، وأن أميّز بين الإجراءات التجريبية والنتائج المثبتة. هذا الدرس وتقييمه المحلي للتعلّم الذاتي ولا يمنحان شهادة رسمية لمستوى B2.",
+      "finding": "الهدف وصف ما ينبغي أو يمكن أو يوصى بفعله بـPassiv mit Modalverben في الجملة الرئيسية والتابعة مع التمييز بين التجربة والنتيجة المثبتة؛ لا يمنح الدرس شهادة B2.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "تنبيه مفردات: يُستعمل **der Verbrauch** و**die Wiederverwendung** في سياق الاستهلاك اليومي بالمفرد عادةً (وإن وُجد في الفصحى أو الاصطلاح جمعان نادران: **die Verbräuche** و**die Wiederverwendungen**)، أما **die Kreislaufwirtschaft** فبلا جمع. والفعل **wiederverwenden** منفصل في المضارع والماضي البسيط (**verwendet wieder, verwendete wieder**)، واسم المفعول منه **wiederverwendet** من غير **ge-** لوجود البادئة غير المنفصلة **ver-**. أما **vermeiden** ففعل قوي غير منفصل (**vermeidet, vermied, hat vermieden**)، و**entsorgen** فعل ضعيف غير منفصل (**entsorgt, entsorgte, hat entsorgt**).",
+      "finding": "وُضح إفراد Verbrauch وWiederverwendung في الاستعمال اليومي وعدم جمع Kreislaufwirtschaft، وانفصال wiederverwenden مع اسم المفعول wiederverwendet بلا ge- مقابل عدم انفصال vermeiden وentsorgen.",
+      "sourceIds": [
+        "VERBRAUCH",
+        "WIEDERVERWENDUNG",
+        "KREISLAUFWIRTSCHAFT",
+        "VERMEIDEN",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نستخدم المبني للمجهول مع الفعل الناقص عندما نركّز على الإجراء المطلوب أو الممكن، لا على من ينفّذه. في الجملة الرئيسية الخبرية يأتي الفعل الناقص مصرّفًا في الموقع الثاني، ثم **Partizip II + werden** في نهاية الجملة؛ أما في الجملة التابعة (مثل **ob / weil / wenn / die**) فيتأخر الفعل الناقص المصرّف إلى آخر الجملة بعد **Partizip II + werden**.",
+      "finding": "قُيّدت القاعدة بمجيء الفعل الناقص في الموضع الثاني من الجملة الرئيسية وبقاء Partizip II + werden في النهاية، مقابل تأخر الفعل الناقص إلى آخر الجملة التابعة بعد Partizip II + werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "قارن بالمعلوم: **Man kann Glasflaschen wiederverwenden.** — يمكن للمرء إعادة استخدام القوارير الزجاجية.  ",
+      "finding": "مقابلة مباشرة بين الجملة الفاعلة بـman (Man kann Glasflaschen wiederverwenden) والجملة المبنية للمجهول (Glasflaschen können wiederverwendet werden).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Verbrauch | — | الاستهلاك |",
+      "finding": "Verbrauch مذكر ويستعمل هنا بلا جمع؛ الاستهلاك.",
+      "sourceIds": [
+        "VERBRAUCH"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Ressource | die Ressourcen | مورد |",
+      "finding": "Ressource مؤنث وجمعها الشائع Ressourcen؛ مورد طبيعي أو مادي.",
+      "sourceIds": [
+        "RESSOURCE"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Verpackung | die Verpackungen | عبوة / تغليف |",
+      "finding": "Verpackung مؤنث وجمعها Verpackungen؛ عبوة أو تغليف.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| das Einwegprodukt | die Einwegprodukte | منتج للاستعمال مرة واحدة |",
+      "finding": "Einwegprodukt محايد وجمعه Einwegprodukte؛ منتج للاستعمال مرة واحدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| das Mehrwegsystem | die Mehrwegsysteme | نظام إعادة الاستخدام |",
+      "finding": "Mehrwegsystem محايد وجمعه Mehrwegsysteme؛ نظام إعادة الاستخدام.",
+      "sourceIds": [
+        "MEHRWEGSYSTEM"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Rückgabe | die Rückgaben | إعادة / إرجاع |",
+      "finding": "Rückgabe مؤنث وجمعها Rückgaben؛ إعادة أو إرجاع العبوات.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Wiederverwendung | — | إعادة الاستخدام |",
+      "finding": "Wiederverwendung مؤنث وتستعمل هنا بلا جمع؛ إعادة الاستخدام.",
+      "sourceIds": [
+        "WIEDERVERWENDUNG"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Reparatur | die Reparaturen | إصلاح |",
+      "finding": "Reparatur مؤنث وجمعها Reparaturen؛ إصلاح.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Abfall | die Abfälle | نفاية |",
+      "finding": "Abfall مذكر وجمعه Abfälle؛ نفاية أو مخلفات.",
+      "sourceIds": [
+        "ABFALL"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Kreislaufwirtschaft | — | الاقتصاد الدائري |",
+      "finding": "Kreislaufwirtschaft مؤنث بلا جمع؛ الاقتصاد الدائري.",
+      "sourceIds": [
+        "KREISLAUFWIRTSCHAFT"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| vermeiden | vermeidet | يتجنّب |",
+      "finding": "vermeiden فعل قوي غير منفصل حاضرُه vermeidet واسم مفعوله vermieden؛ يتجنب.",
+      "sourceIds": [
+        "VERMEIDEN"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| wiederverwenden | verwendet wieder | يعيد الاستخدام |",
+      "finding": "wiederverwenden فعل منفصل حاضرُه verwendet wieder واسم مفعوله wiederverwendet؛ يعيد الاستخدام.",
+      "sourceIds": [
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| trennen | trennt | يفرز |",
+      "finding": "trennen فعل ضعيف حاضرُه trennt واسم مفعوله getrennt؛ يفرز.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| entsorgen | entsorgt | يتخلّص من |",
+      "finding": "entsorgen فعل ضعيف غير منفصل حاضرُه entsorgt واسم مفعوله entsorgt؛ يتخلص من النفايات.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| langlebig / wiederverwendbar | — | طويل العمر / قابل لإعادة الاستخدام |",
+      "finding": "langlebig طويل العمر وwiederverwendbar قابل لإعادة الاستخدام؛ صفتان لوصف البدائل المستدامة.",
+      "sourceIds": [
+        "PASSIV"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "Einwegverpackungen müssen reduziert werden.",
+      "finding": "Einwegverpackungen müssen reduziert werden: ضرورة بصيغة الجمع müssen، ثم Partizip II (reduziert) + werden في النهاية.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Mehrwegbehälter können mehrfach verwendet werden.",
+      "finding": "Mehrwegbehälter können mehrfach verwendet werden: إمكانية بصيغة الجمع können، ثم verwendet werden في النهاية.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Beschädigte Geräte sollten repariert werden.",
+      "finding": "Beschädigte Geräte sollten repariert werden: توصية بصيغة sollten، ثم repariert werden في النهاية.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Man kann Glasflaschen wiederverwenden.",
+      "finding": "Man kann Glasflaschen wiederverwenden: جملة معلوم بالفاعل العام man والمصدر المنفصل المتصل في النهاية wiederverwenden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Glasflaschen können wiederverwendet werden.",
+      "finding": "Glasflaschen können wiederverwendet werden: الجملة المقابلة بالمبني للمجهول بعد تحويل Glasflaschen إلى فاعل مرفوع.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **التركيز الدلالي في المبني للمجهول:** نركّز على الشيء أو المادة والإجراء الواقع عليها (**Einwegverpackungen, Mehrwegbecher, Geräte, Abfälle**)، بينما يُطوى الفاعل العام (**man**) أو يُذكر عند الحاجة فقط.",
+      "finding": "بيان تركيز المبني للمجهول على المادة أو المنتج والإجراء المطلوب بدل الفاعل العام.",
+      "sourceIds": [
+        "PASSIV"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **تحويل المفعول به إلى فاعل مرفوع:** يتحول المفعول المنصوب في جملة **man** إلى فاعل مرفوع (**Nominativ**) في الجملة المبنية للمجهول، فيتطابق معه الفعل الناقص إفرادًا وجمعًا (**Man muss die Abfälle trennen → Die Abfälle müssen getrennt werden**).",
+      "finding": "شرح تحويل المفعول المنصوب في جملة man إلى فاعل مرفوع يطابقه الفعل الناقص إفرادًا وجمعًا.",
+      "sourceIds": [
+        "PASSIV",
+        "ABFALL"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **ترتيب نهاية الجملة الرئيسية:** في الجملة الرئيسية الخبرية يقف **Partizip II** قبل المصدر **werden** في نهاية الجملة (**gereinigt werden**، **wiederverwendet werden**، **repariert werden**).",
+      "finding": "تثبيت ترتيب نهاية الجملة الرئيسية: Partizip II + werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **ترتيب نهاية الجملة التابعة:** في الجمل التابعة المبدوءة بـ**ob / weil / wenn / damit** أو ضمير الوصل يقف **Partizip II + werden** ثم الفعل الناقص المصرّف في آخر الجملة (**ob sie repariert werden können**).",
+      "finding": "تثبيت ترتيب نهاية الجملة التابعة: Partizip II + werden + Modalverb مصرف.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **الفروق الدلالية بين الأفعال الناقصة:** يفيد **müssen** الضرورة أو الإلزام، ويفيد **können** الإمكانية، وتفيد **sollen / sollten** التوصية أو الإجراء المخطط أو المقترح.",
+      "finding": "تمييز الدلالات الثلاث: müssen للضرورة، وkönnen للإمكانية، وsollen/sollten للتوصية.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **انتبه لنفي `nicht müssen`:** تعني **Beschädigte Tabletts müssen nicht sofort ersetzt werden** أنها «لا يلزم استبدالها فورًا» (نفي الضرورة)، لا التحريم.",
+      "finding": "توضيح معنى النفي غير الإلزامي في nicht müssen (عدم وجوب الاستبدال الفوري لا التحريم).",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **صياغة `Partizip II` لأفعال الدرس:** الأفعال المنتهية بـ**-ieren** والأفعال ذات البادئات غير المنفصلة (**ver-, ent-**) لا تأخذ **ge-** (**reduziert, repariert, sortiert, organisiert, verwendet, wiederverwendet, vermieden, entsorgt**)، بينما تأخذها الأفعال البسيطة والمنفصلة القياسية (**gereinigt, getrennt, geprüft, gesammelt, zurückgegeben, ausgeliehen, weggeworfen**).",
+      "finding": "جمع أنماط Partizip II لأفعال الدرس بين الأفعال الخالية من ge- والأفعال البسيطة والمنفصلة القياسية.",
+      "sourceIds": [
+        "PASSIV",
+        "VERMEIDEN",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **مقابلة الجملة الفاعلة بـ`man` والجملة المجهولة:** تؤدي **Man kann Glasflaschen wiederverwenden** و**Glasflaschen können wiederverwendet werden** المعنى العملي نفسه مع إبراز المادة (**Glasflaschen**) في صدر الجملة الثانية.",
+      "finding": "المقابلة الوظيفية بين جملة man المعلومة والجملة المبنية للمجهول.",
+      "sourceIds": [
+        "PASSIV",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **الأمانة المنهجية في وصف التجارب البيئية:** نفرّق بين تجربة قيد الاختبار (**erprobt / werden zunächst getestet**) وبين النتائج المنشورة؛ فلا نضيف نسبًا مئوية أو وعودًا بيئية غير موثقة.",
+      "finding": "ضبط الأمانة المنهجية بالتفريق بين التجربة الجارية والنتائج المثبتة ومنع الأرقام غير الموثقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **أداء المهمتين T08 (`P01` و`P02`):** المهمة الأولى **P01** كتابة فقط دون جهر، والمهمة الثانية **P02** كتابة مع قراءة جهرية ذاتية دون شريك أو تسجيل؛ والتقييم يعتمد على النصوص المكتوبة والتحقق الذاتي المحلي ولا يتوقف على تشغيل ملفات الصوت.",
+      "finding": "تحديد P01 كتابة فقط وP02 كتابة وجهر ذاتي، وبيان استقلال التقييم عن ملفات الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Was passiert mit den Mehrwegbechern nach dem Verkauf?",
+      "finding": "Nadia تسأل عما يحدث للأكواب المتعددة الاستخدام بعد البيع.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Sie können an der Kasse zurückgegeben werden. Danach werden sie gereinigt.",
+      "finding": "البائع يوضح إمكانية إرجاعها عند الصندوق (können … zurückgegeben werden) ثم تنظيفها (werden sie gereinigt).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Und was ist mit den Verpackungen?",
+      "finding": "سؤال عن التعامل مع العبوات والتغليف.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ein Teil kann vermieden werden, wenn Kundinnen eigene Behälter mitbringen. Verpackungen, die noch gebraucht werden, müssen richtig getrennt werden.",
+      "finding": "البائع يبين إمكان تجنب جزء منها (kann vermieden werden) ووجوب فرز الباقي (müssen richtig getrennt werden).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "VERMEIDEN"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Werden beschädigte Produkte gleich weggeworfen?",
+      "finding": "سؤال بالمبني للمجهول في المضارع عن رمي المنتجات المتضررة فورًا.",
+      "sourceIds": [
+        "PASSIV"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Nicht immer. Manche Gegenstände können repariert werden. Wir prüfen zuerst, ob sich die Reparatur lohnt.",
+      "finding": "نفي التعميم وبيان إمكان إصلاح بعض الأشياء (können repariert werden) بعد فحص جدوى الإصلاح.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Der fiktive Laden „Kreislauf“ erprobt mehrere Möglichkeiten, Materialien länger zu nutzen.",
+      "finding": "يختبر المتجر الخيالي Kreislauf عدة إمكانات لإطالة استخدام المواد.",
+      "sourceIds": [
+        "KREISLAUFWIRTSCHAFT"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Getränke können in Mehrwegbechern verkauft werden; die Becher werden nach der Rückgabe gereinigt und erneut verwendet.",
+      "finding": "يمكن بيع المشروبات في أكواب متعددة الاستخدام وتُنظف بعد إرجاعها وتُستخدم مجددًا.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Einige Verpackungen können vermieden werden, wenn Kundinnen und Kunden eigene Behälter mitbringen.",
+      "finding": "يمكن تجنب بعض العبوات إذا أحضر الزبائن حاوياتهم الخاصة.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "VERMEIDEN"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Beschädigte Gegenstände sollen zuerst geprüft werden, bevor sie entsorgt werden.",
+      "finding": "ينبغي فحص الأشياء المتضررة أولًا قبل التخلص منها (sollen zuerst geprüft werden, bevor sie entsorgt werden).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Wenn eine Reparatur sinnvoll ist, kann sie in einer örtlichen Werkstatt organisiert werden.",
+      "finding": "إذا كان الإصلاح مجديًا فيمكن تنظيمه في ورشة محلية (kann sie … organisiert werden).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Das Team sammelt Rückmeldungen, um herauszufinden, welche Schritte im Alltag gut funktionieren.",
+      "finding": "يجمع الفريق ملاحظات الزبائن لمعرفة الخطوات الناجحة في الحياة اليومية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Es veröffentlicht noch keine Ergebnisse; die Möglichkeiten werden zunächst getestet.",
+      "finding": "لم ينشر الفريق نتائج بعد؛ فالإمكانات تُختبر مبدئيًا (werden zunächst getestet).",
+      "sourceIds": [
+        "PASSIV"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Welche Möglichkeiten erprobt der fiktive Laden?",
+      "finding": "Mehrere Möglichkeiten, Materialien länger zu nutzen. — يختبر المتجر طرقًا لإطالة استخدام المواد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was geschieht mit den Mehrwegbechern nach der Rückgabe?",
+      "finding": "Sie werden gereinigt und erneut verwendet. — تُنظف الأكواب بعد إرجاعها وتُستخدم من جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wie können einige Verpackungen vermieden werden?",
+      "finding": "Indem Kundinnen und Kunden eigene Behälter mitbringen. — يمكن تجنب بعض العبوات بإحضار الزبائن حاوياتهم الخاصة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was soll mit beschädigten Gegenständen zuerst passieren?",
+      "finding": "Sie sollen zuerst geprüft werden. — ينبغي فحص الأشياء المتضررة أولًا قبل التخلص منها.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was wird das Team sammeln?",
+      "finding": "Rückmeldungen. — يجمع الفريق ملاحظات الزبائن وردودهم.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-06",
+      "text": "Hat das Team bereits Ergebnisse veröffentlicht?",
+      "finding": "Nein, es veröffentlicht noch keine Ergebnisse; die Möglichkeiten werden zunächst getestet. — لا، لم ينشر نتائج بعد وما زالت الإمكانات قيد الاختبار.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten.",
+      "finding": "تُقدم المشروبات في المقهى في أكواب متعددة الاستخدام (werden … angeboten).",
+      "sourceIds": [
+        "PASSIV"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Die Becher können gegen Pfand ausgeliehen und später zurückgegeben werden.",
+      "finding": "يمكن استعارة الأكواب مقابل تأمين مسترد وإعادتها لاحقًا (können … ausgeliehen und später zurückgegeben werden).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Essensreste werden getrennt gesammelt.",
+      "finding": "تُجمع بقايا الطعام مفروزة (werden getrennt gesammelt).",
+      "sourceIds": [
+        "PASSIV"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Beschädigte Tabletts müssen nicht sofort ersetzt werden; zuerst wird geprüft, ob sie repariert werden können.",
+      "finding": "لا يلزم استبدال الصواني المتضررة فورًا؛ يُفحص أولًا هل يمكن إصلاحها (ob sie repariert werden können).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Das Team sammelt Rückmeldungen, um Vorschläge der Gäste kennenzulernen und weniger Material zu verschwenden.",
+      "finding": "يجمع الفريق الملاحظات للتعرف إلى مقترحات الضيوف وتقليل هدر المواد.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "In welchen Bechern werden Getränke angeboten?",
+      "finding": "In Mehrwegbechern. — تُقدم المشروبات في أكواب متعددة الاستخدام.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wie können Gäste die Becher nutzen?",
+      "finding": "Gegen Pfand ausleihen und später zurückgeben. — يمكن للضيوف استعارتها مقابل تأمين مسترد ثم إعادتها.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was geschieht mit Essensresten?",
+      "finding": "Sie werden getrennt gesammelt. — تُجمع بقايا الطعام مفروزة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was wird vor dem Ersatz beschädigter Tabletts geprüft?",
+      "finding": "Ob sie repariert werden können. — يُفحص قبل الاستبدال ما إذا كان يمكن إصلاح الصواني.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Warum sammelt das Team Rückmeldungen?",
+      "finding": "Um Vorschläge der Gäste kennenzulernen und weniger Material zu verschwenden. — يجمع الفريق الملاحظات لمعرفة مقترحات الضيوف وتقليل هدر المواد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B2-03-T01",
+      "text": "1. منتج يمكن استعماله أكثر من مرة: **wiederverwendbar / beschädigt**\n2. ما يُلقى بعد انتهاء الحاجة إليه: **der Abfall / die Ressource**\n3. إصلاح شيء بدل استبداله: **die Reparatur / die Verpackung**\n4. نظام يستخدم فيه المنتج أو الحاوية مرارًا: **das Mehrwegsystem / das Einwegprodukt**",
+      "finding": "أربعة بنود مفردات تثبت wiederverwendbar وAbfall وReparatur وMehrwegsystem.",
+      "sourceIds": [
+        "PASSIV",
+        "ABFALL",
+        "MEHRWEGSYSTEM"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "منتج يمكن استعماله أكثر من مرة: **wiederverwendbar / beschädigt**",
+          "answer": "wiederverwendbar",
+          "finding": "الصفة الدالة على قابلية إعادة الاستخدام أكثر من مرة هي wiederverwendbar لا beschädigt."
+        },
+        {
+          "index": 2,
+          "text": "ما يُلقى بعد انتهاء الحاجة إليه: **der Abfall / die Ressource**",
+          "answer": "der Abfall",
+          "finding": "ما يُلقى بعد انتهاء الحاجة إليه هو der Abfall لا die Ressource."
+        },
+        {
+          "index": 3,
+          "text": "إصلاح شيء بدل استبداله: **die Reparatur / die Verpackung**",
+          "answer": "die Reparatur",
+          "finding": "إصلاح الشيء بدل استبداله هو die Reparatur لا die Verpackung."
+        },
+        {
+          "index": 4,
+          "text": "نظام يستخدم فيه المنتج أو الحاوية مرارًا: **das Mehrwegsystem / das Einwegprodukt**",
+          "answer": "das Mehrwegsystem",
+          "finding": "النظام الذي تُستخدم فيه الحاوية مرارًا هو das Mehrwegsystem لا das Einwegprodukt."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T02",
+      "text": "1. Einwegverpackungen ______ stärker reduziert werden. (sollen)\n2. Glas kann gut ______ werden. (wiederverwenden)\n3. Beschädigte Geräte ______ nicht sofort entsorgt werden. (müssen، نفي الضرورة)\n4. Die Materialien ______ getrennt gesammelt werden. (können)",
+      "finding": "أربع جمل تدرب تصريف الفعل الناقص وصوغ Partizip II (wiederverwendet) ونفي الضرورة (nicht müssen).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Einwegverpackungen ______ stärker reduziert werden. (sollen)",
+          "answer": "sollen",
+          "finding": "صيغة الجمع من sollen مع Einwegverpackungen هي sollen."
+        },
+        {
+          "index": 2,
+          "text": "Glas kann gut ______ werden. (wiederverwenden)",
+          "answer": "wiederverwendet",
+          "finding": "قبل werden نضع Partizip II من الفعل المنفصل wiederverwenden بلا ge-: wiederverwendet."
+        },
+        {
+          "index": 3,
+          "text": "Beschädigte Geräte ______ nicht sofort entsorgt werden. (müssen، نفي الضرورة)",
+          "answer": "müssen",
+          "finding": "مع النفي غير الإلزامي (nicht sofort) والفاعل الجمع Geräte نكتب müssen."
+        },
+        {
+          "index": 4,
+          "text": "Die Materialien ______ getrennt gesammelt werden. (können)",
+          "answer": "können",
+          "finding": "صيغة الجمع من können مع Die Materialien هي können."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T03",
+      "text": "1. Die Becher können nach der Rückgabe ______ ______. (reinigen)\n2. Einige Produkte müssen sorgfältig ______ ______. (sortieren)\n3. Die Verpackungen sollten wieder ______ ______. (verwenden)\n4. Zuerst wird geprüft, ob die Tabletts ______ ______ ______. (reparieren / können)",
+      "finding": "أربع جمل تثبت ترتيب نهاية الجملة الرئيسية (Partizip II + werden) والجملة التابعة (Partizip II + werden + Modalverb).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Becher können nach der Rückgabe ______ ______. (reinigen)",
+          "answer": "gereinigt werden",
+          "finding": "في نهاية الجملة الرئيسية بعد können يأتي Partizip II ثم werden: gereinigt werden."
+        },
+        {
+          "index": 2,
+          "text": "Einige Produkte müssen sorgfältig ______ ______. (sortieren)",
+          "answer": "sortiert werden",
+          "finding": "من الفعل sortieren نصوغ Partizip II بلا ge- ثم werden: sortiert werden."
+        },
+        {
+          "index": 3,
+          "text": "Die Verpackungen sollten wieder ______ ______. (verwenden)",
+          "answer": "verwendet werden",
+          "finding": "من الفعل غير المنفصل verwenden نصوغ Partizip II بلا ge- ثم werden: verwendet werden."
+        },
+        {
+          "index": 4,
+          "text": "Zuerst wird geprüft, ob die Tabletts ______ ______ ______. (reparieren / können)",
+          "answer": "repariert werden können",
+          "finding": "في الجملة التابعة المبدوءة بـob يأتي Partizip II + werden ثم الفعل الناقص المصرف في النهاية: repariert werden können."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T04",
+      "text": "1. **Man muss die Abfälle trennen.** → Die Abfälle ______ ______ ______.\n2. **Man kann die Behälter wiederverwenden.** → Die Behälter ______ ______ ______.\n3. **Man sollte beschädigte Geräte reparieren.** → Beschädigte Geräte ______ ______ ______.\n4. **Man kann einige Verpackungen vermeiden.** → Einige Verpackungen ______ ______ ______.",
+      "finding": "أربع جمل تحول جمل man المعلومة إلى المبني للمجهول مع فعل ناقص.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Man muss die Abfälle trennen.** → Die Abfälle ______ ______ ______.",
+          "answer": "müssen getrennt werden",
+          "finding": "تحويل die Abfälle إلى فاعل جمع مع müssen ثم getrennt werden."
+        },
+        {
+          "index": 2,
+          "text": "**Man kann die Behälter wiederverwenden.** → Die Behälter ______ ______ ______.",
+          "answer": "können wiederverwendet werden",
+          "finding": "تحويل die Behälter إلى فاعل جمع مع können ثم wiederverwendet werden."
+        },
+        {
+          "index": 3,
+          "text": "**Man sollte beschädigte Geräte reparieren.** → Beschädigte Geräte ______ ______ ______.",
+          "answer": "sollten repariert werden",
+          "finding": "تحويل beschädigte Geräte إلى فاعل جمع مع sollten ثم repariert werden."
+        },
+        {
+          "index": 4,
+          "text": "**Man kann einige Verpackungen vermeiden.** → Einige Verpackungen ______ ______ ______.",
+          "answer": "können vermieden werden",
+          "finding": "تحويل einige Verpackungen إلى فاعل جمع مع können ثم vermieden werden."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. «Kreislauf» متجر حقيقي في مدينة معروفة.\n2. تُنظّف الأكواب المتعددة الاستخدام بعد إعادتها.\n3. لا يمكن تجنّب أي نوع من التغليف في المتجر.\n4. ينبغي فحص الأشياء المتضررة قبل التخلص منها.\n5. نشر الفريق نتائج نهائية للتجربة بالفعل.",
+      "finding": "خمس عبارات تتحقق من فهم نص متجر Kreislauf الخيالي والتمييز بين الاختبار والنتائج.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "«Kreislauf» متجر حقيقي في مدينة معروفة.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ ينص الدرس صراحةً على أن المتجر خيالي (Der fiktive Laden „Kreislauf“)."
+        },
+        {
+          "index": 2,
+          "text": "تُنظّف الأكواب المتعددة الاستخدام بعد إعادتها.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تُنظف الأكواب المتعددة الاستخدام بعد إرجاعها وتُستخدم مجددًا."
+        },
+        {
+          "index": 3,
+          "text": "لا يمكن تجنّب أي نوع من التغليف في المتجر.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ يمكن تجنب بعض العبوات بإحضار الزبائن حاوياتهم الخاصة."
+        },
+        {
+          "index": 4,
+          "text": "ينبغي فحص الأشياء المتضررة قبل التخلص منها.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ ينبغي فحص الأشياء المتضررة أولًا قبل التخلص منها."
+        },
+        {
+          "index": 5,
+          "text": "نشر الفريق نتائج نهائية للتجربة بالفعل.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ لم ينشر الفريق نتائج بعد وما زالت الإمكانات تُختبر مبدئيًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T06",
+      "text": "أكمل بالألمانية:\n\n1. Die Getränke werden in ______ angeboten.\n2. Die Becher können gegen ______ ausgeliehen werden.\n3. Essensreste werden getrennt ______.\n4. Vor einem Ersatz wird geprüft, ob die Tabletts ______ werden können.\n5. Das Team möchte weniger Material ______.",
+      "finding": "خمس جمل ألمانية تتحقق من الكلمات المحورية في نص استماع المقهى.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Getränke werden in ______ angeboten.",
+          "answer": "Mehrwegbechern",
+          "finding": "تُقدم المشروبات في المقهى في Mehrwegbechern."
+        },
+        {
+          "index": 2,
+          "text": "Die Becher können gegen ______ ausgeliehen werden.",
+          "answer": "Pfand",
+          "finding": "تُستعار الأكواب مقابل تأمين مسترد: Pfand."
+        },
+        {
+          "index": 3,
+          "text": "Essensreste werden getrennt ______.",
+          "answer": "gesammelt",
+          "finding": "تُجمع بقايا الطعام مفروزة: gesammelt."
+        },
+        {
+          "index": 4,
+          "text": "Vor einem Ersatz wird geprüft, ob die Tabletts ______ werden können.",
+          "answer": "repariert",
+          "finding": "يُفحص قبل الاستبدال هل يمكن إصلاح الصواني: repariert."
+        },
+        {
+          "index": 5,
+          "text": "Das Team möchte weniger Material ______.",
+          "answer": "verschwenden",
+          "finding": "يريد الفريق تقليل هدر المواد: verschwenden."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T07",
+      "text": "استخدم **müssen**, **können** أو **sollten**:\n\n1. كإمكانية: **Mehrwegbecher ______ mehrfach verwendet werden.**\n2. كتوصية: **Beschädigte Geräte ______ zuerst geprüft werden.**\n3. كضرورة: **Gefährliche Abfälle ______ fachgerecht entsorgt werden.**\n4. كإمكانية: **Getränke ______ im Café gegen Pfand ausgeliehen werden.**",
+      "finding": "أربع جمل تميز دلاليًا بين können وsollten وmüssen.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "كإمكانية: **Mehrwegbecher ______ mehrfach verwendet werden.**",
+          "answer": "können",
+          "finding": "للتعبير عن الإمكانية مع الفاعل الجمع Mehrwegbecher نختار können."
+        },
+        {
+          "index": 2,
+          "text": "كتوصية: **Beschädigte Geräte ______ zuerst geprüft werden.**",
+          "answer": "sollten",
+          "finding": "للتعبير عن التوصية مع الفاعل الجمع Beschädigte Geräte نختار sollten."
+        },
+        {
+          "index": 3,
+          "text": "كضرورة: **Gefährliche Abfälle ______ fachgerecht entsorgt werden.**",
+          "answer": "müssen",
+          "finding": "للتعبير عن الضرورة الملزمة مع Gefährliche Abfälle نختار müssen."
+        },
+        {
+          "index": 4,
+          "text": "كإمكانية: **Getränke ______ im Café gegen Pfand ausgeliehen werden.**",
+          "answer": "können",
+          "finding": "للتعبير عن الإمكانية مع الفاعل الجمع Getränke نختار können."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-T08",
+      "text": "اكتب خمس جمل ألمانية على الأقل عن متجر أو مقهى خيالي، أو اعرض خمس جمل مكافئة شفهيًا. ينقسم هذا التدريب العملي إلى مهمتين متكاملتين للتعلّم الذاتي:\n\n1. **المهمة الأولى (P01 — كتابة فقط):** اكتب خطة قصيرة من خمس جمل ألمانية على الأقل لمتجر أو مقهى خيالي. اقترح ثلاثة إجراءات مناسبة للسياق، على أن يتضمن أحدها خيارًا لإعادة الاستخدام أو الإصلاح، واستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل. لا تذكر أرقامًا أو وعودًا بيئية غير موثقة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.\n2. **المهمة الثانية (P02 — كتابة + قراءة جهرية ذاتية استنادًا إلى T06):** استنادًا إلى نص `T06` المكتوب، اكتب إحاطة قصيرة لفريق مقهى من خمس إلى ست جمل ألمانية ثم اقرأها بصوت واضح. انقل ثلاثة تفاصيل صحيحة على الأقل، مثل إعارة الأكواب متعددة الاستخدام مقابل تأمين مسترد (`Pfand`) ثم إعادتها، أو جمع بقايا الطعام منفصلة، أو فحص إمكان إصلاح الصواني المتضررة. اقترح خطوة تالية واحدة مناسبة، واستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل. ميّز بين ما ورد في النص وما تقترحه أنت؛ لا تضف أرقامًا أو وعودًا بيئية غير موثقة. لا يلزم تشغيل MP3. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت واضح؛ لا يلزم تسجيل.",
+      "finding": "مهمتا التمرين 8 مفصلتان إلى P01 كتابة فقط (5 جمل، 515 حرفًا) وP02 كتابة وجهر (5 جمل، 566 حرفًا).",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "In unserem fiktiven Nachbarschaftsladen sollen Einwegverpackungen schrittweise reduziert werden.",
+          "answer": "In unserem fiktiven Nachbarschaftsladen sollen Einwegverpackungen schrittweise reduziert werden.",
+          "finding": "الجملة الأولى في P01 تقترح بـsollen … reduziert werden تقليل عبوات الاستعمال الواحد تدريجيًا في متجر خيالي."
+        },
+        {
+          "index": 2,
+          "text": "Heißgetränke und Suppen können in langlebigen Mehrwegbehältern gegen Pfand angeboten werden.",
+          "answer": "Heißgetränke und Suppen können in langlebigen Mehrwegbehältern gegen Pfand angeboten werden.",
+          "finding": "الجملة الثانية تقترح بـkönnen … angeboten werden تقديم المشروبات والحساء في حاويات متعددة الاستخدام مقابل تأمين."
+        },
+        {
+          "index": 3,
+          "text": "Kundinnen und Kunden können außerdem eigene Dosen für trockene Lebensmittel mitbringen.",
+          "answer": "Kundinnen und Kunden können außerdem eigene Dosen für trockene Lebensmittel mitbringen.",
+          "finding": "الجملة الثالثة تذكر إمكان إحضار الزبائن علبهم الخاصة للمواد الجافة."
+        },
+        {
+          "index": 4,
+          "text": "Beschädigte Küchengeräte müssen nicht sofort entsorgt werden, sondern sollten zuerst in einer kleinen Partnerwerkstatt geprüft und repariert werden.",
+          "answer": "Beschädigte Küchengeräte müssen nicht sofort entsorgt werden, sondern sollten zuerst in einer kleinen Partnerwerkstatt geprüft und repariert werden.",
+          "finding": "الجملة الرابعة تجمع بين نفي الضرورة الفورية (müssen nicht sofort entsorgt werden) والتوصية بالفحص والإصلاح (sollten … geprüft und repariert werden)."
+        },
+        {
+          "index": 5,
+          "text": "Das Team sammelt Rückmeldungen im Alltag, ohne vorab feste Einsparquoten zu versprechen.",
+          "answer": "Das Team sammelt Rückmeldungen im Alltag, ohne vorab feste Einsparquoten zu versprechen.",
+          "finding": "الجملة الخامسة تؤكد جمع الملاحظات في الواقع اليومي دون إطلاق وعود أو نسب توفير غير موثقة."
+        },
+        {
+          "index": 6,
+          "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten, die gegen Pfand ausgeliehen und später zurückgegeben werden können.",
+          "answer": "In unserem Café werden Getränke in Mehrwegbechern angeboten, die gegen Pfand ausgeliehen und später zurückgegeben werden können.",
+          "finding": "الجملة الأولى في P02 تنقل تقديم المشروبات في أكواب متعددة الاستخدام وإمكان استعارتها وإرجاعها مقابل Pfand في جملة وصل تابعة (… werden können)."
+        },
+        {
+          "index": 7,
+          "text": "Essensreste werden in der Küche getrennt gesammelt.",
+          "answer": "Essensreste werden in der Küche getrennt gesammelt.",
+          "finding": "الجملة الثانية تنقل جمع بقايا الطعام مفروزة في المطبخ."
+        },
+        {
+          "index": 8,
+          "text": "Beschädigte Tabletts müssen nicht sofort ersetzt werden, weil zuerst geprüft wird, ob sie repariert werden können.",
+          "answer": "Beschädigte Tabletts müssen nicht sofort ersetzt werden, weil zuerst geprüft wird, ob sie repariert werden können.",
+          "finding": "الجملة الثالثة تنقل عدم وجوب استبدال الصواني المتضررة فورًا وفحص إمكان إصلاحها في جملة تابعة (ob sie repariert werden können)."
+        },
+        {
+          "index": 9,
+          "text": "Das Team sammelt Rückmeldungen der Gäste, um praktische Vorschläge kennenzulernen und weniger Material zu verschwenden.",
+          "answer": "Das Team sammelt Rückmeldungen der Gäste, um praktische Vorschläge kennenzulernen und weniger Material zu verschwenden.",
+          "finding": "الجملة الرابعة تنقل غاية جمع ملاحظات الضيوف لتقليل هدر المواد."
+        },
+        {
+          "index": 10,
+          "text": "Als nächster Schritt sollten an der Theke kurze Hinweise zur Rückgabe angebracht werden, damit die Mehrwegbecher noch einfacher genutzt werden können.",
+          "answer": "Als nächster Schritt sollten an der Theke kurze Hinweise zur Rückgabe angebracht werden, damit die Mehrwegbecher noch einfacher genutzt werden können.",
+          "finding": "الجملة الخامسة تفصل الخطوة المقترحة بـsollten … angebracht werden وdamit … genutzt werden können دون أرقام غير موثقة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q01",
+      "text": "أي مصطلح ألماني يعني «نظام إعادة الاستخدام»؟",
+      "finding": "das Mehrwegsystem هو نظام يستخدم فيه المنتج أو الحاوية مرات متعددة؛ أما Einweg فيشير إلى الاستعمال مرة واحدة.",
+      "sourceIds": [
+        "MEHRWEGSYSTEM"
+      ],
+      "options": [
+        "das Einwegprodukt",
+        "das Mehrwegsystem",
+        "die Verpackung"
+      ],
+      "answer": "das Mehrwegsystem",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-03-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "das Einwegprodukt",
+          "correct": false,
+          "finding": "das Einwegprodukt يعني منتجًا للاستعمال مرة واحدة لا نظام إعادة الاستخدام."
+        },
+        {
+          "index": 1,
+          "text": "das Mehrwegsystem",
+          "correct": true,
+          "finding": "das Mehrwegsystem هو المصطلح الصحيح لنظام إعادة الاستخدام."
+        },
+        {
+          "index": 2,
+          "text": "die Verpackung",
+          "correct": false,
+          "finding": "die Verpackung تعني العبوة أو التغليف بوجه عام."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q02",
+      "text": "أكمل الصيغة: **Glas kann gut ___ werden.**",
+      "finding": "يأتي Partizip II، وهو wiederverwendet، قبل werden في المبني للمجهول مع الفعل الناقص.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ],
+      "options": [
+        "wiederverwenden",
+        "wiederverwendet",
+        "wiederverwendeten"
+      ],
+      "answer": "wiederverwendet",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-03-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "wiederverwenden",
+          "correct": false,
+          "finding": "wiederverwenden مصدر وليس اسم مفعول قبل werden."
+        },
+        {
+          "index": 1,
+          "text": "wiederverwendet",
+          "correct": true,
+          "finding": "wiederverwendet هو اسم المفعول الصحيح (Partizip II) قبل werden."
+        },
+        {
+          "index": 2,
+          "text": "wiederverwendeten",
+          "correct": false,
+          "finding": "wiederverwendeten صيغة ماضٍ أو صفة مصرفه لا تصلح في مركب المبني للمجهول."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q03",
+      "text": "اختر المجموعة الصحيحة لإكمال نهاية الجملة: **Die Becher können nach der Rückgabe ___.**",
+      "finding": "بعد الفعل الناقص يأتي Partizip II ثم werden: Die Becher können nach der Rückgabe gereinigt werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "options": [
+        "gereinigt werden",
+        "werden gereinigt",
+        "reinigen werden"
+      ],
+      "answer": "gereinigt werden",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-03-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "gereinigt werden",
+          "correct": true,
+          "finding": "gereinigt werden يضع Partizip II قبل werden في نهاية الجملة الرئيسية."
+        },
+        {
+          "index": 1,
+          "text": "werden gereinigt",
+          "correct": false,
+          "finding": "werden gereinigt يعكس الترتيب القياسي في نهاية الجملة بعد الفعل الناقص."
+        },
+        {
+          "index": 2,
+          "text": "reinigen werden",
+          "correct": false,
+          "finding": "reinigen werden يضع المصدر بدل Partizip II."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q04",
+      "text": "حوّل إلى المبني للمجهول مع الفعل الناقص: **Man muss die Abfälle trennen.**",
+      "finding": "تصبح Abfälle فاعل الجملة المبنية للمجهول، ويأتي Partizip II getrennt قبل werden: Die Abfälle müssen getrennt werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "ABFALL"
+      ],
+      "options": [
+        "Die Abfälle müssen getrennt werden.",
+        "Die Abfälle müssen trennen werden.",
+        "Die Abfälle müssen werden getrennt."
+      ],
+      "answer": "Die Abfälle müssen getrennt werden.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-03-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Die Abfälle müssen getrennt werden.",
+          "correct": true,
+          "finding": "Die Abfälle müssen getrennt werden تحول المفعول إلى فاعل وتضع getrennt قبل werden."
+        },
+        {
+          "index": 1,
+          "text": "Die Abfälle müssen trennen werden.",
+          "correct": false,
+          "finding": "trennen werden تترك الفعل في صيغة المصدر بدل Partizip II."
+        },
+        {
+          "index": 2,
+          "text": "Die Abfälle müssen werden getrennt.",
+          "correct": false,
+          "finding": "müssen werden getrennt تعكس ترتيب Partizip II + werden."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q05",
+      "text": "اختر التحويل الصحيح: **Man sollte beschädigte Geräte reparieren.**",
+      "finding": "مع توصية بشأن أجهزة متعددة نستخدم sollten، ثم Partizip II repariert وwerden في نهاية الجملة.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "options": [
+        "Beschädigte Geräte sollten repariert werden.",
+        "Beschädigte Geräte sollten reparieren werden.",
+        "Beschädigte Geräte repariert sollten werden."
+      ],
+      "answer": "Beschädigte Geräte sollten repariert werden.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-03-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Beschädigte Geräte sollten repariert werden.",
+          "correct": true,
+          "finding": "Beschädigte Geräte sollten repariert werden تطابق الفاعل الجمع وتضع repariert werden في النهاية."
+        },
+        {
+          "index": 1,
+          "text": "Beschädigte Geräte sollten reparieren werden.",
+          "correct": false,
+          "finding": "reparieren werden تستعمل المصدر بدل اسم المفعول repariert."
+        },
+        {
+          "index": 2,
+          "text": "Beschädigte Geräte repariert sollten werden.",
+          "correct": false,
+          "finding": "repariert sollten werden تخل بموضع الفعل الناقص في الموضع الثاني."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q06",
+      "text": "بحسب نص متجر «Kreislauf» الخيالي، ما الذي ينبغي فعله بالأشياء المتضررة قبل التخلص منها؟",
+      "finding": "يذكر النص أن الأشياء المتضررة ينبغي فحصها أولًا قبل التخلص منها؛ ولا يضمن أن جميعها قابلة للإصلاح.",
+      "sourceIds": [],
+      "options": [
+        "فحصها أولًا.",
+        "التخلص منها فورًا دون فحص.",
+        "التأكيد أنها كلها قابلة للإصلاح."
+      ],
+      "answer": "فحصها أولًا.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-03-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "فحصها أولًا.",
+          "correct": true,
+          "finding": "ينص القراءة على وجوب فحص الأشياء المتضررة أولًا قبل التخلص منها."
+        },
+        {
+          "index": 1,
+          "text": "التخلص منها فورًا دون فحص.",
+          "correct": false,
+          "finding": "التخلص الفوري دون فحص يخالف جملة sollen zuerst geprüft werden."
+        },
+        {
+          "index": 2,
+          "text": "التأكيد أنها كلها قابلة للإصلاح.",
+          "correct": false,
+          "finding": "النص يشترط جدوى الإصلاح (Wenn eine Reparatur sinnvoll ist) ولا يؤكد أن جميعها قابلة للإصلاح."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q07",
+      "text": "هل نشر فريق المتجر الخيالي نتائج التجربة بالفعل؟",
+      "finding": "يقول النص إن الفريق لم ينشر نتائج بعد وإن الإمكانات ما زالت تُختبر.",
+      "sourceIds": [],
+      "options": [
+        "نعم، نشر نتائج نهائية تثبت نجاح التجربة.",
+        "لا، لم ينشر نتائج بعد وما زال يختبر الإمكانات.",
+        "لا، أوقف التجربة قبل جمع الملاحظات."
+      ],
+      "answer": "لا، لم ينشر نتائج بعد وما زال يختبر الإمكانات.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-03-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "نعم، نشر نتائج نهائية تثبت نجاح التجربة.",
+          "correct": false,
+          "finding": "لم ينشر الفريق نتائج نهائية بعد."
+        },
+        {
+          "index": 1,
+          "text": "لا، لم ينشر نتائج بعد وما زال يختبر الإمكانات.",
+          "correct": true,
+          "finding": "ينص القراءة صراحة على أنه لم ينشر نتائج بعد وما زال يختبر الإمكانات (Es veröffentlicht noch keine Ergebnisse)."
+        },
+        {
+          "index": 2,
+          "text": "لا، أوقف التجربة قبل جمع الملاحظات.",
+          "correct": false,
+          "finding": "الفريق لم يوقف التجربة بل يجمع الملاحظات ويختبر الإمكانات."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q08",
+      "text": "بحسب نص T06 المكتوب، في أي نوع من الأكواب تُقدَّم المشروبات في المقهى؟",
+      "finding": "يذكر النص المكتوب أن المشروبات تُقدَّم في أكواب متعددة الاستخدام. يمكن الإجابة دون تشغيل أي ملف صوتي.",
+      "sourceIds": [],
+      "options": [
+        "In Mehrwegbechern.",
+        "In Einwegbechern.",
+        "In Pappbechern."
+      ],
+      "answer": "In Mehrwegbechern.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-03-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "In Mehrwegbechern.",
+          "correct": true,
+          "finding": "ينص الاستماع على تقديم المشروبات في أكواب متعددة الاستخدام: In Mehrwegbechern."
+        },
+        {
+          "index": 1,
+          "text": "In Einwegbechern.",
+          "correct": false,
+          "finding": "الأكواب ذات الاستعمال الواحد تخالف نص المقهى."
+        },
+        {
+          "index": 2,
+          "text": "In Pappbechern.",
+          "correct": false,
+          "finding": "الأكواب الورقية غير مذكورة في النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q09",
+      "text": "ما الذي يفحصه الفريق قبل استبدال الصواني المتضررة؟",
+      "finding": "يفحص الفريق أولًا ما إذا كان يمكن إصلاح الصواني قبل استبدالها. يعتمد السؤال على نص الاستماع المكتوب، لا على MP3.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "options": [
+        "هل جُمعت ملاحظات الضيوف بالفعل؟",
+        "هل يمكن إصلاح الصواني؟",
+        "هل يجب التخلص من جميع الأكواب؟"
+      ],
+      "answer": "هل يمكن إصلاح الصواني؟",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-03-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "هل جُمعت ملاحظات الضيوف بالفعل؟",
+          "correct": false,
+          "finding": "جمع الملاحظات ليس هو ما يُفحص قبل استبدال الصواني."
+        },
+        {
+          "index": 1,
+          "text": "هل يمكن إصلاح الصواني؟",
+          "correct": true,
+          "finding": "ينص الاستماع على أنه يُفحص أولًا هل يمكن إصلاح الصواني (ob sie repariert werden können)."
+        },
+        {
+          "index": 2,
+          "text": "هل يجب التخلص من جميع الأكواب؟",
+          "correct": false,
+          "finding": "التخلص من جميع الأكواب غير مذكور ويخالف سياق المقهى."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-Q10",
+      "text": "أكمل بتوصية مناسبة: **Beschädigte Geräte ___ zuerst geprüft werden.**",
+      "finding": "sollten تعبر عن توصية أو إجراء مقترح، وهو المعنى المطلوب هنا.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "options": [
+        "können",
+        "sollten",
+        "müssen"
+      ],
+      "answer": "sollten",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-03-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "können",
+          "correct": false,
+          "finding": "können تفيد الإمكانية لا التوصية المطلوبة في السؤال."
+        },
+        {
+          "index": 1,
+          "text": "sollten",
+          "correct": true,
+          "finding": "sollten هي الصيغة الصحيحة للتعبير عن التوصية أو الإجراء المقترح."
+        },
+        {
+          "index": 2,
+          "text": "müssen",
+          "correct": false,
+          "finding": "müssen تفيد الضرورة الملزمة لا التوصية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-P01",
+      "text": "اكتب خطة قصيرة من خمس جمل ألمانية على الأقل لمتجر أو مقهى خيالي. اقترح ثلاثة إجراءات مناسبة للسياق، على أن يتضمن أحدها خيارًا لإعادة الاستخدام أو الإصلاح، واستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل. لا تذكر أرقامًا أو وعودًا بيئية غير موثقة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة فقط دون جهر.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "criteria": {
+        "taskCompletion": "خطة مكتوبة من خمس جمل ألمانية على الأقل، تتضمن ثلاثة إجراءات مناسبة لمتجر أو مقهى خيالي، وأحدها على الأقل يعتمد إعادة الاستخدام أو الإصلاح.",
+        "meaningClarity": "ترتبط الإجراءات بسياق المتجر أو المقهى وتُفهم بوصفها مقترحات عملية؛ لا تُعرض أرقام أو نتائج أو وعود بيئية غير موثقة على أنها حقائق.",
+        "targetSkill": "يستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل، مع تصريف الناقص المناسب وترتيب Partizip II + werden في نهاية الجملة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-B2-03-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خطة مكتوبة من خمس جمل ألمانية على الأقل، تتضمن ثلاثة إجراءات مناسبة لمتجر أو مقهى خيالي، وأحدها على الأقل يعتمد إعادة الاستخدام أو الإصلاح.",
+          "finding": "يتحقق من خطة مكتوبة من خمس جمل على الأقل تتضمن ثلاثة إجراءات أحدها لإعادة الاستخدام أو الإصلاح؛ الحد 150 حرفًا والنموذج 515 حرفًا (كتابة فقط)."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "ترتبط الإجراءات بسياق المتجر أو المقهى وتُفهم بوصفها مقترحات عملية؛ لا تُعرض أرقام أو نتائج أو وعود بيئية غير موثقة على أنها حقائق.",
+          "finding": "يضمن ارتباط المقترحات بسياق المتجر أو المقهى وعدم عرض أرقام أو وعود غير موثقة."
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل، مع تصريف الناقص المناسب وترتيب Partizip II + werden في نهاية الجملة.",
+          "finding": "يركز على استخدام المبني للمجهول مع فعل ناقص مرتين على الأقل بترتيب Partizip II + werden."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-P02",
+      "text": "استنادًا إلى نص T06 المكتوب، اكتب إحاطة قصيرة لفريق مقهى من خمس إلى ست جمل ألمانية ثم اقرأها بصوت واضح. انقل ثلاثة تفاصيل صحيحة على الأقل، مثل إعارة الأكواب متعددة الاستخدام مقابل تأمين مسترد (Pfand) ثم إعادتها، أو جمع بقايا الطعام منفصلة، أو فحص إمكان إصلاح الصواني المتضررة. اقترح خطوة تالية واحدة مناسبة، واستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل. ميّز بين ما ورد في النص وما تقترحه أنت؛ لا تضف أرقامًا أو وعودًا بيئية غير موثقة. لا يلزم تشغيل MP3. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت واضح؛ لا يلزم تسجيل.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة وجهر مع الاستناد إلى T06 وروابط T06/T08.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "criteria": {
+        "taskCompletion": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاثة تفاصيل على الأقل من نص T06 (الأكواب متعددة الاستخدام والتأمين وإعادتها، أو الجمع المنفصل لبقايا الطعام، أو فحص إمكان إصلاح الصواني) وتقترح خطوة تالية مناسبة لمقهى.",
+        "meaningClarity": "تُنقل تفاصيل النص بدقة، وتُفصل بوضوح عن الخطوة المقترحة؛ ولا تُضاف أرقام أو وعود بيئية غير موثقة أو تُعرض الإمكانات كأنها نتائج مثبتة.",
+        "targetSkill": "يستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل؛ يطابق تصريف الناقص المعنى، ويضع Partizip II + werden في نهاية الجملة، ويقرأ المتعلم النص بصوت واضح دون تسجيل."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-B2-03-T06",
+        "DL-B2-03-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاثة تفاصيل على الأقل من نص T06 (الأكواب متعددة الاستخدام والتأمين وإعادتها، أو الجمع المنفصل لبقايا الطعام، أو فحص إمكان إصلاح الصواني) وتقترح خطوة تالية مناسبة لمقهى.",
+          "finding": "يتحقق من إحاطة من خمس إلى ست جمل تنقل ثلاثة تفاصيل من T06 وتقترح خطوة تالية؛ الحد 180 حرفًا والنموذج 566 حرفًا مع الجهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تُنقل تفاصيل النص بدقة، وتُفصل بوضوح عن الخطوة المقترحة؛ ولا تُضاف أرقام أو وعود بيئية غير موثقة أو تُعرض الإمكانات كأنها نتائج مثبتة.",
+          "finding": "يضمن دقة نقل تفاصيل النص وفصلها عن الخطوة المقترحة دون أرقام أو وعود غير موثقة."
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل؛ يطابق تصريف الناقص المعنى، ويضع Partizip II + werden في نهاية الجملة، ويقرأ المتعلم النص بصوت واضح دون تسجيل.",
+          "finding": "يركز على استخدام المبني للمجهول مع فعل ناقص مرتين على الأقل مع القراءة الجهرية الذاتية دون تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "store-plan-model-01",
+      "text": "In unserem fiktiven Nachbarschaftsladen sollen Einwegverpackungen schrittweise reduziert werden.\nHeißgetränke und Suppen können in langlebigen Mehrwegbehältern gegen Pfand angeboten werden.\nKundinnen und Kunden können außerdem eigene Dosen für trockene Lebensmittel mitbringen.\nBeschädigte Küchengeräte müssen nicht sofort entsorgt werden, sondern sollten zuerst in einer kleinen Partnerwerkstatt geprüft und repariert werden.\nDas Team sammelt Rückmeldungen im Alltag, ohne vorab feste Einsparquoten zu versprechen.",
+      "finding": "نموذج مكتوب: 515 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "In unserem fiktiven Nachbarschaftsladen sollen Einwegverpackungen schrittweise reduziert werden.",
+          "finding": "الجملة الأولى في P01 تقترح بـsollen … reduziert werden تقليل عبوات الاستعمال الواحد تدريجيًا في متجر خيالي."
+        },
+        {
+          "index": 2,
+          "text": "Heißgetränke und Suppen können in langlebigen Mehrwegbehältern gegen Pfand angeboten werden.",
+          "finding": "الجملة الثانية تقترح بـkönnen … angeboten werden تقديم المشروبات والحساء في حاويات متعددة الاستخدام مقابل تأمين."
+        },
+        {
+          "index": 3,
+          "text": "Kundinnen und Kunden können außerdem eigene Dosen für trockene Lebensmittel mitbringen.",
+          "finding": "الجملة الثالثة تذكر إمكان إحضار الزبائن علبهم الخاصة للمواد الجافة."
+        },
+        {
+          "index": 4,
+          "text": "Beschädigte Küchengeräte müssen nicht sofort entsorgt werden, sondern sollten zuerst in einer kleinen Partnerwerkstatt geprüft und repariert werden.",
+          "finding": "الجملة الرابعة تجمع بين نفي الضرورة الفورية (müssen nicht sofort entsorgt werden) والتوصية بالفحص والإصلاح (sollten … geprüft und repariert werden)."
+        },
+        {
+          "index": 5,
+          "text": "Das Team sammelt Rückmeldungen im Alltag, ohne vorab feste Einsparquoten zu versprechen.",
+          "finding": "الجملة الخامسة تؤكد جمع الملاحظات في الواقع اليومي دون إطلاق وعود أو نسب توفير غير موثقة."
+        }
+      ]
+    },
+    {
+      "id": "cafe-briefing-model-01",
+      "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten, die gegen Pfand ausgeliehen und später zurückgegeben werden können.\nEssensreste werden in der Küche getrennt gesammelt.\nBeschädigte Tabletts müssen nicht sofort ersetzt werden, weil zuerst geprüft wird, ob sie repariert werden können.\nDas Team sammelt Rückmeldungen der Gäste, um praktische Vorschläge kennenzulernen und weniger Material zu verschwenden.\nAls nächster Schritt sollten an der Theke kurze Hinweise zur Rückgabe angebracht werden, damit die Mehrwegbecher noch einfacher genutzt werden können.",
+      "finding": "نموذج مكتوب: 566 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten, die gegen Pfand ausgeliehen und später zurückgegeben werden können.",
+          "finding": "الجملة الأولى في P02 تنقل تقديم المشروبات في أكواب متعددة الاستخدام وإمكان استعارتها وإرجاعها مقابل Pfand في جملة وصل تابعة (… werden können)."
+        },
+        {
+          "index": 2,
+          "text": "Essensreste werden in der Küche getrennt gesammelt.",
+          "finding": "الجملة الثانية تنقل جمع بقايا الطعام مفروزة في المطبخ."
+        },
+        {
+          "index": 3,
+          "text": "Beschädigte Tabletts müssen nicht sofort ersetzt werden, weil zuerst geprüft wird, ob sie repariert werden können.",
+          "finding": "الجملة الثالثة تنقل عدم وجوب استبدال الصواني المتضررة فورًا وفحص إمكان إصلاحها في جملة تابعة (ob sie repariert werden können)."
+        },
+        {
+          "index": 4,
+          "text": "Das Team sammelt Rückmeldungen der Gäste, um praktische Vorschläge kennenzulernen und weniger Material zu verschwenden.",
+          "finding": "الجملة الرابعة تنقل غاية جمع ملاحظات الضيوف لتقليل هدر المواد."
+        },
+        {
+          "index": 5,
+          "text": "Als nächster Schritt sollten an der Theke kurze Hinweise zur Rückgabe angebracht werden, damit die Mehrwegbecher noch einfacher genutzt werden können.",
+          "finding": "الجملة الخامسة تفصل الخطوة المقترحة بـsollten … angebracht werden وdamit … genutzt werden können دون أرقام غير موثقة."
+        }
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Die Becher können wiederverwendet werden.** → يمكن إعادة استخدام الأكواب.",
+      "finding": "نموذج إمكانية بالمبني للمجهول مع können: Die Becher können wiederverwendet werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "WIEDERVERWENDEN"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Abfälle müssen getrennt gesammelt werden.** → يجب فرز النفايات وجمعها.",
+      "finding": "نموذج ضرورة بالمبني للمجهول مع müssen: Abfälle müssen getrennt gesammelt werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL",
+        "ABFALL"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Beschädigte Geräte sollten repariert werden.** → من الأفضل إصلاح الأجهزة المتضررة.",
+      "finding": "نموذج توصية بالمبني للمجهول مع sollten: Beschädigte Geräte sollten repariert werden.",
+      "sourceIds": [
+        "PASSIV",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **das Mehrwegsystem** → نظام إعادة الاستخدام.",
+      "finding": "مراجعة المفردة المحورية das Mehrwegsystem (نظام إعادة الاستخدام).",
+      "sourceIds": [
+        "MEHRWEGSYSTEM"
+      ]
+    },
+    {
+      "id": "DL-B2-03-AUD-PHR-01",
+      "text": "Der Verbrauch. Die Ressource, die Ressourcen. Die Verpackung, die Verpackungen. Das Einwegprodukt, die Einwegprodukte. Das Mehrwegsystem, die Mehrwegsysteme. Die Rückgabe, die Rückgaben. Die Wiederverwendung. Die Reparatur, die Reparaturen. Der Abfall, die Abfälle. Die Kreislaufwirtschaft. Vermeiden, vermeidet. Wiederverwenden, verwendet wieder. Trennen, trennt. Entsorgen, entsorgt. Langlebig. Wiederverwendbar.",
+      "finding": "مطابقة نصية فقط؛ 16 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Der Verbrauch.",
+          "finding": "Verbrauch مذكر ويستعمل هنا بلا جمع؛ الاستهلاك."
+        },
+        {
+          "index": 2,
+          "text": "Die Ressource, die Ressourcen.",
+          "finding": "Ressource مؤنث وجمعها الشائع Ressourcen؛ مورد طبيعي أو مادي."
+        },
+        {
+          "index": 3,
+          "text": "Die Verpackung, die Verpackungen.",
+          "finding": "Verpackung مؤنث وجمعها Verpackungen؛ عبوة أو تغليف."
+        },
+        {
+          "index": 4,
+          "text": "Das Einwegprodukt, die Einwegprodukte.",
+          "finding": "Einwegprodukt محايد وجمعه Einwegprodukte؛ منتج للاستعمال مرة واحدة."
+        },
+        {
+          "index": 5,
+          "text": "Das Mehrwegsystem, die Mehrwegsysteme.",
+          "finding": "Mehrwegsystem محايد وجمعه Mehrwegsysteme؛ نظام إعادة الاستخدام."
+        },
+        {
+          "index": 6,
+          "text": "Die Rückgabe, die Rückgaben.",
+          "finding": "Rückgabe مؤنث وجمعها Rückgaben؛ إعادة أو إرجاع العبوات."
+        },
+        {
+          "index": 7,
+          "text": "Die Wiederverwendung.",
+          "finding": "Wiederverwendung مؤنث وتستعمل هنا بلا جمع؛ إعادة الاستخدام."
+        },
+        {
+          "index": 8,
+          "text": "Die Reparatur, die Reparaturen.",
+          "finding": "Reparatur مؤنث وجمعها Reparaturen؛ إصلاح."
+        },
+        {
+          "index": 9,
+          "text": "Der Abfall, die Abfälle.",
+          "finding": "Abfall مذكر وجمعه Abfälle؛ نفاية أو مخلفات."
+        },
+        {
+          "index": 10,
+          "text": "Die Kreislaufwirtschaft.",
+          "finding": "Kreislaufwirtschaft مؤنث بلا جمع؛ الاقتصاد الدائري."
+        },
+        {
+          "index": 11,
+          "text": "Vermeiden, vermeidet.",
+          "finding": "vermeiden فعل قوي غير منفصل حاضرُه vermeidet واسم مفعوله vermieden؛ يتجنب."
+        },
+        {
+          "index": 12,
+          "text": "Wiederverwenden, verwendet wieder.",
+          "finding": "wiederverwenden فعل منفصل حاضرُه verwendet wieder واسم مفعوله wiederverwendet؛ يعيد الاستخدام."
+        },
+        {
+          "index": 13,
+          "text": "Trennen, trennt.",
+          "finding": "trennen فعل ضعيف حاضرُه trennt واسم مفعوله getrennt؛ يفرز."
+        },
+        {
+          "index": 14,
+          "text": "Entsorgen, entsorgt.",
+          "finding": "entsorgen فعل ضعيف غير منفصل حاضرُه entsorgt واسم مفعوله entsorgt؛ يتخلص من النفايات."
+        },
+        {
+          "index": 15,
+          "text": "Langlebig.",
+          "finding": "langlebig صفة بمعنى طويل العمر أو متين."
+        },
+        {
+          "index": 16,
+          "text": "Wiederverwendbar.",
+          "finding": "wiederverwendbar صفة بمعنى قابل لإعادة الاستخدام."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-AUD-MODEL-01",
+      "text": "Einwegverpackungen müssen reduziert werden. Mehrwegbehälter können mehrfach verwendet werden. Beschädigte Geräte sollten repariert werden. Man kann Glasflaschen wiederverwenden. Glasflaschen können wiederverwendet werden.",
+      "finding": "مطابقة نصية فقط؛ 5 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Einwegverpackungen müssen reduziert werden.",
+          "finding": "Einwegverpackungen müssen reduziert werden: ضرورة بصيغة الجمع müssen، ثم Partizip II (reduziert) + werden في النهاية."
+        },
+        {
+          "index": 2,
+          "text": "Mehrwegbehälter können mehrfach verwendet werden.",
+          "finding": "Mehrwegbehälter können mehrfach verwendet werden: إمكانية بصيغة الجمع können، ثم verwendet werden في النهاية."
+        },
+        {
+          "index": 3,
+          "text": "Beschädigte Geräte sollten repariert werden.",
+          "finding": "Beschädigte Geräte sollten repariert werden: توصية بصيغة sollten، ثم repariert werden في النهاية."
+        },
+        {
+          "index": 4,
+          "text": "Man kann Glasflaschen wiederverwenden.",
+          "finding": "Man kann Glasflaschen wiederverwenden: جملة معلوم بالفاعل العام man والمصدر المنفصل المتصل في النهاية wiederverwenden."
+        },
+        {
+          "index": 5,
+          "text": "Glasflaschen können wiederverwendet werden.",
+          "finding": "Glasflaschen können wiederverwendet werden: الجملة المقابلة بالمبني للمجهول بعد تحويل Glasflaschen إلى فاعل مرفوع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-AUD-DLG-01",
+      "text": "Was passiert mit den Mehrwegbechern nach dem Verkauf? Sie können an der Kasse zurückgegeben werden. Danach werden sie gereinigt. Und was ist mit den Verpackungen? Ein Teil kann vermieden werden, wenn Kundinnen eigene Behälter mitbringen. Verpackungen, die noch gebraucht werden, müssen richtig getrennt werden. Werden beschädigte Produkte gleich weggeworfen? Nicht immer. Manche Gegenstände können repariert werden. Wir prüfen zuerst, ob sich die Reparatur lohnt.",
+      "finding": "مطابقة نصية فقط؛ 6 وحدة داخل 6 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Was passiert mit den Mehrwegbechern nach dem Verkauf?",
+          "finding": "Nadia تسأل عما يحدث للأكواب المتعددة الاستخدام بعد البيع."
+        },
+        {
+          "index": 2,
+          "text": "Sie können an der Kasse zurückgegeben werden. Danach werden sie gereinigt.",
+          "finding": "البائع يوضح إمكانية إرجاعها عند الصندوق (können … zurückgegeben werden) ثم تنظيفها (werden sie gereinigt)."
+        },
+        {
+          "index": 3,
+          "text": "Und was ist mit den Verpackungen?",
+          "finding": "سؤال عن التعامل مع العبوات والتغليف."
+        },
+        {
+          "index": 4,
+          "text": "Ein Teil kann vermieden werden, wenn Kundinnen eigene Behälter mitbringen. Verpackungen, die noch gebraucht werden, müssen richtig getrennt werden.",
+          "finding": "البائع يبين إمكان تجنب جزء منها (kann vermieden werden) ووجوب فرز الباقي (müssen richtig getrennt werden)."
+        },
+        {
+          "index": 5,
+          "text": "Werden beschädigte Produkte gleich weggeworfen?",
+          "finding": "سؤال بالمبني للمجهول في المضارع عن رمي المنتجات المتضررة فورًا."
+        },
+        {
+          "index": 6,
+          "text": "Nicht immer. Manche Gegenstände können repariert werden. Wir prüfen zuerst, ob sich die Reparatur lohnt.",
+          "finding": "نفي التعميم وبيان إمكان إصلاح بعض الأشياء (können repariert werden) بعد فحص جدوى الإصلاح."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-AUD-READ-01",
+      "text": "Der fiktive Laden „Kreislauf“ erprobt mehrere Möglichkeiten, Materialien länger zu nutzen. Getränke können in Mehrwegbechern verkauft werden; die Becher werden nach der Rückgabe gereinigt und erneut verwendet. Einige Verpackungen können vermieden werden, wenn Kundinnen und Kunden eigene Behälter mitbringen. Beschädigte Gegenstände sollen zuerst geprüft werden, bevor sie entsorgt werden. Wenn eine Reparatur sinnvoll ist, kann sie in einer örtlichen Werkstatt organisiert werden. Das Team sammelt Rückmeldungen, um herauszufinden, welche Schritte im Alltag gut funktionieren. Es veröffentlicht noch keine Ergebnisse; die Möglichkeiten werden zunächst getestet.",
+      "finding": "مطابقة نصية فقط؛ 7 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Der fiktive Laden „Kreislauf“ erprobt mehrere Möglichkeiten, Materialien länger zu nutzen.",
+          "finding": "يختبر المتجر الخيالي Kreislauf عدة إمكانات لإطالة استخدام المواد."
+        },
+        {
+          "index": 2,
+          "text": "Getränke können in Mehrwegbechern verkauft werden; die Becher werden nach der Rückgabe gereinigt und erneut verwendet.",
+          "finding": "يمكن بيع المشروبات في أكواب متعددة الاستخدام وتُنظف بعد إرجاعها وتُستخدم مجددًا."
+        },
+        {
+          "index": 3,
+          "text": "Einige Verpackungen können vermieden werden, wenn Kundinnen und Kunden eigene Behälter mitbringen.",
+          "finding": "يمكن تجنب بعض العبوات إذا أحضر الزبائن حاوياتهم الخاصة."
+        },
+        {
+          "index": 4,
+          "text": "Beschädigte Gegenstände sollen zuerst geprüft werden, bevor sie entsorgt werden.",
+          "finding": "ينبغي فحص الأشياء المتضررة أولًا قبل التخلص منها (sollen zuerst geprüft werden, bevor sie entsorgt werden)."
+        },
+        {
+          "index": 5,
+          "text": "Wenn eine Reparatur sinnvoll ist, kann sie in einer örtlichen Werkstatt organisiert werden.",
+          "finding": "إذا كان الإصلاح مجديًا فيمكن تنظيمه في ورشة محلية (kann sie … organisiert werden)."
+        },
+        {
+          "index": 6,
+          "text": "Das Team sammelt Rückmeldungen, um herauszufinden, welche Schritte im Alltag gut funktionieren.",
+          "finding": "يجمع الفريق ملاحظات الزبائن لمعرفة الخطوات الناجحة في الحياة اليومية."
+        },
+        {
+          "index": 7,
+          "text": "Es veröffentlicht noch keine Ergebnisse; die Möglichkeiten werden zunächst getestet.",
+          "finding": "لم ينشر الفريق نتائج بعد؛ فالإمكانات تُختبر مبدئيًا (werden zunächst getestet)."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-03-AUD-LST-01",
+      "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten. Die Becher können gegen Pfand ausgeliehen und später zurückgegeben werden. Essensreste werden getrennt gesammelt. Beschädigte Tabletts müssen nicht sofort ersetzt werden; zuerst wird geprüft, ob sie repariert werden können. Das Team sammelt Rückmeldungen, um Vorschläge der Gäste kennenzulernen und weniger Material zu verschwenden.",
+      "finding": "مطابقة نصية فقط؛ 5 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "In unserem Café werden Getränke in Mehrwegbechern angeboten.",
+          "finding": "تُقدم المشروبات في المقهى في أكواب متعددة الاستخدام (werden … angeboten)."
+        },
+        {
+          "index": 2,
+          "text": "Die Becher können gegen Pfand ausgeliehen und später zurückgegeben werden.",
+          "finding": "يمكن استعارة الأكواب مقابل تأمين مسترد وإعادتها لاحقًا (können … ausgeliehen und später zurückgegeben werden)."
+        },
+        {
+          "index": 3,
+          "text": "Essensreste werden getrennt gesammelt.",
+          "finding": "تُجمع بقايا الطعام مفروزة (werden getrennt gesammelt)."
+        },
+        {
+          "index": 4,
+          "text": "Beschädigte Tabletts müssen nicht sofort ersetzt werden; zuerst wird geprüft, ob sie repariert werden können.",
+          "finding": "لا يلزم استبدال الصواني المتضررة فورًا؛ يُفحص أولًا هل يمكن إصلاحها (ob sie repariert werden können)."
+        },
+        {
+          "index": 5,
+          "text": "Das Team sammelt Rückmeldungen, um Vorschläge der Gäste kennenzulernen und weniger Material zu verschwenden.",
+          "finding": "يجمع الفريق الملاحظات للتعرف إلى مقترحات الضيوف وتقليل هدر المواد."
+        }
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Einwegprodukt",
+      "reason": "صفحة خطأ 404؛ استُبعدت ولم تُحتسب مرجعًا"
+    }
+  ],
+  "sourceHashes": {
+    "content/B2/lesson-03-consumption-environment-passive-modal.md": "77e0d869a99b977d3538d9dbdd6bc646ac8325df897397607a8fd83f801504f4",
+    "content/B2/lesson-03-consumption-environment-passive-modal.assessment.json": "b4c2152d85fd05f01b54f48ca28d1adb2cafc558125b1a4997ec5c79e97d8b6e"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-03-AUD-PHR-01": "01b6f4044d7ded3c62411bdabf13c36ebce06081c75108b3ed52bb9050204bf3",
+    "DL-B2-03-AUD-MODEL-01": "70c2e870052f83b61e000f19bb89591f27f2672ad30aaac3162cddc9bc489180",
+    "DL-B2-03-AUD-DLG-01": "174e1dfe67fbc7f497f0ae444d5544a4b0e1a86b5404aa9891b36deefde1934c",
+    "DL-B2-03-AUD-READ-01": "8fc302a3945824545cb2f60bea5632d25950ff09a7d5dcea72e58017c504b299",
+    "DL-B2-03-AUD-LST-01": "47c2fd017afef8ed412ee6c557c1012eb3f601060de7c201522952565b109934"
+  },
+  "preservation": {
+    "baseline": "7998c7a5f61fcc95b48e250bacb6788acea500f5",
+    "protectedFilesIncludingAudio": 592,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "changedAudioRegisterRows": {
+      "DL-B2-03-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B2-03-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B2-03-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B2-03-AUD-LST-01": [
+        "source_line"
+      ]
+    }
+  },
+  "implementationCommit": "3c5920edf73a028b97018771bd2c60ce23259e8f",
+  "qualityChecks": {
+    "build": {
+      "command": "python3 tools/build_course.py",
+      "status": "PASS",
+      "lessons": 53,
+      "bundleBytes": 2168500
+    },
+    "verify": {
+      "command": "python3 tools/verify_course.py",
+      "status": "PASS",
+      "exerciseHeadings": 428,
+      "dialogueSections": 61,
+      "vocabularyItems": 754,
+      "lessonQuizItems": 530,
+      "gateQuizItems": 10,
+      "performanceTasks": 109,
+      "catalogRows": 1080,
+      "audioAssets": 217,
+      "mp3Clips": 474,
+      "readyAssets": 137,
+      "pendingAssets": 80
+    },
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 45,
+      "newGuard": "tools/test_b2_03_review.py",
+      "scope": "coverage/text/mappings/evidence/hashes; not language certification"
+    },
+    "nodeGroups": {
+      "status": "PASS",
+      "tests": [
+        "progression",
+        "service_worker",
+        "daily_plan",
+        "session_persistence",
+        "study_time"
+      ]
+    },
+    "syntaxAndDiff": {
+      "status": "PASS",
+      "commands": [
+        "node --check app.js",
+        "node --check service-worker.js",
+        "git diff --check"
+      ]
+    },
+    "browser": {
+      "status": "PASS",
+      "chromium": "143.0.7499.0",
+      "playwright": "1.58.2",
+      "axe": "4.11.0",
+      "cache": "v94",
+      "tests": [
+        "browser",
+        "accessibility_update",
+        "accessibility_audit",
+        "forms_keyboard",
+        "narrow_layout"
+      ],
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "axeStates": 193,
+      "axeSelectedRuleViolations": 0,
+      "axeIncompleteOccurrences": 138,
+      "axeIncompleteNodeOccurrences": 344,
+      "narrowStates": 126,
+      "narrowViewports": [
+        "320x900",
+        "568x320"
+      ],
+      "formsKeyboard": "Passed first execution at both widths; historical native chooser intermittency remains unresolved."
+    },
+    "evidenceIsolation": {
+      "status": "PASS",
+      "oldVersion": "b2-03-v1",
+      "newVersion": "b2-03-v2",
+      "nextLesson": "b2-04-cities-housing-participles",
+      "modelCharacters": [
+        515,
+        566
+      ],
+      "minimumCharacters": [
+        150,
+        180
+      ],
+      "retainsOldRecordWithoutGrantingCurrentMastery": true,
+      "rejectsOldVersionDraft": true,
+      "currentScoreAndEvidenceUnlockNext": true,
+      "evidenceDeletionRelocksNext": true,
+      "p01SpeakCheckboxAbsent": true,
+      "p02SpeakCheckboxRequired": true
+    },
+    "initialFailures": [
+      "First git diff --check on CR45 implementation caught a trailing two-space markdown line break on line 33 of content/B2/lesson-03-consumption-environment-passive-modal.md; removed the trailing spaces and rebuilt data/course.json before running the browser suites. All 45 review guards, all 5 Node suites, and all 5 Chromium browser suites passed on the first run."
+    ]
+  },
+  "campaign": {
+    "review": "CR45",
+    "reviewedLessons": 44,
+    "totalLessons": 53,
+    "gateSeparate": true,
+    "remainingLessons": 9,
+    "planVersion": "2.51",
+    "next": "CR46/B2.4 — المدن والسكن واسما الفاعل والمفعول كصفات (Partizip I/II)"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "3c5920edf73a028b97018771bd2c60ce23259e8f",
+    "implementationPushed": true,
+    "implementationHeadOriginMatched": true,
+    "pr": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "queriedAtHead": "3c5920edf73a028b97018771bd2c60ce23259e8f"
+    },
+    "implementationDeployment": {
+      "state": "pending",
+      "description": "Deployment rate limited or pending in Vercel",
+      "deployments": []
+    },
+    "reportPushed": false,
+    "remoteUIReviewed": false,
+    "productionReviewed": false
+  },
+  "limits": [
+    "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
+    "10 مراجع مقروءة بالكامل (مرجع Lingolia Passive بجزأيه 0 و1 من 2، ومرجع Lingolia Modal Verbs بجزئه 0 من 1، و8 مراجع Duden بجزئها الكامل 0 من 1)، واستُبعد رابط Duden واحد أعاد 404. المراجع المعجمية المباشرة تخص الألفاظ المسماة (Verbrauch وRessource وMehrwegsystem وWiederverwendung وAbfall وKreislaufwirtschaft وvermeiden وwiederverwenden وentsorgen) لا كل كلمة في الجدول.",
+    "خمسة أصول/10 مقاطع معلقة ومحفوظة بأصوات Nadia (voice-02) من B1.4 وVerkäufer (voice-03) والسرد (voice-02) والاستماع (voice-03)؛ فحص MP3 والتشغيل الآلي الصامت ومطابقة التفريغ ليست استماعًا أو اعتمادًا صوتيًا.",
+    "الحد الأدنى للحروف (150/180) والإقرارات الذاتية والجهر في P02 لا تصحح عدد الجمل أو القواعد أو النطق آليًا.",
+    "193 حالة axe وصفر مخالفات للقواعد المختارة، مع 138 ظهورًا غير حاسم تشمل 344 ظهورًا لعقد؛ ليست مخالفات مؤكدة ولا شهادة وصول شاملة.",
+    "فحوص 320×900 و568×320 و1440×900 و390×844 تتم عبر CSS viewports في Chromium وليست هواتف فعلية أو تكبير متصفح أصليًا؛ تحديث v42 إلى v94 fixture محدد وليس كل مسار تاريخي.",
+    "نشر التنفيذ 3c5920e محكوم بحد النشر اليومي في Vercel (deployments=[])؛ لا إعادة نشر آلية ولا شراء ترقية، ولم تختبر الواجهة البعيدة أو Production، وPR#1 غير مدمجة."
+  ]
+}
