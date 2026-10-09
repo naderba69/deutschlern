@@ -19,7 +19,7 @@ if '--implementation-only' in sys.argv:
  print('PASS B2.11 implementation-only: b2-11-v2, 42 exercise subitems, 11 model parts, 5 pending assets/11 clips.');sys.exit(0)
 r=json.load(open('data/reviews/b2-11-review.json'));md=Path('data/reviews/b2-11-review.md').read_text();U=r['units']
 assert r['lessonId']=='b2-11-humans-nature-environment-nominalization' and r['assessmentVersion']=='b2-11-v2' and r['unitCount']==len(U)==91 and r['exerciseSubItemCount']==42 and r['modelPartCount']==11 and not r['acousticReviewed'] and not r['cefrCertification']
-assert len(r['sources'])==42 and sum(x['access']=='full_fetched_page' for x in r['sources'])==42 and len(r['excludedSources'])==5
+assert len(r['sources'])==52 and sum(x['access']=='full_fetched_page' for x in r['sources'])==52 and len(r['excludedSources'])==5
 assert sum(len(u.get('items',[])) for u in U if u['id'].startswith('DL-B2-11-T'))==42
 assert sum(len(u.get('items',[])) for u in U if u['id'].endswith('model-01'))==11
 assert [len(u['items']) for u in U if '-AUD-' in u['id']]==[16,7,7,8,5]
