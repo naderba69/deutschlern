@@ -3978,7 +3978,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2EnvironmentAssessment = b2Lessons[10];
   assert.equal(b2EnvironmentAssessment.id, "b2-11-humans-nature-environment-nominalization", "B2.11 must stay in its source order");
   assert.equal(b2EnvironmentAssessment.assessment?.status, "ready", "B2.11 must have a ready local assessment");
-  assert.equal(b2EnvironmentAssessment.assessment?.version, "b2-11-v1", "B2.11 must use its stable assessment version");
+  assert.equal(b2EnvironmentAssessment.assessment?.version, "b2-11-v2", "B2.11 must use its reviewed assessment version");
   assert.equal(b2EnvironmentAssessment.assessment?.minimumScore, 80, "B2.11 must retain the 80 percent mastery threshold");
   assert.equal(b2EnvironmentAssessment.assessment?.minimumItems, 10, "B2.11 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[10])", context), true, "B2.11 must pass the app's full local assessment-readiness check");
@@ -3989,10 +3989,17 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.ok(b2EnvironmentAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-11-G01")), "all B2.11 questions must map to the lesson objective");
   assert.deepEqual([0, 1, 2].map((position) => b2EnvironmentAssessment.quiz.filter((question) => question.answerIndex === position).length), [3, 4, 3], "B2.11 correct answers must be distributed 3/4/3 across the three options");
   assert.equal(b2EnvironmentAssessment.performanceTasks?.length, 2, "B2.11 must include two practical self-check tasks");
-  assert.ok(b2EnvironmentAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.11 tasks must offer visible written/oral local self-checks without recording");
-  assert.ok(b2EnvironmentAssessment.performanceTasks.every((task) => /خمس جمل|خمس إلى ست جمل/.test(task.prompt) && /صيغتين اسميتين/.test(task.prompt) && /شفهيًا/.test(task.prompt) && /بصوت مسموع/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 180), "B2.11 tasks must state the output, two nominal forms, oral choice, and solo read-aloud option");
-  assert.deepEqual(b2EnvironmentAssessment.performanceTasks.find((task) => task.id === "DL-B2-11-P01").sourceTaskIds, ["DL-B2-11-T08"], "B2.11 P01 must link directly to T08");
-  assert.deepEqual(b2EnvironmentAssessment.performanceTasks.find((task) => task.id === "DL-B2-11-P02").sourceTaskIds, ["DL-B2-11-T05", "DL-B2-11-T06", "DL-B2-11-T08"], "B2.11 P02 must link the source reading, written listening transcript, and T08");
+  const b2EnvironmentP01 = b2EnvironmentAssessment.performanceTasks.find((task) => task.id === "DL-B2-11-P01");
+  const b2EnvironmentP02 = b2EnvironmentAssessment.performanceTasks.find((task) => task.id === "DL-B2-11-P02");
+  assert.deepEqual(b2EnvironmentP01.modality, ["writing"], "B2.11 P01 must be writing-only");
+  assert.equal(b2EnvironmentP01.selfCheck?.speakAloud, false, "B2.11 P01 must not require speaking aloud");
+  assert.deepEqual(b2EnvironmentP02.modality, ["writing", "speaking"], "B2.11 P02 must combine writing and speaking");
+  assert.equal(b2EnvironmentP02.selfCheck?.speakAloud, true, "B2.11 P02 must require speaking aloud");
+  assert.ok(b2EnvironmentAssessment.performanceTasks.every((task) => task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.11 tasks must offer visible local self-checks without recording");
+  assert.ok(b2EnvironmentAssessment.performanceTasks.every((task) => /خمس جمل|خمس إلى ست جمل/.test(task.prompt) && /صيغتين اسميتين/.test(task.prompt) && /أثرًا محتملًا/.test(task.prompt) && task.selfCheck?.minimumResponseCharacters >= 180), "B2.11 tasks must state the output, two nominal forms, and possible impact");
+  assert.match(b2EnvironmentP02.prompt, /شفهيًا.*بصوت مسموع|بصوت مسموع.*شفهيًا/);
+  assert.deepEqual(b2EnvironmentP01.sourceTaskIds, ["DL-B2-11-T08"], "B2.11 P01 must link directly to T08");
+  assert.deepEqual(b2EnvironmentP02.sourceTaskIds, ["DL-B2-11-T05", "DL-B2-11-T06", "DL-B2-11-T07", "DL-B2-11-T08"], "B2.11 P02 must link the source reading, written listening transcript, T07, and T08");
   const environmentAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2EnvironmentAssessment.id);
   assert.equal(environmentAssets.length, 5);
   assert.equal(environmentAssets.reduce((n, asset) => n + asset.segments.length, 0), 11);
@@ -4066,7 +4073,22 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2EnvironmentSource, /صيغتين اسميتين على الأقل/);
   assert.match(b2EnvironmentSource, /اقرأها بصوت مسموع لنفسك/);
   assert.match(b2EnvironmentSource, /لا يلزم تسجيلها أو إرسال صوت/);
-  const b2EnvironmentRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[10].performanceTasks, 'lesson:b2-11-humans-nature-environment-nominalization', 'b2-11-v1')", context);
+  assert.match(b2EnvironmentSource, /الجزء \(أ\) — المهمة الكتابية الأساسية \(`DL-B2-11-P01`/);
+  assert.match(b2EnvironmentSource, /الجزء \(ب\) — المهمة التراكمية المتكاملة \(`DL-B2-11-P02`/);
+  assert.match(b2EnvironmentSource, /## 8\) نماذج مكتوبة للمهمات العملية/);
+  assert.match(b2EnvironmentSource, /## 9\) بطاقات مراجعة/);
+  assert.equal(vm.runInContext(`(() => {
+    const lesson = getLessonsInLevel('B2')[10];
+    const prior = state.completedLessons[lesson.id];
+    try {
+      state.completedLessons[lesson.id] = { score: 100, mastered: true, goalMet: true, performanceEvidenceCompleted: true, assessmentVersion: 'b2-11-v1' };
+      return isLessonMastered(lesson);
+    } finally {
+      if (prior === undefined) delete state.completedLessons[lesson.id];
+      else state.completedLessons[lesson.id] = prior;
+    }
+  })()`, context), false, "updated B2.11 assessment must reject stale v1 mastery");
+  const b2EnvironmentRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[10].performanceTasks, 'lesson:b2-11-humans-nature-environment-nominalization', 'b2-11-v2')", context);
   assert.match(b2EnvironmentRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2EnvironmentRubricHtml, /صيغتين اسميتين/);
 

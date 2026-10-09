@@ -338,6 +338,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.10-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.10-practical-form-fixture', width);
+  // CR53: written fictional environmental measure and spoken T05/T06/T07 Flussbogen briefing, pending audio.
+  await page.evaluate(() => openLesson('b2-11-humans-nature-environment-nominalization'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B2.11-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.11-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);
