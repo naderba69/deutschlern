@@ -2003,16 +2003,28 @@
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "db74c45b218cd8c795bdd1edda3201d9b10ccfa8"
+      "queriedAtHead": "0861e14d26acddd36c1a2d62f7d71d25a78714ee"
     },
     "implementationDeployment": {
       "state": "failure",
       "description": "Deployment rate limited — retry in 24 hours.",
       "deployments": []
     },
-    "reportPushed": false,
+    "reportPushed": true,
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportCommit": "0861e14d26acddd36c1a2d62f7d71d25a78714ee",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR43 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   },
   "limits": [
     "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
