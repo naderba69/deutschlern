@@ -1,5 +1,18 @@
 # تقرير اختبار المتصفح والعمل دون اتصال — 2026-10-09
 
+## الفحوص التراكمية — CR55 (`a0-01-overview` ومزامنة السجلات التراكمية)
+
+- **PASS:** البناء والتحقق (`tools/build_course.py` و`tools/verify_course.py`)، و**55 حارس مراجعة** (بما فيها `tools/test_a0_overview_review.py` الجديد)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,320,648 بايت**؛ 53 درسًا، 428 عنوان تمرين في الدروس + 3 مهام مصدرية صريحة في بوابة A0 (`431 T`)، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة (`540 Q`)، 109 مهمات أداء (`109 P`)، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` / 302 مقاطع و80 معلقة / 172 مقطعًا).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v104` (`deutsch-pfad-v104`) بعد تحديث `./data/source-plan.md` المضمّن في `APP_SHELL`، دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **المزامنة التراكمية:** زُومنت `content/A0/lesson-01-overview.md`، و`data/source-plan.md`، و`data/curriculum-production-matrix.md` (الإصدار `1.5`)، و`data/curriculum-audit.md`، و`data/curriculum-file-audit.csv` (`53` صفًا، `428` تمرينًا، `61` قسم حوار، `473` مقطعًا في الدروس + مقطع البوابة = `474` مقطعًا؛ إزالة `0` / `not_generated` القديمة في `B1.10–B2.12` وتحديث `A1.12` إلى `11` مقطعًا وإزالة إشارات `v1` القديمة)، وأُضيفت فحوص مطابقة تلقائية لها في `tools/verify_course.py`.
+- **axe والعرض الضيق:** **227 حالة** وصفر مخالفات للقواعد المختارة، مع **166 ظهورًا غير حاسم تشمل 454 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **الحفظ:** بقيت حزمة `data/course.json` (`2,320,648` بايت) وجميع الدروس الـ53 وبوابة `A0` وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/audio-playlists.json` وملفات MP3 الـ474 وبصمات المراجعات الـ54 السابقة (`a0-01`..`b2-12` + `a0-gate`) مطابقة بالبايت دون أي تغيير أو إعادة توليد صوت.
+
+[تفاصيل مراجعة نظرة A0 العامة ومزامنة السجلات التراكمية](reviews/a0-overview-review.md).
+
+---
+
 ## إيصال رفع CR54 — 2026-10-09
 
 - **التنفيذ:** `67df18827281ab1a0f5a9e8c5afaba275a838b62`؛ **التقرير والفحوص:** `11d0d545469689c72cd469d8092f0f840a14e563`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR54 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.

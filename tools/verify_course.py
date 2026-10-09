@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import html
 import json
 import re
@@ -423,6 +424,45 @@ def main() -> None:
     check_parser.feed(check["contentHtml"])
     check_parser.close()
     assert not check_parser.errors and not check_parser.stack, "Unbalanced transition-test HTML"
+
+    overview_text = (ROOT / "content" / "A0" / "lesson-01-overview.md").read_text(encoding="utf-8")
+    for item in [l for l in lessons if l["level"] == "A0"]:
+        assert item["id"] in overview_text and item["assessment"]["version"] in overview_text, (
+            f"A0 overview is out of sync with {item['id']}"
+        )
+    assert check["id"] in overview_text and gate_assessment["version"] in overview_text, (
+        "A0 overview is out of sync with A0 transition gate"
+    )
+
+    audit_csv_path = ROOT / "data" / "curriculum-file-audit.csv"
+    with audit_csv_path.open(encoding="utf-8", newline="") as audit_file:
+        audit_rows = list(csv.DictReader(audit_file))
+    assert len(audit_rows) == len(lessons) == 53, f"Expected 53 file-audit rows; found {len(audit_rows)}"
+    lessons_by_id = {item["id"]: item for item in lessons}
+    assets_by_lesson: dict[str, list[dict]] = {}
+    for asset in audio_assets:
+        assets_by_lesson.setdefault(asset["lessonId"], []).append(asset)
+    for row in audit_rows:
+        lid = row["lesson_id"]
+        assert lid in lessons_by_id, f"Unknown lesson in curriculum-file-audit.csv: {lid}"
+        lesson_obj = lessons_by_id[lid]
+        lesson_assets = assets_by_lesson.get(lid, [])
+        lesson_clips = sum(len(a["segments"]) for a in lesson_assets)
+        lesson_statuses = sorted(set(a["status"] for a in lesson_assets))
+        expected_status = lesson_statuses[0] if len(lesson_statuses) == 1 else "|".join(lesson_statuses)
+        assert row["title"] == lesson_obj["title"], f"Stale title in curriculum-file-audit.csv: {lid}"
+        assert row["minutes"] == str(lesson_obj["minutes"]), f"Stale minutes in curriculum-file-audit.csv: {lid}"
+        assert int(row["generated_audio_clips"]) == lesson_clips, f"Stale clip count in curriculum-file-audit.csv: {lid}"
+        assert row["audio_review_status"] == expected_status, f"Stale audio status in curriculum-file-audit.csv: {lid}"
+        assert row["assessment_status"] == lesson_obj["assessment"]["status"], f"Stale assessment status in curriculum-file-audit.csv: {lid}"
+
+    review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
+    assert len(review_files) == 55, f"Expected 55 granular review JSON files; found {len(review_files)}"
+    for review_path in review_files:
+        review_data = json.loads(review_path.read_text(encoding="utf-8"))
+        for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():
+            actual_hash = hashlib.sha256((ROOT / tracked_rel).read_bytes()).hexdigest()
+            assert actual_hash == expected_hash, f"Stale sourceHash in {review_path.name} for {tracked_rel}"
 
     print(f"PASS: {len(lessons)} lessons ({dict(counts)}) match all Markdown sources.")
     print(f"PASS: {total_exercises} exercise headings and {total_dialogue_sections} dialogue sections are rendered.")
