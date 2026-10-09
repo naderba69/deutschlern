@@ -1978,16 +1978,28 @@
       "number": 1,
       "state": "OPEN",
       "mergedAt": null,
-      "queriedAtHead": "3c5920edf73a028b97018771bd2c60ce23259e8f"
+      "queriedAtHead": "6aa1c11185fdb2bcbed40607e0967bdc2e1a70b7"
     },
     "implementationDeployment": {
       "state": "pending",
       "description": "Deployment rate limited or pending in Vercel",
       "deployments": []
     },
-    "reportPushed": false,
+    "reportPushed": true,
     "remoteUIReviewed": false,
-    "productionReviewed": false
+    "productionReviewed": false,
+    "reportCommit": "6aa1c11185fdb2bcbed40607e0967bdc2e1a70b7",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR45 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
   },
   "limits": [
     "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
