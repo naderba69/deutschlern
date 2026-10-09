@@ -296,6 +296,12 @@ async function auditScreens(browser, base, width) {
   await scan(page, 'B2.3-reviewed-source', width);
   await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
   await scan(page, 'B2.3-practical-form-fixture', width);
+  // CR46: written building/quarter description and spoken visitor briefing, pending audio.
+  await page.evaluate(() => openLesson('b2-04-cities-housing-participles'));
+  await page.locator('.audio-transcript summary').first().click();
+  await scan(page, 'B2.4-reviewed-source', width);
+  await page.evaluate(() => { lessonSession.mode = 'performance'; render(); });
+  await scan(page, 'B2.4-practical-form-fixture', width);
   await page.evaluate(() => openLesson('b2-12-leisure-media-reported-speech'));
   await page.locator('.audio-transcript summary').first().click();
   await scan(page, 'B2.12-pending-audio', width);

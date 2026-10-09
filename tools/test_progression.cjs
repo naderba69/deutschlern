@@ -1634,6 +1634,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B2.3 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR46: written building/quarter description and spoken visitor briefing; B2.4 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-04-cities-housing-participles').assessment.version, 'b2-04-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-04-cities-housing-participles');
+    const responses = ["In unserem fiktiven Wohnviertel am Kanal steht ein kürzlich saniertes Mehrfamilienhaus mit einer neu gedämmten Fassade. Neben dem Altbau liegen zwei derzeit entstehende Wohnhäuser mit einem barrierefrei gestalteten Eingang. Die im Erdgeschoss liegenden Räume teilen sich einen gemeinschaftlich genutzten Innenhof. Im Informationsblatt werden auch die voraussichtlich steigenden Nebenkosten für das Gebäude transparent genannt. Ob die angebotenen Wohnungen langfristig für alle interessierten Familien bezahlbar bleiben, hängt von der jeweiligen Wohnfläche und Ausstattung ab.", "Im fiktiven Wohnviertel Parkbogen wird derzeit ein alter Häuserblock schrittweise erneuert. Das bereits sanierte Eckhaus besitzt eine helle Fassade und einen barrierefrei gestalteten Eingang. Daneben liegen drei derzeit entstehende Wohnhäuser mit unterschiedlich großen Wohnungen und einem gemeinschaftlich genutzten Innenhof. Eine Bewohnerin begrüßt die renovierten Häuser, fragt aber, ob die steigenden Mieten für alle Haushalte bezahlbar bleiben. Bei unserem Rundgang können Sie sowohl einen möblierten Musterraum als auch eine noch nicht fertiggestellte Wohnung besichtigen und eigene Fragen notieren."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ein Haus.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.4 models fit thresholds; quarter description is writing only, visitor briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-04-cities-housing-participles').performanceTasks[1]], 'lesson:b2-04-cities-housing-participles', 'b2-04-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-04-cities-housing-participles').performanceTasks[0]], 'lesson:b2-04-cities-housing-participles', 'b2-04-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-04-cities-housing-participles');
+      const next=findLesson('b2-05-health-fitness-medical-information');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-04-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-04-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-04-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-04-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.4 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -3080,7 +3114,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2HousingAssessment = b2Lessons[3];
   assert.equal(b2HousingAssessment.id, "b2-04-cities-housing-participles", "B2.4 must stay in its source order");
   assert.equal(b2HousingAssessment.assessment?.status, "ready", "B2.4 must have a ready local assessment");
-  assert.equal(b2HousingAssessment.assessment?.version, "b2-04-v1", "B2.4 must use its stable assessment version");
+  assert.equal(b2HousingAssessment.assessment?.version, "b2-04-v2", "B2.4 must use its stable assessment version");
   assert.equal(b2HousingAssessment.assessment?.minimumScore, 80, "B2.4 must retain the 80 percent mastery threshold");
   assert.equal(b2HousingAssessment.assessment?.minimumItems, 10, "B2.4 must require ten scored questions");
   assert.equal(vm.runInContext("lessonAssessmentReady(getLessonsInLevel('B2')[3])", context), true, "B2.4 must pass the app's full local assessment-readiness check");
@@ -3089,7 +3123,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2HousingQuestionSources = new Set(b2HousingAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b2HousingQuestionSources.has(`DL-B2-04-T0${task}`), `B2.4 quiz must cover source task T0${task}`);
   assert.ok(b2HousingAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-04-G01")), "all B2.4 questions must map to the lesson objective");
-  assert.ok(b2HousingAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-04-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true && task.selfCheck?.requiredChecks?.length === 3), "B2.4 performance tasks must map to T08 and offer visible written/oral local self-checks without recording");
+  assert.ok(b2HousingAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-04-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.selfCheck?.requiredChecks?.length === 3), "B2.4 performance tasks must map to T08 and remain independent of audio files");
+  assert.deepEqual(b2HousingAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
   assert.ok(b2HousingAssessment.performanceTasks.every((task) => /خمس إلى ست جمل/.test(task.prompt) && /Partizip I/.test(task.prompt) && /Partizip II/.test(task.prompt) && /Partizip I/.test(task.criteria?.targetSkill) && /Partizip II/.test(task.criteria?.targetSkill) && task.selfCheck?.minimumResponseCharacters >= 150), "B2.4 tasks must specify sentence output and both target participles with local self-check thresholds");
   assert.deepEqual(b2HousingAssessment.performanceTasks.find((task) => task.id === "DL-B2-04-P01").sourceTaskIds, ["DL-B2-04-T08"], "B2.4 P01 must link directly to T08");
   assert.deepEqual(b2HousingAssessment.performanceTasks.find((task) => task.id === "DL-B2-04-P02").sourceTaskIds, ["DL-B2-04-T05", "DL-B2-04-T08"], "B2.4 P02 must link the reading text and T08 practice");
@@ -3107,7 +3142,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     return parts.join(". ") + (form === "—" ? "" : ", " + form) + ".";
   }).join(" ");
   assert.equal(housingAssets[0].segments[0].text, housingPhrase, "all source vocabulary forms must be preserved");
-  const housingModels = housingSections[1].split(/\r?\n/).filter((line) => line.startsWith("- **")).flatMap((line) => line.split("**")[1].split(" → ")).map((text) => text[0].toUpperCase() + text.slice(1) + ".");
+  const housingModels = housingSections[1].split("### مساعدة قبل النصوص والمهمات")[0].split(/\r?\n/).filter((line) => line.startsWith("- **")).flatMap((line) => line.split("**")[1].split(" → ")).map((text) => text[0].toUpperCase() + text.slice(1) + ".");
   assert.equal(housingModels.length, 11);
   assert.equal(housingAssets[1].segments[0].text, housingModels.join(" "), "only arrows, sentence punctuation and initial capitals may differ from the model source");
   const housingDialogue = [...b2HousingSource.matchAll(/^\*\*(Architektin|Samir):\*\* (.+?)\s*$/gm)].map((match) => ({speaker: match[1], text: match[2]}));
@@ -3153,7 +3188,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.match(b2HousingSource, /اكتب الإجابة ثم اقرأها بصوت واضح/);
   assert.match(b2HousingSource, /لا يلزم تسجيل/);
   assert.match(b2HousingSource, /لا تستخدم بيانات سكن حقيقية/);
-  const b2HousingRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[3].performanceTasks, 'lesson:b2-04-cities-housing-participles', 'b2-04-v1')", context);
+  const b2HousingRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[3].performanceTasks, 'lesson:b2-04-cities-housing-participles', 'b2-04-v2')", context);
   assert.match(b2HousingRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2HousingRubricHtml, /أنجزت كل أجزاء المهمة المطلوبة/);
   assert.match(b2HousingRubricHtml, /إجابتي أو كلامي واضح ويمكن فهمه/);
