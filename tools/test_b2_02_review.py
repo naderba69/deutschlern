@@ -18,7 +18,7 @@ assert [z['voiceId'] for x in assets for z in x['segments']]==['voice-02','voice
 if '--implementation-only' in sys.argv:
  print('PASS B2.2 implementation-only: b2-02-v2, 40 exercise subitems, 10 model parts, 5 pending assets/11 clips.');sys.exit(0)
 r=json.load(open('data/reviews/b2-02-review.json'));md=Path('data/reviews/b2-02-review.md').read_text();U=r['units']
-assert r['lessonId']=='b2-02-career-formal-communication-konjunktiv1' and r['assessmentVersion']=='b2-02-v2' and r['unitCount']==len(U)==103 and r['exerciseSubItemCount']==40 and r['modelPartCount']==10 and not r['acousticReviewed'] and not r['cefrCertification']
+assert r['lessonId']=='b2-02-career-formal-communication-konjunktiv1' and r['assessmentVersion']=='b2-02-v2' and r['unitCount']==len(U)==100 and r['exerciseSubItemCount']==40 and r['modelPartCount']==10 and not r['acousticReviewed'] and not r['cefrCertification']
 assert len(r['sources'])==10 and sum(x['access']=='full_fetched_page' for x in r['sources'])==10 and len(r['excludedSources'])==1
 assert sum(len(u.get('items',[])) for u in U if u['id'].startswith('DL-B2-02-T'))==40
 assert sum(len(u.get('items',[])) for u in U if u['id'].endswith('model-01'))==10
@@ -28,4 +28,4 @@ assert sum(len(u.get('criterionReview',[])) for u in U if u['id'].startswith('DL
 for f,h in r['sourceHashes'].items():assert hashlib.sha256(Path(f).read_bytes()).hexdigest()==h,f
 for x in assets:assert hashlib.sha256(json.dumps(x,ensure_ascii=False,sort_keys=True).encode()).hexdigest()==r['audioSnapshotHashes'][x['assetId']]
 for u in U:assert f"### {u['id']}" in md and u['finding'] in md,u['id']
-print('PASS B2.2: 103 units/40 exercise subitems/10 model parts/30 options/6 criteria; five pending assets/11 clips. Not language/acoustic certification.')
+print('PASS B2.2: 100 units/40 exercise subitems/10 model parts/30 options/6 criteria; five pending assets/11 clips. Not language/acoustic certification.')

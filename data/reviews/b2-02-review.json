@@ -1,0 +1,2067 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+  "reviewDate": "2026-10-09",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b2-02-v2",
+  "unitCount": 100,
+  "exerciseSubItemCount": 40,
+  "modelPartCount": 10,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "INDIR",
+      "title": "Lingolia — Indirect Speech in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/indirect-speech",
+      "scope": "قُرئ الجزآن 0 و1 من 2 بالكامل: يشرح أفعال النقل (sagt/meint/erklärt/berichtet)، واختيارية dass مع تغير موضع الفعل بين الثاني والنهاية، وحياد Konjunktiv I، واستبداله بـKonjunktiv II عند تطابق الصيغة مع المضارع المرفوع (مثل sie haben → sie hätten).",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "searchResultId": 1
+    },
+    {
+      "id": "KONJ",
+      "title": "Lingolia — Konjunktiv – the Subjunctive Mood in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/subjunctive",
+      "scope": "قُرئ الجزآن 0 و1 من 2 بالكامل: يشرح اشتقاق الغائب المفرد في Konjunktiv I بحذف -n من المصدر (haben → habe، können → könne)، وتصريف sein الخاص (ich/er/sie/es sei، wir/sie seien)، واستعمال Konjunktiv II بديلًا عند تطابق الصيغة مع المضارع.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "searchResultId": 2
+    },
+    {
+      "id": "WERDEGANG",
+      "title": "Duden — Werdegang",
+      "url": "https://www.duden.de/rechtschreibung/Werdegang",
+      "scope": "اسم مذكر جمعُه النادر die Werdegänge؛ يدل على مسار التطور التعليمي والمهني للفرد (seinen beruflichen Werdegang schildern).",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "QUALIFIKATION",
+      "title": "Duden — Qualifikation",
+      "url": "https://www.duden.de/rechtschreibung/Qualifikation",
+      "scope": "اسم مؤنث جمعُه die Qualifikationen؛ يدل على الكفاءة أو المؤهل المكتسب بالتعليم أو الخبرة لمزاولة عمل معين.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ANFORDERUNGSPROFIL",
+      "title": "Duden — Anforderungsprofil",
+      "url": "https://www.duden.de/rechtschreibung/Anforderungsprofil",
+      "scope": "اسم محايد جمعُه die Anforderungsprofile؛ مجموع المتطلبات التي ينبغي أن يستوفيها المتقدم لوظيفة معينة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "STELLENAUSSCHREIBUNG",
+      "title": "Duden — Stellenausschreibung",
+      "url": "https://www.duden.de/rechtschreibung/Stellenausschreibung",
+      "scope": "اسم مؤنث جمعُه die Stellenausschreibungen؛ الإعلان الرسمي عن وظيفة شاغرة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "FUEHRUNGSKRAFT",
+      "title": "Duden — Führungskraft",
+      "url": "https://www.duden.de/rechtschreibung/Fuehrungskraft",
+      "scope": "اسم مؤنث جمعُه die Führungskräfte؛ شخص يشغل منصبًا قياديًا أو إداريًا في مؤسسة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ZUSTAENDIGKEIT",
+      "title": "Duden — Zuständigkeit",
+      "url": "https://www.duden.de/rechtschreibung/Zustaendigkeit",
+      "scope": "اسم مؤنث جمعُه die Zuständigkeiten؛ الاختصاص أو مجال المسؤولية والصلاحية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "EMPFEHLUNG",
+      "title": "Duden — Empfehlung",
+      "url": "https://www.duden.de/rechtschreibung/Empfehlung",
+      "scope": "اسم مؤنث جمعُه die Empfehlungen؛ نصيحة أو توصية أو تزكية مهنية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ANSTREBEN",
+      "title": "Duden — anstreben",
+      "url": "https://www.duden.de/rechtschreibung/anstreben",
+      "scope": "فعل ضعيف منفصل تصريفه strebt an، strebte an، hat angestrebt؛ يدل على السعي إلى تحقيق هدف أو منصب (eine bessere Stellung / ein Ziel anstreben).",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 45–50 دقيقة (مرنة؛ يمكن تقسيمها إلى جلستين) · **المهارات:** قراءة محضر مهني، استماع، قواعد الكلام المنقول، عرض خبرة، كتابة مهنية وإحاطة شفهية (الصوت المسجّل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط دون شريك أو تسجيل)",
+      "finding": "المدة مقترحة قابلة للتقسيم؛ الصوت المسجل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أنقل أقوالًا ومعلومات مهنية مع نسبتها إلى مصدرها بأسلوب محايد، مستخدمًا صيغًا شائعة من **Konjunktiv I** (مع بديل **Konjunktiv II** عند تطابق الصيغة مع المضارع)، وأن أميّز بين الكلام المنقول والمعلومة أو التوصية التي أؤكدها بنفسي. هذا الدرس وتقييمه المحلي للتعلّم الذاتي ولا يمنحان شهادة رسمية لمستوى B2.",
+      "finding": "الهدف نقل الأقوال والمعلومات المهنية بحياد بـKonjunktiv I (مع بديل Konjunktiv II عند التطابق) والتمييز بين النقل والمؤكد؛ لا يمنح الدرس شهادة B2.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "تنبيه مفردات: يُستعمل **der Werdegang** في الأغلب بالمفرد بمعنى المسيرة المهنية أو التعليمية (**seinen beruflichen Werdegang schildern**)، وجمعه **die Werdegänge** نادر. والفعل **anstreben** فعل ضعيف منفصل (**strebt an, strebte an, hat angestrebt**) متعدٍّ إلى المفعول به (**eine Stelle / ein Ziel anstreben**). أما **vereinbaren** و**übernehmen** ففعلان غير منفصلين لأن البادئتين **ver-** و**über-** لا تنفصلان هنا (**vereinbart, hat vereinbart**؛ **übernimmt, übernahm, hat übernommen**).",
+      "finding": "وُضح إفراد Werdegang في الأغلب وندرة جمعه Werdegänge، وانفصال anstreben مقابل عدم انفصال vereinbaren وübernehmen.",
+      "sourceIds": [
+        "WERDEGANG",
+        "ANSTREBEN"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "يُستخدم **Konjunktiv I** في التقارير والمحاضر لنقل ما قاله شخص آخر من دون عرضه على أنه رأي الكاتب أو حقيقة مؤكدة. في الكلام المنقول من دون **dass** يأتي الفعل المصرف في الموضع الثاني كما في الجملة الرئيسية، أما مع **dass** فيتأخر الفعل المصرف إلى نهاية الجملة التابعة.",
+      "finding": "قُيّد موضع الفعل المصرف في الكلام المنقول بين الموضع الثاني من دون dass ونهاية الجملة التابعة مع dass.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "يمكن نقل الكلام من دون **dass** بترتيب الجملة الرئيسية: **Der Coach sagt, der Lebenslauf sei klar.** ويمكن أيضًا استعمال **dass**، وعندها يأتي الفعل في نهاية الجملة التابعة: **Der Coach sagt, dass der Lebenslauf klar sei.**",
+      "finding": "مقابلة مباشرة بين Der Coach sagt, der Lebenslauf sei klar وبين Der Coach sagt, dass der Lebenslauf klar sei.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "قد تتطابق صيغة **Konjunktiv I** في الجمع مع المضارع. عند الحاجة إلى تمييز الكلام المنقول، تُستعمل أحيانًا صيغة **Konjunktiv II** بديلًا: **Sie sagen: „Wir haben klare Ziele.“ → Sie sagen, sie hätten klare Ziele.**",
+      "finding": "قاعدة اللجوء إلى Konjunktiv II في الجمع عند تطابق Konjunktiv I مع المضارع (Sie sagen, sie hätten klare Ziele).",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Berufsweg | die Berufswege | المسار المهني |",
+      "finding": "Berufsweg مذكر وجمعه Berufswege؛ المسار المهني.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| der Werdegang | die Werdegänge | السيرة / المسيرة المهنية |",
+      "finding": "Werdegang مذكر وجمعه النادر Werdegänge؛ السيرة أو المسيرة المهنية والتعليمية.",
+      "sourceIds": [
+        "WERDEGANG"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Qualifikation | die Qualifikationen | المؤهل / الكفاءة |",
+      "finding": "Qualifikation مؤنث وجمعها Qualifikationen؛ المؤهل أو الكفاءة المهنية.",
+      "sourceIds": [
+        "QUALIFIKATION"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Berufserfahrung | — | الخبرة المهنية |",
+      "finding": "Berufserfahrung مؤنث وتُستعمل هنا بلا جمع؛ الخبرة المهنية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| das Anforderungsprofil | die Anforderungsprofile | ملف متطلبات الوظيفة |",
+      "finding": "Anforderungsprofil محايد وجمعه Anforderungsprofile؛ ملف متطلبات الوظيفة.",
+      "sourceIds": [
+        "ANFORDERUNGSPROFIL"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Stellenausschreibung | die Stellenausschreibungen | إعلان الوظيفة |",
+      "finding": "Stellenausschreibung مؤنث وجمعها Stellenausschreibungen؛ إعلان الوظيفة الشاغرة.",
+      "sourceIds": [
+        "STELLENAUSSCHREIBUNG"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Führungskraft | die Führungskräfte | مسؤول إداري / قائد فريق |",
+      "finding": "Führungskraft مؤنث وجمعها Führungskräfte؛ مسؤول إداري أو قائد فريق.",
+      "sourceIds": [
+        "FUEHRUNGSKRAFT"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Weiterentwicklung | die Weiterentwicklungen | التطوّر المهني |",
+      "finding": "Weiterentwicklung مؤنث وجمعها Weiterentwicklungen؛ التطور المهني.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| die Zuständigkeit | die Zuständigkeiten | مجال المسؤولية |",
+      "finding": "Zuständigkeit مؤنث وجمعها Zuständigkeiten؛ مجال المسؤولية أو الاختصاص.",
+      "sourceIds": [
+        "ZUSTAENDIGKEIT"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Empfehlung | die Empfehlungen | التوصية |",
+      "finding": "Empfehlung مؤنث وجمعها Empfehlungen؛ التوصية أو النصيحة.",
+      "sourceIds": [
+        "EMPFEHLUNG"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| anstreben | strebt an | يسعى إلى |",
+      "finding": "anstreben فعل ضعيف منفصل حاضرُه strebt an؛ يسعى إلى منصب أو هدف.",
+      "sourceIds": [
+        "ANSTREBEN"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| sich beruflich orientieren | orientiert sich | يحدّد توجهه المهني |",
+      "finding": "sich beruflich orientieren فعل انعكاسي حاضرُه orientiert sich؛ يحدد توجهه المهني.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| vereinbaren | vereinbart | يتفق على / ينسّق |",
+      "finding": "vereinbaren فعل ضعيف غير منفصل حاضرُه vereinbart؛ يتفق على أو ينسق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| übernehmen | übernimmt | يتولى |",
+      "finding": "übernehmen فعل قوي غير منفصل حاضرُه übernimmt؛ يتولى مهمة أو مسؤولية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| strukturiert / ausführlich | — | منظّم / مفصّل |",
+      "finding": "strukturiert منظم وausführlich مفصل؛ صفتان لوصف العرض المهني والسيرة الذاتية.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Der Coach sagt: „Der Lebenslauf ist klar strukturiert.“",
+      "finding": "Der Coach sagt: „Der Lebenslauf ist klar strukturiert.“: قول مباشر بين علامتي اقتباس במضارع Indikativ (ist).",
+      "sourceIds": [
+        "INDIR"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Der Coach sagt, der Lebenslauf sei klar strukturiert.",
+      "finding": "Der Coach sagt, der Lebenslauf sei klar strukturiert: نقل غير مباشر من دون dass، فجاء الفعل sei في الموضع الثاني.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Die Beraterin sagt: „Die Bewerberin kann das Projekt leiten.“",
+      "finding": "Die Beraterin sagt: „Die Bewerberin kann das Projekt leiten.“: قول مباشر بالفعل الناقص المرفوع kann.",
+      "sourceIds": [
+        "INDIR"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Die Beraterin sagt, die Bewerberin könne das Projekt leiten.",
+      "finding": "Die Beraterin sagt, die Bewerberin könne das Projekt leiten: نقل بـKonjunktiv I (könne) في الموضع الثاني والمصدر leiten في النهاية.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Der Mentor sagt: „Die Berufserfahrung hilft.“",
+      "finding": "Der Mentor sagt: „Die Berufserfahrung hilft.“: قول مباشر بالفعل القوي المرفوع hilft.",
+      "sourceIds": [
+        "INDIR"
+      ]
+    },
+    {
+      "id": "grammar-06",
+      "text": "Der Mentor sagt, die Berufserfahrung helfe.",
+      "finding": "Der Mentor sagt, die Berufserfahrung helfe: نقل بـKonjunktiv I المشتق من جذر المصدر (helfe) بلا تغير حركة الجذر.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "grammar-07",
+      "text": "Der Coach sagt, der Lebenslauf sei klar.",
+      "finding": "Der Coach sagt, der Lebenslauf sei klar: نقل من دون dass بترتيب الجملة الرئيسية.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "grammar-08",
+      "text": "Der Coach sagt, dass der Lebenslauf klar sei.",
+      "finding": "Der Coach sagt, dass der Lebenslauf klar sei: نقل مع الرابط dass وتأخير الفعل المصرف sei إلى نهاية الجملة التابعة.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "grammar-09",
+      "text": "Sie sagen: „Wir haben klare Ziele.“",
+      "finding": "Sie sagen: „Wir haben klare Ziele.“: قول مباشر بصيغة المتكلمين الجمع (Wir haben).",
+      "sourceIds": [
+        "INDIR"
+      ]
+    },
+    {
+      "id": "grammar-10",
+      "text": "Sie sagen, sie hätten klare Ziele.",
+      "finding": "Sie sagen, sie hätten klare Ziele: تحويل الضمير إلى sie واستعمال Konjunktiv II (hätten) لأن sie haben في Konjunktiv I تطابق المضارع.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **الوظيفة الدلالية لـKonjunktiv I:** يدلّ على نقل كلام مصدر آخر بحياد (**Sie sagt / erklärt / meint / berichtet / fügt hinzu, …** أو **Laut …**) من دون تبنّي القول كحقيقة يقرّرها الكاتب بنفسه.",
+      "finding": "بيان الوظيفة الحيادية لـKonjunktiv I في نسبة الأقوال إلى أصحابها دون تبنيها كحقيقة يؤكدها الكاتب.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **اشتقاق الغائب المفرد (`er/sie/es`):** يُشتق في معظم الأفعال بحذف **-n** من المصدر (**haben → habe**، **können → könne**، **müssen → müsse**، **sollen → solle**، **wollen → wolle**، **helfen → helfe**، **passen → passe**، **zeigen → zeige**، **enthalten → enthalte**)، بلا تغير الحركة الداخلية كما في المضارع المرفوع (**kann / hilft / enthält**). والفعل **sein** خاص: **er/sie/es sei** (وفي الجمع **sie seien**).",
+      "finding": "توضيح قاعدة اشتقاق الغائب المفرد بحذف -n من المصدر دون تغير حركة الجذر، مع تمييز تصريف sein الخاص.",
+      "sourceIds": [
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **ترتيب الفعل مع `dass` ومن دونه:** من دون **dass** يقع الفعل المصرف في الموضع الثاني (**Der Coach sagt, der Lebenslauf sei klar.**)، ومع **dass** يتأخر الفعل المصرف إلى نهاية الجملة التابعة (**Der Coach sagt, dass der Lebenslauf klar sei.**).",
+      "finding": "المقابلة التركيبية بين غياب dass (الفعل في الموضع الثاني) وحضور dass (الفعل في نهاية الجملة التابعة).",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الأفعال الناقصة والمصدر في النهاية:** عند استعمال **könne / müsse / solle / wolle** يبقى المصدر أو مركّب المبني للمجهول في آخر الجملة (**das Projekt leiten**، **konkret formuliert werden**).",
+      "finding": "تثبيت بقاء المصدر أو مركب المبني للمجهول في نهاية الجملة مع الأفعال الناقصة könne/müsse/solle/wolle.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **نقل الماضي بصيغة Perfekt في Konjunktiv I:** يُنقل الماضي (سواء أكان في الأصل **Präteritum** أم **Perfekt** أم **Plusquamperfekt**) باستعمال **habe** أو **sei** مع اسم المفعول في نهاية الجملة (**sie habe im letzten Jahr ein kleines Team koordiniert**).",
+      "finding": "بيان نقل الماضي بصيغة Perfekt في Konjunktiv I (habe/sei + Partizip II).",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **تحويل الضمائر والملكية:** يتغير الضمير بحسب منظور الناقل؛ فقول المتحدث عن نفسه **„Ich möchte …“** يتحول عند الحديث عنه إلى **sie wolle / er wolle**، وقول الجماعة **„Wir haben klare Ziele.“** يتحول إلى **sie hätten klare Ziele**.",
+      "finding": "ضبط تحويل الضمائر من المتكلم المفرد والجمع إلى الغائب المفرد والجمع عند النقل.",
+      "sourceIds": [
+        "INDIR"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **متى نستعمل Konjunktiv II بديلًا؟** عندما تتطابق صيغة **Konjunktiv I** مع المضارع المرفوع (**Indikativ**)، ولا سيما مع **ich** و**wir** و**sie/Sie** في الجمع (**sie haben → sie hätten**)، لنحافظ على وضوح أن الكلام منقول.",
+      "finding": "تحديد مواضع اللجوء إلى Konjunktiv II عند تطابق Konjunktiv I مع المضارع المرفوع.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **الفصل بين الاقتباس والنقل والرأي الشخصي:** الاقتباس المباشر يوضع بين علامتي اقتباس ألمانيتين **„…“**، والكلام المنقول يُنسب إلى صاحبه بـ**Konjunktiv I/II**، أما رأي الكاتب أو خطوته المقترحة فيُصاغ بوضوح بصيغة المؤكد مثل **Aus meiner Sicht ist …** أو **Ich empfehle …**.",
+      "finding": "التمييز العملي بين الاقتباس المباشر („…“) والكلام المنقول بـKonjunktiv I/II والرأي الشخصي المصاغ بالمؤكد.",
+      "sourceIds": [
+        "INDIR"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **تنبيه معجمي:** نفرّق بين **der Lebenslauf** (جدول السيرة الذاتية) و**das Anschreiben** (رسالة التقديم المرفقة)، وبين **das Anforderungsprofil** (متطلبات الوظيفة المعلنة) و**die Qualifikation / die Berufserfahrung** (ما يحمله المتقدم من مؤهلات وخبرة).",
+      "finding": "التفريق المعجمي بين Lebenslauf وAnschreiben وبين Anforderungsprofil وQualifikation/Berufserfahrung.",
+      "sourceIds": [
+        "QUALIFIKATION",
+        "ANFORDERUNGSPROFIL"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **أداء المهمتين T08 (`P01` و`P02`):** المهمة الأولى **P01** كتابة فقط دون جهر، والمهمة الثانية **P02** كتابة مع قراءة جهرية ذاتية دون شريك أو تسجيل؛ والتقييم يعتمد على النصوص المكتوبة والتحقق الذاتي المحلي ولا يتوقف على تشغيل ملفات الصوت.",
+      "finding": "تحديد P01 كتابة فقط وP02 كتابة وجهر ذاتي، وبيان استقلال التقييم عن ملفات الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Was sagte die Beraterin über Amiras Lebenslauf?",
+      "finding": "Nora تسأل عما قالته المستشارة بشأن سيرة Amira الذاتية.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Sie sagte, Amiras Werdegang sei klar dargestellt.",
+      "finding": "Fadi ينقل رأي المستشارة بـKonjunktiv I: Amiras Werdegang sei klar dargestellt.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ",
+        "WERDEGANG"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Und was soll Amira noch ergänzen?",
+      "finding": "Nora تسأل عما ينبغي لـAmira أن تضيفه بعد.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Sie meinte, Amira habe viel Erfahrung in der Kundenbetreuung und solle zwei konkrete Beispiele hinzufügen.",
+      "finding": "Fadi ينقل معلومتين معطوفتين بـKonjunktiv I: Amira habe viel Erfahrung … und solle zwei konkrete Beispiele hinzufügen.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Hat sie auch etwas über die Stelle gesagt?",
+      "finding": "سؤال نعم/لا عن رأي المستشارة في الوظيفة الشاغرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ja. Das Anforderungsprofil sei anspruchsvoll, aber Amiras Profil passe dazu.",
+      "finding": "نقل تقييم متوازن بـKonjunktiv I: Das Anforderungsprofil sei anspruchsvoll, aber Amiras Profil passe dazu.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ",
+        "ANFORDERUNGSPROFIL"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Dann werde ich Amira beim Überarbeiten helfen.",
+      "finding": "Nora تختم بعزمها المباشر في المستقبل (werde … helfen) على مساعدة Amira في المراجعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Gesprächsnotiz — Berufsberatung.",
+      "finding": "عنوان المحضر المهني: Gesprächsnotiz — Berufsberatung.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Die Beraterin erklärt, die Bewerberin habe mehrere Jahre Erfahrung im Kundenservice.",
+      "finding": "تنقل المستشارة خبرة المتقدمة بـKonjunktiv I: die Bewerberin habe mehrere Jahre Erfahrung im Kundenservice.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Ihr Lebenslauf sei übersichtlich, enthalte aber noch zu wenige konkrete Beispiele.",
+      "finding": "تنقل المستشارة تقويم السيرة الذاتية بفعلي Konjunktiv I: Ihr Lebenslauf sei übersichtlich, enthalte aber noch zu wenige konkrete Beispiele.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Die Bewerberin könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben.",
+      "finding": "تنقل إمكان تفصيل المسؤوليات بـkönne: Die Bewerberin könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ",
+        "ZUSTAENDIGKEIT"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Die Beraterin ergänzt, ein kurzes Anschreiben helfe dabei, den Wechselwunsch zu erklären.",
+      "finding": "تضيف المستشارة دور رسالة التقديم بـhelfe: ein kurzes Anschreiben helfe dabei, den Wechselwunsch zu erklären.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Die Bewerberin sagt, sie wolle künftig mehr Verantwortung übernehmen und strebe eine Stelle im Projektmanagement an.",
+      "finding": "تنقل المتقدمة هدفها المهني بـwolle وstrebe … an: sie wolle künftig mehr Verantwortung übernehmen und strebe eine Stelle im Projektmanagement an.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ",
+        "ANSTREBEN"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wie viel Erfahrung hat die Bewerberin laut Notiz?",
+      "finding": "Sie habe mehrere Jahre Erfahrung im Kundenservice. — لديها عدة سنوات من الخبرة في خدمة العملاء.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie beurteilt die Beraterin den Lebenslauf?",
+      "finding": "Ihr Lebenslauf sei übersichtlich, enthalte aber zu wenige konkrete Beispiele. — سيرتها الذاتية واضحة التنظيم لكنها تفتقر إلى أمثلة محددة كافية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was könne die Bewerberin genauer beschreiben?",
+      "finding": "Sie könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben. — تستطيع وصف مسؤولياتها في المشروع الأخير بمزيد من الدقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wobei helfe ein kurzes Anschreiben?",
+      "finding": "Es helfe dabei, den Wechselwunsch zu erklären. — تساعد رسالة التقديم القصيرة على شرح رغبتها في التغيير الوظيفي.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Welches berufliche Ziel strebe die Bewerberin an?",
+      "finding": "Sie strebe eine Stelle im Projektmanagement an. — تسعى إلى وظيفة في إدارة المشاريع.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Im Seminar über Bewerbungen sagte der Coach, ein berufliches Ziel müsse konkret formuliert werden.",
+      "finding": "في ندوة التقديم للوظائف نقل المدرب بـmüsse والمبني للمجهول أن الهدف المهني يجب أن يصاغ بصورة محددة.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen.",
+      "finding": "نقل بـsolle أن السيرة الذاتية ينبغي أن تذكر المهام والنتائج المهمة.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Eine Teilnehmerin erklärte, sie habe im letzten Jahr ein kleines Team koordiniert.",
+      "finding": "نقلت مشاركة بصيغة الماضي المنقول (habe … koordiniert) أنها نسقت فريقًا صغيرًا في العام الماضي.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Der Coach meinte, dieses Beispiel zeige ihre Organisationsfähigkeit.",
+      "finding": "رأى المدرب بـzeige أن هذا المثال يظهر قدرتها التنظيمية.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Er fügte hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+      "finding": "أضاف المدرب بـkönne أن رسالة التقديم تستطيع شرح الدافع بإيجاز.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was müsse laut Coach konkret formuliert werden?",
+      "finding": "Ein berufliches Ziel. — الذي يجب صياغته بصورة محددة هو الهدف المهني.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was solle der Lebenslauf nennen?",
+      "finding": "Wichtige Aufgaben und Ergebnisse. — ينبغي للسيرة الذاتية أن تذكر المهام والنتائج المهمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was habe eine Teilnehmerin im letzten Jahr gemacht?",
+      "finding": "Sie habe ein kleines Team koordiniert. — نسقت المشاركة فريقًا صغيرًا في العام الماضي.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Welche Fähigkeit zeige dieses Beispiel?",
+      "finding": "Ihre Organisationsfähigkeit. — يُظهر هذا المثال قدرتها التنظيمية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Was könne ein Anschreiben erläutern?",
+      "finding": "Die Motivation. — تستطيع رسالة التقديم شرح الدافع بإيجاز.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B2-02-T01",
+      "text": "1. Die Beraterin sagt, der Lebenslauf ______ übersichtlich. (sein)\n2. Der Coach meint, die Bewerberin ______ viel Erfahrung. (haben)\n3. Die Führungskraft erklärt, der Mitarbeiter ______ das Projekt leiten. (können)\n4. Der Mentor sagt, ein klares Ziel ______ hilfreich. (sein)",
+      "finding": "أربع جمل تدرب صيغ الغائب المفرد الأساسية في Konjunktiv I: sei وhabe وkönne.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Beraterin sagt, der Lebenslauf ______ übersichtlich. (sein)",
+          "answer": "sei",
+          "finding": "صيغة الغائب المفرد من sein في Konjunktiv I مع der Lebenslauf هي sei."
+        },
+        {
+          "index": 2,
+          "text": "Der Coach meint, die Bewerberin ______ viel Erfahrung. (haben)",
+          "answer": "habe",
+          "finding": "صيغة الغائب المفرد من haben في Konjunktiv I مع die Bewerberin هي habe."
+        },
+        {
+          "index": 3,
+          "text": "Die Führungskraft erklärt, der Mitarbeiter ______ das Projekt leiten. (können)",
+          "answer": "könne",
+          "finding": "صيغة الغائب المفرد من können في Konjunktiv I مع der Mitarbeiter هي könne."
+        },
+        {
+          "index": 4,
+          "text": "Der Mentor sagt, ein klares Ziel ______ hilfreich. (sein)",
+          "answer": "sei",
+          "finding": "صيغة الغائب المفرد من sein في Konjunktiv I مع ein klares Ziel هي sei."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T02",
+      "text": "1. **Der Coach sagt: „Das Anschreiben ist wichtig.“** → Der Coach sagt, das Anschreiben ______ wichtig.\n2. **Die Beraterin sagt: „Die Bewerberin hat gute Qualifikationen.“** → Die Beraterin sagt, die Bewerberin ______ gute Qualifikationen.\n3. **Der Mentor sagt: „Der Mitarbeiter kann die Aufgabe übernehmen.“** → Der Mentor sagt, der Mitarbeiter ______ die Aufgabe übernehmen.\n4. **Sie sagen: „Wir haben klare Ziele.“** → Sie sagen, sie ______ klare Ziele. *(استخدم بديل Konjunktiv II لإزالة الالتباس في الجمع)*",
+      "finding": "أربع جمل تحول الكلام المباشر إلى منقول بـsei وhabe وkönne وبديل الجمع hätten.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Der Coach sagt: „Das Anschreiben ist wichtig.“** → Der Coach sagt, das Anschreiben ______ wichtig.",
+          "answer": "sei",
+          "finding": "يتحول الفعل ist في الكلام المباشر إلى sei في الكلام المنقول."
+        },
+        {
+          "index": 2,
+          "text": "**Die Beraterin sagt: „Die Bewerberin hat gute Qualifikationen.“** → Die Beraterin sagt, die Bewerberin ______ gute Qualifikationen.",
+          "answer": "habe",
+          "finding": "يتحول الفعل hat في الكلام المباشر إلى habe في الكلام المنقول."
+        },
+        {
+          "index": 3,
+          "text": "**Der Mentor sagt: „Der Mitarbeiter kann die Aufgabe übernehmen.“** → Der Mentor sagt, der Mitarbeiter ______ die Aufgabe übernehmen.",
+          "answer": "könne",
+          "finding": "يتحول الفعل kann في الكلام المباشر إلى könne في الكلام المنقول."
+        },
+        {
+          "index": 4,
+          "text": "**Sie sagen: „Wir haben klare Ziele.“** → Sie sagen, sie ______ klare Ziele. *(استخدم بديل Konjunktiv II لإزالة الالتباس في الجمع)*",
+          "answer": "hätten",
+          "finding": "في الجمع تتطابق sie haben مع المضارع، فنستعمل بديل Konjunktiv II للتوضيح: hätten."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T03",
+      "text": "1. Die Beraterin erklärt, die Bewerberin ______ künftig mehr Verantwortung übernehmen. (wollen)\n2. Der Coach sagt, das Team ______ klare Zuständigkeiten. (haben)\n3. Die Führungskraft meint, die neue Stelle ______ anspruchsvoll. (sein)",
+      "finding": "ثلاث جمل تثبت تصريف wolle وhabe وsei في سياق مهني.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Beraterin erklärt, die Bewerberin ______ künftig mehr Verantwortung übernehmen. (wollen)",
+          "answer": "wolle",
+          "finding": "صيغة الغائب المفرد من wollen في Konjunktiv I هي wolle مع بقاء المصدر übernehmen في النهاية."
+        },
+        {
+          "index": 2,
+          "text": "Der Coach sagt, das Team ______ klare Zuständigkeiten. (haben)",
+          "answer": "habe",
+          "finding": "الفاعل das Team مفرد، فصيغة Konjunktiv I من haben هي habe."
+        },
+        {
+          "index": 3,
+          "text": "Die Führungskraft meint, die neue Stelle ______ anspruchsvoll. (sein)",
+          "answer": "sei",
+          "finding": "صيغة الغائب المفرد من sein مع die neue Stelle هي sei."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T04",
+      "text": "اكتب **مباشر** أو **منقول**:\n\n1. **Der Coach sagt: „Ihr Profil passt zur Stelle.“**\n2. **Der Coach sagt, das Profil passe zur Stelle.**\n3. **Die Bewerberin erklärt, sie habe ein Praktikum absolviert.**\n4. **Die Bewerberin sagt: „Ich möchte mich weiterentwickeln.“**\n5. **Die Kolleginnen berichten, sie hätten die Aufgaben klar verteilt.**",
+      "finding": "خمس جمل تميز بين الاقتباس المباشر والكلام المنقول بـKonjunktiv I أو بديل Konjunktiv II.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Der Coach sagt: „Ihr Profil passt zur Stelle.“**",
+          "answer": "مباشر",
+          "finding": "وجود علامتي الاقتباس „…“ والفعل المرفوع passt يعين الكلام المباشر."
+        },
+        {
+          "index": 2,
+          "text": "**Der Coach sagt, das Profil passe zur Stelle.**",
+          "answer": "منقول",
+          "finding": "غياب علامتي الاقتباس واستعمال صيغة passe يعين الكلام المنقول."
+        },
+        {
+          "index": 3,
+          "text": "**Die Bewerberin erklärt, sie habe ein Praktikum absolviert.**",
+          "answer": "منقول",
+          "finding": "استعمال صيغة الماضي المنقول habe … absolviert يعين الكلام المنقول."
+        },
+        {
+          "index": 4,
+          "text": "**Die Bewerberin sagt: „Ich möchte mich weiterentwickeln.“**",
+          "answer": "مباشر",
+          "finding": "وجود علامتي الاقتباس „…“ والضمير Ich يعين الكلام المباشر."
+        },
+        {
+          "index": 5,
+          "text": "**Die Kolleginnen berichten, sie hätten die Aufgaben klar verteilt.**",
+          "answer": "منقول",
+          "finding": "استعمال بديل Konjunktiv II في الجمع (sie hätten … verteilt) بعد berichten يعين الكلام المنقول."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. لدى المتقدمة عدة سنوات من الخبرة في خدمة العملاء.\n2. يرى الملخص أن سيرتها الذاتية غير منظّمة.\n3. تستطيع المتقدمة أن تصف مسؤولياتها في المشروع السابق بمزيد من التفصيل.\n4. ترغب المتقدمة مستقبلًا في تولي مسؤولية أكبر.\n5. تسعى المتقدمة إلى وظيفة في إدارة المشاريع.",
+      "finding": "خمس عبارات تتحقق من فهم محضر الاستشارة المهنية.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "لدى المتقدمة عدة سنوات من الخبرة في خدمة العملاء.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ ينص المحضر على mehrere Jahre Erfahrung im Kundenservice."
+        },
+        {
+          "index": 2,
+          "text": "يرى الملخص أن سيرتها الذاتية غير منظّمة.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ السيرة الذاتية واضحة التنظيم (übersichtlich) لكنها تفتقر إلى أمثلة محددة كافية."
+        },
+        {
+          "index": 3,
+          "text": "تستطيع المتقدمة أن تصف مسؤولياتها في المشروع السابق بمزيد من التفصيل.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تستطيع المتقدمة وصف مسؤولياتها في المشروع الأخير بدقة أكبر."
+        },
+        {
+          "index": 4,
+          "text": "ترغب المتقدمة مستقبلًا في تولي مسؤولية أكبر.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ ترغب مستقبلًا في تولي مسؤولية أكبر (mehr Verantwortung übernehmen)."
+        },
+        {
+          "index": 5,
+          "text": "تسعى المتقدمة إلى وظيفة في إدارة المشاريع.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تسعى إلى وظيفة في إدارة المشاريع (eine Stelle im Projektmanagement)."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T06",
+      "text": "أكمل بالألمانية:\n\n1. Ein berufliches Ziel müsse ______ formuliert werden.\n2. Der Lebenslauf solle wichtige Aufgaben und ______ nennen.\n3. Die Teilnehmerin habe ein kleines Team ______.\n4. Das Beispiel zeige ihre ______.\n5. Ein Anschreiben könne die ______ kurz erläutern.",
+      "finding": "خمس جمل ألمانية تتحقق من الكلمات المحورية في نص الاستماع.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Ein berufliches Ziel müsse ______ formuliert werden.",
+          "answer": "konkret",
+          "finding": "الصفة الظرفية قبل formuliert werden في نص الاستماع هي konkret."
+        },
+        {
+          "index": 2,
+          "text": "Der Lebenslauf solle wichtige Aufgaben und ______ nennen.",
+          "answer": "Ergebnisse",
+          "finding": "الاسم المعطوف على Aufgaben في نص الاستماع هو Ergebnisse."
+        },
+        {
+          "index": 3,
+          "text": "Die Teilnehmerin habe ein kleines Team ______.",
+          "answer": "koordiniert",
+          "finding": "اسم المفعول في نهاية الجملة المنقولة عن المشاركة هو koordiniert."
+        },
+        {
+          "index": 4,
+          "text": "Das Beispiel zeige ihre ______.",
+          "answer": "Organisationsfähigkeit",
+          "finding": "المهارة التي يظهرها المثال بحسب المدرب هي Organisationsfähigkeit."
+        },
+        {
+          "index": 5,
+          "text": "Ein Anschreiben könne die ______ kurz erläutern.",
+          "answer": "Motivation",
+          "finding": "المفعول الذي تشرحه رسالة التقديم بإيجاز هو Motivation."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T07",
+      "text": "حوّل الجمل بين القوسين إلى Konjunktiv I:\n\n1. Die Beraterin sagt: „Der Werdegang ist interessant.“ → Die Beraterin sagt, der Werdegang ______ interessant. (sein)\n2. Der Coach sagt: „Die Bewerberin kann die Aufgabe übernehmen.“ → Der Coach sagt, sie ______ die Aufgabe übernehmen. (können)\n3. Der Mentor sagt: „Das Anschreiben hilft.“ → Der Mentor sagt, das Anschreiben ______. (helfen)\n4. Die Beraterin erklärt: „Der Lebenslauf ist klar.“ → Die Beraterin erklärt, dass der Lebenslauf klar ______. (sein)",
+      "finding": "أربع جمل تدرب التحويل إلى Konjunktiv I معhelfe وترتيب الفعل مع dass ومن دونه.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Beraterin sagt: „Der Werdegang ist interessant.“ → Die Beraterin sagt, der Werdegang ______ interessant. (sein)",
+          "answer": "sei",
+          "finding": "تحويل ist إلى sei في الموضع الثاني من الجملة المنقولة."
+        },
+        {
+          "index": 2,
+          "text": "Der Coach sagt: „Die Bewerberin kann die Aufgabe übernehmen.“ → Der Coach sagt, sie ______ die Aufgabe übernehmen. (können)",
+          "answer": "könne",
+          "finding": "تحويل kann إلى könne في الموضع الثاني مع بقاء المصدر übernehmen في النهاية."
+        },
+        {
+          "index": 3,
+          "text": "Der Mentor sagt: „Das Anschreiben hilft.“ → Der Mentor sagt, das Anschreiben ______. (helfen)",
+          "answer": "helfe",
+          "finding": "تحويل hilft إلى helfe بحذف -n من المصدر helfen دون تغير حركة الجذر."
+        },
+        {
+          "index": 4,
+          "text": "Die Beraterin erklärt: „Der Lebenslauf ist klar.“ → Die Beraterin erklärt, dass der Lebenslauf klar ______. (sein)",
+          "answer": "sei",
+          "finding": "تحويل ist إلى sei مع وضعها في نهاية الجملة التابعة بعد الرابط dass."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-T08",
+      "text": "ينقسم هذا التدريب العملي إلى مهمتين متكاملتين للتعلّم الذاتي:\n\n1. **المهمة الأولى (P01 — كتابة فقط):** اكتب ملخصًا مهنيًا من أربع إلى ست جمل ألمانية عن محادثة خيالية مع مستشار مهني. انسب أربعة أقوال أو معلومات على الأقل إلى أصحابها، واستخدم شكلين مناسبين على الأقل من **Konjunktiv I** مثل **sei** أو **habe** أو **könne** أو **wolle** (أو بديل **Konjunktiv II** مثل **hätten** عند تطابق صيغة الجمع مع المضارع وعند الحاجة إلى التوضيح). ميّز بوضوح بين الكلام المنقول وما تؤكده بنفسك، ولا تعرض الرأي أو الخطة كحقيقة مؤكدة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل صوتي.\n2. **المهمة الثانية (P02 — كتابة + قراءة جهرية ذاتية استنادًا إلى T06):** استنادًا إلى نص الاستماع المكتوب في `T06`، اكتب إحاطة مهنية من أربع إلى ست جمل لزميل ثم اقرأها بصوت واضح. انسب نصيحتي المدرّب بشأن الهدف والسيرة الذاتية، ومعلومة المشاركة عن تنسيق الفريق، ومعلومة المدرّب عن دور رسالة التقديم، واستخدم شكلين مناسبين على الأقل من **Konjunktiv I** مثل **müsse** أو **solle** أو **habe** أو **könne**. اختم بخطوة تالية مناسبة للمتقدمة، وافصل بوضوح بين ما ورد في النص وما تقترحه أنت. لا تحتاج إلى تشغيل ملف MP3؛ اكتب النص ثم اقرأه بصوت واضح؛ لا يلزم تسجيل.",
+      "finding": "مهمتا التمرين 8 مفصلتان إلى P01 كتابة فقط (5 جمل، 580 حرفًا) وP02 كتابة وجهر (5 جمل، 553 حرفًا).",
+      "sourceIds": [
+        "INDIR",
+        "KONJ",
+        "ANFORDERUNGSPROFIL",
+        "ZUSTAENDIGKEIT"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Beraterin erklärt, meine Bewerbung sei klar strukturiert und passe gut zum Anforderungsprofil der Stelle.",
+          "answer": "Die Beraterin erklärt, meine Bewerbung sei klar strukturiert und passe gut zum Anforderungsprofil der Stelle.",
+          "finding": "الجملة الأولى في P01 تنسب إلى المستشارة بصيغتي sei وpasse وضوح الطلب وملاءمته لملف المتطلبات."
+        },
+        {
+          "index": 2,
+          "text": "Sie fügt hinzu, ich habe viel Berufserfahrung in der Kundenbetreuung, solle aber im Lebenslauf zwei konkrete Projektergebnisse ergänzen.",
+          "answer": "Sie fügt hinzu, ich habe viel Berufserfahrung in der Kundenbetreuung, solle aber im Lebenslauf zwei konkrete Projektergebnisse ergänzen.",
+          "finding": "الجملة الثانية تنسب إلى المستشارة بصيغتي habe وsolle خبرة خدمة العملاء والحاجة إلى إضافة نتيجتين محددتين."
+        },
+        {
+          "index": 3,
+          "text": "Der Coach meint, ein kurzes Anschreiben könne meinen Wechselwunsch verständlich erläutern.",
+          "answer": "Der Coach meint, ein kurzes Anschreiben könne meinen Wechselwunsch verständlich erläutern.",
+          "finding": "الجملة الثالثة تنسب إلى المدرب بصيغة könne دور رسالة التقديم في شرح الرغبة في التغيير."
+        },
+        {
+          "index": 4,
+          "text": "Die Kolleginnen sagen außerdem, sie hätten mit einer klaren Übersicht über ihre Zuständigkeiten gute Erfahrungen gemacht.",
+          "answer": "Die Kolleginnen sagen außerdem, sie hätten mit einer klaren Übersicht über ihre Zuständigkeiten gute Erfahrungen gemacht.",
+          "finding": "الجملة الرابعة تنسب إلى الزميلات بصيغة البديل hätten خبرتهن الإيجابية في عرض المسؤوليات بوضوح."
+        },
+        {
+          "index": 5,
+          "text": "Aus meiner Sicht ist dieser Hinweis sehr hilfreich, deshalb überarbeite ich heute meinen Lebenslauf Schritt für Schritt.",
+          "answer": "Aus meiner Sicht ist dieser Hinweis sehr hilfreich, deshalb überarbeite ich heute meinen Lebenslauf Schritt für Schritt.",
+          "finding": "الجملة الخامسة تفصل رأي المتعلم وخطته الذاتية بصيغة المضارع المؤكد (ist … überarbeite)."
+        },
+        {
+          "index": 6,
+          "text": "Laut dem Coach im Seminar müsse ein berufliches Ziel konkret formuliert werden.",
+          "answer": "Laut dem Coach im Seminar müsse ein berufliches Ziel konkret formuliert werden.",
+          "finding": "الجملة الأولى في P02 تنسب إلى المدرب بصيغة müsse وجوب صياغة الهدف المهني بصورة محددة."
+        },
+        {
+          "index": 7,
+          "text": "Er erklärt außerdem, der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen.",
+          "answer": "Er erklärt außerdem, der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen.",
+          "finding": "الجملة الثانية تنسب إلى المدرب بصيغة solle ضرورة ذكر المهام والنتائج المهمة في السيرة الذاتية."
+        },
+        {
+          "index": 8,
+          "text": "Eine Teilnehmerin berichtet, sie habe im letzten Jahr ein kleines Team koordiniert, und laut dem Coach zeige dieses Beispiel ihre Organisationsfähigkeit.",
+          "answer": "Eine Teilnehmerin berichtet, sie habe im letzten Jahr ein kleines Team koordiniert, und laut dem Coach zeige dieses Beispiel ihre Organisationsfähigkeit.",
+          "finding": "الجملة الثالثة تنسب إلى المشاركة خبرة تنسيق الفريق بصيغة habe … koordiniert وإلى المدرب دلالتها بصيغة zeige."
+        },
+        {
+          "index": 9,
+          "text": "Schließlich fügt der Coach hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+          "answer": "Schließlich fügt der Coach hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+          "finding": "الجملة الرابعة تنسب إلى المدرب بصيغة könne دور رسالة التقديم في شرح الدافع بإيجاز."
+        },
+        {
+          "index": 10,
+          "text": "Ich empfehle der Bewerberin als nächsten Schritt, zwei konkrete Projektergebnisse im Lebenslauf zu ergänzen und das Anschreiben kurz zu überarbeiten.",
+          "answer": "Ich empfehle der Bewerberin als nächsten Schritt, zwei konkrete Projektergebnisse im Lebenslauf zu ergänzen und das Anschreiben kurz zu überarbeiten.",
+          "finding": "الجملة الخامسة تقدم توصية المتعلم المباشرة بصيغة المؤكد (Ich empfehle …) كخطوة تالية مفصولة عن النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q01",
+      "text": "اختر صيغة Konjunktiv I المناسبة: Die Führungskraft erklärt, die Bewerberin ___ das Projekt leiten.",
+      "finding": "صيغة الغائب المفرد من können في Konjunktiv I هي könne؛ وتُستخدم هنا لنقل كلام المسؤولة عن المتقدمة.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "options": [
+        "kann",
+        "könne",
+        "können"
+      ],
+      "answer": "könne",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-02-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "kann",
+          "correct": false,
+          "finding": "kann صيغة مضارع مرفوع (Indikativ) لا صيغة نقل بـKonjunktiv I."
+        },
+        {
+          "index": 1,
+          "text": "könne",
+          "correct": true,
+          "finding": "könne هي صيغة الغائب المفرد الصحيحة في Konjunktiv I لنقل قول المسؤولة."
+        },
+        {
+          "index": 2,
+          "text": "können",
+          "correct": false,
+          "finding": "können صيغة مصدر أو جمع لا تطابق الفاعل المفرد die Bewerberin."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q02",
+      "text": "حوّل الاقتباس إلى كلام منقول: Der Coach sagt: „Das Anschreiben ist wichtig.“",
+      "finding": "نستخدم sei لنقل ist بصيغة Konjunktiv I: Der Coach sagt, das Anschreiben sei wichtig.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "options": [
+        "Der Coach sagt, das Anschreiben ist wichtig.",
+        "Der Coach sagt, das Anschreiben habe wichtig.",
+        "Der Coach sagt, das Anschreiben sei wichtig."
+      ],
+      "answer": "Der Coach sagt, das Anschreiben sei wichtig.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B2-02-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Der Coach sagt, das Anschreiben ist wichtig.",
+          "correct": false,
+          "finding": "ist تبقي الجملة في المضارع المرفوع ولا تحقق صيغة Konjunktiv I المطلوبة."
+        },
+        {
+          "index": 1,
+          "text": "Der Coach sagt, das Anschreiben habe wichtig.",
+          "correct": false,
+          "finding": "habe من الفعل haben ولا تصلح خبرًا للصفة wichtig."
+        },
+        {
+          "index": 2,
+          "text": "Der Coach sagt, das Anschreiben sei wichtig.",
+          "correct": true,
+          "finding": "Der Coach sagt, das Anschreiben sei wichtig تحول ist إلى sei بصورة صحيحة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q03",
+      "text": "أكمل بصيغة الفعل المناسبة: Die Beraterin erklärt, die Bewerberin ___ künftig mehr Verantwortung übernehmen. (wollen)",
+      "finding": "صيغة الغائب المفرد من wollen في Konjunktiv I هي wolle؛ ويأتي المصدر übernehmen في نهاية العبارة.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "options": [
+        "will",
+        "wolle",
+        "wollen"
+      ],
+      "answer": "wolle",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-02-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "will",
+          "correct": false,
+          "finding": "will صيغة المضارع المرفوع لا Konjunktiv I."
+        },
+        {
+          "index": 1,
+          "text": "wolle",
+          "correct": true,
+          "finding": "wolle هي صيغة الغائب المفرد الصحيحة في Konjunktiv I من الفعل wollen."
+        },
+        {
+          "index": 2,
+          "text": "wollen",
+          "correct": false,
+          "finding": "wollen صيغة جمع أو مصدر لا تطابق الفاعل المفرد die Bewerberin."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q04",
+      "text": "ما نوع الجملة **Der Coach sagt, das Profil passe zur Stelle.**؟",
+      "finding": "الجملة تنقل كلام المدرّب من دون اقتباس مباشر؛ وتظهر صيغة passe من Konjunktiv I.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "options": [
+        "كلام مباشر بين علامتي اقتباس",
+        "كلام منقول",
+        "جملة استفهامية"
+      ],
+      "answer": "كلام منقول",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-02-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "كلام مباشر بين علامتي اقتباس",
+          "correct": false,
+          "finding": "الجملة تخلو من علامتي الاقتباس ولا تورد لفظ المتحدث حرفيًا."
+        },
+        {
+          "index": 1,
+          "text": "كلام منقول",
+          "correct": true,
+          "finding": "كلام منقول؛ لغياب علامتي الاقتباس ومجيء الفعل بصيغة passe في Konjunktiv I."
+        },
+        {
+          "index": 2,
+          "text": "جملة استفهامية",
+          "correct": false,
+          "finding": "الجملة خبرية منقولة مختومة بنقطة وليست استفهامية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q05",
+      "text": "كم تبلغ خبرة المتقدمة في خدمة العملاء بحسب محضر الاستشارة؟",
+      "finding": "يذكر المحضر أن المتقدمة لديها عدة سنوات من الخبرة في خدمة العملاء: mehrere Jahre Erfahrung im Kundenservice.",
+      "sourceIds": [],
+      "options": [
+        "عدة أشهر",
+        "عدة سنوات",
+        "عشر سنوات بالضبط"
+      ],
+      "answer": "عدة سنوات",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-02-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "عدة أشهر",
+          "correct": false,
+          "finding": "النص لا يذكر عدة أشهر بل عدة سنوات."
+        },
+        {
+          "index": 1,
+          "text": "عدة سنوات",
+          "correct": true,
+          "finding": "ينص المحضر على mehrere Jahre Erfahrung im Kundenservice (عدة سنوات)."
+        },
+        {
+          "index": 2,
+          "text": "عشر سنوات بالضبط",
+          "correct": false,
+          "finding": "النص لا يحدد عشر سنوات بالضبط."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q06",
+      "text": "ما الذي تستطيع المتقدمة وصفه بمزيد من الدقة وفق المحضر؟",
+      "finding": "تستطيع المتقدمة أن تصف مسؤولياتها في المشروع الأخير بصورة أدق: ihre Zuständigkeiten im letzten Projekt genauer beschreiben.",
+      "sourceIds": [
+        "ZUSTAENDIGKEIT"
+      ],
+      "options": [
+        "هواياتها في عطلة نهاية الأسبوع",
+        "مسؤولياتها في المشروع الأخير",
+        "راتبها في وظيفتها القادمة"
+      ],
+      "answer": "مسؤولياتها في المشروع الأخير",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-02-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "هواياتها في عطلة نهاية الأسبوع",
+          "correct": false,
+          "finding": "الهوايات في عطلة نهاية الأسبوع غير مذكورة في المحضر."
+        },
+        {
+          "index": 1,
+          "text": "مسؤولياتها في المشروع الأخير",
+          "correct": true,
+          "finding": "ينص المحضر على قدرتها على وصف مسؤولياتها في المشروع الأخير بدقة أكبر (ihre Zuständigkeiten im letzten Projekt)."
+        },
+        {
+          "index": 2,
+          "text": "راتبها في وظيفتها القادمة",
+          "correct": false,
+          "finding": "الراتب في الوظيفة القادمة غير مذكور في المحضر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q07",
+      "text": "ما الذي ينبغي صياغته بصورة محددة بحسب المدرّب في نص الاستماع؟",
+      "finding": "يقول المدرّب إن الهدف المهني يجب أن يصاغ بصورة محددة: ein berufliches Ziel müsse konkret formuliert werden. يمكن الإجابة من النص المكتوب دون تشغيل MP3.",
+      "sourceIds": [],
+      "options": [
+        "الهدف المهني",
+        "عنوان السيرة الذاتية فقط",
+        "موعد المقابلة"
+      ],
+      "answer": "الهدف المهني",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-02-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "الهدف المهني",
+          "correct": true,
+          "finding": "ينص الاستماع على أن الهدف المهني (ein berufliches Ziel) يجب أن يصاغ بصورة محددة."
+        },
+        {
+          "index": 1,
+          "text": "عنوان السيرة الذاتية فقط",
+          "correct": false,
+          "finding": "عنوان السيرة الذاتية وحده غير مذكور في النص."
+        },
+        {
+          "index": 2,
+          "text": "موعد المقابلة",
+          "correct": false,
+          "finding": "موعد المقابلة غير مذكور في النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q08",
+      "text": "ماذا فعلت إحدى المشاركات في العام الماضي بحسب النص؟",
+      "finding": "تقول المشاركة إنها نسّقت فريقًا صغيرًا في العام الماضي: sie habe im letzten Jahr ein kleines Team koordiniert. لا يلزم تشغيل ملف صوتي للإجابة.",
+      "sourceIds": [],
+      "options": [
+        "نسّقت فريقًا صغيرًا",
+        "كتبت إعلان وظيفة",
+        "تولت منصبًا إداريًا جديدًا"
+      ],
+      "answer": "نسّقت فريقًا صغيرًا",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-02-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "نسّقت فريقًا صغيرًا",
+          "correct": true,
+          "finding": "ينص الاستماع على أنها نسقت فريقًا صغيرًا في العام الماضي (ein kleines Team koordiniert)."
+        },
+        {
+          "index": 1,
+          "text": "كتبت إعلان وظيفة",
+          "correct": false,
+          "finding": "كتابة إعلان وظيفة غير مذكورة في النص."
+        },
+        {
+          "index": 2,
+          "text": "تولت منصبًا إداريًا جديدًا",
+          "correct": false,
+          "finding": "تولي منصب إداري جديد غير مذكور في النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q09",
+      "text": "أكمل التحويل إلى كلام منقول: Der Mentor sagt: „Das Anschreiben hilft.“ → Der Mentor sagt, das Anschreiben ___.",
+      "finding": "صيغة الغائب المفرد من helfen في Konjunktiv I هي helfe، ولذلك نقول: Der Mentor sagt, das Anschreiben helfe.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "options": [
+        "hilft",
+        "helfe",
+        "helfen"
+      ],
+      "answer": "helfe",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B2-02-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "hilft",
+          "correct": false,
+          "finding": "hilft صيغة المضارع المرفوع لا Konjunktiv I."
+        },
+        {
+          "index": 1,
+          "text": "helfe",
+          "correct": true,
+          "finding": "helfe هي صيغة الغائب المفرد الصحيحة في Konjunktiv I من الفعل helfen."
+        },
+        {
+          "index": 2,
+          "text": "helfen",
+          "correct": false,
+          "finding": "helfen صيغة مصدر أو جمع لا تطابق الفاعل المفرد das Anschreiben."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-Q10",
+      "text": "قال الزملاء: **„Wir haben klare Ziele.“** أي جملة تميّز الكلام المنقول بوضوح عندما تتطابق صيغة **Konjunktiv I** في الجمع مع المضارع؟",
+      "finding": "صيغة الجمع haben في Konjunktiv I تطابق المضارع، لذلك يمكن استعمال Konjunktiv II هنا للتوضيح: sie hätten klare Ziele.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "options": [
+        "Sie sagen, sie hätten klare Ziele.",
+        "Sie sagen, sie haben klare Ziele.",
+        "Sie sagen, sie hätt klare Ziele."
+      ],
+      "answer": "Sie sagen, sie hätten klare Ziele.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B2-02-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Sie sagen, sie hätten klare Ziele.",
+          "correct": true,
+          "finding": "Sie sagen, sie hätten klare Ziele تميز الكلام المنقول باستعمال Konjunktiv II لأن sie haben تطابق المضارع."
+        },
+        {
+          "index": 1,
+          "text": "Sie sagen, sie haben klare Ziele.",
+          "correct": false,
+          "finding": "Sie sagen, sie haben klare Ziele تطابق المضارع المرفوع فلا يظهر فيها تمييز الصيغة."
+        },
+        {
+          "index": 2,
+          "text": "Sie sagen, sie hätt klare Ziele.",
+          "correct": false,
+          "finding": "hätt صيغة غير قياسية ناقصة التصريف مع الفاعل الجمع sie."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-P01",
+      "text": "اكتب ملخصًا مهنيًا من أربع إلى ست جمل ألمانية عن محادثة خيالية مع مستشار مهني. انسب أربعة أقوال أو معلومات على الأقل إلى أصحابها، واستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل sei أو habe أو könne أو wolle (أو بديل Konjunktiv II مثل hätten عند تطابق صيغة الجمع مع المضارع وعند الحاجة إلى التوضيح). ميّز بوضوح بين الكلام المنقول وما تؤكده بنفسك، ولا تعرض الرأي أو الخطة كحقيقة مؤكدة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل صوتي.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة فقط دون جهر.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "criteria": {
+        "taskCompletion": "ملخص مهني مكتوب من أربع إلى ست جمل ألمانية عن محادثة مهنية، يتضمن أربعة أقوال أو معلومات منسوبة على الأقل.",
+        "meaningClarity": "تظهر بوضوح هوية مصدر الأقوال، ويُفصل الكلام المنقول عن المعلومة التي يؤكدها الكاتب بنفسه؛ ولا تُعرض الآراء أو الخطط كحقائق مؤكدة.",
+        "targetSkill": "يستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل sei/habe/könne/wolle، مع تصريف وترتيب فعل مناسبين، وعند تطابق صيغة الجمع مع المضارع يستعمل Konjunktiv II مثل hätten لإزالة الالتباس عند الحاجة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-B2-02-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ملخص مهني مكتوب من أربع إلى ست جمل ألمانية عن محادثة مهنية، يتضمن أربعة أقوال أو معلومات منسوبة على الأقل.",
+          "finding": "يتحقق من ملخص مكتوب من أربع إلى ست جمل يتضمن أربعة أقوال أو معلومات منسوبة؛ الحد 160 حرفًا والنموذج 580 حرفًا (كتابة فقط)."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تظهر بوضوح هوية مصدر الأقوال، ويُفصل الكلام المنقول عن المعلومة التي يؤكدها الكاتب بنفسه؛ ولا تُعرض الآراء أو الخطط كحقائق مؤكدة.",
+          "finding": "يضمن وضوح هوية المصدر وفصل الكلام المنقول عن رأي الكاتب أو خطته المؤكدة."
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل sei/habe/könne/wolle، مع تصريف وترتيب فعل مناسبين، وعند تطابق صيغة الجمع مع المضارع يستعمل Konjunktiv II مثل hätten لإزالة الالتباس عند الحاجة.",
+          "finding": "يركز على استخدام صيغتين مناسبتين على الأقل من Konjunktiv I (مع بديل Konjunktiv II مثل hätten عند التطابق في الجمع)."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-P02",
+      "text": "استنادًا إلى نص الاستماع المكتوب في `T06`، اكتب إحاطة مهنية من أربع إلى ست جمل لزميل ثم اقرأها بصوت واضح. انسب نصيحتي المدرّب بشأن الهدف والسيرة الذاتية، ومعلومة المشاركة عن تنسيق الفريق، ومعلومة المدرّب عن دور رسالة التقديم، واستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل müsse أو solle أو habe أو könne. اختم بخطوة تالية مناسبة للمتقدمة، وافصل بوضوح بين ما ورد في النص وما تقترحه أنت. لا تحتاج إلى تشغيل ملف MP3؛ اكتب النص ثم اقرأه بصوت واضح؛ لا يلزم تسجيل.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة وجهر مع الاستناد إلى T06 وروابط T06/T08.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "criteria": {
+        "taskCompletion": "إحاطة من أربع إلى ست جمل تنقل نصيحتي المدرّب بشأن الهدف والسيرة الذاتية، ومعلومة المشاركة عن تنسيق فريق صغير، ومعلومة المدرّب عن رسالة التقديم، وتقترح خطوة تالية للمتقدمة.",
+        "meaningClarity": "تُنسب النصائح والمعلومات الأربع إلى أصحابها، وتُفصل الخطوة المقترحة بوضوح عن المعلومات الواردة في نص الاستماع.",
+        "targetSkill": "يستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل müsse/solle/habe/könne، مع تصريف وترتيب مناسبين، ويقرأ المتعلم النص بصوت واضح دون تسجيل."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-B2-02-T06",
+        "DL-B2-02-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "إحاطة من أربع إلى ست جمل تنقل نصيحتي المدرّب بشأن الهدف والسيرة الذاتية، ومعلومة المشاركة عن تنسيق فريق صغير، ومعلومة المدرّب عن رسالة التقديم، وتقترح خطوة تالية للمتقدمة.",
+          "finding": "يتحقق من إحاطة من أربع إلى ست جمل تنقل النقاط الأربع في T06 وتقترح خطوة تالية؛ الحد 180 حرفًا والنموذج 553 حرفًا مع الجهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تُنسب النصائح والمعلومات الأربع إلى أصحابها، وتُفصل الخطوة المقترحة بوضوح عن المعلومات الواردة في نص الاستماع.",
+          "finding": "يضمن نسبة النصائح والمعلومات إلى أصحابها وفصل الخطوة المقترحة عن نص الاستماع."
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل müsse/solle/habe/könne، مع تصريف وترتيب مناسبين، ويقرأ المتعلم النص بصوت واضح دون تسجيل.",
+          "finding": "يركز على استخدام صيغتين مناسبتين على الأقل من Konjunktiv I مع القراءة الجهرية الذاتية دون تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "counseling-model-01",
+      "text": "Die Beraterin erklärt, meine Bewerbung sei klar strukturiert und passe gut zum Anforderungsprofil der Stelle.\nSie fügt hinzu, ich habe viel Berufserfahrung in der Kundenbetreuung, solle aber im Lebenslauf zwei konkrete Projektergebnisse ergänzen.\nDer Coach meint, ein kurzes Anschreiben könne meinen Wechselwunsch verständlich erläutern.\nDie Kolleginnen sagen außerdem, sie hätten mit einer klaren Übersicht über ihre Zuständigkeiten gute Erfahrungen gemacht.\nAus meiner Sicht ist dieser Hinweis sehr hilfreich, deshalb überarbeite ich heute meinen Lebenslauf Schritt für Schritt.",
+      "finding": "نموذج مكتوب: 580 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Beraterin erklärt, meine Bewerbung sei klar strukturiert und passe gut zum Anforderungsprofil der Stelle.",
+          "finding": "الجملة الأولى في P01 تنسب إلى المستشارة بصيغتي sei وpasse وضوح الطلب وملاءمته لملف المتطلبات."
+        },
+        {
+          "index": 2,
+          "text": "Sie fügt hinzu, ich habe viel Berufserfahrung in der Kundenbetreuung, solle aber im Lebenslauf zwei konkrete Projektergebnisse ergänzen.",
+          "finding": "الجملة الثانية تنسب إلى المستشارة بصيغتي habe وsolle خبرة خدمة العملاء والحاجة إلى إضافة نتيجتين محددتين."
+        },
+        {
+          "index": 3,
+          "text": "Der Coach meint, ein kurzes Anschreiben könne meinen Wechselwunsch verständlich erläutern.",
+          "finding": "الجملة الثالثة تنسب إلى المدرب بصيغة könne دور رسالة التقديم في شرح الرغبة في التغيير."
+        },
+        {
+          "index": 4,
+          "text": "Die Kolleginnen sagen außerdem, sie hätten mit einer klaren Übersicht über ihre Zuständigkeiten gute Erfahrungen gemacht.",
+          "finding": "الجملة الرابعة تنسب إلى الزميلات بصيغة البديل hätten خبرتهن الإيجابية في عرض المسؤوليات بوضوح."
+        },
+        {
+          "index": 5,
+          "text": "Aus meiner Sicht ist dieser Hinweis sehr hilfreich, deshalb überarbeite ich heute meinen Lebenslauf Schritt für Schritt.",
+          "finding": "الجملة الخامسة تفصل رأي المتعلم وخطته الذاتية بصيغة المضارع المؤكد (ist … überarbeite)."
+        }
+      ]
+    },
+    {
+      "id": "seminar-briefing-model-01",
+      "text": "Laut dem Coach im Seminar müsse ein berufliches Ziel konkret formuliert werden.\nEr erklärt außerdem, der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen.\nEine Teilnehmerin berichtet, sie habe im letzten Jahr ein kleines Team koordiniert, und laut dem Coach zeige dieses Beispiel ihre Organisationsfähigkeit.\nSchließlich fügt der Coach hinzu, ein Anschreiben könne die Motivation kurz erläutern.\nIch empfehle der Bewerberin als nächsten Schritt, zwei konkrete Projektergebnisse im Lebenslauf zu ergänzen und das Anschreiben kurz zu überarbeiten.",
+      "finding": "نموذج مكتوب: 553 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Laut dem Coach im Seminar müsse ein berufliches Ziel konkret formuliert werden.",
+          "finding": "الجملة الأولى في P02 تنسب إلى المدرب بصيغة müsse وجوب صياغة الهدف المهني بصورة محددة."
+        },
+        {
+          "index": 2,
+          "text": "Er erklärt außerdem, der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen.",
+          "finding": "الجملة الثانية تنسب إلى المدرب بصيغة solle ضرورة ذكر المهام والنتائج المهمة في السيرة الذاتية."
+        },
+        {
+          "index": 3,
+          "text": "Eine Teilnehmerin berichtet, sie habe im letzten Jahr ein kleines Team koordiniert, und laut dem Coach zeige dieses Beispiel ihre Organisationsfähigkeit.",
+          "finding": "الجملة الثالثة تنسب إلى المشاركة خبرة تنسيق الفريق بصيغة habe … koordiniert وإلى المدرب دلالتها بصيغة zeige."
+        },
+        {
+          "index": 4,
+          "text": "Schließlich fügt der Coach hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+          "finding": "الجملة الرابعة تنسب إلى المدرب بصيغة könne دور رسالة التقديم في شرح الدافع بإيجاز."
+        },
+        {
+          "index": 5,
+          "text": "Ich empfehle der Bewerberin als nächsten Schritt, zwei konkrete Projektergebnisse im Lebenslauf zu ergänzen und das Anschreiben kurz zu überarbeiten.",
+          "finding": "الجملة الخامسة تقدم توصية المتعلم المباشرة بصيغة المؤكد (Ich empfehle …) كخطوة تالية مفصولة عن النص."
+        }
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Die Beraterin sagt, der Lebenslauf sei klar strukturiert.** → تقول المستشارة إن السيرة الذاتية منظّمة بوضوح.",
+      "finding": "نموذج كلام منقول بـsei في الموضع الثاني بعد فعل القول.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Die Bewerberin habe mehrere Jahre Erfahrung.** → يُقال إن المتقدمة لديها عدة سنوات من الخبرة.",
+      "finding": "نموذج كلام منقول بـhabe لنقل الخبرة المهنية.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Konjunktiv I** → صيغة شائعة لنقل كلام الآخرين في التقارير.",
+      "finding": "تثبيت الوظيفة الاصطلاحية لـKonjunktiv I في نقل كلام الآخرين في التقارير.",
+      "sourceIds": [
+        "INDIR",
+        "KONJ"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **das Anforderungsprofil** → ملف متطلبات الوظيفة.",
+      "finding": "مراجعة المفردة المحورية das Anforderungsprofil (ملف متطلبات الوظيفة).",
+      "sourceIds": [
+        "ANFORDERUNGSPROFIL"
+      ]
+    },
+    {
+      "id": "DL-B2-02-AUD-PHR-01",
+      "text": "Der Berufsweg, die Berufswege. Der Werdegang, die Werdegänge. Die Qualifikation, die Qualifikationen. Die Berufserfahrung. Das Anforderungsprofil, die Anforderungsprofile. Die Stellenausschreibung, die Stellenausschreibungen. Die Führungskraft, die Führungskräfte. Die Weiterentwicklung, die Weiterentwicklungen. Die Zuständigkeit, die Zuständigkeiten. Die Empfehlung, die Empfehlungen. Anstreben, strebt an. Sich beruflich orientieren, orientiert sich. Vereinbaren, vereinbart. Übernehmen, übernimmt. Strukturiert. Ausführlich.",
+      "finding": "مطابقة نصية فقط؛ 16 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Der Berufsweg, die Berufswege.",
+          "finding": "Berufsweg مذكر وجمعه Berufswege؛ المسار المهني."
+        },
+        {
+          "index": 2,
+          "text": "Der Werdegang, die Werdegänge.",
+          "finding": "Werdegang مذكر وجمعه النادر Werdegänge؛ السيرة أو المسيرة المهنية والتعليمية."
+        },
+        {
+          "index": 3,
+          "text": "Die Qualifikation, die Qualifikationen.",
+          "finding": "Qualifikation مؤنث وجمعها Qualifikationen؛ المؤهل أو الكفاءة المهنية."
+        },
+        {
+          "index": 4,
+          "text": "Die Berufserfahrung.",
+          "finding": "Berufserfahrung مؤنث وتُستعمل هنا بلا جمع؛ الخبرة المهنية."
+        },
+        {
+          "index": 5,
+          "text": "Das Anforderungsprofil, die Anforderungsprofile.",
+          "finding": "Anforderungsprofil محايد وجمعه Anforderungsprofile؛ ملف متطلبات الوظيفة."
+        },
+        {
+          "index": 6,
+          "text": "Die Stellenausschreibung, die Stellenausschreibungen.",
+          "finding": "Stellenausschreibung مؤنث وجمعها Stellenausschreibungen؛ إعلان الوظيفة الشاغرة."
+        },
+        {
+          "index": 7,
+          "text": "Die Führungskraft, die Führungskräfte.",
+          "finding": "Führungskraft مؤنث وجمعها Führungskräfte؛ مسؤول إداري أو قائد فريق."
+        },
+        {
+          "index": 8,
+          "text": "Die Weiterentwicklung, die Weiterentwicklungen.",
+          "finding": "Weiterentwicklung مؤنث وجمعها Weiterentwicklungen؛ التطور المهني."
+        },
+        {
+          "index": 9,
+          "text": "Die Zuständigkeit, die Zuständigkeiten.",
+          "finding": "Zuständigkeit مؤنث وجمعها Zuständigkeiten؛ مجال المسؤولية أو الاختصاص."
+        },
+        {
+          "index": 10,
+          "text": "Die Empfehlung, die Empfehlungen.",
+          "finding": "Empfehlung مؤنث وجمعها Empfehlungen؛ التوصية أو النصيحة."
+        },
+        {
+          "index": 11,
+          "text": "Anstreben, strebt an.",
+          "finding": "anstreben فعل ضعيف منفصل حاضرُه strebt an؛ يسعى إلى منصب أو هدف."
+        },
+        {
+          "index": 12,
+          "text": "Sich beruflich orientieren, orientiert sich.",
+          "finding": "sich beruflich orientieren فعل انعكاسي حاضرُه orientiert sich؛ يحدد توجهه المهني."
+        },
+        {
+          "index": 13,
+          "text": "Vereinbaren, vereinbart.",
+          "finding": "vereinbaren فعل ضعيف غير منفصل حاضرُه vereinbart؛ يتفق على أو ينسق."
+        },
+        {
+          "index": 14,
+          "text": "Übernehmen, übernimmt.",
+          "finding": "übernehmen فعل قوي غير منفصل حاضرُه übernimmt؛ يتولى مهمة أو مسؤولية."
+        },
+        {
+          "index": 15,
+          "text": "Strukturiert.",
+          "finding": "strukturiert صفة بمعنى منظم أو واضح البنية."
+        },
+        {
+          "index": 16,
+          "text": "Ausführlich.",
+          "finding": "ausführlich صفة بمعنى مفصل أو وافٍ."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-AUD-MODEL-01",
+      "text": "Der Coach sagt: „Der Lebenslauf ist klar strukturiert.“ Der Coach sagt, der Lebenslauf sei klar strukturiert. Die Beraterin sagt: „Die Bewerberin kann das Projekt leiten.“ Die Beraterin sagt, die Bewerberin könne das Projekt leiten. Der Mentor sagt: „Die Berufserfahrung hilft.“ Der Mentor sagt, die Berufserfahrung helfe. Der Coach sagt, der Lebenslauf sei klar. Der Coach sagt, dass der Lebenslauf klar sei. Sie sagen: „Wir haben klare Ziele.“ Sie sagen, sie hätten klare Ziele.",
+      "finding": "مطابقة نصية فقط؛ 10 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Der Coach sagt: „Der Lebenslauf ist klar strukturiert.“",
+          "finding": "Der Coach sagt: „Der Lebenslauf ist klar strukturiert.“: قول مباشر بين علامتي اقتباس במضارع Indikativ (ist)."
+        },
+        {
+          "index": 2,
+          "text": "Der Coach sagt, der Lebenslauf sei klar strukturiert.",
+          "finding": "Der Coach sagt, der Lebenslauf sei klar strukturiert: نقل غير مباشر من دون dass، فجاء الفعل sei في الموضع الثاني."
+        },
+        {
+          "index": 3,
+          "text": "Die Beraterin sagt: „Die Bewerberin kann das Projekt leiten.“",
+          "finding": "Die Beraterin sagt: „Die Bewerberin kann das Projekt leiten.“: قول مباشر بالفعل الناقص المرفوع kann."
+        },
+        {
+          "index": 4,
+          "text": "Die Beraterin sagt, die Bewerberin könne das Projekt leiten.",
+          "finding": "Die Beraterin sagt, die Bewerberin könne das Projekt leiten: نقل بـKonjunktiv I (könne) في الموضع الثاني والمصدر leiten في النهاية."
+        },
+        {
+          "index": 5,
+          "text": "Der Mentor sagt: „Die Berufserfahrung hilft.“",
+          "finding": "Der Mentor sagt: „Die Berufserfahrung hilft.“: قول مباشر بالفعل القوي المرفوع hilft."
+        },
+        {
+          "index": 6,
+          "text": "Der Mentor sagt, die Berufserfahrung helfe.",
+          "finding": "Der Mentor sagt, die Berufserfahrung helfe: نقل بـKonjunktiv I المشتق من جذر المصدر (helfe) بلا تغير حركة الجذر."
+        },
+        {
+          "index": 7,
+          "text": "Der Coach sagt, der Lebenslauf sei klar.",
+          "finding": "Der Coach sagt, der Lebenslauf sei klar: نقل من دون dass بترتيب الجملة الرئيسية."
+        },
+        {
+          "index": 8,
+          "text": "Der Coach sagt, dass der Lebenslauf klar sei.",
+          "finding": "Der Coach sagt, dass der Lebenslauf klar sei: نقل مع الرابط dass وتأخير الفعل المصرف sei إلى نهاية الجملة التابعة."
+        },
+        {
+          "index": 9,
+          "text": "Sie sagen: „Wir haben klare Ziele.“",
+          "finding": "Sie sagen: „Wir haben klare Ziele.“: قول مباشر بصيغة المتكلمين الجمع (Wir haben)."
+        },
+        {
+          "index": 10,
+          "text": "Sie sagen, sie hätten klare Ziele.",
+          "finding": "Sie sagen, sie hätten klare Ziele: تحويل الضمير إلى sie واستعمال Konjunktiv II (hätten) لأن sie haben في Konjunktiv I تطابق المضارع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-AUD-DLG-01",
+      "text": "Was sagte die Beraterin über Amiras Lebenslauf? Sie sagte, Amiras Werdegang sei klar dargestellt. Und was soll Amira noch ergänzen? Sie meinte, Amira habe viel Erfahrung in der Kundenbetreuung und solle zwei konkrete Beispiele hinzufügen. Hat sie auch etwas über die Stelle gesagt? Ja. Das Anforderungsprofil sei anspruchsvoll, aber Amiras Profil passe dazu. Dann werde ich Amira beim Überarbeiten helfen.",
+      "finding": "مطابقة نصية فقط؛ 7 وحدة داخل 7 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Was sagte die Beraterin über Amiras Lebenslauf?",
+          "finding": "Nora تسأل عما قالته المستشارة بشأن سيرة Amira الذاتية."
+        },
+        {
+          "index": 2,
+          "text": "Sie sagte, Amiras Werdegang sei klar dargestellt.",
+          "finding": "Fadi ينقل رأي المستشارة بـKonjunktiv I: Amiras Werdegang sei klar dargestellt."
+        },
+        {
+          "index": 3,
+          "text": "Und was soll Amira noch ergänzen?",
+          "finding": "Nora تسأل عما ينبغي لـAmira أن تضيفه بعد."
+        },
+        {
+          "index": 4,
+          "text": "Sie meinte, Amira habe viel Erfahrung in der Kundenbetreuung und solle zwei konkrete Beispiele hinzufügen.",
+          "finding": "Fadi ينقل معلومتين معطوفتين بـKonjunktiv I: Amira habe viel Erfahrung … und solle zwei konkrete Beispiele hinzufügen."
+        },
+        {
+          "index": 5,
+          "text": "Hat sie auch etwas über die Stelle gesagt?",
+          "finding": "سؤال نعم/لا عن رأي المستشارة في الوظيفة الشاغرة."
+        },
+        {
+          "index": 6,
+          "text": "Ja. Das Anforderungsprofil sei anspruchsvoll, aber Amiras Profil passe dazu.",
+          "finding": "نقل تقييم متوازن بـKonjunktiv I: Das Anforderungsprofil sei anspruchsvoll, aber Amiras Profil passe dazu."
+        },
+        {
+          "index": 7,
+          "text": "Dann werde ich Amira beim Überarbeiten helfen.",
+          "finding": "Nora تختم بعزمها المباشر في المستقبل (werde … helfen) على مساعدة Amira في المراجعة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-AUD-READ-01",
+      "text": "Gesprächsnotiz — Berufsberatung. Die Beraterin erklärt, die Bewerberin habe mehrere Jahre Erfahrung im Kundenservice. Ihr Lebenslauf sei übersichtlich, enthalte aber noch zu wenige konkrete Beispiele. Die Bewerberin könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben. Die Beraterin ergänzt, ein kurzes Anschreiben helfe dabei, den Wechselwunsch zu erklären. Die Bewerberin sagt, sie wolle künftig mehr Verantwortung übernehmen und strebe eine Stelle im Projektmanagement an.",
+      "finding": "مطابقة نصية فقط؛ 6 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Gesprächsnotiz — Berufsberatung.",
+          "finding": "عنوان المحضر المهني: Gesprächsnotiz — Berufsberatung."
+        },
+        {
+          "index": 2,
+          "text": "Die Beraterin erklärt, die Bewerberin habe mehrere Jahre Erfahrung im Kundenservice.",
+          "finding": "تنقل المستشارة خبرة المتقدمة بـKonjunktiv I: die Bewerberin habe mehrere Jahre Erfahrung im Kundenservice."
+        },
+        {
+          "index": 3,
+          "text": "Ihr Lebenslauf sei übersichtlich, enthalte aber noch zu wenige konkrete Beispiele.",
+          "finding": "تنقل المستشارة تقويم السيرة الذاتية بفعلي Konjunktiv I: Ihr Lebenslauf sei übersichtlich, enthalte aber noch zu wenige konkrete Beispiele."
+        },
+        {
+          "index": 4,
+          "text": "Die Bewerberin könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben.",
+          "finding": "تنقل إمكان تفصيل المسؤوليات بـkönne: Die Bewerberin könne ihre Zuständigkeiten im letzten Projekt genauer beschreiben."
+        },
+        {
+          "index": 5,
+          "text": "Die Beraterin ergänzt, ein kurzes Anschreiben helfe dabei, den Wechselwunsch zu erklären.",
+          "finding": "تضيف المستشارة دور رسالة التقديم بـhelfe: ein kurzes Anschreiben helfe dabei, den Wechselwunsch zu erklären."
+        },
+        {
+          "index": 6,
+          "text": "Die Bewerberin sagt, sie wolle künftig mehr Verantwortung übernehmen und strebe eine Stelle im Projektmanagement an.",
+          "finding": "تنقل المتقدمة هدفها المهني بـwolle وstrebe … an: sie wolle künftig mehr Verantwortung übernehmen und strebe eine Stelle im Projektmanagement an."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-02-AUD-LST-01",
+      "text": "Im Seminar über Bewerbungen sagte der Coach, ein berufliches Ziel müsse konkret formuliert werden. Der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen. Eine Teilnehmerin erklärte, sie habe im letzten Jahr ein kleines Team koordiniert. Der Coach meinte, dieses Beispiel zeige ihre Organisationsfähigkeit. Er fügte hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+      "finding": "مطابقة نصية فقط؛ 5 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Im Seminar über Bewerbungen sagte der Coach, ein berufliches Ziel müsse konkret formuliert werden.",
+          "finding": "في ندوة التقديم للوظائف نقل المدرب بـmüsse والمبني للمجهول أن الهدف المهني يجب أن يصاغ بصورة محددة."
+        },
+        {
+          "index": 2,
+          "text": "Der Lebenslauf solle wichtige Aufgaben und Ergebnisse nennen.",
+          "finding": "نقل بـsolle أن السيرة الذاتية ينبغي أن تذكر المهام والنتائج المهمة."
+        },
+        {
+          "index": 3,
+          "text": "Eine Teilnehmerin erklärte, sie habe im letzten Jahr ein kleines Team koordiniert.",
+          "finding": "نقلت مشاركة بصيغة الماضي المنقول (habe … koordiniert) أنها نسقت فريقًا صغيرًا في العام الماضي."
+        },
+        {
+          "index": 4,
+          "text": "Der Coach meinte, dieses Beispiel zeige ihre Organisationsfähigkeit.",
+          "finding": "رأى المدرب بـzeige أن هذا المثال يظهر قدرتها التنظيمية."
+        },
+        {
+          "index": 5,
+          "text": "Er fügte hinzu, ein Anschreiben könne die Motivation kurz erläutern.",
+          "finding": "أضاف المدرب بـkönne أن رسالة التقديم تستطيع شرح الدافع بإيجاز."
+        }
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/uebernehmen",
+      "reason": "صفحة خطأ 404؛ استُبعدت ولم تُحتسب مرجعًا"
+    }
+  ],
+  "sourceHashes": {
+    "content/B2/lesson-02-career-formal-communication-konjunktiv1.md": "ea9dfcaec58e76e748954262cb6fc13c1bdfbc12c6e3b9eadd9053bec5e59a93",
+    "content/B2/lesson-02-career-formal-communication-konjunktiv1.assessment.json": "6a6ea5964e3ffc046777601b7f3f3ce514eabd219887d77cb4f424fc82064b2e"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-02-AUD-PHR-01": "65bae3d8b90592b040cb45fb281b7a825c4fdc497dffca482c1e933f0361b9ec",
+    "DL-B2-02-AUD-MODEL-01": "536191f861db486b38082c10aca7a33539abefe1b85b317939faee0a64d5d452",
+    "DL-B2-02-AUD-DLG-01": "d38c8b653bc51470c8062e3c2db64ef6c438fa2509dcb30efaf72156f85a3a04",
+    "DL-B2-02-AUD-READ-01": "11441a45050b524268f85435635b7139ae2303108f4ad6d715ef1b4d554fd1e4",
+    "DL-B2-02-AUD-LST-01": "d9b6d5914e1a013114b75eeb5b3bd67a8223c01193dd5b7fb698a3b9828a2cf0"
+  },
+  "preservation": {
+    "baseline": "4b704b338df9fdf2c44eefaa7df4ee995c3da713",
+    "protectedFilesIncludingAudio": 591,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "changedAudioRegisterRows": {
+      "DL-B2-02-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B2-02-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B2-02-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B2-02-AUD-LST-01": [
+        "source_line"
+      ]
+    }
+  },
+  "implementationCommit": "4d84421c0ab548dd2654e266afa5aa1f5e79df91",
+  "qualityChecks": {
+    "build": {
+      "command": "python3 tools/build_course.py",
+      "status": "PASS",
+      "lessons": 53,
+      "bundleBytes": 2158066
+    },
+    "verify": {
+      "command": "python3 tools/verify_course.py",
+      "status": "PASS",
+      "exerciseHeadings": 428,
+      "dialogueSections": 61,
+      "vocabularyItems": 754,
+      "lessonQuizItems": 530,
+      "gateQuizItems": 10,
+      "performanceTasks": 109,
+      "catalogRows": 1080,
+      "audioAssets": 217,
+      "mp3Clips": 474,
+      "readyAssets": 137,
+      "pendingAssets": 80
+    },
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 44,
+      "newGuard": "tools/test_b2_02_review.py",
+      "scope": "coverage/text/mappings/evidence/hashes; not language certification"
+    },
+    "nodeGroups": {
+      "status": "PASS",
+      "tests": [
+        "progression",
+        "service_worker",
+        "daily_plan",
+        "session_persistence",
+        "study_time"
+      ]
+    },
+    "syntaxAndDiff": {
+      "status": "PASS",
+      "commands": [
+        "node --check app.js",
+        "node --check service-worker.js",
+        "git diff --check"
+      ]
+    },
+    "browser": {
+      "status": "PASS",
+      "chromium": "143.0.7499.0",
+      "playwright": "1.58.2",
+      "axe": "4.11.0",
+      "cache": "v93",
+      "tests": [
+        "browser",
+        "accessibility_update",
+        "accessibility_audit",
+        "forms_keyboard",
+        "narrow_layout"
+      ],
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "axeStates": 189,
+      "axeSelectedRuleViolations": 0,
+      "axeIncompleteOccurrences": 135,
+      "axeIncompleteNodeOccurrences": 334,
+      "narrowStates": 126,
+      "narrowViewports": [
+        "320x900",
+        "568x320"
+      ],
+      "formsKeyboard": "Passed first execution at both widths; historical native chooser intermittency remains unresolved."
+    },
+    "evidenceIsolation": {
+      "status": "PASS",
+      "oldVersion": "b2-02-v1",
+      "newVersion": "b2-02-v2",
+      "nextLesson": "b2-03-consumption-environment-passive-modal",
+      "modelCharacters": [
+        580,
+        553
+      ],
+      "minimumCharacters": [
+        160,
+        180
+      ],
+      "retainsOldRecordWithoutGrantingCurrentMastery": true,
+      "rejectsOldVersionDraft": true,
+      "currentScoreAndEvidenceUnlockNext": true,
+      "evidenceDeletionRelocksNext": true,
+      "p01SpeakCheckboxAbsent": true,
+      "p02SpeakCheckboxRequired": true
+    },
+    "initialFailures": [
+      "First run of test_b2_02_review.py --implementation-only failed on raw substring matching because P01 in markdown used bold formatting around Konjunktiv I/II; normalized markdown bold markers in the guard check.",
+      "First progression runs after splitting B2.2 T08 into P01 and P02 caught legacy regex phrasing checks for اكتب النص ثم اقرأه بصوت واضح, لا يلزم تسجيل, and Konjunktiv II.*عند الحاجة; restored those exact phrases in the B2.2 source and assessment prompts. First browser command used PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH instead of CHROMIUM_EXECUTABLE_PATH; rerunning with CHROMIUM_EXECUTABLE_PATH=/tmp/chromium passed all 5 browser suites on the first run."
+    ]
+  },
+  "campaign": {
+    "review": "CR44",
+    "reviewedLessons": 43,
+    "totalLessons": 53,
+    "gateSeparate": true,
+    "remainingLessons": 10,
+    "planVersion": "2.50",
+    "next": "CR45/B2.3 — الاستهلاك والبيئة والمبني للمجهول مع الأفعال الناقصة"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "4d84421c0ab548dd2654e266afa5aa1f5e79df91",
+    "implementationPushed": true,
+    "implementationHeadOriginMatched": true,
+    "pr": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "queriedAtHead": "4d84421c0ab548dd2654e266afa5aa1f5e79df91"
+    },
+    "implementationDeployment": {
+      "state": "pending",
+      "description": "Deployment rate limited or pending in Vercel",
+      "deployments": []
+    },
+    "reportPushed": false,
+    "remoteUIReviewed": false,
+    "productionReviewed": false
+  },
+  "limits": [
+    "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
+    "10 مراجع مقروءة بالكامل (مرجعا Lingolia بجزأيهما 0 و1 من 2، و8 مراجع Duden بجزئها الكامل 0 من 1)، واستُبعد رابط Duden واحد أعاد 404. المراجع المعجمية المباشرة تخص الألفاظ المسماة (Werdegang وQualifikation وAnforderungsprofil وStellenausschreibung وFührungskraft وZuständigkeit وEmpfehlung وanstreben وvereinbaren) لا كل كلمة في الجدول.",
+    "خمسة أصول/11 مقطعًا معلقة ومحفوظة بأصوات Nora (voice-02) وFadi (voice-03) من A2.11 والسرد (voice-02) والاستماع (voice-03)؛ فحص MP3 والتشغيل الآلي الصامت ومطابقة التفريغ ليست استماعًا أو اعتمادًا صوتيًا.",
+    "الحد الأدنى للحروف (160/180) والإقرارات الذاتية والجهر في P02 لا تصحح عدد الجمل أو القواعد أو النطق آليًا.",
+    "189 حالة axe وصفر مخالفات للقواعد المختارة، مع 135 ظهورًا غير حاسم تشمل 334 ظهورًا لعقد؛ ليست مخالفات مؤكدة ولا شهادة وصول شاملة.",
+    "فحوص 320×900 و568×320 و1440×900 و390×844 تتم عبر CSS viewports في Chromium وليست هواتف فعلية أو تكبير متصفح أصليًا؛ تحديث v42 إلى v93 fixture محدد وليس كل مسار تاريخي.",
+    "نشر التنفيذ 4d84421 محكوم بحد النشر اليومي في Vercel (deployments=[])؛ لا إعادة نشر آلية ولا شراء ترقية، ولم تختبر الواجهة البعيدة أو Production، وPR#1 غير مدمجة."
+  ]
+}
