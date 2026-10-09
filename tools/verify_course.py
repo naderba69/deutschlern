@@ -464,6 +464,10 @@ def main() -> None:
         lesson_statuses = sorted(set(a["status"] for a in lesson_assets))
         expected_status = lesson_statuses[0] if len(lesson_statuses) == 1 else "|".join(lesson_statuses)
         assert row["title"] == lesson_obj["title"], f"Stale title in curriculum-file-audit.csv: {lid}"
+        assert "**" not in lesson_obj["objective"] and "`" not in lesson_obj["objective"] and ".؛" not in lesson_obj["objective"], (
+            f"Unstripped Markdown or punctuation artifact in lesson objective: {lid}"
+        )
+        assert row["source_objective"] == lesson_obj["objective"], f"Stale source_objective in curriculum-file-audit.csv: {lid}"
         assert row["minutes"] == str(lesson_obj["minutes"]), f"Stale minutes in curriculum-file-audit.csv: {lid}"
         assert int(row["generated_audio_clips"]) == lesson_clips, f"Stale clip count in curriculum-file-audit.csv: {lid}"
         assert row["audio_review_status"] == expected_status, f"Stale audio status in curriculum-file-audit.csv: {lid}"
@@ -531,6 +535,20 @@ def main() -> None:
         'class="quiz-feedback ${isCorrect ? \'good\' : \'try-again\'}" dir="auto"',
         '<p dir="auto">${escapeHTML(task.prompt)}</p>',
         '<li dir="auto"><strong>${escapeHTML(checkLabels[key])}:</strong>',
+        '<small><span lang="de">AUFGABE</span> · الأداء العملي</small>',
+        '<small><span lang="de">TAGESPLAN</span> · خطة مرنة</small>',
+        '<span><span lang="de">Deutsch</span> على مقاسك.</span>',
+        '<span><span lang="de">WORTSCHATZ</span> · 01</span>',
+        '<small><span lang="de">HÖREN</span> · الاستماع</small>',
+        '<small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small>',
+        '<small><span lang="de">LEKTION</span> · الدرس الكامل</small>',
+        '<h1 dir="auto"${isGermanTextSnippet(q.prompt) ? \' lang="de"\' : \'\'}>${escapeHTML(q.prompt)}</h1>',
+        '<span dir="auto"${isGermanTextSnippet(q.explanation) ? \' lang="de"\' : \'\'}>${escapeHTML(q.explanation)}</span>',
+        '<div class="audio-asset-title"><strong dir="auto">${escapeHTML(asset.title)}</strong>',
+        '<h1 dir="auto">${escapeHTML(lesson.title)}</h1><p dir="auto">${escapeHTML(lesson.objective)}</p>',
+        '<div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>',
+        '<div class="flash-translation" dir="auto">${translation}</div>',
+        'بينما يُحتسب وقت الدراسة الفعلي تلقائيًا أثناء الجلسة النشطة.',
     ):
         assert snippet in app_text, f"Missing WCAG 3.1.2 / bidi attribute snippet in app.js: {snippet}"
 
@@ -569,7 +587,7 @@ def main() -> None:
     assert "overflow-x: hidden; overflow-y: auto;" in css_text, "Missing deterministic overflow rules on performance textarea in styles.css"
 
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 59, f"Expected 59 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 60, f"Expected 60 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():

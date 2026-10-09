@@ -51,7 +51,7 @@ assert ".hero-banner::before" not in styles_css and ".art-circle::before" not in
 assert "unicode-bidi: plaintext" in styles_css
 
 sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-assert "const CACHE_NAME = 'deutsch-pfad-v108';" in sw_js
+assert "const CACHE_NAME = 'deutsch-pfad-v109';" in sw_js
 
 if "--implementation-only" in sys.argv:
     print("PASS CR57 implementation-only: 754 vocabulary items (541 with plural/conjugation/example detail across 45 lessons), WCAG 3.1.2 lang='de' & bidi dir='auto', deterministic contrast CSS, v106 cache.")

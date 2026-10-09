@@ -1,0 +1,1526 @@
+{
+  "schemaVersion": 1,
+  "batchId": "CR60",
+  "reviewSlug": "objective-quiz-prompt-bidi-review",
+  "reviewedAt": "2026-10-09",
+  "unitCount": 60,
+  "lessonCount": 53,
+  "cleanedObjectiveLessonCount": 21,
+  "quizQuestionTotalCount": 540,
+  "quizPromptGermanCount": 26,
+  "quizExplanationGermanCount": 1,
+  "uiGermanKickerSpanCount": 7,
+  "audioAssetTitleBidiCount": 217,
+  "vocabTranslationBidiCount": 754,
+  "a11yScreenStateCount": 231,
+  "a11yViolatedRuleCount": 0,
+  "a11yIncompleteRuleOccurrences": 0,
+  "a11yIncompleteNodeOccurrences": 0,
+  "serviceWorkerCacheName": "deutsch-pfad-v109",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "excludedSources": [],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "W3C WAI WCAG 2.1 Technique H58 — Using language attributes to identify changes in the human language",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/html/H58",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Identifies changes in natural language via BCP-47 lang='de' attributes on German question prompts (<h1 dir='auto' lang='de'>), German quiz explanations (<span dir='auto' lang='de'>), and German UI kicker/hero terms (AUFGABE, TAGESPLAN, Deutsch, WORTSCHATZ, HÖREN, LEKTION)."
+    },
+    {
+      "id": "S02",
+      "title": "W3C WAI Understanding WCAG 2.1 SC 3.1.2 — Language of Parts (Level AA)",
+      "url": "https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html",
+      "access": "full_fetched_page",
+      "totalChunks": 3,
+      "chunksFetched": [
+        0,
+        1,
+        2
+      ],
+      "takeaway": "Normative Level AA criterion requiring programmatic identification of passages and phrases in another language so screen readers and braille translators apply German pronunciation and hyphenation rules."
+    },
+    {
+      "id": "S03",
+      "title": "W3C Internationalization — Inline markup and bidirectional text in HTML",
+      "url": "https://www.w3.org/International/articles/inline-bidi-markup/",
+      "access": "full_fetched_page",
+      "totalChunks": 3,
+      "chunksFetched": [
+        0,
+        1,
+        2
+      ],
+      "takeaway": "Recommends dir='auto' on dynamic/mixed containers whose base direction is determined by first strong character (lesson titles, objectives, audio titles, vocabulary translations) and dir='ltr' on embedded paths/commands (<b dir='ltr'>content/</b>, <code dir='ltr'>python3 tools/build_course.py</code>)."
+    },
+    {
+      "id": "S04",
+      "title": "Lingolia German Grammar — Questions in German Grammar (W-Fragen & Entscheidungsfragen)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/questions",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Covers open W-questions (wer, was, wo, wann, wie, warum, wozu, wofür, welche, mit wem) with verb-second word order across the 26 pure-German reading/listening comprehension quiz prompts in B1.1–B1.6."
+    },
+    {
+      "id": "S05",
+      "title": "Duden Rechtschreibung — Aufgabe, die",
+      "url": "https://www.duden.de/rechtschreibung/Aufgabe",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms orthography and semantics of die Aufgabe (-n) for the <span lang='de'>AUFGABE</span> performance-task kicker."
+    },
+    {
+      "id": "S06",
+      "title": "Duden Rechtschreibung — Tagesplan, der",
+      "url": "https://www.duden.de/rechtschreibung/Tagesplan",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms der Tagesplan ('für den jeweiligen Tag aufgestellter Arbeitsplan'), replacing the leftover French 'PLAN DU JOUR' kicker with <span lang='de'>TAGESPLAN</span>."
+    },
+    {
+      "id": "S07",
+      "title": "Duden Rechtschreibung — Lektion, die",
+      "url": "https://www.duden.de/rechtschreibung/Lektion",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms die Lektion (-en) ('Übungseinheit, Kapitel in einem fremdsprachlichen Lehr- und Übungsbuch') for the <span lang='de'>LEKTION</span> lesson-panel kicker."
+    },
+    {
+      "id": "S08",
+      "title": "Duden Rechtschreibung — hören",
+      "url": "https://www.duden.de/rechtschreibung/hoeren",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms hören / das Hören for the <span lang='de'>HÖREN</span> audio-panel kicker."
+    },
+    {
+      "id": "S09",
+      "title": "Duden Rechtschreibung — Deutsch, das",
+      "url": "https://www.duden.de/rechtschreibung/Deutsch",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms das Deutsch ('die deutsche Sprache') for <span lang='de'>Deutsch</span> in the dashboard hero heading."
+    },
+    {
+      "id": "S10",
+      "title": "Duden Rechtschreibung — Frage, die",
+      "url": "https://www.duden.de/rechtschreibung/Frage",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms die Frage (-n) for German comprehension question prompts in lesson and gate assessments."
+    },
+    {
+      "id": "S11",
+      "title": "Duden Rechtschreibung — Antwort, die",
+      "url": "https://www.duden.de/rechtschreibung/Antwort",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms die Antwort (-en) for German quiz explanations and answer feedback."
+    },
+    {
+      "id": "S12",
+      "title": "Duden Rechtschreibung — Ziel, das",
+      "url": "https://www.duden.de/rechtschreibung/Ziel",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms das Ziel (-e) for lesson communication objectives (lesson.objective and source_objective)."
+    },
+    {
+      "id": "S13",
+      "title": "Duden Rechtschreibung — Passiv, das",
+      "url": "https://www.duden.de/rechtschreibung/Passiv",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms das Passiv (Leideform) for A2.8 (DL-A2-08-Q07: 'Die Sitzung wird im Internet übertragen.'), B2.3 ('Passiv mit Modalverben'), and B2.8 ('werden/sein + Partizip II')."
+    },
+    {
+      "id": "S14",
+      "title": "Duden Rechtschreibung — Konjunktiv, der",
+      "url": "https://www.duden.de/rechtschreibung/Konjunktiv",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Confirms der Konjunktiv (Möglichkeitsform) for B1.3, B2.2, B2.10, and B2.12 lesson objectives."
+    },
+    {
+      "id": "S15",
+      "title": "Lingolia Search Snippet — Questions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/questions",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure/questions W-questions German grammar",
+      "takeaway": "Search snippet confirming closed (Entscheidungsfragen) and open (Ergänzungsfragen / W-Fragen) question structures."
+    },
+    {
+      "id": "S16",
+      "title": "Lingolia Search Snippet — Questions Free Exercise",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/questions/exercises",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure/questions W-questions German grammar",
+      "takeaway": "Search snippet confirming question-word selection (wo, wer, wann, was, wie, wohin, worüber)."
+    },
+    {
+      "id": "S17",
+      "title": "Duden Search Snippet — Lektion",
+      "url": "https://www.duden.de/rechtschreibung/Lektion",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Aufgabe Tagesplan Lektion hoeren Deutsch",
+      "takeaway": "Search snippet confirming die Lektion, Plural die Lektionen."
+    },
+    {
+      "id": "S18",
+      "title": "Duden Search Snippet — hören",
+      "url": "https://www.duden.de/rechtschreibung/hoeren",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Aufgabe Tagesplan Lektion hoeren Deutsch",
+      "takeaway": "Search snippet confirming hören (hört, hörte, hat gehört)."
+    },
+    {
+      "id": "S19",
+      "title": "Duden Search Snippet — Aufgabe",
+      "url": "https://www.duden.de/rechtschreibung/Aufgabe",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Aufgabe Tagesplan Lektion hoeren Deutsch",
+      "takeaway": "Search snippet confirming die Aufgabe, Plural die Aufgaben."
+    },
+    {
+      "id": "S20",
+      "title": "Duden Search Snippet — fragen",
+      "url": "https://www.duden.de/rechtschreibung/fragen",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Frage Antwort Ziel Passiv Konjunktiv",
+      "takeaway": "Search snippet confirming fragen (fragt, fragte, hat gefragt)."
+    },
+    {
+      "id": "S21",
+      "title": "Duden Search Snippet — Konjunktiv",
+      "url": "https://www.duden.de/rechtschreibung/Konjunktiv",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Frage Antwort Ziel Passiv Konjunktiv",
+      "takeaway": "Search snippet confirming der Konjunktiv (Möglichkeitsform)."
+    },
+    {
+      "id": "S22",
+      "title": "Duden Search Snippet — Frage",
+      "url": "https://www.duden.de/rechtschreibung/Frage",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Frage Antwort Ziel Passiv Konjunktiv",
+      "takeaway": "Search snippet confirming die Frage, Plural die Fragen."
+    }
+  ],
+  "sourceHashes": {
+    "tools/build_course.py": "6384e94f006fbb36693bf71b8ff130bb0d4defe33af88a14d83cb49dee5dedc7",
+    "tools/verify_course.py": "ee1a2c7e517925e032fc8fdb34cc4a54451b203cc7a33fd7fa6a5b8ed7c4d73e",
+    "app.js": "4db239b3ab6b174233ddc519a7222281fa6a496e0d3d8192efcd9b7342d429ce",
+    "styles.css": "ca6c71710dc7e39a82878686b1e8fce72bd0b65a3485f984beb2319da2439485",
+    "service-worker.js": "b34225897e72fb7bb817336a74f4efcc4db61b89f9631ecb3eb55dd1f2130ba6",
+    "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
+    "data/curriculum-file-audit.csv": "24c76e522cac1f55677ceea72443535e7f07004fcb2a76153c61da1974087e07",
+    "tools/test_browser.cjs": "3ea696d16697c3fa8f0f02172e2f8734b5aae2552c6a2547c55088d3e48b227d",
+    "tools/test_accessibility_update.cjs": "5672f786b3be2900c6311ae54cb80d7284dbdf0bfc48be3273d658ed1afe604d",
+    "tools/test_service_worker.cjs": "3e4445c847a4deae6477ec244739084caf2e720bf5ea1469dc2136208a8a0eca"
+  },
+  "units": [
+    {
+      "id": "CR60-U01-a0-01-alphabet",
+      "scope": "a0-01-alphabet",
+      "title": "A0.1 — الحروف والأصوات الألمانية",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 0,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a0-01-alphabet`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`0` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U02-a0-02-greetings",
+      "scope": "a0-02-greetings",
+      "title": "A0.2 — التحية والتعارف",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 10,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a0-02-greetings`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`10` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U03-a0-03-numbers-personal-info",
+      "scope": "a0-03-numbers-personal-info",
+      "title": "A0.3 — الأرقام والبيانات الشخصية",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 0,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a0-03-numbers-personal-info`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`0` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U04-a0-04-first-sentences",
+      "scope": "a0-04-first-sentences",
+      "title": "A0.4 — الضمائر وأول جمل بـ sein وhaben",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 9,
+      "audioAssetCount": 1,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a0-04-first-sentences`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`1` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`9` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U05-a0-05-classroom-phrases",
+      "scope": "a0-05-classroom-phrases",
+      "title": "A0.5 — عبارات الصف وطلب المساعدة",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 10,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a0-05-classroom-phrases`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`10` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U06-a1-01-introductions-languages-hobbies",
+      "scope": "a1-01-introductions-languages-hobbies",
+      "title": "A1.1 — التعريف بالنفس واللغات والهوايات",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 12,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-01-introductions-languages-hobbies`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`12` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U07-a1-02-work-family",
+      "scope": "a1-02-work-family",
+      "title": "A1.2 — الأسرة والمهن",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 11,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-02-work-family`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`11` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U08-a1-03-city-cafe-hotel",
+      "scope": "a1-03-city-cafe-hotel",
+      "title": "A1.3 — في المدينة: المقهى والفندق",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 13,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-03-city-cafe-hotel`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`13` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U09-a1-04-daily-routine-time",
+      "scope": "a1-04-daily-routine-time",
+      "title": "A1.4 — الروتين اليومي والوقت",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 12,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-04-daily-routine-time`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`12` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U10-a1-05-food-drink",
+      "scope": "a1-05-food-drink",
+      "title": "A1.5 — الطعام والشراب",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-05-food-drink`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U11-a1-06-yesterday-perfekt",
+      "scope": "a1-06-yesterday-perfekt",
+      "title": "A1.6 — أمس واليوم: مقدمة إلى Perfekt",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 8,
+      "audioAssetCount": 2,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-06-yesterday-perfekt`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`2` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`8` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U12-a1-07-travel-weather",
+      "scope": "a1-07-travel-weather",
+      "title": "A1.7 — السفر والطقس",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-07-travel-weather`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U13-a1-08-shopping-clothes",
+      "scope": "a1-08-shopping-clothes",
+      "title": "A1.8 — التسوّق والملابس والاحتياجات",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-08-shopping-clothes`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U14-a1-09-work-appointments",
+      "scope": "a1-09-work-appointments",
+      "title": "A1.9 — العمل والمشكلات والمواعيد",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-09-work-appointments`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U15-a1-10-hobbies-health",
+      "scope": "a1-10-hobbies-health",
+      "title": "A1.10 — الهوايات والصحة وزيارة الطبيب",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 20,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-10-hobbies-health`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`20` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U16-a1-11-home-directions",
+      "scope": "a1-11-home-directions",
+      "title": "A1.11 — السكن والمنزل والاتجاهات",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 13,
+      "audioAssetCount": 3,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-11-home-directions`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`3` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`13` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U17-a1-12-trip-invitations",
+      "scope": "a1-12-trip-invitations",
+      "title": "A1.12 — رحلة قصيرة ومناسبات ودعوات",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a1-12-trip-invitations`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U18-a2-01-routines-abilities-experiences",
+      "scope": "a2-01-routines-abilities-experiences",
+      "title": "A2.1 — الحياة اليومية والقدرات والتجارب",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-01-routines-abilities-experiences`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U19-a2-02-travel-comparisons",
+      "scope": "a2-02-travel-comparisons",
+      "title": "A2.2 — الرحلات والأماكن والمقارنة",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 18,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-02-travel-comparisons`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`18` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U20-a2-03-food-nutrition-shopping",
+      "scope": "a2-03-food-nutrition-shopping",
+      "title": "A2.3 — الطعام والتغذية والشراء والمطعم",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 20,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-03-food-nutrition-shopping`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`20` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U21-a2-04-office-phone-appointments",
+      "scope": "a2-04-office-phone-appointments",
+      "title": "A2.4 — المكتب والهاتف والمواعيد",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-04-office-phone-appointments`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U22-a2-05-training-routine-wenn",
+      "scope": "a2-05-training-routine-wenn",
+      "title": "A2.5 — الروتين والتدريب المهني وجمل wenn",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 12,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-05-training-routine-wenn`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`12` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U23-a2-06-family-happiness-gifts",
+      "scope": "a2-06-family-happiness-gifts",
+      "title": "A2.6 — الأسرة والمشاعر والدعوات والهدايا",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-06-family-happiness-gifts`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U24-a2-07-language-learning-travel-purpose",
+      "scope": "a2-07-language-learning-travel-purpose",
+      "title": "A2.7 — تعلّم اللغات والسفر والغاية بـum … zu",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 17,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-07-language-learning-travel-purpose`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`17` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U25-a2-08-media-news-passive",
+      "scope": "a2-08-media-news-passive",
+      "title": "A2.8 — الإعلام والأخبار والسياسة: المبني للمجهول",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 1,
+      "vocabularyCount": 23,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-08-media-news-passive`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`23` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`1/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U26-a2-09-products-technology-complaints",
+      "scope": "a2-09-products-technology-complaints",
+      "title": "A2.9 — المنتجات والتقنية وتقديم شكوى",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-09-products-technology-complaints`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U27-a2-10-sports-health-feelings-weil",
+      "scope": "a2-10-sports-health-feelings-weil",
+      "title": "A2.10 — الرياضة والصحة والمشاعر وجملة weil",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-10-sports-health-feelings-weil`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U28-a2-11-housing-neighborhood-wohin",
+      "scope": "a2-11-housing-neighborhood-wohin",
+      "title": "A2.11 — المدن والسكن والجيران: Wo أم Wohin؟",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 20,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-11-housing-neighborhood-wohin`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`20` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U29-a2-12-holidays-festivals-culture",
+      "scope": "a2-12-holidays-festivals-culture",
+      "title": "A2.12 — العطلات والمهرجانات والثقافة",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `a2-12-holidays-festivals-culture`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U30-b1-01-daily-life-hobbies-experiences",
+      "scope": "b1-01-daily-life-hobbies-experiences",
+      "title": "B1.1 — الحياة اليومية والهوايات والتجارب: als وwenn",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 4,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 13,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-01-daily-life-hobbies-experiences`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`13` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`4/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U31-b1-02-food-habits-obwohl",
+      "scope": "b1-02-food-habits-obwohl",
+      "title": "B1.2 — الطعام والعادات الغذائية: obwohl وtrotzdem",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 4,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 13,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-02-food-habits-obwohl`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`13` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`4/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U32-b1-03-work-communication-konjunktiv",
+      "scope": "b1-03-work-communication-konjunktiv",
+      "title": "B1.3 — المهنة والتواصل في مكان العمل: اقتراحات مهذبة",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 4,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 4,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-03-work-communication-konjunktiv`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`4` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`4/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U33-b1-04-continuing-education-damit",
+      "scope": "b1-04-continuing-education-damit",
+      "title": "B1.4 — التعلّم والتعليم المستمر: damit و um … zu",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 6,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-04-continuing-education-damit`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`6/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U34-b1-05-cities-relative-clauses",
+      "scope": "b1-05-cities-relative-clauses",
+      "title": "B1.5 — المدن ووصف الأماكن: الجمل الموصولة في Nominativ و Akkusativ",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 4,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-05-cities-relative-clauses`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`4/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U35-b1-06-health-fitness-advice",
+      "scope": "b1-06-health-fitness-advice",
+      "title": "B1.6 — الصحة واللياقة وتقديم النصيحة: sollte و könnte",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 4,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-06-health-fitness-advice`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`4/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U36-b1-07-lifestyles-customs-cultures",
+      "scope": "b1-07-lifestyles-customs-cultures",
+      "title": "B1.7 — أساليب الحياة والعادات والثقافات: الروابط الثنائية",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-07-lifestyles-customs-cultures`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U37-b1-08-consumption-advertising-je-desto",
+      "scope": "b1-08-consumption-advertising-je-desto",
+      "title": "B1.8 — المنتجات والاستهلاك والإعلان: je … desto/umso …",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 17,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-08-consumption-advertising-je-desto`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`17` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U38-b1-09-travel-transport-environment",
+      "scope": "b1-09-travel-transport-environment",
+      "title": "B1.9 — السفر والنقل والبيئة: bevor وnachdem وwährend",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-09-travel-transport-environment`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U39-b1-10-media-news-formal-communication",
+      "scope": "b1-10-media-news-formal-communication",
+      "title": "B1.10 — الإعلام والأخبار والتواصل الرسمي: الأسئلة غير المباشرة",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-10-media-news-formal-communication`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U40-b1-11-history-politics-passive-past",
+      "scope": "b1-11-history-politics-passive-past",
+      "title": "B1.11 — التاريخ والسياسة: المبني للمجهول في Präteritum",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-11-history-politics-passive-past`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U41-b1-12-innovation-research-future",
+      "scope": "b1-12-innovation-research-future",
+      "title": "B1.12 — الابتكار والإبداع والبحث: التوقّعات بـFutur I",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b1-12-innovation-research-future`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U42-b2-01-time-management-habits-reading",
+      "scope": "b2-01-time-management-habits-reading",
+      "title": "B2.1 — إدارة الوقت والعادات والقراءة: indem وdadurch, dass",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-01-time-management-habits-reading`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U43-b2-02-career-formal-communication-konjunktiv1",
+      "scope": "b2-02-career-formal-communication-konjunktiv1",
+      "title": "B2.2 — العمل والمسار المهني والتواصل الرسمي: Konjunktiv I",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-02-career-formal-communication-konjunktiv1`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U44-b2-03-consumption-environment-passive-modal",
+      "scope": "b2-03-consumption-environment-passive-modal",
+      "title": "B2.3 — الاستهلاك والبدائل البيئية: المبني للمجهول مع الأفعال الناقصة",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-03-consumption-environment-passive-modal`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U45-b2-04-cities-housing-participles",
+      "scope": "b2-04-cities-housing-participles",
+      "title": "B2.4 — المدن والمباني والسكن: Partizip I وPartizip II كصفات",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-04-cities-housing-participles`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U46-b2-05-health-fitness-medical-information",
+      "scope": "b2-05-health-fitness-medical-information",
+      "title": "B2.5 — الصحة واللياقة والمعلومات الطبية: السبب والنتيجة",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-05-health-fitness-medical-information`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U47-b2-06-study-applications-verb-noun-phrases",
+      "scope": "b2-06-study-applications-verb-noun-phrases",
+      "title": "B2.6 — التعلّم والدراسة والتقديم الأكاديمي: Nomen-Verb-Verbindungen",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 14,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-06-study-applications-verb-noun-phrases`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`14` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U48-b2-07-travel-experiences-prepositional-relatives",
+      "scope": "b2-07-travel-experiences-prepositional-relatives",
+      "title": "B2.7 — السفر والتجارب والوجهات: الجمل الموصولة مع حروف الجر",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-07-travel-experiences-prepositional-relatives`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U49-b2-08-food-nutrition-data-passives",
+      "scope": "b2-08-food-nutrition-data-passives",
+      "title": "B2.8 — الغذاء والتغذية والبيانات: Vorgangspassiv وZustandspassiv",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-08-food-nutrition-data-passives`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U50-b2-09-business-marketing-employment-prepositions",
+      "scope": "b2-09-business-marketing-employment-prepositions",
+      "title": "B2.9 — الشركات والتسويق والعمل: الأفعال مع حروف الجر وda-/wo- المركّبة",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-09-business-marketing-employment-prepositions`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U51-b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "scope": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "title": "B2.10 — الأمنيات والاحتمالات والتقنية: Konjunktiv II للماضي والفرضيات",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 15,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-10-wishes-probabilities-technology-konjunktiv2-past`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`15` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U52-b2-11-humans-nature-environment-nominalization",
+      "scope": "b2-11-humans-nature-environment-nominalization",
+      "title": "B2.11 — الإنسان والطبيعة وحماية البيئة: الأسلوب الاسمي",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-11-humans-nature-environment-nominalization`: نص الهدف نظيف وخالٍ من رموز Markdown الخام في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U53-b2-12-leisure-media-reported-speech",
+      "scope": "b2-12-leisure-media-reported-speech",
+      "title": "B2.12 — أوقات الفراغ والإعلام ونقل الكلام: Konjunktiv I وKonjunktiv II",
+      "status": "reviewed_synced",
+      "cleanedObjective": true,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 16,
+      "audioAssetCount": 5,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "رُوجع الدرس `b2-12-leisure-media-reported-speech`: جرى تنظيف نص الهدف من رموز Markdown الخام (`**`/`\\``) وعلامة `.؛` في `data/course.json` و`data/curriculum-file-audit.csv`، وتُعرض عناوين الدرس (`<h1 dir=\"auto\">` و`<h3 dir=\"auto\">`) وهدفه (`<p dir=\"auto\">`) وعناوين التسجيلات الصوتية (`5` أصلًا بسمة `<strong dir=\"auto\">`) وترجمات المفردات (`16` مفردة بسمة `dir=\"auto\"`) ونصوص أسئلة التقييم (`0/10` سؤالًا ألمانيًا بسمة `lang=\"de\"`) وتفسيرات الإجابة (`0/10` تفسيرًا ألمانيًا بسمة `lang=\"de\"`) وفق `WCAG 2.1 SC 3.1.2` و`W3C Bidi`."
+    },
+    {
+      "id": "CR60-U54-a0-a1-gate",
+      "scope": "a0-a1-gate",
+      "title": "A0→A1 Gate — A0 — بوابة الانتقال إلى A1",
+      "status": "reviewed_synced",
+      "cleanedObjective": false,
+      "quizQuestionCount": 10,
+      "quizGermanPromptCount": 0,
+      "quizGermanExplanationCount": 0,
+      "vocabularyCount": 0,
+      "audioAssetCount": 1,
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S10",
+        "S11"
+      ],
+      "finding": "رُوجعت بوابة الانتقال `a0-a1-gate`: تُعرض نصوص أسئلة البوابة الـ`10` بسمة `<h1 dir=\"auto\">` (مع دعم `lang=\"de\"` عند كون السؤال ألمانيًا خالصًا) وتفسيرات الإجابة بسمة `<span dir=\"auto\">` وعنوان أصل الاستماع بسمة `<strong dir=\"auto\">`."
+    },
+    {
+      "id": "CR60-U55-bundler-objective-sanitizer-and-audit-sync",
+      "scope": "tools/build_course.py + data/course.json + data/curriculum-file-audit.csv",
+      "title": "تنظيف نصوص أهداف الدروس (`21/53`) ومزامنة `source_objective` في سجل التدقيق",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S03",
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "finding": "جرى تحديث `lesson_objective()` عبر دالة `clean_objective_text()` في `tools/build_course.py` لإزالة علامات التنسيق الخام (`**` و`` ` ``) وتوحيد فواصل بنود `## أستطيع أن` (`؛ ` بدل `.؛ `)، مما صحح `21` هدف درس في `data/course.json` (`2,419,161` بايت) وطابق عمود `source_objective` في جميع صفوف `data/curriculum-file-audit.csv` الـ`53`."
+    },
+    {
+      "id": "CR60-U56-quiz-prompt-and-explanation-lang-de",
+      "scope": "app.js + data/course.json",
+      "title": "وسم أسئلة التقييم الألمانية الخالصة (`26/540`) وتفسيرات الإجابة الألمانية (`1/540`) بسمة `lang=\"de\"`",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S04",
+        "S10",
+        "S11",
+        "S13"
+      ],
+      "finding": "جرى تحديث `renderLessonQuiz()` و`renderA0GateQuiz()` في `app.js` بحيث تحمل عناوين الأسئلة الألمانية الخالصة (`26` سؤالًا من أصل `540` في `B1.1–B1.6`) وسم `<h1 dir=\"auto\" lang=\"de\">`، وتحمل تفسيرات الإجابة عنصر `<span dir=\"auto\" lang=\"de\">` عند كون التفسير ألمانيًا خالصًا (`DL-A2-08-Q07`: `Die Sitzung wird im Internet übertragen.`)."
+    },
+    {
+      "id": "CR60-U57-ui-german-kickers-and-tagesplan-fix",
+      "scope": "app.js",
+      "title": "وسم شارات الواجهة الألمانية السبع بسمة `lang=\"de\"` واستبدال `PLAN DU JOUR` بـ`TAGESPLAN`",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "finding": "جرى وسم المصطلحات الألمانية السبعة في الواجهة بسمة `<span lang=\"de\">` (`AUFGABE`، و`TAGESPLAN` بدل العبارة الفرنسية الدخيلة `PLAN DU JOUR`، و`Deutsch` في ترويسة اللوحة، و`WORTSCHATZ` في بطاقة اللوحة ودرج المفردات، و`HÖREN` في لوحة الصوت، و`LEKTION` في لوحة الدرس) وتحديث ملاحظتي احتساب الوقت الفعلي وطريقة الدراسة."
+    },
+    {
+      "id": "CR60-U58-bidi-containers-and-css-plaintext",
+      "scope": "app.js + styles.css",
+      "title": "توسيم حاويات العناوين والأهداف والترجمات والمسارات بسمات `dir=\"auto\"`/`dir=\"ltr\"` و`unicode-bidi: plaintext`",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S03"
+      ],
+      "finding": "أُضيفت سمة `dir=\"auto\"` وقاعدة `unicode-bidi: plaintext` لعناوين الدروس وأهدافها في بطاقات المسارات وترويسة الدرس والبطاقة الجانبية وخطة اليوم وعناوين الأصول الصوتية الـ`217` وترجمات المفردات الـ`754` في درجي الدرس والمراجعة، مع وسم `<b dir=\"ltr\">content/</b>` و`<code dir=\"ltr\">python3 tools/build_course.py</code>` في ملاحظة المسارات."
+    },
+    {
+      "id": "CR60-U59-service-worker-v109-and-browser-qa",
+      "scope": "service-worker.js + tools/test_browser.cjs + tools/test_accessibility_update.cjs + tools/test_service_worker.cjs",
+      "title": "ترقية مخزن العمل دون اتصال إلى `deutsch-pfad-v109` والتحقق في المتصفح",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "finding": "رُقّي مخزن `service-worker.js` إلى `deutsch-pfad-v109`، وأُضيفت فحوص DOM مباشرة في `tools/test_browser.cjs` للتحقق من `dir=\"auto\"` على ترويسة الدرس وعناوين الصوت وترجمات المفردات ومن `<span lang=\"de\">LEKTION</span>`، مع بقاء `231` حالة شاشة في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة."
+    },
+    {
+      "id": "CR60-U60-verifier-and-60th-review-guard",
+      "scope": "tools/verify_course.py + tools/test_objective_quiz_prompt_bidi_review.py",
+      "title": "توسيع فاحص المنهج `verify_course.py` وإضافة الحارس الآلي رقم `60`",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "finding": "جرى تحديث `tools/verify_course.py` للتحقق من خلو جميع أهداف الدروس الـ`53` من رموز Markdown الخام ومطابقتها لعمود `source_objective` في `data/curriculum-file-audit.csv` ومن وجود شارات `lang=\"de\"` وحاويات `dir=\"auto\"` في `app.js` ومن سلامة `60` ملف مراجعة JSON، وأُنشئ الحارس `tools/test_objective_quiz_prompt_bidi_review.py`."
+    }
+  ]
+}

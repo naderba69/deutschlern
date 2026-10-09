@@ -326,6 +326,10 @@ def markdown_to_html(markdown: str) -> str:
     return "\n".join(out)
 
 
+def clean_objective_text(value: str) -> str:
+    return re.sub(r"\*\*|`", "", value).strip()
+
+
 def lesson_objective(markdown: str) -> str:
     for pattern in (
         r"\*\*الهدف:\*\*\s*([^\n]+)",
@@ -333,7 +337,7 @@ def lesson_objective(markdown: str) -> str:
     ):
         match = re.search(pattern, markdown)
         if match:
-            value = match.group(1).split("·")[0].strip()
+            value = clean_objective_text(match.group(1).split("·")[0])
             if value:
                 return value
     lines = markdown.splitlines()
@@ -345,13 +349,15 @@ def lesson_objective(markdown: str) -> str:
                     break
                 match = re.match(r"^\s*[-*+]\s+(.+)$", candidate)
                 if match:
-                    bullets.append(match.group(1).strip())
+                    bullets.append(clean_objective_text(match.group(1)))
             if bullets:
-                return "؛ ".join(bullets)
+                ends_with_dot = bullets[-1].endswith(".")
+                joined = "؛ ".join(item.rstrip(".؛ ").strip() for item in bullets)
+                return f"{joined}." if ends_with_dot and not joined.endswith(".") else joined
     for line in lines[1:]:
         stripped = line.strip()
         if stripped and not stripped.startswith(("**", ">", "|", "#")):
-            return stripped
+            return clean_objective_text(stripped)
     return "درس ألماني شامل مع أمثلة وتمارين أصلية."
 
 

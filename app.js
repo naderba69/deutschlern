@@ -705,7 +705,7 @@ function renderPerformanceTasks(tasks, scopeKey, version) {
     meaningClarity: 'إجابتي أو كلامي واضح ويمكن فهمه',
     targetSkill: 'استخدمت المهارة أو الصيغة المستهدفة'
   };
-  return `<section class="performance-check-panel"><div class="performance-check-heading"><div><small>AUFGABE · الأداء العملي</small><h2>طبّق ما تعلمته</h2><p>اكتب إجابتك أولًا. إذا طُلب منك الكلام، قُلها بصوت مرتفع بنفسك ثم راجع المعايير. لا يسجّل التطبيق صوتك ولا يستخدم خدمة خارجية؛ هذا تحقق ذاتي للتعلّم.</p></div><span>${tasks.length} مهام</span></div><div class="performance-task-list">${tasks.map((task, index) => {
+  return `<section class="performance-check-panel"><div class="performance-check-heading"><div><small><span lang="de">AUFGABE</span> · الأداء العملي</small><h2>طبّق ما تعلمته</h2><p>اكتب إجابتك أولًا. إذا طُلب منك الكلام، قُلها بصوت مرتفع بنفسك ثم راجع المعايير. لا يسجّل التطبيق صوتك ولا يستخدم خدمة خارجية؛ هذا تحقق ذاتي للتعلّم.</p></div><span>${tasks.length} مهام</span></div><div class="performance-task-list">${tasks.map((task, index) => {
     const evidence = performanceEvidenceFor(scopeKey, version, task.id);
     const selfCheck = task.selfCheck || {};
     const checks = (selfCheck.requiredChecks || ['taskCompletion', 'meaningClarity', 'targetSkill']).map((key) => `<label class="performance-check-option"><input type="checkbox" data-performance-check data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" data-criterion="${escapeHTML(key)}" ${evidence.checks?.[key] === true ? 'checked' : ''}><span>${escapeHTML(checkLabels[key] || key)}</span></label>`).join('');
@@ -1022,7 +1022,7 @@ function renderDailyPlanTask(task, index) {
   const action = done
     ? '<span class="daily-plan-done">تمت المهمة</span>'
     : `<button type="button" class="button-outline button-small" data-action="open-daily-task" data-task-key="${escapeHTML(task.key)}">${task.status === 'deferred' ? 'تابع الآن' : task.kind === 'review' ? 'ابدأ مراجعة قصيرة' : task.kind === 'gate' ? 'ابدأ التقييم' : 'تابع الدرس'}</button>`;
-  return `<li class="${classes}"><span class="daily-plan-index">${done ? icon('check', 15) : String(index + 1).padStart(2, '0')}</span><div class="daily-plan-task-copy"><div class="daily-plan-task-heading"><strong>${escapeHTML(title)}</strong><span class="daily-plan-status ${done ? 'is-done' : task.status === 'deferred' ? 'is-deferred' : ''}">${status}</span></div><p>${escapeHTML(getDailyPlanTaskDescription(task))}</p>${carryNote}</div>${action}</li>`;
+  return `<li class="${classes}"><span class="daily-plan-index">${done ? icon('check', 15) : String(index + 1).padStart(2, '0')}</span><div class="daily-plan-task-copy"><div class="daily-plan-task-heading"><strong dir="auto">${escapeHTML(title)}</strong><span class="daily-plan-status ${done ? 'is-done' : task.status === 'deferred' ? 'is-deferred' : ''}">${status}</span></div><p>${escapeHTML(getDailyPlanTaskDescription(task))}</p>${carryNote}</div>${action}</li>`;
 }
 
 function renderDailyPlan() {
@@ -1034,14 +1034,14 @@ function renderDailyPlan() {
   const optional = nextOptionalPlanStep(plan);
   const optionalMarkup = coreComplete
     ? optional?.type === 'lesson'
-      ? `<div class="daily-plan-optional"><div><small>توسّع اختياري · لا يغيّر عتبة الإتقان</small><strong>${escapeHTML(optional.lesson.title)}</strong><p>أكملت الأساسيات؛ يمكنك متابعة الخطوة التالية اليوم أو تركها لخطة لاحقة.</p></div><button type="button" class="button-primary button-small" data-action="open-lesson" data-id="${escapeHTML(optional.lesson.id)}">تابع اختياريًا ${icon('arrowLeft', 15)}</button></div>`
+      ? `<div class="daily-plan-optional"><div><small>توسّع اختياري · لا يغيّر عتبة الإتقان</small><strong dir="auto">${escapeHTML(optional.lesson.title)}</strong><p>أكملت الأساسيات؛ يمكنك متابعة الخطوة التالية اليوم أو تركها لخطة لاحقة.</p></div><button type="button" class="button-primary button-small" data-action="open-lesson" data-id="${escapeHTML(optional.lesson.id)}">تابع اختياريًا ${icon('arrowLeft', 15)}</button></div>`
       : optional?.type === 'gate'
         ? `<div class="daily-plan-optional"><div><small>توسّع اختياري اليوم · يبقى شرط التقدم قائمًا</small><strong>بوابة الإتقان A0 → A1</strong><p>لا يُفتح A1 إلا بعد اجتياز البوابة؛ ويمكنك البدء بها الآن أو في وقت آخر.</p></div><button type="button" class="button-primary button-small" data-action="begin-a0-gate">ابدأ البوابة ${icon('arrowLeft', 15)}</button></div>`
         : optional?.type === 'review'
           ? `<div class="daily-plan-optional"><div><small>اختياري</small><strong>راجع درسًا متقنًا</strong><p>الخطوات الأساسية لليوم منجزة. اختر مراجعة إضافية إذا رغبت.</p></div><button type="button" class="button-outline button-small" data-action="navigate" data-view="tracks">اختر درسًا للمراجعة ${icon('arrowLeft', 15)}</button></div>`
           : '<p class="daily-plan-optional-note">ستظهر المتابعة الاختيارية بعد إتاحة الخطوة التالية.</p>'
     : `<div class="daily-plan-defer"><p>يمكنك التوقف الآن؛ لا نفقد الإجابات ولا نعتبر التأجيل فشلًا. تبقى المهام الأساسية معلقة حتى تستأنفها.</p><button type="button" class="button-quiet button-small" data-action="defer-daily-plan">تعبت؟ رحّل الباقي إلى الغد</button></div>`;
-  return `<section class="daily-plan-panel" aria-labelledby="daily-plan-title"><div class="daily-plan-header"><div><small>PLAN DU JOUR · خطة مرنة</small><h2 id="daily-plan-title">خطة اليوم على قدر طاقتك</h2><p>المراجعة أولًا، ثم هدف تعلّم أساسي. يمكنك تقسيمهما على أكثر من جلسة.</p></div><div class="daily-plan-progress"><strong>${doneCount}<span> / ${coreTasks.length}</span></strong><small>مهام أساسية</small></div></div><ul class="daily-plan-list">${coreTasks.map((task, index) => renderDailyPlanTask(task, index)).join('')}</ul>${optionalMarkup}<p class="daily-plan-note">وقتك الاسترشادي ${formatStudyEstimate(state.profile.dailyGoal)} قابل للتعديل، وليس سقفًا أو شرطًا للإنجاز. أوقات الدروس تقديرية؛ تسجيل الوقت الفعلي سيأتي في تحسين لاحق.</p></section>`;
+  return `<section class="daily-plan-panel" aria-labelledby="daily-plan-title"><div class="daily-plan-header"><div><small><span lang="de">TAGESPLAN</span> · خطة مرنة</small><h2 id="daily-plan-title">خطة اليوم على قدر طاقتك</h2><p>المراجعة أولًا، ثم هدف تعلّم أساسي. يمكنك تقسيمهما على أكثر من جلسة.</p></div><div class="daily-plan-progress"><strong>${doneCount}<span> / ${coreTasks.length}</span></strong><small>مهام أساسية</small></div></div><ul class="daily-plan-list">${coreTasks.map((task, index) => renderDailyPlanTask(task, index)).join('')}</ul>${optionalMarkup}<p class="daily-plan-note">وقتك الاسترشادي ${formatStudyEstimate(state.profile.dailyGoal)} قابل للتعديل، وليس سقفًا أو شرطًا للإنجاز. أوقات الدروس تقديرية، بينما يُحتسب وقت الدراسة الفعلي تلقائيًا أثناء الجلسة النشطة.</p></section>`;
 }
 
 function getLevelProgress(levelId) {
@@ -1356,13 +1356,13 @@ function renderDashboard() {
     <section class="hero-banner">
       <div class="hero-copy">
         <div class="hero-kicker"><span class="kicker-mark"></span><span>مسار يتقدّم معك — من A0 حتى B2</span></div>
-        <h1>مرحبًا ${name}،<br><span>Deutsch على مقاسك.</span></h1>
+        <h1>مرحبًا ${name}،<br><span><span lang="de">Deutsch</span> على مقاسك.</span></h1>
         <p>تعلّم الألمانية بخطوات صغيرة عبر 53 درسًا تشمل الشرح والحوارات والتمارين ومفاتيح الإجابة، مع مراجعة مفردات تحفظ تقدمك على جهازك.</p>
         <div class="hero-actions">${action}<button type="button" class="button-secondary" data-action="navigate" data-view="tracks">${icon('book', 16)} خريطة المسار</button></div>
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="art-circle"></div><div class="art-sun"></div><span class="hero-spark one"></span><span class="hero-spark two"></span>
-        <div class="art-card"><div class="art-card-top"><span>WORTSCHATZ · 01</span><span class="art-card-dots"><i></i><i></i><i></i></span></div><div class="art-word" dir="ltr" lang="de">Guten Tag!</div><div class="art-translation">مرحبًا / نهارك سعيد</div><div class="art-divider"></div><div class="art-example" dir="ltr" lang="de">Wie geht es dir heute?</div></div>
+        <div class="art-card"><div class="art-card-top"><span><span lang="de">WORTSCHATZ</span> · 01</span><span class="art-card-dots"><i></i><i></i><i></i></span></div><div class="art-word" dir="ltr" lang="de">Guten Tag!</div><div class="art-translation">مرحبًا / نهارك سعيد</div><div class="art-divider"></div><div class="art-example" dir="ltr" lang="de">Wie geht es dir heute?</div></div>
         <div class="art-levels" dir="ltr"><span>A0 → B2</span></div>
       </div>
     </section>
@@ -1389,7 +1389,7 @@ function renderDashboard() {
       </div>
       <div class="panel nudge-panel">
         <div class="nudge-badge">${icon('spark', 19)}</div>
-        <h3>${nextTitle}</h3>
+        <h3 dir="auto">${nextTitle}</h3>
         <p>${nextDescription}</p>
         ${nextAction}
       </div>
@@ -1426,7 +1426,7 @@ function renderLevelCard(level) {
 function renderTracks() {
   return `<div class="page-header"><div><h1>المسارات التعليمية</h1><p>53 درسًا من A0 حتى B2. يبدأ المسار من A0، وتُفتح الدروس تباعًا بعد إثبات الإتقان.</p></div></div>
     <div>${course.levels.map((level) => renderTrackLevel(level)).join('')}</div>
-    <div class="source-note">${icon('info', 16)}<span>تُعرض الدروس داخل التطبيق من ملفات Markdown في مجلد <b>content/</b>، ويُعاد بناء حزمة البيانات محليًا بالأمر <code>python3 tools/build_course.py</code>. التقييم غير متاح للانتقال حتى يُستكمل ويُراجع؛ لا تُسجّل القراءة وحدها إتقانًا.</span></div>`;
+    <div class="source-note">${icon('info', 16)}<span>تُعرض الدروس داخل التطبيق من ملفات Markdown في مجلد <b dir="ltr">content/</b>، ويُعاد بناء حزمة البيانات محليًا بالأمر <code dir="ltr">python3 tools/build_course.py</code>. التقييم غير متاح للانتقال حتى يُستكمل ويُراجع؛ لا تُسجّل القراءة وحدها إتقانًا.</span></div>`;
 }
 
 function renderTrackLevel(level) {
@@ -1453,7 +1453,7 @@ function renderLessonRow(lesson, index) {
   const duration = lesson.durationLabel || `${lesson.minutes} دقيقة`;
   const actionLabel = mastered ? 'راجع الدرس' : accessible ? 'افتح الدرس' : 'مقفل';
   const statusLabel = mastered ? 'متقن' : !ready ? 'التقييم غير جاهز بعد؛ الدرس مقفل' : accessible ? 'متاح للتعلّم' : 'يتطلب إتقان المتطلبات السابقة';
-  return `<div class="lesson-row ${mastered ? 'is-complete' : ''} ${accessible ? '' : 'is-locked'}"><div class="lesson-row-number">${mastered ? icon('check', 16) : String(index + 1).padStart(2, '0')}</div><div><h3>${escapeHTML(lesson.title)}</h3><p>${escapeHTML(lesson.objective)} · ${escapeHTML(duration)} · ${statusLabel}</p></div><button type="button" class="button-outline" data-action="open-lesson" data-id="${escapeHTML(lesson.id)}" ${accessible ? '' : 'disabled'}>${actionLabel} ${accessible ? icon('arrowLeft', 14) : ''}</button></div>`;
+  return `<div class="lesson-row ${mastered ? 'is-complete' : ''} ${accessible ? '' : 'is-locked'}"><div class="lesson-row-number">${mastered ? icon('check', 16) : String(index + 1).padStart(2, '0')}</div><div><h3 dir="auto">${escapeHTML(lesson.title)}</h3><p dir="auto">${escapeHTML(lesson.objective)} · ${escapeHTML(duration)} · ${statusLabel}</p></div><button type="button" class="button-outline" data-action="open-lesson" data-id="${escapeHTML(lesson.id)}" ${accessible ? '' : 'disabled'}>${actionLabel} ${accessible ? icon('arrowLeft', 14) : ''}</button></div>`;
 }
 
 function renderLevelPage() {
@@ -1539,8 +1539,8 @@ function renderA0GateAssessment() {
     else if (gateSession.checked && index === gateSession.selected) classes += ' incorrect';
     return `<button type="button" class="${classes}" data-action="select-gate-answer" data-index="${index}" ${gateSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${gateSession.checked && index === question.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
-  const feedback = gateSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة.</strong> ' : '<strong>راجع هذه النقطة.</strong> '}${escapeHTML(question.explanation)}</div>` : '';
-  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}${renderA0GateScopeNote()}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto">${escapeHTML(question.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
+  const feedback = gateSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة.</strong> ' : '<strong>راجع هذه النقطة.</strong> '}<span dir="auto"${isGermanTextSnippet(question.explanation) ? ' lang="de"' : ''}>${escapeHTML(question.explanation)}</span></div>` : '';
+  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}${renderA0GateScopeNote()}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto"${isGermanTextSnippet(question.prompt) ? ' lang="de"' : ''}>${escapeHTML(question.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
 }
 
 function renderA0GatePerformance(gate) {
@@ -1677,7 +1677,7 @@ function renderAudioAssets(lessonId, assetIds = null) {
   const reviewNote = hasPendingReview
     ? '<p class="audio-review-note">التسجيلات متاحة لك للاستماع والمراجعة داخل هذا الدرس.</p>'
     : '';
-  return `<section class="lesson-audio-panel" aria-label="التسجيلات الصوتية"><div class="audio-panel-heading"><div><small>HÖREN · الاستماع</small><h2>استمع إلى الألمانية</h2></div><span class="count">${hasPendingReview ? 'متاحة للمراجعة' : 'النسخة النهائية'}</span></div>${reviewNote}<div class="audio-assets-list">${assets.map((asset) => {
+  return `<section class="lesson-audio-panel" aria-label="التسجيلات الصوتية"><div class="audio-panel-heading"><div><small><span lang="de">HÖREN</span> · الاستماع</small><h2>استمع إلى الألمانية</h2></div><span class="count">${hasPendingReview ? 'متاحة للمراجعة' : 'النسخة النهائية'}</span></div>${reviewNote}<div class="audio-assets-list">${assets.map((asset) => {
     const transcript = asset.segments.map((segment) => `<div class="audio-transcript-line"><strong dir="auto"${isGermanTextSnippet(segment.speaker) ? ' lang="de"' : ''}>${escapeHTML(segment.speaker)}</strong><span dir="ltr" lang="de">${escapeHTML(segment.text)}</span></div>`).join('');
     const transcriptLocked = asset.transcriptPolicy === 'hide_until_first_attempt' && state.audioTranscriptUnlocks?.[asset.assetId] !== true;
     const transcriptView = transcriptLocked
@@ -1686,7 +1686,7 @@ function renderAudioAssets(lessonId, assetIds = null) {
     const reviewStatus = asset.status === 'ready'
       ? '<span class="audio-asset-status is-final">نهائي</span>'
       : '<span class="audio-asset-status is-review">للمراجعة</span>';
-    return `<article class="audio-asset-card"><div class="audio-asset-title"><strong>${escapeHTML(asset.title)}</strong><div class="audio-asset-meta"><span>${asset.segments.length > 1 ? 'حوار بأصوات ثابتة' : 'تسجيل الدرس'}</span>${reviewStatus}</div></div><div class="audio-asset-actions"><button type="button" class="button-outline button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div>${transcriptView}</article>`;
+    return `<article class="audio-asset-card"><div class="audio-asset-title"><strong dir="auto">${escapeHTML(asset.title)}</strong><div class="audio-asset-meta"><span>${asset.segments.length > 1 ? 'حوار بأصوات ثابتة' : 'تسجيل الدرس'}</span>${reviewStatus}</div></div><div class="audio-asset-actions"><button type="button" class="button-outline button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-audio-asset" data-audio-id="${escapeHTML(asset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div>${transcriptView}</article>`;
   }).join('')}</div></section>`;
 }
 
@@ -1721,19 +1721,19 @@ function renderLessonOverview(lesson) {
     : lessonSession.pausedMode === 'quiz'
       ? 'استأنف التقييم'
       : mastered ? 'أعد تقييم الإتقان' : 'ابدأ تقييم الإتقان';
-  const vocabularyDrawer = words.length ? `<section class="lesson-section lesson-vocab-section"><details class="vocab-review-drawer"><summary><span><small>WORTSCHATZ · بطاقات المراجعة</small><strong>تدرّب على مفردات الدرس</strong></span><span class="count">${words.length} كلمة/عبارة</span></summary><div class="vocab-grid">${words.map((word) => `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : ''}</article>`).join('')}</div></details></section>` : '';
+  const vocabularyDrawer = words.length ? `<section class="lesson-section lesson-vocab-section"><details class="vocab-review-drawer"><summary><span><small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small><strong>تدرّب على مفردات الدرس</strong></span><span class="count">${words.length} كلمة/عبارة</span></summary><div class="vocab-grid">${words.map((word) => `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : ''}</article>`).join('')}</div></details></section>` : '';
   return `<button class="lesson-back" type="button" data-action="back-to-level">${icon('arrow', 15)} عودة إلى ${lesson.level}</button>
-    <section class="lesson-hero"><div><div class="lesson-level-tag"><span class="level-token theme-${level.theme}">${level.id}</span><span>محتوى الدرس الكامل · ${escapeHTML(duration)}</span></div><h1>${escapeHTML(lesson.title)}</h1><p>${escapeHTML(lesson.objective)}</p></div><div class="lesson-time">${icon('clock', 16)} ${escapeHTML(duration)}</div></section>
+    <section class="lesson-hero"><div><div class="lesson-level-tag"><span class="level-token theme-${level.theme}">${level.id}</span><span>محتوى الدرس الكامل · ${escapeHTML(duration)}</span></div><h1 dir="auto">${escapeHTML(lesson.title)}</h1><p dir="auto">${escapeHTML(lesson.objective)}</p></div><div class="lesson-time">${icon('clock', 16)} ${escapeHTML(duration)}</div></section>
     <div class="lesson-layout">
       <div class="lesson-main-column">
         ${lessonAudio.audioPanel}
-        <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small>LEKTION · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">مفتاح الإجابات قابل للفتح</span></div><article class="lesson-document" dir="rtl">${lessonAudio.contentHtml}</article></section>
+        <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small><span lang="de">LEKTION</span> · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">مفتاح الإجابات قابل للفتح</span></div><article class="lesson-document" dir="rtl">${lessonAudio.contentHtml}</article></section>
         ${vocabularyDrawer}
         <section class="lesson-finish-panel"><div><strong>${mastered ? 'هذا الدرس متقن' : assessmentIsReady ? 'حان وقت التحقق من الإتقان' : 'تقييم هذا الدرس قيد الإعداد'}</strong><span>${mastered ? `أفضل نتيجة معتمدة: ${state.completedLessons[lesson.id].score}%` : assessmentIsReady ? 'يلزم 80% على الأقل وإثبات أهداف الدرس لفتح الخطوة التالية.' : 'يمكنك دراسة المحتوى كاملًا الآن؛ لكن القراءة وحدها لا تسجّل الإتقان ولا تفتح الدرس التالي.'}</span></div>${assessmentIsReady ? `<button type="button" class="button-primary" data-action="begin-quiz">${quizActionLabel} ${icon('check', 16)}</button>` : '<span class="plan-chip">غير متاح بعد</span>'}</section>
       </div>
       <aside class="lesson-aside">
-        <div class="study-aside-card"><div class="study-objective">${icon('target', 18)}</div><h3>هدف هذا الدرس</h3><p>${escapeHTML(lesson.objective)}</p></div>
-        <div class="study-aside-card"><h3>طريقة الدراسة</h3><p>ابدأ بالأهداف والمراجعة، ثم أجب عن التمارين قبل فتح مفتاح الحل. سيظهر تقييم إتقان مستقل عند اكتمال إعداده.</p></div>
+        <div class="study-aside-card"><div class="study-objective">${icon('target', 18)}</div><h3>هدف هذا الدرس</h3><p dir="auto">${escapeHTML(lesson.objective)}</p></div>
+        <div class="study-aside-card"><h3>طريقة الدراسة</h3><p>${assessmentIsReady ? 'ابدأ بالأهداف والمراجعة، ثم أجب عن التمارين قبل فتح مفتاح الحل، وأتمم تقييم الإتقان ومهام الأداء العملي.' : 'ابدأ بالأهداف والمراجعة، ثم أجب عن التمارين قبل فتح مفتاح الحل. سيظهر تقييم إتقان مستقل عند اكتمال إعداده.'}</p></div>
         <div class="study-aside-card"><h3>التقدّم محلي</h3><p>${mastered ? 'هذا الدرس مسجّل بوصفه متقنًا.' : 'لا يُسجّل إتقان الدرس بالقراءة أو بزر يدوي؛ يلزم اجتياز التقييم وتحقيق الهدف.'} بطاقات المفردات متاحة للمراجعة أيضًا.</p></div>
       </aside>
     </div>`;
@@ -1754,11 +1754,11 @@ function renderLessonQuiz(lesson) {
     else if (lessonSession.checked && index === lessonSession.selected) classes += ' incorrect';
     return `<button type="button" class="${classes}" data-action="select-lesson-answer" data-index="${index}" ${lessonSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${lessonSession.checked && index === q.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
-  const feedback = lessonSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>ليس تمامًا.</strong> '}${escapeHTML(q.explanation)}</div>` : '';
+  const feedback = lessonSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>ليس تمامًا.</strong> '}<span dir="auto"${isGermanTextSnippet(q.explanation) ? ' lang="de"' : ''}>${escapeHTML(q.explanation)}</span></div>` : '';
   const nextLabel = current === total ? 'عرض النتيجة' : 'السؤال التالي';
   return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="quiz-exit">${icon('arrow', 15)} العودة إلى شرح الدرس</button>
     <div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${percent}%"></span></div></div><span class="plan-chip">${icon('clock', 14)} ${lesson.minutes} د</span></div>
-    <section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم الإتقان · ${escapeHTML(lesson.level)}</div><h1 dir="auto">${escapeHTML(q.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="quiz-exit">إنهاء التدريب</button>${lessonSession.checked ? `<button type="button" class="button-primary" data-action="next-lesson-question">${nextLabel} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-lesson-answer" ${lessonSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 16)}</button>`}</div></section>
+    <section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم الإتقان · ${escapeHTML(lesson.level)}</div><h1 dir="auto"${isGermanTextSnippet(q.prompt) ? ' lang="de"' : ''}>${escapeHTML(q.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="quiz-exit">إنهاء التدريب</button>${lessonSession.checked ? `<button type="button" class="button-primary" data-action="next-lesson-question">${nextLabel} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-lesson-answer" ${lessonSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 16)}</button>`}</div></section>
   </div>`;
 }
 
@@ -1917,7 +1917,7 @@ function renderFlashcard(word, left) {
   const reviewInfo = state.wordReviews[word.id];
   const translation = reviewSession.revealed ? escapeHTML(word.translation) : 'فكّر بالمعنى، ثم اكشف الإجابة';
   const example = reviewSession.revealed && word.example ? `<div class="flash-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : '';
-  return `<section class="flashcard"><small>${escapeHTML(word.level)} · ${escapeHTML(word.lessonTitle)}</small><div class="flash-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="flash-translation">${translation}</div>${example}
+  return `<section class="flashcard"><small>${escapeHTML(word.level)} · ${escapeHTML(word.lessonTitle)}</small><div class="flash-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="flash-translation" dir="auto">${translation}</div>${example}
     <div class="flashcard-actions">${!reviewSession.revealed ? `<button type="button" class="button-primary" data-action="flip-card">اكشف المعنى ${icon('spark', 15)}</button>` : `<button type="button" class="button-outline button-small" data-action="pronounce" data-word="${escapeHTML(word.word)}">${icon('volume', 14)} استمع</button>`}</div>
     ${reviewSession.revealed ? `<div class="review-ratings"><button type="button" class="button-outline" data-action="rate-word" data-rating="again">أحتاج إلى مراجعتها</button><button type="button" class="button-primary" data-action="rate-word" data-rating="know">أتقنتها ${icon('check', 15)}</button></div>` : ''}
     <div class="review-session-meta">البطاقة ${reviewSession.index + 1} من ${reviewSession.cards.length}${reviewInfo?.reps ? ` · راجعتها ${reviewInfo.reps} مرة` : ''}${reviewSession.optional ? ' · مراجعة اختيارية' : ''}</div>

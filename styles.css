@@ -277,15 +277,15 @@ svg { display: block; flex: 0 0 auto; }
 .lesson-row { display: grid; grid-template-columns: 38px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 0; border-top: 1px solid #f0f0e9; }
 .lesson-row-number { width: 32px; height: 32px; display: grid; place-items: center; border: 1px solid #e9ece5; border-radius: 10px; color: var(--muted); font-size: 10px; font-weight: 700; }
 .lesson-row.is-complete .lesson-row-number { border-color: #d5e6d7; color: var(--green); background: #eaf3eb; }
-.lesson-row h3 { margin: 0; font-size: 12px; font-weight: 800; }
-.lesson-row p { margin: 2px 0 0; color: var(--muted); font-size: 10px; }
+.lesson-row h3 { margin: 0; font-size: 12px; font-weight: 800; unicode-bidi: plaintext; }
+.lesson-row p { margin: 2px 0 0; color: var(--muted); font-size: 10px; unicode-bidi: plaintext; }
 .lesson-row .button-outline { min-height: 34px; font-size: 10px; }
 
 .lesson-back { display: inline-flex; align-items: center; gap: 7px; margin-bottom: 13px; padding: 0; border: 0; color: var(--muted); background: transparent; cursor: pointer; font-size: 11px; }
 .lesson-back svg { width: 16px; height: 16px; }
 .lesson-hero { margin-bottom: 16px; padding: 24px 25px; border: 1px solid #e7ece3; border-radius: 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: #f4f7f1; }
-.lesson-hero h1 { margin: 7px 0 4px; font-size: 23px; line-height: 1.4; }
-.lesson-hero p { max-width: 720px; margin: 0; color: var(--muted); font-size: 11px; }
+.lesson-hero h1 { margin: 7px 0 4px; font-size: 23px; line-height: 1.4; unicode-bidi: plaintext; }
+.lesson-hero p { max-width: 720px; margin: 0; color: var(--muted); font-size: 11px; unicode-bidi: plaintext; }
 .lesson-level-tag { display: inline-flex; align-items: center; gap: 7px; color: #53735b; font-size: 10px; font-weight: 800; }
 .lesson-level-tag .level-token { height: 24px; min-width: 34px; }
 .lesson-time { display: inline-flex; align-items: center; gap: 7px; padding: 9px 12px; border: 1px solid #e6eadf; border-radius: 12px; color: var(--muted); background: rgba(255,255,255,.7); font-size: 10px; white-space: nowrap; }
@@ -307,7 +307,7 @@ svg { display: block; flex: 0 0 auto; }
 .icon-button { width: 28px; height: 28px; border: 1px solid #edf0e9; border-radius: 8px; display: grid; place-items: center; color: var(--muted); background: #fff; cursor: pointer; }
 .icon-button:hover { color: var(--green); border-color: #d5e3d6; }
 .icon-button svg { width: 14px; height: 14px; }
-.word-translation { min-height: 22px; margin-top: 5px; color: #58685e; font-size: 11px; }
+.word-translation { min-height: 22px; margin-top: 5px; color: #58685e; font-size: 11px; unicode-bidi: plaintext; text-align: start; }
 .word-example { margin-top: 5px; color: var(--muted); font-size: 9px; unicode-bidi: plaintext; text-align: start; }
 .grammar-box { padding: 16px; border: 1px solid #e7ecdf; border-radius: 14px; background: #f6f8f1; }
 .grammar-box h3 { margin: 0 0 6px; color: #385a42; font-size: 12px; }
@@ -318,7 +318,7 @@ svg { display: block; flex: 0 0 auto; }
 .example-item .ar { margin-top: 2px; color: var(--muted); font-size: 10px; }
 .study-aside-card { padding: 17px; border: 1px solid #e9ede4; border-radius: 16px; background: var(--paper); }
 .study-aside-card h3 { margin: 0; font-size: 12px; }
-.study-aside-card p { margin: 7px 0 0; color: var(--muted); font-size: 10px; line-height: 1.8; }
+.study-aside-card p { margin: 7px 0 0; color: var(--muted); font-size: 10px; line-height: 1.8; unicode-bidi: plaintext; }
 .study-objective { width: 38px; height: 38px; margin-bottom: 11px; display: grid; place-items: center; border-radius: 12px; color: var(--muted); background: #eaf1e7; }
 .study-objective svg { width: 18px; height: 18px; }
 .lesson-action-panel { padding: 17px; border-radius: 16px; color: #f9faf5; background: var(--green); }
@@ -364,7 +364,7 @@ svg { display: block; flex: 0 0 auto; }
 .audio-assets-list { display: grid; gap: 9px; }
 .audio-asset-card { padding: 12px; border: 1px solid #e7ece3; border-radius: 12px; background: #fff; }
 .audio-asset-title { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
-.audio-asset-title strong { color: #365940; font-size: 11px; }
+.audio-asset-title strong { color: #365940; font-size: 11px; unicode-bidi: plaintext; }
 .audio-asset-meta { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 7px; }
 .audio-asset-title span { color: var(--muted); font-size: 9px; }
 .audio-asset-title .audio-asset-status { padding: 3px 7px; border-radius: 999px; font-weight: 800; }
@@ -481,7 +481,7 @@ svg { display: block; flex: 0 0 auto; }
 .flashcard { min-height: 280px; padding: 28px; border: 1px solid #e8ebe3; border-radius: 22px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--paper); box-shadow: var(--shadow); text-align: center; }
 .flashcard small { color: var(--muted); font-size: 10px; }
 .flashcard .flash-word { margin: 18px 0 5px; color: #214f3c; font-family: Georgia, "Times New Roman", serif; font-size: clamp(27px,5vw,39px); font-weight: 700; direction: ltr; }
-.flashcard .flash-translation { min-height: 27px; color: #5c6e62; font-size: 15px; }
+.flashcard .flash-translation { min-height: 27px; color: #5c6e62; font-size: 15px; unicode-bidi: plaintext; }
 .flashcard .flash-example { margin-top: 13px; color: var(--muted); font-size: 11px; unicode-bidi: plaintext; }
 .flashcard-actions { margin-top: 15px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .review-ratings { margin-top: 13px; display: flex; justify-content: center; gap: 10px; }
