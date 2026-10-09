@@ -4,7 +4,7 @@
 
 ## التسليم والمتابعة
 
-- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التنفيذ الآن بعنوان `Complete CR54 B2.12 reported-speech review and v103 cache` ثم يُرفع التقرير الكامل `Add B2.12 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `67df18827281ab1a0f5a9e8c5afaba275a838b62` مرفوع ومتطابق HEAD/origin. يُرفع التقرير الكامل الآن بعنوان `Add B2.12 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
 - **الملفات:** `content/B2/lesson-12-leisure-media-reported-speech.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v103`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_12_review.py`، `data/reviews/b2-12-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.60)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
 - **المراجعة:** 89 وحدة/43 بندًا/11 جزء نموذج/30 خيارًا/6 معايير؛ 55 مرجعًا مقروءًا بالكامل في 60 جزءًا + 3 استعلامات بحث، و4 روابط 404/إعادة توجيه مستبعدة. الخيارات والفهارس والروابط و80% وحدا 220/250 ثابتة. النموذجان 634/910 أحرف؛ P01 خمس جمل كتابة فقط، وP02 ست جمل كتابة وجهر، دون شريك أو تسجيل.
 - **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) والبوابة `A0→A1` منفصلة؛ 54 حارس مراجعة**، `b2-12-v2` و`v103`. سجل v1 محفوظ لكنه لا يمنح إتقان v2.
