@@ -1532,6 +1532,40 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     } finally {state.completedLessons=prior;state.levelChecks=checks;}
   })()`,context),true,'retain B1.12 old record but require current score/evidence/version; reject stale drafts');
 
+  // CR43: written habit paragraph and spoken colleague briefing; B2.1 version isolation.
+  assert.equal(courseData.lessons.find(l => l.id === 'b2-01-time-management-habits-reading').assessment.version, 'b2-01-v2');
+  assert.equal(vm.runInContext(`(() => {
+    const l = findLesson('b2-01-time-management-habits-reading');
+    const responses = ["Früher habe ich beim Lesen oft zwischen Nachrichten und langen Texten gewechselt. Jetzt wähle ich am Abend zuerst zwei feste Zeitblöcke für meinen Kurs aus. Ich bleibe konzentriert, indem ich mein Telefon ausschalte und nach jedem Abschnitt eine kurze Notiz mache. Außerdem führe ich eine kurze Prioritätenliste, um keine wichtige Aufgabe zu vergessen. Meinen Plan passe ich schrittweise an, damit er im Alltag realistisch bleibt.", "In der Aufnahme berichtet die Person, dass sie früher oft zwischen mehreren Aufgaben gewechselt hat und jetzt zwei Zeitblöcke für konzentrierte Arbeit plant. Sie erledigt ähnliche Aufgaben nacheinander und notiert bei längeren Texten Fragen am Rand. Dadurch, dass sie kurze Pausen einplant, kann sie sich besser auf den nächsten Abschnitt konzentrieren. Zusätzlich können wir Ablenkungen verringern, indem wir während eines Zeitblocks alle Benachrichtigungen am Telefon ausschalten. Wir legen feste Ruhezeiten für Nachrichten fest, um schwierige Texte ohne ständige Unterbrechung zu bewältigen."];
+    return l.performanceTasks.every((t,i) => {
+      const e = {response:responses[i], checks:{taskCompletion:true,meaningClarity:true,targetSkill:true},spokenAloud:i===1};
+      return performanceTaskEvidenceReady(t,e) && !performanceTaskEvidenceReady(t,{...e,response:'Ich lerne.'})
+        && t.selfCheck.requiredChecks.every(k => !performanceTaskEvidenceReady(t,{...e,checks:{...e.checks,[k]:false}}))
+        && (i===0 || !performanceTaskEvidenceReady(t,{...e,spokenAloud:false}));
+    });
+  })()`, context), true, 'B2.1 models fit thresholds; habit paragraph is writing only, briefing requires speech, both require all checks');
+  assert.match(vm.runInContext(`renderPerformanceTasks([findLesson('b2-01-time-management-habits-reading').performanceTasks[1]], 'lesson:b2-01-time-management-habits-reading', 'b2-01-v2')`,context), /data-performance-spoken/);
+  assert.doesNotMatch(vm.runInContext(`renderPerformanceTasks([findLesson('b2-01-time-management-habits-reading').performanceTasks[0]], 'lesson:b2-01-time-management-habits-reading', 'b2-01-v2')`,context), /data-performance-spoken/);
+  assert.equal(vm.runInContext(`(() => {
+    const prior=state.completedLessons, checks=state.levelChecks;
+    try {
+      const l=findLesson('b2-01-time-management-habits-reading');
+      const next=findLesson('b2-02-career-formal-communication-konjunktiv1');
+      const old={score:100,mastered:true,goalMet:true,performanceEvidenceCompleted:true,assessmentVersion:'b2-01-v1'};
+      state.completedLessons=Object.fromEntries(course.lessons.slice(0,course.lessons.findIndex(x=>x.id===l.id)).map(x=>[x.id,{...old,assessmentVersion:x.assessment.version}]));
+      state.levelChecks={'A0-A1':{...old,assessmentVersion:course.a0TransitionCheck.assessment.version}};
+      state.completedLessons[l.id]=old;
+      const blocked=!isLessonMastered(l)&&!isLessonAccessible(next)&&state.completedLessons[l.id]===old;
+      const draft={id:l.id,assessmentVersion:'b2-01-v1',mode:'quiz',questionIndex:0,selected:null,checked:false,answers:[],completed:false};
+      const stale=restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson')===null;
+      draft.assessmentVersion='b2-01-v2';
+      state.completedLessons[l.id]={...old,assessmentVersion:'b2-01-v2'};
+      const current=isLessonMastered(l)&&isLessonAccessible(next)&&!!restoreAssessmentSession(draft,l.assessment,l.quiz,l.id,'lesson');
+      state.completedLessons[l.id].performanceEvidenceCompleted=false;
+      return blocked&&stale&&current&&!isLessonAccessible(next);
+    } finally {state.completedLessons=prior;state.levelChecks=checks;}
+  })()`,context),true,'retain B2.1 old record but require current score/evidence/version; reject stale drafts');
+
   const expectedAudioLessonByPrefix = {
     "DL-A0-01": "a0-01-alphabet",
     "DL-A0-02": "a0-02-greetings",
@@ -2737,7 +2771,8 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   const b2MethodQuestionSources = new Set(b2MethodAssessment.quiz.flatMap((question) => question.sourceTaskIds));
   for (let task = 1; task <= 7; task += 1) assert.ok(b2MethodQuestionSources.has(`DL-B2-01-T0${task}`), `B2.1 quiz must cover source task T0${task}`);
   assert.ok(b2MethodAssessment.quiz.every((question) => question.objectiveIds.includes("DL-B2-01-G01")), "all B2.1 questions must map to the lesson objective");
-  assert.ok(b2MethodAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-01-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false && task.modality?.includes("writing") && task.modality?.includes("speaking") && task.selfCheck?.speakAloud === true), "B2.1 performance tasks must map to T08 and offer written/oral self-checks without recording");
+  assert.ok(b2MethodAssessment.performanceTasks.every((task) => task.sourceTaskIds.includes("DL-B2-01-T08") && task.evaluationStatus === "ready" && task.selfCheck?.method === "local_self_check" && task.selfCheck?.audioRequired === false), "B2.1 performance tasks must map to T08 and remain independent of audio files");
+  assert.deepEqual(b2MethodAssessment.performanceTasks.map(t => t.modality), [["writing"],["writing","speaking"]]);
   assert.deepEqual(b2MethodAssessment.performanceTasks.find((task) => task.id === "DL-B2-01-P02").sourceTaskIds, ["DL-B2-01-T06", "DL-B2-01-T08"], "B2.1 P02 must link the written listening text and T08 method description");
   const methodAssets = courseData.audioAssets.filter((asset) => asset.lessonId === b2MethodAssessment.id);
   assert.equal(methodAssets.length, 5);
@@ -2750,7 +2785,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
     assert.ok(methodAssets[0].segments[0].text.includes(term), `B2.1 vocabulary must include ${term}`);
   }
   assert.equal(methodAssets[0].segments[0].voiceId, "voice-02");
-  const methodExamplesSource = b2MethodSource.split("## " + methodHeadings[1])[1].split("## " + methodHeadings[2])[0];
+  const methodExamplesSource = b2MethodSource.split("## " + methodHeadings[1])[1].split("### مساعدة قبل النصوص والمهمات")[0];
   const methodExamples = [...methodExamplesSource.matchAll(/^- \*\*(.+?)\*\*/gm)].map((match) => match[1]);
   assert.equal(methodExamples.length, 5);
   assert.equal(methodAssets[1].segments[0].text, methodExamples.join(" "), "B2.1 models must include all five source examples, including method vs purpose");
@@ -2804,7 +2839,7 @@ vm.runInContext(appSource, context, { filename: "app.js" });
   assert.deepEqual(b2MethodAssessment.performanceTasks.find((task) => task.id === "DL-B2-01-P01").sourceTaskIds, ["DL-B2-01-T08"], "B2.1 P01 must link directly to the T08 practice");
   assert.ok(b2MethodAssessment.performanceTasks.every((task) => /indem أو dadurch, dass/.test(task.prompt) && /um … zu/.test(task.prompt)), "both B2.1 performance prompts must explicitly require a method link and an um … zu purpose link");
   assert.ok(b2MethodAssessment.performanceTasks.every((task) => /indem أو dadurch, dass/.test(task.criteria?.targetSkill) && /um … zu/.test(task.criteria?.targetSkill) && /الغاية/.test(task.criteria?.meaningClarity)), "both B2.1 local rubrics must explicitly assess the method/purpose distinction");
-  const b2MethodRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[0].performanceTasks, 'lesson:b2-01-time-management-habits-reading', 'b2-01-v1')", context);
+  const b2MethodRubricHtml = vm.runInContext("renderPerformanceTasks(getLessonsInLevel('B2')[0].performanceTasks, 'lesson:b2-01-time-management-habits-reading', 'b2-01-v2')", context);
   assert.match(b2MethodRubricHtml, /معايير التحقق المحلي/);
   assert.match(b2MethodRubricHtml, /indem/);
   assert.match(b2MethodRubricHtml, /dadurch, dass/);

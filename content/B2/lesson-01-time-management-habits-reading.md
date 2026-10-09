@@ -1,6 +1,6 @@
 # B2.1 — إدارة الوقت والعادات والقراءة: indem وdadurch, dass
 
-**المدة:** 45–50 دقيقة · **المهارات:** قراءة مركّزة، استماع، قواعد، تنظيم المهام، كتابة وشرح شفهي<br>
+**المدة المقترحة:** 45–50 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة مركّزة، استماع اختياري، قواعد، تنظيم المهام، كتابة وجهر<br>
 **الهدف:** أستطيع أن أشرح طريقةً لتحسين عادة باستخدام **indem** أو **dadurch, dass**، وأذكر الغاية باستخدام **um … zu**، وأميّز بين الطريقة والغاية كتابةً أو شفهيًا.
 
 ## 1) مفردات الوقت والقراءة المركّزة
@@ -22,9 +22,11 @@
 | bewältigen | bewältigt | ينجز / يتعامل مع |
 | realistisch / schrittweise | — | واقعيّ / تدريجيًا |
 
+تنبيه مفردات: Überblick مذكر وجمعه النادر Überblicke، ويستعمل في الدرس بالمفرد في تعبير den Überblick behalten. الفعلان abschalten وausschalten منفصلان (schaltet ab / schaltet aus؛ وفي الجملة التابعة ausschaltet موصولًا)، ولـabschalten معنى مجازي في المحادثة هو الاسترخاء وفصل الذهن عن العمل، أما في الدرس فالمقصود إيقاف الهاتف أو الإشعارات. الكلمة bündeln يجوز فيها مع ich صيغتا ich bündele وich bündle. هذه توضيحات مكتوبة لا تغييرات في التسجيل.
+
 ## 2) شرح الطريقة بـindem وdadurch, dass
 
-نستعمل **indem** و**dadurch, dass** لشرح الوسيلة أو الطريقة التي نحقق بها نتيجةً؛ وغالبًا يجيبان عن سؤال **Wie? — كيف؟** يأتي الفعل المصرف في نهاية جملة **indem** أو جملة **dass**.
+نستعمل **indem** و**dadurch, dass** لشرح الوسيلة أو الطريقة التي نحقق بها نتيجةً؛ وغالبًا يجيبان عن سؤال **Wie? — كيف؟** يأتي الفعل المصرف في نهاية جملة **indem** أو جملة **dass**؛ وإذا تقدمت الجملة التابعة في بداية الجملة المركبة جاء الفعل المصرف في الجملة الرئيسية مباشرة بعد الفاصلة.
 
 - **Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne.** — أحافظ على الصورة العامة بترتيب مهامي حسب الأولوية.
 - **Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser auf das Lesen konzentrieren.** — من خلال تعطيلها للإشعارات، تستطيع التركيز بصورة أفضل على القراءة.
@@ -34,6 +36,19 @@
 
 - **Ich schreibe eine Liste, um nichts zu vergessen.** — أكتب قائمةً لكيلا أنسى شيئًا. (**um … zu** يذكر الغاية.)
 - **Ich vergesse weniger, indem ich eine Liste führe.** — أنسى أقلّ عندما أستخدم قائمةً. (**indem** يشرح الطريقة.)
+
+### مساعدة قبل النصوص والمهمات
+
+- **الطريقة مقابل الغاية:** indem وdadurch, dass يجيبان عن سؤال Wie? / Wodurch? (كيف/بأي وسيلة؟)، بينما um … zu وdamit يجيبان عن سؤال Wozu? / Warum? (لماذا/لأي غاية؟). مثال: Ich führe eine Liste, um nichts zu vergessen (غاية) مقابل Ich vergesse weniger, indem ich eine Liste führe (طريقة).
+- **بنية dadurch, dass والفاصلة:** تتكون الصيغة من ظرف الإشارة الموصول بحرف الجر dadurch في الجملة الرئيسية أو في مطلع الجملة، متبوعًا بفاصلة ثم أداة الربط التابعة dass والفعل المصرف في نهاية التابعة: Dadurch, dass sie Benachrichtigungen ausschaltet, kann sie sich besser konzentrieren. أو: Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele.
+- **موضع الجملة التابعة وترتيب الرئيسية:** إذا جاءت جملة indem أو dadurch, dass بعد الجملة الرئيسية سبقتها فاصلة: Ich behalte den Überblick, indem ich meine Aufgaben nach Priorität ordne. وإذا تقدمت في البداية تلاها بعد الفاصلة الفعل المصرف في الجملة الرئيسية مباشرة: Indem ich ähnliche Aufgaben nacheinander erledige, werde ich seltener unterbrochen.
+- **الأفعال المنفصلة والانعكاسية:** في الجملة الرئيسية ينفصل الجزء الأمامي: Sie schaltet Benachrichtigungen aus / Ich plane Pausen ein. وفي الجملة التابعة يتصل بالفعل المصرف في النهاية: dass sie Benachrichtigungen ausschaltet / dass ich Pausen einplane. ومع المصدر المسبوق بـzu تدخل zu بين الجزأين: um Benachrichtigungen auszuschalten / ohne jedes Wort nachzuschlagen. والفعل sich konzentrieren يأخذ حرف الجر auf مع Akkusativ: auf das Lesen / auf den nächsten Abschnitt.
+- **المصدر مع um … zu وohne … zu:** يستعمل um … zu وohne … zu عندما يكون فاعل المصدر مطابقًا لفاعل الجملة الرئيسية أو مفهومًا منه بوضوح، وتوضع فاصلة قبل um أو ohne: versteht sie den Text besser, ohne jedes Wort nachzuschlagen. وعند اختلاف الفاعل أو الرغبة في جملة تابعة كاملة نستعمل damit أو ohne dass كما في مفتاح الفهم: Damit sie den Text besser versteht.
+- **الظرف dadurch وحده مقابل الرابط التابع:** في جملة Sie bündelt ähnliche Termine. Dadurch spart sie Zeit. تقع Dadurch وحدها ظرفًا رابطًا في بداية جملة رئيسية مستقلة فيليها الفعل المصرف spart مباشرة؛ أما في Dadurch, dass sie ähnliche Termine bündelt, … فالرابط تابع يوجب تأخير الفعل bündelt إلى آخر جملة dass.
+- **تمييز أزمنة النصوص وصيغها:** يضم نص القراءة ماضيًا بسيطًا (Früher begann sie …) ومضارعًا للعادة الحالية (Jetzt wählt sie …)، ويضم نص الاستماع ماضيًا تامًا (Ich habe früher oft … gewechselt) ومبنيًا للمجهول في المضارع (werde ich seltener unterbrochen). لا نخلط بين العادة السابقة والطريقة الحالية.
+- **فروق المفردات الدقيقة:** die Ablenkung ما يصرف الانتباه أو يشتته، وdie Unterbrechung انقطاع سير العمل أو المقاطعة؛ der Zeitblock فترة زمنية مخصصة لمهمة، وdie Priorität الأولوية؛ der Sachtext نص معلوماتي/غير سردي يقابله في القراءة der Roman (الرواية).
+- **حدود القصص وعدم التعميم:** حوار Hana وKarim ونص قراءة Hana ونص الاستماع تعرض تجارب تنظيمية فردية خيالية، ويصرح نص الاستماع بأن الطريقة لا تناسب كل شخص (Meine Methode passt nicht für jede Person). لذلك لا نقدم أي جدول زمني كقاعدة ملزمة للجميع.
+- **دليل فردي مستقل عن الصوت:** P01 فقرة من خمس جمل عن تحسين عادة في تنظيم الوقت أو القراءة (كتابة فقط دون جهر)، وP02 إحاطة من خمس جمل لزميل استنادًا إلى نص الاستماع مع اقتراح لتقليل تشتيت الإشعارات (كتابة ثم قراءة بصوت واضح بالنفس دون شريك أو تسجيل). الحد الأدنى 160/190 حرفًا والإقرارات الثلاثة لا تصحح عدد الجمل أو القواعد أو النطق آليًا؛ والتسجيلات تبقى معلقة ومتاحة دون توليد أو استماع أو اعتماد.
 
 ## 3) حوار أصلي عن تنظيم أسبوع مزدحم
 
@@ -82,7 +97,7 @@
 
 ### تمرين 2 — أكمل بـindem أو dadurch, dass
 
-1. Ich verbessere meinen Überblick, ______ ich die Aufgaben nach Wichtigkeit ordne.
+1. Ich verbessere meinen Überblick, ______ ich die Aufgaben nach Wichtigkeit ordne. *(رابط من كلمة واحدة)*
 2. ______ sie ihr Telefon in der Lesezeit ausschaltet, wird sie seltener abgelenkt.
 3. Er spart Zeit ______, ______ er ähnliche Termine zusammenlegt.
 
@@ -99,6 +114,8 @@
 1. **Ich lese den Text zweimal, um die Hauptaussage zu verstehen.**
 2. **Ich verstehe den Text besser, indem ich unbekannte Begriffe im Kontext prüfe.**
 3. **Er erstellt einen Wochenplan, um seine Zeit sinnvoll zu nutzen.**
+4. **Dadurch, dass sie Benachrichtigungen ausschaltet, liest sie konzentrierter.**
+5. **Sie versteht den Sachtext besser, indem sie nach jedem Abschnitt eine Kernidee notiert.**
 
 ### تمرين 5 — فهم القراءة
 
@@ -112,16 +129,32 @@
 
 ### تمرين 6 — فهم الاستماع
 
-أكمل: 1. كان المتحدث ينتقل سابقًا بين عدة ______. 2. يخطط الآن لفترتين للعمل ______. 3. يقلّ تشتيته عندما ينجز المهام المتشابهة ______. 4. يكتب عند قراءة النصوص الطويلة ______. 5. تساعده الاستراحات على التركيز في ______ التالي.
+أكمل بالألمانية الكلمات الناقصة فقط؛ لا تكرر كلمات موجودة خارج الفراغ:
+
+1. Früher hat die Person oft zwischen mehreren ______ gewechselt.
+2. Jetzt plant sie zwei Zeitblöcke für ______.
+3. Indem sie ähnliche Aufgaben ______ erledigt, wird sie seltener unterbrochen.
+4. Für längere Texte notiert sie am Rand ______.
+5. Durch Pausen kann sie sich besser auf den ______ konzentrieren.
 
 ### تمرين 7 — ادمج الجملتين باستخدام التركيب المحدد
 
 1. **Ich prüfe die wichtigsten Aufgaben. So behalte ich den Überblick.** → **indem**
-2. **Sie fasst nach jedem Abschnitt die Kernaussage zusammen. So erinnert sie sich besser an den Text.** → **dadurch, dass**
+2. **Sie fasst nach jedem Abschnitt die Kernaussage zusammen. So erinnert sie sich besser an den Text.** → **dadurch, dass** *(في بداية الجملة)*
+3. **Ich bündele ähnliche Aufgaben. So spare ich Zeit.** → **dadurch, dass** *(بعد الجملة الرئيسية)*
+4. **Ich schreibe eine kurze Aufgabenliste. Ich möchte nichts Wichtiges vergessen.** → **um … zu**
 
-### تمرين 8 — صِف طريقة تناسبك
+### تمرين 8 — فقرة تحسين عادة مكتوبة وإحاطة التركيز مع الجهر
 
-اكتب فقرة من خمس إلى سبع جمل ألمانية عن عادة في تنظيم الوقت أو القراءة تريد تحسينها، واشرح الطريقة التي ستستخدمها والغاية منها، أو قدّم شرحًا شفهيًا مماثلًا. استخدم رابطًا للطريقة مرةً واحدة على الأقل: **indem** أو **dadurch, dass**، ورابطًا للغاية مرةً واحدة على الأقل: **um … zu**؛ ووضّح الفرق بين كيفية تنفيذ الطريقة والنتيجة التي تريدها. يمكنك وصف عادة شخصية أو عادة لشخصية خيالية. إذا كنت تتعلم وحدك فاكتب النص ثم اقرأه بصوت واضح؛ لا يلزم تسجيل.
+اكتب فقرة من خمس إلى سبع جمل ألمانية في كل مهمة، واستخدم **indem** أو **dadurch, dass** لشرح الطريقة و**um … zu** لذكر الغاية:
+
+**أ — P01: خمس جمل كتابة فقط**
+
+اكتب فقرة من خمس إلى سبع جمل ألمانية عن عادة في تنظيم الوقت أو القراءة تريد تحسينها: اذكر في الجملة الأولى العادة الحالية أو التحدي، وفي الثانية خطوتك اليومية الأولى، وفي الثالثة الطريقة باستخدام indem أو dadurch, dass مع الفعل المصرف في نهاية التابعة، وفي الرابعة الغاية باستخدام um … zu مع المصدر، وفي الخامسة كيف تراجع الخطة بمرونة. هذه المهمة كتابة فقط دون جهر أو تسجيل، ووضّح الفرق بين كيفية تنفيذ الطريقة والنتيجة التي تريدها.
+
+**ب — P02: خمس جمل كتابة وجهر**
+
+استنادًا إلى نص الاستماع المكتوب T06 عن التركيز، اكتب إحاطة من خمس إلى سبع جمل ألمانية لزميل أو قدّم شرحًا شفهيًا مماثلًا ثم اقرأ النص بصوت واضح بنفسك: اذكر في الجملة الأولى الانتقال السابق بين المهام وتخطيط فترتين للعمل المركّز، وفي الثانية إنجاز المهام المتشابهة تباعًا وتدوين الأسئلة على الهامش، وفي الثالثة فائدة الاستراحات، وفي الرابعة طريقة إضافية واقعية لتقليل تشتيت الإشعارات باستخدام indem أو dadurch, dass، وفي الخامسة الغاية من هذه الطريقة باستخدام um … zu مع الإشارة إلى أن الطريقة قابلة للتكييف. لا يلزم تسجيل أو تشغيل MP3.
 
 ## 7) مفتاح الإجابات
 
@@ -132,11 +165,29 @@
 - **تمرين 1:** 1. die Priorität، 2. bündeln، 3. der Zeitblock، 4. die Lesestrategie.
 - **تمرين 2:** 1. indem، 2. Dadurch, dass، 3. dadurch, dass.
 - **تمرين 3:** 1. ausschalte، 2. bündeln، 3. macht.
-- **تمرين 4:** 1. غاية، 2. طريقة، 3. غاية.
+- **تمرين 4:** 1. غاية، 2. طريقة، 3. غاية، 4. طريقة، 5. طريقة.
 - **تمرين 5:** 1. خطأ — تختار ثلاث أولويات أولًا. 2. صحيح. 3. صحيح. 4. خطأ — تغيّر الاستراتيجية حسب نوع النص. 5. صحيح.
-- **تمرين 6:** Aufgaben؛ konzentrierte Arbeit؛ nacheinander؛ Fragen am Rand؛ den nächsten Abschnitt.
-- **تمرين 7:** 1. Ich behalte den Überblick, indem ich die wichtigsten Aufgaben prüfe. 2. Dadurch, dass sie nach jedem Abschnitt die Kernaussage zusammenfasst, erinnert sie sich besser an den Text.
-- **تمرين 8:** إجابة مفتوحة؛ راجع اكتمال خمس إلى سبع جمل، واستخدام **indem** أو **dadurch, dass** مرةً على الأقل لشرح الطريقة مع الفاصلة ونهاية الفعل، واستخدام **um … zu** مرةً على الأقل لذكر الغاية، ووضوح الفرق بينهما. يمكن تقديم الشرح شفهيًا؛ وللتعلم الفردي يُكتب النص ثم يُقرأ بصوت واضح دون تسجيل.
+- **تمرين 6:** Aufgaben؛ konzentrierte Arbeit؛ nacheinander؛ Fragen؛ nächsten Abschnitt. *(عبارتا am Rand وden موجودتان في الجملتين 4 و5 فلا تكررهما.)*
+- **تمرين 7:** 1. Ich behalte den Überblick, indem ich die wichtigsten Aufgaben prüfe. 2. Dadurch, dass sie nach jedem Abschnitt die Kernaussage zusammenfasst, erinnert sie sich besser an den Text. 3. Ich spare Zeit dadurch, dass ich ähnliche Aufgaben bündele. 4. Ich schreibe eine kurze Aufgabenliste, um nichts Wichtiges zu vergessen.
+- **تمرين 8:** P01 فقرة مكتوبة فقط من خمس جمل عن تحسين عادة في القراءة وتنظيم الوقت؛ وP02 إحاطة من خمس جمل مكتوبة ومقروءة بصوت واضح تستند إلى نص الاستماع وتقترح طريقة إضافية لتقليل تشتيت الإشعارات. راجع استخدام **indem** أو **dadurch, dass** مع الفاصلة ونهاية الفعل المصرف، واستخدام **um … zu** لذكر الغاية. إذا كنت تتعلم وحدك فاكتب النص ثم اقرأه بصوت واضح في P02؛ لا يلزم تسجيل.
+
+### نموذج P01 — خمس جمل كتابة فقط
+
+1. Früher habe ich beim Lesen oft zwischen Nachrichten und langen Texten gewechselt.
+2. Jetzt wähle ich am Abend zuerst zwei feste Zeitblöcke für meinen Kurs aus.
+3. Ich bleibe konzentriert, indem ich mein Telefon ausschalte und nach jedem Abschnitt eine kurze Notiz mache.
+4. Außerdem führe ich eine kurze Prioritätenliste, um keine wichtige Aufgabe zu vergessen.
+5. Meinen Plan passe ich schrittweise an, damit er im Alltag realistisch bleibt.
+
+### نموذج P02 — خمس جمل مع الجهر
+
+1. In der Aufnahme berichtet die Person, dass sie früher oft zwischen mehreren Aufgaben gewechselt hat und jetzt zwei Zeitblöcke für konzentrierte Arbeit plant.
+2. Sie erledigt ähnliche Aufgaben nacheinander und notiert bei längeren Texten Fragen am Rand.
+3. Dadurch, dass sie kurze Pausen einplant, kann sie sich besser auf den nächsten Abschnitt konzentrieren.
+4. Zusätzlich können wir Ablenkungen verringern, indem wir während eines Zeitblocks alle Benachrichtigungen am Telefon ausschalten.
+5. Wir legen feste Ruhezeiten für Nachrichten fest, um schwierige Texte ohne ständige Unterbrechung zu bewältigen.
+
+النموذجان مثالان مكتوبان خياليان. في التطبيق حد أدنى 160 حرفًا لـP01 و190 حرفًا لـP02 مع الإقرارات الثلاثة؛ الجهر مطلوب في P02 فقط وهو إقرار ذاتي لا تقييم نطق آلي.
 
 ## 8) بطاقات مراجعة
 
