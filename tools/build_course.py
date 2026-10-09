@@ -85,7 +85,14 @@ def safe_inline(text: str) -> str:
     link_parts: list[str] = []
 
     def hold_code(match: re.Match[str]) -> str:
-        code_parts.append(f'<code dir="ltr">{html.escape(match.group(1))}</code>')
+        raw_code = match.group(1)
+        escaped = html.escape(raw_code)
+        if re.search(r"[\u0600-\u06FF]", raw_code):
+            code_parts.append(f'<code dir="auto">{escaped}</code>')
+        elif re.search(r"[A-Za-zÄÖÜäöüß]", raw_code):
+            code_parts.append(f'<code dir="ltr" lang="de">{escaped}</code>')
+        else:
+            code_parts.append(f'<code dir="ltr">{escaped}</code>')
         return f"@@COURSECODE{len(code_parts) - 1}@@"
 
     text = re.sub(r"`([^`]+)`", hold_code, text)
@@ -103,6 +110,7 @@ def safe_inline(text: str) -> str:
     text = re.sub(r"(?<!\*)\*([^*\n]+?)\*(?!\*)", r"<em>\1</em>", text)
     text = re.sub(r"__([^_\n]+?)__", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<!_)_([^_\n]+?)_(?!_)", r"<em>\1</em>", text)
+    text = re.sub(r"</strong>(\s*→\s*)<strong>", r"\1", text)
     for index, rendered in enumerate(code_parts):
         text = text.replace(f"@@COURSECODE{index}@@", rendered)
     for index, rendered in enumerate(link_parts):

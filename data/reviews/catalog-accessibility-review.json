@@ -245,10 +245,10 @@
   "sourceHashes": {
     "data/production-task-catalog.csv": "dc799875960b6e3d89471ea3ab89734462a438d710b33ddab8cdb034a40f7528",
     "data/audio-asset-register.csv": "a4ce9391bcb4bc0cdf43735e40e250e70ed4dfbbb5493ad2982dcfa908314f42",
-    "tools/verify_course.py": "cad03313bd73d671dded1bac9961c11dfb022a187a2ef4892baa6f4d55eb60d3",
-    "app.js": "50cc1b2291c0c6670f85f230b4e85893a41153cf4236a16ac3aaccc8a8cf1482",
-    "service-worker.js": "870aa3a1afea56bb03e9f9c20e744f18adc64cffddc2f8b001ae86dd17769365",
-    "tools/test_accessibility_audit.cjs": "b86b93b8168d9c9e9fb9272f9845127d3450e044b531169592aaa0800a7f6493",
+    "tools/verify_course.py": "966e0d3f0339392e05f769fc1c166a4ef7e4d88e2f821a3fea7b953954afe87c",
+    "app.js": "1279fc6a4f843a93915866a97f4df344e8ef8d705d144daedf1b33b63174d88d",
+    "service-worker.js": "7a5667307b8b19b2ca39e5588bd614b66139807b6591ef40e2973b57f32791d9",
+    "tools/test_accessibility_audit.cjs": "db9e7cd0da0c10858b85234d2c5015e3e0ee13b77b3460c9db0fd23fe86d35e2",
     "tools/test_forms_keyboard.cjs": "1964d30a5cba4d4abbabe840157e42a810fd4cc71cb02e8c397cef50b6e53140"
   },
   "units": [

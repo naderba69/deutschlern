@@ -694,6 +694,11 @@ function allPerformanceTasksComplete(tasks, scopeKey, version) {
   });
 }
 
+function isGermanTextSnippet(text) {
+  const value = String(text || '').trim();
+  return Boolean(value) && !/[\u0600-\u06FF]/.test(value) && /[A-Za-zÄÖÜäöüß]/.test(value);
+}
+
 function renderPerformanceTasks(tasks, scopeKey, version) {
   const checkLabels = {
     taskCompletion: 'أنجزت كل أجزاء المهمة المطلوبة',
@@ -710,14 +715,14 @@ function renderPerformanceTasks(tasks, scopeKey, version) {
     const rubricItems = ['taskCompletion', 'meaningClarity', 'targetSkill'].map((key) => {
       const detail = task.criteria?.[key];
       return typeof detail === 'string' && detail.trim()
-        ? `<li><strong>${escapeHTML(checkLabels[key])}:</strong> ${escapeHTML(detail)}</li>`
+        ? `<li dir="auto"><strong>${escapeHTML(checkLabels[key])}:</strong> ${escapeHTML(detail)}</li>`
         : '';
     }).filter(Boolean).join('');
     const rubric = rubricItems
       ? `<section class="performance-task-rubric"><h4>معايير التحقق المحلي</h4><ul>${rubricItems}</ul></section>`
       : '';
     const status = evidence.completed === true ? '<span class="performance-task-status is-done">اكتمل التحقق الذاتي</span>' : '<span class="performance-task-status">بانتظار إجابتك ومعايير التحقق</span>';
-    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p>${escapeHTML(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" dir="auto" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
+    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p dir="auto">${escapeHTML(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" dir="auto" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
   }).join('')}</div><p class="performance-self-check-note">التطبيق يتحقق من إكمال خطوات المراجعة فقط، ولا يحكم آليًا على جودة النطق أو صدق الإجابة. لا تُمنح علامة إتقان حتى تؤكد المعايير بنفسك.</p></section>`;
 }
 
@@ -1356,9 +1361,9 @@ function renderDashboard() {
         <div class="hero-actions">${action}<button type="button" class="button-secondary" data-action="navigate" data-view="tracks">${icon('book', 16)} خريطة المسار</button></div>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="art-circle"></div><div class="art-sun"></div><span class="hero-spark one">✳</span><span class="hero-spark two">✦</span>
+        <div class="art-circle"></div><div class="art-sun"></div><span class="hero-spark one"></span><span class="hero-spark two"></span>
         <div class="art-card"><div class="art-card-top"><span>WORTSCHATZ · 01</span><span class="art-card-dots"><i></i><i></i><i></i></span></div><div class="art-word" dir="ltr" lang="de">Guten Tag!</div><div class="art-translation">مرحبًا / نهارك سعيد</div><div class="art-divider"></div><div class="art-example" dir="ltr" lang="de">Wie geht es dir heute?</div></div>
-        <div class="art-levels"><span>A0</span><span>→</span><span>B2</span></div>
+        <div class="art-levels" dir="ltr"><span>A0 → B2</span></div>
       </div>
     </section>
 
@@ -1532,9 +1537,9 @@ function renderA0GateAssessment() {
     if (gateSession.selected === index) classes += ' selected';
     if (gateSession.checked && index === question.answerIndex) classes += ' correct';
     else if (gateSession.checked && index === gateSession.selected) classes += ' incorrect';
-    return `<button type="button" class="${classes}" data-action="select-gate-answer" data-index="${index}" ${gateSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto">${escapeHTML(option)}</span>${gateSession.checked && index === question.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
+    return `<button type="button" class="${classes}" data-action="select-gate-answer" data-index="${index}" ${gateSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${gateSession.checked && index === question.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
-  const feedback = gateSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}">${isCorrect ? '<strong>إجابة صحيحة.</strong> ' : '<strong>راجع هذه النقطة.</strong> '}${escapeHTML(question.explanation)}</div>` : '';
+  const feedback = gateSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة.</strong> ' : '<strong>راجع هذه النقطة.</strong> '}${escapeHTML(question.explanation)}</div>` : '';
   return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}${renderA0GateScopeNote()}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto">${escapeHTML(question.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
 }
 
@@ -1747,9 +1752,9 @@ function renderLessonQuiz(lesson) {
     if (lessonSession.selected === index) classes += ' selected';
     if (lessonSession.checked && index === q.answerIndex) classes += ' correct';
     else if (lessonSession.checked && index === lessonSession.selected) classes += ' incorrect';
-    return `<button type="button" class="${classes}" data-action="select-lesson-answer" data-index="${index}" ${lessonSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto">${escapeHTML(option)}</span>${lessonSession.checked && index === q.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
+    return `<button type="button" class="${classes}" data-action="select-lesson-answer" data-index="${index}" ${lessonSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${lessonSession.checked && index === q.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
-  const feedback = lessonSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>ليس تمامًا.</strong> '}${escapeHTML(q.explanation)}</div>` : '';
+  const feedback = lessonSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>ليس تمامًا.</strong> '}${escapeHTML(q.explanation)}</div>` : '';
   const nextLabel = current === total ? 'عرض النتيجة' : 'السؤال التالي';
   return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="quiz-exit">${icon('arrow', 15)} العودة إلى شرح الدرس</button>
     <div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${percent}%"></span></div></div><span class="plan-chip">${icon('clock', 14)} ${lesson.minutes} د</span></div>

@@ -161,6 +161,7 @@ async function layoutAndPlayback(browser, base, viewport) {
   assert.equal(await page.locator('.audio-transcript-line span').first().getAttribute('lang'), 'de');
   assert.equal(await page.locator('.german-word').first().getAttribute('lang'), 'de');
   assert.equal(await page.locator('.word-example').first().getAttribute('dir'), 'auto');
+  assert.equal(await page.locator('.lesson-document code[lang="de"]').first().getAttribute('dir'), 'ltr');
   for (const rate of [1, 0.8]) {
     await page.locator(`[data-audio-id="${dialogue.assetId}"][data-audio-rate="${rate}"]`).click();
     for (const segment of dialogue.segments) {

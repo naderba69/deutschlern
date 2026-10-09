@@ -524,15 +524,31 @@ def main() -> None:
         '<span dir="ltr" lang="de">${escapeHTML(segment.text)}</span>',
         'class="word-example" dir="auto"',
         'class="flash-example" dir="auto"',
+        'isGermanTextSnippet(option) ? \' lang="de"\' : \'\'',
+        'class="quiz-feedback ${isCorrect ? \'good\' : \'try-again\'}" dir="auto"',
+        '<p dir="auto">${escapeHTML(task.prompt)}</p>',
+        '<li dir="auto"><strong>${escapeHTML(checkLabels[key])}:</strong>',
     ):
         assert snippet in app_text, f"Missing WCAG 3.1.2 / bidi attribute snippet in app.js: {snippet}"
+
+    de_code_count = sum(len(re.findall(r'<code dir="ltr" lang="de">.*?</code>', l.get("contentHtml", ""))) for l in lessons)
+    ar_code_count = sum(len(re.findall(r'<code dir="auto">.*?</code>', l.get("contentHtml", ""))) for l in lessons)
+    num_code_count = sum(len(re.findall(r'<code dir="ltr">.*?</code>', l.get("contentHtml", ""))) for l in lessons)
+    assert (de_code_count, ar_code_count, num_code_count) == (910, 2, 14), (
+        f"Expected (910, 2, 14) rendered <code> spans (lang=de, dir=auto, numeric); found {(de_code_count, ar_code_count, num_code_count)}"
+    )
+    for l in lessons:
+        assert not re.search(r"</strong>\s*→\s*<strong>", l.get("contentHtml", "")), (
+            f"Unmerged arrow between adjacent <strong> spans in {l['id']}"
+        )
 
     css_text = (ROOT / "styles.css").read_text(encoding="utf-8")
     assert "linear-gradient" not in css_text, "Non-deterministic linear-gradient backgrounds must not remain in styles.css"
     assert ".hero-banner::before" not in css_text and ".art-circle::before" not in css_text, "Overlapping decorative pseudo-elements must not remain in styles.css"
+    assert "overflow-x: hidden; overflow-y: auto;" in css_text, "Missing deterministic overflow rules on performance textarea in styles.css"
 
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 57, f"Expected 57 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 58, f"Expected 58 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():

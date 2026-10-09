@@ -374,8 +374,10 @@ async function auditScreens(browser, base, width) {
     if (process.env.A11Y_REPORT) fs.writeFileSync(process.env.A11Y_REPORT, JSON.stringify(reports, null, 2) + '\n');
     for (const report of reports) console.log(`${report.width} ${report.name}: ${report.violations.length} violated rules; manual-review flags: ${JSON.stringify(report.incomplete)}`);
     const failures = reports.flatMap(r => r.violations.map(v => `${r.width}/${r.name}: ${v.id} (${v.nodes.length} nodes)`));
+    const incompletes = reports.flatMap(r => r.incomplete.map(i => `${r.width}/${r.name}: ${i.id} (${i.count} nodes)`));
     assert.deepEqual(failures, [], 'automated accessibility violations; set A11Y_REPORT for node details');
-    console.log(`PASS: ${reports.length} representative screen states, no violations of selected automated rules. Incomplete checks remain unresolved by this automated audit.`);
+    assert.deepEqual(incompletes, [], 'automated accessibility incomplete checks; set A11Y_REPORT for node details');
+    console.log(`PASS: ${reports.length} representative screen states, 0 violations and 0 incomplete checks across selected automated WCAG 2.0/2.1 A/AA rules.`);
   } finally {
     if (browser) await browser.close();
     await new Promise(resolve => server.close(resolve));

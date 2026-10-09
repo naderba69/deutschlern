@@ -1,0 +1,845 @@
+{
+  "reviewId": "code-quiz-a11y-review",
+  "batchId": "CR58",
+  "lessonId": "cumulative-code-quiz-a11y",
+  "title": "المراجعة التراكمية لوسوم اللغة والاتجاه في الشفرات المضمّنة وأسئلة التقييم ومعايير الأداء وتصفير الفحوص غير الحاسمة (CR58)",
+  "reviewedAt": "2026-10-09",
+  "version": "code-quiz-a11y-v1",
+  "serviceWorkerCache": "deutsch-pfad-v107",
+  "unitCount": 62,
+  "inlineCodeTotalCount": 926,
+  "inlineCodeGermanCount": 910,
+  "inlineCodeArabicCount": 2,
+  "inlineCodeNumericCount": 14,
+  "quizQuestionCount": 540,
+  "quizOptionTotalCount": 1622,
+  "quizOptionGermanCount": 1070,
+  "quizOptionArabicOrMixedCount": 552,
+  "performanceTaskCount": 109,
+  "performanceRubricCriterionCount": 327,
+  "a11yScreenStateCount": 231,
+  "a11yViolatedRuleCount": 0,
+  "a11yIncompleteRuleOccurrences": 0,
+  "a11yIncompleteNodeOccurrences": 0,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "SRC-SEARCH-W3C-H58-BIDI",
+      "title": "Web Search: W3C WCAG 2.1 Technique H58 & Inline Bidi Markup",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/html/H58",
+      "access": "search_snippet_only",
+      "query": "site:w3.org/WAI/WCAG21/Techniques/html/H58 OR site:w3.org/International/articles/inline-bidi-markup",
+      "takeaway": "Located W3C WAI Technique H58 and W3C Internationalization inline bidi markup articles."
+    },
+    {
+      "id": "SRC-SEARCH-LINGOLIA-PREPOSITIONS",
+      "title": "Web Search: Lingolia German Prepositions and Conjunctions",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure/conjunctions OR site:deutsch.lingolia.com/en/grammar/prepositions",
+      "takeaway": "Located Lingolia reference pages on German prepositions with accusative, dative, two-way, and genitive cases."
+    },
+    {
+      "id": "SRC-SEARCH-DUDEN-GRAMMAR-TERMS",
+      "title": "Web Search: Duden Rechtschreibung Konjunktion Nebensatz Präposition Antwort Aufgabe Kriterium",
+      "url": "https://www.duden.de/rechtschreibung/Konjunktion",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Konjunktion Nebensatz Praeposition Antwort Aufgabe Kriterium",
+      "takeaway": "Located Duden orthography and grammar entries for German conjunctions, subordinate clauses, prepositions, and assessment terms."
+    },
+    {
+      "id": "SRC-SEARCH-W3C-ACT-LANG",
+      "title": "Web Search: W3C H58 language attributes & ACT Rule de46e4",
+      "url": "https://www.w3.org/WAI/standards-guidelines/act/rules/de46e4/",
+      "access": "search_snippet_only",
+      "query": "site:w3.org H58 language attributes OR inline-bidi-markup OR info-and-relationships",
+      "takeaway": "Confirmed W3C ACT Rule de46e4 and Technique H58 for programmatic language tags on inline and block elements."
+    },
+    {
+      "id": "SRC-W3C-TECHNIQUE-H58",
+      "title": "W3C WAI WCAG 2.1 Technique H58: Using language attributes to identify changes in the human language",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/html/H58",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Sufficient technique for WCAG 2.1 SC 3.1.2: every element whose content language differs from the inherited document language must carry a valid BCP 47 `lang` attribute (`lang=\"de\"` on German `<code>` spans and German `.option-text` choices)."
+    },
+    {
+      "id": "SRC-W3C-ACT-RULE-DE46E4",
+      "title": "W3C WAI ACT Rule de46e4: Element with lang attribute has valid language tag",
+      "url": "https://www.w3.org/WAI/standards-guidelines/act/rules/de46e4/",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 6,
+      "takeaway": "Elements with non-empty `lang` attributes must use known primary language subtags (`de`, `ar`) and contain non-empty human-language text inheriting its programmatic language."
+    },
+    {
+      "id": "SRC-W3C-INLINE-BIDI-MARKUP",
+      "title": "W3C Internationalization: Inline markup and bidirectional text in HTML",
+      "url": "https://www.w3.org/International/articles/inline-bidi-markup/",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1,
+        2
+      ],
+      "totalChunks": 3,
+      "takeaway": "Tightly wrap opposite-direction inline phrases with `dir=\"ltr\" lang=\"de\"` when known to be German, and use `dir=\"auto\"` on elements with mixed or run-time directional text (`.quiz-feedback`, `.performance-task-card p`, `.performance-task-rubric li`, Arabic `<code>` spans)."
+    },
+    {
+      "id": "SRC-LINGOLIA-PREPOSITIONS",
+      "title": "Lingolia German Grammar: Prepositions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "takeaway": "Verified German prepositions with accusative (`durch, für, gegen, ohne, um`), dative (`aus, bei, mit, nach, seit, von, zu`), contractions (`beim, im, ins, vom, zum, zur`), causal/reference prepositions (`aufgrund, wegen, bezüglich + Genitiv`, `laut / zufolge + Dativ`) used in B2.8–B2.12."
+    },
+    {
+      "id": "SRC-DUDEN-KONJUNKTION",
+      "title": "Duden Rechtschreibung: Konjunktion, die",
+      "url": "https://www.duden.de/rechtschreibung/Konjunktion",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `die Konjunktion; Genitiv: der Konjunktion, Plural: die Konjunktionen` (Bindewort)."
+    },
+    {
+      "id": "SRC-DUDEN-NEBENSATZ",
+      "title": "Duden Rechtschreibung: Nebensatz, der",
+      "url": "https://www.duden.de/rechtschreibung/Nebensatz",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `der Nebensatz; Genitiv: des Nebensatzes, Plural: die Nebensätze` (untergeordneter Satz, Gliedsatz)."
+    },
+    {
+      "id": "SRC-DUDEN-PRAEPOSITION",
+      "title": "Duden Rechtschreibung: Präposition, die",
+      "url": "https://www.duden.de/rechtschreibung/Praeposition",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `die Präposition; Genitiv: der Präposition, Plural: die Präpositionen` (Verhältniswort)."
+    },
+    {
+      "id": "SRC-DUDEN-ANTWORT",
+      "title": "Duden Rechtschreibung: Antwort, die",
+      "url": "https://www.duden.de/rechtschreibung/Antwort",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `die Antwort; Genitiv: der Antwort, Plural: die Antworten`."
+    },
+    {
+      "id": "SRC-DUDEN-AUFGABE",
+      "title": "Duden Rechtschreibung: Aufgabe, die",
+      "url": "https://www.duden.de/rechtschreibung/Aufgabe",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `die Aufgabe; Genitiv: der Aufgabe, Plural: die Aufgaben`."
+    },
+    {
+      "id": "SRC-DUDEN-KRITERIUM",
+      "title": "Duden Rechtschreibung: Kriterium, das",
+      "url": "https://www.duden.de/rechtschreibung/Kriterium",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `das Kriterium; Genitiv: des Kriteriums, Plural: die Kriterien` (`[kriˈteːriʊm]`)."
+    },
+    {
+      "id": "SRC-DUDEN-OBWOHL",
+      "title": "Duden Rechtschreibung: obwohl",
+      "url": "https://www.duden.de/rechtschreibung/obwohl",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `obwohl` (konzessive Konjunktion, Goethe-Zertifikat B1 vocabulary)."
+    },
+    {
+      "id": "SRC-DUDEN-DASS",
+      "title": "Duden Rechtschreibung: dass",
+      "url": "https://www.duden.de/rechtschreibung/dass",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified `dass` vs. `das` and subordinate clause structures (`sodass`, `damit, dass`)."
+    },
+    {
+      "id": "SRC-DUDEN-SOWOHL",
+      "title": "Duden Rechtschreibung: sowohl",
+      "url": "https://www.duden.de/rechtschreibung/sowohl",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified correlative conjunction `sowohl … als/wie [auch] …` in B1.7 exercise items."
+    },
+    {
+      "id": "SRC-DUDEN-SODASS",
+      "title": "Duden Rechtschreibung: sodass, so dass",
+      "url": "https://www.duden.de/rechtschreibung/sodass",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "takeaway": "Verified consecutive conjunction `sodass` (`[zoˈdas]`, recommended spelling `sodass`) in B2.5 exercise items."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/conjunctions",
+      "reason": "Returned HTTP 404 Page Not Found on Lingolia; replaced with full-fetched Duden entries for `Konjunktion`, `Nebensatz`, `obwohl`, `dass`, `sowohl`, and `sodass`."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/indem",
+      "reason": "Returned HTTP 404 on Duden (`/rechtschreibung/indem` disambiguated under suffix); replaced with full-fetched Duden `Konjunktion`, `Nebensatz`, and `sodass`."
+    }
+  ],
+  "sourceHashes": {
+    "tools/build_course.py": "c1c6a6c86faee2679ec4b7fd04cb0b1440ab143044845ff0d6da3c0c3d6665e6",
+    "tools/verify_course.py": "966e0d3f0339392e05f769fc1c166a4ef7e4d88e2f821a3fea7b953954afe87c",
+    "app.js": "1279fc6a4f843a93915866a97f4df344e8ef8d705d144daedf1b33b63174d88d",
+    "styles.css": "bcb7486b569e611046c366e87ecc38e88bb1fcd0cf3f242925a2aff5f63464bc",
+    "service-worker.js": "7a5667307b8b19b2ca39e5588bd614b66139807b6591ef40e2973b57f32791d9",
+    "data/course.json": "a79eaaf1b078640fe46013291dcb95dd057e8d0d6190f066fe43e3877d9a9d1d",
+    "tools/test_browser.cjs": "4fcf7296f50411cb10f77bd260f35a0511987a369e6be403af7d1172398b6ed0",
+    "tools/test_service_worker.cjs": "2d912ce0da9cedf8149e97028f3b148a6d1da2494a383012532e88dc0cf7a692",
+    "tools/test_accessibility_update.cjs": "37688ee21657c796b9f84e72b82fa2831139259c350b38f00685a6ffbe0f70f8",
+    "tools/test_accessibility_audit.cjs": "db9e7cd0da0c10858b85234d2c5015e3e0ee13b77b3460c9db0fd23fe86d35e2"
+  },
+  "units": [
+    {
+      "id": "CR58-LESSON-A0-01-ALPHABET",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a0-01-alphabet",
+      "level": "A0",
+      "sourceRef": "content/A0/lesson-01-alphabet.md & data/course.json (a0-01-alphabet)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a0-01-alphabet (الحروف والأصوات الألمانية): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (32 options: 17 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A0-02-GREETINGS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a0-02-greetings",
+      "level": "A0",
+      "sourceRef": "content/A0/lesson-02-greetings.md & data/course.json (a0-02-greetings)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a0-02-greetings (التحية والتعارف): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A0-03-NUMBERS-PERSONAL-INFO",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a0-03-numbers-personal-info",
+      "level": "A0",
+      "sourceRef": "content/A0/lesson-03-numbers-personal-info.md & data/course.json (a0-03-numbers-personal-info)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a0-03-numbers-personal-info (الأرقام والبيانات الشخصية): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A0-04-FIRST-SENTENCES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a0-04-first-sentences",
+      "level": "A0",
+      "sourceRef": "content/A0/lesson-04-first-sentences.md & data/course.json (a0-04-first-sentences)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a0-04-first-sentences (الضمائر وأول جمل بـ sein وhaben): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 30 pure German options tagged `lang=\"de\"`, 0 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A0-05-CLASSROOM-PHRASES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a0-05-classroom-phrases",
+      "level": "A0",
+      "sourceRef": "content/A0/lesson-05-classroom-phrases.md & data/course.json (a0-05-classroom-phrases)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a0-05-classroom-phrases (عبارات الصف وطلب المساعدة): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-01-INTRODUCTIONS-LANGUAGES-HOBBIES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-01-introductions-languages-hobbies",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-01-introductions-languages-hobbies.md & data/course.json (a1-01-introductions-languages-hobbies)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-01-introductions-languages-hobbies (التعريف بالنفس واللغات والهوايات): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 25 pure German options tagged `lang=\"de\"`, 5 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-02-WORK-FAMILY",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-02-work-family",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-02-work-family.md & data/course.json (a1-02-work-family)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-02-work-family (الأسرة والمهن): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 21 pure German options tagged `lang=\"de\"`, 9 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-03-CITY-CAFE-HOTEL",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-03-city-cafe-hotel",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-03-city-cafe-hotel.md & data/course.json (a1-03-city-cafe-hotel)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-03-city-cafe-hotel (في المدينة: المقهى والفندق): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-04-DAILY-ROUTINE-TIME",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-04-daily-routine-time",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-04-daily-routine-time.md & data/course.json (a1-04-daily-routine-time)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-04-daily-routine-time (الروتين اليومي والوقت): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-05-FOOD-DRINK",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-05-food-drink",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-05-food-drink.md & data/course.json (a1-05-food-drink)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-05-food-drink (الطعام والشراب): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-06-YESTERDAY-PERFEKT",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-06-yesterday-perfekt",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-06-yesterday-perfekt.md & data/course.json (a1-06-yesterday-perfekt)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-06-yesterday-perfekt (أمس واليوم: مقدمة إلى Perfekt): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 30 pure German options tagged `lang=\"de\"`, 0 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-07-TRAVEL-WEATHER",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-07-travel-weather",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-07-travel-weather.md & data/course.json (a1-07-travel-weather)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-07-travel-weather (السفر والطقس): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 21 pure German options tagged `lang=\"de\"`, 9 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-08-SHOPPING-CLOTHES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-08-shopping-clothes",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-08-shopping-clothes.md & data/course.json (a1-08-shopping-clothes)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-08-shopping-clothes (التسوّق والملابس والاحتياجات): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-09-WORK-APPOINTMENTS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-09-work-appointments",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-09-work-appointments.md & data/course.json (a1-09-work-appointments)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-09-work-appointments (العمل والمشكلات والمواعيد): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-10-HOBBIES-HEALTH",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-10-hobbies-health",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-10-hobbies-health.md & data/course.json (a1-10-hobbies-health)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-10-hobbies-health (الهوايات والصحة وزيارة الطبيب): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-11-HOME-DIRECTIONS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-11-home-directions",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-11-home-directions.md & data/course.json (a1-11-home-directions)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-11-home-directions (السكن والمنزل والاتجاهات): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A1-12-TRIP-INVITATIONS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a1-12-trip-invitations",
+      "level": "A1",
+      "sourceRef": "content/A1/lesson-12-trip-invitations.md & data/course.json (a1-12-trip-invitations)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a1-12-trip-invitations (رحلة قصيرة ومناسبات ودعوات): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-01-ROUTINES-ABILITIES-EXPERIENCES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-01-routines-abilities-experiences.md & data/course.json (a2-01-routines-abilities-experiences)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-01-routines-abilities-experiences (الحياة اليومية والقدرات والتجارب): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 21 pure German options tagged `lang=\"de\"`, 9 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-02-TRAVEL-COMPARISONS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-02-travel-comparisons",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-02-travel-comparisons.md & data/course.json (a2-02-travel-comparisons)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-02-travel-comparisons (الرحلات والأماكن والمقارنة): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-03-FOOD-NUTRITION-SHOPPING",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-03-food-nutrition-shopping.md & data/course.json (a2-03-food-nutrition-shopping)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-03-food-nutrition-shopping (الطعام والتغذية والشراء والمطعم): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-04-OFFICE-PHONE-APPOINTMENTS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-04-office-phone-appointments",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-04-office-phone-appointments.md & data/course.json (a2-04-office-phone-appointments)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-04-office-phone-appointments (المكتب والهاتف والمواعيد): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-05-TRAINING-ROUTINE-WENN",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-05-training-routine-wenn",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-05-training-routine-wenn.md & data/course.json (a2-05-training-routine-wenn)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-05-training-routine-wenn (الروتين والتدريب المهني وجمل wenn): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-06-FAMILY-HAPPINESS-GIFTS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-06-family-happiness-gifts.md & data/course.json (a2-06-family-happiness-gifts)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-06-family-happiness-gifts (الأسرة والمشاعر والدعوات والهدايا): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-07-LANGUAGE-LEARNING-TRAVEL-PURPOSE",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-07-language-learning-travel-purpose",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-07-language-learning-travel-purpose.md & data/course.json (a2-07-language-learning-travel-purpose)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-07-language-learning-travel-purpose (تعلّم اللغات والسفر والغاية بـum … zu): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 12 pure German options tagged `lang=\"de\"`, 18 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-08-MEDIA-NEWS-PASSIVE",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-08-media-news-passive",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-08-media-news-passive.md & data/course.json (a2-08-media-news-passive)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-08-media-news-passive (الإعلام والأخبار والسياسة: المبني للمجهول): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-09-PRODUCTS-TECHNOLOGY-COMPLAINTS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-09-products-technology-complaints",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-09-products-technology-complaints.md & data/course.json (a2-09-products-technology-complaints)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-09-products-technology-complaints (المنتجات والتقنية وتقديم شكوى): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 12 pure German options tagged `lang=\"de\"`, 18 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-10-SPORTS-HEALTH-FEELINGS-WEIL",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-10-sports-health-feelings-weil.md & data/course.json (a2-10-sports-health-feelings-weil)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-10-sports-health-feelings-weil (الرياضة والصحة والمشاعر وجملة weil): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 9 pure German options tagged `lang=\"de\"`, 21 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-11-HOUSING-NEIGHBORHOOD-WOHIN",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-11-housing-neighborhood-wohin.md & data/course.json (a2-11-housing-neighborhood-wohin)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-11-housing-neighborhood-wohin (المدن والسكن والجيران: Wo أم Wohin؟): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 21 pure German options tagged `lang=\"de\"`, 9 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-A2-12-HOLIDAYS-FESTIVALS-CULTURE",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "a2-12-holidays-festivals-culture",
+      "level": "A2",
+      "sourceRef": "content/A2/lesson-12-holidays-festivals-culture.md & data/course.json (a2-12-holidays-festivals-culture)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson a2-12-holidays-festivals-culture (العطلات والمهرجانات والثقافة): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 9 pure German options tagged `lang=\"de\"`, 21 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-01-DAILY-LIFE-HOBBIES-EXPERIENCES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-01-daily-life-hobbies-experiences.md & data/course.json (b1-01-daily-life-hobbies-experiences)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-01-daily-life-hobbies-experiences (الحياة اليومية والهوايات والتجارب: als وwenn): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-02-FOOD-HABITS-OBWOHL",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-02-food-habits-obwohl.md & data/course.json (b1-02-food-habits-obwohl)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-02-food-habits-obwohl (الطعام والعادات الغذائية: obwohl وtrotzdem): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 27 pure German options tagged `lang=\"de\"`, 3 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-03-WORK-COMMUNICATION-KONJUNKTIV",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-03-work-communication-konjunktiv",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-03-work-communication-konjunktiv.md & data/course.json (b1-03-work-communication-konjunktiv)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-03-work-communication-konjunktiv (المهنة والتواصل في مكان العمل: اقتراحات مهذبة): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 27 pure German options tagged `lang=\"de\"`, 3 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-04-CONTINUING-EDUCATION-DAMIT",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-04-continuing-education-damit",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-04-continuing-education-damit.md & data/course.json (b1-04-continuing-education-damit)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-04-continuing-education-damit (التعلّم والتعليم المستمر: damit و um … zu): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-05-CITIES-RELATIVE-CLAUSES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-05-cities-relative-clauses.md & data/course.json (b1-05-cities-relative-clauses)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-05-cities-relative-clauses (المدن ووصف الأماكن: الجمل الموصولة في Nominativ و Akkusativ): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-06-HEALTH-FITNESS-ADVICE",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-06-health-fitness-advice",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-06-health-fitness-advice.md & data/course.json (b1-06-health-fitness-advice)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-06-health-fitness-advice (الصحة واللياقة وتقديم النصيحة: sollte و könnte): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 27 pure German options tagged `lang=\"de\"`, 3 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-07-LIFESTYLES-CUSTOMS-CULTURES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-07-lifestyles-customs-cultures.md & data/course.json (b1-07-lifestyles-customs-cultures)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-07-lifestyles-customs-cultures (أساليب الحياة والعادات والثقافات: الروابط الثنائية): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-08-CONSUMPTION-ADVERTISING-JE-DESTO",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-08-consumption-advertising-je-desto.md & data/course.json (b1-08-consumption-advertising-je-desto)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-08-consumption-advertising-je-desto (المنتجات والاستهلاك والإعلان: je … desto/umso …): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-09-TRAVEL-TRANSPORT-ENVIRONMENT",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-09-travel-transport-environment",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-09-travel-transport-environment.md & data/course.json (b1-09-travel-transport-environment)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-09-travel-transport-environment (السفر والنقل والبيئة: bevor وnachdem وwährend): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-10-MEDIA-NEWS-FORMAL-COMMUNICATION",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-10-media-news-formal-communication.md & data/course.json (b1-10-media-news-formal-communication)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-10-media-news-formal-communication (الإعلام والأخبار والتواصل الرسمي: الأسئلة غير المباشرة): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-11-HISTORY-POLITICS-PASSIVE-PAST",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-11-history-politics-passive-past.md & data/course.json (b1-11-history-politics-passive-past)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-11-history-politics-passive-past (التاريخ والسياسة: المبني للمجهول في Präteritum): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B1-12-INNOVATION-RESEARCH-FUTURE",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b1-12-innovation-research-future",
+      "level": "B1",
+      "sourceRef": "content/B1/lesson-12-innovation-research-future.md & data/course.json (b1-12-innovation-research-future)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b1-12-innovation-research-future (الابتكار والإبداع والبحث: التوقّعات بـFutur I): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-01-TIME-MANAGEMENT-HABITS-READING",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-01-time-management-habits-reading.md & data/course.json (b2-01-time-management-habits-reading)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-01-time-management-habits-reading (إدارة الوقت والعادات والقراءة: indem وdadurch, dass): 0 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-02-CAREER-FORMAL-COMMUNICATION-KONJUNKTIV1",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-02-career-formal-communication-konjunktiv1.md & data/course.json (b2-02-career-formal-communication-konjunktiv1)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-02-career-formal-communication-konjunktiv1 (العمل والمسار المهني والتواصل الرسمي: Konjunktiv I): 5 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 15 pure German options tagged `lang=\"de\"`, 15 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-03-CONSUMPTION-ENVIRONMENT-PASSIVE-MODAL",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-03-consumption-environment-passive-modal.md & data/course.json (b2-03-consumption-environment-passive-modal)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-03-consumption-environment-passive-modal (الاستهلاك والبدائل البيئية: المبني للمجهول مع الأفعال الناقصة): 7 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 21 pure German options tagged `lang=\"de\"`, 9 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-04-CITIES-HOUSING-PARTICIPLES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-04-cities-housing-participles",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-04-cities-housing-participles.md & data/course.json (b2-04-cities-housing-participles)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-04-cities-housing-participles (المدن والمباني والسكن: Partizip I وPartizip II كصفات): 8 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-05-HEALTH-FITNESS-MEDICAL-INFORMATION",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-05-health-fitness-medical-information.md & data/course.json (b2-05-health-fitness-medical-information)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-05-health-fitness-medical-information (الصحة واللياقة والمعلومات الطبية: السبب والنتيجة): 42 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-06-STUDY-APPLICATIONS-VERB-NOUN-PHRASES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-06-study-applications-verb-noun-phrases.md & data/course.json (b2-06-study-applications-verb-noun-phrases)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-06-study-applications-verb-noun-phrases (التعلّم والدراسة والتقديم الأكاديمي: Nomen-Verb-Verbindungen): 17 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-07-TRAVEL-EXPERIENCES-PREPOSITIONAL-RELATIVES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-07-travel-experiences-prepositional-relatives.md & data/course.json (b2-07-travel-experiences-prepositional-relatives)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-07-travel-experiences-prepositional-relatives (السفر والتجارب والوجهات: الجمل الموصولة مع حروف الجر): 81 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 0 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 20 pure German options tagged `lang=\"de\"`, 10 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-08-FOOD-NUTRITION-DATA-PASSIVES",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-08-food-nutrition-data-passives.md & data/course.json (b2-08-food-nutrition-data-passives)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-08-food-nutrition-data-passives (الغذاء والتغذية والبيانات: Vorgangspassiv وZustandspassiv): 114 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 6 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 12 pure German options tagged `lang=\"de\"`, 18 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-09-BUSINESS-MARKETING-EMPLOYMENT-PREPOSITIONS",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-09-business-marketing-employment-prepositions.md & data/course.json (b2-09-business-marketing-employment-prepositions)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-09-business-marketing-employment-prepositions (الشركات والتسويق والعمل: الأفعال مع حروف الجر وda-/wo- المركّبة): 113 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 1 Arabic `<code dir=\"auto\">` spans, and 2 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-10-WISHES-PROBABILITIES-TECHNOLOGY-KONJUNKTIV2-PAST",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-10-wishes-probabilities-technology-konjunktiv2-past.md & data/course.json (b2-10-wishes-probabilities-technology-konjunktiv2-past)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-10-wishes-probabilities-technology-konjunktiv2-past (الأمنيات والاحتمالات والتقنية: Konjunktiv II للماضي والفرضيات): 129 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 2 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-11-HUMANS-NATURE-ENVIRONMENT-NOMINALIZATION",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-11-humans-nature-environment-nominalization.md & data/course.json (b2-11-humans-nature-environment-nominalization)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-11-humans-nature-environment-nominalization (الإنسان والطبيعة وحماية البيئة: الأسلوب الاسمي): 224 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 1 Arabic `<code dir=\"auto\">` spans, and 2 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 18 pure German options tagged `lang=\"de\"`, 12 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-LESSON-B2-12-LEISURE-MEDIA-REPORTED-SPEECH",
+      "kind": "lesson_code_quiz_bidi_unit",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "level": "B2",
+      "sourceRef": "content/B2/lesson-12-leisure-media-reported-speech.md & data/course.json (b2-12-leisure-media-reported-speech)",
+      "status": "verified_and_enriched",
+      "finding": "Lesson b2-12-leisure-media-reported-speech (أوقات الفراغ والإعلام ونقل الكلام: Konjunktiv I وKonjunktiv II): 170 German inline `<code dir=\"ltr\" lang=\"de\">` spans, 0 Arabic `<code dir=\"auto\">` spans, and 2 numeric/symbol `<code dir=\"ltr\">` spans; 10 quiz questions (30 options: 21 pure German options tagged `lang=\"de\"`, 9 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 2 performance tasks (6 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Enforced WCAG 2.1 SC 3.1.2 lang='de' on German inline code and quiz options, W3C bidi dir='auto' on explanations and performance rubrics, and verified 0 axe incomplete flags."
+    },
+    {
+      "id": "CR58-UNIT-A0-GATE",
+      "kind": "gate_quiz_bidi_unit",
+      "lessonId": "a0-a1-gate",
+      "level": "A0",
+      "sourceRef": "content/A0/lesson-06-placement-check.md & content/A0/lesson-06-placement-check.assessment.json",
+      "status": "verified_and_enriched",
+      "finding": "A0->A1 Transition Gate (a0-a1-gate, version a0-gate-v2): 10 quiz questions (30 options: 24 pure German options tagged `lang=\"de\"`, 6 Arabic/mixed options with `dir=\"auto\"`), 10 `dir=\"auto\"` explanations, and 3 performance tasks (9 `dir=\"auto\"` rubric criteria). Zero axe violations and zero incomplete flags.",
+      "action": "Tagged pure German gate options with lang='de', isolated gate explanations and performance rubric items with dir='auto', and verified 0 axe incomplete flags on A0-gate and A0-gate-reviewed-performance."
+    },
+    {
+      "id": "CR58-BUILD-INLINE-CODE-LANG",
+      "kind": "bundler_inline_code_lang_bidi",
+      "sourceRef": "tools/build_course.py (safe_inline / hold_code)",
+      "status": "corrected",
+      "finding": "Across the 53 lessons, 926 inline `<code>` spans are rendered into `contentHtml`: 910 contain German words/structures/connectors (`<code dir=\"ltr\" lang=\"de\">`), 2 contain Arabic meta-formulas in B2.9 and B2.11 (`<code dir=\"auto\">`), and 14 are purely numeric/symbolic (`<code dir=\"ltr\">`).",
+      "action": "Updated `hold_code` in `tools/build_course.py` to emit `dir=\"auto\"` when Arabic characters are present and `dir=\"ltr\" lang=\"de\"` when German/Latin letters are present without Arabic."
+    },
+    {
+      "id": "CR58-BUILD-BOLD-ARROW-MERGE",
+      "kind": "bundler_bold_arrow_merge",
+      "sourceRef": "tools/build_course.py (safe_inline)",
+      "status": "corrected",
+      "finding": "In B1.7, B1.9, B2.1, B2.5, and B2.11, 22 exercise list items of the form `**A** → **B**` previously left ` → ` (`\\u2192`) as the sole direct `#text` child of `<li dir=\"auto\">` outside `<strong>`, causing axe-core to report 44 `nonBmp` incomplete node occurrences across 10 screen states.",
+      "action": "Updated `safe_inline` in `tools/build_course.py` to merge `</strong>(\\s*→\\s*)<strong>` into `\\1` inside a single `<strong>` element, eliminating all 44 `nonBmp` incomplete occurrences on lesson list items."
+    },
+    {
+      "id": "CR58-APP-QUIZ-LANG-FEEDBACK",
+      "kind": "ui_wcag_quiz_lang_bidi",
+      "sourceRef": "app.js (isGermanTextSnippet, renderLessonQuiz, renderA0GateAssessment) & styles.css (.quiz-feedback)",
+      "status": "corrected",
+      "finding": "Across all 540 quiz questions (1,622 total options: 1,070 pure German options + 552 Arabic/mixed/numeric options), pure German options now receive `lang=\"de\"` on `.option-text` (WCAG 2.1 SC 3.1.2, Technique H58), and all 540 `.quiz-feedback` explanations receive `dir=\"auto\"` and `unicode-bidi: plaintext`.",
+      "action": "Added `isGermanTextSnippet(option)` and `dir=\"auto\"` on `.quiz-feedback` in `app.js` and `unicode-bidi: plaintext` on `.quiz-feedback` in `styles.css`."
+    },
+    {
+      "id": "CR58-APP-PERFORMANCE-RUBRIC-BIDI",
+      "kind": "ui_bidi_performance_rubrics",
+      "sourceRef": "app.js (renderPerformanceTasks)",
+      "status": "corrected",
+      "finding": "Across all 109 performance tasks (106 lesson tasks + 3 A0 gate tasks) and their 327 local self-check rubric criteria, task prompts `<p dir=\"auto\">` and rubric items `<li dir=\"auto\">` mix Arabic instructions with German target structures and now isolate directional runs cleanly.",
+      "action": "Added `dir=\"auto\"` to `<p>` and `<li>` inside `renderPerformanceTasks` in `app.js`."
+    },
+    {
+      "id": "CR58-APP-HERO-ART-CLEANUP",
+      "kind": "ui_hero_art_nonbmp_cleanup",
+      "sourceRef": "app.js (renderDashboard) & styles.css (.hero-spark, .art-levels)",
+      "status": "corrected",
+      "finding": "In `.hero-art`, `<span class=\"hero-spark two\">✦</span>` and `<div class=\"art-levels\"><span>A0</span><span>→</span><span>B2</span></div>` had single symbol characters (`✦`, `→`) as sole text nodes, causing 4 `nonBmp` incomplete node occurrences on `fresh-dashboard` (1440px and 390px).",
+      "action": "Converted `.hero-spark` to CSS-styled geometric diamond accents (`<span></span>`) and combined `.art-levels` into `<div class=\"art-levels\" dir=\"ltr\"><span>A0 → B2</span></div>`."
+    },
+    {
+      "id": "CR58-CSS-TEXTAREA-OVERFLOW",
+      "kind": "css_textarea_deterministic_contrast",
+      "sourceRef": "styles.css (.performance-task-card textarea)",
+      "status": "corrected",
+      "finding": "Browser default `overflow: auto` on `<textarea>` caused axe-core's `fullyEncompasses` check to compare padding-box `scrollWidth`/`scrollHeight` (790x76) against border-box `getBoundingClientRect()` (792x78), flagging all 218 performance `<textarea>` nodes across 108 screen states as `elmPartiallyObscured` despite a solid 9.98:1 contrast ratio (`#33453a` on `#fcfdf9`).",
+      "action": "Added `overflow-x: hidden; overflow-y: auto;` to `.performance-task-card textarea` in `styles.css`, eliminating horizontal scrollbar overflow and enabling deterministic axe-core contrast verification across all 218 `<textarea>` nodes."
+    },
+    {
+      "id": "CR58-AXE-ZERO-INCOMPLETE-AUDIT",
+      "kind": "accessibility_zero_incomplete_invariant",
+      "sourceRef": "tools/test_accessibility_audit.cjs",
+      "status": "verified",
+      "finding": "Across all 231 representative screen states (115 at 1440px + 116 at 390px, covering all 53/53 lessons + A0 gate), axe-core 4.11.0 reports 0 violated rules (0 nodes) and 0 incomplete rules (0 nodes), down from 120 incomplete rules (266 nodes) in CR57 and 169 incomplete rules (460 nodes) in CR56.",
+      "action": "Updated `tools/test_accessibility_audit.cjs` to enforce both `failures === []` (`0` violations) and `incompletes === []` (`0` incomplete checks) across all 231 screen states."
+    },
+    {
+      "id": "CR58-SW-VERIFY-V107",
+      "kind": "pwa_and_verifier_invariants",
+      "sourceRef": "service-worker.js, tools/verify_course.py, tools/test_browser.cjs, tools/test_code_quiz_a11y_review.py",
+      "status": "verified",
+      "finding": "Service Worker cache bumped to `deutsch-pfad-v107`, `tools/verify_course.py` enforces `(910, 2, 14)` `<code>` counts, zero unmerged `</strong> → <strong>` arrows, quiz/rubric WCAG/bidi snippets, and 58 review JSON files.",
+      "action": "Updated `service-worker.js`, `tools/verify_course.py`, `tools/test_browser.cjs`, `tools/test_service_worker.cjs`, `tools/test_accessibility_update.cjs`, and added `tools/test_code_quiz_a11y_review.py`."
+    }
+  ]
+}

@@ -15,14 +15,14 @@
   "acousticReviewed": false,
   "cefrCertification": false,
   "sourceHashes": {
-    "tools/build_course.py": "2b7969053845d2ab5f5e841c50d5d1bb29fd91427fefc16c61e567cd305995bf",
-    "tools/verify_course.py": "cad03313bd73d671dded1bac9961c11dfb022a187a2ef4892baa6f4d55eb60d3",
-    "app.js": "50cc1b2291c0c6670f85f230b4e85893a41153cf4236a16ac3aaccc8a8cf1482",
-    "styles.css": "d9d9371e212d223eaeaec9c815acf1bc5dff687cc136119ab6ddceb14cdc2330",
-    "service-worker.js": "870aa3a1afea56bb03e9f9c20e744f18adc64cffddc2f8b001ae86dd17769365",
-    "tools/test_browser.cjs": "6f3d8c3483814b0cb53eec8a239eb3acd15ec13f9a6a0da19b271051dc57e783",
-    "tools/test_service_worker.cjs": "d6700255545e389b53c9b7505832e76620c6eef9e20fc133f91885d874c28ee0",
-    "tools/test_accessibility_update.cjs": "bec071884f09f4bd2eb378dad458e981432c508e556538e566d13155f1473e57"
+    "tools/build_course.py": "c1c6a6c86faee2679ec4b7fd04cb0b1440ab143044845ff0d6da3c0c3d6665e6",
+    "tools/verify_course.py": "966e0d3f0339392e05f769fc1c166a4ef7e4d88e2f821a3fea7b953954afe87c",
+    "app.js": "1279fc6a4f843a93915866a97f4df344e8ef8d705d144daedf1b33b63174d88d",
+    "styles.css": "bcb7486b569e611046c366e87ecc38e88bb1fcd0cf3f242925a2aff5f63464bc",
+    "service-worker.js": "7a5667307b8b19b2ca39e5588bd614b66139807b6591ef40e2973b57f32791d9",
+    "tools/test_browser.cjs": "4fcf7296f50411cb10f77bd260f35a0511987a369e6be403af7d1172398b6ed0",
+    "tools/test_service_worker.cjs": "2d912ce0da9cedf8149e97028f3b148a6d1da2494a383012532e88dc0cf7a692",
+    "tools/test_accessibility_update.cjs": "37688ee21657c796b9f84e72b82fa2831139259c350b38f00685a6ffbe0f70f8"
   },
   "sources": [
     {
