@@ -1,5 +1,11 @@
 # تقرير اختبار المتصفح والعمل دون اتصال — 2026-10-09
 
+## إيصال رفع CR59 — 2026-10-09
+
+- **الالتزام المرفوع:** `79234769c8e755c4b5ef89712886a3287e120b56` (`7923476`) على الفرع الوحيد `arena/01a1036f-deutschlern` (`Add WCAG table scope=col & lang=de across lesson blocks and audio speakers (CR59)`).
+- **معاينة Vercel:** `Deployment has completed` (`state: success`، Deployment ID `6971558521`، Status ID `19543592466`، المعاينة `https://deutschlern-rctiix4i8-balinader-2671s-projects.vercel.app`، الفحص `https://vercel.com/balinader-2671s-projects/deutschlern/J5MbNpqHWZuetgYxBM7brTQr7gYm`).
+- **PR#1:** مفتوح وغير مدمج (`headRefOid: 79234769c8e755c4b5ef89712886a3287e120b56`).
+
 ## الفحوص التراكمية — CR59 (`table-block-lang-scope-review` — وسوم النطاق `scope="col"` واللغة `lang="de"` في جداول الدروس وفقرات الحوار والقراءة والبنود التدريبية ومتحدثي الصوت)
 
 - **PASS:** البناء والتحقق (`tools/build_course.py` و`tools/verify_course.py`)، و**59 حارس مراجعة** (بما فيها `tools/test_table_block_lang_scope_review.py` الجديد)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,419,328 بايت**؛ 53 درسًا، 428 عنوان تمرين في الدروس + 3 مهام مصدرية صريحة في بوابة A0 (`431 T`)، 61 قسم حوار، **754 مفردة (541 بتفصيل جمع/تصريف/مثال، منها 521 ألمانية خالصة بسمة `lang="de"`)**، **96 جدولًا (`273` رأس `<th scope="col" dir="auto">` منها `21` بسمة `lang="de"`، و`2,938` خلية `<td>` منها `1,848` بسمة `lang="de"`)**، **`109/118` اقتباس قراءة/استماع `<blockquote dir="auto" lang="de">`**، **`210/1,137` فقرة `<p dir="auto" lang="de">`**، **`1,750/3,821` بند `<li dir="auto" lang="de">`**، **`2,430` عبارة `<strong lang="de">` و`32` عبارة `<em lang="de">` داخل الكتل المختلطة**، 530 سؤال درس + 10 بوابة (`540 Q`، `1,622` خيارًا منها `1,070` بسمة `lang="de"`)، 109 مهمات أداء (`109 P`، `327` معيار تحقق محلي بسمة `dir="auto"`), 1080 صف catalog، 217 أصلًا/474 مقطعًا (`466/474` متحدثًا ألمانيًا بسمة `lang="de"`؛ 137 `ready` / 302 مقاطع و80 معلقة / 172 مقطعًا).
