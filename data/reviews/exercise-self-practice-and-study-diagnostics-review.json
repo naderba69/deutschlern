@@ -1,0 +1,878 @@
+{
+  "reviewId": "CR63",
+  "lessonId": "exercise-self-practice-and-study-diagnostics",
+  "assessmentVersion": "exercise-self-practice-diagnostics-v1",
+  "reviewedAt": "2026-10-10",
+  "serviceWorkerCacheName": "deutsch-pfad-v112",
+  "unitCount": 68,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "summary": {
+    "totalLessonsCovered": 53,
+    "exercisePracticeWorkspaces": 428,
+    "inlineExerciseKeys": 428,
+    "dialogueRoleplayGuides": 46,
+    "listeningScriptGuards": 48,
+    "lessonStagePills": 159,
+    "vocabularyContextualExamples": 754,
+    "quizQuestionsWithDiagnostics": 540,
+    "performanceTasksWithHeuristics": 109,
+    "axeStatesVerified": 349,
+    "narrowViewportStatesVerified": 348
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Duden — Korrektur (search snippet)",
+      "url": "https://www.duden.de/rechtschreibung/Korrektur",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Selbststudium Dialog Aussprache Korrektur Fehler",
+      "note": "Verbesserung, Berichtigung, Richtigstellung; die Korrektur einer schriftlichen Arbeit."
+    },
+    {
+      "id": "S02",
+      "title": "Duden — Dialog (search snippet)",
+      "url": "https://www.duden.de/rechtschreibung/Dialog",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Selbststudium Dialog Aussprache Korrektur Fehler",
+      "note": "der Dialog; Wechselrede, Zwiegespräch (Goethe-Zertifikat B1 vocabulary)."
+    },
+    {
+      "id": "S03",
+      "title": "Duden — Dialogform (search snippet)",
+      "url": "https://www.duden.de/rechtschreibung/Dialogform",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Selbststudium Dialog Aussprache Korrektur Fehler",
+      "note": "die Dialogform; dialogische Form, formale Gestaltung als Dialog."
+    },
+    {
+      "id": "S04",
+      "title": "Lingolia — Nicht and Kein (search snippet)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/negation",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure questions negation word order",
+      "note": "Negation with nicht and kein across cases and sentence positions."
+    },
+    {
+      "id": "S05",
+      "title": "Lingolia — Sentence Structure (search snippet)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure questions negation word order",
+      "note": "Overview of German Wortstellung in main clauses, negation, questions, and dependent clauses."
+    },
+    {
+      "id": "S06",
+      "title": "Lingolia — Negation Exercises (search snippet)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/negation/exercises",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure questions negation word order",
+      "note": "Self-practice exercise structures for negation with nicht and kein."
+    },
+    {
+      "id": "S07",
+      "title": "W3C WAI WCAG 2.1 Technique H44: Using label elements to associate text labels with form controls",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/html/H44",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Explicit <label for='...'> association with <textarea id='...'> for WCAG 1.1.1, 1.3.1, 3.3.2, and 4.1.2."
+    },
+    {
+      "id": "S08",
+      "title": "W3C WAI WCAG 2.1 Technique G85: Providing a text description when user input falls outside the required format or values",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/general/G85",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Clear diagnostic text descriptions and corrective examples when learner responses contain errors (WCAG 3.3.1, 3.3.3)."
+    },
+    {
+      "id": "S09",
+      "title": "Lingolia — Sentence Structure – Word Order in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "German word order rules across main clauses, negation, questions, and dependent clauses."
+    },
+    {
+      "id": "S10",
+      "title": "Lingolia — Nicht and Kein – Negation in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/negation",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Placement of nicht (end of simple clause, before full verb in compound tenses, before prepositional/adverbial phrases) and declension of kein."
+    },
+    {
+      "id": "S11",
+      "title": "Lingolia — Questions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/questions",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Closed questions (Entscheidungsfragen, verb-first), open W-questions (Ergänzungsfragen, W-word + V2), wo(r)+preposition, and indirect questions (verb-final)."
+    },
+    {
+      "id": "S12",
+      "title": "Duden — Korrektur",
+      "url": "https://www.duden.de/rechtschreibung/Korrektur",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Korrektur, Plural die Korrekturen — Verbesserung, Berichtigung, Richtigstellung."
+    },
+    {
+      "id": "S13",
+      "title": "Duden — Dialog",
+      "url": "https://www.duden.de/rechtschreibung/Dialog",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "der Dialog, Plural die Dialoge — abwechselnd geführte Rede und Gegenrede; einen Dialog führen."
+    },
+    {
+      "id": "S14",
+      "title": "Duden — Aussprache",
+      "url": "https://www.duden.de/rechtschreibung/Aussprache",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Aussprache, Plural die Aussprachen — richtiges Aussprechen, Artikulation; eine deutliche, klare Aussprache haben."
+    },
+    {
+      "id": "S15",
+      "title": "Duden — Fehler",
+      "url": "https://www.duden.de/rechtschreibung/Fehler",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "der Fehler, Plural die Fehler — grammatische, stilistische Fehler korrigieren; aus Fehlern lernen."
+    },
+    {
+      "id": "S16",
+      "title": "Duden — Selbststudium",
+      "url": "https://www.duden.de/rechtschreibung/Selbststudium",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "das Selbststudium — Wissensaneignung allein durch Lehrmaterialien; sich Kenntnisse im Selbststudium aneignen."
+    },
+    {
+      "id": "S17",
+      "title": "Duden — Berichtigung",
+      "url": "https://www.duden.de/rechtschreibung/Berichtigung",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Berichtigung, Plural die Berichtigungen — das Richtigstellen, Verbessern; Korrektur."
+    },
+    {
+      "id": "S18",
+      "title": "Duden — Gespräch",
+      "url": "https://www.duden.de/rechtschreibung/Gespraech",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "das Gespräch, Plural die Gespräche — mündlicher Gedankenaustausch in Rede und Gegenrede; ein Gespräch führen."
+    },
+    {
+      "id": "S19",
+      "title": "Duden — Fragesatz",
+      "url": "https://www.duden.de/rechtschreibung/Fragesatz",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "der Fragesatz, Plural die Fragesätze — Interrogativsatz."
+    },
+    {
+      "id": "S20",
+      "title": "Duden — Fortschritt",
+      "url": "https://www.duden.de/rechtschreibung/Fortschritt",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "der Fortschritt, Plural die Fortschritte — positiv bewertete Weiterentwicklung; Fortschritte erzielen/machen."
+    }
+  ],
+  "excludedSources": [],
+  "sourceHashes": {
+    "app.js": "87a43d49c7c781ce7c18b26db9bf4239a2fdc40b68fb1acf7fe6720e444b9b83",
+    "styles.css": "9d611d23b99ca256433bb81468d7c0997a0c816da166b25f6f4e70bcc3808269",
+    "service-worker.js": "baa4b7305e5ee5a76758b22143d400d3bf81cff98b24e0571eec3a49e624e17e",
+    "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
+    "README.md": "6df6643296b5c5c4d1c7110cfa8e9f0e33300d17a7df848ff28ca72733b81058",
+    "content/PROGRESS.md": "e4fbd88f196804369f2d0fd33c04573b35362b24911195759cb64db120cbc530",
+    "data/reviews/README.md": "9cbedc3501884e990257cc2da2e57fb4922bde58f876dcc8060593860e45322c",
+    "data/browser-qa-report.md": "333110310542ba2b64c6b7bbc155f179bb0387ad69dca4cbd78544f2cf3d2fdf",
+    "data/curriculum-audit.md": "439e2228a26b74a523a44c9a52370bf7dbfc8cb0caf8526e5ab6c152b7253e09",
+    "data/curriculum-production-matrix.md": "04f162956515c8809223cd81fd3c00b01d700c8fda16a7804cacd2e4b783d8d1",
+    "data/course-improvement-plan.md": "6f2eaa917492a7723fd36b905f3232d2855a9413d02460afe44247c779a64826"
+  },
+  "units": [
+    {
+      "id": "CR63-L01-a0-01-alphabet",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a0-01-alphabet",
+      "exerciseWorkspaces": 7,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a0-01-alphabet (7 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L02-a0-02-greetings",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a0-02-greetings",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a0-02-greetings (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L03-a0-03-numbers-personal-info",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a0-03-numbers-personal-info",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a0-03-numbers-personal-info (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L04-a0-04-first-sentences",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a0-04-first-sentences",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a0-04-first-sentences (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L05-a0-05-classroom-phrases",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a0-05-classroom-phrases",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a0-05-classroom-phrases (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L06-a1-01-introductions-languages-hobbies",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-01-introductions-languages-hobbies",
+      "exerciseWorkspaces": 10,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-01-introductions-languages-hobbies (10 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L07-a1-02-work-family",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-02-work-family",
+      "exerciseWorkspaces": 9,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-02-work-family (9 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L08-a1-03-city-cafe-hotel",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-03-city-cafe-hotel",
+      "exerciseWorkspaces": 9,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-03-city-cafe-hotel (9 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L09-a1-04-daily-routine-time",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-04-daily-routine-time",
+      "exerciseWorkspaces": 9,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-04-daily-routine-time (9 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L10-a1-05-food-drink",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-05-food-drink",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-05-food-drink (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L11-a1-06-yesterday-perfekt",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-06-yesterday-perfekt",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-06-yesterday-perfekt (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L12-a1-07-travel-weather",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-07-travel-weather",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-07-travel-weather (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L13-a1-08-shopping-clothes",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-08-shopping-clothes",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-08-shopping-clothes (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L14-a1-09-work-appointments",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-09-work-appointments",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-09-work-appointments (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L15-a1-10-hobbies-health",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-10-hobbies-health",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-10-hobbies-health (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L16-a1-11-home-directions",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-11-home-directions",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-11-home-directions (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L17-a1-12-trip-invitations",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a1-12-trip-invitations",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a1-12-trip-invitations (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L18-a2-01-routines-abilities-experiences",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-01-routines-abilities-experiences",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-01-routines-abilities-experiences (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L19-a2-02-travel-comparisons",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-02-travel-comparisons",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-02-travel-comparisons (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L20-a2-03-food-nutrition-shopping",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-03-food-nutrition-shopping",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-03-food-nutrition-shopping (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L21-a2-04-office-phone-appointments",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-04-office-phone-appointments",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-04-office-phone-appointments (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L22-a2-05-training-routine-wenn",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-05-training-routine-wenn",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-05-training-routine-wenn (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L23-a2-06-family-happiness-gifts",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-06-family-happiness-gifts",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-06-family-happiness-gifts (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L24-a2-07-language-learning-travel-purpose",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-07-language-learning-travel-purpose",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-07-language-learning-travel-purpose (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L25-a2-08-media-news-passive",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-08-media-news-passive",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 0,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-08-media-news-passive (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (0) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L26-a2-09-products-technology-complaints",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-09-products-technology-complaints",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-09-products-technology-complaints (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L27-a2-10-sports-health-feelings-weil",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-10-sports-health-feelings-weil",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-10-sports-health-feelings-weil (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L28-a2-11-housing-neighborhood-wohin",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-11-housing-neighborhood-wohin",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-11-housing-neighborhood-wohin (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L29-a2-12-holidays-festivals-culture",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "a2-12-holidays-festivals-culture",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس a2-12-holidays-festivals-culture (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L30-b1-01-daily-life-hobbies-experiences",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-01-daily-life-hobbies-experiences",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-01-daily-life-hobbies-experiences (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L31-b1-02-food-habits-obwohl",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-02-food-habits-obwohl",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-02-food-habits-obwohl (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L32-b1-03-work-communication-konjunktiv",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-03-work-communication-konjunktiv",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-03-work-communication-konjunktiv (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L33-b1-04-continuing-education-damit",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-04-continuing-education-damit",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-04-continuing-education-damit (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L34-b1-05-cities-relative-clauses",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-05-cities-relative-clauses",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-05-cities-relative-clauses (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L35-b1-06-health-fitness-advice",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-06-health-fitness-advice",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-06-health-fitness-advice (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L36-b1-07-lifestyles-customs-cultures",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-07-lifestyles-customs-cultures",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-07-lifestyles-customs-cultures (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L37-b1-08-consumption-advertising-je-desto",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-08-consumption-advertising-je-desto",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-08-consumption-advertising-je-desto (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L38-b1-09-travel-transport-environment",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-09-travel-transport-environment",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-09-travel-transport-environment (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L39-b1-10-media-news-formal-communication",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-10-media-news-formal-communication",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-10-media-news-formal-communication (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L40-b1-11-history-politics-passive-past",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-11-history-politics-passive-past",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-11-history-politics-passive-past (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L41-b1-12-innovation-research-future",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b1-12-innovation-research-future",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b1-12-innovation-research-future (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L42-b2-01-time-management-habits-reading",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-01-time-management-habits-reading",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-01-time-management-habits-reading (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L43-b2-02-career-formal-communication-konjunktiv1",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-02-career-formal-communication-konjunktiv1",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-02-career-formal-communication-konjunktiv1 (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L44-b2-03-consumption-environment-passive-modal",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-03-consumption-environment-passive-modal",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-03-consumption-environment-passive-modal (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L45-b2-04-cities-housing-participles",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-04-cities-housing-participles",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-04-cities-housing-participles (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L46-b2-05-health-fitness-medical-information",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-05-health-fitness-medical-information",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-05-health-fitness-medical-information (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L47-b2-06-study-applications-verb-noun-phrases",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-06-study-applications-verb-noun-phrases",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-06-study-applications-verb-noun-phrases (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L48-b2-07-travel-experiences-prepositional-relatives",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-07-travel-experiences-prepositional-relatives",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-07-travel-experiences-prepositional-relatives (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L49-b2-08-food-nutrition-data-passives",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-08-food-nutrition-data-passives",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-08-food-nutrition-data-passives (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L50-b2-09-business-marketing-employment-prepositions",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-09-business-marketing-employment-prepositions",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-09-business-marketing-employment-prepositions (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L51-b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-10-wishes-probabilities-technology-konjunktiv2-past (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L52-b2-11-humans-nature-environment-nominalization",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-11-humans-nature-environment-nominalization",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-11-humans-nature-environment-nominalization (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-L53-b2-12-leisure-media-reported-speech",
+      "kind": "lesson_exercise_workspace_and_dialogue_guide",
+      "lessonId": "b2-12-leisure-media-reported-speech",
+      "exerciseWorkspaces": 8,
+      "dialogueGuides": 1,
+      "quizDiagnosticQuestions": 10,
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد جميع تمارين الدرس b2-12-leisure-media-reported-speech (8 تمارين) بمساحة الحل والتطبيق الذاتي التفاعلية (<details class=\"exercise-practice-workspace\">) مع حقل <textarea> معنوَن بـ<label for> وحفظ محلي مستمر، وأقسام الحوار (1) بدليل التدرب وتقمّص الأدوار (<details class=\"dialogue-roleplay-guide\">)، وتشخيص أخطاء أسئلة التقييم الـ10."
+    },
+    {
+      "id": "CR63-U54-a0-a1-gate",
+      "kind": "gate_quiz_mistake_diagnostics",
+      "lessonId": "a0-a1-gate",
+      "verdict": "upgraded_and_verified",
+      "finding": "تم تزويد شاشة نتيجة بوابة الانتقال A0→A1 (a0-a1-gate) بتقرير تحليل الأخطاء وتصحيح الإجابات (renderQuizMistakeDiagnostics) لأسئلة البوابة الـ10 مع عرض إجابة المتعلم والصواب والتفسير اللغوي."
+    },
+    {
+      "id": "CR63-U55-exercise-practice-state",
+      "kind": "state_persistence",
+      "verdict": "upgraded_and_verified",
+      "finding": "إضافة normalizeExercisePractice وحفظ مسودات وحالة إنجاز جميع التمارين الـ428 في state.exercisePractice مع دعم التصدير والاستيراد الاحتياطي JSON."
+    },
+    {
+      "id": "CR63-U56-exercise-workspace-dom",
+      "kind": "exercise_self_practice_ui",
+      "verdict": "upgraded_and_verified",
+      "finding": "حقن <details class=\"exercise-practice-workspace\" data-exercise-workspace=\"N\"> قبل كل مفتاح حل فردي في جميع التمارين الـ428/428 عبر الدروس الـ53."
+    },
+    {
+      "id": "CR63-U57-wcag-h44-exercise-labels",
+      "kind": "accessibility_h44",
+      "verdict": "upgraded_and_verified",
+      "finding": "ربط كل حقل <textarea id=\"ex-draft-...\"> بعنصر <label for=\"ex-draft-...\"> صريح ومرئي وفق تقنية WCAG 2.1 Technique H44 بصفر مخالفات في axe-core."
+    },
+    {
+      "id": "CR63-U58-stage-bar-exercise-counter",
+      "kind": "lesson_stage_progress",
+      "verdict": "upgraded_and_verified",
+      "finding": "تحديث شريط مراحل الدرس (renderLessonStagesBar) ليعرض حيًا عدد التمارين المطبّقة من إجمالي تمارين الدرس (done/total) أثناء الكتابة أو التسجيل."
+    },
+    {
+      "id": "CR63-U59-dialogue-roleplay-guides",
+      "kind": "dialogue_pedagogy",
+      "verdict": "upgraded_and_verified",
+      "finding": "إضافة دليل التدرب التفاعلي وتقمّص الأدوار من 3 خطوات (<details class=\"dialogue-roleplay-guide\">) في جميع أقسام الحوار الـ61 عبر الدروس الـ53."
+    },
+    {
+      "id": "CR63-U60-quiz-mistake-diagnostics",
+      "kind": "post_quiz_fehleranalyse",
+      "verdict": "upgraded_and_verified",
+      "finding": "إضافة دالة renderQuizMistakeDiagnostics(quiz, answers) لعرض تحليل الأخطاء وتصحيح الإجابات (Fehleranalyse & Berichtigung) فور انتهاء تقييم الدرس أو البوابة."
+    },
+    {
+      "id": "CR63-U61-cumulative-skill-diagnostics",
+      "kind": "review_skill_diagnostics",
+      "verdict": "upgraded_and_verified",
+      "finding": "إضافة لوحة مؤشرات التمكّن والتشخيص التراكمي (renderCumulativeSkillDiagnostics) في صفحة المراجعة لمتابعة 53 درسًا و428 تمرينًا و754 مفردة و109 مهام أداء."
+    },
+    {
+      "id": "CR63-U62-styles-contrast-and-reflow",
+      "kind": "css_a11y_reflow",
+      "verdict": "upgraded_and_verified",
+      "finding": "إضافة تنسيقات .exercise-practice-workspace و.dialogue-roleplay-guide و.quiz-mistake-diagnostics و.skill-diagnostics-panel بتباين ألوان يتجاوز 4.5:1 وصفر تجاوز أفقي عند 320px."
+    },
+    {
+      "id": "CR63-U63-service-worker-v112",
+      "kind": "offline_pwa_cache",
+      "verdict": "upgraded_and_verified",
+      "finding": "ترقية CACHE_NAME في service-worker.js إلى deutsch-pfad-v112 لضمان تحديث التطبيق والأنماط الجديدة دون اتصال."
+    },
+    {
+      "id": "CR63-U64-browser-exhaustive-dom-check",
+      "kind": "browser_verification",
+      "verdict": "upgraded_and_verified",
+      "finding": "توسيع tools/test_browser.cjs للتحقق من وجود 428 مساحة حل ذاتي للتمارين و61 دليل حوار تفاعلي و428 مفتاح حل فوري و754 مثال مفردات في DOM الحي."
+    },
+    {
+      "id": "CR63-U65-axe-349-states-zero-violations",
+      "kind": "axe_exhaustive_audit",
+      "verdict": "upgraded_and_verified",
+      "finding": "اجتياز فحص axe-core الشامل عبر جميع حالات الشاشة الـ349 (174 سطح مكتب + 175 جوال) بصفر مخالفات وصفر فحوص غير حاسمة."
+    },
+    {
+      "id": "CR63-U66-narrow-348-states-zero-overflow",
+      "kind": "narrow_layout_audit",
+      "verdict": "upgraded_and_verified",
+      "finding": "اجتياز فحص العرض الضيق الشامل عبر جميع الحالات الـ348 (174 في 320×900 + 174 في 568×320) بصفر تجاوز أفقي."
+    },
+    {
+      "id": "CR63-U67-cumulative-docs-synchronization",
+      "kind": "documentation_sync",
+      "verdict": "upgraded_and_verified",
+      "finding": "مزامنة الوثائق التراكمية السبع (README.md وcontent/PROGRESS.md وdata/reviews/README.md وdata/browser-qa-report.md وdata/curriculum-audit.md وdata/curriculum-production-matrix.md وdata/course-improvement-plan.md) حتى CR63."
+    },
+    {
+      "id": "CR63-U68-regression-guards-63",
+      "kind": "regression_suite",
+      "verdict": "upgraded_and_verified",
+      "finding": "إضافة الحارس رقم 63 (tools/test_exercise_self_practice_and_study_diagnostics_review.py) ومزامنة البصمات عبر جميع ملفات المراجعة الـ63."
+    }
+  ]
+}

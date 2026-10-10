@@ -162,6 +162,23 @@ function normalizeLearningSessions(value) {
   };
 }
 
+function normalizeExercisePractice(value) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const result = {};
+  for (const [lessonId, entries] of Object.entries(value)) {
+    if (!entries || typeof entries !== 'object' || Array.isArray(entries)) continue;
+    const lessonMap = {};
+    for (const [numKey, item] of Object.entries(entries)) {
+      if (!item || typeof item !== 'object') continue;
+      const draft = typeof item.draft === 'string' ? item.draft.slice(0, 800) : '';
+      const done = item.done === true;
+      if (draft || done) lessonMap[numKey] = { draft, done };
+    }
+    if (Object.keys(lessonMap).length) result[lessonId] = lessonMap;
+  }
+  return result;
+}
+
 function freshState() {
   return {
     profile: { name: 'متعلّم', dailyGoal: DAILY_TIME_REFERENCE_DEFAULT, focus: 'المحادثة', startLevel: 'A0' },
@@ -170,6 +187,7 @@ function freshState() {
     wordReviews: {},
     audioTranscriptUnlocks: {},
     performanceEvidence: {},
+    exercisePractice: {},
     learningSessions: freshLearningSessions(),
     dailyPlan: null,
     xp: 0,
@@ -202,6 +220,7 @@ function loadState() {
       wordReviews: saved.wordReviews && typeof saved.wordReviews === 'object' ? saved.wordReviews : {},
       audioTranscriptUnlocks: saved.audioTranscriptUnlocks && typeof saved.audioTranscriptUnlocks === 'object' ? saved.audioTranscriptUnlocks : {},
       performanceEvidence: saved.performanceEvidence && typeof saved.performanceEvidence === 'object' ? saved.performanceEvidence : {},
+      exercisePractice: normalizeExercisePractice(saved.exercisePractice),
       learningSessions: normalizeLearningSessions(saved.learningSessions),
       dailyPlan: normalizeDailyPlan(saved.dailyPlan),
       studyDays: normalizeStudyDays(saved.studyDays),
@@ -1905,7 +1924,7 @@ function renderA0GateResult(gate) {
       : performanceEvidenceMissing
         ? `حققت ${score}% في الأسئلة، لكن لا يمكن اجتياز البوابة قبل إنجاز المهام العملية وتقييمها؛ يلزم أيضًا ${MASTERY_THRESHOLD}% على الأقل.`
         : `حققت ${score}%. يلزم ${MASTERY_THRESHOLD}% على الأقل بعد إتمام A0؛ راجع أهدافك ثم أعد المحاولة.`;
-  return `<div class="quiz-wrap"><section class="result-card"><div class="result-medal">${icon(passed ? 'trophy' : 'spark', 31)}</div><div class="score-ring">${score}%</div><h1>${passed ? 'اجتزت بوابة A0' : 'بوابة A0 ما زالت قيد الإنجاز'}</h1><p>${message}<br>إجابات صحيحة: ${gateSession.correct} من ${gate.quiz.length}.</p><div class="result-actions"><button type="button" class="button-primary" data-action="navigate" data-view="dashboard">العودة إلى لوحتي ${icon('arrowLeft', 16)}</button><button type="button" class="button-outline" data-action="retry-a0-gate">أعد التقييم ${icon('refresh', 15)}</button></div></section></div>`;
+  return `<div class="quiz-wrap"><section class="result-card"><div class="result-medal">${icon(passed ? 'trophy' : 'spark', 31)}</div><div class="score-ring">${score}%</div><h1>${passed ? 'اجتزت بوابة A0' : 'بوابة A0 ما زالت قيد الإنجاز'}</h1><p>${message}<br>إجابات صحيحة: ${gateSession.correct} من ${gate.quiz.length}.</p><div class="result-actions"><button type="button" class="button-primary" data-action="navigate" data-view="dashboard">العودة إلى لوحتي ${icon('arrowLeft', 16)}</button><button type="button" class="button-outline" data-action="retry-a0-gate">أعد التقييم ${icon('refresh', 15)}</button></div></section>${renderQuizMistakeDiagnostics(gate.quiz, gateSession.answers)}</div>`;
 }
 
 function openLesson(id) {
@@ -1981,19 +2000,106 @@ function renderLessonAudioContent(lesson) {
   return { contentHtml, audioPanel: renderAudioAssets(lesson.id, assets.filter((asset) => !placed.has(asset.assetId)).map((asset) => asset.assetId)) };
 }
 
+function getExercisePracticeEntry(lessonId, num) {
+  const entry = state.exercisePractice?.[lessonId]?.[String(num)];
+  return {
+    draft: typeof entry?.draft === 'string' ? entry.draft : '',
+    done: entry?.done === true
+  };
+}
+
+function saveExercisePracticeDraft(lessonId, num, draftText) {
+  if (!lessonId || !num) return;
+  const key = String(num);
+  const current = getExercisePracticeEntry(lessonId, num);
+  const draft = String(draftText || '').slice(0, 800);
+  const done = current.done || draft.trim().length >= 3;
+  state.exercisePractice = {
+    ...(state.exercisePractice || {}),
+    [lessonId]: {
+      ...(state.exercisePractice?.[lessonId] || {}),
+      [key]: { draft, done }
+    }
+  };
+  saveState();
+}
+
+function toggleExercisePracticeDone(lessonId, num) {
+  if (!lessonId || !num) return false;
+  const key = String(num);
+  const current = getExercisePracticeEntry(lessonId, num);
+  const nextDone = !current.done;
+  state.exercisePractice = {
+    ...(state.exercisePractice || {}),
+    [lessonId]: {
+      ...(state.exercisePractice?.[lessonId] || {}),
+      [key]: { draft: current.draft, done: nextDone }
+    }
+  };
+  saveState();
+  return nextDone;
+}
+
+function getLessonExerciseCount(lesson) {
+  const html = String(lesson?.contentHtml || '');
+  const matches = html.match(/<h3 dir="auto">تمرين\s*\d+\b/g);
+  return matches ? matches.length : 8;
+}
+
+function getLessonExerciseProgress(lesson) {
+  const total = getLessonExerciseCount(lesson);
+  const map = state.exercisePractice?.[lesson?.id] || {};
+  let done = 0;
+  for (let i = 1; i <= total; i += 1) {
+    const item = map[String(i)];
+    if (item && (item.done === true || (typeof item.draft === 'string' && item.draft.trim().length > 0))) {
+      done += 1;
+    }
+  }
+  return { done, total };
+}
+
+function totalPracticedExercisesCount() {
+  if (!course?.lessons) return 0;
+  return course.lessons.reduce((sum, lesson) => sum + getLessonExerciseProgress(lesson).done, 0);
+}
+
+function totalCompletedPerformanceTasksCount() {
+  if (!course?.lessons) return 0;
+  let count = 0;
+  for (const lesson of course.lessons) {
+    const scopeKey = `lesson:${lesson.id}`;
+    const version = lesson.assessment?.version || '';
+    for (const task of lesson.performanceTasks || []) {
+      const ev = performanceEvidenceFor(scopeKey, version, task.id);
+      if (ev.completed === true) count += 1;
+    }
+  }
+  const gate = course?.a0TransitionCheck;
+  if (gate) {
+    const gVer = gate.assessment?.version || '';
+    for (const task of gate.performanceTasks || []) {
+      const ev = performanceEvidenceFor('gate:A0-A1', gVer, task.id);
+      if (ev.completed === true) count += 1;
+    }
+  }
+  return count;
+}
+
 function renderLessonStagesBar(lesson) {
   const stages = getLessonStageBreakdown(lesson);
   const domains = getLessonFocusDomains(lesson);
   const userFocus = state.profile.focus || 'المحادثة';
   const focusMatched = domains.includes(userFocus);
+  const exProgress = getLessonExerciseProgress(lesson);
   return `<div class="lesson-stages-bar" dir="auto" role="region" aria-label="مراحل دراسة الدرس">
     <div class="lesson-stages-meta">
       <span class="stage-focus-tag ${focusMatched ? 'is-matched' : ''}">${icon('target', 13)} مجالات الدرس: ${escapeHTML(domains.join(' · '))}${focusMatched ? ` (يطابق هدفك: ${escapeHTML(userFocus)})` : ''}</span>
-      <span class="stage-total-time">تقسيم الجلسة المقترح (${stages.total} د):</span>
+      <span class="stage-total-time" data-lesson-ex-progress="${escapeHTML(lesson.id)}">التطبيق الذاتي: ${exProgress.done}/${exProgress.total} تمارين · تقسيم الجلسة (${stages.total} د):</span>
     </div>
     <div class="lesson-stages-steps">
       <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="build"><strong>1. البناء التأسيسي</strong><span>المفردات والقواعد والحوار · ~${stages.buildMinutes} د</span></button>
-      <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="practice"><strong>2. التدريب المرحلي</strong><span>النصوص والتمارين والتحقق الفوري · ~${stages.practiceMinutes} د</span></button>
+      <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="practice"><strong>2. التدريب المرحلي</strong><span>النصوص والتمارين (${exProgress.done}/${exProgress.total}) · ~${stages.practiceMinutes} د</span></button>
       <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="mastery"><strong>3. إثبات الإتقان</strong><span>التقييم الموضوعي والأداء العملي · ~${stages.masteryMinutes} د</span></button>
     </div>
   </div>`;
@@ -2036,24 +2142,28 @@ function enhanceLessonDocumentHtml(lesson, rawHtml) {
   let mainBody = rawHtml.slice(0, keyStartIdx);
   const tailBody = rawHtml.slice(keyStartIdx);
 
-  // 1. Inject per-exercise collapsible self-check keys right after each exercise block
+  // 1. Inject per-exercise self-practice workspace + collapsible self-check keys right after each exercise block
   mainBody = mainBody.replace(
     /(<h3 dir="auto">تمرين\s*(\d+)\b[\s\S]*?<\/h3>[\s\S]*?)(?=<h3 dir="auto">|<h2 dir="auto">|$)/g,
     (fullBlock, blockContent, numStr) => {
       const num = Number(numStr);
       const entry = keyByExercise.get(num);
       if (!entry) return fullBlock;
+      const exEntry = getExercisePracticeEntry(lesson?.id || '', num);
+      const inputId = `ex-draft-${escapeHTML(lesson?.id || 'lesson')}-${num}`;
+      const practiceWorkspaceHtml = `<details class="exercise-practice-workspace" data-exercise-workspace="${num}"><summary><span class="ex-workspace-title">مساحة الحل والتطبيق الذاتي لتمرين ${num}</span><span class="ex-workspace-status ${exEntry.done ? 'is-done' : ''}" data-ex-status="${escapeHTML(lesson?.id || '')}:${num}">${exEntry.done ? '✓ مُنجز' : 'تطبيق ذاتي'}</span></summary><div class="exercise-practice-body" dir="auto"><label class="exercise-draft-label" for="${inputId}">اكتب إجابتك أو جملك لتمرين ${num} قبل فتح مفتاح الحل</label><textarea id="${inputId}" class="exercise-draft-input" dir="auto" rows="2" maxlength="800" data-exercise-draft data-lesson-id="${escapeHTML(lesson?.id || '')}" data-exercise-num="${num}" placeholder="اكتب محاولتك بالألمانية هنا؛ يُحفظ حلك محليًا على هذا الجهاز...">${escapeHTML(exEntry.draft)}</textarea><div class="exercise-practice-actions"><button type="button" class="button-outline button-small" data-action="toggle-exercise-done" data-lesson-id="${escapeHTML(lesson?.id || '')}" data-exercise-num="${num}">${exEntry.done ? '✓ أنجزت محاولة هذا التمرين' : 'سجّل إنجاز التمرين'}</button></div></div></details>`;
       const summaryLabel = entry.isModel
         ? `اعرض النموذج الاسترشادي لتمرين ${num} للمقارنة الذاتية بعد المحاولة`
         : `تحقّق من حل تمرين ${num} منفردًا بعد المحاولة`;
-      return `${blockContent}<details class="exercise-inline-key" data-exercise-key="${num}"><summary>${summaryLabel}</summary><div class="exercise-inline-key-body" dir="auto">${entry.html}</div></details>`;
+      return `${blockContent}${practiceWorkspaceHtml}<details class="exercise-inline-key" data-exercise-key="${num}"><summary>${summaryLabel}</summary><div class="exercise-inline-key-body" dir="auto">${entry.html}</div></details>`;
     }
   );
 
-  // 2. Enhance h2 sections: inline section audio quick-play (when not already inline) + listening script guard
+  // 2. Enhance h2 sections: inline section audio quick-play (when not already inline) + listening script guard + dialogue role-play guide
   const playableStatuses = ['ready', 'generated_pending_acoustic_review'];
   const lessonAssets = (course?.audioAssets || []).filter((item) => item.lessonId === lesson?.id && playableStatuses.includes(item.status));
   const findAssetByKind = (kind) => lessonAssets.find((item) => item.kind === kind);
+  const dialogueGuideHtml = `<details class="dialogue-roleplay-guide"><summary>دليل التدرب التفاعلي على الحوار وتقمّص الأدوار (3 خطوات منهجية)</summary><div class="dialogue-roleplay-body" dir="auto"><ol><li dir="auto"><strong>الاستماع الشامل:</strong> استمع إلى الحوار كاملًا بالسرعة الطبيعية (1x) لالتقاط السياق ونبرة المتحدثين دون التوقف عند كل مفردة.</li><li dir="auto"><strong>الترديد الجهرى (<span lang="de">Aussprache</span>):</strong> أعد الاستماع ببطء (0.8x) وكرّر كل جملة بصوت مرتفع مع الانتباه لموضع الفعل في الجملة الألمانية.</li><li dir="auto"><strong>تقمّص الأدوار (<span lang="de">Dialog</span>):</strong> اقرأ دور المتحدث الأول بصوتك ثم أجب بدور المتحدث الثاني بالاعتماد على الفهم قبل الانتقال إلى التمارين.</li></ol></div></details>`;
 
   mainBody = mainBody.replace(
     /(<h2 dir="auto">([^<]+)<\/h2>)([\s\S]*?)(?=<h2 dir="auto">|$)/g,
@@ -2076,12 +2186,12 @@ function enhanceLessonDocumentHtml(lesson, rawHtml) {
         return `${h2Tag}${inlineBar}${updatedBody}`;
       }
 
-      if (isDialogueSection && !hasInlineAudioPanel) {
+      if (isDialogueSection) {
         const dialogueAsset = findAssetByKind('dialogue');
-        if (dialogueAsset) {
-          const inlineBar = `<div class="inline-section-audio" dir="auto"><span class="inline-section-audio-label">${icon('volume', 15)} <strong>تسجيل الحوار التطبيقي:</strong> استمع إلى الحوار وكرّر الأدوار بصوت مرتفع</span><div class="inline-section-audio-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(dialogueAsset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(dialogueAsset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`;
-          return `${h2Tag}${inlineBar}${updatedBody}`;
-        }
+        const inlineBar = (!hasInlineAudioPanel && dialogueAsset)
+          ? `<div class="inline-section-audio" dir="auto"><span class="inline-section-audio-label">${icon('volume', 15)} <strong>تسجيل الحوار التطبيقي:</strong> استمع إلى الحوار وكرّر الأدوار بصوت مرتفع</span><div class="inline-section-audio-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(dialogueAsset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(dialogueAsset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`
+          : '';
+        return `${h2Tag}${inlineBar}${updatedBody}${dialogueGuideHtml}`;
       }
 
       if (isReadingSection && !hasInlineAudioPanel) {
@@ -2177,6 +2287,26 @@ function renderLessonPerformance(lesson) {
   return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="quiz-exit">${icon('arrow', 15)} العودة إلى شرح الدرس</button><div class="performance-quiz-score"><strong>نتيجة الأسئلة: ${score}%</strong><span>يلزم 80% على الأقل، بالإضافة إلى التحقق من المهام العملية.</span></div>${renderPerformanceTasks(tasks, scopeKey, lesson.assessment.version)}<div class="performance-finish-actions"><span>${completedCount} من ${tasks.length} مهام مكتملة</span><button type="button" class="button-primary" data-action="finish-lesson-performance" ${allComplete ? '' : 'disabled'}>اعتمد نتيجة التقييم ${icon('check', 16)}</button></div></div>`;
 }
 
+function renderQuizMistakeDiagnostics(quiz = [], answers = []) {
+  if (!Array.isArray(quiz) || !quiz.length || !Array.isArray(answers) || !answers.length) return '';
+  const missed = [];
+  quiz.forEach((question, index) => {
+    const ans = answers[index];
+    if (ans && ans.correct === false) {
+      missed.push({
+        number: index + 1,
+        question,
+        selectedOption: question.options?.[ans.selected] ?? '—',
+        correctOption: question.options?.[question.answerIndex] ?? '—'
+      });
+    }
+  });
+  if (!missed.length) {
+    return `<section class="panel quiz-mistake-diagnostics is-clean" dir="auto" aria-label="ملخص تحليل الإجابات"><div class="mistake-diagnostics-head"><strong>✓ تحليل الإجابات (<span lang="de">Korrektur</span>):</strong><span>أجبت عن جميع أسئلة التقييم بلا أخطاء في هذه المحاولة.</span></div></section>`;
+  }
+  return `<section class="panel quiz-mistake-diagnostics" dir="auto" aria-label="تحليل الأخطاء وتصحيح الإجابات"><div class="mistake-diagnostics-head"><strong>تحليل الأخطاء وتصحيح الإجابات (<span lang="de">Fehleranalyse &amp; Berichtigung</span> — ${missed.length} ${missed.length === 1 ? 'سؤال' : 'أسئلة'}):</strong><span>راجع سبب التصحيح اللغوي لكل سؤال أخطأت فيه قبل المتابعة أو إعادة المحاولة:</span></div><div class="mistake-diagnostics-list">${missed.map((item) => `<article class="mistake-diagnostic-card"><div class="mistake-card-title"><strong>السؤال ${item.number}:</strong> <span dir="auto"${isGermanTextSnippet(item.question.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(item.question.prompt)}</span></div><div class="mistake-card-comparison"><span>اختيارك: <del dir="auto"${isGermanTextSnippet(item.selectedOption) ? ' lang="de"' : ''}>${escapeHTML(item.selectedOption)}</del></span><span>الصواب: <strong dir="auto"${isGermanTextSnippet(item.correctOption) ? ' lang="de"' : ''}>${escapeHTML(item.correctOption)}</strong></span></div><p class="mistake-card-explanation" dir="auto"${isGermanTextSnippet(item.question.explanation) ? ' lang="de"' : ''}>${formatInlineMarkdown(item.question.explanation)}</p></article>`).join('')}</div></section>`;
+}
+
 function renderLessonResult(lesson) {
   const total = lesson.quiz.length;
   const score = lessonSession.score ?? scorePercent(lessonSession.correct, total);
@@ -2190,7 +2320,7 @@ function renderLessonResult(lesson) {
       : performanceEvidenceMissing
         ? `حققت ${score}% في الأسئلة، لكن لا يمكن تسجيل الإتقان قبل إنجاز مهمة الأداء وتقييمها؛ يلزم أيضًا ${MASTERY_THRESHOLD}% على الأقل.`
         : `نتيجتك ${score}%. يلزم ${MASTERY_THRESHOLD}% على الأقل مع استيفاء معيار هدف الدرس؛ راجع الشرح ثم أعد المحاولة.`;
-  return `<div class="quiz-wrap"><section class="result-card"><div class="result-medal">${icon(passed ? 'trophy' : 'spark', 31)}</div><div class="score-ring">${score}%</div><h1>${title}</h1><p>${message}<br>إجابات صحيحة: ${lessonSession.correct} من ${total} · سُجّلت المحاولة ووقتها محليًا.</p><div class="result-actions"><button type="button" class="button-primary" data-action="navigate" data-view="dashboard">العودة إلى لوحتي ${icon('arrowLeft', 16)}</button><button type="button" class="button-outline" data-action="retake-lesson">أعد التقييم ${icon('refresh', 15)}</button><button type="button" class="button-quiet" data-action="navigate" data-view="review">راجع الكلمات ${icon('book', 15)}</button></div></section></div>`;
+  return `<div class="quiz-wrap"><section class="result-card"><div class="result-medal">${icon(passed ? 'trophy' : 'spark', 31)}</div><div class="score-ring">${score}%</div><h1>${title}</h1><p>${message}<br>إجابات صحيحة: ${lessonSession.correct} من ${total} · سُجّلت المحاولة ووقتها محليًا.</p><div class="result-actions"><button type="button" class="button-primary" data-action="navigate" data-view="dashboard">العودة إلى لوحتي ${icon('arrowLeft', 16)}</button><button type="button" class="button-outline" data-action="retake-lesson">أعد التقييم ${icon('refresh', 15)}</button><button type="button" class="button-quiet" data-action="navigate" data-view="review">راجع الكلمات ${icon('book', 15)}</button></div></section>${renderQuizMistakeDiagnostics(lesson.quiz, lessonSession.answers)}</div>`;
 }
 
 function beginQuiz() {
@@ -2555,6 +2685,27 @@ function renderCumulativeLexiconAndGrammarSection() {
   </section>`;
 }
 
+function renderCumulativeSkillDiagnostics() {
+  const completedLessonsCount = totalCompleted();
+  const practicedExCount = totalPracticedExercisesCount();
+  const masteredVocabCount = masteredWordsCount();
+  const completedPerfCount = totalCompletedPerformanceTasksCount();
+  return `<section class="panel skill-diagnostics-panel" dir="auto" aria-label="تقرير التقدم والتشخيص التراكمي للمهارات">
+    <div class="skill-diagnostics-head">
+      <div>
+        <small><span lang="de">FORTSCHRITT</span> · التشخيص التراكمي للدراسة الذاتية</small>
+        <h2>مؤشرات التمكّن عبر المنهج الكامل (A0–B2)</h2>
+      </div>
+    </div>
+    <div class="skill-diagnostics-grid">
+      <div class="skill-diag-card"><strong>${completedLessonsCount} / 53</strong><span>درسًا متقنًا بالتقييم (80%+)</span></div>
+      <div class="skill-diag-card"><strong>${practicedExCount} / 428</strong><span>تمرينًا مطبّقًا في مساحة الحل الذاتي</span></div>
+      <div class="skill-diag-card"><strong>${masteredVocabCount} / 754</strong><span>مفردة راسخة في المراجعة المتباعدة</span></div>
+      <div class="skill-diag-card"><strong>${completedPerfCount} / 109</strong><span>مهمة أداء كتابي وشفهي مكتملة</span></div>
+    </div>
+  </section>`;
+}
+
 function renderReview() {
   if (!reviewSession) startReviewSession();
   const words = reviewSession.cards;
@@ -2562,6 +2713,7 @@ function renderReview() {
   const hasMoreWords = reviewableWords().length > 0;
   return `<section class="review-banner"><div><h1>مراجعة قصيرة، أثرها طويل.</h1><p>بطاقات مفردات ثنائية الاتجاه (ألماني ↔ عربي) بمواعيد مراجعة محلية ذكية، مع تدريب حلزوني وقاموس تراكمي شامل.</p></div><div class="review-count">${left}</div></section>
     <div class="review-content">${reviewSession.done || !words.length ? `<section class="empty-state"><div class="empty-state-icon">${icon('trophy', 23)}</div><h2>${words.length ? 'أنهيت جلسة اليوم!' : 'لا توجد بطاقات مفردات متاحة بعد.'}</h2><p>${words.length ? 'رائع. الكلمات التي صعبت عليك ستعود قريبًا، والكلمات التي أتقنتها ستظهر بفواصل أطول.' : 'افتح أحد الدروس؛ تظهر بطاقات المفردات عند توفرها في محتواه.'}</p><div class="result-actions">${hasMoreWords ? `<button type="button" class="button-primary" data-action="start-extra-review-batch">راجع دفعة إضافية (حتى 12 بطاقة) ${icon('refresh', 15)}</button>` : ''}<button type="button" class="button-outline" data-action="navigate" data-view="dashboard">العودة إلى لوحتي</button></div></section>` : renderFlashcard(words[reviewSession.index], left)}</div>
+    ${renderCumulativeSkillDiagnostics()}
     ${renderSpiralReviewSection()}
     ${renderCumulativeLexiconAndGrammarSection()}`;
 }
@@ -2790,6 +2942,30 @@ function handleClick(event) {
     case 'play-section-audio': playAudioAsset(button.dataset.playAssetId, Number(button.dataset.audioRate)); break;
     case 'quick-word-known': quickMarkWord(button.dataset.wordId); break;
     case 'enroll-lesson-words': enrollLessonWords(button.dataset.lessonId); break;
+    case 'toggle-exercise-done': {
+      const lessonId = button.dataset.lessonId;
+      const num = Number(button.dataset.exerciseNum);
+      if (lessonId && num) {
+        const nextDone = toggleExercisePracticeDone(lessonId, num);
+        button.textContent = nextDone ? '✓ أنجزت محاولة هذا التمرين' : 'سجّل إنجاز التمرين';
+        const statusBadge = root.querySelector?.(`[data-ex-status="${lessonId}:${num}"]`);
+        if (statusBadge) {
+          statusBadge.textContent = nextDone ? '✓ مُنجز' : 'تطبيق ذاتي';
+          statusBadge.classList.toggle('is-done', nextDone);
+        }
+        const lesson = findLesson(lessonId);
+        if (lesson) {
+          const exProgress = getLessonExerciseProgress(lesson);
+          const stageMeta = root.querySelector?.(`[data-lesson-ex-progress="${lessonId}"]`);
+          if (stageMeta) {
+            const stages = getLessonStageBreakdown(lesson);
+            stageMeta.textContent = `التطبيق الذاتي: ${exProgress.done}/${exProgress.total} تمارين · تقسيم الجلسة (${stages.total} د):`;
+          }
+        }
+        showToast(nextDone ? `سُجّل إنجاز تمرين ${num} في هذا الدرس.` : `أُعيد تمرين ${num} إلى حالة التطبيق.`);
+      }
+      break;
+    }
     case 'scroll-lesson-stage': {
       const stage = button.dataset.stage;
       let targetEl = null;
@@ -2913,6 +3089,28 @@ function handleInput(event) {
     if (container) container.innerHTML = renderLexiconResultsMarkup();
     return;
   }
+  const exField = event.target.closest?.('[data-exercise-draft]');
+  if (exField) {
+    const lessonId = exField.dataset.lessonId;
+    const num = Number(exField.dataset.exerciseNum);
+    saveExercisePracticeDraft(lessonId, num, exField.value);
+    const entry = getExercisePracticeEntry(lessonId, num);
+    const statusBadge = root.querySelector?.(`[data-ex-status="${lessonId}:${num}"]`);
+    if (statusBadge) {
+      statusBadge.textContent = entry.done ? '✓ مُنجز' : 'تطبيق ذاتي';
+      statusBadge.classList.toggle('is-done', entry.done);
+    }
+    const lesson = findLesson(lessonId);
+    if (lesson) {
+      const exProgress = getLessonExerciseProgress(lesson);
+      const stageMeta = root.querySelector?.(`[data-lesson-ex-progress="${lessonId}"]`);
+      if (stageMeta) {
+        const stages = getLessonStageBreakdown(lesson);
+        stageMeta.textContent = `التطبيق الذاتي: ${exProgress.done}/${exProgress.total} تمارين · تقسيم الجلسة (${stages.total} د):`;
+      }
+    }
+    return;
+  }
   const field = event.target.closest?.('[data-performance-response]');
   if (!field) return;
   savePerformanceEvidence(field.dataset.scope, field.dataset.version, field.dataset.taskId, { response: field.value });
@@ -2955,6 +3153,7 @@ function handleChange(event) {
         wordReviews: parsed.wordReviews || {},
         audioTranscriptUnlocks: parsed.audioTranscriptUnlocks && typeof parsed.audioTranscriptUnlocks === 'object' ? parsed.audioTranscriptUnlocks : {},
         performanceEvidence: parsed.performanceEvidence && typeof parsed.performanceEvidence === 'object' ? parsed.performanceEvidence : {},
+        exercisePractice: normalizeExercisePractice(parsed.exercisePractice),
         learningSessions: normalizeLearningSessions(parsed.learningSessions),
         dailyPlan: normalizeDailyPlan(parsed.dailyPlan),
         studyDays: normalizeStudyDays(parsed.studyDays),

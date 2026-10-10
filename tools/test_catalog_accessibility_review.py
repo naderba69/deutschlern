@@ -68,7 +68,7 @@ for l in course["lessons"]:
 assert "'A0.2-reviewed-source'" in a11y_js and "'A0.2-practical-form-fixture'" in a11y_js
 
 sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-assert "const CACHE_NAME = 'deutsch-pfad-v111';" in sw_js
+assert "const CACHE_NAME = 'deutsch-pfad-v112';" in sw_js
 
 if "--implementation-only" in sys.argv:
     print("PASS CR56 implementation-only: 1080 catalog rows, 217 audio register rows, 53/53 lessons in a11y audit, dir='auto' forms, v105 cache.")

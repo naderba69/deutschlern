@@ -682,7 +682,7 @@ def main() -> None:
     assert "overflow-x: hidden; overflow-y: auto;" in css_text, "Missing deterministic overflow rules on performance textarea in styles.css"
 
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 62, f"Expected 62 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 63, f"Expected 63 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():

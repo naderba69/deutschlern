@@ -16,13 +16,13 @@
   "cefrCertification": false,
   "sourceHashes": {
     "tools/build_course.py": "6384e94f006fbb36693bf71b8ff130bb0d4defe33af88a14d83cb49dee5dedc7",
-    "tools/verify_course.py": "ebef2c49cbc4add5f4c1e4fb944918005367cebef3a757f62f6e9f7265831f2d",
-    "app.js": "21f001468f28d6dfd2fb11fd2e494c18384c2d0880ae6c782b6e44914e8518d9",
-    "styles.css": "fbbc5fa4ae36fcbc6f3abcbd01bcde797c4ced62ad9a1014a5af690741f68527",
-    "service-worker.js": "f97897ca14f9da68cb72675fc2aa68672a8e0bdb8ec740562ee5e5497d27ea20",
-    "tools/test_browser.cjs": "ecc630bef959da909ad5c8642038fc0a56017a6d1aad381f6e1ad6da752de0e9",
-    "tools/test_service_worker.cjs": "735692cedc02e7f622623666dcfa2bdab85b92f634506be2d427b2530f0dcafb",
-    "tools/test_accessibility_update.cjs": "7076dc122d6d01d0b24eb8ccd1204cd7fde136f93d9494bdd6da9a1ed584c5da"
+    "tools/verify_course.py": "74b68641e05f6efaabbeaf4e5e268c86b66f39c045ad9833bdb56858c5e65a40",
+    "app.js": "87a43d49c7c781ce7c18b26db9bf4239a2fdc40b68fb1acf7fe6720e444b9b83",
+    "styles.css": "9d611d23b99ca256433bb81468d7c0997a0c816da166b25f6f4e70bcc3808269",
+    "service-worker.js": "baa4b7305e5ee5a76758b22143d400d3bf81cff98b24e0571eec3a49e624e17e",
+    "tools/test_browser.cjs": "363cbca7ddfba200ed08e6ac7feb55a0f62488c54ceaf96194229c7d40a83f20",
+    "tools/test_service_worker.cjs": "8336df545eb0b0c572f8652d30bebcdd49f1f21eb5d818936a7b77e2ea9b07da",
+    "tools/test_accessibility_update.cjs": "d875aae9f6dce82f4f22ee372f70029f39a1b194bd62bba5ab0cca46a0263381"
   },
   "sources": [
     {

@@ -1,3 +1,29 @@
+# CR63 / مساحات الحل والتطبيق الذاتي للتمارين (`428` تمرينًا)، ودليل تقمّص الأدوار للحوارات (`46` قسم حوار رئيسي / `61` عنوان حوار)، وتحليل الأخطاء وتشخيص المهارات التراكمي — مرفوعة ومفحوصة؛ غير مدمجة
+
+**سجل مراجعة وإنتاج منهجي وتفاعلي شامل CR63 — 2026-10-10:** استكمالًا للإنتاج التراكمي وفحص المشروع كاملًا بنسبة 100% دون عينات، جرت ترقية منهجية التدريب الذاتي وتشخيص الأخطاء عبر الدروس الـ`53/53` وبوابة `A0` في **68 وحدة مراجعة شاملة** بالاستناد إلى **20 مرجعًا إلكترونيًا (`14` صفحة كاملة في `14` جزءًا بـ`hasMore == false` + `2` استعلام بحث بـ`6` مقتطفات)** (`W3C WAI WCAG 2.1 Techniques H44 & G85`، و`Lingolia Sentence Structure / Negation / Questions`، و`Duden: Korrektur, Dialog, Aussprache, Fehler, Selbststudium, Berichtigung, Gespräch, Fragesatz, Fortschritt`):
+1. **مساحات الحل والتطبيق الذاتي التفاعلية لجميع التمارين الـ`428/428` (`<details class="exercise-practice-workspace">`):**
+   - أُضيفت دوال `normalizeExercisePractice` و`getExercisePracticeEntry` و`saveExercisePracticeDraft` و`toggleExercisePracticeDone` و`getLessonExerciseProgress` في `app.js` مع حفظ محلي مستمر في `state.exercisePractice` ودعم كامل للتصدير والاستيراد الاحتياطي JSON.
+   - زُوّد كل تمرين من التمارين الـ`428/428` عبر الدروس الـ`53` بمساحة حل ذاتي قابلة للفتح تسبق مفتاح الحل الفردي (`<details class="exercise-inline-key">`)، وتضم حقل `<textarea id="ex-draft-...">` معنوَنًا صراحةً بـ`<label for="ex-draft-...">` وفق `WCAG 2.1 Technique H44` وزر تسجيل إنجاز التمرين، مع تحديث حي لعداد التمارين المطبّقة (`التطبيق الذاتي: X/Y تمارين`) في شريط مراحل الدرس (`renderLessonStagesBar`).
+2. **دليل التدرب التفاعلي وتقمّص الأدوار للحوارات (`<details class="dialogue-roleplay-guide">` عبر `46` قسم حوار رئيسي / `61` عنوان حوار):**
+   - أُضيف في جميع أقسام الحوار الرئيسية الـ`46` عبر الدروس الـ`53` دليل تفاعلي من `3` خطوات منهجية: (1) الاستماع الشامل بالسرعة الطبيعية (`1x`)، (2) الترديد الجهرى (`Aussprache`) بالسرعة البطيئة (`0.8x`) مع مراعاة موضع الفعل في الجملة الألمانية، (3) تقمّص الأدوار (`Dialog`) وتبديل المتحدثين قبل الانتقال إلى التمارين.
+3. **تقرير تحليل الأخطاء وتصحيح الإجابات بعد الاختبارات (`renderQuizMistakeDiagnostics`) ولوحة مؤشرات التمكّن التراكمية (`renderCumulativeSkillDiagnostics`):**
+   - أُضيفت دالة `renderQuizMistakeDiagnostics(quiz, answers)` في شاشات نتائج تقييم الدروس الـ`53` وبوابة `A0` (`540` سؤالًا إجمالًا) لعرض قائمة الأسئلة التي أخطأ فيها المتعلم مع مقارنة اختياره بالإجابة الصحيحة (`Fehleranalyse & Berichtigung`) وعرض التفسير اللغوي الكامل لكل سؤال.
+   - أُضيفت دالة `renderCumulativeSkillDiagnostics()` في صفحة المراجعة لعرض مؤشرات التمكّن التراكمية الأربعة عبر المنهج الكامل (`A0–B2`): الدروس المتقنة (`X / 53`)، والتمارين المطبّقة ذاتيًا (`X / 428`)، والمفردات الراسخة (`X / 754`)، ومهام الأداء المكتملة (`X / 109`).
+4. **مزامنة الوثائق التراكمية السبع بالكامل حتى `CR63`:**
+   - زُومنت `README.md` و`content/PROGRESS.md` و`data/reviews/README.md` و`data/browser-qa-report.md` و`data/curriculum-audit.md` و`data/curriculum-production-matrix.md` (`الإصدار 1.5`) و`data/course-improvement-plan.md` (`الإصدار 2.69`) لتوثيق `CR62` و`CR63` وحراس المراجعة الـ`63`.
+
+## التسليم والمتابعة — CR63
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Add interactive exercise self-practice workspaces, dialogue guides, quiz/skill diagnostics & sync docs (CR63)`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v112`)، `tools/verify_course.py`، `tools/test_browser.cjs`، `tools/test_accessibility_update.cjs`، `tools/test_service_worker.cjs`، وحراس `CR56–CR62`، والحارس الجديد رقم `63` (`tools/test_exercise_self_practice_and_study_diagnostics_review.py`)، وملفات `data/reviews/*-review.json` (`63` ملفًا محدّثة البصمات `sourceHashes`) + `data/reviews/exercise-self-practice-and-study-diagnostics-review.md`، والوثائق السبع التراكمية، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **الفحوص التراكمية — CR63 (`PASS` بنسبة 100% على كامل المشروع دون عينات):**
+  - `python3 tools/build_course.py` + `python3 tools/verify_course.py` + جميع حراس المراجعة الـ**`63`** (`tools/test_*_review.py`): **PASS**.
+  - مجموعات Node الخمس (`test_progression.cjs`, `test_service_worker.cjs`, `test_daily_plan.cjs`, `test_session_persistence.cjs`, `test_study_time.cjs`): **PASS**.
+  - مجموعات المتصفح الخمس عبر Chromium 153.0.8010.0 (`test_browser.cjs`, `test_accessibility_update.cjs`, `test_forms_keyboard.cjs`, `test_narrow_layout.cjs`, `test_accessibility_audit.cjs`): **PASS** — شملت التحقق الحي في DOM من **`428/428` مساحة حل ذاتي للتمارين**، و**`428/428` مفتاح تمرين فوري**، و**`46/46` دليل حوار تفاعلي**، و**`48/48` واقي نص استماع**، و**`159/159` زر مرحلة درس**، و**`754/754` بطاقة مفردات ومثال سياقي**، و**`348` حالة عرض ضيق (`320×900` و`568×320`) بصفر تجاوز أفقي**، و**`349` حالة شاشة في `axe-core` WCAG 2.1 A/AA + `best-practice` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**.
+- **الحالة والتالي مباشرة:** اكتملت ترقية مساحات الحل الذاتي للتمارين ودليل الحوارات وتشخيص الأخطاء ومزامنة الوثائق التراكمية (`CR63`، `63` حارسًا، `deutsch-pfad-v112`)؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+---
+
 # CR62 / الترقية المنهجية والتفاعلية الشاملة لكامل المشروع (`5` محاور تراكمية عبر `53` درسًا و`428` تمرينًا و`48` قسم استماع و`540` سؤالًا و`109` مهام أداء و`754` مفردة) — مرفوعة ومفحوصة؛ غير مدمجة
 
 ## إيصال رفع CR62 — 2026-10-10
