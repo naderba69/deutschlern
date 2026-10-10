@@ -1,5 +1,11 @@
 # CR63 / مساحات الحل والتطبيق الذاتي للتمارين (`428` تمرينًا)، ودليل تقمّص الأدوار للحوارات (`46` قسم حوار رئيسي / `61` عنوان حوار)، وتحليل الأخطاء وتشخيص المهارات التراكمي — مرفوعة ومفحوصة؛ غير مدمجة
 
+## إيصال رفع CR63 — 2026-10-10
+
+- **التحديث والتقرير الكامل:** دُفع في الالتزام `d3038336827f6f9c5cbcfa812eaa63c2303a9de4` (`d303833`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Add interactive exercise self-practice workspaces, dialogue guides, quiz/skill diagnostics & sync docs (CR63)`.
+- **معاينة Vercel لـ`d303833`:** `Deployment has completed` (`state: success`، Deployment ID `6981101156`، Status ID `19565972313`، المعاينة `https://deutschlern-45e3ejxha-balinader-2671s-projects.vercel.app`).
+- **إيصال التسليم:** يُسجل هذا الالتزام (`Record CR63 delivery receipt`) إيصال رفع `CR63` في وثائق المتابعة والتسليم؛ يبقى PR#1 مفتوحًا وغير مدمج، وتبقى المراجعة السمعية لـ80 أصلًا صوتيًا (`B1.9–B2.12`) معلقة.
+
 **سجل مراجعة وإنتاج منهجي وتفاعلي شامل CR63 — 2026-10-10:** استكمالًا للإنتاج التراكمي وفحص المشروع كاملًا بنسبة 100% دون عينات، جرت ترقية منهجية التدريب الذاتي وتشخيص الأخطاء عبر الدروس الـ`53/53` وبوابة `A0` في **68 وحدة مراجعة شاملة** بالاستناد إلى **20 مرجعًا إلكترونيًا (`14` صفحة كاملة في `14` جزءًا بـ`hasMore == false` + `2` استعلام بحث بـ`6` مقتطفات)** (`W3C WAI WCAG 2.1 Techniques H44 & G85`، و`Lingolia Sentence Structure / Negation / Questions`، و`Duden: Korrektur, Dialog, Aussprache, Fehler, Selbststudium, Berichtigung, Gespräch, Fragesatz, Fortschritt`):
 1. **مساحات الحل والتطبيق الذاتي التفاعلية لجميع التمارين الـ`428/428` (`<details class="exercise-practice-workspace">`):**
    - أُضيفت دوال `normalizeExercisePractice` و`getExercisePracticeEntry` و`saveExercisePracticeDraft` و`toggleExercisePracticeDone` و`getLessonExerciseProgress` في `app.js` مع حفظ محلي مستمر في `state.exercisePractice` ودعم كامل للتصدير والاستيراد الاحتياطي JSON.
