@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-09-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-09-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR39: قُيدت مقاصد T02 وترتيب T07، وأضيف Verspätung إلى T01 ودافع المجموعة إلى T05 مع حفظالروابط.",
+      "Q06 و T04.1 يطلبان Perfekt في التابعة و Präsens في الرئيسية؛ لا رفض مطلق لكل حاضر مع nachdem. T03/Q05 يحددان Lena المفردة.",
+      "Q10 لا يفترض جنس الراوي. T06 فراغات ألمانية بمفتاحمطابق؛kurz وحدها لأن ist موجودة. كل الخيارات 30 والفهارس والروابط و 80% محفوظة.",
+      "P01 خمس جمل كتابة فقط وحد 130؛P02 ست جمل كتابة وجهر وحد 145، وروابط P02 إلى T06/T08 محفوظة. المصدر والمعايير والنموذجان متطابقة دون شريك أو تسجيل.",
+      "während مع جملة يختلف عن Genitiv مع اسم؛ أضيف المثالالمسجل Während der Zugfahrt lese ich einen Reiseführer. إلى المصدر دون تغييرالصوت. خمسةأصول/10 مقاطع تبقى معلقة بلا استماع أو اعتماد أو توليد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-09-Q01",
+      "sourceTaskIds": [
+        "DL-B1-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "مفردات النقل",
+        "الربط بين الرحلات"
+      ],
+      "prompt": "ما المعنى الأنسب لـ der Anschluss في سياق السفر؟",
+      "options": [
+        "الرحلة أو وسيلة النقل المتصلة بالرحلة السابقة.",
+        "وقت المغادرة المكتوب في الجدول.",
+        "تأخر وسيلة النقل عن موعدها."
+      ],
+      "answerIndex": 0,
+      "explanation": "der Anschluss هو اتصال أو رحلة مواصلة تساعد على الانتقال إلى الجزء التالي من الرحلة."
+    },
+    {
+      "id": "DL-B1-09-Q02",
+      "sourceTaskIds": [
+        "DL-B1-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "مفردات السفر",
+        "فهم كلمة"
+      ],
+      "prompt": "أي كلمة تعني أن وسيلة النقل لم تصل في موعدها؟",
+      "options": [
+        "die Ankunft",
+        "der Umstieg",
+        "die Verspätung"
+      ],
+      "answerIndex": 2,
+      "explanation": "die Verspätung تعني التأخر عن الموعد المتوقع."
+    },
+    {
+      "id": "DL-B1-09-Q03",
+      "sourceTaskIds": [
+        "DL-B1-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "bevor",
+        "ترتيب الأحداث"
+      ],
+      "prompt": "أكمل بالرابط الذي يدل على أن فحص الاتصال يحدث قبل الانطلاق: ___ wir losfahren, prüfen wir die Verbindung.",
+      "options": [
+        "Nachdem",
+        "Während",
+        "Bevor"
+      ],
+      "answerIndex": 2,
+      "explanation": "Bevor تعني «قبل أن»، لذلك يسبق فحص الاتصال الانطلاق."
+    },
+    {
+      "id": "DL-B1-09-Q04",
+      "sourceTaskIds": [
+        "DL-B1-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "während",
+        "موضع الفعل"
+      ],
+      "prompt": "اختر الفعل المصرف في الحاضر في نهاية الجملة التابعة: Während Lena auf den Bus ___, liest sie einen Artikel.",
+      "options": [
+        "wartet",
+        "warte",
+        "warten"
+      ],
+      "answerIndex": 0,
+      "explanation": "الفاعل Lena مفرد، فيكون الفعل wartet، ويأتي في نهاية جملة während التابعة."
+    },
+    {
+      "id": "DL-B1-09-Q05",
+      "sourceTaskIds": [
+        "DL-B1-09-T03",
+        "DL-B1-09-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "nachdem",
+        "Perfekt في الجملة التابعة"
+      ],
+      "prompt": "أكمل المساعد؛ sie تعود إلى Lena وحدها: Nachdem sie am Ziel angekommen ___, nimmt sie den Nahverkehr.",
+      "options": [
+        "haben",
+        "ist",
+        "sind"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lena مفردة؛ angekommen مع sein في هذا المثال، لذا ist لا sind. يأتي المساعد المصرف في نهاية التابعة؛ لا نختار haben لهذا الاستعمال."
+    },
+    {
+      "id": "DL-B1-09-Q06",
+      "sourceTaskIds": [
+        "DL-B1-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "دمج الجمل",
+        "nachdem"
+      ],
+      "prompt": "اختر الدمج وفق النمط المطلوب: بعد اكتمال الشراء نذهب إلى المحطة. استعمل Perfekt مع nachdem و Präsens في الرئيسية: Wir kaufen die Fahrkarten. Danach fahren wir zum Bahnhof.",
+      "options": [
+        "Nachdem wir kaufen die Fahrkarten, fahren wir zum Bahnhof.",
+        "Nachdem wir die Fahrkarten kaufen, fahren wir zum Bahnhof.",
+        "Nachdem wir die Fahrkarten gekauft haben, fahren wir zum Bahnhof."
+      ],
+      "answerIndex": 2,
+      "explanation": "المطلوب إبراز اكتمال الشراء بـ gekauft haben ثم fahren في الرئيسية. الخيار الثاني لا يحقق شرط Perfekt، وإن كان موضع مصرفه آخر التابعة؛ لا نحكم على كل استعمال للمضارع مع nachdem بأنه مستحيل."
+    },
+    {
+      "id": "DL-B1-09-Q07",
+      "sourceTaskIds": [
+        "DL-B1-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "استخراج معلومة"
+      ],
+      "prompt": "اقرأ نص الرحلة: ماذا تتحقق المجموعة منه بعد حجز التذاكر؟",
+      "options": [
+        "من وجود اتصال أو وسيلة نقل تالية عند الوجهة.",
+        "من عدد السيارات في المدينة.",
+        "من موعد إغلاق السوق."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد حجز التذاكر، تتحقق المجموعة من وجود Anschluss عند الوجهة. أُخذت الإجابة من نص القراءة المكتوب."
+    },
+    {
+      "id": "DL-B1-09-Q08",
+      "sourceTaskIds": [
+        "DL-B1-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "خيارات النقل"
+      ],
+      "prompt": "لماذا تقطع المجموعة المسافة الأطول بالقطار وتمشي في الطرق القصيرة؟",
+      "options": [
+        "لأنها تريد أن تكون رحلتها صديقة للبيئة قدر الإمكان.",
+        "لأن القطار لا يصل إلى Uferstadt.",
+        "لأنها لا تستطيع استخدام النقل المحلي."
+      ],
+      "answerIndex": 0,
+      "explanation": "المقصود بعبارة «صديقة للبيئة» في الخيار هنا رغبة المجموعة في مراعاة المناخ (klimafreundlich)، لا شهادة لجميع الآثار البيئية. النص يذكر رغبة وخيارات، ولا يقدم أرقامًا أو مقارنة علمية بين كل وسائل النقل."
+    },
+    {
+      "id": "DL-B1-09-Q09",
+      "sourceTaskIds": [
+        "DL-B1-09-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "ausfallen"
+      ],
+      "prompt": "اقرأ نص الاستماع: ماذا حدث للحافلة الأولى؟",
+      "options": [
+        "وصلت قبل موعدها.",
+        "أُلغيت أو لم تعمل.",
+        "توقفت في وجهتها النهائية."
+      ],
+      "answerIndex": 1,
+      "explanation": "يقول النص إن الحافلة الأولى fällt aus، أي إنها أُلغيت أو لم تعمل. لا يلزم تشغيل ملف صوتي للإجابة."
+    },
+    {
+      "id": "DL-B1-09-Q10",
+      "sourceTaskIds": [
+        "DL-B1-09-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "nachdem"
+      ],
+      "prompt": "ماذا تفعل الشخصية الراوية بعد الصعود إلى القطار؟",
+      "options": [
+        "تقرأ الأخبار.",
+        "تنظر إلى جدول مواعيد جديد.",
+        "تمشي إلى مكان الإقامة."
+      ],
+      "answerIndex": 0,
+      "explanation": "قراءة الأخبار تأتي بعد الصعود. الشخصية لفظ مؤنث نحويًا، لكن جنس الراوي غير مذكور في النص. لا يلزم MP3 للإجابة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-09-P01",
+      "sourceTaskIds": [
+        "DL-B1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خمس جمل ألمانية لخطة خيالية: في الأولى حدد السبت والوجهة Uferstadt الخيالية؛ في الثانية اذكر فحص الجدول قبل الانطلاق بـ bevor؛ في الثالثة السفر بالقطار إلى المدينة؛ في الرابعة البحث عن حافلة مواصلة إلى المتحف بعد الوصول بـ nachdem مع Perfekt في التابعة و Präsens في الرئيسية؛ وفي الخامسة قراءة خريطة أثناء انتظار الحافلة بـ während. اذكر القطار والحافلة والاتصال بوضوح. هذه كتابة فقط دون جهر أو بيانات سفر حقيقية أو تسجيل، ولا ادعاءات بيئية غير موثقة.",
+      "criteria": {
+        "taskCompletion": "خمس جمل مكتوبة تحدد السبت والوجهة الخيالية وفحص الجدول والسفر بالقطار والبحث عن حافلة مواصلة وقراءة الخريطة أثناء انتظارها؛ دون جهر.",
+        "meaningClarity": "الفحص قبل الانطلاق، والوصول قبل البحث عن الحافلة، والقراءة أثناء انتظارها؛ القطار والحافلة والاتصال واضحة بلا ادعاء رحلة حقيقية.",
+        "targetSkill": "bevor و nachdem و während الزمنية مع الفواصل والمصرف آخر التابعة؛nachdem مع Perfekt والرئيسية Präsens، وترتيب الرئيسية سليم."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-09-P02",
+      "sourceTaskIds": [
+        "DL-B1-09-T06",
+        "DL-B1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-09-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب خطة بديلة خيالية من ست جمل: الحافلة الأولى ملغاة؛ تفحص الجدول قبل مغادرة المنزل بـ bevor؛ تتوفر في موقف التدريب بديلان هما القطار أو حافلة لاحقة؛ تفحص الاتصال أثناء انتظار القطار بـ während؛ تقرأ الأخبار بعد الصعود إلى القطار بـ nachdem مع Perfekt في التابعة و Präsens في الرئيسية؛ وتمشي إذا كانت المسافة قصيرة. البديلان معطيات خيالية جديدة، لا استنتاج من جدول حقيقي. اكتبها ثم اقرأها بصوت واضح بنفسك؛ لا يلزم تسجيل الصوت أو شريك أو سفر فعلي.",
+      "criteria": {
+        "taskCompletion": "ست جمل تتضمن الحافلة الملغاة وفحص الجدول وبديلَي القطار والحافلة اللاحقة والانتظار والقراءة بعد الصعود والمشي المشروط؛ اكتب ثم اجهر.",
+        "meaningClarity": "البديلان افتراض خيالي؛ يظهر اختيار القطار والفرق بين الفحص والتنفيذ، وقصرالمسافة شرط للمشي لا وصف للرحلة كلها.",
+        "targetSkill": "الروابط الثلاثة مع الترتيب والفواصل؛Perfekt بعد nachdem و Präsens في الرئيسية، والمصرف آخر التابعة بما فيها bin بعد eingestiegen."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 145,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

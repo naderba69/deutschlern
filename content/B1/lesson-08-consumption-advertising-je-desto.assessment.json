@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-08-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-08-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR38: قُيد V2 بوحدة desto/umso مع المقارنة؛ نُبه إلى نهاية الجزء الرئيسي قبل السؤال غير المباشر، وصيغ المقارنة وعلاقة لغوية لا برهان سببي.",
+      "أضيف Endpreis إلى T01 ودعم umso إلى T02 مع بقاء الروابط؛ Q05 يطلب الحاضر، و Q07 يسأل عن معلومتين لا مادتين. جميع الخيارات 30 والمفاتيح و 80% محفوظة.",
+      "P01 كتابة فقط بخمس جمل وحد 150؛ P02 أربع جمل كتابة وجهر وحد 130. المصدر والمعايير والنموذجان متطابقة دون شريك أو تسجيل أو شراء أو علامة حقيقية.",
+      "قابلية التحقق ليست صحة مثبتة؛ الأرقام الجديدة خيالية مستقلة عن القراءة، والتخفيض دون سعر أصلي لا يتيح حساب سعر نهائي.",
+      "حُفظت خمسة أصول/10 مقاطع؛ Mira02/Bilal05 وراوية القراءة 04 والمفردات/النماذج 02 والاستماع 03، بلا استماع أو توليد أو اعتماد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-08-Q01",
+      "sourceTaskIds": [
+        "DL-B1-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "مفردات الإعلان",
+        "الفئة المستهدفة"
+      ],
+      "prompt": "ما المقصود بـ**die Zielgruppe**؟",
+      "options": [
+        "الفئة التي يوجّه الإعلان رسالته إليها.",
+        "السعر النهائي بعد إضافة التكاليف.",
+        "المعلومات التي يكتبها عميل عن منتج."
+      ],
+      "answerIndex": 0,
+      "explanation": "die Zielgruppe هي الفئة المستهدفة التي يحاول الإعلان الوصول إليها."
+    },
+    {
+      "id": "DL-B1-08-Q02",
+      "sourceTaskIds": [
+        "DL-B1-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "مفردات المنتجات",
+        "السعر النهائي"
+      ],
+      "prompt": "أي كلمة تعني «السعر النهائي»؟",
+      "options": [
+        "die Verpackung",
+        "der Endpreis",
+        "die Haltbarkeit"
+      ],
+      "answerIndex": 1,
+      "explanation": "der Endpreis السعر النهائي بما فيه الإضافات والتكاليف، لا مبلغ التخفيض. النص لا يعطينا رقمًا لذلك السعر لنحسبه."
+    },
+    {
+      "id": "DL-B1-08-Q03",
+      "sourceTaskIds": [
+        "DL-B1-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "المقارنة المتدرجة",
+        "je … desto …"
+      ],
+      "prompt": "أكمل العلاقة المنطقية: **Je länger ein Gerät hält, desto ___ muss man es ersetzen.**",
+      "options": [
+        "seltener",
+        "selten",
+        "am seltensten"
+      ],
+      "answerIndex": 0,
+      "explanation": "كلما طال عمر الجهاز، قلّ تكرار استبداله؛ لذلك نستخدم صيغة المقارنة seltener."
+    },
+    {
+      "id": "DL-B1-08-Q04",
+      "sourceTaskIds": [
+        "DL-B1-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "desto وumso",
+        "معنى الرابط"
+      ],
+      "prompt": "أي عبارة صحيحة عن **desto** و**umso** في هذا التركيب؟",
+      "options": [
+        "لا يمكن أن يأتيا في الجزء الثاني من الجملة.",
+        "لهما المعنى نفسه في هذا النمط.",
+        "يجب أن يسبقهما الفعل المصرف في نهاية الجملة."
+      ],
+      "answerIndex": 1,
+      "explanation": "يمكن استعمال desto وumso بالمعنى نفسه في هذا النمط؛ عبارة الرابط والمقارنة معًا في الموقع الأول من الجزء الرئيسي، ثم المصرف ثم الفاعل، لا الكلمة الثانية بعد الرابط وحده."
+    },
+    {
+      "id": "DL-B1-08-Q05",
+      "sourceTaskIds": [
+        "DL-B1-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "تصريف الفعل",
+        "موضع الفعل في جملة je"
+      ],
+      "prompt": "أكمل بالفعل المصرف الصحيح في الحاضر **Präsens**: **Je genauer die Anzeige die Eigenschaften ___, desto leichter können Kundinnen vergleichen.**",
+      "options": [
+        "beschreiben",
+        "beschreibt",
+        "beschrieb"
+      ],
+      "answerIndex": 1,
+      "explanation": "die Anzeige مفرد وPräsens مطلوب، لذا beschreibt في نهاية جزء je. beschrieb ماضٍ صحيح صرفيًا لكنه ليس الزمن المطلوب، وbeschreiben لا يوافق هذا الفاعل في الحاضر."
+    },
+    {
+      "id": "DL-B1-08-Q06",
+      "sourceTaskIds": [
+        "DL-B1-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "دمج الجمل",
+        "ترتيب الطرفين"
+      ],
+      "prompt": "اختر دمجًا سليمًا: **Der Preis ist niedrig. Das Angebot wirkt attraktiv.**",
+      "options": [
+        "Je niedriger der Preis ist, desto attraktiver wirkt das Angebot.",
+        "Je niedriger ist der Preis, desto das Angebot attraktiv wirkt.",
+        "Je niedrig der Preis ist, desto attraktiver das Angebot wirkt."
+      ],
+      "answerIndex": 0,
+      "explanation": "تأتي صيغة المقارنة بعد je وينتهي الجزء الأول بالفعل ist؛ ثم يأتي الطرف الثاني بـdesto وصيغة المقارنة مع ترتيب الجملة الرئيسية."
+    },
+    {
+      "id": "DL-B1-08-Q07",
+      "sourceTaskIds": [
+        "DL-B1-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "استخراج حقيقة"
+      ],
+      "prompt": "أي معلومتين يذكرهما نص القراءة عن القارورة؟",
+      "options": [
+        "الفولاذ المقاوم للصدأ والسعة 600 ملليلتر.",
+        "الزجاج والوزن 600 غرام.",
+        "البلاستيك والسعة 320 ملليلتر."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص أن القارورة من الفولاذ المقاوم للصدأ وتتسع لـ600 ملليلتر، ويذكر وزنها أيضًا وهو 320 غرامًا."
+    },
+    {
+      "id": "DL-B1-08-Q08",
+      "sourceTaskIds": [
+        "DL-B1-08-T05",
+        "DL-B1-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تمييز التسويق من الخاصية"
+      ],
+      "prompt": "لماذا لا تُعد عبارة **„die beste Flasche für jeden Tag“** خاصية قابلة للقياس؟",
+      "options": [
+        "لأنها صياغة ترويجية عامة وليست قياسًا محددًا.",
+        "لأنها تذكر وزن القارورة بدقة.",
+        "لأنها تحدد سعر المنتج النهائي."
+      ],
+      "answerIndex": 0,
+      "explanation": "يوضح النص أن وصف «الأفضل» صياغة إعلانية عامة، على خلاف السعة والمادة والوزن التي يمكن التحقق منها."
+    },
+    {
+      "id": "DL-B1-08-Q09",
+      "sourceTaskIds": [
+        "DL-B1-08-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع",
+        "استخراج تفصيل"
+      ],
+      "prompt": "اقرأ نص الاستماع: كم نموذجًا من حقائب الظهر قارن الشخص؟",
+      "options": [
+        "نموذجين.",
+        "ثلاثة نماذج.",
+        "خمسة نماذج."
+      ],
+      "answerIndex": 1,
+      "explanation": "ورد von drei Modellen مع مقارنة الحجم والمادة والوزن والسعر النهائي؛ النموذج الثالث ليس تقييمًا ثالثًا، فقد قرأ الشخص تقييمين. جنس الراوي غير مذكور، ولا يلزم MP3 للإجابة."
+    },
+    {
+      "id": "DL-B1-08-Q10",
+      "sourceTaskIds": [
+        "DL-B1-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "skillTags": [
+        "فهم الإعلان",
+        "معلومة قابلة للتحقق"
+      ],
+      "prompt": "أي عبارة تقدم معلومة محددة يمكن التحقق منها؟",
+      "options": [
+        "Dieses Produkt macht jeden Tag perfekt.",
+        "Die beste Flasche für alle Menschen.",
+        "Die Flasche besteht aus Edelstahl."
+      ],
+      "answerIndex": 2,
+      "explanation": "يمكن التحقق من مادة القارورة؛ أما جعل كل يوم مثاليًا أو وصف المنتج بأنه الأفضل فعبارتان ترويجيتان عامتان."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-08-P01",
+      "sourceTaskIds": [
+        "DL-B1-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خمس جمل تقارن بين منتجين خياليين، قارورتين A و B: بيانات التدريب لـ A هي 20 يورو و 300 غرام و 600 ملليلتر، ولـ B هي 24 يورو و 400 غرام و 800 ملليلتر. قارن السعر النهائي ثم الوزن ثم السعة في ثلاث جمل؛ في الرابعة انسب عبارة «die beste Flasche für alle» إلى إعلان A ولا تجعلها حقيقة مثبتة؛ في الخامسة استخدم je … desto/umso … واذكر فحصًا محددًا قبل الشراء، مثل التحقق من الوزن المعلن. البيانات خيالية مستقلة عن نص القراءة؛ هذه كتابة فقط دون جهر أو علامة حقيقية أو شراء أو تسجيل.",
+      "criteria": {
+        "taskCompletion": "خمس جمل: مقارنة السعر والوزن والسعة للقارورتين، ونسبة عبارة الإعلان إلى مصدرها، وعلاقة متدرجة مع فحص محدد قبل الشراء؛ كتابة فقط.",
+        "meaningClarity": "بيانات A و B من التدريب الخيالي؛ الأرخص والأخف A والأكبر سعة B. الترويج منسوب للإعلان لا حقيقة مثبتة، وقابلية التحقق ليست فحصًا منجزًا.",
+        "targetSkill": "je مع desto أو umso مرة على الأقل؛ المقارنة والفاصلة والمصرف آخر جزء je، وعبارة desto/umso مع المقارنة تتقدم المصرف في الرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-08-P02",
+      "sourceTaskIds": [
+        "DL-B1-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-08-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب توصية خيالية من أربع جمل عن القارورتين A و B بالبيانات نفسها: Nora تبحث عن قارورة قليلة التكلفة وخفيفة. في الأولى أوصِ بـ A بحسب بيانات التدريب ووضح حاجتها؛ في الثانية اربط انخفاض السعر بانخفاض المبلغ المدفوع باستخدام je … desto …؛ في الثالثة اربط خفة القارورة بسهولة حملها باستخدام je … umso …؛ في الرابعة ميّز وزن A المعلن 300 غرام القابل للتحقق عن عبارة «die beste Flasche für alle» التي لا تثبت جودة أفضل. اكتبها ثم اقرأها بصوت واضح بنفسك دون شريك؛ لا يلزم تسجيل الصوت أو شراء حقيقي.",
+      "criteria": {
+        "taskCompletion": "أربع جمل تقدم توصية لـ Nora بحسب البيانات وتوضح أثر السعر على المبلغ وأثر الوزن على الحمل، ثم تفصل وزنًا معلنًا عن ترويج؛ كتابة ثم جهر.",
+        "meaningClarity": "التوصية بـ A مرتبطة بحاجتي السعر والوزن، لا ادعاء أن A أفضل للجميع؛300 غرام بيان قابل للفحص لا شهادة جودة.",
+        "targetSkill": "علاقتان متدرجتان، واحدة je … desto وأخرى je … umso، مع صيغ المقارنة والفاصلة والمصرف في نهاية التابعة وبعد عبارة المقارنة في الرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

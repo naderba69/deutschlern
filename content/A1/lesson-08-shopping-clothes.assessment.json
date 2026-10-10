@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-08-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-08-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR14: مراجعة فردية بالمراجع؛ تمييز brauchen عن müssen، وطلب التجربة وتحديد أدوار أسئلة المقاس ومطابقة الأداء للمصدر.",
+      "تحقق ذاتي محلي لا تصحيح آلي للغة أو النطق؛ لا تسجيل مطلوب من المتعلم.",
+      "التسجيلات الموجودة محفوظة ومتاحة؛ النص ظاهر والتقييم لا يقيس استماعًا مستقلًا ولا اعتماد صوت جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-08-Q01",
+      "sourceTaskIds": [
+        "DL-A1-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "مفردات الملابس",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Mantel؟",
+      "options": [
+        "المعطف",
+        "الحذاء",
+        "القميص"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Mantel تعني «المعطف»."
+    },
+    {
+      "id": "DL-A1-08-Q02",
+      "sourceTaskIds": [
+        "DL-A1-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "تصريف müssen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ heute einkaufen.",
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع ich نستخدم muss."
+    },
+    {
+      "id": "DL-A1-08-Q03",
+      "sourceTaskIds": [
+        "DL-A1-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "تصريف müssen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ die Hose anprobieren.",
+      "options": [
+        "muss",
+        "musst",
+        "müssen"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نستخدم musst."
+    },
+    {
+      "id": "DL-A1-08-Q04",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تضع المصدر بعد müssen في النهاية؟",
+      "options": [
+        "Ich muss die Hose anprobieren.",
+        "Ich anprobieren muss die Hose.",
+        "Ich muss anprobiert die Hose."
+      ],
+      "answerIndex": 0,
+      "explanation": "في هذه الجملة البسيطة يأتي muss مصرفًا، والمصدر الكامل anprobieren بلاzu في النهاية."
+    },
+    {
+      "id": "DL-A1-08-Q05",
+      "sourceTaskIds": [
+        "DL-A1-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "أسئلة المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن السعر؟",
+      "options": [
+        "Welche Größe haben Sie?",
+        "Wie viel kostet das?",
+        "Welche Farbe möchten Sie?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wie viel kostet das? تعني «كم سعر هذا؟»."
+    },
+    {
+      "id": "DL-A1-08-Q06",
+      "sourceTaskIds": [
+        "DL-A1-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "أسئلة المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل به البائع الزبون عن مقاسه؟",
+      "options": [
+        "Welche Größe haben Sie?",
+        "Wie viel kostet das?",
+        "Wo fährt der Bus?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Welche Größe haben Sie? تعني هنا «ما مقاسك؟». أما Haben Sie Größe 38? فطلب توفر مقاس محدد من البائع."
+    },
+    {
+      "id": "DL-A1-08-Q07",
+      "sourceTaskIds": [
+        "DL-A1-08-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "وصف الملابس",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى zu lang في وصف البنطال؟",
+      "options": [
+        "قصير جدًا",
+        "طويل أكثر من اللازم",
+        "مقاسه مناسب"
+      ],
+      "answerIndex": 1,
+      "explanation": "zu lang تعني «طويل أكثر من اللازم»."
+    },
+    {
+      "id": "DL-A1-08-Q08",
+      "sourceTaskIds": [
+        "DL-A1-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "الرد في المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تقول «أحتاج إلى سترة»؟",
+      "options": [
+        "Ich brauche eine Jacke.",
+        "Ich brauche einen Jacke.",
+        "Ich braucht ein Jacke."
+      ],
+      "answerIndex": 0,
+      "explanation": "ich brauche للمفرد المتكلم، وJacke مؤنث في Akkusativ: eine Jacke، لاeinen أوein."
+    },
+    {
+      "id": "DL-A1-08-Q09",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir müssen am Samstag ___.",
+      "options": [
+        "einkaufen",
+        "kaufen ein",
+        "eingekauft"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد müssen يأتي المصدر einkaufen في نهاية الجملة."
+    },
+    {
+      "id": "DL-A1-08-Q10",
+      "sourceTaskIds": [
+        "DL-A1-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "skillTags": [
+        "التواصل في المتجر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تطلب تجربة قطعة ملابس؟",
+      "options": [
+        "Kann ich die Hose anprobieren?",
+        "Wie heißt die Hose?",
+        "Ich wohne im Geschäft."
+      ],
+      "answerIndex": 0,
+      "explanation": "anprobieren تعني تجربة الملابس؛ السؤال يطلب ذلك."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-08-P01",
+      "sourceTaskIds": [
+        "DL-A1-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب خمسة أقوال لدور الزبون في متجر: قولًا يبدأ بـIch brauche ويذكر قطعة ملابس، وقولًا يحدد لونًا ومقاسًا، وسؤالًا عن سعر القطعة، وطلبًا لتجربتها بـKann ich … anprobieren?، وقولًا يصف ملاءمتها أو أنها أكبر/أصغر/أطول من اللازم. اقرأ الأقوال الخمسة بصوت مرتفع؛ لا يلزم شريك أو كتابة أجوبة البائع أو تسجيل صوتك، ويمكن استعمال مقاس خيالي.",
+      "criteria": {
+        "taskCompletion": "خمسة أقوال تشمل القطعة واللون والمقاس وسؤال السعر وطلب التجربة ووصف الملاءمة، وتُقرأ كلها جهرًا.",
+        "meaningClarity": "يمكن فهم طلب الزبون ووصفه؛ لا تُشترط أجوبة بائع أو شريك أو معلومات حقيقية.",
+        "targetSkill": "Ich brauche مع غرض، وسؤال سعر صحيح، وKann ich … anprobieren?، ووصف مثل passt gut أوzu groß/klein/lang؛ لا يُشترط müssen هنا."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-08-P02",
+      "sourceTaskIds": [
+        "DL-A1-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-08-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب قائمة من ثلاثة أغراض مختلفة من مفردات الملابس، ثم جملتين: الأولى تبدأ بـIch brauche وتذكر غرضًا واحدًا على الأقل من القائمة؛ والثانية تبدأ بـIch muss وتذكر فعلًا لازمًا مثل kaufen أوanprobieren أوeinkaufen، بالمصدر في النهاية. هذه مهمة كتابة فقط؛ يجوز اختيار احتياجات خيالية، ولا يلزم الكلام أو تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "قائمة بثلاثة أغراض مختلفة وجملتان: احتياج بـIch brauche، وفعل لازم بـIch muss.",
+        "meaningClarity": "جملة الاحتياج تذكر غرضًا من القائمة؛ جملة الضرورة تذكر فعلًا مفهومًا، ويمكن أن تكون الخطة خيالية.",
+        "targetSkill": "brauche وmuss معich، وأداة مناسبة للغرض، ومصدر كامل في نهاية جملةmüssen."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 70,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

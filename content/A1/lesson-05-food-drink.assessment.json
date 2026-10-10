@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-05-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-05-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR11: مراجعة نصية فردية بالمراجع في data/reviews/a1-05-review.json؛ ليست اعتماد لغة أو نطق.",
+      "صُحح استنتاج تفضيل الأرز وسؤال الشراب الغامض، وقُيد سؤال Käse بالمفرد. فهارس الإجابات وعتبة80% محفوظة.",
+      "T08/P01 ست جمل عن يوم غذائي؛ T04/P02 أربعة أدوار رسمية للتفضيل والطلب. التحقق ذاتي دون تسجيل أو تصحيح آلي.",
+      "أصلا القراءة والاستماع ومقطعاهما موجودان ومحفوظان دون استماع أو اعتماد جديد؛ حوار المقهى نص غير مسجل هنا، والتقييم لا يتطلب الصوت."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-05-Q01",
+      "sourceTaskIds": [
+        "DL-A1-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "مفردات الطعام",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى das Gemüse؟",
+      "options": [
+        "الفاكهة",
+        "الخضار",
+        "الخبز"
+      ],
+      "answerIndex": 1,
+      "explanation": "das Gemüse تعني «الخضار»."
+    },
+    {
+      "id": "DL-A1-05-Q02",
+      "sourceTaskIds": [
+        "DL-A1-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "تصريف essen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ gern Obst.",
+      "options": [
+        "isst",
+        "essen",
+        "esse"
+      ],
+      "answerIndex": 2,
+      "explanation": "تصريف essen مع ich هو esse."
+    },
+    {
+      "id": "DL-A1-05-Q03",
+      "sourceTaskIds": [
+        "DL-A1-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "mag وmöchte",
+        "اختيار محدد"
+      ],
+      "prompt": "للتعبير عن تفضيل عام: ___ Tee.",
+      "options": [
+        "Ich mag",
+        "Ich möchte",
+        "Ich bin"
+      ],
+      "answerIndex": 0,
+      "explanation": "mag تعبّر عن تفضيل عام: Ich mag Tee."
+    },
+    {
+      "id": "DL-A1-05-Q04",
+      "sourceTaskIds": [
+        "DL-A1-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "mag وmöchte",
+        "اختيار محدد"
+      ],
+      "prompt": "للطلب الآن في مقهى، أي جملة أنسب؟",
+      "options": [
+        "Ich mag einen Tee.",
+        "Ich möchte einen Tee.",
+        "Ich bin einen Tee."
+      ],
+      "answerIndex": 1,
+      "explanation": "Ich möchte einen Tee أنسب للطلب المهذب في هذا الموقف. mögen له استعمالات أخرى للرغبة أيضًا؛ هذا فرق تدريبي بحسب السياق، لا حظر مطلق لعبارة Ich mag einen Tee."
+    },
+    {
+      "id": "DL-A1-05-Q05",
+      "sourceTaskIds": [
+        "DL-A1-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "تصريف essen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Was ___ du gern?",
+      "options": [
+        "isst",
+        "esse",
+        "essen"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع du نقول isst: Was isst du gern?"
+    },
+    {
+      "id": "DL-A1-05-Q06",
+      "sourceTaskIds": [
+        "DL-A1-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "مفردات الطعام",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل بالاسم الجامع للفاكهة: Ich esse gern ___.",
+      "options": [
+        "Wasser",
+        "Obst",
+        "Milch"
+      ],
+      "answerIndex": 1,
+      "explanation": "Obst اسم جامع للفاكهة. Wasser ماء وMilch حليب؛ المشتتات من مفردات الدرس."
+    },
+    {
+      "id": "DL-A1-05-Q07",
+      "sourceTaskIds": [
+        "DL-A1-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "أدوات التعريف",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الاسم مع أداة التعريف في المفرد المرفوع (Nominativ) لكلمة «جبن»؟",
+      "options": [
+        "der Käse",
+        "die Käse",
+        "das Käse"
+      ],
+      "answerIndex": 0,
+      "explanation": "المفرد المرفوع der Käse. توجد صيغة جمع die Käse، لكنها ليست المطلوب هنا."
+    },
+    {
+      "id": "DL-A1-05-Q08",
+      "sourceTaskIds": [
+        "DL-A1-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "الطلب في المقهى",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الطلب الصحيح لـ«حساء خضار»؟",
+      "options": [
+        "Ich möchte eine Gemüsesuppe.",
+        "Ich möchte einen Gemüsesuppe.",
+        "Ich möchte ein Gemüsesuppe."
+      ],
+      "answerIndex": 0,
+      "explanation": "Suppe مؤنث، لذا نستخدم eine."
+    },
+    {
+      "id": "DL-A1-05-Q09",
+      "sourceTaskIds": [
+        "DL-A1-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "التواصل",
+        "اختيار محدد"
+      ],
+      "prompt": "في أمثلة هذا الدرس، ما الفرق المقصود بين mag وmöchte؟",
+      "options": [
+        "mag للتفضيل العام، وmöchte لطلب مهذب أو رغبة.",
+        "كلاهما يعني «أكل».",
+        "möchte للماضي فقط."
+      ],
+      "answerIndex": 0,
+      "explanation": "نستعمل mag هنا للتفضيل وmöchte للطلب المهذب. möchte ليست للماضي فقط ولا محصورة فيما سيحدث الآن؛ يمكن أن تتعلق الرغبة بوقت لاحق."
+    },
+    {
+      "id": "DL-A1-05-Q10",
+      "sourceTaskIds": [
+        "DL-A1-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "skillTags": [
+        "الحوار",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الرد الطبيعي على Was trinkst du؟",
+      "options": [
+        "Ich trinke Wasser.",
+        "Ich esse einen Apfel.",
+        "Ich heiße Wasser."
+      ],
+      "answerIndex": 0,
+      "explanation": "السؤال عن الشراب، والرد المناسب: Ich trinke Wasser."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-05-P01",
+      "sourceTaskIds": [
+        "DL-A1-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب ست جمل بالألمانية عن يوم غذائي حقيقي أو خيالي: ثلاث جمل للطعام تبدأ بـZum Frühstück وAm Mittag وAm Abend، وجملة تذكر ما تشربه، وجملة تفضيل بـIch mag، وجملة طلب بـIch möchte. سمِّ ثلاثة أطعمة مختلفة على الأقل ومشروبًا، ويمكن استعمال مفردات الدرس. هذه مهمة كتابة فقط وليست توصية غذائية؛ لا يلزم وصف عاداتك الحقيقية.",
+      "criteria": {
+        "taskCompletion": "كتبت ست جمل تغطي فترات الطعام الثلاث والشراب والتفضيل والطلب، وذكرت ثلاثة أطعمة مختلفة على الأقل ومشروبًا.",
+        "meaningClarity": "الأطعمة والمشروب مفهومة، ويتضح الفرق بين وصف اليوم والتفضيل والطلب.",
+        "targetSkill": "أصرف essen/trinken مع ich، وأضع الفعل ثانيًا بعد عبارة الوقت، وأستعمل mag وmöchte حسب المقصود."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-05-P02",
+      "sourceTaskIds": [
+        "DL-A1-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-05-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب موقفًا خياليًا من أربعة أدوار: موظف الخدمة يساعد الزبون على الاختيار فيسأل Was essen Sie gern?؛ يجيب الزبون بـIch mag؛ يسأل الموظف Was möchten Sie?؛ يطلب الزبون طعامًا ومشروبًا بـIch möchte … bitte. استعن بـeine Gemüsesuppe وeinen Tee من الدرس، وحافظ على خطاب Sie الرسمي. اقرأ الأدوار الأربعة بصوت مرتفع، ويمكن أداؤها وحدك؛ لا يلزم تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "كتبت أربعة أدوار: سؤال تفضيل وجوابه، وسؤال طلب وجواب يتضمن طعامًا ومشروبًا، وقرأت الجميع بصوت مرتفع.",
+        "meaningClarity": "أميز الموظف عن الزبون، ويجيب كل رد عن سؤاله، فلا يكفي ذكر تفضيل من دون طلب فعلي.",
+        "targetSkill": "أستعمل Sie في السؤالين وich في الجوابين، وmag للتفضيل وmöchte للطلب، وصيغًا مناسبة مثل eine Gemüsesuppe وeinen Tee."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

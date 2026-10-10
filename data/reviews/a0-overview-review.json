@@ -1,0 +1,456 @@
+{
+  "reviewVersion": "cr55-a0-overview-audit-v1",
+  "lessonId": "a0-01-overview",
+  "lessonTitle": "A0 — وصف المستوى وأهدافه ومزامنة سجلات التدقيق التراكمية (A0–B2)",
+  "assessmentVersion": "a0-overview-audit-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 12,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/A0/lesson-01-overview.md": "23d21712a96c641e7473940df3f95f0db83037052ad6e17816ea24511e8c9fe7",
+    "data/source-plan.md": "314d9d4ee101b8d056140c6e600de775ec9bb0cff8a318f9349294e16cbe38a8",
+    "data/curriculum-production-matrix.md": "54c5532ccfafb523c2507f6fc3c579183a2b503ca843f3bd370788b428e7d2c3",
+    "data/curriculum-audit.md": "678ca35b6ddad3ba7841655d0df061bd755d01dc0542be15a7086a6a721d99b1",
+    "data/curriculum-file-audit.csv": "23f696b9f652b38e124a3c4bc08dea13eb9bc043136c0a74d3ff7c715c7eabdd"
+  },
+  "sources": [
+    {
+      "id": "coe-cefr-global-scale",
+      "title": "Council of Europe — Table 1 (CEFR 3.3): Common Reference Levels: Global Scale",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Official 6-level CEFR scale (A1, A2 Basic User; B1, B2 Independent User; C1, C2 Proficient User), confirming that A0 is an informal pedagogical pre-A1 bridge rather than an official CEFR level."
+    },
+    {
+      "id": "coe-cefr-descriptors",
+      "title": "Council of Europe — The CEFR Descriptors",
+      "url": "https://www.coe.int/en/web/common-european-framework-reference-languages/the-cefr-descriptors",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "CEFR Companion Volume communicative activities (reception, production, interaction, mediation) and Pre-A1 bridging descriptors vs. formal certification."
+    },
+    {
+      "id": "schubert-spektrum-overview",
+      "title": "Schubert-Verlag — Spektrum Deutsch A1+, A2+, B1+, B2 Lehrwerksübersicht",
+      "url": "https://www.schubert-verlag.de/spektrum.php",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Publisher overview of the four Spektrum Deutsch volumes (A1+, A2+, B1+, B2), each structured into 12 integrated chapters with Vertiefungsteil, Übersichten, and Abschlusstest."
+    },
+    {
+      "id": "schubert-spektrum-a1-ihv",
+      "title": "Schubert-Verlag — Spektrum Deutsch A1+ Inhaltsverzeichnis & Kursübersicht (PDF)",
+      "url": "https://www.schubert-verlag.de/spektrum/pdf/spektrum_a1_ihv.pdf",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Chapter 1–12 topical and structural progression of Spektrum Deutsch A1+ matched in data/source-plan.md."
+    },
+    {
+      "id": "schubert-spektrum-a2-ihv",
+      "title": "Schubert-Verlag — Spektrum Deutsch A2+ Inhaltsverzeichnis & Kursübersicht (PDF)",
+      "url": "https://www.schubert-verlag.de/spektrum/pdf/spektrum_a2_ihv.pdf",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Chapter 1–12 topical and structural progression of Spektrum Deutsch A2+ matched in data/source-plan.md."
+    },
+    {
+      "id": "schubert-spektrum-b1-ihv",
+      "title": "Schubert-Verlag — Spektrum Deutsch B1+ Inhaltsverzeichnis & Kursübersicht (PDF)",
+      "url": "https://www.schubert-verlag.de/spektrum/pdf/spektrum_b1_ihv.pdf",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Chapter 1–12 topical and structural progression of Spektrum Deutsch B1+ matched in data/source-plan.md."
+    },
+    {
+      "id": "schubert-spektrum-b2-ihv",
+      "title": "Schubert-Verlag — Spektrum Deutsch B2 Inhaltsverzeichnis & Kursübersicht (PDF)",
+      "url": "https://www.schubert-verlag.de/spektrum/pdf/spektrum_b2_ihv.pdf",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Chapter 1–12 topical and structural progression of Spektrum Deutsch B2 matched in data/source-plan.md."
+    },
+    {
+      "id": "schubert-online-aufgaben-b2",
+      "title": "Schubert-Verlag — Online-Aufgaben Deutsch als Fremdsprache (Vorkurs bis B2)",
+      "url": "https://www.schubert-verlag.de/aufgaben/uebungen_b2/sb2_uebungen_index.htm",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "note": "Online exercise portal referenced in data/source-plan.md covering Vorkurs (Vom Wort zum Satz) and A1+ through B2."
+    },
+    {
+      "id": "lingolia-en-personal-pronouns",
+      "title": "Lingolia English — Personal Pronouns in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/pronouns/personal-pronouns",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "Subject pronouns (ich, du, er, sie, es, wir, ihr, sie, Sie) and informal du vs. capitalized formal Sie in A0.2 and A0.4."
+    },
+    {
+      "id": "lingolia-en-present-tense",
+      "title": "Lingolia English — Present Tense (Präsens) in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/tenses/present-tense",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "Present-tense conjugation of sein, haben, and regular verbs in A0.2–A0.5."
+    },
+    {
+      "id": "lingolia-en-cardinal-numbers",
+      "title": "Lingolia English — Cardinal Numbers (Kardinalzahlen) in German",
+      "url": "https://deutsch.lingolia.com/en/vocabulary/numbers-dates-time/cardinal-numbers",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "Core cardinal numbers 0–20 (null to zwanzig) vs. inverted compound numbers 21–100 (optional recognition expansion in A0.3)."
+    },
+    {
+      "id": "lingolia-en-sein-haben",
+      "title": "Lingolia English — sein and haben in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/sein-haben",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "Full present-tense paradigms of sein (bin, bist, ist, sind, seid, sind) and haben (habe, hast, hat, haben, habt, haben) in A0.4."
+    },
+    {
+      "id": "lingolia-en-main-clauses",
+      "title": "Lingolia English — Main Clauses (Hauptsätze) in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/main-clauses",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "Finite verb in second position (V2) in declarative main clauses (Aussagesätze)."
+    },
+    {
+      "id": "lingolia-en-questions",
+      "title": "Lingolia English — Questions (Fragesätze) in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/questions",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "Verb-first yes/no questions (Entscheidungsfragen) vs. W-word + V2 open questions (Ergänzungsfragen)."
+    },
+    {
+      "id": "duden-alphabet-abc",
+      "title": "Duden — Alphabet (Abc)",
+      "url": "https://www.duden.de/rechtschreibung/Alphabet_Abc",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "das Alphabet; Genitiv des Alphabet[e]s, Plural die Alphabete."
+    },
+    {
+      "id": "duden-umlaut",
+      "title": "Duden — Umlaut",
+      "url": "https://www.duden.de/rechtschreibung/Umlaut",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "der Umlaut; Umlaut letters ä, ö, ü in the German writing system."
+    },
+    {
+      "id": "duden-eszett",
+      "title": "Duden — Eszett",
+      "url": "https://www.duden.de/rechtschreibung/Eszett",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "das Eszett (ß / ẞ, scharfes s) after long vowels and diphthongs."
+    },
+    {
+      "id": "duden-buchstabe",
+      "title": "Duden — Buchstabe",
+      "url": "https://www.duden.de/rechtschreibung/Buchstabe",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "der Buchstabe; Genitiv des Buchstabens, Plural die Buchstaben."
+    },
+    {
+      "id": "duden-buchstabieren",
+      "title": "Duden — buchstabieren",
+      "url": "https://www.duden.de/rechtschreibung/buchstabieren",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "buchstabieren (buchstabiert, buchstabierte, hat buchstabiert): naming the letters of a word or name in sequence."
+    },
+    {
+      "id": "duden-aussprache",
+      "title": "Duden — Aussprache",
+      "url": "https://www.duden.de/rechtschreibung/Aussprache",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "die Aussprache; Genitiv der Aussprache, Plural die Aussprachen."
+    },
+    {
+      "id": "duden-begrueszung",
+      "title": "Duden — Begrüßung",
+      "url": "https://www.duden.de/rechtschreibung/Begrueszung",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "die Begrüßung; Genitiv der Begrüßung, Plural die Begrüßungen."
+    },
+    {
+      "id": "duden-kardinalzahl",
+      "title": "Duden — Kardinalzahl",
+      "url": "https://www.duden.de/rechtschreibung/Kardinalzahl",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "die Kardinalzahl (Grundzahl); Plural die Kardinalzahlen."
+    },
+    {
+      "id": "duden-personalpronomen",
+      "title": "Duden — Personalpronomen",
+      "url": "https://www.duden.de/rechtschreibung/Personalpronomen",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "das Personalpronomen; Plural die Personalpronomina / Personalpronomen."
+    },
+    {
+      "id": "duden-aussagesatz",
+      "title": "Duden — Aussagesatz",
+      "url": "https://www.duden.de/rechtschreibung/Aussagesatz",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "der Aussagesatz; declarative main clause with V2 finite verb."
+    },
+    {
+      "id": "duden-fragesatz",
+      "title": "Duden — Fragesatz",
+      "url": "https://www.duden.de/rechtschreibung/Fragesatz",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "note": "der Fragesatz (Interrogativsatz); yes/no V1 and W-word V2 questions."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Alphabet",
+      "reason": "HTTP 404 on bare /Alphabet path because Duden disambiguates /Alphabet_Abc vs. /Alphabet_Person; replaced by https://www.duden.de/rechtschreibung/Alphabet_Abc."
+    }
+  ],
+  "units": [
+    {
+      "id": "DL-A0-OVERVIEW-SCOPE-01",
+      "kind": "overview_section",
+      "title": "تعريف جسر A0 التمهيدي غير الرسمي قبل A1",
+      "sourceRef": "content/A0/lesson-01-overview.md#L1-L4",
+      "finding": "يحدد بوضوح أن A0 جسر تعليمي تمهيدي غير رسمي قبل A1 وليس مستوى CEFR مستقلًا، بما يطابق جدول المستويات الستة الرسمي لدى مجلس أوروبا (A1–C2).",
+      "citations": [
+        "coe-cefr-global-scale",
+        "coe-cefr-descriptors",
+        "schubert-spektrum-overview"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-OUTCOME-01",
+      "kind": "overview_outcome",
+      "title": "مخرج A0.1: الحروف الـ26 وحروف الإمالة Ä/Ö/Ü وحرف Eszett والتهجئة",
+      "sourceRef": "content/A0/lesson-01-overview.md#L7",
+      "finding": "يضبط بدقة عدد الحروف اللاتينية الأساسية (26) وحروف الإمالة الثلاثة (Ä ä, Ö ö, Ü ü) وحرف Eszett (ß / ẞ بعد الصائت الطويل أو المركب الصوتي مقابل ss بعد الصائت القصير) ومهارة التهجئة (buchstabieren).",
+      "citations": [
+        "duden-alphabet-abc",
+        "duden-umlaut",
+        "duden-eszett",
+        "duden-buchstabe",
+        "duden-buchstabieren"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-OUTCOME-02",
+      "kind": "overview_outcome",
+      "title": "مخرج A0.1: الأنماط الصوتية المستهدفة (ei, ie, sch, z, w, v, sp-/st-, ch)",
+      "sourceRef": "content/A0/lesson-01-overview.md#L8",
+      "finding": "يوثق الأنماط الصوتية المستهدفة في A0.1 مع التمثيل الصوتي القياسي ([aɪ], [iː], [ʃ], [ts], [v]) وملاحظة الفروق الإملائية الصوتية الأساسية.",
+      "citations": [
+        "duden-aussprache",
+        "schubert-spektrum-a1-ihv"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-OUTCOME-03",
+      "kind": "overview_outcome",
+      "title": "مخرج A0.2: التحية والوداع والتمييز بين du وSie",
+      "sourceRef": "content/A0/lesson-01-overview.md#L9",
+      "finding": "يطابق مراجعة A0.2 (a0-02-v2) في التمييز بين الخطاب غير الرسمي du (Wie heißt du? / Wie geht es dir?) والخطاب الرسمي الكبير الحرف Sie (Wie heißen Sie? / Wie geht es Ihnen?).",
+      "citations": [
+        "lingolia-en-personal-pronouns",
+        "duden-begrueszung"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-OUTCOME-04",
+      "kind": "overview_outcome",
+      "title": "مخرج A0.3: الأعداد الأساسية 0–20 والبيانات الشخصية النموذجية وقراءة رقم الهاتف خانةً خانة",
+      "sourceRef": "content/A0/lesson-01-overview.md#L10",
+      "finding": "يطابق مراجعة A0.3 (a0-03-v3) في حصر شرط الإتقان بالأعداد الأساسية 0–20 وقراءة رقم الهاتف خانةً خانة واستخدام بيانات نموذجية/تدريبية، مع إبقاء الأعداد المركبة 21–100 توسعة تعرّف اختيارية.",
+      "citations": [
+        "lingolia-en-cardinal-numbers",
+        "duden-kardinalzahl"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-OUTCOME-05",
+      "kind": "overview_outcome",
+      "title": "مخرج A0.4: ضمائر الفاعل وتصريف sein/haben وترتيب الجملة الخبرية V2 والسؤال",
+      "sourceRef": "content/A0/lesson-01-overview.md#L11",
+      "finding": "يطابق مراجعة A0.4 (a0-04-v2) في جدول ضمائر الفاعل وتصريف sein وhaben والتمييز بين الجملة الخبرية (Aussagesatz — V2) والسؤال المفتوح (W-Frage — V2) وسؤال نعم/لا (Ja/Nein-Frage — V1).",
+      "citations": [
+        "lingolia-en-personal-pronouns",
+        "lingolia-en-present-tense",
+        "lingolia-en-sein-haben",
+        "lingolia-en-main-clauses",
+        "lingolia-en-questions",
+        "duden-personalpronomen",
+        "duden-aussagesatz",
+        "duden-fragesatz"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-OUTCOME-06",
+      "kind": "overview_outcome",
+      "title": "مخرج A0.5: عبارات الصف وطلب الإعادة والإبطاء والتهجئة والمعنى والمساعدة",
+      "sourceRef": "content/A0/lesson-01-overview.md#L12",
+      "finding": "يطابق مراجعة A0.5 (a0-05-v2) في العبارات الصفية القياسية (Noch einmal, bitte! / Langsamer, bitte! / Wie schreibt man das? / Was bedeutet …? / Können Sie mir bitte helfen?).",
+      "citations": [
+        "coe-cefr-descriptors",
+        "lingolia-en-questions"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-MAP-01",
+      "kind": "overview_unit_map",
+      "title": "خريطة وحدات A0.1–A0.5 وبوابة الانتقال A0→A1 والأصول الصوتية الـ12 (27 مقطعًا)",
+      "sourceRef": "content/A0/lesson-01-overview.md#L14-L21",
+      "finding": "توثق خريطة الوحدات المعرّفات الرسمية ونسخ التقييم المعتمدة (a0-01-v2, a0-02-v2, a0-03-v3, a0-04-v2, a0-05-v2, a0-gate-v2) وتوزيع الأصول الصوتية الـ12 المعتمدة (27 مقطع MP3 بحالة ready) وسياسة إخفاء نص استماع البوابة (hide_until_first_attempt).",
+      "citations": [
+        "coe-cefr-descriptors",
+        "schubert-spektrum-overview"
+      ]
+    },
+    {
+      "id": "DL-A0-OVERVIEW-GATE-RULE-01",
+      "kind": "overview_gate_rule",
+      "title": "قاعدة الانتقال من A0 إلى A1 بعتبة 80% ومهام الأداء ذاتية التحقق محليًا",
+      "sourceRef": "content/A0/lesson-01-overview.md#L23-L25",
+      "finding": "تشرح بدقة شرط إتقان الدروس الخمسة (80% + P01/P02) وبوابة الانتقال (80% في DL-A0-GATE-Q01..Q10 + المهام الثلاث DL-A0-GATE-P01..P03) والتحقق الذاتي المحلي دون تسجيل صوتي أو ادعاء شهادة CEFR رسمية.",
+      "citations": [
+        "coe-cefr-global-scale",
+        "coe-cefr-descriptors"
+      ]
+    },
+    {
+      "id": "DL-COURSE-AUDIT-SOURCE-PLAN-01",
+      "kind": "cross_course_audit_doc",
+      "title": "مزامنة خريطة المنهج المرجعية data/source-plan.md (المخزنة في APP_SHELL والمربوطة من الواجهة)",
+      "sourceRef": "data/source-plan.md#L1-L87",
+      "finding": "حُدّثت الأرقام والحالات في data/source-plan.md لتطابق الحزمة المبنية بعد CR54/CR55: 53 درسًا + بوابة A0، 55 حارس مراجعة، 431 معرّف T (428 تمرينًا في الدروس + 3 مهام مصدرية في البوابة)، 61 قسم حوار، 754 مفردة، 540 سؤالًا، 109 مهمات أداء، 1080 معرّفًا في الفهرس، و217 أصلًا صوتيًا / 474 مقطع MP3 (137 ready / 302 مقاطع في A0–B1.8؛ 80 generated_pending_acoustic_review / 172 مقطعًا في B1.9–B2.12).",
+      "citations": [
+        "schubert-spektrum-overview",
+        "schubert-spektrum-a1-ihv",
+        "schubert-spektrum-a2-ihv",
+        "schubert-spektrum-b1-ihv",
+        "schubert-spektrum-b2-ihv",
+        "schubert-online-aufgaben-b2"
+      ]
+    },
+    {
+      "id": "DL-COURSE-AUDIT-MATRIX-01",
+      "kind": "cross_course_audit_doc",
+      "title": "مزامنة مصفوفة الإنتاج التعليمية data/curriculum-production-matrix.md (الإصدار 1.5) وتقرير التدقيق data/curriculum-audit.md",
+      "sourceRef": "data/curriculum-production-matrix.md#L1-L161",
+      "finding": "رُقّيت مصفوفة الإنتاج إلى الإصدار 1.5 وحُدّث تقرير التدقيق data/curriculum-audit.md لتوثيق نسخ التقييم المعتمدة v2/v3 لجميع الدروس الـ53 وبوابة A0، و1080 معرّفًا في الفهرس، و217 أصلًا صوتيًا / 474 مقطع MP3 دون ادعاء مراجعة سمعية بشرية.",
+      "citations": [
+        "coe-cefr-global-scale",
+        "coe-cefr-descriptors",
+        "schubert-spektrum-overview"
+      ]
+    },
+    {
+      "id": "DL-COURSE-AUDIT-FILE-CSV-01",
+      "kind": "cross_course_audit_csv",
+      "title": "مزامنة سجل تدقيق ملفات الدروس الـ53 في data/curriculum-file-audit.csv",
+      "sourceRef": "data/curriculum-file-audit.csv#L1-L54",
+      "finding": "حُدّثت صفوف الدروس الـ53 كافة في data/curriculum-file-audit.csv لتطابق عناوين H1 والأهداف والمدد وعدد التمارين (428) وأقسام الحوار (61) ونسخ التقييم (v2/v3) والمقاطع الصوتية الفعلية (473 مقطعًا في الدروس + مقطع البوابة = 474) وحالاتها (ready في A0.1–B1.8 وgenerated_pending_acoustic_review في B1.9–B2.12).",
+      "citations": [
+        "coe-cefr-descriptors",
+        "schubert-spektrum-overview"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1191 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-07-travel-weather",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-07-v2",
+  "unitCount": 118,
+  "exerciseSubItemCount": 33,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "WIND",
+      "title": "Duden windig",
+      "url": "https://www.duden.de/rechtschreibung/windig",
+      "scope": "كامل: معنى الطقس وجود رياح متكررة، لا اشتراط عاصفة؛ المعنى المجازي خارج الدرس."
+    },
+    {
+      "id": "PREP",
+      "title": "Lingolia Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen",
+      "scope": "الجزء 0: mit/nach/zu مع Dativ، واختصارا zum/zur و am؛ يظهر مثال um14Uhr. لم يُقرأ الجزء 1."
+    },
+    {
+      "id": "BAHN",
+      "title": "Duden Bahn",
+      "url": "https://www.duden.de/rechtschreibung/Bahn",
+      "scope": "الجزء 0: مؤنث، Eisenbahn أو Straßenbahn/U-Bahn/S-Bahn بحسب السياق. لم يُقرأ الجزء 1."
+    },
+    {
+      "id": "MITNEHMEN",
+      "title": "Duden mitnehmen",
+      "url": "https://www.duden.de/rechtschreibung/mitnehmen",
+      "scope": "كامل: يأخذ معه، مثال السترة وصيغة nimmt mit؛ يدعم شرح الفصل."
+    },
+    {
+      "id": "LOCAL",
+      "title": "Lingolia lokale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/lokal",
+      "scope": "الجزء 0: nach للوجهة و in للموقع مع أسماء مدن أو دول بلا أداة أو صفة؛ zum/zur ليس اختيارًا قائمًا على كون المكان معروفًا. لم يُقرأ الجزء 1."
+    },
+    {
+      "id": "TIME",
+      "title": "Lingolia temporale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal",
+      "scope": "كامل: um9Uhr مقابل nach لاحقًا؛ am مع الأيام وفترات اليوم. لم نتبنَّ صياغة الجدول الملتبسة عن حصر um بالساعات حتى 12 أو الساعة التامة؛ مرجع PREP نفسه يعرض um14Uhr والحوار um9:10."
+    },
+    {
+      "id": "EINFACH",
+      "title": "Duden einfach (Adjektiv)",
+      "url": "https://www.duden.de/rechtschreibung/einfach_einmal_simpel",
+      "scope": "كامل: eine einfache Fahrkarte ohne Rückfahrt؛ للكلمة معانٍ أخرى كالسهل والبسيط خارج سياق التذكرة."
+    },
+    {
+      "id": "FAHREN",
+      "title": "Duden fahren",
+      "url": "https://www.duden.de/rechtschreibung/fahren",
+      "scope": "الجزء 0: du fährst/er fährt؛ mit Bahn/Zug وزمن انطلاق رحلة um8Uhr. قد تصف النقل لا قيادة المتكلم، ولم يُقرأ الجزء 1."
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/mit",
+      "reason": "المحتوى المسترجع صفحة404؛ لم يُستعمل دليلًا."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/nach",
+      "reason": "المحتوى المسترجع صفحة404؛ لم يُستعمل دليلًا."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/zu",
+      "reason": "المحتوى المسترجع صفحة404؛ لم يُستعمل دليلًا."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/einfach",
+      "reason": "المحتوى المسترجع صفحة404؛ لم يُستعمل دليلًا."
+    }
+  ],
+  "limitations": [
+    "118 وحدة مراجعة و33 بندًا أو مطلبًا متداخلة؛ ليست118 مهارة مستقلة. صفwarm/kalt وحدة واحدة، والتحيةHallo وحدة منفصلة لا جملة خبرية.",
+    "8 مراجع تدعم نطاقها، لا بحث معجمي مستقل لكل كلمة أو ترجمة أو صيغة ألمانية؛ بقية التحليل مراجعة مباشرة للمساعد.",
+    "الحوار6 أقوال، والقراءة5 جمل، والاستماع تحية و5 جمل. ثلاثة أصول و8 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد.",
+    "قراءة التفريغ والطول والإقرار لا تثبت فهمًا مسموعًا أو جودة اللغة والنطق؛ لا شهادةCEFR/WCAG ولا اشتراط لمراجع بشري للاستمرار."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-07-travel-weather.md": "d30caeceedc6ab7d1b17114c9ca2adbc942d3a82e7f0585c2a6bc2393b653126",
+    "content/A1/lesson-07-travel-weather.assessment.json": "b859ce0e716c8b82036e06e6c2b6811a1cde2af365f075a0a76fc24e479d3cae"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-07-AUD-DLG-01": "9ec916884d14a516f75e69ce45c445e071c0893ed00e7dfecef3c30eeb721e95",
+    "DL-A1-07-AUD-READ-01": "6fc854f9b2b38f38bf34c53cbbac198a9b0f704ffa630941e0faf69f9c045aca",
+    "DL-A1-07-AUD-LST-01": "1accdd6364f0f6b4a09760a80ad540a40faefd3dddeffd9931af78cac3094ee5"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "نطاق الدرس والمدة",
+      "finding": "الهدف يشمل الوجهة والنقل والطقس؛ أضيفت الكتابة والاستماع الاختياري.35 دقيقة تقدير مرن لا وعد بزمن ثابت أو إتقان. فُصلت أقوال الحوار إلى فقرات مستقلة لضمان وضوحها في العرض، مع بقاء كلماتها.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "mit + Dativ",
+      "finding": "قُيد تحويل der/das إلى dem و die إلى der بالمفرد ذي أداة التعريف. لا قاعدة أن كل die تصبح der في الجمع أيضًا.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "nach / in / zu",
+      "finding": "nach للوجهة بلا أداة أو صفة في الأمثلة؛ in Sousse موقع. zum/zur اختصاران مع Dativ، لا نتيجة كون المكان معروفًا فقط.",
+      "sourceIds": [
+        "PREP",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "fahren / fliegen / المضارع",
+      "finding": "جدول fahren يوضح fährst/fährt مقابل fahrt. Ich fliege mit dem Flugzeug نموذج للطيران لا fahren؛ morgen يسمح بسرد خطة مستقبلية في المضارع ولا يلزم Perfekt.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "um / nach والطقس",
+      "finding": "um neun Uhr عند التاسعة و nach neun Uhr بعدها؛ قُيد المطلوب حتى لا يُرفض جواب صحيح بمعنى آخر. Es ist+صفة مقابل Es regnet. قد يجتمع البرد والشمس والرياح.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "تذكرة وحوار خيالي",
+      "finding": "einfach في سياق التذكرة ذهاب فقط، لا معناها الوحيد. 9:10 في الحوار تختلف عن 9:00 في المثال؛ لا جدول نقل حقيقي. تغيير وسم المسافر فقط إلى Reisende Person لمطابقة سجل الصوت.",
+      "sourceIds": [
+        "EINFACH"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "استقلال القراءة",
+      "finding": "رحلة Nour لا تلزمها ساعة القطار في الحوار أو طقس الحمامات في الاستماع؛ لا دمج سيناريوهات مستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-08",
+      "text": "حدود الاستماع",
+      "finding": "النص ظاهر وقراءة التفريغ لا تثبت استماعًا مستقلًا. أزيل عنوان «معد للنطق» القديم لأن التسجيل موجود. لا صوت مطلوب للتقييم ولا اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "قيد الترتيب",
+      "finding": "T05 يبدأ بـ Wir / Der Bus / Es، مع ضبط الحروف والترقيم؛ لا إنكار البدائل النحوية خارج القيد.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "الأداء والتحقق",
+      "finding": "P01 أربع جمل مكتوبة و P02 أربعة أقوال للمسافر مع الجهر منفردًا؛ لا بطاقة مع جملتين إضافيتين أو حوار كامل غير مدرّب. الطول والمربعات لا يصححان اللغة أو النطق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Zug | القطار |",
+      "finding": "der Zug مذكر، القطار؛ مفتاح T01.1 هو د.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| der Bus | الحافلة |",
+      "finding": "der Bus مذكر، الحافلة؛ مفتاح T01.3 هو ج.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das Auto | السيارة |",
+      "finding": "das Auto محايد، السيارة؛ بعد mit يأتي dem.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Bahn | النقل بالسكك: القطار أو الترام أو المترو بحسب السياق |",
+      "finding": "die Bahn مؤنث؛ قد تكون قطارًا أو ترامًا أو مترو بحسب السياق، وليس معنى واحدًا ثابتًا.",
+      "sourceIds": [
+        "BAHN"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| das Flugzeug | الطائرة |",
+      "finding": "das Flugzeug محايد، الطائرة؛ لا نطلب fahren معها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Fahrkarte | تذكرة سفر |",
+      "finding": "die Fahrkarte تذكرة نقل، وهي مفعول الطلب المؤدب Eine Fahrkarte…bitte.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Bahnhof | محطة القطار |",
+      "finding": "der Bahnhof محطة القطار، لا كل موقف.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Haltestelle | موقف الحافلة/الترام |",
+      "finding": "die Haltestelle موقف الحافلة أو الترام في أمثلتنا، مع zur.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| die Reise | الرحلة |",
+      "finding": "die Reise رحلة؛ Gute Reise تمنٍّ برحلة سعيدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| das Wetter | الطقس |",
+      "finding": "das Wetter الطقس؛ es ضمير غير شخصي في النموذج.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| sonnig | مشمس |",
+      "finding": "sonnig مشمس، لا يثبت حرارة الجو وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| warm / kalt | دافئ / بارد |",
+      "finding": "warm دافئ و kalt بارد؛ لا تبديل warm بـ heiß الحار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| windig | كثير الرياح؛ لا يعني عاصفة بالضرورة |",
+      "finding": "windig كثير الرياح؛ ترجمة عاصف وحدها قد توهم شدة غير لازمة فاستُبدلت.",
+      "sourceIds": [
+        "WIND"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| Es regnet. | إنها تمطر. |",
+      "finding": "Es regnet فعل مع es؛ لا نضيف ist.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| der Sommer / der Winter | الصيف / الشتاء |",
+      "finding": "Sommer الصيف و Winter الشتاء؛ كلا الاسمين مذكر، دون افتراض طقس ثابت لكل فصل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-16",
+      "text": "| der Frühling / der Herbst | الربيع / الخريف |",
+      "finding": "Frühling الربيع و Herbst الخريف؛ كلاهما مذكر، ليسا ظرفي وقت وحدهما.",
+      "sourceIds": []
+    },
+    {
+      "id": "transport-01",
+      "text": "**mit dem Bus** — بالحافلة.",
+      "finding": "Bus مذكر→mit dem Bus.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "transport-02",
+      "text": "**mit dem Zug** — بالقطار.",
+      "finding": "Zug مذكر→mit dem Zug.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "transport-03",
+      "text": "**mit der Bahn** — بالقطار/المترو.",
+      "finding": "Bahn مؤنث→mit der Bahn؛ نوع القطار بحسب السياق.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "transport-04",
+      "text": "**mit dem Auto** — بالسيارة.",
+      "finding": "Auto محايد→mit dem Auto؛ ليس mit der.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "transport-05",
+      "text": "**mit dem Flugzeug** — بالطائرة.",
+      "finding": "Flugzeug محايد→mit dem Flugzeug؛ العبارة صحيحة مع fliegen.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "example-01",
+      "text": "**Ich fahre mit dem Bus nach Tunis.** — أذهب بالحافلة إلى مدينة تونس.",
+      "finding": "Ich fahre مع ich، nach Tunis إلى المدينة لا اسم البلد Tunesien؛ Bus لا يعني أن المتكلم سائقه.",
+      "sourceIds": [
+        "FAHREN",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "example-02",
+      "text": "**Wir fahren mit dem Zug nach Sousse.** — نذهب بالقطار إلى سوسة.",
+      "finding": "Wir fahren مع wir، القطار وسيلة وسوسة وجهة.",
+      "sourceIds": [
+        "FAHREN",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "example-03",
+      "text": "**Wie fährst du zur Arbeit?** — كيف تذهب إلى العمل؟",
+      "finding": "Wie fährst du zur Arbeit يسأل عن وسيلة الوصول هنا؛ fährst لا fahrt، و zur = zu der.",
+      "sourceIds": [
+        "FAHREN",
+        "PREP"
+      ]
+    },
+    {
+      "id": "verb-01",
+      "text": "| ich | fahre |",
+      "finding": "ich fahre؛ النهاية e.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "verb-02",
+      "text": "| du | fährst |",
+      "finding": "du fährst؛ تبدل a إلىä.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "verb-03",
+      "text": "| er/sie/es | fährt |",
+      "finding": "er/sie/es fährt؛ المفرد الثالث معä.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "verb-04",
+      "text": "| wir | fahren |",
+      "finding": "wir fahren؛ المصدر وصيغة الجمع هنا متشابهان.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "verb-05",
+      "text": "| ihr | fahrt |",
+      "finding": "ihr fahrt بلاä؛ لا تخلطها مع fährt.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "verb-06",
+      "text": "| sie/Sie | fahren |",
+      "finding": "sie/Sie fahren؛ جمع أو مخاطبة رسمية، لا sie المفردة.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "weather-01",
+      "text": "**Wie ist das Wetter heute?** — كيف الطقس اليوم؟",
+      "finding": "Wie ist das Wetter heute يسأل عن طقس اليوم.",
+      "sourceIds": []
+    },
+    {
+      "id": "weather-02",
+      "text": "**Es ist sonnig und warm.** — الجو مشمس ودافئ.",
+      "finding": "Es ist sonnig und warm يجمع صفتين متوافقتين، لا معنى واحدًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "weather-03",
+      "text": "**Regnet es?** — هل تمطر؟",
+      "finding": "Regnet es سؤال نعم/لا بالفعل أولًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "weather-04",
+      "text": "**Ja, es regnet. / Nein, es regnet nicht.**",
+      "finding": "Ja يؤكد المطر و Nein مع nicht ينفيه؛ لا استنتاج عن درجة الحرارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "weather-05",
+      "text": "**Wohin fährst du am Wochenende?** — إلى أين تذهب في عطلة الأسبوع؟",
+      "finding": "Wohin fährst du am Wochenende يسأل عن الوجهة، لا وقت المغادرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "weather-06",
+      "text": "**Ich fahre nach Sousse.**",
+      "finding": "Ich fahre nach Sousse جواب وجهة، لا عبارة مكان ثابت in Sousse.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "weather-07",
+      "text": "**Wann fährt der Zug?** — متى يغادر القطار؟",
+      "finding": "Wann fährt der Zug موعد الانطلاق هنا؛ الفعل fährt للمفرد.",
+      "sourceIds": [
+        "FAHREN"
+      ]
+    },
+    {
+      "id": "weather-08",
+      "text": "**Der Zug fährt um neun Uhr.**",
+      "finding": "Der Zug fährt um neun Uhr عند 9:00؛ مثال مستقل عن 9:10 في الحوار.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "**Tunis / Sousse / Hammamet** — مدينة تونس / سوسة / الحمامات؛ تونس البلد هي Tunesien.",
+      "finding": "أسماء المدن ليست أسماء دول؛ Tunis مدينة و Tunesien بلد.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-02",
+      "text": "**morgen / am Morgen** — غدًا / في الصباح؛ ليستا المعنى نفسه.",
+      "finding": "morgen غدًا و am Morgen صباحًا؛ قراءة كلمة Morgen الكبيرة بعد am لا تعطي غدًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-03",
+      "text": "**am Samstag / am Nachmittag / am Abend** — يوم السبت / بعد الظهر / مساءً.",
+      "finding": "am Samstag يوم محدد و am Nachmittag/am Abend فترتان؛ لا ساعات مفترضة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-04",
+      "text": "**eine Fahrkarte kaufen / am Bahnhof** — يشتري تذكرة / في محطة القطار؛ am = an dem، وهي هنا للمكان.",
+      "finding": "kauft تشتري و am Bahnhof موقع شراء التذكرة؛am=an dem هنا، لا وقت.",
+      "sourceIds": [
+        "PREP"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "**ihre Freundin besuchen** — يزور صديقتها؛ في النص صديقة Nour.",
+      "finding": "ihre Freundin صديقة Nour في سياق القراءة؛ لا صديقة الراوي.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-06",
+      "text": "**nach Hause / zu Hause** — إلى البيت / في البيت؛ اتجاه مقابل موقع.",
+      "finding": "nach Hause وجهة، zu Hause موقع؛ لا نستنتج عنوان البيت.",
+      "sourceIds": [
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "**reisen / er reist** — يسافر / هو يسافر؛ نستعمله في T02، وليس reist صيغة من fahren.",
+      "finding": "reisen فعل منتظم:er reist؛ ليس تكرارًا خاطئًا لـ fährt.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "**mitnehmen / wir nehmen … mit** — يأخذ معه / نأخذ معنا؛ فعل منفصل كما في A1.4، وmit الأخيرة جزء منه لا حرفًا يتبعه Dativ في هذه الجملة.",
+      "finding": "wir nehmen…mit صيغة فصل؛ mit الأخيرة بادئة الفعل لا حرف الجر في mit dem Auto.",
+      "sourceIds": [
+        "MITNEHMEN"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "**das Wasser / die Jacke** — الماء / السترة؛ Wasser und eine Jacke هما الشيئان المذكوران، لا نستنتج من السترة وحدها أن النص قال kalt.",
+      "finding": "الماء والسترة شيآن مذكوران؛ السترة لا تجعل kalt جوابًا عن الطقس الوارد.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "**Mit welchem Verkehrsmittel? / Gute Reise!** — بأي وسيلة نقل؟ / رحلة سعيدة!؛ احفظ السؤال والتمنّي كعبارتين، و**Wie ist das Wetter in Sousse?** يسأل عن الطقس في سوسة.",
+      "finding": "سؤال وسيلة النقل وعبارة التمني معنيان واضحان؛ نموذج طقس in Sousse يدعم P02.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Guten Tag. Eine Fahrkarte nach Sousse, bitte.",
+      "finding": "تحية ثم طلب تذكرة إلى سوسة؛ جملة الطلب المختصرة مقبولة في المقام، لا نحولها إلى جملة فعلية مصطنعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Einfach oder hin und zurück?",
+      "finding": "السؤال يطلب نوع التذكرة:ذهاب فقط أم ذهاب وإياب؛einfach ليست «سهل» هنا.",
+      "sourceIds": [
+        "EINFACH"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Hin und zurück, bitte. Wann fährt der Zug?",
+      "finding": "اختيار الذهاب والإياب ثم سؤال موعد القطار؛ قول واحد يحوي فعلين تواصليين.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Um neun Uhr zehn.",
+      "finding": "Um neun Uhr zehn يجيب 9:10، وليس 9:00.",
+      "sourceIds": [
+        "TIME"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Danke.",
+      "finding": "Danke شكر، لا سؤال إضافي.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Gute Reise!",
+      "finding": "Gute Reise تمنٍّ للمسافر، لا معلومة عن الموعد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Am Samstag fährt Nour mit dem Zug nach Sousse.",
+      "finding": "السبت: Nour إلى سوسة بالقطار؛ ثلاث معلومات صريحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie kauft eine Fahrkarte am Bahnhof.",
+      "finding": "تشتري التذكرة في المحطة؛ النص لا يحدد سعرها أو إن كانت إيابًا أيضًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Das Wetter ist warm und sonnig.",
+      "finding": "الطقس دافئ ومشمس؛ المطلوب الصفتان في جواب الفهم.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Nour besucht ihre Freundin.",
+      "finding": "تزور صديقتها؛ لا اسم للصديقة أو سبب مفروض للزيارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Am Abend fährt sie mit dem Bus nach Hause.",
+      "finding": "مساءً تعود إلى البيت بالحافلة؛ وسيلة العودة تختلف عن الذهاب، ولا ساعة مغادرة محددة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wohin fährt Nour am Samstag?",
+      "finding": "Nach Sousse؛ المطلوب وجهة لا زمان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie fährt sie nach Sousse?",
+      "finding": "Mit dem Zug؛ لا Bus الخاص بالعودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wie ist das Wetter?",
+      "finding": "Warm und sonnig؛ الصفتان المذكورتان في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wie fährt sie am Abend nach Hause?",
+      "finding": "Mit dem Bus؛ ظرف am Abend يحدد رحلة العودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Hallo!",
+      "finding": "Hallo تحية مستقلة؛ عُدت وحدة مراجعة لا جملة خبرية عن السفر.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Morgen fahren wir nach Hammamet.",
+      "finding": "غدًا إلى الحمامات؛ wir جمع، لا يحدد أسماء المسافرين أو عددهم.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Wir fahren mit dem Auto.",
+      "finding": "بالسيارة؛ لا نحدد من يقودها.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Am Morgen ist das Wetter sonnig.",
+      "finding": "صباحًا مشمس؛ ليس مرادفًا لـ warm.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "text": "Am Nachmittag ist es windig.",
+      "finding": "بعد الظهر كثير الرياح؛ لا نص يذكر عاصفة أو برودة.",
+      "sourceIds": [
+        "WIND"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Wir nehmen Wasser und eine Jacke mit.",
+      "finding": "يأخذون ماء وسترة؛ nehmen…mit منفصل، والعنصران مطلوبان.",
+      "sourceIds": [
+        "MITNEHMEN"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wohin fahren die Personen?",
+      "finding": "Nach Hammamet وجهة الرحلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Mit welchem Verkehrsmittel fahren sie?",
+      "finding": "Mit dem Auto وسيلة النقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wie ist das Wetter am Nachmittag?",
+      "finding": "Es ist windig بعد الظهر، لا sonnig الخاصة بالصباح.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was nehmen sie mit?",
+      "finding": "Wasser und eine Jacke؛ لا الاكتفاء بشيء واحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-07-T01",
+      "text": "1. der Zug · 2. das Auto · 3. der Bus · 4. das Flugzeug\n\nأ. الطائرة · ب. السيارة · ج. الحافلة · د. القطار",
+      "finding": "أربع مطابقات صحيحة؛ الأرقام والمفتاح ثابتة.",
+      "sourceIds": [],
+      "items": [
+        "Zug→د: القطار.",
+        "Auto→ب: السيارة.",
+        "Bus→ج: الحافلة.",
+        "Flugzeug→أ: الطائرة."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T02",
+      "text": "1. Ich fahre ______ Bus.\n2. Wir fahren ______ Bahn.\n3. Sie fährt ______ Auto.\n4. Er reist ______ Zug.",
+      "finding": "أربع عبارات Dativ مفرد صحيحة؛ شرح reist قبل التمرين يمنع فعلًا غير معروض.",
+      "sourceIds": [],
+      "items": [
+        "mit dem Bus.",
+        "mit der Bahn.",
+        "mit dem Auto.",
+        "mit dem Zug مع er reist."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T03",
+      "text": "1. **Wie ist das Wetter?** — Es ist ______. (مشمس)\n2. **Wohin fährst du?** — Ich fahre ______ Tunis.\n3. **Wann fährt der Zug?** — Er fährt ______ acht Uhr. (عند الثامنة تحديدًا، لا بعدها)\n4. **Wie ist das Wetter?** — Es ist ______. (كثير الرياح)",
+      "finding": "أضيف windig وقُيد وقت الثامنة حتى لا يحتمل nach بمعنى بعد.",
+      "sourceIds": [],
+      "items": [
+        "sonnig: مشمس.",
+        "nach Tunis: الوجهة.",
+        "um acht Uhr: عند الثامنة تحديدًا؛ nach يعني بعدها.",
+        "windig: كثير الرياح، أضيف لربط Q09 بتدريب فعلي."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T04",
+      "text": "1. ذهاب فقط: **einfach / hin und zurück**\n2. ذهاب وإياب: **einfach / hin und zurück**\n3. العبارة التي تعني «الجو بارد»: **Es ist kalt / Es regnet**\n4. طلب تذكرة إلى سوسة: **Eine Fahrkarte nach Sousse, bitte. / Es ist sonnig.**\n\n**تطبيق دور المسافر المستقل:**\n\nاكتب أربعة أقوال لدور المسافر في محطة: طلب تذكرة إلى مدينة مع Eine Fahrkarte nach …, bitte، وتحديد ذهاب فقط أو ذهاب وإياب، وسؤال عن موعد القطار، وسؤال عن الطقس في المدينة. اقرأ الأقوال الأربعة بصوت مرتفع؛ يمكنك أداء الدور منفردًا، ولا يلزم كتابة أجوبة الموظف أو تسجيل صوتك.",
+      "finding": "أضيف طلب تذكرة فعلي وتطبيق أربعة أقوال مرتبط بـ P02؛ لا تعارض مع أقوال الحوار الصوتي الأصلية.",
+      "sourceIds": [],
+      "items": [
+        "einfach: ذهاب فقط.",
+        "hin und zurück: ذهاب وإياب.",
+        "Es ist kalt: المعنى المطلوب لا شرط طقس متنافٍ.",
+        "Eine Fahrkarte nach Sousse, bitte: طلب التذكرة.",
+        "قول المسافر1: طلب تذكرة بوجهة مدينة.",
+        "قول المسافر2: تحديد نوع التذكرة.",
+        "قول المسافر3: سؤال وقت القطار.",
+        "قول المسافر4: سؤال الطقس في المدينة؛ يقرأ الأقوال الأربعة جهرًا."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T05",
+      "text": "ابدأ الجمل على الترتيب بـWir ثمDer Bus ثمEs، واضبط الحرف الكبير والنقطة؛ قد تصح ترتيبات أخرى خارج هذا القيد.\n\n1. mit dem Zug / Wir / nach Sousse / fahren\n2. um neun Uhr / fährt / Der Bus\n3. heute / sonnig / Es / ist",
+      "finding": "حُددت البدايات والترقيم؛ الترتيب القياسي في المفتاح، لا مصحح يرفض كل بديل نحوي.",
+      "sourceIds": [],
+      "items": [
+        "Wir fahren mit dem Zug nach Sousse.",
+        "Der Bus fährt um neun Uhr.",
+        "Es ist heute sonnig؛ وقد يصح Es ist sonnig heute بحسب السياق مع البداية نفسها، فالمفتاح نموذج لا الوحيد."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T06",
+      "text": "اكتب وسيلة النقل في كل جملة:\n\n1. Nour fährt am Samstag nach Sousse: ______.\n2. Am Abend fährt sie nach Hause: ______.",
+      "finding": "الذهاب قطار والعودة حافلة؛ السؤالان مسندان بالنص.",
+      "sourceIds": [],
+      "items": [
+        "mit dem Zug للذهاب.",
+        "mit dem Bus للعودة."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T07",
+      "text": "أكمل من النص بكلمة أو عبارة؛ الإجابات في المفتاح، لا في السؤال:\n\n1. Wir fahren morgen nach ______.\n2. Wir fahren mit dem ______.\n3. Am Nachmittag ist es ______.\n4. Wir nehmen ______ mit.",
+      "finding": "أُزيلت أجوبة كانت تظهر بدل تمرين، وأضيفت أربعة فراغات مع مطابقة المفتاح؛ لا حاجة لصوت إلزامي.",
+      "sourceIds": [],
+      "items": [
+        "Hammamet؛ الوجهة، وليست الإجابة مكتوبة في المطلوب.",
+        "Auto فقط؛ mit dem موجودة قبل الفراغ.",
+        "windig بعد الظهر.",
+        "Wasser und eine Jacke؛ الشيئان داخل فراغ واحد."
+      ]
+    },
+    {
+      "id": "DL-A1-07-T08",
+      "text": "اكتب أربع جمل كاملة عن رحلة خيالية: جملة للوجهة باسم مدينة مع nach، وجملة لوسيلة النقل مع mit dem أوmit der، وجملة لوقت الانطلاق مع um والساعة، وجملة عن الطقس. استعمل المضارع؛ هذه مهمة كتابة فقط، ولا يلزم كشف خطة حقيقية أو القراءة بصوت مرتفع.",
+      "finding": "مطابقة حرفية مع P01: أربع جمل لا بطاقة مع جملتين؛ التحقق ذاتي وبدون جهر.",
+      "sourceIds": [],
+      "items": [
+        "جملة وجهة مدينة مع nach.",
+        "جملة وسيلة نقل مع mit dem/der.",
+        "جملة موعد انطلاق مع um والساعة.",
+        "جملة طقس؛ الأربع كاملة وفي المضارع، خيالية وكتابية فقط."
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Ich fahre morgen nach Sousse.",
+      "finding": "وجهة Sousse و morgen لخطة غد.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Ich fahre mit dem Zug.",
+      "finding": "mit dem Zug صحيح؛ وسيلة نقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Der Zug fährt um neun Uhr.",
+      "finding": "um neun Uhr وقت الانطلاق؛ لم تذكره القراءة وهنا نموذج خيالي.",
+      "sourceIds": []
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Das Wetter ist sonnig und warm.",
+      "finding": "sonnig und warm وصف صحيح؛ أربع جمل دون مطالبة بجهر.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Guten Tag. Eine Fahrkarte nach Sousse, bitte.",
+      "finding": "التحية وطلب تذكرة إلى سوسة في قول واحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Hin und zurück, bitte.",
+      "finding": "تحديد الذهاب والإياب؛ Einfach, bitte بديل معروض.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Wann fährt der Zug?",
+      "finding": "سؤال موعد القطار، لا يكفي قول ساعة بلا سؤال.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Wie ist das Wetter in Sousse?",
+      "finding": "سؤال الطقس في المدينة؛ توسعة نصية لا جزء من التسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-07-Q01",
+      "text": "ما معنى mit dem Zug؟",
+      "finding": "mit dem Zug بالقطار؛ ربط T02 أدق من T01 الخاص بالاسم.",
+      "sourceIds": [],
+      "options": [
+        "بالقطار",
+        "بالحافلة",
+        "بالسيارة"
+      ],
+      "answer": "بالقطار",
+      "explanation": "mit dem Zug تعني «بالقطار».",
+      "sourceTaskIds": [
+        "DL-A1-07-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q02",
+      "text": "أكمل: Ich fahre mit ___ Bahn.",
+      "finding": "mit der Bahn للمؤنث المفرد؛ dem/das لا يطابقان العبارة.",
+      "sourceIds": [],
+      "options": [
+        "dem",
+        "der",
+        "das"
+      ],
+      "answer": "der",
+      "explanation": "Bahn مؤنث؛ بعد mit نستخدم der هنا.",
+      "sourceTaskIds": [
+        "DL-A1-07-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q03",
+      "text": "أكمل وجهة الرحلة: Wir fahren ___ Sousse.",
+      "finding": "nach Sousse للوجهة؛ am للمكان أو الزمان بحسب السياق و um لا يعطيان الوجهة المطلوبة.",
+      "sourceIds": [],
+      "options": [
+        "am",
+        "nach",
+        "um"
+      ],
+      "answer": "nach",
+      "explanation": "مع اسم المدينة بلا أداة في هذا المثال نستخدم nach: nach Sousse.",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q04",
+      "text": "أكمل بمعنى «تنطلق الحافلة عند التاسعة تحديدًا، لا بعدها»: Der Bus fährt ___ neun Uhr.",
+      "finding": "um وحدها تطابق «عند التاسعة»؛ nach صحيحة بمعنى بعد، لذلك قُيد السؤال وشرحنا الفرق.",
+      "sourceIds": [],
+      "options": [
+        "um",
+        "am",
+        "nach"
+      ],
+      "answer": "um",
+      "explanation": "um neun Uhr تعني عند التاسعة؛ nach neun Uhr صحيحة لغويًا لكنها تعني بعدها، فلا تطابق المعنى المطلوب.",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q05",
+      "text": "ما الرد المناسب على Wie ist das Wetter؟",
+      "finding": "Es ist heute sonnig وصف طقس؛ البديلان وجهة وطلب تذكرة. الربط T03.1 مباشر.",
+      "sourceIds": [],
+      "options": [
+        "Es ist heute sonnig.",
+        "Ich fahre nach Tunis.",
+        "Eine Fahrkarte, bitte."
+      ],
+      "answer": "Es ist heute sonnig.",
+      "explanation": "Es ist heute sonnig يصف حالة الطقس.",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q06",
+      "text": "أي عبارة تطلب تذكرة إلى سوسة؟",
+      "finding": "Eine Fahrkarte… طلب تذكرة؛ Wetter ليست تذكرة و Ich bin die Fahrkarte ليست طلبًا. أضيف T04.4 لتدريبه.",
+      "sourceIds": [],
+      "options": [
+        "Eine Fahrkarte nach Sousse, bitte.",
+        "Ein Wetter nach Sousse, bitte.",
+        "Ich bin die Fahrkarte."
+      ],
+      "answer": "Eine Fahrkarte nach Sousse, bitte.",
+      "explanation": "Fahrkarte تعني تذكرة؛ العبارة تطلبها بأدب.",
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q07",
+      "text": "ماذا تعني hin und zurück في التذكرة؟",
+      "finding": "hin und zurück ذهاب وإياب؛ ليس ذهابًا فقط أو تغيير قطار.",
+      "sourceIds": [],
+      "options": [
+        "ذهاب فقط",
+        "ذهاب وإياب",
+        "تغيير القطار"
+      ],
+      "answer": "ذهاب وإياب",
+      "explanation": "hin und zurück تعني «ذهابًا وإيابًا».",
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q08",
+      "text": "أكمل: Wir fahren mit ___ Auto.",
+      "finding": "Auto محايد مع Dativ→dem؛ der/die ليسا الصيغة هنا.",
+      "sourceIds": [],
+      "options": [
+        "der",
+        "dem",
+        "die"
+      ],
+      "answer": "dem",
+      "explanation": "Auto محايد؛ بعد mit نستخدم dem.",
+      "sourceTaskIds": [
+        "DL-A1-07-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q09",
+      "text": "ما معنى windig؟",
+      "finding": "كثير الرياح بدل «عاصف» المطلقة؛ فهرس 1 محفوظ مع تحسين الترجمة، وأضيف تدريب T03.4.",
+      "sourceIds": [],
+      "options": [
+        "مشمس",
+        "كثير الرياح",
+        "حار"
+      ],
+      "answer": "كثير الرياح",
+      "explanation": "windig تصف جوًا فيه رياح؛ لا تعني بالضرورة عاصفة شديدة.",
+      "sourceTaskIds": [
+        "DL-A1-07-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-07-Q10",
+      "text": "أي جملة تعني «الجو بارد»؟",
+      "finding": "سؤال ترجمة kalt لا اختبار استماع؛ نُقل T07→T04.3. قد تجتمع الشمس والبرد والرياح، لذا طلب المعنى صراحةً.",
+      "sourceIds": [],
+      "options": [
+        "Es ist kalt.",
+        "Es ist sonnig.",
+        "Es ist windig."
+      ],
+      "answer": "Es ist kalt.",
+      "explanation": "Es ist kalt تعني الجو بارد؛ sonnig مشمس وwindig كثير الرياح. قد تجتمع الصفات، لكن المطلوب هنا معنى بارد تحديدًا.",
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-07-P01",
+      "text": "اكتب أربع جمل كاملة عن رحلة خيالية: جملة للوجهة باسم مدينة مع nach، وجملة لوسيلة النقل مع mit dem أوmit der، وجملة لوقت الانطلاق مع um والساعة، وجملة عن الطقس. استعمل المضارع؛ هذه مهمة كتابة فقط، ولا يلزم كشف خطة حقيقية أو القراءة بصوت مرتفع.",
+      "finding": "P01 مكتوب فقط و min90؛ المصدر والمعايير والنموذج متطابقون، لا شرط جهر أو خطة حقيقية.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل: وجهة مدينة، وسيلة نقل، وقت انطلاق، وطقس.",
+        "meaningClarity": "خطة خيالية مفهومة ومتسقة؛ لا حاجة إلى بيانات شخصية أو جمل إضافية.",
+        "targetSkill": "مضارع، nach مع المدينة، mit dem/der مع الوسيلة، um مع الساعة، ووصف طقس صحيح."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-07-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-07-P02",
+      "text": "اكتب أربعة أقوال لدور المسافر في محطة: طلب تذكرة إلى مدينة مع Eine Fahrkarte nach …, bitte، وتحديد ذهاب فقط أو ذهاب وإياب، وسؤال عن موعد القطار، وسؤال عن الطقس في المدينة. اقرأ الأقوال الأربعة بصوت مرتفع؛ يمكنك أداء الدور منفردًا، ولا يلزم كتابة أجوبة الموظف أو تسجيل صوتك.",
+      "finding": "P02 أربعة أقوال للمسافر، كتابة وجهر و min90؛ T04 بدل T08. لا شريك أو أجوبة موظف مطلوبة، ولا استماع مفروض.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربعة أقوال: طلب التذكرة بوجهة، تحديد نوعها، سؤال الوقت، وسؤال الطقس؛ تُقرأ كلها بصوت مرتفع.",
+        "meaningClarity": "وجهة ونوع تذكرة واضحان وسؤالان مفهومان؛ لا تُشترط أجوبة موظف أو شريك.",
+        "targetSkill": "Eine Fahrkarte nach …, bitte؛ Einfach أوhin und zurück؛ Wann fährt der Zug? وWie ist das Wetter …? في سياق صحيح."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-07-T04"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Wie ist das Wetter?** → كيف الطقس؟",
+      "finding": "سؤال الطقس عام، ويمكن تقييده بمكان أو زمان.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Es ist sonnig.** → الجو مشمس.",
+      "finding": "Es ist sonnig مشمس؛ لا يدل على حرارة مرتفعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich fahre mit dem Zug.** → أذهب بالقطار.",
+      "finding": "Ich fahre mit dem Zug انتقال بالقطار؛ لا يعني قيادته.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Eine Fahrkarte nach Sousse, bitte.** → تذكرة إلى سوسة من فضلك.",
+      "finding": "طلب تذكرة إلى سوسة بأدب؛ مطابق هدف التدريب.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-07-AUD-DLG-01",
+      "text": "حوار: شراء تذكرة إلى Sousse",
+      "finding": "الكلمات والأصوات والمسارات والحالة ready/offer محفوظة؛ 6 مقطع/مقاطع، دون استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Reisende Person",
+          "text": "Guten Tag. Eine Fahrkarte nach Sousse, bitte.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Einfach oder hin und zurück?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Reisende Person",
+          "text": "Hin und zurück, bitte. Wann fährt der Zug?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Um neun Uhr zehn.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Reisende Person",
+          "text": "Danke.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-07-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Mitarbeiter",
+          "text": "Gute Reise!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-07-AUD-READ-01",
+      "text": "قراءة: رحلة Nour إلى Sousse",
+      "finding": "الكلمات والأصوات والمسارات والحالة ready/offer محفوظة؛ 1 مقطع/مقاطع، دون استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-07-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Am Samstag fährt Nour mit dem Zug nach Sousse. Sie kauft eine Fahrkarte am Bahnhof. Das Wetter ist warm und sonnig. Nour besucht ihre Freundin. Am Abend fährt sie mit dem Bus nach Hause.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-07-AUD-LST-01",
+      "text": "استماع: رحلة إلى Hammamet والطقس",
+      "finding": "الكلمات والأصوات والمسارات والحالة ready/offer محفوظة؛ 1 مقطع/مقاطع، دون استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-07-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Hallo! Morgen fahren wir nach Hammamet. Wir fahren mit dem Auto. Am Morgen ist das Wetter sonnig. Am Nachmittag ist es windig. Wir nehmen Wasser und eine Jacke mit.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "5377df3f9c224081c37d29f35d20d961cb49e6bd",
+    "unchangedOtherLessons": 52,
+    "unchangedGate": true,
+    "unchangedGlobalAudioAssets": 217,
+    "unchangedTrackedMp3Blobs": 474,
+    "unchangedDialogueUtterances": 6,
+    "unchangedFiles": [
+      "app.js",
+      "styles.css",
+      "package.json",
+      "package-lock.json",
+      "data/audio-playlists.json",
+      "data/audio-asset-register.csv",
+      "tools/build_course.py"
+    ],
+    "unchangedOutsideLessonCatalogRows": true,
+    "changedLessonCatalogRows": 20,
+    "verifyToolChanged": "Dialogue heading false-positive fixed; explanation is not a dialogue section."
+  },
+  "testResults": {
+    "build": "PASS",
+    "bundleBytes": 1802485,
+    "verify": "PASS",
+    "cumulativeReviewGuards": 13,
+    "nodeSuites": [
+      "progression",
+      "session_persistence",
+      "daily_plan",
+      "study_time",
+      "service_worker"
+    ],
+    "browserSuites": [
+      "forms-keyboard",
+      "accessibility-audit",
+      "narrow-layout",
+      "accessibility-update",
+      "browser"
+    ],
+    "allListedSuites": "PASS; rerun after dialogue paragraph separation",
+    "chromium": "143.0.7499.0",
+    "playwright": "1.58.2",
+    "axe": "4.11.0",
+    "axeStates": 65,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteRuleOccurrences": 39,
+    "axeIncompleteNodeOccurrences": 100,
+    "narrowStates": 126,
+    "serviceWorkerFixture": "v42 to v58 with current data; A1.7 legacy rejection separately in VM",
+    "baselineGuardFailure": "T07 has answers instead of four actual blanks",
+    "syntaxAndDiff": "PASS"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "baselineCommit": "5377df3f9c224081c37d29f35d20d961cb49e6bd",
+    "implementationCommit": "8020497c6dd9d9ccd27c44f3ee38921c13fc0c25",
+    "remoteImplementationHeadVerified": true,
+    "cleanAfterImplementationPush": true,
+    "prNumber": 1,
+    "prState": "OPEN",
+    "prHeadAtCheck": "8020497c6dd9d9ccd27c44f3ee38921c13fc0c25",
+    "mergedAt": null,
+    "combinedStatusAtCheck": "pending",
+    "contextsAtCheck": [
+      {
+        "context": "Vercel",
+        "state": "pending"
+      }
+    ],
+    "githubDeploymentsForImplementation": [],
+    "actionsRunsAtCheck": [],
+    "deploymentConfirmed": false,
+    "receipt": "Separate documentation commit after verified implementation push; final receipt hash is in git log."
+  }
+}

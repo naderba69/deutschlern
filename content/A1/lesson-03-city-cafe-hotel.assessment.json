@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-03-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR9: مراجعة نصية بالمراجع موثقة في data/reviews/a1-03-review.json؛ ليست شهادة CEFR أو اعتماد نطق.",
+      "P01 وT08 يطلبان التحية والمشروب والطعام وسؤال السعر والشكر؛ أربع وحدات كلامية بأداء فردي. P02 وT09 مهمة كتابية لمسار معطى وثلاث تعليمات وجملة مكان.",
+      "صُححت روابط Q06/Q07/Q08/Q09 إلى T07/T09/T01/T01، مع حفظ مفاتيح الاختيار وعتبة80%.",
+      "ثلاثة أصول صوتية/12مقطعًا موجودة ومحفوظة دون تغيير أو استماع أو اعتماد جديد. القراءة والاستماع موقفان مستقلان، والتقييم لا يتطلب الصوت."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-03-Q01",
+      "sourceTaskIds": [
+        "DL-A1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات المدينة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Bahnhof؟",
+      "options": [
+        "الفندق",
+        "محطة القطار",
+        "المتحف"
+      ],
+      "answerIndex": 1,
+      "explanation": "der Bahnhof تعني «محطة القطار»."
+    },
+    {
+      "id": "DL-A1-03-Q02",
+      "sourceTaskIds": [
+        "DL-A1-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "الاتجاهات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى geradeaus؟",
+      "options": [
+        "إلى اليسار",
+        "إلى اليمين",
+        "إلى الأمام مباشرة"
+      ],
+      "answerIndex": 2,
+      "explanation": "geradeaus تعني «إلى الأمام مباشرة»."
+    },
+    {
+      "id": "DL-A1-03-Q03",
+      "sourceTaskIds": [
+        "DL-A1-03-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "تصريف möchte",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ einen Tee.",
+      "options": [
+        "möchtest",
+        "möchte",
+        "möchten"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع ich نستخدم möchte."
+    },
+    {
+      "id": "DL-A1-03-Q04",
+      "sourceTaskIds": [
+        "DL-A1-03-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "تصريف möchte",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ ein Zimmer.",
+      "options": [
+        "möchte",
+        "möchtest",
+        "möchten"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نستخدم möchtest. das Zimmer تعني الغرفة؛ دُرب الطلب في التمرين3."
+    },
+    {
+      "id": "DL-A1-03-Q05",
+      "sourceTaskIds": [
+        "DL-A1-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "أداة الطلب",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل طلب القهوة: Ich möchte ___ Kaffee.",
+      "options": [
+        "einen",
+        "eine",
+        "ein"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Kaffee مذكر؛ في هذا الطلب يأتي المفعول به في Akkusativ: einen Kaffee. لا يعني ذلك أن كل اسم بعد أي طلب يأخذ einen."
+    },
+    {
+      "id": "DL-A1-03-Q06",
+      "sourceTaskIds": [
+        "DL-A1-03-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "التفاعل في المدينة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يطلب معرفة الطريق إلى محطة القطار؟",
+      "options": [
+        "Wie komme ich zum Bahnhof?",
+        "Wie viel kostet das?",
+        "Was möchten Sie essen?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wie komme ich zum Bahnhof? يسأل عن الطريق."
+    },
+    {
+      "id": "DL-A1-03-Q07",
+      "sourceTaskIds": [
+        "DL-A1-03-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "فهم التعليمات",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعطي تعليمات مهذبة للسير إلى الأمام؟",
+      "options": [
+        "Gehen Sie bitte geradeaus.",
+        "Ich wohne neben dem Café.",
+        "Ich möchte einen Tee."
+      ],
+      "answerIndex": 0,
+      "explanation": "Gehen Sie bitte geradeaus طلب مهذب وواضح للاتجاه."
+    },
+    {
+      "id": "DL-A1-03-Q08",
+      "sourceTaskIds": [
+        "DL-A1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات المدينة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى das Museum؟",
+      "options": [
+        "الصيدلية",
+        "المتحف",
+        "السوق"
+      ],
+      "answerIndex": 1,
+      "explanation": "das Museum تعني «المتحف»."
+    },
+    {
+      "id": "DL-A1-03-Q09",
+      "sourceTaskIds": [
+        "DL-A1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات المدينة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى die Apotheke؟",
+      "options": [
+        "الصيدلية",
+        "محطة الحافلة",
+        "الساحة"
+      ],
+      "answerIndex": 0,
+      "explanation": "die Apotheke تعني «الصيدلية»."
+    },
+    {
+      "id": "DL-A1-03-Q10",
+      "sourceTaskIds": [
+        "DL-A1-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "skillTags": [
+        "الطلب المهذب",
+        "اختيار محدد"
+      ],
+      "prompt": "أي صيغة طلب مهذبة في المقهى؟",
+      "options": [
+        "Ich möchte bitte einen Tee.",
+        "Ich bin einen Tee.",
+        "Ich möchte du Tee."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ich möchte einen Tee صيغة طلب مناسبة؛ ويمكن إضافة bitte للتهذيب."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-03-P01",
+      "sourceTaskIds": [
+        "DL-A1-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أقوال الزبون في أربع وحدات قصيرة: التحية، وطلب مشروب وطعام بصيغة Ich möchte … bitte، والسؤال عن السعر بـWas kostet …?، والشكر. اختر Tee مع Suppe أو ein Stück Kuchen من أمثلة الدرس. اقرأ الأقوال الأربعة بصوت مرتفع بنفسك؛ لا يلزم شريك أو كتابة رد العامل أو اختراع سعر أو تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "كتبت التحية وطلب مشروب وطعام وسؤال السعر والشكر، وقرأت الأقوال الأربعة بصوت مرتفع.",
+        "meaningClarity": "المشروب والطعام المطلوبان واضحان، وسؤال السعر يعود على الطلب.",
+        "targetSkill": "أستعمل möchte مع ich وbitte، وأختار الأداة المناسبة مثل einen Tee/eine Suppe/ein Stück Kuchen وأصوغ سؤال السعر."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 70,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-03-P02",
+      "sourceTaskIds": [
+        "DL-A1-03-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-03-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing"
+      ],
+      "prompt": "استخدم المسار الخيالي المكتوب في تمرين9: تبدأ من Bahnhof باتجاه Apotheke أمامك عند التقاطع؛ انعطف هناك يمينًا، ثم تابع مباشرة حتى Café، وMuseum بجانب Café. اكتب بالألمانية ثلاث تعليمات بصيغة Sie تحافظ على الترتيب ونقطة الانعطاف والوجهة، ثم أضف جملة مكان تستعمل neben. هذه مهمة كتابة من مسار معطى؛ الرسم اختياري ولا يلزم الكلام أو رفع صورة.",
+      "criteria": {
+        "taskCompletion": "كتبت ثلاث تعليمات من Bahnhof إلى Café عبر Apotheke ثم جملة مكان تربط Café وMuseum باستخدام neben.",
+        "meaningClarity": "أحافظ على السير مباشرة نحو الصيدلية ثم الانعطاف يمينًا عندها ثم المتابعة إلى المقهى، ولا أخلط المسار بنصّي الدرس الآخرين.",
+        "targetSkill": "أستخدم Gehen Sie مع geradeaus/rechts وصيغًا مثل bis zur Apotheke وbis zum Café، وأصف المكان بـneben dem Museum."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

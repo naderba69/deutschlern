@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-10-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-10-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR16: ضبط نطاقsollen والضمائر وأسئلة القراءة، ومطابقة الزيارة المنطوقة والملاحظة الكتابية مع تمرينيهما.",
+      "الطول والإقرار لا يصححان اللغة أو النطق، ولا تثبت قراءة التفريغ استماعًا مستقلًا؛ لا تسجيل متعلم مطلوب.",
+      "تسجيلات الدرس موجودة؛ لم تُعد توليدها أو اعتمادها. أمثلة الصحة لغوية خيالية، لا تشخيصًا أو وصفة للقارئ."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-10-Q01",
+      "sourceTaskIds": [
+        "DL-A1-10-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "مفردات الهوايات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى Rad fahren؟",
+      "options": [
+        "يركب الدراجة",
+        "يلعب كرة القدم",
+        "يتمشى"
+      ],
+      "answerIndex": 0,
+      "explanation": "Rad fahren تعني «يركب الدراجة»."
+    },
+    {
+      "id": "DL-A1-10-Q02",
+      "sourceTaskIds": [
+        "DL-A1-10-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "مفردات الصحة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى Kopfschmerzen؟",
+      "options": [
+        "ألم في الحلق",
+        "الصداع",
+        "السعال"
+      ],
+      "answerIndex": 1,
+      "explanation": "Kopfschmerzen تعني «الصداع»."
+    },
+    {
+      "id": "DL-A1-10-Q03",
+      "sourceTaskIds": [
+        "DL-A1-10-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "تصريف sollen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ heute zu Hause bleiben.",
+      "options": [
+        "soll",
+        "sollst",
+        "sollen"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نستخدم sollst."
+    },
+    {
+      "id": "DL-A1-10-Q04",
+      "sourceTaskIds": [
+        "DL-A1-10-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du sollst viel Wasser ___.",
+      "options": [
+        "trinkst",
+        "trinken",
+        "getrunken"
+      ],
+      "answerIndex": 1,
+      "explanation": "في النمط البسيط المدروس يأتي المصدر الكامل trinken بعدsollen، لاtrinkst المصرف ولاgetrunken اسم المفعول."
+    },
+    {
+      "id": "DL-A1-10-Q05",
+      "sourceTaskIds": [
+        "DL-A1-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "عبارات الطبيب",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل مباشرةً عن المشكلة الصحية، لا عنوان السكن أو تفضيل الطعام؟",
+      "options": [
+        "Was fehlt Ihnen?",
+        "Wo wohnen Sie?",
+        "Was essen Sie gern?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Was fehlt Ihnen? سؤال مهذب عن المشكلة الصحية."
+    },
+    {
+      "id": "DL-A1-10-Q06",
+      "sourceTaskIds": [
+        "DL-A1-10-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، ماذا لدى المريضة؟",
+      "options": [
+        "تعب وصداع",
+        "حمّى فقط",
+        "ألم في الظهر فقط"
+      ],
+      "answerIndex": 0,
+      "explanation": "النص نفسه يقول: Heute ist sie müde und hat Kopfschmerzen؛ لذلك الجواب تعب وصداع."
+    },
+    {
+      "id": "DL-A1-10-Q07",
+      "sourceTaskIds": [
+        "DL-A1-10-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، هل لديها حمّى؟",
+      "options": [
+        "نعم، لديها حمّى.",
+        "لا، ليس لديها حمّى.",
+        "النص لا يذكر صحتها."
+      ],
+      "answerIndex": 1,
+      "explanation": "تسأل الطبيبة Haben Sie Fieber? وتجيبMona: Nein؛ هذا دليل الجواب في النص الخيالي، لا تشخيص للقارئ."
+    },
+    {
+      "id": "DL-A1-10-Q08",
+      "sourceTaskIds": [
+        "DL-A1-10-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "النصيحة بـsollen",
+        "اختيار محدد"
+      ],
+      "prompt": "نخبر عن Mona (هي)، لا نخاطبها بصيغة الاحترام: أي جملة تنقل التوجيه بالنمط الخبري الأساسي والمصدر في النهاية؟",
+      "options": [
+        "Sie soll zu Hause bleiben.",
+        "Sie zu Hause soll bleiben.",
+        "Sie soll bleibt zu Hause."
+      ],
+      "answerIndex": 0,
+      "explanation": "Sie هنا «هي» وتعود إلىMona، لذاsoll؛ الحرف الكبير بسبب بداية الجملة. bleiben مصدر في النهاية. خطاب الاحترام يكونSie sollen."
+    },
+    {
+      "id": "DL-A1-10-Q09",
+      "sourceTaskIds": [
+        "DL-A1-10-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "مفردات الصحة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى Husten؟",
+      "options": [
+        "السعال",
+        "الحمّى",
+        "ألم البطن"
+      ],
+      "answerIndex": 0,
+      "explanation": "Husten تعني «السعال»."
+    },
+    {
+      "id": "DL-A1-10-Q10",
+      "sourceTaskIds": [
+        "DL-A1-10-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "skillTags": [
+        "تصريف sollen",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ am Abend spazieren gehen.",
+      "options": [
+        "sollen",
+        "sollst",
+        "soll"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع wir نستخدم sollen، ثم يأتي spazieren gehen في النهاية."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-10-P01",
+      "sourceTaskIds": [
+        "DL-A1-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ستة أدوار متناوبة في زيارة خيالية للعيادة: الطبيبة تسأل Was fehlt Ihnen?؛ المريض يذكر عرضًا من مفردات الدرس؛ الطبيبة تسأل Haben Sie Fieber?؛ المريض يجيب Ja أو Nein؛ الطبيبة تقول Sie sollen heute zu Hause bleiben.؛ المريض يعيد التوجيه بـ Ich soll مع بقية الجملة. اقرأ الأدوار الستة بصوت مرتفع ويمكنك أداء الدورين منفردًا. لا تضف تشخيصًا أو دواءً، ولا يلزم شريك أو تسجيل صوت أو معلومات صحية حقيقية.",
+      "criteria": {
+        "taskCompletion": "ستة أدوار كاملة: سؤال مشكلة، عرض، سؤال حمى، جواب، توجيه البقاء، وإعادته؛ قرأتها كلها جهرًا.",
+        "meaningClarity": "موقف خيالي مفهوم؛ الجواب يطابق سؤال الحمى، وإعادة التوجيه تحافظ على معناه دون تشخيص.",
+        "targetSkill": "Ich habe لعرض، و Sie sollen في خطاب الطبيبة ثم Ich soll في الرد مع bleiben مصدرًا في النهاية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-10-P02",
+      "sourceTaskIds": [
+        "DL-A1-10-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-10-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب ثلاث جمل في موقف خيالي بضمير Ich: الأولى عن هواية تحبها مع gern، والثانية عن عرض باستعمال Ich habe Kopfschmerzen أو Halsschmerzen أو Bauchschmerzen، والثالثة تنقل توجيهًا سمعتَه من الأم باستعمال Meine Mutter sagt: „Du sollst heute zu Hause bleiben.“. هذه كتابة فقط؛ لا قراءة جهرية أو تسجيل مطلوب، ولا تعميم للتوجيه على صحة القارئ أو ذكر بيانات حقيقية.",
+      "criteria": {
+        "taskCompletion": "ثلاث جمل مكتوبة: هواية مع gern، عرض مع Ich habe، وتوجيه معطى منقول عن الأم؛ لا جهر مطلوب.",
+        "meaningClarity": "الراوي هو صاحب الهواية والعرض، والأم تخاطبه بـ Du؛ لا نصيحة علاجية للقارئ.",
+        "targetSkill": "فعل هواية مصرف مع Ich، واسم ألم مناسب، و Du sollst مع المصدر bleiben في نهاية القول المنقول."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 80,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

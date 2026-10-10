@@ -1,0 +1,1599 @@
+{
+  "reviewVersion": "cr52-b2-10-v1",
+  "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+  "lessonTitle": "B2.10 — الأمنيات والاحتمالات والتقنية: Konjunktiv II للماضي والفرضيات",
+  "assessmentVersion": "b2-10-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 91,
+  "exerciseSubItemCount": 41,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-10-wishes-probabilities-technology-konjunktiv2-past.md": "0184f92fdab0d5fc1bf6e7476cdfba3e7f7ef81b04a13b84fe08d182e5edfd89",
+    "content/B2/lesson-10-wishes-probabilities-technology-konjunktiv2-past.assessment.json": "cc0340cc59cdc01a352c13d0ddf08502c35bc8374d1f78cf75f9861471d95ac9"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-10-AUD-PHR-01": "0ed47028907e2f4d35b1c4639cf49bb05e4d6f04a0c1f5d0cdc073ecab3711a5",
+    "DL-B2-10-AUD-MODEL-01": "65f6759dce29982ebb47231b7680fcc07c15b544b33dadc1fac0e3b34ec35295",
+    "DL-B2-10-AUD-DLG-01": "6c9d6160b2c77e559ec16db2e28dbcefdbecb3e14a4efd2efc0795c70c74e792",
+    "DL-B2-10-AUD-READ-01": "1fee5834156bc0a141a61f61757d97da2590af300146ffd8578129e768d76548",
+    "DL-B2-10-AUD-LST-01": "9b49aa47d30253cfe9da7ad46cfdbeeb41b01b9cc0f1a3f542e2a5501d809832"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-subjunctive",
+      "title": "Lingolia English — Konjunktiv ( the Subjunctive Mood in German Grammar )",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/subjunctive",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Konjunktiv II expresses unreal conditions, wishes (Ich wünschte, ...), suggestions, and theories/guesses; present Konjunktiv II uses wäre, hätte, modal umlaut forms (könnte, müsste, dürfte, sollte, wollte), or würde + infinitive; past Konjunktiv II uses hätte/wäre + Partizip II, and with modal verbs uses hätte + main verb infinitive + modal verb infinitive (double infinitive / Ersatzinfinitiv)."
+    },
+    {
+      "id": "lingolia-en-conditional-clauses",
+      "title": "Lingolia English — Conditional Clauses (Konditionalsätze) in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/conditional-clauses",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Unreal conditionals in the present use wenn + Konjunktiv II + Konjunktiv II; unreal conditionals in the past use wenn + past Konjunktiv II (Partizip II + hätte/wäre at the end of the wenn-clause) + past Konjunktiv II (conjugated hätte/wäre in V1 of the main clause when the wenn-clause precedes); omitting wenn moves the finite verb to position 1 (Hätte das Team den Fehler früher entdeckt, ...)."
+    },
+    {
+      "id": "lingolia-en-passive",
+      "title": "Lingolia English — Passive Voice in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Processual passive (Vorgangspassiv) in past Konjunktiv II is formed with wäre + Partizip II + worden (without ge-): wäre ... übertragen worden in main clauses and Partizip II + worden + wäre at the end of subordinate wenn-clauses (Wenn die Schnittstelle geprüft worden wäre, ...)."
+    },
+    {
+      "id": "duden-update",
+      "title": "Duden — Update",
+      "url": "https://www.duden.de/rechtschreibung/Update",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Update; Genitiv des Updates, Plural die Updates; neuter noun for updated software version."
+    },
+    {
+      "id": "duden-schnittstelle",
+      "title": "Duden — Schnittstelle",
+      "url": "https://www.duden.de/rechtschreibung/Schnittstelle",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Schnittstelle; Genitiv der Schnittstelle, Plural die Schnittstellen; interface between hardware/software units."
+    },
+    {
+      "id": "duden-einstellung",
+      "title": "Duden — Einstellung",
+      "url": "https://www.duden.de/rechtschreibung/Einstellung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Einstellung; Genitiv der Einstellung, Plural die Einstellungen; configuration/setting or attitude."
+    },
+    {
+      "id": "duden-zugriff",
+      "title": "Duden — Zugriff",
+      "url": "https://www.duden.de/rechtschreibung/Zugriff",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Zugriff; Genitiv des Zugriff[e]s, Plural die Zugriffe; access to data/systems, typically with auf + Akkusativ (Zugriff auf alle Daten)."
+    },
+    {
+      "id": "duden-stoerung",
+      "title": "Duden — Störung",
+      "url": "https://www.duden.de/rechtschreibung/Stoerung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Störung; Genitiv der Störung, Plural die Störungen; technical malfunction or disruption (eine technische Störung tritt auf / beheben)."
+    },
+    {
+      "id": "duden-ausfallzeit",
+      "title": "Duden — Ausfallzeit",
+      "url": "https://www.duden.de/rechtschreibung/Ausfallzeit",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Ausfallzeit; Genitiv der Ausfallzeit, Plural die Ausfallzeiten; downtime during which a system is unavailable (meist im Plural)."
+    },
+    {
+      "id": "duden-funktion",
+      "title": "Duden — Funktion",
+      "url": "https://www.duden.de/rechtschreibung/Funktion",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Funktion; Genitiv der Funktion, Plural die Funktionen; feature/task performed by a device or software program."
+    },
+    {
+      "id": "duden-voraussetzung",
+      "title": "Duden — Voraussetzung",
+      "url": "https://www.duden.de/rechtschreibung/Voraussetzung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Voraussetzung; Genitiv der Voraussetzung, Plural die Voraussetzungen; prerequisite/precondition (Voraussetzung für etwas; unter der Voraussetzung, dass ...)."
+    },
+    {
+      "id": "duden-kompatibel",
+      "title": "Duden — kompatibel",
+      "url": "https://www.duden.de/rechtschreibung/kompatibel",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adjective kompatibel; compatible/combinable in hardware and software systems (mit + Dativ)."
+    },
+    {
+      "id": "duden-wahrscheinlich-adj",
+      "title": "Duden — wahrscheinlich (Adjektiv)",
+      "url": "https://www.duden.de/rechtschreibung/wahrscheinlich_voraussichtlich_denkbar",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adjective wahrscheinlich; probable/likely (es ist wahrscheinlich, dass ...)."
+    },
+    {
+      "id": "duden-wahrscheinlich-adv",
+      "title": "Duden — wahrscheinlich (Adverb)",
+      "url": "https://www.duden.de/rechtschreibung/wahrscheinlich_vermutlich_mutmaszlich",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adverb wahrscheinlich; probably / with high likelihood."
+    },
+    {
+      "id": "duden-vermutlich",
+      "title": "Duden — vermutlich (Adverb)",
+      "url": "https://www.duden.de/rechtschreibung/vermutlich_wahrscheinlich",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adverb vermutlich; presumably / as is to be supposed."
+    },
+    {
+      "id": "duden-moeglicherweise",
+      "title": "Duden — möglicherweise",
+      "url": "https://www.duden.de/rechtschreibung/moeglicherweise",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adverb möglicherweise; possibly / under certain circumstances."
+    },
+    {
+      "id": "duden-unwahrscheinlich",
+      "title": "Duden — unwahrscheinlich",
+      "url": "https://www.duden.de/rechtschreibung/unwahrscheinlich",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adjective unwahrscheinlich; unlikely / improbable (es ist unwahrscheinlich, dass ...)."
+    },
+    {
+      "id": "duden-auftreten",
+      "title": "Duden — auftreten",
+      "url": "https://www.duden.de/rechtschreibung/auftreten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong separable verb auftreten (tritt auf, trat auf, ist aufgetreten); takes auxiliary sein in the sense 'occur/arise suddenly' (Probleme/Störungen traten auf -> wäre aufgetreten)."
+    },
+    {
+      "id": "duden-ueberpruefen",
+      "title": "Duden — überprüfen",
+      "url": "https://www.duden.de/rechtschreibung/ueberpruefen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb überprüfen (überprüft, überprüfte, hat überprüft, without ge-); check/verify."
+    },
+    {
+      "id": "duden-zuruecksetzen",
+      "title": "Duden — zurücksetzen",
+      "url": "https://www.duden.de/rechtschreibung/zuruecksetzen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak separable verb zurücksetzen (setzt zurück, setzte zurück, hat zurückgesetzt); in computing (EDV), reset to initial state/default value."
+    },
+    {
+      "id": "duden-wuenschen",
+      "title": "Duden — wünschen",
+      "url": "https://www.duden.de/rechtschreibung/wuenschen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb wünschen (wünscht, wünschte, hat gewünscht); reflexive sich (Dat.) etwas wünschen or Konjunktiv II ich wünschte, ... for unreal wishes."
+    },
+    {
+      "id": "duden-speichern",
+      "title": "Duden — speichern",
+      "url": "https://www.duden.de/rechtschreibung/speichern",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb speichern (speichert, speicherte, hat gespeichert); store/save data electronically."
+    },
+    {
+      "id": "duden-sichern",
+      "title": "Duden — sichern",
+      "url": "https://www.duden.de/rechtschreibung/sichern",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb sichern (sichert, sicherte, hat gesichert); in computing, back up / save permanently (ein Dokument, Daten sichern)."
+    },
+    {
+      "id": "duden-verschieben",
+      "title": "Duden — verschieben",
+      "url": "https://www.duden.de/rechtschreibung/verschieben",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong inseparable verb verschieben (verschiebt, verschob, hat verschoben); postpone (einen Termin / das Update verschoben) or move files."
+    },
+    {
+      "id": "duden-entdecken",
+      "title": "Duden — entdecken",
+      "url": "https://www.duden.de/rechtschreibung/entdecken",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb entdecken (entdeckt, entdeckte, hat entdeckt); discover/detect a fault."
+    },
+    {
+      "id": "duden-bemerken",
+      "title": "Duden — bemerken",
+      "url": "https://www.duden.de/rechtschreibung/bemerken",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb bemerken (bemerkt, bemerkte, hat bemerkt); notice/perceive."
+    },
+    {
+      "id": "duden-veroeffentlichen",
+      "title": "Duden — veröffentlichen",
+      "url": "https://www.duden.de/rechtschreibung/veroeffentlichen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb veröffentlichen (veröffentlicht, veröffentlichte, hat veröffentlicht); publish/release."
+    },
+    {
+      "id": "duden-erleichtern",
+      "title": "Duden — erleichtern",
+      "url": "https://www.duden.de/rechtschreibung/erleichtern",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb erleichtern (erleichtert, erleichterte, hat erleichtert); make easier / facilitate (die Fehlersuche erleichtern)."
+    },
+    {
+      "id": "duden-wiederherstellen",
+      "title": "Duden — wiederherstellen",
+      "url": "https://www.duden.de/rechtschreibung/wiederherstellen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak separable verb wiederherstellen (stellt wieder her, stellte wieder her, hat wiederhergestellt); restore to original state / recover a file."
+    },
+    {
+      "id": "duden-sicherungskopie",
+      "title": "Duden — Sicherungskopie",
+      "url": "https://www.duden.de/rechtschreibung/Sicherungskopie",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Sicherungskopie; Genitiv der Sicherungskopie, Plural die Sicherungskopien; backup copy of a file or program."
+    },
+    {
+      "id": "duden-fehlersuche",
+      "title": "Duden — Fehlersuche",
+      "url": "https://www.duden.de/rechtschreibung/Fehlersuche",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Fehlersuche; Genitiv der Fehlersuche; troubleshooting / search for errors."
+    },
+    {
+      "id": "duden-auffallen",
+      "title": "Duden — auffallen",
+      "url": "https://www.duden.de/rechtschreibung/auffallen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong separable verb auffallen (fällt auf, fiel auf, ist aufgefallen); takes auxiliary sein (wäre der Fehler vielleicht aufgefallen)."
+    },
+    {
+      "id": "duden-erstellen",
+      "title": "Duden — erstellen",
+      "url": "https://www.duden.de/rechtschreibung/erstellen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb erstellen (erstellt, erstellte, hat erstellt); create/produce (eine Sicherungskopie erstellen)."
+    },
+    {
+      "id": "duden-freigeben",
+      "title": "Duden — freigeben",
+      "url": "https://www.duden.de/rechtschreibung/freigeben",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong separable verb freigeben (gibt frei, gab frei, hat freigegeben); release/approve for use (das Update später freigegeben)."
+    },
+    {
+      "id": "duden-installieren",
+      "title": "Duden — installieren",
+      "url": "https://www.duden.de/rechtschreibung/installieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak -ieren verb installieren (installiert, installierte, hat installiert, without ge-); install software or hardware."
+    },
+    {
+      "id": "duden-unterstuetzen",
+      "title": "Duden — unterstützen (unterstützt)",
+      "url": "https://www.duden.de/rechtschreibung/unterstuetzen_unterstuetzt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb unterstützen (unterstützt, unterstützte, hat unterstützt, without ge-); support a project, person, or device."
+    },
+    {
+      "id": "duden-uebertragen",
+      "title": "Duden — übertragen (übertragen)",
+      "url": "https://www.duden.de/rechtschreibung/uebertragen_uebertragen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong inseparable verb übertragen (überträgt, übertrug, hat übertragen, without ge-); in computing, transfer/transmit data or files (wäre die Datei schneller übertragen worden)."
+    },
+    {
+      "id": "duden-verlieren",
+      "title": "Duden — verlieren",
+      "url": "https://www.duden.de/rechtschreibung/verlieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Strong inseparable verb verlieren (verliert, verlor, hat verloren); lose a file or data (hätte ich die Datei nicht verloren)."
+    },
+    {
+      "id": "duden-wiederholen-wiederholt",
+      "title": "Duden — wiederholen (inseparable: hat wiederholt)",
+      "url": "https://www.duden.de/rechtschreibung/wiederholen_wiederholt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb wiederholen (wiederholt, wiederholte, hat wiederholt, without ge-); repeat an experiment or test (hätte es den Test nicht wiederholen müssen)."
+    },
+    {
+      "id": "duden-wiederholen-wiedergeholt",
+      "title": "Duden — wiederholen (separable homograph: hat wiedergeholt)",
+      "url": "https://www.duden.de/rechtschreibung/wiederholen_wiedergeholt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak separable homograph wiederholen (holt wieder, holte wieder, hat wiedergeholt = fetch back), contrasted in Section 1 note with inseparable wiederholen (hat wiederholt = repeat)."
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "lingolia-search-subjunctive-conditional",
+      "query": "site:deutsch.lingolia.com subjunctive Konjunktiv II conditional clauses wenn hätte wäre",
+      "access": "search_snippet_only",
+      "keyFindings": "Located Lingolia reference pages for Konjunktiv II (subjunctive), conditional clauses with and without wenn, and passive Konjunktiv II."
+    },
+    {
+      "id": "duden-search-wahrscheinlich-vermutlich",
+      "query": "site:duden.de/rechtschreibung wahrscheinlich vermutlich uebertragen",
+      "access": "search_snippet_only",
+      "keyFindings": "Located disambiguated Duden URLs for wahrscheinlich (wahrscheinlich_voraussichtlich_denkbar and wahrscheinlich_vermutlich_mutmaszlich) and vermutlich (vermutlich_wahrscheinlich)."
+    },
+    {
+      "id": "duden-search-uebertragen-unterstuetzen",
+      "query": "site:duden.de/rechtschreibung uebertragen unterstuetzen",
+      "access": "search_snippet_only",
+      "keyFindings": "Located disambiguated Duden URLs for inseparable unterstützen (unterstuetzen_unterstuetzt) and übertragen (uebertragen_uebertragen)."
+    },
+    {
+      "id": "duden-search-wiederholen",
+      "query": "site:duden.de/rechtschreibung wiederholen",
+      "access": "search_snippet_only",
+      "keyFindings": "Located disambiguated Duden URLs for inseparable wiederholen (wiederholen_wiederholt) vs. separable homograph wiederholen (wiederholen_wiedergeholt)."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/wahrscheinlich",
+      "reason": "HTTP 404 bare homograph URL on Duden; replaced by full-fetched https://www.duden.de/rechtschreibung/wahrscheinlich_voraussichtlich_denkbar and https://www.duden.de/rechtschreibung/wahrscheinlich_vermutlich_mutmaszlich."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/vermutlich",
+      "reason": "HTTP 404 bare homograph URL on Duden; replaced by full-fetched https://www.duden.de/rechtschreibung/vermutlich_wahrscheinlich."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/unterstuetzen",
+      "reason": "HTTP 404 bare homograph URL on Duden; replaced by full-fetched https://www.duden.de/rechtschreibung/unterstuetzen_unterstuetzt."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/wiederholen",
+      "reason": "HTTP 404 bare homograph URL on Duden; replaced by full-fetched https://www.duden.de/rechtschreibung/wiederholen_wiederholt and https://www.duden.de/rechtschreibung/wiederholen_wiedergeholt."
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-10-scope-01",
+      "section": "Scope",
+      "source": "B2.10 title, duration (45–50 min), skills, objective (present/past counterfactual hypotheses, wishes, and probabilities with Konjunktiv II), and fictional technology disclaimer",
+      "status": "verified",
+      "finding": "Verified that the lesson scope clearly targets present and past counterfactual hypotheses (Konjunktiv II), wishes (Ich wünschte, ... / sich wünschen, dass ...), and uncertain probabilities (Es könnte sein, dass ... / wahrscheinlich / möglicherweise) in fictional technology scenarios without promising guaranteed fixes.",
+      "action": "Preserved header and objective verbatim."
+    },
+    {
+      "id": "b2-10-vocab-01",
+      "section": "Vocabulary",
+      "source": "| das Update | die Updates | تحديث البرنامج |",
+      "status": "verified",
+      "finding": "Verified neuter loan noun das Update, Genitiv des Updates, Plural die Updates against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-02",
+      "section": "Vocabulary",
+      "source": "| die Schnittstelle | die Schnittstellen | واجهة الربط |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Schnittstelle, Genitiv der Schnittstelle, Plural die Schnittstellen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-03",
+      "section": "Vocabulary",
+      "source": "| die Einstellung | die Einstellungen | الإعداد |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Einstellung, Genitiv der Einstellung, Plural die Einstellungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-04",
+      "section": "Vocabulary",
+      "source": "| der Zugriff | die Zugriffe | الوصول / النفاذ |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Zugriff, Genitiv des Zugriff[e]s, Plural die Zugriffe (with auf + Akkusativ) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-05",
+      "section": "Vocabulary",
+      "source": "| die Störung | die Störungen | خلل / اضطراب |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Störung, Genitiv der Störung, Plural die Störungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-06",
+      "section": "Vocabulary",
+      "source": "| die Ausfallzeit | die Ausfallzeiten | مدة التوقف |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Ausfallzeit, Genitiv der Ausfallzeit, Plural die Ausfallzeiten (meist im Plural) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-07",
+      "section": "Vocabulary",
+      "source": "| die Funktion | die Funktionen | الوظيفة / الميزة |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Funktion, Genitiv der Funktion, Plural die Funktionen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-08",
+      "section": "Vocabulary",
+      "source": "| die Voraussetzung | die Voraussetzungen | الشرط المسبق |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Voraussetzung, Genitiv der Voraussetzung, Plural die Voraussetzungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-09",
+      "section": "Vocabulary",
+      "source": "| kompatibel | — | متوافق |",
+      "status": "verified",
+      "finding": "Verified adjective kompatibel (governed preposition mit + Dativ) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-10",
+      "section": "Vocabulary",
+      "source": "| wahrscheinlich / vermutlich | — | على الأرجح |",
+      "status": "verified",
+      "finding": "Verified adverbs/adjectives wahrscheinlich and vermutlich against Duden disambiguated entries.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-11",
+      "section": "Vocabulary",
+      "source": "| möglicherweise / unwahrscheinlich | — | من المحتمل / مستبعد |",
+      "status": "verified",
+      "finding": "Verified adverb möglicherweise and adjective unwahrscheinlich against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-12",
+      "section": "Vocabulary",
+      "source": "| auftreten | tritt auf | يحدث / يظهر |",
+      "status": "verified",
+      "finding": "Verified strong separable verb auftreten (tritt auf, trat auf, ist aufgetreten with auxiliary sein -> wäre aufgetreten) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-13",
+      "section": "Vocabulary",
+      "source": "| überprüfen | überprüft | يتحقّق من |",
+      "status": "verified",
+      "finding": "Verified weak inseparable verb überprüfen (überprüft, überprüfte, hat überprüft without ge-) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-14",
+      "section": "Vocabulary",
+      "source": "| zurücksetzen | setzt zurück | يعيد إلى الإعدادات الأصلية |",
+      "status": "verified",
+      "finding": "Verified weak separable verb zurücksetzen (setzt zurück, setzte zurück, hat zurückgesetzt) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-15",
+      "section": "Vocabulary",
+      "source": "| sich wünschen | wünscht sich | يتمنى |",
+      "status": "verified",
+      "finding": "Verified weak verb sich wünschen (wünscht sich, wünschte sich, hat sich gewünscht) and unreal wish formula Ich wünschte, ... against Duden and Lingolia.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-10-AUD-PHR-01."
+    },
+    {
+      "id": "b2-10-vocab-note-01",
+      "section": "Vocabulary",
+      "source": "ملاحظة حول الجمع وتصريف الأفعال في الجدول: Duden-backed note on noun genders/plurals, sein vs. haben auxiliary selection (auftreten/auffallen with wäre vs. transitive verbs with hätte), separable vs. inseparable Partizip II forms (zurückgesetzt/freigegeben/wiederhergestellt vs. überprüft/übertragen/unterstützt/wiederholt), and sich wünschen vs. Ich wünschte",
+      "status": "added",
+      "finding": "Added a comprehensive Duden-backed morphological note below the Section 1 vocabulary table explaining auxiliary selection in past Konjunktiv II (wäre aufgetreten/aufgefallen vs. hätte überprüft/entdeckt) and separable vs. inseparable verb prefixes (including the Duden homographs wiederholen -> hat wiederholt vs. hat wiedergeholt) without altering the 15 spoken table rows.",
+      "action": "Added morphological and auxiliary note below Section 1 table."
+    },
+    {
+      "id": "b2-10-gram-intro-01",
+      "section": "Grammar",
+      "source": "Section 2 intro on present Konjunktiv II (wäre / hätte / könnte / würde + Infinitiv) and past Konjunktiv II (hätte/wäre + Partizip II with verb-final order in wenn-clauses and V2 in the result clause)",
+      "status": "verified",
+      "finding": "Verified Section 2 introductory explanation of present and past Konjunktiv II against Lingolia Subjunctive and Conditional Clauses.",
+      "action": "Preserved intro lines verbatim."
+    },
+    {
+      "id": "b2-10-gram-01",
+      "section": "Grammar",
+      "source": "**Wenn die App offline wäre, könnte sie trotzdem Daten speichern.**",
+      "status": "verified",
+      "finding": "Verified present unreal conditional with wäre in the wenn-clause and modal könnte + infinitive in the result clause; spoken sentence 1 of DL-B2-10-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-gram-02",
+      "section": "Grammar",
+      "source": "**Ich wünschte, das Gerät wäre mit allen Systemen kompatibel.**",
+      "status": "verified",
+      "finding": "Verified present unreal wish introduced by Ich wünschte, ... with wäre and kompatibel mit + Dativ; spoken sentence 2 of DL-B2-10-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-gram-03",
+      "section": "Grammar",
+      "source": "**Wenn das Team den Fehler früher entdeckt hätte, hätte es das Update verschoben.**",
+      "status": "verified",
+      "finding": "Verified past unreal conditional with inseparable entdeckt hätte at the end of the wenn-clause and hätte ... verschoben in the main clause; spoken sentence 3 of DL-B2-10-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-gram-04",
+      "section": "Grammar",
+      "source": "**Wenn die Verbindung stabiler gewesen wäre, wäre die Datei schneller übertragen worden.**",
+      "status": "verified",
+      "finding": "Verified past unreal conditional combining gewesen wäre in the condition with passive past Konjunktiv II wäre ... übertragen worden in the result clause; spoken sentence 4 of DL-B2-10-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-gram-05",
+      "section": "Grammar",
+      "source": "في جملة **wenn** بالمبني للمجهول في الماضي، تأتي في النهاية الصيغة **Partizip II + worden + wäre**، مثل: **Wenn die Schnittstelle geprüft worden wäre, …** — لو كان قد جرى فحص واجهة الربط…",
+      "status": "verified",
+      "finding": "Verified subordinate clause word order for passive past Konjunktiv II (Partizip II + worden + wäre) against Lingolia Passive Voice.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-gram-06",
+      "section": "Grammar",
+      "source": "يمكن حذف **wenn** وتقديم الفعل المساعد: **Hätte das Team den Fehler früher entdeckt, hätte es das Update verschoben.**",
+      "status": "verified",
+      "finding": "Verified verb-first (uneingeleiteter Konditionalsatz) past conditional without wenn against Lingolia Conditional Clauses; spoken sentence 5 of DL-B2-10-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-gram-07",
+      "section": "Grammar",
+      "source": "للاحتمال الحالي نستخدم تعبيرات مثل **Es könnte sein, dass …** أو **wahrscheinlich / möglicherweise**؛ فالاحتمال ليس تأكيدًا.",
+      "status": "verified",
+      "finding": "Verified epistemic probability expressions Es könnte sein, dass ... and wahrscheinlich / möglicherweise against Lingolia and Duden.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-10-helper-01",
+      "section": "Grammar Helper",
+      "source": "- متى نختار `hätte` ومتى نختار `wäre` في `Konjunktiv II` للماضي؟ يتبع ذلك فعل المساعد في زمن `Perfekt`: الأفعال المتعدية وأفعال العمل التقني مثل `überprüfen` (`überprüft hätte`) و`entdecken` (`entdeckt hätte`) و`bemerken` (`bemerkt hätte`) و`verschieben` (`verschoben hätte`) و`sichern` (`gesichert hätte`) و`speichern` (`gespeichert hätte`) و`erstellen` (`erstellt hätte`) و`verlieren` (`verloren hätte`) تأخذ `hätte`؛ أما فعل الكينونة `sein` (`gewesen wäre`) وأفعال الحدوث وتغيّر الحالة مثل `auftreten` (`aufgetreten wäre`) و`auffallen` (`aufgefallen wäre`) وكذلك المبني للمجهول الإجرائي (`übertragen worden wäre` / `geprüft worden wäre`) فتأخذ `wäre`.",
+      "status": "added",
+      "finding": "Added helper bullet 1 explaining auxiliary choice (hätte vs. wäre) in past Konjunktiv II using backticks so technologyModels.length === 5 remains intact.",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-10-helper-02",
+      "section": "Grammar Helper",
+      "source": "- ضبط ترتيب الكلمات والفاصلة في الجملة الشرطية: في جملة `wenn` الفرعية يقع الفعل المساعد المصرّف (`wäre` أو `hätte`) في آخر الجملة بعد `Partizip II` (`Wenn das Team den Fehler früher entdeckt hätte, ...`)، وتوضع فاصلة إلزامية قبل جملة النتيجة. فإذا تقدمت جملة `wenn`، بدأ جواب الشرط بالفعل المصرف مباشرةً قبل الفاعل (`..., hätte es das Update verschoben` / `..., wäre der Fehler nicht aufgetreten`)؛ أما إذا بدأت الجملة بجواب الشرط فيبقى الفاعل في الموقع الأول (`Das Team hätte das Update verschoben, wenn es die Störung vorher bemerkt hätte`). وعند حذف `wenn` من جملة الشرط المتقدمة يتقدم الفعل المساعد المصرف إلى الموقع الأول (`Hätte das Team den Fehler früher entdeckt, ...`).",
+      "status": "added",
+      "finding": "Added helper bullet 2 explaining clause order, obligatory comma, V2 inversion after a fronted wenn-clause, and verb-first conditionals without wenn.",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-10-helper-03",
+      "section": "Grammar Helper",
+      "source": "- الأفعال الناقصة (`Modalverben`) في ماضي `Konjunktiv II` (`hätte + Infinitiv + Modalverb-Infinitiv`): عندما نعبّر عن استطاعة أو اضطرار لم يتحقق في الماضي مع `können` أو `müssen` أو `sollen`، نستخدم `hätte` مع مصدرين متتاليين في نهاية الجملة (`Ersatzinfinitiv` بدل `Partizip II`)، كما في نص الاستماع والتمارين: `..., hätte ich die Datei nach dem Gerätefehler leichter wiederherstellen können` (وليس `gekonnt`)، و`Die Person hätte früher eine Sicherungskopie erstellen sollen`، و`..., hätten wir sie installieren können`، و`..., hätte es den Test nicht wiederholen müssen`.",
+      "status": "added",
+      "finding": "Added helper bullet 3 explaining modal verbs in past Konjunktiv II with double infinitive (Ersatzinfinitiv: hätte ... wiederherstellen können / erstellen sollen / installieren können / wiederholen müssen).",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-10-helper-04",
+      "section": "Grammar Helper",
+      "source": "- صياغة الأمنيات في الحاضر والماضي: بعد `Ich wünschte, ...` أو `sich wünschen, dass ...` نستعمل `Konjunktiv II` للحاضر (`wäre`, `hätte`, `könnte`, `würde + Infinitiv`) للتمني في الوقت الحالي (`Ich wünschte, das Gerät wäre mit allen Systemen kompatibel` / `Jetzt wünsche ich mir, dass alle Geräte dieselbe Schnittstelle hätten`)، ونستعمل `hätte/wäre + Partizip II` عندما تتعلق الأمنية بمرحلة ماضية انتهت، كما في نص القراءة: `Eine Entwicklerin wünscht sich, dass die Testphase länger gewesen wäre`.",
+      "status": "added",
+      "finding": "Added helper bullet 4 contrasting present wishes (Ich wünschte, ... wäre / wünsche mir, dass ... hätten) with retrospective wishes about a completed past phase (wünscht sich, dass die Testphase länger gewesen wäre).",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-10-helper-05",
+      "section": "Grammar Helper",
+      "source": "- التمييز المنهجي بين الواقع والافتراض والاحتمال: يدرّب هذا الدرس على الفصل الواضح بين الوقائع المذكورة في السيناريو (`Die Schnittstelle war nicht kompatibel` / `Das Update wurde noch nicht veröffentlicht`)، والافتراض غير المتحقق (`Wenn wir ... überprüft hätten, hätten wir ...`)، والاحتمال غير المؤكد (`Es könnte sein, dass ...` / `wahrscheinlich` / `möglicherweise` / `vermutet`). جميع الأمثلة التقنية في هذا الدرس خيالية لأغراض التعلم، ولا تقدّم وعودًا بأن تعديل إعداد أو نشر تحديث سيعالج كل مشكلة تقنية حتمًا.",
+      "status": "added",
+      "finding": "Added helper bullet 5 distinguishing stated scenario facts, counterfactual hypotheses, and non-certain probabilities in fictional technology contexts.",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-10-dlg-01",
+      "section": "Dialogue",
+      "source": "**Lea:** Was ist beim letzten Test passiert?",
+      "status": "verified",
+      "finding": "Verified dialogue turn 1 speaker, grammar, and verbatim alignment with DL-B2-10-AUD-DLG-01-01.mp3 (Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-10-dlg-02",
+      "section": "Dialogue",
+      "source": "**Murat:** Die Schnittstelle war nicht kompatibel. Wenn wir das früher überprüft hätten, hätten wir den Fehler vielleicht vor dem Test entdeckt.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 2 speaker, grammar, and verbatim alignment with DL-B2-10-AUD-DLG-01-02.mp3 (Murat=voice-03).",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-10-dlg-03",
+      "section": "Dialogue",
+      "source": "**Lea:** Und was wäre dann anders gewesen?",
+      "status": "verified",
+      "finding": "Verified dialogue turn 3 speaker, grammar, and verbatim alignment with DL-B2-10-AUD-DLG-01-03.mp3 (Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-10-dlg-04",
+      "section": "Dialogue",
+      "source": "**Murat:** Wir hätten das Update später freigegeben.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 4 speaker, grammar, and verbatim alignment with DL-B2-10-AUD-DLG-01-04.mp3 (Murat=voice-03).",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-10-dlg-05",
+      "section": "Dialogue",
+      "source": "**Lea:** Wünschst du dir, dass das Programm einfacher zu bedienen wäre?",
+      "status": "verified",
+      "finding": "Verified dialogue turn 5 speaker, grammar, and verbatim alignment with DL-B2-10-AUD-DLG-01-05.mp3 (Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-10-dlg-06",
+      "section": "Dialogue",
+      "source": "**Murat:** Ja. Es könnte sein, dass eine klarere Einstellung die Nutzung erleichtert. Aber das müssten wir erst prüfen.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 6 speaker, grammar, and verbatim alignment with DL-B2-10-AUD-DLG-01-06.mp3 (Murat=voice-03).",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-10-read-01",
+      "section": "Reading",
+      "source": "Ein fiktives Entwicklungsteam testet eine neue Planungs-App.",
+      "status": "verified",
+      "finding": "Verified reading sentence 1 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-02",
+      "section": "Reading",
+      "source": "Beim ersten Versuch traten Störungen auf, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war.",
+      "status": "verified",
+      "finding": "Verified reading sentence 2 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-03",
+      "section": "Reading",
+      "source": "In der Rückschau schreibt das Team: „Wenn wir die Einstellungen früher auf mehreren Geräten überprüft hätten, hätten wir die Störung wahrscheinlich vor der Vorführung bemerkt.“",
+      "status": "verified",
+      "finding": "Verified reading sentence 3 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-04",
+      "section": "Reading",
+      "source": "Das Update wurde noch nicht veröffentlicht.",
+      "status": "verified",
+      "finding": "Verified reading sentence 4 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-05",
+      "section": "Reading",
+      "source": "Eine Entwicklerin wünscht sich, dass die Testphase länger gewesen wäre.",
+      "status": "verified",
+      "finding": "Verified reading sentence 5 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-06",
+      "section": "Reading",
+      "source": "Das Team vermutet, ein klarer Hinweis auf die betroffene Funktion könnte die Fehlersuche erleichtern.",
+      "status": "verified",
+      "finding": "Verified reading sentence 6 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-07",
+      "section": "Reading",
+      "source": "Sicher ist das jedoch nicht; weitere Tests werden nötig sein.",
+      "status": "verified",
+      "finding": "Verified reading sentence 7 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-08",
+      "section": "Reading",
+      "source": "Die Beispiele in diesem Text sind erfunden.",
+      "status": "verified",
+      "finding": "Verified reading sentence 8 grammar, punctuation, and verbatim match with DL-B2-10-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim."
+    },
+    {
+      "id": "b2-10-read-q-01",
+      "section": "Reading Questions",
+      "source": "1. Welche Probleme traten beim ersten Versuch auf?",
+      "status": "verified",
+      "finding": "Reviewed reading comprehension question 1 and expanded its model answer in Section 7 to full German sentences.",
+      "action": "Updated question/answer in Sections 4 and 7."
+    },
+    {
+      "id": "b2-10-read-q-02",
+      "section": "Reading Questions",
+      "source": "2. Warum gab es eine Störung?",
+      "status": "verified",
+      "finding": "Reviewed reading comprehension question 2 and expanded its model answer in Section 7 to full German sentences.",
+      "action": "Updated question/answer in Sections 4 and 7."
+    },
+    {
+      "id": "b2-10-read-q-03",
+      "section": "Reading Questions",
+      "source": "3. Was hätte das Team bei früheren Tests auf mehreren Geräten wahrscheinlich vor der Vorführung bemerkt?",
+      "status": "refined",
+      "finding": "Reviewed reading comprehension question 3 and expanded its model answer in Section 7 to full German sentences.",
+      "action": "Updated question/answer in Sections 4 and 7."
+    },
+    {
+      "id": "b2-10-read-q-04",
+      "section": "Reading Questions",
+      "source": "4. Wurde das Update schon veröffentlicht?",
+      "status": "verified",
+      "finding": "Reviewed reading comprehension question 4 and expanded its model answer in Section 7 to full German sentences.",
+      "action": "Updated question/answer in Sections 4 and 7."
+    },
+    {
+      "id": "b2-10-read-q-05",
+      "section": "Reading Questions",
+      "source": "5. Was wünscht sich eine Entwicklerin rückblickend für die Testphase?",
+      "status": "refined",
+      "finding": "Reviewed reading comprehension question 5 and expanded its model answer in Section 7 to full German sentences.",
+      "action": "Updated question/answer in Sections 4 and 7."
+    },
+    {
+      "id": "b2-10-read-q-06",
+      "section": "Reading Questions",
+      "source": "6. Ist sicher, dass ein klarer Hinweis auf die betroffene Funktion die Fehlersuche erleichtern würde?",
+      "status": "refined",
+      "finding": "Reviewed reading comprehension question 6 and expanded its model answer in Section 7 to full German sentences.",
+      "action": "Updated question/answer in Sections 4 and 7."
+    },
+    {
+      "id": "b2-10-lst-01",
+      "section": "Listening",
+      "source": "Wenn ich früher eine Sicherungskopie erstellt hätte, hätte ich die Datei nach dem Gerätefehler leichter wiederherstellen können.",
+      "status": "verified",
+      "finding": "Verified listening sentence 1 grammar (including double infinitive hätte ... wiederherstellen können) and verbatim match with DL-B2-10-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim."
+    },
+    {
+      "id": "b2-10-lst-02",
+      "section": "Listening",
+      "source": "Jetzt wünsche ich mir, dass alle Geräte dieselbe Schnittstelle hätten.",
+      "status": "verified",
+      "finding": "Verified listening sentence 2 grammar (including double infinitive hätte ... wiederherstellen können) and verbatim match with DL-B2-10-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim."
+    },
+    {
+      "id": "b2-10-lst-03",
+      "section": "Listening",
+      "source": "Vielleicht wird die nächste Version kompatibler sein.",
+      "status": "verified",
+      "finding": "Verified listening sentence 3 grammar (including double infinitive hätte ... wiederherstellen können) and verbatim match with DL-B2-10-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim."
+    },
+    {
+      "id": "b2-10-lst-04",
+      "section": "Listening",
+      "source": "Es könnte aber auch sein, dass ältere Geräte trotzdem nicht unterstützt werden.",
+      "status": "verified",
+      "finding": "Verified listening sentence 4 grammar (including double infinitive hätte ... wiederherstellen können) and verbatim match with DL-B2-10-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim."
+    },
+    {
+      "id": "b2-10-lst-05",
+      "section": "Listening",
+      "source": "Darum sollte man die Angaben vor einer Änderung überprüfen.",
+      "status": "verified",
+      "finding": "Verified listening sentence 5 grammar (including double infinitive hätte ... wiederherstellen können) and verbatim match with DL-B2-10-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim."
+    },
+    {
+      "id": "b2-10-lst-q-01",
+      "section": "Listening Questions",
+      "source": "1. Was hätte die Person früher vor dem Gerätefehler tun sollen?",
+      "status": "refined",
+      "finding": "Refined listening comprehension question 1 for precision and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated question/answer in Sections 5 and 7."
+    },
+    {
+      "id": "b2-10-lst-q-02",
+      "section": "Listening Questions",
+      "source": "2. Was wäre nach dem Gerätefehler leichter gewesen, wenn sie eine Sicherungskopie erstellt hätte?",
+      "status": "refined",
+      "finding": "Refined listening comprehension question 2 for precision and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated question/answer in Sections 5 and 7."
+    },
+    {
+      "id": "b2-10-lst-q-03",
+      "section": "Listening Questions",
+      "source": "3. Was wünscht sich die Person jetzt für alle Geräte?",
+      "status": "refined",
+      "finding": "Refined listening comprehension question 3 for precision and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated question/answer in Sections 5 and 7."
+    },
+    {
+      "id": "b2-10-lst-q-04",
+      "section": "Listening Questions",
+      "source": "4. Was könnte bei älteren Geräten trotz einer neuen Version passieren?",
+      "status": "refined",
+      "finding": "Refined listening comprehension question 4 for precision and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated question/answer in Sections 5 and 7."
+    },
+    {
+      "id": "b2-10-lst-q-05",
+      "section": "Listening Questions",
+      "source": "5. Was sollte man vor einer Änderung unbedingt tun?",
+      "status": "refined",
+      "finding": "Refined listening comprehension question 5 for precision and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated question/answer in Sections 5 and 7."
+    },
+    {
+      "id": "DL-B2-10-T01",
+      "section": "Exercises",
+      "source": "### تمرين 1 — اختر المفردة المناسبة (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T01 to 5 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 1 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. مكوّن يسمح لبرنامجين أو نظامين بالتواصل: **die Schnittstelle / die Ausfallzeit**",
+        "2. خلل يمنع ميزة من العمل كما هو متوقع: **die Störung / die Einstellung**",
+        "3. نظام يعمل بانسجام مع نظام أو جهاز آخر: **kompatibel / unwahrscheinlich**",
+        "4. إعادة البرنامج إلى ضبطه الأصلي: **zurücksetzen / auftreten**",
+        "5. شرط يجب توفّره قبل تشغيل ميزة أو تثبيت تحديث: **die Voraussetzung / der Zugriff**"
+      ]
+    },
+    {
+      "id": "DL-B2-10-T02",
+      "section": "Exercises",
+      "source": "### تمرين 2 — أكمل Konjunktiv II للماضي (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T02 to 4 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 2 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. Wenn wir die Datei früher ______ ______, hätten wir Zeit gespart. (sichern)",
+        "2. Wenn die Schnittstelle geprüft worden ______, wäre der Fehler vielleicht aufgefallen. (sein)",
+        "3. Das Team ______ das Update verschoben, wenn es die Störung vorher bemerkt hätte. (haben)",
+        "4. Wenn die Verbindung stabiler gewesen wäre, ______ die Datei schneller übertragen ______. (sein / werden — المبني للمجهول في الماضي)"
+      ]
+    },
+    {
+      "id": "DL-B2-10-T03",
+      "section": "Exercises",
+      "source": "### تمرين 3 — اربط الشرط والنتيجة (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T03 to 4 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 3 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. **Die App war nicht kompatibel. Wir konnten sie nicht installieren.** → ابدأ بـ**Wenn … gewesen wäre**.",
+        "2. **Das Team entdeckte den Fehler spät. Es musste den Test wiederholen.** → ابدأ بـ**Wenn … entdeckt hätte**.",
+        "3. **Die Einstellungen wurden nicht früh geprüft. Die Störung trat beim ersten Versuch auf.** → ابدأ بـ**Wenn … überprüft worden wären**.",
+        "4. **Ich erstellte vorher keine Sicherungskopie. Ich konnte die Datei nach dem Gerätefehler nicht leicht wiederherstellen.** → ابدأ بـ**Wenn … erstellt hätte**."
+      ]
+    },
+    {
+      "id": "DL-B2-10-T04",
+      "section": "Exercises",
+      "source": "### تمرين 4 — اختر الصيغة المناسبة (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T04 to 4 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 4 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. أمنية حالية: **Ich wünschte, die App ______ einfacher.** (**wäre / war**)",
+        "2. شرط ماضٍ غير متحقق: **Wenn das Team den Fehler früher ______ hätte, wäre der Ausfall kürzer gewesen.** (**bemerkt / bemerken**)",
+        "3. احتمال غير مؤكد: **Es ______ sein, dass die Geräte nicht kompatibel sind.** (**könnte / muss**)",
+        "4. شرط ماضٍ بالمبني للمجهول: **Wenn die Schnittstelle vor der Vorführung geprüft ______ wäre, wäre keine Störung aufgetreten.** (**worden / geworden**)"
+      ]
+    },
+    {
+      "id": "DL-B2-10-T05",
+      "section": "Exercises",
+      "source": "### تمرين 5 — فهم القراءة (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T05 to 5 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 5 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. واجه الفريق خللًا متعلقًا بواجهة الربط.",
+        "2. كان التحديث قد نُشر بالفعل.",
+        "3. يظن الفريق أن فحص الإعدادات على أجهزة متعددة كان قد يكشف الخلل مبكرًا.",
+        "4. يؤكد النص أن الإشارة الواضحة ستعالج المشكلة حتمًا.",
+        "5. الأمثلة التقنية في القراءة خيالية."
+      ]
+    },
+    {
+      "id": "DL-B2-10-T06",
+      "section": "Exercises",
+      "source": "### تمرين 6 — فهم الاستماع (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T06 to 5 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 6 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. Die Person hätte früher eine ______ erstellen sollen.",
+        "2. Danach hätte sie die Datei leichter ______ können.",
+        "3. Sie wünscht sich, dass alle Geräte dieselbe ______ hätten.",
+        "4. Ältere Geräte werden möglicherweise nicht ______.",
+        "5. Vor einer Änderung sollte man die Angaben ______."
+      ]
+    },
+    {
+      "id": "DL-B2-10-T07",
+      "section": "Exercises",
+      "source": "### تمرين 7 — حوّل الجملة إلى فرضية عن الماضي (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and expanded DL-B2-10-T07 to 4 items with verified Section 7 answer key.",
+      "action": "Updated تمرين 7 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. **Wir prüften die Schnittstelle nicht. Deshalb trat der Fehler auf.** → Wenn wir die Schnittstelle früher ______ ______, wäre der Fehler nicht aufgetreten.",
+        "2. **Ich speicherte keine Kopie. Deshalb verlor ich die Datei.** → Wenn ich eine Kopie ______ ______, hätte ich die Datei nicht verloren.",
+        "3. **Das Team überprüfte die Einstellungen nicht auf mehreren Geräten. Deshalb bemerkte es die Störung nicht vor der Vorführung.** → Wenn das Team die Einstellungen früher auf mehreren Geräten ______ ______, ______ es die Störung vor der Vorführung bemerkt.",
+        "4. **Die Testphase war zu kurz. Deshalb wurde das Update noch nicht veröffentlicht.** → Wenn die Testphase länger ______ ______, ______ das Update vielleicht schon veröffentlicht worden."
+      ]
+    },
+    {
+      "id": "DL-B2-10-T08",
+      "section": "Exercises",
+      "source": "### تمرين 8 — اكتب أو اعرض فرضية تقنية (Part A P01: 5 items + Part B P02: 5 items = 10 items)",
+      "status": "refined",
+      "finding": "Split T08 into Part A (DL-B2-10-P01, writing-only, 180+ chars, 5 guided points) and Part B (DL-B2-10-P02, writing + speaking aloud, 200+ chars, 5 guided points integrating T05/T06/T07).",
+      "action": "Synchronized T08 in Section 6 with P01/P02 in assessment JSON and Section 8 written models.",
+      "items": [
+        "1. اذكر مشكلة تقنية خيالية محددة باعتبارها الواقعة الأساسية في السيناريو (مثل عدم توافق `die Schnittstelle` أو حدوث `eine Störung` أو نقص `die Voraussetzung`).",
+        "2. أدرج فرضية غير واقعية عن **الحاضر** بصيغة `Wenn ... wäre/hätte, könnte/würde ...` (مثل عمل التطبيق دون اتصال أو تغيّر الإعدادات الحالية).",
+        "3. أدرج شرطًا ماضيًا لم يتحقق بصيغة `Wenn ... + Partizip II + hätte/wäre, hätte/wäre ...` مع ضبط الفعل المساعد في نهاية جملة `wenn` وفي الموقع الثاني من جملة النتيجة.",
+        "4. عبّر عن أمنية واضحة باستخدام `Ich wünschte, ...` أو `Ich wünsche mir, dass ...` مع صيغة `Konjunktiv II` المناسبة.",
+        "5. اختم باحتمال غير مؤكد باستخدام `Es könnte sein, dass ...` أو `wahrscheinlich` أو `möglicherweise` دون عرضه كحقيقة مؤكدة، ومن غير استخدام بيانات دخول أو معلومات شخصية أو تقنية حقيقية (الحد الأدنى في التطبيق: `180` حرفًا، كتابة فقط دون اشتراط الجهر).",
+        "1. وضّح أن سيناريو تطبيق التخطيط في `T05` خيالي (`fiktiv` / `erfunden`)، واذكر الواقعتين الأساسيتين: أن واجهة الربط لم تكن متوافقة مع جهاز أقدم (`eine Schnittstelle war mit einem älteren Gerät nicht kompatibel`) وأن التحديث لم يُنشر بعد (`Das Update wurde noch nicht veröffentlicht`).",
+        "2. انقل الشرط الماضي غير المتحقق من `T05` حول ما كان الفريق سيكتشفه لو فحص الإعدادات مبكرًا على عدة أجهزة (`Wenn wir die Einstellungen früher auf mehreren Geräten überprüft hätten, hätten wir die Störung wahrscheinlich vor der Vorführung bemerkt`).",
+        "3. أضف معلومة النسخة الاحتياطية من نص الاستماع المكتوب `T06` باستخدام شرط ماضٍ مع فعل ناقص (`Wenn man früher eine Sicherungskopie erstellt hätte, hätte man die Datei nach dem Gerätefehler leichter wiederherstellen können`).",
+        "4. أدرج أمنية مناسبة من النصين (`Eine Entwicklerin wünscht sich, dass die Testphase länger gewesen wäre` أو `Man wünscht sich, dass alle Geräte dieselbe Schnittstelle hätten`).",
+        "5. اختم باحتمال غير مؤكد بشأن تيسير البحث عن الأخطاء أو دعم الأجهزة الأقدم (`Es könnte sein, dass ältere Geräte trotzdem nicht unterstützt werden` / `weitere Tests werden nötig sein`) مع تأكيد أن التحديث لا يضمن حل المشكلة تلقائيًا، ثم اقرأ الإحاطة بصوت مسموع لنفسك دون تسجيل أو إرسال صوت (الحد الأدنى في التطبيق: `200` حرف)."
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q01",
+      "section": "Assessment Quiz",
+      "source": "ماذا تعني **die Ausfallzeit** في سياق التقنية؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T01, correct answerIndex=0, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "المدة التي تتوقف فيها خدمة أو جهاز عن العمل",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 1,
+          "text": "واجهة تربط نظامين أو جهازين",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "شرط يجب توفره قبل استخدام ميزة",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q02",
+      "section": "Assessment Quiz",
+      "source": "أكمل الفرضية عن الحاضر: **Wenn die App offline ___, könnte sie trotzdem Daten speichern.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T02, correct answerIndex=0, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "wäre",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 1,
+          "text": "war",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "ist",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q03",
+      "section": "Assessment Quiz",
+      "source": "اختر الصيغة المناسبة لأمنية حالية: **Ich wünschte, das Gerät ___ mit allen Systemen kompatibel.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T02, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "war",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "wäre",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "ist",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q04",
+      "section": "Assessment Quiz",
+      "source": "أي مجموعة تكمل الشرط والنتيجة عن الماضي؟ **Wenn das Team den Fehler früher ___, ___ es das Update verschoben.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T03, correct answerIndex=2, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "hätte entdeckt / würde",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "entdeckt hat / hätte",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "entdeckt hätte / hätte",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q05",
+      "section": "Assessment Quiz",
+      "source": "أكمل نتيجة الشرط الماضي بالمبني للمجهول: **Wenn die Verbindung stabiler gewesen wäre, ___ die Datei schneller übertragen worden.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T03, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "würde",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "wäre",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "hätte",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q06",
+      "section": "Assessment Quiz",
+      "source": "أي عبارة تعرض احتمالًا غير مؤكد، لا حقيقة مثبتة؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T04, correct answerIndex=2, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Die neue Einstellung wird die Fehlersuche sicher erleichtern.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "Es steht fest, dass die Einstellung den Fehler behebt.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "Es könnte sein, dass die Einstellung die Fehlersuche erleichtert.",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q07",
+      "section": "Assessment Quiz",
+      "source": "بحسب قراءة مراجعة الإصدار التجريبي T05، ما سبب الخلل في المحاولة الأولى؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T05, correct answerIndex=0, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "لم تكن واجهة الربط متوافقة مع جهاز أقدم.",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 1,
+          "text": "كانت مرحلة الاختبار قد انتهت قبل بدء العمل.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "حُذف التطبيق من جميع الأجهزة بعد نشر التحديث.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q08",
+      "section": "Assessment Quiz",
+      "source": "هل كان التحديث قد نُشر وفق قراءة T05؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T05, correct answerIndex=2, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "نعم، نُشر قبل الاختبار الأول.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "لا يذكر النص حالة نشره.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "لا، يذكر النص أن التحديث لم يُنشر بعد.",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q09",
+      "section": "Assessment Quiz",
+      "source": "وفق النص المكتوب لتدريب الاستماع T06، ماذا كان سيصبح أسهل بعد إنشاء نسخة احتياطية؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T06, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "إعادة إعداد واجهة الربط من الصفر.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "استعادة الملف بعد خلل الجهاز.",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "ضمان توافق كل الأجهزة القديمة.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-Q10",
+      "section": "Assessment Quiz",
+      "source": "**Wir prüften die Schnittstelle nicht. Deshalb trat der Fehler auf.** أي جملة تصف البديل الافتراضي الماضي بشكل صحيح؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-10-T07, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-10-v2 assessment JSON.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Wenn wir die Schnittstelle prüfen, tritt der Fehler nicht auf.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "Wenn wir die Schnittstelle früher geprüft hätten, wäre der Fehler nicht aufgetreten.",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "Wenn wir die Schnittstelle früher geprüft hätten, hätte der Fehler nicht aufgetreten.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-P01",
+      "section": "Performance Tasks",
+      "source": "اكتب باللغة الألمانية من خمس إلى ست جمل عن مشكلة تقنية خيالية (الجزء أ من تمرين 8 — كتابة فقط دون اشتراط الجهر). ضمّن فرضية غير واقعية عن الحاضر بصيغة **Wenn ... wäre/hätte, ... könnte/würde**، وشرطًا ماضيًا لم يتحقق باستخدام **hätte/wäre + Partizip II**، وأمنيةً واضحة (**Ich wünschte, ...**)، واحتمالًا غير مؤكد مثل **Es könnte sein, dass ...** أو **möglicherweise**. وضّح ما هو واقع في السيناريو وما هو افتراض، ولا تستخدم بيانات دخول أو معلومات شخصية أو تقنية حقيقية.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-10-P01 modality=['writing'], speakAloud=False, minimumResponseCharacters=180, and sourceTaskIds=['DL-B2-10-T08'] with Section 6 T08 and Section 8 model.",
+      "action": "Updated DL-B2-10-P01 in b2-10-v2 assessment JSON and data/production-task-catalog.csv.",
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "كتابة خمس إلى ست جمل ألمانية عن سيناريو تقني خيالي، تتضمن فرضية في الحاضر، وشرطًا ماضيًا غير متحقق، وأمنية، واحتمالًا غير مؤكد.",
+          "verdict": "verified"
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يميّز النص المكتوب بين الوقائع المفترضة في السيناريو وبين الافتراضات والأمنيات والاحتمالات؛ ولا يقدم التوقع كحقيقة مضمونة أو يذكر بيانات شخصية أو تقنية حقيقية.",
+          "verdict": "verified"
+        },
+        {
+          "key": "targetSkill",
+          "text": "يضبط موضع الفعل المصرّف في نهاية جملة wenn وفي بداية جملة النتيجة، ويختار المساعد الصحيح (hätte أو wäre) مع Partizip II في الشرط الماضي، ويصوغ الأمنية والاحتمال بوضوح.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-10-P02",
+      "section": "Performance Tasks",
+      "source": "استنادًا إلى قراءة T05 والنص المكتوب لتدريب الاستماع T06 والتدريب التحويلي في T07، اكتب إحاطة ألمانية من خمس إلى ست جمل لزميل ثم اقرأها بصوت مسموع لنفسك (أو حضّرها وقدّمها شفهيًا — الجزء ب من تمرين 8). اذكر أن واجهة الربط في السيناريو الخيالي لم تكن متوافقة مع جهاز أقدم وأن التحديث لم يُنشر بعد، وانقل ما كان الفريق قد يكتشفه لو فحص الإعدادات مبكرًا على عدة أجهزة. أضف معلومة النسخة الاحتياطية في T06 (**Sicherungskopie** + **hätte ... wiederherstellen können**)، وأمنيةً مناسبة، واحتمالًا غير مؤكد بشأن الأجهزة الأقدم. استخدم شرطًا ماضيًا صحيحًا وميّز معلومات النص عن الافتراض؛ فالتقنية والسيناريو خياليان ولا يثبتان أن تحديثًا سيحل المشكلة. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-10-P02 modality=['writing', 'speaking'], speakAloud=True, minimumResponseCharacters=200, and sourceTaskIds=['DL-B2-10-T05', 'DL-B2-10-T06', 'DL-B2-10-T07', 'DL-B2-10-T08'] with Section 6 T08 and Section 8 model.",
+      "action": "Updated DL-B2-10-P02 in b2-10-v2 assessment JSON and data/production-task-catalog.csv.",
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "إحاطة مكتوبة ومنطوقة من خمس إلى ست جمل ألمانية تنقل بدقة سبب الخلل وحالة النشر في T05، وما كان يمكن اكتشافه بالفحص المبكر، ومعلومة النسخة الاحتياطية في T06، مع أمنية وشرط ماضٍ واحتمال غير مؤكد.",
+          "verdict": "verified"
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يفصل بين الوقائع المذكورة في النصين الخياليين (T05 وT06) وبين الافتراض والتوقع، ولا يقدم تحسين الإعدادات أو التحديث كحل مضمون؛ يظل السيناريو خياليًا.",
+          "verdict": "verified"
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم ترتيبًا صحيحًا للفعل في شرط الماضي ونتيجته (بما فيه المصدر المزدوج مع الفعل الناقص hätte ... wiederherstellen können)، ويصوغ الأمنية والاحتمال بوضوح مع قراءة الإحاطة بصوت مسموع دون تسجيل.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "b2-10-p01-model-01",
+      "section": "Written Models",
+      "source": "Section 8 — نموذج الجزء (أ) DL-B2-10-P01 (637 chars, 5 sentences)",
+      "status": "added",
+      "finding": "Added 5-sentence German written model (637 chars >= 180 min) demonstrating a fictional project failure, present counterfactual, past counterfactual with überprüft hätten / wäre ... aufgetreten, a wish with Ich wünschte, ..., and a probability with Es könnte sein, dass ...",
+      "action": "Added in Section 8.",
+      "items": [
+        "In unserem fiktiven Testprojekt gab es gestern eine kurze Störung, weil der Zugriff auf den gemeinsamen Ordner nach einer Änderung blockiert war.",
+        "Wenn die Anwendung einen klaren Offline-Modus hätte, könnte das Team seine Entwürfe trotzdem lokal speichern.",
+        "Wenn wir die Voraussetzungen vor der Änderung gründlicher überprüft hätten, wäre diese Ausfallzeit beim Speichern nicht aufgetreten.",
+        "Ich wünschte, man könnte die wichtigsten Einstellungen mit einem einzigen Klick auf den Standard zurücksetzen.",
+        "Es könnte sein, dass ein kleines Update in der nächsten Woche die Funktion stabiler macht, aber das müssen wir erst im Testsystem prüfen."
+      ]
+    },
+    {
+      "id": "b2-10-p02-model-01",
+      "section": "Written Models",
+      "source": "Section 8 — نموذج الجزء (ب) DL-B2-10-P02 (945 chars, 5 sentences)",
+      "status": "added",
+      "finding": "Added 5-sentence German written and spoken briefing model (945 chars >= 200 min) synthesizing T05 and T06 with past Konjunktiv II, modal double infinitive hätte ... wiederherstellen können, wishes, and non-guaranteed probability.",
+      "action": "Added in Section 8.",
+      "items": [
+        "In der fiktiven Leseübung testet ein Entwicklungsteam eine neue Planungs-App, bei der Störungen auftraten, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war; deshalb wurde das Update noch nicht veröffentlicht.",
+        "Wenn das Team die Einstellungen früher auf mehreren Geräten überprüft hätte, hätte es die Störung wahrscheinlich schon vor der Vorführung bemerkt.",
+        "Auch der schriftliche Hörtext zeigt, wie wichtig Vorbereitung ist: Wenn man vor dem Gerätefehler eine Sicherungskopie erstellt hätte, hätte man die Datei danach viel leichter wiederherstellen können.",
+        "Eine Entwicklerin wünscht sich rückblickend, dass die Testphase länger gewesen wäre, und im Hörtext wünscht sich die Sprecherin, dass alle Geräte dieselbe Schnittstelle hätten.",
+        "Es könnte sein, dass ein klarer Hinweis die Fehlersuche erleichtert, aber möglicherweise werden ältere Geräte trotzdem nicht unterstützt, sodass weitere Tests vor einer Änderung nötig bleiben."
+      ]
+    },
+    {
+      "id": "b2-10-card-01",
+      "section": "Review Cards",
+      "source": "- **Wenn ich früher eine Sicherungskopie erstellt hätte, hätte ich die Datei leichter wiederherstellen können.** → لو أنني أنشأت نسخة احتياطية مبكرًا، لاستطعت استعادة الملف بسهولة أكبر (شرط ماضٍ بـ`erstellt hätte` + نتيجة ماضية بمصدر مزدوج `hätte ... wiederherstellen können`).",
+      "status": "refined",
+      "finding": "Enhanced review card 1 in Section 9 with explicit grammatical cues (past Konjunktiv II, modal double infinitive, passive worden wäre, wäre aufgetreten, kompatibel mit + Dativ, and probability expressions).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-10-card-02",
+      "section": "Review Cards",
+      "source": "- **Ich wünschte, das Gerät wäre mit allen Systemen kompatibel.** → أتمنى لو كان الجهاز متوافقًا مع جميع الأنظمة (أمنية غير محققة في الحاضر بـ`wäre` والصفة `kompatibel mit + Dativ`).",
+      "status": "refined",
+      "finding": "Enhanced review card 2 in Section 9 with explicit grammatical cues (past Konjunktiv II, modal double infinitive, passive worden wäre, wäre aufgetreten, kompatibel mit + Dativ, and probability expressions).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-10-card-03",
+      "section": "Review Cards",
+      "source": "- **Wenn die Schnittstelle früher geprüft worden wäre, wäre keine Störung aufgetreten.** → لو جرى فحص واجهة الربط مبكرًا، لما حدث خلل (ماضي `Konjunktiv II` للمبني للمجهول `geprüft worden wäre` + الفعل اللازم `auftreten` مع `wäre`).",
+      "status": "refined",
+      "finding": "Enhanced review card 3 in Section 9 with explicit grammatical cues (past Konjunktiv II, modal double infinitive, passive worden wäre, wäre aufgetreten, kompatibel mit + Dativ, and probability expressions).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-10-card-04",
+      "section": "Review Cards",
+      "source": "- **Es könnte sein, dass ältere Geräte möglicherweise nicht unterstützt werden.** → من المحتمل ألا تُدعم الأجهزة الأقدم (تعبير عن احتمال غير مؤكد في سياق تقني خيالي دون الجزم بنتيجة مضمونة).",
+      "status": "refined",
+      "finding": "Enhanced review card 4 in Section 9 with explicit grammatical cues (past Konjunktiv II, modal double infinitive, passive worden wäre, wäre aufgetreten, kompatibel mit + Dativ, and probability expressions).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "DL-B2-10-AUD-PHR-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-10-AUD-PHR-01 (1 clip(s), 15 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (15 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "| das Update | die Updates | تحديث البرنامج |",
+        "| die Schnittstelle | die Schnittstellen | واجهة الربط |",
+        "| die Einstellung | die Einstellungen | الإعداد |",
+        "| der Zugriff | die Zugriffe | الوصول / النفاذ |",
+        "| die Störung | die Störungen | خلل / اضطراب |",
+        "| die Ausfallzeit | die Ausfallzeiten | مدة التوقف |",
+        "| die Funktion | die Funktionen | الوظيفة / الميزة |",
+        "| die Voraussetzung | die Voraussetzungen | الشرط المسبق |",
+        "| kompatibel | — | متوافق |",
+        "| wahrscheinlich / vermutlich | — | على الأرجح |",
+        "| möglicherweise / unwahrscheinlich | — | من المحتمل / مستبعد |",
+        "| auftreten | tritt auf | يحدث / يظهر |",
+        "| überprüfen | überprüft | يتحقّق من |",
+        "| zurücksetzen | setzt zurück | يعيد إلى الإعدادات الأصلية |",
+        "| sich wünschen | wünscht sich | يتمنى |"
+      ]
+    },
+    {
+      "id": "DL-B2-10-AUD-MODEL-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-10-AUD-MODEL-01 (1 clip(s), 5 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (5 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Wenn die App offline wäre, könnte sie trotzdem Daten speichern.",
+        "Ich wünschte, das Gerät wäre mit allen Systemen kompatibel.",
+        "Wenn das Team den Fehler früher entdeckt hätte, hätte es das Update verschoben.",
+        "Wenn die Verbindung stabiler gewesen wäre, wäre die Datei schneller übertragen worden.",
+        "Hätte das Team den Fehler früher entdeckt, hätte es das Update verschoben."
+      ]
+    },
+    {
+      "id": "DL-B2-10-AUD-DLG-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-10-AUD-DLG-01 (6 clip(s), 6 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (6 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "**Lea:** Was ist beim letzten Test passiert?",
+        "**Murat:** Die Schnittstelle war nicht kompatibel. Wenn wir das früher überprüft hätten, hätten wir den Fehler vielleicht vor dem Test entdeckt.",
+        "**Lea:** Und was wäre dann anders gewesen?",
+        "**Murat:** Wir hätten das Update später freigegeben.",
+        "**Lea:** Wünschst du dir, dass das Programm einfacher zu bedienen wäre?",
+        "**Murat:** Ja. Es könnte sein, dass eine klarere Einstellung die Nutzung erleichtert. Aber das müssten wir erst prüfen."
+      ]
+    },
+    {
+      "id": "DL-B2-10-AUD-READ-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-10-AUD-READ-01 (1 clip(s), 8 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (8 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Ein fiktives Entwicklungsteam testet eine neue Planungs-App.",
+        "Beim ersten Versuch traten Störungen auf, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war.",
+        "In der Rückschau schreibt das Team: „Wenn wir die Einstellungen früher auf mehreren Geräten überprüft hätten, hätten wir die Störung wahrscheinlich vor der Vorführung bemerkt.“",
+        "Das Update wurde noch nicht veröffentlicht.",
+        "Eine Entwicklerin wünscht sich, dass die Testphase länger gewesen wäre.",
+        "Das Team vermutet, ein klarer Hinweis auf die betroffene Funktion könnte die Fehlersuche erleichtern.",
+        "Sicher ist das jedoch nicht; weitere Tests werden nötig sein.",
+        "Die Beispiele in diesem Text sind erfunden."
+      ]
+    },
+    {
+      "id": "DL-B2-10-AUD-LST-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-10-AUD-LST-01 (1 clip(s), 5 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (5 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Wenn ich früher eine Sicherungskopie erstellt hätte, hätte ich die Datei nach dem Gerätefehler leichter wiederherstellen können.",
+        "Jetzt wünsche ich mir, dass alle Geräte dieselbe Schnittstelle hätten.",
+        "Vielleicht wird die nächste Version kompatibler sein.",
+        "Es könnte aber auch sein, dass ältere Geräte trotzdem nicht unterstützt werden.",
+        "Darum sollte man die Angaben vor einer Änderung überprüfen."
+      ]
+    }
+  ]
+}

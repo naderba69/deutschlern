@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-02-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بهدف B2.2 وتمارين المصدر T01–T07: صيغ Konjunktiv I وتحويل الكلام المباشر، الفعل في الجملة المنقولة (في الموضع الثاني أو مع dass في النهاية)، التمييز بين الاقتباس والنقل، وفهم محضر الاستشارة ونص الاستماع المكتوب، وبديل Konjunktiv II عند تطابق صيغة الجمع مع المضارع.",
+      "ترتبط P01 بتمرين T08 (ملخص محادثة استشارية من أربع إلى ست جمل — كتابة فقط دون جهر)، وترتبط P02 بـT06 وT08 (إحاطة مهنية لزميل من أربع إلى ست جمل استنادًا إلى T06 مع خطوة تالية مقترحة — كتابة + قراءة جهرية ذاتية). تنسب كل مهمة أربع معلومات على الأقل إلى مصادرها وتستخدم شكلين مناسبين من Konjunktiv I على الأقل.",
+      "التحقق ذاتي ومحلي بمعايير ظاهرة وحد أدنى للحروف (160 في P01 و180 في P02)؛ لا يعتمد على MP3 أو صوت مولّد، ولا يدّعي تصحيح الكتابة المفتوحة أو النطق آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-02-Q01",
+      "sourceTaskIds": [
+        "DL-B2-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "Konjunktiv I",
+        "können",
+        "صيغة الغائب المفرد"
+      ],
+      "prompt": "اختر صيغة Konjunktiv I المناسبة: Die Führungskraft erklärt, die Bewerberin ___ das Projekt leiten.",
+      "options": [
+        "kann",
+        "könne",
+        "können"
+      ],
+      "answerIndex": 1,
+      "explanation": "صيغة الغائب المفرد من können في Konjunktiv I هي könne؛ وتُستخدم هنا لنقل كلام المسؤولة عن المتقدمة."
+    },
+    {
+      "id": "DL-B2-02-Q02",
+      "sourceTaskIds": [
+        "DL-B2-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "تحويل الكلام المباشر",
+        "sein",
+        "sei"
+      ],
+      "prompt": "حوّل الاقتباس إلى كلام منقول: Der Coach sagt: „Das Anschreiben ist wichtig.“",
+      "options": [
+        "Der Coach sagt, das Anschreiben ist wichtig.",
+        "Der Coach sagt, das Anschreiben habe wichtig.",
+        "Der Coach sagt, das Anschreiben sei wichtig."
+      ],
+      "answerIndex": 2,
+      "explanation": "نستخدم sei لنقل ist بصيغة Konjunktiv I: Der Coach sagt, das Anschreiben sei wichtig."
+    },
+    {
+      "id": "DL-B2-02-Q03",
+      "sourceTaskIds": [
+        "DL-B2-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "wollen",
+        "نقل الرغبة"
+      ],
+      "prompt": "أكمل بصيغة الفعل المناسبة: Die Beraterin erklärt, die Bewerberin ___ künftig mehr Verantwortung übernehmen. (wollen)",
+      "options": [
+        "will",
+        "wolle",
+        "wollen"
+      ],
+      "answerIndex": 1,
+      "explanation": "صيغة الغائب المفرد من wollen في Konjunktiv I هي wolle؛ ويأتي المصدر übernehmen في نهاية العبارة."
+    },
+    {
+      "id": "DL-B2-02-Q04",
+      "sourceTaskIds": [
+        "DL-B2-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "التمييز بين الاقتباس والنقل",
+        "Konjunktiv I"
+      ],
+      "prompt": "ما نوع الجملة **Der Coach sagt, das Profil passe zur Stelle.**؟",
+      "options": [
+        "كلام مباشر بين علامتي اقتباس",
+        "كلام منقول",
+        "جملة استفهامية"
+      ],
+      "answerIndex": 1,
+      "explanation": "الجملة تنقل كلام المدرّب من دون اقتباس مباشر؛ وتظهر صيغة passe من Konjunktiv I."
+    },
+    {
+      "id": "DL-B2-02-Q05",
+      "sourceTaskIds": [
+        "DL-B2-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "فهم محضر الاستشارة",
+        "الخبرة المهنية"
+      ],
+      "prompt": "كم تبلغ خبرة المتقدمة في خدمة العملاء بحسب محضر الاستشارة؟",
+      "options": [
+        "عدة أشهر",
+        "عدة سنوات",
+        "عشر سنوات بالضبط"
+      ],
+      "answerIndex": 1,
+      "explanation": "يذكر المحضر أن المتقدمة لديها عدة سنوات من الخبرة في خدمة العملاء: mehrere Jahre Erfahrung im Kundenservice."
+    },
+    {
+      "id": "DL-B2-02-Q06",
+      "sourceTaskIds": [
+        "DL-B2-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "فهم محضر الاستشارة",
+        "تفصيل مهني"
+      ],
+      "prompt": "ما الذي تستطيع المتقدمة وصفه بمزيد من الدقة وفق المحضر؟",
+      "options": [
+        "هواياتها في عطلة نهاية الأسبوع",
+        "مسؤولياتها في المشروع الأخير",
+        "راتبها في وظيفتها القادمة"
+      ],
+      "answerIndex": 1,
+      "explanation": "تستطيع المتقدمة أن تصف مسؤولياتها في المشروع الأخير بصورة أدق: ihre Zuständigkeiten im letzten Projekt genauer beschreiben."
+    },
+    {
+      "id": "DL-B2-02-Q07",
+      "sourceTaskIds": [
+        "DL-B2-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "konkret"
+      ],
+      "prompt": "ما الذي ينبغي صياغته بصورة محددة بحسب المدرّب في نص الاستماع؟",
+      "options": [
+        "الهدف المهني",
+        "عنوان السيرة الذاتية فقط",
+        "موعد المقابلة"
+      ],
+      "answerIndex": 0,
+      "explanation": "يقول المدرّب إن الهدف المهني يجب أن يصاغ بصورة محددة: ein berufliches Ziel müsse konkret formuliert werden. يمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-02-Q08",
+      "sourceTaskIds": [
+        "DL-B2-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "تفصيل عن خبرة المشاركة"
+      ],
+      "prompt": "ماذا فعلت إحدى المشاركات في العام الماضي بحسب النص؟",
+      "options": [
+        "نسّقت فريقًا صغيرًا",
+        "كتبت إعلان وظيفة",
+        "تولت منصبًا إداريًا جديدًا"
+      ],
+      "answerIndex": 0,
+      "explanation": "تقول المشاركة إنها نسّقت فريقًا صغيرًا في العام الماضي: sie habe im letzten Jahr ein kleines Team koordiniert. لا يلزم تشغيل ملف صوتي للإجابة."
+    },
+    {
+      "id": "DL-B2-02-Q09",
+      "sourceTaskIds": [
+        "DL-B2-02-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "helfen",
+        "صيغ الكلام المنقول"
+      ],
+      "prompt": "أكمل التحويل إلى كلام منقول: Der Mentor sagt: „Das Anschreiben hilft.“ → Der Mentor sagt, das Anschreiben ___.",
+      "options": [
+        "hilft",
+        "helfe",
+        "helfen"
+      ],
+      "answerIndex": 1,
+      "explanation": "صيغة الغائب المفرد من helfen في Konjunktiv I هي helfe، ولذلك نقول: Der Mentor sagt, das Anschreiben helfe."
+    },
+    {
+      "id": "DL-B2-02-Q10",
+      "sourceTaskIds": [
+        "DL-B2-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "skillTags": [
+        "تطابق صيغة الجمع",
+        "Konjunktiv II كبديل للتوضيح"
+      ],
+      "prompt": "قال الزملاء: **„Wir haben klare Ziele.“** أي جملة تميّز الكلام المنقول بوضوح عندما تتطابق صيغة **Konjunktiv I** في الجمع مع المضارع؟",
+      "options": [
+        "Sie sagen, sie hätten klare Ziele.",
+        "Sie sagen, sie haben klare Ziele.",
+        "Sie sagen, sie hätt klare Ziele."
+      ],
+      "answerIndex": 0,
+      "explanation": "صيغة الجمع haben في Konjunktiv I تطابق المضارع، لذلك يمكن استعمال Konjunktiv II هنا للتوضيح: sie hätten klare Ziele."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-02-P01",
+      "sourceTaskIds": [
+        "DL-B2-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب ملخصًا مهنيًا من أربع إلى ست جمل ألمانية عن محادثة خيالية مع مستشار مهني. انسب أربعة أقوال أو معلومات على الأقل إلى أصحابها، واستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل sei أو habe أو könne أو wolle (أو بديل Konjunktiv II مثل hätten عند تطابق صيغة الجمع مع المضارع وعند الحاجة إلى التوضيح). ميّز بوضوح بين الكلام المنقول وما تؤكده بنفسك، ولا تعرض الرأي أو الخطة كحقيقة مؤكدة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل صوتي.",
+      "criteria": {
+        "taskCompletion": "ملخص مهني مكتوب من أربع إلى ست جمل ألمانية عن محادثة مهنية، يتضمن أربعة أقوال أو معلومات منسوبة على الأقل.",
+        "meaningClarity": "تظهر بوضوح هوية مصدر الأقوال، ويُفصل الكلام المنقول عن المعلومة التي يؤكدها الكاتب بنفسه؛ ولا تُعرض الآراء أو الخطط كحقائق مؤكدة.",
+        "targetSkill": "يستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل sei/habe/könne/wolle، مع تصريف وترتيب فعل مناسبين، وعند تطابق صيغة الجمع مع المضارع يستعمل Konjunktiv II مثل hätten لإزالة الالتباس عند الحاجة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-02-P02",
+      "sourceTaskIds": [
+        "DL-B2-02-T06",
+        "DL-B2-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-02-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى نص الاستماع المكتوب في `T06`، اكتب إحاطة مهنية من أربع إلى ست جمل لزميل ثم اقرأها بصوت واضح. انسب نصيحتي المدرّب بشأن الهدف والسيرة الذاتية، ومعلومة المشاركة عن تنسيق الفريق، ومعلومة المدرّب عن دور رسالة التقديم، واستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل müsse أو solle أو habe أو könne. اختم بخطوة تالية مناسبة للمتقدمة، وافصل بوضوح بين ما ورد في النص وما تقترحه أنت. لا تحتاج إلى تشغيل ملف MP3؛ اكتب النص ثم اقرأه بصوت واضح؛ لا يلزم تسجيل.",
+      "criteria": {
+        "taskCompletion": "إحاطة من أربع إلى ست جمل تنقل نصيحتي المدرّب بشأن الهدف والسيرة الذاتية، ومعلومة المشاركة عن تنسيق فريق صغير، ومعلومة المدرّب عن رسالة التقديم، وتقترح خطوة تالية للمتقدمة.",
+        "meaningClarity": "تُنسب النصائح والمعلومات الأربع إلى أصحابها، وتُفصل الخطوة المقترحة بوضوح عن المعلومات الواردة في نص الاستماع.",
+        "targetSkill": "يستخدم شكلين مناسبين على الأقل من Konjunktiv I مثل müsse/solle/habe/könne، مع تصريف وترتيب مناسبين، ويقرأ المتعلم النص بصوت واضح دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

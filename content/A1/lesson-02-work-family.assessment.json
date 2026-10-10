@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-02-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR8: مراجعة نصية لكل الوحدات بالمراجع في data/reviews/a1-02-review.json؛ ليست شهادة CEFR أو اعتماد نطق.",
+      "P01 يطابق T08: خمس جمل مكتوبة عن أسرة خيالية وثلاثة أفراد واسم ومهنة لشخص واحد. P02 يطابق T09: ثلاثة أسئلة وأجوبة ثم تلخيص بجملتين وأداء فردي.",
+      "قُيد جدول mein/dein بحالة الرفع، ووُضح الفرق عن einen/meinen Bruder. حُسّن ربط Q09 بـT04 ووضحت Tunis في Q08. مفاتيح الاختيار محفوظة.",
+      "أصلا القراءة والاستماع ومقطعاهما موجودان ومحفوظان دون تغيير أو استماع أو اعتماد جديد؛ لا يتطلب التقييم تشغيل الصوت."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-02-Q01",
+      "sourceTaskIds": [
+        "DL-A1-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "مفردات الأسرة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Bruder؟",
+      "options": [
+        "الأخ",
+        "الأب",
+        "الجد"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Bruder تعني «الأخ»."
+    },
+    {
+      "id": "DL-A1-02-Q02",
+      "sourceTaskIds": [
+        "DL-A1-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "ضمائر الملكية",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: ___ Mutter arbeitet als Ärztin.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Dein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Mutter مؤنث مفرد في حالة الرفع هنا، فنكتب Meine في أول الجملة. تتغير نهاية الملكية أيضًا بحسب الحالة الإعرابية."
+    },
+    {
+      "id": "DL-A1-02-Q03",
+      "sourceTaskIds": [
+        "DL-A1-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "ضمائر الملكية",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: ___ Eltern wohnen in Nabeul.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Dein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Eltern جمع في حالة الرفع هنا، لذلك نكتب Meine في أول الجملة."
+    },
+    {
+      "id": "DL-A1-02-Q04",
+      "sourceTaskIds": [
+        "DL-A1-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "تصريف arbeiten",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ in einem Café.",
+      "options": [
+        "arbeitet",
+        "arbeitest",
+        "arbeite"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نقول arbeitest."
+    },
+    {
+      "id": "DL-A1-02-Q05",
+      "sourceTaskIds": [
+        "DL-A1-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "المهن والجنس",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف نقول «أختي طبيبة»؟",
+      "options": [
+        "Mein Schwester ist Arzt.",
+        "Meine Schwester ist Ärztin.",
+        "Meine Schwester sind Ärztin."
+      ],
+      "answerIndex": 1,
+      "explanation": "Schwester مؤنث، واسم المهنة هنا Ärztin."
+    },
+    {
+      "id": "DL-A1-02-Q06",
+      "sourceTaskIds": [
+        "DL-A1-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "السؤال عن المهنة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يسأل عن المهنة؟",
+      "options": [
+        "Wo wohnst du?",
+        "Wie heißt dein Vater?",
+        "Was bist du von Beruf?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Was bist du von Beruf? تعني «ما مهنتك؟»."
+    },
+    {
+      "id": "DL-A1-02-Q07",
+      "sourceTaskIds": [
+        "DL-A1-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، أين تسكن Rania؟",
+      "options": [
+        "في تونس العاصمة",
+        "في نابل",
+        "في سوسة"
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول: Ich heiße Rania und wohne in Nabeul. نابل هي مكان السكن."
+    },
+    {
+      "id": "DL-A1-02-Q08",
+      "sourceTaskIds": [
+        "DL-A1-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "بحسب نص القراءة، أين يدرس Sami؟",
+      "options": [
+        "في نابل",
+        "في تونس العاصمة",
+        "في صفاقس"
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول: Mein Bruder Sami studiert in Tunis. المقصود مدينة تونس، لا اسم البلد Tunesien."
+    },
+    {
+      "id": "DL-A1-02-Q09",
+      "sourceTaskIds": [
+        "DL-A1-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "بناء الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Meine Tante ___ Ärztin.",
+      "options": [
+        "ist",
+        "sind",
+        "bist"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع Tante المفردة نستخدم ist."
+    },
+    {
+      "id": "DL-A1-02-Q10",
+      "sourceTaskIds": [
+        "DL-A1-02-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "skillTags": [
+        "عبارات التواصل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال يعني «هل لديك إخوة أو أخوات؟»؟",
+      "options": [
+        "Hast du Geschwister?",
+        "Wo arbeitet dein Vater?",
+        "Was bist du von Beruf?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Hast du Geschwister? تسأل عن الإخوة والأخوات."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-02-P01",
+      "sourceTaskIds": [
+        "DL-A1-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خمس جمل ألمانية عن أسرة خيالية من اختيارك. قدّم ثلاثة أفراد مختلفين باستخدام mein/meine، واذكر اسم أحدهم ومهنته. يمكنك توزيعها هكذا: تقديم الفرد الأول، اسمه، مهنته، تقديم الفرد الثاني، تقديم الفرد الثالث. هذه مهمة كتابة فقط؛ لا يلزم كشف بيانات حقيقية أو القراءة بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "كتبت خمس جمل تتضمن ثلاثة أفراد مختلفين واسم أحدهم ومهنته.",
+        "meaningClarity": "تتضح صلة الأفراد بالمتحدث الخيالي، ويعود الاسم والمهنة على الشخص نفسه.",
+        "targetSkill": "أستخدم mein/meine في نماذج الرفع، وأصرف sein/heißen مع الشخص المفرد، وأختار اسم المهنة المناسب."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 80,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-02-P02",
+      "sourceTaskIds": [
+        "DL-A1-02-T09"
+      ],
+      "objectiveIds": [
+        "DL-A1-02-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب مقابلة مع شخص خيالي: اسأل Hast du Geschwister? ثم Was ist dein Vater von Beruf? ثم Wo arbeitet dein Vater? واكتب جوابًا كاملًا مناسبًا لكل سؤال. اختر بيانات خيالية، ثم لخّص مهنة الأب ومكان عمله في جملتين باستخدام Der Vater ثم Er. اقرأ الأسئلة الثلاثة وأجوبتها وجملتي التلخيص بصوت مرتفع؛ يمكنك أداء الدورين وحدك، دون شريك أو تسجيل صوتي.",
+      "criteria": {
+        "taskCompletion": "كتبت الأسئلة الثلاثة وأجوبتها وجملتي التلخيص، وقرأت جميع الأجزاء بصوت مرتفع.",
+        "meaningClarity": "أجيب عن الإخوة والمهنة ومكان العمل، وأحافظ على البيانات نفسها في التلخيص.",
+        "targetSkill": "أميز بين Was … von Beruf? وWo arbeitet …?، وأستخدم habe/ist/arbeitet مع الفاعل المناسب وmein/dein في السياق المدرب."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 140,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

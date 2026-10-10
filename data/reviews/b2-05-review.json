@@ -1,0 +1,1390 @@
+{
+  "reviewVersion": "cr47-b2-05-v1",
+  "lessonId": "b2-05-health-fitness-medical-information",
+  "lessonTitle": "B2.5 — الصحة واللياقة والمعلومات الطبية: السبب والنتيجة",
+  "assessmentVersion": "b2-05-v3",
+  "generatedAt": "2026-10-09",
+  "unitCount": 100,
+  "exerciseSubItemCount": 41,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-05-health-fitness-medical-information.md": "2eded111fae9a136a69f72bdf1872e146fedad423bbea989e4716b546db964ef",
+    "content/B2/lesson-05-health-fitness-medical-information.assessment.json": "5cd3ed4fb41293ef3c602f2b0d3b7a74ef8b57a2a2986b594abfb4dc91c367ca"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-05-AUD-PHR-01": "0fa900bf8ff94d667dd7e0df5b5c2e02413a47b8ad11cdf70a8e475ca655965e",
+    "DL-B2-05-AUD-MODEL-01": "63258f28e9897e00e51d8c7440024d820499eaeb107e8ccfd89667364b699296",
+    "DL-B2-05-AUD-DLG-01": "a604c650cbb0aef109bd0cc2a3a0cd98fce65e0025b4f6474d704e9f48014eaa",
+    "DL-B2-05-AUD-READ-01": "970589f1edec05fee44b2a315d615d0188673c47951d25234e50312030bc21e1",
+    "DL-B2-05-AUD-LST-01": "f1d874fc9912997ccf46c29836fa82a2e7c8b2812158b1374b70f8859483f32c"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-prepositions",
+      "title": "Lingolia English — Prepositions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Overview of German prepositions and case assignment, including causal prepositions (aufgrund, wegen, dank, infolge)"
+    },
+    {
+      "id": "lingolia-en-causal-prepositions",
+      "title": "Lingolia English — Causal prepositions in German grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/causal",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "aufgrund + Genitiv (due to / because of) alongside wegen, dank, infolge, mangels"
+    },
+    {
+      "id": "lingolia-en-das-vs-dass",
+      "title": "Lingolia English — das vs. dass (Compound conjunctions with dass)",
+      "url": "https://deutsch.lingolia.com/en/vocabulary/easily-confused-words/das-vs-dass",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "sodass / so dass (= deshalb) as a compound subordinating conjunction with verb-final word order in the subordinate clause"
+    },
+    {
+      "id": "duden-sodass",
+      "title": "Duden — sodass, so dass",
+      "url": "https://www.duden.de/rechtschreibung/sodass",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Conjunction sodass (recommended spelling) / so dass expressing result/consequence"
+    },
+    {
+      "id": "duden-weshalb",
+      "title": "Duden — weshalb",
+      "url": "https://www.duden.de/rechtschreibung/weshalb",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Interrogative and relative adverb weshalb (aus welchem Grund; das ist der Grund dafür, dass) introducing a verb-final clause"
+    },
+    {
+      "id": "duden-deshalb",
+      "title": "Duden — deshalb",
+      "url": "https://www.duden.de/rechtschreibung/deshalb",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Causal adverb deshalb (aus diesem Grund, daher) in main clauses"
+    },
+    {
+      "id": "duden-aufgrund-praep",
+      "title": "Duden — aufgrund, auf Grund (Präposition)",
+      "url": "https://www.duden.de/rechtschreibung/aufgrund_Praeposition",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Preposition aufgrund + Genitiv (begründet, veranlasst durch; wegen)"
+    },
+    {
+      "id": "duden-aufgrund-adverb",
+      "title": "Duden — aufgrund, auf Grund (Adverb)",
+      "url": "https://www.duden.de/rechtschreibung/aufgrund",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Adverbial use aufgrund von + Dativ when no article is present"
+    },
+    {
+      "id": "duden-stichprobe",
+      "title": "Duden — Stichprobe",
+      "url": "https://www.duden.de/rechtschreibung/Stichprobe",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Stichprobe, Plural die Stichproben; subset selected from a population for a study"
+    },
+    {
+      "id": "duden-kontrollgruppe",
+      "title": "Duden — Kontrollgruppe",
+      "url": "https://www.duden.de/rechtschreibung/Kontrollgruppe",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Kontrollgruppe, Plural die Kontrollgruppen; comparison group matching the study group"
+    },
+    {
+      "id": "duden-messwert",
+      "title": "Duden — Messwert",
+      "url": "https://www.duden.de/rechtschreibung/Messwert",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Messwert; value determined by measurement"
+    },
+    {
+      "id": "duden-ergebnis",
+      "title": "Duden — Ergebnis",
+      "url": "https://www.duden.de/rechtschreibung/Ergebnis",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "das Ergebnis, Genitiv des Ergebnisses, Plural die Ergebnisse; result of an investigation or measurement"
+    },
+    {
+      "id": "duden-befragung",
+      "title": "Duden — Befragung",
+      "url": "https://www.duden.de/rechtschreibung/Befragung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Befragung, Plural die Befragungen; survey or inquiry among individuals"
+    },
+    {
+      "id": "duden-auswertung",
+      "title": "Duden — Auswertung",
+      "url": "https://www.duden.de/rechtschreibung/Auswertung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Auswertung, Plural die Auswertungen; evaluation/analysis of survey results"
+    },
+    {
+      "id": "duden-hinweisen",
+      "title": "Duden — hinweisen",
+      "url": "https://www.duden.de/rechtschreibung/hinweisen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "separable strong verb hinweisen (weist hin, wies hin, hat hingewiesen) + auf + Akkusativ"
+    },
+    {
+      "id": "duden-verallgemeinern",
+      "title": "Duden — verallgemeinern",
+      "url": "https://www.duden.de/rechtschreibung/verallgemeinern",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "inseparable weak verb verallgemeinern (verallgemeinert, verallgemeinerte, hat verallgemeinert without ge-)"
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "lingolia-search-causal",
+      "title": "Search index — Lingolia sodass weshalb deshalb aufgrund Genitiv",
+      "url": "https://deutsch.lingolia.com/en/grammar/declension",
+      "access": "search_snippet_only",
+      "chunks": [],
+      "totalChunks": 0,
+      "usedFor": "Search verification of causal prepositions with Genitiv and compound conjunctions"
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Messwerte",
+      "reason": "HTTP 404 plural URL; replaced by singular lemma https://www.duden.de/rechtschreibung/Messwert"
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/belegen",
+      "reason": "HTTP 404 disambiguated URL on Duden; verified verb morphology in lesson note"
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-05-scope-01",
+      "section": "Scope",
+      "sourceText": "B2.5 title, duration, skills, self-study disclaimer, and non-medical notice",
+      "status": "refined",
+      "finding": "Explicitly states P01 is writing-only while P02 requires writing + self-guided reading aloud without recording or partner, preserves the medical disclaimer, and includes the non-certification self-study notice.",
+      "action": "Updated header and goal line."
+    },
+    {
+      "id": "b2-05-scope-02",
+      "section": "Scope",
+      "sourceText": "Causal and consecutive structures: sodass, weshalb, deshalb/daher, aufgrund + Genitiv",
+      "status": "refined",
+      "finding": "Scopes verb-second order after fronted deshalb/daher to declarative main clauses while noting mid-clause placement and aufgrund von + Dativ when determiners are absent.",
+      "action": "Refined Section 2 and assessment reviewNotes."
+    },
+    {
+      "id": "b2-05-scope-03",
+      "section": "Scope",
+      "sourceText": "Vocabulary note on Ergebnis, Messwert, hinweisen auf + Akk., belegen, verallgemeinern",
+      "status": "added",
+      "finding": "Documents Duden morphology: das Ergebnis -> des Ergebnisses / die Ergebnisse, der Messwert -> des Messwerts / die Messwerte, hinweisen auf + Akk. (weist hin, hat hingewiesen), and inseparable belegen/verallgemeinern without ge-.",
+      "action": "Added vocabulary usage note below the table."
+    },
+    {
+      "id": "b2-05-scope-04",
+      "section": "Scope",
+      "sourceText": "Pre-text and pre-task helper guidance (مساعدة قبل النصوص والمهمات)",
+      "status": "added",
+      "finding": "Provides 10 structured helper bullets on sodass vs. deshalb, relative weshalb, fronted Aufgrund + Genitiv, Genitiv inflection across genders, reflexive sich placement, passive+modal verb clusters, sample vs. control group, correlation vs. causation, medical disclaimer ethics, and P01/P02 modalities.",
+      "action": "Added helper subsection in Section 2 without altering model sentence audio extraction."
+    },
+    {
+      "id": "b2-05-scope-05",
+      "section": "Scope",
+      "sourceText": "Assessment version b2-05-v3 and Service Worker cache v96",
+      "status": "refined",
+      "finding": "Bumps B2.5 assessment version from b2-05-v2 to b2-05-v3 and Service Worker cache to v96 so stale v1/v2 records or drafts require re-verification of practical tasks while preserving Q03 fix.",
+      "action": "Updated .assessment.json, service-worker.js, and progression/SW tests."
+    },
+    {
+      "id": "b2-05-vocab-01",
+      "section": "Vocabulary",
+      "sourceText": "| die Studie | die Studien | دراسة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-02",
+      "section": "Vocabulary",
+      "sourceText": "| die Befragung | die Befragungen | استبيان / استطلاع |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-03",
+      "section": "Vocabulary",
+      "sourceText": "| die Stichprobe | die Stichproben | عيّنة الدراسة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-04",
+      "section": "Vocabulary",
+      "sourceText": "| der Messwert | die Messwerte | قيمة القياس |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-05",
+      "section": "Vocabulary",
+      "sourceText": "| die Kontrollgruppe | die Kontrollgruppen | المجموعة الضابطة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-06",
+      "section": "Vocabulary",
+      "sourceText": "| die Auswertung | die Auswertungen | تحليل النتائج |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-07",
+      "section": "Vocabulary",
+      "sourceText": "| das Ergebnis | die Ergebnisse | النتيجة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-08",
+      "section": "Vocabulary",
+      "sourceText": "| die Fachquelle | die Fachquellen | مصدر متخصص |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-09",
+      "section": "Vocabulary",
+      "sourceText": "| die Aussage | die Aussagen | ادّعاء / عبارة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-10",
+      "section": "Vocabulary",
+      "sourceText": "| die Teilnahme | die Teilnahmen | المشاركة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-11",
+      "section": "Vocabulary",
+      "sourceText": "| die Belastung | die Belastungen | الجهد / الحمل |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-12",
+      "section": "Vocabulary",
+      "sourceText": "| repräsentativ / vorläufig | — | ممثّل للسكان / أوليّ |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-13",
+      "section": "Vocabulary",
+      "sourceText": "| übertragbar / nachvollziehbar | — | قابل للتعميم / مفهوم ويمكن تتبّعه |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-14",
+      "section": "Vocabulary",
+      "sourceText": "| belegen | belegt | يثبت / يدعم بالأدلة |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-15",
+      "section": "Vocabulary",
+      "sourceText": "| hinweisen auf + Akkusativ | weist hin | يشير إلى |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-vocab-16",
+      "section": "Vocabulary",
+      "sourceText": "| verallgemeinern | verallgemeinert | يعمّم |",
+      "status": "verified",
+      "finding": "Verified spelling, article/plural or verb conjugation, Arabic gloss, and exact alignment with DL-B2-05-AUD-PHR-01 transcript.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-grammar-01",
+      "section": "Grammar",
+      "sourceText": "| **sodass** | نتيجة؛ جملة تابعة والفعل في النهاية | **Die Stichprobe war klein, sodass die Ergebnisse nicht repräsentativ waren.** — كانت العينة صغيرة، لذلك لم تكن النتائج ممثّلة. |",
+      "status": "verified",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-02",
+      "section": "Grammar",
+      "sourceText": "| **weshalb** | نتيجة أو استنتاج؛ جملة تابعة موصولة والفعل في النهاية | **Es gab keine Kontrollgruppe, weshalb die Ursache nicht bestimmt werden konnte.** — لم توجد مجموعة ضابطة، ولذلك لم يمكن تحديد السبب. |",
+      "status": "refined",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-03",
+      "section": "Grammar",
+      "sourceText": "| **deshalb / daher** | نتيجة؛ ظرف ربط في جملة رئيسية خبرية والفعل في الموقع الثاني | **Die Angaben sind vorläufig. Deshalb sollte man vorsichtig urteilen.** — المعلومات أولية، لذلك ينبغي التقييم بحذر. |",
+      "status": "refined",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-04",
+      "section": "Grammar",
+      "sourceText": "| **aufgrund + Genitiv** | سبب بصيغة اسمية، شائع في الأسلوب الرسمي | **Aufgrund der kleinen Stichprobe ist die Aussage nur begrenzt übertragbar.** — بسبب صغر العينة، لا يمكن تعميم الادّعاء إلا بحدود. |",
+      "status": "verified",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-05",
+      "section": "Grammar",
+      "sourceText": "- بعد **sodass / weshalb** يأتي الفعل المصرف في نهاية الجملة التابعة.",
+      "status": "verified",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-06",
+      "section": "Grammar",
+      "sourceText": "- بعد **deshalb / daher** في صدر الجملة الرئيسية الخبرية يأتي الفعل المصرف مباشرةً في الموقع الثاني (ويمكن أيضًا وقوع **deshalb** داخل الجملة بعد الفعل والفاعل مثل: `Die Aussage kann deshalb nicht verallgemeinert werden`).",
+      "status": "refined",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-07",
+      "section": "Grammar",
+      "sourceText": "- بعد **aufgrund** نستخدم غالبًا **Genitiv** في الكتابة الرسمية: **aufgrund der Studie / aufgrund der begrenzten Angaben** (ويمكن في التراكيب غير المقترنة بأداة استعمال `aufgrund von + Dativ`).",
+      "status": "refined",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-grammar-08",
+      "section": "Grammar",
+      "sourceText": "- أمثلة تُظهر الجنس النحوي: للمذكر **aufgrund des unklaren Messwerts**، وللمحايد **aufgrund des vorläufigen Ergebnisses**، وللجمع **aufgrund der begrenzten Angaben**.",
+      "status": "verified",
+      "finding": "Verified causal/consecutive grammar explanation, Genitiv forms, and exact match of bold German examples with DL-B2-05-AUD-MODEL-01.",
+      "action": "Preserved all bold German model sentences verbatim; refined Arabic scope notes."
+    },
+    {
+      "id": "b2-05-helper-01",
+      "section": "Helper",
+      "sourceText": "- **الفرق التركيبي بين `sodass` و`deshalb`:** تربط `sodass` (أو `so dass`) النتيجة بجملة تابعة بعد فاصلة فيقع الفعل المصرف في النهاية (`…, sodass die Ergebnisse nicht repräsentativ waren`)، أما `deshalb` و`daher` فظرفا ربط في جملة رئيسية خبرية يليها الفعل المصرف في الموقع الثاني (`Deshalb sollte man vorsichtig urteilen`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-02",
+      "section": "Helper",
+      "sourceText": "- **استعمال `weshalb` الاستنتاجية:** تربط `weshalb` نتيجةً مترتبة على مضمون الجملة السابقة كلها بجملة تابعة موصولة بعد فاصلة، فيقع الفعل المصرف في آخرها (`…, weshalb die Ursache nicht bestimmt werden konnte`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-03",
+      "section": "Helper",
+      "sourceText": "- **تصدّر `Aufgrund + Genitiv` الجملة الرئيسية:** تشغل عبارة `Aufgrund …` الموقع الأول الكامل في الجملة الرئيسية الخبرية، فيأتي الفعل المصرف بعدها مباشرةً في الموقع الثاني (`Aufgrund der fehlenden Angaben wurde keine Schlussfolgerung gezogen`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-04",
+      "section": "Helper",
+      "sourceText": "- **علامات `Genitiv` بعد `aufgrund`:** مع المؤنث والجمع نستخدم `der + -en` (`aufgrund der kleinen Stichprobe / aufgrund der begrenzten Angaben`)، ومع المذكر والمحايد نستخدم `des + -en` مع إضافة `-(e)s` للاسم (`aufgrund des unklaren Messwerts / aufgrund des vorläufigen Ergebnisses`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-05",
+      "section": "Helper",
+      "sourceText": "- **ترتيب الضمير الانعكاسي `sich` في التابعة والرئيسية:** في الجملة الرئيسية نقول `Deshalb lässt sich die Ursache nicht bestimmen`، أما بعد `sodass` أو `weshalb` فيتقدم `sich` بعد الرابط ويذهب الفعل المصرف إلى النهاية (`…, sodass sich die Ursache nicht bestimmen ließ`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-06",
+      "section": "Helper",
+      "sourceText": "- **الأفعال المركبة في نهاية الجملة التابعة:** عند اجتماع فعل مبني للمجهول مع فعل ناقص في جملة `sodass` أو `weshalb` يقف الفعل المصرف في آخر الجملة بعد `Partizip II + werden` (`…, weshalb die Ursache nicht bestimmt werden konnte`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-07",
+      "section": "Helper",
+      "sourceText": "- **التمييز بين العيّنة والمجموعة الضابطة:** العيّنة (`die Stichprobe`) هي مجموعة المشاركين الذين شملهم الاستطلاع، أما المجموعة الضابطة (`die Kontrollgruppe`) فهي مجموعة مقارنة مماثلة تساعد على فحص الأثر السببي.",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-08",
+      "section": "Helper",
+      "sourceText": "- **الفصل بين الارتباط والسببية:** غياب المجموعة الضابطة وصغر العيّنة واقتصار الاستطلاع على إجابات ذاتية تعني أن التقرير يصف ما قاله المشاركون فقط ولا يثبت علاقة سبب ونتيجة (`Ursache-Wirkungs-Zusammenhang`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-09",
+      "section": "Helper",
+      "sourceText": "- **الأمانة الصحية والعلمية:** التقارير والأرقام في هذا الدرس خيالية لأغراض التدرّب اللغوي، ولا يجوز تحويلها إلى تشخيص أو نصيحة طبية شخصية؛ وعند الأسئلة الصحية الشخصية يُرجع إلى مختص مؤهل (`eine qualifizierte Fachperson`).",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-helper-10",
+      "section": "Helper",
+      "sourceText": "- **أداء المهمتين T08 (`P01` و`P02`):** المهمة الأولى `P01` كتابة فقط دون جهر، والمهمة الثانية `P02` كتابة مع قراءة جهرية ذاتية دون شريك أو تسجيل؛ والتقييم يعتمد على النصوص المكتوبة والتحقق الذاتي المحلي ولا يتوقف على تشغيل ملفات الصوت.",
+      "status": "added",
+      "finding": "Added targeted B2.5 learner guidance verified against Lingolia and Duden.",
+      "action": "Added in Section 2 helper block."
+    },
+    {
+      "id": "b2-05-dialogue-01",
+      "section": "Dialogue",
+      "sourceText": "**Rima:** Ich habe eine Überschrift über Bewegung und Gesundheit gelesen. Kann ich daraus eine Empfehlung ableiten?",
+      "status": "verified",
+      "finding": "Verified speaker label, causal connector usage, and exact match with DL-B2-05-AUD-DLG-01 segment 1.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-dialogue-02",
+      "section": "Dialogue",
+      "sourceText": "**Nabil:** Zuerst sollten wir prüfen, auf welche Studie sich der Bericht bezieht.",
+      "status": "verified",
+      "finding": "Verified speaker label, causal connector usage, and exact match with DL-B2-05-AUD-DLG-01 segment 2.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-dialogue-03",
+      "section": "Dialogue",
+      "sourceText": "**Rima:** Es nahmen nur wenige Freiwillige aus einem Verein teil.",
+      "status": "verified",
+      "finding": "Verified speaker label, causal connector usage, and exact match with DL-B2-05-AUD-DLG-01 segment 3.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-dialogue-04",
+      "section": "Dialogue",
+      "sourceText": "**Nabil:** Dann war die Stichprobe wahrscheinlich klein, sodass die Ergebnisse nicht für alle gelten.",
+      "status": "verified",
+      "finding": "Verified speaker label, causal connector usage, and exact match with DL-B2-05-AUD-DLG-01 segment 4.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-dialogue-05",
+      "section": "Dialogue",
+      "sourceText": "**Rima:** Im Text gibt es auch keine Kontrollgruppe.",
+      "status": "verified",
+      "finding": "Verified speaker label, causal connector usage, and exact match with DL-B2-05-AUD-DLG-01 segment 5.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-dialogue-06",
+      "section": "Dialogue",
+      "sourceText": "**Nabil:** Deshalb lässt sich die Ursache nicht sicher bestimmen. Am besten liest man die Fachquelle und fragt bei persönlichen Gesundheitsfragen eine qualifizierte Fachperson.",
+      "status": "verified",
+      "finding": "Verified speaker label, causal connector usage, and exact match with DL-B2-05-AUD-DLG-01 segment 6.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-01",
+      "section": "Reading",
+      "sourceText": "Ein fiktiver Kurzbericht beschreibt eine Befragung in einer örtlichen Gehgruppe.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-02",
+      "section": "Reading",
+      "sourceText": "24 freiwillige Mitglieder beantworteten Fragen dazu, wo sie Informationen über Bewegung finden.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-03",
+      "section": "Reading",
+      "sourceText": "Erfasst wurden nur ihre Antworten; Fitnesswerte und medizinische Ergebnisse wurden nicht gemessen.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-04",
+      "section": "Reading",
+      "sourceText": "Da alle Teilnehmenden aus derselben Gruppe kamen, war die Stichprobe klein und nicht repräsentativ für die gesamte Bevölkerung.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-05",
+      "section": "Reading",
+      "sourceText": "Es gab auch keine Kontrollgruppe, sodass sich aus der Befragung keine Ursache für gesundheitliche Veränderungen ableiten lässt.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-06",
+      "section": "Reading",
+      "sourceText": "Aufgrund dieser Grenzen kann der Bericht nur beschreiben, was die befragten Personen angegeben haben.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-07",
+      "section": "Reading",
+      "sourceText": "Er belegt nicht, welche Aktivität für alle Menschen am besten wäre.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-08",
+      "section": "Reading",
+      "sourceText": "Die Zahlen und die Befragung in diesem Text sind frei erfunden und dienen nur dem Sprachtraining.",
+      "status": "verified",
+      "finding": "Verified fictional walking-group survey context, causal connectors, and exact match with DL-B2-05-AUD-READ-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-q-01",
+      "section": "Reading Questions",
+      "sourceText": "1. Wo wurde die fiktive Befragung durchgeführt?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-q-02",
+      "section": "Reading Questions",
+      "sourceText": "2. Wie viele Personen nahmen freiwillig teil?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-q-03",
+      "section": "Reading Questions",
+      "sourceText": "3. Was wurde in der Befragung erfasst?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-q-04",
+      "section": "Reading Questions",
+      "sourceText": "4. Warum war die Stichprobe nicht repräsentativ?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-q-05",
+      "section": "Reading Questions",
+      "sourceText": "5. Was kann der Bericht laut Text nicht belegen?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-reading-q-06",
+      "section": "Reading Questions",
+      "sourceText": "6. Sind Zahlen und Befragung real?",
+      "status": "verified",
+      "finding": "Verified comprehension question against reading passage and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-01",
+      "section": "Listening",
+      "sourceText": "In einem fiktiven Artikel wird eine kleine Befragung erwähnt.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly article summary, causal connectors, and exact match with DL-B2-05-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-02",
+      "section": "Listening",
+      "sourceText": "Die Teilnehmenden kamen aus nur einer Gruppe, sodass die Ergebnisse nicht auf alle Erwachsenen übertragen werden können.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly article summary, causal connectors, and exact match with DL-B2-05-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-03",
+      "section": "Listening",
+      "sourceText": "Der Bericht nennt außerdem keine Kontrollgruppe, weshalb ein Ursache-Wirkungs-Zusammenhang nicht nachgewiesen wird.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly article summary, causal connectors, and exact match with DL-B2-05-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-04",
+      "section": "Listening",
+      "sourceText": "Deshalb sollte man die Überschrift nicht als medizinische Empfehlung verstehen.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly article summary, causal connectors, and exact match with DL-B2-05-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-05",
+      "section": "Listening",
+      "sourceText": "Bei persönlichen Fragen ist eine qualifizierte Fachperson die richtige Ansprechperson.",
+      "status": "verified",
+      "finding": "Verified spoken-friendly article summary, causal connectors, and exact match with DL-B2-05-AUD-LST-01.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-q-01",
+      "section": "Listening Questions",
+      "sourceText": "1. Was beschreibt der fiktive Artikel?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-q-02",
+      "section": "Listening Questions",
+      "sourceText": "2. Warum können die Ergebnisse nicht auf alle Erwachsenen übertragen werden?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-q-03",
+      "section": "Listening Questions",
+      "sourceText": "3. Was fehlt im Bericht?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-q-04",
+      "section": "Listening Questions",
+      "sourceText": "4. Was wird nicht nachgewiesen?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-listening-q-05",
+      "section": "Listening Questions",
+      "sourceText": "5. An wen sollte man sich mit persönlichen Fragen wenden?",
+      "status": "verified",
+      "finding": "Verified listening question against transcript and answer key.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-05-T01",
+      "section": "Exercises",
+      "sourceText": "اختر المفردة المناسبة",
+      "status": "verified",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. مجموعة صغيرة تشارك في بحث: **die Stichprobe / die Überschrift**",
+        "2. مجموعة تُستخدم للمقارنة في بعض الدراسات: **die Kontrollgruppe / die Teilnahme**",
+        "3. ما ينتج عن عملية القياس: **der Messwert / die Fachquelle**",
+        "4. أن تجعل حكمًا محدودًا ينطبق على الجميع: **verallgemeinern / belegen**"
+      ]
+    },
+    {
+      "id": "DL-B2-05-T02",
+      "section": "Exercises",
+      "sourceText": "اربط الجملتين بالتركيب المحدد",
+      "status": "refined",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Expanded items in T02/T04/T07 and formatted T06 as 5 numbered lines.",
+      "items": [
+        "1. **Die Gruppe war klein. Die Ergebnisse waren nicht repräsentativ.** → **sodass**",
+        "2. **Es gab keine Kontrollgruppe. Die Ursache konnte nicht bestimmt werden.** → **weshalb**",
+        "3. **Die Daten sind vorläufig. Man sollte die Aussage vorsichtig lesen.** → ابدأ الجملة الثانية بـ**Deshalb**",
+        "4. **Alle Teilnehmenden kamen aus einer Gruppe. Die Ergebnisse gelten nicht für alle.** → **sodass**"
+      ]
+    },
+    {
+      "id": "DL-B2-05-T03",
+      "section": "Exercises",
+      "sourceText": "أكمل بـaufgrund + Genitiv",
+      "status": "verified",
+      "finding": "Verified 5 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. ______ kleinen Stichprobe sind die Ergebnisse nur begrenzt übertragbar.",
+        "2. ______ fehlenden Kontrollgruppe lässt sich keine Ursache ableiten.",
+        "3. ______ begrenzten Angaben sollte der Bericht vorsichtig bewertet werden.",
+        "4. ______ unklaren Messwerts blieb die Auswertung vorläufig.",
+        "5. ______ vorläufigen Ergebnisses sollte man keine allgemeingültige Schlussfolgerung ziehen."
+      ]
+    },
+    {
+      "id": "DL-B2-05-T04",
+      "section": "Exercises",
+      "sourceText": "اختر ترتيب الفعل الصحيح",
+      "status": "refined",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Expanded items in T02/T04/T07 and formatted T06 as 5 numbered lines.",
+      "items": [
+        "1. **Die Befragung war klein, deshalb …**",
+        "2. **Es gab nur wenige Teilnehmende, sodass …**",
+        "3. **Aufgrund der fehlenden Angaben …**",
+        "4. **Es gab keine Kontrollgruppe, sodass …**"
+      ]
+    },
+    {
+      "id": "DL-B2-05-T05",
+      "section": "Exercises",
+      "sourceText": "فهم القراءة",
+      "status": "verified",
+      "finding": "Verified 5 exercise subitems and answer-key alignment.",
+      "action": "Verified items and answer key.",
+      "items": [
+        "1. يصف التقرير الخيالي استطلاعًا في مجموعة مشي محلية.",
+        "2. شارك 240 شخصًا في الاستطلاع.",
+        "3. قاست الأسئلة قيم اللياقة والنتائج الطبية.",
+        "4. ينبه النص إلى أن العينة لا تمثل جميع السكان.",
+        "5. يثبت التقرير أن نشاطًا واحدًا هو الأفضل للجميع."
+      ]
+    },
+    {
+      "id": "DL-B2-05-T06",
+      "section": "Exercises",
+      "sourceText": "فهم الاستماع",
+      "status": "refined",
+      "finding": "Verified 5 exercise subitems and answer-key alignment.",
+      "action": "Expanded items in T02/T04/T07 and formatted T06 as 5 numbered lines.",
+      "items": [
+        "1. Die Teilnehmenden kamen aus nur einer ______.",
+        "2. Die Ergebnisse können nicht auf alle Erwachsenen ______ werden.",
+        "3. Im Bericht fehlt eine ______.",
+        "4. Ein Ursache-Wirkungs-Zusammenhang wird nicht ______.",
+        "5. Bei persönlichen Fragen sollte man eine qualifizierte ______ fragen."
+      ]
+    },
+    {
+      "id": "DL-B2-05-T07",
+      "section": "Exercises",
+      "sourceText": "أعد الصياغة بالتركيب المطلوب",
+      "status": "refined",
+      "finding": "Verified 4 exercise subitems and answer-key alignment.",
+      "action": "Expanded items in T02/T04/T07 and formatted T06 as 5 numbered lines.",
+      "items": [
+        "1. **Die Angaben waren begrenzt. Deshalb konnte die Aussage nicht verallgemeinert werden.** → استخدم **aufgrund**.",
+        "2. **Die Befragung dauerte nur kurz. Die Ergebnisse waren vorläufig.** → اربط بـ**sodass**.",
+        "3. **Es fehlte eine Kontrollgruppe. Deshalb wurde kein Zusammenhang nachgewiesen.** → اربط بـ**weshalb**.",
+        "4. **Das Ergebnis war vorläufig. Deshalb zog man keine feste Schlussfolgerung.** → استخدم **aufgrund**."
+      ]
+    },
+    {
+      "id": "DL-B2-05-T08",
+      "section": "Exercises",
+      "sourceText": "قيّم ادّعاءً خياليًا",
+      "status": "refined",
+      "finding": "Split T08 into P01 (writing-only fictional health survey evaluation, 5 sentences) and P02 (writing+speaking report briefing based on T05, 5 sentences) with full German model answers in Section 7.",
+      "action": "Updated T08 instructions and Section 7 model answers.",
+      "items": [
+        "P01 sentence 1: In einem fiktiven Kurzbericht wurde eine kleine Befragung über Schlaf- und Bewegungsgewohnheiten vorgestellt.",
+        "P01 sentence 2: Dabei nahmen nur 18 Freiwillige aus demselben Sportverein teil, und objektive Messwerte wurden überhaupt nicht erhoben.",
+        "P01 sentence 3: Die Stichprobe war sehr klein, sodass die vorläufigen Ergebnisse nicht für die gesamte Bevölkerung repräsentativ sind.",
+        "P01 sentence 4: Aufgrund der fehlenden Kontrollgruppe lässt sich aus den Antworten kein Ursache-Wirkungs-Zusammenhang ableiten.",
+        "P01 sentence 5: Deshalb beschreibt der Bericht nur persönliche Angaben und darf nicht als medizinische Empfehlung oder Diagnose verstanden werden.",
+        "P02 sentence 1: Im fiktiven Kurzbericht wurden 24 freiwillige Mitglieder einer örtlichen Gehgruppe dazu befragt, wo sie Informationen über Bewegung finden.",
+        "P02 sentence 2: Erfasst wurden ausschließlich ihre Antworten, während Fitnesswerte und medizinische Ergebnisse nicht gemessen wurden.",
+        "P02 sentence 3: Alle Teilnehmenden kamen aus derselben Gruppe, weshalb die kleine Stichprobe nicht repräsentativ für die gesamte Bevölkerung war.",
+        "P02 sentence 4: Aufgrund der fehlenden Kontrollgruppe und des vorläufigen Ergebnisses lässt sich keine Ursache für gesundheitliche Veränderungen nachweisen.",
+        "P02 sentence 5: Deshalb zeigt der Bericht nur die genannten Informationsquellen und ersetzt bei persönlichen Fragen keine Rücksprache mit einer qualifizierten Fachperson."
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q01",
+      "section": "Quiz",
+      "sourceText": "أي كلمة تعني مجموعة الأشخاص الذين شاركوا في استطلاع أو دراسة؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (die Stichprobe), explanation, and sourceTaskIds=['DL-B2-05-T01'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die Überschrift",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "die Stichprobe",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "die Kontrollgruppe",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q02",
+      "section": "Quiz",
+      "sourceText": "أكمل بتركيب يدل على النتيجة مع ترتيب الفعل المناسب: **Die Gruppe war klein, ___ die Ergebnisse nicht repräsentativ waren.**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=2 (sodass), explanation, and sourceTaskIds=['DL-B2-05-T02'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "deshalb",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "aufgrund",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "sodass",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q03",
+      "section": "Quiz",
+      "sourceText": "اختر ترتيب الفعل الصحيح: **Die Daten sind vorläufig. Deshalb ___ die Aussage vorsichtig lesen.**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (sollte man), explanation, and sourceTaskIds=['DL-B2-05-T02'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "sollte man",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "man sollte",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "man kann",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q04",
+      "section": "Quiz",
+      "sourceText": "أكمل بصيغة Genitiv الصحيحة: **Aufgrund ___ Stichprobe waren die Ergebnisse nicht repräsentativ.**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (der kleinen), explanation, and sourceTaskIds=['DL-B2-05-T03'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die kleine",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "der kleinen",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "dem kleinen",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q05",
+      "section": "Quiz",
+      "sourceText": "اختر الصيغة الصحيحة لاسم محايد: **___ vorläufigen Ergebnisses sollte man keine allgemeingültige Schlussfolgerung ziehen.**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=2 (Aufgrund des), explanation, and sourceTaskIds=['DL-B2-05-T03'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Aufgrund dem",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "Aufgrund der",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "Aufgrund des",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q06",
+      "section": "Quiz",
+      "sourceText": "اختر الجملة السليمة: **Die Befragung war klein, deshalb …**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (können die Ergebnisse nicht verallgemeinert werden.), explanation, and sourceTaskIds=['DL-B2-05-T04'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "können die Ergebnisse nicht verallgemeinert werden.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "die Ergebnisse nicht verallgemeinert werden können.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "die Ergebnisse können nicht verallgemeinert werden.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q07",
+      "section": "Quiz",
+      "sourceText": "أكمل الجملة التابعة: **Es gab keine Kontrollgruppe, sodass …**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=2 (sich die Ursache nicht bestimmen ließ.), explanation, and sourceTaskIds=['DL-B2-05-T04'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "ließ sich die Ursache nicht bestimmen.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "die Ursache ließ sich nicht bestimmen.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "sich die Ursache nicht bestimmen ließ.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q08",
+      "section": "Quiz",
+      "sourceText": "بحسب نص القراءة T05، ما الذي سأل عنه الاستطلاع الخيالي؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (مصادر المعلومات التي يلجأ إليها المشاركون عن الحركة.), explanation, and sourceTaskIds=['DL-B2-05-T05'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "قيم لياقة المشاركين ونتائجهم الطبية.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "مصادر المعلومات التي يلجأ إليها المشاركون عن الحركة.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "النشاط الأفضل لجميع الناس.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q09",
+      "section": "Quiz",
+      "sourceText": "بحسب نص T06 المكتوب، ما الذي لم يثبته التقرير؟",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=0 (علاقة سببية بين الحركة وتغيّر صحي.), explanation, and sourceTaskIds=['DL-B2-05-T06'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "علاقة سببية بين الحركة وتغيّر صحي.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 1,
+          "text": "أن المشاركين جاؤوا من مجموعة واحدة.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 2,
+          "text": "أن التقرير يذكر غياب مجموعة ضابطة.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-Q10",
+      "section": "Quiz",
+      "sourceText": "اختر إعادة الصياغة الصحيحة باستخدام **aufgrund**: **Die Angaben waren begrenzt. Deshalb konnte die Aussage nicht verallgemeinert werden.**",
+      "status": "verified",
+      "finding": "Verified prompt, options, answerIndex=1 (Aufgrund der begrenzten Angaben konnte die Aussage nicht verallgemeinert werden.), explanation, and sourceTaskIds=['DL-B2-05-T07'].",
+      "action": "Preserved question record.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Aufgrund den begrenzten Angaben konnte die Aussage nicht verallgemeinert werden.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        },
+        {
+          "index": 1,
+          "text": "Aufgrund der begrenzten Angaben konnte die Aussage nicht verallgemeinert werden.",
+          "role": "correct",
+          "note": "Matches source rule/text and answerIndex."
+        },
+        {
+          "index": 2,
+          "text": "Aufgrund der begrenzten Angaben die Aussage nicht verallgemeinert werden konnte.",
+          "role": "distractor",
+          "note": "Plausible distractor ruled out by grammar/text."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-P01",
+      "section": "Performance Tasks",
+      "sourceText": "قيّم تقرير استطلاع صحي خيالي في خمس إلى ست جمل ألمانية مكتوبة. اذكر حقيقتين دقيقتين على الأقل مما قيس أو لم يقس أو من طريقة اختيار المشاركين، واستخدم مرةً واحدة على الأقل sodass أو weshalb ومرةً aufgrund + Genitiv. بيّن حدّين على الأقل للبيانات، ولا تحوّلها إلى إثبات لسبب أو إلى تشخيص أو توصية طبية شخصية. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized modality=['writing'], speakAloud=False, minChars=160, and sourceTaskIds=['DL-B2-05-T08'].",
+      "action": "Updated task in .assessment.json and synced with T08.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "إجابة مكتوبة من خمس إلى ست جمل ألمانية تقيّم استطلاعًا خياليًا، وتنقل حقيقتين على الأقل من المصدر، وتذكر حدّين للبيانات، وتستخدم التركيبين المطلوبين.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "تُعرض معلومات المصدر بدقة، ويُفرّق بين ما قيس وما لم يقس وبين الوصف والسببية؛ لا تتضمن الإجابة تشخيصًا أو توصية طبية شخصية.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يستخدم sodass أو weshalb مع فعل في نهاية الجملة التابعة، ويستخدم aufgrund مع Genitiv صحيح، ويعرض النتيجة أو السبب بترتيب فعل مناسب.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-05-P02",
+      "section": "Performance Tasks",
+      "sourceText": "استنادًا إلى قراءة التقرير في T05، اكتب إحاطة من خمس إلى ست جمل ألمانية ثم اقرأها بصوت مسموع لنفسك. انقل ثلاث حقائق دقيقة على الأقل، مثل عدد المشاركين أو ما سأل عنه الاستطلاع أو ما لم يقسه؛ ثم اشرح حدّين للاستنتاج، مع استخدام sodass أو weshalb وaufgrund + Genitiv. ميّز بين وصف الإجابات وإثبات سبب صحي، ولا تقدّم تشخيصًا أو توصية طبية شخصية. يمكن تنفيذها فرديًا؛ إذا اخترت الكتابة فاقرأ إجابتك بصوت مسموع لنفسك، ولا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized modality=['writing', 'speaking'], speakAloud=True, minChars=180, and sourceTaskIds=['DL-B2-05-T05', 'DL-B2-05-T08'].",
+      "action": "Updated task in .assessment.json and synced with T08.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاث حقائق على الأقل من T05، وتشرح حدّين للاستنتاج، وتستخدم تراكيب الهدف.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "تطابق التفاصيل نص القراءة، وتوضح أن الاستطلاع تناول مصادر معلومات الحركة ولم يقس اللياقة أو النتائج الطبية، ولا تنسب إليه إثبات علاقة سببية أو توصية عامة.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يستخدم sodass أو weshalb مع ترتيب الجملة التابعة، ويستخدم aufgrund + Genitiv صحيحًا، ويصوغ النتيجة أو السبب بترتيب فعل مفهوم، ويقرأ المتعلم النص بصوت مسموع دون تسجيل.",
+          "note": "Visible local self-check criterion aligned with prompt and target skill."
+        }
+      ]
+    },
+    {
+      "id": "b2-05-p01-model-01",
+      "section": "Written Models",
+      "sourceText": "In einem fiktiven Kurzbericht wurde eine kleine Befragung über Schlaf- und Bewegungsgewohnheiten vorgestellt. Dabei nahmen nur 18 Freiwillige aus demselben Sportverein teil, und objektive Messwerte wurden überhaupt nicht erhoben. Die Stichprobe war sehr klein, sodass die vorläufigen Ergebnisse nicht für die gesamte Bevölkerung repräsentativ sind. Aufgrund der fehlenden Kontrollgruppe lässt sich aus den Antworten kein Ursache-Wirkungs-Zusammenhang ableiten. Deshalb beschreibt der Bericht nur persönliche Angaben und darf nicht als medizinische Empfehlung oder Diagnose verstanden werden.",
+      "status": "added",
+      "finding": "5-sentence model response (591 chars) satisfying sodass/weshalb + aufgrund + Genitiv + two data limits and non-medical disclaimer ethics.",
+      "action": "Added in Section 7 answer key and verified in test_progression.cjs.",
+      "items": [
+        "In einem fiktiven Kurzbericht wurde eine kleine Befragung über Schlaf- und Bewegungsgewohnheiten vorgestellt.",
+        "Dabei nahmen nur 18 Freiwillige aus demselben Sportverein teil, und objektive Messwerte wurden überhaupt nicht erhoben.",
+        "Die Stichprobe war sehr klein, sodass die vorläufigen Ergebnisse nicht für die gesamte Bevölkerung repräsentativ sind.",
+        "Aufgrund der fehlenden Kontrollgruppe lässt sich aus den Antworten kein Ursache-Wirkungs-Zusammenhang ableiten.",
+        "Deshalb beschreibt der Bericht nur persönliche Angaben und darf nicht als medizinische Empfehlung oder Diagnose verstanden werden."
+      ]
+    },
+    {
+      "id": "b2-05-p02-model-01",
+      "section": "Written Models",
+      "sourceText": "Im fiktiven Kurzbericht wurden 24 freiwillige Mitglieder einer örtlichen Gehgruppe dazu befragt, wo sie Informationen über Bewegung finden. Erfasst wurden ausschließlich ihre Antworten, während Fitnesswerte und medizinische Ergebnisse nicht gemessen wurden. Alle Teilnehmenden kamen aus derselben Gruppe, weshalb die kleine Stichprobe nicht repräsentativ für die gesamte Bevölkerung war. Aufgrund der fehlenden Kontrollgruppe und des vorläufigen Ergebnisses lässt sich keine Ursache für gesundheitliche Veränderungen nachweisen. Deshalb zeigt der Bericht nur die genannten Informationsquellen und ersetzt bei persönlichen Fragen keine Rücksprache mit einer qualifizierten Fachperson.",
+      "status": "added",
+      "finding": "5-sentence model response (683 chars) satisfying sodass/weshalb + aufgrund + Genitiv + two data limits and non-medical disclaimer ethics.",
+      "action": "Added in Section 7 answer key and verified in test_progression.cjs.",
+      "items": [
+        "Im fiktiven Kurzbericht wurden 24 freiwillige Mitglieder einer örtlichen Gehgruppe dazu befragt, wo sie Informationen über Bewegung finden.",
+        "Erfasst wurden ausschließlich ihre Antworten, während Fitnesswerte und medizinische Ergebnisse nicht gemessen wurden.",
+        "Alle Teilnehmenden kamen aus derselben Gruppe, weshalb die kleine Stichprobe nicht repräsentativ für die gesamte Bevölkerung war.",
+        "Aufgrund der fehlenden Kontrollgruppe und des vorläufigen Ergebnisses lässt sich keine Ursache für gesundheitliche Veränderungen nachweisen.",
+        "Deshalb zeigt der Bericht nur die genannten Informationsquellen und ersetzt bei persönlichen Fragen keine Rücksprache mit einer qualifizierten Fachperson."
+      ]
+    },
+    {
+      "id": "b2-05-card-01",
+      "section": "Review Cards",
+      "sourceText": "- **Die Stichprobe war klein, sodass …** → كانت العينة صغيرة، لذلك …",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-card-02",
+      "section": "Review Cards",
+      "sourceText": "- **…, weshalb die Ursache nicht bestimmt werden konnte.** → … ولذلك لم يمكن تحديد السبب.",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-card-03",
+      "section": "Review Cards",
+      "sourceText": "- **Aufgrund der begrenzten Angaben …** → بسبب محدودية المعلومات …",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "b2-05-card-04",
+      "section": "Review Cards",
+      "sourceText": "- **repräsentativ / vorläufig** → ممثّل / أوليّ.",
+      "status": "verified",
+      "finding": "Verified review card form and Arabic gloss.",
+      "action": "Preserved verbatim."
+    },
+    {
+      "id": "DL-B2-05-AUD-PHR-01",
+      "section": "Audio",
+      "sourceText": "1) مفردات قراءة المعلومات الصحية",
+      "status": "verified",
+      "finding": "Verified 18 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Studie, die Studien",
+        "Die Befragung, die Befragungen",
+        "Die Stichprobe, die Stichproben",
+        "Der Messwert, die Messwerte",
+        "Die Kontrollgruppe, die Kontrollgruppen",
+        "Die Auswertung, die Auswertungen",
+        "Das Ergebnis, die Ergebnisse",
+        "Die Fachquelle, die Fachquellen",
+        "Die Aussage, die Aussagen",
+        "Die Teilnahme, die Teilnahmen",
+        "Die Belastung, die Belastungen",
+        "Repräsentativ",
+        "Vorläufig",
+        "Übertragbar",
+        "Nachvollziehbar",
+        "Belegen, belegt",
+        "Hinweisen auf, Akkusativ, weist hin",
+        "Verallgemeinern, verallgemeinert"
+      ]
+    },
+    {
+      "id": "DL-B2-05-AUD-MODEL-01",
+      "section": "Audio",
+      "sourceText": "2) التعبير عن السبب والنتيجة",
+      "status": "verified",
+      "finding": "Verified 10 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Die Stichprobe war klein, sodass die Ergebnisse nicht repräsentativ waren",
+        "Es gab keine Kontrollgruppe, weshalb die Ursache nicht bestimmt werden konnte",
+        "Die Angaben sind vorläufig",
+        "Deshalb sollte man vorsichtig urteilen",
+        "Aufgrund der kleinen Stichprobe ist die Aussage nur begrenzt übertragbar",
+        "Aufgrund der Studie",
+        "Aufgrund der begrenzten Angaben",
+        "Aufgrund des unklaren Messwerts",
+        "Aufgrund des vorläufigen Ergebnisses",
+        "Aufgrund der begrenzten Angaben"
+      ]
+    },
+    {
+      "id": "DL-B2-05-AUD-DLG-01",
+      "section": "Audio",
+      "sourceText": "3) حوار أصلي عن قراءة عنوان صحي",
+      "status": "verified",
+      "finding": "Verified 6 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Rima: Ich habe eine Überschrift über Bewegung und Gesundheit gelesen. Kann ich daraus eine Empfehlung ableiten?",
+        "Nabil: Zuerst sollten wir prüfen, auf welche Studie sich der Bericht bezieht.",
+        "Rima: Es nahmen nur wenige Freiwillige aus einem Verein teil.",
+        "Nabil: Dann war die Stichprobe wahrscheinlich klein, sodass die Ergebnisse nicht für alle gelten.",
+        "Rima: Im Text gibt es auch keine Kontrollgruppe.",
+        "Nabil: Deshalb lässt sich die Ursache nicht sicher bestimmen. Am besten liest man die Fachquelle und fragt bei persönlichen Gesundheitsfragen eine qualifizierte Fachperson."
+      ]
+    },
+    {
+      "id": "DL-B2-05-AUD-READ-01",
+      "section": "Audio",
+      "sourceText": "4) نص قراءة أصلي: كيف نفهم استطلاعًا خياليًا؟",
+      "status": "verified",
+      "finding": "Verified 8 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "Ein fiktiver Kurzbericht beschreibt eine Befragung in einer örtlichen Gehgruppe.",
+        "24 freiwillige Mitglieder beantworteten Fragen dazu, wo sie Informationen über Bewegung finden.",
+        "Erfasst wurden nur ihre Antworten; Fitnesswerte und medizinische Ergebnisse wurden nicht gemessen.",
+        "Da alle Teilnehmenden aus derselben Gruppe kamen, war die Stichprobe klein und nicht repräsentativ für die gesamte Bevölkerung.",
+        "Es gab auch keine Kontrollgruppe, sodass sich aus der Befragung keine Ursache für gesundheitliche Veränderungen ableiten lässt.",
+        "Aufgrund dieser Grenzen kann der Bericht nur beschreiben, was die befragten Personen angegeben haben.",
+        "Er belegt nicht, welche Aktivität für alle Menschen am besten wäre.",
+        "Die Zahlen und die Befragung in diesem Text sind frei erfunden und dienen nur dem Sprachtraining."
+      ]
+    },
+    {
+      "id": "DL-B2-05-AUD-LST-01",
+      "section": "Audio",
+      "sourceText": "5) نص استماع معدّ للنطق",
+      "status": "verified",
+      "finding": "Verified 5 transcript items, voice assignment, generated_pending_acoustic_review status, and offer transcript policy without regenerating MP3s.",
+      "action": "Preserved audio asset and synced source_line in audio-asset-register.csv.",
+      "items": [
+        "In einem fiktiven Artikel wird eine kleine Befragung erwähnt.",
+        "Die Teilnehmenden kamen aus nur einer Gruppe, sodass die Ergebnisse nicht auf alle Erwachsenen übertragen werden können.",
+        "Der Bericht nennt außerdem keine Kontrollgruppe, weshalb ein Ursache-Wirkungs-Zusammenhang nicht nachgewiesen wird.",
+        "Deshalb sollte man die Überschrift nicht als medizinische Empfehlung verstehen.",
+        "Bei persönlichen Fragen ist eine qualifizierte Fachperson die richtige Ansprechperson."
+      ]
+    }
+  ]
+}

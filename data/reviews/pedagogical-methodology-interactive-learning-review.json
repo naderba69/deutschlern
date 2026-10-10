@@ -1,0 +1,1396 @@
+{
+  "schemaVersion": 1,
+  "batchId": "CR62",
+  "reviewSlug": "pedagogical-methodology-interactive-learning-review",
+  "reviewedAt": "2026-10-10T13:30:00Z",
+  "unitCount": 68,
+  "lessonCount": 53,
+  "gateCount": 1,
+  "levelViewCount": 5,
+  "totalExercisesCount": 428,
+  "inlineExerciseSelfCheckCount": 428,
+  "listeningSectionCount": 48,
+  "listeningScriptGuardCount": 48,
+  "lessonStagePillsCount": 159,
+  "vocabTotalCount": 754,
+  "vocabSourceExampleCount": 541,
+  "vocabGeneratedContextHintCount": 213,
+  "vocabContextualCoverageCount": 754,
+  "quizQuestionTotalCount": 540,
+  "quizOptionTotalCount": 1622,
+  "performanceTaskTotalCount": 109,
+  "performanceHeuristicCoachCount": 109,
+  "performanceModelCompareCount": 109,
+  "cumulativeGrammarSummaryLevels": 5,
+  "a11yDesktopStateCount": 174,
+  "a11yMobileStateCount": 175,
+  "a11yTotalScreenStateCount": 349,
+  "a11yViolatedRuleCount": 0,
+  "a11yIncompleteRuleOccurrences": 0,
+  "a11yIncompleteNodeOccurrences": 0,
+  "narrowPortraitStateCount": 174,
+  "narrowLandscapeStateCount": 174,
+  "narrowTotalStateCount": 348,
+  "narrowOverflowCount": 0,
+  "serviceWorkerCacheName": "deutsch-pfad-v111",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Duden | Wiederholung | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Wiederholung",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Wiederholung Wortschatz Grammatik Lernziel Selbstkontrolle",
+      "takeaway": "Verifies die Wiederholung (plural die Wiederholungen) as spaced review and spiral consolidation of previously studied material."
+    },
+    {
+      "id": "S2",
+      "title": "Duden | Wortschatz | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Wortschatz",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Wiederholung Wortschatz Grammatik Lernziel Selbstkontrolle",
+      "takeaway": "Verifies der Wortschatz and distinguishes aktiver vs. passiver Wortschatz for bidirectional DE <-> AR vocabulary recall."
+    },
+    {
+      "id": "S3",
+      "title": "Duden | Repetition | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Repetition",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Wiederholung Wortschatz Grammatik Lernziel Selbstkontrolle",
+      "takeaway": "Confirms systematic repetition of学習/study material to prevent decay across cumulative levels."
+    },
+    {
+      "id": "S4",
+      "title": "Dependent Clauses in German Grammar – Lingolia",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure German main clauses dependent clauses word order",
+      "takeaway": "Confirms subordinate clause (Nebensatz) verb-final word order and comma separation rules across A2–B2."
+    },
+    {
+      "id": "S5",
+      "title": "Conjunctions – Word Order in German – Lingolia",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/conjunctions",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure German main clauses dependent clauses word order",
+      "takeaway": "Distinguishes coordinating conjunctions, subjunctions, and conjunctive adverbs for cumulative grammar reference and heuristic coaching."
+    },
+    {
+      "id": "S6",
+      "title": "Main Clauses – Declarative Sentences in German Grammar – Lingolia",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/main-clauses",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/sentence-structure German main clauses dependent clauses word order",
+      "takeaway": "Confirms finite verb in position 2 (V2) and Satzklammer in declarative clauses."
+    },
+    {
+      "id": "S7",
+      "title": "Duden | Übung | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Uebung",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Grammatik Lernziel Uebung Stufe",
+      "takeaway": "Verifies die Übung (plural die Übungen) for structured per-exercise practice and immediate self-verification."
+    },
+    {
+      "id": "S8",
+      "title": "Duden | Stufe | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Stufe",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Grammatik Lernziel Uebung Stufe",
+      "takeaway": "Verifies die Stufe (plural die Stufen) for staged lesson progression and level mastery checkpoints."
+    },
+    {
+      "id": "S9",
+      "title": "Duden | stufen | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/stufen",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Grammatik Lernziel Uebung Stufe",
+      "takeaway": "Verifies gradated step-by-step instructional structuring (abstufen / gliedern)."
+    },
+    {
+      "id": "S10",
+      "title": "Technique G83: Providing text descriptions to identify required fields that were not completed | WAI | W3C",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/general/G83",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Governs clear text feedback for incomplete or under-length user responses in interactive performance tasks."
+    },
+    {
+      "id": "S11",
+      "title": "Technique H91: Using HTML form controls and links | WAI | W3C",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/html/H91",
+      "access": "full_fetched_page",
+      "totalChunks": 2,
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "takeaway": "Governs accessible names, roles, states, and values for buttons, search inputs, filter chips, checkboxes, and textareas."
+    },
+    {
+      "id": "S12",
+      "title": "Main Clauses – Declarative Sentences in German Grammar (Full Page)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/main-clauses",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies V2 finite verb rule, Satzklammer, and subject-verb inversion in German main clauses."
+    },
+    {
+      "id": "S13",
+      "title": "Dependent Clauses in German Grammar (Full Page)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies verb-final word order in subordinate clauses, relative clauses, and indirect questions."
+    },
+    {
+      "id": "S14",
+      "title": "Conjunctions – Word Order in German (Full Page)",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/conjunctions",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies conjunction vs. subjunction vs. conjunctive adverb word-order rules across A1–B2."
+    },
+    {
+      "id": "S15",
+      "title": "Duden | Wiederholung (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Wiederholung",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies die Wiederholung (`WIEDERHOLUNG`) used in the Spiral Cumulative Review header."
+    },
+    {
+      "id": "S16",
+      "title": "Duden | Wortschatz (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Wortschatz",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies der Wortschatz (`aktiver` and `passiver Wortschatz`) grounding bidirectional DE <-> AR flashcard recall."
+    },
+    {
+      "id": "S17",
+      "title": "Duden | Übung (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Uebung",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies die Übung (`ein Lehrbuch mit Übungen`) grounding per-exercise inline self-check keys across all 428 exercises."
+    },
+    {
+      "id": "S18",
+      "title": "Duden | Stufe (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Stufe",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies die Stufe for the 3-stage lesson flow (Build, Practice, Mastery) and level checkpoints."
+    },
+    {
+      "id": "S19",
+      "title": "Duden | Grammatik (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Grammatik",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies die Grammatik for the cumulative A0–B2 grammar reference summaries."
+    },
+    {
+      "id": "S20",
+      "title": "Duden | Lernziel (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Lernziel",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies das Lernziel for focus-domain alignment and stage pacing in the adaptive daily plan."
+    },
+    {
+      "id": "S21",
+      "title": "Duden | Selbstkontrolle (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Selbstkontrolle",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies die Selbstkontrolle for per-exercise inline keys and local performance heuristic coaching."
+    },
+    {
+      "id": "S22",
+      "title": "Duden | Hörverstehen (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Hoerverstehen",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies das Hörverstehen for listening-first script guards across 48 listening sections and inline quiz listening audio controls."
+    },
+    {
+      "id": "S23",
+      "title": "Duden | Entwurf (Full Page)",
+      "url": "https://www.duden.de/rechtschreibung/Entwurf",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies der Entwurf for learner draft analysis in the 109 performance tasks."
+    },
+    {
+      "id": "S24",
+      "title": "Duden | Modell & Verständnis (Full Pages)",
+      "url": "https://www.duden.de/rechtschreibung/Modell",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "Verifies das Modell and das Verständnis (https://www.duden.de/rechtschreibung/Verstaendnis) for collapsible reference model comparisons after learner drafts."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Leseverstehen",
+      "reason": "HTTP 404 on duden.de; replaced with verified Duden entries Hörverstehen (S22) and Verständnis (S24)."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Leseverstaendnis",
+      "reason": "HTTP 404 on duden.de; replaced with verified Duden entries Hörverstehen (S22) and Verständnis (S24)."
+    }
+  ],
+  "units": [
+    {
+      "id": "A0.1 (a0-01-alphabet)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~20 min split across Build/Practice/Mastery), 7/7 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 0 listening-first script guard(s) (<details class=\"listening-script-guard\">), 0/0 contextual vocabulary examples (0 source + 0 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A0.2 (a0-02-greetings)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~20 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 0 listening-first script guard(s) (<details class=\"listening-script-guard\">), 10/10 contextual vocabulary examples (0 source + 10 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A0.3 (a0-03-numbers-personal-info)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~25 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 0 listening-first script guard(s) (<details class=\"listening-script-guard\">), 0/0 contextual vocabulary examples (0 source + 0 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A0.4 (a0-04-first-sentences)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~25 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 0 listening-first script guard(s) (<details class=\"listening-script-guard\">), 9/9 contextual vocabulary examples (0 source + 9 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A0.5 (a0-05-classroom-phrases)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~20 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 0 listening-first script guard(s) (<details class=\"listening-script-guard\">), 10/10 contextual vocabulary examples (0 source + 10 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.1 (a1-01-introductions-languages-hobbies)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 10/10 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 12/12 contextual vocabulary examples (12 source + 0 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.2 (a1-02-work-family)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 9/9 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 11/11 contextual vocabulary examples (11 source + 0 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.3 (a1-03-city-cafe-hotel)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 9/9 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 13/13 contextual vocabulary examples (11 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.4 (a1-04-daily-routine-time)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 9/9 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 12/12 contextual vocabulary examples (12 source + 0 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.5 (a1-05-food-drink)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (15 source + 0 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.6 (a1-06-yesterday-perfekt)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 8/8 contextual vocabulary examples (0 source + 8 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.7 (a1-07-travel-weather)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (0 source + 16 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.8 (a1-08-shopping-clothes)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (13 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.9 (a1-09-work-appointments)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (10 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.10 (a1-10-hobbies-health)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 20/20 contextual vocabulary examples (0 source + 20 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.11 (a1-11-home-directions)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 13/13 contextual vocabulary examples (11 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A1.12 (a1-12-trip-invitations)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (13 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.1 (a2-01-routines-abilities-experiences)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (7 source + 8 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.2 (a2-02-travel-comparisons)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 18/18 contextual vocabulary examples (11 source + 7 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.3 (a2-03-food-nutrition-shopping)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 20/20 contextual vocabulary examples (14 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.4 (a2-04-office-phone-appointments)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (13 source + 1 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.5 (a2-05-training-routine-wenn)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 12/12 contextual vocabulary examples (10 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.6 (a2-06-family-happiness-gifts)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (10 source + 4 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.7 (a2-07-language-learning-travel-purpose)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 17/17 contextual vocabulary examples (14 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.8 (a2-08-media-news-passive)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 23/23 contextual vocabulary examples (22 source + 1 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.9 (a2-09-products-technology-complaints)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (10 source + 5 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.10 (a2-10-sports-health-feelings-weil)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (8 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.11 (a2-11-housing-neighborhood-wohin)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 20/20 contextual vocabulary examples (19 source + 1 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A2.12 (a2-12-holidays-festivals-culture)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (13 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.1 (b1-01-daily-life-hobbies-experiences)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 13/13 contextual vocabulary examples (7 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.2 (b1-02-food-habits-obwohl)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 13/13 contextual vocabulary examples (7 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.3 (b1-03-work-communication-konjunktiv)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (10 source + 4 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.4 (b1-04-continuing-education-damit)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (11 source + 4 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.5 (b1-05-cities-relative-clauses)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (11 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.6 (b1-06-health-fitness-advice)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (8 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.7 (b1-07-lifestyles-customs-cultures)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (8 source + 6 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.8 (b1-08-consumption-advertising-je-desto)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 17/17 contextual vocabulary examples (13 source + 4 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.9 (b1-09-travel-transport-environment)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (13 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.10 (b1-10-media-news-formal-communication)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (14 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.11 (b1-11-history-politics-passive-past)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (15 source + 1 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B1.12 (b1-12-innovation-research-future)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (13 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.1 (b2-01-time-management-habits-reading)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (11 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.2 (b2-02-career-formal-communication-konjunktiv1)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (13 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.3 (b2-03-consumption-environment-passive-modal)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (11 source + 4 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.4 (b2-04-cities-housing-participles)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (12 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.5 (b2-05-health-fitness-medical-information)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~30 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (14 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.6 (b2-06-study-applications-verb-noun-phrases)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 14/14 contextual vocabulary examples (13 source + 1 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.7 (b2-07-travel-experiences-prepositional-relatives)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (13 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.8 (b2-08-food-nutrition-data-passives)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (15 source + 1 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.9 (b2-09-business-marketing-employment-prepositions)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (13 source + 2 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.10 (b2-10-wishes-probabilities-technology-konjunktiv2-past)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 15/15 contextual vocabulary examples (12 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.11 (b2-11-humans-nature-environment-nominalization)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (12 source + 4 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "B2.12 (b2-12-leisure-media-reported-speech)",
+      "scope": "lesson_pedagogical_flow",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S17",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified 3-stage interactive lesson bar (~45 min split across Build/Practice/Mastery), 8/8 per-exercise inline self-check keys (<details class=\"exercise-inline-key\">), 1 listening-first script guard(s) (<details class=\"listening-script-guard\">), 16/16 contextual vocabulary examples (13 source + 3 context-derived), 10 quiz questions with retry option rotation, and 2 performance tasks with live local heuristic coaching and reference model comparison."
+    },
+    {
+      "id": "A0-A1-Gate (a0-a1-gate)",
+      "scope": "transition_gate_pedagogy",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S10",
+        "S11",
+        "S18",
+        "S21",
+        "S22",
+        "S24"
+      ],
+      "finding": "Verified A0->A1 transition gate with 10 quiz questions (deterministic retry option rotation + embedded listening audio helper) and 2 performance tasks equipped with live local heuristic coaching and collapsible A0->A1 reference models."
+    },
+    {
+      "id": "Level-A0-Mastery-Checkpoint",
+      "scope": "level_checkpoint_and_spiral_review",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S15",
+        "S16",
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "finding": "Verified Level A0 Mastery & Spiral Review Checkpoint (5 lessons, 29 contextualized vocabulary items, direct spiral review trigger and level lexicon/grammar filter)."
+    },
+    {
+      "id": "Level-A1-Mastery-Checkpoint",
+      "scope": "level_checkpoint_and_spiral_review",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S15",
+        "S16",
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "finding": "Verified Level A1 Mastery & Spiral Review Checkpoint (12 lessons, 167 contextualized vocabulary items, direct spiral review trigger and level lexicon/grammar filter)."
+    },
+    {
+      "id": "Level-A2-Mastery-Checkpoint",
+      "scope": "level_checkpoint_and_spiral_review",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S15",
+        "S16",
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "finding": "Verified Level A2 Mastery & Spiral Review Checkpoint (12 lessons, 198 contextualized vocabulary items, direct spiral review trigger and level lexicon/grammar filter)."
+    },
+    {
+      "id": "Level-B1-Mastery-Checkpoint",
+      "scope": "level_checkpoint_and_spiral_review",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S15",
+        "S16",
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "finding": "Verified Level B1 Mastery & Spiral Review Checkpoint (12 lessons, 178 contextualized vocabulary items, direct spiral review trigger and level lexicon/grammar filter)."
+    },
+    {
+      "id": "Level-B2-Mastery-Checkpoint",
+      "scope": "level_checkpoint_and_spiral_review",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S15",
+        "S16",
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "finding": "Verified Level B2 Mastery & Spiral Review Checkpoint (12 lessons, 182 contextualized vocabulary items, direct spiral review trigger and level lexicon/grammar filter)."
+    },
+    {
+      "id": "SYS-01-Active-Lesson-Flow-428-Exercises-48-Listening-Guards",
+      "scope": "lesson_flow_engine",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S17",
+        "S18",
+        "S21",
+        "S22"
+      ],
+      "finding": "Verified enhanceLessonDocumentHtml() across all 53 lessons: 428/428 exercises render individual <details class=\"exercise-inline-key\"> self-check drawers, 48/48 listening sections wrap scripts in <details class=\"listening-script-guard\"> with inline quick-play buttons, and all 53 lessons render 3-stage interactive navigation pills (159 total)."
+    },
+    {
+      "id": "SYS-02-Smart-Assessment-540-Questions-Retry-Rotation-Inline-Audio",
+      "scope": "objective_assessment_engine",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S11",
+        "S18",
+        "S21",
+        "S22"
+      ],
+      "finding": "Verified all 540 objective quiz questions (530 lesson + 10 gate) and 1,622 options: listening comprehension items render inline quick-play controls (.quiz-audio-helper) and retry attempts deterministically rotate option order via getDisplayedQuizOptionIndices() while preserving canonical data-index selection."
+    },
+    {
+      "id": "SYS-03-Performance-Heuristic-Coach-And-Model-Compare-109-Tasks",
+      "scope": "performance_task_coach",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S21",
+        "S23",
+        "S24"
+      ],
+      "finding": "Verified all 109 performance tasks (107 lesson + 2 gate): analyzePerformanceDraft() and renderPerformanceTaskHeuristics() provide real-time character, sentence, German-script, and target-token feedback, paired with collapsible reference model comparisons (<details class=\"performance-model-compare\">) placed after .performance-check-list to preserve Tab focus order."
+    },
+    {
+      "id": "SYS-04-Complete-754-Contextual-Vocabulary-And-Bidirectional-SRS",
+      "scope": "vocabulary_and_srs_engine",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S1",
+        "S2",
+        "S3",
+        "S15",
+        "S16"
+      ],
+      "finding": "Verified 100% contextual example coverage across all 754 vocabulary items (541 source examples + 213 lesson-derived contextual hints via getWordContextHint()), one-click lesson vocabulary enrollment into SRS, priority queue ordering (missed reps===0 first), noun article self-check (der/die/das), and bidirectional DE->AR / AR->DE recall toggle."
+    },
+    {
+      "id": "SYS-05-Adaptive-Daily-Plan-DailyGoal-And-Focus-Domains",
+      "scope": "adaptive_daily_plan",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S18",
+        "S20",
+        "S21"
+      ],
+      "finding": "Verified renderDailyPlanAdaptiveGuide() and getLessonFocusDomains() across all 53 lessons: maps learner dailyGoal minutes onto the 3 lesson stages (Build, Practice, Mastery) and connects active lessons to the learner's chosen focus domain (المحادثة، السفر، العمل، الدراسة، الحياة اليومية)."
+    },
+    {
+      "id": "SYS-06-Cumulative-Searchable-Lexicon-754-And-Grammar-Reference-A0-B2",
+      "scope": "cumulative_lexicon_and_grammar",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S12",
+        "S13",
+        "S14",
+        "S16",
+        "S19"
+      ],
+      "finding": "Verified renderCumulativeLexiconAndGrammarSection() in the review workspace: live search across all 754 vocabulary items, level filter (A0–B2), communicative focus filter, and structured A0–B2 cumulative grammar & connector reference cards."
+    },
+    {
+      "id": "SYS-07-Spiral-Cumulative-Review-Engine-A0-B2",
+      "scope": "spiral_review_engine",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S1",
+        "S3",
+        "S15",
+        "S18"
+      ],
+      "finding": "Verified buildSpiralSession() and renderSpiralReviewSection(): interactive cumulative quiz across unlocked/mastered lessons and levels with instant option checking, explanation rendering, and direct lesson jump links."
+    },
+    {
+      "id": "SYS-08-Full-Project-Narrow-Layout-348-States-Zero-Overflow",
+      "scope": "narrow_viewport_verification",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S10",
+        "S11"
+      ],
+      "finding": "Verified 348 full-project narrow viewport states (174 at 320x900 portrait + 174 at 568x320 landscape) across all 53 lessons, A0 gate, review, lexicon, spiral review, and settings with 0 horizontal overflow or clipped controls."
+    },
+    {
+      "id": "SYS-09-Full-Project-WCAG-21-AA-349-States-And-SW-v111",
+      "scope": "accessibility_and_pwa_verification",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S10",
+        "S11"
+      ],
+      "finding": "Verified 349 full-project axe-core WCAG 2.1 A/AA + best-practice screen states (174 desktop 1440x900 + 175 mobile 390x844) with 0 violations and 0 incomplete flags, and bumped Service Worker cache to deutsch-pfad-v111."
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
+    "data/audio-asset-register.csv": "940454ebb8fd2f6c15ea3a3244b9bb92f41596d2bee5881ecc048731036dca42",
+    "data/course.json": "4f342cff43f475cfe15625aedb2b6da3cd856d5bbb241bfcaa3267e8940b8845",
+    "data/curriculum-file-audit.csv": "23f696b9f652b38e124a3c4bc08dea13eb9bc043136c0a74d3ff7c715c7eabdd",
+    "data/production-task-catalog.csv": "aecbbb45f60b7a48f957b1460d18f5ab2a92376938f09906ebf7403cc6cae3ff",
+    "service-worker.js": "e6cf297563e272502af514f43a01f77f6d968d5c5c51589fec54013ab0ee7b00",
+    "styles.css": "a403c56eca9eef1e5a9ffb35431df8e52d5ce9d3ab6bb3eb1538c602197471cd",
+    "tools/build_course.py": "133133494e5e6195d34815eb0b73b3238df31b4eb112071d2b7458f7e73affbd",
+    "tools/test_accessibility_audit.cjs": "0a9d73a10f517d63f2846639e90ca4814c3a8cc9d0fda7dba6e3f49637709e8d",
+    "tools/test_accessibility_update.cjs": "99e69b581182ac56a583dfc00e20eae37481363422e899e02e3ebae05b3cdd88",
+    "tools/test_browser.cjs": "4df1a09b5c4f635735b02afeff3926e68ab0b8cf1605802f0b071fcf2ca40f97",
+    "tools/test_full_project_exhaustive_audit_review.py": "de98885cf4f341151ed604c3847224121030a497f3e2fba4739509a91e0b999e",
+    "tools/test_narrow_layout.cjs": "a13ff8f3049f0f8ad2a93ca4f47e6c7d57b9801388ac660084a38efccabda277",
+    "tools/test_service_worker.cjs": "ffb03d1b720664da07c5dfda0be0d2706cbbf002ed463df372b8722873a2d234",
+    "tools/verify_course.py": "4411218b78712c52185cca1246905188a5895258074a511cb6be14ad55591c24"
+  }
+}

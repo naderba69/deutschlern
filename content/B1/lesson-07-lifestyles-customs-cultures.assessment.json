@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-07-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-07-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR37: قُيدت مقاصد T02/T03 لتفادي تعدد الأجوبة؛ أضيف دعم مباشر لـ Q01/T01 و Q02/Q03/Q07 في T02 و Q04/Q05 في T03. الروابط والفهارس و 80% وحد 160 محفوظة.",
+      "Q06 يطلب الترتيب المحايد مع ich بعد المصرف مباشرة، لا الاكتفاء بموضع V2. Q07 يعلل الجمع بأن الاسمين هنا جمع، لا تعميم كل أنواع التوافق.",
+      "صُحح خيار Q10 الصحيح وحده من نفي حدوث التمثيل مطلقًا إلى عدم الإلزام به، مطابقًا لـ muss niemand؛29 خيارًا أخرى ثابتة.",
+      "P01/T08 أ خمس جمل كتابة فقط بثلاثة روابط؛P02/T08 ب ستة أدوار كتابة وجهر برابط إضافة ورابط اختيار واتفاق صريح. المصدر والمعايير والنموذجان متطابقة بلا شريك أو تسجيل أو بيانات حقيقية.",
+      "الخمسة أصول و 12 مقطعًا وأصوات Laila02/Omar03 والرواة 02/03 ثابتة بلا استماع أو توليد أو اعتماد جديد. جمع Austausch توضيح مكتوب فقط، والمصدر لا يعمم العادات على هويات ثقافية."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-07-Q01",
+      "sourceTaskIds": [
+        "DL-B1-07-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "مفردات الحياة اليومية",
+        "فهم عبارة"
+      ],
+      "prompt": "ما معنى **Rücksicht aufeinander nehmen**؟",
+      "options": [
+        "يراعي بعضنا بعضًا.",
+        "يغيّر الموعد كل أسبوع.",
+        "يختار نشاطًا فرديًا."
+      ],
+      "answerIndex": 0,
+      "explanation": "تعني العبارة أن يراعي الأشخاص بعضهم بعضًا، كما تفعل شخصيات الحوار عند توزيع المهام."
+    },
+    {
+      "id": "DL-B1-07-Q02",
+      "sourceTaskIds": [
+        "DL-B1-07-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "روابط ثنائية",
+        "sowohl … als auch"
+      ],
+      "prompt": "أكمل تركيب الجملة للدلالة على أن مينا تحضر الدورتين: **Mina besucht ___ einen Sprachkurs ___ einen Kochkurs.**",
+      "options": [
+        "sowohl / als auch",
+        "entweder / sondern auch",
+        "weder / oder"
+      ],
+      "answerIndex": 0,
+      "explanation": "sowohl … als auch تشمل الدورتين معًا في المعنى، ولا تشترط حضورهما في الوقت نفسه؛ العنصران مفعولان متوازيان."
+    },
+    {
+      "id": "DL-B1-07-Q03",
+      "sourceTaskIds": [
+        "DL-B1-07-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "روابط ثنائية",
+        "nicht nur … sondern auch"
+      ],
+      "prompt": "أكمل للدلالة على أن سمير لا يقرأ الأخبار وحدها، بل يقرأ الروايات أيضًا: **Samir liest nicht ___ Nachrichten, ___ Romane.**",
+      "options": [
+        "sowohl / als auch",
+        "nur / sondern auch",
+        "entweder / oder"
+      ],
+      "answerIndex": 1,
+      "explanation": "nicht nur … sondern auch تثبت قراءة الأخبار وتضيف الروايات. كلمة nicht موجودة؛ نكمل بـnur / sondern auch. نفي sowohl أو entweder لا يؤدي معنى الإضافة المطلوبة، ولو أمكن في سياق مختلف."
+    },
+    {
+      "id": "DL-B1-07-Q04",
+      "sourceTaskIds": [
+        "DL-B1-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "روابط ثنائية",
+        "الاختيار بين بديلين"
+      ],
+      "prompt": "أكمل للدلالة على اختيار مكان واحد يوم الجمعة: **Am Freitag treffen wir uns ___ im Park ___ im Café.**",
+      "options": [
+        "sowohl / als auch",
+        "weder / noch",
+        "entweder / oder"
+      ],
+      "answerIndex": 2,
+      "explanation": "entweder … oder تعرض خيارًا بين بديلين: الحديقة أو المقهى."
+    },
+    {
+      "id": "DL-B1-07-Q05",
+      "sourceTaskIds": [
+        "DL-B1-07-T03",
+        "DL-B1-07-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "روابط ثنائية",
+        "النفي بـweder … noch"
+      ],
+      "prompt": "أي رابط يعبّر عن أن المتكلم لا يشرب أيًا من المشروبين مساءً؟ **Ich trinke am Abend ___ Kaffee ___ schwarzen Tee.**",
+      "options": [
+        "nicht nur / sondern auch",
+        "weder / noch",
+        "entweder / oder"
+      ],
+      "answerIndex": 1,
+      "explanation": "weder … noch تنفي العنصرين معًا، ولا نضيف nicht إلى هذا النمط."
+    },
+    {
+      "id": "DL-B1-07-Q06",
+      "sourceTaskIds": [
+        "DL-B1-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة",
+        "الموقع الثاني للفعل"
+      ],
+      "prompt": "اختر الترتيب المحايد المطلوب عند تقديم الزوج المنفي، مع الضمير **ich** مباشرة بعد المصرف: **Weder Kaffee noch schwarzen Tee …**",
+      "options": [
+        "Weder Kaffee noch schwarzen Tee ich trinke am Abend.",
+        "Weder Kaffee noch schwarzen Tee trinke am Abend ich.",
+        "Weder Kaffee noch schwarzen Tee trinke ich am Abend."
+      ],
+      "answerIndex": 2,
+      "explanation": "الزوج المنفي كله في الموقع الأول، ثم trinke المصرف، ثم ich مباشرة في النمط المحايد المطلوب. وجود trinke ثانيًا وحده لا يفسر ترتيب بقية الكلمات، ولا نحكم هنا على كل سياق ذي نبر خاص."
+    },
+    {
+      "id": "DL-B1-07-Q07",
+      "sourceTaskIds": [
+        "DL-B1-07-T02",
+        "DL-B1-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "توازي العناصر",
+        "التوافق الجمعي"
+      ],
+      "prompt": "أكمل الفعل: **Sowohl die Nachbarn als auch die Gäste ___ beim Fest.**",
+      "options": [
+        "helfen",
+        "hilft",
+        "helfe"
+      ],
+      "answerIndex": 0,
+      "explanation": "Nachbarn و Gäste كلاهما جمع في هذه الجملة؛ لذلك نختار helfen، لا hilft أو helfe. لا نعمم الحكم على كل رابط ثنائي أو تركيب بفاعلين مفردين."
+    },
+    {
+      "id": "DL-B1-07-Q08",
+      "sourceTaskIds": [
+        "DL-B1-07-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "اختيار باستخدام entweder … oder"
+      ],
+      "prompt": "اقرأ السطر الوارد في نص الاستماع: **Am Wochenende gehen wir entweder in den Park oder ins Museum.** إلى أين تذهب المجموعة؟",
+      "options": [
+        "إلى الحديقة أو المتحف.",
+        "إلى المقهى أو المكتبة.",
+        "إلى السوق أو محطة القطار."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر السطر المكتوب احتمالين: الحديقة أو المتحف. هذا السؤال يُجاب من نص المصدر المكتوب ولا يتطلب MP3."
+    },
+    {
+      "id": "DL-B1-07-Q09",
+      "sourceTaskIds": [
+        "DL-B1-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "السبب والنتيجة"
+      ],
+      "prompt": "لماذا تسجّل Noura أحيانًا لمواعيد مختلفة؟",
+      "options": [
+        "لأنها تعمل متأخرة أحيانًا.",
+        "لأن المجموعة لا تنظّم لقاءات في عطلة الأسبوع.",
+        "لأنها تتولى تنظيم البرنامج الموسيقي."
+      ],
+      "answerIndex": 0,
+      "explanation": "توضح القراءة أن Noura تعمل متأخرة أحيانًا، لذلك تختار موعدًا مبكرًا أو لقاء عطلة الأسبوع."
+    },
+    {
+      "id": "DL-B1-07-Q10",
+      "sourceTaskIds": [
+        "DL-B1-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تجنّب التعميم الثقافي"
+      ],
+      "prompt": "أي عبارة توافق نهاية نص القراءة؟",
+      "options": [
+        "يجب على كل مشارك أن يمثل ثقافته أمام المجموعة.",
+        "يمكنهم مشاركة الخبرات الشخصية عند الرغبة، ولا يُلزم أحد بالحديث نيابة عن بلد أو جماعة كاملة.",
+        "لكل مجتمع عادة واحدة ثابتة ينبغي اتباعها."
+      ],
+      "answerIndex": 1,
+      "explanation": "muss niemand تعني أن أحدًا لا يُلزم بالتمثيل، لا أن ذلك لا يحدث مطلقًا؛ و wenn sie möchten تقيد المشاركة بالرغبة. تُروى خبرات شخصية دون جعلها قاعدة عن بلد أو جماعة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-07-P01",
+      "sourceTaskIds": [
+        "DL-B1-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خمس جمل عن Mina و Samir في سكن مشترك خيالي: عرّف الشخصيتين؛ صف طبخ Mina يومي الثلاثاء والخميس بـ sowohl … als auch؛ صف قراءة Samir للروايات والكتب غير الروائية بـ nicht nur … sondern auch؛ انفِ شرب Mina القهوة والشاي الأسود مساءً بـ weder … noch؛ واختم بمقارنة أن Samir يحب الشاي الأسود مساءً. احفظ التوازي والفاصلة قبل sondern والنفي المقيد بالمساء. هذه كتابة فقط، بلا جهر أو تسجيل أو بيانات حقيقية. لا تعمّم عادةً على ثقافة أو بلد كامل.",
+      "criteria": {
+        "taskCompletion": "خمس جمل بالمطالب المحددة عن Mina و Samir: تعريف وطبخ وقراءة ونفي مشروبين ومقارنة الشاي؛ كتابة فقط.",
+        "meaningClarity": "مقارنة مفهومة بين شخصيتين خياليتين، مع نسبة كل عادة لصاحبها وتقييد نفي المشروبات بالمساء دون تعميم ثقافي.",
+        "targetSkill": "sowohl … als auch و nicht nur … sondern auch و weder … noch في ثلاثة مواضع سليمة؛ توازي وفاصلة قبل sondern وترتيب فعل ونفي دون nicht إضافية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-07-P02",
+      "sourceTaskIds": [
+        "DL-B1-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-07-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب حوارًا خياليًا من ستة أدوار بين Mina و Samir ينظمان مهام الأسبوع: سؤال عن وقت التخطيط؛ عرض الاثنين أو الثلاثاء بـ entweder … oder؛ اختيار الاثنين؛ تثبيت الاثنين عند السادسة مساءً؛ عرض Mina تولي الطبخ والشراء يوم الثلاثاء بـ sowohl … als auch؛ ثم موافقة Samir وتوليه ترتيب المطبخ يوم الثلاثاء. اكتب الطرفين ثم اقرأهما جهرًا بنفسك دون شريك أو تسجيل. اجعل الاتفاق عن هاتين الشخصيتين فقط، وحافظ على التوازي والوقت؛ لا تعميم ثقافي أو موعد حقيقي.",
+      "criteria": {
+        "taskCompletion": "ستة أدوار تتضمن اختيار الاثنين بدل الثلاثاء وتثبيت 18:00 وتوزيع الطبخ والشراء وترتيب المطبخ يوم الثلاثاء؛ اكتب الطرفين ثم اجهر بهما.",
+        "meaningClarity": "البديل ثم الاتفاق على وقت التخطيط وتوزيع مهام الثلاثاء واضحان، ولا ينسب النص العادات إلى ثقافة أو بلد.",
+        "targetSkill": "رابط إضافة sowohl … als auch ورابط اختيار entweder … oder، مع اكتمال الجزأين والتوازي والمصرف في موضعه."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 # A1.3 — في المدينة: المقهى والفندق
 
-**المدة:** 30–35 دقيقة · **المهارات:** قراءة، محادثة، مفردات، قواعد  
+**المدة:** 30–35 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس على جلستين) · **المهارات:** قراءة، كتابة، محادثة، مفردات، قواعد، واستماع اختياري
+
 **هدف التواصل:** أستطيع طلب شيء في مقهى، السؤال عن مكان، وفهم تعليمات بسيطة في المدينة.
 
 ## 1) مفردات المدينة
@@ -14,9 +15,9 @@
 | das Museum | die Museen | المتحف |
 | die Straße | die Straßen | الشارع |
 | die Apotheke | die Apotheken | الصيدلية |
-| der Supermarkt | die Supermärkte | المتجر الكبير |
+| der Supermarkt | die Supermärkte | السوبرماركت/متجر المواد الغذائية بالخدمة الذاتية |
 | der Platz | die Plätze | الساحة |
-| die Haltestelle | die Haltestellen | موقف الحافلة/الترام |
+| die Haltestelle | die Haltestellen | موقف نقل عام مثل الحافلة أو الترام |
 | links / rechts | — | يسار / يمين |
 | geradeaus | — | إلى الأمام مباشرة |
 | die Ecke | die Ecken | الزاوية |
@@ -33,37 +34,72 @@
 
 ## 3) القواعد: الطلب بـmöchte
 
-نستخدم **möchte** لطلب مهذب أو للتعبير عما نريده:
+نستخدم **möchte** لطلب لطيف، بمعنى «أودّ». هي من صيغ mögen في Konjunktiv II، لكنها تعبّر هنا عن رغبة حالية، لا عن حدث في الماضي. نحفظها الآن كنمط طلب؛ لا يلزم درس كامل في Konjunktiv:
 
 | الضمير | التصريف |
 |---|---|
 | ich | möchte |
 | du | möchtest |
-| er/sie | möchte |
+| er/sie/es | möchte |
 | wir | möchten |
 | ihr | möchtet |
 | sie/Sie | möchten |
 
-- **Ich möchte einen Tee, bitte.** — أريد شايًا من فضلك.
-- **Ich möchte eine Suppe.** — أريد حساءً.
-- **Ich möchte ein Wasser.** — أريد ماءً.
-- **Ich möchte bezahlen.** — أريد أن أدفع.
+- **Ich möchte einen Tee, bitte.** — أودّ شايًا من فضلك.
+- **Ich möchte eine Suppe.** — أودّ حساءً.
+- **Ich möchte ein Wasser.** — أودّ ماءً.
+- **Ich möchte bezahlen.** — أودّ أن أدفع.
+
+في المقهى قد تعني **ein Wasser** طلب حصة ماء واحدة (مثل كأس أو قارورة وفق المكان)، ولا تعني أن الماء نفسه مادة معدودة دائمًا أو تحدد الحجم.
 
 في المثال الأخير يأتي الفعل الآخر بصيغته الأساسية في نهاية الجملة: **möchte … bezahlen**.
 
-ملاحظة أولى عن المفعول به بعد الطلب: في المذكر نقول **einen Kaffee / einen Tee**، أما المؤنث **eine Suppe** والمحايد **ein Wasser**. ستتعلم تفاصيل Akkusativ لاحقًا.
+ملاحظة أولى عن المفعول به بعد الطلب: في المذكر نقول **einen Kaffee / einen Tee**، أما المؤنث **eine Suppe** والمحايد **ein Wasser**. هذه أمثلة محددة من **Akkusativ** الذي رأيته مع haben في A1.2، وليست قاعدة لكل ما يأتي بعد كلمة طلب.
+
+**طلب بسيط في الفندق:** das Zimmer = الغرفة؛ **Ich möchte ein Zimmer, bitte.** — أودّ غرفة من فضلك. هذا تطبيق لنمط الطلب، وليس تدريب حجز كاملًا.
+
+### مساعدة قبل النصوص
+
+- **der Tee / der Kaffee** — الشاي / القهوة؛ في طلب حصة: einen Tee / einen Kaffee.
+- **die Suppe** — الحساء؛ eine Suppe في المثال.
+- **ein Stück Kuchen** — قطعة كعك؛ الأداة تتبع das Stück المحايد، لا der Kuchen.
+- **trinken / bezahlen** — يشرب / يدفع الحساب.
+- **Was kostet das alles?** — كم ثمن هذا كله؟ السؤال عن مجموع الطلب.
+- **Sechs Euro fünfzig** — ستة يورو وخمسون سنتًا: 6,50 €؛ مبلغ خيالي للحوار، لا سعر حالي أو سعر الشاي وحده.
+- **die Servicekraft / der Gast** — موظف/موظفة الخدمة / الزبون في المقهى.
+- **weit / in der Nähe** — بعيد / قريب.
+- **dann / zuerst** — ثم / أولًا.
+- **die Ampel** — إشارة المرور.
+- **bis zur Ampel / bis zur Apotheke** — حتى إشارة المرور / حتى الصيدلية؛ zur = zu der.
+- **vom Bahnhof** — من المحطة؛ vom = von dem.
+- **an der Ecke** — عند الزاوية.
+- **neben dem kleinen Markt** — بجانب السوق الصغير؛ dem kleinen صيغة جاهزة للفهم الآن.
+- **gegenüber dem Café** — مقابل المقهى؛ gegenüber هنا مع Dativ، لا تعني بجانبه.
+- **das Stadtmuseum** — متحف المدينة.
+- **dort / an der Apotheke** — هناك / عند الصيدلية، لتحديد موضع الانعطاف في التدريب.
+- **bis zum Café / neben dem Museum** — حتى المقهى / بجانب المتحف؛ نماذج جاهزة للمسار الكتابي، لا جدول كامل لحروف الجر.
+
+في **Gehen Sie …** تأتي صيغة التوجيه الرسمية، وإضافة bitte تجعل الطلب ألطف؛ النبرة والسياق مهمان أيضًا. الأمثلة المكانية لا تغني عن تعلم الحالات بالتدريج.
 
 ## 4) حوار أصلي في مقهى
 
-**Servicekraft:** Guten Tag! Was möchten Sie?  
-**Gast:** Ich möchte einen Tee und ein Stück Kuchen, bitte.  
-**Service:** Gern. Möchten Sie auch Wasser?  
-**Gast:** Ja, ein Wasser, bitte. Was kostet das alles?  
-**Servicekraft:** Sechs Euro fünfzig.  
-**Gast:** Hier, bitte. Danke!  
+**Servicekraft:** Guten Tag! Was möchten Sie?
+
+**Gast:** Ich möchte einen Tee und ein Stück Kuchen, bitte.
+
+**Servicekraft:** Gern. Möchten Sie auch Wasser?
+
+**Gast:** Ja, ein Wasser, bitte. Was kostet das alles?
+
+**Servicekraft:** Sechs Euro fünfzig.
+
+**Gast:** Hier, bitte. Danke!
+
 **Servicekraft:** Danke. Auf Wiedersehen!
 
 ## 5) نص قراءة أصلي
+
+القراءة والاستماع التاليان **نصان لموقفين خياليين مستقلين**، لا خريطة واحدة: في القراءة المتحف مقابل المقهى، وفي الاستماع بجانبه. المسار في تمرين9 مثال ثالث مستقل. ليست هذه إرشادات سفر حقيقية.
 
 > Das Café „Am Platz“ ist neben dem kleinen Markt. Vom Bahnhof gehen Sie geradeaus bis zur Ampel. Dann gehen Sie rechts. Das Café ist an der Ecke. Das Stadtmuseum ist gegenüber dem Café. Die Apotheke ist neben dem Hotel.
 
@@ -74,9 +110,13 @@
 3. Wo ist das Stadtmuseum?
 4. Was ist neben dem Hotel?
 
-## 6) نص استماع معدّ للنطق
+## 6) نص الاستماع — التسجيل موجود
 
 > Entschuldigung, wie komme ich zum Museum? — Gehen Sie geradeaus bis zum Platz. Dann gehen Sie links. Das Museum ist neben dem Café. — Vielen Dank! — Bitte schön.
+
+النص ظاهر، ويمكن فتح التفريغ المرافق للمشغل أيضًا. حاول الاستماع دون النظر أولًا ثم قارن؛ القراءة بديل مفيد لكنها لا تثبت فهمًا مسموعًا. أسئلة التقييم المحسوبة لا تتطلب الصوت.
+
+في السؤال الثاني تعود **sie** على **die Person** المؤنثة نحويًا؛ لا نستنتج منها جنس الشخص الحقيقي.
 
 أجب بثلاثة أجوبة قصيرة:
 
@@ -88,10 +128,12 @@
 
 ### تمرين 1 — أكمل اسم المكان
 
-1. أشتري الدواء من der ______.
-2. أشاهد معروضات في das ______.
-3. أستقل القطار من der ______.
-4. أنتظر الحافلة عند der ______.
+اكتب الاسم كاملًا مع أداة الرفع كما في جدول المفردات؛ المطلوب تسمية المكان، لا تصريف أداة بعد حرف الجر العربي. اختر من: **die Apotheke / das Museum / der Bahnhof / die Haltestelle**.
+
+1. أشتري الدواء من ______.
+2. أشاهد معروضات في ______.
+3. أستقل القطار من ______.
+4. أنتظر الحافلة عند ______.
 
 ### تمرين 2 — اختر الاتجاه
 
@@ -105,6 +147,7 @@
 2. Du ______ bezahlen.
 3. Wir ______ eine Suppe.
 4. Was ______ Sie trinken?
+5. Du ______ ein Zimmer.
 
 ### تمرين 4 — اختر أداة الطلب المناسبة
 
@@ -114,32 +157,40 @@
 
 ### تمرين 5 — رتّب الحوار
 
-أ. Was kostet der Tee?  
-ب. Guten Tag!  
-ج. Ich möchte einen Tee, bitte.  
-د. Guten Tag! Was möchten Sie?
+في هذا المقتطف **الزبون يبدأ بالتحية المنفردة**، فيرد الموظف ويسأل عن الطلب، ثم يطلب الزبون ويسأل عن السعر. هو مقتطف ينتهي قبل جواب السعر، وليس حوار خدمة كاملًا:
 
-رتّبها من البداية إلى النهاية.
+- أ. **Gast:** Was kostet der Tee?
+- ب. **Gast:** Guten Tag!
+- ج. **Gast:** Ich möchte einen Tee, bitte.
+- د. **Servicekraft:** Guten Tag! Was möchten Sie?
+
+رتّب الوحدات بحسب الموقف المحدد؛ في الحياة يمكن أن يبدأ الموظف بالتحية أيضًا.
 
 ### تمرين 6 — قراءة
 
-حدّد صحيح/خطأ:
+حدّد صحيح/خطأ بحسب نص القراءة، وصحّح الخطأ:
 
-1. Das Café ist am Bahnhof.
+1. Vom Bahnhof gehen Sie zuerst links.
 2. Das Museum ist gegenüber dem Café.
 3. Die Apotheke ist neben dem Hotel.
 
 ### تمرين 7 — استماع/قراءة الاتجاه
 
-أجب عن الأسئلة الثلاثة في فقرة الاستماع بجمل قصيرة بالألمانية.
+أجب عن الأسئلة الثلاثة في فقرة الاستماع بجمل قصيرة بالألمانية. إذا قرأت النص فهذا فهم كتابي، لا اجتياز سمعي.
+
+4. تدريب كتابي مستقل: اكتب سؤال الطريق إلى محطة القطار من فقرة2: **Wie komme ich zum Bahnhof?**. هذا ليس سؤالًا عن بيانات تسجيل المتحف.
 
 ### تمرين 8 — موقف تمثيلي
 
-اطلب مشروبًا وطعامًا في مقهى، واسأل عن السعر، ثم اشكر العامل. استخدم **Ich möchte… bitte** و**Was kostet…?**
+اكتب أقوال الزبون في أربع وحدات قصيرة: التحية، وطلب مشروب وطعام بصيغة Ich möchte … bitte، والسؤال عن السعر بـWas kostet …?، والشكر. اختر Tee مع Suppe أو ein Stück Kuchen من أمثلة الدرس. اقرأ الأقوال الأربعة بصوت مرتفع بنفسك؛ لا يلزم شريك أو كتابة رد العامل أو اختراع سعر أو تسجيل صوتك.
 
-### تمرين 9 — خريطة صغيرة
+### تمرين 9 — مسار خيالي مكتوب
 
-ارسم أربع نقاط على ورقة: Bahnhof، Café، Museum، Apotheke. اختر مكانًا بجانب آخر، ثم اكتب ثلاث جمل اتجاهات باستخدام **links, rechts, geradeaus, neben**.
+استخدم المسار الخيالي المكتوب في تمرين9: تبدأ من Bahnhof باتجاه Apotheke أمامك عند التقاطع؛ انعطف هناك يمينًا، ثم تابع مباشرة حتى Café، وMuseum بجانب Café. اكتب بالألمانية ثلاث تعليمات بصيغة Sie تحافظ على الترتيب ونقطة الانعطاف والوجهة، ثم أضف جملة مكان تستعمل neben. هذه مهمة كتابة من مسار معطى؛ الرسم اختياري ولا يلزم الكلام أو رفع صورة.
+
+نقطة البداية واتجاه النظر محددان: المحطة خلفك والصيدلية أمامك على الشارع نفسه عند التقاطع. الشارع الذي على يمينك عند الصيدلية ينتهي بالمقهى. المتحف بجانب المقهى، ولا تحتاج إلى الذهاب إليه. يمكنك رسم هذه العلاقات للمساعدة، لكن المطلوب إعادة صياغة المسار المكتوب لا اختبار قراءة خريطة بصرية.
+
+نمط التوجيه: **Gehen Sie bitte geradeaus.** لا تخلط بين تعليمات السير وجملة موقع مثل **Das Café ist neben dem Museum.**
 
 ## 8) مفتاح الإجابات
 
@@ -147,18 +198,20 @@
 
 **أسئلة الاستماع:** 1. Zum Museum. 2. Am Platz geht die Person nach links. 3. Das Museum ist neben dem Café.
 
-- **تمرين 1:** 1. Apotheke، 2. Museum، 3. Bahnhof، 4. Haltestelle.
+- **تمرين 1:** 1. die Apotheke، 2. das Museum، 3. der Bahnhof، 4. die Haltestelle.
 - **تمرين 2:** 1. ب، 2. أ، 3. ب.
-- **تمرين 3:** 1. möchte، 2. möchtest، 3. möchten، 4. möchten.
+- **تمرين 3:** 1. möchte، 2. möchtest، 3. möchten، 4. möchten، 5. möchtest.
 - **تمرين 4:** 1. einen، 2. eine، 3. ein.
 - **تمرين 5:** ب، د، ج، أ.
-- **تمرين 6:** 1. خطأ، 2. صحيح، 3. صحيح.
-- **تمرين 7:** 1. Zum Museum. 2. Sie geht am Platz nach links. 3. Das Museum.
-- **تمرين 8 و9:** إجابات مفتوحة؛ تحقق من صيغة الطلب ومن استعمال اتجاه واضح.
+- **تمرين 6:** 1. خطأ — Vom Bahnhof gehen Sie zuerst geradeaus. 2. صحيح. 3. صحيح.
+- **تمرين 7:** 1. Die Person möchte zum Museum gehen. 2. Sie geht am Platz nach links. 3. Das Museum ist neben dem Café. 4. Wie komme ich zum Bahnhof?
+- **تمرين 8 — نموذج لأقوال الزبون:** Guten Tag! / Ich möchte einen Tee und eine Suppe, bitte. / Was kostet das alles? / Danke! أربعة مطالب تواصلية، وليست محادثة ثنائية كاملة. يقرأها المتعلم بنفسه؛ لا يُطلب سعر أو رد عامل.
+- **تمرين 9 — نموذج مكتوب:** Gehen Sie bitte geradeaus bis zur Apotheke. / Gehen Sie dort rechts. / Gehen Sie geradeaus bis zum Café. / Das Café ist neben dem Museum. أول ثلاث جمل تعليمات، والرابعة موقع. يمكن تغيير الصياغة مع بقاء البيانات والترتيب والمطلوب.
+- **حدود التحقق:** المسودات والمربعات وحد الطول لا يثبتان صحة اللغة أو جودة النطق آليًا، ولا يقيسان قدرة قراءة خريطة بصرية أو السير في مكان حقيقي.
 
 ## 9) بطاقات مراجعة
 
 - **Wo ist …?** → أين …؟
 - **Gehen Sie geradeaus.** → اذهب مباشرة.
-- **Ich möchte einen Tee.** → أريد شايًا.
+- **Ich möchte einen Tee.** → أودّ شايًا.
 - **Was kostet das?** → كم سعر ذلك؟

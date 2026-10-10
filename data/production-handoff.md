@@ -1,0 +1,4271 @@
+# CR64 / شفرات الإتقان السريع وحيل `DaF` (`53` درسًا)، ونصوص القراءة والاستماع المرجعية داخل الاختبارات (`36` استماع + `94` قراءة/حوار)، وشريط `Umlaute` والفحص الفوري (`428` تمرينًا + `109` مهام)، وشارات جنس الاسم والإملاء النشط (`754` مفردة)، ودفتر الأخطاء الذكي، والترديد الصوتي السطري (`474` مقطعًا) — مرفوعة ومفحوصة؛ غير مدمجة
+
+## إيصال رفع CR64 واعتماد جميع الأصول الصوتية الـ`217/217` بحالة `ready` — 2026-10-10
+
+- **التحديث والتقرير الكامل (`CR64`):** دُفع في الالتزام `bbcedee0a293d2a78e5cf288e4376286507b7e68` (`bbcedee`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Add DaF pedagogical tricks, quiz audio/reading helpers, Umlaut bar, mistake bank & segment shadowing (CR64)`.
+- **معاينة Vercel لـ`bbcedee`:** `Deployment has completed` (`state: success`، Deployment ID `6981852455`، Status ID `19567502879`، المعاينة `https://deutschlern-bmqxdmvyp-balinader-2671s-projects.vercel.app`، لوحة الفحص `https://vercel.com/balinader-2671s-projects/deutschlern/8xpT4UtydjS3C78DjBFytHL3RbpY`).
+- **اعتماد الأصول الصوتية الـ`80` المتبقية (`B1.9–B2.12`) لتصبح جميع الأصول الـ`217/217` (`474` مقطعًا) بحالة `ready` («نهائي»):** دُفع بتوجيه المستخدم الصريح (`خليها ready`) في الالتزام `b4bb2681ffc79d3ec87fee91990c141e92afb276` (`b4bb268`) على الفرع `arena/01a1036f-deutschlern` مع ترقية المخزن إلى `deutsch-pfad-v114` ومزامنة `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/curriculum-file-audit.csv` و`data/course.json` (`2,416,921` بايت) وحراس المراجعة الـ`64` ومجموعات Node الخمس (أعادت Vercel لحساب الخطّة المجانية رسالة `Deployment rate limited — retry in 24 hours` بعد نجاح نشر `bbcedee`).
+- **إيصال التسليم:** يُسجل هذا الالتزام إيصال اعتماد الأصول الـ`217/217` بحالة `ready` (دون ادعاء مراجعة سمعية بشرية غير منفذة)؛ يبقى PR#1 مفتوحًا وغير مدمج.
+
+**سجل مراجعة وترقية تربوية ومنهجية شاملة CR64 — 2026-10-10:** استكمالًا للفحص والتطوير الشامل لكامل المشروع بنسبة 100% دون عينات، نُفّذت المحاور التربوية الستة لخبرة تدريس الألمانية للناطقين بالعربية (`DaF`) عبر الدروس الـ`53/53` وبوابة `A0` في **68 وحدة مراجعة شاملة** بالاستناد إلى **17 مرجعًا إلكترونيًا (`14` صفحة كاملة في `16` جزءًا بـ`hasMore == false` + `3` استعلامات بحث بـ`9` مقتطفات + رابط 404 واحد مستبعد `/rechtschreibung/Satzstellung` لصالح `/rechtschreibung/Wortstellung`)** (`W3C WAI WCAG 2.1 Techniques G89 & G131`، و`Lingolia Nouns & Articles / Prepositions`، و`Duden: Eselsbruecke, Kompositum, Genus, Umlaut, Praeposition, Wortstellung, Rechtschreibung, Merkmal`):
+1. **ربط مشغّل الاستماع بجميع أسئلة الاستماع الـ`36/36` وإضافة نصوص القراءة/الحوار المرجعية الـ`94` داخل الاختبارات وتوزيع مواقع الخيارات الصحيحة بالتوازن:**
+   - رُقّيت دالة `renderQuizAudioHelper(unit, question)` لفحص `skillTags` (`listening`) إلى جانب نص السؤال، فارتفع عدد أسئلة الاستماع المزودة بمشغّل صوتي فوري داخل شاشة الاختبار من `15` إلى **`36/36` سؤالًا (100%)**.
+   - أُضيفت دالة `renderQuizReadingHelper(unit, question)` لعرض صندوق قابل للطي (`<details class="quiz-reading-helper">`) يضم نص القراءة أو الحوار المرجعي الأصلي داخل شاشة الاختبار لجميع أسئلة فهم المقروء والحوار الـ**`94`**.
+   - ضُبطت دالة `getDisplayedQuizOptionIndices` لتدوير مواقع الخيارات حتميًا في المحاولة الأولى (`attemptSeed === 0`) بحيث تتوزع الإجابات الصحيحة بالتوازن بين المواقع (`أ / ب / ج / د`) في كل درس، مع استمرار إعادة الترتيب في المحاولات اللاحقة.
+2. **صندوق شفرات الإتقان السريع وحيل `DaF` وتنبيهات التداخل اللغوي في جميع الدروس الـ`53/53` (`<details class="lesson-daf-tricks-box">`):**
+   - أُضيفت دالة `renderLessonPedagogicalTricks(lesson)` المحقونة في جميع الدروس الـ`53/53` بارتباط ديناميكي بمحتوى كل درس ومستواه (`A0–B2`):
+     - **حيل الاشتقاق وجنس الاسم (`Genus-Code & Komposita`):** لواحق المؤنث (`-ung, -heit, -keit, -schaft, -ion, -tät, -ik` → `die`)، والمحايد (`-chen, -lein, -ment, -um` والمصادر الاسمية → `das`)، والمذكر (`-ling, -ig, -ich, -ismus` وأيام الأسبوع والفصول → `der`)، وقاعدة الكلمة الأخيرة في الأسماء المركبة (`Komposita`).
+     - **شفرة الحالات وحروف الجر (`FUDGO & Wechselpräpositionen`):** `FUDGO` (`für, um, durch, gegen, ohne` → `Akkusativ`)، وحروف `Dativ` (`mit, nach, aus, zu, von, bei, seit`)، وقاعدة الحركة `Wohin? -> Akkusativ` مقابل الثبات `Wo? -> Dativ`.
+     - **هندسة الجملة الألمانية (`V2-Regel, Satzklammer, ADUSO & TeKaMoLo`):** ثبات الفعل في الموقع الثاني `V2`، وقوس الجملة `Satzklammer`، وأدوات الربط الصفرية `ADUSO` مقابل أدوات الجملة الفرعية، وترتيب الظروف `TeKaMoLo`.
+     - **تنبيهات التداخل اللغوي للناطق بالعربية (`L1-Interferenz-Fallen`):** عدم حذف فعل الكينونة (`sein`) أو الفاعل الصريح (`es`)، والتفريق الصوتي بين `ich-Laut / ach-Laut` و`b/p` و`v/w` و`sp-/st-`، وتجنب الترجمة الحرفية لأفعال حروف الجر (`warten auf + Akk.`).
+3. **شريط الحروف الألمانية الخاصة (`ä, ö, ü, ß, Ä, Ö, Ü`) والفحص الذاتي الفوري للمسودات في التمارين الـ`428/428` ومهام الأداء الـ`109/109`:**
+   - أُضيف شريط `.german-char-toolbar` (`insertGermanCharAtCursor`) لكل حقل مسودة تمرين (`428`) ومهمة أداء (`109`) لإدراج حروف الإمالة و`ß` بنقرة واحدة عند مؤشر الكتابة.
+   - أُضيفت دالة `analyzeExerciseDraftAgainstKey(draftText, keyHtml)` لعرض تغذية راجعة فورية (`.exercise-draft-feedback`) تقارن مسودة المتعلم بالكلمات الألمانية المفتاحية المستهدفة في مفتاح التمرين وتنبّه إلى كتابة الحروف الكبيرة في بدايات الأسماء (`Großschreibung`).
+4. **شارات جنس الاسم عالية التباين (`der / die / das`) والسياقات الألمانية الشاملة (`754/754`) وتدريب الإملاء النشط:**
+   - أُضيفت دالة `renderNounGenderBadge(word)` لتمييز الأسماء الألمانية بشارات لونية ودلالية واضحة (`der · مذكر`، `die · مؤنث`، `das · محايد`) في بطاقات المفردات والقاموس التراكمي.
+   - رُقّيت دالة `getWordContextHint` لتوليد جمل سياقية ألمانية طبيعية (`lang="de"`) لجميع المفردات الـ`213` التي لم تحمل مثالًا مصدريًا في جدول الدرس، فأصبحت التغطية السياقية الألمانية **`754/754` مفردة (100%)**.
+   - أُضيف صندوق تدريب الإملاء النشط وأداة التعريف (`#flash-spell-input` + `evaluateFlashcardSpelling`) مع شريط حروف `Umlaute` داخل بطاقات المراجعة المتباعدة.
+5. **دفتر أخطائي الذكي (`state.mistakeBank` — `.mistake-bank-panel`) والترديد الصوتي السطري (`474` مقطعًا عبر `217` أصلًا):**
+   - أُضيف سجل `state.mistakeBank` المحفوظ محليًا والمشمول في النسخ الاحتياطي JSON لتجميع الأسئلة التي أخطأ فيها المتعلم في اختبارات الدروس والبوابة وعرضها في لوحة مراجعة علاجية تفاعلية (`renderMistakeBankSection`) في صفحة المراجعة مع إزالتها تلقائيًا فور الإجابة عنها بشكل صحيح.
+   - أُضيف زر استماع سطري مباشر (`.transcript-segment-btn` مع `data-action="play-audio-segment"`) لكل سطر من أسطر التفريغ الصوتي الـ**`474/474`** عبر الأصول الـ`217` للترديد السمعي الدقيق (`Micro-Shadowing`).
+
+## التسليم والمتابعة — CR64
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Add DaF pedagogical tricks, quiz audio/reading helpers, Umlaut bar, mistake bank & segment shadowing (CR64)`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v114`)، `tools/test_accessibility_update.cjs`، `tools/test_service_worker.cjs`، وحراس `CR56–CR63`، والحارس الجديد رقم `64` (`tools/test_daf_pedagogical_tricks_quiz_reading_mistake_bank_review.py`)، وملفات `data/reviews/*-review.json` (`64` ملفًا محدّثة البصمات `sourceHashes`) + `data/reviews/daf-pedagogical-tricks-quiz-reading-mistake-bank-review.md`، والوثائق السبع التراكمية، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **الفحوص التراكمية — CR64 (`PASS` بنسبة 100% على كامل المشروع دون عينات):**
+  - `python3 tools/build_course.py` + `python3 tools/verify_course.py` + جميع حراس المراجعة الـ**`64`** (`tools/test_*_review.py`): **PASS**.
+  - مجموعات Node الخمس (`test_progression.cjs`, `test_service_worker.cjs`, `test_daily_plan.cjs`, `test_session_persistence.cjs`, `test_study_time.cjs`): **PASS**.
+  - مجموعات المتصفح الخمس عبر Chromium 153.0.8010.0 (`test_browser.cjs`, `test_accessibility_update.cjs`, `test_forms_keyboard.cjs`, `test_narrow_layout.cjs`, `test_accessibility_audit.cjs`): **PASS** — شملت التحقق الحي في DOM من **`53/53` صندوق حيل `DaF`**، و**`428/428` مساحة حل ذاتي للتمارين مع شريط الحروف الألمانية**، و**`474/474` زر استماع سطري**، و**`348` حالة عرض ضيق (`320×900` و`568×320`) بصفر تجاوز أفقي**، و**`349` حالة شاشة في `axe-core` WCAG 2.1 A/AA + `best-practice` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**.
+- **الحالة والتالي مباشرة:** اكتملت الترقية التربوية والمنهجية الشاملة للمحاور الستة (`CR64`، `64` حارسًا، `deutsch-pfad-v114`)؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+---
+
+# CR63 / مساحات الحل والتطبيق الذاتي للتمارين (`428` تمرينًا)، ودليل تقمّص الأدوار للحوارات (`46` قسم حوار رئيسي / `61` عنوان حوار)، وتحليل الأخطاء وتشخيص المهارات التراكمي — مرفوعة ومفحوصة؛ غير مدمجة
+
+## إيصال رفع CR63 — 2026-10-10
+
+- **التحديث والتقرير الكامل:** دُفع في الالتزام `d3038336827f6f9c5cbcfa812eaa63c2303a9de4` (`d303833`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Add interactive exercise self-practice workspaces, dialogue guides, quiz/skill diagnostics & sync docs (CR63)`.
+- **معاينة Vercel لـ`d303833`:** `Deployment has completed` (`state: success`، Deployment ID `6981101156`، Status ID `19565972313`، المعاينة `https://deutschlern-45e3ejxha-balinader-2671s-projects.vercel.app`).
+- **إيصال التسليم:** يُسجل هذا الالتزام (`Record CR63 delivery receipt`) إيصال رفع `CR63` في وثائق المتابعة والتسليم؛ يبقى PR#1 مفتوحًا وغير مدمج، وتبقى المراجعة السمعية لـ80 أصلًا صوتيًا (`B1.9–B2.12`) معلقة.
+
+**سجل مراجعة وإنتاج منهجي وتفاعلي شامل CR63 — 2026-10-10:** استكمالًا للإنتاج التراكمي وفحص المشروع كاملًا بنسبة 100% دون عينات، جرت ترقية منهجية التدريب الذاتي وتشخيص الأخطاء عبر الدروس الـ`53/53` وبوابة `A0` في **68 وحدة مراجعة شاملة** بالاستناد إلى **20 مرجعًا إلكترونيًا (`14` صفحة كاملة في `14` جزءًا بـ`hasMore == false` + `2` استعلام بحث بـ`6` مقتطفات)** (`W3C WAI WCAG 2.1 Techniques H44 & G85`، و`Lingolia Sentence Structure / Negation / Questions`، و`Duden: Korrektur, Dialog, Aussprache, Fehler, Selbststudium, Berichtigung, Gespräch, Fragesatz, Fortschritt`):
+1. **مساحات الحل والتطبيق الذاتي التفاعلية لجميع التمارين الـ`428/428` (`<details class="exercise-practice-workspace">`):**
+   - أُضيفت دوال `normalizeExercisePractice` و`getExercisePracticeEntry` و`saveExercisePracticeDraft` و`toggleExercisePracticeDone` و`getLessonExerciseProgress` في `app.js` مع حفظ محلي مستمر في `state.exercisePractice` ودعم كامل للتصدير والاستيراد الاحتياطي JSON.
+   - زُوّد كل تمرين من التمارين الـ`428/428` عبر الدروس الـ`53` بمساحة حل ذاتي قابلة للفتح تسبق مفتاح الحل الفردي (`<details class="exercise-inline-key">`)، وتضم حقل `<textarea id="ex-draft-...">` معنوَنًا صراحةً بـ`<label for="ex-draft-...">` وفق `WCAG 2.1 Technique H44` وزر تسجيل إنجاز التمرين، مع تحديث حي لعداد التمارين المطبّقة (`التطبيق الذاتي: X/Y تمارين`) في شريط مراحل الدرس (`renderLessonStagesBar`).
+2. **دليل التدرب التفاعلي وتقمّص الأدوار للحوارات (`<details class="dialogue-roleplay-guide">` عبر `46` قسم حوار رئيسي / `61` عنوان حوار):**
+   - أُضيف في جميع أقسام الحوار الرئيسية الـ`46` عبر الدروس الـ`53` دليل تفاعلي من `3` خطوات منهجية: (1) الاستماع الشامل بالسرعة الطبيعية (`1x`)، (2) الترديد الجهرى (`Aussprache`) بالسرعة البطيئة (`0.8x`) مع مراعاة موضع الفعل في الجملة الألمانية، (3) تقمّص الأدوار (`Dialog`) وتبديل المتحدثين قبل الانتقال إلى التمارين.
+3. **تقرير تحليل الأخطاء وتصحيح الإجابات بعد الاختبارات (`renderQuizMistakeDiagnostics`) ولوحة مؤشرات التمكّن التراكمية (`renderCumulativeSkillDiagnostics`):**
+   - أُضيفت دالة `renderQuizMistakeDiagnostics(quiz, answers)` في شاشات نتائج تقييم الدروس الـ`53` وبوابة `A0` (`540` سؤالًا إجمالًا) لعرض قائمة الأسئلة التي أخطأ فيها المتعلم مع مقارنة اختياره بالإجابة الصحيحة (`Fehleranalyse & Berichtigung`) وعرض التفسير اللغوي الكامل لكل سؤال.
+   - أُضيفت دالة `renderCumulativeSkillDiagnostics()` في صفحة المراجعة لعرض مؤشرات التمكّن التراكمية الأربعة عبر المنهج الكامل (`A0–B2`): الدروس المتقنة (`X / 53`)، والتمارين المطبّقة ذاتيًا (`X / 428`)، والمفردات الراسخة (`X / 754`)، ومهام الأداء المكتملة (`X / 109`).
+4. **مزامنة الوثائق التراكمية السبع بالكامل حتى `CR63`:**
+   - زُومنت `README.md` و`content/PROGRESS.md` و`data/reviews/README.md` و`data/browser-qa-report.md` و`data/curriculum-audit.md` و`data/curriculum-production-matrix.md` (`الإصدار 1.5`) و`data/course-improvement-plan.md` (`الإصدار 2.69`) لتوثيق `CR62` و`CR63` وحراس المراجعة الـ`63`.
+
+## التسليم والمتابعة — CR63
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Add interactive exercise self-practice workspaces, dialogue guides, quiz/skill diagnostics & sync docs (CR63)`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v112`)، `tools/verify_course.py`، `tools/test_browser.cjs`، `tools/test_accessibility_update.cjs`، `tools/test_service_worker.cjs`، وحراس `CR56–CR62`، والحارس الجديد رقم `63` (`tools/test_exercise_self_practice_and_study_diagnostics_review.py`)، وملفات `data/reviews/*-review.json` (`63` ملفًا محدّثة البصمات `sourceHashes`) + `data/reviews/exercise-self-practice-and-study-diagnostics-review.md`، والوثائق السبع التراكمية، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **الفحوص التراكمية — CR63 (`PASS` بنسبة 100% على كامل المشروع دون عينات):**
+  - `python3 tools/build_course.py` + `python3 tools/verify_course.py` + جميع حراس المراجعة الـ**`63`** (`tools/test_*_review.py`): **PASS**.
+  - مجموعات Node الخمس (`test_progression.cjs`, `test_service_worker.cjs`, `test_daily_plan.cjs`, `test_session_persistence.cjs`, `test_study_time.cjs`): **PASS**.
+  - مجموعات المتصفح الخمس عبر Chromium 153.0.8010.0 (`test_browser.cjs`, `test_accessibility_update.cjs`, `test_forms_keyboard.cjs`, `test_narrow_layout.cjs`, `test_accessibility_audit.cjs`): **PASS** — شملت التحقق الحي في DOM من **`428/428` مساحة حل ذاتي للتمارين**، و**`428/428` مفتاح تمرين فوري**، و**`46/46` دليل حوار تفاعلي**، و**`48/48` واقي نص استماع**، و**`159/159` زر مرحلة درس**، و**`754/754` بطاقة مفردات ومثال سياقي**، و**`348` حالة عرض ضيق (`320×900` و`568×320`) بصفر تجاوز أفقي**، و**`349` حالة شاشة في `axe-core` WCAG 2.1 A/AA + `best-practice` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**.
+- **الحالة والتالي مباشرة:** اكتملت ترقية مساحات الحل الذاتي للتمارين ودليل الحوارات وتشخيص الأخطاء ومزامنة الوثائق التراكمية (`CR63`، `63` حارسًا، `deutsch-pfad-v112`)؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+---
+
+# CR62 / الترقية المنهجية والتفاعلية الشاملة لكامل المشروع (`5` محاور تراكمية عبر `53` درسًا و`428` تمرينًا و`48` قسم استماع و`540` سؤالًا و`109` مهام أداء و`754` مفردة) — مرفوعة ومفحوصة؛ غير مدمجة
+
+## إيصال رفع CR62 — 2026-10-10
+
+- **التحديث والتقرير الكامل:** دُفع في الالتزام `af5ed2551d838397a61eb3a4f5ebd28d854b0ded` (`af5ed25`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Implement 5-axis cumulative pedagogical, study-plan, lesson, assessment & lexicon upgrade (CR62)`.
+- **معاينة Vercel لـ`af5ed25`:** `Deployment has completed` (`state: success`، Deployment ID `6980641944`، Status ID `19565022570`، المعاينة `https://deutschlern-e49apoeg5-balinader-2671s-projects.vercel.app`).
+- **إيصال التسليم:** يُسجل هذا الالتزام (`Record CR62 delivery receipt`) إيصال رفع `CR62` في وثائق المتابعة والتسليم؛ يبقى PR#1 مفتوحًا وغير مدمج، وتبقى المراجعة السمعية لـ80 أصلًا صوتيًا (`B1.9–B2.12`) معلقة.
+
+**سجل مراجعة وترقية منهجية وتفاعلية شاملة CR62 — 2026-10-10:** بناءً على موافقة المستخدم الصريحة (**«كلهم»** ← **«واصل»**) على تنفيذ المحاور الخمسة جميعها عبر كامل المشروع (`A0–B2`)، أُنجزت الترقية التراكمية للمنهجية وطريقة التدريس والتدريب وخطة الدراسة والمفردات والتقييم والمرجع التراكمي عبر **68 وحدة مراجعة شاملة** بالاستناد إلى **24 مرجعًا إلكترونيًا (`15` صفحة كاملة في `16` جزءًا بـ`hasMore == false` + `3` استعلامات بحث بـ`9` مقتطفات، واستبعاد رابطي 404 في `excludedSources`)** (`W3C WAI WCAG 2.1 Techniques G83 & H91`، و`Lingolia Main Clauses / Dependent Clauses / Conjunctions`، و`Duden: Wiederholung, Wortschatz, Übung, Stufe, Grammatik, Lernziel, Selbstkontrolle, Hörverstehen, Entwurf, Modell, Verständnis`):
+1. **المحور الأول — تحويل هيكل الدروس الـ`53` إلى مسار تعلّم نشط على `3` مراحل (`159` زر مرحلة) مع تحقق فوري لكل تمرين (`428/428`) وحماية منهجية للاستماع (`48/48`):**
+   - أُضيف شريط مراحل الدرس التفاعلي (`renderLessonStagesBar`) في جميع الدروس الـ`53/53` مقسّمًا زمن الدرس (`20–40` دقيقة) إلى: **1. البناء التأسيسي (`~35%`)**، **2. التدريب المرحلي (`~40%`)**، **3. إثبات الإتقان (`~25%`)** مع شارات المجالات التواصلية للدرس ومطابقتها لهدف المتعلّم (`state.profile.focus`).
+   - أُضيفت دالة `enhanceLessonDocumentHtml(lesson, rawHtml)` التي تستخرج حل كل تمرين ونموذجه من مفتاح الحل الختامي وتدرجه مباشرة أسفل كل تمرين في صندوق مستقل قابل للفتح (`<details class="exercise-inline-key">`) عبر **`428/428` تمرينًا (`100%`)** مع الإبقاء على مفتاح الإجابات الكامل في نهاية الدرس للمراجعة الشاملة.
+   - في جميع أقسام الاستماع الـ`48` عبر `47` درسًا، جرى تغليف نص الاستماع الألماني المكتوب داخل `<details class="listening-script-guard">` لحثّ المتعلّم على الاستماع أولًا قبل كشف النص، مع إتاحة أزرار تشغيل صوتي مدمجة (`1x` و`0.8x` عبر `data-action="play-section-audio"`) مباشرة تحت عناوين أقسام الحوار والقراءة والاستماع في دروس `A0.1–B1.9` ليصبح التشغيل المدمج متاحًا في جميع الدروس الـ`53/53`.
+2. **المحور الثاني — تطوير التقييم الموضوعي (`540` سؤالًا) والموجّه اللغوي الفوري ومقارنة النموذج في مهام الأداء (`109` مهام):**
+   - أُضيفت دالة `renderQuizAudioHelper(lessonId, question)` لإظهار مشغّل صوت الاستماع (`1x` / `0.8x`) مباشرة داخل بطاقة السؤال عند حل أسئلة الفهم السمعي دون الحاجة للخروج من التقييم.
+   - أُضيفت دالة `getDisplayedQuizOptionIndices(question, retryAttempt)` لتدوير ترتيب عرض الخيارات حتميًا عند إعادة المحاولة (`retryAttempt > 0`) مع الحفاظ الكامل على الفهرس الأصلي (`data-index`) لمنع الحفظ البصري لمواضع الإجابات.
+   - في جميع مهام الأداء العملي الـ`109` (`107` في الدروس + `2` في بوابة `A0`)، أُضيف **الموجّه اللغوي المحلي الفوري (`analyzePerformanceDraft` / `renderPerformanceTaskHeuristics`)** الذي يفحص أثناء الكتابة عدد الأحرف مقابل الحد الأدنى، وعدد الجمل/الأسطر، ولغة المسودة، والكلمات/الروابط الألمانية المستهدفة في المهمة (`✓` عند توظيفها)، مع صندوق **قارن مسودتك بالنموذج الاسترشادي بعد المحاولة (`<details class="performance-model-compare">`)** موضوعًا بعد قائمة معايير التحقق للحفاظ على انتقال مفتاح `Tab` المباشر من حقل الكتابة إلى أول مربع تحقق.
+3. **المحور الثالث — تغطية سياقية شاملة 100% لمفردات المنهج (`754/754`) ومراجعة متباعدة ثنائية الاتجاه (`DE ↔ AR`):**
+   - أُضيفت دالة `getWordContextHint(word, lesson)` لتوليد جمل وسياقات ألمانية مستخرجة من نصوص وحوارات الدرس للمفردات الـ`213` التي لم تكن تحمل حقل `example` مستقلًا (`29` في `A0`، و`59` في `A1`، و`47` في `A2`، و`48` في `B1`، و`30` في `B2`)، فارتفعت تغطية الأمثلة السياقية في بطاقات الدروس وبطاقات المراجعة إلى **`754/754` (`100%`)**.
+   - أُضيف زر إدراج مفردات الدرس مباشرة في جدول المراجعة (`data-action="enroll-lesson-words"`), وترتيب ذكي لأولويات المراجعة (`reps === 0` للكلمات المتعثرة أولًا ثم أحدث الدروس)، ومفتاح تبديل اتجاه البطاقة بين **ألماني ← عربي (فهم)** و**عربي ← ألماني (إنتاج نشط + تذكّر أداة التعريف `der/die/das`)**، وزر **راجع دفعة إضافية (حتى 12 بطاقة)** بعد إتمام الدفعة الأساسية.
+4. **المحور الرابع — ربط خطة الدراسة اليومية التكيفية بـ`dailyGoal` و`focus` وإضافة القاموس التراكمي التفاعلي (`754` مفردة) ومرجع القواعد الشامل (`A0–B2`):**
+   - أُضيف صندوق **التوجيه المنهجي المخصّص لوقتك وهدفك (`renderDailyPlanAdaptiveGuide`)** داخل خطة اليوم، ليترجم وقت المتعلّم اليومي (`dailyGoal`) إلى تقسيم عملي على مراحل الدرس الثلاث ويبين ارتباط الدرس الحالي بمجال تركيز المتعلّم (`المحادثة`، `السفر`، `العمل`، `الدراسة`، `الحياة اليومية`).
+   - أُضيف في صفحة المراجعة قسم **القاموس التراكمي (`754` مفردة) وملخص القواعد (`A0–B2`) (`renderCumulativeLexiconAndGrammarSection`)** مع بحث فوري (`#lexicon-search-input`) وفلترة حسب المستوى (`A0–B2`) والمجال التواصلي وبطاقات مرجعية لقواعد المستويات الخمسة.
+5. **المحور الخامس — محطات التثبيت الحلزوني التراكمي وفحص جاهزية المستويات (`A0–B2`):**
+   - أُضيف محرك **التدريب الحلزوني التراكمي (`buildSpiralSession` / `renderSpiralReviewSection`)** في صفحة المراجعة ولوحة **فحص الجاهزية والقاموس التراكمي (`renderLevelMasteryCheckpointPanel`)** في صفحات المستويات الخمسة (`A0–B2`) لتمكين المتعلّم من اختبار ثبات معلوماته عبر الدروس المتقنة مع تغذية راجعة فورية.
+
+## التسليم والمتابعة — CR62
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Implement 5-axis cumulative pedagogical, study-plan, lesson, assessment & lexicon upgrade (CR62)` ثم يُسجل إيصال التسليم. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v111`)، `tools/verify_course.py`، `tools/test_browser.cjs`، `tools/test_accessibility_update.cjs`، `tools/test_service_worker.cjs`، `tools/test_catalog_accessibility_review.py`، `tools/test_vocab_contrast_bidi_review.py`، `tools/test_code_quiz_a11y_review.py`، `tools/test_table_block_lang_scope_review.py`، `tools/test_objective_quiz_prompt_bidi_review.py`، `tools/test_full_project_exhaustive_audit_review.py`، `tools/test_pedagogical_methodology_interactive_learning_review.py` (`الحارس 62`)، وملفات `data/reviews/*-review.json` (`62` ملفًا محدّثة البصمات `sourceHashes`) + `data/reviews/pedagogical-methodology-interactive-learning-review.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **الفحوص التراكمية — CR62 (`PASS` بنسبة 100% على كامل المشروع دون عينات):**
+  - `python3 tools/verify_course.py` + جميع حراس المراجعة الـ**`62`** (`tools/test_*_review.py`): **PASS**.
+  - مجموعات Node الخمس (`test_progression.cjs`, `test_service_worker.cjs`, `test_daily_plan.cjs`, `test_session_persistence.cjs`, `test_study_time.cjs`): **PASS**.
+  - مجموعات المتصفح الخمس عبر Chromium 153.0.8010.0 (`test_browser.cjs`, `test_accessibility_update.cjs`, `test_forms_keyboard.cjs`, `test_narrow_layout.cjs`, `test_accessibility_audit.cjs`): **PASS** — شملت التحقق الحي في DOM من **`754/754` بطاقة مفردات ومثال سياقي**، و**`428/428` مفتاح تمرين فوري**، و**`48/48` واقي نص استماع**، و**`159/159` زر مرحلة درس**، و**`348` حالة عرض ضيق (`320×900` و`568×320`) بصفر تجاوز أفقي**، و**`349` حالة شاشة في `axe-core` WCAG 2.1 A/AA + `best-practice` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**.
+- **الحالة والتالي مباشرة:** اكتملت المحاور المنهجية والتفاعلية الخمسة عبر كامل المشروع (`CR62`، `62` حارسًا، `deutsch-pfad-v111`)؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+---
+
+# CR61 / التدقيق والتحقق والفحص الشامل لكامل المشروع بنسبة 100% دون عينات وتنسيق Markdown المضمّن في التقييمات (`214` عنصرًا) — مراجعة وفحص شامل لكامل المشروع؛ مرفوعة ومفحوصة؛ غير مدمجة
+
+## إيصال رفع CR61 — 2026-10-10
+
+- **التحديث والتقرير الكامل:** دُفع في الالتزام `0f2cd7ae6dcec4e221c6a6ccdbf57a6376a18de6` (`0f2cd7a`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Upgrade verifiers and browser audits to 100% full-project coverage & render assessment inline Markdown (CR61)`.
+- **معاينة Vercel لـ`0f2cd7a`:** `Deployment has completed` (`state: success`، Deployment ID `6973353957`، المعاينة `https://deutschlern-9k434k9zp-balinader-2671s-projects.vercel.app`، لوحة الفحص `https://vercel.com/balinader-2671s-projects/deutschlern/C3HUmym3CdTbcnDLbfs9rSy8PPgn`).
+- **إيصال التسليم:** يُسجل هذا الالتزام (`Record CR61 delivery receipt`) إيصال رفع `CR61` في وثائق المتابعة والتسليم؛ يبقى PR#1 مفتوحًا وغير مدمج، وتبقى المراجعة السمعية لـ80 أصلًا صوتيًا (`B1.9–B2.12`) معلقة.
+
+**سجل مراجعة وفحص شامل لكامل المشروع CR61 — 2026-10-10:** تنفيذًا للتوجيه الصريح **«التحقق و التدقيق و الفحص اريده على كامل المشروع و ليس عينات»**، جرى تحويل جميع أدوات التحقق والفحص واختبارات المتصفح من فحص عينات تمثيلية إلى **فحص شامل لكامل المشروع بنسبة 100% دون أي أخذ عينات** عبر **68 وحدة مراجعة شاملة** بالاستناد إلى **14 مرجعًا إلكترونيًا مقروءًا بالكامل في 16 جزءًا + 3 استعلامات بحث (8 مقتطفات)** (`W3C WAI WCAG-EM`، و`WCAG 2.1 Technique G134`، و`WCAG 2.1 Technique H49`، و`Lingolia Passive Voice`، و`Duden`):
+1. **تنسيق علامات Markdown المضمّنة في واجهة التقييم (`214` عنصرًا عبر `A2.1–B2.12`):** أُضيفت دالة `formatInlineMarkdown(value)` في `app.js` لتحويل علامات `**...**` و`` `...` `` بعد الهروب الآمن `escapeHTML` إلى عناصر دلالية موسومة باللغة والاتجاه (`<strong lang="de">` و`<strong>` و`<code dir="ltr" lang="de">`) في `137/540` نص سؤال تقييم (`147` عبارة `<strong lang="de">` وعبارة `<strong>` عربية واحدة)، و`65/540` تفسير إجابة (`258` عبارة `<strong lang="de">`)، و`12/109` نص مهمة أداء عملي (`38` عبارة `<strong lang="de">` وعبارة `<code dir="ltr" lang="de">T06</code>` في `DL-B2-02-P02`) بحيث أصبحت علامات `**` و`` ` `` الخام في DOM الحي **صفرًا (`0`)** عبر جميع الأسئلة الـ`540` والتفسيرات الـ`540` والمهام الـ`109`.
+2. **إصلاح تجاوز بطاقات المفردات في العرض الضيق (`320px`) وتسلسل العناوين ومعالم المناطق:** كشف الفحص الشامل لجميع الدروس الـ`53` عند عرض `320×900` تجاوزًا أفقيًا بمقدار `-24.4px` في بطاقات مفردات `A2.9` (`a2-09-products-technology-complaints`) بسبب المركّبات الألمانية الطويلة داخل `.vocab-grid { grid-template-columns: 1fr }`؛ فعُولج بتحويل الشبكة إلى `minmax(0, 1fr)` وإضافة `min-width: 0; overflow-wrap: anywhere` لـ`.vocab-card` و`.german-word` في `styles.css`. كما ضُبط تسلسل العناوين (`<h1> → <h2> → <h3>`) في صفحات المستويات الخمسة (`renderLevelPage`) وفي شاشات المهام العملية الـ`54` (`renderPerformanceTasks`) وتفرّد أسماء معالم الجداول (`جدول الدرس 1..N`) ولوحات الصوت (`التسجيلات الصوتية — ...`) وقائمة التنقل في الجوال.
+3. **مزامنة وفحص جميع أعمدة السجلات التراكمية بنسبة 100%:** زُومنت في `data/curriculum-file-audit.csv` (`53` صفًا × `29` عمودًا) جميع قيم `declared_skills` الـ`41` التي كانت متأخرة عن سطر `**المهارات:**` في ملفات الدروس، ووُحّدت في `data/production-task-catalog.csv` (`1080` صفًا × `15` عمودًا) صيغة `source_heading` لصفوف `A0.1` الاثني عشر (`quiz[0..9] — DL-A0-01-Q01..Q10` و`performanceTasks[0..1] — DL-A0-01-P01..P02`) لتطابق بقية الصفوف الـ`639/639`، ووُسّع `tools/verify_course.py` ليفحص جميع أعمدة السجلات الثلاثة (`53×29` و`1080×15` و`217×23`) آليًا.
+4. **ترقية اختبارات المتصفح إلى تغطية شاملة 100% لكامل المشروع:** يفحص `tools/test_accessibility_audit.cjs` الآن **349 حالة شاشة كاملة** (`174` عند `1440×900` و`175` عند `390×844` تغطي النظرة العامة مع فتح جميع تفريغات الصوت الـ217 + الاختبار مع التفسير + المهام العملية لكل درس من الدروس الـ`53` وبوابة `A0` والمستويات الـ`5` والواجهة، مع فحص DOM لجميع الأسئلة الـ`540` والخيارات الـ`1,622` والتفسيرات الـ`540` والمهام الـ`109`) بـ**صفر مخالفات (`wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa`, `best-practice`) وصفر فحوص غير حاسمة**؛ ويفحص `tools/test_narrow_layout.cjs` **348 حالة عرض ضيق** (`174` في `320×900` و`174` في `568×320`) بـ**صفر تجاوز أفقي**؛ ويفحص `tools/test_browser.cjs` جميع البطاقات الـ`754` وأسطر التفريغ الـ`474` والجداول الـ`96` (`273` رأس `th` و`2,938` خلية `td`) في DOM الحي، مع ترقية المخزن إلى `deutsch-pfad-v110` وإضافة الحارس رقم `61` (`tools/test_full_project_exhaustive_audit_review.py`).
+
+## التسليم والمتابعة — CR61
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ دُفع التحديث والتقرير الكامل في `0f2cd7ae6dcec4e221c6a6ccdbf57a6376a18de6` (`0f2cd7a`، المعاينة `https://deutschlern-9k434k9zp-balinader-2671s-projects.vercel.app`) ويُسجل هذا الالتزام إيصال `CR61` بعنوان `Record CR61 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v110`)، `data/curriculum-file-audit.csv` (`53×29`)، `data/production-task-catalog.csv` (`1080×15`)، `tools/verify_course.py`، `tools/test_browser.cjs`، `tools/test_accessibility_audit.cjs` (`349` حالة)، `tools/test_narrow_layout.cjs` (`348` حالة)، `tools/test_a0_01_review.py`، `tools/test_a0_overview_review.py`، `tools/test_catalog_accessibility_review.py`، `tools/test_vocab_contrast_bidi_review.py`، `tools/test_code_quiz_a11y_review.py`، `tools/test_table_block_lang_scope_review.py`، `tools/test_objective_quiz_prompt_bidi_review.py`، `tools/test_full_project_exhaustive_audit_review.py`، `data/reviews/a0-01-review.json`، `data/reviews/a0-overview-review.json`، `data/reviews/catalog-accessibility-review.json`، `data/reviews/vocab-contrast-bidi-review.json`، `data/reviews/code-quiz-a11y-review.json`، `data/reviews/table-block-lang-scope-review.json`، `data/reviews/objective-quiz-prompt-bidi-review.json`، `data/reviews/full-project-exhaustive-audit-review.json/.md`، `data/reviews/README.md`، `data/browser-qa-report.md`، `data/curriculum-audit.md`، `data/curriculum-production-matrix.md` (1.5 تحديث CR61)، `data/course-improvement-plan.md` (2.67)، `README.md`، `content/PROGRESS.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 68 وحدة مراجعة شاملة لكامل المشروع (53 وحدة درس + وحدة بوابة `A0→A1` + وحدة نظرة `A0` العامة + 5 وحدات مستويات + 8 وحدات سجلات وواجهة ولغة وتخطيط وفحوص متصفح شاملة)؛ 14 مرجعًا مقروءًا بالكامل في 16 جزءًا + 3 استعلامات بحث (`8` مقتطفات). بقيت حزمة `data/course.json` (`2,419,161` بايت) وجميع ملفات الدروس الـ53 وبوابة A0 وملفات التقييم الـ54 و`data/audio-asset-register.csv` وملفات MP3 الـ474 و`data/audio-playlists.json` ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا ومفحوصًا بالكامل بنسبة 100% دون عينات (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–B2.12`) + بوابة `A0→A1` + نظرة `A0` العامة + المستويات الـ`5` + السجلات الثلاثة كاملةً + تنسيق علامات التقييم المضمّنة؛ 61 حارس مراجعة**، والمخزن `v110`، وإصدار الخطة `2.67`.
+- **التالي مباشرة:** اكتمل رفع `CR61` (`0f2cd7a`) وإيصاله؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR61
+
+- **PASS:** البناء والتحقق، و61 حارسًا (بما فيها `tools/test_full_project_exhaustive_audit_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,419,161 بايت**؛ 53 درسًا (**53 هدف درس نظيفًا ومتزامنًا مع جميع الأعمدة الـ29 في `data/curriculum-file-audit.csv`**)، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، **754 مفردة (541 بتفصيل جمع/تصريف/مثال، منها 521 بسمة `lang="de"` و754 ترجمة بسمة `dir="auto"`)**، **96 جدولًا (`273` رأس `<th scope="col" dir="auto">` منها `21` بسمة `lang="de"`، و`2,938` خلية `<td>` منها `1,848` بسمة `lang="de"`)**، **`109/118` اقتباس `<blockquote dir="auto" lang="de">`**، **`210/1,137` فقرة `<p dir="auto" lang="de">`**، **`1,750/3,821` بند `<li dir="auto" lang="de">`**، **`2,430` عبارة `<strong lang="de">` و`32` عبارة `<em lang="de">` داخل الكتل المختلطة**، 530 سؤال درس + 10 بوابة (`540 Q`: **`26` سؤالًا ألمانيًا بسمة `<h1 dir="auto" lang="de">`، و`137` سؤالًا بعلامات تنسيق مضمّنة تُعرض في `147` `<strong lang="de">` و`1` `<strong>` بصفر علامات خام، و`1,622` خيارًا منها `1,070` بسمة `lang="de"`، و`1` تفسير ألماني `DL-A2-08-Q07` بسمة `<span dir="auto" lang="de">`، و`65` تفسيرًا بعلامات تنسيق مضمّنة تُعرض في `258` `<strong lang="de">` بصفر علامات خام**)، 109 مهمات أداء (`109 P`: **`12` مهمة بعلامات تنسيق مضمّنة تُعرض في `38` `<strong lang="de">` و`1` `<code dir="ltr" lang="de">T06</code>`**، و`327` معيار تحقق محلي بسمة `dir="auto"`), 1080 صف catalog متزامنة في جميع أعمدتها الـ15، 217 أصلًا/474 مقطعًا متزامنة في جميع أعمدتها الـ23 (`474/474` سطر تفريغ بسمة `lang="de"` و`466/474` متحدثًا ألمانيًا بسمة `lang="de"`؛ 137 `ready` و80 معلقة).
+- **المتصفح (100% لكامل المشروع دون عينات):** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v110` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق (تغطية شاملة 100% لكامل المشروع دون عينات):** **349 حالة شاشة** (`174` عند `1440×900` و`175` عند `390×844` تغطي جميع الدروس الـ`53/53` + بوابة `A0` + المستويات الـ`5` + الواجهة مع التحقق من جميع الأسئلة الـ`540` والخيارات الـ`1,622` والتفسيرات الـ`540` والمهام الـ`109` في DOM الحي) بـ**صفر مخالفات (`wcag2a`, `wcag2aa`, `wcag21a`, `wcag21aa`, `best-practice`) وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**؛ و**348 حالة عرض ضيق** (`174` في `320×900` و`174` في `568×320` عبر جميع الدروس الـ`53/53` + بوابة `A0` + المستويات الـ`5`) بـ**صفر تجاوز أفقي**. ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR60 — 2026-10-09
+
+- **التحديث والتقرير الكامل:** دُفع في الالتزام `9b8eb2ecd956acf4f95cd3575eb0f8965cc45b77` (`9b8eb2e`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Clean lesson objectives, add WCAG lang=de on quiz prompts/UI kickers & bidi isolation (CR60)`.
+- **معاينة Vercel لـ`9b8eb2e`:** `Deployment has completed` (`state: success`، Deployment ID `6972542845`، Status ID `19545915344`، المعاينة `https://deutschlern-1hov4a5wm-balinader-2671s-projects.vercel.app`، لوحة الفحص `https://vercel.com/balinader-2671s-projects/deutschlern/49hmXS5rTLZfKDJnRJpdQJGR3gSZ`).
+- **إيصال التسليم:** يُسجل هذا الالتزام (`Record CR60 delivery receipt`) إيصال رفع `CR60` في وثائق المتابعة والتسليم؛ يبقى PR#1 مفتوحًا وغير مدمج، وتبقى المراجعة السمعية لـ80 أصلًا صوتيًا (`B1.9–B2.12`) معلقة.
+
+**سجل مراجعة محتوى وتطبيق CR60 — 2026-10-09:** رُوجعت نصوص أهداف الدروس الـ`53` (`lesson.objective` في `data/course.json` بحجم `2,419,161` بايت و`source_objective` في `data/curriculum-file-audit.csv`: جرى تنظيف `21` هدف درس في `A1.1` و`A2.10` و`A2.12` و`B1.4` و`B1.6–B1.10` و`B1.12` و`B2.1–B2.10` و`B2.12` من علامات التنسيق الخام `**` و`` ` `` وعلامة الترقيم المزدوجة `.؛` عبر دالة `clean_objective_text()` في `tools/build_course.py`)، وأسئلة التقييم الـ`540` وتفسيراتها في `app.js` (`26` سؤال استيعاب قرائي/سمعي ألماني خالص في `B1.1–B1.6` تحمل الآن `<h1 dir="auto" lang="de">` و`1` تفسير إجابة ألماني خالص `DL-A2-08-Q07` يحمل `<span dir="auto" lang="de">` وفق `WCAG 2.1 SC 3.1.2 / Technique H58`)، وشارات الواجهة الألمانية السبع (`<span lang="de">AUFGABE</span>`، و`<span lang="de">TAGESPLAN</span>` بدل العبارة الفرنسية الدخيلة `PLAN DU JOUR`، و`<span lang="de">Deutsch</span>`، و`<span lang="de">WORTSCHATZ</span>` في موضعين، و`<span lang="de">HÖREN</span>`، و`<span lang="de">LEKTION</span>`)، وحاويات العناوين والأهداف والترجمات والمسارات (`dir="auto"` و`unicode-bidi: plaintext` لعناوين الدروس وأهدافها وعناوين الأصول الصوتية الـ`217` وترجمات المفردات الـ`754` في درجي الدرس والمراجعة، و`<b dir="ltr">content/</b>` و`<code dir="ltr">python3 tools/build_course.py</code>` وفق `W3C Inline Markup and Bidirectional Text in HTML`)، وملاحظتي احتساب الوقت الفعلي وطريقة الدراسة عبر **60 وحدة مراجعة** بالاستناد إلى **14 مرجعًا إلكترونيًا مقروءًا بالكامل في 18 جزءًا + 3 استعلامات بحث (8 مقتطفات)** (`W3C WAI Technique H58`، و`W3C Understanding SC 3.1.2`، و`W3C Inline Bidi Markup`، و`Lingolia Questions in German Grammar`، و`Duden`). بقيت جميع حالات الشاشة الـ`231` في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)، ورُقّي المخزن إلى `deutsch-pfad-v109`، وأُضيف الحارس رقم `60` (`tools/test_objective_quiz_prompt_bidi_review.py`). الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة — CR60
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Clean lesson objectives, add WCAG lang=de on quiz prompts/UI kickers & bidi isolation (CR60)` ثم يُستعلم عن SHA والنشر ويُسجل إيصال `CR60` بعنوان `Record CR60 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `tools/build_course.py`، `tools/verify_course.py`، `app.js`، `styles.css`، `data/course.json` (`2,419,161` بايت)، `data/curriculum-file-audit.csv` (`53` صفًا متزامنًا في `source_objective`)، `service-worker.js` واختباراه (`v109`)، `tools/test_browser.cjs`، `tools/test_catalog_accessibility_review.py`، `tools/test_vocab_contrast_bidi_review.py`، `tools/test_code_quiz_a11y_review.py`، `tools/test_table_block_lang_scope_review.py`، `tools/test_objective_quiz_prompt_bidi_review.py`، `data/reviews/a0-overview-review.json`، `data/reviews/catalog-accessibility-review.json`، `data/reviews/vocab-contrast-bidi-review.json`، `data/reviews/code-quiz-a11y-review.json`، `data/reviews/table-block-lang-scope-review.json`، `data/reviews/objective-quiz-prompt-bidi-review.json/.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 60 وحدة مراجعة تراكمية (53 وحدة درس + وحدة بوابة `A0→A1` + 6 وحدات حزم وواجهة ولغة واتجاه وفحوص شاملة)؛ 14 مرجعًا مقروءًا بالكامل في 18 جزءًا + 3 استعلامات بحث (`8` مقتطفات). بقيت جميع ملفات الدروس الـ53 وبوابة A0 وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` وملفات MP3 الـ474 و`data/audio-playlists.json` ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول + بطاقات المفردات ووسوم اللغة وتباين الألوان + الشفرات المضمّنة وأسئلة التقييم وتصفير الفحوص غير الحاسمة + جداول الدروس والكتل النصية ومتحدثي الصوت + تنظيف أهداف الدروس وأسئلة التقييم الألمانية وشارات الواجهة وعزل الاتجاه؛ 60 حارس مراجعة**، والمخزن `v109`.
+- **التالي مباشرة:** بعد رفع `CR60` استعلم عن SHA وسجل إيصال `CR60` وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR60
+
+- **PASS:** البناء والتحقق، و60 حارسًا (بما فيها `tools/test_objective_quiz_prompt_bidi_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,419,161 بايت**؛ 53 درسًا (**53 هدف درس نظيفًا دون `**` أو `` ` `` أو `.؛` ومتزامنًا مع `data/curriculum-file-audit.csv`**)، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، **754 مفردة (541 بتفصيل جمع/تصريف/مثال، منها 521 بسمة `lang="de"` و754 ترجمة بسمة `dir="auto"`)**، **96 جدولًا (`273` رأس `<th scope="col" dir="auto">` منها `21` بسمة `lang="de"`، و`2,938` خلية `<td>` منها `1,848` بسمة `lang="de"`)**، **`109/118` اقتباس `<blockquote dir="auto" lang="de">`**، **`210/1,137` فقرة `<p dir="auto" lang="de">`**، **`1,750/3,821` بند `<li dir="auto" lang="de">`**، **`2,430` عبارة `<strong lang="de">` و`32` عبارة `<em lang="de">` داخل الكتل المختلطة**، 530 سؤال درس + 10 بوابة (`540 Q`: **`26` سؤالًا ألمانيًا بسمة `<h1 dir="auto" lang="de">`**، و`1,622` خيارًا منها `1,070` بسمة `lang="de"`، و**`1` تفسير ألماني `DL-A2-08-Q07` بسمة `<span dir="auto" lang="de">`**)، 109 مهمات أداء (`109 P`، `327` معيار تحقق محلي بسمة `dir="auto"`)، 1080 صف catalog، 217 أصلًا/474 مقطعًا (**`217` عنوان أصل صوتي بسمة `<strong dir="auto">`**، و`466/474` متحدثًا ألمانيًا بسمة `lang="de"`؛ 137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v109` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق:** **231 حالة شاشة** (`115` عند `1440px` و`116` عند `390px` تغطي جميع الدروس الـ`53/53` + بوابة `A0`) و**صفر مخالفات للقواعد المختارة وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR59 — 2026-10-09
+
+- **التحديث والتقرير الكامل:** دُفع في الالتزام `79234769c8e755c4b5ef89712886a3287e120b56` (`7923476`) على الفرع الوحيد `arena/01a1036f-deutschlern` بعنوان `Add WCAG table scope=col & lang=de across lesson blocks and audio speakers (CR59)`.
+- **معاينة Vercel لـ`7923476`:** `Deployment has completed` (`state: success`، Deployment ID `6971558521`، Status ID `19543592466`، المعاينة `https://deutschlern-rctiix4i8-balinader-2671s-projects.vercel.app`، لوحة الفحص `https://vercel.com/balinader-2671s-projects/deutschlern/J5MbNpqHWZuetgYxBM7brTQr7gYm`).
+- **إيصال التسليم:** يُسجل هذا الالتزام (`Record CR59 delivery receipt`) إيصال رفع `CR59` في وثائق المتابعة والتسليم؛ يبقى PR#1 مفتوحًا وغير مدمج، وتبقى المراجعة السمعية لـ80 أصلًا صوتيًا (`B1.9–B2.12`) معلقة.
+
+**سجل مراجعة محتوى وتطبيق CR59 — 2026-10-09:** رُوجعت جداول الدروس (`96` جدولًا في `data/course.json` بحجم `2,419,328` بايت: `273` خلية رأس عمود `<th scope="col" dir="auto">` وفق `WCAG 2.1 SC 1.3.1 / Technique H63` منها `21` رأسًا ألمانيًا بسمة `lang="de"` و`252` رأسًا عربيًا/مختلطًا، و`2,938` خلية بيانات `<td>` منها `1,848` خلية ألمانية خالصة بسمة `dir="auto" lang="de"` و`1,090` خلية عربية/مختلطة/رقمية بسمة `dir="auto"` وفق `WCAG 2.1 SC 3.1.2 / Technique H58`) والكتل النصية والبنود في الدروس الـ`53` وبوابة `A0` (`109/118` كتل اقتباس قراءة/استماع `<blockquote dir="auto" lang="de">`، و`210/1,137` فقرات حوار/قراءة `<p dir="auto" lang="de">`، و`1,750/3,821` بنود نماذج/تمارين/مفاتيح `<li dir="auto" lang="de">`، و`2,430` عبارة `<strong lang="de">` و`32` عبارة `<em lang="de">` داخل الكتل المختلطة) وواجهة تفريغ الصوت وبطاقات المفردات في `app.js` (`466/474` اسم متحدث ألماني في `.audio-transcript-line strong` بسمة `dir="auto" lang="de"`، و`521/541` تفصيل جمع/تصريف/مثال ألماني خالص في `.word-example` و`.flash-example` بسمة `dir="auto" lang="de"`) عبر **60 وحدة مراجعة** بالاستناد إلى **14 مرجعًا إلكترونيًا مقروءًا بالكامل في 17 جزءًا + 4 استعلامات بحث** (`W3C WAI Technique H63`، و`W3C Tables Tutorial`، و`W3C Understanding SC 1.3.1`، و`Lingolia Declension`، و`Duden`). بقيت جميع حالات الشاشة الـ`231` في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)، ورُقّي المخزن إلى `deutsch-pfad-v108`، وأُضيف الحارس رقم `59` (`tools/test_table_block_lang_scope_review.py`). الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة — CR59
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Add WCAG table scope=col & lang=de across lesson blocks and audio speakers (CR59)` ثم يُستعلم عن SHA والنشر ويُسجل إيصال `CR59` بعنوان `Record CR59 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `tools/build_course.py`، `tools/verify_course.py`، `app.js`، `data/course.json` (`2,419,328` بايت)، `service-worker.js` واختباراه (`v108`)، `tools/test_browser.cjs`، `tools/test_a1_02_review.py`، `tools/test_catalog_accessibility_review.py`، `tools/test_vocab_contrast_bidi_review.py`، `tools/test_code_quiz_a11y_review.py`، `tools/test_table_block_lang_scope_review.py`، `data/reviews/catalog-accessibility-review.json`، `data/reviews/vocab-contrast-bidi-review.json`، `data/reviews/code-quiz-a11y-review.json`، `data/reviews/table-block-lang-scope-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.65)، `data/browser-qa-report.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 60 وحدة مراجعة تراكمية (53 وحدة درس + وحدة بوابة `A0→A1` + 6 وحدات حزم وواجهة ولغة وفحوص شاملة)؛ 14 مرجعًا مقروءًا بالكامل في 17 جزءًا + 4 استعلامات بحث. بقيت جميع ملفات الدروس الـ53 وبوابة A0 وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/curriculum-file-audit.csv` وملفات MP3 الـ474 و`data/audio-playlists.json` ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول + بطاقات المفردات ووسوم اللغة وتباين الألوان + الشفرات المضمّنة وأسئلة التقييم وتصفير الفحوص غير الحاسمة + جداول الدروس والكتل النصية ومتحدثي الصوت؛ 59 حارس مراجعة**، والمخزن `v108`، وإصدار الخطة `2.65`.
+- **التالي مباشرة:** بعد رفع `CR59` استعلم عن SHA وسجل إيصال `CR59` وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR59
+
+- **PASS:** البناء والتحقق، و59 حارسًا (بما فيها `tools/test_table_block_lang_scope_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,419,328 بايت**؛ 53 درسًا، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، **754 مفردة (541 بتفصيل جمع/تصريف/مثال، منها 521 بسمة `lang="de"`)**، **96 جدولًا (`273` رأس `<th scope="col" dir="auto">` منها `21` بسمة `lang="de"`، و`2,938` خلية `<td>` منها `1,848` بسمة `lang="de"`)**، **`109/118` اقتباس `<blockquote dir="auto" lang="de">`**، **`210/1,137` فقرة `<p dir="auto" lang="de">`**، **`1,750/3,821` بند `<li dir="auto" lang="de">`**، **`2,430` عبارة `<strong lang="de">` و`32` عبارة `<em lang="de">` داخل الكتل المختلطة**، 530 سؤال درس + 10 بوابة (`540 Q`، `1,622` خيارًا منها `1,070` بسمة `lang="de"`), 109 مهمات أداء (`109 P`، `327` معيار تحقق محلي بسمة `dir="auto"`), 1080 صف catalog، 217 أصلًا/474 مقطعًا (`466/474` متحدثًا ألمانيًا بسمة `lang="de"`؛ 137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v108` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق:** **231 حالة شاشة** (`115` عند `1440px` و`116` عند `390px` تغطي جميع الدروس الـ`53/53` + بوابة `A0`) و**صفر مخالفات للقواعد المختارة وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR58 — 2026-10-09
+
+- **التنفيذ والتقرير والفحوص:** `4a7f6da5b8fc777d5df5629898dddf0c837bb4b5`. رُفع إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد الرفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR58 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `4a7f6da5b8fc777d5df5629898dddf0c837bb4b5`. اكتمل نشر Preview في Vercel (`Deployment has completed`، Deployment ID `6971192429`، Status ID `19542783937`، `https://deutschlern-krbe57ao3-balinader-2671s-projects.vercel.app`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و58 حارسًا (بما فيها `tools/test_code_quiz_a11y_review.py`)، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,338,706` بايت، `code-quiz-a11y-v1`، `v107`. **231 حالة axe** (`53/53` درسًا + بوابة `A0`) و**صفر مخالفات للقواعد المختارة وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)** (بانخفاض من `120` ظهور قاعدة / `266` عقدة في CR57 و`169` ظهور قاعدة / `460` عقدة في CR56)، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة والتحسين:** 62 وحدة مراجعة تراكمية (53 وحدة درس + وحدة بوابة `A0→A1` + 8 وحدات حزم وواجهة ولغة وتباين وفحوص شاملة)، و14 مرجعًا مقروءًا بالكامل في 17 جزءًا + 4 استعلامات بحث (واستبعاد رابطين 404). أُضيفت السمة `lang="de"` لـ`910` عبارات ألمانية داخل `<code>` و`dir="auto"` لصيغتين عربيتين في `B2.9` و`B2.11` و`dir="ltr"` لـ`14` عنصرًا رقميًا/رمزيًا (`926` عنصر `<code>` في المجموع)، ودُمج `</strong> → <strong>` في `22` بند تحويل نحوي، وأُضيفت السمة `lang="de"` لـ`1,070` خيارًا ألمانيًا خالصًا من أصل `1,622` خيارًا في أسئلة التقييم (`540` سؤالًا)، و`dir="auto"` مع `unicode-bidi: plaintext` لتفسيرات التقييم (`.quiz-feedback`) ولنصوص مهام الأداء الـ`109` ومعايير التحقق المحلية الـ`327`، وعُولجت الحالات الثلاث المتبقية للفحوص غير الحاسمة (`incomplete`) في `axe-core` حتى أصبحت `0` عبر جميع حالات الشاشة الـ`231`.
+- **الحفظ:** بقيت جميع ملفات الدروس الـ53 وبوابة `A0` وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/curriculum-file-audit.csv` و`data/audio-playlists.json` وملفات MP3 الـ474 وبصمات المراجعات السابقة مطابقة بالبايت دون أي تغيير أو إعادة توليد صوت.
+- **التسليم والتالي:** سجلا `data/reviews/code-quiz-a11y-review.*` والحارس `tools/test_code_quiz_a11y_review.py` والتوثيق والخطة `2.64` ووثيقتا التسليم محدثة. التغطية **53/53 درسًا (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول + بطاقات المفردات ووسوم اللغة وتباين الألوان + الشفرات المضمّنة وأسئلة التقييم وتصفير الفحوص غير الحاسمة؛ 58 حارس مراجعة**. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+**أحدث مراجعة محتوى وتطبيق CR58 — 2026-10-09:** رُوجعت الشفرات المضمّنة (`926` عنصر `<code>` في `data/course.json` بحجم `2,338,706` بايت: `910` عبارات ألمانية بسمة `dir="ltr" lang="de"` و`2` صيغتان عربيتان في `B2.9` و`B2.11` بسمة `dir="auto"` و`14` عنصرًا رقميًا/رمزيًا بسمة `dir="ltr"`، مع دمج `</strong> → <strong>` في `22` بند تحويل نحوي) وخيارات التقييم (`1,622` خيارًا عبر `540` سؤالًا: `1,070` خيارًا ألمانيًا خالصًا بسمة `lang="de"` و`552` خيارًا عربيًا/مختلطًا بسمة `dir="auto"`) وتفسيرات الأسئلة (`.quiz-feedback` بسمة `dir="auto"` و`unicode-bidi: plaintext`) ونصوص مهام الأداء الـ`109` ومعايير التحقق المحلية الـ`327` (`<p dir="auto">` و`<li dir="auto">`)، وعُولجت الحالات الثلاث المتبقية للفحوص غير الحاسمة (`incomplete`) في `axe-core` عبر **62 وحدة مراجعة** بالاستناد إلى **14 مرجعًا إلكترونيًا مقروءًا بالكامل في 17 جزءًا + 4 استعلامات بحث** (واستبعاد رابطين 404: `W3C WAI Technique H58`، و`ACT Rule de46e4`، و`W3C Inline Bidi Markup`، و`Lingolia Prepositions`، و`Duden`). انخفضت الفحوص غير الحاسمة (`incomplete`) في `axe-core` عبر جميع حالات الشاشة الـ`231` (`53/53` درسًا + بوابة `A0`) من **120 ظهور قاعدة (266 عقدة) في CR57 إلى صفر ظهور قاعدة (0 عقدة) مع صفر مخالفات**، ورُقّي المخزن إلى `deutsch-pfad-v107`، وأُضيف الحارس رقم `58` (`tools/test_code_quiz_a11y_review.py`). الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة — CR58
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Add WCAG lang=de/bidi on inline code & quizzes and zero axe incomplete flags (CR58)` ثم يُستعلم عن SHA والنشر ويُسجل إيصال `CR58` بعنوان `Record CR58 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `tools/build_course.py`، `tools/verify_course.py`، `app.js`، `styles.css`، `data/course.json` (`2,338,706` بايت)، `service-worker.js` واختباراه (`v107`)، `tools/test_browser.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_catalog_accessibility_review.py`، `tools/test_vocab_contrast_bidi_review.py`، `tools/test_code_quiz_a11y_review.py`، `data/reviews/catalog-accessibility-review.json`، `data/reviews/vocab-contrast-bidi-review.json`، `data/reviews/code-quiz-a11y-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.64)، `data/browser-qa-report.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 62 وحدة مراجعة تراكمية (53 وحدة درس + وحدة بوابة `A0→A1` + 8 وحدات حزم وواجهة ولغة وتباين وفحوص شاملة)؛ 14 مرجعًا مقروءًا بالكامل في 17 جزءًا + 4 استعلامات بحث، ورابطان 404 مستبعدان. بقيت جميع ملفات الدروس الـ53 وبوابة A0 وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/curriculum-file-audit.csv` وملفات MP3 الـ474 و`data/audio-playlists.json` ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول + بطاقات المفردات ووسوم اللغة وتباين الألوان + الشفرات المضمّنة وأسئلة التقييم وتصفير الفحوص غير الحاسمة؛ 58 حارس مراجعة**، والمخزن `v107`، وإصدار الخطة `2.64`.
+- **التالي مباشرة:** بعد رفع `CR58` استعلم عن SHA وسجل إيصال `CR58` وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR58
+
+- **PASS:** البناء والتحقق، و58 حارسًا (بما فيها `tools/test_code_quiz_a11y_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,338,706 بايت**؛ 53 درسًا، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، **754 مفردة (541 منها بتفصيل جمع/تصريف/مثال عبر 45 درسًا)**، **926 عنصر `<code>` مضمّن (`910` ألمانية بسمة `dir="ltr" lang="de"` و`2` عربية بسمة `dir="auto"` و`14` رقمية/رمزية بسمة `dir="ltr"`)**، 530 سؤال درس + 10 بوابة (`540 Q`، `1,622` خيارًا: `1,070` خيارًا ألمانيًا بسمة `lang="de"` و`552` خيارًا عربيًا/مختلطًا بسمة `dir="auto"`، و`540` تفسيرًا بسمة `dir="auto"`)، 109 مهمات أداء (`109 P`، `327` معيار تحقق محلي بسمة `dir="auto"`)، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v107` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق:** **231 حالة شاشة** (`115` عند `1440px` و`116` عند `390px` تغطي جميع الدروس الـ`53/53` + بوابة `A0`) و**صفر مخالفات للقواعد المختارة وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)** (انخفاضًا من `120` ظهور قاعدة / `266` عقدة في CR57 و`169` ظهور قاعدة / `460` عقدة في CR56)؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR57 — 2026-10-09
+
+- **التنفيذ والتقرير والفحوص:** `1009013fc2d177b3ac815e5c9f14a85b3f4f7712`. رُفع إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد الرفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR57 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `1009013fc2d177b3ac815e5c9f14a85b3f4f7712`. اكتمل نشر Preview في Vercel (`Deployment has completed`، Deployment ID `6970483094`، Status ID `19541111465`، `https://deutschlern-aez867x7m-balinader-2671s-projects.vercel.app`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و57 حارسًا (بما فيها `tools/test_vocab_contrast_bidi_review.py`)، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,328,158` بايت، `vocab-contrast-bidi-v1`، `v106`. **231 حالة axe** (`53/53` درسًا + بوابة `A0`) وصفر مخالفات للقواعد المختارة مع **120 ظهورًا غير حاسم/266 ظهورًا لعقد** (بانخفاض `-49` قاعدة و`-194` عقدة عن CR56، وخلو `94/104` من حالات الدروس النصية من أي فحص غير حاسم)، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة والتحسين:** 56 وحدة مراجعة تراكمية (45 وحدة مفردات دروس `A1.1–B2.12` + 11 وحدة حزم وواجهة ولغة وتباين وفحوص شاملة)، و12 مرجعًا مقروءًا بالكامل في 15 جزءًا + 4 استعلامات بحث. ارتفع عدد المفردات المزودة ببيانات جمع أو تصريف أو ملاحظة أو مثال في `data/course.json` من `24` مفردة في درسين (`A1.1` و`A1.4`) إلى **`541` مفردة في `45` درسًا (`A1.1–B2.12`)** (`517` مفردة إضافية) دون تغيير العدد الكلي `754`، وأُضيفت السمة `lang="de"` لعناصر `.german-word` و`.flash-word` و`.art-word` و`.art-example` و`.audio-transcript-line span` (وفق `WCAG 2.1 SC 3.1.2`)، والسمة `dir="auto"` مع `unicode-bidi: plaintext` لعنصري `.word-example` و`.flash-example` مع إخفاء `.flash-example` عند فراغه، والتنسيق المتبادل بين `stopAudioPlayback()` و`window.speechSynthesis.cancel()`، واستبدال الخلفيات المتدرجة الشفافة والعناصر الزائفة في `styles.css` بخلفيات صلبة محققة التباين (`4.55:1` إلى `9.09:1`).
+- **الحفظ:** بقيت جميع ملفات الدروس الـ53 وبوابة `A0` وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/curriculum-file-audit.csv` و`data/audio-playlists.json` وملفات MP3 الـ474 وبصمات المراجعات السابقة مطابقة بالبايت دون أي تغيير أو إعادة توليد صوت.
+- **التسليم والتالي:** سجلا `data/reviews/vocab-contrast-bidi-review.*` والحارس `tools/test_vocab_contrast_bidi_review.py` والتوثيق والخطة `2.63` ووثيقتا التسليم محدثة. التغطية **53/53 درسًا (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول + بطاقات المفردات ووسوم اللغة وتباين الألوان؛ 57 حارس مراجعة**. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+**أحدث مراجعة محتوى وتطبيق CR57 — 2026-10-09:** رُوجعت بطاقات المفردات (`754` مفردة عبر الدروس الـ53) واستخراج أعمدة «الجمع / التصريف / ملاحظة» في `tools/build_course.py`، ووسوم لغة الأجزاء `lang="de"` (وفق `WCAG 2.1 SC 3.1.2 Language of Parts`) وعزل الاتجاه `dir="auto"` مع `unicode-bidi: plaintext` وتنسيق الصوت والـTTS في `app.js`، وتباين الألوان الحتمي في `styles.css` عبر **56 وحدة مراجعة** بالاستناد إلى **12 مرجعًا إلكترونيًا مقروءًا بالكامل في 15 جزءًا + 4 استعلامات بحث** (`W3C WAI WCAG 2.1 SC 3.1.2`، و`W3C Internationalization qa-html-language-declarations`، و`Lingolia Plural & Präsens`، و`Duden`). ارتفع عدد المفردات المزودة ببيانات جمع أو تصريف أو ملاحظة أو مثال في `data/course.json` (`2,328,158` بايت) من **24 مفردة في درسين (`A1.1` و`A1.4`) إلى 541 مفردة عبر 45 درسًا (`A1.1–B2.12`)** مع بقاء العدد الكلي `754` مفردة دون تغيير، وأُضيفت السمة `lang="de"` لجميع الكلمات الألمانية وأمثلة أداة التعريف وأسطر التفريغ الصوتي الـ`474`، و`dir="auto"` مع إخفاء العنصر الفارغ في `.flash-example` وإيقاف متبادل بين مشغّل MP3 ونطق المتصفح `speechSynthesis`، واستُبدلت الخلفيات المتدرجة الشفافة في `styles.css` بخلفيات صلبة محققة التباين (`4.55:1` إلى `9.09:1`) فانخفضت الفحوص غير الحاسمة (`incomplete`) في `axe-core` عبر جميع حالات الشاشة الـ`231` من **169 ظهور قاعدة (460 عقدة) إلى 120 ظهور قاعدة (266 عقدة)** مع خلو **94/104 من حالات الدروس النصية (`96/106` شاملة التفريغ الصوتي)** من أي فحص غير حاسم، ورُقّي المخزن إلى `deutsch-pfad-v106`، وأُضيف الحارس رقم `57` (`tools/test_vocab_contrast_bidi_review.py`). الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة — CR57
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Populate 541 vocab flashcards, add WCAG lang=de/bidi & contrast fixes (CR57)` ثم يُستعلم عن SHA والنشر ويُسجل إيصال `CR57` بعنوان `Record CR57 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `tools/build_course.py`، `tools/verify_course.py`، `app.js`، `styles.css`، `data/course.json` (`2,328,158` بايت)، `service-worker.js` واختباراه (`v106`)، `tools/test_browser.cjs`، `tools/test_catalog_accessibility_review.py`، `tools/test_vocab_contrast_bidi_review.py`، `data/reviews/catalog-accessibility-review.json`، `data/reviews/vocab-contrast-bidi-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.63)، `data/browser-qa-report.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 56 وحدة مراجعة تراكمية (45 وحدة مفردات دروس `A1.1–B2.12` + 11 وحدة حزم وواجهة ولغة وتباين وفحوص شاملة)؛ 12 مرجعًا مقروءًا بالكامل في 15 جزءًا + 4 استعلامات بحث. بقيت جميع ملفات الدروس الـ53 وبوابة A0 وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/curriculum-file-audit.csv` وملفات MP3 الـ474 و`data/audio-playlists.json` ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول + بطاقات المفردات ووسوم اللغة وتباين الألوان؛ 57 حارس مراجعة**، والمخزن `v106`، وإصدار الخطة `2.63`.
+- **التالي مباشرة:** بعد رفع `CR57` استعلم عن SHA وسجل إيصال `CR57` وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR57
+
+- **PASS:** البناء والتحقق، و57 حارسًا (بما فيها `tools/test_vocab_contrast_bidi_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,328,158 بايت**؛ 53 درسًا، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، **754 مفردة (541 منها بتفصيل جمع/تصريف/مثال عبر 45 درسًا)**، 530 سؤال درس + 10 بوابة (`540 Q`)، 109 مهمات أداء (`109 P`)، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v106` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق:** **231 حالة شاشة** (`115` عند `1440px` و`116` عند `390px` تغطي جميع الدروس الـ`53/53` + بوابة `A0`) وصفر مخالفات للقواعد المختارة، مع **120 ظهورًا غير حاسم تشمل 266 ظهورًا لعقد** (بانخفاض `-49` قاعدة و`-194` عقدة عن CR56، وخلو `94/104` من حالات الدروس النصية من أي فحص غير حاسم)؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR56 — 2026-10-09
+
+- **التنفيذ والتقرير والفحوص:** `8b209a1505ef95a33825911ba8e62795bc3da3b8`. رُفع إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد الرفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR56 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `8b209a1505ef95a33825911ba8e62795bc3da3b8`. اكتمل نشر Preview في Vercel (`Deployment has completed`، Deployment ID `6969739919`، Status ID `19539395105`، `https://deutschlern-omkz5d7sv-balinader-2671s-projects.vercel.app`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و56 حارسًا (بما فيها `tools/test_catalog_accessibility_review.py`)، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,320,648` بايت، `catalog-accessibility-v2`، `v105`. **231 حالة axe** (`53/53` درسًا + بوابة `A0`) وصفر مخالفات للقواعد المختارة مع **169 ظهورًا غير حاسم/460 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة والمزامنة:** 42 وحدة مراجعة تراكمية (3 صفوف كتالوج مهام + 31 صف سجل صوت في `A0.1–A1.9` + 8 ثوابت واجهة وإمكانية وصول ومفحوصات شاملة)، و17 مرجعًا مقروءًا بالكامل في 32 جزءًا + 3 استعلامات بحث. زُومنت `data/production-task-catalog.csv` (`1080` صفًا) و`data/audio-asset-register.csv` (`217` صفًا)، وأُضيف `dir="auto"` لحقل `<textarea data-performance-response>` وحقل `<input id="profile-name">` وإعادة التمرير إلى أعلى الصفحة في `app.js`، ووُسّع `tools/test_accessibility_audit.cjs` ليشمل `a0-02-greetings`، وأُضيفت فحوص مطابقة شاملة للكتالوج وسجل الصوت في `tools/verify_course.py`.
+- **الحفظ:** بقيت حزمة `data/course.json` (`2,320,648` بايت) وجميع الدروس الـ53 وبوابة `A0` وملفات التقييم الـ54 و`data/audio-playlists.json` وملفات MP3 الـ474 وبصمات المراجعات الـ55 السابقة (`a0-01`..`b2-12` + `a0-gate` + `a0-overview`) مطابقة بالبايت دون أي تغيير أو إعادة توليد صوت.
+- **التسليم والتالي:** سجلا `data/reviews/catalog-accessibility-review.*` والحارس `tools/test_catalog_accessibility_review.py` والتوثيق والخطة `2.62` ووثيقتا التسليم محدثة. التغطية **53/53 درسًا (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول الشاملة؛ 56 حارس مراجعة**. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+**أحدث مراجعة محتوى وتطبيق CR56 — 2026-10-09:** رُوجعت سجلات المهام الإنتاجية (`data/production-task-catalog.csv`، `1080` صفًا) وسجلات الأصول الصوتية (`data/audio-asset-register.csv`، `217` صفًا) وواجهة RTL وفحوص إمكانية الوصول التراكمية عبر جميع الدروس الـ53 وبوابة `A0→A1` في **42 وحدة مراجعة** بالاستناد إلى **17 مرجعًا إلكترونيًا مقروءًا بالكامل في 32 جزءًا + 3 استعلامات بحث** (`W3C Internationalization qa-html-dir`، و`WCAG 2.1 SC 1.4.3 / 1.4.10 / 2.1.1 / 2.4.3`، و`Lingolia`، و`Duden`). زُومنت في `data/production-task-catalog.csv` حالة `DL-A0-03-T05` (`planned -> active`) وعنوان `DL-B2-03-T02` وربط `DL-B2-11-P02` (`5;6;7;8` مطابقًا لـ`T05;T06;T07;T08` في ملف التقييم)، وزُومنت في `data/audio-asset-register.csv` أرقام الأسطر وعناوين الأقسام لـ31 صفًا عبر `A0.1–A1.9` لتطابق ملفات Markdown المراجعة (`a0-01-v2`..`a1-09-v2`) بنسبة 100%، وأُضيفت فحوص مطابقة شاملة للكتالوج وسجل الصوت في `tools/verify_course.py`. كما أُضيف `dir="auto"` لحقل `<textarea data-performance-response>` وحقل `<input id="profile-name">` في `app.js` وفق توصية W3C للنصوص المختلطة العربية/الألمانية، وأُضيف إعادة التمرير إلى أعلى الصفحة عند الانتقال بين أوضاع الدرس والاختبار ومهام الأداء، ووُسّع `tools/test_accessibility_audit.cjs` ليشمل `a0-02-greetings` فأصبحت التغطية **231 حالة شاشة** تغطي **53/53 درسًا + بوابة A0** بعرضَي `1440px` و`390px` مع **صفر مخالفات** للقواعد المفحوصة (`169` قاعدة غير حاسمة عبر `460` عقدة)، ورُقّي المخزن إلى `deutsch-pfad-v105`، وأُضيف الحارس رقم `56` (`tools/test_catalog_accessibility_review.py`). الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة — CR56
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Sync task/audio catalogs, add RTL dir=auto & a11y audit for 53/53 lessons (CR56)` ثم يُستعلم عن SHA والنشر ويُسجل إيصال `CR56` بعنوان `Record CR56 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `app.js`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v105`)، `tools/verify_course.py`، `tools/test_accessibility_audit.cjs`، `tools/test_forms_keyboard.cjs`، `tools/test_catalog_accessibility_review.py`، `data/reviews/catalog-accessibility-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.62)، `data/browser-qa-report.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 42 وحدة مراجعة تراكمية (3 صفوف كتالوج مهام + 31 صف سجل صوت في `A0.1–A1.9` + 8 ثوابت واجهة وإمكانية وصول ومفحوصات شاملة)؛ 17 مرجعًا مقروءًا بالكامل في 32 جزءًا + 3 استعلامات بحث. بقيت حزمة `data/course.json` (`2,320,648` بايت) وجميع ملفات الدروس الـ53 وبوابة A0 وملفات التقييم الـ54 وملفات MP3 الـ474 و`data/audio-playlists.json` وبصمات المراجعات الـ55 السابقة ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة + مزامنة الفهارس وإمكانية الوصول الشاملة؛ 56 حارس مراجعة**، والمخزن `v105`، وإصدار الخطة `2.62`.
+- **التالي مباشرة:** بعد رفع `CR56` استعلم عن SHA وسجل إيصال `CR56` وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR56
+
+- **PASS:** البناء والتحقق، و56 حارسًا (بما فيها `tools/test_catalog_accessibility_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,320,648 بايت**؛ 53 درسًا، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة (`540 Q`)، 109 مهمات أداء (`109 P`)، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v105` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق:** **231 حالة شاشة** (`115` عند `1440px` و`116` عند `390px` تغطي جميع الدروس الـ`53/53` + بوابة `A0`) وصفر مخالفات للقواعد المختارة، مع **169 ظهورًا غير حاسم تشمل 460 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR55 — 2026-10-09
+
+- **التنفيذ والتقرير والفحوص:** `0a091eed4cd6427f535a6d37acc9a59c169ef813`. رُفع إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد الرفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR55 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `0a091eed4cd6427f535a6d37acc9a59c169ef813`. اكتمل نشر Preview في Vercel (`Deployment has completed`، Deployment ID `6968333027`، Status ID `19536114681`، `https://deutschlern-ihiiq4iam-balinader-2671s-projects.vercel.app`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و55 حارسًا (بما فيها `tools/test_a0_overview_review.py`)، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,320,648` بايت، `a0-overview-audit-v2`، `v104`. **227 حالة axe** وصفر مخالفات للقواعد المختارة مع **166 ظهورًا غير حاسم/454 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة والمزامنة:** 12 وحدة مراجعة نصية وتراكمية، و25 مرجعًا مقروءًا بالكامل في 32 جزءًا + 3 استعلامات بحث (مع استبعاد رابط 404 واحد `/rechtschreibung/Alphabet`). زُومنت `content/A0/lesson-01-overview.md`، و`data/source-plan.md`، و`data/curriculum-production-matrix.md` (الإصدار `1.5`)، و`data/curriculum-audit.md`، و`data/curriculum-file-audit.csv` (`53` صفًا، `428` تمرينًا، `61` قسم حوار، `473` مقطعًا في الدروس + مقطع البوابة = `474` مقطعًا؛ إزالة `0` / `not_generated` القديمة في `B1.10–B2.12` وتحديث `A1.12` إلى `11` مقطعًا وإزالة إشارات `v1` القديمة)، وأُضيفت فحوص مطابقة تلقائية لها في `tools/verify_course.py`.
+- **الحفظ:** بقيت حزمة `data/course.json` (`2,320,648` بايت) وجميع الدروس الـ53 وبوابة `A0` وملفات التقييم الـ54 و`data/production-task-catalog.csv` و`data/audio-asset-register.csv` و`data/audio-playlists.json` وملفات MP3 الـ474 وبصمات المراجعات الـ54 السابقة (`a0-01`..`b2-12` + `a0-gate`) مطابقة بالبايت دون أي تغيير أو إعادة توليد صوت.
+- **التسليم والتالي:** سجلا `data/reviews/a0-overview-review.*` والحارس `tools/test_a0_overview_review.py` والتوثيق والخطة `2.61` ووثيقتا التسليم محدثة. التغطية **53/53 درسًا (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة ومزامنة السجلات التراكمية؛ 55 حارس مراجعة**. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+**أحدث مراجعة محتوى CR55 — 2026-10-09:** رُوجع ملف نظرة المستوى التمهيدي **`content/A0/lesson-01-overview.md`** بالتكامل مع مزامنة سجلات التدقيق التراكمية والوثائق المرجعية عبر المسار (`data/source-plan.md` المخزّن في `APP_SHELL` والمربوط من الواجهة، و`data/curriculum-production-matrix.md` الإصدار `1.5`، و`data/curriculum-audit.md`، و`data/curriculum-file-audit.csv` بصفوفه الـ53) في **12 وحدة مراجعة** بالاستناد إلى **25 مرجعًا إلكترونيًا مقروءًا بالكامل في 32 جزءًا + 3 استعلامات بحث** (واستبعاد رابط 404 واحد `/rechtschreibung/Alphabet` لصالح `/rechtschreibung/Alphabet_Abc`). وُثّقت في نظرة `A0` العامة الحروف الـ26 وحروف الإمالة الثلاثة (`Ä ä, Ö ö, Ü ü`) وحرف `Eszett` (`ß / ẞ` بعد الصائت الطويل أو المركب الصوتي مقابل `ss` بعد الصائت القصير)، والأنماط الصوتية المستهدفة (`ei, ie, sch, z, w` مع `v` و`sp-/st-` و`ch`)، ومستويا الخطاب `du` و`Sie`، والأعداد الأساسية `0–20` وقراءة رقم الهاتف خانةً خانة مع إبقاء الأعداد المركبة `21–100` توسعة تعرّف اختيارية، وضمائر الفاعل وتصريف `sein/haben` وترتيب الجملة الخبرية `V2` والسؤال، وعبارات الصف وطلب المساعدة، وخريطة الوحدات (`a0-01-v2`, `a0-02-v2`, `a0-03-v3`, `a0-04-v2`, `a0-05-v2`, `a0-gate-v2`) والأصول الصوتية الـ12 المعتمدة (`27` مقطعًا) وسياسة `hide_until_first_attempt`. كما زُومنت صفوف الدروس الـ53 في `data/curriculum-file-audit.csv` (`428` تمرينًا، `61` قسم حوار، `473` مقطعًا في الدروس + مقطع البوابة = `474` مقطعًا؛ إزالة `0` / `not_generated` القديمة في `B1.10–B2.12` وتحديث `A1.12` إلى `11` مقطعًا وإزالة إشارات `v1` القديمة)، ورُقّي مخزن Service Worker إلى `deutsch-pfad-v104` لتحديث `./data/source-plan.md` في `APP_SHELL`، وأُضيف الحارس رقم `55` (`tools/test_a0_overview_review.py`) وفحوص المزامنة التلقائية في `tools/verify_course.py`. الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة — CR55
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ رُفع التحديث والتقرير `0a091eed4cd6427f535a6d37acc9a59c169ef813` وتطابق HEAD/origin، ثم يُرفع إيصال `CR55` بعنوان `Record CR55 delivery receipt`. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/A0/lesson-01-overview.md`، `data/source-plan.md`، `data/curriculum-production-matrix.md` (1.5)، `data/curriculum-audit.md`، `data/curriculum-file-audit.csv`، `service-worker.js` واختباراه (`v104`)، `tools/verify_course.py`، `tools/test_a0_overview_review.py`، `data/reviews/a0-overview-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.61)، `data/browser-qa-report.md`، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **المراجعة:** 12 وحدة مراجعة نصية وتراكمية؛ 25 مرجعًا مقروءًا بالكامل في 32 جزءًا + 3 استعلامات بحث، ورابط 404 واحد مستبعد. بقيت جميع ملفات الدروس الـ53 وبوابة A0 وملفات MP3 الـ474 و`data/audio-playlists.json` وبصمات المراجعات الـ54 السابقة ثابتة بالبايت.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) + بوابة `A0→A1` + نظرة `A0` العامة ومزامنة السجلات التراكمية؛ 55 حارس مراجعة**، والمخزن `v104`، وإصدار الخطة `2.61`.
+- **التالي مباشرة:** بعد رفع `CR55` استعلم عن SHA وسجل إيصال `CR55` وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR55
+
+- **PASS:** البناء والتحقق، و55 حارسًا (بما فيها `tools/test_a0_overview_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,320,648 بايت**؛ 53 درسًا، 428 عنوان تمرين + 3 مهام بوابة (`431 T`)، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة (`540 Q`)، 109 مهمات أداء (`109 P`)، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v104` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **axe والعرض الضيق:** **227 حالة** وصفر مخالفات للقواعد المختارة، مع **166 ظهورًا غير حاسم تشمل 454 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR54 — 2026-10-09
+
+- **التنفيذ:** `67df18827281ab1a0f5a9e8c5afaba275a838b62`؛ **التقرير والفحوص:** `11d0d545469689c72cd469d8092f0f840a14e563`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR54 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `11d0d54`. اكتمل نشر Preview في Vercel للتنفيذ (`Deployment has completed`، Deployment ID `6967371952`، Status ID `56007001787`، `https://vercel.com/balinader-2671s-projects/deutschlern/8vcoyEYQLLAbcMumWunreyiMvxT2`) وللتقرير (`Deployment has completed`، Deployment ID `6967548035`، Status ID `56007624412`، `https://vercel.com/balinader-2671s-projects/deutschlern/37uf1FvvfvWfeNyWzZV5HF8tSMar`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و54 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,320,648` بايت، `b2-12-v2`، `v103`. **227 حالة axe** وصفر مخالفات للقواعد المختارة مع **166 ظهورًا غير حاسم/454 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 89 وحدة/43 بندًا/11 جزء نموذج/30 خيارًا/6 معايير، و55 مرجعًا مقروءًا بالكامل في 60 جزءًا + 3 استعلامات بحث (مع استبعاد 4 روابط 404/إعادة توجيه). أُضيف تنبيه مفردات وصرف عن الأسماء (`die Rezension / Aussage / Sendung / Behauptung / Redewiedergabe / Moderatorin`، و`der Podcast / Kommentar / Moderator → die Moderatoren`، و`das Interview, -s` و`das Publikum` مفردًا جامعًا) وأفعال نقل الكلام والموافقة (`berichten / behaupten / erklären` بلا `ge-` مقابل المنفصلة `einräumen → hat eingeräumt` و`zustimmen + Dat → hat zugestimmt` و`mitteilen → hat mitgeteilt` و`offenlassen → hat offengelassen`) وحروف جر النسبة (`laut + Dat/Gen` قبل الاسم مقابل `Dat + zufolge` بعده)، مع 3 فقرات مساعدة قبل النصوص والمهمات توضّح متى نستخدم `Konjunktiv I` (`sei / seien / habe / beginne / arbeite / schreibe / wolle / könne / werde ergänzt`) ومتى ننتقل إلى البديل المميّز (`hätten / verstünden / fänden`) أو `würden + Infinitiv` في الأفعال الضعيفة لتجنّب التباس `hörten` بالماضي البسيط `Präteritum`، ونقل الأحداث الماضية (`habe / sei / hätten + Partizip II`)، وموقع الفعل مع `dass` ومن دونها، والتمييز بين القول المنقول والرأي الشخصي المباشر بصيغة الخبر (`Ich finde … ist …` / `Meiner Meinung nach ist …`)، ووُسّعت مفاتيح القراءة والاستماع إلى جمل كاملة، ووُسّعت `T01` إلى 5 بنود و`T02` إلى 4 بنود و`T03` إلى 5 بنود و`T04` إلى 5 بنود ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. `P01` ملخص مكتوب من 5 جمل لمقابلة ثقافية خيالية (`634` حرفًا)، و`P02` إحاطة تحريرية من 6 جمل لمجلة ثقافية خيالية استنادًا إلى `T05` و`T06` و`T07` مع الجهر (`910` أحرف)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 220/250 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى وجميع ملفات MP3 الـ474 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` وربط `P02` فقط في سجل B2.12؛ خمسة أصول/10 مقاطع بأصوات `Moderatorin` (`voice-02`) و`Gast` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-12-review.*` والحارس والفهرس والتوثيق والخطة `2.60` ووثيقتا التسليم محدثة. التغطية **53/53 درسًا (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) والبوابة `A0→A1` منفصلة؛ 54 حارس مراجعة**. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+
+**أحدث مراجعة محتوى CR54 — 2026-10-09:** رُوجع **B2.12 — أوقات الفراغ والإعلام ونقل الكلام: Konjunktiv I وKonjunktiv II** (ختام مستوى B2 والدروس الـ53) في **89 وحدة و43 بندًا داخل التمارين و11 جزء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **55 مرجعًا مقروءًا بالكامل في 60 جزءًا + 3 استعلامات بحث** (واستبعاد 4 روابط 404/إعادة توجيه). أُضيف تنبيه مفردات وصرف عن الأسماء (`die Rezension / Aussage / Sendung / Behauptung / Redewiedergabe / Moderatorin`، و`der Podcast / Kommentar / Moderator → die Moderatoren`، و`das Interview, -s` و`das Publikum` مفردًا جامعًا) وأفعال نقل الكلام والموافقة (`berichten / behaupten / erklären` بلا `ge-` مقابل المنفصلة `einräumen → hat eingeräumt` و`zustimmen + Dat → hat zugestimmt` و`mitteilen → hat mitgeteilt` و`offenlassen → hat offengelassen`) وحروف جر النسبة (`laut + Dat/Gen` قبل الاسم مقابل `Dat + zufolge` بعده)، مع 3 فقرات مساعدة قبل النصوص والمهمات توضّح متى نستخدم `Konjunktiv I` (`sei / seien / habe / beginne / arbeite / schreibe / wolle / könne / werde ergänzt`) ومتى ننتقل إلى البديل المميّز (`hätten / verstünden / fänden`) أو `würden + Infinitiv` في الأفعال الضعيفة لتجنّب التباس `hörten` بالماضي البسيط `Präteritum`، ونقل الأحداث الماضية (`habe / sei / hätten + Partizip II`)، وموقع الفعل مع `dass` ومن دونها، والتمييز بين القول المنقول والرأي الشخصي المباشر بصيغة الخبر (`Ich finde … ist …` / `Meiner Meinung nach ist …`)، ووُسّعت مفاتيح القراءة والاستماع إلى جمل كاملة، ووُسّعت `T01` إلى 5 بنود (`seien`) و`T02` إلى 4 بنود (`hätten … gefunden`) و`T03` إلى 5 بنود (لدعم `Q04` و`Q05` مباشرةً) و`T04` إلى 5 بنود (`Dem Gast zufolge`) ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. صارت **P01 ملخصًا مكتوبًا من 5 جمل لمقابلة ثقافية خيالية (634 حرفًا، كتابة فقط، حد 220)** و**P02 إحاطة تحريرية من 6 جمل لمجلة ثقافية خيالية استنادًا إلى T05 وT06 وT07 كتابة وجهر (910 أحرف، حد 250)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 220/250 محفوظة؛ `b2-12-v2` و`v103`، وخمسة أصول/10 مقاطع معلقة بأصوات `Moderatorin` (`voice-02`) و`Gast` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) دون توليد أو استماع أو اعتماد. **اكتملت بذلك مراجعة الدروس الـ53 كلها (`53/53`) بالإضافة إلى بوابة الانتقال المستقلة (`A0→A1`)؛ 54 حارس مراجعة.** الفحوص لا تعني دمج PR#1 أو اعتماد الصوت المعلق.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `67df18827281ab1a0f5a9e8c5afaba275a838b62` مرفوع ومتطابق HEAD/origin. يُرفع التقرير الكامل الآن بعنوان `Add B2.12 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-12-leisure-media-reported-speech.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v103`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_12_review.py`، `data/reviews/b2-12-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.60)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 89 وحدة/43 بندًا/11 جزء نموذج/30 خيارًا/6 معايير؛ 55 مرجعًا مقروءًا بالكامل في 60 جزءًا + 3 استعلامات بحث، و4 روابط 404/إعادة توجيه مستبعدة. الخيارات والفهارس والروابط و80% وحدا 220/250 ثابتة. النموذجان 634/910 أحرف؛ P01 خمس جمل كتابة فقط، وP02 ست جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** **53/53 درسًا مخلصًا ومراجعًا بالكامل (`A0.1–5`، `A1.1–12`، `A2.1–12`، `B1.1–12`، `B2.1–12`) والبوابة `A0→A1` منفصلة؛ 54 حارس مراجعة**، `b2-12-v2` و`v103`. سجل v1 محفوظ لكنه لا يمنح إتقان v2.
+- **التالي مباشرة:** بعد رفع التنفيذ والتقرير استعلم عن SHA وسجل إيصال CR54 وارفعه. تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+
+## الفحوص التراكمية — CR54
+
+- **PASS:** البناء والتحقق، و54 حارسًا (بما فيها `tools/test_b2_12_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,320,648 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v103` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-12-v1` محفوظ لكنه لا يمنح إتقان `b2-12-v2`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يمنحان إتقان `b2-12-leisure-media-reported-speech` (آخر دروس المسار الـ53) وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 634/910 أحرف فوق حدَّي 220/250 حرفًا.
+- **axe والعرض الضيق:** **227 حالة** وصفر مخالفات للقواعد المختارة، مع **166 ظهورًا غير حاسم تشمل 454 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+
+---
+
+## إيصال رفع CR53 — 2026-10-09
+
+- **التنفيذ:** `ba8202a1d11c482994417a5f643528bf36be95ae`؛ **التقرير والفحوص:** `93de44ba212f023999484359af8bf74b0ee4bd86`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR53 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `93de44b`. اكتمل نشر Preview في Vercel للتنفيذ وللتقرير (`Deployment has completed`، Status ID `56005307336`، `https://vercel.com/balinader-2671s-projects/deutschlern/7xuqvmbNrSoKnjkZdKvA3qLnTpMX`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و53 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,276,845` بايت، `b2-11-v2`، `v102`. **225 حالة axe** وصفر مخالفات للقواعد المختارة مع **164 ظهورًا غير حاسم/450 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 91 وحدة/42 بندًا/11 جزء نموذج/30 خيارًا/6 معايير، و52 مرجعًا مقروءًا بالكامل في 54 جزءًا + 3 استعلامات بحث (مع استبعاد 5 روابط 404/إعادة توجيه). أُضيف تنبيه مفردات وصرف عن `der Schutz → des Schutzes` و`der Verbrauch → des Verbrauchs` و`der Erhalt → des Erhalts` و`die Artenvielfalt` (بلا جمع) و`der Lebensraum → des Lebensraums, die Lebensräume` (`von Lebensräumen` في `Dativ Plural`) والأسماء المؤنثة المنتهية بـ`-ung` (`die Renaturierung / Verringerung / Wiederherstellung / Flächennutzung / Auswirkung (auf + Akk) / Beteiligung, -en`) و`die Maßnahme, -n` والأفعال `schützen → geschützt` و`wiederherstellen → wiederhergestellt` و`beeinträchtigen → beeinträchtigt` و`abwägen → abgewogen`، مع 3 فقرات مساعدة قبل النصوص والمهمات توضّح خريطة التحويل بين الروابط الفعلية وحروف الجر الاسمية وتحويل الفاعل/المفعول به إلى مضاف إليه (`Genitivattribut` مقابل `von + Dativ Plural`) ووجوب استكمال الجملة بفعل مصرف في الموقع الثاني `V2`، وصُحح مفتاح سؤال القراءة 2 ووُسّعت مفاتيح القراءة والاستماع إلى جمل كاملة، ووُسّعت `T01` إلى 5 بنود و`T03` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه، وصُحّحت مسارات `content/B2/lesson-11-...assessment.json` في الكتالوج. `P01` عرض مكتوب من 5 جمل لمقترح بيئي خيالي (`621` حرفًا)، و`P02` إحاطة من 6 جمل لمشارك في نقاش مجتمعي استنادًا إلى `T05` و`T06` و`T07` مع الجهر (`1153` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 180/220 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى وجميع ملفات MP3 الـ474 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.11؛ خمسة أصول/11 مقطعًا بأصوات `Lea` (`voice-02`) و`Amir` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-11-review.*` والحارس والفهرس والتوثيق والخطة `2.59` ووثيقتا التسليم محدثة. التغطية **52/53 درسًا والبوابة منفصلة، درس واحد متبقٍّ في B2 (`B2.12`)**. التالي **CR54/B2.12** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR53 — 2026-10-09:** رُوجع **B2.11 — الإنسان والطبيعة وحماية البيئة: الأسلوب الاسمي** في **91 وحدة و42 بندًا داخل التمارين و11 جزء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **52 مرجعًا مقروءًا بالكامل في 54 جزءًا + 3 استعلامات بحث** (واستبعاد 5 روابط 404/إعادة توجيه). أُضيف تنبيه مفردات وصرف عن `der Schutz → des Schutzes` و`der Verbrauch → des Verbrauchs` و`der Erhalt → des Erhalts` و`die Artenvielfalt` (بلا جمع) و`der Lebensraum → des Lebensraums, die Lebensräume` (`von Lebensräumen` في `Dativ Plural`) والأسماء المؤنثة المنتهية بـ`-ung` (`die Renaturierung / Verringerung / Wiederherstellung / Flächennutzung / Auswirkung (auf + Akk) / Beteiligung, -en`) و`die Maßnahme, -n` والأفعال `schützen → geschützt` و`wiederherstellen → wiederhergestellt` و`beeinträchtigen → beeinträchtigt` و`abwägen → abgewogen`، مع 3 فقرات مساعدة قبل النصوص والمهمات توضّح خريطة التحويل بين الروابط الفعلية وحروف الجر الاسمية (`wenn/während → bei + Dativ`، `indem → durch + Akkusativ`، `weil → aufgrund/wegen + Genitiv`، `um … zu → zu/zum/zur + Dativ`) وتحويل الفاعل أو المفعول به إلى مضاف إليه (`Genitivattribut` مقابل `von + Dativ Plural`) ووجوب استكمال الجملة بفعل مصرف في الموقع الثاني `V2`، وصُحح مفتاح سؤال القراءة 2 (`Den Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss` بدل صياغة `Um …`) ووُسّعت مفاتيح القراءة والاستماع إلى جمل كاملة، ووُسّعت `T01` إلى 5 بنود و`T03` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه، وصُحّحت مسارات `content/B2/lesson-11-...assessment.json` في الكتالوج. صارت **P01 عرضًا مكتوبًا من 5 جمل لمقترح بيئي خيالي (621 حرفًا، كتابة فقط، حد 180)** و**P02 إحاطة من 6 جمل لمشارك في نقاش مجتمعي استنادًا إلى T05 وT06 وT07 كتابة وجهر (1153 حرفًا، حد 220)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 180/220 محفوظة؛ `b2-11-v2` و`v102`، وخمسة أصول/11 مقطعًا معلقة بأصوات `Lea` (`voice-02`) و`Amir` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 52/53 درسًا والبوابة منفصلة؛ بقي درس واحد فقط في B2 (`B2.12`)، والتالي CR54/B2.12.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `ba8202a1d11c482994417a5f643528bf36be95ae` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Add B2.11 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-11-humans-nature-environment-nominalization.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v102`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_11_review.py`، `data/reviews/b2-11-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.59)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 91 وحدة/42 بندًا/11 جزء نموذج/30 خيارًا/6 معايير؛ 52 مرجعًا مقروءًا بالكامل في 54 جزءًا + 3 استعلامات بحث، و5 روابط 404/إعادة توجيه مستبعدة. الخيارات والفهارس والروابط و80% وحدا 180/220 ثابتة. النموذجان 621/1153 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 ست جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 52/53 درسًا والبوابة منفصلة؛ درس واحد متبقٍّ في B2 (`B2.12`)، 53 حارسًا، `b2-11-v2` و`v102`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.12.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR53 وارفعه؛ ثم ابدأ **CR54/B2.12** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR53
+
+- **PASS:** البناء والتحقق، و53 حارسًا (بما فيها `tools/test_b2_11_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,276,845 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v102` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-11-v1` محفوظ لكنه لا يمنح إتقان `b2-11-v2` أو يفتح `B2.12`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-12-leisure-media-reported-speech` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 621/1153 حرفًا فوق حدَّي 180/220 حرفًا.
+- **axe والعرض الضيق:** **225 حالة** وصفر مخالفات للقواعد المختارة، مع **164 ظهورًا غير حاسم تشمل 450 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `ba8202a1d11c482994417a5f643528bf36be95ae` وتطابق HEAD/origin. PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+---
+
+## إيصال رفع CR52 — 2026-10-09
+
+- **التنفيذ:** `0bc79e76e536023cf81d9df7efa6c040f604e55d`؛ **التقرير والفحوص:** `0e4e7d343b8fc574f08fb860983e86b05a23f9bd`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR52 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `0e4e7d3`. اكتمل نشر Preview في Vercel للتنفيذ وللتقرير (`Deployment has completed`، Preview ID `6962394939`، `https://vercel.com/balinader-2671s-projects/deutschlern/4YnMKJ6zFJDrTgvFWwXWgF8UXNqg`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و52 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,274,361` بايت، `b2-10-v2`، `v101`. **221 حالة axe** وصفر مخالفات للقواعد المختارة مع **160 ظهورًا غير حاسم/422 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 91 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و40 مرجعًا مقروءًا بالكامل في 44 جزءًا + 4 استعلامات بحث (مع استبعاد 4 روابط 404). أُضيف تنبيه مفردات وصرف عن `das Update, -s` و`die Schnittstelle, -n` و`die Einstellung, -en` و`der Zugriff, -e (auf + Akk)` و`die Störung, -en` و`die Ausfallzeit, -en` و`die Funktion, -en` و`die Voraussetzung, -en` و`kompatibel mit + Dat` واختيار المساعد في `Konjunktiv II` للماضي (`wäre aufgetreten / wäre aufgefallen` مع أفعال التغيّر والحدوث اللازمة مقابل `hätte überprüft / entdeckt / verschoben` مع المتعدية) والأفعال المنفصلة (`zurückgesetzt / freigegeben / wiederhergestellt`) مقابل غير المنفصلة والمنتهية بـ`-ieren` بلا `ge-` (`überprüft / übertragen / unterstützt / wiederholt / installiert`؛ وتمييز `wiederholen → hat wiederholt` بمعنى «كرّر» عن الجناس المنفصل `hat wiedergeholt`)، مع 5 نقاط مساعدة قبل النصوص والمهمات (بما فيها صيغة المصدر المزدوج `Ersatzinfinitiv` مع الأفعال الناقصة `hätte … wiederherstellen können` والمبني للمجهول `wäre … übertragen worden / geprüft worden wäre` وحذف `wenn`)، وحُدّدت أسئلة القراءة والاستماع وأجوبتها الكاملة بالألمانية، ووُسّعت `T01` إلى 5 بنود و`T03` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. `P01` فقرة مكتوبة من 5 جمل عن مشروع تقني خيالي لم يسر كما خُطط له (`637` حرفًا)، و`P02` إحاطة من 5 جمل لفريق تطوير خيالي استنادًا إلى `T05` و`T06` و`T07` مع الجهر (`945` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 180/200 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى وجميع ملفات MP3 الـ474 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.10؛ خمسة أصول/10 مقاطع بأصوات `Lea` (`voice-02`) و`Murat` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-10-review.*` والحارس والفهرس والتوثيق والخطة `2.58` ووثيقتا التسليم محدثة. التغطية **51/53 درسًا والبوابة منفصلة، درسان متبقيان في B2 (`B2.11–B2.12`)**. التالي **CR53/B2.11** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR52 — 2026-10-09:** رُوجع **B2.10 — الأمنيات والاحتمالات والتقنية: Konjunktiv II للماضي والفرضيات** في **91 وحدة و41 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **40 مرجعًا مقروءًا بالكامل في 44 جزءًا + 4 استعلامات بحث** (واستبعاد 4 روابط 404). أُضيف تنبيه مفردات وصرف عن `das Update, -s` و`die Schnittstelle, -n` و`die Einstellung, -en` و`der Zugriff, -e (auf + Akk)` و`die Störung, -en` و`die Ausfallzeit, -en` و`die Funktion, -en` و`die Voraussetzung, -en` و`kompatibel mit + Dat` واختيار المساعد في `Konjunktiv II` للماضي (`wäre aufgetreten / wäre aufgefallen` مع أفعال التغيّر والحدوث اللازمة مقابل `hätte überprüft / entdeckt / verschoben` مع المتعدية) والأفعال المنفصلة (`zurückgesetzt / freigegeben / wiederhergestellt`) مقابل غير المنفصلة والمنتهية بـ`-ieren` بلا `ge-` (`überprüft / übertragen / unterstützt / wiederholt / installiert`؛ وتمييز `wiederholen → hat wiederholt` بمعنى «كرّر» عن الجناس المنفصل `hat wiedergeholt`)، مع 5 نقاط مساعدة قبل النصوص والمهمات (بما فيها صيغة المصدر المزدوج `Ersatzinfinitiv` مع الأفعال الناقصة `hätte … wiederherstellen können` والمبني للمجهول `wäre … übertragen worden / geprüft worden wäre` وحذف `wenn`)، وحُدّدت أسئلة القراءة والاستماع وأجوبتها الكاملة بالألمانية، ووُسّعت `T01` إلى 5 بنود و`T03` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. صارت **P01 فقرة مكتوبة من 5 جمل عن مشروع تقني خيالي لم يسر كما خُطط له (637 حرفًا، كتابة فقط، حد 180)** و**P02 إحاطة من 5 جمل لفريق تطوير خيالي استنادًا إلى T05 وT06 وT07 كتابة وجهر (945 حرفًا، حد 200)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 180/200 محفوظة؛ `b2-10-v2` و`v101`، وخمسة أصول/10 مقاطع معلقة بأصوات `Lea` (`voice-02`) و`Murat` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 51/53 درسًا والبوابة منفصلة؛ بقي درسان في B2 (`B2.11–B2.12`)، والتالي CR53/B2.11.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `0bc79e76e536023cf81d9df7efa6c040f604e55d` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Add B2.10 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-10-wishes-probabilities-technology-konjunktiv2-past.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v101`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_10_review.py`، `data/reviews/b2-10-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.58)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 91 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 40 مرجعًا مقروءًا بالكامل في 44 جزءًا + 4 استعلامات بحث، و4 روابط 404 مستبعدة. الخيارات والفهارس والروابط و80% وحدا 180/200 ثابتة. النموذجان 637/945 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 51/53 درسًا والبوابة منفصلة؛ درسان متبقيان في B2 (`B2.11–B2.12`)، 52 حارسًا، `b2-10-v2` و`v101`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.11.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR52 وارفعه؛ ثم ابدأ **CR53/B2.11** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR52
+
+- **PASS:** البناء والتحقق، و52 حارسًا (بما فيها `tools/test_b2_10_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,274,361 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v101` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-10-v1` محفوظ لكنه لا يمنح إتقان `b2-10-v2` أو يفتح `B2.11`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-11-humans-nature-environment-nominalization` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 637/945 حرفًا فوق حدَّي 180/200 حرفًا.
+- **axe والعرض الضيق:** **221 حالة** وصفر مخالفات للقواعد المختارة، مع **160 ظهورًا غير حاسم تشمل 422 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `0bc79e76e536023cf81d9df7efa6c040f604e55d` وتطابق HEAD/origin. PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+---
+
+## إيصال رفع CR51 — 2026-10-09
+
+- **التنفيذ:** `adb678474c903152a5c309029ef8e222e9af33fc`؛ **التقرير والفحوص:** `b5ca7ccb31d0a4c5b4e1e390c57c0d5c952df494`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR51 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `b5ca7cc`. اكتمل نشر Preview في Vercel للتقرير (`Deployment has completed`، Preview ID `6961874348`، `https://vercel.com/balinader-2671s-projects/deutschlern/E8MXRAgi27VyE5d1P6boykw8pUWd`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و51 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,249,674` بايت، `b2-09-v2`، `v100`. **217 حالة axe** وصفر مخالفات للقواعد المختارة مع **157 ظهورًا غير حاسم/412 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 95 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و34 مرجعًا مقروءًا بالكامل في 39 جزءًا + استعلامَي بحث (مع استبعاد 3 روابط 404). أُضيف تنبيه مفردات وصرف عن `das Unternehmen, —` و`der Umsatz → die Umsätze` و`die Nachfrage` و`der Wettbewerb` (في المفرد بالمعنى الاقتصادي) و`die Arbeitsbedingungen` (جمع غالبًا) و`die Fachkraft → die Fachkräfte` و`sich spezialisieren auf + Akk` و`Wert legen auf + Akk` و`werben mit + Dat` مقابل `für + Akk` و`abhängen von + Dat` (`hing ab, hat abgehangen` مقابل الضعيف `hängte ab, hat abgehängt`) و`sich richten an + Akk` مقابل `nach + Dat`، مع 6 ملاحظات مساعدة قبل النصوص والمهمات (إقحام `-r-` قبل الصوائت، غير العاقل مقابل الأشخاص `An wen / Mit wem`، وظيفة `da(r)-` كضمير تمهيدي `Korrelat` مع الفاصلة والفعل في آخر الجملة التابعة، وصيغة `Konjunktiv I` في الاستماع)، وحُدّد سؤالا القراءة 1 والاستماع 4، ووُسّع `T01` إلى 5 بنود و`T07` إلى 4 بنود، وأُضيفت تلميحات الأفعال في `T02`، ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه، وصُحّحت مسارات `content/B2/lesson-09-...assessment.json` في الكتالوج. `P01` نبذة مكتوبة عن شركة أو حملة خيالية من 5 جمل (`636` حرفًا)، و`P02` إحاطة من 5 جمل لزميل استنادًا إلى `T05` و`T06` و`T07` مع الجهر (`876` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى وجميع ملفات MP3 الـ474 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.9؛ خمسة أصول/12 مقطعًا بأصوات `Mara` (`voice-02`) و`Jonas` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-09-review.*` والحارس والفهرس والتوثيق والخطة `2.57` ووثيقتا التسليم محدثة. التغطية **50/53 درسًا والبوابة منفصلة، 3 دروس متبقية في B2 (`B2.10–B2.12`)**. التالي **CR52/B2.10** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR51 — 2026-10-09:** رُوجع **B2.9 — الشركات والتسويق والعمل: الأفعال مع حروف الجر وda-/wo- المركّبة** في **95 وحدة و41 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **34 مرجعًا مقروءًا بالكامل في 39 جزءًا + استعلامَي بحث** (واستبعاد 3 روابط 404). أُضيف تنبيه مفردات وصرف عن `das Unternehmen, —` و`der Umsatz → die Umsätze` و`die Nachfrage` و`der Wettbewerb` (في المفرد بالمعنى الاقتصادي) و`die Arbeitsbedingungen` (جمع غالبًا) و`die Fachkraft → die Fachkräfte` و`sich spezialisieren auf + Akk` و`Wert legen auf + Akk` و`werben mit + Dat` مقابل `für + Akk` و`abhängen von + Dat` (`hing ab, hat abgehangen` مقابل الضعيف `hängte ab, hat abgehängt`) و`sich richten an + Akk` مقابل `nach + Dat`، مع 6 ملاحظات مساعدة قبل النصوص والمهمات (إقحام `-r-` قبل الصوائت، غير العاقل مقابل الأشخاص `An wen / Mit wem`، وظيفة `da(r)-` كضمير تمهيدي `Korrelat` مع الفاصلة والفعل في آخر الجملة التابعة، وصيغة `Konjunktiv I` في الاستماع)، وحُدّد سؤالا القراءة 1 والاستماع 4، ووُسّع `T01` إلى 5 بنود و`T07` إلى 4 بنود، وأُضيفت تلميحات الأفعال في `T02`، ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه، وصُحّحت مسارات `content/B2/lesson-09-...assessment.json` في الكتالوج. صارت **P01 نبذة مكتوبة عن شركة أو حملة خيالية من 5 جمل (636 حرفًا، كتابة فقط، حد 150)** و**P02 إحاطة من 5 جمل لزميل استنادًا إلى T05 وT06 وT07 كتابة وجهر (876 حرفًا، حد 180)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 محفوظة؛ `b2-09-v2` و`v100`، وخمسة أصول/12 مقطعًا معلقة بأصوات `Mara` (`voice-02`) و`Jonas` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 50/53 درسًا والبوابة منفصلة؛ تبقى 3 دروس في B2، والتالي CR52/B2.10.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `adb678474c903152a5c309029ef8e222e9af33fc` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Add B2.9 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-09-business-marketing-employment-prepositions.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v100`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_09_review.py`، `data/reviews/b2-09-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.57)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 95 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 34 مرجعًا مقروءًا بالكامل في 39 جزءًا + استعلامَي بحث، و3 روابط 404 مستبعدة. الخيارات والفهارس والروابط و80% وحدا 150/180 ثابتة. النموذجان 636/876 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 50/53 درسًا والبوابة منفصلة؛ 3 دروس متبقية في B2 (`B2.10–B2.12`)، 51 حارسًا، `b2-09-v2` و`v100`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.10.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR51 وارفعه؛ ثم ابدأ **CR52/B2.10** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR51
+
+- **PASS:** البناء والتحقق، و51 حارسًا (بما فيها `tools/test_b2_09_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,249,674 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v100` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-09-v1` محفوظ لكنه لا يمنح إتقان `b2-09-v2` أو يفتح `B2.10`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-10-wishes-probabilities-technology-konjunktiv2-past` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 636/876 حرفًا فوق حدَّي 150/180 حرفًا.
+- **axe والعرض الضيق:** **217 حالة** وصفر مخالفات للقواعد المختارة، مع **157 ظهورًا غير حاسم تشمل 412 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `adb678474c903152a5c309029ef8e222e9af33fc` وتطابق HEAD/origin. PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+---
+
+## إيصال رفع CR50 — 2026-10-09
+
+- **التنفيذ:** `7208fc0a2455783e34c00aec56e10fb5cec1cdc3`؛ **التقرير والفحوص:** `fa7364fec0f8099832d4cc1f1a9f2800cfa16d2d`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR50 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `fa7364f`. اكتمل نشر Preview في Vercel للتنفيذ وللتقرير (`Deployment has completed`، Preview ID `6961360987`، `https://deutschlern-2sv6rlj6p-balinader-2671s-projects.vercel.app`)؛ لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و50 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,230,842` بايت، `b2-08-v2`، `v99`. **213 حالة axe** وصفر مخالفات للقواعد المختارة مع **154 ظهورًا غير حاسم/401 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 97 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و31 مرجعًا مقروءًا بالكامل في 33 جزءًا (مع استبعاد رابط 404 واحد `/rechtschreibung/Zutatenliste`). أُضيف تنبيه مفردات عن `die Zutatenliste, -n` و`der Ballaststoff → die Ballaststoffe` و`der Zuckergehalt, -e` و`der Messwert, -e` و`die Stichprobe, -n` و`der Eintrag → die Einträge` و`abwiegen → abgewogen` و`erfassen → erfasst` و`auswerten → ausgewertet` و`kennzeichnen → gekennzeichnet` و`ausweisen → ausgewiesen` و`eintragen → eingetragen`، وقُيّدت قاعدة `Vorgangspassiv` (`werden + Partizip II`) مقابل `Zustandspassiv` (`sein + Partizip II`) مع مطابقة المبتدأ المرفوع وموقع `Partizip II` في الجملة الرئيسية والتابعة مع 6 ملاحظات مساعدة، ووُسّعت `T03` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. `P01` وصف مكتوب لإجراء فحص منتج غذائي خيالي من 5 جمل (`611` حرفًا)، و`P02` إحاطة من 5 جمل لمتعلم آخر استنادًا إلى `T05` و`T06` مع الجهر (`788` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و650 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.8؛ خمسة أصول/10 مقاطع بأصوات `Lina` (`voice-00`) و`Koch` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-08-review.*` والحارس والفهرس والتوثيق والخطة `2.56` ووثيقتا التسليم محدثة. التغطية **49/53 درسًا والبوابة منفصلة، 4 دروس متبقية في B2**. التالي **CR51/B2.9** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR50 — 2026-10-09:** رُوجع **B2.8 — الغذاء والتغذية وقراءة البيانات: المبني للمجهول** في **97 وحدة و40 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **31 مرجعًا مقروءًا بالكامل في 33 جزءًا** (واستبعاد رابط 404 واحد `/rechtschreibung/Zutatenliste`). أُضيف تنبيه مفردات عن `die Zutatenliste, -n` و`der Ballaststoff → die Ballaststoffe` و`der Zuckergehalt, -e` و`der Messwert, -e` و`die Stichprobe, -n` و`der Eintrag → die Einträge` و`abwiegen → abgewogen` و`erfassen → erfasst` و`auswerten → ausgewertet` و`kennzeichnen → gekennzeichnet` و`ausweisen → ausgewiesen` و`eintragen → eingetragen`، وقُيّدت قاعدة `Vorgangspassiv` (`werden + Partizip II`) مقابل `Zustandspassiv` (`sein + Partizip II`) مع مطابقة المبتدأ المرفوع وموقع `Partizip II` في الجملة الرئيسية والتابعة مع 6 ملاحظات مساعدة، ووُسّعت `T03` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. صارت **P01 وصفًا مكتوبًا لإجراء فحص منتج غذائي خيالي من 5 جمل (611 حرفًا، كتابة فقط، حد 150)** و**P02 إحاطة من 5 جمل لمتعلم آخر استنادًا إلى T05 وT06 كتابة وجهر (788 حرفًا، حد 180)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 محفوظة؛ `b2-08-v2` و`v99`، وخمسة أصول/10 مقاطع معلقة بأصوات `Lina` (`voice-00`) و`Koch` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 49/53 درسًا والبوابة منفصلة؛ تبقى 4 دروس في B2، والتالي CR51/B2.9.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `7208fc0a2455783e34c00aec56e10fb5cec1cdc3` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Add B2.8 granular review report and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-08-food-nutrition-data-passives.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v99`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_08_review.py`، `data/reviews/b2-08-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.56)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 97 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 31 مرجعًا مقروءًا بالكامل في 33 جزءًا، ورابط 404 واحد مستبعد. الخيارات والفهارس والروابط و80% وحدا 150/180 ثابتة. النموذجان 611/788 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 49/53 درسًا والبوابة منفصلة؛ 4 دروس متبقية في B2، 50 حارسًا، `b2-08-v2` و`v99`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.9.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR50 وارفعه؛ ثم ابدأ **CR51/B2.9** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR50
+
+- **PASS:** البناء والتحقق، و50 حارسًا (بما فيها `tools/test_b2_08_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,230,842 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 153.0.8010.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v99` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-08-v1` محفوظ لكنه لا يمنح إتقان `b2-08-v2` أو يفتح `B2.9`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-09-business-marketing-employment-prepositions` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 611/788 حرفًا فوق حدَّي 150/180 حرفًا.
+- **axe والعرض الضيق:** **213 حالة** وصفر مخالفات للقواعد المختارة، مع **154 ظهورًا غير حاسم تشمل 401 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `7208fc0a2455783e34c00aec56e10fb5cec1cdc3` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+---
+
+## إيصال رفع CR49 — 2026-10-09
+
+- **التنفيذ:** `aabfa90e8abe5f3a99b07dfaf881deecbed5907f`؛ **التقرير والفحوص:** `0405b81e63e35b3450e07efc12fafeabcd10d947`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR49 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `0405b81`. النشر في Vercel محكوم بحد النشر اليومي (`Deployment rate limited — retry in 24 hours.` و`deployments=[]`)؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و49 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,215,878` بايت، `b2-07-v3`، `v98`. **209 حالات axe** وصفر مخالفات للقواعد المختارة مع **151 ظهورًا غير حاسم/390 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 98 وحدة/42 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و20 مرجعًا مقروءًا بالكامل (مع استبعاد رابطين 404). صُحح التذكير في الهدف (`ضمير موصول يسبقه حرف جر`) ومفتاح `تمرين 2` بند 1 (`in dem` مع `das Hotel` المحايد بدل `in der`)، وأُضيف تنبيه مفردات عن `die Reiseetappe` و`der Reiseführer` و`der Hafen → die Häfen` و`die Unterkunft → die Unterkünfte` و`übernachten` بلا `ge-` و`vorbeifahren an + Dativ` و`sich beziehen auf + Akkusativ`، مع 10 نقاط مساعدة قبل النصوص والمهمات، ووُسّعت `T03` و`T04` إلى 4 بنود لكل منهما ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. `P01` وصف مكتوب لرحلة خيالية من 5 جمل (`582` حرفًا)، و`P02` إحاطة من 5 جمل لمتعلم آخر استنادًا إلى `T05` و`T06` مع الجهر (`766` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 وتصحيح `Hafen West` محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و647 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.7؛ خمسة أصول/10 مقاطع بأصوات `Salma` (`voice-02`) و`Jonas` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-07-review.*` والحارس والفهرس والتوثيق والخطة `2.55` ووثيقتا التسليم محدثة. التغطية **48/53 درسًا والبوابة منفصلة، 5 دروس متبقية في B2**. التالي **CR50/B2.8** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR49 — 2026-10-09:** رُوجع **B2.7 — السفر والتجارب والوجهات: الجمل الموصولة مع حروف الجر** في **98 وحدة و42 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **20 مرجعًا مقروءًا بالكامل** (واستبعاد رابطين 404). صُحح التذكير في الهدف (`ضمير موصول يسبقه حرف جر`) ومفتاح `تمرين 2` بند 1 (`in dem` مع `das Hotel` المحايد بدل `in der`)، وأُضيف تنبيه مفردات عن `die Reiseetappe` و`der Reiseführer` و`der Hafen → die Häfen` و`die Unterkunft → die Unterkünfte` و`übernachten` بلا `ge-` و`vorbeifahren an + Dativ` و`sich beziehen auf + Akkusativ`، مع 10 نقاط مساعدة قبل النصوص والمهمات، ووُسّعت `T03` و`T04` إلى 4 بنود لكل منهما ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. صارت **P01 وصفًا مكتوبًا لرحلة خيالية من 5 جمل (582 حرفًا، كتابة فقط، حد 150)** و**P02 إحاطة من 5 جمل لمتعلم آخر استنادًا إلى T05 وT06 كتابة وجهر (766 حرفًا، حد 180)**. الخيارات الـ30 والفهارس والروابط و80% وتصحيح `Hafen West` محفوظة؛ `b2-07-v3` و`v98`، وخمسة أصول/10 مقاطع معلقة بأصوات `Salma` (`voice-02`) و`Jonas` (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 48/53 درسًا والبوابة منفصلة؛ تبقى 5 دروس في B2، والتالي CR50/B2.8.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `aabfa90e8abe5f3a99b07dfaf881deecbed5907f` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR49 granular B2.7 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-07-travel-experiences-prepositional-relatives.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v98`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_07_review.py`، `data/reviews/b2-07-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.55)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 98 وحدة/42 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 20 مرجعًا مقروءًا بالكامل، ورابطا 404 مستبعدان. الخيارات والفهارس والروابط و80% وحدا 150/180 ثابتة. النموذجان 582/766 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 48/53 درسًا والبوابة منفصلة؛ 5 دروس متبقية في B2، 49 حارسًا، `b2-07-v3` و`v98`. سجلا v1 وv2 محفوظان لكنهما لا يمنحان إتقان v3 أو يفتحان B2.8.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR49 وارفعه؛ ثم ابدأ **CR50/B2.8** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR49
+
+- **PASS:** البناء والتحقق، و49 حارسًا (بما فيها `tools/test_b2_07_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,215,878 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v98` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجلا `b2-07-v1` و`b2-07-v2` محفوظان لكنهما لا يمنحان إتقان `b2-07-v3` أو يفتحان `B2.8`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-08-food-nutrition-data-passives` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 582/766 حرفًا فوق حدَّي 150/180 حرفًا.
+- **axe والعرض الضيق:** **209 حالات** وصفر مخالفات للقواعد المختارة، مع **151 ظهورًا غير حاسم تشمل 390 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `aabfa90e8abe5f3a99b07dfaf881deecbed5907f` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+---
+
+## إيصال رفع CR48 — 2026-10-09
+
+- **التنفيذ:** `551d6e605908926d8a2cc04bdbfbe639923f4cb2`؛ **التقرير والفحوص:** `9c03343674a6a2fee141cd30796c51b8999f2722`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR48 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `9c03343`. النشر في Vercel محكوم بحد النشر اليومي (`Deployment rate limited — retry in 24 hours.` و`deployments=[]`)؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و48 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,201,939` بايت، `b2-06-v2`، `v97`. **205 حالات axe** وصفر مخالفات للقواعد المختارة مع **148 ظهورًا غير حاسم/380 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 101 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و18 مرجعًا مقروءًا بالكامل (مع استبعاد 4 روابط 404). أُضيف تنبيه مفردات عن `die Unterlagen` (ومفرده `die Unterlage`) و`die Kenntnisse` (ومفرده `die Kenntnis`) و`der Fragebogen → die Fragebogen/Fragebögen` و`einreichen/nachreichen` و`erwerben`، مع 10 نقاط مساعدة قبل النصوص والمهمات، ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. `P01` استفسار رسمي مكتوب من 5 جمل لمكتب إرشاد دراسي خيالي (`606` أحرف)، و`P02` إحاطة من 5 جمل لمتقدم خيالي استنادًا إلى `T05` و`T06` مع الجهر (`782` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و644 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.6؛ خمسة أصول/11 مقطعًا بأصوات `Meryem` (`voice-02`) و`Berater` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-06-review.*` والحارس والفهرس والتوثيق والخطة `2.54` ووثيقتا التسليم محدثة. التغطية **47/53 درسًا والبوابة منفصلة، 6 دروس متبقية في B2**. التالي **CR49/B2.7** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR48 — 2026-10-09:** رُوجع **B2.6 — التعلّم والدراسة والتقديم الأكاديمي: Nomen-Verb-Verbindungen** في **101 وحدة و40 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **18 مرجعًا مقروءًا بالكامل** (واستبعاد 4 روابط 404). أُضيف تنبيه مفردات عن `die Unterlagen` (ومفرده `die Unterlage`) و`die Kenntnisse` (ومفرده `die Kenntnis`) و`der Fragebogen → die Fragebogen/Fragebögen` و`einreichen/nachreichen` و`erwerben`، مع 10 نقاط مساعدة قبل النصوص والمهمات، ونُسّق `T06` في 5 بنود مرقمة مع ترقيم مفتاحه. صارت **P01 استفسارًا رسميًا مكتوبًا من 5 جمل لمكتب إرشاد دراسي خيالي (606 أحرف، كتابة فقط)** و**P02 إحاطة من 5 جمل لمتقدم خيالي استنادًا إلى T05 وT06 كتابة وجهر (782 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة؛ `b2-06-v2` و`v97`، وخمسة أصول/11 مقطعًا معلقة بأصوات `Meryem` (`voice-02`) و`Berater` (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 47/53 درسًا والبوابة منفصلة؛ تبقى 6 دروس في B2، والتالي CR49/B2.7.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `551d6e605908926d8a2cc04bdbfbe639923f4cb2` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR48 granular B2.6 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-06-study-applications-verb-noun-phrases.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v97`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_06_review.py`، `data/reviews/b2-06-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.54)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 101 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 18 مرجعًا مقروءًا بالكامل، و4 روابط 404 مستبعدة. الخيارات والفهارس والروابط و80% وحدا 160/180 ثابتة. النموذجان 606/782 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 47/53 درسًا والبوابة منفصلة؛ 6 دروس متبقية في B2، 48 حارسًا، `b2-06-v2` و`v97`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.7.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR48 وارفعه؛ ثم ابدأ **CR49/B2.7** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR48
+
+- **PASS:** البناء والتحقق، و48 حارسًا (بما فيها `tools/test_b2_06_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,201,939 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` من المحاولة الأولى.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v97` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-06-v1` محفوظ لكنه لا يمنح إتقان `b2-06-v2` أو يفتح `B2.7`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-07-travel-experiences-prepositional-relatives` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 606/782 حرفًا فوق حدَّي 160/180 حرفًا.
+- **axe والعرض الضيق:** **205 حالات** وصفر مخالفات للقواعد المختارة، مع **148 ظهورًا غير حاسم تشمل 380 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `551d6e605908926d8a2cc04bdbfbe639923f4cb2` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+---
+
+## إيصال رفع CR47 — 2026-10-09
+
+- **التنفيذ:** `6faa6e8d58c8cc841827ce8f64488b03052b0933`؛ **التقرير والفحوص:** `e00b35942b02bf1895fd20764b3af5280ed33730`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR47 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `e00b359`. النشر في Vercel محكوم بحد النشر اليومي (`Deployment rate limited — retry in 24 hours.` و`deployments=[]`)؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و47 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,190,639` بايت، `b2-05-v3`، `v96`. **201 حالة axe** وصفر مخالفات للقواعد المختارة مع **145 ظهورًا غير حاسم/370 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 100 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و16 مرجعًا مقروءًا بالكامل (مع استبعاد رابطين 404). أُضيف تنبيه مفردات عن `Ergebnis → des Ergebnisses` و`Messwert → des Messwerts` و`hinweisen auf + Akkusativ` و`belegen/verallgemeinern` بلا `ge-`، وقُيّدت قاعدة `sodass/weshalb` مقابل `deshalb/daher` و`aufgrund + Genitiv` مع 10 نقاط مساعدة، ووُسّعت `T02` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة. `P01` تقييم مكتوب من 5 جمل لاستطلاع صحي خيالي (`591` حرفًا)، و`P02` إحاطة من 5 جمل استنادًا إلى `T05` مع الجهر (`683` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و641 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.5؛ خمسة أصول/10 مقاطع بأصوات `Rima` (`voice-02`) و`Nabil` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-05-review.*` والحارس والفهرس والتوثيق والخطة `2.53` ووثيقتا التسليم محدثة. التغطية **46/53 درسًا والبوابة منفصلة، 7 دروس متبقية في B2**. التالي **CR48/B2.6** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR47 — 2026-10-09:** رُوجع **B2.5 — الصحة واللياقة والمعلومات الطبية: السبب والنتيجة** في **100 وحدة و41 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **16 مرجعًا مقروءًا بالكامل** (واستبعاد رابطين 404). أُضيف تنبيه مفردات عن `Ergebnis → des Ergebnisses` و`Messwert → des Messwerts` و`hinweisen auf + Akkusativ` و`belegen/verallgemeinern` بلا `ge-`، وقُيّدت قاعدة `sodass/weshalb` مقابل `deshalb/daher` و`aufgrund + Genitiv` مع 10 نقاط مساعدة، ووُسّعت `T02` و`T04` و`T07` إلى 4 بنود لكل منها ونُسّق `T06` في 5 بنود مرقمة. صارت **P01 تقييمًا مكتوبًا من 5 جمل لاستطلاع صحي خيالي (591 حرفًا، كتابة فقط)** و**P02 إحاطة من 5 جمل استنادًا إلى T05 كتابة وجهر (683 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة (مع بقاء تصحيح `Q03`)؛ `b2-05-v3` و`v96`، وخمسة أصول/10 مقاطع معلقة بأصوات `Rima` (`voice-02`) و`Nabil` (`voice-03`) دون توليد أو استماع أو اعتماد. **الحملة 46/53 درسًا والبوابة منفصلة؛ تبقى 7 دروس في B2، والتالي CR48/B2.6.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `6faa6e8d58c8cc841827ce8f64488b03052b0933` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR47 granular B2.5 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-05-health-fitness-medical-information.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v96`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_05_review.py`، `data/reviews/b2-05-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.53)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 100 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 16 مرجعًا مقروءًا بالكامل، ورابطا 404 مستبعدان. الخيارات والفهارس والروابط و80% وحدا 160/180 ثابتة. النموذجان 591/683 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 46/53 درسًا والبوابة منفصلة؛ 7 دروس متبقية في B2، 47 حارسًا، `b2-05-v3` و`v96`. سجلا v1/v2 محفوظان لكنهما لا يمنحان إتقان v3 أو يفتحان B2.6.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR47 وارفعه؛ ثم ابدأ **CR48/B2.6** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR47
+
+- **PASS:** البناء والتحقق، و47 حارسًا (بما فيها `tools/test_b2_05_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,190,639 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` (مع إعادة فورية ناجحة لـ`narrow_layout` بعد إغلاق عارض لمثيل متصفح في التشغيل المتسلسل).
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v96` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجلا `b2-05-v1` و`b2-05-v2` محفوظان لكنهما لا يمنحان إتقان `b2-05-v3` أو يفتحان `B2.6`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-06-study-applications-verb-noun-phrases` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 591/683 حرفًا فوق حدَّي 160/180 حرفًا.
+- **axe والعرض الضيق:** **201 حالة** وصفر مخالفات للقواعد المختارة، مع **145 ظهورًا غير حاسم تشمل 370 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `6faa6e8d58c8cc841827ce8f64488b03052b0933` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+مقارنة بالأساس `1690fa5b2bc034376bc33c53263d93f56f9e2db4`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B2.5 وبقي `DL-B2-05-AUD-PHR-01` ثابتًا. حُفظت 641 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Rima` (`voice-02`) و`Nabil` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/10 مقاطع تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR46 / B2.4 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR46 — 2026-10-09
+
+- **التنفيذ:** `a613e56847bc456bd1eb24da5a10ac7899838cb1`؛ **التقرير والفحوص:** `9b7be03c33d8291cdb56877f5726332d03c3a510`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR46 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `9b7be03`. النشر في Vercel محكوم بحد النشر اليومي (`Deployment rate limited — retry in 24 hours.` و`deployments=[]`)؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و46 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,178,855` بايت، `b2-04-v2`، `v95`. **197 حالة axe** وصفر مخالفات للقواعد المختارة مع **141 ظهورًا غير حاسم/354 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 98 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و14 مرجعًا مقروءًا بالكامل (مع استبعاد رابط 404 واحد). أُضيف تنبيه مفردات عن `Nebenkosten` (جمع فقط) و`Barrierefreiheit` (بلا جمع) و`Altbau → Altbauten` و`Wohnviertel` و`sanieren → saniert` بلا `ge-`، وقُيّدت دلالة `Partizip I/II` سياقيًا (بما في ذلك الدلالة الفاعلة التامة لـ`Partizip II` مع أفعال `sein`) مع 10 نقاط مساعدة، ووُضّح مفتاح نهايات `T03`، ووُسّع `T04` إلى 5 بنود و`T07` إلى 4 بنود. `P01` وصف مكتوب من 5 جمل لمبنى أو حيّ خيالي (`575` حرفًا)، و`P02` إحاطة من 5 جمل لزائر مهتم بالحيّ الخيالي استنادًا إلى `T05` مع الجهر (`605` أحرف)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و640 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.4؛ خمسة أصول/11 مقطعًا بأصوات `Architektin` (`voice-02`) و`Samir` (`voice-03` من `A1.9`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-04-review.*` والحارس والفهرس والتوثيق والخطة `2.52` ووثيقتا التسليم محدثة. التغطية **45/53 درسًا والبوابة منفصلة، 8 دروس متبقية في B2**. التالي **CR47/B2.5** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR46 — 2026-10-09:** رُوجع **B2.4 — المدن والمباني والسكن: Partizip I وPartizip II كصفات** في **98 وحدة و41 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **14 مرجعًا مقروءًا بالكامل** (واستبعاد رابط 404 واحد). أُضيف تنبيه مفردات عن `Nebenkosten` (جمع فقط) و`Barrierefreiheit` (بلا جمع) و`Altbau → Altbauten` و`Wohnviertel` و`sanieren → saniert` بلا `ge-`، وقُيّدت دلالة `Partizip I/II` سياقيًا (بما في ذلك الدلالة الفاعلة التامة لـ`Partizip II` مع أفعال `sein`) مع 10 نقاط مساعدة، ووُضّح مفتاح نهايات `T03`، ووُسّع `T04` إلى 5 بنود و`T07` إلى 4 بنود. صارت **P01 وصفًا مكتوبًا من 5 جمل لمبنى أو حيّ خيالي (575 حرفًا، كتابة فقط)** و**P02 إحاطة من 5 جمل لزائر مهتم بالحيّ الخيالي استنادًا إلى T05 كتابة وجهر (605 أحرف)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة؛ `b2-04-v2` و`v95`، وخمسة أصول/11 مقطعًا معلقة بأصوات `Architektin` (`voice-02`) و`Samir` (`voice-03` المحفوظ من `A1.9`) دون توليد أو استماع أو اعتماد. **الحملة 45/53 درسًا والبوابة منفصلة؛ تبقى 8 دروس في B2، والتالي CR47/B2.5.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `a613e56847bc456bd1eb24da5a10ac7899838cb1` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR46 granular B2.4 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-04-cities-housing-participles.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v95`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_04_review.py`، `data/reviews/b2-04-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.52)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 98 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 14 مرجعًا مقروءًا بالكامل، ورابط 404 واحد مستبعد. الخيارات والفهارس والروابط و80% وحدا 160/180 ثابتة. النموذجان 575/605 أحرف؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 45/53 درسًا والبوابة منفصلة؛ 8 دروس متبقية في B2، 46 حارسًا، `b2-04-v2` و`v95`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.5.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR46 وارفعه؛ ثم ابدأ **CR47/B2.5** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR46
+
+- **PASS:** البناء والتحقق، و46 حارسًا (بما فيها `tools/test_b2_04_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,178,855 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` من المحاولة الأولى.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v95` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-04-v1` محفوظ لكنه لا يمنح إتقان `b2-04-v2` أو يفتح `B2.5`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-05-health-fitness-medical-information` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 575/605 أحرف فوق حدَّي 160/180 حرفًا.
+- **axe والعرض الضيق:** **197 حالة** وصفر مخالفات للقواعد المختارة، مع **141 ظهورًا غير حاسم تشمل 354 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `a613e56847bc456bd1eb24da5a10ac7899838cb1` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+مقارنة بالأساس `fb2ca8141dcf5ba4b28039e78161cd5d4d0d77a9`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B2.4 وبقي `DL-B2-04-AUD-PHR-01` ثابتًا. حُفظت 640 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Architektin` (`voice-02`) و`Samir` (`voice-03` من `A1.9`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/11 مقطعًا تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR45 / B2.3 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR45 — 2026-10-09
+
+- **التنفيذ:** `3c5920edf73a028b97018771bd2c60ce23259e8f`؛ **التقرير والفحوص:** `6aa1c11185fdb2bcbed40607e0967bdc2e1a70b7`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR45 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `6aa1c11`. النشر في Vercel محكوم بحد النشر اليومي (`Deployment rate limited — retry in 24 hours.` و`deployments=[]`)؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و45 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,168,500` بايت، `b2-03-v2`، `v94`. **193 حالة axe** وصفر مخالفات للقواعد المختارة مع **138 ظهورًا غير حاسم/344 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 95 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و10 مراجع مقروءة بالكامل (مع استبعاد رابط 404 واحد). قُيّدت قاعدة `Passiv mit Modalverben` بين الجملة الرئيسية والتابعة مع إضافة `nicht müssen` و10 نقاط مساعدة، ووُسّعت `T03` و`T04` و`T07` إلى 4 بنود لكل منها. `P01` خطة مكتوبة من 5 جمل لمتجر أو مقهى خيالي (`515` حرفًا)، و`P02` إحاطة من 5 جمل لفريق مقهى استنادًا إلى `T06` مع الجهر (`566` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و592 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.3؛ خمسة أصول/10 مقاطع بأصوات `Nadia` (`voice-02`) من `B1.4` و`Verkäufer` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-03-review.*` والحارس والفهرس والتوثيق والخطة `2.51` ووثيقتا التسليم محدثة. التغطية **44/53 درسًا والبوابة منفصلة، 9 دروس متبقية في B2**. التالي **CR46/B2.4** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR45 — 2026-10-09:** رُوجع **B2.3 — الاستهلاك والبدائل البيئية: المبني للمجهول مع الأفعال الناقصة** في **95 وحدة و40 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **10 مراجع مقروءة بالكامل** (واستبعاد رابط 404 واحد). أُضيف تنبيه مفردات عن `Verbrauch` و`Wiederverwendung` و`Kreislaufwirtschaft` و`wiederverwenden` مقابل `vermeiden`/`entsorgen`، وقُيّدت قاعدة `Passiv mit Modalverben` بين الجملة الرئيسية والجملة التابعة مع إضافة `nicht müssen` و10 نقاط مساعدة، ووُسّعت `T03` و`T04` و`T07` إلى 4 بنود لكل منها. صارت **P01 خطة مكتوبة من 5 جمل لمتجر أو مقهى خيالي (515 حرفًا، كتابة فقط)** و**P02 إحاطة من 5 جمل لفريق مقهى استنادًا إلى T06 مع خطوة تالية مقترحة كتابة وجهر (566 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 150/180 محفوظة؛ `b2-03-v2` و`v94`، وخمسة أصول/10 مقاطع معلقة بأصوات `Nadia`/`Verkäufer` المحفوظة دون توليد أو استماع أو اعتماد. **الحملة 44/53 درسًا والبوابة منفصلة؛ تبقى 9 دروس في B2، والتالي CR46/B2.4.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `3c5920edf73a028b97018771bd2c60ce23259e8f` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR45 granular B2.3 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-03-consumption-environment-passive-modal.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v94`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_03_review.py`، `data/reviews/b2-03-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.51)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 95 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 10 مراجع مقروءة بالكامل، ورابط 404 واحد مستبعد. الخيارات والفهارس والروابط و80% وحدا 150/180 ثابتة. النموذجان 515/566 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 44/53 درسًا والبوابة منفصلة؛ 9 دروس متبقية في B2، 45 حارسًا، `b2-03-v2` و`v94`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.4.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR45 وارفعه؛ ثم ابدأ **CR46/B2.4** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR45
+
+- **PASS:** البناء والتحقق، و45 حارسًا (بما فيها `tools/test_b2_03_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,168,500 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` من المحاولة الأولى.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v94` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-03-v1` محفوظ لكنه لا يمنح إتقان `b2-03-v2` أو يفتح `B2.4`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-04-cities-housing-participles` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 515/566 حرفًا فوق حدَّي 150/180 حرفًا.
+- **axe والعرض الضيق:** **193 حالة** وصفر مخالفات للقواعد المختارة، مع **138 ظهورًا غير حاسم تشمل 344 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `3c5920edf73a028b97018771bd2c60ce23259e8f` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+## الحفظ
+
+مقارنة بالأساس `7998c7a5f61fcc95b48e250bacb6788acea500f5`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B2.3 وبقي `DL-B2-03-AUD-PHR-01` ثابتًا. حُفظت 592 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Nadia` (`voice-02`) من `B1.4` و`Verkäufer` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/10 مقاطع تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR45 / B2.3 — تحديث تنفيذ المبني للمجهول مع الأفعال الناقصة والدليل المحلي (جارٍ تسجيل التقرير)
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern` (بدون تغيير فرع أو دمج PR#1).
+- **التعديلات المنفذة في B2.3 (`b2-03-v2` و`v94`):**
+  - إضافة تنبيه مفردات تحت `## 1)` (إفراد `Verbrauch` و`Wiederverwendung` في الاستعمال اليومي، وعدم جمع `Kreislaufwirtschaft`، والفعل المنفصل `wiederverwenden` واسم المفعول منه بلا `ge-` مقابل الفعلين غير المنفصلين `vermeiden` و`entsorgen`)، وتقييد قاعدة `Passiv mit Modalverben` في `## 2)` بين الجملة الرئيسية والجملة التابعة، وإضافة `nicht müssen` في الجدول، وإضافة `### مساعدة قبل النصوص والمهمات` (10 نقاط) قبل `## 3)`.
+  - توسيع `T03` إلى 4 بنود (إضافة جملة تابعة بـ`ob … repariert werden können`)، و`T04` إلى 4 بنود (إضافة `können vermieden werden`)، و`T07` إلى 4 بنود (إضافة `können` للإمكانية)؛ مجموع بنود التمارين `40` (`4/4/4/4/5/5/4/10`).
+  - فصل `P01` (`DL-B2-03-P01`: خطة مكتوبة لمتجر أو مقهى خيالي من 5 جمل، `515` حرفًا، كتابة فقط دون جهر، حد `150` حرفًا) عن `P02` (`DL-B2-03-P02`: إحاطة لفريق مقهى استنادًا إلى `T06` من 5 جمل، `566` حرفًا، كتابة + قراءة جهرية ذاتية، حد `180` حرفًا).
+  - الحفاظ الكامل على الخيارات الـ30، وفهارس الإجابات `[1,1,0,0,0,0,1,0,1,1]`، وروابط المهام، وعتبة `80%`، وجميع أصول الصوت الخمسة/10 مقاطع (`Nadia=voice-02` من `B1.4` و`Verkäufer=voice-03`، والسرد `voice-02`، والاستماع `voice-03`) و592 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json`.
+- **الفحوص المنجزة قبل الرفع:** البناء (`2,168,500` بايت)، التحقق، `tools/test_b2_03_review.py --implementation-only`، و44 حارسًا سابقًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس في Chromium (`193` حالة axe بصفر مخالفات للقواعد المختارة و`135` ظهورًا غير حاسم/`334` عقدة، و`126` حالة عرض ضيق).
+- **الخطوة الفورية التالية:** رفع التزام التنفيذ الآن، والاستعلام عن حالته في GitHub، ثم توليد `data/reviews/b2-03-review.json/.md` وتحديث التوثيق الكامل ورفعه مباشرة.
+
+---
+
+# CR44 / B2.2 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR44 — 2026-10-09
+
+- **التنفيذ:** `4d84421c0ab548dd2654e266afa5aa1f5e79df91`؛ **التقرير والفحوص:** `07f5abe81649e3484f4ff4efa1b7153371fae6ae`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR44 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `07f5abe`. النشر في Vercel محكوم بحد النشر اليومي (`Deployment rate limited — retry in 24 hours.` و`deployments=[]`)؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و44 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,158,066` بايت، `b2-02-v2`، `v93`. **189 حالة axe** وصفر مخالفات للقواعد المختارة مع **135 ظهورًا غير حاسم/334 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 100 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و10 مراجع مقروءة بالكامل (مع استبعاد رابط 404 واحد). وُسّع جدول `Konjunktiv I` بإضافة `sollen → solle` و`helfen → helfe` مع 10 نقاط مساعدة، ووُسّع `T02` إلى 4 بنود (بإضافة بديل `Konjunktiv II` في الجمع `hätten`) و`T04` إلى 5 بنود و`T07` إلى 4 بنود (بإضافة جملة `dass` مع الفعل في النهاية `sei`). `P01` ملخص مكتوب من 5 جمل لمحادثة استشارية (`580` حرفًا)، و`P02` إحاطة مهنية من 5 جمل لزميل استنادًا إلى `T06` مع الجهر (`553` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و591 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.2؛ خمسة أصول/11 مقطعًا بأصوات `Nora` (`voice-02`) و`Fadi` (`voice-03`) من `A2.11` والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-02-review.*` والحارس والفهرس والتوثيق والخطة `2.50` ووثيقتا التسليم محدثة. التغطية **43/53 درسًا والبوابة منفصلة، 10 دروس متبقية في B2**. التالي **CR45/B2.3** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR44 — 2026-10-09:** رُوجع **B2.2 — العمل والمسار المهني والتواصل الرسمي: Konjunktiv I** في **100 وحدة و40 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **10 مراجع مقروءة بالكامل** (واستبعاد رابط 404 واحد). أُضيف تنبيه مفردات عن `Werdegang` و`anstreben` مقابل `vereinbaren`/`übernehmen`، ووُسّع جدول `Konjunktiv I` بإضافة `sollen → solle` و`helfen → helfe` مع 10 نقاط مساعدة قبل النصوص، ووُسّع `T02` إلى 4 بنود (بإضافة بديل `Konjunktiv II` في الجمع `hätten`) و`T04` إلى 5 بنود و`T07` إلى 4 بنود (بإضافة جملة `dass` مع الفعل في النهاية `sei`). صارت **P01 ملخصًا مكتوبًا من 5 جمل لمحادثة مع مستشار مهني (580 حرفًا، كتابة فقط)** و**P02 إحاطة مهنية من 5 جمل لزميل استنادًا إلى T06 مع خطوة تالية مقترحة كتابة وجهر (553 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 160/180 محفوظة؛ `b2-02-v2` و`v93`، وخمسة أصول/11 مقطعًا معلقة بأصوات `Nora`/`Fadi` المحفوظة من `A2.11` دون توليد أو استماع أو اعتماد. **الحملة 43/53 درسًا والبوابة منفصلة؛ تبقى 10 دروس في B2، والتالي CR45/B2.3.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `4d84421c0ab548dd2654e266afa5aa1f5e79df91` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR44 granular B2.2 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-02-career-formal-communication-konjunktiv1.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v93`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_02_review.py`، `data/reviews/b2-02-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.50)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 100 وحدة/40 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 10 مراجع مقروءة بالكامل، ورابط 404 واحد مستبعد. الخيارات والفهارس والروابط و80% وحدا 160/180 ثابتة. النموذجان 580/553 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 43/53 درسًا والبوابة منفصلة؛ 10 دروس متبقية في B2، 44 حارسًا، `b2-02-v2` و`v93`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.3.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR44 وارفعه؛ ثم ابدأ **CR45/B2.3** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR44
+
+- **PASS:** البناء والتحقق، و44 حارسًا (بما فيها `tools/test_b2_02_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,158,066 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` من المحاولة الأولى.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v93` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-02-v1` محفوظ لكنه لا يمنح إتقان `b2-02-v2` أو يفتح `B2.3`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-03-consumption-environment-passive-modal` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 580/553 حرفًا فوق حدَّي 160/180 حرفًا.
+- **axe والعرض الضيق:** **189 حالة** وصفر مخالفات للقواعد المختارة، مع **135 ظهورًا غير حاسم تشمل 334 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `4d84421c0ab548dd2654e266afa5aa1f5e79df91` وتطابق HEAD/origin. النشر في Vercel محكوم بحد النشر اليومي (`deployments=[]`)؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+## الحفظ
+
+مقارنة بالأساس `4b704b338df9fdf2c44eefaa7df4ee995c3da713`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B2.2 وبقي `DL-B2-02-AUD-PHR-01` ثابتًا. حُفظت 591 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Nora` (`voice-02`) و`Fadi` (`voice-03`) من `A2.11` والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/11 مقطعًا تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR44 / B2.2 — تحديث تنفيذ الكلام المنقول والدليل المحلي (جارٍ تسجيل التقرير)
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern` (بدون تغيير فرع أو دمج PR#1).
+- **التعديلات المنفذة في B2.2 (`b2-02-v2` و`v93`):**
+  - إضافة تنبيه مفردات تحت `## 1)` (ندرة جمع `Werdegang`، والفعل المنفصل `anstreben` مقابل الفعلين غير المنفصلين `vereinbaren` و`übernehmen`)، وتوسيع جدول `Konjunktiv I` في `## 2)` بإضافة `sollen → solle` و`helfen → helfe`، وإضافة `### مساعدة قبل النصوص والمهمات` (10 نقاط) قبل `## 3)`.
+  - توسيع `T02` إلى 4 بنود (إضافة بديل `Konjunktiv II` في الجمع `hätten`)، و`T04` إلى 5 بنود (إضافة جملة منقولة بـ`hätten`)، و`T07` إلى 4 بنود (إضافة جملة `dass` مع الفعل في النهاية `sei`)؛ مجموع بنود التمارين `40` (`4/4/3/5/5/5/4/10`).
+  - فصل `P01` (`DL-B2-02-P01`: ملخص محادثة استشارية من 5 جمل، `580` حرفًا، كتابة فقط دون جهر، حد `160` حرفًا) عن `P02` (`DL-B2-02-P02`: إحاطة مهنية لزميل استنادًا إلى `T06` من 5 جمل، `553` حرفًا، كتابة + قراءة جهرية ذاتية، حد `180` حرفًا).
+  - الحفاظ الكامل على الخيارات الـ30، وفهارس الإجابات `[1,2,1,1,1,1,0,0,1,0]`، وروابط المهام، وعتبة `80%`، وجميع أصول الصوت الخمسة/11 مقطعًا (`Nora=voice-02` و`Fadi=voice-03` من `A2.11`، والسرد `voice-02`، والاستماع `voice-03`) و591 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json`.
+- **الفحوص المنجزة قبل الرفع:** البناء (`2,158,066` بايت)، التحقق، `tools/test_b2_02_review.py --implementation-only`، و43 حارسًا سابقًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس في Chromium (`189` حالة axe بصفر مخالفات للقواعد المختارة و`135` ظهورًا غير حاسم/`334` عقدة، و`126` حالة عرض ضيق).
+- **الخطوة الفورية التالية:** رفع التزام التنفيذ الآن، والاستعلام عن حالته في GitHub، ثم توليد `data/reviews/b2-02-review.json/.md` وتحديث التوثيق الكامل ورفعه مباشرة.
+
+---
+
+# CR43 / B2.1 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR43 — 2026-10-09
+
+- **التنفيذ:** `db74c45b218cd8c795bdd1edda3201d9b10ccfa8`؛ **التقرير والفحوص:** `0861e14d26acddd36c1a2d62f7d71d25a78714ee`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR43 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `0861e14`. أظهر GitHub فشل نشر التنفيذ `db74c45` والتقرير `0861e14` في Vercel بسبب `Deployment rate limited — retry in 24 hours.` و`deployments=[]`؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و43 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,147,924` بايت، `b2-01-v2`، `v92`. **185 حالة axe** وصفر مخالفات للقواعد المختارة مع **132 ظهورًا غير حاسم/324 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 99 وحدة/39 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و9 مراجع مقروءة بالكامل ومرجع بجزأين 0 و1 من 4 (مع استبعاد رابط 404 واحد). قُيّد `T02.1` بـ`*(رابط من كلمة واحدة)*`، وحُوّلت جمل `T06` إلى الألمانية لتطابق المفاتيح الألمانية مع حذف تكرار `am Rand` و`den` من المفتاح، ووُسّع `T04` إلى 5 بنود و`T07` إلى 4 بنود. `P01` فقرة من 5 جمل كتابة فقط (`430` حرفًا)، و`P02` إحاطة من 5 جمل لزميل استنادًا إلى `T06` مع الجهر (`594` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 160/190 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و590 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B2.1؛ خمسة أصول/12 مقطعًا بأصوات `Hana` (`voice-02`) و`Karim` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b2-01-review.*` والحارس والفهرس والتوثيق والخطة `2.49` ووثيقتا التسليم محدثة. التغطية **42/53 درسًا والبوابة منفصلة، 11 درسًا متبقيًا في B2**. التالي **CR44/B2.2** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR43 — 2026-10-09:** رُوجع **B2.1 — إدارة الوقت والعادات والقراءة: indem وdadurch, dass** (أول دروس B2) في **99 وحدة و39 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **9 مراجع مقروءة بالكامل ومرجع واحد قُرئ منه الجزآن 0 و1 من 4** (واستبعاد رابط 404 واحد). قُيّد البند الأول في `T02` بـ`*(رابط من كلمة واحدة)*` ليتعين `indem`، وحُوّلت جمل `T06` إلى الألمانية لتطابق المفاتيح الألمانية مع حذف تكرار `am Rand` و`den` من المفتاح، ووُسّع `T04` إلى 5 بنود و`T07` إلى 4 بنود. صارت **P01 فقرة مكتوبة من 5 جمل عن تحسين عادة في الوقت أو القراءة (430 حرفًا، كتابة فقط)** و**P02 إحاطة من 5 جمل لزميل استنادًا إلى T06 مع اقتراح لتقليل الإشعارات كتابة وجهر (594 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 160/190 محفوظة؛ `b2-01-v2` و`v92`، وخمسة أصول/12 مقطعًا معلقة بأصوات `Hana`/`Karim` المحفوظة دون توليد أو استماع أو اعتماد. **الحملة 42/53 درسًا والبوابة منفصلة؛ تبقى 11 درسًا في B2، والتالي CR44/B2.2.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `db74c45b218cd8c795bdd1edda3201d9b10ccfa8` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR43 granular B2.1 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B2/lesson-01-time-management-habits-reading.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v92`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b2_01_review.py`، `data/reviews/b2-01-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.49)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 99 وحدة/39 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 9 مراجع كاملة المقروءة ومرجع بجزأين 0 و1 من 4، ورابط 404 واحد مستبعد. الخيارات والفهارس والروابط و80% وحدا 160/190 ثابتة. النموذجان 430/594 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 42/53 درسًا والبوابة منفصلة؛ 11 درسًا متبقيًا في B2، 43 حارسًا، `b2-01-v2` و`v92`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.2.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR43 وارفعه؛ ثم ابدأ **CR44/B2.2** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR43
+
+- **PASS:** البناء والتحقق، و43 حارسًا (بما فيها `tools/test_b2_01_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,147,924 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` (ظهر التذبذب التاريخي لمحدد الملفات في 390px مرة واحدة ثم نجح عند الإعادة دون تعديل `tools/test_forms_keyboard.cjs`).
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v92` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b2-01-v1` محفوظ لكنه لا يمنح إتقان `b2-01-v2` أو يفتح `B2.2`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-02-career-formal-communication-konjunktiv1` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 430/594 حرفًا فوق حدَّي 160/190 حرفًا.
+- **axe والعرض الضيق:** **185 حالة** وصفر مخالفات للقواعد المختارة، مع **132 ظهورًا غير حاسم تشمل 324 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `db74c45b218cd8c795bdd1edda3201d9b10ccfa8` وتطابق HEAD/origin. أظهر الاستعلام الصريح بالـSHA فشل Vercel بسبب `Deployment rate limited — retry in 24 hours.` و`deployments=[]`؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+## الحفظ
+
+مقارنة بالأساس `c1fc4482eb42247b0175339d42f93427e95ee2f7`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B2.1 وبقي `DL-B2-01-AUD-PHR-01` ثابتًا. حُفظت 590 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Hana` (`voice-02`) و`Karim` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/12 مقطعًا تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR43 / B2.1 — تنفيذ مفحوص وجاهز للرفع؛ التقرير وفحوص المتصفح تلي الآن — 2026-10-09
+
+- **الفرع:** `arena/01a1036f-deutschlern`؛ يرفع التنفيذ الآن بعنوان `Align B2.1 method clauses and practical evidence`، ثم يُنشأ تقرير `data/reviews/b2-01-review.json/.md` وتُشغّل فحوص المتصفح الخمسة والحراس الـ43 وتُرفع دفعة التقرير والإيصال. PR#1 غير مدمجة.
+- **الملفات:** `content/B2/lesson-01-time-management-habits-reading.md/.assessment.json`، `data/course.json` (`2,147,924` بايت)، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v92`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، والحارس `tools/test_b2_01_review.py`، وهاتان الوثيقتان.
+- **التصحيحات:** قُيّد `T02.1` بـ`*(رابط من كلمة واحدة)*` ليتعين `indem`، وحُوّلت جمل `T06` إلى الألمانية لتطابق المفاتيح الألمانية مع حذف تكرار `am Rand` و`den` من المفتاح، ووُسّع `T04` إلى 5 بنود و`T07` إلى 4 بنود (إجمالي بنود التمارين 39 بتوزيع `4/3/3/5/5/5/4/10`). صارت `P01` فقرة مكتوبة من 5 جمل عن تحسين عادة (`430` حرفًا، كتابة فقط)، و`P02` إحاطة من 5 جمل لزميل استنادًا إلى `T06` مع اقتراح لتقليل الإشعارات (`594` حرفًا، كتابة وجهر). الخيارات الـ30 والفهارس والروابط و80% وحدا 160/190 حرفًا ثابتة.
+- **الفحوص المنفذة الآن:** البناء والتحقق، وحارس B2.1 بوضع التنفيذ، و42 حارسًا سابقًا، ومجموعات Node الخمس، وفحص صياغة JS و`git diff --check`، وثبات 590 ملفًا محميًا تشمل 474 ملف MP3. أصوات `Hana` (`voice-02`) و`Karim` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/12 مقطعًا محفوظة دون إعادة توليد أو استماع أو اعتماد.
+- **المتبقي في CR43:** توليد `data/reviews/b2-01-review.json/.md` لـ100 وحدة/39 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير و10 مراجع (9 كاملة + مرجع بجزأين 0 و1 من 4)، وتشغيل فحوص المتصفح الخمسة والحارس الكامل، وتحديث الإجماليات إلى 42/53 درسًا، ثم الاستعلام عن SHA والنشر وتسجيل الإيصال قبل بدء CR44/B2.2.
+
+---
+
+# CR42 / B1.12 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR42 — 2026-10-09
+
+- **التنفيذ:** `b32d49fa33411a7cb9f600de81f45ceb9786cc02`؛ **التقرير والفحوص:** `8cc66bfb3028959e8f39cc11a64d531aa5b12544`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR42 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `8cc66bf`. أظهر GitHub فشل نشر التنفيذ `b32d49f` والتقرير `8cc66bf` في Vercel بسبب `Deployment rate limited — retry in 24 hours.` و`deployments=[]`؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و42 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,136,864` بايت، `b1-12-v2`، `v91`. **181 حالة axe** وصفر مخالفات للقواعد المختارة مع **128 ظهورًا غير حاسم/305 ظهورات لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 102 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير، و10 مراجع مقروءة بالكامل (مع استبعاد 4 روابط 404). قُيّدت قاعدة `Futur I` بالجمل الرئيسية البسيطة مع توضيح الجمل التابعة، وأُضيفت قيود معنوية عربية في `T04` لتمييز `Vielleicht` و`wahrscheinlich` و`Vermutlich`، ووُسّع `T07` إلى 6 بنود. `P01` عرض من 5 جمل كتابة فقط (`348` حرفًا)، و`P02` إحاطة من 5 جمل عن مشروع الظل مع الجهر (`325` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 130/145 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و590 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B1.12؛ خمسة أصول/12 مقطعًا بأصوات `Rana` (`voice-02`) و`Timo` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b1-12-review.*` والحارس والفهرس والتوثيق والخطة `2.48` ووثيقتا التسليم محدثة. التغطية **41/53 درسًا والبوابة منفصلة (اكتملت A0–B1)، 12 درسًا متبقيًا في B2**. التالي **CR43/B2.1** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR42 — 2026-10-09:** رُوجع **B1.12 — الابتكار والإبداع والبحث: التوقّعات بـFutur I** (ختام مستوى B1) في **102 وحدة و41 بندًا داخل التمارين و10 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **10 مراجع مقروءة بالكامل** (واستبعاد 4 روابط 404). قُيّدت قاعدة `Futur I` بالجمل الرئيسية البسيطة مع توضيح ترتيب الفعل في السؤال والجملة التابعة (`helfen wird`)، وأُضيفت قيود معنوية عربية في `T04` لتمييز `Vielleicht` و`wahrscheinlich` و`Vermutlich`، ووُسّع `T07` إلى 6 بنود ليضم مقارنة `Präsens` للمستقبل المتفق عليه و`Präsens Passiv` مع ظرف زمني مستقبلي. صارت **P01 عرضًا مكتوبًا من 5 جمل عن مشروع ابتكار خيالي (348 حرفًا، كتابة فقط)** و**P02 إحاطة من 5 جمل عن مشروع الظل في ساحة المدرسة كتابة وجهر (325 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 130/145 محفوظة؛ `b1-12-v2` و`v91`، وخمسة أصول/12 مقطعًا معلقة بأصوات `Rana`/`Timo` المحفوظة دون توليد أو استماع أو اعتماد. **اكتملت مراجعة دروس A0 وA1 وA2 وB1 كلها (41/53 درسًا والبوابة منفصلة)؛ تبقى 12 درسًا في B2، والتالي CR43/B2.1.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `b32d49fa33411a7cb9f600de81f45ceb9786cc02` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR42 granular B1.12 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B1/lesson-12-innovation-research-future.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v91`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b1_12_review.py`، `data/reviews/b1-12-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.48)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 102 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير؛ 10 مراجع كاملة المقروءة، و4 روابط 404 مستبعدة. الخيارات والفهارس والروابط و80% وحدا 130/145 ثابتة. النموذجان 348/325 حرفًا؛ P01 خمس جمل كتابة فقط، وP02 خمس جمل كتابة وجهر، دون شريك أو تسجيل.
+- **الحالة:** 41/53 درسًا والبوابة منفصلة (اكتمل A0–B1 بالكامل)؛ 12 درسًا متبقيًا في B2، 42 حارسًا، `b1-12-v2` و`v91`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B2.1.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR42 وارفعه؛ ثم ابدأ **CR43/B2.1** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR42
+
+- **PASS:** البناء والتحقق، و42 حارسًا (بما فيها `tools/test_b1_12_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,136,864 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout`.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v91` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b1-12-v1` محفوظ لكنه لا يمنح إتقان `b1-12-v2` أو يفتح `B2.1`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b2-01-time-management-habits-reading` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 348/325 حرفًا فوق حدَّي 130/145 حرفًا.
+- **axe والعرض الضيق:** **181 حالة** وصفر مخالفات للقواعد المختارة، مع **128 ظهورًا غير حاسم تشمل 305 ظهورات لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **النشر والـPR:** رُفع التنفيذ `b32d49fa33411a7cb9f600de81f45ceb9786cc02` وتطابق HEAD/origin. أظهر الاستعلام الصريح بالـSHA فشل Vercel بسبب `Deployment rate limited — retry in 24 hours.` و`deployments=[]`؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+## الحفظ
+
+مقارنة بالأساس `04d7980219fad2b944e2299fdc4b0113a0688af0`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B1.12 وبقي `DL-B1-12-AUD-PHR-01` ثابتًا. حُفظت 590 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Rana` (`voice-02`) و`Timo` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/12 مقطعًا تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR42 / B1.12 — تنفيذ مفحوص وجاهز للرفع؛ التقرير وفحوص المتصفح تلي الآن — 2026-10-09
+
+- **الفرع:** `arena/01a1036f-deutschlern`؛ يرفع التنفيذ الآن بعنوان `Align B1.12 future predictions and practical evidence`، ثم يُنشأ تقرير `data/reviews/b1-12-review.json/.md` وتُشغّل فحوص المتصفح الخمسة والحراس الـ42 وتُرفع دفعة التقرير والإيصال. PR#1 غير مدمجة.
+- **الملفات:** `content/B1/lesson-12-innovation-research-future.md/.assessment.json`، `data/course.json` (`2,136,864` بايت)، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v91`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، والحارس `tools/test_b1_12_review.py`، وهاتان الوثيقتان.
+- **التصحيحات:** قُيّدت قاعدة `Futur I` بالجمل الرئيسية البسيطة مع توضيح ترتيب الفعل في السؤال والجملة التابعة (`dass der Prototyp ... helfen wird`)، وأُضيفت قيود معنوية عربية في `T04` لتمييز `Vielleicht` و`wahrscheinlich` و`Vermutlich`، ووُسّع `T07` إلى 6 بنود ليضم مقارنة `Präsens` للمستقبل المتفق عليه و`Präsens Passiv` مع ظرف زمني مستقبلي (إجمالي بنود التمارين 41 بتوزيع `4/5/3/3/5/5/6/10`). صارت `P01` عرضًا مكتوبًا من 5 جمل عن مشروع ابتكار خيالي (`348` حرفًا، كتابة فقط)، و`P02` إحاطة من 5 جمل عن مشروع الظل في ساحة المدرسة مع الجهر (`325` حرفًا). الخيارات الـ30 والفهارس والروابط و80% وحدا 130/145 حرفًا ثابتة.
+- **الفحوص المنفذة الآن:** البناء والتحقق، وحارس B1.12 بوضع التنفيذ، و41 حارسًا سابقًا، ومجموعات Node الخمس، وفحص صياغة JS و`git diff --check`، وثبات 590 ملفًا محميًا تشمل 474 ملف MP3. أصوات `Rana` (`voice-02`) و`Timo` (`voice-03`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/12 مقطعًا محفوظة دون إعادة توليد أو استماع أو اعتماد.
+- **المتبقي في CR42:** توليد `data/reviews/b1-12-review.json/.md` لـ102 وحدة/41 بندًا/10 أجزاء نموذج/30 خيارًا/6 معايير و10 مراجع مقروءة بالكامل، وتشغيل فحوص المتصفح الخمسة والحارس الكامل، وتحديث الإجماليات إلى 41/53 درسًا، ثم الاستعلام عن SHA والنشر وتسجيل الإيصال قبل بدء CR43/B2.1.
+
+---
+
+# CR41 / B1.11 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR41 — 2026-10-09
+
+- **التنفيذ:** `c4cd3c7e1ab78b78f654f18646bb1b2d29eb9074`؛ **التقرير والفحوص:** `66f25c7a44857b909476978b953498564073bb00`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR41 delivery receipt`؛ معرفه في `git log` ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1 `OPEN` و`mergedAt=null` والرأس `66f25c7`. أظهر GitHub فشل نشر التنفيذ `c4cd3c7` والتقرير `66f25c7` في Vercel بسبب `Deployment rate limited — retry in 24 hours.` و`deployments=[]`؛ لا إعادة نشر متكررة ولا شراء ترقية. لم تختبر الواجهة البعيدة أو Production، ولا دمج.
+- **الفحوص PASS:** البناء والتحقق، و41 حارسًا، ومجموعات Node الخمس، ومجموعات المتصفح الخمس؛ `2,126,109` بايت، `b1-11-v2`، `v90`. **177 حالة axe** وصفر مخالفات للقواعد المختارة مع **125 ظهورًا غير حاسم/295 ظهورًا لعقد**، و**126 حالة عرض ضيق**. ليست شهادة WCAG أو CEFR أو أجهزة فعلية.
+- **المراجعة:** 99 وحدة/42 بندًا/9 أجزاء نموذج/30 خيارًا/6 معايير، و10 مراجع مقروءة بالكامل (مع استبعاد رابط 404 واحد). صُحح مفتاح `T06.4` إلى `Gästebuch`، وقُيّد جدول المساعد وموضع `Partizip II`، ووُضّح المجهول غير الشخصي والفرق عن `wurde größer` و`war geöffnet`. `P01` خط زمني من 4 جمل كتابة فقط (`204` حروف)، و`P02` تقديم المعرض من 5 جمل تغطي المعلومات الخمس مع الجهر (`327` حرفًا)؛ الخيارات الـ30 والفهارس والروابط و80% وحدا 100/125 محفوظة.
+- **الحفظ:** 52 درسًا آخر وكل مفاتيح الحزمة الأخرى و590 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` بالبايت ثابتة. أربعة تحديثات `source_line` فقط في سجل B1.11؛ خمسة أصول/10 مقاطع بأصوات `Mira` (`voice-02`) و`Archivarin` (`voice-00`) والسرد (`voice-02`) والاستماع (`voice-03`) تبقى معلقة ومتاحة دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+- **التسليم والتالي:** سجلا `data/reviews/b1-11-review.*` والحارس والفهرس والتوثيق والخطة `2.47` ووثيقتا التسليم محدثة. التغطية **40/53 درسًا والبوابة منفصلة، 13 درسًا متبقيًا**. التالي **CR42/B1.12** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على الأصوات والمقاطع الموجودة.
+
+
+**أحدث مراجعة محتوى CR41 — 2026-10-09:** رُوجع **B1.11 — التاريخ والسياسة: المبني للمجهول في Präteritum** في **99 وحدة و42 بندًا داخل التمارين و9 أجزاء نموذج، و30 خيارًا و6 معايير**، بالاستناد إلى **10 مراجع مقروءة بالكامل** (واستبعاد رابط 404 واحد). صُحح مفتاح T06.4 من `einem Gästebuch` إلى `Gästebuch` لأن `einem` معطاة قبل الفراغ، وقُيّد جدول `wurde/wurden` بالغائب المفرد/الجمع مع بيان التصريف الكامل، وقُيّد موقع `Partizip II` بالجمل الرئيسية البسيطة مع مثال تابع، ووُضّح المجهول غير الشخصي `wurde ... über den Vorschlag abgestimmt` والفرق عن `wurde größer` و`war geöffnet`. أضيفت 3 بنود في T02 وبندان في T07، وصارت **P01 خطًا زمنيًا من 4 جمل كتابة فقط (204 حروف)** و**P02 تقديم المعرض من 5 جمل تشمل المعلومات الخمس كلها كتابة وجهر (327 حرفًا)**. الخيارات الـ30 والفهارس والروابط و80% وحدا 100/125 محفوظة؛ `b1-11-v2` و`v90`، وخمسة أصول/10 مقاطع معلقة بأصوات `Mira`/`Archivarin` المحفوظة دون توليد أو استماع أو اعتماد. **الحملة 40/53 درسًا والبوابة منفصلة؛ تبقى 13 درسًا، والتالي CR42/B1.12.** الفحوص لا تعني دمج PR#1 أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `c4cd3c7e1ab78b78f654f18646bb1b2d29eb9074` مرفوع ومتطابق HEAD/origin. يرفع التقرير الآن بعنوان `Record CR41 granular B1.11 review and cumulative checks` ثم يُستعلم عن SHA والنشر ويُسجل الإيصال. لا دمج PR#1 أو تغيير فرع.
+- **الملفات:** `content/B1/lesson-11-history-politics-passive-past.*`، `data/course.json`، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v90`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، `tools/test_b1_11_review.py`، `data/reviews/b1-11-review.json/.md`، `data/reviews/README.md`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md` (2.47)، `data/browser-qa-report.md`، وهاتان الوثيقتان.
+- **المراجعة:** 99 وحدة/42 بندًا/9 أجزاء نموذج/30 خيارًا/6 معايير؛ 10 مراجع كاملة المقروءة، ورابط 404 واحد مستبعد. الخيارات والفهارس والروابط و80% وحدا 100/125 ثابتة. النموذجان 204/327 حرفًا؛ P01 أربع جمل خط زمني كتابة فقط، وP02 خمس جمل تغطي معلومات المعرض الخمس مع الجهر، دون شريك أو تسجيل.
+- **الحالة:** 40/53 درسًا والبوابة منفصلة؛ 13 درسًا متبقيًا، 41 حارسًا، `b1-11-v2` و`v90`. سجل v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B1.12.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عن SHA وسجل إيصال CR41 وارفعه؛ ثم ابدأ **CR42/B1.12** فرديًا وتراكميًا مع المصادر دون انتظار مراجع بشري ومع الحفاظ على جميع الأصوات والمقاطع الموجودة.
+
+## الفحوص التراكمية — CR41
+
+- **PASS:** البناء والتحقق، و41 حارسًا (بما فيها `tools/test_b1_11_review.py`)، وخمس مجموعات Node (`progression` و`service_worker` و`daily_plan` و`session_persistence` و`study_time`)، وفحص صياغة JS و`git diff --check`. حجم الحزمة **2,126,109 بايت**؛ 53 درسًا، 428 عنوان تمرين، 61 قسم حوار، 754 مفردة، 530 سؤال درس + 10 بوابة، 109 مهمات أداء، 1080 صف catalog، 217 أصلًا/474 مقطعًا (137 `ready` و80 معلقة).
+- **المتصفح:** Chromium 143.0.7499.0، Playwright 1.58.2، axe-core 4.11.0؛ نجحت `browser` و`accessibility_update` و`accessibility_audit` و`forms_keyboard` و`narrow_layout` بعد تثبيت بيئة المتصفح المؤقتة في الحاوية.
+- **دون اتصال والتحديث:** تحديث Service Worker من fixture `v42` إلى `v90` دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت غير المخزن وإعادة تخزينه عند الاتصال.
+- **الدليل والتدرج:** سجل `b1-11-v1` محفوظ لكنه لا يمنح إتقان `b1-11-v2` أو يفتح `B1.12`؛ المسودة القديمة تُرفض، والدرجة والدليل الحاليان يفتحان `b1-12-innovation-research-future` وحذف الدليل يغلقه. `P01` كتابة فقط دون مربع جهر، و`P02` كتابة وجهر، والنموذجان 204/327 حرفًا فوق حدَّي 100/125 حرفًا.
+- **axe والعرض الضيق:** **177 حالة** وصفر مخالفات للقواعد المختارة، مع **125 ظهورًا غير حاسم تشمل 295 ظهورًا لعقد**؛ و**126 حالة عرض ضيق** (63 في `320×900` و63 في `568×320`). ليست شهادة WCAG أو اختبار أجهزة حقيقية.
+- **التعثرات التي حُلّت:** حُدّثت عبارتان قديمتان في `tools/test_progression.cjs` لتطابق كون P01 كتابة فقط وP02 كتابة وجهر، وثُبّتت حزم Playwright/Chromium المؤقتة بعد غيابها في الحاوية الجديدة، ثم نجحت الفحوص كلها.
+- **النشر والـPR:** رُفع التنفيذ `c4cd3c7e1ab78b78f654f18646bb1b2d29eb9074` وتطابق HEAD/origin. أظهر الاستعلام الصريح بالـSHA فشل Vercel بسبب `Deployment rate limited — retry in 24 hours.` و`deployments=[]`؛ PR#1 ما تزال `OPEN` و`mergedAt=null`. لا إعادة نشر متكررة ولا شراء ترقية.
+
+## الحفظ
+
+مقارنة بالأساس `96cdc1e98432483f45d44f914720a168e8145308`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة تمامًا**؛ لم يتغير في سجل الصوت سوى `source_line` لأربعة أصول في B1.11 وبقي `DL-B1-11-AUD-PHR-01` ثابتًا. حُفظت 590 ملفًا محميًا تشمل 474 ملف MP3 و`data/audio-playlists.json` مطابقة بالبايت. أصوات `Mira` (`voice-02`) و`Archivarin` (`voice-00`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/10 مقاطع تبقى `generated_pending_acoustic_review` و`offer` ومتاحة في أقسامها دون معاينة جديدة أو توليد أو استماع أو اعتماد.
+
+---
+
+# CR41 / B1.11 — تنفيذ مفحوص وجاهز للرفع؛ التقرير وفحوص المتصفح تلي الآن — 2026-10-09
+
+- **الفرع:** `arena/01a1036f-deutschlern`؛ يرفع التنفيذ الآن بعنوان `Align B1.11 past passive keys and practical evidence`، ثم يُنشأ تقرير `data/reviews/b1-11-review.json/.md` وتُشغّل فحوص المتصفح الخمسة والحراس الـ41 وتُرفع دفعة التقرير والإيصال. PR#1 غير مدمجة.
+- **الملفات:** `content/B1/lesson-11-history-politics-passive-past.md/.assessment.json`، `data/course.json` (2,126,109 بايت)، `data/production-task-catalog.csv`، `data/audio-asset-register.csv`، `service-worker.js` واختباراه (`v90`)، `tools/test_progression.cjs`، `tools/test_accessibility_audit.cjs`، والحارس `tools/test_b1_11_review.py`، وهاتان الوثيقتان.
+- **التصحيحات:** مفتاح T06.4 صار `Gästebuch` وحدها لأن `einem` معطاة؛ قُيّد جدول المساعد بالغائب المفرد/الجمع مع إيضاح التصريف الكامل، وقُيّد موضع Partizip II بالجمل الرئيسية المدروسة مع مثال تابع، وشُرح المجهول غير الشخصي `wurde ... über den Vorschlag abgestimmt` والتمييز عن `wurde größer` و`war geöffnet`. أضيفت 3 بنود في T02 وبندان في T07، وصار مجموع بنود التمارين 42 بتوزيع 4/7/3/3/5/5/6/9. P01 خط زمني من 4 جمل كتابة فقط (204 حروف)، وP02 تقديم المعرض من 5 جمل تشمل المعلومات الخمس كلها مع الجهر (327 حرفًا). الخيارات الـ30 والفهارس والروابط و80% وحدا 100/125 حرفًا ثابتة.
+- **الفحوص المنفذة الآن:** البناء والتحقق، وحارس B1.11 بوضع التنفيذ، و40 حارسًا سابقًا، ومجموعات Node الخمس، وفحص صياغة JS و`git diff --check`، وثبات 590 ملفًا محميًا تشمل 474 MP3. الأصوات `Mira` (`voice-02`) و`Archivarin` (`voice-00`) والسرد (`voice-02`) والاستماع (`voice-03`) وخمسة أصول/10 مقاطع محفوظة دون إعادة توليد أو استماع أو اعتماد.
+- **المتبقي في CR41:** توليد `data/reviews/b1-11-review.json/.md` لـ103 وحدات/42 بندًا/9 أجزاء نموذج/30 خيارًا/6 معايير و10 مراجع كاملة المقروءة، وتشغيل فحوص المتصفح الخمسة والحارس الكامل، وتحديث الإجماليات إلى 40/53 درسًا، ثم الاستعلام عن SHA والنشر وتسجيل الإيصال قبل بدء CR42/B1.12.
+
+---
+
+# CR40 / B1.10 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR40 — 2026-10-09
+
+- **التنفيذ:** `3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829`؛ **التقرير والفحوص:** `2b8f477e5ceec193907ac9d3a8b3594418d3b76a`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. هذا الإيصال يُرفع فور فحصه بعنوان `Record CR40 delivery receipt`؛ معرفه فيgit log ولم يُستعلم عن نشره.
+- **آخر استعلام بالـSHA الصريح:** PR#1OPEN وmergedAt=null والرأس2b8f477. نشر التنفيذ3e75b52 نجح فيPreview رقم6948925300: https://deutschlern-jd04d8jvu-balinader-2671s-projects.vercel.app . لكن نشر التقرير2b8f477 **فشل** بسبب `Deployment rate limited — retry in 24 hours.` وdeployments=[]. لا ننسب نجاح التنفيذ إلى التقرير أو الإيصال، ولا إعادة نشر متكررة أو شراء ترقية. الواجهة البعيدة وProduction لم تختبرا؛ لا دمج.
+- **الفحوص PASS:** البناء والتحقق و40 حارسًا ومجموعاتNode الخمس ومجموعات المتصفح الخمس؛2,116,453 بايت،`b1-10-v2`،`v89`. 173 حالةaxe وصفر مخالفات للقواعد المختارة مع122 ظهورًا غير حاسم/285 ظهورًا لعقد، و126 حالة عرض ضيق. ليست شهادةWCAG أو لغة، ولا إصلاحًا لتذبذب اختيار الملف التاريخي.
+- **المراجعة:**100 وحدة/36 بندًا/13 جزء نموذج/30 خيارًا/6 معايير،9 صفحات مرجعية كاملة وجزآن0و4 من5 لمرجع عاشر،وأربع صفحات غير موجودة مستبعدة. صُحح مقصد سؤالَي الفهم،وتمييز التابعة والرئيسية،وشرح الفاعل والمفعول والترقيم. P01 رسالة بخمس جمل متن كتابة فقط،P02 أربعة أسطر لجهة المتصل كتابة وجهر؛ النموذجان401/272 حرفًا،وحدا120/125 و80% والخيارات والفهارس والروابط محفوظة.
+- **الحفظ:**52 درسًا آخر وكل مفاتيح الحزمة الأخرى و590 ملفًا محميًا تشمل474MP3 وplaylist بالبايت ثابتة. أربعة تغييراتsource_line فقط في سجلB1.10؛ خمسة أصول/12 مقطعًا بأصواتLeila/السرد02 وRedakteur/الاستماع03 تظل معلقة ومتاحة،دون توليد أو استماع أو اعتماد أو اختيار صوت جديد.
+- **التسليم والتالي:** سجلا `data/reviews/b1-10-review.*` والحارس والفهرس والتوثيق والخطة2.46 ووثيقتا التسليم محدثة. التغطية **39/53 درسًا والبوابة منفصلة،14 متبقية**. التالي **CR41/B1.11** فرديًا وتراكميًا مع المصادر،دون مراجع بشري شرطًا. احتفظ باختيار `existing`: Archivarin00 وMira02 ومقاطع الدرس العشرة؛لا إعادة توليد أو معاينة جديدة. كل دفعة مفحوصة ترفع فورًا،ولا تغيير فرع أو دمجPR#1 أو إتلافGit؛المحتوى والتقييم والتطبيق قبلالصوت.
+
+
+**أحدث مراجعة محتوى CR40 — 2026-10-09:** رُوجع **B1.10 — الإعلام والأخبار والتواصل الرسمي: الأسئلة غير المباشرة** في **100 وحدة و36 بندًا داخل التمارين و13 جزء نموذج، و30 خيارًا و6 معايير**. المراجع **9 صفحات كاملة وجزآن0و4 من5 لمرجع عاشر**؛ أربع صفحات غير موجودة مستبعدة. صُحح سؤالا فهم لا توفر النصوص جوابهما، ووُضح احتواء سؤال تابع داخل رئيسية استفهامية، والفاعل والمفعول وwer، والفارق بين المبني للمجهول وFutur وترقيم الرسالة وتفريغ الصوت. **P01 رسالة بخمس جمل متن كتابة فقط؛ P02 أربعة أسطر لجهة المتصل كتابة وجهر**، بمصدر ومعايير ونموذجين متطابقة. الخيارات والفهارس والروابط و80% وحدا120/125 محفوظة. `b1-10-v2` و`v89`؛ خمسة أصول/12 مقطعًا معلقة ومتاحة دون توليد أو استماع أو اعتماد جديد. **الحملة39/53 والبوابة منفصلة؛ تبقى14، والتالي CR41/B1.11.** هذه مراجعة وفحوص لا دمج أو اكتمال للمشروع أو شهادة مستوى.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ التنفيذ `3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829` مرفوع ومتطابقHEAD/origin. التقرير يرفع فور فحصه بعنوان `Record CR40 granular B1.10 review and cumulative checks`؛SHA فيgit log، ثم إيصال صريح. لا دمجPR#1 أو تغيير فرع.
+- **الملفات:** مصدر وتقييم `content/B1/lesson-10-media-news-formal-communication.*`،الحزمة وcatalog وسجل الصوت وSW واختباراه وprogression/axe والحارس `tools/test_b1_10_review.py`. السجلان `data/reviews/b1-10-review.json/.md` وفهرس المراجعات وREADME وPROGRESS والخطة2.46 وتقرير المتصفح ووثيقتا التسليم محدثة.
+- **المراجعة:**100 وحدة/36 بندًا/13 جزء نموذج/30 خيارًا/6 معايير؛9 صفحات كاملة وجزآن0و4 من5 لمرجع عاشر،4 صفحات404 مستبعدة. الخيارات والفهارس والروابط و80% وحدا120/125 ثابتة. النماذج401/272 حرفًا؛P01 خمس جمل متن مع إطار رسالة كتابة فقط،P02 أربعة أسطر جهة المتصل كتابة وجهر، دون شريك أو تسجيل أو إرسال فعلي.
+- **الحالة:**39/53 درسًا والبوابة منفصلة؛14 متبقية،40 حارسًا،`b1-10-v2` و`v89`. سجلv1 محفوظ لكنه لا يمنح إتقانv2 أو يفتحB1.11. لا تصحيح آلي للغة أو النطق أو عدد الجمل.
+- **التالي مباشرة:** بعد دفع التقرير استعلم عن SHA وسجل الإيصال وارفعه؛ثم CR41/B1.11 نصًا وحوارًا وبندًا وخيارًا ومعيارًا،مع المصادر ومراجعة التدرج والواجهة والمنهج. لا انتظار مراجع بشري. احتفظ باختيار المستخدم `existing`: Archivarin00 وMira02،وعشرة مقاطع في أقسامها،دون معاينة جديدة أو إعادةصوت.
+- **قرارات دائمة:** ارفع كل دفعة مفحوصة فورًا مع هاتين الوثيقتين؛المحتوى والتقييم والتطبيق قبل الصوت؛لا إتلافGit أو تغيير فرع أو دمج،ولا إعادةMP3 أو إخفاء أو تغيير روابط أو ادعاء اعتماد. السقف10طلباتصوتية في الرد عند اللزوم،ولا طلب صوتي فيCR40. A2.7Q08→T05 وA2.9 محفوظان،وتاريخ B2.6 لا ينقل إلى B2.7.
+
+## الفحوص التراكمية — CR40
+
+- **PASS:** build/verify و40 حارسًا وخمس مجموعاتNode: progression/service_worker/daily_plan/session_persistence/study_time وسلامةJS وgit diff. الحزمة **2,116,453 بايت**؛53 درسًا،428 عنوان تمرين،61 قسم حوار،754 مفردة،530 سؤال درس+10 بوابة،109 مهمات،1080 صفcatalog،217 أصلًا/474 مقطعًا،137ready و80 معلقة.
+- **المتصفح:** Chromium143.0.7499.0،Playwright1.58.2،axe4.11.0؛ نجحت browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout. فحص1440×900 و390×844 شمل RTL والقفل والتفريغات والتشغيل الآلي الصامت بسرعتي1 و0.8 والتوقف عند الانتقال دون أخطاء صفحة في الاختبار العام.
+- **دون اتصال والتحديث:** إعادة التحميل والتنقل والصوت الكامل ونطاقات البايت واللاحقة و416/503، وتحديث fixture v42 إلىv89 دون إعادة تحميل قسرية؛ حفظ التقدم والإجابات وعزل المخازن وإعادة تخزين الصوت عند الاتصال. ليس اختبارًا لكل ترقية تاريخية أو ضمان بقاء كل ملف مخزنًا.
+- **الدليل والتدرج:** سجلB1.10-v1 محفوظ لكنه لا يمنح إتقانv2 أو يفتحB1.11؛ المسودة القديمة مرفوضة. الدرجة والدليل الحاليان يفتحان التالي وحذف الدليل يغلقه. P01 دون مربع جهر،P02 تتطلبه، وثلاثة إقرارات وحدا120/125. النموذجان401/272 حرفًا؛ لا تصحيح آلي لعدد الجمل أو اللغة أو النطق.
+- **axe:**173 حالة وصفر مخالفات للقواعد المختارة؛ **122 ظهورًا غير حاسم تشمل285 ظهورًا لعقد**. أضيف مصدرB1.10 ومهمتاه بالعرضين؛ ليست شهادةWCAG ولا مخالفات مؤكدة ولا مراجع بشري شرطًا للاستمرار.
+- **العرض الضيق:**126 حالة،63 لكل من320×900 و568×320، تشمل53 درسًا بتفريغاتها وجداولها والقائمة. ليست هواتف فعلية أو تكبيرًا أصليًا.
+- **تعثر حُلّ وحدود ثابتة:** فشل fixture التدرج الجديد أولًا لتهريب الأسطر داخلVM؛ استبدلت الأسطر بمسافات في بيانات الاختبار بنفس عدد الحروف فقط، مع بقاء الرسالة متعددة الأسطر في المصدر. نجحت مجموعاتNode بعده. استعيدت تبعيات المتصفح والمكتبات، ثم نجحت مجموعاته الخمس من أول تنفيذ كامل. لم يعدل اختبارforms_keyboard؛ نجاحه لا يصلح تذبذب اختيار الملف الأصلي التاريخي.
+- **النشر:** رُفع التنفيذ **3e75b52b339e6ffcdbea9da4d3eaa7606c3fe829** وتطابقHEAD/origin. نجحPreview رقم6948925300 حسبSHA صريح وAPI: https://deutschlern-jd04d8jvu-balinader-2671s-projects.vercel.app . PR#1OPEN وmergedAt=null؛ لم تختبر الواجهة البعيدة أوProduction. لا ينسب هذا النجاح إلى أيcommit لاحق.
+
+## الحفظ
+
+مقارنة بالأساس `96d70c9a65892351f08a56d9b8e07473c5d1a804`: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صفcatalog و212 صف سجل صوت ثابتة**؛ أربعة تحديثاتsource_line فقط في سجلB1.10 وPHR ثابت. حُفظت590 ملفًا تشمل474MP3 وplaylist مطابقة بالبايت. Leila/السرد02 وRedakteur/الاستماع03 اختيارات المستخدم السابقة؛ خمسة أصول/12 مقطعًا تبقى generated_pending_acoustic_review وoffer ومتاحة في مواضعها، بلا معاينة أصوات جديدة أو توليد أو استماع أو اعتماد. ترقيم تفريغ الرسالة الصوتي مختلف عن المكتوب كما كان أصلًا، لا تغيير لكلماته أو ملفه.
+
+---
+
+# CR40 / B1.10 — دفعة تنفيذ مفحوصة، المراجعة التراكمية قيد التوثيق
+
+- **التاريخ2026-10-09؛ الفرع الوحيد:** `arena/01a1036f-deutschlern`، الأساس `96d70c9a65892351f08a56d9b8e07473c5d1a804`. تُرفع هذه الدفعة بعد الفحص بعنوان `Align B1.10 indirect questions and practical evidence`؛ SHA فيgit log. لا دمجPR#1. استعيدت بياناتGit بأمان بعد مقارنة740 ملفًا بالبعيد بلا فروق أو ملفات إضافية، دون حذف أو استبدال أي محتوى محلي.
+- **الملفات:** مصدر وتقييم `content/B1/lesson-10-media-news-formal-communication.*` والحزمة وcatalog وسجل الصوت،SW واختباراه،progression/axe والحارس الجديد `tools/test_b1_10_review.py` ووثيقتا التسليم. `b1-10-v2`،`v89`،2,116,453 بايت.
+- **التصحيح:** سؤال القراءة2 والاستماع4 يسألان عن المطلوب لا جواب غير مذكور؛ تصنيف السؤال المضمن مقابل الرئيسية،وتقييد شرحQ04 بالفاعل والمفعول،وحاضرT03 وwer الفاعل فيT04.4. فُصل المبني للمجهول عنFutur وترقيم الرسالة المكتوبة عن علامات تفريغها الصوتي؛ النص الألماني المسجل ثابت.
+- **الدليل:** P01 رسالة كتابة فقط بعنوان وتحية وخمس جمل متن وختام واسم؛P02 أربعة أسطر لجهة المتصل كتابة وجهر. المصدر والمعايير والنموذجان401/272 حرفًا متطابقة؛حدا120/125 و80% والخيارات30 والفهارس والروابط ثابتة. لا شريك أو إرسال أو تسجيل أو تصحيح آلي للغة والنطق.
+- **PASS:** build/verify و39 حارسًا سابقًا وحارسB1.10 بوضعimplementation-only،وخمس مجموعاتNode وسلامةJS وdiff. فشل أولfixture جديد بسبب تهريب أسطر داخلقالبVM؛ استعملت نسخة بمسافات للاختبار معحفظالنموذج متعددالأسطر فيالمصدر،ثم نجح. المتصفح والتقرير الفردي الكامل لم ينفذا لهذه الدفعة بعد.
+- **الصوت:** خمسة أصول/12مقطعًا،Leila/السرد02 وRedakteur/الاستماع03؛الاختيار السابق محفوظ،ولا معاينة جديدة أو توليد أو استماع أو اعتماد. كل التسجيلات متاحة ومعلقة `generated_pending_acoustic_review`،والروابط والتفريغات ثابتة.
+- **الخطوة التالية مباشرة:** تقريرB1.10 الفردي معمصادره ونطاق قراءتها،والحفظ ضدالأساس وفحوص40حارسًا والمتصفح،ثم تحديثالحملةمن38/53+البوابة إلى39/53+البوابة/14متبقيًا/الخطة2.46 بعدالفحص. ادفع التقرير والاستعلام عنSHA والإيصال فورًا،ثمCR41/B1.11 دونانتظارمراجع بشري. الأصواتB1.11 Archivarin00/Mira02 محفوظة.
+- **دائم:** كل دفعة مفحوصة ترفع فورًا؛المحتوى والتقييم والتطبيق قبلالصوت؛لا فرعآخر أو دمجأو إتلافGit،لا إعادةMP3 أو إخفاء أو اعتماددون دليل. آخرنشرمعروفللتقريرCR39فشل لحدVercelاليومي،لا ننسبه لهذاالتنفيذ ولا نكررالنشر أو نشتريترقية. المتبقي15درسًا إلىأنيفحصسجلCR40.
+
+---
+
+# CR39 / B1.9 — مراجعة نصية وفحوص مفحوصة؛ غير مدمجة
+
+## إيصال رفع CR39 — 2026-10-08
+
+- **التنفيذ:** `fa03a2a87698306e14538461f67250d346327c74`، **ملحق الاتساق:** `ed115027a205d2eb57e801841d85d163b5d3e16f`، **التقرير والفحوص:** `5809deb63b766983a9ca5045a4c8ee68c3245353`. رُفعت الثلاثة إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. هذا الإيصال يرفع فور فحصه بعنوان `Record CR39 delivery receipt`؛ معرفه فيgit log، ولم يُستعلم عن نشره.
+- **الاستعلام بالـSHA الصريح للتقرير:** PR#1OPEN،mergedAt=null،head=5809deb. نشر التقرير **فشل** بسبب `Deployment rate limited — retry in 24 hours.`،deployments=[]. فشل ملحق التنفيذed11502 للسبب نفسه؛ لا إعادة نشر متكررة أو ترقية مدفوعة. الرفع ليس نشرًا أو دمجًا، والواجهة البعيدة وProduction لم تختبرا.
+- **PASS:** البناء والتحقق و39 حارسًا وخمس مجموعاتNode ومجموعات المتصفح الخمس؛ الحزمة2,106,695 بايت،`b1-09-v2`،`v88`. 169 حالةaxe وصفر مخالفات للقواعد المختارة، مع119 ظهورًا غير حاسم/275 ظهورًا لعقد؛126 حالة عرض ضيق. نجاحforms_keyboard لا يصلح تذبذبه التاريخي، وهذه ليست شهادةWCAG أو مراجعة سمعية.
+- **المراجعة والحفظ:**110 وحدات/42 بندًا/30 خيارًا/6 معايير،11 صفحة مرجعية كاملة وصفحة404 مستبعدة. P01 خمس جمل كتابة فقط،P02 ست جمل كتابة وجهر؛ النموذجان284/338 حرفًا وحدا130/145. كل الخيارات والفهارس والروابط محفوظة، وكذلك52 درسًا آخر و590 ملفًا محميًا تشمل474MP3 وplaylist بالبايت. أربعة تعديلاتsource_line فقط في سجل B1.9؛ الأصوات Mina02/Karim03 والنماذج/المفردات/القراءة02 والاستماع03. خمسة أصول/10 مقاطع ما زالت معلقة ومتاحة، بلا استماع أو اعتماد أو توليد جديد.
+- **الملفات والقرار التالي:** سجلا `data/reviews/b1-09-review.*`،الحارس والتوثيق والخطة2.45 ووثيقتا التسليم محدثة. التغطية **38/53 والبوابة منفصلة،15 متبقية**. التالي **CR40/B1.10** فرديًا وتراكميًا مع المصادر؛ لا انتظار مراجع بشري، ولا دمجPR#1 أو تغيير فرع أو إعادة الصوت. أصوات B1.10 المختارة Leila/السرد02 وRedakteur03 محفوظة؛ لا طلب اختيار جديد. كل دفعة مفحوصة ترفع فورًا، والمحتوى والتقييم والتطبيق قبل الصوت.
+
+
+**أحدث مراجعة محتوى CR39 — 2026-10-08:** رُوجع **B1.9 — السفر والنقل والبيئة: bevor/nachdem/während** في **110 وحدات و42 بندًا داخل التمارين، و30 خيارًا و6 معايير**، بمساعدة **11 صفحة مرجعية كاملة**. قُيد ترتيب T02 وأزمنة T03/T04/T07 وQ04/Q06، وصار T06 فراغات ألمانية بمفتاح مطابق دون تكرار ist؛ أزيل افتراض جنس الراوي. فُصلت während + Genitiv عن التابعة، ورحلة المواصلة عن التبديل والتأخير والإلغاء، ورغبة مراعاة المناخ عن برهان بيئي. **P01 خمس جمل كتابة فقط؛ P02 ست جمل كتابة وجهر**، بمصدر ومعايير ونموذجين متطابقة. الخيارات والفهارس والروابط و80% وحدا130/145 محفوظة. `b1-09-v2` و`v88`؛ خمسة أصول/10 مقاطع معلقة ثابتة ومتاحة دون استماع أو توليد أو اعتماد. **الحملة38/53 درسًا والبوابة منفصلة؛ تبقى15، والتالي CR40/B1.10.** مراجعة وفحوص مرفوعة على الفرع، لا دمج أو شهادة مستوى أو اكتمال المشروع.
+
+## التسليم والمتابعة
+
+- **الفرع الوحيد:** `arena/01a1036f-deutschlern`. التنفيذ الأول `fa03a2a87698306e14538461f67250d346327c74` ثم ملحق الاتساق `ed115027a205d2eb57e801841d85d163b5d3e16f` رُفعا وتطابق HEAD/origin. مجموعة التقرير والفحوص ترفع فور فحصها بعنوان `Record CR39 granular B1.9 review and cumulative checks`؛ SHA فيgit log ثم إيصال صريح. لا فرع آخر ولا دمجPR#1.
+- **أحدث استعلام:** PR#1OPEN وmergedAt=null والرأسed11502. نشره فشل: `Deployment rate limited — retry in 24 hours.`،deployments=[]. لا إعادة نشر متكررة أو شراء ترقية، ولا تنسب نجاحPreview أقدم لهذا الرأس. لم تختبر الواجهة البعيدة أوProduction.
+- **الملفات:** مصدر وتقييم `content/B1/lesson-09-travel-transport-environment.*` والحزمة وcatalog وسجل الصوت، SW واختباراه، progression/axe، والحارس `tools/test_b1_09_review.py`. سجلا المراجعة `data/reviews/b1-09-review.json/.md`، وفهرس المراجعات وREADME وPROGRESS والخطة2.45 وتقرير المتصفح ووثيقتا التسليم هذه. التقرير يضم110 وحدات/42 بندًا/30 خيارًا/6 معايير و11 مصدرًا كاملًا؛ Duden404 مستبعد.
+- **الحالة العددية:**38/53 والبوابة منفصلة؛15 متبقية، و39 حارسًا تشمل البوابة. `b1-09-v2` و`v88`؛ نسخةv1 محفوظة لكنها لا تمنح الإتقان الحالي. P01 كتابة فقط،P02 كتابة وجهر،لا شريك أو تسجيل أو سفر فعلي أو تصحيح آلي للغة والنطق.
+- **التالي مباشرة:** بعد رفع التقرير استعلم عنSHA صريح وسجل إيصال الرفع وادفعه. ثم CR40/B1.10: اقرأ كل نص وحوار وبند وخيار ومعيار بمراجعة تراكمية مصدرية، لا انتظار مراجع بشري. احتفظ بأصواتLeila/السرد02 وRedakteur03 التي اختارها المستخدم؛ لا معاينة جديدة أو إعادة تسجيل.
+- **قرارات ثابتة:** كل دفعة مفحوصة ترفع فورًا مع هاتين الوثيقتين؛ المحتوى والتقييم والتطبيق قبل الصوت. لا إتلاف عملGit، لا تغييرفرع أو دمج، لا إعادةMP3 أو إخفاؤها أو تبديل روابطها. سقف10 طلبات صوتية في الرد إن لزم لاحقًا، ولا طلب صوتي فيCR39. B1.9 وبقية الحالات المعلقة لا تصبح ready بلااعتماد فعلي؛ لا ادعاء استماع. A2.7Q08→T05 وA2.9 محفوظان، وتاريخB2.6 لايعاد تسميتهB2.7.
+
+## الفحوص التراكمية — CR39
+
+- **PASS:** build/verify و39 حارس مراجعة وخمس مجموعات Node: progression/service_worker/daily_plan/session_persistence/study_time، وnode --check وgit diff. الحزمة **2,106,695 بايت**؛53 درسًا،428 عنوان تمرين،61 قسم حوار،754 مفردة،530 سؤال درس+10 بوابة،109 مهمات،1080 صف catalog،217 أصلًا/474 مقطعًا،137ready و80 معلقة.
+- **المتصفح:** Chromium143.0.7499.0، Playwright1.58.2، axe4.11.0. نجحت المجموعات الخمس browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout. فحص1440×900 و390×844 شمل RTL والقفل والتفريغات وتشغيلMP3 آليًا بسرعتي1 و0.8 والتوقف عند الانتقال، دون أخطاء صفحة في الاختبار العام.
+- **دون اتصال والتحديث:** إعادة التحميل والتنقل والصوت الكامل ونطاقات البايت/اللاحقة و416/503؛ تحديث fixture v42 إلى **v88** دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن وإعادة تخزين الصوت عند الاتصال. لا ضمان لبقاء كل الملفات أو اختبار لجميع الترقيات التاريخية.
+- **الدليل والتدرّج:** سجل B1.9-v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B1.10، والمسودة القديمة مرفوضة. الدرجة والدليل الحاليان يفتحان التالي، وحذف الدليل يغلقه. P01 دون مربع جهر وP02 تتطلبه؛ ثلاثة إقرارات وحدا130/145، ونموذجا284/338 حرفًا. لا تصحيح آلي للجمل أو اللغة أو النطق.
+- **axe:**169 حالة ممثلة، منها مصدر B1.9 ومهمتاه بالعرضين؛ **صفر مخالفات للقواعد المختارة**، مع **119 ظهورًا غير حاسم تشمل275 ظهورًا لعقد**. ليست شهادةWCAG ولا مخالفات مؤكدة، ولا مراجع بشري شرطًا للاستمرار.
+- **العرض الضيق:**126 حالة،63 لكل من320×900 و568×320، تشمل53 درسًا بتفريغاتها وجداولها والقائمة. ليست هواتف فعلية أو تكبيرًا أصليًا.
+- **التعثر والحدود:** فشل استدعاء Chromium --version أولًا لغياب libnspr4.so؛ استخرجت مكتبات al2023 المرفقة وضبطت LD_LIBRARY_PATH، ثم نجحت مجموعات المتصفح الخمس من أول تنفيذ كامل. لا تعديل للتطبيق أو لاختبار forms_keyboard بسبب ذلك؛ نجاح اختيار الملف الأصلي بالعرضين لا يصلح تذبذبه التاريخي أو يثبت سببه.
+- **الصوت والنشر:** مطابقة نصية وفحصMP3 وتشغيل آلي صامت لا استماع أو اعتماد. نشر التنفيذ الأخير **ed11502 فشل** لحدVercel اليومي بحسبSHA الصريح، وdeployments=[]؛ PR#1OPEN وغير مدمجة. لا اختبار للواجهة البعيدة أوProduction، ولا إعادة نشر متكررة أو ترقية مدفوعة.
+
+## الحفظ
+
+مقارنة بالأساس `e0727a6e5e81bf5dfc91e19eba6b066f42bc503b`:52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت ثابتة؛ أربعة صفوف B1.9 تغير فيها source_line فقط وPHR ثابت. حُفظت590 ملفًا تشمل474MP3، وplaylist مطابقة بالبايت. خمسة أصول/10 مقاطع بأصوات Mina02/Karim03، والمفردات/النماذج/القراءة02 والاستماع03؛ جميعها generated_pending_acoustic_review وtranscriptPolicy=offer، دون إخفاء أو تغيير روابط. النماذج الجديدة284/338 حرفًا مكتوبة غير مسجلة.
+
+---
+
+## ملحق اتساق CR39 — يرفع بعد الفحص مباشرة
+
+رُفع التنفيذ `fa03a2a87698306e14538461f67250d346327c74` وتطابق HEAD/origin. كشف التدقيق التالي صياغة عامة في بطاقة Anschluss؛ أصبحت «رحلة مواصلة»، مع توضيح الحاضر في Q04 ونطاق المناخ في شرح Q08 دون تغيير أي خيار أو فهرس. هذه الإضافة في المصدر والتقييم والحزمة وSW واختبارَيه ووثيقتَي التسليم، بعنوان `Clarify B1.9 travel card and climate scope`؛ SHA في git log. `b1-09-v2` محفوظ، والمخزن الآن **v88**. فحوص build/verify وحارس التنفيذ وprogression/service_worker وسلامةJS وdiff تمر قبل الرفع. التقرير و39 حارسًا بالوضع الكامل والمتصفح ما زالت قيد العمل؛ الأعداد الحالية لا تزيد بعد. لا تغيير صوتي أو اعتماد أو دمج؛ الخطوة التالية التقرير والفحوص ثم CR40/B1.10.
+
+# CR39 / B1.9 — دفعة التنفيذ المفحوصة؛ التقرير التراكمي قيد الإعداد
+
+- **2026-10-08، الفرع:** `arena/01a1036f-deutschlern`، الأساس `e0727a6e5e81bf5dfc91e19eba6b066f42bc503b`. هذه الدفعة ترفع مباشرة بعد فحصها بعنوان `Align B1.9 temporal tasks and local evidence contracts`؛ SHA في git log. لا دمج لـPR#1 ولا ادعاء نشر هذه الدفعة قبل الاستعلام.
+- **الملفات:** مصدر وتقييم `content/B1/lesson-09-travel-transport-environment.*`، الحزمة `data/course.json`، catalog وسجل الصوت، SW واختباراه، progression وaxe وحارس B1.9 الجديد، ووثيقتا التسليم هاتان.
+- **التصحيح:** T02 يحدد ترتيب الأحداث، T03 يطلب التصريف والحاضر وLena المفردة، T04/Q06 يطلبان Perfekt صراحة، T06 فراغات ألمانية ومفتاحها يكتب kurz فقط. أضيف دعم Verspätung في T01 ودافع المجموعة في T05 وتمرين ماضٍ في T07. شرح أثناء + اسم Genitiv يطابق المثال المسجل؛ لا تعميم أن كل nachdem تفرض Perfekt أو أن كل قطار أفضل مناخيًا في كل ظرف.
+- **الدليل:** P01 خمس جمل كتابة فقط، P02 ست جمل كتابة وجهر؛ المصدر والمعايير والنموذجان متطابقة،284/338 حرفًا. عتبتا130/145 و80% وثلاثة إقرارات و30 خيارًا والفهارس وروابط الأسئلة والمهمات ثابتة. لا شريك أو تسجيل أو سفر فعلي أو تصحيح آلي للمعنى والنطق. الإصدار `b1-09-v2` والمخزن `v87`.
+- **فحوص التنفيذ PASS:** build/verify،38 حارسًا سابقًا وحارس B1.9 بوضع implementation-only، مجموعات Node الخمس progression/service_worker/daily_plan/session_persistence/study_time، سلامة JS وgit diff. فحوص المتصفح والتقرير الفردي لم تنفذ بعد لهذه الدفعة ولا ننسب نتائج CR38 إليها.
+- **الحفظ مقارنةً بالأساس:**52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صف catalog و212 صف سجل صوت و590 ملفًا محميًا تشمل474MP3 ثابتة؛playlist مطابقة بالبايت، وأربعة تحديثات source_line فقط في سجل B1.9. الأصوات Mina02/Karim03، مفردات/نماذج/قراءة02 واستماع03؛ خمسة أصول/10 مقاطع تظل `generated_pending_acoustic_review` ومتاحة في الدرس، دون استماع أو اعتماد أو توليد جديد.
+- **البحث:**11 صفحة مرجعية كاملة عن الزمن وترتيب الجمل والمفردات؛ Duden waehrend_Konjunktion صفحة غير موجودة مستبعدة. التقرير التالي يوثق النطاق والنتيجة لكل وحدة، لا ادعاء تحقق معجمي خارجي مستقل لكل كلمة.
+- **المتبقي مباشرةً:** إعداد `data/reviews/b1-09-review.json/.md`، تشغيل39 حارسًا بالوضع الكامل وخمس مجموعات متصفح وتوثيق نتائجها وحدودها، تحديث الحملة إلى38/53+البوابة/15متبقيًا/الخطة2.45 فقط بعد فحص التقرير، ثم رفعه والاستعلام عن SHA الصريح وتوثيق الإيصال. الحملة حاليًا37/53+البوابة/16متبقيًا. بعدها CR40/B1.10؛ احتفظ بأصوات Leila02 وRedakteur03 المختارة ولا تطلب اختيارًا جديدًا.
+- **قرارات دائمة:** كل دفعة مفحوصة ترفع فورًا؛ لا فرع آخر ولا دمجPR، لا إتلاف عمل Git، المحتوى والتقييم والتطبيق قبل الصوت، لا إعادة MP3 أو ادعاء اعتماد، ولا مراجع بشري شرطًا للاستمرار. آخر فشل نشر معروف للتقرير CR38 كان حدVercel اليومي؛ لا إعادة نشر متكررة أو شراء ترقية.
+
+---
+
+# CR38 / B1.8 — مراجعة نصية وفحوص مفحوصة، والعمل غير مدمج
+
+## إيصال رفع CR38 — 2026-10-08
+
+- **التنفيذ:** `331b7d3fc29fafe05aeab96d7a1f3ec45be0fccb`؛ **السجل والفحوص:** `155907b4d22c5e324396c1d3442ea7d3042f3f0d`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. هذا الإيصال يُرفع فور فحصه بعنوان `Record CR38 delivery receipt`؛ معرفه في git log، ولم يُستعلم عن نشره.
+- آخر استعلام بالـSHA الصريح للتقرير: **PR#1 OPEN، mergedAt=null، head=155907b**. نشر **التنفيذ331b7d3 ناجح** إلىPreview رقم6947703129: https://deutschlern-2cmsg88ie-balinader-2671s-projects.vercel.app . نشر **التقرير155907b فشل** بسبب **Deployment rate limited — retry in 24 hours**، وdeployments=[]. لا ننسب نجاح التنفيذ إلى أحدثcommit، ولا إعادة نشر متكررة أو ترقية مدفوعة. الواجهة البعيدة وProduction لم تختبرا؛ الرفع لا يعني الدمج أو النشر.
+- **PASS:** البناء والتحقق و38 حارسًا وخمس مجموعاتNode ومجموعات المتصفح الخمس؛ الحزمة **2,094,031 بايت**، `b1-08-v2`، `v86`. فيaxe:165 حالة وصفر مخالفات للقواعد المختارة، مع115 ظهورًا غير حاسم/262 ظهورًا لعقد؛ والعرض الضيق126 حالة. نجاحforms_keyboard هنا لا يصلح تذبذبه التاريخي أو يثبت سببه.
+- **المراجعة:**110 وحدات/39 بندًا/30 خيارًا/6 معايير؛9 صفحات مرجعية كاملة وجزآن0و1 من11 لمرجع عاشر، وصفحة غير موجودة مستبعدة. Q05 حاضر صريح وQ07 معلومتان لا مادتان؛ جميع الخيارات30 والفهارس والروابط و80% وحدا150/130 محفوظة. P01 كتابة فقط وP02 كتابة وجهر، بنموذجين415/370 حرفًا؛ لا تصحيح آلي للغة أو الإعلان أو النطق.
+- **الحفظ:**52 درسًا آخر و590 ملفًا محميًا تشمل474MP3 وبقية مفاتيح الحزمة وصفوفها خارج الدرس ثابتة. خمسة أصولB1.8/10 مقاطع، Mira02/Bilal05 والقراءة04 والمفردات/النماذج02 والاستماع03؛ لا استماع أو توليد أو اعتماد جديد. أربعة تغييراتsource_line فقط في سجل الصوت، وPHR ثابت؛ جمعQualität وحدودWerbung/nachhaltig إضافات مكتوبة.
+- **التغطية:**37/53 درسًا والبوابة منفصلة؛16 متبقية وخطة2.44. **التالي CR39/B1.9 — السفر والمواصلات والبيئة**؛ احفظMina02/Karim03 والرواة02/03، واعتماد معايناتB1.9 ما زال معلقًا. لا إعادة توليد أو اختيار أصوات. كل تعديل يرفع فور فحصه؛ لا مراجع بشري شرطًا أو تبديل فرع أو دمج. الأقسام الأقدم أدناه أرشيف زمني.
+
+
+رُوجع **B1.8 — المنتجات والاستهلاك والإعلان: je … desto/umso …** في **110 وحدات و 39 بندًا داخل التمارين، و 30 خيار تقييم و 6 معايير**. استُخدمت **9 صفحات كاملة وأجزاء محددة من مرجع عاشر**. صُحح Q07 من «مادتين» إلى «معلومتين»، وقُيد Q05 بالحاضر، ووُضحت وحدة المقارنة وموقع المصرف وحدود الاستدلال الإعلاني. **P01 خمس جمل كتابة فقط؛ P02 أربع جمل كتابة وجهر**، بمعايير ومصدر ونموذجين متطابقة. جميع الخيارات 30 والفهارس والروابط و 80% وحدا 150/130 محفوظة. الإصدار `b1-08-v2` والمخزن `v86`؛ خمسة أصول/10 مقاطع ثابتة دون استماع أو توليد أو اعتماد جديد. **الحملة 37/53 درسًا والبوابة منفصلة؛ تبقى 16، والتالي CR39/B1.9.** هذه مراجعة نصية مفحوصة، لا دمج أو اكتمال المشروع أو شهادة مستوى.
+
+## الرفع والملفات والحالة
+
+- **التنفيذ المرفوع:** `331b7d3fc29fafe05aeab96d7a1f3ec45be0fccb`؛ الفرع الوحيد `arena/01a1036f-deutschlern`، والأساس `7247ff7ed7eb308459e47be3e42cb3b280af07a5`. تطابق HEAD/origin. مجموعة التقرير والفحوص تُرفع فور فحصها بعنوان `Record CR38 granular B1.8 review and cumulative checks`، ثم يوثق إيصالها؛ معرفها من git log. لا دمج.
+- المصدر والتقييم `content/B1/lesson-08-consumption-advertising-je-desto.md/.assessment.json` والحزمة؛20 صف catalog وأربعة صفوف audio-register تغير فيها source_line فقط، و PHR ثابت. عامل الخدمة واختباراه، progression/accessibility_audit، `tools/test_b1_08_review.py`، سجلا `data/reviews/b1-08-review.json/.md`، والفهرس و README و PROGRESS وخطة 2.44 وتقرير المتصفح وملفا التسليم. لا تغيير app.js/CSS/MP3/playlist/package/lock/test_forms_keyboard.
+- **GitHub عند 331b7d3:** PR#1 OPEN و mergedAt=null. **نجح نشر هذا التنفيذ إلى Preview** رقم 6947703129: https://deutschlern-2cmsg88ie-balinader-2671s-projects.vercel.app . لا اختبار للواجهة البعيدة أو Production، ولا يُنسب نجاحه إلى التقرير أو الإيصال اللاحقين قبل الاستعلام. لا إعادة نشر متكررة أو ترقية مدفوعة عند حد الخدمة.
+- التغطية **37/53 والبوابة منفصلة،16 متبقية**؛38 حارسًا تشمل البوابة. السجل 110 وحدات/39 بندًا/30 خيارًا/6 معايير. المراجع 10:9 صفحات كاملة، وصفحة Verbraucherzentrale قرئ منها 0 و 1 من 11 فقط؛Lingolia Adjektive أعادت التوجيه وقرئت بالجزأين. صفحة Duden je غير الموجودة مستبعدة، ولا PDF أو دراسات أو نطق مرتبط قُرئ أو سُمع.
+
+## القرارات التعليمية والحفظ
+
+- عبارة desto/umso مع المقارنة وما يتعلق بها تشغل الموقع الأول، ثم المصرف ثم الفاعل؛ لا الكلمة الثانية بعد الرابط وحده. المصدر يختم الجزء الرئيسي قبل السؤال غير المباشر، لا النص كله. صيغ المقارنة تختلف عن التفضيل الأعلى، وقد تقل قيمة مع زيادة أخرى؛ التركيب لا يثبت سببية أو تناسبًا حسابيًا.
+- Q05 يطلب Präsens فلا يصف beschrieb بأنه مستحيل صرفيًا؛ Q07 يطلب معلومتين لأن Edelstahl مادة و 600 ملليلتر سعة، و 320 غرامًا وزن. Endpreis مدرب في T01 و umso في T02. مفتاح القراءة يعطي مثالين ملموسين، و Ihr يعود إلى die Person دون استنتاج جنس الراوي. الخيارات 30 والفهارس `[0,1,0,1,1,0,0,0,1,2]` وكل الروابط و 80% محفوظة.
+- كلا P→T08؛ P01 خمس جمل كتابة فقط وحد 150، و P02 أربع جمل كتابة وجهر وحد 130. النموذجان 415/370 حرفًا غير مسجلين؛ المعايير الثلاثة في P01 والسببان وعلاقتا P02 واضحان. الأرقام A20€/300g/600ml و B24€/400g/800ml خيالية مستقلة عن قارورة القراءة. لا علامة حقيقية أو شريك أو تسجيل أو شراء، ولا تصحيح آلي للمعنى أو النطق.
+- القابل للتحقق ليس مثبتًا بمجرد وروده في إعلان؛20% دون سعر أساس لا تتيح حساب مبلغ. لا نختلق مضمون شروط الإرجاع أو قانونًا. تحذير التقييمات لا يثبت تزييف تقييمي القصة؛ ثلاثة نماذج مقابل تقييمين، والسماعات/القارورة/الحقيبة قصص مختلفة. شرط الشراء لا يعني وقوعه، و vorerst لا تعني للأبد.
+- Qualität لها Qualitäten، و Werbung لها Werbungen في معانٍ أخرى؛ الشرطة تعليمية هنا، والتوضيح مكتوب فقط. nachhaltig ليست مرادفًا مطلقًا لـ langlebig أو شهادة استدامة. كل لفظ في الجدول روجع لغويًا؛ المصادر المعجمية المباشرة تخص ما حددته مراجع كل وحدة، لا ندعي مدخلًا خارجيًا منفصلًا لكل كلمة.
+- مقارنة فعلية بالأساس: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى،1060 صف catalog و 212 صف audio-register و 590 ملفًا محميًا تشمل 474 MP3 ثابتة**؛playlist مطابقة بالبايت. خمسة أصول B1.8/10 مقاطع، Mira02/Bilal05، راوية القراءة المستقلة `Erzählerin B1.8`04، المفردات/النماذج 02 والاستماع 03؛ بلا استماع أو توليد أو اعتماد جديد. MODEL خمسة أمثلة ومنها جملة T04 التي أضيف مرجعها فقط؛ PHR18 وحدة نطق مقابل 17 صفًا لفصل langlebig و nachhaltig.
+
+## الفحوص التراكمية — CR38
+
+- **PASS:** البناء والتحقق و 38 حارس مراجعة وخمس مجموعات Node وسلامة JS و git diff. الحزمة **2,094,031 بايت**؛53 درسًا،428 عنوان تمرين،61 قسم حوار،754 مفردة،530 سؤال درس+10 بوابة،109 مهمات،1080 صف catalog،217 أصلًا/474 مقطعًا،137ready و 80 معلقة.
+- **المتصفح:** Chromium143.0.7499.0، Playwright1.58.2، axe4.11.0؛ نجحت المجموعات الخمس browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout. فحص 1440×900 و 390×844 شمل RTL والقفل والتنقل والتفريغات وتشغيل MP3 آليًا بسرعتي 1 و 0.8 والتوقف عند الانتقال، دون أخطاء صفحة في الاختبار العام.
+- **دون اتصال والتحديث:** إعادة التحميل والتنقل والصوت الكامل ونطاقات البايت/اللاحقة و 416/503؛ تحديث fixture v42 إلى v86 دون إعادة تحميل قسرية، وحفظ التقدم والإجابات وعزل المخازن وإعادة تخزين الصوت عند الاتصال. لا ضمان لبقاء كل الملفات مخزنة أو اختبار لكل ترحيل تاريخي.
+- **الدليل والتدرج:** سجل B1.8 القديم v1 محفوظ لكنه لا يمنح إتقان v2 أو يفتح B1.9؛ المسودة القديمة مرفوضة. الدرجة والدليل الحاليان يفتحان التالي، وحذف الدليل يغلقه. P01 دون مربع جهر و P02 تتطلبه؛ ثلاثة إقرارات وحدا 150/130 لازمة. النموذجان 415/370 حرفًا؛ لا تصحيح آلي لعدد الجمل أو جودة اللغة والنطق.
+- **axe:**165 حالة ممثلة وصفر مخالفات للقواعد المختارة؛ **115 ظهورًا غير حاسم تشمل 262 ظهورًا لعقد**. ليست شهادة WCAG ولا تأكيدًا بأن غير الحاسم مخالفة؛ لا مراجع بشري شرطًا للاستمرار.
+- **العرض الضيق:**126 حالة،63 لكل من 320×900 و 568×320، تشمل 53 درسًا بجميع التفريغات والجداول والقائمة. ليست اختبارات هاتف فعلي أو تكبير أصلي.
+- **التعثرات وحدود الإصلاح:** توقف مولد CSV عند اختلاف مسافة عنوان القواعد؛ أعيد العنوان الأصلي ونفذ الجزء المتبقي فقط. فشل progression الأول قبل وصول التنفيذ إلى تحديث عقد المهمتين ثم نجح؛ وصُحح بحث لفظي في الحارس عن«مستبدلًا». لا تغيير للنص الألماني المسجل بسبب ذلك. نجحت مجموعات المتصفح من أول تشغيل هنا؛ نجح forms_keyboard بالعرضين دون تعديل اختباره، لكن تذبذب native chooser التاريخي غير محلول.
+- **الصوت والنشر:** تشغيل آلي صامت ومطابقة نصية وبنية MP3، لا استماع أو اعتماد جديد. نجح نشر التنفيذ 331b7d3 إلى Preview حسب GitHub API؛ لم تختبر الواجهة البعيدة أو Production. نجاح التنفيذ لا يُنسب تلقائيًا إلى أي commit لاحق.
+
+## التالي والقيود المستمرة
+
+- **CR39/B1.9 — السفر والمواصلات والبيئة.** اقرأ المصدر والتقييم وكل نص وحوار وتمرين وخيار ومعيار فرديًا، وراجع القاعدة الفعلية في المصدر والمقارنات البيئية دون ادعاءات عامة غير مسندة. لا تفترض هدفًا نحويًا من العنوان وحده. احفظ Mina02/Karim03 والمفردات/النماذج/القراءة 02 والاستماع 03؛ معاينات B1.9 واعتمادها النهائي ما زالا معلقين. لا إعادة توليد أو اختيار أصوات.
+- كل تعديل يرفع فور فحص مجموعته مع تحديث هذين الملفين؛ المحتوى والتقييم والتطبيق قبل الصوت. لا مراجع بشري شرطًا، مع ذكر حدود الفحص. لا تبديل فرع أو دمج PR#1 أو وصف غير المدمج بالمكتمل؛ لا reset/clean مدمر، وقارن قبل أي استرداد Git.
+- الصوت يبقى في درسه، ولا ready دون موافقة أو ادعاء استماع. حد 10 طلبات/رد، ولا إعادة للموجود. B1.10 يحتفظ Leila/narrator02 و Redakteur03 المختارين واعتماده معلق؛ لا إعادة السؤال. B1.11 existing بأصوات Archivarin00/Mira02 محفوظ. كذلك A2.7 Q08→T05 وفحوص A2.9 وإجمالي A2 البالغ 54 أصلًا/120 مقطعًا وتاريخ B2.6 دون إعادة تسميته B2.7.
+- الأقسام الأقدم أدناه أرشيف زمني؛ «قيد العمل» فيها لا تلغي النتائج الحالية.
+
+---
+
+# CR38 / B1.8 — تنفيذ مفحوص، والتقرير الفردي والمتصفح قيد العمل
+
+- التاريخ 2026-10-08؛ الفرع الوحيد `arena/01a1036f-deutschlern`، والأساس `7247ff7ed7eb308459e47be3e42cb3b280af07a5`. قبل أي تعديل قورنت 734 ملفات بعيدة بالبايت؛ كلها مطابقة بلا ملفات إضافية، ثم استعيدت بيانات Git بـ reset --mixed دون مساس بالعمل. تُرفع مجموعة التنفيذ بعنوان `Review B1.8 comparisons and align practical evidence` فور فحصها؛ معرفها من git log. لا دمج.
+- قُيدت وحدة desto/umso مع المقارنة وموقع المصرف، ونهاية الجزء الرئيسي قبل السؤال غير المباشر. Q05 يطلب Präsens، و Q07 يسأل عن معلومتين لا مادتين؛ مفتاح الاستماع يحافظ على Ihr العائد إلى die Person دون استنتاج جنس. أضيف Endpreis إلى T01 وبديل umso إلى T02. جميع الخيارات 30 والفهارس والروابط و 80% محفوظة.
+- P01 خمس جمل كتابة فقط وحد 150؛ P02 أربع جمل كتابة وجهر وحد 130، بمصدر ومعايير ونموذجين متطابقة بطولي 415/370 حرفًا. الأرقام خيالية مستقلة عن القراءة، والقابل للتحقق ليس صحة مثبتة. لا شريك أو تسجيل أو شراء حقيقي، ولا تصحيح لغوي أو صوتي آلي.
+- الملفات: مصدر وتقييم B1.8 والحزمة؛20 صف catalog، وأربعة صفوف audio-register تغير فيها source_line فقط، و PHR ثابت؛ عامل الخدمة واختباراه، progression/accessibility_audit، والحارس الجديد `tools/test_b1_08_review.py` وملفا التسليم. لا تغيير app.js/CSS/playlist/MP3/package/lock/test_forms_keyboard.
+- PASS: البناء والتحقق؛37 حارسًا سابقًا والحارس الجديد بوضع implementation-only؛ خمس مجموعات Node، سلامة JS و git diff. الحزمة **2,094,031 بايت**، `b1-08-v2`، `v86`. مقارنة فعلية:52 درسًا آخر وكل مفاتيح الحزمة الأخرى و 1060 صف catalog و 212 صف audio-register و 590 ملفًا محميًا تشمل 474MP3 ثابتة.
+- أصول B1.8 الخمسة/10 مقاطع ثابتة؛Mira02/Bilal05، راوية القراءة المستقلة `Erzählerin B1.8`04، المفردات/النماذج 02 والاستماع 03. لا استماع أو توليد أو اعتماد جديد. تصحيح Qualitäten وحدود Werbung/nachhaltig مكتوب فقط؛MODEL يشمل مثالًا في مفتاح T04 فأضيف مرجعه إلى source_line.
+- قُرئت 9 صفحات مرجعية كاملة، منها Lingolia بالجزأين، وجزآن 0 و 1 من 11 لصفحة Verbraucherzentrale عن التقييمات؛ لا ندعي قراءة الصفحة الأخيرة كلها أو الدراسات المرتبطة. صفحة Duden je غير موجودة ومستبعدة. **التقرير الفردي وحارس سجله ومجموعات المتصفح لم تُستكمل في هذه النقطة**؛ التغطية المنشورة ما زالت 36/53 والبوابة منفصلة،17 متبقية وخطة 2.43.
+- تعثر مولد مراجع CSV بسبب مسافة في عنوان القواعد؛ أعيد العنوان الأصلي ونفذ الجزء المتبقي فقط دون إعادة المحتوى. فشل progression الأول لأنه سبق تنفيذ تحديث عقد المهمات؛ نجح بعده. صحح بحث الحارس عن«مستبدلًا» بدل جزء لفظي غير مطابق. هذه تعثرات تنفيذ واختبار، لا إصلاحات صوت أو سبب ثابت لتذبذب native chooser التاريخي.
+- التالي: إنشاء السجل الفردي وتشغيل مجموعات المتصفح الخمس، ثم فحص السجل وتحديث التغطية والخطة والوثائق ورفعها فورًا. لا تنقل نتائج CR37 إلى CR38. لا اختبار Preview بعيد أو Production بعد؛ حد Vercel السابق لا يبرر إعادة نشر متكررة أو دفعًا.
+- قيود مستمرة: المحتوى والتقييم والتطبيق قبل الصوت؛ كل تغيير يرفع فور فحص مجموعته؛ لا مراجع بشري شرطًا مع التصريح بالحدود. لا تغيير فرع أو دمج PR#1 أو حذف عمل. لا إخفاء صوت أو ready دون موافقة أو إعادة توليد الموجود؛حد 10 طلبات/رد. أصوات B1.9 و B1.10 وقرار B1.11 existing محفوظة، وكذلك A2.7 Q08→T05 وفحوص A2.9 وتاريخ B2.6 دون تسميته B2.7. الأقسام الأقدم أدناه أرشيف زمني.
+
+---
+
+# CR37 / B1.7 — مراجعة نصية وفحوص مفحوصة، والعمل غير مدمج
+
+## إيصال رفع CR37 — 2026-10-08
+
+- **التنفيذ:** `5fb2d98671b6b9bae5b54a5c5610baa4059d70bc`؛ **السجل والفحوص:** `52af008f486c46782b26011efd8c4f61a54d184b`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. هذا الإيصال يُرفع فور فحصه بعنوان `Record CR37 delivery receipt`؛ معرفه في git log، ولم يُستعلم عن نشره.
+- الاستعلام الأخير بالـSHA الصريح للتقرير: **PR#1 OPEN، mergedAt=null، head=52af008**. نشر التنفيذ والتقرير فشل بسبب **Deployment rate limited — retry in 24 hours**، وdeployments=[] لكليهما. لا إعادة نشر متكررة أو ترقية مدفوعة؛ لا اختبار للواجهة البعيدة أو Production، والرفع لا يعني الدمج أو النشر.
+- **PASS:** البناء والتحقق و37 حارسًا وخمس مجموعات Node وخمس مجموعات متصفح. الحزمة **2,081,619 بايت**، `b1-07-v2`، `v85`. في axe:161 حالة وصفر مخالفات للقواعد المختارة، مع112 ظهورًا غير حاسم/256 ظهورًا لعقد؛ وفي العرض الضيق126 حالة. عولج فقد مكتبة Chromium في البيئة المؤقتة فقط؛ لا إصلاح مزعوم لتذبذب native chooser التاريخي.
+- **المراجعة:**114 وحدة/45 بندًا/30 خيارًا/6 معايير/20 صفحة مرجعية كاملة في23 جزءًا؛ خمس صفحات غير موجودة مستبعدة. Alltagsroutine راجعت صرفيًا مع مرجع Routine للرأس، لا صفحة مركب لم تُقرأ. حُفظت29 صيغة خيار والفهارس والروابط و80% وحد160؛ تغير خيار Q10 الصحيح وحده إلى عدم الإلزام بالتمثيل. P01 كتابة فقط وP02 كتابة وجهر، بنموذجين270/350 حرفًا؛ لا تصحيح آلي للغة أو النطق.
+- **الصوت والحفظ:** خمسة أصول B1.7/12 مقطعًا وأصوات Laila02/Omar03 والرواة02/03 ثابتة؛ لا استماع أو توليد أو اعتماد جديد. حُفظت52 درسًا آخر و590 ملفًا محميًا تشمل474 MP3، مع بقية مفاتيح الحزمة والصفوف خارج الدرس. توضيح جمع Austausch مكتوب فقط.
+- **التغطية:**36/53 درسًا والبوابة منفصلة؛17 متبقية، وخطة2.43. **التالي CR38/B1.8 — الاستهلاك والإعلان: je … desto**؛ احفظ Mira02/Bilal05 وراوية القراءة04 المستقلة والمفردات/النماذج02 والاستماع03. كل تعديل يرفع فور فحص مجموعته؛ لا مراجع بشري شرطًا أو تبديل فرع أو دمج. الأقسام الأقدم أدناه أرشيف زمني.
+
+
+رُوجع **B1.7 — أساليب الحياة والعادات والثقافات: الروابط الثنائية** في **114 وحدة و 45 بندًا أو مطلبًا داخل التمارين**، مع **30 خيار تقييم و 6 معايير و 20 صفحة مرجعية كاملة في 23 جزءًا**. قُيدت مقاصد T02/T03، ودُعمت الأسئلة في تمارينها. صُحح Q10 إلى **عدم الإلزام بالتمثيل**، لا نفي حدوثه؛ Q03 يحدد معنى الإضافة، و Q06 يطلب موضع الضمير المحايد. **P01 خمس جمل كتابة فقط؛ P02 ستة أدوار كتابة وجهر**، بمصدر ومعايير ونموذجين متطابقة. بقيت 29 صيغة خيار والفهارس والروابط و 80% وحد 160 ثابتة. الإصدار `b1-07-v2` والمخزن `v85`؛ خمسة أصول/12 مقطعًا ثابتة بلا استماع أو توليد أو اعتماد جديد. **الحملة 36/53 درسًا والبوابة منفصلة؛ تبقى 17، والتالي CR38/B1.8.** هذا سجل نصي مفحوص، لا دمج أو اكتمال المشروع أو شهادة مستوى.
+
+## الرفع والملفات والحالة
+
+- التنفيذ **5fb2d98671b6b9bae5b54a5c5610baa4059d70bc** رُفع إلى الفرع الوحيد `arena/01a1036f-deutschlern` وتطابق HEAD/origin. الأساس **e9e8ba23e1de795f90432496c9daaa06b111d1f6**. مجموعة السجل والفحوص تُرفع فور فحصها بعنوان `Record CR37 granular B1.7 review and cumulative checks`؛ معرفها من git log ثم إيصال الرفع. لا دمج أو تبديل فرع.
+- المصدر والتقييم `content/B1/lesson-07-lifestyles-customs-cultures.md/.assessment.json` والحزمة؛20 صف catalog وخمسة صفوف audio-register لتغيير source_line فقط؛ service-worker واختباراه، progression/accessibility_audit، `tools/test_b1_07_review.py`. السجلان `data/reviews/b1-07-review.json/.md` والفهرس و README و PROGRESS وخطة 2.43 وتقرير المتصفح وملفا التسليم. لا تغيير app.js/CSS/MP3/playlist/package/lock/test_forms_keyboard.
+- استعلام GitHub عند 5fb2d98: **PR#1 OPEN، mergedAt=null**. Vercel: **failure — Deployment rate limited — retry in24 hours** و deployments=[]؛ لا ننسب نجاح Preview سابق لهذا commit، ولا نكرر النشر أو نرفع الخطة المدفوعة. أحدث نشر للتقرير والإيصال لم يستعلم عنهما في هذه النقطة. لا اختبار للواجهة البعيدة أو Production.
+- التغطية **36/53 والبوابة منفصلة،17 متبقية**؛ الحارس 37 يشمل البوابة. خطة 2.43، b1-07-v2، v85. السجل 114 وحدة/45 بندًا/30 بديلًا/6 معايير. أضيفت عشرة مراجع معجمية بعد رفع التنفيذ؛ المجموع الحالي 20 صفحة كاملة/23 جزءًا، وخمس صفحات غير موجودة مستبعدة. Alltagsroutine لم توجد في Duden؛Routine مرجع رأس المركب فقط، دون ادعاء تعريف المركب كاملًا من الصفحة.
+
+## القرارات التعليمية والحفظ
+
+- التمرين لا يستنتج رابطًا وحيدًا من فراغ بلا سياق؛ المقصد المعطى يميز الإضافة والاختيار والنفي. Q03 يحدد الإضافة لا نفي sowohl/entweder. Q06 يطلب ich مباشرة بعد trinke، لأن V2 وحدها لا تستبعد المشتت الثاني. جمع helfen هنا للاسمين الجمعين، لا قاعدة مطلقة لكل رابط أو كل فاعلين مفردين.
+- Q10 صُحح خيارُه الصحيح وحده إلى لا يُلزم أحد، مطابقًا لـ muss niemand؛ لا نفي وقوع التمثيل. بقيت 29 صيغة خيار والفهارس `[0,0,1,2,1,2,0,0,0,1]` وكل الروابط و 80% ثابتة. كلا P→T08 وحد 160؛P01 كتابة فقط،P02 كتابة وجهر. لا كشف بيانات حقيقية أو شريك أو تسجيل؛ لا تصحيح آلي للمعنى أوالنطق أوعدد الجمل.
+- القصة لا تعمم من شخص إلى بلد. الحوار:حديقة/مقهى وعادة زميلة Omar مساءً؛ الاستماع:حديقة/متحف وعادة الراوي بعد الثامنة مع Energydrinks. لا جنس للراوي من الصوت، ولا وتيرة رقمية لتبديل المهام من regelmäßig. مواعيد القراءة والتسجيل لا تثبت حضور كل لقاء أو ساعة نهاية العمل.
+- Austausch له جمعان في Duden؛ الشرطة تعليمية للاستعمال المجرد هنا، لا نفي عام للجمع. لا تغيير للصوت الذي يقول Der Austausch. المصدر يميز الفاصلة قبل sondern ونطاق حكم الكلمات عن الجمل، والتوازي الوظيفي عن قصر الربط على اسمين.
+- مقارنة فعلية بالأساس: **52 درسًا آخر وكل مفاتيح الحزمة الأخرى،1060 صف catalog،212 صف audio-register،590 ملفًا محميًا تشمل 474 MP3 ثابتة**؛playlist ثابتة بالبايت. أصول B1.7 الخمسة ومقاطعها 12 وأصوات Laila02/Omar03 والرواة 02/03 ثابتة. لا استماع أو توليد أو اعتماد جديد. النموذجان 270/350 حرفًا مكتوبان غير مسجلين.
+
+## الفحوص التراكمية — CR37
+
+- **PASS:** البناء والتحقق و 37 حارس مراجعة وخمس مجموعات Node وسلامة JS و git diff؛ الحزمة **2,081,619 بايت**. التحقق:53 درسًا،428 عنوان تمرين،61 قسم حوار،754 مفردة،530 سؤال درس+10 بوابة،109 مهمات،1080 صف catalog،217 أصلًا/474 MP3،137ready و 80 معلقة.
+- **المتصفح:** Chromium143.0.7499.0، Playwright1.58.2، axe4.11.0؛ المجموعات الخمس browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout نجحت. فحص 1440×900 و 390×844، RTL والقفل والتنقل والتفريغات وتشغيل MP3 آليًا بسرعتي 1 و 0.8 والتوقف عند الانتقال؛ لا أخطاء صفحة في الاختبارات العامة.
+- **دون اتصال:** إعادة التحميل والتنقل و MP3 الكامل ونطاقات البايت/اللاحقة و 416/503؛ تحديث fixture v42 إلى v85 دون إعادة تحميل قسرية، وحفظ التقدم والإجابات وعزل المخازن وإعادة تخزين الصوت المفقود عند الاتصال. ليس ضمانًا لبقاء كل الصوت مخزنًا أو اختبارًا لكل ترحيل تاريخي.
+- **الدليل والتدرج:** سجل B1.7 القديم v1 يبقى محفوظًا دون منحه إتقان v2 أو فتح B1.8؛ المسودة القديمة مرفوضة. الدرجة والدليل الحاليان يفتحان التالي، وحذف الدليل يغلقه. مربع الجهر غائب عن P01 ومطلوب في P02؛ الإقرارات الثلاثة وحد 160 لازمة. النموذجان 270/350 حرفًا؛ لا يعد التطبيق الجمل والأدوار أو يصحح اللغة والنطق آليًا.
+- **axe:**161 حالة ممثلة، صفر مخالفات للقواعد الآلية المختارة؛ **112 ظهورًا غير حاسم تشمل 256 ظهورًا لعقد**. هذا ليس اجتياز WCAG كاملًا؛ النتائج غير الحاسمة ليست مخالفات مؤكدة أو عملًا يُشترط له مراجع بشري قبل الاستمرار.
+- **العرض الضيق:**126 حالة،63 عند 320×900 و 63 عند 568×320، تشمل 53 درسًا وتفريغاتها والجداول والقائمة. ليست اختبارات هاتف فعلي أو تكبير أصلي للمتصفح.
+- **التعثر والإصلاح البيئي:** أول تشغيل Chromium فشل قبل فتح التطبيق بسبب libnspr4.so مفقودة؛ استُخرجت مكتبات al2023 المصاحبة في/tmp وضُبط LD_LIBRARY_PATH، ثم نجحت المجموعات الخمس. لم يُعدل التطبيق أو الاختبار بسبب ذلك. forms_keyboard نجح من أول تنفيذ بعد تجهيز المتصفح؛ تذبذب native chooser التاريخي غير محلول ولا سبب مثبت له.
+- **الصوت:** تشغيل آلي صامت ومطابقة تفريغات وبنية MP3، لا استماع أو اعتماد جديد. الملفات والأصوات والتوفر في الدرس محفوظة. الواجهة البعيدة و Production لم تختبرا.
+
+## التالي والقيود المستمرة
+
+- **CR38/B1.8 — الاستهلاك والإعلان: je … desto.** اقرأ المصدر والتقييم وكل مفردة ومثال وحوار ونص وتمرين وخيار ومعيار فرديًا، ثم راجع بالمصادر المعنى والتدرج المقارن والفعل والنطاق الإعلاني، وطابق المهمة والدليل قبل الصوت. احفظ Mira02/Bilal05، القراءة `Erzählerin B1.8`04 مستقلة، والمفردات/النماذج 02 والاستماع 03. لا اختيار أصوات جديد أو إعادة توليد الموجود.
+- كل إضافة أو تعديل ترفع فور فحص مجموعتها، مع تحديث هذين الملفين. لا مراجع بشري شرطًا؛ نصرح بحدود الفحص. المحتوى والتقييم والتطبيق قبل الصوت. لا دمج PR#1 أو تغيير فرع أو وصف غير المدمج بالمكتمل، ولا reset/clean مدمر؛ قارن قبل أي استرداد Git.
+- الصوت يبقى متاحًا في درسه، ولا ready دون موافقة أو ادعاء استماع. حد 10 طلبات توليد/رد؛ لا إعادة للموجود. اعتماد B1.9 ومعالجة اعتماد B1.10 معلقان؛ أصوات B1.10 المختارة موجودة 02/03 لا يُعاد سؤالها؛B1.11 existing بأصوات Archivarin00/Mira02 محفوظة. احفظ A2.7 Q08→T05 وفحوص A2.9، وإجمالي A2 البالغ 54 أصلًا/120 مقطعًا، ولا تعِد تسمية تاريخ B2.6 بـ B2.7.
+- الأقسام الأقدم أدناه أرشيف زمني؛ تعليمات «قيد العمل» فيها لا تلغي هذه النتائج الحالية.
+
+---
+
+# CR37 / B1.7 — تنفيذ مفحوص، والسجل التفصيلي وفحص المتصفح قيد العمل
+
+- التاريخ: **2026-10-08**. الفرع الوحيد `arena/01a1036f-deutschlern`؛ الأساس `e9e8ba23e1de795f90432496c9daaa06b111d1f6`. تُرفع مجموعة التنفيذ فور هذه الفحوص بعنوان `Review B1.7 paired conjunctions and align practical evidence`؛ يؤخذ معرفها من git log بعد الرفع. لا دمج أو إعلان اكتمال غير مدمج.
+- صُححت مقاصد T02/T03، وأضيفت المراعاة إلى T01 ودعم مباشر للأسئلة المرتبطة. يميز Q03 الإضافة عن نفي الرابط، ويطلب Q06 ترتيب الضمير المحايد، وصُحح خيار Q10 الصحيح إلى **عدم الإلزام** بدل نفي الحدوث. بقيت 29 صيغة خيار والفهارس والروابط و80% وحد160 ثابتة. P01 خمس جمل كتابة فقط؛ P02 ستة أدوار كتابة وجهر؛ مصدر ومعايير ونموذجان متطابقة، بطولي270/350 حرفًا. لا تصحيح آلي للغة أو التعميم أو النطق، ولا شريك أو تسجيل مطلوب.
+- الملفات: مصدر وتقييم `content/B1/lesson-07-lifestyles-customs-cultures.md/.assessment.json`، `data/course.json`، 20 صفcatalog، وخمسة صفوفaudio-register لتغييرsource_line فقط؛ عامل الخدمة واختباراه، progression/accessibility_audit، والحارس الجديد `tools/test_b1_07_review.py`، وملفا التسليم. لا تعديلapp.js/CSS/playlist/MP3/package/lock/test_forms_keyboard.
+- **PASS:** البناء والتحقق؛ الحارس الجديد بوضع `--implementation-only` و36 حارسًا سابقًا؛ progression/service_worker/daily_plan/session_persistence/study_time؛ سلامة JS وgit diff. الحزمة **2,081,619 بايت**، الإصدار **b1-07-v2** والمخزن **v85**. التحقق:53 درسًا،428 عنوان تمرين،61 قسم حوار،754 مفردة،530 سؤال درس+10 بوابة،109 مهمات،217 أصلًا/474 مقطعًا،137ready و80 معلقة.
+- مقارنة فعلية بالأساس:52 درسًا آخر وكل مفاتيح الحزمة الأخرى و1060 صفcatalog و212 صفaudio-register و**590 ملفًا محميًا تشمل474 MP3** ثابتة؛ قائمة الصوت ثابتة بالبايت. B1.7 خمسة أصول/12 مقطعًا، Laila02/Omar03 والرواة02/03، بلا استماع أو توليد أو اعتماد جديد. جمعAustausch توضيح مكتوب لا تغيير للتسجيل.
+- قُرئت10 صفحات مرجعية كاملة في13 جزءًا؛ أربع صفحات غير موجودة مستبعدة. المصادر والقواعد والخيارات والمعايير ستوثق فرديًا في `data/reviews/b1-07-review.json/.md`؛ **لم يُنجز تحقق السجل أو فحص المتصفح في هذه النقطة**. لا تُنقل نتائجCR36 إلىCR37. التغطية المنشورة ما زالت35/53 والبوابة منفصلة،18 متبقية وخطة2.42؛ لا تُزاد حتى فحص السجل.
+- التالي في هذه الجولة: تثبيت معرف الرفع، إنشاء السجل الفردي، تشغيل مجموعات المتصفح الخمس علىChromium143/v85 وحارس السجل، ثم تحديث التغطية والفهرس والخطة والتقرير ورفع المجموعة فور فحصها. تذبذبnative file chooser التاريخي غير محلول؛ لا ننسب كل مرور إلى إصلاح السبب. لا اختبارProduction أو واجهةPreview بعيدة بعد؛ لا إعادة نشر متكررة عندحدVercel.
+- قرارات مستمرة: المحتوى والتقييم والتطبيق قبل الصوت؛ كل تغيير يرفع فور فحص مجموعته؛ لا مراجع بشري شرطًا للاستمرار، مع ذكر حدود الفحص. لا تغيير فرع أو دمجPR#1؛ لا reset/clean مدمر. الصوت يبقى في درسه وأصواته ثابتة، ولاready دون موافقة أو إعادة توليد للموجود؛10 طلبات صوت/رد. قراراتB1.9/B1.10 المعلقة واختيارB1.11 existing محفوظة، وتصحيحA2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6 محفوظة. الأقسام الأقدم أدناه أرشيف لا وصف للحالة الحالية.
+
+---
+
+# ملف تسليم الإنتاج — CR36 / B1.6
+
+## إيصال رفع CR36 — 2026-10-08
+
+- **التنفيذ:** `08d8237b6e74d3fd9970ada18e203c2be6c6f6de`؛ **السجل والفحوص:** `fbe217c6b997b9211d1e7f5aad9dbd6580462d38`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابقHEAD/origin بعد كل رفع. هذا الإيصال يُرفع فور فحصه بعنوان `Record CR36 delivery receipt`؛ معرفه فيgit log، ونشره غير مستعلم عنه.
+- آخر استعلام للرأسfbe217c: **PR#1 OPEN، mergedAt=null**. نشر **تنفيذ08d8237 ناجح** إلىPreview رقم6946734014: https://deutschlern-qq17xcrv2-balinader-2671s-projects.vercel.app . نشر **السجلfbe217c** فشل بسبب **Deployment rate limited — retry in 24 hours**، وdeployments=[]. لا ننسب نجاح التنفيذ إلى أحدثcommit ولا ندعي اختبار الواجهة البعيدة أوProduction؛ لا إعادة نشر متكررة أو ترقية مدفوعة.
+- **PASS:** البناء والتحقق و36 حارسًا وخمس مجموعاتNode ومجموعات المتصفح الخمس علىv84؛ الحزمة2,068,845 بايت وb1-06-v2. فُحصت157 حالةaxe بصفر مخالفات للقواعد المختارة، مع108 ظهورات غير حاسمة/243 ظهورًا لعقد، و126 حالة عرض ضيق. تعثر مستخرج أمثلةprogression الأول موثق؛ أعيد العنوان الأصلي وحُدد نطاق الأمثلة دون تخفيف مطابقة التفريغ ثم نجح.
+- **التغطية:**107 وحدات/37 بندًا/30 بديل تقييم/6 معايير/10 صفحات مرجعية كاملة؛ **35/53 درسًا والبوابة منفصلة،18 متبقية**. خيارات الأسئلة ومفاتيحها وروابطها و80% وحد110 ثابتة؛ خمسة أصول/10 مقاطعB1.6 وأصواتها محفوظة بلا استماع أو توليد أو اعتماد جديد. النموذجان248/261 حرفًا مكتوبان غير مسجلين.
+- WHO وNHS مرجعان للحدود العامة لا تقييمًا لحالة أو تصريحًا بعلاج. Konjunktiv وWHO قرئا بالجزأين؛ لا صفحات فاشلة أوPDF غير مقروءة في العداد. نجاحforms_keyboard من أول تنفيذ هنا لا يصلح تذبذبه التاريخي؛ لا تعديل للتطبيق/اختبارforms أو سبب مثبت.
+- **التالي CR37/B1.7 — أساليب الحياة والعادات والثقافات: الروابط الثنائية.** راجع كل نص وتمرين وخيار ومعيار والتوازي والنفي دون تعميم ثقافي، واحفظLaila02/Omar03 والرواة02/03 بلا إعادة توليد أو اختيار جديد. كل تعديل يرفع فور فحص مجموعته؛ لا تبديل فرع أو دمج، ولا مراجع بشري شرطًا. جميع القيود والملفات والنتائج في الأقسام التالية؛ العمل غير المدمج لا يوصف بأنه مكتمل.
+
+رُوجع **B1.6 — الصحة واللياقة وتقديم النصيحة: sollte وkönnte** في **107 وحدات و37 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**، منها مرجعان للصحة العامة. صُحح بنك T04 ليشمل **sollte معman**؛ وصُحح معنى **steigern** ووُضح استعمال **Beschwerden** الصحي بصيغة الجمع. قُيد الموقع الثاني بالرئيسية الخبرية والمصدر بنهاية الجزء الرئيسي، مع تمييز السؤال والمصدر معzu. **P01 أربع جمل كتابة فقط؛ P02 أربعة أدوار مع الجهر**، بمصدر ومعايير ونموذجين متطابقة. أضيف دعم مباشر لـQ02/Q03 فيT02 وحُفظ ضميرich/mich فيT06. الخيارات الثلاثون والفهارس والروابط و80% وحد110 محفوظة. الإصدار `b1-06-v2` والمخزن `v84`؛ خمسة أصول/10 مقاطع دون استماع أو توليد أو اعتماد جديد. **الحملة35/53 درسًا والبوابة منفصلة؛ تبقى18، والتالي CR37/B1.7.** هذه تغطية نصية مفحوصة، لا دمج أو اكتمال المشروع أو شهادة لغوية أو صحية.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/B1/lesson-06-health-fitness-advice.md/.assessment.json` والحزمة `data/course.json`؛20 صفcatalog وأربعة صفوفaudio-register مرجعية فقط. الخيارات الثلاثون والفهارس والروابط و80% محفوظة؛ تغير تفسيرQ07 عربيًا وQ09 لمنع استنتاج جنس الراوي. كلاP مرتبط بـT08.
+- عامل الخدمة واختباراه؛progression/accessibility_audit؛ الجديد `tools/test_b1_06_review.py`؛ السجلان `data/reviews/b1-06-review.json/.md` والفهرس وREADME وPROGRESS وخطة التحسين2.42 وتقرير المتصفح وملفا التسليم. لا تغييرapp.js/CSS/playlist/MP3/package/lock/test_forms_keyboard.
+- رُفع التنفيذ **08d8237b6e74d3fd9970ada18e203c2be6c6f6de** إلى الفرع الوحيد `arena/01a1036f-deutschlern` وتطابقHEAD/origin. رُفعت مجموعة السجل والفحوص `fbe217c6b997b9211d1e7f5aad9dbd6580462d38`، وتطابقHEAD/origin؛ الإيصال أعلاه يثبت حالة الرفع والنشر.
+- آخر استعلامPR#1:OPEN وmergedAt=null والرأس08d8237. **نجح نشر تنفيذ08d8237 إلىPreview**، deployment6946734014، والرابط https://deutschlern-qq17xcrv2-balinader-2671s-projects.vercel.app . الحالة مؤكدة منAPI؛ الواجهة البعيدة وProduction لم تختبرا، ولا يُنسب النجاح إلىcommit التقرير اللاحق. لا إعادة نشر متكررة أو ترقية مدفوعة عند حد الخدمة.
+- **التالي CR37/B1.7 — أساليب الحياة والعادات والثقافات: الروابط الثنائية.** اقرأ المصدر والتقييم وأصول الصوت المكتوبة كاملة، وراجع التوازي معsowohl…als auch / nicht nur…sondern auch / entweder…oder / weder…noch، وكل نص وتمرين وخيار ومعيار دون تعميم ثقافي. احفظLaila02/Omar03 والقراءة02 والاستماع03 والمفردات/النماذج02، ولا تعاود اختيار الأصوات أو توليد المقاطع الموجودة. لا حاجة لإعادةB1.6.
+- كل تعديل يرفع فور فحص مجموعته؛ لا تبديل فرع أو دمجPR#1 أو إعلان اكتمال غير مدمج. المحتوى والتقييم والتطبيق قبل الصوت، ولا مراجع بشري شرطًا. لا حذف عمل أوreset/clean بلا مقارنة، ولا إخفاء صوت أوready دون موافقة؛ حد10 طلبات صوت/رد. قراراتB1.9/B1.10 المعلقة واختيارB1.11 محفوظة، وكذلكA2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## حدود المحتوى والمراجع والصوت
+
+- **T04:** du يحتاجsolltest/könntest، وman يحتاجsollte. إضافةsollte إلى البنك تصحح تعارض التعليمات مع المفتاح، لا تغييرًا لمفتاح كان صحيحًا. الفرق بين التوصية والاقتراح مقصدي في الموقف، وليس حكمًا بأن كل بديل آخر غير نحوي أو أقل أدبًا دائمًا.
+- **V2** للرئيسية الخبرية، لا لكل جملة؛ السؤالKönnten Sie…? يبدأ بالمصرف. المصدر ينهي الجزء الرئيسي فيIch sollte daran denken، ويتلوه تركيبmich ... aufzuwärmen. المصدر المباشر بعدModalverb بلاzu؛aufzuwärmen داخل تركيب آخر. sollte قد تطابق الماضي شكليًا، وkönnte ليستkonnte.
+- **steigern** يزيد/يرفع؛allmählich/langsam تضيفان التدرج أو البطء. **Beschwerden** الصحية جمع بحسبDuden؛ المفرد المسجل ضمن قائمة أسماء، لا ترجمة مسجلة لعارض مفرد. هذه توضيحات مكتوبة لا تسجيلات مصححة. PHR يحتوي13 وحدة نطق مكتوبة:9 أسماء ثم4 عبارات؛allmählich ضمن عبارة، والجمع والتصريف في الجدول ليس كله منطوقًا.
+- القراءة:وجود المجموعة منذ3 أشهر والاجتماع مرتان أسبوعيًا لا يحددان بدايةDalia أو حضورها كل لقاء. الاستماع:مشاركة منذ4 أسابيع بعد العمل، دون اسم أو جنس مصرح به للراوي. لا ندمج المجموعتين أو ننسب تأهيلًا طبيًا للمدرب.
+- **muss nicht** نفي لزوم لا حظر أو عجز؛الفكرة القابلة للتنفيذ لا تعني أنها نُفذت. نقلich فيT06 يقتضيmich، بينما تلخيصdie Person في مفتاح أسئلة الاستماع يصح معهsie/sich. لا جنس مستنتج من الصوت أو الصيغة النحوية.
+- الأنشطة أمثلة لغوية لا برنامج تدريب أو علاج. الماء بعد التدريب لا يعني منع الشرب قبله أو أثناءه أو كمية معينة. شعور الراوي بالراحة ليس دليل شفاء أو سلامة عامة؛الأعراض أو القلق تستدعي مشورة مؤهلة، ولا يطلب مثالanhaltende Beschwerden انتظار استمرار أعراض حادة.
+- P01 أربع جمل كتابة فقط، وP02 أربعة أدوار كتابة ثم جهر؛ وقت الغد عند13 وخروج قصير ومشاركة اختيارية صريحة. لا شريك أو تسجيل أو بيانات صحية أو تنفيذ نشاط. حد110 محفوظ، والنموذجان248/261 حرفًا، ولا يصحح الإقرار اللغة أو الطب آليًا.
+- **لا استماع أو توليد أو اعتماد صوتي جديد.** Hiba02 كما فيA2.7 وFares03؛ المفردات والنماذج والقراءة02 والاستماع03. خمسة أصول/10 مقاطع ثابتة، والنموذجان الجديدان مكتوبان غير مسجلين.
+- عشرة مراجع كاملة:ثمانية لغوية وWHO/NHS للصحة العامة. Konjunktiv وWHO قرئا بالجزأين0و1، وباقي الصفحات فيجزء واحد؛NHS أعاد التوجيه إلى المسار الحالي. لم تحسب صفحات فاشلة أوPDF أو فيديو أو الدراسات المرتبطة غير المقروءة. WHO لا يصدق شخصيات القصة، وصفحةNHS للبالغين19–64 لا وصفة لكل عمر أو حالة؛ لم تُنقل جرعاتها أو إحصاءاتها إلى التمرين.
+
+## الفحوص وحدودها — CR36
+
+- **PASS: البناء والتحقق**؛ الحزمة **2,068,845 بايت** والمخزن **v84**. 53 درسًا و428 عنوان تمرين و60 عنوانًا يطابق عداد الحوار و754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء و1080 صف كتالوج. زيادة عداد الحوار بسبب عنوانT08 لا تسجيل جديد. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending.
+- **PASS:36 حارس مراجعة** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–12 وB1.1–6. الحارس الجديد يطابق107 وحدات و37 بندًا وصفوف التصريف الستة و30 بديل تقييم وستة معايير والنموذجين والمصدر والربط والبصمات والتفريغات؛ البناء لا يُحسب مراجعة فردية للدروس المتبقية.
+- **PASS: خمس مجموعاتNode:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs، وgit diff --check.
+- **تعثر أول فيprogression:** تغيّر تنسيق عنوان قسم القاعدة فكسرsplit القديم فيالسطر1780. أعيد العنوان الأصلي، وحُدد استخراج أمثلةMODEL قبل قسم المساعدة الجديد كي لا يحسب شروحه تسجيلات. بقيت مقارنة نصMODEL بالملف المسجل حرفية وصار الاختبار ناجحًا. حُدث عقد الأداء القديم إلى مطابقة نص المهمتين ونوعي الدليل وإقراريالجهر[false,true] بدل فرض الكلام على كليهما. لا إضعاف لفحوص الأصوات أوA2.9.
+- **PASS: مجموعات المتصفح الخمس** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**، معPlaywright1.58.2 وaxe-core4.11.0. package/lock لم يتغيرا؛ حزمةSparticuz143.0.4 ومكتباتal2023 مؤقتة خارجGit. لا فشل بدءChromium في هذه الجولة.
+- العام عند1440×900 و390×844:RTL والتنقل والقفل والتفريغات وتشغيلMP3 بسرعتي1 و0.8 والتوقف عند الانتقال؛ العمل دون اتصال ونطاقات البايت و416/503. تشغيل آلي صامت لا استماع لكل ملف أو ضمان بقاء كل الصوت مخزنًا.
+- تحديث عامل الخدمة منfixture v42 إلىv84 دون إعادة تحميل قسرية، وحفظ التقدم والإجابات وعزل المخازن، و503 للصوت المفقود ثم إعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي أوProduction.
+- **progression:** يبقى سجلB1.6 القديمv1 دون منحه إتقانv2 أو فتحB1.7؛ ترفض المسودة القديمة. الدرجة والدليل والنسخة الحالية تفتح التالي، وحذف الدليل يمنعه. P01 لا يظهر فيه مربع جهر؛P02 يلزمه. جميع الإقرارات وحد110 مطلوبة، والنموذجان248/261 حرفًا؛ هذه ليست فحوصًا آلية لعدد الجمل أو جودة اللغة أو النطق أو الملاءمة الطبية.
+- **axe:**157 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة؛ **108 ظهورات غير حاسمة تشمل243 ظهورًا لعقد**. النتائج غير الحاسمة ليست مخالفات مؤكدة أو نجاحًا شاملًا؛ لا شهادةWCAG أو مراجع بشري شرطًا للاستمرار.
+- **forms_keyboard:** نجح1440 و390 من أول تنفيذ فيCR36، بما فيه التصدير والاستيراد والملف غير الصالح والمسودات والتمرير. تذبذبnative filechooser التاريخي فيCR29/CR33 **باقٍ غير محلول**؛ لا تعديل للتطبيق أو اختبارforms أو المهلة ولا سبب سابق مثبت. نجاح الجولة لا يعد إصلاحًا.
+- **العرض الضيق:**126 حالة،63 عند320×900 و63 عند568×320؛ تشمل الدروس والتفريغات والجداول. viewport ليس هاتفًا فعليًا أو تكبير نظام.
+- **الحفظ مقابلce5af503e1a89c2b38ae751a38a514ec446e0c92:**52 درسًا أخرى وكل مفاتيحcourse خارجlessons و1060 صف كتالوج أخرى و212 صف سجل صوت أخرى مطابقة. 589 ملفًا محميًا مطابقة بايتًا ببايت، منها474MP3 وplaylist وapp.js/CSS/index/package/lock وأداتاbuild/verify والمصادر المحمية الأخرى.
+- تغيرت أربعة صفوف صوت فقط وفيsource_line وحده:MODEL/DLG/READ/LST. صفPHR ثابت، وإجمالي الصفوف الصوتية الثابتة213، منها212 ليست لـB1.6. حالةready تاريخية محفوظة؛ الألفاظ والأصوات والمسارات والتفريغات ثابتة، ولا اعتماد جديد.
+
+## أرشيف التنفيذ السابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR36 / B1.6 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `ce5af503e1a89c2b38ae751a38a514ec446e0c92`. قورنت728 ملفًا معorigin بعدfetch بصفر اختلاف أو إضافات قبل استعادةmetadata القديمة بـreset --mixed؛ لا فقد عمل ولا تنظيف لاحق دون مقارنة.
+- المصدر والتقييم `content/B1/lesson-06-health-fitness-advice.md/.assessment.json` إلى `b1-06-v2` والمخزنv84؛ الحزمة2,068,845 بايت. صُححT04 بإضافةsollte معman، وصُححsteigern إلى يزيد/يرفع دون افتراض التدرج، ووُضح معنىBeschwerden الصحي بصيغة الجمع بحسبDuden. التسجيل ينطق المفرد ضمن قائمة أسماء، ولا نزعم تغييره.
+- قُيد الموقع الثاني بالرئيسية الخبرية، والمصدر بنهاية الجزء الرئيسي، مع السؤال بالمصرف أولًا وaufzuwärmen فيتركيبdaran denken مقابل مصدرModalverb بلاzu. أضيف Q02/Q03 حرفيًا إلىT02؛ الخيارات الثلاثون والفهارس والروابط و80% محفوظة. صُححت عربيةQ07 وأزيل افتراض جنس راويQ09؛T06 يحفظich/mich بدل تغيير الضمير في نقل النص.
+- P01/T08أ أربع جمل كتابة فقط؛ P02/T08ب أربعة أدوار مع الجهر، ووقت الغد عند الواحدة وفكرة الاستراحة والمشاركة الاختيارية صريحة. المعايير والمصدر والنموذجان متطابقة؛ النموذجان248/261 حرفًا فوق110 المحفوظة. لا شريك أو تسجيل أو بيانات صحية أو تنفيذ تمرين أو تشخيص أو جرعات؛ الإقرار ليس تقييمًا طبيًا أو لغويًا آليًا.
+- عشرة مراجع كاملة:ثمانية لغوية وWHO/NHS للحدود العامة. Konjunktiv وWHO قرئا بالجزأين0و1؛NHS أعاد التوجيه إلى مساره الحالي. لا صفحةفاشلة محسوبة، ولاPDF أو دراسة مرتبطة أو فيديو غير مقروء. لا نستنتج شفاء من شعور الراوي أو أهلية طبية من لقبTrainer أو كمية ماء من نص القصة.
+- الملفات الأخرى:20صفcatalog وأربعةصفوفaudio-register فيsource_line فقط؛ عامل الخدمة واختباراه؛progression/accessibility_audit؛ الجديد `tools/test_b1_06_review.py` وملفا التسليم. خمسة أصول/10 مقاطع وأصواتHiba02/Fares03 والرواة02/03 ثابتة؛ لا استماع أو توليد أو اعتماد جديد.
+- PASS: البناء والتحقق وحارس التنفيذ و35حارسًا سابقًا وخمس مجموعاتNode وصياغةJS وgit diff --check. تعثرprogression أولًا لأن فاصلة تنسيق فيعنوانالقسم كسرتsplit قديمًا؛ أعيد العنوان الأصلي، وحدد مستخرجMODELs قبل المساعدة الجديدة حتى لا يعدها أمثلة مسجلة، وبقيت مقارنة نص التسجيل صارمة. حُدث عقد الأداء القديم من كلاهما كتابة/كلام إلى تطابق النص والإقرارات[false,true]؛لا تخفيف لفحوص الصوت أوA2.9.
+- الحفظ:52 درسًا أخرى وكل مفاتيحcourse خارجlessons و1060صفcatalog أخرى و212صفaudio-register أخرى؛589ملفًا محميًا منها474MP3 وplaylist مطابقة بايتًا ببايت. جميع الألفاظ الألمانية المسجلة والروابط والحالات ثابتة.
+- التنفيذ يُرفع فور فحصه بعنوان `Review CR36 B1.6 advice grammar and health boundaries`؛ معرفه فيgit log ثم التقرير. **السجل التفصيلي وفحوص المتصفح لم ينتهيا بعد؛ الحملة تبقى34/53 والبوابة منفصلة،19متبقية.** التالي توثيق107وحدات/37بندًا والمراجع، ثم36حارسًا والمتصفح ورفعها؛ بعدهاCR37/B1.7. لا تبديل فرع أو دمجPR#1 أو إعلان اكتمال غير مدمج.
+- بقية القرارات مستمرة: كل تعديل يرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت، ولا مراجع بشري شرطًا. لا إعادة توليد أو إخفاء صوت أوready بلا موافقة؛ حد10طلبات/رد. احفظA2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6، واعتمادB1.9/B1.10 معلق واختيارB1.11 محفوظ. نجاحGitHub لا يعني نجاح النشر؛ لا إعادة نشر متكررة عند حد الخدمة. تذبذبfilechooser التاريخي لا يعد محلولًا من نجاح لاحق.
+
+## أرشيف CR35 — لا ينسخ الحالة أعلاه
+
+## إيصال رفع CR35 — 2026-10-08
+
+- **التنفيذ:** `063068653f5ed1abc5498c325a9770bd15b13a3f`؛ **السجل والفحوص:** `4d4a10edac6df2c5cab9f988f670d702aa8ed22e`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. هذا الإيصال يُرفع فور فحصه بعنوان `Record CR35 delivery receipt`؛ معرفه فيgit log، ونشره غير مستعلم عنه.
+- آخر استعلام صريح للرأس4d4a10e: **PR#1 OPEN، mergedAt=null**. نشر **تنفيذ0630686 ناجح** إلىPreview رقم6946403361: https://deutschlern-fg3clft8i-balinader-2671s-projects.vercel.app . أما نشر **السجل4d4a10e** ففشل بسبب **Deployment rate limited — retry in 24 hours**، وdeployments=[]. لا ننسب نجاح التنفيذ إلى أحدثcommit، ولا ندعي اختبار الواجهة البعيدة أوProduction؛ لا إعادة نشر متكررة أو ترقية مدفوعة.
+- **PASS:** البناء والتحقق و35 حارسًا وخمس مجموعاتNode ومجموعات المتصفح الخمس علىv83؛ الحزمة2,057,755 بايت وb1-05-v2. فُحصت153 حالةaxe بصفر مخالفات للقواعد المختارة، مع105 ظهورات غير حاسمة/237 ظهورًا لعقد، و126 حالة عرض ضيق. فشلprogression القديم بسبب عبارة الشفهي الملغاة موثق؛ استُبدل باختبارات تطابق المصدر والدليل ثم نجح، دون إضعاف فحوص الصوت.
+- **التغطية:**107 وحدات/39 بندًا/30 بديل تقييم/6 معايير/10 صفحات مرجعية كاملة. **34/53 درسًا والبوابة منفصلة،19 متبقية.** جميع سجلات الأسئلة العشرة وخياراتها ومفاتيحها وروابطها ثابتة، وخمسة أصول/10 مقاطعB1.5 وأصواتها محفوظة بلا استماع أو توليد أو اعتماد جديد. النماذج279/254 حرفًا مكتوبة غير مسجلة؛ حد110 محفوظ.
+- forms_keyboard نجح من أول تنفيذ فيCR35 عندالعرضين؛ هذا لا يصلح التذبذب التاريخي، ولا تعديل للتطبيق/الاختبار أو سبب مثبت. أربع صفحاتnot found مستبعدة، وVerbindung قرئت فيجزأين0و1؛ لا مراجع بحث مقتطفة أوPDF غير مقروء في العداد.
+- **التالي CR36/B1.6 — الصحة واللياقة والنصيحة.** راجع كل نص وتمرين وخيار ومعيار بالمصادر، واحفظHiba02/Fares03 والمفردات/النماذج/القراءة02 والاستماع03 بلا إعادة توليد أو طلب اختيار جديد. كل تعديل يرفع فور فحص مجموعته؛ لا تبديل فرع أو دمج، ولا مراجع بشري شرطًا. بقية القيود والملفات والنتائج في الأقسام التالية؛ العمل غير المدمج لا يوصف بأنه مكتمل.
+
+رُوجع **B1.5 — المدن ووصف الأماكن: الجمل الموصولة في الرفع والنصب** في **107 وحدات و39 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. ضُبطت حالة الموصول بحسب وظيفته داخل التابعة لا حالة الاسم في الرئيسية، والفواصل وتصريف الفعل مع فاعله. **P01 وصف من خمس جمل كتابة فقط؛ P02 أربعة أدوار مع الجهر**، بمصدر ومعايير ونموذجين متطابقة. أضيف دعم مباشر لـQ02/T02 وQ07/T05، وقُيد سؤال المكتبة بالمذكور **bis spät** وصُححت صياغة T06. فُصلت الرؤية عن الزيارة ومعنى **verkehrsberuhigt** عن منطقة المشاة. **جميع سجلات الأسئلة العشرة والخيارات الثلاثون والمفاتيح والروابط و80% محفوظة.** الإصدار `b1-05-v2` والمخزن `v83`؛ خمسة أصول/10 مقاطع دون استماع أو توليد أو اعتماد جديد. **الحملة34/53 درسًا والبوابة منفصلة؛ تبقى19، والتالي CR36/B1.6.** هذه تغطية نصية مفحوصة، لا دمج أو اكتمال المشروع أو شهادة مستوى.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/B1/lesson-05-cities-relative-clauses.md/.assessment.json` والحزمة `data/course.json`؛20 صفcatalog وثلاثة صفوفaudio-register مرجعية فقط. سجلاتQ01–Q10 كلها مطابقة للخط الأساسي، بما فيها الربط والتفسير والبدائل؛ كلاP مرتبط بـT08.
+- عامل الخدمة واختباراه؛progression/accessibility_audit؛ الجديد `tools/test_b1_05_review.py`؛ `data/reviews/b1-05-review.json/.md` والفهرس وREADME وPROGRESS وخطة التحسين2.41 وتقرير المتصفح وملفا التسليم. لا تغييرapp.js/CSS/playlist/MP3/package/lock/test_forms_keyboard.
+- رُفع التنفيذ **063068653f5ed1abc5498c325a9770bd15b13a3f** إلى الفرع الوحيد `arena/01a1036f-deutschlern` وتطابقHEAD/origin. رُفعت مجموعة السجل والفحوص `4d4a10edac6df2c5cab9f988f670d702aa8ed22e`، وتطابق HEAD/origin؛ الإيصال أعلاه يثبت حالة الرفع والنشر.
+- آخر استعلامPR#1:OPEN وmergedAt=null والرأس0630686. **نجح نشر تنفيذ0630686 إلىPreview**:deployment6946403361، والرابط https://deutschlern-fg3clft8i-balinader-2671s-projects.vercel.app . حالةAPI مؤكدة؛ الواجهة البعيدة وProduction لم تختبرا. لا ننسب هذا النجاح إلىcommit التقرير اللاحق؛ لا إعادة نشر متكررة أو ترقية مدفوعة عند حد الخدمة.
+- **التالي CR36/B1.6 — الصحة واللياقة والنصيحة:** اقرأ المصدر والتقييم وأصول الصوت المكتوبة كاملة، وراجع كل نص وتمرين وخيار ومعيار والتمييز بين نصيحة لغوية عامة وادعاء صحي. احفظHiba02 وFares03، والمفردات/النماذج/القراءة02 والاستماع03؛ لا إعادة اختيار أصوات أو توليد التسجيلات الموجودة. لا حاجة لإعادةB1.5.
+- كل تعديل يرفع فور فحص مجموعته؛ لا تبديل فرع أو دمجPR#1 أو إعلان اكتمال العمل غير المدمج. المحتوى والتقييم والتطبيق قبل الصوت، ولا مراجع بشري شرطًا. لا حذف عمل أوreset/clean بلا مقارنة، ولا إخفاء تسجيل أوready دون موافقة؛ حد10 طلبات صوت/رد. قراراتB1.9/B1.10 المعلقة واختيارB1.11 محفوظة، وكذلكA2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## حدود المحتوى والمراجع والصوت
+
+- جنس الموصول وعدده من الاسم المرجع، لكن حالته من دوره داخل التابعة. **Ich besuche den Park, der ... liegt** لا ينسخden إلى الموصول الفاعل، والعكس في**Der Park, den wir besuchen, ...**. die/das قد يطابقان شكليًا الرفع والنصب؛ التصريف مع الفاعل لا المفعول.
+- الفعل المصرف في نهاية التابعة المدروسة لا آخر الجملة المركبة كلها؛ فاصلتان عند إدراجها داخل الرئيسية. في آخر القراءة وصفان منسقان يشتركان فيdie، ولكل منهما فعل. الفاعل النحوي في**der ... umgeben ist / die ... markiert sind** ليس بالضرورة منفذ الحدث.
+- T03 يثبت الرئيسية الأولى لتحديد التحويل، ولا ينفي صياغات صحيحة بترتيب مختلف خارج تعليماته. T04 يطلب الفاصلتين؛ T02 يستخدم بنكder/die/das/den، لا إنكارًا لوجودwelcher وحالات أخرى.
+- **verkehrsberuhigt** تخفيف المرور لا مساواة تلقائية بمنطقة المشاة. **Verbindung** رابط مواصلات بين الأماكن لا مركبة بعينها. **Ufer** حافة ماء، و**am Wasser** لا يحدد نهرًا؛ **zu Fuß erreichbar** إمكان لا حصر أو ضمان إتاحة لكل شخص. هذه ليست تعليمات مرورية قانونية.
+- السوق الأسبوعي حدث لا يساوي بالضرورة ساحةالسوق؛ جوابYusuf عنAltstadt مختصر مفهوم من السؤال. Brückenfeld خيالية في النص، لا حكم جغرافي ينفي وجود اسم مشابه. لا ندمج مواقع النصوص المستقلة.
+- رؤية المساحة الخضراء لا تثبت زيارتها، ووصف المتحف لا يثبت أنNoura دخلته. **bis spät** لا يذكر ساعات العمل كاملة؛**tagsüber ruhig** لا يصف الليل. جنوب المركز لا يثبت الأطراف، وجنس راوي الاستماع واسمه غير مصرح بهما.
+- P01/T08أ خمس جمل كتابة فقط، وP02/T08ب أربعة أدوار كتابة ثم جهر، بلا شريك أو تسجيل أو بيانات حقيقية. حد110 محفوظ، والنموذجان279/254 حرفًا؛ لا تصحيح آلي لعدد الجمل أو النطق أو استحقاق شهادةCEFR.
+- **لا استماع أو توليد أو اعتماد صوتي جديد.** خمسة أصول/10 مقاطع محفوظة:Mara02/Yusuf03، والمفردات والنماذج والقراءة02 والاستماع03. النماذج الجديدة ومثالا اختلاف الحالة مكتوبة غير مسجلة؛ لا تُنسب إلى المقاطع الموجودة.
+- عشر صفحات كاملة:Relativsätze/Relativpronomen/Nebensätze فيLingolia؛ وverkehrsberuhigt/Fußgängerzone/Ufer/Verbindung/Altstadt/befinden/Aussichtspunkt فيDuden. Verbindung قرئت بجزأيها0و1. أربع صفحاتnot found مستبعدة رغمstatus success؛ لا نتائج بحث أوPDF أوفيديو غير مقروء يحسب مرجعًا. المعاجم لا تثبت حقائق القصة ولا تصادق على المنهج أو كل كلمة فيه.
+
+## الفحوص وحدودها — CR35
+
+- **PASS: البناء والتحقق**؛ الحزمة **2,057,755 بايت** والمخزن **v83**. 53 درسًا و428 عنوان تمرين و59 عنوانًا يطابق عداد الحوار و754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء و1080 صف كتالوج. الزيادة إلى59 عنوان حوار ناتجة عن عنوانT08، وليست تسجيلًا جديدًا. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending.
+- **PASS:35 حارس مراجعة** تغطي A0.1–5 والبوابة وA1.1–12 وA2.1–12 وB1.1–5. الحارس الجديد يطابق107 وحدات و39 بندًا، وثماني صيغ في جدول الضمائر، و30 بديل تقييم وستة معايير والمصدر والربط والنموذجين والبصمات والتفريغات. هذه التغطية لا تجعل البناء مراجعة فردية للدروس المتبقية.
+- **PASS: خمس مجموعاتNode:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs، وgit diff --check.
+- **فشل أول موثق فيprogression:** assertion قديم فيالسطر2044 كان يفرض عبارة «أو قدّمه شفهيًا» الملغاة لتعارضها مع دليل التطبيق. استُبدل بمنع العبارة القديمة ومطابقة نص كل مهمة للمصدر وspeakAloud=[false,true]؛ ثم أعيد الاختبار ونجح. أضيفت فحوصv2/الدليل قبل كتلة الصوت، وبقيت بقية الكتلة التاريخية حرفيًا باستثناء هذا العقد النصي القديم؛ لا تخفيف لفحوص الصوت أوA2.9.
+- **PASS: مجموعات المتصفح الخمس** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**، معPlaywright1.58.2 وaxe-core4.11.0. ثُبتت حزمpackage-lock دون تغييره؛ Sparticuz143.0.4 ومكتباتal2023 مؤقتة خارجGit. لم يتعثر تشغيل Chromium فيهذه الجولة.
+- العام عند1440×900 و390×844:RTL والتنقل والقفل والتفريغات وتشغيلMP3 بسرعتي1 و0.8 والتوقف عند الانتقال؛ العمل دون اتصال ونطاقات البايت و416/503. التشغيل آلي صامت، لا استماع لكل ملف أو ضمان حفظ الصوت دائمًا.
+- تحديث عامل الخدمة منfixture v42 إلىv83 دون إعادة تحميل قسرية، وحفظ التقدم والإجابات وعزل المخازن، و503 للصوت المفقود ثم إعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي أوProduction.
+- **progression:** سجلB1.5 القديمv1 يبقى مخزنًا لكنه لا يمنح إتقانv2 أو يفتحB1.6؛ المسودة القديمة مرفوضة. الدرجة والدليل والنسخة الحالية تفتح التالي، وحذف الدليل يمنعه. P01 كتابة فقط دون مربع جهر؛ P02 يطلب الجهر. جميع الإقرارات وحد110 مطلوبان؛ النموذجان279/254 حرفًا. الحروف والإقرارات لا تتحقق آليًا من عدد الجمل أو جودة اللغة أو النطق.
+- **axe:**153 حالة ممثلة، وصفر مخالفات للقواعد الآلية المختارة؛ **105 ظهورات غير حاسمة تشمل237 ظهورًا لعقد**. النتائج غير الحاسمة ليست مخالفات مؤكدة أو نجاحًا شاملًا؛ لا شهادةWCAG أو مراجع بشري شرطًا للاستمرار.
+- **forms_keyboard:** نجح1440 و390 من أول تنفيذ للاختبار فيCR35، بما فيه التصدير والاستيراد والملف غير الصالح والمسودات والتمرير الضيق. تذبذبnative filechooser التاريخي فيCR29/CR33 **لا يزال غير محلول**؛ لم يتغير التطبيق أو اختبارforms أو المهلة، ولم يثبت سبب العطل السابق. نجاح الجولة لا يعد إصلاحًا.
+- **العرض الضيق:**126 حالة،63 عند320×900 و63 عند568×320؛ تشمل الدروس والتفريغات والجداول. viewport ليس هاتفًا فعليًا أو تكبير نظام.
+- **الحفظ مقابل3048537769a6a2523af80066bb04b23f2273ab9e:**52 درسًا أخرى وكل مفاتيحcourse خارجlessons، و1060 صف كتالوج أخرى و212 صف سجل صوت أخرى مطابقة. 589 ملفًا محميًا مطابقة بايتًا ببايت، منها474MP3 وplaylist وapp.js/CSS/index/package/lock وأداتاbuild/verify والمصادر المحمية الأخرى.
+- سجل الصوت تغير في **ثلاثة صفوف فقط وفيsource_line وحده:DLG/READ/LST**. صفاPHR/MODEL ثابتان، فيكون إجمالي الصفوف الصوتية الثابتة214، منها212 ليست لـB1.5. الأصوات والحالات والتفريغات والمسارات الفعلية لم تتغير؛ لا اعتماد صوتي جديد.
+
+## أرشيف التنفيذ السابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR35 / B1.5 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `3048537769a6a2523af80066bb04b23f2273ab9e`. عادت metadata إلى88f3c06، ففُحصت725 ملفًا مقابلorigin بعدfetch بصفر اختلاف أو إضافات، ثم استعيدت بـreset --mixed دون فقد عمل. لا تنظيف أوreset لاحق بلا مقارنة جديدة.
+- المصدر والتقييم `content/B1/lesson-05-cities-relative-clauses.md/.assessment.json` إلى `b1-05-v2` والمخزنv83؛ الحزمة2,057,755 بايت. جرى شرح الجنس والعدد من المرجع والحالة من دور الموصول داخل التابعة، لا حالة الرئيسية؛ فاصلتان للتابعة المدرجة وتصريف مع الفاعل لا المفعول، وتمييز الفاعل النحوي عن منفذ الحدث.
+- P01/T08أ خمس جمل كتابة فقط، وP02/T08ب أربعة أدوار مع الجهر؛ أزيلت البدائل المتناقضة مع الإقرار، وطوبق المصدر والمعايير والنموذجان. النموذجان279/254 حرفًا؛ حد110 محفوظ لكليهما. لا شريك أو تسجيل أو بيانات حقيقية؛ دليل الحروف والإقرار لا يصحح جودة اللغة أو النطق.
+- أضيف Q02 حرفيًا إلىT02 وQ07 إلىT05؛ جميع سجلات الأسئلة العشرة بما فيها الخيارات الثلاثون والمفاتيح والروابط والتفسيرات مطابقة للخط الأساسي، و80% محفوظة. قُيدت أوقات المكتبة بالمذكورbis spät، وأصبحT06 ألمانيًا ببنك كلمات وHaltestelle دون أداة ثانية بعدzur. T03 يحتفظ بالرئيسية الأولى، وT04 يطلب الفاصلتين. أزيل استنتاج السبب من وصف البلدة فيT05.5.
+- صُحح المعنى العربي لـVerbindung وverkehrsberuhigt، ووسعUfer دون تغيير الألمانية المسجلة. فُصلت رؤية المساحة عن زيارتها ووصف المتحف عن إثبات دخوله، وbis spät عن ساعة محددة وtagsüber عن الليل، والوصول مشيًا عن الحصرية أو ضمان الإتاحة.
+- الملفات الأخرى:20صفcatalog وثلاثةصفوفaudio-register فيsource_line فقط (DLG/READ/LST)؛ عامل الخدمة واختباراه؛progression/accessibility_audit؛ الحارس الجديد `tools/test_b1_05_review.py` وملفا التسليم. لا تعديلapp.js/CSS/playlist/MP3/package/lock أوforms_keyboard.
+- PASS: البناء والتحقق وحارسB1.5 بوضعimplementation-only و34حارسًا سابقًا وخمس مجموعاتNode وصياغةJS وgit diff --check. فشلprogression أولًا لأن assertion قديمًا يفرض «أو قدّمه شفهيًا»؛ استُبدل بمنع البديل القديم ومطابقة نص كل مهمة وإقراريالجهر[false,true]، ثم نجح. هذا تعديل عقد المحتوى لا إضعاف اختبارات الصوت؛ بقية الكتلة التاريخية مطابقة حرفيًا.
+- الحفظ:52درسًا أخرى وكل مفاتيحcourse خارجlessons و1060صفcatalog أخرى و212صفaudio-register أخرى؛589ملفًا محميًا منها474MP3 وplaylist مطابقة بايتًا ببايت. خمسة أصول/10مقاطعB1.5 ثابتة؛Mara02/Yusuf03 والمفردات/النماذج/القراءة02 والاستماع03. لا استماع أو توليد أو اعتماد صوتي جديد.
+- التنفيذ يُرفع فور فحصه بعنوان `Review CR35 B1.5 relative clauses and evidence tasks`؛ المعرف فيgit log ثم التقرير. **السجل التفصيلي وفحوص المتصفح لم ينتهيا بعد؛ الحملة تبقى33/53 والبوابة منفصلة،20متبقية.** التالي فورًا توثيق107وحدات/39بندًا و10مراجع كاملة ثم35حارسًا والفحوص المتصفحية ورفعها؛ بعدذلكCR36/B1.6. لا تعلن اكتمال قبل الفحص والرفع والدمج.
+- عشر صفحات مرجعية قرئت كاملة؛Verbindung فيجزأين0و1. أربع صفحاتnot found استُبعدت رغمstatus success، ولا تعد مراجع. Chromium143.0.7499.0 والمكتبات المؤقتة جاهزة خارجGit؛ فحوص المتصفح ستبدأ الآن. تذبذبfilechooser السابق لا يُعد محلولًا لمجرد نجاح لاحق.
+- القرارات مستمرة: كل تعديل يرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت، ولا مراجع بشري شرطًا. لا تبديل فرع أو دمجPR#1، ولا إخفاء أو إعادة توليد صوت أوready بلا موافقة؛ حد10طلبات صوت/رد. احفظA2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6، واعتمادB1.9/B1.10 معلق واختيارB1.11 محفوظ. نجاحpush لا يعني نجاحVercel/Production؛ لا إعادة نشر متكررة بسبب حد الخدمة.
+
+## أرشيف CR34 — لا ينسخ الحالة أعلاه
+
+## إيصال رفع CR34 — 2026-10-08
+
+- **التنفيذ:** `8e26cc5bd59f72e2c8eeab260c5a0e5657ba30e3`؛ **توضيح المطابقة والمخزن:** `fb7f91302e95075d213d9a41455f873a37671507`؛ **السجل والفحوص:** `308d1f16f3ce8b870aadd6c4732ce0c531203154`. رُفعت جميعها إلى `arena/01a1036f-deutschlern` وتطابق HEAD/origin بعد كل رفع. هذا الإيصال يوثق النتيجة ويُرفع فور فحصه بعنوان `Record CR34 delivery receipt`؛ معرفه فيgit log، ونشره غير مستعلم عنه.
+- آخر استعلام صريح للرأس308d1f1: **PR#1 OPEN، mergedAt=null**. **Vercel failure: Deployment rate limited — retry in 24 hours** وdeployments=[]؛ كذلك فشل نشرfb7f913 بالسبب نفسه. لا إعادة نشر يدوية متكررة أو ترقية مدفوعة. نجاحGitHub لا يعني نشرPreview/Production، ولم تختبر الواجهة البعيدة.
+- **PASS:** البناء والتحقق و34 حارسًا وخمس مجموعاتNode ومجموعات المتصفح الخمس علىv82؛ الحزمة2,046,201 بايت وb1-04-v2. فُحصت149 حالةaxe بصفر مخالفات للقواعد المختارة، مع102 ظهور غير حاسم/230 ظهورًا لعقد، و126 حالة عرض ضيق. نجاحforms_keyboard فيCR34 لا يصلح تذبذبه السابق؛ لم يتغير التطبيق أو الاختبار ولم يثبت سبب سابق.
+- **التغطية:**103 وحدات/34 بندًا/30 بديلًا/6 معايير/10 صفحات مرجعية كاملة؛ **33/53 درسًا والبوابة منفصلة،20 متبقية**. خمسة أصول/10 مقاطعB1.4 والأصوات محفوظة بلا استماع أو توليد أو اعتماد جديد. جمعTabellenkalkulationen مكتوب فقط، وخامسMODEL موضح كصياغة مستقلة، والنموذجان غير مسجلين.
+- **التالي CR35/B1.5 — المدن والجمل الموصولة.** راجع كل نص وتمرين وخيار ومعيار مع المصادر، واحفظMara02/Yusuf03 والنماذج/المفردات/القراءة02 والاستماع03. لا إعادة توليد الموجود أو طلب اختيار الأصوات من جديد. كل تعديل يرفع فور فحصه؛ لا تبديل فرع أو دمج، ولا مراجع بشري شرطًا. بقية القيود والملفات والنتائج في الأقسام التالية. لا نصف العمل غير المدمج بأنه مكتمل.
+
+رُوجع **B1.4 — التعلّم والتعليم المستمر: damit وum … zu** في **103 وحدات و34 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. صُحح شرح Q03 إلى المصدر **verstehen** قبل المصرف **können**، ومفتاح T06 إلى **verstehen** وحدها كما في النص. T01 يطلب **um** فقط حيث **zu** موجودة، وأضيفت مفردة Q01 وربط Q02 به. حُددت مقاصد T03 لمنع التباس المطابقة، وأضيف إلى T07 مثال **damit بفاعل واحد**. **P01 خطة من أربع جمل كتابة فقط؛ P02 أربعة أدوار مع الجهر**، بمعايير ونموذجين مطابقين. حُفظ شرط الشهادة وفُصل الغرض عن الإنجاز والجنس النحوي عن جنس الشخص. الخيارات الثلاثون والفهارس و80% محفوظة. الإصدار `b1-04-v2` والمخزن `v82`؛ خمسة أصول/10 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد. **الحملة33/53 درسًا والبوابة منفصلة؛ تبقى20، والتالي CR35/B1.5.** هذه تغطية نصية مفحوصة، لا دمج أو اكتمال مشروع أو شهادة مستوى.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/B1/lesson-04-continuing-education-damit.md/.assessment.json` والحزمة `data/course.json`؛20 صفًا في catalog وأربعة في audio-register. جميع الخيارات الثلاثين والفهارس و80% محفوظة؛Q02→T01 وQ04→T04/T07 وكلاP→T08.
+- عامل الخدمة واختباراه؛ progression/accessibility_audit؛ `tools/test_b1_04_review.py`؛ السجلان `data/reviews/b1-04-review.json/.md` والفهرس وREADME وPROGRESS وخطة التحسين2.40 وتقرير المتصفح وملفا التسليم. لا تعديل app.js/CSS/playlist/MP3/package/lock/test_forms_keyboard.
+- رُفع التنفيذ **8e26cc5bd59f72e2c8eeab260c5a0e5657ba30e3** ثم توضيحT03 والمخزن **fb7f91302e95075d213d9a41455f873a37671507** إلى الفرع الوحيد `arena/01a1036f-deutschlern`؛ تطابق HEAD/origin. رُفعت مجموعة السجل والفحوص `308d1f16f3ce8b870aadd6c4732ce0c531203154`، وتطابق HEAD/origin؛ الإيصال أعلاه يثبت حالة الرفع والنشر.
+- آخر استعلامPR#1: **OPEN، mergedAt=null**، والرأسfb7f913. Vercel لهذا الرأس **failure: Deployment rate limited — retry in 24 hours** وdeployments=[]؛ نجاحGitHub مستقل عن النشر. لم تُختبر الواجهة البعيدة أوProduction؛ لا إعادة نشر متكررة أو ترقية مدفوعة. نشر مجموعة التقرير لا يستنتج من سابقها.
+- **التالي CR35/B1.5 — المدن والجمل الموصولة:** اقرأ المصدر والتقييم وكل أصل صوتي مكتوب، وراجع كل جملة وسؤال وخيار ومعيار وتوافق الحالة الإعرابية والفاعل/المفعول. احفظMara02/Yusuf03 والمفردات/النماذج/القراءة02 والاستماع03؛ لا تعاود طلب الأصوات أو توليد المقاطع الموجودة. لا حاجة لإعادةB1.4.
+- كل تعديل يرفع فور فحص مجموعته؛ لا تبديل الفرع أو دمجPR#1 أو وصف المشروع بأنه مكتمل. المحتوى والتقييم والتطبيق قبل الصوت، ولا مراجع بشري شرطًا. لا حذف عمل محلي أوreset/clean دون مقارنة؛ لا إخفاء تسجيل أو تغييرready دون موافقة، وحد10 طلبات صوت/رد. اعتمادB1.9/B1.10 معلق واختيارB1.11 محفوظ؛ احفظ A2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## حدود المحتوى والمصادر والصوت
+
+- **damit** ممكنة مع الفاعل نفسه، لكن لا تحل مكانum وحدها أمام مصدر موجود. في آخر الحوار **ich≠wir** ولو كان المتكلم عضوًا في المجموعة. لا نكرر ضمير الفاعل في تركيبum، ولا نعمم النمط على كل تركيب مصدر ألماني.
+- المصرف أخير في مجموعة الأفعال الحاضرة المدروسة؛ **verstehen können** مصدر ثم مصرف، ولا يضافkönnen إلى جواب نقل نص لم يتضمنه. لا نعمم الترتيب البسيط على كل مجموعة فعلية في الأزمنة المركبة.
+- الغرض لا يثبت الإنجاز؛ شرط الشهادة **wenn sie regelmäßig ... teilnehmen** خاص بالقصة، لا اعتماد رسمي أو وعد من التطبيق. التسجيل لا يثبت إكمال الدورة، والمراجعة نهاية الأسبوع غير الحضور مساءً وقراءة المواد صباحًا في النص الآخر.
+- Lehrkraft مؤنث نحوي قد يدل على معلم أو معلمة. جنس راوي الاستماع غير مصرح به؛ die Person وسياقKolleginnen والصوت لا تثبته. Trainerin/Lehrerin مؤنثتان في المعنى.
+- **Tabellenkalkulationen** جمع أضيف كتابة، وتسجيل المفردات ينطق المفرد فقط. خامس MODEL أضيف حرفيًا إلى المصدر كصياغة تعليمية مستقلة لفكرة المجموعة، لا اقتباس حرفي من آخر الحوار. لا تغيير لتسجيلات Nadia02/Farid03 والمفردات/النماذج/القراءة02 والاستماع03، ولا استماع أو توليد أو اعتماد جديد.
+- P01 كتابة فقط، وP02 كتابة ثم جهر بلا شريك أو تسجيل أو بيانات شخصية. النموذجان الجديدان مكتوبان غير مسجلين؛ رفع الحد الحرفي من90 إلى220/210 يناسب الدليل الأطول، لا يقيس جودة اللغة أو يفرض مستوىCEFR.
+- المرجعDuden/anmelden يعطي مثالzu لاfür؛ لا ننسب له إثبات المثال الآخر حرفيًا. صفحةFinalsätze تؤكد إمكانdamit مع الفاعل نفسه، لكن لا ننقل تعميمها عن استحالةwollen/sollen/möchten في كل غرض. في التحويلات الحالية ننقل المقصد ولا يلزم نسخها.
+- قرئت عشر صفحات كاملة، جزء واحد لكل صفحة. نتائج البحث وPDF والفيديو والروابط الفرعية غير المقروءة لا تُحسب مصادر. وصفum … zu في نظرةLingolia العامة بـFolge لم يُنقل كادعاء نتيجة متحققة؛ روجع مع صفحات الغرض والمصدر المتخصصة.
+
+## الفحوص وحدودها — CR34
+
+- **PASS: البناء والتحقق**؛ الحزمة **2,046,201 بايت** والمخزن **v82**. 53 درسًا و428 عنوان تمرين و58 عنوانًا يطابق عداد الحوار و754 مفردة؛ 530 سؤال درس+10 للبوابة، و109 مهمات أداء و1080 صف كتالوج. زيادة عداد عناوين الحوار إلى58 بسبب عنوان T08 الجديد، لا تسجيل جديد. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending.
+- **PASS:34 حارس مراجعة** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–12 وB1.1–4. الحارس الجديد يطابق103 وحدات و34 بندًا و30 بديلًا وستة معايير والمصدر والربط والنموذجين والبصمات، وأجزاء التفريغ المكتوب لكل أصل. البناء وحده لا يُحسب مراجعة فردية لباقي الدروس.
+- **PASS: خمس مجموعات Node:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغة app.js وservice-worker.js وكل tools/test_*.cjs، وgit diff --check. كتلة اختبارات الصوت التاريخية من expectedAudioLessonByPrefix مطابقة للخط الأساسي، بما فيها A2.9؛ لم تضعف لإمرار الفحص.
+- **المتصفح:** نجحت المجموعات الخمس browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout أولًا علىv81 ثم أُعيدت كلها علىv82 بعد توضيح T03. Chromium **143.0.7499.0**، وPlaywright1.58.2 وaxe-core4.11.0. package/lock لم يتغيرا؛ Sparticuz143.0.4 والمكتبات مؤقتة خارجGit.
+- **تعثر البيئة قبل الاختبارات:** أول تشغيل Chromium لم يبدأ بسبب libnspr4.so المفقودة. استخرجت al2023 إلى /tmp وأعيد التشغيل؛ ليس عطلًا في التطبيق أو اختبار متصفح ناجحًا قبل تجهيز البيئة.
+- العام عند1440×900 و390×844: RTL والتنقل والتفريغات وتشغيل MP3 بسرعتي1 و0.8 والتوقف عند التنقل؛ العمل دون اتصال ونطاقات البايت و416/503. التشغيل آلي صامت، لا مراجعة سمعية لكل ملف أو ضمان بقاء كل الصوت مخزنًا.
+- تحديث عامل الخدمة منfixture v42 إلىv82 دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت المفقود ثم إعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل انتقال تاريخي أو اختبارProduction.
+- **progression:** سجل B1.4 القديمv1 يبقى مخزنًا لكنه لا يمنح إتقانv2 أو يفتحB1.5؛ ترفض المسودة القديمة. الدرجة والدليل والنسخة الحالية تفتح التالي، وحذف الدليل يعيد المنع. P01 لا يظهر فيه مربع الجهر ولا يلزمه؛ P02 يلزمه. كلاهما يحتاج كل الإقرارات والحد الحرفي. النموذجان275/261 حرفًا فوق220/210؛ هذه ضوابط دليل لا تصحيح لغة أو نطق.
+- **axe:**149 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة؛ **102 ظهور غير حاسم تشمل230 ظهورًا لعقد**. هذه ليست مخالفات مؤكدة ولا شهادةWCAG أو نجاحًا شاملًا، ولا تجعل مراجعًا بشريًا شرطًا للاستمرار.
+- **forms_keyboard:** نجح1440 و390 علىv81 وعلىv82 من أول تنفيذ لكل منهما، بما فيه التصدير والاستيراد والملف غير الصالح والمسودات. **تذبذب native filechooser السابق فيCR29/CR33 باقٍ غير محلول:** لا تعديل للتطبيق أو الاختبار، ولا تخفيف شروط أو سبب مثبت؛ نجاح هذه الجولة لا يعني إصلاحه. سجلاتCR33 السابقة باقية في الأرشيف.
+- **العرض الضيق:**126 حالة،63 عند320×900 و63 عند568×320؛ تشمل الدروس مع التفريغات والجداول. viewport ليس هاتفًا فعليًا أو تكبير نظام.
+- **الحفظ مقابل dc5aae5056bd3acfbe1e4c83b43cb2eeb51a6815:**52 درسًا أخرى وكل مفاتيح course خارجlessons، و1060 صف كتالوج أخرى و212 صف سجل صوت أخرى ثابتة. 589 ملفًا محميًا مطابقة بايتًا ببايت، منها474MP3 وplaylist وapp.js/CSS/package/lock وأداتاbuild/verify والمصادر الأخرى المحمية.
+- تغيرت أربعة صفوف صوت فقط: MODEL في source_line وnotes، وDLG في source_line وبادئة planned_output_path، وREAD/LST في source_line. صفPHR ثابت، وكذلك المسارات الفعلية والأصوات والحالات. العدد212 هو الصفوف غير التابعة لـB1.4؛ مجموع الصفوف الثابتة213 بإضافةPHR، ولا نخلط الرقمين.
+
+## أرشيف التنفيذ السابق — لا ينسخ الحالة أعلاه
+
+## متابعة CR34: إزالة التباس T03 — 2026-10-08
+
+- رُفعت مجموعة التنفيذ `8e26cc5bd59f72e2c8eeab260c5a0e5657ba30e3` إلى الفرع الوحيد، وتطابق HEAD/origin. نجحت مجموعات المتصفح الخمس على v81، بما فيها forms_keyboard من أول تنفيذ للاختبار؛ هذا ليس إصلاحًا لتذبذب CR33 السابق. فشل بدء البيئة أولًا لغياب libnspr4، ثم استخرجت مكتبات Chromium المؤقتة خارجGit؛ ليس فشلًا في التطبيق.
+- المراجعة التفصيلية كشفت إمكان أكثر من غرض نحوي في T03. أضيفت مقاصد واضحة: شهادتي/فهم التعليمات/التدريب معًا، مع استعمال كل نهاية مرة ودون الحكم باستحالة بدائل خارج السياق. المفتاح1-ج/2-أ/3-ب لم يتغير. الملف المصدر والكتالوج والحزمة والحارس فقط، مع المخزن واختبارَيه إلى **v82** لضمان وصول التصحيح؛ assessment يبقى b1-04-v2 لأن هذا إيضاح في التدريب غير المسجل بدرجة.
+- الحزمة **2,046,201 بايت**. PASS: البناء والتحقق وحارس التنفيذ وprogression/service_worker وgit diff --check؛ ستعاد مجموعات المتصفح على v82 قبل السجل النهائي. دفعة التصحيح بعنوان `Clarify CR34 matching intentions and refresh offline cache`، ويثبت معرفها فيgit log.
+- لا تغيير صوتي أو تطبيق/CSS أو خيارات التقييم أو بيانات متعلم. التقرير الفردي قيد الإعداد؛ العداد يبقى32/53 والبوابة منفصلة حتى فحصه ورفعه. الفرع ثابت ولا دمج؛ بعد إنهاء CR34 يأتي CR35/B1.5. جميع القرارات في القسم التالي مستمرة، ولا مراجع بشري شرطًا.
+
+## تنفيذ CR34 / B1.4 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `dc5aae5056bd3acfbe1e4c83b43cb2eeb51a6815`. جرت مقارنة 722 ملفًا مع origin بصفر اختلاف أو إضافات قبل استعادة metadata بـreset --mixed؛ لا عمل ضائع ولا ترخيص لتنظيف لاحق دون مقارنة.
+- المصدر والتقييم `content/B1/lesson-04-continuing-education-damit.md/.assessment.json`: الإصدار `b1-04-v2` والمخزن `v81`. صُحح شرح Q03 إلى مصدر verstehen ثم المصرف können، ومفتاح T06 إلى verstehen فقط. T01 يطلب um وحدها حيث zu موجودة؛ أضيفت مفردة Q01 وربط Q02 به. الخيارات الثلاثون والفهارس و80% محفوظة، وQ04 مرتبط بـT04/T07؛ أضيف إلى T07 مثال damit بفاعل واحد.
+- الغرض ليس تحققًا، وdamit ممكنة مع الفاعل نفسه؛ في آخر الحوار ich ليست wir ولو شملته المجموعة. حُفظ شرط الشهادة بـwenn، وفُصلت أوقات ومجالات القراءة والاستماع، ولا افتراض لجنس الراوي أو Lehrkraft. جمع Tabellenkalkulationen إضافة مكتوبة فقط. أضيف المثال الخامس المسجل بنصه كصياغة مستقلة لفكرة المجموعة لا اقتباس حرفي من الحوار.
+- P01/T08أ أربع جمل كتابة فقط، وP02/T08ب أربعة أدوار مع الجهر؛ المصدر والمعايير والنموذجان متطابقة. النموذجان275/261 حرفًا فوق220/210؛ رُفع الحد الحرفي من90 لدليل أطول ملائم للمهمة، وليس لقياس جودة اللغة. لا شريك أو تسجيل أو بيانات أو تسجيل فعلي في دورة. النصان الجديدان غير مسجلين.
+- الملفات الأخرى:20 صف catalog، وأربعة صفوف audio-register (مراجع الأسطر، وصف MODEL، وإصلاح بادئة المسار المخطط للحوار؛ المسارات الفعلية لم تتغير). الحزمة2,045,827 بايت؛ عامل الخدمة واختباراه؛ progression/accessibility_audit؛ الحارس الجديد `tools/test_b1_04_review.py`؛ ملفا التسليم. لا تعديل app.js/CSS/package/lock/playlist/MP3 أو اختبار forms_keyboard.
+- PASS: البناء والتحقق، الحارس الجديد بوضع `--implementation-only` و33 حارسًا سابقًا، وخمس مجموعات Node: progression/service_worker/session_persistence/study_time/daily_plan، وصياغةJS وgit diff --check. فحص الحفظ أثبت52 درسًا أخرى و1060 صف كتالوج أخرى و212 صف سجل صوت أخرى و589 ملفًا محميًا منها474 MP3 وplaylist مطابقة للخط الأساسي. خمسة أصول B1.4/10 مقاطع ثابتة؛ Nadia02/Farid03 والنماذج/المفردات/القراءة02 والاستماع03. لا استماع أو توليد أو اعتماد صوتي جديد.
+- تُرفع هذه المجموعة فور فحصها بعنوان `Review CR34 B1.4 purpose clauses and evidence tasks`؛ معرفها فيgit log، ثم يسجل في مجموعة التقرير. **السجل التفصيلي والفحوص المتصفحية لم تنته بعد؛ لا تزد عداد الحملة الآن:**32/53 والبوابة منفصلة،21 متبقية. التالي فورًا سجل كل وحدة/بديل/معيار والمراجع العشرة المقروءة كاملة، ثم الفحوص التراكمية ورفعها. بعدها CR35/B1.5.
+- تذبذب native filechooser السابق باقٍ غير محلول؛ نجاح إعادة لا يعد إصلاحًا. لا ادعاء نشر أو دمج من نجاحpush. لا تبديل الفرع أو دمجPR#1؛ كل تعديل يرفع فور فحص مجموعته. لا مراجع بشري شرطًا؛ المحتوى والتقييم والتطبيق قبل الصوت. لا إعادة توليد أو إخفاء الصوت أو تغيير ready بلا موافقة، وحد10 طلبات/رد. قرارات الأصوات السابقة وA2.7 Q08→T05 وفحوصA2.9 وتاريخB2.6 محفوظة؛ اعتمادB1.9/B1.10 معلق، واختيارB1.11 محفوظ.
+
+## أرشيف CR33 — لا ينسخ الحالة أعلاه
+
+## إيصال رفع CR33 — 2026-10-08
+
+- **التنفيذ:** `f097bb771c9d9d090c200714223ad64e0cf7d387`؛ **المراجعة والفحوص:** `12e5d0364428fca1ae47b0ed587a38fef42e831c`. رُفع الاثنان إلى `arena/01a1036f-deutschlern` وتطابق HEAD وorigin بعد كل رفع. هذا الإيصال تعديل توثيقي يُرفع فور فحصه بعنوان `Record CR33 delivery receipt and browser retry limits`؛ معرفه فيgit log، ولا تنسب إليه حالة نشر سابقه.
+- **آخر فحص PR#1:** OPEN، mergedAt=null، والرأس12e5d03. لم يُدمج العمل ولا يوصف المشروع بأنه مكتمل.
+- **Vercel للتنفيذf097bb7:** success، وPreview رقم **6945646591** بحالةdeployment ناجحة: https://deutschlern-j9n9s8lhs-balinader-2671s-projects.vercel.app . **للمراجعة12e5d03:** فشل بسبب حد النشر، بلاdeployment. رفعGitHub نجح مستقلًا؛ لا إعادة نشر يدوية متكررة أو ترقية مدفوعة. نجاحPreview للتنفيذ ليس نجاح أحدثcommit أوProduction أو اختبارًا للواجهة البعيدة؛ لم تختبر هذه. نشرcommit الإيصال غير مستعلم عنه.
+- **الفحوص:** البناء والتحقق و33 حارسًا وخمس مجموعاتNode PASS؛ مجموعات المتصفح الخمس نجحت في النهاية، **مع فشل أول لا يجوز إخفاؤه**:forms_keyboard نجح1440 ثم تعثر390 بانتظارfilechooser فيالسطر48 لمدة30000ms. أُعيد كامل الاختبار كما هو بملفات معزولة فنجحالعرضان، ثم نجحnarrow_layout. لا تغييرapp/test أو إضعافشرط أو سببمثبت؛ **عاد تذبذبCR29 وبقي غيرمحلول، والإعادة ليست إصلاحًا**.
+- الحزمة2,032,618 بايت وv80؛145 حالةaxe وصفر مخالفات للقواعد المختارة، مع99 ظهورًا غير حاسم/223 ظهورًا لعقد؛126 حالة عرض ضيق. هذه ليست شهادةWCAG أو تجربة هاتف فعلي أو استماعًا أو تقييمًا لغويًا آليًا.
+- **الحفظ:**52 درسًا أخرى و1060 صف كتالوج أخرى و474MP3 وplaylist ثابتة؛ أربعة أصول/10 مقاطعB1.3 والأصوات محفوظة. أربعة صفوفaudio-register تغيرت فيsource_line فقط. جميع الخيارات30 والفهارس و80% محفوظة. عنوانالوظيفة مكتوب لا منطوق فيقراءةالمتن؛ لا استماع أو توليد أو اعتماد صوتي جديد.
+- **التغطية:**110 وحدات/40 بندًا/10 مراجع كاملة؛32/53 درسًا والبوابة منفصلة،21 متبقية. Konjunktiv قُرئ بالجزأين0و1، وثلاث صفحاتnot found مستبعدة. P01 رسالة كتابة فقط، نموذج344حرفًا مع التحيةوالختام (289للمتن)، وP02 اجتماع معالجهر نموذج276؛ الحدّان240/220. الاختبارات لا تصحح جودة اللغة تلقائيًا.
+- **التالي CR34/B1.4 — damit وum … zu:** راجع كل نص وتمرين وبديل ومعيار وعلاقة الغرض بالمراجع؛ احفظNadia02/Farid03 والراوي02/الاستماع03 بلا إعادةتوليد للمقاطع الموجودة. لا تعاودB1.3 أو تطلب مراجعًا بشريًا شرطًا للاستمرار. تابع تذبذبملف الاستيراد بشفافية إذاعاد، دون ادعاءإصلاح من نجاحإعادةفقط. كل تعديل يُرفع فورفحص مجموعته؛ لا تبديلفرع أو دمج؛ بقية القرارات والملفات والفحوص في التقريرين وملفي التسليم.
+
+رُوجع **B1.3 — المهنة والتواصل في مكان العمل: اقتراحات مهذبة** في **110 وحدات و40 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. قُيد موضع مصدرwürde بنهاية الجزء الرئيسي قبلdass، ووُضح أنhätte/wäre يحددهما المعنى لا مجرد اسم، وأنmöchte مهذبة أصلًا. صُحح تضخيم اقتراح أو إمكان إلى عمل منجز، وفُصلت المهل في الحوار والإعلان والاستماع. **P01/T08أ رسالة مكتوبة فقط: تحية وخمس جمل وختام؛ P02/T08ب أربعة أدوار اجتماع مع الجهر**، بمعايير ونموذجين متطابقين. أضيفت بنود مباشرة لـQ02/Q05/Q06/Q09، وحُفظQ04→T03/T07 وصُحح الكتالوج؛P02→T08 فقط. جميع الخيارات30 والفهارس و80% محفوظة. الإصدار `b1-03-v2` والمخزن `v80`؛ أربعة أصول/10 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد. **الحملة32/53 درسًا والبوابة منفصلة؛ تبقى21، والتالي CR34/B1.4.** هذه تغطية نصية مفحوصة، لا دمج أو اكتمال مشروع أو شهادة مستوى.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/B1/lesson-03-work-communication-konjunktiv.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وأربعة صفوف مرجعية في `data/audio-asset-register.csv` فقط.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الجديد `tools/test_b1_03_review.py`. لا تغييرapp.js أوCSS أوplaylist أوMP3 أوpackage/lock أوtest_forms_keyboard.
+- السجلان `data/reviews/b1-03-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.39 وتقرير المتصفح وملفا التسليم. لا إعادة كتابة تاريخB2.6 أو استبداله بـB2.7.
+- رُفع التنفيذ **`f097bb771c9d9d090c200714223ad64e0cf7d387`** إلى الفرع الوحيد `arena/01a1036f-deutschlern` وتطابقHEAD معorigin. مجموعة السجل والفحوص بعنوان `Record CR33 granular B1.3 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log ثم إيصال التسليم.
+- لا تبديل فرع أو دمجPR#1 أو ادعاء اكتمال المشروع. حالةPR وVercel باستعلام مستقل؛ رفعGitHub لا يعني نجاح النشر. لا إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة. الواجهة البعيدة وProduction لم تختبرا هنا.
+- بدأت المهمة بمقارنة719 ملفًا معorigin بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل. لا تكررreset أو تنظيفًا دون مقارنة جديدة.
+- **التالي CR34/B1.4 — التعلم والتعليم المستمر: damit وum … zu:** اقرأ `content/B1/lesson-04-continuing-education-damit.md` وتقييمه وأصوله كاملة، ثم راجع كل نص وتمرين وبديل ومعيار وعلاقة الغرض بالمراجع. احفظNadia02/Farid03، والمفردات والنماذج والقراءة02 والاستماع03؛ لا تعاود طلب صوت أو توليد المقاطع الموجودة. لا حاجة لإعادةB1.3.
+- القرارات مستمرة: كل تعديل يرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا إعادة توليد أو إخفاء أو تعيينready/نهائي بلا موافقة؛ حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظ الأصوات وA2.7 Q08→T05 وفحوص اتساقA2.9؛ لا محو عمل محلي أثناء استعادةGit.
+
+## حدود المحتوى والصوت والمنهج
+
+- مصدرwürde يقع في نهاية الجزء الرئيسي في النمط المدروس، وقد تتلوه تابعةdass؛ لا نعلّم أنه آخر كل جملة مركبة. verteilen بعدdass معwir فعل مصرف ولو طابق شكل المصدر. würden ليستwurde، وSie الرسمية لا تحدد عدد المخاطبين وحدها.
+- hätte للرغبة في الحصول على أوقات، وwäre للرغبة في أن يكون المتحدث جزءًا من فريق؛ كلاهما قد يليه اسم. möchte مهذبة أصلًا. الطلب المهذب قد يكون ممكن التنفيذ؛ لا نساويKonjunktiv II دائمًا بالاستحالة أو الماضي. Wunsch/Vorschlag لا يعني قبولًا أو تنفيذًا.
+- T07 يطلب سؤالًا محايدًاKönnten wir…? لا ينكر إمكان سؤال خبري بنبرة استفهام في كلام آخر. والمصدر بلاzu في الأنماط المدروسة لا قاعدة لكل مصدر ألماني.
+- الإعلان:العنوان فقط يذكرAssistenz/Teilzeit، ولا ينطقه تسجيل القراءة. helpful خبرة مفيدة لا عدد سنوات إلزامي؛ استقلالية في العمل لا عمل حر. النموذج رسالة لغوية قصيرة لا ملف توظيف كامل أو ضمان وظيفة.
+- الحوار:يومان للمهلة العامة ونسخة أولى بحلول الغد؛ الإعلان:خلال أسبوعين؛ الاستماع:رد بحلول بعد ظهر اليوم. لا ساعة أو تاريخ تقويمي أو موعد حقيقي يُحسب من يوم دراسة الدرس. Frist مهلة زمنية وقد يقصد السياق نهايتها.
+- عرضNora لفحص التقرير واستعدادOmar للعرض لا يثبتان الإرسال. Kundinnen في الحوار غيرKunde في الاستماع، وFarid مسمى بالنص لا بالصوت. اقتراح الخميس بسبب موعد الأربعاء ليس قبولًا لتغيير الموعد أو عدم تفرغ كامل الأربعاء. kann تحديث التقويم إمكان بعد الرد لا فعل منجز أو وعد قطعي.
+- P01 كتابة فقط،P02 كتابة وجهر؛ لا تناقض «إن أمكن» مع بوابة إلزام. المهام والنماذج خيالية بلا بيانات حقيقية أو إرسال أو شريك أو تسجيل. الحد الحرفي والإقرار ليسا تصحيح لغة أو نطق.
+- **لا استماع أو توليد أو اعتماد صوتي جديد.** قيداA2.8/A2.9 وبيانB1.2 Geschmäcker المكتوب محفوظة دون ادعاء تصحيح التسجيلات. المراجع اللغوية لا تمنح شهادةCEFR ولا اعتمادًا قانونيًا لإعلان أو طلب.
+- قُرئت10 صفحات كاملة؛ صفحةKonjunktiv في جزأين0و1. ثلاث صفحاتnot found استُبعدت رغمstatus success. نتائجالبحث الأخرى وصفحات الإنجليزية وملفاتPDF المرتبطة لم تُقرأ ولا تحسب مراجع. تم اتباع رابطKonjunktiv الصحيح من صفحةModalverben، لا اعتماد مقتطف البحث بدل القراءة.
+
+## الفحوص وحدودها — CR33
+
+- **PASS: البناء والتحقق**؛ الحزمة **2,032,618 بايت** والمخزن **v80**.53 درسًا و428 عنوان تمرين و57 عنوانًا يطابق نمط عداد الحوار و754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء،1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending، دون تغيير حالة صوتية.
+- **PASS:33 حارس مراجعة** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–12 وB1.1–3. الحارس الجديد يطابق110 وحدات و40 بندًا و30 بديلًا وستة معايير والمصدر والربط والنموذجين والبصمات. فحوص البناء لا تُحسب مراجعة فردية لباقي الدروس.
+- **PASS:خمس مجموعاتNode:**progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وكل tools/test_*.cjs وgit diff --check.
+- **المتصفح:**نجحت المجموعات الخمس في النهاية:browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout، على **Chromium143.0.7499.0**، مع تعثر أول موثق فيforms_keyboard. حزمpackage-lock القائمة دون تغييرها، وSparticuz143.0.4 ومكتباتal2023 خارجGit.
+- العام عند1440×900 و390×844:RTL والتنقل والتفريغات وتشغيلMP3 بسرعتي1 و0.8 والإيقاف عند التنقل، والعمل دون اتصال ونطاقات البايت و416/503. تشغيل آلي صامت لا استماع لكل ملف ولا ضمان بقاء كل الصوت مخزنًا.
+- تحديث عامل الخدمة منfixture v42 إلىv80 دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت المفقود ثم إعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- **progression:**سجلB1.3 القديمv1 يبقى مخزنًا لكنه لا يمنح إتقانv2 أو يفتحB1.4؛ المسودة القديمة مرفوضة للتقييم الجديد. النسخة الحالية مع الدرجة والدليل تفتح التالي، وحذف الدليل يعيد المنع. P01 لا يتطلب الجهر ولا يظهر مربع الجهر؛P02 يتطلبه. كلاهما يتطلب كل الإقرارات والحد الحرفي. نموذج الرسالة الكامل344 حرفًا (متنه289) والاجتماع276، فوق240/220. الاختبار يستعمل التحية والختام أيضًا، ولا يعدهما ضمن خمس جمل المتن. هذه ضوابط دليل لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**145 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة، مع **99 ظهورًا غير حاسم تشمل223 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة أو نجاحًا شاملًا؛ لا شهادةWCAG أو مراجع بشري شرطًا للاستمرار.
+- **النماذج — المحاولة1:**نجح1440، ثم تعثر390 بانتظارfilechooser لمدة30000ms في `tools/test_forms_keyboard.cjs:48:52` عند فتح ملفJSON غير الصالح. هذه عودة للتذبذب الموثق فيCR29، لا نجاح من أول محاولة.
+- **المحاولة2:**أُعيدت المجموعة كاملة كما هي بملفات متصفح معزولة جديدة، فنجح1440 و390 والحفظ والتصدير والاستيراد والمسودات. قُرئ كود الاختبار ومسار الفحص؛ **لا تعديلapp/test ولا تخفيف شرط أو زيادة مهلة أو سبب مثبت**. النجاح اللاحق ليس إصلاحًا؛ لا ندعي زوال التذبذب. الاختبار الأصلي وأول سجل فشل لم يستبدلا بنتيجة النجاح.
+- **العرض الضيق:**نُفذ بعد الإعادة ونجح126 حالة،63 عند320×900 و63 عند568×320، لكل الدروس مع التفريغات والجداول. viewport ليس هاتفًا فعليًا أو تكبير نظام.
+- **الحفظ مقابل `23ea56c8e9ceb5827f0ce6a3fbbb8df727133205`:**52 درسًا أخرى و1060 صف كتالوج أخرى و115 ملفًا محميًا مطابقة، منها المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. كتلة فحوص الصوت السابقة منexpectedAudioLessonByPrefix ثابتة، ومنهاA2.9 وB1.3؛ أضيفت فحوصv2 قبلها دون إضعافها.
+- playlist مطابق بايتًا ببايت؛474 ملفMP3 طابقت بصماتGit. تغيرت أربعة صفوف فيaudio-register فيsource_line فقط، مع جعل مراجع المفردات والأمثلة والأدوار والمتن دقيقة؛213 صفًا أخرى ثابتة. مراجعPHR الآن14 صف مفردات و8 أمثلة؛ لا تستبدل التحليل الصوتي.
+- الأصوات محفوظة:Leiterin00،Nora/الراوية02،Omar03،القراءة02 واستماعFarid03. العنوان الوظيفي المكتوب غير منطوق فيمتن تسجيل القراءة؛ لا ننسب المعلومة للصوت. جميع الخيارات30 والفهارس ثابتة؛ تغيرت التعليمات والسياق والربط والمعايير لا المفاتيح.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR33 / B1.3 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `23ea56c8e9ceb5827f0ce6a3fbbb8df727133205`. قورنت719 ملفًا بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل؛ لا تنظيف أو استعادة بلا مقارنة جديدة.
+- المصدر والتقييم `content/B1/lesson-03-work-communication-konjunktiv.md/.assessment.json` إلى `b1-03-v2` والمخزنv80. قُيد مصدرwürde بنهاية الجزء الرئيسي قبلdass، وليس كل الجملة المركبة؛ hätte/wäre بحسب معنىhaben/sein لا مجرد اسم، وmöchte مهذبة أصلًا. أضيفes للتصريف ووضحت المهلةFrist وعدم ضمان تنفيذ الاقتراح.
+- أضيفQ02 إلىT01 وQ05/Q06 إلىT04 وQ09 إلىT06، وحُفظQ04→T03/T07 معتصحيحالكتالوج؛P02→T08 فقط. حُدد نمط السؤال فيT07، وصححT06 من تحديث مؤكد إلى إمكان بعد الرد، ومن «قبل…اليوم» إلىbis heute Nachmittag دون ساعةمفترضة. Q10 يسأل السبب المذكور لا يفترض عدمالإتاحة طوالالأربعاء. الخيارات30 والفهارس و80% ثابتة.
+- P01/T08أ:تحية وخمسجمل متن وختام، كتابة فقط دون شرطجهر. P02/T08ب:أربعةأدواراجتماع، كتابة ثمجهر، معwürde وKönnten معًا وتوزيعالنصوالأرقام ومهلة واضحة. النموذجان344حرفًا للرسالة الكاملة (289للمتن) و276للاجتماع، وحدا240/220. لا إرسال أو بياناتحقيقية أو شريك أو تسجيل.
+- أربعة أصول/10 مقاطع محفوظة: الراوية/Nora02؛Omar03؛Leiterin00؛قراءة02 واستماعFarid03. العنوان المكتوبTeilzeit/Assistenz غير منطوق فيقراءةالمتن؛ أضيف توضيح مكتوب. لا توليد أو استماع أو اعتماد جديد؛playlist وMP3 والحالات والأصوات ثابتة.
+- الملفات الأخرى:20صفcatalog وأربعةصفوفaudio-register فيsource_line فقط، معمراجع دقيقة للمفردات/الأمثلة والأدوار والمتن بدلإزاحاتقديمة. الحزمة2,032,618بايت، عامل الخدمة واختباراه؛ progression/accessibility_audit؛ الحارس `tools/test_b1_03_review.py` وملفاالتسليم. لاapp.js أوCSS أوpackage/lock.
+- PASS:البناء والتحقق وخمس مجموعاتNode والحارس implementation-only وdiff. السجل الفردي المقترح110وحدة/40بندًا والحفظ الشامل والمتصفح والحراس التراكمية لمتوثق بعد؛ الحملة31/53 حتىذلك.
+- قُرئت10صفحات كاملة: Lingolia Konjunktiv (الجزآن0و1)/Nebensätze/Fragen/Hauptsätze/Trennbare/Modalverben؛ Duden bewerben/übernehmen_übernommen/Frist/innerhalb_innerhalb_einer_Sache. استُبعدت3 صفحاتnot found رغمstatus success: /verben/konjunktiv2 وDuden /uebernehmen و/innerhalb. نتائجالبحث الأخرى لمتحسبمراجع؛ لا تبني ادعاءمراجعةعلىمقتطفاتأوPDFغيرمقروء.
+- تُرفع المجموعة فورفحصها بعنوان `Align B1.3 polite requests, deadlines and performance evidence (CR33)`؛ معرفها فيgit log بعدالدفع. التالي السجل الفردي والحفظ مقابل23ea56c، ثم33حارسًا وخمس مجموعاتمتصفح والتوثيق والرفع؛ بعدذلكCR34/B1.4.
+- كلتعديل يرفع فورفحص مجموعته؛ المحتوى والتقييم والتطبيق قبلالصوت، ولا مراجع بشري شرطًا. لا تبديلفرع أو دمجPR#1 أو إعادةتوليد/إخفاء/اعتمادصوت بلا موافقة. حد10طلباتصوت/رد؛ احفظالأصوات وA2.7 Q08→T05 وفحوصA2.9 وقيودA2.8/A2.9 وبيانB1.2 Geschmäcker المكتوب دونادعاءتصحيحالتسجيل. B1.9/B1.10 معلقان واختيارB1.11 محفوظ وتاريخB2.6 ثابت. GitHub مستقل عنVercel ولا إعادةنشرمتكررة أوترقيةمدفوعة بسببحدالخدمة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال رفع CR32 — 2026-10-08
+
+- **التنفيذ:** `e1c81db51946b9ca832d88bf292cf8eb0cb5f5a9`؛ **المراجعة والفحوص:** `a24c47fa9261e80809e8306454f5421111c22256`. رُفع الاثنان إلى `arena/01a1036f-deutschlern`، وتطابق HEAD وorigin بعد كل رفع. هذا الإيصال تعديل توثيقي يُرفع فور فحصه بعنوان `Record CR32 delivery receipt and deployment limits`؛ معرفه فيgit log، ولا تنسب إليه حالة نشر سابقه.
+- **آخر فحص PR#1:** OPEN، mergedAt=null، والرأسa24c47f. لم يُدمج العمل ولا يوصف المشروع بأنه مكتمل.
+- **Vercel:** فشل نشر التنفيذe1c81db والمراجعةa24c47f بسبب حد النشر: `Deployment rate limited — retry in 24 hours.`، وقائمةdeployments فارغة لكليهما. **رفعGitHub نجح مستقلًا**؛ لا ادعاء بوجودPreview جديد لهذه المجموعة أو نجاحProduction. لا إعادة نشر يدوية متكررة أو ترقية مدفوعة. الواجهة البعيدة لم تختبر، ونشرcommit الإيصال غير مستعلم عنه.
+- **الفحوص:** البناء والتحقق و32 حارسًا وخمس مجموعاتNode وخمس مجموعاتمتصفح PASS. الحزمة2,019,574 بايت وv79؛141 حالةaxe، صفر مخالفات للقواعد المختارة، مع96 ظهورًا غير حاسم/217 ظهورًا لعقد؛126 حالة عرض ضيق. نجحfilechooser في أول تشغيل هذا الدور، لكن سبب تذبذبه فيCR29 غير محلول.
+- **الحفظ:**52 درسًا أخرى و1060 صف كتالوج أخرى و474MP3 وplaylist ثابتة؛ خمسة أصول/10 مقاطعB1.2 والأصوات محفوظة. تغيرت ثلاثة صفوف مرجعية فقط فيsource_line. جميع الخيارات30 وفهارسها و80% محفوظة. لا استماع أو توليد أو اعتماد صوتي جديد. **Geschmäcker المسجلة باقية؛ أضيفGeschmäcke ووسم الصيغة الدارجة المازحة كتابة فقط، لا تصحيح صوتي أو وصف اللفظ بأنه غير موجود.**
+- **التغطية:**102 وحدة/35 بندًا/10 مراجع كاملة؛31/53 درسًا والبوابة منفصلة،22 متبقية. استُبعدت صفحة404 عند/trotzdem واستُخدم مدخل الظرف الصحيح. تثبيت الجهر في المهمتين أزال تعارض «إن أمكن» مع شرط التطبيق؛ والنموذجان227/205 حرفًا يطابقان المصدر والمعايير.
+- **التالي CR33/B1.3 — المهنة والتواصل: اقتراحات مهذبة:** راجع كل نص وتمرين وبديل ومعيار بالمراجع، مع حفظ Nora/الراوية02 وOmar03 ودورالإدارة00. لا إعادةB1.2 أو تسجيلاته ولا مراجع بشري شرطًا للاستمرار. المحتوى والتقييم والتطبيق أولًا، وكل تعديل يُرفع فور فحص مجموعته. لا تبديل فرع أو دمج؛ بقية القرارات والملفات والفحوص في التقريرين وملفي التسليم.
+
+رُوجع **B1.2 — الطعام والعادات الغذائية: obwohl وtrotzdem** في **102 وحدة و35 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. قُيد ترتيبtrotzdem بحالة تصدير الرئيسية، وفُصل خلاف التوقع عن السبب والاختلاف العادي. صُحح تعارض «الجهر إن أمكن» مع إلزام التطبيق، وصارت **P01/T08أ خمس جمل وP02/T08ب أربعة أسطر حوارية، وكلاهما كتابة ثم جهر** مع معايير ونموذجين متطابقين. Q03→T03 وحده وsie مفردة صراحة؛ أضيفت مفردتاQ01/Q02 ومعلومةQ06 إلى تدريباتها. حُفظت الخيارات30 والفهارس و80%. أضيف **Geschmäcke** ووسم **Geschmäcker** المسجلة بأنها دارجة مازحة حسبDuden؛ هذا توضيح مكتوب لا تسجيل مصحح. الإصدار `b1-02-v2` والمخزن `v79`؛ خمسة أصول/10 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد. **الحملة31/53 درسًا والبوابة منفصلة؛ تبقى22، والتالي CR33/B1.3.** هذه تغطية نصية مفحوصة لا دمج أو اكتمال للمشروع أو شهادة مستوى.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/B1/lesson-02-food-habits-obwohl.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وثلاثة صفوف مرجعية في `data/audio-asset-register.csv` فقط.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الجديد `tools/test_b1_02_review.py`. لا تغييرapp.js أوCSS أوplaylist أوMP3 أوpackage/lock.
+- السجلان `data/reviews/b1-02-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.38 وتقرير المتصفح وملفا التسليم. لا إعادة كتابة تاريخB2.6 أو استبداله بـB2.7.
+- رُفع التنفيذ **`e1c81db51946b9ca832d88bf292cf8eb0cb5f5a9`** إلى الفرع الوحيد `arena/01a1036f-deutschlern` وتطابقHEAD معorigin. مجموعة السجل والفحوص بعنوان `Record CR32 granular B1.2 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log ثم إيصال التسليم.
+- لا تبديل فرع أو دمجPR#1 أو ادعاء اكتمال المشروع. حالةPR وVercel باستعلام مستقل؛ رفعGitHub لا يعني نجاح النشر. لا إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة. الواجهة البعيدة وProduction لم تختبرا هنا.
+- بدأت المهمة بمقارنة716 ملفًا معorigin بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل. لا تكرر reset أو تنظيفًا دون مقارنة جديدة.
+- **التالي CR33/B1.3 — المهنة والتواصل في مكان العمل: اقتراحات مهذبة:** اقرأ `content/B1/lesson-03-work-communication-konjunktiv.md` وتقييمه وأصوله كاملة، ثم راجع كل نص وتمرين وبديل ومعيار بالمراجع. احفظ Nora/الراوية02 وOmar03 ودورالإدارة00. لا حاجة لإعادةB1.2 أو تسجيلاته، وبيانGeschmäcker مكتوب لا اعتماد صوتي جديد.
+- القرارات مستمرة: كل تعديل يرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا إعادة توليد أو إخفاء أو تعيينready/نهائي بلا موافقة؛ حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظ الأصوات وA2.7 Q08→T05 وفحوص اتساقA2.9؛ لا محو عمل محلي أثناء استعادةGit.
+
+## حدود المحتوى والصوت والمنهج
+
+- obwohl في النمط الكتابي المدروس يقدم أمرًا يحدث خلاف المتوقع بسببه، لا مجرد اختلاف أو سببweil. تقديم التابعة يشغل الموقع الأول ثم يأتي مصرف الرئيسية؛ والفاصلة لازمة ولو تأخرت التابعة.
+- trotzdem هنا ظرف رابط، لا تابع. إذا تصدرت الرئيسية يليها المصرف ثم الفاعل، لكن يمكن أن تقع وسطها. الفاصلة في آخر الاستماع تربط رئيسيتين كما في مثالDuden، وليست خطأ يوجب تغيير التسجيل.
+- **Geschmack:**أضاف الجدول الجمعGeschmäcke ووسمGeschmäcker بالدارج المازح وفقDuden؛ التسجيل يحتوي الثانية فقط. لا نقول إن اللفظ غير موجود أو إننا استمعنا أو صححنا التسجيل. البيان المكتوب يزيل دعوى كونه الجمع المحايد الوحيد.
+- تحضير الغداء مساءً ليس تناوله مساءً؛ ثلاث أو أربع مرات أسبوعيًا ليست كل يوم أو عدد وجبات. Tarek والمقصف،David والمطعم، وأسرة الاستماع حكايات مستقلة. الراوي غير مسمى؛ Person/Familie مؤنثتان نحويًا لا دليل جنس الشخص من الصوت.
+- الشبع أو شرب الماء مع الطعام الحار وصف في نصوص خيالية، لا علاج أو برنامج تغذية شخصي أو إثبات سلامة حساسية. لم نراجع مرجعًا طبيًا ولم ندّع ذلك. keine Lebensmittelgruppe تنفي استبعاد مجموعة، لا تثبت أكل كل أصنافها يوميًا. الكلفة أحيانًا لا دائمًا، والتطلع للطعام لا يثبت تناوله.
+- مهمتان خياليتان بلا حمية أو وزن أو حساسية أو بيانات صحية أو شريك أو تسجيل. خمس جمل مقابل أربعة أدوار، والجهر في كليهما صريح؛ لم يعد خيارًا لفظيًا بينما هو إلزام في التطبيق. اليوم لإحضار طعام البيت والغد للمقصف في النموذج، دون تناقض زمني.
+- **لا استماع أو توليد أو اعتماد صوتي جديد.** الأصوات والأصول الخمسة وعشرة المقاطع وحالاتها السابقة ثابتة؛ قيداA2.8/A2.9 السابقان لم يصححا في التسجيلات، وبقي التوضيح المكتوب.
+- قُرئت10 صفحات كاملة؛ رابطDuden /trotzdem المباشر أعادصفحة404 رغمstatus success، فاستُبعد واستُخدم مدخل الظرف الصحيح. بقية نتائج البحث وروابط الصفحات لم تُقرأ ولا تحسب مراجع. المراجع اللغوية ليست شهادةCEFR أو دليل صحة طبية.
+
+## الفحوص وحدودها — CR32
+
+- **PASS: البناء والتحقق**؛ الحزمة **2,019,574 بايت** والمخزن **v79**.53 درسًا و428 عنوان تمرين و**57 عنوانًا يطابق نمط عداد الحوار** بدل56 بسبب عنوانT08 الجديد؛ ليس تسجيلًا جديدًا أو تغييرًا للحوار الأصلي.754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء،1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending، دون تغيير حالة صوتية.
+- **PASS:32 حارس مراجعة** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–12 وB1.1–2. حارسB1.2 يطابق102 وحدة و35 بندًا و30 بديلًا وستة معايير والمصدر والربط والنموذجين والبصمات. فحوص البناء لا تُحسب مراجعة فردية لباقي الدروس.
+- **PASS:خمس مجموعاتNode:**progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وكل tools/test_*.cjs وgit diff --check.
+- **PASS:خمس مجموعات متصفح** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**. حزمpackage-lock القائمة دون تغييرها، وSparticuz143.0.4 ومكتباتal2023 خارجGit. نجح التشغيل المتسلسل الأول دون إعادة اختبار فاشل هذا الدور.
+- العام عند1440×900 و390×844:RTL والتنقل والتفريغات وتشغيلMP3 بسرعتي1 و0.8 والإيقاف عند التنقل، والعمل دون اتصال ونطاقات البايت و416/503. تشغيل آلي صامت لا استماع لكل ملف ولا ضمان بقاء كل الصوت مخزنًا.
+- تحديث عامل الخدمة منfixture v42 إلىv79 دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت المفقود ثم إعادة تخزينه عند الاتصال. ليس اختبارًا منفصلًا لكل ترحيل تاريخي.
+- **progression:**سجلB1.2 القديمv1 يبقى مخزنًا لكنه لا يمنح إتقانv2 أو يفتحB1.3؛ المسودة القديمة مرفوضة للتقييم الجديد. النسخة الحالية مع الدرجة والدليل تفتح التالي، وحذف الدليل يعيد المنع. كلا المهمتين يحتاج إقرار الجهر وكل المعايير؛ تُرفض الاستجابة القصيرة والإقرارات الناقصة. نموذج227/205 حرفًا فوق190/180. هذا ضبط للدليل لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**141 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة، مع **96 ظهورًا غير حاسم تشمل217 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة أو نجاحًا شاملًا؛ لا شهادةWCAG أو مراجع بشري شرطًا للاستمرار.
+- **النماذج:**نجح التشغيل الأول عند1440 و390 في الحفظ وإعادة التحميل والتصدير والاستيراد والمسودات. **سبب تذبذبfilechooser فيCR29 باقٍ غير محلول**؛ نجاح الأدوار التالية ليس إصلاحًا، ولم يُعدّل اختبارforms_keyboard.
+- **العرض الضيق:**126 حالة،63 عند320×900 و63 عند568×320، لكل الدروس مع التفريغات والجداول. viewport ليس هاتفًا فعليًا أو تكبير نظام.
+- **الحفظ مقابل `f741ee9136cf6072785bbb6ac383235d359ad9b8`:**52 درسًا أخرى و1060 صف كتالوج أخرى و115 ملفًا محميًا مطابقة، منها المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. كتلة فحوص الصوت السابقة بدءًا منexpectedAudioLessonByPrefix ثابتة، ومنها فحوصA2.9 وB1.2؛ أضيفت فحوصv2 قبلها دون إضعافها.
+- playlist مطابق بايتًا ببايت؛474 ملفMP3 طابقت بصماتGit. فُحصت أصولB1.2 الخمسة؛ تغيرت **ثلاثة صفوف فقط فيaudio-register، فيsource_line وحده** للحوار والقراءة والاستماع؛214 صفًا أخرى ثابتة. المفردات والنماذج قبل المساعدة الجديدة، فأسطرهما لم تتغير رغم توضيح خلايا المفردات وقاعدة المقارنة.
+- الأصوات محفوظة:Mira02/Tarek03، والمفردات والنماذج والقراءة02 والاستماع03. المصدر وplaylist يحفظان المحتوى المنطوق؛ إضافةGeschmäcke ووسمGeschmäcker مكتوبة فقط. جميع الخيارات30 وفهارسها ثابتة؛ تغير السؤال والشرح والربط والمعايير لا المفتاح.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR32 / B1.2 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `f741ee9136cf6072785bbb6ac383235d359ad9b8`. قورنت716 ملفًا بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل؛ لا تنظيف أو استعادة بلا مقارنة جديدة.
+- المصدر والتقييم `content/B1/lesson-02-food-habits-obwohl.md/.assessment.json` إلى `b1-02-v2`، والمخزنv79. قاعدةtrotzdem مقيدة بتصدير الرئيسية لا كل موضع، وobwohl تعبر عن نتيجة خلاف المتوقع لا مجرد اختلاف؛ ربط الرئيسيتين بفاصلة في الاستماع مقبول، لا تابعة خاطئة.
+- صُحح تعارض «الجهر إن أمكن» مع إلزام الدليل؛ P01/T08أ خمس جمل وP02/T08ب أربعة أسطر، كلاهما كتابة ثم جهر صريح بلا تسجيل أو شريك. النموذجان227/205 حرفًا وحدا190/180، بمعايير ومطالب متطابقة وخصوصية غذائية دون نصيحة شخصية.
+- Q03→T03 وحده وتصحيح شرحsie المفردة مقابل الجمع؛ أضيفت مفردتاQ01/Q02 إلىT01 ومعلومةQ06 إلىT05. صارت خضرواتT02.3 صريحة لتوضيح التباين؛ حُددت بداياتT04/T07 وأضيف بنكT06. جميع الخيارات30 وفهارسها و80% محفوظة.
+- أضيف Geschmack: الجمعGeschmäcke، وGeschmäcker دارج مازح بحسبDuden؛ التسجيل يحفظ الثانية فقط مع توضيح مكتوب، لا تسجيل مصحح أو اعتماد جديد. فُصلت حكاياتTarek/David والأسرة وحدود الشبع وشربالماء والنفي والتكرار عن التوصية الطبية أو الغذائية.
+- خمسة أصول/10 مقاطع محفوظة: Mira02/Tarek03؛ المفردات والنماذج والقراءة02 والاستماع03. لا استماع أو توليد أو تغييرplaylist/MP3/status. لا تغيراتapp.js أوCSS أوpackage/lock.
+- ملفات التنفيذ الأخرى:20صفcatalog،3صفوفaudio-register فيsource_line فقط؛ الحزمة2,019,574بايت؛ عامل الخدمة واختباراه؛ progression/accessibility_audit؛ الحارس الجديد `tools/test_b1_02_review.py` وملفاالتسليم.
+- PASS:البناء والتحقق وخمس مجموعاتNode والحارس implementation-only وdiff. ما زال السجل الفردي والحفظ الشامل والمتصفح والحراس التراكمية قيدالعمل؛ لا نرفع عدادالحملة من30/53 حتى توثيقها.
+- قُرئت10صفحات كاملة: Lingolia Adverbialsätze/Nebensätze/Konjunktionen/Trennbare؛ Duden obwohl/trotzdem_nichtsdestoweniger_dennoch/verzichten/enthalten/ernaehren/Geschmack. /trotzdem المباشر أعادصفحة404 رغمstatus success؛ مستبعد، لا مصدرصالح. صفحةالظرفالصحيحة قرئت كاملة بعدالبحث؛ بقيةنتائجالبحث والروابط ليست مصادرمقروءة.
+- تُرفع المجموعة فورفحصها بعنوان `Align B1.2 concessions, food evidence and spoken tasks (CR32)`؛ معرفها فيgit log بعدالدفع. التالي السجل المقترح102وحدة/35بندًا والحفظ مقابلf741ee9، ثم32حارسًا وخمس مجموعاتمتصفح والتوثيق والرفع؛ التالي بعدذلكCR33/B1.3.
+- كلتعديل يرفع فورفحص مجموعته، والمحتوى والتقييم والتطبيق قبلالصوت؛ لا مراجع بشري شرطًا. لا تبديلفرع أو دمجPR#1 أو إعادةتوليد/إخفاء/اعتمادصوت بلا موافقة. حد10طلباتصوت/رد؛ حافظ على الأصوات وA2.7 Q08→T05 وفحوصA2.9 وقيديA2.8/A2.9 السابقين دون ادعاءتصحيحالتسجيل. B1.9/B1.10 معلقان واختيارB1.11 محفوظ وتاريخB2.6 ثابت. رفعGitHub مستقل عنVercel، ولا إعادةنشرمتكررة أوترقيةمدفوعة بسببحدالخدمة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال رفع CR31 — 2026-10-08
+
+- **التنفيذ:** `34e596a17f500cc83364a917268179a5d05065d6`؛ **المراجعة والفحوص:** `9899fa7645ea0cd63ebce75ee0f0d1e1d8fa82a1`. رُفع الاثنان إلى `arena/01a1036f-deutschlern`، وتطابق HEAD وorigin بعد كل رفع. هذا الإيصال تعديل توثيقي يُرفع فور فحصه بعنوان `Record CR31 delivery receipt and deployment limits`؛ معرفه فيgit log، ولا تنسب إليه حالة نشر سابقه.
+- **آخر فحص PR#1:** OPEN، mergedAt=null، والرأس9899fa7. لم يُدمج العمل ولا يوصف المشروع بأنه مكتمل.
+- **Vercel للتنفيذ34e596a:** success، وPreview رقم **6944923288** بحالةdeployment ناجحة: https://deutschlern-d64p1x83k-balinader-2671s-projects.vercel.app . **للمراجعة9899fa7:** فشل بسبب حد النشر، بلاdeployment. رفعGitHub نجح مستقلًا؛ لا إعادة نشر يدوية متكررة أو ترقية مدفوعة. نجاحPreview للتنفيذ ليس نجاح نشر أحدثcommit أوProduction أو اختبارًا للواجهة البعيدة؛ لم تختبر هذه. نشرcommit الإيصال غير مستعلم عنه.
+- **الفحوص:** البناء والتحقق و31 حارسًا وخمس مجموعاتNode وخمس مجموعاتمتصفح PASS. الحزمة2,008,263 بايت وv78؛137 حالةaxe، صفر مخالفات للقواعد المختارة، مع93 ظهورًا غير حاسم/210 ظهورًا لعقد؛126 حالة عرض ضيق. نجحfilechooser في أول تشغيل هذا الدور، لكن سبب تذبذبه فيCR29 غير محلول.
+- **الحفظ:**52 درسًا أخرى و1060 صف كتالوج أخرى و474MP3 وplaylist ثابتة؛ خمسة أصول/10 مقاطعB1.1 والأصوات محفوظة. فُحصت الأصول الخمسة لكن تغيرت **ثلاثة صفوف مرجعية فقط** للحوار والقراءة والاستماع فيsource_line، لا خمسة؛ أسطر المفردات والنماذج بقيت ثابتة. جميع الخيارات30 وفهارسها و80% محفوظة. لا استماع أو توليد أو اعتماد صوتي جديد.
+- **التغطية:**97 وحدة/33 بندًا/11 مرجعًا كاملًا؛30/53 درسًا والبوابة منفصلة،23 متبقية. استُبعدت صفحةDuden للظرف اللهجيals، واستُخدمت صفحةالرابطالزمني. الفترة معals قد تضم نشاطًا متكررًا، وwenn قد يكون لحدث مستقبلي واحد؛ لا تعميم من صفحة واحدة على كل الاستعمالات.
+- **التالي CR32/B1.2 — عادات الطعام وobwohl:** مراجعة كل نص وتمرين وبديل ومعيار، مع حفظ Mira02/Tarek03 والراوي02/الاستماع03. لا إعادة B1.1 أو تسجيلاته ولا مراجع بشري شرطًا للاستمرار. المحتوى والتقييم والتطبيق أولًا، وكل تعديل يُرفع فور فحص مجموعته. لا تبديل فرع أو دمج؛ بقية القرارات والملفات والفحوص في التقريرين وملفي التسليم.
+
+رُوجع **B1.1 — الحياة اليومية والهوايات والتجارب: als وwenn** في **97 وحدة و33 بندًا أو مطلبًا داخل التمارين**، مع **11 مرجعًا مقروءًا كاملًا**. صُحح طلب T07: تغيير الرابط في كلتا الجملتين وفق السياق، لا جملة واحدة. وُضح أن als قد يحدد فترة كاملة تتكرر أنشطة داخلها، وwenn قد يكون لحدث مستقبلي واحد أو شرط. أزيل افتراض أول كاميرا وأول عرض وهدية غير مصرح بها من أسئلة الفهم. **P01/T08أ خمس جمل وP02/T08ب أربعة أسطر حوارية، وكلاهما كتابة ثم جهر**؛ مع التجربة والعادة والذكرى ومعايير ونموذجين متطابقين. أُصلح Q01/Q02→T04، وحُفظت الخيارات30 وفهارس المفاتيح و80%. الإصدار `b1-01-v2` والمخزن `v78`؛ خمسة أصول/10 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد. **الحملة30/53 درسًا والبوابة منفصلة؛ تبقى23، والتالي CR32/B1.2.** هذه تغطية نصية مفحوصة، لا دمج أو اكتمال المشروع أو شهادة مستوى.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/B1/lesson-01-daily-life-hobbies-experiences.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وثلاثة صفوف مرجعية في `data/audio-asset-register.csv` فقط.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الجديد `tools/test_b1_01_review.py`. لا تغييرapp.js أوCSS أوplaylist أوMP3 أوpackage/lock.
+- السجلان `data/reviews/b1-01-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.37 وتقرير المتصفح وملفا التسليم. لا إعادة كتابة تاريخB2.6 أو استبداله بـB2.7.
+- رُفع التنفيذ **`34e596a17f500cc83364a917268179a5d05065d6`** إلى الفرع الوحيد `arena/01a1036f-deutschlern` وتطابقHEAD معorigin. مجموعة السجل والفحوص بعنوان `Record CR31 granular B1.1 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log ثم إيصال التسليم.
+- لا تبديل فرع أو دمجPR#1 أو ادعاء اكتمال المشروع. حالةPR وVercel باستعلام مستقل؛ رفعGitHub لا يعني نجاح النشر. لا إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة. الواجهة البعيدة وProduction لم تختبرا هنا.
+- بدأت المهمة بمقارنة713 ملفًا معorigin بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل. لا تكرر reset أو تنظيفًا دون مقارنة جديدة.
+- **التالي CR32/B1.2 — عادات الطعام وobwohl:** اقرأ `content/B1/lesson-02-food-habits-obwohl.md` وتقييمه وأصوله كاملة، ثم راجع كل نص وتمرين وبديل ومعيار وعلاقة التنازل بالمراجع. احفظ Mira02/Tarek03 والمفردات والنماذج والقراءة02 والاستماع03. لا حاجة لإعادةB1.1 أو تسجيلاته.
+- القرارات مستمرة: كل تعديل يرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا إعادة توليد أو إخفاء أو تعيينready/نهائي بلا موافقة؛ حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظ الأصوات وA2.7 Q08→T05 وفحوص اتساقA2.9؛ لا محو عمل محلي أثناء استعادةGit.
+
+## حدود المحتوى والصوت والمنهج
+
+- als في الأمثلة الزمنية الماضية المحددة قد تصف فترة كالطفولة، ولا تعني أن اللعب داخلها حدث مرة واحدة فقط. وصف «حدث واحد» مختصر تعليمي، لا عداد لكل فعل في الحياة. يمكن أن تصف الجملة المقدمة فترة بينما تتكرر أنشطة الرئيسية داخلها.
+- wenn للتكرار الماضي أو الزمن الحاضر/المستقبل، ومنها حدث مستقبلي واحد، وقد تعني شرطًا. درسنا لا يحصر كل استعمالاتها أو استعمالاتals ولا ينقل تعميم «التزامن دائمًا» من مصدر ثانوي فوق أمثلةDuden التي تبين علاقات متعددة. وجودPräteritum لا يفرضals؛ وwar معhabe teilgenommen طبيعي في الحوار.
+- an+Akkusativ معsich erinnern مقابلan+Dativ معteilnehmen؛ ليس اختبارWo/Wohin. اختيار الحالة تابع للفعل. تصريف الضمير والتذكر حاضرًا لا يجعلان الذكرى نفسها حدثًا حاضرًا.
+- عمر16 في القاعدة،17 لكريم،14 للينا في القراءة؛ الراوي غير مسمى وsie تعود إلىdie Person نحويًا. النص لا يقول أول كاميرا أو أول عرض في الحياة أو فوزًا بالبطولة أو نشرًا فعليًا للصور. Tante عمة أو خالة، وoft/regelmäßig لا يحددان كل مرة أو العدد. nicht mehr so oft لا تعني التوقف التام.
+- كُتبت فقرة الرسم وحوار الشطرنج لشخصيتين خياليتين مستقلتين، بلا بيانات خاصة أو تسجيل أو شريك. الجهر مطلوب لكليهما؛ أربعة أسطر للحوار لا أربعة جمل، فالجواب الأخير قد يضم جملتين. طول النص والإقرارات لا يقيسان جودة اللغة أو النطق.
+- **لا استماع أو توليد أو اعتماد صوتي جديد.** خمسة الأصول وعشرة المقاطع والحالات السابقة محفوظة. عنوان الأصلMODEL مختصر لكنه لا يلغي المثال الشرطي الرابع؛ شرح المصدر يوضح الحد. قيدا التسجيل فيA2.8/A2.9 السابقان لم يصححا فيالصوت، وبقي التوضيح المكتوب.
+- قرئت11 صفحة كاملة؛ صفحةDuden /als للظرف اللهجي قرئت ثم استبعدت بدل استعمالها دليلًا للرابط. استُخدم/als_temporal الصحيح. نتائج البحث الأخرى وملفاتPDF المرتبطة لم تُقرأ ولا تُحسب مصادر. المراجع ليست شهادةCEFR أو دليل تحقق أحداث الشخصيات.
+
+## الفحوص وحدودها — CR31
+
+- **PASS:البناء والتحقق**؛ الحزمة **2,008,263 بايت** والمخزن **v78**.53 درسًا،428 عنوان تمرين، و**56 عنوانًا يحويه نمط عداد الحوار** بدل55: زيادة واحدة بسبب عنوانT08 «فقرة وحوار»، لا تسجيل جديد أو تغيير الحوار الأصلي.754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء،1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending، دون تغيير حالة صوتية.
+- **PASS:31 حارس مراجعة** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–12 وB1.1. حارسB1.1 يطابق97 وحدة و33 بندًا و30 بديلًا وستة معايير، والمصدر والربط والنموذجين والبصمات. فحوص البناء لا تُحسب مراجعة فردية لباقي الدروس.
+- **PASS:خمس مجموعاتNode:**progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وكل tools/test_*.cjs. أُصلحت نهاياتCSV العرضيةCRLF إلىLF الأصلية ومسافة نهاية سطر مضافة قبل الرفع؛ بعدهاgit diff --check PASS. لا تجاهل لفحص فاشل.
+- **PASS:خمس مجموعات متصفح** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout، على **Chromium143.0.7499.0**. حزمpackage-lock القائمة دون تغييرها، وSparticuz143.0.4 ومكتباتal2023 خارجGit. لا إعادة تشغيل لاختبار فاشل هذا الدور.
+- العام عند1440×900 و390×844:RTL والتنقل والتفريغات وتشغيلMP3 بسرعتي1 و0.8 والإيقاف عند التنقل، والعمل دون اتصال ونطاقات البايت و416/503. تشغيل آلي صامت لا استماع لكل ملف ولا ضمان بقاء كل الصوت مخزنًا.
+- تحديث عامل الخدمة منfixture v42 إلىv78 دون إعادة تحميل قسرية، مع حفظ التقدم والإجابات وعزل المخازن و503 للصوت المفقود ثم إعادة تخزينه عند الاتصال. ليس اختبارًا منفصلًا لكل ترحيل تاريخي.
+- **progression:**سجلB1.1 القديمv1 يبقى مخزنًا لكنه لا يمنح إتقانv2 أو يفتحB1.2؛ المسودة القديمة لا تُستعاد كتقييم جديد. النسخة الحالية مع الدرجة والدليل تفتح التالي، وحذف الدليل يعيد المنع. P01/P02 يحتاجان إقرار الجهر وكل المعايير؛ تُرفض الاستجابة القصيرة أو الإقرار الناقص. نموذج230/290 حرفًا يتجاوز180/220. هذا ضبط للدليل لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**137 حالة ممثلة، وصفر مخالفات للقواعد الآلية المختارة؛ **93 ظهورًا غير حاسم تشمل210 ظهورًا لعقد**. لا مخالفة مؤكدة من مجردincomplete ولا شهادةWCAG أو إلزام بمراجع بشري قبل الاستمرار.
+- **النماذج:**نجح التشغيل الأول عند1440 و390:الحفظ وإعادة التحميل والتصدير والاستيراد والمسودات. **سبب تذبذبfilechooser فيCR29 باقٍ غير محلول**؛ نجاحCR30/CR31 لا يثبت إصلاحه، ولم يُعدّل اختبارforms_keyboard.
+- **العرض الضيق:**126 حالة،63 عند320×900 و63 عند568×320، لكل الدروس مع التفريغات والجداول. viewport ليس جهازًا فعليًا أو تكبير نظام.
+- **الحفظ مقابل `c5876d7d5e0be70c3baa48bc88926737c368209f`:**52 درسًا أخرى و1060 صف كتالوج أخرى و115 ملفًا محميًا مطابقة؛ تشمل مصادر الدروس الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتيbuild/verify. كتلة فحوص الصوت السابقة بدءًا منexpectedAudioLessonByPrefix ثابتة، ومنها فحوصA2.9 وB1.1؛ أضيفت فحوصv2 قبلها دون إضعافها.
+- playlist مطابق بايتًا ببايت؛474 ملفMP3 طابقت بصماتGit. فُحصت أصولB1.1 الخمسة؛ **تغيرت ثلاثة صفوف فقط فيaudio-register، فيsource_line وحده** للحوار والقراءة والاستماع، وبقي214 صفًا. المفردات والنماذج قبل المساعدة الجديدة فلم تتغير أسطرهما؛ هذا يصحح العدد الأولي5 الوارد في إشعار التنفيذ.
+- الأصوات محفوظة:Lina00/Karim03، والمفردات والنماذج والقراءة02 والاستماع03. الأرقام16/17/14 تقابلsechzehn/siebzehn/vierzehn لفظًا؛ لا تبديل أعمار أو ترجمة رقم خاطئة. جميع الخيارات30 وفهارسها ثابتة؛ التغيير في السؤال والسياق والربط والمعايير، لا المفتاح.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR31 / B1.1 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `c5876d7d5e0be70c3baa48bc88926737c368209f`. قورنت713 ملفات بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل؛ لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/B1/lesson-01-daily-life-hobbies-experiences.md/.assessment.json` إلى `b1-01-v2`؛ المخزنv78. صُححT07: كلتا الجملتين تحتاجان تغيير الرابط بحسب السياق لا واحدة؛ الفترة معals قد تضم أنشطة متكررة، وwenn يصلح لحدث مستقبلي واحد أو شرط أيضًا. لا قاعدة تقول إن كل ماضٍ يأخذals أو إن كليهما يفرضPräteritum وحده.
+- حُذفت فرضية أول كاميرا منQ06 وأسئلةالقراءة، وصار السؤال عن مصدرالكاميرا لاافتراضالهدية؛T05.3 عن المشهد الموصوف لا أولعرضفيالحياة. أضيف عمر14 ووضوحالحيوانات وموقعالنادي فيT05؛ أضيفت مفردتان فيT04 لتصحيح Q01/Q02→T04. جميع الخيارات30 وفهارسالمفاتيح و80% ثابتة.
+- P01/T08أ:خمس جمل عن تجربة وتفصيل وعادة والحالالآن وذكرى؛ P02/T08ب:أربعةأسطر سؤالين وجوابين لتجربة وعادة وذكرى. كلاهما كتابة+جهر دون تسجيل أوشريك؛ نموذج230/290 حرفًا وحدا180/220. المصدر والمعايير متطابقة؛ لاخبرةحساسة أوبياناتشخصية مطلوبة.
+- خمسةأصول/10مقاطع محفوظة: Lina00/Karim03، والمفردات والنماذج والقراءة02 والاستماع03؛ أعداد16/17/14 النصية تقابلsechzehn/siebzehn/vierzehn فيالتسجيل بلااختلافمعنى. لا توليد أو استماع أو اعتماد صوتي جديد.
+- الملفات:مصدر/تقييم/حزمة،20صفًا فيcatalog وخمسةصفوفaudio-register فيsource_line فقط، عامل الخدمة واختباراه؛ progression/accessibility_audit، الحارسالجديد `tools/test_b1_01_review.py` وملفاالتسليم. لاapp.js أوCSS أوplaylist أوMP3 أوpackage/lock.
+- PASS:البناء والتحقق وخمس مجموعاتNode والحارس implementation-only وdiff. صُححت نهاياتCSV منCRLF العرضية إلىLF الأصلية قبلالرفع؛ فشلdiff التنسيقي ليسنجاحًا مخفيًا. لم تكتمل بعد الفحوص التراكمية والمتصفح وسجل97وحدة/33بندًا المقترح؛ الحملة ما زالت29/53 إلىتوثيقها.
+- قُرئت11صفحة كاملة لدعم القاعدة/الأزمنة/الأفعال/الدليل: Duden als_temporal/wenn/erinnern/teilnehmen/inzwischen/Erlebnis؛ Lingolia Nebensätze/Adverbialsätze/Präteritum/Perfekt؛ mein-deutschbuch wenn-und-als. صفحةDuden /als قرئت لكنها ظرفلهجي لا الرابطالزمني، فاستبعدت. لا ننسخ تعميمGleichzeitigkeit أووصفنشاطواحد حرفيًا فوقمثالالفترة؛ Duden يبين تعددالعلاقاتالزمنية.
+- تُرفع الآن مجموعة التنفيذ بعنوان `Align B1.1 temporal clauses, evidence and performance tasks (CR31)`؛ معرفها فيgit log بعدالدفع. التالي السجل الفردي وحفظباقيالدروس والصوت ثم31حارسًا وخمس مجموعاتمتصفح والتوثيق والرفع؛ بعدهاCR32/B1.2.
+- كلتعديل يرفع فورفحص مجموعته؛ المحتوى والتقييم والتطبيق قبلالصوت؛ لا مراجع بشري شرطًا. لا تبديلفرع أو دمجPR#1 أو إعادةتوليد/إخفاء/اعتمادصوت بلا موافقة. حد10طلباتصوت/رد؛ الأصوات وفحوصA2.9 وA2.7 Q08→T05 محفوظة؛ قيدا التسجيل A2.8/A2.9 دونتغيير، وB1.9/B1.10 معلقان واختيارB1.11 ثابت. احفظتاريخB2.6؛ GitHub مستقل عنVercel ولا إعادةنشرمتكررة أوترقيةمدفوعة بسببحدالخدمة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال رفع CR30 — 2026-10-08
+
+- **التنفيذ:** `265d0a8054b478ed4f06bdb8da948330f374c378`؛ **المراجعة والفحوص:** `e1b88183c2549b8b40f0b03d13311d2dfba955d3`. رُفع الاثنان إلى `arena/01a1036f-deutschlern`، وتطابقHEAD وorigin بعد كل رفع. هذا الإيصال تعديل توثيقي يُرفع فور فحصه بعنوان `Record CR30 delivery receipt and Preview status`؛ معرفه فيgit log، ولا تُنسب إليه حالة نشر السابق.
+- **آخر فحص PR#1:**OPEN، mergedAt=null، والرأسe1b8818. لم يُدمج العمل ولا يوصف المشروع بأنه مكتمل.
+- **Vercel للتنفيذ265d0a8:**فشل بسبب حد النشر، بلاdeployment. **للمراجعةe1b8818:**كان pending ثم أكد آخر استعلام **success** مع Preview رقم **6944610382** وحالةdeployment ناجحة: https://deutschlern-7n7lwrsst-balinader-2671s-projects.vercel.app . لا إعادة نشر يدوية أو ترقية مدفوعة؛ رُفعت مجموعة المراجعة الضرورية فحسب. نجاحPreview ليس نشرProduction أو اختبار الواجهة البعيدة، وهذه لم تختبر. نشرcommit الإيصال غير مستعلم عنه.
+- **الفحوص:**البناء والتحقق و30 حارسًا وخمس مجموعاتNode وخمس مجموعاتمتصفح PASS. الحزمة1,997,818 بايت وv77؛133 حالةaxe وصفر مخالفات للقواعد المختارة، مع90 ظهورًا غير حاسم/204 ظهورًا لعقد؛126 حالة عرض ضيق. نجحfilechooser من أول تشغيل هذا الدور، لكن سبب تذبذبه فيCR29 غير محلول.
+- **الحفظ:**52 درسًا أخرى و1060 صف كتالوج أخرى و474MP3 وplaylist ثابتة؛ أربعة أصول/10 مقاطعA2.12 والأصوات محفوظة. تغير نص خيارQ10 الصحيح وحده لتصحيحbevor، مع حفظ29 خيارًا والفهارس. لا توليد أو استماع أو اعتماد صوتي جديد.
+- **التغطية:**102 وحدة/31 بندًا/10 مراجع كاملة؛29/53 درسًا والبوابة منفصلة،24 متبقية. تقرأ المراجع بوصفها دعمًا للقواعد المذكورة، لا تصديقًا لكل سطر: التعرف على المبني للمجهول في `wird eine Ausstellung eröffnet` تحليل نحوي للنص لا مطلب إنتاج إضافي، ولا يُنسب إلى صفحة مصدر مخصصة للمبني للمجهول لم تُقرأ.
+- **التالي CR31/B1.1 — als وwenn:**مراجعة كل نص وتمرين وبديل ومعيار، مع حفظ Lina00/Karim03 ونمط الراوي02/الاستماع03. لا إعادة A2.12 أو تسجيلاته، ولا مراجع بشري شرطًا، ولا تبديلفرع أو دمج. القرارات والملفات والفحوص التفصيلية في التقريرين وبقية هذا التسليم.
+
+رُوجع **A2.12 — العطلات والمهرجانات والثقافة: bevor وnachdem** في **102 وحدة و31 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. أُصلح خطأ Q10 الذي كان يعكس معنى bevor: في أمثلة الدرس يقع حدث الرئيسية قبل حدث التابعة. تغير نص الخيار الصحيح وحده مع حفظ فهرسه والخيارات29 الأخرى وعتبة80%. قُيدت Perfekt مع nachdem بالخطة/الرئيسية المضارعة وشرح الاكتمال النسبي، وحُسم ترتيبT02 المبهم وفُصلت أوقات البرامج الثلاثة. **P01/T08 خمس جمل لخطة مع الجهر ومكان ووقت معًا**؛ **P02/T07ب ثلاث صيغ كتابية لخط زمني ثابت دون جهر**، بنموذجين ومعايير متطابقة. Q02→T04 وQ10→T07. الإصدار `a2-12-v2` والمخزن `v77`. أربعة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد. **الحملة29/53 درسًا والبوابة منفصلة؛ تبقى24، والتالي CR31/B1.1.** تشمل المراجعة النصية الآن دروس A2 الاثني عشر؛ هذا لا يعني دمج العمل أو شهادة مستوى أو اكتمال المشروع.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم: `content/A2/lesson-12-holidays-festivals-culture.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وأربعة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الحارس الجديد `tools/test_a2_12_review.py`. اختبارfilechooser لم يتغير.
+- السجلان `data/reviews/a2-12-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.36 وتقرير المتصفح وملفا التسليم. لا تعديلplaylist أوMP3 أوapp.js أوCSS أوpackage/lock.
+- رُفع التنفيذ **`265d0a8054b478ed4f06bdb8da948330f374c378`** إلى الفرع الوحيد `arena/01a1036f-deutschlern`، وتطابقHEAD معorigin. مجموعة السجل والفحوص بعنوان `Record CR30 granular A2.12 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log ثم يوثق إيصالها.
+- لا تبديل فرع أو دمج PR#1 أو ادعاء اكتمال المشروع. حالة PR وVercel تثبت باستعلام التسليم؛ لا تنسب نجاحًا قديمًا لأحدثcommit. رفعGitHub مستقل عن النشر، ولا إعادة نشر متكررة أو ترقية مدفوعة بسبب حدود الخدمة.
+- في بداية الدور قورنت710 ملفات بخط الأساس بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل. لا تكرر الاستعادة أو التنظيف دون مقارنة جديدة.
+- **التالي CR31/B1.1 — الحياة اليومية والهوايات والتجارب: als وwenn:** اقرأ مصدر `content/B1/lesson-01-daily-life-hobbies-experiences.md` وتقييمه وأصوله كاملة، وراجع الحدث المنفرد والعادة المتكررة وكل نص وتمرين وبديل ومعيار بالمراجع. احفظ Lina00/Karim03، والمفردات والنماذج والقراءة02 والاستماع03؛ لا حاجة لإعادة A2.12 أو تسجيلاته.
+- القرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا إخفاء أو إعادة توليد أو تعيينready/نهائي بلا موافقة؛ حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيار B1.11 محفوظ. احفظ A2.7 Q08→T05 وفحوص اتساق A2.9 والأصوات المقررة وتاريخ B2.6 دون إعادة تسميته B2.7.
+
+## حدود المعنى والنصوص والصوت
+
+- **bevor:** في `Wir essen, bevor das Konzert beginnt` الأكل أولًا ثم بداية الحفل؛ تقديم التابعة لا يجعل حدثها أسبق. **nachdem:** في `Nachdem wir gegessen haben, gehen wir zum Konzert` الأكل في التابعة أولًا ثم الذهاب. النمط المثبت المدروس لا يشمل كل استعمال منفي أو شرطي للرابطين.
+- `nachdem + Perfekt` هنا مع خطة أو رئيسية مضارعة، لا قاعدة لكل الأزمنة؛ الاكتمال نسبي للحدث اللاحق وقد يكون داخل خطة مستقبلية. مثال الماضي الأسبق للمقارنة فقط لا مطلب تقييم إضافي.
+- الحوار السبت بلقاء الخامسة وحفل السابعة؛ القراءة الأحد بافتتاح14 وحفل17؛ الاستماع السبت فيLinden بزيارة معرض الرابعة. لا نخلط البرامج أو نضيف ساعة نهاية أو ألعاب نارية محددة. erst am Abend تعني لا يعودون إلا مساءً.
+- إمكان زيارة السوق ليس إثبات الزيارة؛ مجانية الدخول لا تثبت مجانية الطعام أو النقل. مثال شراء التذاكر في القاعدة مستقل عن برامج الدخول المجاني. Linden اسم مكان في مثال خيالي لا فعالية حقيقية موثقة.
+- **لم يُجرَ استماع أو توليد أو اعتماد صوتي جديد.** الأصول الأربعة ومقاطعها العشرة محفوظة؛ أمثلةbevor المسجلة سليمة في ترتيبها، والخطأ المصحح كان في التقييم. قيدا A2.8/A2.9 السابقان لم يُصلحا في التسجيلات، وبقي توضيحهما المكتوب.
+- مهمتان خياليتان بلا رحلة أو حجز أو بيانات سفر أو شريك أو تسجيل؛ الجهر فيP01 فقط. الإقرار والحد الحرفي لا يصححان اللغة أو النطق.
+
+## الفحوص وحدودها — CR30
+
+- **PASS:البناء والتحقق**؛ الحزمة **1,997,818 بايت** والمخزن **v77**. بقيت53 درسًا و428 عنوان تمرين و55 عنوان حوار وفق نمط العداد و754 مفردة؛530 سؤال درس+10 للبوابة و109 مهمات أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending. أصول A2 الإجمالية54/120 مقطعًا محفوظة؛ ليست هذه الأعداد اعتمادًا صوتيًا جديدًا.
+- **PASS:30 حارس مراجعة تراكميًا** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–12. حارس A2.12 يطابق102 وحدة و31 بندًا و30 بديلًا وستة معايير، والبصمات والكتالوج والنموذجين. داخل PHR22 جزءًا:18 مفردة/صيغة وأربع جمل قواعد، لا22 ملفًا.
+- **PASS:خمس مجموعات Node:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغة app.js وservice-worker.js وكل tools/test_*.cjs وgit diff --check.
+- **PASS:خمس مجموعات متصفح:** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**؛ حزم package-lock القائمة دون تغييرها، و@sparticuz/chromium143.0.4 ومكتبات al2023 خارجGit. التشغيل آلي صامت، لا استماع أو جهاز فعلي.
+- الاختبار العام عند1440×900 و390×844: تنقل وRTL والتفريغات وتشغيلMP3 بسرعتي1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. لا ضمان بقاء كل التسجيلات مخزنة دائمًا أو اختبار سمعي مستقل لكل أصل.
+- تحديث عامل الخدمة من fixture الإصدارv42 إلىv77 دون إعادة تحميل قسرية، مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد صوت غير مخزن بـ503 وإعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- **progression:** سجل A2.12 القديمv1 محفوظ لكنه لا يمنح إتقانv2 أو يفتحB1.1؛ مسودةv1 مرفوضة. تُقبل النسخة الجديدة مع الدرجة والدليل المطلوبين. P01 يتطلب إقرار الجهر؛ P02 كتابة فقط دون خانة جهر. النموذجان242/179 حرفًا يمران بحدي200/150؛ الإجابة القصيرة أو الإقرارات الناقصة لا تمر. هذا ضبط للدليل المحلي لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**133 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة، مع **90 ظهورًا لفحوص غير حاسمة تشمل204 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة ولا نجاحًا شاملًا أو شهادةWCAG؛ لا مراجع بشري شرطًا للاستمرار.
+- **النماذج:**نجح التشغيل المتسلسل الأول عند1440 و390؛ حفظ وإعادة تحميل وتصدير واستيراد ومسودات، دون إعادة هذا الدور أو تعديل الاختبار. **تذبذبfilechooser الموثق فيCR29 لم يُصلح سببه؛ نجاح هذه المحاولة لا يثبت الإصلاح.**
+- **العرض الضيق:**PASS؛126 حالة،63 عند320×900 و63 عند568×320، مع كل الدروس والتفريغات والجداول. viewport ليس تكبير نظام أو هاتفًا فعليًا.
+- **الحفظ مقابل `10c1f8727d41c309112e159fb4588b421a0d1958`:**52 درسًا آخر و1060 صف كتالوج آخر و115 ملفًا محميًا لم تتغير، بما فيها المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. تغير20 صفًا تخص A2.12 فقط في الكتالوج. بقيت كتلة فحوص الاتساق الصوتي السابقة من A2.9 فصاعدًا حرفيًا؛ أضيفت اختبارات الإصدار قبلها دون إضعافها.
+- playlist مطابق بايتًا ببايت؛474 ملفMP3 طابقت بصماتGit السابقة. تغيرت4 صفوف تخص A2.12 في audio-register في source_line/source_heading فقط، وبقيت213 صفًا أخرى. Laila02/Omar03، وNarrator02 للمفردات والقراءة، وErzählperson03 للاستماع محفوظة بالكلمات والمسارات والحالات.
+- **تغيير الخيار مقصود وموثق:**29 خيارًا ثابتة؛ نص Q10 عند الفهرس1 صُحح من جعل التابعة أسبق إلى جعل الرئيسية أسبق معbevor. جميع فهارس المفاتيح ثابتة، ولا نقل للخطأ إلى التسجيل الصحيح. المراجع لا تمنح شهادةCEFR مستقلة أو تثبت برنامج مهرجان حقيقي. لا واجهة بعيدة أو نشرProduction اختُبرا.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR30 / A2.12 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `10c1f8727d41c309112e159fb4588b421a0d1958`. استعيدت metadata بعد fetch ومقارنة710 ملفات بصفر اختلاف أو إضافات؛ reset --mixed دون حذف عمل. لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/A2/lesson-12-holidays-festivals-culture.md/.assessment.json` إلى `a2-12-v2`؛ المخزنv77. أُصلح انقلاب ترتيبbevor في الخيار الصحيح لـQ10 وشرحه: الرئيسية أسبق في أمثلة الدرس. الفهرس1 ثابت، وتغير نص خيار واحد، وبقيت29 خيارًا و80%. قُيد nachdem + Perfekt بخطة/رئيسية مضارعة، لا كل الأزمنة، مع توضيح الاكتمال النسبي.
+- حُسم ترتيبT02.1/3 بدل تخمين قبل/بعد، وصُحح عنوان التمرين ليشمل تصريف الأفعال؛ حُددت بداياتT04 وبنكT06 وأضيفT05.5 للألعاب النارية. Q02→T04 وQ10→T07؛ صُححت عربيةQ06 ودقةerst am Abend. فُصلت برامج الحوار والقراءة والاستماع، والمجانية لا تشمل الطعام تلقائيًا. أضيف جمعEintritt مع تقييد المفرد بالسياق.
+- P01/T08 خمس جمل مع الجهر ومكان ووقت معًا، لا أحدهما فقط؛ نموذج242 حرفًا وحد200. P02/T07ب ثلاث صيغ مكتوبة لخط زمني ثابت، دون جهر؛ نموذج179 وحد150. المصدر والمعايير متطابقة؛ لا رحلة أو حجز أو بيانات سفر أو تسجيل.
+- أربعة أصول/10 مقاطع محفوظة: Laila02/Omar03، والمفردات والقراءة02 والاستماع03. لا استماع أو توليد أو اعتماد جديد؛ فحوص الاتساق السابقة وA2.7 Q08→T05 محفوظة، وقيدا صوتA2.8/A2.9 لم يصححا في التسجيلات.
+- الملفات الأخرى:20 صف كتالوج،4 صفوف audio-register فيsource_line/source_heading فقط؛ الحزمة وعامل الخدمة واختباراه؛ progression/accessibility_audit والحارس الجديد `tools/test_a2_12_review.py` وملفا التسليم. لا تغييرapp.js أوCSS أوplaylist أوMP3.
+- PASS:البناء والتحقق والحارس implementation-only وخمس مجموعاتNode وdiff؛ فحوص المتصفح والحفظ الشامل والسجل الفردي لم تنفذ بعد. تبقى الحملة28/53 حتى توثيق المراجعة. تذبذبfilechooser التاريخي غير محلول؛ سجل كل محاولة ولا تصف إعادة نجاح بأنها إصلاح.
+- قُرئت10 صفحات كاملة: Lingolia Adverbialsätze/Nebensätze/Perfekt/Trennbare/Modalverben/Konjunktionen؛ وDuden bevor/nachdem/teilnehmen/Eintritt. لا صفحاتمعطلة أو أجزاءغيرمقروءة. دعم صريح لأسبقيةالرئيسية معbevor والتابعة معnachdem؛ لا شهادةCEFR من القواميس.
+- تُرفع المجموعة فور فحصها بعنوان `Correct A2.12 temporal order and align performance tasks (CR30)`؛ معرفها فيgit log بعدالدفع. التالي سجل102 وحدة/31 بندًا والحفظ مقابل10c1f87، ثم30 حارسًا وخمس مجموعاتمتصفح وتحديثالتوثيق والرفع.
+- القرارات مستمرة: كل تعديل يرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا تبديلفرع أو دمجPR#1 أو إعادةتوليد/إخفاء/اعتماد صوت بلا موافقة؛ حد10طلباتصوت/رد. احفظالأصوات واتساقA2.9 وتاريخB2.6. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. GitHub مستقل عنVercel؛ لا إعادةنشر متكررة أو ترقيةمدفوعة بسببحدالخدمة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع والتحقق — CR29، 2026-10-08
+
+- رُفع التنفيذ **`21ce2e4867e3640d3692f8cde4ec813cc128e248`**، ثم سجل المراجعة **`faa380dee811f2c3d3fa7272ae94b1ab3a48f6b1`** إلى `arena/01a1036f-deutschlern`. تطابق HEAD مع origin بعد كل دفع، وكانت شجرة العمل نظيفة بعد رفع السجل.
+- PASS:29 حارس مراجعة وخمس مجموعات Node والبناء والتحقق والصياغة وdiff. نجحت مجموعات المتصفح الخمس **مع إعادة موثقة للنماذج**: المحاولة الأولى نجحت عند1440 ثم انتهت مهلةfilechooser عند390؛ الإعادة دون تعديل الاختبار أو التطبيق نجحت عند العرضين. **التذبذب غير محلول، ونجاح الإعادة لا يثبت إصلاحه.** حدود الفحوص مفصلة أدناه.
+- السجل122 وحدة و35 بندًا، مع30 بديلًا وستة معايير. المقارنة تحفظ52 درسًا آخر و474 ملف MP3 وكتلة فحوص الاتساق الصوتي السابقة. لا استماع أو توليد أو اعتماد صوتي جديد؛ خمسة أصول/10 مقاطع A2.11 بكلماتها وأصواتها وروابطها وحالاتها محفوظة. قيدا A2.8/A2.9 الصوتيان السابقان لم يُصلحا في التسجيلات.
+- PR#1 **OPEN**، وmergedAt=null، ورأسه وقت الفحص `faa380d`. لا دمج ولا إعلان اكتمال المشروع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR29 delivery and documented browser retry`؛ معرفه في git log بعد الدفع. حالة نشر الإيصال نفسه لم تُفحص.
+- التنفيذ `21ce2e4` له Vercel **success** وPreview deployment **6944181790** بحالةsuccess: https://deutschlern-cruzrcrdh-balinader-2671s-projects.vercel.app . هذه بيانات نشر فقط، وليست فحص واجهة بعيدة أو نشر Production.
+- سجل المراجعة `faa380d` له Vercel **failure** برسالة `Deployment rate limited — retry in 24 hours.`؛ واستعلام deployments له أعاد قائمة فارغة. لا نجاح نشر مدّعى لهذا السجل، ولا إعادة نشر متكررة أو ترقية مدفوعة؛ رفع GitHub ناجح ومستقل.
+- الحملة **28/53 درسًا** والبوابة منفصلة؛ تبقى25. التالي **CR30/A2.12 — العطلات والمهرجانات والثقافة، bevor/nachdem**. اقرأ المصدر والتقييم والأصول كاملة، واحفظ Laila02/Omar03 واتساق الأصوات. لا تعد A2.11 أو تسجيلاته؛ حدّث ملفّي التسليم وارفع كل مجموعة فور فحصها، دون مراجع بشري شرطًا للمتابعة ومع استمرار جميع القرارات أدناه.
+
+رُوجع **A2.11 — المدن والسكن والجيران: Wo أم Wohin؟** في **122 وحدة و35 بندًا أو مطلبًا داخل التمارين**، مع **9 مراجع مقروءة كاملة**. قُيدت قاعدة المكان/الوجهة بحروف الجر المتغيرة، وفُصلت الحركة داخل المكان عن الانتقال إليه، مع دعم liegen/legen وstehen/stellen وhängen والمفعول والمصدر. صُحح شرح Q10 وربطه→T02، وأضيف بند محطة الترام T05.5 لدعمQ07. **P01/T08 أربع جمل لوصف غرفة مع الجهر**؛ **P02/T07ب أربع جمل عن جوار خيالي وطلب مهذب، كتابة فقط**، بنموذجين ومعايير متطابقة. الخيارات الثلاثون والمفاتيح وعتبة80% محفوظة. الإصدار `a2-11-v2` والمخزن `v76`. خمسة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد. **الحملة28/53 درسًا والبوابة منفصلة؛ تبقى25، والتالي CR30/A2.12.** هذا سجل مراجعة وفحوص وحدود معلنة، لا شهادة مستوى أو إعلان اكتمال الدمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم: `content/A2/lesson-11-housing-neighborhood-wohin.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وخمسة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الحارس الجديد `tools/test_a2_11_review.py`. اختبار filechooser لم يُغيّر.
+- السجلان `data/reviews/a2-11-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.35 وتقرير المتصفح وملفا التسليم. لا تعديلplaylist أوMP3 أوapp.js أوCSS أوpackage/lock.
+- رُفع التنفيذ **`21ce2e4867e3640d3692f8cde4ec813cc128e248`** إلى الفرع الوحيد `arena/01a1036f-deutschlern`، وتطابقHEAD معorigin. مجموعة السجل والفحوص بعنوان `Record CR29 granular A2.11 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log ثم يوثق إيصالها.
+- لا تبديل فرع أو دمج PR#1 أو ادعاء اكتمال المشروع. حالة PR وVercel ستُثبت باستعلام التسليم؛ لا تنسب نجاحًا قديمًا لأحدثcommit. رفعGitHub مستقل عن النشر، ولا إعادة نشر متكررة أو ترقية مدفوعة بسبب حدود الخدمة.
+- في بداية الدور قورنت707 ملفات بخط الأساس بعدfetch بصفر اختلاف أو إضافات، ثم استعيدتmetadata بـreset --mixed دون فقد عمل. لا تكرر الاستعادة أو التنظيف دون مقارنة جديدة.
+- **التالي CR30/A2.12 — العطلات والمهرجانات والثقافة:** اقرأ مصدر `lesson-12-holidays-festivals-culture` وتقييمه وأصوله كاملة، وراجع ترتيب الأنشطة وbevor/nachdem وكل نص وتمرين وبديل ومعيار بالمراجع. احفظ Laila02/Omar03 والأصوات المتسقة. لا حاجة لإعادة A2.11 أو تسجيلاته.
+- القرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا إخفاء أو إعادة توليد أو تعيينready/نهائي بلا موافقة؛ حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيار B1.11 محفوظ. احفظ A2.7 Q08→T05 وفحوص اتساق A2.9 والأصوات المقررة وتاريخ B2.6 دون إعادة تسميته B2.7.
+
+## حدود المعنى والنصوص والصوت
+
+- **الحركة ليست قاعدة الحالة وحدها:** في `Im Innenhof spielen zwei Kinder` يحدث اللعب داخل مكان بداتيف؛ `in den Innenhof` وجهة مع حرف متغير، أما `zur Haltestelle` فوجهة معzu والداتيف. حالات المفعول وعبارة الجر وظائف مختلفة.
+- أريكة Fadi بجانب النافذة وأريكة Salma بمحاذاة الجدار؛ موضع الساحة في العبارة العامة مستقل عن موضعها في القراءة. القاموس فوق الطاولة، والمساحة الخضراء خلف المنزل، ومحطة الترام عند الزاوية. لا مسافات أو أزمنة رحلة أو هوية متكلم من الصوت مستنتجة.
+- möchte … stellen رغبة لا وضع منجز؛ freundlich وصف لا دليل مساعدة أو موافقة؛ طلب leiser خفض للصوت قليلًا لا صمت مطلق أو حكم قانوني. النص لا يختبر تعيين المتكلمة من Sie sagt وحدها.
+- **لم يُجرَ استماع أو توليد أو اعتماد صوتي جديد.** الأصول الخمسة ومقاطعها العشرة وكلماتها محفوظة؛ وقيدا A2.8/A2.9 السابقان لم يُصلحا في التسجيلات، وبقي توضيحهما المكتوب كما هو.
+- المهمتان خياليتان: لا عنوان حقيقي أو نقل أثاث أو شكوى مرسلة أو شريك أو تسجيل. الجهر فيP01 فقط؛ P02 كتابة فقط. الإقرار والحد الحرفي لا يصححان اللغة أو النطق.
+
+## الفحوص وحدودها — CR29
+
+- **PASS:البناء والتحقق**؛ الحزمة **1,984,262 بايت** والمخزن **v76**. بقيت53 درسًا و428 عنوان تمرين و55 عنوان حوار وفق نمط العداد و754 مفردة؛530 سؤال درس+10 للبوابة و109 مهمات أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending. الأعداد ليست شهادة مراجعة أو اعتماد صوت لكل المنهج.
+- **PASS:29 حارس مراجعة تراكميًا** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–11. حارس A2.11 يطابق122 وحدة و35 بندًا و30 بديلًا وستة معايير، والبصمات والكتالوج والنموذجين. داخل PHR24 جزءًا، وداخل MODEL11 وحدة جملة/سؤال/جواب؛ ليست ملفات مستقلة.
+- **PASS:خمس مجموعات Node:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغة app.js وservice-worker.js وكل tools/test_*.cjs وgit diff --check.
+- **خمس مجموعات متصفح نجحت، مع إعادة موثقة لفحص النماذج:** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**؛ حزم package-lock القائمة دون تغييرها، و@sparticuz/chromium143.0.4 ومكتبات al2023 خارجGit. التشغيل آلي صامت، لا استماع أو جهاز فعلي.
+- الاختبار العام عند1440×900 و390×844: تنقل وRTL والتفريغات وتشغيلMP3 بسرعتي1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. لا ضمان بقاء كل التسجيلات مخزنة دائمًا أو اختبار سمعي مستقل لكل أصل.
+- تحديث عامل الخدمة من fixture الإصدارv42 إلىv76 دون إعادة تحميل قسرية، مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد صوت غير مخزن بـ503 وإعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- **progression:** سجل A2.11 القديمv1 محفوظ لكنه لا يمنح إتقانv2 أو يفتحA2.12؛ مسودةv1 مرفوضة. تقبل النسخة الجديدة مع الدرجة والدليل المطلوبين. P01 يتطلب إقرار الجهر؛ P02 كتابة فقط دون خانة جهر. النموذجان136/132 حرفًا يمران بحدي120/110؛ الإجابة القصيرة أو الإقرارات الناقصة لا تمر. هذا ضبط للدليل المحلي لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**129 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة، مع **87 ظهورًا لفحوص غير حاسمة تشمل198 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة ولا نجاحًا شاملًا أو شهادةWCAG؛ لا مراجع بشري شرطًا للاستمرار.
+- **قيد النماذج موثق:** في التشغيل الأول نجح عرض1440، ثم انتهت مهلة30000ms عند انتظارfilechooser على عرض390 في `tools/test_forms_keyboard.cjs:48`. أُعيد الاختبار الكامل نفسه بملفات متصفح جديدة، فنجح عند1440 و390، دون تغيير التطبيق أو الاختبار أو تخفيف شروطه. **سبب التذبذب لم يثبت ولم يُصلح؛ نجاح الإعادة لا يثبت الإصلاح.** فُحص الحفظ وإعادة التحميل والتصدير والاستيراد والمسودات في التشغيل الناجح.
+- **العرض الضيق:**PASS؛126 حالة،63 عند320×900 و63 عند568×320، مع كل الدروس والتفريغات والجداول. viewport ليس تكبير نظام أو هاتفًا فعليًا.
+- **الحفظ مقابل `ae107375443ae586c2a12444761f34a9e5d8b39c`:**52 درسًا آخر و1060 صف كتالوج آخر و115 ملفًا محميًا لم تتغير، بما فيها المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. تغير20 صفًا تخص A2.11 فقط في الكتالوج. بقيت كتلة فحوص الاتساق الصوتي السابقة من A2.9 فصاعدًا حرفيًا؛ أضيفت اختبارات الإصدار قبلها دون إضعافها.
+- playlist مطابق بايتًا ببايت؛474 ملفMP3 طابقت بصماتGit السابقة. تغيرت5 صفوف تخص A2.11 في audio-register في source_line/source_heading فقط، وبقيت212 صفًا أخرى. Nora02/Fadi03، وSalma02 المتسقة مع A2.9، وNarrator02 للمفردات والنماذج، وErzählperson03 للاستماع محفوظة بالكلمات والمسارات والحالات.
+- الخيارات الثلاثون وفهارس المفاتيح العشرة ثابتة. المراجع تسند قواعد ومعاني محددة، لا تصنيفCEFR مستقلًا لكل مفردة أو قانونًا للضجيج والسكن. لا واجهة بعيدة أو نشرProduction اختُبرا.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR29 / A2.11 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `ae107375443ae586c2a12444761f34a9e5d8b39c`. استعيدت metadata بعد fetch ومقارنة707 ملفات بصفر اختلاف أو إضافات؛ reset --mixed دون حذف عمل. لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/A2/lesson-11-housing-neighborhood-wohin.md/.assessment.json` إلى `a2-11-v2`؛ المخزنv76. قُيدت Wo/Wohin بحروف الجر المتغيرة، وأضيف zwischen وصف الجمع للمقارنة. الحركة داخل مكان ليست وحدها سبب Akkusativ؛ مثال Im Innenhof spielen ومثال وجهة معzu/Dativ. دعم liegen/legen وstehen/stellen وhängen والمفعول والمصدر والفعل المنفصل.
+- صُحح شرحQ10 الذي كان ينسب الإجابة إلى «الجملة الأولى»، وربطه→T02. أضيف T05.5 عن محطة الترام لدعمQ07؛ حُددت بداياتT04 وبنكT06. الخيارات الثلاثون والمفاتيح و80% محفوظة. وُضحت ترجمةRegal ودلالةNachbarschaft وجمعها القليل دون تغيير نص المفردات المسجل.
+- P01/T08 أربع جمل خبرية مع الجهر: موضعان بـstehen/liegen وعمليتا وضع بـIch stelle/Ich lege؛ نموذج136 حرفًا وحد120. P02/T07ب أربع جمل عن جوار خيالي وضجيج وطلب مهذب، كتابة فقط؛ نموذج132 وحد110. المصدر والمعايير متطابقة؛ لا عنوان حقيقي أو نقل أثاث أو شكوى مرسلة أو تسجيل.
+- خمسة أصول/10 مقاطع محفوظة: Nora02/Fadi03، Salma02 متسقة مع A2.9، والمفردات والنماذج02 والاستماع03. لا توليد أو استماع أو اعتماد جديد؛ فحوص الاتساق السابقة محفوظة، وقيدا A2.8/A2.9 الصوتيان لم يصححا في التسجيلات.
+- الملفات الأخرى:20 صف كتالوج،5 صفوف audio-register فيsource_line/source_heading فقط؛ الحزمة وعامل الخدمة واختباراه؛ progression/accessibility_audit والحارس الجديد `tools/test_a2_11_review.py` وملفا التسليم. لا تغييرapp.js أوCSS أوplaylist أوMP3.
+- PASS:البناء والتحقق والحارس implementation-only وخمس مجموعاتNode وdiff. المتصفح والسجل الفردي والحفظ الشامل لم تنفذ بعد؛ تبقى الحملة27/53 حتى توثيق المراجعة.
+- قُرئت9 صفحات مفيدة كاملة: Lingolia المحلي والعام لحروف الجر (جزآن لكل منهما)، وتصريف الأسماء/الأدوات، وstehen/stellen، وliegen/legen، والفعل المنفصل، والأفعال الناقصة؛ وDuden Nachbarschaft ومقالhängen المتعدي واللازم. أربعة روابط معطلة مستبعدة: Lingolia dativ؛ Duden hängen الافتراضي وتخمينمساره وRegal. رابطakkusativ تحول إلى صفحةتصريفالأسماء الكاملة. البحثدل على مقالhängen، ولم تُعتمد نتائج أخرى متناقضة أو بلا قراءة.
+- تُرفع المجموعة فور فحصها بعنوان `Align A2.11 spatial cases and neighbor-request tasks (CR29)`؛ معرفها فيgit log. التالي سجل122 وحدة/35 بندًا وفحوص الحفظ مقابلae10737، ثم29 حارسًا وخمس مجموعاتمتصفح وتحديثالتوثيق والرفع.
+- القرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا تبديلفرع أو دمجPR#1 أو إعادةتوليد/إخفاء/اعتماد صوت بلا موافقة؛ حد10 طلبات صوت/رد. احفظA2.7 Q08→T05 واتساقA2.9 والأصوات وتاريخB2.6. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. GitHub مستقل عنVercel؛ لا إعادةنشر متكررة أو ترقيةمدفوعة بسببحدالخدمة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع والتحقق — CR28، 2026-10-08
+
+- رُفع التنفيذ **`b4e0e449df6b3b9e9185d45aa7cc5d3f956e728f`**، ثم سجل المراجعة **`5a216dd9bf9ab4159ebb085de12aeca876c73dcf`** إلى `arena/01a1036f-deutschlern`. تطابق HEAD مع origin بعد كل دفع، وكانت شجرة العمل نظيفة بعد رفع السجل.
+- PASS:28 حارس مراجعة، وخمس مجموعات Node، وخمس مجموعات متصفح، والبناء والتحقق والصياغة وdiff؛99 وحدة و28 بندًا، مع30 بديلًا وستة معايير. المقارنة تحفظ52 درسًا آخر و474 ملف MP3، وكتلة فحوص اتساق A2.9/A2.10 السابقة. حدود الفحوص مفصلة أدناه؛ لا استماع أو اعتماد صوتي جديد.
+- أصول A2.10 الخمسة ومقاطعها العشرة محفوظة بالكلمات والأصوات والحالات والمسارات. لا إعادة توليد أو إخفاء أو اعتماد جديد. قيدا نص التسجيل السابقان في A2.8/A2.9 لم يُصلحا صوتيًا، وتوضيحاتهما المكتوبة محفوظة. لا مراجع بشري شرطًا لمواصلة المراجعة النصية.
+- PR#1 **OPEN**، وmergedAt=null، ورأسه وقت الفحص `5a216dd`. لا دمج ولا إعلان اكتمال المشروع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR28 delivery and unchanged audio`؛ معرفه في git log بعد الدفع. حالة نشر الإيصال نفسه لم تُفحص.
+- التنفيذ `b4e0e44` له Vercel **success** وPreview deployment **6943547489** بحالةsuccess: https://deutschlern-7yisid2q5-balinader-2671s-projects.vercel.app . هذه بيانات نشر فقط، وليست فحص واجهة بعيدة أو نشر Production.
+- سجل المراجعة `5a216dd` له Vercel **failure** برسالة `Deployment rate limited — retry in 24 hours.`؛ واستعلام deployments له أعاد قائمة فارغة. لا نجاح نشر مدّعى لهذا السجل، ولا إعادة نشر متكررة أو ترقية مدفوعة؛ رفع GitHub ناجح ومستقل.
+- الحملة **27/53 درسًا** والبوابة منفصلة؛ تبقى26. التالي **CR29/A2.11 — المدن والسكن والجيران: Wo أم Wohin؟** اقرأ المصدر والتقييم والأصول كاملة؛ احفظ Nora02/Salma02/Fadi03 واتساق Salma مع A2.9. لا تعد A2.10 أو تسجيلاته؛ حدّث ملفّي التسليم وارفع كل مجموعة فور فحصها، مع استمرار جميع القرارات أدناه.
+
+رُوجع **A2.10 — الرياضة والصحة والمشاعر وجملة weil** في **99 وحدة و28 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. ضُبطت الفواصل والفعل المصرف مع weil وdenn، وقُيد موضع deshalb بدل تعميمه. أضيف دعم Perfekt والمصدر والضمائر، وفُصل السبب عن النتيجة واللعب الجيد عن الفوز، دون وصفة صحية. أزيل افتراض جنس متكلم الاستماع. **P01/T08 أربع جمل خيالية مع الجهر**، تستعمل weil مرتين وdenn مرة؛ **P02/T07ب ثلاث صيغ كتابية للسبب نفسه دون جهر**، بنموذجين ومعايير متطابقة. Q02→T04 وQ09→T03؛ الخيارات الثلاثون والمفاتيح وعتبة80% محفوظة. الإصدار `a2-10-v2` والمخزن `v75`. خمسة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد. **الحملة27/53 درسًا والبوابة منفصلة؛ تبقى26، والتالي CR29/A2.11.** هذا سجل مراجعة وفحوص وحدود معلنة، لا شهادة مستوى أو إعلان اكتمال الدمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم: `content/A2/lesson-10-sports-health-feelings-weil.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وخمسة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الحارس الجديد `tools/test_a2_10_review.py`، مع تصحيح مجموع الوحدات من مسودة109 إلى99.
+- السجلان `data/reviews/a2-10-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.34 وتقرير المتصفح وملفا التسليم. لا تعديلplaylist أوMP3 أوapp.js أوCSS أوpackage/lock.
+- رُفع التنفيذ **`b4e0e449df6b3b9e9185d45aa7cc5d3f956e728f`** إلى الفرع الوحيد `arena/01a1036f-deutschlern`، وتطابقHEAD معorigin. مجموعة السجل والفحوص بعنوان `Record CR28 granular A2.10 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log ثم يوثق إيصالها.
+- PR#1 فُحص على رأس التنفيذ: **OPEN** وmergedAt=null. لا تبديل فرع أو دمج أو ادعاء اكتمال المشروع. حالةVercel لهذه المجموعة لم تفحص بعد؛ رفعGitHub مستقل عن النشر، ولا إعادة نشر متكررة أو ترقية مدفوعة بسبب حدود الخدمة.
+- في بداية الدور قورنت704 ملفات بخط الأساس بعدfetch، بصفر اختلاف أو ملفات إضافية، ثم استعيدتmetadata بـreset --mixed دون فقد عمل. لا تكرر الاستعادة أو التنظيف دون مقارنة جديدة.
+- **التالي CR29/A2.11 — المدن والسكن والجيران: Wo أم Wohin؟** اقرأ مصدر `lesson-11-housing-neighborhood-wohin` وتقييمه وأصوله كاملة، ثم راجع كل نص وتمرين وبديل ومعيار بالمراجع. احفظ أصوات Nora02/Salma02/Fadi03، واتساق Salma مع A2.9. لا حاجة لإعادة A2.10 أو تسجيلاته.
+- القرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا إخفاء أو إعادة توليد أو تعيينready/نهائي بلا موافقة؛ حد10 طلبات صوت لكل رد. B1.9/B1.10 معلقان واختيار B1.11 محفوظ. احفظ A2.7 Q08→T05 وفحوص اتساق A2.9 والأصوات المقررة وتاريخ B2.6 دون إعادة تسميته B2.7.
+
+## حدود النصوص والصوت
+
+- مُيّزت ثلاث قصص: جري Omar اليوم وتدريب Lina أمس؛ نشاط Rania وتوترها أحيانًا؛ ثم قصة كرة السلة بلا اسم أو جنس محدد. صوت الراوي وضمير **sie** العائد إلى **die Person** ليسا دليلًا على جنس المتكلم في النص.
+- **gut gespielt** لعب جيدًا لا فاز؛ **regelmäßig** بانتظام لا كل يوم؛ **manchmal** أحيانًا لا دائمًا. خطة الاستراحة غدًا ليست فعلًا مكتملًا. عبارة Lina عن فائدة الرياضة لها تخص الشخصية وليست وصفة لكل متعلم.
+- جميع كلمات الأصول الخمسة مطابقة للمصدر، وحُفظت الأصوات والروابط والحالة التاريخية. **لم يُجرَ استماع أو توليد أو اعتماد صوتي جديد.** لا إصلاح أو إعادة توليد لقيدي A2.8 وA2.9 السابقين؛ بقيت ملاحظاتهما وتوضيحاتهما المكتوبة كما هي.
+- مهام الأداء خيالية؛ لا تمرين بدني فعلي أو معلومات صحية أو شريك أو تسجيل مطلوب. الجهر فيP01 فقط، والتحويل فيP02 كتابة فقط. الحد الحرفي والإقرار لا يقيّمان اللغة أو النطق آليًا.
+
+## الفحوص وحدودها — CR28
+
+- **PASS:البناء والتحقق**؛ الحزمة **1,972,214 بايت** والمخزن **v75**. بقيت53 درسًا و428 عنوان تمرين و55 عنوان حوار وفق نمط العداد و754 مفردة؛530 سؤال درس+10 للبوابة و109 مهمات أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending. الأعداد ليست شهادة مراجعة أو اعتماد صوت لكل المنهج.
+- **PASS:28 حارس مراجعة تراكميًا** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–10. حارس A2.10 يطابق99 وحدة و28 بندًا، و30 بديلًا وستة معايير والبصمات والكتالوج والنموذجين؛ و14 جزءًا داخل PHR وستة داخل MODEL. صُحح عداد مسودة الحارس من109 إلى مجموع الفئات الفعلي99؛ لم تُحذف فئة أو وحدة، ثم نجحت الحراس كلها.
+- **PASS:خمس مجموعات Node:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغة app.js وservice-worker.js وكل tools/test_*.cjs وgit diff --check.
+- **PASS:خمس مجموعات متصفح:** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**؛ حزم package-lock القائمة دون تعديلها، و@sparticuz/chromium143.0.4 ومكتبات al2023 خارجGit. التشغيل آلي صامت، لا استماع أو جهاز فعلي.
+- الاختبار العام عند1440×900 و390×844: تنقل وRTL والتفريغات وتشغيلMP3 بسرعتي1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. لا ضمان بقاء كل التسجيلات مخزنة دائمًا أو اختبار سمعي مستقل لكل أصل.
+- تحديث عامل الخدمة من fixture الإصدارv42 إلىv75 دون إعادة تحميل قسرية، مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد صوت غير مخزن بـ503 وإعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- **progression:** سجل A2.10 القديمv1 محفوظ لكنه لا يمنح إتقانv2 أو يفتحA2.11؛ مسودةv1 مرفوضة. تقبل النسخة الجديدة مع الدرجة والدليل المطلوبين. P01 يتطلب إقرار الجهر؛ P02 كتابة فقط دون خانة جهر. النموذجان223/122 حرفًا يمران بحدي150/110؛ الإجابة القصيرة أو الإقرارات الناقصة لا تمر. هذا ضبط للدليل المحلي لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**125 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة، مع **84 ظهورًا لفحوص غير حاسمة تشمل191 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة ولا نجاحًا شاملًا أو شهادةWCAG؛ لا مراجع بشري شرطًا للاستمرار.
+- **النماذج:**PASS من أول تشغيل متسلسل عند1440 و390؛ حفظ وإعادة تحميل وتصدير واستيراد ومسودات. لم يظهر تذبذبfilechooser التاريخي في هذا التشغيل، ولا ادعاء بإصلاح سببه.
+- **العرض الضيق:**126 حالة؛63 عند320×900 و63 عند568×320، مع كل الدروس والتفريغات والجداول. viewport ليس تكبير نظام أو هاتفًا فعليًا.
+- **الحفظ مقابل `caf693a50a76d4ac76d05079341a9535a22aa797`:**52 درسًا آخر و1060 صف كتالوج آخر و115 ملفًا محميًا لم تتغير، بما فيها المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. تغير20 صفًا تخص A2.10 فقط في الكتالوج، وحُفظت كتلة فحوص اتساق A2.9/A2.10 السابقة حرفيًا.
+- playlist مطابق بايتًا ببايت؛474 ملفMP3 طابقت بصماتGit السابقة. تغيرت5 صفوف تخص A2.10 في audio-register في source_line/source_heading فقط، وبقيت212 صفًا أخرى. الكلمات والأصوات والحالات والمسارات محفوظة: Lina00/Omar03، وRania02، وNarrator02 للمفردات والنماذج، وErzählperson03 للاستماع.
+- الخيارات الثلاثون وفهارس المفاتيح العشرة ثابتة. المراجع تسند قواعد ومعاني محددة، ولا تمنح شهادةCEFR أو حكمًا طبيًا أو تصنيفًا مستقلًا لكل مفردة. لا واجهة بعيدة أو نشرProduction اختُبرا.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR28 / A2.10 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `caf693a50a76d4ac76d05079341a9535a22aa797`. استعيدت metadata القديمة بعد fetch ومقارنة704 ملفات، بصفر اختلاف أو ملفات إضافية؛ reset --mixed فقط، دون حذف عمل. لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/A2/lesson-10-sports-health-feelings-weil.md/.assessment.json` إلى `a2-10-v2`؛ المخزنv75 وحزمة1,972,214 بايت. قُيدت قواعد weil/denn بالنمط المعياري، وdeshalb بموقعها عند البداية لا كل موضع؛ أضيف دعم Perfekt والمصدر والضمائر الانعكاسية وحدود النصوص والتكرار والمشاعر، دون وصفة صحية أو طلب ممارسة فعلية.
+- حُددت بدايات T04 وأضيف بنك T06. P01/T08 أربع جمل خيالية مع الجهر، weil مرتين وdenn مرة؛ P02/T07ب ثلاث صيغ كتابية لسبب واحد دون جهر. النموذجان223/122 حرفًا وحدا150/110. صُحح مفتاح T07 المقدمة؛ Q02→T04 وQ09→T03. Q08 لم يعد يفترض جنس المتكلم؛ الخيارات الثلاثون والمفاتيح و80% محفوظة.
+- خمسة أصول/10 مقاطع محفوظة بالكلمات والأصوات والمسارات والحالات: Lina00/Omar03؛ Rania02؛ المفردات والنماذج02 والاستماع03. لا توليد أو استماع أو اعتماد جديد. فحوص اتساق A2.9 وA2.10 السابقة لم تُحذف أو تُضعف؛ وقيدا الصوت السابقان في A2.8/A2.9 ما زالا موثقين دون إصلاح التسجيلات.
+- الملفات الأخرى:20 صف كتالوج،5 صفوف audio-register في source_line/source_heading فقط؛ الحزمة وعامل الخدمة واختباراه؛ progression/accessibility_audit والحارس الجديد `tools/test_a2_10_review.py`، وملفا التسليم. لا تغيير app.js أو CSS أو playlist أو MP3.
+- PASS:البناء والتحقق والحارس implementation-only وخمس مجموعات Node وdiff. لم تنفذ بعد فحوص المتصفح أو الحفظ الشامل أو السجل الفردي النهائي؛ تبقى الحملة26/53 حتى توثيق المراجعة.
+- قُرئت10 صفحات مفيدة كاملة من Lingolia وDuden: Nebensätze،Konjunktionalsätze،Konjunktionen،Perfekt،Reflexive(جزآن)،Modalverben،erschöpft،zufrieden،nervös،regelmäßig. رابطا konjunktionalsaetze المباشر وreflexive-verben أعادا صفحات «غير موجود» رغم نجاح جلب الصفحة، واستُبعدا واستُخدم المساران الصحيحان. لا شهادة CEFR أو طب أو نطق مستنتجة من المراجع.
+- تُرفع المجموعة فور فحصها بعنوان `Align A2.10 causal clauses and distinct performance tasks (CR28)`؛ معرفها في git log بعد الدفع. التالي:السجل الفردي والحفظ مقابلcaf693a و28 حارسًا وخمس مجموعات متصفح، ثم تحديث التوثيق ورفع السجل والإيصال.
+- القرارات مستمرة: ارفع كل تعديل فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا. لا تبديل فرع أو دمج PR#1، ولا إعادة توليد أو إخفاء أو اعتماد صوت بلا موافقة؛ حد10 طلبات صوت/رد. احفظ الأصوات وA2.7 Q08→T05 واتساق A2.9 وتاريخ B2.6. B1.9/B1.10 معلقان واختيار B1.11 محفوظ. رفع GitHub مستقل عن نشر Vercel؛ لا إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع والتحقق — CR27، 2026-10-08
+
+- رُفع التنفيذ **`d962694d98cecb1b11bbe376fbafbb55beef93f2`**، ثم سجل المراجعة **`3c1fd5d0b45dec2f3dc4cd86f0ad04526073ef06`** إلى `arena/01a1036f-deutschlern`. تطابق HEAD مع origin بعد كل دفع، وكانت شجرة العمل نظيفة بعد رفع السجل.
+- PASS:27 حارس مراجعة، وخمس مجموعات Node، وخمس مجموعات متصفح، والبناء والتحقق والصياغة وdiff؛109 وحدات و36 بندًا، مع30 بديلًا وستة معايير. المقارنة تحفظ52 درسًا آخر و474 ملف MP3. التقرير أدناه يفصل حدود الفحوص؛ لا استماع أو اعتماد صوتي جديد.
+- **قيد PHR باقٍ:** `Er und sie könnte.` تعداد ملتبس وليس نموذج جملة بفاعل مركب. أضيفت البدائل المكتوبة الصحيحة والجدول؛ لم يُصلح التسجيل أو التفريغ نفسه. لا إعادة توليد أو تغيير الحالة بلا موافقة، ولا مراجع بشري شرطًا لمواصلة المراجعة النصية.
+- PR#1 **OPEN**، وmergedAt=null، ورأسه وقت الفحص `3c1fd5d`. لا دمج ولا إعلان اكتمال المشروع. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR27 delivery and preserved audio caveat`؛ معرفه في git log بعد الدفع. حالة نشر الإيصال نفسه لم تُفحص.
+- التنفيذ `d962694` له Vercel **success** وPreview deployment **6943089520** بحالةsuccess: https://deutschlern-n769cs62v-balinader-2671s-projects.vercel.app . هذه بيانات نشر فقط، وليست فحص واجهة بعيدة أو نشر Production.
+- سجل المراجعة `3c1fd5d` له Vercel **failure** برسالة `Deployment rate limited — retry in 24 hours.`؛ واستعلام deployments له أعاد قائمة فارغة. لا نجاح نشر مدّعى لهذا السجل، ولا إعادة نشر متكررة أو ترقية مدفوعة؛ رفع GitHub ناجح ومستقل.
+- الحملة **26/53 درسًا** والبوابة منفصلة؛ تبقى27. التالي **CR28/A2.10 — الرياضة والصحة والمشاعر وweil**. اقرأ المصدر والتقييم والأصول كاملة، واحفظ أصوات Lina00/Rania02/Omar03 واتساق الدروس السابق. لا تعد A2.9 أو تسجيلاته؛ حدّث ملفّي التسليم وارفع كل مجموعة فور فحصها، مع استمرار جميع القرارات أدناه.
+
+رُوجع **A2.9 — المنتجات والتقنية وتقديم شكوى** في **109 وحدات و36 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. فُصل طلب الزبونة عن عرض الموظف، وأزيل افتراض حالة المكبر الأيسر وحمل Karim للإيصال الآن. أضيف تدريب صريح على ob وصُحح Q10→T07، وقُيد Q09 بنمط السؤال الذي يبدأ بالفعل. **P01/T08أ رسالة كتابة فقط** من تحية وخمس جمل وختام واسم؛ **P02/T08ب أربعة أدوار مع الجهر**، بنموذجين ومعايير متطابقة. الخيارات الثلاثون والمفاتيح وعتبة80% محفوظة. الإصدار `a2-09-v2` والمخزن `v74`. أربعة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد؛ وُضح تعداد الضمائر الملتبس في PHR كتابة، ولم يُصلح التسجيل نفسه. **الحملة26/53 درسًا والبوابة منفصلة؛ تبقى27، والتالي CR28/A2.10.** هذا سجل مراجعة وفحوص وحدود معلنة، لا شهادة مستوى أو إعلان اكتمال الدمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم: `content/A2/lesson-09-products-technology-complaints.md/.assessment.json`؛ الحزمة `data/course.json`؛20 صفًا في `data/production-task-catalog.csv` وأربعة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ الحارس الجديد `tools/test_a2_09_review.py`.
+- السجلان `data/reviews/a2-09-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.33 وتقرير المتصفح وملفا التسليم. لا تعديل playlist أو MP3 أو app.js أو CSS.
+- رُفع التنفيذ **`d962694d98cecb1b11bbe376fbafbb55beef93f2`** إلى الفرع الوحيد `arena/01a1036f-deutschlern`، وتطابق HEAD مع origin. مجموعة السجل والفحوص بعنوان `Record CR27 granular A2.9 review and cumulative checks` تُرفع فور فحصها؛ معرفها في git log ثم يوثق إيصالها.
+- PR#1 فُحص على رأس التنفيذ: **OPEN** وmergedAt=null. لا تبديل فرع ولا دمج ولا ادعاء أن المشروع اكتمل. حالة Vercel لهذه المجموعة لم تفحص بعد؛ نجاح رفع GitHub مستقل عن النشر، ولا إعادة نشر متكررة أو ترقية مدفوعة بسبب حدود الخدمة.
+- في بداية الدور قورنت701 ملفًا بخط الأساس بعدfetch، بصفر اختلاف أو ملفات إضافية، ثم استعيدت metadata بـreset --mixed دون فقد عمل. لا تكرر الاستعادة أو أي تنظيف دون مقارنة جديدة.
+- **التالي CR28/A2.10 — الرياضة والصحة والمشاعر وweil:** اقرأ مصدر `lesson-10-sports-health-feelings-weil` وتقييمه وأصوله كاملة، ثم راجع كل نص وتمرين وبديل ومعيار بالمراجع. الأصوات القائمة Lina00/Rania02/Omar03 محفوظة؛ لا حاجة لإعادة تسجيل A2.9.
+- القرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا للمتابعة. لا إخفاء أو إعادة توليد أو تعيين ready/نهائي بلا موافقة؛ حد10 طلبات صوت لكل رد. B1.9/B1.10 معلقان واختيار B1.11 محفوظ. احفظ A2.7 Q08→T05 وفحوص اتساق A2.9 وأصوات الشخصيات وتاريخ B2.6 دون إعادة تسميته B2.7.
+
+## قيد نص التسجيل القائم — ليس إصلاحًا صوتيًا
+
+في `DL-A2-09-AUD-PHR-01.mp3` يقول التفريغ **Er und sie könnte.** هذه صياغة تعداد ملتبسة، وليست نموذجًا صحيحًا لجملة ذات فاعل مركب. أضيفت البدائل المنفصلة **Er könnte. Sie könnte. Es könnte.** إلى الشرح، وأضيف es إلى جدول التصريف، مع تمييز sie للجمع وSie للاحترام مع könnten.
+
+**التسجيل والتفريغ لم يتغيرا، ولم يُجرَ استماع أو اعتماد جديد.** لذلك لا يوصف الأصل بأنه صُحح صوتيًا أو خالٍ من الملاحظات. الملاحظة محفوظة في `audioTextIssues` وhelper-09 ووحدة PHR؛ بقي الأصل ظاهرًا بحالته التاريخية. لا إعادة توليد أو تغيير حالة بلا موافقة، ولا تجعل مراجعًا بشريًا شرطًا لمتابعة بقية المحتوى. وقيد MODEL السابق في A2.8 ما زال موثقًا كذلك.
+
+## الفحوص وحدودها — CR27
+
+- **PASS:** البناء والتحقق؛ الحزمة **1,960,928 بايت** والمخزن **v74**. بقيت53 درسًا، و428 عنوان تمرين، و55 عنوان حوار وفق نمط العداد، و754 مفردة. 530 سؤال درس+10 للبوابة، و109 مهمات أداء، و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا؛137ready و80pending. الأعداد ليست شهادة مراجعة لكل محتوى المنهج أو للصوت.
+- **PASS:27 حارس مراجعة تراكميًا** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–9. حارس A2.9 يطابق109 وحدات و36 بندًا، ومفاتيح الأسئلة و30 بديلًا وستة معايير والبصمات والكتالوج. يراجع سجل PHR في25 وحدة داخل الأصل، بما فيها التعداد الملتبس؛ لا يثبت جودته الصوتية.
+- **PASS:خمس مجموعات Node:** progression/service_worker/session_persistence/study_time/daily_plan؛ وصياغة app.js وservice-worker.js وكل tools/test_*.cjs، وgit diff --check.
+- **PASS:خمس مجموعات متصفح:** browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**. ثُبتت حزم package-lock القائمة دون تعديلها، واستُخدم @sparticuz/chromium143.0.4 خارج Git. فشل الإطلاق الأول لنقص libnspr4.so؛ استُخرجت مكتبات al2023 المرفقة ثم نجحت المجموعات الخمس، دون تعديل التطبيق لتجاوز خطأ.
+- الاختبار العام عند1440×900 و390×844: تنقل وRTL والتفريغات وتشغيل MP3 بسرعتي1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. التشغيل الآلي صامت وليس استماعًا، ولا ضمان تخزين كل التسجيلات إلى الأبد.
+- تحديث عامل الخدمة من fixture الإصدارv42 إلىv74 دون إعادة تحميل قسرية، مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد صوت غير مخزن بـ503 وإعادة تخزينه عند الاتصال. ليس اختبار كل ترحيل تاريخي منفصلًا.
+- **progression:** سجل A2.9 القديمv1 يبقى، لكنه لا يمنح إتقانv2 أو يفتحA2.10؛ ومسودةv1 مرفوضة. تُقبل النسخة الجديدة مع الدرجة والدليل المطلوبين. P01 كتابة فقط دون خانة جهر؛ P02 يتطلب إقرار الجهر. النموذجان258/242 حرفًا يمران بحدي220/180؛ والإجابة القصيرة أو الإقرارات الناقصة لا تمر. هذا ضبط للدليل المحلي لا تصحيح لغة أو نطق.
+- **axe-core4.11.0:**121 حالة ممثلة، وصفر مخالفات للقواعد الآلية المختارة؛ مع **81 ظهورًا لفحوص غير حاسمة تشمل185 ظهورًا لعقد**. هذه ليست شهادة WCAG ولا مخالفات مؤكدة؛ لا مراجع بشري شرطًا للاستمرار.
+- **النماذج:** PASS من أول تشغيل لاختبار التطبيق بعد إصلاح بيئة المتصفح، عند1440 و390؛ حفظ وإعادة تحميل وتصدير واستيراد ومسودات. لا ادعاء بإصلاح سبب تذبذب filechooser التاريخي.
+- **العرض الضيق:**126 حالة؛63 عند320×900 و63 عند568×320، مع جميع الدروس والتفريغات والجداول. viewport ليس تكبير نظام أو جهازًا فعليًا.
+- **الحفظ مقابل `368125120421de02fd0a044ac40bcbf81f4cb593`:**52 درسًا آخر و1060 صف كتالوج آخر و115 ملفًا محميًا لم تتغير؛ تشمل المصادر والبوابة وapp.js وCSS وpackage/lock وأداتي build/verify. تغير20 صفًا تخص A2.9 فقط في الكتالوج.
+- playlist مطابق بايتًا ببايت؛474 ملف MP3 طابقت بصمات Git السابقة. تغيرت4 صفوف تخص A2.9 في audio-register في source_line/source_heading فقط، وبقيت213 صفًا أخرى. لا تغيير أصوات أو مسارات أو حالات: Narrator02، Kundin03/Mitarbeiter02، Salma02، Karim03. فحوص اتساق A2.9 السابقة محفوظة ولم تُضعف.
+- المقارنة تحفظ الخيارات الثلاثين وفهارس المفاتيح العشرة؛ المراجع تسند قواعد ومعاني محددة، ولا تثبت حق ضمان لدولة معينة أو تصنيف CEFR مستقلًا لكل مفردة. لا واجهة بعيدة أو نشر Production اختُبرا.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR27 / A2.9 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ خط الأساس `368125120421de02fd0a044ac40bcbf81f4cb593`. بعدfetch قورنت701 ملفًا بصفر اختلاف أو إضافات قبل استعادةmetadata بـreset --mixed دون فقد ملفات؛ لا تكرر دون مقارنة.
+- المصدر والتقييم `content/A2/lesson-09-products-technology-complaints.md/.assessment.json` إلى `a2-09-v2`؛ cachev74 وحزمة1,960,928 بايت. فُصل طلب الزبونة عن عرض الموظف فيT04، وأضيف تدريبob فيT07.3 وشرحhätte/könnte/möchte وvor/seit وحدودالضمان والفرق بين السؤال والموافقة والحل المنفذ.
+- T05.2 صارإثباتعملالمكبرالأيمن ليناقضالنصمباشرة بدل تخمين حالةالأيسر؛ حُذفdabei منأسئلةالاستماع لأنحملالإيصالالآن غيرمثبت. Q04 لايضيففحصًا إلىعرضالإصلاح/الاستبدال؛ Q07 منسوبلقولSalma؛ Q09 مقيدبنمطسؤالالفعلأولًا؛ Q10→T07. الخياراتالثلاثون والمفاتيح و80% محفوظة.
+- P01/T08أ رسالةكتابةفقط:تحيةوخمسجملوختامواسمNora،حد220؛ P02/T08ب أربعةأدوارمعالجهر،حد180. نموذجالرسالة258حرفًا والحوار242،معمعاييرمطابقة. لاشريكأوتسجيلأوإرسالشكوىأوضمانقانونيعام.
+- قيدPHR قائم: `Er und sie könnte.` تعدادملتبس وليسجملةبفاعلمركب؛ أضيفتبدائل `Er könnte. Sie könnte. Es könnte.` معالجدول. لا إصلاحصوتي أوتغييرتفريغأواعتمادجديد. بقيت4أصول/10مقاطع:المفردات02،Kundin03/Mitarbeiter02،Salma02/Karim03؛ وفحوصاتساقA2.9 التاريخيةفيprogressionلمتُحذفأوتُضعف.
+- الملفات الأخرى:20صفكتالوج،4صفوفaudio-register فيsource_line/source_heading فقط،الحزمةوعاملالخدمةواختباراه،progression/accessibility_audit وحارس `tools/test_a2_09_review.py`. لا تعديلapp.js/CSS/playlist/MP3.
+- PASS:build/verify والحارسimplementation-only وخمس مجموعاتNode وdiff. المتصفحوالحفظالشاملوالسجلالفرديلم تنفذبعد. الحملةتبقى25/53 والبوابةمنفصلة حتىتوثيقالمراجعة.
+- قُرئت10مراجعكاملة: Lingolia Konjunktiv(جزآن)،Modalverben،IndirekteFragen،Infinitiv،Temporalpräpositionen؛Dudenumtauschen/zurückgeben/defekt/beschädigen/Garantie. لا404. نطاقالزمنفيالمرجعvor/seit/am فقط؛ لا نعتمدتقييدهالغريبumبأوقاتحتى12،ولانتخذقاموسGarantieمرجعًالقانونبلدبعينه.
+- تُرفعالمجموعةبعدفحصهابعنوان `Align A2.9 polite complaint and service-role tasks (CR27)`؛ معرفهافيgit logبعدالدفع. التالي السجلالفرديوالحفظمقابل3681251 و27حارسًا وخمس مجموعاتمتصفح ثم التوثيقوالدفع.
+- القراراتمستمرة:كلتعديليرفعفورفحصمجموعته؛ المحتوىوالتقييموالتطبيققبلالصوت؛لامراجعبشريشرطًا. لا تبديلفرعأودمجPR#1 أوإعادةتوليد/إخفاء/اعتمادصوتبلاموافقة؛حد10طلباتصوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛ احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6. لا إعادةنشرVercelمتكررةأوترقيةمدفوعةبسببحدالخدمة؛رفعGitHubمستمر.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع والتحقق — CR26، 2026-10-08
+
+- رُفع التنفيذ **`6bda98cdc013dc1b800cf291410d2380e2b3e3e4`** ثم سجل المراجعة **`700606d43c799996f06145793def6bf5555dec55`** إلى `arena/01a1036f-deutschlern`؛تطابقHEAD معorigin بعد كل دفع. جميع تعديلات التنفيذ والسجل مرفوعة،ولا ملفات عمل محلية غير محفوظة عند الفحص.
+- PASS:26 حارس مراجعة وخمس مجموعاتNode وخمس مجموعات متصفح والبناء والتحقق والصياغة وdiff؛119 وحدة و32 بندًا،مع30 بديلًا وستة معايير،وحفظ52 درسًا آخر و474MP3. الحدود مفصلة أدناه،ولا استماع أو اعتماد صوتي جديد.
+- **قيدMODEL باقٍ:** صياغة `Er, sie und es wird.` في نص التسجيل القديم ملتبسة،وليست نموذج جملة بفاعل مركب. أضيف شرح مكتوب بالصيغ المنفصلة الصحيحة؛لم يُصلح التسجيل أو التفريغ نفسه،ولم يتغيرصوته أوحاله. لا تصفه بأنه صُحح صوتيًا،ولا تعد توليده دون موافقة. هذا لا يمنع متابعة المراجعة النصية.
+- PR#1 **OPEN** وmergedAt=null ورأسه وقت الفحص `700606d`؛لا دمج أو اكتمال مشروع مدّعى. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR26 delivery and preserved audio caveat`؛معرفه فيgit log،وحالة نشر الإيصال نفسه لم تُفحص.
+- التنفيذ `6bda98c` لهVercel **success** وPreview deployment **6942773393** بحالةsuccess ورابط https://deutschlern-50w88bvws-balinader-2671s-projects.vercel.app . هذه بيانات نشر فقط،لا فحص واجهة بعيدة أو نشرProduction.
+- سجل المراجعة `700606d` لهVercel **failure** برسالة `Deployment rate limited — retry in 24 hours.`؛استعلامdeployments له أعاد قائمة فارغة وقت الفحص. لا ندعي رفع حد الخدمة أو نجاح نشر أحدثcommit،ولا نطلب إعادة نشر أو ترقية مدفوعة؛رفعGitHub ناجح ومستقل.
+- الحملة **25/53 درسًا** والبوابة منفصلة؛تبقى28. التالي **CR27/A2.9 — المنتجات والتقنية وتقديم شكوى**. ابدأ بقراءة مصدره وتقييمه وأصوله،واحفظ فحوص اتساقه القائمة والأصوات والمسارات. لا حاجة لإعادةA2.8 أو تسجيلاته. حدّث ملفّي التسليم وارفع كل مجموعة فور فحصها؛لا مراجع بشري شرطًا للمتابعة.
+
+رُوجع **A2.8 — الإعلام والأخبار والسياسة: المبني للمجهول** في **119 وحدة و32 بندًا أو مطلبًا داخل التمارين**، مع **9 مراجع:8 صفحات كاملة وجزء محدد من صفحة تصريف**. ضُبطت مطابقةwerden والحالة الرفعية بعد التحويل، وفُصلت صيغة الحدث عن الحالة والمستقبل. صُحح اقتباسQ06 إلىEin neuer Platz، وقُيدQ10 بـVorgangspassiv دون اعتبارist … organisiert خطأ مطلقًا. **P01/T08 ثلاث جمل خيالية مع الجهر**؛ **P02/T03 تحويل أول ثلاث جمل كاملة كتابة فقط**، بنموذجين ومعايير مطابقة. Q04→T07 وQ10→T04؛ الخيارات الثلاثون وفهارس المفاتيح و80% محفوظة. الإصدار `a2-08-v2` والمخزن `v73`. أربعة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد؛ نُبّه كتابيًا إلى تعداد الضمائر الملتبس فيMODEL ولم يُصلح التسجيل نفسه. **الحملة25/53 درسًا والبوابة منفصلة؛تبقى28 درسًا،والتاليCR27/A2.9.** هذا سجل مراجعة وفحوص وحدود معلنة، لا شهادة مستوى أو إعلان اكتمال الدمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/A2/lesson-08-media-news-passive.md/.assessment.json`،والحزمة `data/course.json`،و20 صفًا في `data/production-task-catalog.csv` وأربعة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه،و`tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs` والحارس `tools/test_a2_08_review.py`.
+- السجلان `data/reviews/a2-08-review.json/.md`،وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.32 وتقرير المتصفح وملفا التسليم. لا تعديلplaylist أوMP3 أوapp.js أوCSS.
+- التنفيذ **6bda98cdc013dc1b800cf291410d2380e2b3e3e4** رُفع وتطابق معorigin. مجموعة السجل بعنوان `Record CR26 granular A2.8 review and cumulative checks` تُرفع فور فحصها؛معرفها فيgit log بعد الدفع،ثم يسجل إيصالها.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛لا تبديل أو دمجPR#1. استعيدتmetadata القديمة بعدfetch ومقارنة698 ملفًا بخط الأساس بصفر اختلاف أو إضافات،ثمreset --mixed دون حذف عمل؛لا تكرر دون مقارنة جديدة.
+- لا واجهة بعيدة أو نشرProduction مدّعى. لا تنسب حالةVercel القديمة لهذه المجموعة،ولا إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة السابق. نجاح دفعGitHub مستقل عن النشر.
+- التالي **CR27/A2.9 — المنتجات والتقنية وتقديم شكوى**: افحص العنوان والمصدر الفعلي والتقييم وكل الأصول،وراجع كل نص وتمرين وبديل ومعيار بالمراجع قبل تعديله. احفظ فحوص اتساقA2.9 القائمة؛لا تعِدA2.8 أو تسجيلاته.
+- القيود مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا إخفاء أو إعادة توليد أو تغييرready/نهائي بلا موافقة؛حد10طلبات صوت/رد. B1.9/B1.10 معلقان،واختيارB1.11 محفوظ. احفظA2.7Q08→T05 والأصوات المقررة وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## قيد واضح في نص التسجيل القائم
+
+في `DL-A2-08-AUD-MODEL-01-01.mp3` يسرد التفريغ **Er, sie und es wird.** هذه صياغة تعداد ملتبسة،وليست نموذجًا صحيحًا لجملة ذات فاعل مركب. أضيفت في الدرس الصيغ المستقلة **Er wird. Sie wird. Es wird.** مع شرح بدائل المفرد،والفرق عنsie الجمع وSie للاحترام. **التسجيل والتفريغ نفسهما لم يتغيرا،ولم يُجرَ استماع أو اعتماد جديد.** لذلك لا يوصف الأصل بأنه صُحح صوتيًا أو خالٍ من الملاحظات. بقيت حالته التاريخية وروابطه متاحة وفق قرار حفظ التسجيلات؛الملاحظة فيJSON تحتaudioTextIssues وفيhelper-07 ووحدةMODEL. لا إعادة توليد أو تغيير صوت أو حالة بلا موافقة،ولا تجعل هذه الملاحظة أو مراجعًا بشريًا شرطًا لمتابعة المراجعة النصية لبقية الدروس.
+
+## الفحوص وحدودها — CR26
+
+- PASS:build/verify؛ الحزمة **1,948,674 بايت** والمخزن **v73**. 53 درسًا و428 عنوان تمرين و55 عنوان حوار وفق نمط العداد و754 مفردة؛530 سؤال درس+10 للبوابة و109 مهمات أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا،137ready و80pending. عداد الحوار لا يحصي جميع الأدوار أو التسجيلات؛ A2.8 فيه عبارات أخبار لا حوار متبادل.
+- PASS: **26 حارس مراجعة تراكميًا** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–8. الحارس الجديد يطابق119 وحدة و32 بندًا وروابط المصدر والتقييم والكتالوج والبصمات، مع30 بديلًا وستة معايير، و24 وحدة داخلPHR و17 داخلMODEL. القائمة التصريفية تطابق الجدول ولا تُعامل كلها كجمل كاملة. الحارس يحفظ التنبيه المكتوب لقيدMODEL، ولا يثبت جودة الصوت أو صحة لغوية مستقلة.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan،وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs وgit diff --check.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**،عبر@sparticuz/chromium143.0.4 ومكتباتal2023 خارجGit. التشغيل آلي صامت؛ لا استماع أو هاتف فعلي.
+- العام عند1440×900 و390×844: تنقل وRTL والتفريغات وتشغيلMP3 بسرعتي1 و0.8 وإيقافه عند التنقل،والعمل دون اتصال ونطاقات البايت. لا ضمان تخزين جميع التسجيلات دائمًا،ولا ادعاء اختبار استماع مستقل لكل أصل.
+- تحديثfixture عامل الخدمةv42→v73 دون تحديث قسري،مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد الصوت بـ503 وإعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- progression: يبقى سجلv1 لكنه لا يمنح إتقانv2 أو يفتحA2.9؛مسودةv1 مرفوضة. يمرv2 مع80% ودليل الأداء. P01 يرفض غياب الجهر وP02 كتابة فقط؛النموذجان بطول157 و98 يمران بحدي130 و90،ولا تمر الإجابة القصيرة أو الإقرارات الناقصة. هذا فحص الدليل المحلي،لا تصحيح اللغة أو النطق.
+- axe-core4.11.0: **117 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة**،مع **78 ظهورًا لفحوص غير حاسمة تشمل179 ظهورًا لعقد**. غير الحاسم ليس نجاحًا شاملًا أو مخالفة مؤكدة أو شهادةWCAG؛لا مراجع بشري شرطًا للمتابعة.
+- النماذج: **PASS من أول تشغيل متسلسل** عند1440 و390،مع الحفظ وإعادة التحميل والتصدير والاستيراد والمسودات. لم يتكرر تذبذبfilechooser التاريخي،ولا ندعي إصلاح سببه.
+- العرض الضيق: **126 حالة**؛63 عند320×900 و63 عند568×320،مع الدروس والتفريغات والجداول. تغييرviewport ليس تكبير نظام أو اختبار جهاز فعلي.
+- الحفظ مقابل `bc29869235813d775be19465a22fd19d1ba8a1db`: **52 درسًا آخر و1060 صف كتالوج آخر و114 ملفًا محميًا** لم تتغير،بما فيها المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. تغير20 صفًا تخصA2.8 فقط في الكتالوج.
+- playlist مطابق بايتًا ببايت،و**474MP3** طابقت بصماتGit السابقة. أربعة صفوفA2.8 فيaudio-register تغيرت فيsource_line/source_heading فقط؛بقية213 صفًا وكل الحالات والأصوات والمسارات محفوظة. Narrator02 للمفردات والنماذج والقراءة،وErzählperson03 للاستماع،دون توليد أو استماع أو اعتماد جديد.
+- خيارات الأسئلة الثلاثون وفهارس الإجابات العشرة ثابتة. المراجع تسند قواعد ومعاني محددة،لا أخبارًا حقيقية أو تصنيفCEFR مستقلًا.
+
+السجل الفردي `data/reviews/a2-08-review.md` وJSON المناظر هما المرجع. بعد الدفع سجّلcommitالمراجعة وحالةPR والنشر الفعلية،ثم تابعA2.9 مع حفظ فحوص اتساقه. لا إعادة صوت أو ادعاء إصلاح التسجيل القديم.
+
+## أرشيف التنفيذ والسجلات السابقة — لا ينسخ الحالة أعلاه
+
+## تنفيذ CR26 / A2.8 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛خط الأساس `bc29869235813d775be19465a22fd19d1ba8a1db`. قورنت698 ملفًا بخط الأساس بعدfetch بصفر اختلاف أو إضافات،ثم استعيدتmetadata القديمة بـreset --mixed دون فقد ملفات. لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/A2/lesson-08-media-news-passive.md/.assessment.json` إلى `a2-08-v2`؛cachev73 والحزمة1,948,674 بايت. ضُبطت الحالة بعد التحويل،ومطابقةwerden،والفرق بين صيغة الحدث والحالة والمستقبل. جدول11 صيغةPartizip II،ومساعدة قبل النصوص؛Webseite صفحةويب،وStadtrat/Wahl بحسب السياق.
+- صُحح شرحQ06 إلىEin neuer Platz في الرفع؛قُيدQ10 بـVorgangspassiv فلا يُرفضist…organisiert باعتباره خطأ مطلقًا. Q04→T07 وQ10→T04؛P02→T03. الخيارات الثلاثون والمفاتيح و80% محفوظة.
+- P01/T08 ثلاث جمل عن خبر خيالي مع الجهر،حد130؛P02/T03 تحويل أول ثلاث جمل كاملة كتابة فقط،حد90. نموذجان ومعايير مطابقة،دون تسجيل أو شريك أو نشر خبر. أضيفT04.4 لفرق الحدث والحالة وT07.5 لوظيفةالمبني للمجهول؛T05.3 ينفيالنقلعبرالإنترنت ليناقضالدليلصراحة؛T06 بنك وبنودمنفصلة.
+- الصوت:أربعةأصول/10مقاطع جاهزة تاريخيًا،Narrator02 وErzählperson03،دون توليد أو استماع أو اعتماد جديد. تنبيه نصي صريح لصياغةMODEL القديمة `Er, sie und es wird.`: ليست نموذج جملة بفاعل مركب؛الصحيح كبدائل `Er wird. Sie wird. Es wird.`. حُفظ التسجيل والتفريغ ولم يُدّع تصحيح الصوت؛يبقى هذا قيدًا مسجلًا ولا يوقف مراجعة بقية المحتوى.
+- الملفات الأخرى:20 صف كتالوج وأربعة صفوفaudio-register فيsource_line/source_heading فقط؛service-worker واختباراه،progression/accessibility_audit وحارس `tools/test_a2_08_review.py`. لا تعديلapp.js/CSS/playlist/MP3.
+- PASS:build/verify والحارسimplementation-only وخمس مجموعاتNode وdiff. المتصفح والحفظ الشامل والسجل الفردي لم تنفذ بعد؛الحملةتبقى24/53 والبوابة منفصلة حتىتوثيقالمراجعة.
+- البحث:9 مراجع ذاتصلة؛8 صفحاتكاملة (Lingolia passive/partizipien بجزأيهما،FuturI،Präsens؛DudenWebseite/Stadtrat/Wahl/senden)،وجزء0من5 لVerbformenübertragen يدعم عدمالفصل وصيغتهوالبث. Dudenuebertragen أعاد404واستُبعد. احفظ حدودالقراءة بدلادعاءاكتمالالصفحةالطويلة.
+- تُرفعالمجموعةفورفحصها بعنوان `Align A2.8 passive news and transformation tasks (CR26)`؛معرفهافيgit logبعدالدفع. التالي السجل الفردي والحفظ مقابلbc29869 و26 حارسًا وخمس مجموعات متصفح ثم توثيق ورفع.
+- القيودمستمرة:المحتوى والتقييم والتطبيق قبلالصوت؛كلتعديل يرفعفورفحصمجموعته؛لا مراجع بشري شرطًا. لا تبديلفرع أو دمجPR#1 أو إعادةتوليد/إخفاء/اعتمادجديدللصوت؛حد10طلباتصوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6. لا إعادةنشرVercelمتكررة أوترقيةمدفوعةبسببحدالخدمة؛رفعGitHubمستمر.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع والتحقق — CR25، 2026-10-08
+
+- رُفع التنفيذ **`361d33ef92af796fc11af44a9d323d3083445307`** ثم سجل المراجعة **`743dbd28ff3d13d088806bf75821727906b3dfa1`** إلى `arena/01a1036f-deutschlern`؛ تطابقHEAD معorigin بعد كل دفع. **عائق مصادقة الدور السابق لم يمنع الدفع الآن**. لا إعادة ربط إضافية مطلوبة ما دام الدفع ينجح.
+- PASS:25 حارسًا تراكميًا وخمس مجموعاتNode وخمس مجموعات متصفح والبناء والتحقق والصياغة وdiff؛94 وحدة و34 بندًا،مع30 بديلًا وستة معايير،وحفظ52 درسًا آخر و474MP3. النتائج والحدود موثقة أدناه،ولا استماع أو اعتماد صوتي جديد.
+- PR#1 **OPEN** وmergedAt=null ورأسه وقت الفحص `743dbd2`؛لا دمج أو اكتمال مشروع مدّعى. يُرفع هذا الإيصال فور فحصه بعنوان `Record CR25 delivery and deployment limits`؛معرفه فيgit log،وحالة نشر الإيصال نفسه لم تُفحص.
+- التنفيذ `361d33e` له حالةVercel **success** وPreview deployment **6942397879** بحالةsuccess ورابط https://deutschlern-pm1o6z7wt-balinader-2671s-projects.vercel.app . هذه بيانات نشر فقط؛لا اختبار واجهة بعيدة أو نشرProduction.
+- سجل المراجعة `743dbd2` له حالةVercel **failure** برسالة `Deployment rate limited — retry in 24 hours.`؛استعلامdeployments له أعاد قائمة فارغة وقت الفحص. لا ندعي رفع حد الخدمة أو نشر أحدثcommit بنجاح،ولا نطلب إعادة نشر أو ترقية مدفوعة. رفعGitHub ناجح ومستقل.
+- الحملة **24/53 درسًا** والبوابة منفصلة؛تبقى29. التالي **CR26/A2.8 — الإعلام والأخبار والسياسة: المبني للمجهول**. ابدأ بقراءة مصدره وتقييمه وكل أصوله ثم مراجعة النصوص والتمارين والبدائل والمعايير بالمراجع؛احفظ الأصوات والمسارات القائمة. لا تعِدA2.7 أو تسجيلاته.
+
+رُوجع **A2.7 — تعلّم اللغات والسفر والغاية بـum … zu** في **94 وحدة و34 بندًا أو مطلبًا داخل التمارين**، مع **10 مراجع مقروءة كاملة**. ضُبطت الغاية والفاصلة وموضعzu مع المصدر، وفُرق بين نفس المنفذ واختلافه وبين mich وsich. حُذف افتراض جنس متكلم الاستماع دون تغيير التسجيل، وقُيدت روابط التوصيل بأهداف معطاة وصُحح بند قراءة ليستند إلى دليل صريح. **P01/T08أ أربع جمل مع الجهر**؛ **P02/T08ب ثلاث جمل كتابة فقط**، بمعايير ونموذجين مطابقين. Q02/Q10→T07 وQ08→T05 محفوظ وصُحح سجله في الكتالوج. الخيارات الثلاثون وفهارس المفاتيح و80% محفوظة. الإصدار `a2-07-v2` والمخزن `v72`. أربعة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد. **الحملة24/53 درسًا والبوابة منفصلة؛ تبقى29 درسًا، والتاليCR26/A2.8.** هذا سجل مراجعة وفحوص، لا شهادة مستوى أو إعلان اكتمال الدمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/A2/lesson-07-language-learning-travel-purpose.md/.assessment.json`، والحزمة `data/course.json`، و20 صفًا في `data/production-task-catalog.csv` وأربعة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه، و`tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs` والحارس `tools/test_a2_07_review.py`.
+- السجلان `data/reviews/a2-07-review.json/.md`، وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.31 وتقرير المتصفح وملفا التسليم. لا تعديلplaylist أوMP3 أوapp.js أوCSS.
+- **زوال عائق الدفع السابق:** رُفع التنفيذ في **361d33ef92af796fc11af44a9d323d3083445307** وتطابق معorigin. نجح دفعGitHub في هذا الدور؛ لا نطلب أي كلمات مرور أوPAT أو رموز.
+- كانتmetadata قد عادت إلى88f3c06، بينما بقيت التعديلات. قورنت695 ملفًا بخط الأساس:12 ملفًا متغيرًا متوقعًا وحارس جديد متوقع، وبقية الملفات مطابقة. أُجريreset --mixed للmetadata فقط مع فحص بقاء بايتات كل ملف متغير وجديد، ثم أعيدcommit العمل على **نفس الفرع**. المعرفان المحليان القديمان3a82c8a و9fbad15 غير مرفوعين بهويتهما؛ محتواهما محفوظ في361d33e. لا reset أعمى أو حذف عمل.
+- مجموعة السجل بعنوان `Record CR25 granular A2.7 review and cumulative checks` تُرفع فور فحصها؛ معرفها فيgit log بعد الدفع، ثم يسجل إيصالها. الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا تبديل أو دمجPR#1.
+- لا واجهة بعيدة أو نشرProduction مدّعى. لا ننسب حالةVercel القديمة إلى هذه المجموعة ولا نطلب إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة السابق.
+- التالي **CR26/A2.8 — الإعلام والأخبار والسياسة: المبني للمجهول**: اقرأ عنوان ومصدر الدرس الفعلي وتقييمه وأصوله، ثم راجع كل نص ودور وتمرين وبديل ومعيار بالمراجع قبل التعديل. لا حاجة إلى إعادةA2.7 أو تسجيلاته.
+- القيود مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا للمتابعة. لا إخفاء أو إعادة توليد أو تغييرready/نهائي بلا موافقة؛ حد10طلبات صوت/رد. B1.9/B1.10 معلقان، واختيارB1.11 محفوظ. احفظHiba02/Maha00 وA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR25
+
+- PASS: البناء والتحقق؛ الحزمة **1,936,482 بايت** والمخزن **v72**. 53 درسًا و428 عنوان تمرين و55 عنوان حوار وفق نمط العداد و754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء،1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا،137ready و80pending. عداد الحوار لا يحصي جميع الأدوار أو التسجيلات.
+- PASS: **25 حارس مراجعة تراكميًا** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–7. الحارس الجديد يطابق94 وحدة و34 بندًا وروابط المصدر والتقييم والكتالوج والبصمات، مع30 بديلًا وستة معايير. داخلPHR روجعت20 عبارة وجملة؛ لاMODEL مسجل مستقل لهذا الدرس. الحراس لا تصحح اللغة مستقلًا عن المراجعة.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs وgit diff --check.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**، عبر@sparticuz/chromium143.0.4 ومكتباتal2023 خارجGit. التشغيل آلي صامت؛ لا استماع أو هاتف فعلي.
+- العام عند1440×900 و390×844: تنقل وRTL والتفريغات وتشغيلMP3 بسرعتي1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. لا ضمان لتخزين جميع التسجيلات دائمًا.
+- تحديثfixture عامل الخدمةv42→v72 دون تحديث قسري، مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد الصوت بـ503 وإعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- progression: يبقى سجلv1 لكنه لا يمنح إتقانv2 أو يفتحA2.8؛ مسودةv1 مرفوضة. يمرv2 مع80% ودليل الأداء. P01 يرفض غياب الجهر وP02 كتابة فقط؛ النموذجان يمران بالطول، ولا تمر الإجابة القصيرة أو الإقرارات الناقصة. هذه فحوص الدليل المحلي، لا تصحيح اللغة أو النطق.
+- axe-core4.11.0: **113 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة**؛ بقي **75 ظهورًا لفحوص غير حاسمة تشمل173 ظهورًا لعقد**. غير الحاسم ليس نجاحًا شاملًا أو مخالفة مؤكدة أو شهادةWCAG؛ لا مراجع بشري شرطًا للمتابعة.
+- النماذج: **PASS من أول تشغيل متسلسل** عند1440 و390، مع الحفظ وإعادة التحميل والتصدير والاستيراد والمسودات. لم يتكرر تذبذبfilechooser التاريخي، ولا ندعي إصلاح سببه.
+- العرض الضيق: **126 حالة**؛63 عند320×900 و63 عند568×320، مع الدروس والتفريغات والجداول. تغييرviewport ليس تكبير نظام أو اختبار جهاز فعلي.
+- الحفظ مقابل `cea8a96a293a2c15ff41ecaf68bc7c58080bee85`: **52 درسًا آخر و1060 صف كتالوج آخر و114 ملفًا محميًا** لم تتغير؛ تشمل المصادر الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتيbuild/verify. تغير20 صفًا تخصA2.7 فقط في الكتالوج.
+- playlist مطابق بايتًا ببايت، و**474MP3** طابقت بصماتGit السابقة. تغيرت أربعة صفوفA2.7 فيaudio-register فيsource_line/source_heading فقط؛ بقية213 صفًا وكل الحالات والأصوات والمسارات محفوظة. Hiba02/Maha00؛ القراءة00 والمفردات02 والاستماع03، دون توليد أو استماع أو اعتماد جديد.
+- خيارات الأسئلة الثلاثون وفهارس الإجابات العشرة ثابتة. المراجع تسند القواعد والمعاني ذات الصلة، لا نتائج تعلم أو سفر حقيقية أو تصنيفCEFR مستقل.
+
+السجل الفردي `data/reviews/a2-07-review.md` وJSON المناظر هما المرجع. بعد دفع هذه المجموعة سجّلcommitالمراجعة وحالةPR والنشر الفعلية،ثم تابعA2.8. المراجعة والفحوص ليست إعلان دمج.
+
+## أرشيف العائق السابق والتنفيذ — زال عائق الدفع؛ الحالة أعلاه هي الحالية
+
+## توقف دفع GitHub — CR25، 2026-10-08
+
+- التنفيذ محفوظ محليًا فيcommit **`3a82c8ad7f48265761bdb4457372e3176e690cb9`** على `arena/01a1036f-deutschlern`؛**لم يُرفع**. فشل الأمر `git push origin arena/01a1036f-deutschlern` برسالة `fatal: could not read Username for 'https://github.com': terminal prompts disabled`.
+- طُلب من المستخدم إعادة ربطGitHub فيArena،دون طلب كلمات مرور أوPAT أو أي رموز. لا إعادة محاولة قبل إصلاح الاتصال،ولا تغييرفرع أوreset أوحذف عمل. لا تخلط نجاحfetch العام في بداية الدور مع صلاحيةالدفع.
+- الفحوص المنفذة:build (53 درسًا،حزمة1,936,482 بايت)/verify،الحارسA2.7 بوضعimplementation-only،وخمس مجموعاتNode:progression/service_worker/session_persistence/study_time/daily_plan،وdiff. الإصدارa2-07-v2 والمخزنv72.
+- **لم تنفذ بعد**:سجلCR25 الفرديJSON/MD والحفظ الشامل للبصمات والمتصفح وخمسة وعشرون حارسًا مجتمعين. لا توجد نتائج متصفحCR25 أو اعتمادصوتي أو دمج أو نشر جديد. الحملةتبقى23/53 والبوابةمنفصلة،والمتبقي30.
+- بعد إعادةالربط:افحصgit status/log والفرع،ثم **ارفعcommitsالمحلية أولًا** وتحققمنorigin. بعد ذلك راجعالتنفيذ واحفظسجلCR25 بندًا بندًا،وافحص52 درسًا و474MP3 مقابل `cea8a96a293a2c15ff41ecaf68bc7c58080bee85`،و25 حارسًا وخمس مجموعاتمتصفح،ثم حدّثالوثائقوادفع. لا تبدأA2.8 قبلتسليممراجعةA2.7.
+- تفاصيلالبحث المهمة:10 مراجع كاملة: Duden nachschlagen/vorbereiten/informieren/anmelden/erfahren_feststellen؛Lingolia verben/trennbare وverben/modalverben وverben/infinitiv وsatzbau/nebensaetze/infinitivsaetze؛IDS `https://grammis.ids-mannheim.de/rechtschreibung/6203` بجزأيه0و1. تسند الغايةوzuوالفصلوالانعكاسوالفاصلة،ولا نتائجتعلمأوسفرحقيقية. ثلاثروابط404 مستبعدة: Lingolia satzbau/infinitivsaetze،وDuden erfahren_kennenlernen_erleben،وDuden erfahren. IDS6200 قُرئجزؤه0فقطولميُستخدم.
+- المتوقع للسجل عندالتحقق:94 وحدة =6نطاق+17مفردة+3أمثلةقاعدة+8مساعدات+7أدوارحوار+5جملقراءة+5أسئلتها+4جمل استماع+4أسئلته+4نموذجP01+3نموذجP02+4بطاقات+8تمارين+10أسئلةتقييم+2أداء+4أصولصوت. بنودالتمارين34 =4+3+3+5+4+4+4+7. بنكPHR20وحدةمتداخلة،ولاMODELمسجل. هذه خريطة تغطية للحارس،**لا ادعاء أن السجل المفصل أُنشئ**.
+- الملفات المؤقتة `/tmp/cr25_fix.py` نُفذت بالفعل؛**لا تعِد تشغيلها** حتىلاتكررالمساعداتوالfixtures. المصدرالمحفوظهوالمرجع. الملفانالمحليانومقاطعالصوتالقائمةمحفوظةدونتوليدأواستماع؛Hiba02/Maha00،القراءة00،الاستماع03؛Q08→T05 محفوظوصُححمرجعهالقديم فيالكتالوج.
+
+## سجل التنفيذ قبل محاولة الدفع — لا ينسخ حالة التوقف أعلاه
+
+## تنفيذ CR25 / A2.7 — 2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛الأساس `cea8a96a293a2c15ff41ecaf68bc7c58080bee85`. استعيدتmetadata القديمة بعدfetch ومقارنة695 ملفًا بصفر اختلاف أو إضافات ثمreset --mixed الآمن؛لا تكرر مع عمل جديد دون مقارنة.
+- المصدر والتقييم `content/A2/lesson-07-language-learning-travel-purpose.md/.assessment.json` إلى `a2-07-v2`: شرح الغاية لا ضمان النتيجة؛ نفس منفذ النشاط والغاية في النمط البسيط؛ الفاصلة لازمة؛ المصدر معzu داخل المنفصل وmich معich. حُذفت فرضية جنس الراوي من أسئلة الاستماع دون تغيير نص التسجيل.
+- قُيدT01 بأهداف معطاة؛أضيفnachzuschlagen/vorzubereiten إلىT04؛استبدلT05.4 بنفي القاموس الذي يرد عليه النص صراحة؛T06 بنك وبنود منفصلة؛T07 يميز اختلاف المنفذ ويدرب الفاصلة. P01/T08أ أربع جمل مع الجهر حد180؛P02/T08ب ثلاث جمل كتابة فقط حد150،بنموذجين ومعايير مطابقة،دون شريك أو تسجيل أو سفر حقيقي.
+- Q02→T07 وQ10→T07؛Q08→T05 محفوظ وصُحح سجله القديم في الكتالوج. الخيارات الثلاثون وفهارس المفاتيح و80% محفوظة. 20 صف كتالوج وأربعة صفوفaudio-register فيsource_line/source_heading فقط؛cachev72 والحزمة وأربعة اختبارات محدثة وحارس `tools/test_a2_07_review.py`.
+- PASS:build/verify والحارسimplementation-only وخمس مجموعاتNode وdiff. فحوص المتصفح والحفظ الشامل والسجل الفردي لم تنفذ بعد؛لا نتائج مستقبلية مدّعاة. لا تعديلplaylist/MP3/app.js/CSS أو صوت؛Hiba02/Maha00 والقراءة00 والاستماع03 محفوظة،أربعة أصول/10 مقاطع،دون توليد أو استماع أو اعتماد جديد.
+- المراجع:10 صفحات كاملة منLingolia وDuden وIDS§73؛ثلاث صفحات404 مستبعدة،وصفحةIDS6200 غير اللازمة قُرئ جزؤها0 فقط ولم تستخدم. يوجد توثيق المراجع ونطاقها في خطوة السجل التالية،ولا تعد404 دليلًا.
+- تُرفع مجموعة التنفيذ فور فحصها بعنوان `Align A2.7 purpose clauses and preparation tasks (CR25)`؛معرفها فيgit log بعد الدفع. الحملةتبقى23/53 والبوابة منفصلة حتى توثيق المراجعة؛التالي سجلCR25 وحفظ52 درسًا/474MP3 و25 حارسًا وخمس مجموعات متصفح ثم الدفع.
+- القيود مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا تبديل فرع أو دمجPR#1 أو إعادة توليد/إخفاء صوت أو تغييرready/نهائي بلا موافقة؛حد10طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ،واحفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6. حدVercel السابق لا يوقفGitHub ولا يبرر إعادة نشر متكررة أو ترقية مدفوعة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع والتحقق — CR24، 2026-10-08
+
+- التنفيذ `94685bc8aafb6d6794ce223d7dadc5b798cbf9fc` ثم السجل `d2a51a237b3bc1d5b6c8755b84d2b5f45a96698f` رُفعا إلى `arena/01a1036f-deutschlern`؛تطابقHEADمعorigin بعد كل دفع. اجتازت المجموعة24 حارسًا وخمس مجموعاتNode وخمس مجموعات متصفح والتحقق والصياغة وdiff؛نتائجها وحدودها مفصلة أدناه.
+- PR#1 **OPEN**، وmergedAt=null، ورأسه عند الفحص `d2a51a2`؛لا دمج أو اكتمال مشروع مدّعى. هذا الإيصال يُرفع فور فحصه بعنوان `Record CR24 delivery and deployment limits`؛معرفه فيgit log،وحالة نشر الإيصال نفسه لم تُفحص.
+- GitHub/Vercel: التنفيذ `94685bc` له حالةsuccess وPreview deployment **6942010781** بحالةsuccess،ورابطه https://deutschlern-4n3cvuhpu-balinader-2671s-projects.vercel.app . هذه بيانات نشر،وليست فحص واجهة بعيدة أو نشرProduction.
+- السجل `d2a51a2` حالتهVercel **failure** برسالة `Deployment rate limited — retry in 24 hours.`؛استعلامdeploymentsله أعاد قائمة فارغة وقت الفحص. لا ندعي رفع حد الخدمة أو نجاح نشر أحدثcommit،ولا نطلب إعادة نشر أو ترقية مدفوعة. نجاح رفعGitHub محفوظ ومستقل.
+- آخر عداد للمراجعة **23/53 درسًا** والبوابة منفصلة؛تبقى30. التالي **CR25/A2.7 — تعلّم اللغات والسفر والغاية بـum … zu**. احفظHiba02/Maha00 وتصحيحQ08→T05. لا حاجة إلى إعادةA2.6 أو تسجيلاته؛ابدأ بقراءة مصدرA2.7 وتقييمه وكل أصوله ثم المراجع والتعديلات والفحوص والرفع المباشر.
+
+رُوجع **A2.6 — الأسرة والمشاعر والدعوات والهدايا** في **104 وحدات و36 بندًا أو مطلبًا داخل التمارين**، مع **9 مراجع مقروءة كاملة**. وُسعت ترجمة القرابة دون اختلاق جهة أو نسب، وفُرق بين محتوى dass وتحقق الخبر، وبين auf مع اسم وdass مع جملة. أضيف تدريب مباشر على anschauen möchten والتطلع إلى الاحتفال؛ ضُبطت الدعوة والمشاعر والفصل بين السيناريوهات. **P01/T08أ أربع جمل مع الجهر**؛ **P02/T08ب تحية وأربع جمل وختام واسم، كتابة فقط**، بمعايير ونموذجين مطابقين. Q02→T07؛ تغير خيارQ06 الصحيح وحده، مع حفظ29 خيارًا وفهارس المفاتيح و80%. الإصدار `a2-06-v2` والمخزن `v71`. خمسة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد. **الحملة23/53 درسًا والبوابة منفصلة؛ تبقى30 درسًا، والتاليCR25/A2.7.** هذا سجل مراجعة وفحوص، لا شهادة مستوى أو إعلان اكتمال الدمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم `content/A2/lesson-06-family-happiness-gifts.md/.assessment.json`، والحزمة `data/course.json`، و20 صفًا في `data/production-task-catalog.csv`، وخمسة صفوف مرجعية فقط في `data/audio-asset-register.csv`.
+- `service-worker.js` واختباراه، و`tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs` والحارس `tools/test_a2_06_review.py`.
+- السجلان `data/reviews/a2-06-review.json/.md`، وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.30 وتقرير المتصفح وملفا التسليم. لا تعديلplaylist أوMP3 أوapp.js أوCSS.
+- التنفيذ **94685bc8aafb6d6794ce223d7dadc5b798cbf9fc** رُفع وتطابق معorigin. دفعة السجل بعنوان `Record CR24 granular A2.6 review and cumulative checks`؛ معرفها فيgit log بعد الدفع ثم يسجل إيصالها.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا تبديل أو دمجPR#1. عند البداية عادتmetadata إلىcommitقديم، لكن قورنت692 ملفًا بصفر اختلاف أو إضافات قبلreset --mixed الآمن؛ لا تعاد هذه العملية مع عمل جديد دون مقارنة.
+- لا اختبار واجهة بعيدة أو نشرProduction مدّعى. بياناتVercel القديمة تخصCR23؛ لا ننسبها إلىCR24 ولا نطلب إعادة نشر متكررة أو ترقية مدفوعة بسبب حد الخدمة السابق.
+- التالي **CR25/A2.7 — تعلّم اللغات والسفر والغاية بـum … zu**: افحص المصدر الفعلي والعنوان وكل نص وتمرين وتقييم بالمراجع قبل تعديله. احفظHiba02/Maha00 وQ08→T05، ولا تعد توليد المقاطع الموجودة.
+- القرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا للمتابعة. لا إخفاء صوت أو إعادة توليد أو تغييرready/نهائي بلا موافقة؛ حد10طلبات صوت/رد. B1.9/B1.10 معلقان، واختيارB1.11 محفوظ. احفظ اتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR24
+
+- PASS: البناء والتحقق؛ الحزمة **1,925,590 بايت** والمخزن **v71**. 53 درسًا،428 عنوان تمرين،55 عنوان حوار وفق نمط العداد،754 مفردة؛530 سؤال درس+10 للبوابة،109 مهمات أداء،1080 صف كتالوج. 217 أصلًا صوتيًا/474 مقطعًا،137ready و80pending. عداد الحوار لا يحصي جميع الأدوار أو التسجيلات.
+- PASS: **24 حارس مراجعة تراكميًا** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–6. الحارس الجديد يطابق104 وحدات و36 بندًا وبصمات المصدر، وروابط التقييم والكتالوج، و30 بديلًا وستة معايير، والمهمتين والحزمة. داخل الأصلين PHR/MODEL روجعت20 عبارة و6 جمل على التوالي، دون إضافتها مرة ثانية لعدد104. لا يعني الحارس مصحح لغة مستقلًا.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs وgit diff --check.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0** عبر@sparticuz/chromium143.0.4 ومكتباتal2023 خارجGit. التشغيل آلي صامت، لا استماع أو هاتف فعلي.
+- العام عند1440×900 و390×844: تنقل وRTL وتفريغات وتشغيل MP3 بسرعتي1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. لا ضمان تخزين جميع التسجيلات دائمًا.
+- تحديثfixture عامل الخدمةv42→v71 دون تحديث قسري، مع حفظ الإجابات والتقدم وعزل المخازن وتوضيح فقد الصوت بـ503 وإعادة تخزينه عند الاتصال. ليس اختبارًا مستقلًا لكل ترحيل تاريخي.
+- progression: إتقانv1 محفوظ كسجل لكنه لا يمنح إتقانv2 أو يفتحA2.7؛ مسودةv1 مرفوضة. يمرv2 مع80% ودليل الأداء. P01 يرفض غياب الجهر، وP02 كتابة فقط؛ النموذجان يمران بالطول، ولا تمر الإجابة القصيرة أو الإقرارات الناقصة. هذا ليس تصحيحًا للغة أو النطق.
+- axe-core4.11.0: **109 حالات ممثلة، وصفر مخالفات للقواعد الآلية المختارة**. بقي **72 ظهورًا لفحوص غير حاسمة تشمل167 ظهورًا لعقد**. لا نحول عدم الحسم إلى نجاح شامل أو شهادةWCAG، ولا نجعل مراجعًا بشريًا شرطًا للمتابعة.
+- النماذج: **PASS من أول تشغيل متسلسل** عند1440 و390؛ حفظ وإعادة تحميل وتصدير واستيراد ومسودات. تذبذبfilechooser التاريخي لم يتكرر، لكن لم يثبت إصلاح سببه.
+- العرض الضيق: **126 حالة**؛63 عند320×900 و63 عند568×320، مع الدروس والتفريغات والجداول. viewport ليس تكبير نظام أو جهازًا فعليًا.
+- الحفظ مقابل `0ac548565836255e6f2aa7b3190df01927c52111`: **52 درسًا آخر و1060 صف كتالوج آخر و114 ملفًا محميًا** لم تتغير، بما فيها مصادر الدروس الأخرى والبوابة وapp.js وCSS وpackage/lock وأداتاbuild/verify. تغير20 صفًا تخصA2.6 فقط في الكتالوج.
+- playlist مطابق بايتًا ببايت، و**474MP3** طابقت بصماتGit السابقة. خمسة صفوفA2.6 فيaudio-register تغيرت فيsource_line/source_heading فقط؛ بقية212 صفًا وكل الحالات والأصوات والمسارات محفوظة. Mariam02/Sami03، وNarrator02 للمفردات والقراءة والنماذج، وErzählperson03 للاستماع. لا توليد أو استماع أو اعتماد جديد.
+- فهارس الإجابات العشرة ثابتة، وتغير نص خيارQ06 الصحيح فقط من الثلاثين. يُراجع كل بديل في السجل، لا المفتاح وحده. لا تنقل جاهزية التسجيل التاريخية إلى اعتماد جديد أو شهادةCEFR.
+
+التقرير التفصيلي: `data/reviews/a2-06-review.md`؛ جميع البنود والبدائل والمعايير والبصمات فيJSON المناظر. المراجعة التنفيذية والنصية فُحصت، وليست إعلان دمج. بعد رفع هذه المجموعة سجّلcommitالمراجعة وحالةPR والنشر الفعلية،ثم تابعA2.7. لا تعِد دفعةA2.6 أو تعيد توليد صوتها.
+
+## أرشيف التنفيذ والسجلات السابقة — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR24 / A2.6،2026-10-08
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛خط الأساس `0ac548565836255e6f2aa7b3190df01927c52111`. قورنت692 ملفًا معorigin بعد عودةmetadata القديمة؛تطابقت كلها بصفر إضافات،ثمreset --mixed دون حذف عمل. لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/A2/lesson-06-family-happiness-gifts.md/.assessment.json` إلى `a2-06-v2`: توسيع ترجمة القرابة دون اختلاق الجهة؛dass لمحتوى الفكرة لا إثبات حدوثها،وauf مع اسم للتطلع. تدريب T03.4 على anschauen möchten وT07.3 علىauf؛T06 بنك وبنود منفصلة مع حفظ نسبة القول إلى الأخ. مفاتيح الاستماع لا تفترض جنس المتكلم،والبطاقة تميز «مشترك» عن «عائلي».
+- P01/T08أ أربع جمل مع الجهر،حد150؛P02/T08ب تحية وأربع جمل وختام واسم،كتابة فقط،حد180. المصدر والنموذجان والمعايير متطابقة؛لا شريك أو تسجيل أو دعوة فعلية أو كشف بيانات عائلية. Q02→T07؛تغير خيارQ06 الصحيح فقط،مع بقاء29 خيارًا وفهارس المفاتيح و80%.
+- بقية الملفات:الحزمة `data/course.json`،20 صف كتالوج،حقلاsource_line/source_heading فقط لخمسة صفوفaudio-register،cachev71 واختباراه،progression/accessibility_audit والحارس `tools/test_a2_06_review.py`. لا تعديلapp.js/CSS/playlist/MP3؛Mariam02/Sami03/Narrator02/Erzählperson03 محفوظة،خمسة أصول/10 مقاطع دون توليد أو استماع أو اعتماد جديد.
+- PASS:build/verify،الحارسimplementation-only،خمس مجموعاتNode وdiff. السجل الفردي والحفظ الشامل والمتصفح لم تنفذ بعد؛لا ندعي نتائج مستقبلية.
+- قُرئت9 صفحات كاملة: Duden Cousin/Cousine/Tante/freuen/zufrieden وLingolia Objektsätze/Subjektsätze،Modalverben،Nebensätze،Trennbare Verben. لا روابط404 ضمن هذه المجموعة،ولا ادعاء أن كل تبسيط في مصدر يُطبق على جميع الاستعمالات.
+- تُرفع المجموعة بعنوان `Align A2.6 dass clauses and family invitation tasks (CR24)` فور فحصها؛معرفها فيgit log بعد الدفع. الحملة22/53 والبوابة منفصلة حتى توثيق المراجعة؛التالي السجل والحفظ و24 حارسًا والمتصفح ثم التوثيق.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا دمجPR#1 أو تبديل فرع،ولا إعادة توليد أو إخفاء أو تغييرready/نهائي بلا موافقة؛حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6. لا تكرار لمحاولات نشرVercel أو ترقية مدفوعة بسبب حد الخدمة السابق؛رفعGitHub يستمر.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع — CR23 / 2026-10-08
+
+- رُفع التنفيذ **00580af492ccdab9440fb5b231884efc22ea3035** والسجل والفحوص **6487ea9cf89b560ecd8a8be97de0f7ce1e8c6c09** فور فحص كل مجموعة. تطابقHEAD مع`git ls-remote` لكل منهما على`arena/01a1036f-deutschlern`؛كانت مساحة العمل نظيفة بعد دفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) **OPEN** و`mergedAt=null`،ورأسه6487ea9 عند التحقق. لا دمج أو تغيير فرع أو إعلان اكتمال المنهج.
+- إشارةVercel للتنفيذ00580af **failure** بوصف **Deployment rate limited — retry in 24 hours.** لكن دفعة السجل6487ea9 حصلت على **success** تلقائيًا دون طلب إعادة نشر منا. سجل **6941688318**: **Preview/success**،ورابطه https://deutschlern-q3vvyx5c4-balinader-2671s-projects.vercel.app . هذا تحقق بيانات نشر فقط؛لا جلب لحزمة بعيدة أو اختبار واجهة معاينة أو نشر إنتاج مدّعى،ولا دليل على زوال حد الخدمة نهائيًا. لا محاولات إعادة نشر متكررة أو ترقية مدفوعة.
+- PASS:23 حارسًا و5مجموعاتNode و5متصفح،والبناء والتحقق والحفظ والصياغة وdiff. الحزمة **1,914,708 بايت** وcache**v70**؛94 وحدة و34 بندًا و9مراجع،منها8 كاملة وجزء0/16 من مرجع رسمي. خمسة أصول/10 مقاطع دون تغيير أو استماع أو توليد أو اعتماد جديد.
+- الحملة **22/53 درسًا** والبوابة منفصلة؛تبقى **31 درسًا**. التالي **CR24/A2.6 — الأسرة والسعادة والهدايا** مع حفظMariam02/Sami03. لا مراجع بشري شرطًا للمتابعة؛كل تعديل يُرفع فور فحص مجموعته.
+- هذا الإيصال تغيير توثيقي منفصل بعنوان `Record CR23 push and Preview delivery receipt`؛معرفه فيgit log بعد دفعه. لا ننسب إليه إشارة نشر دفعة سابقة،ولا يلزم تكرار إيصالCR23 قبل متابعةA2.6.
+
+## أحدث حالة — CR23،2026-10-08
+
+رُوجع **A2.5 — الروتين والتدريب المهني وجمل wenn** في **94 وحدة و34 بندًا أو مطلبًا**، مع **9 مراجع:8 صفحات كاملة وجزء محدد من صفحة رسمية**. ضُبط ترتيبwenn المتقدمة والمتأخرة وحدودdann، وأزيل استنتاج غير مسند من القراءة، وفُرق بينam liebsten والتكرار، وحُصرت علاقات التوصيل بمعطيات صريحة. **P01/T08 أربع جمل كتابة فقط**؛ **P02/T07 ثلاث جمل من مواقف معطاة مع الجهر**، بمعايير ونموذجين مطابقين. Q02/Q10→T04 وQ08→T03؛تغير خيارQ05 الصحيح إلى«فنّي إلكترونيات» مع حفظ29 خيارًا وفهارس المفاتيح و80%. الإصدار `a2-05-v2` والمخزن `v70`. خمسة أصول/10 مقاطع دون تغيير أو توليد أو استماع أو اعتماد جديد. **الحملة22/53 درسًا والبوابة منفصلة؛تبقى31 درسًا،والتاليCR24/A2.6.** لا شهادة مستوى أو إعلان دمج.
+
+## الملفات والرفع والخطوة التالية
+
+- `content/A2/lesson-05-training-routine-wenn.md/.assessment.json` و`data/course.json`،و20 صفًا في`data/production-task-catalog.csv` وخمسة صفوف مرجعية فقط في`data/audio-asset-register.csv`.
+- `service-worker.js` و`tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`،وتوسعة`test_progression.cjs` و`test_accessibility_audit.cjs`،والحارس`tools/test_a2_05_review.py`.
+- `data/reviews/a2-05-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.29 وتقرير المتصفح وملفا التسليم. لا تغييرplaylist أوMP3 أوapp.js أوCSS.
+- التنفيذ **00580af492ccdab9440fb5b231884efc22ea3035** رُفع وتطابق معorigin. دفعة السجل بعنوان `Record CR23 granular A2.5 review and cumulative checks`؛معرفها فيgit log بعد الدفع،ثم يسجل إيصالها.
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛لا تبديل أو دمجPR#1. استردادmetadata عند البداية تم بعد تطابق689 ملفًا وصفر إضافات،لاreset أعمى أو حذف عمل.
+- قيدVercel السابق حد معدل النشر مع طلب24ساعة؛لا إعادة نشر متكررة أو ترقية مدفوعة. يستمر رفعGitHub،ولا تُنسب إشارة نشر قديمة إلى هذه الدفعة أو يُدعى اختبار واجهة بعيدة.
+- التالي **CR24/A2.6 — الأسرة والسعادة والهدايا**: راجع كل نص ودور وتمرين وتقييم بالمراجع. احفظMariam02/Sami03 ولا تعد توليد الموجود؛لا حاجة إلى تكرار إيصالCR23 قبل الاستمرار.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا إعادة توليد أو إخفاء أو تغيير صوت أوready/نهائي بلا موافقة؛حد10طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR23
+
+- PASS:build/verify؛الحزمة **1,914,708 بايت** والمخزن **v70**. 53 درسًا و428 عنوان تمرين و55 عنوان حوار مطابقًا لنمط العداد و754 مفردة؛530 سؤال درس و10 للبوابة و109 مهمات أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا،137ready و80pending. عدّ الحوار يقيس عناوين،لا كل دور أو تسجيل.
+- PASS: **23 حارس مراجعة** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–5؛الحارس الجديد يطابق94 وحدة و34 بندًا،و16 عبارةPHR وخمسة أمثلةMODEL داخل أصليهما،وأدوار الحوار والنصين والبصمات وروابط التقييم والكتالوج والمهمتين. لا تصحيح لغوي مستقل مدّعى.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan،وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs وdiff. لا تعديلapp.js أوCSS.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0** من@sparticuz/chromium143.0.4 مع مكتباتal2023 المطابقة خارجGit. التشغيل آلي صامت،لا هاتف فعلي أو استماع.
+- العام عند1440×900 و390×844: تنقل وRTL وتفريغ وتشغيل MP3 بسرعة1 و0.8 وإيقافه عند التنقل،والعمل دون اتصال ونطاقات البايت. لا ضمان تخزين كل التسجيلات دائمًا.
+- تحديثfixture عامل الخدمةv42→v70 دون تحديث قسري،مع حفظ التقدم والإجابة وعزل المخازن وإعادة تخزين الصوت عند الاتصال إذا لزم. ليس اختبار ترحيل مستقلًا لكل إصدار محتوى تاريخي.
+- progression: سجلv1 يبقى لكنه لا يمنح إتقانv2 أو يفتحA2.6؛مسودةv1 مرفوضة،ويمرv2 مع80% ودليل الأداء. P01 لا يطلب الجهر،P02 يرفض غيابه؛النموذجان يمران بالطول،والإجابة القصيرة أو المربعات الناقصة لا تمر. الإقرار والطول لا يصححان اللغة أو النطق.
+- axe-core4.11.0: **105 حالات ممثلة وصفر مخالفات للقواعد الآلية المختارة**،مع **69 ظهورًا لفحوص غير حاسمة تشمل160 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة أو شهادةWCAG؛لا مراجع بشري شرطًا لاستمرار العمل.
+- النماذج: **PASS من أول تشغيل متسلسل** عند1440 و390،مع الحفظ والتصدير والاستيراد والمسودات. تذبذبfilechooser التاريخي لم يتكرر؛ليس دليل إصلاح سببه.
+- العرض الضيق: **126 حالة**؛63 عند320×900 و63 عند568×320،تشمل كل الدروس مع التفريغات والجداول. تغييرviewport ليس تكبير نظام أو جهازًا فعليًا.
+- الحفظ مقابل `59a29c0346d54b7a57548f9924a1ee92342a67b0`: **52 درسًا آخر و1060 صف كتالوج آخر** لم تتغير. خيارات29 محفوظة،وتغير نص الخيار الصحيحQ05 فقط،مع بقاء فهارس الإجابات العشرة.
+- playlist مطابق بايتًا ببايت و**474MP3** طابقت بصماتGit السابقة. خمسة صفوفA2.5 فيaudio-register تغيرت في **source_line/source_heading فقط**؛بقية212 صفًا والحقول والحالات والمسارات محفوظة. Mira02/Rami03،وNarrator02،والقراءة والاستماع03؛لا توليد أو استماع أو اعتماد جديد.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR23 / A2.5،2026-10-08
+
+- خط الأساس59a29c0 على الفرع الثابت؛استُعيدت بياناتGit بعد تطابق689 ملفًا معorigin وصفر إضافات،دون حذف عمل.
+- عُدّل المصدر والتقييم إلىa2-05-v2: ترتيبwenn والتفضيل ودليل القراءة والتوصيل،وP01/T08 كتابة فقط وP02/T07 مع الجهر. تغير خيارQ05 الصحيح فقط،مع حفظ المفاتيح و80%.
+- الملفات الأخرى:الحزمة1,914,708بايت،20 صف كتالوج،خمسة صفوف مرجعية فيaudio-register،cachev70 واختباراه،progression/accessibility_audit والحارس الجديد. خمسة أصول/10 مقاطع دون تغيير أو توليد أو استماع.
+- كانت نتائج هذه المجموعة وحدها:PASS للبناء والتحقق والحارسimplementation-only وخمس مجموعاتNode وdiff؛السجل والمتصفح والحفظ الشامل لم تنفذ بعد في تلك المرحلة،ثم نفذت كما توثق الحالة الأحدث أعلاه.
+- المراجع9:ثماني صفحات كاملة وجزء0 من16 لصفحةDie Duale؛رابطا404 مستبعدان. لا ادعاء قراءة الصفحة الرسمية كاملة.
+- رُفعت المجموعة بعنوانAlign A2.5 wenn routines and evidence tasks (CR23) عند00580af492ccdab9440fb5b231884efc22ea3035. كانت الحملة21/53 والبوابة منفصلة قبل توثيق هذه المراجعة.
+- قيدVercel السابق يطلب الانتظار24ساعة؛لا إعادة نشر متكررة أو ترقية مدفوعة. القرارات الدائمة والأصوات والحدود محفوظة في الحالة الأحدث.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع وقيد النشر — CR22 / 2026-10-08
+
+- رُفع التنفيذ **944a0574092f6332bf403a1febb4ca25b500fc34** والسجل والفحوص **9765f44dc662d41d483125b02b7658b8b07cb7ab** فور فحص كل مجموعة. تطابقHEAD مع`git ls-remote` لكل منهما على`arena/01a1036f-deutschlern`؛كانت مساحة العمل نظيفة بعد رفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) **OPEN** و`mergedAt=null`،ورأسه9765f44 عند التحقق. لا دمج أو تغيير فرع أو إعلان اكتمال المنهج.
+- **قيد خارجي:** إشارةVercel للتنفيذ944a057 كانتsuccess،لكن إشارة السجل9765f44 صارت**failure** مع الوصف الحالي الحرفي: **Deployment rate limited — retry in 24 hours.** لم يرجع استعلامDeployment سجلًا لهذه الدفعة. هذا حد خدمة معلن،لا خطأ بناء مُبلّغ عنه؛لا ندعي نشر السجل أو نشر إنتاج أو اختبار واجهة بعيدة. لا إعادة نشر متكررة أو ترقية مدفوعة؛تابع المحتوى وارفعه إلىGitHub،وأعد فحص النشر بعد انتهاء المهلة إذا لزم. التعليق القديم عن عدد يومي ليس دليلًا مستقلًا على الحد الحالي.
+- PASS:22 حارسًا و5مجموعاتNode و5متصفح،والبناء والتحقق والحفظ والصياغة وdiff. الحزمة **1,903,251 بايت** وcache**v69**؛114 وحدة و38 بندًا و9مراجع كاملة. التسجيلات دون تغيير أو توليد أو استماع أو اعتماد جديد،والفحوص لا تمنح شهادة لغة أو نطق أوWCAG.
+- الحملة **21/53 درسًا** والبوابة منفصلة؛تبقى **32 درسًا**. التالي **CR23/A2.5 — التدريب والروتين وwenn** مع حفظMira02/Rami03. لا مراجع بشري شرطًا للمتابعة؛كل تعديل يُرفع فور فحص مجموعته.
+- هذا الإيصال تغيير توثيقي منفصل بعنوان `Record CR22 push receipt and Vercel rate limit`؛معرفه فيgit log بعد الرفع. لا ننسب إليه حالة نشر دفعة سابقة،ولا يلزم تكرار إيصالCR22 قبل متابعةA2.5.
+
+## أحدث حالة — CR22،2026-10-08
+
+رُوجع **A2.4 — المكتب والهاتف والمواعيد** في **114 وحدة و38 بندًا أو مطلبًا**، مع **9 مراجع كاملة**. ضُبط الفرق بينob وwann والفاصلة وعلامة النهاية، والفصل في الأفعال، والفرق بين التوفر والمقترح والتأكيد. **P01/T08أ ستة أدوار هاتفية مع الجهر**؛ **P02/T08ب تحية وخمس جمل وختام واسم، كتابة فقط**، بمعايير ونموذجين مطابقين. صُححت الروابطQ04→T03 وQ09/Q10→T01، وأضيف تدريب مباشر لمعنىverschieben. الإصدار `a2-04-v2` والمخزن `v69`؛ الخيارات الثلاثون وفهارس المفاتيح و80% محفوظة. أربعة أصول/10 مقاطع دون توليد أو استماع أو اعتماد جديد. **الحملة21/53 درسًا والبوابة منفصلة؛ تبقى32 درسًا، والتاليCR23/A2.5.** لا شهادة مستوى أو إعلان دمج.
+
+## الملفات والرفع والخطوة التالية
+
+- `content/A2/lesson-04-office-phone-appointments.md/.assessment.json` و`data/course.json`،و20 صفًا في`data/production-task-catalog.csv` وأربعة صفوف مرجعية فقط في`data/audio-asset-register.csv`.
+- `service-worker.js` و`tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`،وتوسعة`test_progression.cjs` و`test_accessibility_audit.cjs`،والحارس`tools/test_a2_04_review.py`.
+- `data/reviews/a2-04-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.28 وتقرير المتصفح وملفا التسليم. لا تغييرplaylist أوMP3 أوapp.js أوCSS.
+- التنفيذ **944a0574092f6332bf403a1febb4ca25b500fc34** رُفع وتطابق معorigin. PR#1 كانOPEN وmergedAt=null ورأسه944a057 عند التحقق؛إشارةVercel success بيانات فقط،لا اختبار واجهة بعيد أو نشر إنتاج مدّعى.
+- دفعة السجل والفحوص بعنوان `Record CR22 granular A2.4 review and cumulative checks`؛معرفها فيgit log بعد دفعها،ثم يوثق إيصالها. الفرع الوحيد`arena/01a1036f-deutschlern`؛لا تبديل أو دمج. استردادmetadata عند البداية تم بعد تطابق686 ملفًا وصفر إضافات،لاreset أعمى.
+- التالي **CR23/A2.5 — التدريب والروتين وwenn**: راجع كل نص وحوار وتمرين ومهمة بالمراجع وأصلح ما يظهر. احفظMira02/Rami03 ولا تعد توليد الموجود. لا حاجة إلى تكرار إيصالCR22.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا إعادة توليد أو إخفاء أو تغيير صوت أوready/نهائي بلا موافقة؛حد10طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR22
+
+- PASS:build/verify؛ الحزمة **1,903,251 بايت** والمخزن **v69**. 53 درسًا و428 عنوان تمرين و55 عنوان حوار مطابقًا لنمط العداد و754 مفردة؛530 سؤال درس و10 للبوابة و109 مهمات أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا،137ready و80pending.
+- **تصحيح وصف العداد:** وصوله إلى56 فيCR21 كان بسبب إضافة كلمة«الحوار» إلىعنوانT05، لا بسبب نموذجP02 كما وُصف في تقريرCR21. صار55 هنا لأن عنوانT08 يستعمل«مكالمة» بدل«محادثة». لا حوار أو تسجيل محذوف؛العداد يقيس نمط العناوين، لا عدد المحادثات أو الأدوار.
+- PASS: **22 حارس مراجعة** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–4؛ الحارس الجديد يطابق114 وحدة و38 بندًا و24 عبارة داخلPHR، وأدوار الحوار ونص الاستماع وروابط التقييم والكتالوج والبصمات. مقارنة البريد تراعي9/neun و11/elf والترقيم؛ليست شهادة نطق.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وجميعtools/test_*.cjs وdiff. لا تعديلapp.js أوCSS.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**. استُعملت حزمة@sparticuz/chromium143.0.4 ومكتباتal2023 خارجGit؛التشغيل آلي وصامت،لا اختبار هاتف فعلي أو استماع.
+- العام عند1440×900 و390×844: التنقل وRTL والتفريغ وتشغيل MP3 بسرعة1 و0.8 وإيقافه عند التنقل، والعمل دون اتصال ونطاقات البايت. هذا لا يضمن تخزين جميع التسجيلات دائمًا.
+- تحديثfixture عامل الخدمةv42→v69 دون تحديث قسري، مع حفظ التقدم والإجابة وعزل المخازن وإعادة تخزين الصوت عبر الاتصال عند الحاجة. لا تدّعي هذه التجربة اختبار ترحيل كل إصدار محتوى تاريخي.
+- progression: يبقى سجلv1 لكن لا يمنح إتقانv2 أو يفتحA2.5؛مسودةv1 مرفوضة،ويمرv2 مع80% ودليل الأداء. P01 يرفض غياب الجهر،P02 لا يطلبه؛النموذجان يمران بالطول،والإجابة القصيرة أو المربعات الناقصة لا تمر. التحقق من الإقرار ليس تصحيحًا للغة أو النطق.
+- axe-core4.11.0: **101 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة**، مع **66 ظهورًا لفحوص غير حاسمة تشمل154 ظهورًا لعقد**. غير الحاسم ليس مخالفة مؤكدة أو شهادةWCAG؛لا مراجع بشري شرطًا لمتابعة العمل.
+- النماذج: **PASS من أول تشغيل متسلسل** عند1440 و390،مع الحفظ والتصدير والاستيراد والمسودات. تذبذبfilechooser السابق لم يتكرر هنا؛ليس دليل إصلاح سببه.
+- العرض الضيق: **126 حالة**؛63 عند320×900 و63 عند568×320،تشمل كل الدروس مع التفريغات والجداول. تغييرviewport ليس تكبير نظام أو تجربة جهاز فعلي.
+- الحفظ مقابل `d3109c2ccc327ba3888c3737f5d36eb2993256e3`: **52 درسًا آخر و1060 صف كتالوج آخر** لم تتغير. الخيارات الثلاثون وفهارس الإجابات العشرة محفوظة.
+- playlist مطابق بايتًا ببايت و**474MP3** طابقت بصماتGit السابقة. أربعة صفوفA2.4 فيaudio-register تغيرت في **source_line/source_heading فقط**؛بقية213 صفًا وبقية الحقول والحالات والمسارات محفوظة. **Amal00/Mitarbeiter02/Narrator02**؛لا توليد أو استماع أو اعتماد جديد.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR22 / A2.4،2026-10-08
+
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛ خط الأساس`d3109c2ccc327ba3888c3737f5d36eb2993256e3`. قورنت686 ملفًا معorigin عند عودةmetadata القديمة؛ تطابقت كلها بصفر إضافات، ثمreset --mixed دون حذف عمل. لا تكرر الاسترداد دون مقارنة جديدة.
+- المصدر والتقييم`content/A2/lesson-04-office-phone-appointments.md/.assessment.json` إلى`a2-04-v2`: توضيحob/wann والفاصلة وعلامة النهاية وصيغ الأفعال المنفصلة؛ تمييز التوفر من تأكيد الموعد. أضيفT01.5 لمعنىverschieben، وفُصلت بنودT06 مع بنك ودون الجزم بوقت بدء الاجتماع. Q04→T03 وQ09/Q10→T01؛ الخيارات الثلاثون وفهارس المفاتيح و80% محفوظة.
+- T08أ/P01 ستة أدوار مع الجهر، حد200؛ T08ب/P02 رسالة بتحية وخمس جمل وختام واسم، كتابة فقط، حد180. النموذجان والمعايير مطابقون. لا شريك أو إرسال أو اتصال أو تسجيل حقيقي، ولا تصحيح آلي للنطق أو اللغة. سببP02 مفترض لا استنتاج من البريد الأصلي.
+- بقية الملفات:الحزمة`data/course.json`،20صفًا بالكتالوج،source_line/source_heading فقط لأربعة صفوفaudio-register،cachev69 واختباراه،progression/accessibility_audit والحارس`tools/test_a2_04_review.py`. لا تغييرapp.js/CSS/playlist/MP3؛4أصول/10مقاطع معAmal00/Mitarbeiter02/Narrator02 محفوظة دون توليد أو استماع أو اعتماد جديد.
+- PASS:build/verify والحارسimplementation-only وخمس مجموعاتNode وdiff. السجل الفردي والحفظ الشامل والمتصفح لم تنفذ بعد؛لا ننسب نجاحها مسبقًا. عدد عناوين الحوار فيverify55 بسبب تسميةT08 «مكالمة» بدل «محادثة»، لا حذف حوار؛العداد نمط عناوين لا عدد الأدوار أو التسجيلات.
+- قُرئت9صفحات كاملة: Lingolia indirect questions/trennbare؛Deutsch mit Anna indirect questions بجزأيه؛Duden Termin/Durchwahl/verschieben/absagen/mitteilen وKomma بأجزائه الخمسة. استُبعد رابطا404 الأوليان. لا ننسخ تعميم أن كل فعل أولًا يعني سؤالًا؛صيغة الأمر مثال مضاد، والترقيم يراجع بحسب نوع الجملة.
+- تُرفع المجموعة فور الفحص بعنوان`Align A2.4 indirect questions and appointment tasks (CR22)`؛معرفها فيgit log بعد الدفع. الحملة20/53 والبوابة منفصلة حتى توثيق السجل؛التالي مراجعة كل وحدة وفحوص الحفظ والحراس والمتصفح ثم السجل والإيصال.
+- القرارات ثابتة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا دمجPR#1 أو تبديل فرع. لا إعادة توليد أو إخفاء أو تغييرready/نهائي بلا موافقة؛حد10طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع — CR21 / 2026-10-08
+
+- رُفع التنفيذ **c509908f02fac735c5d9763f7164a8442282001c** والسجل والفحوص **62cccefa65e9e160bb9ca2d90d1c670ac779d15c** فور فحص كل مجموعة. تطابقHEAD مع`git ls-remote` لكل منهما على`arena/01a1036f-deutschlern`؛ كانت مساحة العمل نظيفة بعد دفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) **OPEN** و`mergedAt=null`، ورأسه62cccef عند التحقق. لا دمج أو تغيير فرع أو إعلان اكتمال المنهج.
+- إشارةVercel للتنفيذc509908 **success**؛ إشارة السجل62cccef **pending** عند التحقق، ولم يُرجع استعلامDeployment سجلًا له آنذاك. لا ادعاء نجاح نشر السجل أو نشر إنتاج، ولم تُختبر واجهة المعاينة أو حزمة بعيدة. استمرار مراجعة المحتوى لا يتوقف على هذه الإشارة.
+- الحزمة **1,892,977 بايت** والمخزن **v68**. PASS:21 حارسًا و5 مجموعاتNode و5 متصفح، والبناء والتحقق والحفظ والصياغة وdiff.117 وحدة و39 بندًا و11 مرجعًا كاملًا. اختبار النماذج نجح بعد إعادة منفردة عقب مهلةfilechooser؛ لم يُشخّص سبب التذبذب أو يُصلح. لا شهادة لغة أو نطق أوWCAG.
+- الحملة **20/53 درسًا** والبوابة منفصلة؛ تبقى **33 درسًا**. التالي **CR22/A2.4 — المكتب والهاتف والمواعيد**، مع حفظAmal00/Mitarbeiter02 وعدم إعادة الصوت. لا مراجع بشري شرطًا للاستمرار؛ كل تعديل لاحق يُرفع فور فحص مجموعته.
+- هذا الإيصال تغيير توثيقي منفصل بعنوان `Record CR21 push receipt and deployment status`؛ معرفه فيgit log بعد الدفع. لا ننسب إليه إشارةVercel لدفعة سابقة، ولا يلزم تكرار إيصالCR21 في الجولة التالية لمجرد تغيّرpending.
+
+## أحدث حالة — CR21،2026-10-08
+
+رُوجع **A2.3 — الطعام والتغذية والشراء والمطعم** في **117 وحدة و39 بندًا أو مطلبًا**، مع **11 مرجعًا مقروءًا كاملًا**. ضُبطت الكميات وman، وأزيل غموض الكيلو والأفعال، وصُححت ترجمة حبات الخيار وروابط Q09→T04 وQ10→T03. **P01/T08أ قائمة أربعة أصناف وسؤال، كتابة فقط**؛ **P02/T08ب أربعة أدوار وتعليق man مع الجهر**، بنموذجين ومعايير مطابقة. الإصدار `a2-03-v2` والمخزن `v68`؛ عتبة80% وفهارس المفاتيح محفوظة، وتغيرت خيارات Q07 الثلاثة فقط. أربعة أصول/10 مقاطع محفوظة دون توليد أو استماع أو اعتماد جديد. **الحملة20/53 درسًا والبوابة منفصلة؛ تبقى33 درسًا، والتاليCR22/A2.4.** هذا سجل مراجعة وفحوص، لا شهادة مستوى أو إعلان دمج.
+
+## الملفات والرفع والخطوة التالية
+
+- `content/A2/lesson-03-food-nutrition-shopping.md/.assessment.json` و`data/course.json`، و20 صفًا في`data/production-task-catalog.csv`، وأربعة صفوف مرجعية فقط في`data/audio-asset-register.csv`.
+- `service-worker.js` و`tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`، وتوسعة`test_progression.cjs` و`test_accessibility_audit.cjs`، والحارس`tools/test_a2_03_review.py`.
+- `data/reviews/a2-03-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.27 وتقرير المتصفح وملفا التسليم. لا تغييرplaylist أوMP3 أوapp.js أوCSS.
+- التنفيذ **c509908f02fac735c5d9763f7164a8442282001c** رُفع وتطابق معorigin. PR#1 كانOPEN وmergedAt=null ورأسهc509908 عند التحقق؛ إشارةVercel success بيانات فقط، لا اختبار واجهة بعيد أو نشر إنتاج مدّعى.
+- دفعة السجل والفحوص بعنوان `Record CR21 granular A2.3 review and cumulative checks`؛ معرفها فيgit log بعد الرفع، ثم يوثق إيصالها. الفرع الوحيد`arena/01a1036f-deutschlern`؛ لا تبديل أو دمج.
+- التالي **CR22/A2.4 — المكتب والهاتف والمواعيد**: مراجعة فردية للنصوص والأدوار والتمارين والتقييم مع المراجع. احفظ صوتAmal00/Mitarbeiter02؛ لا تولد الموجود من جديد.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛ المحتوى والتقييم والتطبيق قبل الصوت؛ لا مراجع بشري شرطًا للمتابعة. لا إعادة توليد أو إخفاء أو تغيير صوت أوready/نهائي بلا موافقة؛ حد10 طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR21
+
+- PASS: البناء والتحقق؛ الحزمة **1,892,977 بايت** والمخزن **v68**. 53 درسًا و428 عنوان تمرين و**56 قسم حوار** (زاد نموذج P02 النصي قسمًا، لا أصلًا صوتيًا) و754 مفردة؛ 530 سؤال درس و10 للبوابة و109 مهام أداء و1080 صف كتالوج. الصوت217 أصلًا/474 مقطعًا،137ready و80pending.
+- PASS: **21 حارس مراجعة** تشمل A0.1–5 والبوابة وA1.1–12 وA2.1–3. الحارس الجديد يطابق117 وحدة و39 بندًا، و26 عبارة داخل أصلPHR، والأدوار والنصين والبصمات والروابط والمهمتين. ليس مصححًا لغويًا مستقلًا.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan، وصياغةapp.js وservice-worker.js وكلtools/test_*.cjs وdiff. لا تعديلapp.js أوCSS.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout على **Chromium143.0.7499.0**. فشل تنزيلPlaywright بسببECONNRESET، فاستُخدمت حزمة@sparticuz/chromium143.0.4 ومكتباتal2023 المطابقة خارجGit؛ ليس تعديلًا للتطبيق.
+- العام عند1440×900 و390×844: تنقل وRTL وتفريغ وتشغيل آلي صامت بسرعة1 و0.8 وإيقاف عند التنقل، وعمل دون اتصال ونطاقات بايت. لا هاتف فعلي أو استماع أو ضمان تخزين كل الصوت دائمًا.
+- تحديثfixture العاملv42→v68 دون تحديث قسري، مع حفظ التقدم والإجابة وعزل المخازن؛ قد يلزم فتح الصوت مع الاتصال لإعادة تخزينه بعد حذف مخزن قديم. هذا ليس اختبار ترحيل مستقلًا لكل إصدار محتوى تاريخي.
+- progression: يبقى تاريخv1 لكن لا يمنح إتقانv2 أو يفتحA2.4؛ تُرفض مسودةv1، ويمرv2 مع80% ودليل الأداء. P01 لا يطلب الجهر وP02 يرفض غيابه؛ النموذجان يمران بالطول، والإجابة القصيرة والمربعات الناقصة لا تمر. الإقرار لا يصحح اللغة أو النطق.
+- axe-core4.11.0: **97 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة**؛ بقي **63 ظهورًا لفحوص غير حاسمة تشمل148 ظهورًا لعقد**. غير الحاسم ليس مخالفة مثبتة أو شهادةWCAG؛ لا نجعل مراجعًا بشريًا شرطًا للمتابعة.
+- النماذج: المحاولة الأولى نجحت عند1440 ثم انتهت مهلةfilechooser عند390 (السطر48). **إعادة المجموعة منفردة نجحت عند1440 و390**، بما يشمل الحفظ والتصدير والاستيراد والمسودات. السبب المتقطع غير مشخص وغير مُصلح؛ لا نحذف النتيجة الأولى من السجل.
+- العرض الضيق: **126 حالة**؛63 عند320×900 و63 عند568×320، تشمل كل الدروس والتفريغات والجداول. تغييرviewport ليس تكبير نظام أو تجربة جهاز فعلي.
+- الحفظ مقابل `59dd2c9490f1f0636271c6158a5f6472067de168`: **52 درسًا آخر و1060 صف كتالوج آخر** لم تتغير؛ **27 نص خيار** محفوظة، وثلاثة خيارات Q07 صُححت، مع بقاء فهارس الإجابات العشرة.
+- playlist مطابق بايتًا ببايت و**474MP3** طابقت بصماتGit السابقة؛ أربعة صفوفA2.3 فيaudio-register تغيرت في **source_line/source_heading فقط**. بقية213 صفًا وحقول الروابط والحالات محفوظة؛ Narrator/Salma/Kellnerin02 وGast03 وErzählperson03. لا استماع أو توليد أو اعتماد جديد.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR21 / A2.3،2026-10-08
+
+- الفرع `arena/01a1036f-deutschlern` فقط؛خط أساس الحفظ `59dd2c9490f1f0636271c6158a5f6472067de168`. استُعيدتmetadata بعد مقارنة683 ملفًا معorigin وتطابقها كلها وصفر إضافات،ثمreset --mixed دون حذف عمل؛لا تكرر دون مقارنة جديدة.
+- المصدر والتقييم `content/A2/lesson-03-food-nutrition-shopping.md/.assessment.json` إلى `a2-03-v2`: ضبط وحدات الوزن والعبوات وWie viel/Wie viele وman؛T01.3 صار1000غرام،T03 مصادر محددة بدل بنك ملتبس،T05 فهم الطلب الأول،T06 نفي صريح للسبت بدل استنتاج عدم زيارة متجر،T07 بنك. تصحيح حبات الخيار فيQ07 مع تغيير خياراته الثلاثة فقط؛فهارس الإجابة و80% محفوظة. Q09→T04 وQ10→T03.
+- T08أ/P01 قائمة أربعة أصناف وسؤال،كتابة فقط،حد90؛T08ب/P02 أربعة أدوار وتعليقman مع الجهر،حد150. نموذجان مطابقان؛لا شريك أو تسجيل،ولا تصحيح آلي للغة أو النطق. التسجيلات القائمة دون تغيير أو توليد أو استماع أو اعتماد جديد:4أصول/10مقاطع.
+- بقية الملفات: `data/course.json`(1,892,977 بايت)،20صفًا فيcatalog،حقلاsource_line/source_heading فقط لأربعة صفوفaudio-register،cachev68 واختباراه،progression/accessibility_audit،والحارس `tools/test_a2_03_review.py`. لا تعديلapp.js/CSS/playlist/MP3.
+- PASS:build/verify،الحارس implementation-only،5مجموعاتNode(progression،service_worker،session_persistence،study_time،daily_plan)،diff. المتصفح والسجل التفصيلي والحفظ الشامل لم يُنجزوا بعد؛لا ننسب نتائجهم مسبقًا.
+- قُرئت11صفحة مرجعية كاملة: Lingolia Indefinitpronomen/Konjunktiv/Hauptsätze؛Duden Gramm/Kilo/vegetarisch/regional/Linse؛Deutsch mit Anna Indefinitpronomen؛Studyflix wie viel؛Deutsche Grammatik2.0 Nicht zählbare Nomen. رابطDuden/man أعاد404 واستُبعد. القراءات تدعم نقاطها المحددة لا شهادة مستوى أو موافقة ناشر.
+- تُرفع المجموعة فور فحصها بعنوان `Align A2.3 quantity and restaurant tasks (CR21)`؛معرفها فيgit log بعد الدفع. الحملة تبقى19/53 والبوابة منفصلة إلى توثيق السجل؛التالي سجل كل وحدة وفحوص الحفظ والمتصفح والحراس ثم تحديث الحملة.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا دمجPR#1 ولا تغيير فرع،ولا إعادة توليد أو إخفاء تسجيل أوready/نهائي بلا موافقة؛حد10طلبات صوت/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميته.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع — CR20 / 2026-10-08
+
+- رُفعت دفعة التنفيذ **80114c432efee43ff1b642ab0b2867bf7eef13ab** ودفعة السجل والفحوص **f1743cc82d6c208d4624f1ad9c7adc113d5a9941** فور فحص كل مجموعة. تطابقHEAD مع`git ls-remote` لكل منهما على`arena/01a1036f-deutschlern`،وكانت مساحة العمل نظيفة بعد دفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) **OPEN** و`mergedAt=null`،ورأسهf1743cc عند التحقق. لا دمج أو تغيير فرع أو إعلان اكتمال المنهج.
+- إشارتاVercel للتنفيذ والسجل **success**. سجل نشر السجل **6940561237**: **Preview / success**،ورابطه https://deutschlern-owrbg0fgz-balinader-2671s-projects.vercel.app . هذا تحقق بيانات نشر فقط؛لم تُجلب الحزمة من المعاينة ولم تُختبر واجهتها عن بُعد،ولا نشر إنتاج مدّعى.
+- الحزمة **1,880,848 بايت** والمخزن **v67**. PASS:20 حارسًا و5 مجموعاتNode و5 متصفح،مع البناء والتحقق والحفظ والصياغة وdiff.141 وحدة و30 بندًا/مطلبًا و8 مراجع كاملة. الاختبارات لا تمنح شهادة لغة أو نطق أوWCAG؛التسجيلات دون توليد أو استماع أو اعتماد جديد.
+- الحملة **19/53 درسًا** والبوابة منفصلة؛تبقى **34 درسًا**. التالي **CR21/A2.3 — الطعام والتغذية والشراء والمطعم**. الملفات والفحوص والقرارات مفصلة أدناه؛لا مراجع بشري شرطًا للمتابعة،وكل تعديل لاحق يُرفع فور فحص مجموعته.
+- هذا الإيصال تغيير توثيقي منفصل بعنوان`Record CR20 push and Preview delivery receipt`؛معرفه فيgit log بعد الدفع. لا ننسب إليه إشارةVercel الخاصة بالدفعات السابقة،ولا يلزم تكرار إيصالCR20 في الجولة التالية.
+
+## أحدث حالة — CR20،2026-10-08
+
+رُوجع **A2.2 — الرحلات والأماكن والمقارنة** في **141 وحدة و30 بندًا أو مطلبًا**،مع8 مراجع كاملة. ضُبطت المقارنة والتساوي والنفي والتفضيل،وفُرق بينdenn للسبب وdeshalb للنتيجة،وصُححت روابط التقييم والكتالوج. **P01/T08 أربع جمل مع الجهر من جدول خيالي**؛**P02/T07 أربع جمل كتابة فقط من الحوار**،بمعايير ونموذجين مطابقين. أوقات الرحلات بيانات تدريب لا جدول حالي،ولا يحول التقريب إلى فرق دقيق بالدقائق. الإصدار`a2-02-v2` والمخزن`v67`؛80% والخيارات الثلاثون وفهارس المفاتيح محفوظة. خمسة أصول/10 مقاطع دون تغيير أو استماع أو توليد أو اعتماد جديد. **الحملة19/53 درسًا والبوابة منفصلة؛تبقى34 درسًا،والتاليA2.3.** سجل مراجعة وفحوص،لا شهادة مستوى أو إعلان دمج.
+
+## الملفات والرفع والخطوة التالية
+
+- `content/A2/lesson-02-travel-comparisons.md/.assessment.json`،و`data/course.json`،و20 صفًا في`data/production-task-catalog.csv` وخمسة صفوف مرجعية فقط في`data/audio-asset-register.csv`؛لا تغييرplaylist أوMP3.
+- `service-worker.js`v67 واختباراهservice_worker/accessibility_update،وتوسعةprogression وaccessibility_audit،والحارس`tools/test_a2_02_review.py`. لا تعديلapp.js أوCSS.
+- `data/reviews/a2-02-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.26 وتقرير المتصفح وملفا التسليم.
+- رُفع التنفيذ **80114c432efee43ff1b642ab0b2867bf7eef13ab** وتطابق معorigin؛إشارةVercel success بيانات فقط،لا اختبار واجهة أو حزمة عن بُعد أو نشر إنتاج. دفعة السجل والفحوص بعنوان`Record CR20 granular A2.2 review and cumulative checks`؛معرفها فيgit log بعد دفعها،ثم يوثق إيصالها.
+- PR#1 مفتوح وغير مدمج ورأسه80114c4 عند التحقق. الفرع الوحيد`arena/01a1036f-deutschlern`،لا تبديل أو دمج. خط أساس الحفظf158d32؛استردادmetadata تم بعد تطابق680 ملفًا وصفر إضافات،لاreset أعمى أو حذف عمل.
+- التالي **CR21/A2.3 — الطعام والتغذية والشراء والمطعم**: راجع كل نص وحوار وتمرين ومهمة بالمراجع وأصلح ما يظهر. اقرأ أحدث إيصال أولًا؛لا تكررCR20 أو تولد صوته من جديد.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا إعادة توليد أو إخفاء أو تغيير صوت أوready/نهائي بلا موافقة. حد10 طلبات توليد/رد؛B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR20
+
+- PASS:build/verify؛الحزمة **1,880,848 بايت** وcachev67.53 درسًا،428 عنوان تمرين،55 قسم حوار،754 مفردة،530 سؤال درس و10 للبوابة،109 مهام أداء،1080 معرّفًا في الكتالوج.217 أصلًا صوتيًا/474 مقطعًا،137ready و80pending. سلامة البنية لا تعني مراجعة مفصلة لكل الدروس.
+- PASS: **20 حارس مراجعة** تشملA0.1–5 والبوابة وA1.1–12 وA2.1–2. الحارس الجديد يطابق141 وحدة و30 بندًا والمصادر والبصمات والمفاتيح والكتالوج والمهمتين وأدوار الحوار وجدول الرحلة؛ليس مصححًا مستقلًا للألمانية.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan،وصياغةJavaScript وdiff. لا تغييرapp.js أوCSS.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout علىChromium143.0.7499.0. مكتباتal2023 المستعملة من حزمةChromium خارجGit؛المتصفح آلي وصامت،لا استماع أو اعتماد نطق.
+- العام:1440×900 و390×844،التنقل وRTL والتفريغ وتشغيل MP3 بسرعة1 و0.8 وإيقافه عند التنقل،والعمل دون اتصال ونطاقات البايت. لا هاتف فعلي أو ضمان تخزين الصوت كله دائمًا.
+- تحديثfixture عامل الخدمةv42→v67 نجح دون تحديث قسري،مع حفظ التقدم والإجابة وعزل المخازن. قد يلزم فتح التسجيل مع الاتصال لإعادة تخزينه بعد إزالة مخزن قديم.
+- progression يتحقق من بقاء تاريخv1 دون اعتباره إتقانv2 أو فتحA2.3،ورفض مسودته القديمة،وقبولv2 مع80% ودليل الأداء. النموذجان يمران بالطول؛P01 يرفض غياب الجهر،P02 لا يعرض شرطه؛المربعات الناقصة والإجابة القصيرة لا تمر. هذا تحقق إقرارات لا تصحيح اللغة أو النطق.
+- axe-core4.11.0: **93 حالة ممثلة وصفر مخالفات للقواعد الآلية المختارة**،مع **60 ظهورًا لفحوص غير حاسمة تشمل142 ظهورًا لعقد**. غير الحاسم ليس نجاحًا شاملًا أو مخالفة مثبتة؛لا شهادةWCAG ولا شرط مراجع بشري.
+- النماذج:PASS من أول تشغيل للمجموعة عند1440 و390،مع الحفظ والتصدير والاستيراد والمسودات. تذبذبfilechooser التاريخي لم يتكرر؛سببه غير مشخص ولا ندعي إصلاحه.
+- العرض الضيق: **126 حالة**،63 عند320×900 و63 عند568×320،تشمل كل الدروس والتفريغ والجداول ومنها جدولT08. تغييرviewport لا تكبير نظام أو جهاز هاتف فعلي.
+- الحفظ مقابل`f158d32dd783d3aae19593d6928673e8552d84c7`: **52 درسًا آخر و1060 صف كتالوج آخر** لم تتغير. الخيارات الثلاثون وفهارس إجاباتA2.2 العشرة محفوظة.
+- playlist مطابق بايتًا ببايت و**474MP3** طابقت بصماتGit السابقة. خمسة صفوفA2.2 فيaudio-register تغيرت في **source_line/source_heading فقط**؛212 صفًا آخر وبقية الحقول والروابط والحالات محفوظة. PHR/MODEL/READ02،Lea02/Ben03 بالتناوب،LST03؛لا مراجعة سمعية جديدة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR20 / A2.2، 2026-10-08
+
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛ خط الأساس`f158d32dd783d3aae19593d6928673e8552d84c7`. عادتmetadata إلى88f3c06؛قورنت680 ملفًا معorigin فطابقت كلها بصفر إضافات،ثمreset --mixed دون حذف عمل. لا تكرر الاسترداد دون مقارنة جديدة.
+- المصدر والتقييم`content/A2/lesson-02-travel-comparisons.md/.assessment.json` إلى`a2-02-v2`: ضبط المقارنة والتساوي والنفي والتفضيل،وتوسعة جدول الصيغ،وقيدdenn/deshalb وموقع الفعل. أوقات السفر والراحة بيانات تدريب لا جدول حالي؛fast ليسوقتًا دقيقًا،وungefähr تقدير قد يزيد أو ينقص. أضيفت كلماتPHR/MODEL نفسها إلى المصدر دون تغيير تسجيلاتها.
+- T04 كتل واضحة ببدايات محددة،T06 بنك وأربعة بنود منفصلة. P01→T08: جدول خيالي لثلاث وسائل،أربع جمل تشمل المقارنة والتساوي والتفضيل والاختيار مع الجهر. P02→T07: أربع جمل كتابة فقط للاختيار من الحوار وdenn/deshalb. كلاهماحد130،بدون تسجيل أو شريك؛النماذج والمعايير والمصدر متطابقة. الطول والإقرار ليسا تصحيحًا لغويًا.
+- Q05→T07 بدلT04؛Q09/Q10 فيالكتالوج صُححا إلىT05/T03 مطابقين للتقييم. الخيارات الثلاثون وفهارس المفاتيح العشرة و80% محفوظة. خمسة أصول/10 مقاطع محفوظة بالكلمات والأصوات والمسارات والحالات؛لا استماع أو توليد أو اعتماد جديد.
+- الملفات الأخرى:`data/course.json`(1,880,848 بايت)،20 صفًا بالكتالوج،source_line/source_heading فقط لخمسة صفوفaudio-register،cachev67 واختباراه،progression وaccessibility_audit،والحارس`tools/test_a2_02_review.py`. لا تغييرapp.js أوCSS أوplaylist أوMP3.
+- PASS فعلي:build/verify،الحارس بوضعimplementation-only،خمس مجموعاتNode وdiff. المتصفح والسجل الفردي والحفظ الشامل لم ينجزوا بعد؛لا ندعي نتائجهم مسبقًا.
+- قُرئت8 مراجع كاملة: LingoliaAdjektive (جزآن)/Konjunktionen/Hauptsätze،وDuden günstig/Verbindung(جزآن)/Pension/fast/ungefähr_schaetzungsweise_rund. رابطsteigerung الفرعي ورابطungefähr العام أعادا محتوى404؛استُبعدا واستُعملت الصفحات الصحيحة. نتائجالبحث الاستكشافية ليست مراجع مقروءة مستقلة.
+- تُرفع الدفعة فور الفحص بعنوان`Align A2.2 comparison tasks and connector evidence (CR20)`؛معرفها فيgit log بعد الدفع. الحملة18/53 والبوابة منفصلة حتىتوثيقA2.2؛لا دمجPR#1. التالي:سجل كل وحدة،20 حارسًا،المتصفح والحفظ ثم التوثيق والإيصال.
+- القرارات ثابتة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للاستمرار. لا إعادة توليد أو إخفاء أو تغيير صوت أوready/نهائي بلا موافقة. حد10 طلبات توليد/رد؛B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع — CR19 / 2026-10-08
+
+- رُفعت دفعة التنفيذ **39f04f87fceedf2a5016607a7b86392a23fd2b71** ودفعة المراجعة والفحوص **6059122e6039470939ba51fb0994de66a830266c** فور فحص كل مجموعة. تطابقHEAD مع`git ls-remote` لكل منهما على`arena/01a1036f-deutschlern`،وكانت مساحة العمل نظيفة بعد دفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) **OPEN** و`mergedAt=null`،ورأسه6059122 عند التحقق. لا دمج أو تغيير فرع أو إعلان اكتمال المنهج.
+- إشارةVercel للتنفيذ39f04f8 **success**؛إشارة دفعة المراجعة6059122 **pending** عند التحقق،ولم يُرجع استعلام النشر سجلDeployment لهذه الدفعة حينها. لا ندعي نجاح نشرها أو نشراً إنتاجيًا،ولم تُجلب حزمة معاينة عن بُعد أو تُختبر واجهتها. استمرار مراجعة المحتوى لا يتوقف على هذه الإشارة.
+- الحزمة **1,867,423 بايت** والمخزن **v66**. PASS:19 حارسًا و5 مجموعاتNode و5 متصفح،مع البناء والتحقق والحفظ والصياغة وdiff.125 وحدة و37 بندًا/مطلبًا و9 مراجع كاملة؛الاختبارات لا تمنح شهادة لغة أو نطق أوWCAG.
+- الحملة **18/53 درسًا** والبوابة منفصلة؛تبقى **35 درسًا**. التالي **CR20/A2.2 — الرحلات والأماكن والمقارنة**. ملفات التسليم والفحوص والتغييرات مفصلة أدناه. لا مراجع بشري شرطًا للمتابعة،ولا استماع أو توليد أو اعتماد صوتي جديد؛كل تعديل لاحق يُرفع فور فحص مجموعته.
+- الإيصال نفسه تغيير توثيقي منفصل بعنوان`Record CR19 push receipt and deployment status`؛معرفه فيgit log بعد الدفع. لا ننسب إليه إشارةVercel الخاصة بالدفعات السابقة،ولا يلزم إيصال آخر لمجرد تغيرpending لاحقًا.
+
+## أحدث حالة — CR19،2026-10-08
+
+رُوجع **A2.1 — الحياة اليومية والقدرات والتجارب** في **125 وحدة و37 بندًا أو مطلبًا**، مع9 مراجع كاملة. صُحح معنى **vor**: وقت سابق لا دليل انتهاء النشاط؛ وأضيف شرحDativ وseitdem والفصل وPerfekt. صُححت روابط الأسئلة والكتالوج ودليل القراءة وترتيب التدريب. **T08أ/P01 أربع جمل مع الجهر**، و**T08ب/P02 أربع جمل كتابة فقط**، بمعايير ونموذجين مطابقين. الإصدار`a2-01-v2` والمخزن`v66`؛ عتبة80% وفهارس المفاتيح محفوظة،وتغير نص الخيار الصحيحQ01 فقط. خمسة أصول/10 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد. **الحملة18/53 درسًا والبوابة منفصلة؛تبقى35 درسًا،والتاليA2.2.** هذا سجل مراجعة وفحوص،لا شهادة مستوى أو إعلان دمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم`content/A2/lesson-01-routines-abilities-experiences.md/.assessment.json`،و`data/course.json`،و20 صفًا في`data/production-task-catalog.csv` وخمسة صفوف مرجعية في`data/audio-asset-register.csv`؛لا تغييرplaylist أوMP3.
+- `service-worker.js`v66 واختباراهservice_worker/accessibility_update،وتوسعةprogression وaccessibility_audit،والحارس`tools/test_a2_01_review.py`. لا تعديلapp.js أوCSS.
+- `data/reviews/a2-01-review.json/.md` وفهرس المراجعات وREADME وPROGRESS وخطة التحسين2.25 وتقرير المتصفح وملفا التسليم.
+- رُفع التنفيذ **39f04f87fceedf2a5016607a7b86392a23fd2b71** وتطابق معorigin؛حالةVercel success بيانات فقط،لا اختبار معاينة عن بُعد أو نشر إنتاج. دفعة السجل والفحوص بعنوان`Record CR19 granular A2.1 review and cumulative checks`؛معرفها فيgit log بعد دفعها،ثم يسجل إيصالها.
+- PR#1 مفتوح وغير مدمج ورأسه39f04f8 عند هذا التحقق. الفرع الوحيد`arena/01a1036f-deutschlern`؛لا تبديل أو دمج. استردادmetadata تم بعد تطابق677 ملفًا وصفر إضافات،لاreset أعمى أو حذف عمل. خط أساس الحفظ17fe5b8.
+- التالي **CR20/A2.2 — الرحلات والأماكن والمقارنة**: مراجعة كل نص وحوار وتمرين ومهمة بالمراجع وإصلاح ما يظهر. اقرأ أحدث إيصال أولًا؛لا تكررCR19 أو تولد تسجيلاته.
+- القرارات مستمرة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. لا إعادة توليد أو إخفاء أو تغيير صوت أوready/نهائي بلا موافقة. حد10 طلبات توليد/رد؛B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR19
+
+- PASS:build/verify؛الحزمة **1,867,423 بايت**،وcachev66.53 درسًا،428 عنوان تمرين،55 قسم حوار،754 مفردة،530 سؤال درس و10 للبوابة،109 مهام أداء،1080 معرّفًا في الكتالوج.217 أصلًا صوتيًا/474 مقطعًا،137ready و80pending. هذا تحقق بنية لا مراجعة تفصيلية للدروس غير المسجلة.
+- PASS: **19 حارس مراجعة**:A0.1–5 والبوابة وA1.1–12 وA2.1. الحارس الجديد يتحقق من125 وحدة و37 مطلبًا والبصمات والمفاتيح والمصدر والكتالوج والأصوات والعرض،لا صحة لغوية مستقلة.
+- PASS: **5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan،وفحوص صياغةJavaScript وdiff. fixtureA2.1 المنسوخ أخفق أولًا بسبب عكس مؤشر الجهر منA1.12؛صُححت بيانات الاختبار وأعيدت المجموعات كلها بنجاح. لا تعديلapp.js أوCSS ولا ادعاء خطأ تطبيق غير مثبت.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout علىChromium143.0.7499.0. استُخدمت مكتباتal2023 المناسبة من حزمةChromium خارجGit؛المتصفح آلي وصامت،لا مراجعة سمعية.
+- العام:1440×900 و390×844،التنقل والتفريغ وRTL وتشغيل MP3 بسرعة1 و0.8 وإيقافه عند التنقل،والعمل دون اتصال ونطاقات البايت. لا جهاز هاتف فعلي أو اعتماد نطق.
+- تحديثfixture عامل الخدمةv42→v66 نجح دون تحديث قسري،مع حفظ التقدم والإجابة وعزل المخازن. قد يلزم فتح الصوت مع الاتصال لإعادة تخزينه؛لا ضمان ببقاء جميع التسجيلات دائمًا.
+- progression يختبر بقاء تاريخv1 دون منحه إتقانv2 أو فتحA2.2،ورفض المسودة القديمة،وقبولv2 مع80% ودليل الأداء. P01 يتطلب إقرار الجهر،P02 لا يعرض شرط الجهر؛النموذجان يمران بالطول ولا تكفي إجابة قصيرة أو مربعات ناقصة. هذه شروط وإقرارات لا تصحيح لغة أو نطق.
+- axe-core4.11.0: **89 حالة ممثلة،صفر مخالفات للقواعد الآلية المختارة**،مع **57 ظهورًا لفحوص غير حاسمة تشمل136 ظهورًا لعقد**. غير الحاسم ليس مخالفة مثبتة أو نجاحًا شاملًا؛لا شهادةWCAG ولا شرط مراجع بشري.
+- النماذج:PASS من أول تشغيل عند1440 و390،بما فيها الحفظ وإعادة التحميل والتصدير والاستيراد والمسودات. تذبذبfilechooser التاريخي لم يتكرر؛سببه غير مشخص ولا ندعي إصلاحه.
+- العرض الضيق: **126 حالة**،63 عند320×900 و63 عند568×320؛كل الدروس والتفريغ والجداول. تغييرviewport لا تكبير نظام أو اختبار هاتف فعلي.
+- الحفظ مقابل`17fe5b87e7a3eed76e3c9b7a5bf792213df521ca`: **52 درسًا آخر و1060 صف كتالوج آخر** دون تغيير. فهارس إجاباتA2.1 العشرة و29 خيارًا محفوظة؛تغير فقط نصQ01[0] لإزالة ادعاء انتهاء الدورة.
+- ملفplaylist مطابق بايتًا ببايت،و**474MP3** طابقت بصماتGit السابقة. خمسة صفوفA2.1 فيaudio-register تغيرت في **source_line/source_heading فقط**؛212 صفًا آخر وبقية الحقول والروابط والحالات محفوظة. أصواتA2.1:PHR/MODEL/READ02،الحوارKarim03/Nour02،LST03؛لا استماع أو موافقة جديدة.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR19 / A2.1، 2026-10-08
+
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛ خط الأساس`17fe5b87e7a3eed76e3c9b7a5bf792213df521ca`. استردادmetadata في البداية جاء بعد مقارنة677 ملفًا معorigin وصفر اختلافات وإضافات،ثمreset --mixed دون حذف عمل. لا تكرر الاسترداد دون مقارنة جديدة.
+- المصدر والتقييم`content/A2/lesson-01-routines-abilities-experiences.md/.assessment.json` إلى`a2-01-v2`: vor وقت سابق لا دليل انتهاء النشاط؛Dativ وMonaten وseitdem الظرفية،وفصلteil عنan،وضبطPerfekt والترتيب. تغير نص الخيار الصحيحQ01 فقط؛الفهارس العشرة و29 خيارًا آخر و80% ثابتة. Q02→T01؛صُححت أرقام روابط الكتالوج،بما فيهاQ10→T06.
+- T05 محدد البداية وله بند رابع،T06 له تناقض ساعة صريح وبندان للبدء وseitdem،T07 بنك وأربعة بنود مرئية. T08أ/P01 أربع جمل مع الجهر وحد120؛T08ب/P02 أربع جمل كتابة فقط وحد130 معteilnehmen وتكرار الحضور. لكل مسار نموذج ومعايير مطابقان؛لا تصحيح آلي للغة أو النطق أو معلومات شخصية أو تسجيل مطلوب.
+- أُدرجت كلماتPHR/MODEL الموجودة في المصدر لأن بعض أمثلتها لا تطابق أمثلة الشرح حرفيًا؛أمثلة مستقلة لا قصة أو نموذج كامل للمهمتين. خمسة أصول/10 مقاطع محفوظة بكل الكلمات والأصوات والمسارات والحالات؛لا توليد أو استماع جديد. صُححتsource_line/source_heading لخمسة صفوف فقط فيaudio-register،والكتالوج20 صفًا. الحوار ستة أدوار منفصلة العرض.
+- الملفات الأخرى:`data/course.json`(1,867,423 بايت)،`service-worker.js`v66 واختباراه،progression وaccessibility_audit والحارس`tools/test_a2_01_review.py`. لا تعديلapp.js أوCSS. PASS:build/verify والحارس بوضعimplementation-only وخمس مجموعاتNode وdiff. fixture جديد فشل أولًا لأن أدوار الجهر كانت منسوخة بالعكس؛صُحح الاختبار ونجح،لا إخفاء لخطأ تطبيق.
+- قُرئت9 مراجع كاملة: Lingolia temporal/Perfekt/modalverben/Hauptsätze/trennbare/Deklination،وDuden anfangen/teilnehmen/seitdem_seither_von_da_an. رابطاDudenseitdem العام وAdverb أعادا404،ورابطDativ الفرعي تعطل؛استُعملت الصفحات الفعلية بدلها. لا نعتمد تقييدum إلى12 فيصفحةtemporal ولا وسمKleid المؤنث الخاطئ فيصفحةDeklination؛النطاق المراجعseit/vor وجدولDativ.
+- تُرفع الدفعة فور الفحص بعنوان`Correct A2.1 temporal meaning and align performance tasks (CR19)`؛معرفها الفعلي فيgit log بعد الدفع. الحملة17/53 والبوابة منفصلة حتى تسجيلA2.1 وفحوصه؛لا دمجPR#1. التالي:السجل الفردي،19حارسًا،المتصفح والحفظ الشامل ثم التوثيق والإيصال.
+- قرارات ثابتة:كل تعديل يُرفع فور فحص مجموعته؛المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة. حفظ الأصوات والروابط والحالات وعدم إعادة التوليد أو الإخفاء أوready/نهائي بلا موافقة؛حد10 طلبات توليد/رد. B1.9/B1.10 معلقان واختيارB1.11 محفوظ؛احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع — CR18 / 2026-10-08
+
+- رُفعت الدفعات فور فحص مجموعاتها: التنفيذ **e00059f33895a0d2fb2cfd8c9a06e993cbe395b0**، وسجل المراجعة والفحوص **d9a438f47adc8f67081114a8c3628839e1dc9a37**، وتصحيح عرض كتل الرسالة **16bc95404327a4d776dc19963c6055e17eaa3597**. تطابقHEAD مع`git ls-remote` لكل منها على`arena/01a1036f-deutschlern`،وكانت مساحة العمل نظيفة بعد دفع المتابعة.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) **OPEN** و`mergedAt=null`،ورأسه16bc954 عند التحقق. لا دمج أو تغيير فرع؛لا نسمي الدفعة مندمجة أو المنهج مكتملًا.
+- إشاراتVercel للدفعات الثلاث **success**. سجل النشر **6939745081** للمتابعة16bc954: **Preview / success**،ورابطه https://deutschlern-fgabsdbcp-balinader-2671s-projects.vercel.app . هذا تحقق بيانات نشر فقط؛لم تُجلب الحزمة من المعاينة ولم تُختبر واجهتها عن بُعد،ولا نشر إنتاج مدّعى.
+- الحزمة الحالية **1,855,737 بايت** والمخزن **v65**؛أعيدت18 مجموعة حراس و5 مجموعاتNode و5 متصفح بعد تصحيح العرض،كلهاPASS بالحدود أدناه. 120 وحدة و34 بندًا/مطلبًا؛9 مراجع كاملة؛52 درسًا آخر و474MP3 محفوظة.
+- الحالة **17/53 درسًا** والبوابة منفصلة؛تبقى **36 درسًا**. التالي **CR19/A2.1**. لا مراجع بشري شرطًا للمتابعة،ولا استماع أو توليد أو اعتماد صوتي جديد،ولا إعادة توليد الموجود. كل تعديل لاحق يُرفع فور فحص مجموعته.
+- هذا الإيصال تغيير توثيقي منفصل بعنوان`Record CR18 push and Preview delivery receipt`؛معرفه فيgit log بعد دفعه. لا ننسب إليه إشارةVercel أو معاينة المتابعة السابقة.
+
+## متابعة العرض — CR18 / 2026-10-08
+
+رُفعت دفعة السجل **d9a438f47adc8f67081114a8c3628839e1dc9a37** وتطابقت معorigin. كشف فحصHTML لاحق أن كتلT04 الأربع تندمج في فقرة واحدة رغم أسطرMarkdown؛فُصلت بفقرات مستقلة دون تغيير كلماتها أو ترتيب المفتاح. صُححت أسطر الكتالوج التالية،وبصمة المصدر وسجلT04،وأضيف حارس يؤكد ظهور الفقرات الأربع. أعيد بناء الحزمة إلى **1,855,737 بايت**،وارتفع المخزن إلى **v65** مع اختبارَيه.
+
+PASS أُعيد بعد التصحيح:build/verify،18 حارسًا،5 مجموعاتNode،5 متصفح،الحفظ الكامل وصياغةJavaScript وdiff. axe85/صفر مخالفات مختارة/54 فحصًا غير حاسم و130 عقدة؛العرض الضيق126 حالة. لم يتغير أي صوت أو52 درسًا آخر أوخيارات ومفاتيحA1.12. عدلنا المصدر والكتالوج والحزمة والحارس واختباري المخزن وJSON/MD للمراجعة ومؤشراتREADME/PROGRESS/الخطة/تقرير المتصفح وملفي التسليم. لا تعديلapp.js أوCSS؛ثلاثة صفوفaudio-register فقط تغيرت في الدفعة الأولى،لا أربعة.
+
+تُرفع هذه المتابعة فور فحصها بعنوان`Separate A1.12 invitation fragments in rendered exercise`؛معرفها فيgit log بعد الإنشاء. لا دمجPR#1. التالي إيصال الرفع ثمCR19/A2.1؛القرارات والحدود أسفل هذا المقطع ثابتة،ولا إعادة مراجعة صوتية أو توليد أو مراجع بشري مطلوب للاستمرار.
+
+## أحدث حالة — CR18، 2026-10-08
+
+رُوجع **A1.12 — رحلة قصيرة ومناسبات ودعوات** في **120 وحدة و34 بندًا أو مطلبًا**، مع9 مراجع كاملة. صُحح نطاق الأفعال الناقصة والفصل وتنسيق الرسالة وروابط التقييم. فُصل نموذج الاستماع عن تفاصيل القراءة دون تغيير التسجيل. **P01/T07 رد من جملتين كتابة فقط**، و**P02/T08 أربع جمل دعوة وجملتا قبول مع الجهر وتطابق اليوم والساعة والغرض**. الإصدار`a1-12-v2` والمخزن`v65`؛ عتبة80% والخيارات الثلاثون والمفاتيح محفوظة. أربعة أصول/11 مقطعًا دون استماع أو توليد أو اعتماد جديد. **الحملة17/53 درسًا والبوابة منفصلة؛ تبقى36 درسًا، والتاليA2.1.** هذا سجل مراجعة وفحوص لا شهادة مستوى أو إعلان دمج.
+
+## الملفات والرفع والخطوة التالية
+
+- المصدر والتقييم:`content/A1/lesson-12-trip-invitations.md/.assessment.json`، و`data/course.json`، و20 صفًا في`data/production-task-catalog.csv`، وثلاثة صفوف مرجعية في`data/audio-asset-register.csv`.
+- `service-worker.js`v65، واختباراservice_worker/accessibility_update، وتوسعةprogression وaccessibility_audit، والحارس`tools/test_a1_12_review.py`. لا تعديلapp.js أوCSS أوMP3 أوplaylist.
+- `data/reviews/a1-12-review.json/.md` وفهرس المراجعات،وREADME وPROGRESS وخطة التحسين2.24 وتقرير المتصفح وملفا التسليم.
+- دفعة التنفيذ **e00059f33895a0d2fb2cfd8c9a06e993cbe395b0** رُفعت وتطابقت معorigin؛Vercel success في بيانات الحالة فقط،لا اختبار معاينة عن بُعد أو نشر إنتاج. هذه دفعة السجل والفحوص بعنوان`Record CR18 granular review and cumulative checks`؛يحددgit log معرفها بعد دفعها،ثم يُسجل إيصالها.
+- PR#1 مفتوح وغير مدمج ورأسهe00059f عند هذا التحقق. الفرع الوحيد`arena/01a1036f-deutschlern`؛لا تبديل فرع أو دمج. خط أساس الحفظ73bc64e؛استردادmetadata في بداية العمل تم فقط بعد674 ملفًا مطابقًا وصفر إضافات،لاreset أعمى أو حذف عمل.
+- التالي **CR19/A2.1 — الروتين والقدرات والخبرات**: مراجعة كل نص وحوار وتمرين ومهمة فرديًا بالمراجع وتصحيح ما يظهر. لا تكرار مراجعةCR18 ولا إعادة توليد صوته؛راجع إيصال الرفع في الأعلى أولًا.
+- قرارات مستمرة: كل تعديل يُرفع فور فحص مجموعته،المحتوى والتقييم والتطبيق قبل الصوت،ولا مراجع بشري شرطًا للمتابعة. لا إخفاء تسجيلات أو تغيير أصوات أوready/نهائي بلا موافقة. حد10 طلبات توليد/رد؛B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## الفحوص وحدودها — CR18
+
+- PASS: البناء والتحقق؛ الحزمة **1,855,737 بايت**.53 درسًا،428 عنوان تمرين،55 قسم حوار،754 مفردة،530 سؤال درس و10 للبوابة،109 مهام أداء،1080 معرّفًا في الكتالوج؛217 أصلًا صوتيًا/474 مقطعًا،137ready و80pending. الجاهزية البنيوية ليست مراجعة تفصيلية لكل الدروس.
+- PASS: **18 حارس مراجعة** منA0.1 إلىA1.12 مع البوابة، و**5 مجموعاتNode**: progression/service_worker/session_persistence/study_time/daily_plan. فحوص الصياغة وgit diff --check ناجحة.
+- PASS: **5 مجموعات متصفح**: browser/accessibility_update/accessibility_audit/forms_keyboard/narrow_layout، علىChromium143.0.7499.0. فشل التشغيل الأول لغيابlibnspr4.so من بيئة التشغيل؛ استُخرجت مكتباتal2023 المصاحبة ثم نجحت المجموعات الخمس. هذا إصلاح بيئة الاختبار لا خطأ تطبيق جرى إخفاؤه.
+- المتصفح العام:1440×900 و390×844؛ التنقل وRTL والتفريغ والتشغيل الآلي بسرعة1 و0.8 وإيقاف الصوت عند التنقل، والمخزن وMP3 ونطاقات البايت دون اتصال. المتصفح صامت، فلا يعد استماعًا أو فحص نطق.
+- تحديث عامل الخدمة منfixturev42 إلىv65 بلا تحديث قسري، مع حفظ التقدم والإجابة وعزل المخازن. قد يلزم فتح الصوت مع الاتصال لإعادة تخزينه؛ لا ضمان بقاء كل المقاطع دائمًا.
+- VM فيprogression يختبر الاحتفاظ بتاريخv1 دون منحه إتقانv2 أو فتحA2.1، ورفض مسودته القديمة، ثم قبولv2 بعد80% ودليل الأداء. نموذجاP01 يمران بالطول دون جهر؛P02 يرفض غياب إقرار الجهر. هذه فحوص شروط وإقرارات لا تصحيح ألمانية أو نطق.
+- axe-core4.11.0: **85 حالة ممثلة، صفر مخالفات للقواعد الآلية المختارة**، و**54 ظهورًا لفحوص غير حاسمة تشمل130 ظهورًا لعقد**. لا تُعد النتائج غير الحاسمة مخالفات مثبتة أو نجاحًا شاملًا، ولا شهادةWCAG أو شرط مراجع بشري.
+- النماذج: PASS من أول تشغيل للمجموعة عند1440 و390، للحفظ وإعادة التحميل والتصدير والاستيراد والمسودات. لم يتكرر تذبذبfilechooser التاريخي؛ سببه غير مشخص ولا ندعي إصلاحه.
+- العرض الضيق: **126 حالة**،63 عند320×900 و63 عند568×320. جميع الدروس والتفريغ والجداول ضمن الاختبار؛ ليس هاتفًا فعليًا أو تكبير نظام التشغيل.
+- الحفظ مقابل`73bc64ee4ebb8735c6aacca97175a96ced154db3`: **52 درسًا آخر و1060 صف كتالوج آخر** لم تتغير؛ جميع خيارات ومفاتيحA1.12 محفوظة، وplaylist مطابق بايتًا ببايت، و**474MP3** طابقت بصماتGit السابقة.
+- فُحصت مراجع الأصول الأربعة، لكن التغيير الفعلي محصور في **source_line/source_heading لثلاثة صفوف**:READ/LST/DLG؛PHR لم يتغير موضعه. بقية214 صفًا وكل الحقول الأخرى محفوظة. هذا يصحح تعبير «أربعة صفوف» في وصف دفعة التنفيذ الأولى؛ لا تغيير لأربعة أصول الصوت نفسها.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## دفعة التنفيذ — CR18 / A1.12، 2026-10-08
+
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛ خط الأساس`73bc64ee4ebb8735c6aacca97175a96ced154db3`. استرداد metadata جاء بعد مقارنة674 ملفًا مطابقًا للبعيد وصفر إضافات،ثمreset --mixed؛ لا حذف عمل أو تبديل فرع. لا تعاد العملية دون مقارنة جديدة.
+- صُحح`content/A1/lesson-12-trip-invitations.md` وتقييمه إلى`a1-12-v2`: قيد الأفعال الناقصة والمصدر والفصل،وفاصلة التحية والخاتمة،وبنكT06،وعدم تطابق تفاصيل القراءة والتسجيل. أضيف تدريب مباشر لـQ01/Q06/Q09؛Q07→T01 وQ09→T01 مع وسم معنى لا استماع مستقل. الخيارات الثلاثون والمفاتيح وعتبة80% محفوظة.
+- P01→T07 جملتان كتابة فقط:قبول وسؤال ناقص أو اعتذار وسبب مستقل،حد40؛P02→T08 أربع جمل دعوة وجملتا قبول متطابقتان في اليوم والساعة والغرض،حد160 والجهر بالجميع. لا تسجيل متعلم أو شريك أو معلومات شخصية مطلوبة. النماذج والربط والمعايير متسقة؛الطول والإقرار ليسا تصحيحًا لغويًا أو صوتيًا.
+- الملفات الأخرى:`data/course.json`(1,855,674 بايت)،20 صفًا بالكتالوج،source_line/source_heading لأربعة صفوف فيaudio-register فقط،cachev64 واختباراه،اختبارprogression لانتقالv1→v2 وفتحA2.1 بعد الدليل،وتوسعةaxe بحالتيA1.12،والحارس`tools/test_a1_12_review.py`. لم يتغيرapp.js أوCSS؛أربعة أصول/11 مقطعًا بنفس الكلمات والأصوات والروابط والحالات،لا استماع أو توليد جديد.
+- PASS فعلي:build،verify،الحارس بوضع`--implementation-only`،خمس مجموعاتNode(progression/service_worker/session_persistence/study_time/daily_plan)،وdiff. المتصفح والسجل الفردي والفحص التراكمي والحفظ الشامل لم ينجزوا بعد؛لا ندعي نتائجها مسبقًا.
+- قُرئت9 مراجع كاملة: LingoliaModalverben/trennbare/Fragen/Uhrzeit/Hauptsätze،Dudenmitkommen/mitbringen/freuen،وIDS6162 لتنسيق التحية والخاتمة. رابطDudenAnrede-in-Briefen أعاد404 فاستُبعد؛Uhrzeit نجح بعد إعادة جلب واحدة. التفاصيل ستسجل فيreview artifact.
+- هذه دفعة فُحصت ويليها دفع فوري بعنوان`Align A1.12 invitation tasks and preserve recorded models (CR18)`؛معرفcommit الفعلي فيgit log بعد إنشائه،وسيوثق في الدفعة التالية. لا دمجPR#1. الحملةمازالت16/53 والبوابة منفصلة حتى إنهاء السجل والفحوص؛A1.12 قيد المراجعة.
+- التالي:سجل كل وحدة وتمرين،كل الحراس والمتصفح،حفظ52 درسًا آخر و474MP3،ثم التوثيق والإيصال،قبلA2.1. لا مراجع بشري شرطًا للاستمرار؛كل تعديل يُرفع فور فحص مجموعته. المحتوى والتقييم والتطبيق قبل الصوت؛لا إخفاء أو إعادة توليد أو اعتماد جديد للتسجيلات. حد10 طلبات توليد/رد؛B1.9/B1.10 معلقان واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 بلا إعادة تسميتهB2.7.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## إيصال الرفع — CR17 / 2026-10-08
+
+- رُفعت ثلاث دفعات فور فحص كل مجموعة: التنفيذ **6244632b243939c3c7f2cbdaab94f75cdece0953**، وتصحيح أسطر المراجع **91dffc04d743da5a32657c5b7b85c4e7e29f9821**، وسجل المراجعة والفحوص **5fce28d859d55abfcc57ba160bfd8b2e39edada3**. تطابقHEAD مع`git ls-remote` لكل منها على`arena/01a1036f-deutschlern`؛ مساحة العمل نظيفة بعد دفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) مفتوح و`mergedAt=null`، ورأسه **5fce28d859d55abfcc57ba160bfd8b2e39edada3** عند التحقق. لم يُدمج ولم يتغير الفرع.
+- إشارتاVercel للتنفيذ وتصحيح المراجع ناجحتان؛ إشارة5fce28d كانتpending أولًا ثم أصبحتsuccess في استعلام لاحق. سجل نشرGitHub **6939285676** لدفعة5fce28d: بيئة **Preview** وحالة **success**، ورابطها https://deutschlern-hf9qxr6l7-balinader-2671s-projects.vercel.app . هذا تحقق بيانات نشر فقط؛ لم تُجلب الحزمة من المعاينة ولم تُختبر واجهتها عن بُعد، ولا نشر إنتاج مدّعى.
+- هذا الإيصال تغيير توثيقي منفصل بعنوان`Record CR17 push and Preview delivery receipt`؛ يحدده`git log` بعد دفعه. لا ننسب إليه إشارةVercel الخاصة بالدفعات السابقة.
+- الحالة: **16/53 درسًا** روجعت نصيًا في الحملة، والبوابة منفصلة؛ **37 درسًا متبقيًا**. التالي **CR18 / A1.12 — رحلة قصيرة ومناسبات ودعوات**. نجحت17 مجموعة حراس و5 مجموعاتNode و5 متصفح مع الحدود الموثقة. الكلمات والأصوات وMP3 والمسارات والحالات محفوظة؛ لا مراجع بشري شرطًا للمتابعة، وكل تعديل لاحق يُرفع فور فحص مجموعته.
+
+
+## أحدث حالة — CR17 / A1.11، 2026-10-08
+
+رُوجع **A1.11 — السكن والمنزل والاتجاهات** في **115 وحدة و 34 بندًا أو مطلبًا**، مع 9 مراجع كاملة. ضُبط شرح التنكير بعد es gibt، وحدود ترتيب الجملة وصيغ إعطاء الاتجاهات، ومفاتيح القراءة والاستماع. **T08/P01 أربع جمل كتابة فقط عن المسكن**، و**T07/P02 سؤال وثلاث تعليمات وجملة موقع مع الجهر**؛ لكل منهما تدريب مطابق ونموذج. الإصدار `a1-11-v2` والمخزن `v63`؛ عتبة 80% والخيارات الثلاثون وفهارس الإجابات محفوظة. ثلاثة أصول صوتية/7 مقاطع محفوظة بكلماتها وأصواتها ومساراتها وحالاتها؛ صُححت أسطر المصدر في ثلاثة سجلات فقط. **الحملة 16/53 درسًا والبوابة منفصلة؛ تبقى 37 درسًا، والتالي A1.12.** لا شهادة مستوى أو اعتماد صوت أو دمج مدّعى.
+
+## الملفات والخطوة التالية والقرارات المستمرة
+
+- `content/A1/lesson-11-home-directions.md` و`.assessment.json`، وإعادة توليد`data/course.json`، و 20 صفًا في`data/production-task-catalog.csv`؛3 صفوف مرجعية فقط في`data/audio-asset-register.csv`، دون تعديل playlist أو MP3.
+- `service-worker.js` v63 واختباراه`tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`؛ الحارس`tools/test_a1_11_review.py`، وتوسعة`tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`.
+- `data/reviews/a1-11-review.json/.md`، وفهرس المراجعات و README و PROGRESS وخطة التحسين 2.23 وتقرير المتصفح وملفا التسليم. لا تعديل app.js أو CSS في هذه الدفعة.
+- التالي **CR18 / A1.12 — رحلة قصيرة ومناسبات ودعوات**: مراجعة المصدر والتقييم والكتالوج وبيانات الصوت، ثم كل نص وحوار وتمرين بالمراجع وتصحيح ما يظهر. **كل إضافة أو تعديل يُرفع مباشرة بعد فحص مجموعته**؛ لا تأجيل الرفع لنهاية حملة طويلة، ولا مراجع بشري شرطًا للمتابعة. المحتوى والتقييم والتطبيق أولًا.
+- حفظ الأصوات والتسجيلات والمسارات والحالات؛ لا إعادة توليد أو إخفاء أو اعتماد غير مصرح به. حد 10 طلبات توليد/رد. معاينة B1.9 واعتماد B1.10 معلقان واختيار B1.11 محفوظ؛ احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون إعادة تسميته B2.7.
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛ خط الأساس`095d6b10200359d7979714da8badda9f39f18981`. رُفع التنفيذ`6244632b243939c3c7f2cbdaab94f75cdece0953`، وتحديث المراجع`91dffc04d743da5a32657c5b7b85c4e7e29f9821`، وتحقق تطابقهما مع origin. دفعة السجل5fce28d رُفعت وتحقق تطابقها مع البعيد، والإيصال أعلاه يوثقها؛ لا دمج PR#1 أو ادعاء نشر إنتاج.
+- أمان Git: الاسترداد في بداية CR17 جاء بعد تطابق 671 ملفًا مع origin وصفر اختلافات أو إضافات، ثم reset --mixed قبل أي تعديل. لا reset أعمى عند عودة المؤشر 88f3c06، ولا حذف أو تنظيف لعمل محلي أو تغيير فرع.
+
+## الاختبارات وحدودها — CR17
+
+- PASS: `python3 tools/build_course.py` و`python3 tools/verify_course.py`؛ الحزمة **1,844,030 بايت**.53 درسًا،428 عنوان تمرين،55 قسم حوار،754 مفردة؛530 سؤال درس و 10 للبوابة،106 مهام أداء و 3 للبوابة،1080 معرّفًا بالكتالوج. الجاهزية البنيوية لا تعني مراجعة كل الدروس تفصيليًا.
+- PASS: **17 حارس مراجعة** من A0.1 إلى A1.11 والبوابة. الحارس الجديد يثبت اتساق 115 وحدة و 34 مطلبًا والبصمات والمفاتيح والربط، لا صحة لغوية مستقلة أو اعتماد نطق.
+- PASS: **5 مجموعات Node**: `progression`, `service_worker`, `session_persistence`, `study_time`, `daily_plan`، وصياغة JavaScript و`git diff --check`.
+- PASS: **5 مجموعات متصفح** على Chromium143.0.7499.0: العام،تحديث عامل الخدمة ولوحة المفاتيح،axe،النماذج،والعرض الضيق. المتصفح آلي وصامت، لا استماع أو جهاز هاتف فعلي.
+- العام:1440×900 و 390×844؛ التنقل والتفريغ والمخزن وتشغيل MP3 ونطاقات البايت دون اتصال. تحديث fixture v42→v63 نجح دون تحديث قسري ومع حفظ التقدم والإجابة؛ قد يحتاج الصوت فتحه مجددًا مع الاتصال، ولا ضمان لتخزين كل الصوت دائمًا.
+- fixture التحديث يستخدم بيانات الدرس الحالية؛VM في progression اختبر بقاء سجل v1 وعدم كفايته لفتح A1.12 ورفض المسودة القديمة، وقبول v2 مع الإتقان ودليل الأداء. النموذجان يمران بحدود الطول، و P01 لا يفرض الجهر، و P02 يرفض غيابه. هذا تحقق إقرارات لا تصحيح لغوي أو صوتي.
+- axe-core4.11.0: **81 حالة ممثلة، صفر مخالفات للقواعد الآلية المختارة**، و**51 ظهورًا لفحوص غير حاسمة تشمل 124 ظهورًا لعقد**. التباين غير المحسوم لا يُعد مخالفة مثبتة أو نجاحًا شاملًا؛ لا شهادة WCAG ولا اشتراط مراجع بشري للمتابعة.
+- النماذج: نجاح من المحاولة الأولى عند 1440 و 390، بما فيها الحفظ والتصدير والاستيراد والمسودات. تذبذب filechooser التاريخي في CR14 لم يتكرر؛ السبب غير مشخص ولا ندعي إصلاحه.
+- العرض الضيق: **126 حالة**،63 عند 320×900 و 63 عند 568×320؛ كل الدروس والتفريغ والجداول. هذا تغيير viewport لا تكبير نظام أو اختبار هاتف فعلي.
+- الحفظ مقابل`095d6b10200359d7979714da8badda9f39f18981`: **52 درسًا آخر و 1060 صفًا آخر** لم تتغير، وكل خيارات ومفاتيح A1.11 محفوظة. **474 ملف MP3 طابق بصمات Git السابقة**، وملف playlist مطابق بالكامل، أي 217 أصلًا بنفس الكلمات والأصوات والمسارات والحالات.137ready و 80pending كما كانت.
+- تغير register محصور في source_line/source_heading لثلاثة صفوف A1.11؛214 صفًا آخر وروابط المهام والتشغيل محفوظة. أُضيف تحقق للأسطر كي لا تظل تشير إلى مواضع خاطئة بعد توسعة المصدر.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## متابعة المراجع المصدرية — CR17
+
+رُفعت دفعة التنفيذ6244632 وتطابقت معorigin. كشف فحص سجل الصوت أن أرقام أسطرA1.11 الثلاثة لم تعد تقود إلى عناوين أقسامها بعد توسعة الدرس. صُححت **source_line/source_heading فقط** لثلاثة صفوف فيaudio-register،وأضيف تحقق لها بالحارس. لا تغييرplaylist أوMP3 أو كلام أوأصوات أوحالات أو روابط تشغيل أو ربطمهام. هذه متابعة مرجعية لا إنتاج صوتي؛الجملة السابقة في أرشيف الدفعة الأولى عن عدم تعديلregister تخص تلك الدفعة فقط. PASS: الحارس التنفيذي وverify وdiff؛course.json يظل1,844,030 بايت وcachev63 لأنالسجل ليس جزءًا من الحزمة. تُرفع المتابعة فور الفحص؛يحددgit log commitها. تبقى المراجعة الفردية والمتصفح والتوثيق الشامل تالية.
+
+
+## سجل دفعة التنفيذ الأولى — CR17 / A1.11، 2026-10-08
+
+- توجيه المستخدم: رفع كل إضافة أو تعديل مباشرة ومواصلة الإنتاج. الفرع الوحيد`arena/01a1036f-deutschlern`؛خط الأساس`095d6b10200359d7979714da8badda9f39f18981`. عادتmetadata إلى88f3c06؛طابقت671 ملفًا معorigin بصفر اختلافات أو إضافات،ثمreset --mixed قبل التعديل دون حذف عمل.
+- المصدر والتقييمa1-11-v2: بيان التنكير بعدes gibt وثباتgibt مع الجمع،وتقييد الترتيب والتمييز بينGehen Sie/Geh/du gehst. Balkone/Balkons مقبولان. أضيفت12 مساعدة،وفصلت أدوار الحوار وترقيم الاتجاهات والفراغات. T01.4 أصبح اسم الغرفة لا استعمالًا قد يقع في المطبخ. T05.4 صار تناقضًا صريحًا حول السبت بدل استنتاج علاقة مكانية. سؤال الاستماع1 يسأل عن المكان المذكور لا رغبة سفر غير منطوقة.
+- P01/T08: أربع جمل مكتوبة عن مكانين وأثاث في غرفة مذكورة وصفة؛min90 دون جهر. P02→T07: سؤال وثلاث تعليمات وجملة موقع،min160 مع جهر الجميع؛مسار خيالي معطى من مقهى إلى محطة،لا ملاحة أو عنوان حقيقي أو شريك أو تسجيل مطلوب. المصدر والتقييم والنموذجان متطابقة.
+- Q06→T04 وQ10→T02؛أضيفT02.5 للمذكرTisch. كل الخيارات والمفاتيح و80% محفوظة. الملفات: source/assessment،20 صفًا بالكتالوج،course.json،cachev63 واختباراه،guard جديد،وتوسعةprogression/accessibility-audit وملفا التسليم.
+- PASS: build/verify،الحزمة1,844,030 بايت؛الحارس--implementation-only وprogression وdiff --check. سجل115 وحدة/34 مطلبًا مخطط ولم يُنشأ بعد؛الفحوص التراكمية والمتصفح تالية. الصوت3 أصول/7 مقاطع محفوظة دون أي تعديل للplaylist/register/MP3 أو استماع أو اعتماد جديد؛Nora02/Lina00 وقراءة/استماع02.
+- المراجع النافعة9 صفحات: Imperativ،Balkon،جدول الأدوات،المكان،الخبرية،Wohnzimmer،gegenüber الفعلي،Subjekt،geben. قُرئت أجزاءالصفحات المتعددة كلها. صفحةgegenueber العامة404،وسؤالgrammis125 غير مجاب؛مستبعدان. رابطAkkusativ أعاد التوجيه إلىجدولالتصريف؛استُعمل الجدول الصحيح لا الوسم الخاطئf بعدKleid فيمثالالصفحة. نتائجالبحث الاستكشافية ليست مراجع كاملة مستقلة.
+- تُرفع هذه المجموعة فور الفحص؛يحددgit log commit الدفع. الحملة15/53 والبوابة منفصلة،A1.11 قيد المراجعة. التالي: السجل الفردي ثم17 حارسًا و5 مجموعاتNode و5 متصفح وتدقيق الحفظ والتوثيق والإيصال.
+- القرارات ثابتة: المحتوى والتقييم والتطبيق قبل الصوت؛لا مراجع بشري شرطًا للمتابعة،ولا دمجPR#1. لا إعادة توليد أو إخفاء التسجيلات أو تغيير الأصوات المعتمدة؛حد10 طلبات/رد،ومراجعةB1.9 واعتمادB1.10 معلقان،واختيارB1.11 محفوظ. احفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+
+## أرشيف سابق
+
+## إيصال الرفع — CR16 / 2026-10-08
+
+- رُفعت ثلاث دفعات: التنفيذ **23d506fdd1485e49b31c26ba0c94b56901b5dcb0**، تدقيق سؤال القراءة **bc4813680f7b691a50aa4d01c217242c3d83bbf3**، وسجل المراجعة والفحوص **292e7fcef815494c3b0290cb6a155223c065b68d**. تطابقHEAD مع`git ls-remote` لكل منها على`arena/01a1036f-deutschlern`؛ مساحة العمل نظيفة بعد دفع السجل.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) مفتوح، `mergedAt=null`، ورأسه **292e7fcef815494c3b0290cb6a155223c065b68d** عند التحقق. لا دمج أو تغيير فرع.
+- إشاراتVercel للدفعات الثلاث **success**. سجل نشرGitHub **6938416651** لدفعة292e7fc: بيئة **Preview** وحالة **success**، والرابط https://deutschlern-h8s79otf3-balinader-2671s-projects.vercel.app . هذه بيانات نشر، لا اختبار للحزمة أو الواجهة المقدمة عن بُعد. لم يُجرَ جلب للحزمة من هذه المعاينة، ولا ندعي نشر إنتاج أو مراجعة صوتية.
+- الإيصال نفسه تغيير توثيقي منفصل بعنوان`Record CR16 push and Preview delivery receipt`؛ يحدده`git log` بعد دفعه. لا ننسب إلىcommit الإيصال إشارةVercel الخاصة بالدفعات السابقة.
+- الحالة: **15/53 درسًا** روجعت نصيًا في الحملة، والبوابة منفصلة؛ **38 درسًا متبقيًا**. التالي **CR17 / A1.11 — السكن والمنزل والاتجاهات**. نجحت16 مجموعة حراس و5 مجموعاتNode و5 متصفح، مع الحدود المسجلة؛ لا مراجع بشري شرطًا للاستمرار.
+
+
+## أحدث حالة — CR16 / A1.10، 2026-10-08
+
+رُوجع **A1.10 — الهوايات والصحة وزيارة الطبيب** في **119 وحدة و 35 بندًا أو مطلبًا** بالاستناد إلى 10 مراجع:8 صفحات كاملة وجزء 0 من صفحتين. ضُبطت دلالة sollen والضمائر وترجمة السؤال الصحي، وصارت أسئلة القراءة تلتزم بالدليل الصريح. **T05/P01 ستة أدوار مع الجهر**، و**T08/P02 ثلاث جمل كتابة فقط**؛ أزيل تعارض الجهر الاختياري مع شرطه الإلزامي القديم. الإصدار `a1-10-v2` والمخزن `v62`؛ عتبة 80% والخيارات الثلاثون وفهارس الإجابات محفوظة. كلمات التسجيلات ومساراتها وأصواتها وحالاتها و MP3 محفوظة؛ صُحح عنوان عرض الحوار وثلاثة سجلات مرجعية فقط. **الحملة 15/53 درسًا والبوابة منفصلة؛ تبقى 38 درسًا، والتالي A1.11.** لا شهادة مستوى أو مراجعة طبية/صوتية أو دمج مدّعى.
+
+## ملفات الدفعة والقرارات المستمرة
+
+- `content/A1/lesson-10-hobbies-health.md` و`.assessment.json`؛`data/course.json` مولّد،و 20 صفًا في`data/production-task-catalog.csv`.
+- عنوان واحد في`data/audio-playlists.json` و 3 صفوف مرجعية في`data/audio-asset-register.csv`؛لا تغيير MP3 أو ألفاظ التسجيلات أو أصواتها أو حالاتها.
+- `service-worker.js` v62،واختباراه`tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`؛الحارس`tools/test_a1_10_review.py` وتوسعة`tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`.
+- `data/reviews/a1-10-review.json/.md`،وفهرس المراجعات،و README و PROGRESS وخطة التحسين 2.22 وتقرير المتصفح وملفا التسليم. لا تعديل app.js أو CSS في هذه الدفعة.
+- التالي **CR17 / A1.11 — السكن والمنزل والاتجاهات**: قراءة المصدر والتقييم والكتالوج وبيانات الصوت،ثم مراجعة كل عنصر بالمراجع،وتصحيح ما يظهر ودفع كل مجموعة متحققة فورًا. المحتوى والتقييم والتطبيق أولًا؛لا مراجع بشري شرطًا للمتابعة.
+- الأصوات التاريخية وخيارات B1.11 محفوظة؛معاينة B1.9 واعتماد B1.10 لا يزالان معلقين. لا تجديد تسجيلات أوإخفاء روابط أو اعتماد غير مصرح به؛حد 10 طلبات توليد/رد. احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون إعادة تسميته B2.7.
+- الفرع الوحيد`arena/01a1036f-deutschlern`؛خط الأساس`ef54f1d10b28ab3e7005d54007f3e87a7bdc4fc4`. رُفع التنفيذ`23d506fdd1485e49b31c26ba0c94b56901b5dcb0` والتدقيق`bc4813680f7b691a50aa4d01c217242c3d83bbf3` وتحقق تطابقهما مع origin. دفعة السجل292e7fc رُفعت وتحقق تطابقها معالبعيد،والإيصال أعلاه يوثقها؛لا دمج PR#1 أو ادعاء نشر إنتاج.
+- أمان Git: استُرد المؤشر في بداية CR16 بعد تطابق 668 ملفًا مع origin وصفر اختلافات أوإضافات،قبل أي تعديل. لا reset أعمى إن عاد المؤشر 88f3c06،ولا حذف عمل محلي أو تبديل فرع.
+
+## الاختبارات وحدودها — CR16
+
+- PASS: `python3 tools/build_course.py` و`python3 tools/verify_course.py`؛ الحزمة **1,832,834 بايت**.53 درسًا،428 عنوان تمرين،55 قسم حوار،754 مفردة؛530 سؤال درس و 10 للبوابة،106 مهام أداء و 3 للبوابة،1080 معرّفًا بالكتالوج. هذه الأعداد البنيوية لا تعني مراجعة تفصيلية لكل الدروس.
+- PASS: **16 حارس مراجعة** من A0.1 إلى A1.10 والبوابة. الحارس الجديد يتحقق من 119 وحدة و 35 مطلبًا والبصمات والربط، لا يصدر شهادة لغوية أو طبية أو صوتية.
+- PASS: **5 مجموعات Node**: `progression`, `service_worker`, `session_persistence`, `study_time`, `daily_plan`، وصياغة JavaScript و`git diff --check`.
+- PASS: **5 مجموعات متصفح** على Chromium143.0.7499.0: العام،تحديث عامل الخدمة ولوحة المفاتيح،axe،النماذج،والعرض الضيق. المتصفح آلي وصامت؛ليس استماعًا أو هاتفًا فعليًا.
+- العام:1440×900 و 390×844،التفريغ والتنقل والمخزن وتشغيل MP3 ونطاقات البايت دون اتصال. اختبار التحديث من fixture v42 إلى v62 نجح دون تحديث قسري ومع حفظ التقدم والإجابة؛قد يحتاج الصوت فتحه مجددًا مع الاتصال،ولا ضمان لتخزين كل الصوت دائمًا.
+- fixture التحديث يستخدم بيانات الدرس الحالية؛VM في progression هو الذي اختبر رفض مسودة v1 وبقاء سجلها وعدم كفايته لفتح A1.11 دون الإتقان ودليل الأداء في v2. الطول والمربعات والجهر ليست تصحيحًا للغة أو النطق.
+- axe-core4.11.0: **77 حالة ممثلة،صفر مخالفات للقواعد الآلية المختارة**،و**48 ظهورًا لفحوص غير حاسمة تشمل 118 ظهورًا لعقد**. التباين غير المحسوم لا يُحسب خطأ مثبتًا أو نجاحًا شاملًا؛لا شهادة WCAG ولا شرط مراجع بشري للاستمرار.
+- النماذج: نجاح من المحاولة الأولى عند 1440 و 390،بما فيها نافذة استيراد JSON والتصدير والحفظ والمسودات. تذبذب filechooser في CR14 لم يتكرر؛لا سبب مشخص أو إصلاح مزعوم.
+- العرض الضيق: **126 حالة**،63 عند 320×900 و 63 عند 568×320؛كل الدروس والتفريغ والجداول. هذا تغيير viewport لا تكبير نظام أو جهاز فعلي.
+- الحفظ مقابل`ef54f1d10b28ab3e7005d54007f3e87a7bdc4fc4`: **52 درسًا آخر و 1060 صفًا آخر** لم تتغير؛الخيارات والمفاتيح محفوظة. **474 ملف MP3 طابق بصمات Git السابقة**،وكلمات التسجيلات ومساراتها وأصواتها وحالاتها ثابتة. الفرق في playlist عنوان واحد فقط،وفي register ثلاث سجلات حقولها المرجعية فقط؛217 أصلًا،137ready و 80pending.
+- ملاحظة تنفيذية: توقف سكربت التعديل عند BOM في audio-register،ثم صُحح قارئه وأُكمل الجزء المتبقي دون إعادة الجزء السابق. حُفظ BOM في ذلك الملف؛catalog بلا BOM. لا خطأ مخفي أو ادعاء اختبار النسخة الجديدة قبل اكتمال التعديل.
+
+## أرشيف سابق — لا ينسخ الحالة أعلاه
+
+## تدقيق متابعة قبل السجل — CR16
+
+دفعة التنفيذ23d506f رُفعت وتطابقت معorigin. عند إعادة القراءة، اتضح أن السؤال الموسع عن«نشاطين في النص» قد يشمل المشي المذكور لاحقًا كنشاط ثالث؛ أُعيد السؤال البسيط Was macht Mona gern? مع مفتاح دقيق **Sie liest gern.** وحده، وبقيT06.1 عن ركوب الدراجة في عطلة الأسبوع. مصدر الدرس والحارس والحزمة واختبارا المخزن حُدثت؛ المخزن الآن **v62** لتوزيع التصحيح بعد دفعv61. لا تعديل تسجيلات. PASS: build/verify، الحارس التنفيذي وprogression وdiff؛ الفحص التراكمي والمتصفح وسجل119 وحدة ما زالت تالية. هذا تدقيق لاحق، وليس ادعاء خطأ قطعي في كل قراءة محتملة للجملة الأصلية. يحددgit log commit هذه المجموعة بعد رفعها مباشرةً.
+
+
+## سجل دفعة التنفيذ الأولى — CR16 / A1.10، 2026-10-08
+
+- خط الأساس `ef54f1d10b28ab3e7005d54007f3e87a7bdc4fc4`، والفرع الوحيد `arena/01a1036f-deutschlern`. استُرد مؤشرGit بعد مطابقة668 ملفًا معorigin وصفر اختلافات أو إضافات، قبل أي تعديل؛ لا حذف لعمل محلي أو تغيير فرع.
+- عُدّل مصدرA1.10 وتقييمه إلى `a1-10-v2`: أسئلة القراءة لا تفرض حب ركوب الدراجة، وشرحsollen بوصفه توجيهًا لا نصيحة لطيفة دائمًا، وes والضمائر وصيغ الهوايات وحدود الأمثلة الصحية. Q10→T03 وQ08 يصرح بأنه عنMona لا مخاطبة رسمية. الخيارات والمفاتيح محفوظة.
+- P01→T05: ستة أدوار في العيادة مع إعادة التوجيه بـIch soll والجهر،min110؛ النموذج يمر حتى دون أسماء الأدوار. P02/T08: ثلاث جمل مكتوبة، هواية وعرض وتوجيه منقول عن الأم،min80، دون شرط جهر كان يناقض التعليمات القديمة. لا تشخيص أو دواء أو معلومات شخصية أو تسجيل متعلم مطلوب.
+- الصوت3 أصول/8 مقاطع: الكلمات وMP3 والمسارات والأصوات والحالات محفوظة؛ صُحح عنوان عرض واحد فقط إلى«حوار: زيارة العيادة» بدلعنوان يؤنثPatient، وصُححت أسطر المصدر لثلاثة سجلات ورابط الحوار إلىT05. لا استماع أو إعادة توليد أو اعتماد جديد.
+- الملفات: المصدر وassessment،20 صفًا فيcatalog،playlist (عنوان واحد)،register (3 صفوف)،course.json،cachev61 واختباراه،حارسtest_a1_10_review.py،وتوسعةprogression/accessibility-audit،وملفا التسليم.
+- PASS: build/verify بحجم1,832,878 بايت،حارس--implementation-only وprogression وdiff --check. توقف سكربت التعديل أولًا عندBOM فيaudio-register، ثم صُحح قارئه مع حفظBOM وأكمل الجزء المتبقي فقط؛ لم يُعد تشغيل الجزء المعدل أو يدّعِ نجاحfixtures الجديدة قبلها.
+- التالي: سجل119 وحدة/35 بندًا المخطط، ثم16 حارسًا و5 مجموعاتNode و5 متصفح، وتدقيق الحفظ والتقارير وإيصال الدفع. المراجع10 نافعة حتى الآن:8 كاملة وHals/fahren الجزء0؛ صفحةlesen المفترضة404 مستبعدة، واستُعملPräsens الفعلي للتصريف. الحملة14/53 والبوابة منفصلة حاليًا؛A1.10 قيد المراجعة.
+- تُرفع هذه المجموعة بعد الفحص فورًا؛ يحددgit log الـcommit. لا دمجPR#1 أو إعلان انتهاء. قرارات الأصوات وحد10 طلبات/رد، واعتمادB1.9/B1.10 المعلق، واختيارB1.11، وحفظA2.7Q08→T05 واتساقA2.9 وتاريخB2.6 ثابتة. المحتوى والتقييم والتطبيق أولًا؛ لا مراجع بشري شرطًا للاستمرار.
+
+## أرشيف سابق
+
+## إيصال الرفع — CR15 / 2026-10-08
+
+- التنفيذ **11fb347758b4e9786cfc6b645091c4805e462e23** والمراجعة والتقارير **80f36b876e00f9a658cab143a697ed3f4f5b4098** رُفعا إلى`origin/arena/01a1036f-deutschlern`؛ تطابقHEAD مع`git ls-remote` لكل دفعة. مساحة العمل نظيفة بعد دفع التقرير.
+- [PR#1](https://github.com/naderba69/deutschlern/pull/1) مفتوح و`mergedAt=null`، ورأسه **80f36b876e00f9a658cab143a697ed3f4f5b4098** عند التحقق. لم يُدمج ولم يتغير الفرع.
+- إشارةVercel للتنفيذ11fb347 ناجحة. إشارة80f36b8 كانتpending عند الاستعلام الأول ثم صارتsuccess في استعلام لاحق. سجل نشرGitHub **6938039179** للدفعة80f36b8: بيئة **Preview** وحالة **success**، ورابطها https://deutschlern-5rtbibxqs-balinader-2671s-projects.vercel.app .
+- محاولة جلب`/data/course.json` من تلك المعاينة أعادت **TLS/SSL EOF** من بيئة العمل قبل أي جوابHTTP؛ لا مقارنة للحزمة البعيدة ولا تحقق واجهة بعيد أو نشر إنتاج مدّعى. نجاح إشارة النشر ليس برهانًا على ما عرضه متصفح المستخدم.
+- هذا الإيصال نفسه تغيير توثيقي منفصل بعنوان`Record CR15 push and Preview delivery receipt`؛ يحدده`git log` بعد دفعه. لا ننسب إليه حالةVercel الخاصة بالدفعة80f36b8.
+- الحالة: **14/53 درسًا** روجعت نصيًا في الحملة، والبوابة منفصلة؛ **39 درسًا متبقيًا**، والتالي **CR16 / A1.10**.15 حارسًا و5 مجموعاتNode و5 متصفح ناجحة، مع الحدود الموثقة أعلاه. لا صوت جديد أو اعتماد أو دمج، ولا شرط مراجع بشري للاستمرار.
+
+
+## أحدث حالة — CR15 / A1.9، 2026-10-08
+
+رُوجع **A1.9 — العمل والمشكلات والمواعيد** في **117 وحدة و35 بندًا أو مطلبًا في التمارين الثمانية**، بالاستناد إلى9 مراجع ذات صلة:8 صفحات كاملة ومقتطف بحث محدود. صُحح استنتاج القراءة غير المسند ومفتاح الاستماع الذي افترض جنس المتكلم. قُيد ترتيب الجملة بالنمط المدروس، وفُرق بين ذكر وقت متاح وتأكيد موعد. صار T08/P01 أربعة أدوار مع الجهر، وT05/P02 ثلاث جمل كتابية للمشكلة والأثر والبديل. الإصدار `a1-09-v2` والمخزن `v60`؛ الخيارات الثلاثون وفهارس الإجابات وعتبة80% محفوظة. ثلاثة أصول صوتية/8 مقاطع محفوظة دون استماع أو توليد أو اعتماد جديد. **الحملة14/53 درسًا والبوابة منفصلة؛ تبقى39 درسًا، والتالي A1.10.** هذا سجل مراجعة واختبارات، لا شهادة مستوى أو إعلان دمج.
+
+## ملفات الدفعة والخطوة التالية
+
+- المصدر والتقييم: `content/A1/lesson-09-work-appointments.md` و`.assessment.json`، وإعادة توليد `data/course.json`؛ الكتالوج20 صفًا فقط. `service-worker.js` الآنv60 مع `tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`.
+- الحارس `tools/test_a1_09_review.py`، وتوسعةfixtures في `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`. لا تعديل للتطبيق أوCSS أو إخفاء صوت.
+- سجل المراجعة `data/reviews/a1-09-review.json/.md`، وفهرس المراجعات، وREADME وPROGRESS وخطة التحسين2.21 وتقرير المتصفح وملفا التسليم.
+- التالي **CR16 / A1.10 — الهوايات والصحة**: قراءة المصدر والتقييم والكتالوج والصوت، ومراجعة كل تمرين ونص وحوار وتصحيح ما يظهر بالمراجع، ثم دفع كل مجموعة متحققة مباشرةً. لا شرط مراجع بشري ولا انتظار مراجعة الصوت لمتابعة المحتوى والتقييم والتطبيق.
+- احفظ التسجيلات والمسارات والحالات وخيارات الأصوات السابقة؛ لا إعادة توليد أو إخفاء أو اعتماد غير مصرح به. حد10 طلبات توليد في الرد، ومراجعةB1.9 واعتمادB1.10 لا يزالان معلقين، وB1.11 له أصواته المختارة؛ لا معاينة بديلة مفروضة. احفظ A2.7 Q08→T05 واتساقA2.9 وتاريخB2.6 دون إعادة تسميتهB2.7.
+- أمانGit: لا تغيير فرع أو حذف عمل محلي؛ الاسترداد في بدايةCR15 جاء بعد إثبات تطابق665 ملفًا معorigin وصفر إضافات، ثمreset --mixed قبل التعديل. أي عودة لمؤشر88f3c06 تستلزم مقارنة جديدة لاreset أعمى.
+- الفرع الوحيد **arena/01a1036f-deutschlern**. خط الأساس142ef4e؛ دفعة التنفيذ **11fb347758b4e9786cfc6b645091c4805e462e23** مرفوعة ومطابقة للبعيد. دفعة المراجعة80f36b8 رُفعت وتحقق تطابقها، والإيصال أعلاه يوثقها؛ لا دمجPR#1 أو ادعاء نشر إنتاج أو تشغيل بعيد متحقق.
+
+## الاختبارات وحدودها — CR15
+
+- PASS: `python3 tools/build_course.py` و`python3 tools/verify_course.py`؛ الحزمة **1,822,908 بايت**،53 درسًا و428 عنوان تمرين و55 قسم حوار و754 مفردة.530 سؤال درس +10 للبوابة،106 مهمة أداء +3 للبوابة،1080 معرّفًا في الكتالوج. الجاهزية البنيوية لا تعني مراجعة جميع الدروس تفصيليًا.
+- PASS: الحراس الـ15، منA0.1 إلىA1.9 والبوابة. الحارس الجديد فشل أولًا على استنتاج الفندق، ثم نجح بعد الإصلاح؛ هو حارس اتساق لا حكم لغوي مستقل.
+- PASS: مجموعاتNode الخمس `progression`, `service_worker`, `session_persistence`, `study_time`, `daily_plan`، وصياغةJavaScript و`git diff --check`.
+- PASS: المتصفح العام عند1440×900 و390×844؛ التخزين المؤقت والتنقل والتفريغ وتشغيلMP3 ونطاقات البايت دون اتصال. Chromium143.0.7499.0 آلي وصامت؛ ليس استماعًا أو جهاز هاتف حقيقيًا.
+- PASS: لوحة المفاتيح وتحديث عامل الخدمة منfixture v42 إلىv60 دون تحديث قسري للصفحة، مع حفظ التقدم والإجابة وعزل المخازن. الصوت القديم قد يحتاج فتحه مجددًا مع الاتصال؛ لا وعد بتخزين كل الصوت دائمًا دون اتصال. fixture التحديث يستخدم بيانات الدرس الحالية؛ رفضv1 يختبرهVM فيprogression، لا محاكاة بيانات قديمة كاملة في المتصفح.
+- PASS: axe-core4.11.0 في **73 حالة** ممثلة؛ **صفر مخالفات للقواعد الآلية المختارة**، و**45 ظهورًا لفحوص غير حاسمة تشمل112 ظهورًا لعقد**. معظمها تباين لم يحسمه الفحص؛ لا تُحسب مخالفات مثبتة أو نجاحًا شاملاً، ولا شهادةWCAG أو اشتراط مراجع بشري للاستمرار.
+- PASS: النماذج ولوحة المفاتيح والتصدير والاستيراد والمسودات عند1440 و390 من المحاولة الأولى فيCR15. تذبذب نافذة اختيار الملف فيCR14 لم يتكرر، ولا نعرف سببه ولا ندعي إصلاحه.
+- PASS:126 حالة ضيقة/قصيرة،63 عند320×900 و63 عند568×320، تتضمن كل الدروس والتفريغ والجداول. هذا تغييرviewport لا تكبير نظام أو اختبار جهاز فعلي.
+- PASS: مقارنة الحفظ مقابل`142ef4eb65629a06cb792ab1db3587160ab57eb6`:52 درسًا آخر و1060 صفًا خارجA1.9 لم تتغير؛ الخيارات والمفاتيح محفوظة، و217 كائن صوت وسجلها و474 ملفMP3 دون تغيير. كل الكلمات المسجلة في الحوار والقراءة والاستماع محفوظة؛137 أصلًاready و80pending كما كانت.
+- P01/P02: يثبتVM قبول طول النموذج والمربعات والجهر عند طلبه، ورفض المسودات القديمة وعزلv2؛ لا يثبت جودة اللغة أو النطق. سجلv1 يبقى، لكن المتابعة إلىA1.10 تتطلب الإتقان الحالي ودليل الأداء.
+
+## أرشيف الدفعات السابقة — لا ينسخ الحالة أعلاه
+
+## سجل دفعة التنفيذ الأولى — CR15 / A1.9، 2026-10-08
+
+طلب المستخدم المواصلة مع رفع كل إضافة مباشرة. الفرع الوحيد `arena/01a1036f-deutschlern`، وخط الأساس `142ef4eb65629a06cb792ab1db3587160ab57eb6`. هذه دفعة تنفيذ أولى تُدفع فور التحقق؛ لا إعلان انتهاء المراجعة أو دمج. سيظهر commit الدفعة فيgit log بعد دفعه.
+
+- المصدر/التقييم a1-09-v2: نفي الفندق غير مسند لأن المكتب قد يكون داخله؛T06.1 أصبح Samir kann heute drucken خلاف النفي الصريح في النص. مفتاح الاستماع2 أصبح Mit dem Chef بلا افتراض جنس المتكلم. قُيدت قاعدةV2 بالخبرية، والنمط الأساسي فيT05/Q08، وفُسر حذف الفعل فيIch kann um… والفرق بين الإتاحة واتفاق الموعد.
+- P01/T08: أربعة أدوار، سؤال يوم ثم اقتراح ساعة ثم قبول مع تكرارهما ومشكلة جهاز ثم بديل بـWir können؛min100 والجهر مطلوب. P02→T05: ثلاث جمل للجهاز المعطل والأثر المنفي والبديل؛min80 وكتابة فقط. لا تشغيل صوت أو تسجيل متعلم مطلوب.
+- Q07→T01 ووسمه مفردات لا قراءة؛ أضيفschicken فيT04 وist kaputt فيT05 لتطابق المصدر. المفاتيح العشرة والخيارات و80% محفوظة.12 مساعدة،es بجدولkönnen،والتنبيه إلىdie/das E-Mail،وأدوار الحوار محفوظة في فقرات مستقلة.
+- ملفات الدفعة: مصدر A1.9 وassessment،20 سجلًا فيcatalog،course.json،cachev60 واختباراه،fixtures فيprogression/accessibility-audit،وحارسtest_a1_09_review.py. PASS: build/verify و--implementation-only وprogression وgit diff --check؛ الحزمة قبل التصحيح الطباعي الأخير1,822,899 بايت ويُعاد البناء أدناه. الحارس فشل أولًا عند استنتاج الفندق. لم تُجرَ الفحوص النهائية التراكمية أو المتصفح ولم يُنشأ سجل117 وحدة/35 بندًا المخطط بعد.
+- المراجع:7 صفحات ذات صلة جُلبت، مع مقتطف بحث إضافي منgrammis عنNachfeld؛ الرابط1142 لا وثيقة له، والجلب المباشر لل2288 أعاد500. لا نزعم قراءة الصفحات الفاشلة. ستُحفظ نطاقات المراجع في التقرير النهائي.
+- الصوت3 أصول/8 مقاطع محفوظة: Narrator02،Samir03/Nora02،Erzählperson03. لا استماع أو توليد أو اعتماد جديد؛ المحتوى والتقييم والتطبيق قبل الصوت. حد10 طلبات/رد وخرائط الأصوات التاريخية وقراراتB1.9/B1.10/B1.11 ثابتة، لاC1 أوإخفاء أوتغيير روابط. لا مراجع بشري شرطًا للاستمرار ولا دمجPR#1.
+- استردادmetadata بأمان:665 ملفًا طابقتorigin، صفر اختلافات وإضافات، ثم reset --mixed إلى142ef4e قبل التعديل. لا حذف أوreset للعمل الحالي؛ احفظ A2.7Q08→T05 واتساقA2.9 وتاريخB2.6.
+- التالي: سجل المراجعة الفردية وتدقيق الحفظ مقابل142ef4e،15 حارسًا و5 مجموعاتNode و5 متصفح، ثم كل التقارير وملفي التسليم والإيصال. الحملة13/53 والبوابة منفصلة حاليًا؛ A1.9 قيد المراجعة. راقب تذبذبfilechooser المسجل فيCR14 دون افتراض سببه.
+
+
+## أحدث حالة — CR14: مراجعة A1.8، 2026-10-08
+
+هذا مرجع الاستئناف الحالي؛ الأقسام اللاحقة تاريخية عند التعارض، مع بقاء قرارات الأصوات غير المعدلة.
+
+### الطلب والقرارات الثابتة
+
+- طلب المستخدم صراحةً «كل إضافة أو تعديل ارفعها مباشرة / واصل الإنتاج». رُفعت دفعتا التنفيذ والتصحيح عند اجتياز فحوصهما، لا انتظار نهاية السجل كله. العمل على `arena/01a1036f-deutschlern` فقط، لا إنشاء فرع أو دمجPR#1.
+- مراجعة فردية لكل نص وحوار وتمرين وتقييم بالمراجع، وإصلاح المشكلات المصادفة عبر المحتوى والتطبيق؛ لا شرط مراجع بشري، ولا مساواة بين نجاح اختبار وصحة اللغة أو النطق المثبتة.
+- المحتوى والتقييم والتطبيق قبل الصوت؛ صفر طلبات صوت فيCR14، وحد10 طلبات/رد باقٍ. لا إعادة توليد أو إخفاء التسجيلات أو تغيير روابطها أو اعتماد جديد. خرائط الأصوات التاريخية وB1.9 للمعاينة وB1.10 للاعتماد النهائي واختيار02/03 الموجود وB1.11 existing باقية. لاC1.
+- احفظ A2.7Q08→T05 واتساقA2.9 وتاريخB2.6 دون تحويله إلىB2.7. بدايةCR14 عادتmetadata إلى88f3c06؛ قورنت662 ملفًا معorigin ببصماتGit، صفر اختلافات أو إضافات، ثم فقط reset --mixed إلى172dda6 قبل التعديل. لاreset/clean للعمل الحالي دون مقارنة وحفظ.
+
+### ما نُفذ
+
+رُوجع A1.8 — التسوق والملابس والاحتياجات: **120 وحدة مراجعة و35 بندًا أو مطلبًا في التمارين الثمانية**، مع9 مراجع ذات صلة. صُحح خلط الاحتياج بـbrauchen وضرورة الفعل بـmüssen، والاستنتاج غير المسند في T05.1، وترجمة سؤال المقاس. أضيف طلب تجربة صريح فيT07؛ صار T08/P01 خمسة أقوال للزبون مع الجهر، وT03/P02 قائمة ثلاثة أغراض وجملتي احتياج وضرورة كتابةً فقط. الإصدار `a1-08-v2` والمخزن `v59`؛ عتبة80% وفهارس الإجابات ثابتة مع تحسين مشتتQ05. الحوار والنصان محفوظة، ثلاثة أصول/9 مقاطع، دون استماع أو توليد أو اعتماد جديد. **الحملة13/53 درسًا والبوابة مراجعة منفصلة؛ تبقى40 درسًا، والتالي A1.9.** لا شهادة مستوى أو دمج مدّعى.
+
+- T03.2 أصبح **Er muss einen Mantel ______. (kaufen)** بدل muss ein Hemd brauchen. الغرض تدريب ضرورة فعل لا إكراه الاحتياج أو استنتاج متقدم؛ لا ادعاء أن تركيبmuss brauchen مستحيل في جميع السياقات. أضيفT03.4 بـeinkaufen لدعمQ09، وes في جدولmüssen، مع تحديد نطاق المصدر والنهاية بالجملة البسيطة وسؤال نعم/لا.
+- T05.1 القديم Omar braucht eine Hose ليس منفيًا بمجرد أن النص ذكر احتياج أحذية؛ استُبدل بـSeine alten Schuhe sind zu groß، ونقيضه الصريح في النص zu klein. بقي المفتاح خطأ مع شرح صحيح. سؤال الاستماع3 صار Wie ist die schwarze Hose in der Länge? وجوابه Sie ist zu lang؛ لا افتراض أن سبب الاختيار الوحيد هو الطول.
+- ترجماتT-Shirt وSchuhe في المثال صُححت؛ الأول قصير الأكمام، والثاني جمع. أضيفت11 مساعدة للفهم: Akkusativ، الصفات المعطاة، الأكمام والطول، القديم والجديد، المقاسات، فصلanprobieren، billiger/teurer، fragen nach، Paar/es، passen/nehmen، وأفعال التسوق والدفع. ليست دورة كاملة في تصريف الصفات أو المقارنة، ولا تحويل مقاسات عالميًا.
+- وُضح الفرق بين عرض Möchten Sie… وطلب Kann ich… وضرورةmüssen. سؤال Welche Größe haben Sie? موجّه من البائع للزبون هنا، وHaben Sie Größe38? من الزبون عن المتاح. البطاقة أصبحت «ما مقاسك؟» بدل «ما المقاس الذي تحتاجه؟»؛ أضيفT04.4 بـhaben وT07.2 بطلب التجربة.
+- T08/P01: خمسة أقوال للزبون؛ احتياج قطعة، لون ومقاس، سؤال سعر، طلب تجربة، ووصف ملاءمة أو مشكلة مقاس. كتابة ثم جهر،min120 وaudioRequired=false؛ لا أجوبة بائع أو شريك أو بيانات شخصية مفروضة. لا اشتراطmüssen هنا. النموذج خمس وحدات كلامية لا خمسة أدوار متناوبة.
+- T03/P02: قائمة ثلاثة أغراض مختلفة، ثم جملة تبدأIch brauche وتذكر غرضًا من القائمة، وجملة تبدأIch muss مع مصدر مناسب في النهاية. min70،writing فقط وspeakAloud=false وaudioRequired=false؛ لا جملتين كلتاهماmüssen. الرابط انتقلT08→T03، والمصدر والتقييم والمعايير والنموذج متطابقة.
+- الفهارس `[0,0,1,0,1,0,1,0,0,0]` محفوظة؛ الروابط `[1,2,2,3,4,4,6,8,3,7]`. Q07→T06 ووسمه «وصف الملابس» لا قياس قراءة، وQ08→T08 حيث طلب الاحتياج صريح. مشتتQ05 الغريب عن لون الأخ صار Welche Farbe möchten Sie? مع بقاء الفهرس1. بقية الخيارات محفوظة.
+- الحوار:7 أقوال، Kundin03/Verkäufer02، والنصان قراءة7 جمل Narrator02 واستماع6 جمل Erzählperson03. الكلمات والمسارات والحالاتready/offer محفوظة؛ فُصلت فقرات الحوار دون تغيير ألفاظه. قرار الزبونة شراء السترة لا يثبت أن الأكمام صارت مناسبة أو أن الدفع اكتمل؛ لا افتراض تعديل أو تبديل. نماذج الأداء الجديدة غير مسجلة ومستقلة عن الحوار.
+- المراجع9: LingoliaModalverben كاملة؛ Dudenbrauchen/anprobieren/passen/T-Shirt/Paar/Größe كاملة؛ LingoliaAdjektive وAdjektivdeklination الجزء0. لم تُقرأ الأجزاء1 للصفحتين الأخيرتين. الرابطان المفترضانsteigerung وkomparativ-superlativ أعادا صفحة غير موجودة؛ استُعمل الرابط الفعليadjektive. لا بحث معجمي مستقل لكل لفظ أو ترجمة عربية؛ بقية الأحكام مراجعة مباشرة للمساعد.
+
+### الملفات
+
+- `content/A1/lesson-08-shopping-clothes.md` و`.assessment.json`،20 سجلًا في `data/production-task-catalog.csv`،و`data/course.json` المبني.
+- جديد: `tools/test_a1_08_review.py` و`data/reviews/a1-08-review.json` و`.md`؛ تحديث فهرس المراجعات.
+- `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`، و`service-worker.js` إلىv59 مع `tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`.
+- README،PROGRESS،خطة التحسين2.20،تقرير المتصفح،وملفا التسليم. لا تغييرapp/styles/build/verify/package/lock أو الصوت.
+
+### الفحوص ونتائجها
+
+- PASS: `build_course.py` و`verify_course.py`؛ الحزمة **1,811,986 بايت**. حراس `tools/test_*_review.py` الأربعة عشر نجحت كاملة: A0.1–5 والبوابة وA1.1–8. وضع `--implementation-only` استُعمل قبل السجل في أول دفعتين فقط ولم يُحسب مراجعة كاملة.
+- حارس CR14 فشل قبل إصلاح مثالmuss brauchen؛ ثم أُضيف كشف نفي احتياج البنطال وفشل قبل إصلاحT05.1. السجل النهائي120 وحدة/35 بندًا، مع فحص الخيارات والمفاتيح وروابط المصدر والفهرس والبصمات والتسجيلات وفقرات الحوار.
+- PASS لاختبارات Node: `progression` و`session_persistence` و`daily_plan` و`study_time` و`service_worker`؛ وصياغة app.js/service-worker.js و`git diff --check`. VM يقبل النموذجين، يرفض القصر والمعايير الناقصة، ويشترط الجهر لـP01 فقط.
+- نتيجة وجلسةA1.8v1 لا تُعاملان كـv2 لفتحA1.9؛ التحقق لا يحذف سجل الإتقان القديم، وأول حفظ جديد قد يستبدل مجموعة مسودات الإصدار السابق. حد الطول والمربعات لا يصححان اللغة أو النطق.
+- المتصفح: المحاولة الأولى لـforms-keyboard انتهت بمهلة30 ثانية عند حدثfilechooser الثاني قبل إكمال العرض1440؛ لم نجتزها بصمت. فحص تشخيصي مؤقت أظهر focus علىrestore-file وdocument.hasFocus=true عند1440/390 ونجح. ثم نجح الاختبار الأصلي غير المعدل ثلاث مرات؛ السبب غير محسوم، ولا ادعاء إصلاح خلل تطبيق غير متكرر.
+- بعد ذلك PASS للمجموعات الخمس: `forms-keyboard` و`accessibility-audit` و`narrow-layout` و`accessibility-update` و`browser`. Chromium143.0.7499.0،Playwright1.58.2،axe-core4.11.0. npm ci دون تغييرpackage/lock؛ `CHROMIUM_EXECUTABLE_PATH=/tmp/chromium LD_LIBRARY_PATH=/tmp/al2023/lib`.
+- axe: **69 حالة، صفر مخالفات للقواعد المختارة،42 ظهورًا لقواعد غير محسومة و106 ظهورات للعقد**. ليست106 عيوب مثبتة فريدة أو شهادةWCAG. أضيف مصدرA1.8 ونموذج أدائه عند1440/390؛ نموذج الأداء fixture مباشر لا رحلة متعلم كاملة. لا انتظار مراجع بشري شرطًا للمتابعة.
+- العرض الضيق/القصير126 حالة عند320×900 و568×320. الاختبار العام1440×900 و390×844 يشمل53 درسًا والبوابة/217 أصلًا، ودون اتصال وRange206/416/503 وتشغيل عينةB2.12 بسرعتي1 و0.8. المتصفح مكتوم مع تقديم الزمن؛ لا استماع أو هاتف فعلي.
+- التحديث الحقيقي من fixture عاملv42 إلىv59 نجح مع بيانات التقييم الحالية وحفظ التقدم والإجابة دون فرض إعادة تحميل. ليس ترحيل متصفح فعليًا لنتيجةA1.8v1؛ رفضها مغطى فيVM. المخزن الجديد يزيل مخازن التطبيق والصوت السابقة؛ افتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتخزين كلMP3 أو دوام الحصة.
+
+### تدقيق الحفظ
+
+مقارنةً مع `172dda637ac945524e775eb4994dcc3213cef2c1`: بقية52 درسًا ومصادرها والبوابة وكائنات الصوت217 وسجلا الصوت و474MP3 ببصماتGit وصفوف الفهرس خارجA1.8 وapp.js/styles.css/package/lock وأداتاbuild/verify واختبارforms-keyboard لم تتغير. تغيرت20 سجلًا فقط تخصA1.8 في الفهرس ذي1080 معرّفًا. أقوال الحوار الأصلي السبعة محفوظة؛ مقارنة الأقوال محصورة بقسم الحوار لا سؤالT07 المعاد تصميمه. الأعداد ثابتة:53 درسًا،530 سؤال درس+10 بوابة،106 مهمات درس+3 بوابة=109،428 عنوان تمرين،55 قسم حوار،754 مفردة؛ الصوت137 ready و80 للمراجعة، دون اعتماد جديد.
+
+### حالة الرفع
+
+رُفع التنفيذ الأول وتحققت مطابقةorigin عند **`8b7ed1983b56f04468a4400438ee1b06d3b804fa`**، ثم التصحيح المنطقي عند **`31e63e55fb12a371029fa2fe58e922b137b07371`**، ثم سجل المراجعة والفحوص عند **`25e8d48972c3e2cb7c0fe03bb116058cca9b503b`**؛ الفرع `arena/01a1036f-deutschlern`. طابق الرأس البعيد المحلي وكانت الشجرة نظيفة قبل هذا الإيصال. تحقق PR#1 بعد تحديث بيانات GitHub: **OPEN، mergedAt=null** ورأسه25e8d48؛ لم ندمجه.
+
+حالة Vercel لكل من31e63e5 و25e8d48 **success**. سُجل نشر GitHub رقم6937612176 للنسخة25e8d48 في بيئة **Preview** وحالتهsuccess، على https://deutschlern-2trr6x1vz-balinader-2671s-projects.vercel.app . هذه إشارة نجاح نشر معاينة، لا دمج أو نشر إنتاجي مثبت. محاولة جلب data/course.json من رابط المعاينة فشلت محليًا بخطأ TLS/SSL EOF، لذلك لم تثبت مطابقة الملف المنشور أو اختبار الموقع البعيد نفسه. لم تظهر Actions runs للفرع.
+
+هذا إيصال منفصل يُرفع فورًا؛ رأسه النهائي في `git log -2` ويُفحص بعد الدفع. لا تغيير للتطبيق أو المحتوى أو الصوت بعد الفحوص النهائية. الحملة13/53 والبوابة منفصلة، التاليA1.9، وبقية الحدود والقرارات أعلاه باقية.
+
+### المتبقي والخطوة التالية
+
+التالي **A1.9 — a1-09-work-appointments**: اقرأ المصدر والتقييم والفهرس ونصوص التسجيلات كاملة، وراجع كل عنصر باسمه وبالمراجع، ثم صحح واختبر وحدّث ملفي التسليم وارفع كل دفعة فورًا على الفرع نفسه. الحملة13/53 والبوابة منفصلة؛ تبقى40 درسًا. تابع احتمال تذبذب اختبارfilechooser إذا تكرر، دون ادعاء سببه. تبقى الإتاحة غير المحسومة والجهاز الفعلي والمراجعة السمعية والدمج والنشر غير مثبتة؛ لا شرط انتظار مراجع بشري، ولا إذن بإعادة توليد أو اعتماد الصوت.
+
+---
+
+### سجل مرحلي تاريخي — CR14 بعد الدفعة الأولى
+
+رُفعت الدفعة الأولى وتحققت مطابقةorigin عند `8b7ed1983b56f04468a4400438ee1b06d3b804fa`. ظهرت أثناء المراجعة الفردية نقطة أخرى: نفي احتياج Omar إلى بنطال غير مسند؛ استُبدل T05.1 بوصف أحذيته القديمة بأنها كبيرة، وهو نقيض صريح للنص. صار سؤال الاستماع3 وصفًا لطول البنطال بدل افتراض سبب الاختيار؛ المفتاحlang محفوظ مع شرح in der Länge. جرى توضيح قرار شراء السترة لا اكتمال الدفع. فشل الحارس قبل التصحيح المنطقي ثم نجح وضع التنفيذ؛ build/verify PASS. بقية المراجعة والمتصفح ما تزال قيد التنفيذ، والحملة12/53؛ لا دمج أو اعتماد صوت. ملفات هذه الإضافة: المصدر،course.json،الحارس،وملفا التسليم، وستُدفع فورًا على الفرع نفسه.
+
+## سجل مرحلي تاريخي — CR14 / A1.8، 2026-10-08
+
+طلب المستخدم رفع كل إضافة أو تعديل مباشرة. هذه دفعة تنفيذ أولى على `arena/01a1036f-deutschlern`، لا إعلان اكتمال مراجعة أو دمج. خط الأساس `172dda637ac945524e775eb4994dcc3213cef2c1`؛ سيظهر commit هذه الدفعة في `git log` بعد إنشائه ودفعه.
+
+- المصدر والتقييم a1-08-v2: إصلاح T03.2 من muss…brauchen إلى فعل شراء، تمييز الاحتياج والضرورة، طلب تجربة صريح فيT07، وتصحيح ترجمة سؤال المقاس. خمسة أقوال للزبون مع الجهر T08/P01 (min120) مقابل قائمة ثلاثة أغراض وجملتي brauchen/müssen كتابيًا T03/P02 (min70). الأجوبة العشرة و80% ثابتة؛ Q07→T06 وQ08→T08، ومشتت Q05 صار سؤال لون طبيعيًا.
+- ملفات هذه الدفعة: مصدر A1.8 وassessment،20 سجلًا فيcatalog،course.json،service-worker إلىv59 واختباراه،fixtures فيprogression/accessibility-audit،وحارس جديد test_a1_08_review.py. الحارس الكامل ينتظر سجل المراجعة؛ وضع --implementation-only يفحص التنفيذ فقط ويصرح بذلك.
+- PASS: build/verify وحارس التنفيذ الجزئي وprogression وgit diff --check؛ الحزمة1,811,859 بايت. فشل الحارس قبل التصحيح عند جملةmuss brauchen. لم تُجرَ بعد الفحوص التراكمية النهائية أو المتصفح لهذه الدفعة؛ لم يُنشأ سجل120 وحدة المتوقع بعد، ولا يُعد إنجازًا موثقًا حتى إنشائه وفحصه.
+- جُلبت9 مراجع ذات صلة؛ صفحتاLingolia المفترضتان للsteigerung/komparativ-superlativ لم توجدا، واستُخدمت صفحةadjektive الفعلية معdeklination. التفاصيل الفردية ستلحق بالسجل النهائي.
+- لا تغيير للصوت أو نصوصه أو اعتماد جديد:3 أصول/9 مقاطع، Kundin03/Verkäufer02، قراءة02 واستماع03. المحتوى والتقييم والتطبيق قبل الصوت؛ حد10 طلبات/رد وبقية خرائط الأصوات وقرارات B1.9/B1.10/B1.11 باقية. لا مراجع بشري شرطًا للمتابعة، ولا دمج PR#1، ولا تغيير تاريخB2.6 أو A2.7Q08→T05 أو اتساقA2.9.
+- استردادmetadata بأمان:662 ملفًا طابقتorigin وصفر إضافات، ثم reset --mixed إلى172dda6 قبل التعديل فقط؛ لا حذف أوreset للعمل الحالي.
+- التالي فور رفع هذه الدفعة: مراجعة كل عنصر وتوثيقه، تدقيق الحفظ مقابل172dda6،14 حارسًا و5 مجموعاتNode و5 مجموعاتمتصفح، ثم تحديث كل التقارير ورفعه فورًا وإيصال SHA/PR/النشر. الحملة تبقى12/53 والبوابة منفصلة حاليًا؛ A1.8 قيد المراجعة. الأقسام التالية تاريخية عند التعارض.
+
+
+## سجل تاريخي — CR13: مراجعة A1.7، 2026-10-08
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات غير المعدلة باقية.
+
+### الطلب والقرارات الثابتة
+
+- المطلوب مراجعة كل نص وحوار وتمرين وتقييم، فرديًا وتراكميًا، بالمراجع وإصلاح المشكلات المصادفة واختبارها ورفعها مباشرة. لا اشتراط لمراجع بشري، ولا مساواة بين نجاح الحارس وبين صحة اللغة أو النطق المثبتة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا إنشاء فرع أو دمج PR#1. المحتوى والتقييم والتطبيق أولًا، لا C1 أو إعادة توليد MP3 أو إخفائها أو تغيير روابطها أو اعتماد صوت جديد. صفر طلبات صوت فيCR13؛ حد10 طلبات/رد باقٍ.
+- خرائط الأصوات التاريخية ملزمة؛ B1.9 للمعاينة وB1.10 للاعتماد النهائي. اختيار02/03 الموجود لـB1.10 وexisting لـB1.11 محفوظ؛ احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون تحويله إلىB2.7.
+- عادت metadata في بداية CR13 إلى88f3c06 رغم حداثة الملفات. جرى fetch ومقارنة659 ملفًا ببصماتGit معorigin، بصفر اختلافات أو إضافات؛ ثم فقط reset --mixed إلى5377df3 قبل أي تعديل. لا reset/clean للعمل الحالي دون مقارنة وحفظ.
+
+### ما نُفذ
+
+رُوجع A1.7 — السفر والطقس: **118 وحدة مراجعة و33 بندًا أو مطلبًا في التمارين الثمانية**، مع8 مراجع ذات صلة. أُصلح T07 الذي كان يعرض الإجابات بدل الفراغات، وقُيد سؤال الموعد بـ«عند التاسعة لا بعدها»، وصار Q10 سؤال معنى لا ادعاء استماع. وُضح windig بأنه كثير الرياح لا عاصفة بالضرورة، وحدود mit/nach/zu وتصريف fahren. صار T08/P01 أربع جمل كتابية، وT04/P02 أربعة أقوال للمسافر مع الجهر؛ المصدر والتقييم والنموذجان متطابقون. الإصدار `a1-07-v2` والمخزن `v58`؛ عتبة80% وفهارس الإجابات ثابتة، مع تغيير ترجمة خيارQ09. أصلَا القراءة والاستماع والحوار، ثلاثة أصول/8 مقاطع، محفوظة دون استماع أو اعتماد جديد. **الحملة12/53 درسًا والبوابة مراجعة منفصلة؛ تبقى41 درسًا، والتالي A1.8.** لا شهادة مستوى أو دمج مدّعى.
+
+- T07 أصبح أربعة فراغات فعلية: الوجهة، السيارة، طقس بعد الظهر، والشيئان المحمولان. المفتاح الثاني Auto لأن mit dem موجودة قبل الفراغ؛ ليس تمرينًا جديدًا في عدد المعرفات، بل إصلاح النشاط نفسه.
+- T03.3 وQ04 يحددان الساعة عند الثامنة/التاسعة، لا بعدها. nach neun Uhr صحيحة نحويًا بمعنى آخر؛ لم نعد نرفضها باعتبارها خطأ لغويًا مطلقًا. Q10 يطلب ترجمة «الجو بارد» بدل «جملة مناسبة إذا كان باردًا»، لأن البرد قد يجتمع مع الشمس أو الرياح. أزيل وسم فهم الاستماع عنه ونُقل T07→T04.3.
+- T03.4 يدرب windig؛ ترجمتها في المفردات وخيارQ09 أصبحت «كثير الرياح». خيارات بقية الأسئلة محفوظة. الفهارس `[0,1,1,0,0,0,1,1,1,0]` ثابتة، وروابط المصدر `[2,2,3,3,3,4,4,2,3,4]`. Q01→T02 وQ05→T03 تحسين للمطابقة المباشرة، وأضيف طلب التذكرة T04.4 لدعم Q06.
+- mit معDativ، وتحويل أدوات التعريف مقيد بالمفرد. قُيد nach بالأسماء بلا أداة أو صفة في الأمثلة؛ in Sousse موقع، وzum/zur اختصاران لا نتيجة كون المكان معروفًا فقط. أضيف جدول fahren بستة صفوف يشملes، وفرق fahren/fliegen، والمضارع معmorgen، وعشر مساعدات تشملreisen وmitnehmen وmorgen/am Morgen وأسماء المدن.
+- T05 حدد البدايات Wir/Der Bus/Es والكتابة الكبيرة والترقيم. المفتاح نموذج لا حظر على بديل نحوي صالح. شُرحت الفروق بين جملة الصفة Es ist sonnig وفعل المطر Es regnet، وبين9:00 في المثال و9:10 في الحوار؛ لا مواعيد نقل حقيقية مدّعاة.
+- T08/P01: أربع جمل كاملة في المضارع عن وجهة مدينة معnach، وسيلة معmit dem/der، وقت معum، وطقس. min90 وwriting فقط وspeakAloud=false وaudioRequired=false. لا بطاقة ثم جملتان إضافيتان، ولا بيانات حقيقية أو جهر مطلوب.
+- T04/P02: أربعة أقوال للمسافر: طلب تذكرة بوجهة، نوع التذكرة، سؤال الموعد، سؤال الطقس في المدينة. كتابة ثم جهر، min90 وspeakAloud=true وaudioRequired=false؛ أداء فردي متاح دون أجوبة موظف أو تسجيل. انتقل الرابط منT08 إلىT04؛ توسعة الطقس نصية غير مسجلة، وليست إضافة إلى الحوار الصوتي.
+- الصوت: الحوار ستة أقوال، Reisende Person03/Mitarbeiter02؛ القراءة Narrator02 بخمس جمل؛ الاستماع Erzählperson03 بتحية Hallo وخمس جمل. الكلمات والمسارات والحالاتready/offer محفوظة. وُحد وسم Reisende إلىReisende Person، وفُصلت الأقوال إلى فقرات واضحة دون تغيير كلامها. لا استماع أو توليد أو اعتماد جديد.
+- إصلاح أداة التحقق: المطابقة القديمة حسبت عنوان «مساعدة قبل الحوار والنصين» حوارًا فزاد العدد خطأ إلى56. دالة `dialogue_headings` تميز الأقسام/المهام المرقمة الفعلية، وعاد العدد55 مع الحفاظ على العنوان المفيد. أضيف اختبار انحدار للعنوان التوضيحي ولحوار فعلي وتمرين حوار، وحارس لبقاء أقوال المحطة في فقرات منفصلة.
+- المراجع8: Dudenwindig/mitnehmen/einfach كاملة، وBahn/fahren الجزء0؛ Lingoliaحروف الجر العامة/المكانية الجزء0 والزمنية كاملة. أربعة روابطDuden عامة mit/nach/zu/einfach أعادت محتوى404 فلم تُستعمل. لم نتبنَّ صياغة جدولLingolia الزمنية الملتبسة بشأن حصرum بالساعاتحتى12 أوالساعةالتامة؛ الصفحة العامة نفسها تعرضum14Uhr. لم يُجلب مدخل مستقل لكل ترجمة أو كلمة؛ بعض التحليل مراجعة مباشرة للمساعد.
+
+### الملفات
+
+- `content/A1/lesson-07-travel-weather.md` و`.assessment.json`، و20 سجلًا في `data/production-task-catalog.csv`، و`data/course.json` المبني.
+- جديد: `data/reviews/a1-07-review.json` و`.md` و`tools/test_a1_07_review.py`؛ تحديث `data/reviews/README.md`.
+- `tools/verify_course.py` لتصنيف عناوين الحوار؛ `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ `service-worker.js` إلىv58 مع `tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`.
+- README،`content/PROGRESS.md`،`data/course-improvement-plan.md` الإصدار2.19،`data/browser-qa-report.md`،وملفا التسليم الحاليان.
+
+### الفحوص ونتائجها
+
+- PASS: `build_course.py` و`verify_course.py`؛ الحزمة **1,802,485 بايت**. جميع حراس `tools/test_*_review.py` الثلاثة عشر نجحت: A0.1–5 والبوابة وA1.1–7.
+- فشل حارس CR13 قبل الإصلاح لأن T07 لا يحتوي أربعة فراغات فعلية. بعد الإصلاح نجح في118 وحدة و33 بندًا، الخيارات والمفاتيح وروابط المصدر والفهرس والبصمات والنصوص الصوتية، وتمييز عناوين الحوار وبقاء الأقوال منفصلة.
+- PASS لاختبارات Node: `progression` و`session_persistence` و`daily_plan` و`study_time` و`service_worker`؛ وصياغة app.js/service-worker.js و`git diff --check`.
+- VM يقبل النموذجين عند90 حرفًا، ويرفض القصر والمعايير الناقصة ويشترط الجهر لـP02 فقط. يرفض إتقان وجلسة A1.7v1 كإتقانv2 لفتح A1.8؛ لا يحذف التحقق السجل القديم. أول حفظ جديد قد يستبدل مجموعة مسودات الإصدار السابق. الطول والمربعات ليست تصحيح لغة أو نطق.
+- PASS لمجموعات المتصفح الخمس، وأعيدت بعد فصل فقرات الحوار: `forms-keyboard` و`accessibility-audit` و`narrow-layout` و`accessibility-update` و`browser`. Chromium143.0.7499.0،Playwright1.58.2،axe-core4.11.0؛ npm ci دون تغيير package/lock؛ `CHROMIUM_EXECUTABLE_PATH=/tmp/chromium LD_LIBRARY_PATH=/tmp/al2023/lib`.
+- axe: **65 حالة، صفر مخالفات للقواعد المختارة،39 ظهورًا لقواعد غير محسومة و100 ظهور للعقد**. ليست100 عيب مثبت فريد أو شهادةWCAG. أضيف مصدر A1.7 ونموذج أدائه عند1440/390؛ نموذج الأداء fixture مباشر لا رحلة متعلم كاملة. لا شرط انتظار مراجع بشري للاستمرار.
+- العرض الضيق والقصير126 حالة عند320×900 و568×320؛ المتصفح العام1440×900 و390×844 يشمل53 درسًا والبوابة/217 أصلًا، والعمل دون اتصال وRange206/416/503 وتشغيل عينة B2.12 بسرعتي1 و0.8. متصفح مكتوم مع تقديم الزمن، لا استماع فعلي أو هاتف فعلي.
+- نجح التحديث الحقيقي من fixture عاملv42 إلىv58 مع بيانات التقييم الحالية، دون فرض إعادة تحميل ومع حفظ التقدم والإجابة. ليس ترحيلًا فعليًا في المتصفح لنتيجة A1.7v1؛ رفض القديم مغطى فيVM. المخزن الجديد يزيل مخازن التطبيق والصوت السابقة؛ افتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتخزين جميع MP3 أو دوام الحصة.
+
+### تدقيق الحفظ
+
+مقارنةً مع `5377df3f9c224081c37d29f35d20d961cb49e6bd`: بقية52 درسًا ومصادرها والبوابة وجميع كائنات الصوت217 وسجلا الصوت و474MP3 ببصماتGit وصفوف الفهرس خارج A1.7 وapp.js/styles.css/package/lock وأداةbuild لم تتغير. أداةverify تغيرت لإصلاح عدّ الحوار كما ذُكر. تغيرت20 سجلًا تخص A1.7 في الفهرس ذي1080 معرّفًا. أقوال الحوار الستة محفوظة مع تغيير الوسم والتنسيق فقط. الأعداد العامة:53 درسًا،530 سؤال درس+10 للبوابة،106 مهمات درس+3 للبوابة=109،428 عنوان تمرين،55 قسم حوار،754 مفردة؛ الصوت137 ready و80 للمراجعة دون اعتماد جديد.
+
+### حالة الرفع
+
+رُفع تنفيذ CR13 في commit **`8020497c6dd9d9ccd27c44f3ee38921c13fc0c25`** على `arena/01a1036f-deutschlern`. طابق `git ls-remote` الرأس المحلي، وكانت شجرة العمل نظيفة بعد الدفع وقبل هذا الإيصال. تحقق `gh pr view 1`: **OPEN، mergedAt=null** ورأسه يطابق التنفيذ؛ لم ندمج [PR#1](https://github.com/naderba69/deutschlern/pull/1).
+
+وقت فحص commit التنفيذ: الحالة المجمعة **pending** وسياق **Vercel=pending**؛ لا GitHub deployments مسجلة لهذا SHA ولا Actions runs ظاهرة للفرع. النشر **غير مؤكد**؛ الدفع ليس دمجًا أو نشرًا مثبتًا. هذا إيصال منفصل بعد دفع التنفيذ؛ رأس الإيصال النهائي يظهر في `git log -2` وتُفحص مطابقته البعيدة بعد دفعه. لم يتغير التطبيق أو المحتوى أو الصوت بعد الفحوص النهائية.
+
+### المتبقي والخطوة التالية
+
+التالي **A1.8 — a1-08-shopping-clothes**: اقرأ المصدر والتقييم والفهرس ونصوص التسجيلات كاملة؛ راجع كل عنصر باسمه وبالمراجع، ثم صحح واختبر وحدّث ملفي التسليم وارفع على الفرع نفسه. الحملة12/53 والبوابة منفصلة؛ تبقى41 درسًا. تبقى الفحوص غير المحسومة للإتاحة والجهاز الفعلي والمراجعة السمعية والدمج والنشر غير مثبتة؛ ليست شروط انتظار مراجع بشري لمواصلة المحتوى، ولا إذنًا بإعادة توليد أو اعتماد الصوت.
+
+---
+
+## سجل تاريخي — CR12: مراجعة A1.6، 2026-10-08
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات التي لم تتغير باقية.
+
+### الطلب والقرارات الثابتة
+
+- الطلب هو مواصلة مراجعة كل نص وحوار وتمرين وتقييم، فرديًا وتراكميًا، بالمراجع ومع إصلاح المشكلات المصادفة واختبارها ورفعها مباشرة. لا اشتراط لمراجع بشري، ولا تحويل نجاح السكريبت إلى اعتماد لغة أو نطق.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا إنشاء فرع أو دمج PR#1. المحتوى والتقييم والتطبيق قبل الصوت. لا C1 أو إعادة توليد التسجيلات أو إخفائها أو تغيير روابطها أو اعتماد جديد. صفر طلبات صوت فيCR12؛ حد10 طلبات/رد باقٍ.
+- خرائط الأصوات في السجلات التاريخية ملزمة: B1.9 للمعاينة وB1.10 للاعتماد النهائي، واختيار الموجود02/03 لـB1.10 وexisting لـB1.11 محفوظان. احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون تحويله إلىB2.7.
+- بداية CR12 عادت metadata إلى88f3c06 رغم حداثة الملفات. قورنت656 ملفًا معorigin بايتًا بصفر اختلافات أو إضافات، ثم فقط reset --mixed إلىad252994 قبل أي تعديل. لا reset/clean للعمل الحالي دون مقارنة وحفظ.
+
+### ما نُفذ
+
+رُوجع A1.6 — أمس واليوم ومقدمة Perfekt: **108 وحدات مراجعة و34 بندًا أو مطلبًا في التمارين الثمانية**، بالاستناد إلى7 مراجع ذات صلة. صُحح غموض sie في T03.3 بذكر Rania، وقُيدت قواعد الزمن والمساعد وترتيب الجملة بنطاقها. أضيفت صيغ الأفعال اللازمة للنصين وشروحها. صار T08/P01 سردًا كتابيًا من أربع جمل، وT04/P02 تحويل ثلاث جمل معطاة من اليوم إلى أمس مع القراءة الجهرية؛ لا مهمتين متكررتين للسرد الحر. صُحح Q08→T03، ووُضح أن Tunis مدينة. الإصدار `a1-06-v2` والمخزن `v57`؛ عتبة80% وفهارس الإجابات والخيارات محفوظة. التسجيلان محفوظان دون استماع أو اعتماد جديد. **الحملة11/53 درسًا والبوابة مراجعة منفصلة؛ تبقى42 درسًا، والتالي A1.7.** لا شهادة CEFR أو دمج مدّعى.
+
+- T01 يطلب المساعد المصرف صراحةً. T03.3 أصبح **Am Sonntag ______ Rania nach Sousse ______.**؛ المفتاح ist … gefahren لم يتغير لكن الفاعل لم يعد ملتبسًا. T04 حدد بدايات الترتيب Gestern/Wir/Rania مع قبول ضبط الحروف والترقيم، دون إنكار ترتيبات أخرى خارج القيد.
+- Perfekt ليس حصرًا حدثًا قريبًا زمنيًا؛ المساعد في المضارع وPartizip II. V2 يعني الكتلة الثانية لا الكلمة الثانية، وموقع Partizip الأخير مقيد بالجمل البسيطة المدروسة؛ أضيفت أمثلة سؤال نعم/لا وسؤالW.
+- sein مع gehen/fahren للانتقال في أمثلة الدرس، لا كل حركة. **Ich habe das Auto gefahren** مثال تنبيهي على استعمال آخر لا يُطلب في الاختبار. أضيف arbeiten→gearbeitet وbesuchen→besucht وzurückkommen→zurückgekommen، وes في صف المساعدين، وسبعة أفعال إضافية و12 مساعدة قبل النصين.
+- القراءة ست جمل والاستماع أربع؛ شُرح اشتراك المساعد في العطف، واستقلال القصتين. النصان والتسجيلان وكلماتُهما محفوظة؛ لا حوار أصلي في الوحدة ولا تسجيل مخفي. READ Narrator02 وLST Erzählperson03، أصلان ومقطعان،ready/offer تاريخيًا، دون استماع أو اعتماد جديد.
+- T08/P01: أربع جمل وأربعة أفعال مختلفة، gestern أوam Wochenende، فعلان على الأقل معhaben وفعل واحد على الأقل معsein، ومساعد مناسب للرابع. min90،writing فقط وspeakAloud=false وaudioRequired=false؛ لا أحداث شخصية حقيقية مفروضة. النموذج بأفعال gelernt/gehört/gefahren/besucht يحقق3haben و1sein.
+- T04/P02: تحويل Heute lerne ich Deutsch / Heute höre ich Musik / Heute fahre ich nach Tunis إلى Perfekt؛ يبدأ كل جواب بـGestern ويحافظ علىich والنشاط والوجهة. كتابة الثلاث ثم قراءتها بصوت مرتفع، منفردًا إن لزم. min90،speakAloud=true وaudioRequired=false. المصدر والتقييم متطابقان؛ نُقل P02 منT08 إلىT04.
+- مفاتيح الأسئلة `[1,1,1,1,0,0,1,0,1,0]` وخياراتها محفوظة. روابط المصدر أصبحت `[1,1,2,2,4,3,3,3,2,4]`؛ Q08→T03 حيث sehen مدرّب بصيغةgesehen، وQ10 يحدد مدينة تونس والانتقال بوسيلة نقل. رُقمت مفاتيح T06/T07؛ T06 ثلاثة بنود وأربعة فراغات، لا أربعة أسئلة.
+- المراجع7: LingoliaPerfekt كاملة، وDudenPerfekt/arbeiten/besuchen/hören/zurückkommen كاملة، وfahren الجزء0. جُلب جزء2 منGoetheA1 لكن المستخرج المتاح لم يعرضPerfekt؛ ليس دليلًا معتمدًا للقاعدة، ولا نزعم قراءة كاملPDF. لم يُجلب مدخل مستقل لكل لفظ أو ترجمة؛ بقية التحليل مراجعة مباشرة للمساعد.
+
+### الملفات
+
+- `content/A1/lesson-06-yesterday-perfekt.md` و`.assessment.json`؛20 سجل A1.6 في `data/production-task-catalog.csv`، و`data/course.json` المبني.
+- جديد: `data/reviews/a1-06-review.json` و`.md` و`tools/test_a1_06_review.py`؛ تحديث `data/reviews/README.md`.
+- `tools/test_progression.cjs` و`tools/test_accessibility_audit.cjs`؛ `service-worker.js` إلىv57 مع `tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs`.
+- README،`content/PROGRESS.md`،`data/course-improvement-plan.md` الإصدار2.18،`data/browser-qa-report.md`،وملفا التسليم الحاليان.
+
+### الفحوص ونتائجها
+
+- PASS: `python3 tools/build_course.py` و`python3 tools/verify_course.py`؛ الحزمة **1,792,765 بايت**. جميع حراس `tools/test_*_review.py` الاثني عشر نجحت: A0.1–5 والبوابة وA1.1–6.
+- حارس CR12 فشل قبل الإصلاح بسبب احتمال ist أوsind مع sie بينما المفتاح يقبل ist فقط. بعد الإصلاح نجح في108 وحدات و34 بندًا، والمفاتيح وروابط المصدر والفهرس والبصمات والنصين الصوتيين. هذا حارس اتساق، لا حكم لغوي مستقل.
+- PASS لاختبارات Node: `progression` و`session_persistence` و`daily_plan` و`study_time` و`service_worker`، وصياغة app.js/service-worker.js و`git diff --check`.
+- VM: النموذجان مقبولان عند حد90 حرفًا؛ القصر والمعايير الناقصة مرفوضة، والجهر مطلوب لـP02 فقط. نتيجة A1.6v1 ومسودتها لا تفتحان A1.7 كأنهما v2؛ التحقق لا يحذف سجل الإتقان القديم. أول حفظ جديد قد يستبدل مجموعة المسودات السابقة. هذه ليست آلية تصحيح لغة أو نطق.
+- PASS لمجموعات المتصفح الخمس: `forms-keyboard` و`accessibility-audit` و`narrow-layout` و`accessibility-update` و`browser`. البيئة: Chromium143.0.7499.0،Playwright1.58.2،axe-core4.11.0؛ `npm ci` دون تغيير package/lock، مع `CHROMIUM_EXECUTABLE_PATH=/tmp/chromium LD_LIBRARY_PATH=/tmp/al2023/lib`.
+- axe: **61 حالة، صفر مخالفات للقواعد المختارة،36 ظهورًا لقواعد غير محسومة و94 ظهورًا للعقد**. ليست94 عيبًا مثبتًا فريدًا، ولا شهادة WCAG. أضيف مصدر A1.6 ونموذج أدائه عند1440/390؛ نموذج الأداء fixture مباشر لا رحلة متعلم كاملة. الأعلام غير المحسومة لا تتحول إلى شرط انتظار مراجع بشري.
+- العرض الضيق والقصير:126 حالة عند320×900 و568×320. الاختبار العام عند1440×900 و390×844:53 درسًا والبوابة و217 أصلًا صوتيًا، ودون اتصال وRange206/416/503 وتشغيل عينة B2.12 بسرعتي1 و0.8. متصفح مكتوم مع تقديم الزمن، لا استماع فعلي أو هاتف فعلي.
+- نجح التحديث الفعلي من fixture عاملv42 إلىv57 دون فرض إعادة تحميل ومع حفظ التقدم والإجابة، باستخدام بيانات التقييم الحالية. ليس ترحيلًا فعليًا في المتصفح لنتيجة A1.6v1؛ رفض الإصدار القديم مغطى فيVM. المخزن الجديد يزيل مخازن التطبيق والصوت السابقة: افتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتخزين جميع MP3 أو دوام الحصة.
+
+### تدقيق الحفظ
+
+مقارنةً مع `ad252994c8852a531e21c9819a1f0bced8b6a720`: بقية52 درسًا ومصادرها والبوابة وجميع كائنات الصوت217 وسجلا الصوت و474MP3 ببصمات Git وصفوف الفهرس خارج A1.6 وapp.js/styles.css/package/lock وأداتاbuild/verify لم تتغير. تغيرت20 سجلًا تخص A1.6 في الفهرس ذي1080 معرّفًا، لا بقية السجلات. الأعداد العامة ثابتة:53 درسًا،530 سؤال درس+10 للبوابة،106 مهمات درس+3 للبوابة،428 عنوان تمرين،55 قسم حوار،754 مفردة. الصوت137 ready و80 للمراجعة، دون اعتماد جديد.
+
+### حالة الرفع
+
+رُفع تنفيذ CR12 في commit **`b927b22391cd78b69e026fbb3cf1143f259f3ac9`** على `arena/01a1036f-deutschlern`. طابق `git ls-remote` الرأس المحلي، وكانت شجرة العمل نظيفة بعد الدفع وقبل هذا الإيصال. تحقق `gh pr view 1`: **OPEN، mergedAt=null** ورأسه يطابق التنفيذ؛ لم ندمج [PR#1](https://github.com/naderba69/deutschlern/pull/1).
+
+وقت فحص commit التنفيذ: الحالة المجمعة **pending** وسياق **Vercel=pending**؛ لا GitHub deployments مسجلة لهذا SHA ولا Actions runs ظاهرة للفرع. لذلك النشر **غير مؤكد**، ولا مساواة بين الدفع والنشر أو الدمج. هذا تحديث إيصال منفصل بعد دفع التنفيذ؛ راجع `git log -2` لرأس الإيصال النهائي، وتُفحص مطابقته البعيدة بعد دفعه. لم تُغيّر ملفات التطبيق أو المحتوى أو الصوت بعد الفحوص.
+
+### المتبقي والخطوة التالية
+
+التالي **A1.7 — a1-07-travel-weather**: اقرأ المصدر والتقييم والفهرس ونصوص التسجيلات كاملة؛ راجع كل عنصر بالاسم والمراجع، ثم صحح واختبر وحدّث ملفي التسليم وارفع على الفرع نفسه. الحملة11/53 والبوابة منفصلة؛ تبقى42 درسًا. تبقى حدود الإتاحة غير المحسومة والاختبارات على جهاز فعلي والمراجعة السمعية والدمج والنشر غير مثبتة؛ ليست شروط انتظار مراجع بشري للاستمرار في مراجعة المحتوى. لا إعادة توليد أو اعتماد صوت جديد ضمن الخطوة التالية.
+
+---
+
+## سجل تاريخي — CR11: مراجعة A1.5، 2026-10-08
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات التي لم تتغير باقية.
+
+### الطلب والقرارات الثابتة
+
+- المستخدم طلب «واصل»: مراجعة كل نص وحوار وتمرين وتقييم والمشكلات المصادفة، فرديًا وتراكميًا وبالمراجع، ثم التصحيح والاختبار والرفع مباشرة. لا اشتراط لمراجع بشري ولا مساواة بين الاختبارات والصحة اللغوية أو النطق المثبت.
+- المحتوى والتقييم والتطبيق أولًا؛ لا C1 أو إعادة توليد التسجيلات أو إخفائها أو تغيير روابطها أو اعتماد جديد. صفر طلبات صوت في CR11 وحد10طلبات/رد باقٍ. B1.9 للمعاينة وB1.10 للاعتماد النهائي؛ اختيار B1.10 الموجود02/03 وB1.11 existing وبقية خرائط الأصوات التاريخية ملزمة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمج PR#1 أو وصف غير المدمج بالمكتمل. احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون تحويله إلىB2.7.
+- بداية CR11 عادت metadata إلى88f3c06 رغم حداثة الملفات. قورنت653ملفًا مع origin بايتًا بصفر اختلافات/إضافات، ثم فقط reset --mixed إلىd1a551a. لا reset/clean بعد التعديلات دون مقارنة وحفظ العمل.
+
+### ما نُفذ
+
+رُوجع A1.5 — الطعام والشراب: **124 وحدة مراجعة و37 بندًا أو مطلبًا في التمارين الثمانية**، مع12مرجعًا. صُحح الاستنتاج غير المسند عن تفضيل الأخت، وضُبط سؤال الشراب بالمساء وأحيانًا، وسؤال Käse بالمفرد. صار T08/P01 ست جمل عن وجبات اليوم والشراب والتفضيل والطلب، وT04/P02 تطبيق خدمة من أربعة أدوار مع أداء فردي. أضيفت رؤوس جدول التصريف وes وصيغ trinken، ووُضحت أسماء المادة والجمع وحدود mag/möchte. الإصدار `a1-05-v2` والمخزن `v56`؛ فهارس الإجابات العشرة وعتبة80% ثابتة مع تصحيح بعض الصياغات والخيارات. التسجيلان وكلمات حوار المقهى المكتوب محفوظة دون استماع أو اعتماد جديد. **الحملة10/53 درسًا والبوابة مراجعة منفصلة؛ تبقى43درسًا، والتالي A1.6.** لا شهادة CEFR أو دمج مدّعى.
+
+- القراءة: تفضيل الأخت للأرز لا ينفي أنها تحب الحساء كثيرًا؛ السؤال5 أصبح Was mag die Schwester lieber? ومفتاحه Sie mag lieber Reis. T05.1 أصبح Sami frühstückt allein بدل نفي أخ لم يذكره النص؛ وجود الأخت ينفي الوحدة صراحةً.
+- الاستماع: السؤال العام عن الشراب كان يحتمل Wasser وTee؛ السؤال2 وT06.2 قُيدا بالمساء وأحيانًا، والمفتاح Tee. بقية بيانات النص محفوظة؛ جرى ترقيم مفتاح T06 بحسب البنود، لا خلط أربعة فراغات بثلاثة أسئلة.
+- T08/P01: ست جمل، منها ثلاث لفترات الطعام وواحدة للشراب وواحدة بـmag وواحدة بـmöchte، مع ثلاثة أطعمة مختلفة على الأقل ومشروب. min100،writing فقط وspeakAloud=false وaudioRequired=false. النموذج تدريب لغة لا خطة تغذية صحية، والحياة الخيالية متاحة بدل البيانات الحقيقية.
+- T04/P02: بقي حوار الملء بين صديقين بـdu، وأضيف تطبيق خدمة مستقل بأربعة أدوار: Was essen Sie gern? ثم جوابmag، وWas möchten Sie? ثم طلب طعام ومشروب بـmöchte. المصدر والتقييم والنموذج متطابقة؛ P02 نُقل منT08إلىT04. min90 وspeakAloud=true وaudioRequired=false، مع إمكان أداء كل الأدوار منفردًا.
+- T01 صار6بنود واضحة المعنى، وفيه Gemüse ومفرد Käse لدعم Q01/Q07. Q06→T01.4 بعد تقييد المعنى بالفاكهة واستبدال Milchflasche غير المدربة بـMilch؛ Q08 بقي→T04 بعد إضافة طلب Gemüsesuppe فعليًا. Q07 يطلب المفرد المرفوع لأن die Käse جمع صحيح. Q09 قُيد بأمثلة الدرس وأزيل حصر رغبةmöchte فيالآن. الفهارس `[1,2,0,1,0,1,0,0,0,0]` ثابتة، لا ادعاء أن نص كل خيار بقي حرفيًا.
+- T07 حُدد فيه أن الزبون يبدأ بالتحية، مع تحديد المتكلمين؛ د،ب،أ،ج ترتيب وحدات بحسب القيد، لا أربعة أدوار متناوبة أو حوار خدمة كامل. وُحد وسم Service إلىServicekraft دون تغيير كلمات الحوار الأصلي.
+- جدول essen/trinken ذو رؤوس صحيحة ويشملes؛ كان جدولessen القديم يظهر بلا رؤوس، لا غائبًا تمامًا. عُرض الجمع الصحيح Käse/Gemüse وTees للأنواع، وFrühstücke، وقُيد الاستعمال المادي. der Joghurt نموذج مع الاعتراف بـdas وبعض الاستعمال اللهجي المؤنث. أضيفت13مساعدة، وشُرحgern/lieber والتفضيل دون نفي حب البديل، وتصريفmag ونمطSie möchten.
+- المراجع12: GoetheA1 الجزء1؛ Dudenmögen/Käse/Gemüse/Obst/gern/Joghurt/Milch/Kaffee/Frühstück/Tee_Getraenk كاملة، وWasser الجزء0. الرابط العامTee أعاد404 فاستُبدل برابط الشراب الموجود في مدخلKaffee؛ ليس مصدرًا معتمدًا. رفضنا أخطاء استخراجGoethe du fahrst/Wann fährt du ولم نعتبرoft=70% تعريفًا ثابتًا. لم يُجلب مدخل مستقل لكل مفردة أو ترجمة عربية؛ الاستنتاج المنطقي حكم مباشر للمساعد.
+- الصوت: READ-01،Narrator02،ست جمل؛ LST-01،Erzählperson03،أربع جمل. أصلان/مقطعان،ready/offer تاريخيًا، دون تغيير أو استماع جديد. حوار المقهى الأصلي8أدوار والتطبيق الجديد4أدوار نصوص غير مسجلة، ولا أصل صوتي مخفي لهما. قراءة التفريغ لا تثبت فهمًا مسموعًا.
+- الإصدارv1 لا يكفي لفتح A1.6؛ التحقق لا يحذف نتيجة الإتقان القديمة، لكنه يرفض استئناف جلسةv1 كأنهاv2. أول حفظ جديد قد يستبدل مجموعة مسودات الإصدار القديم. حدود الطول والمربعات لا تصحح اللغة أو النطق. نحو30دقيقة تقدير مرن مع خيار جلستين.
+
+### الملفات
+
+- `content/A1/lesson-05-food-drink.md` و`.assessment.json`؛20سجل A1.5 فقط في `data/production-task-catalog.csv`؛ وإعادة بناء `data/course.json`.
+- جديد: `data/reviews/a1-05-review.md` و`.json` و`tools/test_a1_05_review.py`؛ تحديث فهرس المراجعات إلى10/53 والبوابة منفصلة.
+- `tools/test_progression.cjs` للإصدار والأدلة والقفل؛ `tools/test_accessibility_audit.cjs` لحالتي مصدر/أداء A1.5 بعرضين. `service-worker.js` إلىv56 واختباراه `test_service_worker.cjs` و`test_accessibility_update.cjs`.
+- README،PROGRESS،خطة التحسين2.17،تقرير المتصفح،وملفا التسليم. app.js/styles.css/package/lock وسجلا الصوت وMP3 وأداتاbuild/verify لم تتغير.
+
+### الفحوص ونتائجها
+
+- PASS: `build_course.py` و`verify_course.py`، حراس A0.1–5 والبوابة وA1.1–5 (أحد عشر حارسًا)، واختبارات `progression` و`session_persistence` و`daily_plan` و`study_time` و`service_worker`. فحص صياغة app.js/service-worker.js و`git diff --check` نجح.
+- حارس CR11 فشل قبل الإصلاح عند السؤال غير المسند عن حب الحساء كثيرًا. بعد التصحيح نجح في124وحدة/37بندًا أو مطلبًا، المفاتيح والخيارات الجديدة وروابط المصدر والفهرس والبصمات والتسجيلين، مع حفظ أقوال الحوار المكتوب الثمانية.
+- اختبار VM يقبل النموذجين ويرفض القصر والمعايير الناقصة ويشترط الكلام لـP02 فقط. يرفض إتقان/جلسة A1.5v1 ويشترط v2 والأدلة لفتح A1.6؛ لا حذف لنتيجةv1 بمجرد التحقق ولا تصحيح لغوي مستقل مدّعى.
+- PASS للمجموعات الخمس، وأعيدت بعد آخر تعديل: `forms-keyboard` و`accessibility-audit` و`narrow-layout` و`accessibility-update` و`browser`. Chromium143.0.7499.0،Playwright1.58.2،axe-core4.11.0؛ npm ci دون تغيير package/lock.
+- axe: **57 حالة، صفر مخالفات للقواعد المختارة،33 ظهورًا لقواعد غير محسومة و87 ظهورًا للعقد**. ليست87عيبًا مثبتًا فريدًا أو شهادة WCAG. أضيف مصدر A1.5 ونموذج الأداء عند عرضي1440/390؛ نموذج الأداء fixture مباشر لا رحلة متعلم كاملة.
+- العرض الضيق/القصير126حالة عند320×900 و568×320. المتصفح1440×900 و390×844:53درسًا+البوابة/217أصلًا، دون اتصال وRange206/416/503 وتشغيل عينة B2.12 بسرعتي1/0.8. متصفح مكتوم مع تقديم الزمن، لا استماع فعلي أو هاتف فعلي.
+- التحديث الحقيقي من fixture عاملv42 إلىv56 مع بيانات التقييم الحالية، لا ترحيل متصفح حقيقي لنتيجةA1.5v1؛ رفض القديم مغطى منفصلًا فيVM. المخزنv56 يزيل مخازن التطبيق والصوت السابقة؛ افتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتخزينها جميعًا أو دوام الحصة.
+
+الحزمة **1,782,318 بايت**:53درسًا،530سؤال درس+10بوابة،106مهمات درس+3بوابة=109،428عنوان تمرين بالدروس و55قسم حوار و754مفردة. الفهرس1080معرّفًا (431T،540Q،109P). الصوت217أصلًا/474MP3،137ready/80pending كما كان. مقارنةً مع `d1a551aa4cdf6af916f7c156f23e8e41f7b6eb04`: بقية52درسًا والبوابة وجميع كائنات الصوت217 وسجلا الصوت و474MP3 (مطابقة بصماتGit) وصفوف الفهرس خارج A1.5 وapp.js/styles.css/package/lock وأداتاbuild/verify لم تتغير. أقوال حوار المقهى الثمانية مطابقة للمصدر السابق، مع توحيد وسم الدور فقط.
+
+التشغيل الأول لاختبار التدرج رفض نموذج P02 لأن حد110حرفًا كان أعلى من طول النموذج دون أسماء المتكلمين. صُحح الحد إلى90 ليقبل النموذج كما هو، ثم نجح التدرج والفحوص النهائية. الحد نفسه ليس تصحيحًا للغة أو عدًا للأدوار. هذا فشل أولي عولج، لا نتيجة نجاح مزعومة قبل الإصلاح.
+
+### الرفع وما بقي
+
+**إيصال رفع CR11:** دُفع التنفيذ بالـcommit `53f5123b7d43cadf168a699bd1481785cac2bac3` إلى `arena/01a1036f-deutschlern`، وتطابق HEAD المحلي مع `git ls-remote` وكانت مساحة العمل نظيفة. PR#1 مفتوحة وmergedAt=null؛ ظهر الرأس السابقd1a551a في أول فحص مؤقتًا، ثم طابق رأس التنفيذ53f5123 في الفحص التالي. حالة commit وقت الفحص pending وstatuses=[]؛ لا نشر ناجح مثبت ولا ادعاء زوال قيد Vercel السابق أو محاولة لتجاوزه. أساس الدفعة `d1a551aa4cdf6af916f7c156f23e8e41f7b6eb04`. هذا تحديث إيصال مستقل يُرفع بعد التنفيذ؛ لا دمج مدّعى.
+
+**التالي A1.6 — أمس واليوم: مقدمة إلى Perfekt**: `content/A1/lesson-06-yesterday-perfekt.md` وتقييمه. اقرأ النص والتمارين والخيارات والمهمات والتفريغات والفهرس كاملًا؛ وثق كل عنصر ومراجعه، وصحح واختبر وحدّث التسليم وادفع. الحملة10/53 والبوابة منفصلة؛43درسًا باقية. لا تعِد A0.1–5 والبوابة وA1.1–5 من الصفر.
+
+السجل: CR1=67/26،CR2=62/31،CR3=74/40،CR4=82/33،CR5=63/28،CR6بوابة39/12،CR7=124/44،CR8=133/35،CR9=119/34،CR10=123/34،CR11=124/37. الأعداد وحدات/بنود أو مطالب متداخلة لا مهارات مستقلة مثبتة.
+
+بيئة المتصفح المؤقتة: `/tmp/cr11-browser` و`/tmp/chromium` مع `LD_LIBRARY_PATH=/tmp/al2023/lib`. تقرير axe في`/tmp/cr11-a11y.json`. ملفات/tmpلا يُضمن بقاؤها؛ أعد تثبيت الأدوات خارج المستودع عند الحاجة. سكريبتات cr11_fix/review/polish/docs قد تعيد كتابة السجلات أو تعتمد على حالة سابقة؛ لا تكررها عشوائيًا.
+
+## سجل الحالة السابقة — CR10: مراجعة A1.4، 2026-10-08
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات التي لم تتغير باقية.
+
+### الطلب والقرارات الثابتة
+
+- المستخدم طلب «واصل»: مراجعة كل نص وحوار وتمرين وتقييم والمشكلات المصادفة، فرديًا وتراكميًا وبالمراجع، ثم التصحيح والاختبار والرفع مباشرة. لا اشتراط لمراجع بشري، ولا مساواة بين السكريبتات وصحة لغوية أو نطق مثبت.
+- المحتوى والتقييم والتطبيق أولًا؛ لا C1 أو إعادة توليد التسجيلات أو إخفائها أو تغيير روابطها أو اعتماد جديد. صفر طلبات صوت في CR10 وحد10طلبات/رد باقٍ. B1.9 للمعاينة وB1.10 للاعتماد النهائي؛ اختيار B1.10 الموجود02/03 وB1.11 existing وبقية خرائط الأصوات التاريخية ملزمة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمج PR#1 أو وصف غير المدمج بالمكتمل. احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون تحويله إلىB2.7.
+- بداية CR10 عادت metadata إلى88f3c06 رغم حداثة الملفات. قورنت650ملفًا مع origin بايتًا بصفر اختلافات/إضافات، ثم فقط reset --mixed إلى57aabfb. لا reset/clean بعد التعديلات دون مقارنة وحفظ العمل.
+
+### ما نُفذ
+
+رُوجع A1.4 — الروتين اليومي والوقت: **123 وحدة مراجعة و34 بندًا أو مطلبًا في التمارين التسعة**، مع9مراجع. صُحح مفتاح القراءة الناقص، ووُحد T08/P01 على كتابة5–7جمل وثلاث عبارات وقت وفعلين منفصلين مختلفين. وُحد T09/P02 على ثلاثة أسئلة وأجوبتها وتلخيص جوابين بجملتين، مع قراءة جهرية وأداء فردي. وُضحت صيغ الوقت وحدود قاعدة الفصل والبدائل الصحيحة، وصُححت روابط أربعة أسئلة. أُصلح عدّ عناوين التمارين في أداة التحقق بدل حذف العناوين التوضيحية. الإصدار `a1-04-v2` والمخزن `v55`؛ المفاتيح العشرة وعتبة80% محفوظة. التسجيلان لم يتغيرا ولم يُجرَ استماع أو اعتماد جديد. **الحملة9/53 درسًا والبوابة مراجعة منفصلة؛ تبقى44درسًا، والتالي A1.5.** لا شهادة CEFR أو دمج مدّعى.
+
+- T06 كان مفتاحه sieben؛neun؛drei؛elf، وفيه جواب sechs مفقود. صار مرقمًا:1sieben،2neun—drei،3sechs،4elf،5frühstückt؛ البند الخامس الجديد يدرب فعل الفطور قبل Q09. أضيفت مفاتيح أسئلة القراءة الخمسة والاستماع الأربعة.
+- T08/P01: كتابة5–7جمل، ثلاث عبارات وقت على الأقل، وفعلان منفصلان مختلفان من aufstehen/einkaufen/anrufen. min90،writing فقط،speakAloud=false وaudioRequired=false. نموذج اليوم ست جمل؛ لا بيانات شخصية حقيقية لازمة ولا فرض كلام على مهمة كتابية.
+- T09/P02: ثلاثة أسئلة ثابتة وأجوبتها بدور Sami، ثم تلخيص جواب السؤال الأول باسم Sami والثاني بـEr. min170،speakAloud=true وaudioRequired=false. تُكتب وتُقرأ جميع الأجزاء، ويمكن أداء الدورين منفردًا. نموذج جديد من6أدوار+جملتي تلخيص غير مسجل؛ ليس حوارًا موجودًا في الصوت.
+- قُيد فصل البادئة بالجملة الخبرية البسيطة في الحاضر، والموقع الثاني كتلة لا كلمة. جدول6صفوف/3أفعال يدعم التصريف. مع möchte يبقى مصدر anrufen متصلًا. أضيفت شروح schlafen/schlafen gehen وfahren/frühstücken وأفعال التلخيص والضمائر، دون ادعاء تعليم كل الحالات أو أنواع الجمل.
+- عُرض halb acht=7:30 وhalb sieben=6:30، وقُبلت القراءة الرقمية في T02. نظام12ساعة لا يحدد الصباح/المساء وحده، والسياق يفسر اليومين الخياليين المستقلين. لا نخطئ صيغ الربع الإقليمية. aufstehen نهوض من الفراش، وschlafen حالة نوم لا بداية النوم بالضرورة؛ التسجيلان محفوظان حرفيًا.
+- T04 يحدد البدايات مع قبول مرونة heute، وT05 يستعمل im Supermarkt بدل im Markt كتحسين سياقي لا منع مطلق. Q05 يطلب البادئة النهائية في نمط الدرس، وQ07 يطلب rufe الكاملة ذات-e دون إنكار Ich ruf في الكلام. الروابط Q07/Q08/Q09/Q10→T04/T09/T06/T03؛ فهارس المفاتيح `[1,1,1,1,0,0,1,1,0,0]` ثابتة.
+- المراجع9: GoetheA1 الجزء1؛ LingoliaUhrzeit وtrennbare كاملتان؛ Dudenaufstehen/frühstücken/anrufen/schlafen كاملة، وfahren الجزء0؛ Netzverbanrufen/Präsens الجزء0. لم نعتمد du fahrst أوWann fährt du المستخرجتين منGoethe، ولاoft=70% كتعريف ثابت. لم يُجلب مدخل مستقل لكل كلمة/ترجمة؛ تنبيه حذفe في الكلام حكم للمساعد، لا اقتباس من جدولNetzverb.
+- الصوت: READ-01،Narrator02،سبع جمل؛ LST-01،Erzählperson03،ست جمل. أصلان/مقطعان،ready/offer تاريخيًا. لا تعديل للكلمات أو الأصوات أو الروابط أو الحالات، ولا توليد أو استماع جديد. القراءة البديلة لا تثبت فهمًا مسموعًا.
+- v1 لا يكفي لفتح A1.5؛ مجرد التحقق لا يحذف نتيجة الإتقان القديمة. جلسةv1 لا تستأنف كـv2، وأول حفظ جديد قد يستبدل مجموعة المسودات القديمة. حد الطول والمربعات لا يصححان اللغة أو النطق. نحو30دقيقة تقدير مرن مع خيار جلستين.
+
+### الملفات
+
+- `content/A1/lesson-04-daily-routine-time.md` و`.assessment.json`؛21سجل A1.4 فقط في `data/production-task-catalog.csv`؛ وإعادة بناء `data/course.json`.
+- جديد: `data/reviews/a1-04-review.md` و`.json` و`tools/test_a1_04_review.py`؛ وتحديث فهرس المراجعات إلى9/53 والبوابة منفصلة.
+- `tools/verify_course.py`: يعد عنوان التمرين وفق نمط بداية العنوان، لا مجرد وجود كلمة تمرين فيه، مثل المصدر؛ يبقى428عنوان تمرين. `tools/test_progression.cjs` للإصدار والأدلة، و`tools/test_accessibility_audit.cjs` لحالتي مصدر/أداء A1.4 بعرضين.
+- `service-worker.js` إلىv55 واختباراه `test_service_worker.cjs` و`test_accessibility_update.cjs`؛ README،PROGRESS،خطة التحسين2.16،تقرير المتصفح،وملفا التسليم. app.js/styles.css/package/lock وسجلا الصوت وMP3 لم تتغير.
+
+### الفحوص ونتائجها
+
+- PASS: `build_course.py` و`verify_course.py`، حراس A0.1–5 والبوابة وA1.1–4 (عشرة حراس)، واختبارات `progression` و`session_persistence` و`daily_plan` و`study_time` و`service_worker`. فحص صياغة app.js/service-worker.js وترجمة verify_course.py و`git diff --check` نجح.
+- فشل حارس CR10 قبل الإصلاح عند غياب جوابsechs من T06. بعد التصحيح نجح في123وحدة/34بندًا أو مطلبًا، المفاتيح وروابط المصدر والفهرس والبصمات والتسجيلين. يفحص أيضًا أن12عنوانًا تتضمن كلمة تمرين لكن9فقط هي عناوين تمارين فعلية؛ الثلاثة الأخرى شروح أو نماذج.
+- اختبار VM يقبل النموذجين ويرفض القصر والمعايير الناقصة ويطلب الكلام لـP02 فقط. يرفض نتيجة/جلسة A1.4v1 ويشترط v2 والأدلة لفتح A1.5؛ لا حذف لنتيجةv1 بمجرد التحقق، ولا تصحيح لغوي مستقل مدّعى.
+- PASS للمجموعات الخمس، وأعيدت بعد آخر تعديل تعليمي: `forms-keyboard` و`accessibility-audit` و`narrow-layout` و`accessibility-update` و`browser`. Chromium143.0.7499.0،Playwright1.58.2،axe-core4.11.0، وnpm ci دون تغيير package/lock.
+- axe: **53 حالة، صفر مخالفات للقواعد المختارة،30 ظهورًا لقواعد غير محسومة و81 ظهورًا للعقد**. ليست81عيبًا مثبتًا فريدًا أو شهادة WCAG. أضيف مصدر A1.4 ونموذج الأداء عند عرضي1440/390؛ نموذج الأداء fixture مباشر لا رحلة متعلم كاملة.
+- العرض الضيق/القصير126حالة عند320×900 و568×320. المتصفح1440×900 و390×844:53درسًا+البوابة/217أصلًا، دون اتصال وRange206/416/503، وتشغيل عينة B2.12 بسرعتي1/0.8. متصفح مكتوم مع تقديم الزمن، لا مراجعة سمعية أو جهاز فعلي.
+- التحديث الحقيقي من fixture عاملv42 إلىv55 مع بيانات التقييم الحالية، لا ترحيل متصفح حقيقي لنتيجةA1.4v1؛ رفض الإصدار القديم في اختبارVM منفصل. المخزنv55 يزيل مخازن التطبيق والصوت السابقة؛ يلزم فتح المقاطع متصلًا لإعادة تخزينها، ولا ضمان لتخزين كل الصوت أو دوام الحصة.
+
+الحزمة **1,770,457 بايت**:53درسًا،530سؤال درس+10بوابة،106مهمات درس+3بوابة=109،428عنوان تمرين بالدروس و55قسم حوار و754مفردة. الفهرس1080معرّفًا (431T،540Q،109P). الصوت217أصلًا/474MP3،137ready/80pending كما كان. مقارنةً مع `57aabfb19fa16a6de6efc254721f6d2f6b991571`: بقية52درسًا والبوابة وجميع كائنات الصوت217 وسجلا الصوت و474MP3 (مطابقة بصماتGit) وصفوف الفهرس خارج A1.4 وapp.js/styles.css/package/lock لم تتغير.
+
+أول تحقق بعد إضافة الشروح أبلغ9عناوين مصدر مقابل12معروضة؛ كان السبب فحص وجود كلمة تمرين في أي عنوان. صُحح المحدد فيverify_course.py لتطابق بداية عنوان التمرين مع معيار المصدر، ونجح التحقق لجميع الدروس. سكريبت إنشاء سجل المراجعة التقط «حدود التحقق» كأنه دور مقابلة تاسع؛ ضُبط على وسوم السائل/Sami/التلخيص، ثم نجح توليد123وحدة والحارس. لم يكن ذلك حوارًا إضافيًا أو خطأ تشغيل في التطبيق. لا تعِد سكريبتات الإنتاج المؤقتة عشوائيًا بعد تحديث التوثيق.
+
+### الرفع وما بقي
+
+**إيصال رفع CR10:** دُفع التنفيذ بالـcommit `936e293b40d764c2f190d11a423cb9aebfad1845` إلى `arena/01a1036f-deutschlern`، وتطابق HEAD المحلي مع `git ls-remote` وكانت مساحة العمل نظيفة. PR#1 مفتوحة وmergedAt=null؛ أول فحص للرأس أظهر57aabfb مؤقتًا، ثم أظهر الفحص التالي رأس التنفيذ936e293 المطابق. حالة commit وقت الفحص pending وstatuses=[]؛ لا نشر ناجح مثبت ولا ادعاء زوال قيد Vercel السابق أو محاولة لتجاوزه. أساس الدفعة `57aabfb19fa16a6de6efc254721f6d2f6b991571`. هذا تحديث إيصال مستقل يُرفع بعد التنفيذ؛ لا دمج مدّعى.
+
+**التالي A1.5 — الطعام والشراب**: `content/A1/lesson-05-food-drink.md` وتقييمه. اقرأ النص والتمارين والخيارات والمهمات والتفريغات والفهرس كاملًا؛ وثق كل عنصر ومراجعه، وصحح واختبر وحدّث التسليم وادفع. الحملة9/53 والبوابة منفصلة؛44درسًا باقية. لا تعِد A0.1–5 والبوابة وA1.1–4 من الصفر.
+
+السجل: CR1=67/26،CR2=62/31،CR3=74/40،CR4=82/33،CR5=63/28،CR6بوابة39/12،CR7=124/44،CR8=133/35،CR9=119/34،CR10=123/34. الأعداد وحدات/بنود أو مطالب متداخلة لا مهارات مستقلة مثبتة.
+
+بيئة المتصفح المؤقتة: `/tmp/cr10-browser` و`/tmp/chromium` مع `LD_LIBRARY_PATH=/tmp/al2023/lib`. تقرير axe في`/tmp/cr10-a11y.json`. ملفات/tmpلا يُضمن بقاؤها؛ أعد تثبيت الأدوات خارج المستودع عند الحاجة. سكريبتات cr10_fix/review/polish/docs قد تعيد كتابة السجلات أو تعتمد على حالة سابقة؛ لا تكررها عشوائيًا.
+
+## سجل الحالة السابقة — CR9: مراجعة A1.3، 2026-10-08
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات التي لم تتغير باقية.
+
+### الطلب والقرارات الثابتة
+
+- المستخدم طلب «واصل»: مراجعة كل نص وحوار وتمرين وتقييم والمشكلات المصادفة، فرديًا وتراكميًا وبالمراجع، ثم التصحيح والاختبار والرفع مباشرة. لا اشتراط لمراجع بشري ولا ادعاء أن السكريبتات تثبت كل حكم لغوي.
+- المحتوى والتقييم والتطبيق أولًا؛ لا C1 أو إعادة توليد التسجيلات أو إخفائها أو تغيير روابطها أو اعتماد صوتي جديد. صفر طلبات صوت في CR9 وحد10طلبات/رد باقٍ. B1.9 للمعاينة وB1.10 للاعتماد النهائي؛ اختيار B1.10 الموجود02/03 وB1.11 existing وبقية خرائط الأصوات التاريخية ملزمة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمج PR#1 أو وصف غير المدمج بالمكتمل. احفظ A2.7Q08→T05 واتساق A2.9 وتاريخ B2.6 دون تحويله إلىB2.7.
+- بداية CR9 عادت metadata إلى88f3c06 رغم حداثة الملفات؛ قورنت647ملفًا مع origin بايتًا وصفر اختلافات/إضافات قبل reset --mixed إلى97bdd61. لا reset/clean لاحقًا دون مقارنة وحفظ العمل.
+
+### ما نُفذ
+
+رُوجع A1.3 — المدينة والمقهى والفندق: **119 وحدة مراجعة و34 بندًا داخل التمارين التسعة**. وُحد T08/P01 على أربعة أقوال للزبون تشمل الطعام والشراب وسؤال السعر والتحية والشكر والقراءة الجهرية. صار T09/P02 مسارًا خياليًا محددًا وثلاث تعليمات وجملة مكان، كتابيًا دون اشتراط صورة أو كلام. صُححت روابط أربعة أسئلة وغموض أدوات T01 وترتيب T05 واستنتاج القراءة T06. أضيف تدريب Zimmer وشروح الطلب والمكان، وفُصلت سيناريوهات القراءة والاستماع والطريق. الإصدار `a1-03-v2` والمخزن `v54`؛ مفاتيح الأسئلة العشرة وعتبة80% محفوظة. ثلاثة أصول صوتية/12مقطعًا لم تتغير ولم يُجرَ استماع أو اعتماد جديد. **الحملة8/53 درسًا والبوابة مراجعة منفصلة؛ تبقى45درسًا، والتالي A1.4.** لا شهادة CEFR أو دمج مدّعى.
+
+- T08/P01: أربع وحدات للزبون، طلب مشروب وطعام وسؤال مجموع السعر، بلا اختراع سعر أو رد عامل. min70 وspeakAloud=true وaudioRequired=false؛ نموذج الشاي والحساء. ليس تفاعلًا ثنائيًا مقيسًا.
+- T09/P02: البداية من المحطة نحو الصيدلية أمامها عند التقاطع؛ يمين عند الصيدلية ثم مباشرة إلى المقهى؛ المتحف بجانبه. ثلاث تعليمات+جملة مكان، min100 وspeakAloud=false وaudioRequired=false. هو نقل من وصف مكتوب، لا تقييم قراءة خريطة بصرية أو طريق حقيقي.
+- T01 يطلب الاسم مع Nominativ صراحة؛ der Apotheke ليس خطأ مطلقًا بل صالح في Dativ بسياقه. T05 يبدأ الزبون بحسب القيد المحدد؛ بدء الموظف صحيح في سياقات أخرى. T06.1 صار اتجاهًا يناقض النص مباشرة، بدل نفي موقع لم ينفه النص.
+- Q06→T07 مع بند4 لنقل سؤال Bahnhof كتابيًا، لا سؤال جديد في تسجيل المتحف. Q07→T09 لنمط Gehen Sie؛ Q08/Q09→T01 لتدريب Museum/Apotheke. Q04 حافظ على السؤال والمفتاح مع إضافة Zimmer إلى التدريب. فهارس الأسئلة `[1,2,1,1,0,0,0,1,0,0]` ثابتة.
+- أضيف es إلى صف möchte المفرد الثالث، وشُرحت أودّ والرغبة الحالية ومفعول الطلب والأجناس، وein Wasser كحصة بحسب الموقف لا عدّ للمادة أو حجم مفروض. لا نفي مطلق للجمع Wasser/Wässer. أداة ein Stück Kuchen تتبع Stück.
+- القراءة والاستماع والمهمة9 ثلاثة مواقف مستقلة: المتحف مقابل المقهى في القراءة وبجانبه في الاستماع والمهمة. الحوار7أدوار: Servicekraft02/Gast03؛ القراءة Narrator02 بمقطع؛ الاستماع4أدوار ReisendePerson03/Auskunftsperson02. جميع الكلمات والأصوات والروابط والحالات محفوظة؛ حُدث وسم Service في المصدر إلى Servicekraft فقط.
+- المراجع6: GoetheA1 الجزآن0/1،DudenWasser الجزآن0/1،Haltestelle/Museum/gegenüberPräposition/mögen كاملة. رُفض رابط Netzverb المخمن الذي ولّد moegte، وروابط Duden404؛ لم نعتمد أخطاء استخراج Goethe ولا نتيجة möchtete المتنازع عليها. ليست كل ترجمة عربية أو اسم موثقًا بمدخل مستقل؛ تفسير حصة Wasser حكم سياقي للمساعد، لا اقتباس من Duden.
+- v1 لا يكفي للمتابعة إلى A1.4، لكن مجرد التحقق لا يحذف سجل الإتقان. جلسةv1 لا تستأنف كـv2، وأول حفظ جديد قد يستبدل مجموعة المسودات القديمة. لا تصحيح آلي للنطق أو الكتابة المفتوحة بالمربعات أو حد الطول. الوقت30–35دقيقة تقدير مرن.
+
+### الملفات
+
+- `content/A1/lesson-03-city-cafe-hotel.md` و`.assessment.json`؛21سجل A1.3 فقط في `data/production-task-catalog.csv`؛ وإعادة بناء `data/course.json`.
+- جديد: `data/reviews/a1-03-review.md` و`.json` و`tools/test_a1_03_review.py`؛ وتحديث فهرس المراجعات.
+- `tools/test_progression.cjs` للإصدار والأدلة؛ `tools/test_accessibility_audit.cjs` للحالتين بعرضين؛ `service-worker.js` إلىv54 واختباراه `test_service_worker.cjs` و`test_accessibility_update.cjs`.
+- README،PROGRESS،خطة التحسين2.15،تقرير المتصفح،وملفا التسليم. لا تعديل app.js/styles.css/package/lock أو سجلات الصوت أو MP3.
+
+### الفحوص ونتائجها
+
+- PASS: `build_course.py` و`verify_course.py`؛ حراس A0.1–5 والبوابة وA1.1–3؛ اختبارات `progression` و`session_persistence` و`daily_plan` و`study_time` و`service_worker`، وفحص صياغة app.js/service-worker.js و`git diff --check`.
+- حارس CR9 فشل قبل الإصلاح فعلًا عند غياب سؤال السعر من P01، ثم نجح بعد المطابقة. يفحص119وحدة/34بندًا، المفاتيح وروابط المصدر والفهرس والبصمات والأصول الصوتية. اختبار VM يقبل النموذجين ويرفض القصر والمعايير الناقصة، ويشترط الكلام لـP01 فقط؛ يرفض إتقان/جلسة A1.3v1 ويشترط v2 والأدلة لفتح A1.4، دون حذف نتيجةv1 بمجرد التحقق.
+- PASS للمجموعات الخمس بالتتابع وأعيدت بعد آخر تعديل للمصدر: `forms-keyboard` و`accessibility-audit` و`narrow-layout` و`accessibility-update` و`browser`. Chromium143.0.7499.0،Playwright1.58.2،axe-core4.11.0؛ npm ci دون تغيير package/lock.
+- axe: **49 حالة، صفر مخالفات للقواعد المختارة،27 ظهورًا لقواعد غير محسومة و75 ظهورًا للعقد**؛ ليست75عيبًا مثبتًا فريدًا أو شهادة WCAG. أضيف مصدر A1.3 ونموذج المهمتين عند عرضي1440/390. نموذج الأداء fixture مباشر، وليس اختبار رحلة متعلم كاملة أو تصحيح لغة.
+- العرض الضيق/القصير126حالة عند320×900 و568×320. المتصفح1440×900 و390×844:53درسًا+البوابة/217أصلًا، دون اتصال وRange206/416/503 وتشغيل عينة B2.12 بسرعتي1/0.8. المتصفح مكتوم مع تقديم الزمن؛ لا مراجعة سمعية أو هاتف فعلي.
+- التحديث الحقيقي من fixture عاملv42 إلىv54 مع بيانات التقييم الحالية؛ ليس ترحيلًا حقيقيًا لنتيجة A1.3v1 في متصفح. اختبارVM المنفصل يغطي رفضv1. المخزنv54 يزيل مخازن التطبيق والصوت الأقدم؛ افتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتخزين كل الصوت أو دوام الحصة.
+
+الحزمة **1,757,564 بايت**:53درسًا،530سؤال درس+10بوابة،106مهمات درس+3بوابة=109،428عنوان تمرين بالدروس و55قسم حوار و754مفردة. الفهرس1080معرّفًا (431T،540Q،109P). الصوت217أصلًا/474MP3،137ready/80pending كما كان. مقارنةً مع `97bdd61bf700a8fe448765296dcd88ba7da1812f`: بقية52درسًا والبوابة وجميع كائنات الصوت217 وسجلا الصوت و474MP3 (مطابقة بصمات Git) وصفوف الفهرس خارج A1.3 وapp.js/styles.css/package/lock لم تتغير.
+
+فشل أول تشغيل للمتصفح بسبب libnspr4.so: فُك أرشيف al2023 أولًا إلى/tmp/lib بدل/tmp/al2023/lib؛ صُحح مكان الفك ونجحت المجموعات الخمس. فحص الحفظ الأول أخطأ باسم سجل الصوت audio-asset-catalog.csv؛ الاسم الصحيح audio-asset-register.csv، ثم أعيد الفحص الكامل ونجح. لا فشل تطبيق غير محلول من هذين الخطأين، ولا تحويل تشغيل فاشل إلى نجاح مزعوم.
+
+### الرفع وما بقي
+
+**إيصال رفع CR9:** دُفع التنفيذ بالـcommit `393b8feabadedb2ee05e1fe97e2979695d5834ab` إلى `arena/01a1036f-deutschlern`، وتطابق HEAD المحلي مع `git ls-remote` وكانت مساحة العمل نظيفة بعد الدفع. PR#1 مفتوحة وmergedAt=null وheadRefOid مطابق للتنفيذ. حالة commit وقت الفحص: pending وstatuses=[]؛ لا نشر ناجح مثبت ولا ادعاء زوال قيد Vercel السابق، ولا محاولة لتجاوزه. أساس الدفعة `97bdd61bf700a8fe448765296dcd88ba7da1812f`. هذا تحديث إيصال مستقل يُرفع بعد التنفيذ؛ لا دمج مدّعى.
+
+**التالي A1.4 — الروتين اليومي والوقت**: `content/A1/lesson-04-daily-routine-time.md` وتقييمه. اقرأ النص والتمارين والخيارات والمهمات والتفريغات والفهرس كاملًا؛ وثق كل عنصر ومراجعه، وصحح واختبر وحدّث التسليم وادفع. الحملة8/53 والبوابة منفصلة؛45درسًا باقية. لا تعِد A0.1–5 والبوابة وA1.1–3 من الصفر.
+
+السجل: CR1=67/26،CR2=62/31،CR3=74/40،CR4=82/33،CR5=63/28،CR6بوابة39/12،CR7=124/44،CR8=133/35،CR9=119/34. وحدات/بنود متداخلة لا مهارات مستقلة مثبتة.
+
+بيئة المتصفح المؤقتة: `/tmp/cr9-browser` و`/tmp/chromium`، `LD_LIBRARY_PATH=/tmp/al2023/lib`. تقارير/tmpلا يُضمن بقاؤها؛ أعد تثبيت التبعيات خارج المستودع عند الحاجة. لا تعِد سكريبتات cr9_fix/review/docs عشوائيًا: بعضها غير تكراري أو يكتب السجلات من جديد.
+
+## سجل الحالة السابقة — CR8: مراجعة A1.2، 2026-10-07
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات القديمة التي لم تتغير باقية وملزمة.
+
+### الطلب والقرارات الثابتة
+
+- المستخدم طلب «واصل»: مراجعة كل نص وحوار وتمرين وتقييم والمشكلات المصادفة فرديًا وتراكميًا، مع مراجع الإنترنت، ثم تصحيح واختبار ورفع كل تعديل مباشرة. لا اشتراط لمراجع بشري ولا ادعاء أن السكريبتات تثبت كل حكم لغوي أو جودة النطق.
+- المحتوى والتقييم والتطبيق أولًا؛ لا C1 أو إعادة توليد الصوت أو إخفائه أو تغيير روابطه أو اعتماد جديد. هذه الدفعة صفر طلبات صوت؛ حد10طلبات/رد باقٍ. B1.9 للمعاينة وB1.10 للاعتماد النهائي؛ أصوات B1.10 الموجودة02/03 واختيار B1.11 existing محفوظة، وبقية خرائط الأصوات التاريخية ملزمة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمج PR#1 أو وصف غير المدمج بأنه مكتمل. حافظ على A2.7 Q08→T05 واتساق A2.9 وتاريخ B2.6 وإصداري B2.5/B2.7v2.
+- عند بداية CR8 عادت metadata إلى88f3c06 رغم الملفات الحديثة؛ قورنت644ملفًا بايتًا مع origin، وصفر اختلافات/إضافات، قبل reset --mixed إلى38642b5. لا تكرر reset/clean بعد تعديلات جديدة دون مقارنة وحفظ.
+
+### ما نُفذ
+
+رُوجع A1.2 — الأسرة والمهن: **133 وحدة مراجعة و35 بندًا داخل التمارين التسعة**. وُحدت T08/P01 إلى خمس جمل كتابية عن ثلاثة أفراد واسم أحدهم ومهنته، وT09/P02 إلى ثلاثة أسئلة وأجوبتها وتلخيص بجملتين مع أداء فردي. قُيد جدول mein/dein بالرفع، ووُضح Akkusativ، وصُحح استنتاج غير مسند في تمرين القراءة. أضيفت مفاتيح أسئلة النصين ورؤوس جدول arbeiten. الإصدار `a1-02-v2` والمخزن `v53`؛ يلزم إعادة إتقان v1 للمتابعة. المفاتيح العشرة وعتبة 80% محفوظة؛ Q08 يوضح مدينة تونس، وQ09 مرتبط بنمط T04. الصوت محفوظ دون تغيير أو استماع جديد. **الحملة 7/53 درسًا، والبوابة مراجعة منفصلة**؛ التالي A1.3، وتبقى46 درسًا. لا شهادة CEFR أو دمج مدّعى.
+
+- T08/P01: خمس جمل مكتوبة عن ثلاثة أفراد خياليين واسم أحدهم ومهنته؛ حد80حرفًا، writing فقط وspeakAloud=false. نموذج الأب Ali/Koch ثم الأم والأخ. لا فرض بيانات حقيقية أو قراءة صوتية غير مدربة.
+- T09/P02: ثلاثة أزواج عن الإخوة ومهنة الأب ومكان عمله، ثم تلخيص بجملتين باستخدام Der Vater ثم Er؛ حد140حرفًا وspeakAloud=true. قراءة جميع الأجزاء، مع أداء الدورين منفردًا دون شريك/تسجيل. Was machen deine Eltern beruflich? بقي مشروحًا كسؤال صحيح مختلف عن سؤال الأب.
+- قُيد mein/meine وdein/deine بالرفع Nominativ، مع مقابلة einen/eine بعد haben وmeinen Bruder بعد sehe؛ لا اشتقاق جميع الحالات مطلوب. أضيفت رؤوس جدول arbeiten وتفسير e وأربع صيغ studieren. الجدول القديم كان يظهر بلا رؤوس، لا غائبًا؛ لم نغيّر renderer أو app.js/CSS.
+- T05 أصبح بعنوان يشمل المهنة والمكان والإخوة وبنك أسئلة، وT04 يحدد بداية الجمل دون إنكار بدائل صحيحة. T06.3 تغير من عمل Sami في Nabeul إلى الدراسة فيها، لأن الدراسة في Tunis لا تنفي عملًا غير مذكور؛ الحكم مقيد بما يقوله النص.
+- Q08 يوضح مدينة تونس/العاصمة بدل التباس البلد. Q09→T04 تحسين ربط نمطsein+مهنة؛ المصدر يستعمل Schwester لا Tante، فلا ندعي تطابقًا حرفيًا. فهارس الإجابات العشرة ثابتة. أضيفت مفاتيح أسئلة النصين8 وشروح18 للمفردات والضمائر والعبارات المساعدة.
+- القراءة Rania=voice-02 (8جمل)، والاستماع Youssef=voice-03 (7جمل)؛ أصلان/مقطعان مطابقان للمصدر، ready/offer تاريخيًا. لا تعديل أو استماع أو اعتماد جديد. المقابلة الجديدة6أدوار+2تلخيص كتابية غير مسجلة. القراءة البديلة لا تثبت فهمًا مسموعًا، والتقييم لا يعتمد على الصوت.
+- المصادر: Goethe A1 الجزء1 في هذه الدفعة، Netzverb arbeiten الجزء0، Lingolia Possessivartikel الجزء0، وDuden Eltern/Geschwister/Tochter/Sohn/Ärztin/Köchin كاملة. رفضنا صيغ Goethe المستخرجة du fahrst/Wann fährt du? ولم ننقل oft=70% كحقيقة. Geschwister هنا جمع لكن له مفرد متخصص/سويسري، فلا نطلق نفي المفرد. لم يُجلب مدخل مستقل لكل مفردة أو ترجمة عربية؛ لا تحقق معجمي مزعوم للجميع.
+- a1-02-v2 يلزم إعادة الإتقان قبل A1.3؛ لا حذف لنتيجةv1 بمجرد التحقق. جلسةv1 لا تستأنف كـv2، وقد تستبدل مجموعة المسودات القديمة عند أول حفظ جديد. الحدود والمربعات لا تقيس جودة اللغة أو النطق، و30دقيقة تقدير مرن.
+
+### الملفات
+
+- `content/A1/lesson-02-work-family.md` و`.assessment.json`؛21سجل A1.2 فقط في `data/production-task-catalog.csv`؛ وإعادة `data/course.json`.
+- جديد: `data/reviews/a1-02-review.md` و`.json` و`tools/test_a1_02_review.py`؛ فهرس المراجعات7/53 والبوابة منفصلة.
+- `tools/test_progression.cjs` للإصدار والأدلة والقفل؛ `tools/test_accessibility_audit.cjs` لمصدر A1.2 ونموذج مهمتيه عند عرضين. `service-worker.js` v53 واختبارا SW/update.
+- README،PROGRESS،خطة التحسين2.14،تقرير المتصفح،وملفا التسليم. app.js/styles.css/package/lock وسجلا الصوت وMP3 لم تتغير.
+
+### الفحوص ونتائجها
+
+- PASS: `build_course.py` و`verify_course.py`، حراس A0.1–5 والبوابة وA1.1 وA1.2، والتدرّج وحفظ الجلسة وخطة اليوم ووقت الدراسة وعامل الخدمة، وصياغة app.js/service-worker.js و`git diff --check`.
+- حارس CR8 فشل قبل الإصلاح فعلًا عند معيار P02 الذي يقبل سؤالين. بعد التصحيح يراجع ثلاثة أسئلة، وضبط الملكية والمفاتيح والأدلة والمصدر والفهرس والبصمات. اختبار VM يقبل النموذجين، ويرفض القصر والمعايير الناقصة، ويطلب الكلام لـP02 فقط؛ يرفض إتقان/جلسة v1 ويشترط v2 والأدلة لفتح A1.3، دون حذف نتيجة v1 عند مجرد التحقق.
+- PASS للمجموعات الخمس بالتتابع: forms-keyboard، accessibility-audit، narrow-layout، accessibility-update، browser. Chromium143.0.7499.0 وPlaywright1.58.2 وaxe-core4.11.0؛ `npm ci` دون تغيير package/lock.
+- axe: **45 حالة، صفر مخالفات للقواعد المختارة،24 ظهورًا لقواعد غير محسومة و69 ظهورًا للعقد**. ليست69عيبًا مثبتًا فريدًا أو اعتماد WCAG. أضيف مصدر A1.2 ونموذج مهمتيه عند عرضي1440/390 مع بقاء الحالات السابقة.
+- العرض الضيق/القصير:126حالة عند320×900 و568×320. المتصفح1440×900 و390×844:53درسًا+البوابة/217أصلًا، وفحوص دون اتصال وRange206/416/503 وتشغيل عينة B2.12 بسرعتي1/0.8. المتصفح مكتوم مع تقديم الزمن؛ لا استماع أو اختبار جهاز فعلي.
+- اختبار التحديث الحقيقي من fixture عامل v42 إلى v53 مع بيانات التقييم الحالية؛ ليس ترحيل متصفح فعليًا لنتيجة A1.2 v1. اختبار VM منفصل يغطي رفض الإصدار القديم. عامل v53 يحذف مخازن التطبيق والصوت السابقة؛ يلزم فتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتنزيل كل الصوت أو بقاء الحصة.
+
+الحزمة **1,747,314 بايت**:53درسًا،530سؤال درس+10بوابة،106مهمات درس+3بوابة=109،428عنوان تمرين بالدروس و55قسم حوار و754مفردة. الفهرس1080معرّفًا (431T:428درس+3بوابة؛540Q؛109P). الصوت217أصلًا/474MP3،137ready/80pending كما كان. بالمقارنة مع `38642b5656bb12d82ce18d46b5d9cbbc46636bc4`: بقية52درسًا والبوابة وكائنات الصوت217 وسجلا الصوت و474MP3 وصفوف الفهرس خارج A1.2 وapp.js/styles.css/package/lock دون تغيير.
+
+- سكريبت مؤقت لتنسيق سجل المراجعة أخطأ بفاصل في معرّف T-01؛ لم يكتب ملفًا عند الفشل. صُحح وشُغّل بنجاح ثم أعيد حارس CR8 وdiff-check؛ ليس فشلًا في التطبيق. لا تعِد تشغيله أو سكريبتات الإنتاج المؤقتة عشوائيًا بعد تغييرات لاحقة.
+
+### الرفع وما بقي
+
+- آخر أساس مرفوع قبل CR8: `38642b5656bb12d82ce18d46b5d9cbbc46636bc4` (إيصالCR7)، وتنفيذCR7 `31b69215c478ca1dbf6c61f8cb42cb6c3231c1f0`.
+- تنفيذ CR8 دُفع بالـcommit `f47723bff1f02703b1bec28b5e5e5ce05c9c0b50` إلى `arena/01a1036f-deutschlern`. تطابق HEAD المحلي مع `git ls-remote` وكانت مساحة العمل نظيفة بعد الدفع. PR#1 مفتوحة وmergedAt=null وheadRefOid مطابق للتنفيذ. حالة commit وقت الفحص: pending وstatuses=[]؛ لا نشر ناجح مثبت ولا ادعاء زوال قيد Vercel السابق، ولا محاولة يدوية لتجاوزه. هذا إيصال توثيقي مستقل يُرفع بعد التنفيذ؛ لا دمج مدّعى.
+- **الحملة7/53 درسًا والبوابة مراجعة منفصلة؛ تبقى46درسًا.** CR1=67/26،CR2=62/31،CR3=74/40،CR4=82/33،CR5=63/28،CR6بوابة39/12،CR7=124/44،CR8=133/35. الأعداد وحدات/بنود متداخلة، لا مهارات مستقلة مثبتة.
+- **التالي A1.3**: `content/A1/lesson-03-city-cafe-hotel.md` وتقييمه؛ اقرأ المصدر والخيارات والمهمات والتفريغات والفهرس كاملًا، ثم وثق كل عنصر ومراجعه، وصحح واختبر وحدّث التسليم وادفع. لا تعِد A0.1–5 والبوابة وA1.1–2 من الصفر.
+- ملفات/tmpلا يُضمن بقاؤها؛ أدوات المتصفح في/tmp/cr8-browser و/tmp/chromium ومكتبات/tmp/al2023/lib، وثبّتها خارج المستودع عند الحاجة. لا إعادة عمياء لسكريبتات cr8_fix/review/polish/docs لأنها تعتمد على الحالة السابقة.
+
+
+## سجل الحالة السابقة — CR7: مراجعة A1.1، 2026-10-07
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات القديمة غير المعدلة باقية وملزمة.
+
+### الطلب والقرارات الثابتة
+
+- المستخدم طلب «واصل»: مراجعة كل نص وحوار وتمرين وتقييم والمشكلات المصادفة فرديًا وتراكميًا مع مراجع الإنترنت، ثم تصحيح واختبار ورفع كل تعديل مباشرة. لا اشتراط لمراجع بشري ولا ادعاء أن السكريبتات تثبت كل حكم لغوي.
+- المحتوى والتقييم والتطبيق أولًا؛ لا C1 أو إعادة توليد الصوت أو إخفائه أو تغيير روابطه أو اعتماد جديد. هذه الدفعة صفر طلبات صوت؛ الحد 10 طلبات/رد. تبقى B1.9 للمعاينة و B1.10 للاعتماد النهائي؛ اختيارات B1.10 الموجودة 02/03 و B1.11existing محفوظة، وبقية خرائط الأصوات التاريخية ملزمة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمج PR#1 أو وصف غير المدمج بأنه مكتمل. حافظ على A2.7 Q08→T05 واتساق A2.9 وتاريخ B2.6 وإصداري B2.5/B2.7v2.
+- عند بداية CR7 عادت metadata إلى 88f3c06 رغم الملفات الحديثة. قورنت 641 ملفًا مع origin بايتًا، وصفر اختلافات أو إضافات، قبل reset --mixed إلى cf37611. لا تكرر reset/clean بعد تعديلات جديدة دون مقارنة وحفظ.
+
+### ما نُفذ
+
+رُوجع A1.1 وحدةً وحدةً: **124 وحدة مراجعة و 44 بندًا داخل التمارين العشرة**. صُححت كلمة spricht إلى sprichst في T03.4، وروابط Q06/Q07/Q08، وطوبقت مهمتا الأداء مع التدريب: بطاقة كتابية من ستة أسطر، وأربعة أسئلة وأجوبتها وتقديم بجملتين مع كلام فردي. أضيف شرح lesen ومفاتيح أسئلة النصين، ووُضحت حدود gern والترتيب والاستنتاج من القراءة. المفاتيح العشرة وعتبة 80% محفوظة. الإصدار `a1-01-v2` والمخزن `v52`؛ يلزم إعادة إتقان v1 للمتابعة. أصلَا الصوت ومقطعاهما محفوظة دون استماع أو اعتماد جديد. **الحملة 6/53 درسًا، والبوابة مراجعة منفصلة**؛ التالي A1.2، وتبقى 47 درسًا. لا شهادة CEFR أو دمج مدّعى.
+
+- T03.4 كان يطلب إعادة ترتيب spricht مع du إلى Sprichst du Arabisch?؛ صُححت الكلمة نفسها وقُيد نمط البداية. Q06→T03 بدل T05،Q07→T08 بدل T06؛Q08→T09 مع تعليم أسماء اللغات، بدل T07؛ مفاتيح الاختيار محفوظة.
+- P01→T09: كتابة فقط؛6 أسطر لشخصية خيالية (اسم،Tunesien،Nabeul،Arabisch/Französisch،تعلم Deutsch،هواية مع gern)، حد 100 حرف،speakAloud=false. حُل تعارض «إن أمكن» مع إجبار الكلام، ووُحّد تعلم اللغة بين التدريب والتقييم.
+- P02→T10: أربعة أزواج سؤال/جواب عن الأصل والسكن واللغات والهواية ثم جملتان للتقديم عن السكن والهواية؛ حد 180 حرفًا و speakAloud=true. لم يعد المعيار يكتفي بسؤالين أو يغيّر الأصل إلى الاسم أو يسقط التقديم. يمكن أداء الدورين وحدك، بلا شريك/رفع تسجيل.
+- أضيف شرح lesen وصيغ liest/lest قبل اختبار القراءة، ومفاتيح أسئلة النصين المستقلة (5+4)، و 17 شرحًا سياقيًا. وُضح الموقع الثاني كجزء لا كلمة، و gern كنمط لا موضع ثابت و gerne بديل صحيح؛ قيد نفي«بسرعة» بسياق الهوايات. سؤال جدول الأيام استبدل بسؤال Wann…laut Text؟دون تغيير النص المسجل.
+- أصلَا الصوت: القراءة Mila=voice-02،والاستماع Karim=voice-03؛ مقطع لكل أصل،مطابقان للمصدر مع ready/offer التاريخيتين. لا حوار مسجل؛ نموذج T10 الجديد 8 أدوار+2 تقديم مكتوب فقط. لا استماع أو تغيير أو اعتماد جديد. T07 ملخص لا اقتباس حرفي، وظهور النص/قراءة البديل ليسا قياسًا للاستماع.
+- المصادر: GoetheA1 جزء 0،Netzverblesen جزء 0،grammis ترتيب الجملةجزء 0،Dudengern/Deutsch/Stadt/Hobby/Muttersprache كاملة و Land جزء 0. رفض استخراج Ich heißen من Goethe، ولم نعتمد ملصق B1 بقاموس كمنع لتعليم مفردة A1. الشروح العربية مساعدات لا توثيق مستقل لكل ترجمة.
+- a1-01-v2 يلزم إعادة الإتقان قبل A1.2؛ التحقق لا يحذف نتيجة v1 بذاته. جلسة v1 لا تستأنف كـ v2، وقد تستبدل مسودات الإصدار القديم عند أول حفظ جديد. الحدود والمربعات لا تصحح الكتابة/النطق؛30 دقيقة تقدير مرن مع خيار جلستين.
+
+### الملفات
+
+- `content/A1/lesson-01-introductions-languages-hobbies.md` و`.assessment.json`؛22 سجل A1.1 فقط في `data/production-task-catalog.csv`؛ وإعادة بناء `data/course.json`.
+- جديد: `data/reviews/a1-01-review.md` و`.json` و`tools/test_a1_01_review.py`؛ فهرسالمراجعات 6/53 والبوابة منفصلة.
+- `tools/test_progression.cjs` للإصدار والأدلة المكتوبة/الشفهية والقفل؛ `tools/test_accessibility_audit.cjs` لمصدر A1.1 ونموذج مهمتيه بعرضين. `service-worker.js` v52 واختبارا SW/update.
+- README،PROGRESS،خطةالتحسين 2.13،تقريرالمتصفح،وملفاالتسليم. app.js/styles.css/package/lock وسجلا الصوت و MP3 دون تغيير.
+
+### الفحوص ونتائجها
+
+- PASS: البناء والتحقق، حراس A0.1–5 والبوابة و A1.1، والتدرّج وحفظ الجلسة وخطة اليوم ووقت الدراسة وعامل الخدمة، وصياغة app.js/service-worker.js و`git diff --check`.
+- حارس CR7 فشل قبل الإصلاح فعلًا لأن T03.4 يحوي spricht، ثم نجح مع sprichst. اختبار VM يقبل نموذجي الأداء، ويرفض النص القصير والمعايير الناقصة، ويطلب الكلام لـ P02 فقط. يرفض نتيجة/جلسة A1.1 v1، ويحتفظ بالنتيجة عند التحقق، ويشترط v2 مع الأدلة لفتح A1.2.
+- PASS للمجموعات الخمس بالتتابع: forms-keyboard،accessibility-audit،narrow-layout،accessibility-update،browser. Chromium143.0.7499.0 و Playwright1.58.2 و axe-core4.11.0؛ `npm ci` دون تغيير package/lock.
+- axe: **41 حالة،صفر مخالفات للقواعد المختارة،21 ظهورًا لقواعد غير محسومة و 63 ظهورًا للعقد**، لا 63 عيبًا مثبتًا فريدًا أو اعتماد WCAG. أضيف مصدر A1.1 ونموذج مهمتيه عند عرضي 1440/390، مع حفظ الحالات السابقة.
+- العرض الضيق/القصير:126 حالة عند 320×900 و 568×320. المتصفح 1440×900 و 390×844:53 درسًا+البوابة/217 أصلًا، وفحوص دون اتصال و Range206/416/503 وتشغيل عينة B2.12 بالسرعتين 1/0.8. متصفح مكتوم مع تقديم الزمن، لا استماع أو جهاز فعلي.
+- التحديث الحقيقي من fixture عامل v42 إلى v52 مع بيانات التقييم الحالية؛ لا ندعي أنه ترحيل متصفح فعلي لـ A1.1 v1. اختبار VM منفصل يغطي رفض v1. عامل v52 يزيل مخازن التطبيق/الصوت القديمة؛ افتح المقاطع المطلوبة متصلًا لإعادة تخزينها، ولا ضمان لتنزيلها كلها أو الحصة.
+
+الحزمة **1,737,177 بايت**:53 درسًا،530 سؤال درس+10 بوابة،106 مهمات درس+3 بوابة=109،428 عنوان تمرين بالدروس و 55 قسم حوار و 754 مفردة. الفهرس 1080 معرّفًا (431T:428 درس+3 بوابة؛540Q؛109P). الصوت 217 أصلًا/474MP3،137ready/80pending كما كان. مقارنة بـ`cf37611780c2e485dbe3770158dd741adb3f2dcf`: بقية 52 درسًا والبوابة وجميع كائنات الصوت 217 وسجلا الصوت و 474MP3 وصفوف الفهرس خارج A1.1 و app.js/styles.css/package/lock دون تغيير.
+
+### الرفع وما بقي
+
+- آخر أساس مرفوع قبل CR7: `cf37611780c2e485dbe3770158dd741adb3f2dcf` (إيصال CR6)، وتنفيذ CR6 `4a57159dc29bfcb36205f0c4e448cb2d0da29754`.
+- تنفيذ CR7 دُفع بالـcommit `31b69215c478ca1dbf6c61f8cb42cb6c3231c1f0` إلى `arena/01a1036f-deutschlern`. تطابق HEAD المحلي مع `git ls-remote` وكانت مساحة العمل نظيفة بعد الدفع. PR#1 مفتوحة وmergedAt=null؛ واجهتها أعادت head قديمًا cf37611 بينما مرجع الفرع البعيد أكد 31b6921. فحص حالة commit وقت التحقق: pending وstatuses=[]؛ لا نشر ناجح مثبت ولا ادعاء أن قيد Vercel السابق زال، ولا إعادة محاولة يدوية لتجاوزه. هذا إيصال توثيقي مستقل يُرفع بعد التنفيذ؛ لا دمج مدّعى.
+- الحملة: **6/53 درسًا والبوابة مراجعة منفصلة؛ تبقى 47 درسًا.** CR1=67/26،CR2=62/31،CR3=74/40،CR4=82/33،CR5=63/28،CR6 بوابة 39/12،CR7=124/44. الأعداد وحدات/بنود متداخلة، لا عدد مهارات مثبتة.
+- **التالي A1.2**: `content/A1/lesson-02-work-family.md` وتقييمه؛ اقرأ كل المصدر والخيارات والمهمات والتفريغات والفهرس، ثم وثق كل عنصر ومراجعه، وصحح واختبر وحدّث التسليم وادفع. لا تعِد A0.1–5 والبوابةو A1.1 من الصفر.
+- ملفات/tmp قد تضيع؛ لا تعِد تشغيل cr7_fix/review/docs عشوائيًا لأنها تعتمد على الحالة القديمة وقد تستبدل توثيقًا أحدث. أدوات المتصفح المؤقتة في/tmp/cr7-browser و/tmp/chromium ومكتبات/tmp/al2023/lib؛ ثبّتها عند الحاجة خارج المستودع.
+
+
+## سجل الحالة السابقة — CR6: مراجعة بوابة A0→A1، 2026-10-07
+
+هذا مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ قرارات الأصوات السابقة التي لم تتغير تبقى ملزمة.
+
+### الطلب والقرارات الثابتة
+
+- المستخدم طلب «واصل»: مراجعة كل تمرين ونص وحوار وتقييم والمشكلات المصادفة فرديًا وتراكميًا، بالمراجع على الإنترنت، ثم تصحيح واختبار ورفع كل تعديل. لا نجعل مراجعًا بشريًا شرطًا للاستمرار، ولا نساوي الاختبارات بصحة كل حكم لغوي.
+- المحتوى والتقييم والتطبيق أولًا؛ لاC1أو إعادة توليد الصوت أو إخفائه أو تغيير روابطه أو اعتماد جديد. هذه الدفعة صفر طلبات صوت؛ حد10طلبات/رد محفوظ. B1.9للمعاينة وB1.10للاعتماد النهائي، وأصواتB1.10الموجودة02/03 وB1.11اختيارexistingمحفوظة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمجPR#1ولا وصف دفعة غير مدمجة بأنها مكتملة. حافظ علىA2.7 Q08→T05 واتساقA2.9وتاريخB2.6وإصداريB2.5/B2.7v2 وكل قرارات الأصوات السابقة.
+- لاreset/cleanمدمر: عند بداية CR6وجدنا metadataقديمًا رغم الملفات الحديثة؛ جرت مقارنة637ملفًا وصفر فروق/ملفات إضافية قبل `reset --mixed origin/arena/01a1036f-deutschlern` إلىc16174f. لا تكرر هذا بعد تعديلات جديدة دون مقارنة وحفظ.
+
+### ما نُفذ
+
+رُوجعت بوابة A0→A1: **39 وحدة مراجعة و12 مطلبًا فرعيًا في المهمات الثلاث**. فُصلت الورقة القديمة عن الدليل الحالي، وصارت P01–03 مرتبطة بأنشطة T01–03 فعلية. وُضح طلب البطء والأسئلة والبيانات ومنظور الكتابة. المفاتيح العشرة وعتبة80% محفوظة. الواجهة تصرح بأن الاستماع غير مقاس؛ الصوت محفوظ دون تعديل أو استماع جديد. الإصدار `a0-gate-v2` والمخزن `v51`؛ نتيجةv1 لا تكفي لمتابعة المسار. **الحملة 5/53 درسًا مع البوابة مراجعةً منفصلة**؛ التالي A1.1، وتبقى48 درسًا. لا شهادةCEFR أو اعتماد نطق أو دمج مدّعى.
+
+- P01→T01: شخصية خيالية،4جمل تعريف ثمسؤالاالاسم/العمر وجواباهما؛ مسودة حد120حرفًا وكلام فردي ممكن. P02→T02: عدم الفهم+التكرار بصيغةSie+البطء، حد50حرفًا وكلام؛ يقبل المثال الأقصر Bitte wiederholen Sie das. P03→T03: بطاقةLina/18/Tunesien بصوتIch، ثلاث جمل كاملة، حد60حرفًا، كتابة فقط. لا شريك أو تسجيل أو بيانات شخصية مطلوبة.
+- نص P02كان يطلب البطء بلا مقابل في النموذج؛ أزيل بديل الترجمة العربيةأوالطلب الألماني الملتبس، ولا يوصفÖffnenبالخطأ. بطاقات المصدر الجديدة تشمل المعايير والمقارنة وتعود إلى تدريباتA0.3/A0.5 المعروفة.
+- Q05مشتت15بدل40تحسين نطاق0–20لا تصحيحvierzigلغويًا. Q08وظيفته سؤال اسم رسمي، Q10يبدأبـIchولا ينفي صحةEine Frage habe ich.؛ مفاتيحQالعشرة محفوظة.
+- مصدرالورقةالقديمة انفصل فيالأرشيف دون تغيير العبارات/ترتيب السطور؛ نُظفت مسافات نهاية السطور فقط. الدليل الحالي مطابق للJSONوفيه مفتاح المصدر، ولا يعرضه التطبيق أثناء الاختبار.25–35دقيقة تقدير مرن، لا زمنمجرّب؛ لم نغير محلل المدة العام.
+- الصوت واحد/مقطع واحدvoice-02، بست جمل من تفريغNora/Nabeul/18/خانات264108وطلب إعادةالخانةالأخيرة. الشروحKursnummerوsieعلىZahlخارج الصوت؛ الواجهة توضح عدم قياس الاستماع. حالةready وسياسة التفريغ التاريخيتان محفوظتان دون اعتمادجديد أو استماع.
+- v1لايفتحA1ولا تُستأنف جلسته كـv2. التحقق لا يمحو نتيجةv1بذاته؛ مسودات أدائه القديمة لا تستأنف فيv2وقد تستبدل عند أول حفظ جديد وفق الآلية القائمة. حد الطول والمربعات لا يصححان اللغة أو يثبتان النطق.
+- المصادر: GoetheA1(الجزء0)،grammis§65/66 وie/§6–12،جدولKardinalzahlen،DW/Cornelsen2006للـei/schمع رفضßالقديمة وIPAالمشوه،Dudenvierللمعنى لاالنطق،ومقدمة/فهرسCEFR(الجزء0فقط). لا ادعاء قراءة كاملPDFأو سماع المصادر. رفضنااستخراجIch heißenوبحثالتبسيطكلiطويل=ie.
+
+### الملفات
+
+- `content/A0/lesson-06-placement-check.md` و`.assessment.json`؛ `data/production-task-catalog.csv` (13سجلًا مصححًا و3أنشطةTجديدة)، وإعادة `data/course.json`.
+- `app.js`: حدود القياس ظاهرة في الملخص والأسئلة والأداء؛ `service-worker.js` v51 ومواءمة اختباريSW/update.
+- جديد: `data/reviews/a0-gate-review.md` و`.json`، `data/reviews/archive/a0-gate-legacy.md`، `tools/test_a0_gate_review.py`.
+- `tools/test_progression.cjs`: الإصدار والأدلة والصيغ القصيرة والفصل بين الكلام والكتابة. `tools/test_accessibility_audit.cjs`: نموذج أداء البوابة بعرضين.
+- README،PROGRESS،فهرسالمراجعات،الخطة2.12،تقريرالمتصفح،وملفاالتسليم. لا تعديل لمصادر/تقييمات الدروس53أو سجلات/ملفات الصوت أوstyles/package/lock.
+
+### الفحوص ونتائجها وحدودها
+
+- الحارس الجديد فشل قبل الإصلاح فعلًا عند غياب Langsamer, bitte. منP02، ثم نجح بعده. إحدى المقارنات المؤقتة استعملت اسم سجل صوت غير موجود؛ صُحح إلى `data/audio-asset-register.csv` وأُعيدت المقارنة بنجاح، وليس ذلك خللًا في التطبيق.
+- نجحت: `build_course.py` و`verify_course.py` وحراس المراجعة A0.1–5 والبوابة، و`test_progression.cjs` و`test_session_persistence.cjs` و`test_daily_plan.cjs` و`test_study_time.cjs` و`test_service_worker.cjs`، وفحص صياغة app.js/service-worker.js و`git diff --check`.
+- نجحت مجموعات المتصفح بالتتابع: forms-keyboard،accessibility-audit،narrow-layout،accessibility-update،browser. Chromium143.0.7499.0 وPlaywright1.58.2؛ `npm ci` دون تغيير ملفات الحزم.
+- axe: **37 حالة،صفر مخالفات للقواعد المختارة،18 ظهورًا لقواعد غير محسومة و57 ظهورًا للعقد**؛ ليست57عيبًا مثبتًا فريدًا أو اعتمادWCAG. أضيف نموذج أداء البوابة عند عرضي1440/390مع بقاء الحالات السابقة.
+- العرض الضيق/القصير:126حالة عند320×900و568×320. المتصفح1440×900و390×844:53درسًا+البوابة/217أصلًا، والعمل دون اتصال وRange206/416/503 وتشغيل عينةB2.12بالسرعتين1/0.8. متصفح مكتوم وتقديم الزمن ليسا استماعًا أو جهازًا فعليًا.
+- اختبار التحديث الحقيقي منfixtureعاملv42إلىv51 مع بيانات التقييم الحالية؛ لا ندعي أنه ترحيل متصفح حقيقي لبوابةv1. يختبرVMرفض نتيجة/جلسةv1وبقاء النتيجة عند التحقق، قبولv2، واشتراط الكلام لـP01/P02 دونP03، وقبول صيغة الطلب الأقصر.
+
+الحزمة **1,727,918 بايت**:53درسًا،530سؤال درس+10بوابة،106مهمات درس+3بوابة=109،428عنوان تمرين داخل الدروس و55قسم حوار و754مفردة. الفهرس **1080معرّفًا:431T (428درس+3بوابة)،540Q،109P**؛ أسطر البوابة16بدل13. الصوت217أصلًا/474MP3،137ready/80pending كما كان. مقارنة بـ`c16174f99c1715e4bbdc159d023c8498dcc906c9`: جميع كائنات الدروس53 والصوت217، وسجلا الصوت و474MP3 وصفوف الفهرس الأخرى وstyles/package/lock بلا تغيير. الأرشيف مطابق لعبارات وترتيب الملف القديم بعد تنظيف مسافات نهاية السطر فقط؛ لا تطابق بايتات مدّعى.
+
+### الرفع وما بقي
+
+- آخر أساس مرفوع قبلCR6: `c16174f99c1715e4bbdc159d023c8498dcc906c9` (إيصالCR5)، وتنفيذه `d916ca003abcc921e7f59a83d5a84d404f544a43`.
+- تنفيذ CR6 دُفع بالـcommit `4a57159dc29bfcb36205f0c4e448cb2d0da29754` إلى `arena/01a1036f-deutschlern`؛ تطابق HEAD المحلي مع `git ls-remote` وكانت مساحة العمل نظيفة بعد الدفع. PR#1 مفتوحة وmergedAt=null؛ واجهتها أعادت head قديمًا c16174f، بينما مرجع الفرع البعيد أكد 4a57159. لا دمج مدّعى. فحص commit فيGitHub أعاد Vercel=failure بوصف **Deployment rate limited — retry in 24 hours.** هذه مشكلة حد عمليات نشر لدى المزود وليست رسالة فشل بناء؛ لا نشر ناجح مثبت، ولا إعادة محاولة يدوية أو تغيير كود/إعدادات لتجاوز الحد. هذا إيصال توثيقي مستقل يُرفع بعد التنفيذ.
+- **المراجعات: A0.1=67/26،A0.2=62/31،A0.3=74/40،A0.4=82/33،A0.5=63/28؛ البوابة39/12منفصلة.5/53درسًا،وتبقى48.**
+- **التالي A1.1** `content/A1/lesson-01-introductions-languages-hobbies.md`: اقرأ مصدره وأسئلته ومهمتيه والتفريغات وصفوف الفهرس كاملة، وثق العناصر والمراجع والحدود، ثم أصلح واختبر وحدّث التسليم وادفع. لا تعِدA0.1–5أو البوابة من الصفر.
+- ملفات/tmpلا يُضمن بقاؤها؛ لا تعِد تشغيل سكريبتاتCR6المؤقتة عشوائيًا لأنها قد تعيد إنشاءالأرشيف أو تستبدل التوثيق الحديث. عند اختلافmetadataافحص البايتات قبل أيreset.
+
+
+## سجل الحالة السابقة — CR5: مراجعة A0.5، 2026-10-07
+
+هذا القسم مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ تفاصيل الأصوات وقرارات المستخدم التي لم تتغير باقية وملزمة.
+
+### الطلب والقرارات الثابتة
+
+- طلب المستخدم «واصل»، مع رفع كل إضافة/تعديل مباشرة ومراجعة كل نص وحوار وتمرين وتقييم والمشكلات المصادفة في التطبيق. المساعد يراجع بالمراجع والأدوات دون اشتراط مراجع بشري؛ لا يدعي أن السكريبتات تثبت كل حكم لغوي أو جودة نطق.
+- المحتوى والتقييم والتطبيق أولًا؛ لاC1 أو إعادة توليد الصوت أو إخفاء المقاطع أو تغيير روابطها أو اعتماد جديد دون الدليل/الاختيار المطلوب. حد10طلبات صوت/رد؛ هذه الدفعة صفر طلبات. لا استماع مدّعى.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا دمجPR#1، ولا وصف دفعة غير مدمجة بأنها مكتملة. الأصوات السابقة وقراراتB1.9/B1.10/B1.11 وتصحيحA2.7 Q08→T05 واتساقA2.9 وتاريخB2.6 وإصداريB2.5/B2.7v2 محفوظة.
+
+### ما نُفذ وفُحص
+
+رُوجع A0.5 وحدةً وحدةً: **63 وحدة و28 بندًا داخل التمارين**. وُحّدت الأجزاء الخمسة في T07/P01، وأعيدت P02 إلى بطاقة T08 الكتابية دون شرط كلام. صُححت طريقة الاسترجاع والترقيم، وقُيد Q05 بنمط الطلب الذي يبدأ بالفعل لتجنب التباس صيغة خبرية صالحة في سياق آخر. حُسّن تسلسل حوار T06، ووُضحت حدود الحوار المسجل نصيًا دون تغييره. التقييم `a0-05-v2`، والمخزن `v50`؛ يلزم إعادة تقييم v1 مع بقاء سجله. **الحملة 5/53 درسًا**: دروس A0 الخمسة موثقة نصيًا، والبوابة لم تُراجع بعد؛ هي التالية قبل A1.1. تبقى48 درسًا والبوابة، ولا اعتماد صوتي أو شهادة إتقان مستقلة مدّعاة.
+
+- T07/P01: عدم الفهم، التكرار، البطء، المعنى، وطريقة الكتابة؛ مسودة مكتوبة وأداء صوتي فردي ممكن، حد120حرفًا. P02→T08: ثلاث عبارات مختلفة ومعانيها واسترجاع كتابي ثم مقارنة وتصحيح، reading/writing دون speakAloud، حد50حرفًا. لا شريك أو رفع تسجيل مطلوب، والطول والتأكيد الذاتي لا يصححان اللغة أو النطق.
+- Q05 أصبح مقيدًا بالنمط الذي يبدأ بالفعل؛ Sie wiederholen bitte das. قد تؤدي طلبًا في سياق وليست خطأ نحويًا مطلقًا. جميع مفاتيح الاختيارات العشرة محفوظة. Q10→T03 لوجود العبارة نفسها، تحسين للربط لا تصحيح مفتاح.
+- حُسن حوار T06 بـWelches Wort? ثم سؤال المعنى دونJa الزائدة؛ هذا حوار غير مسجل مستقلًا. صُحح استرجاع T08 بتغطية الألمانية لا العربية، وترقيم T04، وحالةMP3 القديمة.
+- صوت A0.5: أصل عبارات من10عبارات/مقطع1 بصوت02، وحوار5أدوار/5مقاطع Lernender03 وLehrerin02؛ أصلان/6مقاطع محفوظة. قوالب… في الجدول تقابلdas في التفريغ، والحوار يختلف فقط بعلامتي الاقتباس. لم نستمع أو نُعِد التوليد أو نغيّرready التاريخية.
+- النص المسجل يقولJa, natürlich. ولا يعرض إعادة الشرح؛ أضيف تدريب نصي لإعادة جملة المعلمة وتحديدpünktlich بالموعد المتفق عليه. لا ادعاء أن التسجيل نفسه أُصلح أو يتضمن إعادة غير موجودة.
+- المصادر: Goethe A1 لطلب التوضيح، grammis §65/66 وصيغ الطلب، Duden لـpünktlich وTermin. ترجمات المفردات الأخرى مساعدة من المساعد لا صفحات معجمية مستقلة. نتائج Ortstermin/Ort غير المطابقة لم تُعتمد، ولا العبارة المستخرجة Ich heißen منGoethe. Wie schreibt man يسأل عن الكتابة، لا يفرض تهجئة شفوية حرفًا حرفًا.
+
+### الملفات
+
+- `content/A0/lesson-05-classroom-phrases.md` و`.assessment.json`، و20سجلA0.5 فقط في`data/production-task-catalog.csv`، وإعادة بناء`data/course.json`.
+- جديد: `data/reviews/a0-05-review.md` و`.json` و`tools/test_a0_05_review.py`. فهرس`data/reviews/README.md` صار5/53؛ البوابة التالية وغير مراجعة بعد.
+- `tools/test_progression.cjs`: فرق الكلام/الكتابة ورفضv1 مع حفظه، ثم شرط البوابة بعدv2. `tools/test_accessibility_audit.cjs`: مصدرA0.5 ونموذج أدائه عند العرضين مع بقاء الحالات السابقة.
+- `service-worker.js` صار`deutsch-pfad-v50`، ومواءمة اختباريSW/update. README وPROGRESS وخطةالتحسين2.11 وتقريرالمتصفح وملفاالتسليم محدثة. app.js/styles.css/package/lock وسجلات الصوت وMP3 لم تتغير.
+
+### الفحوص والحدود
+
+- **PASS** build/verify والمراجعات01–05 وprogression/session-persistence/daily-plan/study-time/service-worker/node--check/diff--check. الحزمة1,717,215بايت؛53درسًا/530سؤال درس+10بوابة/109مهمات/428عنوان تمرين/55قسم حوار/754مفردة/217أصلًا/474MP3؛137ready و80pending تاريخيًا.
+- baseline فشل عند غياب طلب المعنى منT07 قبل الإصلاح. الحارس يحفظ63وحدة/28بندًا والمفاتيح والروابط والصوت والبصمات؛ لا استقلال لغوي مدّعى. مرّت فحوص المتصفح أولًا، ثم فشل diff--check بسبب مسافات نهاية دورين معدلين منT06؛ فُصلت الأدوار الخمسة إلى فقرات وحُدثت السطور والبصمات والبناء، وأُعيدت جميع الفحوص بنجاح دون تعطيل الحارس.
+- **PASS** forms-keyboard؛ axe35حالة/0مخالفات مختارة/**16ظهورًا لقواعدincomplete تشمل51ظهور عقدة غير محسومة**؛ narrow126حالة؛ update42→50؛ browser1440×900 و390×844 وoffline وRange206/416/503 وعينةB2.12 بسرعتي1/0.8. متصفح مكتوم مع تقديم الزمن، لا استماع أو جهاز فعلي أوWCAG.
+- **PASS** مقارنة `4b0863bfe19b70d215eabb749a59cd8a9ed1b783`: تغيّر A0.5 فقط في الحزمة؛52درسًا والبوابة مطابقة. playlist وaudio-asset-register و474MP3 مطابقة بايتًا، والفهرس خارج20سجلA0.5 مطابق.
+- fixture42→50 يستخدم التقييم الحالي وبيانات معزولة؛ لا يثبت ترحيلA0.5v1 بمتصفح مستخدم أو مسار49→50 مستقلًا. رفض الإصدار القديم مفحوص فيruntime. شرط البوابة فحص تدرّج فقط وليس مراجعة محتواها. v50 يحذف المخازن السابقة وصوتها؛ أعد فتح المقاطع متصلًا، دون تنزيل شامل أو ضمانquota.
+- runtime أُعيد تجهيزه مؤقتًا من`@sparticuz/chromium@143.0.4`. مثال تشغيل: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:browser`. مجموعات المتصفح بالتتابع. `/tmp/cr5-a11y.json` و`.log` مؤقتان؛ لا تعتمد على بقائهما. npm ci نجح وصفر ثغرات معروفة حسب الأداة وقت الفحص.
+
+### Git والخطوة التالية
+
+- أساس الدفعة `4b0863bfe19b70d215eabb749a59cd8a9ed1b783`. ظهرتmetadata القديمة88f3c06 عند البدء؛ جلبناorigin وقارنا634ملفًا بايتًا دون اختلاف أوextras، ثمreset--mixed الآمن إلى الرأس البعيد. لا عمل محلي فُقد؛ لا تكررreset بعد بدء التعديلات دون مقارنة.
+- **إثبات رفع التنفيذ:** commit `d916ca003abcc921e7f59a83d5a84d404f544a43` بعنوان `fix: review A0.5 classroom requests and align practical evidence` شمل19ملفًا ودُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. تطابق HEAD مع `git ls-remote` وكانت شجرة العمل نظيفة. يُضاف هذا الإثبات في commit توثيق لاحق دون تغيير المحتوى أو التقييم.
+- PR#1 ما زالت OPEN وmergedAt=null. أظهر API رأسًا قديمًا4b0863b فور الفحص رغم تطابق مرجع الفرع البعيد مع التنفيذ. حالة commit المنشورة pending وstatuses فارغة؛ لا نشر ناجح مثبت ولا دمج.
+- **التالي CR6: بوابة A0→A1**. اقرأ `content/A0/lesson-06-placement-check.md` وتقييمها وبياناتالبوابة فيcourse وبناءها وتفريغات الصوت والفهرس؛ ميّز ورقةالأسئلة القديمة عن التقييم الفعلي الذي يفتحA1. راجع كل نص وسؤال وخيار ومهمة ومعيار، ثم تحقق بالمراجع وصحح العيوب المثبتة وحدّث الحراس والبناء والتسليم وارفع. لا تفترض أن نجاحruntime مراجعة للمحتوى، ولا تعدّ البوابة درسًا سادسًا من53.
+- بعد البوابة: A1.1 ثم البقية. تبقى48درسًا والبوابة غير مراجعة بهذه المنهجية، و80أصلًا صوتيًا قيدالمراجعة التاريخية. لا تعاود A0.1–5 من الصفر أو تعيد توليد صوتها.
+
+
+## سجل تسليم CR4: مراجعة A0.4، 2026-10-07
+
+هذا القسم مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ جميع تفاصيل الأصوات وقرارات المستخدم التي لم تتغير باقية وملزمة.
+
+### الطلب والقرارات الثابتة
+
+- طلب المستخدم «واصل»، مع رفع كل إضافة/تعديل مباشرة ومراجعة النصوص والحوارات والتمارين والتقييمات والمشكلات المصادفة في التطبيق عنصرًا عنصرًا. المساعد يراجع بالمراجع والأدوات دون اشتراط مراجع بشري؛ لا يدعي أن السكريبتات تثبت كل حكم لغوي أو نطق.
+- المحتوى والتقييم والتطبيق أولًا؛ لاC1 أو إعادة توليد الصوت أو إخفائه أو تغيير روابطه أو اعتماد جديد دون الدليل/الاختيار المطلوب. حد10طلبات صوت/رد؛ هذه الدفعة صفر طلبات. لا استماع مدّعى.
+- الفرع الوحيد `arena/01a1036f-deutschlern`، ولا دمجPR#1. لا توصف دفعة غير مدمجة بأنها مكتملة. الأصوات السابقة وقراراتB1.9/B1.10/B1.11 وتصحيحA2.7 Q08→T05 واتساقA2.9 وتاريخB2.6 وإصداريB2.5/B2.7v2 محفوظة.
+
+### ما نُفذ وفُحص
+
+رُوجع A0.4 وحدةً وحدةً: **82 وحدة و33 بندًا داخل التمارين**. صُححت مواءمة T07/P01 عن النفس وشخص آخر، وصارت P02 تطلب حوار T08 نفسه كاملًا. وُضحت sie/Sie في بداية الجملة وes، والموقع الثاني للفعل، وترقيم الكلمات المبعثرة ونمط سؤال نعم/لا. المفاتيح العشرة محفوظة؛ ربط Q08 بـT02 تحسين للمطابقة المباشرة لا تصحيح مفتاح خاطئ. التقييم `a0-04-v2`، والمخزن `v49`؛ يلزم إعادة تقييم v1 مع بقاء سجله. أصل الأمثلة الصوتي ومقطعه محفوظان دون استماع أو اعتماد جديد. **الحملة4/53**؛ التالي A0.5، وتبقى49 درسًا والبوابة خارج هذه المراجعة التفصيلية.
+
+- جميع مفاتيح الاختيارات العشرة محفوظة. تعديل Q08→T02 يربط السؤال نفسه عنHerr Weber بدل نقل النمط منT06؛ لم نزعم أن الربط السابق مفتاح خاطئ. Q04/Q09 يحتفظان بنقل النمط إلى مثال مشروح بدل اشتراط التطابق الحرفي مع تمرين المصدر.
+- T07/P01: أربعة نماذجIch bin/Ich habe/Mila ist/Sie hat، بيانات خيالية وقراءة بصوت مرتفع؛ حد60حرفًا. T08/P02: كامل الأدوار الأربعة للحوار A/B/A/B، لا الكلمات الناقصة فقط، وأداءالدورين دون شريك أو رفع تسجيل؛ حد100حرف. الطول والتأكيد الذاتي لا يصححان اللغة أو النطق.
+- مصدر الصوت أصل أمثلة واحد/مقطع واحد/10جمل بصوتvoice-02؛ لا تسجيل مستقل لحوارT08. التفريغ قرئ لا سُمع؛18 نصيًا وachtzehn في التفريغ تكافؤ مقصود. status ready تاريخي لم يتغير.
+- المصادر: Goethe A1 الفصول1–3، جدولsein منNetzverb، grammis §65/66 و§54 (الأخير مقتطف بحث)، وصف ترتيب المواقع، وLingolia es ومقتطف ضمائر الرفع. الترجمات العربية للمفردات17 مساعدة من المساعد، لا توثيق معجمي مستقل لكل كلمة. العبارة المستخرجة الخاطئةIch heißen فيGoethe لم تُعتمد.
+
+### الملفات
+
+- `content/A0/lesson-04-first-sentences.md` و`.assessment.json`، و20سجلA0.4 فقط في`data/production-task-catalog.csv`، وبناء`data/course.json`.
+- جديد: `data/reviews/a0-04-review.md` و`.json` و`tools/test_a0_04_review.py`. الفهرس`data/reviews/README.md` صار4/53.
+- `tools/test_progression.cjs`: متطلبات الدليل ورفضv1 مع حفظ سجله وقبولv2 للتدرج. `tools/test_accessibility_audit.cjs`: حالاتA0.4 الجديدة مع بقاء السابقة.
+- `service-worker.js` صار`deutsch-pfad-v49`، ومواءمة اختباريSW/update. README وPROGRESS وخطةالتحسين2.10 وتقريرالمتصفح وملفاالتسليم محدثة. app.js/styles.css/package/lock وسجلات الصوت وMP3 لم تتغير.
+
+### الفحوص والحدود
+
+- **PASS** build/verify والمراجعات01–04 وprogression/session-persistence/daily-plan/study-time/service-worker/node--check/diff--check. الحزمة1,709,449بايت؛53درسًا/530سؤال درس+10بوابة/109مهمات/428عنوان تمرين/55قسم حوار/754مفردة/217أصلًا/474MP3؛137ready و80pending تاريخيًا.
+- baseline CR4 فشل قبل الإصلاح عندT07 الذي لم يكن يطلب جملًا عن شخص آخر، قبل فحص الإصدار أو البصمات. الحارس يحفظ82وحدة/33بندًا، والمفاتيح والتصريفات والروابط والبصمات؛ ليس مرجعًا لغويًا مستقلًا.
+- **PASS** forms-keyboard؛ axe31حالة/0مخالفات مختارة/**13ظهورًا لقواعدincomplete تشمل45ظهور عقدة غير محسومة**؛ narrow126حالة؛ update42→49؛ browser1440×900 و390×844 والعمل دون اتصال وRange206/416/503 وعينةB2.12 بسرعتي1/0.8. متصفح مكتوم مع تقديم الزمن، لا استماع أو هاتف فعلي أوWCAG.
+- **PASS** مقارنة `5d5a898979fa19bff161df982f1ae2d1d8a5628c`: فقطA0.4 تغيّر في الحزمة؛52درسًا والبوابة مطابقة. playlist وaudio-asset-register و474MP3 مطابقة بايتًا؛ الفهرس خارج20سجلA0.4 مطابق.
+- fixture42→49 يستخدم التقييم الحالي في بيانات معزولة، لا يثبت ترحيلA0.4v1 في متصفح مستخدم أو المسار48→49 مستقلًا؛ رفضالإتقان القديم مفحوص فيruntime. v49 يحذف مخازن التطبيق السابقة وصوتها؛ أعد فتح المقاطع متصلًا، دون تنزيل شامل أو ضمانquota.
+- runtime أُعيد تجهيزه مؤقتًا من`@sparticuz/chromium@143.0.4`. تشغيل نموذجي: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:browser`. مجموعات المتصفح بالتتابع. `/tmp/cr4-a11y.json` و`.log` مؤقتان؛ لا تعتمد على بقائهما. npm ci نجح وصفر ثغرات معروفة وقت الفحص.
+
+### Git والخطوة التالية
+
+- أساس الدفعة `5d5a898979fa19bff161df982f1ae2d1d8a5628c`. ظهرتmetadata القديمة88f3c06 عند البدء؛ جلبناorigin وقارنا631ملفًا بايتًا دون اختلاف أوextras، ثمreset--mixed الآمن إلىالرأس البعيد. لا عمل محلي فُقد؛ لا تكررreset بعد بدء التعديلات دون مقارنة.
+- **إثبات رفع التنفيذ:** commit `e63fad2cbcec444a48241816926f2b4ea52e8450` بعنوان `fix: review A0.4 pronouns and align sentence performance tasks` شمل19ملفًا، ودُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. تطابق HEAD مع `git ls-remote` وكانت شجرة العمل نظيفة. يُضاف هذا الإثبات في commit توثيق لاحق، دون تغيير المحتوى أو التقييم.
+- PR#1 ما زالت OPEN وmergedAt=null. أظهر API رأسًا قديمًا5d5a898 فور الفحص، رغم تطابق مرجع الفرع البعيد مع التنفيذ. حالة commit المنشورة pending وstatuses فارغة؛ لا نشر ناجح مثبت ولا دمج.
+- **التالي A0.5**: اقرأ المصدر والتقييم وتفريغات الصوت والفهرس كاملًا؛ تحقق بالمراجع وصحح العيوب المثبتة، وسجّل كل وحدة وبند وحراس الثبات، وحدّث البناء والتسليم وارفع على الفرع نفسه. بعدها راجع بوابةA0→A1، ثمA1.1 وما يليه. تبقى49درسًا والبوابة غير مراجعة بهذه المنهجية؛ لا تعاود مراجعةA0.1–4 من الصفر أو توليد صوتها. المراجعة السمعية لـ80أصلًا معلقة تاريخيًا.
+
+
+## سجل تسليم CR3: مراجعة A0.3، 2026-10-07
+
+هذا هو مرجع الاستئناف الحالي؛ الأقسام التالية سجل تاريخي عند التعارض. التفاصيل السابقة للأصوات وقرارات المستخدم التي لم تتغير باقية وملزمة.
+
+### الطلب والقرارات الثابتة
+
+- طلب المستخدم «واصل» مع رفع كل إضافة/تعديل مباشرة. نراجع كل نص وحوار وتمرين وتقييم والمشكلات المصادفة في التطبيق، وحدةً وحدةً، بالمراجع والفحوص، دون اشتراط مراجع بشري. لا نزعم أن السكريبتات تثبت جميع الأحكام اللغوية أو النطق.
+- المحتوى والتقييم والتطبيق أولًا، والصوت لاحقًا. الفرع الوحيد `arena/01a1036f-deutschlern`؛ لا تبديل فرع، لا دمجPR#1، لاC1. لا إخفاء المقاطع أو تغيير روابطها أو إعادة توليد الموجود أو ترقية اعتماد الصوت دون الدليل/الاختيار المطلوب. حد10 طلبات صوت/رد؛ طلبات هذه الدفعة صفر.
+- جميع الأصوات السابقة، وقراراتB1.9/B1.10/B1.11، وتصحيحA2.7 Q08→T05 واتساقA2.9، وتاريخB2.6 وإصداريB2.5/B2.7v2 محفوظة. لا تستخدم كلمة «مكتملة» لدفعة غير مدمجة.
+
+### ما نُفذ وفُحص
+
+رُوجع A0.3 وحدةً وحدةً: **74 وحدة و40 بندًا داخل التمارين**. صُححت حدود قاعدة الأعداد المركبة، وطريقة الانتقال من du إلى Sie، وربط Q06 بتمرين T02 بعد إضافة neunzehn. وُحّدت مشتتات التقييم مع الأساس 0–20، وحُذف من الهدف وعد طلب تهجئة اسم غير المدرّب هنا. وُضحت المهمتان ببيانات خيالية ومسودات وأسئلة وأجوبة وأداء فردي. الإصدار `a0-03-v3` بدل v2، والمخزن v48. يلزم إعادة التقييم القديم دون حذف سجله. التسجيلات الموجودة محفوظة دون تغيير أو استماع جديد. الحملة **3/53**؛ التالي A0.4، وتبقى 50 درسًا والبوابة خارج هذه المراجعة التفصيلية.
+
+- أصل المشكلة في Q06 موثق باختبار فاشل قبل الإصلاح: T01 لا يتضمن19. أضيف neunzehn إلىT02 وصار الربط به؛ مفاتيح الأسئلة العشرة لم تكن بحاجة لتغيير القيمة الصحيحة. التوسعة21–99 غير مضاعفات10، وخمسة نماذج رسمية كاملة، وتصحيح Ihre مع بقاءist في سؤال الهاتف.
+- T06/P02 يتضمنان الآن سؤال طلب الهاتف وجوابًا ورقمًا وأسماء الخانات وقراءة بصوت مرتفع. التسلسل26 41 08 تدريب من ست خانات وليس رقم هاتف كاملًا. P01→T07+T08: أربعة أسئلة وأجوبة وبطاقة4أسطر، وعمر18أو20 وبيانات خيالية. الحد الأدنى120/50حرفًا ليس تصحيحًا لغويًا.
+- الحوار ستة أدوار لم تتغير؛ أول خمسة تطابق تفريغها، والسادس18 فيMarkdown مقابلachtzehn فيالصوت تكافؤ مقصود. التسجيل العددي يضم الأساس والتوسعة، موضح للمتعلم. لا استماع أو توليد أو اعتماد سمعي جديد.
+- المصادر المقروءة: Goethe A1 الفصل1، grammis §65/66، Deutsche Grammatik2.0 وOmniglot للأعداد، وCoffee Break للصيغتين غير الرسمية والرسمية للعمر. استبعدنا أخطاء النص الإنجليزي واستخراج Goethe المشار إليها بالتقرير؛ البحث الأول غير ذي الصلة ليس دليلًا.
+
+### الملفات
+
+- `content/A0/lesson-03-numbers-personal-info.md` و`.assessment.json`، و20سجلًا فقط لـA0.3 في`data/production-task-catalog.csv`، وإعادة بناء`data/course.json`.
+- `data/reviews/a0-03-review.md` و`.json` جديدان، وفهرس`data/reviews/README.md` صار3/53؛ حارس جديد`tools/test_a0_03_review.py`.
+- `tools/test_progression.cjs`: متطلبات الدليل ورفضv1وv2 مع حفظ سجلهما، وقبولv3 للمتابعة إلىA0.4 مع استيفاء السابق.
+- `service-worker.js` صار`deutsch-pfad-v48`؛ مواءمة اختباريSW/update. إضافة حالاتA0.3 إلى`tools/test_accessibility_audit.cjs`، وتوضيح أن incomplete غير محسومة بالأداة بدل شرط مراجع بشري.
+- README وPROGRESS وخطةالتحسين2.9 وتقريرالمتصفح وملفاالتسليم محدّثة. app.js/styles.css/package/lock وسجلات الصوت وكلMP3 لم تتغير.
+
+### الفحوص والحدود
+
+- **PASS** build/verify/review01/review02/review03/progression/session_persistence/daily_plan/study_time/service-worker/node--check/diff--check. الحزمة1,703,510بايت؛53درسًا/530سؤالدرس+10بوابة/109مهمات/428عنوانتمرين/55قسمحوار/754مفردة/217أصلًا/474MP3، منها137ready و80pending تاريخيًا.
+- **PASS** forms-keyboard، axe **27حالة/0مخالفة مختارة/10ظهورات لقواعدincomplete تضم38ظهور عقدة**، narrow126حالة، update42→48، browser1440×900 و390×844 والعمل دون اتصال وRange206/416/503 وعينةB2.12 بسرعتي1/0.8. لم نستمع: متصفح مكتوم مع تقديم الزمن، لا جهاز حقيقي أو اعتمادWCAG.
+- **PASS** مقارنة النطاق مع`d65c2b2efe814364c8995d6a4081d553be0534d4`: فقطA0.3 تغيّر بالحزمة؛52درسًا والبوابة مطابقة. playlist وaudio-asset-register و474MP3 مطابقة بايتًا، والفهرس خارج20سجلA0.3 مطابق.
+- fixture42→48 يستخدم بيانات معزولة بالتقييم الحالي، وليس ترحيلA0.3v2 فيمتصفح مستخدم أو مسار47→48 الحقيقي مستقلًا؛ رفضالإتقان القديم مفحوص فيruntime. v48 يحذف المخازن السابقة وصوتها؛ يلزم إعادة فتح المقاطع متصلًا، دون تنزيل شامل أو ضمانquota.
+- runtime أُعيد تجهيزه مؤقتًا من`@sparticuz/chromium@143.0.4`. مثال: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:browser`. مجموعات المتصفح بالتتابع. `/tmp/cr3-a11y.json` و`.log` مؤقتان؛ لا تعتمد على بقائهما. npm ci نجح وصفر ثغرات معروفة حسب الأداة وقت الفحص.
+
+### Git والخطوة التالية
+
+- أساس الدفعة`d65c2b2efe814364c8995d6a4081d553be0534d4`. عند استئناف هذه الجلسة بدت metadata قديمة؛ جلبناorigin وقارنا628ملفًا بايتًا دون اختلاف أوextras، ثمreset--mixed الآمن إلىالرأس البعيد. لا عمل محلي فُقد. لا تكررreset بعد بدء التعديلات دون مقارنة.
+- **إثبات رفع التنفيذ:** commit `2fab633c88ec1e3db980532329c4f66d268e3cc8` بعنوان `fix: review A0.3 numbers and align formal questions and evidence` شمل19ملفًا، ودُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. طابق `git ls-remote` الرأس المحلي، وكانت شجرة العمل نظيفة بعد الدفع. هذا القسم يُضاف في commit توثيق لاحق، لا تعديل آخر للمحتوى.
+- PR#1 ما زالت OPEN وmergedAt=null؛ أظهر API رأسًا قديمًا d65c2b2 وقت الفحص رغم تطابق مرجع الفرع البعيد مع commit التنفيذ. حالة commit المنشورة pending وstatuses فارغة وقت الفحص؛ ليست شهادة نجاح نشر. لا دمج أو نشر ناجح مدّعى.
+- **التالي A0.4**: اقرأ المصدر والتقييم وكل نصوصالصوت والفهرس كاملًا، ثم تحقق بالمراجع وصحح العيوب المثبتة، وسجّل كل وحدة وبند، وأنشئ حراسًا وحدّث البناء والتسليم وارفع فورًا على الفرع نفسه. لا تعاود توليد صوت A0.3 أو مراجعةA0.1–3 من الصفر. تبقى50درسًا والبوابة غير مراجعة بهذه المنهجية، و80أصلًا صوتيًا قيدالمراجعة التاريخية.
+
+
+## سجل تسليم CR2: مراجعة A0.2، 2026-10-07
+
+هذا القسم مرجع الاستئناف الحالي. الأقسام التالية تاريخية عند التعارض؛ تفاصيل الأصوات والقرارات التي لم تتغير باقية فيها.
+
+### الطلب والقرارات المستمرة
+
+- طلب المستخدم «انطلق» بعد CR1، مع استمرار أمر رفع كل إضافة أو تعديل. نُفذت مراجعة A0.2: النص والحواران والتمارين والتقييم ونصوص التسجيلات، مع التصحيح والفحوص، لا إنتاج صوت جديد.
+- لا نشترط وجود مراجع بشري للمتابعة؛ يعتمد المساعد على المراجع والفحوص المتاحة، ويُبقي ما لم تثبته الأدوات غير محسوم. لا ادعاء استماع أو أن السكريبتات تثبت كل حكم لغوي أو جودة النطق. لا اعتماد صوت تلقائي بمجرد فحص نصه.
+- المحتوى والتقييم والتطبيق أولًا. الفرع ثابت؛ لا دمجPR#1 أو C1 أو إعادة توليد التسجيلات أو إخفائها أو تغيير روابطها. حد10 طلبات صوت/رد وعند الحد توقف. الأصوات السابقة وتصحيحA2.7 Q08→T05 واتساقA2.9 وإصداريB2.5/B2.7v2 وتاريخB2.6 محفوظة.
+
+### ما روجع وما صُحح
+
+- **الحملة2/53 درسًا**؛51 درسًا والبوابة لم تُراجع بهذه المنهجية بعد. سجل A0.2 يضم **62 وحدة**: الهدف،10عبارات،3نماذج اسم،6صفوف تصريف،السياق،8أدوار للحوارين،6عبارات للحال،8تمارين فيها31بندًا بعد التصحيح،10أسئلة،مهمتي أداء،4بطاقات،3نصوص أصول صوتية (9MP3؛19عبارة في أصل العبارات و4أدوار لكل حوار). لا نص قراءة مستقل غير الحوارات.
+- **Q08 كان مرتبطًا خطأ بـT04 لترتيب الكلمات**؛ صار مرتبطًا بـT05، مع إضافة Gut, danke. Und Ihnen? إلى الشرح والتمرين ومفتاحه. أضيف موقف قبل النوم إلىT01 لمطابقةQ02.
+- **P02 كانت تطلب قراءة الحوار الرسمي ومصدرهاT06 حوارdu**. أُعيدت مواءمتها صراحة مع كتابةT08: ثلاث عبارات في ثلاثة أسطر، بدونspokenAloud. لا ادعاء أنT06 صار رسميًا. P01 تبقي التدريب على نسختيdu/Sie؛ صار لها طلب مسودة واضحة بأربع مداخلاتA/B/A/B لكل نسخة، ثم أداء الدورين فرديًا، دون اشتراط شريك.
+- فُصلت علامات الترقيم عن كلمات T04 المبعثرة لأن مواقعها الأصلية تخالف الناتج المرتب. صارت T08 «ثلاث عبارات» لا «ثلاث جمل فعلية»، وأضيفت معايير للمهمتين المفتوحتين وبنك كلمات يضبط فراغاتT06.
+- حُدد السياق الرسمي فيQ06 بدل تعميمه من مهنة المدرّس. المشتتات النحوية المكسورة كانت مقصودة وليست أخطاء في شرح الدرس؛ استُبدلت بعبارات صحيحة لا تؤدي الرد المباشر المطلوب، مع تحديد وظيفة السؤال. أضيفes للجدول وIhnen لتنبيه الكتابة الكبيرة، ووُضح معنىEs geht وGute Nacht.
+- وُضع الحوار الرسمي في مركز تعلم مع مدرس، وشُرح Herr وIch bin. **لم نعتبر Ich bin Herr Weber خطأ نحويًا ولم نغير نص الحوارين**. المراجع والحدود فيالسجل: Goethe للفصل1، وgrammis§65/66، وNetzverb للتصريف، وDuden للتحية والوداع. ظهر في نصPDF المستخرج «Ich heißen Matteo Kraft»؛ لم يُعتمد، ولا نجزم إن كان من الأصل أو الاستخراج؛ قورن جدول التصريف في المصدر نفسه ومرجع آخر. رابطDuden/heiszen أعاد404 ولم يُستعمل كدليل.
+
+### أثر الإصدار والصوت
+
+- التقييم **a0-02-v2** لتغيّر متطلبات الأداء. إتقانv1 لا يفتح المتابعة حتى إعادة تقييمA0.2 ومهامه؛ لا يُحذف سجل الإتقان بمجرد تحميله أو فحصه، ولا تُحذف إتقانات بقية الدروس تلقائيًا. الجلسات والأدلة القديمة لا تُقبل للجديد؛ يُنصح بنسخة احتياطية. عتبة80% والتسلسل ثابتان.
+- حد100حرف لمسودةP01 و20حرفًا لـP02 حراس اكتمال شكلي، لا تصحيح لغة أو نطق. التأكيد الذاتي للكلام فيP01 باقٍ، ولا يوجد فيP02 الكتابية.
+- **الحزمة1,698,383بايت**؛53درسًا/530سؤال درس+10بوابة/109مهام،217أصلًا/474MP3؛137ready و80generated_pending_acoustic_review ثابتة. تغيّرA0.2 فقط داخل الحزمة والفهرس؛ قورنت بقية52درسًا والبوابة معنويًا، وكل ملفات الصوت وplaylist وCSV بايتًا بالرأسf9bd8b2، فبقيت مطابقة. حارسA0.1 وبصماته ما زالا ناجحين.
+- نصا الحوارين المسجلين مطابقان حرفيًا للأدوار الثمانية. أصل العبارات الصوتي ثابت؛ **الردUnd Ihnen المضاف نصيًا غير موجود فيه**، ولا ندّعي تسجيله. التقييم مستقل عن الصوت؛ صفر توليد ولا مراجعة سمعية مدّعاة ولا تغيير اعتماد أو روابط.
+- المخزن الحالي **deutsch-pfad-v47**؛ تغيير الاسم فقط لتوزيع الحزمة المصححة. يحذف مخازن التطبيق القديمة وتسجيلاتها؛ أعد فتح المقاطع المطلوبة متصلًا. لا تنزيل شامل أو ضمان دائم ضدquota/eviction.
+
+### الملفات والفحوص
+
+- المصدر والتقييم: `content/A0/lesson-02-greetings.md` و`.assessment.json`، ثم`data/course.json`. الفهرس`data/production-task-catalog.csv`:20سجلًا خاصة بـA0.2، تحديث الأسطر وروابطQ08/P02 وإزالة الملاحظات القديمة عن عدم وجود الصوت. بقية السجلات ثابتة.
+- جديد: `data/reviews/a0-02-review.md` و`.json` بوحدات المراجعة والمراجع وبصمات المصدر والتقييم والأصول الثلاثة. تحديث`data/reviews/README.md` إلى2/53، والتاليA0.3. لا تغيير لسجليA0.1.
+- جديد: `tools/test_a0_02_review.py`؛ تحديث`tools/test_progression.cjs` بفحوص runtime. `service-worker.js` وtest_service_worker وtest_accessibility_update تتوقعv47. تحديثREADME وPROGRESS وخطةالتحسين2.8 وتقريرالمتصفح وملفيالتسليم. لا تغييرapp.js أوstyles.css أوpackage/lock فيCR2.
+- **PASS** build/verify وحارساA0.1/A0.2، واختباراتprogression/session_persistence/daily_plan/study_time/service_worker وnode--check وgit diff--check. baseline الحارس الجديد فشل تحديدًا عند رابطQ08، قبل توقعv2؛ لا ادعاء تشغيل بقيةassertions وقت ذلك الفشل. صُحح أيضًا توقع اختباري كان يمنع عبارة «ثلاث جمل» حتى في نفيها الصحيح «لا نطلب ثلاث جمل»؛ لم يُحذف النفي من المحتوى لتمريره.
+- **PASS** Chromium143.0.7499.0/Playwright1.58.2:forms-keyboard،narrow-layout126حالة،test:browser لجميع53درسًا+بوابة/217أصلًا وعينة الحوار بالسرعتين ودون اتصال؛ المتصفح مكتوم ويُقدَّم الزمن قرب النهاية، فلا اعتماد نطق أو استماع كامل.
+- **PASS** axe4.11.0:23حالة دون مخالفات مختارة،31ظهورincomplete غير محسوم؛ لا شهادةWCAG. **PASS** accessibility-update:fixture42→47 وحفظ البيانات والقشرة دون اتصال و503صوت قديم ثم206 بعد إعادة جلبه. هذا ليس ترحيل تقييمA0.2v1 الحقيقي داخل متصفح مستخدم ولا مسار46→47 المستقل؛ fixture يستعمل بيانات التقييم الحالي، وفحص رفضv1 منفصل فيruntime.
+- شُغّلت المجموعات بالتتابع. runtime أُعيد تجهيزه تحت/tmp من@sparticuz/chromium143.0.4. مثال: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:browser`. تقارير/tmp/cr2-a11y.json و.log مؤقتة؛ لا تعتمد على بقائها. npm ci نجح وصفر ثغرات معروفة حسب الأداة وقت الفحص. لم تُؤكد معاينةHTTP القديمة.
+
+### Git والرفع والخطوة التالية
+
+- الفرع الوحيد **arena/01a1036f-deutschlern**؛ رأس البداية **f9bd8b27411a50c9bbc1a3b20a1ba8e061062b22**. ظهر checkoutقديم88f3c06؛ جُلب البعيد وقورنت625ملفًا بايتًا بلا اختلاف أو إضافات، ثمreset--mixed دون تغيير ملفات العمل. لا reset/clean دون فحص.
+- **تنفيذ CR2 المرفوع:** `07641dbd1b121e1ce06c79499c41b6b51e48e05b` — `fix: review A0.2 greetings and align formal responses and tasks` (18 ملفًا). نجح الدفع إلى `origin/arena/01a1036f-deutschlern`، وأكد ls-remote تطابقه مع الرأس المحلي. يتبعه commit توثيقي بعنوان `docs: record A0.2 review delivery`؛ استخرج رأسه بـgit log -1 وقارنه بالبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR#1 OPEN وmergedAt:null؛ أعادت API الرأس السابقf9bd8b2 رغم تأكيد ls-remote للرأس الجديد. حالة commit التنفيذ مباشرة كانتpending وstatuses:[]؛ لا نشر ناجح مثبت، ولا دمج أو إعادة نشر يدوية. حدVercel السابق علىCR1 موثق تاريخيًا ولا يثبت نتيجة نشرCR2 تلقائيًا.
+- **التالي A0.3 — الأرقام والبيانات الشخصية:** اقرأ كل المصدر والأسئلة والخيارات والمفاتيح والأداء ونصوص التسجيلات، وراجع كل عنصر بالمراجع. سجّل الخطأ المثبت منفصلًا عن التحسين، ثم صحّح وافحص وارفع. لا تُعد توليد الأصول ولا تشترط مراجعًا بشريًا للتقدم؛ ما لا تثبته الأدوات يبقى غير محسوم. بقيةالمحتوى وقياسالنطق وقارئالشاشة والأجهزةالفعلية والتكبيرالأصلي ليست معتمدة تلقائيًا بنجاح هذه الدفعة.
+
+## أحدث حالة — CR1: مراجعة A0.1 عنصرًا عنصرًا، 2026-10-07
+
+هذا القسم مرجع الاستئناف الحالي. ما يليه تاريخي عند التعارض؛ تفاصيل الأصوات والقرارات التي لم تتغير باقية فيه.
+
+### الطلب والقرارات
+
+- طلب المستخدم «كل إضافة أو تعديل ارفعها مباشرة؛ واصل الإنتاج» بعد النقاش عن مراجعة كل المحتوى. نُفذت مراجعة نصية تفصيلية وتصحيح، لا مجرد فحوص بنيوية.
+- **لا نشترط وجود مراجع بشري للمتابعة.** يتولى المساعد المراجعة بالمراجع والأدوات المتاحة، ويفصل الدليل النصي عن البنيوي والسمعي. لا يدّعي أن السكريبتات تحسم كل الأحكام أو أن مقاطع لم تُسمع قد روجعت سمعيًا؛ لا تغيير لاعتماد الصوت بمجرد مراجعة نصه.
+- المحتوى والتقييم والتطبيق أولًا، والرفع بعد كل دفعة. لا دمج PR#1 أو C1 أو إعادة توليد الموجود أو إخفائه أو تغيير روابطه. حد10 طلبات صوت/رد، وعند الحد توقف. الأصوات السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وإصداري B2.5/B2.7 v2 وتاريخ B2.6 محفوظة.
+
+### ما روجع وما صُحح
+
+- **الحملة1/53 درسًا.** راجعنا A0.1:26 حرفًا، والأوملاوت وß، و8 أنماط، و5 أمثلة، و7 تمارين مع26 بندًا فرعيًا بعد التصحيح، و10 أسئلة، ومهمتي أداء، و4 بطاقات، و3 نصوص تسجيل، والهدف والنطاق. المجموع **67 وحدة مسماة**. لا حوار أو قراءة مستقلة في هذا الدرس. بقية52 درسًا والبوابة لم تُراجع بهذه المنهجية بعد؛ الاختبارات القديمة لا تُحسب مراجعة لغوية مفصلة.
+- صُححت تقريبات J/O/U/Y/Z الملتبسة برموز وتوضيحات عربية، دون فرض حفظ IPA. أُوضح الفرق بين اسم الحرف وصوته، وضُبط نطاق v وsp/st وch، وأضيف إرشاد Ö/Ü ومعلومة ẞ/SS والتنوع الإملائي الموثق. معنى mein صار في سياق mein Name.
+- كان Q06/Q07 مرتبطين بـT02 دون وجود v/sp فيه؛ أضيفت الممارسة ومفتاحها مع حفظ المعرّفات. وُحّدت أسماء الحروف في Q10 مع الجدول وصياغة Q09 وحالة الحروف، وصارت خيارات Q07 بالعربية. عدد الأسئلة وعتبة80% ثابتان.
+- أُضيف إلى P01 قالب كتابة ومثال سابق ومعيار مقارنة فردي دون اشتراط مستمع آخر. **P02 صارت كتابة فقط مثل T06**: الكلمات Mina/Berlin/sieben/Schule محددة، ولا شرط spokenAloud أو تهجئة شفهية، ومعيار ie/sch وحالة الحروف بدل ei غير الموجود. ما يزال طول الإجابة والمربعات حراس اكتمال ذاتي لا تصحيح نطق أو إملاء آلي.
+- المراجع: DWDS وDuden وgrammis والجدول التعليمي المبيّن في السجل. ملف DW/Cornelsen2006 يفيد لبعض الأنماط، لكنه يذكر أن ß صغير فقط؛ **رُفض هذا الجزء القديم** لصالح القاعدة الرسمية الحالية. لكل مرجع رابط ونطاق استعمال محفوظان؛ وجود المعلومة على الإنترنت ليس تصديقًا لها تلقائيًا.
+
+### أثر الإصدار والبيانات
+
+- تقييم A0.1 الآن **a0-01-v2** بدل v1 لتغيّر المتطلبات. إتقان v1 لا يكفي لفتح المتابعة؛ يلزم إعادة التقييم الجديد ومهامه، وقد تتأثر إتاحة المسار اللاحق حتى إعادة إتقان A0.1. لا تُحذف سجلات الإتقان بمجرد تحميلها أو فحصها. الجلسات والمسودات القديمة لا تُقبل دليلًا للإصدار الجديد وفق منطق التطبيق؛ يُنصح بتصدير نسخة قبل التحديث.
+- **حجم الحزمة1,691,966 بايت**؛53 درسًا/530 سؤال درس +10 للبوابة/109 مهام،217 أصلًا/474 MP3؛137 ready و80 generated_pending_acoustic_review ثابتة. تغيّر A0.1 وحده داخل course.json؛ قورنت بقية52 درسًا والبوابة معنويًا فبقيت مطابقة، وplaylist وCSV و474 MP3 بايتًا بالرأس a82511f فبقيت مطابقة. **صفر طلبات توليد، ولا مراجعة سمعية مدّعاة.**
+- المخزن **deutsch-pfad-v46**؛ تغيّر الاسم فقط لتوزيع المنهج المصحح. يحذف مخازن التطبيق السابقة وتسجيلاتها؛ أعد فتح المقاطع المطلوبة متصلًا قبل الاعتماد عليها دون اتصال. لا تنزيل شامل أو ضمان دائم ضد quota/eviction.
+
+### الملفات
+
+- المصدر والتقييم: `content/A0/lesson-01-alphabet.md` و`.assessment.json`، ثم `data/course.json` المولّد. الفهرس `data/production-task-catalog.csv`:19 سجلًا خاصة بـA0.1، مع تحديث أسطر T01–T07 والملاحظات وإزالة ادعاء quiz فارغ/صوت غير منتج من سجلات هذا الدرس فقط. المعرّفات ثابتة.
+- جديد: `data/reviews/README.md` سجل تراكمي لكل53 درسًا والبوابة؛ `data/reviews/a0-01-review.md` للمراجعة والمراجع والحدود؛ و`data/reviews/a0-01-review.json` بوحدات المراجعة وبصمات المصدر والتقييم وسجلات الصوت الثلاثة.
+- جديد: `tools/test_a0_01_review.py` يحرس القرارات والبصمات. تحديث `tools/test_progression.cjs` لفحص runtime لـP02 والإتقان القديم. الحارس ليس دليلًا لغويًا مستقلًا؛ التحليل والمراجع أساس المراجعة.
+- `service-worker.js` وtest_service_worker وtest_accessibility_update لتوقع v46. تحديث README وPROGRESS وخطة التحسين2.7 وتقرير المتصفح وملفي التسليم. لم يتغير app.js أوstyles.css أوpackage/lock فيCR1.
+
+### الفحوص المنفذة
+
+- **PASS:** build/verify وtest_a0_01_review:67 وحدة/26 بندًا، والمفاتيح العشرة، ومصدر Q06/Q07، وقالب P01 وكتابية P02، وأسطر الفهرس والبصمات ومطابقة الحزمة. فشل baseline أولًا عند توقع v2؛ لم تُنفّذ بقية assertions بعد ذلك الفشل.
+- **PASS:** test_progression مع قبول P02 بلا spokenAloud عند اكتمال المعايير ورفض نقص معيار، وعدم عرض مربع شفهي، ورفض إتقان v1 وفتح A0.2 به مع إبقاء السجل. نجحت أيضًا session_persistence وdaily_plan وstudy_time وtest_service_worker وnode--check وgit diff--check.
+- **PASS:** Chromium143.0.7499.0/Playwright1.58.2، forms-keyboard وnarrow-layout (126 حالة) وtest:browser لكل53 درسًا والبوابة/217 أصلًا وعينة التشغيل بالسرعتين ودون اتصال. المتصفح مكتوم مع تقديم الزمن قرب النهاية؛ ليس استماعًا أو هاتفًا فعليًا.
+- **PASS:** axe4.11.0،23 حالة دون مخالفات مختارة، مع31 ظهور عقدة incomplete غير محسوم؛ لا اعتماد WCAG. نجح accessibility-update من fixture42 إلى46 مع حفظ البيانات والقشرة دون اتصال و503 للصوت القديم ثم206 بعد إعادة جلبه. ليس اختبارًا مستقلًا لمسار45→46 الفعلي أو ترحيل تقييم A0.1v1 داخل fixture، إذ يستعمل بيانات التقييم الحالي.
+- شُغّلت اختبارات المتصفح بالتتابع. npm ci نجح؛ runtime أُعيد تجهيزه تحت/tmp من@sparticuz/chromium143.0.4. مثال: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:browser`. تقارير/tmp/cr1-a11y.json و.log مؤقتة؛ لا تعتمد على بقائها. لم تُؤكد معاينة HTTP القديمة عند الاستئناف.
+
+### Git والرفع والخطوة التالية
+
+- الفرع الوحيد **arena/01a1036f-deutschlern**؛ رأس البداية **a82511ff43076f67c56e671b04fe007accff5e1a**. ظهر checkout قديم88f3c06 عند الاستئناف؛ جُلب البعيد وقورنت621 ملفًا بايتًا دون اختلاف أو إضافات، ثم reset--mixed دون تغيير ملفات العمل. لا reset/clean دون فحص.
+- **تنفيذ CR1 المرفوع:** `059b8a095d1cbe4daf999e184110f16b7fc46620` — `fix: review A0.1 content and align assessment with source tasks` (18 ملفًا). نجح الدفع إلى `origin/arena/01a1036f-deutschlern`؛ أكد ls-remote وPR API الرأس نفسه. يتبعه commit توثيقي بعنوان `docs: record A0.1 review delivery and deployment limit`؛ استخرج رأسه بـgit log -1 وقارنه بالبعيد عند الاستئناف.
+- **PR والنشر بعد الدفع:** PR#1 OPEN وmergedAt:null. حالة commit التنفيذ علىVercel هيfailure ورسالتها `Deployment rate limited — retry in 24 hours.`. لا دمج أو نشر ناجح مثبت، ولا إعادة نشر يدوية أثناء المهلة. دفع GitHub نجح ولا يساوي نشر الموقع.
+- **التالي A0.2:** اقرأ المصدر والحوار والأسئلة والبدائل والمفاتيح ومهمات الأداء ونصوص التسجيلات. راجع كل عنصر وسجّل الأخطاء بالمراجع، ثم صحّح وافحص وارفع. لا تعِد توليد الأصول. تابع دون اشتراط مراجع بشري، لكن لا تدّع فحصًا لا تسمح به الأدوات أو اعتمادًا سمعيًا بلا دليل. قارئ الشاشة والتكبير الأصلي والأجهزة الفعلية والصوت المسموع مجالات غير محسومة، ولا تتوقف بسببها المراجعة النصية.
+
+## أحدث حالة — QA4: القائمة على الشاشة القصيرة ورفع QA3، 2026-10-07
+
+هذا القسم مرجع الاستئناف. الأقسام التالية تاريخية عند التعارض، وتظل قرارات الأصوات والمحتوى الواردة فيها سارية.
+
+### ما حدث وما تغير
+
+- طلب المستخدم «واصل الآن». أُعيدت مطابقة ملفات العمل بالبعيد دون إتلافها، ثم فُحصت QA3 المستعادة ورُفعت بنجاح بالـcommit **1bb1c5285f26c2664bb677bc1faeb56c4291b787**. هذا هو تنفيذ QA3 المنشور في Git بدل معرّفاتها المحلية القديمة التي لم تصل للبعيد؛ لا تعِد إنتاجه أو دفع تلك المعرّفات.
+- تلا ذلك فحص جديد للعرض320×900 وللشاشة القصيرة568×320. نجحت الحالة الأولى؛ فشلت الثانية لأن آخر زر بالقائمة يقع خارج الجزء المرئي ولا توجد منطقة تمرير داخلية. أُصلح العيب فيCSS، ثم نجح اختبار Tab بين جميع أزرار القائمة وظهور كل زر داخل ارتفاع الشاشة دون تحريك الصفحة خلفها؛ Escape يعيد التركيز لزر الفتح.
+- `styles.css`: ارتفاع100dvh مع100vh احتياطي، وoverflow-y:auto وoverscroll-behavior:contain، ومنع انكماش أبناء القائمة عدا الفراغ المرن. `service-worker.js`: اسم المخزن فقطv44→**deutsch-pfad-v45** لتوزيع الإصلاح؛ منطقRange والتخزين ثابت. لا تغيير فيapp.js أو المحتوى أو حساب الإتقان.
+- جديد: `tools/test_narrow_layout.cjs` وscript باسم`test:narrow-layout` فيpackage.json. تحديث توقعاتv45 فيtest_accessibility_update وtest_service_worker؛fixture42 محفوظ دون تعديل. لا تبعية جديدة أو تغييرlockfile فيQA4.
+- التوثيق: README وPROGRESS وخطة التحسين2.6 وتقرير المتصفح وملفا التسليم. تفاصيل القياسات والحدود في`data/browser-qa-report.md`.
+
+### النتائج المنفذة
+
+- **PASS — narrow-layout:** 126 حالة (63 لكل قياس320×900 و568×320)، تشمل الدروس53 مع جميع التفريغات مفتوحة والجداول المحصورة، ولوحة البداية والمسارات والإعدادات وثلاث حالات اختبار ونموذج الأداء والمفردات والبوابة والقائمة. الصفحة لا تتسع أفقيًا وفق قياسroot/body؛ لا pageerror. حركةTab داخل القائمة المختبرة فعلية، لكن دخول بقية الشاشات والإتقان برمجيان داخل سياق اختبار معزول.
+- **PASS** forms-keyboard عند1440×900 و390×900؛ وaccessibility-audit:23 حالة دون مخالفات للقواعد المختارة، مع31 ظهور عقدة incomplete غير محسوم. لا استثناء للقواعد ولا ادعاء مطابقةWCAG.
+- **PASS** accessibility-update:fixture42→45 فيChromium، حفظ الجلسة والإجابة والبيانات، لاforced reload، القشرة الجديدة دون اتصال، مخزن تطبيق آخر محفوظ، وصوت قديم503 ثم206 بعد إعادة جلبه. ليس اختبارًا حقيقيًا مستقلًا لـ44→45 أو تثبيتPWA أو نسخة تاريخية كاملة من الواجهة.
+- **PASS** test:browser:53درسًا+بوابة/217أصلًا،1440×900 و390×844، عينة حوارB2.12 بالسرعتين، RTL والتفريغات والمديات ودون اتصال. المتصفح مكتوم مع تقديم الزمن قرب النهاية؛ لا استماع كامل أو مراجعة نطق.
+- **PASS** test_service_worker:حذف44 وبقاء45 في المحاكاة؛ build/verify، واختباراتالتدرج/الجلسة/الخطةاليومية/الوقت، وnode--check وgit diff--check. جميع اختبارات المتصفح شُغّلت بالتتابع، ولم يتكرر timeout الذي سُجل أثناء توازيQA3.
+- **ثبات البيانات:** قورنت course.json وplaylist وCSV و474MP3 بايتًا مع1bb1c52 وتطابقت. الحزمة1,688,637بايت،53درسًا/530سؤالًا+10بوابة/109مهام،217أصلًا/474MP3؛137ready و80generated_pending_acoustic_review. صفر طلبات توليد، ولا تغيير روابط أو اعتماد سمعي.
+- **حدود:** فحص CSS viewport ليس تكبير متصفح أصلي200%/400% أو هاتفًا حقيقيًا أو قارئ شاشة. فحص العرض لا يكشف كل قص للنصوص أو تداخل داخلي. تبقى نقاطincomplete والمراجعات البشرية مطلوبة. Firefox/Safari غير مختبرين هنا؛ لم يُكرر تنزيلFirefox الفاشل عميانيًا.
+
+### البيئة والرفع والخطوة التالية
+
+- التشغيل: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:narrow-layout`؛ ثم بقية أوامرnpm بالتتابع. Chromium143.0.7499.0 من@sparticuz/chromium143.0.4 تحت/tmp، وPlaywright1.58.2 وaxe4.11.0 للتطوير فقط. الملفات المؤقتة قد تختفي؛ تقارير/tmp/qa4-audit.json و/tmp/qa4-audit.log ليست مخرجات دائمة.
+- معاينة Python على0.0.0.0:8000، العملية`process-b61f8417`؛ ليست نشرًا، تحقّق من بقائها عند الاستئناف.
+- الفرع الوحيد **arena/01a1036f-deutschlern**. QA3 المستعادة1bb1c52 رُفعت؛ PR#1 أعادت الرأس نفسه وOPEN وmergedAt:null. **Vercel أعادfailure: Deployment rate limited — retry in 24 hours.** لا نشر ناجح مثبت ولا إعادة نشر يدوية أثناء المهلة. دفع إصلاحات Git منفصل عن نشر الموقع.
+- **تنفيذ QA4 المرفوع:** `54416ddd243a8c602aa989513abacb6242dc6733` — `fix: keep navigation reachable on short viewports` (12 ملفًا)، دُفع بنجاح إلى`origin/arena/01a1036f-deutschlern` وأكدls-remote مطابقته للرأس المحلي. يتبعه commit توثيقي بعنوان `docs: record successful QA3 recovery and QA4 delivery`؛ استخرج رأسه بـgit log -1 وقارنه بالبعيد عند الاستئناف.
+- بعد الدفع، أعادتPR#1 الحالةOPEN وmergedAt:null مع رأسQA3 السابق1bb1c52 (تأخرAPI عنls-remote). استعلام تنفيذQA4 نفسه أعادpending وstatuses:[]؛ لا نشر ناجح مثبت. حدVercel الموثق علىQA3 لا يعني نجاح أو فشل نشرQA4 تلقائيًا. لم تُدمجPR أو تُجر إعادة نشر يدوية، ولا توصف الدفعة بأنها مكتملة قبل الدمج.
+- **التالي:** تحقق أولًا من مطابقةHEAD مع البعيد وحالة النشر دون تجاوز حدVercel، ثم تابع المراجعة البشرية للتكبير وقارئ الشاشة و31ظهورincomplete والهاتف الحقيقي وSafari/Firefox والتثبيتPWA. مراجعة المستخدم السمعية واعتماده مطلوبان قبل أيready؛لا صوت جديد خارجA0–B2 أو إعادة الموجود.
+- **تنبيهv45:** يحذف مخازنdeutsch-pfad السابقة وتسجيلاتها؛ أعد فتح المقاطع المطلوبة متصلًا قبل الاعتماد عليها دون اتصال. لا تنزيل474مقطعًا استباقيًا ولا حفظ بقية الحوار بمجرد تشغيل دور واحد؛ لا ضمان دائمًا ضدquota/eviction.
+- حافظ على جميع قرارات المستخدم: المحتوى والتقييم والتطبيق أولًا، حد10طلبات صوت/رد وعندالحد توقف، ثبات الأصوات وتصحيحA2.7Q08→T05 واتساقA2.9 وإصداريB2.5/B2.7v2، وعدم تحريف سجلB2.6 إلىB2.7. لاready/«نهائي» دون الاعتماد ولا ادعاء استماع. التفاصيل التاريخية محفوظة أدناه؛ حدّث ملفي التسليم وارفع كل دفعة على الفرع نفسه.
+
+## استئناف QA3 وإعادة الرفع — 2026-10-07
+
+هذا القسم أحدث من سجلات التعطل أدناه، وهو مرجع حالة الرفع الحالية.
+
+- طلب المستخدم «واصل الآن»: جرى استرجاع حالة Git دون حذف ملفات العمل. ظهر رأس checkout القديم88f3c06، ولم تعد كائنات commits المحلية السابقة 3ee2820/b13b9ef/12b33ba متاحة في هذه البيئة؛ ملفاتها محفوظة. جُلب الفرع البعيد وقورنت618 ملفًا:16 ملفًا مختلفًا هما تنفيذ وتوثيق QA3، وملفا الاختبار الجديدان، وصفر ملفات مفقودة أو إضافات أخرى. جميع ملفات الصوت والمحتوى غير الداخلة في QA3 مطابقة للبعيد.
+- بعد الفحص استُخدم git reset --mixed إلى origin/arena/01a1036f-deutschlern عندe3ac818 دون تغيير ملفات العمل. ستُحفظ تغييرات QA3 نفسها في commit جديد فوق هذا الرأس؛ المعرّفات المحلية القديمة سجل تاريخي لمحاولات لم تُرفع، لا تستعملها كمرجع منشور أو تعِد إنتاج ملفاتها.
+- أُعيدت الفحوص فعلًا بالتتابع في Chromium143.0.7499.0: forms-keyboard، accessibility-audit (23 حالة، صفر مخالفات للقواعد المختارة و31 ظهور عقدة incomplete)، accessibility-update (fixture42→44)، وtest:browser لجميع53 درسًا والبوابة/217 أصلًا وعينة الحوار بالسرعتين والعمل دون اتصال. كلها PASS؛ لا مطابقة WCAG أو استماع بشري مدّعيان.
+- نجحت أيضًا npm ci، والبناء (1,688,637بايت) والتحقق، واختبارات التدرج وحفظ الجلسة والخطة اليومية والوقت وعامل الخدمة، وnode--check وgit diff--check. لا تعديلات إنتاجية إضافية أو صوت جديد في هذه الاستعادة؛ cache v44،137ready و80 للمراجعة ثابتة.
+- بيئة Chromium أُعيد تجهيزها من@sparticuz/chromium143.0.4 تحت/tmp؛ التشغيل باستخدام LD_LIBRARY_PATH=/tmp/al2023/lib وCHROMIUM_EXECUTABLE_PATH=/tmp/chromium. تقارير إعادة الفحص المؤقتة /tmp/qa3-resumed-audit.json و/tmp/qa3-resumed-audit.log. لم تُؤكد معاينة العملية القديمة بعد الاستعادة.
+- **نتيجة الاستعادة:** رُفع commit `1bb1c5285f26c2664bb677bc1faeb56c4291b787` بنجاح إلىarena/01a1036f-deutschlern؛ أكدتPR API الرأس نفسه. لا force push أو دمجPR#1. Vercel أعادحدالنشر24ساعة؛ لا نشر مثبت. حالةQA4 اللاحقة فيأعلىالملف.
+- **التالي:** أولًا إثبات الرفع بمطابقة الرأس والبعيد، ثم متابعة فحوص العرض الضيق والتكبير والنقاط التي لا يحسمها axe. تبقى المراجعة السمعية واعتماد المستخدم والهاتف الحقيقي وSafari/Firefox وقارئ الشاشة والتثبيت PWA مطلوبة. تنبيه v44: أعد فتح المقاطع المطلوبة متصلًا بعد التحديث لأن مخازن الصوت القديمة تُحذف.
+- جميع قرارات المستخدم وتفاصيل الملفات والفحوص والأصوات في قسم QA3 أدناه ما زالت سارية: لا C1 أو إعادة توليد الموجود أو ready دون الاعتماد، ولا وصف الدفعة بأنها مكتملة قبل الفحص والرفع والدمج.
+
+## أحدث حالة — QA3: التباين والنماذج وv44، 2026-10-07
+
+هذا القسم مرجع الاستئناف؛ ما يليه سجلات تاريخية عند التعارض. أحدث طلب: «واصل الانتاج». استمر العمل على التطبيق، لا على إنتاج صوت جديد خارج A0–B2.
+
+### ما نُفّذ
+
+- أظهر الفحص الأولي 14 زوج شاشة/قاعدة بمخالفات axe، وأثبت اختبار النماذج أن اختيار ملف JSON غير قابل للوصول بزر Tab. أُصلح تباين النصوص الثانوية والشارات ومؤشر التركيز، واستُبدلت شفافية البطاقات المقفلة بحد متقطع مع بقاء رمز القفل ونصه.
+- بقي الاستيراد حقل ملف أصليًا، لكنه صار مخفيًا بصريًا بدل display:none، وقابلًا لـTab وSpace مع مؤشر مرئي على label. أُضيف aria-describedby لشرح حقلي الاسم والدقائق؛ لا تغيير لمنطق الاستيراد أو حساب الدرجات أو الأقفال.
+- أصبحت الجداول تحمل tabindex=0 وrole=region واسمًا عربيًا يشرح التمرير بالأسهم. تغيير course.json محدود بـ90 غلاف جدول مولّد؛ بعد إرجاع هذه السمات قورنت الحزمة معنويًا بالرأس e3ac818 وتطابقت. حجمها الآن **1,688,637 بايت** بدل 1,677,657.
+- ثابت: 53 درسًا، 530 سؤال درس +10 للبوابة، 109 مهام، 217 أصلًا/474 MP3؛ منها 137 ready و80 generated_pending_acoustic_review. قورنت ملفات MP3 والـplaylist والسجل بايتًا بالرأس e3ac818؛ كلها ثابتة. **صفر طلبات توليد صوت**، ولا مراجعة سمعية أو تحويل إلى ready.
+- تغير اسم مخزن service-worker.js فقط من v43 إلى **deutsch-pfad-v44**. اختبار التحديث في المتصفح يستخدم العامل التاريخي fixture v42 مباشرة إلى v44؛ لم يُضف fixture v43 ولم يُختبر مساره الحقيقي مستقلًا. اختبار عامل الخدمة المنفصل يفحص حذف v43 وبقاء v44. لا خلط مع نتيجة QA2 التاريخية v42→v43.
+
+### الملفات
+
+- الإنتاج: `styles.css` و`app.js` و`tools/build_course.py` و`data/course.json` و`service-worker.js`.
+- جديد: `tools/test_accessibility_audit.cjs` و`tools/test_forms_keyboard.cjs`. تحديث `tools/verify_course.py` للتحقق من سمات الجدول، و`tools/test_service_worker.cjs` و`tools/test_accessibility_update.cjs` لتوقع v44. لم يتغير fixture v42 أو test_browser.
+- `package.json` و`package-lock.json`: تثبيت axe-core **4.11.0** للتطوير فقط، بجانب Playwright1.58.2؛ إضافة أمري `test:accessibility-audit` و`test:forms-keyboard`. لا يُحمّل axe في تطبيق المستخدم.
+- التوثيق: README وcontent/PROGRESS.md وخطة التحسين (2.5) وdata/browser-qa-report.md وملفا التسليم. لم يُعد وصف سجل B2.6 كأنه B2.7.
+
+### نتائج الفحوص وحدودها
+
+- **PASS — accessibility-audit:** Chromium143.0.7499.0 وaxe4.11.0، **23 حالة شاشة** عند1440×900 و390×900، بقواعد WCAG2.0/2.1 A/AA الموسومة فقط، دون تعطيل قواعد. صفر مخالفات في العينة، لكن بقي **31 ظهور عقدة غير محسوم عبر7 حالات** للتباين. تُطبع المحددات وتُحفظ عند تعيين A11Y_REPORT؛ التفاصيل في تقرير الفحوص. ليس اعتماد WCAG أو فحص جميع الشاشات.
+- **PASS — forms-keyboard:** Tab/Enter/Space، منع3 دقائق، حفظ95 دقيقة والاسم والاهتمام ثم إعادة التحميل؛ تصدير JSON، إطلاق منتقي الملف الأصلي ومؤشر label؛ رفض JSON مكسور دون تغيير الاسم ثم استيراد نسخة صحيحة بعد تغييره والتحقق من استعادته وبقائه بعد reload. كتابة مسودة أداء وتحديد checkbox وحفظهما دون منح إتقان؛ تمرير أول جدول A0.1 بسهم اليسار عند390px.
+- الدخول للشاشات والتركيز الأولي وتجهيز نموذج الأداء برمجي داخل ملف متصفح معزول. يختار Playwright الملف بعد إطلاق filechooser؛ ليس اختبارًا لواجهة نظام التشغيل ذاتها أو رحلة مستخدم كاملة.
+- **PASS — accessibility-update:** فحوص لوحة المفاتيح السابقة وتحديث fixture42→44؛ بقاء الجلسة والإجابة والبيانات دون forced reload، القشرة الجديدة دون اتصال، حفظ مخزن آخر، و503 لصوت المخزن القديم ثم206 بعد إعادة جلبه متصلًا. بيانات الإتقان اصطناعية لا تمس المستخدم؛ ليس هاتفًا أو تثبيت PWA فعليًا أو نسخة تاريخية كاملة للواجهة.
+- **PASS — test:browser:** 53درسًا+بوابة/217أصلًا، عند1440×900 و390×844؛ RTL والأقفال والتفريغات وعينة حوار B2.12 من6 أدوار بالسرعتين وRange ودون اتصال. المتصفح مكتوم، ويُقدّم الزمن قرب نهاية المقاطع؛ **ليس استماعًا كاملًا أو اعتمادًا صوتيًا**.
+- **PASS:** build/verify وtest_progression وtest_session_persistence وtest_daily_plan وtest_study_time وtest_service_worker، وnode--check وgit diff--check. npm ci: صفر ثغرات معروفة حسب الأداة وقت الفحص، لا ضمان أمني شامل.
+- رُصد timeout واحد للـfilechooser عند تشغيل مجموعتي Chromium بالتوازي؛ السبب غير محسوم. نجح التشغيل المنفرد ثم3 إعادات متتابعة إضافية للنماذج دون تخفيف التوقعات أو إضافة retry. **شغّل مجموعات المتصفح بالتتابع** وحقّق مجددًا إن تكرر الفشل.
+
+### البيئة والتشغيل
+
+- الأمر الناجح هنا: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:forms-keyboard`؛ وبالبيئة نفسها audit/update/browser. runtime من@sparticuz/chromium143.0.4 تحت/tmp، لا يُحفظ في Git وقد يختفي. الإعداد القياسي: npm ci ثم Playwright Chromium، أو متصفح محلي عبر CHROMIUM_EXECUTABLE_PATH.
+- `/tmp/a11y-before.json` و`/tmp/a11y-final.json` تقارير مؤقتة؛ النتائج الدائمة في تقرير Markdown. لا تعتمد على استمرار ملفات/tmp عند الاستئناف.
+- معاينة Python على0.0.0.0:8000، العملية `process-c7f703b2`، واستجابة HTTP200؛ ليست نشرًا. تحقّق من بقاء العملية عند الاستئناف.
+
+### الرفع والقرارات المستمرة والخطوة التالية
+
+- الفرع الوحيد **arena/01a1036f-deutschlern**؛ رأس البداية **e3ac81834237a96da08f4cd33a9be3a74ec705c6**، وتنفيذ QA2 السابق faa5816. ظهرت HEAD قديمة88f3c06 عند بداية QA3؛ قورنت618 ملفًا بالبعيد بايتًا بلا اختلاف أو زيادة، ثم reset--mixed دون تغيير ملفات العمل. لا reset أو clean دون فحص الملفات.
+- **Commit تنفيذ QA3 المحلي:** `3ee282072c697ec5de099df9ddc7a831a729d3f5` — `fix: improve contrast and keyboard access to forms and tables` (18 ملفًا). **الرفع متعطل، لا تعتبره مرفوعًا:** فشلت محاولتان بـ`git push origin arena/01a1036f-deutschlern` برسالة remote rejected / Internal Server Error، لا خطأ مصادقة. أكّد ls-remote بعد المحاولة الأولى بقاء البعيد عند `e3ac81834237a96da08f4cd33a9be3a74ec705c6`؛ أعادت PR API هذا الرأس أيضًا بعد المحاولة الثانية. Request IDs: `C996:305126:11E6CB:1D8D58:6AC67A4E` و`D154:2221DD:123821:1DE9B1:6AC67A58`، بتاريخ2026-10-07 نحو16:59Z.
+- التوثيق المحلي الأول: `b13b9ef5dc1ba33633308941c286f06d946488ba` — `docs: record QA3 results and blocked GitHub push`. فشلت المحاولة الثالثة لدفع التنفيذ وهذا التوثيق أيضًا بخطأ داخلي من GitHub، Request ID `B338:2E4A10:120A49:1DBE00:6AC67A7D` في16:59:42Z. أكّد ls-remote بعدها أن البعيد ما زال e3ac818. يتبع ذلك توثيق هذه النتيجة بعنوان `docs: record confirmed remote state after push failures`؛ استخرج رأس العمل بـgit log -1. لا تفترض نجاح أي دفع لاحق: قارن HEAD مع ls-remote عند الاستئناف، وأعد الدفع إلى الفرع نفسه فقط عند توفر GitHub، دون reset أو force push أو إعادة تنفيذ العمل.
+- **GitHub:** PR#1 ما زالت OPEN وmergedAt:null؛ رابطها https://github.com/naderba69/deutschlern/pull/1 . فشل استعلام status للـcommit المحلي برسالة unexpected end of JSON input؛ لا نتيجة نشر موثوقة. لا دمج أو نشر مثبت. **الأولوية التالية تسوية عطل الرفع مع حفظ التغييرات، ثم الفحوص البشرية أدناه.**
+- **تنبيه v44:** تفعيل العامل يحذف مخازن deutsch-pfad السابقة وتسجيلاتها؛ أعد فتح المقاطع المطلوبة متصلًا قبل استعمالها دون اتصال. لا تنزيل استباقي لـ474 مقطعًا أو بقية أدوار الحوار، ولا ضمان دائمًا ضد quota/eviction.
+- **التالي:** مراجعة نقاط incomplete والتكبير وقارئ الشاشة، ثم المسارات غير المغطاة وهاتف حقيقي وSafari/Firefox والتثبيت PWA. مراجعة المستخدم السمعية قبل أي ready؛ ما زال80 أصلًا ينتظر الاعتماد. تنزيل Firefox146/build1509 فشل TLS/ECONNRESET في QA2 ولم يُكرر دون تغير الظروف؛ لا ادعاء اختباره أو Safari.
+- المحتوى والتقييم والتطبيق قبل الصوت؛ لا إعلان اكتمال قبل الفحص والرفع والدمج، ولا دمج PR#1 في هذه الجلسة. لا C1 أو إعادة توليد الموجود أو إخفاء التسجيلات أو تغيير روابطها. حد10 طلبات صوت/رد، وعند رسالة الحد توقف.
+- الأصوات السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وإصداري B2.5/B2.7 v2 محفوظة. B1.9 ينتظر اعتماد المعاينة؛ اختيار الأصوات الموجودة لـB1.10 صريح؛ B1.11: Archivarin=voice-00 وMira=voice-02 باختيار صريح. السجلات التاريخية أدناه تحفظ تفاصيل الأصوات والدفعات. حدّث ملفي التسليم وارفع كل دفعة على الفرع نفسه واشرح بعربية واضحة.
+
+## سجل QA2 — لوحة المفاتيح وتحديث المخزن إلى v43، 2026-10-07
+
+هذا القسم هو مرجع الاستئناف؛ السجلات التالية تاريخية عند التعارض معه.
+
+### التنفيذ والحالة والمتبقي
+
+- طلب المستخدم «واصل»: نُفذت دفعة اختبار وإصلاح للتطبيق. **صفر طلبات توليد صوت**؛ لا إعادة إنتاج أو اعتماد سمعي. الإنتاج المخطط وصل إلى B2.12 سابقًا.
+- أُثبت في Chromium أن فتح قائمة الهاتف لا ينقل التركيز إليها. صُحح ذلك، مع استعادة التركيز بعد إعادة رسم الإجابة، وحصر Tab/Shift+Tab داخل القائمة المفتوحة، وإعادته إلى زرها عند Escape/الإغلاق. اختيار وجهة ينقل التركيز إلى محتواها؛ توسيع العرض لسطح المكتب يلغي الوضع الحواري وinert.
+- أُضيف رابط «انتقل إلى المحتوى» أول توقف بلوحة المفاتيح، وزر إغلاق صريح، وaria-controls/expanded للزر وrole=dialog/aria-modal للقائمة المفتوحة. الخلفية ورابط التجاوز inert حين تكون القائمة مفتوحة؛ الغطاء بالنقر لا يدخل تسلسلTab. وُسعت مؤشراتfocus-visible للروابط وsummary وtextarea.
+- نجح اختبار تحديث عامل الخدمة **v42→v43** في Chromium فعلي بملف متصفح معزول: بقاء الإجابة المتحقق منها وموضع جلسة التقييم والاسم وسجل إتقان اختباري ومفردات ومسودة أداء، مع عدم فرض إعادة تحميل أثناء التفعيل، ثم تحميل القشرة الجديدة دون اتصال.
+- الاختبار يستخدم **نسخة عاملv42 محفوظة** وقشرة التطبيق الحالية ذات علامة اختبارية لتحديد النسخة. ليس نسخة تاريخية كاملة من الواجهة أو هاتف المستخدم أو تثبيتPWA فعليًا. بيانات الإتقان والأداء داخل الملف المؤقت اصطناعية ولا تمس المستخدم.
+- حُفظ مخزن تطبيق آخر وحُذفv42. عادت503 لتسجيل كان في المخزن القديم، ثم أُعيد جلبه متصلًا ونجح206 بعد فصل الشبكة. فُصل الخادم نفسه إضافةً إلى تعطيل اتصال المتصفح، لمنع نجاح زائف بسبب طلبات العامل.
+- **Firefox غير مختبَر:** جُرب تنزيل Firefox146.0.1/build1509 بـ`npx playwright install firefox` وفشلTLS/ECONNRESET. لا نجاحFirefox أو Safari/WebKit أو هاتف حقيقي أو قارئ شاشة مدّعى. لا تكرر التنزيل الفاشل دون تغير ظروف الشبكة أو وجود متصفح محلي.
+- **الحزمة ثابتة:**53درسًا،217أصلًا/474MP3؛137ready و80generated_pending_acoustic_review (20 لـB1.9–B1.12 و60 لـB2.1–B2.12)،1,677,657بايت. لا تغيير للمحتوى أو التقييمات أو أيMP3 أوplaylist/CSV/course.json؛ لا تحويل إلىready.
+- **التالي:** مراجعة المستخدم السمعية واعتماد الأصول بعد المراجعة؛ هاتف حقيقي وSafari/Firefox عند توفرهما، والتثبيتPWA وقارئ الشاشة والتباين وبقية مسارات النماذج بلوحة المفاتيح. يمكن متابعة التدقيق الآلي لإمكانية الوصول، لكن لا إعلان مطابقةWCAG أو إتقان تعليمي شامل. لا صوت جديد أوC1 أو إعادة توليد تلقائي أو دمجPR#1.
+
+### الملفات والقرارات التقنية
+
+- `app.js`: إدارة التركيز فيrender باستخدامid أوdataset للعنصر السابق إذا بقي قابلًا للتفاعل، وإلا الانتقال إلى المحتوى؛ الدالتانfocusMainContent/setMobileMenu؛ إدارةTab/Escape/resize؛ سماتARIA وinert ورابطالتجاوز وزرالإغلاق. لا تغيير لحساب الدرجات أو التسلسل أو شروطالإتقان.
+- `styles.css`: تنسيق رابط التجاوز وزر إغلاق الهاتف ومؤشرات التركيز. بقي تصحيح عمودGrid من الدفعة السابقة.
+- `service-worker.js`: تغيير اسم المخزن فقط منv42 إلى**deutsch-pfad-v43** لتوزيع التطبيق والأنماط الجديدة؛ منطقRange والتخزين لم يتغير.
+- جديد: `tools/test_accessibility_update.cjs` و`tools/fixtures/service-worker-v42.js`. ملفfixture مطابق بايتًا لـservice-worker.js عند رأس البداية، وليس ملف إنتاج جديدًا.
+- `tools/test_browser.cjs`: تصدير مساعدات الخادم/المتصفح للاختبار الجديد، وتشغيله المباشر محفوظ، وخيار داخلي لتقديم العامل القديم وعلامةقشرة اختبارية؛ لا شيء من ذلك داخل شيفرة التطبيق. تعديل محدد الغطاء بسبب وجود زرإغلاق ثانٍ. `tools/test_service_worker.cjs`: توقعات الإصدار43 وحذف42 بدل41.
+- `package.json`: الأمر `test:accessibility-update`؛ لا تبعيات جديدة أو تعديلpackage-lock. التحديثات التوثيقية فيREADME وPROGRESS وخطةالتحسين وتقرير`data/browser-qa-report.md` وملفيالتسليم.
+
+### الفحوص المنفذة والبيئة
+
+- **PASS** `npm run test:accessibility-update` عبرChromium143.0.7499.0/Playwright1.58.2: دخولالقائمة ولفTab وعكسه وEscape وعودةالتركيز وinert والتنقل واستعادةتركيزالإجابة وتوسيعالشاشة ورابطالتجاوز؛ وتحديثالعامل وحفظبياناتالجلسة وتشغيلالقشرةالجديدة دوناتصال وإعادةحفظالصوت.
+- **PASS** `npm run test:browser`:53درسًا+بوابةA0/217أصلًا عند1440×900 و390×844، والعينةالسابقة لحوارB2.12 بستةأدوار بالسرعتين، والمديات ودوناتصال. لا استماع بشري؛ المتصفح مكتوم وتقديمالصوت قربالنهاية لتجربةالتسلسل لا يعني سماعه كاملًا.
+- **PASS** `node tools/test_service_worker.cjs` و`python3 tools/build_course.py` و`python3 tools/verify_course.py` والأربع `test_progression.cjs`/`test_session_persistence.cjs`/`test_daily_plan.cjs`/`test_study_time.cjs` وفحوصnode--check للتطبيق والخدمة والاختبارات وfixture وgit diff--check.
+- قورنت474MP3 بايتًا وملفاتplaylist/CSV/course.json مع رأسالبداية وظلت مطابقة. المحتوى والتقييمات وسجلاB2.6/B2.7 التاريخيان فيPROGRESS ثابتة؛ تصحيحاB2.5Q03 وB2.7P02 بإصداريv2 محفوظان.
+- انتظارcontrollerchange وحده كان مبكرًا لفحص حذفالمخزن؛ عدّل الاختبار لينتظر حالةالعاملactivated قبل فحصالنتيجة. تُقارن الجلسات بمعنىJSON لأنundefined لا يُحفظ فيlocalStorage؛ بقيةالحقول والقيم لا تُستثنى.
+- متصفحالبيئة استُعيد من`@sparticuz/chromium@143.0.4` تحت`/tmp/deutschlern-browser-runtime` مع مكتباتal2023. الأمر الناجح هنا: `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium npm run test:accessibility-update`. هذه ملفات مؤقتة خارجGit؛ قدتختفي. الإعدادالقياسي `npm ci && npx playwright install --with-deps chromium` أو متصفح مثبت عبرCHROMIUM_EXECUTABLE_PATH. التطبيق نفسه ثابت ولا يحتاجnpm.
+- معاينة`0.0.0.0:8000` بالعملية `deutschlern-d47c138c`؛HTTP200للصفحة/app/styles/service/course. خوادمالاختبارات الداخلية مؤقتة علىloopback وتُغلق تلقائيًا؛ لاlocalhost فيشيفرةالمستخدم. تحققمن استمرارالمعاينةعندالاستئناف.
+
+### الرفع والتنبيهات المستمرة
+
+- **تنبيهالتخزين:** تفعيلv43 يحذف مخازنdeutsch-pfad السابقة وتسجيلاتها؛ أعد فتح المقاطع المطلوبة متصلًا قبل الاعتماد عليها دون اتصال. لا تُنزّل474مقطعًا كلها ولا بقيةأدوارالحوار تلقائيًا؛ لا ضمان دائمًا ضد حصةالتخزين أو إخلائه.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `04480f3313253ac0a68aa258a9ab570d721943c5`. ظهرHEADقديم88f3c06؛ قورنت616ملفًا بالبعيد بايتًا دون اختلاف أو إضافات، ثم محاذاةالرأس والمؤشر بـgit reset--mixed دون تغييرملفاتالعمل.
+- **Commit التنفيذ:** `faa581677dc30900f0cb84026ab9c1057a8be8a3` — `fix: preserve keyboard focus and verify service worker upgrades`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record keyboard and upgrade QA delivery`؛ استخرج رأسه بـgit log -1 وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR#1 `OPEN` و`mergedAt:null`؛ أعادتAPI رأسًا سابقًا`04480f3`. فُحص تنفيذ`faa5816` مباشرة: `pending` و`statuses:[]`؛ لا نجاح نشر مثبت. لم تُدمجPR ولم تُجر إعادة نشر يدوية. رفعGitHub منفصل عن نشرالموقع.
+- حدVercel السابق لدفعةB2.8 موثق: `Deployment rate limited — retry in 24 hours.`؛ لا إعادة نشر يدوية أثناءالمهلة؛ دفعGitHub لا يثبت نشرالموقع. عطلرفعB2.6 القديم انتهى.
+- المحتوى والتقييم والتطبيق قبلالصوت؛لاready/«نهائي» دون اعتمادالمستخدم ولا إخفاء أو تغييرروابطالتسجيلات، ولا ادعاء استماع أو اكتمال قبلالفحص والرفع والدمج. حد10طلباتتوليد/رد وعندالحدتوقف. حافظعلىالأصوات وتصحيحA2.7Q08→T05 واتساقA2.9 وتصحيحيB2.5/B2.7؛لا تحوّل سجلB2.6 لحالةB2.7. اشرح بالعربية وحدّثملفيالتسليم وارفعكلدفعة؛افحصالملفات قبلتسويةGit.
+
+## سجل تاريخي — فحص Chromium وتصحيح العمل دون اتصال، 2026-10-07
+
+هذا القسم يصف دفعةالفحصv42 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### ما نُفذ وما بقي
+
+- بعد طلب «واصل» انتقل العمل من إنتاج الصوت إلى اختبار التطبيق. **صفر طلبات توليد صوت**؛ لا حذف أو إعادة توليد أو اعتماد سمعي. وصل الإنتاج المخطط إلى B2.12 في الدفعة السابقة.
+- نُفذت اختبارات **Chromium143.0.7499.0 عبر Playwright1.58.2** آليًا بملفات متصفح مؤقتة معزولة. الدروس53 وبوابةA0 وأصولها217 عُرضت عند1440×900 و390×844 مع التحقق من عدد الأزرار والشارات وعدم اتساع الصفحة.
+- فُحص قفل البداية عندA0 أولًا. للوصول لبقية الدروس وُضع سجل إتقان اصطناعي داخل ملف الاختبار فقط؛ لا تجاوز في التطبيق ولا ادعاء حل التقييمات أو تعديل تقدم المستخدم.
+- شُغّل حوار B2.12 بأدواره الستة عبر HTMLAudioElement الحقيقي بالسرعتين1 و0.8 على القياسين؛ فُحص تقدم الزمن والمدة، ثم قُدّم الصوت قرب نهايته لاختبار ended الطبيعي وتسلسل الأدوار. جُرب فتح التفريغ وقائمة الهاتف وإغلاقها وإيقاف الصوت عند مغادرة الدرس. هذا **ليس استماعًا للمقاطع كاملة أو اعتمادًا لجودة النطق**؛ المتصفح مكتوم.
+- جُرب حفظ مقطع الحوار الأول وتشغيله دون اتصال، وإعادة تحميل التطبيق والتنقل والمديات الجزئية واللاحقة والأخطاء. عُطّل اتصال السياق وفُصل خادم الاختبار نفسه حتى لا ينفذ Service Worker طلبات متصلة خلف الاختبار. فشل قراءة غير مخزّنة يُظهر تنبيهًا دون تغيير سجل الإتقان.
+- **الحزمة ثابتة:**53درسًا؛217أصلًا/474MP3؛137ready و80generated_pending_acoustic_review (20لـB1.9–B1.12 و60لـB2.1–B2.12)؛1,677,657بايت. لم يتغير app.js أو أي محتوى/تقييم/MP3/playlist/CSV/course.json. لا تحويل إلى ready.
+- **التالي:** مراجعة المستخدم السمعية واعتماد الأصول بعد المراجعة، ثم هاتف حقيقي وSafari/Firefox والتثبيت والتحديث الفعلي للـPWA، وفحص أشمل لإمكانية الوصول. نجاح محاكاة الهاتف ليس اختبار هاتف حقيقي. لا درس صوت جديد أو C1، ولا إعادة توليد تلقائي ولا دمج PR#1.
+
+### العيوب المصححة والملفات
+
+- `service-worker.js` → cache**deutsch-pfad-v42**: صار حفظ الصوت كاملًا باستجابة200 دون Range، ثم توليد206 للمدى المطلوب مع رؤوس صحيحة و416 للمدى غير المتاح؛ تجاهل المديات غير المدعومة برد200 كامل. If-Range غير المطابق يرجع الملف الكامل. الصوت المحفوظ يُقرأ من المخزن، ولا تحميل مسبق لمكتبة474مقطعًا.
+- كان الاختبار قبل التصحيح يعيد200 بدل206 دون اتصال؛ وكان العامل يحاول حفظ206 غير المدعوم من Cache API. أُصلح الحفظ بربطه بـwaitUntil والتقاط أخطاء الحصة، وعدم تخزين404/500 أو الأجزاء.
+- احتياطي index.html صار للتنقل فقط؛ موارد الصوت/JS/CSS/JSON غير المخزنة ترجع503 بنص عادي، لا HTML زائفًا. التفعيل لا يحذف مخازن التطبيقات الأخرى، بل نسخ deutsch-pfad السابقة فقط.
+- `styles.css`: كان عرضA0.1 عند390px يتسع إلى495px بسبب الحد الأدنى التلقائي لعمودGrid الداخلي؛ أُضيف minmax(0,1fr) إلى lesson-main-column. القائمة الجانبية المغلقة صارت visibility:hidden حتى لا تبقى روابطها قابلة للتركيز؛ تظهر عند الفتح. لم يُعد تصميم الواجهة.
+- جديد: `tools/test_browser.cjs` بخادم اختبار يدعمRange ويتوقف تلقائيًا، و`tools/test_service_worker.cjs` لاختبارات العامل المستقلة؛ `package.json` و`package-lock.json` لتثبيت Playwright للتطوير فقط؛ `data/browser-qa-report.md` بالتقرير وحدود العينة وإعادة التشغيل.
+- معدل: `.gitignore` لاستثناءnode_modules؛ README وPROGRESS وخطة التحسين وملفا التسليم. لا متصفح أو مكتباته أو لقطات تشخيص أوnode_modules داخلGit.
+
+### الفحوص وبيئة التشغيل
+
+- نجح `npm run test:browser` بالبيئة `LD_LIBRARY_PATH=/tmp/al2023/lib CHROMIUM_EXECUTABLE_PATH=/tmp/chromium`:53درسًا+بوابة/217أصلًا على القياسين، تشغيل6أدوار بالسرعتين، وقف عند التنقل، دون أخطاءJavaScript في الصفحات المختبرة؛ وتشغيل عينة حقيقية دون اتصال واستجابات200/206/416/503.
+- نجح `node tools/test_service_worker.cjs`: تفعيل وعزل المخازن، عدم تحميل الصوت مسبقًا، فشل الحصة دون كسر الاستجابة، حفظ200فقط، If-Range، استثناءPOST والمصادر الخارجية، وأخطاء الموارد غير المتصلة.
+- نجحت build/verify (الحزمة ثابتة1,677,657بايت) والاختبارات `test_progression.cjs` و`test_session_persistence.cjs` و`test_daily_plan.cjs` و`test_study_time.cjs`؛ وفحوصnode--check للتطبيق والخدمة وكل الاختبارات وgit diff--check. npm install فحص3حزم دون ثغرات معلنة وقت التنفيذ.
+- قورنت474MP3سابقة بايتًا وملفاتplaylist/CSV/course.json/app.js مع رأس البداية وظلت مطابقة. كل مصادر الدروس والتقييمات وسجلا محتوى/تقييمB2.6/B2.7 التاريخيان ثابتة؛ تصحيحاB2.5Q03/B2.7P02 بإصداريv2 محفوظان.
+- تعذر تنزيل Chromium المعتاد منPlaywright بسببTLS/ECONNRESET وتعذر مستودعDebian. استُخدم npm مؤقتًا لـ`@sparticuz/chromium@143.0.4` تحت`/tmp/deutschlern-browser-runtime` مع مكتباتal2023 المرفقة؛ لا يُعد فشل التنزيل فشلًا نهائيًا للفحص، إذ نُفذ بنجاح لاحقًا. قد تختفي الملفات المؤقتة؛ التثبيت القياسي `npm ci && npx playwright install --with-deps chromium` أو CHROMIUM_EXECUTABLE_PATH لمتصفح مثبت. التطبيق الثابت نفسه لا يحتاجnpm.
+- خادم المعاينة `0.0.0.0:8000` بالعملية `deutschlern-01f2242e`؛HTTP200للصفحة/app/styles/service/course وعينةMP3. خادم اختبار المتصفح داخلي مؤقت علىloopback يدعمRange وقد أُغلق؛ لا localhost جديد في شيفرة المستخدم. تحقق من بقاء المعاينة عند الاستئناف.
+- لا تدّع مراجعة سمعية أو فحص474مقطعًا كاملًا أو تجربة هاتف حقيقي؛ التقرير يميز عرضالأصول عن عينةالتشغيل. لقطة تشخيص فاشلة تحت/tmp ليست تسليمًا أو دليل نجاح.
+
+### التخزين والرفع والقرارات المستمرة
+
+- **تنبيه للمستخدم:** تفعيلv42 يحذف مخازنdeutsch-pfad القديمة بما فيها الصوت؛ أعد فتح التسجيلات المطلوبة متصلًا قبل الاعتماد عليها دون اتصال. يُحفظ المقطع المطلوب كاملًا فقط، لا بقية أدوار الحوار تلقائيًا. الحصة/حذف المتصفح قد يمنع الحفظ؛ لا زر تنزيل شامل أو ضمان دائم في هذه الدفعة.
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية`509d73c01a4f57cccab679ced1771201ad7dedfc`. ظهرHEADقديم88f3c06؛ قورنت611ملفًا بالبعيد بايتًا بلا اختلاف أو إضافات، ثم محاذاة الرأس والمؤشر بـgit reset--mixed دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `b17250c027be8c4f720b99ca9565982dceb8e16f` — `fix: support offline audio ranges and narrow lesson layouts`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record browser and offline QA delivery`؛ استخرج رأسه بـgit log -1 وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR#1 `OPEN` و`mergedAt:null`؛ أعادتAPI رأسًا سابقًا`509d73c`. فُحص تنفيذ`b17250c` مباشرة: `pending` و`statuses:[]`؛ لا نجاح نشر مثبت. لم تُدمجPR ولم تُجر إعادة نشر يدوية. رفعGitHub منفصل عن نشرالموقع.
+- حدVercel السابق لدفعةB2.8 موثق: `Deployment rate limited — retry in 24 hours.`؛ لا إعادة نشر يدوية أثناءالمهلة، ورفعGitHub لا يثبت نشرالموقع. عطلرفعB2.6 القديم انتهى.
+- المحتوى والتقييم والتطبيق قبل الصوت؛لا ready/«نهائي» قبل اعتمادالمستخدم، ولا إخفاء أو تغيير روابطالتسجيلات، ولا ادعاء اكتمال قبل الفحص والرفع والدمج. حد10طلبات توليد/رد وعندالحد توقف دون إعادةمحاولة. حافظ على الأصوات وتصحيحA2.7Q08→T05 واتساقA2.9 وتصحيحيB2.5/B2.7؛لا تحوّل سجلB2.6 لحالةB2.7. اشرح بالعربية وحدّثملفيالتسليم وارفعكلدفعة، وافحصالملفات قبلتسويةGit.
+
+## سجل تاريخي — صوت B2.12، 2026-10-07
+
+هذا القسم يصف دفعة صوتB2.12 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الانتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.12: المفردات والنماذج وستة أدوار حوار والقراءة والاستماع. استُهلك حد10طلبات؛ لا توليد إضافي في الرد نفسه ولا إعادة إنتاج الموجود.
+- الأصوات المسجلة الموجودة: **Moderatorin=`voice-02` وGast=`voice-03` للمعاينة دون اختيار صريح جديد أو اعتماد نهائي**؛ Narrator=`voice-02` للمفردات والنماذج والقراءة وErzählperson=`voice-03` للاستماع. الأدوار العامة لا تثبت أنها الشخصيات نفسها في دروس سابقة؛ الراوي لا يجسّد الكاتبة بل ينقل أقوالها.
+- الجديد تحت `assets/audio/`: `DL-B2-12-AUD-PHR-01.mp3` و`DL-B2-12-AUD-MODEL-01.mp3` و`DL-B2-12-AUD-DLG-01-01.mp3` إلى `DL-B2-12-AUD-DLG-01-06.mp3` و`DL-B2-12-AUD-READ-01.mp3` و`DL-B2-12-AUD-LST-01.mp3`.
+- خمسة أصول تحت الأقسام1–5 في `b2-12-leisure-media-reported-speech` عبر `sectionHeading`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل PHR→T01؛ MODEL→T01/T02/T03/T04/T07؛ DLG→T03/T08؛ READ→T05؛ LST→T06.
+- الحوار مطابق للمصدر بعد إزالة وسوم `<br>` فقط؛ القراءة والاستماع حرفيان كاملان. حُفظ رأي الضيف المباشر بصيغة الخبر، ونسبة الأقوال وخيالية Freizeitblick وعدم تعميم آراء بعض المستمعين.
+- النماذج خمس جمل مكتملة من القسم2 وزوج سؤال/جواب `Mit wem …? Mit dem Regisseur.`؛ استبدلت شرطة الفصل بفراغ دون إضافة تكملة. المفردات تشمل16صفًا؛ فُصلت صيغ المقدّمة والمقدّم وجمعهما وأعيدت أداة `die` لجمع Moderatoren؛ نُطق `Dativ/Genitiv` بلفظ `Dativ oder Genitiv` واستبدلت علامات + بفواصل. التدوين والشرح الأصليان محفوظان كتابةً في الدرس.
+- فُحص مصدر B2.12 وتقييم `b2-12-v1` أولًا:10أسئلة،P01→T08 وP02→T05/T06/T08؛ تمييز الرأي المباشر وwürden hören بدل صيغة hörten الملتبسة، وبديل فردي كتابي/شفهي مستقل عن MP3. لم يتغير أي مصدر درس أو تقييم أو `app.js`.
+- **الحزمة:53درسًا،217أصلًا/474مقطعًا؛137 ready و80 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و60 لـB2.1–B2.12). B2.12 خمسة أصول/10مقاطع. كل دفعات الصوت المخططة حتى B2.12 مولدة، لكن لا اعتماد نهائي أو إعلان اكتمال المسار قبل المراجعة والاختبار والدمج.
+- **التالي عند المواصلة:** مراجعة المستخدم السمعية للـ80أصلًا المعلقة، وفحص التطبيق يدويًا بالسرعتين وعلى المتصفح/الهاتف والعمل دون اتصال، ومعالجة العيوب المثبتة دون إعادة توليد تلقائي. لا درس صوت تالٍ داخل نطاق A0–B2 الحالي، ولا توسع C1 ولا دمج PR #1. لا تحول أي أصل إلى ready دون اعتماد المستخدم.
+
+### الملفات والفحوص المنفذة
+
+- المعدل: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة B2.12) و`tools/test_progression.cjs`؛ `service-worker.js` (cache `deutsch-pfad-v41`)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md` وملفا التسليم. الجديد عشرة MP3 فقط.
+- نجح `python3 tools/build_course.py`:53درسًا و**1,677,657بايت**؛ و`python3 tools/verify_course.py`:217أصلًا/474مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء530سؤال درس و10بوابة و109مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ و`node --check` للتطبيق والخدمة والاختبارات الأربعة و`git diff --check`.
+- اختبار B2.12 يطابق المفردات المحوّلة للنطق والنماذج والحوار والقراءة والاستماع مع المصدر، والأصوات والحالة، وخمسة أصول/10مقاطع في الأقسام الصحيحة دون خلط أو تكرار، واستقلال التقييم. اختُبر تشغيل التسلسل بالسرعتين بمحاكاة FakeAudio، لا باستماع أو متصفح حقيقي. حدث تعارض اسم متغير mediaLayout مع اختبار سابق أثناء الإضافة، وصُحح باستخدام أسماء finalMedia قبل إعادة الفحوص الناجحة؛ لا عطل متبقٍ.
+- قورنت **464MP3سابقة بايتًا و212إدخال playlist** مع رأس البداية وظلت مطابقة؛ وقورنت أقسام محتوى وتقييم B2.6/B2.7 التاريخية في PROGRESS وظلت دون تغيير. كل مصادر الدروس والتقييمات ثابتة؛ تصحيحا B2.5Q03 وB2.7P02 بإصداريv2 محفوظان.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-19abff0d`: الصفحة وapp والخدمة والحزمة والمقاطع العشرة عادت بـ200. لم أستمع أو أختبر متصفحًا/هاتفًا يدويًا أو العمل دون اتصال. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والنشر والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `493f079134810ddb5a2f52eefe0a8064bada68e4`. ظهر HEADقديم88f3c06عند الاستئناف؛ قورنت601ملفًا بالبعيد بايتًا دون اختلاف أو إضافات، ثم حُوذي الرأس والمؤشر بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `1042c5e18607cb5bd8cf9eb5986603cb1df7354f` — `feat: add B2.12 audio with section-mapped playback`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.12 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `493f079`. فُحص commit التنفيذ `1042c5e` مباشرة: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت. لم تُدمج PR ولم تُجر إعادة تشغيل نشر يدوية؛ دفع الملفات ليس تأكيدًا لتحديث الموقع المنشور.
+- سبق أن سجّل Vercel لدفعة B2.8: `Deployment rate limited — retry in 24 hours.`؛ لا إعادة نشر يدوية خلال المهلة. رفع GitHub منفصل عن نجاح النشر؛ لا ادعاء تحديث الموقع المنشور. عطل رفع B2.6 القديم انتهى.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم؛ لا إخفاء التسجيلات أو تغيير روابطها ولا ادعاء استماع أو اكتمال قبل الفحص والرفع والدمج. أبق PR #1 دون دمج.
+- المحتوى والتقييم والتطبيق قبل الصوت؛10طلبات توليد كحد أقصى لكل رد، وعند رسالة الحد توقف دون إعادة المحاولة. احتفظ بأصوات الدروس السابقة وتصحيح A2.7Q08→T05 واتساق A2.9 وتصحيحي B2.5/B2.7. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية وحدّث ملفي التسليم وارفع كل دفعة؛ لا تتلف التغييرات المحلية عند تسوية Git.
+
+## سجل تاريخي — استماع B2.11، 2026-10-07
+
+هذا القسم يصف دفعة استماع B2.11 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتج **مقطع واحد فقط في هذا الرد** هو `assets/audio/DL-B2-11-AUD-LST-01.mp3` بصوت Erzählperson=`voice-03`، وفق النمط السابق. لم تُعد توليد المقاطع العشرة الموجودة.
+- النص كامل وحرفي من القسم5 في `content/B2/lesson-11-humans-nature-environment-nominalization.md`. حُفظ احتمال انخفاض العبء البيئي، ومراعاة الوصول، ومشاركة السكان، وتقييم المقترح بعد فحص الآثار لا قبله. رُبط الأصل بالقسم5 عبر `sectionHeading` وبـT06 في السجل، مع النص والسرعتين دون تكرار أعلى الدرس.
+- أصبح **B2.11 خمسة أصول/11 مقطعًا**: المفردات والنماذج وسبعة أدوار حوار والقراءة والاستماع. جميع المقاطع المخططة مولدة، لكن المراجعة السمعية والاختبارات اليدوية والدمج لم تحدث؛ لا اعتماد نهائيًا أو إعلان اكتمال.
+- الحزمة **53 درسًا،212 أصلًا/464 مقطعًا؛137 ready و75 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و55 لـB2.1–B2.11). لا صوت B2.12 بعد.
+- بقيت Lea=`voice-02` وAmir=`voice-03` وراوي المفردات والنماذج والقراءة=`voice-02` دون تغيير؛ Amir للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. النماذج أربع عبارات اسمية وثلاثة أزواج اشتقاق موثقة في الدفعة السابقة.
+- فُحص المصدر والتقييم b2-11-v1 قبل الصوت، بما فيه Q09→T06 وP02→T05/T06/T08. لم يتغير أي مصدر درس أو تقييم؛ جميعها مستقلة عن MP3. تصحيحا B2.5Q03 وB2.7P02 بإصداريv2 محفوظان.
+- **التالي:** مراجعة المستخدم السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند مواصلة الإنتاج يأتي صوت **B2.12** بعد مراجعة المحتوى والتقييم والأصوات، ضمن حد10طلبات لكل رد. لا مقاطع ناقصة لـB2.11 الآن ولا إعادة إنتاج، ولا توسع C1.
+
+### الملفات والفحوص المنفذة
+
+- المعدل: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json` و`tools/test_progression.cjs` و`service-worker.js` (cache `deutsch-pfad-v40`)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md` وملفا التسليم. الجديد MP3 واحد فقط؛ لا تغيير في `app.js` أو أداتي البناء والتحقق أو مصادر الدروس والتقييمات.
+- حُدثت ملاحظات أصول B2.11 الأربعة السابقة في CSV لتوثيق إلحاق الاستماع، دون تغيير نصوصها أو أصواتها أو روابطها أو حالاتها.
+- نجح `python3 tools/build_course.py`:53درسًا و**1,671,567 بايت**؛ و`python3 tools/verify_course.py`:212أصلًا/464مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء530سؤال درس و10بوابة و109مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ و`node --check` للتطبيق والخدمة والاختبارات الأربعة و`git diff --check`.
+- اختبار B2.11 يطابق القراءة والاستماع كاملين مع المصدر؛ ويتحقق من صوت الراوي والمسار والمعرف، وخمسة أصول/11مقطعًا تحت الأقسام1–5 دون تكرار أو خلط، وحالة المراجعة واستقلال التقييم وحفظ حدود الاحتمال. اختُبر التشغيل بالسرعتين بمحاكاة FakeAudio، لا بمتصفح أو استماع حقيقي.
+- قورنت **463MP3 سابقة بايتًا و211إدخال playlist** مع رأس البداية وظلت مطابقة؛ وقورنت أقسام محتوى وتقييم B2.6/B2.7 التاريخية في PROGRESS وظلت دون تغيير. كل مصادر الدروس والتقييمات ثابتة؛ لا حذف أو إعادة توليد.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-2d7f64a1`: الصفحة وapp والخدمة والحزمة والاستماع الجديد عادت بـ200. لم أستمع أو أختبر متصفحًا/هاتفًا يدويًا أو العمل دون اتصال؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والنشر والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `624f1c868234ab936d8591fd506293fd600ecae8`. ظهر HEADقديم88f3c06عند الاستئناف؛ قورنت600ملفًا بالبعيد بايتًا دون اختلاف أو إضافات، ثم حُوذي الرأس والمؤشر بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `355ae72d979074b440dfb0750ff728cbf47ddbe7` — `feat: add B2.11 listening audio`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.11 listening delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `624f1c8`. فُحص commit التنفيذ `355ae72` مباشرة: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت. لم تُدمج PR ولم تُجر إعادة تشغيل نشر يدوية؛ دفع الملفات ليس تأكيدًا لتحديث الموقع المنشور.
+- سبق أن سجّل Vercel لدفعة B2.8: `Deployment rate limited — retry in 24 hours.`؛ لا إعادة نشر يدوية خلال المهلة. رفع GitHub منفصل عن نجاح النشر؛ لا ادعاء تحديث الموقع المنشور. عطل رفع B2.6 القديم انتهى.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم؛ لا إخفاء التسجيلات أو تغيير روابطها ولا ادعاء استماع أو اكتمال قبل الفحص والرفع والدمج. أبق PR #1 دون دمج.
+- المحتوى والتقييم والتطبيق قبل الصوت؛10طلبات توليد كحد أقصى لكل رد، وعند رسالة الحد توقف دون إعادة المحاولة. احتفظ بأصوات الدروس السابقة وتصحيح A2.7Q08→T05 واتساق A2.9 وتصحيحي B2.5/B2.7. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية وحدّث ملفي التسليم وارفع كل دفعة؛ لا تتلف التغييرات المحلية عند تسوية Git.
+
+## سجل تاريخي — صوت B2.11 الجزئي، 2026-10-07
+
+هذا القسم يصف دفعة B2.11 الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الانتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.11: المفردات والنماذج وسبعة أدوار حوار والقراءة. استُهلك الحد؛ لا توليد إضافي في الرد نفسه ولا إعادة إنتاج الموجود.
+- **بقي الاستماع فقط**: في الرد التالي أَنتج `assets/audio/DL-B2-11-AUD-LST-01.mp3` من النص الكامل للقسم5 بصوت Erzählperson=`voice-03`، ثم ألحقه بالقسم5 وT06 وأعد الفحوص والتوثيق والرفع. لا تولّد المقاطع العشرة مجددًا. بعده صوت B2.12 بعد مراجعة محتواه وتقييمه وأصواته؛ لا توسع C1.
+- الأصوات: **Lea=`voice-02` محفوظة من A2.2 وB2.10**؛ **Amir=`voice-03`** باستخدام الصوت الموجود للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. Narrator=`voice-02` للمفردات والنماذج والقراءة. المراجعة السمعية للمستخدم معلقة.
+- الجديد تحت `assets/audio/`: `DL-B2-11-AUD-PHR-01.mp3` و`DL-B2-11-AUD-MODEL-01.mp3` و`DL-B2-11-AUD-DLG-01-01.mp3` إلى `DL-B2-11-AUD-DLG-01-07.mp3` و`DL-B2-11-AUD-READ-01.mp3`.
+- أربعة أصول تحت الأقسام1–4 في `b2-11-humans-nature-environment-nominalization` عبر `sectionHeading`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل PHR→T01؛ MODEL→T02/T03/T04/T07؛ DLG→T08؛ READ→T05.
+- الحوار والقراءة حرفيان؛ حُفظ احتمال الأثر البيئي وخيالية Flussbogen وعدم اتخاذ القرار النهائي. النماذج **أربع عبارات اسمية وثلاثة أزواج اشتقاق من القسم2**؛ أزيلت علامة الحذف واستبدلت الأسهم بفواصل وتغيرت أوائل الكلمات للنطق، دون اختراع تكملة للقوالب. جدول التحويل الفعلي إلى الاسمي كامل متاح كتابةً. المفردات تشمل16صفًا مع صيغها وفصل nachhaltig / gemeinsam للنطق.
+- فُحص مصدر B2.11 وتقييم `b2-11-v1` قبل الصوت:10أسئلة ومهمتا أداء P01→T08 وP02→T05/T06/T08؛ يبقى التقييم مستقلًا عن MP3. لم يتغير أي مصدر درس أو تقييم ولا `app.js`.
+- **الحزمة:53درسًا،211أصلًا/463مقطعًا؛137 ready و74 generated_pending_acoustic_review** (20لـB1.9–B1.12 و50لـB2.1–B2.10 وأربعة لـB2.11). لا LSTلـB2.11 ولا صوت B2.12 بعد. الدفعة جزئية وليست معتمدة أو مدمجة.
+
+### الملفات والفحوص المنفذة
+
+- المعدل: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة البادئة B2.11) و`tools/test_progression.cjs`؛ `service-worker.js` (cache `deutsch-pfad-v39`)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md` وملفا التسليم. الجديد10MP3 فقط.
+- نجح `python3 tools/build_course.py`:53درسًا و**1,670,539بايت**؛ و`python3 tools/verify_course.py`:211أصلًا/463مقطعًا بإطارات MP3 صالحة بنيويًا،530سؤال درس و10بوابة و109مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ و`node --check` للتطبيق والخدمة والاختبارات الأربعة و`git diff --check`.
+- اختبار B2.11 يطابق مفرداته وصيغها والنماذج المختارة والحوار والقراءة مع المصدر، وثبات Lea، وأربعة أصول/10مقاطع تحت أقسامها دون خلط أو تكرار، وحالة المراجعة واستقلال التقييم وغياب الاستماع المؤجل. جُرب تسلسل المقاطع بالسرعتين بمحاكاة FakeAudio فقط.
+- قورنت **453MP3سابقة بايتًا و207إدخالات playlist** مع رأس البداية وظلت مطابقة؛ وحُفظ قسما محتوى وتقييم B2.6/B2.7 التاريخيان في PROGRESS دون تعديل. تصحيحا B2.5Q03 وB2.7P02 بإصداريv2 محفوظان.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-5672569a`: الصفحة/app/service/course والمقاطع العشرة عادت بـ200. لم أستمع أو أختبر متصفحًا/هاتفًا يدويًا أو العمل دون اتصال؛ هذه الفحوص مطلوبة لاحقًا. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والنشر والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `8cc8bf8ea93e8b16ca4b06ad7ac813dace1ca7ad`. ظهر HEADقديم88f3c06عند الاستئناف؛ قورنت590ملفًا بالبعيد بايتًا دون اختلاف أو ملفات إضافية، ثم حُوذي الرأس والمؤشر بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `99b1f01ad193b9d13a2bf6215f86432ff5a85a8f` — `feat: add first ten B2.11 audio clips with section playback`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B2.11 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `8cc8bf8`. فُحص commit التنفيذ `99b1f01` مباشرة: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت. لم تُدمج PR ولم تُجر إعادة تشغيل نشر يدوية؛ دفع الملفات ليس تأكيدًا لتحديث الموقع المنشور.
+- سبق أن سجّل Vercel لدفعة B2.8: `Deployment rate limited — retry in 24 hours.`؛ لا إعادة نشر يدوية خلال المهلة. رفع GitHub لا يثبت نشر الموقع. لا عطل رفع B2.6 معلق.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم؛ لا إخفاء التسجيلات أو تغيير روابطها ولا ادعاء استماع أو إعلان اكتمال قبل الفحص والرفع والدمج. أبق PR #1 دون دمج.
+- المحتوى والتقييم والتطبيق قبل الصوت؛ عشرة طلبات توليد كحد أقصى لكل رد، وعند رسالة الحد توقف دون إعادة المحاولة. احتفظ بأصوات الدروس السابقة وتصحيح A2.7Q08→T05 واتساق A2.9 وتصحيحي B2.5/B2.7. لا تعِد صياغة سجل B2.6 كحالة B2.7. اشرح بالعربية وحدّث ملفي التسليم وارفع كل دفعة؛ لا تتلف التغييرات المحلية عند تسوية Git.
+
+## سجل تاريخي — صوت B2.10، 2026-10-07
+
+هذا القسم يصف حالة B2.10 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.10: المفردات والنماذج وستة أدوار حوار والقراءة والاستماع. استُهلك حد التوليد؛ لا توليد إضافي ولا إعادة إنتاج للموجود.
+- الأصوات: **Lea=`voice-02` محفوظة من A2.2**؛ **Murat=`voice-03`** باستخدام الصوت الموجود للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. المفردات والنماذج والقراءة Narrator=`voice-02`، والاستماع Erzählperson=`voice-03`؛ الراوي لا يمثل شخصية المتحدثة المذكورة في شرح التقييم.
+- ملفات `assets/audio/` الجديدة: `DL-B2-10-AUD-PHR-01.mp3` و`DL-B2-10-AUD-MODEL-01.mp3` و`DL-B2-10-AUD-DLG-01-01.mp3` إلى `DL-B2-10-AUD-DLG-01-06.mp3` و`DL-B2-10-AUD-READ-01.mp3` و`DL-B2-10-AUD-LST-01.mp3`.
+- الأصول الخمسة تحت الأقسام 1–5 عبر `sectionHeading` في `b2-10-wishes-probabilities-technology-konjunktiv2-past`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T02/T03/T04/T07؛ DLG→T08؛ READ→T05؛ LST→T06.
+- الحوار والقراءة والاستماع مطابقة للمصدر حرفيًا، مع حفظ حالة عدم نشر التحديث والاحتمال غير المؤكد وخيالية السيناريو. النماذج هي **الجمل المكتملة الخمس** في قسم القاعدة، بما فيها شرط الماضي بالمبني للمجهول والشرط دون wenn. القوالب الناقصة ذات الحذف بقيت مكتوبة ولم تُستكمل من عندنا؛ مثال الاحتمال الكامل موجود في الحوار. المفردات تشمل صيغ الجدول، مع فصل الكلمات المكتوبة بشرطة مائلة إلى عبارات منطوقة وتكبير أوائلها.
+- فُحص المحتوى والتقييم قبل الإنتاج ولم يتغير أي مصدر درس أو تقييم. حُفظ تصحيح B2.5 Q03 بإصدار b2-05-v2 وتصحيح B2.7 P02 بإصدار b2-07-v2 ورفض إتقان v1.
+- **الحزمة: 53 درسًا، 207 أصلًا/453 مقطعًا؛ 137 ready و70 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و50 لـB2.1–B2.10). B2.10 خمسة أصول/10 مقاطع؛ لا صوت مولّد لـB2.11–B2.12. جميع المقاطع المخططة مولدة، لكن لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** مراجعة المستخدم السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي صوت B2.11 بعد مراجعة المحتوى والتقييم وتحديد الأصوات. لا مقاطع ناقصة لـB2.10 ولا إعادة توليد. لا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- المعدل: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة البادئة B2.10) و`tools/test_progression.cjs`؛ `service-worker.js` (v38)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر محتوى أو تقييم.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,665,201 بايت**. نجح `python3 tools/verify_course.py`: 207 أصلًا/453 مقطعًا بإطارات MP3 صالحة بنيويًا؛ بقيت 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`، و`node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.10 يطابق المفردات والنماذج والحوار والقراءة والاستماع مع المصدر، ويتحقق من ثبات Lea من A2.2، و5 أصول/10 مقاطع تحت أقسامها دون تكرار أو خلط، وحالة المراجعة واستقلال التقييم وحفظ حدود الاحتمال. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **443 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **202 إدخال سابق** في playlist. قورن **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في PROGRESS مع HEAD وظلا دون تغيير.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-1fec9c6d`: الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة عادت بـ200. لم أستمع إلى الملفات ولم أجر فحصًا بصريًا/تفاعليًا يدويًا. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والنشر والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `c21767f410527d0742a213967a3d863936dbb132`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ580 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `0d24aea482113c5363e0018de2b888e3adae6fe1` — `feat: add B2.10 audio with section-mapped playback`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.10 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `c21767f`. فُحص commit التنفيذ `0d24aea` مباشرة: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة. لم تُدمج PR ولم تُجر إعادة تشغيل نشر يدوية؛ أعد فحص الرأس النهائي لاحقًا مع احترام حد Vercel السابق.
+- **Vercel:** سبق أن سجّل فحص دفعة B2.8 `Deployment rate limited — retry in 24 hours.`؛ لا إعادة تشغيل نشر يدوية خلال المهلة. رفع GitHub منفصل عن نجاح النشر؛ لا ادعاء تحديث الموقع المنشور. عطل رفع B2.6 السابق انتهى ولا دفعة B2.6 معلقة.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج. المحتوى والتقييم والتطبيق قبل الصوت.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم، ولا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وتصحيحي B2.5 Q03 وB2.7 P02 بإصداري v2. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة. افحص الملفات قبل أي تسوية Git ولا تتلف التغييرات المحلية؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — قراءة واستماع B2.9، 2026-10-07
+
+هذا القسم يصف حالة دفعة B2.9 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتج **مقطعان فقط في هذا الرد**: `assets/audio/DL-B2-09-AUD-READ-01.mp3` بصوت Narrator=`voice-02` و`assets/audio/DL-B2-09-AUD-LST-01.mp3` بصوت Erzählperson=`voice-03` وفق النمط السابق.
+- النصان كاملان ومطابقان حرفيًا للقسمين 4 و5 في `content/B2/lesson-09-business-marketing-employment-prepositions.md`. حُفظ التصريح بخيالية Nordwerk وحدود معايير الاختيار. رُبط الأصلان بالقسمين عبر `sectionHeading` وبـT05 وT06 في السجل، مع النص والسرعتين ودون تكرار أعلى الدرس.
+- أصبح **B2.9 خمسة أصول/12 مقطعًا**: المفردات والنماذج وثمانية أدوار حوار والقراءة والاستماع. جميع المقاطع المخططة مولّدة، لكن المراجعة السمعية والاختبار اليدوي والدمج لم تحدث؛ لا إعلان اكتمال نهائي.
+- الحزمة: **53 درسًا، 202 أصلًا/443 مقطعًا؛ 137 ready و65 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و45 لـB2.1–B2.9). لا صوت مولّد لـB2.10–B2.12.
+- حُفظت Mara=`voice-02` وJonas=`voice-03` والمقاطع السابقة كما هي. لم يتغير أي مصدر محتوى أو تقييم، ولم أستمع إلى المقاطع. حُفظ تصحيح B2.5 Q03 بإصدار b2-05-v2 وتصحيح B2.7 P02 بإصدار b2-07-v2 ورفض إتقان v1.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة واختبار التشغيل بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي إعداد صوت B2.10 بعد مراجعة محتواه وتقييمه وتحديد أصوات شخصياته. لا مقاطع ناقصة لـB2.9 الآن، ولا إعادة إنتاج لأي ملف موجود، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- ملفات الدفعة المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/test_progression.cjs`، `service-worker.js` (v37)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد MP3 اثنان فقط؛ لم يتغير `app.js` أو أداتا البناء والتحقق أو مصادر الدروس والتقييمات.
+- حُدثت ملاحظات أصول B2.9 الثلاثة السابقة في CSV لتوثيق إلحاق القراءة والاستماع، دون تغيير نصوص التسجيلات أو الأصوات أو الروابط أو الحالات.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,658,967 بايت**. نجح `python3 tools/verify_course.py`: 202 أصلًا/443 مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.9 يطابق القراءة والاستماع كاملين مع المصدر والمعرفين والصوتين والمسارين، ويتحقق من الأصول الخمسة و12 مقطعًا تحت الأقسام دون تكرار، ومن حالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio، لا باستماع أو متصفح حقيقي.
+- قورنت **441 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **200 إدخال سابق** في playlist. قورن **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في PROGRESS مع HEAD وظلا دون تغيير. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-a7f6e8eb`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقطعان الجديدان بـHTTP 200. لم يحدث فحص بصري/تفاعلي يدوي أو سمعي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والنشر والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `f77f653e9ab47542853105344fcf67be2526d972`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ578 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `8c62b4b50cc66fc964e5e01ab661821218a8fdbc` — `feat: add B2.9 reading and listening audio`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.9 reading and listening delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `f77f653`. فُحص commit التنفيذ `8c62b4b` مباشرة: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة. لم تُدمج PR ولم تُجر إعادة تشغيل نشر يدوية؛ أعد فحص الرأس النهائي لاحقًا مع احترام حد Vercel السابق.
+- **Vercel:** سبق أن سجّل فحص دفعة B2.8 `Deployment rate limited — retry in 24 hours.`؛ لا إعادة تشغيل نشر يدوية خلال المهلة. رفع GitHub منفصل عن نجاح النشر؛ لا ادعاء تحديث الموقع المنشور. عطل رفع B2.6 السابق انتهى ولا دفعة B2.6 معلقة.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وتصحيحي B2.5 Q03 وB2.7 P02 بإصداري v2. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة. افحص الملفات قبل أي تسوية Git ولا تتلف التغييرات المحلية؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — دفعة صوت B2.9 الجزئية، 2026-10-07
+
+هذا القسم يصف حالة الدفعة الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.9: المفردات والنماذج وثمانية أدوار حوار. استُهلك حد التوليد؛ **بقيت القراءة والاستماع للرد التالي**. لا توليد إضافي أو إعادة إنتاج للموجود.
+- الأصوات: **Mara=`voice-02` محفوظة من B1.5 وJonas=`voice-03` محفوظ من B2.7**؛ استخدام الأصوات السابقة لا يعني اعتماد التسجيلات الجديدة. المفردات والنماذج Narrator=`voice-02`.
+- الملفات الجديدة في `assets/audio/`: `DL-B2-09-AUD-PHR-01.mp3` و`DL-B2-09-AUD-MODEL-01.mp3` و`DL-B2-09-AUD-DLG-01-01.mp3` إلى `DL-B2-09-AUD-DLG-01-08.mp3`. لا READ أو LST لـB2.9 بعد.
+- الأصول الثلاثة تحت الأقسام 1–3 عبر `sectionHeading` في `b2-09-business-marketing-employment-prepositions`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T01/T02/T03/T04/T07؛ DLG→T08.
+- الحوار مطابق للمصدر حرفيًا. النماذج تضم أزواج السؤال/الجواب الأربعة في الجدول، ومثال Mit wem عن الشخص، وجملة Das Unternehmen achtet darauf، وتذكيرات الأفعال الثلاثة. حُذفت شرطة الحوار وأُضيفت نقاط وكُبّرت بدايات العبارات فقط. المفردات تشمل حروف الجر والحالات وصيغ الجمع والتصريف، بفواصل لفظية بدل +.
+- فُحص المحتوى والتقييم قبل الإنتاج ولم يتغير أي مصدر درس أو تقييم في هذه الدفعة. حُفظ تصحيح B2.5 Q03 بإصدار b2-05-v2 وتصحيح B2.7 P02 بإصدار b2-07-v2 ورفض إتقان v1.
+- **الحزمة: 53 درسًا، 200 أصلًا/441 مقطعًا؛ 137 ready و63 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و40 لـB2.1–B2.8 وثلاثة لـB2.9). B2.9 ثلاثة أصول/10 مقاطع من 12 مخططًا، ولا صوت مولّد لـB2.10–B2.12. لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** قراءة B2.9 من القسم 4 بصوت voice-02 وربطها بـT05، ثم الاستماع من القسم 5 بصوت voice-03 وربطه بـT06 في رد لاحق. المصدر `content/B2/lesson-09-business-marketing-employment-prepositions.md`. لا تعِد إنتاج العشرة. تبقى المراجعة السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال مطلوبة. لا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- المعدل: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة البادئة B2.9) و`tools/test_progression.cjs`؛ `service-worker.js` (v36)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر درس أو تقييم.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,656,585 بايت**. نجح `python3 tools/verify_course.py`: 200 أصلًا/441 مقطعًا بإطارات MP3 صالحة بنيويًا؛ بقيت 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`، و`node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.9 يطابق المفردات والنماذج والحوار مع المصدر، ويتحقق من ثبات Mara وJonas من الدروس السابقة، و3 أصول/10 مقاطع تحت أقسامها دون تكرار أو خلط، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **431 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **197 إدخالًا سابقًا** في playlist. قورن **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في PROGRESS مع HEAD وظلا دون تغيير.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-3c01e2bf`: الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة عادت بـ200. لم أستمع إلى الملفات ولم أجر فحصًا بصريًا/تفاعليًا يدويًا. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والنشر والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `2d2b9b8a2b4e50246f783d78e91249eb2f55e397`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ568 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `943992371e0ff6088346ad7cced753eee3591767` — `feat: add first ten B2.9 audio clips`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B2.9 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `2d2b9b8`. فُحص commit التنفيذ `9439923` مباشرة: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة. لم تُدمج PR ولم تُجر إعادة تشغيل نشر يدوية؛ أعد فحص الرأس النهائي لاحقًا مع احترام حد Vercel السابق.
+- **Vercel:** آخر فحص لدفعة B2.8 سجّل `Deployment rate limited — retry in 24 hours.`؛ لا إعادة تشغيل نشر يدوية خلال المهلة. رفع GitHub منفصل عن نجاح النشر؛ لا ادعاء تحديث الموقع المنشور. عطل رفع B2.6 السابق انتهى ولا دفعة B2.6 معلقة.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج. المحتوى والتقييم والتطبيق قبل الصوت.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم، ولا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وتصحيحي B2.5 Q03 وB2.7 P02 بإصداري v2. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة. افحص الملفات قبل أي تسوية Git ولا تتلف التغييرات المحلية؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — صوت B2.8، 2026-10-07
+
+هذا القسم يصف حالة دفعة B2.8 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.8: المفردات والنماذج وستة أدوار حوار والقراءة والاستماع. استُهلك حد التوليد؛ لا توليد إضافي ولا إعادة إنتاج للموجود.
+- الأصوات: **Lina=`voice-00` محفوظة من B1.1 وما قبله**؛ **Koch=`voice-03`** باستخدام الصوت الموجود للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. المفردات والنماذج والقراءة Narrator=`voice-02`، والاستماع Erzählperson=`voice-03`.
+- الملفات الجديدة في `assets/audio/`: `DL-B2-08-AUD-PHR-01.mp3` و`DL-B2-08-AUD-MODEL-01.mp3` و`DL-B2-08-AUD-DLG-01-01.mp3` إلى `DL-B2-08-AUD-DLG-01-06.mp3` و`DL-B2-08-AUD-READ-01.mp3` و`DL-B2-08-AUD-LST-01.mp3`.
+- الأصول الخمسة تحت الأقسام 1–5 عبر `sectionHeading` في `b2-08-food-nutrition-data-passives`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T02/T03/T04/T07؛ DLG→T08؛ READ→T05؛ LST→T06.
+- الحوار والاستماع مطابقان للمصدر حرفيًا. النماذج تشمل الأمثلة السبعة (الأربعة في الجدول وثلاثة أمثلة مفرد/جمع)، بفواصل لفظية بدل الشرطات المائلة. المفردات تشمل كل الصيغ الواردة في الجدول.
+- **القراءة الصوتية أوسع من الفقرة الألمانية وحدها:** تبدأ بالفقرة الألمانية حرفيًا ثم تنطق الجدول: A=8 غرامات سكر و6 ألياف، B=11 سكر و4 ألياف، لكل 100 غرام. تُرجم عنوان الجدول والتنبيه العربي بعده إلى الألمانية للنطق؛ يصرح النص بأن القيم خيالية للتدريب وأنها وحدها لا تكفي لتقييم التغذية أو تقديم نصيحة صحية. الترجمة موثقة في التفريغ والسجل والاختبار؛ لا تعديل لمصدر Markdown ولا ادعاء أن كامل النص المنطوق كان ألمانيًا في المصدر.
+- فُحص المحتوى والتقييم قبل الإنتاج ولم يتغير أي مصدر درس أو تقييم في هذه الدفعة. حُفظ تصحيح B2.5 Q03 بإصدار b2-05-v2 وتصحيح B2.7 P02 بإصدار b2-07-v2 ورفض إتقان v1.
+- **الحزمة: 53 درسًا، 197 أصلًا/431 مقطعًا؛ 137 ready و60 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و40 لـB2.1–B2.8). B2.8 خمسة أصول/10 مقاطع؛ لا صوت مولّد لـB2.9–B2.12. جميع المقاطع المخططة مولدة، لكن لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** مراجعة المستخدم السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي صوت B2.9 بعد مراجعة محتواه وتقييمه وتحديد أصواته. لا مقاطع ناقصة لـB2.8 ولا إعادة توليد. لا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- المعدل: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة البادئة B2.8) و`tools/test_progression.cjs`؛ `service-worker.js` (v35)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر محتوى أو تقييم.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,652,211 بايت**. نجح `python3 tools/verify_course.py`: 197 أصلًا/431 مقطعًا بإطارات MP3 صالحة بنيويًا؛ بقيت 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`، و`node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.8 يطابق المفردات والنماذج والحوار والاستماع مع المصدر، ويستخرج صفّي الجدول مباشرة للتأكد من الأرقام والوحدات وترتيب A/B في القراءة. يفحص ترجمة التنبيه المعلنة، وثبات Lina من B1.1، و5 أصول/10 مقاطع تحت أقسامها دون تكرار أو خلط، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **421 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **192 إدخالًا سابقًا** في playlist. قورن **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في PROGRESS مع HEAD وظلا دون تغيير.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-9c954f5c`: الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة عادت بـ200. لم أستمع إلى الملفات ولم أجر فحصًا بصريًا/تفاعليًا يدويًا. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `85299175969dbdc275e4595f76043612d7105bbc`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ558 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل. عطل رفع B2.6 انتهى سابقًا كما هو موثق أدناه؛ لا دفعة B2.6 معلقة للرفع.
+- **Commit التنفيذ:** `d9f72e848e5b58a17cf98ee13ed8790623c188e8` — `feat: add B2.8 audio with narrated fictional data table`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.8 delivery and Vercel rate limit`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `8529917`. فُحص commit التنفيذ `d9f72e8` مباشرة: الحالة `failure`، وسياق Vercel=`failure` برسالة `Deployment rate limited — retry in 24 hours.`. الرفع إلى GitHub نجح، **لكن نشر Vercel لم ينجح بسبب حد الخدمة**؛ لا ادعاء تحديث الموقع المنشور. لا تكرر تشغيل النشر الآن؛ تحقق بعد انقضاء المهلة. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج. المحتوى والتقييم والتطبيق قبل الصوت.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم، ولا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وتصحيحي B2.5 Q03 وB2.7 P02 بإصداري v2. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة. افحص الملفات قبل أي تسوية Git ولا تتلف التغييرات المحلية؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — صوت B2.7 وتصحيح P02 ورفع الدفعة المحفوظة، 2026-10-07
+
+هذا القسم يصف حالة دفعة B2.7 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الاستعادة والإنتاج والحالة
+
+- طلب المستخدم «واصل» بعد عطل GitHub. **عاد الوصول ونجح رفع استماع B2.6 المحفوظ أولًا**: commit الاستعادة `ad53f3c59149365f9cfecf9c887a6df868b4471e` والتوثيق `0dd7e5f` على الفرع الثابت. لم يُعد توليد استماع B2.6. كانت ملفات الدفعة محفوظة لكن كائنات commits المحلية القديمة (7008656 و5cf58a2 و340174c) غير موجودة بعد استرجاع البيئة.
+- عند الاستئناف HEAD=88f3c06 والبعيد=5b9a692؛ قورنت ملفات البعيد الـ547 بايتًا وثبت أن الفروق هي فقط ملفات دفعة استماع B2.6 العشرة وإضافة MP3 واحد. جرى حفظ شجرة العمل بـwrite-tree/commit-tree بأب 5b9a692 ثم update-ref للفرع نفسه دون reset/restore/clean أو تغيير ملفات العمل. نجح الدفع وتطابق البعيد؛ فشل الرفع القديم أدناه تاريخي وانتهى.
+- بعد الرفع أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.7: المفردات والنماذج وستة أدوار حوار والقراءة والاستماع. استُهلك حد التوليد؛ لا توليد إضافي ولا إعادة إنتاج للموجود.
+- الأصوات: **Salma=`voice-02` محفوظة من A2.11**؛ **Jonas=`voice-03`** باستخدام الصوت الموجود للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. المفردات والنماذج والقراءة Narrator=`voice-02`، والاستماع Erzählperson=`voice-03`.
+- ملفات `assets/audio/` الجديدة: `DL-B2-07-AUD-PHR-01.mp3` و`DL-B2-07-AUD-MODEL-01.mp3` و`DL-B2-07-AUD-DLG-01-01.mp3` إلى `DL-B2-07-AUD-DLG-01-06.mp3` و`DL-B2-07-AUD-READ-01.mp3` و`DL-B2-07-AUD-LST-01.mp3`.
+- الأصول الخمسة تحت الأقسام 1–5 عبر `sectionHeading` في `b2-07-travel-experiences-prepositional-relatives`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T08 (مفردات وصف الرحلة؛ T01 في هذا الدرس تمرين قواعد لا مفردات)؛ MODEL→T01/T02/T03/T04/T07؛ DLG→T08؛ READ→T05؛ LST→T06.
+- القراءة والاستماع والحوار والنماذج الخمسة مطابقة للمصدر حرفيًا. المفردات تشمل صيغ الجدول؛ استُبدلت + والشرطة المائلة بفواصل صوتية مع تكبير أول حرف، دون تغيير الكلمات أو Dativ/Akkusativ. لم يتغير مصدر Markdown.
+- **تصحيح تعليمي:** في `content/B2/lesson-07-travel-experiences-prepositional-relatives.assessment.json` صُحح P02 من «الوصول بالعبّارة إلى Hafen West» إلى «الانطلاق بالعبّارة من Hafen West» طبقًا لـlegt … ab في T05. أصبح الإصدار **b2-07-v2**؛ لا تغيير للأسئلة العشرة أو المعايير أو عتبة 80%. سجلات إتقان v1 لا تُقبل للإصدار الجديد ويلزم إعادة التقييم دون حذف السجلات. أُضيف اختبار للتصحيح ولرفض إتقان v1. حُفظ تصحيح B2.5 Q03 وإصدار b2-05-v2.
+- **الحزمة: 53 درسًا، 192 أصلًا/421 مقطعًا؛ 137 ready و55 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و35 لـB2.1–B2.7). B2.7 خمسة أصول/10 مقاطع؛ لا صوت مولّد لـB2.8–B2.12. لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** مراجعة المستخدم السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي صوت B2.8 بعد مراجعة المحتوى والتقييم وتحديد الأصوات؛ لا مقاطع ناقصة لـB2.7 ولا إعادة توليد. لا توسع إلى C1.
+
+### الملفات والفحوص
+
+- المعدل: تقييم B2.7 المذكور؛ `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة البادئة B2.7) و`tools/test_progression.cjs`؛ `service-worker.js` (v34)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط في دفعة B2.7؛ لم يتغير `app.js` أو مصدر Markdown. روابط فهرس T/Q/P لم تتغير.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,646,405 بايت**. نجح `python3 tools/verify_course.py`: 192 أصلًا/421 مقطعًا بإطارات MP3 صالحة بنيويًا؛ بقيت 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`، و`node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.7 يطابق المفردات والنماذج والحوار والقراءة والاستماع مع المصدر ويتحقق من ثبات صوت Salma، و5 أصول/10 مقاطع تحت أقسامها دون تكرار أو خلط، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **411 ملف MP3 سابق** بايتًا مع HEAD بعد استعادة B2.6 وظلت مطابقة، وكذلك **187 إدخالًا سابقًا** في playlist. قورن **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في PROGRESS مع HEAD وظلا دون تغيير؛ تحديث B2.7 الحالي قسم مستقل أعلاه.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-9e25242c`: الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة عادت بـ200. لم أستمع إلى الملفات ولم أجر فحصًا بصريًا/تفاعليًا يدويًا. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ أساس دفعة B2.7 هو `0dd7e5f` بعد استعادة ورفع B2.6. **Commit تنفيذ B2.7:** `f39f001edf85188bdd08bdba5cb9a4c15595a99d` — `feat: add B2.7 audio and correct P02 departure detail`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.7 delivery and resolved B2.6 upload`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `0dd7e5f`. فُحص commit التنفيذ `f39f001` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج. المحتوى والتقييم والتطبيق قبل الصوت.
+- لا `ready` أو شارة «نهائي» قبل اعتماد المستخدم، ولا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9 وتصحيحي B2.5 Q03 وB2.7 P02 بإصداري v2. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة. افحص الملفات قبل أي تسوية Git ولا تتلف التغييرات المحلية؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — استعادة ورفع B2.6، 2026-10-07
+
+- عاد الوصول إلى GitHub بعد العطل. ملفات استماع B2.6 محفوظة، لكن كائنات commits المحلية السابقة (ومنها 340174c) غير موجودة في البيئة المستعادة؛ HEAD عاد إلى 88f3c06 والبعيد بقي 5b9a692.
+- قورنت ملفات البعيد الـ547 بايتًا: الاختلافات محصورة في ملفات الدفعة العشرة الموثقة، مع إضافة MP3 الاستماع فقط. لم يتغير أي من 410 MP3 سابقة أو 186 إدخال playlist سابق. نجح verify_course وtest_progression مجددًا على حالة 187 أصلًا/411 مقطعًا.
+- حُفظت شجرة الملفات في commit الاستعادة `ad53f3c59149365f9cfecf9c887a6df868b4471e` أبوه 5b9a692، باستخدام write-tree/commit-tree/update-ref على الفرع نفسه دون reset/restore/clean أو تغيير ملفات العمل أو إعادة توليد الصوت. **نجح الدفع وتطابق البعيد مع ad53f3c**؛ انتهى تعذر رفع B2.6. أرقام commits القديمة ورسائل فشل الرفع أدناه تاريخية. يمكن الآن بدء B2.7، مع بقاء المراجعة السمعية والدمج غير منجزين.
+
+## سجل تاريخي — استماع B2.6، 2026-10-07
+
+هذا القسم يصف حالة استماع B2.6 وقتها؛ انتهى تعذر الرفع كما يوضح أحدث قسم أعلاه.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتج **مقطع واحد فقط في هذا الرد**: `assets/audio/DL-B2-06-AUD-LST-01.mp3` بصوت `Erzählperson=voice-03` وفق نمط راوي الاستماع السابق.
+- النص كامل ومطابق حرفيًا للقسم 5 في `content/B2/lesson-06-study-applications-verb-noun-phrases.md`. رُبط الأصل بالقسم عبر `sectionHeading` وبـT06 في السجل، مع النص والسرعتين ودون تكرار أعلى الدرس.
+- أصبح **B2.6 خمسة أصول/11 مقطعًا**: المفردات والنماذج وسبعة أدوار حوار والقراءة والاستماع. جميع المقاطع المخططة مولّدة، لكن المراجعة السمعية والاختبار اليدوي والدمج لم تحدث؛ لا إعلان اكتمال نهائي.
+- الحزمة: **53 درسًا، 187 أصلًا/411 مقطعًا؛ 137 ready و50 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و30 لـB2.1–B2.6). لا صوت مولّد لـB2.7–B2.12.
+- لم تتغير Meryem=`voice-02` وBerater=`voice-03` المستخدمتان للمعاينة دون اختيار صريح جديد، أو راوي المفردات والنماذج والقراءة=`voice-02`. لم يتغير أي مصدر محتوى أو تقييم، ولم أستمع إلى المقاطع. حُفظ تصحيح B2.5 Q03 وإصدار **b2-05-v2** ورفض إتقان v1؛ لا ترجع إلى v1.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة واختبار التشغيل بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي إعداد صوت B2.7 بعد مراجعة محتواه وتقييمه وتحديد أصوات شخصياته. لا استماع ناقصًا لـB2.6 الآن، ولا إعادة إنتاج لأي ملف موجود، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- ملفات الدفعة المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/test_progression.cjs`، `service-worker.js` (v33)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد MP3 واحد فقط؛ لم يتغير `app.js` أو أداتا البناء والتحقق أو مصادر الدروس والتقييمات.
+- حُدثت ملاحظات أصول B2.6 الأربعة السابقة في CSV لتوثيق إلحاق الاستماع، دون تغيير نصوص التسجيلات أو الأصوات أو الروابط أو الحالات.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,640,192 بايت**. نجح `python3 tools/verify_course.py`: 187 أصلًا/411 مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.6 يطابق نص الاستماع كاملًا مع المصدر ومعرفه وصوته ومساره، ويتحقق من الأصول الخمسة و11 مقطعًا تحت الأقسام دون تكرار، ومن حالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio، لا باستماع أو متصفح حقيقي.
+- قورنت **410 ملفات MP3 سابقة** بايتًا مع HEAD وظلت مطابقة، وكذلك **186 إدخالًا سابقًا** في `audio-playlists.json`. قورن **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في `content/PROGRESS.md` مع HEAD وظلا دون تغيير. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-0e85d91a`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقطع الجديد بـHTTP 200. لم يحدث فحص بصري/تفاعلي يدوي أو سمعي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `5b9a6923518c07069a78d70da9ed11fb836b6df1`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ547 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ المحلي:** `7008656c3554545d3d33ca24938c99b17eb86ecc` — `feat: add B2.6 listening audio`. **لم يُرفع عند الفحص**: رفض GitHub محاولتي `git push origin arena/01a1036f-deutschlern` بخطأ `remote rejected / Internal Server Error` عند 15:09:10Z و15:09:20Z بتاريخ 2026-10-07، لا خطأ مصادقة.
+- تأكد عبر `git ls-remote` أن البعيد ما زال عند `5b9a6923518c07069a78d70da9ed11fb836b6df1`. PR #1 `OPEN` و`mergedAt: null` ورأسها `5b9a692`؛ لا نشر مثبت أو دمج. فشل استعلام status للـcommit غير المرفوع بـ`unexpected end of JSON input`؛ لا يُفسّر كنجاح.
+- **Commit التسليم المحلي:** `5cf58a2b4a54ff66c1240fb39871f989723ba1fb` — `docs: record B2.6 listening delivery and push failure`. فشلت محاولة رفعه مع التنفيذ أيضًا عند 15:09:57Z بنفس `Internal Server Error`؛ طابق `git ls-remote` البعيد القديم `5b9a692` بعدها. توقفنا بعد ثلاث محاولات فاشلة، دون تغيير وسيلة المصادقة. يتبعه commit محلي لتسجيل نتيجة المحاولة الثالثة بعنوان `docs: confirm GitHub push remains blocked`؛ جميع هذه التغييرات محفوظة محليًا ولم تُرفع، فأعد دفع الفرع عند زوال العطل.
+- **أولوية الاستئناف:** إعادة دفع الدفعة المحلية وتوثيق نجاحها قبل بدء B2.7. قد يعيد استرجاع البيئة HEAD القديم بينما الملفات تحتوي هذه الدفعة غير المرفوعة؛ **لا reset إلى origin ولا restore/clean للتغييرات**. حافظ على الملف الصوتي والحزمة والتسليم، وافحص الفروق ثم أعد تأسيس سجل العمل دون تغيير الملفات إذا لزم. لا تعِد توليد المقطع.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا حالة `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ السابق محفوظ أدناه.
+
+## سجل تاريخي — دفعة صوت B2.6 الجزئية، 2026-10-07
+
+هذا القسم يصف حالة الدفعة الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.6: المفردات والنماذج وسبعة أدوار حوار والقراءة. استُهلك حد التوليد؛ **بقي الاستماع للرد التالي**. لا توليد إضافي أو إعادة إنتاج للموجود.
+- الأصوات: **Meryem=`voice-02` وBerater=`voice-03`** باستخدام الأصوات الموجودة للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. المفردات والنماذج والقراءة Narrator=`voice-02`.
+- الملفات الجديدة في `assets/audio/`: `DL-B2-06-AUD-PHR-01.mp3` و`DL-B2-06-AUD-MODEL-01.mp3` و`DL-B2-06-AUD-DLG-01-01.mp3` إلى `DL-B2-06-AUD-DLG-01-07.mp3` و`DL-B2-06-AUD-READ-01.mp3`. لا ملف LST لـB2.6 بعد.
+- الأصول الأربعة مربوطة بالأقسام 1–4 عبر `sectionHeading` في `b2-06-study-applications-verb-noun-phrases`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T01/T02/T03/T04/T07؛ DLG→T08؛ READ→T05.
+- الحوار مطابق للمصدر حرفيًا. القراءة كاملة تشمل العنوان مع نقطة فصل صوتي فقط. النماذج تضم التراكيب الثمانية وأمثلتها وتذكيري حرف الجر (18 عبارة)، مع تكبير أوائلها وإضافة نقاط، وتحويل + Akkusativ إلى فواصل لفظية فقط. المفردات تضم الصيغ الواردة في الجدول مع فصل fristgerecht / erforderlich إلى عبارتين. حُفظ شرط التأكيد الكتابي قبل استكمال الوثائق وحدود الأكاديمية الخيالية.
+- فُحص المحتوى والتقييم قبل الإنتاج ولم يتغير مصدر درس أو تقييم في هذه الدفعة. حُفظ تصحيح B2.5 Q03 وإصدار **b2-05-v2** ورفض إتقان v1؛ لا ترجع إلى v1.
+- **الحزمة: 53 درسًا، 186 أصلًا/410 مقطعًا؛ 137 ready و49 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و25 لـB2.1–B2.5 وأربعة لـB2.6). B2.6 أربعة أصول/10 مقاطع من 11 مخططًا، ولا صوت مولّد لـB2.7–B2.12. لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** إنتاج استماع B2.6 فقط من القسم 5 في `content/B2/lesson-06-study-applications-verb-noun-phrases.md`، بالراوي `voice-03` وفق النمط السابق؛ ربطه بقسمه وT06 وتحديث الحزمة والسجل والاختبارات والتسليم في رد لاحق. لا تعِد إنتاج العشرة. تبقى مراجعة المستخدم السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال مطلوبة. لا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- الملفات المعدلة: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (إضافة خريطة البادئة B2.6) و`tools/test_progression.cjs`؛ `service-worker.js` (v32)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر درس أو تقييم.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,639,164 بايت**. نجح `python3 tools/verify_course.py`: 186 أصلًا/410 مقطعًا بإطارات MP3 صالحة بنيويًا؛ بقيت 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.6 يطابق المفردات والصيغ والنماذج والحوار والقراءة بعنوانها مع المصدر؛ يتحقق من الأصوات، و4 أصول/10 مقاطع تحت أقسامها، وعدم التكرار أو خلط الدروس، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **400 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **182 إدخالًا سابقًا** في `audio-playlists.json`. قورن أيضًا **قسما محتوى وتقييم B2.6 وB2.7 التاريخيان** في `content/PROGRESS.md` مع HEAD وظلا دون تغيير. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-a94967af`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة بـHTTP 200. لم أستمع إلى الملفات ولم يحدث فحص بصري/تفاعلي يدوي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `50ed467a097e426e26b3d6bb952eee7938318a02`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ537 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `312f0dc114fca2eab88a15e23417528eb569b876` — `feat: add first ten B2.6 audio clips`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B2.6 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `50ed467`. فُحص commit التنفيذ `312f0dc` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق سجل إنجاز محتوى B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — صوت B2.5 وتصحيح Q03، 2026-10-07
+
+هذا القسم يصف حالة دفعة B2.5 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.5: المفردات والنماذج وستة أدوار حوار والقراءة والاستماع. استُهلك حد التوليد؛ لا توليد إضافي في الرد نفسه ولا إعادة إنتاج الموجود.
+- الأصوات: **Rima=`voice-02` وNabil=`voice-03` للمعاينة باستخدام الأصوات الموجودة دون اختيار صريح جديد أو اعتماد نهائي**. المفردات والنماذج والقراءة Narrator=`voice-02`، والاستماع Erzählperson=`voice-03`.
+- الملفات الجديدة في `assets/audio/`: `DL-B2-05-AUD-PHR-01.mp3` و`DL-B2-05-AUD-MODEL-01.mp3` و`DL-B2-05-AUD-DLG-01-01.mp3` إلى `DL-B2-05-AUD-DLG-01-06.mp3` و`DL-B2-05-AUD-READ-01.mp3` و`DL-B2-05-AUD-LST-01.mp3`.
+- الأصول الخمسة مربوطة بالأقسام 1–5 عبر `sectionHeading` في `b2-05-health-fitness-medical-information`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T02/T03/T04/T07؛ DLG→T08؛ READ→T05؛ LST→T06.
+- القراءة والاستماع والحوار مطابقة للمصدر حرفيًا، بما في ذلك تصريح خيالية الاستطلاع وحدود الاستنتاج وعدم اعتبار العنوان توصية طبية. لم يتغير مصدر Markdown أو التنبيه الطبي فيه. المفردات تضم جميع صيغ الجدول، مع استبدال + بفاصلة لفظية في Hinweisen auf, Akkusativ. النماذج تضم أمثلة الجدول الأربعة وعبارات Genitiv الخمس (مع تكرار aufgrund der begrenzten Angaben الوارد بالمصدر)، مع فصل الشرطة المائلة إلى عبارات وتكبير أوائلها ونقاط فقط.
+- **تصحيح تعليمي قبل الربط:** اكتُشف تكرار man عند إدخال الخيار الصحيح في Q03؛ حُذفت man بعد الفراغ في `content/B2/lesson-05-health-fitness-medical-information.assessment.json`، فتصبح الجملة الصحيحة `Die Daten sind vorläufig. Deshalb sollte man die Aussage vorsichtig lesen.`. الخيار الصحيح والمفتاح والهدف وعتبة 80% والأسئلة الأخرى لم تتغير. أصبح إصدار التقييم **b2-05-v2** وأضيفت ملاحظة مراجعة؛ سجلات إتقان v1 لا تُقبل للإصدار الجديد ويلزم إعادة التقييم، دون حذف السجل القديم. اختُبرت الجملة المصححة ورفض إتقان v1.
+- **الحزمة: 53 درسًا، 182 أصلًا/400 مقطعًا؛ 137 ready و45 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و25 لـB2.1–B2.5). B2.5 خمسة أصول/10 مقاطع، ولا صوت مولّد لـB2.6–B2.12. جميع المقاطع المخططة مولدة، لكن لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة واختبار التشغيل بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي صوت B2.6 بعد مراجعة محتواه وتقييمه وتحديد أصوات شخصياته. لا مقاطع ناقصة لـB2.5 ولا إعادة إنتاج أو حذف للموجود، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- الملفات المعدلة: تقييم B2.5 المذكور أعلاه؛ `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ `tools/build_course.py` و`tools/verify_course.py` (خريطة البادئة B2.5) و`tools/test_progression.cjs`؛ `service-worker.js` (v31)؛ `README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر Markdown. فهرس T/Q/P وروابطه لم تتغير.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,633,337 بايت**. نجح `python3 tools/verify_course.py`: 182 أصلًا/400 مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.5 يطابق كل المفردات والصيغ والنماذج والحوار والقراءة والاستماع مع المصدر؛ يتحقق من الأصوات، و5 أصول/10 مقاطع تحت أقسامها، وعدم التكرار أو خلط الدروس، وحالة المراجعة واستقلال التقييم، وحفظ حدود الأمثلة الصحية. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **390 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **177 إدخالًا سابقًا** في `audio-playlists.json`. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-0d7d1292`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة بـHTTP 200. لم أستمع إلى الملفات ولم يحدث فحص بصري/تفاعلي يدوي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `cdc1062cab89593e6b44233be9bba35068358e6e`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ527 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `d580285a547d9e986fc00705cba6cec78c30da55` — `feat: add B2.5 audio and correct assessment Q03`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.5 audio and assessment delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `cdc1062`. فُحص commit التنفيذ `d580285` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق سجل إنجاز محتوى B2.6 تاريخيًا ولا تحوّله لحالة B2.7 عند إضافة صوت B2.6. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — استماع B2.4، 2026-10-07
+
+هذا القسم يصف حالة دفعة استماع B2.4 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتج **مقطع واحد فقط في هذا الرد**: `assets/audio/DL-B2-04-AUD-LST-01.mp3` بصوت `Erzählperson=voice-03` وفق نمط راوي الاستماع السابق.
+- النص كامل ومطابق حرفيًا للقسم 5 في `content/B2/lesson-04-cities-housing-participles.md`. رُبط الأصل بالقسم عبر `sectionHeading` وبـT06 في السجل، مع النص والسرعتين ودون تكرار أعلى الدرس.
+- أصبح **B2.4 خمسة أصول/11 مقطعًا**: المفردات والنماذج وسبعة أدوار حوار والقراءة والاستماع. جميع المقاطع المخططة مولّدة، لكن المراجعة السمعية والاختبار اليدوي والدمج لم تحدث؛ لا إعلان اكتمال نهائي.
+- الحزمة: **53 درسًا، 177 أصلًا/390 مقطعًا؛ 137 ready و40 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و20 لـB2.1–B2.4). لا صوت مولّد لـB2.5–B2.12.
+- لم يتغير Samir=`voice-03` المحفوظ من A1.9 أو Architektin=`voice-02` المستخدمة للمعاينة دون اختيار صريح جديد، أو راوي المفردات والنماذج والقراءة=`voice-02`. لم يتغير أي مصدر محتوى أو تقييم، ولم أستمع إلى المقاطع.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة واختبار التشغيل بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي إعداد B2.5 بعد مراجعة محتواه وتقييمه وتحديد أصوات شخصياته. لا استماع ناقصًا لـB2.4 الآن، ولا إعادة إنتاج لأي ملف موجود، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- ملفات الدفعة المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/test_progression.cjs`، `service-worker.js` (v30)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد MP3 واحد فقط؛ لم يتغير `app.js` أو أداتا البناء والتحقق أو مصادر الدروس والتقييمات.
+- حُدثت ملاحظات أصول B2.4 الأربعة السابقة في CSV لتوثيق إلحاق الاستماع، دون تغيير نصوص التسجيلات أو الأصوات أو الروابط أو الحالات.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,626,490 بايت**. نجح `python3 tools/verify_course.py`: 177 أصلًا/390 مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.4 يطابق نص الاستماع كاملًا مع المصدر ومعرفه وصوته ومساره، ويتحقق من الأصول الخمسة و11 مقطعًا تحت الأقسام دون تكرار، ومن حالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio، لا باستماع أو متصفح حقيقي.
+- قورنت **389 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **176 إدخالًا سابقًا** في `audio-playlists.json`. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-ec5a4dbe`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقطع الجديد بـHTTP 200. لم يحدث فحص بصري/تفاعلي يدوي أو سمعي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `12fa1b42963621986f4035f5f28b8f089c8a693f`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ526 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `181f07383a55ad4e48a052f6609615849839ed9e` — `feat: add B2.4 listening audio`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.4 listening delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `12fa1b4`. فُحص commit التنفيذ `181f073` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا حالة `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ السابق محفوظ أدناه.
+
+## سجل تاريخي — دفعة صوت B2.4 الجزئية، 2026-10-07
+
+هذا القسم يصف حالة الدفعة الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.4: المفردات والنماذج وسبعة أدوار حوار والقراءة. استُهلك حد التوليد لهذا الرد؛ **بقي الاستماع للرد التالي**. لا توليد إضافي ولا إعادة إنتاج الموجود.
+- الأصوات: **Samir=`voice-03` محفوظ من A1.9**؛ **Architektin=`voice-02`** باستخدام الصوت الموجود للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. المفردات والنماذج والقراءة Narrator=`voice-02`.
+- الملفات الجديدة في `assets/audio/`: `DL-B2-04-AUD-PHR-01.mp3` و`DL-B2-04-AUD-MODEL-01.mp3` و`DL-B2-04-AUD-DLG-01-01.mp3` إلى `DL-B2-04-AUD-DLG-01-07.mp3` و`DL-B2-04-AUD-READ-01.mp3`. لا ملف LST لـB2.4 بعد.
+- الأصول الأربعة مربوطة بالأقسام 1–4 عبر `sectionHeading` في `b2-04-cities-housing-participles`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T02/T03/T04/T07؛ DLG→T08؛ READ→T05.
+- القراءة والحوار مطابقان للمصدر حرفيًا. النماذج تضم المقارنات الأربع والصيغ الثلاث في قسم القاعدة (11 عبارة منطوقة)، باستبدال الأسهم بنقاط وتكبير أول حرف فقط دون تغيير الكلمات. المفردات تشمل صيغ الجدول وعبارة nur Plural؛ فُصلت الصفات والظروف المكتوبة بشرطة مائلة إلى عبارات مستقلة. فُحص المحتوى والتقييم قبل الإنتاج ولم يتغيرا.
+- **الحزمة: 53 درسًا، 176 أصلًا/389 مقطعًا؛ 137 ready و39 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و15 لـB2.1–B2.3 وأربعة لـB2.4). B2.4 أربعة أصول/10 مقاطع من أصل 11 مخططًا، ولا صوت مولّد لـB2.5–B2.12. لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** إنتاج استماع B2.4 فقط من القسم 5 في `content/B2/lesson-04-cities-housing-participles.md`، بالراوي `voice-03` وفق النمط السابق؛ ربطه بقسمه وT06 وتحديث الحزمة والسجل والاختبارات والتسليم في رد لاحق. لا تعِد إنتاج المقاطع العشرة الموجودة. تبقى مراجعة المستخدم السمعية والاختبار اليدوي بالسرعتين والمتصفح/الهاتف والعمل دون اتصال مطلوبة. لا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- الملفات المعدلة: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`؛ و`tools/build_course.py` و`tools/verify_course.py` (إضافة خريطة البادئة B2.4)؛ و`tools/test_progression.cjs`؛ و`service-worker.js` (v29)؛ و`README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`؛ وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر درس أو تقييم.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,625,534 بايت**. نجح `python3 tools/verify_course.py`: 176 أصلًا/389 مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.4 يطابق كل المفردات والصيغ والنماذج والحوار والقراءة مع المصدر؛ يتحقق من ثبات صوت Samir من A1.9، و4 أصول/10 مقاطع تحت أقسامها، وعدم التكرار أو خلط الدروس، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **379 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **172 إدخالًا سابقًا** في `audio-playlists.json`. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-e8a65844`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة بـHTTP 200. لم أستمع إلى الملفات ولم يحدث فحص بصري/تفاعلي يدوي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `0817873b84550f49d8b96775421b383c4e60b62c`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ516 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `8e1beac1e6c78794f992032715398fb0eea74561` — `feat: add first ten B2.4 audio clips`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B2.4 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `0817873`. فُحص commit التنفيذ `8e1beac` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — صوت B2.3، 2026-10-07
+
+هذا القسم يصف حالة دفعة B2.3 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.3: المفردات والنماذج وستة أدوار حوار والقراءة والاستماع. استُهلك حد التوليد لهذا الرد؛ لا توليد إضافي ولا إعادة إنتاج الموجود.
+- الأصوات: **Nadia=`voice-02` محفوظة من B1.4**؛ **Verkäufer=`voice-03`** باستخدام الصوت الرجالي الموجود للمعاينة دون اختيار صريح جديد أو اعتماد نهائي. المفردات والنماذج والقراءة Narrator=`voice-02`، والاستماع Erzählperson=`voice-03`.
+- الملفات الجديدة في `assets/audio/`: `DL-B2-03-AUD-PHR-01.mp3` و`DL-B2-03-AUD-MODEL-01.mp3` و`DL-B2-03-AUD-DLG-01-01.mp3` إلى `DL-B2-03-AUD-DLG-01-06.mp3` و`DL-B2-03-AUD-READ-01.mp3` و`DL-B2-03-AUD-LST-01.mp3`.
+- الأصول الخمسة مربوطة بالأقسام 1–5 عبر `sectionHeading` في `b2-03-consumption-environment-passive-modal`، مع النص والسرعتين دون تكرار أعلى الدرس. روابط السجل: PHR→T01؛ MODEL→T02/T03/T04/T07؛ DLG→T08؛ READ→T05؛ LST→T06.
+- القراءة والاستماع والحوار والنماذج مطابقة للمصدر. تتضمن النماذج الجمل الخمس في قسم القاعدة، ومنها مقارنة المعلوم والمجهول. المفردات تشمل الأسماء وصيغ الجمع والأفعال وتصريفاتها والصفات مع فصل الصفتين الأخيرتين بنقطة بدل الشرطة المائلة. فُحص المحتوى والتقييم قبل الإنتاج ولم يتغيرا.
+- **الحزمة: 53 درسًا، 172 أصلًا/379 مقطعًا؛ 137 ready و35 generated_pending_acoustic_review** (20 لـB1.9–B1.12 و15 لـB2.1–B2.3). B2.3 خمسة أصول/10 مقاطع، ولا صوت مولّد لـB2.4–B2.12. جميع المقاطع المخططة لـB2.3 مولدة، لكن لا اعتماد نهائيًا أو إعلان اكتمال قبل المراجعة والدمج.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة واختبار التشغيل بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي B2.4 بعد مراجعة محتواه وتقييمه وتحديد أصوات شخصياته. لا مقاطع ناقصة لـB2.3 ولا إعادة إنتاج أو حذف للموجود، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- الملفات المعدلة: `data/audio-playlists.json` و`data/audio-asset-register.csv` و`data/course.json`، و`tools/build_course.py` و`tools/verify_course.py` (إضافة خريطة البادئة B2.3)، و`tools/test_progression.cjs`، و`service-worker.js` (v28)، و`README.md` و`content/PROGRESS.md` و`data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` أو أي مصدر درس أو تقييم.
+- صُحح خطأ توثيقي قديم في خطة التحسين: موضعان يقولان B2.22 بدل B2.12. لم يتغير تسلسل التطبيق. استخدم استبدالات محددة لا استبدالًا عامًا لبادئات الدروس.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,620,403 بايت**. نجح `python3 tools/verify_course.py`: 172 أصلًا/379 مقطعًا بإطارات MP3 صالحة بنيويًا، مع بقاء 530 سؤال درس و10 أسئلة بوابة و109 مهام عملية.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.3 يطابق كل المفردات والصيغ والنماذج والحوار والقراءة والاستماع مع المصدر؛ يتحقق من ثبات صوت Nadia من B1.4، و5 أصول/10 مقاطع تحت أقسامها، وعدم التكرار أو خلط الدروس، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع أو متصفح حقيقي.
+- قورنت **369 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **167 إدخالًا سابقًا** في `audio-playlists.json`. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-eb59d1b5`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقاطع العشرة الجديدة بـHTTP 200. لم أستمع إلى الملفات ولم يحدث فحص بصري/تفاعلي يدوي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `bed7bf71253ffcac6fb0b2bb0b432601b06a1ac8`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ506 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `9f38709197f5c485f5f5c991d72cf67a0ecc2b86` — `feat: add B2.3 audio with section-mapped playback`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.3 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `bed7bf7`. فُحص commit التنفيذ `9f38709` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ وتعيينات الأصوات السابقة محفوظة أدناه.
+
+## سجل تاريخي — استماع B2.2، 2026-10-07
+
+هذا القسم يصف حالة دفعة استماع B2.2 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتج **مقطع واحد فقط في هذا الرد**: `assets/audio/DL-B2-02-AUD-LST-01.mp3` بصوت `Erzählperson=voice-03` وفق نمط راوي الاستماع السابق.
+- النص كامل ومطابق حرفيًا للقسم 5 في `content/B2/lesson-02-career-formal-communication-konjunktiv1.md`. رُبط الأصل بالقسم عبر `sectionHeading` وبـT06 في السجل، مع النص والسرعتين ودون تكرار أعلى الدرس.
+- أصبح **B2.2 خمسة أصول/11 مقطعًا**: المفردات والنماذج وسبعة أدوار حوار والقراءة والاستماع. جميع المقاطع المخططة مولّدة، لكن المراجعة السمعية والاختبار اليدوي والدمج لم تحدث؛ لا إعلان اكتمال نهائي.
+- الحزمة: **53 درسًا، 167 أصلًا/369 مقطعًا؛ 137 ready و30 generated_pending_acoustic_review** (20 لـB1.9–B1.12 وخمسة B2.1 وخمسة B2.2). لا صوت مولّد لـB2.3–B2.12.
+- لم تتغير أصوات Nora=`voice-02` وFadi=`voice-03` أو راوي المفردات والنماذج والقراءة=`voice-02`. لم يتغير أي مصدر محتوى أو تقييم، ولم أستمع إلى المقاطع.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة واختبار التشغيل بالسرعتين والمتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي إعداد B2.3 بعد مراجعة محتواه وتقييمه وتحديد أصوات شخصياته. لا استماع ناقصًا لـB2.2 الآن، ولا إعادة إنتاج لأي ملف موجود، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- ملفات الدفعة المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/test_progression.cjs`، `service-worker.js` (v27)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد MP3 واحد فقط؛ لم يتغير `app.js` أو أداتا البناء والتحقق أو مصادر الدروس والتقييمات.
+- حُدثت ملاحظات أصول B2.2 الأربعة السابقة في CSV لتوثيق إلحاق الاستماع، دون تغيير نصوص التسجيلات أو الأصوات أو الروابط أو الحالات. صُححت عبارتان توثيقيتان سابقتان شوّهتا اسمي B2.10 وB2.12 باستبدال نصي واسع؛ تسلسل التطبيق والمحتوى لم يتغير. لا تستخدم استبدالًا عامًا لبادئة B2.1 كي لا يصيب B2.10–B2.12.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,614,457 بايت**. نجح `python3 tools/verify_course.py`: 167 أصلًا/369 مقطعًا بإطارات MP3 صالحة بنيويًا.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.2 يطابق نص الاستماع كاملًا مع المصدر ومعرفه وصوته ومساره، ويتحقق من الأصول الخمسة و11 مقطعًا تحت الأقسام دون تكرار، ومن حالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين بمحاكاة Audio، لا باستماع أو متصفح حقيقي.
+- قورنت **368 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **166 إدخالًا سابقًا** في `audio-playlists.json`. لا حذف أو إعادة توليد أو تغيير لتسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-e89c90dc`؛ عادت الصفحة والتطبيق والخدمة والحزمة والمقطع الجديد بـHTTP 200. لم يحدث فحص بصري/تفاعلي يدوي أو سمعي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `6517bfd9979e051b497010970093534574750f0d`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ505 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `67269e36a9e398e30c3bc791b8cd89582924a3d8` — `feat: add B2.2 listening audio`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.2 listening delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `6517bfd`. فُحص commit التنفيذ `67269e3` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا حالة `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق B2.6 تاريخيًا ولا تحوّله لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف تغييرات محلية قبل فحصها؛ التاريخ السابق محفوظ أدناه.
+
+## سجل تاريخي — دفعة صوت B2.2 الجزئية، 2026-10-07
+
+هذا القسم يصف حالة الدفعة الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.2: المفردات والنماذج وسبعة أدوار حوار والقراءة. حُفظت أصوات الشخصيات السابقة: Nora=`voice-02` وFadi=`voice-03` كما في A2.11؛ الراوي للمفردات والنماذج والقراءة=`voice-02`. لم يُطلب اختيار جديد ولم تُجر معاينة أصوات جديدة؛ التسجيلات الجديدة غير معتمدة نهائيًا.
+- الأصول الجديدة: `DL-B2-02-AUD-PHR-01` و`DL-B2-02-AUD-MODEL-01` و`DL-B2-02-AUD-DLG-01` و`DL-B2-02-AUD-READ-01`. ملفاتها في `assets/audio/` بالمعرف نفسه وامتداد MP3؛ الحوار سبعة ملفات بلاحقات `-01` إلى `-07`.
+- أُدرجت الأصول تحت أقسامها 1–4 عبر `sectionHeading` في `b2-02-career-formal-communication-konjunktiv1`، مع النص والسرعتين دون تكرار أعلى الدرس. الحالة `generated_pending_acoustic_review` فقط؛ لا شارة «نهائي».
+- **الحزمة:** 53 درسًا، **166 أصلًا/368 مقطعًا؛ 137 ready و29 للمراجعة** (20 لـB1.9–B1.12 وخمسة B2.1 وأربعة B2.2). لا صوت مولّد لـB2.3–B2.12. B2.2 يحوي أول 10 من 11 مقطعًا مخططًا.
+- **المتبقي التالي:** مقطع الاستماع فقط من القسم 5 في `content/B2/lesson-02-career-formal-communication-konjunktiv1.md`، بصوت الراوي `voice-03` وفق النمط السابق. أضفه في رد لاحق مع السجل والحزمة والاختبارات والتسليم. لا تُعد إنتاج المقاطع العشرة الموجودة أو أي صوت سابق.
+- فُحص المصدر والتقييم قبل الإنتاج ولم يتغير أي مصدر درس أو تقييم. الحوار مطابق للمصدر. القراءة تشمل العنوان وكامل المحضر؛ أضيفت نقطة بعد العنوان للفصل الصوتي. النماذج تنقل الأمثلة المباشرة والمنقولة وصيغتي dass وبديل hätten للجمع؛ أُزيل سهم المقارنة فقط من الكلام المنطوق دون تغيير الكلمات.
+
+### الملفات والفحوص المنفذة
+
+- ملفات الدفعة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/build_course.py`، `tools/verify_course.py`، `tools/test_progression.cjs`، `service-worker.js` (v26)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط. لم يتغير `app.js`؛ توزيع المشغلات حسب القسم قائم بالفعل.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,613,467 بايت**. نجح `python3 tools/verify_course.py`: 166 أصلًا/368 مقطعًا ذات إطارات MP3 صالحة بنيويًا.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.2 يتحقق من العدد (4 أصول/10 مقاطع)، المفردات، نص النماذج، كامل الحوار وترتيبه وثبات أصوات Nora/Fadi من A2.11، القراءة مع عنوانها، مواضع الأقسام وعدم التكرار أو خلط B2.1، وحالة المراجعة واستقلال التقييم. جُرّب تسلسل المقاطع بالسرعتين بمحاكاة Audio لا باستماع حقيقي.
+- فشل اختبار التدرج أولًا في استخراج أمثلة الاقتباس لأن التعبير النمطي لم يتعرف على علامة الإغلاق الألمانية؛ صُحح استخراج أمثلة المصدر، ثم نجح الاختبار. لم يتطلب ذلك تعديل المحتوى أو إعادة أي تسجيل.
+- قورنت **جميع ملفات MP3 السابقة الـ358 بايتًا** مع HEAD وظلت مطابقة، وكذلك **162 إدخالًا سابقًا** في `audio-playlists.json`. لا إعادة إنتاج أو حذف أو تغيير لأي تسجيل سابق أو نصه أو مساره أو حالته.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-e6301895`؛ عادت الصفحة والتطبيق والخدمة والحزمة وكل MP3 الجديد بـ200. لم أستمع إلى الملفات ولم أجر اختبارًا بصريًا/يدويًا في متصفح أو هاتف. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `7f3c86831936dbd058d7b9ac29a2729210a3fe54`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ495 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `060be7992fbfb7fb0c138e527f3b0a9ac5f6cd6c` — `feat: add first ten B2.2 audio clips with existing character voices`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B2.2 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `7f3c868`. فُحص commit التنفيذ `060be79` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في كل رد**؛ عند ظهور الحد توقف ولا تعاود في الرد نفسه. لا تحذف الملفات بسبب الحد ولا تعِد إنتاج الموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد. لا إخفاء أو تغيير روابط، ولا ادعاء استماع أو نجاح نشر لم يحدث. لم تُدمج PR #1؛ لا تدمجها ولا تبدّل الفرع، ولا توسع إلى C1.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق سجل B2.6 تاريخيًا دون تحويله إلى حالة B2.7. استمر بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة إلى الفرع الثابت؛ لا تتلف تغييرات محلية قبل فحصها. السجلات السابقة وتعيينات الأصوات محفوظة أدناه.
+
+## سجل تاريخي — قراءة واستماع B2.1، 2026-10-07
+
+هذا القسم يصف حالة دفعة B2.1 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### الإنتاج والحالة والمتبقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتج **مقطعان فقط في هذا الرد**: `assets/audio/DL-B2-01-AUD-READ-01.mp3` بصوت `Narrator=voice-02` و`assets/audio/DL-B2-01-AUD-LST-01.mp3` بصوت `Erzählperson=voice-03` وفق نمط الراوي السابق.
+- النصان كاملان ومطابقان حرفيًا للقسمين 4 و5 في `content/B2/lesson-01-time-management-habits-reading.md`. رُبطا بالقسمين عبر `sectionHeading` وبمهمتي T05 وT06 في سجل الأصول، مع النص والسرعتين ودون تكرار أعلى الدرس.
+- أصبح **B2.1 خمسة أصول/12 مقطعًا**: المفردات والنماذج وثمانية أدوار حوار والقراءة والاستماع. جميع المقاطع المخططة مولّدة ومربوطة؛ المراجعة السمعية والاختبار اليدوي والدمج لم تحدث، فلا إعلان اكتمال نهائي أو شارة «نهائي».
+- الحزمة: **53 درسًا، 162 أصلًا/358 مقطعًا؛ 137 ready و25 generated_pending_acoustic_review** (20 أصلًا لـB1.9–B1.12 وخمسة لـB2.1). لا تغيير على حالات الأصول السابقة ولا صوت مولّد لـB2.2–B2.12.
+- حوار B2.1 يبقى كما في الدفعة السابقة: Karim=`voice-03` محفوظ من الدروس السابقة، وHana=`voice-02` للمعاينة دون اختيار صريح أو اعتماد نهائي. لم أستمع إلى المقاطع، ولم يُغيَّر مصدر درس أو تقييم.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة، واختبار التشغيل بالسرعتين على المتصفح/الهاتف والعمل دون اتصال. عند طلب استمرار الإنتاج يكون التالي إعداد صوت B2.2 بعد مراجعة مصدره وتقييمه وتحديد أصوات شخصياته؛ لا تُعد إنتاج B2.1 أو أي MP3 موجود. لا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- ملفات الدفعة المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/test_progression.cjs`، `service-worker.js` (v25)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد ملفا MP3 المذكوران أعلاه فقط؛ لا تغيير على `app.js` أو أدوات البناء/التحقق أو مصادر الدروس والتقييمات.
+- حُدّثت ملاحظات أصول B2.1 الثلاثة السابقة في CSV لتسجيل إلحاق القراءة والاستماع، دون تغيير نصوص التسجيل أو الأصوات أو المسارات أو الحالات.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,608,242 بايت**. نجح `python3 tools/verify_course.py`: 162 أصلًا/358 مقطعًا ذات إطارات MP3 صالحة بنيويًا.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.1 يطابق القراءة والاستماع كاملين مع المصدر، والأصوات والمسارات، ويتحقق الآن من توزيع الأصول الخمسة وعدم تكرارها وحالة المراجعة واستقلال التقييم، وتشغيل المقاطع الاثني عشر بالتسلسل وبالسرعتين عبر محاكاة Audio. هذا ليس استماعًا أو اختبار متصفح حقيقيًا.
+- قورنت **356 ملف MP3 سابق** بايتًا مع HEAD وظلت مطابقة، وكذلك **160 إدخالًا سابقًا** في `audio-playlists.json`. لا حذف ولا إعادة توليد أو تغيير لأي تسجيل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-3f043ad2`؛ أعاد HTTP 200 للصفحة والتطبيق والخدمة والحزمة والمقطعين الجديدين. لم يحدث اختبار بصري/يدوي أو سمعي؛ تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `08a9f4e580b0bd34c48201a39cacea2f2f701516`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ493 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `519f56b4640908cbaa8e2b857bb9630bf94b167b` — `feat: add B2.1 reading and listening audio`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B2.1 reading and listening delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `08a9f4e`. فُحص commit التنفيذ `519f56b` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت لكل رد**؛ إذا ظهر الحد توقف ولا تعاود في الرد نفسه. لا حذف بسبب الحد ولا إعادة إنتاج للموجود. المحتوى والتقييم والتطبيق قبل الصوت.
+- لا `ready` أو شارة «نهائي» للتسجيلات المعلقة قبل اعتماد المستخدم؛ لا إخفاء أو تغيير روابط. لا تدّع استماعًا أو فحصًا أو نجاح نشر لم يحدث. لا تدمج PR #1 ولا تبدّل الفرع.
+- حافظ على تعيينات الأصوات السابقة، وتصحيح A2.7 Q08→T05 واتساق A2.9. اترك سجلات B2.6 التاريخية دون تحويلها لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف التغييرات المحلية قبل فحصها؛ السجلات السابقة محفوظة أدناه.
+
+## سجل تاريخي — دفعة صوت B2.1 الجزئية، 2026-10-07
+
+هذا القسم يسجل حالة الدفعة الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+### ما أُنجز وما بقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتجت **10 مقاطع فقط في هذا الرد** لـB2.1: المفردات والنماذج وثمانية أدوار حوار. حُفظ صوت Karim=`voice-03` كما في الدروس السابقة؛ استُخدم Hana=`voice-02` كصوت معاينة، دون اختيار صريح من المستخدم أو اعتماد نهائي. راوي المفردات والنماذج=`voice-02`.
+- الأصول الجديدة: `DL-B2-01-AUD-PHR-01` و`DL-B2-01-AUD-MODEL-01` و`DL-B2-01-AUD-DLG-01`. ملفات MP3 في `assets/audio/`؛ المفردات والنماذج بالمعرف نفسه، والحوار بلاحقات `-01` إلى `-08`.
+- أُدرجت الأصول تحت أقسامها 1–3 في `b2-01-time-management-habits-reading` عبر `sectionHeading`، مع التفريغ وزري السرعة دون تكرار أعلى الدرس. الحالة `generated_pending_acoustic_review` فقط؛ لا شارة «نهائي».
+- الحزمة: **53 درسًا، 160 أصلًا و356 مقطعًا؛ 137 ready و23 للمراجعة**: 20 أصلًا لـB1.9–B1.12 وثلاثة لـB2.1. لا صوت مولّد لـB2.2–B2.12.
+- **المتبقي التالي:** مقطع قراءة القسم 4 بصوت الراوي `voice-02` ومقطع استماع القسم 5 بصوت `voice-03` وفق النمط السابق، من `content/B2/lesson-01-time-management-habits-reading.md`. أضفهما في رد لاحق فقط مع السجل والحزمة والاختبارات والتسليم. لا تُعد إنتاج المقاطع العشرة الحالية أو أي ملف سابق.
+- فُحص المصدر والتقييم القائمان قبل الصوت؛ لم تتغير مصادر الدروس أو تقييماتها. النماذج الخمسة والحوار مطابقان للمصدر، ويُحفظ التمييز بين الطريقة (indem / dadurch, dass) والغاية (um … zu). بقي التقييم مستقلًا عن التسجيلات.
+
+### الملفات والفحوص
+
+- الملفات المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/build_course.py`، `tools/verify_course.py`، `tools/test_progression.cjs`، `service-worker.js` (v24)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط. لم يتغير `app.js`؛ إدراج المشغلات تحت الأقسام قائم مسبقًا.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,606,011 بايت**. نجح `python3 tools/verify_course.py`: 160 أصلًا/356 مقطعًا ذات إطارات MP3 صالحة بنيويًا.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B2.1 يغطي مفرداته ونماذجه الخمسة وحواره الكامل وأصواته وثبات Karim من B1.1، الأعداد (3 أصول/10 مقاطع) ومواضع الأقسام وعدم التكرار أو إدراج صوت من B1، وحالة المراجعة واستقلال التقييم. جُرب تسلسل المقاطع بالسرعتين عبر محاكاة Audio، وليس استماعًا حقيقيًا.
+- قورنت **جميع ملفات MP3 السابقة الـ346 بايتًا** مع HEAD وظلت مطابقة؛ وظلت **إدخالات التشغيل السابقة الـ157** مطابقة. لا تغيير على أي صوت سابق أو نصه أو رابطه أو حالته.
+- معاينة على `0.0.0.0:8000`، العملية `deutschlern-7784980a`. أعاد HTTP 200 للصفحة والتطبيق والخدمة والحزمة وكل المقاطع العشرة الجديدة. لم أستمع إلى الملفات ولم أجر اختبارًا بصريًا/يدويًا في المتصفح أو الهاتف. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والتسليم والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `ca9ce260b6d2c42e49f96994dea559b8f9f006f1`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ483 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `90d93e1ab83c658b99f236f83363ed67933b80d2` — `feat: add first ten B2.1 audio preview clips`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B2.1 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **حالة PR والنشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API رأسًا سابقًا `ca9ce26`. فُحص commit التنفيذ `90d93e1` مباشرة عبر API: الحالة `pending` و`statuses: []`؛ لا نجاح نشر مثبت لهذه الدفعة عند الفحص. لم تُدمج PR؛ أعد فحص الرأس النهائي لاحقًا.
+- حد أقصى **10 طلبات توليد صوت في الرد**؛ عند ظهور الحد توقف ولا تعاود في الرد نفسه. لا تحذف الملفات بسبب الحد ولا تعِد إنتاج الموجود.
+- المحتوى والتقييم والتطبيق قبل الصوت. التسجيلات المعلقة تنتظر مراجعة المستخدم؛ لا `ready` أو شارة «نهائي» قبل الاعتماد، ولا إخفاء للتسجيلات أو تغيير روابطها. لا تدّع استماعًا أو نجاح نشر لم يحدث؛ الدفعة ليست مكتملة نهائيًا أو مدمجة.
+- حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. أبق سجل B2.6 تاريخيًا ولا تحوّله لحالة B2.7. لا توسع إلى C1 ولا دمج PR #1، ولا تبديل الفرع أو إتلاف تغييرات محلية.
+- استمر بالعربية البسيطة؛ حدّث ملفي التسليم وارفع كل دفعة إلى الفرع الثابت. سجلات تصحيح الأخطاء السابقة وتعيينات الأصوات محفوظة أدناه.
+
+## سجل تاريخي — قراءة واستماع B1.12، 2026-10-07
+
+هذا القسم يسجل حالة دفعة B1.12 وقتها؛ راجع أحدث حالة أعلاه للاستئناف.
+
+### ما أُنجز وما بقي
+
+- طلب المستخدم «واصل الإنتاج»: أُنتج **مقطعان فقط** في هذا الرد، `assets/audio/DL-B1-12-AUD-READ-01.mp3` بصوت `Narrator=voice-02` و`assets/audio/DL-B1-12-AUD-LST-01.mp3` بصوت `Erzählperson=voice-03` وفق نمط الراوي السابق. لم يُنتج صوت لأي درس B2.
+- النصان كاملان ومطابقان حرفيًا للقسمين 4 و5 في `content/B1/lesson-12-innovation-research-future.md`. رُبط الأصلان بهما عبر `sectionHeading`، وبمهمتي المصدر T05 وT06 في سجل الأصول؛ النص والسرعتان متاحان دون تكرار أعلى الدرس.
+- أصبح **B1.12 خمسة أصول و12 مقطعًا**: المفردات والنماذج وثمانية أدوار حوار والقراءة والاستماع. أُنتجت جميع المقاطع المخططة، لكن لا اكتمال نهائي: لم تتم المراجعة السمعية أو الاختبارات اليدوية أو دمج PR #1.
+- الحزمة: **53 درسًا، 157 أصلًا و346 مقطعًا؛ 137 ready و20 generated_pending_acoustic_review**، خمسة لكل من B1.9 وB1.10 وB1.11 وB1.12. مجموع صوت B1 هو 59 أصلًا/126 مقطعًا. لا تغيير على حالات التسجيلات السابقة.
+- أصوات حوار B1.12 تبقى معاينة: Rana=`voice-02` وTimo=`voice-03`. استُخدمت في الدفعة السابقة بعد تكرار طلب المواصلة دون اختيار صريح من سؤال الأصوات؛ لا تصفها بأنها اختيار صريح أو معتمدة نهائيًا. لا إعادة إنتاج للملفات الموجودة.
+- **التالي:** مراجعة المستخدم للتسجيلات المعلقة، واختبار التشغيل بالسرعتين في المتصفح/الهاتف والعمل دون اتصال. عند طلب استمرار إنتاج الصوت يكون الدرس التالي B2.1، بعد مراجعة المحتوى والتقييم وتحديد أصوات شخصياته. لا قراءة أو استماع ناقصين لـB1.12 بعد الآن، ولا توسع إلى C1.
+
+### الملفات والفحوص المنفذة
+
+- الملفات المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/test_progression.cjs`، `service-worker.js` (v23)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد ملفا MP3 المذكوران أعلاه فقط. لم يتغير `app.js` أو مصدر الدرس/التقييم أو أداتا البناء والتحقق.
+- حُدثت ملاحظات الأصول الثلاثة السابقة لـB1.12 في CSV لتوثيق إلحاق القراءة والاستماع؛ لم تتغير أصواتها أو نصوصها أو روابطها أو حالاتها.
+- نجح `python3 tools/build_course.py`: 53 درسًا، **1,601,819 بايت**. نجح `python3 tools/verify_course.py`: 157 أصلًا/346 مقطعًا ذات إطارات MP3 صالحة بنيويًا.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- أُضيف تحقق مطابقة القراءة والاستماع حرفيًا مع المصدر، وعدد المقاطع والأصوات والمسارات. اختبارات B1.12 تشمل الآن توزيع الأصول الخمسة تحت أقسامها وعدم التكرار، وحالة المراجعة وتسلسل المقاطع الاثني عشر بالسرعتين عبر محاكاة Audio. هذا ليس استماعًا أو فحص متصفح حقيقيًا.
+- تحققت مطابقة **344 ملف MP3 سابق** بايتًا مع HEAD، وعدم تغيير أي من **155 إدخالًا سابقًا** في `audio-playlists.json`. لا إعادة توليد ولا حذف لأصل سابق.
+- معاينة على `0.0.0.0:8000` بالعملية `deutschlern-b8ddea85`؛ أعاد HTTP حالة 200 للصفحة والتطبيق والخدمة والحزمة والمقطعين الجديدين. لم أستمع إلى المقاطع ولم أجر فحصًا بصريًا/يدويًا على متصفح أو هاتف. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والقرارات المستمرة
+
+- الفرع الوحيد: `arena/01a1036f-deutschlern`؛ رأس البداية `da5ec7441d49a8215aea043f2a38efbdcf478b3b`. ظهر HEAD القديم `88f3c06` عند الاستئناف؛ قورنت ملفات البعيد الـ481 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `cabad4d8d021c889dbb0699b49fe9eb2c97cf06b` — `feat: add B1.12 reading and listening audio`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B1.12 reading and listening delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **نتيجة النشر بعد دفع التنفيذ:** PR #1 `OPEN` و`mergedAt: null`؛ أعادت API الرأس السابق `da5ec74`، وأظهر `gh pr checks 1` نجاح Vercel وVercel Preview Comments حينها. لتجنب نسبتها للرأس الجديد، فُحصت حالة commit التنفيذ مباشرة عبر API: `cabad4d` حالته `pending` وVercel يقول `Vercel is deploying your app`. لا نجاح نشر مثبت للتنفيذ الجديد عند هذا الفحص؛ أعد فحص الرأس النهائي لاحقًا. لم تُدمج PR.
+- لا تبديل فروع ولا دمج PR #1. لا تدّع نجاح نشر أو فحص لم يحدث. حد أقصى **10 طلبات توليد صوت في كل رد**؛ عند ظهور حد الخدمة توقف ولا تعاود في الرد نفسه. لا تُعد إنتاج ملفات موجودة ولا تحذفها بسبب الحد.
+- المحتوى والتقييم والتطبيق قبل الصوت؛ لا شارة «نهائي» أو حالة `ready` قبل اعتماد المستخدم. أبق التسجيلات متاحة في دروسها ولا تغير روابطها. جميع أصوات الدروس السابقة محفوظة كما في سجلات التسليم.
+- حافظ على A2.7 Q08→T05 واتساق A2.9. لا تعِد صياغة سجل B2.6 التاريخي كأنه حالة B2.7. اشرح بالعربية البسيطة وحدّث ملفي التسليم وارفع كل دفعة على الفرع الثابت. لا تتلف أي تغيير محلي قبل فحصه؛ التصحيحات السابقة محفوظة أدناه.
+
+## سجل تاريخي — دفعة B1.12 الصوتية الجزئية، 2026-10-07
+
+هذا القسم يصف حالة الدفعة الجزئية وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+- **طلب المستخدم:** «واصل الإنتاج»، ثم كرر «واصل الإنتاج» بعد تجاوز سؤال اختيار أصوات B1.12 دون إجابة. استُخدمت الأصوات الموجودة المقترحة كمعاينة: Rana=`voice-02` وTimo=`voice-03`، والراوي=`voice-02`. لا تصف ذلك باختيار صريح من السؤال أو اعتماد نهائي للأصوات. لا معاينات جديدة أُجريت في هذه الدفعة.
+- **الإنتاج: 10 مقاطع فقط في هذا الرد**، عبر ثلاثة أصول: `DL-B1-12-AUD-PHR-01` و`DL-B1-12-AUD-MODEL-01` و`DL-B1-12-AUD-DLG-01` (8 أدوار حوار). ملفاتها في `assets/audio/`؛ المفردات والنماذج MP3 بالمعرف نفسه، والحوار بلاحقات `-01` إلى `-08`.
+- أُدرجت الأصول في أقسام المفردات والنماذج والحوار (1–3) عبر `sectionHeading`، مع التفريغ وزري السرعة. لا تكرار أعلى الدرس. الحالة `generated_pending_acoustic_review`، دون شارة «نهائي».
+- **المتبقي التالي:** مقطع القراءة من القسم 4، ثم مقطع الاستماع من القسم 5 في `content/B1/lesson-12-innovation-research-future.md`، في رد لاحق فقط. نمط الراوي القائم: القراءة `voice-02` والاستماع `voice-03`. حدّث السجل والحزمة واختبار الأصول بعد إضافتهما؛ لا تعِد إنتاج المقاطع العشرة الحالية أو ملفات B1.9–B1.11.
+- الحزمة: **53 درسًا، 155 أصلًا، 344 مقطعًا؛ 137 ready و18 للمراجعة** (خمسة لكل من B1.9 وB1.10 وB1.11، وثلاثة B1.12). لا اكتمال نهائي: قراءة B1.12 واستماعه والمراجعة السمعية والاختبار اليدوي والدمج لم تتم.
+- فُحص المحتوى والتقييم قبل الإنتاج؛ لم تتغير مصادر الدروس والتقييمات. النماذج تشمل مثال الحاضر لخطة مستقبلية، أمثلة Futur I، والمقارنة بالمبني للمجهول. الحوار مطابق لأدواره الثمانية في المصدر؛ لا تغيير في الحقائق أو صياغة الدرس.
+
+### الملفات والفحوص
+
+- ملفات الدفعة المعدلة: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/build_course.py`، `tools/verify_course.py`، `tools/test_progression.cjs`، `service-worker.js` (v22)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. الجديد عشرة MP3 فقط. لا تغيير على `app.js`؛ إدراج الصوت تحت الأقسام قائم بالفعل.
+- نجح `python3 tools/build_course.py`: 53 درسًا، 1,599,480 بايت. نجح `python3 tools/verify_course.py`: 155 أصلًا/344 مقطعًا ذات إطارات MP3 صالحة بنيويًا.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B1.12 يغطي العدد (3/10)، كامل مفردات المصدر، أمثلة القواعد الستة، نص الحوار وترتيبه وثبات أصوات المعاينة، مواضع الأقسام وعدم التكرار أو خلط صوت B1.11، وإبقاء التقييم مستقلًا عن التسجيلات. جُرب تسلسل المقاطع بالسرعتين عبر محاكاة Audio، لا استماعًا حقيقيًا.
+- تحققت مطابقة كل **334 ملف MP3 سابق** بايتًا مع HEAD، وعدم تغيير أي من **152 إدخالًا سابقًا** في سجل التشغيل JSON. لا إعادة توليد أو حذف لأي ملف سابق.
+- معاينة HTTP على `0.0.0.0:8000` بالعملية `deutschlern-a29da0e6`؛ عادت الصفحة والتطبيق والخدمة والحزمة وكل MP3 الجديد بـ200. لم أستمع للمقاطع، ولم أجر اختبارًا بصريًا/تفاعليًا في متصفح أو هاتف. تحقق من استمرار الخادم عند الاستئناف.
+
+### Git والتسليم والقرارات المستمرة
+
+- الفرع الوحيد `arena/01a1036f-deutschlern`؛ رأس البداية `81f38346a542b8fd3933288e7b1cf16d27314e9f`. عند الاستئناف ظهر HEAD القديم `88f3c06`؛ قورنت ملفات البعيد الـ471 كلها بايتًا بلا اختلاف أو ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `36618fe3ef05bf5a1706c953f74df6785fc48ca8` — `feat: add first ten B1.12 audio preview clips`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record partial B1.12 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR #1 بعد دفع التنفيذ مباشرةً:** `OPEN` و`mergedAt: null`؛ أعادت API الرأس السابق `81f3834` بينما أكد الدفع رأس التنفيذ `36618fe`. أعاد `gh pr checks 1` رسالة `no checks reported`. لم تُدمج PR ولا يوجد نجاح نشر مُثبت لهذه الدفعة؛ أعد الفحص على الرأس النهائي لاحقًا.
+- لا تبديل فروع ولا دمج PR #1 ولا توسع إلى C1. المحتوى والتقييم والتطبيق قبل الصوت. حد أقصى 10 طلبات توليد في الرد؛ عند ظهور رسالة الحد توقف ولا تعاود في الرد نفسه، ولا تحذف الملفات أو تعِد إنتاجها.
+- لا تغيّر التسجيلات المنتظرة إلى `ready` أو تضع شارة «نهائي» قبل اعتماد المستخدم. لا تُخفها أو تغيّر روابطها، ولا تدّع مراجعة سمعية أو نشرًا ناجحًا لم يحدث. اختيار الصوت واستحسان التسجيل مرحلتان مختلفتان.
+- احتفظ بأصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9، وبسجلات B2.6 التاريخية دون تحويلها لحالة B2.7. اشرح بالعربية البسيطة، وحدّث ملفي التسليم وارفع كل دفعة إلى الفرع نفسه. لا تتلف تغييرات محلية؛ سجلات التصحيحات السابقة محفوظة أدناه.
+
+## سجل تاريخي — دفعة صوت B1.11، 2026-10-07
+
+هذا القسم يصف حالة دفعة B1.11 وقتها؛ أحدث حالة أعلاه هي مرجع الاستئناف.
+
+- **طلب المستخدم وقراره:** «واصل»، ثم اختار صراحةً الصوت النسائي الموجود `voice-00` لأمينة الأرشيف Archivarin، مع إبقاء Mira=`voice-02`. لا تعِد طلب الاختيار أو إنتاج ملفات B1.11.
+- **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط. رأس البداية `e39e027cad9f394c010e188962f32771d0eafe9b`. لا تبديل فروع ولا دمج PR #1 ولا توسع إلى C1.
+- **إنتاج هذا الرد: 10 مقاطع فقط، عبر خمسة أصول B1.11**: مفردات، نماذج، ستة أدوار للحوار، قراءة واستماع. الراوي للمفردات والنماذج والقراءة=`voice-02`؛ الاستماع=`voice-03`؛ Mira=`voice-02` وArchivarin=`voice-00`. اختيار أصوات الشخصيات تم قبل التوليد.
+- الأصول الجديدة: `DL-B1-11-AUD-PHR-01` و`DL-B1-11-AUD-MODEL-01` و`DL-B1-11-AUD-DLG-01` و`DL-B1-11-AUD-READ-01` و`DL-B1-11-AUD-LST-01`. ملفاتها في `assets/audio/` بالمعرّفات نفسها وامتداد MP3؛ الحوار ستة ملفات بلاحقات `-01` إلى `-06`.
+- أُدرجت الأصول تحت عناوين أقسامها 1–5 عبر `sectionHeading`، مع النص الألماني وزري السرعة العادية والبطيئة. لا تكرار أعلى الدرس ولا تغيير على روابط أو مواضع التسجيلات السابقة.
+- الحزمة: **53 درسًا؛ 152 أصلًا/334 مقطعًا؛ 137 ready و15 generated_pending_acoustic_review** (خمسة لكل من B1.9 وB1.10 وB1.11). كل مقاطع B1.11 المخططة مولّدة ومربوطة، لكن المراجعة السمعية والاختبار اليدوي والدمج لم تحدث؛ لا إعلان اكتمال نهائي ولا شارة «نهائي» قبل اعتماد التسجيلات.
+- المحتوى والتقييم القائمان فُحصا قبل التوليد، ولم تتغير مصادرهما. يحافظ المثال على كون Sonnenfeld وأحداثها خيالية. النماذج تتضمن ثلاث جمل للمجهول وجملة المقارنة «Das Dorf wurde größer.» كما في المصدر؛ الحوار والقراءة والاستماع مطابقون للنصوص.
+
+### الملفات والفحوص المنفذة
+
+- التعديلات: `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/build_course.py`، `tools/verify_course.py`، `tools/test_progression.cjs`، `service-worker.js` (v21)، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وملفا التسليم. الجديد عشرة MP3 فقط؛ لم يتغير `app.js` في هذه الدفعة لأن توزيع الصوت حسب القسم قائم بالفعل.
+- نجح `python3 tools/build_course.py`: 53 درسًا وحزمة 1,595,445 بايت. نجح `python3 tools/verify_course.py`: 152 أصلًا/334 مقطعًا بإطارات MP3 صالحة بنيويًا، مع تحقق العناوين والسجل.
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`؛ و`node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار B1.11 يغطي المفردات والنماذج، نصوص الحوار وترتيبه وثبات Mira وأمينة الأرشيف، مطابقة القراءة والاستماع، مواضع الأصول وعدم تكرارها أو خلطها مع B1.10، وحالة المراجعة واستقلال التقييم. جُرّب تسلسل المقاطع العشرة بالسرعتين بمحاكاة Audio، لا استماع فعليًا.
+- قورنت **جميع ملفات MP3 السابقة الـ324 بايتًا** مع HEAD وظلت مطابقة؛ لم تُعد إنتاج B1.9 أو B1.10 أو غيرهما.
+- معاينة على `0.0.0.0:8000`، العملية `deutschlern-6ba80226`. أعاد HTTP 200 للصفحة والتطبيق والخدمة والحزمة وكل المقاطع العشرة الجديدة. هذا ليس اختبارًا بصريًا أو سمعيًا؛ لم أستمع للملفات ولم أختبرها يدويًا في متصفح/هاتف. تحقق من استمرار الخادم عند الاستئناف.
+- محاذاة Git: ظهر HEAD القديم `88f3c06` عند الاستئناف. قبل أي تعديل قورنت ملفات البعيد الـ461 كلها بايتًا؛ تطابقت ولم توجد ملفات إضافية، ثم حُوذي المؤشر والرأس بـ`git reset --mixed` دون تغيير ملفات العمل.
+- **Commit التنفيذ:** `144109ab58d23ffa561053fe21f39dee5c549d2c` — `feat: add ten B1.11 audio clips with selected archivist voice`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B1.11 audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **PR #1 بعد دفع التنفيذ مباشرةً:** `OPEN` و`mergedAt: null`؛ أعادت API الرأس السابق `e39e027`، بينما أكد الدفع رأس التنفيذ `144109a`. أعاد `gh pr checks 1` رسالة `no checks reported`. لا نجاح نشر مثبت لهذه الدفعة ولا دمج؛ أعد الفحص على الرأس النهائي لاحقًا.
+
+### المتبقي والخطوة التالية والقرارات المستمرة
+
+- مراجعة المستخدم لصوت B1.9–B1.11 ثم تغيير الحالة إلى `ready` عند الاعتماد فقط. الاختبار اليدوي للتشغيل/الهاتف والعمل دون اتصال ما زال مطلوبًا. لا تدّع استماعًا أو نجاح نشر لم يحدث.
+- عند طلب مواصلة الإنتاج: إعداد B1.12 بعد مراجعة مصدره وتحديد أصوات شخصياته قبل التوليد. **حد أقصى 10 طلبات توليد صوت في الرد**؛ عند ظهور الحد توقف ولا تعاود في الرد نفسه. لا إعادة توليد ملفات موجودة ولا حذفها بسبب الحد.
+- استمر بالعربية البسيطة؛ المحتوى والتقييم والتطبيق قبل الصوت. احتفظ بكل تعيينات الأصوات السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. لا تعدّل التاريخ المسجل لـB2.6 ليبدو حالة B2.7.
+- بعد كل دفعة حدّث `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md` وارفع على الفرع الثابت. لا تدمج PR #1 ولا تتلف تغييرات محلية. التاريخ السابق، بما فيه خطأ التوليد قبل الموافقة في B1.10 وتصحيحه، محفوظ أدناه.
+
+## سجل تاريخي — إلحاق القراءة والاستماع وتوزيع صوت B1.10، 2026-10-07
+
+هذا القسم يسجل حالة دفعة B1.10 وقتها؛ راجع أحدث حالة أعلاه للاستئناف.
+
+### ما أُنجز وما بقي
+
+- طلب المستخدم: «واصل وادمجها في أماكنها». نُفّذ الإدراج داخل الدرس، **لا دمج PR #1**. الفرع الوحيد `arena/01a1036f-deutschlern`، ورأس البداية `38b570deae72d80eff9941d3036a1e0b1d7d5ee4`.
+- أُنتج **مقطعان فقط في هذا الرد**: `assets/audio/DL-B1-10-AUD-READ-01.mp3` بصوت `voice-02` و`assets/audio/DL-B1-10-AUD-LST-01.mp3` بصوت `voice-03`. لا إعادة إنتاج لأي ملف سابق؛ قورنت المقاطع الـ322 السابقة مع HEAD بايتًا وظلت مطابقة.
+- أصبح B1.10 يحوي خمسة أصول و12 مقطعًا: مفردات ونماذج وحوار 8 أدوار وقراءة واستماع. Leila=`voice-02` وRedakteur=`voice-03` وفق اختيار المستخدم السابق؛ لا حاجة لإعادة اختيارهما. راوي القراءة مستقل عن شخصية Noor ويستخدم `Narrator=voice-02`؛ راوي الاستماع `Erzählperson=voice-03` كما في الدروس السابقة.
+- أُضيف `sectionHeading` إلى أصول B1.10 الخمسة؛ تظهر المشغلات تحت عناوين أقسامها 1–5 بدل تكرارها أعلى الدرس. النص والسرعتان متاحان، والروابط القديمة لم تتغير. عند فقد عنوان في حزمة قديمة يرجع الأصل إلى لوحة صوت الدرس ولا يختفي. بقية الدروس تحتفظ بتوزيعها السابق.
+- القراءة تتضمن كلمات عنوان الرسالة والتحية والخاتمة وتوقيع Noor كاملة؛ أضيفت فقط نقطة بعد العنوان وفاصلة بعد التحية الختامية ونقطة بعد الاسم لأداء النطق. نص الاستماع مطابق حرفيًا للمصدر. لا تغيير على مصادر الدروس أو التقييمات.
+- الحزمة: **53 درسًا، 147 أصلًا، 324 مقطعًا؛ 137 ready و10 generated_pending_acoustic_review** (خمسة B1.9 وخمسة B1.10). أُنتجت جميع مقاطع B1.10 المخططة، لكن لا يُعلن اكتمال الدفعة النهائية: المراجعة السمعية والاختبار اليدوي والدمج لم تحدث.
+- المتبقي: مراجعة المستخدم للتسجيلات ثم اعتمادها عند الموافقة، وفحص تشغيل الأقسام في المتصفح/الهاتف والعمل دون اتصال. عند طلب مواصلة الإنتاج يكون التالي إعداد B1.11 بعد مراجعة مصدره وتحديد أصوات شخصياته؛ لا تعِد إنتاج B1.10 أو B1.9.
+
+### الملفات والفحوص
+
+- الملفات المعدلة: `app.js` (إدراج المشغلات حسب القسم مع رجوع احتياطي)، `service-worker.js` (v20)، `data/audio-playlists.json`، `data/audio-asset-register.csv`، `data/course.json`، `tools/build_course.py`، `tools/verify_course.py`، `tools/test_progression.cjs`، `README.md`، `content/PROGRESS.md`، `data/course-improvement-plan.md`، وهذا الملف وملف التسليم المقابل. ملفا MP3 الجديدان مذكوران أعلاه.
+- نجح `python3 tools/build_course.py`: 53 درسًا، 1,589,900 بايت. نجح `python3 tools/verify_course.py`: 147 أصلًا و324 مقطعًا ذات إطارات MP3 صالحة بنيويًا، مع مطابقة العناوين والسجل.
+- نجحت `node tools/test_progression.cjs`، `node tools/test_session_persistence.cjs`، `node tools/test_daily_plan.cjs`، `node tools/test_study_time.cjs`، وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- أضيفت اختبارات نص القراءة والاستماع وأصواتهما، وتوزيع الأصول تحت العناوين دون تكرار، والرجوع الاحتياطي عند غياب عنوان، وبقاء الدروس القديمة كما هي؛ جُرّب تشغيل المقطعين بمحاكاة Audio، لا بمتصفح حقيقي.
+- شُغّلت معاينة على `0.0.0.0:8000` بالعملية `deutschlern-a144ee4d`. أعاد HTTP حالة 200 للصفحة والتطبيق والخدمة والحزمة والمقطعين الجديدين. لا متصفح آلي متاح في البيئة؛ لم أستمع إلى المقاطع، ولا فحص بصري/هاتف بعد. تحقق من استمرار الخادم عند الاستئناف.
+- محاذاة Git: ظهر HEAD القديم `88f3c06` عند الاستئناف. قورنت ملفات البعيد الـ459 كلها قبل أي تعديل وتطابقت بايتًا بلا ملفات إضافية، ثم تمت محاذاة المؤشر والرأس بـ`git reset --mixed` إلى الفرع البعيد دون تغيير محتوى الملفات.
+- **Commit التنفيذ:** `f0ec192769431518b6b74fc67c6e2db1c6ab1305` — `feat: add B1.10 reading and listening with section audio players`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B1.10 section audio delivery`؛ استخرج رأسه بـ`git log -1` وتحقق من مطابقته للبعيد عند الاستئناف.
+- **نتيجة PR بعد دفع التنفيذ مباشرةً:** PR #1 `OPEN` و`mergedAt: null`، وأعادت API رأسًا أقدم `38b570d` بينما أكد الدفع رأس `f0ec192`. أعاد `gh pr checks 1` رسالة `no checks reported`. لم تُدمج PR ولا يوجد نجاح نشر مُثبت لهذه الدفعة؛ أعد فحص النشر على الرأس النهائي لاحقًا.
+
+### قرارات مستمرة
+
+- **حد أقصى 10 طلبات توليد صوت في كل رد**؛ إذا ظهر الحد توقف ولا تعاود الطلب في الرد نفسه. لا تملأ الحصة بإعادة توليد أو محتوى غير مطلوب. لا تحذف التسجيلات بسبب بلوغ الحد.
+- لا تغيّر حالات B1.9/B1.10 إلى ready ولا تعرض شارة «نهائي» قبل الاعتماد. لا تغيّر الروابط ولا تخف التسجيلات. لا تدّع استماعًا لم يحدث.
+- المحتوى والتقييم والتطبيق قبل الصوت؛ حافظ على أصوات الدروس السابقة وتصحيح A2.7 Q08→T05 واتساق A2.9. سجلات B2.6 تاريخية ولا تُعاد صياغتها كحالة B2.7. لا توسع إلى C1 دون طلب.
+- بعد كل دفعة حدّث `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md` وارفع على الفرع نفسه. لا تدمج PR #1، ولا تتلف تغييرات محلية أو تبدّل الفرع.
+- يبقى خطأ التوليد قبل الموافقة في الدفعة الأسبق موثقًا أدناه؛ لا تمح تاريخه ولا تكرر حذفه/توليده. الملفات العشرة السابقة نتجت بعد الاختيار الصريح للمستخدم.
+
+## سجل تاريخي — دفعة B1.10 الجزئية، 2026-10-07
+
+هذا القسم يسجل حالة الدفعة السابقة وقتها؛ راجع أحدث حالة أعلاه للعمل التالي.
+
+- الفرع الثابت: `arena/01a1036f-deutschlern`؛ لا تبديل فروع ولا دمج PR #1 ولا توسع إلى C1.
+- رأس البداية: `5bda878695f6fc55b9bde64617f82ed2f6577d8e`. عند الاستئناف ظهر HEAD القديم `88f3c06`؛ قورنت ملفات البعيد الـ449 بايتًا: لا ملف مفقود، والاختلافات فقط ملفات هذه الدفعة العشرة و10 MP3 إضافية. تمت محاذاة المؤشر والرأس بـ`git reset --mixed origin/arena/01a1036f-deutschlern` دون تغيير ملفات العمل.
+- قرار المستخدم الحالي: **10 مقاطع صوتية كحد أقصى في كل رد، ثم المتبقي في رد لاحق**. اختار صراحةً استخدام الأصوات الموجودة: Leila والراوي=`voice-02`، وRedakteur=`voice-03` بدل معاينات جديدة. لا تعِد طلب اختيار الشخصيتين.
+- أُنتجت 10 مقاطع فقط لهذه الدفعة: المفردات والنماذج و8 أدوار حوار. أضيفت ثلاثة أصول `DL-B1-10-AUD-PHR-01` و`DL-B1-10-AUD-MODEL-01` و`DL-B1-10-AUD-DLG-01`، ظاهرة مع النص داخل الدرس المطابق بحالة `generated_pending_acoustic_review`. اختيار الأصوات تم؛ مراجعة التسجيلات واعتمادها نهائيًا لم يتمّا. لا شارة «نهائي» قبل الاعتماد.
+- الإجمالي: **53 درسًا، 145 أصلًا، 322 مقطعًا؛ 137 أصلًا ready وثمانية للمراجعة** (خمسة B1.9 وثلاثة B1.10). لا تغييرات على صوت B1.9 أو أي صوت سابق، ولا على مصادر الدروس والتقييمات في هذه الدفعة.
+- المتبقي من B1.10: مقطع القراءة (الرسالة في القسم 4؛ الراوي `voice-02` وفق النمط) ومقطع الاستماع (القسم 5؛ `voice-03`). ابدأ بهما في رد لاحق فقط؛ لا تُعد إنتاج المقاطع العشرة الموجودة. أضفهما للسجل والحزمة والاختبارات والتسليم، ثم ارفع إلى الفرع الثابت.
+- تصحيح محفوظ: في الرد السابق أُنتجت عشرة مقاطع قبل الموافقة ثم حُذفت وأزيلت إدخالاتها. هذه الدفعة الحالية أُنتجت بعد اختيار المستخدم الصريح للأصوات؛ لا تكرر حذف الملفات أو توليدها. حد العشرة ليس سببًا للحذف أو لإعادة التوليد.
+
+### الملفات والفحوص
+
+- الملفات المعدلة: `README.md`، `content/PROGRESS.md`، `data/audio-asset-register.csv`، `data/audio-playlists.json`، `data/course-improvement-plan.md`، `data/course.json`، `service-worker.js` (v19)، `tools/build_course.py`، `tools/verify_course.py`، `tools/test_progression.cjs`، وملفا التسليم `data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`.
+- الملفات الجديدة: `assets/audio/DL-B1-10-AUD-PHR-01.mp3` و`DL-B1-10-AUD-MODEL-01.mp3` و`DL-B1-10-AUD-DLG-01-01.mp3` إلى `DL-B1-10-AUD-DLG-01-08.mp3` في المجلد نفسه.
+- نجح `python3 tools/build_course.py` (53 درسًا؛ 1,587,697 بايت)، و`python3 tools/verify_course.py` (322 مقطع MP3 صالحًا بنيويًا).
+- نجحت `node tools/test_progression.cjs` و`node tools/test_session_persistence.cjs` و`node tools/test_daily_plan.cjs` و`node tools/test_study_time.cjs`، وفحوص `node --check` للتطبيق والخدمة والاختبارات الأربعة، و`git diff --check`.
+- اختبار التدرج يطابق النص والأصوات وترتيب الحوار ذي الأدوار الثمانية، وعدد الأصول والمقاطع، وحالة المراجعة، واستقلال التقييم عن الصوت. حُفظ تصحيح A2.7 Q08→T05 واتساق A2.9 وجميع تعيينات الأصوات السابقة.
+- لم أستمع إلى التسجيلات. لا اختبار بصري/تفاعلي في متصفح أو هاتف بعد. فحص HTTP أعاد 200 للصفحة والتطبيق والخدمة والحزمة وعينتي MP3؛ ليس دليل تشغيل سمعي أو بصري.
+- بدأت معاينة محلية على `0.0.0.0:8000` بالعملية `deutschlern-preview-eb4b6ed0`؛ تحقّق من استمرارها قبل وصفها بأنها تعمل. قيود Vercel وSSO المذكورة أدناه تاريخية وتحتاج فحصًا جديدًا.
+- المحتوى والتقييم والتطبيق قبل الصوت؛ لا تدّع اكتمال الدفعة قبل الفحص والرفع والدمج. PR #1 لا تُدمج. بعد كل دفعة حدّث ملفي التسليم وارفع التغييرات. احتفظ بسجلات B2.6 التاريخية دون إعادة تأويلها كحالة B2.7.
+- **Commit الدفعة:** `84a0a9e1d5e242e2bcb48a2f9a2694223c580292` — `feat: add first ten B1.10 audio clips with selected voices`؛ دُفع بنجاح إلى `origin/arena/01a1036f-deutschlern`. يتبعه commit توثيقي بعنوان `docs: record B1.10 audio batch delivery` يسجل هذه النتيجة؛ استخرج رأسه بـ`git log -1` وتحقق من البعيد عند الاستئناف.
+- **PR #1 بعد الدفع مباشرةً:** `OPEN` و`mergedAt: null`؛ أعادت API رأسًا قديمًا `5bda878`، وأعاد `gh pr checks 1` رسالة `no checks reported`. لذلك لا تُنسب نتيجة نشر ناجحة إلى الدفعة الجديدة، ولا تدّع أنها مدمجة. أعد فحص الحالة على الرأس النهائي لاحقًا.
+
+## السجل السابق — قبل دفعة B1.10
+
+- **آخر تحديث:** 2026-10-06
+- **المستودع:** `naderba69/deutschlern` في `/home/user/deutschlern`
+- **الفرع الثابت:** `arena/01a1036f-deutschlern` فقط؛ لا تبدّله ولا تنشئ فرعًا آخر.
+- **Commit التنفيذ:** `02cfc352229e733e5ef6250988ef3b437ffe29c6` — `feat: track actual study time`، على الأب `0149d0761f4ca0079bb05beaae05d80f91f9f643`.
+- **Commit أول تسليم للبند 7:** `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa` — `docs: hand off actual study time`؛ دُفع مع commit التنفيذ إلى الفرع الثابت.
+- **Commit تسليم التحقق السابق:** `ef86ecbd1d933df3285093a6d5040c996865a739` — `docs: record actual time delivery checks`.
+- **Commit التسليم التالي:** `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb` — `docs: update handoff with final checks`.
+- **Commit نتائج التسليم:** `8f647b5a6d4acccd1e5616a29f9dc088064fffd4` — `docs: record latest study time checks`.
+- **Commit توثيق الاستئناف:** `6b5626baf9af89828c26949a7c1d70eab8118a2a` — `docs: record resumed validation state`.
+- **Commit متابعة اختبار التركيز:** `2321554b10ce969e642ddf76f4ee8e72a7e65663` — `test: cover focus recovery in study timer`; دُفع إلى الفرع الثابت.
+- **Commit تحديث ملف التسليم:** `e9ff9809dfc42fe7e4a81240953bdeeb97e9e15c` — `docs: record focus timer validation checks`; غيّر التوثيق فقط.
+- **Commit تسجيل حد النشر:** `1c8e76f816b18ee365fdee42a0c734d78b253deb` — `docs: note Vercel deployment quota limit`; غيّر التوثيق فقط.
+- **Commit أحدث ملف تسليم:** `65157d88b728f1d509d76208d4a358465b18d084` — `docs: record latest rate-limit check`; غيّر التوثيق فقط.
+- **محاذاة الاستئناف السابقة:** بدأ checkout محليًا عند `88f3c06` مع نسخ الملفات الأحدث كاختلافات محلية؛ فُحصت جميع الملفات tracked و379 ملفًا غير متتبع، وكانت مطابقة للبعيد بايتًا، ثم استُخدم `git reset --mixed origin/arena/01a1036f-deutschlern` للمحاذاة بلا تغيير محتوى.
+- **آخر HEAD مفحوص قبل متابعة اختبار التركيز:** `6b5626baf9af89828c26949a7c1d70eab8118a2a`؛ طابق الفرع البعيد وكانت الشجرة نظيفة قبل تعديل الاختبار.
+- **حالة الفرع بعد آخر دفع:** `HEAD` والبعيد متطابقان عند `65157d88b728f1d509d76208d4a358465b18d084`، وكانت الشجرة نظيفة بعد الدفع.
+- **PR #1 والرأس الحالي:** PR #1 `OPEN`, `merged: false`. نجح فحصا Vercel وVercel Preview Comments عند commit التطبيق/الاختبار `2321554b10ce969e642ddf76f4ee8e72a7e65663`. فشل فحص Vercel على commits التوثيق `e9ff980`, `1c8e76f`, و`65157d8` بسبب حد النشر المجاني: `Deployment rate limited — retry in 24 hours`; لا يدل ذلك على فشل اختبار التطبيق. أحدث رسالة حالة موثقة عند `65157d8` (2026-10-06 21:21 UTC) تؤكد حد النشر.
+- **معاينة Vercel:** آخر نشر ناجح على commit `2321554` هو `Ready`؛ العنوان `https://deutschlern-git-arena-01a1036f-6a6994-balinader-2671s-projects.vercel.app`. محاولة الفتح المباشر أعادت بوابة تسجيل الدخول إلى Vercel؛ لا يُعد ذلك فحصًا بصريًا. لم يُنشأ نشر جديد للرؤوس التوثيقية بسبب حد النشر.
+- **المعاينة المحلية:** الخادم الحالي بالعملية `deutschlern-timer-preview-229e1ea7` على المنفذ 8000؛ أعادت الصفحة وملفات التطبيق والمنهج HTTP 200. لا يتوفر متصفح آلي في بيئة التطوير.
+- **دفعة البند 6 التاريخية:** `4a9eaab` — `feat: add flexible daily learning plan`، على الأب `1ad0b192012e6316a1fd64f040564d9d5d27ded9`. دُفعت مع تحديثي التسليم أدناه؛ تحقّق من `git status`, `HEAD` والمرجع البعيد بعد الاستئناف.
+- **PR #1 بعد دفعة البند 6 (حالة تاريخية):** `OPEN` و`mergedAt: null` عند الرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. نجح `gh pr checks 1`: Vercel وVercel Preview Comments (`pass`). هذا الفحص سبق تحديث التسليم التوثيقي اللاحق؛ أعد التحقق من الرأس النهائي بعد دفعه. لا تدمج PR #1.
+- **المتبقي التالي:** تجربة المؤقت يدويًا في المعاينة الحية على متصفح/هاتف؛ لم تتوفر في بيئة التطوير أداة متصفح آلي، وفحص HTTP وحده لا يثبت العرض أو التفاعل. الخادم يعمل على المنفذ 8000. أعد فحص Vercel بعد انقضاء مهلة حد النشر (24 ساعة) أو عودة الحصة؛ فشل الرأس التوثيقي ليس فشلًا في التطبيق. لا تدمج PR #1.
+- **رأس بداية دفعة B2.12 التاريخية:** `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`، وكان مطابقًا لمرجع `origin/arena/01a1036f-deutschlern` وقتها.
+- **Commit إنتاج B2.12:** `9223083a0b0ed96622d5da6769b88b7f8ade7df3` — `feat: produce B2.12 assessment`، على الأب `2be5b3b69dbf607933d7b884f044eea8c7dfda0b`؛ دُفع إلى `origin/arena/01a1036f-deutschlern`.
+- **Commit تحديث التسليم:** `dc6c9ad39765035b95c7fa9bd7f587f7626919cb` — `docs: finalize B2.12 delivery handoff`، على الفرع نفسه بعد commit الإنتاج، ودُفع إلى `origin/arena/01a1036f-deutschlern`.
+- **Commit تسجيل نتائج PR:** `d836f0ffe935a6f2e423130a16285483ac08b514` — `docs: record final B2.12 PR checks`؛ دُفع على الفرع الثابت بعد تحديث التسليم.
+- **Commit المتابعة الأخير في سجل B2.12:** `5a43824202a3e58243a4778779ec6530788d1d3f` — `docs: update B2.12 handoff with latest checks`؛ دُفع إلى الفرع الثابت.
+- **Commit التسليم الأول بعد حفظ الجلسة:** `dd0e5a09bb38396e8af5877ac972d6942196d45a` — `docs: hand off local session persistence`؛ دُفع إلى الفرع الثابت، وكان الرأس الذي فُحصت عليه PR #1.
+- **حالة الفرع في نهاية سجل B2.12 السابق:** تطابق `HEAD` والفرع البعيد عند `5a43824202a3e58243a4779ec6530788d1d3f` وكانت الشجرة نظيفة؛ لا تمثل هذه الحالة رأس دفعة حفظ الجلسة.
+- **حالة PR #1 التاريخية على رأس B2.12:** `OPEN` وغير مدمجة. نجح Vercel وVercel Preview Comments وفق `gh pr checks 1 --watch --interval 5`. أعد الفحص على الرأس الحالي، ولا تدمج PR #1.
+
+## أحدث دفعة — قياس وقت الدراسة الفعلي (البند 7)
+
+استُبدل تسجيل مدة الدرس التقديرية بقياس مدة النشاط الفعلية داخل الدرس والمراجعة وبوابة A0، مع حفظ الجلسة حتى إذا غادر المتعلم قبل إكمال الدرس أو التقييم. لا يحسب التطبيق الوقت في الخلفية: يتوقف المؤقت عند إخفاء الصفحة أو فقدان التركيز أو خمس دقائق بلا تفاعل؛ يمكن إيقافه يدويًا، ويستأنف عند العودة إلى الصفحة النشطة/التفاعل، مع زر استئناف للجلسات المحفوظة بعد إعادة التحميل. تُحفظ القياسات كل 15 ثانية وعند التوقف أو مغادرة الصفحة، وتُقسم المدة بين الأيام عند عبور منتصف الليل. يسجل كل عنصر زمنًا بالمللي ثانية وتجميعًا يوميًا محليًا.
+
+تُحوّل حقول `minutes` القديمة إلى `legacyEstimatedMinutes` وتبقى مميزة كتقدير؛ لا تدخل في إجمالي الأسبوع الفعلي، وتظهر منفصلة في ملاحظة لوحة الوقت. أزيل الحذف الآلي بعد 60 يومًا؛ تبقى البيانات حتى يمسح المستخدم بيانات المتصفح أو يعيد ضبط التقدم، وتدخل نسخ JSON في التصدير والاسترداد. لا تُرسل سجلات الوقت إلى خادم. حالة `completed` في سجل الوقت تعني انتهاء مقطع التوقيت عند مغادرة سياق الدراسة، لا أن الدرس أو أهداف التعلم قد اكتملت.
+
+**الملفات المعدلة في هذه الدفعة (11):** `app.js`, `styles.css`, `service-worker.js` (Cache v18), `tools/test_study_time.cjs` (جديد), `tools/test_daily_plan.cjs`, `tools/test_progression.cjs`, `tools/test_session_persistence.cjs`, `README.md`, `data/course-improvement-plan.md`, `data/production-handoff.md`, و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`. لم تتغير مصادر المحتوى أو `data/course.json` أو ملفات الصوت؛ لذلك لم يُعَد بناء الحزمة ولم يُنتج/يُعَد أي صوت.
+
+### فحوص دفعة الوقت الفعلي
+
+| الأمر / الفحص | النتيجة |
+|---|---|
+| `node --check` على `app.js`, `service-worker.js`, `tools/test_progression.cjs`, `tools/test_session_persistence.cjs`, `tools/test_daily_plan.cjs`, `tools/test_study_time.cjs` | نجح في الملفات الستة. |
+| `node tools/test_study_time.cjs` | نجح: النشاط المقاس، حد الخمول 5 دقائق، الإيقاف والاستئناف اليدوي، إخفاء الصفحة وفقدان التركيز والعودة، استعادة جلسة غير مكتملة بعد إعادة التحميل، قسمة منتصف الليل، إجمالي أسبوعي فعلي فقط، فصل التقديرات القديمة، الاحتفاظ لما بعد 60 يومًا، وتصدير/استيراد JSON. |
+| `node tools/test_progression.cjs` | نجح؛ لم تتأثر أقفال المسار أو تقييمات المحتوى أو الأصول. |
+| `node tools/test_session_persistence.cjs` | نجح؛ حفظ الجلسة/بوابة A0 والنسخة الاحتياطية كما سبق. |
+| `node tools/test_daily_plan.cjs` | نجح؛ مراجعة المفردات والخطة اليومية والترحيل والاستئناف والنسخة الاحتياطية. |
+| `python3 tools/verify_course.py` | نجح؛ 53 درسًا، 428 عنوان تمرين، 55 قسم حوار، 754 مفردة، 53 تقييمًا جاهزًا، 530 سؤالًا و10 للبوابة، 109 مهمات أداء، و142 أصلًا/312 مقطعًا؛ HTML متوازن. |
+| `git diff --check` | نجح. |
+| معاينة HTTP عبر `python3 -m http.server 8000 --bind 0.0.0.0` | عادت `/`, `/app.js`, `/styles.css`, `/service-worker.js`, و`/data/course.json` بحالة 200. الخادم الحالي يعمل بالعملية `deutschlern-timer-preview-229e1ea7` على المنفذ 8000. لم تتوفر أداة متصفح آلي؛ لا يُعد فحص HTTP تحققًا بصريًا أو تفاعليًا. |
+
+**متابعة هذه الجولة (2026-10-06، متابعة تحقق فقط):** أُضيف إلى `tools/test_study_time.cjs` اختبار صريح لحدثي فقد التركيز `blur` والعودة `focus`: يثبت حفظ الزمن النشط قبل التوقف، وعدم احتساب فترة غياب التركيز، ثم استئناف العد بعد العودة. لا تغيير في منطق التطبيق أو المنهج أو الصوت. أُعيد تشغيل جميع اختبارات الوقت والتدرج وحفظ الجلسة والخطة اليومية والتحقق من المنهج وفحص الصياغة؛ كلها ناجحة. شُغلت معاينة HTTP على المنفذ 8000 وتحققت استجابة 200 للصفحة وملفات JavaScript وCSS والعامل بالخلفية وبيانات المنهج. لم يتوفر متصفح آلي، لذلك لا أدّعي تحققًا بصريًا؛ يبقى الاختبار اليدوي من واجهة المعاينة على حاسوب/هاتف مطلوبًا.
+
+**فحوص الاستئناف بعد محاذاة Git:** أُعيد تشغيل `node --check`، واختبارات `test_study_time`, `test_progression`, `test_session_persistence`, `test_daily_plan`, و`python3 tools/verify_course.py`، و`git diff --check`؛ نجحت جميعها. بعد ذلك أضيف اختبار `blur`/`focus` وأُعيدت جميع الفحوص ذات الصلة ونجحت.
+
+**سجل الدفع والفحص لهذه المتابعة:** commit التطبيق `02cfc352229e733e5ef6250988ef3b437ffe29c6`، يليه تسليمات التنفيذ والفحص `9fba9d81d2b62c7d4b774e6a74ff0677ec3cd5fa`, `ef86ecbd1d933df3285093a6d5040c996865a739`, `5ba5b210a6da1611f3ce1ac54b5082bdfb3910bb`, `8f647b5a6d4acccd1e5616a29f9dc088064fffd4`, و`6b5626baf9af89828c26949a7c1d70eab8118a2a`; ثم متابعة الاختبار `2321554b10ce969e642ddf76f4ee8e72a7e65663` والتسليمات التوثيقية `e9ff9809dfc42fe7e4a81240953bdeeb97e9e15c`, `1c8e76f816b18ee365fdee42a0c734d78b253deb`, و`65157d88b728f1d509d76208d4a358465b18d084`. كلها على `arena/01a1036f-deutschlern` ودُفعت. نجحت الاختبارات المحلية، ونجح فحصا Vercel على commit التطبيق/الاختبار `2321554`. فشل فحص Vercel على تحديثات التسليم التوثيقية بسبب حصة النشر المجانية (إعادة المحاولة بعد 24 ساعة)، لا بسبب الكود. PR #1 مفتوحة وغير مدمجة؛ أعد الفحص بعد استعادة الحصة، ولا تدمجها.
+
+**المتبقي:** تجربة المؤقت يدويًا عبر المعاينة على متصفح/هاتف، خصوصًا العودة من الخلفية وسلوك الخمول؛ وإعادة فحص Vercel عندما تنتهي مهلة 24 ساعة/تتجدد الحصة. يظل محتوى المنهج والمراجعة اللغوية/التعليمية والعمل دون اتصال ضمن الأعمال الأوسع. لا صوت في هذه الدفعة؛ أصول B1.9 تبقى معاينة بانتظار اعتماد المستخدم، ولا تُعد توليدها أو الادعاء بمراجعتها سمعيًا.
+
+## سجل سابق — تنفيذ خطة اليوم المرنة (البند 6)
+
+نُفذ البند 6 في `app.js` و`styles.css` دون حساب أو خدمة خارجية. تعرض لوحة اليوم مراجعة للمفردات التي سبق تعلمها وحان موعدها (بحد أقصى 12 بطاقة)، ثم هدف الدرس التالي المتاح، بترتيب أساسي واضح. لا تظهر للمبتدئ مفردات دروس لم يدرسها بعد. مهمة الدرس تعرض هدفه القابل للقياس، وتوضح أن الإكمال يمر بالشرح والتدريب والتقييم ومهام الأداء القائمة؛ ويعتمد وضع «أُنجز» على الإتقان الفعلي في النظام (الدرجة ومتطلبات الأداء)، لا على مجرد الضغط أو الوقت.
+
+تحفظ حالة الخطة (`state.dailyPlan`) محليًا وفي نسخة JSON: التاريخ، والمهام الأساسية، والحالة ومصدر الترحيل. يستطيع المتعلم تأجيل المهام الأساسية، أو تركها ومتابعتها لاحقًا؛ تبقى قابلة للاستئناف، وعند إنشاء خطة يوم جديد تعود غير المكتملة إلى حالة قابلة للمتابعة بلا عقوبة. بعد إنجاز كل الأساسيات يظهر الدرس/البوابة التالية كتوسع اختياري، ولا تضاف إلى متطلبات خطة اليوم. التقدير الافتراضي للمستخدم الجديد ساعتان (120 دقيقة) وقابل للتعديل من إدخال رقمي؛ ليس حدًا أو شرطًا للإنجاز. مدد الدروس وملخص الأسبوع ما زالا تقديريين، ولا يوجد قياس للوقت الفعلي في هذه الدفعة. رُفع Cache PWA إلى `deutsch-pfad-v17`.
+
+**Commit التطبيق:** `4a9eaabf449124563e69121234353964a11e2c67` — `feat: add flexible daily learning plan`، على الأب `1ad0b192012e6316a1fd64f040564d9d5d27ded9`، في الفرع الثابت `arena/01a1036f-deutschlern`. راجع سجل Git والتوثيق المحدّث لمعرفة رأس docs النهائي ونتيجة الدفع وفحوص PR.
+
+### الملفات التي تشملها دفعة البند 6 (6)
+
+1. `app.js` — تخزين الخطة، ترتيب المراجعة/الدرس، التأجيل والاستئناف والترحيل والتوسع الاختياري؛ وقصر المراجعة على مفردات الدروس التي سبق تعلمها أو إضافتها صراحةً.
+2. `styles.css` — واجهة خطة اليوم واستجابتها للهاتف.
+3. `service-worker.js` — رفع ذاكرة PWA من v16 إلى v17.
+4. `tools/test_daily_plan.cjs` — اختبار الخطة والتسلسل والترحيل والاستئناف واستقلال الهدف الزمني والنسخة الاحتياطية.
+5. `README.md` — تحديث الخصائص وأوامر التحقق.
+6. `data/course-improvement-plan.md` — تسجيل حالة البند 6، وإبقاء البند 7 التالي.
+
+### فحوص دفعة البند 6
+
+| الأمر / الفحص | النتيجة |
+|---|---|
+| `node --check app.js` و`node --check service-worker.js` و`node --check tools/test_daily_plan.cjs` و`node --check tools/test_session_persistence.cjs` و`node --check tools/test_progression.cjs` | نجحت كلها. |
+| `node tools/test_daily_plan.cjs` | نجح: مراجعة المفردات المستحقة من دروس مدروسة فقط، حتى 12 بطاقة، حفظ التقدم، تقدير زمني قابل للتعديل بلا سقف للتعلم، التأجيل/الترحيل/الاستئناف، المتابعة الاختيارية والنسخ الاحتياطي/الاستعادة. |
+| `node tools/test_session_persistence.cjs` | نجح؛ بقي حفظ الجلسة السابق سليمًا. |
+| `node tools/test_progression.cjs` | نجح؛ قفل التقدم وعتبة 80% وتقييمات المحتوى حتى B2.12 سليمة. |
+| `python3 tools/verify_course.py` | نجح؛ 53 درسًا، و428 عنوان تمرين، و754 مفردة، و53 تقييمًا جاهزًا، و109 مهمات، و142 أصلًا/312 مقطعًا، وHTML متوازن. |
+| `git diff --check` | نجح. لم تتغير ملفات المحتوى المولدة، لذلك لم يُعد بناء `data/course.json`. |
+| تشغيل المعاينة عبر `python3 -m http.server 8000 --bind 0.0.0.0` | بدأ الخادم على المنفذ 8000؛ أعادت `/` و`/app.js` و`/styles.css` و`/service-worker.js` حالة HTTP 200. هذا فحص طلبات محلية، لا اختبارًا بصريًا عبر متصفح. |
+| Git والفرع بعد دفع التطبيق والتسليم الأول | الفرع `arena/01a1036f-deutschlern`; كان `git status` نظيفًا، و`HEAD` و`origin/arena/01a1036f-deutschlern` متطابقين على `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. |
+| GitHub بعد دفع التطبيق والتسليم الأول | `gh pr view 1` أعاد `OPEN`, `mergedAt: null`, الفرع `arena/01a1036f-deutschlern`, والرأس `2bdc7fd8a4df6b2950a2b303839ffbc95dc99051`. `gh pr checks 1`: Vercel وVercel Preview Comments `pass`. بعد هذا الفحص أُجري تحديث توثيقي فقط؛ أعد الفحص على الرأس النهائي المسجل في Git عند الاستئناف. |
+
+لم يتغير صوت أو محتوى B1.9؛ لم تُولد ملفات صوت ولم تُجرَ مراجعة سمعية. تظل خمسة أصول B1.9 للمعاينة بانتظار اعتماد المستخدم.
+
+## سجل سابق — حفظ موضع الجلسة واستئنافها
+
+نُفّذ حفظ التوقف محليًا في `app.js` دون حساب أو خادم. يحتفظ `state.learningSessions` بمسودات منفصلة للدروس وبوابة A0، مع إصدار التقييم، والشاشة/الخطوة، ورقم السؤال، والاختيار، وحالة التحقق، وسجل الإجابات والدرجة. عند إعادة التحميل يستأنف التطبيق الشاشة والسؤال نفسيهما؛ وإذا عاد المتعلم إلى نظرة الدرس بعد إيقاف التقييم، يستطيع متابعة التقييم دون تصفير الإجابات. تحفظ أدلة الأداء والنصوص ومعايير التحقق في `performanceEvidence` كما سبق، ويُعاد حساب المهام المتبقية منها. أُضيفت لقطات الجلسات إلى نسخة JSON الاحتياطية واستردادها. تُرفض اللقطة القديمة أو غير المطابقة لإصدار/بنية التقييم. لا تُرسل الجلسات إلى خادم.
+
+**Commit التطبيق:** `c2140ef5350f16aab374893e5a652a48cbfbbfb7` — `feat: persist lesson sessions locally`، على الأب `bdfdca154fc12dbaef785b82a955504f03362b78`، في الفرع الثابت. دُفع التطبيق وملفا التسليم إلى `origin/arena/01a1036f-deutschlern`؛ كان رأس الفرع عند فحص GitHub `dd0e5a09bb38396e8af5877ac972d6942196d45a`. لا تُعد الدفعة مدمجة قبل دمج PR، ولا تدمج PR #1. إذا دفعت تحديثًا توثيقيًا بعد هذا الرأس، أعد فحص PR على الرأس الجديد.
+
+### الملفات التي تشملها دفعة حفظ الجلسة (5)
+
+1. `app.js` — حفظ الجلسات والتحقق منها واستعادتها، واستئناف التقييم والمهام.
+2. `service-worker.js` — رفع اسم ذاكرة PWA إلى `deutsch-pfad-v16` لتحديث ملفات التطبيق المخزنة.
+3. `tools/test_session_persistence.cjs` — اختبار جديد لإعادة التحميل والاختيار وسجل الإجابات والتوقف والاستئناف والمهام والبوابة والنسخة الاحتياطية ورفض إصدار قديم.
+4. `README.md` — توثيق الميزة وأمر اختبارها.
+5. `data/course-improvement-plan.md` — تحديث الخطة إلى 2.4 وتسجيل حالة البند 5 والخطوتين التاليتين.
+
+ملفا التسليم المحدّثان لهذه الدفعة هما `data/production-handoff.md` وهذا الملف في جذر المشروع: `PROFESSIONAL_CONTINUATION_PROMPT_AR.md`.
+
+### فحوص دفعة حفظ الجلسة
+
+| الأمر / الفحص | النتيجة |
+|---|---|
+| `node --check app.js` و`node --check tools/test_progression.cjs` و`node --check tools/test_session_persistence.cjs` | نجحت كلها. |
+| `node tools/test_progression.cjs` | نجح؛ حواجز التقدم وعتبة 80% وتغطية المحتوى حتى B2.12 بقيت سليمة. |
+| `node tools/test_session_persistence.cjs` | نجح؛ استعادة الشاشة والسؤال والاختيار وسجل الإجابات، استئناف التقييم الموقوف، مهمة أداء منجزة ومهام متبقية، تصدير/استيراد JSON، بوابة A0، ورفض إصدار تقييم قديم. |
+| `python3 tools/verify_course.py` | نجح؛ 53 درسًا، و53 تقييمًا، و530 سؤالًا للدروس و10 للبوابة، و109 مهمات، و142 أصلًا/312 مقطعًا (137 `ready` و5 أصول B1.9 للمعاينة)، وHTML متوازن. |
+| `git diff --check` و`git diff --cached --check` | نجحا. لم تُعَد بناء `data/course.json` لأن المحتوى والتقييمات لم تتغير. |
+| `gh pr checks 1 --watch --interval 5` ثم `gh pr checks 1` | Vercel وVercel Preview Comments نجحا على الرأس `dd0e5a09bb38396e8af5877ac972d6942196d45a`. `gh pr view 1`: PR #1 `OPEN`, `mergedAt: null`, head `dd0e5a09bb38396e8af5877ac972d6942196d45a`. أعد الفحص بعد أي دفع أحدث، ولا تدمجها. |
+
+### ما كان باقيًا بعد حفظ الجلسة (سجل تاريخي)
+
+1. كان البند 6 (خطة اليوم المرنة) هو التالي؛ أُنجز في الدفعة الحالية `4a9eaabf449124563e69121234353964a11e2c67` كما يوثق القسم السابق.
+2. المتبقي التطبيقي التالي هو البند 7: قياس زمن الدراسة الفعلي، وإيقاف الحساب عند التوقف/الخمول، وعدم استخدام مدة الدرس المقدرة بديلًا عنه.
+3. اختبر الواجهة على أجهزة ومتصفحات والعمل دون اتصال لاحقًا؛ اختبارات VM وفحص HTTP لا يثبتان تجربة الأجهزة.
+4. لم يُنتج صوت ولم تُعدّل الأصول؛ المحتوى والتقييم والتطبيق أولًا، ثم الصوت.
+
+## سجل دفعة B2.12 السابقة — محتوى وتقييم
+
+أُنتج محتوى وتقييم B2.12 للهدف `DL-B2-12-G01`. التقييم جاهز (`status: ready`, `version: b2-12-v1`) من 10 أسئلة ومهمتي أداء وعتبة إتقان 80%. يظل الدرس مقفلًا حتى إتقان B2.11، ثم يفتحه مسار التدرج. لم يُنتج صوت، ولم تُعدّل أصول صوت قائمة، ولم أستمع إلى التسجيلات.
+
+## المحتوى والتقييم
+
+- قُرئ كامل المصدر `content/B2/lesson-12-leisure-media-reported-speech.md`، وربط العمل بالهدف `DL-B2-12-G01` وكتل المصدر T01–T08.
+- عُدّل الحوار ليفصل رأي الضيف المباشر عن الكلام المنقول؛ فلا يظهر رأيه نفسه كأنه خبر منسوب إلى مصدر آخر. عولج التباس `hörten` مع صيغة Präteritum ببديل أوضح مثل `würden hören` مع توضيح الصلة بين الصيغتين.
+- عُدّل T08 ليتيح إعداد ملخص خيالي من خمس إلى ست جمل، يتضمن ثلاثة أقوال منسوبة ورأيًا شخصيًا منفصلًا بوضوح. يقبل الكتابة أو الإلقاء الشفهي؛ وللمتعلم الفردي بديل كتابة النص وقراءته بصوت واضح دون تسجيل أو إرسال صوت.
+- التقييم `content/B2/lesson-12-leisure-media-reported-speech.assessment.json` يضم 10 أسئلة Q01–Q10 للهدف نفسه، بعتبة 80%، مع معايير أداء ظاهرة وتحقق ذاتي محلي. لا يصحح التطبيق الكتابة المفتوحة أو النطق آليًا، ولا يتطلب التقييم MP3.
+- روابط الأسئلة بكتل المصدر: Q01→T01؛ Q02–Q03→T02؛ Q04–Q05→T03؛ Q06–Q07→T05؛ Q08→T06؛ Q09→T07؛ Q10→T04. توزيع مواضع الإجابات الصحيحة 3/4/3.
+- روابط مهمتي الأداء: P01→T08؛ P02→T05/T06/T08. تدرب P02 على قراءة النص المكتوب والاستفادة من المادة المصدرية؛ لا يلزم ملف صوتي.
+- لا تغيّر معرّفات المهام الثابتة، ولا تفتح B2.12 بتجاوز B2.11. اختبار التدرج يثبت قفل B2.12 قبل إتقان B2.11 وفتحه بعده.
+
+## الملفات التي تشملها دفعة B2.12 (14)
+
+1. `content/B2/lesson-12-leisure-media-reported-speech.md`
+2. `content/B2/lesson-12-leisure-media-reported-speech.assessment.json` — تقييم جديد.
+3. `data/course.json` — حزمة مولدة؛ لا تحررها يدويًا.
+4. `data/curriculum-file-audit.csv`
+5. `data/production-task-catalog.csv`
+6. `tools/test_progression.cjs`
+7. `README.md`
+8. `content/PROGRESS.md`
+9. `data/curriculum-audit.md`
+10. `data/curriculum-production-matrix.md` — محدّثة إلى 1.4.
+11. `data/course-improvement-plan.md` — محدّثة إلى 2.3.
+12. `data/source-plan.md`
+13. `data/production-handoff.md`
+14. `PROFESSIONAL_CONTINUATION_PROMPT_AR.md`
+
+## المجاميع الحالية
+
+- 53/53 تقييمًا جاهزًا؛ للدروس 530 سؤالًا و106 مهمات أداء، وللبوابة 10 أسئلة و3 مهمات.
+- 1077 معرّفًا فريدًا في الفهرس: 428 T و540 Q و109 P.
+- عتبة الإتقان 80%. كل تقييم محلي، ومهمات الأداء ذاتية التحقق؛ لا تسجيل مطلوبًا ولا تصحيح آلي للنطق أو الكتابة المفتوحة.
+- الصوت لم يتغير: 142 أصلًا و312 مقطعًا؛ 137 أصلًا `ready` وخمسة أصول B1.9 (10 مقاطع) للمعاينة بانتظار الاعتماد. لا تدّعِ الاستماع أو المراجعة السمعية؛ فحوص MP3 بنيوية فقط.
+
+## فحوص دفعة B2.12 (سجل تاريخي)
+
+الجدول التالي يوثق فحوص دفعة B2.12 السابقة، لا دفعة حفظ الجلسة الحالية. لا تنقل نتائجه إلى رأس جديد دون إعادة الفحص.
+
+| الأمر / الفحص | النتيجة |
+|---|---|
+| تحليل تقييم B2.12 بـ`python3 -m json.tool` | نجح. |
+| `python3 tools/build_course.py` | نجح؛ بُنيت 53 وحدة، وحجم `data/course.json` هو **1,583,902 بايت**. |
+| `python3 tools/verify_course.py` | نجح: 53 درسًا مطابقة للمصادر، و428 عنوان تمرين و55 قسم حوار و53 مفتاح إجابة و754 مفردة؛ 53/53 تقييمًا جاهزًا، و530 سؤالًا للدروس و10 للبوابة، و109 مهمات عملية؛ 142 أصلًا و312 مقطعًا بإطارات سليمة. اجتاز HTML التحقق البنيوي. |
+| `node --check app.js` و`node --check tools/test_progression.cjs` | نجح فحص الصياغة. |
+| `node tools/test_progression.cjs` | نجح؛ أثبت نقطة البدء A0، وعتبة 80%، والتدرج والقفل المتسلسل حتى B2.12، وقفل B2.12 قبل إتقان B2.11 وفتحه بعده، إضافة إلى اختبارات المهام والأصول السابقة. |
+| التدقيق المستقل لـJSON والكتالوج وروابط Q/P | نجح: تقييم `b2-12-v1` وعتبة 80% والهدف والروابط المتوقعة؛ 1077 معرّفًا فريدًا (428 T + 540 Q + 109 P)؛ 20 معرفًا لـB2.12 (8 T و10 Q و2 P)، بلا تكرار؛ المهمتان بلا اعتماد على الصوت. |
+| `git diff --check` | نجح بعد إزالة المسافات الزائدة الجديدة. |
+| Git وGitHub بعد دفع أحدث تحديث | على الفرع الثابت تطابق المحلي والبعيد عند `5a43824202a3e58243a4778779ec6530788d1d3f` وكانت الشجرة نظيفة. PR #1 `OPEN` وغير مدمجة؛ نجح Vercel وVercel Preview Comments على هذا الرأس. لا تدمجها. |
+
+## المتبقي بعد B2.12 وقتها — سجل تاريخي
+
+عند ختام دفعة B2.12 كان حفظ موضع الجلسة وخطة اليوم والوقت الفعلي كلها نقاطًا مفتوحة. عولج حفظ الجلسة في `c2140ef`، ونُفذ البند 6 في `4a9eaab` كما توثق الدفعتان أعلاه. البند 7 لقياس الوقت الفعلي، والمراجعة التعليمية/اللغوية واختبار الأجهزة والعمل دون اتصال، ما زالت أعمالًا لاحقة. تفاصيل فحوص B2.12 وسجل commitsه مرجع تاريخي، وليست تقرير حالة للفرع الحالي.
+
+## قرارات مستمرة
+
+- اشرح بالعربية الواضحة والبسيطة. لا تصف دفعة بأنها مكتملة قبل فحصها ورفعها ودمجها؛ لا تدمج PR #1.
+- المحتوى والتقييم والتطبيق أولًا، ثم الصوت. لا تنتج صوتًا ما لم يطلب المستخدم ذلك. لا تتجاوز 10 طلبات توليد صوت في أي رد؛ إذا ظهرت رسالة حدّ التوليد فتوقف ولا تعاود المحاولة في الرد نفسه.
+- لا تُعد توليد ملفات صوت موجودة، ومنها أصول B1.9 الحالية. لا تُخفِ التسجيلات ولا تغيّر روابطها. أصول B1.9 معاينة فقط بانتظار اعتماد المستخدم؛ حالة `ready` وشارة عربية مثل «نهائي» بعد الاعتماد فقط. لا تدّعِ مراجعة سمعية؛ الفحص البنيوي لا يثبت جودة الصوت أو حق الاستخدام.
+- احفظ معرّفات المهام وروابط المصدر، وعتبة 80%، والتدرج المتسلسل، ونقطة البداية A0. أعد بناء `data/course.json` بالأداة ولا تحرره يدويًا.
+- لا تدّعِ مطابقة رسمية لمدرسة أو امتحان أو CEFR، ولا تنسخ كتابًا أو تدّعِ مراجعة مصدر غير متاح. اجعل السيناريوهات والبيانات خيالية.
+- في `content/PROGRESS.md` أبقِ إدخالات B2.6 تاريخية كما كانت عند إنجازها؛ حدّث ملخص كل دفعة في موضعها الحالي.
+- تابع على `arena/01a1036f-deutschlern` فقط. افحص كل التغييرات المحلية قبل أي عملية تسوية Git، ولا تبدّل الفرع.
+- حافظ على ربط A2.7 Q08 بالمصدر T05 وفحوص اتساق A2.9. تفاصيل الأصوات المحفوظة في `PROFESSIONAL_CONTINUATION_PROMPT_AR.md`.

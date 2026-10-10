@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-08-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-08-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-08-G01 وكتل المصدر T01–T07: مفردات البيانات الغذائية، واختيار werden/sein، والتمييز بين Vorgangspassiv وZustandspassiv، وقراءة الجدول ونص الاستماع المكتوب والتحويل بحسب المعنى.",
+      "ترتبط P01 مباشرةً بـT08 بوصفها مهمة كتابية خالصة (modality: [\"writing\"]، speakAloud: false)؛ وتدمج P02 بيانات قراءة T05 وتدريب الاستماع T06 واختيار المبني للمجهول في T04 والتحويل في T07 والإنتاج في T08 بوصفها مهمة كتابية وشفهية متكاملة (modality: [\"writing\", \"speaking\"]، speakAloud: true).",
+      "تتضمن وثيقة الدرس في القسم 8 نموذجين مكتوبين كاملين للمهمتين P01 وP02؛ وتبقى جميع الأرقام خيالية للتدريب اللغوي دون تقديم نصيحة غذائية أو صحية ودون الاعتماد على تشغيل MP3 أو خدمة خارجية."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-08-Q01",
+      "sourceTaskIds": [
+        "DL-B2-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "مفردات البيانات",
+        "der Durchschnitt"
+      ],
+      "prompt": "ما معنى **der Durchschnitt** في سياق جدول القيم؟",
+      "options": [
+        "نسبة أو حصة من الكل",
+        "عينة تُستخدم في القياس",
+        "قيمة تمثل وسط مجموعة من القيم"
+      ],
+      "answerIndex": 2,
+      "explanation": "يُستخدم **der Durchschnitt** (المتوسّط الحسابي، نحو: **im Durchschnitt**) للدلالة على القيمة الوسطى المحسوبة من عدة قيم، بينما **der Anteil** يعني النسبة/الحصة و**die Probe** تعني العيّنة."
+    },
+    {
+      "id": "DL-B2-08-Q02",
+      "sourceTaskIds": [
+        "DL-B2-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "Vorgangspassiv",
+        "عملية جارية"
+      ],
+      "prompt": "اختر الفعل المساعد المناسب: **Die Zutaten ___ gerade abgewogen.** (عملية جارية)",
+      "options": [
+        "werden",
+        "sind",
+        "ist"
+      ],
+      "answerIndex": 0,
+      "explanation": "تصف الجملة عملية وزن تجري الآن (**gerade**)، لذا نستخدم **Vorgangspassiv** (**werden + Partizip II**) مع مطابقة الجمع **Die Zutaten**: **Die Zutaten werden gerade abgewogen.**"
+    },
+    {
+      "id": "DL-B2-08-Q03",
+      "sourceTaskIds": [
+        "DL-B2-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "Zustandspassiv",
+        "حالة ناتجة"
+      ],
+      "prompt": "أكمل بما يصف الحالة بعد اكتمال الوزن: **Die Zutaten ___ schon abgewogen und bereit.**",
+      "options": [
+        "werden",
+        "sind",
+        "ist"
+      ],
+      "answerIndex": 1,
+      "explanation": "المكوّنات موزونة وجاهزة (**schon abgewogen und bereit**)؛ هذه حالة ناتجة تُصاغ بـ**Zustandspassiv** (**sein + Partizip II**)، ولأن الفاعل **Die Zutaten** جمع نختار **sind**."
+    },
+    {
+      "id": "DL-B2-08-Q04",
+      "sourceTaskIds": [
+        "DL-B2-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "تمييز نوع المبني للمجهول",
+        "Zustandspassiv"
+      ],
+      "prompt": "ما نوع الجملة؟ **Die Proben sind gekennzeichnet.**",
+      "options": [
+        "Vorgangspassiv — إجراء جارٍ",
+        "Zustandspassiv — حالة ناتجة",
+        "Aktiv — صيغة المعلوم"
+      ],
+      "answerIndex": 1,
+      "explanation": "تصف الصيغة **sind gekennzeichnet** (**sein + Partizip II** من الفعل **kennzeichnen**) الحالة الناتجة للعيّنات بعد وضع العلامات عليها؛ لذلك هي **Zustandspassiv**."
+    },
+    {
+      "id": "DL-B2-08-Q05",
+      "sourceTaskIds": [
+        "DL-B2-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "تمييز نوع المبني للمجهول",
+        "Vorgangspassiv"
+      ],
+      "prompt": "ما نوع الجملة؟ **Der Nährwert wird erfasst.**",
+      "options": [
+        "Aktiv — صيغة المعلوم",
+        "Zustandspassiv — حالة ناتجة",
+        "Vorgangspassiv — عملية جارية"
+      ],
+      "answerIndex": 2,
+      "explanation": "تصف الجملة إجراء رصد القيمة الغذائية باستخدام **wird + Partizip II** (**erfasst** بدون **ge-** لأن الفعل **erfassen** غير منفصل)؛ لذلك هي **Vorgangspassiv**."
+    },
+    {
+      "id": "DL-B2-08-Q06",
+      "sourceTaskIds": [
+        "DL-B2-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "اختيار الفعل المساعد حسب المعنى",
+        "عملية جارية"
+      ],
+      "prompt": "اختر الصيغة التي تدل على أن إدخال القياسات يجري الآن: **Die Messwerte ___ gerade in eine Tabelle eingetragen.**",
+      "options": [
+        "werden",
+        "sind",
+        "war"
+      ],
+      "answerIndex": 0,
+      "explanation": "القرينة **gerade** مع اتجاه الإدخال (**in eine Tabelle**) تدل على إجراء جارٍ في المضارع مع الفاعل الجمع **Die Messwerte**؛ نستخدم **werden + Partizip II** (**werden ... eingetragen**)."
+    },
+    {
+      "id": "DL-B2-08-Q07",
+      "sourceTaskIds": [
+        "DL-B2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "قراءة قيم الجدول"
+      ],
+      "prompt": "بحسب قراءة T05، ما القيم الافتراضية للمزيج B لكل 100 غرام؟",
+      "options": [
+        "8 g Zucker و4 g Ballaststoffe",
+        "11 g Zucker و4 g Ballaststoffe",
+        "11 g Zucker و6 g Ballaststoffe"
+      ],
+      "answerIndex": 1,
+      "explanation": "يعرض الجدول الخيالي للمزيج **B** مقدار **11 g** من السكر (**Zuckergehalt**) و**4 g** من الألياف (**Ballaststoffe**) لكل 100 غرام، مقابل **8 g** سكر و**6 g** ألياف للمزيج **A**."
+    },
+    {
+      "id": "DL-B2-08-Q08",
+      "sourceTaskIds": [
+        "DL-B2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "الحالة النهائية للجدول"
+      ],
+      "prompt": "ماذا يحدث للجدول بعد المراجعة في قراءة T05؟",
+      "options": [
+        "تُعتمد أرقامه توصيةً غذائية شخصية.",
+        "تُترك بياناته دون مراجعة.",
+        "يُعتمد للتدريب اللغوي بعد التحقق منه."
+      ],
+      "answerIndex": 2,
+      "explanation": "ينصّ نص القراءة بصيغة **Zustandspassiv** على أنه بعد المراجعة (**Nach der Kontrolle ist die Tabelle für die Sprachübung freigegeben**) يصبح الجدول معتمدًا للتدريب اللغوي فقط، ولا يُعدّ توصية غذائية شخصية."
+    },
+    {
+      "id": "DL-B2-08-Q09",
+      "sourceTaskIds": [
+        "DL-B2-08-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "التمييز بين الفحص والتحليل"
+      ],
+      "prompt": "بحسب النص المكتوب لتدريب الاستماع T06، ما وضع النتائج في النهاية؟",
+      "options": [
+        "لم تُحلّل بعد.",
+        "حُلّلت بالكامل وأُعلنت توصية غذائية.",
+        "لم تُوزن المكوّنات أو تُسجّل العينات."
+      ],
+      "answerIndex": 0,
+      "explanation": "في نهاية نص الاستماع يرد بصيغة **Zustandspassiv**: **Am Ende ist die Tabelle geprüft, aber die Ergebnisse sind noch nicht ausgewertet**؛ أي إن الجدول مفحوص، لكن النتائج لم تُحلَّل بعد وستُناقش غدًا."
+    },
+    {
+      "id": "DL-B2-08-Q10",
+      "sourceTaskIds": [
+        "DL-B2-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "skillTags": [
+        "تحويل بحسب المعنى",
+        "Vorgangspassiv"
+      ],
+      "prompt": "اختر تحويلًا يحافظ على معنى الإجراء الجاري: **Man trägt die Werte jetzt in die Tabelle ein.**",
+      "options": [
+        "Die Werte werden in die Tabelle eintragen.",
+        "Die Werte werden in die Tabelle eingetragen.",
+        "Die Werte sind in die Tabelle eingetragen."
+      ],
+      "answerIndex": 1,
+      "explanation": "للتعبير عن الإجراء الجاري (**jetzt**) نستخدم **Vorgangspassiv** (**werden + Partizip II**) من الفعل المنفصل **eintragen**: **Die Werte werden in die Tabelle eingetragen.** أما **sind ... eingetragen** فتصف الحالة الناتجة بعد انتهاء الإدخال."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-08-P01",
+      "sourceTaskIds": [
+        "DL-B2-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب من 5 إلى 6 جمل ألمانية عن تجربة غذائية خيالية في مطبخ تدريبي (التمرين 8-أ). استخدم **Vorgangspassiv** (**werden + Partizip II**) مرتين على الأقل لوصف خطوات الفحص (مثل وزن المكوّنات، ووسم العيّنات، وتسجيل القيم)، واستخدم **Zustandspassiv** (**sein + Partizip II**) مرةً على الأقل لوصف حالة ناتجة منتهية (مثل جاهزية المكوّنات أو الجدول). وضّح صراحةً أن الأرقام افتراضية للتدريب اللغوي وليست توصية غذائية أو صحية شخصية.",
+      "criteria": {
+        "taskCompletion": "من 5 إلى 6 جمل ألمانية عن تجربة غذائية خيالية، تتضمن خطوتين على الأقل بصيغة Vorgangspassiv وجملة واحدة على الأقل بصيغة Zustandspassiv.",
+        "meaningClarity": "يُفهم تسلسل خطوات التجربة والتمييز بين الإجراء الجاري والحالة الناتجة بعد اكتماله، مع النصّ صراحةً على أن البيانات خيالية للتدريب اللغوي وليست توصية صحية شخصية.",
+        "targetSkill": "يختار werden أو sein وفق المعنى ويطابقهما مع الفاعل مفردًا وجمعًا، ويصوغ Partizip II في نهاية الجملة بصورة صحيحة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-08-P02",
+      "sourceTaskIds": [
+        "DL-B2-08-T04",
+        "DL-B2-08-T05",
+        "DL-B2-08-T06",
+        "DL-B2-08-T07",
+        "DL-B2-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-08-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى قراءة T05 ونص الاستماع T06، اكتب إحاطة من 5 إلى 6 جمل ألمانية لمتعلم آخر ثم اقرأها بصوت واضح (التمرين 8-ب). اختر المزيج A أو B وانقل بدقة قيمتَي السكر والألياف لكل 100 غرام، ثم اشرح خطوتين على الأقل من جمع القيم بـ**Vorgangspassiv** والحالة النهائية للجدول والنتائج بـ**Zustandspassiv** (مثل أن الجدول مفحوص ومعتمد للتدريب بينما النتائج ليست محلّلة بالكامل بعد). اذكر أن الجدول خيالي للتدريب اللغوي ولا تقدّم نصيحة غذائية أو صحية شخصية. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة من 5 إلى 6 جمل تذكر قيمتَي السكر والألياف الصحيحتين لمزيج واحد لكل 100 غرام، وخطوتين على الأقل بـVorgangspassiv، وحالة الجدول/النتائج بـZustandspassiv.",
+        "meaningClarity": "تُعرض البيانات بوصفها افتراضية للتدريب اللغوي؛ وتُفهم مراحل الوزن والوسم والإدخال والفحص والجاهزية دون استنتاج غذائي أو صحي شخصي.",
+        "targetSkill": "يطابق الفعل المساعد مع المعنى والفاعل: werden/wird لخطوة الإجراء وsein (ist/sind) للحالة الناتجة، ويصوغ Partizip II وترتيب الجملة بصورة سليمة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

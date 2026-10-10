@@ -1,0 +1,1316 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-01-routines-abilities-experiences",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-01-v2",
+  "unitCount": 125,
+  "exerciseSubItemCount": 37,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "TEMP",
+      "title": "Lingolia Temporale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/temporal",
+      "scope": "seit زمن من الماضي إلى الآن، و vor نقطة تسبق الآن بمقدار معلوم؛ كلاهما مع Dativ في هذا الاستعمال. لم نعتمد تقييد um إلى 12 في جدول الصفحة؛ليس موضوع هذه المراجعة ولا قاعدة ننقلها.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "PERF",
+      "title": "Lingolia Perfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+      "scope": "فعل haben/sein مصرف و Partizip II؛الانتقال دون مفعول مباشر،والصيغ المنفصلة وغير المنفصلة و-ieren. ذكر بدء الدورة لا يثبت انتهاء الدورة،ولا نحصر كل استعمال Perfekt في تعريف مبسط واحد.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "PART",
+      "title": "Duden teilnehmen",
+      "url": "https://www.duden.de/rechtschreibung/teilnehmen",
+      "scope": "المشاركة كمتعلم،an مع اسم النشاط؛nimmt teil/hat teilgenommen. فصل teil عن الفعل لا يعني أن an حرف الجر جزء منفصل منه.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "START",
+      "title": "Duden anfangen",
+      "url": "https://www.duden.de/rechtschreibung/anfangen",
+      "scope": "البدء واستعمال مفعول مباشر أو mit،والتصريف المنفصل و Perfekt مع hat؛لا معنى الانتهاء.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "تصريف können مع الأشخاص والمصدر معه؛لا تعميمه على تركيب Perfekt مع haben.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia Hauptsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "الفعل المصرف في الموقع الثاني وغير المصرف آخر النمط الخبري الرئيسي المدروس؛الموقع كتلة نحوية،ولا نحكم بخطأ كل ترتيب آخر خارج المطلوب.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "SEP",
+      "title": "Lingolia Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "فصل البادئة في الخبرية البسيطة وإدخال ge في Partizip II للفعل المنفصل؛تمييز beginnen عن anfangen.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "DAT",
+      "title": "Lingolia Deklination",
+      "url": "https://deutsch.lingolia.com/de/grammatik/nomen/deklination",
+      "scope": "جدول Dativ: einem/einer؛الجمع يضيف n إن لم ينتهِ بـ n أو s. وسم f الخاطئ بعد das Kleid في مثال الصفحة ليس دليلًا؛استُعمل الجدول الصحيح.",
+      "access": "full_fetched_page"
+    },
+    {
+      "id": "SINCE",
+      "title": "Duden seitdem (Adverb)",
+      "url": "https://www.duden.de/rechtschreibung/seitdem_seither_von_da_an",
+      "scope": "منذ ذلك الوقت؛مدخل الظرف يميزه عن مدخل أداة الربط. المقصود Seitdem lernt sie في النص،لا درس لكل الجمل التابعة.",
+      "access": "full_fetched_page"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/seitdem",
+      "reason": "404؛ليس دليلًا لغويًا."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/seitdem_Adverb",
+      "reason": "404؛استعمل رابطالظرف الفعلي."
+    },
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/nomen/deklination/dativ",
+      "reason": "Forward page not found؛استعملت صفحةDeklination وجدولDativ."
+    }
+  ],
+  "researchNotes": [
+    "قُرئت الصفحات التسع كاملة. نتائج البحث لتحديد رابط seitdem لا تُحسب مرجعًا مقروءًا مستقلًا.",
+    "وثقت حدود الأجزاء غير المعتمدة في صفحتي temporal و Deklination بدل نسخ كل قول في الصفحة."
+  ],
+  "limitations": [
+    "125 وحدة و 37 بندًا أو مطلبًا متداخلة، لا 125 مهارة مستقلة. المفردات وأصول الصوت تعيد تغطية أجزاء من المراجعة النصية.",
+    "المراجع التسعة للقواعد والمعاني المحددة؛ لا مدخل قاموسي منفصل لكل مفردة أو ترجمة. راجع المساعد الاستدلالات النصية.",
+    "خمسة أصول و 10 مقاطع محفوظة دون استماع أو توليد أو تغيير للاعتماد.",
+    "الطول والإقرار والبنية لا تثبت جودة الألمانية أو النطق أو الاستماع المستقل. لا شهادة CEFR/WCAG ولا اشتراط مراجع بشري."
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-01-routines-abilities-experiences.md": "fe581f5d5c20ba5c84e9eef5ef2b1ff3c4e47376f2db9e3af50e0e66ad36a18e",
+    "content/A2/lesson-01-routines-abilities-experiences.assessment.json": "b91d935e29fa40c5aa0c77c3c53ccd5cc3d84fcb4cf1f6b7e218267f84d1de14"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-01-AUD-PHR-01": "09df49450bbe7770f45490073d719a6cfeadb7f4ba635e5559393f7f0290abfc",
+    "DL-A2-01-AUD-DLG-01": "9a72a9d8acd3b0e3c114bbd5c83298ff9f820ca7d95b770cfad23006dfe726b5",
+    "DL-A2-01-AUD-READ-01": "dfb518215fa3b1a680289d0feb55f84ac562ed65237a463ce5abbc7509a7c010",
+    "DL-A2-01-AUD-LST-01": "dc895601b3d956b22c07a5b1fdc6dec5b7084620bc0c4994529678940de7149d",
+    "DL-A2-01-AUD-MODEL-01": "61ababbcd490b4e3fed851519d21c9df147302e45d97db15d8a25716fa6e96b1"
+  },
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "الهدف والوقت",
+      "finding": "الروتين والخبرة والقدرة ومدة الاستمرار؛35–40 دقيقة تقدير مرن،والاستماع اختياري.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "seit وvor",
+      "finding": "حُذف القول إن vor يعني انتهاء المدة أو النشاط؛هو وقت سابق في هذا الاستعمال. بدء الدورة قد يعقبه استمرار التعلم.",
+      "sourceIds": [
+        "TEMP",
+        "START"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "Dativ",
+      "finding": "جُمعت حالة seit و vor الزمانية معأمثلة einer/einem/Monaten وتفسير n؛لا قاعدة عمياء بإضافة n لكل جمع.",
+      "sourceIds": [
+        "TEMP",
+        "DAT"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "Perfekt",
+      "finding": "مساعد مصرف و Partizip II؛لا مصدر بعد haben في نمطنا. يمكن ذكر البداية ثم استمرار أثرها أو نشاطها.",
+      "sourceIds": [
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "الأفعال المنفصلة",
+      "finding": "anfangen و teilnehmen منفصلان،beginnen غير منفصل؛an في an einem Kurs حرف جر لا جزء منفصل من nehmen.",
+      "sourceIds": [
+        "SEP",
+        "START",
+        "PART"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "الترتيب",
+      "finding": "قُيد بالنمط الرئيسي المدروس وحددت بدايات T05؛nicht jeder andere Satz ist falsch لا يعني قبول مشتت يصرف lesen بعد kann.",
+      "sourceIds": [
+        "MAIN",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "seitdem",
+      "finding": "ظرف يعود إلى بداية الدورة؛ليس رجوعًا إلى السكن منذ سنة،ولا أداة ربط تستدعي نفس الترتيب في كل استعمال.",
+      "sourceIds": [
+        "SINCE"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "دليل النص",
+      "finding": "تعارض 7/9 ساعات صريح في T06.2 بدل افتراض أنها لا تعمل عملًا ثانيًا؛حُفظت الكلمات المسجلة دون تغيير.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "المهمتان",
+      "finding": "T08 أ/P01 أربع جمل مع الجهر؛T08 ب/P02 أربع جمل كتابة فقط مع المشاركة الأسبوعية؛المصدر والمعايير والنموذجان متطابقون.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-10",
+      "text": "حدود القياس والحفظ",
+      "finding": "لا تصحيح آلي للغة أو النطق ولا شهادة A2؛الخصوصية والصوت محفوظان. سجل v1 يبقى تاريخيًا ولا يحقق v2 أو يفتح A2.2.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Alltag | — | الحياة اليومية |",
+      "finding": "Alltag مذكر بمعنى الحياة اليومية؛لم يطلب جمعًا هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Erfahrung | die Erfahrungen | التجربة |",
+      "finding": "Erfahrung مؤنث وجمعه Erfahrungen؛خبرة أو تجربة بحسب السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Fähigkeit | die Fähigkeiten | القدرة |",
+      "finding": "Fähigkeit مؤنث وجمعه Fähigkeiten؛قدرة لا تكرار نشاط.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Sprachkurs | die Sprachkurse | دورة اللغة |",
+      "finding": "Sprachkurs مذكر وجمعه Sprachkurse؛دورة لغة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Bäckerei | die Bäckereien | المخبز |",
+      "finding": "Bäckerei مؤنث وجمعه Bäckereien؛المخبز مكان عمل النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| beginnen | beginnt | يبدأ |",
+      "finding": "beginnen غير منفصل؛beginnt مع الغائب المفرد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| anfangen | fängt an | يبدأ |",
+      "finding": "anfangen منفصل؛fängt an للغائب المفرد،لا anfangt.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| teilnehmen an | nimmt teil | يشارك في |",
+      "finding": "teilnehmen مصدر،و nimmt teil تصريف غائب؛an حرف جر مكمل للمشاركة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| seitdem | — | منذ ذلك الحين |",
+      "finding": "seitdem هنا منذ ذلك الحين،لا قبل ذلك أو مستقبلًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| regelmäßig | — | بانتظام |",
+      "finding": "regelmäßig بانتظام؛لا يعني كل يوم بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| die Freizeit | — | وقت الفراغ |",
+      "finding": "Freizeit مؤنث؛وقت الفراغ،لا مدة دورة اللغة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| backen | — | يخبز |",
+      "finding": "backen يخبز؛Kuchen backen قدرة في السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| fotografieren | — | يصوّر |",
+      "finding": "fotografieren يصوّر؛Perfekt fotografiert دون ge.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| eine Sprache sprechen | — | يتحدث لغة |",
+      "finding": "eine Sprache sprechen يتحدث لغة؛صيغة مصدر لمجموعة فعلية لا اسم مستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| eine Erfahrung machen | — | يكتسب/يخوض تجربة |",
+      "finding": "eine Erfahrung machen يمر بتجربة أو يكتسب خبرة،لا ترجمة machen حرفيًا في كل تركيب.",
+      "sourceIds": []
+    },
+    {
+      "id": "separation-01",
+      "text": "Der Kurs fängt an",
+      "finding": "خبرية بفعل مصرف وجزء an منفصل.",
+      "sourceIds": [
+        "SEP",
+        "START",
+        "PART"
+      ]
+    },
+    {
+      "id": "separation-02",
+      "text": "Der Kurs hat angefangen",
+      "finding": "Perfekt:hat مصرف و angefangen كلمة واحدة.",
+      "sourceIds": [
+        "SEP",
+        "START",
+        "PART"
+      ]
+    },
+    {
+      "id": "separation-03",
+      "text": "Ich nehme am Kurs teil",
+      "finding": "nehme مصرف و teil منفصل،و am اختصار an dem.",
+      "sourceIds": [
+        "SEP",
+        "START",
+        "PART"
+      ]
+    },
+    {
+      "id": "temporal-01",
+      "text": "Ich lerne seit sechs Monaten Deutsch.",
+      "finding": "ستة أشهر من تعلم مستمر؛Präsens مع seit في هذا السياق.",
+      "sourceIds": [
+        "TEMP",
+        "DAT",
+        "PERF"
+      ]
+    },
+    {
+      "id": "temporal-02",
+      "text": "Nour wohnt seit einem Jahr in Tunis.",
+      "finding": "سنة من السكن في Tunis؛لا دليل على سنة في الدورة نفسها.",
+      "sourceIds": [
+        "TEMP",
+        "DAT",
+        "PERF"
+      ]
+    },
+    {
+      "id": "temporal-03",
+      "text": "Seit wann arbeitest du hier?",
+      "finding": "السؤال عن بداية الاستمرار،لا عدد مرات الأسبوع.",
+      "sourceIds": [
+        "TEMP",
+        "DAT",
+        "PERF"
+      ]
+    },
+    {
+      "id": "temporal-04",
+      "text": "Seit Januar. / Seit drei Wochen.",
+      "finding": "يناير نقطة بداية،وثلاثة أسابيع مدة؛جوابان نموذجيان مستقلان.",
+      "sourceIds": [
+        "TEMP",
+        "DAT",
+        "PERF"
+      ]
+    },
+    {
+      "id": "temporal-05",
+      "text": "Vor drei Monaten habe ich einen Kurs begonnen.",
+      "finding": "بدء قبل ثلاثة أشهر؛لا معنى ضمني لانتهاء الدورة الآن.",
+      "sourceIds": [
+        "TEMP",
+        "DAT",
+        "PERF"
+      ]
+    },
+    {
+      "id": "temporal-06",
+      "text": "Vor einer Woche sind wir nach Sousse gefahren.",
+      "finding": "رحلة قبل أسبوع؛sind gefahren للانتقال إلى Sousse في هذا المثال.",
+      "sourceIds": [
+        "TEMP",
+        "DAT",
+        "PERF"
+      ]
+    },
+    {
+      "id": "ability-01",
+      "text": "Ich kann gut kochen.",
+      "finding": "kann مع ich و kochen مصدر؛gut يصف القدرة.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "ability-02",
+      "text": "Kannst du Fahrrad fahren?",
+      "finding": "kannst مع du في سؤال نعم/لا،و Fahrrad fahren مصدر التعبير.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "ability-03",
+      "text": "Wir können einfache Gespräche auf Deutsch führen.",
+      "finding": "können مع wir و führen مصدر؛einfache Gespräche مفعول.",
+      "sourceIds": [
+        "MODAL"
+      ]
+    },
+    {
+      "id": "experience-01",
+      "text": "Am Wochenende habe ich meine Tante besucht.",
+      "finding": "habe besucht مع مفعول meine Tante؛خالتي أو عمتي دون تعيين جهة القرابة.",
+      "sourceIds": [
+        "PERF",
+        "START"
+      ]
+    },
+    {
+      "id": "experience-02",
+      "text": "Letztes Jahr bin ich nach Berlin gefahren.",
+      "finding": "bin gefahren إلى Berlin؛ليس كل fahren مع sein في كل سياق.",
+      "sourceIds": [
+        "PERF",
+        "START"
+      ]
+    },
+    {
+      "id": "experience-03",
+      "text": "Vor zwei Monaten habe ich mit dem Deutschkurs angefangen.",
+      "finding": "habe angefangen مع mit dem Deutschkurs؛قبل شهرين وقت بداية لا نهاية.",
+      "sourceIds": [
+        "PERF",
+        "START"
+      ]
+    },
+    {
+      "id": "audio-phrase-01",
+      "text": "Seit wann lernst du Deutsch?",
+      "finding": "سؤال مدة تعلم في التسجيل؛أضيف نصه نفسه إلى المصدر.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-phrase-02",
+      "text": "Ich lerne seit einem Jahr Deutsch.",
+      "finding": "مثال تعلم منذ سنة؛مستقل عن مثال ستة أشهر.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-phrase-03",
+      "text": "Vor drei Monaten habe ich einen Kurs begonnen.",
+      "finding": "حدث بدء دورة قبل ثلاثة أشهر دون حكم بانتهائها.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-phrase-04",
+      "text": "Ich kann kurze Texte lesen.",
+      "finding": "قدرة على قراءة نصوص قصيرة؛ليس إثباتًا آليًا لقدرة المتعلم.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-phrase-05",
+      "text": "Am Wochenende bin ich nach Sousse gefahren.",
+      "finding": "رحلة إلى Sousse في مثال مستقل؛لا تبديل لوجهة Mahdia في نص القراءة.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-model-01",
+      "text": "Ich lerne seit sechs Monaten Deutsch.",
+      "finding": "تعلم مستمر منذ ستة أشهر؛الكلمات الصوتية محفوظة.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-model-02",
+      "text": "Nour wohnt seit einem Jahr in Tunis.",
+      "finding": "السكن منذ سنة؛لا تاريخ بدء الدورة.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-model-03",
+      "text": "Vor drei Monaten habe ich einen Kurs begonnen.",
+      "finding": "بداية دورة قبل ثلاثة أشهر؛انتهاء البداية لا انتهاء الدورة.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-model-04",
+      "text": "Ich kann gut kochen.",
+      "finding": "الطبخ قدرة،ب kann ومصدر kochen.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-model-05",
+      "text": "Wir können einfache Gespräche auf Deutsch führen.",
+      "finding": "محادثات بسيطة بالألمانية مع wir können.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "audio-model-06",
+      "text": "Am Wochenende bin ich nach Mahdia gefahren.",
+      "finding": "Mahdia في مثال مستقل،لا إلغاء Sousse في PHR.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **teilnehmen an + Dativ** — يشارك في؛ **Ich nehme an einem Sprachkurs teil. / Ich nehme am Kurs teil.** و am اختصار an dem. الجزء المنفصل teil، أما an قبل اسم النشاط فحرف جر، لا جزء منفصل من nehmen.",
+      "finding": "التمييز بين teil المنفصلة و an حرف الجر و am=an dem؛مساعدة مباشرة لمهمة P02.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-02",
+      "text": "- **Perfekt في هذا الدرس:** besuchen→hat besucht، schreiben→hat geschrieben، machen→hat gemacht، fotografieren→hat fotografiert، beginnen→hat begonnen، anfangen→hat angefangen، fahren إلى وجهة دون مفعول مباشر→ist gefahren. احفظ صيغنا؛ ليست كل الأفعال بـ ge، وليست كل حركة مع sein. بدأ الدورة ≠ أنهى الدورة.",
+      "finding": "المصادر والـ Partizip مع haben/sein في استعمالات محددة؛لا تعميم كل حركة أو إضافة ge دائمًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-03",
+      "text": "- **ich kann / du kannst / Nour kann / wir können** — الصيغ اللازمة هنا. **Ich kann kurze Texte lesen.** لا نضع liest بعد kann؛ ونقول ich habe / Karim hat / die Freunde haben / wir sind في أمثلة الماضي.",
+      "finding": "تصريف können والمساعدين واضح؛لا liest المصرفة بعد kann.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-04",
+      "text": "- **Seitdem lernt sie regelmäßig.** — منذ ذلك الحين تتعلم بانتظام؛seitdem هنا ظرف يعود إلى بداية الدورة المذكورة، و lernt ثانيًا. لا نعمم هذا الترتيب على seitdem حين يعمل أداة ربط في تركيب آخر.",
+      "finding": "seitdem ظرف زمني في النص،مع lernt في الموقع الثاني؛لا خلط بأداة الربط.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-05",
+      "text": "- **zweimal pro Woche / jeden Morgen / regelmäßig** — مرتان أسبوعيًا / كل صباح / بانتظام. التكرار الأسبوعي ليس مدة التعلم الإجمالية.",
+      "finding": "مرتان أسبوعيًا وكل صباح وبانتظام:تكرار لا مدة الاستمرار.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-06",
+      "text": "- **kurze Texte / einfache Gespräche / der erste Brief / der alte Markt** — نصوص قصيرة / محادثات بسيطة / الرسالة الأولى / السوق القديم. **meine Tante / einen Freund / eine Freundin** — خالتي أو عمتي / صديقًا / صديقةً؛لا يحدد Tante جهة القرابة ولا يعني Freund تلقائيًا علاقة عاطفية.",
+      "finding": "تفسيرات العبارات والأقارب والأصدقاء؛لا تعيين خالة مقابل عمة أو علاقة عاطفية غير مذكورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-07",
+      "text": "- **Sie beginnt jeden Morgen um sieben Uhr.** — تبدأ عملها في سياق المخبز الساعة 7 صباحًا؛ الفعل beginnen غير منفصل. **Seit einem Jahr** في القراءة مدة السكن، لا موعد بدء الدورة.",
+      "finding": "beginnt يعود إلى العمل في سياق المخبز،والسنة مدة سكن لا تعلم في رسالة القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "- **اتساق الأزمنة:** تعلم Nour منذ سنة في الحوار لا يناقض بدء دورة معينة قبل ثلاثة أشهر في القراءة؛ لا نستنتج تاريخ أول تعلم لها من تاريخ هذه الدورة، ولا أن vor يعني انتهاء الدراسة.",
+      "finding": "تعلم سنة مع دورة بدأت قبل ثلاثة أشهر ممكن؛لا تناقض زمني لازم بين الحوار والقراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود الأمثلة:** الراوي المسمى Nour في بيانات قراءة الصوت يقرأ عنها بضمير الغائب؛ ليس النص حديثًا منها عن نفسها. الاستماع بصوت 03 لا يذكر اسم الشخص؛ لا نفترض أنه Nour. وجهة Sousse في PHR مثال مستقل عن Mahdia في القراءة والاستماع.",
+      "finding": "اسم Nour في بيانات الراوي لا يحول السرد بضمير الغائب إلى حديث ذاتي؛لا هوية مفترضة لمتكلم الاستماع.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **حدود التدريب:** حاول الاستماع قبل فتح التفريغ، لكنه متاح ولا يثبت قراءته فهمًا مسموعًا مستقلًا. يمكن استعمال حياة ومدة وخبرة خيالية؛ لا عنوان أو تاريخ شخصي حقيقي أو شريك أو تسجيل متعلم مطلوب. الجهر مطلوب فقط في P01؛P02 كتابة فقط.",
+      "finding": "تفريغ متاح وحياة خيالية؛P01 جهر و P02 كتابة،ولا جودة نطق أو استماع مستقل بمجرد قراءة النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Karim: Seit wann lernst du Deutsch, Nour?",
+      "finding": "Karim يسأل Nour عن بداية تعلم الألمانية، لا السكن.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PART",
+        "PERF"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Nour: Seit einem Jahr. Ich nehme zweimal pro Woche an einem Sprachkurs teil.",
+      "finding": "سنة تعلم مع حضور مرتين أسبوعيًا؛ المدة تختلف عن التكرار.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PART",
+        "PERF"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Karim: Was kannst du schon gut?",
+      "finding": "يسأل عما تستطيع فعله الآن، لا عن تجربة سفر.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PART",
+        "PERF"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Nour: Ich kann kurze Texte lesen und einfache Gespräche führen. Vor drei Monaten habe ich meinen ersten Brief auf Deutsch geschrieben.",
+      "finding": "قراءة نصوص ومحادثات بسيطة ورسالة أولى قبل ثلاثة أشهر؛ لا يقول إن التعلم انتهى.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PART",
+        "PERF"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Karim: Toll! Und was machst du in deiner Freizeit?",
+      "finding": "ينتقل إلى هوايات وقت الفراغ؛ سؤال مستقل عن موعد الدورة.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PART",
+        "PERF"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Nour: Ich fotografiere gern. Letztes Wochenende habe ich den alten Markt fotografiert.",
+      "finding": "تحب التصوير وصورت السوق القديم في نهاية الأسبوع الماضية؛ fotografiert بلا ge.",
+      "sourceIds": [
+        "TEMP",
+        "MODAL",
+        "PART",
+        "PERF"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Nour wohnt seit einem Jahr in Tunis.",
+      "finding": "تسكن Nour في Tunis منذ سنة؛ الجملة عن السكن.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie arbeitet in einer Bäckerei und beginnt jeden Morgen um sieben Uhr.",
+      "finding": "تعمل في مخبز وتبدأ صباحًا 7؛ لا ننفي عملًا آخر غير مذكور.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Vor drei Monaten hat sie einen Deutschkurs angefangen.",
+      "finding": "بدأت دورة ألمانية قبل ثلاثة أشهر؛ لا ادعاء بانتهاء الدراسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Seitdem lernt sie regelmäßig.",
+      "finding": "تعلم منتظم منذ بداية الدورة؛ seitdem يعود إلى وقت البدء السابق مباشرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Nour kann gut Kuchen backen und spricht Arabisch und Französisch.",
+      "finding": "تجيد خبز الكعك وتتحدث العربية والفرنسية؛ لا شهادة إجادة مستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Am Wochenende ist sie nach Mahdia gefahren.",
+      "finding": "سافرت إلى Mahdia في نهاية الأسبوع؛ sein مع الانتقال في هذا السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Dort hat sie eine Freundin besucht und viele Fotos gemacht.",
+      "finding": "هناك زارت صديقة والتقطت صورًا؛ dort يعود إلى Mahdia، و Freundin مؤنث.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Seit wann wohnt Nour in Tunis?",
+      "finding": "Seit einem Jahr؛ مدة السكن المذكورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wo arbeitet sie?",
+      "finding": "In einer Bäckerei؛ مكان العمل الصريح.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wann hat sie den Deutschkurs angefangen?",
+      "finding": "Vor drei Monaten؛ وقت بدء الدورة، لا إثبات انتهاء مدتها.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was kann Nour gut?",
+      "finding": "Sie kann gut Kuchen backen؛ القدرة الموصوفة بكلمة gut.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Wohin ist sie am Wochenende gefahren?",
+      "finding": "Nach Mahdia؛ الوجهة، لا البلد الذي تتعلم لغته.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich lerne seit acht Monaten Deutsch.",
+      "finding": "ثمانية أشهر تعلم مستمر؛ المتكلم غير مسمى.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Vor acht Monaten habe ich mit einem Kurs angefangen.",
+      "finding": "بدأ دورة قبل ثمانية أشهر؛ متوافق مع مدة التعلم الحالية.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Jetzt kann ich einfache Gespräche führen.",
+      "finding": "قدرة حالية على محادثات بسيطة؛ لا وعد بتحققها لدى كل متعلم في المدة نفسها.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Letztes Wochenende bin ich nach Mahdia gefahren.",
+      "finding": "رحلة إلى Mahdia في نهاية الأسبوع الماضية؛ bin gefahren.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Ich habe einen Freund besucht und viele Fotos gemacht.",
+      "finding": "زار صديقًا والتقط صورًا؛ Freund مذكر بخلاف Freundin في القراءة.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Seit wann lernt die Person Deutsch?",
+      "finding": "Seit acht Monaten؛ لا سنة الحوار أو ستة أشهر الأمثلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was kann sie jetzt?",
+      "finding": "Einfache Gespräche führen؛ مهارة مذكورة صراحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wohin ist sie am Wochenende gefahren?",
+      "finding": "Nach Mahdia؛ لا Sousse في مثال العبارات.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Wen hat sie besucht?",
+      "finding": "Einen Freund؛ wen يسأل عن الشخص المزور. الضمير sie يتبع Person نحويًا، لا جنس المتكلم.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Ich lerne seit sechs Monaten Deutsch.",
+      "finding": "تعلم مستمر منذ ستة أشهر؛ أول مطلب في P01.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Vor sechs Monaten habe ich mit einem Kurs angefangen.",
+      "finding": "بداية الدورة قبل ستة أشهر متوافقة مع مدة التعلم؛ لا يقول إن الدورة انتهت.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Ich kann einfache Texte lesen.",
+      "finding": "قدرة قراءة نصوص بسيطة؛ kann مع المصدر lesen.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Letztes Wochenende habe ich einen Freund besucht.",
+      "finding": "زيارة صديق في نهاية الأسبوع الماضية؛ habe besucht. تُقرأ الجمل الأربع جهرًا دون تسجيل.",
+      "sourceIds": [
+        "TEMP",
+        "PERF",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Ich lerne seit einem Jahr Deutsch.",
+      "finding": "سنة تعلم مستمرة؛ P02 كتابة فقط.",
+      "sourceIds": [
+        "TEMP",
+        "PART",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Ich nehme zweimal pro Woche an einem Sprachkurs teil.",
+      "finding": "مشاركة مرتين أسبوعيًا؛ nehme و teil منفصلان و an einem Sprachkurs مكمل الفعل.",
+      "sourceIds": [
+        "TEMP",
+        "PART",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Ich kann kurze Texte lesen.",
+      "finding": "قدرة لغوية على قراءة النصوص؛ kann مع مصدر.",
+      "sourceIds": [
+        "TEMP",
+        "PART",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Letzte Woche habe ich einen Brief auf Deutsch geschrieben.",
+      "finding": "كتابة رسالة الأسبوع الماضي إنجاز محدد؛ ليست مجرد قدرة نظرية أو وعد.",
+      "sourceIds": [
+        "TEMP",
+        "PART",
+        "MODAL",
+        "PERF"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Seit wann lernst du Deutsch?** → منذ متى تتعلم الألمانية؟",
+      "finding": "سؤال منذ متى، لا كم مرة أسبوعيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "- **Ich lerne seit einem Jahr Deutsch.** → أتعلم الألمانية منذ سنة.",
+      "finding": "تعلم منذ سنة، مع استمرار في السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "- **Vor drei Monaten habe ich angefangen.** → بدأت قبل ثلاثة أشهر.",
+      "finding": "بدأ قبل ثلاثة أشهر دون القول بانتهاء النشاط.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "- **Ich kann gut kochen.** → أستطيع الطبخ جيدًا.",
+      "finding": "قدرة على الطبخ باستخدام المصدر kochen.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-01-T01",
+      "text": "1. Ich wohne ______ zwei Jahren in Nabeul. (ما زلت أسكن هناك)\n2. ______ drei Monaten habe ich den Kurs begonnen.\n3. Sie arbeitet ______ Januar in diesem Büro. (ما زالت تعمل فيه)\n4. ______ einer Woche sind wir nach Tunis gefahren.",
+      "finding": "أربع حالات من سياق واضح؛ vor لا يحكم بانتهاء النشاط.",
+      "sourceIds": [],
+      "items": [
+        "seit لاستمرار السكن.",
+        "Vor لوقت بدء الدورة الماضي.",
+        "seit للعمل المستمر من يناير؛ أضيف السياق الصريح.",
+        "Vor للرحلة قبل أسبوع."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T02",
+      "text": "1. Seit ______ Jahr lernt Omar Deutsch. (ein)\n2. Nour arbeitet seit drei ______ in der Bäckerei. (Monat)\n3. Wir wohnen seit einer ______ in dieser Wohnung. (Woche)",
+      "finding": "ثلاثة بنود Dativ تميز الأداة من نهاية الجمع.",
+      "sourceIds": [],
+      "items": [
+        "einem مع Jahr المحايد في Dativ.",
+        "Monaten: جمع Monate مع n في Dativ.",
+        "Woche بعد einer؛ لا جمع جديد أو n إضافية هنا."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T03",
+      "text": "1. Ich ______ am Samstag meine Tante besucht.\n2. Wir ______ nach Sousse gefahren.\n3. Karim ______ einen Brief geschrieben.\n4. Die Freunde ______ viele Fotos gemacht.",
+      "finding": "أربعة مساعدين مصرفين حسب الفاعل واستعمال الفعل.",
+      "sourceIds": [],
+      "items": [
+        "habe مع ich و besucht.",
+        "sind مع wir و gefahren للانتقال.",
+        "hat مع Karim و geschrieben.",
+        "haben مع die Freunde و gemacht."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T04",
+      "text": "1. Ich ______ gut kochen.\n2. ______ du schwimmen?\n3. Wir ______ einfache Texte lesen.\n4. Nour ______ Arabisch und Französisch sprechen.",
+      "finding": "أربع صيغ können مع مصادر مدربة.",
+      "sourceIds": [],
+      "items": [
+        "kann مع ich.",
+        "Kannst مع du وبحرف كبير أول السؤال.",
+        "können مع wir.",
+        "kann مع Nour المفرد الغائب."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T05",
+      "text": "ابدأ بالاسم أو الضمير المحدد بين القوسين، واستعمل كل كتلة مرة واحدة. الفعل المصرف ثانيًا والمصدر أو Partizip II في النهاية في هذه الخبرية البسيطة؛ لا نزعم أن كل ترتيب آخر خطأ:\n\n1. seit einem Jahr / Deutsch / lernt / Nour (ابدأ بـ Nour)\n2. gut / kann / Karim / fotografieren (ابدأ بـ Karim)\n3. vor drei Monaten / angefangen / hat / sie / den Kurs (ابدأ بـ Sie)\n4. kurze Texte / lesen / Ich / kann (ابدأ بـ Ich)",
+      "finding": "أربع خبريّات ببدايات محددة؛ أضيف تدريب مباشر لـ Q06.",
+      "sourceIds": [],
+      "items": [
+        "Nour lernt seit einem Jahr Deutsch؛ البداية Nour محددة.",
+        "Karim kann gut fotografieren؛ المصدر في النهاية.",
+        "Sie hat vor drei Monaten den Kurs angefangen؛ هذا نموذج، لا حكم بأن كل تنويع آخر خطأ.",
+        "Ich kann kurze Texte lesen؛ تدريب مباشر على Q06."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T06",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Nour wohnt seit einem Jahr in Tunis.\n2. Sie beginnt in der Bäckerei um neun Uhr, nicht um sieben Uhr.\n3. Sie kann gut Kuchen backen.\n4. Am Wochenende ist sie nach Mahdia gefahren.\n5. Den Deutschkurs hat sie vor drei Monaten angefangen.\n6. „Seitdem lernt sie regelmäßig“ heißt hier: Seit dem Kursbeginn lernt sie regelmäßig.",
+      "finding": "ستة أحكام على دليل القراءة؛ الثاني تناقض صريح وبندان جديدان للبدء و seitdem.",
+      "sourceIds": [],
+      "items": [
+        "صحيح: سنة سكن في Tunis.",
+        "خطأ: نفي 7 واستبدالها 9 يناقض النص صراحة.",
+        "صحيح: تخبز الكعك جيدًا.",
+        "صحيح: الوجهة Mahdia.",
+        "صحيح: بدء الدورة قبل ثلاثة أشهر.",
+        "صحيح: seitdem منذ بداية الدورة المذكورة."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T07",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة واحدة: **acht — Gespräche — Mahdia — Freund**.\n\n1. Die Person lernt seit ______ Monaten Deutsch.\n2. Sie kann einfache ______ führen.\n3. Sie ist nach ______ gefahren.\n4. Sie hat einen ______ besucht.",
+      "finding": "بنك كلمات محدد؛ كل بند مرئي منفصل عن غيره.",
+      "sourceIds": [],
+      "items": [
+        "acht من مدة التعلم.",
+        "Gespräche بعد einfache.",
+        "Mahdia وجهة السفر.",
+        "Freund المزور؛ كل لفظ من البنك مرة واحدة."
+      ]
+    },
+    {
+      "id": "DL-A2-01-T08",
+      "text": "**أ — P01: أربع جمل مع الجهر**\n\nاكتب أربع جمل مترابطة عن حياة خيالية ثم اقرأ الأربع بصوت مرتفع، ويمكنك أداؤها منفردًا: الأولى بـ seit والمضارع عن تعلم مستمر؛ الثانية بـ vor و Perfekt عن وقت بدء دورة لا عن انتهائها؛ الثالثة بـ können عن قدرة؛ الرابعة بـ Letztes Wochenende و Perfekt عن نشاط واحد. اجعل مدة التعلم ووقت بدء الدورة متوافقين؛ قد تبدأ الدورة بعد بدء التعلم أو معه. لا شريك أو تسجيل أو معلومات شخصية حقيقية مطلوبة.\n\n**ب — P02: أربع جمل كتابة فقط**\n\nاكتب أربع جمل عن متعلم لغة خيالي بضمير ich: الأولى بـ seit والمضارع عن مدة التعلم المستمرة؛ الثانية تذكر المشاركة مرتين أسبوعيًا باستعمال Ich nehme zweimal pro Woche an einem Sprachkurs teil؛ الثالثة بـ können عن قدرة لغوية؛ الرابعة بـ Letzte Woche و Perfekt عن إنجاز محدد ككتابة رسالة أو قراءة نص. هذه كتابة فقط، دون جهر أو تسجيل؛ لا تخلط مدة التعلم بتكرار الحضور الأسبوعي.",
+      "finding": "مساران مختلفان، كل منهما أربع جمل؛ أ مع الجهر وب كتابة فقط، بمعايير ونموذجين مطابقين.",
+      "sourceIds": [],
+      "items": [
+        "أ 1: تعلم مستمر مع seit والمضارع.",
+        "أ 2: بداية دورة مع vor و Perfekt متوافقة زمنيًا.",
+        "أ 3: قدرة مع können ومصدر.",
+        "أ 4: نشاط Letztes Wochenende مع Perfekt؛ الجهر مطلوب للأربع.",
+        "ب 1: مدة تعلم مستمرة مع seit.",
+        "ب 2: teilnehmen مع مرتين أسبوعيًا.",
+        "ب 3: قدرة لغوية مع können.",
+        "ب 4: إنجاز Letzte Woche مع Perfekt؛ الأربع كتابة فقط."
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q01",
+      "text": "ما معنى vor drei Monaten عند تحديد وقت بدء الدورة؟",
+      "finding": "صُحح الخيار 0 ليحدد وقت البدء لا انتهاء الدورة؛ seit استمرار، وبعد ثلاثة أشهر مستقبل.",
+      "sourceIds": [],
+      "options": [
+        "قبل ثلاثة أشهر؛ يحدد وقت البداية ولا يثبت انتهاء الدورة.",
+        "منذ ثلاثة أشهر وما زال مستمرًا.",
+        "بعد ثلاثة أشهر."
+      ],
+      "answer": "قبل ثلاثة أشهر؛ يحدد وقت البداية ولا يثبت انتهاء الدورة.",
+      "explanation": "vor هنا يحدد كم مضى على البداية، لا نهاية الدورة. قد أبدأ قبل ثلاثة أشهر وأظل أتعلم الآن.",
+      "sourceTaskIds": [
+        "DL-A2-01-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q02",
+      "text": "تسكن نور في تونس وما زالت تعيش هناك: Nour wohnt ___ einem Jahr in Tunis.",
+      "finding": "seit في هذا السياق المستمر؛ صُحح الربط إلى T01 لاختيار seit/vor بدل الاقتصار على تصريف الأداة.",
+      "sourceIds": [],
+      "options": [
+        "vor",
+        "seit",
+        "nach"
+      ],
+      "answer": "seit",
+      "explanation": "نستخدم seit لشيء بدأ وما زال مستمرًا.",
+      "sourceTaskIds": [
+        "DL-A2-01-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q03",
+      "text": "أي تركيب صحيح؟",
+      "finding": "seit einem Jahr صحيح؛ ein ليس Dativ و eines لا يطابق هذه الحالة والاسم.",
+      "sourceIds": [],
+      "options": [
+        "seit ein Jahr",
+        "seit eines Jahr",
+        "seit einem Jahr"
+      ],
+      "answer": "seit einem Jahr",
+      "explanation": "بعد seit هنا تأتي صيغة Dativ: seit einem Jahr.",
+      "sourceTaskIds": [
+        "DL-A2-01-T02"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q04",
+      "text": "أكمل: Wir ___ nach Sousse gefahren.",
+      "finding": "sind مع wir و gefahren للانتقال؛ haben ليس مساعد هذا الاستعمال و ist مفرد.",
+      "sourceIds": [],
+      "options": [
+        "haben",
+        "sind",
+        "ist"
+      ],
+      "answer": "sind",
+      "explanation": "هنا انتقال إلى سوسة دون مفعول مباشر مع fahren؛ نستعمل sein ومع wir الصيغة sind. لا نعمم sein على كل حركة.",
+      "sourceTaskIds": [
+        "DL-A2-01-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q05",
+      "text": "أكمل: Nour ___ gut Kuchen backen.",
+      "finding": "Nour مفرد غائب فتأخذ kann؛ kannst مع du و können ليس تصريفها.",
+      "sourceIds": [],
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answer": "kann",
+      "explanation": "مع الاسم المفرد Nour نستخدم kann.",
+      "sourceTaskIds": [
+        "DL-A2-01-T04"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q06",
+      "text": "أي جملة خبرية رئيسية تتبع النمط المدروس: فاعل ثم können مصرف، ومصدر في النهاية؟",
+      "finding": "Ich kann kurze Texte lesen في النمط المحدد؛ liest مصرف لا مصدر، والبديل الآخر يخالف المصدر النهائي المطلوب.",
+      "sourceIds": [],
+      "options": [
+        "Ich kann kurze Texte liest.",
+        "Ich kann lesen kurze Texte.",
+        "Ich kann kurze Texte lesen."
+      ],
+      "answer": "Ich kann kurze Texte lesen.",
+      "explanation": "في هذا النمط تأتي kann مع ich ثم المفعول، وlesen مصدر بلا zu في النهاية؛ لا نختار liest المصرفة أو المصدر قبل المفعول.",
+      "sourceTaskIds": [
+        "DL-A2-01-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q07",
+      "text": "أين تعمل Nour بحسب النص؟",
+      "finding": "المخبز مذكور صراحة؛ الفندق والمدرسة ليسا معلومة النص. لا ندعي أن النص يمنع أي عمل آخر.",
+      "sourceIds": [],
+      "options": [
+        "In einem Hotel.",
+        "In einer Bäckerei.",
+        "In einer Schule."
+      ],
+      "answer": "In einer Bäckerei.",
+      "explanation": "يذكر النص أنها تعمل في مخبز: in einer Bäckerei.",
+      "sourceTaskIds": [
+        "DL-A2-01-T06"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q08",
+      "text": "متى بدأت Nour دورة الألمانية؟",
+      "finding": "Vor drei Monaten يجيب عن وقت البداية؛ seit مدة استمرار لا الصياغة نفسها، والسنة مدة السكن في القراءة.",
+      "sourceIds": [],
+      "options": [
+        "Vor drei Monaten.",
+        "Seit drei Monaten.",
+        "Vor einem Jahr."
+      ],
+      "answer": "Vor drei Monaten.",
+      "explanation": "بدأت الدورة قبل ثلاثة أشهر: vor drei Monaten.",
+      "sourceTaskIds": [
+        "DL-A2-01-T06"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q09",
+      "text": "ماذا تعني جملة **Ich nehme zweimal pro Woche an einem Sprachkurs teil**؟",
+      "finding": "المشاركة مرتين أسبوعيًا هي المعنى، لا بداية شهرية أو نهاية يومية. T08 ب يدرب الجملة نفسها.",
+      "sourceIds": [],
+      "options": [
+        "أبدأ دورة لغة مرة في الشهر.",
+        "أنهي دورة اللغة كل يوم.",
+        "أشارك في دورة لغة مرتين أسبوعيًا."
+      ],
+      "answer": "أشارك في دورة لغة مرتين أسبوعيًا.",
+      "explanation": "التركيب teilnehmen an يعني المشاركة في، وzweimal pro Woche تعني مرتين أسبوعيًا.",
+      "sourceTaskIds": [
+        "DL-A2-01-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-01-Q10",
+      "text": "ما معنى **Seitdem lernt sie regelmäßig**؟",
+      "finding": "منذ ذلك الحين وبانتظام، لا قبل ذلك أو بداية لاحقة. صُحح رقم الكتالوج من 8 إلى 6 ليطابق التقييم.",
+      "sourceIds": [],
+      "options": [
+        "كانت تتعلم قبل ذلك.",
+        "منذ ذلك الحين تتعلم بانتظام.",
+        "ستبدأ التعلم لاحقًا."
+      ],
+      "answer": "منذ ذلك الحين تتعلم بانتظام.",
+      "explanation": "seitdem تعني منذ ذلك الحين.",
+      "sourceTaskIds": [
+        "DL-A2-01-T06"
+      ]
+    },
+    {
+      "id": "DL-A2-01-P01",
+      "text": "اكتب أربع جمل مترابطة عن حياة خيالية ثم اقرأ الأربع بصوت مرتفع، ويمكنك أداؤها منفردًا: الأولى بـ seit والمضارع عن تعلم مستمر؛ الثانية بـ vor و Perfekt عن وقت بدء دورة لا عن انتهائها؛ الثالثة بـ können عن قدرة؛ الرابعة بـ Letztes Wochenende و Perfekt عن نشاط واحد. اجعل مدة التعلم ووقت بدء الدورة متوافقين؛ قد تبدأ الدورة بعد بدء التعلم أو معه. لا شريك أو تسجيل أو معلومات شخصية حقيقية مطلوبة.",
+      "finding": "P01/T08 أ: حد 120 حرفًا وأربع جمل مع الجهر؛ مدة التعلم وبداية الدورة متوافقتان، ولا تُفرض واقعة شخصية أو تسجيل.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل: تعلم مستمر، وقت بدء دورة، قدرة، ونشاط في نهاية الأسبوع؛ قرأت الأربع جهرًا.",
+        "meaningClarity": "مدة التعلم ووقت بدء الدورة متوافقان، ولا أفترض أن ذكر البداية يعني انتهاء الدراسة.",
+        "targetSkill": "seit مع المضارع وDativ،وvor الزمانية معDativ وPerfekt؛können مصرف ومصدر،وفعل مساعد مصرف وPartizip II في نمط الماضي."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-01-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-01-P02",
+      "text": "اكتب أربع جمل عن متعلم لغة خيالي بضمير ich: الأولى بـ seit والمضارع عن مدة التعلم المستمرة؛ الثانية تذكر المشاركة مرتين أسبوعيًا باستعمال Ich nehme zweimal pro Woche an einem Sprachkurs teil؛ الثالثة بـ können عن قدرة لغوية؛ الرابعة بـ Letzte Woche و Perfekt عن إنجاز محدد ككتابة رسالة أو قراءة نص. هذه كتابة فقط، دون جهر أو تسجيل؛ لا تخلط مدة التعلم بتكرار الحضور الأسبوعي.",
+      "finding": "P02/T08 ب: حد 130 حرفًا وأربع جمل كتابة فقط؛ التكرار الأسبوعي يختلف عن مدة التعلم، وإنجاز Perfekt حدث لا وصف قدرة.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "أربع جمل: مدة تعلم، مشاركة مرتين أسبوعيًا، قدرة لغوية، وإنجاز الأسبوع الماضي؛ كتابة فقط.",
+        "meaningClarity": "لا أخلط مدة التعلم بتكرار المشاركة، والإنجاز حدث محدد لا وصف قدرة فقط.",
+        "targetSkill": "seit مع المضارع، وnehme…an einem Sprachkurs teil، وkönnen مع مصدر، وPerfekt في جملة الإنجاز."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-01-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-01-AUD-PHR-01",
+      "text": "Seit wann lernst du Deutsch? Ich lerne seit einem Jahr Deutsch. Vor drei Monaten habe ich einen Kurs begonnen. Ich kann kurze Texte lesen. Am Wochenende bin ich nach Sousse gefahren.",
+      "finding": "خمس عبارات بصوت 02؛ أضيفت الكلمات نفسها إلى مصدرها مع مرجع دقيق، لا أمثلة قريبة فقط. الحالة ready والسياسة offer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-01-AUD-DLG-01",
+      "text": "Seit wann lernst du Deutsch, Nour? / Seit einem Jahr. Ich nehme zweimal pro Woche an einem Sprachkurs teil. / Was kannst du schon gut? / Ich kann kurze Texte lesen und einfache Gespräche führen. Vor drei Monaten habe ich meinen ersten Brief auf Deutsch geschrieben. / Toll! Und was machst du in deiner Freizeit? / Ich fotografiere gern. Letztes Wochenende habe ich den alten Markt fotografiert.",
+      "finding": "ستة أدوار متناوبة: Karim03 و Nour02؛ الكلمات والأصوات والمسارات محفوظة والعرض مفصول. الحالة ready والسياسة offer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-01-AUD-READ-01",
+      "text": "Nour wohnt seit einem Jahr in Tunis. Sie arbeitet in einer Bäckerei und beginnt jeden Morgen um sieben Uhr. Vor drei Monaten hat sie einen Deutschkurs angefangen. Seitdem lernt sie regelmäßig. Nour kann gut Kuchen backen und spricht Arabisch und Französisch. Am Wochenende ist sie nach Mahdia gefahren. Dort hat sie eine Freundin besucht und viele Fotos gemacht.",
+      "finding": "مقطع بصوت 02 مسمى Nour في البيانات؛ سرد عنها بالغائب لا حديث ذاتي. الحالة ready والسياسة offer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-01-AUD-LST-01",
+      "text": "Ich lerne seit acht Monaten Deutsch. Vor acht Monaten habe ich mit einem Kurs angefangen. Jetzt kann ich einfache Gespräche führen. Letztes Wochenende bin ich nach Mahdia gefahren. Ich habe einen Freund besucht und viele Fotos gemacht.",
+      "finding": "مقطع بصوت 03 غير مسمى في الموقف؛ ثمانية أشهر وصديق Freund، لا افتراض أنه Nour. الحالة ready والسياسة offer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A2-01-AUD-MODEL-01",
+      "text": "Ich lerne seit sechs Monaten Deutsch. Nour wohnt seit einem Jahr in Tunis. Vor drei Monaten habe ich einen Kurs begonnen. Ich kann gut kochen. Wir können einfache Gespräche auf Deutsch führen. Am Wochenende bin ich nach Mahdia gefahren.",
+      "finding": "ستة أمثلة بصوت 02؛ مواقف مستقلة لا جواب كامل على المهمة، وصُحح مرجع المصدر. الحالة ready والسياسة offer محفوظتان؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": []
+    }
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 1867423,
+    "cacheVersion": "v66",
+    "reviewGuards": 19,
+    "nodeSuites": 5,
+    "browserSuites": 5,
+    "axeStates": 89,
+    "axeSelectedViolations": 0,
+    "axeIncompleteRuleOccurrences": 57,
+    "axeIncompleteNodeOccurrences": 136,
+    "narrowStates": 126,
+    "chromium": "143.0.7499.0",
+    "formsKeyboardFirstAttempt": "PASS",
+    "testFixtureCorrection": "Initial new progression fixture copied spoken task index from A1.12; corrected A2.1 roles/responses and re-ran all Node suites successfully. No app bug claimed.",
+    "preservationBaseline": "17fe5b87e7a3eed76e3c9b7a5bf792213df521ca",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "allAnswerIndicesUnchanged": true,
+    "unchangedOptions": 29,
+    "changedOptions": [
+      [
+        "DL-A2-01-Q01",
+        0
+      ]
+    ],
+    "mp3HashesUnchanged": 474,
+    "playlistByteIdentical": true,
+    "audioRegisterChangedRows": [
+      "DL-A2-01-AUD-PHR-01",
+      "DL-A2-01-AUD-DLG-01",
+      "DL-A2-01-AUD-READ-01",
+      "DL-A2-01-AUD-LST-01",
+      "DL-A2-01-AUD-MODEL-01"
+    ],
+    "audioRegisterChanges": "source_line/source_heading only in five A2.1 rows; all other fields/212 rows unchanged"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "39f04f87fceedf2a5016607a7b86392a23fd2b71",
+    "implementationPushVerified": true,
+    "merged": false,
+    "nextLesson": "A2.2",
+    "gateSeparate": true,
+    "reviewedLessons": 18,
+    "remainingLessons": 35,
+    "reviewPushVerified": true,
+    "reviewCommit": "6059122e6039470939ba51fb0994de66a830266c",
+    "pullRequest": {
+      "headRefName": "arena/01a1036f-deutschlern",
+      "headRefOid": "6059122e6039470939ba51fb0994de66a830266c",
+      "mergedAt": null,
+      "number": 1,
+      "state": "OPEN",
+      "url": "https://github.com/naderba69/deutschlern/pull/1"
+    },
+    "vercel": {
+      "implementationStatus": "success",
+      "reviewStatus": "pending",
+      "deploymentRecordAvailableAtCheck": false
+    },
+    "remoteVerification": "Deployment status metadata only; no remote bundle fetch or UI test and no production claim.",
+    "receiptCommit": "Separate documentation commit: Record CR19 push receipt and deployment status; see git log."
+  }
+}

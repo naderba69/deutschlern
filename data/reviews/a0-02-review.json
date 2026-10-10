@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a0-02-greetings",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a0-02-v2",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "R-GOETHE",
+      "citation": "[2](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "الفصل 1: التحيةوالوداع،du/Sie،الردود dir/Ihnen،وجدول heißen. لاحظنافيالنص المستخرج عبارة Ich heißen Matteo Kraft؛ لم نعتمدها كنموذج، ولا نجزمإنكانالخللمن الأصل أو الاستخراج؛ قارناجدولالتصريففيالمصدرنفسه و Netzverb."
+    },
+    {
+      "id": "R-SIE",
+      "citation": "[1](https://grammis.ids-mannheim.de/rechtschreibung/6197)",
+      "scope": "القاعدةالرسمية§65 لكتابة Sie و Ihnen كبيرة،و§66 للتمييزعن du/ihr."
+    },
+    {
+      "id": "R-VERB",
+      "citation": "[3](https://www.verbformen.com/conjugation/indikativ/praesens/heis5en.htm)",
+      "scope": "جدولالحاضر heiße/heißt/heißen لستةالضمائر؛ لم نعتمدنتيجة Duden/heiszen لأنها 404."
+    },
+    {
+      "id": "R-HALLO",
+      "citation": "[4](https://www.duden.de/rechtschreibung/hallo)",
+      "scope": "صفحة Duden مسترجعةمباشرة: hallo تحيةودّيةشائعة؛ لا نحولهاقانونًااجتماعيًامطلقًا."
+    },
+    {
+      "id": "R-TSCHUSS",
+      "citation": "[5](https://www.duden.de/rechtschreibung/tschues)",
+      "scope": "صفحة Duden مسترجعةمباشرة: tschüs/tschüss بديلانصحيحان،ووصفالوداعبين المعارف."
+    }
+  ],
+  "sourceHashes": {
+    "content/A0/lesson-02-greetings.md": "c92893572fc80805e752fa3f8b0ef0d885d596893ca663929eac18f9c9d9ca7c",
+    "content/A0/lesson-02-greetings.assessment.json": "bbc6e4e309f261b7c2f3b2047301aa6e4833896582c436aa5fc239f40ad5ee29"
+  },
+  "audioSnapshotHashes": {
+    "DL-A0-02-AUD-PHR-01": "61b6ca87d628e6555f72d4e90a8f3bccc4eb45f5a74d7c055ad194a48d8eaac7",
+    "DL-A0-02-AUD-DLG-01": "1e39750044effcd070c07df27a9c557b7a2405c9b3ca0fcec8fdd28c3496e607",
+    "DL-A0-02-AUD-DLG-02": "01eff1d3ccd9581b9827fb8a6d7b41551c584a7ac9810e7465590414dad57960"
+  },
+  "units": [
+    {
+      "id": "goal-and-scope",
+      "decision": "clarified",
+      "finding": "الهدف تحية وتعارف ووداع مناسب، لا إتقان محادثة مثبت بالاختيار. أضيف توضيح التحقق الذاتي والدورين الفرديين وأن 20 دقيقة تقدير لا وعد. العبارات نموذج أولي، ولا يوجد نص قراءة مستقل غير الحوارات في هذا الدرس.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-01",
+      "decision": "clarified",
+      "finding": "Hallo! — تحية ودّية؛ أصبح وصفها خاصًا بالنموذج التدريبي بدل تصنيف مطلق.",
+      "sourceIds": [
+        "R-HALLO",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "decision": "retained",
+      "finding": "Guten Morgen! — تحية الصباح؛ مثال 8 صباحًا مناسب، لا تحديد ساعة عالمية إلزامية.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "decision": "retained",
+      "finding": "Guten Tag! — تحية نهارية مهذبة؛ مناسبة للقاء بعد الظهر في التمرين.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "decision": "retained",
+      "finding": "Guten Abend! — تحية لقاء مساءً، لا مرادف لوداع قبل النوم.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "phrase-05",
+      "decision": "retained",
+      "finding": "Gute Nacht! — تمنّي ليلة طيبة قبل النوم، لا تحية دخول مساءً. أضيف التدريب المقابل في T01.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "phrase-06",
+      "decision": "retained",
+      "finding": "Tschüss! — وداع شائع بين المعارف؛ ليست تحية أو كلمة خاصة بالنوم. الشكل Tschüs جائز أيضًا، فلا يصح اعتباره خطأ مطلقًا.",
+      "sourceIds": [
+        "R-TSCHUSS"
+      ]
+    },
+    {
+      "id": "phrase-07",
+      "decision": "clarified",
+      "finding": "Auf Wiedersehen! — وداع مهذب مناسب للرسمية؛ ليس ممنوعًا مع الأصدقاء. قيّدنا التصنيف بالنموذج.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-TSCHUSS"
+      ]
+    },
+    {
+      "id": "phrase-08",
+      "decision": "retained",
+      "finding": "Danke! — شكر؛ صحيح في سياق الردود.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "phrase-09",
+      "decision": "retained",
+      "finding": "Bitte! — المعاني من فضلك/تفضل/العفو مشروطة بالسياق؛ لا سؤال يطلب معنى واحدًا بلا سياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-10",
+      "decision": "retained",
+      "finding": "Freut mich. — صيغة محذوفة شائعة للتعبير عن السرور بالتعارف؛ الترجمة تشرفت بلقائك ملائمة، وليست أمرًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "name-01",
+      "decision": "retained",
+      "finding": "Ich heiße Lina. — التعريف بالاسم صحيح مع heiße.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-VERB"
+      ]
+    },
+    {
+      "id": "name-02",
+      "decision": "retained",
+      "finding": "Wie heißt du? — سؤال اسم شخص واحد بصيغة du؛ ترتيب Wie+فعل+ضمير صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-VERB"
+      ]
+    },
+    {
+      "id": "name-03",
+      "decision": "retained",
+      "finding": "Wie heißen Sie? — سؤال اسم رسمي؛ الجمع أو المفرد يحدده السياق، وهنا مخاطب واحد.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-VERB"
+      ]
+    },
+    {
+      "id": "conjugation-01",
+      "decision": "retained",
+      "finding": "ich → heiße؛ الصحيح مقابل heißen/heißt في Q04.",
+      "sourceIds": [
+        "R-VERB",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "conjugation-02",
+      "decision": "retained",
+      "finding": "du → heißt؛ ليس heißest في هذا التمرين للحاضر.",
+      "sourceIds": [
+        "R-VERB",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "conjugation-03",
+      "decision": "clarified",
+      "finding": "er/sie/es → heißt؛ أضيف es لإكمال السطر، دون تغيير التصريف.",
+      "sourceIds": [
+        "R-VERB",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "conjugation-04",
+      "decision": "retained",
+      "finding": "wir → heißen؛ Wir heißen Sami und Nora صحيحة لذكر اسمي المتحدثين.",
+      "sourceIds": [
+        "R-VERB",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "conjugation-05",
+      "decision": "retained",
+      "finding": "ihr → heißt؛ الفعل صحيح، والضمير جمع غير رسمي لا يساوي Sie.",
+      "sourceIds": [
+        "R-VERB",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "conjugation-06",
+      "decision": "retained",
+      "finding": "sie/Sie → heißen؛ جمع الغائب وصيغة المخاطبة الرسمية يشتركان في الفعل، لا في الوظيفة.",
+      "sourceIds": [
+        "R-VERB",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "register-and-context",
+      "decision": "clarified",
+      "finding": "أضيفت Ihnen إلى تنبيه الكتابة الكبيرة، وفُصل اختيار du/Sie عن المهنة وحدها. وُضع الحوار الرسمي في مركز تعلم مع مدرس، وشرحت Herr كلقب و Ich bin كعبارة جاهزة. ليست Ich bin Herr Weber خطأ نحويًا؛ توضيح السياق تحسين تربوي، ولا نجعلها قالب كل تعريف بالنفس.",
+      "sourceIds": [
+        "R-SIE",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "decision": "retained",
+      "finding": "Guten Tag! Ich heiße Lina. Wie heißen Sie? — التحية والاسم والسؤال متسقة مع Sie؛ سؤال الاسم واضح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "decision": "retained",
+      "finding": "Guten Tag! Ich bin Herr Weber. Freut mich. — جواب B يعطي لقبًا واسم عائلة؛ أُوضح أنه مدرس. Ich bin صحيحة كعبارة تعريف وليست heißen.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "decision": "retained",
+      "finding": "Freut mich auch. Auf Wiedersehen! — Freut mich auch رد مناسب؛ و Auf Wiedersehen وداع مهذب. النموذج مختصر لا حوار مطول.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "decision": "retained",
+      "finding": "Auf Wiedersehen! — رد الوداع مناسب ولا تبديل في الصيغة.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "decision": "retained",
+      "finding": "Hallo! Ich heiße Sami. Wie heißt du? — تحية واسم وسؤال متسقة مع du.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "decision": "retained",
+      "finding": "Ich heiße Nora. Freut mich! — جواب Nora بالاسم يلائم سؤال Sami؛ Freut mich تعليق مناسب.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "decision": "retained",
+      "finding": "Freut mich auch. Tschüss! — رد السرور ثم Tschüss؛ يطابق النسخة الودّية.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-08",
+      "decision": "retained",
+      "finding": "Tschüss! — رد الوداع Tschüss مناسب.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "wellbeing-01",
+      "decision": "retained",
+      "finding": "Wie geht es dir? — سؤال الحال بصيغة du، وليست dir اسمًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "wellbeing-02",
+      "decision": "retained",
+      "finding": "Wie geht es Ihnen? — سؤال الحال الرسمي؛ Ihnen كبيرة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "wellbeing-03",
+      "decision": "clarified",
+      "finding": "Gut, danke. Und dir? — الرد يتبعه سؤال مقابل بصيغة du؛ أضيف بيان الصيغة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "wellbeing-04",
+      "decision": "corrected",
+      "finding": "Gut, danke. Und Ihnen? — أُضيف النموذج الرسمي الناقص؛ موجود في Q08 سابقًا دون شرح أو ممارسة مطابقة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "wellbeing-05",
+      "decision": "retained",
+      "finding": "Sehr gut, danke. — رد إيجابي قوي، ترجمته جيدة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "wellbeing-06",
+      "decision": "clarified",
+      "finding": "Es geht. — توضيح أن المعنى حال متوسط/لا بأس؛ ليس Sehr gut.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "DL-A0-02-T01",
+      "decision": "corrected",
+      "finding": "أضيف بندقبل النوم ليطابق Q02؛ المفاتيحالخمسةواضحةبينالخيارات.",
+      "sourceIds": [],
+      "items": [
+        "8 صباحًا → Guten Morgen؛ Gute Nacht ليست تحية لقاء.",
+        "لقاء رسمي بعد الظهر → Guten Tag؛ Tschüss وداع.",
+        "وداع صديق → Tschüss؛ Guten Morgen تحية.",
+        "وداع رسمي فيالنموذج → Auf Wiedersehen؛ Hallo تحية.",
+        "أضيف قبل النوم → Gute Nacht؛ Guten Abend تحية لقاء."
+      ]
+    },
+    {
+      "id": "DL-A0-02-T02",
+      "decision": "retained",
+      "finding": "الأشكالالأربعةومفاتيحهاصحيحة؛ لا تغيّر.",
+      "sourceIds": [],
+      "items": [
+        "Ich ___ Lina → heiße.",
+        "Wie ___ du → heißt.",
+        "Wie ___ Sie → heißen.",
+        "Wir ___ Sami und Nora → heißen."
+      ]
+    },
+    {
+      "id": "DL-A0-02-T03",
+      "decision": "corrected",
+      "finding": "قُيّدتالرسميةبالنموذجحتىلايصبحالوداعالمهذبممنوعًامعصديق.",
+      "sourceIds": [],
+      "items": [
+        "Wie heißt du? غيررسمي فيالنموذج.",
+        "Wie heißen Sie? رسمي.",
+        "Tschüss! غيررسمي فيالنموذج.",
+        "Auf Wiedersehen! مهذب/رسمي هنا؛ لا يعني منعه مع صديق."
+      ]
+    },
+    {
+      "id": "DL-A0-02-T04",
+      "decision": "corrected",
+      "finding": "كانتعلاماتالترقيمملتصقةبكلماتليستنهايةالترتيب (heißt? و Guten!)؛ فُصلتوطُلبوضعهافينهايةالعبارة.",
+      "sourceIds": [],
+      "items": [
+        "heiße/Ich/Omar → Ich heiße Omar.",
+        "du/Wie/heißt → Wie heißt du?",
+        "Morgen/Guten → Guten Morgen!",
+        "Sie/heißen/Wie → Wie heißen Sie?"
+      ]
+    },
+    {
+      "id": "DL-A0-02-T05",
+      "decision": "corrected",
+      "finding": "أضيفالردالرسميومفتاحه لدعم Q08. المشتتاتالنحويةالمكسورةكانتخطأمقصودًا فيالتمرين وليستخطأفيالشرح؛ استُبدلتبعباراتصحيحةغيرمناسبةللردالمباشرالمحدد.",
+      "sourceIds": [],
+      "items": [
+        "Wie geht es dir? → أ/Gut, danke. البديل وداع لا جواب مباشر عن الحال.",
+        "Freut mich معطلبمبادلةالسرور → أ/Freut mich auch.",
+        "Auf Wiedersehen معطلببادلهالوداع → أ/ Auf Wiedersehen!",
+        "أضيف Wie geht es Ihnen? → ب/Gut, danke. Und Ihnen?؛ Und dir غيرمتسقة معالسياقالرسمي المطلوب."
+      ]
+    },
+    {
+      "id": "DL-A0-02-T06",
+      "decision": "corrected",
+      "finding": "أضيفبنككلماتبتكرار heiße مرتين لتحديدالإجابات؛ الحوارغيررسمي،فلايصلحمصدرًالمهمةتطلبقراءةحواررسمي.",
+      "sourceIds": [],
+      "items": [
+        "A: Ich ___ Amel → heiße.",
+        "A: Wie ___ du → heißt.",
+        "B: Ich ___ Youssef → heiße.",
+        "A: Freut mich ___ → auch.",
+        "B: ___! → Tschüss؛ بنكالكلمات يحددالنموذجولاينفيوجودوداعاتأخرى."
+      ]
+    },
+    {
+      "id": "DL-A0-02-T07",
+      "decision": "corrected",
+      "finding": "وُضحعددالمداخلاتوالنسختينوجواب B والأداءالفردي. أضيفتمعاييرإجابةمفتوحة بدلأمربالحواربلاخطوات.",
+      "sourceIds": [],
+      "items": [
+        "نسخة du: أربع مداخلات A/B/A/B؛ تحية واسم A وسؤالاسم B، جواب B باسمه، ثموداع A ورد B. نموذج Sami/Nora فيالقسم 3 يحققها.",
+        "نسخة Sie: أربع مداخلات A/B/A/B بالوظائفنفسها والصيغة الرسمية. نموذج Lina/HerrWeber يحققها. الكتابةثمأداءالدورينفرديًا؛ الشريكغيرإلزامي."
+      ]
+    },
+    {
+      "id": "DL-A0-02-T08",
+      "decision": "corrected",
+      "finding": "«ثلاثجمل»استُبدلتبثلاثعباراتفيثلاثةأسطر؛ Hallo والوداعلايحتاجانفعلًا. صارللمهمةنموذجومعياركتابي،وترتبطبها P02.",
+      "sourceIds": [],
+      "items": [
+        "السطر 1: Hallo! تحية مستقلة وليست جملة فعلية مطلوبة.",
+        "السطر 2: Ich heiße +اسممختار ثم نقطة؛ أياسممقبول.",
+        "السطر 3: Tschüss! وداع. النموذجثلاثعبارات كتابة فقط لاشرطصوتي."
+      ]
+    },
+    {
+      "id": "DL-A0-02-Q01",
+      "decision": "retained",
+      "finding": "Guten Morgen! وحيدةمناسبةلتحية 8 صباحًا منالخيارات؛ المصدر T01/1.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q02",
+      "decision": "retained",
+      "finding": "Gute Nacht! وحيدةلبدءالنوم؛ أضيفالتدريب T01/5 بدلربطفارغمنهذاالموقف.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q03",
+      "decision": "corrected",
+      "finding": "Auf Wiedersehen! مناسبةللنموذجالرسمي. قُيّدالسؤاللنفيالحكمالمطلقعلى Tschüss أوالأصدقاء.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q04",
+      "decision": "retained",
+      "finding": "heiße مع Ich؛ البديلان heißen/heißt لايوافقانالضمير. المصدر T02/1.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q05",
+      "decision": "retained",
+      "finding": "المعنىالرسميلـ Wie heißen Sie صحيح،ومثال T02/3 يشمله؛ بقيسؤالالمعنى.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q06",
+      "decision": "corrected",
+      "finding": "Sie صحيحةفيالسياقالرسميالمحددالآن؛ عدممعرفةالمدرس وحده لم يعدسببًا عامًا لفرضالصيغة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q07",
+      "decision": "corrected",
+      "finding": "Freut mich auch تعنيالسرورأيضًا. قُيّدالمعنىالمطلوبواستُبدل Ich heiße bitte بـ Ich heiße Nora كيلايعتمداختيارالجوابعلىجملةمكسورةفقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q08",
+      "decision": "corrected",
+      "finding": "صُحح sourceTaskIds من T04 إلى T05/4؛ أضيفالشرحوالتدريب،وحددالردوالسؤالالمقابلبالصيغة الرسمية. الصحيح Gut, danke. Und Ihnen?",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q09",
+      "decision": "corrected",
+      "finding": "معصديقفيوداعغيررسمي هوالأقرب؛ لا تحيةصباحيةولاخاصبالنوم. أُبقيغالبًاولميُحوَّلإلىقاعدةمطلقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-Q10",
+      "decision": "retained",
+      "finding": "auch كمالصورةالموجودةبـ T06/4؛ Sie و heiße لايكملانالتركيب.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-P01",
+      "decision": "corrected",
+      "finding": "المهمةالسابقةشفهيةلكنالواجهةتطلبنصًاولمتوضححجمه،ومعيارهايفترضشريكًا. الآنمسودةمكتوبةلنسختين A/B/A/B وأداءالدورينفرديًا. minimumResponseCharacters=100 حاجزفراغ/قصرلايقيسالصحة،ومربعالكلامتحققذاتيفقط. المصدر T07 مطابق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-P02",
+      "decision": "corrected",
+      "finding": "كانتتطلبقراءةالحوارالرسميبينمامصدرها T06 حوار du. استُبدلتبمهمةكتابة T08 الموجودةلإكمالالهدفالكتابي،بحروفومعاييرونموذجواضحودون spokenAloud. حد 20 حرفًاحاجزشكليلا تصحيحلغوي. هذاقرارإعادةمواءمةمعلن،لاادعاءأن T06 صاررسميًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-01",
+      "decision": "retained",
+      "finding": "Wie heißt du? سؤالاسمغيررسمي؛ صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "decision": "retained",
+      "finding": "Wie heißen Sie? سؤالاسمرسمي؛ صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "decision": "retained",
+      "finding": "Ich heiße … تعريفضمنيبالاسم؛ صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "decision": "clarified",
+      "finding": "Gute Nacht: قُيدتالترجمةبوداعقبل النوم،لامجردأيوداعليلي أوتحية لقاء.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A0-02-AUD-PHR-01",
+      "decision": "text-only-reviewed",
+      "finding": "نص التسجيل ثابت. كل عبارات القائمة متوافقة مع الدرس؛ الرد Und Ihnen المضافنصيًا غير مسجل فيه،ولا ندّعي أن التسجيل يغطيه. لم يُسمع MP3 في هذه المراجعة.",
+      "sourceIds": [],
+      "items": [
+        "Hallo!",
+        "Guten Morgen!",
+        "Guten Tag!",
+        "Guten Abend!",
+        "Gute Nacht!",
+        "Tschüss!",
+        "Auf Wiedersehen!",
+        "Danke!",
+        "Bitte!",
+        "Freut mich!",
+        "Ich heiße Lina.",
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Wie geht es dir?",
+        "Wie geht es Ihnen?",
+        "Gut, danke.",
+        "Und dir?",
+        "Sehr gut, danke.",
+        "Es geht."
+      ]
+    },
+    {
+      "id": "DL-A0-02-AUD-DLG-01",
+      "decision": "text-only-reviewed",
+      "finding": "نص التسجيل ثابت. الأدوار الأربعة مطابقة للحوار المكتوب حرفيًا،والأصوات والروابط ثابتة. لم يُسمع MP3 في هذه المراجعة.",
+      "sourceIds": [],
+      "items": [
+        "Lina: Guten Tag! Ich heiße Lina. Wie heißen Sie?",
+        "Herr Weber: Guten Tag! Ich bin Herr Weber. Freut mich.",
+        "Lina: Freut mich auch. Auf Wiedersehen!",
+        "Herr Weber: Auf Wiedersehen!"
+      ]
+    },
+    {
+      "id": "DL-A0-02-AUD-DLG-02",
+      "decision": "text-only-reviewed",
+      "finding": "نص التسجيل ثابت. الأدوار الأربعة مطابقة للحوار المكتوب حرفيًا،والأصوات والروابط ثابتة. لم يُسمع MP3 في هذه المراجعة.",
+      "sourceIds": [],
+      "items": [
+        "Sami: Hallo! Ich heiße Sami. Wie heißt du?",
+        "Nora: Ich heiße Nora. Freut mich!",
+        "Sami: Freut mich auch. Tschüss!",
+        "Nora: Tschüss!"
+      ]
+    }
+  ]
+}

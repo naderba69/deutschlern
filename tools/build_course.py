@@ -9,8 +9,65 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 COURSE_PATH = ROOT / "data" / "course.json"
+AUDIO_PLAYLIST_PATH = ROOT / "data" / "audio-playlists.json"
 LEVELS = ["A0", "A1", "A2", "B1", "B2"]
 A0_SUPPORT_FILES = {"lesson-01-overview.md", "lesson-06-placement-check.md"}
+AUDIO_LESSON_BY_PREFIX = {
+    "DL-A0-01": "a0-01-alphabet",
+    "DL-A0-02": "a0-02-greetings",
+    "DL-A0-03": "a0-03-numbers-personal-info",
+    "DL-A0-04": "a0-04-first-sentences",
+    "DL-A0-05": "a0-05-classroom-phrases",
+    "DL-A0-GATE": "a0-a1-gate",
+    "DL-A1-01": "a1-01-introductions-languages-hobbies",
+    "DL-A1-02": "a1-02-work-family",
+    "DL-A1-03": "a1-03-city-cafe-hotel",
+    "DL-A1-04": "a1-04-daily-routine-time",
+    "DL-A1-05": "a1-05-food-drink",
+    "DL-A1-06": "a1-06-yesterday-perfekt",
+    "DL-A1-07": "a1-07-travel-weather",
+    "DL-A1-08": "a1-08-shopping-clothes",
+    "DL-A1-09": "a1-09-work-appointments",
+    "DL-A1-10": "a1-10-hobbies-health",
+    "DL-A1-11": "a1-11-home-directions",
+    "DL-A1-12": "a1-12-trip-invitations",
+    "DL-A2-01": "a2-01-routines-abilities-experiences",
+    "DL-A2-02": "a2-02-travel-comparisons",
+    "DL-A2-03": "a2-03-food-nutrition-shopping",
+    "DL-A2-04": "a2-04-office-phone-appointments",
+    "DL-A2-05": "a2-05-training-routine-wenn",
+    "DL-A2-06": "a2-06-family-happiness-gifts",
+    "DL-A2-07": "a2-07-language-learning-travel-purpose",
+    "DL-A2-08": "a2-08-media-news-passive",
+    "DL-A2-09": "a2-09-products-technology-complaints",
+    "DL-A2-10": "a2-10-sports-health-feelings-weil",
+    "DL-A2-11": "a2-11-housing-neighborhood-wohin",
+    "DL-A2-12": "a2-12-holidays-festivals-culture",
+    "DL-B1-01": "b1-01-daily-life-hobbies-experiences",
+    "DL-B1-02": "b1-02-food-habits-obwohl",
+    "DL-B1-03": "b1-03-work-communication-konjunktiv",
+    "DL-B1-04": "b1-04-continuing-education-damit",
+    "DL-B1-05": "b1-05-cities-relative-clauses",
+    "DL-B1-06": "b1-06-health-fitness-advice",
+    "DL-B1-07": "b1-07-lifestyles-customs-cultures",
+    "DL-B1-08": "b1-08-consumption-advertising-je-desto",
+    "DL-B1-09": "b1-09-travel-transport-environment",
+    "DL-B1-10": "b1-10-media-news-formal-communication",
+    "DL-B1-11": "b1-11-history-politics-passive-past",
+    "DL-B1-12": "b1-12-innovation-research-future",
+    "DL-B2-01": "b2-01-time-management-habits-reading",
+    "DL-B2-02": "b2-02-career-formal-communication-konjunktiv1",
+    "DL-B2-03": "b2-03-consumption-environment-passive-modal",
+    "DL-B2-04": "b2-04-cities-housing-participles",
+    "DL-B2-05": "b2-05-health-fitness-medical-information",
+    "DL-B2-06": "b2-06-study-applications-verb-noun-phrases",
+    "DL-B2-07": "b2-07-travel-experiences-prepositional-relatives",
+    "DL-B2-08": "b2-08-food-nutrition-data-passives",
+    "DL-B2-09": "b2-09-business-marketing-employment-prepositions",
+    "DL-B2-10": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+    "DL-B2-11": "b2-11-humans-nature-environment-nominalization",
+    "DL-B2-12": "b2-12-leisure-media-reported-speech",
+}
 
 
 def cells(line: str) -> list[str]:
@@ -28,7 +85,14 @@ def safe_inline(text: str) -> str:
     link_parts: list[str] = []
 
     def hold_code(match: re.Match[str]) -> str:
-        code_parts.append(f'<code dir="ltr">{html.escape(match.group(1))}</code>')
+        raw_code = match.group(1)
+        escaped = html.escape(raw_code)
+        if re.search(r"[\u0600-\u06FF]", raw_code):
+            code_parts.append(f'<code dir="auto">{escaped}</code>')
+        elif re.search(r"[A-Za-zÄÖÜäöüß]", raw_code):
+            code_parts.append(f'<code dir="ltr" lang="de">{escaped}</code>')
+        else:
+            code_parts.append(f'<code dir="ltr">{escaped}</code>')
         return f"@@COURSECODE{len(code_parts) - 1}@@"
 
     text = re.sub(r"`([^`]+)`", hold_code, text)
@@ -46,11 +110,33 @@ def safe_inline(text: str) -> str:
     text = re.sub(r"(?<!\*)\*([^*\n]+?)\*(?!\*)", r"<em>\1</em>", text)
     text = re.sub(r"__([^_\n]+?)__", r"<strong>\1</strong>", text)
     text = re.sub(r"(?<!_)_([^_\n]+?)_(?!_)", r"<em>\1</em>", text)
+    text = re.sub(r"</strong>(\s*→\s*)<strong>", r"\1", text)
     for index, rendered in enumerate(code_parts):
         text = text.replace(f"@@COURSECODE{index}@@", rendered)
     for index, rendered in enumerate(link_parts):
         text = text.replace(f"@@COURSELINK{index}@@", rendered)
     return text
+
+
+def is_german_html_fragment(fragment: str) -> bool:
+    plain = html.unescape(re.sub(r"<[^>]+>", "", fragment)).strip()
+    return bool(plain) and not re.search(r"[\u0600-\u06FF]", plain) and bool(re.search(r"[A-Za-zÄÖÜäöüß]", plain))
+
+
+def tag_inline_german_in_mixed_block(fragment: str) -> str:
+    def replace_tag(match: re.Match[str]) -> str:
+        tag_name, inner = match.group(1), match.group(2)
+        if is_german_html_fragment(inner):
+            return f'<{tag_name} lang="de">{inner}</{tag_name}>'
+        return match.group(0)
+
+    return re.sub(r"<(strong|em)>(.*?)</\1>", replace_tag, fragment)
+
+
+def render_block_tag(tag: str, inner_html: str, extra_attrs: str = "") -> str:
+    if is_german_html_fragment(inner_html):
+        return f'<{tag}{extra_attrs} dir="auto" lang="de">{inner_html}</{tag}>'
+    return f'<{tag}{extra_attrs} dir="auto">{tag_inline_german_in_mixed_block(inner_html)}</{tag}>'
 
 
 def render_table(table_lines: list[str]) -> str:
@@ -70,9 +156,10 @@ def render_table(table_lines: list[str]) -> str:
 
     def render_row(row: list[str], tag: str) -> str:
         row = (row + [""] * column_count)[:column_count]
-        return "<tr>" + "".join(f'<{tag} dir="auto">{safe_inline(cell)}</{tag}>' for cell in row) + "</tr>"
+        extra = ' scope="col"' if tag == "th" else ""
+        return "<tr>" + "".join(render_block_tag(tag, safe_inline(cell), extra) for cell in row) + "</tr>"
 
-    parts = ['<div class="lesson-table-wrap"><table class="lesson-table">']
+    parts = ['<div class="lesson-table-wrap" tabindex="0" role="region" aria-label="جدول الدرس — استخدم أسهم الاتجاه للتمرير"><table class="lesson-table">']
     if header:
         parts.append("<thead>" + render_row(header, "th") + "</thead>")
     parts.append("<tbody>")
@@ -105,7 +192,7 @@ def markdown_to_html(markdown: str) -> str:
             fragments.append(safe_inline(raw.rstrip()))
             if index < len(paragraph) - 1:
                 fragments.append("<br>" if hard_break else " ")
-        out.append(f'<p dir="auto">{"".join(fragments)}</p>')
+        out.append(render_block_tag("p", "".join(fragments)))
         paragraph = []
 
     def flush_list() -> None:
@@ -113,7 +200,7 @@ def markdown_to_html(markdown: str) -> str:
         if not list_items or not list_kind:
             return
         tag = "ol" if list_kind == "ol" else "ul"
-        rendered = "".join(f'<li dir="auto">{safe_inline(item)}</li>' for item in list_items)
+        rendered = "".join(render_block_tag("li", safe_inline(item)) for item in list_items)
         out.append(f'<{tag}>{rendered}</{tag}>')
         list_items = []
         list_kind = None
@@ -122,7 +209,7 @@ def markdown_to_html(markdown: str) -> str:
         nonlocal quote_lines
         if quote_lines:
             text = "<br>".join(safe_inline(line.strip()) for line in quote_lines)
-            out.append(f'<blockquote dir="auto">{text}</blockquote>')
+            out.append(render_block_tag("blockquote", text))
             quote_lines = []
 
     def flush_table() -> None:
@@ -239,6 +326,10 @@ def markdown_to_html(markdown: str) -> str:
     return "\n".join(out)
 
 
+def clean_objective_text(value: str) -> str:
+    return re.sub(r"\*\*|`", "", value).strip()
+
+
 def lesson_objective(markdown: str) -> str:
     for pattern in (
         r"\*\*الهدف:\*\*\s*([^\n]+)",
@@ -246,7 +337,7 @@ def lesson_objective(markdown: str) -> str:
     ):
         match = re.search(pattern, markdown)
         if match:
-            value = match.group(1).split("·")[0].strip()
+            value = clean_objective_text(match.group(1).split("·")[0])
             if value:
                 return value
     lines = markdown.splitlines()
@@ -258,13 +349,15 @@ def lesson_objective(markdown: str) -> str:
                     break
                 match = re.match(r"^\s*[-*+]\s+(.+)$", candidate)
                 if match:
-                    bullets.append(match.group(1).strip())
+                    bullets.append(clean_objective_text(match.group(1)))
             if bullets:
-                return "؛ ".join(bullets)
+                ends_with_dot = bullets[-1].endswith(".")
+                joined = "؛ ".join(item.rstrip(".؛ ").strip() for item in bullets)
+                return f"{joined}." if ends_with_dot and not joined.endswith(".") else joined
     for line in lines[1:]:
         stripped = line.strip()
         if stripped and not stripped.startswith(("**", ">", "|", "#")):
-            return stripped
+            return clean_objective_text(stripped)
     return "درس ألماني شامل مع أمثلة وتمارين أصلية."
 
 
@@ -305,6 +398,8 @@ def vocab_table(markdown: str, lesson_id: str) -> list[dict[str, str]]:
         if meaning_index is None:
             continue
         example_index = next((i for i, h in enumerate(headers_normalized) if "مثال" in h or "example" in h), None)
+        if example_index is None:
+            example_index = next((i for i, h in enumerate(headers_normalized) if any(k in h for k in ("الجمع", "التصريف", "ملاحظة"))), None)
         output: list[dict[str, str]] = []
         for row in table_lines[separator_index + 1 :]:
             if is_table_separator(row):
@@ -320,6 +415,8 @@ def vocab_table(markdown: str, lesson_id: str) -> list[dict[str, str]]:
             translation = re.sub(r"\*\*|`", "", translation).strip()
             example = values[example_index].strip() if example_index is not None and example_index < len(values) else ""
             example = re.sub(r"\*\*|`", "", example).strip()
+            if example in {"—", "-"}:
+                example = ""
             output.append({
                 "id": f"{lesson_id}-word-{len(output) + 1}",
                 "word": term,
@@ -331,8 +428,107 @@ def vocab_table(markdown: str, lesson_id: str) -> list[dict[str, str]]:
     return []
 
 
+def assessment_source(path: Path) -> tuple[dict, list[dict], list[dict]]:
+    default_assessment = {
+        "status": "not_ready",
+        "version": None,
+        "minimumScore": 80,
+        "minimumItems": None,
+        "objectiveIds": [],
+        "goalCriteriaVerified": False,
+        "performanceEvidenceRequired": False,
+        "performanceEvidenceImplemented": False,
+    }
+    assessment_path = path.with_suffix(".assessment.json")
+    if not assessment_path.exists():
+        return default_assessment, [], []
+    try:
+        source = json.loads(assessment_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise SystemExit(f"Invalid assessment JSON in {assessment_path.relative_to(ROOT)}: {error}") from error
+    if not isinstance(source, dict) or source.get("schemaVersion") != 1:
+        raise SystemExit(f"Assessment sidecar must use schemaVersion 1: {assessment_path.relative_to(ROOT)}")
+    assessment = source.get("assessment")
+    quiz = source.get("quiz", [])
+    performance_tasks = source.get("performanceTasks", [])
+    if not isinstance(assessment, dict) or not isinstance(quiz, list) or not isinstance(performance_tasks, list):
+        raise SystemExit(f"Invalid assessment shape in {assessment_path.relative_to(ROOT)}")
+    assessment = {**default_assessment, **assessment}
+    if assessment.get("status") not in {"draft", "not_ready", "ready"}:
+        raise SystemExit(f"Unknown assessment status in {assessment_path.relative_to(ROOT)}")
+    if assessment.get("minimumScore") != 80:
+        raise SystemExit(f"Assessment threshold must remain 80 in {assessment_path.relative_to(ROOT)}")
+    return assessment, quiz, performance_tasks
+
+
+def audio_source() -> list[dict]:
+    try:
+        source = json.loads(AUDIO_PLAYLIST_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as error:
+        raise SystemExit(f"Invalid audio playlist JSON: {error}") from error
+    if not isinstance(source, dict) or source.get("schemaVersion") != 1 or not isinstance(source.get("audioAssets"), list):
+        raise SystemExit("Audio playlist must use schemaVersion 1 and include an audioAssets list")
+    assets = source["audioAssets"]
+    selected_voice_ids = source.get("selectedVoiceIds")
+    if (
+        not isinstance(selected_voice_ids, list)
+        or not selected_voice_ids
+        or any(not isinstance(voice_id, str) or not re.fullmatch(r"voice-\d+", voice_id) for voice_id in selected_voice_ids)
+        or len(set(selected_voice_ids)) != len(selected_voice_ids)
+    ):
+        raise SystemExit("Audio playlist must list unique, auditioned selectedVoiceIds")
+    selected_voice_ids = set(selected_voice_ids)
+    allowed_statuses = {"not_generated", "partial", "generated_pending_acoustic_review", "ready"}
+    seen_ids: set[str] = set()
+    ready_speaker_voices: dict[str, str] = {}
+    for asset in assets:
+        if not isinstance(asset, dict) or not isinstance(asset.get("assetId"), str) or not asset["assetId"]:
+            raise SystemExit("Every audio asset needs a stable assetId")
+        if asset["assetId"] in seen_ids:
+            raise SystemExit(f"Duplicate audio asset ID: {asset['assetId']}")
+        seen_ids.add(asset["assetId"])
+        asset_prefix = "-".join(asset["assetId"].split("-")[:3])
+        expected_lesson_id = AUDIO_LESSON_BY_PREFIX.get(asset_prefix)
+        if expected_lesson_id is None or asset.get("lessonId") != expected_lesson_id:
+            raise SystemExit(f"Audio asset is assigned to the wrong lesson: {asset['assetId']} -> {asset.get('lessonId')}")
+        if asset.get("status") not in allowed_statuses or not isinstance(asset.get("segments"), list) or not asset["segments"]:
+            raise SystemExit(f"Invalid audio asset status or segments: {asset['assetId']}")
+        if asset.get("transcriptPolicy", "offer") not in {"offer", "hide_until_first_attempt"}:
+            raise SystemExit(f"Invalid transcript policy: {asset['assetId']}")
+        present = 0
+        asset_speaker_voices: dict[str, str] = {}
+        for segment in asset["segments"]:
+            if not isinstance(segment, dict) or not all(isinstance(segment.get(key), str) and segment[key].strip() for key in ("src", "speaker", "text", "voiceId")):
+                raise SystemExit(f"Every audio segment needs a path, speaker, voice ID, and transcript: {asset['assetId']}")
+            if segment["voiceId"] not in selected_voice_ids:
+                raise SystemExit(f"Audio segment uses an unselected voice ID: {asset['assetId']}")
+            previous_asset_voice = asset_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+            if previous_asset_voice != segment["voiceId"]:
+                raise SystemExit(f"A speaker changes voice within an asset: {segment['speaker']}")
+            if asset["status"] == "ready":
+                speaker_key = f"{asset['lessonId']}:{segment['speaker']}" if segment["speaker"] in {"Verkäufer"} else segment["speaker"]
+                previous_ready_voice = ready_speaker_voices.setdefault(speaker_key, segment["voiceId"])
+                if previous_ready_voice != segment["voiceId"]:
+                    raise SystemExit(f"An approved speaker changes voice across assets: {segment['speaker']}")
+            path = Path(segment["src"])
+            if path.is_absolute() or ".." in path.parts or path.suffix.lower() != ".mp3":
+                raise SystemExit(f"Audio paths must be safe relative MP3 paths: {segment['src']}")
+            if path.stem != asset["assetId"] and not path.stem.startswith(asset["assetId"] + "-"):
+                raise SystemExit(f"Audio file does not belong to its asset ID: {segment['src']}")
+            present += (ROOT / path).is_file()
+        segment_count = len(asset["segments"])
+        if asset["status"] in {"ready", "generated_pending_acoustic_review"} and present != segment_count:
+            raise SystemExit(f"Audio asset is missing generated segments: {asset['assetId']}")
+        if asset["status"] == "partial" and not 0 < present < segment_count:
+            raise SystemExit(f"Partial audio asset must have both generated and missing segments: {asset['assetId']}")
+        if asset["status"] == "not_generated" and present:
+            raise SystemExit(f"Audio marked not_generated already contains files: {asset['assetId']}")
+    return assets
+
+
 def build_lesson(level: str, path: Path) -> dict:
     markdown = path.read_text(encoding="utf-8")
+    assessment, quiz, performance_tasks = assessment_source(path)
     raw_title = next((line[2:].strip() for line in markdown.splitlines() if line.startswith("# ")), path.stem)
     unit_match = re.match(rf"{re.escape(level)}\.(\d+)\s*[—-]\s*(.*)", raw_title)
     title = unit_match.group(2).strip() if unit_match else raw_title
@@ -350,13 +546,15 @@ def build_lesson(level: str, path: Path) -> dict:
         "sourceFile": path.relative_to(ROOT).as_posix(),
         "contentHtml": markdown_to_html(markdown),
         "vocabulary": vocab_table(markdown, lesson_id),
-        "quiz": [],
+        "quiz": quiz,
+        "assessment": assessment,
+        "performanceTasks": performance_tasks,
     }
 
 
 def main() -> None:
     if not COURSE_PATH.exists():
-        raise SystemExit("Missing data/course.json; restore its levels/diagnostic seed first.")
+        raise SystemExit("Missing data/course.json; restore its course-level seed first.")
     current = json.loads(COURSE_PATH.read_text(encoding="utf-8"))
     lessons: list[dict] = []
     for level in LEVELS:
@@ -371,18 +569,45 @@ def main() -> None:
     seen = {lesson["id"] for lesson in lessons}
     if len(seen) != len(lessons):
         raise SystemExit("Duplicate generated lesson IDs detected")
+    audio_assets = audio_source()
+    valid_audio_lessons = seen | {"a0-a1-gate"}
+    for asset in audio_assets:
+        if asset.get("lessonId") not in valid_audio_lessons:
+            raise SystemExit(f"Audio asset references an unknown lesson: {asset['assetId']}")
+        if "sectionHeading" in asset:
+            heading = asset["sectionHeading"]
+            lesson = next((item for item in lessons if item["id"] == asset["lessonId"]), None)
+            if not isinstance(heading, str) or not heading.strip() or lesson is None:
+                raise SystemExit(f"Invalid inline audio heading: {asset['assetId']}")
+            marker = f'<h2 dir="auto">{html.escape(heading)}</h2>'
+            if lesson["contentHtml"].count(marker) != 1:
+                raise SystemExit(f"Inline audio heading must match one lesson section: {asset['assetId']}")
     transition_path = ROOT / "content" / "A0" / "lesson-06-placement-check.md"
     transition_markdown = transition_path.read_text(encoding="utf-8")
     transition_title = next((line[2:].strip() for line in transition_markdown.splitlines() if line.startswith("# ")), "اختبار انتقال إلى A1")
     _, transition_duration = lesson_minutes(transition_markdown)
+    transition_assessment, transition_quiz, transition_tasks = assessment_source(transition_path)
+    transition_assessment["performanceEvidenceRequired"] = True
+    if not transition_path.with_suffix(".assessment.json").exists():
+        transition_assessment["minimumItems"] = 10
 
-    current["version"] = 2
+    current["version"] = 3
+    current.pop("diagnostic", None)
+    current["progression"] = {
+        "startingLevel": "A0",
+        "masteryThreshold": 80,
+    }
     current["lessons"] = lessons
+    current["audioAssets"] = audio_assets
     current["a0TransitionCheck"] = {
+        "id": "a0-a1-gate",
         "title": transition_title,
         "durationLabel": transition_duration,
         "sourceFile": transition_path.relative_to(ROOT).as_posix(),
         "contentHtml": markdown_to_html(transition_markdown),
+        "quiz": transition_quiz,
+        "assessment": transition_assessment,
+        "performanceTasks": transition_tasks,
     }
     current["contentSource"] = "content/ Markdown lessons"
     COURSE_PATH.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

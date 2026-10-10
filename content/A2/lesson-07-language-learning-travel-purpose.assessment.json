@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-07-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-07-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR25: um … zu للغاية لا لإثبات النتيجة؛ الفاعل نفسه في الأنماط المدروسة، والفاصلة لازمة فيها، وzu داخل الأفعال المنفصلة.",
+      "T04 يدرب nachzuschlagen/vorzubereiten؛ T07 يميز اختلاف المنفذ ويدرب الفاصلة؛ حُذف افتراض جنس الراوي، وقُيدت روابط T01 بمعطيات صريحة.",
+      "P01/T08أ أربع جمل مع الجهر؛ P02/T08ب ثلاث جمل كتابة فقط بنموذجين مطابقين. Q08→T05 محفوظ، وصُحح الكتالوج؛ الخيارات الثلاثون والمفاتيح و80% والصوت محفوظة."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-07-Q01",
+      "sourceTaskIds": [
+        "DL-A2-07-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "مفردات السفر",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر المطابقة الصحيحة بين الفعل والغاية كما في التمرين.",
+      "options": [
+        "ein Wörterbuch benutzen — um neue Wörter zu verstehen",
+        "eine Sprachschule besuchen — um im Ausland zu reisen",
+        "den Reisepass mitnehmen — um Unterricht zu haben"
+      ],
+      "answerIndex": 0,
+      "explanation": "استخدام القاموس يساعد على فهم كلمات جديدة؛ وهذا هو الربط الصحيح بين الفعل والغاية."
+    },
+    {
+      "id": "DL-A2-07-Q02",
+      "sourceTaskIds": [
+        "DL-A2-07-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "um … zu",
+        "اختيار محدد"
+      ],
+      "prompt": "متى نستخدم **um … zu** وفق الدرس؟",
+      "options": [
+        "عندما يتغير الفاعل دائمًا.",
+        "عندما يكون فاعل الجزأين هو نفسه لذكر الهدف.",
+        "للسؤال عن الماضي."
+      ],
+      "answerIndex": 1,
+      "explanation": "في الأنماط البسيطة المدروسة نذكر الغاية عندما يكون منفذ النشاط والغاية نفسه؛ لا نكرر الفاعل داخل تركيب المصدر."
+    },
+    {
+      "id": "DL-A2-07-Q03",
+      "sourceTaskIds": [
+        "DL-A2-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "تركيب الغاية",
+        "اختيار محدد"
+      ],
+      "prompt": "أي تركيب صحيح لمعنى «لكي أتعلم كلمات جديدة»؟",
+      "options": [
+        "um zu neue Wörter lernen",
+        "um neue Wörter lernen zu",
+        "um neue Wörter zu lernen"
+      ],
+      "answerIndex": 2,
+      "explanation": "um في البداية، ثم الكلمات المكملة، ثم zu lernen في النهاية في هذا المثال."
+    },
+    {
+      "id": "DL-A2-07-Q04",
+      "sourceTaskIds": [
+        "DL-A2-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "الفعل المنفصل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما صيغة **nachschlagen** مع zu؟",
+      "options": [
+        "zu nachschlagen",
+        "nachzuschlagen",
+        "nachschlagen zu"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع الفعل المنفصل تدخل zu بين البادئة والفعل: nachzuschlagen."
+    },
+    {
+      "id": "DL-A2-07-Q05",
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "إلى أين تريد Maha السفر؟",
+      "options": [
+        "إلى Wien.",
+        "إلى München.",
+        "إلى Bremen."
+      ],
+      "answerIndex": 0,
+      "explanation": "النص يذكر أنها تريد السفر إلى Wien."
+    },
+    {
+      "id": "DL-A2-07-Q06",
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "لماذا تستخدم Maha القاموس؟",
+      "options": [
+        "لكي تحجز فندقًا.",
+        "لكي تشتري تذكرة.",
+        "لكي تتعلم كلمات جديدة."
+      ],
+      "answerIndex": 2,
+      "explanation": "تستخدم القاموس um neue Wörter zu lernen."
+    },
+    {
+      "id": "DL-A2-07-Q07",
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين تدرس Maha الألمانية يوميًا في Wien؟",
+      "options": [
+        "في محطة القطار.",
+        "في مدرسة لغات.",
+        "في الفندق."
+      ],
+      "answerIndex": 1,
+      "explanation": "تدرس في einer Sprachschule."
+    },
+    {
+      "id": "DL-A2-07-Q08",
+      "sourceTaskIds": [
+        "DL-A2-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "تحديد الغاية",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Maha fährt nach Wien, um einen Sprachkurs zu besuchen**، من سيحضر الدورة؟",
+      "options": [
+        "Maha نفسها.",
+        "صديقتها فقط.",
+        "الأسرة المضيفة."
+      ],
+      "answerIndex": 0,
+      "explanation": "Maha هي التي تسافر وتنوي حضور الدورة في هذه الجملة؛ الغاية لا تثبت وحدها أنها حضرت فعلًا."
+    },
+    {
+      "id": "DL-A2-07-Q09",
+      "sourceTaskIds": [
+        "DL-A2-07-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "علامة الترقيم",
+        "اختيار محدد"
+      ],
+      "prompt": "في النمط المدروس: Wir benutzen ein Wörterbuch … um neue Wörter zu verstehen، أين تلزم الفاصلة؟",
+      "options": [
+        "بعد zu مباشرةً.",
+        "لا تستخدم فاصلة.",
+        "قبل تركيب um … zu."
+      ],
+      "answerIndex": 2,
+      "explanation": "تلزم الفاصلة قبل um في هذا النمط؛ ليست مجرد اختيار أسلوبي."
+    },
+    {
+      "id": "DL-A2-07-Q10",
+      "sourceTaskIds": [
+        "DL-A2-07-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "skillTags": [
+        "تركيب الغاية",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر جملة صحيحة:",
+      "options": [
+        "Wir benutzen ein Wörterbuch, um zu neue Wörter verstehen.",
+        "Wir benutzen ein Wörterbuch, um neue Wörter zu verstehen.",
+        "Wir benutzen ein Wörterbuch um neue Wörter verstehen zu."
+      ],
+      "answerIndex": 1,
+      "explanation": "um ثم المكمل neue Wörter ثم zu verstehen في النهاية، وفاصلة قبل um؛ لا يلزم وجود مفعول في كل غاية، مثل um zu reisen."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-07-P01",
+      "sourceTaskIds": [
+        "DL-A2-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل عن رحلة لغوية خيالية بضمير ich: الجملة1 تذكر رحلة لغوية إلى Wien في الصيف؛ الجملة2 زيارة مدرسة لغات بهدف التدرب على الألمانية؛ الجملة3 زيارة متاحف بهدف معرفة المزيد عن المدينة؛ الجملة4 التحدث مع الأسرة المضيفة بهدف استعمال اللغة في الحياة اليومية. استعمل um … zu في الجمل2–4 مع الفاصلة ونفس منفذ النشاط والغاية، ثم اقرأ الجمل الأربع بصوت مرتفع. لا سفر أو شريك أو تسجيل مطلوب.",
+      "criteria": {
+        "taskCompletion": "أربع جمل: رحلة إلى Wien صيفًا، ومدرسة لغات، ومتاحف، وحديث مع الأسرة المضيفة، مع الأهداف المطلوبة وقراءة الجميع جهرًا.",
+        "meaningClarity": "هدف كل نشاط واضح ومتسق مع الخطة الخيالية دون ادعاء تحقق التحسن أو السفر فعلًا.",
+        "targetSkill": "ثلاثة تراكيب um … zu بفاصلة ومصدر في النهاية، ومنفذ النشاط والغاية نفسه دون تكرار الفاعل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-07-P02",
+      "sourceTaskIds": [
+        "DL-A2-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-07-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب ثلاث جمل عن استعداد خيالي لرحلة، كتابة فقط وبضمير ich. الجملة1 تعلم الألمانية للاستعداد للرحلة، وفي نهايتها mich auf die Reise vorzubereiten؛ الجملة2 أخذ قاموس لمراجعة كلمات جديدة وفي نهايتها neue Wörter nachzuschlagen؛ الجملة3 الاستعلام عن المدينة لإيجاد أماكن مناسبة وفي نهايتها passende Orte zu finden. استعمل um … zu والفاصلة في كل جملة، وطابق mich مع ich. لا جهر أو تسجيل أو حجز أو معلومات شخصية مطلوبة.",
+      "criteria": {
+        "taskCompletion": "ثلاث جمل عن تعلم الألمانية وأخذ القاموس والاستعلام عن المدينة، مع غاية لكل نشاط، كتابة فقط.",
+        "meaningClarity": "الاستعداد للرحلة ومراجعة الكلمات وإيجاد الأماكن مناسبة للأفعال المذكورة؛ لا حجز أو بيانات حقيقية.",
+        "targetSkill": "um … zu والفاصلة في كل جملة؛ mich مع ich، وvorzubereiten/nachzuschlagen كلمتان صحيحتان، مع nehme…mit في الرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

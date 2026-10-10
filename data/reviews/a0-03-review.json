@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a0-03-numbers-personal-info",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a0-03-v3",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "R-GOETHE",
+      "citation": "[2](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "قرئ الفصل 1: أسئلة التعارف والهاتف وتصريف heißen/sein/kommen/wohnen. العبارة المستخرجة Ich heißen Matteo Kraft لم تُعتمد؛ جدول التصريف في المصدر نفسه يعطي ich heiße. لا نجزم هل العيب في الأصل أو الاستخراج."
+    },
+    {
+      "id": "R-NUM",
+      "citation": "[1](https://deutschegrammatik20.de/adjektiv/zahlen-kardinalzahlen-ordinalzahlen/kardinalzahlen/)",
+      "scope": "قرئت قائمة الأعداد 0–100، وصيغ 16/17/21 والعشرات وكتابة العدد كلمة واحدة. اقتصر الاستعمال على نطاق الدرس، لا كل أحكام الصفحة."
+    },
+    {
+      "id": "R-CROSS",
+      "citation": "[3](https://www.omniglot.com/language/numbers/german.htm)",
+      "scope": "مقارنة ثانية مستقلة للقائمة العددية 0–100. قرئ جدول الأعداد؛ لم نستمع إلى التسجيلات المضمنة ولم نعتمد ملاحظات الكسور والتاريخ."
+    },
+    {
+      "id": "R-SIE",
+      "citation": "[4](https://grammis.ids-mannheim.de/rechtschreibung/6197)",
+      "scope": "§65: كتابة Sie و Ihr وصيغها المصرفة بحرف كبير؛ §66: du/dein في الاستعمال العادي."
+    },
+    {
+      "id": "R-AGE",
+      "citation": "[1](https://coffeebreaklanguages.com/2019/05/wie-alt-bist-du-talking-about-your-age-in-german-coffee-break-german-to-go-episode-1-04/)",
+      "scope": "قرئت الفقرة التي تقارن Wie alt bist du? و Wie alt sind Sie?؛ لم يُشاهد الفيديو أو يسمع. الخطأ الإنجليزي where age are you? في المقدمة لا يُعتمد ترجمة؛ الصيغ الألمانية قورنت بجدول sein في Goethe."
+    }
+  ],
+  "sourceHashes": {
+    "content/A0/lesson-03-numbers-personal-info.md": "6a247f542b1fd5679322c2b3487f9d66ca6091b2b6894599b4be4fcf611461fd",
+    "content/A0/lesson-03-numbers-personal-info.assessment.json": "b3b809f8bb7561cb4d36380654701e4760b56c6ffa240cd74c1459d51362c39c"
+  },
+  "audioSnapshotHashes": {
+    "DL-A0-03-AUD-NUM-01": "0149f7e8abc7426a08d8990841e09620d99cd666ce4ee550daa7132b295a47d0",
+    "DL-A0-03-AUD-DLG-01": "10350438ed98dfcdd3d41c1c7c45f67f41f4554b2e4320fb2046a3a50b61eab6"
+  },
+  "units": [
+    {
+      "id": "goal-and-scope",
+      "decision": "corrected",
+      "finding": "حُذف وعد طلب تهجئة اسم غير المدرّب أو المقاس هنا؛ بقيت البيانات والعمر 0–20 وطلب رقم تدريبي. التوسعة اختيارية في النص والصوت ولا تدخل التقييم. الحفظ حتى 100 ليس شرطًا. لا تغيير لعتبة 80%.",
+      "sourceIds": []
+    },
+    {
+      "id": "number-00",
+      "decision": "retained",
+      "finding": "0 = null؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-01",
+      "decision": "retained",
+      "finding": "1 = eins؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-02",
+      "decision": "retained",
+      "finding": "2 = zwei؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-03",
+      "decision": "retained",
+      "finding": "3 = drei؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-04",
+      "decision": "retained",
+      "finding": "4 = vier؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-05",
+      "decision": "retained",
+      "finding": "5 = fünf؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-06",
+      "decision": "retained",
+      "finding": "6 = sechs؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-07",
+      "decision": "retained",
+      "finding": "7 = sieben؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-08",
+      "decision": "retained",
+      "finding": "8 = acht؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-09",
+      "decision": "retained",
+      "finding": "9 = neun؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-10",
+      "decision": "retained",
+      "finding": "10 = zehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-11",
+      "decision": "retained",
+      "finding": "11 = elf؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-12",
+      "decision": "retained",
+      "finding": "12 = zwölf؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-13",
+      "decision": "retained",
+      "finding": "13 = dreizehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-14",
+      "decision": "retained",
+      "finding": "14 = vierzehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-15",
+      "decision": "retained",
+      "finding": "15 = fünfzehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-16",
+      "decision": "retained",
+      "finding": "16 = sechzehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-17",
+      "decision": "retained",
+      "finding": "17 = siebzehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-18",
+      "decision": "retained",
+      "finding": "18 = achtzehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-19",
+      "decision": "retained",
+      "finding": "19 = neunzehn؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "number-20",
+      "decision": "retained",
+      "finding": "20 = zwanzig؛ مطابقة العدد والكلمة محفوظة بعد المقارنة بمرجعين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-30",
+      "decision": "retained",
+      "finding": "30 = dreißig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-40",
+      "decision": "retained",
+      "finding": "40 = vierzig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-50",
+      "decision": "retained",
+      "finding": "50 = fünfzig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-60",
+      "decision": "retained",
+      "finding": "60 = sechzig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-70",
+      "decision": "retained",
+      "finding": "70 = siebzig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-80",
+      "decision": "retained",
+      "finding": "80 = achtzig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-90",
+      "decision": "retained",
+      "finding": "90 = neunzig؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "extension-100",
+      "decision": "retained",
+      "finding": "100 = hundert؛ صحيح، توسعة اختيارية لا شرط إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "compound-rule",
+      "decision": "corrected",
+      "finding": "قُيّدت القاعدة بالأعداد ذات الرقمين 21–99 غير مضاعفات 10 بدل «من 21 فصاعدًا». 21 einundzwanzig و 34 vierunddreißig صحيحان، ein قبل und، والكلمة متصلة. 30 و 100 لا تخضعان لقالب آحاد+und+عشرات.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "personal-01",
+      "decision": "retained",
+      "finding": "Wie heißt du? / Ich heiße Salma. — الاسم. الترجمة والقالب صحيحان في السياق.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "personal-02",
+      "decision": "retained",
+      "finding": "Wie alt bist du? / Ich bin 18 Jahre alt. — العمر. الترجمة والقالب صحيحان في السياق.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "personal-03",
+      "decision": "retained",
+      "finding": "Woher kommst du? / Ich komme aus Tunesien. — الأصل؛ قد يكون مكانًا لا دولة فقط. الترجمة والقالب صحيحان في السياق.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "personal-04",
+      "decision": "retained",
+      "finding": "Wo wohnst du? / Ich wohne in Nabeul. — السكن الحالي. الترجمة والقالب صحيحان في السياق.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "personal-05",
+      "decision": "retained",
+      "finding": "Wie ist deine Telefonnummer? / Meine Nummer ist … — طلب الهاتف؛ الجواب قالب يحتاج رقمًا. الترجمة والقالب صحيحان في السياق.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "formal-01",
+      "decision": "corrected",
+      "finding": "Wie heißt du? → Wie heißen Sie?؛ نموذج كامل بدل الاستبدال الآلي. الفعل يوافق Sie، وليس صيغة du.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "formal-02",
+      "decision": "corrected",
+      "finding": "Wie alt bist du? → Wie alt sind Sie?؛ نموذج كامل بدل الاستبدال الآلي. الفعل يوافق Sie، وليس صيغة du.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "formal-03",
+      "decision": "corrected",
+      "finding": "Woher kommst du? → Woher kommen Sie?؛ نموذج كامل بدل الاستبدال الآلي. الفعل يوافق Sie، وليس صيغة du.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "formal-04",
+      "decision": "corrected",
+      "finding": "Wo wohnst du? → Wo wohnen Sie?؛ نموذج كامل بدل الاستبدال الآلي. الفعل يوافق Sie، وليس صيغة du.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "formal-05",
+      "decision": "corrected",
+      "finding": "Wie ist deine Telefonnummer? → Wie ist Ihre Telefonnummer?؛ نموذج كامل بدل الاستبدال الآلي. ist لا يتغيّر؛ deine→Ihre مع Telefonnummer.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-SIE"
+      ]
+    },
+    {
+      "id": "privacy-and-models",
+      "decision": "clarified",
+      "finding": "بيانات خيالية لكل الأنشطة؛ العمر 18 أو 20 يبقي المهمة ضمن الأساس حتى للكبار. نموذج البلد Tunesien والسكن Nabeul، بلا تعميم حذف الأداة لكل البلدان. قراءة كل خانة هي طريقة التدريب لا الطريقة الوحيدة الممكنة للأرقام. التسلسل 26 41 08 ليس هاتفًا كاملًا ولا يطلب التواصل به.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "decision": "retained",
+      "finding": "Hallo! Wie heißt du? — تحية وسؤال اسم بصيغة du متسقان.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "decision": "retained",
+      "finding": "Ich heiße Yassine. Und du? — heiße مع ich؛ Und du? سؤال مقابل طبيعي في السياق.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "decision": "retained",
+      "finding": "Ich heiße Mariem. Woher kommst du? — اسم Mariem ثم سؤال الأصل؛ ترابط الأدوار صحيح.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "decision": "retained",
+      "finding": "Ich komme aus Tunesien. Ich wohne in Nabeul. — aus Tunesien للأصل و in Nabeul للسكن؛ الجملتان واضحتان.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "decision": "retained",
+      "finding": "Wie alt bist du? — سؤال العمر مع bistdu صحيح.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "decision": "retained",
+      "finding": "Ich bin 18 Jahre alt. — bin مع ich و Jahre alt؛ الرقم 18 في Markdown مكافئ achtzehn في التفريغ، لا تطابق حرفي.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "DL-A0-03-T01",
+      "decision": "retained",
+      "finding": "خمسة بنود ومفتاحها صحيحان، لا تعديل.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ],
+      "items": [
+        "3→drei",
+        "7→sieben",
+        "12→zwölf",
+        "16→sechzehn",
+        "20→zwanzig"
+      ]
+    },
+    {
+      "id": "DL-A0-03-T02",
+      "decision": "corrected",
+      "finding": "إضافة neunzehn ومفتاح 19، وربط Q06 بهذا التمرين.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ],
+      "items": [
+        "neun→9",
+        "vierzehn→14",
+        "achtzehn→18",
+        "siebzehn→17",
+        "zwanzig→20",
+        "neunzehn→19؛ مضاف لتغطية Q06"
+      ]
+    },
+    {
+      "id": "DL-A0-03-T03",
+      "decision": "retained",
+      "finding": "أربعة فراغات und صحيحة؛ تمرين قالب اختياري محدود التنوع لا اختبار إتقان.",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ],
+      "items": [
+        "21→einundzwanzig؛ الفراغ und",
+        "34→vierunddreißig؛ الفراغ und",
+        "45→fünfundvierzig؛ الفراغ und",
+        "62→zweiundsechzig؛ الفراغ und"
+      ]
+    },
+    {
+      "id": "DL-A0-03-T04",
+      "decision": "retained",
+      "finding": "ثلاث مفاضلات سؤال/غرض صحيحة.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ],
+      "items": [
+        "العمر: Wie alt bist du? لا Wo wohnst du?",
+        "الأصل: Woher kommst du? لا Wie heißt du?",
+        "السكن: Wo wohnst du? لا Wie alt bist du?"
+      ]
+    },
+    {
+      "id": "DL-A0-03-T05",
+      "decision": "retained",
+      "finding": "ستة فراغات ومفاتيح صحيحة؛ Noura/20 شخصية تدريبية مختلفة عن حوار Yassine/18، ليس تناقضًا. لا سؤال مصحح آليًا مرتبط مباشرة بهذا التمرين.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ],
+      "items": [
+        "Wie heißt du?",
+        "Ich heiße Noura.",
+        "Woher kommst du?",
+        "Ich komme aus Tunesien.",
+        "Wie alt bist du?",
+        "Ich bin 20 Jahre alt."
+      ]
+    },
+    {
+      "id": "DL-A0-03-T06",
+      "decision": "clarified",
+      "finding": "أضيف السؤال قبل الجواب ودليل كتابي وأسماء خانات وقراءة صوتية. لا رقم حقيقي أو تسجيل مطلوب.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-NUM"
+      ],
+      "items": [
+        "السؤال: Wie ist deine Telefonnummer?",
+        "الجواب: Meine Nummer ist 26 41 08.",
+        "الخانة 1:2→zwei",
+        "الخانة 2:6→sechs",
+        "الخانة 3:4→vier",
+        "الخانة 4:1→eins",
+        "الخانة 5:0→null",
+        "الخانة 6:8→acht"
+      ]
+    },
+    {
+      "id": "DL-A0-03-T07",
+      "decision": "clarified",
+      "finding": "أربعة أزواج سؤال/جواب مكتوبة ثم مقروءة؛ يمكن أداء الدورين منفردًا. المثال خيالي، والاسم والعمر قابلان للتغيير ضمن المطلوب.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ],
+      "items": [
+        "Wie heißt du? / Ich heiße Salma.",
+        "Wie alt bist du? / Ich bin 18 Jahre alt.",
+        "Woher kommst du? / Ich komme aus Tunesien.",
+        "Wo wohnst du? / Ich wohne in Nabeul."
+      ]
+    },
+    {
+      "id": "DL-A0-03-T08",
+      "decision": "clarified",
+      "finding": "تصحيحأربعة أسطر؛ بطاقة لنفس الشخصية، ومثال منفصل يوضح الاتساق دون اعتبار جواب واحد حصريًا.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ],
+      "items": [
+        "Ich heiße Salma.",
+        "Ich komme aus Tunesien.",
+        "Ich wohne in Nabeul.",
+        "Ich bin 18 Jahre alt."
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q01",
+      "decision": "clarified",
+      "finding": "المفتاح drei صحيح؛ مشتت 30 استبدل بـ 4 لمواءمة الأساس. الخيارات: drei / vier / dreizehn؛ المصدر: DL-A0-03-T01",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q02",
+      "decision": "retained",
+      "finding": "المفتاح 7 صحيح؛ 6 و 17 مشتتان من الأساس. الخيارات: 6 / 7 / 17؛ المصدر: DL-A0-03-T01",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q03",
+      "decision": "retained",
+      "finding": "المفتاح zwölf صحيح؛ zwanzig و zwei ضمن 0–20. الخيارات: zwölf / zwanzig / zwei؛ المصدر: DL-A0-03-T01",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q04",
+      "decision": "clarified",
+      "finding": "المفتاح sechzehn صحيح؛ مشتت 60 استبدل بـ 17. الخيارات: siebzehn / sechs / sechzehn؛ المصدر: DL-A0-03-T01",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q05",
+      "decision": "clarified",
+      "finding": "المفتاح siebzehn صحيح؛ siebenzehn خطأ مقصود لا نموذج تعليمي، و 70 استبدل بـ 18. رقم تمرين الفهرس صُحح 3→2. الخيارات: siebzehn / siebenzehn / achtzehn؛ المصدر: DL-A0-03-T02",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q06",
+      "decision": "corrected",
+      "finding": "المفتاح 19 لم يكن خطأ؛ العيب في رابط T01. صار T02 متضمنًا neunzehn؛ 90 استبدل بـ 18. الخيارات: 9 / 19 / 18؛ المصدر: DL-A0-03-T02",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q07",
+      "decision": "corrected",
+      "finding": "المفتاح Wie alt bist du? صحيح؛ علامة الاستفهام الألمانية في الشرح صُححت. الخيارات: Wo wohnst du? / Wie alt bist du? / Woher kommst du?؛ المصدر: DL-A0-03-T04",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q08",
+      "decision": "corrected",
+      "finding": "المفتاح Woher kommst du? صحيح؛ يصلح للأصل وليس الدولة حصرًا. علامة الاستفهام الألمانية صُححت. الخيارات: Wie heißt du? / Wie alt bist du? / Woher kommst du?؛ المصدر: DL-A0-03-T04",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q09",
+      "decision": "clarified",
+      "finding": "المفتاح zwei sechs صحيح؛ المشتتان أصبحا sechs zwei و zwei acht بدل الأعداد المركبة؛ ترتيب خانات لا عدد مركب. الخيارات: zwei sechs / sechs zwei / zwei acht؛ المصدر: DL-A0-03-T06",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-Q10",
+      "decision": "corrected",
+      "finding": "المفتاح zwanzig صحيح؛ رقم تمرين الفهرس صُحح 3→1. الخيارات: zwanzig / zwei / zwölf؛ المصدر: DL-A0-03-T01",
+      "sourceIds": [
+        "R-NUM",
+        "R-CROSS"
+      ]
+    },
+    {
+      "id": "DL-A0-03-P01",
+      "decision": "clarified",
+      "finding": "قرئت المهمة ومعايير إتمامها/المعنى/المهارة: أربعة أسئلة وأجوبة + بطاقة 4 أسطر، عمر 18 أو 20، بياناتخيالية، أداء الدورين. T07+T08؛ الحد 120 حرفًا يمنع القصر الشديد فقط؛ جميع المربعات والتأكيد الشفهي لازمة ولا فحص لغوي آلي.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "DL-A0-03-P02",
+      "decision": "clarified",
+      "finding": "قرئت المهمة ومعاييرها الثلاثة: سؤال الهاتف وجواب رقمي وأسماء 6 خانات، بما فيها الصفر، ثم قراءة بصوت مرتفع. T06؛ الحد 50 حرفًا لا يثبت الصحة، ولا يتطلب تحميل تسجيل. السؤال صارمقاسًا بتأكيد ذاتي بعد تدريبه.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-NUM"
+      ]
+    },
+    {
+      "id": "card-01",
+      "decision": "retained",
+      "finding": "Wie alt bist du? → كم عمرك؟؛ بطاقة متسقة مع نماذج الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "card-02",
+      "decision": "retained",
+      "finding": "Woher kommst du? → من أين أنت؟؛ بطاقة متسقة مع نماذج الدرس.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "card-03",
+      "decision": "retained",
+      "finding": "Wo wohnst du? → أين تسكن؟؛ بطاقة متسقة مع نماذج الدرس.",
+      "sourceIds": [
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "card-04",
+      "decision": "retained",
+      "finding": "Ich bin 18 Jahre alt. → عمري 18 سنة.؛ بطاقة متسقة مع نماذج الدرس.",
+      "sourceIds": [
+        "R-GOETHE",
+        "R-AGE"
+      ]
+    },
+    {
+      "id": "DL-A0-03-AUD-NUM-01",
+      "decision": "text-only-reviewed",
+      "finding": "تفريغ 21 عددًا 0–20، ثمانيةعشرات/100، 21 و 34، ثمجملةالرقمبست خانات؛ صحيح نصيًا. بينّا أن التسجيل يجمع الأساس والتوسعة. لا استماع أو إعادة توليد؛ status ready تاريخي لا اعتماد جديد.",
+      "sourceIds": [
+        "R-NUM",
+        "R-GOETHE"
+      ]
+    },
+    {
+      "id": "DL-A0-03-AUD-DLG-01",
+      "decision": "text-only-reviewed",
+      "finding": "تفريغات 6 أدوار؛ أول 5 مطابقة حرفيًا بعد حذف فراغات Markdown، والسادس achtzehn مقابل 18 مكافئ مقصود. Mariem02/Yassine03 محفوظان. لا استماع أو إعادة توليد؛ status ready تاريخي لا اعتماد جديد.",
+      "sourceIds": [
+        "R-NUM",
+        "R-GOETHE"
+      ]
+    }
+  ]
+}

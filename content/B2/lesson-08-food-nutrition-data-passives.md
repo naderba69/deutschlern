@@ -26,6 +26,13 @@
 | kennzeichnen | kennzeichnet | يضع بيانًا / يعلّم |
 | ausweisen | weist aus | يبيّن / يصرّح بـ |
 
+- **ملاحظة حول الجمع وتصريف الأفعال في الجدول:**
+  - **صيغ الجمع للأسماء:** يَرِدُ الاسم `der Zuckergehalt` غالباً في المفرد عند قراءة الجداول الغذائية (`—`)، وإن كان معجم Duden يثبت له صيغة الجمع `die Zuckergehalte` عند مقارنة محتويات سكر متعددة؛ وفي المقابل يُستعمل `der Ballaststoff` في الأغلب بصيغة الجمع `die Ballaststoffe`، ويُستعمل `der Durchschnitt` غالباً في المفرد داخل التركيب `im Durchschnitt` (في المتوسّط).
+  - **الأجزاء الأساسية واسم المفعول (`Partizip II`) لأفعال الدرس:**
+    - الأفعال المنفصلة (`trennbare Verben`) يدخل فيها المقطع `-ge-` بين البادئة والجذر: `abwiegen → wiegt ab, wog ab, hat abgewogen`، `auswerten → wertet aus, wertete aus, hat ausgewertet`، `ausweisen → weist aus, wies aus, hat ausgewiesen` (ومثلها في نصوص الدرس: `eintragen → trägt ein, trug ein, hat eingetragen`، `vorbereiten → bereitet vor, bereitete vor, hat vorbereitet`، `festhalten → hält fest, hielt fest, hat festgehalten`، `freigeben → gibt frei, gab frei, hat freigegeben`).
+    - الأفعال غير المنفصلة (`untrennbare Verben`) المبدوءة ببادئة غير منبورة لا تأخذ `ge-` في `Partizip II`: `erfassen → erfasst, erfasste, hat erfasst` (ومثلها في الدرس: `überprüfen → überprüft, überprüfte, hat überprüft`، `untersuchen → untersucht, untersuchte, hat untersucht`، `besprechen → bespricht, besprach, hat besprochen`؛ أمّا الفعل البسيط `prüfen` فيأخذ `ge-`: `hat geprüft`).
+    - الفعل `kennzeichnen` مشتق من الاسم المركّب `das Kennzeichen` ويقع النبر فيه على المقطع الأول (`kénnzeichnen`)، لذلك لا ينفصل في المضارع (`er kennzeichnet`) ولا يتوسطه `zu` (`zu kennzeichnen`)، لكنه يأخذ `ge-` في أول اسم المفعول: `kennzeichnet, kennzeichnete, hat gekennzeichnet`.
+
 ## 2) المبني للمجهول: عملية أم حالة ناتجة؟
 
 نستخدم **Vorgangspassiv** مع **werden + Partizip II** للتركيز على عملية أو إجراء يحدث. ونستخدم **Zustandspassiv** مع **sein + Partizip II** لوصف الحالة الناتجة بعد اكتمال الإجراء.
@@ -38,6 +45,15 @@
 | **Zustandspassiv** — حالة ناتجة | sein + Partizip II | **Die Tabelle ist überprüft.** — تم التحقق من الجدول وهو جاهز. |
 
 مع كثير من الأفعال المتعدية، يساعد السياق على معرفة هل نركّز على الإجراء أم على النتيجة. ويتغير فعل المساعدة بحسب المفرد والجمع: **Die Probe wird geprüft. / Die Proben werden geprüft. / Die Proben sind geprüft.**
+
+### مساعدة قبل النصوص والمهمات
+
+- **معيار التفريق السريع بين الإجراء والحالة:** اسأل نفسك قبل اختيار الفعل المساعد: هل الجملة تصف خطوة عملٍ تجري الآن أو تتكرر ضمن خطوات الفحص (`Was passiert gerade / Schritt für Schritt?` → `werden + Partizip II`) أم تصف جاهزية الشيء أو وضعه القائم بعد انتهاء الخطوة (`Wie ist der Stand jetzt?` → `sein + Partizip II`)؟ قارن: `Die Zutaten werden gerade abgewogen.` (عملية الوزن جارية) مقابل `Die Zutaten sind schon abgewogen und bereit.` (المكوّنات موزونة وجاهزة)، وكذلك مع النفي الزمني للحالة: `Die Ergebnisse sind noch nicht ausgewertet.` (النتائج ليست محلَّلة بعد).
+- **تحويل المفعول به إلى فاعل ومطابقة الفعل (`Kongruenz`):** عند التحويل من جملة معلومة بفاعل عام مثل `man` أو `jemand` إلى المبني للمجهول، يتحول المفعول به المنصوب (`Akkusativ`) إلى فاعل مرفوع (`Nominativ`) ويتطابق معه تصريف `werden` أو `sein` مفرداً وجمعاً: `Man trägt die Werte jetzt in die Tabelle ein.` ← `Die Werte werden in die Tabelle eingetragen.`، ومع المفرد: `Der Nährwert wird erfasst.` / `Die Tabelle ist geprüft.`
+- **خريطة اسم المفعول (`Partizip II`) في نهاية الجملة:** يوضع `Partizip II` في آخر الجملة الخبرية، وتنقسم أفعال الدرس فيه إلى ثلاث مجموعات:
+  - أفعال منفصلة يتوسطها `-ge-`: `abgewogen`، `eingetragen`، `ausgewertet`، `ausgewiesen`، `vorbereiten → vorbereitet`، `festhalten → festgehalten`، `freigeben → freigegeben`.
+  - أفعال بسيطة أو مبدوءة بنبر أول تأخذ `ge-` في أولها: `geprüft`، `gekennzeichnet`، `geteilt`.
+  - أفعال ببادئات غير منفصلة لا تأخذ `ge-`: `erfasst`، `überprüft`، `untersucht`، `besprochen`.
 
 ## 3) حوار أصلي في مطبخ تدريبي
 
@@ -124,7 +140,13 @@
 
 ### تمرين 6 — فهم الاستماع
 
-أكمل بالألمانية: 1. Heute werden ______ Proben vorbereitet. 2. Die Zutaten werden ______. 3. Jede Probe wird ______. 4. Am Ende ist die Tabelle ______. 5. Die Ergebnisse sind noch nicht ______.
+أكمل بالألمانية استنادًا إلى نص الاستماع:
+
+1. Heute werden ______ Proben vorbereitet.
+2. Die Zutaten werden ______.
+3. Jede Probe wird ______.
+4. Am Ende ist die Tabelle ______.
+5. Die Ergebnisse sind noch nicht ______.
 
 ### تمرين 7 — حوّل بحسب المعنى المطلوب
 
@@ -135,7 +157,10 @@
 
 ### تمرين 8 — صِف خطوات جمع بيانات خيالية
 
-اكتب خمس جمل عن تجربة غذائية خيالية. استخدم **Vorgangspassiv** مرتين على الأقل، و**Zustandspassiv** مرةً على الأقل. وضّح أن البيانات افتراضية ولا تقدّم توصية صحية.
+أنجز المهمتين التاليتين بالتدرّج:
+
+- **الجزء (أ) — المهمة الكتابية الأساسية (`DL-B2-08-P01` — كتابة فقط):** اكتب من `5` إلى `6` جمل بالألمانية عن تجربة غذائية خيالية في مطبخ تدريبي. استخدم **Vorgangspassiv** (`werden + Partizip II`) مرتين على الأقل لوصف خطوات الفحص (مثل وزن المكوّنات، ووسم العيّنات، وتسجيل القيم)، واستخدم **Zustandspassiv** (`sein + Partizip II`) مرةً على الأقل لوصف حالة ناتجة منتهية (مثل جاهزية المكوّنات أو الجدول). وضّح صراحةً أن الأرقام افتراضية للتدريب اللغوي وليست توصية غذائية أو صحية شخصية.
+- **الجزء (ب) — المهمة التراكمية المتكاملة (`DL-B2-08-P02` — كتابة + قراءة بصوت واضح):** استنادًا إلى جدول القراءة (`T05`) ونص الاستماع (`T06`)، اكتب إحاطة من `5` إلى `6` جمل بالألمانية لمتعلم آخر ثم اقرأها بصوت واضح. اختر المزيج `A` أو `B` وانقل بدقة قيمتَي السكر والألياف لكل `100` غرام، ثم اشرح خطوتين على الأقل من جمع القيم بـ**Vorgangspassiv** والحالة النهائية للجدول والنتائج بـ**Zustandspassiv** (مثل أن الجدول مفحوص ومعتمد للتدريب بينما النتائج ليست محلّلة بالكامل بعد)، مع التأكيد أن البيانات خيالية للتدريب اللغوي ولا تصلح لتقديم نصيحة صحية شخصية. (للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت).
 
 ## 7) مفتاح الإجابات
 
@@ -148,13 +173,35 @@
 - **تمرين 3:** 1. Vorgangspassiv، 2. Zustandspassiv، 3. Vorgangspassiv، 4. Zustandspassiv.
 - **تمرين 4:** 1. wird، 2. sind، 3. werden، 4. sind.
 - **تمرين 5:** 1. صحيح. 2. صحيح. 3. خطأ — تُوزن المكوّنات أولًا. 4. صحيح. 5. خطأ — لا تكفي لتوصية شخصية.
-- **تمرين 6:** drei؛ abgewogen؛ gekennzeichnet؛ geprüft؛ ausgewertet.
+- **تمرين 6:** 1. drei، 2. abgewogen، 3. gekennzeichnet، 4. geprüft، 5. ausgewertet.
 - **تمرين 7:** 1. werden، 2. sind، 3. werden، 4. sind.
-- **تمرين 8:** إجابة مفتوحة؛ تحقّق من التمييز بين الإجراء الجاري **werden + Partizip II** والحالة الناتجة **sein + Partizip II**، ومن وضوح أن القيم افتراضية.
+- **تمرين 8:** إجابة مفتوحة؛ راجع النموذجين الاسترشاديين في **القسم 8** وتحقّق من التمييز بين الإجراء الجاري (**werden + Partizip II**) والحالة الناتجة (**sein + Partizip II**) ومن التنبيه الصريح إلى أن القيم افتراضية للتدريب اللغوي فقط.
 
-## 8) بطاقات مراجعة
+## 8) نماذج مكتوبة للمهمات العملية
 
-- **Die Zutaten werden abgewogen.** → يجري وزن المكوّنات.
-- **Die Zutaten sind abgewogen.** → المكوّنات موزونة وجاهزة.
-- **Die Tabelle wird überprüft.** → يجري التحقق من الجدول.
-- **Die Tabelle ist geprüft.** → تم التحقق من الجدول وهو جاهز.
+### نموذج 1 — وصف تجربة غذائية خيالية في مطبخ تدريبي (تطبيق المهمة `DL-B2-08-P01` / التمرين 8-أ)
+
+> **In unserer Lehrküche werden heute drei fiktive Proben für eine Sprachübung vorbereitet. Zuerst werden alle Zutaten genau abgewogen und jede Probe wird deutlich gekennzeichnet. Danach werden der Zuckergehalt und der Anteil an Ballaststoffen pro Portion in eine Tabelle eingetragen. Jetzt sind die Zutaten abgewogen und die Tabelle ist vollständig geprüft. Diese fiktiven Nährwerte dienen nur dem Sprachtraining und sind keine persönliche Ernährungsempfehlung.**
+
+- **لماذا يحقق هذا النموذج معايير المهمة `DL-B2-08-P01`؟**
+  - يضم **خمس جمل ألمانية مترابطة** تصف خطوات التجربة الخيالية بتسلسل واضح (`Zuerst ... Danach ... Jetzt ...`).
+  - يوظّف **أربع صيغ `Vorgangspassiv` للإجراءات الجارية:** `werden ... vorbereitet`، `werden ... abgewogen`، `wird ... gekennzeichnet`، `werden ... eingetragen`.
+  - يوظّف **صيغتين في `Zustandspassiv` للحالة الناتجة المكتملة:** `sind ... abgewogen` و`ist ... geprüft`.
+  - يذكر صراحةً أن القيم الغذائية (`fiktive Nährwerte`) مخصّصة للتدريب اللغوي فقط وليست توصية غذائية شخصية.
+
+### نموذج 2 — إحاطة عن بيانات المزيج الخيالي وحالة الجدول (تطبيق المهمة `DL-B2-08-P02` / التمرين 8-ب)
+
+> **In der fiktiven Tabelle aus der Leseübung hat Mischung B je 100 Gramm einen Zuckergehalt von 11 Gramm und 4 Gramm Ballaststoffe, während Mischung A 8 Gramm Zucker und 6 Gramm Ballaststoffe enthält. Vor der Eingabe werden die Zutaten in der Lehrküche abgewogen und die Proben werden einzeln gekennzeichnet. Anschließend werden die Messwerte je 100 Gramm erfasst und in die Tabelle eingetragen. Nach der Kontrolle ist die Tabelle geprüft und für unsere Sprachübung freigegeben, aber die weiteren Ergebnisse sind noch nicht ausgewertet. Alle Zahlen in dieser Übersicht sind rein fiktiv für das Sprachtraining und liefern keine persönliche Gesundheits- oder Ernährungsempfehlung.**
+
+- **لماذا يحقق هذا النموذج معايير المهمة `DL-B2-08-P02`؟**
+  - ينقل بدقة **قيمتَي السكر والألياف لكل 100 غرام** للمزيج المختار (`Mischung B: 11 g Zuckergehalt, 4 g Ballaststoffe`) مع مقارنتها بالمزيج `A` (`8 g Zucker, 6 g Ballaststoffe`).
+  - يشرح **خطوات الإجراء بصيغة `Vorgangspassiv`:** `werden ... abgewogen`، `werden ... gekennzeichnet`، `werden ... erfasst und ... eingetragen`.
+  - يبيّن **الحالة النهائية للجدول والنتائج بصيغة `Zustandspassiv`:** `ist die Tabelle geprüft und ... freigegeben` مقابل `sind noch nicht ausgewertet`.
+  - يؤكد بوضوح أن الأرقام افتراضية للتدريب اللغوي ولا تقدم نصيحة صحية أو غذائية شخصية.
+
+## 9) بطاقات مراجعة
+
+- **Die Zutaten werden abgewogen.** → `Vorgangspassiv` (`werden + Partizip II`): يجري وزن المكوّنات الآن أو ضمن خطوات الإجراء.
+- **Die Zutaten sind abgewogen.** → `Zustandspassiv` (`sein + Partizip II`): المكوّنات موزونة وجاهزة بعد اكتمال الوزن.
+- **Die Tabelle wird überprüft. / Die Messwerte werden eingetragen.** → مطابقة الفعل المساعد في `Vorgangspassiv` بين المفرد (`wird`) والجمع (`werden`) مع وضع `Partizip II` في نهاية الجملة.
+- **Die Tabelle ist geprüft, aber die Ergebnisse sind noch nicht ausgewertet.** → التمييز في `Zustandspassiv` بين حالة مكتملة (`ist geprüft`) وحالة لم تكتمل بعد (`sind noch nicht ausgewertet`) مع بقاء البيانات افتراضية للتدريب اللغوي.

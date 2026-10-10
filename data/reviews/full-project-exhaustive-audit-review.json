@@ -1,0 +1,1257 @@
+{
+  "schemaVersion": 1,
+  "batchId": "CR61",
+  "reviewSlug": "full-project-exhaustive-audit-review",
+  "reviewedAt": "2026-10-10",
+  "unitCount": 68,
+  "lessonCount": 53,
+  "gateCount": 1,
+  "levelViewCount": 5,
+  "quizQuestionTotalCount": 540,
+  "quizOptionTotalCount": 1622,
+  "quizExplanationTotalCount": 540,
+  "performanceTaskTotalCount": 109,
+  "inlineMarkdownQuizPromptCount": 137,
+  "inlineMarkdownQuizExplanationCount": 65,
+  "inlineMarkdownPerformancePromptCount": 12,
+  "a11yDesktopStateCount": 174,
+  "a11yMobileStateCount": 175,
+  "a11yTotalScreenStateCount": 349,
+  "a11yViolatedRuleCount": 0,
+  "a11yIncompleteRuleOccurrences": 0,
+  "a11yIncompleteNodeOccurrences": 0,
+  "narrowPortraitStateCount": 174,
+  "narrowLandscapeStateCount": 174,
+  "narrowTotalStateCount": 348,
+  "narrowOverflowCount": 0,
+  "curriculumAuditRows": 53,
+  "curriculumAuditColumns": 29,
+  "taskCatalogRows": 1080,
+  "taskCatalogColumns": 15,
+  "audioRegisterRows": 217,
+  "audioRegisterColumns": 23,
+  "serviceWorkerCacheName": "deutsch-pfad-v110",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "excludedSources": [],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Duden search: Vollstaendigkeit Pruefung Kontrolle Nachweis Gesamtuebersicht",
+      "url": "https://www.duden.de/rechtschreibung/Vollstaendigkeit",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Vollstaendigkeit Pruefung Kontrolle Nachweis Gesamtuebersicht",
+      "takeaway": "يوثّق معجم Duden دلالة Vollständigkeit («الاكتمال والشمول دون نقص») وNachweis («الدليل الموثّق») وPrüfung («الفحص والاختبار»)."
+    },
+    {
+      "id": "S02",
+      "title": "Duden search: Nachweis",
+      "url": "https://www.duden.de/rechtschreibung/Nachweis",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Vollstaendigkeit Pruefung Kontrolle Nachweis Gesamtuebersicht",
+      "takeaway": "يوثّق معجم Duden صيغة der Nachweis وجمعه die Nachweise للدلالة على البرهان الموثّق في السجلات والفحوص."
+    },
+    {
+      "id": "S03",
+      "title": "Duden search: Pruefung",
+      "url": "https://www.duden.de/rechtschreibung/Pruefung",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Vollstaendigkeit Pruefung Kontrolle Nachweis Gesamtuebersicht",
+      "takeaway": "يوثّق معجم Duden صيغة die Prüfung وجمعها die Prüfungen للدلالة على الفحص المنهجي والاختبار الشامل."
+    },
+    {
+      "id": "S04",
+      "title": "Lingolia search: Passive Voice in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/verbs/passiv German passive voice grammar",
+      "takeaway": "يوثّق مرجع Lingolia قواعد المبني للمجهول (Vorgangspassiv وZustandspassiv والمبني للمجهول مع الأفعال الناقصة) الواردة في العبارات الألمانية المضمّنة داخل أسئلة التقييم وتفسيراتها."
+    },
+    {
+      "id": "S05",
+      "title": "Lingolia search: Passive Voice – Free Exercise",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive/exercises",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/verbs/passiv German passive voice grammar",
+      "takeaway": "يوثّق مرجع Lingolia تمارين تحويل الجمل بين المبني للمعلوم والمبني للمجهول في الأزمنة المختلفة."
+    },
+    {
+      "id": "S06",
+      "title": "Duden search: Register",
+      "url": "https://www.duden.de/rechtschreibung/Register",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Kontrolle Verzeichnis Register Uebersicht",
+      "takeaway": "يوثّق معجم Duden صيغة das Register وجمعه die Register للدلالة على الفهرس والسجل المنظّم."
+    },
+    {
+      "id": "S07",
+      "title": "Duden search: Index",
+      "url": "https://www.duden.de/rechtschreibung/Index",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Kontrolle Verzeichnis Register Uebersicht",
+      "takeaway": "يوثّق معجم Duden صيغة der Index وجمعه die Indexe/Indizes للدلالة على الفهرس المرجعي."
+    },
+    {
+      "id": "S08",
+      "title": "Duden search: Uebersicht",
+      "url": "https://www.duden.de/rechtschreibung/Uebersicht",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Kontrolle Verzeichnis Register Uebersicht",
+      "takeaway": "يوثّق معجم Duden صيغة die Übersicht وجمعها die Übersichten للدلالة على النظرة الشاملة والجداول التلخيصية."
+    },
+    {
+      "id": "S09",
+      "title": "WCAG-EM Overview: WCAG Evaluation Methodology | Web Accessibility Initiative (WAI) | W3C",
+      "url": "https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/",
+      "access": "full_fetched_page",
+      "totalChunks": 2,
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "takeaway": "تبيّن منهجية WCAG-EM أن أخذ العينات التمثيلية يُستعمل فقط عندما يتعذّر فحص جميع صفحات المنتج الرقمي، مما يبرّر انتقالنا في هذا المشروع ذي الـ53 درسًا وبوابة A0 إلى الفحص الشامل بنسبة 100% لجميع الصفحات والأوضاع دون أخذ عينات."
+    },
+    {
+      "id": "S10",
+      "title": "G134: Validating web pages | WAI | W3C",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/general/G134",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "توصي تقنية G134 بالتحقق الآلي الدفعي الشامل من جميع صفحات ومجلدات التطبيق لإزالة أي غموض في الترميز أو السمات."
+    },
+    {
+      "id": "S11",
+      "title": "H49: Using semantic markup to mark emphasized or special text | WAI | W3C",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/html/H49",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "توصي تقنية H49 (المرتبطة بمعيار 1.3.1 Info and Relationships) باستعمال العناصر الدلالية <strong> و<code> بدل علامات التنسيق الخام لتمييز النصوص المشدّدة والرموز برمجيًا وبصريًا."
+    },
+    {
+      "id": "S12",
+      "title": "Passive Voice in German Grammar | Lingolia",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive",
+      "access": "full_fetched_page",
+      "totalChunks": 2,
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "takeaway": "يُفصّل مرجع Lingolia تراكيب المبني للمجهول للعملية (werden + Partizip II) والحالة (sein + Partizip II) والمبني للمجهول مع الأفعال الناقصة (muss/musste + Partizip II + werden) المستعملة في العبارات الألمانية المضمّنة داخل أسئلة التقييم وتفسيراتها."
+    },
+    {
+      "id": "S13",
+      "title": "Duden | Vollständigkeit | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Vollstaendigkeit",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المؤنث die Vollständigkeit (بلا جمع) بمعنى الاكتمال التام والشمول الكامل."
+    },
+    {
+      "id": "S14",
+      "title": "Duden | Nachweis | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Nachweis",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المذكر der Nachweis (des Nachweises, die Nachweise) بمعنى الإثبات الموثّق والدليل."
+    },
+    {
+      "id": "S15",
+      "title": "Duden | Prüfung | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Pruefung",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المؤنث die Prüfung (der Prüfung, die Prüfungen) بمعنى الفحص الدقيق والاختبار."
+    },
+    {
+      "id": "S16",
+      "title": "Duden | Register | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Register",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المحايد das Register (des Registers, die Register) بمعنى السجل المنظّم والفهرس."
+    },
+    {
+      "id": "S17",
+      "title": "Duden | Index | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Index",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المذكر der Index (des Index/Indexes, die Indexe/Indizes) بمعنى الفهرس والمؤشر."
+    },
+    {
+      "id": "S18",
+      "title": "Duden | Übersicht | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Uebersicht",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المؤنث die Übersicht (der Übersicht, die Übersichten) بمعنى النظرة الشاملة والعرض المنظّم."
+    },
+    {
+      "id": "S19",
+      "title": "Duden | Kontrolle | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Kontrolle",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المؤنث die Kontrolle (der Kontrolle, die Kontrollen) بمعنى المراقبة والتحقق المنهجي."
+    },
+    {
+      "id": "S20",
+      "title": "Duden | Verzeichnis | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Verzeichnis",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المحايد das Verzeichnis (des Verzeichnisses, die Verzeichnisse) بمعنى القائمة الجردية الكاملة."
+    },
+    {
+      "id": "S21",
+      "title": "Duden | Katalog | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Katalog",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المذكر der Katalog (des Katalogs/Kataloges, die Kataloge) بمعنى الدليل المصنّف الشامل."
+    },
+    {
+      "id": "S22",
+      "title": "Duden | Fertigkeit | Rechtschreibung, Bedeutung, Definition, Herkunft",
+      "url": "https://www.duden.de/rechtschreibung/Fertigkeit",
+      "access": "full_fetched_page",
+      "totalChunks": 1,
+      "chunksFetched": [
+        0
+      ],
+      "takeaway": "يوثّق معجم Duden الاسم المؤنث die Fertigkeit (der Fertigkeit, die Fertigkeiten) بمعنى المهارة المكتسبة، مما يدعم مزامنة عمود declared_skills في سجل التدقيق."
+    }
+  ],
+  "units": [
+    {
+      "id": "U01-a0-01-alphabet",
+      "scope": "a0-01-alphabet",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a0-01-alphabet (A0.1) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 0 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة أولية، تهجئة، نطق»)."
+    },
+    {
+      "id": "U02-a0-02-greetings",
+      "scope": "a0-02-greetings",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a0-02-greetings (A0.2) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 10 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة الحوار، تفاعل ومحادثة مباشرة»)."
+    },
+    {
+      "id": "U03-a0-03-numbers-personal-info",
+      "scope": "a0-03-numbers-personal-info",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a0-03-numbers-personal-info (A0.3) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 0 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، كتابة، محادثة مباشرة»)."
+    },
+    {
+      "id": "U04-a0-04-first-sentences",
+      "scope": "a0-04-first-sentences",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a0-04-first-sentences (A0.4) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 9 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، كتابة، محادثة، قواعد أساسية»)."
+    },
+    {
+      "id": "U05-a0-05-classroom-phrases",
+      "scope": "a0-05-classroom-phrases",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a0-05-classroom-phrases (A0.5) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 10 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، كتابة، تفاعل ومحادثة مباشرة»)."
+    },
+    {
+      "id": "U06-a1-01-introductions-languages-hobbies",
+      "scope": "a1-01-introductions-languages-hobbies",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-01-introductions-languages-hobbies (A1.1) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 12 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قواعد، قراءة، استماع قصير، محادثة وكتابة»)."
+    },
+    {
+      "id": "U07-a1-02-work-family",
+      "scope": "a1-02-work-family",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-02-work-family (A1.2) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 11 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، استماع قصير، محادثة وكتابة»)."
+    },
+    {
+      "id": "U08-a1-03-city-cafe-hotel",
+      "scope": "a1-03-city-cafe-hotel",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-03-city-cafe-hotel (A1.3) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 13 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، كتابة، محادثة، مفردات، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U09-a1-04-daily-routine-time",
+      "scope": "a1-04-daily-routine-time",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-04-daily-routine-time (A1.4) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 12 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، محادثة وقواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U10-a1-05-food-drink",
+      "scope": "a1-05-food-drink",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-05-food-drink (A1.5) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، محادثة وكتابة، واستماع اختياري»)."
+    },
+    {
+      "id": "U11-a1-06-yesterday-perfekt",
+      "scope": "a1-06-yesterday-perfekt",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-06-yesterday-perfekt (A1.6) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 8 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، كتابة، سرد قصير، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U12-a1-07-travel-weather",
+      "scope": "a1-07-travel-weather",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-07-travel-weather (A1.7) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، محادثة، واستماع اختياري»)."
+    },
+    {
+      "id": "U13-a1-08-shopping-clothes",
+      "scope": "a1-08-shopping-clothes",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-08-shopping-clothes (A1.8) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، محادثة، قراءة، كتابة، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U14-a1-09-work-appointments",
+      "scope": "a1-09-work-appointments",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-09-work-appointments (A1.9) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قواعد، قراءة، كتابة، محادثة، واستماع اختياري»)."
+    },
+    {
+      "id": "U15-a1-10-hobbies-health",
+      "scope": "a1-10-hobbies-health",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-10-hobbies-health (A1.10) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 20 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، محادثة، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U16-a1-11-home-directions",
+      "scope": "a1-11-home-directions",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-11-home-directions (A1.11) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 13 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قواعد، قراءة، كتابة، وصف مكان وطريق، واستماع اختياري»)."
+    },
+    {
+      "id": "U17-a1-12-trip-invitations",
+      "scope": "a1-12-trip-invitations",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a1-12-trip-invitations (A1.12) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، محادثة، كتابة، مراجعة، واستماع اختياري»)."
+    },
+    {
+      "id": "U18-a2-01-routines-abilities-experiences",
+      "scope": "a2-01-routines-abilities-experiences",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-01-routines-abilities-experiences (A2.1) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (2 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، قواعد، محادثة، كتابة، واستماع اختياري»)."
+    },
+    {
+      "id": "U19-a2-02-travel-comparisons",
+      "scope": "a2-02-travel-comparisons",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-02-travel-comparisons (A2.2) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 18 بطاقة مفردات و10 أسئلة (2 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، قواعد، كتابة، محادثة، تخطيط رحلة، واستماع اختياري»)."
+    },
+    {
+      "id": "U20-a2-03-food-nutrition-shopping",
+      "scope": "a2-03-food-nutrition-shopping",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-03-food-nutrition-shopping (A2.3) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 20 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، قواعد، محادثة، واستماع اختياري»)."
+    },
+    {
+      "id": "U21-a2-04-office-phone-appointments",
+      "scope": "a2-04-office-phone-appointments",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-04-office-phone-appointments (A2.4) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (2 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «كتابة، محادثة هاتفية، قراءة بريد إلكتروني، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U22-a2-05-training-routine-wenn",
+      "scope": "a2-05-training-routine-wenn",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-05-training-routine-wenn (A2.5) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 12 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، كتابة، قواعد، وصف جدول، كلام، واستماع اختياري»)."
+    },
+    {
+      "id": "U23-a2-06-family-happiness-gifts",
+      "scope": "a2-06-family-happiness-gifts",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-06-family-happiness-gifts (A2.6) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (2 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U24-a2-07-language-learning-travel-purpose",
+      "scope": "a2-07-language-learning-travel-purpose",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-07-language-learning-travel-purpose (A2.7) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 17 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U25-a2-08-media-news-passive",
+      "scope": "a2-08-media-news-passive",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-08-media-news-passive (A2.8) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 23 بطاقة مفردات و10 أسئلة (4 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U26-a2-09-products-technology-complaints",
+      "scope": "a2-09-products-technology-complaints",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-09-products-technology-complaints (A2.9) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U27-a2-10-sports-health-feelings-weil",
+      "scope": "a2-10-sports-health-feelings-weil",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-10-sports-health-feelings-weil (A2.10) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U28-a2-11-housing-neighborhood-wohin",
+      "scope": "a2-11-housing-neighborhood-wohin",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-11-housing-neighborhood-wohin (A2.11) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 20 بطاقة مفردات و10 أسئلة (1 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري»)."
+    },
+    {
+      "id": "U29-a2-12-holidays-festivals-culture",
+      "scope": "a2-12-holidays-festivals-culture",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس a2-12-holidays-festivals-culture (A2.12) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، تخطيط، قواعد، كتابة، كلام، واستماع اختياري»)."
+    },
+    {
+      "id": "U30-b1-01-daily-life-hobbies-experiences",
+      "scope": "b1-01-daily-life-hobbies-experiences",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-01-daily-life-hobbies-experiences (B1.1) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 13 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (2 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، سرد تجربة، قواعد، كتابة وجهر»)."
+    },
+    {
+      "id": "U31-b1-02-food-habits-obwohl",
+      "scope": "b1-02-food-habits-obwohl",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-02-food-habits-obwohl (B1.2) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 13 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، قواعد، كتابة وجهر»)."
+    },
+    {
+      "id": "U32-b1-03-work-communication-konjunktiv",
+      "scope": "b1-03-work-communication-konjunktiv",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-03-work-communication-konjunktiv (B1.3) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (4 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة إعلان، استماع اختياري، اجتماع، كتابة مهنية، قواعد وجهر»)."
+    },
+    {
+      "id": "U33-b1-04-continuing-education-damit",
+      "scope": "b1-04-continuing-education-damit",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-04-continuing-education-damit (B1.4) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (4 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، قواعد، تخطيط تعلّم، كتابة وجهر»)."
+    },
+    {
+      "id": "U34-b1-05-cities-relative-clauses",
+      "scope": "b1-05-cities-relative-clauses",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-05-cities-relative-clauses (B1.5) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، وصف مكان، قواعد، كتابة وجهر»)."
+    },
+    {
+      "id": "U35-b1-06-health-fitness-advice",
+      "scope": "b1-06-health-fitness-advice",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-06-health-fitness-advice (B1.6) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، قواعد، كتابة وجهر»)."
+    },
+    {
+      "id": "U36-b1-07-lifestyles-customs-cultures",
+      "scope": "b1-07-lifestyles-customs-cultures",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-07-lifestyles-customs-cultures (B1.7) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (8 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، قواعد، مقارنة عادات، كتابة وجهر»)."
+    },
+    {
+      "id": "U37-b1-08-consumption-advertising-je-desto",
+      "scope": "b1-08-consumption-advertising-je-desto",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-08-consumption-advertising-je-desto (B1.8) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 17 بطاقة مفردات و10 أسئلة (6 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة إعلان، استماع اختياري، مقارنة، قواعد، كتابة وجهر»)."
+    },
+    {
+      "id": "U38-b1-09-travel-transport-environment",
+      "scope": "b1-09-travel-transport-environment",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-09-travel-transport-environment (B1.9) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، تخطيط رحلة، قواعد، كتابة وجهر»)."
+    },
+    {
+      "id": "U39-b1-10-media-news-formal-communication",
+      "scope": "b1-10-media-news-formal-communication",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-10-media-news-formal-communication (B1.10) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة رسالة، استماع اختياري، قواعد، تواصل رسمي، كتابة وجهر»)."
+    },
+    {
+      "id": "U40-b1-11-history-politics-passive-past",
+      "scope": "b1-11-history-politics-passive-past",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-11-history-politics-passive-past (B1.11) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (0 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة خطّ زمني، استماع اختياري، قواعد، مفردات مدنية، كتابة وجهر»)."
+    },
+    {
+      "id": "U41-b1-12-innovation-research-future",
+      "scope": "b1-12-innovation-research-future",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b1-12-innovation-research-future (B1.12) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (1 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع اختياري، قواعد، مفردات البحث، كتابة وجهر»)."
+    },
+    {
+      "id": "U42-b2-01-time-management-habits-reading",
+      "scope": "b2-01-time-management-habits-reading",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-01-time-management-habits-reading (B2.1) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة مركّزة، استماع اختياري، قواعد، تنظيم المهام، كتابة وجهر»)."
+    },
+    {
+      "id": "U43-b2-02-career-formal-communication-konjunktiv1",
+      "scope": "b2-02-career-formal-communication-konjunktiv1",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-02-career-formal-communication-konjunktiv1 (B2.2) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (2 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (1 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة محضر مهني، استماع، قواعد الكلام المنقول، عرض خبرة، كتابة مهنية وإحاطة شفهية (الصوت المسجّل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط دون شريك أو تسجيل)»)."
+    },
+    {
+      "id": "U44-b2-03-consumption-environment-passive-modal",
+      "scope": "b2-03-consumption-environment-passive-modal",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-03-consumption-environment-passive-modal (B2.3) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع، قواعد المبني للمجهول مع الأفعال الناقصة، تحليل خيارات استهلاك، كتابة وعرض شفهي (الصوت المسجّل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط دون شريك أو تسجيل)»)."
+    },
+    {
+      "id": "U45-b2-04-cities-housing-participles",
+      "scope": "b2-04-cities-housing-participles",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-04-cities-housing-participles (B2.4) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة وصفية، استماع، قواعد الصفات المشتقة من اسمي الفاعل والمفعول، وصف مبنى أو حيّ، كتابة وعرض شفهي (الصوت المسجّل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط دون شريك أو تسجيل)»)."
+    },
+    {
+      "id": "U46-b2-05-health-fitness-medical-information",
+      "scope": "b2-05-health-fitness-medical-information",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-05-health-fitness-medical-information (B2.5) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (7 بعلامات تنسيق مضمّنة و0 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة تقرير، استماع، قواعد السبب والنتيجة، تقييم معلومة صحية خيالية، كتابة وعرض شفهي (الصوت المسجّل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط دون شريك أو تسجيل)»)."
+    },
+    {
+      "id": "U47-b2-06-study-applications-verb-noun-phrases",
+      "scope": "b2-06-study-applications-verb-noun-phrases",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-06-study-applications-verb-noun-phrases (B2.6) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 14 بطاقة مفردات و10 أسئلة (7 بعلامات تنسيق مضمّنة و7 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة إرشادات، استماع، كتابة رسمية، قواعد، تخطيط دراسة»)."
+    },
+    {
+      "id": "U48-b2-07-travel-experiences-prepositional-relatives",
+      "scope": "b2-07-travel-experiences-prepositional-relatives",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-07-travel-experiences-prepositional-relatives (B2.7) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (6 بعلامات تنسيق مضمّنة و8 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (0 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة رحلة، استماع، قواعد، وصف وجهة، كتابة»)."
+    },
+    {
+      "id": "U49-b2-08-food-nutrition-data-passives",
+      "scope": "b2-08-food-nutrition-data-passives",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-08-food-nutrition-data-passives (B2.8) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (7 بعلامات تنسيق مضمّنة و10 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (2 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة جدول، استماع، قواعد، مفردات غذائية، وصف بيانات»)."
+    },
+    {
+      "id": "U50-b2-09-business-marketing-employment-prepositions",
+      "scope": "b2-09-business-marketing-employment-prepositions",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-09-business-marketing-employment-prepositions (B2.9) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (7 بعلامات تنسيق مضمّنة و10 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (2 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة إعلان، استماع، قواعد، نقاش مهني، كتابة»)."
+    },
+    {
+      "id": "U51-b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "scope": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-10-wishes-probabilities-technology-konjunktiv2-past (B2.10) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 15 بطاقة مفردات و10 أسئلة (6 بعلامات تنسيق مضمّنة و10 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (2 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة، استماع، قواعد، مناقشة تقنية، كتابة افتراض»)."
+    },
+    {
+      "id": "U52-b2-11-humans-nature-environment-nominalization",
+      "scope": "b2-11-humans-nature-environment-nominalization",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-11-humans-nature-environment-nominalization (B2.11) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (5 بعلامات تنسيق مضمّنة و10 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (1 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة تقرير، استماع، قواعد، نقاش بيئي، كتابة»)."
+    },
+    {
+      "id": "U53-b2-12-leisure-media-reported-speech",
+      "scope": "b2-12-leisure-media-reported-speech",
+      "type": "full_lesson_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S22"
+      ],
+      "finding": "فُحص الدرس b2-12-leisure-media-reported-speech (B2.12) فحصًا شاملًا دون أخذ عينات عبر 3 أوضاع في axe-core (النظرة العامة مع فتح تفريغات الصوت + الاختبار + المهام العملية) عند عرضَي 1440×900 و390×844 (6 حالات شاشة بصفر مخالفات وصفر فحوص غير حاسمة) وعند عرضَي 320×900 و568×320 (6 حالات عرض ضيق بصفر تجاوز أفقي)، مع التحقق في DOM الحي من 16 بطاقة مفردات و10 أسئلة (3 بعلامات تنسيق مضمّنة و10 تفسيرات منسّقة عبر formatInlineMarkdown) و2 مهام أداء (2 بعلامات تنسيق مضمّنة) ومطابقة جميع الأعمدة الـ29 في curriculum-file-audit.csv (المهارات: «قراءة مراجعة إعلامية، استماع، قواعد، تمييز الرأي، كتابة وعرض شفهي»)."
+    },
+    {
+      "id": "U54-a0-a1-gate",
+      "scope": "a0-a1-gate",
+      "type": "full_gate_verification_and_browser_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S14",
+        "S15"
+      ],
+      "finding": "فُحصت بوابة الانتقال a0-a1-gate (الإصدار a0-gate-v2) فحصًا شاملًا في المتصفح عبر شاشات الاختبار (10 أسئلة و30 خيارًا و10 تفسيرات) والمهام العملية (3 مهام) عند عرضَي 1440×900 و390×844 وعرضَي 320×900 و568×320، مع التحقق من قفل نص الاستماع DL-A0-GATE-AUD-LST-01 قبل المحاولة الأولى وظهوره بسمة lang=\"de\" بعد الفتح."
+    },
+    {
+      "id": "U55-a0-01-overview",
+      "scope": "content/A0/lesson-01-overview.md",
+      "type": "overview_and_matrix_sync",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S08",
+        "S13",
+        "S18"
+      ],
+      "finding": "تُتحقق أداة verify_course.py آليًا من تطابق نظرة المستوى التمهيدي content/A0/lesson-01-overview.md مع جميع معرّفات وإصدارات دروس A0 الخمسة وبوابة الانتقال (a0-01-v2..a0-05-v2 وa0-gate-v2) ومن تحديث مصفوفة الإنتاج إلى الإصدار 1.6."
+    },
+    {
+      "id": "U56-level-A0-page",
+      "scope": "level:A0",
+      "type": "level_view_heading_and_a11y_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S18"
+      ],
+      "finding": "أُضيف ترويس المستوى <h2>دروس المستوى A0</h2> داخل renderLevelPage() في app.js لضمان تسلسل عناوين سليم (h1 → h2 → h3) وفُحصت صفحة المستوى A0 في حالتَي القفل والفتح الكامل عبر axe-core وعرضَي 320×900 و568×320 بصفر مخالفات."
+    },
+    {
+      "id": "U57-level-A1-page",
+      "scope": "level:A1",
+      "type": "level_view_heading_and_a11y_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S18"
+      ],
+      "finding": "أُضيف ترويس المستوى <h2>دروس المستوى A1</h2> داخل renderLevelPage() في app.js وفُحصت صفحة المستوى A1 بدروسها الـ12 عبر axe-core وعرضَي 320×900 و568×320 بصفر مخالفات."
+    },
+    {
+      "id": "U58-level-A2-page",
+      "scope": "level:A2",
+      "type": "level_view_heading_and_a11y_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S18"
+      ],
+      "finding": "أُضيف ترويس المستوى <h2>دروس المستوى A2</h2> داخل renderLevelPage() في app.js وفُحصت صفحة المستوى A2 بدروسها الـ12 عبر axe-core وعرضَي 320×900 و568×320 بصفر مخالفات."
+    },
+    {
+      "id": "U59-level-B1-page",
+      "scope": "level:B1",
+      "type": "level_view_heading_and_a11y_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S18"
+      ],
+      "finding": "أُضيف ترويس المستوى <h2>دروس المستوى B1</h2> داخل renderLevelPage() في app.js وفُحصت صفحة المستوى B1 بدروسها الـ12 عبر axe-core وعرضَي 320×900 و568×320 بصفر مخالفات."
+    },
+    {
+      "id": "U60-level-B2-page",
+      "scope": "level:B2",
+      "type": "level_view_heading_and_a11y_audit",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S18"
+      ],
+      "finding": "أُضيف ترويس المستوى <h2>دروس المستوى B2</h2> داخل renderLevelPage() في app.js وفُحصت صفحة المستوى B2 بدروسها الـ12 عبر axe-core وعرضَي 320×900 و568×320 بصفر مخالفات."
+    },
+    {
+      "id": "U61-format-inline-markdown-assessments",
+      "scope": "app.js:formatInlineMarkdown",
+      "type": "assessment_inline_markdown_rendering",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "finding": "أُضيفت دالة formatInlineMarkdown(value) في app.js لتحويل علامات **...** و`...` في 137 نص سؤال تقييم (147 عبارة <strong lang=\"de\"> وعبارة <strong> واحدة) و65 تفسير إجابة (258 عبارة <strong lang=\"de\">) و12 نص مهمة أداء (38 عبارة <strong lang=\"de\"> وعبارة <code dir=\"ltr\" lang=\"de\">T06</code> في DL-B2-02-P02) بحيث أصبحت علامات Markdown الخام في DOM الحي صفرًا عبر جميع الأسئلة الـ540 والتفسيرات الـ540 والمهام الـ109."
+    },
+    {
+      "id": "U62-narrow-viewport-vocab-grid-fix",
+      "scope": "styles.css:.vocab-grid/.vocab-card/.german-word",
+      "type": "narrow_layout_overflow_fix",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S19"
+      ],
+      "finding": "عُولج التجاوز الأفقي (-24.4px) الذي كشفه الفحص الشامل لعرض 320×900 في بطاقات مفردات الدرس a2-09-products-technology-complaints بتحويل .vocab-grid في @media (max-width: 680px) من 1fr إلى minmax(0, 1fr) وإضافة min-width: 0; overflow-wrap: anywhere لـ.vocab-card و.german-word."
+    },
+    {
+      "id": "U63-landmarks-and-headings-best-practice",
+      "scope": "app.js:landmarks-and-headings",
+      "type": "wcag_best_practice_hierarchy_and_landmarks",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11"
+      ],
+      "finding": "ضُبطت عناوين شاشة المهام العملية (<h1>طبّق ما تعلمته</h1> و<h2>معايير التحقق المحلي</h2>) وتفرّد أسماء معالم الجداول (جدول الدرس 1..N) ولوحات الصوت (التسجيلات الصوتية — ...) وقائمة التنقل في الجوال (<div id=\"navigation-panel\" role=\"dialog\"> عند الفتح مقابل <aside> عند الإغلاق) لتحقيق صفر مخالفات في قواعد best-practice إلى جانب WCAG 2.1 A/AA."
+    },
+    {
+      "id": "U64-curriculum-file-audit-full-29-columns",
+      "scope": "data/curriculum-file-audit.csv",
+      "type": "full_catalog_column_sync",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S13",
+        "S16",
+        "S20",
+        "S22"
+      ],
+      "finding": "زُومنت جميع قيم declared_skills الـ41 في data/curriculum-file-audit.csv مع سطر **المهارات:** في ملفات Markdown، ووُسّع verify_course.py ليتحقق آليًا من تطابق جميع الأعمدة الـ29 في جميع الصفوف الـ53 (1,537 خلية)."
+    },
+    {
+      "id": "U65-production-task-catalog-full-15-columns",
+      "scope": "data/production-task-catalog.csv",
+      "type": "full_catalog_column_sync",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S16",
+        "S17",
+        "S21"
+      ],
+      "finding": "وُحّدت صيغة source_heading لصفوف A0.1 الاثني عشر (DL-A0-01-Q01..Q10 وDL-A0-01-P01..P02) في data/production-task-catalog.csv لتطابق صيغة quiz[i] — ID وperformanceTasks[i] — ID المعتمدة في جميع صفوف التقييم الـ639، مع التحقق الآلي من جميع الأعمدة الـ15 في الصفوف الـ1,080 (16,200 خلية)."
+    },
+    {
+      "id": "U66-audio-asset-register-full-23-columns",
+      "scope": "data/audio-asset-register.csv",
+      "type": "full_catalog_column_sync",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S14",
+        "S16",
+        "S20"
+      ],
+      "finding": "وُسّع verify_course.py ليتحقق آليًا من مطابقة جميع الأصول الصوتية الـ217 (474 مقطعًا؛ 137 ready و80 معلقة للمراجعة السمعية) بين data/audio-asset-register.csv وdata/audio-playlists.json وdata/course.json وملفات الدروس عبر المستويات A0–B2."
+    },
+    {
+      "id": "U67-full-project-axe-core-349-states",
+      "scope": "tools/test_accessibility_audit.cjs",
+      "type": "exhaustive_browser_accessibility_suite",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S11",
+        "S15"
+      ],
+      "finding": "رُقّي tools/test_accessibility_audit.cjs من فحص عينة دروس إلى فحص شامل يغطي 349 حالة شاشة كاملة (174 عند 1440×900 و175 عند 390×844 عبر جميع الدروس الـ53 وبوابة A0 والمستويات الـ5 والواجهة) بصفر مخالفات (wcag2a, wcag2aa, wcag21a, wcag21aa, best-practice) وصفر فحوص غير حاسمة، مع فحص DOM الحي لجميع الأسئلة الـ540 والخيارات الـ1,622 والتفسيرات الـ540 والمهام العملية الـ109."
+    },
+    {
+      "id": "U68-full-project-narrow-layout-348-states-and-browser-dom",
+      "scope": "tools/test_narrow_layout.cjs + tools/test_browser.cjs",
+      "type": "exhaustive_browser_layout_and_dom_suite",
+      "status": "reviewed_synced",
+      "sourceRefs": [
+        "S09",
+        "S10",
+        "S15",
+        "S19"
+      ],
+      "finding": "رُقّي tools/test_narrow_layout.cjs ليفحص 348 حالة عرض ضيق شاملة (174 في 320×900 عمودي و174 في 568×320 أفقي عبر جميع الدروس الـ53 وبوابة A0 والمستويات الـ5) بصفر تجاوز أفقي، ووُسّع tools/test_browser.cjs ليتحقق في DOM الحي عبر جميع الدروس الـ53 وبوابة A0 من عرض 754 بطاقة مفردات و474 سطر تفريغ صوتي بسمة lang=\"de\" و96 جدولًا (273 رأس th و2,938 خلية td)."
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
+    "styles.css": "a403c56eca9eef1e5a9ffb35431df8e52d5ce9d3ab6bb3eb1538c602197471cd",
+    "service-worker.js": "e6cf297563e272502af514f43a01f77f6d968d5c5c51589fec54013ab0ee7b00",
+    "data/course.json": "4f342cff43f475cfe15625aedb2b6da3cd856d5bbb241bfcaa3267e8940b8845",
+    "data/curriculum-file-audit.csv": "23f696b9f652b38e124a3c4bc08dea13eb9bc043136c0a74d3ff7c715c7eabdd",
+    "data/production-task-catalog.csv": "aecbbb45f60b7a48f957b1460d18f5ab2a92376938f09906ebf7403cc6cae3ff",
+    "data/audio-asset-register.csv": "940454ebb8fd2f6c15ea3a3244b9bb92f41596d2bee5881ecc048731036dca42",
+    "tools/build_course.py": "133133494e5e6195d34815eb0b73b3238df31b4eb112071d2b7458f7e73affbd",
+    "tools/verify_course.py": "4411218b78712c52185cca1246905188a5895258074a511cb6be14ad55591c24",
+    "tools/test_browser.cjs": "4df1a09b5c4f635735b02afeff3926e68ab0b8cf1605802f0b071fcf2ca40f97",
+    "tools/test_accessibility_audit.cjs": "0a9d73a10f517d63f2846639e90ca4814c3a8cc9d0fda7dba6e3f49637709e8d",
+    "tools/test_narrow_layout.cjs": "a13ff8f3049f0f8ad2a93ca4f47e6c7d57b9801388ac660084a38efccabda277",
+    "tools/test_accessibility_update.cjs": "99e69b581182ac56a583dfc00e20eae37481363422e899e02e3ebae05b3cdd88",
+    "tools/test_service_worker.cjs": "ffb03d1b720664da07c5dfda0be0d2706cbbf002ed463df372b8722873a2d234"
+  }
+}

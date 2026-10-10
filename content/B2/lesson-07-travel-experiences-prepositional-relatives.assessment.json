@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-07-v3",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-07-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-07-G01 وكتل المصدر T01–T07: اختيار ضمير الوصل، ومطابقة حرف الجر والحالة، وربط الجمل وترتيبها، وفهم قراءة الرحلة ونص الاستماع المكتوب.",
+      "ترتبط P01 مباشرةً بـT08 بوصفها مهمة كتابية فقط لوصف رحلة خيالية؛ وتدمج P02 بين بناء الجملة في T03 والقراءة الخيالية T05 ونص الاستماع المكتوب T06 والإنتاج في T08 كتابةً وقراءةً جهرية ذاتية. تتطلب المهمتان ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة، مع مطابقة الحالة والجنس/العدد ووضع الفعل المصرف في نهاية الجملة الموصولة.",
+      "تُنجز P01 كتابةً فقط، وتُنجز P02 كتابةً مع قراءة جهرية ذاتية دون تسجيل أو إرسال صوت. التحقق ذاتي محلي بمعايير ظاهرة؛ ولا يعتمد التقييم على MP3 أو خدمة خارجية ولا يدّعي تصحيح النطق أو الكتابة آليًا.",
+      "في v3 فُرق نمط الإنجاز بين P01 (كتابة فقط) وP02 (كتابة + جهر استنادًا إلى T03 وT05 وT06 وT08) مع الحفاظ على تصحيح Hafen West في v2 وصواب مفتاح تمرين 2 بند 1 (in dem مع das Hotel). سجلات إتقان v1 وv2 لا تُقبل للإصدار الجديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-07-Q01",
+      "sourceTaskIds": [
+        "DL-B2-07-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "الجملة الموصولة مع حرف جر",
+        "mit + Dativ"
+      ],
+      "prompt": "اختر ضمير الوصل المناسب: **Die Fähre, mit ___ wir zur Insel fahren, legt früh ab.**",
+      "options": [
+        "die",
+        "der",
+        "dem"
+      ],
+      "answerIndex": 1,
+      "explanation": "الاسم **die Fähre** مؤنث مفرد، وحرف الجر **mit** يتطلب Dativ؛ لذلك نستخدم **der**."
+    },
+    {
+      "id": "DL-B2-07-Q02",
+      "sourceTaskIds": [
+        "DL-B2-07-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "حرف الجر وضمير الوصل",
+        "in + Dativ للمكان"
+      ],
+      "prompt": "أكمل حرف الجر وضمير الوصل: **Das Hotel, ___ ___ wir übernachtet haben, liegt am Hafen.** (in + Dativ)",
+      "options": [
+        "in das",
+        "mit dem",
+        "in dem"
+      ],
+      "answerIndex": 2,
+      "explanation": "المبيت هنا في مكان ثابت، فيأتي **in + Dativ**. والاسم **das Hotel** محايد، لذلك الصيغة هي **in dem**."
+    },
+    {
+      "id": "DL-B2-07-Q03",
+      "sourceTaskIds": [
+        "DL-B2-07-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "zu + Dativ",
+        "ضمير الوصل للمذكر"
+      ],
+      "prompt": "أكمل حرف الجر وضمير الوصل: **Der Aussichtspunkt, ___ ___ wir gewandert sind, bietet einen Blick auf die Bucht.** (zu + Dativ)",
+      "options": [
+        "zu dem",
+        "zu den",
+        "durch den"
+      ],
+      "answerIndex": 0,
+      "explanation": "يتطلب **zu** حالة Dativ، والاسم **der Aussichtspunkt** مذكر مفرد؛ لذا نقول **zu dem**."
+    },
+    {
+      "id": "DL-B2-07-Q04",
+      "sourceTaskIds": [
+        "DL-B2-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "وصل الجملتين",
+        "über + Akkusativ"
+      ],
+      "prompt": "اختر الجملة الموصولة الصحيحة من: **Das ist die Route. Wir haben über die Route gesprochen.**",
+      "options": [
+        "Das ist die Route, über der wir gesprochen haben.",
+        "Das ist die Route, über die wir gesprochen haben.",
+        "Das ist die Route, mit die wir gesprochen haben."
+      ],
+      "answerIndex": 1,
+      "explanation": "في **über die Route sprechen** يأتي **über** مع Akkusativ. والاسم **die Route** مؤنث، فيصبح ضمير الوصل **die**: **über die**."
+    },
+    {
+      "id": "DL-B2-07-Q05",
+      "sourceTaskIds": [
+        "DL-B2-07-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "وصل الجملتين",
+        "in + Dativ للمكان"
+      ],
+      "prompt": "ادمج الجملتين بصيغة صحيحة: **Wir besuchen ein Dorf. In dem Dorf übernachten unsere Freunde.**",
+      "options": [
+        "Wir besuchen ein Dorf, in den unsere Freunde übernachten.",
+        "Wir besuchen ein Dorf, in das unsere Freunde übernachten.",
+        "Wir besuchen ein Dorf, in dem unsere Freunde übernachten."
+      ],
+      "answerIndex": 2,
+      "explanation": "الأصدقاء يبيتون داخل القرية؛ فـ**in** للمكان الثابت يتطلب Dativ، و**das Dorf** محايد مفرد. الصواب **in dem**."
+    },
+    {
+      "id": "DL-B2-07-Q06",
+      "sourceTaskIds": [
+        "DL-B2-07-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "ترتيب الجملة الموصولة",
+        "الفعل في نهاية الجملة التابعة"
+      ],
+      "prompt": "اختر ترتيب الكلمات الصحيح: **Die Wege / auf denen / wir / gegangen sind / waren / schmal.**",
+      "options": [
+        "Die Wege, auf denen wir gegangen sind, waren schmal.",
+        "Die Wege, auf den wir gegangen sind, waren schmal.",
+        "Die Wege, auf denen sind wir gegangen, waren schmal."
+      ],
+      "answerIndex": 0,
+      "explanation": "ضمير الوصل يعود إلى **die Wege** (جمع)، و**auf** للمكان هنا يتطلب Dativ، لذلك نستخدم **denen**. والفعل المصرف **sind** يأتي في نهاية الجملة الموصولة، مع فاصلتين حولها."
+    },
+    {
+      "id": "DL-B2-07-Q07",
+      "sourceTaskIds": [
+        "DL-B2-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "استخراج تفاصيل الرحلة"
+      ],
+      "prompt": "بحسب قراءة T05، أين تبيت مجموعة Lina وأصدقائها؟",
+      "options": [
+        "في نزل عند نقطة الإطلالة.",
+        "في نزل صغير داخل قرية.",
+        "في ميناء West."
+      ],
+      "answerIndex": 1,
+      "explanation": "يذكر النص أنهم يمرون بقرية ويبيتون في نزل صغير فيها؛ لا يقول إن النزل عند نقطة الإطلالة أو في الميناء."
+    },
+    {
+      "id": "DL-B2-07-Q08",
+      "sourceTaskIds": [
+        "DL-B2-07-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "استخراج نهاية المسار"
+      ],
+      "prompt": "بحسب قراءة T05، أين تنتهي الطريق التي قرأت عنها Lina في دليلها؟",
+      "options": [
+        "عند خليج ترسو فيه قوارب الصيد.",
+        "في قرية الإقامة.",
+        "عند نقطة إطلالة يمكن منها رؤية الساحل."
+      ],
+      "answerIndex": 2,
+      "explanation": "يقول النص إن الطريق تنتهي عند **einem Aussichtspunkt**, ومنه يمكن رؤية الساحل."
+    },
+    {
+      "id": "DL-B2-07-Q09",
+      "sourceTaskIds": [
+        "DL-B2-07-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "تحديد معلومة صريحة"
+      ],
+      "prompt": "بحسب النص المكتوب لتدريب الاستماع T06، أي خليج أعجب المتحدث أكثر؟",
+      "options": [
+        "الخليج الذي قرأ عنه من قبل في دليل سفر.",
+        "الخليج الذي بات فيه ليلتين.",
+        "الخليج الذي زاره أولًا قبل الميناء."
+      ],
+      "answerIndex": 0,
+      "explanation": "يقول المتحدث إن الخليج الذي قرأ عنه في دليل السفر أعجبه خصوصًا. يتيح النص المكتوب الإجابة من دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-07-Q10",
+      "sourceTaskIds": [
+        "DL-B2-07-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "skillTags": [
+        "تمييز Dativ وAkkusativ",
+        "حرف الجر durch"
+      ],
+      "prompt": "أي عبارة تستخدم Akkusativ بعد حرف الجر؟",
+      "options": [
+        "mit dem Bus",
+        "durch den Tunnel",
+        "in der Pension (مكان ثابت)"
+      ],
+      "answerIndex": 1,
+      "explanation": "يتطلب **durch** Akkusativ؛ لذلك نقول **durch den Tunnel**. أما **mit dem Bus** و**in der Pension** للمكان الثابت فتأتيان مع Dativ."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-07-P01",
+      "sourceTaskIds": [
+        "DL-B2-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب وصفًا من خمس إلى ست جمل ألمانية عن رحلة خيالية. استخدم ثلاث جمل موصولة على الأقل، تسبق كلًّا منها حروف جر مختلفة، مثل mit der أو in dem أو durch das أو über die. طابق ضمير الوصل مع الاسم وحالة حرف الجر، وضع الفعل المصرف في نهاية الجملة الموصولة. لا حاجة إلى وصف مكان حقيقي أو إدخال بيانات شخصية. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "criteria": {
+        "taskCompletion": "وصف مكتوب لرحلة خيالية من خمس إلى ست جمل، يتضمن ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة.",
+        "meaningClarity": "يمكن تتبع مسار الرحلة وفهم تفاصيل المكان أو التجربة؛ لا يلزم وصف وجهة حقيقية أو إدخال بيانات شخصية.",
+        "targetSkill": "يطابق ضمير الوصل مع جنس الاسم وعدده والحالة التي يطلبها حرف الجر، ويضع الفعل المصرف في نهاية الجملة الموصولة مع الفواصل المناسبة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-07-P02",
+      "sourceTaskIds": [
+        "DL-B2-07-T03",
+        "DL-B2-07-T05",
+        "DL-B2-07-T06",
+        "DL-B2-07-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-07-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى قراءة T05 عن جزيرة Morgenküste الخيالية ونص الاستماع المكتوب في T06، اكتب إحاطة من خمس إلى ست جمل ألمانية لمتعلم آخر ثم اقرأها بصوت مسموع لنفسك. انقل ثلاثة تفاصيل صحيحة على الأقل عن الرحلة، مثل الانطلاق بالعبّارة من Hafen West أو المبيت في نزل داخل القرية أو انتهاء الطريق عند نقطة الإطلالة، مع الإشارة إلى محطة من نص الاستماع المكتوب مثل الخليج الذي قرئ عنه في دليل السفر أو الإقامة ليلتين. استخدم ثلاث جمل موصولة على الأقل تسبقها حروف جر مختلفة، ولا تضف حقائق أو مواعيد غير موجودة في المصدر. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة مكتوبة ومقروءة جهرًا من خمس إلى ست جمل تنقل ثلاثة تفاصيل على الأقل من قراءة T05 ونص الاستماع المكتوب في T06، وتتضمن ثلاث جمل موصولة تسبقها حروف جر مختلفة.",
+        "meaningClarity": "المعلومات مطابقة لرحلة الجزيرة الخيالية ونص الاستماع كما وردت في المصدر، ومنظمة بحيث يفهم المتعلم الآخر المسار؛ لا تُضاف مواعيد أو تفاصيل غير مذكورة.",
+        "targetSkill": "يطابق كل ضمير موصول مع مرجعه والحالة التي يتطلبها حرف الجر، ويضع الفعل المصرف في نهاية الجملة الموصولة مع الفواصل المناسبة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

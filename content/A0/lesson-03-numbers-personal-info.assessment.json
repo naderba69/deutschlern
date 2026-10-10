@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-03-v3",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR3: مراجعة نصية بالمراجع لكل وحدة في data/reviews/a0-03-review.json؛ لا اعتماد سمعي جديد ولا شهادة إتقان مستقلة.",
+      "الأساس 0–20 وقراءة الخانات منفردة؛ التوسعة اختيارية ولا تدخل في مفاتيح الاختيارات أو مشتتاتها.",
+      "Q06 مرتبط الآن بتمرين T02 بعد إضافة neunzehn؛ صُححت بيانات ربط الفهرس أيضًا.",
+      "الأداء مسودة مكتوبة وقراءة بصوت مرتفع بتأكيد ذاتي محلي، دون تسجيل أو تصحيح آلي للنطق أو اللغة. الحد الأدنى للطول يمنع الرد الفارغ أو شديد القصر فقط.",
+      "الصوت الموجود أصلان وسبعة مقاطع، محفوظان دون تعديل أو إعادة توليد؛ التسجيل العددي يشمل التوسعة الاختيارية أيضًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-03-Q01",
+      "sourceTaskIds": [
+        "DL-A0-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما كتابة العدد 3 بالألمانية؟",
+      "options": [
+        "drei",
+        "vier",
+        "dreizehn"
+      ],
+      "answerIndex": 0,
+      "explanation": "3 هو drei؛ vier تعني 4 وdreizehn تعني 13."
+    },
+    {
+      "id": "DL-A0-03-Q02",
+      "sourceTaskIds": [
+        "DL-A0-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عدد تعني كلمة sieben؟",
+      "options": [
+        "6",
+        "7",
+        "17"
+      ],
+      "answerIndex": 1,
+      "explanation": "sieben تعني 7."
+    },
+    {
+      "id": "DL-A0-03-Q03",
+      "sourceTaskIds": [
+        "DL-A0-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما كتابة العدد 12 بالألمانية؟",
+      "options": [
+        "zwölf",
+        "zwanzig",
+        "zwei"
+      ],
+      "answerIndex": 0,
+      "explanation": "12 هو zwölf؛ zwanzig تعني 20."
+    },
+    {
+      "id": "DL-A0-03-Q04",
+      "sourceTaskIds": [
+        "DL-A0-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما كتابة العدد 16؟",
+      "options": [
+        "siebzehn",
+        "sechs",
+        "sechzehn"
+      ],
+      "answerIndex": 2,
+      "explanation": "16 هو sechzehn؛ sechs تعني 6 وsiebzehn تعني 17."
+    },
+    {
+      "id": "DL-A0-03-Q05",
+      "sourceTaskIds": [
+        "DL-A0-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الصيغة الصحيحة للعدد 17؟",
+      "options": [
+        "siebzehn",
+        "siebenzehn",
+        "achtzehn"
+      ],
+      "answerIndex": 0,
+      "explanation": "17 تُكتب siebzehn، لا siebenzehn؛ أما achtzehn فتعني 18."
+    },
+    {
+      "id": "DL-A0-03-Q06",
+      "sourceTaskIds": [
+        "DL-A0-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني كلمة neunzehn؟",
+      "options": [
+        "9",
+        "19",
+        "18"
+      ],
+      "answerIndex": 1,
+      "explanation": "neunzehn تعني 19؛ neun هي 9 وachtzehn هي 18."
+    },
+    {
+      "id": "DL-A0-03-Q07",
+      "sourceTaskIds": [
+        "DL-A0-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال تسأل به عن عمر شخص؟",
+      "options": [
+        "Wo wohnst du?",
+        "Wie alt bist du?",
+        "Woher kommst du?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wie alt bist du? تعني: كم عمرك؟"
+    },
+    {
+      "id": "DL-A0-03-Q08",
+      "sourceTaskIds": [
+        "DL-A0-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال تسأل به عن بلد أصل الشخص؟",
+      "options": [
+        "Wie heißt du?",
+        "Wie alt bist du?",
+        "Woher kommst du?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Woher kommst du? تسأل عن بلد الأصل أو المكان الذي يأتي منه الشخص، لا مكان السكن الحالي بالضرورة."
+    },
+    {
+      "id": "DL-A0-03-Q09",
+      "sourceTaskIds": [
+        "DL-A0-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "في تدريب الهاتف نقرأ 26 41 08 رقمًا رقمًا. ما بدايته؟",
+      "options": [
+        "zwei sechs",
+        "sechs zwei",
+        "zwei acht"
+      ],
+      "answerIndex": 0,
+      "explanation": "نقرأ أول خانتين بالترتيب: zwei ثم sechs. لا نقرأ المجموعة 26 كعدد واحد في هذا التدريب."
+    },
+    {
+      "id": "DL-A0-03-Q10",
+      "sourceTaskIds": [
+        "DL-A0-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما كتابة العدد 20 بالألمانية؟",
+      "options": [
+        "zwanzig",
+        "zwei",
+        "zwölf"
+      ],
+      "answerIndex": 0,
+      "explanation": "20 تُكتب zwanzig؛ zwei تعني 2 وzwölf تعني 12."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-03-P01",
+      "sourceTaskIds": [
+        "DL-A0-03-T07",
+        "DL-A0-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "modality": [
+        "speaking",
+        "writing"
+      ],
+      "prompt": "استخدم شخصية خيالية باسم تختاره وعمر 18 أو 20، وبلد الأصل Tunesien والسكن Nabeul. اكتب في خانة الإجابة أربعة أسئلة بأجوبتها عن الاسم والعمر والأصل والسكن، ثم بطاقة من أربعة أسطر للشخصية نفسها. أدِّ الدورين بصوت مرتفع بنفسك أو مع شريك؛ لا تحتاج إلى كشف بياناتك الحقيقية.",
+      "criteria": {
+        "taskCompletion": "تتضمن المسودة أربعة أسئلة وأجوبتها ثم بطاقة من أربعة أسطر؛ وقد قرأت السؤال والجواب لكل حقل بصوت مرتفع.",
+        "meaningClarity": "الإجابة توافق سؤالها، والاسم والعمر والأصل والسكن متسقة بين المقابلة والبطاقة.",
+        "targetSkill": "أستخدم Wie heißt du? / Wie alt bist du? / Woher kommst du? / Wo wohnst du? وأجيب بـ Ich heiße / Ich bin … Jahre alt / Ich komme aus Tunesien / Ich wohne in Nabeul."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-03-P02",
+      "sourceTaskIds": [
+        "DL-A0-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-03-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب السؤال Wie ist deine Telefonnummer? والجواب Meine Nummer ist 26 41 08. ثم اكتب أسماء الخانات الست بالألمانية بالترتيب. اقرأ السؤال والجواب بصوت مرتفع، خانة خانة. هذا تسلسل تدريبي فقط؛ لا تدخل بيانات حقيقية ولا يلزم تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "كتبت السؤال والجواب بالأرقام وأسماء الخانات الست، ثم قرأت السؤال والجواب بصوت مرتفع.",
+        "meaningClarity": "حافظت على ترتيب 2، 6، 4، 1، 0، 8، بما فيه الصفر قبل الخانة الأخيرة.",
+        "targetSkill": "أستخدم Wie ist deine Telefonnummer? / Meine Nummer ist … وأقرأ zwei – sechs – vier – eins – null – acht منفردة؛ هذا تأكيد ذاتي لا حكم آلي على النطق."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 50,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

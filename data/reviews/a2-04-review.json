@@ -1,0 +1,1712 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-04-office-phone-appointments",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-04-v2",
+  "unitCount": 114,
+  "exerciseSubItemCount": 38,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "INDIRECT",
+      "title": "Lingolia — Indirekte Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/indirekte-fragen",
+      "scope": "ob لسؤال نعم/لا وأداة السؤال للمعلومة، والفعل المصرف آخر التابعة وعلامة النهاية بحسب الجملة الكاملة. لا ننسخ تهجئة wieviel الموجودة في مثال خارج نطاق الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "SEPARATE",
+      "title": "Lingolia — Trennbare und untrennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "بادئات mit-/zurück-/ab- منفصلة في الرئيسية؛ be-/ver- غير منفصلة. تبقى الأمثلة المدروسة أبسط من استثناءات الصفحة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "ANNA",
+      "title": "Deutsch mit Anna — Indirekte Fragen",
+      "url": "https://deutsch-mit-anna.de/lektion/indirekte-fragen/",
+      "scope": "الجزآن كاملان؛ مقارنة ob وأداة السؤال وموقع الفعل. لا نعتمد تعميم أن كل فعل أولًا يعني استفهامًا، ولا تنسخ تمارين الصفحة أو تعليقاتها؛ الأمر مثال مضاد، والترقيم هنا مدعوم أيضًا بـLingolia/Duden.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "TERM",
+      "title": "Duden — Termin",
+      "url": "https://www.duden.de/rechtschreibung/Termin",
+      "scope": "der Termin وجمع Termine؛ فعل vereinbaren مع موعد، وتمييز الموعد من معنى آخر كالمهلة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "DIRECT",
+      "title": "Duden — Durchwahl",
+      "url": "https://www.duden.de/rechtschreibung/Durchwahl",
+      "scope": "الاتصال المباشر بامتداد هاتفي، والاستعمال الدارج للرقم؛ أوسع من رقم داخلي لا يمكن بلوغه من الخارج.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "MOVE",
+      "title": "Duden — verschieben",
+      "url": "https://www.duden.de/rechtschreibung/verschieben",
+      "scope": "نقل الشيء، وفي معنى المواعيد تعرض الصفحة التأجيل؛ المثال هنا الثلاثاء إلى الأربعاء، لا تغيير إلى يوم سابق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "CANCEL",
+      "title": "Duden — absagen",
+      "url": "https://www.duden.de/rechtschreibung/absagen",
+      "scope": "عدم حصول حدث/إبلاغ إلغاء حضور؛ لا يعني وضع بديل تلقائيًا، وصيغة sagt ab.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "TELL",
+      "title": "Duden — mitteilen",
+      "url": "https://www.duden.de/rechtschreibung/mitteilen",
+      "scope": "إبلاغ شخص بمعلومة، jemandem etwas، وصيغ teilt mit/hat mitgeteilt.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    },
+    {
+      "id": "COMMA",
+      "title": "Duden — Komma",
+      "url": "https://www.duden.de/sprachwissen/rechtschreibregeln/komma",
+      "scope": "الأجزاء0–4 كاملة؛ فصل التابعة بالفاصلة، والتحية بفاصلة يتبعها حرف صغير عند اقتضاء الإملاء، والختام المستقل عادة بلا علامة نهائية؛ تذكر الصفحة اختلاف العرف السويسري والليختنشتايني.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/indirekte-fragen",
+      "reason": "404 page content; excluded"
+    },
+    {
+      "url": "https://www.duden.de/sprachwissen/sprachratgeber/Komma-nach-Anrede",
+      "reason": "404 page content; excluded"
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.4 — المكتب والهاتف والمواعيد",
+      "finding": "موضوع المكتب والهاتف والمواعيد؛ لا تنفيذ حجز أو مراسلة حقيقية.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 35–40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** كتابة، محادثة هاتفية، قراءة بريد إلكتروني، قواعد، واستماع اختياري",
+      "finding": "المدة تقديرية مرنة؛ الكتابة صريحة والاستماع اختياري لأن التقييم لا يحتاج MP3.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أطلب موعدًا هاتفيًا، وأفهم رسالة عمل، وأسأل سؤالًا غير مباشر بأدب.",
+      "finding": "الهدف يتدرب عبر العبارات وفهم البريد والمكالمة وإنتاج سؤال تابع؛ لا شهادة مستوى.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "في نمطي السؤال المباشر المدروسين: يبدأ سؤال نعم/لا بالفعل المصرف، ويأتي الفعل بعد أداة السؤال في سؤال الوقت بـ wann:",
+      "finding": "قُيد الوصف بنمطي نعم/لا ووقت مباشر، لا جميع أنواع الأسئلة أو الاستعمالات.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "السؤال غير المباشر جزء تابع داخل جملة أخرى. قد يساعد على الطلب المهذب مع مقدمة مثل Können Sie mir sagen، لكنه ليس مهذبًا تلقائيًا في كل موقف. نستخدم **ob** بمعنى «ما إذا كان / هل» لنقل سؤال نعم/لا، و**wann** للسؤال عن الوقت. ob هنا ليست «إذا» الشرطية. في الجمل البسيطة المدروسة يأتي الفعل المصرف في نهاية الجزء التابع:",
+      "finding": "ob يطلب معرفة صحة معلومة وwann وقتها؛ غير المباشر ليس شرطًا أو تهذيبًا تلقائيًا.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "الفاصلة تفصل الجزء التابع عن الجملة الرئيسية. تذكّر: **ob … ist**، **wann … beginnt**؛ ننقل الفعل المصرف ولا نحوله إلى مصدر: **die Besprechung beginnt/endet**، **der Zug fährt**، **Frau Weber ist**.",
+      "finding": "المطلوب نقل الفعل المصرف، لا تحويله إلى مصدر أو إهمال توافقه مع الفاعل.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "علامة النهاية تتبع الجملة الكاملة: **Können Sie mir sagen, wann der Termin beginnt?** سؤال ينتهي بعلامة استفهام (?)؛ أما **Ich möchte wissen, wann der Termin beginnt.** فخبرية تنتهي بنقطة. والطلب **Bitte teilen Sie mir mit, ob Mittwoch möglich ist.** ليس سؤال نعم/لا لمجرد وجود ob أو تقدم الفعل؛هذه صيغة طلب. نحافظ على الفاصلة قبل ob/wann.",
+      "finding": "الفاصلة وعلامة النهاية منفصلتان؛ الطلب Bitte teilen Sie… ليس استفهامًا لمجرد تقدم الفعل.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "هذه الأسماء والتفاصيل للتدريب؛الاجتماع الآخر سبب مضاف في نموذج P02 لا معلومة من البريد الأصلي. النماذج نصية ولا تغيّر التسجيلات القائمة. التحقق الذاتي يقارن المحتوى والترتيب، ولا يعطي تصحيحًا آليًا للنطق أو اللغة.",
+      "finding": "المثال الجديد مستقل؛ السبب المفترض لا يضاف إلى البريد الأصلي، ولا ننسبه للتسجيل.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| das Gespräch | die Gespräche | المحادثة |",
+      "finding": "Gespräch محادثة محايدة وجمعها Gespräche مع Umlaut؛ لا تقتصر على الهاتف.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Nachricht | die Nachrichten | الرسالة |",
+      "finding": "Nachricht رسالة/خبر؛ المقصود رسالة في هذا السياق، وجمعها Nachrichten.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Anruf | die Anrufe | المكالمة |",
+      "finding": "Anruf مكالمة أو اتصال هاتفي، مذكر وجمع Anrufe.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Durchwahl | die Durchwahlen | رقم الاتصال المباشر / التحويلة |",
+      "finding": "وُسع معنى Durchwahl إلى رقم اتصال مباشر/تحويلة؛ لا يُحصر بالاتصال الداخلي.",
+      "sourceIds": [
+        "DIRECT"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Besprechung | die Besprechungen | الاجتماع |",
+      "finding": "Besprechung اجتماع مؤنث وجمعه Besprechungen؛ ليس تأكيد موعد بحد ذاته.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| der Kalender | die Kalender | التقويم |",
+      "finding": "Kalender مذكر وجمعه مطابق؛ التقويم أداة لا موعد واحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Termin | die Termine | الموعد |",
+      "finding": "Termin مذكر وجمع Termine؛ vereinbaren حجز باتفاق لا إشغال تقويم من طرف واحد.",
+      "sourceIds": [
+        "TERM"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| frei / besetzt | — | متاح / مشغول؛ بحسب السياق |",
+      "finding": "frei متاح وbesetzt مشغول بحسب الخط أو الوقت؛ لا تعني مجانية الموعد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| verschieben | verschiebt | ينقل الموعد إلى وقت آخر؛ يؤجله هنا |",
+      "finding": "verschieben نقل موعد قائم؛ يؤخره المثال من الثلاثاء للأربعاء، بخلاف إلغائه.",
+      "sourceIds": [
+        "MOVE"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| absagen | sagt ab | يلغي |",
+      "finding": "absagen يلغي في السياق؛ أضيفت sagt ab لتوضيح الفصل.",
+      "sourceIds": [
+        "CANCEL",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| bestätigen | bestätigt | يؤكد |",
+      "finding": "bestätigen يؤكد، وصيغة bestätigt غير منفصلة؛ طلب التأكيد ليس تحقق حصوله.",
+      "sourceIds": [
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| zurückrufen | ruft zurück | يعاود الاتصال |",
+      "finding": "zurückrufen يعاود الاتصال، ruft zurück في الرئيسية؛ لا يعني زيارة الشخص.",
+      "sourceIds": [
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| vereinbaren | vereinbart | يتفق على/يحجز (موعدًا) |",
+      "finding": "vereinbaren يتفق على الموعد؛ vereinbart غير منفصل.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| mitteilen | teilt mit | يبلغ/يخبر |",
+      "finding": "mitteilen يبلغ؛ teilt mit منفصل، والمتلقي Dativ كما في mir.",
+      "sourceIds": [
+        "TELL",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-01",
+      "text": "**Guten Tag, hier spricht Amal Ben Ali.** — نهارك سعيد، معك أمل بن علي.",
+      "finding": "تحية وتعريف مهني؛ hier spricht لا يعني السكن هنا.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-02",
+      "text": "**Kann ich bitte mit Frau Weber sprechen?** — هل يمكنني التحدث مع السيدة فيبر؟",
+      "finding": "Kann ich…sprechen طلب مهذب؛ mit Frau Weber لا تنكير للسيدة ولا تغيير للاسم.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-03",
+      "text": "**Einen Moment, bitte.** — لحظة من فضلك.",
+      "finding": "طلب انتظار قصير؛ ليس وعدًا بوقت محدد أو مطالبة بالاتصال غدًا.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-04",
+      "text": "**Sie ist gerade in einer Besprechung.** — إنها في اجتماع الآن.",
+      "finding": "Sie تعود إلى Frau Weber في تسلسل الأمثلة؛ gerade الآن لا عادة دائمة.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-05",
+      "text": "**Kann sie mich bitte zurückrufen?** — هل يمكنها معاودة الاتصال بي؟",
+      "finding": "sie للسيدة وmich للمتصل؛ zurückrufen مصدر متصل بعد kann.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-06",
+      "text": "**Ich möchte einen Termin vereinbaren.** — أود حجز موعد.",
+      "finding": "طلب حجز موعد؛ einen Termin مفعول، ولا يحدد الوقت وحده.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "phone-07",
+      "text": "**Der Termin passt mir gut.** — الموعد مناسب لي.",
+      "finding": "الموعد مناسب للمتحدث؛ mir لا mich مع passt؛ قبول لا إيصال حجز رسمي.",
+      "sourceIds": [
+        "TERM",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "**Ist Frau Weber heute im Büro?** — هل السيدة فيبر في المكتب اليوم؟",
+      "finding": "سؤال نعم/لا مباشر يبدأ بـIst؛ im Büro قيد مكان لا وقت فقط.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "**Wann beginnt die Besprechung?** — متى يبدأ الاجتماع؟",
+      "finding": "سؤال مباشر عن البداية لا النهاية، والفعل بعد Wann.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "**Können Sie mir sagen, ob Frau Weber heute im Büro ist?** — هل يمكن أن تخبرني إن كانت السيدة فيبر في المكتب اليوم؟",
+      "finding": "نقل سؤال نعم/لا إلى ob مع ist في النهاية؛ السؤال الرئيسي يقتضي علامة استفهام.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "**Ich möchte wissen, wann die Besprechung beginnt.** — أود أن أعرف متى يبدأ الاجتماع.",
+      "finding": "wann يبقي معنى وقت البداية؛ خبرية Ich möchte wissen تنتهي بنقطة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "**Wissen Sie, ob der Termin noch frei ist?** — هل تعرف إن كان الموعد ما زال متاحًا؟",
+      "finding": "ob عن التوفر وnoch ما زال؛ السؤال لا يؤكد توفر الموعد أو نفيه.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "**frei / besetzt / offen / online** — الموعد frei أي متاح، والخط besetzt أي مشغول، والمكتب offen أي مفتوح، و online عبر الإنترنت. لا يعني الموعد المتاح أنه تأكد حجزه أو أنه مجاني.",
+      "finding": "تمييز التوفر والانشغال وفتح المكتب والموعد عبر الإنترنت؛ لا حجز مؤكد أو مجانية مستنتجة.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "**vereinbaren / verschieben / absagen / bestätigen** — نتفق على موعد / ننقل موعدًا قائمًا (من الثلاثاء إلى الأربعاء هنا) / نلغي الموعد / نؤكد الموعد. طلب التغيير ليس موافقة الطرف الآخر، و absagen لا يحدد موعدًا بديلًا تلقائيًا.",
+      "finding": "حجز/نقل/إلغاء/تأكيد وظائف مختلفة؛ نقل الموعد طلب ينتظر جوابًا.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "**zurückrufen / mitteilen** — يعاود الاتصال / يبلغ شخصًا بمعلومة. نقول **Rufen Sie mich bitte zurück.** و**Bitte teilen Sie mir mit,…**؛في الرئيسية ينفصل zurück/mit. بعد können يبقى المصدر متصلًا: **Können Sie mich zurückrufen?** لا zu هنا.",
+      "finding": "الفصل في الطلب الرئيسي والمصدر المتصل بعد können؛ موضع mir/mich مناسب.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "**Sie / sie / mir / mich** — Sie للمخاطب بصيغة الاحترام؛sie في Kann sie mich… تعود إلى Frau Weber. في بداية الجملة قد يبدأ الضميران بحرف كبير؛السياق يميز. نقول mir sagen/mitteilen لكن mich zurückrufen. وفي mit Herrn König تأتي Herrn بعد mit؛ليست Herr König في هذا التركيب.",
+      "finding": "Sie الاحترامي وsie المرجعي يميزهما السياق؛ صرف Herrn بعد mit مقصود.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "**am Dienstag / um 9 Uhr / auf Mittwoch / am Nachmittag** — يوم الثلاثاء / الساعة 9 / إلى الأربعاء عند نقل الموعد / بعد الظهر دون ساعة دقيقة. الأوقات خيالية وليست مواعيد فعلية؛اليوم نفسه لا يعني التاريخ نفسه في كل نص.",
+      "finding": "am لليوم وum للساعة وauf للبديل؛ Nachmittag دون ساعة دقيقة، والمواعيد خيالية.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "**نصوص مستقلة:** الحوار مع موظف بشأن Herr König، والبريد موجّه إلى Frau Weber، والاستماع رسالة إلى Herr König. لا تخلط الأربعاء 11 في البريد بالخميس 14 في الحوار. سبب تعذر الحضور في البريد غير مذكور؛الاستماع يذكر اجتماعًا. Frau König في T04 مثال نحوي مستقل، لا خطأ في اسم Herr König ولا دليل قرابة.",
+      "finding": "لا نجمع تفاصيل النصوص في حكاية واحدة؛ سبب البريد غائب، وFrau König مثال آخر لا خطأ تلقائيًا.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "**البريد المكتوب:** بعد التحية المنتهية بفاصلة تبدأ leider بحرف صغير، وصيغة الختام المستقلة بلا فاصلة نهائية. هذا النمط المستعمل هنا، لا كل الأعراف الإقليمية. في تفريغ التسجيل ترد neun/elf بدل 9/11، وتفصل نقطةٌ التحيةَ عن المتن؛لا ننسخ ترقيم التفريغ الصوتي بدل تنسيق الرسالة.",
+      "finding": "الرسالة بتنسيق مكتوب، والتفريغ يعرض الأرقام بالكلمات؛ ليست مراجعة سمعية أو تغييرًا للتسجيل.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "**طريقة التدريب:** P01 حوار من ستة أدوار يُقرأ كله جهرًا؛يمكن أداء الطرفين منفردًا. P02 رسالة كتابة فقط، وتفاصيلها تمرين خيالي مستقل. لا اتصال أو إرسال بريد أو تسجيل مطلوب. حاول الاستماع قبل فتح التفريغ؛قراءة النص لا تثبت فهمًا مسموعًا مستقلًا، والطول والإقرار لا يصححان اللغة أو النطق.",
+      "finding": "حدود الدليل: P01 مع الجهر وP02 كتابة، ولا إرسال أو تسجيل أو تصحيح آلي للغة.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE",
+        "TERM",
+        "MOVE",
+        "CANCEL",
+        "TELL",
+        "COMMA"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Guten Tag, hier spricht Amal Ben Ali. Ich möchte einen Termin mit Herrn König vereinbaren.",
+      "finding": "تحية وتعريف وطلب مع Herrn König؛ لم يحدد الوقت بعد.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Guten Tag. Einen Moment, bitte. Herr König ist gerade in einer Besprechung.",
+      "finding": "رد تحية وطلب انتظار وسبب عدم الحديث معه الآن؛ ليس إلغاءً للموعد.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Können Sie mir sagen, wann er Zeit hat?",
+      "finding": "er يعود إلى Herrn König؛ wann لوقت التوفر وhat في النهاية.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Am Donnerstag um 14 Uhr.",
+      "finding": "الخميس14 جواب مختصر صالح؛ ليس الأربعاء11 من البريد.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Wissen Sie, ob der Termin online ist?",
+      "finding": "ob لسؤال نعم/لا عن كون الموعد online؛ لا يسأل عن بدايته.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ja, die Besprechung ist online.",
+      "finding": "Ja ثم إيضاح أن الاجتماع عبر الإنترنت؛ لا معلومات منصة أو رابط اتصال.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Das passt mir gut. Vielen Dank.",
+      "finding": "قبول للوقت المقترح وشكر؛ لا وثيقة حجز أو إثبات انعقاد لاحق.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Guten Tag, Frau Weber,",
+      "finding": "تحية إلى Frau Weber بفاصلة؛ يليها leider الصغيرة في المتن.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "leider kann ich am Dienstag um 9 Uhr nicht zu unserem Termin kommen.",
+      "finding": "تعذر حضور الثلاثاء9 صريح؛ سبب التعذر غير مصرح به.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Können wir den Termin auf Mittwoch verschieben?",
+      "finding": "طلب نقل الموعد إلى الأربعاء؛ لا موافقة مستلمة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Bitte teilen Sie mir mit, ob Mittwoch um 11 Uhr möglich ist.",
+      "finding": "اقتراح الأربعاء11 مع طلب جواب ob؛ teilen…mit في الرئيسية وist في التابعة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Ich möchte auch wissen, wann die Besprechung endet.",
+      "finding": "طلب وقت نهاية الاجتماع؛ الجواب الزمني غير وارد في النص.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Vielen Dank und freundliche Grüße",
+      "finding": "ختام مستقل بلا فاصلة نهائية؛ لا يمثل جملة متن إضافية في عد المهمة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Amal Ben Ali",
+      "finding": "توقيع Amal Ben Ali؛ لا يدل على أن كل نص في الدرس الواقعة نفسها.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "MOVE",
+        "TELL"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Warum schreibt Amal?",
+      "finding": "تكتب لتعذر الحضور وطلب النقل؛ لا نختلق سبب الغياب.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "An welchem Tag kann sie nicht kommen?",
+      "finding": "Am Dienstag؛ الساعة9 تفصيل صحيح غير لازم لسؤال اليوم.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Auf welchen Tag möchte sie den Termin verschieben?",
+      "finding": "Auf Mittwoch؛ لا Donnerstag الواردة في النصين الآخرين.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Um wie viel Uhr schlägt sie den neuen Termin vor?",
+      "finding": "Um 11 Uhr؛ وقت مقترح لا حجز مؤكد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was möchte sie über die Besprechung wissen?",
+      "finding": "Wann die Besprechung endet؛ السؤال عما تريد معرفته لا عن ساعة نهاية معلومة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Guten Morgen, Herr König.",
+      "finding": "تحية صباحية إلى Herrn König؛ Herr في النداء هنا دون mit.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Hier ist Amal Ben Ali.",
+      "finding": "المتحدثة تعرّف نفسها؛ ليست هوية مفترضة من اسم الصوت فقط.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Ich kann heute um zehn Uhr nicht anrufen.",
+      "finding": "لا تستطيع الاتصال اليوم10؛ لا يقول النص إنها لا تستطيع الحضور إلى كل موعد.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Ich habe eine Besprechung.",
+      "finding": "لديها اجتماع؛ يوضح السياق سبب تعذر الاتصال، ولا يحدد بداية الاجتماع أو مدته.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Können Sie mir bitte sagen, ob der Termin am Donnerstag noch frei ist?",
+      "finding": "تسأل عن توفر الخميس بـob؛ السؤال لا يؤكد التوفر.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Rufen Sie mich bitte am Nachmittag zurück.",
+      "finding": "طلب معاودة الاتصال بعد الظهر؛ لا ساعة رقمية أو إثبات أن الاتصال وقع.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-07",
+      "text": "Vielen Dank.",
+      "finding": "ختام بالشكر؛ لا يضيف تفاصيل موعد.",
+      "sourceIds": [
+        "INDIRECT",
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wer spricht?",
+      "finding": "Amal Ben Ali مذكورة بالاسم.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Warum kann Amal um zehn Uhr nicht anrufen?",
+      "finding": "Sie hat eine Besprechung؛ سبب تعذر الاتصال لا تفاصيل الاجتماع.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Worüber möchte sie eine Auskunft?",
+      "finding": "Ob der Termin am Donnerstag noch frei ist؛ لا نفترض الجواب نعم.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Wann soll Herr König zurückrufen?",
+      "finding": "Am Nachmittag؛ لا نختلق ساعة مثل14 من الحوار الآخر.",
+      "sourceIds": []
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Guten Tag, hier spricht Amal Ben Ali. Ich möchte einen Termin vereinbaren.",
+      "finding": "تحية وتعريف وطلب موعد؛ الدور الواحد قد يضم جملتين، فلا نخلط الجمل والأدوار.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "An welchem Tag möchten Sie kommen?",
+      "finding": "سؤال عن اليوم يتيح الانتقال إلى اقتراح يوم ووقت.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Können Sie mir sagen, ob am Donnerstag um 14 Uhr ein Termin frei ist?",
+      "finding": "ob عن توفر الخميس14؛ الفعل ist آخر التابعة ولو لم يأت الفاعل مباشرة بعد ob.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Leider ist um 14 Uhr kein Termin frei. Am Donnerstag um 15 Uhr ist ein Termin frei.",
+      "finding": "رفض14 وعرض الخميس15؛ عرض البديل يسبق القبول والتأكيد.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "speaking-model-05",
+      "text": "Das passt mir gut. Vielen Dank.",
+      "finding": "قبول مفهوم للبديل المذكور وشكر؛ لا قبول للوقت المرفوض.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "speaking-model-06",
+      "text": "Ich bestätige den Termin am Donnerstag um 15 Uhr.",
+      "finding": "تأكيد صريح للخميس15 متسق مع العرض والقبول.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Guten Tag, Frau Weber,",
+      "finding": "تحية بفاصلة كما يقتضي النمط المدروس.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "leider kann ich am Dienstag um 9 Uhr nicht zu unserem Termin kommen.",
+      "finding": "الجملة1: تعذر حضور الثلاثاء9، وleider صغيرة بعد التحية.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Ich habe eine andere Besprechung.",
+      "finding": "الجملة2: اجتماع آخر سبب مفترض مستقل، لا حقيقة مستنتجة من البريد الأصلي.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Können wir den Termin auf Mittwoch um 11 Uhr verschieben?",
+      "finding": "الجملة3: طلب بديل الأربعاء11؛ سؤال مباشر مع Können وعلامة استفهام.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-05",
+      "text": "Bitte teilen Sie mir mit, ob der Termin möglich ist.",
+      "finding": "الجملة4: طلب جواب بـob؛ ليست صيغة استفهام رئيسي، وist في نهاية التابعة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-06",
+      "text": "Ich möchte wissen, wann die Besprechung endet.",
+      "finding": "الجملة5: wann لنهاية الاجتماع؛ endet مصرف ونقطة نهائية بعد الخبرية.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-07",
+      "text": "Vielen Dank und freundliche Grüße",
+      "finding": "ختام مستقل بلا فاصلة؛ خارج الجمل الخمس المطلوبة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "writing-model-08",
+      "text": "Amal Ben Ali",
+      "finding": "اسم خيالي للتوقيع؛ لا إرسال أو كشف هوية شخصية مطلوب.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TELL",
+        "MOVE"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Ich möchte einen Termin vereinbaren.** → أود حجز موعد.",
+      "finding": "طلب موعد لا تأكيد حصوله.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "**Können Sie mir sagen, ob …?** → هل يمكن أن تخبرني إن…؟",
+      "finding": "قالب سؤال بـob؛ يحتاج تتمة بفعل مصرف في النهاية، لا جملة مستقلة مكتملة.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich möchte wissen, wann …** → أود أن أعرف متى…",
+      "finding": "قالب خبرية فيها سؤال غير مباشر بـwann؛ يحتاج تتمة لا علامة استفهام آلية.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "**Der Termin passt mir gut.** → الموعد مناسب لي.",
+      "finding": "التعبير عن ملاءمة الموعد مع mir؛ لا وعد خارج السيناريو.",
+      "sourceIds": [
+        "INDIRECT",
+        "TERM"
+      ]
+    },
+    {
+      "id": "DL-A2-04-T01",
+      "text": "1. تعريف المتصل بنفسه: **Hier spricht Amal Ben Ali. / Hier wohnt Amal Ben Ali.**\n2. طلب الانتظار: **Einen Moment, bitte. / Gute Reise!**\n3. طلب حجز موعد: **Ich möchte einen Termin vereinbaren. / Ich möchte ein Zimmer nehmen.**\n4. طلب معاودة الاتصال: **Können Sie mich zurückrufen? / Können Sie mich besuchen?**\n5. نقل موعد قائم من الثلاثاء إلى الأربعاء: **einen Termin verschieben / einen Termin bestätigen**.",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [],
+      "items": [
+        {
+          "number": 1,
+          "text": "تعريف المتصل بنفسه: **Hier spricht Amal Ben Ali. / Hier wohnt Amal Ben Ali.**",
+          "answer": "Hier spricht Amal Ben Ali.",
+          "finding": "spricht يقدم المتصل؛ wohnt للسكن."
+        },
+        {
+          "number": 2,
+          "text": "طلب الانتظار: **Einen Moment, bitte. / Gute Reise!**",
+          "answer": "Einen Moment, bitte.",
+          "finding": "طلب الانتظار لا تمني رحلة سعيدة."
+        },
+        {
+          "number": 3,
+          "text": "طلب حجز موعد: **Ich möchte einen Termin vereinbaren. / Ich möchte ein Zimmer nehmen.**",
+          "answer": "Ich möchte einen Termin vereinbaren.",
+          "finding": "موعد لا غرفة؛ المشتت سليم لغويًا لكن وظيفته مختلفة."
+        },
+        {
+          "number": 4,
+          "text": "طلب معاودة الاتصال: **Können Sie mich zurückrufen? / Können Sie mich besuchen?**",
+          "answer": "Können Sie mich zurückrufen?",
+          "finding": "معاودة اتصال لا زيارة."
+        },
+        {
+          "number": 5,
+          "text": "نقل موعد قائم من الثلاثاء إلى الأربعاء: **einen Termin verschieben / einen Termin bestätigen**.",
+          "answer": "einen Termin verschieben",
+          "finding": "نقل موعد قائم؛ أضيف دعم مباشر لـQ01 بدل الاكتفاء بمفردات الدرس."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T02",
+      "text": "1. Können Sie mir sagen, ______ der Termin frei ist? (هل)\n2. Ich möchte wissen, ______ die Besprechung beginnt. (متى)\n3. Wissen Sie, ______ Frau Weber heute im Büro ist? (هل)\n4. Können Sie mir sagen, ______ Herr König Zeit hat? (متى)",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "Können Sie mir sagen, ______ der Termin frei ist? (هل)",
+          "answer": "ob",
+          "finding": "التلميح هل يحصر الاختيار في ob."
+        },
+        {
+          "number": 2,
+          "text": "Ich möchte wissen, ______ die Besprechung beginnt. (متى)",
+          "answer": "wann",
+          "finding": "متى للبداية: wann، لا ob."
+        },
+        {
+          "number": 3,
+          "text": "Wissen Sie, ______ Frau Weber heute im Büro ist? (هل)",
+          "answer": "ob",
+          "finding": "هل عن الوجود في المكتب: ob."
+        },
+        {
+          "number": 4,
+          "text": "Können Sie mir sagen, ______ Herr König Zeit hat? (متى)",
+          "answer": "wann",
+          "finding": "متى لتوفر الوقت: wann."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T03",
+      "text": "1. **Ist Frau Weber heute da?** → Können Sie mir sagen, ob ______?\n2. **Wann beginnt der Termin?** → Ich möchte wissen, wann ______.\n3. **Ist Mittwoch um 11 Uhr möglich?** → Bitte teilen Sie mir mit, ob ______.",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "**Ist Frau Weber heute da?** → Können Sie mir sagen, ob ______?",
+          "answer": "Frau Weber heute da ist.",
+          "finding": "Ist ينقل آخر الجزء بعد ob؛ علامته تتبع السؤال الرئيسي."
+        },
+        {
+          "number": 2,
+          "text": "**Wann beginnt der Termin?** → Ich möchte wissen, wann ______.",
+          "answer": "der Termin beginnt.",
+          "finding": "begint غير صحيح؛ الصيغة beginnt آخر التابعة بعد wann."
+        },
+        {
+          "number": 3,
+          "text": "**Ist Mittwoch um 11 Uhr möglich?** → Bitte teilen Sie mir mit, ob ______.",
+          "answer": "Mittwoch um 11 Uhr möglich ist.",
+          "finding": "ist آخر التابعة، وteilen…mit في الرئيسية؛ دعم مباشر لـQ04."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T04",
+      "text": "1. Ich weiß nicht, wann die Besprechung ______. (beginnen)\n2. Können Sie mir sagen, ob Frau König im Büro ______? (sein)\n3. Sie möchte wissen, wann der Zug ______. (fahren)",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "Ich weiß nicht, wann die Besprechung ______. (beginnen)",
+          "answer": "beginnt",
+          "finding": "beginnen يتصرف beginnt مع مفرد الاجتماع."
+        },
+        {
+          "number": 2,
+          "text": "Können Sie mir sagen, ob Frau König im Büro ______? (sein)",
+          "answer": "ist",
+          "finding": "sein يصبح ist؛ Frau König مثال مستقل لا تعديل لهوية Herrn König."
+        },
+        {
+          "number": 3,
+          "text": "Sie möchte wissen, wann der Zug ______. (fahren)",
+          "answer": "fährt",
+          "finding": "fahren يصبح fährt مع der Zug؛ ليست fahren المصدر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Amal kann am Dienstag um 9 Uhr kommen.\n2. Sie möchte den Termin auf Mittwoch verschieben.\n3. Sie schlägt Mittwoch um 11 Uhr vor.\n4. Sie möchte wissen, wann die Besprechung endet.",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [],
+      "items": [
+        {
+          "number": 1,
+          "text": "Amal kann am Dienstag um 9 Uhr kommen.",
+          "answer": "خطأ: لا تستطيع الحضور.",
+          "finding": "النص ينفي الحضور في ذلك الموعد؛ مفتاح خطأ مسند."
+        },
+        {
+          "number": 2,
+          "text": "Sie möchte den Termin auf Mittwoch verschieben.",
+          "answer": "صحيح: Mittwoch.",
+          "finding": "تنقل إلى الأربعاء كما طلبت، لا تأكيد الموافقة."
+        },
+        {
+          "number": 3,
+          "text": "Sie schlägt Mittwoch um 11 Uhr vor.",
+          "answer": "صحيح: um 11 Uhr.",
+          "finding": "الأربعاء11 وقت الاقتراح."
+        },
+        {
+          "number": 4,
+          "text": "Sie möchte wissen, wann die Besprechung endet.",
+          "answer": "صحيح: wann die Besprechung endet.",
+          "finding": "تريد معرفة النهاية؛ ليست النهاية معلومة في النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة: **Besprechung — Donnerstag — Nachmittag**.\n\n1. Amal kann nicht anrufen. Sie hat eine ______.\n2. Sie fragt, ob der Termin am ______ frei ist.\n3. Herr König soll am ______ zurückrufen.",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [],
+      "items": [
+        {
+          "number": 1,
+          "text": "Amal kann nicht anrufen. Sie hat eine ______.",
+          "answer": "Besprechung",
+          "finding": "السبب اجتماع دون الجزم بساعة بدايته؛ أصلحت صياغة البند وفصلته."
+        },
+        {
+          "number": 2,
+          "text": "Sie fragt, ob der Termin am ______ frei ist.",
+          "answer": "Donnerstag",
+          "finding": "الخميس كما في الاستماع؛ لا الأربعاء في البريد."
+        },
+        {
+          "number": 3,
+          "text": "Herr König soll am ______ zurückrufen.",
+          "answer": "Nachmittag",
+          "finding": "بعد الظهر دون ساعة إضافية."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T07",
+      "text": "صحح موضع الفعل في الجزء التابع فقط، مع إبقاء الكلمات والمقدمة وعلامة النهاية:\n\n1. Ich möchte wissen, wann beginnt der Termin.\n2. Können Sie mir sagen, ob ist das Büro offen?",
+      "finding": "رُوجع كل بند ومفتاحه وبدائله بحسب الدليل؛ التفاصيل في items.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "Ich möchte wissen, wann beginnt der Termin.",
+          "answer": "Ich möchte wissen, wann der Termin beginnt.",
+          "finding": "ننقل beginnt فقط ونبقي wann والمقدمة والنقطة."
+        },
+        {
+          "number": 2,
+          "text": "Können Sie mir sagen, ob ist das Büro offen?",
+          "answer": "Können Sie mir sagen, ob das Büro offen ist?",
+          "finding": "ننقل ist فقط ونبقي ob وعلامة الاستفهام للسؤال الكلي."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-T08",
+      "text": "**أ — P01: مكالمة مع الجهر**\n\nاكتب ستة أدوار متناوبة لمكالمة خيالية بين Amal وموظف: الدور 1 تحية وتعريف بالنفس وطلب موعد؛الدور 2 يسأل عن اليوم؛الدور 3 تسأل Amal بـ Können Sie mir sagen, ob عن توفر الخميس الساعة 14؛الدور 4 يعتذر الموظف عن عدم توفر 14 ويقترح 15 في الخميس نفسه؛الدور 5 تقبل Amal الساعة 15؛الدور 6 يؤكد الموظف الخميس 15. اكتب لكل دور قولًا قصيرًا (قد يضم أكثر من جملة)، ثم اقرأ الأدوار الستة بصوت مرتفع. يمكنك أداء الطرفين منفردًا؛لا مكالمة حقيقية أو تسجيل مطلوب.\n\n**ب — P02: رسالة كتابة فقط**\n\nاكتب رسالة خيالية مستقلة إلى Frau Weber، كتابة فقط: تحية، ثم خمس جمل في المتن، ثم ختام واسم خيالي. الجملة 1 تعتذر عن عدم حضور موعد الثلاثاء 9؛الجملة 2 تعطي السبب المفترض في هذا التدريب: لديك اجتماع آخر؛الجملة 3 تطلب نقل الموعد إلى الأربعاء 11؛الجملة 4 تطلب إبلاغك بـ ob إن كان البديل ممكنًا؛الجملة 5 تسأل بـ Ich möchte wissen, wann عن نهاية الاجتماع. اجعل الفعل في نهاية كل جزء تابع وافصله بفاصلة؛لا تدّع أن البديل تأكد. لا تستنتج سبب البريد الأصلي من هذه المهمة، ولا يلزم الجهر أو إرسال الرسالة.",
+      "finding": "ستة أدوار للمكالمة وثمانية مكونات للرسالة (تحية وخمس جمل وختام واسم)؛ لا خلط عدد الجمل بعدد الأدوار، ولا جهر إلزامي للرسالة.",
+      "sourceIds": [
+        "INDIRECT",
+        "COMMA",
+        "TERM"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "text": "تحية وتعريف وطلب موعد",
+          "answer": "Guten Tag, hier spricht Amal Ben Ali. Ich möchte einen Termin vereinbaren.",
+          "finding": "P01 مع الجهر للجميع، والبديل يسبق القبول والتأكيد."
+        },
+        {
+          "number": 2,
+          "text": "سؤال الموظف عن اليوم",
+          "answer": "An welchem Tag möchten Sie kommen?",
+          "finding": "P01 مع الجهر للجميع، والبديل يسبق القبول والتأكيد."
+        },
+        {
+          "number": 3,
+          "text": "سؤال توفر الخميس14 بـob",
+          "answer": "Können Sie mir sagen, ob am Donnerstag um 14 Uhr ein Termin frei ist?",
+          "finding": "P01 مع الجهر للجميع، والبديل يسبق القبول والتأكيد."
+        },
+        {
+          "number": 4,
+          "text": "رفض14 وعرض15 في الخميس نفسه",
+          "answer": "Leider ist um 14 Uhr kein Termin frei. Am Donnerstag um 15 Uhr ist ein Termin frei.",
+          "finding": "P01 مع الجهر للجميع، والبديل يسبق القبول والتأكيد."
+        },
+        {
+          "number": 5,
+          "text": "قبول البديل",
+          "answer": "Das passt mir gut. Vielen Dank.",
+          "finding": "P01 مع الجهر للجميع، والبديل يسبق القبول والتأكيد."
+        },
+        {
+          "number": 6,
+          "text": "تأكيد الخميس15 وقراءة الأدوار كلها جهرًا",
+          "answer": "Ich bestätige den Termin am Donnerstag um 15 Uhr.",
+          "finding": "P01 مع الجهر للجميع، والبديل يسبق القبول والتأكيد."
+        },
+        {
+          "number": 7,
+          "text": "تحية للرسالة",
+          "answer": "Guten Tag, Frau Weber,",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 8,
+          "text": "تعذر حضور الثلاثاء9",
+          "answer": "leider kann ich am Dienstag um 9 Uhr nicht zu unserem Termin kommen.",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 9,
+          "text": "السبب المفترض: اجتماع آخر",
+          "answer": "Ich habe eine andere Besprechung.",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 10,
+          "text": "طلب البديل الأربعاء11",
+          "answer": "Können wir den Termin auf Mittwoch um 11 Uhr verschieben?",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 11,
+          "text": "طلب جواب عن الإمكان بـob",
+          "answer": "Bitte teilen Sie mir mit, ob der Termin möglich ist.",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 12,
+          "text": "سؤال نهاية الاجتماع بـwann",
+          "answer": "Ich möchte wissen, wann die Besprechung endet.",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 13,
+          "text": "ختام الرسالة",
+          "answer": "Vielen Dank und freundliche Grüße",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        },
+        {
+          "number": 14,
+          "text": "اسم خيالي للتوقيع",
+          "answer": "Amal Ben Ali",
+          "finding": "P02 كتابة فقط؛ السبب مفترض والموعد البديل طلب ينتظر الرد."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q01",
+      "text": "ما معنى **einen Termin verschieben**؟",
+      "finding": "نقل موعد/تأجيله في السياق، لا تأكيده؛ T01.5 أصبح يدربه مباشرة.",
+      "sourceIds": [],
+      "options": [
+        "تأجيل الموعد أو نقله.",
+        "تأكيد موعد.",
+        "إلغاء الهاتف."
+      ],
+      "answer": "تأجيل الموعد أو نقله.",
+      "explanation": "verschieben تعني نقل الموعد إلى وقت آخر.",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q02",
+      "text": "أي كلمة تبدأ سؤالًا غير مباشر جوابه نعم أو لا؟",
+      "finding": "ob لسؤال نعم/لا؛ wann وقت وwohin وجهة.",
+      "sourceIds": [],
+      "options": [
+        "wann",
+        "ob",
+        "wohin"
+      ],
+      "answer": "ob",
+      "explanation": "نستخدم ob في الأسئلة غير المباشرة التي يكون جوابها نعم أو لا.",
+      "sourceTaskIds": [
+        "DL-A2-04-T02"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q03",
+      "text": "اختر الصيغة الصحيحة: Ich möchte wissen, ___.",
+      "finding": "endet مصرف في النهاية؛ enden مصدر، والتقديم المباشر لا يصلح بعد المقدمة. T03 يدرب التحويل نفسه ولو اختلف الفعل من يبدأ إلى ينتهي.",
+      "sourceIds": [],
+      "options": [
+        "wann endet die Besprechung",
+        "wann die Besprechung enden",
+        "wann die Besprechung endet"
+      ],
+      "answer": "wann die Besprechung endet",
+      "explanation": "في السؤال غير المباشر يأتي الفعل المصرف في نهاية الجملة التابعة.",
+      "sourceTaskIds": [
+        "DL-A2-04-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q04",
+      "text": "أكمل: Bitte teilen Sie mir mit, ob Mittwoch um 11 Uhr möglich ___.",
+      "finding": "ist وحدها تكمل العبارة؛ تكرار möglich أو إضافة am لا يصح. نُقل الرابط إلى T03.3 المطابق مباشرة.",
+      "sourceIds": [],
+      "options": [
+        "möglich ist am",
+        "ist",
+        "ist möglich"
+      ],
+      "answer": "ist",
+      "explanation": "بعد ob يأتي الفعل المصرف في نهاية الجزء التابع: möglich ist.",
+      "sourceTaskIds": [
+        "DL-A2-04-T03"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q05",
+      "text": "لماذا كتبت Amal الرسالة؟",
+      "finding": "السبب الوظيفي للرسالة تعذر الحضور وطلب النقل؛ لا إلغاء وظيفة أو حجز رحلة.",
+      "sourceIds": [],
+      "options": [
+        "لا تستطيع الحضور يوم الثلاثاء وتطلب نقل الموعد.",
+        "تريد إلغاء الوظيفة.",
+        "تريد حجز رحلة إلى Bremen."
+      ],
+      "answer": "لا تستطيع الحضور يوم الثلاثاء وتطلب نقل الموعد.",
+      "explanation": "توضح الرسالة أنها لا تستطيع الحضور وتطلب نقل الموعد إلى الأربعاء.",
+      "sourceTaskIds": [
+        "DL-A2-04-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q06",
+      "text": "إلى أي يوم تقترح Amal نقل الموعد؟",
+      "finding": "الأربعاء في البريد لا يوم آخر؛ المفاتيح محفوظة.",
+      "sourceIds": [],
+      "options": [
+        "إلى الاثنين.",
+        "إلى الجمعة.",
+        "إلى الأربعاء."
+      ],
+      "answer": "إلى الأربعاء.",
+      "explanation": "تقترح الرسالة Mittwoch.",
+      "sourceTaskIds": [
+        "DL-A2-04-T05"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q07",
+      "text": "ماذا تعني **Einen Moment, bitte** في مكالمة؟",
+      "finding": "انتظار لحظة لا معاودة غدًا أو انعدام موعد.",
+      "sourceIds": [],
+      "options": [
+        "أعد الاتصال غدًا.",
+        "لحظة من فضلك.",
+        "الموعد غير متاح."
+      ],
+      "answer": "لحظة من فضلك.",
+      "explanation": "هذه عبارة مهذبة لطلب الانتظار لحظة.",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q08",
+      "text": "أي سؤال ترتيبه صحيح؟",
+      "finding": "المقدمة Können Sie mir sagen صحيحة وist في نهاية التابعة؛ المشتتان يخالفان ترتيبها.",
+      "sourceIds": [],
+      "options": [
+        "Können Sie mir sagen, ob das Büro offen ist?",
+        "Können Sie mir sagen, ob ist das Büro offen?",
+        "Können Sie sagen mir, ob das Büro ist offen?"
+      ],
+      "answer": "Können Sie mir sagen, ob das Büro offen ist?",
+      "explanation": "بعد ob يأتي الفعل ist في نهاية الجملة التابعة.",
+      "sourceTaskIds": [
+        "DL-A2-04-T07"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q09",
+      "text": "أي عبارة تقدم المتحدثة على الهاتف؟",
+      "finding": "Hier spricht تعريف بالنفس؛ الرابط T01.1 أوضح من الإنتاج المفتوح T08.",
+      "sourceIds": [],
+      "options": [
+        "Ich bin ein Termin.",
+        "Der Termin telefoniert.",
+        "Hier spricht Amal Ben Ali."
+      ],
+      "answer": "Hier spricht Amal Ben Ali.",
+      "explanation": "Hier spricht … صيغة مناسبة للتعريف بالنفس عبر الهاتف.",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-04-Q10",
+      "text": "كيف تطلب بأدب أن يعاود شخص الاتصال بك؟",
+      "finding": "طلب معاودة اتصال: mich مفعول والمصدر في النهاية بعد können؛ الرابط T01.4 بدل T08.",
+      "sourceIds": [],
+      "options": [
+        "Rufen Sie ich zurück?",
+        "Können Sie mich zurückrufen?",
+        "Sie zurückrufen mich?"
+      ],
+      "answer": "Können Sie mich zurückrufen?",
+      "explanation": "Können Sie mich zurückrufen? سؤال مهذب وترتيبه صحيح.",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ]
+    },
+    {
+      "id": "DL-A2-04-P01",
+      "text": "اكتب ستة أدوار متناوبة لمكالمة خيالية بين Amal وموظف: الدور 1 تحية وتعريف بالنفس وطلب موعد؛الدور 2 يسأل عن اليوم؛الدور 3 تسأل Amal بـ Können Sie mir sagen, ob عن توفر الخميس الساعة 14؛الدور 4 يعتذر الموظف عن عدم توفر 14 ويقترح 15 في الخميس نفسه؛الدور 5 تقبل Amal الساعة 15؛الدور 6 يؤكد الموظف الخميس 15. اكتب لكل دور قولًا قصيرًا (قد يضم أكثر من جملة)، ثم اقرأ الأدوار الستة بصوت مرتفع. يمكنك أداء الطرفين منفردًا؛لا مكالمة حقيقية أو تسجيل مطلوب.",
+      "finding": "مطابقة حرفية لتدريب T08 مع مودالية ونموذج ومعايير متسقة؛ الطول والإقرار لا يصححان اللغة أو النطق.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "ستة أدوار تتضمن التعريف وطلب الموعد وسؤال اليوم وسؤال التوفر والبديل وقبوله وتأكيده؛قرأت الجميع جهرًا.",
+        "meaningClarity": "الخميس14 غير متاح، والبديل الخميس15 متسق في العرض والقبول والتأكيد.",
+        "targetSkill": "عبارات هاتفية مهذبة وسؤال ob مع الفاصلة والفعل المصرف في نهاية الجزء التابع؛تمييز العرض من التأكيد."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 200,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-04-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-04-P02",
+      "text": "اكتب رسالة خيالية مستقلة إلى Frau Weber، كتابة فقط: تحية، ثم خمس جمل في المتن، ثم ختام واسم خيالي. الجملة 1 تعتذر عن عدم حضور موعد الثلاثاء 9؛الجملة 2 تعطي السبب المفترض في هذا التدريب: لديك اجتماع آخر؛الجملة 3 تطلب نقل الموعد إلى الأربعاء 11؛الجملة 4 تطلب إبلاغك بـ ob إن كان البديل ممكنًا؛الجملة 5 تسأل بـ Ich möchte wissen, wann عن نهاية الاجتماع. اجعل الفعل في نهاية كل جزء تابع وافصله بفاصلة؛لا تدّع أن البديل تأكد. لا تستنتج سبب البريد الأصلي من هذه المهمة، ولا يلزم الجهر أو إرسال الرسالة.",
+      "finding": "مطابقة حرفية لتدريب T08 مع مودالية ونموذج ومعايير متسقة؛ الطول والإقرار لا يصححان اللغة أو النطق.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "تحية وخمس جمل بالوظائف المطلوبة وختام واسم خيالي؛كتابة فقط.",
+        "meaningClarity": "الثلاثاء9 هو الموعد الحالي والأربعاء11 مقترح لم يؤكد؛الاجتماع الآخر سبب مفترض في هذا التدريب لا استنتاج من النص الأصلي.",
+        "targetSkill": "ob للتوفر وwann للوقت؛فاصلة قبل كل جزء تابع والفعل في نهايته، مع تنسيق التحية والختام وعلامات نهاية الجمل."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A2-04-T08"
+      ]
+    },
+    {
+      "id": "DL-A2-04-AUD-PHR-01",
+      "text": "Das Gespräch. Die Nachricht. Der Anruf. Die Durchwahl. Die Besprechung. Der Kalender. Der Termin. Frei oder besetzt. Verschieben. Absagen. Bestätigen. Zurückrufen. Vereinbaren. Mitteilen. Guten Tag, hier spricht Amal Ben Ali. Kann ich bitte mit Frau Weber sprechen? Einen Moment, bitte. Sie ist gerade in einer Besprechung. Kann sie mich bitte zurückrufen? Ich möchte einen Termin vereinbaren. Der Termin passt mir gut. Können Sie mir sagen, ob Frau Weber heute im Büro ist? Ich möchte wissen, wann die Besprechung beginnt. Wissen Sie, ob der Termin noch frei ist?",
+      "finding": "نص قائم محفوظ مع الصوت والمسار والحالة. تفريغ القراءة يقابل المصدر مع تحويل 9/11 إلى neun/elf واختلاف ترقيم التحية والختام؛ لا تعديل للصوت أو تفريغه.",
+      "sourceIds": [],
+      "kind": "phrase_bank",
+      "segmentCount": 1,
+      "items": [
+        {
+          "number": 1,
+          "text": "Das Gespräch.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 2,
+          "text": "Die Nachricht.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 3,
+          "text": "Der Anruf.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 4,
+          "text": "Die Durchwahl.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 5,
+          "text": "Die Besprechung.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 6,
+          "text": "Der Kalender.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 7,
+          "text": "Der Termin.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 8,
+          "text": "Frei oder besetzt.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 9,
+          "text": "Verschieben.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 10,
+          "text": "Absagen.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 11,
+          "text": "Bestätigen.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 12,
+          "text": "Zurückrufen.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 13,
+          "text": "Vereinbaren.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 14,
+          "text": "Mitteilen.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 15,
+          "text": "Guten Tag, hier spricht Amal Ben Ali.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 16,
+          "text": "Kann ich bitte mit Frau Weber sprechen?",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 17,
+          "text": "Einen Moment, bitte.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 18,
+          "text": "Sie ist gerade in einer Besprechung.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 19,
+          "text": "Kann sie mich bitte zurückrufen?",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 20,
+          "text": "Ich möchte einen Termin vereinbaren.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 21,
+          "text": "Der Termin passt mir gut.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 22,
+          "text": "Können Sie mir sagen, ob Frau Weber heute im Büro ist?",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 23,
+          "text": "Ich möchte wissen, wann die Besprechung beginnt.",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        },
+        {
+          "number": 24,
+          "text": "Wissen Sie, ob der Termin noch frei ist?",
+          "finding": "مطابقة نصية للمفردة أو المثال في المصدر؛ Frei oder besetzt تقابل صيغة الشرطة المائلة في الجدول. لا استماع أو توليد جديد."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-04-AUD-DLG-01",
+      "text": "Guten Tag, hier spricht Amal Ben Ali. Ich möchte einen Termin mit Herrn König vereinbaren.\nGuten Tag. Einen Moment, bitte. Herr König ist gerade in einer Besprechung.\nKönnen Sie mir sagen, wann er Zeit hat?\nAm Donnerstag um 14 Uhr.\nWissen Sie, ob der Termin online ist?\nJa, die Besprechung ist online.\nDas passt mir gut. Vielen Dank.",
+      "finding": "نص قائم محفوظ مع الصوت والمسار والحالة. تفريغ القراءة يقابل المصدر مع تحويل 9/11 إلى neun/elf واختلاف ترقيم التحية والختام؛ لا تعديل للصوت أو تفريغه.",
+      "sourceIds": [],
+      "kind": "dialogue",
+      "segmentCount": 7
+    },
+    {
+      "id": "DL-A2-04-AUD-READ-01",
+      "text": "Guten Tag, Frau Weber. Leider kann ich am Dienstag um neun Uhr nicht zu unserem Termin kommen. Können wir den Termin auf Mittwoch verschieben? Bitte teilen Sie mir mit, ob Mittwoch um elf Uhr möglich ist. Ich möchte auch wissen, wann die Besprechung endet. Vielen Dank und freundliche Grüße. Amal Ben Ali.",
+      "finding": "نص قائم محفوظ مع الصوت والمسار والحالة. تفريغ القراءة يقابل المصدر مع تحويل 9/11 إلى neun/elf واختلاف ترقيم التحية والختام؛ لا تعديل للصوت أو تفريغه.",
+      "sourceIds": [],
+      "kind": "reading",
+      "segmentCount": 1
+    },
+    {
+      "id": "DL-A2-04-AUD-LST-01",
+      "text": "Guten Morgen, Herr König. Hier ist Amal Ben Ali. Ich kann heute um zehn Uhr nicht anrufen. Ich habe eine Besprechung. Können Sie mir bitte sagen, ob der Termin am Donnerstag noch frei ist? Rufen Sie mich bitte am Nachmittag zurück. Vielen Dank.",
+      "finding": "نص قائم محفوظ مع الصوت والمسار والحالة. تفريغ القراءة يقابل المصدر مع تحويل 9/11 إلى neun/elf واختلاف ترقيم التحية والختام؛ لا تعديل للصوت أو تفريغه.",
+      "sourceIds": [],
+      "kind": "listening",
+      "segmentCount": 1
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-04-office-phone-appointments.md": "c850383f2c229c9fd268b2863b94c9fe7483dc09bba3b39a2772a1df15bef93a",
+    "content/A2/lesson-04-office-phone-appointments.assessment.json": "57356b7c5d615a9859e40e606e368c2039588cb66a8e6a285b7e13949ffa2320"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-04-AUD-PHR-01": "87c4c44f4aac80e066fc36629c9bd8c22f722c0350751d358481027f6fdd60a1",
+    "DL-A2-04-AUD-DLG-01": "bd63f4d41f1b80261bbeefb401c30c2f9d1648eabdbe48771279d024ce8b2762",
+    "DL-A2-04-AUD-READ-01": "25ef3e7dd0b0e6e259c354b1f3df39087d11df79215353d2aff96291c39ced65",
+    "DL-A2-04-AUD-LST-01": "26f09e068554ba6ede931fa7b1ac0b1698e1a0cbd4086df1f25fb06c4124fa8b"
+  },
+  "preservation": {
+    "baseline": "d3109c2ccc327ba3888c3737f5d36eb2993256e3",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-04-AUD-PHR-01",
+        "fields": [
+          "source_line",
+          "source_heading"
+        ]
+      },
+      {
+        "assetId": "DL-A2-04-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-04-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-04-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1903251,
+    "cacheVersion": "v69",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "axeScreenStates": 101,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 66,
+    "axeIncompleteNodeOccurrences": 154,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; historical chooser intermittency not proven fixed"
+    ],
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 22
+    },
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Self-check tests validate local evidence, not linguistic correctness.",
+      "Dialogue-heading count55 is a label-based count, not a count of conversations or recordings.",
+      "No human reviewer is a prerequisite for continuation."
+    ],
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS",
+    "dialogueHeadingExplanation": "CR21 count56 arose from adding الحوار to T05 title, not the P02 model as its prose report said. CR22 count55 reflects renaming T08 from محادثة to مكالمة; no dialogue or audio removed."
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "944a0574092f6332bf403a1febb4ca25b500fc34",
+    "implementationPushed": true,
+    "remoteUiTested": false,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "9765f44dc662d41d483125b02b7658b8b07cb7ab",
+    "implementationVercelStatus": "success",
+    "reviewCommit": "9765f44dc662d41d483125b02b7658b8b07cb7ab",
+    "reviewPushed": true,
+    "reviewHeadMatchedRemote": true,
+    "reviewVercelStatus": "failure",
+    "reviewVercelDescription": "Deployment rate limited — retry in 24 hours.",
+    "reviewDeploymentRecordsAtCheck": 0,
+    "productionDeploymentClaimed": false,
+    "continuation": "Continue content review and checked GitHub pushes; no repeated redeployment or paid upgrade."
+  },
+  "campaign": {
+    "reviewedLessons": 21,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 32,
+    "next": "CR23/A2.5"
+  }
+}

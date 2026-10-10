@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-04-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-04-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR34: صُحح شرح Q03: المصدر verstehen يسبق المصرف können، وصُحح مفتاح T06 إلى verstehen دون إضافة können غير المذكورة. الخيارات الثلاثون والفهارس وعتبة 80% محفوظة.",
+      "T01 يطلب um وحدها حيث zu موجودة، وأضيفت مفردة Q01 إليه؛ Q02 مرتبط بـT01. حُفظ Q04 مرتبطًا بـT04/T07، وأضيف مثال damit بفاعل واحد إلى T07.",
+      "P01 خطة من أربع جمل كتابة فقط، وP02 أربعة أدوار كتابة وجهر؛ المصدر والمعايير والنموذجان متطابقة، بلا شريك أو تسجيل أو تسجيل حقيقي في دورة.",
+      "صُححت عربية Lehrkraft وجنس الراوي غير المعلوم، وحُفظ شرط الشهادة وفُصلت أوقات ومجالات النصوص. الغرض ليس دليل تحقق.",
+      "المثال الخامس المسجل صياغة تعليمية مستقلة لفكرة المجموعة، لا اقتباس حرفي من الحوار؛ أضيف نصه إلى المصدر. جمع Tabellenkalkulationen إضافة مكتوبة فقط. جميع MP3/playlist والأصوات والحالات محفوظة دون استماع أو توليد أو اعتماد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-04-Q01",
+      "sourceTaskIds": [
+        "DL-B1-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "مفردات التعلّم المستمر",
+        "فهم كلمة"
+      ],
+      "prompt": "ما معنى **der Lernstoff** في سياق الدورة؟",
+      "options": [
+        "المادة التعليمية التي يدرسها المتعلم.",
+        "الشهادة التي يحصل عليها في النهاية.",
+        "مجموعة من الزملاء للتعلّم."
+      ],
+      "answerIndex": 0,
+      "explanation": "der Lernstoff هو محتوى المادة التعليمية التي يراجعها المتعلم."
+    },
+    {
+      "id": "DL-B1-04-Q02",
+      "sourceTaskIds": [
+        "DL-B1-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "um … zu",
+        "الفاعل الواحد"
+      ],
+      "prompt": "أكمل بهدفٍ والفاعل واحد في الجملتين: **Ich lerne jeden Tag, ___ die Prüfung zu bestehen.**",
+      "options": [
+        "damit",
+        "um",
+        "weil"
+      ],
+      "answerIndex": 1,
+      "explanation": "اكتب um فقط لأن zu موجودة مع bestehen، والفاعل المفهوم ich. damit جائزة مع الفاعل نفسه إذا أعدنا بناء الجملة: damit ich die Prüfung bestehe؛ لا تلائم الفراغ بالبنية الحالية."
+    },
+    {
+      "id": "DL-B1-04-Q03",
+      "sourceTaskIds": [
+        "DL-B1-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "damit",
+        "ترتيب الفعل"
+      ],
+      "prompt": "أكمل مع وضع الفعل في نهاية جملة **damit**: **Die Plattform bietet Videos an, damit die Lernenden alles besser ___.** (verstehen können)",
+      "options": [
+        "können verstehen",
+        "zu verstehen",
+        "verstehen können"
+      ],
+      "answerIndex": 2,
+      "explanation": "فيتابعة damit يأتي المصرف können أخيرًا، ويسبقه المصدر verstehen: verstehen können، لا können verstehen. ترتيب المصدر والمصرف هو المقصود، لا أنه يتبع المصرف."
+    },
+    {
+      "id": "DL-B1-04-Q04",
+      "sourceTaskIds": [
+        "DL-B1-04-T04",
+        "DL-B1-04-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "تمييز الفاعل",
+        "اختيار التركيب"
+      ],
+      "prompt": "في الجملة **Die Lehrerin erklärt die Aufgabe, damit alle sie verstehen**، هل الفاعل واحد أم فاعلان مختلفان؟",
+      "options": [
+        "فاعل واحد: die Lehrerin في الجزأين.",
+        "فاعلان مختلفان: die Lehrerin ثم alle.",
+        "لا يوجد فاعل في جملة damit."
+      ],
+      "answerIndex": 1,
+      "explanation": "الفاعلان مختلفان: المعلمة تشرح، وجميع المتعلمين يفهمون؛ لذلك تلائمها جملة damit."
+    },
+    {
+      "id": "DL-B1-04-Q05",
+      "sourceTaskIds": [
+        "DL-B1-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "التعلّم المستمر"
+      ],
+      "prompt": "Für welche Weiterbildung hat sich Farid angemeldet?",
+      "options": [
+        "Für Kommunikation.",
+        "Für Tabellenkalkulation.",
+        "Für Bewegung und Fitness."
+      ],
+      "answerIndex": 1,
+      "explanation": "تذكر القراءة تسجيل Farid في مجال الحساب/معالجة البيانات بالجداول الإلكترونية؛ لا اسم برنامج بعينه ولا إكمال الدورة أو حصوله على الشهادة."
+    },
+    {
+      "id": "DL-B1-04-Q06",
+      "sourceTaskIds": [
+        "DL-B1-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل محدد"
+      ],
+      "prompt": "Wann besucht Farid den Kurs?",
+      "options": [
+        "Am Morgen.",
+        "Am Wochenende.",
+        "Am Abend."
+      ],
+      "answerIndex": 2,
+      "explanation": "يحضر Farid الدورة مساءً: Er besucht den Kurs am Abend."
+    },
+    {
+      "id": "DL-B1-04-Q07",
+      "sourceTaskIds": [
+        "DL-B1-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "الغاية"
+      ],
+      "prompt": "Wozu gibt die Lehrkraft Beispiele?",
+      "options": [
+        "Damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+        "Damit Farid den Kurs am Morgen besuchen kann.",
+        "Um die Lerngruppe aufzulösen."
+      ],
+      "answerIndex": 0,
+      "explanation": "تقدّم جهة التدريس أمثلة بهدف تمكين المشاركين من التدريب العملي على الوظائف الجديدة. Lehrkraft قد تشير إلى معلم أو معلمة؛ لا يثبت التركيب تحقق الإتقان بالفعل."
+    },
+    {
+      "id": "DL-B1-04-Q08",
+      "sourceTaskIds": [
+        "DL-B1-04-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "موضوع الدورة"
+      ],
+      "prompt": "In welchem Bereich macht die Person eine Weiterbildung?",
+      "options": [
+        "Im Bereich Tabellenkalkulation.",
+        "Im Bereich Kommunikation.",
+        "Im Bereich Gesundheit."
+      ],
+      "answerIndex": 1,
+      "explanation": "المجال في الاستماع هو التواصل. جنس الشخص الراوي واسمه غير مذكورين؛ die Person مؤنث نحوي، ولا نخلطه بـ Farid في قراءة الجداول."
+    },
+    {
+      "id": "DL-B1-04-Q09",
+      "sourceTaskIds": [
+        "DL-B1-04-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "تفصيل زمني"
+      ],
+      "prompt": "Wann liest die Person die Kursunterlagen?",
+      "options": [
+        "Am Morgen.",
+        "Am Abend.",
+        "Einmal pro Woche."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر الشخص الراوي قراءة مواد الدورة صباحًا استعدادًا للحصة؛ لا نخلطها بالحضور مساءً في قراءة Farid أو مجموعة التعلم الأسبوعية."
+    },
+    {
+      "id": "DL-B1-04-Q10",
+      "sourceTaskIds": [
+        "DL-B1-04-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "مجموعة التعلّم"
+      ],
+      "prompt": "Mit wem lernt die Person einmal pro Woche?",
+      "options": [
+        "Mit ihrer Trainerin.",
+        "Allein zu Hause.",
+        "Mit zwei Kolleginnen in einer Lerngruppe."
+      ],
+      "answerIndex": 2,
+      "explanation": "مرة أسبوعيًا مع زميلتين في مجموعة تعلم. Kolleginnen تحدد أن الزميلتين امرأتان، لكنها لا تحدد جنس الراوي."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-04-P01",
+      "sourceTaskIds": [
+        "DL-B1-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خطة خيالية من أربع جمل لتعلم مهارة حاسوبية: جملة تحدد المهارة؛ جملة عن دورة وهدفها باستخدام um … zu؛ جملة عن مراجعة وتمهيد للحصة التالية باستخدام um … zu مرة ثانية؛ وجملة عن أمثلة تقدمها جهة التدريس باستخدام damit مع فاعلين مختلفين. احفظ الفاصلة وترتيب المصدر والفعل المصرف. هذه مهمة كتابة فقط؛ لا شرط جهر أو تسجيل أو بيانات حقيقية أو تسجيل فعلي في دورة.",
+      "criteria": {
+        "taskCompletion": "أربع جمل تتضمن المهارة ودورة وهدفها ومراجعة بهدف التحضير وأمثلة من جهة التدريس؛ كتابة فقط.",
+        "meaningClarity": "خطوات تعلم خيالية مترابطة وأهدافها واضحة؛ لا تستنتج إنجاز الهدف أو حصول شهادة من مجرد صيغة الغرض.",
+        "targetSkill": "um … zu مرتان بفاعل مفهوم واحد، و damit بفاعلين مختلفين؛ فاصلة ومصدر مع zu ومصرف أخير، والمصدر قبل المصرف عند وجود فعل ناقص."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-04-P02",
+      "sourceTaskIds": [
+        "DL-B1-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-04-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب حوارًا خياليًا من أربعة أدوار بين متعلم ومدرّبة: يذكر المتعلم دورة وهدفه الحاسوبي بـ um … zu؛ تقدم المدربة مهام عملية بـ damit لكي يتمكن المتعلم من التدرب؛ يسأل المتعلم متى يناقشان أسئلته؛ وتحدد المدربة غدًا بعد الدورة. اكتب الطرفين بنفسك ثم اقرأهما جهرًا دون شريك أو تسجيل. في damit اجعل المدربة فاعل التقديم والمتعلم فاعل التدرب، والمصرف أخيرًا.",
+      "criteria": {
+        "taskCompletion": "أربعة أدوار تتضمن هدف المتعلم وتمرين المدربة وسؤال الوقت وجواب غدًا بعد الدورة؛ الجهر بالدورين.",
+        "meaningClarity": "غرض الدورة وعلاقة التمرين بتدرب المتعلم والخطوة التالية مفهومة، دون تكرار حكاية الاستماع أو ادعاءموعد حقيقي.",
+        "targetSkill": "um … zu لهدف المتعلم، و damit مع فاعلين مختلفين لهدف التمرين؛ الفاصلة صحيحة والمصرف kannst بعد المصدرüben في نمط المثال."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 210,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

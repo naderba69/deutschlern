@@ -1,6 +1,6 @@
 # A2.11 — المدن والسكن والجيران: Wo أم Wohin؟
 
-**المدة:** 40 دقيقة · **المهارات:** مفردات، قراءة، استماع، قواعد، وصف غرفة  
+**المدة:** نحو 40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري
 **الهدف:** أستطيع أن أصف مكان الأثاث وأسأل إلى أين يوضع، وأتحدث عن الحيّ والجيران.
 
 ## 1) مفردات السكن والحيّ
@@ -8,13 +8,13 @@
 | الألمانية | الجمع | المعنى |
 |---|---|---|
 | der Nachbar / die Nachbarin | die Nachbarn / Nachbarinnen | الجار / الجارة |
-| die Nachbarschaft | die Nachbarschaften | الحيّ والعلاقة بين الجيران |
+| die Nachbarschaft | die Nachbarschaften (جمع قليل الاستعمال) | الجوار / الجيرة والعلاقة بين الجيران |
 | die Innenstadt | die Innenstädte | وسط المدينة |
 | die Straßenbahnhaltestelle | die Straßenbahnhaltestellen | محطة الترام |
 | die Miete | die Mieten | الإيجار |
 | der Umzug | die Umzüge | الانتقال إلى مسكن جديد |
 | der Schrank | die Schränke | الخزانة |
-| das Regal | die Regale | الرفّ |
+| das Regal | die Regale | وحدة رفوف / رفّ |
 | das Sofa | die Sofas | الأريكة |
 | der Teppich | die Teppiche | السجادة |
 | die Wand | die Wände | الجدار |
@@ -30,10 +30,10 @@
 
 ## 2) حروف الجر المكانية: Wo? أم Wohin?
 
-مع حروف المكان **in, auf, an, neben, unter, über, vor, hinter** نسأل:
+نتدرب على حروف الجر المكانية المتغيرة **in, auf, an, neben, unter, über, vor, hinter, zwischen**. في استعمال المكان/الوجهة المعروض هنا نميز بين السؤالين؛ هذه ليست قاعدة لكل حرف جر أو لكل معنى له:
 
-- **Wo? أين؟** عندما نصف مكانًا ثابتًا، يأتي الاسم غالبًا في **Dativ**.
-- **Wohin? إلى أين؟** عندما نذكر انتقال شيء إلى مكان، يأتي الاسم غالبًا في **Akkusativ**.
+- **Wo? أين؟** عندما نحدد مكان الشيء أو مكان حدوث النشاط مع هذه الحروف، نستعمل **Dativ**. لا يشترط أن يكون كل ما داخل المكان بلا حركة.
+- **Wohin? إلى أين؟** عندما نحدد وجهة وضع الشيء أو انتقاله مع هذه الحروف، نستعمل **Akkusativ**. المهم علاقة الوجهة بالمكان، لا مجرد وجود فعل حركة.
 
 أدوات التعريف المهمة في هذا الدرس:
 
@@ -42,6 +42,7 @@
 | المذكر der | dem | den |
 | المؤنث die | der | die |
 | المحايد das | dem | das |
+| الجمع die (للمقارنة) | den | die |
 
 أمثلة:
 
@@ -50,7 +51,20 @@
 - **Der Schrank steht an der Wand.** — الخزانة بمحاذاة الجدار.
 - **Ich stelle den Schrank an die Wand.** — أضع الخزانة بمحاذاة الجدار.
 
-احفظ أيضًا اختلاف الفعل: **liegen/stehen** لمكان الشيء، و**legen/stellen** لنقله ووضعه.
+احفظ اختلاف الفعل في الأمثلة: **liegen/stehen** يصفان موضع الشيء، و**legen/stellen** يصفان وضع شيء في موضع. في **Ich stelle den Schrank an die Wand.** الخزانة den Schrank مفعول به، وan die Wand عبارة وجهة؛ لا نختار حالة المفعول بسؤال Wo. هذه معاني الاستعمال المدروس، لا كل المعاني المجازية للأفعال.
+
+### مساعدة قبل النصوص والمهمات
+
+- **حركة داخل مكان أم انتقال إليه؟** **Im Innenhof spielen zwei Kinder.** لعب داخل الساحة: Wo? وim = in dem. أما **Die Kinder gehen in den Innenhof.** فوجهة: Wohin? لا نقول إن spielen يفرض النصب لمجرد الحركة. **Ich gehe zur Haltestelle.** وجهة أيضًا، لكن zur = zu der وzu تتطلب Dativ؛ قاعدة التبديل تخص الحروف التسعة المذكورة، لا كل جواب عن Wohin.
+- **الأداة والاسم:** der Tisch → auf dem Tisch / auf den Tisch؛ die Wand → an der Wand / an die Wand؛ das Sofa → neben dem Sofa / neben das Sofa. للمقارنة فقط: der Stuhl، die Stühle؛ **zwischen den Stühlen** مكان و**zwischen die Stühle** وجهة. في الداتيف الجمع نضيف n إلى الاسم إن لم ينته جمعه أصلًا بـn أوs؛ لا نعمم تغيير نهاية كل اسم مفرد.
+- **liegen / legen:** **Das Buch liegt auf dem Tisch.** الكتاب هو الفاعل وموضعه موصوف؛ **Ich lege das Buch auf den Tisch.** ich الفاعل وdas Buch المفعول. liegen يصف وضع الكتاب مستلقيًا هنا، وlegen عملية وضعه؛ ليست صيغة واحدة مع تبديل حرف عشوائي.
+- **stehen / stellen / hängen:** **Die Lampe steht neben dem Bett.** مقابل **Ich stelle die Lampe neben das Bett.** أما **Das Bild hängt an der Wand.** فيصف موضع الصورة، و**Ich hänge das Bild an die Wand.** يصف تعليقها. hängen له استعمالان؛ لا يكفي شكله وحده لاختيار الحالة، بل ننظر إلى الفاعل والمفعول ومعنى المكان أو الوجهة. التدريب هنا في المضارع.
+- **einrichten والمصدر:** **Nach dem Umzug richtet sie ihr Wohnzimmer ein.** تعني أنها تؤثث غرفة الجلوس بعد الانتقال؛ ein جزء الفعل المنفصل. **Ich möchte das Regal neben das Sofa stellen.** فيها stellen مصدر أخير دون zu، وmöchte تعبر عن رغبة؛ لا دليل أن الرف وُضع فعلًا هناك.
+- **الحي والاتجاهات:** Nachbarschaft قد تعني الجوار أو مجموع الجيران أو العلاقة بينهم، وليست دائمًا حيًا إداريًا محددًا؛ جمعها قليل الاستعمال. **an der Ecke** عند الزاوية؛ **der Eingang** المدخل؛ **neben** بجانب، و**hinter** خلف، و**über** فوق. لا نحول قرب محطة الترام إلى مسافة أو مدة مشي غير مذكورة.
+- **الطلب المهذب:** **Könnten Sie bitte etwas leiser sein?** طلب خفض الصوت قليلًا؛ Sie للاحترام حتى مع جار واحد، وsein مصدر في النهاية. leiser صيغة مقارنة من leise، لا طلب صمت مطلق. الطلب لا يثبت استجابة الجار، ولا يمثل قاعدة قانونية لساعات الهدوء.
+- **ثلاثة سياقات مستقلة:** أريكة Fadi بجانب النافذة، وأريكة Salma بمحاذاة الجدار. في القراءة الساحة بجانب المدخل، وفي عبارة الحي المثال بجانب المنزل؛ لا نجمع المواقع في خريطة واحدة. في الاستماع طفلان يلعبان في الساحة، ولا يحدد النص جنس المتكلم أو اسمه. sie في أسئلته تعود إلى die Person نحويًا.
+- **حدود الفهم:** القاموس على الطاولة لا على الأرض؛ المساحة الخضراء خلف المنزل، لا محطة الترام. جارة Salma تساعدها؛ معلومة الساحة صريحة داخل الاقتباس، ولا نختبر تعيين المتكلمة من Sie sagt وحدها. وصف الجيران بالود لا يثبت أنهم ساعدوا المتكلم أو وافقوا على طلبه.
+- **طريقة العمل والخصوصية:** P01 أربع جمل عن غرفة متخيلة مع الجهر؛ P02 ثلاث جمل وطلب مهذب كتابة فقط، عن موقف خيالي. لا عنوان حقيقي أو نقل أثاث فعلي أو شكوى مرسلة أو شريك أو تسجيل مطلوب. حاول الاستماع قبل التفريغ؛ قراءته لا تثبت فهمًا مسموعًا مستقلًا. الطول والإقرار ليسا تصحيحًا آليًا للغة أو النطق.
 
 ## 3) عبارات عن الحيّ والجيران
 
@@ -62,11 +76,16 @@
 
 ## 4) حوار أصلي بعد الانتقال
 
-**Nora:** Wie gefällt dir die neue Wohnung?  
-**Fadi:** Sehr gut. Das Sofa steht neben dem Fenster, und der Teppich liegt auf dem Boden.  
-**Nora:** Wo steht der Schrank?  
-**Fadi:** Er steht an der Wand. Ich möchte das Regal neben das Sofa stellen.  
-**Nora:** Und wie sind die Nachbarn?  
+**Nora:** Wie gefällt dir die neue Wohnung?
+
+**Fadi:** Sehr gut. Das Sofa steht neben dem Fenster, und der Teppich liegt auf dem Boden.
+
+**Nora:** Wo steht der Schrank?
+
+**Fadi:** Er steht an der Wand. Ich möchte das Regal neben das Sofa stellen.
+
+**Nora:** Und wie sind die Nachbarn?
+
 **Fadi:** Sehr freundlich. Die Nachbarschaft ist ruhig, und es gibt einen kleinen Innenhof.
 
 ## 5) نص قراءة أصلي
@@ -121,6 +140,8 @@
 
 ### تمرين 4 — رتّب الكلمات
 
+ابدأ1 بـDas Buch، و2 بـIch، و3 بـDer Sessel. استعمل كل كتلة مرة وأضف النقطة دون تغيير الصيغ؛ توجد بدايات أخرى صحيحة خارج المطلوب المحدد هنا.
+
 1. auf dem Tisch / liegt / Das Buch
 2. an die Wand / den Schrank / Ich / stelle
 3. neben dem Fenster / steht / Der Sessel
@@ -133,19 +154,29 @@
 2. Das Wörterbuch liegt auf dem Boden.
 3. Salma hängt das Bild über das Sofa.
 4. Der Innenhof ist neben dem Eingang.
+5. Die nächste Straßenbahnhaltestelle ist an der Ecke.
 
 ### تمرين 6 — فهم الاستماع
 
-أكمل: 1. Das Bett steht an der ______. 2. Die Lampe steht neben dem ______. 3. Die Person legt das Buch auf den ______. 4. Sie stellt den Stuhl vor den ______.
+أكمل من البنك، واستعمل كل كلمة مرة: **Wand — Bett — Nachttisch — Schreibtisch**.
+
+1. Das Bett steht an der ______.
+2. Die Lampe steht neben dem ______.
+3. Die Person legt das Buch auf den ______.
+4. Sie stellt den Stuhl vor den ______.
 
 ### تمرين 7 — اختر العبارة المهذبة
 
-تريد أن تطلب من الجيران خفض الصوت:  
-أ. Könnten Sie bitte etwas leiser sein?  ب. Du bist mein Nachbar.  ج. Ich bin sehr laut.
+**أ — اختيار العبارة:** تريد أن تطلب من الجيران خفض الصوت:
+أ. Könnten Sie bitte etwas leiser sein? ب. Du bist mein Nachbar. ج. Ich bin sehr laut.
+
+**ب — P02: كتابة فقط**
+
+اكتب أربع جمل لموقف جوار خيالي، كتابة فقط: الجملة1 تقول إنك تسكن وسط المدينة؛ الجملة2 تحدد الساحة بجانب المدخل؛ الجملة3 تذكر أن الساحة صاخبة اليوم؛ الجملة4 تطلب من جار خفض الصوت قليلًا بـKönnten Sie bitte etwas leiser sein? استخدم Dativ للمواقع مع in وneben. لا تضف أن الجار وافق أو أن مشكلة الضجيج انتهت. لا جهر أو شريك أو إرسال شكوى أو معلومات سكن حقيقية مطلوبة.
 
 ### تمرين 8 — صِف غرفة
 
-اكتب أربع جمل عن غرفة متخيلة: جملتان لمكان أشياء ثابتة باستخدام **Wo? + Dativ**، وجملتان عن وضع أشياء في مكان باستعمال **Wohin? + Akkusativ**.
+اكتب أربع جمل خبرية عن غرفة متخيلة ثم اقرأها جهرًا: الجملة1 تصف موضع أثاث بـstehen وعبارة مكان في Dativ؛ الجملة2 تصف موضع كتاب بـliegen وعبارة مكان في Dativ؛ الجملة3 تبدأ بـIch stelle وتذكر غرضًا ووجهة وضعه في Akkusativ؛ الجملة4 تبدأ بـIch lege وتذكر غرضًا آخر ووجهة وضعه في Akkusativ. اختر حروف الجر من قائمة الدرس. Wo وWohin سؤالان يساعدانك على اختيار المعنى، ولا يلزم إضافتهما كجملتين إلى جوابك. لا نقل أثاث فعلي أو عنوان شخصي أو تسجيل مطلوب.
 
 ## 8) مفتاح الإجابات
 
@@ -157,10 +188,26 @@
 - **تمرين 2:** 1. dem، 2. den، 3. der، 4. die، 5. dem، 6. das.
 - **تمرين 3:** 1. liegt، 2. stelle، 3. steht، 4. legt.
 - **تمرين 4:** 1. Das Buch liegt auf dem Tisch. 2. Ich stelle den Schrank an die Wand. 3. Der Sessel steht neben dem Fenster.
-- **تمرين 5:** 1. صحيح. 2. خطأ — على الطاولة. 3. صحيح. 4. صحيح.
+- **تمرين 5:** 1. صحيح. 2. خطأ — على الطاولة. 3. صحيح. 4. صحيح. 5. صحيح — an der Ecke.
 - **تمرين 6:** Wand؛ Bett؛ Nachttisch؛ Schreibtisch.
-- **تمرين 7:** أ.
-- **تمرين 8:** إجابة مفتوحة؛ راجع الفرق بين المكان الثابت (Dativ) والانتقال إلى مكان (Akkusativ).
+- **تمرين 7:** أ: الخيار أ طلب مهذب لخفض الصوت؛ الخياران الآخران لا يطلبان ذلك. ب: ثلاث جمل عن المكان والضجيج ثم طلب، كتابة فقط؛ نموذج P02 أدناه لا يفترض موافقة الجار.
+- **تمرين 8:** أربع جمل ثم الجهر: موضعان بـstehen/liegen، وعملتا وضع بـIch stelle/Ich lege. راجع حالة الاسم في عبارة المكان أو الوجهة مع الحروف المتغيرة؛ Wo/Wohin ليسا قاعدتين لكل حرف جر. النموذج للمقارنة، لا للاستنساخ الحرفي.
+
+### نموذج P01 — أربع جمل مع الجهر
+
+1. Das Sofa steht an der Wand.
+2. Das Buch liegt auf dem Tisch.
+3. Ich stelle den Sessel neben das Sofa.
+4. Ich lege die Zeitung auf den Nachttisch.
+
+### نموذج P02 — أربع جمل كتابة فقط
+
+1. Ich wohne in der Innenstadt.
+2. Der Innenhof ist neben dem Eingang.
+3. Heute ist es im Innenhof laut.
+4. Könnten Sie bitte etwas leiser sein?
+
+النموذجان مكتوبان وغير مسجلين، ولا يستبدلان التسجيلات القائمة. الغرفة وموقف الجوار خياليان؛ لا ندمج تفاصيلهما مع منزل Fadi أو Salma، ولا يثبت الطلب تنفيذ حل. لا تصحيح لغوي أو اعتماد نطق آلي.
 
 ## 9) بطاقات مراجعة
 

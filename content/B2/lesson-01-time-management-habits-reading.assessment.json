@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-01-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-01-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR43: قُيّد البند الأول في T02 ليتعين indem، وحُوّلت جمل T06 إلى الألمانية لتطابق المفاتيح الألمانية مع حذف تكرار am Rand وden من المفتاح، ووُسّع T04 إلى 5 بنود وT07 إلى 4 بنود.",
+      "فُصلت P01 (فقرة من 5 جمل عن تحسين عادة: كتابة فقط دون جهر، 413 حرفًا) عن P02 (إحاطة من 5 جمل استنادًا إلى T06 مع اقتراح لتقليل الإشعارات: كتابة وجهر، 590 حرفًا)، وطُوبق نص التمرين والمعايير والنموذجان مع الحفاظ على الخيارات الـ30 والفهارس والروابط و80% وحدَّي 160/190 حرفًا.",
+      "النصوص الألمانية المسجلة وأصوات Hana (voice-02) وKarim (voice-03) والسرد (voice-02) والاستماع (voice-03) وخمسة أصول/12 مقطعًا محفوظة ومعلقة للمراجعة السمعية؛ لا توليد أو استماع أو اعتماد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-01-Q01",
+      "sourceTaskIds": [
+        "DL-B2-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "مفردات تنظيم الوقت",
+        "Zeitblock"
+      ],
+      "prompt": "ما معنى **der Zeitblock** في درس تنظيم الوقت؟",
+      "options": [
+        "مقاطعة غير متوقعة",
+        "فترة زمنية مخصصة لمهمة",
+        "قائمة بأهم الأولويات"
+      ],
+      "answerIndex": 1,
+      "explanation": "der Zeitblock هو فترة زمنية تخصص للعمل على مهمة أو مجموعة مهام."
+    },
+    {
+      "id": "DL-B2-01-Q02",
+      "sourceTaskIds": [
+        "DL-B2-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "indem",
+        "شرح الطريقة"
+      ],
+      "prompt": "أكمل بتركيب يوضح طريقة ترتيب المهام: Ich behalte den Überblick, ___ ich Aufgaben nach Priorität ordne.",
+      "options": [
+        "um",
+        "obwohl",
+        "indem"
+      ],
+      "answerIndex": 2,
+      "explanation": "تشرح indem الوسيلة أو الطريقة التي نحافظ بها على الصورة العامة؛ ويأتي الفعل المصرف ordne في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-B2-01-Q03",
+      "sourceTaskIds": [
+        "DL-B2-01-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "dass"
+      ],
+      "prompt": "اختر ترتيب الكلمات الصحيح: Dadurch, dass ___, kann ich mich besser konzentrieren.",
+      "options": [
+        "ich Pausen einplane",
+        "ich plane Pausen ein",
+        "ich Pausen einplanen"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد dass يأتي الفعل المصرف في نهاية الجملة التابعة: Dadurch, dass ich Pausen einplane, …"
+    },
+    {
+      "id": "DL-B2-01-Q04",
+      "sourceTaskIds": [
+        "DL-B2-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "تمييز الطريقة من الغاية",
+        "um … zu"
+      ],
+      "prompt": "أي جملة تذكر الغاية التي من أجلها نُفذت المهمة، لا طريقة تنفيذها؟",
+      "options": [
+        "Ich spare Zeit, indem ich ähnliche Aufgaben bündele.",
+        "Ich mache eine Liste, um nichts zu vergessen.",
+        "Ich merke mir mehr dadurch, dass ich kurze Notizen mache."
+      ],
+      "answerIndex": 1,
+      "explanation": "um … zu تذكر الغاية: أكتب قائمة لكيلا أنسى شيئًا. أما indem وdadurch, dass فيشرحان الطريقة أو الوسيلة."
+    },
+    {
+      "id": "DL-B2-01-Q05",
+      "sourceTaskIds": [
+        "DL-B2-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل محدد"
+      ],
+      "prompt": "كيف تجمع هناء بعض الأعمال القصيرة بحسب نص القراءة؟",
+      "options": [
+        "تكتب كل مكالمة في يوم مختلف",
+        "تترك جميع الأعمال حتى نهاية الأسبوع",
+        "تجري عدة مكالمات هاتفية تباعًا"
+      ],
+      "answerIndex": 2,
+      "explanation": "يجمع النص المكالمات الهاتفية في سلسلة، فتجري هناء عدة مكالمات متتابعة بدل التنقل بين أنواع مختلفة من المهام."
+    },
+    {
+      "id": "DL-B2-01-Q06",
+      "sourceTaskIds": [
+        "DL-B2-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "استراتيجية القراءة"
+      ],
+      "prompt": "كيف تقرأ هناء الرواية مقارنةً بالنص المعلوماتي؟",
+      "options": [
+        "تقرأها في مقاطع أطول",
+        "تدوّن فكرة رئيسة بعد كل فقرة كما تفعل في النص المعلوماتي",
+        "تبحث عن معنى كل كلمة قبل متابعة القراءة"
+      ],
+      "answerIndex": 0,
+      "explanation": "تدوّن هناء فكرة رئيسة بعد كل مقطع في النص المعلوماتي، بينما تقرأ الرواية في مقاطع أطول."
+    },
+    {
+      "id": "DL-B2-01-Q07",
+      "sourceTaskIds": [
+        "DL-B2-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "تنظيم الوقت"
+      ],
+      "prompt": "كم فترة زمنية للعمل المركّز يخطط لها المتحدث في نص الاستماع؟",
+      "options": [
+        "واحدة",
+        "فترتان",
+        "أربع فترات"
+      ],
+      "answerIndex": 1,
+      "explanation": "يذكر المتحدث أنه يخطط لفترتين للعمل المركّز؛ ويمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-01-Q08",
+      "sourceTaskIds": [
+        "DL-B2-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "تفصيل"
+      ],
+      "prompt": "ماذا يدوّن المتحدث على هامش النصوص الطويلة؟",
+      "options": [
+        "مواعيد الاجتماعات التالية",
+        "قائمة المشتريات",
+        "أسئلة يطرحها أثناء القراءة"
+      ],
+      "answerIndex": 2,
+      "explanation": "يكتب أسئلة على الهامش عند قراءة النصوص الطويلة، ثم يستخدم الاستراحات للتركيز في المقطع التالي."
+    },
+    {
+      "id": "DL-B2-01-Q09",
+      "sourceTaskIds": [
+        "DL-B2-01-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "indem",
+        "دمج الجمل"
+      ],
+      "prompt": "ادمج الجملتين بطريقة صحيحة باستخدام **indem**: Sie bündelt ähnliche Termine. Dadurch spart sie Zeit.",
+      "options": [
+        "Sie spart Zeit, indem sie ähnliche Termine bündelt.",
+        "Sie spart Zeit, um ähnliche Termine zu bündeln.",
+        "Sie bündelt ähnliche Termine, indem sie Zeit spart."
+      ],
+      "answerIndex": 0,
+      "explanation": "الجملة المطلوبة تشرح كيف توفّر الوقت: تجمع المواعيد المتشابهة. لذلك يناسبها indem مع الفعل bündelt في النهاية."
+    },
+    {
+      "id": "DL-B2-01-Q10",
+      "sourceTaskIds": [
+        "DL-B2-01-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "skillTags": [
+        "dadurch, dass",
+        "ترتيب الفعل"
+      ],
+      "prompt": "ادمج الجملتين باستخدام **dadurch, dass**: Sie schaltet Benachrichtigungen aus. Dadurch arbeitet sie konzentrierter.",
+      "options": [
+        "Dadurch, dass sie Benachrichtigungen ausschaltet, sie arbeitet konzentrierter.",
+        "Dadurch, dass sie Benachrichtigungen ausschaltet, arbeitet sie konzentrierter.",
+        "Um Benachrichtigungen auszuschalten, arbeitet sie konzentrierter."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد الجملة التابعة التي تبدأ بـDadurch, dass يأتي الفعل المصرف في الجملة الرئيسة مباشرة: arbeitet sie konzentrierter."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-01-P01",
+      "sourceTaskIds": [
+        "DL-B2-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب فقرة من خمس إلى سبع جمل ألمانية عن عادة في تنظيم الوقت أو القراءة تريد تحسينها: اذكر في الجملة الأولى العادة الحالية أو التحدي، وفي الثانية خطوتك اليومية الأولى، وفي الثالثة الطريقة باستخدام indem أو dadurch, dass مع الفعل المصرف في نهاية التابعة، وفي الرابعة الغاية باستخدام um … zu مع المصدر، وفي الخامسة كيف تراجع الخطة بمرونة. هذه المهمة كتابة فقط دون جهر أو تسجيل، ووضّح الفرق بين كيفية تنفيذ الطريقة والنتيجة التي تريدها.",
+      "criteria": {
+        "taskCompletion": "فقرة ألمانية من خمس إلى سبع جمل عن عادة محددة في تنظيم الوقت أو القراءة يرغب المتعلم في تحسينها، تشمل التحدي والخطوة اليومية والطريقة والغاية والمرونة؛ كتابة فقط.",
+        "meaningClarity": "تُفهم الطريقة التي سيطبّقها المتعلم، والغاية أو النتيجة التي يرجوها، ويظهر الفرق بين كيفية التنفيذ ولماذا يفعله.",
+        "targetSkill": "يستخدم رابطًا للطريقة مرةً على الأقل: indem أو dadurch, dass، مع فاصلة ونهاية الفعل المصرف في الجملة التابعة؛ ويستخدم um … zu مرةً على الأقل لذكر الغاية مع مصدر مناسب، ويميّز استخدامها من رابط الطريقة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-01-P02",
+      "sourceTaskIds": [
+        "DL-B2-01-T06",
+        "DL-B2-01-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-01-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى نص الاستماع المكتوب T06 عن التركيز، اكتب إحاطة من خمس إلى سبع جمل ألمانية لزميل أو قدّم شرحًا شفهيًا مماثلًا ثم اقرأ النص بصوت واضح بنفسك: اذكر في الجملة الأولى الانتقال السابق بين المهام وتخطيط فترتين للعمل المركّز، وفي الثانية إنجاز المهام المتشابهة تباعًا وتدوين الأسئلة على الهامش، وفي الثالثة فائدة الاستراحات، وفي الرابعة طريقة إضافية واقعية لتقليل تشتيت الإشعارات باستخدام indem أو dadurch, dass، وفي الخامسة الغاية من هذه الطريقة باستخدام um … zu مع الإشارة إلى أن الطريقة قابلة للتكييف. لا يلزم تسجيل أو تشغيل MP3.",
+      "criteria": {
+        "taskCompletion": "إحاطة ألمانية من خمس إلى سبع جمل تستند إلى تفاصيل T06 (الانتقال السابق، فترتا العمل، تجميع المهام والأسئلة على الهامش، الاستراحات) وتقترح طريقة إضافية واقعية لتقليل تشتيت الإشعارات؛ كتابة ثم جهر.",
+        "meaningClarity": "يفصل الناتج بوضوح بين ما فعله المتحدث في T06 والاقتراح الجديد، ويشرح الطريقة والغاية منها من دون تعميم أن طريقة واحدة تناسب الجميع.",
+        "targetSkill": "يستخدم رابطًا للطريقة مرةً على الأقل: indem أو dadurch, dass، مع الفاصلة ونهاية الفعل المصرف في الجملة التابعة؛ ويستخدم um … zu مرةً على الأقل لذكر الغاية مع مصدر مناسب، ويميّز رابط الغاية من رابط الطريقة مع القراءة الجهرية الذاتية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 190,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

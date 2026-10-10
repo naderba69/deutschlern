@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-11-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-11-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR29: تقييد Wo/Wohin بحروف الجر المتغيرة في الاستعمال المكاني؛ النشاط داخل المكان لا يفرض Akkusativ، وzu مع وجهة تبقى Dativ. دعم الأفعال والمفعول والمصدر وhängen.",
+      "Q10→T02؛ أزيلت الإشارة الخاطئة إلى الجملة الأولى في شرحه. أضيف بند محطة الترام T05.5 ليطابق Q07؛ قيدت بدايات T04 وأضيف بنك T06. الخيارات الثلاثون والمفاتيح و80% محفوظة.",
+      "P01/T08 أربع جمل مع الجهر عن موضعين وعمليتي وضع؛ P02/T07ب أربع جمل عن جوار خيالي وطلب، كتابة فقط. المصدر والمعايير والنموذجان متطابقة، ولا عنوان حقيقي أو نقل أثاث أو إرسال شكوى. الأصول والأصوات محفوظة دون استماع أو توليد أو اعتماد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-11-Q01",
+      "sourceTaskIds": [
+        "DL-A2-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "Wo / Wohin",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال تستخدمه لوصف مكان ثابت للكتاب؟",
+      "options": [
+        "Wo?",
+        "Wohin?",
+        "Wann?"
+      ],
+      "answerIndex": 0,
+      "explanation": "Wo يسأل عن موضع الكتاب في هذا المثال؛ لا نحكم بأن كل نشاط داخل مكان يجب أن يكون ساكنًا."
+    },
+    {
+      "id": "DL-A2-11-Q02",
+      "sourceTaskIds": [
+        "DL-A2-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "Dativ مع Wo",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Das Buch liegt auf ___ Tisch.",
+      "options": [
+        "den",
+        "dem",
+        "das"
+      ],
+      "answerIndex": 1,
+      "explanation": "auf هنا تصف موضع الكتاب، وهي من حروف الجر المتغيرة؛ لذلك نستخدم Dativ للمذكر: auf dem Tisch. لا نعمم ذلك على كل حرف جر."
+    },
+    {
+      "id": "DL-A2-11-Q03",
+      "sourceTaskIds": [
+        "DL-A2-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "Akkusativ مع Wohin",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich lege das Buch auf ___ Tisch.",
+      "options": [
+        "dem",
+        "der",
+        "den"
+      ],
+      "answerIndex": 2,
+      "explanation": "auf هنا تحدد وجهة وضع الكتاب، فتأتي مع Akkusativ للمذكر: auf den Tisch. ليست الحركة وحدها قاعدة لكل حرف جر."
+    },
+    {
+      "id": "DL-A2-11-Q04",
+      "sourceTaskIds": [
+        "DL-A2-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "أفعال المكان",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الفعل الصحيح: Die Lampe ___ neben dem Bett.",
+      "options": [
+        "stellt",
+        "steht",
+        "legen"
+      ],
+      "answerIndex": 1,
+      "explanation": "steht يصف مكانًا ثابتًا لشيء قائم."
+    },
+    {
+      "id": "DL-A2-11-Q05",
+      "sourceTaskIds": [
+        "DL-A2-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "تركيب الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تصف نقل الخزانة إلى الحائط؟",
+      "options": [
+        "Ich stelle den Schrank an die Wand.",
+        "Der Schrank steht an der Wand.",
+        "Ich stehe an den Schrank."
+      ],
+      "answerIndex": 0,
+      "explanation": "stellen يصف وضع الخزانة؛ den Schrank مفعول به، وan die Wand عبارة وجهة في Akkusativ مع حرف جر متغير."
+    },
+    {
+      "id": "DL-A2-11-Q06",
+      "sourceTaskIds": [
+        "DL-A2-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين يقع القاموس في غرفة Salma؟",
+      "options": [
+        "تحت السرير.",
+        "بجانب المدخل.",
+        "على الطاولة."
+      ],
+      "answerIndex": 2,
+      "explanation": "يذكر النص das Wörterbuch liegt auf dem Tisch."
+    },
+    {
+      "id": "DL-A2-11-Q07",
+      "sourceTaskIds": [
+        "DL-A2-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين تقع أقرب محطة ترام؟",
+      "options": [
+        "خلف المنزل.",
+        "عند الزاوية.",
+        "داخل المطبخ."
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول an der Ecke."
+    },
+    {
+      "id": "DL-A2-11-Q08",
+      "sourceTaskIds": [
+        "DL-A2-11-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "Wo / Wohin",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Ich lege mein Buch auf den Nachttisch**، هل تصف الجملة مكانًا ثابتًا أم انتقالًا؟",
+      "options": [
+        "انتقال الكتاب إلى مكان.",
+        "مكان الكتاب الثابت.",
+        "وقت وضع الكتاب فقط."
+      ],
+      "answerIndex": 0,
+      "explanation": "legen مع auf den يشير إلى نقل الكتاب، أي Wohin وAkkusativ."
+    },
+    {
+      "id": "DL-A2-11-Q09",
+      "sourceTaskIds": [
+        "DL-A2-11-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "طلب مهذب",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تطلب من جار خفض الصوت بأدب؟",
+      "options": [
+        "Du bist mein Nachbar.",
+        "Ich bin sehr laut.",
+        "Könnten Sie bitte etwas leiser sein?"
+      ],
+      "answerIndex": 2,
+      "explanation": "هذه صيغة طلب مهذبة وواضحة."
+    },
+    {
+      "id": "DL-A2-11-Q10",
+      "sourceTaskIds": [
+        "DL-A2-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "skillTags": [
+        "Dativ وAkkusativ",
+        "اختيار محدد"
+      ],
+      "prompt": "أي مثال يستخدم Dativ لمكان ثابت؟",
+      "options": [
+        "Ich stelle die Lampe neben das Bett.",
+        "Die Lampe steht neben dem Bett.",
+        "Ich lege das Buch auf den Tisch."
+      ],
+      "answerIndex": 1,
+      "explanation": "المثال الصحيح هو Die Lampe steht neben dem Bett. يصف موضع المصباح؛ neben هنا مع Dativ للمحايد: dem Bett. المثالان الآخران يصفان وجهة وضع شيء."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-11-P01",
+      "sourceTaskIds": [
+        "DL-A2-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربع جمل خبرية عن غرفة متخيلة ثم اقرأها جهرًا: الجملة1 تصف موضع أثاث بـstehen وعبارة مكان في Dativ؛ الجملة2 تصف موضع كتاب بـliegen وعبارة مكان في Dativ؛ الجملة3 تبدأ بـIch stelle وتذكر غرضًا ووجهة وضعه في Akkusativ؛ الجملة4 تبدأ بـIch lege وتذكر غرضًا آخر ووجهة وضعه في Akkusativ. اختر حروف الجر من قائمة الدرس. Wo وWohin سؤالان يساعدانك على اختيار المعنى، ولا يلزم إضافتهما كجملتين إلى جوابك. لا نقل أثاث فعلي أو عنوان شخصي أو تسجيل مطلوب.",
+      "criteria": {
+        "taskCompletion": "أربع جمل خبرية بالترتيب: أثاث مع stehen، وكتاب مع liegen، ثم غرض مع Ich stelle وآخر مع Ich lege؛ قرأت الوصف جهرًا.",
+        "meaningClarity": "يمكن فهم موضع الغرض في الجملتين الأوليين ووجهة وضعه في الأخيرتين؛ الغرفة خيالية ولا يتطلب الجواب عنوانًا أو نقلًا فعليًا.",
+        "targetSkill": "مع حروف الدرس المتغيرة: عبارتا مكان في Dativ وعبارتا وجهة في Akkusativ؛ الفاعل والمفعول وفعل الموضع أو الوضع مناسبة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-11-P02",
+      "sourceTaskIds": [
+        "DL-A2-11-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-11-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب أربع جمل لموقف جوار خيالي، كتابة فقط: الجملة1 تقول إنك تسكن وسط المدينة؛ الجملة2 تحدد الساحة بجانب المدخل؛ الجملة3 تذكر أن الساحة صاخبة اليوم؛ الجملة4 تطلب من جار خفض الصوت قليلًا بـKönnten Sie bitte etwas leiser sein? استخدم Dativ للمواقع مع in وneben. لا تضف أن الجار وافق أو أن مشكلة الضجيج انتهت. لا جهر أو شريك أو إرسال شكوى أو معلومات سكن حقيقية مطلوبة.",
+      "criteria": {
+        "taskCompletion": "أربع جمل: سكن في وسط المدينة، وساحة بجانب المدخل، وضجيج فيها اليوم، ثم طلب خفض الصوت؛ كتابة فقط.",
+        "meaningClarity": "المكان والمشكلة والطلب واضحة في موقف خيالي؛ لا ادعاء موافقة الجار أو انتهاء الضجيج ولا بيانات سكن حقيقية.",
+        "targetSkill": "عبارات المواقع مع in/neben في Dativ، وطلب يبدأ بـKönnten Sie مع bitte etwas leiser وsein في النهاية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

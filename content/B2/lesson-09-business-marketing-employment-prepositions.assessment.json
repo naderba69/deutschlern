@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-09-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-09-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-09-G01 وكتل المصدر T01–T07: مفردات الفئة المستهدفة، وضمائر wo(r)-/da(r)- المركّبة، وحروف الجر مع الأفعال، والتمييز بين السؤال عن شخص أو شيء، وقراءة الإعلان الخيالي، ونص الاستماع المكتوب، وإعادة الصياغة.",
+      "في الإصدار b2-09-v2 ترتبط P01 مباشرةً بالجزء (أ) من T08 بوصفها مهمة كتابية فقط (modality: writing، speakAloud: false، بحد أدنى 150 حرفًا) لوصف شركة أو حملة خيالية في 5 إلى 6 جمل تتضمن سؤالًا بـwo(r)+Präposition وجوابًا بـda(r)+Präposition وذكر الفئة المستهدفة أو ظروف العمل دون ادعاء نجاح مضمون.",
+      "وترتبط P02 بالجزء (ب) من T08 وبتفاصيل قراءة T05 ونص T06 المكتوب وإعادة الصياغة في T07 بوصفها مهمة كتابية ومنطوقة متكاملة (modality: writing + speaking، speakAloud: true، بحد أدنى 180 حرفًا) لتقديم إحاطة من 5 إلى 6 جمل عن شركة Nordwerk الخيالية ومعايير الاختيار في T06 مع القراءة بصوت مسموع دون تسجيل أو إرسال صوت. لا يعتمد التقييم على MP3 أو خدمة خارجية، ولا يدّعي تصحيح الكتابة المفتوحة أو النطق آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-09-Q01",
+      "sourceTaskIds": [
+        "DL-B2-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "مفردات الشركات والعمل",
+        "die Zielgruppe"
+      ],
+      "prompt": "ما معنى **die Zielgruppe** في سياق حملة إعلانية؟",
+      "options": [
+        "الفئة التي توجّه إليها الحملة",
+        "إيرادات الشركة من المبيعات",
+        "سلسلة نقل المنتجات إلى المتاجر"
+      ],
+      "answerIndex": 0,
+      "explanation": "**die Zielgruppe** (جمعها **die Zielgruppen**) هي الفئة المستهدفة التي تتوجه إليها الحملة أو الإعلان، وليست الإيرادات (**der Umsatz**) أو سلسلة التوريد (**die Lieferkette**)."
+    },
+    {
+      "id": "DL-B2-09-Q02",
+      "sourceTaskIds": [
+        "DL-B2-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "السؤال عن شيء أو فكرة",
+        "wo(r)- المركّب"
+      ],
+      "prompt": "أكمل السؤال عن طريقة الإعلان: **___ wirbt die Kampagne? — Mit einem transparenten Auswahlverfahren.**",
+      "options": [
+        "Wovon",
+        "Womit",
+        "Worauf"
+      ],
+      "answerIndex": 1,
+      "explanation": "يرتبط الفعل **werben** عند ذكر وسيلة الترويج أو حجته بحرف الجر **mit + Dativ** (**Mit einem transparenten Auswahlverfahren**)؛ لذلك نسأل عن غير العاقل بـ**Womit** (دون **-r-** لأن **mit** يبدأ بحرف ساكن)، لا بـ**Wovon** أو **Worauf**."
+    },
+    {
+      "id": "DL-B2-09-Q03",
+      "sourceTaskIds": [
+        "DL-B2-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "الإجابة عن شيء أو فكرة",
+        "da(r)- المركّب"
+      ],
+      "prompt": "اختر السؤال والجواب المتوافقين مع **Wert legen auf**: **___ legt das Unternehmen Wert? — ___, dass die Arbeitsbedingungen klar sind.**",
+      "options": [
+        "Womit / Damit",
+        "Wovon / Davon",
+        "Worauf / Darauf"
+      ],
+      "answerIndex": 2,
+      "explanation": "التعبير الاسمي الفعلي هو **Wert legen auf + Akkusativ**؛ ولأن **auf** يبدأ بحرف صوتي نضيف **-r-** في السؤال عن غير العاقل (**Worauf**) وفي الضمير التمهيدي بالجواب (**Darauf**)، ويأتي الفعل المصرف (**sind**) في نهاية جملة **dass** التابعة."
+    },
+    {
+      "id": "DL-B2-09-Q04",
+      "sourceTaskIds": [
+        "DL-B2-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "الفعل مع حرف الجر",
+        "abhängen von + Dativ"
+      ],
+      "prompt": "اختر حرف الجر الصحيح: **Die Nachfrage hängt ___ der Zielgruppe ab.**",
+      "options": [
+        "von",
+        "auf",
+        "an"
+      ],
+      "answerIndex": 0,
+      "explanation": "نقول **abhängen von + Dativ** بمعنى يعتمد/يتوقف على؛ ومع المؤنث **die Zielgruppe** في حالة **Dativ** نقول **von der Zielgruppe**."
+    },
+    {
+      "id": "DL-B2-09-Q05",
+      "sourceTaskIds": [
+        "DL-B2-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "الفعل مع حرف الجر",
+        "sich spezialisieren auf + Akkusativ"
+      ],
+      "prompt": "أكمل بحرف الجر المناسب: **Das Unternehmen spezialisiert sich ___ technische Dienstleistungen.**",
+      "options": [
+        "an",
+        "auf",
+        "mit"
+      ],
+      "answerIndex": 1,
+      "explanation": "يأتي الفعل الانعكاسي **sich spezialisieren** مع **auf + Akkusativ** بمعنى يتخصص في مجال؛ لذا نقول **auf technische Dienstleistungen**."
+    },
+    {
+      "id": "DL-B2-09-Q06",
+      "sourceTaskIds": [
+        "DL-B2-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "السؤال عن شخص",
+        "Mit wem"
+      ],
+      "prompt": "في أمثلة الدرس وتمرين المطابقة (T04)، تتحدث مسؤولة الموارد البشرية مع متقدمة للوظيفة. أكمل السؤال عن الشخص: **Mit ___ spricht die Personalchefin? — Mit einer Bewerberin.**",
+      "options": [
+        "was",
+        "womit",
+        "wem"
+      ],
+      "answerIndex": 2,
+      "explanation": "لأن السؤال عن شخص عاقل (**einer Bewerberin**) وبعد حرف الجر **mit** الذي يطلب **Dativ**، نستخدم أداة الاستفهام **wem** (**Mit wem ...?**). أما **womit** فيُستعمل لغير العاقل فقط."
+    },
+    {
+      "id": "DL-B2-09-Q07",
+      "sourceTaskIds": [
+        "DL-B2-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفاصيل الشركة الخيالية"
+      ],
+      "prompt": "ماذا تقدّم شركة «Nordwerk» الخيالية بحسب قراءة T05؟",
+      "options": [
+        "خدمات إصلاح وفرص تدريب مهني",
+        "إعلانات تلفزيونية وتأمين صحي",
+        "دورات لغوية ومطاعم للموظفين"
+      ],
+      "answerIndex": 0,
+      "explanation": "تذكر قراءة T05 في جملتها الأولى أن الشركة الخيالية تقدّم **Reparaturdienste und Ausbildungsplätze**؛ أي خدمات إصلاح وفرص تدريب مهني."
+    },
+    {
+      "id": "DL-B2-09-Q08",
+      "sourceTaskIds": [
+        "DL-B2-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "حدود الادعاء الإعلاني"
+      ],
+      "prompt": "بحسب قراءة T05، على ماذا يعتمد نجاح الحملة؟",
+      "options": [
+        "على ضمان توظيف جميع المتقدمين",
+        "على ما إذا كان الأشخاص المستهدفون يجدون المعلومات مفهومة",
+        "على زيادة الإيرادات مهما كان رأي الفئة المستهدفة"
+      ],
+      "answerIndex": 1,
+      "explanation": "تقول القراءة صراحةً: **Ob die Kampagne erfolgreich ist, hängt davon ab, ob die angesprochenen Personen die Informationen verständlich finden**؛ ولا تعد بنجاح مضمون أو زيادة حتمية في الإيرادات."
+    },
+    {
+      "id": "DL-B2-09-Q09",
+      "sourceTaskIds": [
+        "DL-B2-09-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "معايير الاختيار المهني"
+      ],
+      "prompt": "وفق النص المكتوب لتدريب الاستماع T06، ما العبارة الصحيحة عن معايير الاختيار؟",
+      "options": [
+        "لا يعتمد إلا على الشهادة.",
+        "يعتمد فقط على الانطباع في المقابلة.",
+        "لا يعتمد على الشهادة وحدها؛ تهم أيضًا الخبرة العملية والأمثلة التي توضح المعرفة."
+      ],
+      "answerIndex": 2,
+      "explanation": "توضح مسؤولة الموارد البشرية في النص المكتوب أن الاختيار لا يعتمد على شهادة واحدة فقط (**nicht nur von einem Zeugnis abhängt**)، بل يهم أيضًا إثبات المعرفة بأمثلة عملية ملموسة (**praktische Erfahrung** و**mit konkreten Beispielen aus der Praxis belegen**). يمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-09-Q10",
+      "sourceTaskIds": [
+        "DL-B2-09-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "skillTags": [
+        "إعادة صياغة السؤال والجواب",
+        "wo(r)- وda(r)-"
+      ],
+      "prompt": "أي إعادة صياغة تناسب الجملة **Der Erfolg hängt von der Nachfrage ab**؟",
+      "options": [
+        "Worüber hängt der Erfolg ab? — Darüber, ob die Nachfrage hoch ist.",
+        "Wovon hängt der Erfolg ab? — Davon, ob die Nachfrage hoch ist.",
+        "Womit hängt der Erfolg ab? — Damit, ob die Nachfrage hoch ist."
+      ],
+      "answerIndex": 1,
+      "explanation": "يرتبط الفعل **abhängen** بحرف الجر **von**؛ لذا نسأل عن غير العاقل بـ**Wovon ...?** ونجيب بـ**Davon, ob ...** مع وضع الفعل المصرف (**ist**) في نهاية الجملة التابعة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-09-P01",
+      "sourceTaskIds": [
+        "DL-B2-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب باللغة الألمانية من 5 إلى 6 جمل عن شركة أو حملة توظيف/تسويق خيالية (الجزء أ من تمرين 8 — كتابة فقط دون اشتراط الجهر). اطرح سؤالًا واحدًا على الأقل عن شيء أو فكرة باستخدام **wo(r) + Präposition**، ثم أجب عنه بضمير مركّب مطابق من **da(r) + Präposition** مع جملة تابعة بـ**dass** أو **ob** أو **welche**، واذكر الفئة المستهدفة (**die Zielgruppe** / **Fachkräfte**) أو ظرفًا من ظروف العمل (**die Arbeitsbedingungen** / **die Einarbeitung**). لا تستخدم بيانات شركة حقيقية ولا تعرض نجاح الحملة كأنه مضمون.",
+      "criteria": {
+        "taskCompletion": "كتابة 5 إلى 6 جمل ألمانية عن شركة أو حملة خيالية تتضمن سؤالًا عن شيء/فكرة بـwo(r)+Präposition وجوابًا مطابقًا بـda(r)+Präposition وذكر الفئة المستهدفة أو ظروف العمل.",
+        "meaningClarity": "توضح الجمل موضوع الشركة أو الحملة الخيالية والفئة المستهدفة أو ظروف العمل بوضوح، دون استخدام بيانات شركة حقيقية أو الادعاء بنجاح مضمون.",
+        "targetSkill": "يطابق wo(r)- وda(r)- مع حرف الجر الذي يتطلبه الفعل أو التركيب، ويضبط موضع الفعل المصرف في نهاية جملة dass/ob/welche التابعة، ويميّز السؤال عن الشيء من السؤال عن الشخص."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-09-P02",
+      "sourceTaskIds": [
+        "DL-B2-09-T05",
+        "DL-B2-09-T06",
+        "DL-B2-09-T07",
+        "DL-B2-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-09-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى قراءة T05 والنص المكتوب لتدريب الاستماع T06 وإعادة الصياغة في T07، اكتب باللغة الألمانية إحاطة من 5 إلى 6 جمل لزميل أو متعلم آخر ثم اقرأها بصوت مسموع لنفسك (أو قدّمها شفهيًا بعد كتابتها — الجزء ب من تمرين 8). اذكر أن «Nordwerk» شركة خيالية وما تقدمه (**Reparaturdienste und Ausbildungsplätze**) والفئتين المستهدفتين في الحملة، وانقل بدقة نقطتين عن الاختيار المهني في T06 (أنه لا يعتمد على **Zeugnis** وحده، وأهمية **praktische Erfahrung** و**konkrete Beispiele aus der Praxis**). أدرج سؤالًا عن شيء أو فكرة بـ**wo(r) + Präposition** وجوابًا مناسبًا بـ**da(r) + Präposition** مع الفعل المناسب، ولا تقل إن نجاح الحملة مضمون. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة مكتوبة ومنطوقة من 5 إلى 6 جمل ألمانية تتضمن خيالية Nordwerk وما تقدمه وفئتيها المستهدفتين، ونقطتين صحيحتين عن الاختيار من T06، وسؤالًا بـwo(r)+Präposition وجوابًا بـda(r)+Präposition.",
+        "meaningClarity": "تظل المعلومات منسوبة بدقة إلى النصين الخياليين (T05 وT06) ولا توحي بضمان نجاح الحملة أو تعمم شروط التوظيف على شركة حقيقية.",
+        "targetSkill": "يختار الضمير المركّب وفق حرف الجر مع الفعل، ويميز السؤال عن شيء أو فكرة من السؤال عن شخص، ويضبط الفعل المصرف في نهاية جملة dass/ob التابعة، مع قراءة الإحاطة بصوت مسموع دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,1936 @@
+{
+  "reviewVersion": "cr50-b2-08-v1",
+  "lessonId": "b2-08-food-nutrition-data-passives",
+  "lessonTitle": "B2.8 — الغذاء والتغذية والبيانات: Vorgangspassiv وZustandspassiv",
+  "assessmentVersion": "b2-08-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 97,
+  "exerciseSubItemCount": 40,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-08-food-nutrition-data-passives.md": "6e0587106b6d59e9901ca9bf3a791d95f51d6b0dfad7dca68bd82e20323b23a6",
+    "content/B2/lesson-08-food-nutrition-data-passives.assessment.json": "4975ca1b32cfbdbb08b218b707426ace7efa4c9cbf49cdb881b8b595b1b2b622"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-08-AUD-PHR-01": "4e9bed8918e6293caccc66300242189e2dd20258a4b1f4596bc4ba9f51863d05",
+    "DL-B2-08-AUD-MODEL-01": "86abe99dfe37fd74ba7d3d84513429049b14d7e45df3e5c01d3b4eb521a45cdf",
+    "DL-B2-08-AUD-DLG-01": "a0fe8f7127ff3588f3055f1f86d59aff87e6cbe95498fd7387ad319fbd4bf9e3",
+    "DL-B2-08-AUD-READ-01": "8fa3a7d833e1a2780069fd8c58a1429beededdad5e42ead68f6232e321ff11c5",
+    "DL-B2-08-AUD-LST-01": "2432d5d72591d7802011e6393c525daa94a33dcf8332ee3228d504dda154c25e"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-passive",
+      "title": "Lingolia English — Passive Voice in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/passive",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Distinction between Vorgangspassiv (werden + Partizip II, action/process) and Zustandspassiv (sein + Partizip II, resulting state/condition), active-to-passive conversion (accusative object becomes nominative subject), and man-alternatives"
+    },
+    {
+      "id": "lingolia-en-participles",
+      "title": "Lingolia English — Partizip I und II – Present and Past Participle in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/participles",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "usedFor": "Formation of Partizip II for weak (ge-...-t), strong (ge-...-en), separable (-ge- between prefix and stem), and inseparable (no ge-) verbs in passive constructions"
+    },
+    {
+      "id": "lingolia-en-separable-verbs",
+      "title": "Lingolia English — Separable and Inseparable Verbs in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/verbs/separable-verbs",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "Separable prefixes (ab-, aus-, ein-, vor-) with -ge- in Partizip II vs. inseparable prefixes (be-, er-, unstressed über-, unter-) without ge-"
+    },
+    {
+      "id": "duden-erhebung",
+      "title": "Duden — Erhebung",
+      "url": "https://www.duden.de/rechtschreibung/Erhebung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Erhebung, Genitiv der Erhebung, Plural die Erhebungen; statistische Erhebung / Umfrage"
+    },
+    {
+      "id": "duden-durchschnitt",
+      "title": "Duden — Durchschnitt",
+      "url": "https://www.duden.de/rechtschreibung/Durchschnitt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Durchschnitt, Genitiv des Durchschnitt[e]s, Plural die Durchschnitte; Mittelwert, im Durchschnitt"
+    },
+    {
+      "id": "duden-anteil",
+      "title": "Duden — Anteil",
+      "url": "https://www.duden.de/rechtschreibung/Anteil",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Anteil, Genitiv des Anteil[e]s, Plural die Anteile; Teil von einem Ganzen"
+    },
+    {
+      "id": "duden-portion",
+      "title": "Duden — Portion",
+      "url": "https://www.duden.de/rechtschreibung/Portion",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Portion, Genitiv der Portion, Plural die Portionen; abgemessene Menge einer Speise"
+    },
+    {
+      "id": "duden-naehrwert",
+      "title": "Duden — Nährwert",
+      "url": "https://www.duden.de/rechtschreibung/Naehrwert",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Nährwert, Genitiv des Nährwertes/Nährwerts, Plural die Nährwerte"
+    },
+    {
+      "id": "duden-zutat",
+      "title": "Duden — Zutat",
+      "url": "https://www.duden.de/rechtschreibung/Zutat",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Zutat, Genitiv der Zutat, Plural die Zutaten (first element of die Zutatenliste)"
+    },
+    {
+      "id": "duden-liste",
+      "title": "Duden — Liste",
+      "url": "https://www.duden.de/rechtschreibung/Liste",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Liste, Genitiv der Liste, Plural die Listen (base noun of die Zutatenliste, die Zutatenlisten)"
+    },
+    {
+      "id": "duden-kennzeichnung",
+      "title": "Duden — Kennzeichnung",
+      "url": "https://www.duden.de/rechtschreibung/Kennzeichnung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Kennzeichnung, Genitiv der Kennzeichnung, Plural die Kennzeichnungen"
+    },
+    {
+      "id": "duden-tabelle",
+      "title": "Duden — Tabelle",
+      "url": "https://www.duden.de/rechtschreibung/Tabelle",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Tabelle, Genitiv der Tabelle, Plural die Tabellen; listenförmige Übersicht mit Daten"
+    },
+    {
+      "id": "duden-probe",
+      "title": "Duden — Probe",
+      "url": "https://www.duden.de/rechtschreibung/Probe",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Probe, Genitiv der Probe, Plural die Proben; kleine Menge zur Untersuchung"
+    },
+    {
+      "id": "duden-ballaststoff",
+      "title": "Duden — Ballaststoff",
+      "url": "https://www.duden.de/rechtschreibung/Ballaststoff",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Ballaststoff, Genitiv des Ballaststoffs/Ballaststoffes, Plural die Ballaststoffe (meist im Plural)"
+    },
+    {
+      "id": "duden-zuckergehalt",
+      "title": "Duden — Zuckergehalt",
+      "url": "https://www.duden.de/rechtschreibung/Zuckergehalt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Zuckergehalt, Genitiv des Zuckergehalts/Zuckergehaltes, Plural die Zuckergehalte"
+    },
+    {
+      "id": "duden-abwiegen",
+      "title": "Duden — abwiegen",
+      "url": "https://www.duden.de/rechtschreibung/abwiegen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong separable verb abwiegen (wiegt ab, wog ab, hat abgewogen); die Zutaten abwiegen"
+    },
+    {
+      "id": "duden-erfassen",
+      "title": "Duden — erfassen",
+      "url": "https://www.duden.de/rechtschreibung/erfassen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak inseparable verb erfassen (erfasst, erfasste, hat erfasst); Daten/Werte statistisch erfassen"
+    },
+    {
+      "id": "duden-auswerten",
+      "title": "Duden — auswerten",
+      "url": "https://www.duden.de/rechtschreibung/auswerten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak separable verb auswerten (wertet aus, wertete aus, hat ausgewertet); Daten/Ergebnisse auswerten"
+    },
+    {
+      "id": "duden-kennzeichnen",
+      "title": "Duden — kennzeichnen",
+      "url": "https://www.duden.de/rechtschreibung/kennzeichnen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak inseparable verb kennzeichnen derived from Kennzeichen with initial stress (kennzeichnet, kennzeichnete, hat gekennzeichnet; zu kennzeichnen)"
+    },
+    {
+      "id": "duden-ausweisen",
+      "title": "Duden — ausweisen",
+      "url": "https://www.duden.de/rechtschreibung/ausweisen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong separable verb ausweisen (weist aus, wies aus, hat ausgewiesen); Werte separat ausweisen"
+    },
+    {
+      "id": "duden-eintragen",
+      "title": "Duden — eintragen",
+      "url": "https://www.duden.de/rechtschreibung/eintragen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong separable verb eintragen (trägt ein, trug ein, hat eingetragen); Werte in eine Tabelle/Liste eintragen"
+    },
+    {
+      "id": "duden-ueberpruefen",
+      "title": "Duden — überprüfen",
+      "url": "https://www.duden.de/rechtschreibung/ueberpruefen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak inseparable verb überprüfen (überprüft, überprüfte, hat überprüft); Angaben/Tabellen überprüfen"
+    },
+    {
+      "id": "duden-vorbereiten",
+      "title": "Duden — vorbereiten",
+      "url": "https://www.duden.de/rechtschreibung/vorbereiten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak separable verb vorbereiten (bereitet vor, bereitete vor, hat vorbereitet); Proben vorbereiten"
+    },
+    {
+      "id": "duden-festhalten",
+      "title": "Duden — festhalten",
+      "url": "https://www.duden.de/rechtschreibung/festhalten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong separable verb festhalten (hält fest, hielt fest, hat festgehalten); Daten schriftlich festhalten"
+    },
+    {
+      "id": "duden-freigeben",
+      "title": "Duden — freigeben",
+      "url": "https://www.duden.de/rechtschreibung/freigeben",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong separable verb freigeben (gibt frei, gab frei, hat freigegeben); Tabelle für die Übung/Präsentation freigeben"
+    },
+    {
+      "id": "duden-untersuchen",
+      "title": "Duden — untersuchen",
+      "url": "https://www.duden.de/rechtschreibung/untersuchen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak inseparable verb untersuchen (untersucht, untersuchte, hat untersucht); Mischungen/Proben untersuchen"
+    },
+    {
+      "id": "duden-besprechen",
+      "title": "Duden — besprechen",
+      "url": "https://www.duden.de/rechtschreibung/besprechen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "strong inseparable verb besprechen (bespricht, besprach, hat besprochen); Daten/Ergebnisse gemeinsam besprechen"
+    },
+    {
+      "id": "duden-messwert",
+      "title": "Duden — Messwert",
+      "url": "https://www.duden.de/rechtschreibung/Messwert",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "der Messwert, Plural die Messwerte; ermittelter Wert einer Messgröße"
+    },
+    {
+      "id": "duden-stichprobe",
+      "title": "Duden — Stichprobe",
+      "url": "https://www.duden.de/rechtschreibung/Stichprobe",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "die Stichprobe, Genitiv der Stichprobe, Plural die Stichproben"
+    },
+    {
+      "id": "duden-ergebnis",
+      "title": "Duden — Ergebnis",
+      "url": "https://www.duden.de/rechtschreibung/Ergebnis",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "das Ergebnis, Genitiv des Ergebnisses, Plural die Ergebnisse"
+    },
+    {
+      "id": "duden-pruefen",
+      "title": "Duden — prüfen",
+      "url": "https://www.duden.de/rechtschreibung/pruefen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "usedFor": "weak verb prüfen (prüft, prüfte, hat geprüft); Tabelle/Probe prüfen vs. überprüfen"
+    }
+  ],
+  "SearchQueries": [
+    {
+      "id": "lingolia-search-passive",
+      "query": "site:deutsch.lingolia.com passive voice Vorgangspassiv Zustandspassiv werden sein Partizip II",
+      "access": "search_snippet_only",
+      "usedFor": "Located Lingolia reference pages for German passive voice (Vorgangspassiv and Zustandspassiv) and Partizip II formation."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Zutatenliste",
+      "reason": "HTTP 404 compound URL; covered by full-fetched constituent lemmas https://www.duden.de/rechtschreibung/Zutat and https://www.duden.de/rechtschreibung/Liste and documented in the Section 1 vocabulary note."
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-08-scope-01",
+      "section": "Scope",
+      "source": "B2.8 title, duration (45–50 min), skills, objective (werden + Partizip II vs. sein + Partizip II), and fictional data disclaimer",
+      "status": "verified",
+      "finding": "Verified that the lesson scope clearly targets Vorgangspassiv (werden + Partizip II) vs. Zustandspassiv (sein + Partizip II) in the context of fictional food and nutrition data without medical or dietary claims.",
+      "action": "Preserved header and pedagogical disclaimer verbatim."
+    },
+    {
+      "id": "b2-08-scope-02",
+      "section": "Scope",
+      "source": "Section 1 lexical and morphological note on noun plurals (der Zuckergehalt, der Ballaststoff, der Durchschnitt, die Zutatenliste) and Partizip II classes (separable, inseparable, and initial-stress kennzeichnen)",
+      "status": "added",
+      "finding": "Added a Duden-backed note below the Section 1 vocabulary table explaining why der Zuckergehalt is shown with '—' in singular table usage while Duden records die Zuckergehalte, why der Ballaststoff is used mostly in the plural die Ballaststoffe, and how all lesson verbs form Partizip II (including kennzeichnen -> hat gekennzeichnet).",
+      "action": "Added bulleted note below Section 1 table without altering the 16 table rows."
+    },
+    {
+      "id": "b2-08-scope-03",
+      "section": "Scope",
+      "source": "Section 2 helper subsection (مساعدة قبل النصوص والمهمات) on process vs. resulting-state test, active-to-passive nominative conversion, Kongruenz, and Partizip II verb map",
+      "status": "added",
+      "finding": "Added structured pre-task guidance in Section 2 using backticks for German examples so that the 7 bold model sentences extracted for DL-B2-08-AUD-MODEL-01 remain untouched.",
+      "action": "Added ### مساعدة قبل النصوص والمهمات at the end of Section 2."
+    },
+    {
+      "id": "b2-08-scope-04",
+      "section": "Scope",
+      "source": "Numbered T06 listening exercise, graduated T08/P01/P02 alignment, Section 8 written models, Section 9 review cards, assessment b2-08-v2, and Service Worker cache v99",
+      "status": "refined",
+      "finding": "Formatted T06 as a 5-item numbered list with matching numbered answer key, split P01 (writing-only, speakAloud: false) and P02 (writing + speaking, speakAloud: true, linked to T04/T05/T06/T07/T08), added Section 8 written model responses, and bumped assessment version to b2-08-v2 and Service Worker cache to v99.",
+      "action": "Updated lesson markdown, assessment JSON, CSV catalogs, Service Worker, and test suites."
+    },
+    {
+      "id": "b2-08-vocab-01",
+      "section": "Vocabulary",
+      "source": "| die Erhebung | die Erhebungen | جمع البيانات / دراسة مسحية |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Erhebung, Plural die Erhebungen (statistische Erhebung) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-02",
+      "section": "Vocabulary",
+      "source": "| der Durchschnitt | die Durchschnitte | المتوسّط |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Durchschnitt, Plural die Durchschnitte (Mittelwert; im Durchschnitt) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-03",
+      "section": "Vocabulary",
+      "source": "| der Anteil | die Anteile | النسبة / الحصة |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Anteil, Plural die Anteile against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-04",
+      "section": "Vocabulary",
+      "source": "| die Portion | die Portionen | الحصة الغذائية |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Portion, Plural die Portionen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-05",
+      "section": "Vocabulary",
+      "source": "| der Nährwert | die Nährwerte | القيمة الغذائية |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Nährwert, Plural die Nährwerte against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-06",
+      "section": "Vocabulary",
+      "source": "| die Zutatenliste | die Zutatenlisten | قائمة المكوّنات |",
+      "status": "verified",
+      "finding": "Verified feminine compound die Zutatenliste, Plural die Zutatenlisten via constituent Duden entries die Zutat + die Liste.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-07",
+      "section": "Vocabulary",
+      "source": "| die Kennzeichnung | die Kennzeichnungen | البيان / الملصق التعريفي |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Kennzeichnung, Plural die Kennzeichnungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-08",
+      "section": "Vocabulary",
+      "source": "| die Tabelle | die Tabellen | الجدول |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Tabelle, Plural die Tabellen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-09",
+      "section": "Vocabulary",
+      "source": "| die Probe | die Proben | العيّنة |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Probe, Plural die Proben against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-10",
+      "section": "Vocabulary",
+      "source": "| der Ballaststoff | die Ballaststoffe | الألياف الغذائية |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Ballaststoff, Plural die Ballaststoffe (meist im Plural) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-11",
+      "section": "Vocabulary",
+      "source": "| der Zuckergehalt | — | محتوى السكر |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Zuckergehalt against Duden and documented in the note that Duden also records plural die Zuckergehalte while singular is standard in nutrition tables.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-12",
+      "section": "Vocabulary",
+      "source": "| abwiegen | wiegt ab | يَزِن |",
+      "status": "verified",
+      "finding": "Verified strong separable verb abwiegen (wiegt ab, wog ab, hat abgewogen) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-13",
+      "section": "Vocabulary",
+      "source": "| erfassen | erfasst | يسجّل / يرصد |",
+      "status": "verified",
+      "finding": "Verified weak inseparable verb erfassen (erfasst, erfasste, hat erfasst) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-14",
+      "section": "Vocabulary",
+      "source": "| auswerten | wertet aus | يحلّل النتائج |",
+      "status": "verified",
+      "finding": "Verified weak separable verb auswerten (wertet aus, wertete aus, hat ausgewertet) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-15",
+      "section": "Vocabulary",
+      "source": "| kennzeichnen | kennzeichnet | يضع بيانًا / يعلّم |",
+      "status": "verified",
+      "finding": "Verified weak verb kennzeichnen (kennzeichnet, kennzeichnete, hat gekennzeichnet) against Duden and explained its initial-stress Partizip II with ge-.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-vocab-16",
+      "section": "Vocabulary",
+      "source": "| ausweisen | weist aus | يبيّن / يصرّح بـ |",
+      "status": "verified",
+      "finding": "Verified strong separable verb ausweisen (weist aus, wies aus, hat ausgewiesen) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-08-AUD-PHR-01."
+    },
+    {
+      "id": "b2-08-grammar-01",
+      "section": "Grammar",
+      "source": "Introductory rule: Vorgangspassiv (werden + Partizip II) for ongoing action/process vs. Zustandspassiv (sein + Partizip II) for resulting state",
+      "status": "verified",
+      "finding": "Verified against Lingolia Passive Voice reference.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-02",
+      "section": "Grammar",
+      "source": "| Vorgangspassiv — عملية | werden مصرّفًا + Partizip II | Die Zutaten werden abgewogen. — تُوزن المكوّنات الآن / ضمن العملية. |",
+      "status": "verified",
+      "finding": "Verified plural process passive werden abgewogen against Lingolia and Duden abwiegen.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-03",
+      "section": "Grammar",
+      "source": "| Zustandspassiv — حالة ناتجة | sein مصرّفًا + Partizip II | Die Zutaten sind abgewogen. — المكوّنات موزونة وجاهزة. |",
+      "status": "verified",
+      "finding": "Verified plural statal passive sind abgewogen against Lingolia.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-04",
+      "section": "Grammar",
+      "source": "| Vorgangspassiv — عملية | werden + Partizip II | Die Tabelle wird überprüft. — يجري التحقق من الجدول. |",
+      "status": "verified",
+      "finding": "Verified singular process passive wird überprüft (inseparable überprüfen without ge-) against Lingolia and Duden.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-05",
+      "section": "Grammar",
+      "source": "| Zustandspassiv — حالة ناتجة | sein + Partizip II | Die Tabelle ist überprüft. — تم التحقق من الجدول وهو جاهز. |",
+      "status": "verified",
+      "finding": "Verified singular statal passive ist überprüft against Lingolia and Duden.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-06",
+      "section": "Grammar",
+      "source": "Context and singular/plural auxiliary agreement (Kongruenz) with transitive verbs",
+      "status": "verified",
+      "finding": "Verified that transitive verbs form both passives when an action produces a resulting state and that werden/sein agree in number with the nominative subject.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-07",
+      "section": "Grammar",
+      "source": "Model sentence 5: Die Probe wird geprüft.",
+      "status": "verified",
+      "finding": "Verified singular process passive with feminine subject Die Probe.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-08",
+      "section": "Grammar",
+      "source": "Model sentence 6: Die Proben werden geprüft.",
+      "status": "verified",
+      "finding": "Verified plural process passive with plural subject Die Proben.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-grammar-09",
+      "section": "Grammar",
+      "source": "Model sentence 7: Die Proben sind geprüft.",
+      "status": "verified",
+      "finding": "Verified plural statal passive with plural subject Die Proben.",
+      "action": "Preserved Section 2 grammar table and 7 bold model sentences verbatim for DL-B2-08-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-08-helper-01",
+      "section": "Helper",
+      "source": "Diagnostic question: Was passiert gerade / Schritt für Schritt? (werden + Partizip II) vs. Wie ist der Stand jetzt? (sein + Partizip II)",
+      "status": "added",
+      "finding": "Added clear semantic test contrasting ongoing steps with completed or pending states (noch nicht ausgewertet).",
+      "action": "Added to ### مساعدة قبل النصوص والمهمات in Section 2."
+    },
+    {
+      "id": "b2-08-helper-02",
+      "section": "Helper",
+      "source": "Active-to-passive conversion: accusative object becomes nominative subject and governs auxiliary agreement (wird/werden, ist/sind)",
+      "status": "added",
+      "finding": "Documented nominative subject conversion and singular/plural Kongruenz.",
+      "action": "Added to ### مساعدة قبل النصوص والمهمات in Section 2."
+    },
+    {
+      "id": "b2-08-helper-03",
+      "section": "Helper",
+      "source": "Separable verbs in Partizip II with internal -ge-: abgewogen, eingetragen, ausgewertet, ausgewiesen, vorbereitet, festgehalten, freigegeben",
+      "status": "added",
+      "finding": "Grouped all 7 separable passive participles used across B2.8.",
+      "action": "Added to ### مساعدة قبل النصوص والمهمات in Section 2."
+    },
+    {
+      "id": "b2-08-helper-04",
+      "section": "Helper",
+      "source": "Simple and initial-stress verbs taking initial ge-: geprüft, gekennzeichnet, geteilt",
+      "status": "added",
+      "finding": "Explained why kennzeichnen takes initial ge- (gekennzeichnet) alongside prüfen (geprüft) and teilen (geteilt).",
+      "action": "Added to ### مساعدة قبل النصوص والمهمات in Section 2."
+    },
+    {
+      "id": "b2-08-helper-05",
+      "section": "Helper",
+      "source": "Inseparable prefix verbs taking no ge- in Partizip II: erfasst, überprüft, untersucht, besprochen",
+      "status": "added",
+      "finding": "Grouped all 4 inseparable passive participles used across B2.8.",
+      "action": "Added to ### مساعدة قبل النصوص والمهمات in Section 2."
+    },
+    {
+      "id": "b2-08-helper-06",
+      "section": "Helper",
+      "source": "Clause-final position of Partizip II in declarative passive sentences (Satzklammer)",
+      "status": "added",
+      "finding": "Highlighted the verbal bracket between conjugated werden/sein in position 2 and Partizip II at the end of the clause.",
+      "action": "Added to ### مساعدة قبل النصوص والمهمات in Section 2."
+    },
+    {
+      "id": "b2-08-dialogue-01",
+      "section": "Dialogue",
+      "source": "Lina: Was passiert mit den Zutaten für die Übung?",
+      "status": "verified",
+      "finding": "Verified natural opening question with passieren mit + Dativ (den Zutaten).",
+      "action": "Preserved dialogue turn verbatim for DL-B2-08-AUD-DLG-01 (Lina=voice-00, Koch=voice-03)."
+    },
+    {
+      "id": "b2-08-dialogue-02",
+      "section": "Dialogue",
+      "source": "Koch: Zuerst werden sie abgewogen und in kleine Proben geteilt.",
+      "status": "verified",
+      "finding": "Verified plural Vorgangspassiv werden ... abgewogen und ... geteilt.",
+      "action": "Preserved dialogue turn verbatim for DL-B2-08-AUD-DLG-01 (Lina=voice-00, Koch=voice-03)."
+    },
+    {
+      "id": "b2-08-dialogue-03",
+      "section": "Dialogue",
+      "source": "Lina: Und wie werden die Daten festgehalten?",
+      "status": "verified",
+      "finding": "Verified plural Vorgangspassiv wie werden die Daten festgehalten.",
+      "action": "Preserved dialogue turn verbatim for DL-B2-08-AUD-DLG-01 (Lina=voice-00, Koch=voice-03)."
+    },
+    {
+      "id": "b2-08-dialogue-04",
+      "section": "Dialogue",
+      "source": "Koch: Die Messwerte werden in eine Tabelle eingetragen. Danach wird die Tabelle überprüft.",
+      "status": "verified",
+      "finding": "Verified plural werden ... eingetragen followed by singular wird ... überprüft.",
+      "action": "Preserved dialogue turn verbatim for DL-B2-08-AUD-DLG-01 (Lina=voice-00, Koch=voice-03)."
+    },
+    {
+      "id": "b2-08-dialogue-05",
+      "section": "Dialogue",
+      "source": "Lina: Ist die Tabelle schon fertig?",
+      "status": "verified",
+      "finding": "Verified natural follow-up question on completion status.",
+      "action": "Preserved dialogue turn verbatim for DL-B2-08-AUD-DLG-01 (Lina=voice-00, Koch=voice-03)."
+    },
+    {
+      "id": "b2-08-dialogue-06",
+      "section": "Dialogue",
+      "source": "Koch: Ja, sie ist geprüft und für die Präsentation freigegeben. Die Werte sind aber nur ein Beispiel für diese Übung.",
+      "status": "verified",
+      "finding": "Verified singular Zustandspassiv ist geprüft und ... freigegeben and explicit fictional-example reminder.",
+      "action": "Preserved dialogue turn verbatim for DL-B2-08-AUD-DLG-01 (Lina=voice-00, Koch=voice-03)."
+    },
+    {
+      "id": "b2-08-reading-01",
+      "section": "Reading",
+      "source": "In einer fiktiven Lehrküche werden zwei Müslimischungen untersucht.",
+      "status": "verified",
+      "finding": "Verified plural Vorgangspassiv werden ... untersucht in reading sentence 1.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-02",
+      "section": "Reading",
+      "source": "Zuerst werden die Zutaten abgewogen und die Proben gekennzeichnet.",
+      "status": "verified",
+      "finding": "Verified coordinated Vorgangspassiv werden ... abgewogen und ... gekennzeichnet in reading sentence 2.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-03",
+      "section": "Reading",
+      "source": "Danach werden der Zuckergehalt und die Ballaststoffmenge je 100 Gramm erfasst.",
+      "status": "verified",
+      "finding": "Verified compound subject with plural Vorgangspassiv werden ... erfasst in reading sentence 3.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-04",
+      "section": "Reading",
+      "source": "Die Messwerte werden in eine Tabelle eingetragen und anschließend überprüft.",
+      "status": "verified",
+      "finding": "Verified coordinated Vorgangspassiv werden ... eingetragen und ... überprüft in reading sentence 4.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-05",
+      "section": "Reading",
+      "source": "Nach der Kontrolle ist die Tabelle für die Sprachübung freigegeben.",
+      "status": "verified",
+      "finding": "Verified singular Zustandspassiv ist ... freigegeben in reading sentence 5.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-06",
+      "section": "Reading",
+      "source": "> **قيم خيالية لكل 100 غرام، للتدريب اللغوي فقط:**",
+      "status": "verified",
+      "finding": "Verified table header notice matching spoken German sentence 'Fiktive Werte je 100 Gramm, nur für das Sprachtraining.' in DL-B2-08-AUD-READ-01.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-07",
+      "section": "Reading",
+      "source": "| A | 8 g | 6 g |",
+      "status": "verified",
+      "finding": "Verified Mixture A fictional values (8 g Zuckergehalt, 6 g Ballaststoffe per 100 g) matching DL-B2-08-AUD-READ-01.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-08",
+      "section": "Reading",
+      "source": "| B | 11 g | 4 g |",
+      "status": "verified",
+      "finding": "Verified Mixture B fictional values (11 g Zuckergehalt, 4 g Ballaststoffe per 100 g) matching DL-B2-08-AUD-READ-01 and Q07.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-09",
+      "section": "Reading",
+      "source": "لا تكفي هذه الأرقام وحدها لتقييم غذاء شخص أو تقديم نصيحة صحية. هي قيم افتراضية لشرح طريقة تسجيل البيانات وقراءتها.",
+      "status": "verified",
+      "finding": "Verified Arabic disclaimer matching the two concluding German sentences of DL-B2-08-AUD-READ-01.",
+      "action": "Preserved reading passage, table, and disclaimer verbatim for DL-B2-08-AUD-READ-01."
+    },
+    {
+      "id": "b2-08-reading-q-01",
+      "section": "Reading Questions",
+      "source": "1. Wo werden die Mischungen untersucht? -> In einer fiktiven Lehrküche.",
+      "status": "verified",
+      "finding": "Verified question and Section 7 answer against reading sentence 1.",
+      "action": "Preserved reading comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-reading-q-02",
+      "section": "Reading Questions",
+      "source": "2. Was geschieht mit den Zutaten, bevor die Daten erfasst werden? -> Sie werden abgewogen und gekennzeichnet.",
+      "status": "verified",
+      "finding": "Verified question and Section 7 answer against reading sentence 2.",
+      "action": "Preserved reading comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-reading-q-03",
+      "section": "Reading Questions",
+      "source": "3. Welche zwei Werte werden je 100 Gramm erfasst? -> Der Zuckergehalt und die Ballaststoffmenge.",
+      "status": "verified",
+      "finding": "Verified question and Section 7 answer against reading sentence 3.",
+      "action": "Preserved reading comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-reading-q-04",
+      "section": "Reading Questions",
+      "source": "4. Was wird nach der Eingabe überprüft? -> Die Tabelle wird überprüft.",
+      "status": "verified",
+      "finding": "Verified question and Section 7 answer against reading sentence 4.",
+      "action": "Preserved reading comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-reading-q-05",
+      "section": "Reading Questions",
+      "source": "5. Ist die Tabelle nach der Kontrolle fertig? -> Ja, sie ist für die Sprachübung freigegeben.",
+      "status": "verified",
+      "finding": "Verified question and Section 7 answer against reading sentence 5.",
+      "action": "Preserved reading comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-reading-q-06",
+      "section": "Reading Questions",
+      "source": "6. Können die Zahlen eine persönliche Ernährungsempfehlung liefern? -> Nein, die fiktiven Zahlen sind keine persönliche Ernährungsempfehlung.",
+      "status": "verified",
+      "finding": "Verified question and Section 7 answer against the reading disclaimer.",
+      "action": "Preserved reading comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-listening-01",
+      "section": "Listening",
+      "source": "Heute werden in der Lehrküche drei Proben vorbereitet.",
+      "status": "verified",
+      "finding": "Verified plural Vorgangspassiv werden ... vorbereitet in listening sentence 1.",
+      "action": "Preserved listening blockquote verbatim for DL-B2-08-AUD-LST-01."
+    },
+    {
+      "id": "b2-08-listening-02",
+      "section": "Listening",
+      "source": "Die Zutaten werden abgewogen und jede Probe wird gekennzeichnet.",
+      "status": "verified",
+      "finding": "Verified plural werden abgewogen and singular wird gekennzeichnet in listening sentence 2.",
+      "action": "Preserved listening blockquote verbatim for DL-B2-08-AUD-LST-01."
+    },
+    {
+      "id": "b2-08-listening-03",
+      "section": "Listening",
+      "source": "Danach werden die Messwerte in eine Tabelle eingetragen.",
+      "status": "verified",
+      "finding": "Verified plural Vorgangspassiv werden ... eingetragen in listening sentence 3.",
+      "action": "Preserved listening blockquote verbatim for DL-B2-08-AUD-LST-01."
+    },
+    {
+      "id": "b2-08-listening-04",
+      "section": "Listening",
+      "source": "Am Ende ist die Tabelle geprüft, aber die Ergebnisse sind noch nicht ausgewertet.",
+      "status": "verified",
+      "finding": "Verified singular Zustandspassiv ist ... geprüft contrasted with negated plural Zustandspassiv sind noch nicht ausgewertet in listening sentence 4.",
+      "action": "Preserved listening blockquote verbatim for DL-B2-08-AUD-LST-01."
+    },
+    {
+      "id": "b2-08-listening-05",
+      "section": "Listening",
+      "source": "Morgen werden die Daten gemeinsam besprochen.",
+      "status": "verified",
+      "finding": "Verified plural Vorgangspassiv werden ... besprochen in listening sentence 5.",
+      "action": "Preserved listening blockquote verbatim for DL-B2-08-AUD-LST-01."
+    },
+    {
+      "id": "b2-08-listening-q-01",
+      "section": "Listening Questions",
+      "source": "1. Wie viele Proben werden vorbereitet? -> Drei Proben.",
+      "status": "verified",
+      "finding": "Verified listening question 1 and Section 7 answer against listening sentence 1.",
+      "action": "Preserved listening comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-listening-q-02",
+      "section": "Listening Questions",
+      "source": "2. Was geschieht mit den Zutaten? -> Sie werden abgewogen.",
+      "status": "verified",
+      "finding": "Verified listening question 2 and Section 7 answer against listening sentence 2.",
+      "action": "Preserved listening comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-listening-q-03",
+      "section": "Listening Questions",
+      "source": "3. Was wird mit jeder Probe gemacht? -> Sie wird gekennzeichnet.",
+      "status": "verified",
+      "finding": "VerifiedListening question 3 and Section 7 answer against listening sentence 2.",
+      "action": "Preserved listening comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-listening-q-04",
+      "section": "Listening Questions",
+      "source": "4. In welchem Zustand ist die Tabelle am Ende? -> Sie ist geprüft.",
+      "status": "verified",
+      "finding": "Verified listening question 4 and Section 7 answer against listening sentence 4.",
+      "action": "Preserved listening comprehension question and Section 7 answer."
+    },
+    {
+      "id": "b2-08-listening-q-05",
+      "section": "Listening Questions",
+      "source": "5. Sind die Ergebnisse schon ausgewertet? -> Nein, sie sind noch nicht ausgewertet.",
+      "status": "verified",
+      "finding": "Verified listening question 5 and Section 7 answer against listening sentence 4.",
+      "action": "Preserved listening comprehension question and Section 7 answer."
+    },
+    {
+      "id": "DL-B2-08-T01",
+      "section": "Exercises",
+      "source": "### تمرين 1 — اختر المفردة المناسبة (4 items)",
+      "status": "verified",
+      "finding": "Verified all 4 vocabulary discrimination items and their Section 7 answer key (1. der Nährwert, 2. die Probe, 3. der Durchschnitt, 4. die Zutatenliste).",
+      "action": "Retained T01 items and answer key.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "ما يوضح كمية مادة غذائية في المنتج: der Nährwert / die Wegbeschreibung",
+          "answer": "der Nährwert",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "عينة تُستخدم في القياس أو الفحص: die Probe / die Portion",
+          "answer": "die Probe",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "قيمة تمثل وسط مجموعة من القيم: der Durchschnitt / der Anteil",
+          "answer": "der Durchschnitt",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "قائمة تُظهر المواد المستخدمة في إعداد الطعام: die Zutatenliste / die Erhebung",
+          "answer": "die Zutatenliste",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T02",
+      "section": "Exercises",
+      "source": "### تمرين 2 — أكمل بـwerden أو sein (4 items)",
+      "status": "verified",
+      "finding": "Verified all 4 auxiliary completion items contrasting ongoing process (werden/wird) and resulting state (sind/ist) with plural Die Zutaten and singular Die Tabelle.",
+      "action": "Retained T02 items and answer key.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "Die Zutaten ______ gerade abgewogen. (عملية جارية)",
+          "answer": "werden",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "Die Zutaten ______ schon abgewogen und bereit. (حالة ناتجة)",
+          "answer": "sind",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "Die Tabelle ______ noch überprüft. (عملية جارية)",
+          "answer": "wird",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "Die Tabelle ______ geprüft und kann gezeigt werden. (حالة ناتجة)",
+          "answer": "ist",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T03",
+      "section": "Exercises",
+      "source": "### تمرين 3 — حدّد Vorgangspassiv أو Zustandspassiv (4 items)",
+      "status": "verified",
+      "finding": "Verified all 4 passive classification items (1. Vorgangspassiv, 2. Zustandspassiv, 3. Vorgangspassiv, 4. Zustandspassiv).",
+      "action": "Retained T03 items and answer key.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "Die Proben werden gekennzeichnet.",
+          "answer": "Vorgangspassiv",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "Die Proben sind gekennzeichnet.",
+          "answer": "Zustandspassiv",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "Der Nährwert wird erfasst.",
+          "answer": "Vorgangspassiv",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "Der Nährwert ist erfasst.",
+          "answer": "Zustandspassiv",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T04",
+      "section": "Exercises",
+      "source": "### تمرين 4 — اختر الفعل المساعد المناسب حسب المعنى (4 items)",
+      "status": "verified",
+      "finding": "Verified all 4 meaning-based auxiliary selection items (1. wird, 2. sind, 3. werden, 4. sind).",
+      "action": "Retained T04 items and answer key.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "يصف الإجراء الجاري: Die Liste wird / ist geprüft.",
+          "answer": "wird",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "يصف أن المكوّنات صارت موزونة وجاهزة: Die Zutaten werden / sind abgewogen.",
+          "answer": "sind",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "يصف أن تسجيل البيانات يجري الآن: Die Messwerte werden / sind eingetragen.",
+          "answer": "werden",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "يصف أن تسجيل البيانات اكتمل: Die Messwerte werden / sind eingetragen.",
+          "answer": "sind",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T05",
+      "section": "Exercises",
+      "source": "### تمرين 5 — فهم القراءة (5 true/false items)",
+      "status": "verified",
+      "finding": "Verified all 5 reading comprehension true/false items against Section 4 text, table, and disclaimer.",
+      "action": "Retained T05 items and answer key.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "البيانات في الجدول خيالية ومخصّصة للتدريب اللغوي.",
+          "answer": "صحيح",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "يُقاس محتوى السكر والألياف لكل 100 غرام.",
+          "answer": "صحيح",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "يُدخل القياس في الجدول قبل وزن المكوّنات.",
+          "answer": "خطأ — تُوزن المكوّنات أولًا",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "يُراجع الجدول بعد إدخال القيم.",
+          "answer": "صحيح",
+          "verdict": "correct"
+        },
+        {
+          "item": 5,
+          "prompt": "تكفي القيم الواردة لتحديد نظام غذائي مناسب لكل شخص.",
+          "answer": "خطأ — لا تكفي لتوصية شخصية",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T06",
+      "section": "Exercises",
+      "source": "### تمرين 6 — فهم الاستماع (5 cloze items)",
+      "status": "refined",
+      "finding": "Formatted the 5 listening cloze items as a proper Markdown numbered list (1–5) and numbered the corresponding answers in Section 7 (1. drei, 2. abgewogen, 3. gekennzeichnet, 4. geprüft, 5. ausgewertet).",
+      "action": "Refined T06 formatting and Section 7 answer key numbering.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "Heute werden ______ Proben vorbereitet.",
+          "answer": "drei",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "Die Zutaten werden ______.",
+          "answer": "abgewogen",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "Jede Probe wird ______.",
+          "answer": "gekennzeichnet",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "Am Ende ist die Tabelle ______.",
+          "answer": "geprüft",
+          "verdict": "correct"
+        },
+        {
+          "item": 5,
+          "prompt": "Die Ergebnisse sind noch nicht ______.",
+          "answer": "ausgewertet",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T07",
+      "section": "Exercises",
+      "source": "### تمرين 7 — حوّل بحسب المعنى المطلوب (4 items)",
+      "status": "verified",
+      "finding": "Verified all 4 active/state transformation items (1. werden, 2. sind, 3. werden, 4. sind).",
+      "action": "Retained T07 items and answer key.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "Man wiegt die Zutaten gerade ab. -> عملية جارية: Die Zutaten ______ abgewogen.",
+          "answer": "werden",
+          "verdict": "correct"
+        },
+        {
+          "item": 2,
+          "prompt": "Man hat die Zutaten schon abgewogen; sie sind bereit. -> حالة ناتجة: Die Zutaten ______ abgewogen.",
+          "answer": "sind",
+          "verdict": "correct"
+        },
+        {
+          "item": 3,
+          "prompt": "Jemand trägt die Werte jetzt in die Tabelle ein. -> عملية جارية: Die Werte ______ eingetragen.",
+          "answer": "werden",
+          "verdict": "correct"
+        },
+        {
+          "item": 4,
+          "prompt": "Die Werte sind in der Tabelle, und die Arbeit ist beendet. -> حالة ناتجة: Die Werte ______ eingetragen.",
+          "answer": "sind",
+          "verdict": "correct"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-T08",
+      "section": "Exercises",
+      "source": "### تمرين 8 — صِف خطوات جمع بيانات خيالية (P01 5 sentences + P02 5 sentences = 10 sub-items)",
+      "status": "refined",
+      "finding": "Synchronized T08 in the lesson markdown with DL-B2-08-P01 (Part A, writing-only, 5–6 sentences on a fictional food-data experiment) and DL-B2-08-P02 (Part B, writing + speaking aloud, 5–6 sentences briefing another learner on Mixture A or B from T05 and T06).",
+      "action": "Structured T08 into Part A (DL-B2-08-P01) and Part B (DL-B2-08-P02) and added full written models in Section 8.",
+      "items": [
+        {
+          "item": 1,
+          "prompt": "P01 Sentence 1: Preparation of fictional samples in the training kitchen (Vorgangspassiv)",
+          "answer": "In unserer Lehrküche werden heute drei fiktive Proben für eine Sprachübung vorbereitet.",
+          "verdict": "verified"
+        },
+        {
+          "item": 2,
+          "prompt": "P01 Sentence 2: Weighing ingredients and labelling each sample (Vorgangspassiv)",
+          "answer": "Zuerst werden alle Zutaten genau abgewogen und jede Probe wird deutlich gekennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "item": 3,
+          "prompt": "P01 Sentence 3: Recording sugar and fibre values per portion in a table (Vorgangspassiv)",
+          "answer": "Danach werden der Zuckergehalt und der Anteil an Ballaststoffen pro Portion in eine Tabelle eingetragen.",
+          "verdict": "verified"
+        },
+        {
+          "item": 4,
+          "prompt": "P01 Sentence 4: Resulting state of weighed ingredients and checked table (Zustandspassiv)",
+          "answer": "Jetzt sind die Zutaten abgewogen und die Tabelle ist vollständig geprüft.",
+          "verdict": "verified"
+        },
+        {
+          "item": 5,
+          "prompt": "P01 Sentence 5: Explicit disclaimer that fictional nutrition values are for language training only",
+          "answer": "Diese fiktiven Nährwerte dienen nur dem Sprachtraining und sind keine persönliche Ernährungsempfehlung.",
+          "verdict": "verified"
+        },
+        {
+          "item": 6,
+          "prompt": "P02 Sentence 1: Exact sugar and fibre values per 100 g for Mixture B vs. Mixture A from T05",
+          "answer": "In der fiktiven Tabelle aus der Leseübung hat Mischung B je 100 Gramm einen Zuckergehalt von 11 Gramm und 4 Gramm Ballaststoffe, während Mischung A 8 Gramm Zucker und 6 Gramm Ballaststoffe enthält.",
+          "verdict": "verified"
+        },
+        {
+          "item": 7,
+          "prompt": "P02 Sentence 2: Ongoing process step 1 — weighing ingredients and labelling samples (Vorgangspassiv)",
+          "answer": "Vor der Eingabe werden die Zutaten in der Lehrküche abgewogen und die Proben werden einzeln gekennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "item": 8,
+          "prompt": "P02 Sentence 3: Ongoing process step 2 — recording and entering measured values per 100 g (Vorgangspassiv)",
+          "answer": "Anschließend werden die Messwerte je 100 Gramm erfasst und in die Tabelle eingetragen.",
+          "verdict": "verified"
+        },
+        {
+          "item": 9,
+          "prompt": "P02 Sentence 4: Resulting state of the checked/released table vs. unanalyzed results (Zustandspassiv)",
+          "answer": "Nach der Kontrolle ist die Tabelle geprüft und für unsere Sprachübung freigegeben, aber die weiteren Ergebnisse sind noch nicht ausgewertet.",
+          "verdict": "verified"
+        },
+        {
+          "item": 10,
+          "prompt": "P02 Sentence 5: Explicit disclaimer that all figures are fictional and not health advice",
+          "answer": "Alle Zahlen in dieser Übersicht sind rein fiktiv für das Sprachtraining und liefern keine persönliche Gesundheits- oder Ernährungsempfehlung.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q01",
+      "section": "Quiz",
+      "source": "ما معنى **der Durchschnitt** في سياق جدول القيم؟",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=2, sourceTaskIds=['DL-B2-08-T01'], and enriched Arabic grammatical/lexical explanation: يُستخدم **der Durchschnitt** (المتوسّط الحسابي، نحو: **im Durchschnitt**) للدلالة على القيمة الوسطى المحسوبة من عدة قيم، بينما **der Anteil** يعني النسبة/الحصة و**die Probe** تعني العيّنة.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "نسبة أو حصة من الكل",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "عينة تُستخدم في القياس",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 2,
+          "text": "قيمة تمثل وسط مجموعة من القيم",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q02",
+      "section": "Quiz",
+      "source": "اختر الفعل المساعد المناسب: **Die Zutaten ___ gerade abgewogen.** (عملية جارية)",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=0, sourceTaskIds=['DL-B2-08-T02'], and enriched Arabic grammatical/lexical explanation: تصف الجملة عملية وزن تجري الآن (**gerade**)، لذا نستخدم **Vorgangspassiv** (**werden + Partizip II**) مع مطابقة الجمع **Die Zutaten**: **Die Zutaten werden gerade abgewogen.**",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "werden",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 1,
+          "text": "sind",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 2,
+          "text": "ist",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q03",
+      "section": "Quiz",
+      "source": "أكمل بما يصف الحالة بعد اكتمال الوزن: **Die Zutaten ___ schon abgewogen und bereit.**",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-08-T02'], and enriched Arabic grammatical/lexical explanation: المكوّنات موزونة وجاهزة (**schon abgewogen und bereit**)؛ هذه حالة ناتجة تُصاغ بـ**Zustandspassiv** (**sein + Partizip II**)، ولأن الفاعل **Die Zutaten** جمع نختار **sind**.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "werden",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "sind",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 2,
+          "text": "ist",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q04",
+      "section": "Quiz",
+      "source": "ما نوع الجملة؟ **Die Proben sind gekennzeichnet.**",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-08-T03'], and enriched Arabic grammatical/lexical explanation: تصف الصيغة **sind gekennzeichnet** (**sein + Partizip II** من الفعل **kennzeichnen**) الحالة الناتجة للعيّنات بعد وضع العلامات عليها؛ لذلك هي **Zustandspassiv**.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Vorgangspassiv — إجراء جارٍ",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "Zustandspassiv — حالة ناتجة",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 2,
+          "text": "Aktiv — صيغة المعلوم",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q05",
+      "section": "Quiz",
+      "source": "ما نوع الجملة؟ **Der Nährwert wird erfasst.**",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=2, sourceTaskIds=['DL-B2-08-T03'], and enriched Arabic grammatical/lexical explanation: تصف الجملة إجراء رصد القيمة الغذائية باستخدام **wird + Partizip II** (**erfasst** بدون **ge-** لأن الفعل **erfassen** غير منفصل)؛ لذلك هي **Vorgangspassiv**.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Aktiv — صيغة المعلوم",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "Zustandspassiv — حالة ناتجة",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 2,
+          "text": "Vorgangspassiv — عملية جارية",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q06",
+      "section": "Quiz",
+      "source": "اختر الصيغة التي تدل على أن إدخال القياسات يجري الآن: **Die Messwerte ___ gerade in eine Tabelle eingetragen.**",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=0, sourceTaskIds=['DL-B2-08-T04'], and enriched Arabic grammatical/lexical explanation: القرينة **gerade** مع اتجاه الإدخال (**in eine Tabelle**) تدل على إجراء جارٍ في المضارع مع الفاعل الجمع **Die Messwerte**؛ نستخدم **werden + Partizip II** (**werden ... eingetragen**).",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "werden",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 1,
+          "text": "sind",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 2,
+          "text": "war",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q07",
+      "section": "Quiz",
+      "source": "بحسب قراءة T05، ما القيم الافتراضية للمزيج B لكل 100 غرام؟",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-08-T05'], and enriched Arabic grammatical/lexical explanation: يعرض الجدول الخيالي للمزيج **B** مقدار **11 g** من السكر (**Zuckergehalt**) و**4 g** من الألياف (**Ballaststoffe**) لكل 100 غرام، مقابل **8 g** سكر و**6 g** ألياف للمزيج **A**.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "8 g Zucker و4 g Ballaststoffe",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "11 g Zucker و4 g Ballaststoffe",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 2,
+          "text": "11 g Zucker و6 g Ballaststoffe",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q08",
+      "section": "Quiz",
+      "source": "ماذا يحدث للجدول بعد المراجعة في قراءة T05؟",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=2, sourceTaskIds=['DL-B2-08-T05'], and enriched Arabic grammatical/lexical explanation: ينصّ نص القراءة بصيغة **Zustandspassiv** على أنه بعد المراجعة (**Nach der Kontrolle ist die Tabelle für die Sprachübung freigegeben**) يصبح الجدول معتمدًا للتدريب اللغوي فقط، ولا يُعدّ توصية غذائية شخصية.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "تُعتمد أرقامه توصيةً غذائية شخصية.",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "تُترك بياناته دون مراجعة.",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 2,
+          "text": "يُعتمد للتدريب اللغوي بعد التحقق منه.",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q09",
+      "section": "Quiz",
+      "source": "بحسب النص المكتوب لتدريب الاستماع T06، ما وضع النتائج في النهاية؟",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=0, sourceTaskIds=['DL-B2-08-T06'], and enriched Arabic grammatical/lexical explanation: في نهاية نص الاستماع يرد بصيغة **Zustandspassiv**: **Am Ende ist die Tabelle geprüft, aber die Ergebnisse sind noch nicht ausgewertet**؛ أي إن الجدول مفحوص، لكن النتائج لم تُحلَّل بعد وستُناقش غدًا.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "لم تُحلّل بعد.",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 1,
+          "text": "حُلّلت بالكامل وأُعلنت توصية غذائية.",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 2,
+          "text": "لم تُوزن المكوّنات أو تُسجّل العينات.",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-Q10",
+      "section": "Quiz",
+      "source": "اختر تحويلًا يحافظ على معنى الإجراء الجاري: **Man trägt die Werte jetzt in die Tabelle ein.**",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-08-T07'], and enriched Arabic grammatical/lexical explanation: للتعبير عن الإجراء الجاري (**jetzt**) نستخدم **Vorgangspassiv** (**werden + Partizip II**) من الفعل المنفصل **eintragen**: **Die Werte werden in die Tabelle eingetragen.** أما **sind ... eingetragen** فتصف الحالة الناتجة بعد انتهاء الإدخال.",
+      "action": "Enriched explanation and verified option balance in content/B2/lesson-08-food-nutrition-data-passives.assessment.json.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Die Werte werden in die Tabelle eintragen.",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        },
+        {
+          "index": 1,
+          "text": "Die Werte werden in die Tabelle eingetragen.",
+          "isCorrect": true,
+          "verdict": "correct_key"
+        },
+        {
+          "index": 2,
+          "text": "Die Werte sind in die Tabelle eingetragen.",
+          "isCorrect": false,
+          "verdict": "plausible_distractor"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-P01",
+      "section": "Performance Tasks",
+      "source": "اكتب من 5 إلى 6 جمل ألمانية عن تجربة غذائية خيالية في مطبخ تدريبي (التمرين 8-أ). استخدم **Vorgangspassiv** (**werden + Partizip II**) مرتين على الأقل لوصف خطوات الفحص (مثل وزن المكوّنات، ووسم العيّنات، وتسجيل القيم)، واستخدم **Zustandspassiv** (**sein + Partizip II**) مرةً على الأقل لوصف حالة ناتجة منتهية (مثل جاهزية المكوّنات أو الجدول). وضّح صراحةً أن الأرقام افتراضية للتدريب اللغوي وليست توصية غذائية أو صحية شخصية.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-08-P01 modality=['writing'], speakAloud=False, minimumResponseCharacters=150, and sourceTaskIds=['DL-B2-08-T08'] with Section 6 T08 and Section 8 written models.",
+      "action": "Updated performance task definition in .assessment.json and production-task-catalog.csv.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "من 5 إلى 6 جمل ألمانية عن تجربة غذائية خيالية، تتضمن خطوتين على الأقل بصيغة Vorgangspassiv وجملة واحدة على الأقل بصيغة Zustandspassiv.",
+          "verdict": "verified"
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "يُفهم تسلسل خطوات التجربة والتمييز بين الإجراء الجاري والحالة الناتجة بعد اكتماله، مع النصّ صراحةً على أن البيانات خيالية للتدريب اللغوي وليست توصية صحية شخصية.",
+          "verdict": "verified"
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يختار werden أو sein وفق المعنى ويطابقهما مع الفاعل مفردًا وجمعًا، ويصوغ Partizip II في نهاية الجملة بصورة صحيحة.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-P02",
+      "section": "Performance Tasks",
+      "source": "استنادًا إلى قراءة T05 ونص الاستماع T06، اكتب إحاطة من 5 إلى 6 جمل ألمانية لمتعلم آخر ثم اقرأها بصوت واضح (التمرين 8-ب). اختر المزيج A أو B وانقل بدقة قيمتَي السكر والألياف لكل 100 غرام، ثم اشرح خطوتين على الأقل من جمع القيم بـ**Vorgangspassiv** والحالة النهائية للجدول والنتائج بـ**Zustandspassiv** (مثل أن الجدول مفحوص ومعتمد للتدريب بينما النتائج ليست محلّلة بالكامل بعد). اذكر أن الجدول خيالي للتدريب اللغوي ولا تقدّم نصيحة غذائية أو صحية شخصية. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-08-P02 modality=['writing', 'speaking'], speakAloud=True, minimumResponseCharacters=180, and sourceTaskIds=['DL-B2-08-T04', 'DL-B2-08-T05', 'DL-B2-08-T06', 'DL-B2-08-T07', 'DL-B2-08-T08'] with Section 6 T08 and Section 8 written models.",
+      "action": "Updated performance task definition in .assessment.json and production-task-catalog.csv.",
+      "criterionReview": [
+        {
+          "criterion": "taskCompletion",
+          "text": "إحاطة من 5 إلى 6 جمل تذكر قيمتَي السكر والألياف الصحيحتين لمزيج واحد لكل 100 غرام، وخطوتين على الأقل بـVorgangspassiv، وحالة الجدول/النتائج بـZustandspassiv.",
+          "verdict": "verified"
+        },
+        {
+          "criterion": "meaningClarity",
+          "text": "تُعرض البيانات بوصفها افتراضية للتدريب اللغوي؛ وتُفهم مراحل الوزن والوسم والإدخال والفحص والجاهزية دون استنتاج غذائي أو صحي شخصي.",
+          "verdict": "verified"
+        },
+        {
+          "criterion": "targetSkill",
+          "text": "يطابق الفعل المساعد مع المعنى والفاعل: werden/wird لخطوة الإجراء وsein (ist/sind) للحالة الناتجة، ويصوغ Partizip II وترتيب الجملة بصورة سليمة.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-P01-model-01",
+      "section": "Written Models",
+      "source": "### نموذج 1 — وصف تجربة غذائية خيالية في مطبخ تدريبي (تطبيق المهمة DL-B2-08-P01 / التمرين 8-أ)",
+      "status": "added",
+      "finding": "Added a 5-sentence model response (344 characters >= 150) containing 4 Vorgangspassiv clauses (werden vorbereitet, werden abgewogen, wird gekennzeichnet, werden eingetragen), 2 Zustandspassiv clauses (sind abgewogen, ist geprüft), and an explicit fictional-data disclaimer.",
+      "action": "Added Model 1 and analytical breakdown in Section 8.",
+      "items": [
+        {
+          "part": 1,
+          "text": "In unserer Lehrküche werden heute drei fiktive Proben für eine Sprachübung vorbereitet.",
+          "verdict": "verified"
+        },
+        {
+          "part": 2,
+          "text": "Zuerst werden alle Zutaten genau abgewogen und jede Probe wird deutlich gekennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "part": 3,
+          "text": "Danach werden der Zuckergehalt und der Anteil an Ballaststoffen pro Portion in eine Tabelle eingetragen.",
+          "verdict": "verified"
+        },
+        {
+          "part": 4,
+          "text": "Jetzt sind die Zutaten abgewogen und die Tabelle ist vollständig geprüft.",
+          "verdict": "verified"
+        },
+        {
+          "part": 5,
+          "text": "Diese fiktiven Nährwerte dienen nur dem Sprachtraining und sind keine persönliche Ernährungsempfehlung.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-P02-model-01",
+      "section": "Written Models",
+      "source": "### نموذج 2 — إحاطة عن بيانات المزيج الخيالي وحالة الجدول (تطبيق المهمة DL-B2-08-P02 / التمرين 8-ب)",
+      "status": "added",
+      "finding": "Added a 5-sentence model briefing (612 characters >= 180) reporting exact Mixture B (11 g sugar, 4 g fibre) and Mixture A (8 g sugar, 6 g fibre) values per 100 g, ongoing process steps in Vorgangspassiv (werden abgewogen, werden gekennzeichnet, werden erfasst und eingetragen), final states in Zustandspassiv (ist geprüft und freigegeben, sind noch nicht ausgewertet), and an explicit non-medical disclaimer.",
+      "action": "Added Model 2 and analytical breakdown in Section 8.",
+      "items": [
+        {
+          "part": 1,
+          "text": "In der fiktiven Tabelle aus der Leseübung hat Mischung B je 100 Gramm einen Zuckergehalt von 11 Gramm und 4 Gramm Ballaststoffe, während Mischung A 8 Gramm Zucker und 6 Gramm Ballaststoffe enthält.",
+          "verdict": "verified"
+        },
+        {
+          "part": 2,
+          "text": "Vor der Eingabe werden die Zutaten in der Lehrküche abgewogen und die Proben werden einzeln gekennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "part": 3,
+          "text": "Anschließend werden die Messwerte je 100 Gramm erfasst und in die Tabelle eingetragen.",
+          "verdict": "verified"
+        },
+        {
+          "part": 4,
+          "text": "Nach der Kontrolle ist die Tabelle geprüft und für unsere Sprachübung freigegeben, aber die weiteren Ergebnisse sind noch nicht ausgewertet.",
+          "verdict": "verified"
+        },
+        {
+          "part": 5,
+          "text": "Alle Zahlen in dieser Übersicht sind rein fiktiv für das Sprachtraining und liefern keine persönliche Gesundheits- oder Ernährungsempfehlung.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "b2-08-card-01",
+      "section": "Review Cards",
+      "source": "- **Die Zutaten werden abgewogen.** -> `Vorgangspassiv` (`werden + Partizip II`): يجري وزن المكوّنات الآن أو ضمن خطوات الإجراء.",
+      "status": "refined",
+      "finding": "Refined review card 1 with explicit Vorgangspassiv formula.",
+      "action": "Updated Section 9 review card."
+    },
+    {
+      "id": "b2-08-card-02",
+      "section": "Review Cards",
+      "source": "- **Die Zutaten sind abgewogen.** -> `Zustandspassiv` (`sein + Partizip II`): المكوّنات موزونة وجاهزة بعد اكتمال الوزن.",
+      "status": "refined",
+      "finding": "Refined review card 2 with explicit Zustandspassiv formula.",
+      "action": "Updated Section 9 review card."
+    },
+    {
+      "id": "b2-08-card-03",
+      "section": "Review Cards",
+      "source": "- **Die Tabelle wird überprüft. / Die Messwerte werden eingetragen.** -> مطابقة الفعل المساعد في `Vorgangspassiv` بين المفرد (`wird`) والجمع (`werden`) مع وضع `Partizip II` في نهاية الجملة.",
+      "status": "refined",
+      "finding": "Refined review card 3 contrasting singular wird and plural werden.",
+      "action": "Updated Section 9 review card."
+    },
+    {
+      "id": "b2-08-card-04",
+      "section": "Review Cards",
+      "source": "- **Die Tabelle ist geprüft, aber die Ergebnisse sind noch nicht ausgewertet.** -> التمييز في `Zustandspassiv` بين حالة مكتملة (`ist geprüft`) وحالة لم تكتمل بعد (`sind noch nicht ausgewertet`) مع بقاء البيانات افتراضية للتدريب اللغوي.",
+      "status": "refined",
+      "finding": "Refined review card 4 contrasting completed and pending states in Zustandspassiv.",
+      "action": "Updated Section 9 review card."
+    },
+    {
+      "id": "DL-B2-08-AUD-PHR-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 1 Phrase Bank (Narrator=voice-02, 1 clip, 16 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified all 16 spoken vocabulary items and forms against Section 1 table; status remains generated_pending_acoustic_review and transcriptPolicy offer.",
+      "action": "Preserved MP3 files, playlist metadata, and source_line mapping in data/audio-asset-register.csv without claiming human acoustic review.",
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Erhebung, die Erhebungen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 2,
+          "text": "Der Durchschnitt, die Durchschnitte.",
+          "verdict": "verified"
+        },
+        {
+          "index": 3,
+          "text": "Der Anteil, die Anteile.",
+          "verdict": "verified"
+        },
+        {
+          "index": 4,
+          "text": "Die Portion, die Portionen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 5,
+          "text": "Der Nährwert, die Nährwerte.",
+          "verdict": "verified"
+        },
+        {
+          "index": 6,
+          "text": "Die Zutatenliste, die Zutatenlisten.",
+          "verdict": "verified"
+        },
+        {
+          "index": 7,
+          "text": "Die Kennzeichnung, die Kennzeichnungen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 8,
+          "text": "Die Tabelle, die Tabellen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 9,
+          "text": "Die Probe, die Proben.",
+          "verdict": "verified"
+        },
+        {
+          "index": 10,
+          "text": "Der Ballaststoff, die Ballaststoffe.",
+          "verdict": "verified"
+        },
+        {
+          "index": 11,
+          "text": "Der Zuckergehalt.",
+          "verdict": "verified"
+        },
+        {
+          "index": 12,
+          "text": "Abwiegen, wiegt ab.",
+          "verdict": "verified"
+        },
+        {
+          "index": 13,
+          "text": "Erfassen, erfasst.",
+          "verdict": "verified"
+        },
+        {
+          "index": 14,
+          "text": "Auswerten, wertet aus.",
+          "verdict": "verified"
+        },
+        {
+          "index": 15,
+          "text": "Kennzeichnen, kennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "index": 16,
+          "text": "Ausweisen, weist aus.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-AUD-MODEL-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 2 Model Sentences (Narrator=voice-02, 1 clip, 7 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified all 7 spoken passive model sentences against Section 2 bold examples; status remains generated_pending_acoustic_review and transcriptPolicy offer.",
+      "action": "Preserved MP3 files, playlist metadata, and source_line mapping in data/audio-asset-register.csv without claiming human acoustic review.",
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Zutaten werden abgewogen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 2,
+          "text": "Die Zutaten sind abgewogen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 3,
+          "text": "Die Tabelle wird überprüft.",
+          "verdict": "verified"
+        },
+        {
+          "index": 4,
+          "text": "Die Tabelle ist überprüft.",
+          "verdict": "verified"
+        },
+        {
+          "index": 5,
+          "text": "Die Probe wird geprüft.",
+          "verdict": "verified"
+        },
+        {
+          "index": 6,
+          "text": "Die Proben werden geprüft.",
+          "verdict": "verified"
+        },
+        {
+          "index": 7,
+          "text": "Die Proben sind geprüft.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-AUD-DLG-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 3 Dialogue (Lina=voice-00 preserved from B1.1, Koch=voice-03, 6 clips, 6 turns)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified all 6 dialogue segments and speaker voice assignments (Lina=voice-00, Koch=voice-03) against Section 3; status remains generated_pending_acoustic_review and transcriptPolicy offer.",
+      "action": "Preserved MP3 files, playlist metadata, and source_line mapping in data/audio-asset-register.csv without claiming human acoustic review.",
+      "items": [
+        {
+          "index": 1,
+          "text": "Lina (voice-00): Was passiert mit den Zutaten für die Übung?",
+          "verdict": "verified"
+        },
+        {
+          "index": 2,
+          "text": "Koch (voice-03): Zuerst werden sie abgewogen und in kleine Proben geteilt.",
+          "verdict": "verified"
+        },
+        {
+          "index": 3,
+          "text": "Lina (voice-00): Und wie werden die Daten festgehalten?",
+          "verdict": "verified"
+        },
+        {
+          "index": 4,
+          "text": "Koch (voice-03): Die Messwerte werden in eine Tabelle eingetragen. Danach wird die Tabelle überprüft.",
+          "verdict": "verified"
+        },
+        {
+          "index": 5,
+          "text": "Lina (voice-00): Ist die Tabelle schon fertig?",
+          "verdict": "verified"
+        },
+        {
+          "index": 6,
+          "text": "Koch (voice-03): Ja, sie ist geprüft und für die Präsentation freigegeben. Die Werte sind aber nur ein Beispiel für diese Übung.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-AUD-READ-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 4 Reading (Narrator=voice-02, 1 clip, 10 sentences including spoken table and disclaimer)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified all 10 spoken reading sentences (5 prose sentences + German table heading + Mixture A and B rows + 2 disclaimer sentences) against Section 4; status remains generated_pending_acoustic_review and transcriptPolicy offer.",
+      "action": "Preserved MP3 files, playlist metadata, and source_line mapping in data/audio-asset-register.csv without claiming human acoustic review.",
+      "items": [
+        {
+          "index": 1,
+          "text": "In einer fiktiven Lehrküche werden zwei Müslimischungen untersucht.",
+          "verdict": "verified"
+        },
+        {
+          "index": 2,
+          "text": "Zuerst werden die Zutaten abgewogen und die Proben gekennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "index": 3,
+          "text": "Danach werden der Zuckergehalt und die Ballaststoffmenge je 100 Gramm erfasst.",
+          "verdict": "verified"
+        },
+        {
+          "index": 4,
+          "text": "Die Messwerte werden in eine Tabelle eingetragen und anschließend überprüft.",
+          "verdict": "verified"
+        },
+        {
+          "index": 5,
+          "text": "Nach der Kontrolle ist die Tabelle für die Sprachübung freigegeben.",
+          "verdict": "verified"
+        },
+        {
+          "index": 6,
+          "text": "Fiktive Werte je 100 Gramm, nur für das Sprachtraining.",
+          "verdict": "verified"
+        },
+        {
+          "index": 7,
+          "text": "Mischung A: Zuckergehalt 8 Gramm, Ballaststoffe 6 Gramm.",
+          "verdict": "verified"
+        },
+        {
+          "index": 8,
+          "text": "Mischung B: Zuckergehalt 11 Gramm, Ballaststoffe 4 Gramm.",
+          "verdict": "verified"
+        },
+        {
+          "index": 9,
+          "text": "Diese Zahlen allein reichen nicht aus, um die Ernährung einer Person zu beurteilen oder gesundheitliche Ratschläge zu geben.",
+          "verdict": "verified"
+        },
+        {
+          "index": 10,
+          "text": "Es sind hypothetische Werte, die veranschaulichen, wie Daten erfasst und gelesen werden.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-08-AUD-LST-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 5 Listening (Erzählperson=voice-03, 1 clip, 5 sentences)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified all 5 spoken listening sentences against Section 5 blockquote; status remains generated_pending_acoustic_review and transcriptPolicy offer.",
+      "action": "Preserved MP3 files, playlist metadata, and source_line mapping in data/audio-asset-register.csv without claiming human acoustic review.",
+      "items": [
+        {
+          "index": 1,
+          "text": "Heute werden in der Lehrküche drei Proben vorbereitet.",
+          "verdict": "verified"
+        },
+        {
+          "index": 2,
+          "text": "Die Zutaten werden abgewogen und jede Probe wird gekennzeichnet.",
+          "verdict": "verified"
+        },
+        {
+          "index": 3,
+          "text": "Danach werden die Messwerte in eine Tabelle eingetragen.",
+          "verdict": "verified"
+        },
+        {
+          "index": 4,
+          "text": "Am Ende ist die Tabelle geprüft, aber die Ergebnisse sind noch nicht ausgewertet.",
+          "verdict": "verified"
+        },
+        {
+          "index": 5,
+          "text": "Morgen werden die Daten gemeinsam besprochen.",
+          "verdict": "verified"
+        }
+      ]
+    }
+  ]
+}

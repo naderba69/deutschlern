@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-02-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "مراجعة CR2 النصية المدعومة بالمراجع بتاريخ2026-10-07: data/reviews/a0-02-review.md وJSON المرافق. لا استماع إلى MP3 مدّعى.",
+      "صُحح Q08 ليرتبط بـT05 بعد إضافة الرد الرسمي Und Ihnen إلى الشرح والتدريب؛ وأضيف تدريب قبل النوم إلى T01 لمطابقة Q02.",
+      "صارت P01 مسودة مكتوبة لنسختين du/Sie وأداءً فرديًا اختياري الشريك، وصارت P02 كتابة T08 بدل الإشارة الخاطئة إلى حوار T06 غير الرسمي.",
+      "تسجيلات الدرس الثلاثة موجودة ونصا الحوار المسجلان ثابتان؛ التقييم مستقل عن الصوت. الإصدارv2 لا يقبل إتقانv1 ولا يحذفه بمجرد التحقق.",
+      "طول الإجابة ومربعات التحقق حراس اكتمال ذاتي، وليست تصحيحًا آليًا للألمانية أو قياسًا للنطق."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-02-Q01",
+      "sourceTaskIds": [
+        "DL-A0-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "الساعة الثامنة صباحًا؛ أي تحية مناسبة؟",
+      "options": [
+        "Gute Nacht!",
+        "Guten Morgen!",
+        "Guten Abend!"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guten Morgen تُستعمل صباحًا."
+    },
+    {
+      "id": "DL-A0-02-Q02",
+      "sourceTaskIds": [
+        "DL-A0-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تلائم الوداع قبل النوم؟",
+      "options": [
+        "Hallo!",
+        "Guten Tag!",
+        "Gute Nacht!"
+      ],
+      "answerIndex": 2,
+      "explanation": "Gute Nacht تقال عند الوداع ليلًا قبل النوم."
+    },
+    {
+      "id": "DL-A0-02-Q03",
+      "sourceTaskIds": [
+        "DL-A0-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر عبارة الوداع المستخدمة في النموذج الرسمي بهذا الدرس.",
+      "options": [
+        "Auf Wiedersehen!",
+        "Tschüss!",
+        "Guten Morgen!"
+      ],
+      "answerIndex": 0,
+      "explanation": "Auf Wiedersehen وداع مهذب مناسب للنموذج الرسمي. هذا لا يعني أنها ممنوعة مع الأصدقاء."
+    },
+    {
+      "id": "DL-A0-02-Q04",
+      "sourceTaskIds": [
+        "DL-A0-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ Lina.",
+      "options": [
+        "heißen",
+        "heiße",
+        "heißt"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع ich نقول heiße."
+    },
+    {
+      "id": "DL-A0-02-Q05",
+      "sourceTaskIds": [
+        "DL-A0-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني Wie heißen Sie؟",
+      "options": [
+        "ما اسمك؟ بصيغة du",
+        "أين تسكن؟",
+        "ما اسم حضرتك؟ بصيغة رسمية"
+      ],
+      "answerIndex": 2,
+      "explanation": "Sie الرسمية تعني حضرتك، وWie heißen Sie تسأل عن الاسم."
+    },
+    {
+      "id": "DL-A0-02-Q06",
+      "sourceTaskIds": [
+        "DL-A0-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "في لقاء رسمي مع مدرّس لأول مرة، ولم تتفقا على استعمال du، أي ضمير تختار لمخاطبته؟",
+      "options": [
+        "Sie",
+        "du",
+        "ihr"
+      ],
+      "answerIndex": 0,
+      "explanation": "نختار Sie في هذا السياق الرسمي، وتكتب بحرف كبير. المهنة وحدها ليست قاعدة تفرض الصيغة في كل موقف."
+    },
+    {
+      "id": "DL-A0-02-Q07",
+      "sourceTaskIds": [
+        "DL-A0-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "شخص قال Freut mich. أي رد يعني «وأنا سررت بلقائك أيضًا»؟",
+      "options": [
+        "Gute Nacht.",
+        "Freut mich auch.",
+        "Ich heiße Nora."
+      ],
+      "answerIndex": 1,
+      "explanation": "Freut mich auch تعني تشرفت بك أيضًا."
+    },
+    {
+      "id": "DL-A0-02-Q08",
+      "sourceTaskIds": [
+        "DL-A0-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي رد يجيب عن Wie geht es Ihnen? ويعيد السؤال بالصيغة الرسمية نفسها؟",
+      "options": [
+        "Ich heiße Lina.",
+        "Auf Wiedersehen.",
+        "Gut, danke. Und Ihnen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Gut, danke تجيب عن الحال، وUnd Ihnen? تعيد السؤال بصيغة Sie الرسمية؛ تكتب Ihnen بحرف كبير."
+    },
+    {
+      "id": "DL-A0-02-Q09",
+      "sourceTaskIds": [
+        "DL-A0-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "Tschüss! تُستعمل غالبًا:",
+      "options": [
+        "مع صديق في وداع غير رسمي",
+        "في تحية رسمية صباحًا",
+        "قبل النوم فقط"
+      ],
+      "answerIndex": 0,
+      "explanation": "Tschüss وداع شائع في المواقف الودّية وغير الرسمية، كما في نموذج هذا الدرس؛ ليست تحية صباحية أو عبارة خاصة بالنوم."
+    },
+    {
+      "id": "DL-A0-02-Q10",
+      "sourceTaskIds": [
+        "DL-A0-02-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل الرد: Freut mich! — Freut mich ___.",
+      "options": [
+        "Sie",
+        "auch",
+        "heiße"
+      ],
+      "answerIndex": 1,
+      "explanation": "الرد الطبيعي هو Freut mich auch."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-02-P01",
+      "sourceTaskIds": [
+        "DL-A0-02-T07"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب نسختين من تعارف قصير بأسماء تختارها: مع شخص متفق معه على du، وفي لقاء رسمي بصيغة Sie. اجعل كل نسخة أربع مداخلات A/B/A/B: تحية A واسمه وسؤاله، ثم جواب B باسمه، ثم وداع A ورد B. بعد الكتابة أدِّ الدورين لنفسك بصوت مرتفع؛ يمكن مشاركة شخص آخر لكن لا يلزم شريك أو تسجيل.",
+      "criteria": {
+        "taskCompletion": "يكتب نسختين بأربع مداخلات لكل منهما، تتضمنان التحية والاسم وسؤال الاسم وجوابه والوداع، ثم يؤدي الدورين لنفسه.",
+        "meaningClarity": "يتضح من كل نسخة من يسأل ومن يجيب، ويتضمن جواب B اسمًا، ويأتي الوداع بعد التعارف؛ لا يحتاج تحققًا من شريك.",
+        "targetSkill": "يحافظ على Wie heißt du? في النسخة الودّية وWie heißen Sie? في الرسمية، وعلى heiße مع Ich أو نموذج Ich bin مع الاسم كما في الدرس، ووداع مناسب لكل نسخة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-02-P02",
+      "sourceTaskIds": [
+        "DL-A0-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-A0-02-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب ثلاث عبارات في ثلاثة أسطر مثل تمرين 8: Hallo! ثم Ich heiße … مع اسم تختاره، ثم Tschüss! هذه مهمة كتابة للتعريف بنفسك في موقف ودّي؛ لا يُطلب كلام أو تسجيل.",
+      "criteria": {
+        "taskCompletion": "يكتب التحية وعبارة الاسم والوداع في ثلاثة أسطر؛ لا تُشترط ثلاث جمل فعلية.",
+        "meaningClarity": "يتضح الاسم المختار، وتكون التحية والوداع منفصلتين وفي موضعيهما.",
+        "targetSkill": "يكتب Ich heiße مع الاسم، ويحافظ على Hallo! وTschüss! في هذا النموذج، ويضع علامة مناسبة في نهاية كل عبارة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 20,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

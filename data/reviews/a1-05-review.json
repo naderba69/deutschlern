@@ -1,0 +1,1206 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-05-food-drink",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-05-v2",
+  "unitCount": 124,
+  "exerciseSubItemCount": 37,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "G",
+      "title": "Goethe — Deutsch Online A1",
+      "url": "https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf",
+      "scope": "الجزء1 في هذه الدفعة: Kapitel4/5 الطلب وAkkusativ وتصريف essen/mögen وصيغ möchte، والمقادير والأسعار. ليس كاملPDF؛ لا اعتماد لأخطاء الاستخراج du fahrst أوWann fährt du أوoft=70% كتعريف معجمي."
+    },
+    {
+      "id": "M",
+      "title": "Duden — mögen",
+      "url": "https://www.duden.de/rechtschreibung/moegen",
+      "scope": "كامل: التفضيل والرغبة من معاني mögen، ومثال magst du einen Kaffee، وmöchte رغبة قد تتعلق بعيد الميلاد؛ ليس فرق mag/الآن حدًا مطلقًا."
+    },
+    {
+      "id": "K",
+      "title": "Duden — Käse",
+      "url": "https://www.duden.de/rechtschreibung/Kaese",
+      "scope": "كامل: der Käse وجمع die Käse. يثبت أن خيار الجمع ليس خطأ في نفسه؛ المطلوب في السؤال المفرد المرفوع."
+    },
+    {
+      "id": "V",
+      "title": "Duden — Gemüse",
+      "url": "https://www.duden.de/rechtschreibung/Gemuese",
+      "scope": "كامل: das Gemüse وجمع die Gemüse؛ الاستخدام الجامع في الدرس لا يلغي وجود الجمع."
+    },
+    {
+      "id": "O",
+      "title": "Duden — Obst",
+      "url": "https://www.duden.de/rechtschreibung/Obst",
+      "scope": "كامل: das Obst، ohne Plural؛ اسم جامع مفرد نحويًا، لا جمع صرفي للأسماء الأخرى."
+    },
+    {
+      "id": "R",
+      "title": "Duden — gern",
+      "url": "https://www.duden.de/rechtschreibung/gern",
+      "scope": "كامل: gern/lieber/am liebsten، تفضيل الفعل أو الاستعداد له بحسب السياق. تفضيل الأرز لا يستلزم نفي حب الحساء؛ الاستنتاج المنطقي مراجعة مباشرة للمساعد."
+    },
+    {
+      "id": "J",
+      "title": "Duden — Joghurt",
+      "url": "https://www.duden.de/rechtschreibung/Joghurt",
+      "scope": "كامل: der أوdas خصوصًا نمساوي/سويسري؛ die لهجي شرق نمساوي. لم نحصر الاسم في جنس واحد أو نصف البدائل الإقليمية بالخطأ."
+    },
+    {
+      "id": "MI",
+      "title": "Duden — Milch",
+      "url": "https://www.duden.de/rechtschreibung/Milch",
+      "scope": "كامل: die Milch؛ جمع متخصص Milche/Milchen. استعمال المادة اليومي ليس إنكارًا مطلقًا للجمع."
+    },
+    {
+      "id": "C",
+      "title": "Duden — Kaffee",
+      "url": "https://www.duden.de/rechtschreibung/Kaffee",
+      "scope": "كامل: der Kaffee وجمع Kaffees، ومثال zwei Kaffee بمعنى Tassen Kaffee. لا نخلط Café المكان وKaffee الشراب."
+    },
+    {
+      "id": "F",
+      "title": "Duden — Frühstück",
+      "url": "https://www.duden.de/rechtschreibung/Fruehstueck",
+      "scope": "كامل: das Frühstück/Frühstücke ومثال zum Frühstück ein Ei essen. لا نوع طعام ثابت أو نموذج تغذية ملزم."
+    },
+    {
+      "id": "W",
+      "title": "Duden — Wasser",
+      "url": "https://www.duden.de/rechtschreibung/Wasser",
+      "scope": "الجزء0: das Wasser وجموع Wässer/Wasser بحسب المعنى، وWasser trinken. لم تُقرأ بقية الصفحة في CR11."
+    },
+    {
+      "id": "T",
+      "title": "Duden — Tee (Getränk)",
+      "url": "https://www.duden.de/rechtschreibung/Tee_Getraenk",
+      "scope": "كامل: der Tee وTees للأنواع، وzwei Tee لحصتين. الرابط العام Tee أعاد404؛ استعملنا رابط الشراب الذي ورد في مدخل Kaffee، لا مدخل أداة الرياضة."
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Tee",
+      "reason": "404، ليس مرجعًا؛ استُعمل مدخلTee_Getraenk الصحيح."
+    }
+  ],
+  "limitations": [
+    "124 وحدة و37 بندًا أو مطلبًا متداخلًا، لا124مهارة مستقلة. T04 يضم أربعة فراغات وأربعة أدوار تطبيق، وT08 ست جمل مطلوبة.",
+    "المراجع12 تدعم نطاقاتها المذكورة، ولا تعني جلب مدخل مستقل لكل كلمة أو ترجمة عربية. بعض الاستنتاجات التعليمية واللغوية مراجعة مباشرة للمساعد.",
+    "القراءة والاستماع فقط مسجلان؛ حوار المقهى ذو8أدوار ونموذج الخدمة ذو4أدوار مكتوبان بلا تسجيل. لم يُجرَ استماع أو اعتماد صوتي جديد.",
+    "المربعات وحد الطول ليسا مصحح لغة أو نطق، ولا شهادة CEFR أو استماع مستقل. لا اشتراط لمراجع بشري لمواصلة العمل."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-05-food-drink.md": "14aba3e3b34661640cf0996e6b7b7890a6621808a994023bc36a40489069f2ff",
+    "content/A1/lesson-05-food-drink.assessment.json": "f0631d5e86a7b414655fa2e591c6c3cc8f5a4121d1cd5ff415aeef84414d9657"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-05-AUD-READ-01": "4f979a367cd6530a627b3066c239bdacd959eacac858d29abdb2ac107692e617",
+    "DL-A1-05-AUD-LST-01": "3de75d516176ec9516f4a7facebf0e27feb87207e76e43461a5bde1154677d38"
+  },
+  "units": [
+    {
+      "id": "scope",
+      "text": "# A1.5 — الطعام والشراب\n\n**المدة:** نحو30 دقيقة (تقدير مرن؛ يمكن تقسيم التدريب على جلستين) · **المهارات:** مفردات، قراءة، محادثة وكتابة، واستماع اختياري\n\n**هدف التواصل:** أستطيع أن أسمّي أطعمة شائعة، أتحدث عن تفضيلاتي، وأطلب وجبة بسيطة.",
+      "finding": "هدف الطعام والتفضيل والطلب، مع وقت مرن وخيار جلستين. لا وعد تغذية صحية أو إثبات CEFR أو اعتماد سمعي. الحوار الأصلي مكتوب لا مسجل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| das Brot | die Brote | الخبز |",
+      "finding": "das Brot/Brote؛ الخبز مادة أو رغيف بحسب السياق؛ لم نفترض أن كل Brot شريحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Ei | die Eier | البيضة |",
+      "finding": "das Ei/Eier؛ بيضة مفردة والجمع غير المنتظم محفوظ.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Käse | die Käse؛ للمادة غالبًا مفرد | الجبن |",
+      "finding": "der Käse؛ صُرح بالجمع die Käse بدل شرطة قد توهم عدم وجوده.",
+      "sourceIds": [
+        "K"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Milch | في الاستعمال اليومي غالبًا مفرد | الحليب |",
+      "finding": "die Milch؛ في اليومي مادة غالبًا، مع وجود جمع متخصص.",
+      "sourceIds": [
+        "MI"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Apfel | die Äpfel | التفاحة |",
+      "finding": "der Apfel/Äpfel؛ حفظ ä؛ einen Apfel مفعول في القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Tomate | die Tomaten | الطماطم |",
+      "finding": "die Tomate/Tomaten؛ الطماطم، و eine Tomate مفردة في القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| das Obst | دون جمع؛ اسم جامع للفاكهة | الفاكهة |",
+      "finding": "das Obst اسم جامع دون جمع بحسب المدخل، مفرد نحويًا في الاستخدام هنا.",
+      "sourceIds": [
+        "O"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| das Gemüse | die Gemüse؛ نستعمله هنا اسمًا جامعًا | الخضار |",
+      "finding": "das Gemüse اسم جامع هنا مع وجود جمع die Gemüse؛ صُححت خانة الجمع.",
+      "sourceIds": [
+        "V"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| das Wasser | للمشروب غالبًا مفرد؛ له جموع في استعمالات أخرى | الماء |",
+      "finding": "das Wasser؛ لم نعمم غياب الجمع. معنى الشراب هو المقصود لا جميع معاني الكلمة.",
+      "sourceIds": [
+        "W"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| der Tee | die Tees للأنواع | الشاي |",
+      "finding": "der Tee؛ Tees للأنواع، ولا تُفرض s عند طلب حصتين.",
+      "sourceIds": [
+        "T"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| der Kaffee | die Kaffees | القهوة |",
+      "finding": "der Kaffee/Kaffees؛ n في einen Kaffee علامة المفعول لا جزء من الاسم.",
+      "sourceIds": [
+        "C"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| die Suppe | die Suppen | الحساء |",
+      "finding": "die Suppe/Suppen؛ رأس Gemüsesuppe يحدد المؤنث.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| das Frühstück | die Frühstücke | الفطور |",
+      "finding": "das Frühstück/Frühstücke؛ وجبة الفطور لا وصف مأكول بعينه.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| essen | — فعل | يأكل |",
+      "finding": "essen فعل؛ شرطة الجمع تعني أن خانة جمع الاسم لا تنطبق عليه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| trinken | — فعل | يشرب |",
+      "finding": "trinken فعل؛ ليس اسمًا بلا جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "mass-count",
+      "text": "Brot / ein Brot; Käse / die Käse; zwei Kaffee / zwei Tee",
+      "finding": "فُصلت المادة عن الحصة أو النوع، دون تدريس كل تفاصيل أسماء المادة. لا نجعل معنى الجمع العربي دليلًا على الجمع الألماني.",
+      "sourceIds": [
+        "K",
+        "V",
+        "O",
+        "MI",
+        "W",
+        "T",
+        "C"
+      ]
+    },
+    {
+      "id": "essen-01",
+      "text": "ich | esse",
+      "finding": "ich esse، لا isst.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "essen-02",
+      "text": "du | isst",
+      "finding": "du isst؛ تغيير e إلى i مع ss.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "essen-03",
+      "text": "er/sie/es | isst",
+      "finding": "er/sie/es isst؛ أُضيف es الغائب من الصف القديم.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "essen-04",
+      "text": "wir | essen",
+      "finding": "wir essen، صيغة الجمع.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "essen-05",
+      "text": "ihr | esst",
+      "finding": "ihr esst؛ ليست isst.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "essen-06",
+      "text": "sie/Sie | essen",
+      "finding": "sie/Sie essen؛ الجمع أو الاحترام، لا sie المفردة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "trinken-01",
+      "text": "ich | trinke",
+      "finding": "ich trinke؛ e للمتكلم.",
+      "sourceIds": []
+    },
+    {
+      "id": "trinken-02",
+      "text": "du | trinkst",
+      "finding": "du trinkst؛ st للمخاطب.",
+      "sourceIds": []
+    },
+    {
+      "id": "trinken-03",
+      "text": "er/sie/es | trinkt",
+      "finding": "er/sie/es trinkt؛ t للمفرد الثالث.",
+      "sourceIds": []
+    },
+    {
+      "id": "trinken-04",
+      "text": "wir | trinken",
+      "finding": "wir trinken؛ en للجمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "trinken-05",
+      "text": "ihr | trinkt",
+      "finding": "ihr trinkt؛ t للمخاطب الجمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "trinken-06",
+      "text": "sie/Sie | trinken",
+      "finding": "sie/Sie trinken؛ en للجمع أو الاحترام.",
+      "sourceIds": []
+    },
+    {
+      "id": "gern-rule",
+      "text": "essen/trinken + gern; lieber",
+      "finding": "قُيد الشرح بترجمة الأمثلة، فلا يمنع تركيب mögen مع gern في كل سياق. lieber مقارنة تفضيل لا إنكار حب البديل.",
+      "sourceIds": [
+        "R"
+      ]
+    },
+    {
+      "id": "phrase-01",
+      "text": "Was isst du gern? — ماذا تحب أن تأكل؟",
+      "finding": "Was isst du gern? سؤال تفضيل طعام، isst مع du.",
+      "sourceIds": [
+        "G",
+        "R"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "text": "Ich esse gern Obst. — أحب أكل الفاكهة.",
+      "finding": "Ich esse gern Obst؛ فاكهة بغير أداة في المعنى العام.",
+      "sourceIds": [
+        "O",
+        "R"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "text": "Was trinkst du gern? — ماذا تحب أن تشرب؟",
+      "finding": "Was trinkst du gern? سؤال تفضيل شراب، trinkst مع du.",
+      "sourceIds": [
+        "R"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "text": "Ich trinke gern Tee. — أحب شرب الشاي.",
+      "finding": "Ich trinke gern Tee؛ تفضيل عام للشراب لا طلب حصة محددة.",
+      "sourceIds": [
+        "T",
+        "R"
+      ]
+    },
+    {
+      "id": "preference-01",
+      "text": "**Ich mag Kaffee.** — أحب القهوة عمومًا.",
+      "finding": "Ich mag Kaffee؛ نمط حب عام في المثال لا جميع استعمالات mögen.",
+      "sourceIds": [
+        "M"
+      ]
+    },
+    {
+      "id": "preference-02",
+      "text": "**Ich möchte einen Kaffee.** — أودّ قهوة، كطلب مهذب في هذا الموقف.",
+      "finding": "Ich möchte einen Kaffee؛ أودّ حصة في موقف الطلب، وليس زمن ماضٍ.",
+      "sourceIds": [
+        "M",
+        "G",
+        "C"
+      ]
+    },
+    {
+      "id": "mag-moechte-rule",
+      "text": "ich mag / du magst / er,sie,es mag; ich möchte / Sie möchten; morgen",
+      "finding": "الصيغ صحيحة، و möchte قد تتعلق بالغد. عُدل Q09 ليقيد التمييز بأمثلة الدرس ولا يحصر الرغبة في الآن.",
+      "sourceIds": [
+        "M",
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "text": "**lieber / sehr gern** — يفضّل على بديل / بكل سرور في رد الخدمة هنا؛ لا تعني lieber رفض البديل حتمًا.",
+      "finding": "lieber مقارنة، و Sehr gern رد استعداد في مشهد الخدمة.",
+      "sourceIds": [
+        "R"
+      ]
+    },
+    {
+      "id": "gloss-02",
+      "text": "**der Reis** — الأرز؛ نستعمله هنا دون أداة حين نقصد الطعام عمومًا.",
+      "finding": "Reis الأرز؛ bare Reis في المثال، لا تعريفه كعنصر نباتي بالتفصيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "text": "**der Joghurt** — الزبادي/الياغورت؛ هذا نموذج شائع، وdas Joghurt مستعمل خصوصًا في النمسا وسويسرا، وللمؤنث استعمال لهجي أيضًا.",
+      "finding": "der Joghurt نموذج شائع؛ روعيت البدائل الإقليمية بدلاً من تخطئتها.",
+      "sourceIds": [
+        "J"
+      ]
+    },
+    {
+      "id": "gloss-04",
+      "text": "**die Gemüsesuppe** — حساء الخضار؛ جنس الاسم المركب يتبع Suppe المؤنثة، فنقول eine Gemüsesuppe.",
+      "finding": "Gemüsesuppe مؤنث مثل رأسه Suppe، لا مثل Gemüse المحايد.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-05",
+      "text": "**kochen / frühstücken** — يطبخ / يتناول الفطور؛ **sie kochen** للجمع و**Sami frühstückt** للمفرد.",
+      "finding": "kochen طبخ، frühstücken تناول الفطور؛ جمع sie ومفرد Sami واضحان.",
+      "sourceIds": [
+        "F"
+      ]
+    },
+    {
+      "id": "gloss-06",
+      "text": "**beide / die beiden / sie** — كلاهما / الاثنان / هما في وصف Sami وأخته.",
+      "finding": "beide و die beiden و sie تشير إلى Sami وأخته في السياق؛ لا أسماء أشخاص إضافية.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-07",
+      "text": "**seine Schwester / mit seiner Schwester** — أخته / مع أخته؛ seiner بعد mit هنا صيغة Dativ، لا تطبيق حرفي لجدول الرفع.",
+      "finding": "mit seiner Schwester عبارة Dativ؛ sein- يعود على Sami، والنهاية تتأثر بالاسم والحالة.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-08",
+      "text": "**zusammen** — معًا، أو بالمجموع في Was kostet das zusammen?؛ السعر5يورو خيالي لهذا الحوار، لا سعر سوق حالي.",
+      "finding": "zusammen في الأكل=معًا، وفي السؤال=المجموع؛5 يورو مبلغ خيالي بلا تقسيم الأسعار.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-09",
+      "text": "**Zum Frühstück / Am Mittag / Am Abend** — في وجبة الفطور / وقت الظهر / مساءً؛ zum = zu dem. بعد عبارة الوقت يأتي الفعل ثانيًا: Am Mittag esse ich Reis.",
+      "finding": "zum=zu dem؛ Am Mittag كتلة أولى و esse فعل ثانٍ، كما تدرب في A1.4.",
+      "sourceIds": [
+        "F",
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-10",
+      "text": "**manchmal / morgen** — أحيانًا / غدًا؛ لا تعني manchmal كل يوم.",
+      "finding": "manchmal لا تعني دائمًا؛ morgen يبين إمكان رغبة لوقت لاحق.",
+      "sourceIds": [
+        "M"
+      ]
+    },
+    {
+      "id": "gloss-11",
+      "text": "**die Servicekraft / der Gast** — موظف/موظفة الخدمة / الزبون؛ نستعمل Sie رسميًا في موقف الخدمة وdu بين الأصدقاء في تدريب الملء.",
+      "finding": "تمييز أدوار الخدمة و Sie الرسمي عن du بين الصديقين، لا تحويل عشوائي داخل المشهد الواحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "text": "**Bitte schön / Danke schön** — تفضل في موقف تسليم المبلغ هنا / شكرًا جزيلًا؛ معنى bitte يتغير حسب السياق.",
+      "finding": "Bitte schön في سياق الدفع تعرض تقديم المقابل تمثيليًا؛ Danke schön للشكر، ولا نقيس نبرة غير مسموعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-13",
+      "text": "**allein** — وحده؛ وجود الأخت في القراءة ينفي أنه وحده، لكنه لا ينفي وجود أفراد آخرين لم يذكرهم النص.",
+      "finding": "allein ينفي وجود المرافق؛ اختيار عبارة تناقض النص مباشرة بدل نفي أخ غير مذكور.",
+      "sourceIds": []
+    },
+    {
+      "id": "case-rule",
+      "text": "ein Ei / einen Apfel / einen Tee / eine Suppe",
+      "finding": "أمثلة Akkusativ بحسب الجنس؛ أسماء المادة قد تأتي بلا أداة. لا حفظ einen مع كل طعام أو تعميم الحالة على كل تركيب.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Servicekraft: Guten Morgen! Was möchten Sie?",
+      "finding": "تحية الموظف ثم سؤال الطلب بصيغة Sie؛ لا تسجيل لهذا الحوار في الأصول الحالية.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Gast: Ich möchte ein Ei und Brot, bitte.",
+      "finding": "طلب بيضة وخبز؛ ein Ei محايد، Brot غير معدود في هذا الاستعمال.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Servicekraft: Möchten Sie auch Kaffee?",
+      "finding": "عرض قهوة إضافية، لا دليل على قبولها.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Gast: Nein, danke. Ich trinke lieber Tee.",
+      "finding": "رفض القهوة وتفضيل الشاي؛ يُفهم اختيار الشاي من سياق الخدمة ورد الموظف التالي.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Servicekraft: Sehr gern.",
+      "finding": "Sehr gern قبول مساعد للخدمة، لا جملة تفضيل عام للطعام.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Gast: Was kostet das zusammen?",
+      "finding": "السؤال عن المجموع؛ لا حساب أسعار مفردات لم تُذكر.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Servicekraft: Fünf Euro.",
+      "finding": "Fünf Euro؛ خُصص الوسم Servicekraft بدل Service مع حفظ الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-08",
+      "text": "Gast: Bitte schön. Danke!",
+      "finding": "Bitte schön ثم Danke؛ مشهد مختصر ينتهي بالشكر، لا تسجيل أو عملية دفع حقيقية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Am Samstag frühstückt Sami mit seiner Schwester.",
+      "finding": "Sami يتناول الفطور مع أخته يوم السبت؛ ينفي أنه وحده لا وجود آخرين محتمل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Sami isst Brot mit Käse und eine Tomate.",
+      "finding": "خبز مع جبن وحبة طماطم؛ لا فاكهة مذكورة هنا لسامي.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Seine Schwester isst ein Ei und einen Apfel.",
+      "finding": "الأخت تأكل بيضة وتفاحة؛ einen Apfel بسبب Akkusativ للمذكر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Beide trinken Tee.",
+      "finding": "كلاهما يشرب الشاي؛ لا قصره على Sami.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Am Nachmittag kochen sie eine Gemüsesuppe.",
+      "finding": "كلاهما يطبخ حساء خضار بعد الظهر؛ الطبخ مذكور لا ساعة دقيقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Sami mag die Suppe, aber seine Schwester mag lieber Reis.",
+      "finding": "Sami يحب الحساء وأخته تفضل الأرز؛ لا يلزم من ذلك أنها لا تحب الحساء كثيرًا.",
+      "sourceIds": [
+        "M",
+        "R"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Mit wem frühstückt Sami?",
+      "finding": "Mit seiner Schwester؛ نفس المرافق صراحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was isst Sami?",
+      "finding": "Brot mit Käse und eine Tomate؛ الطعام الكامل المذكور لا جواب ناقص بذكر الجبن فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was trinkt seine Schwester?",
+      "finding": "Tee؛ الضمير seine يعود على Sami والأخت واحدة من beide.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was kochen die beiden am Nachmittag?",
+      "finding": "Eine Gemüsesuppe؛ رأس الاسم المؤنث مع eine.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was mag die Schwester lieber?",
+      "finding": "أُعيد السؤال إلى تفضيل صريح: Sie mag lieber Reis. المفتاح القديم Nein لسؤال حب الحساء كثيرًا لم يكن مسندًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-limit",
+      "text": "التفضيل لا ينفي الحب، والمرافق لا ينفي وجود آخرين",
+      "finding": "أصلح سؤال الفهم 5 و T05.1 دون تغيير التسجيل. المواقف الثلاثة مستقلة؛ لا فرض جدول غذائي واحد للشخصيات.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Zum Frühstück esse ich Joghurt und Obst.",
+      "finding": "الفطور Joghurt و Obst؛ لا دمجها بوجبة Sami.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich trinke Wasser.",
+      "finding": "الماء مذكور؛ لم نعدّه الشراب الوحيد في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Am Mittag esse ich Reis und Gemüse.",
+      "finding": "الظهر Reis و Gemüse؛ لا حساء مفروض.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Am Abend trinke ich manchmal Tee.",
+      "finding": "مساءً الشاي أحيانًا؛ هذه العبارة تضبط سؤال الشراب الجديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Was isst die Person zum Frühstück?",
+      "finding": "Joghurt und Obst؛ المطلوب العنصران.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was trinkt die Person am Abend manchmal?",
+      "finding": "Tee؛ صار السؤال مقيدًا بالمساء وأحيانًا، بدل سؤال عام يحتمل Wasser و Tee.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was isst sie am Mittag?",
+      "finding": "Reis und Gemüse؛ العنصران من جملة الظهر.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-limit",
+      "text": "صوت متاح / نص ظاهر / سؤال شراب محدد",
+      "finding": "قراءة التفريغ ليست اجتياز استماع. الاستماع والتقييم لا يتطلبان تسجيل صوت المتعلم أو إخفاء الأصول. أصلان/مقطعان فقط بلا حوار مسجل.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-05-T01",
+      "text": "1. الماء: **das Wasser / der Apfel**\n2. الحليب: **die Milch / das Brot**\n3. الخبز: **das Brot / der Tee**\n4. اسم عام للفواكه: **das Obst / die Suppe**\n5. اسم عام للخضار: **das Gemüse / das Obst**\n6. الجبن، مع أداة الرفع في المفرد: **der Käse / die Käse**",
+      "finding": "حُولت قرائن العادات المحتملة إلى معانٍ مباشرة؛ لا افتراض أن تناول الخبز مع الجبن عادة وحيدة. أضيف Gemüse ومفرد Käse لدعم السؤالين.",
+      "sourceIds": [],
+      "items": [
+        "1. das Wasser للماء، لا der Apfel.",
+        "2. die Milch للحليب، لا das Brot.",
+        "3. das Brot للخبز، لا der Tee.",
+        "4. das Obst اسم الفاكهة، لا die Suppe.",
+        "5. das Gemüse للخضار، لا das Obst؛ جديد لدعم Q01.",
+        "6. der Käse في المفرد المرفوع؛ die Käse جمع صحيح لكنه ليس المطلوب."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T02",
+      "text": "1. Ich ______ gern Suppe.\n2. Du ______ gern Äpfel.\n3. Meine Mutter ______ Brot.\n4. Wir ______ am Samstag zusammen.",
+      "finding": "الأشكال الأربعة صحيحة حسب الفاعل، والجدول الآن ذو رؤوس ويشمل es.",
+      "sourceIds": [],
+      "items": [
+        "1. ich esse.",
+        "2. du isst.",
+        "3. Meine Mutter isst؛ مفرد ثالث.",
+        "4. wir essen؛ zusammen معًا."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T03",
+      "text": "1. أقول إنني أحب الشاي عادةً: **Ich mag Tee / Ich möchte Tee**.\n2. أطلب الشاي الآن في المقهى: **Ich mag einen Tee / Ich möchte einen Tee**.",
+      "finding": "قُيد الفرق بالموقف، لا حصر جميع معاني mögen و möchte في ثنائية جامدة.",
+      "sourceIds": [],
+      "items": [
+        "1. Ich mag Tee للتفضيل المعتاد في هذا المثال.",
+        "2. Ich möchte einen Tee الأنسب للطلب المهذب هنا؛ لا نخطئ mag في كل سياق رغبة."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T04",
+      "text": "**A:** Was ______ du gern?\n\n**B:** Ich ______ gern Gemüse.\n\n**A:** Und was ______ du?\n\n**B:** Ich ______ gern Wasser.\n\nاستخدم: *isst, esse, trinkst, trinke*.\n\n**تطبيق كتابي وشفهي مستقل بعد الملء:**\n\nاكتب موقفًا خياليًا من أربعة أدوار: موظف الخدمة يساعد الزبون على الاختيار فيسأل Was essen Sie gern?؛ يجيب الزبون بـIch mag؛ يسأل الموظف Was möchten Sie?؛ يطلب الزبون طعامًا ومشروبًا بـIch möchte … bitte. استعن بـeine Gemüsesuppe وeinen Tee من الدرس، وحافظ على خطاب Sie الرسمي. اقرأ الأدوار الأربعة بصوت مرتفع، ويمكن أداؤها وحدك؛ لا يلزم تسجيل صوتك.",
+      "finding": "أبقيت فراغات الصديقين الأربعة، وأضيف تطبيق خدمة مستقل بأربعة أدوار يدرب P02 و Q08. لم نخلط du و Sie في المشهد الواحد.",
+      "sourceIds": [],
+      "items": [
+        "1. isst في سؤال طعام مع du.",
+        "2. esse في جواب ich/Gemüse.",
+        "3. trinkst في سؤال الشراب.",
+        "4. trinke في جواب ich/Wasser.",
+        "5. التطبيق: موظف يسأل Was essen Sie gern?",
+        "6. الزبون يجيب بـ Ich mag.",
+        "7. الموظف يسأل Was möchten Sie?",
+        "8. الزبون يطلب طعامًا ومشروبًا؛ تُكتب وتُقرأ جميع أدوار التطبيق الأربعة."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T05",
+      "text": "حدّد صحيح/خطأ بحسب النص، وصحح الخطأ:\n\n1. Sami frühstückt allein.\n2. Seine Schwester isst ein Ei.\n3. Beide trinken Tee.\n4. Am Nachmittag kochen sie eine Suppe.",
+      "finding": "نفي allein مسند بوجود الأخت. نفي الأخ في الصيغة القديمة لم يكن لازمًا من ذكر الأخت وحدها.",
+      "sourceIds": [],
+      "items": [
+        "1. خطأ: ليس وحده، بل mit seiner Schwester.",
+        "2. صحيح: الأخت تأكل بيضة.",
+        "3. صحيح: beide trinken Tee.",
+        "4. صحيح: Gemüsesuppe نوع من Suppe."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T06",
+      "text": "استمع وحاول الإكمال دون النظر، ثم قارن بالنص. إن قرأت التفريغ فهذا فهم كتابي:\n\n1. Zum Frühstück isst die Person ______ und ______.\n2. Am Abend trinkt sie manchmal ______.\n3. Am Mittag isst sie ______ und Gemüse.",
+      "finding": "بند الشراب لم يعد يقبل الماء والشاي مع مفتاح وحيد؛ قيد المساء يحدد Tee.",
+      "sourceIds": [],
+      "items": [
+        "1. Joghurt — Obst.",
+        "2. Tee بعد قيد المساء وأحيانًا.",
+        "3. Reis؛ Gemüse موجودة في الإطار."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T07",
+      "text": "رتّب هذا المقتطف بحسب القيد: **الزبون يبدأ بالتحية المنفردة**، ثم يرد الموظف ويسأل عن الطلب، ثم يطلب الزبون ويشكر:\n\n- أ. **Gast:** Ich möchte einen Tee, bitte.\n- ب. **Servicekraft:** Guten Morgen! Was möchten Sie?\n- ج. **Gast:** Danke schön.\n- د. **Gast:** Guten Morgen!\n\nالمطلوب ترتيب أربع وحدات كلامية؛ الطلب والشكر قولان للزبون. هذا مقتطف لا يشمل تقديم الشراب أو رد الموظف بعد الطلب. خارج هذا القيد يمكن أن يبدأ الموظف بالتحية.",
+      "finding": "حدد المتحدث الأول والأدوار؛ المفتاح د،ب،أ،ج بحسب القيد، وليس الترتيب الوحيد الممكن خارج السياق.",
+      "sourceIds": [],
+      "items": [
+        "1. د: Gast يبدأ بالتحية المنفردة بحسب القيد.",
+        "2. ب: Servicekraft يرد ويسأل عن الطلب.",
+        "3. أ: Gast يطلب الشاي.",
+        "4. ج: Gast يشكر؛ ليس دور موظف بعد الطلب."
+      ]
+    },
+    {
+      "id": "DL-A1-05-T08",
+      "text": "اكتب ست جمل بالألمانية عن يوم غذائي حقيقي أو خيالي: ثلاث جمل للطعام تبدأ بـZum Frühstück وAm Mittag وAm Abend، وجملة تذكر ما تشربه، وجملة تفضيل بـIch mag، وجملة طلب بـIch möchte. سمِّ ثلاثة أطعمة مختلفة على الأقل ومشروبًا، ويمكن استعمال مفردات الدرس. هذه مهمة كتابة فقط وليست توصية غذائية؛ لا يلزم وصف عاداتك الحقيقية.",
+      "finding": "T08/P01 مطابقان: ست جمل موزعة على الفترات والشراب والتفضيل والطلب؛ لا قائمة أسماء فقط ولا مهمة كلام إضافية.",
+      "sourceIds": [],
+      "items": [
+        "1. جملة الطعام تبدأ Zum Frühstück.",
+        "2. جملة الطعام تبدأ Am Mittag.",
+        "3. جملة الطعام تبدأ Am Abend.",
+        "4. جملة تذكر الشراب.",
+        "5. جملة تفضيل تبدأ Ich mag.",
+        "6. جملة طلب تبدأ Ich möchte؛ مع ثلاث أطعمة مختلفة على الأقل ومشروب ضمن المجموع، كتابة فقط."
+      ]
+    },
+    {
+      "id": "fill-dialogue-01",
+      "text": "Was isst du gern?",
+      "finding": "سؤال تفضيل طعام بين صديقين؛du صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "fill-dialogue-02",
+      "text": "Ich esse gern Gemüse.",
+      "finding": "جواب ich بالفعل esse؛ Gemüse بلا أداة في المعنى الجامع.",
+      "sourceIds": []
+    },
+    {
+      "id": "fill-dialogue-03",
+      "text": "Und was trinkst du?",
+      "finding": "السؤال عن الشراب بصيغة du؛ يحمل السياق عادة الشرب، وليس gern مذكورة حرفيًا فيه.",
+      "sourceIds": []
+    },
+    {
+      "id": "fill-dialogue-04",
+      "text": "Ich trinke gern Wasser.",
+      "finding": "trinke مع ich و gern للتفضيل؛ الماء اسم مادة.",
+      "sourceIds": []
+    },
+    {
+      "id": "performance-dialogue-01",
+      "text": "Servicekraft: Was essen Sie gern?",
+      "finding": "الموظف يساعد على الاختيار ويسأل عن التفضيل، essen مع Sie.",
+      "sourceIds": []
+    },
+    {
+      "id": "performance-dialogue-02",
+      "text": "Gast: Ich mag Gemüsesuppe.",
+      "finding": "الزبون يستعمل mag للتفضيل، ولا يكتفي به بوصفه طلبًا مكتملًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "performance-dialogue-03",
+      "text": "Servicekraft: Was möchten Sie?",
+      "finding": "سؤال الطلب الفعلي بـ möchten Sie.",
+      "sourceIds": []
+    },
+    {
+      "id": "performance-dialogue-04",
+      "text": "Gast: Ich möchte eine Gemüsesuppe und einen Tee, bitte.",
+      "finding": "طلب الحساء والشاي مع eine/einen و bitte؛ النموذج المكتوب غير مسجل، صالح للقراءة الفردية.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-01",
+      "text": "Guten Morgen!",
+      "finding": "د: الزبون يبدأ بحسب القيد.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-02",
+      "text": "Guten Morgen! Was möchten Sie?",
+      "finding": "ب: الموظف يرد ويسأل.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-03",
+      "text": "Ich möchte einen Tee, bitte.",
+      "finding": "أ: الطلب للزبون مع Akkusativ.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-04",
+      "text": "Danke schön.",
+      "finding": "ج: شكر الزبون؛ هذا ترتيب وحدات لا أربعة أدوار متناوبة.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-01",
+      "text": "Zum Frühstück esse ich Brot.",
+      "finding": "جملة الفطور مع esse في الموضع الثاني.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-02",
+      "text": "Am Mittag esse ich Reis.",
+      "finding": "جملة الظهر مع Reis.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-03",
+      "text": "Am Abend esse ich Suppe.",
+      "finding": "جملة المساء مع Suppe؛ ثلاثة أطعمة مختلفة في الجمل الثلاث الأولى.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-04",
+      "text": "Ich trinke Wasser.",
+      "finding": "جملة الشراب مع Wasser.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-05",
+      "text": "Ich mag Obst.",
+      "finding": "جملة التفضيل mag Obst؛ طعام رابع مسموح، فالمطلوب ثلاثة على الأقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "day-model-06",
+      "text": "Ich möchte einen Tee, bitte.",
+      "finding": "جملة الطلب möchte Tee؛ لا يلزم الكلام في P01، ولا يُعد المثال نظامًا غذائيًا صحيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-05-Q01",
+      "text": "ما معنى das Gemüse؟",
+      "finding": "الخضار بين الفاكهة والخبز؛ أضيفت المفردة صراحةً في T01.5.",
+      "sourceIds": [],
+      "options": [
+        "الفاكهة",
+        "الخضار",
+        "الخبز"
+      ],
+      "answer": "الخضار",
+      "explanation": "das Gemüse تعني «الخضار».",
+      "sourceTaskIds": [
+        "DL-A1-05-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q02",
+      "text": "أكمل: Ich ___ gern Obst.",
+      "finding": "ich esse؛ isst للمخاطب المفرد أو الغائب المفرد، و essen للجمع أو المصدر.",
+      "sourceIds": [],
+      "options": [
+        "isst",
+        "essen",
+        "esse"
+      ],
+      "answer": "esse",
+      "explanation": "تصريف essen مع ich هو esse.",
+      "sourceTaskIds": [
+        "DL-A1-05-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q03",
+      "text": "للتعبير عن تفضيل عام: ___ Tee.",
+      "finding": "Ich mag للتفضيل العام هنا؛ möchte رغبة، و Ich bin Tee لا يؤدي المقصود.",
+      "sourceIds": [],
+      "options": [
+        "Ich mag",
+        "Ich möchte",
+        "Ich bin"
+      ],
+      "answer": "Ich mag",
+      "explanation": "mag تعبّر عن تفضيل عام: Ich mag Tee.",
+      "sourceTaskIds": [
+        "DL-A1-05-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q04",
+      "text": "للطلب الآن في مقهى، أي جملة أنسب؟",
+      "finding": "möchte الأنسب للطلب؛ mag قد يحمل رغبة في سياق آخر، وليس كل استعمال له خطأ.",
+      "sourceIds": [],
+      "options": [
+        "Ich mag einen Tee.",
+        "Ich möchte einen Tee.",
+        "Ich bin einen Tee."
+      ],
+      "answer": "Ich möchte einen Tee.",
+      "explanation": "Ich möchte einen Tee أنسب للطلب المهذب في هذا الموقف. mögen له استعمالات أخرى للرغبة أيضًا؛ هذا فرق تدريبي بحسب السياق، لا حظر مطلق لعبارة Ich mag einen Tee.",
+      "sourceTaskIds": [
+        "DL-A1-05-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q05",
+      "text": "أكمل: Was ___ du gern?",
+      "finding": "du isst؛ esse للمتكلم و essen لا توافق du.",
+      "sourceIds": [],
+      "options": [
+        "isst",
+        "esse",
+        "essen"
+      ],
+      "answer": "isst",
+      "explanation": "مع du نقول isst: Was isst du gern?",
+      "sourceTaskIds": [
+        "DL-A1-05-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q06",
+      "text": "أكمل بالاسم الجامع للفاكهة: Ich esse gern ___.",
+      "finding": "Obst اسم الفاكهة. نُقل Q06 إلى T01.4، واستبدلت Milchflasche غير المدربة بـ Milch المدربة، مع تحديد المعنى بدل الإكمال الحر.",
+      "sourceIds": [],
+      "options": [
+        "Wasser",
+        "Obst",
+        "Milch"
+      ],
+      "answer": "Obst",
+      "explanation": "Obst اسم جامع للفاكهة. Wasser ماء وMilch حليب؛ المشتتات من مفردات الدرس.",
+      "sourceTaskIds": [
+        "DL-A1-05-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q07",
+      "text": "ما الاسم مع أداة التعريف في المفرد المرفوع (Nominativ) لكلمة «جبن»؟",
+      "finding": "der Käse للمفرد المرفوع. die Käse جمع صحيح لكنه غير مطلوب هنا؛ و das Käse ليست أداة الاسم في المدخل.",
+      "sourceIds": [],
+      "options": [
+        "der Käse",
+        "die Käse",
+        "das Käse"
+      ],
+      "answer": "der Käse",
+      "explanation": "المفرد المرفوع der Käse. توجد صيغة جمع die Käse، لكنها ليست المطلوب هنا.",
+      "sourceTaskIds": [
+        "DL-A1-05-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q08",
+      "text": "ما الطلب الصحيح لـ«حساء خضار»؟",
+      "finding": "eine Gemüsesuppe؛ جنس رأس الاسم Suppe هو المؤنث. أضيف نمط الطلب إلى تطبيق T04، بدل الاكتفاء بظهور الكلمة في القراءة.",
+      "sourceIds": [],
+      "options": [
+        "Ich möchte eine Gemüsesuppe.",
+        "Ich möchte einen Gemüsesuppe.",
+        "Ich möchte ein Gemüsesuppe."
+      ],
+      "answer": "Ich möchte eine Gemüsesuppe.",
+      "explanation": "Suppe مؤنث، لذا نستخدم eine.",
+      "sourceTaskIds": [
+        "DL-A1-05-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q09",
+      "text": "في أمثلة هذا الدرس، ما الفرق المقصود بين mag وmöchte؟",
+      "finding": "قُيدت الإجابة بأمثلة الدرس وأزيل حصر الرغبة في الآن. الآخران يخلطان بمعنى essen أو يزعمان أنها للماضي فقط.",
+      "sourceIds": [],
+      "options": [
+        "mag للتفضيل العام، وmöchte لطلب مهذب أو رغبة.",
+        "كلاهما يعني «أكل».",
+        "möchte للماضي فقط."
+      ],
+      "answer": "mag للتفضيل العام، وmöchte لطلب مهذب أو رغبة.",
+      "explanation": "نستعمل mag هنا للتفضيل وmöchte للطلب المهذب. möchte ليست للماضي فقط ولا محصورة فيما سيحدث الآن؛ يمكن أن تتعلق الرغبة بوقت لاحق.",
+      "sourceTaskIds": [
+        "DL-A1-05-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-05-Q10",
+      "text": "ما الرد الطبيعي على Was trinkst du؟",
+      "finding": "Ich trinke Wasser جواب مباشر؛ الأكل واسم الشخص لا يجيبان عن الشراب.",
+      "sourceIds": [],
+      "options": [
+        "Ich trinke Wasser.",
+        "Ich esse einen Apfel.",
+        "Ich heiße Wasser."
+      ],
+      "answer": "Ich trinke Wasser.",
+      "explanation": "السؤال عن الشراب، والرد المناسب: Ich trinke Wasser.",
+      "sourceTaskIds": [
+        "DL-A1-05-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-05-P01",
+      "text": "اكتب ست جمل بالألمانية عن يوم غذائي حقيقي أو خيالي: ثلاث جمل للطعام تبدأ بـZum Frühstück وAm Mittag وAm Abend، وجملة تذكر ما تشربه، وجملة تفضيل بـIch mag، وجملة طلب بـIch möchte. سمِّ ثلاثة أطعمة مختلفة على الأقل ومشروبًا، ويمكن استعمال مفردات الدرس. هذه مهمة كتابة فقط وليست توصية غذائية؛ لا يلزم وصف عاداتك الحقيقية.",
+      "finding": "ست جمل مكتوبة،min100 و speakAloud=false؛ الأطعمة الثلاثة على الأقل والمشروب والوظائف الست معايير ذاتية، لا عدّ لغوي آلي.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت ست جمل تغطي فترات الطعام الثلاث والشراب والتفضيل والطلب، وذكرت ثلاثة أطعمة مختلفة على الأقل ومشروبًا.",
+        "meaningClarity": "الأطعمة والمشروب مفهومة، ويتضح الفرق بين وصف اليوم والتفضيل والطلب.",
+        "targetSkill": "أصرف essen/trinken مع ich، وأضع الفعل ثانيًا بعد عبارة الوقت، وأستعمل mag وmöchte حسب المقصود."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-05-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-05-P02",
+      "text": "اكتب موقفًا خياليًا من أربعة أدوار: موظف الخدمة يساعد الزبون على الاختيار فيسأل Was essen Sie gern?؛ يجيب الزبون بـIch mag؛ يسأل الموظف Was möchten Sie?؛ يطلب الزبون طعامًا ومشروبًا بـIch möchte … bitte. استعن بـeine Gemüsesuppe وeinen Tee من الدرس، وحافظ على خطاب Sie الرسمي. اقرأ الأدوار الأربعة بصوت مرتفع، ويمكن أداؤها وحدك؛ لا يلزم تسجيل صوتك.",
+      "finding": "أربعة أدوار رسمية، حد 90 حرفًا و speakAloud=true. نُقلت من T08 إلى تطبيق T04 الفعلي. حد 110 الأولي لم يقبل النموذج نفسه، فصُحح إلى 90 ثم نجح الاختبار.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت أربعة أدوار: سؤال تفضيل وجوابه، وسؤال طلب وجواب يتضمن طعامًا ومشروبًا، وقرأت الجميع بصوت مرتفع.",
+        "meaningClarity": "أميز الموظف عن الزبون، ويجيب كل رد عن سؤاله، فلا يكفي ذكر تفضيل من دون طلب فعلي.",
+        "targetSkill": "أستعمل Sie في السؤالين وich في الجوابين، وmag للتفضيل وmöchte للطلب، وصيغًا مناسبة مثل eine Gemüsesuppe وeinen Tee."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-05-T04"
+      ]
+    },
+    {
+      "id": "self-check-limit",
+      "text": "إقرار ذاتي / إصدار جديد / محفوظات قديمة",
+      "finding": "نجاح طول النص والمربعات ليس إثبات لغة أو نطق. الإصدار v2 يرفض إتقان v1 للمتابعة دون حذف السجل بمجرد التحقق؛ أول حفظ جديد قد يستبدل مسودات الإصدار القديم.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-01",
+      "text": "**Was isst du gern?** → ماذا تحب أن تأكل؟",
+      "finding": "السؤال عن تفضيل الأكل؛ isst مع du.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Ich esse gern Obst.** → أحب أكل الفاكهة.",
+      "finding": "gern يصف حب أكل الفاكهة في المثال.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich mag Tee.** → أحب الشاي.",
+      "finding": "mag للتفضيل العام في هذه البطاقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Ich möchte einen Tee.** → أودّ شايًا؛ ويمكن إضافة bitte لمعنى «من فضلك».",
+      "finding": "صُححت العربية إلى أودّ شايًا؛ bitte غير موجودة بالألمانية، فذكرت كإضافة اختيارية لا ترجمة حرفية.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-05-AUD-READ-01",
+      "text": "قراءة: وجبات Sami وأخته",
+      "finding": "مقطع واحد بصوت voice-02؛ الكلمات والصوت والرابط وحالة ready/offer محفوظة. مراجعة تفريغ وبصمات، لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-05-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Am Samstag frühstückt Sami mit seiner Schwester. Sami isst Brot mit Käse und eine Tomate. Seine Schwester isst ein Ei und einen Apfel. Beide trinken Tee. Am Nachmittag kochen sie eine Gemüsesuppe. Sami mag die Suppe, aber seine Schwester mag lieber Reis.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-05-AUD-LST-01",
+      "text": "استماع: ماذا آكل خلال اليوم؟",
+      "finding": "مقطع واحد بصوت voice-03؛ الكلمات والصوت والرابط وحالة ready/offer محفوظة. مراجعة تفريغ وبصمات، لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-05-AUD-LST-01.mp3",
+          "speaker": "Erzählperson",
+          "text": "Zum Frühstück esse ich Joghurt und Obst. Ich trinke Wasser. Am Mittag esse ich Reis und Gemüse. Am Abend trinke ich manchmal Tee.",
+          "voiceId": "voice-03"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "d1a551aa4cdf6af916f7c156f23e8e41f7b6eb04",
+    "unchangedOtherLessons": 52,
+    "unchangedGate": true,
+    "unchangedGlobalAudioAssets": 217,
+    "unchangedTrackedMp3Blobs": 474,
+    "unchangedUnrecordedCafeUtterances": 8,
+    "unchangedFiles": [
+      "app.js",
+      "styles.css",
+      "package.json",
+      "package-lock.json",
+      "data/audio-playlists.json",
+      "data/audio-asset-register.csv",
+      "tools/build_course.py",
+      "tools/verify_course.py"
+    ],
+    "unchangedOutsideLessonCatalogRows": true
+  },
+  "testResults": {
+    "baselineGuard": "FAIL before fix: rice preference does not refute liking soup very much",
+    "initialProgressionFailure": "P02 min110 rejected own unlabelled four-turn model; corrected to90 and rerun PASS",
+    "buildAndVerify": "PASS",
+    "cumulativeReviewGuards": 11,
+    "nodeSuites": [
+      "progression",
+      "session_persistence",
+      "daily_plan",
+      "study_time",
+      "service_worker"
+    ],
+    "browserSuites": [
+      "forms-keyboard",
+      "accessibility-audit",
+      "narrow-layout",
+      "accessibility-update",
+      "browser"
+    ],
+    "browserAllPass": true,
+    "chromium": "143.0.7499.0",
+    "playwright": "1.58.2",
+    "axeCore": "4.11.0",
+    "axeStates": 57,
+    "selectedRuleViolations": 0,
+    "incompleteRuleOccurrences": 33,
+    "incompleteNodeOccurrences": 87,
+    "narrowViewportStates": 126,
+    "serviceWorkerUpdateFixture": "v42 to v56, current assessment data; v1 rejection covered separately in VM",
+    "acousticReview": false,
+    "physicalDeviceTest": false
+  },
+  "delivery": {
+    "implementationCommit": "53f5123b7d43cadf168a699bd1481785cac2bac3",
+    "branch": "arena/01a1036f-deutschlern",
+    "remoteHeadMatched": true,
+    "workingTreeCleanAfterImplementationPush": true,
+    "pullRequest": 1,
+    "pullRequestState": "OPEN",
+    "pullRequestHeadMatchedOnSecondCheck": true,
+    "mergedAt": null,
+    "commitStatusAtCheck": "pending",
+    "statusesAtCheck": [],
+    "deploymentConfirmed": false
+  }
+}

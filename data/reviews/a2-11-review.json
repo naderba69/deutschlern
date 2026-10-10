@@ -1,0 +1,2378 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-11-housing-neighborhood-wohin",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-11-v2",
+  "unitCount": 122,
+  "exerciseSubItemCount": 35,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "LOCAL",
+      "title": "Lingolia — Lokale Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen/lokal",
+      "scope": "حروف الجر المتغيرة التسعة؛ مكان مقابل وجهة، وzu تتطلب الداتيف مع اتجاه. لا نعتمد تعميمات صفحة المرجع عن جميع أسماء المدن أوكل استعمالauf Bahnhof؛ ليست محل التدريس هنا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "PREP",
+      "title": "Lingolia — Präpositionen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/praepositionen",
+      "scope": "الحالة تتبع حرف الجر واستعماله، واختصارات im/in dem وzur/zu der؛ الحركة ليست اختبارًا وحيدًا للحالة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "CASE",
+      "title": "Lingolia — Deklination von Nomen und Artikeln",
+      "url": "https://deutsch.lingolia.com/de/grammatik/nomen/deklination",
+      "scope": "جدول الأدوات المعرفة في المفرد والجمع؛ n في الداتيف الجمع إلا مع جمع منتهٍ بـn/s. جلب عنوانakkusativ انتقل إلى هذه الصفحة الكاملة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "STAND",
+      "title": "Lingolia — stehen/stellen",
+      "url": "https://deutsch.lingolia.com/de/wortschatz/verwechselbar/stehen-stellen",
+      "scope": "وصف الموضع مقابل وضع شيء، والفاعل والمفعول، واستثناء zu من التبسيط المنسوب إلى وجهة الفعل؛ لا تدريس كل المعاني المجازية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "LIE",
+      "title": "Lingolia — liegen/legen",
+      "url": "https://deutsch.lingolia.com/de/wortschatz/verwechselbar/liegen-legen",
+      "scope": "liegen مع موضع وlegen مع مفعول أو ضمير انعكاسي ووجهة؛ الفعل وحرف الجر لا يختزلان إلى أي حركة مقابل سكون.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEPARATE",
+      "title": "Lingolia — Trennbare und untrennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "ein- منفصلة في richtet … ein؛ المصادر والجمل المركبة لا تخضع لتعميم فصل البادئة دائمًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "möchte وkönnten مع مصدر؛ حفظ المصدر stellen/sein في النمط المدروس وعدم مساواة الرغبة أوالطلب بالتنفيذ.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NEIGHBOR",
+      "title": "Duden — Nachbarschaft",
+      "url": "https://www.duden.de/rechtschreibung/Nachbarschaft",
+      "scope": "الجيران كجماعة، وعلاقتهم، والجوار المكاني؛ جمع Nachbarschaften قليل الاستعمال لا حي إداري محدد بالضرورة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "HANG",
+      "title": "Duden — hängen: transitiver oder intransitiver Gebrauch",
+      "url": "https://www.duden.de/sprachwissen/sprachratgeber/Das-Verb-h%C3%A4ngen-transitiver-oder-intransitiver-Gebrauch",
+      "scope": "يميز استعمال التعليق المتعدي عن وصف كون الشيء معلقًا؛ المصدر يعرض hängte/gehängt مقابل hing/gehangen. لا نفرض تعلم الماضي هنا؛ التركيز على المعنى والمفعول في المضارع.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/nomen/deklination/dativ",
+      "result": "not_found_content_despite_successful_fetch",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/haengen_befestigen_heften",
+      "result": "not_found_content_despite_successful_fetch",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/haengen",
+      "result": "not_found_content_despite_successful_fetch",
+      "usedAsEvidence": false
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Regal",
+      "result": "not_found_content_despite_successful_fetch",
+      "usedAsEvidence": false
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.11 — المدن والسكن والجيران: Wo أم Wohin؟",
+      "finding": "العنوان يطابق السكن والجوار والمكان والوجهة؛ لا جغرافيا فعلية أو قواعد قانونية للسكن.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري",
+      "finding": "أضيفت الكتابة والكلام والاستماع الاختياري؛ أربعون دقيقة تقدير مرن وليس ضمانًا زمنيًا.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أصف مكان الأثاث وأسأل إلى أين يوضع، وأتحدث عن الحيّ والجيران.",
+      "finding": "الهدف موضع الأثاث ووجهته والجوار؛ مهمتان مختلفتان تسندان الوصف المكاني والطلب المهذب.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "نتدرب على حروف الجر المكانية المتغيرة **in, auf, an, neben, unter, über, vor, hinter, zwischen**. في استعمال المكان/الوجهة المعروض هنا نميز بين السؤالين؛ هذه ليست قاعدة لكل حرف جر أو لكل معنى له:",
+      "finding": "أضيف zwischen لإكمال المجموعة، وقُيدت القاعدة بحروف متغيرة في استعمالها المكاني، لا كل حرف جر أو كل معنى مجازي.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "- **Wo? أين؟** عندما نحدد مكان الشيء أو مكان حدوث النشاط مع هذه الحروف، نستعمل **Dativ**. لا يشترط أن يكون كل ما داخل المكان بلا حركة.",
+      "finding": "Wo يسأل عن المكان وقد يكون داخله نشاط؛ أزيل ربط الداتيف بسكون كل الأشياء فقط.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "- **Wohin? إلى أين؟** عندما نحدد وجهة وضع الشيء أو انتقاله مع هذه الحروف، نستعمل **Akkusativ**. المهم علاقة الوجهة بالمكان، لا مجرد وجود فعل حركة.",
+      "finding": "Wohin يحدد وجهة مع الحروف المتغيرة هنا؛ لا يجعل كل جواب اتجاه منصوبًا، كما يبين مثال zu.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "احفظ اختلاف الفعل في الأمثلة: **liegen/stehen** يصفان موضع الشيء، و**legen/stellen** يصفان وضع شيء في موضع. في **Ich stelle den Schrank an die Wand.** الخزانة den Schrank مفعول به، وan die Wand عبارة وجهة؛ لا نختار حالة المفعول بسؤال Wo. هذه معاني الاستعمال المدروس، لا كل المعاني المجازية للأفعال.",
+      "finding": "الفرق بين liegen/stehen و legen/stellen واضح مع المفعول den Schrank وعبارة الوجهة an die Wand؛ حالتان لوظيفتين مختلفتين.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "النموذجان مكتوبان وغير مسجلين، ولا يستبدلان التسجيلات القائمة. الغرفة وموقف الجوار خياليان؛ لا ندمج تفاصيلهما مع منزل Fadi أو Salma، ولا يثبت الطلب تنفيذ حل. لا تصحيح لغوي أو اعتماد نطق آلي.",
+      "finding": "النموذجان خياليان غير مسجلين؛ لا تدمج تفاصيلهما مع النصوص، ولا تعتبر الطلب موافقة أو تنفيذًا.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Nachbar / die Nachbarin | die Nachbarn / Nachbarinnen | الجار / الجارة |",
+      "finding": "Nachbar/Nachbarin مذكر ومؤنث، وجمعاهما Nachbarn/Nachbarinnen؛ زوجان في صف واحد لا هوية متعلم.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Nachbarschaft | die Nachbarschaften (جمع قليل الاستعمال) | الجوار / الجيرة والعلاقة بين الجيران |",
+      "finding": "وُضحت دلالات الجوار والجيرة والعلاقات، وأن جمع Nachbarschaften قليل الاستعمال وفق المرجع.",
+      "sourceIds": [
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Innenstadt | die Innenstädte | وسط المدينة |",
+      "finding": "Innenstadt مؤنث وجمعه Innenstädte؛ وسط المدينة، لا اسم مدينة بعينها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Straßenbahnhaltestelle | die Straßenbahnhaltestellen | محطة الترام |",
+      "finding": "Straßenbahnhaltestelle مؤنث وجمعه Straßenbahnhaltestellen؛ محطة ترام، وليس زمن رحلة أو مسافة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Miete | die Mieten | الإيجار |",
+      "finding": "Miete مؤنث وجمعه Mieten؛ قيمة/بدل الإيجار هنا، لا إثبات سعر أو عقد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| der Umzug | die Umzüge | الانتقال إلى مسكن جديد |",
+      "finding": "Umzug مذكر وجمعه Umzüge؛ الانتقال إلى مسكن في السياق، لا كل معنى للكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Schrank | die Schränke | الخزانة |",
+      "finding": "Schrank مذكر وجمعه Schränke؛ خزانة مع اختلاف الأداة والحالة حسب الوظيفة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| das Regal | die Regale | وحدة رفوف / رفّ |",
+      "finding": "Regal محايد وجمعه Regale؛ وُسعت الترجمة إلى وحدة رفوف/رف دون تغيير لفظ التسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| das Sofa | die Sofas | الأريكة |",
+      "finding": "Sofa محايد وجمعه Sofas؛ الأريكة، و neben das Sofa يحدد وجهة في المثال.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| der Teppich | die Teppiche | السجادة |",
+      "finding": "Teppich مذكر وجمعه Teppiche؛ سجادة موضعها على الأرض في الحوار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| die Wand | die Wände | الجدار |",
+      "finding": "Wand مؤنث وجمعه Wände؛ an der لمكان و an die لوجهة التعليق أو الوضع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| der Boden | die Böden | الأرضية |",
+      "finding": "Boden مذكر وجمعه Böden؛ أرضية في السياق لا سطح طاولة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| der Innenhof | die Innenhöfe | ساحة داخلية |",
+      "finding": "Innenhof مذكر وجمعه Innenhöfe؛ ساحة داخلية، وتختلف علاقتها المكانية بين الأمثلة المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-14",
+      "text": "| die Grünfläche | die Grünflächen | مساحة خضراء |",
+      "finding": "Grünfläche مؤنث وجمعها Grünflächen؛ مساحة خضراء، لا دليل أنها حديقة عامة كبيرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| der Sessel | die Sessel | كرسي بذراعين |",
+      "finding": "Sessel مذكر وجمعه ثابت الشكل؛ كرسي بذراعين، غير لفظ Stuhl الأعم.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-16",
+      "text": "| der Schreibtisch | die Schreibtische | مكتب |",
+      "finding": "Schreibtisch مذكر وجمعه Schreibtische؛ مكتب/طاولة كتابة، لا غرفة مكتب.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-17",
+      "text": "| der Nachttisch | die Nachttische | منضدة بجانب السرير |",
+      "finding": "Nachttisch مذكر وجمعه Nachttische؛ منضدة بجانب السرير، وهي وجهة الكتاب في الاستماع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-18",
+      "text": "| einrichten | richtet ein | يرتّب/يؤثث |",
+      "finding": "einrichten مصدر و richtet ein مضارع مفرد غائب في سياق التأثيث؛ ليس مصدرًا مع ein مفصولة.",
+      "sourceIds": [
+        "SEPARATE"
+      ]
+    },
+    {
+      "id": "vocab-19",
+      "text": "| hängen | hängt | يعلّق / يكون معلّقًا |",
+      "finding": "hängen / hängt يصلحان لمعنى التعليق أو الموضع؛ لا تختار الحالة من شكل الفعل وحده.",
+      "sourceIds": [
+        "HANG"
+      ]
+    },
+    {
+      "id": "vocab-20",
+      "text": "| laut / leise | — | صاخب / هادئ |",
+      "finding": "laut/leise متعلقان بالصوت هنا: صاخب/هادئ؛ leiser خفض نسبي للصوت لا صمت مطلق.",
+      "sourceIds": []
+    },
+    {
+      "id": "case-01",
+      "text": "| المذكر der | dem | den |",
+      "finding": "المذكر يتحول من der إلى dem مع داتيف المكان وإلى den مع نصب الوجهة في هذا الجدول.",
+      "sourceIds": [
+        "CASE",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "case-02",
+      "text": "| المؤنث die | der | die |",
+      "finding": "المؤنث der للداتيف و die للنصب؛ لا تستعمل dem مع Wand في هذه الأمثلة.",
+      "sourceIds": [
+        "CASE",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "case-03",
+      "text": "| المحايد das | dem | das |",
+      "finding": "المحايد dem مقابل das؛ يميز neben dem Sofa عن neben das Sofa.",
+      "sourceIds": [
+        "CASE",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "case-04",
+      "text": "| الجمع die (للمقارنة) | den | die |",
+      "finding": "أضيف الجمع للمقارنة:den للداتيف و die للنصب؛ n في الاسم مفصلة بمثال Stühlen، وليست زيادة تلقائية لكل اسم.",
+      "sourceIds": [
+        "CASE",
+        "LOCAL"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "Wo liegt das Buch?",
+      "finding": "السؤال Wo عن موضع الكتاب، و liegt فاعله das Buch؛ ليس سؤال اتجاه أو وقت.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Auf dem Tisch.",
+      "finding": "جواب مختصر على Wo:auf dem Tisch، والداتيف للمذكر؛ ليس جملة ناقصة يجب رفضها في حوار.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Wohin lege ich das Buch?",
+      "finding": "Wohin مع lege يطلب وجهة وضع الكتاب؛ ich فاعل و das Buch مفعول.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Auf den Tisch.",
+      "finding": "auf den Tisch وجهة مع حرف متغير؛ لا يعني أن كل Wohin مع كل حرف يفرض den.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Der Schrank steht an der Wand.",
+      "finding": "Der Schrank فاعل و steht يصف موضعه بمحاذاة الجدار؛ an der Wand مكان.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "grammar-06",
+      "text": "Ich stelle den Schrank an die Wand.",
+      "finding": "Ich فاعل و den Schrank مفعول و an die Wand وجهة؛ stelle ليست stehe.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "phrase-01",
+      "text": "Ich wohne in einer ruhigen Nachbarschaft.",
+      "finding": "حي هادئ/جوار هادئ:in einer ruhigen Nachbarschaft، عبارة مكان بداتيف مؤنث مع تنكير وصفة معطاة، لا درس شامل في تصريف الصفات.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "text": "Die Miete ist hoch.",
+      "finding": "ارتفاع الإيجار مثال لغوي لا سعر فعلي أو مقارنة بين مدن.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "text": "Der Innenhof ist neben dem Haus.",
+      "finding": "الساحة بجانب المنزل في هذا المثال المستقل؛ لا يبدل مكانها بجانب المدخل في القراءة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "text": "Meine Nachbarin ist sehr freundlich.",
+      "finding": "جارتي ودودة مثال بضمير الملكية، لا صفة لجميع الجيران أو دليل مساعدة محددة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "phrase-05",
+      "text": "Könnten Sie bitte etwas leiser sein?",
+      "finding": "طلب مهذب بصيغة الاحترام؛ leiser أقل صوتًا و sein مصدر، وليس تصريحًا بأن الجار التزم.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **حركة داخل مكان أم انتقال إليه؟** **Im Innenhof spielen zwei Kinder.** لعب داخل الساحة: Wo? وim = in dem. أما **Die Kinder gehen in den Innenhof.** فوجهة: Wohin? لا نقول إن spielen يفرض النصب لمجرد الحركة. **Ich gehe zur Haltestelle.** وجهة أيضًا، لكن zur = zu der وzu تتطلب Dativ؛ قاعدة التبديل تخص الحروف التسعة المذكورة، لا كل جواب عن Wohin.",
+      "finding": "يربط الداتيف بمكان اللعب لا سكون الأطفال؛ يبين in den Innenhof كوجهة، و zu der كوجهة بداتيف خارج مجموعة التبديل.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **الأداة والاسم:** der Tisch → auf dem Tisch / auf den Tisch؛ die Wand → an der Wand / an die Wand؛ das Sofa → neben dem Sofa / neben das Sofa. للمقارنة فقط: der Stuhl، die Stühle؛ **zwischen den Stühlen** مكان و**zwischen die Stühle** وجهة. في الداتيف الجمع نضيف n إلى الاسم إن لم ينته جمعه أصلًا بـn أوs؛ لا نعمم تغيير نهاية كل اسم مفرد.",
+      "finding": "مطابقة أدوات المذكر والمؤنث والمحايد، مع مثال الجمع وشرط n؛ المقارنة ليست فرضًا على كل إجابة أداء.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **liegen / legen:** **Das Buch liegt auf dem Tisch.** الكتاب هو الفاعل وموضعه موصوف؛ **Ich lege das Buch auf den Tisch.** ich الفاعل وdas Buch المفعول. liegen يصف وضع الكتاب مستلقيًا هنا، وlegen عملية وضعه؛ ليست صيغة واحدة مع تبديل حرف عشوائي.",
+      "finding": "يفصل فاعل liegt عن فاعل lege ومفعوله؛ المصدران ليسا بديلين اعتباطيين.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **stehen / stellen / hängen:** **Die Lampe steht neben dem Bett.** مقابل **Ich stelle die Lampe neben das Bett.** أما **Das Bild hängt an der Wand.** فيصف موضع الصورة، و**Ich hänge das Bild an die Wand.** يصف تعليقها. hängen له استعمالان؛ لا يكفي شكله وحده لاختيار الحالة، بل ننظر إلى الفاعل والمفعول ومعنى المكان أو الوجهة. التدريب هنا في المضارع.",
+      "finding": "يتقابل موضع المصباح ووضعه، و hängen اللازم والمتعدي؛ لا يضيف الماضي إلى تقييم المضارع.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **einrichten والمصدر:** **Nach dem Umzug richtet sie ihr Wohnzimmer ein.** تعني أنها تؤثث غرفة الجلوس بعد الانتقال؛ ein جزء الفعل المنفصل. **Ich möchte das Regal neben das Sofa stellen.** فيها stellen مصدر أخير دون zu، وmöchte تعبر عن رغبة؛ لا دليل أن الرف وُضع فعلًا هناك.",
+      "finding": "ein منفصلة في الرئيسية، و stellen مصدر مع möchte؛ الرغبة ليست وضعًا تم بالفعل.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **الحي والاتجاهات:** Nachbarschaft قد تعني الجوار أو مجموع الجيران أو العلاقة بينهم، وليست دائمًا حيًا إداريًا محددًا؛ جمعها قليل الاستعمال. **an der Ecke** عند الزاوية؛ **der Eingang** المدخل؛ **neben** بجانب، و**hinter** خلف، و**über** فوق. لا نحول قرب محطة الترام إلى مسافة أو مدة مشي غير مذكورة.",
+      "finding": "يوضح الجوار والزاوية والمدخل والاتجاهات، دون اختلاق مسافة للمحطة أوحي إداري.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **الطلب المهذب:** **Könnten Sie bitte etwas leiser sein?** طلب خفض الصوت قليلًا؛ Sie للاحترام حتى مع جار واحد، وsein مصدر في النهاية. leiser صيغة مقارنة من leise، لا طلب صمت مطلق. الطلب لا يثبت استجابة الجار، ولا يمثل قاعدة قانونية لساعات الهدوء.",
+      "finding": "الطلب موجه باحترام ومحدود بخفض الصوت قليلًا؛ ليس صمتًا مطلقًا أو تفسيرًا لقانون الهدوء.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **ثلاثة سياقات مستقلة:** أريكة Fadi بجانب النافذة، وأريكة Salma بمحاذاة الجدار. في القراءة الساحة بجانب المدخل، وفي عبارة الحي المثال بجانب المنزل؛ لا نجمع المواقع في خريطة واحدة. في الاستماع طفلان يلعبان في الساحة، ولا يحدد النص جنس المتكلم أو اسمه. sie في أسئلته تعود إلى die Person نحويًا.",
+      "finding": "يفصل Fadi و Salma والاستماع والعبارة العامة؛ لا خريطة واحدة أو جنس متكلم مفترض.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود الفهم:** القاموس على الطاولة لا على الأرض؛ المساحة الخضراء خلف المنزل، لا محطة الترام. جارة Salma تساعدها؛ معلومة الساحة صريحة داخل الاقتباس، ولا نختبر تعيين المتكلمة من Sie sagt وحدها. وصف الجيران بالود لا يثبت أنهم ساعدوا المتكلم أو وافقوا على طلبه.",
+      "finding": "ينقل مواقع القراءة والمساعدة الصريحة؛ لا يتوقف الاختبار على حسم مرجع Sie sagt، ولا يستنتج فعل مساعدة من freundlich وحدها.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل والخصوصية:** P01 أربع جمل عن غرفة متخيلة مع الجهر؛ P02 ثلاث جمل وطلب مهذب كتابة فقط، عن موقف خيالي. لا عنوان حقيقي أو نقل أثاث فعلي أو شكوى مرسلة أو شريك أو تسجيل مطلوب. حاول الاستماع قبل التفريغ؛ قراءته لا تثبت فهمًا مسموعًا مستقلًا. الطول والإقرار ليسا تصحيحًا آليًا للغة أو النطق.",
+      "finding": "مهام خيالية بلا بيانات عنوان أو نشاط بدني أو شكوى حقيقية؛ الكتابة والجهر مختلفان، والتفريغ والإقرار لهما حدود.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wie gefällt dir die neue Wohnung?",
+      "finding": "Nora تسأل Fadi عن إعجابه بالمسكن؛ dir مع gefällt، لا طلب تغيير موقع أثاث.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Sehr gut. Das Sofa steht neben dem Fenster, und der Teppich liegt auf dem Boden.",
+      "finding": "Fadi معجب؛ الأريكة بجانب النافذة والسجادة على الأرض، مع steht/liegt بحسب الغرض؛ لا ننقل موضع أريكة Salma إلى هنا.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Wo steht der Schrank?",
+      "finding": "Wo تسأل عن موضع الخزانة تحديدًا، لا وجهة نقلها.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Er steht an der Wand. Ich möchte das Regal neben das Sofa stellen.",
+      "finding": "Er يعود إلى Schrank بمحاذاة الجدار؛ möchte … stellen رغبة في وضع Regal بجانب الأريكة، لا إخبار بأنه موضوع هناك الآن.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Und wie sind die Nachbarn?",
+      "finding": "سؤال عن الجيران بصيغة Wie، لا أين يسكنون أو عددهم.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Sehr freundlich. Die Nachbarschaft ist ruhig, und es gibt einen kleinen Innenhof.",
+      "finding": "يصفهم بالود والحي بالهدوء ويذكر وجود ساحة صغيرة؛ لا موضع محدد لهذه الساحة أو وعد بالمساعدة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Salma wohnt in der Innenstadt.",
+      "finding": "Salma تسكن وسط المدينة؛ لا اسم مدينة أو عنوان شخصي.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Die nächste Straßenbahnhaltestelle ist an der Ecke.",
+      "finding": "أقرب محطة ترام عند الزاوية؛ لا زمن مشي أو خلف المنزل.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Nach dem Umzug richtet sie ihr Wohnzimmer ein.",
+      "finding": "تؤثث غرفة الجلوس بعد الانتقال؛ richtet … ein وليس تغيير ترتيب الكلمات كيفما اتفق.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Das Sofa steht an der Wand.",
+      "finding": "أريكتها بمحاذاة الجدار؛ هذا موضع لا فعل نقل.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Ein kleiner Tisch steht vor dem Sofa, und das Wörterbuch liegt auf dem Tisch.",
+      "finding": "طاولة صغيرة أمام الأريكة، والقاموس على الطاولة؛ لا على الأرض أو بجانب المدخل.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Salma hängt ein Bild über das Sofa.",
+      "finding": "تعلق صورة فوق الأريكة؛ das Sofa بعدüber وجهة في النصب، لا وصف لحالة الصورة قبل التعليق.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Ihre Nachbarin hilft ihr.",
+      "finding": "جارتها تساعدها؛ ihr تشير إلى Salma، وليس إلى جماعة جيران غير مذكورة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "Sie sagt: „Die Grünfläche ist hinter dem Haus, und der Innenhof ist neben dem Eingang.“",
+      "finding": "الاقتباس يحدد المساحة الخضراء خلف المنزل والساحة بجانب المدخل؛ لا يُسأل عن حسم هوية المتكلمة من Sie وحدها.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-09",
+      "text": "Salma ist froh, denn die Nachbarschaft ist ruhig.",
+      "finding": "Salma سعيدة بسبب هدوء الجوار؛ denn يربط السبب، لا نتيجة سعر الإيجار أو مساحة الشقة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG",
+        "SEPARATE",
+        "NEIGHBOR"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was steht an der Wand?",
+      "finding": "Das Sofa؛ موضعه بمحاذاة الجدار في القراءة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "HANG"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wo liegt das Wörterbuch?",
+      "finding": "Auf dem Tisch؛ القاموس فوق الطاولة، لا السجادة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "HANG"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wohin hängt Salma das Bild?",
+      "finding": "Über das Sofa؛ وجهة التعليق، وليست أداة dem الخاصة بوصف موضع بعد التعليق.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "HANG"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wer hilft Salma?",
+      "finding": "Ihre Nachbarin؛ المساعدة مذكورة صراحة لا استنتاج من الود.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "HANG"
+      ]
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Wo ist der Innenhof?",
+      "finding": "Neben dem Eingang؛ مرجعها الاقتباس وليس عبارة الساحة بجانب المنزل العامة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "HANG"
+      ]
+    },
+    {
+      "id": "reading-question-06",
+      "text": "Wo ist die nächste Straßenbahnhaltestelle?",
+      "finding": "An der Ecke؛ أضيف تدريب مباشر T05.5 يدعم هذا التفصيل و Q07.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "HANG"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Im Schlafzimmer steht das Bett an der Wand.",
+      "finding": "السرير بمحاذاة الجدار داخل غرفة النوم؛ Im = in dem، وليس اتجاه نقل السرير.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Eine Lampe steht neben dem Bett.",
+      "finding": "مصباح بجانب السرير، مع neben dem Bett؛ لا نحوله إلى وجهة نصبية.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Ich lege mein Buch auf den Nachttisch.",
+      "finding": "المتكلم يضع كتابه على منضدة السرير؛ على den Nachttisch وجهة، ولا نص يحدد اسم الشخص أو جنسه.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Dann stelle ich den Stuhl vor den Schreibtisch.",
+      "finding": "ثم يضع الكرسي أمام المكتب؛ Stuhl مفعول و vor den Schreibtisch وجهة، لا جانب المكتب.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Im Innenhof spielen zwei Kinder.",
+      "finding": "طفلان يلعبان في الساحة؛ الحركة داخلها لا تنفي الداتيف Im Innenhof.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "text": "Die Nachbarn sind freundlich.",
+      "finding": "الجيران ودودون؛ لا يقول إنهم ساعدوا في نقل الأثاث أو وافقوا على طلب خفض الصوت.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wo steht das Bett?",
+      "finding": "An der Wand؛ مكان السرير.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wo steht die Lampe?",
+      "finding": "Neben dem Bett؛ مكان المصباح لا وجهة وضعه.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wohin legt die Person das Buch?",
+      "finding": "Auf den Nachttisch؛ وجهة الكتاب باسم منضدة السرير.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Wohin stellt sie den Stuhl?",
+      "finding": "Vor den Schreibtisch؛ وجهة الكرسي؛ sie يعود إلى die Person نحويًا ولا يثبت جنس المتكلم.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Wie sind die Nachbarn?",
+      "finding": "Sie sind freundlich؛ نص مباشر لا وعد بالمساعدة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Das Sofa steht an der Wand.",
+      "finding": "الجملة 1 تصف موضع الأريكة بـ steht و an der Wand في الداتيف المؤنث.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Das Buch liegt auf dem Tisch.",
+      "finding": "الجملة 2 تصف موضع كتاب بـ liegt و auf dem Tisch في الداتيف المذكر.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Ich stelle den Sessel neben das Sofa.",
+      "finding": "الجملة 3 تبدأ Ich stelle؛ den Sessel مفعول و neben das Sofa وجهة في نصب المحايد.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Ich lege die Zeitung auf den Nachttisch.",
+      "finding": "الجملة 4 تبدأ Ich lege؛ die Zeitung مفعول آخر، و auf den Nachttisch وجهة في نصب المذكر.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Ich wohne in der Innenstadt.",
+      "finding": "الجملة 1 تسمي السكن في وسط المدينة مع in der Innenstadt؛ لا اسم مدينة أو عنوان حقيقي.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Der Innenhof ist neben dem Eingang.",
+      "finding": "الجملة 2 تحدد الساحة بجانب المدخل مع neben dem Eingang في الداتيف.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Heute ist es im Innenhof laut.",
+      "finding": "الجملة 3 تضيف ضجيج اليوم في نفس الساحة، مع im؛ ليست نسبة ضجيج حقيقي إلى Fadi أو Salma.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "writing-model-04",
+      "text": "Könnten Sie bitte etwas leiser sein?",
+      "finding": "الجملة 4 طلب خفض الصوت بـ Könnten Sie … sein?؛ لا ادعاء استجابة ولا إلزام بالجهر في هذه المهمة.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "CASE",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Wo? Das Buch liegt auf dem Tisch.** → أين؟ الكتاب على الطاولة.",
+      "finding": "Wo ثم وصف موضع الكتاب؛ auf dem Tisch داتيف، ولا تعمم ذلك علىكل حرف جر.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "LIE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Wohin? Ich lege das Buch auf den Tisch.** → إلى أين؟ أضع الكتاب على الطاولة.",
+      "finding": "Wohin ثم عملية وضع الكتاب؛ auf den Tisch وجهة، و das Buch مفعول.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "LIE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Die Nachbarschaft ist ruhig.** → الحيّ هادئ.",
+      "finding": "الهدوء صفة المثال الخيالي، لا حكم على كل حي أو مقارنة مدن.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "LIE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **Könnten Sie bitte etwas leiser sein?** → هل يمكنكم خفض الصوت قليلًا؟",
+      "finding": "طلب احترام لخفض الصوت قليلًا؛ المصدر sein أخيرًا، ولا يثبت أنه نُفذ.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "LIE",
+        "NEIGHBOR",
+        "MODAL"
+      ]
+    },
+    {
+      "id": "DL-A2-11-T01",
+      "text": "1. ______ liegt die Zeitung? — Auf dem Tisch.\n2. ______ legst du die Zeitung? — Auf den Tisch.\n3. ______ steht der Schrank? — Neben dem Fenster.\n4. ______ stellst du den Schrank? — Neben das Fenster.",
+      "finding": "أربعة أسئلة تربط المعنى بالأداة والفعل؛ لا تعميم عن كل حركة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG"
+      ],
+      "items": [
+        {
+          "text": "______ liegt die Zeitung? — Auf dem Tisch.",
+          "answer": "Wo",
+          "finding": "liegt ووصف موضع الصحيفة على الطاولة يدلان على Wo هنا."
+        },
+        {
+          "text": "______ legst du die Zeitung? — Auf den Tisch.",
+          "answer": "Wohin",
+          "finding": "legst ووجهة auf den Tisch يدلان على Wohin."
+        },
+        {
+          "text": "______ steht der Schrank? — Neben dem Fenster.",
+          "answer": "Wo",
+          "finding": "steht يصف الخزانة بجانب النافذة، فالسؤال Wo."
+        },
+        {
+          "text": "______ stellst du den Schrank? — Neben das Fenster.",
+          "answer": "Wohin",
+          "finding": "stellst عملية وضع الخزانة بجانب النافذة مع das Fenster، فالسؤال Wohin."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T02",
+      "text": "1. Das Buch liegt auf ______ Tisch. (dem / den)\n2. Ich lege das Buch auf ______ Tisch. (dem / den)\n3. Das Bild hängt an ______ Wand. (der / die)\n4. Ich hänge das Bild an ______ Wand. (der / die)\n5. Der Stuhl steht neben ______ Sofa. (dem / das)\n6. Wir stellen den Stuhl neben ______ Sofa. (dem / das)",
+      "finding": "ستة أمثلة تشمل المذكر والمؤنث والمحايد ومكان/وجهة؛ تدعم Q02/Q03/Q10.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG"
+      ],
+      "items": [
+        {
+          "text": "Das Buch liegt auf ______ Tisch. (dem / den)",
+          "answer": "dem",
+          "finding": "موضع كتاب مع auf وداتيف المذكر dem؛ den خاص بالوجهة هنا."
+        },
+        {
+          "text": "Ich lege das Buch auf ______ Tisch. (dem / den)",
+          "answer": "den",
+          "finding": "وجهة وضع الكتاب مع auf ونصب المذكر den؛ dem لا يطابق الوجهة المعطاة."
+        },
+        {
+          "text": "Das Bild hängt an ______ Wand. (der / die)",
+          "answer": "der",
+          "finding": "صورة معلقة في موضع مع an وداتيف المؤنث der."
+        },
+        {
+          "text": "Ich hänge das Bild an ______ Wand. (der / die)",
+          "answer": "die",
+          "finding": "شخص يعلق صورة على الجدار؛ an die وجهة مع المؤنث."
+        },
+        {
+          "text": "Der Stuhl steht neben ______ Sofa. (dem / das)",
+          "answer": "dem",
+          "finding": "موضع كرسي بجانب أريكة محايدة؛ neben dem Sofa."
+        },
+        {
+          "text": "Wir stellen den Stuhl neben ______ Sofa. (dem / das)",
+          "answer": "das",
+          "finding": "وضع كرسي بجانب أريكة؛ neben das Sofa وجهة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T03",
+      "text": "1. Das Buch **liegt / legt** auf dem Tisch.\n2. Ich **stehe / stelle** den Schrank an die Wand.\n3. Die Lampe **steht / stellt** neben dem Bett.\n4. Sie **legt / liegt** die Zeitung auf den Tisch.",
+      "finding": "أربعة أفعال مناسبة للفاعل والمفعول ووصف الموضع أو عملية الوضع.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG"
+      ],
+      "items": [
+        {
+          "text": "Das Buch **liegt / legt** auf dem Tisch.",
+          "answer": "liegt",
+          "finding": "liegt وصف موضع؛ legt يتطلب هنا فاعل وضع ومفعولًا لا توفرهما الجملة."
+        },
+        {
+          "text": "Ich **stehe / stelle** den Schrank an die Wand.",
+          "answer": "stelle",
+          "finding": "Ich stelle den Schrank؛ الخزانة مفعول وليست فاعل وصف موضع."
+        },
+        {
+          "text": "Die Lampe **steht / stellt** neben dem Bett.",
+          "answer": "steht",
+          "finding": "Lampe مفرد مؤنث و steht يصف موضعها؛ stellt لا يناسب هذا التركيب."
+        },
+        {
+          "text": "Sie **legt / liegt** die Zeitung auf den Tisch.",
+          "answer": "legt",
+          "finding": "Sie legt die Zeitung؛ الصحيفة مفعول والوجهة منصوبة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T04",
+      "text": "ابدأ1 بـDas Buch، و2 بـIch، و3 بـDer Sessel. استعمل كل كتلة مرة وأضف النقطة دون تغيير الصيغ؛ توجد بدايات أخرى صحيحة خارج المطلوب المحدد هنا.\n\n1. auf dem Tisch / liegt / Das Buch\n2. an die Wand / den Schrank / Ich / stelle\n3. neben dem Fenster / steht / Der Sessel",
+      "finding": "قُيدت البدايات دون إنكار ترتيبات ألمانية صحيحة أخرى؛ ثلاثة تراكيب مثبتة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG"
+      ],
+      "items": [
+        {
+          "text": "auf dem Tisch / liegt / Das Buch",
+          "answer": "Das Buch liegt auf dem Tisch.",
+          "finding": "البداية Das Buch مطلوبة، والفعل ثاني المواقع؛ بدايات أخرى قد تصح لكنها لا تطابق هذه المهمة."
+        },
+        {
+          "text": "an die Wand / den Schrank / Ich / stelle",
+          "answer": "Ich stelle den Schrank an die Wand.",
+          "finding": "Ich ثم stelle ثم den Schrank مع an die Wand؛ لا خلط بين المفعول والوجهة."
+        },
+        {
+          "text": "neben dem Fenster / steht / Der Sessel",
+          "answer": "Der Sessel steht neben dem Fenster.",
+          "finding": "Der Sessel ثم steht ثم neben dem Fenster؛ المكان داتيف والفعل مفرد."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Das Sofa steht an der Wand.\n2. Das Wörterbuch liegt auf dem Boden.\n3. Salma hängt das Bild über das Sofa.\n4. Der Innenhof ist neben dem Eingang.\n5. Die nächste Straßenbahnhaltestelle ist an der Ecke.",
+      "finding": "خمسة أحكام بحسب نص Salma؛ أضيفت المحطة لدعم Q07 دون استنتاج مسافة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG"
+      ],
+      "items": [
+        {
+          "text": "Das Sofa steht an der Wand.",
+          "answer": "صحيح",
+          "finding": "الأريكة بمحاذاة الجدار صراحة."
+        },
+        {
+          "text": "Das Wörterbuch liegt auf dem Boden.",
+          "answer": "خطأ",
+          "finding": "القاموس على الطاولة لا أرضية الغرفة."
+        },
+        {
+          "text": "Salma hängt das Bild über das Sofa.",
+          "answer": "صحيح",
+          "finding": "التعليق فوق الأريكة يتفق مع النص؛ لا وصف مكان سابق للصورة."
+        },
+        {
+          "text": "Der Innenhof ist neben dem Eingang.",
+          "answer": "صحيح",
+          "finding": "الساحة بجانب المدخل كما في الاقتباس."
+        },
+        {
+          "text": "Die nächste Straßenbahnhaltestelle ist an der Ecke.",
+          "answer": "صحيح",
+          "finding": "المحطة عند الزاوية؛ البند الجديد يسند Q07 مباشرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة: **Wand — Bett — Nachttisch — Schreibtisch**.\n\n1. Das Bett steht an der ______.\n2. Die Lampe steht neben dem ______.\n3. Die Person legt das Buch auf den ______.\n4. Sie stellt den Stuhl vor den ______.",
+      "finding": "أربعة فراغات وبنك واضح؛ يميز مكان السرير والمصباح من وجهة الكتاب والكرسي.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "HANG"
+      ],
+      "items": [
+        {
+          "text": "Das Bett steht an der ______.",
+          "answer": "Wand",
+          "finding": "الجدار Wand بعد an der؛ موضع السرير."
+        },
+        {
+          "text": "Die Lampe steht neben dem ______.",
+          "answer": "Bett",
+          "finding": "Bett بعد neben dem؛ موضع المصباح."
+        },
+        {
+          "text": "Die Person legt das Buch auf den ______.",
+          "answer": "Nachttisch",
+          "finding": "Nachttisch بعد auf den؛ وجهة الكتاب لا المكتب."
+        },
+        {
+          "text": "Sie stellt den Stuhl vor den ______.",
+          "answer": "Schreibtisch",
+          "finding": "Schreibtisch بعد vor den؛ وجهة الكرسي لا مكان المصباح."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T07",
+      "text": "**أ — اختيار العبارة:** تريد أن تطلب من الجيران خفض الصوت:\nأ. Könnten Sie bitte etwas leiser sein? ب. Du bist mein Nachbar. ج. Ich bin sehr laut.\n\n**ب — P02: كتابة فقط**\n\nاكتب أربع جمل لموقف جوار خيالي، كتابة فقط: الجملة1 تقول إنك تسكن وسط المدينة؛ الجملة2 تحدد الساحة بجانب المدخل؛ الجملة3 تذكر أن الساحة صاخبة اليوم؛ الجملة4 تطلب من جار خفض الصوت قليلًا بـKönnten Sie bitte etwas leiser sein? استخدم Dativ للمواقع مع in وneben. لا تضف أن الجار وافق أو أن مشكلة الضجيج انتهت. لا جهر أو شريك أو إرسال شكوى أو معلومات سكن حقيقية مطلوبة.",
+      "finding": "اختيار طلب مهذب ثم إنتاج أربعة أقوال كتابية بموقف صريح؛ لم تعد P02 مهمة غير مدعومة تحت وصف الغرفة.",
+      "sourceIds": [
+        "LOCAL",
+        "PREP",
+        "MODAL"
+      ],
+      "items": [
+        {
+          "text": "أ. Könnten Sie bitte etwas leiser sein? ب. Du bist mein Nachbar. ج. Ich bin sehr laut.",
+          "finding": "أ يطلب خفض الصوت؛ ب يخبر بعلاقة الجوار، وج يصف صوت المتكلم؛ فلا يطلبان خفضه."
+        },
+        {
+          "text": "P02، الجملة 1: Ich wohne in der Innenstadt.",
+          "finding": "الجملة 1 تسمي السكن في وسط المدينة مع in der Innenstadt؛ لا اسم مدينة أو عنوان حقيقي."
+        },
+        {
+          "text": "P02، الجملة 2: Der Innenhof ist neben dem Eingang.",
+          "finding": "الجملة 2 تحدد الساحة بجانب المدخل مع neben dem Eingang في الداتيف."
+        },
+        {
+          "text": "P02، الجملة 3: Heute ist es im Innenhof laut.",
+          "finding": "الجملة 3 تضيف ضجيج اليوم في نفس الساحة، مع im؛ ليست نسبة ضجيج حقيقي إلى Fadi أو Salma."
+        },
+        {
+          "text": "P02، الجملة 4: Könnten Sie bitte etwas leiser sein?",
+          "finding": "الجملة 4 طلب خفض الصوت بـ Könnten Sie … sein?؛ لا ادعاء استجابة ولا إلزام بالجهر في هذه المهمة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-T08",
+      "text": "اكتب أربع جمل خبرية عن غرفة متخيلة ثم اقرأها جهرًا: الجملة1 تصف موضع أثاث بـstehen وعبارة مكان في Dativ؛ الجملة2 تصف موضع كتاب بـliegen وعبارة مكان في Dativ؛ الجملة3 تبدأ بـIch stelle وتذكر غرضًا ووجهة وضعه في Akkusativ؛ الجملة4 تبدأ بـIch lege وتذكر غرضًا آخر ووجهة وضعه في Akkusativ. اختر حروف الجر من قائمة الدرس. Wo وWohin سؤالان يساعدانك على اختيار المعنى، ولا يلزم إضافتهما كجملتين إلى جوابك. لا نقل أثاث فعلي أو عنوان شخصي أو تسجيل مطلوب.",
+      "finding": "أربع جمل خبرية مع الجهر، لا ست جمل بإضافة Wo/Wohin ولا أسئلة إلزامية. النموذج 136 حرفًا فوق حد 120، وطلب الأداء مطابق.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE"
+      ],
+      "items": [
+        {
+          "text": "الجملة 1: Das Sofa steht an der Wand.",
+          "finding": "الجملة 1 تصف موضع الأريكة بـ steht و an der Wand في الداتيف المؤنث."
+        },
+        {
+          "text": "الجملة 2: Das Buch liegt auf dem Tisch.",
+          "finding": "الجملة 2 تصف موضع كتاب بـ liegt و auf dem Tisch في الداتيف المذكر."
+        },
+        {
+          "text": "الجملة 3: Ich stelle den Sessel neben das Sofa.",
+          "finding": "الجملة 3 تبدأ Ich stelle؛ den Sessel مفعول و neben das Sofa وجهة في نصب المحايد."
+        },
+        {
+          "text": "الجملة 4: Ich lege die Zeitung auf den Nachttisch.",
+          "finding": "الجملة 4 تبدأ Ich lege؛ die Zeitung مفعول آخر، و auf den Nachttisch وجهة في نصب المذكر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q01",
+      "text": "أي سؤال تستخدمه لوصف مكان ثابت للكتاب؟",
+      "finding": "Wo يسأل عن موضع الكتاب في هذا المثال؛ لا نحكم بأن كل نشاط داخل مكان يجب أن يكون ساكنًا.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "Wo?",
+        "Wohin?",
+        "Wann?"
+      ],
+      "answer": "Wo?",
+      "sourceTaskIds": [
+        "DL-A2-11-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "Wo?",
+          "correct": true,
+          "finding": "Wo يسأل عن موضع الكتاب في المثال."
+        },
+        {
+          "text": "Wohin?",
+          "correct": false,
+          "finding": "Wohin يسأل عن الوجهة وليس الموضع المطلوب."
+        },
+        {
+          "text": "Wann?",
+          "correct": false,
+          "finding": "Wann يسأل عن الوقت لا المكان."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q02",
+      "text": "أكمل: Das Buch liegt auf ___ Tisch.",
+      "finding": "auf هنا تصف موضع الكتاب، وهي من حروف الجر المتغيرة؛ لذلك نستخدم Dativ للمذكر: auf dem Tisch. لا نعمم ذلك على كل حرف جر.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "den",
+        "dem",
+        "das"
+      ],
+      "answer": "dem",
+      "sourceTaskIds": [
+        "DL-A2-11-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "den",
+          "correct": false,
+          "finding": "den للمذكر المنصوب؛ هنا وصف موضع على الطاولة."
+        },
+        {
+          "text": "dem",
+          "correct": true,
+          "finding": "dem داتيف مذكر يناسب موضع الكتاب."
+        },
+        {
+          "text": "das",
+          "correct": false,
+          "finding": "das لا يطابق جنس Tisch المذكر ولا داتيفه."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q03",
+      "text": "أكمل: Ich lege das Buch auf ___ Tisch.",
+      "finding": "auf هنا تحدد وجهة وضع الكتاب، فتأتي مع Akkusativ للمذكر: auf den Tisch. ليست الحركة وحدها قاعدة لكل حرف جر.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "dem",
+        "der",
+        "den"
+      ],
+      "answer": "den",
+      "sourceTaskIds": [
+        "DL-A2-11-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "dem",
+          "correct": false,
+          "finding": "dem داتيف مكان، لا وجهة الوضع المحددة."
+        },
+        {
+          "text": "der",
+          "correct": false,
+          "finding": "der ليس نصب المذكر Tisch بعد auf هنا."
+        },
+        {
+          "text": "den",
+          "correct": true,
+          "finding": "den نصب المذكر مع وجهة auf."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q04",
+      "text": "اختر الفعل الصحيح: Die Lampe ___ neben dem Bett.",
+      "finding": "steht يصف مكانًا ثابتًا لشيء قائم.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "stellt",
+        "steht",
+        "legen"
+      ],
+      "answer": "steht",
+      "sourceTaskIds": [
+        "DL-A2-11-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "stellt",
+          "correct": false,
+          "finding": "stellt يحتاج في هذا الاستعمال إلى فاعل وضع ومفعول؛ ليس وصف موضع المصباح."
+        },
+        {
+          "text": "steht",
+          "correct": true,
+          "finding": "steht يصف موضع مصباح قائم."
+        },
+        {
+          "text": "legen",
+          "correct": false,
+          "finding": "legen مصدر وليس فعلًا مصرفًا مع Die Lampe، ومعناه الوضع لا الموضع."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q05",
+      "text": "أي جملة تصف نقل الخزانة إلى الحائط؟",
+      "finding": "stellen يصف وضع الخزانة؛ den Schrank مفعول به، و an die Wand عبارة وجهة في Akkusativ مع حرف جر متغير.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "Ich stelle den Schrank an die Wand.",
+        "Der Schrank steht an der Wand.",
+        "Ich stehe an den Schrank."
+      ],
+      "answer": "Ich stelle den Schrank an die Wand.",
+      "sourceTaskIds": [
+        "DL-A2-11-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Ich stelle den Schrank an die Wand.",
+          "correct": true,
+          "finding": "وضع الخزانة بمحاذاة الجدار لا مجرد موقعها؛ المفعول وعبارة الوجهة في النصب."
+        },
+        {
+          "text": "Der Schrank steht an der Wand.",
+          "correct": false,
+          "finding": "جملة صحيحة لكنها تصف موضع الخزانة لا عملية وضعها."
+        },
+        {
+          "text": "Ich stehe an den Schrank.",
+          "correct": false,
+          "finding": "stehe لا يصف نقل الخزانة، و an den Schrank لا يطابق وصف وقوف هنا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q06",
+      "text": "أين يقع القاموس في غرفة Salma؟",
+      "finding": "يذكر النص das Wörterbuch liegt auf dem Tisch.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "تحت السرير.",
+        "بجانب المدخل.",
+        "على الطاولة."
+      ],
+      "answer": "على الطاولة.",
+      "sourceTaskIds": [
+        "DL-A2-11-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "تحت السرير.",
+          "correct": false,
+          "finding": "تحت السرير غير مذكور للقاموس."
+        },
+        {
+          "text": "بجانب المدخل.",
+          "correct": false,
+          "finding": "بجانب المدخل موقع الساحة لا القاموس."
+        },
+        {
+          "text": "على الطاولة.",
+          "correct": true,
+          "finding": "على الطاولة يطابق القراءة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q07",
+      "text": "أين تقع أقرب محطة ترام؟",
+      "finding": "النص يقول an der Ecke.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "خلف المنزل.",
+        "عند الزاوية.",
+        "داخل المطبخ."
+      ],
+      "answer": "عند الزاوية.",
+      "sourceTaskIds": [
+        "DL-A2-11-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "خلف المنزل.",
+          "correct": false,
+          "finding": "خلف المنزل موقع المساحة الخضراء لا المحطة."
+        },
+        {
+          "text": "عند الزاوية.",
+          "correct": true,
+          "finding": "عند الزاوية هو التفصيل المذكور."
+        },
+        {
+          "text": "داخل المطبخ.",
+          "correct": false,
+          "finding": "داخل المطبخ غير مذكور."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q08",
+      "text": "في **Ich lege mein Buch auf den Nachttisch**، هل تصف الجملة مكانًا ثابتًا أم انتقالًا؟",
+      "finding": "legen مع auf den يشير إلى نقل الكتاب، أي Wohin و Akkusativ.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "انتقال الكتاب إلى مكان.",
+        "مكان الكتاب الثابت.",
+        "وقت وضع الكتاب فقط."
+      ],
+      "answer": "انتقال الكتاب إلى مكان.",
+      "sourceTaskIds": [
+        "DL-A2-11-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "انتقال الكتاب إلى مكان.",
+          "correct": true,
+          "finding": "وجهة وضع الكتاب على منضدة السرير؛ الجملة مع lege."
+        },
+        {
+          "text": "مكان الكتاب الثابت.",
+          "correct": false,
+          "finding": "ليست مجرد خبر عن موضع الكتاب بفعل liegt."
+        },
+        {
+          "text": "وقت وضع الكتاب فقط.",
+          "correct": false,
+          "finding": "لا يوجد وقت وضع محدد، وليست الجملة عن الوقت فقط."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q09",
+      "text": "كيف تطلب من جار خفض الصوت بأدب؟",
+      "finding": "هذه صيغة طلب مهذبة وواضحة.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "Du bist mein Nachbar.",
+        "Ich bin sehr laut.",
+        "Könnten Sie bitte etwas leiser sein?"
+      ],
+      "answer": "Könnten Sie bitte etwas leiser sein?",
+      "sourceTaskIds": [
+        "DL-A2-11-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Du bist mein Nachbar.",
+          "correct": false,
+          "finding": "تصريح بعلاقة جوار لا مطالبة بخفض الصوت."
+        },
+        {
+          "text": "Ich bin sehr laut.",
+          "correct": false,
+          "finding": "وصف صوت المتكلم لا طلب للجار."
+        },
+        {
+          "text": "Könnten Sie bitte etwas leiser sein?",
+          "correct": true,
+          "finding": "طلب مهذب بصيغة الاحترام؛ المصدر sein في النهاية."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-Q10",
+      "text": "أي مثال يستخدم Dativ لمكان ثابت؟",
+      "finding": "المثال الصحيح هو Die Lampe steht neben dem Bett. يصف موضع المصباح؛ neben هنا مع Dativ للمحايد: dem Bett. المثالان الآخران يصفان وجهة وضع شيء.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "STAND",
+        "LIE",
+        "MODAL"
+      ],
+      "options": [
+        "Ich stelle die Lampe neben das Bett.",
+        "Die Lampe steht neben dem Bett.",
+        "Ich lege das Buch auf den Tisch."
+      ],
+      "answer": "Die Lampe steht neben dem Bett.",
+      "sourceTaskIds": [
+        "DL-A2-11-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "Ich stelle die Lampe neben das Bett.",
+          "correct": false,
+          "finding": "neben das Bett وجهة مع stelle، لا الموضع الداتيف."
+        },
+        {
+          "text": "Die Lampe steht neben dem Bett.",
+          "correct": true,
+          "finding": "Die Lampe steht neben dem Bett هو المثال الصحيح الثاني؛ أُصلحت الإحالة الخاطئة إلى الأول."
+        },
+        {
+          "text": "Ich lege das Buch auf den Tisch.",
+          "correct": false,
+          "finding": "auf den Tisch وجهة مع lege لا وصف مكان."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-P01",
+      "text": "اكتب أربع جمل خبرية عن غرفة متخيلة ثم اقرأها جهرًا: الجملة1 تصف موضع أثاث بـstehen وعبارة مكان في Dativ؛ الجملة2 تصف موضع كتاب بـliegen وعبارة مكان في Dativ؛ الجملة3 تبدأ بـIch stelle وتذكر غرضًا ووجهة وضعه في Akkusativ؛ الجملة4 تبدأ بـIch lege وتذكر غرضًا آخر ووجهة وضعه في Akkusativ. اختر حروف الجر من قائمة الدرس. Wo وWohin سؤالان يساعدانك على اختيار المعنى، ولا يلزم إضافتهما كجملتين إلى جوابك. لا نقل أثاث فعلي أو عنوان شخصي أو تسجيل مطلوب.",
+      "finding": "مطابقة المصدر والمعايير والنموذج ونمط الدليل؛ الحد الحرفي والإقرار ليسا تقييمًا آليًا للغة أو النطق.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "MODAL"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل خبرية بالترتيب: أثاث مع stehen، وكتاب مع liegen، ثم غرض مع Ich stelle وآخر مع Ich lege؛ قرأت الوصف جهرًا.",
+        "meaningClarity": "يمكن فهم موضع الغرض في الجملتين الأوليين ووجهة وضعه في الأخيرتين؛ الغرفة خيالية ولا يتطلب الجواب عنوانًا أو نقلًا فعليًا.",
+        "targetSkill": "مع حروف الدرس المتغيرة: عبارتا مكان في Dativ وعبارتا وجهة في Akkusativ؛ الفاعل والمفعول وفعل الموضع أو الوضع مناسبة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل خبرية بالترتيب: أثاث مع stehen، وكتاب مع liegen، ثم غرض مع Ich stelle وآخر مع Ich lege؛ قرأت الوصف جهرًا.",
+          "finding": "أربع جمل بالترتيب نفسه في T08 ونموذج 136 حرفًا فوق 120؛ الجهر شرط صريح في المصدر لا إضافة خفية."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يمكن فهم موضع الغرض في الجملتين الأوليين ووجهة وضعه في الأخيرتين؛ الغرفة خيالية ولا يتطلب الجواب عنوانًا أو نقلًا فعليًا.",
+          "finding": "غرفة متخيلة وعلاقتان مكانيتان وعمليتا وضع؛ لا بيانات سكن أو تغيير أثاث واقعي."
+        },
+        {
+          "key": "targetSkill",
+          "text": "مع حروف الدرس المتغيرة: عبارتا مكان في Dativ وعبارتا وجهة في Akkusativ؛ الفاعل والمفعول وفعل الموضع أو الوضع مناسبة.",
+          "finding": "الداتيف في الموضع والنصب في الوجهة مع الحروف المحددة؛ المفعول متميز عن عبارة الجر، ولا تصحيح آلي."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-P02",
+      "text": "اكتب أربع جمل لموقف جوار خيالي، كتابة فقط: الجملة1 تقول إنك تسكن وسط المدينة؛ الجملة2 تحدد الساحة بجانب المدخل؛ الجملة3 تذكر أن الساحة صاخبة اليوم؛ الجملة4 تطلب من جار خفض الصوت قليلًا بـKönnten Sie bitte etwas leiser sein? استخدم Dativ للمواقع مع in وneben. لا تضف أن الجار وافق أو أن مشكلة الضجيج انتهت. لا جهر أو شريك أو إرسال شكوى أو معلومات سكن حقيقية مطلوبة.",
+      "finding": "مطابقة المصدر والمعايير والنموذج ونمط الدليل؛ الحد الحرفي والإقرار ليسا تقييمًا آليًا للغة أو النطق.",
+      "sourceIds": [
+        "LOCAL",
+        "CASE",
+        "MODAL"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل: سكن في وسط المدينة، وساحة بجانب المدخل، وضجيج فيها اليوم، ثم طلب خفض الصوت؛ كتابة فقط.",
+        "meaningClarity": "المكان والمشكلة والطلب واضحة في موقف خيالي؛ لا ادعاء موافقة الجار أو انتهاء الضجيج ولا بيانات سكن حقيقية.",
+        "targetSkill": "عبارات المواقع مع in/neben في Dativ، وطلب يبدأ بـKönnten Sie مع bitte etwas leiser وsein في النهاية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل: سكن في وسط المدينة، وساحة بجانب المدخل، وضجيج فيها اليوم، ثم طلب خفض الصوت؛ كتابة فقط.",
+          "finding": "ثلاث جمل عن الوسط والساحة والضجيج ثم طلب؛ أربع جمل في T07 ب ونموذج 132 حرفًا فوق 110، كتابة فقط."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "المكان والمشكلة والطلب واضحة في موقف خيالي؛ لا ادعاء موافقة الجار أو انتهاء الضجيج ولا بيانات سكن حقيقية.",
+          "finding": "لا ينقل ضجيج المثال إلى منزل حقيقي ولا يفترض استجابة الجار."
+        },
+        {
+          "key": "targetSkill",
+          "text": "عبارات المواقع مع in/neben في Dativ، وطلب يبدأ بـKönnten Sie مع bitte etwas leiser وsein في النهاية.",
+          "finding": "in der / neben dem / im مواضع، و Könnten Sie … sein? طلب؛ معيار محدد مدعوم بالمصدر."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-11-AUD-PHR-01",
+      "text": "Der Nachbar. Die Nachbarin. Die Nachbarschaft. Die Innenstadt. Die Straßenbahnhaltestelle. Die Miete. Der Umzug. Der Schrank. Das Regal. Das Sofa. Der Teppich. Die Wand. Der Boden. Der Innenhof. Die Grünfläche. Der Sessel. Der Schreibtisch. Der Nachttisch. Einrichten. Richtet ein. Hängen. Hängt. Laut. Leise.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد؛ تعداد المفردات ليس كله جملًا كاملة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Der Nachbar.",
+          "finding": "Nachbar/Nachbarin مذكر ومؤنث، وجمعاهما Nachbarn/Nachbarinnen؛ زوجان في صف واحد لا هوية متعلم."
+        },
+        {
+          "text": "Die Nachbarin.",
+          "finding": "Nachbar/Nachbarin مذكر ومؤنث، وجمعاهما Nachbarn/Nachbarinnen؛ زوجان في صف واحد لا هوية متعلم."
+        },
+        {
+          "text": "Die Nachbarschaft.",
+          "finding": "وُضحت دلالات الجوار والجيرة والعلاقات، وأن جمع Nachbarschaften قليل الاستعمال وفق المرجع."
+        },
+        {
+          "text": "Die Innenstadt.",
+          "finding": "Innenstadt مؤنث وجمعه Innenstädte؛ وسط المدينة، لا اسم مدينة بعينها."
+        },
+        {
+          "text": "Die Straßenbahnhaltestelle.",
+          "finding": "Straßenbahnhaltestelle مؤنث وجمعه Straßenbahnhaltestellen؛ محطة ترام، وليس زمن رحلة أو مسافة."
+        },
+        {
+          "text": "Die Miete.",
+          "finding": "Miete مؤنث وجمعه Mieten؛ قيمة/بدل الإيجار هنا، لا إثبات سعر أو عقد."
+        },
+        {
+          "text": "Der Umzug.",
+          "finding": "Umzug مذكر وجمعه Umzüge؛ الانتقال إلى مسكن في السياق، لا كل معنى للكلمة."
+        },
+        {
+          "text": "Der Schrank.",
+          "finding": "Schrank مذكر وجمعه Schränke؛ خزانة مع اختلاف الأداة والحالة حسب الوظيفة."
+        },
+        {
+          "text": "Das Regal.",
+          "finding": "Regal محايد وجمعه Regale؛ وُسعت الترجمة إلى وحدة رفوف/رف دون تغيير لفظ التسجيل."
+        },
+        {
+          "text": "Das Sofa.",
+          "finding": "Sofa محايد وجمعه Sofas؛ الأريكة، و neben das Sofa يحدد وجهة في المثال."
+        },
+        {
+          "text": "Der Teppich.",
+          "finding": "Teppich مذكر وجمعه Teppiche؛ سجادة موضعها على الأرض في الحوار."
+        },
+        {
+          "text": "Die Wand.",
+          "finding": "Wand مؤنث وجمعه Wände؛ an der لمكان و an die لوجهة التعليق أو الوضع."
+        },
+        {
+          "text": "Der Boden.",
+          "finding": "Boden مذكر وجمعه Böden؛ أرضية في السياق لا سطح طاولة."
+        },
+        {
+          "text": "Der Innenhof.",
+          "finding": "Innenhof مذكر وجمعه Innenhöfe؛ ساحة داخلية، وتختلف علاقتها المكانية بين الأمثلة المستقلة."
+        },
+        {
+          "text": "Die Grünfläche.",
+          "finding": "Grünfläche مؤنث وجمعها Grünflächen؛ مساحة خضراء، لا دليل أنها حديقة عامة كبيرة."
+        },
+        {
+          "text": "Der Sessel.",
+          "finding": "Sessel مذكر وجمعه ثابت الشكل؛ كرسي بذراعين، غير لفظ Stuhl الأعم."
+        },
+        {
+          "text": "Der Schreibtisch.",
+          "finding": "Schreibtisch مذكر وجمعه Schreibtische؛ مكتب/طاولة كتابة، لا غرفة مكتب."
+        },
+        {
+          "text": "Der Nachttisch.",
+          "finding": "Nachttisch مذكر وجمعه Nachttische؛ منضدة بجانب السرير، وهي وجهة الكتاب في الاستماع."
+        },
+        {
+          "text": "Einrichten.",
+          "finding": "einrichten مصدر و richtet ein مضارع مفرد غائب في سياق التأثيث؛ ليس مصدرًا مع ein مفصولة."
+        },
+        {
+          "text": "Richtet ein.",
+          "finding": "einrichten مصدر و richtet ein مضارع مفرد غائب في سياق التأثيث؛ ليس مصدرًا مع ein مفصولة."
+        },
+        {
+          "text": "Hängen.",
+          "finding": "hängen / hängt يصلحان لمعنى التعليق أو الموضع؛ لا تختار الحالة من شكل الفعل وحده."
+        },
+        {
+          "text": "Hängt.",
+          "finding": "hängen / hängt يصلحان لمعنى التعليق أو الموضع؛ لا تختار الحالة من شكل الفعل وحده."
+        },
+        {
+          "text": "Laut.",
+          "finding": "laut/leise متعلقان بالصوت هنا: صاخب/هادئ؛ leiser خفض نسبي للصوت لا صمت مطلق."
+        },
+        {
+          "text": "Leise.",
+          "finding": "laut/leise متعلقان بالصوت هنا: صاخب/هادئ؛ leiser خفض نسبي للصوت لا صمت مطلق."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-11-AUD-MODEL-01",
+      "text": "Wo liegt das Buch? Auf dem Tisch. Wohin lege ich das Buch? Auf den Tisch. Der Schrank steht an der Wand. Ich stelle den Schrank an die Wand. Ich wohne in einer ruhigen Nachbarschaft. Die Miete ist hoch. Der Innenhof ist neben dem Haus. Meine Nachbarin ist sehr freundlich. Könnten Sie bitte etwas leiser sein?",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد؛ تعداد المفردات ليس كله جملًا كاملة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Wo liegt das Buch?",
+          "finding": "السؤال Wo عن موضع الكتاب، و liegt فاعله das Buch؛ ليس سؤال اتجاه أو وقت."
+        },
+        {
+          "text": "Auf dem Tisch.",
+          "finding": "جواب مختصر على Wo:auf dem Tisch، والداتيف للمذكر؛ ليس جملة ناقصة يجب رفضها في حوار."
+        },
+        {
+          "text": "Wohin lege ich das Buch?",
+          "finding": "Wohin مع lege يطلب وجهة وضع الكتاب؛ ich فاعل و das Buch مفعول."
+        },
+        {
+          "text": "Auf den Tisch.",
+          "finding": "auf den Tisch وجهة مع حرف متغير؛ لا يعني أن كل Wohin مع كل حرف يفرض den."
+        },
+        {
+          "text": "Der Schrank steht an der Wand.",
+          "finding": "Der Schrank فاعل و steht يصف موضعه بمحاذاة الجدار؛ an der Wand مكان."
+        },
+        {
+          "text": "Ich stelle den Schrank an die Wand.",
+          "finding": "Ich فاعل و den Schrank مفعول و an die Wand وجهة؛ stelle ليست stehe."
+        },
+        {
+          "text": "Ich wohne in einer ruhigen Nachbarschaft.",
+          "finding": "حي هادئ/جوار هادئ:in einer ruhigen Nachbarschaft، عبارة مكان بداتيف مؤنث مع تنكير وصفة معطاة، لا درس شامل في تصريف الصفات."
+        },
+        {
+          "text": "Die Miete ist hoch.",
+          "finding": "ارتفاع الإيجار مثال لغوي لا سعر فعلي أو مقارنة بين مدن."
+        },
+        {
+          "text": "Der Innenhof ist neben dem Haus.",
+          "finding": "الساحة بجانب المنزل في هذا المثال المستقل؛ لا يبدل مكانها بجانب المدخل في القراءة."
+        },
+        {
+          "text": "Meine Nachbarin ist sehr freundlich.",
+          "finding": "جارتي ودودة مثال بضمير الملكية، لا صفة لجميع الجيران أو دليل مساعدة محددة."
+        },
+        {
+          "text": "Könnten Sie bitte etwas leiser sein?",
+          "finding": "طلب مهذب بصيغة الاحترام؛ leiser أقل صوتًا و sein مصدر، وليس تصريحًا بأن الجار التزم."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-11-AUD-DLG-01",
+      "text": "Wie gefällt dir die neue Wohnung? Sehr gut. Das Sofa steht neben dem Fenster, und der Teppich liegt auf dem Boden. Wo steht der Schrank? Er steht an der Wand. Ich möchte das Regal neben das Sofa stellen. Und wie sind die Nachbarn? Sehr freundlich. Die Nachbarschaft ist ruhig, und es gibt einen kleinen Innenhof.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد؛ تعداد المفردات ليس كله جملًا كاملة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Wie gefällt dir die neue Wohnung?",
+          "finding": "Nora تسأل Fadi عن إعجابه بالمسكن؛ dir مع gefällt، لا طلب تغيير موقع أثاث."
+        },
+        {
+          "text": "Sehr gut. Das Sofa steht neben dem Fenster, und der Teppich liegt auf dem Boden.",
+          "finding": "Fadi معجب؛ الأريكة بجانب النافذة والسجادة على الأرض، مع steht/liegt بحسب الغرض؛ لا ننقل موضع أريكة Salma إلى هنا."
+        },
+        {
+          "text": "Wo steht der Schrank?",
+          "finding": "Wo تسأل عن موضع الخزانة تحديدًا، لا وجهة نقلها."
+        },
+        {
+          "text": "Er steht an der Wand. Ich möchte das Regal neben das Sofa stellen.",
+          "finding": "Er يعود إلى Schrank بمحاذاة الجدار؛ möchte … stellen رغبة في وضع Regal بجانب الأريكة، لا إخبار بأنه موضوع هناك الآن."
+        },
+        {
+          "text": "Und wie sind die Nachbarn?",
+          "finding": "سؤال عن الجيران بصيغة Wie، لا أين يسكنون أو عددهم."
+        },
+        {
+          "text": "Sehr freundlich. Die Nachbarschaft ist ruhig, und es gibt einen kleinen Innenhof.",
+          "finding": "يصفهم بالود والحي بالهدوء ويذكر وجود ساحة صغيرة؛ لا موضع محدد لهذه الساحة أو وعد بالمساعدة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-11-AUD-READ-01",
+      "text": "Salma wohnt in der Innenstadt. Die nächste Straßenbahnhaltestelle ist an der Ecke. Nach dem Umzug richtet sie ihr Wohnzimmer ein. Das Sofa steht an der Wand. Ein kleiner Tisch steht vor dem Sofa, und das Wörterbuch liegt auf dem Tisch. Salma hängt ein Bild über das Sofa. Ihre Nachbarin hilft ihr. Sie sagt: „Die Grünfläche ist hinter dem Haus, und der Innenhof ist neben dem Eingang.“ Salma ist froh, denn die Nachbarschaft ist ruhig.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد؛ تعداد المفردات ليس كله جملًا كاملة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Salma wohnt in der Innenstadt.",
+          "finding": "Salma تسكن وسط المدينة؛ لا اسم مدينة أو عنوان شخصي."
+        },
+        {
+          "text": "Die nächste Straßenbahnhaltestelle ist an der Ecke.",
+          "finding": "أقرب محطة ترام عند الزاوية؛ لا زمن مشي أو خلف المنزل."
+        },
+        {
+          "text": "Nach dem Umzug richtet sie ihr Wohnzimmer ein.",
+          "finding": "تؤثث غرفة الجلوس بعد الانتقال؛ richtet … ein وليس تغيير ترتيب الكلمات كيفما اتفق."
+        },
+        {
+          "text": "Das Sofa steht an der Wand.",
+          "finding": "أريكتها بمحاذاة الجدار؛ هذا موضع لا فعل نقل."
+        },
+        {
+          "text": "Ein kleiner Tisch steht vor dem Sofa, und das Wörterbuch liegt auf dem Tisch.",
+          "finding": "طاولة صغيرة أمام الأريكة، والقاموس على الطاولة؛ لا على الأرض أو بجانب المدخل."
+        },
+        {
+          "text": "Salma hängt ein Bild über das Sofa.",
+          "finding": "تعلق صورة فوق الأريكة؛ das Sofa بعدüber وجهة في النصب، لا وصف لحالة الصورة قبل التعليق."
+        },
+        {
+          "text": "Ihre Nachbarin hilft ihr.",
+          "finding": "جارتها تساعدها؛ ihr تشير إلى Salma، وليس إلى جماعة جيران غير مذكورة."
+        },
+        {
+          "text": "Sie sagt: „Die Grünfläche ist hinter dem Haus, und der Innenhof ist neben dem Eingang.“",
+          "finding": "الاقتباس يحدد المساحة الخضراء خلف المنزل والساحة بجانب المدخل؛ لا يُسأل عن حسم هوية المتكلمة من Sie وحدها."
+        },
+        {
+          "text": "Salma ist froh, denn die Nachbarschaft ist ruhig.",
+          "finding": "Salma سعيدة بسبب هدوء الجوار؛ denn يربط السبب، لا نتيجة سعر الإيجار أو مساحة الشقة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-11-AUD-LST-01",
+      "text": "Im Schlafzimmer steht das Bett an der Wand. Eine Lampe steht neben dem Bett. Ich lege mein Buch auf den Nachttisch. Dann stelle ich den Stuhl vor den Schreibtisch. Im Innenhof spielen zwei Kinder. Die Nachbarn sind freundlich.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة التاريخية محفوظة. لا استماع أو توليد أو اعتماد جديد؛ تعداد المفردات ليس كله جملًا كاملة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Im Schlafzimmer steht das Bett an der Wand.",
+          "finding": "السرير بمحاذاة الجدار داخل غرفة النوم؛ Im = in dem، وليس اتجاه نقل السرير."
+        },
+        {
+          "text": "Eine Lampe steht neben dem Bett.",
+          "finding": "مصباح بجانب السرير، مع neben dem Bett؛ لا نحوله إلى وجهة نصبية."
+        },
+        {
+          "text": "Ich lege mein Buch auf den Nachttisch.",
+          "finding": "المتكلم يضع كتابه على منضدة السرير؛ على den Nachttisch وجهة، ولا نص يحدد اسم الشخص أو جنسه."
+        },
+        {
+          "text": "Dann stelle ich den Stuhl vor den Schreibtisch.",
+          "finding": "ثم يضع الكرسي أمام المكتب؛ Stuhl مفعول و vor den Schreibtisch وجهة، لا جانب المكتب."
+        },
+        {
+          "text": "Im Innenhof spielen zwei Kinder.",
+          "finding": "طفلان يلعبان في الساحة؛ الحركة داخلها لا تنفي الداتيف Im Innenhof."
+        },
+        {
+          "text": "Die Nachbarn sind freundlich.",
+          "finding": "الجيران ودودون؛ لا يقول إنهم ساعدوا في نقل الأثاث أو وافقوا على طلب خفض الصوت."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-11-housing-neighborhood-wohin.md": "ff56649ddff4557329ba755b0bdc417079c5174d320b1eabb9af283b7e7c78f3",
+    "content/A2/lesson-11-housing-neighborhood-wohin.assessment.json": "f68ddaf7cb7b621f917f534ef84626edbdf80446aeb32e5f4050a10bb8f2f839"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-11-AUD-PHR-01": "5c50c70d5ff0cc7f7ed709e8950859626ccb635efd0f4b392adf79dc5237bcf4",
+    "DL-A2-11-AUD-MODEL-01": "29d7de02c33907a5b407db70931fdb4534bfabc007391c64cdc780314eabab74",
+    "DL-A2-11-AUD-DLG-01": "316dd6445335d11e1c52c1714d63e209460f261e87695ced97dbdd0d619d667b",
+    "DL-A2-11-AUD-READ-01": "bec89a4a62c61b2c34e39d2a7dc2ced823c629acd0c6daf25613fb92be0f5f0b",
+    "DL-A2-11-AUD-LST-01": "709c99c346ca53a57f97c921304a28c613699cd01a8b12ec34429940c245862b"
+  },
+  "preservation": {
+    "baseline": "ae107375443ae586c2a12444761f34a9e5d8b39c",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-11-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-11-AUD-MODEL-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-11-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-11-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-11-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 115,
+    "existingAudioConsistencyAssertionsUnchanged": true
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1984262,
+    "cacheVersion": "v76",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserResult": "PASS with documented forms-keyboard retry; intermittent chooser failure unresolved",
+    "axeScreenStates": 129,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 87,
+    "axeIncompleteNodeOccurrences": 198,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "Initial serial run:1440 PASS;390 failed waiting30000ms for filechooser at test_forms_keyboard.cjs:48.",
+      "Unmodified full forms test rerun in fresh profiles:1440 and390 PASS. Cause not established or claimed fixed."
+    ],
+    "browserEnvironment": "Locked npm dependencies plus Sparticuz143.0.4 and bundled al2023 libraries outside Git; no package/lock edits.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 29
+    },
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS",
+    "limits": [
+      "Not acoustic, physical-device, CEFR or WCAG certification.",
+      "Filechooser intermittency remains; a successful retry does not prove a fix.",
+      "Evidence bookkeeping is not automatic language/pronunciation assessment.",
+      "Prior A2.8/A2.9 recorded-text issues remain documented and unchanged.",
+      "No human reviewer prerequisite; no remote UI or Production test claimed."
+    ]
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "21ce2e4867e3640d3692f8cde4ec813cc128e248",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": true,
+    "remoteUiTested": false,
+    "reviewCommit": "faa380dee811f2c3d3fa7272ae94b1ab3a48f6b1",
+    "reviewHeadMatchedRemote": true,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "faa380dee811f2c3d3fa7272ae94b1ab3a48f6b1",
+    "implementationVercelStatus": "success",
+    "implementationDeploymentId": 6944181790,
+    "implementationDeploymentEnvironment": "Preview",
+    "implementationDeploymentState": "success",
+    "implementationPreviewUrl": "https://deutschlern-cruzrcrdh-balinader-2671s-projects.vercel.app",
+    "reviewVercelStatus": "failure",
+    "reviewVercelDescription": "Deployment rate limited — retry in 24 hours.",
+    "reviewDeploymentRecordAtCheck": null,
+    "productionDeploymentClaimed": false,
+    "redeploymentRetriesRequested": false
+  },
+  "campaign": {
+    "reviewedLessons": 28,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 25,
+    "next": "CR30/A2.12"
+  }
+}

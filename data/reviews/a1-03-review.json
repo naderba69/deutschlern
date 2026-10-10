@@ -1,0 +1,1169 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-03-city-cafe-hotel",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-03-v2",
+  "unitCount": 119,
+  "exerciseSubItemCount": 34,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "G",
+      "title": "Goethe — Deutsch Online A1, Redemittel und Grammatik",
+      "url": "https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf",
+      "scope": "قُرئ الجزآن0 و1 من3 في الاستخراج: Kapitel4 صيغ möchte الست والطلب/الحساب وNom/Akk، وKapitel5 السعر وصيغة التوجيه Verb+Sie. ليس كل PDF. لم نعتمد أخطاء الاستخراج Ich heißen وdu fahrst وWann fährt du."
+    },
+    {
+      "id": "W",
+      "title": "Duden — Wasser",
+      "url": "https://www.duden.de/rechtschreibung/Wasser",
+      "scope": "الجزآن0 و1، المدخل كاملًا: das Wasser ومعنى المادة/الماء المعدني، مع جموع متخصصة Wasser/Wässer. لا مثال مباشر يثبت ein Wasser كحصة؛ ذلك تفسير سياقي لغوي للمساعد، لا اقتباس من هذا المدخل."
+    },
+    {
+      "id": "H",
+      "title": "Duden — Haltestelle",
+      "url": "https://www.duden.de/rechtschreibung/Haltestelle",
+      "scope": "كامل: die Haltestelle/الحافلات والترام من أمثلة وسائل النقل العام، لا حصر الوقوف بهما."
+    },
+    {
+      "id": "M",
+      "title": "Duden — Museum",
+      "url": "https://www.duden.de/rechtschreibung/Museum",
+      "scope": "كامل: das Museum/die Museen، مؤسسة عرض مجموعات فنية أو علمية أو تقنية؛ لا تختزل بالأعمال الفنية وحدها."
+    },
+    {
+      "id": "GE",
+      "title": "Duden — gegenüber (Präposition)",
+      "url": "https://www.duden.de/rechtschreibung/gegenueber_Praeposition",
+      "scope": "كامل: مقابلة مكانية وDativ، مثل gegenüber dem Rathaus. لا الخلط بـneben. ملصق GoetheB1 في المدخل ليس حظرًا لاستعمال العبارة الجاهزة في A1."
+    },
+    {
+      "id": "MO",
+      "title": "Duden — mögen",
+      "url": "https://www.duden.de/rechtschreibung/moegen",
+      "scope": "كامل: du möchtest وich möchte gern kommen، KonjunktivII للرغبة عادة بمعنى حاضر؛ لا تعليم نمط ماضٍ للرغبة الحالية."
+    }
+  ],
+  "rejectedSources": [
+    {
+      "url": "https://www.verbformen.com/conjugation/konjunktiv/praeteritum/moegen.htm",
+      "reason": "رابط مخمن ولّد تصريف moegte لاسم moegen آليًا؛ رُفض، لا دليل على mögen."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/gegenueber",
+      "reason": "404؛ استُبدل بمدخل Präposition الصحيح."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/neben",
+      "reason": "404؛ ليس مرجعًا للشرح."
+    }
+  ],
+  "limitations": [
+    "المراجع6 لا تعني جلب مدخل مستقل لكل كلمة أو ترجمة عربية؛ بقية الأحكام اللغوية مراجعة المساعد المباشرة، وروابط sourceIds الفارغة لا تخفي ذلك.",
+    "وحدات المراجعة119 والبنود34 متداخلة؛ تعد الجملة والتمرين ومفتاحه والنموذج، وليست119 مهارة مستقلة.",
+    "بند listening-turn-02 يحوي ثلاث جمل، وبنود الحوار قد تحوي أكثر من جملة؛ روجعت المعاني كلها، لا مساواة عدد الوحدات بعدد الجمل.",
+    "الاختبارات حراس اتساق لا مصحح لغة مستقل؛ المربعات وحد الطول لا تقيس صحة النطق أو الأداء.",
+    "الصوت217أصلًا/474MP3 عالميًا محفوظ؛ لا توليد أو استماع جديد، وسياسة عرض النص لا تقيس الاستماع المستقل."
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-03-city-cafe-hotel.md": "05938b5c186e3a73899804e0b72ab342bd914c87186bb759f586085be996f4f6",
+    "content/A1/lesson-03-city-cafe-hotel.assessment.json": "bd3ed16b47904abba593ac6e20b9c4796db4bcd8a299b4430b9d7a5b7ee1bad0"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-03-AUD-DLG-01": "acf04c1c1362cafdad453a2c398c744ac9556771afe384fae6670fdbe7d5b42b",
+    "DL-A1-03-AUD-READ-01": "c5073c5c268b1a76f20b4f806ba338d5d859e9a9a6f5196ce84979adefea72ee",
+    "DL-A1-03-AUD-LST-01": "c5e7819ece86cdf00f91537875be1096093b60243b059b28ae43a07b673bd818"
+  },
+  "units": [
+    {
+      "id": "scope",
+      "text": "# A1.3 — في المدينة: المقهى والفندق\n\n**المدة:** 30–35 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس على جلستين) · **المهارات:** قراءة، كتابة، محادثة، مفردات، قواعد، واستماع اختياري\n\n**هدف التواصل:** أستطيع طلب شيء في مقهى، السؤال عن مكان، وفهم تعليمات بسيطة في المدينة.\n\n",
+      "finding": "30–35 دقيقة تقدير مرن، والاستماع اختياري. العنوان يحوي الفندق لكن التدريب الفندقي جملة طلب غرفة فقط، لا حجز كامل أو شهادة CEFR. لم نغير عدد المفردات أو الأهداف لتضخيم التغطية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| der Bahnhof | die Bahnhöfe | محطة القطار |",
+      "finding": "der Bahnhof/Bahnhöfe صحيحان؛ Q01 وT01 يطلبان معنى المحطة لا أن كل سفر يبدأ بها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Café | die Cafés | مقهى |",
+      "finding": "das Café/Cafés؛ الاحتفاظ بتمييز é، مكان طلب الشراب والطعام.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das Hotel | die Hotels | فندق |",
+      "finding": "das Hotel/Hotels؛ لا يثبت درس حجز بمجرد إدراج الكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Markt | die Märkte | السوق |",
+      "finding": "der Markt/Märkte؛ السوق لا السوبرماركت بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| das Museum | die Museen | المتحف |",
+      "finding": "das Museum/Museen؛ المتحف، وقد تكون المعروضات علمية أو تقنية أيضًا.",
+      "sourceIds": [
+        "M"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Straße | die Straßen | الشارع |",
+      "finding": "die Straße/Straßen؛ الشارع، ß محفوظة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Apotheke | die Apotheken | الصيدلية |",
+      "finding": "die Apotheke/Apotheken؛ الصيدلية، ونمط Nom مقابل der Apotheke المحتمل في Dativ لا يتناقضان.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| der Supermarkt | die Supermärkte | السوبرماركت/متجر المواد الغذائية بالخدمة الذاتية |",
+      "finding": "استبدل التعريف الفضفاض المتجر الكبير بالسوبرماركت/الغذاء والخدمة الذاتية؛ ليست ترجمة لكل متجر كبير.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| der Platz | die Plätze | الساحة |",
+      "finding": "der Platz/Plätze يعني الساحة في النص؛ للكلمة معانٍ أخرى بحسب السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Haltestelle | die Haltestellen | موقف نقل عام مثل الحافلة أو الترام |",
+      "finding": "die Haltestelle/Haltestellen؛ وسّع الشرح إلى موقف نقل عام، والحافلة/الترام أمثلة لا حصر.",
+      "sourceIds": [
+        "H"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| links / rechts | — | يسار / يمين |",
+      "finding": "links/rechts ظرفا اتجاه؛ الشرطة في الجمع ليست اسمين بلا جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| geradeaus | — | إلى الأمام مباشرة |",
+      "finding": "geradeaus إلى الأمام مباشرة؛ ليس يسارًا أو يمينًا ولا خلفًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| die Ecke | die Ecken | الزاوية |",
+      "finding": "die Ecke/Ecken؛ الزاوية، وتمهيد an der Ecke.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-01",
+      "text": "Entschuldigung, wo ist der Bahnhof? — عذرًا، أين محطة القطار؟",
+      "finding": "Entschuldigung تمهيد مهذب؛ wo للسؤال عن موقع المحطة.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-02",
+      "text": "Gehen Sie geradeaus und dann links. — اذهب مباشرة ثم يسارًا. (رسمي)",
+      "finding": "Gehen Sie ترتيب رسمي صالح؛ geradeaus ثم links. وجود Sie وحده لا يضمن أثر النبرة؛ شرحت bitte.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "text": "Das Café ist an der Ecke. — المقهى عند الزاوية.",
+      "finding": "an der Ecke عبارة موقع جاهزة، لا أمر بالسير.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-04",
+      "text": "Ist das Museum weit? — هل المتحف بعيد؟",
+      "finding": "Ist يسبق الفاعل في سؤال نعم/لا؛ weit بعيد.",
+      "sourceIds": []
+    },
+    {
+      "id": "phrase-05",
+      "text": "Nein, es ist in der Nähe. — لا، إنه قريب.",
+      "finding": "es يعود على Museum المحايد، in der Nähe قرب لا مسافة عددية.",
+      "sourceIds": []
+    },
+    {
+      "id": "route-question",
+      "text": "Wie komme ich zum Bahnhof?",
+      "finding": "سؤال عن كيفية الوصول، مقابل wo للموقع. zum=zu dem؛ أُعيد كتدريب نقل كتابي T07.4 لربط Q06؛ ليس سؤالًا من تسجيل المتحف.",
+      "sourceIds": []
+    },
+    {
+      "id": "request-rule",
+      "text": "möchte + Infinitiv / أودّ",
+      "finding": "أضيف أن möchte هنا رغبة حالية لا ماضٍ، والفعل الآخر bezahlen في نهاية المثال بصيغة المصدر. لا يلزم إدخال تصريف Konjunktiv كله.",
+      "sourceIds": [
+        "G",
+        "MO"
+      ]
+    },
+    {
+      "id": "moechte-01",
+      "text": "ich möchte",
+      "finding": "صيغة المتكلم المفرد، توافق Q03.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "moechte-02",
+      "text": "du möchtest",
+      "finding": "صيغة المخاطب المفرد، توافق Q04.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "moechte-03",
+      "text": "er/sie/es möchte",
+      "finding": "أُضيف es الذي غاب عن صف المفرد الثالث.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "moechte-04",
+      "text": "wir möchten",
+      "finding": "صيغة المتكلم الجمع؛ جملة Wir möchten eine Suppe ممكنة لطلب مشترك، لا عدد حصص مفروض.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "moechte-05",
+      "text": "ihr möchtet",
+      "finding": "صيغة المخاطب الجمع غير الرسمي؛ لا خلط مع möchten.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "moechte-06",
+      "text": "sie/Sie möchten",
+      "finding": "sie للجمع وSie للاحترام كلاهما möchten؛ لا مساواة sie المفرد بهذه الصيغة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "request-01",
+      "text": "Ich möchte einen Tee, bitte. — أودّ شايًا من فضلك.",
+      "finding": "einen Tee مفعول مذكر، bitte للتلطيف؛ عدلت العربية إلى أودّ.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "request-02",
+      "text": "Ich möchte eine Suppe. — أودّ حساءً.",
+      "finding": "eine Suppe مفعول مؤنث؛ طلب حصة من حساء في سياق الخدمة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "request-03",
+      "text": "Ich möchte ein Wasser. — أودّ ماءً.",
+      "finding": "ein Wasser مقبول كطلب حصة في الخدمة، لا قاعدة عدّ للمادة ولا حجم محدد.",
+      "sourceIds": [
+        "W"
+      ]
+    },
+    {
+      "id": "request-04",
+      "text": "Ich möchte bezahlen. — أودّ أن أدفع.",
+      "finding": "bezahlen مصدر بعد möchte، لا تصريف إضافي.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "case-rule",
+      "text": "einen Kaffee/einen Tee; eine Suppe; ein Wasser",
+      "finding": "أداة المفعول في أمثلة Akkusativ، مع تذكير A1.2. لا ادعاء أن كل عبارة بعد أي طلب تحمل النمط نفسه.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "water-serving",
+      "text": "ein Wasser",
+      "finding": "أبقيت الكلام المسجل حرفيًا. حصة حسب المكان قد تكون كأسًا أو قارورة؛ الإيضاح حكم سياقي للمساعد، وDuden يثبت المحايد والمادة لا هذه العبارة بعينها. لا نفي مطلق للجمع.",
+      "sourceIds": [
+        "W"
+      ]
+    },
+    {
+      "id": "hotel-model",
+      "text": "das Zimmer; Ich möchte ein Zimmer, bitte.",
+      "finding": "أضيف قبل السؤال Q04 وتمرين T03.5 حتى لا يُفترض اسم غير مدرب. المثال طلب بسيط، لا تأكيد توافر غرفة أو تدريب حجز.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-01",
+      "text": "**der Tee / der Kaffee** — الشاي / القهوة؛ في طلب حصة: einen Tee / einen Kaffee.",
+      "finding": "يربط جنس Tee/Kaffee بأداة الطلب، لا مجرد حفظ einen.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-02",
+      "text": "**die Suppe** — الحساء؛ eine Suppe في المثال.",
+      "finding": "جنس Suppe مؤنث، والأداة نفسها في هذا المثال المنصوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "text": "**ein Stück Kuchen** — قطعة كعك؛ الأداة تتبع das Stück المحايد، لا der Kuchen.",
+      "finding": "رأس المركب Stück محايد؛ Kuchen مذكر لكنه ليس رأس العبارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-04",
+      "text": "**trinken / bezahlen** — يشرب / يدفع الحساب.",
+      "finding": "trinken يدعم T03.4؛ bezahlen طلب دفع الحساب لا بيان طريقة الدفع.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-05",
+      "text": "**Was kostet das alles?** — كم ثمن هذا كله؟ السؤال عن مجموع الطلب.",
+      "finding": "das alles مجموع الطلب؛ لا سؤال سعر الشاي وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-06",
+      "text": "**Sechs Euro fünfzig** — ستة يورو وخمسون سنتًا: 6,50 €؛ مبلغ خيالي للحوار، لا سعر حالي أو سعر الشاي وحده.",
+      "finding": "6,50=ستة يورو وخمسون سنتًا؛ اختصار Cent مفهوم هنا، مبلغ خيالي.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-07",
+      "text": "**die Servicekraft / der Gast** — موظف/موظفة الخدمة / الزبون في المقهى.",
+      "finding": "Servicekraft لا يحدد جنس العامل؛ Gast هنا زبون المقهى. طوبق وسم المتكلم مع الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-08",
+      "text": "**weit / in der Nähe** — بعيد / قريب.",
+      "finding": "قرب/بعد غير عدديين، لا استنتاج زمن مشي منهما.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-09",
+      "text": "**dann / zuerst** — ثم / أولًا.",
+      "finding": "dann للتتابع وzuerst للأول، أُضيف لتصحيح T06.1.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-10",
+      "text": "**die Ampel** — إشارة المرور.",
+      "finding": "Ampel إشارة المرور؛ لم يغيّر النص المسجل.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-11",
+      "text": "**bis zur Ampel / bis zur Apotheke** — حتى إشارة المرور / حتى الصيدلية؛ zur = zu der.",
+      "finding": "bis zur Ampel/Apotheke يحد النهاية؛ zur=zu der كعبارة جاهزة لا جدول الحالات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "text": "**vom Bahnhof** — من المحطة؛ vom = von dem.",
+      "finding": "vom=von dem، نقطة انطلاق لا وصول.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-13",
+      "text": "**an der Ecke** — عند الزاوية.",
+      "finding": "an der Ecke موقع؛ لا اشتراط بلد أو زاوية بعينها خارج القصة.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-14",
+      "text": "**neben dem kleinen Markt** — بجانب السوق الصغير؛ dem kleinen صيغة جاهزة للفهم الآن.",
+      "finding": "neben بجانب، dem kleinen Markt صيغة جاهزة؛ لم نزعم شرح تصريف الصفات كاملًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-15",
+      "text": "**gegenüber dem Café** — مقابل المقهى؛ gegenüber هنا مع Dativ، لا تعني بجانبه.",
+      "finding": "gegenüber مقابل مع Dativ؛ فرّق عن neben.",
+      "sourceIds": [
+        "GE"
+      ]
+    },
+    {
+      "id": "gloss-16",
+      "text": "**das Stadtmuseum** — متحف المدينة.",
+      "finding": "Stadtmuseum متحف المدينة؛ Museum اختصار مرجعي في أسئلة الفهم.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-17",
+      "text": "**dort / an der Apotheke** — هناك / عند الصيدلية، لتحديد موضع الانعطاف في التدريب.",
+      "finding": "dort/an der Apotheke يحدد نقطة الانعطاف في المهمة المعطاة.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-18",
+      "text": "**bis zum Café / neben dem Museum** — حتى المقهى / بجانب المتحف؛ نماذج جاهزة للمسار الكتابي، لا جدول كامل لحروف الجر.",
+      "finding": "bis zum Café نهاية السير، neben dem Museum موقع؛ تبسيط مناسب لأمثلة معطاة لا تعلم جميع حروف الجر.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Servicekraft: Guten Tag! Was möchten Sie?",
+      "finding": "تحية الموظف وسؤال الطلب؛ حُدث الوسم Service إلى Servicekraft دون تغيير الصوت أو الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Gast: Ich möchte einen Tee und ein Stück Kuchen, bitte.",
+      "finding": "طلب شاي وقطعة كعك؛ einen وein صحيحان وفق رأس العبارة.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Servicekraft: Gern. Möchten Sie auch Wasser?",
+      "finding": "عرض ماء إضافي؛ Wasser بلا أداة مقبول هنا ولا يناقض طلب حصة ein Wasser.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Gast: Ja, ein Wasser, bitte. Was kostet das alles?",
+      "finding": "قبول حصة الماء والسؤال عن المجموع، لا عن الشاي وحده.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Servicekraft: Sechs Euro fünfzig.",
+      "finding": "المجموع6,50 بلا قائمة أسعار مفصلة؛ لا يلزم استنتاج ثمن كل عنصر.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Gast: Hier, bitte. Danke!",
+      "finding": "Hier, bitte أداء تسليم المبلغ في المشهد، لا برهان سمعي على قيمة المدفوع.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-07",
+      "text": "Servicekraft: Danke. Auf Wiedersehen!",
+      "finding": "الشكر والوداع؛ المقتطف مناسب لعرض أفعال الخدمة لا محادثة حقيقية مقيسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "price-context",
+      "text": "Sechs Euro fünfzig",
+      "finding": "السعر عن Tee+StückKuchen+Wasser في هذا الحوار؛ نموذج P01 لا يطلب اختراع سعر جديد.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "text-boundaries",
+      "text": "قراءة / استماع / تمرين9",
+      "finding": "أُعلن أنها ثلاثة مواقف خيالية مستقلة؛ المقابلة بالمقهى في القراءة لا تنقض بجانبه في الاستماع. لا نغيّر تسجيلًا لفرض خريطة واحدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "text": "Das Café „Am Platz“ ist neben dem kleinen Markt.",
+      "finding": "مقهى Am Platz بجانب السوق الصغير؛ اسم المقهى ليس وصفًا عامًا لكل مدينة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Vom Bahnhof gehen Sie geradeaus bis zur Ampel.",
+      "finding": "من المحطة مباشرة حتى الإشارة، وليس يسارًا أولًا؛ هذا دليل T06.1 الجديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Dann gehen Sie rechts.",
+      "finding": "rechts بعد بلوغ الإشارة وفق التسلسل؛ جواب سؤال2.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Das Café ist an der Ecke.",
+      "finding": "موقع المقهى عند الزاوية؛ قد يجتمع مع كونه بجانب السوق، ولا ينفي وحده قرب المحطة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Das Stadtmuseum ist gegenüber dem Café.",
+      "finding": "متحف المدينة مقابل المقهى؛ gegenüber ليس neben.",
+      "sourceIds": [
+        "GE"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Die Apotheke ist neben dem Hotel.",
+      "finding": "الصيدلية بجانب الفندق؛ نص صريح يجيب سؤال4 وT06.3.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wo ist das Café?",
+      "finding": "الجواب النموذجي Neben dem kleinen Markt؛ An der Ecke بديل صحيح أيضًا، لأن السؤال مفتوح عن المكان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was macht man an der Ampel?",
+      "finding": "عند الإشارة الاتجاه يمين؛ نموذج An der Ampel gehen Sie nach rechts صالح.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Wo ist das Stadtmuseum?",
+      "finding": "Gegenüber dem Café؛ لا جواب من نص الاستماع المستقل.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was ist neben dem Hotel?",
+      "finding": "Die Apotheke؛ فاعل مكتوب بالنص.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-turn-01",
+      "text": "Entschuldigung, wie komme ich zum Museum?",
+      "finding": "سؤال عن Museum، لا Bahnhof؛ لهذا أُضيف تدريب Q06 الكتابي مستقلًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-turn-02",
+      "text": "Gehen Sie geradeaus bis zum Platz. Dann gehen Sie links. Das Museum ist neben dem Café.",
+      "finding": "ثلاث جمل اتجاه: مباشرة حتى الساحة، ثم يسار، المتحف بجانب المقهى؛ لا مقابل المقهى هنا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-turn-03",
+      "text": "Vielen Dank!",
+      "finding": "Vielen Dank! شكر مناسب بعد الإفادة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-turn-04",
+      "text": "Bitte schön.",
+      "finding": "Bitte schön رد الشكر في هذا السياق، لا ثمن أو معلومة طريق جديدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wohin möchte die Person gehen?",
+      "finding": "zum Museum؛ السؤال يستعمل möchte لاستعادة مقصد السؤال المسجل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Geht sie am Platz nach links oder rechts?",
+      "finding": "links؛ sie توافق Person المؤنثة نحويًا، ولا تدل على جنس المتكلم.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was ist neben dem Café?",
+      "finding": "Das Museum؛ جواب يستند إلى الجملة الصريحة لا النص الآخر.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-03-T01",
+      "text": "اكتب الاسم كاملًا مع أداة الرفع كما في جدول المفردات؛ المطلوب تسمية المكان، لا تصريف أداة بعد حرف الجر العربي. اختر من: **die Apotheke / das Museum / der Bahnhof / die Haltestelle**.\n\n1. أشتري الدواء من ______.\n2. أشاهد معروضات في ______.\n3. أستقل القطار من ______.\n4. أنتظر الحافلة عند ______.",
+      "finding": "أزيل تركيب عربي مع der Apotheke/der Haltestelle مبهم الحالة؛ الاسم الكامل+Nominativ الآن صريح. لا ندعي أن der Apotheke خطأ في Dativ.",
+      "sourceIds": [],
+      "items": [
+        "1: die Apotheke؛ دواء، مع أداة الرفع المطلوبة.",
+        "2: das Museum؛ معروضات لا ضرورة أن تكون فنًا.",
+        "3: der Bahnhof؛ القطار.",
+        "4: die Haltestelle؛ الحافلة مثال نقل عام."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T02",
+      "text": "1. **links** = أ. يمين ب. يسار\n2. **geradeaus** = أ. مباشرة ب. خلف\n3. **rechts** = أ. يسار ب. يمين",
+      "finding": "ثلاثة اتجاهات، كل مفتاح يطابق المعنى المقصود.",
+      "sourceIds": [],
+      "items": [
+        "links: ب، يسار؛ أ مشتت يمين.",
+        "geradeaus: أ، مباشرة؛ ب خلف ليس المعنى.",
+        "rechts: ب، يمين؛ أ يسار."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T03",
+      "text": "1. Ich ______ einen Tee.\n2. Du ______ bezahlen.\n3. Wir ______ eine Suppe.\n4. Was ______ Sie trinken?\n5. Du ______ ein Zimmer.",
+      "finding": "أربع صيغ موجودة وإضافة Zimmer خامسة لضمان تعلم اسم Q04، مع شرح trinken.",
+      "sourceIds": [],
+      "items": [
+        "Ich → möchte، einen Tee صحيح.",
+        "Du → möchtest، bezahlen مصدر نهائي.",
+        "Wir → möchten، eine Suppe يمكن طلبها للمجموعة؛ لا يلزم تغيير الجمع.",
+        "Was möchten Sie trinken?؛ Sie الرسمية لا sie المفرد، trinken مشروح.",
+        "Du möchtest ein Zimmer. أضيف الاسم والنمط قبل Q04؛ جملة رغبة للتصريف وليست قول الزبون عن نفسه."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T04",
+      "text": "1. Ich möchte ______ Kaffee. (einen / eine)\n2. Ich möchte ______ Suppe. (ein / eine)\n3. Ich möchte ______ Wasser. (ein / einen)",
+      "finding": "الأدوات مرتبطة بجنس المفعول، ليست قاعدة آلية لكل طلب.",
+      "sourceIds": [],
+      "items": [
+        "einen Kaffee؛ مذكر Akkusativ، لا eine.",
+        "eine Suppe؛ مؤنث، لا ein.",
+        "ein Wasser؛ محايد، لا einen، وحصة بحسب السياق."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T05",
+      "text": "في هذا المقتطف **الزبون يبدأ بالتحية المنفردة**، فيرد الموظف ويسأل عن الطلب، ثم يطلب الزبون ويسأل عن السعر. هو مقتطف ينتهي قبل جواب السعر، وليس حوار خدمة كاملًا:\n\n- أ. **Gast:** Was kostet der Tee?\n- ب. **Gast:** Guten Tag!\n- ج. **Gast:** Ich möchte einen Tee, bitte.\n- د. **Servicekraft:** Guten Tag! Was möchten Sie?\n\nرتّب الوحدات بحسب الموقف المحدد؛ في الحياة يمكن أن يبدأ الموظف بالتحية أيضًا.",
+      "finding": "قُيد المتكلم الأول والأدوار لجعل المفتاح محددًا، مع الاعتراف ببدء الموظف الممكن خارج هذا القيد.",
+      "sourceIds": [],
+      "items": [
+        "ب: الزبون Guten Tag! يبدأ بحسب القيد الصريح.",
+        "د: الموظف يرد ويسأل Was möchten Sie?",
+        "ج: الزبون يطلب الشاي.",
+        "أ: الزبون يسأل سعر الشاي؛ المقتطف ينتهي قبل الجواب."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T06",
+      "text": "حدّد صحيح/خطأ بحسب نص القراءة، وصحّح الخطأ:\n\n1. Vom Bahnhof gehen Sie zuerst links.\n2. Das Museum ist gegenüber dem Café.\n3. Die Apotheke ist neben dem Hotel.",
+      "finding": "استُبدل النفي غير المسند بتناقض صريح لاتجاه البداية، وأضيف تصحيح الخطأ.",
+      "sourceIds": [],
+      "items": [
+        "1: خطأ؛ النص يبدأ geradeaus لا links. الجملة السابقة Das Café ist am Bahnhof لم يكن نفيها لازمًا من النص فاستُبدلت.",
+        "2: صحيح؛ Stadtmuseum هو Museum المقصود، gegenüber dem Café.",
+        "3: صحيح؛ Apotheke neben Hotel صريح."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T07",
+      "text": "أجب عن الأسئلة الثلاثة في فقرة الاستماع بجمل قصيرة بالألمانية. إذا قرأت النص فهذا فهم كتابي، لا اجتياز سمعي.\n\n4. تدريب كتابي مستقل: اكتب سؤال الطريق إلى محطة القطار من فقرة2: **Wie komme ich zum Bahnhof?**. هذا ليس سؤالًا عن بيانات تسجيل المتحف.",
+      "finding": "الأسئلة الثلاثة للنص، والرابع نقل كتابي مستقل؛ لا ترقية قراءة التفريغ إلى اجتياز سمعي.",
+      "sourceIds": [],
+      "items": [
+        "1: Die Person möchte zum Museum gehen.",
+        "2: Sie geht am Platz nach links. sie عائد نحوي لا استنتاج جنس.",
+        "3: Das Museum ist neben dem Café.",
+        "4: Wie komme ich zum Bahnhof? نقل كتابي من فقرة2 لا سؤال مسموع جديد."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T08",
+      "text": "اكتب أقوال الزبون في أربع وحدات قصيرة: التحية، وطلب مشروب وطعام بصيغة Ich möchte … bitte، والسؤال عن السعر بـWas kostet …?، والشكر. اختر Tee مع Suppe أو ein Stück Kuchen من أمثلة الدرس. اقرأ الأقوال الأربعة بصوت مرتفع بنفسك؛ لا يلزم شريك أو كتابة رد العامل أو اختراع سعر أو تسجيل صوتك.",
+      "finding": "تطابق مع P01: أربع وحدات، طلب طعام وشراب والسعر والشكر والتحية وقراءة فردية.",
+      "sourceIds": [],
+      "items": [
+        "تحية Guten Tag!",
+        "طلب مشروب وطعام في وحدة واحدة، مثال einen Tee und eine Suppe.",
+        "سؤال عن مجموع السعر Was kostet das alles?",
+        "شكر Danke!؛ تُقرأ الوحدات الأربع منفردًا، لا شريك أو تسجيل."
+      ]
+    },
+    {
+      "id": "DL-A1-03-T09",
+      "text": "استخدم المسار الخيالي المكتوب في تمرين9: تبدأ من Bahnhof باتجاه Apotheke أمامك عند التقاطع؛ انعطف هناك يمينًا، ثم تابع مباشرة حتى Café، وMuseum بجانب Café. اكتب بالألمانية ثلاث تعليمات بصيغة Sie تحافظ على الترتيب ونقطة الانعطاف والوجهة، ثم أضف جملة مكان تستعمل neben. هذه مهمة كتابة من مسار معطى؛ الرسم اختياري ولا يلزم الكلام أو رفع صورة.\n\nنقطة البداية واتجاه النظر محددان: المحطة خلفك والصيدلية أمامك على الشارع نفسه عند التقاطع. الشارع الذي على يمينك عند الصيدلية ينتهي بالمقهى. المتحف بجانب المقهى، ولا تحتاج إلى الذهاب إليه. يمكنك رسم هذه العلاقات للمساعدة، لكن المطلوب إعادة صياغة المسار المكتوب لا اختبار قراءة خريطة بصرية.\n\nنمط التوجيه: **Gehen Sie bitte geradeaus.** لا تخلط بين تعليمات السير وجملة موقع مثل **Das Café ist neben dem Museum.**",
+      "finding": "استُبدلت خريطة غير محددة بمسار مكتوب محدد واتجاه بداية؛3تعليمات+جملة مكان، يطابق P02 الكتابي ولا يدعي تقييم خريطة بصرية.",
+      "sourceIds": [],
+      "items": [
+        "من المحطة مباشرة حتى Apotheke أمامك.",
+        "الانعطاف rechts عند الصيدلية/dort.",
+        "المتابعة مباشرة حتى Café.",
+        "جملة موقع Das Café ist neben dem Museum. كتابة فقط؛ الرسم اختياري."
+      ]
+    },
+    {
+      "id": "ordered-dialogue-01",
+      "text": "Guten Tag!",
+      "finding": "ب: Gast يبدأ وفق التعليمة المحددة.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-02",
+      "text": "Guten Tag! Was möchten Sie?",
+      "finding": "د: Servicekraft يرد ويستفسر عن الطلب.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-03",
+      "text": "Ich möchte einen Tee, bitte.",
+      "finding": "ج: Gast يطلب بأداة Akkusativ.",
+      "sourceIds": []
+    },
+    {
+      "id": "ordered-dialogue-04",
+      "text": "Was kostet der Tee?",
+      "finding": "أ: Gast يسأل عن الشاي لا مجموع الحوار المسجل المختلف.",
+      "sourceIds": []
+    },
+    {
+      "id": "cafe-model-01",
+      "text": "Guten Tag!",
+      "finding": "تحية واحدة تفي بالمطلب.",
+      "sourceIds": []
+    },
+    {
+      "id": "cafe-model-02",
+      "text": "Ich möchte einen Tee und eine Suppe, bitte.",
+      "finding": "الطعام والشراب كلاهما موجودان؛ لا إلزام بطعام لم يشرح.",
+      "sourceIds": []
+    },
+    {
+      "id": "cafe-model-03",
+      "text": "Was kostet das alles?",
+      "finding": "سؤال السعر الموجود في T08 كان غائبًا عن P01؛ أصبح متطابقًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "cafe-model-04",
+      "text": "Danke!",
+      "finding": "شكر النهاية؛ هذه أقوال زبون، لا ردود موظف مزعومة.",
+      "sourceIds": []
+    },
+    {
+      "id": "route-model-01",
+      "text": "Gehen Sie bitte geradeaus bis zur Apotheke.",
+      "finding": "تعليمة1: النهاية الصيدلية أمام المحطة، جهة النظر محددة في المدخل.",
+      "sourceIds": []
+    },
+    {
+      "id": "route-model-02",
+      "text": "Gehen Sie dort rechts.",
+      "finding": "تعليمة2: dort يعود على الصيدلية، يمين هناك.",
+      "sourceIds": []
+    },
+    {
+      "id": "route-model-03",
+      "text": "Gehen Sie geradeaus bis zum Café.",
+      "finding": "تعليمة3: نهاية المسار المقهى.",
+      "sourceIds": []
+    },
+    {
+      "id": "route-model-04",
+      "text": "Das Café ist neben dem Museum.",
+      "finding": "جملة4: موقع، لا تعليمة سير رابعة؛ لا يلزم الذهاب إلى المتحف.",
+      "sourceIds": []
+    },
+    {
+      "id": "map-scenario",
+      "text": "Bahnhof → geradeaus Apotheke → rechts → geradeaus Café; Museum neben Café",
+      "finding": "نقاط وعلاقات خيالية معطاة نصيًا؛ مع وجود اتجاه البداية والتقاطع لا يحتاج المتعلم لاختراع خريطة أو تحقيق وجود الطريق. لا اختيار links مفروض مع rechts في طريق لا يستلزمهما.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-03-Q01",
+      "text": "ما معنى der Bahnhof؟",
+      "finding": "المحطة وحدها، الفندق والمتحف مشتتان؛ T01.",
+      "sourceIds": [],
+      "options": [
+        "الفندق",
+        "محطة القطار",
+        "المتحف"
+      ],
+      "answer": "محطة القطار",
+      "explanation": "der Bahnhof تعني «محطة القطار».",
+      "sourceTaskIds": [
+        "DL-A1-03-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q02",
+      "text": "ما معنى geradeaus؟",
+      "finding": "إلى الأمام مباشرة وحدها، اليسار واليمين مشتتان؛ T02.",
+      "sourceIds": [],
+      "options": [
+        "إلى اليسار",
+        "إلى اليمين",
+        "إلى الأمام مباشرة"
+      ],
+      "answer": "إلى الأمام مباشرة",
+      "explanation": "geradeaus تعني «إلى الأمام مباشرة».",
+      "sourceTaskIds": [
+        "DL-A1-03-T02"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q03",
+      "text": "أكمل: Ich ___ einen Tee.",
+      "finding": "ich möchte؛ möchtest للمفرد المخاطب وmöchten للجمع/الرسمي.",
+      "sourceIds": [],
+      "options": [
+        "möchtest",
+        "möchte",
+        "möchten"
+      ],
+      "answer": "möchte",
+      "explanation": "مع ich نستخدم möchte.",
+      "sourceTaskIds": [
+        "DL-A1-03-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q04",
+      "text": "أكمل: Du ___ ein Zimmer.",
+      "finding": "du möchtest؛ مفرد المتكلم والجمع غير مطابقين؛ أضيف Zimmer للتدريب T03.5.",
+      "sourceIds": [],
+      "options": [
+        "möchte",
+        "möchtest",
+        "möchten"
+      ],
+      "answer": "möchtest",
+      "explanation": "مع du نستخدم möchtest. das Zimmer تعني الغرفة؛ دُرب الطلب في التمرين3.",
+      "sourceTaskIds": [
+        "DL-A1-03-T03"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q05",
+      "text": "أكمل طلب القهوة: Ich möchte ___ Kaffee.",
+      "finding": "einen Kaffee؛ eine مؤنث وein ليس علامة المنصوب المذكر هنا.",
+      "sourceIds": [],
+      "options": [
+        "einen",
+        "eine",
+        "ein"
+      ],
+      "answer": "einen",
+      "explanation": "der Kaffee مذكر؛ في هذا الطلب يأتي المفعول به في Akkusativ: einen Kaffee. لا يعني ذلك أن كل اسم بعد أي طلب يأخذ einen.",
+      "sourceTaskIds": [
+        "DL-A1-03-T04"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q06",
+      "text": "أي سؤال يطلب معرفة الطريق إلى محطة القطار؟",
+      "finding": "سؤال الطريق وحده؛ الآخران سعر/أكل. Q06 كان مرتبطًا بترتيب مقهى T05؛ أصبح T07.4 الكتابي، لا اختبار الاستماع.",
+      "sourceIds": [],
+      "options": [
+        "Wie komme ich zum Bahnhof?",
+        "Wie viel kostet das?",
+        "Was möchten Sie essen?"
+      ],
+      "answer": "Wie komme ich zum Bahnhof?",
+      "explanation": "Wie komme ich zum Bahnhof? يسأل عن الطريق.",
+      "sourceTaskIds": [
+        "DL-A1-03-T07"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q07",
+      "text": "أي عبارة تعطي تعليمات مهذبة للسير إلى الأمام؟",
+      "finding": "الأول تعليمة رسمية للأمام، الآخران سكن وطلب شراب؛ ربطه بـT09 الذي يدرب الصيغة نفسها.",
+      "sourceIds": [],
+      "options": [
+        "Gehen Sie bitte geradeaus.",
+        "Ich wohne neben dem Café.",
+        "Ich möchte einen Tee."
+      ],
+      "answer": "Gehen Sie bitte geradeaus.",
+      "explanation": "Gehen Sie bitte geradeaus طلب مهذب وواضح للاتجاه.",
+      "sourceTaskIds": [
+        "DL-A1-03-T09"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q08",
+      "text": "ما معنى das Museum؟",
+      "finding": "المتحف وحده؛ الصيدلية والسوق مشتتان؛ Q08 من T06 إلى T01 تدريب المفردة.",
+      "sourceIds": [],
+      "options": [
+        "الصيدلية",
+        "المتحف",
+        "السوق"
+      ],
+      "answer": "المتحف",
+      "explanation": "das Museum تعني «المتحف».",
+      "sourceTaskIds": [
+        "DL-A1-03-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q09",
+      "text": "ما معنى die Apotheke؟",
+      "finding": "الصيدلية وحدها؛ موقف الحافلة والساحة مشتتان؛ Q09 من T07 إلى T01، وليس تصريف möchte.",
+      "sourceIds": [],
+      "options": [
+        "الصيدلية",
+        "محطة الحافلة",
+        "الساحة"
+      ],
+      "answer": "الصيدلية",
+      "explanation": "die Apotheke تعني «الصيدلية».",
+      "sourceTaskIds": [
+        "DL-A1-03-T01"
+      ]
+    },
+    {
+      "id": "DL-A1-03-Q10",
+      "text": "أي صيغة طلب مهذبة في المقهى؟",
+      "finding": "الأول طلب متسق، الثاني يخلط sein بعبارة مفعول، الثالث تركيب غير صحيح؛ موقع bitte الأوسط مقبول، ويطابق هدفT08.",
+      "sourceIds": [],
+      "options": [
+        "Ich möchte bitte einen Tee.",
+        "Ich bin einen Tee.",
+        "Ich möchte du Tee."
+      ],
+      "answer": "Ich möchte bitte einen Tee.",
+      "explanation": "Ich möchte einen Tee صيغة طلب مناسبة؛ ويمكن إضافة bitte للتهذيب.",
+      "sourceTaskIds": [
+        "DL-A1-03-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-03-P01",
+      "text": "اكتب أقوال الزبون في أربع وحدات قصيرة: التحية، وطلب مشروب وطعام بصيغة Ich möchte … bitte، والسؤال عن السعر بـWas kostet …?، والشكر. اختر Tee مع Suppe أو ein Stück Kuchen من أمثلة الدرس. اقرأ الأقوال الأربعة بصوت مرتفع بنفسك؛ لا يلزم شريك أو كتابة رد العامل أو اختراع سعر أو تسجيل صوتك.",
+      "finding": "P01 مطابق لـT08، min70 والقراءة الجهرية واجبة بإقرار المتعلم. أربعة أقوال زبون لا قياس تفاعل حقيقي؛ النطق غير مصحح.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت التحية وطلب مشروب وطعام وسؤال السعر والشكر، وقرأت الأقوال الأربعة بصوت مرتفع.",
+        "meaningClarity": "المشروب والطعام المطلوبان واضحان، وسؤال السعر يعود على الطلب.",
+        "targetSkill": "أستعمل möchte مع ich وbitte، وأختار الأداة المناسبة مثل einen Tee/eine Suppe/ein Stück Kuchen وأصوغ سؤال السعر."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 70,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-03-T08"
+      ]
+    },
+    {
+      "id": "DL-A1-03-P02",
+      "text": "استخدم المسار الخيالي المكتوب في تمرين9: تبدأ من Bahnhof باتجاه Apotheke أمامك عند التقاطع؛ انعطف هناك يمينًا، ثم تابع مباشرة حتى Café، وMuseum بجانب Café. اكتب بالألمانية ثلاث تعليمات بصيغة Sie تحافظ على الترتيب ونقطة الانعطاف والوجهة، ثم أضف جملة مكان تستعمل neben. هذه مهمة كتابة من مسار معطى؛ الرسم اختياري ولا يلزم الكلام أو رفع صورة.",
+      "finding": "P02 مطابق لـT09، min100، قراءة/كتابة فقط، بلا كلام أو صورة لازمة. التصحيح الذاتي لا يثبت دقة الخريطة أو اللغة.",
+      "sourceIds": [],
+      "criteria": {
+        "taskCompletion": "كتبت ثلاث تعليمات من Bahnhof إلى Café عبر Apotheke ثم جملة مكان تربط Café وMuseum باستخدام neben.",
+        "meaningClarity": "أحافظ على السير مباشرة نحو الصيدلية ثم الانعطاف يمينًا عندها ثم المتابعة إلى المقهى، ولا أخلط المسار بنصّي الدرس الآخرين.",
+        "targetSkill": "أستخدم Gehen Sie مع geradeaus/rechts وصيغًا مثل bis zur Apotheke وbis zum Café، وأصف المكان بـneben dem Museum."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "sourceTaskIds": [
+        "DL-A1-03-T09"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "**Wo ist …?** → أين …؟",
+      "finding": "Wo ist… للسؤال عن مكان، مع معنى عربي صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-02",
+      "text": "**Gehen Sie geradeaus.** → اذهب مباشرة.",
+      "finding": "Gehen Sie geradeaus توجيه رسمي؛ يمكن إضافة bitte لا تغيير الوجهة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "text": "**Ich möchte einen Tee.** → أودّ شايًا.",
+      "finding": "möchte أودّ؛ einen Tee طلب مناسب.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "**Was kostet das?** → كم سعر ذلك؟",
+      "finding": "Was kostet das? سؤال الثمن لعنصر/مرجع معين؛ alles أضيف حين السؤال عن كل الطلب.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-03-AUD-DLG-01",
+      "text": "حوار المقهى: طلب مشروب وطعام",
+      "finding": "مراجعة التفريغ والوسم والربط فقط: الكلمات والمقاطع والأصوات والروابط والحالة ready/offer محفوظة؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-01.mp3",
+          "speaker": "Servicekraft",
+          "text": "Guten Tag! Was möchten Sie?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-02.mp3",
+          "speaker": "Gast",
+          "text": "Ich möchte einen Tee und ein Stück Kuchen, bitte.",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-03.mp3",
+          "speaker": "Servicekraft",
+          "text": "Gern. Möchten Sie auch Wasser?",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-04.mp3",
+          "speaker": "Gast",
+          "text": "Ja, ein Wasser, bitte. Was kostet das alles?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-05.mp3",
+          "speaker": "Servicekraft",
+          "text": "Sechs Euro fünfzig.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-06.mp3",
+          "speaker": "Gast",
+          "text": "Hier, bitte. Danke!",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-DLG-01-SEG-07.mp3",
+          "speaker": "Servicekraft",
+          "text": "Danke. Auf Wiedersehen!",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-03-AUD-READ-01",
+      "text": "قراءة: الطريق في المدينة",
+      "finding": "مراجعة التفريغ والوسم والربط فقط: الكلمات والمقاطع والأصوات والروابط والحالة ready/offer محفوظة؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-03-AUD-READ-01.mp3",
+          "speaker": "Narrator",
+          "text": "Das Café Am Platz ist neben dem kleinen Markt. Vom Bahnhof gehen Sie geradeaus bis zur Ampel. Dann gehen Sie rechts. Das Café ist an der Ecke. Das Stadtmuseum ist gegenüber dem Café. Die Apotheke ist neben dem Hotel.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    },
+    {
+      "id": "DL-A1-03-AUD-LST-01",
+      "text": "استماع: السؤال عن طريق المتحف",
+      "finding": "مراجعة التفريغ والوسم والربط فقط: الكلمات والمقاطع والأصوات والروابط والحالة ready/offer محفوظة؛ لا استماع أو اعتماد جديد.",
+      "sourceIds": [],
+      "segments": [
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-01.mp3",
+          "speaker": "Reisende Person",
+          "text": "Entschuldigung, wie komme ich zum Museum?",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-02.mp3",
+          "speaker": "Auskunftsperson",
+          "text": "Gehen Sie geradeaus bis zum Platz. Dann gehen Sie links. Das Museum ist neben dem Café.",
+          "voiceId": "voice-02"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-03.mp3",
+          "speaker": "Reisende Person",
+          "text": "Vielen Dank!",
+          "voiceId": "voice-03"
+        },
+        {
+          "src": "assets/audio/DL-A1-03-AUD-LST-01-SEG-04.mp3",
+          "speaker": "Auskunftsperson",
+          "text": "Bitte schön.",
+          "voiceId": "voice-02"
+        }
+      ],
+      "status": "ready",
+      "transcriptPolicy": "offer"
+    }
+  ],
+  "preservation": {
+    "baselineCommit": "97bdd61bf700a8fe448765296dcd88ba7da1812f",
+    "unchangedOtherLessons": 52,
+    "unchangedGate": true,
+    "unchangedGlobalAudioAssets": 217,
+    "unchangedTrackedMp3Blobs": 474,
+    "unchangedFiles": [
+      "app.js",
+      "styles.css",
+      "package.json",
+      "package-lock.json",
+      "data/audio-playlists.json",
+      "data/audio-asset-register.csv"
+    ],
+    "unchangedOutsideLessonCatalogRows": true
+  },
+  "testResults": {
+    "baselineGuard": "FAIL before fix: P01 missing price question",
+    "buildAndVerify": "PASS",
+    "cumulativeReviewGuards": 9,
+    "nodeSuites": [
+      "progression",
+      "session_persistence",
+      "daily_plan",
+      "study_time",
+      "service_worker"
+    ],
+    "browserSuites": [
+      "forms-keyboard",
+      "accessibility-audit",
+      "narrow-layout",
+      "accessibility-update",
+      "browser"
+    ],
+    "browserAllPass": true,
+    "chromium": "143.0.7499.0",
+    "playwright": "1.58.2",
+    "axeCore": "4.11.0",
+    "axeStates": 49,
+    "selectedRuleViolations": 0,
+    "incompleteRuleOccurrences": 27,
+    "incompleteNodeOccurrences": 75,
+    "narrowViewportStates": 126,
+    "serviceWorkerUpdateFixture": "v42 to v54, current assessment data; v1 rejection covered separately in VM",
+    "acousticReview": false,
+    "physicalDeviceTest": false
+  },
+  "delivery": {
+    "implementationCommit": "393b8feabadedb2ee05e1fe97e2979695d5834ab",
+    "branch": "arena/01a1036f-deutschlern",
+    "remoteHeadMatched": true,
+    "workingTreeCleanAfterImplementationPush": true,
+    "pullRequest": 1,
+    "pullRequestState": "OPEN",
+    "mergedAt": null,
+    "commitStatusAtCheck": "pending",
+    "statusesAtCheck": [],
+    "deploymentConfirmed": false
+  }
+}

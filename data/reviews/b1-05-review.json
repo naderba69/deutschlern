@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-05-cities-relative-clauses",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-05-v2",
+  "unitCount": 107,
+  "exerciseSubItemCount": 39,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "REL",
+      "title": "Lingolia — Relativsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/relativsaetze",
+      "scope": "جنس وعدد الموصول من المرجع؛ الحالة من وظيفة الضمير داخل التابعة وقد تختلف عن الرئيسية. الفواصل لازمة. الدرس يركز على der/die/das/den في الرفع والنصب، لا كل الحالات أو was/wo أو الموصول مع حرف جر.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PRON",
+      "title": "Lingolia — Relativpronomen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/pronomen/relativpronomen",
+      "scope": "جدول صيغ الرفع والنصب للأجناس والجمع؛ المذكر وحده يختلف شكله بين الحالتين هنا. توجد صيغ welcher وحالات أخرى لا تدخل مطلب الإنتاج الحالي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "الفاصلة والمصرف الأخير في التابعة، مع أمثلة على نسبتها إلى اسم. نُقيد الشرح بالأنماط المدروسة ولا نجعل فعل التابعة آخر كل جملة مركبة أو نعممه على كل مجموعة أفعال مركبة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CALM",
+      "title": "Duden — verkehrsberuhigt",
+      "url": "https://www.duden.de/rechtschreibung/verkehrsberuhigt",
+      "scope": "خلو الشارع من فرط حركة المرور العابرة أو تخفيفها؛ صُححت الترجمة العربية. ليس تلقائيًا منطقة مشاة أو ضمان سلامة أو تفسيرًا قانونيًا للافتات المرور.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "FOOT",
+      "title": "Duden — Fußgängerzone",
+      "url": "https://www.duden.de/rechtschreibung/Fuszgaengerzone",
+      "scope": "منطقة من شارع أو عدة شوارع للمشاة، مؤنثة والجمع Fußgängerzonen. لا ننقل التعريف المعجمي إلى نصيحة قانونية عن كل استثناء أو تصريح دخول في كل مدينة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "BANK",
+      "title": "Duden — Ufer",
+      "url": "https://www.duden.de/rechtschreibung/Ufer",
+      "scope": "das Ufer، والجمع die Ufer؛ حافة ماء لا النهر وحده، مع أمثلة أنهار وبحيرات. am Wasser في قصة الاستماع لا يحدد نوع المسطح المائي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "LINK",
+      "title": "Duden — Verbindung",
+      "url": "https://www.duden.de/rechtschreibung/Verbindung",
+      "scope": "المعنى المقصود Verkehrsverbindung: إمكانية الانتقال بين مكانين، لا المركبة نفسها. للكلمة معانٍ أخرى في الاتصالات والعلاقات والكيمياء لا نطالب بها هنا. قُرئ الجزآن 0 و 1.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "OLD",
+      "title": "Duden — Altstadt",
+      "url": "https://www.duden.de/rechtschreibung/Altstadt",
+      "scope": "الجزء الأقدم أو النواة التاريخية للمدينة؛ مؤنث وجمع Altstädte. لا يثبت هذا وجود Brückenfeld أو عنوانًا تاريخيًا رسميًا لقصة خيالية.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "LOC",
+      "title": "Duden — befinden",
+      "url": "https://www.duden.de/rechtschreibung/befinden",
+      "scope": "sich befinden بمعنى وجود شيء في موقع، وتصريف befindet/befand/hat befunden. لم نعمم معنى الموقع على الاستعمال غير الانعكاسي أو المعاني الأخرى.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "VIEW",
+      "title": "Duden — Aussichtspunkt",
+      "url": "https://www.duden.de/rechtschreibung/Aussichtspunkt",
+      "scope": "موضع يوفر إطلالة، والارتفاع وصف شائع لا شرط مطلق؛ مذكر والجمع Aussichtspunkte. صُحح وصف T01 ليقول غالبًا مرتفع بدل تعريف حصري بالارتفاع.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة، استماع اختياري، وصف مكان، قواعد، كتابة وجهر",
+      "finding": "زمن مقترح قابل للتقسيم، لا وعد بلوغ مستوى. الاستماع اختياري، والجهر في P02 مستقل عن تشغيل الملفات.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أصف مدينة أو حيًّا بجمل موصولة، وأميّز ضمير الوصل في حالتي الرفع والنصب.",
+      "finding": "وصف مدينة أو حي بالموصول الفاعل والمفعول، مع تمييز الحالة لا حفظ الشكل فقط.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "نصف هنا أسماءً بجمل موصولة في الرفع والنصب. يتحدد جنس ضمير الوصل وعدده من الاسم الذي يعود إليه، أما حالته الإعرابية فتتحدد بحسب دوره داخل جملة الوصل، لا حالة الاسم في الرئيسية. نفصل جملة الوصل بفاصلة؛ وإذا جاءت وسط الرئيسية نغلقها بفاصلة ثانية. في الأنماط الحاضرة المدروسة يأتي الفعل المصرف في نهاية جملة الوصل، لا بالضرورة في آخر الجملة المركبة كلها.",
+      "finding": "تقييد النطاق بأسماء في الرفع والنصب؛ حالة المرجع في الرئيسية لا تنسخ إلى الموصول، والفاصلتان للتابعة المدرجة والمصرف في نهاية التابعة لا كل النص.",
+      "sourceIds": [
+        "REL",
+        "SUB"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "تذكّر: **…, den viele Gäste besuchen**: الضمير den مفعول به، و viele Gäste فاعل جمع؛ besuchen هنا فعل مصرف مع الجمع وإن طابق شكل المصدر. لا نختار تصريف الفعل حسب الاسم الموصوف إذا لم يكن هو فاعل التابعة.",
+      "finding": "besuchen في المثال مصرف مع Gäste الجمع، لا مصدر غير مصرف؛ den مفعول لا يتحكم في تصريف الفعل.",
+      "sourceIds": [
+        "REL",
+        "SUB"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "النموذجان خياليان مكتوبان وغير مسجلين؛ لا يغيران الحوار أو القراءة أو الاستماع الموجود، ولا يمثلان خريطة أو تعليمات سفر حقيقية. لا يلزم نسخ عباراتهما حرفيًا، بل تحقيق مطالب المهمة باللغة المناسبة.",
+      "finding": "النموذجان مكتوبان غير مسجلين؛ لا يبدلان أي مقطع أو يدعيان خريطة حقيقية. المطلوب المعايير لا نسخ نموذج واحد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Altstadt | die Altstädte | البلدة القديمة |",
+      "finding": "مؤنث وجمع Altstädte؛ النواة القديمة في المدينة، لا دولة أو اسم مدينة مستقلًا. يوافق تعريف T01.",
+      "sourceIds": [
+        "OLD"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Viertel | die Viertel | الحيّ |",
+      "finding": "محايد وجمع Viertel بنفس شكل الاسم؛ المعنى الحي هنا لا ربع الكمية. نفرق Das Viertel المفرد عن Die Viertel الجمع في الأمثلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| der Marktplatz | die Marktplätze | ساحة السوق |",
+      "finding": "مذكر وجمع Marktplätze؛ ساحة السوق مكان، لا يلزم أن يكون مطابقًا للسوق الأسبوعي Markt بوصفه حدثًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Fußgängerzone | die Fußgängerzonen | منطقة مشاة |",
+      "finding": "مؤنث وجمع Fußgängerzonen؛ منطقة للمشاة قد تشمل أكثر من شارع، ولا تساوي كل شارع منخفض المرور.",
+      "sourceIds": [
+        "FOOT"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Sehenswürdigkeit | die Sehenswürdigkeiten | معلم سياحي |",
+      "finding": "مؤنث وجمع Sehenswürdigkeiten؛ معلم يستحق الزيارة، لا يضمن رسم دخول أو هيئة تصنيف سياحية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| das Ufer | die Ufer | ضفة/شاطئ ماء، مثل النهر أو البحيرة |",
+      "finding": "محايد وجمع Ufer؛ توسع المعنى إلى حافة ماء مع النهر والبحيرة مثالين، دون تغيير الألمانية المسجلة.",
+      "sourceIds": [
+        "BANK"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Grünanlage | die Grünanlagen | مساحة خضراء |",
+      "finding": "مؤنث وجمع Grünanlagen؛ مساحة خضراء، لا يلزم أن تكون مكان Park نفسه في نص آخر أو أنها زارتها لمجرد رؤيتها.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| der Aussichtspunkt | die Aussichtspunkte | نقطة إطلالة |",
+      "finding": "مذكر وجمع Aussichtspunkte؛ نقطة إطلالة غالبًا مرتفعة، لا تعريف يشترط جبلًا أو برجًا.",
+      "sourceIds": [
+        "VIEW"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| die Verbindung | die Verbindungen | وصلة/رابط مواصلات بين الأماكن (هنا) |",
+      "finding": "مؤنث وجمع Verbindungen؛ صُحح المعنى السياقي إلى رابط مواصلات بين الأماكن، لا اسم مركبة أو خط بعينه.",
+      "sourceIds": [
+        "LINK"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| der Stadtplan | die Stadtpläne | خريطة المدينة |",
+      "finding": "مذكر وجمع Stadtpläne؛ خريطة مدينة، لا نقطة إطلالة أو ضمان وجود خريطة تفاعلية في التطبيق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| zentral / am Stadtrand | — | في المركز / على أطراف المدينة |",
+      "finding": "zentral و am Stadtrand وصفان للمركز والأطراف، لا تصريف أو جمع. الجنوب من المركز لا يثبت الوقوع على الأطراف.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| lebendig / ruhig | — | حيويّ / هادئ |",
+      "finding": "lebendig و ruhig حيوية وهدوء في السياق؛ يمكن أن تكون البلدة حيوية ولها شوارع هادئة دون تناقض.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| sich befinden | befindet sich | يقع |",
+      "finding": "sich befinden انعكاسي بمعنى يقع/يوجد؛ befindet sich للمفرد. في التابعة يأتي sich بعد الموصول والمصرف أخيرًا.",
+      "sourceIds": [
+        "LOC"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| zu Fuß erreichbar | — | يمكن الوصول إليه مشيًا |",
+      "finding": "zu Fuß erreichbar صفة إمكان الوصول مشيًا، لا مصدر um … zu ولا إثبات أن المشي الوسيلة الوحيدة أو متاح لكل شخص.",
+      "sourceIds": []
+    },
+    {
+      "id": "pronoun-form-01",
+      "text": "der",
+      "finding": "صيغة فاعل وفق دور الضمير داخل التابعة؛ المذكر يميز der عن den.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Nominativ",
+      "gender": "masculine"
+    },
+    {
+      "id": "pronoun-form-02",
+      "text": "die",
+      "finding": "صيغة فاعل وفق دور الضمير داخل التابعة؛ الشكل مطابق في الرفع والنصب، فلا يستنتج الدور من الشكل وحده.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Nominativ",
+      "gender": "feminine"
+    },
+    {
+      "id": "pronoun-form-03",
+      "text": "das",
+      "finding": "صيغة فاعل وفق دور الضمير داخل التابعة؛ الشكل مطابق في الرفع والنصب، فلا يستنتج الدور من الشكل وحده.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Nominativ",
+      "gender": "neuter"
+    },
+    {
+      "id": "pronoun-form-04",
+      "text": "die",
+      "finding": "صيغة فاعل وفق دور الضمير داخل التابعة؛ الشكل مطابق في الرفع والنصب، فلا يستنتج الدور من الشكل وحده.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Nominativ",
+      "gender": "plural"
+    },
+    {
+      "id": "pronoun-form-05",
+      "text": "den",
+      "finding": "صيغة مفعول به وفق دور الضمير داخل التابعة؛ المذكر يميز der عن den.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Akkusativ",
+      "gender": "masculine"
+    },
+    {
+      "id": "pronoun-form-06",
+      "text": "die",
+      "finding": "صيغة مفعول به وفق دور الضمير داخل التابعة؛ الشكل مطابق في الرفع والنصب، فلا يستنتج الدور من الشكل وحده.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Akkusativ",
+      "gender": "feminine"
+    },
+    {
+      "id": "pronoun-form-07",
+      "text": "das",
+      "finding": "صيغة مفعول به وفق دور الضمير داخل التابعة؛ الشكل مطابق في الرفع والنصب، فلا يستنتج الدور من الشكل وحده.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Akkusativ",
+      "gender": "neuter"
+    },
+    {
+      "id": "pronoun-form-08",
+      "text": "die",
+      "finding": "صيغة مفعول به وفق دور الضمير داخل التابعة؛ الشكل مطابق في الرفع والنصب، فلا يستنتج الدور من الشكل وحده.",
+      "sourceIds": [
+        "REL",
+        "PRON"
+      ],
+      "case": "Akkusativ",
+      "gender": "plural"
+    },
+    {
+      "id": "grammar-01",
+      "text": "Der Marktplatz, der im Zentrum liegt, ist sehr lebendig.",
+      "finding": "der مذكر مفرد فاعل liegt في التابعة، و Marktplatz فاعل ist في الرئيسية؛ الفاصلتان تحيطان بالوصف، لا نضع ist داخل التابعة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Der Aussichtspunkt, den viele Gäste besuchen, liegt am Fluss.",
+      "finding": "den مفعول besuchen و viele Gäste فاعل جمع، بينما Aussichtspunkt فاعل liegt في الرئيسية؛ هذا يثبت اختلاف الحالتين.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Die Straße, die ich besonders mag, ist verkehrsberuhigt.",
+      "finding": "die مفعول mag و ich فاعله؛ صُححت عربية verkehrsberuhigt إلى تخفيف المرور، لا جعلها منطقة مشاة تلقائيًا.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB",
+        "CALM"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Die Viertel, die am Stadtrand liegen, sind gut angebunden.",
+      "finding": "Die Viertel جمع رغم ثبات شكل Viertel؛die فاعل liegen الجمع، و sind مصرف الرئيسية. gut angebunden لا يحدد خط مواصلات بعينه.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB",
+        "LINK"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **خطوتان للاختيار:** حدد الاسم المرجع وجنسه وعدده أولًا، ثم أعد بناء جملة الوصل وحدها. في **Der Park, den viele Kinder mögen, ...** يكون **viele Kinder mögen den Park**؛ إذن den مفعول به. أما **Der Platz, der eine Bühne hat, ...** فالضمير der فاعل و eine Bühne مفعول به.",
+      "finding": "يعيد بناء الجملة لتمييز موصول Park المفعول من Platz الفاعل؛ وجود eine Bühne مفعولًا لا يجعل der مفعولًا.",
+      "sourceIds": [
+        "REL"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **لا تنسخ حالة الرئيسية:** **Ich besuche den Park, der am Fluss liegt.** اسم الرئيسية den Park منصوب، لكن der فاعل في **Der Park liegt am Fluss**. وقد يحدث العكس: **Der Park, den wir besuchen, ist ruhig.** اسم الرئيسية مرفوع والموصول منصوب. هذان مثالان مكتوبان غير مسجلين.",
+      "finding": "مثالا den Park, der و Der Park, den يعالجان عدم نسخ حالة الرئيسية في الاتجاهين؛ إضافتان مكتوبتان لا تسجيلان جديدان.",
+      "sourceIds": [
+        "REL"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **الشكل وحده لا يكفي:** die و das لهما الشكل نفسه في الرفع والنصب هنا. **Die Straße, die ich mag, ...** فيها die مفعول و ich فاعل؛ **Die Viertel, die am Stadtrand liegen, ...** فيها die فاعل جمع و liegen مصرف جمع. ندرس der/die/das/den، لا كل حالات الوصل أو بدائل welcher أو الوصل بحرف جر.",
+      "finding": "تمييز die المؤنث المفعول من die الجمع الفاعل؛ جدول الحالتين لا يستوعب جميع ضمائر الوصل الممكنة.",
+      "sourceIds": [
+        "PRON"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الفاصلتان وحدود التابعة:** **Der Marktplatz, der zentral liegt, ist lebendig.** تنتهي التابعة عند liegt، وتستأنف الرئيسية بـ ist. أما **Das ist ein Platz, der neben dem Museum liegt.** فتنتهي التابعة والجملة معًا؛ لا نضع فاصلة إضافية قبل النقطة. لا نكرر الاسم داخل التابعة مثل **das viele Familien das Museum besuchen**.",
+      "finding": "الترقيم في وسط الرئيسية مقابل نهايتها؛ لا تكرار Museum مفعولًا بعد أن حل das محله.",
+      "sourceIds": [
+        "REL",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **الفاعل النحوي ليس دائمًا منفذ فعل:** في **die im Stadtplan markiert sind** يكون die فاعل جمع و sind مصرفًا أخيرًا؛ المعالم لا ترسم نفسها. وفي **der von alten Häusern umgeben ist** يكون der فاعلًا نحويًا رغم أن البيوت تحيط بالساحة. وفي آخر القراءة **die lebendig ist und zugleich ruhige Straßen hat** وصفان منسقان داخل صلة واحدة يشتركان في die، ولكل منهما مصرفه الأخير.",
+      "finding": "الفاعل النحوي يمكن أن يوصف بحالة أو بناء غير معلوم الفاعل. في آخر القراءة وصفان منسقان، فلا نطالب بأن يكون hat المصرف الوحيد.",
+      "sourceIds": [
+        "REL",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **كلمات وأفعال مساعدة:** **sich befinden** هنا يوجد/يقع، فنقول **die sich am Ufer befindet**. **stattfinden** حدث يقام: **Der Markt findet statt / der jeden Samstag stattfindet**. **Gasse** زقاق، **Einheimische** سكان محليون، و**Stadtgeschichte** تاريخ المدينة. لا نضيف ضميرًا شخصيًا بدل وظيفة ضمير الوصل.",
+      "finding": "befinden انعكاسي للموقع، و stattfinden ينفصل في الرئيسية ويبقى متصلًا في التابعة؛ شرح Gasse/Einheimische/Stadtgeschichte يدعم الفهم.",
+      "sourceIds": [
+        "LOC"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **لا تخلط بين الأماكن:** **verkehrsberuhigt** يعني خُففت حركة المرور، لا أنه بالضرورة منطقة مشاة. **Verbindung** هنا رابط مواصلات لا مركبة بعينها؛ **gut angebunden** ارتباط جيد بشبكة المواصلات، لا رحلة أو خط محدد. **Ufer** لا يقتصر على النهر، و**am Wasser** في الاستماع لا يحدد إن كان نهرًا أو بحيرة. **zu Fuß erreichbar** إمكان الوصول مشيًا، لا أنه الوسيلة الوحيدة أو ضمان إتاحة لكل شخص.",
+      "finding": "المعاني السياقية لـ verkehrsberuhigt و Verbindung و Ufer؛ الوصول مشيًا ليس حصريًا أو ضمان إتاحة، و am Wasser لا يحدد نهرًا.",
+      "sourceIds": [
+        "CALM",
+        "LINK",
+        "BANK",
+        "FOOT"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **الحوار والقراءة مستقلان:** جواب Yusuf **Die Altstadt, die direkt am Fluss liegt.** مختصر مفهوم من السؤال، وليس نموذج جملة رئيسية كاملة منفردة. السوق حدث كل سبت لا أنه هو ساحة السوق حتمًا؛ **sie** في الدور الأخير تعود إلى Fußgängerzone. مدينة Brückenfeld خيالية في القصة؛ لا نثبت أو ننفي وجود اسم مشابه خارجها، ولا ننقل موقعًا من الحوار إلى جولتها.",
+      "finding": "الجواب المختصر مناسب للسؤال ولا يلزم كل دور جملة رئيسية كاملة. sie تعود لمنطقة المشاة؛ لا صلة مؤكدة بين أماكن النصوص المستقلة.",
+      "sourceIds": [
+        "REL"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود الفهم:** زيارة نقطة الإطلالة بعد الغداء، ورؤية النهر والمساحة الخضراء لا تعني زيارة المساحة. وصف المتحف ومعرضه لا يثبت أن Noura دخلته. **bis spät** لا يذكر ساعة فتح أو إغلاق محددة، و**tagsüber ruhig** لا يثبت هدوء الليل. جنوب وسط المدينة لا يعني بالضرورة أطراف المدينة؛ جنس راوي الاستماع واسمه غير مذكورين، و ihr بعد neben تعود للمكتبة.",
+      "finding": "رؤية المساحة ليست زيارتها، ووصف المعرض لا يثبت دخول المتحف؛ لا ساعة مستنتجة أو جنس للراوي أو هدوء ليلي من tagsüber.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة المهمتين:** P01 خمس جمل خيالية كتابة فقط؛ P02 أربعة أدوار مكتوبة ثم الجهر بالدورين، بلا شريك أو تسجيل أو بيانات حقيقية. نحدد موقع معلمين وعلاقتهما ونستعمل موصولًا فاعلًا وآخر مفعولًا. الحروف والإقرارات دليل عمل، وليست تصحيحًا آليًا للنحو أو المعنى أو النطق؛ ويمكن قراءة التفريغ بدل تشغيل الصوت.",
+      "finding": "P01 كتابة فقط و P02 مع الجهر؛ لا شريك أو تسجيل أو بيانات. إقرارات الدليل لا تصحح اللغة والنطق.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Welches Viertel möchtest du heute sehen?",
+      "finding": "Mara تسأل أي حي يرغب Yusuf في رؤيته اليوم؛ möchte رغبة لا إثبات زيارة حدثت.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Die Altstadt, die direkt am Fluss liegt.",
+      "finding": "البلدة القديمة قرب النهر؛ die فاعل liegt المفرد. هذا جواب اسمي مختصر للسؤال لا جملة رئيسية مستقلة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Kennst du den Aussichtspunkt, den man vom Park aus erreicht?",
+      "finding": "نقطة الإطلالة مفعول kennst في الرئيسية ومفعول erreicht في التابعة؛ man فاعل مفرد. vom Park aus نقطة انطلاق لا خريطة مسافة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ja. Der Weg ist ruhig. Es gibt auch einen Markt, der jeden Samstag stattfindet.",
+      "finding": "Ja جواب معرفة؛ الطريق هادئ والسوق يقام كل سبت. der فاعل stattfindet رغم أن Markt بعد es gibt منصوب؛ السوق ليس بالضرورة ساحة السوق.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Und wo beginnt die Fußgängerzone?",
+      "finding": "سؤال عن بداية منطقة المشاة، لا اسم نقطة الإطلالة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Sie beginnt an der Brücke und führt bis zum Marktplatz.",
+      "finding": "sie تعود إلى Fußgängerzone؛ البداية عند الجسر والنهاية عند ساحة السوق. لا طول أو مدة أو صلة مثبتة بمدينة القراءة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Noura besucht die fiktive Stadt Brückenfeld.",
+      "finding": "Noura تزور مدينة موصوفة صراحة بالخيالية؛ لا دليل على وجهة واقعية ولا ضرورة لنفي وجود الاسم في العالم.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie beginnt ihren Rundgang auf dem Marktplatz, der von alten Häusern umgeben ist.",
+      "finding": "البداية على ساحة السوق؛ dem في الرئيسية مقابل der الفاعل في التابعة. إحاطة البيوت بالساحة لا تنفي كون الموصول فاعلًا نحويًا.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Danach geht sie durch eine Gasse, die zur Fußgängerzone führt.",
+      "finding": "بعد ذلك تسير خلال زقاق يؤدي إلى منطقة المشاة؛ die فاعل führt، ولا يثبت أن الزقاق كله منطقة مشاة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Das Stadtmuseum, das eine kleine Ausstellung zur Stadtgeschichte zeigt, liegt gleich daneben.",
+      "finding": "المتحف بجوار الموضع المذكور ويعرض تاريخ المدينة؛ das فاعل zeigt و eine Ausstellung مفعول. وصفه لا يثبت دخول Noura إليه.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Nach dem Mittagessen besucht sie den Aussichtspunkt, den viele Einheimische gern nutzen.",
+      "finding": "بعد الغداء تزور نقطة الإطلالة؛ den مفعول nutzen و viele Einheimische فاعل جمع. لا وقت دقيق أو تعميم على جميع السكان.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Von dort sieht sie den Fluss und eine Grünanlage, die sich am Ufer befindet.",
+      "finding": "من هناك ترى النهر ومساحة خضراء؛ die تعود إلى Grünanlage وهي فاعل befindet الانعكاسي. الرؤية لا تعني زيارة المساحة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB",
+        "LOC"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Besonders mag Noura die Altstadt, die lebendig ist und zugleich ruhige Straßen hat.",
+      "finding": "تحب البلدة القديمة خصوصًا، وهي حيوية وبها شوارع هادئة؛ die فاعل مشترك لـ ist و hat، و ruhige Straßen مفعول hat. لا تناقض بين الوصفين.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Unser Stadtteil liegt südlich der Innenstadt.",
+      "finding": "الموقع جنوب وسط المدينة، لا دليل على أطرافها أو اسمها. الراوي غير مسمى وجنسه غير مصرح به؛ Unser لا يحدده.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Besonders gefällt mir die Bibliothek, die bis spät geöffnet ist.",
+      "finding": "المكتبة تعجب الراوي وتظل مفتوحة حتى وقت متأخر؛ die فاعل ist، و mir في Dativ مع gefällt. لا ساعة فتح أو إغلاق دقيقة أو جدول يومي.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Neben ihr gibt es einen Platz, den viele Menschen am Wochenende besuchen.",
+      "finding": "بجوار المكتبة ساحة يزورها كثيرون نهاية الأسبوع؛ ihr ترجع إلى Bibliothek، و den مفعول besuchen و viele Menschen فاعل جمع.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Eine Straße, die direkt zur Haltestelle führt, ist tagsüber ruhig.",
+      "finding": "شارع يؤدي مباشرة إلى الموقف وهو هادئ نهارًا؛ die فاعل führt و zur = zu der. لا فرض لنوع الموقف أو هدوء الليل.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Auch der Park, der am Wasser liegt, ist zu Fuß erreichbar.",
+      "finding": "الحديقة بجوار الماء ويمكن بلوغها مشيًا؛ der فاعل liegt. لا ذكر لنهر أو بحيرة أو منع كل وسائل الوصول الأخرى أو ضمان إتاحة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wo beginnt Noura ihren Rundgang?",
+      "finding": "البداية من الجملة الثانية هي الساحة، لا منطقة المشاة أو الضفة.",
+      "sourceIds": [],
+      "answer": "Auf dem Marktplatz."
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was zeigt das Stadtmuseum?",
+      "finding": "معرض صغير عن تاريخ المدينة؛ لا يلزم إثبات زيارة المتحف للإجابة عن وصفه.",
+      "sourceIds": [],
+      "answer": "Eine kleine Ausstellung zur Stadtgeschichte."
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was besucht sie nach dem Mittagessen?",
+      "finding": "تربط الزيارة بما بعد الغداء، لا ساعة دقيقة أو زيارة المساحة الخضراء.",
+      "sourceIds": [],
+      "answer": "Den Aussichtspunkt."
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Was sieht sie vom Aussichtspunkt aus?",
+      "finding": "المشهد يشمل النهر ومساحة خضراء، لا ادعاء السير إليهما.",
+      "sourceIds": [],
+      "answer": "Den Fluss und eine Grünanlage."
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was gefällt Noura an der Altstadt?",
+      "finding": "المفتاح يصف الخصيصتين المذكورتين مع محبة البلدة، دون إضافة رسم دخول أو تعليل خارجي.",
+      "sourceIds": [],
+      "answer": "Sie ist lebendig und hat zugleich ruhige Straßen."
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wo liegt der Stadtteil?",
+      "finding": "جنوب وسط المدينة؛ لا خلط بالشمال أو حدود المدينة.",
+      "sourceIds": [],
+      "answer": "Südlich der Innenstadt."
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Bis wann ist die Bibliothek geöffnet? Nenne nur die Angabe im Text.",
+      "finding": "استُبدل سؤال كل أوقات العمل بسؤال المعلومة المذكورة: حتى وقت متأخر؛ لا اختراع ساعة.",
+      "sourceIds": [],
+      "answer": "Bis spät."
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was besuchen viele Menschen am Wochenende?",
+      "finding": "ساحة بجوار المكتبة، لا الحديقة بالضرورة.",
+      "sourceIds": [],
+      "answer": "Einen Platz."
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Wohin führt die Straße, die tagsüber ruhig ist?",
+      "finding": "الموقف بعد الشارع الهادئ نهارًا؛ لا حكم على الليل أو طريق حقيقي.",
+      "sourceIds": [],
+      "answer": "Zur Haltestelle."
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Wie erreicht man den Park?",
+      "finding": "المشي ممكن، لا أنه الوسيلة الوحيدة أو أن الراوي مشى بالفعل.",
+      "sourceIds": [],
+      "answer": "Zu Fuß."
+    },
+    {
+      "id": "DL-B1-05-T01",
+      "text": "1. الجزء الأقدم من المدينة: **die Altstadt / die Verbindung**\n2. مكان ذو إطلالة على المنظر، وغالبًا يكون مرتفعًا: **der Aussichtspunkt / der Stadtplan**\n3. منطقة في المدينة مخصّصة للمشاة: **die Fußgängerzone / die Grünanlage**\n4. مكان أخضر عام داخل المدينة: **die Grünanlage / der Marktplatz**",
+      "finding": "المفردات والبدائل متمايزة؛ ارتفاع الإطلالة شائع لا شرط مطلق، ومنطقة المشاة ليست بالضرورة شارعًا واحدًا.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "الجزء الأقدم من المدينة: **die Altstadt / die Verbindung**",
+          "finding": "Altstadt الجزء القديم؛ Verbindung رابط لا حي قديم."
+        },
+        {
+          "text": "مكان ذو إطلالة على المنظر، وغالبًا يكون مرتفعًا: **der Aussichtspunkt / der Stadtplan**",
+          "finding": "Aussichtspunkt موضع إطلالة غالبًا مرتفع؛ Stadtplan خريطة لا موضع مشاهدة."
+        },
+        {
+          "text": "منطقة في المدينة مخصّصة للمشاة: **die Fußgängerzone / die Grünanlage**",
+          "finding": "Fußgängerzone للمشاة؛ Grünanlage مساحة خضراء لا مرادف منطقة المشاة."
+        },
+        {
+          "text": "مكان أخضر عام داخل المدينة: **die Grünanlage / der Marktplatz**",
+          "finding": "Grünanlage مساحة خضراء؛ Marktplatz ساحة سوق لا مرادف لها."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T02",
+      "text": "اختر من **der / die / das / den** وفق جنس الاسم وعدده ودور الضمير في التابعة؛ لا تنسخ حالة الاسم في الرئيسية:\n\n1. Der Park, ______ am Ufer liegt, ist sehr ruhig.\n2. Die Altstadt, ______ viele Besucher mögen, ist am Wochenende lebendig.\n3. Das Viertel, ______ wir heute erkunden, ist gut erreichbar.\n4. Die Sehenswürdigkeiten, ______ im Stadtplan markiert sind, liegen im Zentrum.\n5. Der Marktplatz, ______ wir am Samstag besuchen, ist groß.\n6. Der Aussichtspunkt, ______ viele Gäste besuchen, liegt am Fluss.",
+      "finding": "ستة بنود ببنك صيغ ودعم Q02/Q03؛ الحالة من الوظيفة والتصريف من الفاعل.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Der Park, ______ am Ufer liegt, ist sehr ruhig.",
+          "finding": "der: Park مذكر والموصول فاعل liegt."
+        },
+        {
+          "text": "Die Altstadt, ______ viele Besucher mögen, ist am Wochenende lebendig.",
+          "finding": "die: Altstadt مؤنث ومفعول mögen؛ viele Besucher فاعل جمع."
+        },
+        {
+          "text": "Das Viertel, ______ wir heute erkunden, ist gut erreichbar.",
+          "finding": "das: Viertel محايد ومفعول erkunden، و wir فاعل."
+        },
+        {
+          "text": "Die Sehenswürdigkeiten, ______ im Stadtplan markiert sind, liegen im Zentrum.",
+          "finding": "die: Sehenswürdigkeiten جمع، والموصول فاعل sind نحويًا لا منفذ تعليم الخريطة."
+        },
+        {
+          "text": "Der Marktplatz, ______ wir am Samstag besuchen, ist groß.",
+          "finding": "den: Marktplatz مفعول besuchen و wir فاعل، مع مرجع مذكر."
+        },
+        {
+          "text": "Der Aussichtspunkt, ______ viele Gäste besuchen, liegt am Fluss.",
+          "finding": "den: جملة Q02 أضيفت للتدريب المباشر؛ Gäste فاعل جمع و Aussichtspunkt مفعول."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T03",
+      "text": "احتفظ بالجملة الأولى رئيسية، واجعل الثانية وصفًا للاسم المشار إليه باستخدام der/die/das/den. احذف تكرار الاسم أو ضميره المنفصل وأضف الفاصلة؛ المفتاح يطبق هذا الترتيب ولا ينفي إمكان صياغات أخرى:\n\n1. **Das ist ein Platz. Er liegt neben dem Museum.**\n2. **Wir besuchen die Straße. Viele Besucher mögen die Straße.**\n3. **Das ist ein Museum. Viele Familien besuchen das Museum.**",
+      "finding": "تحددت الرئيسية المحتفظ بها لمنع خلاف المفتاح بسبب البدء بالجملة الثانية.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "**Das ist ein Platz. Er liegt neben dem Museum.**",
+          "finding": "Das ist ein Platz, der neben dem Museum liegt. يحل der محل Er مع بقاء الرئيسية الأولى."
+        },
+        {
+          "text": "**Wir besuchen die Straße. Viele Besucher mögen die Straße.**",
+          "finding": "Wir besuchen die Straße, die viele Besucher mögen. الموصول die مفعول ولا يعاد الاسم بعده."
+        },
+        {
+          "text": "**Das ist ein Museum. Viele Familien besuchen das Museum.**",
+          "finding": "Das ist ein Museum, das viele Familien besuchen. محايد ومفعول؛ Familien فاعل جمع، لذلك besuchen لا besucht."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T04",
+      "text": "ابدأ بالاسم المعطى، وضع وصفه الموصول بعده، ثم أكمل الرئيسية بـ ist. لا تضع الفاصلة الثانية بعد فعل الرئيسية:\n\n1. Der Marktplatz / der / zentral / liegt / ist / lebendig.\n2. Die Straße / die / ich / oft / besuche / ist / ruhig.",
+      "finding": "الترتيب والفاصلتان مطابقان لـ Q05؛ التابعة المدرجة لا تشمل ist.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Der Marktplatz / der / zentral / liegt / ist / lebendig.",
+          "finding": "Der Marktplatz, der zentral liegt, ist lebendig. الفاصلتان حول der ... liegt، لا حول المصرف الرئيسي ist."
+        },
+        {
+          "text": "Die Straße / die / ich / oft / besuche / ist / ruhig.",
+          "finding": "Die Straße, die ich oft besuche, ist ruhig. die مفعول و ich فاعل مع besuche؛ التابعة مدرجة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Brückenfeld مدينة حقيقية تذكرها القراءة بوصفها وجهة معروفة.\n2. ساحة السوق محاطة ببيوت قديمة.\n3. يعرض متحف المدينة معرضًا صغيرًا عن تاريخها.\n4. ترى نورة النهر والمساحة الخضراء من نقطة الإطلالة.\n5. تصف القراءة البلدة القديمة بأنها حيوية وفيها شوارع هادئة أيضًا.\n6. تبدأ نورة جولتها في ساحة السوق.",
+      "finding": "حقائق القراءة دون خلط بالنصوص الأخرى؛ أضيف بدء الجولة وصُحح الوصف دون سبب مفترض.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Brückenfeld مدينة حقيقية تذكرها القراءة بوصفها وجهة معروفة.",
+          "finding": "خطأ: النص يصرح بأنها مدينة خيالية، ولا ندعي فحص جغرافيا العالم."
+        },
+        {
+          "text": "ساحة السوق محاطة ببيوت قديمة.",
+          "finding": "صحيح: بيوت قديمة تحيط بالساحة."
+        },
+        {
+          "text": "يعرض متحف المدينة معرضًا صغيرًا عن تاريخها.",
+          "finding": "صحيح: معرض صغير عن تاريخ المدينة لا عن المساحة الخضراء."
+        },
+        {
+          "text": "ترى نورة النهر والمساحة الخضراء من نقطة الإطلالة.",
+          "finding": "صحيح: الرؤية من نقطة الإطلالة، وليست زيارة المساحة."
+        },
+        {
+          "text": "تصف القراءة البلدة القديمة بأنها حيوية وفيها شوارع هادئة أيضًا.",
+          "finding": "صحيح: الحيوية والشوارع الهادئة وصفان، دون إضافة تعليل سببي غير مصرح به."
+        },
+        {
+          "text": "تبدأ نورة جولتها في ساحة السوق.",
+          "finding": "صحيح: أضيفت معلومة بداية الجولة مباشرة لدعم Q07."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T06",
+      "text": "أكمل بالألمانية من النص؛ لا تضف ساعة أو وسيلة حصرية. بنك العبارات: **der Innenstadt — spät — einen Platz — Haltestelle — zu Fuß**.\n\n1. Unser Stadtteil liegt südlich ______.\n2. Die Bibliothek ist bis ______ geöffnet.\n3. Viele Menschen besuchen am Wochenende ______.\n4. Eine Straße führt direkt zur ______.\n5. Der Park ist ______ erreichbar.",
+      "finding": "فراغات ألمانية وبنك عبارات؛ قيد الزمن وبادئة zur واضحان، دون ترجمة إعرابية غير مطلوبة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Unser Stadtteil liegt südlich ______.",
+          "finding": "der Innenstadt بعد südlich؛ الجنوب من الوسط لا الشمال."
+        },
+        {
+          "text": "Die Bibliothek ist bis ______ geöffnet.",
+          "finding": "spät بعد bis؛ لا ساعة مذكورة."
+        },
+        {
+          "text": "Viele Menschen besuchen am Wochenende ______.",
+          "finding": "einen Platz مفعول besuchen؛ ترتيب الجملة في التدريب مختلف عن النص دون تغيير المعنى."
+        },
+        {
+          "text": "Eine Straße führt direkt zur ______.",
+          "finding": "Haltestelle فقط بعد zur؛ لا تكرر die أو der."
+        },
+        {
+          "text": "Der Park ist ______ erreichbar.",
+          "finding": "zu Fuß قبل erreichbar؛ إمكان المشي لا وسيلة حصرية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T07",
+      "text": "اكتب **Nominativ** أو **Akkusativ**:\n\n1. **Der Platz, der eine kleine Bühne hat, ist beliebt.**\n2. **Das Viertel, das wir besuchen, liegt am Fluss.**\n3. **Die Gasse, die zur Brücke führt, ist schmal.**\n4. **Der Park, den viele Kinder mögen, ist kostenlos zugänglich.**",
+      "finding": "الوظيفة تسبق شكل الضمير؛ مذكر ومحايد ومؤنث، مع مطابقة المصرف لفاعله.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "**Der Platz, der eine kleine Bühne hat, ist beliebt.**",
+          "finding": "Nominativ: der فاعل hat و eine kleine Bühne مفعول."
+        },
+        {
+          "text": "**Das Viertel, das wir besuchen, liegt am Fluss.**",
+          "finding": "Akkusativ: das مفعول besuchen و wir فاعل؛ شكل المحايد نفسه في الحالتين."
+        },
+        {
+          "text": "**Die Gasse, die zur Brücke führt, ist schmal.**",
+          "finding": "Nominativ: die فاعل führt مع Gasse المؤنث؛ zur Brücke لا تغير حالة الموصول."
+        },
+        {
+          "text": "**Der Park, den viele Kinder mögen, ist kostenlos zugänglich.**",
+          "finding": "Akkusativ: den مفعول mögen و viele Kinder فاعل جمع. kostenlos يخص المثال لا حديقة الاستماع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-T08",
+      "text": "**أ — P01: خمس جمل كتابة فقط**\n\nاكتب وصفًا خياليًا من خمس جمل عن حي: حدد موقعه بالنسبة لوسط المدينة؛ صف ساحة السوق وموقعها بجملة موصولة يكون ضميرها فاعلًا في Nominativ؛ حدد موقع المكتبة بالنسبة للساحة؛ صف حديقة وموقعها بالنسبة للمكتبة بجملة موصولة يكون ضميرها مفعولًا به في Akkusativ؛ واختم بنشاط تحبه في الحي. استخدم مفردات الدرس والفواصل والمصرف في نهاية التابعة. هذه مهمة كتابة فقط، بلا جهر أو تسجيل أو معلومات شخصية حقيقية.\n\n**ب — P02: أربعة أدوار مع الجهر**\n\nاكتب حوارًا خياليًا من أربعة أدوار بين زائرة ومرشد: تسأل الزائرة أين تبدأ الجولة؛ يحدد المرشد ساحة السوق عند النهر بجملة موصولة يكون ضميرها فاعلًا في Nominativ؛ تسأل الزائرة عن المكان التالي؛ ويختار المرشد حديقة بجوار الساحة ويصفها بجملة موصولة يكون ضميرها مفعولًا به في Akkusativ. اكتب الطرفين ثم اقرأهما جهرًا بنفسك، بلا شريك أو تسجيل. احفظ الفواصل وتصريف الفعل مع فاعل التابعة، لا مع المفعول.",
+      "finding": "تسعة مطالب في خمس جمل وصفية وأربعة أدوار؛ طريقة الدليل صريحة ومتطابقة مع التقييم.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "موقع الحي الخيالي بالنسبة لوسط المدينة.",
+          "finding": "P01.1: موقع الحي الخيالي بالنسبة لوسط المدينة."
+        },
+        {
+          "text": "ساحة السوق وموقعها بموصول فاعل Nominativ.",
+          "finding": "P01.2: ساحة السوق وموقعها بموصول فاعل Nominativ."
+        },
+        {
+          "text": "موقع المكتبة بالنسبة للساحة.",
+          "finding": "P01.3: موقع المكتبة بالنسبة للساحة."
+        },
+        {
+          "text": "حديقة وموقعها بموصول مفعول Akkusativ.",
+          "finding": "P01.4: حديقة وموقعها بموصول مفعول Akkusativ."
+        },
+        {
+          "text": "نشاط ختامي؛ خمس جمل كتابة فقط دون جهر.",
+          "finding": "P01.5: نشاط ختامي؛ خمس جمل كتابة فقط دون جهر."
+        },
+        {
+          "text": "الزائرة تسأل عن بداية الجولة.",
+          "finding": "P02.1: الزائرة تسأل عن بداية الجولة."
+        },
+        {
+          "text": "المرشد يحدد ساحة عند النهر بموصول فاعل.",
+          "finding": "P02.2: المرشد يحدد ساحة عند النهر بموصول فاعل."
+        },
+        {
+          "text": "سؤال عن المكان التالي.",
+          "finding": "P02.3: سؤال عن المكان التالي."
+        },
+        {
+          "text": "حديقة بجوار الساحة بموصول مفعول؛ اكتب الأدوار الأربعة واجهر بالطرفين دون شريك أو تسجيل.",
+          "finding": "P02.4: حديقة بجوار الساحة بموصول مفعول؛ اكتب الأدوار الأربعة واجهر بالطرفين دون شريك أو تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q01",
+      "text": "ما معنى **die Fußgängerzone**؟",
+      "finding": "die Fußgängerzone هي منطقة مخصّصة للمشاة، لا نقطة إطلالة ولا خط مواصلات.",
+      "sourceIds": [],
+      "options": [
+        "نقطة إطلالة.",
+        "منطقة مخصّصة للمشاة.",
+        "وسيلة مواصلات إلى أطراف المدينة."
+      ],
+      "answer": "منطقة مخصّصة للمشاة.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-05-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "نقطة إطلالة.",
+          "correct": false,
+          "finding": "هذه Aussichtspunkt لا Fußgängerzone."
+        },
+        {
+          "text": "منطقة مخصّصة للمشاة.",
+          "correct": true,
+          "finding": "الصحيح: منطقة مخصصة للمشاة."
+        },
+        {
+          "text": "وسيلة مواصلات إلى أطراف المدينة.",
+          "correct": false,
+          "finding": "هذه فكرة Verbindung؛ ليست منطقة مشاة ولا في الكلمة تحديد للأطراف."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q02",
+      "text": "أكمل بضمير الوصل الصحيح: **Der Aussichtspunkt, ___ viele Gäste besuchen, liegt am Fluss.**",
+      "finding": "Aussichtspunkt مذكر مفرد، وهو مفعول به للفعل besuchen داخل جملة الوصل؛ لذلك نستخدم den.",
+      "sourceIds": [],
+      "options": [
+        "der",
+        "den",
+        "dem"
+      ],
+      "answer": "den",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-05-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "der",
+          "correct": false,
+          "finding": "der فاعل مذكر، لكن الفاعل هنا Gäste والضمير مفعول."
+        },
+        {
+          "text": "den",
+          "correct": true,
+          "finding": "den مفعول مذكر مفرد للفعل besuchen؛ الصحيح."
+        },
+        {
+          "text": "dem",
+          "correct": false,
+          "finding": "dem صيغة Dativ لا Akkusativ المطلوبة هنا؛ كون المرجع مكانًا لا يوجب Dativ."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q03",
+      "text": "أكمل بضمير الوصل الصحيح: **Die Altstadt, ___ viele Besucher mögen, ist am Wochenende lebendig.**",
+      "finding": "Altstadt مؤنث، وهي مفعول به للفعل mögen داخل جملة الوصل؛ وصيغة المؤنث في Akkusativ هي die.",
+      "sourceIds": [],
+      "options": [
+        "die",
+        "der",
+        "den"
+      ],
+      "answer": "die",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-05-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "die",
+          "correct": true,
+          "finding": "die مفعول مؤنث و viele Besucher فاعل؛ الصحيح."
+        },
+        {
+          "text": "der",
+          "correct": false,
+          "finding": "der ليست صيغة المؤنث المنصوب؛ حالة الرئيسية ليست المعيار."
+        },
+        {
+          "text": "den",
+          "correct": false,
+          "finding": "den ليس للمؤنث المفرد؛ لا ينسخ جمع Besucher إلى ضمير يعود إلى Altstadt."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q04",
+      "text": "في الجملة **Der Platz, der eine kleine Bühne hat, ist beliebt.**، ما وظيفة **der** داخل جملة الوصل؟",
+      "finding": "der هو فاعل الفعل hat داخل جملة الوصل، ولذلك جاء في Nominativ.",
+      "sourceIds": [],
+      "options": [
+        "مفعول به في Akkusativ.",
+        "فاعل في Nominativ.",
+        "اسم مجرور بحرف جر."
+      ],
+      "answer": "فاعل في Nominativ.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-05-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "مفعول به في Akkusativ.",
+          "correct": false,
+          "finding": "المفعول هو eine kleine Bühne لا der."
+        },
+        {
+          "text": "فاعل في Nominativ.",
+          "correct": true,
+          "finding": "الصحيح: der فاعل hat داخل التابعة."
+        },
+        {
+          "text": "اسم مجرور بحرف جر.",
+          "correct": false,
+          "finding": "لا حرف جر قبل der هنا، فلا يؤدي وظيفة عبارة جار ومجرور."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q05",
+      "text": "أي جملة مرتبة وعلامات ترقيمها صحيحة؟",
+      "finding": "يأتي الفعل المصرف في نهاية جملة الوصل، وتحيط بها فاصلتان: der zentral liegt.",
+      "sourceIds": [],
+      "options": [
+        "Der Marktplatz, der zentral liegt, ist lebendig.",
+        "Der Marktplatz, der liegt zentral, ist lebendig.",
+        "Der Marktplatz, der zentral liegt ist lebendig."
+      ],
+      "answer": "Der Marktplatz, der zentral liegt, ist lebendig.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-05-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Der Marktplatz, der zentral liegt, ist lebendig.",
+          "correct": true,
+          "finding": "الصحيح: liegt ينهي التابعة ثم الفاصلة الثانية قبل ist في الرئيسية."
+        },
+        {
+          "text": "Der Marktplatz, der liegt zentral, ist lebendig.",
+          "correct": false,
+          "finding": "liegt قبل zentral لا يطابق ترتيب الموصول القياسي المستهدف."
+        },
+        {
+          "text": "Der Marktplatz, der zentral liegt ist lebendig.",
+          "correct": false,
+          "finding": "الفاصلة الثانية بين liegt و ist ناقصة؛ الأولى لا تغني عنها."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q06",
+      "text": "اختر الربط الصحيح: **Das ist ein Museum. Viele Familien besuchen das Museum.**",
+      "finding": "Museum محايد ويؤدي دور المفعول به داخل جملة الوصل، فيأخذ das؛ والفعل يعود إلى الفاعل الجمع Familien.",
+      "sourceIds": [],
+      "options": [
+        "Das ist ein Museum, das viele Familien besuchen.",
+        "Das ist ein Museum, der viele Familien besuchen.",
+        "Das ist ein Museum, das viele Familien besucht."
+      ],
+      "answer": "Das ist ein Museum, das viele Familien besuchen.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-05-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "Das ist ein Museum, das viele Familien besuchen.",
+          "correct": true,
+          "finding": "الصحيح: das لمتحف محايد مفعول، والجمع Familien يوافق besuchen."
+        },
+        {
+          "text": "Das ist ein Museum, der viele Familien besuchen.",
+          "correct": false,
+          "finding": "der لا يطابق المرجع المحايد Museum في الحالة المطلوبة."
+        },
+        {
+          "text": "Das ist ein Museum, das viele Familien besucht.",
+          "correct": false,
+          "finding": "besucht لا يطابق فاعل الجمع Familien؛ وقراءة المتحف فاعلًا يزور العائلات لا تحفظ معنى الجملتين الأصليتين."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q07",
+      "text": "Wo beginnt Noura ihren Rundgang?",
+      "finding": "تبدأ نورة جولتها على ساحة السوق: Sie beginnt ihren Rundgang auf dem Marktplatz.",
+      "sourceIds": [],
+      "options": [
+        "In der Fußgängerzone.",
+        "Am Ufer.",
+        "Auf dem Marktplatz."
+      ],
+      "answer": "Auf dem Marktplatz.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-05-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "In der Fußgängerzone.",
+          "correct": false,
+          "finding": "منطقة المشاة ترد لاحقًا، وليست البداية."
+        },
+        {
+          "text": "Am Ufer.",
+          "correct": false,
+          "finding": "الضفة لا تذكر موضعًا لبدء الجولة."
+        },
+        {
+          "text": "Auf dem Marktplatz.",
+          "correct": true,
+          "finding": "الصحيح: البداية على ساحة السوق."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q08",
+      "text": "Was zeigt das Stadtmuseum?",
+      "finding": "يذكر نص القراءة أن متحف المدينة يعرض معرضًا صغيرًا عن تاريخ المدينة.",
+      "sourceIds": [],
+      "options": [
+        "Eine kleine Ausstellung zur Stadtgeschichte.",
+        "Einen Stadtplan mit Buslinien.",
+        "Eine Ausstellung über die Grünanlage."
+      ],
+      "answer": "Eine kleine Ausstellung zur Stadtgeschichte.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-05-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Eine kleine Ausstellung zur Stadtgeschichte.",
+          "correct": true,
+          "finding": "الصحيح: معرض صغير عن تاريخ المدينة."
+        },
+        {
+          "text": "Einen Stadtplan mit Buslinien.",
+          "correct": false,
+          "finding": "خطوط الحافلات لم تذكر في معرض المتحف؛ Stadtplan مفردة لا جواب النص."
+        },
+        {
+          "text": "Eine Ausstellung über die Grünanlage.",
+          "correct": false,
+          "finding": "المساحة الخضراء مرئية من الإطلالة وليست موضوع المعرض."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q09",
+      "text": "Wo liegt der Stadtteil?",
+      "finding": "يقول نص الاستماع إن الحي يقع جنوب وسط المدينة: südlich der Innenstadt.",
+      "sourceIds": [],
+      "options": [
+        "Nördlich der Innenstadt.",
+        "Südlich der Innenstadt.",
+        "Direkt am Stadtrand."
+      ],
+      "answer": "Südlich der Innenstadt.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-05-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Nördlich der Innenstadt.",
+          "correct": false,
+          "finding": "nördlich شمال، بينما النص يقول südlich جنوب."
+        },
+        {
+          "text": "Südlich der Innenstadt.",
+          "correct": true,
+          "finding": "الصحيح: جنوب وسط المدينة."
+        },
+        {
+          "text": "Direkt am Stadtrand.",
+          "correct": false,
+          "finding": "أطراف المدينة غير مذكورة؛ الجنوب من الوسط لا يثبتها."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-Q10",
+      "text": "Wie erreicht man den Park?",
+      "finding": "يمكن الوصول إلى الحديقة مشيًا: Der Park ist zu Fuß erreichbar.",
+      "sourceIds": [],
+      "options": [
+        "Nur mit dem Bus.",
+        "Zu Fuß.",
+        "Nur mit dem Auto."
+      ],
+      "answer": "Zu Fuß.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-05-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Nur mit dem Bus.",
+          "correct": false,
+          "finding": "Nur mit dem Bus يستبعد المشي المذكور، لذلك خطأ."
+        },
+        {
+          "text": "Zu Fuß.",
+          "correct": true,
+          "finding": "الصحيح: يمكن المشي، دون حصر أو مسافة محددة."
+        },
+        {
+          "text": "Nur mit dem Auto.",
+          "correct": false,
+          "finding": "Nur mit dem Auto يستبعد المشي المذكور، لذلك خطأ."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-P01",
+      "text": "اكتب وصفًا خياليًا من خمس جمل عن حي: حدد موقعه بالنسبة لوسط المدينة؛ صف ساحة السوق وموقعها بجملة موصولة يكون ضميرها فاعلًا في Nominativ؛ حدد موقع المكتبة بالنسبة للساحة؛ صف حديقة وموقعها بالنسبة للمكتبة بجملة موصولة يكون ضميرها مفعولًا به في Akkusativ؛ واختم بنشاط تحبه في الحي. استخدم مفردات الدرس والفواصل والمصرف في نهاية التابعة. هذه مهمة كتابة فقط، بلا جهر أو تسجيل أو معلومات شخصية حقيقية.",
+      "finding": "تطابق المصدر والمعايير والنموذج والإقرار؛110 حروف بوابة دليل محفوظة لا قياس عدد الجمل أو جودة اللغة آليًا.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-05-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "خمس جمل تتضمن موقع الحي وساحة السوق والمكتبة والحديقة وعلاقة المواقع ونشاطًا ختاميًا؛ كتابة فقط.",
+        "meaningClarity": "يستطيع القارئ فهم مواقع الساحة والمكتبة والحديقة وعلاقتها داخل الحي الخيالي، دون خلطها بأماكن نصوص الدرس.",
+        "targetSkill": "جملة وصل ضميرها فاعل في Nominativ وأخرى ضميرها مفعول في Akkusativ؛ جنس وعدد من المرجع، وحالة من التابعة، وفواصل ومصرف يطابق الفاعل ويأتي في نهاية التابعة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل تتضمن موقع الحي وساحة السوق والمكتبة والحديقة وعلاقة المواقع ونشاطًا ختاميًا؛ كتابة فقط.",
+          "finding": "خمس جمل بمطالب مختلفة، كتابة فقط؛ النموذج يفي بالمواقع والنشاط."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يستطيع القارئ فهم مواقع الساحة والمكتبة والحديقة وعلاقتها داخل الحي الخيالي، دون خلطها بأماكن نصوص الدرس.",
+          "finding": "العلاقات المكانية مفهومة داخل حي خيالي، لا تنسب إلى Brückenfeld أو ضفة الاستماع."
+        },
+        {
+          "key": "targetSkill",
+          "text": "جملة وصل ضميرها فاعل في Nominativ وأخرى ضميرها مفعول في Akkusativ؛ جنس وعدد من المرجع، وحالة من التابعة، وفواصل ومصرف يطابق الفاعل ويأتي في نهاية التابعة.",
+          "finding": "موصول فاعل وآخر مفعول مع الفواصل والتصريف؛ den Marktplatz, der يوضح عدم نسخ حالة الرئيسية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-05-P02",
+      "text": "اكتب حوارًا خياليًا من أربعة أدوار بين زائرة ومرشد: تسأل الزائرة أين تبدأ الجولة؛ يحدد المرشد ساحة السوق عند النهر بجملة موصولة يكون ضميرها فاعلًا في Nominativ؛ تسأل الزائرة عن المكان التالي؛ ويختار المرشد حديقة بجوار الساحة ويصفها بجملة موصولة يكون ضميرها مفعولًا به في Akkusativ. اكتب الطرفين ثم اقرأهما جهرًا بنفسك، بلا شريك أو تسجيل. احفظ الفواصل وتصريف الفعل مع فاعل التابعة، لا مع المفعول.",
+      "finding": "تطابق المصدر والمعايير والنموذج والإقرار؛110 حروف بوابة دليل محفوظة لا قياس عدد الجمل أو جودة اللغة آليًا.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-05-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أدوار بالترتيب: سؤال البداية وجواب الساحة وسؤال المكان التالي وجواب الحديقة؛ اكتب الطرفين ثم اجهر بهما.",
+        "meaningClarity": "بداية الجولة عند ساحة على النهر، ثم حديقة بجوارها؛ الوصفان وعلاقة المكانين واضحان ضمن حوار خيالي.",
+        "targetSkill": "موصول فاعل في وصف الساحة، وموصول مفعول في وصف الحديقة؛ جنس وعدد وحالة وفواصل وتصريف مع فاعل التابعة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أدوار بالترتيب: سؤال البداية وجواب الساحة وسؤال المكان التالي وجواب الحديقة؛ اكتب الطرفين ثم اجهر بهما.",
+          "finding": "أربعة أدوار والجهر بالطرفين واضحان، بلا بديل الجولة أو الشفهي وحده."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "بداية الجولة عند ساحة على النهر، ثم حديقة بجوارها؛ الوصفان وعلاقة المكانين واضحان ضمن حوار خيالي.",
+          "finding": "ساحة على النهر بداية ثم حديقة بجوارها؛ الصلة صريحة وليست تعليمات سفر حقيقية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "موصول فاعل في وصف الساحة، وموصول مفعول في وصف الحديقة؛ جنس وعدد وحالة وفواصل وتصريف مع فاعل التابعة.",
+          "finding": "der فاعل liegt في وصف الساحة و den مفعول mögen مع Familien الجمع؛ الفاصلة عند نهاية التابعة."
+        }
+      ]
+    },
+    {
+      "id": "description-model-01",
+      "text": "Mein fiktives Viertel liegt südlich der Innenstadt.",
+      "finding": "موقع حي خيالي جنوب المركز، لا يلزم أنه حي الاستماع.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "description-model-02",
+      "text": "Ich besuche gern den Marktplatz, der im Zentrum liegt.",
+      "finding": "den Marktplatz مفعول الرئيسية لكن der فاعل liegt في التابعة؛ موقع الساحة المركزي صريح.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "description-model-03",
+      "text": "Die Bibliothek befindet sich neben dem Marktplatz.",
+      "finding": "المكتبة بجوار الساحة؛ befindet sich للمفرد والانعكاس محفوظ.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "description-model-04",
+      "text": "Der Park, den viele Familien besuchen, liegt neben der Bibliothek.",
+      "finding": "الحديقة بجوار المكتبة؛ den مفعول besuchen و viele Familien فاعل جمع، و Park فاعل liegt في الرئيسية.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "description-model-05",
+      "text": "Am Wochenende gehe ich gern durch die ruhigen Straßen.",
+      "finding": "نشاط ختامي هو المشي خلال شوارع هادئة نهاية الأسبوع؛ يحقق المطلب الخامس دون بيانات حقيقية.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "tour-model-01",
+      "text": "Besucherin: Wo beginnt unsere Runde?",
+      "finding": "سؤال واضح عن نقطة البدء، بداية حوار الأدوار الأربعة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "tour-model-02",
+      "text": "Stadtführer: Wir beginnen auf dem Marktplatz, der direkt am Fluss liegt.",
+      "finding": "الساحة عند النهر؛ der فاعل liegt في التابعة، بينما auf dem Marktplatz في الرئيسية للمكان.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "tour-model-03",
+      "text": "Besucherin: Welchen Ort besuchen wir danach?",
+      "finding": "سؤال عن المكان التالي؛ Welchen Ort مفعول besuchen، والاستفهام لمسار الجولة.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "tour-model-04",
+      "text": "Stadtführer: Danach besuchen wir den Park, den viele Familien mögen. Er liegt neben dem Marktplatz.",
+      "finding": "حديقة تحبها عائلات كثيرة؛ den مفعول mögen مع فاعل جمع. Er يرجع إلى Park ويحدد جواره للساحة. الدور يحتوي جملتين؛ الأدوار ليست عدد الجمل.",
+      "sourceIds": [
+        "REL",
+        "PRON",
+        "SUB"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Der Platz, der im Zentrum liegt, ist lebendig.** → الساحة التي تقع في المركز حيوية.",
+      "finding": "der فاعل liegt في التابعة؛ لا تشمل التابعة ist lebendig.",
+      "sourceIds": [
+        "REL"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Der Aussichtspunkt, den viele Gäste besuchen, liegt am Fluss.** → نقطة الإطلالة التي يزورها كثير من الضيوف تقع عند النهر.",
+      "finding": "den مفعول besuchen و Gäste فاعل جمع؛ المصرف الرئيسي liegt يأتي بعد الفاصلة.",
+      "sourceIds": [
+        "REL"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **die Fußgängerzone** → منطقة مشاة.",
+      "finding": "منطقة مشاة، لا كل شارع خففت حركة المرور فيه.",
+      "sourceIds": [
+        "FOOT"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **zu Fuß erreichbar** → يمكن الوصول إليه مشيًا.",
+      "finding": "الوصول مشيًا ممكن، لا وسيلة وحيدة أو وعد إتاحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B1-05-AUD-PHR-01",
+      "text": "مفردات المدينة والأماكن",
+      "finding": "تفريغ مكتوب مطابق للمصدر؛ لا مراجعة سمعية. ready حالة تاريخية محفوظة، والأصوات والروابط و MP3 ثابتة دون اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Die Altstadt, die Altstädte.",
+          "finding": "مؤنث وجمع Altstädte؛ النواة القديمة في المدينة، لا دولة أو اسم مدينة مستقلًا. يوافق تعريف T01."
+        },
+        {
+          "text": "Das Viertel, die Viertel.",
+          "finding": "محايد وجمع Viertel بنفس شكل الاسم؛ المعنى الحي هنا لا ربع الكمية. نفرق Das Viertel المفرد عن Die Viertel الجمع في الأمثلة."
+        },
+        {
+          "text": "Der Marktplatz, die Marktplätze.",
+          "finding": "مذكر وجمع Marktplätze؛ ساحة السوق مكان، لا يلزم أن يكون مطابقًا للسوق الأسبوعي Markt بوصفه حدثًا."
+        },
+        {
+          "text": "Die Fußgängerzone, die Fußgängerzonen.",
+          "finding": "مؤنث وجمع Fußgängerzonen؛ منطقة للمشاة قد تشمل أكثر من شارع، ولا تساوي كل شارع منخفض المرور."
+        },
+        {
+          "text": "Die Sehenswürdigkeit, die Sehenswürdigkeiten.",
+          "finding": "مؤنث وجمع Sehenswürdigkeiten؛ معلم يستحق الزيارة، لا يضمن رسم دخول أو هيئة تصنيف سياحية."
+        },
+        {
+          "text": "Das Ufer, die Ufer.",
+          "finding": "محايد وجمع Ufer؛ توسع المعنى إلى حافة ماء مع النهر والبحيرة مثالين، دون تغيير الألمانية المسجلة."
+        },
+        {
+          "text": "Die Grünanlage, die Grünanlagen.",
+          "finding": "مؤنث وجمع Grünanlagen؛ مساحة خضراء، لا يلزم أن تكون مكان Park نفسه في نص آخر أو أنها زارتها لمجرد رؤيتها."
+        },
+        {
+          "text": "Der Aussichtspunkt, die Aussichtspunkte.",
+          "finding": "مذكر وجمع Aussichtspunkte؛ نقطة إطلالة غالبًا مرتفعة، لا تعريف يشترط جبلًا أو برجًا."
+        },
+        {
+          "text": "Die Verbindung, die Verbindungen.",
+          "finding": "مؤنث وجمع Verbindungen؛ صُحح المعنى السياقي إلى رابط مواصلات بين الأماكن، لا اسم مركبة أو خط بعينه."
+        },
+        {
+          "text": "Der Stadtplan, die Stadtpläne.",
+          "finding": "مذكر وجمع Stadtpläne؛ خريطة مدينة، لا نقطة إطلالة أو ضمان وجود خريطة تفاعلية في التطبيق."
+        },
+        {
+          "text": "Zentral, am Stadtrand.",
+          "finding": "zentral و am Stadtrand وصفان للمركز والأطراف، لا تصريف أو جمع. الجنوب من المركز لا يثبت الوقوع على الأطراف."
+        },
+        {
+          "text": "Lebendig, ruhig.",
+          "finding": "lebendig و ruhig حيوية وهدوء في السياق؛ يمكن أن تكون البلدة حيوية ولها شوارع هادئة دون تناقض."
+        },
+        {
+          "text": "Sich befinden, befindet sich.",
+          "finding": "sich befinden انعكاسي بمعنى يقع/يوجد؛ befindet sich للمفرد. في التابعة يأتي sich بعد الموصول والمصرف أخيرًا."
+        },
+        {
+          "text": "Zu Fuß erreichbar.",
+          "finding": "zu Fuß erreichbar صفة إمكان الوصول مشيًا، لا مصدر um … zu ولا إثبات أن المشي الوسيلة الوحيدة أو متاح لكل شخص."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-05-AUD-MODEL-01",
+      "text": "أمثلة وصف الأماكن بالجمل الموصولة",
+      "finding": "تفريغ مكتوب مطابق للمصدر؛ لا مراجعة سمعية. ready حالة تاريخية محفوظة، والأصوات والروابط و MP3 ثابتة دون اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Der Marktplatz, der im Zentrum liegt, ist sehr lebendig.",
+          "finding": "der مذكر مفرد فاعل liegt في التابعة، و Marktplatz فاعل ist في الرئيسية؛ الفاصلتان تحيطان بالوصف، لا نضع ist داخل التابعة."
+        },
+        {
+          "text": "Der Aussichtspunkt, den viele Gäste besuchen, liegt am Fluss.",
+          "finding": "den مفعول besuchen و viele Gäste فاعل جمع، بينما Aussichtspunkt فاعل liegt في الرئيسية؛ هذا يثبت اختلاف الحالتين."
+        },
+        {
+          "text": "Die Straße, die ich besonders mag, ist verkehrsberuhigt.",
+          "finding": "die مفعول mag و ich فاعله؛ صُححت عربية verkehrsberuhigt إلى تخفيف المرور، لا جعلها منطقة مشاة تلقائيًا."
+        },
+        {
+          "text": "Die Viertel, die am Stadtrand liegen, sind gut angebunden.",
+          "finding": "Die Viertel جمع رغم ثبات شكل Viertel؛die فاعل liegen الجمع، و sind مصرف الرئيسية. gut angebunden لا يحدد خط مواصلات بعينه."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-05-AUD-DLG-01",
+      "text": "حوار: Mara وYusuf في جولة بالمدينة",
+      "finding": "تفريغ مكتوب مطابق للمصدر؛ لا مراجعة سمعية. ready حالة تاريخية محفوظة، والأصوات والروابط و MP3 ثابتة دون اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Welches Viertel möchtest du heute sehen?",
+          "finding": "Mara تسأل أي حي يرغب Yusuf في رؤيته اليوم؛ möchte رغبة لا إثبات زيارة حدثت."
+        },
+        {
+          "text": "Die Altstadt, die direkt am Fluss liegt.",
+          "finding": "البلدة القديمة قرب النهر؛ die فاعل liegt المفرد. هذا جواب اسمي مختصر للسؤال لا جملة رئيسية مستقلة."
+        },
+        {
+          "text": "Kennst du den Aussichtspunkt, den man vom Park aus erreicht?",
+          "finding": "نقطة الإطلالة مفعول kennst في الرئيسية ومفعول erreicht في التابعة؛ man فاعل مفرد. vom Park aus نقطة انطلاق لا خريطة مسافة."
+        },
+        {
+          "text": "Ja. Der Weg ist ruhig. Es gibt auch einen Markt, der jeden Samstag stattfindet.",
+          "finding": "Ja جواب معرفة؛ الطريق هادئ والسوق يقام كل سبت. der فاعل stattfindet رغم أن Markt بعد es gibt منصوب؛ السوق ليس بالضرورة ساحة السوق."
+        },
+        {
+          "text": "Und wo beginnt die Fußgängerzone?",
+          "finding": "سؤال عن بداية منطقة المشاة، لا اسم نقطة الإطلالة."
+        },
+        {
+          "text": "Sie beginnt an der Brücke und führt bis zum Marktplatz.",
+          "finding": "sie تعود إلى Fußgängerzone؛ البداية عند الجسر والنهاية عند ساحة السوق. لا طول أو مدة أو صلة مثبتة بمدينة القراءة."
+        }
+      ],
+      "segmentCount": 6,
+      "voices": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ]
+    },
+    {
+      "id": "DL-B1-05-AUD-READ-01",
+      "text": "قراءة: جولة Noura في Brückenfeld",
+      "finding": "تفريغ مكتوب مطابق للمصدر؛ لا مراجعة سمعية. ready حالة تاريخية محفوظة، والأصوات والروابط و MP3 ثابتة دون اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Noura besucht die fiktive Stadt Brückenfeld.",
+          "finding": "Noura تزور مدينة موصوفة صراحة بالخيالية؛ لا دليل على وجهة واقعية ولا ضرورة لنفي وجود الاسم في العالم."
+        },
+        {
+          "text": "Sie beginnt ihren Rundgang auf dem Marktplatz, der von alten Häusern umgeben ist.",
+          "finding": "البداية على ساحة السوق؛ dem في الرئيسية مقابل der الفاعل في التابعة. إحاطة البيوت بالساحة لا تنفي كون الموصول فاعلًا نحويًا."
+        },
+        {
+          "text": "Danach geht sie durch eine Gasse, die zur Fußgängerzone führt.",
+          "finding": "بعد ذلك تسير خلال زقاق يؤدي إلى منطقة المشاة؛ die فاعل führt، ولا يثبت أن الزقاق كله منطقة مشاة."
+        },
+        {
+          "text": "Das Stadtmuseum, das eine kleine Ausstellung zur Stadtgeschichte zeigt, liegt gleich daneben.",
+          "finding": "المتحف بجوار الموضع المذكور ويعرض تاريخ المدينة؛ das فاعل zeigt و eine Ausstellung مفعول. وصفه لا يثبت دخول Noura إليه."
+        },
+        {
+          "text": "Nach dem Mittagessen besucht sie den Aussichtspunkt, den viele Einheimische gern nutzen.",
+          "finding": "بعد الغداء تزور نقطة الإطلالة؛ den مفعول nutzen و viele Einheimische فاعل جمع. لا وقت دقيق أو تعميم على جميع السكان."
+        },
+        {
+          "text": "Von dort sieht sie den Fluss und eine Grünanlage, die sich am Ufer befindet.",
+          "finding": "من هناك ترى النهر ومساحة خضراء؛ die تعود إلى Grünanlage وهي فاعل befindet الانعكاسي. الرؤية لا تعني زيارة المساحة."
+        },
+        {
+          "text": "Besonders mag Noura die Altstadt, die lebendig ist und zugleich ruhige Straßen hat.",
+          "finding": "تحب البلدة القديمة خصوصًا، وهي حيوية وبها شوارع هادئة؛ die فاعل مشترك لـ ist و hat، و ruhige Straßen مفعول hat. لا تناقض بين الوصفين."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-05-AUD-LST-01",
+      "text": "استماع: وصف حيّ سكني",
+      "finding": "تفريغ مكتوب مطابق للمصدر؛ لا مراجعة سمعية. ready حالة تاريخية محفوظة، والأصوات والروابط و MP3 ثابتة دون اعتماد جديد.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Unser Stadtteil liegt südlich der Innenstadt.",
+          "finding": "الموقع جنوب وسط المدينة، لا دليل على أطرافها أو اسمها. الراوي غير مسمى وجنسه غير مصرح به؛ Unser لا يحدده."
+        },
+        {
+          "text": "Besonders gefällt mir die Bibliothek, die bis spät geöffnet ist.",
+          "finding": "المكتبة تعجب الراوي وتظل مفتوحة حتى وقت متأخر؛ die فاعل ist، و mir في Dativ مع gefällt. لا ساعة فتح أو إغلاق دقيقة أو جدول يومي."
+        },
+        {
+          "text": "Neben ihr gibt es einen Platz, den viele Menschen am Wochenende besuchen.",
+          "finding": "بجوار المكتبة ساحة يزورها كثيرون نهاية الأسبوع؛ ihr ترجع إلى Bibliothek، و den مفعول besuchen و viele Menschen فاعل جمع."
+        },
+        {
+          "text": "Eine Straße, die direkt zur Haltestelle führt, ist tagsüber ruhig.",
+          "finding": "شارع يؤدي مباشرة إلى الموقف وهو هادئ نهارًا؛ die فاعل führt و zur = zu der. لا فرض لنوع الموقف أو هدوء الليل."
+        },
+        {
+          "text": "Auch der Park, der am Wasser liegt, ist zu Fuß erreichbar.",
+          "finding": "الحديقة بجوار الماء ويمكن بلوغها مشيًا؛ der فاعل liegt. لا ذكر لنهر أو بحيرة أو منع كل وسائل الوصول الأخرى أو ضمان إتاحة."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-03"
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/relativsaetze",
+      "reason": "Returned not-found page despite tool success; not a read reference."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Fuszgangerzone",
+      "reason": "Returned not-found page despite tool success; not a read reference."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/Fuszg%20aerzone",
+      "reason": "Returned not-found page despite tool success; not a read reference."
+    },
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/nomen-und-artikel/deklination/akkusativ",
+      "reason": "Returned not-found page despite tool success; not a read reference."
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-05-cities-relative-clauses.md": "ae48757d0c0dbc270585aeec965f8d4144064e83bfa0b1a1a29c50ad9970bb58",
+    "content/B1/lesson-05-cities-relative-clauses.assessment.json": "d828891353d11f69dd57bd5aa66e112a8541da158225c8aa2b1314466beac365"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-05-AUD-PHR-01": "20a923fc6dd8eab8f57d084117b7d8ed65762e47e0ee89832cce1900f7813cec",
+    "DL-B1-05-AUD-MODEL-01": "ca6f0c5aedd610aca4b6f9a228b038e156cb27205ae37ea64932318c680f4ab4",
+    "DL-B1-05-AUD-DLG-01": "4e36e346ee97d85dcb7aef46af7f520ec9bf35620d54045530627ee5b7774754",
+    "DL-B1-05-AUD-READ-01": "7a5331dff6320e883ab5cbb183873db70630959c7c620f4eefbeb61a7b40fa59",
+    "DL-B1-05-AUD-LST-01": "ded0baa5f52f30b0413a59157f4eeef42583f22388c7be8bfd22e315f69050e7"
+  },
+  "preservation": {
+    "baseline": "3048537769a6a2523af80066bb04b23f2273ab9e",
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedQuizRecords": 10,
+    "unchangedAnswerIndices": [
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      1,
+      1
+    ],
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "protectedFilesIncludingAudio": 589,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "changedAudioRegisterRows": {
+      "DL-B1-05-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B1-05-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B1-05-AUD-LST-01": [
+        "source_line"
+      ]
+    },
+    "unchangedPhraseAndModelRegisterRows": true
+  },
+  "implementationCommit": "063068653f5ed1abc5498c325a9770bd15b13a3f",
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 2057755,
+    "cacheVersion": "v83",
+    "build": "PASS",
+    "verify": "PASS",
+    "reviewGuards": 35,
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserVersion": "143.0.7499.0",
+    "axe": {
+      "states": 153,
+      "selectedRuleViolations": 0,
+      "incompleteOccurrences": 105,
+      "incompleteNodeOccurrences": 237
+    },
+    "narrowStates": 126,
+    "formsIntermittency": "CR35 passed both widths on first test run; historical CR29/CR33 native chooser intermittency remains unresolved, no app/test fix.",
+    "progressionInitialFailure": "Obsolete B1.5 source assertion required oral-only alternative; replaced with absence check, literal task/source parity, and speakAloud=[false,true]. Full test then passed; other historical audio assertions unchanged.",
+    "jsSyntax": "PASS",
+    "diffCheck": "PASS"
+  },
+  "limits": [
+    "الصفحات العشر كاملة، و Verbindung في جزأين. أربع صفحات not found مستبعدة؛ PDF والفيديو والروابط الفرعية غير المقروءة لا تحسب مراجع.",
+    "المراجع تدعم القاعدة والمعنى ضمن نطاقها، لا حقائق الأماكن الخيالية أو كل كلمة في المصدر؛ لا شهادة CEFR أو WCAG. لا مراجع بشري شرطًا للاستمرار.",
+    "لا تحليل صوتي أو توليد أو اعتماد جديد. النماذج الجديدة المكتوبة لا تغير أدوار Mara02/Yusuf03 أو رواة 02/03، والتسجيلات محفوظة.",
+    "إقرارات المعايير والحروف لا تتحقق آليًا من عدد الجمل أو الحالة أو الفواصل أو النطق؛ النص المفتوح قد يحتاج تصحيحًا دون أن تكشفه البوابة.",
+    "الانخفاض المروري لا يساوي منطقة مشاة قانونيًا في كل حال؛ والوصول مشيًا لا يضمن الإتاحة. لا خرائط أو مواعيد حقيقية مستنتجة من القصة.",
+    "ظهور مكان في الوصف لا يثبت دخوله، والرؤية لا تساوي الزيارة. bis spät لا يقدم ساعة، و tagsüber لا يحكم على الليل.",
+    "نجاح المتصفح لاحقًا لا يصلح التذبذب السابق في filechooser دون سبب مثبت أو تعديل؛ تسجل النتيجة الفعلية منفصلة."
+  ],
+  "campaign": {
+    "reviewedLessons": 34,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 19,
+    "next": "CR36/B1.6",
+    "planVersion": "2.41",
+    "merged": false
+  },
+  "delivery": {
+    "implementationCommit": "063068653f5ed1abc5498c325a9770bd15b13a3f",
+    "branch": "arena/01a1036f-deutschlern",
+    "lastQueriedPrHead": "4d4a10edac6df2c5cab9f988f670d702aa8ed22e",
+    "prState": "OPEN",
+    "mergedAt": null,
+    "implementationDeployment": "success",
+    "implementationDeploymentId": 6946403361,
+    "implementationPreviewUrl": "https://deutschlern-fg3clft8i-balinader-2671s-projects.vercel.app",
+    "remoteUiTested": false,
+    "productionTested": false,
+    "reportCommit": "4d4a10edac6df2c5cab9f988f670d702aa8ed22e",
+    "reportPushed": true,
+    "reportHeadMatchedOrigin": true,
+    "reportDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "reportDeployments": [],
+    "receiptCommit": "Resolve by title Record CR35 delivery receipt; receipt deployment not queried."
+  }
+}

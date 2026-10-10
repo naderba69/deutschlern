@@ -1,0 +1,1385 @@
+{
+  "reviewVersion": "cr51-b2-09-v1",
+  "lessonId": "b2-09-business-marketing-employment-prepositions",
+  "lessonTitle": "B2.9 — الشركات والتسويق والعمل: الأفعال مع حروف الجر وda-/wo- المركّبة",
+  "assessmentVersion": "b2-09-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 95,
+  "exerciseSubItemCount": 41,
+  "modelPartCount": 10,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-09-business-marketing-employment-prepositions.md": "6020ae4fd31726c3755ae6ec9b269600fdbe8c415cd2f1c3cb4158e178a6d73c",
+    "content/B2/lesson-09-business-marketing-employment-prepositions.assessment.json": "96df24aeb5d8f64ce99ebd1f73c26044523987a0302bf260e13b79f378a0640d"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-09-AUD-PHR-01": "d0b64d531428d97d067fd92ef96487f682b1bf0cac041cd1191220c45917e929",
+    "DL-B2-09-AUD-MODEL-01": "899607c4c9f3d71975b3baa88d3e5d5b1b26775af64adea1b936864f876ce9cd",
+    "DL-B2-09-AUD-DLG-01": "933e140ef4bb3e3ba0c3a6d30096dcf60b0099ad8e1168b0cae72692090d27f9",
+    "DL-B2-09-AUD-READ-01": "45be75e3e878f25b0371415b224955a0623497cb15954c7e8b2b224f91c53813",
+    "DL-B2-09-AUD-LST-01": "27dc098b5c554303aa9b174542c29c1303e337d9ef0ae4c8f88fd210b8acd33a"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-adverbs",
+      "title": "Lingolia English — Adverbs in German Grammar (Prepositional Adverbs da-/wo-)",
+      "url": "https://deutsch.lingolia.com/en/grammar/adverbs",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Prepositional adverbs (Pronominaladverbien) combine da(r)- or wo(r)- with a preposition to refer to things, concepts, or whole clauses (darauf, damit, davon, darüber, wofür, worauf, womit, wovon, worüber); -r- is inserted before vowel-initial prepositions (a, e, i, o, u, ä, ö, ü); for persons, preposition + personal/interrogative pronoun (Mit wem / Mit einer Bewerberin) is required."
+    },
+    {
+      "id": "lingolia-en-commas",
+      "title": "Lingolia English — Commas in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/writing/commas",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "totalChunks": 4,
+      "keyFindings": "Obligatory comma separating main clauses with correlative da(r)- adverbs from subordinate clauses introduced by dass, ob, or interrogative words (welche, wie, worauf)."
+    },
+    {
+      "id": "lingolia-en-dependent-clauses",
+      "title": "Lingolia English — Dependent Clauses (Nebensätze) in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Subordinate clauses introduced by subordinating conjunctions (dass, ob) or relative/interrogative pronouns place the conjugated finite verb in clause-final position."
+    },
+    {
+      "id": "duden-unternehmen",
+      "title": "Duden — Unternehmen",
+      "url": "https://www.duden.de/rechtschreibung/Unternehmen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Unternehmen; Genitiv des Unternehmens, Plural die Unternehmen (zero-ending plural)."
+    },
+    {
+      "id": "duden-umsatz",
+      "title": "Duden — Umsatz",
+      "url": "https://www.duden.de/rechtschreibung/Umsatz",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Umsatz; Genitiv des Umsatzes, Plural die Umsätze; total sales revenue (distinct from net profit der Gewinn)."
+    },
+    {
+      "id": "duden-nachfrage",
+      "title": "Duden — Nachfrage",
+      "url": "https://www.duden.de/rechtschreibung/Nachfrage",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Nachfrage; Genitiv der Nachfrage, Plural die Nachfragen; in economic sense (market demand) used predominantly in the singular."
+    },
+    {
+      "id": "duden-zielgruppe",
+      "title": "Duden — Zielgruppe",
+      "url": "https://www.duden.de/rechtschreibung/Zielgruppe",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Zielgruppe; Genitiv der Zielgruppe, Plural die Zielgruppen; target group addressed by marketing/advertising."
+    },
+    {
+      "id": "duden-werbekampagne",
+      "title": "Duden — Werbekampagne",
+      "url": "https://www.duden.de/rechtschreibung/Werbekampagne",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Werbekampagne; Genitiv der Werbekampagne, Plural die Werbekampagnen; advertising campaign."
+    },
+    {
+      "id": "duden-lieferkette",
+      "title": "Duden — Lieferkette",
+      "url": "https://www.duden.de/rechtschreibung/Lieferkette",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Lieferkette; Genitiv der Lieferkette, Plural die Lieferketten; supply chain."
+    },
+    {
+      "id": "duden-wettbewerb",
+      "title": "Duden — Wettbewerb",
+      "url": "https://www.duden.de/rechtschreibung/Wettbewerb",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Wettbewerb; Genitiv des Wettbewerb[e]s, Plural die Wettbewerbe; economic market competition is singular-only (ohne Plural)."
+    },
+    {
+      "id": "duden-fachkraft",
+      "title": "Duden — Fachkraft",
+      "url": "https://www.duden.de/rechtschreibung/Fachkraft",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Fachkraft; Genitiv der Fachkraft, Plural die Fachkräfte; grammatically feminine noun referring to a skilled specialist of any gender."
+    },
+    {
+      "id": "duden-stellenanzeige",
+      "title": "Duden — Stellenanzeige",
+      "url": "https://www.duden.de/rechtschreibung/Stellenanzeige",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Stellenanzeige; Genitiv der Stellenanzeige, Plural die Stellenanzeigen; job advertisement."
+    },
+    {
+      "id": "duden-arbeitsbedingung",
+      "title": "Duden — Arbeitsbedingung",
+      "url": "https://www.duden.de/rechtschreibung/Arbeitsbedingung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Arbeitsbedingung; Genitiv der Arbeitsbedingung, Plural die Arbeitsbedingungen (meist im Plural)."
+    },
+    {
+      "id": "duden-auswahlverfahren",
+      "title": "Duden — Auswahlverfahren",
+      "url": "https://www.duden.de/rechtschreibung/Auswahlverfahren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Auswahlverfahren; Genitiv des Auswahlverfahrens, Plural die Auswahlverfahren; selection procedure."
+    },
+    {
+      "id": "duden-einarbeitung",
+      "title": "Duden — Einarbeitung",
+      "url": "https://www.duden.de/rechtschreibung/Einarbeitung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Einarbeitung; Genitiv der Einarbeitung, Plural die Einarbeitungen; onboarding / job familiarization."
+    },
+    {
+      "id": "duden-qualifikation",
+      "title": "Duden — Qualifikation",
+      "url": "https://www.duden.de/rechtschreibung/Qualifikation",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Qualifikation; Genitiv der Qualifikation, Plural die Qualifikationen."
+    },
+    {
+      "id": "duden-zeugnis",
+      "title": "Duden — Zeugnis",
+      "url": "https://www.duden.de/rechtschreibung/Zeugnis",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Zeugnis; Genitiv des Zeugnisses, Plural die Zeugnisse; certificate/reference (von einem Zeugnis in Dativ)."
+    },
+    {
+      "id": "duden-bewerberin",
+      "title": "Duden — Bewerberin",
+      "url": "https://www.duden.de/rechtschreibung/Bewerberin",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Bewerberin; Genitiv der Bewerberin, Plural die Bewerberinnen; female applicant."
+    },
+    {
+      "id": "duden-personalabteilung",
+      "title": "Duden — Personalabteilung",
+      "url": "https://www.duden.de/rechtschreibung/Personalabteilung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Personalabteilung; Genitiv der Personalabteilung, Plural die Personalabteilungen; HR department."
+    },
+    {
+      "id": "duden-abhaengig",
+      "title": "Duden — abhängig",
+      "url": "https://www.duden.de/rechtschreibung/abhaengig",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adjective abhängig; governed preposition von etwas abhängig sein (+ Dativ)."
+    },
+    {
+      "id": "duden-spezialisieren",
+      "title": "Duden — spezialisieren",
+      "url": "https://www.duden.de/rechtschreibung/spezialisieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak -ieren verb spezialisieren (spezialisiert, spezialisierte, hat spezialisiert); reflexive sich auf etwas spezialisieren (+ Akkusativ)."
+    },
+    {
+      "id": "duden-wert",
+      "title": "Duden — Wert",
+      "url": "https://www.duden.de/rechtschreibung/Wert",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Wert; Genitiv des Wert[e]s, Plural die Werte; fixed Nomen-Verb-Verbindung Wert auf etwas legen (+ Akkusativ)."
+    },
+    {
+      "id": "duden-legen",
+      "title": "Duden — legen",
+      "url": "https://www.duden.de/rechtschreibung/legen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb legen (legt, legte, hat gelegt); idiomatic Wert auf etwas legen."
+    },
+    {
+      "id": "duden-werben",
+      "title": "Duden — werben",
+      "url": "https://www.duden.de/rechtschreibung/werben",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong verb werben (du wirbst, er wirbt, warb, hat geworben); mit etwas werben (+ Dativ, advertise using a feature/means -> Womit / Damit) vs. für etwas werben (+ Akkusativ, advertise for a product/goal)."
+    },
+    {
+      "id": "duden-richten",
+      "title": "Duden — richten",
+      "url": "https://www.duden.de/rechtschreibung/richten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb richten (richtet, richtete, hat gerichtet); reflexive sich an jemanden/etwas richten (+ Akkusativ, address a target group -> An wen) vs. sich nach etwas richten (+ Dativ)."
+    },
+    {
+      "id": "duden-achten",
+      "title": "Duden — achten",
+      "url": "https://www.duden.de/rechtschreibung/achten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb achten (achtet, achtete, hat geachtet); auf jemanden/etwas achten (+ Akkusativ -> Worauf / Darauf, dass ...)."
+    },
+    {
+      "id": "duden-informieren",
+      "title": "Duden — informieren",
+      "url": "https://www.duden.de/rechtschreibung/informieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak -ieren verb informieren (informiert, informierte, hat informiert); über etwas informieren (+ Akkusativ -> Worüber / Darüber, welche ...)."
+    },
+    {
+      "id": "duden-konzentrieren",
+      "title": "Duden — konzentrieren",
+      "url": "https://www.duden.de/rechtschreibung/konzentrieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak -ieren verb konzentrieren (konzentriert, konzentrierte, hat konzentriert); sich auf etwas konzentrieren (+ Akkusativ -> Worauf / Darauf)."
+    },
+    {
+      "id": "duden-interessieren",
+      "title": "Duden — interessieren",
+      "url": "https://www.duden.de/rechtschreibung/interessieren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak -ieren verb interessieren (interessiert, interessierte, hat interessiert); sich für jemanden/etwas interessieren (+ Akkusativ -> Wofür / Dafür)."
+    },
+    {
+      "id": "duden-gehoeren",
+      "title": "Duden — gehören",
+      "url": "https://www.duden.de/rechtschreibung/gehoeren",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb gehören (gehört, gehörte, hat gehört); zu etwas gehören (+ Dativ -> zur Stelle gehören)."
+    },
+    {
+      "id": "duden-sprechen",
+      "title": "Duden — sprechen",
+      "url": "https://www.duden.de/rechtschreibung/sprechen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Strong verb sprechen (spricht, sprach, hat gesprochen); mit jemandem sprechen (+ Dativ -> Mit wem) vs. über etwas sprechen (+ Akkusativ -> Worüber / Darüber)."
+    },
+    {
+      "id": "duden-abhangen",
+      "title": "Duden — abhangen",
+      "url": "https://www.duden.de/rechtschreibung/abhangen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Regional/older lemma entry pointing to strong separable abhängen (abhaengen_abgehangen)."
+    },
+    {
+      "id": "duden-abhaengen-abgehangen",
+      "title": "Duden — abhängen (strong: hing ab, hat abgehangen)",
+      "url": "https://www.duden.de/rechtschreibung/abhaengen_abgehangen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong separable verb abhängen (hängt ab, hing ab, hat abgehangen); von jemandem/etwas abhängen (+ Dativ -> Wovon / Davon)."
+    },
+    {
+      "id": "duden-abhaengen-abgehaengt",
+      "title": "Duden — abhängen (weak homograph: hängte ab, hat abgehängt)",
+      "url": "https://www.duden.de/rechtschreibung/abhaengen_abgehaengt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak transitive homograph abhängen (hängt ab, hängte ab, hat abgehängt = unhook/detach/outdistance), contrasted in Section 1 note with strong intransitive abhängen von + Dativ."
+    }
+  ],
+  "SearchQueries": [
+    {
+      "id": "lingolia-search-prepositional-adverbs",
+      "query": "site:deutsch.lingolia.com Pronominaladverbien da- wo- worauf darauf Verben mit Präpositionen",
+      "access": "search_snippet_only",
+      "usedFor": "Located Lingolia reference pages for German prepositional adverbs (da-/wo-) and subordinate-clause comma/word-order rules."
+    },
+    {
+      "id": "duden-search-abhaengen-belegen",
+      "query": "site:duden.de/rechtschreibung abhaengen belegen",
+      "access": "search_snippet_only",
+      "usedFor": "Located Duden disambiguated URLs for strong abhängen (abhaengen_abgehangen) vs. weak abhängen (abhaengen_abgehaengt)."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/abhaengen_schaukeln_losmachen",
+      "reason": "HTTP 404 non-existent disambiguation slug; replaced by full-fetched https://www.duden.de/rechtschreibung/abhaengen_abgehangen and https://www.duden.de/rechtschreibung/abhaengen_abgehaengt."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/abhaengen",
+      "reason": "HTTP 404 bare homograph URL on Duden; replaced by full-fetched https://www.duden.de/rechtschreibung/abhaengen_abgehangen and https://www.duden.de/rechtschreibung/abhaengen_abgehaengt."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/belegen",
+      "reason": "HTTP 404 bare homograph URL on Duden; excluded from evidence."
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-09-scope-01",
+      "section": "Scope",
+      "source": "B2.9 title, duration (45–50 min), skills, objective (wo(r) + Präposition vs. da(r) + Präposition vs. person reference), and fictional Nordwerk disclaimer",
+      "status": "verified",
+      "finding": "Verified that the lesson scope clearly targets prepositional adverbs wo(r)-/da(r)- for things/ideas/clauses vs. preposition + interrogative/personal pronoun for persons in a fictional business, marketing, and recruitment context.",
+      "action": "Preserved header and objective verbatim."
+    },
+    {
+      "id": "b2-09-scope-02",
+      "section": "Scope",
+      "source": "Section 1 Duden morphological and prepositional note on noun plurals (das Unternehmen, der Umsatz, die Nachfrage, der Wettbewerb, die Arbeitsbedingung, die Fachkraft) and verb-preposition governance (sich spezialisieren auf, Wert legen auf, werben mit vs. für, abhängen von, sich richten an vs. nach)",
+      "status": "added",
+      "finding": "Added a Duden-backed note below the Section 1 vocabulary table explaining singular-only economic senses (die Nachfrage, der Wettbewerb), plural-dominant die Arbeitsbedingungen, strong vs. weak abhängen, and preposition contrasts without changing the 15 table rows.",
+      "action": "Added morphological and prepositional note below Section 1 table."
+    },
+    {
+      "id": "b2-09-scope-03",
+      "section": "Scope",
+      "source": "Section 2 helper subsection (مساعدة قبل النصوص والمهمات) on -r- insertion before vowels, thing vs. person pronouns, da(r)- as Korrelat before dass/ob/welche clauses with obligatory comma and verb-final order, additional lesson verb-preposition pairs, and Konjunktiv I in listening",
+      "status": "added",
+      "finding": "Added a 6-bullet pre-task helper section in Section 2 using backticks so that marketingBold.slice(-3) remains ['sich spezialisieren auf', 'abhängen von', 'Wert legen auf'] for DL-B2-09-AUD-MODEL-01.",
+      "action": "Added ### مساعدة قبل النصوص والمهمات at the end of Section 2."
+    },
+    {
+      "id": "b2-09-scope-04",
+      "section": "Scope",
+      "source": "Expanded T01 (5 items) and T07 (4 items), verb cues in T02, numbered T06 (5 items), graduated T08/P01/P02 split, Section 8 written models, Section 9 review cards, assessment b2-09-v2, and Service Worker cache v100",
+      "status": "refined",
+      "finding": "Expanded exercise sub-items to 41 across T01–T08 ([5, 4, 4, 4, 5, 5, 4, 10]), differentiated P01 (writing-only, speakAloud: false, 150 chars) and P02 (writing + speaking, speakAloud: true, 180 chars, linked to T05/T06/T07/T08), added Section 8 written models (10 sentences), and bumped assessment to b2-09-v2 and Service Worker cache to v100.",
+      "action": "Updated lesson markdown, assessment JSON, CSV catalogs, Service Worker, and test suites."
+    },
+    {
+      "id": "b2-09-vocab-01",
+      "section": "Vocabulary",
+      "source": "| das Unternehmen | die Unternehmen | الشركة / المؤسسة |",
+      "status": "verified",
+      "finding": "Verified neuter noun das Unternehmen, Genitiv des Unternehmens, Plural die Unternehmen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-02",
+      "section": "Vocabulary",
+      "source": "| der Umsatz | die Umsätze | الإيرادات / حجم المبيعات |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Umsatz, Genitiv des Umsatzes, Plural die Umsätze (sales revenue/turnover) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-03",
+      "section": "Vocabulary",
+      "source": "| die Nachfrage | — | الطلب في السوق |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Nachfrage; market demand is used in the singular ('—'), while plural die Nachfragen means follow-up inquiries, as documented in the Section 1 note.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-04",
+      "section": "Vocabulary",
+      "source": "| die Zielgruppe | die Zielgruppen | الفئة المستهدفة |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Zielgruppe, Plural die Zielgruppen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-05",
+      "section": "Vocabulary",
+      "source": "| die Werbekampagne | die Werbekampagnen | الحملة الإعلانية |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Werbekampagne, Plural die Werbekampagnen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-06",
+      "section": "Vocabulary",
+      "source": "| die Lieferkette | die Lieferketten | سلسلة التوريد |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Lieferkette, Plural die Lieferketten against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-07",
+      "section": "Vocabulary",
+      "source": "| der Wettbewerb | — | المنافسة في السوق |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Wettbewerb; market competition is singular-only (ohne Plural) in Duden, while plural die Wettbewerbe refers to organized contests.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-08",
+      "section": "Vocabulary",
+      "source": "| die Fachkraft | die Fachkräfte | موظف متخصص / كفاءة مهنية |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Fachkraft, Plural die Fachkräfte against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-09",
+      "section": "Vocabulary",
+      "source": "| die Stellenanzeige | die Stellenanzeigen | إعلان الوظيفة |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Stellenanzeige, Plural die Stellenanzeigen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-10",
+      "section": "Vocabulary",
+      "source": "| die Arbeitsbedingung | die Arbeitsbedingungen | شرط / ظروف العمل |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Arbeitsbedingung, Plural die Arbeitsbedingungen (meist im Plural in Duden).",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-11",
+      "section": "Vocabulary",
+      "source": "| sich spezialisieren auf + Akkusativ | spezialisiert sich | يتخصص في |",
+      "status": "verified",
+      "finding": "Verified reflexive -ieren verb sich spezialisieren auf + Akkusativ (spezialisiert sich, spezialisierte sich, hat sich spezialisiert) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-12",
+      "section": "Vocabulary",
+      "source": "| Wert legen auf + Akkusativ | legt Wert | يولي أهمية لـ |",
+      "status": "verified",
+      "finding": "Verified idiomatic verb-noun phrase Wert legen auf + Akkusativ (legt Wert, legte Wert, hat Wert gelegt) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-13",
+      "section": "Vocabulary",
+      "source": "| werben mit + Dativ | wirbt | يروّج باستخدام / يعلن عن طريق |",
+      "status": "verified",
+      "finding": "Verified strong verb werben mit + Dativ (wirbt, warb, hat geworben; advertise by means of a feature -> Womit / Damit) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-14",
+      "section": "Vocabulary",
+      "source": "| abhängen von + Dativ | hängt ab | يعتمد على |",
+      "status": "verified",
+      "finding": "Verified strong separable verb abhängen von + Dativ (hängt ab, hing ab, hat abgehangen -> Wovon / Davon) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-vocab-15",
+      "section": "Vocabulary",
+      "source": "| sich richten an + Akkusativ | richtet sich | يتوجّه إلى |",
+      "status": "verified",
+      "finding": "Verified reflexive weak verb sich richten an + Akkusativ (richtet sich, richtete sich, hat sich gerichtet -> An wen) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-09-AUD-PHR-01."
+    },
+    {
+      "id": "b2-09-grammar-01",
+      "section": "Grammar",
+      "source": "Section 2 intro paragraph on wo(r) + Präposition and da(r) + Präposition with -r- insertion before vowels (worauf/darauf, worüber/darüber)",
+      "status": "verified",
+      "finding": "Verified explanation of Pronominaladverbien formation and -r- epenthesis before vowel-initial prepositions against Lingolia.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-02",
+      "section": "Grammar",
+      "source": "| auf | **Worauf** legt das Unternehmen Wert? | **Darauf**, dass die Arbeitsbedingungen transparent sind. |",
+      "status": "verified",
+      "finding": "Verified auf + Akkusativ with Wert legen -> Worauf / Darauf, dass ... (comma + verb-final sind) against Duden and Lingolia.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-03",
+      "section": "Grammar",
+      "source": "| mit | **Womit** wirbt die Kampagne? | **Damit**, dass der Service leicht zugänglich ist. |",
+      "status": "verified",
+      "finding": "Verified mit + Dativ with werben -> Womit / Damit, dass ... (no -r- before consonant m; verb-final ist) against Duden and Lingolia.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-04",
+      "section": "Grammar",
+      "source": "| von | **Wovon** hängt der Erfolg ab? | **Davon**, ob die Zielgruppe das Angebot versteht. |",
+      "status": "verified",
+      "finding": "Verified von + Dativ with abhängen -> Wovon / Davon, ob ... (no -r- before consonant v; verb-final versteht) against Duden and Lingolia.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-05",
+      "section": "Grammar",
+      "source": "| über | **Worüber** informiert die Stellenanzeige? | **Darüber**, welche Aufgaben übernommen werden. |",
+      "status": "verified",
+      "finding": "Verified über + Akkusativ with informieren -> Worüber / Darüber, welche ... (-r- before vowel ü; passive verb-final übernommen werden) against Duden and Lingolia.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-06",
+      "section": "Grammar",
+      "source": "Bullet 1: **Mit wem spricht die Personalchefin? — Mit einer Bewerberin.**",
+      "status": "verified",
+      "finding": "Verified person-reference rule: preposition + interrogative/personal pronoun (Mit wem + Dativ / Mit einer Bewerberin) instead of *Womit/*Damit against Lingolia and Duden.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-07",
+      "section": "Grammar",
+      "source": "Bullet 2: **Das Unternehmen achtet darauf, dass die Anzeige verständlich ist.**",
+      "status": "verified",
+      "finding": "Verified correlative darauf before a dass-clause with obligatory comma and clause-final finite verb (ist) against Lingolia and Duden.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-grammar-08",
+      "section": "Grammar",
+      "source": "Bullet 3: **sich spezialisieren auf**, **abhängen von**, **Wert legen auf**",
+      "status": "verified",
+      "finding": "Verified the three core verb-preposition combinations and preserved them as the final three bold tokens in Section 2 for DL-B2-09-AUD-MODEL-01.",
+      "action": "Preserved Section 2 grammar explanation and bold model tokens verbatim."
+    },
+    {
+      "id": "b2-09-helper-01",
+      "section": "Helper Notes",
+      "source": "Helper bullet 1: -r- insertion rule before vowel-initial prepositions (worauf/darauf, worüber/darüber, woran/daran) vs. consonant-initial prepositions (womit/damit, wovon/davon, wofür/dafür, wozu/dazu)",
+      "status": "added",
+      "finding": "Verified phonological -r- rule in Pronominaladverbien against Lingolia.",
+      "action": "Added in Section 2 using backticks to preserve audio model extraction."
+    },
+    {
+      "id": "b2-09-helper-02",
+      "section": "Helper Notes",
+      "source": "Helper bullet 2: Thing/concept/clause reference (Pronominaladverbien) vs. person reference (An wen + Akkusativ / Mit wem + Dativ)",
+      "status": "added",
+      "finding": "Verified syntactic contrast between inanimate Pronominaladverbien and animate preposition + wen/wem against Lingolia.",
+      "action": "Added in Section 2 using backticks to preserve audio model extraction."
+    },
+    {
+      "id": "b2-09-helper-03",
+      "section": "Helper Notes",
+      "source": "Helper bullet 3: da(r)- as correlative pronoun (Korrelat) before dass-, ob-, and interrogative subordinate clauses with obligatory comma and verb-final word order",
+      "status": "added",
+      "finding": "Verified correlative clause structure and comma placement against Lingolia.",
+      "action": "Added in Section 2 using backticks to preserve audio model extraction."
+    },
+    {
+      "id": "b2-09-helper-04",
+      "section": "Helper Notes",
+      "source": "Helper bullet 4: Complete verb-preposition map for B2.9 (sich konzentrieren auf, achten auf, informieren über, sprechen über vs. mit, sich interessieren für, gehören zu, belegen mit)",
+      "status": "added",
+      "finding": "Verified all additional verb-preposition pairs appearing in Sections 3–6 against Duden.",
+      "action": "Added in Section 2 using backticks to preserve audio model extraction."
+    },
+    {
+      "id": "b2-09-helper-05",
+      "section": "Helper Notes",
+      "source": "Helper bullet 5: Konjunktiv I reported speech in listening (entscheidend sei auch, ob die Bewerberin ... belegen könne)",
+      "status": "added",
+      "finding": "Clarified the Konjunktiv I forms sei and könne in the final sentence of Section 5 listening so learners recognize indirect speech attribution.",
+      "action": "Added in Section 2 using backticks to preserve audio model extraction."
+    },
+    {
+      "id": "b2-09-helper-06",
+      "section": "Helper Notes",
+      "source": "Helper bullet 6: Pedagogical disclaimer on fictional „Nordwerk“ examples and non-guaranteed campaign/recruitment outcomes",
+      "status": "added",
+      "finding": "Confirmed consistent fictional framing across reading, exercises, and performance tasks.",
+      "action": "Added in Section 2 using backticks to preserve audio model extraction."
+    },
+    {
+      "id": "b2-09-dialogue-01",
+      "section": "Dialogue",
+      "source": "**Mara:** Worauf konzentriert sich die neue Kampagne?",
+      "status": "verified",
+      "finding": "Verified turn 1 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-01.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-02",
+      "section": "Dialogue",
+      "source": "**Jonas:** Sie richtet sich an Fachkräfte, die flexible Arbeitsbedingungen suchen.",
+      "status": "verified",
+      "finding": "Verified turn 2 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-02.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-03",
+      "section": "Dialogue",
+      "source": "**Mara:** Womit wirbt das Unternehmen?",
+      "status": "verified",
+      "finding": "Verified turn 3 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-03.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-04",
+      "section": "Dialogue",
+      "source": "**Jonas:** Damit, dass es klare Aufgaben und ein transparentes Auswahlverfahren anbietet.",
+      "status": "verified",
+      "finding": "Verified turn 4 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-04.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-05",
+      "section": "Dialogue",
+      "source": "**Mara:** Und worauf legt die Personalabteilung Wert?",
+      "status": "verified",
+      "finding": "Verified turn 5 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-05.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-06",
+      "section": "Dialogue",
+      "source": "**Jonas:** Darauf, dass Bewerberinnen ihre Erfahrungen nachvollziehbar darstellen.",
+      "status": "verified",
+      "finding": "Verified turn 6 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-06.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-07",
+      "section": "Dialogue",
+      "source": "**Mara:** Wovon hängt der Erfolg der Kampagne ab?",
+      "status": "verified",
+      "finding": "Verified turn 7 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-07.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-dialogue-08",
+      "section": "Dialogue",
+      "source": "**Jonas:** Davon, ob die Anzeige die richtige Zielgruppe erreicht.",
+      "status": "verified",
+      "finding": "Verified turn 8 grammar, verb-preposition governance, and exact transcript alignment with DL-B2-09-AUD-DLG-01-08.mp3.",
+      "action": "Preserved dialogue turn verbatim."
+    },
+    {
+      "id": "b2-09-reading-01",
+      "section": "Reading",
+      "source": "Das fiktive Unternehmen „Nordwerk“ bietet Reparaturdienste und Ausbildungsplätze an.",
+      "status": "verified",
+      "finding": "Verified reading sentence 1 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-02",
+      "section": "Reading",
+      "source": "Die neue Werbekampagne richtet sich an Menschen, die Geräte länger nutzen möchten, und an Fachkräfte, die sich für technische Berufe interessieren.",
+      "status": "verified",
+      "finding": "Verified reading sentence 2 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-03",
+      "section": "Reading",
+      "source": "Im Text wird erklärt, worauf das Unternehmen Wert legt: klare Informationen über Aufgaben, Arbeitszeiten und Auswahlverfahren.",
+      "status": "verified",
+      "finding": "Verified reading sentence 3 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-04",
+      "section": "Reading",
+      "source": "Die Kampagne wirbt damit, dass neue Mitarbeitende eine strukturierte Einarbeitung erhalten.",
+      "status": "verified",
+      "finding": "Verified reading sentence 4 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-05",
+      "section": "Reading",
+      "source": "Die Personalabteilung informiert außerdem darüber, welche Qualifikationen für die offenen Stellen erforderlich sind.",
+      "status": "verified",
+      "finding": "Verified reading sentence 5 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-06",
+      "section": "Reading",
+      "source": "Ob die Kampagne erfolgreich ist, hängt davon ab, ob die angesprochenen Personen die Informationen verständlich finden.",
+      "status": "verified",
+      "finding": "Verified reading sentence 6 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-07",
+      "section": "Reading",
+      "source": "Alle Beispiele zu „Nordwerk“ sind erfunden.",
+      "status": "verified",
+      "finding": "Verified reading sentence 7 syntax, prepositional adverbs/relatives, and verbatim alignment with DL-B2-09-AUD-READ-01.mp3.",
+      "action": "Preserved reading blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-reading-q-01",
+      "section": "Reading Questions",
+      "source": "1. Was bietet das fiktive Unternehmen „Nordwerk“ laut Text an?",
+      "status": "refined",
+      "finding": "Refined from the generic 'Worum geht es in dem Text?' to ask specifically what fictional Nordwerk offers (Reparaturdienste und Ausbildungsplätze), matching answer key item 1 and quiz item Q07.",
+      "action": "Synchronized reading question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-reading-q-02",
+      "section": "Reading Questions",
+      "source": "2. An wen richtet sich die Kampagne?",
+      "status": "verified",
+      "finding": "Verified animate prepositional question An wen (+ Akkusativ) targeting the two groups in sentence 2.",
+      "action": "Synchronized reading question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-reading-q-03",
+      "section": "Reading Questions",
+      "source": "3. Worauf legt das Unternehmen laut Text Wert?",
+      "status": "verified",
+      "finding": "Verified inanimate prepositional question Worauf targeting sentence 3.",
+      "action": "Synchronized reading question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-reading-q-04",
+      "section": "Reading Questions",
+      "source": "4. Womit wirbt die Kampagne?",
+      "status": "verified",
+      "finding": "Verified inanimate prepositional question Womit targeting sentence 4.",
+      "action": "Synchronized reading question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-reading-q-05",
+      "section": "Reading Questions",
+      "source": "5. Wovon hängt der Erfolg der Kampagne ab?",
+      "status": "verified",
+      "finding": "Verified inanimate prepositional question Wovon targeting sentence 6.",
+      "action": "Synchronized reading question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-reading-q-06",
+      "section": "Reading Questions",
+      "source": "6. Ist „Nordwerk“ ein echtes Unternehmen?",
+      "status": "verified",
+      "finding": "Verified comprehension check on the fictional status of Nordwerk in sentences 1 and 7.",
+      "action": "Synchronized reading question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-listening-01",
+      "section": "Listening",
+      "source": "Die Personalchefin spricht über eine neue Stellenanzeige.",
+      "status": "verified",
+      "finding": "Verified listening sentence 1 grammar (including Konjunktiv I sei/könne in sentence 5) and verbatim alignment with DL-B2-09-AUD-LST-01.mp3.",
+      "action": "Preserved listening blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-listening-02",
+      "section": "Listening",
+      "source": "Sie erklärt, worauf das Team bei Bewerbungen achtet: auf praktische Erfahrung und klare Beispiele.",
+      "status": "verified",
+      "finding": "Verified listening sentence 2 grammar (including Konjunktiv I sei/könne in sentence 5) and verbatim alignment with DL-B2-09-AUD-LST-01.mp3.",
+      "action": "Preserved listening blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-listening-03",
+      "section": "Listening",
+      "source": "Die Anzeige informiert darüber, welche Aufgaben zur Stelle gehören.",
+      "status": "verified",
+      "finding": "Verified listening sentence 3 grammar (including Konjunktiv I sei/könne in sentence 5) and verbatim alignment with DL-B2-09-AUD-LST-01.mp3.",
+      "action": "Preserved listening blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-listening-04",
+      "section": "Listening",
+      "source": "Die Personalchefin betont außerdem, dass die Auswahl nicht nur von einem Zeugnis abhängt.",
+      "status": "verified",
+      "finding": "Verified listening sentence 4 grammar (including Konjunktiv I sei/könne in sentence 5) and verbatim alignment with DL-B2-09-AUD-LST-01.mp3.",
+      "action": "Preserved listening blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-listening-05",
+      "section": "Listening",
+      "source": "Sie sagt, entscheidend sei auch, ob die Bewerberin ihre Kenntnisse mit konkreten Beispielen aus der Praxis belegen könne.",
+      "status": "verified",
+      "finding": "Verified listening sentence 5 grammar (including Konjunktiv I sei/könne in sentence 5) and verbatim alignment with DL-B2-09-AUD-LST-01.mp3.",
+      "action": "Preserved listening blockquote sentence verbatim."
+    },
+    {
+      "id": "b2-09-listening-q-01",
+      "section": "Listening Questions",
+      "source": "1. Wer spricht über die Stellenanzeige?",
+      "status": "verified",
+      "finding": "Verified subject question targeting Die Personalchefin.",
+      "action": "Synchronized listening question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-listening-q-02",
+      "section": "Listening Questions",
+      "source": "2. Worauf achtet das Team bei Bewerbungen?",
+      "status": "verified",
+      "finding": "Verified Worauf question targeting auf praktische Erfahrung und klare Beispiele.",
+      "action": "Synchronized listening question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-listening-q-03",
+      "section": "Listening Questions",
+      "source": "3. Worüber informiert die Anzeige?",
+      "status": "verified",
+      "finding": "Verified Worüber question targeting Darüber, welche Aufgaben zur Stelle gehören.",
+      "action": "Synchronized listening question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-listening-q-04",
+      "section": "Listening Questions",
+      "source": "4. Wovon hängt die Auswahl nicht nur ab, und was ist laut der Personalchefin außerdem entscheidend?",
+      "status": "refined",
+      "finding": "Refined Q4 so it explicitly asks both what selection does not depend on alone (nicht nur von einem Zeugnis) and what else is decisive according to the HR manager (ob die Bewerberin ihre Kenntnisse mit konkreten Beispielen aus der Praxis belegen kann).",
+      "action": "Synchronized listening question and Section 7 answer key."
+    },
+    {
+      "id": "b2-09-listening-q-05",
+      "section": "Listening Questions",
+      "source": "5. Womit soll die Bewerberin ihre Kenntnisse belegen?",
+      "status": "verified",
+      "finding": "Verified Womit question targeting Mit konkreten Beispielen aus der Praxis.",
+      "action": "Synchronized listening question and Section 7 answer key."
+    },
+    {
+      "id": "DL-B2-09-T01",
+      "section": "Exercises",
+      "source": "### تمرين 1 — اختر الضمير المركّب المناسب (5 items)",
+      "status": "refined",
+      "finding": "Expanded T01 from 4 to 5 items by adding item 5 on die Zielgruppe and sich interessieren für (Wofür / Womit) with an Arabic gloss, and verified all 5 answer key entries.",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. ______ legt das Unternehmen Wert? — Auf klare Informationen. (**Worauf / Womit**) -> Worauf",
+        "2. ______ wirbt die Kampagne? — Mit einem transparenten Verfahren. (**Womit / Wovon**) -> Womit",
+        "3. ______ hängt die Nachfrage ab? — Davon, ob das Angebot bekannt ist. (**Worüber / Wovon**) -> Wovon",
+        "4. ______ informiert die Stellenanzeige? — Darüber, welche Aufgaben dazugehören. (**Worüber / Wofür**) -> Worüber",
+        "5. ______ interessiert sich die Zielgruppe (الفئة المستهدفة) in der Kampagne? — Für klare Arbeitsbedingungen. (**Wofür / Womit**) -> Wofür"
+      ]
+    },
+    {
+      "id": "DL-B2-09-T02",
+      "section": "Exercises",
+      "source": "### تمرين 2 — أكمل بـwo(r)- أو da(r)- المركّب (4 items)",
+      "status": "refined",
+      "finding": "Added explicit governing verb/expression cues to all 4 open cloze items so each blank has a single unambiguous prepositional adverb solution (Wofür, darauf, Wovon, darüber).",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. ______ interessiert sich die Zielgruppe? — Für flexible Arbeitszeiten. (sich interessieren für) -> Wofür",
+        "2. Die Firma legt ______ Wert, dass die Aufgaben klar beschrieben werden. (Wert legen auf) -> darauf",
+        "3. ______ hängt der Umsatz ab? — Von der Nachfrage. (abhängen von) -> Wovon",
+        "4. Die Anzeige informiert ______, welche Qualifikationen erforderlich sind. (informieren über) -> darüber"
+      ]
+    },
+    {
+      "id": "DL-B2-09-T03",
+      "section": "Exercises",
+      "source": "### تمرين 3 — أكمل حرف الجر الصحيح (4 items)",
+      "status": "verified",
+      "finding": "Verified all 4 preposition completion items (auf, an, von, auf) against Duden verb governance.",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. Das Unternehmen spezialisiert sich ______ technische Dienstleistungen. -> auf",
+        "2. Die Kampagne richtet sich ______ neue Fachkräfte. -> an",
+        "3. Der Erfolg hängt ______ mehreren Faktoren ab. -> von",
+        "4. Die Personalabteilung legt Wert ______ nachvollziehbare Beispiele. -> auf"
+      ]
+    },
+    {
+      "id": "DL-B2-09-T04",
+      "section": "Exercises",
+      "source": "### تمرين 4 — اربط السؤال بالجواب المناسب (4 items)",
+      "status": "verified",
+      "finding": "Verified 1-to-1 matching between the 4 questions (Worauf, Womit, Wovon, Mit wem) and responses (ج, د, ب, أ), contrasting inanimate Pronominaladverbien with animate Mit wem -> Mit einer Bewerberin.",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. Worauf legt das Team Wert? -> ج. Auf klare Arbeitsbedingungen.",
+        "2. Womit wirbt die Firma? -> د. Damit, dass die Einarbeitung gut organisiert ist.",
+        "3. Wovon hängt die Nachfrage ab? -> ب. Davon, ob das Angebot bekannt ist.",
+        "4. Mit wem spricht die Personalchefin? -> أ. Mit einer Bewerberin."
+      ]
+    },
+    {
+      "id": "DL-B2-09-T05",
+      "section": "Exercises",
+      "source": "### تمرين 5 — فهم القراءة (5 items)",
+      "status": "refined",
+      "finding": "Verified all 5 true/false items against the Nordwerk reading passage and expanded the Section 7 answer key with explicit Arabic explanations for false items 2 and 4.",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. يقدم «Nordwerk» خدمات إصلاح وفرص تدريب مهني. -> صحيح",
+        "2. تتوجه الحملة إلى فئة واحدة فقط. -> خطأ (فئتين: الراغبون في استعمال الأجهزة مدة أطول والكفاءات المهنية التقنية)",
+        "3. يولي النص أهمية لوضوح معلومات العمل. -> صحيح",
+        "4. يعد الإعلان بأن الحملة ستحقق نجاحًا مضمونًا. -> خطأ (يربط النجاح بمدى وضوح المعلومات للفئة المستهدفة)",
+        "5. الشركة المذكورة خيالية. -> صحيح"
+      ]
+    },
+    {
+      "id": "DL-B2-09-T06",
+      "section": "Exercises",
+      "source": "### تمرين 6 — فهم الاستماع (5 items)",
+      "status": "refined",
+      "finding": "Formatted T06 as a 5-item numbered German completion list (1.–5.) based on the written listening transcript and synchronized the numbered Section 7 answer key.",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. Die Personalchefin spricht über eine neue ______. -> Stellenanzeige",
+        "2. Das Team achtet auf praktische ______ und klare Beispiele. -> Erfahrung",
+        "3. Die Anzeige informiert darüber, welche ______ zur Stelle gehören. -> Aufgaben",
+        "4. Die Auswahl hängt nicht nur von einem ______ ab. -> Zeugnis",
+        "5. Die Bewerberin soll ihre Kenntnisse mit konkreten ______ aus der Praxis belegen. -> Beispielen"
+      ]
+    },
+    {
+      "id": "DL-B2-09-T07",
+      "section": "Exercises",
+      "source": "### تمرين 7 — أعد صياغة السؤال والجواب (4 items)",
+      "status": "refined",
+      "finding": "Expanded T07 from 3 to 4 transformation pairs by adding item 4 on informieren über (Worüber / Darüber, welche Qualifikationen erforderlich sind), completing all 4 prepositions from the Section 2 table.",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "1. Das Unternehmen legt Wert auf transparente Bedingungen. -> Worauf / Darauf",
+        "2. Der Erfolg hängt von der Nachfrage ab. -> Wovon / Davon",
+        "3. Die Kampagne wirbt mit einer gut organisierten Einarbeitung. -> Womit / Damit",
+        "4. Die Personalabteilung informiert über die erforderlichen Qualifikationen. -> Worüber / Darüber"
+      ]
+    },
+    {
+      "id": "DL-B2-09-T08",
+      "section": "Exercises",
+      "source": "### تمرين 8 — اكتب نبذة مهنية أو تسويقية (10 sub-criteria across Parts A and B)",
+      "status": "refined",
+      "finding": "Preserved the original T08 paragraph for progression compatibility and added explicit 5-item checklists for Part A (DL-B2-09-P01, writing-only, 150 chars) and Part B (DL-B2-09-P02, writing + speaking aloud, 180 chars).",
+      "action": "Updated lesson exercise and answer key.",
+      "items": [
+        "Part A.1: Name fictional company/campaign and target group using a prepositional verb (sich spezialisieren auf / sich richten an).",
+        "Part A.2: Ask at least one inanimate question with wo(r) + Präposition.",
+        "Part A.3: Answer with matching da(r) + Präposition and verb-final subordinate clause.",
+        "Part A.4: Mention a clear working or onboarding condition (Arbeitsbedingungen / Einarbeitung / Auswahlverfahren).",
+        "Part A.5: Keep company fictional and do not claim guaranteed success (writing only, min 150 chars).",
+        "Part B.1: State that Nordwerk in T05 is fictional and offers Reparaturdienste und Ausbildungsplätze.",
+        "Part B.2: Name both target groups from T05.",
+        "Part B.3: Include at least one matching wo(r)- question and da(r)- answer with verb-final order.",
+        "Part B.4: Report two selection facts from T06 (not only a Zeugnis; praktische Erfahrung with konkrete Beispiele aus der Praxis).",
+        "Part B.5: Note non-guaranteed success and read the 5–6 sentence briefing aloud without recording (min 180 chars)."
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q01",
+      "section": "Quiz",
+      "source": "ما معنى **die Zielgruppe** في سياق حملة إعلانية؟",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=0, sourceTaskIds=['DL-B2-09-T01'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (correct): الفئة التي توجّه إليها الحملة",
+        "Option 1 (distractor): إيرادات الشركة من المبيعات",
+        "Option 2 (distractor): سلسلة نقل المنتجات إلى المتاجر"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q02",
+      "section": "Quiz",
+      "source": "أكمل السؤال عن طريقة الإعلان: **___ wirbt die Kampagne? — Mit einem transparenten Auswahlverfahren.**",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-09-T02'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (distractor): Wovon",
+        "Option 1 (correct): Womit",
+        "Option 2 (distractor): Worauf"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q03",
+      "section": "Quiz",
+      "source": "اختر السؤال والجواب المتوافقين مع **Wert legen auf**: **___ legt das Unternehmen Wert? — ___, dass die Arbeitsbedingungen klar sind.**",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=2, sourceTaskIds=['DL-B2-09-T02'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (distractor): Womit / Damit",
+        "Option 1 (distractor): Wovon / Davon",
+        "Option 2 (correct): Worauf / Darauf"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q04",
+      "section": "Quiz",
+      "source": "اختر حرف الجر الصحيح: **Die Nachfrage hängt ___ der Zielgruppe ab.**",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=0, sourceTaskIds=['DL-B2-09-T03'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (correct): von",
+        "Option 1 (distractor): auf",
+        "Option 2 (distractor): an"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q05",
+      "section": "Quiz",
+      "source": "أكمل بحرف الجر المناسب: **Das Unternehmen spezialisiert sich ___ technische Dienstleistungen.**",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-09-T03'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (distractor): an",
+        "Option 1 (correct): auf",
+        "Option 2 (distractor): mit"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q06",
+      "section": "Quiz",
+      "source": "في أمثلة الدرس وتمرين المطابقة (T04)، تتحدث مسؤولة الموارد البشرية مع متقدمة للوظيفة. أكمل السؤال عن الشخص: **Mit ___ spricht die Personalchefin? — Mit einer Bewerberin.**",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=2, sourceTaskIds=['DL-B2-09-T04'], and Arabic explanation.",
+      "action": "Updated assessment JSON and rebuilt course bundle.",
+      "optionReview": [
+        "Option 0 (distractor): was",
+        "Option 1 (distractor): womit",
+        "Option 2 (correct): wem"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q07",
+      "section": "Quiz",
+      "source": "ماذا تقدّم شركة «Nordwerk» الخيالية بحسب قراءة T05؟",
+      "status": "refined",
+      "finding": "Verified prompt, 3 options, answerIndex=0, sourceTaskIds=['DL-B2-09-T05'], and Arabic explanation.",
+      "action": "Updated assessment JSON and rebuilt course bundle.",
+      "optionReview": [
+        "Option 0 (correct): خدمات إصلاح وفرص تدريب مهني",
+        "Option 1 (distractor): إعلانات تلفزيونية وتأمين صحي",
+        "Option 2 (distractor): دورات لغوية ومطاعم للموظفين"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q08",
+      "section": "Quiz",
+      "source": "بحسب قراءة T05، على ماذا يعتمد نجاح الحملة؟",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-09-T05'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (distractor): على ضمان توظيف جميع المتقدمين",
+        "Option 1 (correct): على ما إذا كان الأشخاص المستهدفون يجدون المعلومات مفهومة",
+        "Option 2 (distractor): على زيادة الإيرادات مهما كان رأي الفئة المستهدفة"
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q09",
+      "section": "Quiz",
+      "source": "وفق النص المكتوب لتدريب الاستماع T06، ما العبارة الصحيحة عن معايير الاختيار؟",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=2, sourceTaskIds=['DL-B2-09-T06'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (distractor): لا يعتمد إلا على الشهادة.",
+        "Option 1 (distractor): يعتمد فقط على الانطباع في المقابلة.",
+        "Option 2 (correct): لا يعتمد على الشهادة وحدها؛ تهم أيضًا الخبرة العملية والأمثلة التي توضح المعرفة."
+      ]
+    },
+    {
+      "id": "DL-B2-09-Q10",
+      "section": "Quiz",
+      "source": "أي إعادة صياغة تناسب الجملة **Der Erfolg hängt von der Nachfrage ab**؟",
+      "status": "verified",
+      "finding": "Verified prompt, 3 options, answerIndex=1, sourceTaskIds=['DL-B2-09-T07'], and Arabic explanation.",
+      "action": "Preserved verified quiz item in b2-09-v2.",
+      "optionReview": [
+        "Option 0 (distractor): Worüber hängt der Erfolg ab? — Darüber, ob die Nachfrage hoch ist.",
+        "Option 1 (correct): Wovon hängt der Erfolg ab? — Davon, ob die Nachfrage hoch ist.",
+        "Option 2 (distractor): Womit hängt der Erfolg ab? — Damit, ob die Nachfrage hoch ist."
+      ]
+    },
+    {
+      "id": "DL-B2-09-P01",
+      "section": "Performance Tasks",
+      "source": "اكتب باللغة الألمانية من 5 إلى 6 جمل عن شركة أو حملة توظيف/تسويق خيالية (الجزء أ من تمرين 8 — كتابة فقط دون اشتراط الجهر). اطرح سؤالًا واحدًا على الأقل عن شيء أو فكرة باستخدام **wo(r) + Präposition**، ثم أجب عنه بضمير مركّب مطابق من **da(r) + Präposition** مع جملة تابعة بـ**dass** أو **ob** أو **welche**، واذكر الفئة المستهدفة (**die Zielgruppe** / **Fachkräfte**) أو ظرفًا من ظروف العمل (**die Arbeitsbedingungen** / **die Einarbeitung**). لا تستخدم بيانات شركة حقيقية ولا تعرض نجاح الحملة كأنه مضمون.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-09-P01 modality=['writing'], speakAloud=False, minimumResponseCharacters=150, and sourceTaskIds=['DL-B2-09-T08'] with source T08.",
+      "action": "Updated assessment JSON, catalog CSV, and progression tests.",
+      "criterionReview": [
+        "Criterion 1: taskCompletion",
+        "Criterion 2: meaningClarity",
+        "Criterion 3: targetSkill"
+      ]
+    },
+    {
+      "id": "DL-B2-09-P02",
+      "section": "Performance Tasks",
+      "source": "استنادًا إلى قراءة T05 والنص المكتوب لتدريب الاستماع T06 وإعادة الصياغة في T07، اكتب باللغة الألمانية إحاطة من 5 إلى 6 جمل لزميل أو متعلم آخر ثم اقرأها بصوت مسموع لنفسك (أو قدّمها شفهيًا بعد كتابتها — الجزء ب من تمرين 8). اذكر أن «Nordwerk» شركة خيالية وما تقدمه (**Reparaturdienste und Ausbildungsplätze**) والفئتين المستهدفتين في الحملة، وانقل بدقة نقطتين عن الاختيار المهني في T06 (أنه لا يعتمد على **Zeugnis** وحده، وأهمية **praktische Erfahrung** و**konkrete Beispiele aus der Praxis**). أدرج سؤالًا عن شيء أو فكرة بـ**wo(r) + Präposition** وجوابًا مناسبًا بـ**da(r) + Präposition** مع الفعل المناسب، ولا تقل إن نجاح الحملة مضمون. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-09-P02 modality=['writing', 'speaking'], speakAloud=True, minimumResponseCharacters=180, and sourceTaskIds=['DL-B2-09-T05', 'DL-B2-09-T06', 'DL-B2-09-T07', 'DL-B2-09-T08'] with source T08.",
+      "action": "Updated assessment JSON, catalog CSV, and progression tests.",
+      "criterionReview": [
+        "Criterion 1: taskCompletion",
+        "Criterion 2: meaningClarity",
+        "Criterion 3: targetSkill"
+      ]
+    },
+    {
+      "id": "DL-B2-09-P01-model-01",
+      "section": "Written Models",
+      "source": "### نموذج الجزء (أ) — DL-B2-09-P01 (كتابة فقط)",
+      "status": "added",
+      "finding": "Added a 5-sentence German model response (636 characters) in Section 8 satisfying all self-check thresholds and grammar/content requirements.",
+      "action": "Added in Section 8 and verified in tools/test_progression.cjs.",
+      "items": [
+        "Das fiktive Unternehmen „Südtechnik“ spezialisiert sich auf wartungsfreundliche Haushaltsgeräte und richtet sich mit einer neuen Kampagne an technische Fachkräfte.",
+        "Worauf legt die Personalabteilung in der neuen Stellenanzeige besonderen Wert?",
+        "Sie legt großen Wert darauf, dass die Arbeitsbedingungen und die Aufgaben im Team transparent beschrieben werden.",
+        "Die Kampagne wirbt außerdem damit, dass neue Mitarbeitende in den ersten Wochen systematisch eingearbeitet werden.",
+        "Ob sich viele passende Fachkräfte bewerben, hängt davon ab, ob die Zielgruppe das fiktive Angebot klar und glaubwürdig findet, denn ein Erfolg ist nicht garantiert."
+      ]
+    },
+    {
+      "id": "DL-B2-09-P02-model-01",
+      "section": "Written Models",
+      "source": "### نموذج الجزء (ب) — DL-B2-09-P02 (كتابة + قراءة بصوت واضح)",
+      "status": "added",
+      "finding": "Added a 5-sentence German model response (876 characters) in Section 8 satisfying all self-check thresholds and grammar/content requirements.",
+      "action": "Added in Section 8 and verified in tools/test_progression.cjs.",
+      "items": [
+        "In der fiktiven Leseübung bietet das erfundene Unternehmen „Nordwerk“ Reparaturdienste und Ausbildungsplätze an und richtet sich an Menschen, die Geräte länger nutzen möchten, sowie an technische Fachkräfte.",
+        "Worauf legt „Nordwerk“ in der Kampagne Wert, und womit wirbt das Unternehmen?",
+        "Es legt Wert darauf, dass Aufgaben, Arbeitszeiten und Auswahlverfahren klar erklärt werden, und wirbt damit, dass neue Mitarbeitende eine strukturierte Einarbeitung erhalten.",
+        "Im Hörtext erklärt die Personalchefin außerdem, dass die Auswahl bei Bewerbungen nicht nur von einem Zeugnis abhängt, sondern auch davon, ob eine Bewerberin praktische Erfahrung mit konkreten Beispielen aus der Praxis belegen kann.",
+        "Ob die fiktive Kampagne erfolgreich ist, hängt davon ab, ob die Zielgruppe alle Informationen verständlich findet; ein garantierter Erfolg wird im Text ausdrücklich nicht versprochen."
+      ]
+    },
+    {
+      "id": "b2-09-card-01",
+      "section": "Review Cards",
+      "source": "- **Worauf legt das Unternehmen Wert? — Darauf, dass …** → ما الذي توليه الشركة أهمية؟ — على أن … (لغير العاقل مع `Wert legen auf + Akkusativ` والفعل في آخر جملة `dass`)",
+      "status": "refined",
+      "finding": "Enhanced review card 1 in Section 9 with explicit grammatical cues (case governance, -r- rule, subordinate verb-final order, and person contrast).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-09-card-02",
+      "section": "Review Cards",
+      "source": "- **Womit wirbt die Kampagne? — Damit, dass …** → بماذا تروّج الحملة؟ — بأنها … (لغير العاقل مع `werben mit + Dativ` دون `-r-` قبل الساكن)",
+      "status": "refined",
+      "finding": "Enhanced review card 2 in Section 9 with explicit grammatical cues (case governance, -r- rule, subordinate verb-final order, and person contrast).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-09-card-03",
+      "section": "Review Cards",
+      "source": "- **Wovon hängt der Erfolg ab? — Davon, ob …** → على ماذا يعتمد النجاح؟ — على ما إذا … (لغير العاقل مع `abhängen von + Dativ` والفعل في آخر جملة `ob`)",
+      "status": "refined",
+      "finding": "Enhanced review card 3 in Section 9 with explicit grammatical cues (case governance, -r- rule, subordinate verb-final order, and person contrast).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-09-card-04",
+      "section": "Review Cards",
+      "source": "- **Mit wem spricht die Personalchefin? — Mit einer Bewerberin.** → مع من تتحدث مسؤولة الموارد البشرية؟ — مع متقدمة للوظيفة (للأشخاص نستعمل `حرف الجر + wem/wen` لا `womit`)",
+      "status": "refined",
+      "finding": "Enhanced review card 4 in Section 9 with explicit grammatical cues (case governance, -r- rule, subordinate verb-final order, and person contrast).",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "DL-B2-09-AUD-PHR-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 1 Phrase Bank (Narrator=voice-02, 1 clip, 15 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (15 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "| das Unternehmen | die Unternehmen | الشركة / المؤسسة |",
+        "| der Umsatz | die Umsätze | الإيرادات / حجم المبيعات |",
+        "| die Nachfrage | — | الطلب في السوق |",
+        "| die Zielgruppe | die Zielgruppen | الفئة المستهدفة |",
+        "| die Werbekampagne | die Werbekampagnen | الحملة الإعلانية |",
+        "| die Lieferkette | die Lieferketten | سلسلة التوريد |",
+        "| der Wettbewerb | — | المنافسة في السوق |",
+        "| die Fachkraft | die Fachkräfte | موظف متخصص / كفاءة مهنية |",
+        "| die Stellenanzeige | die Stellenanzeigen | إعلان الوظيفة |",
+        "| die Arbeitsbedingung | die Arbeitsbedingungen | شرط / ظروف العمل |",
+        "| sich spezialisieren auf + Akkusativ | spezialisiert sich | يتخصص في |",
+        "| Wert legen auf + Akkusativ | legt Wert | يولي أهمية لـ |",
+        "| werben mit + Dativ | wirbt | يروّج باستخدام / يعلن عن طريق |",
+        "| abhängen von + Dativ | hängt ab | يعتمد على |",
+        "| sich richten an + Akkusativ | richtet sich | يتوجّه إلى |"
+      ]
+    },
+    {
+      "id": "DL-B2-09-AUD-MODEL-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 2 Model Sentences (Narrator=voice-02, 1 clip, 13 items: 8 table Q/A + 1 person contrast + 1 darauf-clause + 3 verbs)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (13 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Worauf legt das Unternehmen Wert?",
+        "Darauf, dass die Arbeitsbedingungen transparent sind.",
+        "Womit wirbt die Kampagne?",
+        "Damit, dass der Service leicht zugänglich ist.",
+        "Wovon hängt der Erfolg ab?",
+        "Davon, ob die Zielgruppe das Angebot versteht.",
+        "Worüber informiert die Stellenanzeige?",
+        "Darüber, welche Aufgaben übernommen werden.",
+        "Mit wem spricht die Personalchefin? Mit einer Bewerberin.",
+        "Das Unternehmen achtet darauf, dass die Anzeige verständlich ist.",
+        "Sich spezialisieren auf.",
+        "Abhängen von.",
+        "Wert legen auf."
+      ]
+    },
+    {
+      "id": "DL-B2-09-AUD-DLG-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 3 Dialogue (Mara=voice-02, Jonas=voice-03, 8 clips)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (8 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "**Mara:** Worauf konzentriert sich die neue Kampagne?",
+        "**Jonas:** Sie richtet sich an Fachkräfte, die flexible Arbeitsbedingungen suchen.",
+        "**Mara:** Womit wirbt das Unternehmen?",
+        "**Jonas:** Damit, dass es klare Aufgaben und ein transparentes Auswahlverfahren anbietet.",
+        "**Mara:** Und worauf legt die Personalabteilung Wert?",
+        "**Jonas:** Darauf, dass Bewerberinnen ihre Erfahrungen nachvollziehbar darstellen.",
+        "**Mara:** Wovon hängt der Erfolg der Kampagne ab?",
+        "**Jonas:** Davon, ob die Anzeige die richtige Zielgruppe erreicht."
+      ]
+    },
+    {
+      "id": "DL-B2-09-AUD-READ-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 4 Reading (Narrator=voice-02, 1 clip, 7 sentences)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (7 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Das fiktive Unternehmen „Nordwerk“ bietet Reparaturdienste und Ausbildungsplätze an.",
+        "Die neue Werbekampagne richtet sich an Menschen, die Geräte länger nutzen möchten, und an Fachkräfte, die sich für technische Berufe interessieren.",
+        "Im Text wird erklärt, worauf das Unternehmen Wert legt: klare Informationen über Aufgaben, Arbeitszeiten und Auswahlverfahren.",
+        "Die Kampagne wirbt damit, dass neue Mitarbeitende eine strukturierte Einarbeitung erhalten.",
+        "Die Personalabteilung informiert außerdem darüber, welche Qualifikationen für die offenen Stellen erforderlich sind.",
+        "Ob die Kampagne erfolgreich ist, hängt davon ab, ob die angesprochenen Personen die Informationen verständlich finden.",
+        "Alle Beispiele zu „Nordwerk“ sind erfunden."
+      ]
+    },
+    {
+      "id": "DL-B2-09-AUD-LST-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — Section 5 Listening (Erzählperson=voice-03, 1 clip, 5 sentences)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (5 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Die Personalchefin spricht über eine neue Stellenanzeige.",
+        "Sie erklärt, worauf das Team bei Bewerbungen achtet: auf praktische Erfahrung und klare Beispiele.",
+        "Die Anzeige informiert darüber, welche Aufgaben zur Stelle gehören.",
+        "Die Personalchefin betont außerdem, dass die Auswahl nicht nur von einem Zeugnis abhängt.",
+        "Sie sagt, entscheidend sei auch, ob die Bewerberin ihre Kenntnisse mit konkreten Beispielen aus der Praxis belegen könne."
+      ]
+    }
+  ]
+}

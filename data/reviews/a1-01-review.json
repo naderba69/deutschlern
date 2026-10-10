@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-01-introductions-languages-hobbies",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-01-v2",
+  "unitCount": 124,
+  "exerciseSubItemCount": 44,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "G",
+      "citation": "[Goethe — Deutsch Online A1](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "الجزء0 فقط: Kapitel1 للتعارف والتصريف، Kapitel3 للهوايات وgern وترتيب السؤال. رفضنا العبارة المستخرجة Ich heißen Matteo Kraft؛ لا نعرف إن كان الخلل في الأصل أم الاستخراج."
+    },
+    {
+      "id": "L",
+      "citation": "[Netzverb — lesen/Präsens](https://www.verbformen.com/conjugation/indikativ/praesens/lesen.htm)",
+      "scope": "الجزء0؛ جدول lesen: lese/liest/liest/lesen/lest/lesen. لا استماع إلى زر النطق أو ترجمة كل المعاني الواردة."
+    },
+    {
+      "id": "O",
+      "citation": "[grammis — Stellungsfelder](https://grammis.ids-mannheim.de/systematische-grammatik/1241)",
+      "scope": "الجزء0؛ الموقع قد يشغله جزء من عدة كلمات، والجملة الخبرية مقابل سؤال الفعل أولًا. لم تقرأ بقية الصفحة."
+    },
+    {
+      "id": "D",
+      "citation": "[Duden — gern](https://www.duden.de/rechtschreibung/gern)",
+      "scope": "الصفحة كاملة: gern/gerne؛ معنى السرور في أمثلة الهوايات. توجد معانٍ أخرى منها colloquial leichter/schnell؛ لذلك قيدنا نفي «بسرعة» بأمثلة الدرس، لا بكل استعمال."
+    },
+    {
+      "id": "DE",
+      "citation": "[Duden — Deutsch](https://www.duden.de/rechtschreibung/Deutsch)",
+      "scope": "الصفحة كاملة: اسم اللغة المحايد، وأمثلة lernen/sprechen Deutsch. التمييز عن الصفة في الوصلات/الأمثلة، دون الادعاء بقراءة صفحة deutsch المستقلة."
+    },
+    {
+      "id": "LAND",
+      "citation": "[Duden — Land](https://www.duden.de/rechtschreibung/Land)",
+      "scope": "الجزء0: Länder في معنى البلدان/الدول؛ لا نعمم هذا الجمع على كل معاني Land."
+    },
+    {
+      "id": "STADT",
+      "citation": "[Duden — Stadt](https://www.duden.de/rechtschreibung/Stadt)",
+      "scope": "الصفحة كاملة: die Stadt/die Städte، وin einer Stadt."
+    },
+    {
+      "id": "HOBBY",
+      "citation": "[Duden — Hobby](https://www.duden.de/rechtschreibung/Hobby)",
+      "scope": "الصفحة كاملة: das Hobby/die Hobbys. لم يستخدم ملصق مفردات B1 لمنع تعليم الكلمة في A1."
+    },
+    {
+      "id": "MUTTER",
+      "citation": "[Duden — Muttersprache](https://www.duden.de/rechtschreibung/Muttersprache)",
+      "scope": "الصفحة كاملة: die Muttersprache/die Muttersprachen؛ معنى اللغة المكتسبة في الطفولة. لا ادعاء أن الجميع أحادي اللغة الأم."
+    }
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-01-introductions-languages-hobbies.md": "718d96bdc28334dd0b8dbccef1ab1172fb86674fa1e499e5cd93a9fb716ed049",
+    "content/A1/lesson-01-introductions-languages-hobbies.assessment.json": "ea7c746cd7b72da976d956c4b780d2790685accc5d6252300f113647a2339f7e"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-01-AUD-READ-01": "e0b243027e3f0bbc79f4ee24357a7f04955d10e644c456937dc67725d2c4a3d3",
+    "DL-A1-01-AUD-LST-01": "b87bfd6d1b63407427333773321e861521addb5d61983cfa66a4c281890fbaf1"
+  },
+  "units": [
+    {
+      "id": "scope",
+      "decision": "clarified",
+      "finding": "أهداف التعارف واللغات والهوايات محفوظة. أصلان مونولوجيان لا حوار مسجل؛ أضيف نموذج حوار كتابي لـ T10 لا تسجيل جديد. 30 دقيقة تقدير مرن مع خيار جلستين، لا وقت مقاس. التقييم لا يقيس الاستماع أو يصحح اللغة والنطق مستقلًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "decision": "retained",
+      "finding": "Land/Länder صحيح في معنى البلد؛ Tunesien ist ein Land. لا يعني أن Länder جمع كل دلالات Land.",
+      "sourceIds": [
+        "LAND"
+      ]
+    },
+    {
+      "id": "vocab-02",
+      "decision": "retained",
+      "finding": "Stadt/Städte صحيح؛ Ich wohne in einer Stadt. نموذج Dativ صحيح، مع شرح مساعد لا تكليف بقاعدة غير مدربة.",
+      "sourceIds": [
+        "STADT"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "decision": "retained",
+      "finding": "Sprache/Sprachen صحيح؛ Arabisch ist eine Sprache. يوافق استعمال اللغة اسمًا.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "decision": "retained",
+      "finding": "Muttersprache/Muttersprachen صحيح؛ Meine Muttersprache ist Arabisch. مثال فردي لا تعميم هوية لغوية على المتعلم.",
+      "sourceIds": [
+        "MUTTER"
+      ]
+    },
+    {
+      "id": "vocab-05",
+      "decision": "retained",
+      "finding": "Hobby/Hobbys صحيح؛ Lesen اسم مصدر بحرف كبير في Lesen ist mein Hobby.",
+      "sourceIds": [
+        "HOBBY"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "decision": "clarified",
+      "finding": "lesen/Ich lese gern. صحيح؛ أضيفت ملاحظة du liest بدل ترك عدم الانتظام غير مشروح.",
+      "sourceIds": [
+        "L",
+        "D"
+      ]
+    },
+    {
+      "id": "vocab-07",
+      "decision": "retained",
+      "finding": "kochen/Wir kochen am Wochenende. صحيح؛ am Wochenende مشروح.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "decision": "retained",
+      "finding": "hören/Ich höre gern Musik. صحيح؛ «يستمع» معنى سياقي، وليس كل معاني hören.",
+      "sourceIds": [
+        "G",
+        "D"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "decision": "retained",
+      "finding": "spielen/Sie spielt Volleyball. صحيح؛ الفعل المفرد يجعل Sie هنا «هي» في بداية الجملة، لا مخاطبة رسمية.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "decision": "retained",
+      "finding": "sprechen/Ich spreche Arabisch. صحيح؛ التصريف يختلف مع du/er/sie/es.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "decision": "retained",
+      "finding": "lernen/Ich lerne Deutsch. صحيح؛ اسم اللغة كبير ولا أداة لازمة هنا.",
+      "sourceIds": [
+        "G",
+        "DE"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "decision": "retained",
+      "finding": "gern/Er tanzt gern. يدل على استمتاعه بالرقص؛ ليس تعريفًا حصريًا لكل دلالات الظرف.",
+      "sourceIds": [
+        "D"
+      ]
+    },
+    {
+      "id": "phrase-01",
+      "decision": "retained",
+      "finding": "Woher kommst du? — من أين أنت؟ صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "decision": "retained",
+      "finding": "Ich komme aus Tunesien. — أنا من تونس. صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "decision": "retained",
+      "finding": "Wo wohnst du? — أين تسكن؟ صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "decision": "retained",
+      "finding": "Ich wohne in Nabeul. — أسكن في نابل. صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-05",
+      "decision": "retained",
+      "finding": "Welche Sprachen sprichst du? — ما اللغات التي تتحدثها؟ صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-06",
+      "decision": "retained",
+      "finding": "Ich spreche Arabisch und Französisch. — أتحدث العربية والفرنسية. صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-07",
+      "decision": "retained",
+      "finding": "Ich lerne Deutsch. — أتعلم الألمانية. صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-08",
+      "decision": "retained",
+      "finding": "Was machst du gern? — ماذا تحب أن تفعل؟ صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-09",
+      "decision": "retained",
+      "finding": "Ich lese gern und höre Musik. — أحب القراءة والاستماع إلى الموسيقى. صيغة مناسبة للسياق؛ du غير رسمي، وبلد الأصل غير مكان السكن.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "language-rule",
+      "decision": "clarified",
+      "finding": "أسماء Arabisch/Französisch/Deutsch بحرف كبير في الجمل المعروضة؛ قيدنا القاعدة بالاسم، لا الصفة deutsche في die deutsche Sprache. ein bisschen دعم لمستوى بسيط وليس شهادة مستوى.",
+      "sourceIds": [
+        "G",
+        "DE"
+      ]
+    },
+    {
+      "id": "regular-01",
+      "decision": "retained",
+      "finding": "ich: lerne / wohne / spiele؛ الصيغ الثلاث صحيحة، والنهايات نمط لأفعال كثيرة لا قاعدة لجميع الأفعال.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "regular-02",
+      "decision": "retained",
+      "finding": "du: lernst / wohnst / spielst؛ الصيغ الثلاث صحيحة، والنهايات نمط لأفعال كثيرة لا قاعدة لجميع الأفعال.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "regular-03",
+      "decision": "retained",
+      "finding": "er/sie/es: lernt / wohnt / spielt؛ الصيغ الثلاث صحيحة، والنهايات نمط لأفعال كثيرة لا قاعدة لجميع الأفعال.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "regular-04",
+      "decision": "retained",
+      "finding": "wir: lernen / wohnen / spielen؛ الصيغ الثلاث صحيحة، والنهايات نمط لأفعال كثيرة لا قاعدة لجميع الأفعال.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "regular-05",
+      "decision": "retained",
+      "finding": "ihr: lernt / wohnt / spielt؛ الصيغ الثلاث صحيحة، والنهايات نمط لأفعال كثيرة لا قاعدة لجميع الأفعال.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "regular-06",
+      "decision": "retained",
+      "finding": "sie/Sie: lernen / wohnen / spielen؛ الصيغ الثلاث صحيحة، والنهايات نمط لأفعال كثيرة لا قاعدة لجميع الأفعال.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "sprechen-01",
+      "decision": "retained",
+      "finding": "ich spreche؛ تغير e→i في du/er/sie/es، لا في كل الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "sprechen-02",
+      "decision": "retained",
+      "finding": "du sprichst؛ تغير e→i في du/er/sie/es، لا في كل الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "sprechen-03",
+      "decision": "retained",
+      "finding": "er/sie/es spricht؛ تغير e→i في du/er/sie/es، لا في كل الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "sprechen-04",
+      "decision": "retained",
+      "finding": "wir sprechen؛ تغير e→i في du/er/sie/es، لا في كل الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "sprechen-05",
+      "decision": "retained",
+      "finding": "ihr sprecht؛ تغير e→i في du/er/sie/es، لا في كل الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "sprechen-06",
+      "decision": "retained",
+      "finding": "sie/Sie sprechen؛ تغير e→i في du/er/sie/es، لا في كل الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "lesen-01",
+      "decision": "clarified",
+      "finding": "ich lese؛ شرح مضاف قبل اختبار Liest sie gern?؛ du و er/sie/es لهما liest، و ihr له lest.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "lesen-02",
+      "decision": "clarified",
+      "finding": "du liest؛ شرح مضاف قبل اختبار Liest sie gern?؛ du و er/sie/es لهما liest، و ihr له lest.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "lesen-03",
+      "decision": "clarified",
+      "finding": "er/sie/es liest؛ شرح مضاف قبل اختبار Liest sie gern?؛ du و er/sie/es لهما liest، و ihr له lest.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "lesen-04",
+      "decision": "clarified",
+      "finding": "wir lesen؛ شرح مضاف قبل اختبار Liest sie gern?؛ du و er/sie/es لهما liest، و ihr له lest.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "lesen-05",
+      "decision": "clarified",
+      "finding": "ihr lest؛ شرح مضاف قبل اختبار Liest sie gern?؛ du و er/sie/es لهما liest، و ihr له lest.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "lesen-06",
+      "decision": "clarified",
+      "finding": "sie/Sie lesen؛ شرح مضاف قبل اختبار Liest sie gern?؛ du و er/sie/es لهما liest، و ihr له lest.",
+      "sourceIds": [
+        "L"
+      ]
+    },
+    {
+      "id": "word-order",
+      "decision": "clarified",
+      "finding": "وضّح الموقع الثاني كجزء لا كلمة: In meiner Freizeit قبل lese. أسئلة Wo/Woher/Welche Sprachen وأسلوب Sprichst du Arabisch? و Liest sie gern? مدربة قبل الترتيب والفهم.",
+      "sourceIds": [
+        "O",
+        "G"
+      ]
+    },
+    {
+      "id": "gern-rule",
+      "decision": "clarified",
+      "finding": "بعد الفعل في النمط الذي يبدأ بالفاعل، لا موضع إلزامي مطلق: Am Sonntag kochen wir gern. يقبل مفتاح T04 كذلك Wir kochen am Sonntag gern. قيدنا المعنى بسياق الهوايات وقبلنا gerne.",
+      "sourceIds": [
+        "D",
+        "O"
+      ]
+    },
+    {
+      "id": "gern-example-01",
+      "decision": "retained",
+      "finding": "Ich lese gern. — يصف فعلًا محببًا، والتصريف مطابق للفاعل.",
+      "sourceIds": [
+        "G",
+        "D"
+      ]
+    },
+    {
+      "id": "gern-example-02",
+      "decision": "retained",
+      "finding": "Du spielst gern Fußball. — يصف فعلًا محببًا، والتصريف مطابق للفاعل.",
+      "sourceIds": [
+        "G",
+        "D"
+      ]
+    },
+    {
+      "id": "gern-example-03",
+      "decision": "retained",
+      "finding": "Wir hören gern Musik. — يصف فعلًا محببًا، والتصريف مطابق للفاعل.",
+      "sourceIds": [
+        "G",
+        "D"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "decision": "clarified",
+      "finding": "in einer Stadt — في مدينة؛ العبارة نموذج جاهز الآن، وسيأتي تفصيل Dativ لاحقًا. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-02",
+      "decision": "clarified",
+      "finding": "am Wochenende — في نهاية الأسبوع. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "decision": "clarified",
+      "finding": "tanzen — يرقص؛ er tanzt = هو يرقص. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-04",
+      "decision": "clarified",
+      "finding": "Fußball — كرة القدم. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-05",
+      "decision": "clarified",
+      "finding": "Musik — موسيقى. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-06",
+      "decision": "clarified",
+      "finding": "Volleyball — كرة الطائرة. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-07",
+      "decision": "clarified",
+      "finding": "auch — أيضًا. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-08",
+      "decision": "clarified",
+      "finding": "in meiner Freizeit — في وقت فراغي. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-09",
+      "decision": "clarified",
+      "finding": "am Samstag — يوم السبت. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-10",
+      "decision": "clarified",
+      "finding": "manchmal — أحيانًا، لا تعني jeden Tag (كل يوم). شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-11",
+      "decision": "clarified",
+      "finding": "mit Freunden — مع أصدقاء. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "decision": "clarified",
+      "finding": "zurzeit — حاليًا. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-13",
+      "decision": "clarified",
+      "finding": "am Sonntag — يوم الأحد. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-14",
+      "decision": "clarified",
+      "finding": "Schach — الشطرنج. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-15",
+      "decision": "clarified",
+      "finding": "ein bisschen — قليلًا. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-16",
+      "decision": "clarified",
+      "finding": "stellt sich vor — يقدّم نفسه/تقدّم نفسها، بحسب الفاعل. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-17",
+      "decision": "clarified",
+      "finding": "Tunesien / Tunis / Sousse / Nabeul — تونس البلد / مدينة تونس / سوسة / نابل. شرح سياقي مساعد؛ ليس توثيقًا مستقلًا بقاموس عربي.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "decision": "text-only-reviewed",
+      "finding": "Hallo! — تحية صحيحة، منفصلة عن التعريف.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "decision": "text-only-reviewed",
+      "finding": "Ich heiße Mila und komme aus Tunesien. — اسم Mila وبلد Tunesien؛ فاعل مشترك للفعلين heiße/komme.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "decision": "text-only-reviewed",
+      "finding": "Ich wohne in Sousse. — السكن Sousse لا Tunis؛ لا خلط البلد بالمدينة.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "decision": "text-only-reviewed",
+      "finding": "Meine Muttersprache ist Arabisch. — اللغة الأم Arabisch؛ الملكية والجنس مطابقان.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "decision": "text-only-reviewed",
+      "finding": "Ich spreche auch Französisch und lerne Deutsch. — تتحدث الفرنسية أيضًا وتتعلم الألمانية؛ لا نستنتج إتقان الألمانية.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "decision": "text-only-reviewed",
+      "finding": "In meiner Freizeit lese ich gern und höre Musik. — In meiner Freizeit موقع واحد قبل lese؛ القراءة والموسيقى نشاطا وقت الفراغ.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "decision": "text-only-reviewed",
+      "finding": "Am Samstag spiele ich manchmal Volleyball mit Freunden. — am Samstag/manchmal/mit Freunden: السبت،أحيانًا،مع أصدقاء؛ لا سجل كامل لبقية أيام الأسبوع.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "decision": "text-only-reviewed",
+      "finding": "Guten Tag! — تحية صحيحة.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "decision": "text-only-reviewed",
+      "finding": "Ich heiße Karim. — Karim اسم المتحدث.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "decision": "text-only-reviewed",
+      "finding": "Ich wohne in Tunis und komme aus Tunesien. — السكن Tunis والأصل Tunesien؛ فاعل مشترك مع العطف.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "decision": "text-only-reviewed",
+      "finding": "Ich spreche Arabisch und Französisch. — يتحدث Arabisch/Französisch.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "decision": "text-only-reviewed",
+      "finding": "Zurzeit lerne ich Deutsch. — Zurzeit في البداية ثم lerne؛ التعلم حاليًا دون حكم على المستوى.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "listening-06",
+      "decision": "text-only-reviewed",
+      "finding": "Ich koche gern und spiele am Sonntag Schach. — الطبخ موصوف بـ gern، والشطرنج يوم الأحد؛ لا نضيف تفاصيل خارج النص.",
+      "sourceIds": [
+        "G",
+        "O"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "decision": "clarified",
+      "finding": "Woher kommt Mila? → Mila kommt aus Tunesien. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "decision": "clarified",
+      "finding": "Wo wohnt sie? → Sie wohnt in Sousse. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "decision": "clarified",
+      "finding": "Welche Sprachen spricht sie? → Sie spricht Arabisch und Französisch. لا نضيف مستوى ألمانية غير مذكور. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "decision": "clarified",
+      "finding": "Was macht sie gern? → Sie liest gern und hört Musik. جواب سياقي عن الهوايات المذكورة. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "reading-question-05",
+      "decision": "clarified",
+      "finding": "Was spielt sie manchmal? → Sie spielt manchmal Volleyball. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "decision": "clarified",
+      "finding": "Wie heißt die Person? → Die Person heißt Karim. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "decision": "clarified",
+      "finding": "Wo wohnt Karim? → Karim wohnt in Tunis. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "decision": "clarified",
+      "finding": "Welche Sprache lernt er? → Er lernt Deutsch. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "decision": "clarified",
+      "finding": "Was macht er gern? → Er kocht gern. الشطرنج مذكور أيضًا يوم الأحد؛ المثال لا يستلزم الجزم بنطاق gern في كل قراءة للعطف. أضيف المفتاح الذي كان ناقصًا لأسئلة النص المستقلة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T01",
+      "decision": "clarified",
+      "finding": "المطابقة الخماسية صحيحة، بما فيها wohnen كفعل لا اسم مدينة.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "die Sprache→د/اللغة",
+        "das Hobby→هـ/الهواية",
+        "wohnen→أ/يسكن",
+        "hören→ج/يستمع",
+        "das Land→ب/البلد"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T02",
+      "decision": "clarified",
+      "finding": "المفاتيح الخمسة صحيحة؛ المشتتات تصاريف لا توافق الفاعل المعطى.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "Ich lerne Deutsch.",
+        "Du wohnst in Nabeul.",
+        "Sara spielt Volleyball.",
+        "Wir sprechen Arabisch.",
+        "Er spricht Französisch."
+      ]
+    },
+    {
+      "id": "DL-A1-01-T03",
+      "decision": "corrected",
+      "finding": "صححنا spricht إلى sprichst في الكلمات نفسها؛ لم يكن ترتيبها وحده كافيًا. قيد البدء بالفاعل/الفعل يحدد النمط دون نفي ترتيبات أخرى.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "Ich wohne in Tunis.",
+        "Wir hören gern Musik.",
+        "Rania lernt Deutsch.",
+        "Sprichst du Arabisch?"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T04",
+      "decision": "clarified",
+      "finding": "gern لا يحل محل الفعل؛ قبلنا موضعًا صحيحًا آخر في البند الثاني.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "Ich lese gern.",
+        "Wir kochen gern am Sonntag. أو Wir kochen am Sonntag gern.",
+        "Amal hört gern Musik."
+      ]
+    },
+    {
+      "id": "DL-A1-01-T05",
+      "decision": "clarified",
+      "finding": "الحقول الأربعة تطابق Mila لا Karim؛ قراءة لا تصريف Rania، لذا لم يعد مصدر Q06.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "Tunesien",
+        "Sousse",
+        "Arabisch",
+        "Deutsch"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T06",
+      "decision": "corrected",
+      "finding": "Liest صار مشروحًا، واستبدل سؤال jeden Tag بسؤال Wann…laut Text؟ لإلزام الإجابة بالمذكور بدل جدول أسبوعي مستنتج.",
+      "sourceIds": [
+        "G",
+        "O",
+        "L"
+      ],
+      "items": [
+        "Ja, sie spricht Französisch.",
+        "Ja, sie liest gern.",
+        "Sie spielt am Samstag manchmal Volleyball."
+      ]
+    },
+    {
+      "id": "DL-A1-01-T07",
+      "decision": "clarified",
+      "finding": "أربع بيانات صحيحة؛ هذا ملخص مع إعادة ترتيب لا اقتباس حرفي كامل. الصوت اختياري والقراءة ليست اختبار استماع.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "Karim",
+        "Tunis",
+        "Deutsch",
+        "Schach"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T08",
+      "decision": "clarified",
+      "finding": "الأسئلة الأربعة الصحيحة بصيغة du؛ Q07/Q09 يعودان إليها مباشرة.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "Woher kommst du?",
+        "Wo wohnst du?",
+        "Welche Sprachen sprichst du?",
+        "Was machst du gern?"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T09",
+      "decision": "corrected",
+      "finding": "بطاقة ستة أسطر؛ فصل تعلم اللغة عن الهواية، إتاحة شخصية خيالية، وتحديد لغتين دون افتراض قدرات المتعلم الحقيقية. أسماء اللغات هدف صريح لـ Q08.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "جملة الاسم الخيالي",
+        "جملة بلد الأصل Tunesien",
+        "جملة السكن Nabeul",
+        "جملة اللغتين Arabisch/Französisch",
+        "جملة تعلم Deutsch",
+        "جملة هواية مع gern"
+      ]
+    },
+    {
+      "id": "DL-A1-01-T10",
+      "decision": "corrected",
+      "finding": "المهمة والمقياس يطلبان أربعة أزواج وجملتي تقديم لا سؤالين؛ P02 لم يعد يستبدل الأصل بالاسم أو يسقط التقديم. كلا الدورين قابل للأداء الفردي.",
+      "sourceIds": [
+        "G",
+        "O"
+      ],
+      "items": [
+        "سؤال الأصل وجوابه",
+        "سؤال السكن وجوابه",
+        "سؤال اللغات وجوابه",
+        "سؤال الهواية وجوابه",
+        "تقديم الشخصية بسكنها مع الاسم",
+        "تقديم هوايتها مع er/sie"
+      ]
+    },
+    {
+      "id": "DL-A1-01-Q01",
+      "decision": "clarified",
+      "finding": "اللغة، لا البلد أو المدينة؛ الرابط T01 صحيح.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "اللغة",
+        "البلد",
+        "المدينة"
+      ],
+      "answer": "اللغة"
+    },
+    {
+      "id": "DL-A1-01-Q02",
+      "decision": "clarified",
+      "finding": "wohnst مع Du؛ wohne/wohnen لا يطابقانها.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "wohne",
+        "wohnst",
+        "wohnen"
+      ],
+      "answer": "wohnst"
+    },
+    {
+      "id": "DL-A1-01-Q03",
+      "decision": "clarified",
+      "finding": "spreche مع Ich؛ spricht/sprechen لا يطابقانه.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "spricht",
+        "sprechen",
+        "spreche"
+      ],
+      "answer": "spreche"
+    },
+    {
+      "id": "DL-A1-01-Q04",
+      "decision": "clarified",
+      "finding": "Wir hören gern Musik. فعل في الموقع الثاني؛ المشتتان لا يحققان النمط الخبري المستقل.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "Wir hören gern Musik.",
+        "Wir gern hören Musik.",
+        "Gern wir Musik hören."
+      ],
+      "answer": "Wir hören gern Musik."
+    },
+    {
+      "id": "DL-A1-01-Q05",
+      "decision": "clarified",
+      "finding": "Ich lese gern. صحيح؛ المشتتان لا يعطيان ترتيب الجملة الخبرية المطلوبة.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "Ich gern lese.",
+        "Gern ich lese.",
+        "Ich lese gern."
+      ],
+      "answer": "Ich lese gern."
+    },
+    {
+      "id": "DL-A1-01-Q06",
+      "decision": "corrected",
+      "finding": "lernt مع Rania؛ انتقل الربط T05→T03 لوجود الجملة نفسها، دون تغيير المفتاح.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "lernen",
+        "lernt",
+        "lerne"
+      ],
+      "answer": "lernt"
+    },
+    {
+      "id": "DL-A1-01-Q07",
+      "decision": "corrected",
+      "finding": "Wo wohnst du? للسكن؛ الباقيان للأصل واللغات. ربط T06→T08 بدل فهم القراءة.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "Woher kommst du?",
+        "Wo wohnst du?",
+        "Welche Sprachen sprichst du?"
+      ],
+      "answer": "Wo wohnst du?"
+    },
+    {
+      "id": "DL-A1-01-Q08",
+      "decision": "clarified",
+      "finding": "Deutsch اسم اللغة؛ ليست deutsche Sprache خطأ نحويًا. قيد السؤال بنوع الخيار، وربط T07→T09 حيث تعليم كتابة أسماء اللغات صريح.",
+      "sourceIds": [
+        "G",
+        "DE"
+      ],
+      "options": [
+        "deutsch (صفة)",
+        "Deutsch (اسم اللغة)",
+        "deutsche Sprache"
+      ],
+      "answer": "Deutsch (اسم اللغة)"
+    },
+    {
+      "id": "DL-A1-01-Q09",
+      "decision": "clarified",
+      "finding": "Welche Sprachen sprichst du?؛ البديلان هواية وسكن، والرابط T08 محفوظ.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "Was machst du gern?",
+        "Wo wohnst du?",
+        "Welche Sprachen sprichst du?"
+      ],
+      "answer": "Welche Sprachen sprichst du?"
+    },
+    {
+      "id": "DL-A1-01-Q10",
+      "decision": "clarified",
+      "finding": "Ich lese gern. جواب هواية؛ الأصل والسكن لا يجيبان عن السؤال. أضيفت?الألمانية داخل السؤال.",
+      "sourceIds": [
+        "G"
+      ],
+      "options": [
+        "Ich komme aus Tunesien.",
+        "Ich lese gern.",
+        "Ich wohne in Nabeul."
+      ],
+      "answer": "Ich lese gern."
+    },
+    {
+      "id": "DL-A1-01-P01",
+      "decision": "corrected",
+      "finding": "كتابة فقط؛ كان النص يجعل القراءة اختيارية لكن البرمجة تفرضها. حد 100 حرف يمنع القصر الشديد لا يصحح اللغة. ستة الحقول مطابقة لـ T09 ومنها تعلم Deutsch.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "DL-A1-01-P02",
+      "decision": "corrected",
+      "finding": "قراءة وكتابة وكلام؛ أربعة أزواج وتقديم بجملتين مطابق T10، حد 180 حرفًا مع تأكيد الكلام، لا مجرد سؤالين. لا شريك/تسجيل مطلوب، والمربعات ليست حكم نطق.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-01",
+      "decision": "clarified",
+      "finding": "Woher kommst du? — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-02",
+      "decision": "clarified",
+      "finding": "Ich komme aus Tunesien. — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-03",
+      "decision": "clarified",
+      "finding": "Wo wohnst du? — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-04",
+      "decision": "clarified",
+      "finding": "Ich wohne in Sousse. — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-05",
+      "decision": "clarified",
+      "finding": "Welche Sprachen sprichst du? — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-06",
+      "decision": "clarified",
+      "finding": "Ich spreche Arabisch und Französisch. — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-07",
+      "decision": "clarified",
+      "finding": "Was machst du gern? — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-08",
+      "decision": "clarified",
+      "finding": "Ich lese gern. — سؤال/جواب مطابق لوظيفته وبيانات Mila الخيالية. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-09",
+      "decision": "clarified",
+      "finding": "Mila wohnt in Sousse. — تقديم مطابق لجواب الشخصية؛ liest للمفرد و Sie الأولى «هي» في أول الجملة. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "practice-dialogue-10",
+      "decision": "clarified",
+      "finding": "Sie liest gern. — تقديم مطابق لجواب الشخصية؛ liest للمفرد و Sie الأولى «هي» في أول الجملة. نموذج كتابي غير مسجل.",
+      "sourceIds": [
+        "G",
+        "L"
+      ]
+    },
+    {
+      "id": "card-01",
+      "decision": "retained",
+      "finding": "Ich komme aus … → أنا من … قالب/جملة صحيحة؛ لا يثبت حفظ البطاقة أداء المهمة المركبة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "card-02",
+      "decision": "retained",
+      "finding": "Ich wohne in … → أسكن في … قالب/جملة صحيحة؛ لا يثبت حفظ البطاقة أداء المهمة المركبة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "card-03",
+      "decision": "retained",
+      "finding": "Ich spreche … → أتحدث … قالب/جملة صحيحة؛ لا يثبت حفظ البطاقة أداء المهمة المركبة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "card-04",
+      "decision": "retained",
+      "finding": "Ich lerne Deutsch. → أتعلم الألمانية. قالب/جملة صحيحة؛ لا يثبت حفظ البطاقة أداء المهمة المركبة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "card-05",
+      "decision": "retained",
+      "finding": "Ich lese gern. → أحب القراءة. قالب/جملة صحيحة؛ لا يثبت حفظ البطاقة أداء المهمة المركبة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "DL-A1-01-AUD-READ-01",
+      "decision": "text-only-reviewed",
+      "finding": "مقطع واحد بصوت voice-02؛ النص مطابق لفقرة المصدر بايتًا، والسياسة offer والحالة ready التاريخية محفوظتان. لا استماع أو اعتماد جديد.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "DL-A1-01-AUD-LST-01",
+      "decision": "text-only-reviewed",
+      "finding": "مقطع واحد بصوت voice-03؛ النص مطابق لفقرة المصدر بايتًا، والسياسة offer والحالة ready التاريخية محفوظتان. لا استماع أو اعتماد جديد.",
+      "sourceIds": [
+        "G"
+      ]
+    }
+  ]
+}

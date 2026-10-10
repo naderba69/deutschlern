@@ -1,0 +1,1733 @@
+{
+  "reviewVersion": "cr53-b2-11-v1",
+  "lessonId": "b2-11-humans-nature-environment-nominalization",
+  "lessonTitle": "B2.11 — الإنسان والطبيعة وحماية البيئة: الأسلوب الاسمي",
+  "assessmentVersion": "b2-11-v2",
+  "generatedAt": "2026-10-09",
+  "unitCount": 91,
+  "exerciseSubItemCount": 42,
+  "modelPartCount": 11,
+  "quizOptionCount": 30,
+  "performanceCriterionCount": 6,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sourceHashes": {
+    "content/B2/lesson-11-humans-nature-environment-nominalization.md": "83a5824d842eb624f3b66f67ffc3e044a7109c3141a0f80f3e69dc2df1cb05bb",
+    "content/B2/lesson-11-humans-nature-environment-nominalization.assessment.json": "869131b9a3ad8df2c8ea5b87608edc8ae3ca22cd729c2f2e59efec84848b0f0c"
+  },
+  "audioSnapshotHashes": {
+    "DL-B2-11-AUD-PHR-01": "140c23d430eef1b4fa364f0b8d26f9c9cc60bb7065e24b7f152fa686898b2446",
+    "DL-B2-11-AUD-MODEL-01": "a899486aa176e4d35d472f5544f34ceb1961686ec691cad2d9cf3b22c9239af0",
+    "DL-B2-11-AUD-DLG-01": "4786720c34f44c88477c574a70078f968370bc57563623f1ac204cf51b5e91c6",
+    "DL-B2-11-AUD-READ-01": "f2f5bd88a4f8ec97ed03d6e253399e18a223e6c15cf408f2d22e768511fbec62",
+    "DL-B2-11-AUD-LST-01": "7055fcfd406f8126947243bca152a97081633e03c97fab390ed004adf558c370"
+  },
+  "sources": [
+    {
+      "id": "lingolia-en-prepositions",
+      "title": "Lingolia English — Prepositions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Accusative prepositions (durch, für, gegen, ohne, um), dative prepositions (aus, bei, gegenüber, mit, nach, seit, von, zu), contractions (bei dem = beim, zu dem = zum, zu der = zur, von dem = vom), and genitive causal prepositions (aufgrund, wegen, dank, infolge)."
+    },
+    {
+      "id": "lingolia-en-declension",
+      "title": "Lingolia English — Declension of Nouns and Articles in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/nouns-and-articles/declension",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Definite and indefinite article declension across Nominative, Accusative, Dative, and Genitive; masculine/neuter singular genitive -s/-es (des Schutzes, des Verbrauchs, des Lebensraums, eines Feuchtgebiets), feminine dative/genitive der (bei der Planung, aufgrund der Wiederherstellung), and dative plural -n after von (von Lebensräumen, von Abfällen, von Wegen)."
+    },
+    {
+      "id": "lingolia-en-dependent-clauses",
+      "title": "Lingolia English — Dependent Clauses (Nebensätze) in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Subordinate clauses introduced by subjunctions (wenn, weil, indem, nachdem) place the finite verb at the end; when a dependent clause or nominal prepositional phrase occupies position 1 (Vorfeld), the main clause finite verb stands in position 2 (V2)."
+    },
+    {
+      "id": "lingolia-en-causal-prepositions",
+      "title": "Lingolia English — Prepositions of Cause and Purpose in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/causal",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Causal and purpose prepositions with dative (zu -> zum/zur with nominalized verbs or -ung nouns: zum Schutz, zum Erhalt) and genitive (aufgrund, wegen, dank, infolge, trotz, zwecks)."
+    },
+    {
+      "id": "lingolia-en-conjunctions",
+      "title": "Lingolia English — Subordinating Conjunctions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/sentence-structure/dependent-clauses/conjunctions",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Subordinating conjunctions (weil, wenn, indem, nachdem, damit, obwohl, während) introduce subordinate clauses with verb-final word order."
+    },
+    {
+      "id": "lingolia-en-manner-prepositions",
+      "title": "Lingolia English — Prepositions of Manner in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/manner",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Prepositions of manner and means with accusative (auf, für, ohne, um) and dative (aus, in, mit, unter, von, zu), and genitive (mithilfe, statt)."
+    },
+    {
+      "id": "lingolia-en-time-prepositions",
+      "title": "Lingolia English — Prepositions of Time in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/time",
+      "access": "full_fetched_page",
+      "chunks": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "keyFindings": "Temporal prepositions with dative (an, in, nach, seit, von ... bis, vor, zu, zwischen: vor dem Beginn der Arbeiten, nach der Prüfung möglicher Auswirkungen) and genitive (während, außerhalb)."
+    },
+    {
+      "id": "duden-schutz",
+      "title": "Duden — Schutz",
+      "url": "https://www.duden.de/rechtschreibung/Schutz",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Schutz; Genitiv des Schutzes, ohne Plural; protection of nature, species, or habitats (beim Schutz von Lebensräumen, der Schutz der Ufer)."
+    },
+    {
+      "id": "duden-artenvielfalt",
+      "title": "Duden — Artenvielfalt",
+      "url": "https://www.duden.de/rechtschreibung/Artenvielfalt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Artenvielfalt; Genitiv der Artenvielfalt, ohne Plural; biodiversity / variety of biological species (Erhalt/Schutz der Artenvielfalt)."
+    },
+    {
+      "id": "duden-renaturierung",
+      "title": "Duden — Renaturierung",
+      "url": "https://www.duden.de/rechtschreibung/Renaturierung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Renaturierung; Genitiv der Renaturierung, Plural die Renaturierungen; ecological restoration of a river or landscape to a near-natural state."
+    },
+    {
+      "id": "duden-verringerung",
+      "title": "Duden — Verringerung",
+      "url": "https://www.duden.de/rechtschreibung/Verringerung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Verringerung; Genitiv der Verringerung, Plural die Verringerungen; nominalization of verringern (durch die Verringerung des Verbrauchs / von Abfällen)."
+    },
+    {
+      "id": "duden-wiederherstellung",
+      "title": "Duden — Wiederherstellung",
+      "url": "https://www.duden.de/rechtschreibung/Wiederherstellung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Wiederherstellung; Genitiv der Wiederherstellung, Plural die Wiederherstellungen; restoration/recovery (aufgrund der Wiederherstellung der Ufer)."
+    },
+    {
+      "id": "duden-flaechennutzung",
+      "title": "Duden — Flächennutzung",
+      "url": "https://www.duden.de/rechtschreibung/Flaechennutzung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Flächennutzung; Genitiv der Flächennutzung, Plural die Flächennutzungen; land use for specific purposes."
+    },
+    {
+      "id": "duden-auswirkung",
+      "title": "Duden — Auswirkung",
+      "url": "https://www.duden.de/rechtschreibung/Auswirkung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Auswirkung; Genitiv der Auswirkung, Plural die Auswirkungen; consequence/impact, typically with auf + Akkusativ (die Auswirkungen auf Menschen und Natur)."
+    },
+    {
+      "id": "duden-masznahme",
+      "title": "Duden — Maßnahme",
+      "url": "https://www.duden.de/rechtschreibung/Masznahme",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Maßnahme; Genitiv der Maßnahme, Plural die Maßnahmen; targeted action or regulation (die Auswirkungen jeder Maßnahme)."
+    },
+    {
+      "id": "duden-beteiligung",
+      "title": "Duden — Beteiligung",
+      "url": "https://www.duden.de/rechtschreibung/Beteiligung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Beteiligung; Genitiv der Beteiligung, Plural die Beteiligungen; participation/involvement (bei der Beteiligung der Bevölkerung)."
+    },
+    {
+      "id": "duden-lebensraum",
+      "title": "Duden — Lebensraum",
+      "url": "https://www.duden.de/rechtschreibung/Lebensraum",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Lebensraum; Genitiv des Lebensraumes/Lebensraums, Plural die Lebensräume; habitat/biotope (beim Schutz von Lebensräumen)."
+    },
+    {
+      "id": "duden-verbrauch",
+      "title": "Duden — Verbrauch",
+      "url": "https://www.duden.de/rechtschreibung/Verbrauch",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Verbrauch; Genitiv des Verbrauch[e]s, ohne Plural; consumption (durch die Verringerung des Verbrauchs)."
+    },
+    {
+      "id": "duden-schuetzen",
+      "title": "Duden — schützen (hüten)",
+      "url": "https://www.duden.de/rechtschreibung/schuetzen_hueten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb schützen (schützt, schützte, hat geschützt); protect nature, species, or habitats (Wenn Lebensräume geschützt werden)."
+    },
+    {
+      "id": "duden-wiederherstellen",
+      "title": "Duden — wiederherstellen",
+      "url": "https://www.duden.de/rechtschreibung/wiederherstellen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak separable verb wiederherstellen (stellt wieder her, stellte wieder her, hat wiederhergestellt); restore to original state (Weil die Ufer wiederhergestellt werden)."
+    },
+    {
+      "id": "duden-beeintraechtigen",
+      "title": "Duden — beeinträchtigen",
+      "url": "https://www.duden.de/rechtschreibung/beeintraechtigen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb beeinträchtigen (beeinträchtigt, beeinträchtigte, hat beeinträchtigt, without ge-); impair or affect negatively."
+    },
+    {
+      "id": "duden-abwaegen",
+      "title": "Duden — abwägen",
+      "url": "https://www.duden.de/rechtschreibung/abwaegen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Separable verb abwägen (wägt ab, wog/wägte ab, hat abgewogen/abgewägt); weigh interests or options carefully (müssen die Interessen verschiedener Gruppen abgewogen werden)."
+    },
+    {
+      "id": "duden-nachhaltig",
+      "title": "Duden — nachhaltig",
+      "url": "https://www.duden.de/rechtschreibung/nachhaltig",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adjective/adverb nachhaltig; sustainable / having a lasting effect in ecology and planning."
+    },
+    {
+      "id": "duden-gemeinsam",
+      "title": "Duden — gemeinsam",
+      "url": "https://www.duden.de/rechtschreibung/gemeinsam",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Adjective/adverb gemeinsam; joint/shared (durch die gemeinsame Prüfung verschiedener Vorschläge)."
+    },
+    {
+      "id": "duden-aufgrund-adv",
+      "title": "Duden — aufgrund (Adverb)",
+      "url": "https://www.duden.de/rechtschreibung/aufgrund",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Entry linking to preposition aufgrund / auf Grund."
+    },
+    {
+      "id": "duden-aufgrund-praep",
+      "title": "Duden — aufgrund, auf Grund (Präposition)",
+      "url": "https://www.duden.de/rechtschreibung/aufgrund_Praeposition",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Preposition with Genitive: aufgrund / auf Grund (because of / owing to: aufgrund der Wiederherstellung der Ufer, aufgrund der unterschiedlichen Bedürfnisse)."
+    },
+    {
+      "id": "duden-indem",
+      "title": "Duden — indem (Konjunktion)",
+      "url": "https://www.duden.de/rechtschreibung/indem_weil_derweil",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Instrumental subordinating conjunction indem ('by doing something / dadurch, dass'), corresponding to nominal durch + Akkusativ (Indem man den Verbrauch verringert -> Durch die Verringerung des Verbrauchs)."
+    },
+    {
+      "id": "duden-ufer",
+      "title": "Duden — Ufer",
+      "url": "https://www.duden.de/rechtschreibung/Ufer",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Ufer; Genitiv des Ufers, Plural die Ufer; bank/shore of a river or body of water (der Schutz der Ufer, eines Teils des Ufers)."
+    },
+    {
+      "id": "duden-bevoelkerung",
+      "title": "Duden — Bevölkerung",
+      "url": "https://www.duden.de/rechtschreibung/Bevoelkerung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Bevölkerung; Genitiv der Bevölkerung, Plural die Bevölkerungen; population/residents of an area (bei der Beteiligung der Bevölkerung)."
+    },
+    {
+      "id": "duden-erhalt",
+      "title": "Duden — Erhalt",
+      "url": "https://www.duden.de/rechtschreibung/Erhalt",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Erhalt; Genitiv des Erhalt[e]s, ohne Plural; preservation/maintenance of something threatened (zum Erhalt von Lebensräumen beitragen)."
+    },
+    {
+      "id": "duden-beduerfnis",
+      "title": "Duden — Bedürfnis",
+      "url": "https://www.duden.de/rechtschreibung/Beduerfnis",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Bedürfnis; Genitiv des Bedürfnisses, Plural die Bedürfnisse; human need/requirement (aufgrund der unterschiedlichen Bedürfnisse)."
+    },
+    {
+      "id": "duden-beruecksichtigen",
+      "title": "Duden — berücksichtigen",
+      "url": "https://www.duden.de/rechtschreibung/beruecksichtigen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb berücksichtigen (berücksichtigt, berücksichtigte, hat berücksichtigt, without ge-); take into account / consider."
+    },
+    {
+      "id": "duden-anwohnerin",
+      "title": "Duden — Anwohnerin",
+      "url": "https://www.duden.de/rechtschreibung/Anwohnerin",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Anwohnerin; Genitiv der Anwohnerin, Plural die Anwohnerinnen; female local resident living adjacent to a street or river."
+    },
+    {
+      "id": "duden-vorschlag",
+      "title": "Duden — Vorschlag",
+      "url": "https://www.duden.de/rechtschreibung/Vorschlag",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Vorschlag; Genitiv des Vorschlags/Vorschlages, Plural die Vorschläge; proposal/recommendation (Ziel des Vorschlags, Prüfung verschiedener Vorschläge)."
+    },
+    {
+      "id": "duden-rueckzugsort",
+      "title": "Duden — Rückzugsort",
+      "url": "https://www.duden.de/rechtschreibung/Rueckzugsort",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Rückzugsort; Genitiv des Rückzugsorts/Rückzugsortes, Plural die Rückzugsorte; refuge/retreat area (neue Rückzugsorte für Pflanzen und Tiere)."
+    },
+    {
+      "id": "duden-zugang",
+      "title": "Duden — Zugang",
+      "url": "https://www.duden.de/rechtschreibung/Zugang",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Zugang; Genitiv des Zugangs/Zuganges, Plural die Zugänge; access/entry point (die Verbesserung des Zugangs zum Fluss, der Zugang für Anwohnerinnen)."
+    },
+    {
+      "id": "duden-entscheidung",
+      "title": "Duden — Entscheidung",
+      "url": "https://www.duden.de/rechtschreibung/Entscheidung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Entscheidung; Genitiv der Entscheidung, Plural die Entscheidungen; decision (eine endgültige Entscheidung treffen)."
+    },
+    {
+      "id": "duden-feuchtgebiet",
+      "title": "Duden — Feuchtgebiet",
+      "url": "https://www.duden.de/rechtschreibung/Feuchtgebiet",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Feuchtgebiet; Genitiv des Feuchtgebiets/Feuchtgebietes, Plural die Feuchtgebiete; wetland biotope (beim Schutz eines Feuchtgebiets)."
+    },
+    {
+      "id": "duden-abfall",
+      "title": "Duden — Abfall",
+      "url": "https://www.duden.de/rechtschreibung/Abfall",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "der Abfall; Genitiv des Abfalles/Abfalls, Plural die Abfälle; waste/refuse (durch die Verringerung des Abfalls / von Abfällen)."
+    },
+    {
+      "id": "duden-belastung",
+      "title": "Duden — Belastung",
+      "url": "https://www.duden.de/rechtschreibung/Belastung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Belastung; Genitiv der Belastung, Plural die Belastungen; environmental or practical burden/strain (die Belastung der Umgebung)."
+    },
+    {
+      "id": "duden-umgebung",
+      "title": "Duden — Umgebung",
+      "url": "https://www.duden.de/rechtschreibung/Umgebung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Umgebung; Genitiv der Umgebung, Plural die Umgebungen; surrounding area/environment."
+    },
+    {
+      "id": "duden-sinken",
+      "title": "Duden — sinken",
+      "url": "https://www.duden.de/rechtschreibung/sinken",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Strong intransitive verb sinken (sinkt, sank, ist gesunken); decrease/fall (kann die Belastung der Umgebung sinken)."
+    },
+    {
+      "id": "duden-verringern",
+      "title": "Duden — verringern",
+      "url": "https://www.duden.de/rechtschreibung/verringern",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb verringern (verringert, verringerte, hat verringert); reduce/diminish (den Verbrauch / den Abfall verringern)."
+    },
+    {
+      "id": "duden-beteiligen",
+      "title": "Duden — beteiligen",
+      "url": "https://www.duden.de/rechtschreibung/beteiligen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb beteiligen (beteiligt, beteiligte, hat beteiligt); reflexive sich beteiligen (take part) or transitive jemanden beteiligen (involve someone)."
+    },
+    {
+      "id": "duden-bewerten",
+      "title": "Duden — bewerten",
+      "url": "https://www.duden.de/rechtschreibung/bewerten",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak inseparable verb bewerten (bewertet, bewertete, hat bewertet, without ge-); evaluate/assess (wird ein Vorschlag bewertet)."
+    },
+    {
+      "id": "duden-planung",
+      "title": "Duden — Planung",
+      "url": "https://www.duden.de/rechtschreibung/Planung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Planung; Genitiv der Planung, Plural die Planungen; planning process (bei der Planung)."
+    },
+    {
+      "id": "duden-nutzung",
+      "title": "Duden — Nutzung",
+      "url": "https://www.duden.de/rechtschreibung/Nutzung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Nutzung; Genitiv der Nutzung, Plural die Nutzungen; use/utilization (die Nutzung des öffentlichen Weges)."
+    },
+    {
+      "id": "duden-pruefung",
+      "title": "Duden — Prüfung",
+      "url": "https://www.duden.de/rechtschreibung/Pruefung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Prüfung; Genitiv der Prüfung, Plural die Prüfungen; examination/review of proposals or impacts (nach der Prüfung möglicher Auswirkungen)."
+    },
+    {
+      "id": "duden-verbesserung",
+      "title": "Duden — Verbesserung",
+      "url": "https://www.duden.de/rechtschreibung/Verbesserung",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Verbesserung; Genitiv der Verbesserung, Plural die Verbesserungen; improvement (die Verbesserung des Zugangs zum Fluss)."
+    },
+    {
+      "id": "duden-interesse",
+      "title": "Duden — Interesse",
+      "url": "https://www.duden.de/rechtschreibung/Interesse",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "das Interesse; Genitiv des Interesses, Plural die Interessen; interest/concern of a group (die Interessen verschiedener Gruppen abwägen)."
+    },
+    {
+      "id": "duden-ressource",
+      "title": "Duden — Ressource",
+      "url": "https://www.duden.de/rechtschreibung/Ressource",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "die Ressource; Genitiv der Ressource, Plural die Ressourcen (meist im Plural); natural or material resource (Ressourcen schonen)."
+    },
+    {
+      "id": "duden-schonen",
+      "title": "Duden — schonen",
+      "url": "https://www.duden.de/rechtschreibung/schonen",
+      "access": "full_fetched_page",
+      "chunks": [
+        0
+      ],
+      "totalChunks": 1,
+      "keyFindings": "Weak verb schonen (schont, schonte, hat geschont); conserve/spare the environment or resources (können Ressourcen geschont werden)."
+    }
+  ],
+  "searchQueries": [
+    {
+      "id": "lingolia-search-prepositions-cases",
+      "query": "site:deutsch.lingolia.com aufgrund wegen Genitiv durch Akkusativ bei Dativ",
+      "access": "search_snippet_only",
+      "keyFindings": "Located Lingolia reference pages for causal prepositions (aufgrund, wegen + Genitive; zu + Dative), manner prepositions, and article declension."
+    },
+    {
+      "id": "lingolia-search-dependent-clauses",
+      "query": "site:deutsch.lingolia.com indem weil wenn dependent clauses Adverbialsätze",
+      "access": "search_snippet_only",
+      "keyFindings": "Located Lingolia reference pages for dependent clauses (Nebensätze) and subordinating conjunctions (indem, weil, wenn, nachdem)."
+    },
+    {
+      "id": "duden-search-indem",
+      "query": "site:duden.de/rechtschreibung indem Konjunktion",
+      "access": "search_snippet_only",
+      "keyFindings": "Located disambiguated Duden URL for conjunction indem (https://www.duden.de/rechtschreibung/indem_weil_derweil)."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Massnahme",
+      "reason": "HTTP 404 URL on Duden (ß encoded as sz on Duden); replaced by full-fetched https://www.duden.de/rechtschreibung/Masznahme."
+    },
+    {
+      "url": "https://www.duden.de/rechtschreibung/indem",
+      "reason": "HTTP 404 bare homograph URL on Duden; replaced by full-fetched https://www.duden.de/rechtschreibung/indem_weil_derweil."
+    },
+    {
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/cases",
+      "reason": "Redirected to https://deutsch.lingolia.com/en/grammar/prepositions, which was fetched in full across both chunks."
+    },
+    {
+      "url": "https://deutsch.lingolia.com/en/grammar/declension/genitive",
+      "reason": "Redirected to https://deutsch.lingolia.com/en/grammar/nouns-and-articles/declension, which was fetched in full."
+    },
+    {
+      "url": "https://deutsch.lingolia.com/en/grammar/declension/dative",
+      "reason": "Redirected to https://deutsch.lingolia.com/en/grammar/nouns-and-articles/declension, which was fetched in full."
+    }
+  ],
+  "units": [
+    {
+      "id": "b2-11-scope-01",
+      "section": "Scope",
+      "source": "B2.11 title, duration (45–50 min), skills, objective (nominalization for formal, concise environmental processes and causes), and fictional proposal disclaimer",
+      "status": "verified",
+      "finding": "Verified that the lesson scope clearly targets nominalization (Nominalisierung with bei + Dativ, durch + Akkusativ, aufgrund + Genitiv, zu + Dativ) in environmental and community planning contexts, while distinguishing fictional examples and possible impacts from guaranteed outcomes.",
+      "action": "Preserved header and objective verbatim."
+    },
+    {
+      "id": "b2-11-vocab-01",
+      "section": "Vocabulary",
+      "source": "| der Schutz | — | الحماية |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Schutz, Genitiv des Schutzes, ohne Plural against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-02",
+      "section": "Vocabulary",
+      "source": "| die Artenvielfalt | — | التنوّع الحيوي |",
+      "status": "verified",
+      "finding": "Verified feminine compound noun die Artenvielfalt, Genitiv der Artenvielfalt, ohne Plural against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-03",
+      "section": "Vocabulary",
+      "source": "| die Renaturierung | die Renaturierungen | إعادة الطبيعة إلى حالتها الطبيعية |",
+      "status": "verified",
+      "finding": "Verified feminine -ung noun die Renaturierung, Genitiv der Renaturierung, Plural die Renaturierungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-04",
+      "section": "Vocabulary",
+      "source": "| die Verringerung | die Verringerungen | التقليل |",
+      "status": "verified",
+      "finding": "Verified feminine -ung noun die Verringerung, Genitiv der Verringerung, Plural die Verringerungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-05",
+      "section": "Vocabulary",
+      "source": "| die Wiederherstellung | die Wiederherstellungen | الاستعادة |",
+      "status": "verified",
+      "finding": "Verified feminine -ung noun die Wiederherstellung, Genitiv der Wiederherstellung, Plural die Wiederherstellungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-06",
+      "section": "Vocabulary",
+      "source": "| die Flächennutzung | die Flächennutzungen | استخدام الأراضي |",
+      "status": "verified",
+      "finding": "Verified feminine compound noun die Flächennutzung, Genitiv der Flächennutzung, Plural die Flächennutzungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-07",
+      "section": "Vocabulary",
+      "source": "| die Auswirkung | die Auswirkungen | الأثر |",
+      "status": "verified",
+      "finding": "Verified feminine -ung noun die Auswirkung, Genitiv der Auswirkung, Plural die Auswirkungen (with auf + Akkusativ) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-08",
+      "section": "Vocabulary",
+      "source": "| die Maßnahme | die Maßnahmen | إجراء / تدبير |",
+      "status": "verified",
+      "finding": "Verified feminine noun die Maßnahme, Genitiv der Maßnahme, Plural die Maßnahmen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-09",
+      "section": "Vocabulary",
+      "source": "| die Beteiligung | die Beteiligungen | المشاركة |",
+      "status": "verified",
+      "finding": "Verified feminine -ung noun die Beteiligung, Genitiv der Beteiligung, Plural die Beteiligungen against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-10",
+      "section": "Vocabulary",
+      "source": "| der Lebensraum | die Lebensräume | موئل / بيئة معيشة |",
+      "status": "verified",
+      "finding": "Verified masculine compound noun der Lebensraum, Genitiv des Lebensraums/Lebensraumes, Plural die Lebensräume (Dativ Plural von Lebensräumen) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-11",
+      "section": "Vocabulary",
+      "source": "| der Verbrauch | — | الاستهلاك |",
+      "status": "verified",
+      "finding": "Verified masculine noun der Verbrauch, Genitiv des Verbrauch[e]s, ohne Plural against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-12",
+      "section": "Vocabulary",
+      "source": "| schützen | schützt | يحمي |",
+      "status": "verified",
+      "finding": "Verified weak inseparable verb schützen (schützt, schützte, hat geschützt) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-13",
+      "section": "Vocabulary",
+      "source": "| wiederherstellen | stellt wieder her | يستعيد |",
+      "status": "verified",
+      "finding": "Verified weak separable compound verb wiederherstellen (stellt wieder her, stellte wieder her, hat wiederhergestellt) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-14",
+      "section": "Vocabulary",
+      "source": "| beeinträchtigen | beeinträchtigt | يضرّ / يؤثر سلبًا في |",
+      "status": "verified",
+      "finding": "Verified weak inseparable verb beeinträchtigen (beeinträchtigt, beeinträchtigte, hat beeinträchtigt, without ge-) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-15",
+      "section": "Vocabulary",
+      "source": "| abwägen | wägt ab | يوازن بين الخيارات |",
+      "status": "verified",
+      "finding": "Verified separable verb abwägen (wägt ab, wog/wägte ab, hat abgewogen/abgewägt) against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-16",
+      "section": "Vocabulary",
+      "source": "| nachhaltig / gemeinsam | — | مستدام / بصورة مشتركة |",
+      "status": "verified",
+      "finding": "Verified adjectives/adverbs nachhaltig and gemeinsam against Duden.",
+      "action": "Preserved Section 1 table row verbatim for DL-B2-11-AUD-PHR-01."
+    },
+    {
+      "id": "b2-11-vocab-note-01",
+      "section": "Vocabulary",
+      "source": "ملاحظة حول الجمع والحالات وتصريف الأفعال في الجدول: Duden-backed note on singularia tantum and genitive singulars (des Schutzes, des Verbrauchs, des Erhalts, der Artenvielfalt), dative plural -n after von (von Lebensräumen, von Abfällen), -ung feminine nouns, and separable vs. inseparable Partizip II forms (geschützt, wiederhergestellt, beeinträchtigt, abgewogen, berücksichtigt, beteiligt, verringert, bewertet, gesunken)",
+      "status": "added",
+      "finding": "Added a comprehensive Duden-backed morphological note below the Section 1 vocabulary table explaining genitive singulars, dative plural -n forms after von, and passive Partizip II forms without altering the 16 spoken table rows.",
+      "action": "Added morphological and case note below Section 1 table."
+    },
+    {
+      "id": "b2-11-gram-intro-01",
+      "section": "Grammar",
+      "source": "في التقارير والنصوص الرسمية يمكن تحويل الفعل أو الفكرة الفعلية إلى اسم، فتبدو العبارة أكثر تكثيفًا. يتغير حرف الجر والحالة بحسب التركيب.",
+      "status": "verified",
+      "finding": "Verified Section 2 introductory explanation of nominal style (Nominalstil) in formal reports and case/preposition shifts.",
+      "action": "Preserved intro lines verbatim."
+    },
+    {
+      "id": "b2-11-gram-01",
+      "section": "Grammar",
+      "source": "| **Wenn Lebensräume geschützt werden, …** | **Beim Schutz von Lebensräumen …** | عند حماية المواطن الطبيعية … |",
+      "status": "verified",
+      "finding": "Verified transformation of passive conditional/temporal wenn-clause into Beim Schutz von Lebensräumen (bei + dem = beim + Dativ Singular, von + Dativ Plural); spoken nominal 1 of DL-B2-11-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2 table for DL-B2-11-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-11-gram-02",
+      "section": "Grammar",
+      "source": "| **Indem man den Verbrauch verringert, …** | **Durch die Verringerung des Verbrauchs …** | من خلال تقليل الاستهلاك … |",
+      "status": "verified",
+      "finding": "Verified transformation of instrumental indem-clause into Durch die Verringerung des Verbrauchs (durch + Akkusativ Singular + Genitiv Singular masculine des Verbrauchs); spoken nominal 2 of DL-B2-11-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2 table for DL-B2-11-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-11-gram-03",
+      "section": "Grammar",
+      "source": "| **Weil die Ufer wiederhergestellt werden, …** | **Aufgrund der Wiederherstellung der Ufer …** | بسبب استعادة ضفاف النهر … |",
+      "status": "verified",
+      "finding": "Verified transformation of causal weil-clause into Aufgrund der Wiederherstellung der Ufer (aufgrund + Genitiv Singular feminine + Genitiv Plural der Ufer); spoken nominal 3 of DL-B2-11-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2 table for DL-B2-11-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-11-gram-04",
+      "section": "Grammar",
+      "source": "| **Wenn sich die Bevölkerung beteiligt, …** | **Bei der Beteiligung der Bevölkerung …** | عند مشاركة السكان … |",
+      "status": "verified",
+      "finding": "Verified transformation of reflexive wenn-clause into Bei der Beteiligung der Bevölkerung (bei + Dativ Singular feminine + Genitiv Singular feminine der Bevölkerung); spoken nominal 4 of DL-B2-11-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2 table for DL-B2-11-AUD-MODEL-01."
+    },
+    {
+      "id": "b2-11-gram-05",
+      "section": "Grammar",
+      "source": "- يمكن أن يتحول المصدر إلى اسم محايد: **planen → das Planen**, **schützen → das Schützen**. وغالبًا تظهر أسماء أخرى بنهايات مثل **-ung**: **verringern → die Verringerung**.",
+      "status": "verified",
+      "finding": "Verified neuter nominalized infinitives (das Planen, das Schützen) and feminine -ung derivation (die Verringerung); preserves exact 3 bold arrow matches for DL-B2-11-AUD-MODEL-01.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-11-gram-06",
+      "section": "Grammar",
+      "source": "- بعد **durch** يأتي غالبًا **Akkusativ**، وبعد **bei** يأتي **Dativ**، وبعد **aufgrund** يأتي غالبًا **Genitiv** في الأسلوب الرسمي.",
+      "status": "verified",
+      "finding": "Verified preposition case government (durch + Akkusativ, bei + Dativ, aufgrund + Genitiv) against Lingolia and Duden.",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-11-gram-07",
+      "section": "Grammar",
+      "source": "- ليست كل الأسماء قابلة للاشتقاق بطريقة آلية؛ تعلّم التعبير الشائع في سياقه.",
+      "status": "verified",
+      "finding": "Verified lexicalized root-noun note (e.g., schützen -> der Schutz, erhalten -> der Erhalt, verbrauchen -> der Verbrauch alongside -ung derivations).",
+      "action": "Preserved verbatim in Section 2."
+    },
+    {
+      "id": "b2-11-helper-01",
+      "section": "Grammar Helper",
+      "source": "- خريطة التحويل بين الروابط الفعلية وحروف الجر الاسمية (wenn/während -> bei + Dativ, nach/vor + Dativ; indem -> durch + Akkusativ; weil/da -> aufgrund/wegen + Genitiv; um ... zu/damit -> zu/zum/zur + Dativ)",
+      "status": "added",
+      "finding": "Added helper block 1 mapping subordinating conjunctions (wenn, während, nachdem, indem, weil, um ... zu) to nominal prepositions and cases using backticks so environmentNominals (4) and environmentDerivations (3) remain intact.",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-11-helper-02",
+      "section": "Grammar Helper",
+      "source": "- كيف يتحول الفاعل أو المفعول به إلى مضاف إليه بعد الاسم المشتق؟ (Genitivattribut des/eines/der vs. von + Dativ Plural von Lebensräumen / von Abfällen / von Wegen)",
+      "status": "added",
+      "finding": "Added helper block 2 explaining when the verbal subject/object becomes a Genitivattribut (des Verbrauchs, der Bevölkerung, der Ufer, möglicher Auswirkungen) vs. von + Dativ Plural for bare plural nouns (von Lebensräumen, von Abfällen, von Wegen).",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-11-helper-03",
+      "section": "Grammar Helper",
+      "source": "- الانتباه إلى استكمال الجملة بفعل مصرف (V2 main clause verb immediately after the fronted nominal phrase in Vorfeld)",
+      "status": "added",
+      "finding": "Added helper block 3 explaining V2 word order after a fronted nominal phrase and warning against placing a finite verb directly after durch/bei/aufgrund.",
+      "action": "Added in Section 2 under ### مساعدة قبل النصوص والمهمات."
+    },
+    {
+      "id": "b2-11-dlg-01",
+      "section": "Dialogue",
+      "source": "**Amir:** Was wurde beim Treffen zur Renaturierung des Flusses besprochen?",
+      "status": "verified",
+      "finding": "Verified dialogue turn 1 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-dlg-02",
+      "section": "Dialogue",
+      "source": "**Lea:** Es ging um den Schutz der Ufer und um die Nutzung des öffentlichen Weges.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 2 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-dlg-03",
+      "section": "Dialogue",
+      "source": "**Amir:** Welche Vorteile hat die Wiederherstellung der natürlichen Ufer?",
+      "status": "verified",
+      "finding": "Verified dialogue turn 3 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-dlg-04",
+      "section": "Dialogue",
+      "source": "**Lea:** Sie kann zum Erhalt von Lebensräumen beitragen. Gleichzeitig müssen die Bedürfnisse der Menschen berücksichtigt werden.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 4 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-dlg-05",
+      "section": "Dialogue",
+      "source": "**Amir:** Wie können Anwohnerinnen beteiligt werden?",
+      "status": "verified",
+      "finding": "Verified dialogue turn 5 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-dlg-06",
+      "section": "Dialogue",
+      "source": "**Lea:** Durch regelmäßige Gespräche und durch die gemeinsame Prüfung verschiedener Vorschläge.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 6 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-dlg-07",
+      "section": "Dialogue",
+      "source": "**Amir:** Dann sollten die Auswirkungen jeder Maßnahme verständlich erklärt werden.",
+      "status": "verified",
+      "finding": "Verified dialogue turn 7 grammar, nominal phrases, and verbatim alignment with DL-B2-11-AUD-DLG-01 (Amir=voice-03, Lea=voice-02).",
+      "action": "Preserved dialogue turn verbatim in Section 3."
+    },
+    {
+      "id": "b2-11-read-01",
+      "section": "Reading",
+      "source": "Im fiktiven Viertel Flussbogen wird über die Renaturierung eines Uferabschnitts gesprochen.",
+      "status": "verified",
+      "finding": "Verified reading sentence 1 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-02",
+      "section": "Reading",
+      "source": "Ziel des Vorschlags ist der Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss.",
+      "status": "verified",
+      "finding": "Verified reading sentence 2 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-03",
+      "section": "Reading",
+      "source": "Durch die Wiederherstellung eines Teils des Ufers könnten neue Rückzugsorte für Pflanzen und Tiere entstehen.",
+      "status": "verified",
+      "finding": "Verified reading sentence 3 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-04",
+      "section": "Reading",
+      "source": "Gleichzeitig muss die Nutzung des Weges durch Anwohnerinnen und Besucher berücksichtigt werden.",
+      "status": "verified",
+      "finding": "Verified reading sentence 4 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-05",
+      "section": "Reading",
+      "source": "Bei der Planung wurden mehrere Gespräche mit der Bevölkerung geführt.",
+      "status": "verified",
+      "finding": "Verified reading sentence 5 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-06",
+      "section": "Reading",
+      "source": "Aufgrund der unterschiedlichen Bedürfnisse wird noch keine endgültige Entscheidung getroffen.",
+      "status": "verified",
+      "finding": "Verified reading sentence 6 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-07",
+      "section": "Reading",
+      "source": "Vor dem Beginn der Arbeiten sollen die Auswirkungen auf Menschen und Natur geprüft und öffentlich erklärt werden.",
+      "status": "verified",
+      "finding": "Verified reading sentence 7 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-08",
+      "section": "Reading",
+      "source": "Die Beispiele in diesem Text sind fiktiv und stellen keinen Plan für einen realen Ort dar.",
+      "status": "verified",
+      "finding": "Verified reading sentence 8 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-READ-01.",
+      "action": "Preserved reading blockquote verbatim in Section 4."
+    },
+    {
+      "id": "b2-11-read-q-01",
+      "section": "Reading Questions",
+      "source": "1. Worüber wird im fiktiven Viertel Flussbogen gesprochen?",
+      "status": "verified",
+      "finding": "Reviewed reading question 1 and expanded its Section 7 model answer with full context (Über die Renaturierung eines Uferabschnitts im fiktiven Viertel Flussbogen).",
+      "action": "Updated answer key in Section 7."
+    },
+    {
+      "id": "b2-11-read-q-02",
+      "section": "Reading Questions",
+      "source": "2. Welche zwei Ziele hat der Vorschlag?",
+      "status": "corrected",
+      "finding": "Corrected Section 7 answer for reading question 2 from the mismatched prepositional phrase 'Um den Schutz eines Lebensraums und einen besseren Zugang zum Fluss' to the direct nominal answer 'Den Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss'.",
+      "action": "Updated answer key in Section 7."
+    },
+    {
+      "id": "b2-11-read-q-03",
+      "section": "Reading Questions",
+      "source": "3. Was könnte durch die Wiederherstellung entstehen?",
+      "status": "refined",
+      "finding": "Reviewed reading question 3 and expanded its Section 7 answer to a full Konjunktiv II sentence matching the text (Durch die Wiederherstellung eines Teils des Ufers könnten neue Rückzugsorte für Pflanzen und Tiere entstehen).",
+      "action": "Updated answer key in Section 7."
+    },
+    {
+      "id": "b2-11-read-q-04",
+      "section": "Reading Questions",
+      "source": "4. Was muss bei der Planung ebenfalls berücksichtigt werden?",
+      "status": "verified",
+      "finding": "Verified reading question 4 and its Section 7 answer (Die Nutzung des Weges durch Anwohnerinnen und Besucher).",
+      "action": "Updated answer key in Section 7."
+    },
+    {
+      "id": "b2-11-read-q-05",
+      "section": "Reading Questions",
+      "source": "5. Warum wurde noch keine endgültige Entscheidung getroffen?",
+      "status": "refined",
+      "finding": "Refined Section 7 answer for reading question 5 to include both Aufgrund and Wegen der unterschiedlichen Bedürfnisse in a complete sentence.",
+      "action": "Updated answer key in Section 7."
+    },
+    {
+      "id": "b2-11-read-q-06",
+      "section": "Reading Questions",
+      "source": "6. Was soll vor dem Beginn der Arbeiten geprüft und erklärt werden?",
+      "status": "refined",
+      "finding": "Expanded Section 7 answer for reading question 6 to a complete passive sentence (Die Auswirkungen auf Menschen und Natur sollen vor dem Beginn der Arbeiten geprüft und öffentlich erklärt werden).",
+      "action": "Updated answer key in Section 7."
+    },
+    {
+      "id": "b2-11-lst-01",
+      "section": "Listening",
+      "source": "Beim Schutz eines Feuchtgebiets müssen die Interessen verschiedener Gruppen abgewogen werden.",
+      "status": "verified",
+      "finding": "Verified listening sentence 1 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim in Section 5."
+    },
+    {
+      "id": "b2-11-lst-02",
+      "section": "Listening",
+      "source": "Durch die Verringerung von Abfällen kann die Belastung der Umgebung sinken.",
+      "status": "verified",
+      "finding": "Verified listening sentence 2 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim in Section 5."
+    },
+    {
+      "id": "b2-11-lst-03",
+      "section": "Listening",
+      "source": "Bei der Wiederherstellung von Wegen soll auch der Zugang für Anwohnerinnen berücksichtigt werden.",
+      "status": "verified",
+      "finding": "Verified listening sentence 3 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim in Section 5."
+    },
+    {
+      "id": "b2-11-lst-04",
+      "section": "Listening",
+      "source": "Die Beteiligung der Bevölkerung hilft dabei, unterschiedliche Bedürfnisse zu erkennen.",
+      "status": "verified",
+      "finding": "Verified listening sentence 4 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim in Section 5."
+    },
+    {
+      "id": "b2-11-lst-05",
+      "section": "Listening",
+      "source": "Ein Vorschlag wird erst nach der Prüfung möglicher Auswirkungen bewertet.",
+      "status": "verified",
+      "finding": "Verified listening sentence 5 grammar, nominal style, and verbatim alignment with DL-B2-11-AUD-LST-01.",
+      "action": "Preserved listening blockquote verbatim in Section 5."
+    },
+    {
+      "id": "b2-11-lst-q-01",
+      "section": "Listening Questions",
+      "source": "1. Was muss beim Schutz des Feuchtgebiets abgewogen werden?",
+      "status": "refined",
+      "finding": "Reviewed listening comprehension question 1 and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated listening answer key in Section 7."
+    },
+    {
+      "id": "b2-11-lst-q-02",
+      "section": "Listening Questions",
+      "source": "2. Was kann durch die Verringerung von Abfällen sinken?",
+      "status": "refined",
+      "finding": "Reviewed listening comprehension question 2 and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated listening answer key in Section 7."
+    },
+    {
+      "id": "b2-11-lst-q-03",
+      "section": "Listening Questions",
+      "source": "3. Was soll bei der Wiederherstellung von Wegen berücksichtigt werden?",
+      "status": "refined",
+      "finding": "Reviewed listening comprehension question 3 and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated listening answer key in Section 7."
+    },
+    {
+      "id": "b2-11-lst-q-04",
+      "section": "Listening Questions",
+      "source": "4. Wobei hilft die Beteiligung der Bevölkerung?",
+      "status": "refined",
+      "finding": "Reviewed listening comprehension question 4 and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated listening answer key in Section 7."
+    },
+    {
+      "id": "b2-11-lst-q-05",
+      "section": "Listening Questions",
+      "source": "5. Wann wird ein Vorschlag bewertet?",
+      "status": "refined",
+      "finding": "Reviewed listening comprehension question 5 and expanded its Section 7 answer to a complete German sentence.",
+      "action": "Updated listening answer key in Section 7."
+    },
+    {
+      "id": "DL-B2-11-T01",
+      "section": "Exercises",
+      "source": "### تمرين 1 — اختر الاسم المناسب (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T01 (5 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 1 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. حماية الطبيعة والأنواع: **der Schutz / die Ausgabe**",
+        "2. إعادة جزء من النهر إلى حالة طبيعية: **die Renaturierung / die Bewerbung**",
+        "3. نتيجة أو أثر لإجراء: **die Auswirkung / die Etappe**",
+        "4. بيئة تعيش فيها أنواع من النبات أو الحيوان: **der Lebensraum / der Umsatz**",
+        "5. موازنة المصالح والخيارات المختلفة قبل القرار: **abwägen / beeinträchtigen**"
+      ]
+    },
+    {
+      "id": "DL-B2-11-T02",
+      "section": "Exercises",
+      "source": "### تمرين 2 — حوّل العبارة الفعلية إلى صياغة اسمية (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T02 (5 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 2 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. **Wenn man Lebensräume schützt, …** → **Beim ______ von Lebensräumen …**",
+        "2. **Indem man den Verbrauch verringert, …** → **Durch die ______ des Verbrauchs …**",
+        "3. **Weil die Ufer wiederhergestellt werden, …** → **Aufgrund der ______ der Ufer …**",
+        "4. **Wenn sich die Bevölkerung beteiligt, …** → **Bei der ______ der Bevölkerung …**",
+        "5. **Nachdem man mögliche Auswirkungen geprüft hat, …** → **Nach der ______ möglicher Auswirkungen …**"
+      ]
+    },
+    {
+      "id": "DL-B2-11-T03",
+      "section": "Exercises",
+      "source": "### تمرين 3 — أكمل بحرف الجر والحالة المناسبين (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T03 (4 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 3 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. ______ Schutz des Lebensraums ist eine sorgfältige Planung wichtig. (**bei / Dativ**)",
+        "2. ______ Verringerung des Verbrauchs können Ressourcen geschont werden. (**durch / Akkusativ**)",
+        "3. ______ Wiederherstellung der Ufer werden neue Rückzugsorte geplant. (**aufgrund / Genitiv**)",
+        "4. ______ Planung wurden mehrere Gespräche mit der Bevölkerung geführt. (**bei / Dativ**)"
+      ]
+    },
+    {
+      "id": "DL-B2-11-T04",
+      "section": "Exercises",
+      "source": "### تمرين 4 — حوّل من الأسلوب الاسمي إلى الفعلي (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T04 (4 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 4 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. **Durch die Verringerung des Abfalls sinkt die Belastung.** → **Indem man ______, sinkt die Belastung.**",
+        "2. **Bei der Beteiligung der Bevölkerung werden verschiedene Ideen gesammelt.** → **Wenn sich die Bevölkerung ______, werden verschiedene Ideen gesammelt.**",
+        "3. **Aufgrund der Wiederherstellung des Ufers entstehen neue Lebensräume.** → **Weil das Ufer ______, entstehen neue Lebensräume.**",
+        "4. **Beim Schutz eines Feuchtgebiets müssen die Interessen verschiedener Gruppen abgewogen werden.** → **Wenn ein Feuchtgebiet ______, müssen die Interessen verschiedener Gruppen abgewogen werden.**"
+      ]
+    },
+    {
+      "id": "DL-B2-11-T05",
+      "section": "Exercises",
+      "source": "### تمرين 5 — فهم القراءة (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T05 (5 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 5 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. يتناول النص مشروعًا رسميًا حقيقيًا في Flussbogen.",
+        "2. من أهداف المقترح حماية موئل صغير وتحسين الوصول إلى النهر.",
+        "3. يجب مراعاة استخدام السكان والزوار للمسار.",
+        "4. اتُخذ القرار النهائي بالفعل.",
+        "5. ينبغي فحص آثار المشروع قبل بدء الأعمال."
+      ]
+    },
+    {
+      "id": "DL-B2-11-T06",
+      "section": "Exercises",
+      "source": "### تمرين 6 — فهم الاستماع (5 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T06 (5 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 6 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. Beim Schutz eines Feuchtgebiets müssen die Interessen verschiedener Gruppen ______ werden.",
+        "2. Durch die Verringerung von Abfällen kann die ______ sinken.",
+        "3. Bei der Wiederherstellung von Wegen soll auch der ______ für Anwohnerinnen berücksichtigt werden.",
+        "4. Die Beteiligung der Bevölkerung hilft dabei, unterschiedliche ______ zu erkennen.",
+        "5. Ein Vorschlag wird erst nach der Prüfung möglicher ______ bewertet."
+      ]
+    },
+    {
+      "id": "DL-B2-11-T07",
+      "section": "Exercises",
+      "source": "### تمرين 7 — اختر الصياغة الأنسب للأسلوب الرسمي (4 items)",
+      "status": "refined",
+      "finding": "Reviewed and refined DL-B2-11-T07 (4 items) with verified Section 7 answer key.",
+      "action": "Updated تمرين 7 and its answer key in Sections 6 and 7.",
+      "items": [
+        "1. **wenn man Lebensräume schützt** / **beim Schutz von Lebensräumen**",
+        "2. **indem man Abfälle verringert** / **durch die Verringerung von Abfällen**",
+        "3. **wenn die Bevölkerung beteiligt wird** / **bei der Beteiligung der Bevölkerung**",
+        "4. **weil die Ufer wiederhergestellt werden** / **aufgrund der Wiederherstellung der Ufer**"
+      ]
+    },
+    {
+      "id": "DL-B2-11-T08",
+      "section": "Exercises",
+      "source": "### تمرين 8 — اكتب أو قدّم فقرة عن إجراء بيئي (Part A P01: 5 items + Part B P02: 5 items = 10 items)",
+      "status": "refined",
+      "finding": "Split T08 into Part A (DL-B2-11-P01, writing-only, 180+ chars, 5 guided points) and Part B (DL-B2-11-P02, writing + speaking aloud, 220+ chars, 5 guided points integrating T05/T06/T07).",
+      "action": "Synchronized T08 in Section 6 with P01/P02 in assessment JSON and Section 8 written models.",
+      "items": [
+        "1. حدّد مكانًا طبيعيًا خياليًا وإجراءً مقترحًا لحمايته (مثل `die Renaturierung eines Uferabschnitts` أو `der Schutz eines kleinen Feuchtgebiets`).",
+        "2. استخدم صيغتين اسميتين على الأقل مع ضبط حرف الجر والحالة الإعرابية والمضاف إليه، مثل `Beim Schutz von Lebensräumen ...` (`bei + Dativ`) أو `Durch die Verringerung des Abfalls ...` (`durch + Akkusativ`) أو `Aufgrund der Wiederherstellung ...` (`aufgrund + Genitiv`).",
+        "3. اذكر احتياجًا إنسانيًا عمليًا ينبغي مراعاته في التخطيط، مثل استخدام الممر أو سهولة الوصول للسكان والزوار (`die Nutzung des Weges` / `der Zugang für Anwohnerinnen und Besucher`).",
+        "4. وضّح كيف تُسهم مشاركة السكان وفحص المقترحات (`Bei der Beteiligung der Bevölkerung` / `nach der Prüfung verschiedener Vorschläge`) في موازنة المصالح المختلفة (`Interessen abwägen`).",
+        "5. اذكر أثرًا بيئيًا محتملًا بصيغة غير جازمة (`könnten neue Rückzugsorte entstehen` / `kann die Belastung sinken`) دون تقديمه كنتيجة مضمونة، مع الاكتفاء بالكتابة في هذا الجزء دون اشتراط الجهر (الحد الأدنى في التطبيق: `180` حرفًا).",
+        "1. اذكر هدفي المقترح الخيالي في حي `Flussbogen` كما وردا في `T05`: حماية موئل صغير وتحسين الوصول إلى النهر (`der Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss`).",
+        "2. وضّح الأثر المحتمل لاستعادة جزء من الضفة بصيغة احتمالية غير جازمة (`Durch die Wiederherstellung eines Teils des Ufers könnten neue Rückzugsorte für Pflanzen und Tiere entstehen`)، وما يذكره نص الاستماع `T06` عن خفض العبء البيئي (`Durch die Verringerung von Abfällen kann die Belastung der Umgebung sinken`).",
+        "3. بيّن ضرورة مراعاة استخدام الطريق وحق الوصول للسكان والزوار أثناء التخطيط واستعادة الممرات (`Bei der Wiederherstellung von Wegen muss die Nutzung des Weges und der Zugang für Anwohnerinnen berücksichtigt werden`).",
+        "4. اشرح سبب عدم اتخاذ قرار نهائي بعد (`Aufgrund der unterschiedlichen Bedürfnisse wird noch keine endgültige Entscheidung getroffen`) ودور مشاركة السكان (`Bei der Beteiligung der Bevölkerung`).",
+        "5. اختم بما يجب فحصه وتوضيحه علنًا قبل بدء الأعمال (`Vor dem Beginn der Arbeiten sollen die Auswirkungen auf Menschen und Natur geprüft und öffentlich erklärt werden`) مع تمييز معلومات النصين عن توقعك الشخصي، ثم اقرأ الإحاطة بصوت مسموع لنفسك دون تسجيل أو إرسال صوت (الحد الأدنى في التطبيق: `220` حرفًا)."
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q01",
+      "section": "Assessment Quiz",
+      "source": "أي مفردة تعني إعادة جزء من ضفة أو نهر إلى حالة أقرب إلى الطبيعة؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T01, correct answerIndex=0, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "die Renaturierung",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 1,
+          "text": "die Verringerung",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "die Beteiligung",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q02",
+      "section": "Assessment Quiz",
+      "source": "أكمل بالاسم المناسب: **Beim ___ von Lebensräumen ist eine sorgfältige Planung wichtig.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T02, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "schützt",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "Schutz",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "geschützt",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q03",
+      "section": "Assessment Quiz",
+      "source": "اختر الاسم الذي يحول الفعل إلى صياغة اسمية: **Bei der ___ der Bevölkerung werden verschiedene Ideen gesammelt.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T02, correct answerIndex=2, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Beteiligte",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "beteiligt",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "Beteiligung",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q04",
+      "section": "Assessment Quiz",
+      "source": "أكمل حرف الجر والحالة: **___ Schutz des Lebensraums ist eine sorgfältige Planung wichtig.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T03, correct answerIndex=0, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Bei dem",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 1,
+          "text": "Bei den",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "Durch dem",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q05",
+      "section": "Assessment Quiz",
+      "source": "أي مجموعة تطابق حروف الجر والحالات الشائعة في T03؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T03, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "bei + Akkusativ؛ durch + Dativ؛ aufgrund + Genitiv",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "bei + Dativ؛ durch + Akkusativ؛ aufgrund + Genitiv",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "bei + Dativ؛ durch + Genitiv؛ aufgrund + Akkusativ",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q06",
+      "section": "Assessment Quiz",
+      "source": "حوّل العبارة الاسمية إلى فعلية مع الحفاظ على السبب والنتيجة: **Durch die Verringerung des Abfalls sinkt die Belastung.**",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T04, correct answerIndex=2, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Weil man die Belastung verringert, sinkt der Abfall.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "Indem man die Belastung verringert, sinkt der Abfall.",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "Indem man den Abfall verringert, sinkt die Belastung.",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q07",
+      "section": "Assessment Quiz",
+      "source": "بحسب قراءة T05، ما الهدفان المذكوران للمقترح في حي Flussbogen الخيالي؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T05, correct answerIndex=0, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "حماية موئل صغير وتحسين الوصول إلى النهر",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 1,
+          "text": "زيادة السياحة وبناء موقف سيارات جديد",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "إزالة المسار وتحويل ضفة النهر إلى منطقة صناعية",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q08",
+      "section": "Assessment Quiz",
+      "source": "لماذا لم يُتخذ قرار نهائي في قراءة T05؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T05, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "لأن المشروع أُلغي قبل عرضه على السكان",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "بسبب اختلاف احتياجات الناس",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "لأن النص يؤكد رفض السكان جميع المقترحات",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q09",
+      "section": "Assessment Quiz",
+      "source": "وفق النص المكتوب في T06، بماذا تساعد مشاركة السكان؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T06, correct answerIndex=2, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "تضمن نجاح كل إجراء بيئي",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "تتيح اتخاذ القرار قبل فحص الآثار",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 2,
+          "text": "تساعد على تعرف الاحتياجات المختلفة",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-Q10",
+      "section": "Assessment Quiz",
+      "source": "أي عبارة أكثر تكثيفًا وملاءمة لتقرير من العبارة الفعلية **Wenn Lebensräume geschützt werden, ...**؟",
+      "status": "refined",
+      "finding": "Verified question prompt, linked task DL-B2-11-T07, correct answerIndex=1, and refined Arabic grammatical/textual explanation.",
+      "action": "Updated explanation in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Weil man Lebensräume schützt, ...",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        },
+        {
+          "index": 1,
+          "text": "Beim Schutz von Lebensräumen ...",
+          "isCorrect": true,
+          "verdict": "correct_option_verified"
+        },
+        {
+          "index": 2,
+          "text": "Während Lebensräume geschützt werden, ...",
+          "isCorrect": false,
+          "verdict": "distractor_verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-P01",
+      "section": "Performance Tasks",
+      "source": "الجزء (أ) — كتابة فقط: اكتب خمس جمل ألمانية على الأقل (5 إلى 6 جمل) عن إجراء خيالي لحماية مكان طبيعي. استخدم صيغتين اسميتين على الأقل، مثل **beim Schutz von Lebensräumen** أو **durch die Verringerung des Abfalls** أو **bei der Beteiligung der Bevölkerung**، مع مراعاة حرف الجر والحالة الإعرابية والمضاف إليه. اذكر أثرًا محتملًا بصيغة غير جازمة واحتياجًا إنسانيًا عمليًا (مثل الوصول أو استخدام الممر) ينبغي مراعاته، ولا تعرض الأثر المتوقع كحقيقة مؤكدة. تُنجز هذه المهمة كتابةً فقط دون اشتراط الجهر أو تسجيل صوت.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-11-P01 modality=['writing'], speakAloud=False, minimumResponseCharacters=180, and sourceTaskIds=['DL-B2-11-T08'] with Section 6 T08 and Section 8 model.",
+      "action": "Updated DL-B2-11-P01 in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل ألمانية على الأقل (5–6 جمل) عن إجراء بيئي خيالي لحماية مكان طبيعي، تتضمن صيغتين اسميتين وتذكر أثرًا محتملًا واحتياجًا إنسانيًا.",
+          "verdict": "verified"
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الإجراء والمكان خياليان؛ يميز المتعلم الأثر المتوقع بصيغة غير جازمة (مثل könnte / kann) من الحقيقة المثبتة، ويذكر مراعاة استخدام المكان واحتياجات الناس.",
+          "verdict": "verified"
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم صياغة اسمية رسمية وموجزة، ويختار حرف الجر والحالة المناسبين (bei + Dativ / durch + Akkusativ / aufgrund + Genitiv) في تركيبين على الأقل.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "DL-B2-11-P02",
+      "section": "Performance Tasks",
+      "source": "الجزء (ب) — كتابة + قراءة بصوت مسموع: استنادًا إلى قراءة T05 والنص المكتوب لتدريب الاستماع T06 والأسلوب الرسمي في T07، اكتب إحاطة ألمانية من خمس إلى ست جمل لسكان الحي الخيالي، أو حضّرها وقدّمها شفهيًا. اذكر هدفي المقترح في Flussbogen وحاجة السكان والزوار إلى الوصول واستخدام الممر، وسبب عدم اتخاذ قرار نهائي بعد، وما ينبغي فحصه وتوضيحه قبل بدء الأعمال. استخدم صيغتين اسميتين على الأقل، واذكر أثرًا محتملًا بصيغة غير جازمة، وميّز ما تقوله النصوص عما تتوقعه أنت؛ فالمكان والإجراء خياليان ولا يضمنان نتيجة بيئية. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "status": "refined",
+      "finding": "Synchronized DL-B2-11-P02 modality=['writing', 'speaking'], speakAloud=True, minimumResponseCharacters=220, and sourceTaskIds=['DL-B2-11-T05', 'DL-B2-11-T06', 'DL-B2-11-T07', 'DL-B2-11-T08'] with Section 6 T08 and Section 8 model.",
+      "action": "Updated DL-B2-11-P02 in b2-11-v2 assessment JSON and fixed source_file path in data/production-task-catalog.csv.",
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "إحاطة من خمس إلى ست جمل ألمانية تتناول هدفي المقترح، واحتياجات الوصول واستخدام الممر، واختلاف الاحتياجات الذي يؤجل القرار، وفحص الآثار قبل العمل، مع صيغتين اسميتين وأثر محتمل.",
+          "verdict": "verified"
+        },
+        {
+          "key": "meaningClarity",
+          "text": "ينسب التفاصيل إلى قراءة T05 أو نص T06 المكتوب، ويميّز المعلومات النصية عن توقعه الشخصي، ولا يقدم الأثر البيئي كنتيجة مضمونة.",
+          "verdict": "verified"
+        },
+        {
+          "key": "targetSkill",
+          "text": "يستخدم الصيغ الاسمية وحروف الجر والحالات المناسبة (bei + Dativ / durch + Akkusativ / aufgrund + Genitiv) في سياق رسمي موجز، ويقرأ الإحاطة بصوت مسموع لنفسه دون تسجيل.",
+          "verdict": "verified"
+        }
+      ]
+    },
+    {
+      "id": "b2-11-p01-model-01",
+      "section": "Written Models",
+      "source": "Section 8 — نموذج الجزء (أ) DL-B2-11-P01 (621 chars, 5 sentences)",
+      "status": "added",
+      "finding": "Added 5-sentence German written model (621 chars >= 180 min) demonstrating a fictional park restoration proposal, three nominal structures (zur Renaturierung, Beim Schutz dieses Lebensraums, Durch die Verringerung des Abfalls, bei der Planung, Bei der Beteiligung der Nachbarschaft), a cautious impact with könnte ... sinken, and a practical access need.",
+      "action": "Added in Section 8.",
+      "items": [
+        "In einem fiktiven Stadtpark am Nordbach wird ein Konzept zur Renaturierung einer kleinen Teichzone diskutiert.",
+        "Beim Schutz dieses Lebensraums sollen empfindliche Uferpflanzen erhalten bleiben, ohne den Rundweg vollständig zu sperren.",
+        "Durch die Verringerung des Abfalls rund um die Sitzbänke könnte die Belastung für Wasservögel und Insekten deutlich sinken.",
+        "Gleichzeitig muss der barrierefreie Zugang für Anwohnerinnen, Familien und ältere Besucher bei der Planung berücksichtigt werden.",
+        "Bei der Beteiligung der Nachbarschaft lassen sich unterschiedliche Bedürfnisse früh erkennen und vor einer Entscheidung fair abwägen."
+      ]
+    },
+    {
+      "id": "b2-11-p02-model-01",
+      "section": "Written Models",
+      "source": "Section 8 — نموذج الجزء (ب) DL-B2-11-P02 (1153 chars, 6 sentences)",
+      "status": "added",
+      "finding": "Added 6-sentence German written and spoken briefing model (1153 chars >= 220 min) synthesizing T05, T06, and T07 with nominal structures, source attribution, human access needs, deferred final decision, pre-work impact examination, and a clearly separated personal expectation.",
+      "action": "Added in Section 8.",
+      "items": [
+        "Laut dem fiktiven Lesetext wird im Viertel Flussbogen über die Renaturierung eines Uferabschnitts gesprochen, wobei der Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss im Mittelpunkt stehen.",
+        "Durch die Wiederherstellung eines Teils des Ufers könnten neue Rückzugsorte für Pflanzen und Tiere entstehen, und laut dem Hörtext kann durch die Verringerung von Abfällen auch die Belastung der Umgebung sinken.",
+        "Gleichzeitig muss bei der Wiederherstellung von Wegen die Nutzung durch Anwohnerinnen und Besucher berücksichtigt werden, damit der Zugang im Alltag erhalten bleibt.",
+        "Bei der Planung hilft die Beteiligung der Bevölkerung dabei, unterschiedliche Bedürfnisse zu erkennen und die Interessen verschiedener Gruppen abzuwägen.",
+        "Aufgrund der unterschiedlichen Bedürfnisse wurde im Text noch keine endgültige Entscheidung getroffen, sondern jeder Vorschlag soll erst nach der Prüfung möglicher Auswirkungen auf Menschen und Natur bewertet und öffentlich erklärt werden.",
+        "Ich vermute, dass eine schrittweise Umsetzung die Akzeptanz im Viertel erhöhen könnte, auch wenn ein ökologischer Erfolg dadurch nicht automatisch garantiert ist."
+      ]
+    },
+    {
+      "id": "b2-11-card-01",
+      "section": "Review Cards",
+      "source": "- **beim Schutz von Lebensräumen** → عند حماية المواطن الطبيعية (`bei + dem = beim + Dativ Singular`؛ واستُعمل `von + Dativ Plural` لأن `Lebensräume` جمع نكرة بلا أداة).",
+      "status": "refined",
+      "finding": "Enhanced review card 1 in Section 9 with explicit preposition + case and Genitiv/von-attribute cues.",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-11-card-02",
+      "section": "Review Cards",
+      "source": "- **durch die Verringerung des Verbrauchs** → من خلال تقليل الاستهلاك (`durch + Akkusativ Singular` مع اسم مشتق بـ`-ung` يتبعه مضاف إليه مذكر مفرد `des Verbrauchs`؛ ويقابل جملة `indem`).",
+      "status": "refined",
+      "finding": "Enhanced review card 2 in Section 9 with explicit preposition + case and Genitiv/von-attribute cues.",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-11-card-03",
+      "section": "Review Cards",
+      "source": "- **aufgrund der Wiederherstellung der Ufer** → بسبب استعادة ضفاف النهر (`aufgrund + Genitiv Singular` للاسم المؤنث `der Wiederherstellung` يتبعه مضاف إليه جمع معرّف `der Ufer`؛ ويقابل جملة `weil`).",
+      "status": "refined",
+      "finding": "Enhanced review card 3 in Section 9 with explicit preposition + case and Genitiv/von-attribute cues.",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "b2-11-card-04",
+      "section": "Review Cards",
+      "source": "- **die Auswirkungen auf Menschen und Natur** → الآثار على الإنسان والطبيعة (الاسم `die Auswirkung` يقترن بحرف الجر `auf + Akkusativ`، ويُفحص قبل تقييم المقترحات البيئية).",
+      "status": "refined",
+      "finding": "Enhanced review card 4 in Section 9 with explicit preposition + case and Genitiv/von-attribute cues.",
+      "action": "Updated in Section 9."
+    },
+    {
+      "id": "DL-B2-11-AUD-PHR-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-11-AUD-PHR-01 (1 clip(s), 16 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (16 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "| der Schutz | — | الحماية |",
+        "| die Artenvielfalt | — | التنوّع الحيوي |",
+        "| die Renaturierung | die Renaturierungen | إعادة الطبيعة إلى حالتها الطبيعية |",
+        "| die Verringerung | die Verringerungen | التقليل |",
+        "| die Wiederherstellung | die Wiederherstellungen | الاستعادة |",
+        "| die Flächennutzung | die Flächennutzungen | استخدام الأراضي |",
+        "| die Auswirkung | die Auswirkungen | الأثر |",
+        "| die Maßnahme | die Maßnahmen | إجراء / تدبير |",
+        "| die Beteiligung | die Beteiligungen | المشاركة |",
+        "| der Lebensraum | die Lebensräume | موئل / بيئة معيشة |",
+        "| der Verbrauch | — | الاستهلاك |",
+        "| schützen | schützt | يحمي |",
+        "| wiederherstellen | stellt wieder her | يستعيد |",
+        "| beeinträchtigen | beeinträchtigt | يضرّ / يؤثر سلبًا في |",
+        "| abwägen | wägt ab | يوازن بين الخيارات |",
+        "| nachhaltig / gemeinsam | — | مستدام / بصورة مشتركة |"
+      ]
+    },
+    {
+      "id": "DL-B2-11-AUD-MODEL-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-11-AUD-MODEL-01 (1 clip(s), 7 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (7 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Beim Schutz von Lebensräumen.",
+        "Durch die Verringerung des Verbrauchs.",
+        "Aufgrund der Wiederherstellung der Ufer.",
+        "Bei der Beteiligung der Bevölkerung.",
+        "planen → das Planen",
+        "schützen → das Schützen",
+        "verringern → die Verringerung"
+      ]
+    },
+    {
+      "id": "DL-B2-11-AUD-DLG-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-11-AUD-DLG-01 (7 clip(s), 7 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (7 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "**Amir:** Was wurde beim Treffen zur Renaturierung des Flusses besprochen?",
+        "**Lea:** Es ging um den Schutz der Ufer und um die Nutzung des öffentlichen Weges.",
+        "**Amir:** Welche Vorteile hat die Wiederherstellung der natürlichen Ufer?",
+        "**Lea:** Sie kann zum Erhalt von Lebensräumen beitragen. Gleichzeitig müssen die Bedürfnisse der Menschen berücksichtigt werden.",
+        "**Amir:** Wie können Anwohnerinnen beteiligt werden?",
+        "**Lea:** Durch regelmäßige Gespräche und durch die gemeinsame Prüfung verschiedener Vorschläge.",
+        "**Amir:** Dann sollten die Auswirkungen jeder Maßnahme verständlich erklärt werden."
+      ]
+    },
+    {
+      "id": "DL-B2-11-AUD-READ-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-11-AUD-READ-01 (1 clip(s), 8 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (8 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Im fiktiven Viertel Flussbogen wird über die Renaturierung eines Uferabschnitts gesprochen.",
+        "Ziel des Vorschlags ist der Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss.",
+        "Durch die Wiederherstellung eines Teils des Ufers könnten neue Rückzugsorte für Pflanzen und Tiere entstehen.",
+        "Gleichzeitig muss die Nutzung des Weges durch Anwohnerinnen und Besucher berücksichtigt werden.",
+        "Bei der Planung wurden mehrere Gespräche mit der Bevölkerung geführt.",
+        "Aufgrund der unterschiedlichen Bedürfnisse wird noch keine endgültige Entscheidung getroffen.",
+        "Vor dem Beginn der Arbeiten sollen die Auswirkungen auf Menschen und Natur geprüft und öffentlich erklärt werden.",
+        "Die Beispiele in diesem Text sind fiktiv und stellen keinen Plan für einen realen Ort dar."
+      ]
+    },
+    {
+      "id": "DL-B2-11-AUD-LST-01",
+      "section": "Audio Assets",
+      "source": "Audio Asset — DL-B2-11-AUD-LST-01 (1 clip(s), 5 items)",
+      "status": "verified_pending_acoustic_review",
+      "finding": "Verified transcript alignment (5 items), voice continuity, MP3 frame integrity, status=generated_pending_acoustic_review, and transcriptPolicy=offer without regenerating MP3 files.",
+      "action": "Preserved audio asset and updated source_line in data/audio-asset-register.csv.",
+      "items": [
+        "Beim Schutz eines Feuchtgebiets müssen die Interessen verschiedener Gruppen abgewogen werden.",
+        "Durch die Verringerung von Abfällen kann die Belastung der Umgebung sinken.",
+        "Bei der Wiederherstellung von Wegen soll auch der Zugang für Anwohnerinnen berücksichtigt werden.",
+        "Die Beteiligung der Bevölkerung hilft dabei, unterschiedliche Bedürfnisse zu erkennen.",
+        "Ein Vorschlag wird erst nach der Prüfung möglicher Auswirkungen bewertet."
+      ]
+    }
+  ]
+}

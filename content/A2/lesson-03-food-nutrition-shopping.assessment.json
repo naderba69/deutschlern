@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-03-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR21: وحدات الكمية و Wie viel/Wie viele و man مقيدة بالسياق؛أزيل غموض الكيلو وفراغات الأفعال واستنتاج القراءة غير المسند.",
+      "P01/T08 أ قائمة أربعة أصناف وسؤال كتابة فقط؛P02/T08 ب أربعة أدوار وتعليق man مع الجهر؛المصدر والنموذجان والمعايير متطابقة.",
+      "التسجيلات محفوظة دون توليد أو استماع جديد؛التفريغ والطول والإقرار لا يثبتون جودة اللغة أو النطق أو فهم الاستماع المستقل."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-03-Q01",
+      "sourceTaskIds": [
+        "DL-A2-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "مفردات الطعام",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **die Rechnung** في المطعم؟",
+      "options": [
+        "الفاتورة",
+        "قائمة الطعام",
+        "المكوّن"
+      ],
+      "answerIndex": 0,
+      "explanation": "die Rechnung تعني الفاتورة."
+    },
+    {
+      "id": "DL-A2-03-Q02",
+      "sourceTaskIds": [
+        "DL-A2-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "Wie viel / Wie viele",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر السؤال المناسب مع Tomaten: ___ Tomaten brauchst du?",
+      "options": [
+        "Wie viel",
+        "Wie viele",
+        "Wie lange"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tomaten اسم معدود جمعًا، لذلك نستخدم Wie viele."
+    },
+    {
+      "id": "DL-A2-03-Q03",
+      "sourceTaskIds": [
+        "DL-A2-03-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "man",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Im Restaurant ___ man zuerst ein Getränk.",
+      "options": [
+        "bestellen",
+        "bestellst",
+        "bestellt"
+      ],
+      "answerIndex": 2,
+      "explanation": "man يعامل مع الفعل بصيغة المفرد الغائب: bestellt."
+    },
+    {
+      "id": "DL-A2-03-Q04",
+      "sourceTaskIds": [
+        "DL-A2-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "وحدات الكمية",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعني «زجاجة ماء»؟",
+      "options": [
+        "ein Kilo Wasser",
+        "eine Flasche Wasser",
+        "eine Packung Wasser"
+      ],
+      "answerIndex": 1,
+      "explanation": "Flasche تعني زجاجة."
+    },
+    {
+      "id": "DL-A2-03-Q05",
+      "sourceTaskIds": [
+        "DL-A2-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "طلب مهذب",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة هي صيغة طلب الطعام المهذبة المدروسة؟",
+      "options": [
+        "Ich hätte gern eine Gemüsesuppe.",
+        "Ich bin eine Gemüsesuppe.",
+        "Ich habe gern eine Gemüsesuppe."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ich hätte gern صيغة طلب مهذبة جاهزة؛Ich habe gern لا يقدم الصيغة المدروسة،و Ich bin يعني «أنا أكون» لا أطلب."
+    },
+    {
+      "id": "DL-A2-03-Q06",
+      "sourceTaskIds": [
+        "DL-A2-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "فهم الحوار",
+        "اختيار محدد"
+      ],
+      "prompt": "ما الذي طلبه الضيف مع الحساء في أول طلب له في الحوار؟",
+      "options": [
+        "إيصال الشراء.",
+        "زجاجة زيت.",
+        "كوب ماء."
+      ],
+      "answerIndex": 2,
+      "explanation": "الضيف طلب eine Suppe und ein Glas Wasser."
+    },
+    {
+      "id": "DL-A2-03-Q07",
+      "sourceTaskIds": [
+        "DL-A2-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "كم حبة خيار اشترت Salma بحسب القراءة؟",
+      "options": [
+        "حبة واحدة.",
+        "حبتين.",
+        "أربع حبات."
+      ],
+      "answerIndex": 1,
+      "explanation": "zwei Gurken تعني حبتين من الخيار،لا «خيارات» بمعنى بدائل."
+    },
+    {
+      "id": "DL-A2-03-Q08",
+      "sourceTaskIds": [
+        "DL-A2-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تشرب العائلة غالبًا مع الطعام؟",
+      "options": [
+        "الماء.",
+        "العصير.",
+        "الحليب."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص أن العائلة تشرب الماء غالبًا."
+    },
+    {
+      "id": "DL-A2-03-Q09",
+      "sourceTaskIds": [
+        "DL-A2-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "الكمية",
+        "اختيار محدد"
+      ],
+      "prompt": "في التعبير **200 Gramm Käse**، ما وحدة كمية الجبن؟",
+      "options": [
+        "Flasche",
+        "Kilo",
+        "Gramm"
+      ],
+      "answerIndex": 2,
+      "explanation": "Gramm تعني غرامًا."
+    },
+    {
+      "id": "DL-A2-03-Q10",
+      "sourceTaskIds": [
+        "DL-A2-03-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "skillTags": [
+        "man للتعميم",
+        "اختيار محدد"
+      ],
+      "prompt": "في جملة **Man isst hier oft Gemüse**، ماذا تعني man؟",
+      "options": [
+        "شخصًا محددًا اسمه Mann.",
+        "المرء أو الناس عمومًا.",
+        "ضمير المخاطب."
+      ],
+      "answerIndex": 1,
+      "explanation": "man فاعل عام، ولا يعني der Mann «الرجل»."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-03-P01",
+      "sourceTaskIds": [
+        "DL-A2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب قائمة شراء خيالية في خمسة أسطر: أربعة أصناف طعام أو شراب مختلفة من الدرس،مع كمية كل صنف؛استعمل مرة واحدة كلًّا من ein Kilo و eine Flasche و eine Packung و 200 Gramm مع اسم مناسب. في السطر الخامس صغ سؤالًا بـ Wie viel أو Wie viele عن كمية أحد الأصناف،بحيث تصلح الكمية المكتوبة في القائمة جوابًا له. هذا تدريب تحويل المعلومة إلى سؤال،لا ادعاء أن الكمية مجهولة لك. كتابة فقط،دون جهر أو تسجيل أو شراء حقيقي.",
+      "criteria": {
+        "taskCompletion": "أربعة أصناف مختلفة بكمياتها،تستعمل وحدات Kilo/Flasche/Packung/Gramm مرة لكل منها،ثم سؤال؛كتابة فقط.",
+        "meaningClarity": "الوحدات مناسبة للأصناف،والسؤال عن أحدها وتصلح الكمية المعطاة جوابًا له.",
+        "targetSkill": "Wie viel لمقدار المادة و Wie viele لعدد الأشياء أو العبوات في السياق؛ein/eine مناسبة لاسم الوحدة و 200 Gramm في صيغة القياس."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-03-P02",
+      "sourceTaskIds": [
+        "DL-A2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربعة أدوار متناوبة لضيف ونادلة في مطعم خيالي،ثم جملة تعليق منفصلة: الدور 1 يطلب حساء خضار وكأس ماء بـ Ich hätte gern؛الدور 2 يؤكد الطلب برد قصير؛الدور 3 يسأل Ist die Suppe vegetarisch?؛الدور 4 يجيب بالإيجاب بصيغة Ja, sie ist vegetarisch. بعد الحوار اكتب تعليقًا عامًا يوافقه ويبدأ Man kann عن إمكان أكل طعام نباتي هنا. اقرأ الأدوار الأربعة والتعليق بصوت مرتفع،ويمكنك أداء الطرفين منفردًا. التعليق ليس دورًا خامسًا للنادلة؛لا تسجيل أو شريك أو ادعاء بمكونات مطعم حقيقي مطلوب.",
+      "criteria": {
+        "taskCompletion": "أربعة أدوار:طلب طبق ومشروب،تأكيد،سؤال عن وصف الحساء،وجواب؛ثم تعليق man منفصل. قرأت الجميع جهرًا.",
+        "meaningClarity": "الحساء والماء والجواب متسقة،والتعليق يصف المطعم الخيالي نفسه دون تعميم على كل المطاعم.",
+        "targetSkill": "Ich hätte gern،وسؤال Ist die Suppe…،و man kann مع مصدر essen في النهاية؛لا تصريف جمع مع man."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

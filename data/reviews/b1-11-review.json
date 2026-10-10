@@ -1,0 +1,2050 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-11-history-politics-passive-past",
+  "reviewDate": "2026-10-09",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-11-v2",
+  "unitCount": 99,
+  "exerciseSubItemCount": 42,
+  "modelPartCount": 9,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "PASSIVE",
+      "title": "Lingolia — Das Passiv in der deutschen Grammatik",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/passiv",
+      "scope": "werden في Präteritum يصبح wurde/wurden مع Partizip II، ويتحول مفعول Akkusativ في الأفعال المتعدية المعتادة إلى فاعل نحوي، ويذكر المنفذ بـvon + Dativ، كما يشرح المجهول غير الشخصي والفرق عن Zustandspassiv بـsein + Partizip II.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "PART",
+      "title": "Lingolia — Partizip I und II in der deutschen Grammatik",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/partizipien",
+      "scope": "قواعد بناء Partizip II بـge-...-t/-en، و-et بعد d/t، وحذف ge- مع -ieren والسوابق غير المنفصلة، ووضع ge- بعد السابقة المنفصلة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "MAIN",
+      "title": "Lingolia — Positive Aussagesätze in der deutschen Grammatik",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/hauptsaetze",
+      "scope": "في الجمل الرئيسية الخبرية يقع الفعل المصرف في الموضع الثاني وتأتي الصيغة غير المصرفة كـPartizip II في نهاية الإطار الفعلي، مع إمكان تقدم ظرف الزمان أو المكان في الموضع الأول.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WERDEN",
+      "title": "Duden — werden (Vollverb)",
+      "url": "https://www.duden.de/rechtschreibung/werden_Vollverb",
+      "scope": "استعمال werden فعلًا تامًا بمعنى التحول إلى حالة أو اكتساب صفة مثل wurde schlechter/größer، مع الإحالة إلى werden فعلًا مساعدًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1,
+      "searchResultId": 1
+    },
+    {
+      "id": "STADTRAT",
+      "title": "Duden — Stadtrat",
+      "url": "https://www.duden.de/rechtschreibung/Stadtrat",
+      "scope": "اسم مذكر جمعُه die Stadträte؛ يدل على هيئة تمثيل البلدية/مجلس المدينة، وقد يدل في سياق آخر على عضو المجلس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MEHRHEIT",
+      "title": "Duden — Mehrheit",
+      "url": "https://www.duden.de/rechtschreibung/Mehrheit",
+      "scope": "اسم مؤنث جمعُه die Mehrheiten؛ يدل على الجزء الأكبر من الأصوات أو الأشخاص، وليس مرادفًا للإجماع، ويختلف نوع الأغلبية بحسب السياق القانوني.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "BESCHLIESSEN",
+      "title": "Duden — beschließen",
+      "url": "https://www.duden.de/rechtschreibung/beschlieszen",
+      "scope": "فعل قوي تصريفه beschließt، beschloss، hat beschlossen؛ يدل على اتخاذ قرار أو التصويت عليه، وله معنى آخر هو الإنهاء/الختم خارج سياق الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "DENKMAL",
+      "title": "Duden — Denkmal",
+      "url": "https://www.duden.de/rechtschreibung/Denkmal",
+      "scope": "اسم محايد جمعُه الشائع die Denkmäler والجمع الفصيح Denkmale؛ يدل على نصب تذكاري أو أثر شاهد على حقبة سابقة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ABSTIMMEN",
+      "title": "Duden — abstimmen",
+      "url": "https://www.duden.de/rechtschreibung/abstimmen",
+      "scope": "فعل ضعيف منفصل stimmt ab، stimmte ab، hat abgestimmt؛ يدل على التصويت über etwas، وله معانٍ أخرى كالمواءمة والتنسيق خارج سياق الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "EREIGNIS",
+      "title": "Duden — Ereignis",
+      "url": "https://www.duden.de/rechtschreibung/Ereignis",
+      "scope": "اسم محايد جمعُه die Ereignisse؛ يدل على حدث بارز أو واقعة، ويرتبط كثيرًا بالصفة historisch.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-09",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة خطّ زمني، استماع اختياري، قواعد، مفردات مدنية، كتابة وجهر",
+      "finding": "المدة مقترحة قابلة للتقسيم؛ الاستماع المسجل اختياري، والجهر مطلوب في P02 فقط بينما P01 كتابة فقط.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أسرد أحداثًا تاريخية أو مدنية بصيغة المبني للمجهول في الماضي.",
+      "finding": "الهدف سرد أحداث ماضية بصيغة Vorgangspassiv في Präteritum؛ لا يمنح الاختبار شهادة B1 أو توثيقًا تاريخيًا.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "> **ملاحظة:** المدينة والأحداث في هذه الوحدة خيالية، والأمثلة لغوية محايدة لا تتناول حزبًا أو موقفًا سياسيًا حقيقيًا.",
+      "finding": "المدينة والوقائع خيالية ومحايدة؛ لا تمثل حزبًا أو مدينة أو واقعة سياسية حقيقية.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-04",
+      "text": "تنبيه مفردات: Stadtrat هنا مجلس المدينة، وقد يدل على عضو المجلس في سياق آخر. Mehrheit أغلبية وليست إجماعًا، ولا تحدد الكلمة وحدها نسبة التصويت أو القاعدة القانونية. Denkmäler جمع شائع، وDenkmale جمع فصيح موجود أيضًا. هذه توضيحات مكتوبة لا تغييرات في التسجيل.",
+      "finding": "وُضح أن Stadtrat هيئة مفردة نحويًا هنا، وأن Mehrheit ليست إجماعًا، وأن Denkmäler هو الجمع الشائع مع وجود Denkmale فصيحًا.",
+      "sourceIds": [
+        "STADTRAT",
+        "MEHRHEIT",
+        "DENKMAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "نستخدم المبني للمجهول في **Präteritum** لسرد حدث ماضٍ عندما نركّز على ما حدث، لا على من قام به. نصرّف **werden** في Präteritum ونطابقه مع الفاعل النحوي إن وجد؛ في الجمل الرئيسية البسيطة المدروسة يشكل Partizip II نهاية الإطار الفعلي. لا ننقل هذا الترتيب حرفيًا إلى كل جملة تابعة.",
+      "finding": "قُيّدت القاعدة بمطابقة الفاعل النحوي إن وجد وبنهاية الإطار الفعلي في الجمل الرئيسية البسيطة، دون تعميمها على الجمل التابعة.",
+      "sourceIds": [
+        "PASSIVE",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "| غائب مفرد: das Museum / die Brücke | wurde | · | غائب جمع: die Museen / die Brücken | wurden |",
+      "finding": "قُيّد الجدول بالغائب المفرد والجمع حتى لا يُتوهم أن du تأخذ wurde؛ التصريف الكامل موضح في المساعدة.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "قارن بين **wurde + Partizip II** للمبني للمجهول، و**wurde** وحدها بمعنى «أصبح»: **Das Dorf wurde größer.** — أصبحت القرية أكبر.",
+      "finding": "المقارنة تفصل حدث المبني للمجهول wurde eröffnet عن الفعل التام wurde größer بمعنى أصبح أكبر.",
+      "sourceIds": [
+        "PASSIVE",
+        "WERDEN"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Epoche | die Epochen | حقبة |",
+      "finding": "Epoche مؤنث وجمعها Epochen؛ حقبة زمنية، ولا تحدد وحدها قرونًا معينة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| das Ereignis | die Ereignisse | حدث |",
+      "finding": "Ereignis محايد وجمعه Ereignisse؛ حدث أو واقعة، وليس بالضرورة حدثًا سياسيًا.",
+      "sourceIds": [
+        "EREIGNIS"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Gemeinde | die Gemeinden | بلدة / بلدية |",
+      "finding": "Gemeinde مؤنث وجمعها Gemeinden؛ بلدة أو بلدية هنا، ولها في الألمانية معانٍ دينية أخرى خارج سياق الدرس.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Verfassung | die Verfassungen | دستور |",
+      "finding": "Verfassung مؤنث وجمعها Verfassungen؛ دستور بالمعنى المدني هنا، ولها معنى الحالة الجسدية/النفسية بلا جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Stadtrat | die Stadträte | مجلس المدينة |",
+      "finding": "Stadtrat مذكر وجمعه Stadträte بأوملاوت؛ مجلس المدينة هنا، وقد يدل على عضو المجلس.",
+      "sourceIds": [
+        "STADTRAT"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| der Beschluss | die Beschlüsse | قرار |",
+      "finding": "Beschluss مذكر وجمعه Beschlüsse بأوملاوت؛ قرار رسمي، ويرتبط بالفعل fassen أو beschließen.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| die Abstimmung | die Abstimmungen | تصويت |",
+      "finding": "Abstimmung مؤنث وجمعها Abstimmungen؛ تصويت هنا، ولها معنى التنسيق والمواءمة في سياقات أخرى.",
+      "sourceIds": [
+        "ABSTIMMEN"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| die Mehrheit | die Mehrheiten | أغلبية |",
+      "finding": "Mehrheit مؤنث وجمعها Mehrheiten؛ أغلبية الأصوات أو المجموعة، وليست إجماعًا.",
+      "sourceIds": [
+        "MEHRHEIT"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| die Bürgerin / der Bürger | die Bürgerinnen / die Bürger | مواطنة / مواطن |",
+      "finding": "Bürgerin مؤنث وجمعها Bürgerinnen، وBürger مذكر وجمعه Bürger؛ صيغتا المواطنة والمواطن.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| das Denkmal | die Denkmäler | نصب تذكاري |",
+      "finding": "Denkmal محايد وجمعه الشائع Denkmäler؛ نصب تذكاري أو معلم تاريخي.",
+      "sourceIds": [
+        "DENKMAL"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| die Zeitleiste | die Zeitleisten | خطّ زمني |",
+      "finding": "Zeitleiste مؤنث وجمعها Zeitleisten؛ خط زمني يرتب الأحداث.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| wählen | wählt | ينتخب |",
+      "finding": "wählen حاضرُه مع المفرد الغائب wählt وPartizip II gewählt؛ ينتخب أو يختار.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| beschließen | beschließt | يقرّر / يعتمد |",
+      "finding": "beschließen فعل قوي حاضرُه beschließt وماضيه beschloss وPartizip II beschlossen؛ يقرر أو يعتمد.",
+      "sourceIds": [
+        "BESCHLIESSEN"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| gründen | gründet | يؤسّس |",
+      "finding": "gründen حاضرُه gründet مع -e- بعد d وPartizip II gegründet؛ يؤسس.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| einführen | führt ein | يطبّق / يستحدث |",
+      "finding": "einführen فعل منفصل حاضرُه führt ein وPartizip II eingeführt؛ يطبق أو يستحدث.",
+      "sourceIds": [
+        "PART"
+      ]
+    },
+    {
+      "id": "vocab-16",
+      "text": "| historisch / demokratisch | — | تاريخيّ / ديمقراطيّ |",
+      "finding": "historisch تاريخي وdemokratisch ديمقراطي؛ صفتان بلا جمع معجمي هنا، وتستعملان في أمثلة محايدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Das Museum wurde 1985 eröffnet.",
+      "finding": "Das Museum فاعل نحوي مفرد، فجاءت wurde ثم الظرف الزمني 1985 وPartizip II eröffnet في النهاية.",
+      "sourceIds": [
+        "PASSIVE",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Die Brücken wurden renoviert.",
+      "finding": "Die Brücken فاعل نحوي جمع، فجاءت wurden وPartizip II renoviert دون ge- لأنه ينتهي بـ-ieren.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Der Beschluss wurde vom Stadtrat gefasst.",
+      "finding": "Der Beschluss فاعل نحوي مفرد، وذكر المنفذ بـvom Stadtrat أي von dem Stadtrat في Dativ، وgefasst في النهاية.",
+      "sourceIds": [
+        "PASSIVE",
+        "STADTRAT"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Das Dorf wurde größer.",
+      "finding": "Das Dorf wurde größer جملة معلوم بفعل تام بمعنى أصبح، وليست مبنيًا للمجهول لأن größer صفة مقارنة لا Partizip II.",
+      "sourceIds": [
+        "WERDEN",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **التحويل والمطابقة:** في أمثلة T03 يصبح مفعول Akkusativ في المعلوم فاعلًا نحويًا Nominativ في المجهول؛ نطابق المساعد معه لا مع المنفذ بعد von. Die Jugendvertretung مفرد ولو كان المؤسسون جمعًا. Der Stadtrat اسم مفرد لجماعة، وليس جمعًا نحويًا لمجرد تعدد أعضائه. لا نطبق تحويل المفعول على كل فعل ألماني بلا قيد.",
+      "finding": "تحويل مفعول المعلوم إلى فاعل المجهول مقيد بالأفعال المتعدية المعتادة، والمطابقة مع الفاعل النحوي لا مع المنفذ بعد von.",
+      "sourceIds": [
+        "PASSIVE",
+        "STADTRAT"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **تصريف المساعد:** جدول الدرس للغائب المفرد والجمع. التصريف الكامل: ich wurde، du wurdest، er/sie/es wurde، wir wurden، ihr wurdet، sie/Sie wurden. فلا تعني عبارة مفرد أن du تأخذ wurde. نميز wurden الماضي عن werden الحاضر في Q01، وwurde عن würde ذات الأوملاوت، وهي ليست صيغة الماضي المطلوبة.",
+      "finding": "التصريف الكامل لـwerden في Präteritum يمنع تعميم wurde على du وihr، ويميز wurden عن werden وwürde.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **تشكيل Partizip II:** bauen → gebaut، wählen → gewählt، gründen → gegründet، beschließen → beschlossen، eröffnen → eröffnet، renovieren → renoviert، einführen → eingeführt. لا نضيف ge مع البادئة غير المنفصلة be-/er- أو مع -ieren، وتدخل ge بعد البادئة المنفصلة في eingeführt. gegründet فيها -et؛ beschloss ماضٍ مصرف لا Partizip II. ليست كل صيغة تبدأ بـge مبنيًا للمجهول بمفردها.",
+      "finding": "الأمثلة السبعة تغطي gebaut/gewählt/gegründet/beschlossen/eröffnet/renoviert/eingeführt وتمنع مساواة كل ge- بالمجهول.",
+      "sourceIds": [
+        "PART",
+        "BESCHLIESSEN"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الموقع لا الكلمة الثانية:** في Im Jahr 1974 wurde die alte Brücke gebaut، عبارة الزمن وحدة أولى ثم wurde ثم الفاعل، وgebaut نهاية الإطار. في Wann wurde … eröffnet? أداة السؤال أولًا، وفي Wurden die Fotos … gesammelt? يبدأ السؤال بالمصرف. مثال تابع للمقارنة: **Mira weiß, dass das Kulturhaus 1985 eröffnet wurde.** هنا المصرف بعد Partizip II داخل التابعة، لا قبلها.",
+      "finding": "الفعل المصرف في الموضع الثاني للجملة الرئيسية حتى مع تقدم الزمن، ويتأخر إلى آخر الجملة التابعة في مثال dass ... eröffnet wurde.",
+      "sourceIds": [
+        "MAIN",
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **المنفذ والحالة:** von + Dativ: vom = von dem، von den Bewohnern، von einer örtlichen Werkstatt. Bewohnern جمع Dativ مع -n، وörtlichen نعت بعد einer في هذا السياق. أما durch die Ausstellung في الاستماع فمسار الجولة عبر المعرض، لا اسم منفذ؛ لا نعمم أن كل durch في المبني للمجهول تعني السبب أو الوسيلة.",
+      "finding": "von + Dativ للمنفذ في أمثلة الدرس، أما durch die Ausstellung فمسار مكاني عبر المعرض لا سبب أو وسيلة.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **مجهول بلا فاعل اسمي:** **Danach wurde in einer Sitzung über den Vorschlag abgestimmt.** مبني للمجهول غير شخصي؛ über den Vorschlag جار ومجرور متعلق بموضوع التصويت، لا فاعل ولا مفعول مباشر يتحول إلى فاعل. نستخدم wurde هنا دون فاعل اسمي. قارن **Eine Mehrheit stimmte dafür.**: معلوم، وstimmte يطابق Mehrheit المفردة في هذا النص؛ لا يعني وجود المعنى المدني أن الجملة مجهولة.",
+      "finding": "wurde ... über den Vorschlag abgestimmt مجهول غير شخصي بلا فاعل اسمي، بينما Eine Mehrheit stimmte dafür معلوم.",
+      "sourceIds": [
+        "PASSIVE",
+        "ABSTIMMEN",
+        "MEHRHEIT"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **حدث أم تغيّر أم حالة:** Das Museum wurde eröffnet حدث افتتاح بالمجهول؛ Das Dorf wurde größer تغيّر بمعنى أصبح أكبر وgrößer صفة مقارنة، لا Partizip II. ولتمييز الحالة: **Das Museum war geöffnet.** تصف حالة كونه مفتوحًا في السياق المقصود؛ ليست صيغة حدث الافتتاح المطلوبة في مهمات هذا الدرس. الأمثلة السياسية الخيالية ليست مواقف سياسية أو وقائع تاريخية موثقة.",
+      "finding": "تمييز حدث Vorgangspassiv (wurde eröffnet) عن تغير الصفة (wurde größer) وعن حالة Zustandspassiv (war geöffnet).",
+      "sourceIds": [
+        "PASSIVE",
+        "WERDEN"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **حدود الزمن والقصص:** في القراءة الجسر1974 والأرشيف1985 وممثلية الشباب2004؛ في الحوار Kulturhaus عام1985 وJugendrat عام2004. تشابه السنوات لا يجعل المباني أو المؤسسات متطابقة. في القراءة نقصد بـZwei Jahre später عامين بعد2018، أي2020؛ هذا توضيح لإحالة النص لا تاريخ خارجي. معرض الاستماع2021 مستقل، ولا يحدد النص تاريخ بناء النموذج أو كل نشاط آخر.",
+      "finding": "فصل سنوات وقائع الحوار عن خط القراءة ومعرض الاستماع، وتوضيح أن Zwei Jahre später بعد 2018 تعني 2020 داخل النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "- **لا تضف معلومات:** المناقشة ثم التصويت ثم موافقة أغلبية ليست أعداد أصوات أو إجماعًا أو دليلًا على قانون بلد حقيقي. الصور من السكان في الاستماع لا تحدد هوية كل مصور، ولا يجوز نقل فعل التبرع gespendet من الحوار إلى كل صور المعرض. افتتاح معرض عن الجسر لا يعني أن الجسر نفسه بُني عام2021. في T06.4 كلمة einem موجودة، فاكتب Gästebuch وحدها.",
+      "finding": "منع استنتاج أعداد الأصوات أو الإجماع أو تعميم gespendet على صور المعرض، وتنبيه المتعلم إلى عدم تكرار einem في T06.4.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-10",
+      "text": "- **دليل فردي مستقل عن الصوت:** P01 أربع جمل خط زمني كتابة فقط؛ P02 خمس جمل عن المعرض كتابة ثم جهر بالنفس، دون شريك أو تسجيل. ثلاثة إقرارات وحد أدنى100/125 حرفًا لا تصحح عدد الجمل أو القواعد أو النطق آليًا. التسجيلات المتاحة تبقى معلقة دون توليد أو استماع أو اعتماد جديد؛ يمكن الإجابة من النص المكتوب.",
+      "finding": "تحديد P01 كتابة فقط وP02 كتابة وجهر بالنفس، وبيان حدود التحقق المحلي واستقلال التقييم عن ملفات الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wann wurde das alte Kulturhaus eröffnet?",
+      "finding": "Mira تسأل عن سنة افتتاح Kulturhaus القديم؛ das alte Kulturhaus فاعل نحوي مفرد وeröffnet في النهاية.",
+      "sourceIds": [
+        "PASSIVE",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Es wurde 1985 eröffnet. Damals wurde dort eine kleine Ausstellung gezeigt.",
+      "finding": "أمينة الأرشيف تجيب بـ1985 وتضيف أنه عُرضت هناك آنذاك معرض صغير؛ eine kleine Ausstellung فاعل مفرد لـwurde ... gezeigt.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Wurden die Fotos auch im Stadtarchiv gesammelt?",
+      "finding": "سؤال نعم/لا في المجهول يبدأ بـWurden لأن die Fotos جمع؛ يسأل عن جمع الصور في أرشيف المدينة.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ja. Viele Bilder wurden von Einwohnerinnen und Einwohnern gespendet.",
+      "finding": "تأكيد مع ذكر المتبرعين بـvon Einwohnerinnen und Einwohnern في Dativ جمع؛ gespendet تخص صور الحوار لا بالضرورة كل صور الاستماع.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Und wann wurde der Jugendrat gegründet?",
+      "finding": "سؤال عن سنة تأسيس Jugendrat المفرد؛ لا يطابق هذا المجلس تلقائيًا Jugendvertretung في نص القراءة رغم اشتراك سنة 2004.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "2004. Die wichtigsten Daten wurden auf einer Zeitleiste zusammengestellt.",
+      "finding": "الجواب 2004، ثم wurden ... zusammengestellt لأن die wichtigsten Daten جمع؛ zusammengestellt بادئة منفصلة.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Die folgende Zeitleiste gehört zur fiktiven Gemeinde Sonnenfeld.",
+      "finding": "افتتاحية معلوم تربط الخط الزمني ببلدة Sonnenfeld الخيالية صراحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Im Jahr 1974 wurde die alte Brücke über den Fluss gebaut.",
+      "finding": "تقدم الظرف الزمني Im Jahr 1974 ثم wurde والفاعل المفرد die alte Brücke über den Fluss وgebaut في النهاية.",
+      "sourceIds": [
+        "PASSIVE",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "1985 wurde ein kleines Gemeindearchiv eröffnet.",
+      "finding": "عام 1985 افتُتح أرشيف بلدي صغير؛ ein kleines Gemeindearchiv مفرد مع wurde ... eröffnet.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "1996 wurde der Stadtrat neu gewählt.",
+      "finding": "عام 1996 انتُخب مجلس المدينة من جديد؛ der Stadtrat مفرد نحويًا فجاءت wurde ... gewählt.",
+      "sourceIds": [
+        "PASSIVE",
+        "STADTRAT"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Eine Jugendvertretung wurde 2004 gegründet.",
+      "finding": "تأسست ممثلية للشباب عام 2004؛ Eine Jugendvertretung مفرد مع wurde ... gegründet.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Im Jahr 2018 wurde ein Vorschlag zur Neugestaltung des Marktplatzes öffentlich diskutiert.",
+      "finding": "عام 2018 نوقش اقتراح لإعادة تصميم ساحة السوق علنًا؛ ein Vorschlag مفرد وdiskutiert بلا ge-.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Danach wurde in einer Sitzung über den Vorschlag abgestimmt.",
+      "finding": "بعد ذلك صُوّت في جلسة على الاقتراح؛ مجهول غير شخصي بلا فاعل اسمي، وüber den Vorschlag جار ومجرور مع Akkusativ.",
+      "sourceIds": [
+        "PASSIVE",
+        "ABSTIMMEN"
+      ]
+    },
+    {
+      "id": "reading-08",
+      "text": "Eine Mehrheit stimmte dafür.",
+      "finding": "أغلبية صوتت لصالح الاقتراح؛ جملة معلوم ماضية stimmte dafür وليست مبنيًا للمجهول.",
+      "sourceIds": [
+        "MEHRHEIT"
+      ]
+    },
+    {
+      "id": "reading-09",
+      "text": "Zwei Jahre später wurde der neue Platz eröffnet.",
+      "finding": "بعد عامين افتُتحت الساحة الجديدة؛ الإحالة الزمنية تتبع 2018 فتدل على 2020 داخل تسلسل النص.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Zu welcher Gemeinde gehört die Zeitleiste?",
+      "finding": "Zur fiktiven Gemeinde Sonnenfeld. — ينسب النص الخط الزمني صراحة إلى بلدة Sonnenfeld الخيالية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Was wurde 1974 gebaut?",
+      "finding": "Die alte Brücke über den Fluss. — الذي بُني عام 1974 هو الجسر القديم فوق النهر، لا الأرشيف.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was wurde 1985 eröffnet?",
+      "finding": "Ein kleines Gemeindearchiv. — الذي افتُتح عام 1985 في هذا النص هو أرشيف بلدي صغير.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wann wurde die Jugendvertretung gegründet?",
+      "finding": "Im Jahr 2004. — تأسست ممثلية الشباب عام 2004 بحسب الجملة الخامسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Worüber wurde 2018 diskutiert?",
+      "finding": "Über einen Vorschlag zur Neugestaltung des Marktplatzes. — موضوع النقاش العلني عام 2018 هو اقتراح إعادة تصميم ساحة السوق.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-06",
+      "text": "Wann wurde der neue Platz eröffnet?",
+      "finding": "Im Jahr 2020. — افتُتحت الساحة بعد عامين من نقاش 2018 والتصويت اللاحق له، أي عام 2020 بحسب تسلسل النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet.",
+      "finding": "افتُتح عام 2021 في متحف Sonnenfeld معرض عن الجسر القديم؛ التاريخ للمعرض لا لبناء الجسر.",
+      "sourceIds": [
+        "PASSIVE",
+        "MAIN"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Für die Ausstellung wurden Fotos von Einwohnern gesammelt.",
+      "finding": "جُمعت صور للمعرض من السكان؛ Fotos جمع مع wurden ... gesammelt، وvon Einwohnern في Dativ جمع.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.",
+      "finding": "بُني نموذج للجسر بواسطة ورشة محلية؛ Ein Modell مفرد وvon einer örtlichen Werkstatt يذكر المنفذ بـDativ.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "In einem Gästebuch wurden Erinnerungen an die Brücke notiert.",
+      "finding": "دُوّنت ذكريات عن الجسر في دفتر زوار؛ Erinnerungen جمع فجاءت wurden ... notiert.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Viele Schulklassen wurden durch die Ausstellung geführt.",
+      "finding": "قيدت صفوف مدرسية كثيرة عبر المعرض؛ Viele Schulklassen جمع، وdurch die Ausstellung مسار الجولة لا المنفذ.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wann wurde die Ausstellung eröffnet?",
+      "finding": "2021. — سنة افتتاح المعرض في النص هي 2021.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wozu wurden Fotos gesammelt?",
+      "finding": "Für die Ausstellung. — الغرض المذكور لجمع الصور هو للمعرض Für die Ausstellung.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Wer baute das Modell der Brücke?",
+      "finding": "Eine örtliche Werkstatt. — السؤال بصيغة المعلوم Wer baute يستخرج المنفذ المذكور بعد von في النص: ورشة محلية.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was wurde in das Gästebuch geschrieben?",
+      "finding": "Erinnerungen an die Brücke. — المكتوب في دفتر الزوار هو ذكريات عن الجسر.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Wer wurde durch die Ausstellung geführt?",
+      "finding": "Viele Schulklassen. — الذين اصطحبوا في الجولة عبر المعرض هم صفوف مدرسية كثيرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B1-11-T01",
+      "text": "1. Das Gemeindearchiv ______ 1985 eröffnet.\n2. Die alten Brücken ______ renoviert.\n3. Der Beschluss ______ in einer Sitzung gefasst.\n4. Die Bürgerinnen und Bürger ______ zur Versammlung eingeladen.",
+      "finding": "أربع جمل تدرب مطابقة wurde/wurden مع الفاعل النحوي المفرد والجمع.",
+      "sourceIds": [
+        "PASSIVE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Das Gemeindearchiv ______ 1985 eröffnet.",
+          "answer": "wurde",
+          "finding": "Das Gemeindearchiv مفرد محايد فيأخذ wurde."
+        },
+        {
+          "index": 2,
+          "text": "Die alten Brücken ______ renoviert.",
+          "answer": "wurden",
+          "finding": "Die alten Brücken جمع فيأخذ wurden."
+        },
+        {
+          "index": 3,
+          "text": "Der Beschluss ______ in einer Sitzung gefasst.",
+          "answer": "wurde",
+          "finding": "Der Beschluss مفرد مذكر فيأخذ wurde."
+        },
+        {
+          "index": 4,
+          "text": "Die Bürgerinnen und Bürger ______ zur Versammlung eingeladen.",
+          "answer": "wurden",
+          "finding": "Die Bürgerinnen und Bürger فاعل جمع معطوف فيأخذ wurden."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T02",
+      "text": "1. bauen → ______\n2. wählen → ______\n3. gründen → ______\n4. beschließen → ______\n5. renovieren → ______\n6. einführen → ______\n7. eröffnen → ______",
+      "finding": "سبعة أفعال تغطي صيغ Partizip II القياسية والقوية والمنفصلة وغير المنفصلة و-ieren.",
+      "sourceIds": [
+        "PART",
+        "BESCHLIESSEN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "bauen → ______",
+          "answer": "gebaut",
+          "finding": "bauen فعل ضعيف: ge- + bau + -t → gebaut."
+        },
+        {
+          "index": 2,
+          "text": "wählen → ______",
+          "answer": "gewählt",
+          "finding": "wählen فعل ضعيف: ge- + wähl + -t → gewählt."
+        },
+        {
+          "index": 3,
+          "text": "gründen → ______",
+          "answer": "gegründet",
+          "finding": "gründen ينتهي جذره بـd فيأخذ -et: gegründet."
+        },
+        {
+          "index": 4,
+          "text": "beschließen → ______",
+          "answer": "beschlossen",
+          "finding": "beschließen فعل قوي ببادئة غير منفصلة be-: beschlossen بلا ge-."
+        },
+        {
+          "index": 5,
+          "text": "renovieren → ______",
+          "answer": "renoviert",
+          "finding": "renovieren ينتهي بـ-ieren فلا يأخذ ge-: renoviert."
+        },
+        {
+          "index": 6,
+          "text": "einführen → ______",
+          "answer": "eingeführt",
+          "finding": "einführen فعل منفصل تدخل فيه ge- بعد البادئة: eingeführt."
+        },
+        {
+          "index": 7,
+          "text": "eröffnen → ______",
+          "answer": "eröffnet",
+          "finding": "eröffnen يبدأ ببادئة غير منفصلة er- وينتهي جذره بـn: eröffnet بلا ge-."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T03",
+      "text": "1. **Die Gemeinde eröffnete die Bibliothek im Jahr 1985.** → Die Bibliothek ______ im Jahr 1985 ______.\n2. **Die Bewohner gründeten die Jugendvertretung.** → Die Jugendvertretung ______ von den Bewohnern ______.\n3. **Der Stadtrat beschloss die Umgestaltung des Platzes.** → Die Umgestaltung des Platzes ______ vom Stadtrat ______.",
+      "finding": "ثلاث تحويلات من المعلوم إلى المجهول مع مطابقة الفاعل الجديد وذكر المنفذ بـvon + Dativ.",
+      "sourceIds": [
+        "PASSIVE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Die Gemeinde eröffnete die Bibliothek im Jahr 1985.** → Die Bibliothek ______ im Jahr 1985 ______.",
+          "answer": "Die Bibliothek wurde im Jahr 1985 eröffnet.",
+          "finding": "Die Bibliothek تصبح الفاعل المفرد مع wurde، ويبقى الظرف الزمني ثم eröffnet في النهاية."
+        },
+        {
+          "index": 2,
+          "text": "**Die Bewohner gründeten die Jugendvertretung.** → Die Jugendvertretung ______ von den Bewohnern ______.",
+          "answer": "Die Jugendvertretung wurde von den Bewohnern gegründet.",
+          "finding": "Die Jugendvertretung فاعل مفرد مع wurde رغم أن von den Bewohnern جمع، وgegründet في النهاية."
+        },
+        {
+          "index": 3,
+          "text": "**Der Stadtrat beschloss die Umgestaltung des Platzes.** → Die Umgestaltung des Platzes ______ vom Stadtrat ______.",
+          "answer": "Die Umgestaltung des Platzes wurde vom Stadtrat beschlossen.",
+          "finding": "Die Umgestaltung des Platzes فاعل مفرد مع wurde، وvom Stadtrat يذكر المنفذ، وbeschlossen في النهاية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T04",
+      "text": "1. Das Denkmal ______ im Frühjahr restauriert. (**wurde / wurden**)\n2. Mehrere Gebäude ______ im alten Stadtplan markiert. (**wurde / wurden**)\n3. Die Wahl ______ im Gemeindearchiv dokumentiert. (**wurde / wurden**)",
+      "finding": "ثلاث جمل اختيار مباشر بين wurde وwurden مع أفعال تنتهي بـ-ieren.",
+      "sourceIds": [
+        "PASSIVE"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Das Denkmal ______ im Frühjahr restauriert. (**wurde / wurden**)",
+          "answer": "wurde",
+          "finding": "Das Denkmal مفرد محايد فيأخذ wurde مع restauriert."
+        },
+        {
+          "index": 2,
+          "text": "Mehrere Gebäude ______ im alten Stadtplan markiert. (**wurde / wurden**)",
+          "answer": "wurden",
+          "finding": "Mehrere Gebäude جمع فيأخذ wurden مع markiert."
+        },
+        {
+          "index": 3,
+          "text": "Die Wahl ______ im Gemeindearchiv dokumentiert. (**wurde / wurden**)",
+          "answer": "wurde",
+          "finding": "Die Wahl مفرد مؤنث فيأخذ wurde مع dokumentiert."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. تنتمي الوقائع المذكورة إلى بلدة خيالية.\n2. بُني الجسر القديم عام 1985.\n3. تأسست ممثلية الشباب عام 2004.\n4. نوقش اقتراح إعادة تنظيم ساحة السوق عام 2018.\n5. افتُتحت الساحة الجديدة بعد عام واحد من النقاش.",
+      "finding": "خمس عبارات فهم قراءة تفصل سنوات الخط الزمني الخيالي بدقة.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "تنتمي الوقائع المذكورة إلى بلدة خيالية.",
+          "answer": "صحيح",
+          "finding": "النص يصرح بأن بلدة Sonnenfeld خيالية."
+        },
+        {
+          "index": 2,
+          "text": "بُني الجسر القديم عام 1985.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ الجسر القديم بُني عام 1974، بينما عام 1985 افتُتح أرشيف البلدية."
+        },
+        {
+          "index": 3,
+          "text": "تأسست ممثلية الشباب عام 2004.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ تأسست ممثلية الشباب عام 2004."
+        },
+        {
+          "index": 4,
+          "text": "نوقش اقتراح إعادة تنظيم ساحة السوق عام 2018.",
+          "answer": "صحيح",
+          "finding": "صحيح؛ نوقش اقتراح إعادة تصميم ساحة السوق علنًا عام 2018."
+        },
+        {
+          "index": 5,
+          "text": "افتُتحت الساحة الجديدة بعد عام واحد من النقاش.",
+          "answer": "خطأ",
+          "finding": "خطأ؛ افتُتحت الساحة الجديدة بعد عامين من نقاش 2018، أي عام 2020."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T06",
+      "text": "أكمل بالألمانية الكلمات الناقصة فقط؛ لا تكرر أداة موجودة خارج الفراغ:\n\n1. Die Ausstellung wurde im Jahr ______ eröffnet.\n2. Für die Ausstellung wurden Fotos von ______ gesammelt.\n3. Ein Modell der Brücke wurde von einer ______ Werkstatt gebaut.\n4. In einem ______ wurden Erinnerungen notiert.\n5. Viele ______ wurden durch die Ausstellung geführt.",
+      "finding": "خمسة فراغات استماع مع تعليمات صريحة ومفتاح مصحح لـGästebuch دون تكرار einem.",
+      "sourceIds": [],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Ausstellung wurde im Jahr ______ eröffnet.",
+          "answer": "2021",
+          "finding": "سنة افتتاح المعرض في النص هي 2021."
+        },
+        {
+          "index": 2,
+          "text": "Für die Ausstellung wurden Fotos von ______ gesammelt.",
+          "answer": "Einwohnern",
+          "finding": "بعد von يأتي جمع Dativ: Einwohnern."
+        },
+        {
+          "index": 3,
+          "text": "Ein Modell der Brücke wurde von einer ______ Werkstatt gebaut.",
+          "answer": "örtlichen",
+          "finding": "بعد من حرف الجر وأداة المؤنث المفرد في Dativ تأتي الصفة örtlichen."
+        },
+        {
+          "index": 4,
+          "text": "In einem ______ wurden Erinnerungen notiert.",
+          "answer": "Gästebuch",
+          "finding": "كلمة einem موجودة قبل الفراغ، لذلك نكتب Gästebuch وحدها دون تكرار الأداة."
+        },
+        {
+          "index": 5,
+          "text": "Viele ______ wurden durch die Ausstellung geführt.",
+          "answer": "Schulklassen",
+          "finding": "بعد Viele يأتي جمع الفاعل النحوي: Schulklassen."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T07",
+      "text": "اكتب **معلوم** أو **مجهول**:\n\n1. **Die Gemeinde eröffnete das Museum.**\n2. **Das Museum wurde eröffnet.**\n3. **Der Stadtrat beschloss den Vorschlag.**\n4. **Der Vorschlag wurde beschlossen.**\n5. **Das Dorf wurde größer.**\n6. **Danach wurde in einer Sitzung über den Vorschlag abgestimmt.**",
+      "finding": "ست جمل تميز المعلوم والمجهول الشخصي وغير الشخصي واستعمال wurde بمعنى أصبح.",
+      "sourceIds": [
+        "PASSIVE",
+        "WERDEN",
+        "ABSTIMMEN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "**Die Gemeinde eröffnete das Museum.**",
+          "answer": "معلوم",
+          "finding": "eröffnete ماضٍ معلوم فاعله Die Gemeinde ومفعوله das Museum."
+        },
+        {
+          "index": 2,
+          "text": "**Das Museum wurde eröffnet.**",
+          "answer": "مجهول",
+          "finding": "wurde eröffnet مبني للمجهول في الماضي وفاعلُه النحوي Das Museum."
+        },
+        {
+          "index": 3,
+          "text": "**Der Stadtrat beschloss den Vorschlag.**",
+          "answer": "معلوم",
+          "finding": "beschloss ماضٍ معلوم فاعله Der Stadtrat ومفعوله den Vorschlag."
+        },
+        {
+          "index": 4,
+          "text": "**Der Vorschlag wurde beschlossen.**",
+          "answer": "مجهول",
+          "finding": "wurde beschlossen مبني للمجهول في الماضي وفاعلُه النحوي Der Vorschlag."
+        },
+        {
+          "index": 5,
+          "text": "**Das Dorf wurde größer.**",
+          "answer": "معلوم",
+          "finding": "wurde größer معلوم بفعل تام بمعنى أصبح أكبر؛ größer صفة مقارنة لا Partizip II."
+        },
+        {
+          "index": 6,
+          "text": "**Danach wurde in einer Sitzung über den Vorschlag abgestimmt.**",
+          "answer": "مجهول",
+          "finding": "wurde ... über den Vorschlag abgestimmt مبني للمجهول غير شخصي بلا فاعل اسمي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-T08",
+      "text": "**أ — P01: أربع جمل كتابة فقط**\n\nاكتب خطًا زمنيًا خياليًا في أربع جمل ألمانية:1970 بناء جسر في بلدة سمّها وصرّح بأنها خيالية؛1985 افتتاح مكتبة فيها؛2004 تأسيس مجموعتين للشباب؛2018 ترميم ساحة السوق بواسطة البلدية. استخدم المبني للمجهول في Präteritum ثلاث مرات على الأقل، بينها مفرد وجمع، واذكر السنوات بالترتيب. هذه كتابة فقط دون جهر أو تسجيل، ولا تنسب الوقائع إلى بلدة حقيقية.\n\n**ب — P02: خمس جمل كتابة وجهر**\n\nقدّم معرض Sonnenfeld الخيالي من نص الاستماع في خمس جمل ألمانية مكتوبة ثم اقرأها بصوت واضح بنفسك. اذكر المعلومات الخمس: افتتاح المعرض عن الجسر عام2021 في المتحف؛ جمع صور للمعرض من السكان؛ بناء ورشة محلية نموذج الجسر؛ تدوين ذكريات في دفتر الزوار؛ اصطحاب صفوف مدرسية في جولة عبر المعرض. استعمل المبني للمجهول في Präteritum ثلاث مرات على الأقل، بينها مفرد وجمع، وvon + Dativ للورشة مرة واحدة على الأقل. لا تخترع تاريخًا لبناء الجسر أو أسماء الزوار، ولا يلزم شريك أو تسجيل.",
+      "finding": "مهمتا التمرين 8 مفصلتان إلى P01 كتابة فقط (4 جمل) وP02 كتابة وجهر (5 جمل تشمل المعلومات الخمس كلها).",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "MAIN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "1970 wurde in der fiktiven Gemeinde Morgenhain eine Brücke gebaut.",
+          "answer": "1970 wurde in der fiktiven Gemeinde Morgenhain eine Brücke gebaut.",
+          "finding": "الجملة الأولى في P01 تذكر عام 1970 وبناء جسر في بلدة Morgenhain الموصوفة صراحة بأنها خيالية بصيغة wurde ... gebaut."
+        },
+        {
+          "index": 2,
+          "text": "1985 wurde dort eine Bibliothek eröffnet.",
+          "answer": "1985 wurde dort eine Bibliothek eröffnet.",
+          "finding": "الجملة الثانية تذكر عام 1985 وافتتاح مكتبة بصيغة المفرد wurde ... eröffnet."
+        },
+        {
+          "index": 3,
+          "text": "2004 wurden zwei Jugendgruppen gegründet.",
+          "answer": "2004 wurden zwei Jugendgruppen gegründet.",
+          "finding": "الجملة الثالثة تذكر عام 2004 وتأسيس مجموعتين للشباب بصيغة الجمع wurden ... gegründet."
+        },
+        {
+          "index": 4,
+          "text": "2018 wurde der Marktplatz von der Gemeinde renoviert.",
+          "answer": "2018 wurde der Marktplatz von der Gemeinde renoviert.",
+          "finding": "الجملة الرابعة تذكر عام 2018 وترميم ساحة السوق بواسطة البلدية بصيغة wurde ... von der Gemeinde renoviert."
+        },
+        {
+          "index": 5,
+          "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet.",
+          "answer": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet.",
+          "finding": "الجملة الأولى في P02 تذكر افتتاح معرض الجسر القديم عام 2021 في متحف Sonnenfeld بصيغة wurde ... eröffnet."
+        },
+        {
+          "index": 6,
+          "text": "Für die Ausstellung wurden Fotos von Einwohnern gesammelt.",
+          "answer": "Für die Ausstellung wurden Fotos von Einwohnern gesammelt.",
+          "finding": "الجملة الثانية تذكر جمع صور للمعرض من السكان بصيغة الجمع wurden ... von Einwohnern gesammelt."
+        },
+        {
+          "index": 7,
+          "text": "Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.",
+          "answer": "Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.",
+          "finding": "الجملة الثالثة تذكر بناء نموذج الجسر بواسطة ورشة محلية بصيغة المفرد مع المنفذ: wurde von einer örtlichen Werkstatt gebaut."
+        },
+        {
+          "index": 8,
+          "text": "In einem Gästebuch wurden Erinnerungen an die Brücke notiert.",
+          "answer": "In einem Gästebuch wurden Erinnerungen an die Brücke notiert.",
+          "finding": "الجملة الرابعة تذكر تدوين ذكريات عن الجسر في دفتر الزوار بصيغة الجمع wurden ... notiert."
+        },
+        {
+          "index": 9,
+          "text": "Viele Schulklassen wurden durch die Ausstellung geführt.",
+          "answer": "Viele Schulklassen wurden durch die Ausstellung geführt.",
+          "finding": "الجملة الخامسة تذكر اصطحاب صفوف مدرسية كثيرة عبر المعرض بصيغة الجمع wurden ... geführt."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q01",
+      "text": "اختر صيغة الماضي المناسبة: Die alten Brücken ___ renoviert.",
+      "finding": "Brücken جمع، لذلك نستخدم wurden؛ أما werden فيعطي المبني للمجهول في المضارع لا الماضي.",
+      "sourceIds": [
+        "PASSIVE"
+      ],
+      "options": [
+        "wurde",
+        "wurden",
+        "werden"
+      ],
+      "answer": "wurden",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-11-T01"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "wurde",
+          "correct": false,
+          "finding": "wurde للمفرد ولا تطابق الجمع Brücken."
+        },
+        {
+          "index": 1,
+          "text": "wurden",
+          "correct": true,
+          "finding": "wurden تطابق الفاعل النحوي الجمع Die alten Brücken في الماضي."
+        },
+        {
+          "index": 2,
+          "text": "werden",
+          "correct": false,
+          "finding": "werden صيغة مضارع لا Präteritum المطلوب في السؤال."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q02",
+      "text": "اختر الصيغة الماضية الصحيحة: Das Denkmal ___ im Frühjahr restauriert.",
+      "finding": "Denkmal مفرد محايد، لذلك نستخدم wurde في Präteritum، ثم يأتي Partizip II restauriert.",
+      "sourceIds": [
+        "PASSIVE",
+        "DENKMAL"
+      ],
+      "options": [
+        "wurden",
+        "wurde",
+        "wird"
+      ],
+      "answer": "wurde",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-11-T04"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "wurden",
+          "correct": false,
+          "finding": "wurden للجمع بينما Das Denkmal مفرد محايد."
+        },
+        {
+          "index": 1,
+          "text": "wurde",
+          "correct": true,
+          "finding": "wurde تطابق المفرد المحايد Das Denkmal في Präteritum."
+        },
+        {
+          "index": 2,
+          "text": "wird",
+          "correct": false,
+          "finding": "wird مضارع لا ماضٍ."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q03",
+      "text": "ما صيغة Partizip II الصحيحة للفعل beschließen؟",
+      "finding": "Partizip II من beschließen هو beschlossen، مثل: Der Beschluss wurde gefasst / Die Umgestaltung wurde beschlossen.",
+      "sourceIds": [
+        "PART",
+        "BESCHLIESSEN"
+      ],
+      "options": [
+        "beschloss",
+        "beschließt",
+        "beschlossen"
+      ],
+      "answer": "beschlossen",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-11-T02"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "beschloss",
+          "correct": false,
+          "finding": "beschloss صيغة Präteritum للمعلوم، وليست Partizip II."
+        },
+        {
+          "index": 1,
+          "text": "beschließt",
+          "correct": false,
+          "finding": "beschließt صيغة المضارع للمفرد الغائب."
+        },
+        {
+          "index": 2,
+          "text": "beschlossen",
+          "correct": true,
+          "finding": "beschlossen هي Partizip II الصحيحة للفعل القوي beschließen."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q04",
+      "text": "اختر التحويل السليم: Die Gemeinde eröffnete die Bibliothek im Jahr 1985.",
+      "finding": "تصبح Bibliothek المفردة الفاعل النحوي، فنستخدم wurde، ويأتي Partizip II eröffnet في نهاية الجملة.",
+      "sourceIds": [
+        "PASSIVE",
+        "MAIN"
+      ],
+      "options": [
+        "Die Bibliothek wurde im Jahr 1985 eröffnet.",
+        "Die Bibliothek wurden im Jahr 1985 eröffnen.",
+        "Die Gemeinde wurde im Jahr 1985 die Bibliothek eröffnet."
+      ],
+      "answer": "Die Bibliothek wurde im Jahr 1985 eröffnet.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-11-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Die Bibliothek wurde im Jahr 1985 eröffnet.",
+          "correct": true,
+          "finding": "Die Bibliothek تصبح الفاعل المفرد مع wurde، ويأتي Partizip II eröffnet في النهاية."
+        },
+        {
+          "index": 1,
+          "text": "Die Bibliothek wurden im Jahr 1985 eröffnen.",
+          "correct": false,
+          "finding": "wurden للجمع وeröffnen مصدر، وكلاهما غير صحيح هنا."
+        },
+        {
+          "index": 2,
+          "text": "Die Gemeinde wurde im Jahr 1985 die Bibliothek eröffnet.",
+          "correct": false,
+          "finding": "أبقت Die Gemeinde مع die Bibliothek دون تحويل نحوي سليم للمفعول إلى فاعل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q05",
+      "text": "أكمل المبني للمجهول بصيغة von + Dativ الصحيحة: Die Jugendvertretung wurde ___ gegründet.",
+      "finding": "بعد von يأتي Dativ؛ وصيغة الجمع هي den Bewohnern.",
+      "sourceIds": [
+        "PASSIVE"
+      ],
+      "options": [
+        "von den Bewohnern",
+        "von die Bewohner",
+        "von der Bewohner"
+      ],
+      "answer": "von den Bewohnern",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-11-T03"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "von den Bewohnern",
+          "correct": true,
+          "finding": "von يطلب Dativ، وجمع Die Bewohner في Dativ هو den Bewohnern."
+        },
+        {
+          "index": 1,
+          "text": "von die Bewohner",
+          "correct": false,
+          "finding": "die Bewohner في Nominativ/Akkusativ لا Dativ بعد von."
+        },
+        {
+          "index": 2,
+          "text": "von der Bewohner",
+          "correct": false,
+          "finding": "der Bewohner ليست صيغة Dativ للجمع بعد von."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q06",
+      "text": "أي جملة تستخدم المبني للمجهول؟",
+      "finding": "الجملة الأولى معلوم. الثانية مبني للمجهول: wurde + Partizip II. أما wurde größer فتعني أصبح أكبر؛ تلا wurde هنا صفة لا Partizip II.",
+      "sourceIds": [
+        "PASSIVE",
+        "WERDEN"
+      ],
+      "options": [
+        "Die Gemeinde eröffnete das Museum.",
+        "Das Museum wurde eröffnet.",
+        "Das Dorf wurde größer."
+      ],
+      "answer": "Das Museum wurde eröffnet.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-11-T07"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "Die Gemeinde eröffnete das Museum.",
+          "correct": false,
+          "finding": "eröffnete جملة معلوم في الماضي."
+        },
+        {
+          "index": 1,
+          "text": "Das Museum wurde eröffnet.",
+          "correct": true,
+          "finding": "wurde eröffnet تجمع المساعد wurde مع Partizip II فهي مبني للمجهول."
+        },
+        {
+          "index": 2,
+          "text": "Das Dorf wurde größer.",
+          "correct": false,
+          "finding": "wurde größer تستعمل werden فعلًا تامًا بمعنى أصبح مع صفة مقارنة، لا مبنيًا للمجهول."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q07",
+      "text": "بحسب الخط الزمني لبلدة Sonnenfeld الخيالية، ما الذي بُني عام 1974؟",
+      "finding": "يذكر الخط الزمني أن الجسر القديم فوق النهر بُني عام 1974.",
+      "sourceIds": [],
+      "options": [
+        "الجسر القديم فوق النهر.",
+        "أرشيف البلدية.",
+        "الساحة الجديدة."
+      ],
+      "answer": "الجسر القديم فوق النهر.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-11-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "الجسر القديم فوق النهر.",
+          "correct": true,
+          "finding": "ينص الخط الزمني على أن الجسر القديم فوق النهر بُني عام 1974."
+        },
+        {
+          "index": 1,
+          "text": "أرشيف البلدية.",
+          "correct": false,
+          "finding": "أرشيف البلدية افتُتح عام 1985 لا عام 1974."
+        },
+        {
+          "index": 2,
+          "text": "الساحة الجديدة.",
+          "correct": false,
+          "finding": "الساحة الجديدة افتُتحت بعد عامين من نقاش 2018، أي عام 2020."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q08",
+      "text": "ما الموضوع الذي نوقش علنًا في Sonnenfeld عام 2018؟",
+      "finding": "في عام 2018 نوقش علنًا اقتراح إعادة تصميم ساحة السوق؛ تأسست ممثلية الشباب عام 2004 وافتُتح الأرشيف عام 1985.",
+      "sourceIds": [],
+      "options": [
+        "اقتراح إعادة تصميم ساحة السوق.",
+        "تأسيس ممثلية الشباب.",
+        "افتتاح أرشيف البلدية."
+      ],
+      "answer": "اقتراح إعادة تصميم ساحة السوق.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-11-T05"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "اقتراح إعادة تصميم ساحة السوق.",
+          "correct": true,
+          "finding": "اقتراح إعادة تصميم ساحة السوق هو الموضوع الذي نوقش علنًا عام 2018."
+        },
+        {
+          "index": 1,
+          "text": "تأسيس ممثلية الشباب.",
+          "correct": false,
+          "finding": "ممثلية الشباب تأسست عام 2004."
+        },
+        {
+          "index": 2,
+          "text": "افتتاح أرشيف البلدية.",
+          "correct": false,
+          "finding": "أرشيف البلدية افتُتح عام 1985."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q09",
+      "text": "اقرأ نص الاستماع: متى افتُتح معرض الجسر القديم؟",
+      "finding": "يذكر نص الاستماع المكتوب أن المعرض افتُتح عام 2021؛ لا يلزم تشغيل MP3 للإجابة.",
+      "sourceIds": [],
+      "options": [
+        "عام 1985.",
+        "عام 2018.",
+        "عام 2021."
+      ],
+      "answer": "عام 2021.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-11-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "عام 1985.",
+          "correct": false,
+          "finding": "عام 1985 يخص الأرشيف/دار الثقافة في نصوص أخرى لا معرض الجسر عام 2021."
+        },
+        {
+          "index": 1,
+          "text": "عام 2018.",
+          "correct": false,
+          "finding": "عام 2018 يخص مناقشة اقتراح الساحة في الخط الزمني."
+        },
+        {
+          "index": 2,
+          "text": "عام 2021.",
+          "correct": true,
+          "finding": "ينص نص الاستماع على أن المعرض افتُتح عام 2021."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-Q10",
+      "text": "من بنى نموذج الجسر في نص الاستماع؟",
+      "finding": "بنت ورشة محلية نموذج الجسر. يذكر النص ذلك في المبني للمجهول: Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.",
+      "sourceIds": [
+        "PASSIVE"
+      ],
+      "options": [
+        "سكان البلدة.",
+        "ورشة محلية.",
+        "الصفوف المدرسية."
+      ],
+      "answer": "ورشة محلية.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-11-T06"
+      ],
+      "optionReview": [
+        {
+          "index": 0,
+          "text": "سكان البلدة.",
+          "correct": false,
+          "finding": "السكان جُمعت منهم الصور للمعرض، ولم يُذكر أنهم بنوا النموذج."
+        },
+        {
+          "index": 1,
+          "text": "ورشة محلية.",
+          "correct": true,
+          "finding": "ينص الاستماع على أن النموذج بُني بواسطة ورشة محلية: von einer örtlichen Werkstatt."
+        },
+        {
+          "index": 2,
+          "text": "الصفوف المدرسية.",
+          "correct": false,
+          "finding": "الصفوف المدرسية قيدت في جولة عبر المعرض ولم تبنِ النموذج."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-P01",
+      "text": "اكتب خطًا زمنيًا خياليًا في أربع جمل ألمانية:1970 بناء جسر في بلدة سمّها وصرّح بأنها خيالية؛1985 افتتاح مكتبة فيها؛2004 تأسيس مجموعتين للشباب؛2018 ترميم ساحة السوق بواسطة البلدية. استخدم المبني للمجهول في Präteritum ثلاث مرات على الأقل، بينها مفرد وجمع، واذكر السنوات بالترتيب. هذه كتابة فقط دون جهر أو تسجيل، ولا تنسب الوقائع إلى بلدة حقيقية.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة فقط دون جهر.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "MAIN"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل بالأحداث الأربعة المحددة وسنوات1970/1985/2004/2018، مع بلدة مسماة خيالية؛ كتابة فقط.",
+        "meaningClarity": "الترتيب الزمني والمباني والمجموعتان واضحة، ولا تخلط المعطيات الخيالية بتاريخ بلدة حقيقية.",
+        "targetSkill": "ثلاث صيغ على الأقل من Vorgangspassiv في Präteritum، مع مفرد وجمع ومطابقة المساعد، وPartizip II في نهاية الإطار الفعلي للجمل الرئيسية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-11-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل بالأحداث الأربعة المحددة وسنوات1970/1985/2004/2018، مع بلدة مسماة خيالية؛ كتابة فقط.",
+          "finding": "يتحقق من أربع جمل بالأحداث الأربعة وسنوات 1970/1985/2004/2018 وبلدة خيالية مسماة؛ الحد 100 حرف والنموذج 204 حروف."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الترتيب الزمني والمباني والمجموعتان واضحة، ولا تخلط المعطيات الخيالية بتاريخ بلدة حقيقية.",
+          "finding": "يضمن وضوح التسلسل الزمني وبقاء البلدة والوقائع خيالية دون خلط بتاريخ حقيقي."
+        },
+        {
+          "key": "targetSkill",
+          "text": "ثلاث صيغ على الأقل من Vorgangspassiv في Präteritum، مع مفرد وجمع ومطابقة المساعد، وPartizip II في نهاية الإطار الفعلي للجمل الرئيسية.",
+          "finding": "يركز على ثلاث صيغ Vorgangspassiv على الأقل في Präteritum بين مفرد وجمع مع موقع Partizip II الصحيح؛ تحقق ذاتي لا مصحح آلي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-P02",
+      "text": "قدّم معرض Sonnenfeld الخيالي من نص الاستماع في خمس جمل ألمانية مكتوبة ثم اقرأها بصوت واضح بنفسك. اذكر المعلومات الخمس: افتتاح المعرض عن الجسر عام2021 في المتحف؛ جمع صور للمعرض من السكان؛ بناء ورشة محلية نموذج الجسر؛ تدوين ذكريات في دفتر الزوار؛ اصطحاب صفوف مدرسية في جولة عبر المعرض. استعمل المبني للمجهول في Präteritum ثلاث مرات على الأقل، بينها مفرد وجمع، وvon + Dativ للورشة مرة واحدة على الأقل. لا تخترع تاريخًا لبناء الجسر أو أسماء الزوار، ولا يلزم شريك أو تسجيل.",
+      "finding": "مطابقة T08 ونموذجها؛ كتابة وجهر مع تغطية المعلومات الخمس وروابط T06/T08.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "MAIN"
+      ],
+      "criteria": {
+        "taskCompletion": "خمس جمل تذكر الافتتاح2021 والصور ونموذج الورشة والذكريات في دفتر الزوار والصفوف المدرسية؛ كتابة ثم جهر.",
+        "meaningClarity": "تقديم معلومات المعرض الخيالي كما في النص، لا تغيير افتتاح المعرض إلى بناء الجسر ولا اختراع أزمنة أو أسماء.",
+        "targetSkill": "ثلاث صيغ على الأقل من المبني للمجهول في Präteritum مع مفرد وجمع؛von + Dativ للورشة، وPartizip II في نهاية الإطار الفعلي للجمل الرئيسية."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 125,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-11-T06",
+        "DL-B1-11-T08"
+      ],
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "خمس جمل تذكر الافتتاح2021 والصور ونموذج الورشة والذكريات في دفتر الزوار والصفوف المدرسية؛ كتابة ثم جهر.",
+          "finding": "يطابق الآن مطالب السؤال الخمسة كلها في خمس جمل بدل الاكتفاء بثلاث معلومات؛ الحد 125 حرفًا والنموذج 327 حرفًا مع الجهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "تقديم معلومات المعرض الخيالي كما في النص، لا تغيير افتتاح المعرض إلى بناء الجسر ولا اختراع أزمنة أو أسماء.",
+          "finding": "يحفظ دقة وقائع المعرض الخيالي فلا يحول افتتاح المعرض عام 2021 إلى تاريخ بناء الجسر."
+        },
+        {
+          "key": "targetSkill",
+          "text": "ثلاث صيغ على الأقل من المبني للمجهول في Präteritum مع مفرد وجمع؛von + Dativ للورشة، وPartizip II في نهاية الإطار الفعلي للجمل الرئيسية.",
+          "finding": "يطلب ثلاث صيغ مجهول على الأقل بين مفرد وجمع وvon + Dativ للورشة وموقع Partizip II؛ الجهر إقرار ذاتي بلا تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "timeline-model-01",
+      "text": "1970 wurde in der fiktiven Gemeinde Morgenhain eine Brücke gebaut.\n1985 wurde dort eine Bibliothek eröffnet.\n2004 wurden zwei Jugendgruppen gegründet.\n2018 wurde der Marktplatz von der Gemeinde renoviert.",
+      "finding": "نموذج مكتوب: 204 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "MAIN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "1970 wurde in der fiktiven Gemeinde Morgenhain eine Brücke gebaut.",
+          "finding": "الجملة الأولى في P01 تذكر عام 1970 وبناء جسر في بلدة Morgenhain الموصوفة صراحة بأنها خيالية بصيغة wurde ... gebaut."
+        },
+        {
+          "index": 2,
+          "text": "1985 wurde dort eine Bibliothek eröffnet.",
+          "finding": "الجملة الثانية تذكر عام 1985 وافتتاح مكتبة بصيغة المفرد wurde ... eröffnet."
+        },
+        {
+          "index": 3,
+          "text": "2004 wurden zwei Jugendgruppen gegründet.",
+          "finding": "الجملة الثالثة تذكر عام 2004 وتأسيس مجموعتين للشباب بصيغة الجمع wurden ... gegründet."
+        },
+        {
+          "index": 4,
+          "text": "2018 wurde der Marktplatz von der Gemeinde renoviert.",
+          "finding": "الجملة الرابعة تذكر عام 2018 وترميم ساحة السوق بواسطة البلدية بصيغة wurde ... von der Gemeinde renoviert."
+        }
+      ]
+    },
+    {
+      "id": "museum-model-01",
+      "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet.\nFür die Ausstellung wurden Fotos von Einwohnern gesammelt.\nEin Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.\nIn einem Gästebuch wurden Erinnerungen an die Brücke notiert.\nViele Schulklassen wurden durch die Ausstellung geführt.",
+      "finding": "نموذج مكتوب: 327 حرفًا عند الجمع بمسافات؛ كل جملة روجعت أدناه دون تصحيح آلي للطالب.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART",
+        "MAIN"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet.",
+          "finding": "الجملة الأولى في P02 تذكر افتتاح معرض الجسر القديم عام 2021 في متحف Sonnenfeld بصيغة wurde ... eröffnet."
+        },
+        {
+          "index": 2,
+          "text": "Für die Ausstellung wurden Fotos von Einwohnern gesammelt.",
+          "finding": "الجملة الثانية تذكر جمع صور للمعرض من السكان بصيغة الجمع wurden ... von Einwohnern gesammelt."
+        },
+        {
+          "index": 3,
+          "text": "Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.",
+          "finding": "الجملة الثالثة تذكر بناء نموذج الجسر بواسطة ورشة محلية بصيغة المفرد مع المنفذ: wurde von einer örtlichen Werkstatt gebaut."
+        },
+        {
+          "index": 4,
+          "text": "In einem Gästebuch wurden Erinnerungen an die Brücke notiert.",
+          "finding": "الجملة الرابعة تذكر تدوين ذكريات عن الجسر في دفتر الزوار بصيغة الجمع wurden ... notiert."
+        },
+        {
+          "index": 5,
+          "text": "Viele Schulklassen wurden durch die Ausstellung geführt.",
+          "finding": "الجملة الخامسة تذكر اصطحاب صفوف مدرسية كثيرة عبر المعرض بصيغة الجمع wurden ... geführt."
+        }
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Das Museum wurde eröffnet.** → افتُتح المتحف.",
+      "finding": "نموذج مبني للمجهول للمفرد: Das Museum wurde eröffnet.",
+      "sourceIds": [
+        "PASSIVE"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Die Brücken wurden renoviert.** → رُمّمت الجسور.",
+      "finding": "نموذج مبني للمجهول للجمع: Die Brücken wurden renoviert.",
+      "sourceIds": [
+        "PASSIVE",
+        "PART"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Der Beschluss wurde vom Stadtrat gefasst.** → اتخذ مجلس المدينة القرار.",
+      "finding": "نموذج ذكر المنفذ بـvon + Dativ: vom Stadtrat gefasst.",
+      "sourceIds": [
+        "PASSIVE",
+        "STADTRAT"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **die Abstimmung / die Mehrheit** → التصويت / الأغلبية.",
+      "finding": "مراجعة مفردتين مدنيتين محوريتين: die Abstimmung (التصويت) وdie Mehrheit (الأغلبية، لا الإجماع).",
+      "sourceIds": [
+        "ABSTIMMEN",
+        "MEHRHEIT"
+      ]
+    },
+    {
+      "id": "DL-B1-11-AUD-PHR-01",
+      "text": "Die Epoche, die Epochen. Das Ereignis, die Ereignisse. Die Gemeinde, die Gemeinden. Die Verfassung, die Verfassungen. Der Stadtrat, die Stadträte. Der Beschluss, die Beschlüsse. Die Abstimmung, die Abstimmungen. Die Mehrheit, die Mehrheiten. Die Bürgerin, die Bürgerinnen. Der Bürger, die Bürger. Das Denkmal, die Denkmäler. Die Zeitleiste, die Zeitleisten. Wählen, wählt. Beschließen, beschließt. Gründen, gründet. Einführen, führt ein. Historisch. Demokratisch.",
+      "finding": "مطابقة نصية فقط؛ 18 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات المختارة محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die Epoche, die Epochen.",
+          "finding": "Epoche مؤنث وجمعها Epochen؛ حقبة زمنية، ولا تحدد وحدها قرونًا معينة."
+        },
+        {
+          "index": 2,
+          "text": "Das Ereignis, die Ereignisse.",
+          "finding": "Ereignis محايد وجمعه Ereignisse؛ حدث أو واقعة، وليس بالضرورة حدثًا سياسيًا."
+        },
+        {
+          "index": 3,
+          "text": "Die Gemeinde, die Gemeinden.",
+          "finding": "Gemeinde مؤنث وجمعها Gemeinden؛ بلدة أو بلدية هنا، ولها في الألمانية معانٍ دينية أخرى خارج سياق الدرس."
+        },
+        {
+          "index": 4,
+          "text": "Die Verfassung, die Verfassungen.",
+          "finding": "Verfassung مؤنث وجمعها Verfassungen؛ دستور بالمعنى المدني هنا، ولها معنى الحالة الجسدية/النفسية بلا جمع."
+        },
+        {
+          "index": 5,
+          "text": "Der Stadtrat, die Stadträte.",
+          "finding": "Stadtrat مذكر وجمعه Stadträte بأوملاوت؛ مجلس المدينة هنا، وقد يدل على عضو المجلس."
+        },
+        {
+          "index": 6,
+          "text": "Der Beschluss, die Beschlüsse.",
+          "finding": "Beschluss مذكر وجمعه Beschlüsse بأوملاوت؛ قرار رسمي، ويرتبط بالفعل fassen أو beschließen."
+        },
+        {
+          "index": 7,
+          "text": "Die Abstimmung, die Abstimmungen.",
+          "finding": "Abstimmung مؤنث وجمعها Abstimmungen؛ تصويت هنا، ولها معنى التنسيق والمواءمة في سياقات أخرى."
+        },
+        {
+          "index": 8,
+          "text": "Die Mehrheit, die Mehrheiten.",
+          "finding": "Mehrheit مؤنث وجمعها Mehrheiten؛ أغلبية الأصوات أو المجموعة، وليست إجماعًا."
+        },
+        {
+          "index": 9,
+          "text": "Die Bürgerin, die Bürgerinnen.",
+          "finding": "Bürgerin مؤنث وجمعها Bürgerinnen للمواطنة."
+        },
+        {
+          "index": 10,
+          "text": "Der Bürger, die Bürger.",
+          "finding": "Bürger مذكر وجمعه Bürger للمواطن."
+        },
+        {
+          "index": 11,
+          "text": "Das Denkmal, die Denkmäler.",
+          "finding": "Denkmal محايد وجمعه الشائع Denkmäler؛ نصب تذكاري أو معلم تاريخي."
+        },
+        {
+          "index": 12,
+          "text": "Die Zeitleiste, die Zeitleisten.",
+          "finding": "Zeitleiste مؤنث وجمعها Zeitleisten؛ خط زمني يرتب الأحداث."
+        },
+        {
+          "index": 13,
+          "text": "Wählen, wählt.",
+          "finding": "wählen حاضرُه مع المفرد الغائب wählt وPartizip II gewählt؛ ينتخب أو يختار."
+        },
+        {
+          "index": 14,
+          "text": "Beschließen, beschließt.",
+          "finding": "beschließen فعل قوي حاضرُه beschließt وماضيه beschloss وPartizip II beschlossen؛ يقرر أو يعتمد."
+        },
+        {
+          "index": 15,
+          "text": "Gründen, gründet.",
+          "finding": "gründen حاضرُه gründet مع -e- بعد d وPartizip II gegründet؛ يؤسس."
+        },
+        {
+          "index": 16,
+          "text": "Einführen, führt ein.",
+          "finding": "einführen فعل منفصل حاضرُه führt ein وPartizip II eingeführt؛ يطبق أو يستحدث."
+        },
+        {
+          "index": 17,
+          "text": "Historisch.",
+          "finding": "historisch صفة بمعنى تاريخي في سياق أمثلة محايدة."
+        },
+        {
+          "index": 18,
+          "text": "Demokratisch.",
+          "finding": "demokratisch صفة بمعنى ديمقراطي في سياق لغوي محايد."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-AUD-MODEL-01",
+      "text": "Das Museum wurde 1985 eröffnet. Die Brücken wurden renoviert. Der Beschluss wurde vom Stadtrat gefasst. Das Dorf wurde größer.",
+      "finding": "مطابقة نصية فقط؛ 4 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات المختارة محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Das Museum wurde 1985 eröffnet.",
+          "finding": "Das Museum فاعل نحوي مفرد، فجاءت wurde ثم الظرف الزمني 1985 وPartizip II eröffnet في النهاية."
+        },
+        {
+          "index": 2,
+          "text": "Die Brücken wurden renoviert.",
+          "finding": "Die Brücken فاعل نحوي جمع، فجاءت wurden وPartizip II renoviert دون ge- لأنه ينتهي بـ-ieren."
+        },
+        {
+          "index": 3,
+          "text": "Der Beschluss wurde vom Stadtrat gefasst.",
+          "finding": "Der Beschluss فاعل نحوي مفرد، وذكر المنفذ بـvom Stadtrat أي von dem Stadtrat في Dativ، وgefasst في النهاية."
+        },
+        {
+          "index": 4,
+          "text": "Das Dorf wurde größer.",
+          "finding": "Das Dorf wurde größer جملة معلوم بفعل تام بمعنى أصبح، وليست مبنيًا للمجهول لأن größer صفة مقارنة لا Partizip II."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-AUD-DLG-01",
+      "text": "Wann wurde das alte Kulturhaus eröffnet? Es wurde 1985 eröffnet. Damals wurde dort eine kleine Ausstellung gezeigt. Wurden die Fotos auch im Stadtarchiv gesammelt? Ja. Viele Bilder wurden von Einwohnerinnen und Einwohnern gespendet. Und wann wurde der Jugendrat gegründet? 2004. Die wichtigsten Daten wurden auf einer Zeitleiste zusammengestellt.",
+      "finding": "مطابقة نصية فقط؛ 6 وحدة داخل 6 مقطع. الحالة pending والسياسة offer والأصوات المختارة محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02",
+        "voice-00",
+        "voice-02",
+        "voice-00",
+        "voice-02",
+        "voice-00"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Wann wurde das alte Kulturhaus eröffnet?",
+          "finding": "Mira تسأل عن سنة افتتاح Kulturhaus القديم؛ das alte Kulturhaus فاعل نحوي مفرد وeröffnet في النهاية."
+        },
+        {
+          "index": 2,
+          "text": "Es wurde 1985 eröffnet. Damals wurde dort eine kleine Ausstellung gezeigt.",
+          "finding": "أمينة الأرشيف تجيب بـ1985 وتضيف أنه عُرضت هناك آنذاك معرض صغير؛ eine kleine Ausstellung فاعل مفرد لـwurde ... gezeigt."
+        },
+        {
+          "index": 3,
+          "text": "Wurden die Fotos auch im Stadtarchiv gesammelt?",
+          "finding": "سؤال نعم/لا في المجهول يبدأ بـWurden لأن die Fotos جمع؛ يسأل عن جمع الصور في أرشيف المدينة."
+        },
+        {
+          "index": 4,
+          "text": "Ja. Viele Bilder wurden von Einwohnerinnen und Einwohnern gespendet.",
+          "finding": "تأكيد مع ذكر المتبرعين بـvon Einwohnerinnen und Einwohnern في Dativ جمع؛ gespendet تخص صور الحوار لا بالضرورة كل صور الاستماع."
+        },
+        {
+          "index": 5,
+          "text": "Und wann wurde der Jugendrat gegründet?",
+          "finding": "سؤال عن سنة تأسيس Jugendrat المفرد؛ لا يطابق هذا المجلس تلقائيًا Jugendvertretung في نص القراءة رغم اشتراك سنة 2004."
+        },
+        {
+          "index": 6,
+          "text": "2004. Die wichtigsten Daten wurden auf einer Zeitleiste zusammengestellt.",
+          "finding": "الجواب 2004، ثم wurden ... zusammengestellt لأن die wichtigsten Daten جمع؛ zusammengestellt بادئة منفصلة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-AUD-READ-01",
+      "text": "Die folgende Zeitleiste gehört zur fiktiven Gemeinde Sonnenfeld. Im Jahr 1974 wurde die alte Brücke über den Fluss gebaut. 1985 wurde ein kleines Gemeindearchiv eröffnet. 1996 wurde der Stadtrat neu gewählt. Eine Jugendvertretung wurde 2004 gegründet. Im Jahr 2018 wurde ein Vorschlag zur Neugestaltung des Marktplatzes öffentlich diskutiert. Danach wurde in einer Sitzung über den Vorschlag abgestimmt. Eine Mehrheit stimmte dafür. Zwei Jahre später wurde der neue Platz eröffnet.",
+      "finding": "مطابقة نصية فقط؛ 9 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات المختارة محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-02"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Die folgende Zeitleiste gehört zur fiktiven Gemeinde Sonnenfeld.",
+          "finding": "افتتاحية معلوم تربط الخط الزمني ببلدة Sonnenfeld الخيالية صراحة."
+        },
+        {
+          "index": 2,
+          "text": "Im Jahr 1974 wurde die alte Brücke über den Fluss gebaut.",
+          "finding": "تقدم الظرف الزمني Im Jahr 1974 ثم wurde والفاعل المفرد die alte Brücke über den Fluss وgebaut في النهاية."
+        },
+        {
+          "index": 3,
+          "text": "1985 wurde ein kleines Gemeindearchiv eröffnet.",
+          "finding": "عام 1985 افتُتح أرشيف بلدي صغير؛ ein kleines Gemeindearchiv مفرد مع wurde ... eröffnet."
+        },
+        {
+          "index": 4,
+          "text": "1996 wurde der Stadtrat neu gewählt.",
+          "finding": "عام 1996 انتُخب مجلس المدينة من جديد؛ der Stadtrat مفرد نحويًا فجاءت wurde ... gewählt."
+        },
+        {
+          "index": 5,
+          "text": "Eine Jugendvertretung wurde 2004 gegründet.",
+          "finding": "تأسست ممثلية للشباب عام 2004؛ Eine Jugendvertretung مفرد مع wurde ... gegründet."
+        },
+        {
+          "index": 6,
+          "text": "Im Jahr 2018 wurde ein Vorschlag zur Neugestaltung des Marktplatzes öffentlich diskutiert.",
+          "finding": "عام 2018 نوقش اقتراح لإعادة تصميم ساحة السوق علنًا؛ ein Vorschlag مفرد وdiskutiert بلا ge-."
+        },
+        {
+          "index": 7,
+          "text": "Danach wurde in einer Sitzung über den Vorschlag abgestimmt.",
+          "finding": "بعد ذلك صُوّت في جلسة على الاقتراح؛ مجهول غير شخصي بلا فاعل اسمي، وüber den Vorschlag جار ومجرور مع Akkusativ."
+        },
+        {
+          "index": 8,
+          "text": "Eine Mehrheit stimmte dafür.",
+          "finding": "أغلبية صوتت لصالح الاقتراح؛ جملة معلوم ماضية stimmte dafür وليست مبنيًا للمجهول."
+        },
+        {
+          "index": 9,
+          "text": "Zwei Jahre später wurde der neue Platz eröffnet.",
+          "finding": "بعد عامين افتُتحت الساحة الجديدة؛ الإحالة الزمنية تتبع 2018 فتدل على 2020 داخل تسلسل النص."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-11-AUD-LST-01",
+      "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet. Für die Ausstellung wurden Fotos von Einwohnern gesammelt. Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut. In einem Gästebuch wurden Erinnerungen an die Brücke notiert. Viele Schulklassen wurden durch die Ausstellung geführt.",
+      "finding": "مطابقة نصية فقط؛ 5 وحدة داخل 1 مقطع. الحالة pending والسياسة offer والأصوات المختارة محفوظة؛ لا استماع أو توليد أو اعتماد.",
+      "sourceIds": [],
+      "status": "generated_pending_acoustic_review",
+      "voiceIds": [
+        "voice-03"
+      ],
+      "items": [
+        {
+          "index": 1,
+          "text": "Im Museum von Sonnenfeld wurde 2021 eine Ausstellung über die alte Brücke eröffnet.",
+          "finding": "افتُتح عام 2021 في متحف Sonnenfeld معرض عن الجسر القديم؛ التاريخ للمعرض لا لبناء الجسر."
+        },
+        {
+          "index": 2,
+          "text": "Für die Ausstellung wurden Fotos von Einwohnern gesammelt.",
+          "finding": "جُمعت صور للمعرض من السكان؛ Fotos جمع مع wurden ... gesammelt، وvon Einwohnern في Dativ جمع."
+        },
+        {
+          "index": 3,
+          "text": "Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut.",
+          "finding": "بُني نموذج للجسر بواسطة ورشة محلية؛ Ein Modell مفرد وvon einer örtlichen Werkstatt يذكر المنفذ بـDativ."
+        },
+        {
+          "index": 4,
+          "text": "In einem Gästebuch wurden Erinnerungen an die Brücke notiert.",
+          "finding": "دُوّنت ذكريات عن الجسر في دفتر زوار؛ Erinnerungen جمع فجاءت wurden ... notiert."
+        },
+        {
+          "index": 5,
+          "text": "Viele Schulklassen wurden durch die Ausstellung geführt.",
+          "finding": "قيدت صفوف مدرسية كثيرة عبر المعرض؛ Viele Schulklassen جمع، وdurch die Ausstellung مسار الجولة لا المنفذ."
+        }
+      ]
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/werden",
+      "reason": "صفحة خطأ 404؛ استُبعدت واستُبدلت بصفحة werden_Vollverb الفعلية"
+    }
+  ],
+  "sourceHashes": {
+    "content/B1/lesson-11-history-politics-passive-past.md": "a3579b9b142219036fc09db9826ddb0caf427ddfc64570d5d8451dc0cfa37c7d",
+    "content/B1/lesson-11-history-politics-passive-past.assessment.json": "b9389fd14a1b989f38cb971aafc22e9c88f20718a2d4d4a29885c6ce5cc9e0bf"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-11-AUD-PHR-01": "d9d455758a93771939580812a76bf72e0c98d53d645b099c4723823f61059ec6",
+    "DL-B1-11-AUD-MODEL-01": "8ddb36b20890dd77f6478cf5058f76a8ffa8cc40acfb6a91d45ed63c9e7c3464",
+    "DL-B1-11-AUD-DLG-01": "3c96438a870d07e1be06dedc7b655b647e83994ca29c78c5d3471e0c59f56dd3",
+    "DL-B1-11-AUD-READ-01": "5e23682f14e6b03bcaa8f179b182d1574c5d67f16af9dd89f671439dc17d9fba",
+    "DL-B1-11-AUD-LST-01": "fe30e822ca5884dcb90a49700cef8720220b4f427267e7a38ce91084bd2e91d4"
+  },
+  "preservation": {
+    "baseline": "96cdc1e98432483f45d44f914720a168e8145308",
+    "protectedFilesIncludingAudio": 590,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      1,
+      1,
+      2,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      1
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "changedAudioRegisterRows": {
+      "DL-B1-11-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B1-11-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B1-11-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B1-11-AUD-LST-01": [
+        "source_line"
+      ]
+    }
+  },
+  "implementationCommit": "c4cd3c7e1ab78b78f654f18646bb1b2d29eb9074",
+  "qualityChecks": {
+    "build": {
+      "command": "python3 tools/build_course.py",
+      "status": "PASS",
+      "lessons": 53,
+      "bundleBytes": 2126109
+    },
+    "verify": {
+      "command": "python3 tools/verify_course.py",
+      "status": "PASS",
+      "exerciseHeadings": 428,
+      "dialogueSections": 61,
+      "vocabularyItems": 754,
+      "lessonQuizItems": 530,
+      "gateQuizItems": 10,
+      "performanceTasks": 109,
+      "catalogRows": 1080,
+      "audioAssets": 217,
+      "mp3Clips": 474,
+      "readyAssets": 137,
+      "pendingAssets": 80
+    },
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 41,
+      "newGuard": "tools/test_b1_11_review.py",
+      "scope": "coverage/text/mappings/evidence/hashes; not language certification"
+    },
+    "nodeGroups": {
+      "status": "PASS",
+      "tests": [
+        "progression",
+        "service_worker",
+        "daily_plan",
+        "session_persistence",
+        "study_time"
+      ]
+    },
+    "syntaxAndDiff": {
+      "status": "PASS",
+      "commands": [
+        "node --check app.js",
+        "node --check service-worker.js",
+        "git diff --check"
+      ]
+    },
+    "browser": {
+      "status": "PASS",
+      "chromium": "143.0.7499.0",
+      "playwright": "1.58.2",
+      "axe": "4.11.0",
+      "cache": "v90",
+      "tests": [
+        "browser",
+        "accessibility_update",
+        "accessibility_audit",
+        "forms_keyboard",
+        "narrow_layout"
+      ],
+      "viewports": [
+        "1440x900",
+        "390x844"
+      ],
+      "axeStates": 177,
+      "axeSelectedRuleViolations": 0,
+      "axeIncompleteOccurrences": 125,
+      "axeIncompleteNodeOccurrences": 295,
+      "narrowStates": 126,
+      "narrowViewports": [
+        "320x900",
+        "568x320"
+      ],
+      "formsKeyboard": "Passed first execution at both widths; historical native chooser intermittency remains unresolved."
+    },
+    "evidenceIsolation": {
+      "status": "PASS",
+      "oldVersion": "b1-11-v1",
+      "newVersion": "b1-11-v2",
+      "nextLesson": "b1-12-innovation-research-future",
+      "modelCharacters": [
+        204,
+        327
+      ],
+      "minimumCharacters": [
+        100,
+        125
+      ],
+      "retainsOldRecordWithoutGrantingCurrentMastery": true,
+      "rejectsOldVersionDraft": true,
+      "currentScoreAndEvidenceUnlockNext": true,
+      "evidenceDeletionRelocksNext": true,
+      "p01SpeakCheckboxAbsent": true,
+      "p02SpeakCheckboxRequired": true
+    },
+    "initialFailures": [
+      "First progression run failed two legacy B1.11 assertions that still expected both P01 and P02 to require speaking and matched old T08 wording; updated those B1.11 assertions to check P01 writing-only and P02 writing+speaking plus exact prompt inclusion and دون شريك أو تسجيل. All five Node suites then passed.",
+      "Initial browser command failed with MODULE_NOT_FOUND for playwright because ephemeral node_modules and /tmp Chromium were absent in the fresh container; installed npm ci --ignore-scripts and @sparticuz/chromium@143.0.4, inflated /tmp/chromium and /tmp/al2023/lib, and all five browser suites passed on first full run."
+    ]
+  },
+  "campaign": {
+    "review": "CR41",
+    "reviewedLessons": 40,
+    "totalLessons": 53,
+    "gateSeparate": true,
+    "remainingLessons": 13,
+    "planVersion": "2.47",
+    "next": "CR42/B1.12 — الابتكار والبحث والمستقبل"
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "c4cd3c7e1ab78b78f654f18646bb1b2d29eb9074",
+    "implementationPushed": true,
+    "implementationHeadOriginMatched": true,
+    "pr": {
+      "number": 1,
+      "state": "OPEN",
+      "mergedAt": null,
+      "queriedAtHead": "66f25c7a44857b909476978b953498564073bb00"
+    },
+    "implementationDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "reportPushed": true,
+    "remoteUIReviewed": false,
+    "productionReviewed": false,
+    "reportCommit": "66f25c7a44857b909476978b953498564073bb00",
+    "reportHeadOriginMatched": true,
+    "reportDeployment": {
+      "state": "failure",
+      "description": "Deployment rate limited — retry in 24 hours.",
+      "deployments": []
+    },
+    "receipt": {
+      "commitMessage": "Record CR41 delivery receipt",
+      "commitId": "see git log for this receipt commit",
+      "deploymentQueried": false
+    }
+  },
+  "limits": [
+    "مراجعة نصية مصدرية بالذكاء الاصطناعي؛ ليست شهادة CEFR أو WCAG أو اختبارًا لمتعلمين حقيقيين، ولا مراجع بشري شرطًا للاستمرار.",
+    "عشرة مراجع مقروءة بالكامل تشمل جزأي Passiv وجزأي Partizipien؛ لم تُقرأ ملفات PDF أو التمارين التفاعلية الخارجية. المراجع المعجمية المباشرة تخص الألفاظ المسماة (werden وStadtrat وMehrheit وbeschließen وDenkmal وabstimmen وEreignis وGemeinde وVerfassung وAbstimmung) لا كل كلمة في الجدول.",
+    "خمسة أصول/10 مقاطع معلقة ومحفوظة بأصوات Mira (voice-02) وArchivarin (voice-00) والسرد (voice-02) والاستماع (voice-03)؛ فحص MP3 والتشغيل الآلي الصامت ومطابقة التفريغ ليست استماعًا أو اعتمادًا صوتيًا.",
+    "الحد الأدنى للحروف (100/125) والإقرارات الذاتية والجهر في P02 لا تصحح عدد الجمل أو القواعد أو النطق آليًا؛ البلدة والوقائع خيالية تمامًا.",
+    "177 حالة axe وصفر مخالفات للقواعد المختارة، مع 125 ظهورًا غير حاسم تشمل 295 ظهورًا لعقد؛ ليست مخالفات مؤكدة ولا شهادة وصول شاملة.",
+    "فحوص 320×900 و568×320 و1440×900 و390×844 تتم عبر CSS viewports في Chromium وليست هواتف فعلية أو تكبير متصفح أصليًا؛ تحديث v42 إلى v90 fixture محدد وليس كل مسار تاريخي.",
+    "نشر التنفيذ c4cd3c7 فشل في Vercel بسبب حد النشر اليومي (Deployment rate limited — retry in 24 hours.) وdeployments=[]؛ لا إعادة نشر آلية ولا شراء ترقية، ولم تختبر الواجهة البعيدة أو Production، وPR#1 غير مدمجة."
+  ]
+}

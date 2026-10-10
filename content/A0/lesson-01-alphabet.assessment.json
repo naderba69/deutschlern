@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-01-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-01-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "مراجعة تفصيلية مدعومة بالمراجع بتاريخ 2026-10-07: data/reviews/a0-01-review.md وJSON المرافق؛ مراجعة نصوص لا استماع إلى MP3.",
+      "أُضيف v في vier وsp في Sport إلى T02 لتطابق مصادر Q06/Q07؛ وُحّدت أسماء الحروف في Q10 مع الجدول.",
+      "صُححت P02 لتبقى كتابة من الذاكرة مثل T06: الكلمات الأربع محددة، ومعيار الأنماط ie/sch فقط، ولا شرط أداء شفهي أو استماع.",
+      "P01 تهجئة بتحقق ذاتي فردي، مع قالب كتابة واضح ومقارنة بالجدول؛ لا يثبت حد الأحرف أو مربعات التحقق جودة النطق.",
+      "التسجيلات الثلاثة موجودة ولم تتغير؛ التقييم مستقل عنها. الإصدار v2 لا يقبل سجل إتقان v1، دون حذف سجل الإتقان القديم عند تحميله."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-01-Q01",
+      "sourceTaskIds": [
+        "DL-A0-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الأنماط"
+      ],
+      "prompt": "أي نمط كتابي يرد في كلمة mein؟",
+      "options": [
+        "ie",
+        "z",
+        "ei",
+        "sch"
+      ],
+      "answerIndex": 2,
+      "explanation": "تُكتب mein بالنمط ei؛ ويقارب صوته «آي»."
+    },
+    {
+      "id": "DL-A0-01-Q02",
+      "sourceTaskIds": [
+        "DL-A0-01-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الأنماط"
+      ],
+      "prompt": "أي نمط تراه في كلمة vier؟",
+      "options": [
+        "ie",
+        "ei",
+        "sch",
+        "sp"
+      ],
+      "answerIndex": 0,
+      "explanation": "تحتوي vier على ie، وهو هنا صوت i طويل؛ لا تخلطه بـei."
+    },
+    {
+      "id": "DL-A0-01-Q03",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "ما الصوت التقريبي للنمط sch في كلمة Schule؟",
+      "options": [
+        "ش",
+        "تس",
+        "ف"
+      ],
+      "answerIndex": 0,
+      "explanation": "يُقرأ sch في Schule قريبًا من «ش»."
+    },
+    {
+      "id": "DL-A0-01-Q04",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "كيف يبدأ نطق z في كلمة zwei؟",
+      "options": [
+        "ز",
+        "ش",
+        "تس"
+      ],
+      "answerIndex": 2,
+      "explanation": "يبدأ z في zwei بصوت قريب من «تس»، وليس ز أو ش."
+    },
+    {
+      "id": "DL-A0-01-Q05",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "ما الصوت التقريبي للحرف w في Wasser؟",
+      "options": [
+        "قريب من f",
+        "قريب من v الإنجليزية",
+        "قريب من خ"
+      ],
+      "answerIndex": 1,
+      "explanation": "يُقرأ w الألماني قريبًا من v الإنجليزية في كلمة Wasser."
+    },
+    {
+      "id": "DL-A0-01-Q06",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "كيف يُنطق الحرف v في كلمة vier؟",
+      "options": [
+        "قريب من z",
+        "قريب من w الألمانية",
+        "قريب من f"
+      ],
+      "answerIndex": 2,
+      "explanation": "يُنطق v في vier بصوت /f/. هذا حكم على هذه الكلمة، وليس على كل كلمة تتضمن v."
+    },
+    {
+      "id": "DL-A0-01-Q07",
+      "sourceTaskIds": [
+        "DL-A0-01-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "وعي صوتي"
+      ],
+      "prompt": "أي وصف يقارب نطق sp في بداية كلمة Sport؟",
+      "options": [
+        "ش ثم پ تقريبًا",
+        "س ثم پ تقريبًا",
+        "ف"
+      ],
+      "answerIndex": 0,
+      "explanation": "في Sport يبدأ النطق بـ/ʃp/، أي ش ثم پ تقريبًا، لا س ثم پ. هذا سؤال معرفة بالنمط، وليس اختبارًا لنطقك."
+    },
+    {
+      "id": "DL-A0-01-Q08",
+      "sourceTaskIds": [
+        "DL-A0-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الحروف"
+      ],
+      "prompt": "ما آخر حرف مكتوب في كلمة Deutsch؟",
+      "options": [
+        "s",
+        "h",
+        "t"
+      ],
+      "answerIndex": 1,
+      "explanation": "تُكتب Deutsch بالحروف D-e-u-t-s-c-h؛ وآخر حرف فيها h."
+    },
+    {
+      "id": "DL-A0-01-Q09",
+      "sourceTaskIds": [
+        "DL-A0-01-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "تمييز الحروف"
+      ],
+      "prompt": "ما أول ثلاثة أحرف مكتوبة في كلمة Schule؟",
+      "options": [
+        "S-c-h",
+        "S-c-h-e",
+        "S-c-h-u"
+      ],
+      "answerIndex": 0,
+      "explanation": "أول ثلاثة أحرف في Schule هي S-c-h، وتمثل هنا النمط sch؛ ثم يأتي الحرف u."
+    },
+    {
+      "id": "DL-A0-01-Q10",
+      "sourceTaskIds": [
+        "DL-A0-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "skillTags": [
+        "أسماء الحروف",
+        "تهجئة"
+      ],
+      "prompt": "أي تسلسل من أسماء الحروف الألمانية يتهجّى Lina؟",
+      "options": [
+        "I – El – A – En",
+        "El – I – En – A",
+        "El – I – Em – A"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lina تُهجّى L-I-N-A؛ وبأسماء الحروف كما في الجدول: El – I – En – A."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-01-P01",
+      "sourceTaskIds": [
+        "DL-A0-01-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "modality": [
+        "speaking",
+        "writing"
+      ],
+      "prompt": "اختر اسمًا قصيرًا مثل Lina أو Sami أو Nora، واكتب: الاسم — الحروف — أسماء الحروف، ثم قل أسماء الحروف لنفسك. استخدم جدول الدرس للمقارنة؛ لا يلزم شريك أو تسجيل.",
+      "criteria": {
+        "taskCompletion": "يكتب الاسم وحروفه وأسماءها كاملة وبالترتيب، ثم يؤدي التهجئة لنفسه.",
+        "meaningClarity": "يعيد تجميع الحروف المكتوبة فيحصل على الاسم نفسه دون حرف ناقص أو زائد؛ لا يحتاج مستمعًا آخر.",
+        "targetSkill": "يقارن أسماء الحروف بجدول الدرس، مثل Lina — L-I-N-A — El – I – En – A؛ لا تُشترط لهجة محلية بعينها ولا يدّعي التحقق الذاتي تصحيح النطق."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-01-P02",
+      "sourceTaskIds": [
+        "DL-A0-01-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-01-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "راجع Mina، Berlin، sieben، Schule في تمرين 6، ثم غطّ القائمة واكتب الكلمات الأربع من الذاكرة. اكشف النموذج وقارن الحروف وحالة أول حرف، وصحّح ما يلزم. هذه مهمة كتابة، لا استماع أو نطق.",
+      "criteria": {
+        "taskCompletion": "يحاول كتابة الكلمات الأربع من الذاكرة، ثم يقارنها بالنموذج ويصحح الاختلافات.",
+        "meaningClarity": "تبقى الكلمات الأربع منفصلة ومقروءة: Mina، Berlin، sieben، Schule.",
+        "targetSkill": "يراجع ie في sieben وsch في Schule وترتيب الحروف؛ يبدأ Mina وBerlin وSchule بحرف كبير، وsieben بحرف صغير كما في النموذج."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 12,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-11-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-11-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-11-G01 وكتل المصدر T01–T07: مفردات البيئة والإنسان (die Renaturierung, der Schutz, die Auswirkung, der Lebensraum, abwägen)، وتحويل الجملة الفعلية إلى صياغة اسمية، وحروف الجر والحالات (bei + Dativ, durch + Akkusativ, aufgrund + Genitiv)، والتحويل العكسي إلى الجمل الفعلية، وقراءة المقترح الخيالي في Flussbogen، ونص الاستماع المكتوب، واختيار الأسلوب الرسمي الموجز.",
+      "ترتبط P01 مباشرةً بـT08 (الجزء أ — كتابة فقط، speakAloud: false) لإنتاج 5 إلى 6 جمل ألمانية عن إجراء بيئي خيالي لحماية مكان طبيعي باستخدام صيغتين اسميتين على الأقل وذكر أثر محتمل بصيغة غير جازمة واحتياج إنساني ينبغي مراعاته. وترتبط P02 بـT05/T06/T07/T08 (الجزء ب — كتابة + قراءة بصوت مسموع، speakAloud: true) لتلخيص معلومات القراءة ونص الاستماع المكتوب وتمييز الوقائع النصية عن التوقعات غير المضمونة.",
+      "تُنجز المهمتان محليًا دون تسجيل أو إرسال صوت؛ ويمكن الإجابة عن T06 وP02 من النص المكتوب دون الحاجة إلى تشغيل MP3 أو خدمة خارجية، ولا يصحح التطبيق الكتابة المفتوحة أو النطق آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-11-Q01",
+      "sourceTaskIds": [
+        "DL-B2-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "مفردات البيئة",
+        "die Renaturierung"
+      ],
+      "prompt": "أي مفردة تعني إعادة جزء من ضفة أو نهر إلى حالة أقرب إلى الطبيعة؟",
+      "options": [
+        "die Renaturierung",
+        "die Verringerung",
+        "die Beteiligung"
+      ],
+      "answerIndex": 0,
+      "explanation": "**die Renaturierung** (الجمع: **die Renaturierungen**) تعني إعادة منطقة طبيعية متأثرة كضفة نهر إلى حالة طبيعية؛ أما **die Verringerung** فتعني التقليل (من **verringern**)، و**die Beteiligung** تعني المشاركة (من **sich beteiligen**)."
+    },
+    {
+      "id": "DL-B2-11-Q02",
+      "sourceTaskIds": [
+        "DL-B2-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "تحويل الفعل إلى اسم",
+        "Nominalisierung"
+      ],
+      "prompt": "أكمل بالاسم المناسب: **Beim ___ von Lebensräumen ist eine sorgfältige Planung wichtig.**",
+      "options": [
+        "schützt",
+        "Schutz",
+        "geschützt"
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد **Beim** (**bei + dem** في حالة **Dativ Singular**) يجب أن يأتي اسم مفرد مذكر أو محايد، والاسم المشتق من الفعل **schützen** هو **der Schutz**: **Beim Schutz von Lebensräumen**. أما **schützt** ففعل مصرف للمضارع، و**geschützt** اسم مفعول (**Partizip II**) لا يقع اسمًا مجرورًا بعد **beim**."
+    },
+    {
+      "id": "DL-B2-11-Q03",
+      "sourceTaskIds": [
+        "DL-B2-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "الأسماء المشتقة بـ -ung",
+        "die Beteiligung"
+      ],
+      "prompt": "اختر الاسم الذي يحول الفعل إلى صياغة اسمية: **Bei der ___ der Bevölkerung werden verschiedene Ideen gesammelt.**",
+      "options": [
+        "Beteiligte",
+        "beteiligt",
+        "Beteiligung"
+      ],
+      "answerIndex": 2,
+      "explanation": "عند تحويل الجملة الفعلية **Wenn sich die Bevölkerung beteiligt** إلى صياغة اسمية بعد **Bei der** (**Dativ Singular feminin**) نستخدم الاسم المؤنث المشتق لحدث المشاركة وهو **die Beteiligung**: **Bei der Beteiligung der Bevölkerung**. أما **Beteiligte** فتشير إلى شخص مشارك، و**beteiligt** صفة/اسم مفعول."
+    },
+    {
+      "id": "DL-B2-11-Q04",
+      "sourceTaskIds": [
+        "DL-B2-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "حروف الجر والحالات",
+        "bei + Dativ"
+      ],
+      "prompt": "أكمل حرف الجر والحالة: **___ Schutz des Lebensraums ist eine sorgfältige Planung wichtig.**",
+      "options": [
+        "Bei dem",
+        "Bei den",
+        "Durch dem"
+      ],
+      "answerIndex": 0,
+      "explanation": "حرف الجر **bei** يطلب دائمًا حالة **Dativ**، ولأن الاسم **der Schutz** مذكر مفرد تكون أداة التعريف في **Dativ** هي **dem**: **Bei dem Schutz** (أو مدمجةً **Beim Schutz**). أما **Bei den** فللجمع في **Dativ**، و**Durch dem** خطأ نحوي لأن **durch** يطلب **Akkusativ** (**durch den Schutz**)."
+    },
+    {
+      "id": "DL-B2-11-Q05",
+      "sourceTaskIds": [
+        "DL-B2-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "حروف الجر والحالات",
+        "Dativ / Akkusativ / Genitiv"
+      ],
+      "prompt": "أي مجموعة تطابق حروف الجر والحالات الشائعة في T03؟",
+      "options": [
+        "bei + Akkusativ؛ durch + Dativ؛ aufgrund + Genitiv",
+        "bei + Dativ؛ durch + Akkusativ؛ aufgrund + Genitiv",
+        "bei + Dativ؛ durch + Genitiv؛ aufgrund + Akkusativ"
+      ],
+      "answerIndex": 1,
+      "explanation": "في الصياغة الاسمية الرسمية يطلب حرف الجر الظرفي/الشرطي **bei** حالة **Dativ** (**beim Schutz / bei der Planung**)، ويطلب حرف الوسيلة **durch** حالة **Akkusativ** (**durch die Verringerung**)، ويطلب حرف السبب **aufgrund** حالة **Genitiv** (**aufgrund der Wiederherstellung**)."
+    },
+    {
+      "id": "DL-B2-11-Q06",
+      "sourceTaskIds": [
+        "DL-B2-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "التحويل إلى الأسلوب الفعلي",
+        "Indem-Satz"
+      ],
+      "prompt": "حوّل العبارة الاسمية إلى فعلية مع الحفاظ على السبب والنتيجة: **Durch die Verringerung des Abfalls sinkt die Belastung.**",
+      "options": [
+        "Weil man die Belastung verringert, sinkt der Abfall.",
+        "Indem man die Belastung verringert, sinkt der Abfall.",
+        "Indem man den Abfall verringert, sinkt die Belastung."
+      ],
+      "answerIndex": 2,
+      "explanation": "العبارة الاسمية **Durch die Verringerung des Abfalls** تعبّر عن الوسيلة (**durch + Akkusativ**)، ويقابلها الرابط الفعلي **indem** مع تحويل المضاف إليه **des Abfalls** إلى مفعول به **den Abfall** والفعل المشتق **Verringerung** إلى **verringert** في نهاية الجملة الفرعية: **Indem man den Abfall verringert, sinkt die Belastung.** الخياران الآخران يعكسان الوسيلة والنتيجة."
+    },
+    {
+      "id": "DL-B2-11-Q07",
+      "sourceTaskIds": [
+        "DL-B2-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "أهداف مقترح بيئي خيالي"
+      ],
+      "prompt": "بحسب قراءة T05، ما الهدفان المذكوران للمقترح في حي Flussbogen الخيالي؟",
+      "options": [
+        "حماية موئل صغير وتحسين الوصول إلى النهر",
+        "زيادة السياحة وبناء موقف سيارات جديد",
+        "إزالة المسار وتحويل ضفة النهر إلى منطقة صناعية"
+      ],
+      "answerIndex": 0,
+      "explanation": "ينصّ نص القراءة صراحةً على الهدفين: **Ziel des Vorschlags ist der Schutz eines kleinen Lebensraums und die Verbesserung des Zugangs zum Fluss.** أما بناء موقف سيارات أو تحويل الضفة إلى منطقة صناعية فغير واردين في النص."
+    },
+    {
+      "id": "DL-B2-11-Q08",
+      "sourceTaskIds": [
+        "DL-B2-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "التمييز بين الحقيقة والاحتمال"
+      ],
+      "prompt": "لماذا لم يُتخذ قرار نهائي في قراءة T05؟",
+      "options": [
+        "لأن المشروع أُلغي قبل عرضه على السكان",
+        "بسبب اختلاف احتياجات الناس",
+        "لأن النص يؤكد رفض السكان جميع المقترحات"
+      ],
+      "answerIndex": 1,
+      "explanation": "يعلل النص تأجيل القرار النهائي بقوله: **Aufgrund der unterschiedlichen Bedürfnisse wird noch keine endgültige Entscheidung getroffen.** ولا يذكر النص إلغاء المشروع أو رفض السكان لجميع المقترحات."
+    },
+    {
+      "id": "DL-B2-11-Q09",
+      "sourceTaskIds": [
+        "DL-B2-11-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "المشاركة المجتمعية"
+      ],
+      "prompt": "وفق النص المكتوب في T06، بماذا تساعد مشاركة السكان؟",
+      "options": [
+        "تضمن نجاح كل إجراء بيئي",
+        "تتيح اتخاذ القرار قبل فحص الآثار",
+        "تساعد على تعرف الاحتياجات المختلفة"
+      ],
+      "answerIndex": 2,
+      "explanation": "يذكر النص المكتوب للاستماع: **Die Beteiligung der Bevölkerung hilft dabei, unterschiedliche Bedürfnisse zu erkennen.** ولا يزعم النص أن المشاركة تضمن نجاح كل إجراء أو تغني عن فحص الآثار (**erst nach der Prüfung möglicher Auswirkungen**)."
+    },
+    {
+      "id": "DL-B2-11-Q10",
+      "sourceTaskIds": [
+        "DL-B2-11-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "skillTags": [
+        "الأسلوب الرسمي الموجز",
+        "الصياغة الاسمية"
+      ],
+      "prompt": "أي عبارة أكثر تكثيفًا وملاءمة لتقرير من العبارة الفعلية **Wenn Lebensräume geschützt werden, ...**؟",
+      "options": [
+        "Weil man Lebensräume schützt, ...",
+        "Beim Schutz von Lebensräumen ...",
+        "Während Lebensräume geschützt werden, ..."
+      ],
+      "answerIndex": 1,
+      "explanation": "العبارة الاسمية **Beim Schutz von Lebensräumen ...** تكثّف الجملة الفعلية الشرطية/الزمنية **Wenn Lebensräume geschützt werden, ...** باستخدام **beim + Dativ** والاسم المشتق **der Schutz** مع **von + Dativ Plural**، أما الخياران الآخران فجملتان فعليتان فرعيتان."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-11-P01",
+      "sourceTaskIds": [
+        "DL-B2-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "الجزء (أ) — كتابة فقط: اكتب خمس جمل ألمانية على الأقل (5 إلى 6 جمل) عن إجراء خيالي لحماية مكان طبيعي. استخدم صيغتين اسميتين على الأقل، مثل **beim Schutz von Lebensräumen** أو **durch die Verringerung des Abfalls** أو **bei der Beteiligung der Bevölkerung**، مع مراعاة حرف الجر والحالة الإعرابية والمضاف إليه. اذكر أثرًا محتملًا بصيغة غير جازمة واحتياجًا إنسانيًا عمليًا (مثل الوصول أو استخدام الممر) ينبغي مراعاته، ولا تعرض الأثر المتوقع كحقيقة مؤكدة. تُنجز هذه المهمة كتابةً فقط دون اشتراط الجهر أو تسجيل صوت.",
+      "criteria": {
+        "taskCompletion": "خمس جمل ألمانية على الأقل (5–6 جمل) عن إجراء بيئي خيالي لحماية مكان طبيعي، تتضمن صيغتين اسميتين وتذكر أثرًا محتملًا واحتياجًا إنسانيًا.",
+        "meaningClarity": "الإجراء والمكان خياليان؛ يميز المتعلم الأثر المتوقع بصيغة غير جازمة (مثل könnte / kann) من الحقيقة المثبتة، ويذكر مراعاة استخدام المكان واحتياجات الناس.",
+        "targetSkill": "يستخدم صياغة اسمية رسمية وموجزة، ويختار حرف الجر والحالة المناسبين (bei + Dativ / durch + Akkusativ / aufgrund + Genitiv) في تركيبين على الأقل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-11-P02",
+      "sourceTaskIds": [
+        "DL-B2-11-T05",
+        "DL-B2-11-T06",
+        "DL-B2-11-T07",
+        "DL-B2-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-11-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "الجزء (ب) — كتابة + قراءة بصوت مسموع: استنادًا إلى قراءة T05 والنص المكتوب لتدريب الاستماع T06 والأسلوب الرسمي في T07، اكتب إحاطة ألمانية من خمس إلى ست جمل لسكان الحي الخيالي، أو حضّرها وقدّمها شفهيًا. اذكر هدفي المقترح في Flussbogen وحاجة السكان والزوار إلى الوصول واستخدام الممر، وسبب عدم اتخاذ قرار نهائي بعد، وما ينبغي فحصه وتوضيحه قبل بدء الأعمال. استخدم صيغتين اسميتين على الأقل، واذكر أثرًا محتملًا بصيغة غير جازمة، وميّز ما تقوله النصوص عما تتوقعه أنت؛ فالمكان والإجراء خياليان ولا يضمنان نتيجة بيئية. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة من خمس إلى ست جمل ألمانية تتناول هدفي المقترح، واحتياجات الوصول واستخدام الممر، واختلاف الاحتياجات الذي يؤجل القرار، وفحص الآثار قبل العمل، مع صيغتين اسميتين وأثر محتمل.",
+        "meaningClarity": "ينسب التفاصيل إلى قراءة T05 أو نص T06 المكتوب، ويميّز المعلومات النصية عن توقعه الشخصي، ولا يقدم الأثر البيئي كنتيجة مضمونة.",
+        "targetSkill": "يستخدم الصيغ الاسمية وحروف الجر والحالات المناسبة (bei + Dativ / durch + Akkusativ / aufgrund + Genitiv) في سياق رسمي موجز، ويقرأ الإحاطة بصوت مسموع لنفسه دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

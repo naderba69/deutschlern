@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-02-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-02-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR20: صيغ المقارنة والتفضيل ودورdenn/deshalb مقيدة بالنمط المدروس؛أوقات السفر بيانات تدريبية لا جدول حالي.",
+      "P01/T08 جدول خيالي وأربع جمل مع الجهر؛P02/T07 أربع جمل كتابة فقط من الحوار،بمعايير ونموذجين مطابقين.",
+      "التسجيلات الخمسة محفوظة؛الطول والإقرار والتفريغ لا تصحح اللغة أو النطق أو تثبت الاستماع المستقل."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-02-Q01",
+      "sourceTaskIds": [
+        "DL-A2-02-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "صيغة المقارنة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما صيغة المقارنة غير المنتظمة للصفة **gut**؟",
+      "options": [
+        "besser",
+        "guter",
+        "am gutesten"
+      ],
+      "answerIndex": 0,
+      "explanation": "الصيغ هي gut – besser – am besten."
+    },
+    {
+      "id": "DL-A2-02-Q02",
+      "sourceTaskIds": [
+        "DL-A2-02-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "المقارنة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل جملة التساوي: Der Bus ist ___ bequem ___ der Zug.",
+      "options": [
+        "mehr … als",
+        "so … wie",
+        "am … wie"
+      ],
+      "answerIndex": 1,
+      "explanation": "للتساوي نستخدم so … wie."
+    },
+    {
+      "id": "DL-A2-02-Q03",
+      "sourceTaskIds": [
+        "DL-A2-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "التفضيل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعني «الأفضل»؟",
+      "options": [
+        "besser",
+        "am gut",
+        "am besten"
+      ],
+      "answerIndex": 2,
+      "explanation": "صيغة التفضيل من gut هي am besten."
+    },
+    {
+      "id": "DL-A2-02-Q04",
+      "sourceTaskIds": [
+        "DL-A2-02-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "صيغة المقارنة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Der Zug ist schnell als der Bus.",
+        "Der Zug ist schneller als der Bus.",
+        "Der Zug ist am schneller als der Bus."
+      ],
+      "answerIndex": 1,
+      "explanation": "مع المقارنة بين شيئين نستخدم الصفة المقارنة مع als."
+    },
+    {
+      "id": "DL-A2-02-Q05",
+      "sourceTaskIds": [
+        "DL-A2-02-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "أدوات الربط",
+        "اختيار محدد"
+      ],
+      "prompt": "أي ترتيب صحيح بعد **denn**؟",
+      "options": [
+        "Ich nehme den Zug, denn er ist schneller.",
+        "Ich nehme den Zug, denn ist er schneller.",
+        "Ich nehme den Zug, denn schneller er ist."
+      ],
+      "answerIndex": 0,
+      "explanation": "في النمط المدروس بعد denn: er ثم ist؛denn لا تشغل الموقع الأول داخل الجملة الرئيسية الثانية."
+    },
+    {
+      "id": "DL-A2-02-Q06",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "كم تستغرق رحلة القطار إلى Bremen بحسب النص؟",
+      "options": [
+        "ثلاث ساعات.",
+        "ساعتان.",
+        "ساعة وعشر دقائق."
+      ],
+      "answerIndex": 2,
+      "explanation": "النص يذكر eine Stunde und zehn Minuten."
+    },
+    {
+      "id": "DL-A2-02-Q07",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي وسيلة أقل كلفة بحسب نص قراءةElif؟",
+      "options": [
+        "Der Zug.",
+        "Der Bus.",
+        "Das Fahrrad."
+      ],
+      "answerIndex": 1,
+      "explanation": "النص يقول إن الحافلة أرخص لكنها أبطأ."
+    },
+    {
+      "id": "DL-A2-02-Q08",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا يوجد في Leipzig بحسب النص؟",
+      "options": [
+        "متاحف كثيرة وبلدة قديمة كبيرة.",
+        "شاطئ كبير.",
+        "متحف واحد فقط."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص viele Museen und eine große Altstadt."
+    },
+    {
+      "id": "DL-A2-02-Q09",
+      "sourceTaskIds": [
+        "DL-A2-02-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "deshalb",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الجملة الصحيحة: Elif möchte nicht lange fahren. ___ fährt sie nach Bremen.",
+      "options": [
+        "Denn",
+        "Weil",
+        "Deshalb"
+      ],
+      "answerIndex": 2,
+      "explanation": "عند وضع deshalb أول الجملة الرئيسية تأتي بعدها fährt ثم sie؛الأداة تعرض نتيجة تفضيل رحلة قصيرة."
+    },
+    {
+      "id": "DL-A2-02-Q10",
+      "sourceTaskIds": [
+        "DL-A2-02-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "skillTags": [
+        "صيغة التفضيل",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تستخدم صيغة التفضيل بشكل صحيح؟",
+      "options": [
+        "Die Verbindung ist am besser.",
+        "Die Verbindung ist am besten.",
+        "Die Verbindung ist am gut."
+      ],
+      "answerIndex": 1,
+      "explanation": "الصيغة الصحيحة للتفضيل هي am besten."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-02-P01",
+      "sourceTaskIds": [
+        "DL-A2-02-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استعمل جدول T08 الخيالي وأولوية قصر المدة لتكتب أربع جمل ثم اقرأ الأربع بصوت مرتفع،ويمكنك الأداء منفردًا: الأولى تقارن سرعة القطار بالحافلة بـ schneller als؛الثانية تساوي راحة الحافلة والقطار بـ so bequem wie؛الثالثة تحدد أسرع الوسائل الثلاث بـ am schnellsten؛الرابعة تختار القطار وتشرح السبب بـ denn. الصيغ الثلاث كلها مطلوبة،لا الاختيار بين التساوي والتفضيل. لا شريك أو تسجيل أو بيانات سفر شخصية مطلوبة.",
+      "criteria": {
+        "taskCompletion": "أربع جمل تحقق المقارنة والتساوي والتفضيل والاختيار المعلل كلها؛قرأت الأربع جهرًا.",
+        "meaningClarity": "الجمل تطابق جدولT08: القطار أسرع الثلاثة وراحة القطار والحافلة متساوية؛الاختيار حسب قصر المدة.",
+        "targetSkill": "schneller als،وso bequem wie،وam schnellsten،وdenn مع ترتيب الفاعل ثم الفعل في النموذج؛لاam schneller."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-02-P02",
+      "sourceTaskIds": [
+        "DL-A2-02-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-02-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب أربع جمل بضمير ich لاختيار وسيلة من حوار Lea و Ben إلى Bremen؛أولويتك قصر المدة لا أقل سعر. الأولى تقارن سرعة القطار والحافلة بـ schneller als؛الثانية تقول إنك لا تريد السفر طويلًا؛الثالثة تختار القطار وتعطي السبب بـ Ich nehme…, denn er ist…؛الرابعة تعيد صياغة الاختيار نتيجةً تبدأ بـ Deshalb ثم الفعل ثم ich،وتذكر Bremen. هذه كتابة فقط،دون جهر أو تسجيل. لا تخترع سعرًا عدديًا أو ساعة وصول غير مذكورين؛الثالثة والرابعة تدريب طريقتين مترابطتين لشرح الاختيار نفسه.",
+      "criteria": {
+        "taskCompletion": "أربع جمل: مقارنة السرعة،أولوية قصر المدة،اختيار وسبب بـdenn،ونتيجة بـDeshalb؛كتابة فقط.",
+        "meaningClarity": "الاختيار نفسه في الجملتين الأخيرتين ويطابق الحوار؛لا سعر أو ساعة وصول مختلقة.",
+        "targetSkill": "schneller als،وdenn er ist في السبب،وDeshalb fahre ich في النتيجة،معBremen وجهة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

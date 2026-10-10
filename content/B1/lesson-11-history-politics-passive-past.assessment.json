@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-11-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-11-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR41: صُحح مفتاحT06.4 إلىGästebuch وحدها؛einem معطاة. قُيد جدولالمساعد بالغائب،وموضعPartizip II بالجملةالمدروسة،وشُرحالمجهولغيرالشخصي فيالتصويت.",
+      "T02 أضيفت لهrenoviert/eingeführt/eröffnet؛T07 أضيفت لهwurde größer والمجهولغيرالشخصي لدعمحدودالتمييز وQ06.",
+      "P01 أربعجملخطزمني كتابةفقط؛P02 خمسجملمعلوماتالمعرض كتابةوجهر. المصدر والمعايير والنموذجان متطابقة،بدونشريك أوتسجيل،وحدا100/125 و80% والخيارات30 والفهارس والروابط ثابتة.",
+      "النصوص الألمانية المسجلة،والأصوات المختارةMira02/Archivarin00،والسرد02/الاستماع03 وخمسةأصول/10مقاطع ثابتةومعلقة؛لا استماع أوتوليد أواعتمادجديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-11-Q01",
+      "sourceTaskIds": [
+        "DL-B1-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "wurde/wurden",
+        "فاعل نحوي جمع"
+      ],
+      "prompt": "اختر صيغة الماضي المناسبة: Die alten Brücken ___ renoviert.",
+      "options": [
+        "wurde",
+        "wurden",
+        "werden"
+      ],
+      "answerIndex": 1,
+      "explanation": "Brücken جمع، لذلك نستخدم wurden؛ أما werden فيعطي المبني للمجهول في المضارع لا الماضي."
+    },
+    {
+      "id": "DL-B1-11-Q02",
+      "sourceTaskIds": [
+        "DL-B1-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "wurde/wurden",
+        "فاعل نحوي مفرد"
+      ],
+      "prompt": "اختر الصيغة الماضية الصحيحة: Das Denkmal ___ im Frühjahr restauriert.",
+      "options": [
+        "wurden",
+        "wurde",
+        "wird"
+      ],
+      "answerIndex": 1,
+      "explanation": "Denkmal مفرد محايد، لذلك نستخدم wurde في Präteritum، ثم يأتي Partizip II restauriert."
+    },
+    {
+      "id": "DL-B1-11-Q03",
+      "sourceTaskIds": [
+        "DL-B1-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "أفعال غير منتظمة"
+      ],
+      "prompt": "ما صيغة Partizip II الصحيحة للفعل beschließen؟",
+      "options": [
+        "beschloss",
+        "beschließt",
+        "beschlossen"
+      ],
+      "answerIndex": 2,
+      "explanation": "Partizip II من beschließen هو beschlossen، مثل: Der Beschluss wurde gefasst / Die Umgestaltung wurde beschlossen."
+    },
+    {
+      "id": "DL-B1-11-Q04",
+      "sourceTaskIds": [
+        "DL-B1-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "التحويل إلى المبني للمجهول",
+        "ترتيب الجملة"
+      ],
+      "prompt": "اختر التحويل السليم: Die Gemeinde eröffnete die Bibliothek im Jahr 1985.",
+      "options": [
+        "Die Bibliothek wurde im Jahr 1985 eröffnet.",
+        "Die Bibliothek wurden im Jahr 1985 eröffnen.",
+        "Die Gemeinde wurde im Jahr 1985 die Bibliothek eröffnet."
+      ],
+      "answerIndex": 0,
+      "explanation": "تصبح Bibliothek المفردة الفاعل النحوي، فنستخدم wurde، ويأتي Partizip II eröffnet في نهاية الجملة."
+    },
+    {
+      "id": "DL-B1-11-Q05",
+      "sourceTaskIds": [
+        "DL-B1-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "von + Dativ",
+        "ذكر منفذ الفعل"
+      ],
+      "prompt": "أكمل المبني للمجهول بصيغة von + Dativ الصحيحة: Die Jugendvertretung wurde ___ gegründet.",
+      "options": [
+        "von den Bewohnern",
+        "von die Bewohner",
+        "von der Bewohner"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد von يأتي Dativ؛ وصيغة الجمع هي den Bewohnern."
+    },
+    {
+      "id": "DL-B1-11-Q06",
+      "sourceTaskIds": [
+        "DL-B1-11-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "تمييز المعلوم والمجهول",
+        "werden + Partizip II"
+      ],
+      "prompt": "أي جملة تستخدم المبني للمجهول؟",
+      "options": [
+        "Die Gemeinde eröffnete das Museum.",
+        "Das Museum wurde eröffnet.",
+        "Das Dorf wurde größer."
+      ],
+      "answerIndex": 1,
+      "explanation": "الجملة الأولى معلوم. الثانية مبني للمجهول: wurde + Partizip II. أما wurde größer فتعني أصبح أكبر؛ تلا wurde هنا صفة لا Partizip II."
+    },
+    {
+      "id": "DL-B1-11-Q07",
+      "sourceTaskIds": [
+        "DL-B1-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل زمني"
+      ],
+      "prompt": "بحسب الخط الزمني لبلدة Sonnenfeld الخيالية، ما الذي بُني عام 1974؟",
+      "options": [
+        "الجسر القديم فوق النهر.",
+        "أرشيف البلدية.",
+        "الساحة الجديدة."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر الخط الزمني أن الجسر القديم فوق النهر بُني عام 1974."
+    },
+    {
+      "id": "DL-B1-11-Q08",
+      "sourceTaskIds": [
+        "DL-B1-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "حدث مدني خيالي"
+      ],
+      "prompt": "ما الموضوع الذي نوقش علنًا في Sonnenfeld عام 2018؟",
+      "options": [
+        "اقتراح إعادة تصميم ساحة السوق.",
+        "تأسيس ممثلية الشباب.",
+        "افتتاح أرشيف البلدية."
+      ],
+      "answerIndex": 0,
+      "explanation": "في عام 2018 نوقش علنًا اقتراح إعادة تصميم ساحة السوق؛ تأسست ممثلية الشباب عام 2004 وافتُتح الأرشيف عام 1985."
+    },
+    {
+      "id": "DL-B1-11-Q09",
+      "sourceTaskIds": [
+        "DL-B1-11-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "تاريخ"
+      ],
+      "prompt": "اقرأ نص الاستماع: متى افتُتح معرض الجسر القديم؟",
+      "options": [
+        "عام 1985.",
+        "عام 2018.",
+        "عام 2021."
+      ],
+      "answerIndex": 2,
+      "explanation": "يذكر نص الاستماع المكتوب أن المعرض افتُتح عام 2021؛ لا يلزم تشغيل MP3 للإجابة."
+    },
+    {
+      "id": "DL-B1-11-Q10",
+      "sourceTaskIds": [
+        "DL-B1-11-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "von + Dativ"
+      ],
+      "prompt": "من بنى نموذج الجسر في نص الاستماع؟",
+      "options": [
+        "سكان البلدة.",
+        "ورشة محلية.",
+        "الصفوف المدرسية."
+      ],
+      "answerIndex": 1,
+      "explanation": "بنت ورشة محلية نموذج الجسر. يذكر النص ذلك في المبني للمجهول: Ein Modell der Brücke wurde von einer örtlichen Werkstatt gebaut."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-11-P01",
+      "sourceTaskIds": [
+        "DL-B1-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خطًا زمنيًا خياليًا في أربع جمل ألمانية:1970 بناء جسر في بلدة سمّها وصرّح بأنها خيالية؛1985 افتتاح مكتبة فيها؛2004 تأسيس مجموعتين للشباب؛2018 ترميم ساحة السوق بواسطة البلدية. استخدم المبني للمجهول في Präteritum ثلاث مرات على الأقل، بينها مفرد وجمع، واذكر السنوات بالترتيب. هذه كتابة فقط دون جهر أو تسجيل، ولا تنسب الوقائع إلى بلدة حقيقية.",
+      "criteria": {
+        "taskCompletion": "أربع جمل بالأحداث الأربعة المحددة وسنوات1970/1985/2004/2018، مع بلدة مسماة خيالية؛ كتابة فقط.",
+        "meaningClarity": "الترتيب الزمني والمباني والمجموعتان واضحة، ولا تخلط المعطيات الخيالية بتاريخ بلدة حقيقية.",
+        "targetSkill": "ثلاث صيغ على الأقل من Vorgangspassiv في Präteritum، مع مفرد وجمع ومطابقة المساعد، وPartizip II في نهاية الإطار الفعلي للجمل الرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-11-P02",
+      "sourceTaskIds": [
+        "DL-B1-11-T06",
+        "DL-B1-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-11-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "قدّم معرض Sonnenfeld الخيالي من نص الاستماع في خمس جمل ألمانية مكتوبة ثم اقرأها بصوت واضح بنفسك. اذكر المعلومات الخمس: افتتاح المعرض عن الجسر عام2021 في المتحف؛ جمع صور للمعرض من السكان؛ بناء ورشة محلية نموذج الجسر؛ تدوين ذكريات في دفتر الزوار؛ اصطحاب صفوف مدرسية في جولة عبر المعرض. استعمل المبني للمجهول في Präteritum ثلاث مرات على الأقل، بينها مفرد وجمع، وvon + Dativ للورشة مرة واحدة على الأقل. لا تخترع تاريخًا لبناء الجسر أو أسماء الزوار، ولا يلزم شريك أو تسجيل.",
+      "criteria": {
+        "taskCompletion": "خمس جمل تذكر الافتتاح2021 والصور ونموذج الورشة والذكريات في دفتر الزوار والصفوف المدرسية؛ كتابة ثم جهر.",
+        "meaningClarity": "تقديم معلومات المعرض الخيالي كما في النص، لا تغيير افتتاح المعرض إلى بناء الجسر ولا اختراع أزمنة أو أسماء.",
+        "targetSkill": "ثلاث صيغ على الأقل من المبني للمجهول في Präteritum مع مفرد وجمع؛von + Dativ للورشة، وPartizip II في نهاية الإطار الفعلي للجمل الرئيسية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 125,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

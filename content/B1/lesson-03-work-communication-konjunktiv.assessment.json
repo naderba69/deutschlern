@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b1-03-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B1-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR33: مراجعة نصية بالمراجع؛ الخيارات30 والفهارس و80% محفوظة، دون استماع أو توليد أو اعتماد صوتي جديد.",
+      "قُيد موضع المصدر بالجزء الرئيسي فيالأمثلة قبلتابعةdass؛ hätte/wäre بحسب المعنى لا مجرد اسم بعدها؛ möchte مهذبة أصلًا.",
+      "أضيفQ02 إلىT01 وQ05/Q06 إلىT04 وQ09 إلىT06. حُفظ Q04→T03/T07 معتصحيحالكتالوج، وP02→T08 فقط.",
+      "P01 رسالة خمسجمل معتحيةوختام كتابة فقط؛ P02 أربعة أدوار لاجتماع معالجهر، ويطلبwürde وKönnten معًا. لا بيانات حقيقية أو إرسال، والنموذجان والمعايير متطابقة.",
+      "مهلةbis heute Nachmittag ليستساعةمحددة أو«قبلبعدالظهر» بإطلاق، وkannإمكانتحديث لاحدثمنجز. المقترحاتوالاستعداد لا تثبت التنفيذ أو قبولتغييرالموعد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B1-03-Q01",
+      "sourceTaskIds": [
+        "DL-B1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات العمل",
+        "فهم كلمة"
+      ],
+      "prompt": "ما معنى **die Rückmeldung** في سياق العمل؟",
+      "options": [
+        "الموعد النهائي.",
+        "الردّ أو الملاحظات على عمل.",
+        "طلب التوظيف."
+      ],
+      "answerIndex": 1,
+      "explanation": "die Rückmeldung تعني الردّ أو الملاحظات التي تصل بعد طلب أو عمل."
+    },
+    {
+      "id": "DL-B1-03-Q02",
+      "sourceTaskIds": [
+        "DL-B1-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "مفردات العمل",
+        "تركيب فعلي"
+      ],
+      "prompt": "أي تركيب يعني «يتقدّم إلى وظيفة»؟",
+      "options": [
+        "eine Aufgabe übernehmen",
+        "sich um eine Stelle bewerben",
+        "eine Frist verlängern"
+      ],
+      "answerIndex": 1,
+      "explanation": "sich um eine Stelle bewerben تعني التقدّم إلى وظيفة؛ أما übernehmen فتعني يتولّى."
+    },
+    {
+      "id": "DL-B1-03-Q03",
+      "sourceTaskIds": [
+        "DL-B1-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "Konjunktiv II",
+        "تصريف würde"
+      ],
+      "prompt": "أكمل بصيغة الجمع: **Wir ___ die Frist verlängern.**",
+      "options": [
+        "würden",
+        "würdest",
+        "würde"
+      ],
+      "answerIndex": 0,
+      "explanation": "مع wir نستخدم würden: Wir würden die Frist verlängern."
+    },
+    {
+      "id": "DL-B1-03-Q04",
+      "sourceTaskIds": [
+        "DL-B1-03-T03",
+        "DL-B1-03-T07"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "würde + المصدر",
+        "موضع الفعل"
+      ],
+      "prompt": "أكمل مع وضع المصدر في النهاية: **Ich würde gern im Team ___.** (arbeiten)",
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeiten"
+      ],
+      "answerIndex": 2,
+      "explanation": "المصدرarbeiten يأتي في نهاية الجزء الرئيسي معwürde، بلاzu في هذا النمط. وقد تتلو الجزء الرئيسي تابعة؛ ليس المصدر آخر كل جملة مركبة بالضرورة."
+    },
+    {
+      "id": "DL-B1-03-Q05",
+      "sourceTaskIds": [
+        "DL-B1-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "hätte gern",
+        "صيغة مهذبة"
+      ],
+      "prompt": "اختر الصيغة الصحيحة للتعبير عن الرغبة: **Ich ___ gern flexiblere Arbeitszeiten.**",
+      "options": [
+        "wäre",
+        "hätte",
+        "würde"
+      ],
+      "answerIndex": 1,
+      "explanation": "المعنى هنا الرغبة في الحصول على أوقات دوام أكثر مرونة، فنختارhätte منhaben. لا تختَرhätte لمجرد وجود اسم: Ich wäre gern Teil eines Teams سليمة لمعنى أن أكون جزءًا من فريق. würde تحتاج هنا مصدرًا إضافيًا."
+    },
+    {
+      "id": "DL-B1-03-Q06",
+      "sourceTaskIds": [
+        "DL-B1-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "طلب مهذب",
+        "اجتماع عمل"
+      ],
+      "prompt": "أي سؤال يطلب إعادة توزيع المهام بطريقة مهذبة؟",
+      "options": [
+        "Verteilen die Aufgaben neu!",
+        "Wir Aufgaben neu verteilen würden.",
+        "Könnten wir die Aufgaben neu verteilen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Könnten wir …? سؤال نعم/لا مهذب يبدأ بالمصرف ثمwir، معverteilen مصدرًا أخيرًا. الطلب لا يثبت موافقة الآخرين أو تنفيذ إعادة التوزيع."
+    },
+    {
+      "id": "DL-B1-03-Q07",
+      "sourceTaskIds": [
+        "DL-B1-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "معلومة محددة"
+      ],
+      "prompt": "Welche Stelle wird im Kulturzentrum angeboten?",
+      "options": [
+        "Eine Vollzeitstelle als Lehrkraft.",
+        "Eine Teilzeitstelle als Assistenz.",
+        "Ein Praktikum in einem Hotel."
+      ],
+      "answerIndex": 1,
+      "explanation": "يعلن النص عن وظيفة مساعدة بدوام جزئي في المركز الثقافي."
+    },
+    {
+      "id": "DL-B1-03-Q08",
+      "sourceTaskIds": [
+        "DL-B1-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "موعد نهائي"
+      ],
+      "prompt": "Bis wann soll die Bewerbung geschickt werden?",
+      "options": [
+        "Bis heute Nachmittag.",
+        "Innerhalb der nächsten zwei Wochen.",
+        "Bis Donnerstag."
+      ],
+      "answerIndex": 1,
+      "explanation": "يطلب الإعلان إرسال الطلب خلال الأسبوعين المقبلين."
+    },
+    {
+      "id": "DL-B1-03-Q09",
+      "sourceTaskIds": [
+        "DL-B1-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "هوية المتحدث"
+      ],
+      "prompt": "Wer ruft an?",
+      "options": [
+        "Nora aus dem Projektteam.",
+        "Farid aus dem Projektteam.",
+        "Omar aus dem Kulturzentrum."
+      ],
+      "answerIndex": 1,
+      "explanation": "الاسم مذكور نصًا: Farid من فريق المشروع؛ لا نحدده من الصوت المشترك معOmar ولا من حوارNora."
+    },
+    {
+      "id": "DL-B1-03-Q10",
+      "sourceTaskIds": [
+        "DL-B1-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "skillTags": [
+        "فهم الاستماع",
+        "سبب محدد"
+      ],
+      "prompt": "Welchen Grund nennt Farid für seinen Vorschlag, die Besprechung zu verschieben?",
+      "options": [
+        "Er hat einen Termin mit einem Kunden.",
+        "Er muss den Bericht prüfen.",
+        "Er arbeitet am Mittwoch nicht."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر موعدًا مع عميل يوم الأربعاء سببًا لاقتراحه. لا يثبت النص أنه غير متاح طوال اليوم أو أن نقل الاجتماع إلى الخميس قُبل ونُفذ."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B1-03-P01",
+      "sourceTaskIds": [
+        "DL-B1-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب رسالة تدريبية إلى وظيفة خيالية في مركز ثقافي. أضف تحية وختامًا خارج خمس جمل للمتن: جملة تحدد الوظيفة المطلوبة؛ جملة تذكر مهارة؛ جملة تذكر خبرة خيالية؛ جملة بـwürde + المصدر تبين ما تود تقديمه للفريق؛ وسؤال مهذب يطلب موعد مقابلة. رتّب المصدر والفعل، واستخدم صيغة المخاطبة الرسمية Sie. المهمة كتابة فقط، ولا يُشترط الجهر أو التسجيل أو إرسال الرسالة أو إدخال بيانات حقيقية.",
+      "criteria": {
+        "taskCompletion": "تحية وختام خارج خمس جمل للمتن: وظيفة ومهارة وخبرة خيالية وما يود تقديمه وطلب موعد مقابلة؛ كتابة فقط.",
+        "meaningClarity": "رسالة تدريبية مترابطة للمركز الثقافي، يظهر فيها ما يقدمه المتقدم وما يطلبه دون بيانات حقيقية أو ادعاء إرسال.",
+        "targetSkill": "würde + مصدر في الجزء الرئيسي، وطلب مقابلة مهذب، ومخاطبةSie/Ihr المناسبة مع ترتيب الجملة الصحيح."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 240,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B1-03-P02",
+      "sourceTaskIds": [
+        "DL-B1-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-B1-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب محاكاة اجتماع خيالية من أربعة أدوار بينA وB. يبدأA بذكر أن اليوم الاثنين وموعد تسليم التقرير الجمعة ويسأل عن اقتراح؛ يقترحB بـwürde + المصدر أن يفحص النص وأن يفحصA الأرقام؛ يطلبA بـKönnten wir ...? مقارنة النتائج غدًا؛ ويوافقB ويحدد إرسال جزئه إلىA بحلول صباح الغد. اكتب الدورين ثم اقرأهما جهرًا دون شريك أو تسجيل. يمكن أن يضم الدور أكثر من جملة؛ لا موعد حقيقي أو إرسال فعلي مطلوب.",
+      "criteria": {
+        "taskCompletion": "أربعة أدوار تتضمن الاثنين والجمعة، توزيع فحص النص والأرقام بينB وA، طلب مقارنة النتائج غدًا وموافقةB وإرسال جزئه بحلول صباح الغد؛ الجهر بالدورين.",
+        "meaningClarity": "يفهم القارئ من يفحص كل جزء وما الخطوة التالية ومهلتها؛ لا اختلاط بمواعيد الإعلان أو اتصالFarid.",
+        "targetSkill": "اقتراح بـwürde + المصدر وطلب بـKönnten wir ...? معًا، مع المصدر آخر الجزء المعني وترتيب السؤال والمخاطبة الرسمية الصحيح."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

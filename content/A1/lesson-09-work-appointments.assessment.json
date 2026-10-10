@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-09-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-09-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR15: مراجعة فردية بالمراجع؛ تصحيح استنتاج القراءة ومفتاح الاستماع المحايد، وتقييد ترتيب الجملة ومطابقة الموعد والرسالة مع التدريب.",
+      "تحقق ذاتي محلي لا تصحيح للغة أو النطق؛ نموذج حوار بأربعة أدوار مع الجهر ورسالة ثلاثية كتابة فقط، دون تسجيل صوت المتعلم.",
+      "التسجيلات الموجودة متاحة دون تغيير أو اعتماد جديد؛ التفريغ ظاهر والتقييم لا يقيس استماعًا مستقلًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-09-Q01",
+      "sourceTaskIds": [
+        "DL-A1-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "مفردات العمل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Drucker؟",
+      "options": [
+        "الحاسوب",
+        "الطابعة",
+        "المشروع"
+      ],
+      "answerIndex": 1,
+      "explanation": "der Drucker تعني «الطابعة»."
+    },
+    {
+      "id": "DL-A1-09-Q02",
+      "sourceTaskIds": [
+        "DL-A1-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تحديد الموعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل بمعنى «الموعد يوم الاثنين» لا مهلة حتى الاثنين: Der Termin ist ___ Montag.",
+      "options": [
+        "um",
+        "am",
+        "bis"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع يوم الأسبوع نستخدم am."
+    },
+    {
+      "id": "DL-A1-09-Q03",
+      "sourceTaskIds": [
+        "DL-A1-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تحديد الموعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل بمعنى «أستطيع عند الخامسة» في حديث معروف عن مكالمة: Ich kann ___ fünf Uhr.",
+      "options": [
+        "am",
+        "um",
+        "von"
+      ],
+      "answerIndex": 1,
+      "explanation": "um fünf Uhr عند الخامسة؛ الفعل المفهوم من السياق هنا telefonieren، فلا يلزم تكراره في الجواب المختصر."
+    },
+    {
+      "id": "DL-A1-09-Q04",
+      "sourceTaskIds": [
+        "DL-A1-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تصريف können",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ dir helfen.",
+      "options": [
+        "kann",
+        "kannst",
+        "können"
+      ],
+      "answerIndex": 0,
+      "explanation": "تصريف können مع ich هو kann."
+    },
+    {
+      "id": "DL-A1-09-Q05",
+      "sourceTaskIds": [
+        "DL-A1-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir können eine E-Mail ___.",
+      "options": [
+        "schreiben",
+        "schreibt",
+        "schrieben"
+      ],
+      "answerIndex": 0,
+      "explanation": "في النمط البسيط المدروس يأتي المصدر الكامل schreiben بعد können في النهاية، لاschreibt أوschrieben."
+    },
+    {
+      "id": "DL-A1-09-Q06",
+      "sourceTaskIds": [
+        "DL-A1-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "الجملة الصحيحة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة خبرية مستقلة بالنمط الأساسي تصف الطابعة المعطلة؟",
+      "options": [
+        "Der Drucker ist kaputt.",
+        "Der Drucker sind kaputt.",
+        "Der Drucker kaputt ist."
+      ],
+      "answerIndex": 0,
+      "explanation": "Drucker مفرد، لذا نستخدم ist، ويأتي الفعل المصرف ثانيًا."
+    },
+    {
+      "id": "DL-A1-09-Q07",
+      "sourceTaskIds": [
+        "DL-A1-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "مفردات المواعيد",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى der Termin؟",
+      "options": [
+        "الموعد",
+        "الطابعة",
+        "الزميلة"
+      ],
+      "answerIndex": 0,
+      "explanation": "der Termin تعني «الموعد»."
+    },
+    {
+      "id": "DL-A1-09-Q08",
+      "sourceTaskIds": [
+        "DL-A1-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "القدرة وترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تقول «نستطيع إرسال رسالة إلكترونية» وفق النمط الأساسي المدروس، مع المصدر في النهاية ولا كلمة بعده؟",
+      "options": [
+        "Wir können eine E-Mail schicken.",
+        "Wir kann eine E-Mail schicken.",
+        "Wir können schicken eine E-Mail."
+      ],
+      "answerIndex": 0,
+      "explanation": "مع wir نقول können؛ schicken في النهاية يحقق النمط المطلوب. لا نختبر الإلحاق في الكلام هنا."
+    },
+    {
+      "id": "DL-A1-09-Q09",
+      "sourceTaskIds": [
+        "DL-A1-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "تصريف können",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل السؤال: ___ du mir helfen?",
+      "options": [
+        "Kann",
+        "Kannst",
+        "Können"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع du نستخدم kannst: Kannst du mir helfen?"
+    },
+    {
+      "id": "DL-A1-09-Q10",
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "skillTags": [
+        "ترتيب موعد",
+        "اختيار محدد"
+      ],
+      "prompt": "في حديث معروف عن ترتيب لقاء، أي جواب يذكر وقتًا متاحًا عند الخامسة؟",
+      "options": [
+        "Ich kann um fünf Uhr.",
+        "Ich kann am fünf Uhr.",
+        "Ich bin fünf Uhr."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ich kann um fünf Uhr يذكر وقتًا متاحًا بفعل مفهوم من السياق؛ um قبل الساعة. لا يثبت هذا الجواب وحده موافقة الطرف الآخر على الموعد."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-09-P01",
+      "sourceTaskIds": [
+        "DL-A1-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربعة أدوار متناوبة بين زميلين لترتيب حديث قصير: الأول يسأل عن التفرغ في يوم محدد مع am؛ الثاني يقترح ساعة مع um؛ الثالث يقبل الموعد ويكرر اليوم والساعة ويذكر مشكلة جهاز؛ الرابع يقترح بديلًا ممكنًا بـWir können مع مصدر في النهاية. اقرأ الأدوار الأربعة بصوت مرتفع، ويمكنك أداء الدورين منفردًا؛ لا يلزم شريك أو تسجيل صوتك أو استعمال مواعيد حقيقية.",
+      "criteria": {
+        "taskCompletion": "أربعة أدوار: سؤال يوم، اقتراح ساعة، قبول مع تكرار اليوم والساعة ومشكلة جهاز، ثم بديل ممكن؛ تُقرأ كلها جهرًا.",
+        "meaningClarity": "اتفاق صريح على وقت واحد ومشكلة وبديل مفهوم؛ يمكن أداء الدورين منفردًا دون بيانات حقيقية.",
+        "targetSkill": "am لليوم وum للساعة، وWir können مع مصدر في النهاية؛ يجوز جواب مختصر بفعل مفهوم عند اقتراح الوقت."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 100,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-09-P02",
+      "sourceTaskIds": [
+        "DL-A1-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-09-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب ثلاث جمل لزميل في موقف خيالي: الأولى تحدد جهازًا لا يعمل، والثانية تقول ما لا تستطيع فعله بـIch kann … nicht مع مصدر مناسب، والثالثة تقترح بديلًا تستطيع فعله بـIch kann أوWir können مع المصدر في النهاية. اختر الأفعال من الدرس؛ لا يلزم ادعاء إصلاح الجهاز أو ذكر موعد. هذه مهمة كتابة فقط، دون إرسال رسالة حقيقية أو قراءة جهرية.",
+      "criteria": {
+        "taskCompletion": "ثلاث جمل: جهاز لا يعمل، أثر بـIch kann…nicht، وبديل بـIch kann أوWir können.",
+        "meaningClarity": "المشكلة والأثر والبديل مترابطة منطقيًا، ولا يُدعى إصلاح الجهاز دون سند.",
+        "targetSkill": "وصف جهاز مناسب، وتصريفkönnen ونفي القدرة في الجملة الثانية ومصدر كامل في نهاية جملتي القدرة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 80,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

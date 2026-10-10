@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-03-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-03-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بهدف B2.3 وتمارين المصدر T01–T07: مفردات الاستهلاك، وصيغة المبني للمجهول مع الفعل الناقص، وترتيب Partizip II + werden في الجملة الرئيسية وPartizip II + werden + Modalverb في الجملة التابعة، والتحويل من المعلوم، وفهم نص القراءة والاستماع المكتوب، واختيار الناقص بحسب المعنى.",
+      "ترتبط P01 مباشرة بـT08 (خطة مكتوبة من خمس جمل على الأقل لمتجر أو مقهى خيالي — كتابة فقط دون جهر)، وترتبط P02 بنص الاستماع المكتوب T06 وباقتراح الإجراء في T08 (إحاطة لفريق مقهى من خمس إلى ست جمل مع خطوة تالية مقترحة — كتابة + قراءة جهرية ذاتية). تتحقق المهمتان من استخدام المبني للمجهول مع فعل ناقص مرتين على الأقل.",
+      "التحقق ذاتي ومحلي بمعايير ظاهرة وحد أدنى للحروف (150 في P01 و180 في P02)؛ لا يعتمد على MP3 أو صوت مولّد، ولا يدّعي تصحيح الكتابة المفتوحة أو النطق آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-03-Q01",
+      "sourceTaskIds": [
+        "DL-B2-03-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "مفردات الاستهلاك",
+        "das Mehrwegsystem"
+      ],
+      "prompt": "أي مصطلح ألماني يعني «نظام إعادة الاستخدام»؟",
+      "options": [
+        "das Einwegprodukt",
+        "das Mehrwegsystem",
+        "die Verpackung"
+      ],
+      "answerIndex": 1,
+      "explanation": "das Mehrwegsystem هو نظام يستخدم فيه المنتج أو الحاوية مرات متعددة؛ أما Einweg فيشير إلى الاستعمال مرة واحدة."
+    },
+    {
+      "id": "DL-B2-03-Q02",
+      "sourceTaskIds": [
+        "DL-B2-03-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "المبني للمجهول مع فعل ناقص",
+        "Partizip II"
+      ],
+      "prompt": "أكمل الصيغة: **Glas kann gut ___ werden.**",
+      "options": [
+        "wiederverwenden",
+        "wiederverwendet",
+        "wiederverwendeten"
+      ],
+      "answerIndex": 1,
+      "explanation": "يأتي Partizip II، وهو wiederverwendet، قبل werden في المبني للمجهول مع الفعل الناقص."
+    },
+    {
+      "id": "DL-B2-03-Q03",
+      "sourceTaskIds": [
+        "DL-B2-03-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "ترتيب الأفعال في نهاية الجملة",
+        "gereinigt werden"
+      ],
+      "prompt": "اختر المجموعة الصحيحة لإكمال نهاية الجملة: **Die Becher können nach der Rückgabe ___.**",
+      "options": [
+        "gereinigt werden",
+        "werden gereinigt",
+        "reinigen werden"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد الفعل الناقص يأتي Partizip II ثم werden: Die Becher können nach der Rückgabe gereinigt werden."
+    },
+    {
+      "id": "DL-B2-03-Q04",
+      "sourceTaskIds": [
+        "DL-B2-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "التحويل من المعلوم إلى المجهول",
+        "müssen"
+      ],
+      "prompt": "حوّل إلى المبني للمجهول مع الفعل الناقص: **Man muss die Abfälle trennen.**",
+      "options": [
+        "Die Abfälle müssen getrennt werden.",
+        "Die Abfälle müssen trennen werden.",
+        "Die Abfälle müssen werden getrennt."
+      ],
+      "answerIndex": 0,
+      "explanation": "تصبح Abfälle فاعل الجملة المبنية للمجهول، ويأتي Partizip II getrennt قبل werden: Die Abfälle müssen getrennt werden."
+    },
+    {
+      "id": "DL-B2-03-Q05",
+      "sourceTaskIds": [
+        "DL-B2-03-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "التحويل إلى المبني للمجهول",
+        "sollten",
+        "الإصلاح"
+      ],
+      "prompt": "اختر التحويل الصحيح: **Man sollte beschädigte Geräte reparieren.**",
+      "options": [
+        "Beschädigte Geräte sollten repariert werden.",
+        "Beschädigte Geräte sollten reparieren werden.",
+        "Beschädigte Geräte repariert sollten werden."
+      ],
+      "answerIndex": 0,
+      "explanation": "مع توصية بشأن أجهزة متعددة نستخدم sollten، ثم Partizip II repariert وwerden في نهاية الجملة."
+    },
+    {
+      "id": "DL-B2-03-Q06",
+      "sourceTaskIds": [
+        "DL-B2-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تسلسل الإجراء"
+      ],
+      "prompt": "بحسب نص متجر «Kreislauf» الخيالي، ما الذي ينبغي فعله بالأشياء المتضررة قبل التخلص منها؟",
+      "options": [
+        "فحصها أولًا.",
+        "التخلص منها فورًا دون فحص.",
+        "التأكيد أنها كلها قابلة للإصلاح."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص أن الأشياء المتضررة ينبغي فحصها أولًا قبل التخلص منها؛ ولا يضمن أن جميعها قابلة للإصلاح."
+    },
+    {
+      "id": "DL-B2-03-Q07",
+      "sourceTaskIds": [
+        "DL-B2-03-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "التمييز بين الاختبار والنتائج"
+      ],
+      "prompt": "هل نشر فريق المتجر الخيالي نتائج التجربة بالفعل؟",
+      "options": [
+        "نعم، نشر نتائج نهائية تثبت نجاح التجربة.",
+        "لا، لم ينشر نتائج بعد وما زال يختبر الإمكانات.",
+        "لا، أوقف التجربة قبل جمع الملاحظات."
+      ],
+      "answerIndex": 1,
+      "explanation": "يقول النص إن الفريق لم ينشر نتائج بعد وإن الإمكانات ما زالت تُختبر."
+    },
+    {
+      "id": "DL-B2-03-Q08",
+      "sourceTaskIds": [
+        "DL-B2-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "الأكواب متعددة الاستخدام"
+      ],
+      "prompt": "بحسب نص T06 المكتوب، في أي نوع من الأكواب تُقدَّم المشروبات في المقهى؟",
+      "options": [
+        "In Mehrwegbechern.",
+        "In Einwegbechern.",
+        "In Pappbechern."
+      ],
+      "answerIndex": 0,
+      "explanation": "يذكر النص المكتوب أن المشروبات تُقدَّم في أكواب متعددة الاستخدام. يمكن الإجابة دون تشغيل أي ملف صوتي."
+    },
+    {
+      "id": "DL-B2-03-Q09",
+      "sourceTaskIds": [
+        "DL-B2-03-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "إمكانية الإصلاح"
+      ],
+      "prompt": "ما الذي يفحصه الفريق قبل استبدال الصواني المتضررة؟",
+      "options": [
+        "هل جُمعت ملاحظات الضيوف بالفعل؟",
+        "هل يمكن إصلاح الصواني؟",
+        "هل يجب التخلص من جميع الأكواب؟"
+      ],
+      "answerIndex": 1,
+      "explanation": "يفحص الفريق أولًا ما إذا كان يمكن إصلاح الصواني قبل استبدالها. يعتمد السؤال على نص الاستماع المكتوب، لا على MP3."
+    },
+    {
+      "id": "DL-B2-03-Q10",
+      "sourceTaskIds": [
+        "DL-B2-03-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "skillTags": [
+        "اختيار الفعل الناقص بحسب المعنى",
+        "توصية"
+      ],
+      "prompt": "أكمل بتوصية مناسبة: **Beschädigte Geräte ___ zuerst geprüft werden.**",
+      "options": [
+        "können",
+        "sollten",
+        "müssen"
+      ],
+      "answerIndex": 1,
+      "explanation": "sollten تعبر عن توصية أو إجراء مقترح، وهو المعنى المطلوب هنا."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-03-P01",
+      "sourceTaskIds": [
+        "DL-B2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب خطة قصيرة من خمس جمل ألمانية على الأقل لمتجر أو مقهى خيالي. اقترح ثلاثة إجراءات مناسبة للسياق، على أن يتضمن أحدها خيارًا لإعادة الاستخدام أو الإصلاح، واستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل. لا تذكر أرقامًا أو وعودًا بيئية غير موثقة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "criteria": {
+        "taskCompletion": "خطة مكتوبة من خمس جمل ألمانية على الأقل، تتضمن ثلاثة إجراءات مناسبة لمتجر أو مقهى خيالي، وأحدها على الأقل يعتمد إعادة الاستخدام أو الإصلاح.",
+        "meaningClarity": "ترتبط الإجراءات بسياق المتجر أو المقهى وتُفهم بوصفها مقترحات عملية؛ لا تُعرض أرقام أو نتائج أو وعود بيئية غير موثقة على أنها حقائق.",
+        "targetSkill": "يستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل، مع تصريف الناقص المناسب وترتيب Partizip II + werden في نهاية الجملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-03-P02",
+      "sourceTaskIds": [
+        "DL-B2-03-T06",
+        "DL-B2-03-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-03-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى نص T06 المكتوب، اكتب إحاطة قصيرة لفريق مقهى من خمس إلى ست جمل ألمانية ثم اقرأها بصوت واضح. انقل ثلاثة تفاصيل صحيحة على الأقل، مثل إعارة الأكواب متعددة الاستخدام مقابل تأمين مسترد (Pfand) ثم إعادتها، أو جمع بقايا الطعام منفصلة، أو فحص إمكان إصلاح الصواني المتضررة. اقترح خطوة تالية واحدة مناسبة، واستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل. ميّز بين ما ورد في النص وما تقترحه أنت؛ لا تضف أرقامًا أو وعودًا بيئية غير موثقة. لا يلزم تشغيل MP3. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت واضح؛ لا يلزم تسجيل.",
+      "criteria": {
+        "taskCompletion": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاثة تفاصيل على الأقل من نص T06 (الأكواب متعددة الاستخدام والتأمين وإعادتها، أو الجمع المنفصل لبقايا الطعام، أو فحص إمكان إصلاح الصواني) وتقترح خطوة تالية مناسبة لمقهى.",
+        "meaningClarity": "تُنقل تفاصيل النص بدقة، وتُفصل بوضوح عن الخطوة المقترحة؛ ولا تُضاف أرقام أو وعود بيئية غير موثقة أو تُعرض الإمكانات كأنها نتائج مثبتة.",
+        "targetSkill": "يستخدم المبني للمجهول مع فعل ناقص مرتين على الأقل؛ يطابق تصريف الناقص المعنى، ويضع Partizip II + werden في نهاية الجملة، ويقرأ المتعلم النص بصوت واضح دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

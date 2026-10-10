@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-09-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-09-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR27: تمييز طلب الزبونة عن عرض الموظف؛ könnte لاkonnte وhätte منhaben؛ مصدر دونzu وob بفعل مصرف أخير.",
+      "حذف افتراض حمل الإيصال الآن؛ T05.2 ينفي الدليل مباشرة بدل استنتاج حالة الأيسر؛ Q04 لا يضيف فحصًا غير مذكور وQ09 مقيد بنمط السؤال المباشر. Q10→T07؛ الخيارات الثلاثون والمفاتيح و80% محفوظة.",
+      "P01/T08أ رسالة كتابة فقط بخمس جمل وتحية وختام واسم؛ P02/T08ب أربعة أدوار مع الجهر. تنبيه لتعدادPHR الملتبس دون تغيير التسجيل أو التفريغ أو الأصوات أو اعتماد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-09-Q01",
+      "sourceTaskIds": [
+        "DL-A2-09-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "مفردات المنتجات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **der Kassenbon**؟",
+      "options": [
+        "إيصال الشراء.",
+        "الشاحن.",
+        "دليل الاستخدام."
+      ],
+      "answerIndex": 0,
+      "explanation": "Kassenbon هو إيصال الشراء."
+    },
+    {
+      "id": "DL-A2-09-Q02",
+      "sourceTaskIds": [
+        "DL-A2-09-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "könnte / könnten",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل الطلب بأدب: ___ Sie das Gerät bitte prüfen?",
+      "options": [
+        "Könntest",
+        "Könnten",
+        "Könnte"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع Sie نستخدم صيغة الطلب المهذب Könnten."
+    },
+    {
+      "id": "DL-A2-09-Q03",
+      "sourceTaskIds": [
+        "DL-A2-09-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "ترتيب المصدر",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Könnten Sie das Gerät bitte prüfen?**، أين يأتي المصدر prüfen؟",
+      "options": [
+        "بعد Könnten مباشرةً.",
+        "في بداية السؤال.",
+        "في نهاية السؤال."
+      ],
+      "answerIndex": 2,
+      "explanation": "في سؤال الطلب المباشر المدروس يأتي الفعل الناقص المصرف أولًا،والمصدر prüfen في النهاية دونzu."
+    },
+    {
+      "id": "DL-A2-09-Q04",
+      "sourceTaskIds": [
+        "DL-A2-09-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "خدمة العملاء",
+        "اختيار محدد"
+      ],
+      "prompt": "أي رد مناسب من خدمة العملاء؟",
+      "options": [
+        "Ich bin der Kassenbon.",
+        "Wir können es reparieren oder umtauschen.",
+        "Das Gerät fährt morgen."
+      ],
+      "answerIndex": 1,
+      "explanation": "يعرض الموظف إصلاحًا أو استبدالًا؛ لا تذكر هذه الجملة الفحص ولا تثبت تنفيذ أي حل."
+    },
+    {
+      "id": "DL-A2-09-Q05",
+      "sourceTaskIds": [
+        "DL-A2-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "فهم الرسالة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا اشترت Salma؟",
+      "options": [
+        "سماعة رأس.",
+        "حاسوبًا.",
+        "هاتفًا جديدًا."
+      ],
+      "answerIndex": 0,
+      "explanation": "الرسالة تقول einen Kopfhörer."
+    },
+    {
+      "id": "DL-A2-09-Q06",
+      "sourceTaskIds": [
+        "DL-A2-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "فهم الرسالة",
+        "اختيار محدد"
+      ],
+      "prompt": "منذ متى لا يعمل مكبر السماعة الأيمن؟",
+      "options": [
+        "منذ عشرة أيام.",
+        "منذ شهر.",
+        "منذ أمس."
+      ],
+      "answerIndex": 2,
+      "explanation": "يقول النص Seit gestern."
+    },
+    {
+      "id": "DL-A2-09-Q07",
+      "sourceTaskIds": [
+        "DL-A2-09-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "فهم الرسالة",
+        "اختيار محدد"
+      ],
+      "prompt": "وفق رسالة Salma،هل تقول إن السماعة متضررة؟",
+      "options": [
+        "نعم، الشاشة مكسورة.",
+        "لا، ليست متضررة.",
+        "لا يذكر النص ذلك."
+      ],
+      "answerIndex": 1,
+      "explanation": "تقول Salma: Der Kopfhörer ist nicht beschädigt. هذا نقل لكلامها،لا فحص تقني يثبت أن كل أجزائها تعمل."
+    },
+    {
+      "id": "DL-A2-09-Q08",
+      "sourceTaskIds": [
+        "DL-A2-09-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "فهم شكوى قصيرة",
+        "اختيار محدد"
+      ],
+      "prompt": "في المثال **Ich habe den Kassenbon und komme morgen**، ماذا يملك Karim؟",
+      "options": [
+        "إيصال الشراء.",
+        "بطاقة صعود الطائرة.",
+        "قائمة الطعام."
+      ],
+      "answerIndex": 0,
+      "explanation": "Kassenbon تعني إيصال الشراء."
+    },
+    {
+      "id": "DL-A2-09-Q09",
+      "sourceTaskIds": [
+        "DL-A2-09-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "طلب مهذب",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر سؤال طلب المساعدة بالنمط المباشر المدروس: الفعل المصرف أولًا ثم Sie،والمصدر في النهاية.",
+      "options": [
+        "Könnten Sie helfen mir bitte?",
+        "Sie könnten bitte mir helfen?",
+        "Könnten Sie mir bitte helfen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "Könnten Sie mir bitte helfen? يطابق نمط السؤال المباشر المطلوب؛ لا نعمم الحكم على كل سؤال تأكيدي أو استعمال محكي."
+    },
+    {
+      "id": "DL-A2-09-Q10",
+      "sourceTaskIds": [
+        "DL-A2-09-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "skillTags": [
+        "السؤال غير المباشر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة للسؤال إن كان الاستبدال ممكنًا؟",
+      "options": [
+        "Ich möchte wissen, ob ist ein Umtausch möglich.",
+        "Ich möchte wissen, ob ein Umtausch möglich ist.",
+        "Ich möchte ob wissen, ein Umtausch ist möglich."
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد ob يأتي الفعل المصرف في نهاية الجملة التابعة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-09-P01",
+      "sourceTaskIds": [
+        "DL-A2-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب باسم Nora رسالة شكوى خيالية، كتابة فقط: تحية، ثم خمس جمل في المتن، ثم ختام واسم. الجملة1 شراء سماعة رأس قبل سبعة أيام؛ الجملة2 تعطل المكبر الأيمن منذ أمس؛ الجملة3 الاحتفاظ بإيصال الشراء؛ الجملة4 طلب الفحص بـKönnten Sie … bitte prüfen?؛ الجملة5 السؤال عن إمكان الاستبدال بـIch möchte wissen, ob مع ist في نهاية التابعة. لا تدّع موافقة المتجر أو ضمانًا غير مذكور. لا جهر أو إرسال أو بيانات شخصية مطلوبة.",
+      "criteria": {
+        "taskCompletion": "تحية وخمس جمل وختام واسم Nora؛ سماعة الرأس قبل سبعة أيام،عطل الأيمن منذ أمس،الإيصال،طلب الفحص وسؤال الاستبدال؛ كتابة فقط.",
+        "meaningClarity": "وقت الشراء منفصل عن بداية العطل،والطلبات لا تثبت موافقة المتجر أو ضمانًا لم يذكر؛ البيانات خيالية.",
+        "targetSkill": "Könnten Sie في بداية سؤال الفحص وprüfen بلاzu في نهايته؛ فاصلة قبلob وist آخر التابعة،مع نقطة بعدجملةIch möchte wissen."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-09-P02",
+      "sourceTaskIds": [
+        "DL-A2-09-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-09-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب أربعة أدوار خيالية بين Kundin وMitarbeiter، ثم اقرأ الدورين بصوت مرتفع: الدور1 للزبونة يصف Tablet معطلًا ويطلب فحصه بـKönnten Sie … bitte prüfen?؛ الدور2 للموظف يسأل عن إيصال الشراء؛ الدور3 للزبونة تقدم فيه الإيصال؛ الدور4 للموظف يذكر أن الجهاز تحت الضمان في هذا السيناريو فقط ويعرض إصلاحًا أو استبدالًا بـWir können es reparieren oder umtauschen. لا تقل إن الحل نُفذ أو حُددت تكلفته. لا شريك أو تسجيل أو بيانات شراء حقيقية مطلوبة.",
+      "criteria": {
+        "taskCompletion": "أربعة أدوار متناوبة:شكوى وطلب،سؤال الإيصال،تقديم الإيصال،ثم الضمان وعرض إصلاح أو استبدال؛ قرأت الدورين جهرًا.",
+        "meaningClarity": "أدوار الزبونة والموظف واضحة،والضمان فرضية هذا السيناريو فقط؛ لا تكلفة أو موعد أو حل منفذ مختلق.",
+        "targetSkill": "طلب بـKönnten Sie مع مصدرprüfen في النهاية،وردبـkönnen معreparieren/umtauschen دونzu؛ ذكرالإيصال مطابق للدور."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

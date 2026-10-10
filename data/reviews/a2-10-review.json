@@ -1,0 +1,2046 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a2-10-sports-health-feelings-weil",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a2-10-v2",
+  "unitCount": 99,
+  "exerciseSubItemCount": 28,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "فاصلة التابعة، والفعل المصرف في نهايتها، والموقع الأول الذي تشغله التابعة المقدمة. لا نعتمد عبارة الصفحة عن um … zu بوصفها نتيجة؛ ذلك خارج نطاق هذه المراجعة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CLAUSE",
+      "title": "Lingolia — Konjunktionalsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/konjunktionalsaetze",
+      "scope": "weil للسبب وwenn للشرط في المثال، وثبات ترتيب التابعة عند تقديمها. لا نعمم قابلية تبديل كل الروابط في كل سياق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "LINK",
+      "title": "Lingolia — Konjunktionen, Subjunktionen und Konjunktionaladverbien",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/konjunktionen",
+      "scope": "denn تربط الرئيسية، وweil تدخل التابعة؛ عند تصدير deshalb / trotzdem / dann يليها الفعل المصرف. السبب يختلف عن النتيجة أو الاستدراك.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "PERF",
+      "title": "Lingolia — Perfekt",
+      "url": "https://deutsch.lingolia.com/de/grammatik/zeitformen/perfekt",
+      "scope": "haben/sein مع Partizip II؛ laufen مع sein في الاستعمال المدروس، و-ieren دونge. لا تعميم أن كل حركة كيفما استعملت تتطلب sein أو أن كل Perfekt يشير حصريًا للماضي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "REFL",
+      "title": "Lingolia — Reflexive Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/reflexive",
+      "scope": "مطابقة الضمير: mich/dich/sich/uns؛ الأفعال الانعكاسية في السؤال والتابعة. لا نعمم موضعًا واحدًا لكل ضمير أو كل تركيب.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "MODAL",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "möchte مع مصدر؛ التمييز بين الفعل المصرف والمصدر، دون تدريس Perfekt للأفعال الناقصة أو تعميم ترتيبها المركب هنا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "EXHAUST",
+      "title": "Duden — erschöpft",
+      "url": "https://www.duden.de/rechtschreibung/erschoepft",
+      "scope": "المعنى المستعمل للشخص: kraftlos und matt بعد مجهود. توجد معان أخرى للموارد المستنفدة؛ ليس اسم تشخيص طبي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CONTENT",
+      "title": "Duden — zufrieden",
+      "url": "https://www.duden.de/rechtschreibung/zufrieden",
+      "scope": "راضٍ/قانع؛ لا يلزم منه انعدام التعب أو الفوز بالمنافسة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NERVOUS",
+      "title": "Duden — nervös",
+      "url": "https://www.duden.de/rechtschreibung/nervoes",
+      "scope": "متوتر في سياق المشاعر؛ توجد استعمالات طبية مختلفة لا تُستنتج في هذا الدرس.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "REGULAR",
+      "title": "Duden — regelmäßig",
+      "url": "https://www.duden.de/rechtschreibung/regelmaeszig",
+      "scope": "تكرار منتظم أو وفق نظام، وليس يوميًا بالضرورة؛ المعنى الرياضي لا تصنيف الأفعال النحوي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/konjunktionalsaetze",
+      "result": "page_not_found_content_despite_successful_fetch",
+      "usedAsEvidence": false,
+      "replacedBy": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/konjunktionalsaetze"
+    },
+    {
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/reflexive-verben",
+      "result": "page_not_found_content_despite_successful_fetch",
+      "usedAsEvidence": false,
+      "replacedBy": "https://deutsch.lingolia.com/de/grammatik/verben/reflexive"
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "# A2.10 — الرياضة والصحة والمشاعر وجملة weil",
+      "finding": "العنوان يطابق النشاط والمشاعر وتفسير السبب؛ ليس درسًا طبيًا أو وصفة تدريب.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-02",
+      "text": "**المدة:** نحو 35–40 دقيقة (تقدير مرن؛ يمكن تقسيم الدرس) · **المهارات:** مفردات، قراءة، كتابة، كلام، قواعد، واستماع اختياري",
+      "finding": "أضيفت الكتابة والاستماع الاختياري؛ المدة مرنة ويمكن تقسيم الدرس، وليست ضمانًا لإنجاز كل عنصر خلال 40 دقيقة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "**الهدف:** أستطيع أن أتحدث عن نشاط رياضي وشعوري، وأشرح السبب باستخدام **weil**.",
+      "finding": "وصف النشاط والشعور والسبب مدعوم بمهمة إنتاج وأخرى لإعادة الصياغة؛ لا ممارسة رياضية إلزامية.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "في الأنماط المعيارية التي نتدرب عليها هنا، تبدأ جملة السبب بـ**weil** («لأن»)، وتُفصل بفاصلة عن الرئيسية، ويأتي الفعل المصرف في نهاية التابعة. في **trainiert hat** يكون hat هو المصرف، وليس trainiert:",
+      "finding": "قُيد الحكم بالنمط المعياري المدروس وأضيفت الفاصلة؛ hat المصرف لا trainiert في مثال Perfekt.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "يمكن أن تأتي جملة **weil** في البداية؛ عندئذٍ نضع فاصلة، ثم يأتي فعل الجملة الرئيسية المصرف مباشرةً، ثم الفاعل في النمط المدروس. التابعة كلها تشغل الموقع الأول؛ «الموقع الثاني» لا يعني الكلمة الثانية:",
+      "finding": "التابعة المقدمة تحتل الموقع الأول ثم الفعل المصرف؛ الموقع النحوي ليس رقم الكلمة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "قارن مع رابط السبب **denn**: لا يحتل موقعًا داخل الجملة التي يربطها، ويبقى الفعل المصرف في موقعها الثاني: **Ich mache eine Pause, denn ich bin müde.** أما **deshalb** فتعني «لذلك» وتقدم النتيجة؛ عندما تبدأ بها الجملة يليها الفعل المصرف: **Ich bin müde. Deshalb mache ich eine Pause.** ليس هذا موضع deshalb الوحيد: **Ich mache deshalb eine Pause.** صحيحة أيضًا. التركيز في التقييم على weil وdenn، وdeshalb للمقارنة.",
+      "finding": "denn لا تشغل موقعًا داخل الرئيسية التالية؛ deshalb تقدم النتيجة ولها مواضع أخرى، لذا حُذف التعميم القديم عن الفعل بعدها دائمًا.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "النموذجان مكتوبان وغير مسجلين، ولا يستبدلان الأصول القائمة. الأول يستخدم مفردات الاستماع في مهمة إنتاج لغوي، والثاني يعيد صياغة سبب ثابت بدل تكرار وصف يوم تدريب. لا تنفيذ نشاط أو تصحيح لغوي آلي أو اعتماد نطق مدّعى.",
+      "finding": "النموذجان مكتوبان لا تسجيلان جديدان؛ الأول إنتاج لغوي بألفاظ مدعومة والثاني تحويل لا وصف تدريب مكرر، بلا اعتماد لغة أو نطق آلي.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Bewegung | die Bewegungen | الحركة |",
+      "finding": "Bewegung مؤنث، والجمع Bewegungen؛ الحركة العامة هنا غير عد حركات متعددة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Gesundheit | — | الصحة |",
+      "finding": "Gesundheit الصحة، اسم مؤنث مستعمل هنا بلا جمع؛ الشرطة ليست إذنًا لاختراع جمع في السياق.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| das Training | die Trainings | التدريب الرياضي |",
+      "finding": "Training محايد وجمعه Trainings؛ المقصود التدريب الرياضي في هذه الوحدة، لا كل استعمال للكلمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| der Muskel | die Muskeln | العضلة |",
+      "finding": "Muskel مذكر وجمعه Muskeln؛ التغير ليس جمعًا بـ s.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| der Wettbewerb | die Wettbewerbe | المنافسة |",
+      "finding": "Wettbewerb مذكر وجمعه Wettbewerbe؛ منافسة، لا دليل على نوع رياضة فريق Rania أو فوزه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Pause | die Pausen | الاستراحة |",
+      "finding": "Pause مؤنث وجمعها Pausen؛ eine Pause machen عبارة أخذ استراحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| sich fühlen | fühlt sich | يشعر |",
+      "finding": "sich fühlen فعل انعكاسي؛ fühlt sich صيغة المفرد الغائب، لا تستعمل مع ich دون تعديل الضمير والتصريف.",
+      "sourceIds": [
+        "REFL"
+      ]
+    },
+    {
+      "id": "vocab-08",
+      "text": "| sich entspannen | entspannt sich | يسترخي |",
+      "finding": "sich entspannen للاسترخاء؛ entspannt sich صيغة مفرد غائب، ويبين الدعم Wir entspannen uns.",
+      "sourceIds": [
+        "REFL"
+      ]
+    },
+    {
+      "id": "vocab-09",
+      "text": "| fit | — | لائق بدنيًا |",
+      "finding": "fit لائق بدنيًا في السياق الرياضي؛ لا تعني تقرير سلامة طبية ولا تسمح باستنتاج حالة شخص آخر.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-10",
+      "text": "| erschöpft | — | مرهق |",
+      "finding": "erschöpft مرهق أو منهك من المجهود في السياق، لا هادئ أو فخور.",
+      "sourceIds": [
+        "EXHAUST"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| zufrieden | — | راضٍ |",
+      "finding": "zufrieden راضٍ؛ قد يجتمع مع الإرهاق كما يوضح الاستماع.",
+      "sourceIds": [
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| nervös | — | متوتر |",
+      "finding": "nervös متوتر، شعور محتمل لا حالة لازمة لكل شخص قبل منافسة أو امتحان.",
+      "sourceIds": [
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| regelmäßig | — | بانتظام |",
+      "finding": "regelmäßig هنا بانتظام؛ لا تعني كل يوم أو دائمًا ولا شعورًا نفسيًا.",
+      "sourceIds": [
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| die Mannschaft | die Mannschaften | الفريق |",
+      "finding": "Mannschaft مؤنث وجمعها Mannschaften؛ فريق، وليس Rechnung أي فاتورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Ich gehe spazieren, weil ich Bewegung brauche.",
+      "finding": "الرئيسية ثم سبب بـ weil؛ brauche مصرف أخير مع ich، ولا نحول الحاجة إلى وصفة طبية.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Mina ist erschöpft, weil sie lange trainiert hat.",
+      "finding": "الإرهاق حالي والتدرب ماضٍ؛ trainiert hat في نهاية التابعة، مع -ieren دون ge.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Weil ich müde bin, mache ich eine Pause.",
+      "finding": "السبب مقدم بـ Weil ثم فاصلة و mache ich، لا ich mache في هذا النمط.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Ich mache eine Pause, denn ich bin müde.",
+      "finding": "denn تربط الرئيسية و ich bin يحفظ ترتيبها؛ ليست bin في آخرها كما مع weil.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Ich bin müde.",
+      "finding": "جملة سبب مستقلة: Ich bin müde؛ التعب قبل عرض النتيجة في الجملة التالية.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "grammar-06",
+      "text": "Deshalb mache ich eine Pause.",
+      "finding": "Deshalb في البداية ثم mache ich؛ نتيجة التعب، لا because بمعنى weil، وليست هذه بداية إلزامية لكل استعمال deshalb.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **السبب والنتيجة:** **Ich mache eine Pause, weil ich müde bin.** التعب سبب والاستراحة نتيجة؛ لا نعكس المعنى لمجرد تبديل الرابط. **Weil ich müde bin, mache ich eine Pause.** تحفظ السبب نفسه. فاصلة قبل weil أو بعد التابعة المقدمة، وقبل denn عند ربط الجملتين هنا.",
+      "finding": "سبب التعب ونتيجة الاستراحة ثابتان عند نقل التابعة؛ يضبط مواضع الفواصل في weil و denn.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **زمنان في جملة واحدة:** **weil sie lange trainiert hat** سبب في الماضي لصفة حالية. نقول **hat trainiert** و**hat gespielt**، لكن **ist gelaufen** في جري Omar هنا. في التابعة تصبح **trainiert hat / gespielt hat / gelaufen bin** بحسب الفاعل. trainiert دون ge لأن الفعل ينتهي بـieren؛ لا نبدل الزمن أو المساعد عشوائيًا.",
+      "finding": "يفصل الزمنين ويشرح hat trainiert/gespielt و ist gelaufen كما في السياق؛ لا قاعدة مطلقة لكل فعل حركة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **مصدر مع möchte:** **weil sie sich nach der Arbeit bewegen möchte** فيها bewegen مصدر دون zu، وmöchte هو المصرف الأخير. **Ich möchte regelmäßig trainieren.** فيها المصدر آخر الرئيسية؛ وجود فعلين لا يعني أن كليهما مصرف.",
+      "finding": "bewegen مصدر و möchte مصرف آخر التابعة، بلا zu؛ في الرئيسية المصدر trainieren آخرها.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **sich fühlen / sich entspannen / sich bewegen:** يشعر / يسترخي / يتحرك. **Ich fühle mich zufrieden. Du fühlst dich müde. Rania fühlt sich zufrieden. Wir entspannen uns.** الضمير يتبع الفاعل؛ لا نستعمل sich مع ich هنا. أمثلة الأنماط المعروضة لا تفرض موضعًا واحدًا لكل ضمير في كل جملة ألمانية.",
+      "finding": "يضيف نماذج ضمائر ich/du/Rania/wir، ولا يعمم أن كل فعل بمعنى شعور أو استرخاء انعكاسي في كل لغة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **روابط أخرى في النصوص:** **Wenn wir zusammen laufen, macht es mehr Spaß.** شرط: إذا جرينا معًا، لا سبب بـweil. **Trotzdem bin ich zufrieden.** مع ذلك أنا راضٍ، رغم الإرهاق؛ لا تناقض لازم بين الشعورين. عندما تبدأ الجملة بـDann أوTrotzdem يكون الفعل المصرف بعدها في هذه الأمثلة، مثل deshalb.",
+      "finding": "when/if في Wenn يختلف عن because، و Trotzdem استدراك رغم التعب؛ حين يتصدر الرابط الرئيسي يأتي بعده الفعل.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **مفردات وأنشطة:** **Basketball spielen** يلعب كرة السلة؛ **schwimmen gehen** يذهب للسباحة؛ **spazieren gehen** يتمشى. **die Halle** القاعة، و**der Lauf** الجري، و**mehr Spaß** متعة أكثر. Bewegung مفرد عام للحركة هنا، وBewegungen لحركات متعددة؛ الصحة Gesundheit مستعملة هنا بلا جمع.",
+      "finding": "يدعم أنشطة النص و Halle/Lauf/mehr Spaß؛ يميز الحركة العامة عن عد الحركات، دون زيادة مفردات التقييم السرية.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **المشاعر والتكرار:** erschöpft مرهق/منهك، وzufrieden راضٍ، وnervös متوتر؛ ليست أسماء تشخيصات في هذا الدرس. **regelmäßig** بانتظام لا تعني حتمًا كل يوم، و**oft** غالبًا، و**manchmal / an manchen Tagen** أحيانًا/في بعض الأيام، و**zweimal pro Woche** مرتين أسبوعيًا. لا نحذف هذه القيود من إجابات الفهم.",
+      "finding": "المشاعر معان معجمية لا تشخيصات؛ الانتظام غير التكرار اليومي و zweimal عدد محدد.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **حدود الدليل:** Omar جرى خمسة كيلومترات اليوم، وLina تدربت طويلًا أمس؛ Rania تسبح مساءً وتتدرب مع فريقها السبت. لا يحدد النص نوع رياضة فريق Rania أو نتيجة منافسة. نص كرة السلة لا يحدد اسم المتكلم أو جنسه؛ sie في السؤال الألماني تعود إلى الاسم المؤنث نحويًا **die Person**، ولا تثبت أنه امرأة. اللعب الجيد ليس دليل فوز.",
+      "finding": "يفصل الأشخاص والأيام والرياضات؛ die Person لا تثبت الجنس، واللعب الجيد لا يثبت فوزًا.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **أمثلة لغوية لا وصفة صحية:** قصص خيالية عن مشاعر أصحابها، لا حكم بأن الرياضة مفيدة لكل شخص بالطريقة نفسها أو أن كل منافسة تسبب التوتر. لا يُطلب تنفيذ تمرين بدني أو الإفصاح عن حالة صحية أو اتباع خطة تدريب. خطة الاستراحة غدًا في الاستماع ليست إثباتًا أنها نُفذت.",
+      "finding": "يقصر الاستنتاج الصحي على قصة المتكلم؛ لا تدريب فعلي أو كشف بيانات أو خطة ملزمة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل:** P01 أربع جمل خيالية مع القراءة الجهرية؛ P02 ثلاث صيغ كتابية للسبب نفسه دون جهر. لا شريك أو تسجيل مطلوب. حاول الاستماع قبل فتح التفريغ؛ قراءة النص لا تثبت فهمًا مسموعًا مستقلًا. الحد الحرفي والإقرارات لا يصححان اللغة أو النطق آليًا.",
+      "finding": "P01 مع الجهر و P02 كتابة فقط؛ التفريغ لا يثبت استماعًا مستقلًا والإقرار ليس تصحيح نطق.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "EXHAUST",
+        "CONTENT",
+        "NERVOUS",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Wie fühlst du dich nach dem Lauf, Omar?",
+      "finding": "Lina تسأل Omar عن شعوره بعد الجري؛ fühlst du dich يوافق du وليس Rania.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich bin zufrieden, weil ich heute fünf Kilometer gelaufen bin.",
+      "finding": "Omar راضٍ لأنه جرى خمسة كيلومترات اليوم؛ gelaufen bin مع ich، لا خمسة أيام أو تدريب الأمس.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Super! Ich bin etwas erschöpft, weil ich gestern lange trainiert habe.",
+      "finding": "Lina مرهقة قليلًا بسبب تدريب طويل أمس؛ nicht سبب تعب Omar، و trainiert habe يخص ich.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Dann machen wir eine Pause.",
+      "finding": "يقترح Omar استراحة؛ Dann machen wir، لا إثبات أن الاستراحة أُنجزت بالفعل.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Gute Idee. Ich möchte regelmäßig trainieren, denn Sport ist gut für mich.",
+      "finding": "Lina ترغب في الانتظام وتذكر رأيها أن الرياضة مفيدة لها؛ لا تعميم طبي على الجميع.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Ich auch. Wenn wir zusammen laufen, macht es mehr Spaß.",
+      "finding": "Omar يوافق، و Wenn يربط الجري المشترك بمتعة أكبر؛ ليس because ولا دليل موعد تدريب مؤكد.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL",
+        "MODAL",
+        "REGULAR"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Rania arbeitet tagsüber am Computer.",
+      "finding": "Rania تعمل نهارًا على الحاسوب؛ لا مهنة أو عدد ساعات محددان.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Am Abend geht sie oft schwimmen, weil sie sich nach der Arbeit bewegen möchte.",
+      "finding": "تذهب غالبًا للسباحة مساءً لأنها تريد الحركة بعد العمل؛ sich bewegen möchte بترتيب المصدر والمصرف، لا ممارسة كل يوم.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "An manchen Tagen ist sie müde.",
+      "finding": "في بعض الأيام تكون متعبة؛ ليس حكمًا عن كل الأيام.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Dann macht sie zuerst eine Pause und trinkt Wasser.",
+      "finding": "عندئذ تبدأ باستراحة وتشرب الماء؛ هذا وصف قصتها لا وصفة علاج.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Am Samstag trainiert sie mit ihrer Mannschaft.",
+      "finding": "تتدرب السبت مع فريقها؛ لا وحدها، ولا نعرف نوع رياضة الفريق من هذه الجملة.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Rania fühlt sich nach dem Training zufrieden, weil sie regelmäßig Sport macht.",
+      "finding": "تشعر بعد التدريب بالرضا بسبب انتظامها؛ لا دليل فوز أو انعدام إرهاق من ذلك.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-07",
+      "text": "Vor einem Wettbewerb ist sie manchmal nervös, aber ihre Freunde unterstützen sie.",
+      "finding": "قبل المنافسة تتوتر أحيانًا وأصدقاؤها يدعمونها؛ لا دائمًا هادئة ولا دائمًا متوترة، ولا نتيجة منافسة معلنة.",
+      "sourceIds": [
+        "CLAUSE",
+        "MODAL",
+        "REFL",
+        "REGULAR",
+        "CONTENT",
+        "NERVOUS"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Was macht Rania am Abend oft?",
+      "finding": "Sie geht oft schwimmen؛ يحفظ قيد oft والمساء، لا كل يوم.",
+      "sourceIds": [
+        "CLAUSE",
+        "REFL",
+        "MODAL",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Warum geht sie schwimmen?",
+      "finding": "Weil sie sich nach der Arbeit bewegen möchte؛ السبب المدعوم لا فريق صباحي أو سفر.",
+      "sourceIds": [
+        "CLAUSE",
+        "REFL",
+        "MODAL",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was macht sie, wenn sie müde ist?",
+      "finding": "Sie macht zuerst eine Pause und trinkt Wasser؛ كلا الفعلين مطلوب لنقل النص.",
+      "sourceIds": [
+        "CLAUSE",
+        "REFL",
+        "MODAL",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Mit wem trainiert sie am Samstag?",
+      "finding": "Mit ihrer Mannschaft؛ السبت مع فريقها دون تحديد نوعه.",
+      "sourceIds": [
+        "CLAUSE",
+        "REFL",
+        "MODAL",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Wie fühlt sie sich nach dem Training?",
+      "finding": "Sie fühlt sich zufrieden؛ شعور بعد التدريب يختلف عن التوتر أحيانًا قبل المنافسة.",
+      "sourceIds": [
+        "CLAUSE",
+        "REFL",
+        "MODAL",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich spiele zweimal pro Woche Basketball.",
+      "finding": "كرة السلة مرتان أسبوعيًا؛ النص بصيغة ich ولا اسم أو جنس محدد.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Heute bin ich erschöpft, weil ich lange trainiert habe.",
+      "finding": "الإرهاق اليوم بعد تدريب طويل؛ trainiert habe مع ich، وليس لأن الفريق خسر.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Trotzdem bin ich zufrieden, denn meine Mannschaft hat gut gespielt.",
+      "finding": "رغم الإرهاق رضا، وسببه أن الفريق لعب جيدًا؛ gut gespielt لا تعني فاز، و hat مصرف في الرئيسية بعد denn.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Morgen mache ich eine Pause, weil meine Muskeln müde sind.",
+      "finding": "استراحة غدًا بسبب تعب العضلات؛ sind يطابق Muskeln الجمع، والنية ليست فعلًا نفذ.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "CONTENT"
+      ]
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Wie oft spielt die Person Basketball?",
+      "finding": "Zweimal pro Woche؛ يستدل على التكرار لا المدة.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Warum ist sie heute erschöpft?",
+      "finding": "Weil sie lange trainiert hat؛ sie توافق die Person نحويًا ولا تثبت الجنس.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Warum ist sie zufrieden?",
+      "finding": "Weil die Mannschaft gut gespielt hat؛ تحويل السبب من denn إلى weil يحفظ المعنى ويضع hat آخر التابعة.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was macht sie morgen?",
+      "finding": "Sie macht eine Pause؛ خطة الغد في النص، لا تنفيذ مثبت أو توصية شخصية.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-01",
+      "text": "Ich spiele zweimal pro Woche Basketball.",
+      "finding": "الجملة 1: نشاط Basketball وعدد مرات محدد، مرتان أسبوعيًا؛ شخصية خيالية لا بيانات المتعلم.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-02",
+      "text": "Heute bin ich erschöpft, weil ich lange trainiert habe.",
+      "finding": "الجملة 2: إرهاق وسبب بـ weil بعد الرئيسية، مع trainiert habe بترتيب صحيح.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-03",
+      "text": "Trotzdem bin ich zufrieden, denn meine Mannschaft hat gut gespielt.",
+      "finding": "الجملة 3: رضا رغم التعب وسبب بـ denn مع hat gut gespielt؛ لا يدعي الفوز.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "speaking-model-04",
+      "text": "Weil meine Muskeln müde sind, mache ich morgen eine Pause.",
+      "finding": "الجملة 4: سبب مقدم بـ Weil و sind آخره، ثم mache ich وقرار استراحة غدًا؛ يفي بمطلب weil الثانية.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ]
+    },
+    {
+      "id": "writing-model-01",
+      "text": "Ich mache eine Pause, weil ich müde bin.",
+      "finding": "رئيسية ثم weil؛ التعب سبب الاستراحة، و bin مصرف آخر التابعة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK"
+      ]
+    },
+    {
+      "id": "writing-model-02",
+      "text": "Weil ich müde bin, mache ich eine Pause.",
+      "finding": "Weil مقدمة والفاصلة ثم mache ich؛ السبب والضمير والمضارع ثابتة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK"
+      ]
+    },
+    {
+      "id": "writing-model-03",
+      "text": "Ich mache eine Pause, denn ich bin müde.",
+      "finding": "denn ثم ich bin müde؛ ترتيب الرئيسية محفوظ وسبب التعب نفسه، لا إدخال واقعة جديدة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Ich bin erschöpft, weil ich lange trainiert habe.** → أنا مرهق لأنني تدربت طويلًا.",
+      "finding": "إرهاق حالي يفسره تدريب ماضٍ؛ habe مصرف أخير بعد trainiert في التابعة.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Weil ich müde bin, mache ich eine Pause.** → لأنني متعب، آخذ استراحة.",
+      "finding": "سبب مقدم ثم mache ich؛ مثال البطاقة يطابق إحدى صيغ P02 دون أن يوجب جهرها.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **Ich bin zufrieden, denn das Training war gut.** → أنا راضٍ لأن التدريب كان جيدًا.",
+      "finding": "سبب بـ denn مع war في موقعه الرئيسي؛ تقييم التدريب، وليس دليلًا أن كل تدريب جيد للجميع.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ]
+    },
+    {
+      "id": "card-04",
+      "text": "- **sich fühlen** → يشعر.",
+      "finding": "sich fühlen بمعنى يشعر؛ يجب مطابقة الضمير والفاعل كما في ich fühle mich.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ]
+    },
+    {
+      "id": "DL-A2-10-T01",
+      "text": "1. عندما أتوقف قليلًا لأرتاح آخذ: **eine Pause / einen Wettbewerb**\n2. شعور قد يمر به شخص قبل امتحان أو منافسة: **nervös / regelmäßig**\n3. بعد نشاط بدني طويل قد أشعر بأنني: **erschöpft / pünktlich**\n4. مجموعة لاعبين تلعب معًا: **die Mannschaft / die Rechnung**",
+      "finding": "أربعة أزواج معجمية محددة؛ أضيف «قد» لمنع تعميم شعور قبل المنافسة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ],
+      "items": [
+        {
+          "text": "عندما أتوقف قليلًا لأرتاح آخذ: **eine Pause / einen Wettbewerb**",
+          "answer": "eine Pause",
+          "finding": "استراحة لا منافسة؛ عبارة eine Pause machen مناسبة للتوقف قليلًا."
+        },
+        {
+          "text": "شعور قد يمر به شخص قبل امتحان أو منافسة: **nervös / regelmäßig**",
+          "answer": "nervös",
+          "finding": "nervös شعور محتمل لا لازم؛ regelmäßig يصف انتظامًا وليس شعورًا."
+        },
+        {
+          "text": "بعد نشاط بدني طويل قد أشعر بأنني: **erschöpft / pünktlich**",
+          "answer": "erschöpft",
+          "finding": "erschöpft يناسب الإرهاق بعد مجهود؛ pünktlich يعني الالتزام بالموعد ولا يفسر الإرهاق."
+        },
+        {
+          "text": "مجموعة لاعبين تلعب معًا: **die Mannschaft / die Rechnung**",
+          "answer": "die Mannschaft",
+          "finding": "Mannschaft فريق لاعبين؛ Rechnung فاتورة لا فريق."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T02",
+      "text": "1. Ich bin zufrieden, weil ich regelmäßig Sport ______. (machen)\n2. Omar macht eine Pause, weil er müde ______. (sein)\n3. Sie bleibt zu Hause, weil sie sich nicht gut ______. (fühlen)",
+      "finding": "تصريف ثلاثة أفعال بسيطة داخل التابعة؛ مصدر التدريب يساند موضع المصرف.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ],
+      "items": [
+        {
+          "text": "Ich bin zufrieden, weil ich regelmäßig Sport ______. (machen)",
+          "answer": "mache",
+          "finding": "mache يطابق ich وآخر التابعة؛ لا يأتي المصدر machen في فراغ التصريف."
+        },
+        {
+          "text": "Omar macht eine Pause, weil er müde ______. (sein)",
+          "answer": "ist",
+          "finding": "ist يطابق er Omar؛ لا sind أو bin."
+        },
+        {
+          "text": "Sie bleibt zu Hause, weil sie sich nicht gut ______. (fühlen)",
+          "answer": "fühlt",
+          "finding": "fühlt يطابق sie مع sich في جملة الشعور؛ يحفظ ترتيب الفعل أخيرًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T03",
+      "text": "1. Ich gehe heute früh schlafen, ______ ich müde bin.\n2. Ich gehe heute früh schlafen, ______ ich bin müde.",
+      "finding": "مقارنة مباشرة لـ weil و denn مع ترتيب معطى، وتدعم Q03/Q09.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ],
+      "items": [
+        {
+          "text": "Ich gehe heute früh schlafen, ______ ich müde bin.",
+          "answer": "weil",
+          "finding": "bin آخر التابعة يدل على weil في النمط المعياري المطلوب."
+        },
+        {
+          "text": "Ich gehe heute früh schlafen, ______ ich bin müde.",
+          "answer": "denn",
+          "finding": "ich bin ترتيب الرئيسية بعد denn؛ لا نقل bin إلىالنهاية دون تغيير المعطى."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T04",
+      "text": "ابدأ الجملة1 بـMina والجملة2 بـWeil، واستعمل كل كتلة مرة وأضف الفاصلة والنقطة دون تغيير الصيغ:\n\n1. weil / Mina / trainiert hat / ist / sie / erschöpft\n2. Weil / es / regnet / bleiben / wir / in der Halle.",
+      "finding": "بدايات محددة، وترتيب Perfekt والتابعة المقدمة يدعم Q02/Q04.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ],
+      "items": [
+        {
+          "text": "weil / Mina / trainiert hat / ist / sie / erschöpft",
+          "answer": "Mina ist erschöpft, weil sie trainiert hat.",
+          "finding": "تحديد البداية Mina يزيل ترتيبًا بديلًا غير مقصود؛ trainiert hat كتلة في النهاية وفاصلة قبل weil."
+        },
+        {
+          "text": "Weil / es / regnet / bleiben / wir / in der Halle.",
+          "answer": "Weil es regnet, bleiben wir in der Halle.",
+          "finding": "Weil es regnet تحتل البداية، ثم فاصلة و bleiben wir؛ ليست wir bleiben هنا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Rania geht oft am Abend schwimmen.\n2. Wenn sie müde ist, macht sie zuerst eine Pause.\n3. Am Samstag trainiert sie allein.\n4. Vor einem Wettbewerb ist sie immer ruhig.",
+      "finding": "أربعة أحكام بحسب نص Rania، مع احترام oft/manchmal وتمييز الجماعة من الانفراد.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ],
+      "items": [
+        {
+          "text": "Rania geht oft am Abend schwimmen.",
+          "answer": "صحيح",
+          "finding": "النص يقول Am Abend … oft schwimmen؛ قيد التكرار محفوظ."
+        },
+        {
+          "text": "Wenn sie müde ist, macht sie zuerst eine Pause.",
+          "answer": "صحيح",
+          "finding": "Dann فيالنص يعود لحالة التعب؛ استراحة أولًا لا تدريب ساعات."
+        },
+        {
+          "text": "Am Samstag trainiert sie allein.",
+          "answer": "خطأ",
+          "finding": "تتدرب مع فريقها صراحة؛ وحدها يناقض النص."
+        },
+        {
+          "text": "Vor einem Wettbewerb ist sie immer ruhig.",
+          "answer": "خطأ",
+          "finding": "توتر أحيانًا قبل المنافسة ينقض دائمًا هادئة؛ لا يثبت أنها دائمًا متوترة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T06",
+      "text": "أكمل من البنك، واستعمل كل كلمة مرة: **Basketball — trainiert — gespielt — Pause**.\n\n1. Die Person spielt zweimal pro Woche ______.\n2. Die Person ist erschöpft, weil sie lange ______ hat.\n3. Sie ist zufrieden, denn die Mannschaft hat gut ______.\n4. Morgen macht sie eine ______.",
+      "finding": "بنك كلمات صريح وأربعة فراغات، مع die Person دون تعيين الجنس وحفظ قصة كرة السلة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "REFL"
+      ],
+      "items": [
+        {
+          "text": "Die Person spielt zweimal pro Woche ______.",
+          "answer": "Basketball",
+          "finding": "Basketball هو النشاط؛ لا تنقل سباحة Rania إليه."
+        },
+        {
+          "text": "Die Person ist erschöpft, weil sie lange ______ hat.",
+          "answer": "trainiert",
+          "finding": "trainiert قبل hat؛ تدريب طويل سبب إرهاق اليوم."
+        },
+        {
+          "text": "Sie ist zufrieden, denn die Mannschaft hat gut ______.",
+          "answer": "gespielt",
+          "finding": "gespielt مع hat في جملة denn؛ وصف جيد لا إثبات فوز."
+        },
+        {
+          "text": "Morgen macht sie eine ______.",
+          "answer": "Pause",
+          "finding": "Pause خطة الغد؛ لا اليوم أو بيان وقوع الاستراحة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T07",
+      "text": "**أ — تدريب مفتوح:** أكمل الجملتين الآتيتين بسبب أو نتيجة خيالية مناسبين، مع الفاصلة والنقطة:\n\n1. Ich bin zufrieden, weil …\n2. Weil ich Zeit habe, …\n\n**ب — P02: كتابة فقط**\n\nاكتب ثلاث جمل كاملة تحفظ المعنى المعطى في كل صياغة: Ich mache eine Pause. Ich bin müde. التعب هو السبب والاستراحة نتيجته. الجملة1 تبدأ بـIch mache وتربط السبب بـweil؛ الجملة2 تبدأ بـWeil ich وتنتهي بالرئيسية؛ الجملة3 تبدأ بـIch mache وتربط السبب بـdenn. حافظ على ich والمضارع، وأضف الفواصل والنقاط. هذه مهمة كتابة فقط، دون جهر أو تسجيل أو وصف حالة صحية حقيقية.",
+      "finding": "تدريبان مفتوحان ثم ثلاث تحويلات كتابية لنفس السبب؛ P02 مستقلة عن وصف نشاط في P01، ولا جهر مفروض.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK"
+      ],
+      "items": [
+        {
+          "text": "Ich bin zufrieden, weil …",
+          "finding": "أكمل بسبب مناسب ونهاية مصرفة؛ المثال Ich bin zufrieden, weil ich regelmäßig Sport mache."
+        },
+        {
+          "text": "Weil ich Zeit habe, …",
+          "finding": "أكمل الرئيسية بعد التابعة؛ المثال Weil ich Zeit habe, gehe ich spazieren. صُحح المفتاح ليشرح تقديم weil لا denn الغائب هنا."
+        },
+        {
+          "text": "P02، الصيغة 1: Ich mache eine Pause, weil ich müde bin.",
+          "finding": "رئيسية ثم weil؛ التعب سبب الاستراحة، و bin مصرف آخر التابعة."
+        },
+        {
+          "text": "P02، الصيغة 2: Weil ich müde bin, mache ich eine Pause.",
+          "finding": "Weil مقدمة والفاصلة ثم mache ich؛ السبب والضمير والمضارع ثابتة."
+        },
+        {
+          "text": "P02، الصيغة 3: Ich mache eine Pause, denn ich bin müde.",
+          "finding": "denn ثم ich bin müde؛ ترتيب الرئيسية محفوظ وسبب التعب نفسه، لا إدخال واقعة جديدة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-T08",
+      "text": "اكتب أربع جمل بضمير ich عن شخصية خيالية تمارس رياضة أو نشاطًا بدنيًا، ثم اقرأها جهرًا: الجملة1 تسمي النشاط وعدد مرات ممارسته؛ الجملة2 تصف شعورًا وسببه بـweil بعد الرئيسية؛ الجملة3 تصف شعورًا أو تقييمًا آخر وسببه بـdenn؛ الجملة4 تبدأ بـWeil وتذكر سبب أخذ استراحة ثم قرار الاستراحة في الرئيسية. استعمل weil مرتين وdenn مرة، مع الفواصل وترتيب الفعل المناسب. لا تنفيذ لنشاط بدني أو شريك أو تسجيل أو معلومات صحية شخصية مطلوب.",
+      "finding": "أربع جمل معلنة مع الجهر؛ المصدر والتقييم يجمعان weil مرتين و denn مرة بالتوزيع نفسه بدل التعارض القديم، والنموذج 223 حرفًا فوق 150.",
+      "sourceIds": [
+        "CLAUSE",
+        "LINK",
+        "PERF"
+      ],
+      "items": [
+        {
+          "text": "الجملة 1: Ich spiele zweimal pro Woche Basketball.",
+          "finding": "الجملة 1: نشاط Basketball وعدد مرات محدد، مرتان أسبوعيًا؛ شخصية خيالية لا بيانات المتعلم."
+        },
+        {
+          "text": "الجملة 2: Heute bin ich erschöpft, weil ich lange trainiert habe.",
+          "finding": "الجملة 2: إرهاق وسبب بـ weil بعد الرئيسية، مع trainiert habe بترتيب صحيح."
+        },
+        {
+          "text": "الجملة 3: Trotzdem bin ich zufrieden, denn meine Mannschaft hat gut gespielt.",
+          "finding": "الجملة 3: رضا رغم التعب وسبب بـ denn مع hat gut gespielt؛ لا يدعي الفوز."
+        },
+        {
+          "text": "الجملة 4: Weil meine Muskeln müde sind, mache ich morgen eine Pause.",
+          "finding": "الجملة 4: سبب مقدم بـ Weil و sind آخره، ثم mache ich وقرار استراحة غدًا؛ يفي بمطلب weil الثانية."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q01",
+      "text": "ما معنى **erschöpft**؟",
+      "finding": "erschöpft تعني مرهقًا أو منهكًا.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "مرهق.",
+        "هادئ.",
+        "فخور."
+      ],
+      "answer": "مرهق.",
+      "sourceTaskIds": [
+        "DL-A2-10-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "مرهق.",
+          "correct": true,
+          "finding": "المراد erschöpft: مرهق أو منهك."
+        },
+        {
+          "text": "هادئ.",
+          "correct": false,
+          "finding": "هادئ ليس معنى erschöpft هنا."
+        },
+        {
+          "text": "فخور.",
+          "correct": false,
+          "finding": "فخور ليس معنى erschöpft؛ لا استنتاج مشاعر نجاح من التعب."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q02",
+      "text": "اختر الترتيب الموافق لنمط weil المعياري المدروس هنا:",
+      "finding": "في هذا النمط يأتي الفعل المصرف hat آخر التابعة، بعد Partizip II وهو trainiert. لا نصرف trainiert ولا نضع hat بعد sie مباشرة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "Mina ist erschöpft, weil sie hat trainiert.",
+        "Mina ist erschöpft, weil sie trainiert hat.",
+        "Mina ist erschöpft, weil trainiert sie hat."
+      ],
+      "answer": "Mina ist erschöpft, weil sie trainiert hat.",
+      "sourceTaskIds": [
+        "DL-A2-10-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Mina ist erschöpft, weil sie hat trainiert.",
+          "correct": false,
+          "finding": "hat بعد sie وليس آخر التابعة؛ لا يطابق النمط المعياري المطلوب."
+        },
+        {
+          "text": "Mina ist erschöpft, weil sie trainiert hat.",
+          "correct": true,
+          "finding": "trainiert hat مع المصرف hat أخيرًا يطابق T04.1."
+        },
+        {
+          "text": "Mina ist erschöpft, weil trainiert sie hat.",
+          "correct": false,
+          "finding": "trainiert قبل sie فلا يطابق ترتيب الفاعل في البنية المدروسة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q03",
+      "text": "أي أداة تبدأ جملة تابعة تجعل الفعل في النهاية؟",
+      "finding": "weil تدخل جملة تابعة، فيأتي الفعل المصرف في النهاية.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "denn",
+        "aber",
+        "weil"
+      ],
+      "answer": "weil",
+      "sourceTaskIds": [
+        "DL-A2-10-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "denn",
+          "correct": false,
+          "finding": "denn تربط الرئيسية ولا تفرض المصرف آخرها."
+        },
+        {
+          "text": "aber",
+          "correct": false,
+          "finding": "aber رابط استدراكي رئيسي، لا يدخل التابعة المقصودة."
+        },
+        {
+          "text": "weil",
+          "correct": true,
+          "finding": "weil هو الرابط السببي التابع في الخيارات."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q04",
+      "text": "أي جملة صحيحة؟",
+      "finding": "بعد الجملة التابعة يأتي فعل الجملة الرئيسية مباشرة: bleiben wir.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "Weil es regnet, wir bleiben in der Halle.",
+        "Weil es regnet, bleiben wir in der Halle.",
+        "Weil regnet es, bleiben wir in der Halle."
+      ],
+      "answer": "Weil es regnet, bleiben wir in der Halle.",
+      "sourceTaskIds": [
+        "DL-A2-10-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "Weil es regnet, wir bleiben in der Halle.",
+          "correct": false,
+          "finding": "الرئيسية بعد التابعة تبدأ بـ wir بدل bleiben فيخالف النمط."
+        },
+        {
+          "text": "Weil es regnet, bleiben wir in der Halle.",
+          "correct": true,
+          "finding": "bleiben بعد فاصلة التابعة و wir بعدها؛ es regnet صحيح داخل التابعة."
+        },
+        {
+          "text": "Weil regnet es, bleiben wir in der Halle.",
+          "correct": false,
+          "finding": "regnet es بعد Weil لا يحفظ المصرف في النهاية في التركيب المعطى."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q05",
+      "text": "ما النشاط الذي تمارسه Rania كثيرًا بعد العمل؟",
+      "finding": "يذكر النص أنها تذهب كثيرًا للسباحة.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "السباحة.",
+        "كرة القدم.",
+        "التنس."
+      ],
+      "answer": "السباحة.",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "السباحة.",
+          "correct": true,
+          "finding": "السباحة منصوص عليها في المساء غالبًا."
+        },
+        {
+          "text": "كرة القدم.",
+          "correct": false,
+          "finding": "لا يذكر أن نشاطها هذا كرة قدم."
+        },
+        {
+          "text": "التنس.",
+          "correct": false,
+          "finding": "لا يذكر التنس كنشاط Rania هنا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q06",
+      "text": "لماذا تذهب Rania للسباحة؟",
+      "finding": "تريد أن تتحرك بعد العمل: weil sie sich … bewegen möchte.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "لأن فريقها يلعب في الصباح.",
+        "لأنها تسافر إلى Wien.",
+        "لأنها تريد الحركة بعد العمل."
+      ],
+      "answer": "لأنها تريد الحركة بعد العمل.",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "لأن فريقها يلعب في الصباح.",
+          "correct": false,
+          "finding": "الفريق الصباحي غير مذكور."
+        },
+        {
+          "text": "لأنها تسافر إلى Wien.",
+          "correct": false,
+          "finding": "سفر Wien غير مذكور ولا سبب مدعوم."
+        },
+        {
+          "text": "لأنها تريد الحركة بعد العمل.",
+          "correct": true,
+          "finding": "الرغبة في الحركة بعد العمل واردة صراحة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q07",
+      "text": "بحسب النص، ماذا تفعل Rania في الأيام التي تكون فيها متعبة؟",
+      "finding": "النص يقول إنها تأخذ استراحة أولًا وتشرب الماء.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "تذهب إلى مباراة.",
+        "تأخذ استراحة وتشرب الماء.",
+        "تتدرب لساعات."
+      ],
+      "answer": "تأخذ استراحة وتشرب الماء.",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "تذهب إلى مباراة.",
+          "correct": false,
+          "finding": "لا تذهب لمباراة بحسب هذا المقطع."
+        },
+        {
+          "text": "تأخذ استراحة وتشرب الماء.",
+          "correct": true,
+          "finding": "تأخذ استراحة أولًا وتشرب الماء؛ الفعلان واردان."
+        },
+        {
+          "text": "تتدرب لساعات.",
+          "correct": false,
+          "finding": "تدريب ساعات لا يطابق حالة التعب الموصوفة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q08",
+      "text": "في **Ich spiele zweimal pro Woche Basketball**، كم مرة تُمارس كرة السلة؟",
+      "finding": "zweimal pro Woche تعني مرتين في الأسبوع. الجملة لا تحدد جنس المتكلم أو اسمه.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "مرتين في الأسبوع.",
+        "مرة في الشهر.",
+        "كل يوم."
+      ],
+      "answer": "مرتين في الأسبوع.",
+      "sourceTaskIds": [
+        "DL-A2-10-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "مرتين في الأسبوع.",
+          "correct": true,
+          "finding": "مرتان في الأسبوع ترجمة zweimal pro Woche؛ بلا استنتاج جنس."
+        },
+        {
+          "text": "مرة في الشهر.",
+          "correct": false,
+          "finding": "ليس مرة في الشهر."
+        },
+        {
+          "text": "كل يوم.",
+          "correct": false,
+          "finding": "ليس كل يوم؛ لا نجعل الانتظام تكرارًا يوميًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q09",
+      "text": "ما الفرق بين weil وdenn في أنماط الجمل المعيارية المدروسة هنا؟",
+      "finding": "weil تدخل التابعة والفعل المصرف آخرها في النمط المدروس؛ denn تربط جملتين رئيسيتين ولا تحتل الموقع الأول داخل الجملة التالية.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "بعد denn يأتي الفعل دائمًا في النهاية.",
+        "لا يختلف ترتيب الجملة بعدهما.",
+        "بعد weil يأتي الفعل في النهاية؛ وبعد denn يبقى ترتيب الجملة الرئيسية."
+      ],
+      "answer": "بعد weil يأتي الفعل في النهاية؛ وبعد denn يبقى ترتيب الجملة الرئيسية.",
+      "sourceTaskIds": [
+        "DL-A2-10-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "بعد denn يأتي الفعل دائمًا في النهاية.",
+          "correct": false,
+          "finding": "denn لا يفرض الفعل أخيرًا؛ «دائمًا» غير صحيحة."
+        },
+        {
+          "text": "لا يختلف ترتيب الجملة بعدهما.",
+          "correct": false,
+          "finding": "الترتيبان مختلفان في النمط المعياري المعروض."
+        },
+        {
+          "text": "بعد weil يأتي الفعل في النهاية؛ وبعد denn يبقى ترتيب الجملة الرئيسية.",
+          "correct": true,
+          "finding": "weil مع نهاية الفعل، و denn مع الرئيسية؛ يطابق T03 والدعم."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-Q10",
+      "text": "متى تكون Rania أحيانًا **nervös** بحسب النص؟",
+      "finding": "النص يقول Vor einem Wettbewerb ist sie manchmal nervös.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK",
+        "PERF",
+        "EXHAUST",
+        "NERVOUS"
+      ],
+      "options": [
+        "بعد تناول العشاء.",
+        "قبل المنافسة.",
+        "في المكتبة."
+      ],
+      "answer": "قبل المنافسة.",
+      "sourceTaskIds": [
+        "DL-A2-10-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "بعد تناول العشاء.",
+          "correct": false,
+          "finding": "العشاء غير مذكور سببًا أووقتًا للتوتر."
+        },
+        {
+          "text": "قبل المنافسة.",
+          "correct": true,
+          "finding": "قبل المنافسة وأحيانًا، كما ينص السؤال والنص."
+        },
+        {
+          "text": "في المكتبة.",
+          "correct": false,
+          "finding": "المكتبة غير مذكورة."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-P01",
+      "text": "اكتب أربع جمل بضمير ich عن شخصية خيالية تمارس رياضة أو نشاطًا بدنيًا، ثم اقرأها جهرًا: الجملة1 تسمي النشاط وعدد مرات ممارسته؛ الجملة2 تصف شعورًا وسببه بـweil بعد الرئيسية؛ الجملة3 تصف شعورًا أو تقييمًا آخر وسببه بـdenn؛ الجملة4 تبدأ بـWeil وتذكر سبب أخذ استراحة ثم قرار الاستراحة في الرئيسية. استعمل weil مرتين وdenn مرة، مع الفواصل وترتيب الفعل المناسب. لا تنفيذ لنشاط بدني أو شريك أو تسجيل أو معلومات صحية شخصية مطلوب.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحدود الحرفية والإقرارات لا تثبت صحة اللغة أو النطق.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل: نشاط وتكرار؛ شعور وسبب بـweil؛ تقييم أو شعور آخر وسبب بـdenn؛ سبب مقدم بـWeil وقرار استراحة. قرأت الجمل جهرًا.",
+        "meaningClarity": "الشخصية خيالية؛ كل سبب يفسر النتيجة المقصودة دون عكسهما، ولا يتطلب النص معلومات صحية حقيقية أو ممارسة نشاط.",
+        "targetSkill": "weil مرتان وdenn مرة؛ الفعل المصرف آخر التابعة، وفعل الرئيسية بعد فاصلة Weil المقدمة، والترتيب الرئيسي بعد denn."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 150,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل: نشاط وتكرار؛ شعور وسبب بـweil؛ تقييم أو شعور آخر وسبب بـdenn؛ سبب مقدم بـWeil وقرار استراحة. قرأت الجمل جهرًا.",
+          "finding": "أربع جمل بالتوزيع نفسه في T08؛ نموذج 223 حرفًا يجاوز 150، والجهر شرط صريح لا إضافة خفية."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "الشخصية خيالية؛ كل سبب يفسر النتيجة المقصودة دون عكسهما، ولا يتطلب النص معلومات صحية حقيقية أو ممارسة نشاط.",
+          "finding": "المعنى خيالي ويحفظ اتجاه السبب ولا يطلب تقرير حالة صحية؛ يفصل اختيار المتعلم عن ادعاءات طبية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "weil مرتان وdenn مرة؛ الفعل المصرف آخر التابعة، وفعل الرئيسية بعد فاصلة Weil المقدمة، والترتيب الرئيسي بعد denn.",
+          "finding": "weil مرتان واحدة مقدمة و denn مرة؛ الترتيب والفواصل واضحة في المثال، لكن التطبيق لا يصححهما آليًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-P02",
+      "text": "اكتب ثلاث جمل كاملة تحفظ المعنى المعطى في كل صياغة: Ich mache eine Pause. Ich bin müde. التعب هو السبب والاستراحة نتيجته. الجملة1 تبدأ بـIch mache وتربط السبب بـweil؛ الجملة2 تبدأ بـWeil ich وتنتهي بالرئيسية؛ الجملة3 تبدأ بـIch mache وتربط السبب بـdenn. حافظ على ich والمضارع، وأضف الفواصل والنقاط. هذه مهمة كتابة فقط، دون جهر أو تسجيل أو وصف حالة صحية حقيقية.",
+      "finding": "المصدر والمعايير والنموذج ونمط الدليل متطابقة؛ الحدود الحرفية والإقرارات لا تثبت صحة اللغة أو النطق.",
+      "sourceIds": [
+        "SUB",
+        "CLAUSE",
+        "LINK"
+      ],
+      "criteria": {
+        "taskCompletion": "ثلاث جمل كاملة للموقف المعطى: رئيسية ثم weil، ثم Weil مقدمة، ثم رئيسية مع denn؛ كتابة فقط.",
+        "meaningClarity": "يبقى التعب سبب الاستراحة في الصيغ الثلاث دون تبديل المعنى أو إضافة واقعة؛ ضمير ich وزمن المضارع محفوظان.",
+        "targetSkill": "الفاصلة صحيحة في كل صيغة؛ bin آخر التابعة مع weil، وmache بعد التابعة المقدمة، وich bin بعد denn في الصيغة المطلوبة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "ثلاث جمل كاملة للموقف المعطى: رئيسية ثم weil، ثم Weil مقدمة، ثم رئيسية مع denn؛ كتابة فقط.",
+          "finding": "ثلاثة تحويلات مصدرها T07 ب ونموذج 122 حرفًا فوق 110؛ لا جهر ولا تسجيل."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "يبقى التعب سبب الاستراحة في الصيغ الثلاث دون تبديل المعنى أو إضافة واقعة؛ ضمير ich وزمن المضارع محفوظان.",
+          "finding": "Ich mache eine Pause لأن Ich bin müde في الثلاث؛ لا تغيير زمن أو ضمير أو سبب."
+        },
+        {
+          "key": "targetSkill",
+          "text": "الفاصلة صحيحة في كل صيغة؛ bin آخر التابعة مع weil، وmache بعد التابعة المقدمة، وich bin بعد denn في الصيغة المطلوبة.",
+          "finding": "المعيار يسمي bin/mache وترتيب ich bin بدقة؛ التقييم الذاتي إقرار ومراجعة من المتعلم لا تصحيح لغوي آلي."
+        }
+      ]
+    },
+    {
+      "id": "DL-A2-10-AUD-PHR-01",
+      "text": "Die Bewegung. Die Gesundheit. Das Training. Der Muskel. Der Wettbewerb. Die Pause. Sich fühlen. Sich entspannen. Fit. Erschöpft. Zufrieden. Nervös. Regelmäßig. Die Mannschaft.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة محفوظة. لا توليد أو استماع أو اعتماد جديد. صوت القراءة يحكي عن Rania بضمير الغائب؛ وصوت الاستماع لا يحدد جنس الشخصية من نصها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Die Bewegung.",
+          "finding": "Bewegung مؤنث، والجمع Bewegungen؛ الحركة العامة هنا غير عد حركات متعددة."
+        },
+        {
+          "text": "Die Gesundheit.",
+          "finding": "Gesundheit الصحة، اسم مؤنث مستعمل هنا بلا جمع؛ الشرطة ليست إذنًا لاختراع جمع في السياق."
+        },
+        {
+          "text": "Das Training.",
+          "finding": "Training محايد وجمعه Trainings؛ المقصود التدريب الرياضي في هذه الوحدة، لا كل استعمال للكلمة."
+        },
+        {
+          "text": "Der Muskel.",
+          "finding": "Muskel مذكر وجمعه Muskeln؛ التغير ليس جمعًا بـ s."
+        },
+        {
+          "text": "Der Wettbewerb.",
+          "finding": "Wettbewerb مذكر وجمعه Wettbewerbe؛ منافسة، لا دليل على نوع رياضة فريق Rania أو فوزه."
+        },
+        {
+          "text": "Die Pause.",
+          "finding": "Pause مؤنث وجمعها Pausen؛ eine Pause machen عبارة أخذ استراحة."
+        },
+        {
+          "text": "Sich fühlen.",
+          "finding": "sich fühlen فعل انعكاسي؛ fühlt sich صيغة المفرد الغائب، لا تستعمل مع ich دون تعديل الضمير والتصريف."
+        },
+        {
+          "text": "Sich entspannen.",
+          "finding": "sich entspannen للاسترخاء؛ entspannt sich صيغة مفرد غائب، ويبين الدعم Wir entspannen uns."
+        },
+        {
+          "text": "Fit.",
+          "finding": "fit لائق بدنيًا في السياق الرياضي؛ لا تعني تقرير سلامة طبية ولا تسمح باستنتاج حالة شخص آخر."
+        },
+        {
+          "text": "Erschöpft.",
+          "finding": "erschöpft مرهق أو منهك من المجهود في السياق، لا هادئ أو فخور."
+        },
+        {
+          "text": "Zufrieden.",
+          "finding": "zufrieden راضٍ؛ قد يجتمع مع الإرهاق كما يوضح الاستماع."
+        },
+        {
+          "text": "Nervös.",
+          "finding": "nervös متوتر، شعور محتمل لا حالة لازمة لكل شخص قبل منافسة أو امتحان."
+        },
+        {
+          "text": "Regelmäßig.",
+          "finding": "regelmäßig هنا بانتظام؛ لا تعني كل يوم أو دائمًا ولا شعورًا نفسيًا."
+        },
+        {
+          "text": "Die Mannschaft.",
+          "finding": "Mannschaft مؤنث وجمعها Mannschaften؛ فريق، وليس Rechnung أي فاتورة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-10-AUD-MODEL-01",
+      "text": "Ich gehe spazieren, weil ich Bewegung brauche. Mina ist erschöpft, weil sie lange trainiert hat. Weil ich müde bin, mache ich eine Pause. Ich mache eine Pause, denn ich bin müde. Ich bin müde. Deshalb mache ich eine Pause.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة محفوظة. لا توليد أو استماع أو اعتماد جديد. صوت القراءة يحكي عن Rania بضمير الغائب؛ وصوت الاستماع لا يحدد جنس الشخصية من نصها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Ich gehe spazieren, weil ich Bewegung brauche.",
+          "finding": "الرئيسية ثم سبب بـ weil؛ brauche مصرف أخير مع ich، ولا نحول الحاجة إلى وصفة طبية."
+        },
+        {
+          "text": "Mina ist erschöpft, weil sie lange trainiert hat.",
+          "finding": "الإرهاق حالي والتدرب ماضٍ؛ trainiert hat في نهاية التابعة، مع -ieren دون ge."
+        },
+        {
+          "text": "Weil ich müde bin, mache ich eine Pause.",
+          "finding": "السبب مقدم بـ Weil ثم فاصلة و mache ich، لا ich mache في هذا النمط."
+        },
+        {
+          "text": "Ich mache eine Pause, denn ich bin müde.",
+          "finding": "denn تربط الرئيسية و ich bin يحفظ ترتيبها؛ ليست bin في آخرها كما مع weil."
+        },
+        {
+          "text": "Ich bin müde.",
+          "finding": "جملة سبب مستقلة: Ich bin müde؛ التعب قبل عرض النتيجة في الجملة التالية."
+        },
+        {
+          "text": "Deshalb mache ich eine Pause.",
+          "finding": "Deshalb في البداية ثم mache ich؛ نتيجة التعب، لا because بمعنى weil، وليست هذه بداية إلزامية لكل استعمال deshalb."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-10-AUD-DLG-01",
+      "text": "Wie fühlst du dich nach dem Lauf, Omar? Ich bin zufrieden, weil ich heute fünf Kilometer gelaufen bin. Super! Ich bin etwas erschöpft, weil ich gestern lange trainiert habe. Dann machen wir eine Pause. Gute Idee. Ich möchte regelmäßig trainieren, denn Sport ist gut für mich. Ich auch. Wenn wir zusammen laufen, macht es mehr Spaß.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة محفوظة. لا توليد أو استماع أو اعتماد جديد. صوت القراءة يحكي عن Rania بضمير الغائب؛ وصوت الاستماع لا يحدد جنس الشخصية من نصها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Wie fühlst du dich nach dem Lauf, Omar?",
+          "finding": "Lina تسأل Omar عن شعوره بعد الجري؛ fühlst du dich يوافق du وليس Rania."
+        },
+        {
+          "text": "Ich bin zufrieden, weil ich heute fünf Kilometer gelaufen bin.",
+          "finding": "Omar راضٍ لأنه جرى خمسة كيلومترات اليوم؛ gelaufen bin مع ich، لا خمسة أيام أو تدريب الأمس."
+        },
+        {
+          "text": "Super! Ich bin etwas erschöpft, weil ich gestern lange trainiert habe.",
+          "finding": "Lina مرهقة قليلًا بسبب تدريب طويل أمس؛ nicht سبب تعب Omar، و trainiert habe يخص ich."
+        },
+        {
+          "text": "Dann machen wir eine Pause.",
+          "finding": "يقترح Omar استراحة؛ Dann machen wir، لا إثبات أن الاستراحة أُنجزت بالفعل."
+        },
+        {
+          "text": "Gute Idee. Ich möchte regelmäßig trainieren, denn Sport ist gut für mich.",
+          "finding": "Lina ترغب في الانتظام وتذكر رأيها أن الرياضة مفيدة لها؛ لا تعميم طبي على الجميع."
+        },
+        {
+          "text": "Ich auch. Wenn wir zusammen laufen, macht es mehr Spaß.",
+          "finding": "Omar يوافق، و Wenn يربط الجري المشترك بمتعة أكبر؛ ليس because ولا دليل موعد تدريب مؤكد."
+        }
+      ],
+      "voiceIds": [
+        "voice-00",
+        "voice-03",
+        "voice-00",
+        "voice-03",
+        "voice-00",
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-10-AUD-READ-01",
+      "text": "Rania arbeitet tagsüber am Computer. Am Abend geht sie oft schwimmen, weil sie sich nach der Arbeit bewegen möchte. An manchen Tagen ist sie müde. Dann macht sie zuerst eine Pause und trinkt Wasser. Am Samstag trainiert sie mit ihrer Mannschaft. Rania fühlt sich nach dem Training zufrieden, weil sie regelmäßig Sport macht. Vor einem Wettbewerb ist sie manchmal nervös, aber ihre Freunde unterstützen sie.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة محفوظة. لا توليد أو استماع أو اعتماد جديد. صوت القراءة يحكي عن Rania بضمير الغائب؛ وصوت الاستماع لا يحدد جنس الشخصية من نصها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Rania arbeitet tagsüber am Computer.",
+          "finding": "Rania تعمل نهارًا على الحاسوب؛ لا مهنة أو عدد ساعات محددان."
+        },
+        {
+          "text": "Am Abend geht sie oft schwimmen, weil sie sich nach der Arbeit bewegen möchte.",
+          "finding": "تذهب غالبًا للسباحة مساءً لأنها تريد الحركة بعد العمل؛ sich bewegen möchte بترتيب المصدر والمصرف، لا ممارسة كل يوم."
+        },
+        {
+          "text": "An manchen Tagen ist sie müde.",
+          "finding": "في بعض الأيام تكون متعبة؛ ليس حكمًا عن كل الأيام."
+        },
+        {
+          "text": "Dann macht sie zuerst eine Pause und trinkt Wasser.",
+          "finding": "عندئذ تبدأ باستراحة وتشرب الماء؛ هذا وصف قصتها لا وصفة علاج."
+        },
+        {
+          "text": "Am Samstag trainiert sie mit ihrer Mannschaft.",
+          "finding": "تتدرب السبت مع فريقها؛ لا وحدها، ولا نعرف نوع رياضة الفريق من هذه الجملة."
+        },
+        {
+          "text": "Rania fühlt sich nach dem Training zufrieden, weil sie regelmäßig Sport macht.",
+          "finding": "تشعر بعد التدريب بالرضا بسبب انتظامها؛ لا دليل فوز أو انعدام إرهاق من ذلك."
+        },
+        {
+          "text": "Vor einem Wettbewerb ist sie manchmal nervös, aber ihre Freunde unterstützen sie.",
+          "finding": "قبل المنافسة تتوتر أحيانًا وأصدقاؤها يدعمونها؛ لا دائمًا هادئة ولا دائمًا متوترة، ولا نتيجة منافسة معلنة."
+        }
+      ],
+      "voiceIds": [
+        "voice-02"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    },
+    {
+      "id": "DL-A2-10-AUD-LST-01",
+      "text": "Ich spiele zweimal pro Woche Basketball. Heute bin ich erschöpft, weil ich lange trainiert habe. Trotzdem bin ich zufrieden, denn meine Mannschaft hat gut gespielt. Morgen mache ich eine Pause, weil meine Muskeln müde sind.",
+      "finding": "مطابقة نصية مع المصدر؛ الكلمات والأصوات والمسارات والحالة محفوظة. لا توليد أو استماع أو اعتماد جديد. صوت القراءة يحكي عن Rania بضمير الغائب؛ وصوت الاستماع لا يحدد جنس الشخصية من نصها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Ich spiele zweimal pro Woche Basketball.",
+          "finding": "كرة السلة مرتان أسبوعيًا؛ النص بصيغة ich ولا اسم أو جنس محدد."
+        },
+        {
+          "text": "Heute bin ich erschöpft, weil ich lange trainiert habe.",
+          "finding": "الإرهاق اليوم بعد تدريب طويل؛ trainiert habe مع ich، وليس لأن الفريق خسر."
+        },
+        {
+          "text": "Trotzdem bin ich zufrieden, denn meine Mannschaft hat gut gespielt.",
+          "finding": "رغم الإرهاق رضا، وسببه أن الفريق لعب جيدًا؛ gut gespielt لا تعني فاز، و hat مصرف في الرئيسية بعد denn."
+        },
+        {
+          "text": "Morgen mache ich eine Pause, weil meine Muskeln müde sind.",
+          "finding": "استراحة غدًا بسبب تعب العضلات؛ sind يطابق Muskeln الجمع، والنية ليست فعلًا نفذ."
+        }
+      ],
+      "voiceIds": [
+        "voice-03"
+      ],
+      "status": "ready",
+      "acousticReviewed": false
+    }
+  ],
+  "sourceHashes": {
+    "content/A2/lesson-10-sports-health-feelings-weil.md": "be27f677d190a5f7fb446bdc433d10ceb566ba2e131934791053e8e837ad8a9e",
+    "content/A2/lesson-10-sports-health-feelings-weil.assessment.json": "beed6d3c91bd69b733677cf830935d9cf4ef5b8f88e0caa27aa1c6e82885633f"
+  },
+  "audioSnapshotHashes": {
+    "DL-A2-10-AUD-PHR-01": "6c44ad83f3dcfdd0ab851f11ace2fe1b31e0c5603a73540c0f8a697baf18903b",
+    "DL-A2-10-AUD-MODEL-01": "51a9fc61d6a5b9f94c6b20b13678143744ac2552c426769ec9058d085055a527",
+    "DL-A2-10-AUD-DLG-01": "aca37bcd4fa8006626daf7ac41cc616bccaa6215c382be5b9b2aa432f2b9ede1",
+    "DL-A2-10-AUD-READ-01": "e7ffaa3fa82bedc4779ffbb66a86175e7f56f165e4052bbe6c2e037a72fc3d22",
+    "DL-A2-10-AUD-LST-01": "b5c62a4858ba67e7edf4cb487be63dbfdf6faeed390978f86574f8869160b490"
+  },
+  "preservation": {
+    "baseline": "caf693a50a76d4ac76d05079341a9535a22aa797",
+    "otherLessonsUnchanged": 52,
+    "otherCatalogRowsUnchanged": 1060,
+    "mp3GitHashesUnchanged": 474,
+    "playlistBytesUnchanged": true,
+    "audioRegisterChanges": [
+      {
+        "assetId": "DL-A2-10-AUD-PHR-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-10-AUD-MODEL-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-10-AUD-DLG-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-10-AUD-READ-01",
+        "fields": [
+          "source_line"
+        ]
+      },
+      {
+        "assetId": "DL-A2-10-AUD-LST-01",
+        "fields": [
+          "source_line"
+        ]
+      }
+    ],
+    "answerIndicesUnchanged": true,
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "protectedFilesCompared": 115,
+    "existingA209A210ConsistencyAssertionsUnchanged": true
+  },
+  "qualityChecks": {
+    "build": "PASS",
+    "verify": "PASS",
+    "bundleBytes": 1972214,
+    "cacheVersion": "v75",
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserVersion": "Chromium 143.0.7499.0",
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "axeScreenStates": 125,
+    "axeSelectedRuleViolations": 0,
+    "axeIncompleteOccurrences": 84,
+    "axeIncompleteNodeOccurrences": 191,
+    "narrowStates": 126,
+    "formsAttempts": [
+      "PASS first serial run at1440 and390; historical filechooser intermittency not claimed fixed"
+    ],
+    "browserEnvironment": "Locked npm dependencies plus Sparticuz143.0.4 and bundled al2023 libraries outside Git; all five suites passed.",
+    "reviewGuards": {
+      "status": "PASS",
+      "count": 28
+    },
+    "draftReviewCountCorrection": "Initial draft guard expected109; actual exhaustive category sum99. Corrected count, no reviewed category/item removed; all28 guards passed afterward.",
+    "javascriptSyntax": "PASS: app.js/service-worker.js/all tools/test_*.cjs",
+    "diffCheck": "PASS",
+    "limits": [
+      "Not acoustic, physical-device, CEFR, medical or WCAG certification.",
+      "Evidence bookkeeping is not automatic language/pronunciation assessment.",
+      "Prior A2.8/A2.9 recorded-text issues remain documented and unchanged.",
+      "No human reviewer prerequisite; no remote UI or Production test claimed."
+    ]
+  },
+  "delivery": {
+    "branch": "arena/01a1036f-deutschlern",
+    "implementationCommit": "b4e0e449df6b3b9e9185d45aa7cc5d3f956e728f",
+    "implementationPushed": true,
+    "implementationHeadMatchedRemote": true,
+    "reviewPushed": true,
+    "remoteUiTested": false,
+    "prState": "OPEN",
+    "mergedAt": null,
+    "prHeadAtCheck": "5a216dd9bf9ab4159ebb085de12aeca876c73dcf",
+    "reviewCommit": "5a216dd9bf9ab4159ebb085de12aeca876c73dcf",
+    "reviewHeadMatchedRemote": true,
+    "implementationVercelStatus": "success",
+    "implementationDeploymentId": 6943547489,
+    "implementationDeploymentEnvironment": "Preview",
+    "implementationDeploymentState": "success",
+    "implementationPreviewUrl": "https://deutschlern-7yisid2q5-balinader-2671s-projects.vercel.app",
+    "reviewVercelStatus": "failure",
+    "reviewVercelDescription": "Deployment rate limited — retry in 24 hours.",
+    "reviewDeploymentRecordAtCheck": null,
+    "productionDeploymentClaimed": false,
+    "redeploymentRetriesRequested": false
+  },
+  "campaign": {
+    "reviewedLessons": 27,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 26,
+    "next": "CR29/A2.11"
+  }
+}

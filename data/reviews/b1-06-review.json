@@ -1,0 +1,1737 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-06-health-fitness-advice",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-06-v2",
+  "unitCount": 107,
+  "exerciseSubItemCount": 37,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "K2",
+      "title": "Lingolia — Konjunktiv I und II",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/konjunktiv",
+      "scope": "التوصيات والأسئلة الحذرة في Konjunktiv II؛ لا ننقل التعميم الافتتاحي عن عدم الإمكان إلى كل طلب أو اقتراح. لا يصبح Konjunktiv I أو الماضي الافتراضي مطلبًا إضافيًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "MOD",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "المصدر مع الفعل الناقص، وصيغ sollte/könnte. يطابق sollte شكل Präteritum، بينما könnte تختلف عن konnte؛ السياق يحدد الوظيفة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "QUESTION",
+      "title": "Lingolia — Fragen",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/fragen",
+      "scope": "المصرف أولًا في السؤال المحايد دون أداة؛ وفي Wie kann ich... تأتي الأداة ثم المصرف. لا نعمم الموقع الثاني على كل أنواع الجمل.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "INCREASE",
+      "title": "Duden — steigern",
+      "url": "https://www.duden.de/rechtschreibung/steigern",
+      "scope": "يزيد أو يرفع؛ لا تحمل الكلمة وحدها معنى الزيادة التدريجية. allmählich/langsam تحدد طريقة الزيادة في أمثلة الدرس، ولا يتحول المثال إلى برنامج علاجي.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "WHO",
+      "title": "WHO — Physical activity",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/physical-activity",
+      "scope": "صفحة 26June2024: الحركة تشمل أنشطة الحياة والعمل والترفيه، ولها فوائد عامة؛ الاحتياجات تختلف بحسب الفئات. لا ننقل إحصاءات أو جرعات إلى هذه المهمة اللغوية، ولا ندعي أن المشي القصير في القصة يحقق كل الإرشادات. الدراسات وملفات الإرشادات المرتبطة لم تُقرأ.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0,
+        1
+      ],
+      "totalChunks": 2
+    },
+    {
+      "id": "SEP",
+      "title": "Lingolia — Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "auf/ein/an منفصلة في الرئيسية المصرفة، لكن تبقى ملتصقة في المصدر aufwärmen/einplanen/anfangen بعد الفعل الناقص؛erholen غير منفصل.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "INF",
+      "title": "Lingolia — Infinitivsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/infinitivsaetze",
+      "scope": "تمييز تركيب المصدر مع zu عن المصدر المباشر بعد الفعل الناقص، و zu داخل الفعل المنفصل. يفيد شرح aufzuwärmen بعد daran denken؛ لا نعمم كل مصدر على كل فاعل أو موقع.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SYMPTOM",
+      "title": "Duden — Beschwerde",
+      "url": "https://www.duden.de/rechtschreibung/Beschwerde",
+      "scope": "المفرد شكوى والجمع Beschwerden؛ يذكر المدخل معنى الألم/المتاعب الصحية بصيغة الجمع فقط. صُحح الشرح المكتوب، ولم يُعد تسجيل المفرد الموجود بقائمة الأسماء.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "RECOVER",
+      "title": "Duden — erholen",
+      "url": "https://www.duden.de/rechtschreibung/erholen",
+      "scope": "فعل انعكاسي لاستعادة القوة/التعافي و sich von...erholen. لا يدل على شفاء مضمون أو مهلة تعافٍ محددة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "NHS",
+      "title": "NHS — Physical activity guidelines for adults aged19–64",
+      "url": "https://www.nhs.uk/live-well/exercise/physical-activity-guidelines-for-adults-aged-19-to-64/",
+      "scope": "صفحةمراجعة 22May2024: ملاءمة النشاط وشدته للياقة، واستشارة GP عند انقطاع طويل أو حالة صحية أو قلق، وكسر الجلوس الطويل بنشاط. نطاقها بالغون 19–64؛ ليست وصفة لكل عمر أو حالة. لم نقرأ PDF/الروابط أو ننقل بروتوكول الحمل/الجرعات. أعاد رابط exercise-guidelines التوجيه إلى هذا المسار.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة، استماع اختياري، قواعد، كتابة وجهر",
+      "finding": "المدة مقترحة قابلة للتقسيم؛ الاستماع اختياري والجهر في P02 مستقل عن تشغيل الملفات.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أقدّم نصيحة عامة بلطف، وأميّز بين **sollte** للتوصية و**könnte** لاقتراح خيار.",
+      "finding": "الهدف تقديم توصية أو خيار بلغة لطيفة، لا تشخيص أو اكتساب تأهيل صحي.",
+      "sourceIds": [
+        "K2",
+        "MOD"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "> **تنبيه تعليمي:** الأمثلة لغوية عامة وليست تشخيصًا أو نصيحة طبية شخصية. عند وجود مشكلة صحية أو قلق مستمر، يُرجى الرجوع إلى مختص مؤهل.",
+      "finding": "التحذير العام محفوظ؛ مراجعة المختص ليست تقييمًا طبيًا يجريه التطبيق.",
+      "sourceIds": [
+        "NHS"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "تنبيه مفردات: يورد Duden معنى المتاعب الصحية بصيغة الجمع **Beschwerden**؛ لا نتعلم المفرد **eine Beschwerde** هنا كمرادف آلي لعارض صحي واحد. تسجيل المفردات ينطق **die Beschwerde** ضمن قائمة أسماء، ويجمع **allmählich** مع **steigern**؛ هذه ملاحظة مكتوبة، لا تعديل للتسجيل أو قراءة كاملة لكل تصريف وجمع في الجدول.",
+      "finding": "الصحي بصيغة Beschwerden؛ المفرد في الصوت عنصر قائمة أسماء لا ترجمة مسجلة لعارض صحي مفرد. allmählich داخل عبارة، والتسجيل ليس قراءة كل الجمع والتصريف.",
+      "sourceIds": [
+        "SYMPTOM",
+        "INCREASE"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "في هذه المواقف نستخدم **sollte** للتوصية و**könnte** لعرض خيار ممكن؛ الفرق في المقصد والسياق، وليس ترتيبًا ثابتًا لدرجة الأدب في كل كلام. الصيغ هنا من **Konjunktiv II** وتُصرف بحسب الفاعل. في الرئيسية الخبرية يكون المصرف في الموقع الثاني والمصدر دون zu في نهاية الجزء الرئيسي. أما السؤال دون أداة فيبدأ بالمصرف، مثل **Könnten Sie bei Bedarf eine Pause machen?**",
+      "finding": "قُيد الفرق بالسياق والموقع الثاني بالرئيسية الخبرية؛ المصدر آخر الجزء الرئيسي، والسؤال المحايد يبدأ بالمصرف.",
+      "sourceIds": [
+        "K2",
+        "MOD",
+        "QUESTION"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "النموذجان مكتوبان خياليان وغير مسجلين، ولا يغيران المقاطع الموجودة أو يطلبان منك ممارسة الرياضة. الموعد في الحوار بيانات لغوية لا موعدًا فعليًا؛freiwillig تعني اختياريًا. يكفي تحقيق المعايير بلغة مناسبة دون نسخ النموذج حرفيًا.",
+      "finding": "الوقت والمعايير خيالية، ولا تنفيذ رياضة مطلوب؛ النماذج غير مسجلة ولا تغير المقاطع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Ausdauer | — | القدرة على التحمّل |",
+      "finding": "مؤنث بمعنى التحمل؛ الشرطة تعني عدم تقديم جمع في هذا السياق، لا عدد دقائق أو معيار لياقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Bewegung | die Bewegungen | الحركة |",
+      "finding": "مؤنث وجمع Bewegungen؛ الحركة في الحياة اليومية أوسع من جلسة تدريب أو رياضة تنافسية.",
+      "sourceIds": [
+        "WHO"
+      ]
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Erholung | — | التعافي / الراحة |",
+      "finding": "مؤنث للراحة أو استعادة القوة؛ لا ادعاء شفاء أو زمن تعافٍ من الكلمة وحدها.",
+      "sourceIds": [
+        "RECOVER"
+      ]
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Pause | die Pausen | الاستراحة |",
+      "finding": "مؤنث وجمع Pausen؛ فترة توقف، لا اشتراط مدة أو عدد ثابتين لكل شخص.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| das Gelenk | die Gelenke | المفصل |",
+      "finding": "محايد وجمع Gelenke؛ المفصل عضو لا قدرة على التحمل. لا توجيه لعلاج مفصل محدد.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Belastung | die Belastungen | الجهد / الحمل البدني |",
+      "finding": "مؤنث وجمع Belastungen؛ الحمل أو الجهد البدني هنا، لا كل معاني العبء النفسي أو تشخيص مرض.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| das Aufwärmen | — | الإحماء |",
+      "finding": "مصدر اسمي محايد Aufwärmen، لا الفعل المصرف؛ تهيئة قبل النشاط لا ضمان منع إصابة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| der Spaziergang | die Spaziergänge | نزهة مشيًا |",
+      "finding": "مذكر وجمع Spaziergänge؛ نزهة مشيًا، لا جري تنافسي أو سرعة موحدة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| die Beschwerde | die Beschwerden | شكوى؛ وفي المعنى الصحي: Beschwerden = أعراض/متاعب |",
+      "finding": "المفرد شكوى؛ يورد Duden المعنى الصحي بصيغة Beschwerden. التوضيح مكتوب والألمانية المسجلة لم تتغير.",
+      "sourceIds": [
+        "SYMPTOM"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| sich erholen von | erholt sich | يتعافى من |",
+      "finding": "فعل انعكاسي sich erholen von؛ يتعافى/يستعيد القوة من شيء، مع von+Dativ بحسب المثال المرجعي.",
+      "sourceIds": [
+        "RECOVER"
+      ]
+    },
+    {
+      "id": "vocab-11",
+      "text": "| etwas steigern | steigert | يزيد/يرفع شيئًا |",
+      "finding": "صُحح إلى يزيد/يرفع شيئًا؛ التدرج تحدده allmählich أو langsam، لا جزء لازم من معنى steigern.",
+      "sourceIds": [
+        "INCREASE"
+      ]
+    },
+    {
+      "id": "vocab-12",
+      "text": "| ausreichend | — | كافٍ |",
+      "finding": "ausreichend كافٍ في السياق، دون كمية أو مدة عددية؛ ليست توصية سوائل شخصية.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-13",
+      "text": "| allmählich | — | تدريجيًا |",
+      "finding": "allmählich تدريجيًا؛ في تسجيل المفردات داخل Etwas allmählich steigern، لا كلمة منفصلة.",
+      "sourceIds": [
+        "INCREASE"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| anstrengend | — | مُجهد |",
+      "finding": "anstrengend مُجهد، وليس بالضرورة خطرًا أو مؤذيًا؛ لا تشخيص من وصف الجهد.",
+      "sourceIds": []
+    },
+    {
+      "id": "conjugation-01",
+      "text": "| ich | sollte | könnte |",
+      "finding": "ich المفرد: sollte/könnte بلالاحقة st أو n؛ يدعم Q03.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-02",
+      "text": "| du | solltest | könntest |",
+      "finding": "du المخاطب المفرد: solltest/könntest، لا solltet/ihr.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-03",
+      "text": "| er / sie / es | sollte | könnte |",
+      "finding": "الغائب المفرد er/sie/es: sollte/könnte؛man يأخذ التصريف نفسه في T04.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-04",
+      "text": "| wir | sollten | könnten |",
+      "finding": "wir الجمع: sollten/könnten؛ هذه صيغتا نموذج P02.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-05",
+      "text": "| ihr | solltet | könntet |",
+      "finding": "ihr المخاطب الجمع: solltet/könntet؛ نهاية et وليست صيغة du.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "conjugation-06",
+      "text": "| sie / Sie | sollten | könnten |",
+      "finding": "sie الجمع و Sie الرسمية: sollten/könnten؛ الكتابة الكبيرة والسياق يميزان المخاطب الرسمي، ولا يثبتان عدده.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "grammar-01",
+      "text": "Du solltest Pausen in deinen Tag einplanen.",
+      "finding": "du مع solltest، والمصدر einplanen متصل دون zu؛ تخطيط الاستراحة توصية عامة لا فعل منجز.",
+      "sourceIds": [
+        "MOD"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Du könntest in der Mittagspause einen kurzen Spaziergang machen.",
+      "finding": "du مع könntest؛ العبارة تعرض خيار مشي في وقت غداء دون رقم أو لزوم تنفيذ.",
+      "sourceIds": [
+        "MOD"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Man sollte ein neues Trainingspensum allmählich steigern.",
+      "finding": "man مفرد مع sollte؛allmählich هي التي تضيف التدرج، والمثال لا يحدد حملًا أو تدريبًا مناسبًا لشخص بعينه.",
+      "sourceIds": [
+        "MOD",
+        "INCREASE"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Bei anhaltenden Beschwerden sollte man eine Fachperson um Rat fragen.",
+      "finding": "عبارة Bei... بالموقع الأول ثم sollte و man؛المصدر fragen أخير. طلب مشورة مختص لا يجيز انتظار أعراض حادة أو يشخصها.",
+      "sourceIds": [
+        "MOD",
+        "NHS"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **الفاعل يحدد التصريف:** du solltest/könntest، و ihr solltet/könntet، و man sollte/könnte مثل الغائب المفرد. Sie الرسمية تأخذ sollten/könnten سواء خاطبت شخصًا أو أكثر؛ ليست sie المفردة. صيغة sollte قد تطابق الماضي البسيط شكليًا، فلا نحكم من الشكل وحده، و könnte ليست konnte.",
+      "finding": "man ليس du، و Sie رسمية ليست sie المفردة؛sollte يطابق صيغة الماضي شكليًا، و könnte ليست konnte.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **الموقع الثاني لا الكلمة الثانية:** في **In der Mittagspause könntest du ... gehen** تشغل عبارة الوقت الموقع الأول. يبدأ السؤال **Könnten Sie ... machen?** بالفعل. وفي **Ich sollte daran denken, mich ... aufzuwärmen** ينتهي الجزء الرئيسي عند denken؛ لا نضع كل المصادر في آخر الجملة المركبة.",
+      "finding": "الموقع الثاني وحدة تركيبية لا ثاني كلمة. يخرج السؤال عن V2، وينتهي الجزء الرئيسي بـ denken قبل تركيب المصدر.",
+      "sourceIds": [
+        "QUESTION",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **مصدران ببنيتين مختلفتين:** بعد Modalverb مباشرة نستخدم **aufwärmen / einplanen / anfangen** بلا zu وبادئة متصلة، لا wärmst auf. لكن تركيب **daran denken, mich ... aufzuwärmen** يحتاج zu داخل الفعل المنفصل. وفي **Wir könnten ... spazieren gehen** يبقى المركب spazieren gehen في النهاية.",
+      "finding": "مصدر مباشر بلا zu بعد Modalverb، ومصدر منفصل مع zu فيتركيب آخر؛ لا استبدال aufwärmen بفعل مصرف.",
+      "sourceIds": [
+        "MOD",
+        "SEP",
+        "INF"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **الضمير الانعكاسي:** **ich erhole mich / du erholst dich / sie erholt sich**؛ ومع الفعل الناقص **Du solltest dich erholen**. von تأخذ Dativ في **sich von etwas erholen**. لا نحذف mich من اقتباس الاستماع أو نستبدله بـ sich ما دمنا ننقل قول ich نفسه.",
+      "finding": "mich/dich/sich بحسب الشخص؛في نقل ich من الاستماع لا نستبدله بـ sich، و von مع Dativ.",
+      "sourceIds": [
+        "RECOVER"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **النصيحة ليست الإنجاز:** **Du könntest ... anfangen** خيار لا إثبات أنه بدأ. **Das klingt machbar** تعني أن الفكرة تبدو قابلة للتنفيذ لا أنها نُفذت. **muss nicht** لا يلزم، وليست **darf nicht** ممنوع؛ فلا نحول المشاركة الاختيارية إلى حظر أو التزام.",
+      "finding": "الاقتراح لا يثبت حدوثه أو قبوله؛muss nicht ينفي اللزوم لا الإباحة، و machbar قابل للتنفيذ لا منفذ.",
+      "sourceIds": [
+        "MOD"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **الفعل والظرف:** **steigern** يزيد/يرفع، و**allmählich / langsam** هما ما يضيف التدرج أو البطء في الأمثلة. **Belastung** هنا حمل بدني لا تشخيص، و**ausreichend** كافٍ دون مقدار رقمي. **Aufwärmen** اسم محايد مصدره فعل، و**Beschwerden** في النصين أعراض أو متاعب لا شكوى إدارية.",
+      "finding": "فصل معنى الفعل عن ظرف التدرج والمقدار العام عن الكمية الطبية؛الصحي Beschwerden جمع.",
+      "sourceIds": [
+        "INCREASE",
+        "SYMPTOM"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **افصل المجموعتين والأزمنة:** مجموعة القراءة موجودة منذ ثلاثة أشهر وتجتمع مرتين أسبوعيًا؛ لا يقول النص إن Dalia تحضر منذ تأسيسها أو تحضر كل لقاء. راوي الاستماع يذهب إلى مجموعة جري منذ أربعة أسابيع بعد العمل؛ لا اسم له أو جنس مصرح به. **lief / kam / sagte** أفعال ماضية للسرد؛ نقل نصيحة المدرب لا يثبت أن الراوي طبقها أو أن المدرب طبيب.",
+      "finding": "ثلاثة أشهر للمجموعة ومرتان أسبوعيًا للاجتماع، وأربعة أسابيع لاستمرار مشاركة الراوي الآخر؛لا دمج أشخاص أو أوقات.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-08",
+      "text": "- **فهم لا وصفة:** مشي بعض المشاركين وتمدد آخرين أنشطة في قصة، لا برنامج يلزم كل متعلم. شرب الماء بعد التدريب لا يعني عدم الشرب قبله أو أثناءه ولا يحدد كمية. شعور الراوي بالراحة لأن الوتيرة تناسبه وصف شخصي، لا دليل شفاء أو سلامة طبية للجميع.",
+      "finding": "الشعور بالراحة ليس نتيجة علاجية مضمونة؛ الماء بعد التدريب ليس حصرًا للتوقيت أو مقدارًا مطلوبًا.",
+      "sourceIds": [
+        "WHO",
+        "NHS"
+      ]
+    },
+    {
+      "id": "helper-09",
+      "text": "- **حدود الصحة:** المهمة كتابة لغوية خيالية، لا اختبار لياقة أو طلب تنفيذ التمارين. لا جرعات أو تشخيص أو وعد بتحسن؛ النشاط وشدته يحتاجان ملاءمة الفرد، وتُطلب مشورة مؤهلة عند وجود حالة صحية أو قلق. عبارة anhaltende Beschwerden في المثال ليست أمرًا بانتظار استمرار أعراض حادة قبل طلب المساعدة؛ المجموعة والمدرب والتطبيق ليسوا بديلًا عن الرعاية الطبية.",
+      "finding": "نطاق لغوي لا تدريب بدني؛ ملاءمة الفرد والمشورة عند القلق، دون جرعات أو تشخيص أو تأخير مساعدة لازمة.",
+      "sourceIds": [
+        "NHS"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة الأداء:** P01 أربع جمل كتابة فقط؛ P02 أربعة أدوار مكتوبة ثم الجهر بالطرفين، مع وقت وفكرة استراحة ومشاركة اختيارية. لا شريك أو تسجيل أو بيانات صحية حقيقية. الإقرار والحد الحرفي لا يصححان اللغة أو النطق ولا يقيّمان ملاءمة نصيحة طبية؛ يمكن قراءة التفريغ بدل تشغيل الصوت.",
+      "finding": "P01 كتابة فقط و P02 مع الجهر؛ لا بيانات صحية أو ممارسة فعلية أو شريك أو تسجيل، والإقرارات ليست تصحيحًا طبيًا أو لغويًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Ich sitze bei der Arbeit viele Stunden am Schreibtisch und möchte mehr Bewegung in meinen Alltag bringen.",
+      "finding": "Hiba تجلس طويلًا وتريد حركة أكثر؛ هذا هدف لا فعل تحقق أو تشخيص لمرض.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Du könntest mit kurzen Spaziergängen anfangen.",
+      "finding": "Fares يعرض خيار بدء مشي قصير بـ könntest و anfangen؛ ليس أمرًا ملزمًا أو إثبات بداية.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Wie kann ich das in meinen Tagesplan einbauen?",
+      "finding": "Wie ثم kann و ich؛ einbauen مصدر متصل في النهاية، والسؤال عن إدماج الفكرة في الجدول.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Du solltest regelmäßige Pausen einplanen. In der Mittagspause könntest du mit einer Kollegin nach draußen gehen.",
+      "finding": "توصية استراحات بـ solltest وخيار خروج مع زميلة بـ könntest؛ المصرف بعد عبارة الوقت، ولا موعد محدد أو موافقة من الزميلة.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Das klingt machbar. Ich sollte auch daran denken, mich vor dem Sport aufzuwärmen.",
+      "finding": "machbar قبول لقابلية الفكرة لا إثبات تنفيذها. sollte يتبعه denken دون zu؛ mich ... aufzuwärmen تركيب مصدر مختلف.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Genau. Wichtig ist, dass du ein Tempo wählst, das zu dir passt.",
+      "finding": "dass du ... wählst ثم صلة das ... passt عن Tempo؛ الوتيرة المناسبة معيار عام لا تقييم لياقة أو ضمان طبي.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Im Stadtteilzentrum Am Park gibt es seit drei Monaten die offene Gruppe „Bewegte Pause“.",
+      "finding": "مركز Am Park مكان وجود مجموعة منذ ثلاثة أشهر؛ اسم داخل قصة لا عنوان خدمة حقيقية أو زمن مشاركة Dalia.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "text": "Sie trifft sich zweimal pro Woche.",
+      "finding": "مرتان أسبوعيًا تكرار اللقاء، لا كل يوم أو مدة كل جلسة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "text": "Einige Teilnehmende gehen gemeinsam spazieren, andere machen leichte Dehnübungen.",
+      "finding": "بعض المشاركين يمشون وآخرون يتمددون؛ لا اشتراط أن الجميع يفعل النشاطين.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "text": "Dalia arbeitet tagsüber oft am Computer und kam zuerst nur zu einem kurzen Spaziergang mit.",
+      "finding": "Dalia غالبًا بالحاسوب نهارًا وشاركت أولًا في مشي قصير؛ kam ... mit ماضٍ منفصل، لا بداية مؤكدة قبل ثلاثة أشهر.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "text": "Inzwischen plant sie solche Pausen auch an anderen Tagen ein.",
+      "finding": "الآن تخطط استراحات في أيام أخرى؛ plant ... ein لا يحدد كل الأيام أو عددها ولا يثبت نتيجة صحية.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "text": "Die Gruppe vergleicht keine Leistungen; jede Person wählt ein passendes Tempo und muss nicht an jedem Treffen teilnehmen.",
+      "finding": "لا مقارنة أداء؛ وتيرة مناسبة ولا يلزم كل لقاء. muss nicht ليس منعًا من الحضور.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "text": "Wer gesundheitliche Beschwerden hat oder unsicher ist, sollte sich an eine qualifizierte Fachperson wenden.",
+      "finding": "صاحب الأعراض أو عدم اليقين يتوجه لمختص مؤهل؛ sich ... wenden بعد sollte، ولا تشخيص في النص.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-08",
+      "text": "Die Gruppe ersetzt keine medizinische Beratung.",
+      "finding": "المجموعة ليست بديلًا للمشورة الطبية؛ نفي الاستبدال لا يعني نفي كل فائدة للمجموعة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "text": "Seit vier Wochen gehe ich nach der Arbeit zu einer Laufgruppe.",
+      "finding": "منذ أربعة أسابيع بعد العمل؛ لا اسم أو جنس مصرح به للراوي، ولا ثلاثة أشهر من القراءة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "text": "Am Anfang lief ich nur kurze Strecken.",
+      "finding": "Am Anfang lief ماضٍ؛ كانت المسافات قصيرة دون عدد كيلومترات أو شدة مقررة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "text": "Der Trainer sagte, ich sollte mich vor dem Laufen aufwärmen.",
+      "finding": "المدرب نصح بالإحماء؛ sagte ماضٍ و sollte منقول في السياق، ولا يثبت نوع الصيغة صرفيًا أو تطبيقها فعليًا. Trainer لا يثبت تأهيلًا طبيًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "text": "Wenn ich müde bin, kann ich eine Pause machen; ich muss nicht mit allen Schritt halten.",
+      "finding": "عند التعب يمكن أخذ راحة ولا تلزم مجاراة الجميع؛ ليس المعنى العجز أو المنع الدائم من مجاراتهم.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "text": "Nach dem Training trinken wir Wasser.",
+      "finding": "بعد التدريب يشربون ماء؛ لا كمية ولا حصر لشرب الماء في هذا الوقت.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-06",
+      "text": "Ich fühle mich wohl, weil das Tempo zu mir passt.",
+      "finding": "شعور بالراحة لأن الوتيرة مناسبة؛ ليس إثبات شفاء أو مقياس سلامة للجميع.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Wo trifft sich die Gruppe „Bewegte Pause“?",
+      "finding": "المركز من النص، لا المنتزه بمجرد اسمه Am Park.",
+      "sourceIds": [],
+      "answer": "Im Stadtteilzentrum Am Park."
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wie oft kommt die Gruppe zusammen?",
+      "finding": "تكرار اللقاء مرتان أسبوعيًا، لا زمن وجود المجموعة.",
+      "sourceIds": [],
+      "answer": "Zweimal pro Woche."
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Was machen einige Teilnehmende beim Treffen?",
+      "finding": "المفتاح يفصل بين بعض المشاركين وآخرين؛ سؤال البعض يقبل المشي دون فرضه على الجميع.",
+      "sourceIds": [],
+      "answer": "Einige gehen spazieren, andere machen leichte Dehnübungen."
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Muss jede Person an jedem Treffen teilnehmen?",
+      "finding": "لا؛ نفي الوجوب لا حظر الحضور أو حكمًا على أهمية الانتظام.",
+      "sourceIds": [],
+      "answer": "Nein."
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was sollte eine Person tun, wenn sie gesundheitliche Beschwerden hat oder unsicher ist?",
+      "finding": "مشورة مؤهلة عند الأعراض أو الشك، لا وصفة من المجموعة.",
+      "sourceIds": [],
+      "answer": "Sie sollte sich an eine qualifizierte Fachperson wenden."
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Seit wann geht die Person zur Laufgruppe?",
+      "finding": "منذ أربعة أسابيع، لا انتهاء المشاركة بعدها.",
+      "sourceIds": [],
+      "answer": "Seit vier Wochen."
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Was sollte sie vor dem Laufen tun?",
+      "finding": "في تلخيص die Person يصح sie/sich؛ في نقل ich نفسه نحتاج mich كما في T06.",
+      "sourceIds": [],
+      "answer": "Sie sollte sich vor dem Laufen aufwärmen."
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Was kann sie machen, wenn sie müde ist?",
+      "finding": "راحة ممكنة عند التعب، دون عدد مرات أو مدة محددة.",
+      "sourceIds": [],
+      "answer": "Sie kann eine Pause machen."
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was macht die Gruppe nach dem Training?",
+      "finding": "الماء بعد التدريب، بلا كمية أو منع الشرب أثناءه.",
+      "sourceIds": [],
+      "answer": "Sie trinken Wasser."
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Warum fühlt sich die Person wohl?",
+      "finding": "السبب المذكور ملاءمة الوتيرة؛ ihr تعود إلى die Person نحويًا، لا إلى جنس الراوي.",
+      "sourceIds": [],
+      "answer": "Weil das Tempo zu ihr passt."
+    },
+    {
+      "id": "DL-B1-06-T01",
+      "text": "1. فترة توقف قصيرة للراحة: **die Pause / die Ausdauer**\n2. نشاط يساعد على تهيئة الجسم قبل الرياضة: **das Aufwärmen / die Beschwerde**\n3. زيادة أو رفع شيء: **etwas steigern / sich erholen**\n4. القدرة على مواصلة نشاط مدةً مناسبة: **die Ausdauer / das Gelenk**",
+      "finding": "مفردات وبدائل متمايزة؛ steigern لا تعني التدرج وحدها.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "فترة توقف قصيرة للراحة: **die Pause / die Ausdauer**",
+          "finding": "Pause استراحة، لا Ausdauer التي تعني التحمل."
+        },
+        {
+          "text": "نشاط يساعد على تهيئة الجسم قبل الرياضة: **das Aufwärmen / die Beschwerde**",
+          "finding": "Aufwärmen إحماء لا Beschwerde شكوى؛ لا ضمان طبي من التعريف."
+        },
+        {
+          "text": "زيادة أو رفع شيء: **etwas steigern / sich erholen**",
+          "finding": "steigern زيادة لا erholen استعادة قوة؛ حُذف شرط التدرج من التعريف."
+        },
+        {
+          "text": "القدرة على مواصلة نشاط مدةً مناسبة: **die Ausdauer / das Gelenk**",
+          "finding": "Ausdauer تحمل، و Gelenk مفصل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T02",
+      "text": "استخدم Konjunktiv II للتوصية أو الاقتراح/الطلب المهذب، وصرف الفعل بين القوسين بحسب الفاعل؛ لا تكتب المصدر أو صيغة المضارع:\n\n1. Du ______ dich nach dem Training ausreichend erholen. (sollen)\n2. Ihr ______ mit einem langsamen Spaziergang anfangen. (können)\n3. Ich ______ die Belastung nicht plötzlich erhöhen. (sollen)\n4. ______ Sie bei Bedarf eine Pause machen? (können، طلب مهذّب)\n5. Du ______ regelmäßige Pausen einplanen. (sollen)\n6. Ich ______ einen kurzen Spaziergang machen. (können)",
+      "finding": "ستة بنود في Konjunktiv II تميز du/ihr/ich/Sie وتدعم Q02/Q03 مباشرة.",
+      "sourceIds": [
+        "MOD"
+      ],
+      "items": [
+        {
+          "text": "Du ______ dich nach dem Training ausreichend erholen. (sollen)",
+          "finding": "solltest مع du و dich انعكاسي؛ erholen مصدر دون zu."
+        },
+        {
+          "text": "Ihr ______ mit einem langsamen Spaziergang anfangen. (können)",
+          "finding": "könntet مع ihr، لا könntest أو könnten."
+        },
+        {
+          "text": "Ich ______ die Belastung nicht plötzlich erhöhen. (sollen)",
+          "finding": "sollte مع ich؛ nicht plötzlich ينفي الزيادة المفاجئة دون مقدار محدد."
+        },
+        {
+          "text": "______ Sie bei Bedarf eine Pause machen? (können، طلب مهذّب)",
+          "finding": "Könnten مع Sie الرسمية أول السؤال؛ حرف كبير وعلامة سؤال."
+        },
+        {
+          "text": "Du ______ regelmäßige Pausen einplanen. (sollen)",
+          "finding": "solltest؛ أضيف نفس Q02 للتدريب المباشر."
+        },
+        {
+          "text": "Ich ______ einen kurzen Spaziergang machen. (können)",
+          "finding": "könnte؛ أضيف نفس Q03 للمتكلم المفرد، لا صيغة du."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T03",
+      "text": "ابدأ بالفاعل المعطى، وضع المصرف بعده والمصدر أو مركب المصدر في النهاية؛ احفظ الضمير الانعكاسي:\n\n1. Du / solltest / dich / vor dem Training / aufwärmen.\n2. Wir / könnten / nach dem Essen / spazieren gehen.\n3. Man / sollte / ausreichend / Pausen / einplanen.",
+      "finding": "ترتيب خبري ومصدر أخير، مع ضمير انعكاسي ومصدر مركب.",
+      "sourceIds": [
+        "MOD"
+      ],
+      "items": [
+        {
+          "text": "Du / solltest / dich / vor dem Training / aufwärmen.",
+          "finding": "Du solltest dich vor dem Training aufwärmen. فاعل ثم مصرف ومصدر متصل أخيرًا."
+        },
+        {
+          "text": "Wir / könnten / nach dem Essen / spazieren gehen.",
+          "finding": "Wir könnten nach dem Essen spazieren gehen. مركب المصدر أخير؛ ليست دعوة شخصية ملزمة للمشي بعد الطعام."
+        },
+        {
+          "text": "Man / sollte / ausreichend / Pausen / einplanen.",
+          "finding": "Man sollte ausreichend Pausen einplanen. man مفرد والكمية غير رقمية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T04",
+      "text": "اختر بحسب المقصد والفاعل: **solltest / könntest / sollte**. مع man نحتاج المفرد الغائب، لا صيغة du. البدائل قد تصنع كلامًا سليمًا في سياق آخر؛ المطلوب المقصد المحدد هنا:\n\n1. نصيحة مباشرة نسبيًا: **Du ______ regelmäßige Pausen einplanen.**\n2. اقتراح اختياري لطيف: **Du ______ am Wochenende einen Spaziergang machen.**\n3. توصية عامة: **Man ______ die Belastung bei einem neuen Training allmählich steigern.**",
+      "finding": "أصلح البنك ليشمل sollte مع man؛ اختيار المقصد لا إدانة كل بديل نحوي.",
+      "sourceIds": [
+        "MOD"
+      ],
+      "items": [
+        {
+          "text": "نصيحة مباشرة نسبيًا: **Du ______ regelmäßige Pausen einplanen.**",
+          "finding": "solltest للتوصية المحددة؛ könntest قد تصح لغويًا لكن مقصدها خيار لا التوصية المطلوبة."
+        },
+        {
+          "text": "اقتراح اختياري لطيف: **Du ______ am Wochenende einen Spaziergang machen.**",
+          "finding": "könntest للاقتراح الاختياري؛ ليست solltest خطأ نحويًا مطلقًا."
+        },
+        {
+          "text": "توصية عامة: **Man ______ die Belastung bei einem neuen Training allmählich steigern.**",
+          "finding": "sollte مع man؛ أضيفت إلى بنك الاختيارات لإصلاح التناقض مع المفتاح."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. تجتمع مجموعة «Bewegte Pause» مرة واحدة في الشهر.\n2. يختار بعض المشاركين المشي، ويقوم آخرون بتمارين تمدّد خفيفة.\n3. يجب على الجميع المشاركة في كل لقاء.\n4. تحلّ المجموعة محل المشورة الطبية.\n5. يُنصح صاحب الأعراض الصحية أو غير المتأكد بسؤال مختص مؤهل.",
+      "finding": "حقائق القراءة والمشاركة الاختيارية والحد الطبي دون نقل توقيت الاستماع.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "تجتمع مجموعة «Bewegte Pause» مرة واحدة في الشهر.",
+          "finding": "خطأ: مرتان في الأسبوع لا مرة في الشهر."
+        },
+        {
+          "text": "يختار بعض المشاركين المشي، ويقوم آخرون بتمارين تمدّد خفيفة.",
+          "finding": "صحيح: أنشطة متنوعة لبعض المشاركين وآخرين."
+        },
+        {
+          "text": "يجب على الجميع المشاركة في كل لقاء.",
+          "finding": "خطأ: الحضور لكل لقاء غير إلزامي، لا ممنوع."
+        },
+        {
+          "text": "تحلّ المجموعة محل المشورة الطبية.",
+          "finding": "خطأ: لا تحل المجموعة محل المشورة الطبية."
+        },
+        {
+          "text": "يُنصح صاحب الأعراض الصحية أو غير المتأكد بسؤال مختص مؤهل.",
+          "finding": "صحيح: الرجوع إلى شخص مؤهل، لا جعل المجموعة بديلًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T06",
+      "text": "أكمل بالألمانية من كلام الشخص الراوي، مع حفظ ضمير ich في 2. بنك العبارات: **vier — mich — eine Pause — Wasser — das Tempo**.\n\n1. Seit ______ Wochen gehe ich nach der Arbeit zu einer Laufgruppe.\n2. Der Trainer sagte, ich sollte ______ vor dem Laufen aufwärmen.\n3. Wenn ich müde bin, kann ich ______ machen.\n4. Nach dem Training trinken wir ______.\n5. Ich fühle mich wohl, weil ______ zu mir passt.",
+      "finding": "خمسة فراغات ألمانية وبنك عبارات؛ حفظ ضمير المتكلم جزء من النقل.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Seit ______ Wochen gehe ich nach der Arbeit zu einer Laufgruppe.",
+          "finding": "vier بعد Seit؛ كلمة Wochen موجودة فلا تكررها."
+        },
+        {
+          "text": "Der Trainer sagte, ich sollte ______ vor dem Laufen aufwärmen.",
+          "finding": "mich مع ich في الاقتباس؛ aufwärmen موجود فلا تكرره، ولا تنقل sich من جواب التلخيص إلى الاقتباس."
+        },
+        {
+          "text": "Wenn ich müde bin, kann ich ______ machen.",
+          "finding": "eine Pause مفعول machen؛ تتيح الراحة دون تحديد مدتها."
+        },
+        {
+          "text": "Nach dem Training trinken wir ______.",
+          "finding": "Wasser جواب ما يشربون، لا بروتوكول شرب."
+        },
+        {
+          "text": "Ich fühle mich wohl, weil ______ zu mir passt.",
+          "finding": "das Tempo فاعل passt في weil؛ سبب شخصي لا نتيجة طبية مثبتة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T07",
+      "text": "استخدم الصيغة المحددة:\n\n1. **Steigere die Belastung langsam.** → نصيحة بـ**solltest**: Du ______ die Belastung langsam ______.\n2. **Mach in der Pause einen Spaziergang.** → اقتراح بـ**könntest**: Du ______ in der Pause einen Spaziergang ______.\n3. **Plane regelmäßige Pausen ein.** → نصيحة بـ**solltest**: Du ______ regelmäßige Pausen ______.",
+      "finding": "ثلاثة تحويلات والمصدر ببادئة متصلة؛ تلطيف الأمر لا تقديم وصفة شخصية.",
+      "sourceIds": [
+        "MOD"
+      ],
+      "items": [
+        {
+          "text": "**Steigere die Belastung langsam.** → نصيحة بـ**solltest**: Du ______ die Belastung langsam ______.",
+          "finding": "solltest ... steigern مع حفظ langsam؛ تحويل المقصد إلى نصيحة لا تشخيص."
+        },
+        {
+          "text": "**Mach in der Pause einen Spaziergang.** → اقتراح بـ**könntest**: Du ______ in der Pause einen Spaziergang ______.",
+          "finding": "könntest ... machen: عرض خيار بمصدر دون zu."
+        },
+        {
+          "text": "**Plane regelmäßige Pausen ein.** → نصيحة بـ**solltest**: Du ______ regelmäßige Pausen ______.",
+          "finding": "solltest ... einplanen: مصدر ببادئة متصلة بدل Plane ... ein."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-T08",
+      "text": "**أ — P01: أربع جمل كتابة فقط**\n\nاكتب أربع جمل نصيحة عامة لشخصية خيالية مخاطبة بـ du: توصية بتخطيط استراحات؛ اقتراح مشي قصير في استراحة؛ خيار لاختيار وتيرة مناسبة؛ وتوصية بسؤال مختص مؤهل عند وجود أسئلة صحية. استخدم صيغ sollte و könnte المصرفة حسب المخاطب مرة على الأقل لكل منهما، والمصدر في نهاية الجزء الرئيسي. هذه مهمة كتابة فقط؛ لا جهر أو تسجيل أو تنفيذ نشاط أو بيانات صحية حقيقية أو تشخيص أو جرعات.\n\n**ب — P02: أربعة أدوار مع الجهر**\n\nاكتب حوارًا خياليًا من أربعة أدوار بين زميلين عن استراحة الغد: يطلب الأول التخطيط لاستراحة؛ يوصي الثاني باختيار وقت مناسب لهما باستخدام sollten؛ يقترح الأول الخروج قليلًا في استراحة الغداء غدًا عند الساعة الواحدة باستخدام könnten؛ ويوافق الثاني مع توضيح أن المشاركة اختيارية. اكتب الدورين ثم اقرأهما جهرًا بنفسك دون شريك أو تسجيل. هذا اتفاق خيالي، لا موعد حقيقي أو نصيحة طبية شخصية.",
+      "finding": "ثمانية مطالب في أربع جمل وأربعة أدوار؛ الوقت والنشاط والاختيار وطريقة الدليل صريحة.",
+      "sourceIds": [
+        "MOD"
+      ],
+      "items": [
+        {
+          "text": "توصية بتخطيط الاستراحات لشخصية خيالية مخاطبة بـdu.",
+          "finding": "P01.1: توصية بتخطيط الاستراحات لشخصية خيالية مخاطبة بـ du."
+        },
+        {
+          "text": "خيار مشي قصير في الاستراحة، لا برنامج ملزم.",
+          "finding": "P01.2: خيار مشي قصير في الاستراحة، لا برنامج ملزم."
+        },
+        {
+          "text": "خيار وتيرة مناسبة دون جرعة أو مقدار.",
+          "finding": "P01.3: خيار وتيرة مناسبة دون جرعة أو مقدار."
+        },
+        {
+          "text": "سؤال مختص مؤهل عند الأسئلة الصحية؛ أربع جمل كتابة فقط.",
+          "finding": "P01.4: سؤال مختص مؤهل عند الأسئلة الصحية؛ أربع جمل كتابة فقط."
+        },
+        {
+          "text": "طلب تخطيط استراحة الغد.",
+          "finding": "P02.1: طلب تخطيط استراحة الغد."
+        },
+        {
+          "text": "توصية اختيار وقت مناسب للطرفين بـwir sollten.",
+          "finding": "P02.2: توصية اختيار وقت مناسب للطرفين بـ wir sollten."
+        },
+        {
+          "text": "اقتراح خروج قصير غدًا في الغداء عند الواحدة بـwir könnten.",
+          "finding": "P02.3: اقتراح خروج قصير غدًا في الغداء عند الواحدة بـ wir könnten."
+        },
+        {
+          "text": "موافقة مع مشاركة اختيارية؛ كتابة الأدوار والجهر بالطرفين دون شريك أو تسجيل.",
+          "finding": "P02.4: موافقة مع مشاركة اختيارية؛ كتابة الأدوار والجهر بالطرفين دون شريك أو تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q01",
+      "text": "ما معنى **die Ausdauer**؟",
+      "finding": "die Ausdauer تعني القدرة على التحمّل ومواصلة نشاط مدة مناسبة.",
+      "sourceIds": [],
+      "options": [
+        "القدرة على التحمّل.",
+        "الاستراحة القصيرة.",
+        "الإحماء قبل الرياضة."
+      ],
+      "answer": "القدرة على التحمّل.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-06-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "القدرة على التحمّل.",
+          "correct": true,
+          "finding": "الصحيح: تحمل ومواصلة نشاط، لا بروتوكول زمني."
+        },
+        {
+          "text": "الاستراحة القصيرة.",
+          "correct": false,
+          "finding": "هذه Pause لا Ausdauer."
+        },
+        {
+          "text": "الإحماء قبل الرياضة.",
+          "correct": false,
+          "finding": "هذا Aufwärmen لا Ausdauer."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q02",
+      "text": "أكمل بصيغة التوصية المناسبة: **Du ___ regelmäßige Pausen einplanen.**",
+      "finding": "مع du نستخدم solltest؛ ويأتي المصدر einplanen في نهاية الجملة.",
+      "sourceIds": [],
+      "options": [
+        "solltest",
+        "solltet",
+        "sollten"
+      ],
+      "answer": "solltest",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-06-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "solltest",
+          "correct": true,
+          "finding": "الصحيح: solltest مع du والمصدر einplanen."
+        },
+        {
+          "text": "solltet",
+          "correct": false,
+          "finding": "solltet مع ihr لا du."
+        },
+        {
+          "text": "sollten",
+          "correct": false,
+          "finding": "sollten للجمع أو Sie الرسمية لا du."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q03",
+      "text": "اختر صيغة الاقتراح المناسبة للمتكلم المفرد: **Ich ___ einen kurzen Spaziergang machen.**",
+      "finding": "صيغة können في Konjunktiv II مع ich هي könnte، ويأتي المصدر machen في آخر الجملة.",
+      "sourceIds": [],
+      "options": [
+        "könntest",
+        "könnte",
+        "könnten"
+      ],
+      "answer": "könnte",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-06-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "könntest",
+          "correct": false,
+          "finding": "könntest مع du لا ich."
+        },
+        {
+          "text": "könnte",
+          "correct": true,
+          "finding": "الصحيح: könnte للمتكلم المفرد."
+        },
+        {
+          "text": "könnten",
+          "correct": false,
+          "finding": "könnten مع wir/sie/Sie، لا ich."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q04",
+      "text": "أي جملة مرتبة على نحو صحيح؟",
+      "finding": "بعد Modalverb يأتي الفعل الأساسي بصيغة المصدر في نهاية الجملة: aufwärmen.",
+      "sourceIds": [],
+      "options": [
+        "Du solltest dich vor dem Training aufwärmen.",
+        "Du solltest dich vor dem Training wärmst auf.",
+        "Du solltest dich vor dem Training aufwärmst."
+      ],
+      "answer": "Du solltest dich vor dem Training aufwärmen.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-06-T03"
+      ],
+      "optionReview": [
+        {
+          "text": "Du solltest dich vor dem Training aufwärmen.",
+          "correct": true,
+          "finding": "الصحيح: aufwärmen مصدر متصل و dich انعكاسي."
+        },
+        {
+          "text": "Du solltest dich vor dem Training wärmst auf.",
+          "correct": false,
+          "finding": "wärmst auf مصرفة منفصلة، لا تصلح مصدرًا بعد solltest."
+        },
+        {
+          "text": "Du solltest dich vor dem Training aufwärmst.",
+          "correct": false,
+          "finding": "aufwärmst مصرفة وليست مصدرًا ولو اتصلت البادئة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q05",
+      "text": "اختر الجملة الأنسب لنصيحة مباشرة نسبيًا: **Du ___ regelmäßige Pausen einplanen.**",
+      "finding": "solltest تناسب التوصية المباشرة نسبيًا، بينما könntest تعرض خيارًا ألطف وأقل إلزامًا.",
+      "sourceIds": [],
+      "options": [
+        "könntest",
+        "solltest",
+        "könntet"
+      ],
+      "answer": "solltest",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-06-T04"
+      ],
+      "optionReview": [
+        {
+          "text": "könntest",
+          "correct": false,
+          "finding": "könntest اقتراح صحيح نحويًا لكنه ليس التوصية المباشرة المطلوبة."
+        },
+        {
+          "text": "solltest",
+          "correct": true,
+          "finding": "الصحيح: solltest بحسب المقصد، لا ترتيب أدب مطلق."
+        },
+        {
+          "text": "könntet",
+          "correct": false,
+          "finding": "könntet تطابق ihr لا du."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q06",
+      "text": "Wie oft trifft sich die Gruppe „Bewegte Pause“?",
+      "finding": "تذكر القراءة أن المجموعة تجتمع مرتين في الأسبوع: zweimal pro Woche.",
+      "sourceIds": [],
+      "options": [
+        "Einmal pro Woche.",
+        "Zweimal pro Woche.",
+        "Jeden Tag."
+      ],
+      "answer": "Zweimal pro Woche.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-06-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Einmal pro Woche.",
+          "correct": false,
+          "finding": "مرة أسبوعيًا تخالف النص."
+        },
+        {
+          "text": "Zweimal pro Woche.",
+          "correct": true,
+          "finding": "الصحيح: مرتان أسبوعيًا؛ لا تحدد حضور Dalia."
+        },
+        {
+          "text": "Jeden Tag.",
+          "correct": false,
+          "finding": "كل يوم غير مذكور؛ النص يقول مرتين."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q07",
+      "text": "Was ersetzt die Gruppe laut dem Lesetext?",
+      "finding": "يوضح النص أن المجموعة لا تحل محل المشورة الطبية، وأن من لديه أعراض أو قلق بشأن صحته يراجع مختصًا مؤهلًا؛ المجموعة ليست جهة تشخيص.",
+      "sourceIds": [],
+      "options": [
+        "Sie ersetzt keine medizinische Beratung.",
+        "Sie ersetzt die Teilnahme an allen Treffen.",
+        "Sie ersetzt eine qualifizierte Fachperson."
+      ],
+      "answer": "Sie ersetzt keine medizinische Beratung.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-06-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Sie ersetzt keine medizinische Beratung.",
+          "correct": true,
+          "finding": "الصحيح: نفي استبدال المشورة الطبية؛ الجواب المنفي صالح لسؤال Was ersetzt."
+        },
+        {
+          "text": "Sie ersetzt die Teilnahme an allen Treffen.",
+          "correct": false,
+          "finding": "عدم لزوم كل لقاء لا يعني أن المجموعة تحل محل المشاركة."
+        },
+        {
+          "text": "Sie ersetzt eine qualifizierte Fachperson.",
+          "correct": false,
+          "finding": "الاستعاضة عن مختص تخالف النص؛ المجموعة ليست جهة علاج."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q08",
+      "text": "Seit wann geht die Person zur Laufgruppe?",
+      "finding": "يبدأ نص الاستماع بعبارة Seit vier Wochen؛ أي منذ أربعة أسابيع.",
+      "sourceIds": [],
+      "options": [
+        "Seit drei Wochen.",
+        "Seit vier Wochen.",
+        "Seit sechs Monaten."
+      ],
+      "answer": "Seit vier Wochen.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-06-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Seit drei Wochen.",
+          "correct": false,
+          "finding": "ثلاثة أسابيع ليست المدة المذكورة."
+        },
+        {
+          "text": "Seit vier Wochen.",
+          "correct": true,
+          "finding": "الصحيح: أربعة أسابيع منذ بدء مشاركة مستمرة."
+        },
+        {
+          "text": "Seit sechs Monaten.",
+          "correct": false,
+          "finding": "ستة أشهر غير مذكورة؛ ثلاثة أشهر في القراءة لوجود مجموعة أخرى."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q09",
+      "text": "Was kann die Person machen, wenn sie müde ist?",
+      "finding": "يذكر الشخص الراوي إمكان أخذ استراحة عند التعب وعدم لزوم مجاراة الجميع. muss nicht تعني لا يلزم، لا ممنوع؛ جنس الراوي غير مصرح به.",
+      "sourceIds": [],
+      "options": [
+        "Eine Pause machen.",
+        "Mit allen Schritt halten.",
+        "Das Training sofort steigern."
+      ],
+      "answer": "Eine Pause machen.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-06-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Eine Pause machen.",
+          "correct": true,
+          "finding": "الصحيح: راحة ممكنة عند التعب بلا مدة أو تشخيص."
+        },
+        {
+          "text": "Mit allen Schritt halten.",
+          "correct": false,
+          "finding": "لا تلزم مجاراة الجميع، وهذا لا يعني استحالتها؛ لكن الإمكان المذكور صراحة هو الراحة."
+        },
+        {
+          "text": "Das Training sofort steigern.",
+          "correct": false,
+          "finding": "الزيادة الفورية غير مذكورة ولا تستنتج من التعب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-Q10",
+      "text": "حوّل الأمر **Mach in der Pause einen Spaziergang.** إلى اقتراح ألطف.",
+      "finding": "بعد könntest نضع المصدر machen في نهاية الجملة؛ وهذا يحوّل الأمر إلى اقتراح ألطف.",
+      "sourceIds": [],
+      "options": [
+        "Du könntest in der Pause einen Spaziergang machen.",
+        "Du könntest in der Pause einen Spaziergang machst.",
+        "Du könntest in der Pause macht einen Spaziergang."
+      ],
+      "answer": "Du könntest in der Pause einen Spaziergang machen.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-06-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "Du könntest in der Pause einen Spaziergang machen.",
+          "correct": true,
+          "finding": "الصحيح: könntest ثم المصدر machen في نهاية الرئيسية لتلطيف الأمر."
+        },
+        {
+          "text": "Du könntest in der Pause einen Spaziergang machst.",
+          "correct": false,
+          "finding": "machst مصرفة لا مصدرًا بعد könntest."
+        },
+        {
+          "text": "Du könntest in der Pause macht einen Spaziergang.",
+          "correct": false,
+          "finding": "macht مصرفة وموضعها قبل المفعول لا يطابق التركيب المطلوب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-P01",
+      "text": "اكتب أربع جمل نصيحة عامة لشخصية خيالية مخاطبة بـ du: توصية بتخطيط استراحات؛ اقتراح مشي قصير في استراحة؛ خيار لاختيار وتيرة مناسبة؛ وتوصية بسؤال مختص مؤهل عند وجود أسئلة صحية. استخدم صيغ sollte و könnte المصرفة حسب المخاطب مرة على الأقل لكل منهما، والمصدر في نهاية الجزء الرئيسي. هذه مهمة كتابة فقط؛ لا جهر أو تسجيل أو تنفيذ نشاط أو بيانات صحية حقيقية أو تشخيص أو جرعات.",
+      "finding": "المصدر والمعايير والنموذج والإقرار متطابقة؛ الحد 110 محفوظ لكلا المهمتين، لا تصحيح لغة أو طب آلي.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-06-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل عن تخطيط الاستراحات وخيار المشي ووتيرة مناسبة وسؤال مختص عند وجود أسئلة صحية؛ كتابة فقط.",
+        "meaningClarity": "نصائح لغوية عامة لشخصية خيالية، بلا تشخيص أو جرعات أو ضمان فائدة صحية أو إلزام بتنفيذ النشاط.",
+        "targetSkill": "صيغة توصية من sollte وصيغة اقتراح من könnte مع du، ومصدر بعد الفعل الناقص دون zu في نهاية الجزء الرئيسي وتصريف وضمائر مناسبة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل عن تخطيط الاستراحات وخيار المشي ووتيرة مناسبة وسؤال مختص عند وجود أسئلة صحية؛ كتابة فقط.",
+          "finding": "أربع نصائح بالمطالب الأربعة، كتابة فقط دون جهر."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "نصائح لغوية عامة لشخصية خيالية، بلا تشخيص أو جرعات أو ضمان فائدة صحية أو إلزام بتنفيذ النشاط.",
+          "finding": "موقف خيالي غير تشخيصي؛ لا تنفيذ ولا تقييم ملاءمة صحية بالإقرار."
+        },
+        {
+          "key": "targetSkill",
+          "text": "صيغة توصية من sollte وصيغة اقتراح من könnte مع du، ومصدر بعد الفعل الناقص دون zu في نهاية الجزء الرئيسي وتصريف وضمائر مناسبة.",
+          "finding": "solltest/könntest مع du والمصدر المناسب؛ تقديم Bei ... لا يغير تصريف المخاطب."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-06-P02",
+      "text": "اكتب حوارًا خياليًا من أربعة أدوار بين زميلين عن استراحة الغد: يطلب الأول التخطيط لاستراحة؛ يوصي الثاني باختيار وقت مناسب لهما باستخدام sollten؛ يقترح الأول الخروج قليلًا في استراحة الغداء غدًا عند الساعة الواحدة باستخدام könnten؛ ويوافق الثاني مع توضيح أن المشاركة اختيارية. اكتب الدورين ثم اقرأهما جهرًا بنفسك دون شريك أو تسجيل. هذا اتفاق خيالي، لا موعد حقيقي أو نصيحة طبية شخصية.",
+      "finding": "المصدر والمعايير والنموذج والإقرار متطابقة؛ الحد 110 محفوظ لكلا المهمتين، لا تصحيح لغة أو طب آلي.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-06-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أدوار تتضمن تخطيط الاستراحة وتوصية الوقت واقتراح الغد عند الواحدة وموافقة مع مشاركة اختيارية؛ اكتب الطرفين ثم اجهر بهما.",
+        "meaningClarity": "وقت الاستراحة وفكرتها واتفاق الزميلين وعدم إلزام المشاركة مفهومة؛ الموعد خيالي والنص غير طبي.",
+        "targetSkill": "wir sollten للتوصية و wir könnten للاقتراح، مع المصدر في نهاية الجزء الرئيسي وتصريف وضمائر مناسبة."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 110,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أدوار تتضمن تخطيط الاستراحة وتوصية الوقت واقتراح الغد عند الواحدة وموافقة مع مشاركة اختيارية؛ اكتب الطرفين ثم اجهر بهما.",
+          "finding": "أربعة أدوار بوقت ومشاركة اختيارية، ثم الجهر بالطرفين."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "وقت الاستراحة وفكرتها واتفاق الزميلين وعدم إلزام المشاركة مفهومة؛ الموعد خيالي والنص غير طبي.",
+          "finding": "الفكرة والوقت والموافقة مفهومة؛ غدًا عند الواحدة بيانات خيالية لا موعد خدمة."
+        },
+        {
+          "key": "targetSkill",
+          "text": "wir sollten للتوصية و wir könnten للاقتراح، مع المصدر في نهاية الجزء الرئيسي وتصريف وضمائر مناسبة.",
+          "finding": "wir مع sollten/könnten، ومصدر في نهاية الجزء الرئيسي؛ لا صيغة طبية مطلوبة."
+        }
+      ]
+    },
+    {
+      "id": "advice-model-01",
+      "text": "Du solltest regelmäßige Pausen in deinen Tag einplanen.",
+      "finding": "توصية بتخطيط الاستراحات: du/solltest والمصدر einplanen.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "advice-model-02",
+      "text": "Du könntest in einer Pause einen kurzen Spaziergang machen.",
+      "finding": "خيار مشي قصير بـ könntest/machen دون جرعة مقررة.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "advice-model-03",
+      "text": "Du könntest ein Tempo wählen, das zu dir passt.",
+      "finding": "خيار وتيرة مناسبة؛ wählen ينهي الرئيسية ثم صلة das ... passt، فلا يكون المصدر آخر الجملة المركبة.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "advice-model-04",
+      "text": "Bei gesundheitlichen Fragen solltest du eine qualifizierte Fachperson um Rat bitten.",
+      "finding": "Bei ... يشغل موضعًا واحدًا ثم solltest مع du؛ سؤال مختص مؤهل لا وعد علاج.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "break-model-01",
+      "text": "Kollegin: Ich möchte morgen eine Pause einplanen.",
+      "finding": "المتحدثة تريد تخطيط استراحة غدًا، لا تثبت حدوثها.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "break-model-02",
+      "text": "Kollege: Wir sollten einen Zeitpunkt wählen, der für uns beide passt.",
+      "finding": "wir sollten ثم مصدر wählen وبعده صلة للوقت؛ توصية بلا عبء بدني محدد.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "break-model-03",
+      "text": "Kollegin: Wir könnten in der Mittagspause um dreizehn Uhr kurz nach draußen gehen.",
+      "finding": "wir könnten وخروج قصير في الغداء عند 13؛ موعد خيالي لا كمية علاجية.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "break-model-04",
+      "text": "Kollege: Das passt für mich. Die Teilnahme ist freiwillig.",
+      "finding": "موافقة صريحة ومشاركة اختيارية؛ الدور يضم جملتين والأدوار أربعة، ولا يسقط إقرار الجهر.",
+      "sourceIds": [
+        "MOD",
+        "K2"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Du solltest Pausen einplanen.** → من الأفضل أن تخطّط لاستراحات.",
+      "finding": "solltest للتوصية و einplanen مصدر دون zu.",
+      "sourceIds": [
+        "MOD"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **Du könntest einen Spaziergang machen.** → يمكنك أن تتمشّى.",
+      "finding": "könntest خيار و machen مصدر، وليس إثبات مشي.",
+      "sourceIds": [
+        "MOD"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **sich vor dem Sport aufwärmen** → يقوم بالإحماء قبل الرياضة.",
+      "finding": "عبارة مصدرية انعكاسية، لا أمر شخصي للمتعلم أو ضمان وقاية.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "- **das Tempo passt zu mir** → الوتيرة تناسبني.",
+      "finding": "ملاءمة وتيرة للمتكلم؛ mir من ich، وليست نتيجة طبية موضوعية.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-B1-06-AUD-PHR-01",
+      "text": "مفردات الحركة واللياقة",
+      "finding": "مطابقة تفريغ مكتوب فقط؛ready تاريخية،لا استماع أو اعتماد جديد. الألفاظ والأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Die Ausdauer,",
+          "finding": "مؤنث بمعنى التحمل؛ الشرطة تعني عدم تقديم جمع في هذا السياق، لا عدد دقائق أو معيار لياقة."
+        },
+        {
+          "text": "die Bewegung,",
+          "finding": "مؤنث وجمع Bewegungen؛ الحركة في الحياة اليومية أوسع من جلسة تدريب أو رياضة تنافسية."
+        },
+        {
+          "text": "die Erholung,",
+          "finding": "مؤنث للراحة أو استعادة القوة؛ لا ادعاء شفاء أو زمن تعافٍ من الكلمة وحدها."
+        },
+        {
+          "text": "die Pause,",
+          "finding": "مؤنث وجمع Pausen؛ فترة توقف، لا اشتراط مدة أو عدد ثابتين لكل شخص."
+        },
+        {
+          "text": "das Gelenk,",
+          "finding": "محايد وجمع Gelenke؛ المفصل عضو لا قدرة على التحمل. لا توجيه لعلاج مفصل محدد."
+        },
+        {
+          "text": "die Belastung,",
+          "finding": "مؤنث وجمع Belastungen؛ الحمل أو الجهد البدني هنا، لا كل معاني العبء النفسي أو تشخيص مرض."
+        },
+        {
+          "text": "das Aufwärmen,",
+          "finding": "مصدر اسمي محايد Aufwärmen، لا الفعل المصرف؛ تهيئة قبل النشاط لا ضمان منع إصابة."
+        },
+        {
+          "text": "der Spaziergang,",
+          "finding": "مذكر وجمع Spaziergänge؛ نزهة مشيًا، لا جري تنافسي أو سرعة موحدة."
+        },
+        {
+          "text": "die Beschwerde.",
+          "finding": "المفرد شكوى؛ يورد Duden المعنى الصحي بصيغة Beschwerden. التوضيح مكتوب والألمانية المسجلة لم تتغير."
+        },
+        {
+          "text": "Sich von etwas erholen.",
+          "finding": "فعل انعكاسي sich erholen von؛ يتعافى/يستعيد القوة من شيء، مع von+Dativ بحسب المثال المرجعي."
+        },
+        {
+          "text": "Etwas allmählich steigern.",
+          "finding": "صُحح إلى يزيد/يرفع شيئًا؛ التدرج تحدده allmählich أو langsam، لا جزء لازم من معنى steigern. allmählich تدريجيًا؛ في تسجيل المفردات داخل Etwas allmählich steigern، لا كلمة منفصلة."
+        },
+        {
+          "text": "Ausreichend.",
+          "finding": "ausreichend كافٍ في السياق، دون كمية أو مدة عددية؛ ليست توصية سوائل شخصية."
+        },
+        {
+          "text": "Anstrengend.",
+          "finding": "anstrengend مُجهد، وليس بالضرورة خطرًا أو مؤذيًا؛ لا تشخيص من وصف الجهد."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-06-AUD-MODEL-01",
+      "text": "أمثلة تقديم النصيحة بـsollte وkönnte",
+      "finding": "مطابقة تفريغ مكتوب فقط؛ready تاريخية،لا استماع أو اعتماد جديد. الألفاظ والأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Du solltest Pausen in deinen Tag einplanen.",
+          "finding": "du مع solltest، والمصدر einplanen متصل دون zu؛ تخطيط الاستراحة توصية عامة لا فعل منجز."
+        },
+        {
+          "text": "Du könntest in der Mittagspause einen kurzen Spaziergang machen.",
+          "finding": "du مع könntest؛ العبارة تعرض خيار مشي في وقت غداء دون رقم أو لزوم تنفيذ."
+        },
+        {
+          "text": "Man sollte ein neues Trainingspensum allmählich steigern.",
+          "finding": "man مفرد مع sollte؛allmählich هي التي تضيف التدرج، والمثال لا يحدد حملًا أو تدريبًا مناسبًا لشخص بعينه."
+        },
+        {
+          "text": "Bei anhaltenden Beschwerden sollte man eine Fachperson um Rat fragen.",
+          "finding": "عبارة Bei... بالموقع الأول ثم sollte و man؛المصدر fragen أخير. طلب مشورة مختص لا يجيز انتظار أعراض حادة أو يشخصها."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-06-AUD-DLG-01",
+      "text": "حوار: Hiba وFares عن الحركة اليومية",
+      "finding": "مطابقة تفريغ مكتوب فقط؛ready تاريخية،لا استماع أو اعتماد جديد. الألفاظ والأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Ich sitze bei der Arbeit viele Stunden am Schreibtisch und möchte mehr Bewegung in meinen Alltag bringen.",
+          "finding": "Hiba تجلس طويلًا وتريد حركة أكثر؛ هذا هدف لا فعل تحقق أو تشخيص لمرض."
+        },
+        {
+          "text": "Du könntest mit kurzen Spaziergängen anfangen.",
+          "finding": "Fares يعرض خيار بدء مشي قصير بـ könntest و anfangen؛ ليس أمرًا ملزمًا أو إثبات بداية."
+        },
+        {
+          "text": "Wie kann ich das in meinen Tagesplan einbauen?",
+          "finding": "Wie ثم kann و ich؛ einbauen مصدر متصل في النهاية، والسؤال عن إدماج الفكرة في الجدول."
+        },
+        {
+          "text": "Du solltest regelmäßige Pausen einplanen. In der Mittagspause könntest du mit einer Kollegin nach draußen gehen.",
+          "finding": "توصية استراحات بـ solltest وخيار خروج مع زميلة بـ könntest؛ المصرف بعد عبارة الوقت، ولا موعد محدد أو موافقة من الزميلة."
+        },
+        {
+          "text": "Das klingt machbar. Ich sollte auch daran denken, mich vor dem Sport aufzuwärmen.",
+          "finding": "machbar قبول لقابلية الفكرة لا إثبات تنفيذها. sollte يتبعه denken دون zu؛ mich ... aufzuwärmen تركيب مصدر مختلف."
+        },
+        {
+          "text": "Genau. Wichtig ist, dass du ein Tempo wählst, das zu dir passt.",
+          "finding": "dass du ... wählst ثم صلة das ... passt عن Tempo؛ الوتيرة المناسبة معيار عام لا تقييم لياقة أو ضمان طبي."
+        }
+      ],
+      "segmentCount": 6,
+      "voices": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ]
+    },
+    {
+      "id": "DL-B1-06-AUD-READ-01",
+      "text": "قراءة: مجموعة Bewegte Pause",
+      "finding": "مطابقة تفريغ مكتوب فقط؛ready تاريخية،لا استماع أو اعتماد جديد. الألفاظ والأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Im Stadtteilzentrum Am Park gibt es seit drei Monaten die offene Gruppe „Bewegte Pause“.",
+          "finding": "مركز Am Park مكان وجود مجموعة منذ ثلاثة أشهر؛ اسم داخل قصة لا عنوان خدمة حقيقية أو زمن مشاركة Dalia."
+        },
+        {
+          "text": "Sie trifft sich zweimal pro Woche.",
+          "finding": "مرتان أسبوعيًا تكرار اللقاء، لا كل يوم أو مدة كل جلسة."
+        },
+        {
+          "text": "Einige Teilnehmende gehen gemeinsam spazieren, andere machen leichte Dehnübungen.",
+          "finding": "بعض المشاركين يمشون وآخرون يتمددون؛ لا اشتراط أن الجميع يفعل النشاطين."
+        },
+        {
+          "text": "Dalia arbeitet tagsüber oft am Computer und kam zuerst nur zu einem kurzen Spaziergang mit.",
+          "finding": "Dalia غالبًا بالحاسوب نهارًا وشاركت أولًا في مشي قصير؛ kam ... mit ماضٍ منفصل، لا بداية مؤكدة قبل ثلاثة أشهر."
+        },
+        {
+          "text": "Inzwischen plant sie solche Pausen auch an anderen Tagen ein.",
+          "finding": "الآن تخطط استراحات في أيام أخرى؛ plant ... ein لا يحدد كل الأيام أو عددها ولا يثبت نتيجة صحية."
+        },
+        {
+          "text": "Die Gruppe vergleicht keine Leistungen; jede Person wählt ein passendes Tempo und muss nicht an jedem Treffen teilnehmen.",
+          "finding": "لا مقارنة أداء؛ وتيرة مناسبة ولا يلزم كل لقاء. muss nicht ليس منعًا من الحضور."
+        },
+        {
+          "text": "Wer gesundheitliche Beschwerden hat oder unsicher ist, sollte sich an eine qualifizierte Fachperson wenden.",
+          "finding": "صاحب الأعراض أو عدم اليقين يتوجه لمختص مؤهل؛ sich ... wenden بعد sollte، ولا تشخيص في النص."
+        },
+        {
+          "text": "Die Gruppe ersetzt keine medizinische Beratung.",
+          "finding": "المجموعة ليست بديلًا للمشورة الطبية؛ نفي الاستبدال لا يعني نفي كل فائدة للمجموعة."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-06-AUD-LST-01",
+      "text": "استماع: تجربة في مجموعة الجري",
+      "finding": "مطابقة تفريغ مكتوب فقط؛ready تاريخية،لا استماع أو اعتماد جديد. الألفاظ والأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Seit vier Wochen gehe ich nach der Arbeit zu einer Laufgruppe.",
+          "finding": "منذ أربعة أسابيع بعد العمل؛ لا اسم أو جنس مصرح به للراوي، ولا ثلاثة أشهر من القراءة."
+        },
+        {
+          "text": "Am Anfang lief ich nur kurze Strecken.",
+          "finding": "Am Anfang lief ماضٍ؛ كانت المسافات قصيرة دون عدد كيلومترات أو شدة مقررة."
+        },
+        {
+          "text": "Der Trainer sagte, ich sollte mich vor dem Laufen aufwärmen.",
+          "finding": "المدرب نصح بالإحماء؛ sagte ماضٍ و sollte منقول في السياق، ولا يثبت نوع الصيغة صرفيًا أو تطبيقها فعليًا. Trainer لا يثبت تأهيلًا طبيًا."
+        },
+        {
+          "text": "Wenn ich müde bin, kann ich eine Pause machen; ich muss nicht mit allen Schritt halten.",
+          "finding": "عند التعب يمكن أخذ راحة ولا تلزم مجاراة الجميع؛ ليس المعنى العجز أو المنع الدائم من مجاراتهم."
+        },
+        {
+          "text": "Nach dem Training trinken wir Wasser.",
+          "finding": "بعد التدريب يشربون ماء؛ لا كمية ولا حصر لشرب الماء في هذا الوقت."
+        },
+        {
+          "text": "Ich fühle mich wohl, weil das Tempo zu mir passt.",
+          "finding": "شعور بالراحة لأن الوتيرة مناسبة؛ ليس إثبات شفاء أو مقياس سلامة للجميع."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-03"
+      ]
+    }
+  ],
+  "excludedSources": [],
+  "sourceHashes": {
+    "content/B1/lesson-06-health-fitness-advice.md": "3032895757d9128a987243241ce1fe9c3831bc098be9af6538cda60e4b269be3",
+    "content/B1/lesson-06-health-fitness-advice.assessment.json": "62d3a9e779f3c5fa17cfefc44ac5729bf73e227dc1de248a692e6294599cee8a"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-06-AUD-PHR-01": "5d5dd7cc10ca7ff58e65d58dc4d3051488e9cf52dc74e695931245d4bcda6e16",
+    "DL-B1-06-AUD-MODEL-01": "f2bb9dbefc0e0c07182521b30f6edb288dcdfd03d932861f33d9b35b373d7dea",
+    "DL-B1-06-AUD-DLG-01": "2c245881bc7580815891f29b8102adaac58c771df305ea4adf7a1d540bf6bfda",
+    "DL-B1-06-AUD-READ-01": "0fdd623db932dbb5c7dae8ce4cef91f5e5d63c8272464824e473aa703283344c",
+    "DL-B1-06-AUD-LST-01": "8cde8d8d71d4aab54c8979891d3e7430974ab0601928ea4844c11d551ad759c8"
+  },
+  "preservation": {
+    "baseline": "ce5af503e1a89c2b38ae751a38a514ec446e0c92",
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "unchangedQuestionMappings": true,
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCourseKeys": true,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "protectedFilesIncludingAudio": 589,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "changedAudioRegisterRows": {
+      "DL-B1-06-AUD-MODEL-01": [
+        "source_line"
+      ],
+      "DL-B1-06-AUD-DLG-01": [
+        "source_line"
+      ],
+      "DL-B1-06-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B1-06-AUD-LST-01": [
+        "source_line"
+      ]
+    },
+    "unchangedPhraseBankRegisterRow": true
+  },
+  "implementationCommit": "08d8237b6e74d3fd9970ada18e203c2be6c6f6de",
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 2068845,
+    "cacheVersion": "v84",
+    "build": "PASS",
+    "verify": "PASS",
+    "reviewGuards": 36,
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserVersion": "143.0.7499.0",
+    "axe": {
+      "states": 157,
+      "selectedRuleViolations": 0,
+      "incompleteOccurrences": 108,
+      "incompleteNodeOccurrences": 243
+    },
+    "narrowStates": 126,
+    "formsIntermittency": "CR36 first test run passed both widths; historical CR29/CR33 native chooser intermittency remains unresolved, no app/test fix.",
+    "progressionInitialFailure": "Old split failed after cosmetic grammar heading spacing. Original heading restored; model extraction bounded before new helper section while preserving exact transcript equality. Obsolete both-spoken task contract replaced with literal source/task, modalities and [false,true] evidence checks. Full rerun passed.",
+    "jsSyntax": "PASS",
+    "diffCheck": "PASS"
+  },
+  "limits": [
+    "مراجعة لغوية مدعومة بالمصادر، لا شهادة CEFR/WCAG أو تقييم صحي؛ لا مراجع بشري شرطًا للاستمرار.",
+    "المرجعان الصحيان يدعمان الحدود العامة وملاءمة الفرد، ولا يثبتان أهلية شخصيات القصة طبيًا أو ملاءمة الأنشطة لجميع الأعمار والحالات.",
+    "لا جرعات أو كمية ماء أو ضمان شفاء أو تنفيذ تمرين مطلوب. الإقرارات والحروف لا تصحح اللغة أو النطق أو ملاءمة نصيحة طبية.",
+    "عشر صفحات كاملة؛ Konjunktiv و WHO في جزأين لكل منهما. NHS أعاد التوجيه. لم يحسب PDF أو مقال مرتبط أو فيديو أو صفحة فاشلة.",
+    "Beschwerden الصحية جمع؛ المفرد المسجل ضمن قائمة أسماء. allmählich ضمن عبارة، وليس كل الجمع والتصريف في الجدول منطوقًا. لا تعديل صوتي.",
+    "خمسة أصول وعشرة مقاطع: Hiba02/Fares03 والرواة 02/03 ثابتة، والنماذج الجديدة مكتوبة غير مسجلة. لا استماع أو اعتماد جديد.",
+    "تذبذب filechooser السابق غير محلول؛ نجاح لاحق ليس إصلاحًا دون سبب مثبت أو تعديل."
+  ],
+  "campaign": {
+    "reviewedLessons": 35,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 18,
+    "next": "CR37/B1.7",
+    "planVersion": "2.42",
+    "merged": false
+  },
+  "delivery": {
+    "implementationCommit": "08d8237b6e74d3fd9970ada18e203c2be6c6f6de",
+    "branch": "arena/01a1036f-deutschlern",
+    "lastQueriedPrHead": "fbe217c6b997b9211d1e7f5aad9dbd6580462d38",
+    "prState": "OPEN",
+    "mergedAt": null,
+    "implementationDeployment": "success",
+    "implementationDeploymentId": 6946734014,
+    "implementationPreviewUrl": "https://deutschlern-qq17xcrv2-balinader-2671s-projects.vercel.app",
+    "remoteUiTested": false,
+    "productionTested": false,
+    "reportCommit": "fbe217c6b997b9211d1e7f5aad9dbd6580462d38",
+    "reportPushed": true,
+    "reportHeadMatchedOrigin": true,
+    "reportDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "reportDeployments": [],
+    "receiptCommit": "Resolve by title Record CR36 delivery receipt; receipt deployment not queried."
+  }
+}

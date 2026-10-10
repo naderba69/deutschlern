@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-04-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-04-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR22: ضبط ob/wann والترقيم والفصل؛فصل دليل البريد عن الحوار والاستماع.",
+      "T08أ/P01 ستة أدوار مع الجهر؛T08ب/P02 تحية وخمس جمل وختام واسم كتابة فقط، بنموذجين ومعايير مطابقة.",
+      "الخيارات والمفاتيح و80% محفوظة؛Q04→T03 وQ09/Q10→T01؛التسجيلات دون تغيير أو استماع جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-04-Q01",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "مفردات الهاتف",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى **einen Termin verschieben**؟",
+      "options": [
+        "تأجيل الموعد أو نقله.",
+        "تأكيد موعد.",
+        "إلغاء الهاتف."
+      ],
+      "answerIndex": 0,
+      "explanation": "verschieben تعني نقل الموعد إلى وقت آخر."
+    },
+    {
+      "id": "DL-A2-04-Q02",
+      "sourceTaskIds": [
+        "DL-A2-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "ob / أداة سؤال",
+        "اختيار محدد"
+      ],
+      "prompt": "أي كلمة تبدأ سؤالًا غير مباشر جوابه نعم أو لا؟",
+      "options": [
+        "wann",
+        "ob",
+        "wohin"
+      ],
+      "answerIndex": 1,
+      "explanation": "نستخدم ob في الأسئلة غير المباشرة التي يكون جوابها نعم أو لا."
+    },
+    {
+      "id": "DL-A2-04-Q03",
+      "sourceTaskIds": [
+        "DL-A2-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "السؤال غير المباشر",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر الصيغة الصحيحة: Ich möchte wissen, ___.",
+      "options": [
+        "wann endet die Besprechung",
+        "wann die Besprechung enden",
+        "wann die Besprechung endet"
+      ],
+      "answerIndex": 2,
+      "explanation": "في السؤال غير المباشر يأتي الفعل المصرف في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-A2-04-Q04",
+      "sourceTaskIds": [
+        "DL-A2-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Bitte teilen Sie mir mit, ob Mittwoch um 11 Uhr möglich ___.",
+      "options": [
+        "möglich ist am",
+        "ist",
+        "ist möglich"
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد ob يأتي الفعل المصرف في نهاية الجزء التابع: möglich ist."
+    },
+    {
+      "id": "DL-A2-04-Q05",
+      "sourceTaskIds": [
+        "DL-A2-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "فهم البريد",
+        "اختيار محدد"
+      ],
+      "prompt": "لماذا كتبت Amal الرسالة؟",
+      "options": [
+        "لا تستطيع الحضور يوم الثلاثاء وتطلب نقل الموعد.",
+        "تريد إلغاء الوظيفة.",
+        "تريد حجز رحلة إلى Bremen."
+      ],
+      "answerIndex": 0,
+      "explanation": "توضح الرسالة أنها لا تستطيع الحضور وتطلب نقل الموعد إلى الأربعاء."
+    },
+    {
+      "id": "DL-A2-04-Q06",
+      "sourceTaskIds": [
+        "DL-A2-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "فهم البريد",
+        "اختيار محدد"
+      ],
+      "prompt": "إلى أي يوم تقترح Amal نقل الموعد؟",
+      "options": [
+        "إلى الاثنين.",
+        "إلى الجمعة.",
+        "إلى الأربعاء."
+      ],
+      "answerIndex": 2,
+      "explanation": "تقترح الرسالة Mittwoch."
+    },
+    {
+      "id": "DL-A2-04-Q07",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "عبارات الهاتف",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني **Einen Moment, bitte** في مكالمة؟",
+      "options": [
+        "أعد الاتصال غدًا.",
+        "لحظة من فضلك.",
+        "الموعد غير متاح."
+      ],
+      "answerIndex": 1,
+      "explanation": "هذه عبارة مهذبة لطلب الانتظار لحظة."
+    },
+    {
+      "id": "DL-A2-04-Q08",
+      "sourceTaskIds": [
+        "DL-A2-04-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "صياغة سؤال غير مباشر",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال ترتيبه صحيح؟",
+      "options": [
+        "Können Sie mir sagen, ob das Büro offen ist?",
+        "Können Sie mir sagen, ob ist das Büro offen?",
+        "Können Sie sagen mir, ob das Büro ist offen?"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد ob يأتي الفعل ist في نهاية الجملة التابعة."
+    },
+    {
+      "id": "DL-A2-04-Q09",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "بدء مكالمة مهنية",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تقدم المتحدثة على الهاتف؟",
+      "options": [
+        "Ich bin ein Termin.",
+        "Der Termin telefoniert.",
+        "Hier spricht Amal Ben Ali."
+      ],
+      "answerIndex": 2,
+      "explanation": "Hier spricht … صيغة مناسبة للتعريف بالنفس عبر الهاتف."
+    },
+    {
+      "id": "DL-A2-04-Q10",
+      "sourceTaskIds": [
+        "DL-A2-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "skillTags": [
+        "طلب معاودة الاتصال",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف تطلب بأدب أن يعاود شخص الاتصال بك؟",
+      "options": [
+        "Rufen Sie ich zurück?",
+        "Können Sie mich zurückrufen?",
+        "Sie zurückrufen mich?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Können Sie mich zurückrufen? سؤال مهذب وترتيبه صحيح."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-04-P01",
+      "sourceTaskIds": [
+        "DL-A2-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ستة أدوار متناوبة لمكالمة خيالية بين Amal وموظف: الدور 1 تحية وتعريف بالنفس وطلب موعد؛الدور 2 يسأل عن اليوم؛الدور 3 تسأل Amal بـ Können Sie mir sagen, ob عن توفر الخميس الساعة 14؛الدور 4 يعتذر الموظف عن عدم توفر 14 ويقترح 15 في الخميس نفسه؛الدور 5 تقبل Amal الساعة 15؛الدور 6 يؤكد الموظف الخميس 15. اكتب لكل دور قولًا قصيرًا (قد يضم أكثر من جملة)، ثم اقرأ الأدوار الستة بصوت مرتفع. يمكنك أداء الطرفين منفردًا؛لا مكالمة حقيقية أو تسجيل مطلوب.",
+      "criteria": {
+        "taskCompletion": "ستة أدوار تتضمن التعريف وطلب الموعد وسؤال اليوم وسؤال التوفر والبديل وقبوله وتأكيده؛قرأت الجميع جهرًا.",
+        "meaningClarity": "الخميس14 غير متاح، والبديل الخميس15 متسق في العرض والقبول والتأكيد.",
+        "targetSkill": "عبارات هاتفية مهذبة وسؤال ob مع الفاصلة والفعل المصرف في نهاية الجزء التابع؛تمييز العرض من التأكيد."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 200,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-04-P02",
+      "sourceTaskIds": [
+        "DL-A2-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-04-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب رسالة خيالية مستقلة إلى Frau Weber، كتابة فقط: تحية، ثم خمس جمل في المتن، ثم ختام واسم خيالي. الجملة 1 تعتذر عن عدم حضور موعد الثلاثاء 9؛الجملة 2 تعطي السبب المفترض في هذا التدريب: لديك اجتماع آخر؛الجملة 3 تطلب نقل الموعد إلى الأربعاء 11؛الجملة 4 تطلب إبلاغك بـ ob إن كان البديل ممكنًا؛الجملة 5 تسأل بـ Ich möchte wissen, wann عن نهاية الاجتماع. اجعل الفعل في نهاية كل جزء تابع وافصله بفاصلة؛لا تدّع أن البديل تأكد. لا تستنتج سبب البريد الأصلي من هذه المهمة، ولا يلزم الجهر أو إرسال الرسالة.",
+      "criteria": {
+        "taskCompletion": "تحية وخمس جمل بالوظائف المطلوبة وختام واسم خيالي؛كتابة فقط.",
+        "meaningClarity": "الثلاثاء9 هو الموعد الحالي والأربعاء11 مقترح لم يؤكد؛الاجتماع الآخر سبب مفترض في هذا التدريب لا استنتاج من النص الأصلي.",
+        "targetSkill": "ob للتوفر وwann للوقت؛فاصلة قبل كل جزء تابع والفعل في نهايته، مع تنسيق التحية والختام وعلامات نهاية الجمل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

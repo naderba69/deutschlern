@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-05-v3",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-05-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-05-G01 وتمارين المصدر T01–T07: مفردات الدراسة والعينة، واستخدام sodass/weshalb/deshalb، وaufgrund + Genitiv، وترتيب الفعل، وفهم تقرير الاستطلاع الخيالي ونص الاستماع المكتوب، وإعادة الصياغة.",
+      "ترتبط P01 مباشرة بـT08 (تقييم مكتوب من خمس إلى ست جمل لاستطلاع صحي خيالي — كتابة فقط دون جهر)، وترتبط P02 بنص القراءة T05 ومهمة تقييم الادعاء T08 (إحاطة من خمس إلى ست جمل استنادًا إلى T05 — كتابة + قراءة جهرية ذاتية). تفحص المهمتان نقل المعلومات وحدود العينة والقياس وغياب المجموعة الضابطة، ولا تسمحان بتحويل الارتباط إلى سبب مثبت.",
+      "المعايير ذاتية ومحلية وظاهرة وحد أدنى للحروف (160 في P01 و180 في P02)؛ لا يعتمد التقييم على MP3 أو صوت مولّد، ولا يقدّم تشخيصًا أو توصية طبية شخصية.",
+      "تصحيح Q03 في v2 حُفظ في v3 (حذف man بعد الفراغ لأن الخيار الصحيح sollte man يتضمنها)، مع فصل P01 كتابيًا عن P02 الكتابي/الشفهي؛ يلزم تحقق جديد للتقييم القديم وفق سياسة إصدار التطبيق."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-05-Q01",
+      "sourceTaskIds": [
+        "DL-B2-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "مفردات الدراسة",
+        "die Stichprobe"
+      ],
+      "prompt": "أي كلمة تعني مجموعة الأشخاص الذين شاركوا في استطلاع أو دراسة؟",
+      "options": [
+        "die Überschrift",
+        "die Stichprobe",
+        "die Kontrollgruppe"
+      ],
+      "answerIndex": 1,
+      "explanation": "die Stichprobe هي عيّنة المشاركين؛ أما Überschrift فتعني عنوانًا وKontrollgruppe مجموعةً ضابطة."
+    },
+    {
+      "id": "DL-B2-05-Q02",
+      "sourceTaskIds": [
+        "DL-B2-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "sodass",
+        "ترتيب الفعل في الجملة التابعة"
+      ],
+      "prompt": "أكمل بتركيب يدل على النتيجة مع ترتيب الفعل المناسب: **Die Gruppe war klein, ___ die Ergebnisse nicht repräsentativ waren.**",
+      "options": [
+        "deshalb",
+        "aufgrund",
+        "sodass"
+      ],
+      "answerIndex": 2,
+      "explanation": "sodass تربط النتيجة بجملة تابعة، ويأتي الفعل المصرف waren في نهايتها."
+    },
+    {
+      "id": "DL-B2-05-Q03",
+      "sourceTaskIds": [
+        "DL-B2-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "deshalb",
+        "ترتيب الفعل في الجملة الرئيسية"
+      ],
+      "prompt": "اختر ترتيب الفعل الصحيح: **Die Daten sind vorläufig. Deshalb ___ die Aussage vorsichtig lesen.**",
+      "options": [
+        "sollte man",
+        "man sollte",
+        "man kann"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد deshalb تبدأ الجملة الرئيسية بالفعل المصرف في الموقع الثاني: Deshalb sollte man …"
+    },
+    {
+      "id": "DL-B2-05-Q04",
+      "sourceTaskIds": [
+        "DL-B2-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "aufgrund + Genitiv",
+        "اسم مؤنث"
+      ],
+      "prompt": "أكمل بصيغة Genitiv الصحيحة: **Aufgrund ___ Stichprobe waren die Ergebnisse nicht repräsentativ.**",
+      "options": [
+        "die kleine",
+        "der kleinen",
+        "dem kleinen"
+      ],
+      "answerIndex": 1,
+      "explanation": "Stichprobe اسم مؤنث، وصيغته هنا في Genitiv هي der kleinen Stichprobe."
+    },
+    {
+      "id": "DL-B2-05-Q05",
+      "sourceTaskIds": [
+        "DL-B2-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "aufgrund + Genitiv",
+        "اسم محايد"
+      ],
+      "prompt": "اختر الصيغة الصحيحة لاسم محايد: **___ vorläufigen Ergebnisses sollte man keine allgemeingültige Schlussfolgerung ziehen.**",
+      "options": [
+        "Aufgrund dem",
+        "Aufgrund der",
+        "Aufgrund des"
+      ],
+      "answerIndex": 2,
+      "explanation": "Ergebnis اسم محايد، ويأتي في Genitiv المفرد مع des: aufgrund des vorläufigen Ergebnisses."
+    },
+    {
+      "id": "DL-B2-05-Q06",
+      "sourceTaskIds": [
+        "DL-B2-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "deshalb"
+      ],
+      "prompt": "اختر الجملة السليمة: **Die Befragung war klein, deshalb …**",
+      "options": [
+        "können die Ergebnisse nicht verallgemeinert werden.",
+        "die Ergebnisse nicht verallgemeinert werden können.",
+        "die Ergebnisse können nicht verallgemeinert werden."
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد deshalb يأتي الفعل المصرف können في الموقع الثاني، ثم تتمة الجملة الرئيسية."
+    },
+    {
+      "id": "DL-B2-05-Q07",
+      "sourceTaskIds": [
+        "DL-B2-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "ترتيب الفعل",
+        "sodass"
+      ],
+      "prompt": "أكمل الجملة التابعة: **Es gab keine Kontrollgruppe, sodass …**",
+      "options": [
+        "ließ sich die Ursache nicht bestimmen.",
+        "die Ursache ließ sich nicht bestimmen.",
+        "sich die Ursache nicht bestimmen ließ."
+      ],
+      "answerIndex": 2,
+      "explanation": "بعد sodass يأتي الفعل المصرف في نهاية الجملة التابعة: sodass sich die Ursache nicht bestimmen ließ."
+    },
+    {
+      "id": "DL-B2-05-Q08",
+      "sourceTaskIds": [
+        "DL-B2-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل من الاستطلاع الخيالي"
+      ],
+      "prompt": "بحسب نص القراءة T05، ما الذي سأل عنه الاستطلاع الخيالي؟",
+      "options": [
+        "قيم لياقة المشاركين ونتائجهم الطبية.",
+        "مصادر المعلومات التي يلجأ إليها المشاركون عن الحركة.",
+        "النشاط الأفضل لجميع الناس."
+      ],
+      "answerIndex": 1,
+      "explanation": "سأل الاستطلاع عن الأماكن التي يجد فيها المشاركون معلومات عن الحركة؛ ولم يقس اللياقة أو النتائج الطبية، ولم يحدد نشاطًا مثاليًا للجميع."
+    },
+    {
+      "id": "DL-B2-05-Q09",
+      "sourceTaskIds": [
+        "DL-B2-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "حدود الاستنتاج"
+      ],
+      "prompt": "بحسب نص T06 المكتوب، ما الذي لم يثبته التقرير؟",
+      "options": [
+        "علاقة سببية بين الحركة وتغيّر صحي.",
+        "أن المشاركين جاؤوا من مجموعة واحدة.",
+        "أن التقرير يذكر غياب مجموعة ضابطة."
+      ],
+      "answerIndex": 0,
+      "explanation": "يقول النص إن غياب المجموعة الضابطة يعني أن علاقة السبب والنتيجة لم تُثبت. ويمكن الإجابة من نص الاستماع المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-05-Q10",
+      "sourceTaskIds": [
+        "DL-B2-05-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "skillTags": [
+        "إعادة الصياغة",
+        "aufgrund + Genitiv"
+      ],
+      "prompt": "اختر إعادة الصياغة الصحيحة باستخدام **aufgrund**: **Die Angaben waren begrenzt. Deshalb konnte die Aussage nicht verallgemeinert werden.**",
+      "options": [
+        "Aufgrund den begrenzten Angaben konnte die Aussage nicht verallgemeinert werden.",
+        "Aufgrund der begrenzten Angaben konnte die Aussage nicht verallgemeinert werden.",
+        "Aufgrund der begrenzten Angaben die Aussage nicht verallgemeinert werden konnte."
+      ],
+      "answerIndex": 1,
+      "explanation": "في التعبير بسبب محدودية المعلومات نستخدم Genitiv الجمع: aufgrund der begrenzten Angaben. وتبقى الجملة الرئيسية بترتيب الفعل في الموقع الثاني."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-05-P01",
+      "sourceTaskIds": [
+        "DL-B2-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "قيّم تقرير استطلاع صحي خيالي في خمس إلى ست جمل ألمانية مكتوبة. اذكر حقيقتين دقيقتين على الأقل مما قيس أو لم يقس أو من طريقة اختيار المشاركين، واستخدم مرةً واحدة على الأقل sodass أو weshalb ومرةً aufgrund + Genitiv. بيّن حدّين على الأقل للبيانات، ولا تحوّلها إلى إثبات لسبب أو إلى تشخيص أو توصية طبية شخصية. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إجابة مكتوبة من خمس إلى ست جمل ألمانية تقيّم استطلاعًا خياليًا، وتنقل حقيقتين على الأقل من المصدر، وتذكر حدّين للبيانات، وتستخدم التركيبين المطلوبين.",
+        "meaningClarity": "تُعرض معلومات المصدر بدقة، ويُفرّق بين ما قيس وما لم يقس وبين الوصف والسببية؛ لا تتضمن الإجابة تشخيصًا أو توصية طبية شخصية.",
+        "targetSkill": "يستخدم sodass أو weshalb مع فعل في نهاية الجملة التابعة، ويستخدم aufgrund مع Genitiv صحيح، ويعرض النتيجة أو السبب بترتيب فعل مناسب."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-05-P02",
+      "sourceTaskIds": [
+        "DL-B2-05-T05",
+        "DL-B2-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-05-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى قراءة التقرير في T05، اكتب إحاطة من خمس إلى ست جمل ألمانية ثم اقرأها بصوت مسموع لنفسك. انقل ثلاث حقائق دقيقة على الأقل، مثل عدد المشاركين أو ما سأل عنه الاستطلاع أو ما لم يقسه؛ ثم اشرح حدّين للاستنتاج، مع استخدام sodass أو weshalb وaufgrund + Genitiv. ميّز بين وصف الإجابات وإثبات سبب صحي، ولا تقدّم تشخيصًا أو توصية طبية شخصية. يمكن تنفيذها فرديًا؛ إذا اخترت الكتابة فاقرأ إجابتك بصوت مسموع لنفسك، ولا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاث حقائق على الأقل من T05، وتشرح حدّين للاستنتاج، وتستخدم تراكيب الهدف.",
+        "meaningClarity": "تطابق التفاصيل نص القراءة، وتوضح أن الاستطلاع تناول مصادر معلومات الحركة ولم يقس اللياقة أو النتائج الطبية، ولا تنسب إليه إثبات علاقة سببية أو توصية عامة.",
+        "targetSkill": "يستخدم sodass أو weshalb مع ترتيب الجملة التابعة، ويستخدم aufgrund + Genitiv صحيحًا، ويصوغ النتيجة أو السبب بترتيب فعل مفهوم، ويقرأ المتعلم النص بصوت مسموع دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

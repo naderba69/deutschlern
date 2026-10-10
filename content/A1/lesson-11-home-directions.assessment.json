@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-11-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-11-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR17: مراجعة النصوص والتمارين؛ تحديد التنكير بعدes gibt، وربط مهمتي المسكن والطريق بتدريبين مطابقين مع نماذج.",
+      "المسكن كتابة فقط والطريق مع جهر؛ لا شرط شريك أو تسجيل أو عنوان حقيقي. الطول والإقرار لا يصححان اللغة أو النطق.",
+      "التسجيلات موجودة وتظل متاحة؛ لا إعادة توليد أو استماع أو اعتماد جديد، ولا قياس استماع مستقل بالتفريغ."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-11-Q01",
+      "sourceTaskIds": [
+        "DL-A1-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "مفردات المنزل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى die Küche؟",
+      "options": [
+        "غرفة النوم",
+        "المطبخ",
+        "الشرفة"
+      ],
+      "answerIndex": 1,
+      "explanation": "die Küche تعني «المطبخ»."
+    },
+    {
+      "id": "DL-A1-11-Q02",
+      "sourceTaskIds": [
+        "DL-A1-11-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "مفردات المنزل",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى das Schlafzimmer؟",
+      "options": [
+        "غرفة النوم",
+        "غرفة الجلوس",
+        "الحمّام"
+      ],
+      "answerIndex": 0,
+      "explanation": "das Schlafzimmer تعني «غرفة النوم»."
+    },
+    {
+      "id": "DL-A1-11-Q03",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "es gibt وأداة التنكير",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Es gibt ___ Tisch.",
+      "options": [
+        "eine",
+        "einen",
+        "ein"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tisch مذكر؛ بعد es gibt نستخدم هنا Akkusativ einen."
+    },
+    {
+      "id": "DL-A1-11-Q04",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "es gibt وأداة التنكير",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Es gibt ___ Küche.",
+      "options": [
+        "einen",
+        "ein",
+        "eine"
+      ],
+      "answerIndex": 2,
+      "explanation": "Küche مؤنث، لذلك نستخدم eine."
+    },
+    {
+      "id": "DL-A1-11-Q05",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "es gibt وأداة التنكير",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة صحيحة؟",
+      "options": [
+        "Es gibt einen Balkon.",
+        "Es gibt ein Balkon.",
+        "Es gibt eine Balkon."
+      ],
+      "answerIndex": 0,
+      "explanation": "Balkon مذكر؛ الصيغة هنا einen Balkon."
+    },
+    {
+      "id": "DL-A1-11-Q06",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "الاتجاهات",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تعطي اتجاهًا مهذبًا إلى الأمام؟",
+      "options": [
+        "Gehen Sie bitte geradeaus.",
+        "Ich möchte ein Zimmer.",
+        "Es gibt einen Tisch."
+      ],
+      "answerIndex": 0,
+      "explanation": "Gehen Sie bitte geradeaus تعطي تعليمات طريق مهذبة."
+    },
+    {
+      "id": "DL-A1-11-Q07",
+      "sourceTaskIds": [
+        "DL-A1-11-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "الاتجاهات",
+        "اختيار محدد"
+      ],
+      "prompt": "ما معنى links؟",
+      "options": [
+        "يمين",
+        "إلى الأمام",
+        "يسار"
+      ],
+      "answerIndex": 2,
+      "explanation": "links تعني «يسار»."
+    },
+    {
+      "id": "DL-A1-11-Q08",
+      "sourceTaskIds": [
+        "DL-A1-11-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "وصف المكان",
+        "اختيار محدد"
+      ],
+      "prompt": "كيف نقول إن المنزل بجانب المخبز؟",
+      "options": [
+        "Das Haus ist neben der Bäckerei.",
+        "Das Haus ist um der Bäckerei.",
+        "Das Haus neben ist Bäckerei."
+      ],
+      "answerIndex": 0,
+      "explanation": "neben der Bäckerei تعني «بجانب المخبز»."
+    },
+    {
+      "id": "DL-A1-11-Q09",
+      "sourceTaskIds": [
+        "DL-A1-11-T05"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي علاقة يذكرها نص القراءة صراحةً بين المنزل والحديقة؟",
+      "options": [
+        "مقابل الحديقة",
+        "داخل الحديقة",
+        "بعيدًا عن الحديقة"
+      ],
+      "answerIndex": 0,
+      "explanation": "النص يقول: Das Haus ist gegenüber dem Park؛ أي مقابل الحديقة. لم يذكر مسافة عددية أو علاقة داخل الحديقة."
+    },
+    {
+      "id": "DL-A1-11-Q10",
+      "sourceTaskIds": [
+        "DL-A1-11-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "skillTags": [
+        "وصف المسكن",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تعني «يوجد مطبخ»؟",
+      "options": [
+        "Es gibt eine Küche.",
+        "Es gibt einen Küche.",
+        "Es gibt die Küche gibt."
+      ],
+      "answerIndex": 0,
+      "explanation": "Küche مؤنث، فنقول: Es gibt eine Küche."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-11-P01",
+      "sourceTaskIds": [
+        "DL-A1-11-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب أربع جمل عن شقة خيالية: الأولى والثانية تذكران مكانين مختلفين من قائمة غرف الدرس وتبدآن بـ Es gibt؛ الثالثة تذكر قطعة أثاث واحدة في غرفة سبق ذكرها باستعمال Im Wohnzimmer أو Im Schlafzimmer مع gibt es؛ الرابعة تصف الشقة بـ Die Wohnung ist مع hell أو dunkel أو groß أو klein. اختر غرفة جلوس أو غرفة نوم ضمن الجملتين الأوليين لتستعملها في الثالثة. هذه كتابة فقط، دون قراءة جهرية أو تسجيل أو وصف مسكنك الحقيقي، ولا تعليمات طريق في هذه المهمة.",
+      "criteria": {
+        "taskCompletion": "أربع جمل: مكانان مختلفان، قطعة أثاث في غرفة سبق ذكرها، وصفة للشقة؛ كتابة فقط.",
+        "meaningClarity": "الغرف والأثاث والوصف متسقة في مسكن خيالي واحد، ولا يتطلب عنوانًا أو مسارًا.",
+        "targetSkill": "Es gibt ثم einen/eine/ein المناسبة، وIm Wohnzimmer أوIm Schlafzimmer gibt es، وصفة بعدDie Wohnung ist."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-11-P02",
+      "sourceTaskIds": [
+        "DL-A1-11-T07"
+      ],
+      "objectiveIds": [
+        "DL-A1-11-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب خمس جمل في موقف خيالي: سؤال الزائر عن الوصول إلى المحطة يبدأ بـ Entschuldigung, wie komme ich zum Bahnhof?، ثم جوابًا بأربع جمل وفق هذا المسار: الزائر أمام المقهى وينظر إلى الشارع المستقيم المؤدي للإشارة؛ يمشي مباشرةً حتى الإشارة، ثم يتجه يسارًا عندها، ثم يمينًا عند التقاطع التالي، والمحطة مقابل الحديقة. صغ التعليمات الثلاث بـ Gehen Sie، ثم جملة تحدد موقع المحطة. اقرأ السؤال والجواب كاملًا بصوت مرتفع؛ يمكنك أداء الطرفين منفردًا، دون شريك أو تسجيل أو عنوان حقيقي. هذه ليست إرشادات ملاحة واقعية.",
+      "criteria": {
+        "taskCompletion": "سؤال ثم ثلاث تعليمات حسب المسار وجملة موقع؛ قرأت الجمل الخمس كلها جهرًا.",
+        "meaningClarity": "من المقهى إلى الإشارة، يسارًا عندها ثم يمينًا عند التقاطع التالي؛ المحطة مقابل الحديقة، دون تبديل المعالم.",
+        "targetSkill": "سؤال الوصول وGehen Sie في التعليمات، معgeradeaus وlinks وrechts وgegenüber dem Park؛ لا خلط بين صيغةdu وSie."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

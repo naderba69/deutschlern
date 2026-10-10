@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-05-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-05-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR5: مراجعة نصية بالمراجع موثقة في data/reviews/a0-05-review.json؛ لا اعتماد سمعي أو شهادة إتقان مستقلة.",
+      "T07/P01 يتضمنان الآن عدم الفهم وطلب التكرار والبطء والسؤال عن المعنى والكتابة، مع مسودة وأداء فردي ممكن.",
+      "P02 صار مرتبطًا ببطاقة الكتابة T08، ولا يحتاج إلى تأكيد كلام؛ Q10 صار مرتبطًا بالعبارة المحددة في T03.",
+      "قُيد Q05 بنمط الطلب الذي يبدأ بالفعل؛ الصيغة الخبرية في أحد المشتتات ليست خطأ نحويًا في كل سياق. المفاتيح العشرة محفوظة.",
+      "أصلا الصوت وستة مقاطع محفوظة دون تغيير؛ ملاحظة حدود الحوار المسجّل نصية فقط. لا تسجيل مستقل لحوار T06.",
+      "التقييم الذاتي والطول الأدنى لا يصححان اللغة أو النطق آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-05-Q01",
+      "sourceTaskIds": [
+        "DL-A0-05-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا تعني العبارة «Ich verstehe nicht.»؟",
+      "options": [
+        "أفهم",
+        "لا أفهم",
+        "أعد ذلك من فضلك"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ich verstehe nicht تعني لا أفهم."
+    },
+    {
+      "id": "DL-A0-05-Q02",
+      "sourceTaskIds": [
+        "DL-A0-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Langsamer, ___.",
+      "options": [
+        "bitte",
+        "Sie",
+        "Frage"
+      ],
+      "answerIndex": 0,
+      "explanation": "bitte تجعل الطلب ألطف: Langsamer, bitte."
+    },
+    {
+      "id": "DL-A0-05-Q03",
+      "sourceTaskIds": [
+        "DL-A0-05-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل السؤال عن المعنى: Was ___ „Buch“?",
+      "options": [
+        "schreibt",
+        "wiederholt",
+        "bedeutet"
+      ],
+      "answerIndex": 2,
+      "explanation": "السؤال عن المعنى هو: Was bedeutet „Buch“?"
+    },
+    {
+      "id": "DL-A0-05-Q04",
+      "sourceTaskIds": [
+        "DL-A0-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تستخدم مخاطبة رسمية؟",
+      "options": [
+        "Können Sie mir helfen?",
+        "Kannst du das wiederholen?",
+        "Tschüss!"
+      ],
+      "answerIndex": 0,
+      "explanation": "Können Sie mir helfen? تخاطب الشخص بصيغة Sie الرسمية. Tschüss! وداع ولا تحدد وحدها صيغة المخاطب."
+    },
+    {
+      "id": "DL-A0-05-Q05",
+      "sourceTaskIds": [
+        "DL-A0-05-T04"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "في نمط الطلب الرسمي الذي يبدأ بالفعل، أي ترتيب يعبّر عن «أعد ذلك من فضلك»؟",
+      "options": [
+        "Sie wiederholen bitte das.",
+        "Wiederholen Sie das bitte.",
+        "Bitte das Sie wiederholen."
+      ],
+      "answerIndex": 1,
+      "explanation": "Wiederholen Sie das bitte. هي الصيغة المطلوبة التي تبدأ بالفعل. Sie wiederholen bitte das. صيغة خبرية قد تؤدي طلبًا في سياق، لكنها ليست النمط المحدد هنا."
+    },
+    {
+      "id": "DL-A0-05-Q06",
+      "sourceTaskIds": [
+        "DL-A0-05-T05"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "تريد طلب إعادة جملة من المدرّس بصيغة Sie وبطلب كامل مهذب؛ ماذا تقول؟",
+      "options": [
+        "Wiederholen!",
+        "Ich bin eine Wiederholung.",
+        "Können Sie das bitte wiederholen?"
+      ],
+      "answerIndex": 2,
+      "explanation": "الخيار الثالث طلب كامل ومهذب بصيغة Sie."
+    },
+    {
+      "id": "DL-A0-05-Q07",
+      "sourceTaskIds": [
+        "DL-A0-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich verstehe ___.",
+      "options": [
+        "nicht",
+        "bitte",
+        "wiederholen"
+      ],
+      "answerIndex": 0,
+      "explanation": "العبارة المطلوبة: Ich verstehe nicht."
+    },
+    {
+      "id": "DL-A0-05-Q08",
+      "sourceTaskIds": [
+        "DL-A0-05-T06"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Danke ___ Ihre Hilfe.",
+      "options": [
+        "und",
+        "für",
+        "mit"
+      ],
+      "answerIndex": 1,
+      "explanation": "نقول Danke für Ihre Hilfe."
+    },
+    {
+      "id": "DL-A0-05-Q09",
+      "sourceTaskIds": [
+        "DL-A0-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "هل تحدد العبارة «Wie schreibt man das?» وحدها إن كان المخاطب du أم Sie؟",
+      "options": [
+        "نعم، هي دائمًا du.",
+        "نعم، هي دائمًا Sie.",
+        "لا، لا يظهر ذلك من صيغة الجملة وحدها."
+      ],
+      "answerIndex": 2,
+      "explanation": "الجملة لا تكشف وحدها نوع المخاطب؛ لا يوجد فيها du أو Sie."
+    },
+    {
+      "id": "DL-A0-05-Q10",
+      "sourceTaskIds": [
+        "DL-A0-05-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي عبارة تسأل بها «كيف تُكتب هذه الكلمة؟»؟",
+      "options": [
+        "Wie schreibt man das?",
+        "Was bedeutet das?",
+        "Ich verstehe nicht."
+      ],
+      "answerIndex": 0,
+      "explanation": "Wie schreibt man das? تسأل عن طريقة الكتابة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-05-P01",
+      "sourceTaskIds": [
+        "DL-A0-05-T07"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "في الموقف المتخيّل Der Unterricht beginnt um neun Uhr. اكتب مسودة بالألمانية للأجزاء الخمسة من تمرين 7: قل إنك لا تفهم الكلمة، واطلب من المدرّسة إعادة الجملة بصيغة Sie وبأدب، واطلب البطء، ثم اسأل عن معنى Unterricht وكيف تُكتب. اقرأ طلباتك بصوت مرتفع وحدك أو مع شريك. لا تحتاج إلى تسجيل أو تأليف أجوبة المدرّسة.",
+      "criteria": {
+        "taskCompletion": "كتبت الأجزاء الخمسة: عدم الفهم، التكرار، البطء، المعنى، وطريقة الكتابة، ثم قرأتها بصوت مرتفع.",
+        "meaningClarity": "يتضح أنني أطلب إعادة الجملة، وأن Unterricht هي الكلمة المقصودة بالمعنى والكتابة، دون اشتراط وجود شريك.",
+        "targetSkill": "أستعمل Ich verstehe … nicht وطلبًا مهذبًا بصيغة Sie، وأميز Was bedeutet …? عن Wie schreibt man …? وأطلب البطء."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-05-P02",
+      "sourceTaskIds": [
+        "DL-A0-05-T08"
+      ],
+      "objectiveIds": [
+        "DL-A0-05-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing"
+      ],
+      "prompt": "أنشئ بطاقة المساعدة من تمرين 8: اكتب ثلاث عبارات ألمانية مختلفة من الدرس ومعنى كل منها بالعربية. غطِّ الصياغة الألمانية وحاول إعادة كتابتها انطلاقًا من العربية، ثم قارن بالنموذج وصحح. احفظ النسخة المصححة في خانة الإجابة. هذه مهمة كتابة ولا تتطلب كلامًا بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "كتبت ثلاث عبارات مختلفة ومعانيها، وجربت استرجاعها كتابةً ثم قارنت وصححت النسخة المحفوظة.",
+        "meaningClarity": "المعنى العربي يطابق كل عبارة ألمانية ولا يخلط طلب المعنى بطلب طريقة الكتابة.",
+        "targetSkill": "أحافظ على كتابة العبارات المختارة كما في النموذج، بما فيها Sie/Ihre والأسماء الكبيرة حيث تظهر، وbitte/Bitte بحسب موضعها."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 50,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

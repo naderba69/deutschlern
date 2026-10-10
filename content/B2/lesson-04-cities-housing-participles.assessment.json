@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-04-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-04-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بهدف B2.4 وتمارين المصدر T01–T07: مفردات السكن، وصوغ Partizip I وPartizip II كصفات، ونهاياتها مع الاسم والأداة والحالة، والتمييز بين الصيغ في أمثلة محددة، وفهم نصّي القراءة والاستماع المكتوبين، واختصار جملة موصولة بصفة مشتقة.",
+      "ترتبط P01 مباشرة بـT08 (وصف مكتوب من خمس إلى ست جمل لمبنى أو حيّ خيالي — كتابة فقط دون جهر)، وترتبط P02 بنص القراءة T05 وبالوصف في T08 (إحاطة من خمس إلى ست جمل لزائر مهتم بالحيّ الخيالي — كتابة + قراءة جهرية ذاتية). تختبر المهمتان استخدام صفة واحدة على الأقل من كل نوع مع نهاية مناسبة ومعنى ملائم للسياق.",
+      "المعايير محلية وظاهرة وحد أدنى للحروف (160 في P01 و180 في P02)؛ لا يعتمد التقييم على MP3 أو صوت مولّد ولا يدّعي تصحيح الكتابة المفتوحة أو النطق آليًا. لا تُعرض دلالات Partizip I/II كقواعد مطلقة خارج السياق."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-04-Q01",
+      "sourceTaskIds": [
+        "DL-B2-04-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "مفردات السكن",
+        "die Nebenkosten"
+      ],
+      "prompt": "أي كلمة ألمانية تعني التكاليف الإضافية التي تُضاف إلى الإيجار الأساسي؟",
+      "options": [
+        "die Wohnfläche",
+        "die Nebenkosten",
+        "die Dämmung"
+      ],
+      "answerIndex": 1,
+      "explanation": "die Nebenkosten هي التكاليف الإضافية للسكن؛ أما Wohnfläche فتعني المساحة السكنية وDämmung تعني العزل."
+    },
+    {
+      "id": "DL-B2-04-Q02",
+      "sourceTaskIds": [
+        "DL-B2-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "Partizip I",
+        "صياغة الصفة المشتقة"
+      ],
+      "prompt": "اختر الصيغة المناسبة: **die derzeit ___ Wohnungen** (entstehen).",
+      "options": [
+        "entstehenden",
+        "entstehende",
+        "entstanden"
+      ],
+      "answerIndex": 0,
+      "explanation": "في العبارة die derzeit entstehenden Wohnungen يأتي Partizip I entstehend قبل الاسم، وتأخذ الصفة النهاية -en بعد أداة التعريف die مع الجمع."
+    },
+    {
+      "id": "DL-B2-04-Q03",
+      "sourceTaskIds": [
+        "DL-B2-04-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "نهاية الصفة مع اسم محايد"
+      ],
+      "prompt": "أكمل التحويل: **Ein Haus, das saniert wurde → ein ___ Haus.**",
+      "options": [
+        "sanierte",
+        "saniertes",
+        "sanierendes"
+      ],
+      "answerIndex": 1,
+      "explanation": "saniert هو Partizip II من sanieren؛ ومع ein واسم محايد في حالة الرفع تصبح الصيغة ein saniertes Haus."
+    },
+    {
+      "id": "DL-B2-04-Q04",
+      "sourceTaskIds": [
+        "DL-B2-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "نهاية الصفة",
+        "Dativ جمع"
+      ],
+      "prompt": "اختر النهاية الصحيحة: **mit den renoviert___ Fassaden**.",
+      "options": [
+        "renovierten",
+        "renovierte",
+        "renovierter"
+      ],
+      "answerIndex": 0,
+      "explanation": "بعد mit يأتي Dativ. ومع أداة den واسم جمع، تأخذ الصفة النهاية -en: mit den renovierten Fassaden."
+    },
+    {
+      "id": "DL-B2-04-Q05",
+      "sourceTaskIds": [
+        "DL-B2-04-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "نهاية الصفة",
+        "Partizip I"
+      ],
+      "prompt": "أكمل نهاية الصفة: **eine steigend___ Miete**.",
+      "options": [
+        "steigender",
+        "steigende",
+        "steigenden"
+      ],
+      "answerIndex": 1,
+      "explanation": "Miete مؤنث في حالة الرفع مع الأداة eine؛ لذلك تكون الصفة steigende."
+    },
+    {
+      "id": "DL-B2-04-Q06",
+      "sourceTaskIds": [
+        "DL-B2-04-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "تمييز الصيغ في المثال",
+        "Partizip II"
+      ],
+      "prompt": "أي عبارة تحتوي هنا على Partizip II مستخدمًا صفةً؟",
+      "options": [
+        "die steigenden Nebenkosten",
+        "das sanierte Eckhaus",
+        "die derzeit entstehenden Wohnungen"
+      ],
+      "answerIndex": 1,
+      "explanation": "sanierte هو Partizip II من sanieren في das sanierte Eckhaus؛ والعبارتان الأخريان تستعملان Partizip I في هذين السياقين."
+    },
+    {
+      "id": "DL-B2-04-Q07",
+      "sourceTaskIds": [
+        "DL-B2-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تفصيل من النص الخيالي"
+      ],
+      "prompt": "بحسب نص القراءة، ما الذي يجري تجديده في حيّ Parkbogen الخيالي؟",
+      "options": [
+        "كتلة من المنازل القديمة.",
+        "مركز تجاري حقيقي.",
+        "مبنى مدرسي جديد."
+      ],
+      "answerIndex": 0,
+      "explanation": "يقول النص إن كتلة قديمة من المنازل تُجدّد في حيّ Parkbogen الخيالي؛ ولا يصف بيانات رسمية عن حيّ حقيقي."
+    },
+    {
+      "id": "DL-B2-04-Q08",
+      "sourceTaskIds": [
+        "DL-B2-04-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "تمييز المعلومة عن السؤال"
+      ],
+      "prompt": "ما السؤال الذي تطرحه إحدى المقيمات بشأن الإيجارات؟",
+      "options": [
+        "هل ستُزال الواجهة المضيئة؟",
+        "هل ستنخفض المساحة السكنية؟",
+        "هل ستظل الإيجارات المتزايدة ميسورة لجميع الأسر؟"
+      ],
+      "answerIndex": 2,
+      "explanation": "تتساءل المقيمة عما إذا كانت الإيجارات المتزايدة ستبقى ميسورة لجميع الأسر؛ النص يذكر سؤالًا وقلقًا، لا نتيجة مؤكدة."
+    },
+    {
+      "id": "DL-B2-04-Q09",
+      "sourceTaskIds": [
+        "DL-B2-04-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "Partizip II في وصف السكن"
+      ],
+      "prompt": "بحسب نص T06 المكتوب، أي شقة كانت جاهزة بالفعل؟",
+      "options": [
+        "Eine gut gedämmte Wohnung.",
+        "Eine barrierefrei geplante Wohnung.",
+        "Eine noch nicht fertiggestellte Wohnung."
+      ],
+      "answerIndex": 0,
+      "explanation": "يقول النص إن شقة معزولة جيدًا كانت جاهزة، بينما كانت الشقة المخطط لها لتكون سهلة الوصول ما تزال تُجهز. يمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-04-Q10",
+      "sourceTaskIds": [
+        "DL-B2-04-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "skillTags": [
+        "اختصار جملة موصولة",
+        "Partizip I",
+        "نهاية الصفة في الجمع"
+      ],
+      "prompt": "اختر الاختصار الصحيح: **die Menschen, die im Viertel wohnen → die im Viertel ___ Menschen**.",
+      "options": [
+        "wohnende",
+        "wohnenden",
+        "gewohnten"
+      ],
+      "answerIndex": 1,
+      "explanation": "يتكوّن Partizip I من wohnen بإضافة -d: wohnend. وبعد die في الجمع تأخذ الصفة النهاية -en، فنقول die im Viertel wohnenden Menschen."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-04-P01",
+      "sourceTaskIds": [
+        "DL-B2-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب وصفًا من خمس إلى ست جمل ألمانية لمبنى أو حيّ خيالي. استخدم صفتين مشتقتين على الأقل: واحدة من Partizip I وأخرى من Partizip II، وطابق نهايتيهما مع الاسم والأداة والحالة. لا تستخدم بيانات سكن حقيقية ولا تقدّم حكمًا عامًا عن الإيجارات بوصفه حقيقة. هذه المهمة كتابية فقط؛ لا يلزم شريك ولا تسجيل.",
+      "criteria": {
+        "taskCompletion": "وصف مكتوب من خمس إلى ست جمل ألمانية لمبنى أو حيّ خيالي، يتضمن صفة واحدة على الأقل من Partizip I وأخرى من Partizip II.",
+        "meaningClarity": "الوصف مفهوم وتناسب الصفات معاني الأسماء في السياق؛ لا يتضمن بيانات سكن حقيقية أو تعميمًا غير موثق عن الإيجارات أو السكان.",
+        "targetSkill": "يستخدم صفتين مشتقتين على الأقل، إحداهما من Partizip I والأخرى من Partizip II، مع نهاية مناسبة للجنس والحالة والأداة. يختار الصيغة بحسب معناها في العبارة ولا يطبق قاعدة دلالية مطلقة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 160,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-04-P02",
+      "sourceTaskIds": [
+        "DL-B2-04-T05",
+        "DL-B2-04-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-04-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى نص القراءة T05، اكتب إحاطة من خمس إلى ست جمل ألمانية لزائر مهتم بالحيّ الخيالي ثم اقرأها بصوت واضح. انقل ثلاثة تفاصيل دقيقة على الأقل، مثل المدخل المصمم لسهولة الوصول، أو المساكن التي يجري إنشاؤها حاليًا، أو الفناء المشترك، أو سؤال المقيمة عن الإيجارات. استخدم صفة من Partizip I وأخرى من Partizip II مع نهايتين مناسبتين، وافصل تفاصيل النص عما تضيفه أنت. لا تستخدم بيانات سكن حقيقية. لا يلزم تشغيل MP3. إذا كنت تتعلم وحدك فاكتب الإجابة ثم اقرأها بصوت واضح؛ لا يلزم تسجيل.",
+      "criteria": {
+        "taskCompletion": "إحاطة من خمس إلى ست جمل ألمانية تنقل ثلاثة تفاصيل دقيقة على الأقل من T05، وتستخدم صفة من Partizip I وأخرى من Partizip II.",
+        "meaningClarity": "تُنقل حقائق النص وأسئلة المقيمة بدقة، وتُفصل عن أي وصف إضافي؛ لا تُضاف بيانات سكن حقيقية أو تعميمات عن الأسعار والسكان.",
+        "targetSkill": "يستخدم Partizip I وPartizip II بوصفهما صفتين داخل مجموعتين اسميتين مفهومتين، مع نهايات ملائمة للاسم والأداة والحالة، ويقرأ المتعلم النص بصوت واضح دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

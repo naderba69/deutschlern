@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "b2-10-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-B2-10-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "ترتبط الأسئلة العشرة بالهدف DL-B2-10-G01 وكتل المصدر T01–T07: مفردات الأعطال التقنية، والفرضيات والأمنيات في الحاضر، وصياغة Konjunktiv II للماضي بما فيها المبني للمجهول والأفعال التي تأخذ المساعد sein مثل auftreten، والتمييز بين الاحتمال والحقيقة، وقراءة مراجعة الإصدار التجريبي، ونص الاستماع المكتوب، والتحويل إلى شرط ماضٍ غير متحقق.",
+      "في الإصدار b2-10-v2 ترتبط P01 مباشرةً بالجزء (أ) من T08 بوصفها مهمة كتابية فقط (modality: writing، speakAloud: false، بحد أدنى 180 حرفًا) لكتابة 5 إلى 6 جمل ألمانية عن سيناريو تقني خيالي تتضمن فرضية عن الحاضر وشرطًا ماضيًا غير متحقق وأمنية واحتمالًا غير مؤكد دون بيانات حقيقية أو جزم قاطع.",
+      "وترتبط P02 بالجزء (ب) من T08 وبتفاصيل قراءة T05 ونص T06 المكتوب والتحويل في T07 بوصفها مهمة كتابية ومنطوقة متكاملة (modality: writing + speaking، speakAloud: true، بحد أدنى 200 حرف) لتقديم إحاطة من 5 إلى 6 جمل تجمع سبب الخلل وعدم نشر التحديث وشرط الفحص المبكر في T05 مع شرط النسخة الاحتياطية في T06 وأمنية واحتمال غير مؤكد بشأن الأجهزة الأقدم، مع القراءة بصوت مسموع دون تسجيل أو إرسال صوت. لا يعتمد التقييم على MP3 أو خدمة خارجية، ولا يدّعي تصحيح الكتابة المفتوحة أو النطق آليًا."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-B2-10-Q01",
+      "sourceTaskIds": [
+        "DL-B2-10-T01"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "مفردات التقنية",
+        "die Ausfallzeit"
+      ],
+      "prompt": "ماذا تعني **die Ausfallzeit** في سياق التقنية؟",
+      "options": [
+        "المدة التي تتوقف فيها خدمة أو جهاز عن العمل",
+        "واجهة تربط نظامين أو جهازين",
+        "شرط يجب توفره قبل استخدام ميزة"
+      ],
+      "answerIndex": 0,
+      "explanation": "**die Ausfallzeit** (جمعها **die Ausfallzeiten**) هي مدة توقف الخدمة أو الجهاز عن العمل، وليست واجهة الربط (**die Schnittstelle**) أو الشرط المسبق (**die Voraussetzung**)."
+    },
+    {
+      "id": "DL-B2-10-Q02",
+      "sourceTaskIds": [
+        "DL-B2-10-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "فرضية غير واقعية في الحاضر",
+        "Konjunktiv II"
+      ],
+      "prompt": "أكمل الفرضية عن الحاضر: **Wenn die App offline ___, könnte sie trotzdem Daten speichern.**",
+      "options": [
+        "wäre",
+        "war",
+        "ist"
+      ],
+      "answerIndex": 0,
+      "explanation": "الفرضية غير الواقعية في الحاضر تستخدم هنا صيغة **Konjunktiv II** للفعل **sein** وهي **wäre** في نهاية جملة **wenn** الفرعية، بينما **ist** للمضارع الدلالي و**war** للماضي البسيط."
+    },
+    {
+      "id": "DL-B2-10-Q03",
+      "sourceTaskIds": [
+        "DL-B2-10-T02"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "أمنية حالية",
+        "Konjunktiv II"
+      ],
+      "prompt": "اختر الصيغة المناسبة لأمنية حالية: **Ich wünschte, das Gerät ___ mit allen Systemen kompatibel.**",
+      "options": [
+        "war",
+        "wäre",
+        "ist"
+      ],
+      "answerIndex": 1,
+      "explanation": "بعد **Ich wünschte, ...** نعبّر عن أمنية غير محققة في الحاضر باستخدام **wäre** (**Konjunktiv II**)؛ أما **war** فتحيل إلى الماضي الدلالي و**ist** إلى تقرير واقع."
+    },
+    {
+      "id": "DL-B2-10-Q04",
+      "sourceTaskIds": [
+        "DL-B2-10-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "شرط ماضٍ غير متحقق",
+        "ترتيب الفعل"
+      ],
+      "prompt": "أي مجموعة تكمل الشرط والنتيجة عن الماضي؟ **Wenn das Team den Fehler früher ___, ___ es das Update verschoben.**",
+      "options": [
+        "hätte entdeckt / würde",
+        "entdeckt hat / hätte",
+        "entdeckt hätte / hätte"
+      ],
+      "answerIndex": 2,
+      "explanation": "في جملة **wenn** الفرعية للشرط الماضي غير المتحقق يأتي **Partizip II** قبل الفعل المساعد المصرّف في النهاية (**entdeckt hätte**)، وفي بداية جملة النتيجة يتقدم الفعل المساعد المصرّف (**hätte**) قبل الفاعل (**es**)."
+    },
+    {
+      "id": "DL-B2-10-Q05",
+      "sourceTaskIds": [
+        "DL-B2-10-T03"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "Konjunktiv II للماضي",
+        "المبني للمجهول"
+      ],
+      "prompt": "أكمل نتيجة الشرط الماضي بالمبني للمجهول: **Wenn die Verbindung stabiler gewesen wäre, ___ die Datei schneller übertragen worden.**",
+      "options": [
+        "würde",
+        "wäre",
+        "hätte"
+      ],
+      "answerIndex": 1,
+      "explanation": "يُبنى ماضي **Konjunktiv II** للمبني للمجهول الإجرائي (**Vorgangspassiv**) بالفعل المساعد **wäre** مع **Partizip II** و**worden** (بلا **ge-**): **wäre die Datei schneller übertragen worden**."
+    },
+    {
+      "id": "DL-B2-10-Q06",
+      "sourceTaskIds": [
+        "DL-B2-10-T04"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "احتمال غير مؤكد",
+        "Konjunktiv II"
+      ],
+      "prompt": "أي عبارة تعرض احتمالًا غير مؤكد، لا حقيقة مثبتة؟",
+      "options": [
+        "Die neue Einstellung wird die Fehlersuche sicher erleichtern.",
+        "Es steht fest, dass die Einstellung den Fehler behebt.",
+        "Es könnte sein, dass die Einstellung die Fehlersuche erleichtert."
+      ],
+      "answerIndex": 2,
+      "explanation": "العبارة **Es könnte sein, dass ...** تعرض احتمالًا غير مؤكد يحتاج إلى تحقق واختبار؛ أما الخياران الآخران (**sicher** و**Es steht fest**) فيقدمان النتيجة بصيغة اليقين القاطع."
+    },
+    {
+      "id": "DL-B2-10-Q07",
+      "sourceTaskIds": [
+        "DL-B2-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "سبب الخلل"
+      ],
+      "prompt": "بحسب قراءة مراجعة الإصدار التجريبي T05، ما سبب الخلل في المحاولة الأولى؟",
+      "options": [
+        "لم تكن واجهة الربط متوافقة مع جهاز أقدم.",
+        "كانت مرحلة الاختبار قد انتهت قبل بدء العمل.",
+        "حُذف التطبيق من جميع الأجهزة بعد نشر التحديث."
+      ],
+      "answerIndex": 0,
+      "explanation": "تذكر قراءة T05 صراحةً: **Beim ersten Versuch traten Störungen auf, weil eine Schnittstelle mit einem älteren Gerät nicht kompatibel war**؛ أي إن واجهة الربط لم تكن متوافقة مع جهاز أقدم."
+    },
+    {
+      "id": "DL-B2-10-Q08",
+      "sourceTaskIds": [
+        "DL-B2-10-T05"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "التمييز بين المعلومة والافتراض"
+      ],
+      "prompt": "هل كان التحديث قد نُشر وفق قراءة T05؟",
+      "options": [
+        "نعم، نُشر قبل الاختبار الأول.",
+        "لا يذكر النص حالة نشره.",
+        "لا، يذكر النص أن التحديث لم يُنشر بعد."
+      ],
+      "answerIndex": 2,
+      "explanation": "تنص قراءة T05 على **Das Update wurde noch nicht veröffentlicht**؛ وهذه واقعة صريحة في النص وليست مجرد احتمال."
+    },
+    {
+      "id": "DL-B2-10-Q09",
+      "sourceTaskIds": [
+        "DL-B2-10-T06"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "فهم نص الاستماع المكتوب",
+        "النسخة الاحتياطية"
+      ],
+      "prompt": "وفق النص المكتوب لتدريب الاستماع T06، ماذا كان سيصبح أسهل بعد إنشاء نسخة احتياطية؟",
+      "options": [
+        "إعادة إعداد واجهة الربط من الصفر.",
+        "استعادة الملف بعد خلل الجهاز.",
+        "ضمان توافق كل الأجهزة القديمة."
+      ],
+      "answerIndex": 1,
+      "explanation": "تقول المتحدثة في النص المكتوب بتركيبة المصدر المزدوج (**Ersatzinfinitiv**): **Wenn ich früher eine Sicherungskopie erstellt hätte, hätte ich die Datei nach dem Gerätefehler leichter wiederherstellen können**؛ أي استعادة الملف بسهولة أكبر. يمكن الإجابة من النص المكتوب دون تشغيل MP3."
+    },
+    {
+      "id": "DL-B2-10-Q10",
+      "sourceTaskIds": [
+        "DL-B2-10-T07"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "skillTags": [
+        "إعادة الصياغة",
+        "شرط ماضٍ غير متحقق"
+      ],
+      "prompt": "**Wir prüften die Schnittstelle nicht. Deshalb trat der Fehler auf.** أي جملة تصف البديل الافتراضي الماضي بشكل صحيح؟",
+      "options": [
+        "Wenn wir die Schnittstelle prüfen, tritt der Fehler nicht auf.",
+        "Wenn wir die Schnittstelle früher geprüft hätten, wäre der Fehler nicht aufgetreten.",
+        "Wenn wir die Schnittstelle früher geprüft hätten, hätte der Fehler nicht aufgetreten."
+      ],
+      "answerIndex": 1,
+      "explanation": "الشرط الماضي غير المتحقق مع الفعل المتعدي **prüfen** يُصاغ بـ**geprüft hätten** في نهاية جملة **wenn**، بينما يأخذ الفعل المنفصل اللازم **auftreten** (**ist aufgetreten**) المساعد **wäre** في جملة النتيجة: **wäre der Fehler nicht aufgetreten**."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-B2-10-P01",
+      "sourceTaskIds": [
+        "DL-B2-10-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب باللغة الألمانية من خمس إلى ست جمل عن مشكلة تقنية خيالية (الجزء أ من تمرين 8 — كتابة فقط دون اشتراط الجهر). ضمّن فرضية غير واقعية عن الحاضر بصيغة **Wenn ... wäre/hätte, ... könnte/würde**، وشرطًا ماضيًا لم يتحقق باستخدام **hätte/wäre + Partizip II**، وأمنيةً واضحة (**Ich wünschte, ...**)، واحتمالًا غير مؤكد مثل **Es könnte sein, dass ...** أو **möglicherweise**. وضّح ما هو واقع في السيناريو وما هو افتراض، ولا تستخدم بيانات دخول أو معلومات شخصية أو تقنية حقيقية.",
+      "criteria": {
+        "taskCompletion": "كتابة خمس إلى ست جمل ألمانية عن سيناريو تقني خيالي، تتضمن فرضية في الحاضر، وشرطًا ماضيًا غير متحقق، وأمنية، واحتمالًا غير مؤكد.",
+        "meaningClarity": "يميّز النص المكتوب بين الوقائع المفترضة في السيناريو وبين الافتراضات والأمنيات والاحتمالات؛ ولا يقدم التوقع كحقيقة مضمونة أو يذكر بيانات شخصية أو تقنية حقيقية.",
+        "targetSkill": "يضبط موضع الفعل المصرّف في نهاية جملة wenn وفي بداية جملة النتيجة، ويختار المساعد الصحيح (hätte أو wäre) مع Partizip II في الشرط الماضي، ويصوغ الأمنية والاحتمال بوضوح."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 180,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-B2-10-P02",
+      "sourceTaskIds": [
+        "DL-B2-10-T05",
+        "DL-B2-10-T06",
+        "DL-B2-10-T07",
+        "DL-B2-10-T08"
+      ],
+      "objectiveIds": [
+        "DL-B2-10-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استنادًا إلى قراءة T05 والنص المكتوب لتدريب الاستماع T06 والتدريب التحويلي في T07، اكتب إحاطة ألمانية من خمس إلى ست جمل لزميل ثم اقرأها بصوت مسموع لنفسك (أو حضّرها وقدّمها شفهيًا — الجزء ب من تمرين 8). اذكر أن واجهة الربط في السيناريو الخيالي لم تكن متوافقة مع جهاز أقدم وأن التحديث لم يُنشر بعد، وانقل ما كان الفريق قد يكتشفه لو فحص الإعدادات مبكرًا على عدة أجهزة. أضف معلومة النسخة الاحتياطية في T06 (**Sicherungskopie** + **hätte ... wiederherstellen können**)، وأمنيةً مناسبة، واحتمالًا غير مؤكد بشأن الأجهزة الأقدم. استخدم شرطًا ماضيًا صحيحًا وميّز معلومات النص عن الافتراض؛ فالتقنية والسيناريو خياليان ولا يثبتان أن تحديثًا سيحل المشكلة. للمتعلم الفردي: اكتب الإحاطة واقرأها بصوت مسموع لنفسك؛ لا يلزم تسجيلها أو إرسال صوت.",
+      "criteria": {
+        "taskCompletion": "إحاطة مكتوبة ومنطوقة من خمس إلى ست جمل ألمانية تنقل بدقة سبب الخلل وحالة النشر في T05، وما كان يمكن اكتشافه بالفحص المبكر، ومعلومة النسخة الاحتياطية في T06، مع أمنية وشرط ماضٍ واحتمال غير مؤكد.",
+        "meaningClarity": "يفصل بين الوقائع المذكورة في النصين الخياليين (T05 وT06) وبين الافتراض والتوقع، ولا يقدم تحسين الإعدادات أو التحديث كحل مضمون؛ يظل السيناريو خياليًا.",
+        "targetSkill": "يستخدم ترتيبًا صحيحًا للفعل في شرط الماضي ونتيجته (بما فيه المصدر المزدوج مع الفعل الناقص hätte ... wiederherstellen können)، ويصوغ الأمنية والاحتمال بوضوح مع قراءة الإحاطة بصوت مسموع دون تسجيل."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 200,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

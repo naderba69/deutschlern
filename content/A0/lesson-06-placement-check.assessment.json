@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a0-gate-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A0-GATE-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR6: مراجعة نصية بالمراجع موثقة في data/reviews/a0-gate-review.json؛ لا شهادة CEFR أو اعتماد نطق.",
+      "الاختيارات تقيس التعرف على أنماط محددة، والمهمات مسودات وتأكيدات ذاتية؛ التسجيل تدريب إضافي ولا توجد أسئلة فهم مسموع محسوبة.",
+      "الورقة القديمة محفوظة بعباراتها وترتيبها؛ نُظفت مسافات نهاية السطور فقط في data/reviews/archive/a0-gate-legacy.md، والمصدر الحالي دليل مطابق للتقييم الفعلي.",
+      "أضيفت ثلاثة أنشطة مصدرية مستقلة T01–T03 بدل ربط مهمات مركبة بأسئلة اختيار لا تمثلها.",
+      "أصل الصوت ومقطعه وvoice-02 وسياسة التفريغ محفوظة؛ لم يُسمع أو يُعَد توليده أو يُعتمد سمعيًا من جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A0-GATE-Q01",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q01"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "قراءة",
+        "أصوات"
+      ],
+      "prompt": "أي وصف كتابي يقارب نطق النمط في الكلمة؟",
+      "options": [
+        "ei في mein قريب من «آي»",
+        "ie في vier مثل ei",
+        "sch في Schule مثل z"
+      ],
+      "answerIndex": 0,
+      "explanation": "ei في mein قريب من «آي»؛ ie في vier صوت i طويل، وsch في Schule قريب من «ش» لا z. هذه تقريبات كتابية للتعرّف، وليست اختبار نطق أو استماع."
+    },
+    {
+      "id": "DL-A0-GATE-Q02",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q02"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Ich ___ Lina.",
+      "options": [
+        "heißt",
+        "heiße",
+        "heißen"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع Ich نستخدم heiße."
+    },
+    {
+      "id": "DL-A0-GATE-Q03",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q03"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ما التحية المناسبة صباحًا؟",
+      "options": [
+        "Gute Nacht",
+        "Guten Morgen",
+        "Tschüss"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guten Morgen تحية الصباح."
+    },
+    {
+      "id": "DL-A0-GATE-Q04",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q04"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا يعني السؤال «Wie heißt du?»؟",
+      "options": [
+        "أين تسكن؟",
+        "كم عمرك؟",
+        "ما اسمك؟"
+      ],
+      "answerIndex": 2,
+      "explanation": "السؤال غير الرسمي يسأل عن الاسم."
+    },
+    {
+      "id": "DL-A0-GATE-Q05",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q05"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "14 بالألمانية هي:",
+      "options": [
+        "vierzehn",
+        "fünfzehn",
+        "vier"
+      ],
+      "answerIndex": 0,
+      "explanation": "vierzehn تعني 14؛ fünfzehn تعني 15 وvier تعني 4. كلها ضمن الأساس 0–20."
+    },
+    {
+      "id": "DL-A0-GATE-Q06",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q06"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Du ___ hier.",
+      "options": [
+        "bin",
+        "bist",
+        "sind"
+      ],
+      "answerIndex": 1,
+      "explanation": "تصريف sein مع du هو bist."
+    },
+    {
+      "id": "DL-A0-GATE-Q07",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q07"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ Zeit.",
+      "options": [
+        "hat",
+        "hast",
+        "haben"
+      ],
+      "answerIndex": 2,
+      "explanation": "تصريف haben مع wir هو haben."
+    },
+    {
+      "id": "DL-A0-GATE-Q08",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q08"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "أي سؤال عن الاسم يستخدم المخاطبة الرسمية؟",
+      "options": [
+        "Wie heißt du?",
+        "Wie heißen Sie?",
+        "Wo wohnst du?"
+      ],
+      "answerIndex": 1,
+      "explanation": "Wie heißen Sie? سؤال الاسم الرسمي. Wie heißt du? غير رسمي، وWo wohnst du? يسأل عن السكن بصيغة du."
+    },
+    {
+      "id": "DL-A0-GATE-Q09",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q09"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "لم تفهم كلمة؛ أي عبارة تقول؟",
+      "options": [
+        "Ich verstehe nicht.",
+        "Guten Abend.",
+        "Ich heiße bitte."
+      ],
+      "answerIndex": 0,
+      "explanation": "Ich verstehe nicht تعني لا أفهم."
+    },
+    {
+      "id": "DL-A0-GATE-Q10",
+      "sourceTaskIds": [
+        "DL-A0-GATE-Q10"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "skillTags": [
+        "فهم اللغة",
+        "اختيار محدد"
+      ],
+      "prompt": "ابدأ بـIch: أي ترتيب صحيح للجملة الخبرية «لدي سؤال»؟",
+      "options": [
+        "Eine Frage Ich habe.",
+        "Ich eine Frage habe.",
+        "Ich habe eine Frage."
+      ],
+      "answerIndex": 2,
+      "explanation": "Ich habe eine Frage. يأتي الفعل المصرف في الموقع الثاني في هذا النمط. توجد جمل أخرى صحيحة مثل Eine Frage habe ich. لكنها ليست من الخيارات ولا تبدأ بـIch."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A0-GATE-P01",
+      "sourceTaskIds": [
+        "DL-A0-GATE-T01"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "استخدم شخصية خيالية باسم تختاره وعمر 18 أو 20، وبلد الأصل Tunesien والسكن Nabeul. اكتب مسودة من أربع جمل تقدم هذه البيانات، ثم اكتب السؤالين Wie heißt du? وWie alt bist du? وجواب كل منهما بالبيانات نفسها. اقرأ التعريف والسؤالين وجوابيهما بصوت مرتفع؛ يمكنك أداء الدورين وحدك، ولا يلزم كشف بيانات حقيقية أو تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "كتبت أربع جمل للتعريف ثم سؤالين وجوابيهما، وقرأت الجميع بصوت مرتفع.",
+        "meaningClarity": "الاسم والعمر والأصل والسكن واضحة ومتسقة بين التعريف والإجابات، دون اشتراط مستمع آخر.",
+        "targetSkill": "أستخدم Ich heiße وIch bin … Jahre alt وIch komme aus Tunesien وIch wohne in Nabeul، وأجيب عن السؤالين بما يناسبهما."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 120,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-GATE-P02",
+      "sourceTaskIds": [
+        "DL-A0-GATE-T02"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "prompt": "في موقف صفّي متخيّل قرأت الجملة Der Unterricht beginnt um neun Uhr. ولم تفهمها. اكتب بالألمانية ثلاث عبارات: التصريح بعدم الفهم، وطلب إعادة الجملة بأدب بصيغة Sie، وطلب البطء مثل Langsamer, bitte. ثم اقرأ العبارات بصوت مرتفع بنفسك. لا يُطلب ترجمة الجملة أو سماع تسجيل أو إرفاق تسجيل صوتي.",
+      "criteria": {
+        "taskCompletion": "كتبت العبارات الثلاث وقرأتها: عدم الفهم، إعادة الجملة، والبطء؛ لا أكتفي بطلب الإعادة وحده.",
+        "meaningClarity": "يفهم من النص أنني لم أفهم الجملة وأحتاج إلى إعادتها ببطء.",
+        "targetSkill": "أستعمل Ich verstehe nicht. وطلب إعادة رسميًا مهذبًا مثل Können Sie das bitte wiederholen? مع طلب مستقل للبطء."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 50,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A0-GATE-P03",
+      "sourceTaskIds": [
+        "DL-A0-GATE-T03"
+      ],
+      "objectiveIds": [
+        "DL-A0-GATE-G01"
+      ],
+      "modality": [
+        "reading",
+        "writing"
+      ],
+      "prompt": "اقرأ بطاقة خيالية: Name (الاسم): Lina · Alter (العمر): 18 Jahre · Herkunft (بلد الأصل): Tunesien. اكتب بصوت Lina ثلاث جمل ألمانية كاملة تبدأ بـIch، واحدة للاسم وأخرى للعمر وأخرى لبلد الأصل. احفظ البيانات نفسها دون استبدالها ببياناتك. هذه مهمة كتابة ولا تتطلب قراءة بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "استخرجت الحقول الثلاثة وكتبت ثلاث جمل كاملة باسم الشخصية، لا قائمة حقول أو أرقام وحدها.",
+        "meaningClarity": "احتفظت بـLina و18 وTunesien دون خلط أو تغيير.",
+        "targetSkill": "أكتب جملًا بـIch heiße وIch bin … Jahre alt وIch komme aus …، مع ترتيب الكلمات المناسب."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 60,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

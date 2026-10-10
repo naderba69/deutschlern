@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a2-08-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A2-08-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR26: Vorgangspassiv im Präsens، مع المطابقة والحالة الرفعية بعد التحويل؛ تمييز وصف الحالة بـsein والمستقبل بـwerden+مصدر.",
+      "Q06: تصحيح الاقتباس إلى Ein neuer Platz؛ Q10 مقيد بصيغة الحدث لا الحالة. Q04→T07 وQ10→T04 وP02→T03؛ الخيارات الثلاثون والمفاتيح و80% محفوظة.",
+      "P01 ثلاث جمل خيالية مع الجهر وP02 تحويل ثلاث جمل كتابة فقط؛ نماذج ومعايير مطابقة. تنبيه مكتوب لتعداد الضمائر الملتبس في MODEL، دون تغيير تسجيل أو تفريغ أو اعتماد جديد."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A2-08-Q01",
+      "sourceTaskIds": [
+        "DL-A2-08-T01"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "مطابقة werden",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Die Nachrichten ___ um acht Uhr gesendet.",
+      "options": [
+        "werden",
+        "wird",
+        "werdet"
+      ],
+      "answerIndex": 0,
+      "explanation": "الأخبار جمع، لذلك نستخدم werden؛ ويأتي Partizip II gesendet في نهاية الجملة."
+    },
+    {
+      "id": "DL-A2-08-Q02",
+      "sourceTaskIds": [
+        "DL-A2-08-T02"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما صيغة Partizip II للفعل **veröffentlichen**؟",
+      "options": [
+        "veröffentlichte",
+        "veröffentlicht",
+        "veröffentlichen"
+      ],
+      "answerIndex": 1,
+      "explanation": "صيغة Partizip II هي veröffentlicht، وتأتي في نهاية جملة المبني للمجهول."
+    },
+    {
+      "id": "DL-A2-08-Q03",
+      "sourceTaskIds": [
+        "DL-A2-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "المبني للمجهول",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة في المبني للمجهول صحيحة؟",
+      "options": [
+        "Der Bericht wird veröffentlichen.",
+        "Der Bericht veröffentlicht werden.",
+        "Der Bericht wird veröffentlicht."
+      ],
+      "answerIndex": 2,
+      "explanation": "المبني للمجهول في المضارع: werden مصرّفًا + Partizip II."
+    },
+    {
+      "id": "DL-A2-08-Q04",
+      "sourceTaskIds": [
+        "DL-A2-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "وظيفة المبني للمجهول",
+        "اختيار محدد"
+      ],
+      "prompt": "لماذا يستخدم الخبر المبني للمجهول أحيانًا؟",
+      "options": [
+        "لأن الجملة تتحدث عن المستقبل فقط.",
+        "لأن المهم هو الحدث أو متلقي الفعل، لا الفاعل.",
+        "لأن الفاعل يجب أن يكون ich."
+      ],
+      "answerIndex": 1,
+      "explanation": "يبرز الحدث بدل منفذه، وقد يكون المنفذ معروفًا لكنه غير مذكور أو ليس محور الخبر؛ لا تعني الصيغة أن الخبر صحيح تلقائيًا."
+    },
+    {
+      "id": "DL-A2-08-Q05",
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "متى تُنظّم جلسة مجلس المدينة؟",
+      "options": [
+        "يوم الأربعاء.",
+        "يوم السبت.",
+        "في الخريف."
+      ],
+      "answerIndex": 0,
+      "explanation": "النص يقول am Mittwoch."
+    },
+    {
+      "id": "DL-A2-08-Q06",
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "ماذا يُخطط له في وسط المدينة؟",
+      "options": [
+        "محطة قطار.",
+        "مهرجان رياضي.",
+        "ساحة جديدة."
+      ],
+      "answerIndex": 2,
+      "explanation": "يقول النص: Ein neuer Platz im Zentrum wird geplant. الاسم Ein neuer Platz في الرفع بعد التحويل؛ التخطيط لا يعني أن الساحة بُنيت."
+    },
+    {
+      "id": "DL-A2-08-Q07",
+      "sourceTaskIds": [
+        "DL-A2-08-T05"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم القراءة",
+        "اختيار محدد"
+      ],
+      "prompt": "أين تُنقل جلسة المجلس؟",
+      "options": [
+        "في الإذاعة فقط.",
+        "في الإنترنت.",
+        "في المسرح."
+      ],
+      "answerIndex": 1,
+      "explanation": "Die Sitzung wird im Internet übertragen."
+    },
+    {
+      "id": "DL-A2-08-Q08",
+      "sourceTaskIds": [
+        "DL-A2-08-T06"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "فهم خبر قصير",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Zwei Haltestellen werden gebaut**، ما عدد محطات التوقف المذكورة؟",
+      "options": [
+        "محطتان.",
+        "محطة واحدة.",
+        "أربع محطات."
+      ],
+      "answerIndex": 0,
+      "explanation": "zwei Haltestellen تعني محطتين. الصيغة مضارع مبني للمجهول؛ لا نستنتج المستقبل من werden وحدها."
+    },
+    {
+      "id": "DL-A2-08-Q09",
+      "sourceTaskIds": [
+        "DL-A2-08-T07"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "في **Die Informationen werden morgen veröffentlicht**، ما الفعل الذي جاء في نهاية الجملة؟",
+      "options": [
+        "werden",
+        "morgen",
+        "veröffentlicht"
+      ],
+      "answerIndex": 2,
+      "explanation": "Partizip II veröffentlicht يأتي في النهاية."
+    },
+    {
+      "id": "DL-A2-08-Q10",
+      "sourceTaskIds": [
+        "DL-A2-08-T04"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "skillTags": [
+        "تصريف المبني للمجهول",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل بصيغة الحدث في المضارع **Vorgangspassiv im Präsens**، لا وصف الحالة: Am Freitag ___ eine Veranstaltung ___. (organisieren)",
+      "options": [
+        "werden … organisieren",
+        "wird … organisiert",
+        "ist … organisiert"
+      ],
+      "answerIndex": 1,
+      "explanation": "eine Veranstaltung مفرد فتأخذ wird، وPartizip II هو organisiert. ist … organisiert قد يصف الحالة، لكنه ليس صيغة الحدث المطلوبة."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A2-08-P01",
+      "sourceTaskIds": [
+        "DL-A2-08-T08"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "اكتب ثلاث جمل لخبر محلي خيالي: الجملة1 تنظيم جلسة يوم الأربعاء؛ الجملة2 الإجابة عن الأسئلة؛ الجملة3 نشر المعلومات في اليوم التالي على صفحة المدينة. استعمل Vorgangspassiv im Präsens مع werden وPartizip II في الجمل الثلاث، وراعِ المفرد والجمع، ثم اقرأ الجميع بصوت مرتفع. لا تتحدث عن حدث حقيقي أو تنشر الخبر، ولا شريك أو تسجيل مطلوب.",
+      "criteria": {
+        "taskCompletion": "ثلاث جمل عن تنظيم الجلسة الأربعاء والإجابة عن الأسئلة ونشر المعلومات في اليوم التالي على صفحة المدينة؛ قرأت الجميع جهرًا.",
+        "meaningClarity": "الحدث واليوم ووسيلة النشر واضحة وفق المعطيات الخيالية؛ لا ادعاء نشر خبر حقيقي أو تحديد منفذ غير مذكور.",
+        "targetSkill": "werden بحسب الاسم: wird مع Sitzung وwerden مع Fragen/Informationen، وPartizip II في نهاية كل جملة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 130,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A2-08-P02",
+      "sourceTaskIds": [
+        "DL-A2-08-T03"
+      ],
+      "objectiveIds": [
+        "DL-A2-08-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "أعد كتابة الجمل1–3 من تمرين3 كاملة في Vorgangspassiv im Präsens، كتابة فقط: نشر التقرير، وبث الأخبار، ودعوة السكان. ابدأ بالأسماء المعطاة Der Bericht وDie Nachrichten وDie Einwohner، واحفظ التعريف والعدد والحدث، واحذف منفذ الفعل دون إضافة von. اكتب ثلاث جمل تامة، لا الفراغات وحدها؛ لا جهر أو تسجيل أو شريك مطلوب.",
+      "criteria": {
+        "taskCompletion": "ثلاث جمل تامة محولة من البنود1–3، كتابة فقط، عن التقرير والأخبار والسكان، دون ذكر المنفذ.",
+        "meaningClarity": "التعريف والعدد والحدث محفوظة؛ Der Bericht في الرفع بدل den Bericht، ولا تبديل بين الأخبار والتقرير أو السكان.",
+        "targetSkill": "wird veröffentlicht وwerden gesendet وwerden eingeladen، مع Partizip II في نهاية كل جملة لا المصدر."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    }
+  ]
+}

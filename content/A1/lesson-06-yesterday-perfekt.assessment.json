@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "assessment": {
+    "status": "ready",
+    "version": "a1-06-v2",
+    "minimumScore": 80,
+    "minimumItems": 10,
+    "objectiveIds": [
+      "DL-A1-06-G01"
+    ],
+    "goalCriteriaVerified": true,
+    "performanceEvidenceRequired": true,
+    "performanceEvidenceImplemented": true,
+    "reviewNotes": [
+      "CR12: مراجعة نصية فردية بالمراجع في data/reviews/a1-06-review.json؛ ليست شهادة لغة أو نطق.",
+      "حُدد فاعل T03.3 بدل sie الملتبسة، وصُحح ربط Q08 إلى T03. فهارس الإجابات وعتبة80% محفوظة.",
+      "T08/P01 أربع جمل كتابية مع توزيع haben/sein؛ T04/P02 تحويل ثلاث جمل معطاة من اليوم إلى أمس ثم قراءتها، بأدلة ذاتية لا تصحيح آلي.",
+      "القراءة والاستماع موجودان ومحفوظان: أصلان/مقطعان دون استماع أو اعتماد جديد. التقييم لا يعتمد على الصوت."
+    ]
+  },
+  "quiz": [
+    {
+      "id": "DL-A1-06-Q01",
+      "sourceTaskIds": [
+        "DL-A1-06-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Perfekt: المساعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Gestern ___ ich Deutsch gelernt.",
+      "options": [
+        "bin",
+        "habe",
+        "hat"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع lernen نستخدم haben: Ich habe gelernt."
+    },
+    {
+      "id": "DL-A1-06-Q02",
+      "sourceTaskIds": [
+        "DL-A1-06-T01"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Perfekt: المساعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir ___ nach Tunis gefahren.",
+      "options": [
+        "haben",
+        "sind",
+        "seid"
+      ],
+      "answerIndex": 1,
+      "explanation": "fahren بمعنى الانتقال إلى مكان يأخذ sein هنا: Wir sind gefahren."
+    },
+    {
+      "id": "DL-A1-06-Q03",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما Partizip II للفعل lernen؟",
+      "options": [
+        "gelernet",
+        "gelernt",
+        "gelernte"
+      ],
+      "answerIndex": 1,
+      "explanation": "Partizip II هو gelernt."
+    },
+    {
+      "id": "DL-A1-06-Q04",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما Partizip II للفعل gehen؟",
+      "options": [
+        "gegeht",
+        "gegangen",
+        "gegehtet"
+      ],
+      "answerIndex": 1,
+      "explanation": "الفعل غير المنتظم gehen يصبح gegangen."
+    },
+    {
+      "id": "DL-A1-06-Q05",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "ترتيب Perfekt",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة ترتيبها صحيح؟",
+      "options": [
+        "Gestern habe ich Deutsch gelernt.",
+        "Gestern ich habe gelernt Deutsch.",
+        "Gestern gelernt ich habe Deutsch."
+      ],
+      "answerIndex": 0,
+      "explanation": "يأتي المساعد المصرف ثانيًا، وPartizip II في نهاية الجملة."
+    },
+    {
+      "id": "DL-A1-06-Q06",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "إكمال الجملة",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Wir haben Musik ___.",
+      "options": [
+        "gehört",
+        "hören",
+        "gehören"
+      ],
+      "answerIndex": 0,
+      "explanation": "Partizip II للفعل hören هو gehört."
+    },
+    {
+      "id": "DL-A1-06-Q07",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "اختيار المساعد",
+        "اختيار محدد"
+      ],
+      "prompt": "أكمل: Rania ___ zu ihrer Freundin gefahren.",
+      "options": [
+        "hat",
+        "ist",
+        "haben"
+      ],
+      "answerIndex": 1,
+      "explanation": "مع fahren للانتقال نستخدم ist هنا."
+    },
+    {
+      "id": "DL-A1-06-Q08",
+      "sourceTaskIds": [
+        "DL-A1-06-T03"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "الجمل الصحيحة",
+        "اختيار محدد"
+      ],
+      "prompt": "اختر Partizip II الصحيح: Ich habe einen Film ___.",
+      "options": [
+        "gesehen",
+        "gesieht",
+        "sehen"
+      ],
+      "answerIndex": 0,
+      "explanation": "Partizip II للفعل sehen هو gesehen."
+    },
+    {
+      "id": "DL-A1-06-Q09",
+      "sourceTaskIds": [
+        "DL-A1-06-T02"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "Partizip II",
+        "اختيار محدد"
+      ],
+      "prompt": "ما Partizip II للفعل fahren؟",
+      "options": [
+        "gefahrt",
+        "gefahren",
+        "gefahrtet"
+      ],
+      "answerIndex": 1,
+      "explanation": "الفعل fahren يصبح gefahren."
+    },
+    {
+      "id": "DL-A1-06-Q10",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "skillTags": [
+        "ترتيب Perfekt",
+        "اختيار محدد"
+      ],
+      "prompt": "أي جملة تقول «ذهبت أمس بوسيلة نقل إلى مدينة تونس» بالنمط المدروس؟",
+      "options": [
+        "Gestern bin ich nach Tunis gefahren.",
+        "Gestern habe ich nach Tunis fahren.",
+        "Gestern ich bin gefahren nach Tunis."
+      ],
+      "answerIndex": 0,
+      "explanation": "Gestern bin ich nach Tunis gefahren: bin ثانيًا وgefahren في النهاية في الجملة الخبرية هنا؛ Tunis مدينة تونس لا اسم البلد Tunesien."
+    }
+  ],
+  "performanceTasks": [
+    {
+      "id": "DL-A1-06-P01",
+      "sourceTaskIds": [
+        "DL-A1-06-T08"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "modality": [
+        "writing"
+      ],
+      "prompt": "اكتب أربع جمل كاملة في Perfekt عن أمس أو عطلة أسبوع خيالية، بأربعة أفعال مختلفة من الدرس. استعمل gestern أوam Wochenende، وفعلين على الأقل مع haben وفعلًا واحدًا على الأقل مع sein؛ اختر للجملة الرابعة مساعدًا مناسبًا أيضًا. هذه مهمة كتابة فقط، ولا يلزم مشاركة أحداث شخصية حقيقية أو القراءة بصوت مرتفع.",
+      "criteria": {
+        "taskCompletion": "كتبت أربع جمل بأربعة أفعال مختلفة، مع gestern أوam Wochenende، وفعلين على الأقل مع haben وفعل واحد على الأقل مع sein.",
+        "meaningClarity": "تصف الجمل أحداثًا ماضية مفهومة ضمن اليوم أو عطلة الأسبوع المختارة، دون تناقض في الإشارات الزمنية.",
+        "targetSkill": "أصرف المساعد بحسب الفاعل، وأختاره وفق استعمال الفعل المدروس، وأضع Partizip II في النهاية في الجمل البسيطة."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": false,
+        "audioRequired": false
+      }
+    },
+    {
+      "id": "DL-A1-06-P02",
+      "sourceTaskIds": [
+        "DL-A1-06-T04"
+      ],
+      "objectiveIds": [
+        "DL-A1-06-G01"
+      ],
+      "modality": [
+        "writing",
+        "speaking"
+      ],
+      "prompt": "حوّل الجمل الثلاث المعطاة إلى Perfekt عن أمس، محافظًا على الفاعل ich والنشاط والوجهة: Heute lerne ich Deutsch. Heute höre ich Musik. Heute fahre ich nach Tunis. ابدأ كل جواب بـGestern. اكتب جمل الماضي الثلاث ثم اقرأها بصوت مرتفع بنفسك؛ لا يلزم شريك أو تسجيل صوتك.",
+      "criteria": {
+        "taskCompletion": "حوّلت الجمل الثلاث كلها من Heute إلى Gestern، وكتبت الأجوبة وقرأتها بصوت مرتفع.",
+        "meaningClarity": "أحافظ على تعلم الألمانية وسماع الموسيقى والذهاب إلى مدينة تونس، وعلى الفاعل ich، دون إضافة أحداث أو تغيير الوجهة.",
+        "targetSkill": "أستخدم habe … gelernt وhabe … gehört وbin … gefahren، مع المساعد ثانيًا وPartizip II في النهاية."
+      },
+      "evaluationStatus": "ready",
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 90,
+        "speakAloud": true,
+        "audioRequired": false
+      }
+    }
+  ]
+}

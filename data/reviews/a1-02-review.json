@@ -1,0 +1,1096 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "a1-02-work-family",
+  "reviewDate": "2026-10-07",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "a1-02-v2",
+  "unitCount": 133,
+  "exerciseSubItemCount": 35,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "G",
+      "citation": "[Goethe A1 — Kapitel4/6](https://lernen.goethe.de/deutschonline/A1/PDF/DE/deutschonline_Redemittel_und_Grammatik_1-18.pdf)",
+      "scope": "قرئ الجزء 1 في هذه الدفعة: haben+Akkusativ، المهن بلا أداة، والعمل بصفة/مكان و Student/Schülerin. لا كل PDF. لم نعتمد الصيغ المستخرجة du fahrst / Wann fährt du? أو oft=70% كتعريف ثابت؛ هذه خارج الاستعمال هنا."
+    },
+    {
+      "id": "A",
+      "citation": "[Netzverb — arbeiten/Präsens](https://www.verbformen.com/conjugation/indikativ/praesens/arbeiten.htm)",
+      "scope": "الجزء 0: arbeite/arbeitest/arbeitet/arbeiten/arbeitet/arbeiten؛ e بعد جذر arbeit-. لا استماع إلى الصوت."
+    },
+    {
+      "id": "P",
+      "citation": "[Lingolia — Possessivartikel](https://deutsch.lingolia.com/de/grammatik/pronomen/possessivpronomen)",
+      "scope": "الجزء 0: أداة الملكية قبل الاسم تختلف عن الضمير المستقل، وتصريفها يتبع الحالة والجنس والعدد. Nominativ mein/meine مقابل Akkusativmeinen للمذكر؛ لم ننقل بقية الجداول للمتعلم."
+    },
+    {
+      "id": "E",
+      "citation": "[Duden — Eltern](https://www.duden.de/rechtschreibung/Eltern)",
+      "scope": "الصفحة كاملة: Eltern جمع في هذا المدخل، وتشمل الوالدية القانونية/الرعاية، لا قصرها على البيولوجية."
+    },
+    {
+      "id": "S",
+      "citation": "[Duden — Geschwister](https://www.duden.de/rechtschreibung/Geschwister)",
+      "scope": "الصفحة كاملة: يشمل الإخوة والأخوات. مفرد dasGeschwister موجود متخصصًا/سويسريًا، فلا نعمم نفي المفرد؛ الدرس يستعمل الجمع المعتاد."
+    },
+    {
+      "id": "TO",
+      "citation": "[Duden — Tochter](https://www.duden.de/rechtschreibung/Tochter)",
+      "scope": "الصفحة كاملة؛ dieTochter وجمع Töchter في معنى القرابة. المعاني المجازية/القديمة ليست هدفًا."
+    },
+    {
+      "id": "SO",
+      "citation": "[Duden — Sohn](https://www.duden.de/rechtschreibung/Sohn)",
+      "scope": "الصفحة كاملة؛ derSohn وجمع Söhne، لا كل دلالات الكلمة."
+    },
+    {
+      "id": "AR",
+      "citation": "[Duden — Ärztin](https://www.duden.de/rechtschreibung/Aerztin)",
+      "scope": "الصفحة كاملة؛ الصيغة المؤنثةÄrztin/Ärztinnen صحيحة. لم نستخدم وسم B1 كمنع تعليمها في A1."
+    },
+    {
+      "id": "KO",
+      "citation": "[Duden — Köchin](https://www.duden.de/rechtschreibung/Koechin)",
+      "scope": "الصفحة كاملة؛ الصيغة Köchin بـöوجمع Köchinnen. لا استماع لنطق الصفحة."
+    }
+  ],
+  "sourceHashes": {
+    "content/A1/lesson-02-work-family.md": "7d0e0c23694a47c628805cf7bc3257890c4e9b053df085e37e85594429455b98",
+    "content/A1/lesson-02-work-family.assessment.json": "ccf06d5372215ac32dd6b553ae987d980c93faeb1bb2547a2fdac3ace0d9a0ac"
+  },
+  "audioSnapshotHashes": {
+    "DL-A1-02-AUD-READ-01": "34ec4aafa47e9ff45fab9e30684b024ce680711c5e17c5c8a7f9292a59addddd",
+    "DL-A1-02-AUD-LST-01": "77dd9a4d6b4f0f023ea39c6429b7b553d9a818d9fdf0a581227592c9d69961ee"
+  },
+  "units": [
+    {
+      "id": "scope",
+      "decision": "clarified",
+      "finding": "هدف وصف الأسرة والمهن محفوظ. 30 دقيقة تقدير مرن مع خيار جلستين؛ شخصيات خيالية بلا إفصاح شخصي. الأصلان مونولوجان وليس في الدرس حوار مسجل؛ نموذج المقابلة الجديد كتابي.",
+      "sourceIds": []
+    },
+    {
+      "id": "profession-rule",
+      "decision": "clarified",
+      "finding": "اسم المهنة يأتي غالبًا بلا أداة في Ich bin Lehrerin/Ich arbeite als Lehrerin؛ ليست قاعدة حذف أداة كل اسم يأتي بعد sein. Student حالة دراسية لا وظيفة مأجورة بالضرورة.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "possession-rule",
+      "decision": "corrected",
+      "finding": "الجدول قُيد بالرفع Nominativ، لا بالجنس والعدد وحدهما في كل سياق. mein للمتكلم و dein للمخاطب du؛ النهاية لا تتبع جنس المتكلم.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "case-contrast",
+      "decision": "clarified",
+      "finding": "Ich habe einen Bruder / eine Schwester و keine Geschwister؛ haben يتطلب Akkusativ هنا. Ich sehe meinen Bruder مقابل Das ist mein Bruder يوضح عدم تعميم mein للمذكر. لا تكليف بجميع الحالات.",
+      "sourceIds": [
+        "P",
+        "G"
+      ]
+    },
+    {
+      "id": "table-header",
+      "decision": "clarified",
+      "finding": "الجدول القديم كان يعرض فعليًا كـ tbody بلا رؤوس؛ لم يكن مفقودًا. أضيفت رؤوس الضمير/arbeiten و thead، تحسين تنظيم ودلالة جدول لا إصلاح انهيار renderer.",
+      "sourceIds": []
+    },
+    {
+      "id": "audio-boundary",
+      "decision": "corrected",
+      "finding": "أزيل ادعاء تأجيل MP3. المقاطع محفوظة والنص ظاهر بسياسة offer؛ القراءة بديل للفهم لا دليل استماع. لا أسئلة تقييم محسوبة تعتمد على الصوت ولا اعتماد صوتي جديد.",
+      "sourceIds": []
+    },
+    {
+      "id": "reference-links",
+      "decision": "clarified",
+      "finding": "Was machen deine Eltern beruflich?صحيح لكنه عن الوالدين؛ احتفظنا به شرحًا وفصلناه عن المقابلة الحالية عن مهنة الأب ومكانه. Q09→T04 أقرب لنمط sein+مهنة من الملف المفتوح T08، تحسين ربط لا تغيير مفتاح.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-01",
+      "decision": "retained",
+      "finding": "die Familie / die Familien — الأسرة؛ الاسم مفرد مؤنث، لا يفرض فعل الجمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-02",
+      "decision": "retained",
+      "finding": "der Vater / die Väter — الأب؛ Umlaut في الجمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-03",
+      "decision": "retained",
+      "finding": "die Mutter / die Mütter — الأم؛ جمع القرابة لا Muttern لمعنى الصامولة.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-04",
+      "decision": "retained",
+      "finding": "der Bruder / die Brüder — الأخ؛ جمع صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-05",
+      "decision": "retained",
+      "finding": "die Schwester / die Schwestern — الأخت؛ جمع-en.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-06",
+      "decision": "retained",
+      "finding": "der Sohn / die Söhne — الابن؛ جمع بـö وe.",
+      "sourceIds": [
+        "SO"
+      ]
+    },
+    {
+      "id": "family-07",
+      "decision": "retained",
+      "finding": "die Tochter / die Töchter — الابنة؛ جمع بـö بلا en.",
+      "sourceIds": [
+        "TO"
+      ]
+    },
+    {
+      "id": "family-08",
+      "decision": "retained",
+      "finding": "das Kind / die Kinder — الطفل أو الابن/الابنة بحسب السياق؛ جنس نحوي محايد.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-09",
+      "decision": "retained",
+      "finding": "die Eltern — الوالدان؛ لفظ جمع هنا وليس أسرة كاملة.",
+      "sourceIds": [
+        "E"
+      ]
+    },
+    {
+      "id": "family-10",
+      "decision": "retained",
+      "finding": "der Großvater / die Großväter — الجد؛ الجمع على Väter.",
+      "sourceIds": []
+    },
+    {
+      "id": "family-11",
+      "decision": "retained",
+      "finding": "die Großmutter / die Großmütter — الجدة؛ الجمع على Mütter.",
+      "sourceIds": []
+    },
+    {
+      "id": "profession-01",
+      "decision": "retained",
+      "finding": "der Lehrer/die Lehrerin؛ Mein Onkel ist Lehrer. صحيح؛ Onkel قد يكون عمًا أو خالًا.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "profession-02",
+      "decision": "retained",
+      "finding": "der Arzt/die Ärztin؛ Meine Tante ist Ärztin. صحيح؛ لاحظ Ä؛ و Tante عمة/خالة.",
+      "sourceIds": [
+        "AR"
+      ]
+    },
+    {
+      "id": "profession-03",
+      "decision": "retained",
+      "finding": "der Koch/die Köchin؛ Er arbeitet als Koch. المهنة بعد als بلا أداة هنا.",
+      "sourceIds": [
+        "KO",
+        "G"
+      ]
+    },
+    {
+      "id": "profession-04",
+      "decision": "retained",
+      "finding": "der Verkäufer/die Verkäuferin؛ Sie arbeitet als Verkäuferin. هي المفردة بقرينة arbeitet.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "profession-05",
+      "decision": "retained",
+      "finding": "der Student/die Studentin؛ Mein Bruder ist Student. دراسة جامعية لا مرادف Schüler.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "profession-06",
+      "decision": "retained",
+      "finding": "arbeiten؛ Ich arbeite in einem Café. تصريف ich صحيح؛ المكان نموذج Dativ.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "profession-07",
+      "decision": "retained",
+      "finding": "studieren؛ Sie studiert Medizin. دراسة الطب؛ studiert مع المفرد صحيح.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "profession-08",
+      "decision": "retained",
+      "finding": "heißen؛ Mein Bruder heißt Sami. اسم الشخص Sami لا صلته أو مهنته.",
+      "sourceIds": []
+    },
+    {
+      "id": "possessive-row-01",
+      "decision": "retained",
+      "finding": "der Vater/der Bruder → mein Vater/mein Bruder؛ صحيح في الرفع المحدد الآن.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "possessive-row-02",
+      "decision": "retained",
+      "finding": "die Mutter/die Schwester → meine Mutter/meine Schwester؛ صحيح في الرفع المحدد الآن.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "possessive-row-03",
+      "decision": "retained",
+      "finding": "das Kind → mein Kind؛ صحيح في الرفع المحدد الآن.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "possessive-row-04",
+      "decision": "retained",
+      "finding": "die Eltern جمع → meine Eltern؛ صحيح في الرفع المحدد الآن.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "dein-01",
+      "decision": "retained",
+      "finding": "dein Bruder — أخوك؛ يطابق الجنس النحوي للاسم في الرفع.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "dein-02",
+      "decision": "retained",
+      "finding": "deine Schwester — أختك؛ يطابق الجنس النحوي للاسم في الرفع.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "introduction-01",
+      "decision": "retained",
+      "finding": "Das ist mein Bruder.؛ توافق المفرد والمرجع صحيح.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "introduction-02",
+      "decision": "retained",
+      "finding": "Er heißt Nabil.؛ توافق المفرد والمرجع صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "introduction-03",
+      "decision": "retained",
+      "finding": "Das ist meine Schwester.؛ توافق المفرد والمرجع صحيح.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "introduction-04",
+      "decision": "retained",
+      "finding": "Sie heißt Amel.؛ توافق المفرد والمرجع صحيح، و Sie هنا «هي» في أول الجملة.",
+      "sourceIds": []
+    },
+    {
+      "id": "arbeiten-01",
+      "decision": "retained",
+      "finding": "ich arbeite؛ صيغة صحيحة ضمن جدول التصريف.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "arbeiten-02",
+      "decision": "retained",
+      "finding": "du arbeitest؛ صيغة صحيحة ضمن جدول التصريف.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "arbeiten-03",
+      "decision": "retained",
+      "finding": "er/sie/es arbeitet؛ صيغة صحيحة ضمن جدول التصريف.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "arbeiten-04",
+      "decision": "retained",
+      "finding": "wir arbeiten؛ صيغة صحيحة ضمن جدول التصريف.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "arbeiten-05",
+      "decision": "retained",
+      "finding": "ihr arbeitet؛ صيغة صحيحة ضمن جدول التصريف.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "arbeiten-06",
+      "decision": "retained",
+      "finding": "sie/Sie arbeiten؛ صيغة صحيحة ضمن جدول التصريف.",
+      "sourceIds": [
+        "A"
+      ]
+    },
+    {
+      "id": "studieren-01",
+      "decision": "clarified",
+      "finding": "ich studiere؛ شرح تمهيدي قبل التمرين3، لا جدول لجميع الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "studieren-02",
+      "decision": "clarified",
+      "finding": "du studierst؛ شرح تمهيدي قبل التمرين3، لا جدول لجميع الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "studieren-03",
+      "decision": "clarified",
+      "finding": "er/sie studiert؛ شرح تمهيدي قبل التمرين3، لا جدول لجميع الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "studieren-04",
+      "decision": "clarified",
+      "finding": "wir studieren؛ شرح تمهيدي قبل التمرين3، لا جدول لجميع الضمائر.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-01",
+      "decision": "retained",
+      "finding": "Was bist du von Beruf? — ما مهنتك؟ سؤال/جواب مناسب؛ الرسمية في Sie لا في du، والمهنة غير المكان.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-02",
+      "decision": "retained",
+      "finding": "Was machen Sie beruflich? — ماذا تعمل/تعملين؟ (رسمي) سؤال/جواب مناسب؛ الرسمية في Sie لا في du، والمهنة غير المكان.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-03",
+      "decision": "retained",
+      "finding": "Was ist dein Vater von Beruf? — ما مهنة والدك؟ سؤال/جواب مناسب؛ الرسمية في Sie لا في du، والمهنة غير المكان.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-04",
+      "decision": "retained",
+      "finding": "Wo arbeitet dein Vater? — أين يعمل والدك؟ سؤال/جواب مناسب؛ الرسمية في Sie لا في du، والمهنة غير المكان.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-05",
+      "decision": "retained",
+      "finding": "Hast du Geschwister? — هل لديك إخوة أو أخوات؟ سؤال/جواب مناسب؛ الرسمية في Sie لا في du، والمهنة غير المكان.",
+      "sourceIds": [
+        "G"
+      ]
+    },
+    {
+      "id": "phrase-06",
+      "decision": "retained",
+      "finding": "Ja, ich habe einen Bruder. / Nein, ich habe keine Geschwister. — نعم، لدي أخ. / لا، ليس لدي إخوة أو أخوات. سؤال/جواب مناسب؛ الرسمية في Sie لا في du، والمهنة غير المكان.",
+      "sourceIds": [
+        "S",
+        "G"
+      ]
+    },
+    {
+      "id": "gloss-01",
+      "decision": "clarified",
+      "finding": "der Onkel — العم أو الخال. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-02",
+      "decision": "clarified",
+      "finding": "die Tante — العمة أو الخالة. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-03",
+      "decision": "clarified",
+      "finding": "Geschwister — إخوة و/أو أخوات في هذا الاستعمال؛ لا تعني الذكور فقط. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": [
+        "S"
+      ]
+    },
+    {
+      "id": "gloss-04",
+      "decision": "clarified",
+      "finding": "die Schülerin — تلميذة في المدرسة، وليست بالضرورة طالبة جامعية مثل Studentin. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-05",
+      "decision": "clarified",
+      "finding": "der Mechaniker — الميكانيكي؛ مهنة وردت في نص Youssef. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-06",
+      "decision": "clarified",
+      "finding": "die Werkstatt — الورشة؛ in einer Werkstatt = في ورشة. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-07",
+      "decision": "clarified",
+      "finding": "die Klinik — مؤسسة علاجية/مستشفى في هذا السياق؛ in einer Klinik = في مؤسسة علاجية. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-08",
+      "decision": "clarified",
+      "finding": "die Universität — الجامعة؛ an der Universität = في الجامعة. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-09",
+      "decision": "clarified",
+      "finding": "das Hotel — الفندق؛ in einem Hotel = في فندق. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-10",
+      "decision": "clarified",
+      "finding": "das Café — المقهى؛ in einem Café = في مقهى. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-11",
+      "decision": "clarified",
+      "finding": "die Schule — المدرسة؛ in einer Schule = في مدرسة. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-12",
+      "decision": "clarified",
+      "finding": "Medizin studieren — يدرس الطب في الجامعة؛ Student حالة دراسية وليست وظيفة مأجورة بالضرورة. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-13",
+      "decision": "clarified",
+      "finding": "nicht sehr groß — ليست كبيرة جدًا. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-14",
+      "decision": "clarified",
+      "finding": "noch — ما زالت/لا تزال في noch Schülerin. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-15",
+      "decision": "clarified",
+      "finding": "am Sonntag — يوم الأحد. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-16",
+      "decision": "clarified",
+      "finding": "oft besuchen — يزور كثيرًا/غالبًا؛ wir besuchen unsere Großmutter = نزور جدتنا. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-17",
+      "decision": "clarified",
+      "finding": "Wen …? — من…؟ للسؤال عن الشخص الواقع عليه الفعل، مثل من تزور الأسرة؟ مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "gloss-18",
+      "decision": "clarified",
+      "finding": "ihr Vater / seine Mutter — والدها (Rania) / والدته (Youssef) في أسئلة النصين؛ يحدد السياق الشخص المقصود. مساعدة سياقية من المساعد، لا توثيق عربي معجمي منفصل لكل الكلمات.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-01",
+      "decision": "text-only-reviewed",
+      "finding": "Ich heiße Rania und wohne in Nabeul. — Rania تسكن في Nabeul؛ الفاعل مشترك بين heiße وwohne.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-02",
+      "decision": "text-only-reviewed",
+      "finding": "Meine Familie ist nicht sehr groß. — Familie مفرد؛ النص لا يحدد عدد أفراد الأسرة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-03",
+      "decision": "text-only-reviewed",
+      "finding": "Mein Vater ist Koch und arbeitet in einem Hotel. — الأب طاهٍ ويعمل بفندق؛ المهنة ومكان العمل معلومتان مختلفتان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-04",
+      "decision": "text-only-reviewed",
+      "finding": "Meine Mutter ist Lehrerin. — الأم معلمة، بخلاف أم Youssef الطبيبة في النص الآخر.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-05",
+      "decision": "text-only-reviewed",
+      "finding": "Ich habe einen Bruder und eine Schwester. — einen Bruder وeine Schwester بعد habe؛ صيغتا Akkusativ صحيحتان.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-06",
+      "decision": "text-only-reviewed",
+      "finding": "Mein Bruder Sami studiert in Tunis. — Sami يدرس في Tunis؛ الدراسة لا تنفي وجود عمل غير مذكور.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-07",
+      "decision": "text-only-reviewed",
+      "finding": "Meine Schwester Amel ist noch Schülerin. — Amel ما زالت تلميذة؛ لا يصفها النص بأنها Studentin.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-08",
+      "decision": "text-only-reviewed",
+      "finding": "Am Sonntag besuchen wir oft unsere Großmutter. — Am Sonntag جزء واحد قبل الفعل besuchen؛ oft لا تعني كل أحد بالضرورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-01",
+      "decision": "text-only-reviewed",
+      "finding": "Guten Tag! — تحية صحيحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-02",
+      "decision": "text-only-reviewed",
+      "finding": "Ich bin Youssef. — Ich bin Youssef تعريف بالاسم صحيح.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-03",
+      "decision": "text-only-reviewed",
+      "finding": "Mein Vater arbeitet in einer Werkstatt. — الأب يعمل في ورشة؛ in einer Werkstatt صيغة مكان صحيحة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-04",
+      "decision": "text-only-reviewed",
+      "finding": "Er ist Mechaniker. — الأب ميكانيكي؛ Er يعود عليه.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-05",
+      "decision": "text-only-reviewed",
+      "finding": "Meine Mutter ist Ärztin und arbeitet in einer Klinik. — الأم طبيبة وتعمل في مؤسسة علاجية؛ العطف يشترك في الفاعل.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-06",
+      "decision": "text-only-reviewed",
+      "finding": "Meine Schwester heißt Leila. — الأخت اسمها Leila.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-07",
+      "decision": "text-only-reviewed",
+      "finding": "Sie studiert an der Universität. — Leila تدرس بالجامعة؛ مرجع Sie هو الأخت لا الأم.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-01",
+      "decision": "clarified",
+      "finding": "Wo wohnt Rania? → Rania wohnt in Nabeul. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-02",
+      "decision": "clarified",
+      "finding": "Was ist ihr Vater von Beruf? → Ihr Vater ist Koch. ihr=والدها،لاالمخاطبةالرسمية فيالسؤال. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-03",
+      "decision": "clarified",
+      "finding": "Wo studiert Sami? → Sami studiert in Tunis. مدينة تونس. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-04",
+      "decision": "clarified",
+      "finding": "Hat Rania eine Schwester? → Ja, Rania hat eine Schwester. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "reading-question-05",
+      "decision": "clarified",
+      "finding": "Wen besucht die Familie oft am Sonntag? → Die Familie besucht am Sonntag oft die Großmutter. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-01",
+      "decision": "clarified",
+      "finding": "Was ist Youssefs Vater von Beruf? → Sein Vater ist Mechaniker. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-02",
+      "decision": "clarified",
+      "finding": "Wo arbeitet seine Mutter? → Seine Mutter arbeitet in einer Klinik. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "listening-question-03",
+      "decision": "clarified",
+      "finding": "Was macht Leila? → Leila studiert an der Universität. أضيف مفتاح مباشر لأسئلة النص المستقلة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-02-T01",
+      "decision": "clarified",
+      "finding": "المعاني والمشتتات الأربعة راجعت؛ الكلمات المختارة تطابق المعاني العربية.",
+      "sourceIds": [],
+      "items": [
+        "die Schwester",
+        "die Eltern",
+        "die Ärztin",
+        "die Tochter"
+      ]
+    },
+    {
+      "id": "DL-A1-02-T02",
+      "decision": "clarified",
+      "finding": "mein/meine في الرفع؛ أوائل الجمل بحرف كبير في المفتاح.",
+      "sourceIds": [
+        "P"
+      ],
+      "items": [
+        "Mein Vater",
+        "Meine Schwester",
+        "Meine Eltern",
+        "Mein Kind"
+      ]
+    },
+    {
+      "id": "DL-A1-02-T03",
+      "decision": "clarified",
+      "finding": "التصاريف الأربعة صحيحة؛ فسرت e في arbeitest/arbeitet، وstudieren مع wir.",
+      "sourceIds": [],
+      "items": [
+        "ich arbeite",
+        "du arbeitest",
+        "Meine Mutter arbeitet",
+        "wir studieren"
+      ]
+    },
+    {
+      "id": "DL-A1-02-T04",
+      "decision": "clarified",
+      "finding": "المفاتيح صحيحة؛ تحديد البداية يوضح النمط المطلوب دون إنكار ترتيبات أخرى.",
+      "sourceIds": [],
+      "items": [
+        "Meine Schwester ist Ärztin.",
+        "Mein Vater arbeitet als Koch.",
+        "Mein Bruder heißt Sami."
+      ]
+    },
+    {
+      "id": "DL-A1-02-T05",
+      "decision": "corrected",
+      "finding": "العنوان القديم ينسب الأسئلة كلها للمهنة رغم وجود مكان العمل والإخوة. صحح العنوان وأضيف بنك الأسئلة.",
+      "sourceIds": [],
+      "items": [
+        "Was bist du von Beruf?",
+        "Wo arbeitet dein Vater?",
+        "Hast du Geschwister?"
+      ]
+    },
+    {
+      "id": "DL-A1-02-T06",
+      "decision": "corrected",
+      "finding": "العبارة القديمة عن العمل في Nabeul لا تنفيها الدراسة في Tunis. أصبحت العبارة عن الدراسة، والحكم مقيد بما يذكره النص.",
+      "sourceIds": [],
+      "items": [
+        "خطأ وفق النص: Rania wohnt in Nabeul.",
+        "صحيح: Ihr Vater ist Koch.",
+        "خطأ وفق النص: Sami studiert in Tunis.",
+        "صحيح: Die Familie besucht oft die Großmutter."
+      ]
+    },
+    {
+      "id": "DL-A1-02-T07",
+      "decision": "clarified",
+      "finding": "مفاتيح أ/ب/أ صحيحة حسب نص Youssef. القراءة بديل فهم كتابي لا اجتياز سمعي.",
+      "sourceIds": [],
+      "items": [
+        "Mechaniker — أ",
+        "in einer Klinik — ب",
+        "studiert — أ"
+      ]
+    },
+    {
+      "id": "DL-A1-02-T08",
+      "decision": "corrected",
+      "finding": "خمس جمل، ثلاثة أفراد، واسم ومهنة لأحدهم؛ نطاق التدريب صار مطابقًا للتقييم، كتابة فقط.",
+      "sourceIds": [],
+      "items": [
+        "Das ist mein Vater.",
+        "Er heißt Ali.",
+        "Er ist Koch.",
+        "Das ist meine Mutter.",
+        "Das ist mein Bruder."
+      ]
+    },
+    {
+      "id": "DL-A1-02-T09",
+      "decision": "corrected",
+      "finding": "ثلاثة أزواج سؤال/جواب وتلخيص بجملتين وقراءة فردية؛ لم يعد المعيار يكتفي بسؤالين أو يسقط التلخيص في البديل الفردي.",
+      "sourceIds": [],
+      "items": [
+        "سؤال الإخوة وجوابه",
+        "سؤال مهنة الأب وجوابه",
+        "سؤال مكان عمل الأب وجوابه",
+        "تلخيص المهنة بـDer Vater",
+        "تلخيص المكان بـEr"
+      ]
+    },
+    {
+      "id": "DL-A1-02-Q01",
+      "decision": "clarified",
+      "finding": "Bruder يعني الأخ؛ الأب والجد معنيان آخران للمشتتين.",
+      "sourceIds": [],
+      "options": [
+        "الأخ",
+        "الأب",
+        "الجد"
+      ],
+      "answer": "الأخ"
+    },
+    {
+      "id": "DL-A1-02-Q02",
+      "decision": "clarified",
+      "finding": "Meine Mutter؛ Mein/Dein لا يطابقان المؤنث هنا. قيد الشرح بالرفع.",
+      "sourceIds": [
+        "P"
+      ],
+      "options": [
+        "Mein",
+        "Meine",
+        "Dein"
+      ],
+      "answer": "Meine"
+    },
+    {
+      "id": "DL-A1-02-Q03",
+      "decision": "clarified",
+      "finding": "Meine Eltern؛ جمع في الرفع. المشتتان بلا النهاية -e.",
+      "sourceIds": [
+        "P"
+      ],
+      "options": [
+        "Mein",
+        "Meine",
+        "Dein"
+      ],
+      "answer": "Meine"
+    },
+    {
+      "id": "DL-A1-02-Q04",
+      "decision": "clarified",
+      "finding": "Du arbeitest؛ arbeitet/arbeite لا يطابقان du.",
+      "sourceIds": [],
+      "options": [
+        "arbeitet",
+        "arbeitest",
+        "arbeite"
+      ],
+      "answer": "arbeitest"
+    },
+    {
+      "id": "DL-A1-02-Q05",
+      "decision": "clarified",
+      "finding": "Meine Schwester ist Ärztin. صيغة صحيحة؛ Mein لا يطابق Schwester، وsind لا يطابق المفرد.",
+      "sourceIds": [],
+      "options": [
+        "Mein Schwester ist Arzt.",
+        "Meine Schwester ist Ärztin.",
+        "Meine Schwester sind Ärztin."
+      ],
+      "answer": "Meine Schwester ist Ärztin."
+    },
+    {
+      "id": "DL-A1-02-Q06",
+      "decision": "clarified",
+      "finding": "Was bist du von Beruf? يسأل عن المهنة؛ البديلان عن السكن واسم الأب.",
+      "sourceIds": [],
+      "options": [
+        "Wo wohnst du?",
+        "Wie heißt dein Vater?",
+        "Was bist du von Beruf?"
+      ],
+      "answer": "Was bist du von Beruf?"
+    },
+    {
+      "id": "DL-A1-02-Q07",
+      "decision": "clarified",
+      "finding": "Nabeul؛ الشرح يعود إلى عبارة النص نفسها، لا إلى مفتاح الإجابات فقط.",
+      "sourceIds": [],
+      "options": [
+        "في تونس العاصمة",
+        "في نابل",
+        "في سوسة"
+      ],
+      "answer": "في نابل"
+    },
+    {
+      "id": "DL-A1-02-Q08",
+      "decision": "clarified",
+      "finding": "Tunis مدينة تونس؛ وضحت العاصمة في الخيار لتجنب الخلط مع اسم البلد.",
+      "sourceIds": [],
+      "options": [
+        "في نابل",
+        "في تونس العاصمة",
+        "في صفاقس"
+      ],
+      "answer": "في تونس العاصمة"
+    },
+    {
+      "id": "DL-A1-02-Q09",
+      "decision": "clarified",
+      "finding": "ist مع Meine Tante؛ sind/bist لا يطابقانها. T04 يدرب نمط المفرد+sein+مهنة؛ لا يحوي كلمة Tante نفسها.",
+      "sourceIds": [],
+      "options": [
+        "ist",
+        "sind",
+        "bist"
+      ],
+      "answer": "ist"
+    },
+    {
+      "id": "DL-A1-02-Q10",
+      "decision": "clarified",
+      "finding": "Hast du Geschwister? يسأل عن الإخوة والأخوات؛ البديلان عن مكان العمل والمهنة.",
+      "sourceIds": [],
+      "options": [
+        "Hast du Geschwister?",
+        "Wo arbeitet dein Vater?",
+        "Was bist du von Beruf?"
+      ],
+      "answer": "Hast du Geschwister?"
+    },
+    {
+      "id": "DL-A1-02-P01",
+      "decision": "corrected",
+      "finding": "خمس جمل مكتوبة عن ثلاثة أفراد، واسم أحدهم ومهنته؛ مطابقة T08. حد80حرفًا، دون شرط كلام أو بيانات حقيقية؛ الطول ليس حكمًا لغويًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-02-P02",
+      "decision": "corrected",
+      "finding": "ثلاثة أسئلة وأجوبتها وتلخيص بجملتين، مطابقة T09. حد140حرفًا وتأكيد الكلام؛ لا يكفي سؤالان ولا يلزم شريك أو تسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "profile-model-01",
+      "decision": "clarified",
+      "finding": "Das ist mein Vater. نموذج كتابي صحيح؛الاسم والمهنة للأب، والفردان الآخران أم وأخ.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "profile-model-02",
+      "decision": "clarified",
+      "finding": "Er heißt Ali. نموذج كتابي صحيح؛الاسم والمهنة للأب، والفردان الآخران أم وأخ.",
+      "sourceIds": []
+    },
+    {
+      "id": "profile-model-03",
+      "decision": "clarified",
+      "finding": "Er ist Koch. نموذج كتابي صحيح؛الاسم والمهنة للأب، والفردان الآخران أم وأخ.",
+      "sourceIds": []
+    },
+    {
+      "id": "profile-model-04",
+      "decision": "clarified",
+      "finding": "Das ist meine Mutter. نموذج كتابي صحيح؛الاسم والمهنة للأب، والفردان الآخران أم وأخ.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "profile-model-05",
+      "decision": "clarified",
+      "finding": "Das ist mein Bruder. نموذج كتابي صحيح؛الاسم والمهنة للأب، والفردان الآخران أم وأخ.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-01",
+      "decision": "clarified",
+      "finding": "Hast du Geschwister? — سؤال/جواب بوظيفته، والمعلومات متسقة. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-02",
+      "decision": "clarified",
+      "finding": "Ja, ich habe einen Bruder. — سؤال/جواب بوظيفته، والمعلومات متسقة. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-03",
+      "decision": "clarified",
+      "finding": "Was ist dein Vater von Beruf? — سؤال/جواب بوظيفته، والمعلومات متسقة. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-04",
+      "decision": "clarified",
+      "finding": "Mein Vater ist Koch. — سؤال/جواب بوظيفته، والمعلومات متسقة. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-05",
+      "decision": "clarified",
+      "finding": "Wo arbeitet dein Vater? — سؤال/جواب بوظيفته، والمعلومات متسقة. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-06",
+      "decision": "clarified",
+      "finding": "Mein Vater arbeitet in einem Hotel. — سؤال/جواب بوظيفته، والمعلومات متسقة. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-07",
+      "decision": "clarified",
+      "finding": "Der Vater ist Koch. — تلخيص مطابق للمهنة ومكان العمل. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "practice-dialogue-08",
+      "decision": "clarified",
+      "finding": "Er arbeitet in einem Hotel. — تلخيص مطابق للمهنة ومكان العمل. نموذج جديد مكتوب غير مسجل.",
+      "sourceIds": [
+        "G",
+        "P"
+      ]
+    },
+    {
+      "id": "card-01",
+      "decision": "retained",
+      "finding": "mein Bruder / meine Schwester → أخي / أختي. صحيح؛mein/meine مقيدان بالسياق الموضح في الشرح.",
+      "sourceIds": [
+        "P"
+      ]
+    },
+    {
+      "id": "card-02",
+      "decision": "retained",
+      "finding": "Was bist du von Beruf? → ما مهنتك؟ صيغة مناسبة للوظيفة المقصودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-03",
+      "decision": "retained",
+      "finding": "Ich arbeite als … → أعمل بوظيفة … صيغة مناسبة للوظيفة المقصودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "decision": "retained",
+      "finding": "Hast du Geschwister? → هل لديك إخوة أو أخوات؟ صيغة مناسبة للوظيفة المقصودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-02-AUD-READ-01",
+      "decision": "text-only-reviewed",
+      "finding": "مقطع واحد بصوت voice-02 مطابق للمصدر؛ready/offer التاريخيتان محفوظتان. قرئ التفريغ فقط، ولا يعني ذلك سماعًا أو صحة النطق.",
+      "sourceIds": []
+    },
+    {
+      "id": "DL-A1-02-AUD-LST-01",
+      "decision": "text-only-reviewed",
+      "finding": "مقطع واحد بصوت voice-03 مطابق للمصدر؛ready/offer التاريخيتان محفوظتان. قرئ التفريغ فقط، ولا يعني ذلك سماعًا أو صحة النطق.",
+      "sourceIds": []
+    }
+  ]
+}

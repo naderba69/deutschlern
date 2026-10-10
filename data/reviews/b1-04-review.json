@@ -1,0 +1,1832 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "b1-04-continuing-education-damit",
+  "reviewDate": "2026-10-08",
+  "reviewType": "ai_source_supported_text_review",
+  "assessmentVersion": "b1-04-v2",
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "sources": [
+    {
+      "id": "INF",
+      "title": "Lingolia — Infinitivsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/infinitivsaetze",
+      "scope": "الغرض بـ um … zu وحذف الفاعل الصريح والمصدر وموضع zu في الفعل المنفصل. القاعدة هنا في أمثلة الغرض الفاعلية؛ لا نعمم تطابق الفاعل على كل تركيب مصدر ألماني، فقد يرتبط بمفعول في أنماط أخرى.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "ADV",
+      "title": "Lingolia — Adverbialsätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze/adverbialsaetze",
+      "scope": "تمييز الغرض Wozu/damit عن السبب weil والشرط wenn والنتيجة؛ لا نستنتج تحقق الغرض أو الشهادة فعليًا.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SUB",
+      "title": "Lingolia — Nebensätze",
+      "url": "https://deutsch.lingolia.com/de/grammatik/satzbau/nebensaetze",
+      "scope": "الفاصلة والمصرف الأخير في الأنماط الحاضرة المدروسة. وصف um … zu في النظرة العامة بـ Folge لا يُنقل كادعاء نتيجة متحققة؛ اعتمدنا صفحتي الغرض/المصدر للتفصيل، ولا نعمم ترتيب مجموعة فعلية بسيطة على كل الأزمنة المركبة.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "MOD",
+      "title": "Lingolia — Modalverben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/modalverben",
+      "scope": "المصدر مع الفعل الناقص؛ في damit الحاضرة verstehen können المصدر أولًا والمصرف أخيرًا. إضافة können تضيف معنى الإمكان، فلا يضاف إلى مفتاح نقل نص لم ينطقه.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "TABLE",
+      "title": "Duden — Tabellenkalkulation",
+      "url": "https://www.duden.de/rechtschreibung/Tabellenkalkulation",
+      "scope": "اسم مؤنث وجمعه Tabellenkalkulationen؛ حساب باستخدام برنامج وجداول، لا مجرد جمع كلمة برامج. الجمع مضاف كتابة فقط؛ لا يزعم تسجيله أو برنامجًا تجاريًا بعينه.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "REGISTER",
+      "title": "Duden — anmelden",
+      "url": "https://www.duden.de/rechtschreibung/anmelden",
+      "scope": "meldet an/meldete an/hat angemeldet وتسجيل المشاركة لا إكمالها. مثال الصفحة zu einem Kurs؛ لا نزعم أنها وثقت für + Akk حرفيًا. إطار sich für einen Kurs anmelden في الدرس راجعناه لغويًا وداخل السياق، لا نقلًا من مثال Duden.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "CERT",
+      "title": "Duden — Zertifikat",
+      "url": "https://www.duden.de/rechtschreibung/Zertifikat",
+      "scope": "das Zertifikat/الشهادة والجمع Zertifikate. شرط المشاركة المنتظمة خاص بالقصة، وليس معيار شهادة حقيقية أو اعتماد CEFR أو وعدًا من التطبيق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "SEP",
+      "title": "Lingolia — Trennbare Verben",
+      "url": "https://deutsch.lingolia.com/de/grammatik/verben/trennbare",
+      "scope": "الفصل في الرئيسية لأنماط an/vor وعدم فصل be؛ مع مرجع المصدر يدعم vorzubereiten/weiterzubilden مقابل zu behalten/zu besprechen. لا نستنتج الفصل من كل بادئة في كل سياق.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "TEACH",
+      "title": "Duden — Lehrkraft",
+      "url": "https://www.duden.de/rechtschreibung/Lehrkraft",
+      "scope": "اسم مؤنث نحويًا يشمل Lehrer[in]، جمع Lehrkräfte؛ لا يجوز جعله تلقائيًا معلمة. يختلف عن Lehrerin/Trainerin في النصين الآخرين.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    },
+    {
+      "id": "FINAL",
+      "title": "mein-deutschbuch — Finalsätze",
+      "url": "https://mein-deutschbuch.de/finalsaetze/",
+      "scope": "الغرض و um … zu وتطابق الفاعل في هذه الأنماط، و damit جائزة حتى مع التطابق ولها فاعل مستقل. لا نتبنى تعميم الصفحة أن wollen/sollen/möchten مستحيلة في كل جملة غرض؛ يكتفى في التحويلات الحالية بنقل المقصد دون نسخها. PDF والفيديو والروابط الفرعية لم تُقرأ ولا تُحسب مصادر.",
+      "access": "full_fetched_page",
+      "accessDate": "2026-10-08",
+      "chunksRead": [
+        0
+      ],
+      "totalChunks": 1
+    }
+  ],
+  "units": [
+    {
+      "id": "scope-01",
+      "text": "**المدة المقترحة:** 40–45 دقيقة، ويمكن تقسيم العمل · **المهارات:** قراءة، استماع اختياري، قواعد، تخطيط تعلّم، كتابة وجهر",
+      "finding": "المدة اقتراح قابل للتقسيم، لا وعد إتقان. الاستماع اختياري مع التفريغ؛ جهر P02 مطلوب ولا يلزم تسجيل.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-02",
+      "text": "**الهدف:** أستطيع أن أشرح هدف دورة أو خطة تعلّم، وأختار بين **damit** و**um … zu**.",
+      "finding": "هدف لغة واحد: شرح الغرض واختيار البنية بحسب الفاعل والسياق، لا ضمان تعلم مهارة حاسوبية أو شهادة.",
+      "sourceIds": [
+        "INF",
+        "FINAL"
+      ]
+    },
+    {
+      "id": "scope-03",
+      "text": "جمع **Tabellenkalkulationen** توضيح كتابي؛ تسجيل المفردات الموجود ينطق المفرد **die Tabellenkalkulation** فقط، ولم يُعد توليده.",
+      "finding": "الجمع المكتوب صحيح، بينما التسجيل القديم ينطق المفرد وحده؛ الإفصاح يحفظ التطابق دون إعادةتوليد.",
+      "sourceIds": [
+        "TABLE"
+      ]
+    },
+    {
+      "id": "scope-04",
+      "text": "كلا التركيبين يعبّر هنا عن غرض أو هدف مقصود، لا دليلًا على تحققه بالفعل. في أمثلتنا نحدد من يفعل النشاط ومن يُراد له تحقيق الهدف؛ الاختيار يعتمد على هذه العلاقة وعلى البنية المطلوبة:",
+      "finding": "الغاية المقصودة ليست نتيجة ثبتت؛ تحديد الفاعل أهم من عدد أشخاص القصة.",
+      "sourceIds": [
+        "ADV",
+        "FINAL"
+      ]
+    },
+    {
+      "id": "scope-05",
+      "text": "### **um … zu + المصدر**: الفاعل المفهوم واحد في أمثلتنا",
+      "finding": "قُيدت وحدة الفاعل بأمثلة الغرض هنا، لا كل مصدر ألماني.",
+      "sourceIds": [
+        "INF",
+        "FINAL"
+      ]
+    },
+    {
+      "id": "scope-06",
+      "text": "### **damit + جملة فعلها في النهاية**: الفاعل قد يكون مختلفًا",
+      "finding": "قد يكون مختلفًا لا يجب أن يكون مختلفًا؛ المصرف أخير في البنية الحاضرة المستهدفة.",
+      "sourceIds": [
+        "FINAL",
+        "SUB"
+      ]
+    },
+    {
+      "id": "scope-07",
+      "text": "يمكن استعمال **damit** حتى عندما يكون الفاعل واحدًا، لكن **um … zu** صيغة موجزة هنا ولا نكرر داخلها فاعلًا صريحًا. في تراكيب **damit** الحاضرة التي ندرسها هنا نذكر فاعلًا وفعلًا مصرفًا أخيرًا. نضع فاصلة لفصل تركيب الغرض عن الرئيسية؛ ومع فعل ناقص يأتي المصدر قبله: **verstehen können**، حيث **können** هو المصرف الأخير، لا **können verstehen**.",
+      "finding": "فاصلة للفصل، ولا ضمير فاعل صريح في um؛ يمكن استعمال damit مع الفاعل نفسه. المصدر قبل المصرف في المجموعة الفعلية الحاضرة المدروسة.",
+      "sourceIds": [
+        "INF",
+        "SUB",
+        "MOD",
+        "FINAL"
+      ]
+    },
+    {
+      "id": "scope-08",
+      "text": "مثال خامس موجود في تسجيل النماذج، وهو صياغة تعليمية مستقلة لفكرة المجموعة، لا اقتباس حرفي من الحوار:",
+      "finding": "كان سجل MODEL يصف المثال الخامس كاقتباس من الحوار، لكنه اقتباس بالمعنى لا بالحروف؛ أضيف المثال نفسه ووصفت استقلاليته دون تغيير الصوت.",
+      "sourceIds": []
+    },
+    {
+      "id": "scope-09",
+      "text": "النموذجان خياليان مكتوبان وغير مسجلين؛ لا يبدلان المقاطع الموجودة ولا يثبتان إنجاز هدف أو الحصول على شهادة. المثال الخامس في تسجيل النماذج أضيف أعلاه بحروفه كما هو، أما هذان النموذجان فمخصصان للمهمتين الجديدتين.",
+      "finding": "النموذجان الجديدان مكتوبان ولا ينسبان إلى صوت قديم؛ لا تنفيذ فعلي أو شهادة أو وصول بيانات.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-01",
+      "text": "| die Weiterbildung | die Weiterbildungen | التعليم/التدريب المستمر |",
+      "finding": "اسم مؤنث، جمعه Weiterbildungen؛ تعليم أو تدريب مستمر لا وعد ترقية. يختلف مجال القراءة عن الاستماع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-02",
+      "text": "| die Fähigkeit | die Fähigkeiten | المهارة |",
+      "finding": "اسم مؤنث، جمعه Fähigkeiten؛ مهارة أو قدرة، لا شهادة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-03",
+      "text": "| die Kenntnis | die Kenntnisse | المعرفة |",
+      "finding": "اسم مؤنث، جمعه Kenntnisse؛ معارف حاسوبية في السياق، و Computerkenntnisse كلمة مركبة لا اسم برنامج.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-04",
+      "text": "| die Plattform | die Plattformen | المنصّة |",
+      "finding": "اسم مؤنث، جمعه Plattformen؛ منصة تعليمية، لا اسم خدمة أو تسجيل تجاري مطلوب.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-05",
+      "text": "| die Tabellenkalkulation | die Tabellenkalkulationen | الحساب/معالجة البيانات بالجداول الإلكترونية |",
+      "finding": "صُحح المعنى من برامج جمعًا إلى مجال الحساب بالجداول. جمع Tabellenkalkulationen صحيح ومكتوب فقط؛ التسجيل ينطق المفرد.",
+      "sourceIds": [
+        "TABLE"
+      ]
+    },
+    {
+      "id": "vocab-06",
+      "text": "| die Kursunterlage | die Kursunterlagen | مادة من مواد الدورة |",
+      "finding": "مفرد مؤنث Kursunterlage وجمع Kursunterlagen؛ مواد الدورة التي تُقرأ صباحًا، لا Notizen التي تراجع بعد الدورة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-07",
+      "text": "| der Lernstoff | — | المادة التعليمية |",
+      "finding": "Lernstoff مذكر، مادة يدرسها المتعلم، لا شهادة أو مجموعة. الشرطة تعني عدم تقديم جمع في هذا السياق، لا استحالة كل استعمال جمع.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-08",
+      "text": "| das Lernziel | die Lernziele | هدف التعلّم |",
+      "finding": "Lernziel محايد وجمعه Lernziele؛ الهدف المقصود، لا دليل نجاح فيه.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-09",
+      "text": "| das Zertifikat | die Zertifikate | الشهادة |",
+      "finding": "Zertifikat محايد وجمعه Zertifikate؛ الشهادة مشروطة بالمشاركة المنتظمة في القصة، لا مستلمة بالفعل أو رسمية بالضرورة.",
+      "sourceIds": [
+        "CERT"
+      ]
+    },
+    {
+      "id": "vocab-10",
+      "text": "| die Teilnahme | — | المشاركة |",
+      "finding": "Teilnahme اسم مؤنث بمعنى المشاركة؛ لا جمع مدرّس هنا، ولا مساواة بين التسجيل والمشاركة المنتظمة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-11",
+      "text": "| die Voraussetzung | die Voraussetzungen | الشرط المسبق |",
+      "finding": "Voraussetzung مؤنث وجمعه Voraussetzungen؛ شرط مسبق، ورابط wenn في نص الشهادة يحدد شرطًا لا غرضًا.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-12",
+      "text": "| sich anmelden für | meldet sich an | يسجّل في |",
+      "finding": "sich anmelden für انعكاسي، و meldet sich an تصريف منفصل؛ Kurs بعد für بالنصب. مثال Duden يستعمل zu، فلا ننسب إليه توثيق für حرفيًا.",
+      "sourceIds": [
+        "REGISTER",
+        "SEP"
+      ]
+    },
+    {
+      "id": "vocab-13",
+      "text": "| wiederholen | — | يراجع / يكرّر |",
+      "finding": "wiederholen هنا مراجعة أو تكرار، غير منفصل، لا wieder holen بمعنى جلب من جديد؛ يرتبط بالمادة في القراءة وبالملاحظات في الاستماع.",
+      "sourceIds": [
+        "SEP"
+      ]
+    },
+    {
+      "id": "vocab-14",
+      "text": "| selbstständig | — | بصورة مستقلة |",
+      "finding": "selbstständig صفة أو حال تعني بصورة مستقلة هنا، لا عملًا حرًا أو إتقانًا مثبتًا. selbstständiger في الحوار درجة مقارنة مقصودة.",
+      "sourceIds": []
+    },
+    {
+      "id": "vocab-15",
+      "text": "| die Lerngruppe | die Lerngruppen | مجموعة تعلّم |",
+      "finding": "Lerngruppe مؤنث وجمعه Lerngruppen؛ مجموعة دراسة، لا مؤسسة معينة. أعضاؤها في الاستماع زميلتان مع الراوي.",
+      "sourceIds": []
+    },
+    {
+      "id": "grammar-01",
+      "text": "Ich mache einen Onlinekurs, um meine Kenntnisse zu erweitern.",
+      "finding": "ich واحد في النشاط والهدف؛ المصدر erweitern مع zu والفاصلة بعد الرئيسية. توسيع المعارف غرض لا إنجاز مثبت.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD",
+        "SEP"
+      ]
+    },
+    {
+      "id": "grammar-02",
+      "text": "Sie wiederholt den Lernstoff, um sich auf die Prüfung vorzubereiten.",
+      "finding": "sie فاعل المراجعة والتحضير نفسه، و sich انعكاسي للغائب؛ zu داخل vorzubereiten. لا ادعاء نجاح الامتحان.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD",
+        "SEP"
+      ]
+    },
+    {
+      "id": "grammar-03",
+      "text": "Der Kurs bietet Übungen an, damit die Teilnehmenden selbstständig lernen können.",
+      "finding": "Der Kurs مقابل die Teilnehmenden؛ an منفصلة في bietet ... an. lernen مصدر قبل können المصرف؛ إتاحة التعلم لا إثباته.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD",
+        "SEP"
+      ]
+    },
+    {
+      "id": "grammar-04",
+      "text": "Die Lehrerin erklärt die Aufgabe, damit alle sie verstehen.",
+      "finding": "Die Lehrerin تشرح و alle فاعل الفهم؛ sie مفعول يعود إلى die Aufgabe، لا المعلمة. verstehen مصرف جمع وإن طابق شكل المصدر.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD",
+        "SEP"
+      ]
+    },
+    {
+      "id": "grammar-05",
+      "text": "Wir bilden eine Lerngruppe, um schwierige Themen gemeinsam zu besprechen.",
+      "finding": "Wir نفسه في بناء المجموعة ومناقشتها؛ besprechen غير منفصل و zu قبله. الجملة المسجلة أضيفت حرفيًا، وليست آخر الحوار الذي يبدأ ich.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD",
+        "SEP"
+      ]
+    },
+    {
+      "id": "helper-01",
+      "text": "- **الهدف لا النتيجة:** **um die Prüfung zu bestehen** تعني هدف النجاح، ولا تقول إن الشخص نجح بالفعل. **damit ... lernen können** تعبر عن قصد إتاحة التعلم، لا إثبات أن الجميع أتقن المادة. نفرّق الغرض عن السبب بـ weil وعن شرط الشهادة بـ wenn.",
+      "finding": "الغرض متميز عن السبب والشرط؛ النجاح مقصود وليس حدثًا ثابتًا.",
+      "sourceIds": [
+        "ADV"
+      ]
+    },
+    {
+      "id": "helper-02",
+      "text": "- **الفاعل مع damit:** **Ich übe, damit ich sicherer spreche.** سليمة بفاعل واحد. أما **Die Lehrerin erklärt, damit die Klasse versteht.** ففيها فاعلان مختلفان. لا تختَر damit لمجرد وجود شخصين في القصة أو تحكم أن كل جملة فيها damit لها فاعلان مختلفان.",
+      "finding": "damit صحيحة بفاعل واحد؛ عدد الأشخاص في القصة ليس معيار البنية.",
+      "sourceIds": [
+        "FINAL"
+      ]
+    },
+    {
+      "id": "helper-03",
+      "text": "- **ملء الفراغ لا تكرار التركيب:** في **Ich lerne, ___ die Prüfung zu bestehen.** اكتب **um** فقط؛ **zu** موجودة بالفعل. داخل تركيب um نضع المصدر مع zu ولا نضيف ضميرفاعل جديدًا. إذا استعملت damit مع الفاعل نفسه فأعد بناء الجملة، مثل **damit ich die Prüfung bestehe**، لا تستبدل كلمة واحدة وتترك المصدر.",
+      "finding": "علاج T01/Q02: um وحدها في الفراغ؛ damit تحتاج إلى إعادة البناء بفاعل ومصرف، لا استبدال كلمة واحدة.",
+      "sourceIds": [
+        "INF",
+        "FINAL"
+      ]
+    },
+    {
+      "id": "helper-04",
+      "text": "- **المصرف الأخير:** **damit die Lernenden alles besser verstehen können**: المصدر **verstehen** يسبق **können** المصرف. وفي **damit alle Teilnehmenden die Begriffe verstehen** تكون **verstehen** نفسها مصرفًا مع الجمع، ولا نضيف können عند نقل عبارة الاستماع التي لم تتضمنها.",
+      "finding": "علاج Q03/T06: verstehen قبل können إذا وُجد؛ لا نضيف فعلًا ناقصًا إلى تفريغ لا يحويه.",
+      "sourceIds": [
+        "MOD",
+        "SUB"
+      ]
+    },
+    {
+      "id": "helper-05",
+      "text": "- **zu والأفعال المنفصلة:** **vorbereiten → vorzubereiten** و**sich weiterbilden → sich weiterzubilden**. الضمير بحسب الشخص: **um mich ... vorzubereiten** للمتكلم و**um sich ... vorzubereiten** للغائب. أما **behalten → zu behalten** و**besprechen → zu besprechen** فلا نفصل بادئتي be-.",
+      "finding": "zu داخل الفعل المنفصل، و mich/sich بحسب الشخص، مع عدم فصل be-.",
+      "sourceIds": [
+        "INF",
+        "SEP"
+      ]
+    },
+    {
+      "id": "helper-06",
+      "text": "- **التسجيل والمراجعة:** **Ich melde mich für einen Kurs an / Ich habe mich für einen Kurs angemeldet.** صيغة انعكاسية و an منفصلة في الرئيسية البسيطة؛ التسجيل لا يثبت إكمال الدورة. **wiederholen** هنا يراجع/يكرر، و**bereitstellen/anbieten** يظهران في الحوار والأمثلة بـ**stellt ... bereit / bietet ... an**. **Tabellenkalkulation** مجال الحساب بالجداول، لا اسم برنامج بعينه.",
+      "finding": "الانعكاس والفصل ومعنى التسجيل دون إثبات الإكمال؛ تمييز المادة التعليمية عن مجال الجداول.",
+      "sourceIds": [
+        "REGISTER",
+        "TABLE"
+      ]
+    },
+    {
+      "id": "helper-07",
+      "text": "- **من يتكلم ومن يدرّس؟** **Lehrerin/Trainerin** في الحوار والاستماع مؤنثتان في المعنى، لكن **Lehrkraft** اسم مؤنث نحويًا قد يدل على معلم أو معلمة. راوي الاستماع غير مسمى، و**sie** في أسئلته تعود إلى**die Person**؛ لا يحدد الصوت أو هذا الضمير جنس الراوي. **Kolleginnen** تعني زميلات، ولا تثبت جنس الشخص الذي يدرس معهن.",
+      "finding": "الجنس النحوي لـ Lehrkraft/die Person لا يثبت جنس الشخص. Lehrerin/Trainerin/Kolleginnen صيغ مؤنثة في المعنى، ولا نستدل بالصوت.",
+      "sourceIds": [
+        "TEACH"
+      ]
+    },
+    {
+      "id": "helper-08",
+      "text": "- **افصل البرامج والأوقات:** قراءة Farid عن الجداول: الحضور مساءً والمراجعة في نهاية الأسبوع. الاستماع عن التواصل: قراءة المواد صباحًا ومراجعة الملاحظات بعد الدورة، ومجموعة مع زميلتين مرة أسبوعيًا. لا نجعل راوي الاستماع Farid تلقائيًا أو ننقل وقتًا من نص لآخر، ولا نستنتج ساعة أو مدة أو تطبيقًا معينًا.",
+      "finding": "فصل الأشخاص والأوقات بين النصين؛ لا وقت دقيق أو مدة أو تطبيق مستنتج.",
+      "sourceIds": []
+    },
+    {
+      "id": "helper-09",
+      "text": "- **الشهادة مشروطة في النص:** النهاية مع **wenn sie regelmäßig am Kurs teilnehmen**؛ جواب الشهادة يحفظ شرط المشاركة المنتظمة. لا يثبت النص أن Farid حصل عليها بالفعل أو أنها اعتماد رسمي أو شهادة يمنحها هذا التطبيق. في الحوار هدف الاستقلالية ليس إنجازًا موثقًا، و**meistens/manchmal** لا تعني دائمًا. في الدور الأخير **ich** مفرد و**wir** مجموعة تشمل المتكلم؛ ليسا الفاعل نفسه لمجرد اشتراكه في المجموعة، ولذلك تصح **damit wir ... besprechen**.",
+      "finding": "شرط الشهادة خاص بالقصة، و meistens/manchmal لا تعني دائمًا؛ ich لا يساوي wir ولو كان عضوًا في المجموعة.",
+      "sourceIds": [
+        "CERT",
+        "ADV",
+        "FINAL"
+      ]
+    },
+    {
+      "id": "helper-10",
+      "text": "- **طريقة العمل:** P01 خطة خيالية من أربع جمل كتابة فقط؛ P02 أربعة أدوار مع الجهر، يذكر المتعلم هدفه وتقترح المدربة تمرينًا له. لا تسجيل فعلي في دورة، أو دفع، أو بيانات شخصية، أو شريك، أو تسجيل صوتي. يمكن قراءة التفريغ؛ الحروف والإقرارات لا تصحح المعنى أو النحو أو النطق آليًا.",
+      "finding": "P01 كتابة فقط و P02 مع الجهر؛ لا شريك أو تسجيل أو إنفاق أو مراجعة بشرية شرطًا، ولا ادعاء تصحيح آلي للنحو والنطق.",
+      "sourceIds": []
+    },
+    {
+      "id": "dialogue-01",
+      "text": "Warum hast du dich für den Onlinekurs angemeldet?",
+      "finding": "Nadia تسأل سبب التسجيل الماضي: Perfekt مع hast ... angemeldet انعكاسي، وليس إكمال الدورة.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD"
+      ]
+    },
+    {
+      "id": "dialogue-02",
+      "text": "Ich möchte meine Computerkenntnisse erweitern, um bei der Arbeit selbstständiger zu werden.",
+      "finding": "Farid يريد توسيع معارفه ليصبح أكثر استقلالية؛ ich نفسه في الغرض، ولا نجاح مهني مثبت.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD"
+      ]
+    },
+    {
+      "id": "dialogue-03",
+      "text": "Gibt es Übungen?",
+      "finding": "Gibt es سؤال عن وجود التمارين، لا نوعها أو عددها.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD"
+      ]
+    },
+    {
+      "id": "dialogue-04",
+      "text": "Ja. Die Lehrerin stellt kurze Aufgaben bereit, damit wir den Lernstoff regelmäßig wiederholen können.",
+      "finding": "Lehrerin تقدم مهام قصيرة لتكرار المادة؛ هي مقابل wir. wiederholen مصدر قبل können؛ Ja جملة جواب داخل الدور لا دور صوتي مستقل.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD"
+      ]
+    },
+    {
+      "id": "dialogue-05",
+      "text": "Lernst du allein?",
+      "finding": "Lernst du allein سؤال عن طريقة الدراسة، لا رأي سلبي في المجموعة.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD"
+      ]
+    },
+    {
+      "id": "dialogue-06",
+      "text": "Meistens. Manchmal treffe ich mich mit einer Lerngruppe, damit wir schwierige Themen gemeinsam besprechen.",
+      "finding": "Meistens وحيدًا و Manchmal جماعيًا؛ ich غير wir ولو شملته المجموعة. besprechen مصرف جمع؛ لا ادعاء أن كل الدراسة جماعية أو في وقت محدد.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "MOD"
+      ]
+    },
+    {
+      "id": "reading-01",
+      "text": "Farid arbeitet in einem kleinen Betrieb.",
+      "finding": "Farid يعمل في منشأة صغيرة؛ لا اسم شركة أو دولة أو جنس مدرس في الجملة.",
+      "sourceIds": [
+        "INF",
+        "ADV",
+        "TABLE",
+        "REGISTER",
+        "TEACH",
+        "CERT"
+      ]
+    },
+    {
+      "id": "reading-02",
+      "text": "Er hat sich für eine Weiterbildung im Bereich Tabellenkalkulation angemeldet.",
+      "finding": "سجّل في تدريب الجداول، لا التواصل؛ التسجيل الماضي لا يضمن الإكمال أو الشهادة.",
+      "sourceIds": [
+        "INF",
+        "ADV",
+        "TABLE",
+        "REGISTER",
+        "TEACH",
+        "CERT"
+      ]
+    },
+    {
+      "id": "reading-03",
+      "text": "Er besucht den Kurs am Abend, um seine Kenntnisse zu verbessern.",
+      "finding": "الحضور مساءً لتحسين المعارف؛ الفاعل واحد، والتحسين هدف لا نتيجة مثبتة.",
+      "sourceIds": [
+        "INF",
+        "ADV",
+        "TABLE",
+        "REGISTER",
+        "TEACH",
+        "CERT"
+      ]
+    },
+    {
+      "id": "reading-04",
+      "text": "Die Lehrkraft gibt Beispiele, damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+      "finding": "Lehrkraft لا يحدد جنس المدرس؛ الأمثلة لغرض الممارسة، والمصدر üben قبل können المصرف.",
+      "sourceIds": [
+        "INF",
+        "ADV",
+        "TABLE",
+        "REGISTER",
+        "TEACH",
+        "CERT"
+      ]
+    },
+    {
+      "id": "reading-05",
+      "text": "Farid wiederholt den Lernstoff am Wochenende, um sich auf die Abschlussaufgabe vorzubereiten.",
+      "finding": "المراجعة نهاية الأسبوع للتحضير لمهمة ختامية، لا امتحان نجح فيه؛ مصدر انعكاسي بـ sich و vorzubereiten.",
+      "sourceIds": [
+        "INF",
+        "ADV",
+        "TABLE",
+        "REGISTER",
+        "TEACH",
+        "CERT"
+      ]
+    },
+    {
+      "id": "reading-06",
+      "text": "Am Ende erhalten die Teilnehmenden ein Zertifikat, wenn sie regelmäßig am Kurs teilnehmen.",
+      "finding": "الشهادة في النهاية مشروطة بالمشاركة المنتظمة؛ لا إثبات لتسلم Farid لها، ولا اعتماد عام أو شرط صادر عن التطبيق.",
+      "sourceIds": [
+        "INF",
+        "ADV",
+        "TABLE",
+        "REGISTER",
+        "TEACH",
+        "CERT"
+      ]
+    },
+    {
+      "id": "listening-01",
+      "text": "Ich mache eine Weiterbildung im Bereich Kommunikation.",
+      "finding": "التدريب في التواصل؛ لا اسم للراوي ولا استدلال بالصوت على جنسه.",
+      "sourceIds": [
+        "INF",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "listening-02",
+      "text": "Ich lese die Kursunterlagen am Morgen, um mich auf den Unterricht vorzubereiten.",
+      "finding": "قراءة المواد صباحًا للاستعداد؛ mich للمتكلم و vorzubereiten منفصل مع zu. لا صلة بمساء Farid.",
+      "sourceIds": [
+        "INF",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "listening-03",
+      "text": "Unsere Trainerin erklärt neue Begriffe langsam, damit alle Teilnehmenden sie verstehen.",
+      "finding": "Trainerin مؤنثة في المعنى، والشرح البطيء لغرض الفهم. sie تعود إلى Begriffe؛ verstehen مصرف جمع فقط، بلا können.",
+      "sourceIds": [
+        "INF",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "listening-04",
+      "text": "Nach dem Kurs wiederhole ich die Notizen, um die wichtigsten Punkte zu behalten.",
+      "finding": "مراجعة الملاحظات بعد الدورة بغرض الاحتفاظ بالنقاط؛ behalten غير منفصل و zu قبله، وليس دليلًا على تذكر فعلي.",
+      "sourceIds": [
+        "INF",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "listening-05",
+      "text": "Einmal pro Woche lerne ich mit zwei Kolleginnen in einer Lerngruppe.",
+      "finding": "مرة أسبوعيًا مع زميلتين في مجموعة؛ لا اسم أو مكان أو يوم محدد. جنس الزميلتين لا يثبت جنس الراوي.",
+      "sourceIds": [
+        "INF",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "reading-question-01",
+      "text": "Für welche Weiterbildung hat sich Farid angemeldet?",
+      "finding": "المجال في الجملة الثانية هو الجداول، لا التواصل.",
+      "sourceIds": [],
+      "answer": "Für eine Weiterbildung in Tabellenkalkulation."
+    },
+    {
+      "id": "reading-question-02",
+      "text": "Wann besucht er den Kurs?",
+      "finding": "وقت الحضور من الجملة الثالثة، لا وقت مراجعة المادة في نهاية الأسبوع.",
+      "sourceIds": [],
+      "answer": "Am Abend."
+    },
+    {
+      "id": "reading-question-03",
+      "text": "Warum besucht er den Kurs?",
+      "finding": "Warum هنا يقبل الغرض المذكور بـ um؛ لا نخترع سببًا خارجيًا.",
+      "sourceIds": [],
+      "answer": "Um seine Kenntnisse zu verbessern."
+    },
+    {
+      "id": "reading-question-04",
+      "text": "Wozu gibt die Lehrkraft Beispiele?",
+      "finding": "Wozu يطلب الغرض لا نتيجة مثبتة؛ جهة التدريس تقدم والمشاركون يتدربون.",
+      "sourceIds": [],
+      "answer": "Damit die Teilnehmenden die neuen Funktionen praktisch üben können."
+    },
+    {
+      "id": "reading-question-05",
+      "text": "Was erhalten die Teilnehmenden am Ende bei regelmäßiger Teilnahme?",
+      "finding": "قُيد السؤال والمفتاح بالمشاركة المنتظمة؛ لا ينبغي حذف شرط wenn.",
+      "sourceIds": [],
+      "answer": "Ein Zertifikat, wenn sie regelmäßig am Kurs teilnehmen."
+    },
+    {
+      "id": "listening-question-01",
+      "text": "Welche Weiterbildung macht die Person?",
+      "finding": "التواصل لا الجداول.",
+      "sourceIds": [],
+      "answer": "Eine Weiterbildung im Bereich Kommunikation."
+    },
+    {
+      "id": "listening-question-02",
+      "text": "Wann liest sie die Kursunterlagen?",
+      "finding": "sie تعود لغويًا إلى die Person؛ الصباح لقراءة مواد الدورة.",
+      "sourceIds": [],
+      "answer": "Am Morgen."
+    },
+    {
+      "id": "listening-question-03",
+      "text": "Warum erklärt die Trainerin langsam?",
+      "finding": "الغرض فهم المصطلحات؛ لا können إضافية ولا sie عائدة إلى المدربة.",
+      "sourceIds": [],
+      "answer": "Damit alle Teilnehmenden die Begriffe verstehen."
+    },
+    {
+      "id": "listening-question-04",
+      "text": "Was macht die Person nach dem Kurs?",
+      "finding": "تكرار الملاحظات بعد الدورة، لا قراءة المواد صباحًا.",
+      "sourceIds": [],
+      "answer": "Sie wiederholt die Notizen."
+    },
+    {
+      "id": "listening-question-05",
+      "text": "Mit wem lernt sie einmal pro Woche?",
+      "finding": "زميلتان في مجموعة مرة أسبوعيًا، لا المدربة أو الدراسة وحدها.",
+      "sourceIds": [],
+      "answer": "Mit zwei Kolleginnen in einer Lerngruppe."
+    },
+    {
+      "id": "DL-B1-04-T01",
+      "text": "في 1–4 اكتب **um** أو **damit** فقط؛ zu موجودة في الجمل التي تحتاجها. في 5 اختر معنى المفردة:\n\n1. Ich lerne jeden Tag, ______ die Prüfung zu bestehen. (الفاعل نفسه)\n2. Die Lehrerin schreibt die Wörter auf, ______ alle sie sehen können. (فاعل مختلف)\n3. Wir bilden eine Lerngruppe, ______ schwierige Aufgaben gemeinsam zu lösen. (الفاعل نفسه)\n4. Der Betrieb bietet einen Kurs an, ______ die Mitarbeitenden neue Fähigkeiten entwickeln. (فاعلان مختلفان)\n5. المادة التعليمية التي يدرسها المتعلم: **der Lernstoff / das Zertifikat**.",
+      "finding": "رابط ومفردة بدعم مباشر لـ Q01/Q02؛ لا كتابة zu مرتين.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Ich lerne jeden Tag, ______ die Prüfung zu bestehen. (الفاعل نفسه)",
+          "finding": "um فقط؛ zu موجودة وفاعل ich واحد."
+        },
+        {
+          "text": "Die Lehrerin schreibt die Wörter auf, ______ alle sie sehen können. (فاعل مختلف)",
+          "finding": "damit مع die Lehrerin و alle؛ المصرف können أخير."
+        },
+        {
+          "text": "Wir bilden eine Lerngruppe, ______ schwierige Aufgaben gemeinsam zu lösen. (الفاعل نفسه)",
+          "finding": "um فقط و zu موجودة؛ نحن نفعل النشاط والهدف."
+        },
+        {
+          "text": "Der Betrieb bietet einen Kurs an, ______ die Mitarbeitenden neue Fähigkeiten entwickeln. (فاعلان مختلفان)",
+          "finding": "damit لأن Betrieb يقدم والعاملين يطورون؛ entwickeln مصرف جمع."
+        },
+        {
+          "text": "المادة التعليمية التي يدرسها المتعلم: **der Lernstoff / das Zertifikat**.",
+          "finding": "der Lernstoff هو المعطى؛ das Zertifikat شهادة لا مادة تعليمية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T02",
+      "text": "صرّف الفعل في damit؛ في 2 احفظ المصدر قبل المصرف، وفي 3 أضف zu المطلوبة مع المصدر:\n\n1. Sie übt regelmäßig, damit sie die Prüfung ______. (bestehen)\n2. Die Plattform bietet Videos an, damit die Lernenden alles besser ______. (verstehen können)\n3. Ich wiederhole die Wörter, um sie besser ______. (behalten)",
+      "finding": "تصريف وترتيب المصدر مع الناقص؛ يعالج خطأ شرح Q03.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Sie übt regelmäßig, damit sie die Prüfung ______. (bestehen)",
+          "finding": "besteht مصرف مفرد مع sie؛ damit بفاعل واحد سليمة."
+        },
+        {
+          "text": "Die Plattform bietet Videos an, damit die Lernenden alles besser ______. (verstehen können)",
+          "finding": "verstehen können: مصدر ثم مصرف مع الجمع، لا können verstehen."
+        },
+        {
+          "text": "Ich wiederhole die Wörter, um sie besser ______. (behalten)",
+          "finding": "zu behalten؛ be غير منفصلة، والفاعل ich واحد."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T03",
+      "text": "استخدم كل نهاية مرة وفق المقاصد المحددة: في1 أريد الحصول على شهادتي؛ في2 تريد المدربة أن يفهم الجميع التعليمات؛ في3 نريد التدريب معًا. لا نحكم بأن كل تركيب آخر مستحيل نحويًا، بل نطابق هذه المقاصد.\n\n1. Ich besuche den Kurs, um …  \n2. Die Trainerin spricht langsam, damit …  \n3. Wir bilden eine Lerngruppe, um …\n\nأ. alle Teilnehmenden die Anweisungen verstehen.  ب. gemeinsam zu üben.  ج. mein Zertifikat zu bekommen.",
+      "finding": "المقصد محدد لكل بداية لتفادي الالتباس الدلالي، مع مفتاح ثابت.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Ich besuche den Kurs, um …  ",
+          "finding": "1-ج: mein Zertifikat حسب المقصد المعطى؛ نهايات أخرى قد تصلح نحويًا خارجه."
+        },
+        {
+          "text": "Die Trainerin spricht langsam, damit …  ",
+          "finding": "2-أ: damit alle ... verstehen بفاعل ومصرف أخير، والمقصد فهم التعليمات."
+        },
+        {
+          "text": "Wir bilden eine Lerngruppe, um …",
+          "finding": "3-ب: gemeinsam zu üben وفق المقصد الجماعي؛ كل نهاية تستعمل مرة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T04",
+      "text": "أكمل بداية الجملة المعطاة، مع حفظ الفاعل والغاية. تنقل صيغة الغرض المقصد فلا يلزم نسخ möchten أو sollen مرة أخرى:\n\n1. **Ich mache Übungen. Ich möchte die Wörter behalten.** → Ich mache Übungen, um ______.\n2. **Die Kursleiterin erklärt die Aufgabe. Die Teilnehmenden sollen sie verstehen.** → Die Kursleiterin erklärt die Aufgabe, damit ______.\n3. **Wir treffen uns. Wir möchten gemeinsam lernen.** → Wir treffen uns, um ______.",
+      "finding": "تحويل الغرض وحفظ الفاعل؛ يدعم تمييز Q04 مع T07.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "**Ich mache Übungen. Ich möchte die Wörter behalten.** → Ich mache Übungen, um ______.",
+          "finding": "die Wörter zu behalten يحفظ غرض ich دون نسخ möchte؛ be غير منفصلة."
+        },
+        {
+          "text": "**Die Kursleiterin erklärt die Aufgabe. Die Teilnehmenden sollen sie verstehen.** → Die Kursleiterin erklärt die Aufgabe, damit ______.",
+          "finding": "die Teilnehmenden sie verstehen: المشاركون فاعل و sie مفعول يعود للمهمة؛ نقل الغرض لا يلزم نسخ sollen."
+        },
+        {
+          "text": "**Wir treffen uns. Wir möchten gemeinsam lernen.** → Wir treffen uns, um ______.",
+          "finding": "gemeinsam zu lernen: فاعل wir مشترك ولا möchten إضافية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T05",
+      "text": "حدّد صحيحًا أو خطأ:\n\n1. Farid lernt Tabellenkalkulation.\n2. Der Kurs findet am Morgen statt.\n3. Die Lehrkraft gibt Beispiele, damit die Teilnehmenden die neuen Funktionen praktisch üben können.\n4. Alle erhalten am Ende ein Zertifikat, auch wenn sie nie teilnehmen.",
+      "finding": "مقارنة مع القراءة لا الاستماع؛ الوقت وشرط الشهادة وغرض الأمثلة محفوظة.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Farid lernt Tabellenkalkulation.",
+          "finding": "صحيح: مجال الجداول مذكور في القراءة."
+        },
+        {
+          "text": "Der Kurs findet am Morgen statt.",
+          "finding": "خطأ: المساء وقت الحضور؛ الصباح في نص الاستماع لنشاط مختلف."
+        },
+        {
+          "text": "Die Lehrkraft gibt Beispiele, damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+          "finding": "صحيح: عدّلت العبارة لتصف غرض تمكين التدريب، لا ثبوت تحقق غرض الأمثلة."
+        },
+        {
+          "text": "Alle erhalten am Ende ein Zertifikat, auch wenn sie nie teilnehmen.",
+          "finding": "خطأ: عدم المشاركة لا يحقق شرط المشاركة المنتظمة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T06",
+      "text": "انقل الكلمات الموافقة للنص دون إضافة فعل ناقص لم يُذكر. بنك الكلمات: **Kommunikation — Morgen — verstehen — Kolleginnen**.\n\n1. Die Person macht eine Weiterbildung in ______.\n2. Sie liest die Kursunterlagen am ______.\n3. Die Trainerin erklärt langsam, damit alle Teilnehmenden die neuen Begriffe ______.\n4. Einmal pro Woche lernt die Person mit zwei ______.",
+      "finding": "نقل كلمات ببنك مساعد؛ مفتاح التفريغ لا يضيف können.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Die Person macht eine Weiterbildung in ______.",
+          "finding": "Kommunikation هو المجال في النص؛ بنك الكلمات يساعد في نقل المطلوب."
+        },
+        {
+          "text": "Sie liest die Kursunterlagen am ______.",
+          "finding": "Morgen بعد am؛ لا المساء أو نهاية الأسبوع."
+        },
+        {
+          "text": "Die Trainerin erklärt langsam, damit alle Teilnehmenden die neuen Begriffe ______.",
+          "finding": "verstehen فقط؛ استُبدلت sie في السؤال بمرجعها die neuen Begriffe، دون إضافة können من مثال آخر."
+        },
+        {
+          "text": "Einmal pro Woche lernt die Person mit zwei ______.",
+          "finding": "Kolleginnen مع زميلتين؛ المعدود لا يحدد جنس الراوي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T07",
+      "text": "اكتب **فاعل واحد** أو **فاعلان مختلفان**:\n\n1. Ich lerne neue Wörter, um sie im Gespräch zu benutzen.\n2. Die Lehrerin erklärt ein Beispiel, damit die Klasse es versteht.\n3. Wir üben, um sicherer zu sprechen.\n4. Ich übe jeden Tag, damit ich sicherer spreche.",
+      "finding": "تحليل علاقة الفاعل لا اختيار آلي من أداة الربط.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "Ich lerne neue Wörter, um sie im Gespräch zu benutzen.",
+          "finding": "فاعل واحد ich في التعلم والاستعمال؛ sie مفعول يعود إلى Wörter."
+        },
+        {
+          "text": "Die Lehrerin erklärt ein Beispiel, damit die Klasse es versteht.",
+          "finding": "فاعلان Lehrerin/Klasse؛ es مفعول يعود إلى Beispiel، لا فاعل."
+        },
+        {
+          "text": "Wir üben, um sicherer zu sprechen.",
+          "finding": "فاعل واحد wir في التمرين والغرض من الكلام."
+        },
+        {
+          "text": "Ich übe jeden Tag, damit ich sicherer spreche.",
+          "finding": "فاعل واحد ich مع damit؛ الإضافة تمنع تعليم أن damit تعني دائمًا اختلاف الفاعل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-T08",
+      "text": "**أ — P01: أربع جمل كتابية**\n\nاكتب خطة خيالية من أربع جمل لتعلم مهارة حاسوبية: جملة تحدد المهارة؛ جملة عن دورة وهدفها باستخدام um … zu؛ جملة عن مراجعة وتمهيد للحصة التالية باستخدام um … zu مرة ثانية؛ وجملة عن أمثلة تقدمها جهة التدريس باستخدام damit مع فاعلين مختلفين. احفظ الفاصلة وترتيب المصدر والفعل المصرف. هذه مهمة كتابة فقط؛ لا شرط جهر أو تسجيل أو بيانات حقيقية أو تسجيل فعلي في دورة.\n\n**ب — P02: أربعة أدوار مع الجهر**\n\nاكتب حوارًا خياليًا من أربعة أدوار بين متعلم ومدرّبة: يذكر المتعلم دورة وهدفه الحاسوبي بـ um … zu؛ تقدم المدربة مهام عملية بـ damit لكي يتمكن المتعلم من التدرب؛ يسأل المتعلم متى يناقشان أسئلته؛ وتحدد المدربة غدًا بعد الدورة. اكتب الطرفين بنفسك ثم اقرأهما جهرًا دون شريك أو تسجيل. في damit اجعل المدربة فاعل التقديم والمتعلم فاعل التدرب، والمصرف أخيرًا.",
+      "finding": "ثمانية مطالب محتوى في خطة من أربع جمل وحوار من أربعة أدوار؛ مهمتان مختلفتان لا إجابة مكررة.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "items": [
+        {
+          "text": "تحديد مهارة حاسوبية ضمن خطة خيالية من أربع جمل؛ كتابة فقط.",
+          "finding": "P01.1: تحديد مهارة حاسوبية ضمن خطة خيالية من أربع جمل؛ كتابة فقط."
+        },
+        {
+          "text": "جملة دورة وهدف بـum … zu مع فاعل واحد.",
+          "finding": "P01.2: جملة دورة وهدف بـ um … zu مع فاعل واحد."
+        },
+        {
+          "text": "مراجعة لغرض التحضير بـum … zu ثانية؛ المصدر المنفصل صحيح.",
+          "finding": "P01.3: مراجعة لغرض التحضير بـ um … zu ثانية؛ المصدر المنفصل صحيح."
+        },
+        {
+          "text": "جهة تدريس تقدم أمثلة ليتعلم الشخص؛ damit بفاعلين مختلفين.",
+          "finding": "P01.4: جهة تدريس تقدم أمثلة ليتعلم الشخص؛ damit بفاعلين مختلفين."
+        },
+        {
+          "text": "المتعلم يذكر دورة وهدفًا بـum … zu.",
+          "finding": "P02.1: المتعلم يذكر دورة وهدفًا بـ um … zu."
+        },
+        {
+          "text": "المدربة تقدم تمرينًا لغرض تدرب المتعلم بـdamit مع فاعلين مختلفين.",
+          "finding": "P02.2: المدربة تقدم تمرينًا لغرض تدرب المتعلم بـ damit مع فاعلين مختلفين."
+        },
+        {
+          "text": "سؤال المتعلم عن وقت مناقشة الأسئلة.",
+          "finding": "P02.3: سؤال المتعلم عن وقت مناقشة الأسئلة."
+        },
+        {
+          "text": "جواب المدربة غدًا بعد الدورة؛ الطرفان مكتوبان ثم يقرأهما المتعلم جهرًا دون شريك أو تسجيل.",
+          "finding": "P02.4: جواب المدربة غدًا بعد الدورة؛ الطرفان مكتوبان ثم يقرأهما المتعلم جهرًا دون شريك أو تسجيل."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q01",
+      "text": "ما معنى **der Lernstoff** في سياق الدورة؟",
+      "finding": "der Lernstoff هو محتوى المادة التعليمية التي يراجعها المتعلم.",
+      "sourceIds": [],
+      "options": [
+        "المادة التعليمية التي يدرسها المتعلم.",
+        "الشهادة التي يحصل عليها في النهاية.",
+        "مجموعة من الزملاء للتعلّم."
+      ],
+      "answer": "المادة التعليمية التي يدرسها المتعلم.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-04-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "المادة التعليمية التي يدرسها المتعلم.",
+          "correct": true,
+          "finding": "الصحيح: المادة التعليمية هي Lernstoff."
+        },
+        {
+          "text": "الشهادة التي يحصل عليها في النهاية.",
+          "correct": false,
+          "finding": "هذه Zertifikat لا معنى المادة."
+        },
+        {
+          "text": "مجموعة من الزملاء للتعلّم.",
+          "correct": false,
+          "finding": "هذه Lerngruppe لا معنى Lernstoff."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q02",
+      "text": "أكمل بهدفٍ والفاعل واحد في الجملتين: **Ich lerne jeden Tag, ___ die Prüfung zu bestehen.**",
+      "finding": "اكتب um فقط لأن zu موجودة مع bestehen، والفاعل المفهوم ich. damit جائزة مع الفاعل نفسه إذا أعدنا بناء الجملة: damit ich die Prüfung bestehe؛ لا تلائم الفراغ بالبنية الحالية.",
+      "sourceIds": [],
+      "options": [
+        "damit",
+        "um",
+        "weil"
+      ],
+      "answer": "um",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-04-T01"
+      ],
+      "optionReview": [
+        {
+          "text": "damit",
+          "correct": false,
+          "finding": "damit تحتاج فاعلًا ومصرفًا فلا تلائم البنية الموجودة؛ ليست خاطئة دائمًا مع الفاعل نفسه."
+        },
+        {
+          "text": "um",
+          "correct": true,
+          "finding": "um صحيحة لأن zu موجودة مع bestehen والفاعل واحد."
+        },
+        {
+          "text": "weil",
+          "correct": false,
+          "finding": "weil للسبب وتحتاج تابعة مصرفة، لا الغرض والبنية الحالية."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q03",
+      "text": "أكمل مع وضع الفعل في نهاية جملة **damit**: **Die Plattform bietet Videos an, damit die Lernenden alles besser ___.** (verstehen können)",
+      "finding": "فيتابعة damit يأتي المصرف können أخيرًا، ويسبقه المصدر verstehen: verstehen können، لا können verstehen. ترتيب المصدر والمصرف هو المقصود، لا أنه يتبع المصرف.",
+      "sourceIds": [],
+      "options": [
+        "können verstehen",
+        "zu verstehen",
+        "verstehen können"
+      ],
+      "answer": "verstehen können",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-04-T02"
+      ],
+      "optionReview": [
+        {
+          "text": "können verstehen",
+          "correct": false,
+          "finding": "können verstehen يعكس ترتيب المصدر قبل المصرف النهائي في هذه التابعة."
+        },
+        {
+          "text": "zu verstehen",
+          "correct": false,
+          "finding": "zu verstehen لا يوفر فعلًا مصرفًا للتابعة ذات الفاعل الصريح؛ المطلوب verstehen können، لا تركيب مصدر مع zu."
+        },
+        {
+          "text": "verstehen können",
+          "correct": true,
+          "finding": "verstehen können صحيحة؛ المصدر أولًا والمصرف können أخيرًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q04",
+      "text": "في الجملة **Die Lehrerin erklärt die Aufgabe, damit alle sie verstehen**، هل الفاعل واحد أم فاعلان مختلفان؟",
+      "finding": "الفاعلان مختلفان: المعلمة تشرح، وجميع المتعلمين يفهمون؛ لذلك تلائمها جملة damit.",
+      "sourceIds": [],
+      "options": [
+        "فاعل واحد: die Lehrerin في الجزأين.",
+        "فاعلان مختلفان: die Lehrerin ثم alle.",
+        "لا يوجد فاعل في جملة damit."
+      ],
+      "answer": "فاعلان مختلفان: die Lehrerin ثم alle.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-04-T04",
+        "DL-B1-04-T07"
+      ],
+      "optionReview": [
+        {
+          "text": "فاعل واحد: die Lehrerin في الجزأين.",
+          "correct": false,
+          "finding": "الفاعل الثاني alle لا die Lehrerin؛ sie مفعول في الجملة."
+        },
+        {
+          "text": "فاعلان مختلفان: die Lehrerin ثم alle.",
+          "correct": true,
+          "finding": "الصحيح: Lehrerin ثم alle؛ مرجع sie هو Aufgabe."
+        },
+        {
+          "text": "لا يوجد فاعل في جملة damit.",
+          "correct": false,
+          "finding": "damit لها فاعل صريح alle؛ حذف الفاعل في um لا ينطبق عليها."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q05",
+      "text": "Für welche Weiterbildung hat sich Farid angemeldet?",
+      "finding": "تذكر القراءة تسجيل Farid في مجال الحساب/معالجة البيانات بالجداول الإلكترونية؛ لا اسم برنامج بعينه ولا إكمال الدورة أو حصوله على الشهادة.",
+      "sourceIds": [],
+      "options": [
+        "Für Kommunikation.",
+        "Für Tabellenkalkulation.",
+        "Für Bewegung und Fitness."
+      ],
+      "answer": "Für Tabellenkalkulation.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-04-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Für Kommunikation.",
+          "correct": false,
+          "finding": "التواصل مجال الاستماع لا قراءة Farid."
+        },
+        {
+          "text": "Für Tabellenkalkulation.",
+          "correct": true,
+          "finding": "الجداول هي المجال المذكور، لا اسم برنامج محدد."
+        },
+        {
+          "text": "Für Bewegung und Fitness.",
+          "correct": false,
+          "finding": "اللياقة لم تُذكر وليست ترجمة Tabellenkalkulation."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q06",
+      "text": "Wann besucht Farid den Kurs?",
+      "finding": "يحضر Farid الدورة مساءً: Er besucht den Kurs am Abend.",
+      "sourceIds": [],
+      "options": [
+        "Am Morgen.",
+        "Am Wochenende.",
+        "Am Abend."
+      ],
+      "answer": "Am Abend.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-04-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Am Morgen.",
+          "correct": false,
+          "finding": "الصباح لقراءة مواد دورة التواصل لا حضور Farid."
+        },
+        {
+          "text": "Am Wochenende.",
+          "correct": false,
+          "finding": "نهاية الأسبوع لمراجعة المادة لا وقت الحضور."
+        },
+        {
+          "text": "Am Abend.",
+          "correct": true,
+          "finding": "المساء وقت الحضور في الجملة الثالثة."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q07",
+      "text": "Wozu gibt die Lehrkraft Beispiele?",
+      "finding": "تقدّم جهة التدريس أمثلة بهدف تمكين المشاركين من التدريب العملي على الوظائف الجديدة. Lehrkraft قد تشير إلى معلم أو معلمة؛ لا يثبت التركيب تحقق الإتقان بالفعل.",
+      "sourceIds": [],
+      "options": [
+        "Damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+        "Damit Farid den Kurs am Morgen besuchen kann.",
+        "Um die Lerngruppe aufzulösen."
+      ],
+      "answer": "Damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-04-T05"
+      ],
+      "optionReview": [
+        {
+          "text": "Damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+          "correct": true,
+          "finding": "الصحيح: غرض تمكين المشاركين من التدريب، لا إثبات الإتقان."
+        },
+        {
+          "text": "Damit Farid den Kurs am Morgen besuchen kann.",
+          "correct": false,
+          "finding": "الأمثلة لا تغير وقت الحضور إلى الصباح؛ الحضور مساءً في النص."
+        },
+        {
+          "text": "Um die Lerngruppe aufzulösen.",
+          "correct": false,
+          "finding": "حل المجموعة ليس الغرض المذكور؛ لا نحكم باستحالة التركيب نحويًا في سياق آخر."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q08",
+      "text": "In welchem Bereich macht die Person eine Weiterbildung?",
+      "finding": "المجال في الاستماع هو التواصل. جنس الشخص الراوي واسمه غير مذكورين؛ die Person مؤنث نحوي، ولا نخلطه بـ Farid في قراءة الجداول.",
+      "sourceIds": [],
+      "options": [
+        "Im Bereich Tabellenkalkulation.",
+        "Im Bereich Kommunikation.",
+        "Im Bereich Gesundheit."
+      ],
+      "answer": "Im Bereich Kommunikation.",
+      "answerIndex": 1,
+      "sourceTaskIds": [
+        "DL-B1-04-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Im Bereich Tabellenkalkulation.",
+          "correct": false,
+          "finding": "مجال Farid في القراءة لا مجال الراوي في الاستماع."
+        },
+        {
+          "text": "Im Bereich Kommunikation.",
+          "correct": true,
+          "finding": "التواصل هو المذكور؛ لا اسم أو جنس صريح للراوي."
+        },
+        {
+          "text": "Im Bereich Gesundheit.",
+          "correct": false,
+          "finding": "الصحة لم تذكر في الاستماع."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q09",
+      "text": "Wann liest die Person die Kursunterlagen?",
+      "finding": "يذكر الشخص الراوي قراءة مواد الدورة صباحًا استعدادًا للحصة؛ لا نخلطها بالحضور مساءً في قراءة Farid أو مجموعة التعلم الأسبوعية.",
+      "sourceIds": [],
+      "options": [
+        "Am Morgen.",
+        "Am Abend.",
+        "Einmal pro Woche."
+      ],
+      "answer": "Am Morgen.",
+      "answerIndex": 0,
+      "sourceTaskIds": [
+        "DL-B1-04-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Am Morgen.",
+          "correct": true,
+          "finding": "الصباح ورد لقراءة مواد الدورة."
+        },
+        {
+          "text": "Am Abend.",
+          "correct": false,
+          "finding": "المساء في قراءة Farid للحضور، لا جواب هذا السؤال."
+        },
+        {
+          "text": "Einmal pro Woche.",
+          "correct": false,
+          "finding": "مرة أسبوعيًا للمجموعة لا وقت قراءة المواد."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-Q10",
+      "text": "Mit wem lernt die Person einmal pro Woche?",
+      "finding": "مرة أسبوعيًا مع زميلتين في مجموعة تعلم. Kolleginnen تحدد أن الزميلتين امرأتان، لكنها لا تحدد جنس الراوي.",
+      "sourceIds": [],
+      "options": [
+        "Mit ihrer Trainerin.",
+        "Allein zu Hause.",
+        "Mit zwei Kolleginnen in einer Lerngruppe."
+      ],
+      "answer": "Mit zwei Kolleginnen in einer Lerngruppe.",
+      "answerIndex": 2,
+      "sourceTaskIds": [
+        "DL-B1-04-T06"
+      ],
+      "optionReview": [
+        {
+          "text": "Mit ihrer Trainerin.",
+          "correct": false,
+          "finding": "المدربة تشرح المصطلحات وليست عضوًا مذكورًا في المجموعة الأسبوعية."
+        },
+        {
+          "text": "Allein zu Hause.",
+          "correct": false,
+          "finding": "النص يذكر زميلتين، لا الدراسة وحيدًا في البيت؛ المكان غير مذكور أصلًا."
+        },
+        {
+          "text": "Mit zwei Kolleginnen in einer Lerngruppe.",
+          "correct": true,
+          "finding": "زميلتان في مجموعة كما في آخر جملة؛ لا افتراض لجنس الراوي."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-P01",
+      "text": "اكتب خطة خيالية من أربع جمل لتعلم مهارة حاسوبية: جملة تحدد المهارة؛ جملة عن دورة وهدفها باستخدام um … zu؛ جملة عن مراجعة وتمهيد للحصة التالية باستخدام um … zu مرة ثانية؛ وجملة عن أمثلة تقدمها جهة التدريس باستخدام damit مع فاعلين مختلفين. احفظ الفاصلة وترتيب المصدر والفعل المصرف. هذه مهمة كتابة فقط؛ لا شرط جهر أو تسجيل أو بيانات حقيقية أو تسجيل فعلي في دورة.",
+      "finding": "المهمة ومعاييرها الثلاثة والنموذج والإقرار متطابقة؛ الحد الحرفي بوابة دليل، لا قياس مستوى أو نطق.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-04-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "أربع جمل تتضمن المهارة ودورة وهدفها ومراجعة بهدف التحضير وأمثلة من جهة التدريس؛ كتابة فقط.",
+        "meaningClarity": "خطوات تعلم خيالية مترابطة وأهدافها واضحة؛ لا تستنتج إنجاز الهدف أو حصول شهادة من مجرد صيغة الغرض.",
+        "targetSkill": "um … zu مرتان بفاعل مفهوم واحد، و damit بفاعلين مختلفين؛ فاصلة ومصدر مع zu ومصرف أخير، والمصدر قبل المصرف عند وجود فعل ناقص."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 220,
+        "speakAloud": false,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربع جمل تتضمن المهارة ودورة وهدفها ومراجعة بهدف التحضير وأمثلة من جهة التدريس؛ كتابة فقط.",
+          "finding": "أربع جمل بمحتوى مختلف، دون شرط جهر؛ النموذج يفي بالمطالب الأربعة."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "خطوات تعلم خيالية مترابطة وأهدافها واضحة؛ لا تستنتج إنجاز الهدف أو حصول شهادة من مجرد صيغة الغرض.",
+          "finding": "يربط خطوات الدارس الخيالية بأهداف مفهومة، ولا يجعل الغرض دليل نجاح."
+        },
+        {
+          "key": "targetSkill",
+          "text": "um … zu مرتان بفاعل مفهوم واحد، و damit بفاعلين مختلفين؛ فاصلة ومصدر مع zu ومصرف أخير، والمصدر قبل المصرف عند وجود فعل ناقص.",
+          "finding": "مرتان um ومرة damit مع اختلاف الفاعل؛ الفاصلة و zu والمصرف صحيحة في النموذج، لكن الإقرار ليس تصحيحًا آليًا."
+        }
+      ]
+    },
+    {
+      "id": "DL-B1-04-P02",
+      "text": "اكتب حوارًا خياليًا من أربعة أدوار بين متعلم ومدرّبة: يذكر المتعلم دورة وهدفه الحاسوبي بـ um … zu؛ تقدم المدربة مهام عملية بـ damit لكي يتمكن المتعلم من التدرب؛ يسأل المتعلم متى يناقشان أسئلته؛ وتحدد المدربة غدًا بعد الدورة. اكتب الطرفين بنفسك ثم اقرأهما جهرًا دون شريك أو تسجيل. في damit اجعل المدربة فاعل التقديم والمتعلم فاعل التدرب، والمصرف أخيرًا.",
+      "finding": "المهمة ومعاييرها الثلاثة والنموذج والإقرار متطابقة؛ الحد الحرفي بوابة دليل، لا قياس مستوى أو نطق.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB"
+      ],
+      "sourceTaskIds": [
+        "DL-B1-04-T08"
+      ],
+      "criteria": {
+        "taskCompletion": "أربعة أدوار تتضمن هدف المتعلم وتمرين المدربة وسؤال الوقت وجواب غدًا بعد الدورة؛ الجهر بالدورين.",
+        "meaningClarity": "غرض الدورة وعلاقة التمرين بتدرب المتعلم والخطوة التالية مفهومة، دون تكرار حكاية الاستماع أو ادعاءموعد حقيقي.",
+        "targetSkill": "um … zu لهدف المتعلم، و damit مع فاعلين مختلفين لهدف التمرين؛ الفاصلة صحيحة والمصرف kannst بعد المصدرüben في نمط المثال."
+      },
+      "selfCheck": {
+        "method": "local_self_check",
+        "requiredChecks": [
+          "taskCompletion",
+          "meaningClarity",
+          "targetSkill"
+        ],
+        "minimumResponseCharacters": 210,
+        "speakAloud": true,
+        "audioRequired": false
+      },
+      "criterionReview": [
+        {
+          "key": "taskCompletion",
+          "text": "أربعة أدوار تتضمن هدف المتعلم وتمرين المدربة وسؤال الوقت وجواب غدًا بعد الدورة؛ الجهر بالدورين.",
+          "finding": "أربعة أدوار مع الجهر؛ النص وحده لا يكفي، ولا يلزم شريك أو تسجيل."
+        },
+        {
+          "key": "meaningClarity",
+          "text": "غرض الدورة وعلاقة التمرين بتدرب المتعلم والخطوة التالية مفهومة، دون تكرار حكاية الاستماع أو ادعاءموعد حقيقي.",
+          "finding": "الغرض والتمرين والوقت مفهومة؛ غدًا موعد خيالي لا مهمة تقويم حقيقية."
+        },
+        {
+          "key": "targetSkill",
+          "text": "um … zu لهدف المتعلم، و damit مع فاعلين مختلفين لهدف التمرين؛ الفاصلة صحيحة والمصرف kannst بعد المصدرüben في نمط المثال.",
+          "finding": "um لهدف المتعلم و damit لاختلاف الفاعل؛ üben قبل kannst في النموذج."
+        }
+      ]
+    },
+    {
+      "id": "plan-model-01",
+      "text": "Ich möchte meine Computerkenntnisse verbessern.",
+      "finding": "أمنية تعلم مهارة حاسوبية لا تحققها مسبقًا؛ möchte في الرئيسية مقبولة.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "plan-model-02",
+      "text": "Ich besuche einen Onlinekurs, um neue Funktionen zu lernen.",
+      "finding": "دورة بهدف التعلم، و um … zu مع ich نفسه.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "plan-model-03",
+      "text": "Ich wiederhole die Aufgaben, um mich auf den nächsten Unterricht vorzubereiten.",
+      "finding": "مراجعة لغرض الاستعداد، و mich بحسب الشخص و zu داخل vorzubereiten.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "plan-model-04",
+      "text": "Die Lehrkraft gibt mir Beispiele, damit ich die Funktionen selbstständig anwenden kann.",
+      "finding": "جهة التدريس تعطي الأمثلة و ich يطبق؛ anwenden مصدر قبل kann المصرف.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "coaching-model-01",
+      "text": "Lernender: Ich mache einen Onlinekurs, um meine Computerkenntnisse zu verbessern.",
+      "finding": "المتعلم يحدد الدورة والهدف بـ um … zu؛ Computerkenntnisse تحفظ موضوع المهمة.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "coaching-model-02",
+      "text": "Trainerin: Ich gebe dir praktische Aufgaben, damit du neue Funktionen üben kannst.",
+      "finding": "المدربة تعطي والمتعلم يتدرب؛ du مع kannst والمصدر üben قبله.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "coaching-model-03",
+      "text": "Lernender: Wann besprechen wir meine Fragen?",
+      "finding": "سؤال Wann ثم المصرف besprechen و wir؛ طلب عملي لوقت الخطوة التالية.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "coaching-model-04",
+      "text": "Trainerin: Wir besprechen sie morgen nach dem Kurs.",
+      "finding": "الجواب غدًا بعد الدورة؛ sie ترجع إلى Fragen، لا جهة التدريس أو وقت قراءة Farid.",
+      "sourceIds": [
+        "INF",
+        "FINAL",
+        "SUB",
+        "SEP"
+      ]
+    },
+    {
+      "id": "card-01",
+      "text": "- **Ich lerne, um mich weiterzubilden.** → أتعلم لكي أتابع تعليمي.",
+      "finding": "فاعل واحد و mich مع weiterzubilden؛ مواصلة التعليم هدف.",
+      "sourceIds": [
+        "INF",
+        "SEP"
+      ]
+    },
+    {
+      "id": "card-02",
+      "text": "- **… damit alle Teilnehmenden es verstehen.** → … لكي يفهمه جميع المشاركين.",
+      "finding": "تابعة مقتطفة لا خبر مستقل؛ es إحالة محايدة تحتاج سياقًا، و alle فاعل جمع.",
+      "sourceIds": [
+        "SUB"
+      ]
+    },
+    {
+      "id": "card-03",
+      "text": "- **die Weiterbildung** → التعليم المستمر.",
+      "finding": "die Weiterbildung مؤنث: تعليم مستمر لا وثيقة.",
+      "sourceIds": []
+    },
+    {
+      "id": "card-04",
+      "text": "- **das Zertifikat** → الشهادة.",
+      "finding": "das Zertifikat محايد: شهادة بلا وعد اعتماد أو صدور عن التطبيق.",
+      "sourceIds": [
+        "CERT"
+      ]
+    },
+    {
+      "id": "DL-B1-04-AUD-PHR-01",
+      "text": "مفردات التعلّم المستمر",
+      "finding": "مطابقة التفريغ المكتوب ومراجع المصدر، لا استماع. ready حالة تاريخية محفوظة وليست اعتمادًا جديدًا؛ الأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Die Weiterbildung, die Weiterbildungen.",
+          "finding": "اسم مؤنث، جمعه Weiterbildungen؛ تعليم أو تدريب مستمر لا وعد ترقية. يختلف مجال القراءة عن الاستماع."
+        },
+        {
+          "text": "Die Fähigkeit, die Fähigkeiten.",
+          "finding": "اسم مؤنث، جمعه Fähigkeiten؛ مهارة أو قدرة، لا شهادة."
+        },
+        {
+          "text": "Die Kenntnis, die Kenntnisse.",
+          "finding": "اسم مؤنث، جمعه Kenntnisse؛ معارف حاسوبية في السياق، و Computerkenntnisse كلمة مركبة لا اسم برنامج."
+        },
+        {
+          "text": "Die Plattform, die Plattformen.",
+          "finding": "اسم مؤنث، جمعه Plattformen؛ منصة تعليمية، لا اسم خدمة أو تسجيل تجاري مطلوب."
+        },
+        {
+          "text": "Die Tabellenkalkulation.",
+          "finding": "صُحح المعنى من برامج جمعًا إلى مجال الحساب بالجداول. جمع Tabellenkalkulationen صحيح ومكتوب فقط؛ التسجيل ينطق المفرد."
+        },
+        {
+          "text": "Die Kursunterlage, die Kursunterlagen.",
+          "finding": "مفرد مؤنث Kursunterlage وجمع Kursunterlagen؛ مواد الدورة التي تُقرأ صباحًا، لا Notizen التي تراجع بعد الدورة."
+        },
+        {
+          "text": "Der Lernstoff.",
+          "finding": "Lernstoff مذكر، مادة يدرسها المتعلم، لا شهادة أو مجموعة. الشرطة تعني عدم تقديم جمع في هذا السياق، لا استحالة كل استعمال جمع."
+        },
+        {
+          "text": "Das Lernziel, die Lernziele.",
+          "finding": "Lernziel محايد وجمعه Lernziele؛ الهدف المقصود، لا دليل نجاح فيه."
+        },
+        {
+          "text": "Das Zertifikat, die Zertifikate.",
+          "finding": "Zertifikat محايد وجمعه Zertifikate؛ الشهادة مشروطة بالمشاركة المنتظمة في القصة، لا مستلمة بالفعل أو رسمية بالضرورة."
+        },
+        {
+          "text": "Die Teilnahme.",
+          "finding": "Teilnahme اسم مؤنث بمعنى المشاركة؛ لا جمع مدرّس هنا، ولا مساواة بين التسجيل والمشاركة المنتظمة."
+        },
+        {
+          "text": "Die Voraussetzung, die Voraussetzungen.",
+          "finding": "Voraussetzung مؤنث وجمعه Voraussetzungen؛ شرط مسبق، ورابط wenn في نص الشهادة يحدد شرطًا لا غرضًا."
+        },
+        {
+          "text": "Sich anmelden für.",
+          "finding": "sich anmelden für انعكاسي، و meldet sich an تصريف منفصل؛ Kurs بعد für بالنصب. مثال Duden يستعمل zu، فلا ننسب إليه توثيق für حرفيًا."
+        },
+        {
+          "text": "Wiederholen.",
+          "finding": "wiederholen هنا مراجعة أو تكرار، غير منفصل، لا wieder holen بمعنى جلب من جديد؛ يرتبط بالمادة في القراءة وبالملاحظات في الاستماع."
+        },
+        {
+          "text": "Selbstständig.",
+          "finding": "selbstständig صفة أو حال تعني بصورة مستقلة هنا، لا عملًا حرًا أو إتقانًا مثبتًا. selbstständiger في الحوار درجة مقارنة مقصودة."
+        },
+        {
+          "text": "Die Lerngruppe, die Lerngruppen.",
+          "finding": "Lerngruppe مؤنث وجمعه Lerngruppen؛ مجموعة دراسة، لا مؤسسة معينة. أعضاؤها في الاستماع زميلتان مع الراوي."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-04-AUD-MODEL-01",
+      "text": "أمثلة الغاية بـum … zu وdamit",
+      "finding": "مطابقة التفريغ المكتوب ومراجع المصدر، لا استماع. ready حالة تاريخية محفوظة وليست اعتمادًا جديدًا؛ الأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Ich mache einen Onlinekurs, um meine Kenntnisse zu erweitern.",
+          "finding": "ich واحد في النشاط والهدف؛ المصدر erweitern مع zu والفاصلة بعد الرئيسية. توسيع المعارف غرض لا إنجاز مثبت."
+        },
+        {
+          "text": "Sie wiederholt den Lernstoff, um sich auf die Prüfung vorzubereiten.",
+          "finding": "sie فاعل المراجعة والتحضير نفسه، و sich انعكاسي للغائب؛ zu داخل vorzubereiten. لا ادعاء نجاح الامتحان."
+        },
+        {
+          "text": "Der Kurs bietet Übungen an, damit die Teilnehmenden selbstständig lernen können.",
+          "finding": "Der Kurs مقابل die Teilnehmenden؛ an منفصلة في bietet ... an. lernen مصدر قبل können المصرف؛ إتاحة التعلم لا إثباته."
+        },
+        {
+          "text": "Die Lehrerin erklärt die Aufgabe, damit alle sie verstehen.",
+          "finding": "Die Lehrerin تشرح و alle فاعل الفهم؛ sie مفعول يعود إلى die Aufgabe، لا المعلمة. verstehen مصرف جمع وإن طابق شكل المصدر."
+        },
+        {
+          "text": "Wir bilden eine Lerngruppe, um schwierige Themen gemeinsam zu besprechen.",
+          "finding": "Wir نفسه في بناء المجموعة ومناقشتها؛ besprechen غير منفصل و zu قبله. الجملة المسجلة أضيفت حرفيًا، وليست آخر الحوار الذي يبدأ ich."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-04-AUD-DLG-01",
+      "text": "حوار: Nadia وFarid عن دورة مهنية",
+      "finding": "مطابقة التفريغ المكتوب ومراجع المصدر، لا استماع. ready حالة تاريخية محفوظة وليست اعتمادًا جديدًا؛ الأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Warum hast du dich für den Onlinekurs angemeldet?",
+          "finding": "Nadia تسأل سبب التسجيل الماضي: Perfekt مع hast ... angemeldet انعكاسي، وليس إكمال الدورة."
+        },
+        {
+          "text": "Ich möchte meine Computerkenntnisse erweitern, um bei der Arbeit selbstständiger zu werden.",
+          "finding": "Farid يريد توسيع معارفه ليصبح أكثر استقلالية؛ ich نفسه في الغرض، ولا نجاح مهني مثبت."
+        },
+        {
+          "text": "Gibt es Übungen?",
+          "finding": "Gibt es سؤال عن وجود التمارين، لا نوعها أو عددها."
+        },
+        {
+          "text": "Ja. Die Lehrerin stellt kurze Aufgaben bereit, damit wir den Lernstoff regelmäßig wiederholen können.",
+          "finding": "Lehrerin تقدم مهام قصيرة لتكرار المادة؛ هي مقابل wir. wiederholen مصدر قبل können؛ Ja جملة جواب داخل الدور لا دور صوتي مستقل."
+        },
+        {
+          "text": "Lernst du allein?",
+          "finding": "Lernst du allein سؤال عن طريقة الدراسة، لا رأي سلبي في المجموعة."
+        },
+        {
+          "text": "Meistens. Manchmal treffe ich mich mit einer Lerngruppe, damit wir schwierige Themen gemeinsam besprechen.",
+          "finding": "Meistens وحيدًا و Manchmal جماعيًا؛ ich غير wir ولو شملته المجموعة. besprechen مصرف جمع؛ لا ادعاء أن كل الدراسة جماعية أو في وقت محدد."
+        }
+      ],
+      "segmentCount": 6,
+      "voices": [
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03",
+        "voice-02",
+        "voice-03"
+      ]
+    },
+    {
+      "id": "DL-B1-04-AUD-READ-01",
+      "text": "قراءة: تدريب Farid على الجداول الحسابية",
+      "finding": "مطابقة التفريغ المكتوب ومراجع المصدر، لا استماع. ready حالة تاريخية محفوظة وليست اعتمادًا جديدًا؛ الأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Farid arbeitet in einem kleinen Betrieb.",
+          "finding": "Farid يعمل في منشأة صغيرة؛ لا اسم شركة أو دولة أو جنس مدرس في الجملة."
+        },
+        {
+          "text": "Er hat sich für eine Weiterbildung im Bereich Tabellenkalkulation angemeldet.",
+          "finding": "سجّل في تدريب الجداول، لا التواصل؛ التسجيل الماضي لا يضمن الإكمال أو الشهادة."
+        },
+        {
+          "text": "Er besucht den Kurs am Abend, um seine Kenntnisse zu verbessern.",
+          "finding": "الحضور مساءً لتحسين المعارف؛ الفاعل واحد، والتحسين هدف لا نتيجة مثبتة."
+        },
+        {
+          "text": "Die Lehrkraft gibt Beispiele, damit die Teilnehmenden die neuen Funktionen praktisch üben können.",
+          "finding": "Lehrkraft لا يحدد جنس المدرس؛ الأمثلة لغرض الممارسة، والمصدر üben قبل können المصرف."
+        },
+        {
+          "text": "Farid wiederholt den Lernstoff am Wochenende, um sich auf die Abschlussaufgabe vorzubereiten.",
+          "finding": "المراجعة نهاية الأسبوع للتحضير لمهمة ختامية، لا امتحان نجح فيه؛ مصدر انعكاسي بـ sich و vorzubereiten."
+        },
+        {
+          "text": "Am Ende erhalten die Teilnehmenden ein Zertifikat, wenn sie regelmäßig am Kurs teilnehmen.",
+          "finding": "الشهادة في النهاية مشروطة بالمشاركة المنتظمة؛ لا إثبات لتسلم Farid لها، ولا اعتماد عام أو شرط صادر عن التطبيق."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-02"
+      ]
+    },
+    {
+      "id": "DL-B1-04-AUD-LST-01",
+      "text": "استماع: خطة تعلّم في مجال التواصل",
+      "finding": "مطابقة التفريغ المكتوب ومراجع المصدر، لا استماع. ready حالة تاريخية محفوظة وليست اعتمادًا جديدًا؛ الأصوات والمسارات و MP3 لم تتغير.",
+      "sourceIds": [],
+      "items": [
+        {
+          "text": "Ich mache eine Weiterbildung im Bereich Kommunikation.",
+          "finding": "التدريب في التواصل؛ لا اسم للراوي ولا استدلال بالصوت على جنسه."
+        },
+        {
+          "text": "Ich lese die Kursunterlagen am Morgen, um mich auf den Unterricht vorzubereiten.",
+          "finding": "قراءة المواد صباحًا للاستعداد؛ mich للمتكلم و vorzubereiten منفصل مع zu. لا صلة بمساء Farid."
+        },
+        {
+          "text": "Unsere Trainerin erklärt neue Begriffe langsam, damit alle Teilnehmenden sie verstehen.",
+          "finding": "Trainerin مؤنثة في المعنى، والشرح البطيء لغرض الفهم. sie تعود إلى Begriffe؛ verstehen مصرف جمع فقط، بلا können."
+        },
+        {
+          "text": "Nach dem Kurs wiederhole ich die Notizen, um die wichtigsten Punkte zu behalten.",
+          "finding": "مراجعة الملاحظات بعد الدورة بغرض الاحتفاظ بالنقاط؛ behalten غير منفصل و zu قبله، وليس دليلًا على تذكر فعلي."
+        },
+        {
+          "text": "Einmal pro Woche lerne ich mit zwei Kolleginnen in einer Lerngruppe.",
+          "finding": "مرة أسبوعيًا مع زميلتين في مجموعة؛ لا اسم أو مكان أو يوم محدد. جنس الزميلتين لا يثبت جنس الراوي."
+        }
+      ],
+      "segmentCount": 1,
+      "voices": [
+        "voice-03"
+      ]
+    }
+  ],
+  "unitCount": 103,
+  "exerciseSubItemCount": 34,
+  "sourceHashes": {
+    "content/B1/lesson-04-continuing-education-damit.md": "c83f32f105b4aaa947e9c694a8b0b28be3f712edd1c88642405327bd1595a913",
+    "content/B1/lesson-04-continuing-education-damit.assessment.json": "350fc6a9637b3ef423b68250f60f98ef9400353c896a074a998ef59142fe6507"
+  },
+  "audioSnapshotHashes": {
+    "DL-B1-04-AUD-PHR-01": "0dcee633e9def185081b161f10c2bb996c3b076e416469ca9b8c9b74e90affd2",
+    "DL-B1-04-AUD-MODEL-01": "b152c6d913ddbd0ab504150d8a3670b5561d458dc1ab6601b05d5206b8021c5d",
+    "DL-B1-04-AUD-DLG-01": "95cc6a0cb54ad00b2cb9402c103706cc1a6cef64e34540b4304f15768fb42c7e",
+    "DL-B1-04-AUD-READ-01": "5adec2235d2c17bb28d210268d0a5fd703c37a6dd631fdd7efe0627339f496a4",
+    "DL-B1-04-AUD-LST-01": "c078345572cfe18ee21ba898f6109efd09508d76ed4aca2c5ca7a900cc525a6f"
+  },
+  "preservation": {
+    "baseline": "dc5aae5056bd3acfbe1e4c83b43cb2eeb51a6815",
+    "unchangedOptionTexts": 30,
+    "changedOptionTexts": [],
+    "unchangedAnswerIndices": [
+      0,
+      1,
+      2,
+      1,
+      1,
+      2,
+      0,
+      1,
+      0,
+      2
+    ],
+    "unchangedOtherBundledLessons": 52,
+    "unchangedOtherCatalogRows": 1060,
+    "unchangedOtherAudioRegisterRows": 212,
+    "protectedFilesIncludingAudio": 589,
+    "unchangedMp3Files": 474,
+    "playlistByteIdentical": true,
+    "changedAudioRegisterRows": {
+      "DL-B1-04-AUD-MODEL-01": [
+        "source_line",
+        "notes"
+      ],
+      "DL-B1-04-AUD-DLG-01": [
+        "source_line",
+        "planned_output_path"
+      ],
+      "DL-B1-04-AUD-READ-01": [
+        "source_line"
+      ],
+      "DL-B1-04-AUD-LST-01": [
+        "source_line"
+      ]
+    },
+    "unchangedPhraseBankRegisterRow": true
+  },
+  "limits": [
+    "المرجع الخارجي يدعم القاعدة أو المعنى ضمن نطاقه، ولا يثبت حقائق القصة أو يدقق كل مفردة حرفيًا؛ sourceIds ليست شهادة لكل كلمة. الملاحظات بلا مراجع تحليل لغوي أو مقارنة داخلية.",
+    "الصفحات العشر قرئت كاملة، جزء واحد لكل صفحة. نتائج البحث والفيديو وPDF والروابط غير المفتوحة ليست مراجع مقروءة.",
+    "لا مراجعة بشرية شرطًا. هذا فحص نصي مدعوم بالمصادر، لا اكتمال للمشروع أو شهادة CEFR/WCAG أو تحليل صوتي.",
+    "النماذج والإقرارات والحروف دليل عمل لا تصحيح جودة اللغة. المقاصد خيالية بلا شريك أو تسجيل حقيقي في دورة.",
+    "جمع Tabellenkalkulationen مكتوب فقط؛ خامس MODEL أضيف حرفيًا وليس آخر الحوار بحروفه. Nadia02/Farid03 والرواة02/03 محفوظة، ولا اعتماد صوتي جديد.",
+    "التحويلات لا تنسخ möchten/sollen في الأمثلة لأن الغرض ينقل المقصد؛ لا نعمم استحالة هذه الأفعال في كل تابعة غرض.",
+    "نقل الكلمات من التفريغ يقتضي verstehen بلا können؛ إضافتها قد تنتج جملة سليمة المعنى لكنها لا تطابق النص المسجل.",
+    "نجاح forms_keyboard على v81 وv82 في CR34 لا يصلح التذبذب السابق. لم يتغير التطبيق أو الاختبار ولم يثبت سبب العطل السابق."
+  ],
+  "implementationCommits": [
+    "8e26cc5bd59f72e2c8eeab260c5a0e5657ba30e3",
+    "fb7f91302e95075d213d9a41455f873a37671507"
+  ],
+  "qualityChecks": {
+    "status": "passed_with_documented_limits",
+    "bundleBytes": 2046201,
+    "cacheVersion": "v82",
+    "build": "PASS",
+    "verify": "PASS",
+    "reviewGuards": 34,
+    "nodeSuites": [
+      "progression",
+      "service_worker",
+      "session_persistence",
+      "study_time",
+      "daily_plan"
+    ],
+    "browserSuites": [
+      "browser",
+      "accessibility_update",
+      "accessibility_audit",
+      "forms_keyboard",
+      "narrow_layout"
+    ],
+    "browserVersion": "143.0.7499.0",
+    "browserRuns": [
+      "v81 all five passed",
+      "v82 all five passed"
+    ],
+    "axe": {
+      "states": 149,
+      "selectedRuleViolations": 0,
+      "incompleteOccurrences": 102,
+      "incompleteNodeOccurrences": 230
+    },
+    "narrowStates": 126,
+    "formsIntermittency": "CR34 v81/v82 pass at both widths without test retries; historical CR29/CR33 native chooser intermittency remains unresolved; no app/test fix.",
+    "environmentSetup": "First browser process could not launch: missing libnspr4.so. Extracted temporary al2023 libraries, then tests ran.",
+    "jsSyntax": "PASS",
+    "diffCheck": "PASS"
+  },
+  "campaign": {
+    "reviewedLessons": 33,
+    "totalLessons": 53,
+    "separateGate": true,
+    "remainingLessons": 20,
+    "next": "CR35/B1.5",
+    "planVersion": "2.40",
+    "merged": false
+  },
+  "delivery": {
+    "implementationCommits": [
+      "8e26cc5bd59f72e2c8eeab260c5a0e5657ba30e3",
+      "fb7f91302e95075d213d9a41455f873a37671507"
+    ],
+    "branch": "arena/01a1036f-deutschlern",
+    "lastQueriedPrHead": "308d1f16f3ce8b870aadd6c4732ce0c531203154",
+    "prState": "OPEN",
+    "mergedAt": null,
+    "implementationDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "implementationDeployments": [],
+    "remoteUiTested": false,
+    "productionTested": false,
+    "reportCommit": "308d1f16f3ce8b870aadd6c4732ce0c531203154",
+    "reportPushed": true,
+    "reportHeadMatchedOrigin": true,
+    "reportDeployment": "failure: Deployment rate limited — retry in 24 hours.",
+    "reportDeployments": [],
+    "receiptCommit": "Resolve by title Record CR34 delivery receipt; deployment not queried."
+  }
+}
