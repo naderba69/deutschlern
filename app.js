@@ -179,6 +179,31 @@ function normalizeExercisePractice(value) {
   return result;
 }
 
+function normalizeMistakeBank(value) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return {};
+  const result = {};
+  for (const [key, item] of Object.entries(value)) {
+    if (!item || typeof item !== 'object' || typeof key !== 'string' || !key.trim()) continue;
+    const prompt = typeof item.prompt === 'string' ? item.prompt.slice(0, 400) : '';
+    if (!prompt) continue;
+    result[key] = {
+      key,
+      scopeId: typeof item.scopeId === 'string' ? item.scopeId : '',
+      lessonId: typeof item.lessonId === 'string' ? item.lessonId : '',
+      level: typeof item.level === 'string' ? item.level : 'A0',
+      questionId: typeof item.questionId === 'string' ? item.questionId : '',
+      prompt,
+      selectedOption: typeof item.selectedOption === 'string' ? item.selectedOption.slice(0, 240) : '',
+      correctOption: typeof item.correctOption === 'string' ? item.correctOption.slice(0, 240) : '',
+      explanation: typeof item.explanation === 'string' ? item.explanation.slice(0, 500) : '',
+      skillTags: Array.isArray(item.skillTags) ? item.skillTags.filter((t) => typeof t === 'string').slice(0, 4) : [],
+      missedCount: Number.isInteger(item.missedCount) && item.missedCount > 0 ? Math.min(item.missedCount, 99) : 1,
+      updatedAt: typeof item.updatedAt === 'string' ? item.updatedAt : dateKey(),
+    };
+  }
+  return result;
+}
+
 function freshState() {
   return {
     profile: { name: 'متعلّم', dailyGoal: DAILY_TIME_REFERENCE_DEFAULT, focus: 'المحادثة', startLevel: 'A0' },
@@ -188,6 +213,7 @@ function freshState() {
     audioTranscriptUnlocks: {},
     performanceEvidence: {},
     exercisePractice: {},
+    mistakeBank: {},
     learningSessions: freshLearningSessions(),
     dailyPlan: null,
     xp: 0,
@@ -221,6 +247,7 @@ function loadState() {
       audioTranscriptUnlocks: saved.audioTranscriptUnlocks && typeof saved.audioTranscriptUnlocks === 'object' ? saved.audioTranscriptUnlocks : {},
       performanceEvidence: saved.performanceEvidence && typeof saved.performanceEvidence === 'object' ? saved.performanceEvidence : {},
       exercisePractice: normalizeExercisePractice(saved.exercisePractice),
+      mistakeBank: normalizeMistakeBank(saved.mistakeBank),
       learningSessions: normalizeLearningSessions(saved.learningSessions),
       dailyPlan: normalizeDailyPlan(saved.dailyPlan),
       studyDays: normalizeStudyDays(saved.studyDays),
@@ -240,6 +267,7 @@ let lessonSession = null;
 let gateSession = null;
 let reviewSession = null;
 let reviewDirection = 'de-ar';
+let reviewSpellDraft = '';
 let lexiconFilter = { query: '', level: 'ALL', focus: 'ALL' };
 let spiralSession = null;
 let mobileMenuOpen = false;
@@ -794,6 +822,11 @@ function analyzePerformanceDraft(task, responseText) {
   };
 }
 
+function renderGermanCharToolbar(targetInputId) {
+  const chars = ['ä', 'ö', 'ü', 'ß', 'Ä', 'Ö', 'Ü'];
+  return `<div class="german-char-toolbar" role="group" aria-label="إدراج الحروف الألمانية الخاصة"><span class="german-char-label">حروف ألمانية (<span lang="de">Umlaute &amp; ß</span>):</span><div class="german-char-buttons">${chars.map((ch) => `<button type="button" class="german-char-btn" data-action="insert-german-char" data-char="${ch}" data-target-input="${escapeHTML(targetInputId)}" lang="de" dir="ltr" aria-label="أدرج الحرف ${ch}">${ch}</button>`).join('')}</div></div>`;
+}
+
 function renderPerformanceTaskHeuristicsInner(task, responseText) {
   const analysis = analyzePerformanceDraft(task, responseText);
   const charBadgeClass = analysis.charsMet ? 'is-ready' : 'is-pending';
@@ -810,7 +843,7 @@ function renderPerformanceTaskHeuristicsInner(task, responseText) {
       return `<span class="heuristic-token ${isUsed ? 'is-used' : ''}" dir="ltr" lang="de">${isUsed ? '✓ ' : ''}${escapeHTML(token)}</span>`;
     }).join('')}</div></div>`
     : '';
-  return `<div class="heuristic-head"><strong>الموجّه اللغوي المحلي (تحقق فوري)</strong><div class="heuristic-metrics"><span class="heuristic-pill ${charBadgeClass}">${analysis.charCount} / ${analysis.minChars} حرفًا</span><span class="heuristic-pill">${analysis.sentenceCount} جمل/أسطر</span></div></div><p class="heuristic-note">${escapeHTML(scriptMessage)}</p>${tokensMarkup}`;
+  return `<div class="heuristic-head"><strong>الموجّه اللغوي المحلي (تحقق فوري)</strong><div class="heuristic-metrics"><span class="heuristic-pill ${charBadgeClass}">${analysis.charCount} / ${analysis.minChars} حرفًا</span><span class="heuristic-pill">${analysis.sentenceCount} جمل/أسطر</span></div></div>${renderGermanCharToolbar(`response-${task?.id || ''}`)}<p class="heuristic-note">${escapeHTML(scriptMessage)}</p>${tokensMarkup}`;
 }
 
 function renderPerformanceTaskHeuristics(task, evidence) {
@@ -1237,15 +1270,32 @@ function getWordContextHint(word, lesson = null) {
     const found = (targetLesson._cachedDeSentences || []).find((line) => regex.test(line) && line.toLowerCase() !== rawWord.toLowerCase());
     if (found) return found;
   }
+  const nounInfo = getNounArticleInfo(rawWord);
+  if (nounInfo) {
+    return `Im Unterricht üben wir das Wort „${nounInfo.article} ${nounInfo.noun}“ im Satz.`;
+  }
   const levelId = targetLesson?.level || word?.level || 'A0';
   const unitNum = targetLesson?.unit || 1;
-  return `${rawWord} — Grundwortschatz in Lektion ${unitNum} (${levelId}).`;
+  return `Wir verwenden „${rawWord}“ aktiv in Lektion ${unitNum} (${levelId}).`;
 }
 
 function getNounArticleInfo(wordText) {
   const match = String(wordText || '').trim().match(/^(der|die|das)\s+([A-ZÄÖÜ][A-Za-zÄÖÜäöüß\-]*)/);
   if (!match) return null;
   return { article: match[1].toLowerCase(), noun: match[2] };
+}
+
+function renderNounGenderBadge(wordText) {
+  const info = getNounArticleInfo(wordText);
+  if (!info) return '';
+  const map = {
+    der: { cls: 'is-masc', label: 'der · مذكر' },
+    die: { cls: 'is-fem', label: 'die · مؤنث' },
+    das: { cls: 'is-neut', label: 'das · محايد' },
+  };
+  const meta = map[info.article];
+  if (!meta) return '';
+  return `<span class="noun-gender-badge ${meta.cls}" dir="auto"><span lang="de" dir="ltr">${escapeHTML(info.article)}</span> · ${meta.label.split(' · ')[1]}</span>`;
 }
 
 function renderDailyPlanAdaptiveGuide(plan) {
@@ -1760,7 +1810,9 @@ function renderA0TransitionCheck() {
 
 function renderQuizAudioHelper(lessonId, question) {
   const promptText = String(question?.prompt || '');
+  const skillTags = Array.isArray(question?.skillTags) ? question.skillTags.map((t) => String(t)) : [];
   const isListeningQuestion = question?.skill === 'listening'
+    || skillTags.some((tag) => /استماع|listening/i.test(tag))
     || /الاستماع|تسمع|الإعلان الصوتي|الرسالة الصوتية|التسجيل الصوتي|المتحدث|في التسجيل/.test(promptText);
   if (!isListeningQuestion) return '';
   const playableStatuses = ['ready', 'generated_pending_acoustic_review'];
@@ -1770,15 +1822,96 @@ function renderQuizAudioHelper(lessonId, question) {
   return `<div class="quiz-audio-helper" dir="auto"><span class="quiz-audio-helper-label">${icon('volume', 15)} <strong>تسجيل الاستماع المرتبط بالسؤال:</strong> استمع مباشرة دون مغادرة السؤال</span><div class="quiz-audio-helper-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(asset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(asset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`;
 }
 
+function renderQuizReadingHelper(lesson, question) {
+  if (!lesson?.contentHtml || !question) return '';
+  const promptText = String(question.prompt || '');
+  const skillTags = Array.isArray(question.skillTags) ? question.skillTags.map((t) => String(t)) : [];
+  const isReadingOrDialogueQuestion = skillTags.some((tag) => /فهم القراءة|فهم الرسالة|فهم البريد|فهم الحوار|فهم خبر|فهم محضر|فهم برنامج|فهم شكوى|فهم الإعلان|تفصيل من النص|تفصيل من الاستطلاع|قراءة قيم الجدول/.test(tag))
+    || /وفق النص|بحسب النص|في الرسالة|في البريد|في المحضر|في الإعلان|في الجدول|laut dem Text|laut der E-Mail|laut der Nachricht/i.test(promptText);
+  if (!isReadingOrDialogueQuestion) return '';
+
+  const html = String(lesson.contentHtml);
+  const sections = [...html.matchAll(/<h2 dir="auto">([^<]+)<\/h2>([\s\S]*?)(?=<h2 dir="auto">|<details class="answer-key">|$)/g)];
+  const wantsDialogue = skillTags.some((tag) => /فهم الحوار/.test(tag)) || /في الحوار/.test(promptText);
+  let targetSection = null;
+  if (wantsDialogue) {
+    targetSection = sections.find((m) => !/الاستماع|استماع/.test(m[1]) && /حوار|محادثة/.test(m[1]));
+  }
+  if (!targetSection) {
+    targetSection = sections.find((m) => !/الاستماع|استماع/.test(m[1]) && /قراءة|نص|رسالة|بريد|إعلان|جدول/.test(m[1]))
+      || sections.find((m) => !/الاستماع|استماع/.test(m[1]) && /حوار|محادثة/.test(m[1]));
+  }
+  let excerptHtml = '';
+  if (targetSection) {
+    const sectionTitle = targetSection[1];
+    let body = targetSection[2]
+      .replace(/<h3 dir="auto">تمرين[\s\S]*$/i, '')
+      .replace(/aria-label="جدول الدرس — استخدم أسهم الاتجاه للتمرير"/g, 'aria-label="جدول النص المرجعي — استخدم أسهم الاتجاه للتمرير"')
+      .trim();
+    if (body) {
+      excerptHtml = `<p class="quiz-reading-section-title" dir="auto"><strong>${escapeHTML(sectionTitle)}</strong></p>${body}`;
+    }
+  }
+  if (!excerptHtml) {
+    const bqMatch = html.match(/<blockquote\b[^>]*>[\s\S]*?<\/blockquote>/);
+    if (bqMatch) excerptHtml = bqMatch[0];
+  }
+  if (!excerptHtml) return '';
+  return `<details class="quiz-reading-helper" dir="auto"><summary>${icon('book', 14)} <span>اعرض نص القراءة أو الحوار المرجعي المرتبط بالسؤال (<span lang="de">Lesetext / Dialog</span>)</span></summary><div class="quiz-reading-helper-body" dir="auto">${excerptHtml}</div></details>`;
+}
+
 function getDisplayedQuizOptionIndices(question, retryAttempt = 0) {
   const count = Array.isArray(question?.options) ? question.options.length : 0;
   const indices = Array.from({ length: count }, (_, idx) => idx);
+  if (count <= 1) return indices;
   const shift = Number(retryAttempt) || 0;
-  if (shift <= 0 || count <= 1) return indices;
-  const qNum = Number(String(question?.id || '').match(/(\d+)$/)?.[1] || 0);
-  const offset = (shift + qNum) % count;
-  if (offset === 0) return indices.slice(1).concat(indices[0]);
-  return indices.slice(offset).concat(indices.slice(0, offset));
+  const qNum = Number(String(question?.id || '').match(/(\d+)$/)?.[1] || 1);
+  const ans = Number.isInteger(question?.answerIndex) && question.answerIndex >= 0 && question.answerIndex < count
+    ? question.answerIndex
+    : 0;
+  const targetPos = ((Math.max(1, qNum) - 1) + shift) % count;
+  const startIdx = (ans - targetPos + count * 10) % count;
+  return Array.from({ length: count }, (_, k) => (startIdx + k) % count);
+}
+
+function recordMistakeBankEntry(scopeId, lesson, question, selectedIndex) {
+  if (!question?.id || !question?.prompt) return;
+  const key = `${scopeId}:${question.id}`;
+  const current = state.mistakeBank?.[key];
+  const nextEntry = {
+    key,
+    scopeId,
+    lessonId: lesson?.id || (scopeId === 'gate:A0-A1' ? 'a0-a1-gate' : ''),
+    level: lesson?.level || 'A0',
+    questionId: question.id,
+    prompt: String(question.prompt).slice(0, 400),
+    selectedOption: String(question.options?.[selectedIndex] ?? '—').slice(0, 240),
+    correctOption: String(question.options?.[question.answerIndex] ?? '—').slice(0, 240),
+    explanation: String(question.explanation || '').slice(0, 500),
+    skillTags: Array.isArray(question.skillTags) ? question.skillTags.slice(0, 4) : [],
+    missedCount: (current?.missedCount || 0) + 1,
+    updatedAt: dateKey(),
+  };
+  const updated = { ...(state.mistakeBank || {}), [key]: nextEntry };
+  const keys = Object.keys(updated);
+  if (keys.length > 60) {
+    delete updated[keys[0]];
+  }
+  state.mistakeBank = updated;
+}
+
+function resolveMistakeBankEntry(scopeId, questionId) {
+  if (!scopeId || !questionId || !state.mistakeBank) return;
+  const key = `${scopeId}:${questionId}`;
+  if (state.mistakeBank[key]) {
+    const next = { ...state.mistakeBank };
+    delete next[key];
+    state.mistakeBank = next;
+  }
+}
+
+function activeMistakeBankItems() {
+  return Object.values(state.mistakeBank || {}).sort((a, b) => (b.missedCount || 1) - (a.missedCount || 1));
 }
 
 function startA0GateQuiz(retry = false) {
@@ -1852,7 +1985,12 @@ function checkA0GateAnswer() {
   const correct = gateSession.selected === question.answerIndex;
   gateSession.checked = true;
   gateSession.answers.push({ selected: gateSession.selected, correct });
-  if (correct) gateSession.correct += 1;
+  if (correct) {
+    gateSession.correct += 1;
+    resolveMistakeBankEntry('gate:A0-A1', question.id);
+  } else {
+    recordMistakeBankEntry('gate:A0-A1', { id: 'a0-a1-gate', level: 'A0' }, question, gateSession.selected);
+  }
   saveState();
   render();
 }
@@ -1969,7 +2107,7 @@ function renderAudioAssets(lessonId, assetIds = null, sectionLabel = '') {
     : '';
   const panelAriaLabel = sectionLabel ? `التسجيلات الصوتية — ${sectionLabel}` : 'التسجيلات الصوتية';
   return `<section class="lesson-audio-panel" aria-label="${escapeHTML(panelAriaLabel)}"><div class="audio-panel-heading"><div><small><span lang="de">HÖREN</span> · الاستماع</small><h2>استمع إلى الألمانية</h2></div><span class="count">${hasPendingReview ? 'متاحة للمراجعة' : 'النسخة النهائية'}</span></div>${reviewNote}<div class="audio-assets-list">${assets.map((asset) => {
-    const transcript = asset.segments.map((segment) => `<div class="audio-transcript-line"><strong dir="auto"${isGermanTextSnippet(segment.speaker) ? ' lang="de"' : ''}>${escapeHTML(segment.speaker)}</strong><span dir="ltr" lang="de">${escapeHTML(segment.text)}</span></div>`).join('');
+    const transcript = asset.segments.map((segment) => `<div class="audio-transcript-line"><button type="button" class="transcript-segment-btn" data-action="play-audio-segment" data-segment-src="${escapeHTML(segment.src)}" data-segment-asset="${escapeHTML(asset.assetId)}" aria-label="استمع إلى سطر ${escapeHTML(segment.speaker)}" title="استمع إلى هذا السطر منفردًا للترديد (Shadowing)">▶</button><strong dir="auto"${isGermanTextSnippet(segment.speaker) ? ' lang="de"' : ''}>${escapeHTML(segment.speaker)}</strong><span dir="ltr" lang="de">${escapeHTML(segment.text)}</span></div>`).join('');
     const transcriptLocked = asset.transcriptPolicy === 'hide_until_first_attempt' && state.audioTranscriptUnlocks?.[asset.assetId] !== true;
     const transcriptView = transcriptLocked
       ? '<p class="audio-transcript-locked">سيظهر النص بعد الاستماع إلى التسجيل مرة كاملة.</p>'
@@ -2105,6 +2243,102 @@ function renderLessonStagesBar(lesson) {
   </div>`;
 }
 
+function extractExerciseKeyTokens(keyHtml) {
+  const plain = String(keyHtml || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&[a-z]+;/gi, ' ');
+  const stopWords = new Set(['تمرين', 'نموذج', 'الحل', 'المفتاح', 'أمثلة', 'مقترح']);
+  const tokens = [];
+  const seen = new Set();
+  for (const match of plain.matchAll(/[A-Za-zÄÖÜäöüß]{2,}/g)) {
+    const token = match[0];
+    const lower = token.toLowerCase();
+    if (stopWords.has(lower) || seen.has(lower)) continue;
+    seen.add(lower);
+    tokens.push(token);
+  }
+  return tokens.slice(0, 10);
+}
+
+function analyzeExerciseDraftAgainstKey(draftText, keyHtml) {
+  const text = String(draftText || '').trim();
+  const targetTokens = extractExerciseKeyTokens(keyHtml);
+  if (!text) {
+    return `<div class="exercise-draft-feedback" dir="auto"><span>اكتب إجابتك بالألمانية ليظهر هنا فحص فوري للمفردات والحروف الخاصة (<span lang="de">ä, ö, ü, ß</span>) قبل كشف المفتاح.</span></div>`;
+  }
+  const hasGerman = /[A-Za-zÄÖÜäöüß]{2,}/.test(text);
+  if (!hasGerman && /[\u0600-\u06FF]{2,}/.test(text)) {
+    return `<div class="exercise-draft-feedback is-warn" dir="auto"><span>تنبيه منهجي: كتبت المحاولة بالعربية؛ حاول صياغة الكلمات أو الجمل المطلوبة بالألمانية.</span></div>`;
+  }
+  const lowerDraft = text.toLowerCase();
+  const matched = targetTokens.filter((tok) => lowerDraft.includes(tok.toLowerCase()));
+  const needsUmlautHint = targetTokens.some((tok) => /[äöüßÄÖÜ]/.test(tok)) && !/[äöüßÄÖÜ]/.test(text) && /(ae|oe|ue|ss)/i.test(text);
+  const umlautNote = needsUmlautHint
+    ? ' · تذكّر استعمال أزرار الحروف الألمانية (ä, ö, ü, ß) أعلاه لضبط الإملاء القياسي.'
+    : '';
+  const matchNote = targetTokens.length
+    ? `طابقت ${matched.length} من ${targetTokens.length} عناصر ألمانية أساسية في مفتاح التمرين${umlautNote}`
+    : `كتبت ${text.split(/\s+/).filter(Boolean).length} كلمات بالألمانية${umlautNote}`;
+  return `<div class="exercise-draft-feedback ${matched.length > 0 ? 'is-good' : ''}" dir="auto"><span>✓ فحص ذاتي فوري: ${escapeHTML(matchNote)}.</span></div>`;
+}
+
+function renderLessonPedagogicalTricks(lesson) {
+  const level = lesson?.level || 'A0';
+  const title = lesson?.title || '';
+  const objective = lesson?.objective || '';
+  const levelFocusTip = {
+    A0: 'ركّز في هذا الدرس التأسيسي على نطق الحروف المركّبة (ch, sch, ei, ie, eu) وحفظ كل اسم جديد مع أداة تعريفه (der / die / das) منذ اللحظة الأولى.',
+    A1: 'انتبه في هذا الدرس لثبات الفعل المصرّف في الموقع الثاني (Position 2) وتغيّر أداة المذكر فقط في حالة المفعول به (der → den / ein → einen / kein → keinen).',
+    A2: 'فرّق في هذا الدرس بين ثبات المكان (Wo? + Dativ: im/auf dem) والحركة نحو الهدف (Wohin? + Akkusativ: ins/auf das)، وضع الفعل في آخر الجملة الفرعية بعد (weil / dass / wenn).',
+    B1: 'اربط أفكارك في هذا الدرس بروابط السبب والتضاد والزمن (obwohl, trotzdem, während, nachdem, damit) مع مراعاة إطار الجملة (Satzklammer) والمبني للمجهول (wird + Partizip II).',
+    B2: 'اعتمد في هذا الدرس على التكثيف الأسلوبي والتحويل بين الصيغ الفعلية والاسمية (Nominalisierung / Verbalisierung) وصيغ الكلام المنقول والبدائل الأكاديمية للمبني للمجهول.'
+  }[level] || '';
+  return `<details class="lesson-daf-tricks-box" dir="auto">
+    <summary><span class="daf-tricks-badge">${icon('spark', 14)} شفرات الإتقان السريع وحيل <span lang="de">DaF</span> لـ ${escapeHTML(title)} (${escapeHTML(level)})</span><span class="daf-tricks-sub">قواعد ذهنية + تنبيهات التداخل اللغوي (<span lang="de">Eselsbrücken &amp; Interferenz-Fallen</span>)</span></summary>
+    <div class="lesson-daf-tricks-body" dir="auto">
+      <p class="daf-tricks-lead"><strong>تركيز الدرس (${escapeHTML(level)}):</strong> ${escapeHTML(levelFocusTip)} (${escapeHTML(objective)})</p>
+      <div class="daf-tricks-grid">
+        <div class="daf-trick-card">
+          <strong>1. شفرة أدوات التعريف والأسماء المركّبة (<span lang="de">Genus &amp; Komposita</span>)</strong>
+          <ul>
+            <li><strong><span lang="de">die</span> (مؤنث دائمًا):</strong> النهايات <code dir="ltr" lang="de">-ung, -heit, -keit, -schaft, -tät, -ion, -ik, -ie, -ur, -in</code> (مثل: <span lang="de">die Wohnung, die Gesundheit</span>).</li>
+            <li><strong><span lang="de">der</span> (مذكر قياسي):</strong> النهايات <code dir="ltr" lang="de">-ig, -ling, -or, -ismus, -ist, -ant</code> وأيام الأسبوع والشهور والفصول (<span lang="de">der Montag, der Sommer</span>).</li>
+            <li><strong><span lang="de">das</span> (محايد قياسي):</strong> النهايات <code dir="ltr" lang="de">-chen, -lein, -ment, -um, -tum, -ma</code>، البادئة <code dir="ltr" lang="de">Ge-</code>، والمصادر كأسماء (<span lang="de">das Mädchen, das Essen</span>).</li>
+            <li><strong>الاسم المركّب (<span lang="de">Kompositum</span>):</strong> الكلمة الأخيرة وحدها تحدّد الأداة (<span lang="de">der Tisch + das Bein = <strong>das</strong> Tischbein</span>).</li>
+          </ul>
+        </div>
+        <div class="daf-trick-card">
+          <strong>2. شفرة الحالات وحروف الجر (<span lang="de">Kasus &amp; Präpositionen</span>)</strong>
+          <ul>
+            <li><strong>قاعدة المذكر في <span lang="de">Akkusativ</span>:</strong> فقط المذكر يتغيّر (<span lang="de">der → den, ein → einen, kein → keinen</span>) بينما <span lang="de">die / das</span> تبقى ثابتة.</li>
+            <li><strong>حروف <span lang="de">Akkusativ</span> (شفرة <span lang="de">FUDGO</span>):</strong> <code dir="ltr" lang="de">für, um, durch, gegen, ohne</code>.</li>
+            <li><strong>حروف <span lang="de">Dativ</span> الإيقاعية:</strong> <code dir="ltr" lang="de">aus, bei, mit, nach, seit, von, zu, gegenüber</code> (<span lang="de">der/das → dem, die → der, Plural → den + n</span>).</li>
+            <li><strong>حروف المكان التسعة (<span lang="de">Wechselpräpositionen</span>):</strong> سكون وموقع (<span lang="de">Wo? = Dativ: im Kino</span>) مقابل حركة وانتقال (<span lang="de">Wohin? = Akkusativ: ins Kino</span>).</li>
+          </ul>
+        </div>
+        <div class="daf-trick-card">
+          <strong>3. هندسة الجملة الألمانية (<span lang="de">Wortstellung &amp; Satzklammer</span>)</strong>
+          <ul>
+            <li><strong>ثبات الموقع الثاني (<span lang="de">V2-Regel</span>):</strong> الفعل المصرّف يحتل الموقع 2 دائمًا؛ وإذا بدأت بظرف زمان يتقدّم الفعل على الفاعل (<span lang="de">Heute <strong>lerne ich</strong> Deutsch</span>).</li>
+            <li><strong>إطار الجملة (<span lang="de">Satzklammer</span>):</strong> الفعل المساعد/المودال في الموقع 2، والمصدر أو <span lang="de">Partizip II</span> أو البادئة المنفصلة في نهاية الجملة تمامًا.</li>
+            <li><strong>روابط الموقع صفر (<span lang="de">ADUSO</span>):</strong> <code dir="ltr" lang="de">aber, denn, und, sondern, oder</code> لا تغيّر الترتيب، بينما (<code dir="ltr" lang="de">weil, dass, wenn, obwohl, damit, während, indem, sodass</code>) تدفع الفعل إلى النهاية.</li>
+            <li><strong>ترتيب الظروف (<span lang="de">TeKaMoLo</span>):</strong> الزمان ← السبب ← الكيفية ← المكان (<span lang="de">Ich fahre <strong>heute wegen der Arbeit mit dem Bus nach Berlin</strong></span>).</li>
+          </ul>
+        </div>
+        <div class="daf-trick-card">
+          <strong>4. تنبيهات التداخل بين العربية والألمانية (<span lang="de">L1-Interferenz</span>)</strong>
+          <ul>
+            <li><strong>لا جملة بلا فعل في الألمانية:</strong> لا تحذف فعل الكينونة كما في الجملة الاسمية العربية؛ قل <strong dir="ltr" lang="de">Ich bin müde</strong> لا <del dir="ltr" lang="de">Ich müde</del>.</li>
+            <li><strong>أفعال تطلب <span lang="de">Dativ</span> خلافًا للعربية:</strong> <code dir="ltr" lang="de">helfen, danken, gefallen, gehören, passen, antworten, schmecken</code> (<span lang="de">Ich helfe <strong>dir</strong> · Das gefällt <strong>mir</strong></span>).</li>
+            <li><strong>حروف الزمن الثلاثة:</strong> <code dir="ltr" lang="de">um 8 Uhr</code> (للساعة) · <code dir="ltr" lang="de">am Montag / am Morgen</code> (لليوم، ما عدا <span lang="de">in der Nacht</span>) · <code dir="ltr" lang="de">im Mai / im Sommer</code> (للشهر والفصل).</li>
+            <li><strong>الفرق بين <span lang="de">kein</span> و <span lang="de">nicht</span>:</strong> استعمل <span lang="de">kein</span> لنفي الاسم النكرة (<span lang="de">kein Ticket</span>)، و<span lang="de">nicht</span> لنفي الفعل أو الصفة أو المعرّف.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>`;
+}
+
 function enhanceLessonDocumentHtml(lesson, rawHtml) {
   if (!rawHtml || typeof rawHtml !== 'string') return rawHtml || '';
   const answerKeyMatch = rawHtml.match(/<details class="answer-key">([\s\S]*?)<\/details>/);
@@ -2137,12 +2371,13 @@ function enhanceLessonDocumentHtml(lesson, rawHtml) {
       }
     }
   }
+  if (lesson) lesson._exerciseKeyMap = keyByExercise;
 
   const keyStartIdx = answerKeyMatch ? rawHtml.indexOf('<details class="answer-key">') : rawHtml.length;
   let mainBody = rawHtml.slice(0, keyStartIdx);
   const tailBody = rawHtml.slice(keyStartIdx);
 
-  // 1. Inject per-exercise self-practice workspace + collapsible self-check keys right after each exercise block
+  // 1. Inject per-exercise self-practice workspace + German char toolbar + live token self-check + collapsible self-check keys right after each exercise block
   mainBody = mainBody.replace(
     /(<h3 dir="auto">تمرين\s*(\d+)\b[\s\S]*?<\/h3>[\s\S]*?)(?=<h3 dir="auto">|<h2 dir="auto">|$)/g,
     (fullBlock, blockContent, numStr) => {
@@ -2151,7 +2386,8 @@ function enhanceLessonDocumentHtml(lesson, rawHtml) {
       if (!entry) return fullBlock;
       const exEntry = getExercisePracticeEntry(lesson?.id || '', num);
       const inputId = `ex-draft-${escapeHTML(lesson?.id || 'lesson')}-${num}`;
-      const practiceWorkspaceHtml = `<details class="exercise-practice-workspace" data-exercise-workspace="${num}"><summary><span class="ex-workspace-title">مساحة الحل والتطبيق الذاتي لتمرين ${num}</span><span class="ex-workspace-status ${exEntry.done ? 'is-done' : ''}" data-ex-status="${escapeHTML(lesson?.id || '')}:${num}">${exEntry.done ? '✓ مُنجز' : 'تطبيق ذاتي'}</span></summary><div class="exercise-practice-body" dir="auto"><label class="exercise-draft-label" for="${inputId}">اكتب إجابتك أو جملك لتمرين ${num} قبل فتح مفتاح الحل</label><textarea id="${inputId}" class="exercise-draft-input" dir="auto" rows="2" maxlength="800" data-exercise-draft data-lesson-id="${escapeHTML(lesson?.id || '')}" data-exercise-num="${num}" placeholder="اكتب محاولتك بالألمانية هنا؛ يُحفظ حلك محليًا على هذا الجهاز...">${escapeHTML(exEntry.draft)}</textarea><div class="exercise-practice-actions"><button type="button" class="button-outline button-small" data-action="toggle-exercise-done" data-lesson-id="${escapeHTML(lesson?.id || '')}" data-exercise-num="${num}">${exEntry.done ? '✓ أنجزت محاولة هذا التمرين' : 'سجّل إنجاز التمرين'}</button></div></div></details>`;
+      const feedbackHtml = analyzeExerciseDraftAgainstKey(exEntry.draft, entry.html);
+      const practiceWorkspaceHtml = `<details class="exercise-practice-workspace" data-exercise-workspace="${num}"><summary><span class="ex-workspace-title">مساحة الحل والتطبيق الذاتي لتمرين ${num}</span><span class="ex-workspace-status ${exEntry.done ? 'is-done' : ''}" data-ex-status="${escapeHTML(lesson?.id || '')}:${num}">${exEntry.done ? '✓ مُنجز' : 'تطبيق ذاتي'}</span></summary><div class="exercise-practice-body" dir="auto"><label class="exercise-draft-label" for="${inputId}">اكتب إجابتك أو جملك لتمرين ${num} قبل فتح مفتاح الحل</label>${renderGermanCharToolbar(inputId)}<textarea id="${inputId}" class="exercise-draft-input" dir="auto" rows="2" maxlength="800" data-exercise-draft data-lesson-id="${escapeHTML(lesson?.id || '')}" data-exercise-num="${num}" placeholder="اكتب محاولتك بالألمانية هنا؛ يُحفظ حلك محليًا على هذا الجهاز...">${escapeHTML(exEntry.draft)}</textarea><div data-ex-feedback="${escapeHTML(lesson?.id || '')}:${num}">${feedbackHtml}</div><div class="exercise-practice-actions"><button type="button" class="button-outline button-small" data-action="toggle-exercise-done" data-lesson-id="${escapeHTML(lesson?.id || '')}" data-exercise-num="${num}">${exEntry.done ? '✓ أنجزت محاولة هذا التمرين' : 'سجّل إنجاز التمرين'}</button></div></div></details>`;
       const summaryLabel = entry.isModel
         ? `اعرض النموذج الاسترشادي لتمرين ${num} للمقارنة الذاتية بعد المحاولة`
         : `تحقّق من حل تمرين ${num} منفردًا بعد المحاولة`;
@@ -2206,7 +2442,7 @@ function enhanceLessonDocumentHtml(lesson, rawHtml) {
     }
   );
 
-  return mainBody + tailBody;
+  return `${renderLessonPedagogicalTricks(lesson)}${mainBody}${tailBody}`;
 }
 
 function renderLessonOverview(lesson) {
@@ -2230,7 +2466,8 @@ function renderLessonOverview(lesson) {
       : mastered ? 'أعد تقييم الإتقان' : 'ابدأ تقييم الإتقان';
   const vocabularyDrawer = words.length ? `<section class="lesson-section lesson-vocab-section"><details class="vocab-review-drawer"><summary><span><small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small><strong>تدرّب على مفردات الدرس</strong></span><span class="count">${words.length} كلمة/عبارة</span></summary><div class="vocab-drawer-toolbar" dir="auto"><span>جميع مفردات الدرس (${words.length}) مشروحة بأمثلة سياقية (${enrolledCount}/${words.length} مدرجة في مراجعتك المتباعدة).</span><button type="button" class="button-outline button-small" data-action="enroll-lesson-words" data-lesson-id="${escapeHTML(lesson.id)}">${enrolledCount === words.length ? 'مفردات الدرس مدرجة في المراجعة' : `أدرج مفردات الدرس (${words.length}) في المراجعة`}</button></div><div class="vocab-grid">${words.map((word) => {
     const fallbackExample = !word.example ? getWordContextHint(word, lesson) : '';
-    return `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : `<div class="word-example word-context-fallback" dir="auto"${isGermanTextSnippet(fallbackExample) ? ' lang="de"' : ''}>${escapeHTML(fallbackExample)}</div>`}</article>`;
+    const genderBadge = renderNounGenderBadge(word.word);
+    return `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls">${genderBadge}<button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : `<div class="word-example word-context-fallback" dir="auto"${isGermanTextSnippet(fallbackExample) ? ' lang="de"' : ''}>${escapeHTML(fallbackExample)}</div>`}</article>`;
   }).join('')}</div></details></section>` : '';
   return `<button class="lesson-back" type="button" data-action="back-to-level">${icon('arrow', 15)} عودة إلى ${lesson.level}</button>
     <section class="lesson-hero"><div><div class="lesson-level-tag"><span class="level-token theme-${level.theme}">${level.id}</span><span>محتوى الدرس الكامل · ${escapeHTML(duration)}</span></div><h1 dir="auto">${escapeHTML(lesson.title)}</h1><p dir="auto">${escapeHTML(lesson.objective)}</p></div><div class="lesson-time">${icon('clock', 16)} ${escapeHTML(duration)}</div></section>
@@ -2267,11 +2504,12 @@ function renderLessonQuiz(lesson) {
     return `<button type="button" class="${classes}" data-action="select-lesson-answer" data-index="${index}" ${lessonSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[displayPos] || displayPos + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${lessonSession.checked && index === q.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
   const audioHelper = renderQuizAudioHelper(lesson.id, q);
+  const readingHelper = renderQuizReadingHelper(lesson, q);
   const feedback = lessonSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>ليس تمامًا.</strong> '}<span dir="auto"${isGermanTextSnippet(q.explanation) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.explanation)}</span></div>` : '';
   const nextLabel = current === total ? 'عرض النتيجة' : 'السؤال التالي';
   return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="quiz-exit">${icon('arrow', 15)} العودة إلى شرح الدرس</button>
     <div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${percent}%"></span></div></div><span class="plan-chip">${icon('clock', 14)} ${lesson.minutes} د</span></div>
-    <section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم الإتقان · ${escapeHTML(lesson.level)}</div><h1 dir="auto"${isGermanTextSnippet(q.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.prompt)}</h1>${audioHelper}<div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="quiz-exit">إنهاء التدريب</button>${lessonSession.checked ? `<button type="button" class="button-primary" data-action="next-lesson-question">${nextLabel} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-lesson-answer" ${lessonSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 16)}</button>`}</div></section>
+    <section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم الإتقان · ${escapeHTML(lesson.level)}</div><h1 dir="auto"${isGermanTextSnippet(q.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.prompt)}</h1>${audioHelper}${readingHelper}<div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="quiz-exit">إنهاء التدريب</button>${lessonSession.checked ? `<button type="button" class="button-primary" data-action="next-lesson-question">${nextLabel} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-lesson-answer" ${lessonSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 16)}</button>`}</div></section>
   </div>`;
 }
 
@@ -2365,7 +2603,12 @@ function checkLessonAnswer() {
   lessonSession.checked = true;
   const right = lessonSession.selected === q.answerIndex;
   lessonSession.answers.push({ selected: lessonSession.selected, correct: right });
-  if (right) lessonSession.correct += 1;
+  if (right) {
+    lessonSession.correct += 1;
+    resolveMistakeBankEntry(`lesson:${lesson.id}`, q.id);
+  } else {
+    recordMistakeBankEntry(`lesson:${lesson.id}`, lesson, q, lessonSession.selected);
+  }
   saveState();
   render();
 }
@@ -2649,7 +2892,8 @@ function renderLexiconResultsMarkup() {
     <div class="vocab-grid lexicon-vocab-grid">${shown.map((word) => {
       const lesson = findLesson(word.lessonId);
       const contextText = word.example ? word.example : getWordContextHint(word, lesson);
-      return `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><span class="lexicon-level-tag">${escapeHTML(word.level)}</span><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div><div class="word-example" dir="auto"${isGermanTextSnippet(contextText) ? ' lang="de"' : ''}>${escapeHTML(contextText)}</div></article>`;
+      const genderBadge = renderNounGenderBadge(word.word);
+      return `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls">${genderBadge}<span class="lexicon-level-tag">${escapeHTML(word.level)}</span><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div><div class="word-example" dir="auto"${isGermanTextSnippet(contextText) ? ' lang="de"' : ''}>${escapeHTML(contextText)}</div></article>`;
     }).join('')}</div>`;
 }
 
@@ -2685,6 +2929,44 @@ function renderCumulativeLexiconAndGrammarSection() {
   </section>`;
 }
 
+function renderMistakeBankSection() {
+  const items = activeMistakeBankItems();
+  if (!items.length) {
+    return `<section class="panel mistake-bank-panel is-empty" dir="auto" aria-label="دفتر أخطائي الذكي">
+      <div class="mistake-bank-head">
+        <div>
+          <small><span lang="de">FEHLERHEFT</span> · دفتر أخطائي الذكي</small>
+          <h2>سجل الأخطاء المتكررة خالٍ حاليًا (0 أخطاء معلّقة)</h2>
+          <p>يُسجّل هذا الدفتر تلقائيًا أي سؤال تخطئ فيه أثناء التقييمات، ويحذفه تلقائيًا فور إجابتك عنه بشكل صحيح عند الإعادة أو المراجعة.</p>
+        </div>
+      </div>
+    </section>`;
+  }
+  return `<section class="panel mistake-bank-panel" dir="auto" aria-label="دفتر أخطائي الذكي">
+    <div class="mistake-bank-head">
+      <div>
+        <small><span lang="de">FEHLERHEFT</span> · دفتر أخطائي الذكي (${items.length} ${items.length === 1 ? 'نقطة للمراجعة' : 'نقاط للمراجعة'})</small>
+        <h2>معالجة الأخطاء الشخصيّة وتثبيت الصواب</h2>
+        <p>راجع الأسئلة التي أخطأت فيها سابقًا؛ تُزال كل نقطة تلقائيًا عند الإجابة الصحيحة عنها في التقييم أو بالضغط على زر الإتقان بعد مراجعتها.</p>
+      </div>
+    </div>
+    <div class="mistake-diagnostics-list">
+      ${items.slice(0, 10).map((item) => `<article class="mistake-diagnostic-card">
+        <div class="mistake-card-title"><strong>[${escapeHTML(item.level)}]</strong> <span dir="auto"${isGermanTextSnippet(item.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(item.prompt)}</span></div>
+        <div class="mistake-card-comparison">
+          <span>إجابتك السابقة: <del dir="auto"${isGermanTextSnippet(item.selectedOption) ? ' lang="de"' : ''}>${escapeHTML(item.selectedOption)}</del></span>
+          <span>الصواب: <strong dir="auto"${isGermanTextSnippet(item.correctOption) ? ' lang="de"' : ''}>${escapeHTML(item.correctOption)}</strong></span>
+        </div>
+        <p class="mistake-card-explanation" dir="auto"${isGermanTextSnippet(item.explanation) ? ' lang="de"' : ''}>${formatInlineMarkdown(item.explanation)}</p>
+        <div class="mistake-bank-item-actions">
+          ${item.lessonId && item.lessonId !== 'a0-a1-gate' ? `<button type="button" class="button-quiet button-small" data-action="open-lesson" data-id="${escapeHTML(item.lessonId)}">راجع الدرس</button>` : ''}
+          <button type="button" class="button-outline button-small" data-action="resolve-mistake-item" data-mistake-key="${escapeHTML(item.key)}">✓ راجعت القاعدة وأتقنتها</button>
+        </div>
+      </article>`).join('')}
+    </div>
+  </section>`;
+}
+
 function renderCumulativeSkillDiagnostics() {
   const completedLessonsCount = totalCompleted();
   const practicedExCount = totalPracticedExercisesCount();
@@ -2714,8 +2996,29 @@ function renderReview() {
   return `<section class="review-banner"><div><h1>مراجعة قصيرة، أثرها طويل.</h1><p>بطاقات مفردات ثنائية الاتجاه (ألماني ↔ عربي) بمواعيد مراجعة محلية ذكية، مع تدريب حلزوني وقاموس تراكمي شامل.</p></div><div class="review-count">${left}</div></section>
     <div class="review-content">${reviewSession.done || !words.length ? `<section class="empty-state"><div class="empty-state-icon">${icon('trophy', 23)}</div><h2>${words.length ? 'أنهيت جلسة اليوم!' : 'لا توجد بطاقات مفردات متاحة بعد.'}</h2><p>${words.length ? 'رائع. الكلمات التي صعبت عليك ستعود قريبًا، والكلمات التي أتقنتها ستظهر بفواصل أطول.' : 'افتح أحد الدروس؛ تظهر بطاقات المفردات عند توفرها في محتواه.'}</p><div class="result-actions">${hasMoreWords ? `<button type="button" class="button-primary" data-action="start-extra-review-batch">راجع دفعة إضافية (حتى 12 بطاقة) ${icon('refresh', 15)}</button>` : ''}<button type="button" class="button-outline" data-action="navigate" data-view="dashboard">العودة إلى لوحتي</button></div></section>` : renderFlashcard(words[reviewSession.index], left)}</div>
     ${renderCumulativeSkillDiagnostics()}
+    ${renderMistakeBankSection()}
     ${renderSpiralReviewSection()}
     ${renderCumulativeLexiconAndGrammarSection()}`;
+}
+
+function evaluateFlashcardSpelling(word, typedText) {
+  const target = String(word?.word || '').trim();
+  const typed = String(typedText || '').trim();
+  if (!typed) {
+    return 'اكتب الكلمة الألمانية (مع أداة التعريف للاسم والحرف الكبير في بدايته) للتحقق الفوري من الإملاء.';
+  }
+  const cleanTarget = target.split(/[,/()]/)[0].trim();
+  if (typed === cleanTarget || typed === target) {
+    return '✓ إملاء مطابق تمامًا (الأداة والحروف الكبيرة والـ Umlaute صحيحة)!';
+  }
+  if (typed.toLowerCase() === cleanTarget.toLowerCase()) {
+    return 'قريب جدًا! انتبه لحالة الأحرف الكبيرة (Großschreibung) في بداية الاسم الألماني.';
+  }
+  const nounInfo = getNounArticleInfo(cleanTarget);
+  if (nounInfo && typed.toLowerCase() === nounInfo.noun.toLowerCase()) {
+    return `تذكّرت الاسم بشكل صحيح! أضف أداة التعريف قبله: (${nounInfo.article} ${nounInfo.noun}).`;
+  }
+  return 'واصل الكتابة أو اضغط «اكشف المعنى» لمطابقة الإملاء الصحيح.';
 }
 
 function renderFlashcard(word, left) {
@@ -2741,7 +3044,8 @@ function renderFlashcard(word, left) {
   const flashWordHtml = isReverse && !reviewSession.revealed
     ? `<div class="flash-word is-masked-word" dir="ltr" lang="de">${nounInfo ? '___ + Nomen?' : 'Deutsch?'}</div>`
     : `<div class="flash-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div>`;
-  return `<section class="flashcard">${directionBar}<small>${escapeHTML(word.level)} · ${escapeHTML(word.lessonTitle)}</small>${flashWordHtml}<div class="flash-translation" dir="auto">${translation}</div>${articleBadge}${example}
+  const spellingRecallBox = `<div class="flash-spelling-box" dir="auto"><label class="flash-spelling-label" for="flash-spell-input">تدرّب على إملاء الكلمة وأداة تعريفها (<span lang="de">Rechtschreibung &amp; Artikel</span>)</label>${renderGermanCharToolbar('flash-spell-input')}<input id="flash-spell-input" class="flash-spelling-input" type="text" dir="ltr" lang="de" maxlength="120" value="${escapeHTML(reviewSpellDraft)}" placeholder="${nounInfo ? 'اكتب مثلًا: der / die / das + الاسم...' : 'اكتب الكلمة أو العبارة بالألمانية...'}" data-flash-spell-input><div class="flash-spelling-feedback" data-flash-spell-feedback>${escapeHTML(evaluateFlashcardSpelling(word, reviewSpellDraft))}</div></div>`;
+  return `<section class="flashcard">${directionBar}<small>${escapeHTML(word.level)} · ${escapeHTML(word.lessonTitle)}</small>${flashWordHtml}<div class="flash-translation" dir="auto">${translation}</div>${articleBadge}${example}${spellingRecallBox}
     <div class="flashcard-actions">${!reviewSession.revealed ? `<button type="button" class="button-primary" data-action="flip-card">اكشف المعنى ${icon('spark', 15)}</button>` : `<button type="button" class="button-outline button-small" data-action="pronounce" data-word="${escapeHTML(word.word)}">${icon('volume', 14)} استمع</button>`}</div>
     ${reviewSession.revealed ? `<div class="review-ratings"><button type="button" class="button-outline" data-action="rate-word" data-rating="again">أحتاج إلى مراجعتها</button><button type="button" class="button-primary" data-action="rate-word" data-rating="know">أتقنتها ${icon('check', 15)}</button></div>` : ''}
     <div class="review-session-meta">البطاقة ${reviewSession.index + 1} من ${reviewSession.cards.length}${reviewInfo?.reps ? ` · راجعتها ${reviewInfo.reps} مرة` : ''}${reviewSession.optional ? ' · مراجعة اختيارية' : ''}</div>
@@ -2762,6 +3066,7 @@ function rateCurrentWord(rating) {
   saveState();
   reviewSession.index += 1;
   reviewSession.revealed = false;
+  reviewSpellDraft = '';
   if (reviewSession.index >= reviewSession.cards.length) {
     reviewSession.done = true;
     if (!reviewSession.optional) completeDailyReviewTask();
@@ -2844,6 +3149,55 @@ function playAudioAsset(assetId, rate) {
     });
   };
   playNext();
+}
+
+function playAudioSegment(segmentSrc, assetId = '') {
+  if (!segmentSrc) return;
+  if (typeof Audio === 'undefined') {
+    showToast('تشغيل التسجيلات غير متاح في هذا المتصفح.');
+    return;
+  }
+  stopAudioPlayback();
+  const token = audioPlaybackToken;
+  const audio = new Audio(segmentSrc);
+  audio.playbackRate = 1;
+  if ('preservesPitch' in audio) audio.preservesPitch = true;
+  if ('webkitPreservesPitch' in audio) audio.webkitPreservesPitch = true;
+  activeAudio = audio;
+  audio.addEventListener('ended', () => {
+    if (token !== audioPlaybackToken) return;
+    activeAudio = null;
+  }, { once: true });
+  audio.addEventListener('error', () => {
+    if (token !== audioPlaybackToken) return;
+    stopAudioPlayback();
+    showToast('تعذّر تشغيل هذا السطر الصوتي.');
+  }, { once: true });
+  audio.play().catch(() => {
+    if (token !== audioPlaybackToken) return;
+    stopAudioPlayback();
+    showToast('تعذّر تشغيل السطر؛ جرّب مرة أخرى.');
+  });
+}
+
+function insertGermanCharIntoInput(targetInputId, charToInsert) {
+  if (!targetInputId || !charToInsert) return;
+  const inputEl = document.getElementById(targetInputId);
+  if (!inputEl) return;
+  const start = Number.isInteger(inputEl.selectionStart) ? inputEl.selectionStart : inputEl.value.length;
+  const end = Number.isInteger(inputEl.selectionEnd) ? inputEl.selectionEnd : inputEl.value.length;
+  const currentVal = String(inputEl.value || '');
+  const maxLen = Number(inputEl.getAttribute('maxlength')) || 1200;
+  const nextVal = (currentVal.slice(0, start) + charToInsert + currentVal.slice(end)).slice(0, maxLen);
+  inputEl.value = nextVal;
+  inputEl.focus({ preventScroll: true });
+  try {
+    const nextPos = Math.min(nextVal.length, start + charToInsert.length);
+    inputEl.setSelectionRange(nextPos, nextPos);
+  } catch {
+    // ignore selection range errors on unsupported input types
+  }
+  inputEl.dispatchEvent(new Event('input', { bubbles: true }));
 }
 
 function handleClick(event) {
@@ -2940,6 +3294,20 @@ function handleClick(event) {
     case 'pronounce': pronounce(button.dataset.word); break;
     case 'play-audio-asset': playAudioAsset(button.dataset.audioId, Number(button.dataset.audioRate)); break;
     case 'play-section-audio': playAudioAsset(button.dataset.playAssetId, Number(button.dataset.audioRate)); break;
+    case 'play-audio-segment': playAudioSegment(button.dataset.segmentSrc, button.dataset.segmentAsset); break;
+    case 'insert-german-char': insertGermanCharIntoInput(button.dataset.targetInput, button.dataset.char); break;
+    case 'resolve-mistake-item': {
+      const mKey = button.dataset.mistakeKey;
+      if (mKey && state.mistakeBank?.[mKey]) {
+        const next = { ...state.mistakeBank };
+        delete next[mKey];
+        state.mistakeBank = next;
+        saveState();
+        render();
+        showToast('أُزيلت النقطة من دفتر الأخطاء بعد مراجعتها.');
+      }
+      break;
+    }
     case 'quick-word-known': quickMarkWord(button.dataset.wordId); break;
     case 'enroll-lesson-words': enrollLessonWords(button.dataset.lessonId); break;
     case 'toggle-exercise-done': {
@@ -3005,9 +3373,16 @@ function handleClick(event) {
       break;
     case 'check-spiral-answer':
       if (spiralSession && !spiralSession.checked && spiralSession.selected !== null) {
-        const currentQ = spiralSession.items[spiralSession.index]?.question;
+        const currentItem = spiralSession.items[spiralSession.index];
+        const currentQ = currentItem?.question;
         spiralSession.checked = true;
-        if (currentQ && spiralSession.selected === currentQ.answerIndex) spiralSession.correct += 1;
+        if (currentQ && spiralSession.selected === currentQ.answerIndex) {
+          spiralSession.correct += 1;
+          resolveMistakeBankEntry(`lesson:${currentItem.lessonId}`, currentQ.id);
+        } else if (currentQ && currentItem) {
+          recordMistakeBankEntry(`lesson:${currentItem.lessonId}`, findLesson(currentItem.lessonId), currentQ, spiralSession.selected);
+        }
+        saveState();
         render();
       }
       break;
@@ -3089,6 +3464,16 @@ function handleInput(event) {
     if (container) container.innerHTML = renderLexiconResultsMarkup();
     return;
   }
+  const spellField = event.target.closest?.('[data-flash-spell-input]');
+  if (spellField) {
+    reviewSpellDraft = String(spellField.value || '');
+    const word = reviewSession?.cards?.[reviewSession.index];
+    const fbNode = root.querySelector?.('[data-flash-spell-feedback]');
+    if (fbNode && word) {
+      fbNode.textContent = evaluateFlashcardSpelling(word, reviewSpellDraft);
+    }
+    return;
+  }
   const exField = event.target.closest?.('[data-exercise-draft]');
   if (exField) {
     const lessonId = exField.dataset.lessonId;
@@ -3107,6 +3492,11 @@ function handleInput(event) {
       if (stageMeta) {
         const stages = getLessonStageBreakdown(lesson);
         stageMeta.textContent = `التطبيق الذاتي: ${exProgress.done}/${exProgress.total} تمارين · تقسيم الجلسة (${stages.total} د):`;
+      }
+      const keyEntry = lesson._exerciseKeyMap?.get(num);
+      const fbWrap = root.querySelector?.(`[data-ex-feedback="${lessonId}:${num}"]`);
+      if (fbWrap && keyEntry) {
+        fbWrap.innerHTML = analyzeExerciseDraftAgainstKey(exField.value, keyEntry.html);
       }
     }
     return;
@@ -3154,6 +3544,7 @@ function handleChange(event) {
         audioTranscriptUnlocks: parsed.audioTranscriptUnlocks && typeof parsed.audioTranscriptUnlocks === 'object' ? parsed.audioTranscriptUnlocks : {},
         performanceEvidence: parsed.performanceEvidence && typeof parsed.performanceEvidence === 'object' ? parsed.performanceEvidence : {},
         exercisePractice: normalizeExercisePractice(parsed.exercisePractice),
+        mistakeBank: normalizeMistakeBank(parsed.mistakeBank),
         learningSessions: normalizeLearningSessions(parsed.learningSessions),
         dailyPlan: normalizeDailyPlan(parsed.dailyPlan),
         studyDays: normalizeStudyDays(parsed.studyDays),
@@ -3202,6 +3593,7 @@ function resetProgress() {
   gateSession = null;
   reviewSession = null;
   reviewDirection = 'de-ar';
+  reviewSpellDraft = '';
   lexiconFilter = { query: '', level: 'ALL', focus: 'ALL' };
   spiralSession = null;
   saveState();

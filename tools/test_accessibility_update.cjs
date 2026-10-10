@@ -106,7 +106,7 @@ async function updateChecks(browser, base) {
   });
   await page.waitForFunction(async () => !(await caches.keys()).includes('deutsch-pfad-v42'));
   const keys = await page.evaluate(() => caches.keys());
-  assert.ok(keys.includes('deutsch-pfad-v112'));
+  assert.ok(keys.includes('deutsch-pfad-v113'));
   assert.ok(!keys.includes('deutsch-pfad-v42')); 
   assert.ok(keys.includes('other-application'));
   assert.equal(await page.evaluate(() => window.__qaShellVersion), 'v42', 'activation must not force-reload away an open answer');
@@ -126,7 +126,7 @@ async function updateChecks(browser, base) {
   setOriginOffline(false);
   await context.setOffline(false);
   assert.equal((await fetchInfo(page, clip, 'bytes=0-31')).status, 206);
-  await page.waitForFunction(async url => !!(await caches.match(url, { cacheName: 'deutsch-pfad-v112' })), clip);
+  await page.waitForFunction(async url => !!(await caches.match(url, { cacheName: 'deutsch-pfad-v113' })), clip);
   setOriginOffline(true);
   await context.setOffline(true);
   assert.equal((await fetchInfo(page, clip, 'bytes=0-31')).status, 206);

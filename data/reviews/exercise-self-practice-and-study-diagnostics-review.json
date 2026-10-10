@@ -240,17 +240,17 @@
   ],
   "excludedSources": [],
   "sourceHashes": {
-    "app.js": "87a43d49c7c781ce7c18b26db9bf4239a2fdc40b68fb1acf7fe6720e444b9b83",
-    "styles.css": "9d611d23b99ca256433bb81468d7c0997a0c816da166b25f6f4e70bcc3808269",
-    "service-worker.js": "baa4b7305e5ee5a76758b22143d400d3bf81cff98b24e0571eec3a49e624e17e",
+    "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
+    "styles.css": "a403c56eca9eef1e5a9ffb35431df8e52d5ce9d3ab6bb3eb1538c602197471cd",
+    "service-worker.js": "42f2e7f242bfd035eab0a14d5077aca6c2a814713fc0b8c987cfb75173c95506",
     "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
-    "README.md": "6df6643296b5c5c4d1c7110cfa8e9f0e33300d17a7df848ff28ca72733b81058",
-    "content/PROGRESS.md": "e4fbd88f196804369f2d0fd33c04573b35362b24911195759cb64db120cbc530",
-    "data/reviews/README.md": "9cbedc3501884e990257cc2da2e57fb4922bde58f876dcc8060593860e45322c",
-    "data/browser-qa-report.md": "333110310542ba2b64c6b7bbc155f179bb0387ad69dca4cbd78544f2cf3d2fdf",
-    "data/curriculum-audit.md": "439e2228a26b74a523a44c9a52370bf7dbfc8cb0caf8526e5ab6c152b7253e09",
-    "data/curriculum-production-matrix.md": "04f162956515c8809223cd81fd3c00b01d700c8fda16a7804cacd2e4b783d8d1",
-    "data/course-improvement-plan.md": "6f2eaa917492a7723fd36b905f3232d2855a9413d02460afe44247c779a64826"
+    "README.md": "a3f6aa5e32b3747f6d6251d4faa92be66f694a65a0dd080b401359e69ecd7eb9",
+    "content/PROGRESS.md": "59e589164a788cc82996163c4293a726117bef75de77a0ef7fd67f9c6314f52e",
+    "data/reviews/README.md": "5b96f530f45144d949130c6c063b64ebc2f39af7791ace9569ea56be24187e42",
+    "data/browser-qa-report.md": "a0eae368fa4071d64b6b68197446b26810bd87a7054128ee4eb410ca2621f471",
+    "data/curriculum-audit.md": "678ca35b6ddad3ba7841655d0df061bd755d01dc0542be15a7086a6a721d99b1",
+    "data/curriculum-production-matrix.md": "fbdad62f3d3e6e1c9b8f2e2e80351f0d36da8510716179693d7a22daee4245e3",
+    "data/course-improvement-plan.md": "dca289d5c03a84f48430aaa935f45897efca77156ccb95170ff5ed56304bf035"
   },
   "units": [
     {

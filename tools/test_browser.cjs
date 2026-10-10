@@ -148,10 +148,13 @@ async function layoutAndPlayback(browser, base, viewport) {
   let totalVocabExamples = 0;
   let totalInlineKeys = 0;
   let totalExerciseWorkspaces = 0;
+  let totalUmlautBars = 0;
+  let totalDafTricks = 0;
   let totalDialogueGuides = 0;
   let totalListeningGuards = 0;
   let totalStagePills = 0;
   let totalTranscriptLines = await page.locator('.audio-transcript-line span[lang="de"]').count();
+  let totalSegmentBtns = await page.locator('.audio-transcript-line .transcript-segment-btn[data-action="play-audio-segment"]').count();
   let totalTables = 0;
   let totalTh = 0;
   let totalTd = 0;
@@ -169,10 +172,13 @@ async function layoutAndPlayback(browser, base, viewport) {
       vocabExamples: document.querySelectorAll('.vocab-card .word-example[dir="auto"]').length,
       inlineKeys: document.querySelectorAll('.lesson-document details.exercise-inline-key').length,
       exerciseWorkspaces: document.querySelectorAll('.lesson-document details.exercise-practice-workspace').length,
+      umlautBars: document.querySelectorAll('.lesson-document .exercise-practice-workspace .german-char-toolbar').length,
+      dafTricks: document.querySelectorAll('details.lesson-daf-tricks-box').length,
       dialogueGuides: document.querySelectorAll('.lesson-document details.dialogue-roleplay-guide').length,
       listeningGuards: document.querySelectorAll('.lesson-document details.listening-script-guard').length,
       stagePills: document.querySelectorAll('.lesson-stages-bar .lesson-stage-pill').length,
       transcriptDe: document.querySelectorAll('.audio-transcript-line span[lang="de"]').length,
+      segmentBtns: document.querySelectorAll('.audio-transcript-line .transcript-segment-btn[data-action="play-audio-segment"]').length,
       tables: document.querySelectorAll('.lesson-document table').length,
       th: document.querySelectorAll('.lesson-document th[scope="col"][dir="auto"]').length,
       td: document.querySelectorAll('.lesson-document td[dir="auto"]').length
@@ -181,15 +187,20 @@ async function layoutAndPlayback(browser, base, viewport) {
     assert.equal(domStats.vocabTrans, lesson.vocabulary.length, `${lesson.id} vocab translation count`);
     assert.equal(domStats.vocabExamples, lesson.vocabulary.length, `${lesson.id} vocab contextual example count`);
     assert.equal(domStats.exerciseWorkspaces, domStats.inlineKeys, `${lesson.id} exercise workspaces must match inline keys`);
+    assert.equal(domStats.umlautBars, domStats.exerciseWorkspaces, `${lesson.id} Umlaut bars must match exercise workspaces`);
+    assert.equal(domStats.dafTricks, 1, `${lesson.id} DaF tricks box count`);
     assert.equal(domStats.stagePills, 3, `${lesson.id} stage pills count`);
     totalVocabCards += domStats.vocab;
     totalVocabExamples += domStats.vocabExamples;
     totalInlineKeys += domStats.inlineKeys;
     totalExerciseWorkspaces += domStats.exerciseWorkspaces;
+    totalUmlautBars += domStats.umlautBars;
+    totalDafTricks += domStats.dafTricks;
     totalDialogueGuides += domStats.dialogueGuides;
     totalListeningGuards += domStats.listeningGuards;
     totalStagePills += domStats.stagePills;
     totalTranscriptLines += domStats.transcriptDe;
+    totalSegmentBtns += domStats.segmentBtns;
     totalTables += domStats.tables;
     totalTh += domStats.th;
     totalTd += domStats.td;
@@ -199,10 +210,13 @@ async function layoutAndPlayback(browser, base, viewport) {
   assert.equal(totalVocabExamples, 754, 'All 754 vocabulary cards must render contextual examples across 53 lessons');
   assert.equal(totalInlineKeys, 428, 'All 428 exercises must render inline self-check keys across 53 lessons');
   assert.equal(totalExerciseWorkspaces, 428, 'All 428 exercises must render interactive self-practice workspaces across 53 lessons');
+  assert.equal(totalUmlautBars, 428, 'All 428 exercise workspaces must render German Umlaut character toolbars');
+  assert.equal(totalDafTricks, 53, 'All 53 lessons must render DaF pedagogical tricks boxes');
   assert.equal(totalDialogueGuides, 46, 'All 46 main dialogue sections must render interactive 3-step role-play guides across 53 lessons');
   assert.equal(totalListeningGuards, 48, 'All 48 listening sections must render listening-first script guards across 53 lessons');
   assert.equal(totalStagePills, 159, 'All 53 lessons must render 3 interactive stage pills (159 total)');
   assert.equal(totalTranscriptLines, 474, 'All 474 audio transcript lines must render with lang="de" across 53 lessons + A0 gate');
+  assert.equal(totalSegmentBtns, 474, 'All 474 audio transcript lines must render segment shadowing playback buttons');
   assert.equal(totalTables, 96, 'All 96 lesson tables must render in lesson-document');
   assert.equal(totalTh, 273, 'All 273 lesson table headers must have scope="col" and dir="auto"');
   assert.equal(totalTd, 2938, 'All 2938 lesson table cells must have dir="auto"');

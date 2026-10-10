@@ -1,0 +1,1427 @@
+{
+  "reviewId": "CR64",
+  "lessonId": "daf-pedagogical-tricks-quiz-reading-mistake-bank",
+  "assessmentVersion": "daf-pedagogical-tricks-quiz-reading-mistake-bank-v1",
+  "reviewedAt": "2026-10-10",
+  "serviceWorkerCacheName": "deutsch-pfad-v113",
+  "unitCount": 68,
+  "acousticReviewed": false,
+  "cefrCertification": false,
+  "summary": {
+    "totalLessonsCovered": 53,
+    "dafTricksBoxes": 53,
+    "quizListeningHelpers": 36,
+    "quizReadingDialogueHelpers": 94,
+    "exerciseWorkspacesWithUmlautBar": 428,
+    "performanceTasksWithUmlautBar": 109,
+    "vocabularyGermanContextualSentences": 754,
+    "audioSegmentShadowingButtons": 474,
+    "axeStatesVerified": 349,
+    "narrowViewportStatesVerified": 348
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Lingolia — Plural Exercises (search snippet)",
+      "url": "https://deutsch.lingolia.com/en/grammar/nouns-and-articles/plural/exercises",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/nouns-and-articles gender der die das endings compound nouns",
+      "note": "Practice of German noun gender and plural forms with definite articles der/die/das."
+    },
+    {
+      "id": "S02",
+      "title": "Lingolia — Prepositions and Cases Exercises (search snippet)",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/cases/exercises",
+      "access": "search_snippet_only",
+      "query": "site:deutsch.lingolia.com/en/grammar/prepositions cases accusative dative two-way prepositions",
+      "note": "Exercises on German prepositions governing accusative, dative, and two-way (Wechselpräpositionen) cases."
+    },
+    {
+      "id": "S03",
+      "title": "Duden — Wortschatz (search snippet)",
+      "url": "https://www.duden.de/rechtschreibung/Wortschatz",
+      "access": "search_snippet_only",
+      "query": "site:duden.de/rechtschreibung Kompositum Eselsbruecke Merkregel Wortschatz Aussprache",
+      "note": "der Wortschatz; Gesamtheit der Wörter einer Sprache und deren Beherrschung im Kontext."
+    },
+    {
+      "id": "S04",
+      "title": "Lingolia — Nouns and Articles in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/nouns-and-articles",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Masculine (-ling, -ich, -ig, days/months/seasons), feminine (-ung, -schaft, -ion, -heit, -keit, -tät, -ik), neuter (-lein, -chen, -um, -ment, -ma, nominalized infinitives), and compound nouns (Komposita take the gender of the final noun)."
+    },
+    {
+      "id": "S05",
+      "title": "Lingolia — Articles in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/nouns-and-articles/articles-noun-markers",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Declension tables for definite (der/die/das), indefinite (ein/eine), and negative (kein/keine) articles and preposition-article contractions (am, beim, im, ins, vom, zum, zur)."
+    },
+    {
+      "id": "S06",
+      "title": "Lingolia — Prepositions in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "hasMore": false,
+      "note": "Accusative prepositions (durch, für, gegen, ohne, um), dative prepositions (aus, bei, gegenüber, mit, nach, seit, von, zu), and two-way prepositions (Wechselpräpositionen)."
+    },
+    {
+      "id": "S07",
+      "title": "Lingolia — Prepositions of Place in German Grammar",
+      "url": "https://deutsch.lingolia.com/en/grammar/prepositions/place",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0,
+        1
+      ],
+      "totalChunks": 2,
+      "hasMore": false,
+      "note": "Two-way prepositions (an, auf, hinter, in, neben, über, unter, vor, zwischen): wohin? direction = Akkusativ vs. wo? static location = Dativ; verb pairs stehen/stellen, liegen/legen, sitzen/setzen; Woher?/Wo?/Wohin?."
+    },
+    {
+      "id": "S08",
+      "title": "Duden — Eselsbrücke",
+      "url": "https://www.duden.de/rechtschreibung/Eselsbruecke",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Eselsbrücke, Plural die Eselsbrücken: Gedächtnisstütze, Merkhilfe, Verstehenshilfe."
+    },
+    {
+      "id": "S09",
+      "title": "Duden — Kompositum",
+      "url": "https://www.duden.de/rechtschreibung/Kompositum",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "das Kompositum, Plural die Komposita: zusammengesetztes Wort; Zusammensetzung."
+    },
+    {
+      "id": "S10",
+      "title": "Duden — Genus",
+      "url": "https://www.duden.de/rechtschreibung/Genus",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "das Genus, Plural die Genera: grammatisches Geschlecht (männlich, weiblich, sächlich)."
+    },
+    {
+      "id": "S11",
+      "title": "Duden — Umlaut",
+      "url": "https://www.duden.de/rechtschreibung/Umlaut",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "der Umlaut, Plural die Umlaute: Veränderung eines Vokals (a, o, u, au -> ä, ö, ü, äu) und Buchstabe ä, ö, ü."
+    },
+    {
+      "id": "S12",
+      "title": "Duden — Präposition",
+      "url": "https://www.duden.de/rechtschreibung/Praeposition",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Präposition, Plural die Präpositionen: Verhältniswort mit bestimmtem Kasus (Akkusativ, Dativ, Genitiv)."
+    },
+    {
+      "id": "S13",
+      "title": "Duden — Wortstellung",
+      "url": "https://www.duden.de/rechtschreibung/Wortstellung",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Wortstellung: Aufeinanderfolge der Wörter im Satz (V2-Regel, Satzklammer, Verb-Endstellung)."
+    },
+    {
+      "id": "S14",
+      "title": "Duden — Rechtschreibung",
+      "url": "https://www.duden.de/rechtschreibung/Rechtschreibung",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "die Rechtschreibung: Orthografie, korrekte Schreibweise einschließlich Groß- und Kleinschreibung."
+    },
+    {
+      "id": "S15",
+      "title": "Duden — Merkmal",
+      "url": "https://www.duden.de/rechtschreibung/Merkmal",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "das Merkmal, Plural die Merkmale: charakteristisches, unterscheidendes Zeichen."
+    },
+    {
+      "id": "S16",
+      "title": "W3C WAI WCAG 2.1 Technique G89: Providing expected data format and example",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/general/G89",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Providing expected input format, special character helpers, and examples for learner text entry (SC 3.3.2, 3.3.5)."
+    },
+    {
+      "id": "S17",
+      "title": "W3C WAI WCAG 2.1 Technique G131: Providing descriptive labels",
+      "url": "https://www.w3.org/WAI/WCAG21/Techniques/general/G131",
+      "access": "full_fetched_page",
+      "chunksFetched": [
+        0
+      ],
+      "totalChunks": 1,
+      "hasMore": false,
+      "note": "Descriptive labels for interactive controls, segment playback buttons, and self-practice tools (SC 2.4.6, 3.3.2)."
+    }
+  ],
+  "excludedSources": [
+    {
+      "url": "https://www.duden.de/rechtschreibung/Satzstellung",
+      "reason": "HTTP 404 (Fehler 404 – Seite nicht gefunden); replaced by https://www.duden.de/rechtschreibung/Wortstellung (S13)."
+    }
+  ],
+  "sourceHashes": {
+    "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
+    "styles.css": "a403c56eca9eef1e5a9ffb35431df8e52d5ce9d3ab6bb3eb1538c602197471cd",
+    "service-worker.js": "42f2e7f242bfd035eab0a14d5077aca6c2a814713fc0b8c987cfb75173c95506",
+    "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
+    "README.md": "a3f6aa5e32b3747f6d6251d4faa92be66f694a65a0dd080b401359e69ecd7eb9",
+    "content/PROGRESS.md": "59e589164a788cc82996163c4293a726117bef75de77a0ef7fd67f9c6314f52e",
+    "data/reviews/README.md": "5b96f530f45144d949130c6c063b64ebc2f39af7791ace9569ea56be24187e42",
+    "data/browser-qa-report.md": "a0eae368fa4071d64b6b68197446b26810bd87a7054128ee4eb410ca2621f471",
+    "data/curriculum-audit.md": "678ca35b6ddad3ba7841655d0df061bd755d01dc0542be15a7086a6a721d99b1",
+    "data/curriculum-production-matrix.md": "fbdad62f3d3e6e1c9b8f2e2e80351f0d36da8510716179693d7a22daee4245e3",
+    "data/course-improvement-plan.md": "dca289d5c03a84f48430aaa935f45897efca77156ccb95170ff5ed56304bf035",
+    "data/reviews/daf-pedagogical-tricks-quiz-reading-mistake-bank-review.md": "c83f174bfa487484808df069c227323d0f5b2c752960ab5c65d9760e17f0ea7e"
+  },
+  "units": [
+    {
+      "id": "CR64-U01-a0-01-alphabet",
+      "scope": "Lesson A0.1 (a0-01-alphabet) — DaF tricks box, 7 exercises with Umlaut bar & keyword check, 0 vocab (0 nouns with gender badges), 0 listening & 0 reading quiz helpers, 3 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A0.1 (a0-01-alphabet: «الحروف والأصوات الألمانية») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ7 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ0 (0 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و3 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U02-a0-02-greetings",
+      "scope": "Lesson A0.2 (a0-02-greetings) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 10 vocab (0 nouns with gender badges), 0 listening & 0 reading quiz helpers, 9 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A0.2 (a0-02-greetings: «التحية والتعارف») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ10 (0 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و9 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U03-a0-03-numbers-personal-info",
+      "scope": "Lesson A0.3 (a0-03-numbers-personal-info) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 0 vocab (0 nouns with gender badges), 0 listening & 0 reading quiz helpers, 7 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A0.3 (a0-03-numbers-personal-info: «الأرقام والبيانات الشخصية») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ0 (0 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و7 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U04-a0-04-first-sentences",
+      "scope": "Lesson A0.4 (a0-04-first-sentences) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 9 vocab (0 nouns with gender badges), 0 listening & 0 reading quiz helpers, 1 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A0.4 (a0-04-first-sentences: «الضمائر وأول جمل بـ sein وhaben») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ9 (0 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و1 زر استماع سطري عبر 1 أصل صوتي."
+    },
+    {
+      "id": "CR64-U05-a0-05-classroom-phrases",
+      "scope": "Lesson A0.5 (a0-05-classroom-phrases) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 10 vocab (0 nouns with gender badges), 0 listening & 0 reading quiz helpers, 6 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A0.5 (a0-05-classroom-phrases: «عبارات الصف وطلب المساعدة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ10 (0 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و6 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U06-a1-01-introductions-languages-hobbies",
+      "scope": "Lesson A1.1 (a1-01-introductions-languages-hobbies) — DaF tricks box, 10 exercises with Umlaut bar & keyword check, 12 vocab (5 nouns with gender badges), 0 listening & 0 reading quiz helpers, 2 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.1 (a1-01-introductions-languages-hobbies: «التعريف بالنفس واللغات والهوايات») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ10 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ12 (5 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و2 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U07-a1-02-work-family",
+      "scope": "Lesson A1.2 (a1-02-work-family) — DaF tricks box, 9 exercises with Umlaut bar & keyword check, 11 vocab (11 nouns with gender badges), 0 listening & 2 reading quiz helpers, 2 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.2 (a1-02-work-family: «الأسرة والمهن») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ9 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ11 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و2 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U08-a1-03-city-cafe-hotel",
+      "scope": "Lesson A1.3 (a1-03-city-cafe-hotel) — DaF tricks box, 9 exercises with Umlaut bar & keyword check, 13 vocab (11 nouns with gender badges), 0 listening & 0 reading quiz helpers, 12 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.3 (a1-03-city-cafe-hotel: «في المدينة: المقهى والفندق») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ9 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ13 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و12 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U09-a1-04-daily-routine-time",
+      "scope": "Lesson A1.4 (a1-04-daily-routine-time) — DaF tricks box, 9 exercises with Umlaut bar & keyword check, 12 vocab (4 nouns with gender badges), 0 listening & 0 reading quiz helpers, 2 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.4 (a1-04-daily-routine-time: «الروتين اليومي والوقت») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ9 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ12 (4 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و2 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U10-a1-05-food-drink",
+      "scope": "Lesson A1.5 (a1-05-food-drink) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (13 nouns with gender badges), 0 listening & 0 reading quiz helpers, 2 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.5 (a1-05-food-drink: «الطعام والشراب») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (13 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و2 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U11-a1-06-yesterday-perfekt",
+      "scope": "Lesson A1.6 (a1-06-yesterday-perfekt) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 8 vocab (0 nouns with gender badges), 0 listening & 0 reading quiz helpers, 2 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.6 (a1-06-yesterday-perfekt: «أمس واليوم: مقدمة إلى Perfekt») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ8 (0 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و2 زر استماع سطري عبر 2 أصل صوتي."
+    },
+    {
+      "id": "CR64-U12-a1-07-travel-weather",
+      "scope": "Lesson A1.7 (a1-07-travel-weather) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (12 nouns with gender badges), 0 listening & 0 reading quiz helpers, 8 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.7 (a1-07-travel-weather: «السفر والطقس») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (12 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و8 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U13-a1-08-shopping-clothes",
+      "scope": "Lesson A1.8 (a1-08-shopping-clothes) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (10 nouns with gender badges), 0 listening & 0 reading quiz helpers, 9 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.8 (a1-08-shopping-clothes: «التسوّق والملابس والاحتياجات») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و9 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U14-a1-09-work-appointments",
+      "scope": "Lesson A1.9 (a1-09-work-appointments) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (10 nouns with gender badges), 0 listening & 0 reading quiz helpers, 8 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.9 (a1-09-work-appointments: «العمل والمشكلات والمواعيد») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و0 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و8 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U15-a1-10-hobbies-health",
+      "scope": "Lesson A1.10 (a1-10-hobbies-health) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 20 vocab (13 nouns with gender badges), 0 listening & 2 reading quiz helpers, 8 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.10 (a1-10-hobbies-health: «الهوايات والصحة وزيارة الطبيب») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ20 (13 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و8 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U16-a1-11-home-directions",
+      "scope": "Lesson A1.11 (a1-11-home-directions) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 13 vocab (11 nouns with gender badges), 0 listening & 1 reading quiz helpers, 7 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.11 (a1-11-home-directions: «السكن والمنزل والاتجاهات») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ13 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و1 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و7 زر استماع سطري عبر 3 أصل صوتي."
+    },
+    {
+      "id": "CR64-U17-a1-12-trip-invitations",
+      "scope": "Lesson A1.12 (a1-12-trip-invitations) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (9 nouns with gender badges), 0 listening & 1 reading quiz helpers, 11 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A1.12 (a1-12-trip-invitations: «رحلة قصيرة ومناسبات ودعوات») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (9 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و1 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و11 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U18-a2-01-routines-abilities-experiences",
+      "scope": "Lesson A2.1 (a2-01-routines-abilities-experiences) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (6 nouns with gender badges), 0 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.1 (a2-01-routines-abilities-experiences: «الحياة اليومية والقدرات والتجارب») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (6 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U19-a2-02-travel-comparisons",
+      "scope": "Lesson A2.2 (a2-02-travel-comparisons) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 18 vocab (11 nouns with gender badges), 0 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.2 (a2-02-travel-comparisons: «الرحلات والأماكن والمقارنة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ18 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U20-a2-03-food-nutrition-shopping",
+      "scope": "Lesson A2.3 (a2-03-food-nutrition-shopping) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 20 vocab (16 nouns with gender badges), 0 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.3 (a2-03-food-nutrition-shopping: «الطعام والتغذية والشراء والمطعم») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ20 (16 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U21-a2-04-office-phone-appointments",
+      "scope": "Lesson A2.4 (a2-04-office-phone-appointments) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (7 nouns with gender badges), 1 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.4 (a2-04-office-phone-appointments: «المكتب والهاتف والمواعيد») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (7 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U22-a2-05-training-routine-wenn",
+      "scope": "Lesson A2.5 (a2-05-training-routine-wenn) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 12 vocab (8 nouns with gender badges), 0 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.5 (a2-05-training-routine-wenn: «الروتين والتدريب المهني وجمل wenn») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ12 (8 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U23-a2-06-family-happiness-gifts",
+      "scope": "Lesson A2.6 (a2-06-family-happiness-gifts) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (7 nouns with gender badges), 0 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.6 (a2-06-family-happiness-gifts: «الأسرة والمشاعر والدعوات والهدايا») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (7 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U24-a2-07-language-learning-travel-purpose",
+      "scope": "Lesson A2.7 (a2-07-language-learning-travel-purpose) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 17 vocab (9 nouns with gender badges), 0 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.7 (a2-07-language-learning-travel-purpose: «تعلّم اللغات والسفر والغاية بـum … zu») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ17 (9 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U25-a2-08-media-news-passive",
+      "scope": "Lesson A2.8 (a2-08-media-news-passive) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 23 vocab (14 nouns with gender badges), 0 listening & 4 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.8 (a2-08-media-news-passive: «الإعلام والأخبار والسياسة: المبني للمجهول») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ23 (14 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و4 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U26-a2-09-products-technology-complaints",
+      "scope": "Lesson A2.9 (a2-09-products-technology-complaints) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (10 nouns with gender badges), 0 listening & 4 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.9 (a2-09-products-technology-complaints: «المنتجات والتقنية وتقديم شكوى») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و4 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U27-a2-10-sports-health-feelings-weil",
+      "scope": "Lesson A2.10 (a2-10-sports-health-feelings-weil) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (7 nouns with gender badges), 0 listening & 4 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.10 (a2-10-sports-health-feelings-weil: «الرياضة والصحة والمشاعر وجملة weil») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (7 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و4 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U28-a2-11-housing-neighborhood-wohin",
+      "scope": "Lesson A2.11 (a2-11-housing-neighborhood-wohin) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 20 vocab (17 nouns with gender badges), 0 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.11 (a2-11-housing-neighborhood-wohin: «المدن والسكن والجيران: Wo أم Wohin؟») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ20 (17 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U29-a2-12-holidays-festivals-culture",
+      "scope": "Lesson A2.12 (a2-12-holidays-festivals-culture) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (11 nouns with gender badges), 0 listening & 4 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس A2.12 (a2-12-holidays-festivals-culture: «العطلات والمهرجانات والثقافة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و4 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U30-b1-01-daily-life-hobbies-experiences",
+      "scope": "Lesson B1.1 (b1-01-daily-life-hobbies-experiences) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 13 vocab (6 nouns with gender badges), 0 listening & 4 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.1 (b1-01-daily-life-hobbies-experiences: «الحياة اليومية والهوايات والتجارب: als وwenn») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ13 (6 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (0 سؤال استماع و4 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U31-b1-02-food-habits-obwohl",
+      "scope": "Lesson B1.2 (b1-02-food-habits-obwohl) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 13 vocab (6 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.2 (b1-02-food-habits-obwohl: «الطعام والعادات الغذائية: obwohl وtrotzdem») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ13 (6 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U32-b1-03-work-communication-konjunktiv",
+      "scope": "Lesson B1.3 (b1-03-work-communication-konjunktiv) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (10 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.3 (b1-03-work-communication-konjunktiv: «المهنة والتواصل في مكان العمل: اقتراحات مهذبة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 4 أصل صوتي."
+    },
+    {
+      "id": "CR64-U33-b1-04-continuing-education-damit",
+      "scope": "Lesson B1.4 (b1-04-continuing-education-damit) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (12 nouns with gender badges), 3 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.4 (b1-04-continuing-education-damit: «التعلّم والتعليم المستمر: damit و um … zu») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (12 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (3 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U34-b1-05-cities-relative-clauses",
+      "scope": "Lesson B1.5 (b1-05-cities-relative-clauses) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (10 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.5 (b1-05-cities-relative-clauses: «المدن ووصف الأماكن: الجمل الموصولة في Nominativ و Akkusativ») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U35-b1-06-health-fitness-advice",
+      "scope": "Lesson B1.6 (b1-06-health-fitness-advice) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (9 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.6 (b1-06-health-fitness-advice: «الصحة واللياقة وتقديم النصيحة: sollte و könnte») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (9 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U36-b1-07-lifestyles-customs-cultures",
+      "scope": "Lesson B1.7 (b1-07-lifestyles-customs-cultures) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (9 nouns with gender badges), 1 listening & 2 reading quiz helpers, 12 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.7 (b1-07-lifestyles-customs-cultures: «أساليب الحياة والعادات والثقافات: الروابط الثنائية») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (9 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و12 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U37-b1-08-consumption-advertising-je-desto",
+      "scope": "Lesson B1.8 (b1-08-consumption-advertising-je-desto) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 17 vocab (13 nouns with gender badges), 1 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.8 (b1-08-consumption-advertising-je-desto: «المنتجات والاستهلاك والإعلان: je … desto/umso …») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ17 (13 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U38-b1-09-travel-transport-environment",
+      "scope": "Lesson B1.9 (b1-09-travel-transport-environment) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (12 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.9 (b1-09-travel-transport-environment: «السفر والنقل والبيئة: bevor وnachdem وwährend») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (12 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U39-b1-10-media-news-formal-communication",
+      "scope": "Lesson B1.10 (b1-10-media-news-formal-communication) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (10 nouns with gender badges), 2 listening & 2 reading quiz helpers, 12 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.10 (b1-10-media-news-formal-communication: «الإعلام والأخبار والتواصل الرسمي: الأسئلة غير المباشرة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و12 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U40-b1-11-history-politics-passive-past",
+      "scope": "Lesson B1.11 (b1-11-history-politics-passive-past) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (11 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.11 (b1-11-history-politics-passive-past: «التاريخ والسياسة: المبني للمجهول في Präteritum») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U41-b1-12-innovation-research-future",
+      "scope": "Lesson B1.12 (b1-12-innovation-research-future) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (10 nouns with gender badges), 2 listening & 2 reading quiz helpers, 12 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B1.12 (b1-12-innovation-research-future: «الابتكار والإبداع والبحث: التوقّعات بـFutur I») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و12 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U42-b2-01-time-management-habits-reading",
+      "scope": "Lesson B2.1 (b2-01-time-management-habits-reading) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (8 nouns with gender badges), 2 listening & 2 reading quiz helpers, 12 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.1 (b2-01-time-management-habits-reading: «إدارة الوقت والعادات والقراءة: indem وdadurch, dass») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (8 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و12 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U43-b2-02-career-formal-communication-konjunktiv1",
+      "scope": "Lesson B2.2 (b2-02-career-formal-communication-konjunktiv1) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (10 nouns with gender badges), 2 listening & 3 reading quiz helpers, 11 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.2 (b2-02-career-formal-communication-konjunktiv1: «العمل والمسار المهني والتواصل الرسمي: Konjunktiv I») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و11 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U44-b2-03-consumption-environment-passive-modal",
+      "scope": "Lesson B2.3 (b2-03-consumption-environment-passive-modal) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (10 nouns with gender badges), 2 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.3 (b2-03-consumption-environment-passive-modal: «الاستهلاك والبدائل البيئية: المبني للمجهول مع الأفعال الناقصة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (2 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U45-b2-04-cities-housing-participles",
+      "scope": "Lesson B2.4 (b2-04-cities-housing-participles) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (10 nouns with gender badges), 1 listening & 2 reading quiz helpers, 11 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.4 (b2-04-cities-housing-participles: «المدن والمباني والسكن: Partizip I وPartizip II كصفات») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و11 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U46-b2-05-health-fitness-medical-information",
+      "scope": "Lesson B2.5 (b2-05-health-fitness-medical-information) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (11 nouns with gender badges), 1 listening & 1 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.5 (b2-05-health-fitness-medical-information: «الصحة واللياقة والمعلومات الطبية: السبب والنتيجة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و1 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U47-b2-06-study-applications-verb-noun-phrases",
+      "scope": "Lesson B2.6 (b2-06-study-applications-verb-noun-phrases) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 14 vocab (10 nouns with gender badges), 1 listening & 2 reading quiz helpers, 11 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.6 (b2-06-study-applications-verb-noun-phrases: «التعلّم والدراسة والتقديم الأكاديمي: Nomen-Verb-Verbindungen») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ14 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و11 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U48-b2-07-travel-experiences-prepositional-relatives",
+      "scope": "Lesson B2.7 (b2-07-travel-experiences-prepositional-relatives) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (10 nouns with gender badges), 1 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.7 (b2-07-travel-experiences-prepositional-relatives: «السفر والتجارب والوجهات: الجمل الموصولة مع حروف الجر») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U49-b2-08-food-nutrition-data-passives",
+      "scope": "Lesson B2.8 (b2-08-food-nutrition-data-passives) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (11 nouns with gender badges), 1 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.8 (b2-08-food-nutrition-data-passives: «الغذاء والتغذية والبيانات: Vorgangspassiv وZustandspassiv») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U50-b2-09-business-marketing-employment-prepositions",
+      "scope": "Lesson B2.9 (b2-09-business-marketing-employment-prepositions) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (10 nouns with gender badges), 1 listening & 3 reading quiz helpers, 12 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.9 (b2-09-business-marketing-employment-prepositions: «الشركات والتسويق والعمل: الأفعال مع حروف الجر وda-/wo- المركّبة») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و12 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U51-b2-10-wishes-probabilities-technology-konjunktiv2-past",
+      "scope": "Lesson B2.10 (b2-10-wishes-probabilities-technology-konjunktiv2-past) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 15 vocab (8 nouns with gender badges), 1 listening & 3 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.10 (b2-10-wishes-probabilities-technology-konjunktiv2-past: «الأمنيات والاحتمالات والتقنية: Konjunktiv II للماضي والفرضيات») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ15 (8 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U52-b2-11-humans-nature-environment-nominalization",
+      "scope": "Lesson B2.11 (b2-11-humans-nature-environment-nominalization) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (11 nouns with gender badges), 1 listening & 3 reading quiz helpers, 11 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.11 (b2-11-humans-nature-environment-nominalization: «الإنسان والطبيعة وحماية البيئة: الأسلوب الاسمي») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (11 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و3 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و11 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U53-b2-12-leisure-media-reported-speech",
+      "scope": "Lesson B2.12 (b2-12-leisure-media-reported-speech) — DaF tricks box, 8 exercises with Umlaut bar & keyword check, 16 vocab (10 nouns with gender badges), 1 listening & 2 reading quiz helpers, 10 audio segments",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S13",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّد الدرس B2.12 (b2-12-leisure-media-reported-speech: «أوقات الفراغ والإعلام ونقل الكلام: Konjunktiv I وKonjunktiv II») بصندوق شفرات الإتقان السريع وحيل DaF وتنبيهات التداخل اللغوي (`.lesson-daf-tricks-box`)، وشريط الحروف الألمانية (`ä, ö, ü, ß`) والفحص الذاتي الفوري للمسودات في جميع تمارينه الـ8 ومهمتَي الأداء، وشارات جنس الاسم وسياقات ألمانية كاملة لمفرداته الـ16 (10 اسمًا بشارة `der/die/das`)، ومساعدات الاختبار المرجعية (1 سؤال استماع و2 سؤال قراءة/حوار مع توزيع متوازن لمواقع الخيارات)، و10 زر استماع سطري عبر 5 أصل صوتي."
+    },
+    {
+      "id": "CR64-U54-a0-a1-gate",
+      "scope": "A0->A1 Transition Gate (a0-a1-gate) — listening helper, balanced option rotation, mistake bank integration, and 3 performance tasks with Umlaut bar",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S08",
+        "S11",
+        "S13",
+        "S14",
+        "S16",
+        "S17"
+      ],
+      "finding": "زُوّدت بوابة الانتقال A0->A1 (`a0-a1-gate`، النسخة `a0-gate-v2`) بمشغّل الاستماع المرجعي لسؤال فهم الاستماع (`DL-A0-GATE-Q04` مع احترام سياسة `hide_until_first_attempt`)، وتدوير مواقع الخيارات الصحيحة بالتوازن عبر أسئلتها الـ10، وتسجيل الأسئلة المتعثرة في دفتر الأخطاء الذكي (`state.mistakeBank`)، وشريط إدراج الحروف الألمانية (`ä, ö, ü, ß`) في مهام الأداء الثلاث."
+    },
+    {
+      "id": "CR64-U55-quiz-listening-helpers-all-36",
+      "scope": "Assessment Listening Helper Upgrade (`renderQuizAudioHelper`, 36/36 listening questions)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S06",
+        "S07",
+        "S17"
+      ],
+      "finding": "رُقّيت دالة `renderQuizAudioHelper(unit, question)` لفحص وسم المهارة `skillTags` (`listening`) إلى جانب الكلمات المفتاحية في نص السؤال، مع اختيار أصل الاستماع أو الحوار المناسب تلقائيًا، فارتفعت تغطية مشغّل الصوت المدمج داخل شاشة الاختبار من 15 سؤالًا إلى جميع أسئلة فهم الاستماع الـ36/36 بنسبة 100%."
+    },
+    {
+      "id": "CR64-U56-quiz-reading-dialogue-helpers-94",
+      "scope": "Assessment Reading & Dialogue Reference Helper (`renderQuizReadingHelper`, 94 reading/dialogue questions)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S04",
+        "S05",
+        "S13",
+        "S17"
+      ],
+      "finding": "أُضيفت دالة `renderQuizReadingHelper(unit, question)` واستخراج نصوص القراءة والحوار (`extractUnitReadingAndDialoguePassages`) لعرض صندوق مرجعي قابل للطي (`.quiz-reading-helper`) داخل شاشة الاختبار لجميع أسئلة فهم المقروء والحوار الـ94 دون اضطرار المتعلم إلى مغادرة الاختبار."
+    },
+    {
+      "id": "CR64-U57-quiz-option-position-balancing",
+      "scope": "Balanced Option Position Rotation on First & Retry Attempts (`getDisplayedQuizOptionIndices`, 540 questions)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S08",
+        "S14",
+        "S16"
+      ],
+      "finding": "ضُبطت دالة `getDisplayedQuizOptionIndices` لتدوير مواقع الخيارات حتميًا في المحاولة الأولى (`attemptSeed === 0`) بالاعتماد على ترتيب السؤال في الدرس بحيث تتوزع الإجابات الصحيحة بالتوازن بين المواقع (`أ / ب / ج / د`) وتنتهي ظاهرة تركز الإجابة الصحيحة في الخيار الأول أو الثاني."
+    },
+    {
+      "id": "CR64-U58-daf-tricks-genus-komposita",
+      "scope": "DaF Pedagogical Tricks: Genus-Code & Komposita Rules across 53 Lessons",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S01",
+        "S04",
+        "S05",
+        "S08",
+        "S09",
+        "S10",
+        "S15"
+      ],
+      "finding": "صُمّم محور شفرات جنس الاسم والأسماء المركبة (`Genus-Code & Komposita`) في `renderLessonPedagogicalTricks` لتزويد المتعلم بلواحق المؤنث (`-ung, -heit, -keit, -schaft, -ion, -tät, -ik` -> `die`) والمحايد (`-chen, -lein, -ment, -um` والمصادر الاسمية -> `das`) والمذكر (`-ling, -ig, -ich, -ismus` وأيام الأسبوع والفصول -> `der`) وقاعدة الكلمة الأخيرة في الأسماء المركبة (`Komposita`)."
+    },
+    {
+      "id": "CR64-U59-daf-tricks-fudgo-wechselpraepositionen",
+      "scope": "DaF Pedagogical Tricks: FUDGO, Dative & Wechselpräpositionen (Wohin vs. Wo)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S02",
+        "S06",
+        "S07",
+        "S08",
+        "S12"
+      ],
+      "finding": "صُمّم محور شفرات الحالات وحروف الجر (`FUDGO & Wechselpräpositionen`) في `renderLessonPedagogicalTricks` لتثبيت حروف النصب (`FUDGO: für, um, durch, gegen, ohne` -> `Akkusativ`) وحروف الجر (`mit, nach, aus, zu, von, bei, seit` -> `Dativ`) وقاعدة الحركة `Wohin? -> Akkusativ` مقابل الثبات `Wo? -> Dativ` وأزواج الأفعال (`stellen/stehen`, `legen/liegen`, `setzen/sitzen`)."
+    },
+    {
+      "id": "CR64-U60-daf-tricks-v2-satzklammer-aduso-tekamolo",
+      "scope": "DaF Pedagogical Tricks: Sentence Architecture (V2, Satzklammer, ADUSO, TeKaMoLo)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S08",
+        "S13",
+        "S15"
+      ],
+      "finding": "صُمّم محور هندسة الجملة الألمانية (`V2-Regel, Satzklammer, ADUSO & TeKaMoLo`) في `renderLessonPedagogicalTricks` لتثبيت الفعل المصرف في الموقع الثاني `V2`، وقوس الجملة `Satzklammer`، وأدوات الربط الصفرية `ADUSO` (`aber, denn, und, sondern, oder`) مقابل أدوات الجملة الفرعية (`weil, dass, obwohl, wenn`)، وترتيب الظروف `TeKaMoLo`."
+    },
+    {
+      "id": "CR64-U61-daf-tricks-arabic-l1-interference-guards",
+      "scope": "DaF Pedagogical Tricks: Arabic L1 Interference Guards across A0–B2",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S08",
+        "S11",
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "finding": "صُمّم محور تنبيهات التداخل اللغوي للناطقين بالعربية (`L1-Interferenz-Fallen`) لمعالجة الأخطاء الشائعة: عدم حذف فعل الكينونة (`sein`) أو الفاعل الصريح (`es`)، والتفريق الصوتي بين `ich-Laut / ach-Laut` و`b/p` و`v/w` و`sp-/st-`، وحفظ الأفعال مع حرف جرها وحالته (`warten auf + Akk.`, `teilnehmen an + Dat.`)."
+    },
+    {
+      "id": "CR64-U62-german-umlaut-char-toolbar",
+      "scope": "German Special Character Input Toolbar (`ä, ö, ü, ß, Ä, Ö, Ü` across 428 exercises, 109 tasks, and flashcards)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S11",
+        "S14",
+        "S16",
+        "S17"
+      ],
+      "finding": "أُضيف شريط إدراج الحروف الألمانية الخاصة (`.german-char-toolbar` عبر `renderGermanCharToolbar` و`insertGermanCharAtCursor`) لجميع مساحات الحل الذاتي في التمارين الـ428 ومهام الأداء الـ109 وبطاقات المراجعة المتباعدة مع دعم كامل للوحة المفاتيح وإطلاق حدث `input` للحفظ الفوري."
+    },
+    {
+      "id": "CR64-U63-exercise-live-keyword-self-check",
+      "scope": "Live Exercise Draft Keyword & Orthography Self-Check (`analyzeExerciseDraftAgainstKey`, 428 exercises)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S13",
+        "S14",
+        "S16"
+      ],
+      "finding": "أُضيفت دالة `analyzeExerciseDraftAgainstKey(draftText, keyHtml)` وعنصر `.exercise-draft-feedback` لمقارنة مسودة المتعلم حيًا بالكلمات الألمانية المفتاحية المستهدفة في مفتاح التمرين وتنبيهه إلى كتابة الحرف الأول كبيرًا في الأسماء الألمانية (`Großschreibung`) قبل فتح مفتاح الإجابة."
+    },
+    {
+      "id": "CR64-U64-vocab-gender-badges-and-754-german-contexts",
+      "scope": "Color-Coded Noun Gender Badges (`der/die/das`) & 100% German Contextual Sentences (754/754 words)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S03",
+        "S04",
+        "S05",
+        "S10"
+      ],
+      "finding": "أُضيفت شارات جنس الاسم عالية التباين (`.noun-gender-badge.is-masc/.is-fem/.is-neut`: `der · مذكر`، `die · مؤنث`، `das · محايد`) في بطاقات المفردات والقاموس التراكمي، ورُقّيت دالة `getWordContextHint` لتوليد جمل سياقية ألمانية طبيعية (`lang=\"de\"`) لجميع المفردات الـ213 التي لم تحمل مثالًا مصدريًا، محققةً تغطية ألمانية سياقية 754/754 (100%)."
+    },
+    {
+      "id": "CR64-U65-flashcard-active-spelling-recall",
+      "scope": "Active Flashcard Spelling & Article Recall (`evaluateFlashcardSpelling` & `#flash-spell-input`)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S03",
+        "S05",
+        "S11",
+        "S14",
+        "S16"
+      ],
+      "finding": "أُضيف صندوق تدريب الإملاء النشط وأداة التعريف (`.flash-spelling-box` و`#flash-spell-input`) داخل بطاقات المراجعة المتباعدة مع تقييم ذكي (`evaluateFlashcardSpelling`) يميز بين التطابق التام، واختلاف حروف الإمالة (`Umlaute`)، وخطأ أداة التعريف (`der/die/das`)."
+    },
+    {
+      "id": "CR64-U66-persistent-mistake-bank",
+      "scope": "Persistent Smart Mistake Bank (`state.mistakeBank` & `renderMistakeBankSection`)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S08",
+        "S14",
+        "S16",
+        "S17"
+      ],
+      "finding": "أُضيف دفتر الأخطاء الذكي المستمر (`state.mistakeBank`) المحفوظ في `localStorage` والمشمول في التصدير والاستيراد الاحتياطي JSON لتجميع الأسئلة التي أخطأ فيها المتعلم في اختبارات الدروس والبوابة وإتاحة إعادة التدرب عليها في صفحة المراجعة وحذفها تلقائيًا فور إتقانها."
+    },
+    {
+      "id": "CR64-U67-audio-segment-micro-shadowing",
+      "scope": "Line-by-Line Audio Segment Playback (`playAudioSegment`, 474 segments across 217 assets)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S11",
+        "S17"
+      ],
+      "finding": "أُضيف زر استماع سطري مباشر (`.transcript-segment-btn` مع `data-action=\"play-audio-segment\"`) لكل سطر من أسطر التفريغ الصوتي الـ474 عبر الأصول الـ217 مع الحفاظ التام على محدد `.audio-transcript-line span[lang=\"de\"]` لتسهيل الترديد السمعي الدقيق (`Micro-Shadowing`) جملةً بجملة."
+    },
+    {
+      "id": "CR64-U68-exhaustive-full-project-verification",
+      "scope": "Exhaustive 100% Full-Project Verification (64 review guards, 5 Node suites, 5 Chromium suites, 349 axe states, 348 narrow states)",
+      "status": "verified_and_upgraded",
+      "sourceRefs": [
+        "S16",
+        "S17"
+      ],
+      "finding": "اجتاز المشروع كاملًا دون عينات فحوص `build_course.py` و`verify_course.py` وجميع حراس المراجعة الـ64 ومجموعات Node الخمس ومجموعات Chromium الخمس (`348` حالة عرض ضيق بصفر تجاوز أفقي و`349` حالة شاشة في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة مع مخزن `deutsch-pfad-v113`)."
+    }
+  ]
+}

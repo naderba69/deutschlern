@@ -621,6 +621,51 @@ svg { display: block; flex: 0 0 auto; }
 .skill-diag-card strong { font-size: 15px; color: #1b4633; direction: ltr; unicode-bidi: isolate; align-self: flex-start; }
 .skill-diag-card span { font-size: 9px; color: var(--muted); line-height: 1.55; }
 
+/* CR64: DaF pedagogical tricks box, inline quiz reading helper, German char toolbar, Goethe gender badges, flashcard spelling recall, mistake bank, and line-by-line audio segment button */
+.lesson-daf-tricks-box, .quiz-reading-helper { min-width: 0; margin: 11px 0 15px; border: 1px solid #d6e4da; border-radius: 14px; background: #f6faf7; overflow: hidden; overflow-wrap: anywhere; }
+.lesson-daf-tricks-box > summary, .quiz-reading-helper > summary { padding: 10px 13px; cursor: pointer; font-size: 10px; font-weight: 700; color: #1a4431; background: #ebf4ee; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.lesson-daf-tricks-box > summary::-webkit-details-marker, .quiz-reading-helper > summary::-webkit-details-marker { display: none; }
+.daf-tricks-badge { display: inline-flex; align-items: center; gap: 6px; color: #17402d; }
+.daf-tricks-sub { font-size: 9px; font-weight: 600; color: #315442; }
+.lesson-daf-tricks-body, .quiz-reading-helper-body { padding: 12px 13px; border-top: 1px solid #dce8df; font-size: 10px; line-height: 1.85; color: var(--ink); background: #fbfdfb; }
+.daf-tricks-lead { margin: 0 0 10px; padding: 8px 10px; border-radius: 10px; background: #eef6f0; color: #1c4431; font-size: 10px; }
+.daf-tricks-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.daf-trick-card { min-width: 0; padding: 10px 11px; border: 1px solid #dfe9e2; border-radius: 11px; background: #ffffff; }
+.daf-trick-card > strong { display: block; margin-bottom: 6px; font-size: 10px; color: #194330; }
+.daf-trick-card ul { margin: 0; padding-inline-start: 16px; font-size: 9.5px; line-height: 1.75; color: var(--ink); }
+.quiz-reading-section-title { margin: 0 0 6px; color: #1a4431; }
+
+.german-char-toolbar { min-width: 0; margin: 6px 0 8px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.german-char-label { font-size: 9.5px; font-weight: 600; color: #2b4a3a; }
+.german-char-buttons { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.german-char-btn { min-width: 26px; min-height: 25px; padding: 2px 6px; border: 1px solid #cddbd1; border-radius: 7px; background: #ffffff; color: #19422f; font-size: 11px; font-weight: 700; cursor: pointer; line-height: 1.2; transition: background .14s ease, border-color .14s ease; }
+.german-char-btn:hover, .german-char-btn:focus-visible { background: #e8f3ec; border-color: #6f9c7c; }
+
+.exercise-draft-feedback { margin-top: 6px; padding: 6px 9px; border-radius: 9px; background: #eef5f0; color: #224634; font-size: 9.5px; line-height: 1.6; }
+.exercise-draft-feedback.is-good { background: #e1f1e7; color: #14402a; font-weight: 600; }
+.exercise-draft-feedback.is-warn { background: #f8efe2; color: #5e4119; font-weight: 600; }
+
+.noun-gender-badge { display: inline-flex; align-items: center; gap: 3px; padding: 2px 7px; border-radius: 999px; font-size: 9px; font-weight: 700; white-space: nowrap; }
+.noun-gender-badge.is-masc { background: #e3eef9; color: #153e66; border: 1px solid #bfd6ee; }
+.noun-gender-badge.is-fem { background: #f9e6ec; color: #681c35; border: 1px solid #ecc4d1; }
+.noun-gender-badge.is-neut { background: #e4f3e8; color: #17492b; border: 1px solid #bfe0c9; }
+
+.flash-spelling-box { width: 100%; max-width: 460px; margin: 10px auto 4px; padding: 10px 12px; border: 1px solid #dce6df; border-radius: 12px; background: #f7faf8; text-align: right; }
+.flash-spelling-label { display: block; margin-bottom: 4px; font-size: 10px; font-weight: 700; color: #1c4431; }
+.flash-spelling-input { width: 100%; min-height: 36px; padding: 6px 10px; border: 1px solid #cddad0; border-radius: 9px; background: #ffffff; color: var(--ink); font-size: 12px; }
+.flash-spelling-input:focus-visible { outline: 3px solid var(--green); outline-offset: 2px; }
+.flash-spelling-feedback { margin-top: 6px; font-size: 9.5px; color: #254937; line-height: 1.55; }
+
+.mistake-bank-panel { min-width: 0; margin-top: 18px; overflow-wrap: anywhere; }
+.mistake-bank-panel.is-empty { background: #f7fbf8; border-color: #d6e4da; }
+.mistake-bank-head small { display: block; color: var(--muted); font-size: 9px; font-weight: 700; }
+.mistake-bank-head h2 { margin: 4px 0 6px; font-size: 15px; color: var(--ink); }
+.mistake-bank-head p { margin: 0; font-size: 10px; color: var(--muted); line-height: 1.7; }
+.mistake-bank-item-actions { margin-top: 8px; display: flex; align-items: center; justify-content: flex-end; gap: 7px; flex-wrap: wrap; }
+
+.transcript-segment-btn { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-inline-end: 6px; padding: 0; border: 1px solid #cbd9cf; border-radius: 999px; background: #ffffff; color: #1c4633; font-size: 9px; cursor: pointer; flex-shrink: 0; vertical-align: middle; }
+.transcript-segment-btn:hover, .transcript-segment-btn:focus-visible { background: #e6f2ea; border-color: #6c9a79; }
+
 @media (max-width: 1150px) {
   .layout-shell { grid-template-columns: 226px minmax(0,1fr); }
   .sidebar { padding-inline: 14px; }
@@ -737,6 +782,7 @@ svg { display: block; flex: 0 0 auto; }
   .review-ratings { gap: 7px; }
   .review-ratings button { min-width: 0; flex: 1; padding-inline: 8px; }
   .lesson-stages-steps { grid-template-columns: 1fr; }
+  .daf-tricks-grid { grid-template-columns: 1fr; }
   .skill-diagnostics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .inline-section-audio, .quiz-audio-helper { flex-direction: column; align-items: stretch; }
   .inline-section-audio-actions, .quiz-audio-helper-actions, .level-checkpoint-actions { width: 100%; }

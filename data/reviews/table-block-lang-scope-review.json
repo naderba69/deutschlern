@@ -230,13 +230,13 @@
   "excludedSources": [],
   "sourceHashes": {
     "tools/build_course.py": "6384e94f006fbb36693bf71b8ff130bb0d4defe33af88a14d83cb49dee5dedc7",
-    "tools/verify_course.py": "74b68641e05f6efaabbeaf4e5e268c86b66f39c045ad9833bdb56858c5e65a40",
-    "app.js": "87a43d49c7c781ce7c18b26db9bf4239a2fdc40b68fb1acf7fe6720e444b9b83",
-    "service-worker.js": "baa4b7305e5ee5a76758b22143d400d3bf81cff98b24e0571eec3a49e624e17e",
+    "tools/verify_course.py": "49b2d26a5ae25b9a5792ed7f37f34b34a5217f7b4a91c6cbcaff8629b02765c7",
+    "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
+    "service-worker.js": "42f2e7f242bfd035eab0a14d5077aca6c2a814713fc0b8c987cfb75173c95506",
     "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
-    "tools/test_browser.cjs": "363cbca7ddfba200ed08e6ac7feb55a0f62488c54ceaf96194229c7d40a83f20",
-    "tools/test_service_worker.cjs": "8336df545eb0b0c572f8652d30bebcdd49f1f21eb5d818936a7b77e2ea9b07da",
-    "tools/test_accessibility_update.cjs": "d875aae9f6dce82f4f22ee372f70029f39a1b194bd62bba5ab0cca46a0263381",
+    "tools/test_browser.cjs": "4df1a09b5c4f635735b02afeff3926e68ab0b8cf1605802f0b071fcf2ca40f97",
+    "tools/test_service_worker.cjs": "eb6b6a072cb46d2f0a425946e54dc1e0df066ff5ca3ddd1e467f83ce1966151a",
+    "tools/test_accessibility_update.cjs": "6aaeb2d4416b9f485ba4f763233b86705af7c3e79e2e8e31b9b7c5c966858a8c",
     "tools/test_a1_02_review.py": "05ed75c61a21e3bed3a8e4224187f0010b166ac67852b7fb8f0aa0df12db0c0d"
   },
   "units": [
