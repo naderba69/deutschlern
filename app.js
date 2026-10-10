@@ -220,6 +220,9 @@ let selectedLevel = 'A0';
 let lessonSession = null;
 let gateSession = null;
 let reviewSession = null;
+let reviewDirection = 'de-ar';
+let lexiconFilter = { query: '', level: 'ALL', focus: 'ALL' };
+let spiralSession = null;
 let mobileMenuOpen = false;
 let toastTimer = null;
 let activeAudio = null;
@@ -711,6 +714,125 @@ function formatInlineMarkdown(value) {
     ));
 }
 
+function extractPerformanceTargetTokens(task) {
+  const combined = `${task?.prompt || ''} ${task?.criteria?.targetSkill || ''} ${task?.criteria?.taskCompletion || ''}`;
+  const tokens = [];
+  const seen = new Set();
+  const matches = [
+    ...combined.matchAll(/\*\*([^*]+)\*\*/g),
+    ...combined.matchAll(/`([^`]+)`/g)
+  ];
+  for (const match of matches) {
+    const raw = String(match[1] || '').trim();
+    const parts = raw.split(/[\/،,;orأو]+/).map((part) => part.trim()).filter(Boolean);
+    for (const part of parts) {
+      const clean = part.replace(/^[.!?()[\]"'«»]+|[.!?()[\]"'«»]+$/g, '').trim();
+      if (clean.length >= 2 && clean.length <= 36 && /[A-Za-zÄÖÜäöüß]{2,}/.test(clean) && !/[\u0600-\u06FF]/.test(clean)) {
+        const key = clean.toLowerCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          tokens.push(clean);
+        }
+      }
+    }
+  }
+  return tokens.slice(0, 8);
+}
+
+function analyzePerformanceDraft(task, responseText) {
+  const text = String(responseText || '').trim();
+  const minChars = Number(task?.selfCheck?.minimumResponseCharacters) || 35;
+  const charCount = text.length;
+  const charsMet = charCount >= minChars;
+  const sentences = text
+    ? text.split(/[.!?؟\n]+/).map((line) => line.trim()).filter((line) => line.length >= 3)
+    : [];
+  const sentenceCount = sentences.length;
+  const hasGerman = /[A-Za-zÄÖÜäöüß]{2,}/.test(text);
+  const hasArabicOnly = Boolean(text) && /[\u0600-\u06FF]{3,}/.test(text) && !hasGerman;
+  const targetTokens = extractPerformanceTargetTokens(task);
+  const lowerText = text.toLowerCase();
+  const matchedTokens = [];
+  const missingTokens = [];
+  for (const token of targetTokens) {
+    const stem = token.replace(/^(?:der|die|das|ein|eine)\s+/i, '').split(/\s+/)[0].toLowerCase();
+    if (lowerText.includes(token.toLowerCase()) || (stem.length >= 3 && lowerText.includes(stem))) {
+      matchedTokens.push(token);
+    } else {
+      missingTokens.push(token);
+    }
+  }
+  return {
+    charCount,
+    minChars,
+    charsMet,
+    sentenceCount,
+    hasGerman,
+    hasArabicOnly,
+    targetTokens,
+    matchedTokens,
+    missingTokens
+  };
+}
+
+function renderPerformanceTaskHeuristicsInner(task, responseText) {
+  const analysis = analyzePerformanceDraft(task, responseText);
+  const charBadgeClass = analysis.charsMet ? 'is-ready' : 'is-pending';
+  const scriptMessage = !analysis.charCount
+    ? 'ابدأ بكتابة مسودتك بالألمانية؛ سيظهر هنا فحص فوري للطول والجمل والعناصر اللغوية المستهدفة.'
+    : analysis.hasArabicOnly
+      ? 'تنبيه منهجي: المسودة مكتوبة بالعربية حاليًا؛ صُغ الجمل المطلوبة باللغة الألمانية.'
+      : analysis.charsMet
+        ? 'الطول مستوفى باللغة الألمانية؛ راجع الآن توظيف الصيغ المستهدفة ومطابقة النموذج.'
+        : `أضف ${Math.max(1, analysis.minChars - analysis.charCount)} حرفًا إضافيًا على الأقل لإتمام المسودة المطلوبة.`;
+  const tokensMarkup = analysis.targetTokens.length
+    ? `<div class="heuristic-tokens"><span>الصيغ/المفردات المستهدفة في المهمة:</span><div class="heuristic-token-list">${analysis.targetTokens.map((token) => {
+      const isUsed = analysis.matchedTokens.includes(token);
+      return `<span class="heuristic-token ${isUsed ? 'is-used' : ''}" dir="ltr" lang="de">${isUsed ? '✓ ' : ''}${escapeHTML(token)}</span>`;
+    }).join('')}</div></div>`
+    : '';
+  return `<div class="heuristic-head"><strong>الموجّه اللغوي المحلي (تحقق فوري)</strong><div class="heuristic-metrics"><span class="heuristic-pill ${charBadgeClass}">${analysis.charCount} / ${analysis.minChars} حرفًا</span><span class="heuristic-pill">${analysis.sentenceCount} جمل/أسطر</span></div></div><p class="heuristic-note">${escapeHTML(scriptMessage)}</p>${tokensMarkup}`;
+}
+
+function renderPerformanceTaskHeuristics(task, evidence) {
+  return `<div class="performance-heuristic-box" data-heuristic-for="${escapeHTML(task.id)}" dir="auto">${renderPerformanceTaskHeuristicsInner(task, evidence?.response || '')}</div>`;
+}
+
+function extractLessonPerformanceModelHtml(scopeKey, task, index) {
+  if (scopeKey === 'gate:A0-A1') {
+    const gateModels = [
+      '<p dir="auto"><strong>نموذج استرشادي للمهمة 1 (A0 → A1):</strong></p><p dir="ltr" lang="de">Guten Tag! Ich heiße Sami. Ich komme aus Tunesien und wohne in Tunis. Ich buchstabiere meinen Namen: S-A-M-I. Meine Telefonnummer ist null-eins-sieben-zwei. Auf Wiedersehen!</p>',
+      '<p dir="auto"><strong>نموذج استرشادي للمهمة 2 (A0 → A1):</strong></p><p dir="ltr" lang="de">Entschuldigung, wie viel kostet das Brot? Ich möchte bitte einen Kaffee und ein Wasser. Hier bitte, vielen Dank!</p>'
+    ];
+    return gateModels[index] || gateModels[0];
+  }
+  const lesson = typeof scopeKey === 'string' && scopeKey.startsWith('lesson:')
+    ? findLesson(scopeKey.slice('lesson:'.length))
+    : null;
+  if (!lesson?.contentHtml) return '';
+  const keyMatch = lesson.contentHtml.match(/<details class="answer-key">([\s\S]*?)<\/details>/);
+  if (!keyMatch) return '';
+  const keyBody = keyMatch[1];
+  const h3Models = [...keyBody.matchAll(/<h3 dir="auto">([^<]*(?:نموذج|تمرين)[^<]*)<\/h3>\s*((?:<(?:p|ul|ol|blockquote)\b[\s\S]*?<\/(?:p|ul|ol|blockquote)>\s*)+)/g)];
+  if (h3Models.length) {
+    const chosen = h3Models[Math.min(index, h3Models.length - 1)];
+    return `<p dir="auto"><strong>${chosen[1]}</strong></p>${chosen[2]}`;
+  }
+  const liItems = [...keyBody.matchAll(/<li dir="auto"><strong>(تمرين\s*\d+[^<]*)<\/strong>([\s\S]*?)<\/li>/g)];
+  if (liItems.length) {
+    const tail = liItems.slice(-2);
+    const chosen = tail[Math.min(index, tail.length - 1)];
+    return `<p dir="auto"><strong>${chosen[1]}</strong>${chosen[2]}</p>`;
+  }
+  return '';
+}
+
+function renderPerformanceModelComparison(scopeKey, task, index) {
+  const modelHtml = extractLessonPerformanceModelHtml(scopeKey, task, index);
+  if (!modelHtml) return '';
+  return `<details class="performance-model-compare"><summary>قارن مسودتك بالنموذج الاسترشادي بعد المحاولة</summary><div class="performance-model-body" dir="auto">${modelHtml}</div></details>`;
+}
+
 function renderPerformanceTasks(tasks, scopeKey, version) {
   const checkLabels = {
     taskCompletion: 'أنجزت كل أجزاء المهمة المطلوبة',
@@ -734,7 +856,9 @@ function renderPerformanceTasks(tasks, scopeKey, version) {
       ? `<section class="performance-task-rubric"><h2>معايير التحقق المحلي</h2><ul>${rubricItems}</ul></section>`
       : '';
     const status = evidence.completed === true ? '<span class="performance-task-status is-done">اكتمل التحقق الذاتي</span>' : '<span class="performance-task-status">بانتظار إجابتك ومعايير التحقق</span>';
-    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p dir="auto">${formatInlineMarkdown(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" dir="auto" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div><button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
+    const heuristicCoach = renderPerformanceTaskHeuristics(task, evidence);
+    const modelComparison = renderPerformanceModelComparison(scopeKey, task, index);
+    return `<article class="performance-task-card"><div class="performance-task-title"><strong>المهمة ${index + 1}</strong>${status}</div><p dir="auto">${formatInlineMarkdown(task.prompt)}</p>${rubric}<label class="performance-response-label" for="response-${escapeHTML(task.id)}">اكتب إجابتك أو مسودة ما ستقوله</label><textarea id="response-${escapeHTML(task.id)}" dir="auto" data-performance-response data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}" maxlength="1200" rows="3" placeholder="اكتب هنا؛ تحفظ إجابتك على هذا الجهاز">${escapeHTML(evidence.response || '')}</textarea><div class="performance-check-list">${checks}${speakCheck}</div>${heuristicCoach}${modelComparison}<button type="button" class="button-outline button-small" data-action="complete-performance-task" data-scope="${escapeHTML(scopeKey)}" data-version="${escapeHTML(version)}" data-task-id="${escapeHTML(task.id)}">${evidence.completed === true ? 'تم التحقق' : 'تحقّق من المهمة'}</button></article>`;
   }).join('')}</div><p class="performance-self-check-note">التطبيق يتحقق من إكمال خطوات المراجعة فقط، ولا يحكم آليًا على جودة النطق أو صدق الإجابة. لا تُمنح علامة إتقان حتى تؤكد المعايير بنفسك.</p></section>`;
 }
 
@@ -1037,6 +1161,93 @@ function renderDailyPlanTask(task, index) {
   return `<li class="${classes}"><span class="daily-plan-index">${done ? icon('check', 15) : String(index + 1).padStart(2, '0')}</span><div class="daily-plan-task-copy"><div class="daily-plan-task-heading"><strong dir="auto">${escapeHTML(title)}</strong><span class="daily-plan-status ${done ? 'is-done' : task.status === 'deferred' ? 'is-deferred' : ''}">${status}</span></div><p>${escapeHTML(getDailyPlanTaskDescription(task))}</p>${carryNote}</div>${action}</li>`;
 }
 
+const FOCUS_DOMAIN_PATTERNS = {
+  'المحادثة': /محادثة|تحدث|حوار|تعارف|تحيات|تواصل|مجاملة|رأي|مناقشة|تفاوض|طلاقة|سؤال|رد|اقتراح/,
+  'السفر': /سفر|مطار|فندق|مواصلات|اتجاهات|قطار|محطة|حجز|طقس|طوارئ|مطعم|مقهى|رحلة|إجازة|عطلة|تذكرة|طريق/,
+  'العمل': /عمل|مهن|وظيفة|مكتب|بريد|رسائل|سيرة|مقابلة|اجتماع|تقني|إدارة|شكوى|رسمي|تفاوض|شركة|زميل|مشروع/,
+  'الدراسة': /قراءة|كتابة|قواعد|مقال|عرض|جامعة|تعليم|إعلام|ثقافة|بيئة|حجج|تحليل|غير مباشر|أبجدية|أفعال|جمل|ربط/,
+  'الحياة اليومية': /يومي|روتين|عائلة|سكن|شقة|تسوق|طعام|صحة|طبيب|وقت|أرقام|ملابس|هوايات|جيران|مواعيد|منزل|سوبرماركت/
+};
+
+function getLessonFocusDomains(lesson) {
+  if (!lesson) return ['المحادثة', 'الحياة اليومية'];
+  const combined = `${lesson.title || ''} ${lesson.objective || ''} ${(lesson.skills || []).join(' ')}`;
+  const matched = Object.entries(FOCUS_DOMAIN_PATTERNS)
+    .filter(([, regex]) => regex.test(combined))
+    .map(([domain]) => domain);
+  if (!matched.includes('المحادثة') && (lesson.skills || []).includes('المحادثة')) matched.push('المحادثة');
+  if (!matched.includes('الدراسة') && (lesson.level === 'B1' || lesson.level === 'B2' || (lesson.skills || []).includes('القواعد'))) matched.push('الدراسة');
+  if (!matched.includes('الحياة اليومية') && (lesson.level === 'A0' || lesson.level === 'A1' || lesson.level === 'A2')) matched.push('الحياة اليومية');
+  if (matched.length < 2) {
+    for (const fallback of ['المحادثة', 'الحياة اليومية', 'الدراسة']) {
+      if (!matched.includes(fallback)) matched.push(fallback);
+      if (matched.length >= 2) break;
+    }
+  }
+  return matched;
+}
+
+function getLessonStageBreakdown(lesson) {
+  const total = Math.max(15, Number(lesson?.minutes) || 30);
+  const buildMinutes = Math.max(5, Math.round(total * 0.35));
+  const practiceMinutes = Math.max(5, Math.round(total * 0.40));
+  const masteryMinutes = Math.max(5, total - buildMinutes - practiceMinutes);
+  return { total, buildMinutes, practiceMinutes, masteryMinutes };
+}
+
+function getWordContextHint(word, lesson = null) {
+  if (word?.example && String(word.example).trim()) return String(word.example).trim();
+  const targetLesson = lesson || findLesson(word?.lessonId);
+  const rawWord = String(word?.word || '').trim();
+  if (targetLesson && !Array.isArray(targetLesson._cachedDeSentences)) {
+    const plain = String(targetLesson.contentHtml || '')
+      .replace(/<details class="answer-key">[\s\S]*?<\/details>/g, '\n')
+      .replace(/<[^>]+>/g, '\n');
+    targetLesson._cachedDeSentences = plain
+      .split(/\n+/)
+      .map((line) => line.replace(/^[•\-–—*\d.)\s]+/, '').trim())
+      .filter((line) => line.length >= 8 && line.length <= 145 && /[A-Za-zÄÖÜäöüß]{3,}/.test(line) && !/[\u0600-\u06FF]/.test(line));
+  }
+  const stem = rawWord
+    .replace(/^(?:der|die|das)\s+/i, '')
+    .split(/[,/()]/)[0]
+    .trim();
+  if (targetLesson && stem.length >= 3) {
+    const escapedStem = stem.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`\\b${escapedStem}`, 'i');
+    const found = (targetLesson._cachedDeSentences || []).find((line) => regex.test(line) && line.toLowerCase() !== rawWord.toLowerCase());
+    if (found) return found;
+  }
+  const levelId = targetLesson?.level || word?.level || 'A0';
+  const unitNum = targetLesson?.unit || 1;
+  return `${rawWord} — Grundwortschatz in Lektion ${unitNum} (${levelId}).`;
+}
+
+function getNounArticleInfo(wordText) {
+  const match = String(wordText || '').trim().match(/^(der|die|das)\s+([A-ZÄÖÜ][A-Za-zÄÖÜäöüß\-]*)/);
+  if (!match) return null;
+  return { article: match[1].toLowerCase(), noun: match[2] };
+}
+
+function renderDailyPlanAdaptiveGuide(plan) {
+  const dailyGoal = normalizeDailyMinutes(state.profile.dailyGoal);
+  const focus = state.profile.focus || 'المحادثة';
+  const lessonTask = plan.coreTasks.find((item) => item.kind === 'lesson');
+  const activeLesson = lessonTask ? findLesson(lessonTask.targetId) : null;
+  const stages = activeLesson ? getLessonStageBreakdown(activeLesson) : { total: 25, buildMinutes: 9, practiceMinutes: 10, masteryMinutes: 6 };
+  const domains = activeLesson ? getLessonFocusDomains(activeLesson) : [focus];
+  const matchesFocus = domains.includes(focus);
+  const pacingAdvice = dailyGoal < stages.total
+    ? `وقتك اليومي (${dailyGoal} د) أقصر من كامل الدرس (${stages.total} د): أنجز اليوم «المرحلة 1: البناء (${stages.buildMinutes} د)» أو «المرحلة 2: التدريب (${stages.practiceMinutes} د)»، وأكمل «المرحلة 3: التقييم (${stages.masteryMinutes} د)» في الجلسة القادمة مع حفظ تلقائي لموضعك.`
+    : dailyGoal >= stages.total + 20
+      ? `وقتك اليومي (${dailyGoal} د) يكفي لإتمام مراحل الدرس الثلاث (${stages.total} د: بناء ${stages.buildMinutes} د + تدريب ${stages.practiceMinutes} د + إتقان ${stages.masteryMinutes} د) مع دفعة مراجعة مفردات إضافية أو بداية الدرس التالي اختياريًا.`
+      : `وقتك اليومي (${dailyGoal} د) متوازن تمامًا مع الدرس الحالي (${stages.total} د مقسّمة إلى: بناء ${stages.buildMinutes} د · تدريب ${stages.practiceMinutes} د · تقييم وأداء ${stages.masteryMinutes} د).`;
+  const focusNote = matchesFocus
+    ? `هذا الدرس يخدم هدفك المختار مباشرة («${focus}») إلى جانب (${domains.join(' · ')}).`
+    : `هدفك الحالي هو «${focus}»؛ يبني هذا الدرس أساسًا تراكميًا في (${domains.join(' · ')}) تحتاج إليه في مواقف «${focus}».`;
+  return `<div class="daily-plan-adaptive" dir="auto"><div class="daily-plan-adaptive-head"><span class="adaptive-badge">${icon('compass', 14)} توجيه منهجي مخصّص لوقتك وهدفك</span><span class="adaptive-domains">تركيزك: <strong>${escapeHTML(focus)}</strong></span></div><p>${escapeHTML(pacingAdvice)}</p><p class="daily-plan-adaptive-sub">${escapeHTML(focusNote)}</p></div>`;
+}
+
 function renderDailyPlan() {
   const plan = ensureDailyPlan();
   if (!plan) return '';
@@ -1053,7 +1264,7 @@ function renderDailyPlan() {
           ? `<div class="daily-plan-optional"><div><small>اختياري</small><strong>راجع درسًا متقنًا</strong><p>الخطوات الأساسية لليوم منجزة. اختر مراجعة إضافية إذا رغبت.</p></div><button type="button" class="button-outline button-small" data-action="navigate" data-view="tracks">اختر درسًا للمراجعة ${icon('arrowLeft', 15)}</button></div>`
           : '<p class="daily-plan-optional-note">ستظهر المتابعة الاختيارية بعد إتاحة الخطوة التالية.</p>'
     : `<div class="daily-plan-defer"><p>يمكنك التوقف الآن؛ لا نفقد الإجابات ولا نعتبر التأجيل فشلًا. تبقى المهام الأساسية معلقة حتى تستأنفها.</p><button type="button" class="button-quiet button-small" data-action="defer-daily-plan">تعبت؟ رحّل الباقي إلى الغد</button></div>`;
-  return `<section class="daily-plan-panel" aria-labelledby="daily-plan-title"><div class="daily-plan-header"><div><small><span lang="de">TAGESPLAN</span> · خطة مرنة</small><h2 id="daily-plan-title">خطة اليوم على قدر طاقتك</h2><p>المراجعة أولًا، ثم هدف تعلّم أساسي. يمكنك تقسيمهما على أكثر من جلسة.</p></div><div class="daily-plan-progress"><strong>${doneCount}<span> / ${coreTasks.length}</span></strong><small>مهام أساسية</small></div></div><ul class="daily-plan-list">${coreTasks.map((task, index) => renderDailyPlanTask(task, index)).join('')}</ul>${optionalMarkup}<p class="daily-plan-note">وقتك الاسترشادي ${formatStudyEstimate(state.profile.dailyGoal)} قابل للتعديل، وليس سقفًا أو شرطًا للإنجاز. أوقات الدروس تقديرية، بينما يُحتسب وقت الدراسة الفعلي تلقائيًا أثناء الجلسة النشطة.</p></section>`;
+  return `<section class="daily-plan-panel" aria-labelledby="daily-plan-title"><div class="daily-plan-header"><div><small><span lang="de">TAGESPLAN</span> · خطة مرنة</small><h2 id="daily-plan-title">خطة اليوم على قدر طاقتك</h2><p>المراجعة أولًا، ثم هدف تعلّم أساسي. يمكنك تقسيمهما على أكثر من جلسة.</p></div><div class="daily-plan-progress"><strong>${doneCount}<span> / ${coreTasks.length}</span></strong><small>مهام أساسية</small></div></div><ul class="daily-plan-list">${coreTasks.map((task, index) => renderDailyPlanTask(task, index)).join('')}</ul>${optionalMarkup}${renderDailyPlanAdaptiveGuide(plan)}<p class="daily-plan-note">وقتك الاسترشادي ${formatStudyEstimate(state.profile.dailyGoal)} قابل للتعديل، وليس سقفًا أو شرطًا للإنجاز. أوقات الدروس تقديرية، بينما يُحتسب وقت الدراسة الفعلي تلقائيًا أثناء الجلسة النشطة.</p></section>`;
 }
 
 function getLevelProgress(levelId) {
@@ -1468,6 +1679,26 @@ function renderLessonRow(lesson, index) {
   return `<div class="lesson-row ${mastered ? 'is-complete' : ''} ${accessible ? '' : 'is-locked'}"><div class="lesson-row-number">${mastered ? icon('check', 16) : String(index + 1).padStart(2, '0')}</div><div><h3 dir="auto">${escapeHTML(lesson.title)}</h3><p dir="auto">${escapeHTML(lesson.objective)} · ${escapeHTML(duration)} · ${statusLabel}</p></div><button type="button" class="button-outline" data-action="open-lesson" data-id="${escapeHTML(lesson.id)}" ${accessible ? '' : 'disabled'}>${actionLabel} ${accessible ? icon('arrowLeft', 14) : ''}</button></div>`;
 }
 
+function renderLevelMasteryCheckpointPanel(level) {
+  const lessons = getLessonsInLevel(level.id);
+  const progress = getLevelProgress(level.id);
+  const levelVocabCount = lessons.reduce((sum, item) => sum + (item.vocabulary?.length || 0), 0);
+  const domains = [...new Set(lessons.flatMap((item) => getLessonFocusDomains(item)))];
+  return `<section class="level-checkpoint-panel" dir="auto" aria-label="فحص الجاهزية والمراجعة التراكمية للمستوى ${escapeHTML(level.id)}">
+    <div class="level-checkpoint-head">
+      <div>
+        <small>تثبيت تراكمي · ${escapeHTML(level.id)}</small>
+        <h2>فحص الجاهزية والقاموس التراكمي للمستوى ${escapeHTML(level.id)}</h2>
+        <p>راجع مفردات هذا المستوى (${levelVocabCount} مفردة مشروحة بالكامل) أو شغّل تدريبًا حلزونيًا يدمج أهداف الدروس المتقنة (${progress.done}/${progress.total}) ومجالات (${domains.join(' · ')}).</p>
+      </div>
+      <div class="level-checkpoint-actions">
+        <button type="button" class="button-outline button-small" data-action="start-spiral-review" data-level="${escapeHTML(level.id)}">${icon('refresh', 14)} تدريب حلزوني لمستوى ${escapeHTML(level.id)}</button>
+        <button type="button" class="button-quiet button-small" data-action="open-level-lexicon" data-level="${escapeHTML(level.id)}">${icon('book', 14)} قاموس وقواعد ${escapeHTML(level.id)}</button>
+      </div>
+    </div>
+  </section>`;
+}
+
 function renderLevelPage() {
   const level = getLevel(selectedLevel);
   if (!level) return renderTracks();
@@ -1479,6 +1710,7 @@ function renderLevelPage() {
   const transitionCheck = level.id === 'A0' ? renderA0TransitionCheck() : '';
   return `<button class="lesson-back" type="button" data-action="navigate" data-view="tracks">${icon('arrow', 15)} عودة إلى كل المسارات</button>
     <div class="page-header"><div><span class="level-token theme-${level.theme}">${level.id}</span><h1 style="margin-top:10px">${escapeHTML(level.name)} — ${escapeHTML(level.subtitle)}</h1><p>${escapeHTML(level.description)} ${escapeHTML(level.goal)}</p></div><div class="page-header-actions"><span class="plan-chip">${icon('chart', 14)} ${progress.done}/${progress.total} درس متقن</span></div></div>
+    ${renderLevelMasteryCheckpointPanel(level)}
     <section class="track-level theme-${level.theme}"><div class="track-level-head"><div class="track-level-label"><span class="level-token">${level.id}</span><div><h2>دروس المستوى ${escapeHTML(level.id)}</h2><p>${escapeHTML(level.goal)}</p></div></div><span>${progress.done}/${progress.total} متقن</span></div>${getLessonsInLevel(level.id).map((lesson, i) => renderLessonRow(lesson, i)).join('')}</section>${transitionCheck}`;
 }
 
@@ -1507,6 +1739,29 @@ function renderA0TransitionCheck() {
   return `<section class="transition-check-panel"><div class="transition-check-heading"><div><small>A0 · بوابة الإتقان إلى A1</small><h2>التقييم الختامي بعد A0</h2><p>شرط الانتقال: إتقان الدروس الخمسة ثم تحقيق 80% على الأقل في تقييم يغطي الأهداف والمهارات المطلوبة. النجاح هنا لا يعني شهادة أو اعتمادًا رسميًا.</p></div><span>${ready ? escapeHTML(check.durationLabel) : 'قيد الإنتاج'}</span></div><p class="progression-note">${status} ورقة الأسئلة القديمة محفوظة للأرشفة فقط ولا تُحتسب بوابةً للانتقال.</p>${gateAction}${renderA0GateScopeNote()}</section>${done ? renderAudioAssets('a0-a1-gate') : ''}`;
 }
 
+function renderQuizAudioHelper(lessonId, question) {
+  const promptText = String(question?.prompt || '');
+  const isListeningQuestion = question?.skill === 'listening'
+    || /الاستماع|تسمع|الإعلان الصوتي|الرسالة الصوتية|التسجيل الصوتي|المتحدث|في التسجيل/.test(promptText);
+  if (!isListeningQuestion) return '';
+  const playableStatuses = ['ready', 'generated_pending_acoustic_review'];
+  const assets = (course?.audioAssets || []).filter((item) => item.lessonId === lessonId && playableStatuses.includes(item.status));
+  const asset = assets.find((item) => item.kind === 'listening') || assets[0];
+  if (!asset) return '';
+  return `<div class="quiz-audio-helper" dir="auto"><span class="quiz-audio-helper-label">${icon('volume', 15)} <strong>تسجيل الاستماع المرتبط بالسؤال:</strong> استمع مباشرة دون مغادرة السؤال</span><div class="quiz-audio-helper-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(asset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(asset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`;
+}
+
+function getDisplayedQuizOptionIndices(question, retryAttempt = 0) {
+  const count = Array.isArray(question?.options) ? question.options.length : 0;
+  const indices = Array.from({ length: count }, (_, idx) => idx);
+  const shift = Number(retryAttempt) || 0;
+  if (shift <= 0 || count <= 1) return indices;
+  const qNum = Number(String(question?.id || '').match(/(\d+)$/)?.[1] || 0);
+  const offset = (shift + qNum) % count;
+  if (offset === 0) return indices.slice(1).concat(indices[0]);
+  return indices.slice(offset).concat(indices.slice(0, offset));
+}
+
 function startA0GateQuiz(retry = false) {
   stopAudioPlayback();
   const gate = course?.a0TransitionCheck;
@@ -1518,13 +1773,14 @@ function startA0GateQuiz(retry = false) {
     showToast('بوابة الإتقان لم تكتمل مراجعتها بعد؛ لن يُسجّل اجتياز يدوي.');
     return;
   }
+  const prevRetry = retry ? ((gateSession?.retryAttempt || 0) + 1) : (gateSession?.retryAttempt || 0);
   const inMemorySession = !retry && gateSession && !gateSession.completed
     ? restoreAssessmentSession(gateSession, gate.assessment, gate.quiz, 'A0-A1', 'gate')
     : null;
   const savedSession = !retry ? (inMemorySession || restoreGateDraft()) : null;
   gateSession = savedSession && !savedSession.completed
     ? savedSession
-    : { id: 'A0-A1', assessmentVersion: gate.assessment.version, mode: 'quiz', questionIndex: 0, selected: null, checked: false, correct: 0, answers: [], completed: false, startedAt: Date.now() };
+    : { id: 'A0-A1', assessmentVersion: gate.assessment.version, mode: 'quiz', questionIndex: 0, selected: null, checked: false, correct: 0, answers: [], completed: false, startedAt: Date.now(), retryAttempt: prevRetry };
   currentView = 'a0-gate';
   saveState();
   render();
@@ -1544,15 +1800,18 @@ function renderA0GateAssessment() {
   const total = gate.quiz.length;
   const letters = ['أ', 'ب', 'ج', 'د', 'هـ'];
   const isCorrect = gateSession.checked && gateSession.selected === question.answerIndex;
-  const options = question.options.map((option, index) => {
+  const displayIndices = getDisplayedQuizOptionIndices(question, gateSession.retryAttempt || 0);
+  const options = displayIndices.map((index, displayPos) => {
+    const option = question.options[index];
     let classes = 'quiz-option';
     if (gateSession.selected === index) classes += ' selected';
     if (gateSession.checked && index === question.answerIndex) classes += ' correct';
     else if (gateSession.checked && index === gateSession.selected) classes += ' incorrect';
-    return `<button type="button" class="${classes}" data-action="select-gate-answer" data-index="${index}" ${gateSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${gateSession.checked && index === question.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
+    return `<button type="button" class="${classes}" data-action="select-gate-answer" data-index="${index}" ${gateSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[displayPos] || displayPos + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${gateSession.checked && index === question.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
+  const audioHelper = renderQuizAudioHelper('a0-a1-gate', question);
   const feedback = gateSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة.</strong> ' : '<strong>راجع هذه النقطة.</strong> '}<span dir="auto"${isGermanTextSnippet(question.explanation) ? ' lang="de"' : ''}>${formatInlineMarkdown(question.explanation)}</span></div>` : '';
-  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}${renderA0GateScopeNote()}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto"${isGermanTextSnippet(question.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(question.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
+  return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="gate-exit">${icon('arrow', 15)} العودة إلى بوابة A0</button>${renderAudioAssets('a0-a1-gate')}${renderA0GateScopeNote()}<div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${Math.round((current / total) * 100)}%"></span></div></div></div><section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم ختامي · A0 → A1</div><h1 dir="auto"${isGermanTextSnippet(question.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(question.prompt)}</h1>${audioHelper}<div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="gate-exit">إنهاء التقييم</button>${gateSession.checked ? `<button type="button" class="button-primary" data-action="next-gate-question">${current === total ? 'اعرض النتيجة' : 'السؤال التالي'} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-gate-answer" ${gateSession.selected === null ? 'disabled' : ''}>تحقّق ${icon('check', 16)}</button>`}</div></section></div>`;
 }
 
 function renderA0GatePerformance(gate) {
@@ -1722,6 +1981,124 @@ function renderLessonAudioContent(lesson) {
   return { contentHtml, audioPanel: renderAudioAssets(lesson.id, assets.filter((asset) => !placed.has(asset.assetId)).map((asset) => asset.assetId)) };
 }
 
+function renderLessonStagesBar(lesson) {
+  const stages = getLessonStageBreakdown(lesson);
+  const domains = getLessonFocusDomains(lesson);
+  const userFocus = state.profile.focus || 'المحادثة';
+  const focusMatched = domains.includes(userFocus);
+  return `<div class="lesson-stages-bar" dir="auto" role="region" aria-label="مراحل دراسة الدرس">
+    <div class="lesson-stages-meta">
+      <span class="stage-focus-tag ${focusMatched ? 'is-matched' : ''}">${icon('target', 13)} مجالات الدرس: ${escapeHTML(domains.join(' · '))}${focusMatched ? ` (يطابق هدفك: ${escapeHTML(userFocus)})` : ''}</span>
+      <span class="stage-total-time">تقسيم الجلسة المقترح (${stages.total} د):</span>
+    </div>
+    <div class="lesson-stages-steps">
+      <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="build"><strong>1. البناء التأسيسي</strong><span>المفردات والقواعد والحوار · ~${stages.buildMinutes} د</span></button>
+      <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="practice"><strong>2. التدريب المرحلي</strong><span>النصوص والتمارين والتحقق الفوري · ~${stages.practiceMinutes} د</span></button>
+      <button type="button" class="lesson-stage-pill" data-action="scroll-lesson-stage" data-stage="mastery"><strong>3. إثبات الإتقان</strong><span>التقييم الموضوعي والأداء العملي · ~${stages.masteryMinutes} د</span></button>
+    </div>
+  </div>`;
+}
+
+function enhanceLessonDocumentHtml(lesson, rawHtml) {
+  if (!rawHtml || typeof rawHtml !== 'string') return rawHtml || '';
+  const answerKeyMatch = rawHtml.match(/<details class="answer-key">([\s\S]*?)<\/details>/);
+  const keyByExercise = new Map();
+  if (answerKeyMatch) {
+    const keyBody = answerKeyMatch[1];
+    for (let num = 1; num <= 12; num += 1) {
+      const liRegex = new RegExp(`<li dir="auto"><strong>([^<]*تمرين\\s*${num}\\b[^<]*)<\\/strong>([\\s\\S]*?)<\\/li>`);
+      const liMatch = keyBody.match(liRegex);
+      if (liMatch) {
+        const headingText = liMatch[1];
+        const bodyHtml = liMatch[2];
+        const isModel = /نموذج|استرشاد|مقترح|أمثلة/.test(`${headingText} ${bodyHtml}`);
+        keyByExercise.set(num, {
+          isModel,
+          html: `<p dir="auto"><strong>${headingText}</strong>${bodyHtml}</p>`
+        });
+        continue;
+      }
+      const h3Regex = new RegExp(`<h3 dir="auto">([^<]*(?:التمرين|تمرين)\\s*${num}\\b[^<]*)<\\/h3>\\s*((?:<(?:p|ul|ol|blockquote)\\b[\\s\\S]*?<\\/(?:p|ul|ol|blockquote)>\\s*)+)`);
+      const h3Match = keyBody.match(h3Regex);
+      if (h3Match) {
+        const headingText = h3Match[1];
+        const bodyHtml = h3Match[2];
+        const isModel = /نموذج|استرشاد|مقترح|أمثلة/.test(`${headingText} ${bodyHtml}`);
+        keyByExercise.set(num, {
+          isModel,
+          html: `<p dir="auto"><strong>${headingText}</strong></p>${bodyHtml}`
+        });
+      }
+    }
+  }
+
+  const keyStartIdx = answerKeyMatch ? rawHtml.indexOf('<details class="answer-key">') : rawHtml.length;
+  let mainBody = rawHtml.slice(0, keyStartIdx);
+  const tailBody = rawHtml.slice(keyStartIdx);
+
+  // 1. Inject per-exercise collapsible self-check keys right after each exercise block
+  mainBody = mainBody.replace(
+    /(<h3 dir="auto">تمرين\s*(\d+)\b[\s\S]*?<\/h3>[\s\S]*?)(?=<h3 dir="auto">|<h2 dir="auto">|$)/g,
+    (fullBlock, blockContent, numStr) => {
+      const num = Number(numStr);
+      const entry = keyByExercise.get(num);
+      if (!entry) return fullBlock;
+      const summaryLabel = entry.isModel
+        ? `اعرض النموذج الاسترشادي لتمرين ${num} للمقارنة الذاتية بعد المحاولة`
+        : `تحقّق من حل تمرين ${num} منفردًا بعد المحاولة`;
+      return `${blockContent}<details class="exercise-inline-key" data-exercise-key="${num}"><summary>${summaryLabel}</summary><div class="exercise-inline-key-body" dir="auto">${entry.html}</div></details>`;
+    }
+  );
+
+  // 2. Enhance h2 sections: inline section audio quick-play (when not already inline) + listening script guard
+  const playableStatuses = ['ready', 'generated_pending_acoustic_review'];
+  const lessonAssets = (course?.audioAssets || []).filter((item) => item.lessonId === lesson?.id && playableStatuses.includes(item.status));
+  const findAssetByKind = (kind) => lessonAssets.find((item) => item.kind === kind);
+
+  mainBody = mainBody.replace(
+    /(<h2 dir="auto">([^<]+)<\/h2>)([\s\S]*?)(?=<h2 dir="auto">|$)/g,
+    (sectionFull, h2Tag, h2Title, sectionBody) => {
+      let updatedBody = sectionBody;
+      const hasInlineAudioPanel = updatedBody.includes('class="lesson-audio-panel"');
+      const isListeningSection = /الاستماع|استماع/.test(h2Title);
+      const isDialogueSection = !isListeningSection && /حوار|محادثة/.test(h2Title);
+      const isReadingSection = !isListeningSection && !isDialogueSection && /قراءة|نص قصير/.test(h2Title);
+
+      if (isListeningSection) {
+        const listeningAsset = findAssetByKind('listening');
+        const inlineBar = (!hasInlineAudioPanel && listeningAsset)
+          ? `<div class="inline-section-audio" dir="auto"><span class="inline-section-audio-label">${icon('volume', 15)} <strong>تسجيل الاستماع لهذا القسم:</strong> استمع أولًا قبل كشف النص المكتوب</span><div class="inline-section-audio-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(listeningAsset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(listeningAsset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`
+          : '';
+        updatedBody = updatedBody.replace(
+          /<blockquote\b[^>]*>[\s\S]*?<\/blockquote>/g,
+          (bqHtml) => `<details class="listening-script-guard"><summary>نص الاستماع المكتوب — استمع أولًا وحاول الفهم ثم افتح النص للمطابقة</summary><div class="listening-script-guard-body">${bqHtml}</div></details>`
+        );
+        return `${h2Tag}${inlineBar}${updatedBody}`;
+      }
+
+      if (isDialogueSection && !hasInlineAudioPanel) {
+        const dialogueAsset = findAssetByKind('dialogue');
+        if (dialogueAsset) {
+          const inlineBar = `<div class="inline-section-audio" dir="auto"><span class="inline-section-audio-label">${icon('volume', 15)} <strong>تسجيل الحوار التطبيقي:</strong> استمع إلى الحوار وكرّر الأدوار بصوت مرتفع</span><div class="inline-section-audio-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(dialogueAsset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(dialogueAsset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`;
+          return `${h2Tag}${inlineBar}${updatedBody}`;
+        }
+      }
+
+      if (isReadingSection && !hasInlineAudioPanel) {
+        const readingAsset = findAssetByKind('reading');
+        if (readingAsset) {
+          const inlineBar = `<div class="inline-section-audio" dir="auto"><span class="inline-section-audio-label">${icon('volume', 15)} <strong>التسجيل الصوتي للنص:</strong> تابع القراءة مع النطق الصحيح</span><div class="inline-section-audio-actions"><button type="button" class="button-outline button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(readingAsset.assetId)}" data-audio-rate="1">استمع بالسرعة الطبيعية</button><button type="button" class="button-quiet button-small" data-action="play-section-audio" data-play-asset-id="${escapeHTML(readingAsset.assetId)}" data-audio-rate="0.8">استمع ببطء</button></div></div>`;
+          return `${h2Tag}${inlineBar}${updatedBody}`;
+        }
+      }
+
+      return sectionFull;
+    }
+  );
+
+  return mainBody + tailBody;
+}
+
 function renderLessonOverview(lesson) {
   const lessonAudio = renderLessonAudioContent(lesson);
   let tableIdx = 0;
@@ -1729,8 +2106,10 @@ function renderLessonOverview(lesson) {
     tableIdx += 1;
     return `aria-label="جدول الدرس ${tableIdx} — استخدم أسهم الاتجاه للتمرير"`;
   });
+  const enhancedContentHtml = enhanceLessonDocumentHtml(lesson, numberedContentHtml);
   const level = getLevel(lesson.level) || { id: lesson.level, theme: 'sage' };
   const words = lesson.vocabulary || [];
+  const enrolledCount = words.filter((word) => Boolean(state.wordReviews[word.id])).length;
   const mastered = isLessonMastered(lesson);
   const assessmentIsReady = lessonAssessmentReady(lesson);
   const duration = lesson.durationLabel || `${lesson.minutes} دقيقة`;
@@ -1739,19 +2118,22 @@ function renderLessonOverview(lesson) {
     : lessonSession.pausedMode === 'quiz'
       ? 'استأنف التقييم'
       : mastered ? 'أعد تقييم الإتقان' : 'ابدأ تقييم الإتقان';
-  const vocabularyDrawer = words.length ? `<section class="lesson-section lesson-vocab-section"><details class="vocab-review-drawer"><summary><span><small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small><strong>تدرّب على مفردات الدرس</strong></span><span class="count">${words.length} كلمة/عبارة</span></summary><div class="vocab-grid">${words.map((word) => `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : ''}</article>`).join('')}</div></details></section>` : '';
+  const vocabularyDrawer = words.length ? `<section class="lesson-section lesson-vocab-section"><details class="vocab-review-drawer"><summary><span><small><span lang="de">WORTSCHATZ</span> · بطاقات المراجعة</small><strong>تدرّب على مفردات الدرس</strong></span><span class="count">${words.length} كلمة/عبارة</span></summary><div class="vocab-drawer-toolbar" dir="auto"><span>جميع مفردات الدرس (${words.length}) مشروحة بأمثلة سياقية (${enrolledCount}/${words.length} مدرجة في مراجعتك المتباعدة).</span><button type="button" class="button-outline button-small" data-action="enroll-lesson-words" data-lesson-id="${escapeHTML(lesson.id)}">${enrolledCount === words.length ? 'مفردات الدرس مدرجة في المراجعة' : `أدرج مفردات الدرس (${words.length}) في المراجعة`}</button></div><div class="vocab-grid">${words.map((word) => {
+    const fallbackExample = !word.example ? getWordContextHint(word, lesson) : '';
+    return `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>${word.example ? `<div class="word-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : `<div class="word-example word-context-fallback" dir="auto"${isGermanTextSnippet(fallbackExample) ? ' lang="de"' : ''}>${escapeHTML(fallbackExample)}</div>`}</article>`;
+  }).join('')}</div></details></section>` : '';
   return `<button class="lesson-back" type="button" data-action="back-to-level">${icon('arrow', 15)} عودة إلى ${lesson.level}</button>
     <section class="lesson-hero"><div><div class="lesson-level-tag"><span class="level-token theme-${level.theme}">${level.id}</span><span>محتوى الدرس الكامل · ${escapeHTML(duration)}</span></div><h1 dir="auto">${escapeHTML(lesson.title)}</h1><p dir="auto">${escapeHTML(lesson.objective)}</p></div><div class="lesson-time">${icon('clock', 16)} ${escapeHTML(duration)}</div></section>
     <div class="lesson-layout">
       <div class="lesson-main-column">
         ${lessonAudio.audioPanel}
-        <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small><span lang="de">LEKTION</span> · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">مفتاح الإجابات قابل للفتح</span></div><article class="lesson-document" dir="rtl">${numberedContentHtml}</article></section>
+        <section class="lesson-section lesson-content-panel"><div class="lesson-section-heading"><div><small><span lang="de">LEKTION</span> · الدرس الكامل</small><h2>الشرح والحوارات والتمارين</h2></div><span class="count">تحقق فوري لكل تمرين + مفتاح كامل</span></div>${renderLessonStagesBar(lesson)}<article class="lesson-document" dir="rtl">${enhancedContentHtml}</article></section>
         ${vocabularyDrawer}
-        <section class="lesson-finish-panel"><div><strong>${mastered ? 'هذا الدرس متقن' : assessmentIsReady ? 'حان وقت التحقق من الإتقان' : 'تقييم هذا الدرس قيد الإعداد'}</strong><span>${mastered ? `أفضل نتيجة معتمدة: ${state.completedLessons[lesson.id].score}%` : assessmentIsReady ? 'يلزم 80% على الأقل وإثبات أهداف الدرس لفتح الخطوة التالية.' : 'يمكنك دراسة المحتوى كاملًا الآن؛ لكن القراءة وحدها لا تسجّل الإتقان ولا تفتح الدرس التالي.'}</span></div>${assessmentIsReady ? `<button type="button" class="button-primary" data-action="begin-quiz">${quizActionLabel} ${icon('check', 16)}</button>` : '<span class="plan-chip">غير متاح بعد</span>'}</section>
+        <section class="lesson-finish-panel" id="lesson-mastery-panel"><div><strong>${mastered ? 'هذا الدرس متقن' : assessmentIsReady ? 'حان وقت التحقق من الإتقان' : 'تقييم هذا الدرس قيد الإعداد'}</strong><span>${mastered ? `أفضل نتيجة معتمدة: ${state.completedLessons[lesson.id].score}%` : assessmentIsReady ? 'يلزم 80% على الأقل وإثبات أهداف الدرس لفتح الخطوة التالية.' : 'يمكنك دراسة المحتوى كاملًا الآن؛ لكن القراءة وحدها لا تسجّل الإتقان ولا تفتح الدرس التالي.'}</span></div>${assessmentIsReady ? `<button type="button" class="button-primary" data-action="begin-quiz">${quizActionLabel} ${icon('check', 16)}</button>` : '<span class="plan-chip">غير متاح بعد</span>'}</section>
       </div>
       <aside class="lesson-aside">
         <div class="study-aside-card"><div class="study-objective">${icon('target', 18)}</div><h3>هدف هذا الدرس</h3><p dir="auto">${escapeHTML(lesson.objective)}</p></div>
-        <div class="study-aside-card"><h3>طريقة الدراسة</h3><p>${assessmentIsReady ? 'ابدأ بالأهداف والمراجعة، ثم أجب عن التمارين قبل فتح مفتاح الحل، وأتمم تقييم الإتقان ومهام الأداء العملي.' : 'ابدأ بالأهداف والمراجعة، ثم أجب عن التمارين قبل فتح مفتاح الحل. سيظهر تقييم إتقان مستقل عند اكتمال إعداده.'}</p></div>
+        <div class="study-aside-card"><h3>طريقة الدراسة</h3><p>${assessmentIsReady ? 'ابدأ بالبناء التأسيسي (المفردات والقواعد والحوار)، ثم حل كل تمرين وتحقّق من إجابته منفردًا، وأتمم تقييم الإتقان ومهام الأداء العملي.' : 'ابدأ بالأهداف والمراجعة، ثم أجب عن التمارين قبل فتح مفتاح الحل. سيظهر تقييم إتقان مستقل عند اكتمال إعداده.'}</p></div>
         <div class="study-aside-card"><h3>التقدّم محلي</h3><p>${mastered ? 'هذا الدرس مسجّل بوصفه متقنًا.' : 'لا يُسجّل إتقان الدرس بالقراءة أو بزر يدوي؛ يلزم اجتياز التقييم وتحقيق الهدف.'} بطاقات المفردات متاحة للمراجعة أيضًا.</p></div>
       </aside>
     </div>`;
@@ -1765,18 +2147,21 @@ function renderLessonQuiz(lesson) {
   const percent = Math.round((current / total) * 100);
   const letters = ['أ', 'ب', 'ج', 'د', 'هـ'];
   const isCorrect = lessonSession.checked && lessonSession.selected === q.answerIndex;
-  const options = q.options.map((option, index) => {
+  const displayIndices = getDisplayedQuizOptionIndices(q, lessonSession.retryAttempt || 0);
+  const options = displayIndices.map((index, displayPos) => {
+    const option = q.options[index];
     let classes = 'quiz-option';
     if (lessonSession.selected === index) classes += ' selected';
     if (lessonSession.checked && index === q.answerIndex) classes += ' correct';
     else if (lessonSession.checked && index === lessonSession.selected) classes += ' incorrect';
-    return `<button type="button" class="${classes}" data-action="select-lesson-answer" data-index="${index}" ${lessonSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[index] || index + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${lessonSession.checked && index === q.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
+    return `<button type="button" class="${classes}" data-action="select-lesson-answer" data-index="${index}" ${lessonSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[displayPos] || displayPos + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(option) ? ' lang="de"' : ''}>${escapeHTML(option)}</span>${lessonSession.checked && index === q.answerIndex ? `<span class="option-check">${icon('check', 17)}</span>` : ''}</button>`;
   }).join('');
+  const audioHelper = renderQuizAudioHelper(lesson.id, q);
   const feedback = lessonSession.checked ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>ليس تمامًا.</strong> '}<span dir="auto"${isGermanTextSnippet(q.explanation) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.explanation)}</span></div>` : '';
   const nextLabel = current === total ? 'عرض النتيجة' : 'السؤال التالي';
   return `<div class="quiz-wrap"><button class="lesson-back" type="button" data-action="quiz-exit">${icon('arrow', 15)} العودة إلى شرح الدرس</button>
     <div class="quiz-top"><div style="flex:1"><div class="quiz-progress-label">السؤال <strong>${current}</strong> من ${total}</div><div class="quiz-progress"><span style="width:${percent}%"></span></div></div><span class="plan-chip">${icon('clock', 14)} ${lesson.minutes} د</span></div>
-    <section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم الإتقان · ${escapeHTML(lesson.level)}</div><h1 dir="auto"${isGermanTextSnippet(q.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.prompt)}</h1><div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="quiz-exit">إنهاء التدريب</button>${lessonSession.checked ? `<button type="button" class="button-primary" data-action="next-lesson-question">${nextLabel} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-lesson-answer" ${lessonSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 16)}</button>`}</div></section>
+    <section class="quiz-card"><div class="quiz-card-kicker"><span></span>تقييم الإتقان · ${escapeHTML(lesson.level)}</div><h1 dir="auto"${isGermanTextSnippet(q.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.prompt)}</h1>${audioHelper}<div class="quiz-options">${options}</div>${feedback}<div class="quiz-card-actions"><button type="button" class="button-quiet" data-action="quiz-exit">إنهاء التدريب</button>${lessonSession.checked ? `<button type="button" class="button-primary" data-action="next-lesson-question">${nextLabel} ${icon('arrowLeft', 16)}</button>` : `<button type="button" class="button-primary" data-action="check-lesson-answer" ${lessonSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 16)}</button>`}</div></section>
   </div>`;
 }
 
@@ -1914,28 +2299,297 @@ function finishLesson(lesson) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function startReviewSession() {
+const CUMULATIVE_GRAMMAR_SUMMARIES = [
+  {
+    level: 'A0',
+    title: 'قواعد A0 التأسيسية — الصوتيات والجملة البسيطة',
+    points: [
+      'الأبجدية والحروف المركّبة (ä, ö, ü, ß, ch, sch, ei, ie, eu) والضغط الصوتي في بداية الكلمة.',
+      'ضمائر الفاعل الأساسية (ich, du, Sie, er, sie, wir) وتصريف (sein / haben / heißen / kommen / wohnen).',
+      'أدوات التعريف والتنكير في حالة الفاعل (Nominativ: der/ein, die/eine, das/ein) وبناء جملة خبرية وسؤال (W-Frage / Ja-Nein-Frage).'
+    ]
+  },
+  {
+    level: 'A1',
+    title: 'قواعد A1 — ركائز الجملة الألمانية (V2) والمفعول به (Akkusativ)',
+    points: [
+      'قاعدة الفعل في الموقع الثاني (Position 2) في الجملة الخبرية، وتقديم الفعل في السؤال والأمر (Imperativ).',
+      'حالة المفعول به (Akkusativ: den/einen) وحروف الجر المكانية والزمانية الأساسية (in, am, um, من...إلى).',
+      'الأفعال المنفصلة (Trennbare Verben: aufstehen, einkaufen) وأفعال الكيفية (Modalverben: können, müssen, möchten, wollen) في إطار الجملة (Satzklammer).'
+    ]
+  },
+  {
+    level: 'A2',
+    title: 'قواعد A2 — الماضي التام (Perfekt) والمجرور (Dativ) والروابط السببية',
+    points: [
+      'الماضي التام للحديث اليومي (Perfekt mit haben/sein + Partizip II) والماضي البسيط لـ (sein/haben/Modalverben: war, hatte, konnte).',
+      'حالة الـ Dativ (dem, der, den + n) وحروف الجر المتغيرة (Wechselpräpositionen: Wo? + Dativ / Wohin? + Akkusativ).',
+      'الجمل الفرعية بالفعل في آخر الجملة (Nebensatz: weil, dass, wenn) وصيغ المقارنة والتفضيل (Komparativ & Superlativ) والضمائر الانعكاسية.'
+    ]
+  },
+  {
+    level: 'B1',
+    title: 'قواعد B1 — الترابط النصي، المبني للمجهول (Passiv)، والتمني (Konjunktiv II)',
+    points: [
+      'الجمل الموصولة (Relativsätze) والمصدر مع (zu + Infinitiv) وروابط الغاية والتضاد والزمن (damit, um...zu, obwohl, trotzdem, während, nachdem, bevor).',
+      'المبني للمجهول في الحاضر والماضي (Vorgangspassiv: wird/wurde + Partizip II) وحالة المضاف إليه (Genitiv: wegen, trotz, während).',
+      'صيغة (Konjunktiv II: würde, hätte, wäre, sollte) للطلب المهذّب والنصيحة والافتراض غير الواقعي، والروابط المزدوجة (nicht nur...sondern auch / sowohl...als auch).'
+    ]
+  },
+  {
+    level: 'B2',
+    title: 'قواعد B2 المتقدمة — الأسلوب الأكاديمي، الكلام المنقول (Konjunktiv I)، وتكثيف الجمل',
+    points: [
+      'تحويل التراكيب الفعلية إلى اسمية (Nominalisierung) والعكس (Verbalisierung)، وروابط العواقب والوسيلة (sodass, indem, infolgedessen, je...desto).',
+      'النعت الموسّع (Erweitertes Partizipialattribut) والتراكيب البديلة للمبني للمجهول (Passiversatzformen: ist zu + Inf., lässt sich + Inf., -bar).',
+      'الكلام غير المباشر للتقارير والإعلام (Indirekte Rede mit Konjunktiv I / II) والاستنتاج الاحتمالي (Futur II & Modalverben في المعنى الذاتي) والتركيبات الثابتة (Funktionsverbgefüge).'
+    ]
+  }
+];
+
+function enrollLessonWords(lessonId) {
+  const lesson = findLesson(lessonId);
+  if (!lesson || !Array.isArray(lesson.vocabulary) || !lesson.vocabulary.length) return;
+  const today = dateKey();
+  let added = 0;
+  for (const word of lesson.vocabulary) {
+    if (!state.wordReviews[word.id]) {
+      state.wordReviews[word.id] = { reps: 0, dueDate: today, lastReviewed: today };
+      added += 1;
+    }
+  }
+  saveState();
+  render();
+  showToast(added > 0 ? `أُدرجت ${added} مفردة جديدة من الدرس في جدول مراجعتك اليومية.` : 'مفردات هذا الدرس مدرجة بالفعل في جدول مراجعتك.');
+}
+
+function startReviewSession(options = {}) {
   const all = reviewableWords();
   const today = dateKey();
-  const due = all.filter((word) => !state.wordReviews[word.id] || state.wordReviews[word.id].dueDate <= today);
-  const cards = (due.length ? due : all).slice(0, 12);
-  reviewSession = { cards, index: 0, revealed: false, done: cards.length === 0, optional: due.length === 0 && all.length > 0 };
+  const lessonOrder = new Map((course?.lessons || []).map((lesson, idx) => [lesson.id, idx]));
+  const due = all
+    .filter((word) => !state.wordReviews[word.id] || state.wordReviews[word.id].dueDate <= today)
+    .sort((left, right) => {
+      const rLeft = state.wordReviews[left.id];
+      const rRight = state.wordReviews[right.id];
+      const leftMissed = rLeft && rLeft.reps === 0 ? 0 : 1;
+      const rightMissed = rRight && rRight.reps === 0 ? 0 : 1;
+      if (leftMissed !== rightMissed) return leftMissed - rightMissed;
+      const leftReps = rLeft?.reps ?? 0;
+      const rightReps = rRight?.reps ?? 0;
+      if (leftReps !== rightReps) return leftReps - rightReps;
+      const leftOrder = lessonOrder.get(left.lessonId) ?? 0;
+      const rightOrder = lessonOrder.get(right.lessonId) ?? 0;
+      return rightOrder - leftOrder;
+    });
+  const pool = options.forceExtraBatch
+    ? [...due, ...all.filter((word) => !due.some((d) => d.id === word.id))]
+    : (due.length ? due : all);
+  const cards = pool.slice(0, 12);
+  reviewSession = {
+    cards,
+    index: 0,
+    revealed: false,
+    done: cards.length === 0,
+    optional: (due.length === 0 && all.length > 0) || options.forceExtraBatch === true
+  };
+}
+
+function buildSpiralSession(levelFilter = 'ALL') {
+  const accessibleLessons = (course?.lessons || []).filter((lesson) => (
+    (levelFilter === 'ALL' || lesson.level === levelFilter)
+    && (isLessonMastered(lesson) || isLessonAccessible(lesson))
+    && Array.isArray(lesson.quiz) && lesson.quiz.length > 0
+  ));
+  const sourceLessons = accessibleLessons.length
+    ? accessibleLessons
+    : (course?.lessons || []).filter((lesson) => levelFilter === 'ALL' || lesson.level === levelFilter).slice(0, 3);
+  const items = [];
+  for (const lesson of sourceLessons) {
+    const qIdx = (lesson.unit || 1) % lesson.quiz.length;
+    const question = lesson.quiz[qIdx] || lesson.quiz[0];
+    if (question) {
+      items.push({
+        lessonId: lesson.id,
+        lessonTitle: lesson.title,
+        level: lesson.level,
+        question
+      });
+    }
+  }
+  const selectedItems = items.slice(0, 6);
+  spiralSession = {
+    levelFilter,
+    items: selectedItems,
+    index: 0,
+    selected: null,
+    checked: false,
+    correct: 0,
+    done: selectedItems.length === 0
+  };
+}
+
+function renderSpiralReviewSection() {
+  const unlockedLevels = (course?.levels || []).filter((lvl) => isLevelUnlocked(lvl.id));
+  const activeLevel = spiralSession?.levelFilter || 'ALL';
+  const levelButtons = [
+    `<button type="button" class="filter-chip ${activeLevel === 'ALL' ? 'is-active' : ''}" data-action="start-spiral-review" data-level="ALL">كل المستويات المتاحة</button>`,
+    ...unlockedLevels.map((lvl) => `<button type="button" class="filter-chip ${activeLevel === lvl.id ? 'is-active' : ''}" data-action="start-spiral-review" data-level="${escapeHTML(lvl.id)}">مستوى ${escapeHTML(lvl.id)}</button>`)
+  ].join('');
+
+  if (!spiralSession) {
+    return `<section class="panel spiral-review-panel" dir="auto" aria-labelledby="spiral-review-heading">
+      <div class="spiral-panel-head">
+        <div>
+          <small><span lang="de">WIEDERHOLUNG</span> · التثبيت الحلزوني التراكمي</small>
+          <h2 id="spiral-review-heading">اختبر ثبات معلوماتك عبر الدروس والمستويات</h2>
+          <p>يجمع التدريب الحلزوني أسئلة مختارة من الدروس المتقنة والمتاحة لمنع نسيان القواعد والمفردات السابقة.</p>
+        </div>
+        <div class="spiral-filter-row">${levelButtons}</div>
+      </div>
+    </section>`;
+  }
+
+  if (spiralSession.done || !spiralSession.items.length) {
+    const total = spiralSession.items.length;
+    const pct = total ? Math.round((spiralSession.correct / total) * 100) : 0;
+    return `<section class="panel spiral-review-panel" dir="auto" aria-labelledby="spiral-review-heading">
+      <div class="spiral-panel-head">
+        <div>
+          <small><span lang="de">WIEDERHOLUNG</span> · نتيجة التدريب الحلزوني</small>
+          <h2 id="spiral-review-heading">أتممت جولة التثبيت التراكمي (${pct}%)</h2>
+          <p>أجبت بشكل صحيح عن ${spiralSession.correct} من ${total} أسئلة تراكمية (${spiralSession.levelFilter === 'ALL' ? 'جميع المستويات المتاحة' : `المستوى ${spiralSession.levelFilter}`}).</p>
+        </div>
+        <div class="spiral-filter-row">${levelButtons}</div>
+      </div>
+    </section>`;
+  }
+
+  const currentItem = spiralSession.items[spiralSession.index];
+  const q = currentItem.question;
+  const letters = ['أ', 'ب', 'ج', 'د'];
+  const isCorrect = spiralSession.checked && spiralSession.selected === q.answerIndex;
+  const optionsHtml = (q.options || []).map((opt, idx) => {
+    let cls = 'quiz-option';
+    if (spiralSession.selected === idx) cls += ' selected';
+    if (spiralSession.checked && idx === q.answerIndex) cls += ' correct';
+    else if (spiralSession.checked && idx === spiralSession.selected) cls += ' incorrect';
+    return `<button type="button" class="${cls}" data-action="select-spiral-answer" data-index="${idx}" ${spiralSession.checked ? 'disabled' : ''}><span class="option-letter">${letters[idx] || idx + 1}</span><span class="option-text" dir="auto"${isGermanTextSnippet(opt) ? ' lang="de"' : ''}>${formatInlineMarkdown(opt)}</span></button>`;
+  }).join('');
+  const feedbackHtml = spiralSession.checked
+    ? `<div class="quiz-feedback ${isCorrect ? 'good' : 'try-again'}" dir="auto">${isCorrect ? '<strong>إجابة صحيحة!</strong> ' : '<strong>مراجعة مفيدة:</strong> '}<span dir="auto"${isGermanTextSnippet(q.explanation) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.explanation)}</span></div>`
+    : '';
+  return `<section class="panel spiral-review-panel" dir="auto" aria-labelledby="spiral-review-heading">
+    <div class="spiral-panel-head">
+      <div>
+        <small><span lang="de">WIEDERHOLUNG</span> · سؤال تراكمي ${spiralSession.index + 1} من ${spiralSession.items.length} (${escapeHTML(currentItem.level)} · ${escapeHTML(currentItem.lessonTitle)})</small>
+        <h2 id="spiral-review-heading" dir="auto"${isGermanTextSnippet(q.prompt) ? ' lang="de"' : ''}>${formatInlineMarkdown(q.prompt)}</h2>
+      </div>
+      <div class="spiral-filter-row">${levelButtons}</div>
+    </div>
+    <div class="quiz-options">${optionsHtml}</div>
+    ${feedbackHtml}
+    <div class="quiz-card-actions">
+      <button type="button" class="button-quiet button-small" data-action="open-lesson" data-id="${escapeHTML(currentItem.lessonId)}">افتح درس ${escapeHTML(currentItem.level)}</button>
+      ${spiralSession.checked
+        ? `<button type="button" class="button-primary button-small" data-action="next-spiral-question">${spiralSession.index + 1 >= spiralSession.items.length ? 'اعرض النتيجة التراكمية' : 'السؤال التراكمي التالي'} ${icon('arrowLeft', 15)}</button>`
+        : `<button type="button" class="button-primary button-small" data-action="check-spiral-answer" ${spiralSession.selected === null ? 'disabled' : ''}>تحقّق من الإجابة ${icon('check', 15)}</button>`}
+    </div>
+  </section>`;
+}
+
+function renderLexiconResultsMarkup() {
+  const words = allWords();
+  const query = String(lexiconFilter.query || '').trim().toLowerCase();
+  const levelFilter = lexiconFilter.level || 'ALL';
+  const focusFilter = lexiconFilter.focus || 'ALL';
+  const matching = words.filter((word) => {
+    if (levelFilter !== 'ALL' && word.level !== levelFilter) return false;
+    const lesson = findLesson(word.lessonId);
+    if (focusFilter !== 'ALL' && !getLessonFocusDomains(lesson).includes(focusFilter)) return false;
+    if (!query) return true;
+    const contextHint = getWordContextHint(word, lesson).toLowerCase();
+    return String(word.word || '').toLowerCase().includes(query)
+      || String(word.translation || '').toLowerCase().includes(query)
+      || String(word.lessonTitle || '').toLowerCase().includes(query)
+      || contextHint.includes(query);
+  });
+  const shown = matching.slice(0, 24);
+  return `<div class="lexicon-summary-bar" dir="auto"><span>يعرض <strong>${shown.length}</strong> من <strong>${matching.length}</strong> مفردة مطابقة (إجمالي القاموس التراكمي: <strong>${words.length}</strong> مفردة مشروحة بنسبة 100%).</span></div>
+    <div class="vocab-grid lexicon-vocab-grid">${shown.map((word) => {
+      const lesson = findLesson(word.lessonId);
+      const contextText = word.example ? word.example : getWordContextHint(word, lesson);
+      return `<article class="vocab-card"><div class="vocab-card-top"><div class="german-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="word-controls"><span class="lexicon-level-tag">${escapeHTML(word.level)}</span><button class="icon-button" type="button" data-action="pronounce" data-word="${escapeHTML(word.word)}" title="استمع للنطق" aria-label="استمع إلى ${escapeHTML(word.word)}">${icon('volume', 14)}</button><button class="icon-button" type="button" data-action="quick-word-known" data-word-id="${escapeHTML(word.id)}" title="أضف للمراجعة" aria-label="أضف ${escapeHTML(word.word)} للمراجعة">${icon(state.wordReviews[word.id] ? 'check' : 'bookmark', 14)}</button></div></div><div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div><div class="word-example" dir="auto"${isGermanTextSnippet(contextText) ? ' lang="de"' : ''}>${escapeHTML(contextText)}</div></article>`;
+    }).join('')}</div>`;
+}
+
+function renderCumulativeLexiconAndGrammarSection() {
+  const levels = ['ALL', 'A0', 'A1', 'A2', 'B1', 'B2'];
+  const focuses = ['ALL', 'المحادثة', 'السفر', 'العمل', 'الدراسة', 'الحياة اليومية'];
+  return `<section class="panel cumulative-reference-panel" dir="auto" aria-labelledby="cumulative-lexicon-heading">
+    <div class="cumulative-reference-head">
+      <div>
+        <small><span lang="de">NACHSCHLAGEWERK</span> · المرجع التراكمي الشامل</small>
+        <h2 id="cumulative-lexicon-heading">القاموس التراكمي (754 مفردة) وملخص القواعد (A0–B2)</h2>
+        <p>ابحث في جميع مفردات المنهج الـ754 مع أمثلتها السياقية، أو فلترها حسب المستوى والهدف التواصلي، وراجع قواعد المستويات الخمسة.</p>
+      </div>
+    </div>
+    <div class="lexicon-controls">
+      <div class="field lexicon-search-field">
+        <label for="lexicon-search-input">ابحث بالألمانية أو العربية أو عنوان الدرس</label>
+        <input id="lexicon-search-input" type="search" dir="auto" value="${escapeHTML(lexiconFilter.query)}" placeholder="مثال: Guten Tag, Bahnhof, سفر, weil...">
+      </div>
+      <div class="lexicon-filter-groups">
+        <div class="filter-group" role="group" aria-label="فلترة حسب المستوى">
+          ${levels.map((lvl) => `<button type="button" class="filter-chip ${lexiconFilter.level === lvl ? 'is-active' : ''}" data-action="set-lexicon-level" data-level="${lvl}">${lvl === 'ALL' ? 'كل المستويات' : lvl}</button>`).join('')}
+        </div>
+        <div class="filter-group" role="group" aria-label="فلترة حسب المجال">
+          ${focuses.map((foc) => `<button type="button" class="filter-chip ${lexiconFilter.focus === foc ? 'is-active' : ''}" data-action="set-lexicon-focus" data-focus="${foc}">${foc === 'ALL' ? 'كل المجالات' : foc}</button>`).join('')}
+        </div>
+      </div>
+    </div>
+    <div class="lexicon-results-container">${renderLexiconResultsMarkup()}</div>
+    <div class="grammar-reference-grid">
+      ${CUMULATIVE_GRAMMAR_SUMMARIES.map((item) => `<details class="grammar-ref-card" ${item.level === selectedLevel ? 'open' : ''}><summary><strong>${escapeHTML(item.title)}</strong></summary><ul>${item.points.map((pt) => `<li dir="auto">${escapeHTML(pt)}</li>`).join('')}</ul></details>`).join('')}
+    </div>
+  </section>`;
 }
 
 function renderReview() {
   if (!reviewSession) startReviewSession();
   const words = reviewSession.cards;
   const left = Math.max(0, words.length - reviewSession.index);
-  return `<section class="review-banner"><div><h1>مراجعة قصيرة، أثرها طويل.</h1><p>بطاقات مفردات بمواعيد مراجعة محلية وبسيطة — بلا حساب وبلا تكلفة API.</p></div><div class="review-count">${left}</div></section>
-    <div class="review-content">${reviewSession.done || !words.length ? `<section class="empty-state"><div class="empty-state-icon">${icon('trophy', 23)}</div><h2>${words.length ? 'أنهيت جلسة اليوم!' : 'لا توجد بطاقات مفردات متاحة بعد.'}</h2><p>${words.length ? 'رائع. الكلمات التي صعبت عليك ستعود قريبًا، والكلمات التي أتقنتها ستظهر بفواصل أطول.' : 'افتح أحد الدروس؛ تظهر بطاقات المفردات عند توفرها في محتواه.'}</p><button type="button" class="button-outline" data-action="navigate" data-view="dashboard">العودة إلى لوحتي</button></section>` : renderFlashcard(words[reviewSession.index], left)}</div>`;
+  const hasMoreWords = reviewableWords().length > 0;
+  return `<section class="review-banner"><div><h1>مراجعة قصيرة، أثرها طويل.</h1><p>بطاقات مفردات ثنائية الاتجاه (ألماني ↔ عربي) بمواعيد مراجعة محلية ذكية، مع تدريب حلزوني وقاموس تراكمي شامل.</p></div><div class="review-count">${left}</div></section>
+    <div class="review-content">${reviewSession.done || !words.length ? `<section class="empty-state"><div class="empty-state-icon">${icon('trophy', 23)}</div><h2>${words.length ? 'أنهيت جلسة اليوم!' : 'لا توجد بطاقات مفردات متاحة بعد.'}</h2><p>${words.length ? 'رائع. الكلمات التي صعبت عليك ستعود قريبًا، والكلمات التي أتقنتها ستظهر بفواصل أطول.' : 'افتح أحد الدروس؛ تظهر بطاقات المفردات عند توفرها في محتواه.'}</p><div class="result-actions">${hasMoreWords ? `<button type="button" class="button-primary" data-action="start-extra-review-batch">راجع دفعة إضافية (حتى 12 بطاقة) ${icon('refresh', 15)}</button>` : ''}<button type="button" class="button-outline" data-action="navigate" data-view="dashboard">العودة إلى لوحتي</button></div></section>` : renderFlashcard(words[reviewSession.index], left)}</div>
+    ${renderSpiralReviewSection()}
+    ${renderCumulativeLexiconAndGrammarSection()}`;
 }
 
 function renderFlashcard(word, left) {
   if (!word) return '';
   const reviewInfo = state.wordReviews[word.id];
-  const translation = reviewSession.revealed ? escapeHTML(word.translation) : 'فكّر بالمعنى، ثم اكشف الإجابة';
-  const example = reviewSession.revealed && word.example ? `<div class="flash-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>` : '';
-  return `<section class="flashcard"><small>${escapeHTML(word.level)} · ${escapeHTML(word.lessonTitle)}</small><div class="flash-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div><div class="flash-translation" dir="auto">${translation}</div>${example}
+  const lesson = findLesson(word.lessonId);
+  const fallbackContext = !word.example ? getWordContextHint(word, lesson) : '';
+  const nounInfo = getNounArticleInfo(word.word);
+  const isReverse = reviewDirection === 'ar-de';
+  const promptNote = isReverse
+    ? (reviewSession.revealed ? escapeHTML(word.translation) : `${escapeHTML(word.translation)} — تذكّر الكلمة الألمانية${nounInfo ? ' وأداة تعريفها (der/die/das)' : ''} ثم اكشف الإجابة`)
+    : (reviewSession.revealed ? escapeHTML(word.translation) : 'فكّر بالمعنى، ثم اكشف الإجابة');
+  const translation = promptNote;
+  const example = reviewSession.revealed && word.example
+    ? `<div class="flash-example" dir="auto"${isGermanTextSnippet(word.example) ? ' lang="de"' : ''}>${escapeHTML(word.example)}</div>`
+    : (reviewSession.revealed && fallbackContext
+      ? `<div class="flash-example flash-context-fallback" dir="auto"${isGermanTextSnippet(fallbackContext) ? ' lang="de"' : ''}>${escapeHTML(fallbackContext)}</div>`
+      : '');
+  const articleBadge = nounInfo && reviewSession.revealed
+    ? `<div class="flash-article-badge" dir="auto">أداة التعريف للاسم: <strong dir="ltr" lang="de">${escapeHTML(nounInfo.article)}</strong> (${escapeHTML(nounInfo.noun)})</div>`
+    : '';
+  const directionBar = `<div class="flash-direction-bar" role="group" aria-label="اتجاه مراجعة البطاقة"><button type="button" class="filter-chip ${!isReverse ? 'is-active' : ''}" data-action="set-review-direction" data-direction="de-ar">ألماني ← عربي (فهم)</button><button type="button" class="filter-chip ${isReverse ? 'is-active' : ''}" data-action="set-review-direction" data-direction="ar-de">عربي ← ألماني (إنتاج نشط)</button></div>`;
+  const flashWordHtml = isReverse && !reviewSession.revealed
+    ? `<div class="flash-word is-masked-word" dir="ltr" lang="de">${nounInfo ? '___ + Nomen?' : 'Deutsch?'}</div>`
+    : `<div class="flash-word" dir="ltr" lang="de">${escapeHTML(word.word)}</div>`;
+  return `<section class="flashcard">${directionBar}<small>${escapeHTML(word.level)} · ${escapeHTML(word.lessonTitle)}</small>${flashWordHtml}<div class="flash-translation" dir="auto">${translation}</div>${articleBadge}${example}
     <div class="flashcard-actions">${!reviewSession.revealed ? `<button type="button" class="button-primary" data-action="flip-card">اكشف المعنى ${icon('spark', 15)}</button>` : `<button type="button" class="button-outline button-small" data-action="pronounce" data-word="${escapeHTML(word.word)}">${icon('volume', 14)} استمع</button>`}</div>
     ${reviewSession.revealed ? `<div class="review-ratings"><button type="button" class="button-outline" data-action="rate-word" data-rating="again">أحتاج إلى مراجعتها</button><button type="button" class="button-primary" data-action="rate-word" data-rating="know">أتقنتها ${icon('check', 15)}</button></div>` : ''}
     <div class="review-session-meta">البطاقة ${reviewSession.index + 1} من ${reviewSession.cards.length}${reviewInfo?.reps ? ` · راجعتها ${reviewInfo.reps} مرة` : ''}${reviewSession.optional ? ' · مراجعة اختيارية' : ''}</div>
@@ -2113,7 +2767,11 @@ function handleClick(event) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       break;
     case 'retake-lesson':
-      if (lessonSession) openLesson(lessonSession.id);
+      if (lessonSession) {
+        const nextRetry = (lessonSession.retryAttempt || 0) + 1;
+        openLesson(lessonSession.id);
+        if (lessonSession) lessonSession.retryAttempt = nextRetry;
+      }
       break;
     case 'back-to-level':
       stopAudioPlayback();
@@ -2129,7 +2787,80 @@ function handleClick(event) {
     case 'rate-word': rateCurrentWord(button.dataset.rating); break;
     case 'pronounce': pronounce(button.dataset.word); break;
     case 'play-audio-asset': playAudioAsset(button.dataset.audioId, Number(button.dataset.audioRate)); break;
+    case 'play-section-audio': playAudioAsset(button.dataset.playAssetId, Number(button.dataset.audioRate)); break;
     case 'quick-word-known': quickMarkWord(button.dataset.wordId); break;
+    case 'enroll-lesson-words': enrollLessonWords(button.dataset.lessonId); break;
+    case 'scroll-lesson-stage': {
+      const stage = button.dataset.stage;
+      let targetEl = null;
+      if (stage === 'build') {
+        targetEl = root.querySelector?.('.lesson-document h2');
+      } else if (stage === 'practice') {
+        targetEl = [...(root.querySelectorAll?.('.lesson-document h2, .lesson-document h3') || [])].find((el) => /تمرين|تمارين|قراءة|استماع/.test(el.textContent || ''));
+      } else if (stage === 'mastery') {
+        targetEl = root.querySelector?.('#lesson-mastery-panel, .lesson-finish-panel');
+      }
+      if (targetEl && typeof targetEl.scrollIntoView === 'function') {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      break;
+    }
+    case 'set-review-direction':
+      reviewDirection = button.dataset.direction === 'ar-de' ? 'ar-de' : 'de-ar';
+      render();
+      break;
+    case 'start-extra-review-batch':
+      startReviewSession({ forceExtraBatch: true });
+      render();
+      break;
+    case 'start-spiral-review':
+      buildSpiralSession(button.dataset.level || 'ALL');
+      if (currentView !== 'review') {
+        currentView = 'review';
+        if (!reviewSession) startReviewSession();
+      }
+      render();
+      break;
+    case 'select-spiral-answer':
+      if (spiralSession && !spiralSession.checked) {
+        spiralSession.selected = Number(button.dataset.index);
+        render();
+      }
+      break;
+    case 'check-spiral-answer':
+      if (spiralSession && !spiralSession.checked && spiralSession.selected !== null) {
+        const currentQ = spiralSession.items[spiralSession.index]?.question;
+        spiralSession.checked = true;
+        if (currentQ && spiralSession.selected === currentQ.answerIndex) spiralSession.correct += 1;
+        render();
+      }
+      break;
+    case 'next-spiral-question':
+      if (spiralSession && spiralSession.checked) {
+        if (spiralSession.index + 1 >= spiralSession.items.length) {
+          spiralSession.done = true;
+        } else {
+          spiralSession.index += 1;
+          spiralSession.selected = null;
+          spiralSession.checked = false;
+        }
+        render();
+      }
+      break;
+    case 'open-level-lexicon':
+      lexiconFilter.level = button.dataset.level || 'ALL';
+      currentView = 'review';
+      if (!reviewSession) startReviewSession();
+      render();
+      break;
+    case 'set-lexicon-level':
+      lexiconFilter.level = button.dataset.level || 'ALL';
+      render();
+      break;
+    case 'set-lexicon-focus':
+      lexiconFilter.focus = button.dataset.focus || 'ALL';
+      render();
+      break;
     case 'export-progress': exportProgress(); break;
     case 'reset-progress': resetProgress(); break;
     case 'install': installApp(); break;
@@ -2176,9 +2907,21 @@ function handleSubmit(event) {
 }
 
 function handleInput(event) {
-  const field = event.target.closest('[data-performance-response]');
+  if (event.target?.id === 'lexicon-search-input') {
+    lexiconFilter.query = String(event.target.value || '');
+    const container = root.querySelector?.('.lexicon-results-container');
+    if (container) container.innerHTML = renderLexiconResultsMarkup();
+    return;
+  }
+  const field = event.target.closest?.('[data-performance-response]');
   if (!field) return;
   savePerformanceEvidence(field.dataset.scope, field.dataset.version, field.dataset.taskId, { response: field.value });
+  const heuristicNode = root.querySelector?.(`[data-heuristic-for="${field.dataset.taskId}"]`);
+  if (heuristicNode) {
+    const assessment = performanceAssessmentForScope(field.dataset.scope);
+    const task = assessment?.performanceTasks?.find((item) => item.id === field.dataset.taskId);
+    if (task) heuristicNode.innerHTML = renderPerformanceTaskHeuristicsInner(task, field.value);
+  }
 }
 
 function handleChange(event) {
@@ -2259,6 +3002,9 @@ function resetProgress() {
   lessonSession = null;
   gateSession = null;
   reviewSession = null;
+  reviewDirection = 'de-ar';
+  lexiconFilter = { query: '', level: 'ALL', focus: 'ALL' };
+  spiralSession = null;
   saveState();
   render();
   showToast('تم مسح التقدم المحلي.');

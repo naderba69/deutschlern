@@ -226,14 +226,14 @@
   ],
   "sourceHashes": {
     "tools/build_course.py": "6384e94f006fbb36693bf71b8ff130bb0d4defe33af88a14d83cb49dee5dedc7",
-    "tools/verify_course.py": "e4530dcc5cd908d32dfc357649bdabc4e573cf724a01b67730d1868cc0381ea4",
-    "app.js": "2050af40d92e5a635076314f06f1806633d6985316494efbad98dfe98be1110f",
-    "styles.css": "283b63d88b9588fab672ed8c850f5fceb91f8107c31a2752ddbff128b459efac",
-    "service-worker.js": "6b07dd7e9c37a5e584ebc8272c21c9ef54db1533a61e75651357bd1c43482e26",
+    "tools/verify_course.py": "ebef2c49cbc4add5f4c1e4fb944918005367cebef3a757f62f6e9f7265831f2d",
+    "app.js": "21f001468f28d6dfd2fb11fd2e494c18384c2d0880ae6c782b6e44914e8518d9",
+    "styles.css": "fbbc5fa4ae36fcbc6f3abcbd01bcde797c4ced62ad9a1014a5af690741f68527",
+    "service-worker.js": "f97897ca14f9da68cb72675fc2aa68672a8e0bdb8ec740562ee5e5497d27ea20",
     "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
-    "tools/test_browser.cjs": "8e2aa614cdd40820952da2bc7c6e7691621458f6392182eae8120ecd16f115f9",
-    "tools/test_service_worker.cjs": "43be09f27c0ff5dc540847e916e2ea22f7955e8d8c2b086902fc0af3b3045c0a",
-    "tools/test_accessibility_update.cjs": "d6277330823d975af7993e0955e1f87211b956d1ad302c3eae8f658f1f8c5a8b",
+    "tools/test_browser.cjs": "ecc630bef959da909ad5c8642038fc0a56017a6d1aad381f6e1ad6da752de0e9",
+    "tools/test_service_worker.cjs": "735692cedc02e7f622623666dcfa2bdab85b92f634506be2d427b2530f0dcafb",
+    "tools/test_accessibility_update.cjs": "7076dc122d6d01d0b24eb8ccd1204cd7fde136f93d9494bdd6da9a1ed584c5da",
     "tools/test_accessibility_audit.cjs": "0a9d73a10f517d63f2846639e90ca4814c3a8cc9d0fda7dba6e3f49637709e8d"
   },
   "units": [

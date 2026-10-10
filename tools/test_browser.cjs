@@ -145,6 +145,10 @@ async function layoutAndPlayback(browser, base, viewport) {
   });
   assert.ok(await page.evaluate(width => document.documentElement.scrollWidth <= width + 1, viewport.width), 'gate viewport must fit');
   let totalVocabCards = 0;
+  let totalVocabExamples = 0;
+  let totalInlineKeys = 0;
+  let totalListeningGuards = 0;
+  let totalStagePills = 0;
   let totalTranscriptLines = await page.locator('.audio-transcript-line span[lang="de"]').count();
   let totalTables = 0;
   let totalTh = 0;
@@ -160,6 +164,10 @@ async function layoutAndPlayback(browser, base, viewport) {
       scroll: document.documentElement.scrollWidth,
       vocab: document.querySelectorAll('.vocab-card .german-word[dir="ltr"][lang="de"]').length,
       vocabTrans: document.querySelectorAll('.vocab-card .word-translation[dir="auto"]').length,
+      vocabExamples: document.querySelectorAll('.vocab-card .word-example[dir="auto"]').length,
+      inlineKeys: document.querySelectorAll('.lesson-document details.exercise-inline-key').length,
+      listeningGuards: document.querySelectorAll('.lesson-document details.listening-script-guard').length,
+      stagePills: document.querySelectorAll('.lesson-stages-bar .lesson-stage-pill').length,
       transcriptDe: document.querySelectorAll('.audio-transcript-line span[lang="de"]').length,
       tables: document.querySelectorAll('.lesson-document table').length,
       th: document.querySelectorAll('.lesson-document th[scope="col"][dir="auto"]').length,
@@ -167,7 +175,13 @@ async function layoutAndPlayback(browser, base, viewport) {
     }));
     assert.equal(domStats.vocab, lesson.vocabulary.length, `${lesson.id} vocab count`);
     assert.equal(domStats.vocabTrans, lesson.vocabulary.length, `${lesson.id} vocab translation count`);
+    assert.equal(domStats.vocabExamples, lesson.vocabulary.length, `${lesson.id} vocab contextual example count`);
+    assert.equal(domStats.stagePills, 3, `${lesson.id} stage pills count`);
     totalVocabCards += domStats.vocab;
+    totalVocabExamples += domStats.vocabExamples;
+    totalInlineKeys += domStats.inlineKeys;
+    totalListeningGuards += domStats.listeningGuards;
+    totalStagePills += domStats.stagePills;
     totalTranscriptLines += domStats.transcriptDe;
     totalTables += domStats.tables;
     totalTh += domStats.th;
@@ -175,6 +189,10 @@ async function layoutAndPlayback(browser, base, viewport) {
     assert.ok(domStats.scroll <= viewport.width + 1 && domStats.width <= viewport.width + 1, `${lesson.id} overflows ${viewport.width}px: ${JSON.stringify(domStats)}`);
   }
   assert.equal(totalVocabCards, 754, 'All 754 vocabulary cards must render across 53 lessons');
+  assert.equal(totalVocabExamples, 754, 'All 754 vocabulary cards must render contextual examples across 53 lessons');
+  assert.equal(totalInlineKeys, 428, 'All 428 exercises must render inline self-check keys across 53 lessons');
+  assert.equal(totalListeningGuards, 48, 'All 48 listening sections must render listening-first script guards across 53 lessons');
+  assert.equal(totalStagePills, 159, 'All 53 lessons must render 3 interactive stage pills (159 total)');
   assert.equal(totalTranscriptLines, 474, 'All 474 audio transcript lines must render with lang="de" across 53 lessons + A0 gate');
   assert.equal(totalTables, 96, 'All 96 lesson tables must render in lesson-document');
   assert.equal(totalTh, 273, 'All 273 lesson table headers must have scope="col" and dir="auto"');

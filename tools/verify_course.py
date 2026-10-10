@@ -594,8 +594,16 @@ def main() -> None:
         '<div class="word-translation" dir="auto">${escapeHTML(word.translation)}</div>',
         '<div class="flash-translation" dir="auto">${translation}</div>',
         'بينما يُحتسب وقت الدراسة الفعلي تلقائيًا أثناء الجلسة النشطة.',
+        'function getLessonFocusDomains(lesson)',
+        'function getWordContextHint(word, lesson = null)',
+        'function renderLessonStagesBar(lesson)',
+        'function enhanceLessonDocumentHtml(lesson, rawHtml)',
+        'function renderQuizAudioHelper(lessonId, question)',
+        'function renderPerformanceTaskHeuristics(task, evidence)',
+        'function renderSpiralReviewSection()',
+        'function renderCumulativeLexiconAndGrammarSection()',
     ):
-        assert snippet in app_text, f"Missing WCAG 3.1.2 / bidi attribute snippet in app.js: {snippet}"
+        assert snippet in app_text, f"Missing WCAG 3.1.2 / bidi / CR62 attribute snippet in app.js: {snippet}"
 
     def _py_format_inline_md(val: str) -> str:
         def _code_repl(m: re.Match[str]) -> str:
@@ -674,7 +682,7 @@ def main() -> None:
     assert "overflow-x: hidden; overflow-y: auto;" in css_text, "Missing deterministic overflow rules on performance textarea in styles.css"
 
     review_files = sorted((ROOT / "data" / "reviews").glob("*-review.json"))
-    assert len(review_files) == 61, f"Expected 61 granular review JSON files; found {len(review_files)}"
+    assert len(review_files) == 62, f"Expected 62 granular review JSON files; found {len(review_files)}"
     for review_path in review_files:
         review_data = json.loads(review_path.read_text(encoding="utf-8"))
         for tracked_rel, expected_hash in review_data.get("sourceHashes", {}).items():

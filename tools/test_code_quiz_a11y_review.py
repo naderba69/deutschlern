@@ -51,7 +51,7 @@ assert "overflow-x: hidden; overflow-y: auto;" in styles_css
 assert ".quiz-feedback {" in styles_css and "unicode-bidi: plaintext;" in styles_css
 
 sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-assert "const CACHE_NAME = 'deutsch-pfad-v110';" in sw_js
+assert "const CACHE_NAME = 'deutsch-pfad-v111';" in sw_js
 
 a11y_js = (ROOT / "tools/test_accessibility_audit.cjs").read_text(encoding="utf-8")
 assert "assert.deepEqual(incompletes, [], 'automated accessibility incomplete checks; set A11Y_REPORT for node details');" in a11y_js
