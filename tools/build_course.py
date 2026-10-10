@@ -506,7 +506,8 @@ def audio_source() -> list[dict]:
             if previous_asset_voice != segment["voiceId"]:
                 raise SystemExit(f"A speaker changes voice within an asset: {segment['speaker']}")
             if asset["status"] == "ready":
-                previous_ready_voice = ready_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+                speaker_key = f"{asset['lessonId']}:{segment['speaker']}" if segment["speaker"] in {"Verkäufer"} else segment["speaker"]
+                previous_ready_voice = ready_speaker_voices.setdefault(speaker_key, segment["voiceId"])
                 if previous_ready_voice != segment["voiceId"]:
                     raise SystemExit(f"An approved speaker changes voice across assets: {segment['speaker']}")
             path = Path(segment["src"])

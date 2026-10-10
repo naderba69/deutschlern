@@ -173,7 +173,7 @@ def main() -> None:
         assert snippet in css_text, f"Missing snippet in styles.css: {snippet}"
 
     sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "const CACHE_NAME = 'deutsch-pfad-v113';" in sw_js
+    assert "const CACHE_NAME = 'deutsch-pfad-v114';" in sw_js
 
     print("PASS: CR61 full-project exhaustive audit, 100% catalog sync, and inline Markdown assessment rendering guard verified.")
 

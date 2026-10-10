@@ -1912,11 +1912,11 @@
     "content/B1/lesson-12-innovation-research-future.assessment.json": "cd0f46dbd7facbf5812babb86d402bb69971e7dd83e64202081c688bc9829c6f"
   },
   "audioSnapshotHashes": {
-    "DL-B1-12-AUD-PHR-01": "b6cde8b6dbbc0245f851035ff0ece7024f26685015136533999c7f9f28a5fe3c",
-    "DL-B1-12-AUD-MODEL-01": "da84891ff436e1048d5428d191eaa75a09bb49317d29226e9063a12fe8d3e56b",
-    "DL-B1-12-AUD-DLG-01": "f8664a0260c40b9f179efc8ac7e870bdc03e5e480ccfa2d1e1f9d4df006d52a2",
-    "DL-B1-12-AUD-READ-01": "5fff65ca31546a2869a3f2e5c4d9b467416f0dfa7a6bccda7b917adafbf20ad0",
-    "DL-B1-12-AUD-LST-01": "6c2f7c614c0a1aef4de9b0c56d28f2550f6c2da02551e926f4f62739c6299787"
+    "DL-B1-12-AUD-PHR-01": "4e61dd364d017666d11f6afaf6a68d34099632b0b1c809718982910afafdaa96",
+    "DL-B1-12-AUD-MODEL-01": "db0f088bbb740c3cc3ef99c4c49afb5923abcac5c67898a0cac050ee19af728a",
+    "DL-B1-12-AUD-DLG-01": "fac3bae7db156baee279050fae682ae5a2736ca4ef971e9cb8a024434f59ae86",
+    "DL-B1-12-AUD-READ-01": "c507199c69f8b659d12ae6580df195b8c2b82372317f3c826157bb462d24ee0a",
+    "DL-B1-12-AUD-LST-01": "7cf696c376572d96f11234f60fe4671bab70a7e97e9cc1600b94ca4a2318d60b"
   },
   "preservation": {
     "baseline": "04d7980219fad2b944e2299fdc4b0113a0688af0",

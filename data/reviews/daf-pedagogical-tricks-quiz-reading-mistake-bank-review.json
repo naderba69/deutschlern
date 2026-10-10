@@ -3,7 +3,7 @@
   "lessonId": "daf-pedagogical-tricks-quiz-reading-mistake-bank",
   "assessmentVersion": "daf-pedagogical-tricks-quiz-reading-mistake-bank-v1",
   "reviewedAt": "2026-10-10",
-  "serviceWorkerCacheName": "deutsch-pfad-v113",
+  "serviceWorkerCacheName": "deutsch-pfad-v114",
   "unitCount": 68,
   "acousticReviewed": false,
   "cefrCertification": false,
@@ -17,7 +17,9 @@
     "vocabularyGermanContextualSentences": 754,
     "audioSegmentShadowingButtons": 474,
     "axeStatesVerified": 349,
-    "narrowViewportStatesVerified": 348
+    "narrowViewportStatesVerified": 348,
+    "readyAudioAssets": 217,
+    "readyAudioSegments": 474
   },
   "sources": [
     {
@@ -224,16 +226,16 @@
   "sourceHashes": {
     "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
     "styles.css": "a403c56eca9eef1e5a9ffb35431df8e52d5ce9d3ab6bb3eb1538c602197471cd",
-    "service-worker.js": "42f2e7f242bfd035eab0a14d5077aca6c2a814713fc0b8c987cfb75173c95506",
-    "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
-    "README.md": "a3f6aa5e32b3747f6d6251d4faa92be66f694a65a0dd080b401359e69ecd7eb9",
-    "content/PROGRESS.md": "59e589164a788cc82996163c4293a726117bef75de77a0ef7fd67f9c6314f52e",
-    "data/reviews/README.md": "5b96f530f45144d949130c6c063b64ebc2f39af7791ace9569ea56be24187e42",
-    "data/browser-qa-report.md": "a0eae368fa4071d64b6b68197446b26810bd87a7054128ee4eb410ca2621f471",
+    "service-worker.js": "e6cf297563e272502af514f43a01f77f6d968d5c5c51589fec54013ab0ee7b00",
+    "data/course.json": "4f342cff43f475cfe15625aedb2b6da3cd856d5bbb241bfcaa3267e8940b8845",
+    "README.md": "e547ad34ccc3f6a055934de88539b6c0980267433a8b07c9e4c723d7a22c0ecd",
+    "content/PROGRESS.md": "ea711d0d3e13b1ab2155f4b9a073a87da2b35583151fc48a037706b7da0cfc77",
+    "data/reviews/README.md": "86ad10203d57d7c1f276bb49a10c15776f84205184bb429770000f911c50d58d",
+    "data/browser-qa-report.md": "e3f329a610b6e25349b2370ef41caf9ab64cfb89f5960b79967ba8434cf59391",
     "data/curriculum-audit.md": "678ca35b6ddad3ba7841655d0df061bd755d01dc0542be15a7086a6a721d99b1",
-    "data/curriculum-production-matrix.md": "fbdad62f3d3e6e1c9b8f2e2e80351f0d36da8510716179693d7a22daee4245e3",
-    "data/course-improvement-plan.md": "dca289d5c03a84f48430aaa935f45897efca77156ccb95170ff5ed56304bf035",
-    "data/reviews/daf-pedagogical-tricks-quiz-reading-mistake-bank-review.md": "c83f174bfa487484808df069c227323d0f5b2c752960ab5c65d9760e17f0ea7e"
+    "data/curriculum-production-matrix.md": "54c5532ccfafb523c2507f6fc3c579183a2b503ca843f3bd370788b428e7d2c3",
+    "data/course-improvement-plan.md": "76094dd36190934da718cae7b525373e2d89ea24a26ccbfc48f9ee3d980a6e64",
+    "data/reviews/daf-pedagogical-tricks-quiz-reading-mistake-bank-review.md": "320c8f88768a2b1ba1ed19d48da7b5bdd5e05f68771e429b556f503641208444"
   },
   "units": [
     {
@@ -1421,7 +1423,7 @@
         "S16",
         "S17"
       ],
-      "finding": "اجتاز المشروع كاملًا دون عينات فحوص `build_course.py` و`verify_course.py` وجميع حراس المراجعة الـ64 ومجموعات Node الخمس ومجموعات Chromium الخمس (`348` حالة عرض ضيق بصفر تجاوز أفقي و`349` حالة شاشة في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة مع مخزن `deutsch-pfad-v113`)."
+      "finding": "اجتاز المشروع كاملًا دون عينات فحوص `build_course.py` و`verify_course.py` وجميع حراس المراجعة الـ64 ومجموعات Node الخمس ومجموعات Chromium الخمس (`348` حالة عرض ضيق بصفر تجاوز أفقي و`349` حالة شاشة في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة، وجميع الأصول الصوتية الـ217 / 474 مقطعًا بحالة `ready` بتوجيه المستخدم مع مخزن `deutsch-pfad-v114`)."
     }
   ]
 }

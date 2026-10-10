@@ -31,12 +31,12 @@
 ## التسليم والمتابعة — CR64
 
 - **الفرع الوحيد:** `arena/01a1036f-deutschlern`؛ يُرفع التحديث والتقرير الكامل الآن بعنوان `Add DaF pedagogical tricks, quiz audio/reading helpers, Umlaut bar, mistake bank & segment shadowing (CR64)`. لا دمج PR#1 أو تغيير فرع.
-- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v113`)، `tools/test_accessibility_update.cjs`، `tools/test_service_worker.cjs`، وحراس `CR56–CR63`، والحارس الجديد رقم `64` (`tools/test_daf_pedagogical_tricks_quiz_reading_mistake_bank_review.py`)، وملفات `data/reviews/*-review.json` (`64` ملفًا محدّثة البصمات `sourceHashes`) + `data/reviews/daf-pedagogical-tricks-quiz-reading-mistake-bank-review.md`، والوثائق السبع التراكمية، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
+- **الملفات:** `app.js`، `styles.css`، `service-worker.js` واختباراه (`v114`)، `tools/test_accessibility_update.cjs`، `tools/test_service_worker.cjs`، وحراس `CR56–CR63`، والحارس الجديد رقم `64` (`tools/test_daf_pedagogical_tricks_quiz_reading_mistake_bank_review.py`)، وملفات `data/reviews/*-review.json` (`64` ملفًا محدّثة البصمات `sourceHashes`) + `data/reviews/daf-pedagogical-tricks-quiz-reading-mistake-bank-review.md`، والوثائق السبع التراكمية، وهاتان الوثيقتان (`data/production-handoff.md` و`PROFESSIONAL_CONTINUATION_PROMPT_AR.md`).
 - **الفحوص التراكمية — CR64 (`PASS` بنسبة 100% على كامل المشروع دون عينات):**
   - `python3 tools/build_course.py` + `python3 tools/verify_course.py` + جميع حراس المراجعة الـ**`64`** (`tools/test_*_review.py`): **PASS**.
   - مجموعات Node الخمس (`test_progression.cjs`, `test_service_worker.cjs`, `test_daily_plan.cjs`, `test_session_persistence.cjs`, `test_study_time.cjs`): **PASS**.
   - مجموعات المتصفح الخمس عبر Chromium 153.0.8010.0 (`test_browser.cjs`, `test_accessibility_update.cjs`, `test_forms_keyboard.cjs`, `test_narrow_layout.cjs`, `test_accessibility_audit.cjs`): **PASS** — شملت التحقق الحي في DOM من **`53/53` صندوق حيل `DaF`**، و**`428/428` مساحة حل ذاتي للتمارين مع شريط الحروف الألمانية**، و**`474/474` زر استماع سطري**، و**`348` حالة عرض ضيق (`320×900` و`568×320`) بصفر تجاوز أفقي**، و**`349` حالة شاشة في `axe-core` WCAG 2.1 A/AA + `best-practice` بصفر مخالفات وصفر فحوص غير حاسمة (`0` قواعد و`0` عقد)**.
-- **الحالة والتالي مباشرة:** اكتملت الترقية التربوية والمنهجية الشاملة للمحاور الستة (`CR64`، `64` حارسًا، `deutsch-pfad-v113`)؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
+- **الحالة والتالي مباشرة:** اكتملت الترقية التربوية والمنهجية الشاملة للمحاور الستة (`CR64`، `64` حارسًا، `deutsch-pfad-v114`)؛ تبقى المراجعة السمعية لـ80 أصلًا صوتيًا معلقًا (`B1.9–B2.12`) ودمج PR#1 خارج نطاق الاعتماد التلقائي.
 
 ---
 

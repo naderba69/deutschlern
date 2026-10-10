@@ -58,7 +58,7 @@ for snippet in (
     assert snippet in app_js, snippet
 
 sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-assert "const CACHE_NAME = 'deutsch-pfad-v113';" in sw_js
+assert "const CACHE_NAME = 'deutsch-pfad-v114';" in sw_js
 
 if "--implementation-only" in sys.argv:
     print("PASS CR59 implementation-only: 96 tables (273 th scope='col', 1848/2938 German td lang='de'), 109/118 German blockquotes, 210/1137 German paragraphs, 1750/3821 German list items, 466/474 German audio speakers, 521/541 German vocab examples, v108 cache.")

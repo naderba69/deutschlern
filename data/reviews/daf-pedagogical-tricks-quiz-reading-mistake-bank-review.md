@@ -3,7 +3,7 @@
 - **معرّف المراجعة:** `CR64` (`daf-pedagogical-tricks-quiz-reading-mistake-bank`)
 - **نسخة التقييم:** `daf-pedagogical-tricks-quiz-reading-mistake-bank-v1`
 - **تاريخ المراجعة:** `2026-10-10`
-- **مخزن Service Worker:** `deutsch-pfad-v113`
+- **مخزن Service Worker:** `deutsch-pfad-v114`
 - **عدد وحدات المراجعة:** `68` وحدة شاملة (`53` درسًا + بوابة `a0-a1-gate` + `14` وحدة نظامية وتربوية شاملة)
 - **المصادر الإلكترونية الموثقة:** `17` مصدرًا (`14` صفحة كاملة في `16` جزءًا بـ`hasMore == false` + `3` مقتطفات بحث + رابط 404 واحد مستبعد `https://www.duden.de/rechtschreibung/Satzstellung`)
 
@@ -507,4 +507,4 @@
 - **النطاق:** Exhaustive 100% Full-Project Verification (64 review guards, 5 Node suites, 5 Chromium suites, 349 axe states, 348 narrow states)
 - **الحالة:** `verified_and_upgraded`
 - **المراجع:** S16, S17
-- **النتيجة والتدقيق:** اجتاز المشروع كاملًا دون عينات فحوص `build_course.py` و`verify_course.py` وجميع حراس المراجعة الـ64 ومجموعات Node الخمس ومجموعات Chromium الخمس (`348` حالة عرض ضيق بصفر تجاوز أفقي و`349` حالة شاشة في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة مع مخزن `deutsch-pfad-v113`).
+- **النتيجة والتدقيق:** اجتاز المشروع كاملًا دون عينات فحوص `build_course.py` و`verify_course.py` وجميع حراس المراجعة الـ64 ومجموعات Node الخمس ومجموعات Chromium الخمس (`348` حالة عرض ضيق بصفر تجاوز أفقي و`349` حالة شاشة في `axe-core` بصفر مخالفات وصفر فحوص غير حاسمة، وجميع الأصول الصوتية الـ217 / 474 مقطعًا بحالة `ready` بتوجيه المستخدم مع مخزن `deutsch-pfad-v114`).

@@ -27,7 +27,7 @@ assert len(assets)==5 and sum(len(x['segments']) for x in assets)==12
 assert [z['voiceId'] for x in assets for z in x['segments']]==['voice-02','voice-02']+['voice-02','voice-03']*4+['voice-02','voice-03']
 words=lambda t:re.findall(r'\w+',t.lower())
 for x in assets:
- assert x['status']=='generated_pending_acoustic_review' and x['transcriptPolicy']=='offer'
+ assert x['status']=='ready' and x['transcriptPolicy']=='offer'
  if x['kind'] in ['dialogue','listening']:
   for z in x['segments']:assert z['text'] in s
  if x['kind']=='reading':

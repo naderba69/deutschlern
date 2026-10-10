@@ -15,7 +15,7 @@ def verify_implementation():
     sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
     course = json.loads((ROOT / "data" / "course.json").read_text(encoding="utf-8"))
 
-    assert "const CACHE_NAME = 'deutsch-pfad-v113';" in sw_js
+    assert "const CACHE_NAME = 'deutsch-pfad-v114';" in sw_js
 
     required_js_Snippets = [
         "function normalizeExercisePractice(value)",

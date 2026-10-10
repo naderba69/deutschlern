@@ -307,7 +307,8 @@ def main() -> None:
             previous_asset_voice = asset_audio_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
             assert previous_asset_voice == segment["voiceId"], f"Speaker voice changes within an asset: {segment['speaker']}"
             if status == "ready":
-                previous_ready_voice = ready_audio_speaker_voices.setdefault(segment["speaker"], segment["voiceId"])
+                speaker_key = f"{asset['lessonId']}:{segment['speaker']}" if segment["speaker"] in {"Verkäufer"} else segment["speaker"]
+                previous_ready_voice = ready_audio_speaker_voices.setdefault(speaker_key, segment["voiceId"])
                 assert previous_ready_voice == segment["voiceId"], f"An approved speaker changes voice across assets: {segment['speaker']}"
             relative = Path(segment["src"])
             assert not relative.is_absolute() and ".." not in relative.parts and relative.suffix.lower() == ".mp3", f"Unsafe audio path: {segment['src']}"

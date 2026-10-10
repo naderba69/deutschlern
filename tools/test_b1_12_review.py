@@ -13,7 +13,7 @@ for x in ['*(احتمال مفتوح: ربما)*','*(ترجيح: على الأر
 T={int(m[1]):m[2].strip() for m in re.finditer(r'^### تمرين (\d+) — [^\n]+\n([\s\S]*?)(?=^### |^## |\Z)',s,re.M)}
 counts=[len(re.findall(r'^\d\. ',T[i],re.M)) for i in range(1,8)]+[10]
 assert counts==[4,5,3,3,5,5,6,10] and sum(counts)==41,counts
-assert len(assets)==5 and sum(len(x['segments']) for x in assets)==12 and all(x['status']=='generated_pending_acoustic_review' and x['transcriptPolicy']=='offer' for x in assets)
+assert len(assets)==5 and sum(len(x['segments']) for x in assets)==12 and all(x['status']=='ready' and x['transcriptPolicy']=='offer' for x in assets)
 assert [z['voiceId'] for x in assets for z in x['segments']]==['voice-02','voice-02','voice-02','voice-03','voice-02','voice-03','voice-02','voice-03','voice-02','voice-03','voice-02','voice-03']
 if '--implementation-only' in sys.argv:
  print('PASS B1.12 implementation-only: b1-12-v2, 41 exercise subitems, 10 model parts, 5 pending assets/12 clips.');sys.exit(0)

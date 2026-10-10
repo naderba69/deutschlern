@@ -225,15 +225,15 @@
     }
   ],
   "sourceHashes": {
-    "tools/build_course.py": "6384e94f006fbb36693bf71b8ff130bb0d4defe33af88a14d83cb49dee5dedc7",
-    "tools/verify_course.py": "49b2d26a5ae25b9a5792ed7f37f34b34a5217f7b4a91c6cbcaff8629b02765c7",
+    "tools/build_course.py": "133133494e5e6195d34815eb0b73b3238df31b4eb112071d2b7458f7e73affbd",
+    "tools/verify_course.py": "4411218b78712c52185cca1246905188a5895258074a511cb6be14ad55591c24",
     "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
     "styles.css": "a403c56eca9eef1e5a9ffb35431df8e52d5ce9d3ab6bb3eb1538c602197471cd",
-    "service-worker.js": "42f2e7f242bfd035eab0a14d5077aca6c2a814713fc0b8c987cfb75173c95506",
-    "data/course.json": "03472de35ceaceddd135b7b65671b90c6adc751af0b24f871d7d4ce47b1ffcec",
+    "service-worker.js": "e6cf297563e272502af514f43a01f77f6d968d5c5c51589fec54013ab0ee7b00",
+    "data/course.json": "4f342cff43f475cfe15625aedb2b6da3cd856d5bbb241bfcaa3267e8940b8845",
     "tools/test_browser.cjs": "4df1a09b5c4f635735b02afeff3926e68ab0b8cf1605802f0b071fcf2ca40f97",
-    "tools/test_service_worker.cjs": "eb6b6a072cb46d2f0a425946e54dc1e0df066ff5ca3ddd1e467f83ce1966151a",
-    "tools/test_accessibility_update.cjs": "6aaeb2d4416b9f485ba4f763233b86705af7c3e79e2e8e31b9b7c5c966858a8c",
+    "tools/test_service_worker.cjs": "ffb03d1b720664da07c5dfda0be0d2706cbbf002ed463df372b8722873a2d234",
+    "tools/test_accessibility_update.cjs": "99e69b581182ac56a583dfc00e20eae37481363422e899e02e3ebae05b3cdd88",
     "tools/test_accessibility_audit.cjs": "0a9d73a10f517d63f2846639e90ca4814c3a8cc9d0fda7dba6e3f49637709e8d"
   },
   "units": [

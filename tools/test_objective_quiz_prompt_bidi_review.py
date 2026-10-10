@@ -110,7 +110,7 @@ def main() -> None:
         assert snippet in app_js, f"Missing snippet in app.js: {snippet}"
 
     sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "const CACHE_NAME = 'deutsch-pfad-v113';" in sw_js
+    assert "const CACHE_NAME = 'deutsch-pfad-v114';" in sw_js
 
     print("PASS: CR60 objective, quiz prompt/explanation lang=de, UI German kickers, and bidi review guard verified.")
 

@@ -15,7 +15,7 @@ def verify_implementation():
     sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
     course = json.loads((ROOT / "data" / "course.json").read_text(encoding="utf-8"))
 
-    assert "const CACHE_NAME = 'deutsch-pfad-v113';" in sw_js
+    assert "const CACHE_NAME = 'deutsch-pfad-v114';" in sw_js
 
     required_js_snippets = [
         "function normalizeMistakeBank(value)",
@@ -121,7 +121,7 @@ def main():
     assert data["reviewId"] == "CR64"
     assert data["lessonId"] == "daf-pedagogical-tricks-quiz-reading-mistake-bank"
     assert data["assessmentVersion"] == "daf-pedagogical-tricks-quiz-reading-mistake-bank-v1"
-    assert data["serviceWorkerCacheName"] == "deutsch-pfad-v113"
+    assert data["serviceWorkerCacheName"] == "deutsch-pfad-v114"
     assert data["acousticReviewed"] is False
     assert data["cefrCertification"] is False
 

@@ -153,7 +153,7 @@ def main() -> None:
         assert snippet in css_text, f"Missing CR62 CSS rule in styles.css: {snippet}"
 
     sw_js = (ROOT / "service-worker.js").read_text(encoding="utf-8")
-    assert "const CACHE_NAME = 'deutsch-pfad-v113';" in sw_js
+    assert "const CACHE_NAME = 'deutsch-pfad-v114';" in sw_js
 
     print("PASS: CR62 cumulative pedagogical methodology, interactive lesson flow, 754/754 contextual vocabulary, bidirectional SRS, heuristic coach, spiral review, and cumulative lexicon/grammar guard verified.")
 

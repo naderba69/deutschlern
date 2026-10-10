@@ -14,7 +14,7 @@ for x in ['غائب مفرد','غائب جمع','du wurdest','Mira weiß, dass d
 T={int(m[1]):m[2].strip() for m in re.finditer(r'^### تمرين (\d+) — [^\n]+\n([\s\S]*?)(?=^### |^## |\Z)',s,re.M)}
 counts=[len(re.findall(r'^\d\. ',T[i],re.M)) for i in range(1,8)]+[9]
 assert counts==[4,7,3,3,5,5,6,9] and sum(counts)==42,counts
-assert len(assets)==5 and sum(len(x['segments']) for x in assets)==10 and all(x['status']=='generated_pending_acoustic_review' and x['transcriptPolicy']=='offer' for x in assets)
+assert len(assets)==5 and sum(len(x['segments']) for x in assets)==10 and all(x['status']=='ready' and x['transcriptPolicy']=='offer' for x in assets)
 assert [z['voiceId'] for x in assets for z in x['segments']]==['voice-02','voice-02','voice-02','voice-00','voice-02','voice-00','voice-02','voice-00','voice-02','voice-03']
 if '--implementation-only' in sys.argv:
  print('PASS B1.11 implementation-only: b1-11-v2, 42 exercise subitems, 9 model parts, 5 pending assets/10 clips.');sys.exit(0)

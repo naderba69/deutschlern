@@ -24361,7 +24361,7 @@
       "lessonId": "b1-09-travel-transport-environment",
       "title": "مفردات السفر والنقل",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-09-AUD-PHR-01.mp3",
@@ -24377,7 +24377,7 @@
       "lessonId": "b1-09-travel-transport-environment",
       "title": "أمثلة الروابط الزمنية",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-09-AUD-MODEL-01.mp3",
@@ -24393,7 +24393,7 @@
       "lessonId": "b1-09-travel-transport-environment",
       "title": "حوار: Mina وKarim يخططان رحلة",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-09-AUD-DLG-01-01.mp3",
@@ -24439,7 +24439,7 @@
       "lessonId": "b1-09-travel-transport-environment",
       "title": "قراءة: رحلة Zeynep إلى Uferstadt",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-09-AUD-READ-01.mp3",
@@ -24455,7 +24455,7 @@
       "lessonId": "b1-09-travel-transport-environment",
       "title": "استماع: الحافلة والرحلة بالقطار",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-09-AUD-LST-01.mp3",
@@ -24471,7 +24471,7 @@
       "lessonId": "b1-10-media-news-formal-communication",
       "title": "مفردات الإعلام والتواصل الرسمي",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-10-AUD-PHR-01.mp3",
@@ -24488,7 +24488,7 @@
       "lessonId": "b1-10-media-news-formal-communication",
       "title": "أمثلة الأسئلة غير المباشرة",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-10-AUD-MODEL-01.mp3",
@@ -24505,7 +24505,7 @@
       "lessonId": "b1-10-media-news-formal-communication",
       "title": "حوار: Leila مع المحرر",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-10-AUD-DLG-01-01.mp3",
@@ -24564,7 +24564,7 @@
       "lessonId": "b1-10-media-news-formal-communication",
       "title": "قراءة: رسالة Noor إلى هيئة التحرير",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-10-AUD-READ-01.mp3",
@@ -24581,7 +24581,7 @@
       "lessonId": "b1-10-media-news-formal-communication",
       "title": "استماع: استفسار Sami عن مجلة المدينة",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-10-AUD-LST-01.mp3",
@@ -24598,7 +24598,7 @@
       "lessonId": "b1-11-history-politics-passive-past",
       "title": "مفردات التاريخ والشأن المدني",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-11-AUD-PHR-01.mp3",
@@ -24615,7 +24615,7 @@
       "lessonId": "b1-11-history-politics-passive-past",
       "title": "أمثلة المبني للمجهول في الماضي ومقارنته بـ«أصبح»",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-11-AUD-MODEL-01.mp3",
@@ -24632,7 +24632,7 @@
       "lessonId": "b1-11-history-politics-passive-past",
       "title": "حوار: Mira مع أمينة الأرشيف",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-11-AUD-DLG-01-01.mp3",
@@ -24679,7 +24679,7 @@
       "lessonId": "b1-11-history-politics-passive-past",
       "title": "قراءة: خط زمني لبلدة Sonnenfeld الخيالية",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-11-AUD-READ-01.mp3",
@@ -24696,7 +24696,7 @@
       "lessonId": "b1-11-history-politics-passive-past",
       "title": "استماع: معرض الجسر في Sonnenfeld",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-11-AUD-LST-01.mp3",
@@ -24713,7 +24713,7 @@
       "lessonId": "b1-12-innovation-research-future",
       "title": "مفردات البحث والابتكار",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-12-AUD-PHR-01.mp3",
@@ -24730,7 +24730,7 @@
       "lessonId": "b1-12-innovation-research-future",
       "title": "نماذج Futur I والمقارنة بالحاضر والمبني للمجهول",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-12-AUD-MODEL-01.mp3",
@@ -24747,7 +24747,7 @@
       "lessonId": "b1-12-innovation-research-future",
       "title": "حوار: Rana وTimo في ورشة ابتكار",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-12-AUD-DLG-01-01.mp3",
@@ -24806,7 +24806,7 @@
       "lessonId": "b1-12-innovation-research-future",
       "title": "قراءة: مشروع Zukunftslabor البحثي الخيالي",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-12-AUD-READ-01.mp3",
@@ -24823,7 +24823,7 @@
       "lessonId": "b1-12-innovation-research-future",
       "title": "استماع: نماذج لتوفير الظل في ساحة المدرسة",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B1-12-AUD-LST-01.mp3",
@@ -24840,7 +24840,7 @@
       "lessonId": "b2-01-time-management-habits-reading",
       "title": "مفردات الوقت والقراءة المركّزة",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-01-AUD-PHR-01.mp3",
@@ -24857,7 +24857,7 @@
       "lessonId": "b2-01-time-management-habits-reading",
       "title": "نماذج شرح الطريقة والتمييز بينها وبين الغاية",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-01-AUD-MODEL-01.mp3",
@@ -24874,7 +24874,7 @@
       "lessonId": "b2-01-time-management-habits-reading",
       "title": "حوار: Hana وKarim ينظّمان الأسبوع",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-01-AUD-DLG-01-01.mp3",
@@ -24933,7 +24933,7 @@
       "lessonId": "b2-01-time-management-habits-reading",
       "title": "قراءة: خطة Hana واستراتيجيات القراءة",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-01-AUD-READ-01.mp3",
@@ -24950,7 +24950,7 @@
       "lessonId": "b2-01-time-management-habits-reading",
       "title": "استماع: تنظيم المهام والتركيز والراحة",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-01-AUD-LST-01.mp3",
@@ -24967,7 +24967,7 @@
       "lessonId": "b2-02-career-formal-communication-konjunktiv1",
       "title": "مفردات المسار المهني",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-02-AUD-PHR-01.mp3",
@@ -24984,7 +24984,7 @@
       "lessonId": "b2-02-career-formal-communication-konjunktiv1",
       "title": "نماذج الكلام المباشر والمنقول بـKonjunktiv I",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-02-AUD-MODEL-01.mp3",
@@ -25001,7 +25001,7 @@
       "lessonId": "b2-02-career-formal-communication-konjunktiv1",
       "title": "حوار: Nora وFadi بعد استشارة مهنية",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-02-AUD-DLG-01-01.mp3",
@@ -25054,7 +25054,7 @@
       "lessonId": "b2-02-career-formal-communication-konjunktiv1",
       "title": "قراءة: ملخّص استشارة مهنية",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-02-AUD-READ-01.mp3",
@@ -25071,7 +25071,7 @@
       "lessonId": "b2-02-career-formal-communication-konjunktiv1",
       "title": "استماع: إرشادات مهنية من ندوة التقديم للوظائف",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-02-AUD-LST-01.mp3",
@@ -25088,7 +25088,7 @@
       "lessonId": "b2-03-consumption-environment-passive-modal",
       "title": "مفردات الاستهلاك والبدائل",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-03-AUD-PHR-01.mp3",
@@ -25105,7 +25105,7 @@
       "lessonId": "b2-03-consumption-environment-passive-modal",
       "title": "نماذج المبني للمجهول مع الأفعال الناقصة",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-03-AUD-MODEL-01.mp3",
@@ -25122,7 +25122,7 @@
       "lessonId": "b2-03-consumption-environment-passive-modal",
       "title": "حوار: Nadia والبائع في متجر محلي",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-03-AUD-DLG-01-01.mp3",
@@ -25169,7 +25169,7 @@
       "lessonId": "b2-03-consumption-environment-passive-modal",
       "title": "قراءة: تجربة متجر Kreislauf الخيالي",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-03-AUD-READ-01.mp3",
@@ -25186,7 +25186,7 @@
       "lessonId": "b2-03-consumption-environment-passive-modal",
       "title": "استماع: إجراءات مقهى لإعادة الاستخدام والإصلاح",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-03-AUD-LST-01.mp3",
@@ -25203,7 +25203,7 @@
       "lessonId": "b2-04-cities-housing-participles",
       "title": "مفردات السكن والمباني",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-04-AUD-PHR-01.mp3",
@@ -25220,7 +25220,7 @@
       "lessonId": "b2-04-cities-housing-participles",
       "title": "نماذج Partizip I وPartizip II كصفات",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-04-AUD-MODEL-01.mp3",
@@ -25237,7 +25237,7 @@
       "lessonId": "b2-04-cities-housing-participles",
       "title": "حوار: المهندسة المعمارية وSamir في جولة سكنية",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-04-AUD-DLG-01-01.mp3",
@@ -25290,7 +25290,7 @@
       "lessonId": "b2-04-cities-housing-participles",
       "title": "قراءة: حي Parkbogen الخيالي",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-04-AUD-READ-01.mp3",
@@ -25307,7 +25307,7 @@
       "lessonId": "b2-04-cities-housing-participles",
       "title": "استماع: جولة في مساكن مُرمّمة وقيد الإنشاء",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-04-AUD-LST-01.mp3",
@@ -25324,7 +25324,7 @@
       "lessonId": "b2-05-health-fitness-medical-information",
       "title": "مفردات قراءة المعلومات الصحية",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-05-AUD-PHR-01.mp3",
@@ -25341,7 +25341,7 @@
       "lessonId": "b2-05-health-fitness-medical-information",
       "title": "نماذج السبب والنتيجة وaufgrund مع Genitiv",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-05-AUD-MODEL-01.mp3",
@@ -25358,7 +25358,7 @@
       "lessonId": "b2-05-health-fitness-medical-information",
       "title": "حوار: Rima وNabil عن قراءة عنوان صحي",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-05-AUD-DLG-01-01.mp3",
@@ -25405,7 +25405,7 @@
       "lessonId": "b2-05-health-fitness-medical-information",
       "title": "قراءة: فهم استطلاع خيالي وحدود نتائجه",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-05-AUD-READ-01.mp3",
@@ -25422,7 +25422,7 @@
       "lessonId": "b2-05-health-fitness-medical-information",
       "title": "استماع: التمييز بين عنوان صحي وتوصية طبية",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-05-AUD-LST-01.mp3",
@@ -25439,7 +25439,7 @@
       "lessonId": "b2-06-study-applications-verb-noun-phrases",
       "title": "مفردات التقديم والدراسة",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-06-AUD-PHR-01.mp3",
@@ -25456,7 +25456,7 @@
       "lessonId": "b2-06-study-applications-verb-noun-phrases",
       "title": "نماذج تراكيب الاسم والفعل في السياق الأكاديمي",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-06-AUD-MODEL-01.mp3",
@@ -25473,7 +25473,7 @@
       "lessonId": "b2-06-study-applications-verb-noun-phrases",
       "title": "حوار: Meryem والمرشد الدراسي",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-06-AUD-DLG-01-01.mp3",
@@ -25526,7 +25526,7 @@
       "lessonId": "b2-06-study-applications-verb-noun-phrases",
       "title": "قراءة: إرشادات أكاديمية خيالية",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-06-AUD-READ-01.mp3",
@@ -25543,7 +25543,7 @@
       "lessonId": "b2-06-study-applications-verb-noun-phrases",
       "title": "استماع: خطوات التقديم واتخاذ قرار دراسي",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-06-AUD-LST-01.mp3",
@@ -25560,7 +25560,7 @@
       "lessonId": "b2-07-travel-experiences-prepositional-relatives",
       "title": "مفردات الرحلات والوجهات",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-07-AUD-PHR-01.mp3",
@@ -25577,7 +25577,7 @@
       "lessonId": "b2-07-travel-experiences-prepositional-relatives",
       "title": "نماذج الجمل الموصولة مع حروف الجر",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-07-AUD-MODEL-01.mp3",
@@ -25594,7 +25594,7 @@
       "lessonId": "b2-07-travel-experiences-prepositional-relatives",
       "title": "حوار: Salma وJonas عن اختيار وجهة",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-07-AUD-DLG-01-01.mp3",
@@ -25641,7 +25641,7 @@
       "lessonId": "b2-07-travel-experiences-prepositional-relatives",
       "title": "قراءة: مسار خيالي على جزيرة Morgenküste",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-07-AUD-READ-01.mp3",
@@ -25658,7 +25658,7 @@
       "lessonId": "b2-07-travel-experiences-prepositional-relatives",
       "title": "استماع: رحلة إلى ميناء وخليج ومكان إقامة",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-07-AUD-LST-01.mp3",
@@ -25675,7 +25675,7 @@
       "lessonId": "b2-08-food-nutrition-data-passives",
       "title": "مفردات الغذاء والبيانات",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-08-AUD-PHR-01.mp3",
@@ -25692,7 +25692,7 @@
       "lessonId": "b2-08-food-nutrition-data-passives",
       "title": "نماذج العملية والحالة الناتجة في المبني للمجهول",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-08-AUD-MODEL-01.mp3",
@@ -25709,7 +25709,7 @@
       "lessonId": "b2-08-food-nutrition-data-passives",
       "title": "حوار: Lina والطاهي في مطبخ تدريبي",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-08-AUD-DLG-01-01.mp3",
@@ -25756,7 +25756,7 @@
       "lessonId": "b2-08-food-nutrition-data-passives",
       "title": "قراءة: جدول خيالي وقيم المزيجين A وB",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-08-AUD-READ-01.mp3",
@@ -25773,7 +25773,7 @@
       "lessonId": "b2-08-food-nutrition-data-passives",
       "title": "استماع: إعداد عينات وفحص جدول البيانات",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-08-AUD-LST-01.mp3",
@@ -25790,7 +25790,7 @@
       "lessonId": "b2-09-business-marketing-employment-prepositions",
       "title": "مفردات الشركات والتسويق والعمل",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-09-AUD-PHR-01.mp3",
@@ -25807,7 +25807,7 @@
       "lessonId": "b2-09-business-marketing-employment-prepositions",
       "title": "نماذج السؤال والجواب مع wo(r)- وda(r)-",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-09-AUD-MODEL-01.mp3",
@@ -25824,7 +25824,7 @@
       "lessonId": "b2-09-business-marketing-employment-prepositions",
       "title": "حوار: Mara وJonas عن حملة توظيف",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-09-AUD-DLG-01-01.mp3",
@@ -25883,7 +25883,7 @@
       "lessonId": "b2-09-business-marketing-employment-prepositions",
       "title": "قراءة: إعلان شركة Nordwerk الخيالية",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-09-AUD-READ-01.mp3",
@@ -25900,7 +25900,7 @@
       "lessonId": "b2-09-business-marketing-employment-prepositions",
       "title": "استماع: معايير الاختيار في إعلان وظيفة",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-09-AUD-LST-01.mp3",
@@ -25917,7 +25917,7 @@
       "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
       "title": "مفردات التقنية والاحتمالات",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-10-AUD-PHR-01.mp3",
@@ -25934,7 +25934,7 @@
       "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
       "title": "نماذج الفرضيات والأمنيات في الحاضر والماضي",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-10-AUD-MODEL-01.mp3",
@@ -25951,7 +25951,7 @@
       "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
       "title": "حوار: Lea وMurat بعد اختبار تطبيق خيالي",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-10-AUD-DLG-01-01.mp3",
@@ -25998,7 +25998,7 @@
       "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
       "title": "قراءة: مراجعة إصدار تجريبي خيالي",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-10-AUD-READ-01.mp3",
@@ -26015,7 +26015,7 @@
       "lessonId": "b2-10-wishes-probabilities-technology-konjunktiv2-past",
       "title": "استماع: نسخة احتياطية وأمنية توافق الأجهزة",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-10-AUD-LST-01.mp3",
@@ -26032,7 +26032,7 @@
       "lessonId": "b2-11-humans-nature-environment-nominalization",
       "title": "مفردات الإنسان والطبيعة",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-11-AUD-PHR-01.mp3",
@@ -26049,7 +26049,7 @@
       "lessonId": "b2-11-humans-nature-environment-nominalization",
       "title": "نماذج الصياغة الاسمية والاشتقاق",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-11-AUD-MODEL-01.mp3",
@@ -26066,7 +26066,7 @@
       "lessonId": "b2-11-humans-nature-environment-nominalization",
       "title": "حوار: Amir وLea في اجتماع حيّ",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-11-AUD-DLG-01-01.mp3",
@@ -26119,7 +26119,7 @@
       "lessonId": "b2-11-humans-nature-environment-nominalization",
       "title": "قراءة: اقتراح بيئي خيالي في Flussbogen",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-11-AUD-READ-01.mp3",
@@ -26136,7 +26136,7 @@
       "lessonId": "b2-11-humans-nature-environment-nominalization",
       "title": "استماع: حماية منطقة رطبة ومشاركة السكان",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-11-AUD-LST-01.mp3",
@@ -26153,7 +26153,7 @@
       "lessonId": "b2-12-leisure-media-reported-speech",
       "title": "مفردات الإعلام وأوقات الفراغ",
       "kind": "phrase_bank",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-12-AUD-PHR-01.mp3",
@@ -26170,7 +26170,7 @@
       "lessonId": "b2-12-leisure-media-reported-speech",
       "title": "نماذج نقل الأقوال ونسبتها إلى مصدرها",
       "kind": "model_sentences",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-12-AUD-MODEL-01.mp3",
@@ -26187,7 +26187,7 @@
       "lessonId": "b2-12-leisure-media-reported-speech",
       "title": "حوار: المقدّمة والضيف عن فيلم وثائقي",
       "kind": "dialogue",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-12-AUD-DLG-01-01.mp3",
@@ -26234,7 +26234,7 @@
       "lessonId": "b2-12-leisure-media-reported-speech",
       "title": "قراءة: مراجعة برنامج Freizeitblick الخيالي",
       "kind": "reading",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-12-AUD-READ-01.mp3",
@@ -26251,7 +26251,7 @@
       "lessonId": "b2-12-leisure-media-reported-speech",
       "title": "استماع: أقوال كاتبة عن روايتها",
       "kind": "listening",
-      "status": "generated_pending_acoustic_review",
+      "status": "ready",
       "segments": [
         {
           "src": "assets/audio/DL-B2-12-AUD-LST-01.mp3",

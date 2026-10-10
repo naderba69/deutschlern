@@ -30,7 +30,7 @@ assets=[x for x in json.loads((R/'data/audio-playlists.json').read_text())['audi
 assert len(assets)==5 and sum(len(x['segments']) for x in assets)==10
 assert [seg['voiceId'] for x in assets for seg in x['segments']]==['voice-02','voice-02','voice-02','voice-03','voice-02','voice-03','voice-02','voice-03','voice-02','voice-03']
 for x in assets:
- assert x['status']=='generated_pending_acoustic_review' and x['transcriptPolicy']=='offer'
+ assert x['status']=='ready' and x['transcriptPolicy']=='offer'
  if x['kind'] in ['dialogue','reading','listening']:
   for seg in x['segments']:assert seg['text'] in s
  if x['kind']=='model_sentences':

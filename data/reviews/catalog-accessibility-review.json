@@ -244,10 +244,10 @@
   "excludedSources": [],
   "sourceHashes": {
     "data/production-task-catalog.csv": "aecbbb45f60b7a48f957b1460d18f5ab2a92376938f09906ebf7403cc6cae3ff",
-    "data/audio-asset-register.csv": "a4ce9391bcb4bc0cdf43735e40e250e70ed4dfbbb5493ad2982dcfa908314f42",
-    "tools/verify_course.py": "49b2d26a5ae25b9a5792ed7f37f34b34a5217f7b4a91c6cbcaff8629b02765c7",
+    "data/audio-asset-register.csv": "940454ebb8fd2f6c15ea3a3244b9bb92f41596d2bee5881ecc048731036dca42",
+    "tools/verify_course.py": "4411218b78712c52185cca1246905188a5895258074a511cb6be14ad55591c24",
     "app.js": "1095854627397980d8e81f4398038d6b1a2c2c876c119478dd29a0f46ffa9fee",
-    "service-worker.js": "42f2e7f242bfd035eab0a14d5077aca6c2a814713fc0b8c987cfb75173c95506",
+    "service-worker.js": "e6cf297563e272502af514f43a01f77f6d968d5c5c51589fec54013ab0ee7b00",
     "tools/test_accessibility_audit.cjs": "0a9d73a10f517d63f2846639e90ca4814c3a8cc9d0fda7dba6e3f49637709e8d",
     "tools/test_forms_keyboard.cjs": "1964d30a5cba4d4abbabe840157e42a810fd4cc71cb02e8c397cef50b6e53140"
   },
